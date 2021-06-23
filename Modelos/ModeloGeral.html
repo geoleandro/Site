@@ -1,0 +1,1041 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+#div1 {
+    width: 40px;
+    height: 20px;
+    padding: 1px;
+    border: 1px solid #aaaaaa;
+}
+
+#p123 {
+    text-align: center;
+    background: white;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px;
+    width: 230px;
+}
+
+#demo2{
+font-size:20px;
+text-align: left;
+}
+
+
+#img1{float: 50px;
+position: absolute;
+z-index: 1;}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+	}
+		
+.grid-container {
+  display: grid;
+  grid-template-columns:   auto auto auto   ;
+  grid-gap: 5px;
+  background-color: gray;
+  padding: 10px;
+  /* justify-content: space-evenly; */
+}
+
+.grid-container > div {
+  background-color: lightgrey;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}	
+
+#progress {
+   
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    
+}
+
+#progressB {
+    
+    display: block;
+    background: rgb(52, 170, 28);
+    width: 1px;
+    height: 100%;
+    border-radius: 5px;
+}
+	
+
+
+.imgbox {
+  float: left;
+  text-align: center;
+  width: 150px;
+  border: 1px solid #ddd;
+  margin: 4px;
+  padding: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+   
+<div class="polaroid">
+  <img src="icone.png" alt="5 Terre" width="228" height="180">
+  <div class="container">
+  <p>Cinque Terre</p>
+  </div>
+</div>
+
+
+
+    <progress value="10" max="100" id="progress"></progress>
+
+<br>
+<span  onclick ="addProgressBar()">Clique aqui para aumentar a barra</span>
+
+<script>
+
+
+    function addProgressBar() {
+  var barra = document.getElementById("progress");   
+  
+    
+        i = 10;
+        barra.value += i;
+        
+    }
+            
+    
+ 
+  
+    
+
+
+
+
+
+
+
+       
+
+      var fontes =["Courier New", "Arial", "Cursive","Snell Roundhand", "Monotype Corsiva", "Times New Roman","Comic Sans MS", "Verdana","Calisto MT", "Tempus Sans ITC", "Impact"];
+	  var cor = ["#f36", "#C3C", "#fc0", "#FC6", "#9C0"];
+	  var aleatorio = Math.round(Math.random() * 10);
+	  
+    
+	 
+	
+	  
+	    
+
+		
+
+  
+  
+
+//Tabuada
+
+
+for (var i = 1; i < 11; i++){
+    document.write("<p>Tabuada do " + i + "</p>");
+        for(var j = 1; j < 11; j++) {
+        document.write(j + " x " + j + " = " + (i * j) + "<br>");
+    }
+}
+
+</script>
+        
+        
+
+<!-- var radios = document.formName.disableme; for (var i = 0; i < radios.length; i++) {     radios[i].disabled = true; }  @keyframes anima {  from {background-color:#ee4466} to { background-color: #99ff99} } animation-name:anima; animation-duration: 3s; animation-timing-function: linear  -->
+    <p id="demo1"></p>
+    
+    
+
+<script>
+        // saber se um número é inteiro ou não
+    //  if (i % 2 == 0) {
+// alert("O número i é par, pois o resto da divisão por dois é igual a zero")
+
+
+        //var descobrir = prompt("Digite um número inteiro");
+
+             
+
+
+        // if (descobrir % 1 ===0){
+
+        //     document.getElementById("demo1").innerHTML = "O número " + descobrir + " é inteiro";
+        // }
+        // else {
+        //     document.getElementById("demo1").innerHTML ="O número " + descobrir + " não  inteiro";
+
+        // }
+
+
+
+
+//Arrays preenche com valores aleatórios
+
+    
+<div id="out"></div>
+var maximo = 12;
+var resultados = 12;
+
+var i, arr = [];
+for (i = 0; i < maximo; i++) {
+    arr[i] = i + 1;
+}
+
+var p, n, tmp;
+for (p = arr.length; p;) {
+    n = Math.random() * p-- | 0;
+    tmp = arr[n];
+    arr[n] = arr[p];
+    arr[p] = tmp;
+}
+
+for (var i = 0; i < resultados; i++) {
+   var a = document.getElementById("out").innerHTML +=  arr[i]+ ', ';
+    console.log(a);
+}
+
+
+
+
+
+
+
+        
+                    
+
+    //função Math.round retorna o valor arredondado
+ </script>
+ 
+ 
+	
+	<p id="demo2">Texto Copas</p>
+		
+
+    <script>
+	
+	
+        
+       for (var i = 1930; i < 1950; i+=4) {
+
+            document.write("<p>Copas em: " + i + " </p>");
+        }
+         
+                  
+   
+	// <!-- {
+		
+	// //document.write(palavra[i] + "<br>");
+	// } -->
+                      
+			
+    //função Math.round retorna o valor arredondado
+    </script>
+	
+    <div class="grid-container">
+        <div><img src="icone.png" alt="icone" width="40" height="40"></div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        
+      </div>
+
+      <br><br>
+	
+    
+
+	<p><textarea placeholder="Insira sua resposta aqui" required="required" id="pq1" name="pq1"    rows ="8" cols="50" maxlength="700"></textarea></p>
+    
+    <span id="resp1"></span>
+    <p><button onclick="mostraTexto1('magma' ,'clima', 'mar', 'pq1')">Clique</button></p>
+	
+	
+	
+
+	<p><textarea placeholder="Insira sua resposta aqui" required="required" id="pq2" name="pq2"    rows ="8" cols="50" maxlength="700"></textarea></p>
+
+    <span id="resp2"></span>
+    <p><button  onclick="mostraTexto('sol' ,'rocha', 'lava','pq2')">Clique</button></p>
+	
+        
+    
+
+      <!-- Verificar no array se existe uma palavra -->
+    <script>
+        frasesArray =[];
+			frasesArray.push(idFrase);
+			frasesArray.toString();
+
+			
+			for (var f = 0; f < frasesArray.length; f++) 
+			{
+				if (frasesArray[f] == "resp56") 
+				{
+				alert('já existe');
+				console.log(frasesArray[f]);
+				}
+				else
+				{
+					alert('não  existe')
+					console.log(frasesArray[f]);
+				}
+
+	
+
+	function mostraTexto1( palavra1,  palavra2, palavra3, pqx)
+	{
+		valor = document.getElementById(pqx).value;
+    
+
+		if(valor == "") 
+        {
+			document.getElementById(pqx).style.backgroundColor = "#EF5959";	  
+
+
+            return;
+        }
+	    			//for (i =0; i <palavra.length;i++)
+		if(valor.includes(palavra1) && (valor.includes(palavra2)) && (valor.includes(palavra3)))
+		{
+            if (pqx =="pq1")
+            {
+                document.getElementById("resp1").innerHTML ="Acertou as palavras " + palavra1 + ", " + palavra2 + " e " + palavra3 +".";
+            }
+			
+            else if (pqx =="pq2")
+            {
+                document.getElementById("resp2").innerHTML = "Acertou as palavras " + palavra1 + ", " + palavra2 + " e " + palavra3 +".";
+            }
+           
+        
+
+			
+		}
+		else if ((valor == palavra1 && valor != palavra2 && valor != palavra3))
+		{
+            if (pqx =="pq1")
+            {
+                document.getElementById("resp1").innerHTML = "Faltaram as palavras " + palavra2 + " e " + palavra3 +".";
+            }
+                
+            else if (pqx =="pq2")
+            {
+                document.getElementById("resp2").innerHTML = "Faltaram as palavras " + palavra2 + " e " + palavra3 +".";
+            }
+
+            
+           	
+		}
+        else if ((valor == palavra2 && valor != palavra1 && valor != palavra3))
+		{
+            if (pqx =="pq1")
+            {
+                document.getElementById("resp1").innerHTML = "Faltaram as palavras " + palavra1 + " e " + palavra3 +".";
+
+            }
+            else if (pqx =="pq2")
+            {
+                document.getElementById("resp2").innerHTML = "Faltaram as palavras " + palavra1 + " e " + palavra3 +".";
+
+            }
+            
+
+
+           	
+		}
+        else if ((valor == palavra3 && valor != palavra1 && valor != palavra2))
+		{
+            if (pqx =="pq1")
+            {
+                document.getElementById("resp1").innerHTML = "Faltaram as palavras " + palavra1 + " e " + palavra2 +".";
+
+            } 
+            else if (pqx =="pq2")
+            {
+                document.getElementById("resp2").innerHTML = "Faltaram as palavras " + palavra1 + " e " + palavra2 +".";
+
+            }
+
+
+            
+           	
+		}
+
+        else if ((valor != palavra1 && valor != palavra2 && valor != palavra3))
+		{
+
+            if (pqx =="pq1")
+            {
+                document.getElementById("resp1").innerHTML = "Faltaram as palavras " + palavra1 + ", " + palavra2 + " e " + palavra3 +".";
+
+            } 
+            else if (pqx =="pq2")
+            {
+                document.getElementById("resp2").innerHTML = "Faltaram as palavras " + palavra1 + ", " + palavra2 + " e " + palavra3 +".";
+
+            }
+            
+       
+
+
+      
+           	
+		 
+           	
+
+	
+	// 	function funcao_a() {
+	// 	  alert('funcao A');
+	// 	}
+	// 	function funcao_b() {
+	// 	  alert('funcao B');
+	// 	}
+	
+	// <button id="btn" onclick="funcao_a();funcao_b();">Duas funções</button>
+
+
+	
+	// 	<br><br>
+	// 	<button id="btng" onclick="ganhar();draw()">Função ganhar e mudar cor!</button>
+	
+	
+	// <p id="demo10"></p>
+	
+	// <canvas id="canvas" width="300" height="200" style="">
+    // </canvas>
+    
+
+
+
+
+    // <p><button onclick="clicheFunc('Rocha')">Clique</button></p>
+
+	// <p><textarea placeholder="Insira sua resposta aqui" required="required" id="teste1" name="teste1"    rows ="8" cols="35" maxlength="700"></textarea></p>
+
+	// <span id="Cliche"></span>
+    // <p id="Cliche2"></p>
+    
+
+
+clicheFunc = function(p1){
+
+ var cliche = p1;    
+
+var sentence = document.getElementById("teste1").value;
+
+
+
+    if(sentence == cliche){
+        document.getElementById("Cliche").innerHTML = "Certo";
+    }
+    else{
+        document.getElementById("Cliche").innerHTML = "Errado";
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	function draw() 
+	{
+		var canvas = document.getElementById('canvas');
+		if (canvas.getContext) 
+		{
+		var ctx = canvas.getContext('2d');
+
+		// Exemplo de curvas de Bézier quadráticas
+		ctx.beginPath();
+		ctx.moveTo(75,25);
+		ctx.quadraticCurveTo(25,25,25,62.5);
+		ctx.quadraticCurveTo(25,100,50,100);
+		ctx.quadraticCurveTo(50,120,30,125);
+		ctx.quadraticCurveTo(60,120,65,100);
+		ctx.quadraticCurveTo(125,100,125,62.5);
+		ctx.quadraticCurveTo(125,25,75,25);
+		ctx.stroke();
+		}
+	}
+  
+
+    
+	
+	function ganhar() {
+	var ganhou = 0;
+	
+	ganhou++;
+	document.getElementById("demo10").innerHTML = ganhou;
+	
+	
+	}
+	
+	function mudaCor() {
+	document.getElementById("demo10").style.backgroundColor = "green";	  
+	}
+	
+	
+
+
+	
+    
+ 
+ <div>
+
+// //    <p style="line-height: 70px; background: white; border: normal; padding: 0cm;"><strong><span style="font-size: 12.0pt; color: lightgray">Questão 01</span></strong></p>
+
+// //     <br/><br/>
+// //     <img src="icone2.png" alt="" width="228" height="180" >
+// //     <br/>
+</div>
+
+
+    <span style="font-size:12.0pt"><b>Fonte 12  pontos</b></span>
+    <br/><br/>
+
+    <font size="5" face="verdana">Inserir fonte verdana</font>
+    <br/><br/>
+    <center>texto centralizado</center>
+    <br/><br/>
+    <font color="red">Este texto é vermelho!</font>
+    <br/><br/>
+    <font color="red"><b>Este texto é vermelho e negrito</b></font>
+
+    <br/><br/>
+    <small>Este texto é menor do que os outros</small>
+
+    <br/><br/>
+    <p>JavaScript pode mostrar elementos escondidos ao apertar o botão.</p>
+
+    <p id="ajuda" style="display:none">Hello JavaScript!</p>
+
+    <button type="button" onclick="document.getElementById('ajuda').style.display='block'">Ajuda!</button>
+
+    <br/><br/> CLICAR NA IMAGEM ABAIXO PARA ESCONDÊ-LA<br/><br/>
+
+    <img id="myImage" src="icone.png" alt="" style width="240" height="120" onclick="esconder2()" />
+
+
+        function esconder2() {
+
+          document.getElementById("myImage").style.display = "none";
+
+        }
+    
+
+
+    <br/><br/> BOTÃO INSERIR COMENTÁRIO
+    <br/><br/>
+    <div class = "w3-container w3-center w3-animate-left">
+        <span onclick="this.innerHTML='Comentário (aparece um comentário)'"><mark>Comentário</mark></span>
+    </div>
+
+    <br/><br/> BOTÃO INSERIR IMAGEM
+    <br/><br/>
+    <span onclick="document.getElementById('myImage1').src='icone.png'"><mark>Esse símbolo aqui (clique)</mark></span>
+    <img id="myImage1" src=""  alt="" width="120" height="60" onclick="style.display='none'">foi feito por mim.
+
+
+    <span onclick="document.getElementById('myImage').style.display='block'"><mark>(clique)</mark></span>
+
+
+<img id="myImage" src="p31q7a.png" width="60" height="60" style='display:none'> foi feito por mim.
+
+
+    <br/><br/> ESCONDER UMA IMAGEM
+    <br/><br/>
+
+
+    <img id="img1" src="icone.png" alt="" style= width="240" height="120" onclick="this.style.display='none'" />
+	
+	<div class="w3-container w3-center w3-animate-left">
+	<p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss deixa as pessoas mais interessantis. Interagi no mé, cursus quis, vehicula ac nisi. Si num tem leite então bota uma pinga aí cumpadi!Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss deixa as pessoas mais interessantis. Interagi no mé, cursus quis, vehicula ac nisi. Si num tem leite então bota uma pinga aí cumpadi!Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss deixa as pessoas mais interessantis. Interagi no mé, cursus quis, vehicula ac nisi. Si num tem leite então bota uma pinga aí cumpadi!Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss deixa as pessoas mais interessantis. Interagi no mé, cursus quis, vehicula ac nisi. Si num tem leite então bota uma pinga aí cumpadi!Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss deixa as pessoas mais interessantis. Interagi no mé, cursus quis, vehicula ac nisi. Si num tem leite então bota uma pinga aí cumpadi!Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss deixa as pessoas mais interessantis. Interagi no mé, cursus quis, vehicula ac nisi. Si num tem leite então bota uma pinga aí cumpadi!  </p>
+	
+	</div>
+	
+	<div class="w3-container w3-center w3-animate-opacity">
+  <h1>Animation is Fun!</h1>
+  <p>The w3-animate-opacity class fades in an element (0 to 1 opacity in 0.8 seconds).</p>
+  
+	</div>
+
+
+    <br/><br/> FUNÇÃO ESCONDER MAIS DE UMA IMAGEM
+    <br/><br/>
+    <span onclick="esconder()"><b><small>Clique aqui para esconder mais de uma imagem</small></b></span>
+    <img id="myImage1a" src="icone.png" style=w idth="240" height="120" \>
+	
+    <br/><br/><br/>
+
+
+
+
+        function esconder() {
+            var x = document.getElementById("myImage1a");
+            var y = document.getElementById("myImage1b");
+            x.style.display = "none"
+            y.style.display = "none"
+        }
+
+
+
+    ESCONDER E MOSTRA UMA DIV
+
+    <br> <br> <br>
+	
+	
+    <span onclick="MostrarRef()">Clique aqui para esconder ou mostrar a Div</span>
+
+    <p id="myDIV">Essa é a Div.</p>
+
+
+
+        function MostrarRef() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+
+    <br/><br/>
+		
+
+    <p> QUESTÕES</p>
+
+    Responda as questões a seguir:
+    <br/>
+
+
+    <form id="quiz" name="quiz">
+
+
+        <div id="quest1">
+
+            <p>Qual é a capital do Peru?</p>
+            <input id="q1" type="text" name="q1" value="Digite a resposta aqui">
+            <br>
+        </div>
+
+
+
+        <div id="div1" style="display:none">
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos
+                de tipos.</p>
+        </div>
+
+
+
+
+        <div id="div2">
+            <p>Qual é a capital do Equador?</p>
+            <p id="p1"><input type="radio" id="q2" name="q2" value="a" checked="checked"> a) Quito</p>
+            <p id="p2"><input type="radio" id="q2" name="q2" value="b">b) Quieto</p>
+        </div>
+
+
+        <div id="quest2" style="display:none">
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos
+                de tipos.</p>
+        </div>
+
+        <div id="div3">
+            <p>Qual é a capital da Argentina?</p>
+            <p id="p3"> <input type="radio" id="q3" name="q3" value="a" checked="checked" >a) Buenas tardes</p>
+            <p id="p4"> <input type="radio" id="q3" name="q3" value="b">b) Buenos Aires</p>
+        </div>
+
+        <div id="quest3" style="display:none">
+            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+        </div>
+
+        <br><br>
+
+        <input id="button1" type="button" value="Conferir" onclick="checar()">
+
+
+
+
+
+    </form>
+
+    </div>
+
+
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem"></p>
+
+    <img id="imagem" style= width= "300" height="150">
+
+   
+
+    </div>
+
+
+
+        function checar() {
+
+
+            var q1 = document.quiz.q1.value;
+            var q2 = document.quiz.q2.value;
+            var q3 = document.quiz.q3.value;
+            var corretas = 0;
+
+
+            var cor = ["#99ff99", " #ee4466"];
+
+            if (q1 == "Lima") {
+                corretas++;
+                document.getElementById("q1").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1").style.backgroundColor = cor[1];
+
+            }
+
+
+            if (q2 == "a") {
+                corretas++;
+                document.getElementById("p1").style.backgroundColor = cor[0];
+
+            } else {
+                document.getElementById("p2").style.backgroundColor = cor[1];
+
+            }
+
+            if (q3 == "b") {
+                corretas++;
+                document.getElementById("p4").style.backgroundColor = cor[0];
+
+            } else {
+                document.getElementById("p3").style.backgroundColor = cor[1];
+
+            }
+
+
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+
+
+
+            var pontos;
+
+            if (corretas < 1) {
+                pontos = 2;
+
+            }
+
+            if (corretas > 0 && corretas < 3) {
+                pontos = 1;
+            }
+
+
+            if (corretas > 2) {
+                pontos = 0;
+
+            }
+
+
+
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas;
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("quest1").style.display = 'block';
+            document.getElementById("quest2").style.display = 'block';
+            document.getElementById("quest3").style.display = 'block';
+        }
+  
+
+
+
+    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+
+    <br/><br/>
+    <span onclick="msg(1)">Clique para abrir a div</span>
+    <br><br>
+    <div id="perg1" style="display:block">
+
+        <p>Qual é a capital do Paraná?</p>
+
+        <span onclick="document.getElementById('p3301').src ='certo.png'"><mark><span onclick="play()">Curitiba</span></mark>
+        </span><img id="p3301" alt=""src=""   width="60" height="30" /><br/><br/>
+
+        <span onclick="document.getElementById('p3302').src='errado.png'"><span onclick="play2()">Londrina</span></span><img id='p3302' alt="" src=""  width="60" height="30" />
+    </div>
+
+    <p id="p123">Próximo</p>
+
+
+
+
+
+    <p id="mensagemA"></p>
+    <p id="mensagemB"></p>
+    <p id="msga"></p>
+    <img id="imagem5"  width="300" height="150">
+
+
+
+
+
+        function msg(a) {
+
+
+            document.getElementById("perg1").style.display = "block";
+
+        }
+
+
+
+
+<div class="imgbox" id="imgbox1a"><br>
+    <p id="demo15">foto1<input type="image" id="img1a" src="icone.png" alt=""  width="240" height="120" onclick="myFunction9('green','imgbox1a')"><br></p>
+    </div>
+    
+    <br><br>
+    <div class="imgbox" id="imgbox2b"><br>
+    <p id="demo16">foto2<input type="image" id="img1b" src="icone2.png" alt=""  width="240" height="120" onclick="myFunction9('green','imgbox2b')"><br></p>
+    </div>
+    <br><br>    <br><br>    <br><br>    <br><br>
+
+
+
+
+var letraA;
+var letraB;
+
+function myFunction9(cor,nomeBox) {
+  
+  var a =   document.getElementById("img1a");
+  var b = document.getElementById("img1b");
+  var imgBox1 = document.getElementById(nomeBox).style.backgroundColor = cor;
+  var imgBox2 = document.getElementById(nomeBox).style.backgroundColor = cor;
+  
+
+//   var x = event.target;
+//   document.getElementById("demo15").innerHTML = "Triggered by a " + x.id + " element";
+
+
+    if (a.id == "img1a") {
+        letraA =1;
+    }
+
+
+
+    if ((cor == "green") && (letraA == 1)) {
+        document.getElementById("img1a").style.display = "none";
+        document.getElementById("img1b").style.display = "none";
+    }
+    
+       
+       
+        
+    
+
+  
+    
+  
+   
+  
+
+  
+}
+
+
+
+
+
+
+
+
+    <img src="" onclick="TocarMusica()" />
+
+    <script>
+
+        
+        function play(obj) {
+            
+            var audio1 = new Audio();
+            audio1.src = "audio1.mp3";
+            audio1.play();
+            clicado = true;
+            
+           
+            
+           
+                document.getElementById(obj).hidden = true;
+            
+            
+
+        }
+
+
+ 
+        clicado2 = false;
+        function play2() {
+            if(clicado2 == false)
+            {
+            var audio1 = new Audio();
+            audio1.src = "audio2.mp3";
+            audio1.play();
+            clicado2 = true;
+            }
+            //document.getElementById(obj).hidden = true;
+
+        }
+
+
+
+<br><br><br><br><br>
+   
+
+
+
+    <!-- <input type="image" id="img1" src="icone2.png" alt=""  width="240" height="120"><br>
+    <input type="image" id="img2" src="icone2.png" alt=""  width="240" height="120">
+    <input type="image" id="img3" src="icone2.png" alt=""  width="240" height="120" onclick="play('img3')">
+    <input type="image" id="img4" src="icone2.png" alt=""  width="240" height="120" onclick="play('img4')"> -->
+   
+
+    <br/><br/>
+
+
+
+
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+
+
+
+
+    <p>Drag the W3Schools image into the rectangle:</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <br><br><br>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <div id="drag1" draggable="true" ondragstart="drag(event)">Frase</div>
+
+    <img id="drag2" src="icone.png" draggable="true" ondragstart="drag(event)" width="72" height="36">
+
+
+
+
+    <br/><br/>
+
+    <script>
+    <button id="escondido" style="display='none'">Botão mostrar</button>
+
+
+    <br/><br/>
+
+    <button id="escondido2" style="display='block'">Botão2 esconder</button>
+
+    
+        function desaparecer() {
+
+            document.getElementById('escondido2').style.display = "none";
+        }
+
+        setTimeout(desaparecer, 4000);
+
+    
+
+
+        setTimeout(function() {
+            var b = document.getElementById('escondido');
+            b.style.display = "block";
+        }, 2000);
+
+    <br><br>
+    </script>
+    <span onclick="this.style.color='black';this.style.backgroundColor='gray'">Clique para tornar cinza!</span>
+    <br><br/><br/>
+
+    <span onclick="this.style.display='none'">Click to Remove Me!</span>
+	
+
+    <br/><br/>
+	
+	
+
+
+	<spam id="text"></spam>
+	
+    <button onclick="guarda_palavra()">Guarda Palavra</button>
+
+
+    <script>
+
+	function guarda_palavra()
+    {
+       
+      text = document.getElementById('texto').value; 
+      var arr = text.split(" ");
+      
+     document.getElementById("texto").innerHTML = text;
+
+            }
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

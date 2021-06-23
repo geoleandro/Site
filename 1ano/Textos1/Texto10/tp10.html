@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js"></script>
+
+    <title>Texto10</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <style>
+        .topico {
+            display: none;
+            margin-top: 0px;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .larguraBar {
+            max-width: 680px;
+        }
+
+        .postit-tp10 {
+            background: #eeff8c;
+
+            max-width: 340px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+
+            justify-content: center;
+            text-align: left;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp10>a {
+            text-decoration: none;
+        }
+
+        .postit-tp10>a:hover {
+            text-decoration: underline;
+        }
+
+
+        .zoom {
+            animation: animatezoom 1s
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+
+        h1 {
+            margin-top: 0px;
+
+
+        }
+
+        h2 {
+            margin-top: 0px;
+
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        #divFinal {
+            display: none;
+        }
+
+
+        .margemAcima {
+            margin-top: 50px;
+        }
+
+        .margemAbaixo {
+            margin-bottom: 70px;
+        }
+    </style>
+
+</head>
+
+<body onload="paragrafotexto()">
+
+
+
+    <div class="topico">
+
+        <div class="centerBar w3-padding-24">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
+
+                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></a>
+
+            </div>
+        </div>
+
+
+
+        <h1  id="h1"> Texto 10 – Dinâmicas internas do relevo: tectonismo, abalos sísmicos e vulcanismo. </h1>
+
+
+        <p><strong> Conteúdo:</strong>: Relevo, tectonismo, terremotos, epirogênese, orogênese, vulcanismo, magma,
+            vulcões, lava, gêiseres, hipocentro, epicentro, maremotos, escala Richter, hotspots;
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Entender o papel das forças internas na configuração das estruturas e formas do
+            relevo terrestre. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p id="caixaNomeAluno">Digite seu nome</p>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button></p>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this);  this.style.display='none'">Próximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">V</span>imos como ocorrem os processos de separação dos continentes através da
+            teoria da tectônica de placas.
+        </p>
+
+        <p>Nesta aula, vamos iniciar nossos estudos sobre as transformações do relevo terrestre e sobre quais forças
+            estão envolvidas na modelagem de suas formas.</p>
+
+        <p>Ao final, você será apto a reconhecer o funcionamento dos agentes internos do relevo e ampliar seu
+            conhecimento sobre o Planeta Terra.</p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <h2> O que é o relevo?</h2>
+
+
+        <p>O relevo terrestre não é apenas as formas da superfície terrestre, mas o resultado de forças internas e
+            externas da Terra em constante movimento. </p>
+
+        <p>O relevo é dinâmico, isto é, apesar de ser composto por objetos naturais como solo, rochas ou vegetação, ele
+            é mais do que isso, é um arranjo de componentes que trocam energias entre si e constituem nosso meio de
+            vida, nosso meio geográfico. </p>
+
+
+        <p> Podemos diferenciar o relevo pelas suas formas observando diretamente à paisagem. Uma montanha, como o <span
+                onclick="Aparecer('imagem1','citacao1')"><mark>Monte Everest</mark></span>, constitui uma forma elevada da crosta terrestre; uma planície é uma área mais baixa e um planalto uma área mais alta
+            com processos distintos de formação.</p>
+
+
+
+
+        <span class="area"><img id="imagem1" src="tp10f1.png" alt="tp10f1" class="w3-mobile" style=display:none>
+        </span>
+
+
+        <span class="citacao" id="citacao1" style=display:none> Fonte:https://commons.wikimedia.org/
+            wiki/File:Mount_Everest_as_seen_from_Drukair2
+            _PLW_edit.jpg. </span>
+
+
+        <p> Para a Ciência, mais importante do que as formas são os processos (sequência de ações que levam a um
+            resultado) que geraram tais formas. Como surge uma montanha? Por que esse terreno está abaixo do nível do
+            mar? </p>
+
+
+        <p>Para podermos instalar uma usina hidrelétrica ou construir uma rodovia em determinada localidade é preciso
+            estudar a dinâmico do relevo. Caso contrário, corremos o risco de degradar ou sofrer consequências naturais
+            do meio em que estamos inseridos. </p>
+
+
+        <p> Enchentes em cidades ou a destruição do solo pela mineração são alguns exemplos de interferência do homem em
+            seu meio de vida. </p>
+
+
+        <h2> Por que há diversos tipos de relevo?</h2>
+
+        <p>As diferentes feições da superfície terrestre são resultado de agentes internos (endógenos) e agentes
+            externos (exógenos). </p>
+
+        <p> <span onclick="Aparecer('imagem2','citacao2')"><mark>Os agentes internos</mark></span> que vamos estudar são
+            o <strong>tectonismo</strong>, <strong>vulcanismo</strong> e os <strong>terremotos</strong> (abalos
+            sísmicos). Os agentes externos estão relacionados com o intemperismo e a erosão (assunto da próxima aula).
+        </p>
+
+
+
+
+        <div class="area"><img id="imagem2" src="tp10f2.png" alt="tp10f2" class="w3-mobile" style=display:none></div>
+
+
+        <p class="citacao" id="citacao2" style=display:none> Fonte: http://geolibertaria2.blogspot.com/ </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2> Tectonismo </h2>
+
+
+        <p>Vimos que as placas tectônicas são grandes porções sólidas da crosta terrestre em movimento e que ocorrem
+            choques entre elas. Dessas colisões podem ocorrer deformações nas rochas e surgirem cadeias de montanhas e
+            diferentes feições do relevo. </p>
+
+        <p> A Terra é um planeta ativo com uma grande variedade de processos devido ao seu calor interno e manifestado
+            pelos movimentos das placas. Essas forças do interior da Terra que atuam de forma lenta e prolongada na
+            crosta terrestre é chamado de <strong>tectonismo</strong>.</p>
+
+        <p>As rochas que constituem as placas tectônicas podem sofrer <span
+                onclick="Aparecer('imagem3','citacao3')"><mark>dobramento ou falhamentos</mark></span> dependendo das
+            forças do encontro das placas. </p>
+
+
+
+
+
+
+        <div class="area"><img id="imagem3" src="tp10f3.png" alt="tp10f3" class="w3-mobile" style=display:none></div>
+
+
+        <p class="citacao" id="citacao3" style=display:none> Fonte: Wicander e Monroe (p.216). </p>
+
+
+        <p>A compressão das rochas causa seu encurtamento de suas camadas por dobramento ou falhamentos. A tensão estira
+            as camadas e causa falhamentos. </p>
+
+        <p> Portanto, temos basicamente dois principais movimentos das placas tectônicas: os movimentos horizontais,
+            chamado de <strong>orogênese</strong>, e os movimentos verticais, chamado de <strong>epirogênese</strong>.
+            Vamos ver cada um deles.</p>
+
+        <h3>Orogênese </h3>
+
+
+
+        <p> É o movimento produzido pela compreensão ao longo dos limites convergentes das placas tectônicas. São
+            movimentos horizontais, com duração geológica não muito extensa e de grande intensidade, que formam
+            montanhas como os Alpes na Europa, a <span onclick="Aparecer('imagem4','citacao4')"><mark>Cordilheira dos
+                    Andes</mark></span> na América do Sul e os Himalaias na Ásia.</p>
+
+
+        <div class="area"><img id="imagem4" src="tp10f4.png" alt="tp10f4" class="w3-mobile" style=display:none></div>
+
+
+        <p class="citacao" id="citacao4" style=display:none> Mapa da América do Sul. Fonte: Atlas geográfico IBGE. </p>
+
+        <p>As cadeias de montanhas formam um conjunto alongado de elevações da crosta e ocupam uma faixa estreita
+            próxima a margem continental ativa (zona de colisão de placas) onde podemos encontrar processos de falhas e
+            de dobramentos, muitas vezes conectados. </p>
+
+        <p> Os dobramentos ocorrem devido as pressões laterais das forças tectônicas. Nas áreas de rochas menos rígidas
+            elas são literalmente <span onclick="Aparecer('imagem5','citacao5')"><mark>dobradas</mark></span>. Nas áreas
+            em que as rochas são mais resistentes podem ocorrer falhas.</p>
+
+
+        <div class="area"><img id="imagem5" src="tp10f5.png" alt="tp10f5" class="w3-mobile" style=display:none></div>
+
+        <p class="citacao" id="citacao5" style=display:none> Fonte: Geography, (2019. Adaptado).</p>
+
+        <p>A geologia denomina de <strong>Anticlinal</strong> as camadas de rochas dobradas em arco com a parte mais
+            elevada para cima, enquanto as rochas com formato de calhas com uma área mais rebaixada são chamadas de
+            <strong>Sinclinal</strong>. Na <span onclick="Aparecer('imagem6','citacao6')"><mark>figura
+                    abaixo</mark></span> vemos o exemplo:
+        </p>
+
+
+        <div class="area"><img id="imagem6" src="tp10f6.png" alt="tp10f6" class="w3-mobile" style=display:none></div>
+
+        <p class="citacao" id="citacao6" style=display:none> Fonte:
+            https://pixabay.com/pt/photos/estratos-estrato-vis%C3%A3o-transversal-4921933/ </p>
+
+        <p>Podem ocorrer inúmeros tipos de dobramentos, dependendo da estrutura geológica, das atividades tectônicas e
+            da capacidade das rochas em resistir aos movimentos verticais, por exemplo. </p>
+
+        <h3>Epirogênese </h3>
+
+        <p>Ao contrário da orogênese, que é mais localizado e rápido, a epirogênese possui um movimento mais lento e
+            abrange grandes dimensões das placas em áreas mais estáveis. </p>
+
+        <p>A epirogênese atua na direção vertical, no qual pode elevar ou rebaixar grandes blocos continentais. O <span
+                onclick="Aparecer('imagem7','citacao7')"><mark>soerguimento</mark></span> (elevação) ou a subsidência
+            (rebaixamento) ocorrem devido ao movimento isostático de acomodação da crosta sobre o manto superior. </p>
+
+
+
+
+        <div class="area"><img id="imagem7" src="tp10f7.png" alt="tp10f7" class="w3-mobile" style=display:none></div>
+
+
+        <p class="citacao" id="citacao7" style=display:none> Fonte: SUERTEGARAY (2003, p.76, adaptado). </p>
+
+        <p> Os blocos mais elevados são denominados de <strong>Horst</strong>, enquanto o bloco afundando é denominado
+            de <span onclick="Aparecer('imagem8','citacao8')"><mark>Graben</mark></span>.</p>
+
+
+
+
+
+        <div class="area"><img id="imagem8" src="tp10f8.png" alt="tp10f8" class="w3-mobile" style=display:none></div>
+
+
+        <p class="citacao" id="citacao8" style=display:none> Fonte: SUERTEGARAY (2003, p.75, adaptado). </p>
+
+
+        <p> É importante ressaltar que os movimentos epirogenéticos e orogenéticos não podem ser entendidos e estudados
+            de forma separada, uma vez que pertencem e são resultado da deriva continental e das colisões entre as
+            placas tectônicas.</p>
+
+
+        <p>O movimento vertical desencadeado pela epirogênese resulta em diversas falhas na crosta terrestre. Isso
+            ocorre pelo acúmulo de energia nas bordas das placas e sua consequente liberação, geralmente em forma de
+            abalos sísmicos (terremotos). </p>
+
+        <p> Os principais <span onclick="Aparecer('imagem9','citacao9')"><mark>tipos de falhas </mark></span> dependem
+            da estrutura geológica e da resistência das rochas, as principais estão apresentadas na figura abaixo: </p>
+
+
+
+        <div class="area"><img id="imagem9" src="tp10f9.png" alt="tp10f9" class="w3-mobile" style=display:none></div>
+
+
+        <p class="citacao" id="citacao9" style=display:none> Fonte: Press (2006).</p>
+
+        <p> A falha normal ocorre quando blocos superiores se movem para baixo em relação ao bloco inferior. Já na falha
+            inversa, é o bloco superior que se move para cima em relação ao bloco inferior. Na falha transcorrente ou
+            transformante os movimentos são paralelos à direção da falha, como em San Andreas, que atravessa a costa da
+            Califórnia nos Estados Unidos. </p>
+
+        <p> Outro agente interno responsável pela modelagem do relevo é o vulcanismo. Vamos ver suas principais
+            características. </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <div class="caixa">
+            <p>Teste suas habilidades</p>
+        </div>
+
+        <h3>
+            (Unimontes) Observe a figura:
+        </h3>
+
+        <div class="area"><img id="imagem9b" src="tp10f9b.png" alt="tp10f9b" class="w3-mobile"></div>
+
+
+
+        <p> Os números 1, 2 e 3, na figura acima, representam, respectivamente:</p>
+
+
+        <button class="desativar1 area p4"
+            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">
+            a) terremoto, tsunami e magma. </button>
+
+
+
+
+
+        <button class="desativar1 area p4"
+            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">
+            b) movimento divergente, vulcão e fossa marinha.</button>
+
+        <button class="desativar1 area p4"
+            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'muito bom, acertou sobre o afundamento da placa litosférica, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+            c) zona de subducção, placa tectônica oceânica e manto.</button>
+
+
+
+
+        <span id="resp1"></span>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h3>Qual a idade da crosta oceânica?</h3>
+
+        <button class="desativar2 area p4"
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
+
+            a) a mesma idade da crosta continental.
+        </button>
+
+
+        <button class="desativar2 area p4"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'bacana, o assoalho oceânico tem profunda relação com o movimento de convecção no manto, vamos continuar!','1'); this.style.backgroundColor='lightgreen'">
+
+            b) mais jovem do que a crosta continental.
+        </button>
+
+
+        <button class="desativar2 area p4"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
+            c) a ciência ainda não determinou sua idade.
+        </button>
+
+
+
+
+        <span id="resp2"></span>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+
+
+
+        <h2>Vulcanismo </h2>
+
+
+
+        <p> Por que o interior da Terra é quente? A primeira evidência é a de que os elementos radioativos no interior
+            do manto, do núcleo sofre desintegração ou decaimento (processo pelo qual um elemento se torna outro
+            liberando, entre outras coisas, calor).</p>
+
+        <p>Esse calor intenso chega à superfície terrestre através de erupções vulcânicas em forma de lava, que é rocha
+            em estado líquido, depois resfria-se tornando-se rochas vulcânicas duras. </p>
+
+        <p>Esse processo contribui para diferentes tipos de relevos de acordo com o movimento de placas tectônicas e da
+            atividade das correntes de convecção. Observe abaixo o esquema do funcionamento de um <span
+                onclick="Aparecer('imagem10','citacao10')"><mark>vulcão</mark></span>: </p>
+
+
+
+
+
+        <div class="area"><img id="imagem10" src="tp10f10.png" alt="tp10f10" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao10" style=display:none> Fonte: Press (2006, p.144). </p>
+
+        <p> O vulcanismo é um conjunto de processos pelos quais o magma e todo seu conteúdo de gases, <span
+                onclick="Aparecer('imagem12','citacao12')"><mark> materiais piroclásticos</mark></span> (rochas, cinzas,
+            fumaça tócinturãoxicas etc.) são forçados a sair para a superfície ou a entrar novamente na astenosfera.
+        </p>
+
+
+
+
+        <div class="area"><img id="imagem12" src="tp10f12.png" alt="tp10f12" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao12" style=display:none> Fonte:https://pt.slideshare.net/
+            claudiacssmoura/vulcanismo-8271821. </p>
+
+
+        <p> Já um <strong>vulcão</strong> é uma parte elevada do relevo ou uma montanha ao redor de uma abertura por
+            onde a lava é expelida além de outros materiais relacionados as erupções.</p>
+
+        <p> Além dos fluxos de lava, material rochoso escaldante, que pode destruir construções e cobrir áreas
+            destinadas à agricultura, os vulcões emitem gases tóxicos e cinzas.</p>
+
+
+
+        <p>Esses materiais podem se fixar na atmosfera e causar diversos problemas de saúde para a população,
+            principalmente, respiratórios. Também pode influir no clima e baixar a temperatura devido ao impedimento de
+            entrada de luz solar em determinada região e provocar acidentes aéreos causando falhas de motores através de
+            uma nuvem de cinzas. </p>
+
+        <p>Outros materiais piroclásticos são o <strong>lapilli</strong>, pequenos fragmentos de rochas,
+            <strong>blocos</strong> que são arrancados dos condutos vulcânicos durante o fluxo de lava e <strong><span
+                    onclick="Aparecer('imagem15','citacao15')"><mark>bombas</mark></span></strong>, expelidas tal como
+            uma bolha que se solidifica no ar.
+        </p>
+
+
+
+
+
+        <div class="area"><img id="imagem15" src="tp10f15.png" alt="tp10f15" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao15" style=display:none> Vulcanologista Katia Krafft examina uma bomba vulcânica
+            ejetada do vulcão Asama, Japão. Mais tarde, a cientista foi morta por um fluxo piroclástico no Monte japonês
+            Unzen. Fonte: Press (2006, p.147). </p>
+
+        <p>Os vulcões podem estar ativos ou adormecidos ou mesmo extintos. Entre os vulcões ativos destacam-se: Kilauea
+            na ilha do Havaí; o monte Fuji no Japão; o Vesúvio na Itália; o Santa Helena nos Estados Unidos; o Pinatubo
+            nas Filipinas, e o Fagradalsfjall na Islândia, dentre outros. </p>
+
+        <p>A maioria dos vulcões está localizado nos limites ou perto dos limites de placas. Dois cinturões de vulcões
+            são reconhecidos. O <span onclick="Aparecer('imagem11','citacao11')"><mark>cinturão do Pacífico
+                </mark></span> ou Círculo de Fogo contém cerca de 60% de todos os vulcões ativos, cerca de 20% no
+            cinturão Mediterrâneo, e
+            a maior parte dos restantes está localizada ao longo das cadeias mesoceânicas. (WICANDER, 2009). </p>
+
+
+
+        <div class="area"><img id="imagem11" src="tp10f11.png" alt="tp10f11" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao11" style=display:none> Fonte: Wicander (2009, p.118). </p>
+
+        <p> Os diversos
+            <span onclick="Aparecer('imagem16','citacao16')"><mark>formatos dos vulcões</mark></span> são consequências
+            de suas erupções.
+        </p>
+
+
+        <div class="area"><img id="imagem16" src="tp10f16.png" alt="tp10f16" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao16" style=display:none>Fonte: Press (2006, p.149. Adaptado). </p>
+
+        <h3> Vulcanismo intraplaca (Hotspot)</h3>
+
+        <p>Existem vulcões que não estão localizados nos limites divergente ou convergente de placas tectônicas. Eles
+            estão localizados no interior de uma placa, como os vulcões <span
+                onclick="Aparecer('imagem14','citacao14')"><mark>Kilauea</mark></span> e Mauna Loa, no Havaí. Mas como o
+            magma pode extravasar e sair pela superfície estando distante dos limites das placas? As ilhas havaianas no
+            centro da Placa do Pacífico ilustram essa ideia. </p>
+
+
+
+        <div class="area"><img id="imagem14" src="tp10f14.png" alt="tp10f14" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao14" style=display:none> Vulcão Kilauea, Havaí, EUA. Fonte:
+            https://portals1.com.br/
+            lava-do-vulcao-kilauea-avanca-no-havai-e-ameaca-casas/ </p>
+
+
+        <p>Esse tipo de atividade vulcânica está associado aos chamados<span
+                onclick="Aparecer('imagem13','citacao13')"><mark> pontos quentes </mark></span>
+            (hotspots). As ilhas vulcânicas do Havaí formam uma cadeia montanhosa submarina que estão em parte submersas
+            ao longo de 6 mil km de extensão. As rochas nessa região são progressivamente mais antigas ao longo da
+            cadeia. O aparecimento dessas ilhas são o resultado de um canal profundo que sai do manto. Como a placa do
+            Pacífico está em movimento, ela transporta um vulcão tornando-o inativo, e ao mesmo tempo, proporciona à
+            formação de um novo vulcão que repete o processo. </p>
+
+
+        <div class="area"><img id="imagem13" src="tp10f13.png" alt="tp10f13" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao13" style=display:none> </p>
+
+        <h3> Vulcanismo e hidrografia</h3>
+
+        <p>O vulcanismo interage com outras esferas da Terra como <span
+                onclick="Aparecer('imagem17','citacao17')"><mark>atmosfera e hidrosfera </mark></span> . Os vulcões são
+            ativos mesmo quando não há lava fluindo de suas crateras. </p>
+
+        <div class="area"><img id="imagem17" src="tp10f17.png" alt="tp10f17" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao17" style=display:none> Fonte: TEIXEIRA, (2009.p.358).</p>
+
+        <p> Os vulcões podem emitir fumaça e vapor por meio das fumarolas. Essas são manifestações superficiais da
+            circulação de água que ocorre na interação com o magma e rochas em fusão, extremamente quentes. Após ter
+            contato com altas temperaturas, essa água se aquece e retorna para a superfície através de fontes quentes ou
+            de gêiseres.</p>
+
+
+
+
+
+        <p> Como ocorre esse processo de saída de água quente para a superfície?</p>
+
+        <p> As águas das chuvas penetram nas rochas porosas, tal como em uma esponja, formando um reservatório, um
+            aquífero. Como o magma está abaixo dessa água, geralmente entre 5 e 7 km de profundidade, ele transfere
+            calor e aquece o aquífero. Com o aumento da pressão a água superaquece sem, no entanto, ferver e tornar-se
+            mais leve (menos densa) do que a água fria que se infiltra no aquífero. Com o tempo, a temperatura aumenta
+            pouco a pouco até que, em um dado momento, uma pequena porcentagem entre em ebulição. Com o aumento do
+            volume devido a ebulição, a água não tem por onde escapar, a não ser pelos condutos dentro das rochas. Assim
+            ela rompe pela superfície em um violento jato de água. Após a redução da pressão o processo é interrompido
+            enquanto a recarga do aquífero continua para que o processo possa ser reiniciado. <span
+                class="citacao">Fonte: TEIXEIRA, (2009.p.358, Adaptado).</span></p>
+
+        <p> O gêiser mais famoso é o<em> <span onclick="Aparecer('imagem26','citacao26')"><mark>Old
+                        Faithful</mark></span></em> e está localizado no parque de Yellowstone nos Estados Unidos. Ele
+            emite uma fonte de água quente, que jorra de forma intermitente, em um intervalo de, aproximadamente, 65
+            minutos, com grande força e com um barulho que se assemelha a um rugido trovejante.</p>
+
+
+
+
+        <div class="area"><img id="imagem26" src="tp10f26.gif" alt="tp10f26" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao26" style=display:none> </p>
+
+        <p> O vapor e a água quente formados por essa atividade hidrotermal pode ser canalizado e gerar energia
+            geotérmica. Outro aspecto importante desse processo envolve a deposição de minerais metálicos de grande
+            valor econômico quando há o encontro de magma com a água.</p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h3>Qual a relação entre vulcões e placas tectônicas?</h3>
+
+
+
+        <button class="desativar3 area p4"
+            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'Parabéns, essa é uma área repleta de terremotos!','1'); this.style.backgroundColor='lightgreen'">
+
+            a) a maior parte dos vulcões estão localizados nos limites de placas tectônicas, como o Círculo de Fogo do
+            Pacífico.
+
+        </button>
+
+        <button class="desativar3 area p4"
+            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
+
+            b) a maior parte dos vulcões estão localizados nos limites divergentes de placas tectônicas.
+
+        </button>
+
+
+
+
+
+        <button class="desativar3 area p4"
+            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
+
+            c) a maior parte dos vulcões são resultados do processo de hotspots.
+
+        </button>
+
+
+
+
+        <span id="resp3"></span>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h3>Qual a relação entre erupções e tipos de vulcões?</h3>
+
+        <button class="desativar4 area p4"
+            onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+
+            a) as erupções liberam materiais piroclásticos
+
+        </button>
+
+
+        <button class="desativar4 area p4"
+            onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'certo, há erupções mais fluidas e outras mais explosivas!','1'); this.style.backgroundColor='lightgreen'">
+
+            b) as erupções moldam a aparência dos vulcões.
+
+        </button>
+
+
+        <button class="desativar4 area p4"
+            onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+
+            c) as erupções determinam os tipos de magma.
+
+        </button>
+
+
+
+
+        <span id="resp4"></span>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2>Terremotos (abalos sísmicos) </h2>
+
+
+
+
+        <p>Não há nada mais exemplar sobre a dinâmica geológica da Terra do que sentir um tremor no chão onde pisamos.
+        </p>
+
+        <p> A Terra é ativa e instável, quer dizer, não há ainda como prever o que irá acontecer quando se trata de
+            <span onclick="Aparecer('imagem19','citacao19')"><mark>terremotos</mark></span>.
+        </p>
+
+
+
+        <div class="area"><img id="imagem19" src="tp10f19.png" alt="tp10f19" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao19" style=display:none> Terremoto, Nepal, 2015. O país está localizado entre a
+            Índia e o Tibete, conhecido por seus templos e pela Cordilheira do Himalaia, onde fica o Monte Everest.
+            Fonte: https://www.flickr.com/photos/
+            110419464@N05/17290940465. </p>
+
+
+
+
+        <p>Os terremotos são fenômenos naturais, assustadores e destrutivos, ligados a uma liberação súbita de energia,
+            geralmente ocorrem em zonas bem definidas nos limites transformantes, divergentes e convergentes de placas
+            tectônicas. </p>
+
+        <p> Os terremotos são fenômenos naturais, assustadores e destrutivos, ligados a uma liberação súbita de energia,
+            geralmente ocorrem em zonas bem definidas nos limites transformantes, divergentes e convergentes de placas
+            tectônicas. <span onclick="Aparecer('imagem20','citacao20')"><mark>Veja o exemplo:</mark></span></p>
+
+
+
+
+        <div class="area"><img id="imagem20" src="tp10f20.png" alt="tp10f20" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao20" style=display:none> Fonte: MARSHAK (2015, p.348, Adaptado).</p>
+
+        <p>Os terremotos são o resultado da tensão acumulada ao longo do tempo. Essa tensão surge a partir da pressão
+            tectônica que deformam as rochas em ambos os lados. Quando a tensão ultrapassa a resistência das rochas,
+            estas sofrem um deslizamento liberando a energia acumulada e causando o terremoto. </p>
+
+        <p>O ponto dentro da placa onde a energia é liberada é chamado de <span
+                onclick="Aparecer('imagem21','citacao21')"><mark>foco</mark></span> ou hipocentro. Já o ponto na
+            superfície onde o terremoto realmente se manifestou é o epicentro, muito comentado em reportagens
+            televisivas.</p>
+
+
+
+
+        <div class="area"><img id="imagem21" src="tp10f21.png" alt="tp10f21" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao21" style=display:none> Fonte: https://www.sobregeologia.com.br
+            /2017/10/
+            terremotos-o-que-sao-abalos-sismicos.html </p>
+
+
+        <p>Como medir os terremotos? </p>
+
+        <p>O estudo dos terremotos é realizado pela Sismologia através de um aparelho que registra, detecta e mede as
+            vibrações produzidas por um terremoto, como as ondas P e S (visto na aula 08). </p>
+
+        <p>O <span onclick="Aparecer('imagem22','citacao22')"><mark>sismógrafo</mark></span> registra tanto o movimento
+            horizontal como vertical geradas por essas. </p>
+
+
+
+        <div class="area"><img id="imagem22" src="tp10f22.png" alt="tp10f22" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao22" style=display:none> </p>
+
+
+
+        <p> Como medir a quantidade de energia liberada por um terremoto?</p>
+
+        <p>Para mediar a chamada magnitude de um terremoto, o sismólogo <strong>Charles F. Richter</strong> criou uma
+            <span onclick="Aparecer('imagem23','citacao23')"><mark>escala</mark></span> sem limites começando pelo valor
+            1.
+        </p>
+
+
+
+
+        <div class="area"><img id="imagem23" src="tp10f23.png" alt="tp10f23" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao23" style=display:none> </p>
+
+        <p>Richter usou uma escala logarítmica de base 10. Assim, cada aumento no número da escala representa 10 vezes o
+            aumento da amplitude da onda. </p>
+
+
+
+        <p>A avaliação dos efeitos dos terremotos varia de acordo com a escala de Richter, mas também há diversos
+            fatores envolvidos para a representação quantitativa e qualitativa desse fenômeno. </p>
+
+        <p>A intensidade, por exemplo, é medida com a escala de <strong>Mercalli</strong>. Ela não está baseada nas
+            ondas sísmicas, como na escala de Richter. Trata-se de uma escala qualitativa e dos efeitos sobre as pessoas
+            e estruturas, variando de 1 a 12, com o grau 1 correspondendo a um tremor não sentido pelas pessoas e o grau
+            12 como uma alteração calamitosa do relevo da região afetada. </p>
+
+        <p>Os terremotos podem causar efeitos destrutivos como tremor de terra, ondas sísmicas marinhas, choque
+            psicológico, inquietação civil, deslocamento de milhares de pessoas de suas casas, muitos mortos e feridos,
+            dentre outros. </p>
+
+        <div class="w3-card w3-teal w3-padding">
+            <p>Os terremotos podem causar efeitos destrutivos como: </p>
+
+            <ul>
+                <li>tremor de terra</li>
+                <li>ondas sísmicas marinhas</li>
+                <li>choque psicológico</li>
+                <li>inquietação civil </li>
+                <li>deslocamento de milhares de pessoas de suas casas</li>
+                <li> muitos mortos e feridos</li>
+                <li>dentre outros.</li>
+            </ul>
+        </div>
+
+        <p>Dependendo da duração do tremor, distância do epicentro, da estrutura geológica da área afetada, da qualidade
+            das construções etc., um terremoto pequeno pode causar mais estragos do que um de magnitude maior. </p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h3>1991: Erupção do Pinatubo
+
+        </h3>
+        <p>No dia 9 de junho de 1991, a erupção do vulcão Pinatubo trouxe destruição e morte às Filipinas. A catástrofe
+            teve influência também sobre o clima mundial. </p>
+
+
+        <p>O cume do Monte Pinatubo explodiu como uma rolha, formando uma gigantesca cratera. De 1.800 metros de altura,
+            o monte diminuiu para apenas 1.400 metros. Os moradores da região haviam sido avisados a tempo e
+            transportados para abrigos. </p>
+
+
+        <p>Mesmo assim, a catástrofe do Pinatubo causou a morte de aproximadamente 800 pessoas. A dimensão real das
+            consequências da pior erupção do século só pôde ser vista na manhã seguinte. Toda a região ao redor do Monte
+            Pinatubo estava coberta por uma camada de cinzas. Antes de entrar em erupção em 1991, o vulcão estava
+            inativo há 600 anos. </p>
+
+        <div class="citacao">
+            Fonte: https://www.dw.com/pt-br/
+            1991-erup%C3%A7%C3%A3o-do-pinatubo/a-318985.
+
+        </div>
+
+        <p>Pode-se <span onclick="this.innerHTML='inferir (deduzir, tirar conclusões)'"><mark>inferir</mark></span> do
+            texto acima que:</p>
+
+        <button class="desativar5 area p4"
+            onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
+
+            a) os vulcões sempre entram em erupção de forma explosiva.
+
+
+
+        </button>
+
+
+        <button class="desativar5 area p4"
+            onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'acertou, o tempo geológico é muito extenso para se obter alguma previsão ainda.','1'); this.style.backgroundColor='lightgreen'">
+
+            b) os vulcões são imprevisíveis e podem entrar em erupção a qualquer tempo.
+        </button>
+
+
+        <button class="desativar5 area p4"
+            onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
+
+            c) os vulcões estão sempre acompanhados de terremotos.
+
+        </button>
+
+
+
+
+        <span id="resp5"></span>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <form id="quiz" name="quiz">
+
+            <h3>Complete com o vocabulário relativo aos terremotos:</h3>
+
+
+            <p>a) ponto da superfície onde as ondas sísmicas são manifestadas: </p>
+
+            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+
+
+            <p id="resp1a"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
+                onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
+
+
+
+
+
+            <div class="area">
+                <p>
+                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
+                        width="64" height="64">
+                </p>
+            </div>
+
+
+
+            <p>b) pondo de origem das ondas sísmicas:</p>
+
+
+
+            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+
+
+            <p id="resp1b"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
+                onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
+
+
+
+
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1b" style="display:none" alt="globinho9"
+                        width="64" height="64"> </p>
+            </div>
+
+
+            <p>c) Escala utilizada para medir a magnitude dos terremotos.</p>
+
+            <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+
+
+
+            <p id="resp1c"></p>
+
+            <input class="btnShow" id="buttonConferirQ1c" type="button" value="Conferir"
+                onclick="PerguntasAbertas(3,'resp1c','buttonConferirQ1c','globinho1c')">
+
+
+
+
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1c" style="display:none" alt="globinho10"
+                    width="64" height="64"> </p>
+
+
+
+
+        </form>
+
+
+
+        <button class="btnHide" id="buttonq1d"
+            onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1c')">Proximo</button>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Qual a diferença entre o magma e a lava?
+
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span>A primeira diferença está relacionada a localização. O magma está
+            situado abaixo da crosta, enquanto a lava é o material rochoso que extravasa à superfície. A segunda
+            distinção é em relação as propriedades químicas. A lava ao sair do vulcão entra em contato com o oxigênio e
+            libera gases, o que modifica sua estrutura. </p>
+
+
+
+
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong> Existe terremoto no oceano? </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+            Sim. Em dezembro de 2004, um gigantesco maremoto atingiu o Sudeste Asiático, particularmente a Indonésia, o
+            Sri Lanka, a Índia e a Tailândia, provocando cerca de 220 mil mortes. Logo a palavra japonesa <span
+                onclick="Aparecer('imagem24','citacao24')"><mark>tsunami</mark></span> [de tsu, ‘porto’, ‘ancoradouro’;
+            e nami, ‘onda’, ‘mar’], muito usada na Ásia para se referir a esse fenômeno, tornou-se conhecida em todo o
+            mundo.
+        </p>
+
+
+
+
+        <div class="area"><img id="imagem24" src="tp10f24.png" alt="tp10f24" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao24" style=display:none>Fonte: https://brasilescola.uol.com.br
+            /geografia/maremoto.htm. </p>
+
+
+        <p> Ela designa as ondas gigantescas formadas por um maremoto, que nada mais é que um terremoto no fundo do mar
+            e resulta do choque de placas tectônicas. Em março de 2011, ocorreu um maremoto no oceano Pacíﬁco perto do
+            Japão, que deu origem a um tsunami no litoral daquele país, que destruiu construções e até provocou o
+            vazamento radioativo de uma central nuclear. As ondas do tsunami com mais de 10 metros de altura penetraram
+            cerca de 10 km na faixa litorânea a leste do Japão e deixaram, além do grave acidente nuclear e destruição
+            de edificações, quase 16 mil mortes e 27 mil pessoas feridas. </p>
+
+        <p> Um tsunami não é uma única onda, mas uma série de ondas que podem viajar pelo oceano com velocidade de mais
+            de 800 km/h. No maior maremoto registrado nos últimos 50 anos, o de dezembro de 2004, as enormes ondas caíam
+            sobre as casas, a força da água levava tudo e muitas praias viraram necrotérios a céu aberto. Muitas pessoas
+            morreram durante os tsunamis depois de voltar para casa, porque acharam que as ondas tinham acabado. </p>
+
+        <p> Os tsunamis em geral são causados pelo aumento ou pela baixa repentina de parte da crosta terrestre sob o
+            oceano ou perto dele. Mas ondas tsunamis de menor força também pode ser geradas por atividade vulcânica, e
+            são mais comuns no oceano Pacíﬁco. </p>
+
+        <p> Quando o tsunami entra na linha costeira, sua velocidade diminui, mas a altura aumenta. Um tsunami de alguns
+            centímetros ou metros de altura pode atingir de 30 a 50 m de altura na costa, com força devastadora. Para
+            quem está na praia, não há sinais da aproximação de um tsunami. O primeiro indício costuma ser uma elevação
+            da água, mas não igual à das tempestades. </p>
+
+        <p> Em 1883, um tsunami formado depois da erupção do vulcão Cracatoa, entre as ilhas indonésias de Java e
+            Sumatra, matou 36 mil pessoas. Em 1908, um terremoto provocou enchentes e inundações que mataram quase 100
+            mil pessoas na Sicília, Itália. Em julho de 1998, dois terremotos submarinos criaram tsunamis que mataram
+            pelo menos 2,1 mil pessoas perto da cidade de Aitape, na costa norte de Papua-Nova Guiné. Moradores disseram
+            que as grandes paredes de água, que avançaram 2 km, soavam como caças pousando.<span class="citacao"> Fonte:
+                VESENTINI (2013, p.217).</span> </p>
+
+
+
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+                Os vulcões só destroem o Planeta ou eles têm benefícios?
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            Os vulcões, apesar de seu poder destrutivo, possuem inúmeros benefícios. Durante a formação do Planeta, a
+            própria atmosfera e os oceanos pode ter sido originado em atividades vulcânicas no passado distante.
+
+        </p>
+
+        <p> Os solos são extremamente férteis próximos aos vulcões devido aos minerais distribuídos no solo. As rochas
+            vulcânicas, os gases e o vapor são importantes fontes de materiais industriais e químicos, como a
+            pedra-pomes, o ácido bórico, a amônia, o enxofre, o dióxido de carbono e alguns metais. A água do mar que
+            circula nas fissuras do sistema vulcânico das dorsais oceânicas é um dos principais fatores na formação de
+            minérios e na manutenção do balanço químico dos oceanos. A energia térmica do vulcanismo está sendo cada vez
+            mais aproveitada. A maioria das casas de Reykjavík na Islândia, é aquecida por água quente, encanada a
+            partir de fontes quentes. </p>
+
+        <p> O vapor geotérmico originado da água aquecida em contato com rochas vulcânicas quentes abaixo da superfície,
+            é explorado como fonte de energia para a produção de eletricidade na Itália, na Nova Zelândia, nos Estados
+            Unidos, no México, no Japão, dentre outros. <span class="citacao">Fonte: Press (2006. p.167)</span>. </p>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <hr>
+
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Questione a realidade</p>
+        <div class="w3-card-4 w3-padding w3-margin-bottom w3-yellow">
+            <h4> Em dupla, escreva no caderno e explique a relação entre tectonismo, vulcanismo e abalos sísmicos
+                baseado no tremor registrado na reportagem abaixo:</h4>
+
+
+            <p class="w3-panel w3-leftbar w3-light-grey w3-padding"> Na madrugada do dia 9 de dezembro de 2007, no
+                distrito de Caraíbas, município de Itacarambi, norte de Minas Gerais, a cerca de 400 quilômetros de
+                Brasília, foi registrado um tremor de terra de 4,9 graus na escala Richter. Observe o mapa e a
+                ilustração a seguir e explique a ocorrência desse tremor em Minas Gerais e suas particularidades. </p>
+
+
+
+
+
+            <div class="area"><img id="imagem25" src="tp10f25.png" alt="tp10f25" class="w3-mobile">
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+
+   
+<!-- <span id="numero"></span>  -->
+<div class="margemAcima">
+
+    <span id="txtBarra">0%</span>
+    <progress value="0" max="100" id="progress"></progress>
+</div>
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+        <div class="area">
+
+
+            <div class="w3-row-padding">
+
+
+                <div class="postit-tp10 ">
+
+                    <a href="https://www.bbc.com/portuguese/internacional-45726630" target="_blank">
+                        Tsunami na Indonésia: os fatores que fizeram 'pior cenário possível' virar realidade
+                    </a>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>Geography. A unique step-by-step visual guide. DK: New York, 2019.</p>
+
+
+        <p>MARSHAK, Stephen. <strong>Earth</strong>: portrait of a planet. University of Illinois.5. ed. 2015.</p>
+
+        <p>
+            PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para entender a Terra</strong>. 4a edição. Tradução: MENEGAT, R. Porto Alegre, Bookman. 2006.
+        </p>
+
+        <p>
+            SUERTEGARAY, Dirce Maria Antunes (Org.). <strong>Terra</strong>: feições ilustradas. Porto Alegre: UFRGS, 2003. pág. 
+        </p>
+
+        <p>
+            TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F. <strong>Decifrando a Terra</strong>. 2ª ed. São Paulo: Companhia Editora Nacional, 2009. 
+        </p>
+
+        <p>VESENTINI, José William. <strong>Geografia</strong>: o mundo em transição. ensino médio. 2.ed. – São Paulo:
+            Ática, 2013.</p>
+
+        <p>
+            WICANDER, Reed; MONROE, James S. <strong>Fundamentos de Geologia</strong>. São Paulo: Cengage Learning, 2009.
+
+        </p>
+
+      
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+        function AbrirDivFinal() {
+            document.getElementById("divFinal").style.display = "block";
+            loadquestion();
+        }
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                //numButton();
+                ApagaButton();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+
+        // Função com perguntas abertas feita com formulário
+        function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+            var q1a = document.quiz.q1a.value.toLowerCase();
+            var q1b = document.quiz.q1b.value.toLowerCase();
+            var q1c = document.quiz.q1c.value.toLowerCase();
+
+
+
+
+            var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+            var cor = ["#99ff99", " #ee4466"];
+
+            if (q1a.match("epicentro") && qnum == 1) {
+
+                document.getElementById("q1a").style.backgroundColor = cor[0];
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
+                nota += 1;
+                document.getElementById(globinho).style.display = "block";
+
+            }
+            else if (qnum == 1) {
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+                Play2("../audio2.mp3");
+            }
+
+            if (q1b.match("hipocentro") && qnum == 2) {
+
+                document.getElementById("q1b").style.backgroundColor = cor[0];
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf();
+                nota += 1;
+                document.getElementById(globinho).style.display = "block";
+
+            }
+            else if (qnum == 2) {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+                Play2("../audio2.mp3");
+            }
+
+
+            if (q1c.match("richter") && qnum == 3) {
+
+                if (q1a.match("epicentro") && q1b.match("hipocentro")) {
+                    document.getElementById("q1c").style.backgroundColor = cor[0];
+
+                    EscondeButton(buttonConferir);
+                    Play("../audio1.mp3");
+
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1c.valueOf();
+                    nota += 1;
+                    document.getElementById(globinho).style.display = "block";
+                    MostraButton("buttonq1d");
+                }
+                else {
+                    document.getElementById("q1c").style.backgroundColor = cor[1];
+                    document.getElementById(idResp).innerHTML = "Acertou, mas ainda falta as outras questões. Volte e preencha as outras espertinho(a). Depois retorne aqui";
+                    Play2("../audio2.mp3");
+
+                }
+
+            }
+            else if (qnum == 3) {
+                document.getElementById("q1c").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
+                Play2("../audio2.mp3");
+            }
+
+
+
+            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+        }
+
+
+        //Função para medir o tamanho da barra de progresso
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        // }
+
+
+
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 14);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

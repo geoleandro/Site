@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none; border-radius: 35px ; padding: 0cm; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+	<h1 id="h1">  Questões aula 35 - Síntese das regiões brasileiras</h1>
+  
+	<p><b>Conteúdo:</b>  Regiões do Brasil: Norte; Nordeste; Centro-Oeste; Sudeste e Sul.  </p>
+
+	<p><b>Objetivo:</b>  Identificar e entender as principais características das regiões brasileiras.  </p>
+    
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+    <div class="campo">
+
+		<p id="p2">Questão 01</p>
+			
+		<p id="p3">  (UFMG 2007) Considerando-se a organização geoeconômica da Região Sul brasileira, é INCORRETO afirmar que:  </p>
+										         
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) a indústria da Região Metropolitana de Porto Alegre conserva profundos vínculos com a agropecuária regional, que lhe fornece importante percentual da matéria-prima processada.</p>
+       
+	   <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) a proximidade geográfica do Sudeste contribui para tornar a Região Metropolitana de Curitiba importante área receptora dos impulsos da desconcentração industrial paulista.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) o grau de modernização da agricultura sulina é predominantemente baixo, sobretudo nas sub-regiões de criação avícola e suína e nas de cultivo de soja.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) o norte do Paraná é ocupado, hoje, pela soja e outros cultivos, que gradativamente, substituíram os cafezais</p>
+					
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+    <div class="campo">
+		
+        <p id="p2">Questão  02</p>
+			
+		<p id="p3">   (Cesgranrio) Em relação ao povoamento e à ocupação da terra na região Sul do Brasil, podemos afirmar:  </p>
+						         
+        <p class="bordaQuestoes"id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) A região da encosta do Rio Grande do Sul, coberta por matas, foi ocupada por imigrantes alemães e italianos, estabelecidos em pequenas e médias propriedades policultoras</p>
+      
+		<p class="bordaQuestoes"id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) A campanha foi ocupada já no século XX pelos descendentes dos imigrantes alemães e italianos, que se dedicaram à pecuária extensiva em grandes propriedades.</p>
+		
+		<p class="bordaQuestoes"id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) O norte do Paraná teve seu povoamento iniciado no século XIX por imigrantes oriundos do Nordeste para trabalharem nas grandes propriedades agrícolas dedicadas ao plantio da soja.</p>
+		
+		<p class="bordaQuestoes"id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) O oeste de Santa Catarina é uma área de ocupação antiga, feita por luso-brasileiros, em áreas de floresta tropical, que se dedicaram ao cultivo do café em grandes propriedades.</p>
+		
+		<p class="bordaQuestoes"id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) O planalto Paranaense foi ocupado, no século passado, por imigrantes japoneses, que se dedicaram à agricultura em grandes propriedades, cultivando principalmente cana-de- açúcar.</p>
+	</div>
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Verdadeiro – Os imigrantes europeus contribuíram para o desenvolvimento da economia, baseada na pequena e média propriedade rural de policultura (cultivo de vários produtos agrícolas). O Rio Grande do Sul recebeu imigrantes italianos, eslavos e alemães. </p>
+
+		<p> b) Falso – Não houve o desenvolvimento da pecuária extensiva em grandes propriedades, permanecendo o cultivo de grãos em pequenas e médias propriedades. </p>
+
+		<p> c) Falso – No Paraná, houve fluxos migratórios de italianos, alemães e japoneses e, mais recentemente, paraguaios na fronteira oeste. </p>
+
+		<p> d) Falso – A porção oeste de Santa Catarina foi colonizada por imigrantes italianos. </p>
+
+		<p> e) Falso – A agricultura foi desenvolvida em pequenas e médias propriedades, outro fator errado nesse item refere-se ao cultivo de cana-de-açúcar, sendo os principais produtos, a erva mate e o café. </p> 
+    </div>
+	
+	
+	
+
+    <div class="campo">
+		
+        <p id="p2">Questão 03</p>
+			
+		<p id="p3">   (Mackenzie-SP 2009) No mapa, a área destacada se refere: </p>
+		
+		<img src="s35q3.jpg" class="imagem" width="320" height="350">
+		       
+        <p class="bordaQuestoes"id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) à demarcação do Projeto Calha Norte, área de litígio entre Brasil e Venezuela por essa região, que defendem, respectivamente, as reservas indígenas dos índios Pataxós e os madeireiros venezuelanos.
+    
+		<p class="bordaQuestoes"id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) à demarcação do Projeto Jarí, área de disputa entre a reserva indígena dos Ianomâmis e as indústrias extrativas e mineradoras.</p>
+	
+		<p class="bordaQuestoes"id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) à demarcação da reserva indígena Raposa Serra do Sol, região de tensão entre populações indígenas e arrozeiros que ocupam a área desde a década de 1970.</p>
+		
+		<p class="bordaQuestoes"id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) à criação da última fronteira agrícola da Amazônia, no extremo norte do país, dentro da política de descentralização econômica, estimulando a recente implantação da rizicultura.</p>
+		
+		
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	<div class="campo">
+		
+        <p id="p2">Questão 04</p>
+			
+		<p id="p3">  (UEAM 2011) Leia o texto.</p>
+
+		<p id="p3">A Amazônia é o último reduto de 60% das tribos indígenas atualmente existentes no Brasil. Para o homem do campo, sem-terra, ela representa também a última fronteira. O deslocamento das frentes de expansão sobre a Amazônia intensifica-se a partir de 1965.</p>
+  				
+		<p id="citacao"><small>   RIBEIRO, Berta. O Índio na História do Brasil, 1997. </small>	</p>
+		   
+		  <p id="p3"> De acordo com o texto, as frentes de expansão geraram transformações espaciais na Amazônia, caracterizadas pelo:</p>
+       
+		<p class="bordaQuestoes"id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) aumento das atividades industriais, sobretudo da indústria automobilística.</p>
+      
+		<p class="bordaQuestoes"id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) contínuo êxodo rural, em consequência de sucessivos períodos.</p> 
+		
+		<p class="bordaQuestoes"id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) aumento da emigração, causada pela falta de emprego nas frentes de expansão.</p>
+		
+		<p class="bordaQuestoes"id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) aumento da atividade turística, devido às paisagens pitorescas e atrativas.</p>
+		
+		<p class="bordaQuestoes"id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) surgimento do arco do desmatamento, com áreas agrícolas ocupando terras antes cobertas por ﬂorestas e cerrados.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	<div class="campo">
+		
+        <p id="p2">Questão 05</p>
+			
+		<p id="p3">   (UEFS-BA 2010)   </p>
+		
+		<img src="s35q5.jpg" class="imagem" width="320" height="400">
+			
+		<p id="citacao"><small>  Fonte: Superintendência de Desenvolvimento do Nordeste (Sudene).   </small>	</p>
+		
+		<p id="p3"> A partir da observação do mapa e dos conhecimentos sobre o Nordeste brasileiro, é correto afirmar:</p>
+       
+	   <p class="bordaQuestoes"id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) O Sertão semiárido é uma sub-região de ocupação recente, baseada no pastoreio intensivo.</p>
+       
+	   <p class="bordaQuestoes"id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) O Meio-Norte é a sub-região mais integrada no contexto econômico regional, porque sua estrutura de produção é muito dependente da agropecuária.</p>
+		
+		<p class="bordaQuestoes"id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) O Sertão semiárido subequatorial e tropical apresenta as mais bizarras e rústicas paisagens morfológicas e fitogeográficas, com drenagens intermitentes, relacionadas com o ritmo pouco frequente das precipitações.</p>
+		
+		<p class="bordaQuestoes"id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) A Zona da Mata se caracteriza por uma estrutura agrária com base nas pequenas propriedades policultoras, com aplicação do trabalho familiar, e por um grande equilíbrio social.</p>
+		
+		<p class="bordaQuestoes"id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) O Agreste, localizado na extremidade ocidental do Nordeste, corresponde a uma faixa de terra que se estende paralelamente à Zona da Mata, sendo uma área de transição entre o Sertão árido e a floresta Amazônica superúmida.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 06</p>
+			
+		<p id="p3">  (PUC-RJ 2002) Do litoral do Ceará e do Rio Grande do Norte até o médio São Francisco, estende-se uma mancha semiárida, dentro do domínio tropical, abrangendo quase 1 milhão de km².  </p>
+
+		<img src="s35q6.jpg" class="imagem" width="320" height="400">
+		
+		<p id="p3"> Em relação às características do clima e da vegetação desta área, analise as afirmativas a seguir:</p>
+
+		<p id="p3"> I. As médias térmicas anuais elevadas e as ações dos ventos originam índices de evaporação maiores que os de precipitação.</p>
+
+		<p id="p3"> II. As médias pluviométricas inferiores a 600 mm anuais dão origem a áreas secas bem marcadas com indícios de desertificação.</p>
+
+		<p id="p3"> III. A semiaridez é percebida no quadro natural pela vegetação xerófila e pelo escoamento temporário dos rios.</p>
+
+		<p id="p3"> As afirmativas CORRETAS são:</p>
+		           
+        <p class="bordaQuestoes"id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) I. </p>
+       
+	   <p class="bordaQuestoes"id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) II.</p>
+	
+		<p class="bordaQuestoes"id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="">   c) I e III. 
+		
+		<p class="bordaQuestoes"id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) II e III.</p>
+			
+		<p class="bordaQuestoes"id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) I, II e III.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+				
+	<div class="campo">
+		
+        <p id="p2">Questão 07</p>
+			
+		<p id="p3"> (UEMS 2010) Considere o mapa intitulado “A última fronteira: expansão da cana pode atingir borda do Pantanal, para responder às questões a seguir </p>
+						
+		<img src="s35q7.jpg" class="imagem" width="320" height="400">
+		
+		<p id="citacao"><small>  Fonte: Folha de São Paulo, 11 abr. 2009.  </small>   </p>
+		
+		<p id="p3">  Com base nas informações do mapa, analise as afirmativas a seguir. </p>
+
+		<p id="p3">	I. Transformações socioespaciais decorrentes da expansão do setor sucroalcooleiro na área de planalto, apresentam-se como um elemento complicador à manutenção da qualidade ambiental da Planície Pantaneira. </p>
+
+		<p id="p3">	II. O avanço do plantio de cana-de-açúcar na área do planalto, configura-se como uma condição preocupante para a manutenção da qualidade hídrica dos rios pantaneiros; isso se deve, principalmente, ao fato de haver uma relação de interdependência nos sistemas hidrográfico e pluvial das áreas do planalto e da planície. </p> 
+
+		<p id="p3">	III. A expansão do plantio de cana-de-açúcar na área do planalto reflete o crescimento do setor sucroalcooleiro no país. Esse crescimento tem ligação direta com políticas internacionais, que priorizam a diminuição da emissão de gases que contribuem para o aquecimento global; </p>
+
+        <p class="bordaQuestoes"id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) I e II apenas.</p>
+       
+	   <p class="bordaQuestoes"id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) I e III apenas. </p>
+		
+		<p class="bordaQuestoes"id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) II e III apenas. </p>
+		
+		<p class="bordaQuestoes"id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) III apenas.</p>
+		
+		<p class="bordaQuestoes"id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) I, II e III.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 08</p>
+								   
+		<p id="p3"> (ENEM 2009) As áreas do planalto do cerrado – como a chapada dos Guimarães, a serra de Tapirapuã e a serra dos Parecis, no Mato Grosso, com altitudes que variam de 400 m a 800 m – são importantes para a planície pantaneira mato-grossense (com altitude média inferior a 200 m), no que se refere à manutenção do nível de água, sobretudo durante a estiagem. </p>
+
+		<p id="p3"> Nas cheias, a inundação ocorre em função da alta pluviosidade nas cabeceiras dos rios, do afloramento de lençóis freáticos e da baixa declividade do relevo, entre outros fatores. Durante a estiagem, a grande biodiversidade é assegurada pelas águas da calha dos principais rios, cujo volume tem diminuído, principalmente nas cabeceiras.</p>
+ 		
+		<p id="citacao"><small>  Cabeceiras ameaçadas. Ciência Hoje. Rio de Janeiro: SBPC. Vol. 42, jun. 2008 (adaptado). </small>	</p>
+					
+		<p id="p3">	A medida mais eficaz a ser tomada, visando à conservação da planície pantaneira e à preservação de sua grande biodiversidade, é a conscientização da sociedade e a organização de movimentos sociais que exijam:</p>
+
+        <p class="bordaQuestoes"id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) a criação de parques ecológicos na área do pantanal mato-grossense.</p>
+       
+	   <p class="bordaQuestoes"id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) a proibição da pesca e da caça, que tanto ameaçam a biodiversidade.</p>
+		
+		<p class="bordaQuestoes"id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) o aumento das pastagens na área da planície, para que a cobertura vegetal, composta de gramíneas, evite a erosão do solo.</p>
+		
+		<p class="bordaQuestoes"id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) o controle do desmatamento e da erosão, principalmente nas nascentes dos rios responsáveis pelo nível das águas durante o período de cheias.</p>
+		
+		<p class="bordaQuestoes"id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) a construção de barragens, para que o nível das águas dos rios seja mantido, sobretudo na estiagem, sem prejudicar os ecossistemas.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> A dinâmica hidrológica do Pantanal pode ser diretamente alterada pelo desmatamento e degradação dos mananciais dos rios que o alimentam. Desse modo, a cobrança das autoridades para a conservação dessas áreas torna-se um instrumento necessário ao equilíbrio ambiental. </p>
+
+  
+    </div>
+		
+		
+		
+	 
+	<div class="campo">
+		
+        <p id="p2">Questão 09</p>
+			 
+		<p id="p3">Quais as principais atividades econômicas desenvolvidas no Sudeste brasileiro?</p>
+   
+		<img src="s35q9.jpg" class="imagem" width="320" height="350">
+		
+		<p class="bordaQuestoes" id="q9a"><textarea placeholder="Insira sua resposta aqui" required="required" id="pq9" name="pq9"    rows ="8" cols="35" maxlength="700"></textarea></p>
+		            
+       
+    </div>
+	
+	
+    <div class="comentarios">
+      <p id="resp9"></p>
+		<p> Compare sua resposta com o comentário abaixo:</p>
+
+	   <b>Comentário:</b></p> 
+					
+		<p>	O Sudeste é a região brasileira que possui o maior dinamismo econômico do país. Sua economia é bem diversificada, abriga as maiores montadoras, siderúrgicas, empresas transnacionais, bancos, universidades, além de deter o maior parque industrial do Brasil. Os estados que compõem o Sudeste são responsáveis por aproximadamente 55% do Produto Interno Bruto (PIB) nacional.</p>
+
+		<p>	Indústria – Apresenta a maior concentração industrial do país, bem diversificada e com grande uso de aparatos tecnológicos. Destacam-se os setores de telecomunicações, têxtil, informática, alimentício, metalúrgico, siderúrgico, petrolífero, mineração, etc.</p>
+
+		<p>	Agropecuária – Extremamente diversificada, a agropecuária baseia-se principalmente no cultivo de café, cana-de-açúcar, soja, laranja, milho, arroz, algodão e mamona. A pecuária destaca-se na região, o rebanho bovino é o segundo maior do país.</p>
+
+		<p>	Turismo – Outra atividade econômica de fundamental importância para o Sudeste é o turismo. As belas praias atraem milhares de visitantes, além dos eventos como o carnaval, por exemplo. São Paulo é considerado a capital brasileira do turismo de negócios, concentrando 70% do movimento nacional.</p>
+
+  
+    </div>
+	
+		
+			
+	<div class="campo">
+		
+        <p id="p2">Questão 10</p>
+			
+		<p id="p3">   (UFV-MG 2010) O processo de desenvolvimento industrial no Brasil produziu uma concentração das indústrias na região Sudeste do país, sobretudo na cidade de São Paulo. </p>
+
+		<p id="p3"> Atualmente, observamos uma tendência à desconcentração industrial e, ainda que as indústrias permaneçam no Sudeste, a intensa transformação proporcionada pelo desenvolvimento científico vem produzindo uma reorganização do espaço industrial. 
+
+		<p id="p3"> O espaço geográfico brasileiro vem se tornando mais fluido e revela novas localizações para as indústrias.</p>
+
+		<p id="p3"> A partir dessas informações, analise as afirmativas abaixo:</p>
+
+		<p id="p3"> I. O aumento dos custos dos terrenos e imóveis nas grandes metrópoles tornou esses locais menos atrativos para as indústrias.</p>
+
+		<p id="p3"> II. A evolução das tecnologias e infraestrutura de transporte e comunicação aumentou os custos de transferência das indústrias.</p>
+
+		<p id="p3"> III. A pressão exercida pela força dos sindicatos que reivindicam melhorias tanto dos salários quanto das condições de trabalho contribuiu para o deslocamento das indústrias.</p>
+
+		<p id="p3"> IV. O elevado custo da produção nos centros urbanos exigiu um novo arranjo espacial das indústrias, o que foi facilitado pelos avanços científicos.</p>
+
+		<p id="p3"> Está CORRETO o que se afirma apenas em:</p>
+					           
+        <p class="bordaQuestoes"id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) II, III e IV.</p>
+      
+	   <p class="bordaQuestoes"id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) I, II e III.</p>
+		
+		<p class="bordaQuestoes"id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) I, II e IV.</p>
+		
+		<p class="bordaQuestoes"id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d">d) I, III e IV.</p>
+		
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+    <img id="imagem" style="display:none"  width = "280" height="200">
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	  document.getElementById("p2").style.fontFamily = tipo[fonte];
+	     
+	     
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked ==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "#424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "a") {
+                corretas++;
+                document.getElementById("q2a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2a").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "c") {
+                corretas++;
+                document.getElementById("q3c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q3c").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "e") {
+                corretas++;
+                document.getElementById("q4e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4e").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "c") {
+                corretas
+                document.getElementById("q5c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5c").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "e") {
+                corretas++;
+                document.getElementById("q6e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6e").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "e") {
+                corretas++;
+                document.getElementById("q7e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7e").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "d") {
+                corretas++;
+                document.getElementById("q8d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				 document.getElementById("q8d").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "a") {
+                corretas++;
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+            } else {
+                
+				
+				document.getElementById("q9a").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "d") {
+                corretas++;
+                document.getElementById("q10d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			document.getElementById("resp9").innerHTML = pq9;
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

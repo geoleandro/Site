@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p1Aula06</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+	</style>
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
+
+
+	</div>
+
+
+	<h1 class="h1"> Aula 06 – Revisão (aulas 01 a 05)</h1>
+
+
+	<div class="w3-container w3-card-4">
+		<strong>Conteúdo:</strong>
+
+		<ul class="w3-padding">
+			<li>Conceitos fundamentais da Geografia: Espaço geográfico, território, lugar, paisagem e região</li>
+			<li>Introdução à História da Cartografia; Mapas; Sistemas referenciais para localização espacial: pontos
+				cardeais; Rotação; coordenadas geográficas, longitude, latitude.</li>
+			<li>Fusos horários, GMT (Greenwich Mean time ou horário médio de Greenwich); Linha Internacional da Data;
+				Fuso horário brasileiro.</li>
+			<li>Escala geográfica; Escala cartográfica: numérica e gráfica. </li>
+			<li>Projeções cilíndricas, cônicas e azimutais</li>
+
+		</ul>
+
+	</div>
+
+
+
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+			<p class="p3"> Por meio do trabalho as pessoas transformam a natureza e constroem o espaço geográfico. O
+				trabalho humano ficou impresso nas paisagens. Analise as afirmativas abaixo acerca do trabalho e a
+				transformação do espaço geográfico:</p>
+
+			<p class="p3"> 1. Com o trabalho humano, o espaço geográfico está em constante mudança, em contínua
+				transformação e
+				movimento.</p>
+
+			<p class="p3"> 2. Os homens trabalham para garantir a satisfação de suas necessidades básicas e assegurar
+				sua
+				existência, assim como para obter ascensão social. </p>
+
+			<p class="p3"> 3. Há em nosso País uma divisão territorial do trabalho. Em algumas regiões predomina a
+				agricultura e em
+				outras, a indústria. Há no território brasileiro uma divisão espacial das atividades econômicas.
+			</p>
+
+
+
+
+			<p class="p3">Assinale a alternativa que indica todas as afirmativas corretas. </p>
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a)
+				É correta apenas a afirmativa 1. </p>
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b)
+				É correta apenas a afirmativa 2. </p>
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c)
+				É correta apenas a afirmativa 3. </p>
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
+				São corretas apenas as afirmativas 1 e 2.</p>
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e)
+				São corretas as afirmativas 1, 2 e 3.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> Comentário: </p>
+			<p> 	Colocar os comentários aqui.</p> -->
+		</div>
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p class="p3"> Estado, nação, território e país são conceitos- -chave da Geografia. Acerca desses temas
+				analise
+				os itens abaixo correlacionando-os de forma adequada: </p>
+
+			<p class="p3"> Coluna 1 - Conceito</p>
+
+			<p class="p3"> 1. Estado </p>
+			<p class="p3"> 2. Nação </p>
+			<p class="p3"> 3. Território </p>
+			<p class="p3"> 4. País </p>
+
+			<p class="p3"> Coluna 2- Descrição </p>
+
+			<p class="p3"> () é politicamente delimitado por fronteiras, em geral habitado por uma comunidade com
+				história
+				própria.</p>
+
+			<p class="p3"> () é a forma como a sociedade se organiza politicamente. </p>
+
+			<p class="p3"> () é a base física sobre a qual um Estado exerce sua soberania. </p>
+
+			<p class="p3"> () é um coletivo humano com características comuns, como a língua e a religião. Os
+				membros dessa
+				coletividade estão ligados por laços históricos, étnicos e culturais. </p>
+
+			<p class="p3">Assinale a alternativa que indica a sequência correta, de cima para baixo </p>
+
+
+
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
+				1 • 2 • 3 • 4 </p>
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
+				1 • 4 • 3 • 2 </p>
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c)
+				4 • 1 • 2 • 3 </p>
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d">
+				d)
+				4 • 1 • 3 • 2 </p>
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
+				4 • 3 • 2 • 1</p>
+		</div>
+
+
+		<div class="comentarios">
+			<!-- <p> Comentário: </p>
+			<p> 	Colocar os comentários aqui.</p> -->
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p class="p3">(UCS RS/2017) observe o mapa ao lado.</p>
+
+			<div class="w3-center"><img src="p6q3.png" alt="Mapa-mundi" class="w3-mobile"></div>
+
+
+			<p class="p3">Considere as seguintes afirmativas.</p>
+
+			<p class="p3">I - Em relação ao Meridiano de Greenwich, a região Sul do Brasil está localizada no
+				Hemisfério Oriental.</p>
+
+			<p class="p3">II - Rússia, Canadá, Estados Unidos, China e Brasil têm a maior extensão territorial e, em
+				relação à Linha do Equador, estão localizados na porção Meridional.
+
+			<p class="p3">
+
+				III - As coordenadas geográficas da Ilha de Madagascar, na África, são: longitude 20ºS e latitude
+				50ºE.
+			</p>
+
+			<p class="p3">IV - As coordenadas geográficas aproximadas do Japão são: latitude 40ºN e longitude 140ºE.
+			</p>
+
+			<p class="p3">V - Em relação à Linha do Equador, Austrália e Portugal estão posicionados nos hemisférios
+				Meridional e Setentrional, respectivamente.</p>
+
+			<p class="p3">Das proposições acima</p>
+
+
+
+
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a">
+				a) apenas IV está correta.</p>
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b">
+				b) apenas V está correta. </p>
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c">
+				c)apenas II, IV e V estão corretas. </p>
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d">
+				d) apenas III e V estão corretas. </p>
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e">
+				e) apenas IV e V estão corretas.</p>
+
+		</div>
+
+		<div class="comentarios">
+			<!-- <p> Comentário: </p>
+					<p> 	Colocar os comentários aqui.</p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p class="p3">(UNESP, 2018) No encerramento da temporada regular 2015-2016 da liga americana de
+				basquete, o ídolo do Los Angeles Lakers, Kobe Bryant, despediu-se das quadras numa partida
+				diante do Utah Jazz.
+				O jogo foi realizado na Califórnia, que fica no fuso horário 120º oeste, no dia 13.04.2016 às
+				19h30
+				(horário local). </p>
+
+
+
+			<p class="citacao">(Http://sportv.globo.com. Adaptado.)</p>
+
+
+			<p class="p3">Ciente de que os EUA utilizavam o horário de verão, a última atuação do atleta foi
+				transmitida ao vivo às.</p>
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a">
+				a)
+				22h30 do dia 13.04.2016 para o estado do Acre.</p>
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b">
+				b) 21h30 do dia 13.04.2016 para a capital do Amazonas.</p>
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c">
+				c)
+				00h30 do dia 14.04.2016 para o Distrito Federal.</p>
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d">
+				d)
+				23h30 do dia 13.04.2016 para a cidade de São Paulo.</p>
+			<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e">
+				e)
+				01h30 do dia 14.04.2016 para o arquipélago Fernando de Noronha.</p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+			<p> A questão, referente à distribuição global dos fusos horários terrestres, informa que na cidade
+				de
+				Los
+				Angeles (EUA) localizada no fuso de 120º Oeste (portanto no oitavo fuso em relação ao Meridiano
+				de
+				Greenwich = 0º) os relógios marcavam 19h30min, porém a cidade estava adotando o horário de verão
+				tendo,
+				portanto, os relógios adiantados em 1 hora. Assim, para responder à questão, é necessário
+				considerar, o
+				horário como sendo 18h30min. As cidades de Rio Branco (AC), Manaus (AM), Brasília (DF), São
+				Paulo
+				(SP) e
+				a ilha de Fernando de Noronha (PE) estão localizadas a Leste de Los Angeles, todas deverão
+				marcar
+				horas
+				adiantadas em relação à cidade estadunidense. Assim sendo:</p>
+
+			<p> - Rio Branco localizada a 75ºOeste (120-75=45/15=3), portanto 18h30min +3h = 21h30min no
+				Acre.</p>
+
+			<p> - Manaus localizada a 60ºOeste (120-60=60/15=4),portanto 18h30min + 4h = 22h30min em SP.</p>
+
+			<p> - Brasília e São Paulo localizadas a 45ºOeste (120-45=75/15=5, portanto 18h30min + 5h = 23h30min
+				no
+				DF e
+				em SP.</p>
+
+			<p> - Fernando de Noronha localizada a 30ºOeste (120-30=90/15=6, portanto 18h30min + 6h =
+				00h30min.</p>
+
+
+
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 05</p>
+
+			<p class="p3"> (PUC-MG) Ao dividir os 360 graus da esfera terrestre pelas 24 horas de duração do
+				movimento de
+				__________, o resultado é 15 graus. A cada 15 graus que a Terra gira, passa-se uma hora. Assim,
+				cada
+				uma
+				das 24 divisões da Terra corresponde a um __________.</p>
+
+			<p class="p3"> Para que o texto fique adequadamente preenchido, as lacunas devem ser completadas,
+				respectivamente,
+				por
+			</p>
+
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a">
+				a)
+				translação e meridiano.</p>
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b">
+				b)
+				translação e paralelo.</p>
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c">
+				c)
+				rotação e círculo.</p>
+			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d">
+				d)
+				rotação e fuso horário.</p>
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+			<p> a) Falso – A translação é o movimento que a Terra realiza em torno do Sol, durante esse processo
+				são
+				gastos 365 dias e seis horas. Esse fenômeno é responsável pela alternância das estações do ano.
+				O
+				meridiano é uma linha geográfica imaginária.</p>
+
+			<p> b) Falso – A translação é o movimento que a Terra realiza em torno do Sol, durante esse processo
+				são
+				gastos 365 dias e seis horas. O paralelo, por sua vez, consiste no círculo menor perpendicular
+				ao
+				eixo
+				terrestre.</p>
+
+			<p> c) Falso – a rotação é o movimento que a Terra faz em torno de seu próprio eixo, sendo realizado
+				em,
+				aproximadamente, 24 horas. No entanto, círculo não tem relação com os fusos horários.<br><br>
+
+			<p> d) Verdadeiro – Denomina-se rotação o movimento que a Terra faz em torno do seu próprio eixo
+				(360°),
+				esse movimento é realizado em aproximadamente 24 horas. Os fusos horários foram estabelecidos
+				através da
+				divisão do eixo da Terra (360°) pelo tempo de duração do movimento de rotação (24 horas),
+				portanto,
+				temos o resultado de 15°, responsável por um fuso horário</p>
+
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 06</p>
+
+			<p class="p3">(UNCISAL 2016) Antípodas são pessoas que se encontram em meridianos e paralelos
+				opostos,
+				ou
+				seja, em relação à outra pessoa, vive do outro lado da Terra, em um ponto diametralmente oposto.
+			</p>
+
+
+
+			<div class="w3-center"><img src="p6q6.png" alt="Mapa coordenadas" class="w3-mobile"></div>
+
+
+
+			<p class="p3">O antípoda de uma pessoa localizada no ponto A, mostrado no mapa, estará nas
+				coordenadas
+			</p>
+
+			<p class="citacao">Http://www.freewebs.com/
+				manetsute/meridian.png. Acesso em: 03 nov.
+				2015.
+			</p>
+
+
+
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
+				a)
+				20º N e 180º E. </p>
+			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b">
+				b)
+				20º S e 140º W. </p>
+			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c">
+				c)
+				70º N e 140º E. </p>
+			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d">
+				d)
+				70º S e 180º E.</p>
+
+
+			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e">
+				e)
+				90º S e 180º W. </p>
+		</div>
+
+		<div class="comentarios">
+			<!-- <p> Comentário: </p>
+					<p> 	Colocar os comentários aqui.</p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 07</p>
+
+			<p class="p3">(UERJ 2017) </p>
+
+			<div class="w3-center"><img src="p6q7.png" alt="Mapa trajeto tocha olímpica" class="w3-mobile">
+			</div>
+
+
+			<p class="p3"> No mapa, o trajeto total da tocha olímpica em território brasileiro mede cerca de 72
+				cm,
+				considerando os trechos por via aérea e por terra.
+
+				A distância real, em quilômetros, percorrida pela tocha em seu trajeto completo, é de
+				aproximadamente:
+			</p>
+
+
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">
+				a)
+				3 600 </p>
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
+				b)
+				7 000 </p>
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c">c)
+				36 000 </p>
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d">
+				d)
+				70 000</p>
+
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+			<p> O gráfico demonstra que 1 cm corresponde a 615 km, ou seja, acrescentando cinco zeros para à
+				direita,
+				temos: 61 500 000 cm. Portanto, trata-se da escala 1 : 61 500 000.</p>
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 08</p>
+
+			<p class="p3">(UNESP 2017) A escala cartográfica define a proporcionalidade entre a superfície do
+				terreno e sua
+				representação no mapa, podendo ser apresentada de modo gráfico ou numérico. </p>
+
+			<div class="w3-center"><img src="p6q8.png" alt="foto escala gráfica" class="w3-mobile"></div>
+
+			<p class="p3">A escala numérica correspondente à escala gráfica apresentada é: </p>
+
+
+
+
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
+				a)
+				1:184 500 000. </p>
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
+				b)
+				1:615 000. </p>
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
+				c)
+				1:1 845 000. </p>
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
+				d)
+				1:123 000 000.</p>
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e">
+				e)
+				1:61 500 000.</p>
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário:</p>
+			<p> O gráfico demonstra que 1 cm corresponde a 615 km, ou seja, acrescentando cinco zeros para à
+				direita,
+				temos: 61 500 000 cm. Portanto, trata-se da escala 1: 61 500 000.</p>
+
+
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 09</p>
+
+			<p class="p3">(UERJ 2017)</p>
+
+
+
+			<div class="w3-center"><img src="p6q9.png" alt="Mapa religiões" class="w3-mobile"></div>
+
+
+			<p class="p3"> O cartograma acima foi elaborado com a técnica da anamorfose, de modo que o tamanho
+				do
+				quadrilátero que representa cada país é proporcional ao tamanho de sua população. As cores, por
+				sua
+				vez,
+				indicam a religião majoritariamente seguida pelos fiéis de cada país. </p>
+
+			<p class="p3"> Analisando o cartograma apresentado, observa-se a menor dispersão espacial de fiéis,
+				pelos
+				diferentes
+				países, na seguinte religião </p>
+
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a">
+				a)
+				Budismo. </p>
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b">
+				b)
+				Islamismo. </p>
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c">
+				c)
+				Hinduísmo. </p>
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d">
+				d)
+				Cristianismo. </p>
+
+
+
+		</div>
+
+
+		<div class="comentarios">
+			<!-- <p> Comentário: </p>
+					<p> 	Colocar os comentários aqui.</p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 10</p>
+
+			<p class="p3">(PUC-SP 2017) Leia e observe o mapa:
+
+				"Todo mundo sabe que a literatura e a arte, da pintura à música, refletem uma sociedade e uma
+				cultura.
+				Menos conhecido, híbrido da escrita e da imagem, o mapa, representação gráfica do mundo, é
+				também o
+				retrato da época que o produziu."</p>
+
+
+			<div class="w3-center"><img src="p6q10.png" alt="Mapa antigo" class="w3-mobile"></div>
+
+			<p class="citacao">
+
+				(Prefeitura de Paris. A descoberta dos Planos de Paris do XVI ao XVIII séculos. Paris: Agência
+				Cultural de Paris, 1994. p.5). Acesso em: 03 nov. 2015.
+			</p>
+
+
+			<p class="p3"> Considerando o texto e o mapa como uma linguagem é correto dizer queConsiderando o
+				texto
+				e o
+				mapa como uma linguagem é correto dizer que</p>
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a">
+				a) mapas de qualquer época são produtos científicos que não têm valor documental algum, se suas
+				representações não forem precisas em relação ao espaço representado.</p>
+			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b">
+				b) um valor de um mapa histórico está no fato, entre outros, de que ele representa as técnicas
+				de
+				representação de uma época e os saberes que se possuíam sobre os lugares.</p>
+			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c">
+				c) a equiparação do mapa com obras de arte se deve ao fato de que mapas históricos não tinham a
+				pretensão da verdade, apenas pretensões estéticas. </p>
+			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
+				d) um mapa revela sua época, pois essa representação se caracteriza pela estrita expressão
+				apenas
+				daquilo que se conhece, não dando espaço para a imaginação.</p>
+
+
+
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+			<p> A cartografia é compreendida como um conjunto de técnicas utilizadas na produção de mapas,
+				cartas e
+				outras formas de representação da superfície da Terra e de fenômenos socioeconômicos. Essas
+				técnicas
+				foram se desenvolvendo através de avanços e retrocessos, junto ao caminhar da humanidade, sendo
+				possível, ao estudar mapas e cartas antigas, perceber os conhecimentos que uma civilização
+				possuía e
+				como eles compreendiam o mundo.</p>
+
+			<p> Na Idade Média, por exemplo, os mapas possuíam uma série de imagens e símbolos religiosos. No
+				mapa
+				apresentado, percebe-se o continente americano apenas pela metade, além de distorções muito
+				evidentes
+				nas formas dos continentes já conhecidos, como a África e parte da Ásia.</p>
+
+
+		</div>
+
+
+
+	</form>
+
+
+	<br><br>
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+
+	<p id="aviso"></p>
+	<br><br>
+
+
+	<div class="areaBtn"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<br><br>
+
+
+
+
+
+
+
+
+
+
+	<script>
+
+
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "e") {
+				corretas++;
+				document.getElementById("q1e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+
+				document.getElementById("q1e").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq2 == "d") {
+				corretas++;
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+
+			}
+			if (pq3 == "e") {
+				corretas++;
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "d") {
+				corretas++;
+				document.getElementById("q4d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+
+				document.getElementById("q4d").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "d") {
+				corretas++;
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "b") {
+				corretas++;
+				document.getElementById("q6b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+
+				document.getElementById("q6b").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "c") {
+				corretas++;
+				document.getElementById("q7c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q7c").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "e") {
+				corretas++;
+				document.getElementById("q8e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+
+				document.getElementById("q8e").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "c") {
+				corretas++;
+				document.getElementById("q9c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q9c").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "b") {
+				corretas++;
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+			}
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+
+
+
+
+
+		}
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

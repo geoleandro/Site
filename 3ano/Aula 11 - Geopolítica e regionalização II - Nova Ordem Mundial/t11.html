@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none; border-radius: 35px ; padding: 0px; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(livro.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+.p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex; justify-content: center;}
+
+
+</style>
+
+</head>
+
+<body onload= "mudaQuest()">
+
+
+
+
+	<h1 id="h1">    Questões aula 11 - Geopolítica e regionalização II: Nova Ordem Mundial  </h1>
+  
+  
+	<p><b>Conteúdo:</b>  Nova Ordem Mundial; Blocos Econômicos; Nacionalismo; Novos conflitos Mundiais; 
+
+   </p>
+	
+	
+	<p><b>Objetivo:</b> Caracterizar a ordem mundial pós-Guerra Fria.  Destacar as diferentes visões sobre a organização do poder político e econômico no espaço mundial na atualidade.  Destacar a importância dos blocos econômicos nessa nova ordem, assim como entender os diferentes níveis de integração que caracterizam tais organizações.   </p>
+    
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p class ="p2">Questão 01</p>
+			
+		<p id="p3">   (FUVEST 2020) Dois eventos marcaram a diplomacia brasileira em relação ao Oriente Médio no início de 2019. Um deles foi o voto contra a resolução da ONU que pedia a desocupação militar das Colinas de Golã e sua devolução à Síria. Outro evento foi o anúncio de transferência da embaixada brasileira de Tel Aviv para Jerusalém, mesmo não tendo sido levada adiante até setembro de 2019. Em relação a esses eventos, é correto afirmar que ele representa   </p>
+							          
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a)  I ‐ uma aproximação do Brasil em relação à posição dos EUA.II ‐ Um potencial distanciamento do Brasil em relação à posição da maioria dos países do Conselho de Segurança da ONU.<br>
+		II ‐ Um potencial distanciamento do Brasil em relação à posição da maioria dos países do Conselho de Segurança da ONU.</p>
+ 	
+		<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b)  I ‐ um distanciamento do Brasil em relação à posição da Palestina e uma aproximação em relação ao conjunto de países árabes.<br>
+		II ‐ Uma potencial aproximação do Brasil em relação à posição da maioria dos países do Conselho de Segurança da ONU.</p>		
+	
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) I ‐ um distanciamento do Brasil em relação à posição de Israel e uma aproximação em relação aos palestinos.<br>
+		II ‐ Um potencial distanciamento do Brasil em relação à posição da maioria dos países do Conselho de Segurança da ONU.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) I ‐ um distanciamento do Brasil em relação à posição dos EUA.<br>
+		II ‐ Uma potencial aproximação do Brasil em relação à posição da maioria dos países do Conselho de Segurança da ONU</p>
+		
+		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e) I ‐ uma aproximação do Brasil em relação à posição da Síria.<br>
+		II ‐ Um potencial distanciamento do Brasil em relação à posição da maioria dos países do Conselho de Segurança da ONU.</p>
+
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Correta. I - As Colinas de Golã foram ocupadas por Israel na Guerra dos Seis Dias (1967) e, segundo a agência de notícias ONU News, "os Estados Unidos decidiram este mês reconhecer a soberania de Israel sobre estes territórios, enquanto resoluções do Conselho de Segurança e da Assembleia Geral atribuem às Colinas de Golã o status de território ocupado ilegalmente". O voto do Brasil contra a resolução da ONU que pedia a desocupação militar das Colinas de Golã e sua devolução à Síria representa, portanto, uma aproximação do Brasil em relação à posição dos EUA. II - A maioria dos países do Conselho de Segurança da ONU apoia a resolução 478 da ONU aprovada em 1980 que não reconhece Jerusalém como a capital oficial de Israel, por isso a anúncio da transferência da embaixada brasileira de Tel Aviv para Jerusalém representa um potencial distanciamento do país à posição da maioria dos países do Conselho de Segurança da ONU.</p>
+
+		<p> b) Incorreta. I - A posição dos palestinos e dos árabes é de apoio à devolução das Colinas de Golã à Síria. Portanto, o voto brasileiro não representa uma aproximação em relação ao conjunto dos países árabes. II - Como já explicado no item a o anúncio da transferência da embaixada brasileira representa um distanciamento do Brasil em relação à maioria dos países do Conselho de Segurança da ONU.</p>
+
+		<p> c) Incorreta. O voto brasileiro sobre as Colinas de Golã representa uma aproximação com Israel e um distanciamento dos Palestinos, o que inviabiliza a alternativa.</p>
+
+		<p> d) Incorreta. Como explicado no item a o Brasil se aproxima dos Estados Unidos, o que inviabiliza a alternativa. Há ainda distanciamento do voto brasileiro em relação à maioria dos países do Conselho de Segurança da ONU.</p>
+
+		<p> e) Incorreta. O voto do Brasil contra a resolução da ONU que pedia a desocupação militar israelense das Colinas de Golã e sua devolução à Síria representa um distanciamento do Brasil com a Síria, o que inviabiliza a alternativa.</p>
+			
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p class ="p2">Questão  02</p>
+			
+		<p id = "p3">  (2020) A Nova Ordem Mundial assinala o fim da bipolaridade entre União Soviética e Estados Unidos. Então, a partir do início do século XXI, os norte-americanos iniciaram uma guerra ao terrorismo, que passou a ser o novo adversário dos EUA no cenário internacional. Um evento que pode assinalar essa nova empreitada é:  </p>
+					           
+      <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) A Guerra do Iraque, cujo objetivo era aniquilar o terrorista internacional Saddam Hussein.</p>
+     
+	   <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) A caçada e morte de Osama Bin Laden, em 2 de Maio de 2011.</p>
+		
+		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c">c) A Guerra das Coreias, com o objetivo de exterminar terroristas norte-coreanos.</p>
+			
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) A Guerra entre Israel e Palestina, em que os EUA buscaram extinguir facções terroristas israelenses.</p>
+		
+		
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> A caçada ao terrorista Osama Bin Laden, a quem se atribui a realização dos atentados às torres gêmeas em 11 de Setembro de 2001, é um dos principais símbolos da ordem bélica internacional propalada pelos EUA, denominada por George W. Bush de “Guerra ao Terror”.   </p>
+    </div>
+	
+	
+	
+	
+
+    <div class="campo">
+		
+        <p class ="p2">Questão 03</p>
+			
+		<p id="p3">  (2020) em uma análise das condições socioeconômicas e geopolíticas entre o mundo bipolar e multipolar, podemos assinalar como INCORRETO:   </p>
+						         
+        <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) ambos os termos referem-se às ordens mundiais de seus respectivos períodos históricos.</p>
+       
+	   <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) a bipolaridade caracterizou-se pela oposição entre duas ideologias, ao passo que na multipolaridade não há esse tipo de dualidade.</p>
+		
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) a queda do Muro de Berlim foi o principal marco histórico da substituição do mundo multipolar pelo contexto bipolar.</p>
+		
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d">d) a multipolaridade pauta-se na disputa econômica; a bipolaridade era marcada pela corrida armamentista.</p>
+		
+		
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Correto – a ordem mundial da Guerra Fria era chamada de bipolar e a ordem mundial atual é multipolar. </p>
+
+		<p> b) Correto – na bipolaridade, países capitalistas e autodeclarados socialistas competiam entre si. Atualmente, essa oposição inexiste entre os países. </p>
+
+		<p> c) Incorreto – a queda do Muro de Berlim marcou, na verdade, a transição da bipolaridade para a multipolaridade, e não o contrário. </p>
+
+		<p> d) Correto – nos tempos de multipolaridade, a importância da economia é maior do que a relevância militar. Anteriormente, a corrida armamentista entre EUA e URSS é que ditava o cenário geopolítico. </p>
+  
+    </div>
+	
+	
+	
+	
+	
+
+	<div class="campo">
+		
+        <p class ="p2">Questão 04</p>
+			
+		<p id="p3">   (ENEM 2019) </p>
+		
+		<p id="p3">		<b>Brasil, Alemanha, Japão e Índia pedem reforma do Conselho de Segurança</b></p>
+		
+		<p id="p3">	Os representantes do G4 (Brasil, Alemanha, Índia e Japão) reiteraram, em setembro de 2018, a defesa pela ampliação do Conselho de Segurança da Organização das Nações Unidas (ONU) durante reunião em Nova York (Estados Unidos).<br> Em declaração conjunta, de dez itens, os chanceleres destacaram que o órgão, no formato em que está, com apenas cinco membros permanentes e dez rotativos, não reflete o século 21.<br> “A reforma do Conselho de Segurança é essencial para enfrentar os desafios complexos de hoje. Como aspirantes a novos membros permanentes de um conselho reformado, os ministros reiteraram seu compromisso de trabalhar para fortalecer o funcionamento da ONU e da ordem multilateral global, bem como seu apoio às respectivas candidaturas”, afirma a declaração conjunta.</p>
+				
+		<p id="citacao"><small>  Disponível em: http://agenciabrasil.ebc.com.br. Acesso em: 7 dez. 2018 (adaptado   </small>	</p>
+	          
+		<p id="p3">  Os países mencionados no texto justificam sua pretensão com base na seguinte característica comum: </p>
+       
+	   <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) Extensividade de área territorial.</p>
+       
+	   <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) Protagonismo em escala regional.</p>
+		
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) Investimento em tecnologia militar.</p>
+		
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) Desenvolvimento de energia nuclear.</p>
+		
+		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) Disponibilidade de recursos minerais.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Incorreta. A base da justificativa feita pelo grupo é a relevância geopolítica e econômica, e não o tamanho territorial (inclusive o Japão possui pequena dimensão territorial).</p>
+			
+		<p>  b) Correta. A reforma proposta pelo G4 para o Conselho de Segurança é justificada para garantir a representatividade da ONU na mediação das relações internacionais. A análise desse grupo, apoiada por muitos estudiosos sobre o tema, defende que a atual estrutura do Conselho de Segurança reflete as relações de poder do mundo após a Segunda Guerra Mundial e, portanto, estaria desatualizada para o século XXI. A melhoria da representatividade do Conselho de Segurança se daria por meio da incorporação de países que tiveram ascensão no seu papel geopolítico regional.</p>
+			
+		<p> c) Incorreta. O investimento em tecnologia militar por si só não é um atributo que garante a um país o papel de liderança sobre uma região.</p>
+			
+		<p> d) Incorreta. O desenvolvimento de energia nuclear não é tão significativo no Brasil, quando comparada a outros países, e na Alemanha, que houve um recuo do uso desse modal de energia.</p>
+		
+		<p> e) Incorreta. Os inúmeros países no mundo dispõem de recursos minerais, mas não possuem relevância geopolítica a ponto de poderem pleitear o papel de liderança. Além disso, deve -se ressaltar que o Japão não é rico em recursos minerais.</p>
+  
+    </div>
+	
+	
+	
+			
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 05</p>
+			
+		<p id="p3">   (Unicamp 2018) Frequentemente o terrorismo recorre a ações de grande impacto. Contudo, seu objetivo maior é o de influenciar os espíritos; antes de tudo, ele visa a aterrorizar, e se distingue da criminalidade. Invocando reivindicações políticas, de natureza social, econômica ou religiosa, o terrorismo </p>
+					
+			           
+        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) realiza-se apenas no âmbito internacional, enquanto a criminalidade é marcada pelo objetivo primeiro do ganho financeiro.</p>
+        
+		<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b">b) realiza-se nacional e internacionalmente, enquanto a criminalidade é marcada pelo objetivo primeiro do ganho financeiro</p>
+		
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) realiza-se apenas no âmbito internacional, enquanto a criminalidade é marcada basicamente por objetivos ideológicos.</p>
+		
+		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) realiza-se nacional e internacionalmente, enquanto a criminalidade é marcada basicamente por objetivos ideológicos.</p>
+		
+		
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  O terrorismo ocorre tanto internamente aos territórios nacionais quanto em escala internacional, como foi o caso dos atentados às Torres Gêmeas nos EUA em 2001. A criminalidade é distinta, pois pode ocorrer fora do campo ideológico, envolvendo ganhos financeiros.<br> A alternativa a está incorreta pois não se realiza apenas na escala internacional, há muitos movimentos terroristas que são nacionais, apesar da criminalidade referir-se a ganhos financeiros. <br>Assim como, a alternativa c está incorreta pois as duas afirmações estão incorretas, porque há terrorismo interno a territórios nacionais e a criminalidade não envolve apenas questões ideológicas. Por fim, a alternativa d é incorreta, pois o terrorismo é nacional e internacional, contudo, a criminalidade não é marcada basicamente por ganhos ideológicos, mas financeiros. </p>
+    </div>
+		
+		
+		
+		
+			
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 06</p>
+			
+		<p id="p3">    (ENEM 2017) México, Colômbia, Peru e Chile decidiram seguir um caminho mais curto para a integração regional. Os quatro países, em meados de 2012, criaram a Aliança do Pacífico e eliminaram, em 2013, as tarifas aduaneiras de 90% do total de produtos comercializados entre suas fronteiras.    </p>
+					
+		<p id="citacao"><small> OLIVEIRA, E. Aliança do Pacífico se fortalece e Mercosul fica à sua sombra. O Globo, 24 fev. 2013 (adaptado).  </small>	</p>
+	          
+		<p id="p3">	  O acordo descrito no texto teve como objetivo econômico para os países-membros: </p>
+        
+		<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) promover a livre circulação de trabalhadores. </p>
+       
+	   <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) fomentar a competitividade no mercado externo. </p>
+		
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) restringir investimentos de empresas multinacionais. </p>
+		
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) adotar medidas cambiais para subsidiar o setor agrícola. </p>
+		
+		<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) reduzir a fiscalização alfandegária para incentivar o consumo.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A redução das tarifas aduaneiras promove uma diminuição do preço dos produtos que se tornam   portanto, mais competitivos.  É na busca do crescimento dos mercados que se basearam México, Peru, Colômbia e Chile para reduzir seus impostos.</p>
+
+		<p> a) Incorreta. A Aliança do Pacifico não prevê a livre circulação de pessoas entre seus países membros, por enquanto. Seus membros fundadores, à época da assinatura do acordo, esclareceram que a livre circulação de pessoas seria um objetivo de longo prazo</p>
+
+		<p> b) Correta. Os países fundadores da Aliança do Pacífico, ao reduzir drasticamente as barreiras alfandegárias entre si, tem por objetivo transformar-se em economias mais competitivas, principalmente na região da Ásia-Pacífico.</p>
+
+		<p> c) Incorreta. No mundo atual os países buscam atrair investimentos externos oriundos principalmente das multinacionais. Restringir o investimento de multinacionais significaria um isolamento econômico e a Aliança do Pacífico estaria indo no sentido contrário à lógica da economia globalizada, algo não observado na realidade.</p>
+
+		<p> d) Incorreta. De maneira geral, os subsídios agrícolas independem de blocos econômicos para existirem, são práticas comerciais internas. Além disso, o texto não faz nenhum tipo de menção às medidas cambiais que, de modo geral, são tomadas em âmbito nacional e não regional.</p>
+		
+		<p> e) Incorreta. O bloco não tem por objetivo reduzir a fiscalização alfandegária e sim as tarifas alfandegárias, nesse sentido a fiscalização nas alfandegas permanecem do jeito que estão. Além disso, Chile, Colômbia, México e Peru tem como objetivo se lançarem sobre mercados da Ásia-Pacífico sejam eles já consolidados, caso da Austrália e Japão, ou ainda mercados em crescimento como o da China e Índia.</p>
+    </div>
+		
+		
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 07</p>
+			
+		<p id="p3">   (ENEM 2014) </p>
+			
+		<img src="t11q7.jpg" alt="a" class="imagem" width="320" height="160">
+		
+		<p id="p3">  Na imagem, é ressaltado, em tom mais escuro, um grupo de países que na atualidade possuem características político-econômicas comuns, no sentido de:</p>
+				          
+        <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) adotarem o liberalismo político na dinâmica dos seus setores públicos.</p>
+       
+	    <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) constituírem modelos de ações decisórias vinculadas à socialdemocracia.</p>
+		
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c">c) instituírem fóruns de discussão sobre intercâmbio multilateral de economias emergentes.</p>
+		
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) promoverem a integração representativa dos diversos povos integrantes de seus territórios.</p>
+		
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) apresentarem uma frente de desalinhamento político aos polos dominantes do sistema-mundo.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Incorreta. Historicamente o liberalismo político é uma tentativa de contraposição ao absolutismo, em uma tentativa de limiar a ação do Estado, garantindo os direitos individuais e civis. A tentativa de aplicação desses conceitos para a organização política dos BRICS esta historicamente deslocada.</p>
+
+		<p> b) Incorreta. Podemos associar o pensamento social democrata a uma ideologia de centro esquerda que entende o capitalismo como meio de levar o desenvolvimento econômico e social pleno as sociedades, desenvolvendo políticas de governo que através de intervenções diretas garantam qualidade de vida à sociedade. Através deste modelo de gerencia estatal tenta-se chegar a um estado de bem estar social pleno Sabendo isto podemos perceber que os Paises ressaltados no mapa não são bons modelos de social democracia, em especial a China, onde sequer há democracia.</p>
+
+		<p> c) Correta. Os paises destacados no mapa são os BRICS (acrônimo para se referir ao grupo de paises formado por Brasil, Rússia, Índia. China e África do Sul), paises emergentes com maior potencial de crescimento econômico na atualidade. O termo foi cunhado em 2001 pelo economista Jim O ‘Neil (ainda sem a inclusão da África do Sul. anexada apenas em 2009) e desde 2009 vem se configurando como um fórum de discussões com vista a alimentar um intercâmbio o multilateral de economias e comércio.</p>
+
+		<p> d) Incorreta. Integrar povos não é o objetivo dos BRICS, mas sim o de criar um diálogo econômico comercial entre as economias emergentes do sistema capitalista. Vale ainda lembrar que a China não é um pais com regime político democrático, o que dificultaria muito aos BRICS promoverem a integração representativa dos diversos povos integrantes de seus territórios.</p>
+
+		<p> e) Incorreta. Os BRICS se impõem como uma voz dissonante à voz do sistema capitalista proposto pelos paises centrais aos demais países do planeta. De forma muito genérica o conceito sistema-mundo pressupõe a rede de relações econômicas e políticas que englobam</p>
+		
+		<p> os países do planeta em um espaço econômico e geopolítico mundializada. Os países que compõem os BRICS não se colocam contrários a isto, mas apenas querem ter mais peso político nas negociações políticas e econômicas globais.</p>
+
+
+ 
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 08</p>
+			
+		<p id="p3">    (Mackenzie 2013)  </p>
+
+		<p id="p3">	“<i>É preciso perceber três espécies de globalização, se quisermos escapar à crença de que este mundo, assim como nos é apresentado, é a única opção verdadeira: há o mundo tal como nos fazem vê-lo, com a globalização como fábula; o segundo é o mundo como ele é, com a globalização como perversidade; e o terceiro, o do mundo como ele pode ser, o da outra globalização”</i>. </p>
+   		
+		<p id="citacao"><small>    Milton Santos. Por uma outra Globalização.2001.   </small>	</p>
+		          
+		<p id="p3"> De acordo com as ideias contidas no texto e os estudos de Globalização na Geografia, é correto afirmar que:</p>
+       
+	   <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a">a) as novas tecnologias de informação têm permitido maior acesso das pessoas aos conteúdos de jornais, revistas, emissoras de rádio e TV. Assim, a Globalização deixa de ser uma fábula, pois esses diferentes meios de informação retratam a realidade tal como ela é.</p>
+        
+		<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) a ampliação do crédito e as maiores facilidades de pagamentos proporcionaram um aumento no poder de compra de muitas pessoas. Assim, ricos e pobres se aproximaram muito em relação ao poder aquisitivo.</p>
+		
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) a livre circulação de pessoas entre diferentes países é uma realidade para todos. O fim do controle de fronteiras favorece as migrações internacionais sem maiores problemas de rejeição ou hostilidades aos imigrantes, principalmente entre os países mais ricos.</p>		
+		
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) o aumento das desigualdades sociais é uma “perversidade” da Globalização. O uso das novas tecnologias de informação para organização política mais justa é uma possibilidade oposta a esse processo.</p>
+		
+		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) após o fim da Guerra Fria, o mundo tornou-se mais globalizado. As novas tecnologias de informação e o crédito tornaram isso mais evidente. Assim, o uso dos termos Primeiro, Segundo e Terceiro mundos está mais apropriado aos nossos dias do que antes.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+			
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 09</p>
+			
+		<p id="p3">   (UFPB 2011) Na presente conjuntura histórica, alguns países, antes considerados como subdesenvolvidos e que atualmente se encontram melhor situados social e economicamente, são classificados como países emergentes. Observa-se que, nesse conjunto dos emergentes, alguns países destacam-se em relação aos outros. Eles constituem o BRIC, grupo formado pelo Brasil, Rússia, Índia e China. Esses países integram também o G20, um conjunto mais amplo que está conseguindo, aos poucos, intervir na reconfiguração da Nova Ordem Mundial, um protagonismo antes circunscrito ao G8.</p>
+
+		<p id="p3">Considerando a literatura sobre o tema, identifique as características comuns a todos os países do BRIC:</p>
+			          
+        <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a">a) Participam do grupo das 8 nações mais ricas e industrializadas do mundo, são membros da OTAN e grandes potências bélicas mundiais.</p>
+       
+	    <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) Apresentam limitada importância no cenário econômico mundial, são potências regionais secundárias e grandes importadores de matérias-primas.b</p>
+		
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) Possuem grandes extensões de terra, numerosa população absoluta e estrutura econômica diversificada.</p>
+		
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) Formam as novas potências mundiais, apresentam as maiores taxas de crescimento econômico do mundo e participam do bloco ASEAN.</p>
+		
+		<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) Apresentam boa distribuição de renda, elevada renda per capita e superaram o antigo estágio de subdesenvolviment.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+		
+				
+	<div class="campo">
+		
+        <p class ="p2">Questão 10</p>
+			
+		<p id="p3">   (FUVEST 2006) O mundo tem vivido inúmeros conflitos regionais de repercussão global que, por um lado, envolvem intervenções de tropas de diferentes países e, por outro lado, resultam em discussões na Organização das Nações Unidas. Considere as seguintes afirmações:</p>
+
+		<p id="p3"> I. Povos primitivos precisam ser tutelados pela diplomacia internacional ou reprimidos por forças de nações desenvolvidas, para que conflitos locais ou regionais não perturbem o equilíbrio mundial. </p>
+
+		<p id="p3"> II. Razões estratégicas, de localização geográfica, de orientação política ou de concentração de recursos naturais, fazem com que certas regiões ou países sejam alvo de interesses, preocupações e intervenções internacionais.</p> 
+
+		<p id="p3">III. Diferenças étnicas, culturais, políticas ou religiosas, com raízes históricas, têm resultado em preconceito, desrespeito e segregação, gerando tensões que repercutem em conflitos existentes entre diferentes nações. O envolvimento global em conflitos regionais é, corretamente, explicado em </p>
+		          
+        <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) I, apenas. </p>
+       
+	    <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) II, apenas. </p>
+		
+		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) I e III, apenas. </p>
+		
+		<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) II e III, apenas. </p>
+		
+		<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) I, II e III.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   O envolvimento de tropas de diferentes países em conflitos regionais geralmente visa estabilizar áreas estratégicas que têm importância geopolítica e/ou econômica. Muitas vezes as diferenças culturais, étnicas ou religiosas entre os povos que compõem essas regiões ampliam as tensões, o que resulta em conflitos armados. Vale ressaltar que a afirmação I está incorreta por apresentar visões distorcidas. Segunda ela, povos “primitivos” devem ser tutelados por povos “desenvolvidos”; as expressões destacadas, por si só, são questionáveis.</p>
+
+  
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+	
+	
+	<div class = "area">
+    <img src="" id="imagem" style="display:none" alt="" width = "280" height="200">
+	</div>
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	 
+	 
+	     
+	     
+</script>
+
+<script>
+ 
+	 function mudaQuest(){
+		var t = document.getElementsByClassName("p2");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.fontFamily = tipo[fonte];
+			
+		
+			} 
+		}
+		
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				 
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			//(pq1.includes("leite")||(pq1.includes("gato"))||(pq1.includes("pato")))
+            if (pq1 == "a") {
+                corretas++;
+                document.getElementById("q1a").style.backgroundColor = cor[0];
+            } else {
+                				
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q1a").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "c") {
+                corretas++;
+                document.getElementById("q3c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q3c").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "b") {
+                corretas++;
+                document.getElementById("q4b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4b").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "b") {
+                corretas++;
+                document.getElementById("q5b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "b") {
+                corretas++;
+                document.getElementById("q6b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6b").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "c") {
+                corretas++;
+                document.getElementById("q7c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7c").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "d") {
+                corretas++;
+                document.getElementById("q8d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8d").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "c") {
+                corretas++;
+                document.getElementById("q9c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9c").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "d") {
+                corretas++;
+                document.getElementById("q10d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			//document.getElementById("resp1").innerHTML = pq1;
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

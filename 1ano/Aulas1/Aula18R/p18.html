@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p1Aula18</title>
+
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+
+		p {
+			padding: 10px;
+			background-color: #fff;
+
+		}
+	</style>
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+
+
+
+
+	</div>
+
+
+
+
+	<h1 class="h1"> Aula 18 – Revisão (aulas 13 a 17) </h1>
+
+
+	<div class="w3-container w3-card-4">
+		<strong>Conteúdo:</strong>
+
+		<ul class="w3-padding">
+			<li>Mineral; tipos de rochas: magmáticas, metamórficas, sedimentares; fóssil; litificação.</li>
+			<li>
+				Estrutura geológica; Crátons; Escudos cristalinos; Plataformas; Dobramentos; Bacias sedimentares.</li>
+			<li>Relevo; Planaltos; Planícies; Montanhas; Depressões. </li>
+			<li>Solos; Pedogênese; Horizontes do solo; laterização; lixiviação; salinização e desertificação.</li>
+			<li>Fontes de energia: combustíveis fósseis (petróleo, gás natural e carvão mineral).</li>
+
+		</ul>
+
+	</div>
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+			<p> (UPE 2017) </p>
+
+			<div class="w3-center"><img src="p18q1.png" alt="p18q1" class="w3-mobile"></div>
+
+			<p> As feições de relevo, observadas na parte emersa da crosta terrestre, denunciam, muitas vezes, aspectos
+				relacionados à estrutura geológica e às condições climáticas atuais e antigas. Com relação a esse tema,
+				observe a figura a seguir:</p>
+
+			<p>Se alguém perguntasse “Que tipo de rocha contribui para que se desenvolvam essas feições de relevo? ”, a
+				resposta CORRETA seria</p>
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a) Sedimento
+				argiloso.</p>
+
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b) Gnaisse.
+			</p>
+
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c) Granito.
+			</p>
+
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d)
+				Calcário.</p>
+
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e"> e) Quartzo.
+			</p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+
+			<!-- <p> <strong>Comentário:</strong></p> 
+			
+		<p>   Colocar os comentários aqui.   </p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p> (UDESC 2018) O Ciclo das Rochas é uma teia complexa de transformações da matéria, estas, às vezes, desde
+				muito rápidas até extremamente lentas, que, em conjunto, no contexto da Tectônica de Placas, determinam
+				modificações no reino mineral. O Ciclo das Rochas constitui um modo sintético de representar as inúmeras
+				possibilidades pelas quais, ao longo do Tempo Geológico, um tipo de rocha pode transformar-se em outro
+			</p>
+
+
+			<p class="citacao"> Fonte: Carneiro C. D. R., Gonçalves P. W., Lopes O. R. 2009. O Ciclo das Rochas na
+				Natureza. Terra e Didática, 5(1):50-62.
+				Disponível em http://www.ige.unicamp.br
+				/terraedidatica/ </p>
+
+			<p>Analise as proposições a respeito do Ciclo das Rochas:</p>
+
+			<p>I. A rocha, quando passa por processos intempéricos, forma camadas de materiais desagregados onde se
+				formam os solos, processo que recebe o nome de pedogênese.</p>
+
+
+			<p> II. As rochas sedimentares são formadas pela deposição e diagênese de sedimentos provenientes de outras
+				rochas ou de materiais de origem biogênica ou, ainda, da precipitação química de minerais.</p>
+
+
+			<p> III. As rochas metamórficas têm sua origem no resfriamento do magma, nas quais o tamanho dos cristais,
+				geralmente, é proporcional ao tempo de resfriamento do magma: quanto mais lenta a cristalização de um
+				magma,
+				maiores os tamanhos dos cristais formados.</p>
+
+
+			<p> IV. O calor, a umidade, os organismos e o relevo determinam o grau de atuação de cada um dos três
+				processos
+				básicos de intemperismo: físico, químico e biológico.</p>
+
+			<p>Assinale a alternativa correta:</p>
+
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a) Somente
+				as afirmativas I, II e III são verdadeiras.</p>
+
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b)
+				Somente as afirmativas I, II e IV são verdadeiras. </p>
+
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c) Somente
+				as afirmativas II, III e IV são verdadeiras.</p>
+
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d) Somente
+				as afirmativas I, III e IV são verdadeiras. </p>
+
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e) Somente
+				as afirmativas II e IV são verdadeiras.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> 
+			
+		<p>   Colocar os comentários aqui.  </p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p> Os diferentes tipos de províncias geológicas revelam as diferentes feições do relevo enquanto expressões
+				das diferentes temporalidades que marcam o passado geológico do planeta Terra. Por seus processos
+				formativos, as estruturas geológicas com condições mais favoráveis à formação de combustíveis fósseis
+				são: </p>
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a)
+				as bacias sedimentares. </p>
+
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b) os
+				maciços antigos.</p>
+
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c) as
+				plataformas cristalinas.</p>
+
+
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d) os
+				dobramentos antigos.</p>
+
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e) os
+				dobramentos modernos.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> <strong>Comentário:</strong></p>
+
+			<p>Durante o processo de diagênese (conjunto de processos químicos e físicos sofridos pelos sedimentos desde
+				a sua deposição até a sua consolidação), constitutivo de rochas e bacias sedimentares, a matéria
+				orgânica que se acumula pode sofrer com as condições atípicas de pressão exercida pelas inúmeras camadas
+				de sedimentos, atuando no processo de formação dos combustíveis de origem fóssil. Por isso, é comum
+				encontrar petróleo e fósseis em áreas de bacias sedimentares. </p>
+		</div>
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p> (UFN 2009) Ocorrem três tipos de estrutura geológica na crosta terrestre: escudos cristalinos, bacias
+				sedimentares e faixas orogênicas. Portanto, conclui-se</p>
+
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a)
+				Os escudos cristalinos são formados por terrenos desgastados e com baixas altitudes, devido à intensa
+				exposição a processos erosivos.</p>
+
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b) A cadeia
+				do Himalaia e a plataforma do rio São Francisco constituem exemplos de escudos cristalinos.</p>
+
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c) As bacias
+				sedimentares foram formadas ao longo da era pré-cambriana.</p>
+
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d) As faixas
+				orogênicas ou dobramentos antigos e modernos podem diferenciar-se apenas pela altitude.</p>
+
+			<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e"> e) Os Alpes
+				Escandinavos representam exemplos de dobramentos modernos.</p>
+
+
+		</div>
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> 
+			
+		<p>   Colocar os comentários aqui.   </p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 05</p>
+
+			<p> Assinale a alternativa que indica as formas de relevo onde predominam os processos de erosão em
+				detrimento do acúmulo da sedimentação </p>
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a)
+				Montanhas e planaltos </p>
+
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b) Planícies
+				e depressões </p>
+
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c) Planícies
+				e planaltos </p>
+
+			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d) Montanhas
+				e planícies </p>
+
+			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e) Planaltos
+				e depressões </p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> <strong>Comentário:</strong></p>
+
+			<p>Nas montanhas e planaltos, por serem relevos mais íngremes e acidentados, predominam as ações erosivas,
+				cuja sedimentação acumula-se majoritariamente nas áreas de depressão e planícies.</p>
+
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 06</p>
+
+			<p> Sobre as formas de relevo existentes na superfície terrestre, assinale a alternativa INCORRETA:</p>
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a)
+				Os planaltos são mais elevados que as planícies e menos do que as montanhas. Podem apresentar
+				composições cristalinas, sedimentares e basálticas.</p>
+
+
+			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b)
+				A depressão, quando abaixo do nível do mar, é chamada de absoluta, mas acima do nível do mar e abaixo da
+				região de entorno, é chamada de relativa.</p>
+
+			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c)
+				Nas planícies, o processo de erosão não é muito acentuado, havendo uma deposição de sedimentos em menor
+				grau em comparação com as demais formas de relevo.</p>
+
+
+			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d"> d)
+				As cadeias montanhosas encontram-se, geralmente, nas mais recentes formações geológicas.</p>
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> <strong>Comentário:</strong></p>
+
+			<p> a) Correta – Os planaltos são mais altos e mais acidentados que as planícies e menos do que as cadeias
+				montanhosas. Os planaltos cristalinos são formados por rochas ígneas intrusivas e metamórficas, os
+				sedimentares são compostos por rochas sedimentares e os basálticos, por rochas ígneas extrusivas.</p>
+
+			<p> b) Correta – As depressões são divididas em absolutas, quando em comparação ao nível do mar, e
+				relativas, quando em comparação com a região próxima.</p>
+
+
+			<p>c) Incorreta – Nas planícies, os processos erosivos são proeminentes, a sedimentação e o acúmulo de
+				sedimentos são constantes.</p>
+
+
+			<p>d) Correta – As cadeias de montanhas são consideradas formas de relevo geologicamente recentes, cuja
+				formação ocorreu na era Cenozoica do período Terciário</p>
+
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 07</p>
+
+			<p> O solo é um componente terrestre essencial para os seres vivos e também para a realização das atividades
+				econômicas, de forma a ser considerado um importante recurso natural. Em termos de composição
+				geomorfológica, pode-se afirmar que os solos</p>
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a)
+				constituem-se em ambientes de erosão e acúmulo de material sedimentar</p>
+
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b)
+				consolidam-se a partir de fatores exógenos do relevo.</p>
+
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c)
+				são o ponto de partida para a formação de todas as rochas terrestres.</p>
+
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d"> d)
+				têm como característica a alteração mineralógica a partir da pressão do ar.</p>
+
+			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e"> e)
+				apresentam uma maior fertilidade quando livres de compostos orgânicos.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 08</p>
+
+			<p> (UPE 2013) Observa-se, na figura a seguir, um problema ambiental que decorre, indiretamente e sobretudo,
+				das ações antrópicas sobre a natureza. Examine a fotografia e depois assinale a alternativa que
+				apresenta esse problema. </p>
+
+			<div class="w3-center"><img src="p18q8.png" alt="p18q8" class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a"> a)
+				Formação de voçorocas </p>
+
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b)
+				Assoreamento </p>
+
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c"> c)
+				Inserir alternativa </p>
+
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d"> d)
+				Laterização de leito fluvial </p>
+
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e"> e)
+				Movimentos de massa rápidos </p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 09</p>
+
+			<p> (PUC-RS) Para resolver a questão, leia o texto a seguir, sobre fontes de energia, e selecione as
+				palavras/expressões que preenchem correta e coerentemente as lacunas.</p>
+
+
+
+			<p> O _________ foi importante fonte de energia para a Primeira Revolução Industrial. Atualmente as maiores
+				reservas estão localizadas no hemisfério _______. É um dos principais responsáveis pela __________, pois
+				sua
+				queima libera grande quantidade de óxido de enxofre na atmosfera. </p>
+
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a)
+				carvão mineral – norte – chuva ácida. </p>
+
+
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b"> b)
+				petróleo – sul – poluição dos oceanos. </p>
+
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c)
+				petróleo – sul – chuva ácida. </p>
+
+
+
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d"> d)
+				carvão mineral – sul – poluição dos oceanos.</p>
+
+			<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e"> e)
+				petróleo – norte – chuva ácida. </p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 10</p>
+
+			<p> As reservas petrolíferas estão relacionadas a um tipo de formação geológica. Indique, corretamente, esse
+				tipo de formação.</p>
+
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a">
+				a) Escudos cristalinos. </p>
+
+			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b">
+				b) Bacias sedimentares.</p>
+
+			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c">
+				c) Dobramentos cenozoicos.</p>
+
+			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
+				d) Placas tectônicas.</p>
+
+			<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" name="pq10" value="e">
+				e) Aluviões quaternários.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> <strong>Comentário:</strong></p>
+
+			<p>a) Falso – Essa formação geológica se originou no período Pré-Cambriano. Nela, é possível extrair
+				minerais como o ferro e o manganês.</p>
+
+			<p>b) Verdadeiro – São regiões que apresentam formações geológicas sedimentares. Nos terrenos formados
+				durante
+				a era Mesozoica é possível encontrar depósitos petrolíferos. </p>
+
+			<p>c) Falso – Essa formação geológica não contém petróleo. </p>
+
+			<p>d) Falso – Placas tectônicas são gigantescos blocos que compõem a camada sólida externa da Terra. Esses
+				blocos não possuem relação direta com a existência de petróleo. </p>
+
+			<p>e) Falso – Aluvião é um depósito de sedimentos clásticos (areia, cascalho ou lama). Essa formação
+				geológica
+				não abriga campos petrolíferos. Nela é possível encontrar cascalho fino.</p>
+
+		</div>
+
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+	<script>
+
+
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "d") {
+				corretas++;
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq2 == "b") {
+				corretas++;
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+			}
+			if (pq3 == "a") {
+				corretas++;
+				document.getElementById("q3a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+
+				document.getElementById("q3a").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "a") {
+				corretas++;
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "a") {
+				corretas++;
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "c") {
+				corretas++;
+				document.getElementById("q6c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q6c").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "b") {
+				corretas++;
+				document.getElementById("q7b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+
+				document.getElementById("q7b").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "b") {
+				corretas++;
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "a") {
+				corretas++;
+				document.getElementById("q9a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+
+				document.getElementById("q9a").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "b") {
+				corretas++;
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+			}
+
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+
+
+
+
+
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Duvid - p1Aula08</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+
+		p {
+			padding: 10px;
+			background-color: #fff;
+
+		}
+	</style>
+
+
+</head>
+
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
+
+
+	</div>
+
+
+	<h1 class="h1"> Questões aula 08 – Eras geológicas e estrutura interna da Terra. </h1>
+
+
+	<p><strong> Conteúdo:</strong> Crosta terrestre, manto, núcleo externo, núcleo interno,
+		Princípio de isostasia, Correntes de convecção, Campo magnético, grau geotérmico; Eras geológicas: Azoica,
+		Pré-Cambriano, Paleozoica, Mesozoica, Cenozoica. </p>
+
+	<p class="paragrafo">
+
+	</p>
+
+
+	<p><strong>Objetivo:</strong> Comparar a escala geológica do tempo (eras geológicas) com a
+		temporalidade da história humana. Entender como funciona as camadas internas da Terra. </p>
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 01</p>
+
+			<p> (UTFPR) Verifique a figura a seguir e identifique as camadas da Terra que ela representa e,
+				na
+				sequência, identifique qual das alternativas traz a associação correta dessas camadas.</p>
+
+
+
+			<div class="w3-center"><img src="p8q1.png" alt="p8q1" class="w3-mobile"></div>
+
+
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a)
+				I - Núcleo interno, II - Núcleo externo, III – Manto e IV - Crosta</p>
+
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b)
+				I
+				- Crosta, II - Núcleo externo, III - Manto e IV - Núcleo interno</p>
+
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c)
+				I - Núcleo externo, II - Núcleo interno, III – Manto e IV - Crosta</p>
+
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
+				I - Crosta, II - Manto, III - Núcleo externo e IV – Núcleo Interno.</p>
+
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e)
+				I - Núcleo interno, II - Manto, III - Núcleo externo e IV – Crosta</p>
+
+		</div>
+
+		<div class="comentarios">
+
+			<!-- <p> Comentário:</p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 02</p>
+
+			<p> A primeira coluna indica a sequência correta das Eras Geológicas. Relacione a segunda coluna
+				mostrando os principais eventos que ocorreram em cada período:</p>
+
+
+
+			<div class="w3-panel w3-white">
+
+
+				<table class="w3-table w3-striped">
+
+					<tr>
+						<td>a) Pré-Cambriana (Azoica).</td>
+						<td> ( ) solidificação da crosta, período sem vida.</td>
+
+
+					</tr>
+
+					<tr>
+						<td> b) Proterozoica. </td>
+						<td>( ) surgimento dos dinossauros. </td>
+
+
+					</tr>
+
+					<tr>
+						<td> c) Paleozoica </td>
+						<td> ( ) aparecimento do homem.</td>
+
+
+					</tr>
+
+					<tr>
+						<td> d) Mesozoica.</td>
+						<td> ( ) desenvolvimento das primeiras formas de vida na água. </td>
+
+
+
+					</tr>
+
+					<tr>
+						<td> e) Cenozoica. </td>
+						<td> ( ) surgimento da vida na Terra e formação do carvão. </td>
+
+
+					</tr>
+				</table>
+
+			</div>
+
+			<p> A sequência correta está em:</p>
+
+
+
+
+
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
+				B – D – E – A – C</p>
+
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
+				A – E – D – C – B</p>
+
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c)
+				A – D – E – B – C</p>
+
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d)
+				C – E – D – B - A</p>
+
+
+
+		</div>
+
+
+		<div class="comentarios">
+			<!-- <p> Comentário:</p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+		<div class="campo">
+
+			<p class="p2">Questão 03</p>
+
+			<p> (UECE 2013) Observe a imagem abaixo e responda:</p>
+
+			<p> A parte sólida e a parte com material em estado de fusão da Terra correspondem,
+				respectivamente,
+				à: </p>
+
+			<div class="w3-center"><img src="p8q3.png" alt="p8q3" class="w3-mobile"></div>
+
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
+				criosfera e à litosfera.</p>
+
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b)
+				litosfera e ao magma</p>
+
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
+				hidrosfera e ao magma</p>
+
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
+				troposfera e à criosfera.</p>
+
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e)
+				mesozoica e cenozoica</p>
+		</div>
+
+
+		<div class="comentarios">
+			<!-- <p> Comentário:</p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 04</p>
+
+
+			<p> (UEM-PR) Com base em seus conhecimentos e na imagem abaixo sobre as camadas da Terra é
+				possível
+				afirmar que:</p>
+
+			<div class="w3-center"><img src="p8q4.png" alt="p8q4" class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a)
+				o núcleo interno da Terra é sólido, e composto de níquel e ferro.</p>
+
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
+				o manto é constituído de níquel e ferro. Divide-se em manto superior e manto inferior.</p>
+
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c)
+				o núcleo externo da Terra é líquido, constituído de material bastante denso, composto de silicatos ricos
+				em ferro e magnésio</p>
+
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d)
+				foram reconhecidas três camadas principais, com densidade, estado físico, temperatura, pressão e
+				espessuras iguais.</p>
+
+
+		</div>
+
+		<div class="comentarios">
+
+			<!-- <p> Comentário:</p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 05</p>
+
+			<p> Foi na mesma era, a ________________, que ocorreu o surgimento dos atuais continentes e da
+				espécie humana, porém em períodos diferentes. A fragmentação das terras emersas, tais quais nós as
+				conhecemos agora, formaram-se no período _______________, há 71 milhões de anos, enquanto os primeiros
+				humanos surgiram somente no ______________, há cerca de 1 milhão de anos.</p>
+
+
+			<p> A alternativa que apresenta os termos que completam corretamente as lacunas do texto é: </p>
+
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
+				Paleozoica, Primitivo e Cambriano.</p>
+
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b)
+				Cenozoica, Terciário e Quaternário.</p>
+
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
+				Primitiva, Arqueozoico e Secundário</p>
+
+			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
+				Paleozoica, Terciário e Quaternário</p>
+
+			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e)
+				Cenozoica, Permiano, Carbonífero</p>
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário:</p>
+
+			<p> Tanto os continentes quanto os homens surgiram na era Cenozoica, porém os continentes formaram-se no
+				período terciário, e os homens surgiram no quaternário.</p>
+
+		</div>
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 06</p>
+
+			<p> Observe e responda:</p>
+
+			<div class="w3-center"><img src="p8q6.png" alt="p8q6" class="w3-mobile"></div>
+
+			<p> Por que a imagem acima é incoerente? </p>
+
+
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a)
+				Em tempos pré-históricos, os homens não caçavam répteis.</p>
+
+			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b)
+				Os dinossauros não eram presas fáceis para os humanos e dificilmente eram capturados.</p>
+
+			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c)
+				Quando os dinossauros surgiram, no terciário, os seres humanos não viviam mais da caça, e sim da
+				agricultura.</p>
+
+			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d)
+				Os seres humanos surgiram no período quaternário da era Cenozoica, quando os dinossauros já haviam sido
+				extintos. </p>
+
+			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e"> e)
+				Os dinossauros viveram na era Paleozoica e os seres humanos na era primária em diante, que são períodos
+				geológicos distintos.</p>
+
+
+
+			<div class="comentarios">
+				<p> Comentário:</p>
+
+				<p> A imagem é incoerente porque os seres humanos surgiram no período quaternário da era Cenozoica,
+					enquanto
+					os dinossauros foram extintos uma era antes, na Mesozoica, durante o período Cretáceo </p>
+			</div>
+
+		</div>
+
+
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 07</p>
+
+			<p> (UFPE) – Leia as alternativas abaixa e assinale a opção correta:</p>
+
+			<p> () O estudo das camadas internas da Terra não pode ser realizado por processos de investigações diretas,
+				tendo-se que recorrer a métodos indiretos de observação, o que dificulta o seu conhecimento.</p>
+
+			<p> () os especialistas dispõem de aparelhos muito sensíveis, chamados sismógrafos, capazes de registrar com
+				grande precisão as vibrações da Terra, medindo a intensidade e localizando a origem destas
+				vibrações.</p>
+
+			<p> () O estudo detalhado de sismogramas, iniciado desde os primeiros anos do século XX, demonstra que o
+				globo se divide, da superfície para o interior, nas seguintes unidades principais: crosta, manto e
+				núcleo.</p>
+
+			<p> () A crosta terrestre é a camada mais externa da Terra e encontra-se consolidada. Nela os elementos
+				químicos distribuem-se de forma homogênea, havendo pequenas variações em peso e volume.</p>
+
+			<p> () A Terra não apresenta a mesma densidade em todas as camadas, isto é, a densidade diminui de acordo
+				com a profundidade.</p>
+
+			<p> A sequência correta é:</p>
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a)
+				VFVFF</p>
+
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b)
+				FFVVV</p>
+
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c)
+				FFFFF</p>
+
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d)
+				VVVFF</p>
+
+			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e"> e)
+				VVVVV</p>
+
+		</div>
+
+		<div class="comentarios">
+			<!-- <p> Comentário:</p>
+
+			<p> Colocar os comentários aqui.</p> -->
+		</div>
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 08</p>
+
+			<p>(UNESP 2011) A figura apresenta os componentes do sistema Terra e suas intrínsecas interações
+				e
+				combinações.</p>
+
+			<div class="w3-center"><img src="p8q8.png" alt="p8q8" class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a)
+				atmosfera, biosfera e hidrosfera.</p>
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b"> b)
+				astenosfera, litosfera e manto inferior.</p>
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c"> c)
+				biosfera, núcleo externo e núcleo interno.</p>
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d"> d)sfera,
+				litosfera e astenosfera.</p>
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e"> e)
+				litosfera, manto inferior e hidrosfera.</p>
+		</div>
+
+		<div class="comentarios">
+
+
+			<p> Comentário:</p>
+
+			<p>a) Correta. A energia solar é primariamente absorvida pela atmosfera, biosfera e hidrosfera.
+
+			</p>
+
+			<p>b) Incorreta. Observando-se a imagem, verifica-se que a astenosfera e o manto inferior, localizados sob a
+				crosta terrestre, não poderiam receber primariamente a energia solar. </p>
+
+			<p>c) Incorreta. Entre a biosfera, o núcleo externo e o núcleo interno, apenas o primeiro recebe energia
+				solar. </p>
+
+			<p>d) Incorreta. A astenosfera não absorve energia solar. </p>
+
+
+			<p>e) Incorreta. O manto inferior não absorve a energia solar. </p>
+
+
+
+
+
+		</div>
+
+
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 09</p>
+
+			<p> (Unicentro 2015) Observe a figura a seguir. </p>
+
+			<div class="w3-center"><img src="p8q9.png" alt="p8q9" class="w3-mobile"></div>
+
+			<p class="citacao"> Fonte:
+				https://www.redecol.com.br/2011/03/
+				terra-nao-e-redonda-
+				e-um-geoide-de.html </p>
+
+			<p> Com base na figura e nos conhecimentos sobre as estruturas geológicas da Terra, considere as
+				afirmativas a seguir.</p>
+
+
+			<p> I. Devido à força gravitacional, os materiais sólidos mais pesados se concentraram na
+				superfície,
+				formando a crosta terrestre, e os menos pesados no núcleo e no manto, onde são superaquecidos pelas
+				elevadas temperaturas. </p>
+
+			<p>II. O planeta Terra não é um círculo perfeito, a sua superfície é irregular, pois as forças
+				gravitacionais interagem com os elementos químicos, materiais rochosos e superfícies líquidas com
+				intensidades diferentes e provocam deformações na crosta.</p>
+
+			<p>III. A superfície da Terra é de aproximadamente 500 milhões de km2, formada por quatro grandes
+				camadas denominadas atmosfera, litosfera, hidrosfera e biosfera; nesta última, as diferentes formas
+				de vida interagem entre si e em seus ambientes.</p>
+
+			<p>IV. A litosfera é a camada externa da Terra, formada basicamente de rochas e minerais. Apesar
+				de
+				sua
+				fina espessura, é dinâmica por sofrer ações exógenas, que resultam em sedimentação, erosão e
+				intemperismo, e endógenas, resultando no tectonismo e nas atividades vulcânicas.</p>
+
+			<p> Assinale a alternativa correta </p>
+
+
+
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required"  name="pq9" value="a">
+				a) Somente as afirmativas I e II são corretas. </p>
+
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required"  name="pq9" value="b">
+				b) Somente as afirmativas I e IV são corretas. </p>
+
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required"  name="pq9" value="c">c)
+				Somente as afirmativas III e IV são corretas. </p>
+
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required"  name="pq9" value="d">
+				d) Somente as afirmativas I, II e III são corretas. </p>
+
+			<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e">
+				e) Somente as afirmativas II, III e IV são corretas. </p>
+		</div>
+
+		<div class="comentarios">
+			<!-- <p> Comentário:</p>
+
+			<p> Colocar os comentários aqui. </p> -->
+
+		</div>
+
+
+		<div class="campo">
+
+			<p class="p2">Questão 10</p>
+
+			<p> (IFRS 2018) </p>
+
+			<p> “A Terra é composta, internamente, por camadas (estratos) diferenciadas entre si por suas
+				características. [...] Crosta (Crust.) é a camada mais fina da Terra, [...] e é formada basicamente
+				por rochas ígneas, contendo proporções significativas de rochas sedimentares e metamórficas, logo
+				estas diferenças implicam em uma camada heterogênea.”
+
+			<p class="citacao"> Fonte: SUERTEGARAY, Dirce Maria Antunes (Org.). Terra: feições ilustradas. Porto
+				Alegre: UFRGS, 2003. pág. 15. </p>
+
+			<p> Quanto à estrutura interna do planeta, é correto afirmar que </p>
+
+			<p> I - a crosta terrestre possui espessura variada, apresentando uma média de 7 Km na crosta
+				oceânica e
+				média de 35 Km de espessura na crosta continental.</p>
+
+			<p> II - a crosta terrestre está dividida em duas partes: a crosta continental, composta por
+				rochas
+				graníticas e metamórficas com maior densidade e a crosta oceânica, que apresenta menor densidade, em
+				razão de sua composição basáltica.</p>
+
+			<p> III - a crosta terrestre juntamente com a parte superior do manto compõem a camada chamada de
+				litosfera.</p>
+
+			<p> IV - a distinção entre a base da crosta e a parte superior que compõe a litosfera é
+				evidenciada pela
+				descontinuidade de Mohorovicic (“Moho”), representada pela brusca mudança de velocidade das ondas
+				sísmicas.</p>
+
+			<p> Estão corretas apenas</p>
+
+
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required"  name="pq10" value="a">
+				a) I e II.</p>
+
+			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required"  name="pq10" value="b">
+				b) II e III.</p>
+
+			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required"  name="pq10" value="c">
+				c) I, II e III</p>
+
+			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required"  name="pq10" value="d">
+				d) I, III e IV.</p>
+
+			<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e">
+				e) II, III e IV.</p>
+		</div>
+
+		<div class="comentarios">
+			<!-- <p> Comentário:</p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+	<script>
+
+
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "e") {
+				corretas++;
+				document.getElementById("q1e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+
+				document.getElementById("q1e").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq2 == "c") {
+				corretas++;
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+
+			}
+			if (pq3 == "b") {
+				corretas++;
+				document.getElementById("q3b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+
+				document.getElementById("q3b").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "a") {
+				corretas++;
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "b") {
+				corretas++;
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "d") {
+				corretas++;
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "d") {
+				corretas++;
+				document.getElementById("q7d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+
+				document.getElementById("q7d").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "a") {
+				corretas++;
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "e") {
+				corretas++;
+				document.getElementById("q9e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+
+				document.getElementById("q9e").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "d") {
+				corretas++;
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+
+			}
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+
+
+
+
+		}
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

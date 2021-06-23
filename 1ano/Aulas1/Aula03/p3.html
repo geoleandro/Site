@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Duvid - p1Aula03</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+
+	<script src="../../../estilos/javascript.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+	</style>
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
+
+
+	</div>
+
+	<h1 class="h1"> Aula 03 – Cartografia: hemisférios, fusos e zonas terrestres.</h1>
+
+
+	<p class="p3">
+		<strong>Conteúdo:</strong> Fusos horários; Mudança internacional de data.
+	</p>
+
+	<p class="p3">
+		<strong>Objetivo:</strong> Entender e aplicar o sistema de fusos horários
+	</p>
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+			<p class="p3">(Unicamp 2020)</p>
+
+			<p class="p3">	As coordenadas geográficas são um sistema de linhas imaginárias traçadas sobre o globo terrestre ou um
+			mapa. Através da interseção de um meridiano com um paralelo, podemos localizar cada ponto da superfície
+			da Terra. Como a Terra apresenta uma superfície quase esférica, é possível determinar dois pontos
+			diametralmente opostos, denominados antípodas. Apenas algumas cidades brasileiras têm uma cidade
+			antípoda, como Coari (AM) e Pontes e Lacerda (MT).</p>
+
+			<p class="p3"> Assinale a alternativa que indica duas cidades antípodas</p>
+
+
+
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" name="pq1" value="a"> a) Pontes e Lacerda
+				(Brasil) – 15º latitude S e 60º longitude W; Candelária (Filipinas) – 15º latitude N e 60º longitude E.
+			</p>
+			<p class="bordaQuestoes" id="q1b"><input type="radio" name="pq1" value="b"> b) Coari (Brasil) – 4º
+				latitude S e 63° longitude W; Temon (Malásia) – 4º latitude N e 63º longitude.</p>
+			<p class="bordaQuestoes" id="q1c"><input type="radio" id="pq1" name="pq1" value="c"> c) Coari (Brasil) – 4º
+				latitude S e 63° longitude W; Temon (Malásia) – 4º latitude N e 117º longitude E.</p>
+			<p class="bordaQuestoes" id="q1d"><input type="radio" name="pq1" value="d"> d) Pontes e Lacerda
+				(Brasil) – 15º latitude S e 60º longitude W; Candelária (Filipinas) – 75º latitude N e 120º longitude E.
+			</p>
+		</div>
+
+
+
+
+		<div class="comentarios">
+
+			<p>Comentário:</p>
+
+			<p> Podemos dizer que duas cidades são antípodas quando estão latitudinal e longitudinalmente distantes 180°
+				entre si. Levando em conta tal afirmação:</p>
+
+			<p> Vejamos a imagem de duas regiões antípodas latitudinalmente:</p>
+
+			<div class="area"> <img src="p3q1a.png" alt="p3q1a" class="w3-mobile"></div>
+
+
+			<p class="citacao">Adaptado de: https://br.pinterest.com/pin </p>
+
+			Por isso sempre teremos X°Sul como Antipoda de X°Norte. Quando pensamos em antípoda longitudinal,
+			temos:
+
+			<div class="area"><img src="p3q1b.png" alt="p3q1b" class="w3-mobile"></div>
+
+			<p class="citacao">http://www.rc.unesp.br/igce/plnejamento/</p>
+
+			<p> Por isso sempre teremos como Antipoda de uma longitude Y°Oeste = 180°- Longitude W°leste.
+
+			<p> a) incorreta. É fato que 15°S é antípoda dos 15°N, pois estão distantes 180° entre si, porém é falso
+				dizer
+				que 60°O e 60°L são antípodas, pois estão distantes apenas 120° entre si.</p>
+
+			<p> b) incorreta. É fato que 4°S é antípoda dos 4°N, pois estão distantes 180° entre si, porém é falso dizer
+				que
+				63°O e 63°L são antípodas, pois estão distantes apenas 126° entre si.</p>
+
+			<p> c) correta. É fato que 4°S é antípoda dos 4°N. pois estão distantes 180° entre si, e igualmente é
+				verdadeiro
+				afirmar que 63°O e 117°L são antípodas, pois estão distantes 180° entre si, conforme vemos nos desenhos
+				acima.</p>
+
+			<p> d) incorreta. É falso dizer que 15°S é antípoda dos 75°N, pois não estão distantes 180° entre si, mas é
+				verdadeiro afirmar que 60°O e 120°L são antípodas, pois estão distantes 180° entre si, conforme vemos
+				nos
+				desenhos acima.</p>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p class="p3">(Unicamp 2019) Dois amigos planejaram assistir à abertura da Copa do Mundo em Moscou. Eles
+				partiram no dia 10 de junho de 2018 do Aeroporto Presidente Juscelino Kubitschek (Brasília), situado a
+				45o de longitude Oeste, às 16 horas, com destino ao Aeroporto de Heathrow (Londres), situado a 0° de
+				longitude. O voo teve duração de 10 horas. </p>
+
+			<p class="p3"> Os dois amigos esperaram por três horas para partirem em direção ao Aeroporto Internacional
+				(Moscou),
+				situado a 60o de longitude Leste, e o segundo voo durou quatro horas.</p>
+
+			<p class="p3"> Com base nessas informações e considerando que o continente europeu adota, neste período do
+				ano, o
+				horário de verão, que adianta os relógios em uma hora, indique o dia e a hora em que os dois amigos
+				chegaram ao Aeroporto Internacional em Moscou.</p>
+
+
+			<p class="p3"> Alternativas</p>
+
+
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" name="pq2" value="a"> a)11 de junho, às 13
+				horas.
+			<p class="bordaQuestoes" id="q2b"><input type="radio" name="pq2" value="b"> b) 11 de junho, às 16
+				horas.
+			<p class="bordaQuestoes" id="q2c"><input type="radio" id="pq2" name="pq2" value="c"> c) 11 de junho, às 17
+				horas.
+			<p class="bordaQuestoes" id="q2d"><input type="radio" name="pq2" value="d"> d 10 de junho, às 16
+				horas.
+		</div>
+
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+
+			<p> A alternativa C está correta – considerando-se as informações do enunciado sobre o dia de partida da
+				viagem, as conversões de diferenças de fusos horários entre Brasília (45% de longitude oeste) e Moscou
+				(45% de longitude leste), o tempo de voo até Londres (0% de longitude) e depois até Moscou, e a escala
+				no aeroporto de Londres e o horário de verão na Europa, o candidato encontraria a resposta 11 de junho,
+				às 17 horas. </p>
+
+			<p> A alternativa A está incorreta – pelas informações do enunciado não seria possível o desembarque em
+				Moscou às 13 horas do dia seguinte à partida de Brasília. </p>
+
+			<p> A alternativa B também não poderia ser a resposta porque as informações do texto não permitem indicar
+				“às 16 horas”, sobretudo tendo em vista a informação sobre o horário de verão da Europa.</p>
+
+			<p> A alternativa D está errada porque o avião se deslocou no sentido oeste-leste, movimento que indica o
+				acréscimo de dias e de horas. Nesse sentido, o dia de desembarque em Moscou não poderia ser dia 10 e,
+				sim, 11 de junho.</p>
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p class="p3">(ENEM 2014) Um executivo sempre viaja entre as cidades A e B, que estão localizadas em fusos
+				horários distintos. O tempo de duração da viagem de avião entre as duas cidades é de 6 horas. Ele sempre
+				pega um voo que sai de A às 15h e chega à cidade B às 18h (respectivos horários locais).</p>
+
+				<p class="p3">	Certo dia, ao chegar à cidade B, soube que precisava estar de volta à cidade A, no máximo, até as 13h do
+				dia seguinte (horário local de A).</p>
+
+				<p class="p3">	Para que o executivo chegue à cidade A no horário correto e admitindo que não haja atrasos, ele deve
+				pegar um voo saindo da cidade B, em horário local de B, no máximo à(s)</p>
+
+
+
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio"  name="pq3" value="a"> a) 16h </p>
+			<p class="bordaQuestoes" id="q3b"><input type="radio"  name="pq3" value="b"> b) ) 10h </p>
+			<p class="bordaQuestoes" id="q3c"><input type="radio"  name="pq3" value="c"> c) ) 7h </p>
+			<p class="bordaQuestoes" id="q3d"><input type="radio" id="pq3" name="pq3" value="d"> d) 4h</p>
+			<p class="bordaQuestoes" id="q3e"><input type="radio"  name="pq3" value="d"> d) 1h</p>
+		</div>
+
+
+		<div class="comentarios">
+			<p> Comentário:</p>
+
+
+			<p> 	Temos que a viagem demorou 6 horas, assim, quando a pessoa decolou às 15 h da cidade A a hora na cidade
+				B era de 18 – 6 = 12 h. Assim, podemos perceber que, entre as cidades A e B, há diferença de fuso
+				horário de 3 horas. Assim, quando forem 13 h em A, serão 10 h em B, assim, para chegar na cidade A nesse
+				horário, ele teria que decolar as 4 h da cidade B, já que a viagem leva 6 h.</p>
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p class="p3">(PUC-RS 2007) Três jovens amigos estão localizados em pontos diferentes da Terra: Paulo está a
+				165° Leste de Greenwich; Pedro permanece a 45° a Oeste de Paulo, e Clara está a 2° Oeste de Greenwich.
+				(Lembre-se que cada fuso horário tem 15°).</p>
+				
+				
+				<p class="p3"> 	Sabendo que no Meridiano Inicial são 18 horas do dia 5 de
+				janeiro, a hora legal e o dia em que Paulo, Pedro e Clara estão são, respectivamente:</p>
+
+
+
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio"  name="pq4" value="a"> a) Paulo: 4h – dia 6;
+				Pedro 2h – dia 6; Clara 16h – dia 5; </p>
+			<p class="bordaQuestoes" id="q4b"><input type="radio"  name="pq4" value="b"> b) Paulo 5h – dia 6;
+				Pedro 3h – dia 6; Clara 5h – dia 5;</p>
+			<p class="bordaQuestoes" id="q4c"><input type="radio"  name="pq4" value="c"> c) Paulo 17h – dia 5;
+				Pedro 15h – dia 5; Clara 18h – dia 6; </p>
+			<p class="bordaQuestoes" id="q4d"><input type="radio"  name="pq4" value="d"> d) ) Paulo 7h – dia 6;
+				Pedro 9h – dia 5; Clara 18h – dia 6 </p>
+			<p class="bordaQuestoes" id="q4e"><input type="radio" id="pq4" name="pq4" value="e"> e) Paulo 5h – dia 6;
+				Pedro 2h – dia 6; Clara 18h – dia 5; </p>
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+
+				<p>	Neste caso, serão necessários alguns cálculos matemáticos.</p>
+
+				<p>	Sabemos que a cada 15º ocorre uma mudança de fuso. Neste caso, devemos dividir os graus em que cada
+				jovem está localizado por 15.</p>
+
+				<p>	Paulo, por exemplo, está na longitude 165º. 165/15 = 11. Como ele está a leste de Greenwich, seu fuso
+				será UTC+11.</p>
+
+				<p>	Pedro está a 45º a oeste de Paulo. Atenção, Pedro não está a 45º a oeste de Greenwich, mas sim a 45º a
+				oeste da longitude 165º de Paulo. Assim, devemos tirar 45º dos 165º. Restam 120º. Pedro está a 120º a
+				leste.</p>
+
+				<p>	Fazendo a operação, 120/15=8. Assim, Pedro está no fuso UTC +8.</p>
+
+				<p>	Por fim, Clara está a 2º a oeste do Meridiano de Greenwich. Vejamos, se a cada 15º temos a mudança de
+				fuso e o Meridiano de Greenwich localiza-se no centro do UTC 0, nota-se que Clara está no justamente no
+				fuso horário de Greenwich: 0.</p>
+
+				<p>	Logo:</p>
+
+				<p>	Paulo: UTC +11; Pedro: UTC +8; Clara: UTC 0.</p>
+
+				<p>	Se no Meridiano Inicial são 18 horas de dia 5 de janeiro, basta fazermos as somas:</p>
+
+				<p>	Paulo: 18h + 11h = 5h do dia seguinte (6 de janeiro)</p>
+
+				<p>	Pedro: 18h + 8h = 2h do dia seguinte (6 de janeiro)</p>
+
+				<p> 	Clara: 18h do mesmo dia (5 de janeiro)</p>
+
+				<p>Alternativa E.</p>
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 05</p>
+
+			<p class="p3">(Mackenzie 2004</p> 
+			
+			
+			<p class="p3">	Localizadas a Oeste de Greenwich, duas cidades, A e B, encontram-se,
+				respectivamente, a 105° e 45°. Numa quarta-feira, um avião saiu de A às 14h30min e chegou a B depois de
+				5 horas de viagem. O horário de chegada em B foi </p>
+
+
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio"  name="pq5" value="a"> a) 18h30min da
+				quarta-feira. </p>
+			<p class="bordaQuestoes" id="q5b"><input type="radio"  name="pq5" value="b"> b) 19h30min da
+				quarta-feira. </p>
+			<p class="bordaQuestoes" id="q5c"><input type="radio" id="pq5" name="pq5" value="c"> c) ) 23h30min da
+				quarta-feira. </p>
+			<p class="bordaQuestoes" id="q5d"><input type="radio"  name="pq5" value="d"> d) 0h30min da
+				quinta-feira. </p>
+			<p class="bordaQuestoes" id="q5e"><input type="radio"  name="pq5" value="e"> e) 2h30min da
+				quinta-feira. </p>
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+
+				<p>	Devemos considerar que em questões que compreendem fusos horários é que a cada 15 horários geográficos
+				se passa 1 hora. E essa hora é somada ou subtraída de acordo com a direção. A cidade A está a 105°, a
+				cidade B está a 45° e ambas possuem uma diferença de 60°.</p>
+
+				<p>	Sendo assim: 60/15 = 4h</p>
+				<p>	As cidades estão a 4 horas uma da outra.</p>
+
+				<p>	Dessa forma, se na cidade A eram 14:30h, na cidade B eram 18:30h. Somando o tempo de viagem: 18:30h +
+				5h, o horário de chegada em B é de 23h30min.</p>
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 06</p>
+
+
+
+			<p class="p3">(FUVEST 2002)</p>
+
+			<div class="area"> <img src="p3q6.png" alt="p3q6" class="w3-mobile"></div>
+
+
+			<p class="p3">	A Terra gira sobre ela mesma de Oeste para Leste. Assim, teoricamente, todos os pontos, no mesmo fuso
+			horário, têm a mesma hora. Com base nessas informações e no mapa, podemos afirmar que:</p>
+
+
+
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio"  name="pq6" value="a"> a) há três horários
+				diferentes, aumentando para leste; sendo o primeiro fuso horário até 5°E, o segundo de 5° a 30°E e o
+				terceiro depois de 30°E. </p>
+			<p class="bordaQuestoes" id="q6b"><input type="radio"  name="pq6" value="b"> b) as horas serão
+				exatamente as mesmas em todas essas cidades, porque elas se situam na linha imaginária de 50°N. </p>
+			<p class="bordaQuestoes" id="q6c"><input type="radio" id="pq6" name="pq6" value="c"> c) as horas se
+				apresentam com acréscimo, de Berlim para Astana, devido ao sentido de rotação da Terra e à incidência
+				dos raios solares.</p>
+			<p class="bordaQuestoes" id="q6d"><input type="radio"  name="pq6" value="d"> d) as horas se
+				apresentam em decréscimo, de Londres para Kiev, devido ao sentido de rotação da Terra e à incidência dos
+				raios solares</p>
+			<p class="bordaQuestoes" id="q6e"><input type="radio"  name="pq6" value="e"> e) há dois horários
+				diferentes, diminuindo para leste; sendo o primeiro até Kiev e o segundo até Novosibirsk.</p>
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+
+			<p>	O critério usado para estabelecer o espaço equivalente a um fuso horário foi dividir a circunferência da
+				Terra (360°) por 24 horas, que é o tempo que a Terra leva para percorrê-la. Obtém-se, pela divisão, 15°,
+				um espaço (fuso) pelo qual os horários poderiam ser padronizados. O fuso inicial foi fixado pelos
+				ingleses no século XIX, a partir de Greenwich, meridiano que passa pelo bairro de mesmo nome em Londres,
+				Inglaterra. O fuso é estabelecido a partir de Greenwich (0°), com 7°30’ para leste e para oeste.</p>
+
+			<p>	Na questão, observa-se que, a partir de Londres, temos todas as cidades distribuídas a leste, para as
+				quais as horas se adicionam, pois, nos dirigimos ao local de onde o Sol aparentemente vem. Assim, de
+				Londres, ou de Berlim, para leste, os horários estarão adiantados. Na verdade, de Londres a Novosibirsk,
+				ultrapassam-se os 75°, o que incluiria 5 fusos.</p>
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 07</p>
+
+			<p class="p3">(UFCE-1999)</p> 
+				
+			<p class="p3">sobre o sistema de fusos horários, é verdadeiro afirmar que eles são 24,
+				cada
+				um deles:</p> 
+
+
+
+
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" id="pq7" name="pq7" value="a"> a) equivalendo a 15° de
+				longitude </p>
+			<p class="bordaQuestoes" id="q7b"><input type="radio"  name="pq7" value="b"> b) equivalendo a 10° de
+				longitude </p>
+			<p class="bordaQuestoes" id="q7c"><input type="radio"  name="pq7" value="c"> c) correspondendo a 10°
+				de latitude </p>
+			<p class="bordaQuestoes" id="q7d"><input type="radio"  name="pq7" value="d"> d) correspondendo a 15°
+				de latitude </p>
+			<p class="bordaQuestoes" id="q7e"><input type="radio"  name="pq7" value="e"> e) estabelecido segundo
+				a linha do Equador </p>
+
+		</div>
+
+		<div class="comentarios">
+			<!-- <p> Comentário: </p> -->
+
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 08</p>
+
+			<p class="p3">(UERJ 1999) ao longo do meridiano 180º, no Oceano Pacífico, encontra-se a Linha Internacional
+				de
+				Mudança de Data. Quando for meio-dia em Greenwich, será meia-noite na Linha Internacional de Mudança de
+				Data e lá um novo dia estará se iniciando. </p>
+
+			<div class="area"><img src="p3q8.png" alt="p3q8" class="w3-mobile"></div>
+
+
+			<p class="p3">
+				Considere que na localidade B, assinalada no mapa, sejam 11 horas de domingo, do dia 22 de junho de
+				2019.
+			</p>
+
+			<p class="p3">
+				Nessas condições, na localidade A, também assinalada no mapa, o horário, o dia da semana e o dia do mês
+				de
+				junho do mesmo ano serão, respectivamente:
+			</p>
+
+
+
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio"  name="pq8" value="a"> a)10 – sábado - 21 </p>
+			<p class="bordaQuestoes" id="q8b"><input type="radio" id="pq8" name="pq8" value="b"> b) 11 – sábado - 21
+			</p>
+			<p class="bordaQuestoes" id="q8c"><input type="radio"  name="pq8" value="c"> c) 13 – sábado - 21
+			</p>
+			<p class="bordaQuestoes" id="q8d"><input type="radio"  name="pq8" value="d"> d) 11 – domingo - 22
+			</p>
+			<p class="bordaQuestoes" id="q8e"><input type="radio"  name="pq8" value="e"> e)12 – domingo – 22
+			</p>
+		</div>
+
+		<div class="comentarios">
+
+			<p> Comentário: </p>
+
+
+			<p>	Quando cruzamos na direção Leste-Oeste temos um dia atrasado. Exemplo. Dia 02 de fevereiro para dia 01
+				de fevereiro. Entretanto, quando cruzamos na direção Oeste-Leste, temos um dia adiantado, avançamos para
+				o dia seguinte.</p>
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 09 </p>
+
+			<p class="p3"> (UFJF 1998) se viajarmos em direção ao Ocidente, estamos correndo contra o tempo. Saímos
+				tarde e
+				chegamos mais cedo. Por isso, adotou-se a Linha Internacional de Mudança de Data. Se ela é cruzada de
+				Oeste para leste, o momento após o cruzamento é o dia seguinte. </p>
+
+				<p class="p3">	Marque a alternativa que apresenta onde se situa a Linha Internacional de Mudança de Data:</p>
+
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" name="pq9" value="a"> a) a 90° de Longitude
+				Oeste; </p>
+			<p class="bordaQuestoes" id="q9b"><input type="radio" id="pq9" name="pq9" value="b"> b) a 180° de Longitude;
+			</p>
+			<p class="bordaQuestoes" id="q9c"><input type="radio" name="pq9" value="c"> c) a 90° de Longitude
+				Leste </p>
+			<p class="bordaQuestoes" id="q9d"><input type="radio" name="pq9" value="d"> d) a 360° de Longitude
+			</p>
+			<p class="bordaQuestoes" id="q9e"><input type="radio" name="pq9" value="e"> e) no Meridiano de
+				Greenwich </p>
+
+		</div>
+
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+			<p>	O antemeridiano de Greenwich é a Linha Internacional de Mudança de Data localizada no meridiano 180º, no
+				Oceano Pacífico.</p>
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 10 </p>
+
+			<p class="p3"> (UFJF 1998)Um time de futebol do estado de São Paulo (localizado no fuso 45° O) irá realizar
+				uma
+				partida em Boa Vista (60° O), capital de Roraima. A equipe irá embarcar às 14h e a viagem terá duração
+				de 6 horas. Considerando o horário de Roraima, a que horas os jogadores de São Paulo desembarcarão em
+				seu destino final:</p>
+
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" id="pq10" name="pq10" value="a"> a) 19h </p>
+			<p class="bordaQuestoes" id="q10b"><input type="radio"  name="pq10" value="b"> b) 17h </p>
+			<p class="bordaQuestoes" id="q10c"><input type="radio"  name="pq10" value="c"> c) 21h </p>
+			<p class="bordaQuestoes" id="q10d"><input type="radio"  name="pq10" value="d"> d) 20h </p>
+			<p class="bordaQuestoes" id="q10e"><input type="radio"  name="pq10" value="e"> e) 18h</p>
+		</div>
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+			<p>	São Paulo: 45° O.</p>
+			<p>	Roraima: 60° O.</p>
+			<p>	Tempo de viagem: 6 horas.</p>
+			<p>	Hora do embarque: 14:00h </p>
+			<p>	Resolução: Como Roraima apresenta 1 hora a menos que São Paulo, então 13:00 somando o tempo do
+				deslocamento (6 + 13:00h =19 horas) o time paulista desembarcou às 19:00 em Roraima.</p>
+		</div>
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+
+
+
+	<script>
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "c") {
+				corretas++;
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+
+
+
+			}
+
+			if (pq2 == "c") {
+				corretas++;
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+
+
+			}
+			if (pq3 == "d") {
+				corretas++;
+				document.getElementById("q3d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+
+				document.getElementById("q3d").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "e") {
+				corretas++;
+				document.getElementById("q4e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+
+				document.getElementById("q4e").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "c") {
+				corretas++;
+				document.getElementById("q5c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5c").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "c") {
+				corretas++;
+				document.getElementById("q6c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+
+				document.getElementById("q6c").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "a") {
+				corretas++;
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "b") {
+				corretas++;
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "b") {
+				corretas++;
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "a") {
+				corretas++;
+				document.getElementById("q10a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+
+				document.getElementById("q10a").style.backgroundColor = cor[0];
+
+			}
+
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+
+
+
+		}
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

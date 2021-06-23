@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+
+    
+<style>
+
+@font-face { font-family: pixel; src: url('slkscreb-webfont.woff');  }
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #69CB60FA; border: none; border-radius: 0px ; padding: 1%;  color: white; font-weight:bold; text-align:left;  font-family: "pixel"; box-shadow: 0px 0px 0px #151515 inset; background-image: url();   background-position: right top ;   background-repeat: no-repeat;  background-size: contain;}
+
+.p2 {line-height: normal;  background: #69CB60FA; border: solid 0.5px; border-radius: 5px; padding: 2%;font-size: 14pt; color: #ffffff; font-weight:bold; font-family: pixel; box-shadow: 0px 0px 0px rgb(255, 255, 255) inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 0px   }
+
+
+#numeroCorreto { display: none; background: rgb(185, 185, 185);  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 5px;}
+
+#mensagem { display: none; background: rgb(185, 185, 185);  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 5px;}
+
+
+#aviso { display: none; background:yellow;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 5px;}
+
+
+
+.bordaQuestoes { text-align: left;  background: white;  border:  none rgb(0, 0, 0) 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 5px ; box-shadow:0px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 0px ; font-size: 10px }
+
+.comentarios {display: none;}
+
+.myText {height:150px; width: 320px; float:left; word-wrap: break-word; text-align:left; }
+
+#button1 {   display: inline-block;   padding: 10px 15px;   font-size: 14px;   cursor: pointer;   text-align: center;  text-decoration: none;   outline: none;   color: #fff;   background-color: #69CB60FA;   border: none;   border-radius: 5px;
+  box-shadow: 0 0px #999;   position: absolute;   font-family: pixel; }
+
+#button1:hover 	{background-color: #69CB60FA}
+#button1:active { background-color: #69CB60FA;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex; justify-content: center;}
+
+
+</style>
+
+</head>
+
+<body onload= "mudaQuest()">
+
+
+
+
+	<h1 id="h1">   27 - África III -  conflitos e problemas atuais. Apartheid. Tipos de conflitos. </h1>
+  
+  
+	<p><b>Conteúdo:</b> Entender os conflitos atuais no continente africano.  </p>
+	
+	
+	<p><b>Objetivo:</b> Apartheid; Guerra Civil; Genocídio; Refugiados; Terrorismo.</p>
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p class ="p2">Questão 01</p>
+			
+		<p id="p3">   (2020) Assinale a alternativa que reflete as condições sul-africanas   </p>
+					       
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a">  a) Com o fim do Apartheid, vários países europeus romperam relações com a África do Sul, o que provocou uma forte crise econômica.</p>
+      
+		<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b">  b) A ascensão de novos países emergentes como a Nigéria, tem provocado problemas sociais e econômicos à África do Sul.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) Após um “boom” de crescimento pós-Apartheid, a África do Sul tem apresentado vários problemas que se refletem na sociedade local. </p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) O fraco crescimento econômico do país é um obstáculo à absorção dos negros no mercado de trabalho. </p>
+		
+		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e) O fim da política do Apartheid não conseguiu ainda promover de forma significativa a inclusão dos negros na economia.</p>
+			
+    </div>
+
+
+
+    <div class="comentarios">
+
+         <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Falso – O fim do Apartheid não rompeu as relações dos países europeus com a África do Sul. </p>
+
+		<p> b) Falso – A Nigéria não tem apresentado ascensão, portanto, não é responsável por nenhum tipo de problema socioeconômico na África do Sul. </p>
+
+		<p> c) Falso – O país não apresentou um extraordinário crescimento econômico após o fim do Apartheid, não sendo motivo de problemas presentes na sociedade local. </p>
+
+		<p> d) Falso – O principal obstáculo para a inserção do negro no mercado de trabalho, são as consequências de tantos anos da política racial (Apartheid), onde a maioria dos negros não possuem qualificação profissional, além dos maiores empregadores serem brancos. </p>
+
+		<p> e) Verdadeiro – O fim do Apartheid não conseguiu estabelecer de forma expressiva a inclusão dos negros na economia. Após quase duas décadas de sua ocorrência, não foi possível promover uma política de inclusão da população negra nos meios de produção, persistindo vários problemas de ordem socioeconômica entre essas pessoas. </p>
+
+  
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p class ="p2">Questão  02</p>
+			
+		<p id = "p3">   (Fuvest 2017) Cada vez mais pessoas fogem da guerra, do terror e da miséria econômica que assolam algumas nações do Oriente Médio e da África. Elas arriscam suas vidas para chegar à Europa. Segundo estimativas da Agência da ONU para Refugiados, até novembro de 2015, mais de 850 mil refugiados e imigrantes haviam chegado por mar à Europa naquele ano.</p> 
+				
+		<p id = "citacao">   Garton Ash, Timothy. Europa e a volta dos muros. O Estado de S. Paulo, 29/11/2015. Adaptado.  	</p>
+		
+		<p id = "p3"> Sobre a questão dos refugiados, no final de 2015, considere as três afirmações seguintes: 	</p>
+
+		<p id = "p3">I. A criação de fronteiras políticas no continente africano, resultantes da partilha colonial, incrementou os conflitos étnicos, corroborando o elevado número de refugiados, como nos casos do Sudão e Sudão do Sul.	</p>
+
+		<p id = "p3">II. Além das mortes em conflito armado, da intensificação da pobreza e da insegurança alimentar, a guerra civil na Síria levou um contingente expressivo de refugiados para a Europa. 	</p>
+
+		<p id = "p3">III. A política do apartheid teve grande influência na Nigéria, país de origem do maior número de refugiados do continente africano, em decorrência desse movimento separatista. 	</p>
+
+		<p id = "p3"> Está correto o que se afirma em: </p>
+																	
+      
+	  <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a">a) I, apenas. </p>
+      
+	  <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) I e II, apenas. </p>
+	
+	<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) III, apenas. </p>
+		
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> e) I, II e III. d) II</p>
+	
+	<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) I, II e III. d) II e III, apenas. </p>
+    </div>	
+	
+
+      
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A crise de refugiados tem-se mostrado uma das mais importantes questões humanitárias da atualidade. Só até o mês de novembro de 2016 foram registradas aproximadamente 4200 mortes em tentativas frustradas de entrada na Europa. Conflitos étnicos e perseguições políticas e/ou religiosas se destacam como elementos fundamentais que alimentam” a crise.</p>
+		
+		<p>	Assim, especificamente quanto à questão:</p>
+
+		<p>I. O processo de colonização da África, cujo ápice ocorreu em 1885 com o Congresso de Berlim, desrespeitou origens étnicas dos africanos e serviu como gatilho para posteriores conflitos II. Desde o início da guerra civil na Síria em 2011(Primavera Árabe), o país se tornou o maior emissor de refugiados para a Europa.</p>
+     
+		<p> III. O apartheid (política segregacionista) não ocorreu na Nigéria e sim na África do Sul entre 1948 e 1993.</p>
+		
+		<p> A afirmação I está correta, pois a divisão da África entre os países europeus no final do século XIX, processo conhecido como a Partilha da África, resultado do imperialismo europeu em busca de matérias primas, estabeleceu no continente africano as chamadas fronteiras artificiais, desrespeitando as fronteiras étnicas dos povos africanos e colaborando até hoje para os conflitos étnicos, como o que resultou na divisão do Sudão e na criação do Sudão do Sul em 2011.</p>
+
+		<p> A afirmação II está correta, pois conflitos armados, pobreza e insegurança alimentar sempre foram determinantes na migração dos refugiados. Além disso, a Síria enfrenta há cinco anos uma intensa guerra civil que aumentou o drama da população civil síria e o consequente aumento do número de refugiados para a Europa.</p>
+
+		<p> A afirmação III está incorreta, pois a política do apartheid foi implantada na África do Sul como um sistema oficial de racismo, e não na Nigéria, como está na afirmação. Portanto, a alternativa B está correta</p>
+			 
+    </div>
+	
+	
+	
+	
+
+    <div class="campo">
+		
+        <p class ="p2">Questão 03</p>
+	   
+		<p id="p3">(UNITAU-SP 2017) Em relação ao continente africano, é CORRETO afirmar: </p>
+		
+		
+		            
+        <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a">a)  No Sudão, os conflitos atuais se devem à permanência desde o período colonial, de uma política de segregação racial e territorial, promovida pelos brancos. </p>
+       
+	   <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b">b)  A Nigéria apresenta baixa média de IDH, as menores médias de expectativa de vida do planeta e altas taxas de mortalidade infantil e de subnutrição. </p>
+		
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> C) A maioria dos países africanos tornou-se independente no final do século XIX, devido ao desenvolvimento da industrialização nos países europeus. </p>
+	
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) O processo de colonização da África respeitou as fronteiras étnicas e culturais, fato que evitou a existência de conflitos armados no continente. </p>
+
+		<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) O Norte da África, ou África setentrional, é caracterizado pela presença da religião islâmica e pelo predomínio da população árabe. </p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	
+	<div class="campo">
+		
+        <p class ="p2">Questão 04</p>
+			
+		<p id="p3">   (UFMG 2016) Todas as alternativas apresentam afirmações corretas ligadas ao final do “apartheid” na África do Sul, EXCETO   </p>
+						           
+        <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) A África do Sul, com as eleições presidenciais de 1994, deu um passo importante para romper com seu passado de discriminação racial.</p>
+       
+	   <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) As restrições comerciais impostas ao antigo regime racial foram suspensas, e a África do Sul restabeleceu suas relações comerciais internacionais.b) As restrições comerciais impostas ao antigo regime racial foram suspensas, e a África do Sul restabeleceu suas relações comerciais internacionais.</p>
+		
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c">c) O fim do “apartheid” gerou poucas mudanças para a população branca cuja elite continua a controlar a economia e a burocracia do país.</p>
+		
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) O novo país passa a contar com uma população negra, etnicamente homogênea, uma vez que os bantustões formaram países independentes.</p>
+		
+		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e">e) O novo regime se deparou com a possibilidade de aproximação entre as experiências sociais e econômicas de brancos e negros.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	
+	
+	<div class="campo">
+		
+        <p class ="p2">Questão 05</p>
+			
+		<p id="p3">  Unicamp 2016) País da África Austral que se tornou independente em 1975 após séculos de colonialismo europeu. No período do interior à independência, a terra passou a ser propriedade do Estado, com predomínio de uso pela população camponesa e com forte participação das mulheres na produção agrícola familiar. De 1976-1992 vivenciou intensos conflitos produzidos pela guerra civil envolvendo dois dos principais grupos armados do país.
+
+		<p id="p3"> O texto acima faz referência ao seguinte país:  </p>
+					          
+        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) Congo.</p>
+      
+		<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) África do Sul.</p>
+		
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c">c) Moçambique.</p>
+		
+		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) Nigéria.</p>
+		
+		
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A alternativa C está correta: Moçambique foi o país que alcançou a independência em 1975, após séculos de colonização portuguesa. Após a independência, adotou o socialismo como sistema de governo, influenciado pela ex-URSS. Moçambique é um país com numerosa população que habita as áreas rurais em pequenas propriedades, muitas delas comandadas pelas mulheres. Logo depois da independência conviveu por 16 anos com uma intensa guerra civil.</p>
+		
+		<p> A alternativa a está errada porque o Congo, anteriormente denominado Zaire, é um pais localizado na África central, que se tornou independente da Bélgica em 1960. Após a independência a República do Congo vivenciou diversos conflitos internos, mas não nos mesmos moldes e intensidade da guerra civil moçambicana.</p>
+		
+		<p> A alternativa b está errada: em nenhum momento, na África do Sul, após a independência do Reino Unido, em 193 1, a terra passou a ser propriedade do Estado, como ocorreu em Moçambique, que se transformou em um país socialista após a independência. A África do Sul é o pais mais industrializado do continente africano; durante anos manteve o regime de segregação racial denominado Apartheid que foi extinto, como política oficial do Estado, no início dos anos de 1990, com a ascensão do líder negro Nelson Mandela ao poder.</p>
+		
+		<p> A alternativa d está errada: a Nigéria é um país localizado na parte noroeste do continente africano que se tornou independente do Reino Unido nos anos de 1960. Embora a Nigéria tenha vivido conflitos civis internos após a independência, não se configurou ai uma guerra civil como ocorreu em Moçambique.</p>
+
+    </div>
+		
+		
+		
+		
+				 
+	<div class="campo">
+		
+        <p class ="p2">Questão 06</p>
+			
+		<p id="p3">   (ESPM 2015) Em 21 de dezembro de 1961 a Bélgica concedeu autonomia interna a Ruanda e, em 28 de junho de 1962, a Assembleia Geral da ONU fixou para 1º. de junho a supressão da tutela e a concessão da independência à República Democrática de Ruanda, ressaltando que o governo independente não seria monoétnico. Tal cuidado não foi suficiente, pois os acontecimentos posteriores acabaram culminando em um dos mais violentos genocídios do século XX, estimando-se o número de mortos em 1.074.017, ou seja, um sétimo da população de Ruanda.    </p>
+					
+		<p id="citacao"> (Leila Hernandez. A África na sala de aula)  	</p>
+		
+		<p id="p3">	Em abril de 2014 completaram-se 20 anos do que ficou conhecido como genocídio de Ruanda. Diferenças, desigualdades, discriminações raciais, econômicas, sociais e políticas alimentaram o ódio. O assassinato do presidente Juvenal Habyarimana, em atentado ao avião em que viajava, foi o estopim do genocídio.</p>
+		
+		<p id="p3">	Sobre o genocídio em Ruanda assinale a alternativa correta:	</p>
+
+       
+        <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) foi praticado por mercenários belgas interessados na recolonização de Ruanda e exploração de suas riquezas.</p>
+       
+	   <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b">b) foi praticado por ruandeses contra cidadãos europeus e norte-americanos acusados de responsabilidade pela miséria em Ruanda.</p>
+		
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c">c) refletiu o ódio religioso entre cristãos e muçulmanos;</p>
+		
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) refletiu o ódio dos ruandeses contra as Forças de Paz enviadas pela ONU para apaziguar as disputas entre diferentes grupos políticos.</p>
+		
+		
+
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 07</p>
+			
+		<p id="p3">   (PUC-Campinas 2015) “Recentemente, por questões humanitárias, os Estados Unidos atuaram na Somália, mas, poderiam ter optado pelo Sudão ou Etiópia, países vizinhos, com guerras civis e milhões de esfomeados. Nunca o caráter periférico da África foi tão evidente quanto agora, pois não há superpotências que disputem o continente e os países são entregues à própria sorte (ou infortúnio).”</p>
+
+		<p id="p3"> Da leitura do texto e de seus conhecimentos sobre a África é possível afirmar que:</p>
+		        
+        <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) as disputas internas provocadas pelos clãs tribais têm alterado a posição do continente no cenário mundial, transformando a África numa área de fracos investimentos.</p>
+      
+	   <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) o processo de islamização forçado, pelo qual passa grande parte da África, restringe as possibilidades de intervenção estrangeira no continente.</p>
+		
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) hoje, a busca de mercados consumidores substitui os antigos critérios geopolíticos, e a pobreza da África como um todo, pouco interessa ao mundo desenvolvido.</p>
+		
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) vários órgãos supranacionais têm tentado promover a destribalização da parte mais pobre da África, no sentido de torná-la mais atraente aos investimentos estrangeiros.</p>
+		
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) a manutenção de regimes autoritários, com guerrilhas e atos de terrorismo, tem dificultado a ação das forças de paz e de certa forma influído na Nova Ordem Mundial.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 08</p>
+			
+		<p id="p3">  (FUVEST 2015) O grupo Boko Haram, autor do sequestro, em abril de 2014, de mais de duzentas estudantes, que, posteriormente, segundo os líderes do grupo, seriam vendidas, nasceu de uma seita que atraiu seguidores com um discurso crítico em relação ao regime local. Pregando um islã radical e rigoroso, Mohammed Yusuf, um dos fundadores, acusava os valores ocidentais, instaurados pelos colonizadores britânicos, de serem a fonte de todos os males sofridos pelo país. Boko Haram significa “a educação ocidental é pecaminosa” em haussa, uma das línguas faladas no país. </p>   
+			
+		<p id="citacao"> www.cartacapital.com.br. Acessado em 13/05/2014. Adaptado. </p>
+		
+		<p id="p3"> O texto se refere: </p>
+            
+        <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) a uma dissidência da Al’Qaeda no Iraque, que passou a atuar no país após a morte de Sadam Hussein.</p>
+       
+	   <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b">b) a um grupo terrorista atuante nos Emirados Árabes, país economicamente mais dinâmico da região.</p>
+		
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c">c) a uma seita religiosa sunita que atua no Sul da Líbia, em franca oposição aos xiitas.</p>
+		
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d">d) a um grupo muçulmano extremista, atuante no Norte da Nigéria, região em que a maior parte da população vive na pobreza.</p>
+	
+		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e">e) ao principal grupo religioso da Etiópia, ligado ao regime político dos tuaregues, que atua em toda a região do Saara.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  pobre do território nigeriano. Fundamentalista islâmico, luta contra a influência ocidental em sua área de atuação, por entender que esta influência é o determinante das mazelas de sua população. </p>
+  	
+		<p>	Nos mesmos moldes, surgiram grupos extremistas no norte do Iraque (Estado Islâmico), sul da Líbia (com forte influência de grupos tuaregues), na Etiópia (piratas divididos em diversos clãs).</p>
+	
+		<p>	Os Emirados Árabes, internacionalmente conhecidos por apoiar financeiramente grupos extremistas no Oriente Médio e na África, não possuem em seu território a atuação de grupos dessa natureza.</p>
+
+		<p> a) incorreta. Esta alternativa não descreve o Boko Haran, mas sim o Estado Islâmico, um grupo radical sunita piadista formado por membros dissidentes da Al Qaeda Iraquiana, membros sunitas radicais contrários ao governo iraquiano xiita estabelecido desde 2006, e membros dissidentes de outros grupos sunitas extremistas do Oriente Médio e arredores (Hamas, Irmandade Muçulmana, etc.).</p>
+
+		<p> b) incorreta. Esta alternativa em nada remete ao Book Harane. Ela indica o grupo dos Emirados Al-Islã, um grupo atuante dentro dos Emirados Árabes Unidos, suspeito de manter laços com a Irmandade Muçulmana do Egito..</p>
+
+		<p> c) incorreta. Esta alternativa remete à composição étnico-religiosa da Líbia e sugere que o Boko Haran é uma seita religiosa sunita que atua no Sul da Líbia, em franca oposição aos xiitas. Na verdade, a Líbia é um país que possui 97% de Islâmicos Sunitas e 3% de Islâmicos Ábditas (um grupo alternativo ao Sunismo e aos Xiitas). Os Xiitas não são mensuráveis na composição étnico-religiosa da Líbia e não são um grupo atuante a ponto de sofrer oposição dos sunitas. Nada na alternativa remete ao Book Harane.</p>
+
+		<p> d) correta. De fato, o grupo Boko Haran é um grupo muçulmano extremista, fundamentalista Sunita, associado à ideologia religiosa islamista Arabista (Sunismo Ultraconservador) atuante no Norte- Nordeste da Nigéria, região em que a maior parte da população também é islâmica Sunita, vive na pobreza e em províncias que têm o Sharia (leis do Islã) como legislação oficial.</p>
+
+		<p> e) incorreta. O primeiro ponto importante da alternativa é a afirmação de que o Boko Haran é o principal grupo religioso da Etiópia, que seria ligado aos Tuaregues. A afirmação está incorreta, porque o Boko Haran é um grupo radical islâmico e o cristianismo ortodoxo é a religião dominante na Etiópia. Outro ponto fundamental é que a alternativa trata os Tuaregues como um grupo étnico majoritário da região do Saara. O problema é que os Tuaregues (“abandonados pelos deuses”) são um grupo étnico berbere nômade que se distribui ao longo do deserto do Sachara entre países como a Argélia, o Mali, a Líbia, o Níger e Burkina Faso. Veja o mapa:</p>
+
+		<img src="t27q8.JPG" alt="" class="imagem" width="320" height="360">
+  
+  </div>
+		
+		
+		
+		
+		
+				 
+	<div class="campo">
+		
+        <p class ="p2">Questão 09</p>
+			
+		<p id="p3">  CFTMG 2012) O país nasce a partir de um acordo de paz firmado em 2005, após 12 anos de uma guerra civil que deixou 1,5 milhão de mortos. Apesar de possuir grandes reservas de petróleo, eIe surge como um dos Estados mais pobres do mundo. Sua independência está sendo celebrada sem que as fronteiras entre o sul e o norte já estejam completamente definidas. </p>
+			
+		<p id="p3"> Fonte: NASSIF Luis, Online. Texto adaptado. Disponível em:. Acesso em: 12 set. 2011. (Adaptado) </p>
+			
+		<p id="p3"> Nesse contexto, as informações referem-se à criação da(o) </p>
+				           
+        <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) Líbia do Sul.</p>
+       
+	   <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) Etiópia do Sul.</p>
+		
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) Sudão do Sul.</p>
+		
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) Somália do Sul.</p>
+		
+		
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+				
+	<div class="campo">
+		
+        <p class ="p2">Questão 10</p>
+			
+		<p id="p3">  UEMG 2012) Um dos maiores problemas da atualidade é a expressiva carência alimentar de vários países africanos. O texto e o mapa a seguir descrevem esta situação.  </p>
+			
+		<p id="p3"> CONDENADOS À FOME  </p>
+			
+		<p id="p3"> No fim de julho, a ONU decretou que a região africana, em destaque no mapa, está sob estado de fome (...). Esse é o alerta que leva entidades de todo o mundo a enviar alimentos, remédios e médicos para atender os necessitados. Contudo, isso não ocorrerá na Somália. Seus habitantes não poderão ser socorridos pela solidariedade mundial, pois esse é o desejo do grupo Al Shabab, subordinados à Al Qaeda, que controla o sul do país.  </p>
+						
+		<p id="citacao">   Revista Veja – 10/8/2011. p. 98. Texto Adaptado.</p>
+		
+		<img src="t27q10.JPG" alt="" class="imagem" width="340" height="380">
+               
+	  <p class="bordaQuestoes" id="q10a"><input type="radio" id="pq10" name="pq10" value="a" >  a) à disputa de poder e aos conflitos territoriais, que desencadearam guerras civis em vários países do Sudeste africano.</p>
+    
+	   <p class="bordaQuestoes" id="q10b"><input type="radio" id="pq10" name="pq10" value="b" > b) à intensa seca, que tem sido a principal causa da desnutrição infantil, deixando a região devastada e em estado de extrema pobreza.</p>
+		
+	<p class="bordaQuestoes" id="q10c"><input type="radio" id="pq10" name="pq10" value="c" > c) às raízes do flagelo do Noroeste africano, sustentadas pelo modelo de dependência econômica implantado pelo colonialismo europeu no continente</p>	
+	
+	<p class="bordaQuestoes" id="q10d"><input type="radio" id="pq10" name="pq10" value="d" > d) aos problemas sociais do chamado Chifre da África, agravados em função da atuação das milícias, que impedem a entrada dos países ocidentais na Somália.</p>	
+			
+    </div>
+	
+	
+
+    <div class="comentarios">
+
+	   <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+	
+	
+	<div class = "area">
+    <img src="" id="imagem" style="display:none" alt="imagem" width = "280" height="200">
+	</div>
+
+
+	<p id="aviso"></p>
+    <br><br>
+		
+	<input id="button1"  type="button" value="Conferir" onclick="verificar()">
+	<br><br>
+
+	
+
+	
+
+    
+	
+		
+<script>
+	var fontes =["Courier New", "Arial", "Cursive","Times New Roman", "Monotype Corsiva", "Times New Roman", "Verdana","Calisto MT", "Tempus Sans ITC", "Tahoma"];
+	  var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082","#A020F0","#FF1493","#FA8072","#FF8C00","#DC143C"];
+	  var aleatorio = Math.round(Math.random() * 10);
+	  document.getElementById("h1").style.fontFamily = fontes[aleatorio];
+	 
+</script>
+
+<script>
+ 
+	 function mudaQuest()
+	 {
+		var t = document.getElementsByClassName("p2");
+			for (var i = 0; i < t.length; i++) 
+			{
+
+			t[i].style.fontFamily = fontes[aleatorio];
+			
+		
+			} 
+		}
+		
+</script>
+		
+			
+			
+<script>
+
+	function verificar() 
+{
+	
+		var y = document.getElementById("button1");
+		
+		
+		pq01 = document.getElementsByName("pq1");
+		pq02 = document.getElementsByName("pq2");
+		pq03 = document.getElementsByName("pq3");
+		pq04 = document.getElementsByName("pq4");
+		pq05 = document.getElementsByName("pq5");
+		pq06 = document.getElementsByName("pq6");
+		pq07 = document.getElementsByName("pq7");
+		pq08 = document.getElementsByName("pq8");
+		pq09 = document.getElementsByName("pq9");
+		pq10 = document.getElementsByName("pq10");
+
+
+
+		
+				for (var i = 0; i < pq01.length; i++)
+				{
+					if ( pq01[i].checked)
+					
+					{
+						if ( pq02[i].checked) 
+							{
+								if ( pq03[i].checked) 
+								{
+									if ( pq04[i].checked) 
+									{
+										if ( pq05[i].checked) 
+										{
+											if ( pq06[i].checked) 
+											{
+												if ( pq07[i].checked) 
+												{
+													if ( pq08[i].checked) 
+													{
+														if ( pq09[i].checked) 
+														{
+															if ( pq10[i].checked) 
+															{
+						
+															}
+														}
+													}
+												}
+											}
+										}
+						
+									}
+								}
+							}
+					
+					
+					checar();
+					
+					y.disabled = true;
+					y.value="Corrigido";
+					
+
+
+					}
+
+					else
+					{
+						document.getElementById("aviso").style.display="block";
+						document.getElementById("aviso").innerHTML ="É necessário preencher todas as questões." ;
+					}
+
+				}
+
+							
+		
+}
+ 
+  </script>
+
+  
+
+
+<script>
+	function classEscurecer()
+		{
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) 
+			{
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta()
+		{
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) 
+			{
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios()
+		{
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) 
+			{
+			c[i].style.display="block";
+			
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+
+</form>	
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+	// Altere a alternativa correta substituindo em cada questão abaixo. Todas estão com resposta letra a
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			
+            if (pq1 == "e") {
+                corretas++;
+                document.getElementById("q1e").style.backgroundColor = cor[0];
+            } else {
+                				
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q1e").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "e") {
+                corretas++;
+                document.getElementById("q3e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "d") {
+                corretas++;
+                document.getElementById("q4d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4d").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "c") {
+                corretas++;
+                document.getElementById("q5c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+							
+				document.getElementById("q5c").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "a") {
+                corretas++;
+                document.getElementById("q6a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "c") {
+                corretas++;
+                document.getElementById("q7c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7c").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "d") {
+                corretas++;
+                document.getElementById("q8d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8d").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "c") {
+                corretas++;
+                document.getElementById("q9c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q9c").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "d") {
+                corretas++;
+                document.getElementById("q10d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+
+            }
+			
+						
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			document.getElementById("aviso").style.display="none";
+			
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

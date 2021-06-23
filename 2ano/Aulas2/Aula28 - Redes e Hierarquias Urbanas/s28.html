@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: normal 1px; border-radius: 35px ; padding: 0cm; font-size: auto; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.png);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+textarea {
+  overflow: auto;
+  wap:hard
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+	<h1 id="h1">    Questões aula 28 – Redes e hierarquia urbana     </h1>
+  
+  
+	<p><b>Conteúdo:</b>  Conurbação, hierarquia urbana, metrópoles, megacidades, megalópoles, regiões metropolitanas e descentralização da urbanização.     </p>
+	
+	
+	<p><b>Objetivo:</b> Entender as articulações entre cidades e aplicar conceitos fundamentais sobre a rede urbana brasileira. </p>
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+    <div class="campo">
+
+        <p id="p2">Questão 01</p>
+			
+		<p id="p3">   (UEG 2018) Atualmente, no Brasil, as cidades, ao se distribuírem espacialmente, formam uma rede urbana ou um conjunto de centros que funcionam de forma articulada e, por isso, expressam a dimensão socioespacial da sociedade conforme uma hierarquia urbana. Segundo as Regiões de Influência das Cidades (REGIC) estabelecidas pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em 2007, cidades como Goiânia, Belém e Manaus são caracterizadas como. </p>
+					           
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) centros sub-regionais.</p>
+      
+		<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) metrópoles nacionais.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) metrópoles.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) capitais regionais.</p>
+		
+		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e) metrópoles globais.</p>
+			
+    </div>
+
+
+
+    <div class="comentarios">
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+
+    <div class="campo">
+		
+        <p id="p2">Questão  02</p>
+			
+		<p id="p3">    (IFSulDeMInas 2017) A maioria da população mundial vive nas cidades. Segundo dados e previsão da Divisão de População da ONU, no início do século XX, a população urbana era de 14%. Em 2010 era de 51,6% e chegará a 67% em 2050. Observe as alternativas abaixo, a respeito de rede e hierarquia urbanas, e assinale a que for CORRETA:  </p>
+							    
+        <p class="bordaQuestoes"id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) A rede urbana é formada por um sistema de cidades de um mesmo país que se interligam às outras, exclusivamente, por meio de sistemas de transportes (rodoviário, aéreo, fluvial e marítimo) por onde ocorrem os fluxos de mercadorias. </p>
+        
+		<p class="bordaQuestoes"id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) Megacidades são aglomerações urbanas, de países desenvolvidos, que possuem mais de 10 milhões de habitantes.</p>
+		
+		<p class="bordaQuestoes"id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) As cidades globais são os nós da rede urbana mundial, pois oferecem os melhores e mais variados tipos de serviços, diversificada atividade industrial, centros de pesquisa e tecnologia e lazer, por isso comandam a economia no mundo. </p>
+		
+		<p class="bordaQuestoes"id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) As redes de cidades mais densas e articuladas se desenvolveram em países emergentes e subdesenvolvidos devido ao elevado contingente populacional.</p>
+		
+		
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	
+
+    <div class="campo">
+		
+        <p id="p2">Questão 03</p>
+			
+		<p id="p3">  (UEG 2017) Uma conurbação caracteriza-se por  </p>
+				            
+        <p class="bordaQuestoes"id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a">a) áreas urbanas superpostas espacial e politicamente.</p>
+       
+	   <p class="bordaQuestoes"id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) um conjunto de áreas integradas política e    socioeconomicamente.</p>
+		
+		<p class="bordaQuestoes"id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) sobreposição de duas ou mais cidades pelo seu crescimento vertical.</p>
+		
+		<p class="bordaQuestoes"id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) conjunto espacial caracterizado pela ausência de serviços coletivos comuns.</p>
+		
+		<p class="bordaQuestoes"id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) superposição ou encontro de duas cidades em razão de seu crescimento horizontal</p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	<div class="campo">
+		
+        <p id="p2">Questão 04</p>
+			
+		<p id="p3">   (UEFS BA 2017) Analise o mapa.   </p>
+		
+		<img src="s28q4.png" class="imagem" width="320" height="300">
+			 
+		<p id="p3"> Considerando as cidades e a urbanização brasileira, é correto afirmar que o mapa apresenta </p>
+	     
+        <p class="bordaQuestoes"id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a">  a) o sistema de conurbação nacional.</p>
+       
+		<p class="bordaQuestoes"id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b">  b) as regiões de influência das metrópoles.</p>
+		
+		<p class="bordaQuestoes"id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) as grandes metrópoles nacionais.</p>
+		
+		<p class="bordaQuestoes"id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) a hierarquia dos centros urbanos.</p>
+		
+		<p class="bordaQuestoes"id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) a conexão de megalópoles brasileiras.</p>
+
+
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 05</p>
+			
+		<p id="p3">  (IFPE 2016) As cidades destacadas no mapa abaixo correspondem às maiores concentrações urbanas da atualidade. Com base nisso e na distribuição geográfica dessas cidades, assinale a alternativa que indica o conceito mais apropriado para designá-las na geografia do mundo atual. </p>
+ 		
+		<img src="s28q5.png" class="imagem" width="330" height="200">
+				        
+        <p class="bordaQuestoes"id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) Megacidades – pois correspondem às maiores concentrações urbanas do mundo atual, distribuídas predominantemente nos países subdesenvolvidos.</p>      
+	 
+		<p class="bordaQuestoes"id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) Metrópoles mundiais - conceito utilizado para se referir às cidades mais ricas do globo, que funcionam como sede das empresas transnacionais.</p>
+		
+		<p class="bordaQuestoes"id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) Cidades inteligentes - pois as cidades citadas correspondem às que mais possuem empresas de inovação, particularmente as ligadas à tecnologia da informação.</p>
+		
+		<p class="bordaQuestoes"id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) Cidades globais - por serem as mais importantes que integram a economia globalizada, onde funcionam as principais bolsas de valores no período atual.</p>
+		
+		<p class="bordaQuestoes"id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) Megalópoles – por compreenderem as mais ricas concentrações urbanas no espaço mundial atual, fortemente concentradas nos países mais populosos.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 06</p>
+			
+		<p id="p3">   (ENEM 2016) O Rio de Janeiro tem projeção imediata no próprio estado e no Espírito Santo, em parcela do sul do estado da Bahia, e na Zona da Mata, em Minas Gerais, onde tem influência dividida com Belo Horizonte. Compõem a rede urbana do Rio de Janeiro, entre outras cidades: Vitória, Juiz de Fora, Cachoeiro de Itapemirim, Campos dos Goytacazes, Volta Redonda – Barra Mansa, Teixeira de Freitas, Angra dos Reis e Teresópolis.    </p>
+				
+		<p id="citacao"><small>   Disponível em: http://ibge.gov.br. Acesso em: 9 jul. 2015 (adaptado).   </small>	</p>
+	   
+	   <p id="p3">  O conceito que expressa a relação entre o espaço apresentado e a cidade do Rio de Janeiro é: 	</p>
+      
+		<p class="bordaQuestoes"id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) Frente pioneira. </p>
+       
+		<p class="bordaQuestoes"id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) Zona de transição. </p>
+		
+		<p class="bordaQuestoes"id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) Região polarizada. </p>
+		
+		<p class="bordaQuestoes"id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d">d) Área de conurbação. </p>
+		
+		<p class="bordaQuestoes"id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) Periferia metropolitana.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  O conceito de polarização se refere àquele aglomerado urbano que, em função da oferta de serviços de que dispõe, é capaz de condicionar as atividades de outros centros em sua área de influência. Isso ocorre com a metrópole do Rio de Janeiro, que polariza áreas de seu estado e, também, cidades dos estados vizinhos, como Espírito Santo e Minas Gerais.</p>
+
+		<p> a)  Incorreta.  Frente pioneira consiste no processo de ocupação de áreas interioranas, em geral com matas nativas, realizado por produtores rurais levando a um processo de desmatamento. No caso brasileiro, as frentes pioneiras avançaram a partir das décadas de 1960/70 sobre os biomas Cerrado e mais recentemente sobre   a floresta Amazônico distantes portanto das áreas mencionadas pelo texto.</p>  
+
+		<p> b)  Incorreta.  A área mencionada pelo exto caracteriza-se pela predominância da Mata atlântica intensamente devastada e não por uma zona de transição..</p>  
+
+		<p> c)  Correta. A rede urbana de uma cidade se refere à área de influência das atividades econômicas, sociais e políticas exercidas por uma aglomeração urbana. Dada a grande importância da cidade do Rio de Janeiro, a área polarizada se estende para além das fronteiras do estado do Rio de Janeiro alcançando o sul da Bahia e a Zona da Mata mineira passando por todo o estado do Espírito Santo.</p>
+
+		<p> d)  Incorreta. Conurbação ocorre quando áreas urbanas de municípios contíguos se encontram.  Tal processo não ocorre entre as áreas destacadas pelo texto, por serem áreas muito extensas e apresentarem grandes espaços rurais separando as cidades. </p> 
+
+		<p>	e)  Incorreta. A periferia metropolitana constitui-se nas áreas adjacentes à metrópole fazendo parte dela.  As áreas citadas pelo texto estão demasiadamente distantes para compor a região metropolitana do Rio de Janeiro..</p>
+ 
+    </div>
+		
+		
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 07</p>
+			
+		<p id="p3">   (Unicamp 2014) Em termos genéricos, a rede urbana constitui-se no conjunto de centros urbanos funcionalmente articulados entre si. É, portanto, um tipo particular de rede na qual os vértices ou nós representam os diferentes núcleos de povoamento dotados de funções urbanas, e as linhas representam os diversos fluxos entre esses centros. </p>
+
+		
+		<p id="citacao"><small>  Adaptado de Roberto Lobato Corrêa, Trajetórias Geográficas. Rio de Janeiro: Bertrand Brasil, 2001.)  </small>	</p>
+
+		<p id="p3"> Sobre a rede urbana Brasileira é correto afirmar que: </p>
+				       
+        <p class="bordaQuestoes"id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) formou-se a partir do interior do continente, com o nascimento das cidades “boca de sertão”, funcionais para o povoamento e a exploração do ouro.</p>
+        
+		<p class="bordaQuestoes"id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) já no início do século XIX, ela deixou de seguir o modelo dendrítico implantado desde o início da colonização para atender à economia agroexportadora. </p>
+	
+		<p class="bordaQuestoes"id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) a partir da segunda metade do século XX, a industrialização implicou forte articulação inter-regional, gerando uma rede urbana de porte nacional.</p>
+	
+		<p class="bordaQuestoes"id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) na atualidade, destaca-se a monofuncionalidade dos principais centros que a formam, dada a especialização das funções urbanas requerida na globalização.</p>
+		
+		
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+				
+	<div class="campo">
+		
+        <p id="p2">Questão 08</p>
+			
+		<p id="p3">  (UNB 2012) Até 1970, a região metropolitana de São Paulo foi a “Pasárgada” brasileira: ali se instalaram as principais indústrias, com os melhores empregos. Com a crise de 1980 e a interrupção do ciclo de expansão econômica do país, ocorreu uma reestruturação do mercado de trabalho, e o mapa migratório brasileiro começou a apontar para novas direções. </p>
+
+			
+		<p id="citacao"><small>  L. P. Juttel. Rotas migratórias: norte e centro-oeste, novos polos de migração. In: Ciência e Cultura, v. 59, n.o 4, 2007 (com adaptações).   </small>	</p>
+
+		<p id="p3"> Com relação ao assunto tratado no texto acima, julgue o item subsequente. </p>
+
+		<p id="p3"> Verifica-se, na reestruturação da rede urbana brasileira, motivada por fluxos migratórios, o crescimento de cidades de porte médio que aumentam seu raio de influência. </p>
+
+				
+		<p class="bordaQuestoes"id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) CERTO</p>
+		
+		<p class="bordaQuestoes"id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) ERRADO </p>
+ 
+		
+    </div>
+	
+	
+
+    <div class="comentarios">			
+	
+		<p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+			
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 09</p>
+			
+		<p id="p3">   (UNEMAT 2012) Sobre o processo de urbanização e a rede urbana brasileira, analise as seguintes assertivas: </p>
+
+		<p id="p3">  I. No Brasil, o processo de urbanização deslanchou após a 2ª Guerra Mundial, junto com a industrialização implantada na Região Sudeste. </p>
+
+		<p id="p3"> II. O processo de urbanização brasileiro apoiou-se essencialmente no êxodo rural, que teve como causa a formação de uma superpopulação relativa no campo. </p>
+
+		<p id="p3"> III. O processo de urbanização no Brasil apresenta-se de forma homogênea entre as diferentes regiões do país. Esse fato reflete a inexistência de divergências socioeconômicas entre as regiões brasileiras. </p>
+
+		<p id="p3"> IV. Na rede urbana brasileira aparecem duas metrópoles globais: São Paulo e Belo Horizonte. </p>
+
+		<p id="p3"> V. Na Região Centro-Oeste, Brasília destaca-se como metrópole nacional e Goiânia como metrópole regional. </p> 
+
+		<p id="p3"> Assinale a alternativa correta: </p>
+          
+        <p class="bordaQuestoes"id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) Somente IV é verdadeira.</p>
+       
+	   <p class="bordaQuestoes"id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) Somente I, II e V são verdadeiras.</p>
+		
+		<p class="bordaQuestoes"id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) Somente III e IV são verdadeiras.</p>
+		
+		<p class="bordaQuestoes"id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) Somente II e III são verdadeiras.</p>
+		
+		<p class="bordaQuestoes"id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) Somente IV e V são verdadeiras.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+			
+	<div class="campo">
+		
+        <p id="p2">Questão 10</p>
+			
+		<p id="p3"> (PUC-RS 2008) INSTRUÇÃO: Para responder à questão, analise os mapas e as afirmativas referentes ao aumento das cidades com mais de 500 mil habitantes no Brasil, preenchendo os parênteses com V para verdadeiro e F para falso.  </p>
+			
+		<img src="s28q10.png" class="imagem" width="320" height="300">
+			
+		<p id="p3"> Quanto às cidades brasileiras com mais de 500 mil habitantes, afirma-se:</p>
+		
+		<p id="p3">	() A maior concentração de cidades deste porte ocorre na região Norte do Brasil</p>
+
+		<p id="p3">	() Dentre as causas para o aumento das cidades deste porte no país, é correto citar o êxodo rural.</p>
+
+		<p id="p3">	() Esse aumento vincula-se à oferta de empregos no setor industrial, favorecido pela migração de indústrias dos grandes centros para essas cidades.</p>
+
+		<p id="p3">	() Suas vantagens competitivas em relação às grandes cidades, como isenção de impostos municipais e oferta de mais infra- estrutura, facilitam o aumento dos ganhos sobre o capital investido, contribuindo para o aumento do número destas cidades.</p>
+
+		<p id="p3">	A sequência correta de preenchimento dos parênteses é: </p>
+         
+        <p class="bordaQuestoes"id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) V - F - F – F</p>
+       
+	   <p class="bordaQuestoes"id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) F - F - F - V </p>
+		
+		<p class="bordaQuestoes"id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) V - V - V - F </p>
+			
+		<p class="bordaQuestoes"id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) F - V - V - V </p>
+		
+		<p class="bordaQuestoes"id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) V - V - V – V</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+    <img id="imagem" style="display:none"  width = "280" height="200">
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	  document.getElementById("p2").style.fontFamily = tipo[fonte];
+	     
+	     
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "lightgray";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "c") {
+                corretas++;
+                document.getElementById("q2c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "e") {
+                corretas++;
+                document.getElementById("q3e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "b") {
+                corretas++;
+                document.getElementById("q4b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4b").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "a") {
+                corretas++;
+                document.getElementById("q5a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "c") {
+                corretas++;
+                document.getElementById("q6c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6c").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "c") {
+                corretas++;
+                document.getElementById("q7c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q7c").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "a") {
+                corretas++;
+                document.getElementById("q8a").style.backgroundColor = cor[0];
+            } else {
+                
+				 document.getElementById("q8b").style.backgroundColor = cor[1];
+				 
+				 document.getElementById("q8a").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "b") {
+                corretas++;
+                document.getElementById("q9b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "d") {
+                corretas++;
+                document.getElementById("q10d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none 1px; border-radius: 35px ; padding: 0cm; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex;
+        justify-content: center;}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+	<h1 id="h1">   Questões aula 02 - A população no mundo   </h1>
+    
+	<p><b>Conteúdo:</b> Conceito de demografia: taxas de mortalidade, natalidade e fecundidade. Transição demográfica. Estrutura etária. Teorias populacionais e mudanças socioeconômicas. </p>
+
+	
+	<p><b>Objetivo:</b>  entender e aplicar os principais conceitos da demografia: taxas de mortalidade, natalidade e fecundidade, transição demográfica, teorias demográficas e estrutura da população.   </p>
+    
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+    <div class="campo">
+
+        <p id="p2">Questão 01</p>
+			
+		<p id="p3">   (ENEM 2019) O bônus demográfico é caracterizado pelo período em que, por causa da redução do número de filhos por mulher, a estrutura populacional fica favorável ao crescimento econômico. Isso acontece porque há proporcionalmente menos crianças na população, e o percentual de idosos ainda não é alto.   </p>
+		
+			
+		<p id="citacao"><small>   GOIS, A. O Globo, 5 abr. 2015 (adaptado).   </small>	</p>
+			
+		<p id="p3"> A ação estatal que contribui para o aproveitamento do bônus demográfico é o estímulo à:</p>
+								        
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) atração de imigrantes.</p>
+       
+	   <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) elevação da carga tributária.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) qualificação da mão de obra.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) admissão de exilados políticos.</p>
+		
+		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e) concessão de aposentadorias.</p>
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>  a) incorreta. A fase do bônus demográfico corresponde ao aumento da PEA (população economicamente ativa), em relação à população total, portanto, seria necessário gerar empregos e qualificar esses imigrantes para o mercado de trabalho, não sendo uma ação diretamente realizada pelo Estado.</p>
+		
+		<p> b) incorreta. A elevação da carga tributária sobre a produção pode diminuir o consumo e, consequentemente, reduzir a geração de empregos.</p>
+		
+		<p> c) correta. A fase do bônus ou janela demográfica é caracterizada pelo aumento da participação da população adulta na estrutura etária do país e, portanto, há nessa situação uma expansão da PEA em relação à população total. A soma da população dependendo economicamente (jovens e idosos) diminui relativamente à população total e abrem possibilidades de maior crescimento econômico. Para aproveitar esse potencial é necessário aumento dos investimentos no país (para geração de empregos) e incremento dos programas que viabilizem o aumento da qualificação da mão de obra.</p>
+		
+		<p> d) incorreta. A admissão de exilados políticos é feita por questões humanitárias (proteger essas pessoas), e não econômicas.</p>
+		
+		<p> e) incorreta. A concessão de aposentadorias não seria a solução adequada para lidar com adultos que estão em idade produtiva para o mercado de trabalho, além de representar um ônus para as contas da Previdência Social.</p>
+
+  
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p id="p2">Questão  02</p>
+			
+		<p id="p3">(ENEM 2018) Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos.  </p>   
+		
+		<p id="citacao"><small>   GEORGE, P. Panorama do mundo atual. São Paulo: Difusão Europeia do Livro, 1968 (adaptado).   </small>	</p>
+			           
+		<p id="p3">	Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de:</p>
+
+
+        <p class="bordaQuestoes"id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) estabilização da pirâmide etária. </p>
+       
+	   <p class="bordaQuestoes"id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) conclusão da transição demográfica. </p>
+		
+		<p class="bordaQuestoes"id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) contenção da entrada de imigrantes.</p> 
+
+		<p class="bordaQuestoes"id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) elevação do crescimento vegetativo. </p>
+
+		<p class="bordaQuestoes"id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) formação de espaços superpovoados.</p>
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  resultado a diminuição do percentual de jovens, o que acelerou o processo de transição demográfica, levando o continente rapidamente à sua conclusão.  Isto, somado à elevada expectativa de vida da população da Europa, fez com que o percentual de idosos se expandisse de tal forma que ameaça os serviços assistenciais e previdenciários da maioria dos países do continente. </p>
+
+
+		<p>	a) incorreta. A queda da taxa de natalidade leva ao processo de envelhecimento e, portanto, à mudança da pirâmide etária. </p>
+
+		<p>	b) correta. A queda da taxa de natalidade contribui para que um país saia da fase 3 do crescimento vegetativo e entre na fase 4 (de estabilização), portanto concluindo o processo de transição demográfica. </p>
+
+		<p>	c) incorreta. Embora haja pressões de grupos xenófobos, a limitação de nascimentos e o consequente envelhecimento levam à necessidade de importação de mão de obra no médio e longo prazo. </p>
+
+		<p>	d) incorreta. O crescimento vegetativo diminui com aqueda da taxa de natalidade. </p>
+
+		<p>	e) incorreta. O conceito de superpovoamento relaciona o tamanho da população e as condições econômicas e sociais dela. A redução do crescimento populacional e o grau de desenvolvimento econômico no continente europeu não favoreceu a formação espaços superpovoados. </p>
+
+			 
+    </div>
+	
+	
+	
+
+    <div class="campo">
+		
+        <p id="p2">Questão 03</p>
+			
+		<p id="p3">  (ENEM 2018) Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos.   </p>
+				
+		<p id="citacao"><small>  GEORGE, P. Panorama do mundo atual. São Paulo. Difusão Europeia do Livro, 1968 (adaptado) </small>	</p>
+		 
+		<p id="p3"> Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de:</p>
+       
+	   <p class="bordaQuestoes"id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) Estabilização da pirâmide etária.</p>
+       
+	   <p class="bordaQuestoes"id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) Conclusão de transição demográfica.</p>
+	
+		<p class="bordaQuestoes"id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) Contenção da entrada de imigrantes.</p>
+	
+		<p class="bordaQuestoes"id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) Elevação do crescimento vegetativo.</p>
+		
+		<p class="bordaQuestoes"id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) Formação de espaços superpovoados.</p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  As nações caracterizadas na questão como sendo os “países industriais” são aquelas em que o nível de desenvolvimento (produção de riqueza combinada com a qualidade de vida) atingiram na atualidade os níveis mais elevados. Esses níveis socioeconômicos mais elevados trouxeram para a realidade demográfica destas nações uma conjuntura populacional distinta do restante do mundo, principalmente pelas variações observadas nas suas pirâmides etárias.</p>
+
+		<p> Nestas nações observa-se na atualidade um alargamento dos topos de suas pirâmides etárias, denunciando um processo crescente de envelhecimento populacional, com elevação da expectativa de vida (longevidade) e consequente aumento da População Economicamente Inativa – PEI. Ao mesmo tempo nota-se ainda um estreitamento das bases de suas pirâmides, o que caracteriza uma redução significativa de suas taxas de fecundidade e natalidade, o que em médio prazo reduz a composição adulta e a População Economicamente Ativa – PEA.</p>
+
+		<p> Esse processo de alteração estrutural da pirâmide etária recebe o nome de “transição demográfica” e se refere a um período de elevado crescimento vegetativo, situado entre dois períodos de baixo crescimento vegetativo da população. Nessas nações mais desenvolvidas nota-se hoje um processo de redução das taxas de nascimento e elevação das populações idosas, o que faz com que a população estabilize seu crescimento natural em níveis muito baixos, por vezes passando inclusive pela diminuição populacionais, acusando o término de seu processo de transição demográfica.</p>
+  
+    </div>
+	
+	
+	
+
+	<div class="campo">
+		
+        <p id="p2">Questão 04</p>
+			
+		<p id="p3"> (ENEM 2016) Uma consequência socioeconômica para os países que vivenciam o fenômeno demográfico ilustrado é a diminuição da:   </p>
+		
+		<img src="T2q4.jpg" class="imagem" width="330" height="200">
+			      
+        <p class="bordaQuestoes"id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) oferta de mão de obra nacional.</p>
+       
+	   <p class="bordaQuestoes"id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) média de expectativa de vida.</p>
+		
+		<p class="bordaQuestoes"id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) disponibilidade de serviços de saúde.</p>
+		
+		<p class="bordaQuestoes"id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) despesa de natureza previdenciária.</p>
+		
+		<p class="bordaQuestoes"id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) imigração de trabalhadores qualificados.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A queda na taxa de fecundidade provocará num primeiro momento a redução do crescimento vegetativo, o que determinará – a médio prazo – uma redução da oferta de mão de obra e a longo prazo um envelhecimento da população e um eventual colapso do sistema previdenciário.</p>
+
+
+		<p> a) Correta. A diminuição da taxa de fecundidade por um longo período leva a uma redução da população jovem e consequentemente uma dificuldade em repor os trabalhadores no mercado de trabalho à medida que esses se aposentam e saem do mercado de trabalho.  </p>
+
+		<p> b) Incorreta. A diminuição da fecundidade não tem relação direta com a expectativa de vida. Grosso modo para que a expectativa de vida sofra uma que as condições de saneamento básico, tratamento médico hospitalar e violência (ou guerras) devem piorar. </p> 
+
+		<p> c) Incorreta. A diminuição da disponibilidade de serviços de saúde não é uma consequência da redução da fecundidade, uma vez que é a ação do Estado que determina a disponibilidade destes serviços.</p>  
+
+		<p> d) Incorreta. As despesas de natureza previdenciária sofrem influência da alteração na expectativa de vida e não há relação direta com a redução da fecundidade. </p>
+
+		<p> e)  Incorreta.  Não faz sentido afirmar que a redução na fecundidade levaria à uma diminuição na imigração de trabalhadores qualificados. O incentivo (e não a diminuição) da imigração de trabalhadores qualificados é uma solução (e não consequência) de curto prazo para redução da fecundidade. </p> 
+
+ 
+    </div>
+	
+	
+			
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 05</p>
+			
+		  
+		<p id="p3"> (FTD 2016) Analisando os dados apresentados no gráfico, fica evidente que a população mundial</p>
+   
+		<img src="T2q5.jpg" class="imagem" width="330" height="260">
+			          
+        <p class="bordaQuestoes"id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) possui pelo menos 20% de seu total fora da PEA (População Economicamente Ativa).</p>
+      
+		<p class="bordaQuestoes"id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) está concentrada em atividades primárias.</p>
+		
+		<p class="bordaQuestoes"id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) atua predominantemente em atividades informais.</p>
+		
+		<p class="bordaQuestoes"id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) está concentrada em profissões que exigem altíssima qualificação.</p>
+		
+		<p class="bordaQuestoes"id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) de agricultores é maior do que a de jovens fora da PEA.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+				
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 06</p>
+			
+		<p id="p3">  (UFTM 2010) Considere o gráfico. </p>
+
+		<p id="p3"> Fases da transição demográfica </p>
+		
+		<img src="T2q6.jpg" class="imagem" width="320" height="150">
+			
+		<p id="p3">	Considere as afirmações</p>
+
+		<p id="p3">	I. A primeira fase de transição demográfica é marcada pelo   rápido crescimento da população, como consequência da queda da mortalidade e manutenção das elevadas taxas de natalidade.</p>
+
+		<p id="p3">	II. A segunda fase caracteriza-se pela diminuição das taxas de fecundidade, provocando queda da taxa de natalidade mais acentuada que a de mortalidade e diminuindo o ritmo de crescimento da população.</p>
+
+		<p id="p3">	III A   terceira   fase, encontrada em diversos países europeus, é denominada de fase de estabilização demográfica.</p>
+
+		<p id="p3">	IV. O   Brasil ainda   se encontra na primeira fase da transição demográfica, apesar das melhorias das condições médico-sanitárias.</p>
+
+		<p id="p3">	Está CORRETO apenas o que se afirma em:</p>
+	         
+        <p class="bordaQuestoes"id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a)  I e II.</p>
+       
+	   <p class="bordaQuestoes"id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b)  II e III.</p>
+		
+		<p class="bordaQuestoes"id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c)  III e IV.</p>
+		
+		<p class="bordaQuestoes"id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d)  I, II e III.</p>
+		
+		<p class="bordaQuestoes"id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e)  II, III e IV.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 07</p>
+			
+		<p id="p3">  (Mackenzie-SP 2008) Hoje, a população idosa no mundo é de aproximadamente 650 milhões de habitantes. Segundo a ONU, a perspectiva para 2050 é de que o mundo tenha 2 bilhões de pessoas com mais de 60 anos.   </p>
+
+		<p id="p3">	Assinale a Alternativa que corresponde à CORRETA distribuição demográfica de idosos no planeta, nesse período.  </p>
+								        
+        <p class="bordaQuestoes"id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a)  A população idosa terá uma distribuição demográfica homogênea, devido à conquista de recursos na área de saúde, que atingirão a maior parte da população mundial.</p>
+      
+		<p class="bordaQuestoes"id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b)  A maior parte da população idosa estará concentrada nos países desenvolvidos, onde o investimento no social é alto, gerando uma elevada expectativa de vida. </p>
+	
+		<p class="bordaQuestoes"id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c)  A distribuição da população idosa terá uma maior concentração entre os países ricos e emergentes, por terem maior acesso à tecnologia da medicina</p>
+	
+		<p class="bordaQuestoes"id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d)  A maior concentração de idosos estará em países subdesenvolvidos, proveniente do elevado crescimento vegetativo de hoje.</p>
+		
+		<p class="bordaQuestoes"id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e)  O maior número de idosos se concentrará no continente europeu, devido ao crescimento e à expansão da União Europeia, que proporcionará igualdade de tecnologia e tratamentos médicos à sua população.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 08</p>
+			
+		<p id="p3">   (PUC-PR 2007) Confira com atenção o gráfico a seguir.</p>
+		
+		<img src="T2q8.jpg" class="imagem" width="320" height="200">
+		
+		<p id="citacao"><small>  Fonte: United Matino Populário Divisional, 2003. MAGNOLI, Demétrio; ARAÚJO, Regina. Projeto de Ensino de Geografia: geografia geral. Fig. 6, p. 140.  </small>	</p>
+		           
+		<p id="p3"> A miséria e as doenças a ela correlacionadas explicam os elevados índices de mortalidade na porção da África que se estende desde o deserto do Saara até o extremo sul desse continente. Tanto a África do Norte, como a América Latina e Caribe apresentam, no entanto, índices menores de mortalidade do que a Europa. Isso se deve principalmente a quê?</p>
+
+        <p class="bordaQuestoes"id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a)  Mudanças culturais, relacionadas a formas racionais de uso do solo, melhorias alimentares e de higiene têm reduzido os índices de mortalidade das populações da África Setentrional, América Latina e Caribe.</p>
+  
+	   <p class="bordaQuestoes"id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b)   Há grande porcentagem de idosos caracterizando a estrutura etária da maioria dos países europeus.</p>
+	
+		<p class="bordaQuestoes"id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c)   Os países da África do Norte e da América Latina têm melhorado significativamente os seus índices de desenvolvimento humano, superando até vários países do continente europeu.</p>
+	
+		<p class="bordaQuestoes"id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d)   A população de migrantes latino-americanos e africanos no continente europeu tem contribuído para. </p>
+
+		<p class="bordaQuestoes"id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e)  O atual contexto econômico mundial caracterizado pelo predomínio do neoliberalismo tem contribuído para a redução das desigualdades socioeconômicas inter-regionais.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+			
+		
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 09</p>
+			
+		<p id="p3">  (PUC-RJ 2006) A taxa de crescimento populacional atual da Rússia é negativa: a população do país diminuiu em 286 mil   pessoas no primeiro quadrimestre deste ano. </p> 
+	
+	<p id="p3"> O número de mortes no país é, em média, 70% superior ao número de nascimentos. A diminuição vem ocorrendo desde o desmantelamento da União Soviética, em 1991.</p>
+
+	<p id="p3"> Essa situação é decorrência </p>
+		
+		       
+        <p class="bordaQuestoes"id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a">  a)  dos fluxos migratórios em direção à Europa Ocidental </p>
+      
+		<p class="bordaQuestoes"id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b">  b)  da rigorosa política de governo de controle da natalidade.</p>
+		
+		<p class="bordaQuestoes"id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c">  c)  do aumento da mortalidade na base e no corpo da Pirâmide etária
+
+		<p class="bordaQuestoes"id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d)  do elevado número de idosos e da baixa taxa de fecundida
+		
+		<p class="bordaQuestoes"id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e)  das mudanças ocorridas na economia do país a partir da desestruturação da União Soviética.
+
+		
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+				
+	<div class="campo">
+		
+        <p id="p2">Questão 10</p>
+			
+		<p id="p3">  Thomas R. Malthus (1766-1834) defendia a tese de que a população crescia em patamares superiores aos da produção de alimentos, o que causaria graves convulsões sociais em razão do excesso de pessoas no mundo. Como solução para esse problema, Malthus propôs:  </p>
+			      
+        <p class="bordaQuestoes"id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) a difusão de métodos de controle da natalidade, como medicamentos e acessórios que inibissem a natalidade.</p>
+     
+		<p class="bordaQuestoes"id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) o controle moral da população de baixa renda, que só deveria ter filhos caso pudesse sustentá-los.</p>
+	
+		<p class="bordaQuestoes"id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) a revolução na forma de produzir alimentos, que deveriam aumentar em termos quantitativos e qualitativos.</p>
+		
+		<p class="bordaQuestoes"id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) a distribuição de renda, de forma que as populações mais ricas, em minoria, deveriam ceder mais recursos para a maioria pobre.</p>
+
+		<p class="bordaQuestoes"id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) a expansão de infraestruturas sociais, com melhorias também nos campos da saúde, educação e segurança.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+    <img id="imagem" alt="" style="display:none"  width = "280" height="200">
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	  document.getElementById("p2").style.fontFamily = tipo[fonte];
+	     
+	     
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			//(pq1.includes("leite")||(pq1.includes("gato"))||(pq1.includes("pato")))
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+					
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "b") {
+                corretas++;
+                document.getElementById("q3b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3b").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "a") {
+                corretas++;
+                document.getElementById("q4a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "a") {
+                corretas++;
+                document.getElementById("q5a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "d") {
+                corretas++;
+                document.getElementById("q6d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "d") {
+                corretas++;
+                document.getElementById("q7d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7d").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "b") {
+                corretas++;
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "d") {
+                corretas++;
+                document.getElementById("q9d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9d").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "b") {
+                corretas++;
+                document.getElementById("q10b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

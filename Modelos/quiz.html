@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body onload="loadquestion()">
+
+
+  <p id="demo">JavaScript can change HTML content.</p>
+ 
+
+
+  
+ <form id= "myform" name="myform">
+  
+  
+  <p id="mylabel" name="questao">Question</p><br>
+  <img id="myIma" name="myIma" src=" "  width =100px height= auto><br><br>
+  <input type="button" id="btn1" value="option1" name="opt1" onclick="checkans(2)"><br><br>
+  <input type="button"  id="btn2" value="option2" name="opt2" onclick="checkans(3)"><br><br>
+  <input type="button"  id="btn3" value="option3" name="opt3" onclick="checkans(4)"><br><br>
+  
+  <br>
+  <input type="button" id="next" value="Próximo" name="nxtbtn" onclick="changequestion()"><br><br>
+
+   <input type="button" id="back" value="voltar" name="bkbtn" onclick="backQ()"><br><br>
+ </form>
+ <script type="text/javascript">
+
+   i=0;
+   
+ myqs=[["Qual é a capital da Bahia ?","icone.png", "Aracajú","Salvador","Curitiba","3"],
+      ["Qual é a capital do Paraná ?","icone2.png","Curitiba","Londrina","Fortaleza","2"],
+      ["Questões","","opt","opt","opt","4"]
+ ];
+
+ 
+
+ function loadquestion() {
+ 
+ document.getElementById("mylabel").innerHTML= myqs[i][0];
+ document.getElementById("myIma").src= myqs[i][1];
+ myform.opt1.value=myqs[i][2];
+ myform.opt2.value=myqs[i][3];
+ myform.opt3.value=myqs[i][4];
+
+ document.getElementById("next").value = "Próximo";
+ document.getElementById("next").style.backgroundColor = "lightgray";
+ document.getElementById("demo").innerHTML =myqs[i];
+ }
+ 
+ 
+ 
+function changequestion(){
+ i=i+1;
+ loadquestion();
+}
+
+
+function backQ(){
+
+ 
+ i=i-1
+ loadquestion();
+}
+
+
+function checkans(a){
+ ans=parseInt(myqs[i][5]);
+ if(ans==a){
+  
+document.getElementById("btn2").style.backgroundColor = "#99ff99";
+
+document.getElementById("next").style.backgroundColor = "#99ff99";
+ }
+ else {
+ document.getElementById("next").style.backgroundColor = "#ee4466";
+document.getElementById("next").value = "Incorreto";
+ }
+
+
+}
+ </script>
+
+
+
+</body>
+</html>

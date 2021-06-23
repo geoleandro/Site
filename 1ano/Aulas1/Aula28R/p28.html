@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p1Aula28</title>
+
+    <link rel="stylesheet" href="../../../estilos/questoes.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/javascript.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+    <style>
+        .larguraBar {
+            max-width: 700px;
+        }
+
+        @font-face {
+            font-family: pixel;
+            src: url('../../../fontes/FreePixel.woff');
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 0px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 40px;
+        }
+
+        p {
+            padding: 10px;
+            background-color: #fff;
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+    <!-- Navigation (Stays on Top) -->
+    <div class="w3-top w3-bar w3-black larguraBar">
+
+
+        <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+
+
+
+
+    </div>
+
+
+    <h1 class="h1"> Aula 28 – Revisão (aulas 24 a 27)</h1>
+
+
+    <div class="w3-container p2 w3-padding">
+
+        <strong>Conteúdo:</strong>
+
+        <ul class="w3-padding">
+            <li>A água na natureza. Ciclo, conceitos de hidrografia. A água em movimento: correntes marinhas, ondas e
+                marés. A bacia hidrográfica como unidade de análise. A rede hidrográfica.
+            </li>
+
+            <li>
+                Formas do relevo marinho: plataforma continental, talude, bacia oceânica, fossas marinhas, ilhas e
+                cadeias oceânicas.
+
+            </li>
+
+            <li>
+                Rios meandrantes, deltas, estuário, perfil longitudinal, bacias hidrográficas e erosão fluvial.
+
+            </li>
+
+            <li>
+                Poluição do solo; chuva ácida; desmatamento, contaminação da água.
+
+
+            </li>
+
+
+        </ul>
+
+    </div>
+
+
+
+
+
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 01</p>
+
+            <p> (UECE 2017) A bacia hidrográfica é reconhecida como unidade espacial na Geografia Física desde o fim dos
+                anos 60. Contudo, durante a última década ela foi, de fato, incorporada pelos profissionais não só da
+                geografia, mas da grande área das chamadas Ciências Ambientais, em seus estudos e projetos de pesquisa.
+            </p>
+
+
+
+
+            <p class="citacao"> Botelho, R. G. M. e Silva, A. S. da. Bacia Hidrográfica e Qualidade Ambiental. Reflexões
+                sobre a geografia física no Brasil. Vitte, A. C. Guerra, A. J. T. Rio de Janeiro. Bertrand Brasil. 2004.
+                p. 153. </p>
+
+
+            <p> A importância da bacia hidrográfica como unidade de estudo, da forma como se refere o texto, se dá
+                porque</p>
+
+
+
+
+
+
+
+
+
+            <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
+
+                a) os impactos no sistema hidrológico são os que mais afetam as atividades comerciais e de mineração.
+
+            </p>
+            <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b">
+
+                b) possibilita avaliar de forma integrada as ações humanas a respeito do ambiente e de seus
+                desdobramentos sobre o equilíbrio hidrológico.
+
+            </p>
+            <p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c">
+
+                c) os aspectos do ambiente podem ser estudados e compreendidos isoladamente na perspectiva da análise
+                ambiental de forma compartimentada.
+
+            </p>
+            <p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d">
+
+                d) os rios e as suas paisagens adjacentes que compõem as bacias hidrográficas representam a base dos
+                estudos geoquímicos e ambientais.
+
+            </p>
+
+
+
+        </div>
+
+
+
+        <div class="comentarios">
+
+            <!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 02</p>
+
+            <p> (UEMA 2020) O ciclo da água é um ciclo biogeoquímico que garante que a água circule pelo meio físico e
+                pelos seres vivos. Esse processo depende da luz solar, que garante a evaporação da água, dando início ao
+                ciclo. O vapor de água sobe para camadas mais altas da atmosfera e condensa-se, formando nuvens,
+                pequenas gotículas de água no estado líquido. Quando essas nuvens ficam carregadas, ocorre a
+                precipitação (chuva), ou na forma líquida ou nas formas de granizo e de neve. A água da chuva, então,
+                retorna para a Terra, podendo seguir diferentes caminhos, como voltar para lagos e rios ou infiltrar-se
+                no solo, conforme a imagem a seguir. </p>
+
+
+            <div class="w3-center"><img src="p28q2.png" alt="p28q2" class="w3-mobile"></div>
+
+
+            <p class="citacao"> SANTOS, Vanessa dos. Ciclo da água, 2019. Disponível:
+                https://brasilescola.uol.com.br/biologia/ciclo-agua.htm (Adaptado). </p>
+
+            <p>Os fenômenos expressos em A, B e C são, respectivamente, conhecidos como </p>
+
+
+            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
+
+                a) fluxo superficial, evaporação e condensação.
+
+            </p>
+            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
+
+                b) infiltração, escoamento de neve derretida e transporte.
+
+            </p>
+            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c">
+
+                c) fluxo da água subterrânea, absorção das plantas e fluxo na superfície.
+
+            </p>
+            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
+
+                d) transpiração, sublimação e infiltração.
+
+            </p>
+            <p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e">
+
+                e) evaporação, precipitação e transpiração.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> A evaporação e a evapotranspiração iniciam o ciclo da água. Após esses fenômenos, a água condensa e cai
+                em forma de precipitação. </p>
+        </div>
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 03</p>
+
+            <p>(UFAM) O termo <strong>dorsais</strong> significa: </p>
+
+
+
+            <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a">
+
+                a) Zonas de descontinuidades sísmicas.
+
+            </p>
+            <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b">
+
+                b) Vales glaciais.
+
+            </p>
+            <p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c">
+
+                c) Planalto de origem cristalina.
+
+            </p>
+            <p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d">
+
+                d) Formas de relevo litorâneo.
+
+            </p>
+            <p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e">
+
+                e) Grandes cadeias montanhosas no fundo dos oceanos.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 04</p>
+
+            <p> (UPE 2011) Observe, atentamente, o desenho esquemático a seguir, correspondente a uma morfoestrutura
+                observada em área de relevo submarino, fortemente influenciada pelas ações tectônicas.</p>
+
+
+
+            <div class="w3-center"><img src="p28q4.png" alt="p28q4" class="w3-mobile"></div>
+
+
+            <p> O que a seta está indicando?</p>
+
+
+            <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a">
+
+                a) Planície Abissal.
+
+            </p>
+
+            <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b">
+
+                b) Talude Continental.
+
+            </p>
+
+            <p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c">
+
+                c) Plataforma Continental.
+
+            </p>
+            <p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d">
+
+                d) Delta-Estuário.
+
+            </p>
+
+            <p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e">
+
+                e) Dorsal Oceânica.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 05</p>
+
+            <p> (UECE 2015) Analise as afirmações que versam sobre a geomorfologia fluvial e demais processos
+                associados. </p>
+
+
+            <p> Assinale com V as afirmações verdadeiras e com F, as falsas. </p>
+
+            <p>() Os rios são poderosos agentes de transformação da paisagem em virtude da sua capacidade de erodir,
+                transportar e depositar. </p>
+
+            <p> () Diversos rios que drenam litologias cristalinas podem ser classificados como rios antecedentes. </p>
+
+            <p> () As bacias de drenagem apresentam áreas muito pequenas que juntas compõem a bacia hidrográfica de um
+                rio. </p>
+
+            <p> () Os processos aluviais podem compreender erosão, transporte e sedimentação, também em leques aluviais.
+            </p>
+
+            <p>A sequência correta, de cima para baixo, é:</p>
+
+
+
+
+
+            <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a">
+
+                a) V, V, F, V.
+
+            </p>
+            <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b">
+
+                b) V, F, V, V.
+
+            </p>
+            <p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c">
+
+                c) F, F, V, V.
+
+            </p>
+            <p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d">
+
+                d) F, V, F, F.
+            </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 06</p>
+
+            <p> (SM) Compare os mapas abaixo: </p>
+
+
+
+
+            <div class="w3-center"><img src="p28q6.png" alt="p28q6" class="w3-mobile"></div>
+
+
+            <p class="citacao"> Fonte de pesquisa: IBGE Países@. Disponível em: http:
+                    //www.ibge.gov.br. Acesso em: 3 set. 2011.
+
+            </p>
+
+
+
+
+            <div class="w3-center"><img src="p28q6a.png" alt="p28q6a" class="w3-mobile"></div>
+
+            <p class="citacao"> Fonte de pesquisa: David Blanchon. Atlas mondial de l’eau. Paris: Autrement, 2009. p.
+                20.
+
+            </p>
+
+            <p>A partir da comparação, podemos inferir que</p>
+
+
+
+            <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
+
+                a)  as maiores concentrações populacionais ocorrem nas regiões onde há grande disponibilidade de água potável, como na América do Sul.
+
+            </p>
+            <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b">
+
+                b) boa parte das maiores concentrações populacionais ocorrem nas áreas onde há escassez de água potável, como no sul asiático.
+
+            </p>
+            <p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c">
+
+                c)  não há nenhuma relação que se possa estabelecer entre concentração populacional e disponibilidade de água potável.
+
+            </p>
+            <p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d">
+
+                d) as regiões onde há uma situação próxima da escassez de água potável são as de menor concentração populacional do planeta, como no caso do continente africano.
+
+            </p>
+            <p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e">
+
+                e)  onde há a necessidade de se fazer economia de água potável, ocorrem as maiores concentrações populacionais do planeta, esse é o caso da Europa ocidental.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> a) Incorreta.  A América do Sul tem entre as menores concentrações populacionais do planeta. </p>
+
+
+            <p>b) Correta. Comparando os dois mapas é possível perceber que há uma relação entre a escassez de água existente no território do sul asiático com a grande concentração populacional que ali existe. Lembre-se de que dois dos países mais populosos do mundo se localizam nessa região: China e Índia. </p>
+
+            
+            <p>c)  Incorreta. Conforme observamos no mapa, há uma relação inversa entre concentração populacional alta e baixa quantidade de água potável. </p>
+
+
+            
+            <p> d)  Incorreta. O continente africano tem uma concentração populacional moderada, mas não há ali uma situação próxima da escassez. </p>
+
+
+            
+            <p> e)  Incorreta. Apesar de boa concentração populacional, a maior parte do continente europeu não sofre com escassez de água potável.</p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 07</p>
+
+            <p> (ENEM 2012) O uso da água aumenta de acordo com as necessidades da população no mundo. Porém, diferentemente do que se possa imaginar, o aumento do consumo de água superou em duas vezes o crescimento populacional durante o século XX. </p>
+
+          
+
+
+            <p class="citacao"> TEIXEIRA, W. et al. Decifrando a Terra. São Paulo: Cia. Editora Nacional, 2009. </p>
+
+
+            <p>Uma estratégia socioespacial que pode contribuir para alterar a lógica de uso da água apresentada no texto é a </p>
+
+
+            <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">
+
+                a) ampliação de sistemas de reutilização hídrica.
+
+            </p>
+            <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
+
+               b) expansão da irrigação por aspersão das lavouras.
+
+            </p>
+            <p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c">
+
+              c) intensificação do controle do desmatamento de florestas.
+            </p>
+            <p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d">
+
+                d) adoção de técnicas tradicionais de produção.
+            </p>
+            <p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e">
+
+                e) criação de incentivos fiscais para o cultivo de produtos orgânicos.
+
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> a) Correta. De acordo com o texto o consumo de água aumentou muito mais do que o crescimento da população. Nesse sentido, uma das práticas para garantir o fornecimento de água para o Planeta seria o uso de técnicas de reutilização de água tratada para evitar desabastecimento.  </p>
+
+            <p> b) Incorreta. A irrigação é o maior consumidor de água do Planeta e sua ampliação provocaria a escassez de água.</p>
+
+
+            
+            <p> c) Incorreta. Embora o desmatamento seja fundamental para proteção dos mananciais (fontes de água), somente essa medida não levaria ao controle do consumo de água. As nascentes de água também estão localizadas em áreas não florestais.</p>
+
+
+            
+            <p> d) Incorreta. As técnicas tradicionais de produção possuem um manejo do solo rudimentar, além de diminuir a retenção de água e promover o desgaste de sua superfície.</p>
+
+            
+            <p>e) Incorreta. Embora a produção de orgânicos esteja baseada na não utilização de produtos químicos como agrotóxicos de modo geral, essa produção utiliza uma quantidade e qualidade da água elevada. </p>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 08</p>
+
+            <p> (IFMT 2014) À água potável encontrada na natureza é considerada um elemento muito importante para o desenvolvimento da vida no planeta. No entanto, tem se tornado cada vez mais escassa. Com relação a esse elemento, assinale a alternativa correta.</p>
+
+
+          
+            <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
+
+                a) Os recursos hídricos estão equitativamente bem distribuídos por todos os continentes e dentro deles a carência de acesso a esse bem renovável se dá não por escassez, mas por questões políticas.
+
+            </p>
+            <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
+
+                b) A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, e pelos desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.
+
+            </p>
+            <p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
+
+                c) O Brasil possui pouca água superficial (rios, lagos) e subterrânea devido às suas características geológicas dominantes.
+
+            </p>
+            <p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
+
+                d) O maior estoque de água doce na atualidade está nos lençóis freáticos, superando o volume de águas em estado sólido (calotas polares, geleiras e neves permanentes), em razão do derretimento das geleiras provocado pelo efeito estufa.
+
+            </p>
+            <p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
+
+                e) A diminuição da chuva no Brasil tem sido o maior problema ligado à falta de água para abastecer as cidades e as áreas rurais.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 09</p>
+
+            <p> (FACID 2012) Observe a imagem abaixo: </p>
+
+            
+
+	<div class="w3-center"><img src="p28q9.png" alt="p28q9" class="w3-mobile"></div>
+
+            <p class="citacao">Fonte: e-geo.ineti.pt. Acesso em 22/10/2011 </p>
+
+            <p>A água constitui um elemento fundamental para o desenvolvimento da vida no nosso planeta. Com relação a esse elemento, assinale a alternativa correta. </p>
+
+            <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a">
+
+                a) A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, e pelos desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.
+
+            </p>
+            <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b">
+
+                b) Desvios de água para projetos de irrigação, construção de hidrelétricas, consumo excessivo, desmatamento e poluição têm contribuído para a redução de conflitos entre usuários.
+
+            </p>
+            <p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c">
+
+                c) A água tem sido utilizada para a geração de energia elétrica assegurando a sustentabilidade do meio ambiente local.
+
+            </p>
+            <p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d">
+
+                d) O Brasil possui pouca quantidade de água superficial e subterrânea devido às suas características geológicas dominantes.
+
+            </p>
+            <p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e">
+
+                e) A diminuição da chuva no Brasil tem sido o maior problema ligado à falta de água para abastecer as cidades.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 10</p>
+
+            <p>(UFPEL 2007) Observe a figura a seguir. </p>
+
+
+
+            <div class="w3-center"><img src="p28q10.png" alt="p28q10" class="w3-mobile"></div>
+
+            <p class="citacao"> Diário Popular, 25 mar 2007 </p>
+
+
+            <p> Em 22 de março, comemora-se o Dia Mundial da Água, data criada pela ONU em 1993, com o objetivo de chamar a atenção para a escassez desse recurso, bem como para conscientizar as pessoas sobre a necessidade de preservação e reaproveitamento da água de que dispomos hoje.</p>
+
+            <p>Considere as alternativas abaixo a respeito da água doce. </p>
+
+            <p>I. O aumento da população, o crescimento econômico não-sustentável e a agricultura irrigada estão entre os principais fatores que ameaçam as fontes de água em todo o mundo. </p>
+
+            <p>II. O Brasil tem grande disponibilidade de água doce e, por essa razão, não enfrenta problemas de abastecimento em nenhuma de suas metrópoles nacionais. </p>
+
+            <p>III. Os fertilizantes e agrotóxicos podem modificar as características dos "corpos de água", gerando impactos em aquíferos, rios e mananciais. </p>
+
+            <p> IV. A impossibilidade da dessalinização de águas salgadas do planeta dificulta a solução de um problema que, com custos pouco elevados, atenderia toda a demanda mundial.</p>
+
+            <p> V. Uma das consequências relacionadas à falta de água potável é o aumento da incidência de doenças, como a diarreia e outros males provocados pela água contaminada, os quais causam a morte de milhões de crianças em todo mundo.</p>
+
+
+            <p>Somente são corretas as afirmativas </p>
+
+
+            <p class="bordaQuestoes" id="q10a"><input type="radio" name="pq10" value="a">
+
+                a) II, III e IV. 
+
+            </p>
+            <p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b">
+                b) I, II e V. 
+
+            </p>
+            <p class="bordaQuestoes" id="q10c"><input type="radio" name="pq10" value="c">
+
+                c) III, IV e V. 
+
+            </p>
+            <p class="bordaQuestoes" id="q10d"><input type="radio" name="pq10" value="d">
+
+                d) I, II e IV. 
+
+            </p>
+            <p class="bordaQuestoes" id="q10e"><input type="radio" name="pq10" value="e">
+
+                e) I, III e V. 
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+    </form>
+
+
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+
+    <div class="area">
+        <img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+            height="200">
+    </div>
+
+    <p id="aviso"></p>
+
+
+
+    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+
+
+
+
+    <script>
+
+
+
+        // Altere a alternativa correta substituindo em cada questão abaixo. Todas estão com resposta letra a
+        function checar() {
+
+
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+            var pq4 = document.quiz.pq4.value;
+            var pq5 = document.quiz.pq5.value;
+            var pq6 = document.quiz.pq6.value;
+            var pq7 = document.quiz.pq7.value;
+            var pq8 = document.quiz.pq8.value;
+            var pq9 = document.quiz.pq9.value;
+            var pq10 = document.quiz.pq10.value;
+
+            var corretas = 0;
+
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "b") {
+                corretas++;
+                document.getElementById("q1b").style.backgroundColor = cor[0];
+            } else {
+
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById("q1c").style.backgroundColor = cor[1];
+                document.getElementById("q1d").style.backgroundColor = cor[1];
+
+
+                document.getElementById("q1b").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq2 == "e") {
+                corretas++;
+                document.getElementById("q2e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+                document.getElementById("q2c").style.backgroundColor = cor[1];
+                document.getElementById("q2d").style.backgroundColor = cor[1];
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+
+                document.getElementById("q2e").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq3 == "e") {
+                corretas++;
+                document.getElementById("q3e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+                document.getElementById("q3a").style.backgroundColor = cor[1];
+                document.getElementById("q3d").style.backgroundColor = cor[1];
+                document.getElementById("q3c").style.backgroundColor = cor[1];
+
+                document.getElementById("q3e").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq4 == "b") {
+                corretas++;
+                document.getElementById("q4b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4d").style.backgroundColor = cor[1];
+                document.getElementById("q4c").style.backgroundColor = cor[1];
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+
+
+                document.getElementById("q4b").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq5 == "a") {
+                corretas++;
+                document.getElementById("q5a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+                document.getElementById("q5c").style.backgroundColor = cor[1];
+                document.getElementById("q5d").style.backgroundColor = cor[1];
+              
+
+                document.getElementById("q5a").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq6 == "b") {
+                corretas++;
+                document.getElementById("q6b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6a").style.backgroundColor = cor[1];
+                document.getElementById("q6c").style.backgroundColor = cor[1];
+                document.getElementById("q6d").style.backgroundColor = cor[1];
+                document.getElementById("q6e").style.backgroundColor = cor[1];
+
+                document.getElementById("q6b").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq7 == "a") {
+                corretas++;
+                document.getElementById("q7a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+                document.getElementById("q7c").style.backgroundColor = cor[1];
+                document.getElementById("q7d").style.backgroundColor = cor[1];
+                document.getElementById("q7e").style.backgroundColor = cor[1];
+
+                document.getElementById("q7a").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq8 == "b") {
+                corretas++;
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+                document.getElementById("q8c").style.backgroundColor = cor[1];
+                document.getElementById("q8d").style.backgroundColor = cor[1];
+                document.getElementById("q8e").style.backgroundColor = cor[1];
+
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq9 == "a") {
+                corretas++;
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+                document.getElementById("q9c").style.backgroundColor = cor[1];
+                document.getElementById("q9d").style.backgroundColor = cor[1];
+                document.getElementById("q9e").style.backgroundColor = cor[1];
+
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+
+            }
+
+
+            if (pq10 == "e") {
+                corretas++;
+                document.getElementById("q10e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+                document.getElementById("q10c").style.backgroundColor = cor[1];
+                document.getElementById("q10d").style.backgroundColor = cor[1];
+                document.getElementById("q10a").style.backgroundColor = cor[1];
+
+                document.getElementById("q10e").style.backgroundColor = cor[0];
+
+            }
+
+
+            corLenta();
+            classEscurecer();
+            comentarios();
+
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5 && corretas <= 7) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+
+
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+            document.getElementById("mensagem").style.display = 'block';
+            document.getElementById("imagem").style.display = 'block';
+
+
+
+
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

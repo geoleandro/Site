@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang ="pt-br">
+
+<head>
+
+	<title>Deutsch</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border:  1px; border-radius: 25px ; padding: 0cm; font-size: 35px; color: white; font-weight:bold; text-align:left; padding: 3%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(.png);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#paragrafo{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left; font-size: 16pt;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 0px 0px 0px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: normal;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+textarea {overflow: auto;}
+#imagem{display: none;}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+				
+	<p id="h1"></p>
+	<img src ="" id ="imagem" alt=" " width="250" height="200">
+	<p class="bordaQuestoes" id="p3">ich</p>
+	<p class="bordaQuestoes" id="p4">du</p>
+	<p class="bordaQuestoes" id="p5">er/sie/es</p>
+	<p class="bordaQuestoes" id="p6">wir</p>
+	<p class="bordaQuestoes" id="p7">ihr</p>
+	<p class="bordaQuestoes" id="p8">sie/Sie</p>
+	<p><b>Indikativ Perfekt</b></p>
+	<p class="bordaQuestoes" id="p9">ich</p>
+
+	<script>
+
+
+		
+	 
+	
+	var i = 0;
+	var palavras = ["arbeiten", "navigieren", "lernen","lachen","rausgehen","fliegen","trinken"];
+	var imagens =  ["001Trabalhar.png", "002Navegar.png", "003Aprender.png","004Rir.png","005Sair.png","006Voar.png","009Beber.png"];
+	var pes1 = ["arbeite", "navigierte","lerne","lache","gehe raus","fliege","trinke"];
+	var pes2 = ["arbeitest","navigiertest","lernst","lachst","gehst raus","fliegst","trinkst"];
+	var pes3 = ["arbeitet","navigierte","lernt","lacht","geht raus","fliegt","trinkt"];
+	var pes4 = ["arbeiten","navigierten","lernen","lachen","gehen raus","fliegen","trinken"];
+	var pes5 = ["arbeitet","navigiertet","lernt","lacht","geht raus","fliegt","trinkt"];
+	var pes6 = ["arbeiten","navigierten","lernen","lachen","gehen raus","fliegen","trinken"];
+
+	var IndPerfekt = ["habe gearbeitet","habe navigiert","habe gelernt","habe gelacht","bin rausgegangen","habe geflogen","habe getrunken"];
+	
+		
+  
+	function carregaQuest()
+	{
+		var aleatorio = Math.floor(Math.random() * (palavras.length));
+		if(aleatorio < palavras.length) {
+			
+		document.getElementById("h1").innerHTML = palavras[aleatorio] +  "<br>";
+		document.getElementById("imagem").style.display="block";
+		document.getElementById("imagem").src = imagens[aleatorio] ;
+		document.getElementById("p3").innerHTML = "ich " + pes1[aleatorio];
+		document.getElementById("p4").innerHTML = "du " + pes2[aleatorio];
+		document.getElementById("p5").innerHTML = "er/sie/es " + pes3[aleatorio];
+		document.getElementById("p6").innerHTML = "wir " + pes4[aleatorio];
+		document.getElementById("p7").innerHTML = "ihr " + pes5[aleatorio];
+		document.getElementById("p8").innerHTML = "sie/Sie " + pes6[aleatorio];
+		document.getElementById("p9").innerHTML = "ich " + IndPerfekt[aleatorio];
+	}
+			
+			console.log(aleatorio);	
+
+		if (aleatorio == palavras.length) {
+			aleatorio = 0;
+			
+		}
+	 //(i < palavras.length )
+	// 	{
+	// 		i += aleatorio;
+	// 		console.log(aleatorio);		
+	// 	}
+	// else
+		
+	// 	{
+	// 		document.getElementById("h1").innerHTML = "Acabou";
+	// 		document.getElementById("imagem").style.display="none";
+			
+	// 	}
+	}
+		
+	//window.location.reload();
+		//window.setInterval(carregaQuest, 4000);
+	</script>	
+	
+	
+	<script>
+
+		function SlideBtn()
+		{
+		
+			
+			
+				window.setInterval(carregaQuest, 4000);
+				LigaDesliga = true;
+
+	
+			//document.getElementById("h1").innerHTML = "Acabou";
+			
+			//window.location.reload();
+		
+			
+		}
+			
+		
+
+	
+	</script>
+
+	<br>
+
+	 <input type="button" id="button1" value="Próxima" name="nxtbtn" onclick="carregaQuest()"><br><br><br><br>
+
+	 <input type="button" id="button1" value="Slide" name="nxtbtn" onclick="SlideBtn()"><br><br>
+	
+	 
+	 
+	 
+	 
+
+</body>
+
+</html>
+
+
+
+
+

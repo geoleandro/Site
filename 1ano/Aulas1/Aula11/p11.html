@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p1Aula11</title>
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		p {
+			padding: 10px;
+			background-color: #fff;
+
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+	</style>
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+
+
+
+
+	</div>
+
+
+
+
+	<h1 class="h1"> Questões aula 11 – Dinâmica externa do relevo </h1>
+
+
+	<p><strong>Conteúdo:</strong> Tipos de intemperismo; tipos de erosão; sedimentação</p>
+
+
+	<p><strong>Objetivo:</strong> Entender o papel das forças externas na configuração das estruturas e formas de relevo
+		terrestre.</p>
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+			<p> (UEFS-BA 2017) Os fiordes, típicos no estudo do relevo continental costeiro em elevadas
+				latitudes, são feições formadas </p>
+
+
+
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required"  name="pq1" value="a"> a)
+				pela intensificação de agentes internos, sobretudo o tectonismo.</p>
+
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required"  name="pq1" value="b"> b)
+				pela interferência de agentes internos, sobretudo a intrusão magmática.</p>
+
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required"  name="pq1" value="c"> c)
+				pela ocorrência de agentes externos, especificamente a erosão pluvia. </p>
+
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d)
+				pela atuação de agentes externos, especificamente a erosão glacial. </p>
+
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required"  name="pq1" value="e"> e)
+				pela manifestação de agentes externos, especialmente a erosão antrópica.</p>
+
+		</div>
+
+		<div class="comentarios">
+
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p> (UNICSAL 2015) As figuras abaixo representam sequencialmente a formação de: </p>
+
+			<div class="w3-center"><img src="p11q2.png" class="w3-mobile"></div>
+
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required"  name="pq2" value="a"> a)
+				uma cuesta devido à erosão diferencial e grande tectonismo plástico.</p>
+
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required"  name="pq2" value="b"> b)
+				um dobramento moderno devido à intensa ação orogênica convergente</p>
+
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required"  name="pq2" value="c"> c)
+				um sistema de serras, devido à fragmentação das rochas mais resistentes</p>
+
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d)
+				um vale através de agentes externos do relevo, com grande influência fluvial</p>
+
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required"  name="pq2" value="e"> e)
+				uma falésia cristalina, devido à intensa abrasão marinha e a resistência das rochas.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p> (FAMERP 2015) Os agentes externos do relevo promovem o trabalho escultural da paisagem, com o desgaste
+				ou a construção de novas feições. </p>
+
+
+			<p>Da ação das águas dos rios e do mar resultam, respectivamente, </p>
+
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a">
+				a) os deltas e as falésias.
+			</p>
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b">
+				b) os fiordes e os estuários.
+
+			</p>
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c">
+				c) as restingas e as torrentes.
+			</p>
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d">
+				d) as enxurradas e as dunas.
+
+			</p>
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e">
+
+				e) os cânions e as morainas.
+
+			</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p> (UFPR 2016) A geomorfologia é o campo do conhecimento técnico e científico que estuda as formas do
+				relevo e os processos pretéritos e presentes envolvidos. Em regiões sob a influência de clima tropical e
+				subtropical, o relevo, em grande parte, está sendo moldado pela ação das chuvas, que promove o
+				intemperismo nas rochas e o transporte e deposição dos sedimentos. Apesar de esses processos
+				participarem da dinâmica natural, eles podem ser influenciados pela ação humana. A alteração no seu
+				equilíbrio pode trazer graves consequências à sociedade. </p>
+
+
+			<p> Sobre os processos geomorfológicos que têm sido intensificados pela influência humana, considere as
+				seguintes afirmativas: </p>
+
+			<p> 1. O processo de assoreamento tem ocorrido com grande frequência nas áreas mais elevadas do relevo, onde
+				as declividades são mais íngremes, trazendo prejuízos por afetar os chamados topos de morros.</p>
+
+			<p> 2. Os escorregamentos e as corridas de detritos e lama, que são deflagrados por grande volume de chuvas
+				e ocorrem, predominantemente, em regiões serranas e nas encostas com maiores inclinações, estão entre os
+				processos geomorfológicos que trazem maiores danos à sociedade. </p>
+
+			<p> 3. A erosão pluvial em vertentes, que traz grandes prejuízos econômicos e ambientais, está condicionada,
+				além de às características do relevo, também aos tipos de solo, à dinâmica das chuvas, à cobertura da
+				vegetação e ao tipo de uso antrópico. </p>
+
+			<p> Assinale a alternativa correta. </p>
+
+
+
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required"  name="pq4" value="a">
+				a) Somente a afirmativa 3 é verdadeira.
+			</p>
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b">
+				b) Somente as afirmativas 1 e 2 são verdadeiras.
+
+
+			</p>
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c">
+				c) Somente as afirmativas 1 e 3 são verdadeiras.
+			</p>
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d">
+				d) Somente as afirmativas 2 e 3 são verdadeiras.
+			</p>
+			<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e"> e) As
+				afirmativas 1, 2 e 3 são verdadeiras.
+			</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 05</p>
+
+			<p> (UEP 2011) Os processos geomorfológicos internos ou exógenos deixam sempre impressas, nas
+				paisagens, as marcas de sua atuação. Eles desenvolvem, inclusive, um conjunto de feições de relevo
+				característico. Esse fato reveste-se de uma particular importância, quando o pesquisador de áreas, como
+				Biologia, Geografia, Geologia etc., volta-se à análise de ambientes pretéritos. <br><br>Com relação a
+				esse assunto, observe, atentamente, a fotografia reproduzida a seguir e assinale, com base nas
+				evidências morfológicas, o processo responsável pela elaboração da paisagem visualizada em primeiro
+				plano.</p>
+
+			<div class="w3-center"><img src="p11q5.png" class="w3-mobile"></div>
+
+
+
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a)
+				Erosão eólica. </p>
+
+
+
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required"  name="pq5" value="b"> b)
+				Erosão glacial.</p>
+
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required"  name="pq5" value="c"> c)
+				Tectonismo ruptural.</p>
+
+			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required"  name="pq5" value="d">
+				d) Neotectonismo plástico.</p>
+
+			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required"  name="pq5" value="e"> e)
+				Sedimentação fluvial.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 06</p>
+
+			<p> (Unioeste) No Brasil, em regiões tropicais úmidas com relevo de encostas íngremes, ocorrem
+				rápidos movimentos de massa, os quais desencadeiam problemas sociais e econômicos, particularmente nas
+				áreas urbanas. Esse fenômeno é mais comum no verão, quando as chuvas são abundantes, tornando o solo
+				mais saturado. De acordo com o exposto, considere as afirmativas abaixo. </p>
+
+
+			<p>	I - A topografia, o regime pluviométrico, a estrutura e a espessura do manto de alteração, as atividades
+				humanas e a retirada da vegetação original são alguns dos fatores que influenciam movimentos rápidos de
+				massa.</p>
+
+			<p>	II - Os movimentos de massa fazem parte da dinâmica externa da crosta terrestre e são agentes que
+				participam da modelagem do relevo, independentemente da intervenção humana.</p>
+
+			<p>	III – Em algumas grandes cidades e regiões metropolitanas brasileiras, é comum a ocupação das encostas
+				de morros pela população de baixa renda, a mais prejudicada pelos efeitos socioambientais negativos dos
+				movimentos rápidos de massa.</p>
+
+			<p>	IV - os movimentos de massa são analisados considerando-se basicamente a natureza do material
+				transportado (solo, detritos ou rocha) e a velocidade do movimento, que varia desde alguns centímetros
+				por ano até mais de 5km por hora.</p>
+
+			<p>	V - o deslizamento e corrida de lama são classificados como movimentos rápidos de massa, desencadeados
+				principalmente pela declividade do terreno, a água e a gravidade.</p>
+
+			<p>Assim, assinale a alternativa CORRETA.</p>
+
+
+
+
+
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required"  name="pq6" value="a"> a)
+				Estão corretas as alternativas I, III e V.</p>
+
+			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required"  name="pq6" value="b">b)
+				Estão corretas as alternativas II, III, IV e V.</p>
+
+			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required"  name="pq6" value="c"> c)
+				Está correta apenas a alternativa I.</p>
+
+		
+
+			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d)
+				Estão corretas todas as alternativas</p>
+
+			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required"  name="pq6" value="e"> e)
+				Estão corretas as alternativas I, II e IV.</p>
+
+			</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 07</p>
+
+			<p>(Unesp 2006) A figura representa o processo de evolução de uma forma de relevo associada à água.
+			</p>
+
+			<div class="w3-center"><img src="p11q7.png" class="w3-mobile"></div>
+
+			<p> Assinale a alternativa que contém o tipo de paisagem, o processo geomorfológico atuante e o
+				resultado final. </p>
+
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a)
+				Paisagem lacustre; sedimentação; desaparecimento do lago.</p>
+
+
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required"  name="pq7" value="b"> b)
+				Paisagem marinha; assoreamento; falésia.</p>
+
+
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required"  name="pq7" value="c"> c)
+				Paisagem fluvial; abrasão; terraço. </p>
+
+
+
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required"  name="pq7" value="d"> d)
+				Paisagem pluvial; desmatamento; revegetação. </p>
+
+			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required"  name="pq7" value="e"> e)
+				Paisagem desértica; sedimentação; dunas</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> <strong>Comentário:</strong></p>
+
+			<p> Observa-se na evolução apresentada uma paisagem lacustre, processo geomorfológico de sedimentação e o
+				desaparecimento do lago </p>
+		</div>
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 08</p>
+
+			<p> (Fatec) Assinale a alternativa correta sobre o trabalho dos agentes externos na formação do
+				relevo terrestre.</p>
+
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a)
+				A erosão é o desgaste das rochas gerado pelo intemperismo ou pela ação dos ventos e das águas. </p>
+
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required"  name="pq8" value="b"> b)
+				O tectonismo resulta do movimento do magma sob a crosta terrestre, produzindo falhamentos, dobramentos e
+				abalos sísmicos. </p>
+
+
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required"  name="pq8" value="c"> c)
+				O intemperismo químico produz a desintegração mecânica das rochas e é mais encontrado nas áreas
+				desérticas quentes e frias. </p>
+
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required"  name="pq8" value="d"> d)
+				A ação erosiva dos ventos é mais intensa nas regiões tropicais, em função do grande número de
+				tempestades ao longo do ano. </p>
+
+
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required"  name="pq8" value="e"> e)
+				O vulcanismo é um dos principais meios de construção do relevo terrestre, responsável por um grande
+				número de ilhas no chamado "círculo de fogo". </p>
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 09</p>
+
+			<p> Acúmulo e deposição dos materiais fragmentados de rochas em áreas de baixa altitude. </p>
+
+			<p> Assinale a alternativa correspondente a descrição: </p>
+
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required"  name="pq9" value="a"> a)
+				intemperismo.</p>
+
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b)
+				sedimentação.</p>
+
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required"  name="pq9" value="c"> c)
+				deslizamento.</p>
+
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required"  name="pq9" value="d"> d)
+				erosão hídrica.</p>
+
+
+
+		</div>
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 10</p>
+
+			<p> Decomposição da rocha por processos mecânicos produzidos por vegetais através de raízes,
+				escavação de roedores, etc. ou químicos através de bactérias e algas que adentram nas fraturas das
+				rochas. </p>
+
+			<div class="w3-center"><img src="p11q10.png" class="w3-mobile"></div>
+
+			<p> Assinale a alternativa correspondente a descrição: </p>
+
+
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required"  name="pq10" value="a">
+				a) intemperismo químico.</p>
+
+			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b">
+				b) intemperismo biológico. </p>
+
+			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required"  name="pq10" value="c">
+				c) intemperismo físico. </p>
+
+			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required"  name="pq10" value="d">
+				d) intemperismo.</p>
+
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p> -->
+
+			<!-- <p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+	<script>
+
+
+
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "d") {
+				corretas++;
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq2 == "d") {
+				corretas++;
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+
+			}
+			if (pq3 == "a") {
+				corretas++;
+				document.getElementById("q3a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+
+				document.getElementById("q3a").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "d") {
+				corretas++;
+				document.getElementById("q4d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+
+				document.getElementById("q4d").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "a") {
+				corretas++;
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "d") {
+				corretas++;
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "a") {
+				corretas++;
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "a") {
+				corretas++;
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "b") {
+				corretas++;
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "b") {
+				corretas++;
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+			}
+
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			document.getElementById("resp3").innerHTML = pq3;
+			document.getElementById("resp4").innerHTML = pq4;
+
+
+
+
+		}
+	</script>
+
+
+
+
+
+
+</body>
+
+</html>

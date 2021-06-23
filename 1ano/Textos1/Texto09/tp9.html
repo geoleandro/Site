@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js"></script>
+
+    <title>Texto09</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <style>
+        .topico {
+            display: block;
+            margin-top: 0px;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .larguraBar {
+            max-width: 680px;
+        }
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            max-width: 340px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+            justify-content: center;
+            text-align: left;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+        .zoom {
+            animation: animatezoom 1s
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+
+        h1 {
+            margin-top: 0px;
+
+
+        }
+
+        h2 {
+            margin-top: 10px;
+
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        #divFinal {
+            display: none;
+        }
+
+
+        .margemAcima {
+            margin-top: 80px;
+        }
+
+        .margemAbaixo {
+            margin-bottom: 50px;
+        }
+    </style>
+
+</head>
+
+<body onload="loadquestion()">
+
+
+
+    <div class="topico">
+
+        <div class="centerBar w3-padding-24">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
+
+                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></a>
+
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 09 – Deriva continental e tectônicas de placas. </h1>
+
+
+        <p><strong> Conteúdo:</strong>: Deriva continental, Tectônica de placas, isostasia, Correntes de Convecção,
+            tipos de falhas tectônicas.
+
+        </p>
+
+        <p><strong>Objetivo:</strong> : Entender os processos de separação dos continentes terrestres por meio da teoria
+            da deriva continental e tectônica de placas. </p>
+
+        <!-- <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button> -->
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p id="caixaNomeAluno">Digite seu nome</p>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button></p>
+
+
+        <button  id="buttonA" onclick="MostrarProximo(this);  this.style.display='none'">Iniciar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2 class="margemAcima"> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, conhecemos um pouco mais sobre a história do Planeta
+            Terra, sua formação através das eras geológicas e as características principais de suas camadas internas.
+        </p>
+
+        <p>Na aula de hoje, veremos a dinâmica da litosfera e como os continentes se movimentam através das placas
+            tectônicas.</p>
+
+        <p>Ao final, você será capaz de reconhecer como funciona a defesa de uma hipótese científica, os tipos de falhas
+            tectônicas e a influência do movimento de convecção do interior do Planeta na superfície terrestre.</p>
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Uma descoberta científica importante sobre o Planeta Terra </h2>
+
+
+        <p> Toda ciência é definida por seus métodos e seus objetos. O objeto da Geologia é o Planeta Terra e suas
+            dinâmicas. </p>
+
+        <p> Tudo começa com um problema a ser resolvido, um espírito com curiosidade sobre como os fenômenos funcionam,
+            muitas tentativas e erros e comprovações com base em fatos. </p>
+
+        <p>
+            No caso do movimento dos continentes, há pouco tempo, na década de 1960, <strong>a teoria das placas
+                tectônicas</strong>
+            revolucionou o conhecimento até então produzido sobre a Terra.
+        </p>
+
+        <p> Essa teoria descreve o movimento dos continentes, as forças responsáveis pela formação das montanhas,
+            vulcões e outros fenômenos relativos à dinâmica da litosfera. </p>
+
+        <p> Mas quando começou a construção dessa teoria? </p>
+
+
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Da observação do contorno dos continentes às primeiras hipóteses sobre o movimento das placas litosféricas
+        </h2>
+
+        <p>Hoje sabemos que a litosfera é composta por cerca de doze placas tectônicas, que estão em movimento,
+            deslocando-se, chocando-se ou deslizando-se umas sobre as outras na astenosfera, camada superior do Manto
+            terrestre. </p>
+
+        <p>A confirmação da hipótese da deriva continental demorou vários séculos. Provar que os continentes estão em
+            movimento não é uma tarefa fácil. </p>
+
+        <p>No final do século XVI, o cartógrafo Abraham Ortelius publicou o <em>Theatrum Orbis Terrarum</em> (Teatro do
+            Globo Terrestre), considerado o primeiro <span
+                onclick="Aparecer('imagem1','citacao1')"><mark>atlas</mark></span> moderno. </p>
+
+
+
+        <div class="area"><img id="imagem1" src="tp9f1.png" alt="tp9f1" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <span class="citacao" id="citacao1" style=display:none> Fonte: Wikipédia. </span>
+
+
+        <p> Os cientistas então já afirmavam que os contornos da América do Sul e da África possuíam um encaixo
+            perfeito, sugerindo que tivessem formado, no passado, um único continente. </p>
+
+        <p> No século XVIII Benjamim Franklin se intrigava com os fluidos abaixo da crosta terrestre e afirmava que a
+            superfície da Terra seria como uma casca capaz de ser quebrada pelos movimentos desses fluidos no qual
+            repousa. </p>
+
+
+        <p> No século XIX, o geólogo austríaco Eduard Suess defendeu a hipótese de que os continentes da porção Sul do
+            globo (meridional) já haviam formado um único continente, chamado de Gondwana. </p>
+
+
+        <p> Somente no início do século XX, um meteorologista alemão, Alfred Wegener, após ler um artigo sobre fósseis
+            semelhantes encontrado na África e na América do Sul, decidiu retomar a hipótese da Deriva Continental. Ele
+            publicou um livro chamado: “A origem dos continentes e oceanos” em 1913, no qual defende seus argumentos com
+            algumas <strong>evidências</strong>: </p>
+
+
+        <ul>
+
+            <li>O encaixe do litoral da África no contorno do litoral da América; (Evidência Morfológica). Os
+                continentes se encaixariam como em um quebra-cabeças, tanto na América do Sul e África, como na América
+                do Norte e Europa.</li>
+
+            <li>E a formação geológica e os tipos de rochas semelhantes também nesses dois continentes. (Evidência
+                Litológica). </li>
+
+        </ul>
+
+
+        <img id="imagem2" src="tp9f2.png" alt="tp9f2" class="w3-mobile">
+
+
+        <p class="citacao" id="citacao2">Fonte: Press (2006, p.48, adaptado). </p>
+
+        <ul>
+
+            <li>A ocorrência dos mesmos tipos de climas, nos dois continentes; (Evidência Paleoclimáticas). Os depósitos
+                relacionados as geleiras existiam há 300 milhões de anos e puderam ser encontradas na América do Sul,
+                África, Índia e Austrália. A existência de uma única geleira poderia explicar todos esses depósitos,
+                mesmo recifes de algas coralíneas, datados do Paleozoico, foram encontrados no Círculo Polar Ártico,
+                sendo que esses corais são peculiares do Equador.</li>
+
+            <li>A existência de fósseis de animais nos dois continentes (África e América); (Evidência Paleontológica).
+                A foto abaixo destaca o réptil Mesossauro, encontrado no sul do Brasil, (recentemente na cidade de Três
+                lagoas em Santa Catarina foi descoberto um exemplar), também foi encontrado na África. Mesmo se o
+                Mesossauro pudesse cruzar oceanos nadando, ele teria chegado em outros lugares, o que não ocorreu. Sendo
+                assim, isso sugere que os continentes estavam unidos.</li>
+
+
+        </ul>
+
+        <div class="area"><img id="imagem3" src="tp9f3.png" alt="tp9f3" class="w3-mobile">
+        </div>
+
+
+        <p class="citacao" id="citacao3"> Fonte: Press (2006, p.49). </p>
+
+
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+
+
+        <h2>Quais são as forças que movimentam os continentes? </h2>
+
+        <p> As evidências estudadas por Wegener o ajudou a provar que um dia existiu um supercontinente, que ele o
+            chamou Pangeia (do grego “todas as terras”).</p>
+
+        <p>Entretanto, o climatologista alemão não conseguiu convencer os cientistas sobre quais forças empurravam os
+            continentes. Após anos de debate, os físicos convenceram os geológicos de que as camadas da Terra eram muito
+            pesadas para que a deriva continental acontecesse. </p>
+
+        <p>Wegener faleceu em uma expedição na Groenlândia em 1930, antes que pudesse provar sua descoberta. Devido à
+            falta de tecnologia ele não conseguir explicar o que causava a fragmentação dos continentes. Ele chegou a
+            afirmar que os continentes eram arrastados pelas marés e pela força gravitacional da lua. Assim, sua
+            hipótese foi esquecida por muitos anos. </p>
+
+        <p>Um grande fato após a Segunda Guerra Mundial iria mudar essa história. Trabalhos com <span
+                onclick="this.innerHTML='sonares  (equipamento que mede distâncias através da emissão de ondas sônicas e ultrassônicas)'"><mark>sonares</mark></span>.
+            e o mapeamento do assoalho oceânico, sobretudo para procurar submarinos submersos e riquezas minerais,
+            permitiu a descoberta de vales, verdadeiras montanhas e fendas na crosta debaixo d’água, a chamada <span
+                onclick="Aparecer('imagem4','citacao4')"><mark> <strong>Dorsal Meso-oceânica</strong></mark></span>. Os
+            terremotos ocorriam próximos a essa fenda e um novo fundo oceânico se formava pela ascensão (elevação) de
+            uma nova crosta quente nessas fissuras. </p>
+
+
+
+        <div class="area"><img id="imagem4" src="tp9f4.png" alt="tp9f4" class="w3-mobile" style=display:none></div>
+
+
+        <p class="citacao" id="citacao4" style=display:none> Fonte: Pinterest. Dorsal Mesoatlântica. </p>
+
+
+        <p>Dois cientistas americanos Hess e Dietz propuseram em 1962 que a crosta no meio do atlântico era formada por
+            fendas (rifts) e explicou como os continentes poderiam se separar. Após algumas outras pesquisas,
+            descobriu-se que a crosta surgia em um local e era destruída ou fundida em outra parte do manto. As
+            respostas só podiam estar nas diferenças de temperaturas do Manto, ou seja, nas <strong>correntes de
+                convecção</strong>. No final da década de 1960, as evidências eram tão robustas que foram aceitas por
+            todos os geocientistas. </p>
+
+
+
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Correntes de convecção </h2>
+
+        <p> Nas regiões profundas do manto, as temperaturas são mais elevadas, o que provoca a ascendência dos materiais
+            em direção às áreas próximas da litosfera. Esses materiais ao chegarem perto da crosta, se resfriam e
+            mergulham novamente para o interior do manto. Essas <span
+                onclick="Aparecer('imagem5','citacao5')"><mark>correntes</mark></span> que movimentam lentamente as
+            placas tectônicas, as quais formam a crosta terrestre. </p>
+
+
+
+        <div class="area"><img id="imagem5" src="tp9f5.gif" alt="tp9f5" class="w3-mobile" style=display:none></div>
+
+        <p class="citacao" id="citacao5" style=display:none> </p>
+
+        <p> Nesse sentido, a Deriva Continental e a expansão do assoalho oceânico seriam uma consequência das correntes
+            de convecção. <span onclick="Aparecer('imagem6','citacao6')"><mark>Veja a ilustração abaixo: </mark></span>
+        </p>
+
+
+        <div class="area"><img id="imagem6" src="tp9f6.png" alt="tp9f6" class="w3-mobile" style=display:none></div>
+
+        <p class="citacao" id="citacao6" style=display:none> Fonte: Moreira e Sene (2016, p.115). </p>
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <div class="caixa">
+            <h4>Teste o seu conhecimento!</h4>
+        </div>
+
+        <h3>Por que Alfred Wegener foi esquecido e até mesmo ridicularizado pela comunidade científica no início do
+            século XX?</h3>
+
+        <button class="desativar1 area p4"
+            onclick=" RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">a)
+            Ele não seguiu o método científico e baseou seus estudos em outras formas de conhecimento.</button>
+
+        <button class="desativar1 area p4"
+            onclick=" RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">b)
+            Ele seguiu o método científico, mas não criou hipóteses válidas.</button>
+
+        <button class="desativar1 area p4"
+            onclick=" MostrarFrase('resp1','globinho1', 'desativar1', 'isso mesmo, as hipóteses de Wegener foram comprovadas anos depois','1'); this.style.backgroundColor='lightgreen'">c)
+            Ele não conseguiu provar suas hipóteses devido a falta de tecnologia na época.</button>
+
+
+
+
+        <span id="resp1"></span>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+
+
+
+        <h2>As Placas Tectônicas e seus limites </h2>
+
+        <p>A teoria das placas tectônicas surge para responder às questões deixadas pela teoria da deriva continental.
+            Hoje sabemos que a litosfera está fragmentada por placas e estas deslizam devido à movimentação das
+            correntes de convecção no interior da Terra. </p>
+
+        <p>O mapeamento do assoalho oceânico foi uma grande contribuição para o conhecimento sobre a superfície
+            terrestre. As placas são rígidas e flutuam sobre o manto. </p>
+
+        <p> A importância do estudo das placas tectônicas está relacionada, dentre outras coisas, à compreensão da
+            formação das altas cadeias montanhosas e dos abalos sísmicos (terremotos e maremotos, será visto nas
+            próximas aulas). Esses fenômenos estão ligados intimamente com o choque entre as <span
+                onclick="Aparecer('imagem6a','citacao6a')"><mark>placas</mark></span>.</p>
+
+
+
+
+        <div class="area"><img id="imagem6a" src="tp9f6a.png" alt="tp9f6a" class="w3-mobile" style=display:none>
+        </div>
+
+        <p class="citacao" id="citacao6a" style=display:none> Fonte:: VESENTINI (2013). </p>
+
+
+        <p>Há mais de 50 placas tectônicas, as principais são: </p>
+
+        <div class="w3-card-4 w3-yellow w3-padding-small">
+            <ul>
+                <li>Placa Euroasiática, predominantemente continental, apesar de incluir parte do Atlântico Norte;</li>
+                <li> Placa Africana, que inclui a África e parte do Atlântico Sul;
+                </li>
+                <li>Placa Norte-Americana, que abrange parte do Atlântico Norte e quase toda a América do Norte;</li>
+                <li>Placa Sul-Americana, que inclui a América do Sul e parte do Atlântico Sul;</li>
+                <li>Placa Antártica, que inclui o continente antártico e uma imensa área oceânica;</li>
+                <li>Placa Indo-Australiana, que abrange boa parte do oceano Índico e da Oceania;</li>
+                <li>Placa do Pacífico, predominantemente oceânica;</li>
+                <li>Placa de Nazca, a oeste da América do Sul,
+                    predominantemente oceânica.
+                </li>
+            </ul>
+
+
+        </div>
+        <p class="citacao">Fonte: VESENTINI (2013, p.217).</p>
+
+
+        <p>As maiores são as placas do Pacífico e a Norte-Americana. Há placas pequenas como a de Juan de Fuca,
+            encravada no noroeste dos Estados Unidos, assim como a Placa Anatoliana, que inclui a maior parte da
+            Turquia. </p>
+
+
+        <p>É nos limites entre as placas que ocorrem os principais fenômenos naturais da crosta, como terremotos,
+            vulcões, formação de montanhas, rifts, dentre outros, dependendo da interação entre os limites. As setas da
+            figura acima indicam o seu movimento e os limites podem ser: divergente, convergente e transformante. </p>
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <div class="caixa">
+            <h4>Teste o seu conhecimento!</h4>
+        </div>
+
+
+        <h2> Assinale todas as alternativas que satisfazem as principais evidências da hipótese da Deriva continental.
+        </h2>
+
+        <form id="check">
+            <input type="checkbox" id="r1" name="r1">
+            <label> O encaixe do litoral da África No contorno do litoral da América; (Evidência
+                Morfológica).</label><br><br>
+
+            <input type="checkbox" id="r2" name="r2">
+            <label> A descoberta da expansão do assoalho oceânico.</label><br><br>
+
+            <input type="checkbox" id="r3" name="r3">
+            <label> A existência de fósseis de animais nos dois continentes (África e América); (Evidência
+                Paleontológica).</label><br><br>
+
+            <input type="checkbox" id="r4" name="r4">
+            <label>Os estudos sobre as correntes de convecção no Manto Terrestre.</label><br><br>
+
+            <input type="checkbox" id="r5" name="r5">
+            <label>A ocorrência dos mesmos tipos de plantas e fósseis nos dois continentes, África e América; (Evidência
+                Paleoclimática)</label><br><br>
+
+            <input type="checkbox" id="r6" name="r6">
+            <label>A formação geológica e os tipos de rochas semelhantes também nesses dois continentes. (Evidência
+                Litológica).</label><br><br>
+
+
+
+
+        </form>
+
+        <button class="btnShow" id="buttoncheck1"
+            onclick="confereBox('acertou, parabéns', 'resp40','globinho40',)">Conferir</button>
+
+
+
+        <br><br><br><br>
+        <span id="resp40"></span>
+
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho40" style="display:none" alt="globinho40"
+                    width="64" height="64">
+            </p>
+        </div>
+
+        <!-- <button class="btnHide" id="buttoncheck2"
+            onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Os tipos de limites entre placas tectônicas </h2>
+
+        <h3> Limite divergente </h3>
+
+
+
+
+        <p>Nos limites divergentes as placas se afastam e um nova litosfera é criada. Pode ocorrer tanto entre placas
+            oceânicas como em placas continentais. </p>
+
+        <p>As placas oceânicas. Ocorre um movimento de <span onclick="Aparecer('imagem10','citacao10')"><mark>separação
+                    de placas </mark></span> nos oceanos, ao longo das cadeias montanhas
+            no fundo do mar, chamada de dorsal Mesoatlântica. A velocidade de afastamento é de 2,5 cm por ano ou 25 km
+            em 1 milhão de anos. </p>
+
+
+
+
+        <div class="area"><img id="imagem10" src="tp9f10.png" alt="tp9f10" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao10" style=display:none>Fonte: Press (2006, p.54). </p>
+
+
+        <p>Na <span onclick="Aparecer('imagem12','citacao12')"><mark> ilha da Islândia </mark></span>é possível observar
+            diretamente a separação da placa Norte-americana e a Eurasiana, uma
+            vez que esse país está situado na divisão dessas duas placas. </p>
+
+
+
+
+        <div class="area"><img id="imagem12" src="tp9f12.png" alt="tp9f12" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao12" style=display:none> Fonte: Press (2006, p.54). </p>
+
+
+        <p>O vale em forma de fratura na foto, indica que ele foi preenchido com rochas vulcânicas recentes, uma
+            evidência do afastamento dessas placas. </p>
+
+        <p> A cadeia de montanhas da Dorsal Mesoatlântica corta o Planeta de Norte a Sul.</p>
+
+
+
+
+
+        <p>As placas continentais. No <span onclick="Aparecer('imagem11','citacao11')"><mark>continente</mark></span>,
+            há separação por meio de <em>rift</em> (fratura) da crosta como no
+            Leste africano, formando vales, além do Mar vermelho e golfo da Califórnia. </p>
+
+
+
+
+
+        <div class="area"><img id="imagem11" src="tp9f11.png" alt="tp9f11" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao11" style=display:none> Fonte: Press (2006, p.54). </p>
+
+
+        <p>Segundo os geólogos esse é um <span onclick="Aparecer('imagem13','citacao13')"><mark>sinal</mark></span> de
+            que essa região vai se separar do continente africano daqui a dezenas de milhões de anos. </p>
+
+
+
+        <div class="area"><img id="imagem13" src="tp9f13.png" alt="tp9f13" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao13" style=display:none> </p>
+
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <h3> Limite convergente </h3>
+
+
+
+
+        <p>Nesse tipo de limite as placas colidem frontalmente, sendo que uma delas é destruída ou reciclada, retornando
+            ao manto. Podem ocorrer choques nos oceanos, continentes e entre continente e oceanos. </p>
+
+        <p> <span onclick="Aparecer('imagem14','citacao14')"><mark>Colisão entre duas placas oceânicas</mark></span>.
+            Uma placa mergulha sobre a outra em um processo chamado de <strong>subducção</strong>. A placa que está em
+            subducção afunda na astenosfera e é reciclada no manto. No local onde se produz esse fenômeno é criado uma
+            grande fossa de mar profunda, como as Fossas das Marianas no Oeste do Pacífico, onde o oceano atinge sua
+            maior profundidade de aproximadamente 10 km.</p>
+
+
+
+        <div class="area"><img id="imagem14" src="tp9f14.png" alt="tp9f14" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao14" style=display:none> Fonte: Press (2006, p.52). </p>
+
+
+        <p>Quando uma placa oceânica encontra uma placa continental, a placa oceânica entre um subducção e um cinturão
+            de montanhas vulcânico é formado na margem da placa continental. </p>
+
+        <p> Isso ocorre porque a placa continental é mais leve (menos densa) e não afunda facilmente. Ocorre um
+            enrugamento na borda da placa continental e surge um cinturão de montanhas paralelo à fossa de mar que se
+            formou. </p>
+
+        <p>Essa área é propensa terremotos devido ao choque entre essas placas. A costa oeste da América do Sul, em que
+            a placa Sul-Americana colide com a Placa de Nazca é uma zona de subducção. </p>
+
+
+        <p> O resultado disso é a formação da <span onclick="Aparecer('imagem15','citacao15')"><mark> cordilheira dos
+                    Andes</mark></span>
+            , uma grande cadeia de montanhas paralelas com vulcões ativos, como o Nevado del Ruiz na Colômbia, que
+            entrou em erupção em 1985 e deixou 25 mil mortos.</p>
+
+
+
+        <div class="area"><img id="imagem15" src="tp9f15.png" alt="tp9f15" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao15" style=display:none> Fonte: Press (2006, p.52). </p>
+        <p> </p>
+
+
+        <p> <span onclick="Aparecer('imagem16','citacao16')"><mark> Colisão entre duas placas
+                    continentais</mark></span>. Aqui não ocorre o processo de subducção pelo fato de as placas
+            continentais possuírem a mesma densidade. O resultado é o choque entre placas, como o da Placa Eurasiana e a
+            Placa Indiana, o qual cria uma crosta com uma espessura dupla, formando a cordilheira de montanhas mais alta
+            do mundo, o Himalaia e o planalto do Tibete. Nessas regiões os terremotos são violentos devido a tensão que
+            há entre as placas continentais.</p>
+
+
+
+        <div class="area"><img id="imagem16" src="tp9f16.png" alt="tp9f16" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao16" style=display:none>Fonte: Press (2006, p.52).</p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <h3> Limite transformante </h3>
+
+
+
+
+        <p> Nos limites transformantes as placas deslizam horizontalmente uma em relação à outra. A placa permanece
+            constante, não é nem produzida ou destruída.</p>
+
+        <p>A <span onclick="Aparecer('imagem17','citacao17')"><mark>falha de San Andreas</mark></span> (Santo André), na
+            Califórnia, EUA, é a mais famosa de todas. Há um deslocamento horizontal entre a Placa do Pacífico e a Placa
+            Norte-Americana. Grandes terremotos, como o que ocorreu em 1906 em São Francisco podem ocorrer nos limites
+            de placas desse tipo. </p>
+
+
+
+
+        <div class="area"><img id="imagem17" src="tp9f17.png" alt="tp9f17" class="w3-mobile" style=display:none>
+        </div>
+
+
+        <p class="citacao" id="citacao17" style=display:none> Fonte: Britannica (2008 p.23, adaptado). </p>
+
+        <p>Na realidade, os limites entre placas tectônicas podem combinar entre si. Por exemplo, a Placa
+            Norte-Americana é limitada a Leste pela Dorsal Mesoatlântica, que é uma área de limite divergente; a Oeste
+            pela falha de Santo André e outros limites transformantes; e, finalmente, a Noroeste, por zonas de
+            subducção. </p>
+
+
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <div class="caixa">
+            <h4>Teste suas habilidades!</h4>
+        </div>
+
+
+
+        <p>Leia o trecho da reportagem abaixo e análise a imagem para responder à questão: </p>
+
+        <div class="w3-center">
+            <h4><strong> Erupção na Islândia pode marcar o início de décadas de atividade vulcânica</strong></h4>
+        </div>
+
+        <p>A primeira erupção na península de Reykjanes após cerca de 800 anos não deve ameaçar nenhum centro
+            populacional, mas oferece uma oportunidade única para estudar os mistérios geológicos da região. </p>
+
+        <p>Após ser abalada por 15 meses de terremotos cada vez mais perturbadores, incluindo cerca de 50 mil nas
+            últimas três semanas, a península de Reykjanes, na Islândia, está finalmente passando pela erupção vulcânica
+            prevista por muitos geólogos. Depois de quase 800 anos sem uma erupção, os rios de lavas, previstos há um
+            bom tempo pelos especialistas, estão escorrendo por essa região no sudoeste do país. </p>
+
+        <p>Em 19 de março, por volta das 20h45 no horário local, o magma <span
+                onclick="this.innerHTML='supitou (vazou, escorreu)'"><mark>supitou</mark></span>. à superfície em um
+            vale próximo a Fagradalsfjall, uma montanha de topo plano na região de Geldingadalur, a quase 10 quilômetros
+            da cidade mais próxima. Respingos incandescentes brotavam de uma rachadura, queimando o solo enquanto
+            pequenas fontes de lava iluminavam a paisagem escura. </p>
+
+
+        <p>A erupção envolve uma quantidade relativamente pequena de lava confinada a uma série de vales, minimizando o
+            risco a qualquer centro populacional. Devido à grande fluidez desse tipo de rocha derretida, ao fato de que
+            os gases aprisionados escapam facilmente e de que a lava não está transbordando sobre a água ou o gelo, a
+            erupção não será muito explosiva, não expelirá uma nuvem de cinzas duradoura, tampouco arremessará blocos
+            vulcânicos consideráveis pela região. Cientistas acreditam que a erupção persistirá por mais alguns dias ou
+            semanas antes de desaparecer. <span class="citacao">Fonte: Erupção... (2021)</span>. </p>
+
+
+
+
+        <div class="area"><img id="imagem18" src="tp9f18.png" alt="Foto erupção Islândia" class="w3-mobile"></div>
+
+
+        <span class="citacao" id="citacao18"> Fonte https://www.
+            tecmundo.com.br
+            /ciencia/214171. </span>
+
+
+        <div class="w3-card-4 w3-yellow w3-margin">
+            <p class="w3-padding">Escreva em seu caderno quais as razões para a ocorrência desse fenômeno geológico na
+                Islândia e qual o tipo de processo tectônico envolvido. </p>
+        </div>
+
+
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>Qual a relação entre placas tectônicas e
+                vulcões?</strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> A maior parte da crosta terrestre foi formada pelo extravasamento do
+            magma através de vulcões. As placas são movidas, como já vimos, pela convecção do manto, isto é, da energia
+            vinda do intenso calor do interior da Terra. As placas que mergulham no manto alcançam uma grande
+            profundidade podendo chegar até próximo do núcleo. Isso indica a existência de todo um sistema integrado.
+            Com as correntes de convecção voltam para cima (ascendem) elas podem trazer consigo verdadeiros “jatos” do
+            manto que precisam sair por algum local. Esse local são os vulcões como no Havaí, Chile ou Islândia.</p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong> Como a expansão do assoalho oceânico comprovou
+                a teoria da tectônica de placas? </strong></p>
+
+        <p><span class="primeiraLetra">R:</span> A expansão do assoalho foi uma das evidências para a comprovação de uma
+            teoria maior relacionada a tectônica de placas. Ao investigar o fundo dos oceânicos foi descoberto que as
+            rochas próximas à
+            Dorsal eram mais jovens, enquanto as rochas mais afastadas da dorsal eram mais velhas. As rochas guardam
+            informações magnéticas do campo terrestre quando são formadas e de acordo com os minerais com o qual são
+            constituídas.
+
+        </p>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong> Existe placas tectônicas em outros
+                planetas?</strong></p>
+
+        <p><span class="primeiraLetra">R:</span> Um cientista da Universidade da Califórnia em Los Angeles (UCLA), nos
+            EUA, anunciou a descoberta de placas tectônicas em Marte. Os resultados estampam a capa da edição de agosto
+            da revista "Lithosphere". Por muitos anos, pensava-se que essas estruturas geológicas localizadas logo
+            abaixo da superfície do planeta – cujos movimentos por aqui resultam em terremotos, tsunamis e erupções
+            vulcânicas – fossem exclusivas da Terra. Ao todo, nosso globo tem sete placas principais e outras dezenas
+            menores, comparadas a uma "casca de ovo" rachada, que nos protege do magma contido no interior.</p>
+
+        <p> Segundo o professor de ciências espaciais e da Terra Um Yin, único autor do estudo, o planeta vermelho está
+            em um estágio primitivo desse fenômeno, o que pode ajudar a entender como ocorreu a formação desses blocos
+            na nossa litosfera, composta por duas camadas: a crosta terrestre e o manto superior. <span class="citacao">
+                Fonte: http://g1.globo.com
+                /ciencia-e-saude/noticia/2012/08/
+            </span>
+        </p>
+
+
+        <button class="btnShow" onclick="AbrirDivFinal();   this.style.display='none'">Desafio!</button>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+    <div id="divFinal">
+
+
+        <h2 class="w3-center"> Respondas às questões para finalizar sua lição:</h2>
+
+
+
+        <form id="myform" name="myform">
+
+
+            <div class="w3-container    w3-mobile w3-left-align">
+
+                <p class="w3-col" id="mylabel">Question</p>
+
+                <img class=" w3-margin-bottom w3-mobile" id="myIma" alt="" src="tp9f1.png">
+
+                <input class="w3-col w3-input w3-margin-bottom w3-hover-border-black  w3-left-align" type="button"
+                    id="btn1" value="option1" name="opt1" onclick="checkans(2,'btn1')">
+
+                <input class="w3-col w3-input w3-margin-bottom w3-hover-border-black w3-left-align" type="button"
+                    id="btn2" value="option2" name="opt2" onclick="checkans(3,'btn2')">
+
+                <input class="w3-col w3-input w3-margin-bottom w3-hover-border-black  w3-left-align" type="button"
+                    id="btn3" value="option3" name="opt3" onclick="checkans(4,'btn3')">
+
+                <input class=" w3-col w3-input w3-margin-bottom" type="button" id="proximo" value="Próximo"
+                    name="nxtbtn" onclick="changequestion()">
+
+
+            </div>
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+        <!-- <button class="btnHide" id="btnFinal" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnHide" id="btnFinal" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- <div class="w3-padding-48">
+
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div> -->
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+        <div class="area">
+
+
+            <div class="w3-row-padding">
+
+
+                <div class="postit-tp9 ">
+
+                    <a href="https://www.bbc.com/portuguese/internacional-43620442" target="_blank">
+                        A enorme fenda que pode separar o Chifre da África do resto do continente.
+                    </a>
+
+                </div>
+
+
+
+                <div class="postit-tp9 ">
+
+                    <a href="https://www.nationalgeographicbrasil.com/meio-ambiente/2021/03/erupcao-na-islandia-pode-marcar-o-inicio-de-decadas-de-atividade-vulcanica"
+                        target="_blank">
+                        Erupção na Islândia pode marcar o início de décadas de atividade vulcânica.
+                    </a>
+
+                </div>
+
+
+
+
+                <div class="postit-tp9 ">
+
+                    <a href="https://g1.globo.com/sc/santa-catarina/noticia/2020/05/19/fosseis-de-repteis-que-viveram-antes-dos-dinossauros-sao-descobertos-em-sc.ghtml"
+                        target="_blank">
+                        FÓSSEIS de répteis que viveram antes dos dinossauros são descobertos em SC.
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>BRITANNICA Illustrated Science Library. 2008.</p>
+
+
+        <p>PRESS, F.; GROTZINGER, J.; SIERVER, R.; JORDAN, T. H. <strong>Para entender a Terra</strong>. 4ª ed. Porto
+            Alegre: Bookam, 2006.</p>
+
+        <p>
+            SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil</strong>: espaço geográfico e
+            globalização: ensino
+            médio 3. ed. São Paulo: Scipione, 2016.
+        </p>
+
+        <p>
+            TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F. <strong>Decifrando a Terra.</strong> 2ª ed. São
+            Paulo: Companhia
+            Editora Nacional, 2009.
+        </p>
+
+        <p>VESENTINI, José William. <strong>Geografia</strong>: o mundo em transição. ensino médio. 2.ed. – São Paulo:
+            Ática, 2013.</p>
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+        // Função com apenas uma palavra
+
+        function confereBox(mensagem, frase2, globinho) {
+
+            r1 = document.getElementById("r1");
+            r2 = document.getElementById("r2");
+            r3 = document.getElementById("r3");
+            r4 = document.getElementById("r4");
+            r5 = document.getElementById("r5");
+            r6 = document.getElementById("r6");
+            frase = document.getElementById(frase2);
+            globo = document.getElementById(globinho);
+
+            if (r2.checked == true || r4.checked == true) {
+
+                frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
+                Play2("../audio2.mp3");
+            }
+
+            else if (r1.checked == true && r3.checked == true && r5.checked == true && r6.checked == true) {
+
+
+                nota += 1;
+                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+                globo.style.display = "block";
+                Play("../audio1.mp3");
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                EscondeButton("buttoncheck1");
+                MostraButton("buttoncheck2");
+
+
+            }
+
+
+            else {
+                frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
+                Play2("../audio2.mp3");
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+        i = 0;
+
+        myqs = [["1) Nesse tipo de limite de placas tectônicas, a crosta é destruída, enquanto uma placa mergulha sob a outra. Pode ocorrer uma colisão entre duas placas oceânicas e formar uma fossa no fundo do mar com cadeia de vulcões submarinos. Há também a colisão entre uma placa oceânica e uma continental, formando cadeias de montanhas como os Andes, além de abalos sísmicos e vulcanismos. E, finalmente, a colisão entre duas placas continentais como o Himalaia, com fortes terremotos associados. Trata-se do limite:", "tp9f8.png", "Transformante", "Divergente", "Convergente", "4"],
+
+        ["2) Esse conceito diz respeito ao equilíbrio nas camadas da Terra. Quando uma área da litosfera atinge o equilíbrio entre o peso da placa e a sua porção inserida na parte superior do manto (astenosfera), diz-se que essa região atingiu o equilíbrio ...", "", "tectônico", "isostático", "transformante", "3"],
+
+
+        ["3) Nas regiões profundas do manto, as temperaturas são mais elevadas, o que provoca a ascendência dos materiais em direção às áreas próximas da litosfera. Esses materiais ao chegarem perto da crosta, se resfriam e mergulham novamente para o interior do manto. Esse fenômeno é chamado de:", "", "Dorsal Mesoatlântica", "Correntes de convecção", "Isostasia", "3"],
+
+
+        ["4) Nesses limites de placas tectônicas, há um deslizamento horizontal de uma placa em relação à outra. A crosta não é destruída e nem produzida. Esses movimentos ocasionam forte atividade sísmica. A maior parte encontra-se nos oceanos, mas as mais conhecidas estão nos continentes, como a falha de San Andreas nos EUA. Trata-se do limite:", "tp9f9.png", "Transformante", "Divergente", "Convergente", "2"],
+
+        ["5) Nesses limites de placas tectônicas, uma nova crosta é formada. Ocorre um movimento de separação de placas nos oceanos, ao longo das cadeias montanhas no fundo do mar. Essas montanhas são chamadas de:", "tp9f7.png", "Movimento divergente", "Dorsal Mesoatlântica", "Placas tectônicas", "3"]
+        ];
+
+
+
+        function loadquestion() {
+
+
+
+            document.getElementById("mylabel").innerHTML = myqs[i][0];
+            document.getElementById("myIma").src = myqs[i][1];
+            myform.opt1.value = myqs[i][2];
+            myform.opt2.value = myqs[i][3];
+            myform.opt3.value = myqs[i][4];
+
+            document.getElementById("proximo").style.display = "none";
+
+
+
+            //document.getElementById("aviso").style.backgroundColor = "#fff";
+            //document.getElementById("aviso").innerHTML = "";
+
+        }
+
+
+
+        function changequestion() {
+            i = i + 1;
+
+
+
+            if (i >= myqs.length) {
+                MostraButton("btnFinal");
+                document.getElementById("proximo").style.display = "none";
+
+                return;
+            }
+
+
+
+            myform.opt1.disabled = false;
+            myform.opt2.disabled = false;
+            myform.opt3.disabled = false;
+
+            myform.opt1.style.backgroundColor = "lightgrey";
+            myform.opt2.style.backgroundColor = "lightgrey";
+            myform.opt3.style.backgroundColor = "lightgrey";
+
+            loadquestion();
+        }
+
+
+
+
+
+        function checkans(a, btn) {
+
+
+            ans = parseInt(myqs[i][5]);
+
+            if (ans == a) {
+
+                nota += 1;
+
+                document.getElementById(btn).style.backgroundColor = "#99ff99";
+                Play("../audio1.mp3");
+                document.getElementById("proximo").style.display = "block";
+
+                myform.opt1.disabled = true;
+                myform.opt2.disabled = true;
+                myform.opt3.disabled = true;
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+            else {
+                document.getElementById(btn).style.backgroundColor = "#ee4466";
+                Play("../audio2.mp3");
+                document.getElementById("proximo").style.display = "block";
+
+                myform.opt1.disabled = true;
+                myform.opt2.disabled = true;
+                myform.opt3.disabled = true;
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+
+        }
+
+
+        function AbrirDivFinal() {
+            document.getElementById("divFinal").style.display = "block";
+            loadquestion();
+        }
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                //addProgressBar();
+                //numButton();
+                ApagaButton();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

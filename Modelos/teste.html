@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tpAula02</title>
+
+
+
+  <!-- <button id="casa">Try it</button> -->
+
+
+
+
+
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    
+
+   <img id="casa1" src="icone2.png" alt="teste7"  width="330" height="120"> 
+
+   <br><br>
+   <img id="casa2" src="icone.png" alt="teste8"  width="330" height="320"> 
+
+   <img id="casa3" src="icone.png" alt="teste9"  width="330" height="320"> 
+
+   <img id="casa4" src="icone.png" alt="teste10"  width="330" height="320"> 
+
+
+
+   
+
+   <script>
+
+    
+   
+
+    
+    
+
+
+    class Car 
+    {
+      constructor(brand) {
+        this.carname = brand;
+      }
+      present() {
+        return "I have a " + this.carname;
+      }
+    }
+    
+    mycar = new Car("Ford");
+    
+    
+    //document.write( mycar.present());
+    console.log(mycar.present());
+
+    document.write("");
+    
+    
+   var foto1 =  document.getElementById("casa1").addEventListener("click", function() 
+    {   
+      Clicou1 = 1;
+      ComparaImagens();
+    });
+
+
+   var foto2 = document.getElementById("casa2").addEventListener("click", function() 
+    {
+      Clicou2 = 1;
+      ComparaImagens();
+    });
+
+
+   var foto3 = document.getElementById("casa3").addEventListener("click", function() 
+    {
+      Clicou1 = 2;
+      ComparaImagens();
+    });
+
+    var foto4 = document.getElementById("casa4").addEventListener("click", function() 
+    {
+      Clicou2 = 2;
+      ComparaImagens();
+    });
+    
+
+    function ComparaImagens()
+    {
+      if (Clicou1 == 1 && Clicou2 == 1 ) {
+        document.getElementById("demo4").innerHTML = "clicou na 1 e 2 ";
+        document.getElementById("casa1").style.display = "none";
+        document.getElementById("casa2").style.display = "none";
+        
+      }
+
+      else if (Clicou1 == 2 && Clicou2 == 2 ) {
+        document.getElementById("demo4").innerHTML = "clicou nas 3 e 4";
+        document.getElementById("casa3").style.display = "none";
+        document.getElementById("casa4").style.display = "none";
+        
+      }
+    }
+    
+    
+    
+    </script>
+    
+
+</body>
+
+
+</html>

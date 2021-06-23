@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p1Aula05</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+    <link rel="stylesheet" href="../../../estilos/questoes.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+
+    <script src="../../../estilos/javascript.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+
+
+
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+   
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+
+		p {
+			padding: 10px;
+			background-color: #fff;
+
+		}
+	</style>
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+    <!-- Navigation (Stays on Top) -->
+    <div class="w3-top w3-bar w3-black larguraBar">
+
+
+        <a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
+
+
+    </div>
+
+
+
+        <h1 class="h1">Questões aula 05 – Projeções cartográficas</h1>
+        <p>
+            <strong>Conteúdo</strong>: Projeções cilíndricas, cônicas e azimutais
+        </p>
+        <p>
+            <strong>Objetivo</strong>: Comparar os diferentes sistemas de projeções cartográficas
+        </p>
+    
+
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 01</p>
+
+            <p> (UESC) Os conhecimentos sobre projeções cartográficas e uso de mapas possibilitam afirmar:
+            </p>
+
+
+
+
+            <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a)
+                A projeção azimutal fornece uma visão eurocêntrica do mundo e, por isso, ela não é mais utilizada.</p>
+            <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b)
+                As distorções da representação, nas projeções cilíndricas, são maiores no Equador e menores nos polos.
+            </p>
+            <p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c)
+                A projeção de Peters é a única que não pretende privilegiar nenhum continente, porque ela reproduz
+                rigorosamente a realidade.</p>
+            <p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
+                A projeção cônica só pode ser utilizada para representar grandes regiões, porque as distorções são
+                pequenas entre os trópicos, não representando, portanto, a realidade das áreas mapeadas.</p>
+            <p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e)
+                As projeções cartográficas permitem que, na construção dos mapas temáticos, os meridianos e os paralelos
+                terrestres sejam transformados de uma realidade tridimensional para uma realidade bidimensional.</p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+
+            <p> <b>Comentário:</b></p>
+
+            <p>a) Incorreta – a projeção azimutal não pode ser considerada do tipo eurocêntrica, porque uma de suas
+                características é a de apresentar menores distorções no centro selecionado na representação, que pode
+                ser qualquer ponto da Terra.</p>
+
+            <p>b) Incorreta – nas projeções cilíndricas, a exemplo da Projeção de Mercator, as distorções são maiores
+                nos polos do que no Equador.</p>
+
+            <p>c) Incorreta – toda projeção cartográfica apresenta distorções. As distorções na Projeção de Peters
+                estão, principalmente, nas formas dos continentes, que aparentam estar mais “esticados”.</p>
+
+            <p>d) Incorreta – as áreas representadas na projeção cônica costumam ser menos distorcidas nos paralelos
+                centrais e mais distorcidas nas zonas periféricas do mapa. Sendo assim, seu uso é aconselhável em
+                pequenas regiões ou, no máximo, em algumas áreas continentais.</p>
+
+            <p>e) Correta – as projeções consistem justamente na transposição de algo tridimensional em algo
+                bidimensional.</p>
+
+
+        </div>
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 02</p>
+
+            <p>(Uni-FaceF-SP 2017) Observe um exemplo de produto cartográfico.</p>
+
+
+            <div class="area"><img src="p5q2.jpg" alt="p5q2" class="w3-mobile"></div>
+
+            <p class=" citacao">
+                (Www.worldmapper.org)
+            </p>
+
+
+            <p>É correto afirmar que a técnica utilizada no cartograma tem como objetivo</p>
+
+
+
+
+            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
+                demonstrar a dinâmica e a velocidade de transformação dos dados.</p>
+            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b)
+                oferecer a percepção imediata da proporção do fenômeno e do lugar onde ele ocorre</p>
+            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c)
+                questionar o senso comum que diminui a importância dos países subdesenvolvidos nas representações
+                cartográficas</p>
+            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d)
+                proporcionar uma dificuldade analítica ao leitor acerca da orientação espacial dos dados</p>
+            <p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
+                valorizar a expressão subjetiva do cartógrafo ao romper com os diferentes tipos de projeções</p>
+        </div>
+
+
+        <div class="comentarios">
+
+            <!-- <p> Comentário:</p> -->
+
+
+        </div>
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 03</p>
+
+            <p>(ENEM 2016) </p>
+
+            <div class="area">
+
+                <img src="p5q3a.jpg" alt="p5q2" class="w3-mobile" /><br>
+            </div>
+
+            <p>A ONU faz referência a uma projeção cartográfica em seu logotipo. A figura que ilustra o
+                modelo
+                dessa projeção é: </p>
+
+
+            <div class="area"><img src="p5q3b.jpg" alt="p5q2" class="w3-mobile"></div>
+
+            <p> Assinale a alternativa que corresponde a figura acima: </p>
+
+            <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a)
+                Letra A </p>
+            <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
+                Letra A </p>
+            <p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
+                Letra C </p>
+            <p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
+                Letra D </p>
+            <p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e)
+                Letra E </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> Comentário:</p>
+            <p> O símbolo da ONU – Organização das Nações Unidas é uma representação baseada na projeção azimutal do
+                globo, no qual o plano tangencia o globo no polo.
+                Resposta A.
+            </p>
+        </div>
+
+
+        <div class="campo w3-card-4">
+            <p class="p2">Questão 04</p>
+
+            <p>(ENEM 2016)</p>
+
+
+            <div class="area"><img src="p5q4.jpg" alt="p5q2" class="w3-mobile"></div>
+
+            <p>A projeção cartográfica do mapa configura-se como hegemônica desde a sua elaboração, no século
+                XVI. A
+                sua principal contribuição inovadora foi a.</p>
+
+
+
+
+
+            <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a)
+                redução comparativa das terras setentrionais.</p>
+            <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
+                manutenção da proporção real das áreas representadas</p>
+            <p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c)
+                consolidação das técnicas utilizadas nas cartas medievais. </p>
+            <p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d)
+                valorização dos continentes recém-descobertos pelas Grandes Navegações.</p>
+            <p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e)
+                adoção de um plano em que os paralelos fazem ângulos constantes com os meridianos.</p>
+
+        </div>
+
+
+        <div class="comentarios">
+            <p> Comentário: </p>
+            <p> Trata-se da projeção cilíndrica de Mercator, que mantém corretas as formas dos continentes, porém
+                distorce suas áreas, principalmente nas regiões de maiores latitudes.</p>
+
+            <p> a) Incorreta. Ocorre o contrário, o aumento das terras situadas ao norte ou setentrionais.</p>
+
+            <p> b) Incorreta. Ás áreas sofrem distorções (aumentam de tamanho), embora a seja uma projeção conforme,
+                isto é, a forma permanece proporcional (o traçado dos continentes).</p>
+
+            <p> c) Incorreta. Mercator rompeu e corrigiu que utilizavam mapas com técnicas medievais inspirados em
+                mundo
+                religioso com ensinamentos bíblicos.</p>
+
+            <p> d) Incorreta. A projeção de Mercator é conhecida por possuir um caráter eurocêntrico. Sua elaboração
+                aconteceu em um momento em que as expansões marítimas europeias estavam em seu clímax, mas não para
+                valorizar as terras descobertas e sim para explorá-las.</p>
+
+            <p> e) Correta. O mérito desta projeção foi o de dividir o planeta em 24 meridianos e 12 paralelos (os
+                mesmos elaborados para estabelecer os fusos horários), igualmente espaçados e distribuídos sobre a
+                camada terrestre.</p>
+
+        </div>
+
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 05</p>
+
+            <p>(Unicamp 2015) </p>
+
+            <div class="area"><img src="p5q5.jpg" alt="p5q2" class="w3-mobile"></div>
+
+
+            <p>A representação de uma esfera num plano estabelece um desafio técnico resolvido a partir de
+                distintas formas de projeção, cada uma delas adequada a um objetivo. Faça a correspondência entre
+                cada
+                um dos mapas e sua correta projeção.</p>
+
+
+
+
+            <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a">
+                a)
+                A, cônica; B, azimutal; C, cilíndrica.</p>
+            <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b">
+                b)
+                A, cilíndrica; B, cônica; C, azimutal.</p>
+            <p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c">
+                c)
+                A, azimutal; B, cilíndrica; C, cônica.</p>
+            <p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d">
+                d)
+                A, cilíndrica; B, azimutal; C, cônica.</p>
+
+        </div>
+
+        <div class="comentarios">
+            <p> Comentário: </p>
+
+            As projeções cilíndricas apresentam meridianos e paralelos perpendiculares (formando ângulos de 90°
+            entre si), em geral nestas projeções o tangenciamento entre o cilindro e o globo ocorrem próximos a
+            linha do equador planetário, fato este que determina menor distorção nesta região, enquanto nas
+            partes mais distantes do equador verificam-se distorções cada vez maiores.
+
+            <p>Os mapas cônicos possuem paralelos e meridianos com variações angulares entre si, tendo meridianos
+                radiais a partir dos polos e paralelos concêntricos porém vistos no mapa parcialmente. Por sua vez os
+                mapas azimutais são projeções que possuem tangentes ou secantes determinadas a partir de um centro
+                azimutal (ponto central), nestes mapas os meridianos são plenamente visíveis e cruzam-se nos polos
+                enquanto os paralelos são visivelmente concêntricos.</p>
+
+
+            <p> Vejamos:</p>
+
+
+            <div class="area"><img src="p5q5a.jpg" alt="p5q2" class="w3-mobile"></div>
+
+
+            <p>
+                A partir do esquema explicativo acima temos:
+                Mapa A – Cilíndrico; Mapa B – Cônico; Mapa C – Azimutal; Resposta correta alternativa (b) A,
+                cilíndrica;
+                B, cônica; C, azimutal.
+            </p>
+
+
+
+        </div>
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 06</p>
+
+            <p>(Unesp 2015) Analise as diferentes projeções cartográficas.</p>
+
+            <div class="area"><img src="p5q6.jpg" alt="p5q2" class="w3-mobile"></div>
+
+            <p>Considerando conhecimentos geográficos sobre projeções cartográficas, é correto afirmar que
+                elas
+            </p>
+
+
+
+
+            <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
+                a)
+                respeitam os mesmos graus de proporcionalidade, conformidade, equidistância e orientação, regras e
+                convenções que garantem rigor na representação do planeta.</p>
+            <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b">
+                b)
+                podem ser admitidas como representações fiéis da realidade, pois expressam de forma precisa e
+                rigorosa o
+                planeta como ele é.</p>
+            <p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c">
+                c)
+                trazem consigo diferentes formas de representação do planeta, buscando difundir ideologias e
+                determinadas visões de mundo.</p>
+            <p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d">
+                d)
+                se caracterizam pela objetividade e neutralidade, sem que fatores de ordem política, técnica ou
+                cultural
+                tenham influência sobre as formas de representação do planeta</p>
+            <p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e">
+                e)
+                são relações métricas entre a superfície do planeta e as áreas representadas no mapa, não
+                apresentando
+                distorções e deformações em relação à realidade.</p>
+        </div>
+
+        <div class="comentarios">
+
+            <p> Comentário: </p>
+            <p> a) Incorreta: As imagens apresentam projeções distintas, que contêm parâmetros cartográficos
+                próprios
+                (orientação, conformidade, proporcionalidade, equidistância), a fim de representar a superfície
+                terrestre segundo interesses de quem as elaborou.</p>
+
+            <p> b) Incorreta: Toda projeção cartográfica é uma representação parcial da realidade, pois determinados
+                aspectos - como forma e tamanho – podem ser priorizados em detrimento a outros. Dessa forma, é
+                impossível representar “de forma precisa e rigorosa o planeta como ele é”.</p>
+
+            <p> c) Correta: As projeções cartográficas auxiliam na transposição de elementos tridimensionais da
+                superfície terrestre para um plano bidimensional (mapa). No entanto, as transformações decorrentes
+                desse
+                processo distorcem parte da realidade, segundo determinadas preferências e elementos que se
+                pretendem
+                destacar por quem elaborou o mapa, gerando “visões de mundo” distintas, como se pode observar nas
+                projeções demonstradas.</p>
+
+            <p> d) Incorreta: Considerando o conteúdo ideológico que a utilização de diferentes projeções
+                cartográficas
+                pressupõe, não há como afirmar que as representações mostradas possuem neutralidade do ponto de
+                vista
+                político e cultural. Além disso, elas são afetadas também por fatores de ordem técnica.</p>
+
+            <p> e) Incorreta: Embora contenham relações métricas entre a superfície real e as áreas representadas a
+                partir da escala, as projeções contêm distorções e deformações, como exemplificado nas imagens 1
+                (Projeção de Mercator) que distorce as áreas e preserva as formas e 2 (Projeção de Peters) que
+                distorce
+                as formas e preserva as áreas.
+
+            </p>
+        </div>
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 07</p>
+
+            <p>(UEMG 2010) Analise as informações e as ilustrações seguintes:</p>
+            <p>“A transferência de uma imagem da superfície curva da esfera terrestre para o plano da carta
+                sempre produz deformações, isoladas ou conjuntas, de várias naturezas: na forma, em área, em
+                distâncias
+                e em ângulo. As projeções cartográficas foram desenvolvidas para tentar oferecer uma solução
+                conveniente
+                para essas dicotomias”</p>
+
+
+            <div class="area"><img src="p5q7.jpg" alt="p5q2" class="w3-mobile"></div>
+
+            <p class="citacao">
+                <small>BOCHICCHIO,Vincenzo Raffaele. Atlas Mundo Atual. Ed. Atual. 2003.</small>
+            </p>
+
+
+            <p>Considere os conceitos, a seguir, que relacionam as informações do texto com as ilustrações
+                1, 2
+                e 3, acima. Depois, assinale a alternativa que aponta a sequência correta dessa relação.</p>
+
+
+            <p>
+                () os meridianos convergem para os polos e os paralelos são arcos concêntricos situados a igual
+                distância
+                uns dos outros.
+            </p>
+
+            <p>
+                () a projeção deforma as superfícies nas altas latitudes, mantendo as baixas latitudes em forma e
+                dimensão
+                mais próximas do real.
+            </p>
+
+            <p>() a construção se organiza em volta de um ponto central chamado “centro de projeção”.</p>
+
+            <p>Está CORRETA a relação sequencial indicada em:</p>
+
+
+
+
+
+
+            <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">
+                a)
+                1 – 2 – 3</p>
+            <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
+                b)
+                2 – 3 – 1</p>
+            <p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c">
+                c)
+                3 – 1 – 2</p>
+            <p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d">
+                d)
+                3 – 2 – 1</p>
+            <p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e">
+                e)
+                2 – 1 - 3</p>
+        </div>
+
+        <div class="comentarios">
+            <!-- <p> Comentário: </p>
+           -->
+
+        </div>
+
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 08</p>
+
+            <p>(ENEM 2009)</p>
+
+            <div class="area"><img src="p5q8.jpg" alt="p5q2" class="w3-mobile"> </div>
+
+            <p class="citacao">
+                <small>TORRES-GARCÍA, J. Universalismo construtivo. Buenos Aires: Poseidón, 1941. (Com
+                    adaptações).</small>
+            </p>
+
+            <p>O desenho do artista uruguaio Joaquin Torres-García trabalha com uma representação diferente
+                da
+                usual da América Latina. Em artigo publicado em 1941, em que apresenta a imagem e trata do assunto,
+                Joaquin afirma:</p>
+
+
+
+            <div class="area">
+                <div class="w3-panel w3-light-grey ">
+                    <p class="w3-medium w3-serif ">
+                        <i>"Quem e com que interesse dita o que é o norte e o sul? Defendo a chamada Escola do Sul por
+                            que na realidade, nosso Norte é o Sul. Não deve haver norte, senão em oposição ao nosso sul.
+                            Por isso colocamos o mapa ao revés, desde já, e então teremos a justa ideia de nossa
+                            posição, e não como querem no resto do mundo. A ponta da América assinala insistentemente o
+                            sul, nosso norte"
+                        </i>
+                    </p>
+                </div>
+            </div>
+
+
+            <p>O referido autor, no texto e imagem acima,</p>
+
+            <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
+                a)
+                privilegiou a visão dos colonizadores da América</p>
+            <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b">
+                b)
+                questionou as noções eurocêntricas sobre o mundo.</p>
+            <p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
+                c)
+                resgatou a imagem da América como centro do mundo.</p>
+            <p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
+                d)
+                defendeu a Doutrina Monroe expressa no lema "América para os americanos".</p>
+            <p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
+                e)
+                propôs que o sul fosse chamado de norte e vice-versa.</p>
+        </div>
+
+        <div class="comentarios">
+            <p> Comentário: </p>
+            <p> Trata-se de questão que envolve a compreensão de texto nas variadas linguagens. Torres-Garcia
+                questiona,
+                em sua representação “ao revés”, o modelo de representação cartográfica da Terra, utilizado desde o
+                século XVI. Nesta, privilegia-se a visão eurocêntrica, ou seja, a Europa ocupa a porção superior e
+                central do mapa.</p>
+
+            <p> a) Incorreta. A cartografia dos colonizadores reproduziam sua visão a partir da Europa
+                (eurocêntrica).</p>
+
+            <p> b) Correta. Ao inverter a posição usual do mapa da América Latina, o autor chama atenção para a
+                possibilidade de diferentes visões de mundo, não somente a hegemônica (que domina as
+                demais).</p>
+
+            <p> c) Incorreta. O autor busca chamar à atenção para a posição atual da América no mundo e não para
+                resgatar nenhuma posição do passado, que aliás, foi denominado de “Novo Mundo” pelos
+                europeus.</p>
+
+
+            <p> d) Incorreta. A Doutrina Monroe surgiu nos Estados Unidos, em meados do século XIX, como uma
+                resposta à
+                suposta ameaça das nações europeias de invadir e recolonizar o continente americano. O lema dessa
+                doutrina era “América para os americanos” e, nela, os Estados Unidos posicionavam-se como o guardião
+                da
+                integridade territorial do continente, e não como propunha uma visão alternativa da cartografia
+                sul-americana.</p>
+
+            <p> e) Incorreta. Não se trata somente de denominar de sul ou de norte de forma literal. O autor busca,
+                dentre outras coisas, a valorização da cultura dos povos da América e sua verdadeira posição no
+                mundo.
+            </p>
+        </div>
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 09</p>
+
+            <p>(Unimontes-MG–2008) A partir da projeção dos meridianos e paralelos geográficos, a forma
+                cartográfica representada na figura é construída em:</p>
+
+            <div class="area"><img src="p5q9.jpg" alt="p5q2" class="w3-mobile"></div>
+
+
+
+            <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a">
+                a)
+                um cilindro tangente à superfície de referência, desenvolvendo, a seguir, o cilindro num plano.</p>
+            <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b">
+                b)
+                uma esfera tangente à superfície de referência, desenvolvendo, a seguir, o globo num plano.</p>
+            <p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c">
+                c)
+                um cone tangente à superfície de referência, desenvolvendo, a seguir, o cone num plano.</p>
+            <p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d">
+                d)
+                qualquer ponto da superfície de referência por um pedaço de papel num plano.</p>
+
+        </div>
+
+
+        <div class="comentarios">
+            <!-- <p> Comentário: </p> -->
+
+
+        </div>
+
+
+        <div class="campo w3-card-4">
+
+            <p class="p2">Questão 10</p>
+
+            <p>(UFES) As figuras a seguir mostram o mundo representado em projeções cartográficas
+                diferentes.
+            </p>
+
+            <div class="area"><img src="p5q10.jpg" alt="p5q2" class="w3-mobile"></div>
+
+            <p>Analisadas as figuras acima, é CORRETO afirmar que:</p>
+
+            <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a">
+                a) ambas as projeções são cilíndricas, sendo que a de Mercator é equivalente e a de Peters é
+                conforme.
+            </p>
+            <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b">
+                b) a projeção de Mercator conserva as áreas dos continentes e, por esse motivo, é chamada de
+                eurocêntrica.</p>
+            <p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c">
+                c) a projeção de Mercator é conforme, ou seja, conserva as formas dos continentes e é a mais
+                adequada
+                para a navegação marítima.</p>
+            <p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
+                d) a projeção de Peters é a mais adequada para a representação dos países do Terceiro Mundo, pois
+                mantém
+                as formas em proporção correta.</p>
+            <p class="bordaQuestoes" id="q10e"><input type="radio" required="required" name="pq10" value="e">
+                e) a projeção de Peters é equidistante, ou seja, mantém a proporcionalidade real nas medidas de
+                distâncias e ângulos.</p>
+        </div>
+
+
+        <div class="comentarios">
+            <!-- <p> Comentário: </p> -->
+
+
+        </div>
+
+
+
+
+
+    </form>
+
+
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+
+    <div class="area">
+        <img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+            height="200">
+    </div>
+
+    <p id="aviso"></p>
+
+
+
+    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+
+
+
+
+
+    <script>
+
+
+
+        function checar() {
+
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+            var pq4 = document.quiz.pq4.value;
+            var pq5 = document.quiz.pq5.value;
+            var pq6 = document.quiz.pq6.value;
+            var pq7 = document.quiz.pq7.value;
+            var pq8 = document.quiz.pq8.value;
+            var pq9 = document.quiz.pq9.value;
+            var pq10 = document.quiz.pq10.value;
+
+            var corretas = 0;
+
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "e") {
+                corretas++;
+                document.getElementById("q1e").style.backgroundColor = cor[0];
+            } else {
+
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById("q1c").style.backgroundColor = cor[1];
+                document.getElementById("q1d").style.backgroundColor = cor[1];
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+
+                document.getElementById("q1e").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+                document.getElementById("q2c").style.backgroundColor = cor[1];
+                document.getElementById("q2d").style.backgroundColor = cor[1];
+                document.getElementById("q2e").style.backgroundColor = cor[1];
+
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+            if (pq3 == "a") {
+                corretas++;
+                document.getElementById("q3a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+                document.getElementById("q3c").style.backgroundColor = cor[1];
+                document.getElementById("q3d").style.backgroundColor = cor[1];
+                document.getElementById("q3e").style.backgroundColor = cor[1];
+
+                document.getElementById("q3a").style.backgroundColor = cor[0];
+
+            }
+            if (pq4 == "e") {
+                corretas++;
+                document.getElementById("q4e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+                document.getElementById("q4c").style.backgroundColor = cor[1];
+                document.getElementById("q4d").style.backgroundColor = cor[1];
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+
+                document.getElementById("q4e").style.backgroundColor = cor[0];
+
+            }
+            if (pq5 == "b") {
+                corretas++;
+                document.getElementById("q5b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+                document.getElementById("q5c").style.backgroundColor = cor[1];
+                document.getElementById("q5d").style.backgroundColor = cor[1];
+
+
+                document.getElementById("q5b").style.backgroundColor = cor[0];
+
+            }
+            if (pq6 == "c") {
+                corretas++;
+                document.getElementById("q6c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+                document.getElementById("q6a").style.backgroundColor = cor[1];
+                document.getElementById("q6d").style.backgroundColor = cor[1];
+                document.getElementById("q6e").style.backgroundColor = cor[1];
+
+                document.getElementById("q6c").style.backgroundColor = cor[0];
+
+            }
+            if (pq7 == "d") {
+                corretas++;
+                document.getElementById("q7d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+                document.getElementById("q7c").style.backgroundColor = cor[1];
+                document.getElementById("q7a").style.backgroundColor = cor[1];
+                document.getElementById("q7e").style.backgroundColor = cor[1];
+
+                document.getElementById("q7d").style.backgroundColor = cor[0];
+
+            }
+            if (pq8 == "b") {
+                corretas++;
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+                document.getElementById("q8c").style.backgroundColor = cor[1];
+                document.getElementById("q8d").style.backgroundColor = cor[1];
+                document.getElementById("q8e").style.backgroundColor = cor[1];
+
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+
+            }
+            if (pq9 == "a") {
+                corretas++;
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+                document.getElementById("q9c").style.backgroundColor = cor[1];
+                document.getElementById("q9d").style.backgroundColor = cor[1];
+
+
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+
+            }
+            if (pq10 == "c") {
+                corretas++;
+                document.getElementById("q10c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+                document.getElementById("q10a").style.backgroundColor = cor[1];
+                document.getElementById("q10d").style.backgroundColor = cor[1];
+                document.getElementById("q10e").style.backgroundColor = cor[1];
+
+                document.getElementById("q10c").style.backgroundColor = cor[0];
+
+            }
+
+
+            corLenta();
+            classEscurecer();
+            comentarios();
+
+
+
+
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+            var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5 && corretas <= 7) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+
+
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+            document.getElementById("mensagem").style.display = 'block';
+            document.getElementById("imagem").style.display = 'block';
+
+
+
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

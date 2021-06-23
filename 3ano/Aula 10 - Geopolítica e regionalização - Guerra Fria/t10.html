@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none; border-radius: 35px ; padding: 0px; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(livro.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+.p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex; justify-content: center;}
+
+
+</style>
+
+</head>
+
+<body onload= "mudaQuest()">
+
+
+
+
+	<h1 id="h1"> Questões aula 10 - Geopolítica e regionalização I   </h1>
+  
+  
+	<p><b>Conteúdo:</b>  Ordem Bipolar; Guerra Fria; Imperialismo; Regionalização; OTAN;    </p>
+	
+	
+	<p><b>Objetivo:</b>  Comparar e compreender as diferentes formas de regionalização do mundo ao longo das últimas décadas. Destacar a importância das mudanças políticas e econômicas no que diz respeito ao uso de tais regionalizações. Descrever brevemente as ordens mundiais até o período da Guerra Fria.    </p>
+    
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p class ="p2">Questão 01</p>
+			
+		<p id="p3">   (2020) O espaço geográfico mundial no período da Guerra Fria (1945-1991) estava regionalizado em blocos de acordo com as condições socioeconômicas dos países integrantes e o sistema adotado por influência das superpotências. Desse nodo, o mundo estava regionalizado em:   </p>
+						
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) Norte (desenvolvido) e Sul (subdesenvolvido).</p>
+      
+		<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) Metrópoles e Colônias.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c">c) Primeiro Mundo, Segundo Mundo e Terceiro Mundo.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) Países Centrais e Países Periféricos.</p>
+		
+		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e) Países desenvolvidos e emergentes.</p>
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p class ="p2">Questão  02</p>
+			
+		<p id = "p3">   (ENEM 2019) A Declaração Universal dos Direitos Humanos, adotada e proclamada pela Assembleia Geral da ONU na Comentário: 217-A, de 10 de dezembro de 1948, foi um acontecimento histórico de grande relevância. Ao afirmar, pela primeira vez em escala planetária, o papel dos direitos humanos na convivência coletiva, pode ser considerada um evento inaugural de uma nova concepção de vida internacional.   </p>
+					
+		<p id = "citacao"><small>   LAFER, C. Declaração Universal dos Direitos Humanos (1948). In: MAGNOLI, D. (Org.). História da paz. São Paulo: Contexto, 2008. </small>	</p>
+		         
+		<p id = "p3">  A declaração citada no texto introduziu uma nova concepção nas relações internacionais ao possibilitar a:</p>
+        
+		<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) superação da soberania estatal.</p>
+       
+	   <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) defesa dos grupos vulneráveis.</p>
+		
+		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) redução da truculência belicista.</p>
+		
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) impunidade dos atos criminosos.</p>
+		
+		<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) inibição dos choques civilizacionais c) redução da truculência belicista.</p>
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> a) Incorreta. A soberania sobre os territórios ainda se constitui num atributo importante do Estado. A participação em acordos e organismos internacionais pode criar alguns limites para esse exercício do poder, mas a soberania ainda é um elemento marcante na definição de um Estado.</p>
+		
+		<p> b) Correta. A definição de direitos básicos a todo ser humano independentemente de variáveis como cor, sexo, opção religiosa e política, entre outras, constituiu um importante instrumento de defesa de grupos que sofrem perseguições em diferentes países, embora o exercício desses direitos não esteja assegurado em muitas dessas nações.</p>
+		
+		<p> c) Incorreta. A truculência belicista não foi reduzida com a Declaração Universal dos Direitos Humanos.</p>
+		
+		<p> d) Incorreta. As impunidades dos atos criminosos estão relacionadas a outros problemas, como a falta de estrutura adequada no sistema judiciário e nas instituições policiais, que propicia dificuldades na investigação, prisão e punição dos culpados. A questão da corrupção, presente em várias esferas do poder público, também favorece a impunidade.</p>
+		
+		<p> e) Incorreta. Confrontos dessa natureza ocorreram diversas vezes mesmo após a promulgação da Declaração dos Direitos Humanos. Tais confrontos, normalmente são pautados por disputas econômicas e territoriais e outras questões não abordadas pela Declaração.</p>
+				 
+    </div>
+	
+	
+	
+	
+
+    <div class="campo">
+		
+        <p class ="p2">Questão 03</p>
+			
+		<p id="p3">    (ENEM 2018)</p> 
+
+		<p id="p3"> TEXTO I</p>
+
+		<p id="p3">As fronteiras, ao mesmo tempo que se separam, unem a articulam, por elas passando discursos de legitimação da ordem social tanto quanto do conflito.</p>
+			
+		<p id="citacao"><small>  CUNHA, L. Terras lusitanas e gentes dos brasis: a nação e seu retrato literário. Revista Ciências Sociais, n. 2, 2009.  </small>	</p>
+			
+		<p id="p3"> TEXTO II</p>
+
+		<p id="p3">As últimas barreiras ao livre movimento de dinheiro e das mercadorias e informação que rendem dinheiro andam de mãos dadas com a pressão para cavar novos fossos e erigir novas muralhas que barrem o movimento daqueles que em consequência perdem, física ou espiritualmente, suas raízes.</p>
+					
+		<p id="citacao"><small>BAUMAN, Z. Globalização: as consequências humanas. Rio de Janeiro: Jorge Zahar; 1999.</small>	</p>
+    
+		<p id="p3"> A ressignificação contemporânea de ideia de fronteira compreende a:</p>
+	
+		<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) Liberação da circulação de pessoas.</p>
+       
+	    <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) Preponderância dos limites naturais.</p>
+		
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) Supressão dos obstáculos aduaneiros.</p>
+		
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) Desvalorização da noção de nacionalismo.</p>
+		
+		<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) Seletividade dos mecanismos segregadores.</p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> O texto aborda os conceitos de fronteiras e barreiras. O texto I trata da importância da fronteira como instrumento de união e articulação social. Já o texto II aborda a ambiguidade das barreiras que são delimitadas para assegurar a circulação do capital, porém são acentuadas quando segrega a sociedade, resultando em seletividade.</p>
+
+		<p>	a) Incorreta. O texto II diz que atualmente existe “a pressão para cavar novos fossos e erigir novas muralhas” capazes de impedir o deslocamento livre de pessoas.</p>
+
+		<p>	b) Incorreta. Nenhum dos textos apresentados faz referência a barreiras naturais, mas sim às fronteiras humanas, políticas, inerentes ao contexto de organização do espaço mundial fundamentado no estabelecimento de Estados-nações soberanos.</p>
+
+		<p>	c) Incorreta. Embora tal realidade esteja sendo um objetivo de muitos países desde a década de 1970 devido à maior liberalização do comércio internacional, ela não expressa a ressignificação da ideia de fronteira à qual os textos se referem: liberalização da circulação de bens, capital e informação e, ao mesmo tempo, imposição de “novos fossos” à circulação de pessoas.</p>
+
+		<p>	d) Incorreta. A referência à ideia de fronteira não abdica do nacionalismo, sendo este entendido como a ideologia que enaltece o Estado-nação e a lealdade às suas ações. Ao contrário, o texto I afirma que pelas fronteiras surgem “discursos de legitimação da ordem social”, aspecto importante para a manutenção da soberania dos Estados e influente no surgimento e manutenção de discursos nacionalistas.</p>
+
+		<p>	e) correta. A seletividade contida no conceito de fronteira atualmente reside na contradição em permitir maior fluxo de mercadorias, dinheiro e informação e impedir o livre deslocamento internacional de populações, sobretudo aquelas que se direcionam de países periféricos (pobres) para países centrais (ricos) devido a interesses econômicos (migração espontânea) ou para fugir de contextos adversos, como conflitos, epidemias e desastres naturais (migração forçada). Por isso, tal resposta expressa de fato o tema central dos dois textos.</p>
+
+  
+    </div>
+	
+	
+	
+	
+	
+
+	<div class="campo">
+		
+        <p class ="p2">Questão 04</p>
+			
+		<p id="p3">   (ENEM 2018) </p>
+
+		<p id="p3"> Os soviéticos tinham chegado a Cuba muito cedo na década de 1960, esgueirando-se pela fresta aberta pela imediata hostilidade norte-americana em relação ao processo social revolucionário. Durante três décadas os soviéticos mantiveram sua presença em Cuba com bases e ajuda militar, mas, sobretudo, com todo o apoio econômico que, como saberíamos anos mais tarde, mantinha o país à tona, embora nos deixasse em dívida com os irmãos soviéticos – e depois com seus herdeiros russos – por cifras que chegavam a US$ 32 bilhões. Ou seja, o que era oferecido em nome da solidariedade socialista tinha um preço definido. </p>
+ 			
+		<p id="citacao"><small>   PADURA, L. Cuba e os russos. Folha de São Paulo, 19 jul 2014 (adaptado).   </small>	</p>
+		          
+		<p id="p3">  O texto indica que durante a Guerra Fria as relações internas em um mesmo bloco foram marcadas pelo (a)</p> 
+      
+	   <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) busca da neutralidade política. </p>
+       
+	   <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) estímulo à competição comercial. </p>
+		
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) subordinação à potência hegemônica</p>
+		
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) elasticidade das fronteiras geográficas. </p>
+		
+		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e">e) compartilhamento de pesquisas científicas.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		 <p>	A Guerra Fria caracterizou-se pelo confronto entre duas superpotências, cada uma delas liderando seu próprio bloco. As relações existentes dentro deles pressupunham subordinação dos Estados   mais fracos para com as potências hegemônicas, o que podia gerar tensões e rupturas (como a China de Mao em relação à URSS e a França gaullista em relação aos</p>
+				
+		<p>	Estados Unidos).
+
+
+		 <p>a) Incorreta. O texto destaca a relação de dependência de Cuba em relação a URSS dentro do bloco soviético ao longo da época da Guerra Fria (1947-1991). Assim, não é possível afirmar que havia uma neutralidade política entre os dois países, uma vez que os cubanos tinham que seguir as determinações políticas da URSS, justamente para continuar sendo ajudada econômica e militarmente pela referida potência mundial.</p>
+				 
+		 <p>b) Incorreta. Não é possível afirmar que a relação de Cuba com a URSS fosse marcada pelo estímulo de competição comercial. Ao contrário, Cuba era completamente subordinada aos interesses ditados pelos soviéticos.</p>
+
+		 <p>c) Correta. Ao longo da fase da Guerra Fria (1947-1991), o mundo estava divido em dois blocos distintos. Um liderado pelos EUA, chamado de capitalista, e outro comandado pela URSS, conhecido como socialista. Dentro do bloco socialista, havia a hegemonia soviética e Cuba era completamente subordinada aos interesses daquela potência.</p>
+
+		 <p>d) Incorreta. O texto, ao destacar a época da Guerra Fria, enfatiza muito mais as fronteiras ideológicas daquele período histórico do que as efetivas fronteiras geográficas entre os países.</p>
+
+		 <p>e) Incorreta. Não há nenhuma menção no texto a qualquer compartilhamento de pesquisas científicas entre Cuba e URSS ao longo da época da Guerra Fria (1947-1991).</p>
+
+    </div>
+	
+	
+	
+	
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 05</p>
+			
+		<p id="p3">   (UPE 2018) Observe a imagem a seguir: </p>
+			
+		<img src="t10q5.jpg" alt="a" class="imagem" width="320" height="250">
+		
+		<p id="p3"> A charge aponta para o clima de rivalidade existente durante toda a Guerra Fria. Tem-se como consequência(s) sociopolítica (s) do fim dessa disputa</p>
+				           
+        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) o fim dos conflitos assimétricos e o estabelecimento de uma paz perpétua. </p>
+       
+	    <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) a construção de uma Nova Ordem Mundial estabelecida pela globalização. </p>
+		
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) o alvorecer de uma nova hegemonia mundial, agora advinda da Ásia com a China.</p>
+		
+		 <p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) a crise dos organismos multilaterais de cooperação e a falência dos blocos econômicos. </p>
+		
+		<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) a construção de novas áreas de contenção geopolíticas na América do Sul, como na Argentina</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+				
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 06</p>
+			
+		<p id="p3">   (ENEM 2016) A Guerra Fria foi, acima de tudo, um produto da heterogeneidade da organização interna e da prática internacional — e somente poderia ser encerrada pela obtenção de uma nova homogeneidade. O resultado disto foi que, enquanto os dois sistemas distintos existiram, o conflito da Guerra Fria estava destinado a continuar: a Guerra Fria não poderia terminar com o compromisso ou a convergência, mas somente com a prevalência de um destes sistemas sobre o outro. </p>
+					
+		<p id="citacao"><small>   HALLIDAY, F. Repensando as relações internacionais. Porto Alegre: EdUFRGS, 1999.  </small>	</p>
+		          
+		<p id="p3"> A caracterização da Guerra Fria apresentada pelo texto implica interpretá-la como um(a)</p>
+       
+	    <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) esforço de homogenização do sistema internacional negociado entre Estados Unidos e União Soviética.</p>
+       
+	   <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b">b) guerra, visando o estabelecimento de um renovado sistema social, híbrido de socialismo e capitalismo.</p>
+		
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) conflito intersistêmico em que países capitalistas e socialistas competiriam até o fim pelo poder de influência em escala mundial.</p>
+		
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) compromisso capitalista de transformar as sociedades homogêneas dos países socialistas em democracias liberais.</p>
+		
+		<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) enfrentamento bélico entre capitalismo e socialismo pela homogeneização social de suas respectivas áreas de influência política.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 07</p>
+					 
+		<p id="p3">(FMJ 2014) 1) estabilizou o “equilíbrio de poder” internacional, deslocando as esferas de choque para a oposição entre os dois sistemas, conformando os conflitos e rivalidades da política mundial; 2) forjou um novo sistema internacional, cuja lógica articulou as relações entre as nações; 3) constitui-se num conflito ideológico que, propagando-se através da mídia, atingiu culturalmente a sociedade e sua conduta.
+		
+		<p id="citacao"><small>   (L. Lothar C. Hein. www.historia.uff.br.) </small>	</p>
+		        
+			<p id="p3">	O fragmento faz referência:</p>
+        
+		<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) à Guerra Fria.</p>
+       
+	   <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) às origens da Primeira Guerra Mundial.</p>
+		
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) ao Entre Guerras.</p>
+		
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) ao avanço nazifascista.</p>
+		
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) à Descolonização da África e da Ásia.</p>
+
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 08</p>
+			
+		<p id="p3">   (ENEM 2013) O papel da Organização do Tratado do Atlântico Norte (Otan) alterou-se desde sua origem em 1949. A Otan é uma aliança militar que se funda sobre um tratado de segurança coletiva, o qual, por sua vez, indica a criação de uma organização internacional com o objetivo de manter a democracia, a paz e a segurança dos seus integrantes.</p>
+
+		<p id="p3"> No começo dos anos de 1990, em função dos conflitos nos Bálcãs, a Otan declarou que a instabilidade na Europa Central afetava diretamente a segurança dos seus membros. Foi então iniciada a primeira operação militar fora do território dos países-membros. Desde então ela expandiu sua área de interesse para África, Oriente Médio e Ásia.</p>
+  		
+		<p id="citacao"><small>	BERTAZZO, J. Atuação da Otan no Pós-Guerra Fria: implicações para a segurança nacional e para a ONU. Contexto Internacional, Rio de Janeiro, jan.-jun. 2010 (adaptado).</small>	</p>
+					
+		<p id="p3"> Os objetivos dessa organização, nos diferentes períodos descritos, são, respectivamente:</p>
+	           
+        <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) Financiar a indústria bélica – garantir atuação global.</p>
+       
+	    <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b">  b) Conter a expansão socialista – realizar ataques preventivos</p>
+		
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) Combater a ameaça soviética – promover auxílio humanitário.</p>
+		
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) Minimizar a influência estadunidense – apoiar organismos multilaterais.</p>
+		
+		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) Reconstruir o continente devastado – assegurar estabilidade geopolítica.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+			 
+	<div class="campo">
+		
+        <p class ="p2">Questão 09</p>
+			
+		<p id="p3">    (UFRJ 2013) Os mapas a seguir apresentam duas formas de regionalização do continente americano.  </p>
+			         	
+		<img src="t10q9.jpg" alt="a" class="imagem" width="320" height="200">
+      
+		<p id="p3"> Considerando que a regionalização do espaço geográfico se realiza a partir de diferentes critérios, a divisão regional desse continente representada no: </p>
+	   
+	   <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) mapa 2 está definida a partir de aspectos físico-ambientais.</p>
+        
+		<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b">b) mapa 1 está baseada em elementos político-territoriais.</p>
+		
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) mapa 1 está definida a partir de aspectos socioeconômicos.</p>
+		
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) mapa 2 está baseada em elementos histórico-culturais.</p>
+		
+		
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 10</p>
+			
+		<p id="p3">    (UFSCAR 2008) Observe o mapa. </p>
+ 
+		<img src="t10q10.jpg" alt="a" class="imagem" width="320" height="200">			
+				
+		<p id="p3"> A regionalização do mundo adotada nesse mapa corresponde a:</p>
+	
+          
+        <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a">  a) um espaço descontínuo baseado inteiramente nos fluxos econômicos e político-militares.</p>
+       
+	   <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b">b) um espaço contínuo baseado nos traços fisiográficos de cada área (relevo e clima, principalmente).</p>
+		
+		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c">c) um espaço descontínuo fundamentado nas relações de poder entre Estados.</p>
+		
+		<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) um espaço contínuo fundamentado em traços histórico-culturais e econômicos comuns a cada área.</p>
+		
+		<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) um espaço contínuo-descontínuo alicerçado na inovação tecnológica e nos recursos humanos de cada área.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+	
+	
+	<div class = "area">
+    <img src="" id="imagem" style="display:none" alt="" width = "280" height="200">
+	</div>
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	 
+	 
+	     
+	     
+</script>
+
+<script>
+ 
+	 function mudaQuest(){
+		var t = document.getElementsByClassName("p2");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.fontFamily = tipo[fonte];
+			
+		
+			} 
+		}
+		
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				 
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			//(pq1.includes("leite")||(pq1.includes("gato"))||(pq1.includes("pato")))
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                				
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "e") {
+                corretas++;
+                document.getElementById("q3e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "c") {
+                corretas++;
+                document.getElementById("q4c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4c").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "b") {
+                corretas++;
+                document.getElementById("q5b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "c") {
+                corretas++;
+                document.getElementById("q6c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6c").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "a") {
+                corretas++;
+                document.getElementById("q7a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "b") {
+                corretas++;
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "d") {
+                corretas++;
+                document.getElementById("q9d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q9d").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "d") {
+                corretas++;
+                document.getElementById("q10d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

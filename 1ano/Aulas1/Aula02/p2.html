@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p1Aula02</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+	</style>
+
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
+
+
+	</div>
+
+
+	<h1 class="h1"> Questões aula 02: Cartografia: representações do espaço geográfico, localização e coordenadas
+		geográficas.</h1>
+
+
+	<p class="p3">
+		<strong>Conteúdo:</strong> Introdução à Cartografia; Sistemas referenciais para localização espacial:
+		coordenadas
+		geográficas, representação da Terra.
+	</p>
+
+	<p class="p3">
+		<strong>Objetivo:</strong> Entender os movimentos da Terra e suas consequências para a vida no Planeta. Entender
+		o sistema
+		de coordenadas geográficas, aplicando-o à localização de pontos na superfície terrestre.
+	</p>
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+			<p class="p3">(ENEM 2019)</p>
+
+			<h3 class="w3-center p3"> Os moradores de Utqiagvik passaram dois meses quase totalmente na escuridão
+			</h3>
+
+			<p class="p3">Os habitantes desta pequena cidade no Alasca — o estado dos Estados Unidos mais ao norte — já
+				estão acostumados a longas noites sem ver a luz do dia. <br>Em 18 de novembro de 2018, seus pouco mais
+				de 4
+				mil habitantes viram o último pôr do sol do ano. A oportunidade seguinte para ver a luz do dia ocorreu
+				no dia 23 de janeiro de 2019, às 13 h 04 min (horário local).</p>
+
+
+			<p class="p3">O fenômeno descrito está relacionado ao fato de a cidade citada ter uma posição geográfica
+				condicionada pela</p>
+
+			<p class="citacao">
+				Disponível em: http://www.bbc.com. Acesso em: 16 maio 2019 (adaptado).
+			</p>
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" name="pq1" value="a"> a) continentalidade</p>
+			<p class="bordaQuestoes" id="q1b"><input type="radio" name="pq1" value="b"> b) maritimidade</p>
+			<p class="bordaQuestoes" id="q1c"><input type="radio" name="pq1" value="c"> c) longitude</p>
+			<p class="bordaQuestoes" id="q1d"><input type="radio" id="pq1" name="pq1" value="d"> d) latitude</p>
+			<p class="bordaQuestoes" id="q1e"><input type="radio" name="pq1" value="e"> e) altitude</p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> Comentário: </p>
+
+			<p> a) incorreta. A continentalidade não afeta o fotoperíodo e a cidade mencionada localiza-se próxima ao
+				litoral.</p>
+
+			<p> b) incorreta. A maritimidade afeta a pluviosidade e amplitude térmica de uma região, e não o
+				fotoperíodo.</p>
+
+			<p> c) incorreta. A longitude é a distância angular de um ponto da superfície terrestre ao meridiano de
+				Greenwich não apresenta relação com a duração do fotoperíodo.</p>
+
+			<p> d) correta. A latitude é a distância angular de qualquer ponto da superfície da Terra em relação à linha
+				do Equador, variando de 0° a 90° ao norte e ao sul, sendo o principal fator de influência desta cidade
+				do Alasca. Quanto maior a latitude menor a energia recebida e a duração do fotoperíodo durante o
+				inverno. Latitudes acima de 66°33' pertencem aos Círculos Polares, onde ocorre o fenômeno das "noites
+				polares", em que o período de penumbra pode variar de 24 horas até vários meses, dependendo da
+				latitude.</p>
+
+
+			<div class="area"><img src="p2q1.png" class="w3-mobile" alt="p2q1"></div>
+
+			<p> e) incorreta. A Altitude influencia a temperatura, umidade e pressão de um local, alterando sua
+				amplitude térmica, mas sem afetar o fotoperíodo.
+
+			</p>
+
+		</div>
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p class="p3">(Unicamp 2018) A figura a seguir exibe uma representação estilizada do mapa do Estado de São
+				Paulo. As linhas pontilhadas horizontais e verticais indicam intervalos iguais de longitude e latitude,
+				e o ponto preto representa a cidade de Campinas.
+			<p>
+
+
+			<div class="area"><img src="p2q2.png" class="w3-mobile" alt="p2q2"></div>
+
+
+			<p class="p3">
+				Considere que o Estado de São Paulo está, aproximadamente, entre as latitudes 20° e 25°Sul e entre as
+				longitudes 44° e 54°Oeste. A partir da representação acima, conclui-se que Campinas se localiza entre
+			</p>
+
+
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" name="pq2" value="a"> a) as latitudes 24º e
+				25º sul.</p>
+			<p class="bordaQuestoes" id="q2b"><input type="radio" name="pq2" value="b"> b) as latitudes 21º e
+				22º Sul.</p>
+			<p class="bordaQuestoes" id="q2c"><input type="radio" id="pq2" name="pq2" value="c"> c) as longitudes 46º e
+				48º Oeste</p>
+			<p class="bordaQuestoes" id="q2d"><input type="radio" name="pq2" value="d"> d) as longitudes 50º e
+				52º Oeste</p>
+
+		</div>
+
+
+		<div class="comentarios">
+
+
+			<p>Comentário:</p>
+
+			<p> Como o estado de São Paulo se localiza no Hemisfério Ocidental e no Hemisfério Sul, a longitude aumenta
+				de Leste para Oeste, sendo contadaa partir do Meridiano de Greenwich (0º); a latitude aumenta do Norte
+				(Equador, 0º) para o Sul. O mapa representa a localização aproximada do estado de São Paulo, entre as
+				latitudes 20° e 25° sul e longitude 44° e 54° oeste.</p>
+			<p> As linhas pontilhadas representam intervalos regulares de latitude e longitude. Sabendo-se que a
+				latitude aumenta em direção aos polos, a linha horizontal central representa aproximadamente 22.5° sul,
+				e Campinas está ao sul dessa linha.</p>
+			<p> Em relação à longitude, os intervalos regulares das linhas pontilhadas são de 2.5°. Como no hemisfério
+				ocidental a longitude aumenta em direção a oeste, conclui-se que a cidade de Campinas localiza-se entre
+				as linhas 46.5° e 49° oeste.</p>
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p class="p3">(IFSulDeMInas 2018) A localização precisa de qualquer ponto da superfície do planeta é
+				fornecida
+				pelas coordenadas geográficas, que resultaram do desenvolvimento de técnicas cartográficas para a
+				elaboração de mapas. São linhas imaginárias que foram traçadas com o objetivo de determinar a posição
+				correta dos diversos lugares do planeta. </p>
+
+			<p class="p3">
+				Os paralelos são linhas imaginárias traçadas sobre a superfície terrestre, que representam cada um dos
+				cortes horizontais; já os meridiano são cada um dos círculos máximos que cortam a terra em duas partes
+				iguais, que passam pelos polos norte e sul.
+			</p>
+
+
+
+			<div class="area"><img src="p2q3.png" class="w3-mobile" alt="p2q3"></div>
+
+
+
+			<p class="p3">
+				A partir dos dados, marque as opções com V para as VERDADEIRAS e com F para as FALSAS:</p>
+			<p class="p3"> () O ponto B é o que se localiza na parte mais austral do planeta.</p>
+			<p class="p3"> () Os pontos D e B estão localizados no Oceano Atlântico.</p>
+			<p class="p3"> () O ponto E apresenta as seguintes coordenadas: 40º de latitude norte e 120º de longitude
+				oeste.</p>
+			<p class="p3"> () O território brasileiro tem a maior parte de suas terras no hemisfério austral.</p>
+			<p class="p3"> () O ponto E é o que se encontra em maior grau no hemisfério oriental.
+				A sequência CORRETA será:
+			</p>
+
+
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" name="pq3" value="a"> a) V V V V V</p>
+			<p class="bordaQuestoes" id="q3b"><input type="radio" id="pq3" name="pq3" value="b"> b) V V F V V</p>
+			<p class="bordaQuestoes" id="q3c"><input type="radio" name="pq3" value="c"> c) F F F V V</p>
+			<p class="bordaQuestoes" id="q3d"><input type="radio" name="pq3" value="d"> d) V F V F V</p>
+			<p class="bordaQuestoes" id="q3e"><input type="radio" name="pq3" value="e"> e) V V V F V</p>
+	
+		</div>
+
+		<div class="comentarios">
+			<p>Comentário: </p>
+
+			<p>
+				Austral: do Latim meridionāle, relativo às regiões ou aos habitantes do Sul. Contrário: Boreal, relativo
+				às
+				regiões ou aos habitantes do norte ou setentrional.
+			</p>
+
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p class="p3">(UNCISAL 2017) Observe com atenção o desenho a seguir.
+
+				De acordo com o desenho, considerando que são 18 horas, se a bola for chutada do centro em direção aos
+				pontos A, B e C respectivamente, as direções percorridas serão:
+			</p>
+
+
+			<div class="area"><img src="p2q4.png" class="w3-mobile" alt="p2q4"></div>
+
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" id="pq4" name="pq4" value="a"> a) leste, norte,
+				noroeste</p>
+			<p class="bordaQuestoes" id="q4b"><input type="radio" name="pq4" value="b"> b) oeste, sul, sudeste
+			</p>
+			<p class="bordaQuestoes" id="q4c"><input type="radio" name="pq4" value="c"> c) leste, sul, sudoeste
+			</p>
+			<p class="bordaQuestoes" id="q4d"><input type="radio" name="pq4" value="d"> d) oeste, norte,
+				noroeste</p>
+			<p class="bordaQuestoes" id="q4e"><input type="radio" name="pq4" value="e"> e) sul, leste, noroeste
+			</p>
+		</div>
+
+		<div class="comentarios">
+
+			<p>Comentário: </p>
+			<p>
+				Observando a rosa dos ventos na figura, vemos que entre Norte e Leste se encontra o nordeste, entre
+				Norte e
+				Oeste se encontra o noroeste, entre Sul e Leste o Sudeste e entre Sul e Oeste o Sudoeste. O Sol sempre
+				nasce
+				ao Leste e se põe no Oeste, então, como são 18 horas, o Sol está se pondo na direção Oeste. Observando a
+				figura do enunciado, podemos ver que o ponto A está a Leste, o ponto B ao norte e o ponto C entre Norte
+				e
+				Oeste, ou Noroeste.
+			</p>
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 05</p>
+
+			<p class="p3">(Unicentro 2015) Observe a imagem a seguir. </p>
+
+			<div class="area">
+
+				<img src="p2q5.png" class="w3-mobile" alt="p2q5">
+
+			</div>
+
+
+			<p class="p3">
+				Relacione os pontos indicados no globo, na coluna da esquerda, com suas respectivas coordenadas
+				geográficas (latitude e longitude), na coluna da direita.
+			</p>
+			<table class="w3-table-all w3-centered">
+
+				<tr>
+					<td>(I) Ponto A </td>
+					<td>a) 60°N; 30°L</td>
+				</tr>
+
+				<tr>
+					<td>(II) Ponto B </td>
+					<td>b) 20°N; 0°</td>
+
+				</tr>
+
+				<tr>
+					<td>(III) Ponto C </td>
+					<td>c) 40°N; 80°O</td>
+
+				</tr>
+
+				<tr>
+					<td>(IV) Ponto D </td>
+					<td>d) 20°S; 60°L</td>
+
+				</tr>
+
+
+				<tr>
+					<td>(V) Ponto E </td>
+					<td> e) 10°S; 60°O</td>
+
+				</tr>
+
+
+			</table>
+
+
+			<p class="p3">Assinale a alternativa que contém a associação correta.</p>
+
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" name="pq5" value="a"> a) I-C, II-A, III-B,
+				IV-E, V-D. </p>
+			<p class="bordaQuestoes" id="q5b"><input type="radio" name="pq5" value="b"> b) I-C, II-E, III-A,
+				IV-D, V-B. </p>
+			<p class="bordaQuestoes" id="q5c"><input type="radio" name="pq5" value="c"> c) I-D, II-A, III-B,
+				IV-E, V-C</p>
+			<p class="bordaQuestoes" id="q5d"><input type="radio" id="pq5" name="pq5" value="d"> d) I-A, II-C, III-E,
+				IV-D, V-B. </p>
+			<p class="bordaQuestoes" id="q5e"><input type="radio" name="pq5" value="e"> e) I-D, II-C, III-E,
+				IV-B, V-A.</p>
+		</div>
+
+		<div class="comentarios">
+			<!-- <p>Comentário:</p> -->
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 06</p>
+
+			<p class="p3">(ENEM 2010) "Em casa que não entra Sol, entra médico.” Esse antigo ditado reforça a
+				importância
+				de, ao construirmos casas, darmos orientações adequadas aos dormitórios, de forma a garantir o máximo
+				conforto térmico e salubridade. Assim, confrontando casas construídas em Lisboa (ao norte do trópico de
+				Câncer) e em Curitiba (ao sul do trópico de Capricórnio), para garantir a necessária luz do Sol, as
+				janelas dos quartos não devem estar voltadas, respectivamente, para os pontos cardeais:</p>
+
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" id="pq6" name="pq6" value="a"> a) norte / sul.</p>
+			<p class="bordaQuestoes" id="q6b"><input type="radio" name="pq6" value="b"> b) sul / norte.</p>
+			<p class="bordaQuestoes" id="q6c"><input type="radio" name="pq6" value="c"> c) leste / oeste.</p>
+			<p class="bordaQuestoes" id="q6d"><input type="radio" name="pq6" value="d"> d) oeste / leste</p>
+			<p class="bordaQuestoes" id="q6e"><input type="radio" name="pq6" value="e"> e) oeste / oeste</p>
+		</div>
+
+		<div class="comentarios">
+
+			<p>Comentário: </p>
+
+			<p>a) Correta. A questão procura saber qual posição as janelas dos quartos não devem estar localizadas, fato
+				que dificultaria a incidência da luz solar nesses quartos. A posição norte no Hemisfério Norte se situa
+				distante do Equador, e no Hemisfério Sul, o quarto voltado para a posição Sul também ficaria em oposição
+				ao
+				Equador. Portanto, Norte/Sul é a resposta correta.</p>
+
+			<p> b) Incorreta. A questão demanda qual posição as janelas dos quartos não devem estar localizadas para que
+				a
+				luz solar seja garantida. A posição Sul no hemisfério Norte recebe maior incidência de luz solar, uma
+				vez
+				que essa posição vai em direção do Equador. O mesmo ocorre no hemisfério Sul, onde a posição Norte
+				recebe
+				luz de forma mais intensa. Portanto, essas posições Sul/Norte garantem a luz solar necessária.</p>
+
+			<p> c) Incorreta. Assim como o Sol nasce ao Leste e se põem no Oeste, as janelas localizadas nessa posição
+				recebem luz, naturalmente, em algum período do dia.</p>
+
+			<p> d) Incorreta. Tal como na letra c, as janelas localizadas nessa posição recebem luz, naturalmente, em
+				algum
+				período do dia.</p>
+
+			<p> e) Incorreta. Tal como na letra c e d, as janelas localizadas nessa posição recebem luz, naturalmente,
+				em
+				algum período do dia.</p>
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 07</p>
+
+			<p class="p3">(UERJ 2009) Se uma imagem vale mais do que mil palavras, um mapa pode valer um milhão – mas
+				cuidado. Todos os mapas distorcem a realidade. (…) Todos os cartógrafos procuram retratar o complexo
+				mundo tridimensional em uma folha de papel ou em uma televisão ou tela de vídeo. Em resumo, o autor
+				avisa, todos os mapas precisam contar mentirinhas.</p>
+
+
+
+			<div class="area"><img src="p2q7.png" class="w3-mobile" alt="p2q6"></div>
+
+
+			<p class="citacao">
+				MARK MONMONIER Traduzido de How to lie with maps. Chicago/London: www.nationalgeographic.com The
+				University of Chicago Press, 1996.
+			</p>
+
+			<p class="p3">Observe o planisfério acima, considerando as ressalvas presentes no texto.</p>
+
+			<p class="p3">
+				Para deslocar-se sequencialmente, sem interrupções, pelos pontos A, B, C e D, percorrendo a menor
+				distância
+				física possível em rotas por via aérea, as direções aproximadas a serem seguidas seriam:
+			</p>
+
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" id="pq7" name="pq7" value="a">a) Leste – Norte – Oeste
+			</p>
+			<p class="bordaQuestoes" id="q7b"><input type="radio" name="pq7" value="b"> b) Oeste – Norte –
+				Leste</p>
+			<p class="bordaQuestoes" id="q7c"><input type="radio" name="pq7" value="c"> c) Leste – Noroeste –
+				Leste</p>
+			<p class="bordaQuestoes" id="q7d"><input type="radio" name="pq7" value="d">d) Oeste – Noroeste –
+				Oeste</p>
+
+		</div>
+
+		<div class="comentarios">
+
+			<p>Comentário: </p>
+
+			<p> a) Correta. O texto de Mark Monmonier constitui uma advertência às distorções da realidade que
+				necessariamente ocorrem nas representações em mapas. Considerando essa informação e conhecimentos
+				prévios de
+				cartografia, é possível orientar-se corretamente entre os pontos assinalados no planisfério,
+				deslocando-se
+				pela menor distância possível da seguinte forma: do ponto A ao ponto B, deve-se seguir para o leste, uma
+				vez
+				que a Terra é uma esfera e atravessar o Oceano Pacífico é o menor caminho para ir do Japão à Costa Oeste
+				norte-americana; do ponto B ao ponto C, no norte canadense, a direção correta é a norte, seguindo a
+				linha do
+				meridiano que passa entre os dois pontos e que converge para o Pólo Norte; do ponto C ao ponto D, pela
+				direção oeste, apenas o Estreito de Bering separa o continente americano do asiático.</p>
+
+			<p> b) Esse caminho seria o de maior distância possível, contrariando o que solicita a questão.</p>
+
+			<p> c) Incorreta. Embora a primeira parte à Leste esteja correta, no segundo deslocamento (B para C) não é
+				possível se deslocar a Noroeste, uma vez que caso fosse traçado um linha reta na vertical entre esses
+				dois
+				pontos, não haveria um avanço para o lado Oeste (esquerda).</p>
+
+			<p> d) Incorreta. Conforme questão b e c, não seria possível atingir o que demanda a questão.</p>
+
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 08</p>
+
+			<p class="p3">(ENEM 2005) Leia o texto abaixo.
+
+				O jardim de caminhos que se bifurcam (....) Uma lâmpada aclarava a plataforma, mas os rostos dos meninos
+				ficavam na sombra. Um me perguntou: O senhor vai à casa do Dr. Stephen Albert? Sem aguardar resposta,
+				outro disse: A casa fica longe daqui, mas o senhor não se perderá se tomar esse caminho à esquerda e se
+				em cada encruzilhada do caminho dobrar à esquerda.</p>
+
+
+
+			<p class="citacao">
+				(Adaptado. Borges, J. Ficções. Rio de Janeiro: Globo, 1997. p.96.)
+			</p>
+
+
+			<p class="p3">Quanto à cena descrita acima, considere que:</p>
+
+			<p class="p3"> I - o sol nasce à direita dos meninos</p>
+
+			<p class="p3"> II - o senhor seguiu o conselho dos meninos, tendo encontrado duas encruzilhadas até a casa.
+			</p>
+
+			<p class="p3"> Concluiu-se que o senhor caminhou, respectivamente, nos sentidos</p>
+
+
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" id="pq8" name="pq8" value="a"> a) oeste, sul e leste.
+			</p>
+			<p class="bordaQuestoes" id="q8b"><input type="radio" name="pq8" value="b"> b) leste, sul e oeste.
+			</p>
+			<p class="bordaQuestoes" id="q8c"><input type="radio" name="pq8" value="c"> c) leste, norte e oeste
+			</p>
+			<p class="bordaQuestoes" id="q8d"><input type="radio" name="pq8" value="d"> d) leste, norte e
+				oeste.</p>
+			<p class="bordaQuestoes" id="q8e"><input type="radio" name="pq8" value="e"> e) leste, norte e sul.
+			</p>
+		</div>
+
+		<div class="comentarios">
+
+			<p>Comentário:</p>
+
+			<p>
+				Sabendo que o Sol nasce à direita (leste) e o senhor tomou a direção à esquerda, repetindo esta opção
+				outras
+				duas vezes, conclui-se que partiu em direção oeste e, nas encruzilhadas seguintes, tomou,
+				respectivamente,
+				as direções sul e leste.
+			</p>
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 09</p>
+
+			<p class="p3">(ENEM 2004) Um leitor encontra o seguinte anúncio entre os classificados de um jornal: (use
+				escala para resolver)</p>
+
+
+
+			<div class="area"> <img src="p2q9a.png" class="w3-mobile" alt="p2q7"></div>
+
+
+
+			<p class="p3">Interessado no terreno, o leitor vai ao endereço indicado e, lá chegando, observa um painel
+				com a
+				planta a seguir, onde estavam destacados os terrenos ainda não vendidos, numerados de I a V:</p>
+			<br />
+			<div class="area"> <img src="p2q9b.png" class="w3-mobile" alt="p2q19"></div>
+			<br />
+
+			<p class="p3">Considerando as informações do jornal, é possível afirmar que o terreno anunciado é o:</p>
+
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" name="pq9" value="a"> a) I</p>
+			<p class="bordaQuestoes" id="q9b"><input type="radio" name="pq9" value="b"> b) II</p>
+			<p class="bordaQuestoes" id="q9c"><input type="radio" name="pq9" value="c"> c) III</p>
+			<p class="bordaQuestoes" id="q9d"><input type="radio" id="pq9" name="pq9" value="d"> d) IV</p>
+			<p class="bordaQuestoes" id="q9e"><input type="radio" name="pq9" value="e"> e) V</p>
+
+		</div>
+
+		<div class="comentarios">
+
+			<p>Comentário: </p>
+
+			<p>
+				Dadas as informações do mapa e do anúncio, os únicos terrenos com 200 m2 são III e IV. Contudo, apenas o
+				terreno IV recebe o sol de frente no período da manhã, pois tem sua frente voltada para o leste.
+			</p>
+
+		</div>
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 10</p>
+
+			<p class="p3">(ENEM 2000) Em certa cidade, algumas de suas principais vias têm a designação “radial" ou
+				“perimetral", acrescentando-se ao nome da via uma referência ao ponto cardeal
+				correspondente.</p>
+
+			<p class="p3"> As ruas 1 e 2 estão indicadas no esquema abaixo, em que não estão explicitados os pontos
+				cardeais. </p>
+
+			<div class="area"><img src="p2q10.png" class="w3-mobile" alt="p2q10"></div>
+
+
+
+
+			<p class="p3"> Os nomes corretos das vias 1 e 2 podem, respectivamente, ser:
+			</p>
+
+
+
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" name="pq10" value="a"> a) perimetral sul,
+				radial leste.</p>
+			<p class="bordaQuestoes" id="q10b"><input type="radio" id="pq10" name="pq10" value="b"> b) perimetral sul,
+				radial oeste.</p>
+			<p class="bordaQuestoes" id="q10c"><input type="radio" name="pq10" value="c"> c) perimetral norte,
+				radial oeste.</p>
+			<p class="bordaQuestoes" id="q10d"><input type="radio" name="pq10" value="d"> d) radial sul,
+				perimetral norte.</p>
+			<p class="bordaQuestoes" id="q10e"><input type="radio" name="pq10" value="e"> e) radial sul,
+				perimetral oeste</p>
+		</div>
+
+		<div class="comentarios">
+
+			Comentário: <br> <br>
+
+			A terminologia perimetral vem de perímetro, que corresponde à medida do que está em volta. Dessa forma, a
+			via indicada por 1 é uma perimetral.
+			Radial, vem de raio (distância do centro a qualquer ponto da circunferência); dessa forma, a via indicada
+			por 2 é uma radial.<br />
+			Se você está de frente para o norte, seu braço direito aponta para o leste. Da mesma forma, se você está de
+			frente para o sul, seu braço direito aponta para oeste. Seguindo esse raciocínio, o nome das ruas está
+			corretamente indicado pela letra B.
+		</div>
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+
+
+
+
+
+
+	<script>
+
+
+
+
+		function checar() {
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			if (pq1 == "d") {
+				corretas++;
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq2 == "c") {
+				corretas++;
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+
+
+			}
+			if (pq3 == "b") {
+				corretas++;
+				document.getElementById("q3b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+
+				document.getElementById("q3b").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "a") {
+				corretas++;
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "d") {
+				corretas++;
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "a") {
+				corretas++;
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "a") {
+				corretas++;
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+
+			}
+			if (pq8 == "a") {
+				corretas++;
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "d") {
+				corretas++;
+				document.getElementById("q9d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+
+				document.getElementById("q9d").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "b") {
+				corretas++;
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+			}
+
+			corLenta();
+			classEscurecer();
+			comentarios()
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			document.getElementById("aviso").style.display = "none";
+
+
+
+
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

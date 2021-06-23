@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none; border-radius: 35px ; padding: 0px; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(livro.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+.p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex; justify-content: center;}
+
+
+</style>
+
+</head>
+
+<body onload= "mudaQuest()">
+
+
+
+
+	<h1 id="h1">   Questões aula 16 – O Comércio mundial    </h1>
+  
+  
+	<p><b>Conteúdo:</b>  : Blocos comerciais; Organização Mundial do Comércio; Balança Comercial;   </p>
+	
+	
+	<p><b>Objetivo:</b>  Relacionar as mudanças no comércio internacional no atual período da globalização.  </p>
+    
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p class ="p2">Questão 01</p>
+			
+		<p id="p3">   (2020) Em relação à formação de blocos comerciais no atual período da globalização, assinale a alternativa que correlaciona o tipo de associação com sua definição:</p>
+
+		<p id="p3">  1. Áreas de livre comércio. 
+					
+		<p id="p3"> 2. Mercados comuns. 
+					
+		<p id="p3"> 3. Agrupamentos comerciais. 
+
+		<p id="p3"> () São associações que buscam colocar em comum todos os recursos econômicos eliminam as barreiras entre os membros, estabelecem barreiras exteriores e desenvolvem programas internos de cooperação econômica e financeira. São exemplos a União Europeia (UE) e o Mercado Comum do Sul (Mercosul).</p>
+
+		<p id="p3"> () São associações que eliminam barreiras entre os membros, porém não existe maior cooperação económica. Um exemplo é o Nafta (TLC), que agrupa o Canadá, os Estados Unidos e o México.</p> 
+
+		<p id="p3">() São associações econômicas para o comércio de um produto. E o caso da Organização dos Países Exportadores de Petróleo (Opep), que agrupa os principais paises produtores de petróleo, entre os cinco países originais: Arábia Saudita, Irã, Iraque, Kuwait e Venezuela.</p>
+		
+		<img src="p1q1.jpg" alt="" class="imagem" width="320" height="260">
+		  
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a">a) 1-2-3.</p>
+      
+	  <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b">b) 3-2-1.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c">c) 2-1-3.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) 2-3-1.</p>
+		
+	
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p class ="p2">Questão  02</p>
+			
+		<p id = "p3">   (FMJ 2018) Com o advento da globalização, o comércio mundial estabeleceu o chamado capital especulativo, que é caracterizado.</p>
+						          
+        <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a">a) pela obtenção de lucro com a comercialização de moedas e a flutuação de seu valor.</p>
+       
+	   <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b">b) pela concessão de empréstimos que assegurem a estabilidade e o avanço do comércio.</p>
+		
+		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c">c) pelo investimento aplicado em unidades produtivas e na compra de equipamentos.</p>
+		
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) pela adoção de tarifas alfandegárias para regular e equalizar os mercados.</p>
+		
+		<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) pelo poder aquisitivo calculado a longo prazo perante crises e avanços econômicos. </p>
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	
+
+    <div class="campo">
+		
+        <p class ="p2">Questão 03</p>
+			
+		<p id="p3"> (ENEM 2017) O comércio soube extrair um bom proveito da interatividade própria do meio tecnológico. A possibilidade de se obter um alto desenho do perfil de interesses do usuário, que deverá levar às últimas consequências o princípio da oferta como isca para o desejo consumista, foi o principal deles.  </p>
+		
+		<p id="citacao"><small>  SANTAELLA, L. Culturas e artes do pós-humano: da cultura das minhas à cibercultura. São Paulo; Paulus, 2003 (adaptado).  </small>	</p>
+		           
+		<p id="p3">Do ponto de vista comercial, o avanço das novas tecnologias, indicado no texto, está associado à:</p> 
+
+        <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) atuação dos consumidores como fiscalizadores da produção</p>
+        
+		<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) exigência de consumidores conscientes de seus direitos. </p>
+		
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) relação direta entre fabricantes e consumidores. </p>
+		
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d">d) individualização das mensagens publicitárias. </p>
+		
+		<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) manutenção das preferências de consumo.</p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> A interatividade tecnológica permite ao comércio antecipar-se às demandas do mercado adequado as mensagens publicitárias às aspirações do mercado consumidor.  Portanto a tecnologia a serviço dos agentes do   mercado viabilizam praticamente    a personalização    ou   individualização das mensagens publicitárias.</p>
+
+		<p> a) Incorreta. Não é possível inferir a partir do texto que o avanço da tecnologia estaria associado a atuação dos consumidores como fiscalizadores da produção. Fato é que apesar de alguns mecanismos criados com desenvolvimento da tecnologia permitirem que tenhamos acesso às informações acerca do que acontece nas etapas de produção (exploração da mão de obra e degradação ambiental), os consumidores não possuem ferramentas para fiscalizar diretamente a produção, papel praticamente restrito às instâncias governamentais.</p>
+
+		<p> b) Incorreta. É de fundamental importância que os consumidores tenham conhecimento dos seus direitos, porém, o avanço da tecnologia não está associado a exigência de consumidores conscientes.</p>
+
+		<p> c) Incorreta. A tecnologia criou um grande distanciamento entre consumidores e fabricantes. O desenvolvimento dos meios de transporte e das telecomunicações permitiu a flexibilização da produção industrial, deste modo as fábricas encontram-se espalhadas pelo mundo, mantendo suas sedes em países desenvolvidos e implantando filiais nos países periféricos.</p>
+
+		<p> d) Correta. O texto, apesar de ser de 2003, é certeiro em afirmar que o mercado se valeria da tecnologia para garantir a oferta como isca para o desejo consumista. Cada vez mais, sites, redes sociais, aplicativos e outros meios tecnológicos se apropriam de dados dos usuários para oferecer produtos específicos para cada pessoa, aumentando assim o desejo consumista dos consumidores e os lucros das corporações.</p>
+
+		<p> e) Incorreta. Não há no texto nada que permita concluir que o desenvolvimento tecnológico estaria associado a manutenção das preferências de consumo. Na sociedade pós-fordista, os produtos passam por transformações rápidas, seja pelo desenvolvimento de um produto mais avançado ou ainda como forma de estratégia do mercado (obsolescência programada) para fazer com que se consuma exageradamente.</p>
+
+    </div>
+	
+	
+	
+	
+	
+
+	<div class="campo">
+		
+        <p class ="p2">Questão 04</p>
+			
+		<p id="p3">   (ENEM 2016)    </p>
+		
+		<img src="t16q4.jpg" alt="" class="imagem" width="320" height="200">
+		
+		<p id="citacao"><small>   Disponível em: http://portuguese.brazil.usembassy.gov. Acesso em: 11 maio 2016 (adaptado).   </small>	</p>
+		            
+			<p id="p3"> Dentro das atuais redes produtivas, o referido bloco apresenta composição estratégica por se tratar de um conjunto de países com:</p> 
+       
+	   <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) elevado padrão social. </p>
+        
+		<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) sistema monetário integrado. </p>
+		
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) alto desenvolvimento tecnológico. </p> 
+	
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) identidades culturais semelhantes. </p>
+		
+		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) vantagens locacionais complementare.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> Os países apresentados no mapa se distribuem pela chamada “Bacia do Pacífico”, região que nas últimas décadas ganhou protagonismo como aquela que representará uma das maiores redes comerciais do mundo. Eles dispõem de infraestrutura, que inclui transportes, comunicações, abasteci mento e centros comerciais; esses países receberão as em bar cações com toda a produção envolvida nos acordos comerciais, entre eles, a Parceria Transpacífica. </p>
+
+		<p>a) Incorreta. Alguns países integrantes do acordo possuem problemas relacionados à desigualdade social   e ao atendimento em serviços básicos (saúde, educação, alimentação) para parte da população, como é o caso de Peru, México e Malásia, o que compromete a qualidade de vida de seus habitantes. </p>
+
+		<p> b)  Incorreta.  O bloco não pretende a integração monetária, algo praticado atualmente apenas pela União Europeia com o Euro. Há antes uma pretensão do crescimento comercial a partir da diversidade econômica dos membros. </p>
+
+		<p> c)  Incorreta.  A produção de científica e tecnológica entre os países destacados é concentrada nos   Estados Unidos e no Japão, sendo pouco relevante nos países latino-americanos e do Sudeste Asiático. </p>
+
+		<p> d) Incorreta. A diversidade cultural é bem marcante entre os países- membros e pode ser evidenciada nos costumes alimentares, nas diferentes crenças e na própria história que particulariza cada um deles. </p>
+
+		<p>e) Correta. As vantagens locacionais em questão são evidenciadas nos aspectos complementares das economias envolvidas no acordo, como mão-de-obra barata e incentivos fiscais promovidos pelos países do Sudeste Asiático para fomentar a produção de manufaturados; investimentos na produção e exportação de commodities agrícolas e minerais, exemplificados nos casos de México, Austrália, Nova Zelândia, Peru, Chile e EUA; e grande produção de produtos de alta tecnologia no Japão e nos EUA, além da centralidade financeira destes no mercado global. </p>
+  
+    </div>
+	
+	
+	
+	
+			
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 05</p>
+			
+		<p id="p3">   (PUC-RS 2015) A divisão do mundo em Estados nacionais, com fronteiras, moedas e alfândegas, cria barreiras à livre circulação de mercadorias, serviços, capitais e pessoas. A criação de blocos econômicos é uma tentativa de reduzir essas barreiras em escala regional, mas também uma forma de os países membros se fortalecerem frente ao processo de globalização. Nesse processo, NÃO constitui uma forma de organização de blocos econômicos a </p>
+						            
+        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) união aduaneira. </p>
+       
+	   <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) união econômica e monetária. </p>
+		
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) criação de zonas de livre comércio. </p>
+		
+		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) eliminação das fronteiras físicas.</p>
+		
+		<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) organização de mercados comuns</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+				 
+	<div class="campo">
+		
+        <p class ="p2">Questão 06</p>
+			
+		<p id="p3"> (USS 2015)   </p>
+		
+		<img src="t16q6.jpg" alt="" class="imagem" width="320" height="360">	
+				
+		<p id="p3"> As exportações e importações de mercadorias podem assumir grande relevância na geração de riqueza nacional. De acordo com o gráfico, constata-se uma diferença na importância do comércio externo para países desenvolvidos e subdesenvolvidos.</p>
+
+		<p id="p3">Essa diferença se deve à desigualdade entre esses dois grupos de países em relação a:</p>
+
+        <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) renda média do mercado nacional.</p>
+      
+	   <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) qualidade técnica do sistema viário.</p>
+		
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) padrão tecnológico da indústria extrativa.</p>
+		
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) crescimento vegetativo da população absoluta.</p>
+		
+		
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+			
+	<div class="campo">
+		
+        <p class ="p2">Questão 07</p>
+			
+		<p id="p3">   (UNESP 2014) “Presenciamos um imperativo das exportações, presente no discurso e nas políticas do Estado e na lógica das empresas, que tem promovido uma verdadeira commoditização da economia e do território. A lógica das commodities não se caracteriza apenas por uma invenção econômico-financeira, entendida como um produto primário ou semielaborado, padronizado mundialmente, cujo preço é cotado nos mercados internacionais, em bolsas de mercadorias. Trata-se também de uma expressão política e geográfica, que resulta na exacerbação de especializações regionais produtivas”.  </p>
+					
+		<p id="citacao"><small>   (Samuel Frederico. Revista Geografia, 2012. Adaptado.)  </small>	</p>
+		         
+		<p id="p3">  Entre as implicações políticas e econômicas do processo de “commoditização do território”, é correto indicar:</p>
+
+
+        <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) a menor autonomia dos produtores locais e a maior vulnerabilidade das regiões em relação às demandas e às regulações impostas pelo mercado externo.</p>
+       
+	   <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) o fortalecimento dos produtores locais e a menor vulnerabilidade das regiões em relação às crises e às oscilações do mercado externo.</p>
+		
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) a maior autonomia dos produtores locais e o fortalecimento das regiões em função do atendimento prioritário das demandas do mercado interno</p>
+		
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) a menor autonomia dos produtores locais e a instabilidade das regiões em função do atendimento prioritário das demandas do mercado interno.</p>
+		
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) o maior controle pelos produtores locais e a maior autonomia das regiões em relação à definição dos preços internacionais das commodities.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 08</p>
+			
+		<p id="p3">   (ENEM 2014)   </p>
+		
+		<img src="t16q8.jpg" alt="" class="imagem" width="320" height="400">
+		
+		<p id="p3">	Nas últimas décadas, tem se observado um incremento no comércio entre o Brasil e a China. A comparação entre os gráficos demonstra a:</p>
+				          
+        <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) posição do Brasil como grande exportador de commodities.</p>
+       
+	   <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) falta de complementaridade produtiva entre os dois países.</p>
+		
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) vantagem competitiva da China no setor de produção agrícola.</p>
+		
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) proporcionalidade entre as trocas de bens de alto valor agregado.</p>
+		
+		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) restrita participação de bens de alta tecnologia no comércio bilateral.</p>
+
+
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  Podemos observar nos gráficos que o Brasil exporta uma grande quantidade de produtos básicos, e poucos produtos que passaram pela transformação industrial. O produto manufaturado somente resulta do trabalho manual ou mecânico enquanto o semimanufaturado é o produto bruto que passa por novas fases de processamento até tornar-se mercadoria. Os gráficos demonstram portanto que o Brasil exporta muitos commodities que são produtos que funcionam como matéria prima e podem ser estocados sem perder a qualidade como petróleo, café, soja. Enquanto a China exporta produtos mais industrializados, sendo conhecida como fábrica do mundo.</p>
+
+ 
+    </div>
+		
+		
+		
+		
+		
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 09</p>
+			
+		<p id="p3">   (UFMG 2003) Considerando-se a globalização, fase atual da expansão capitalista, é INCORRETO afirmar que ela: </p>
+			           
+        <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a">a) promove a crescente vulnerabilidade das economias de muitos países, à medida que sua credibilidade, frente aos investimentos externos, é afetada por relatórios e opiniões de age.</p>
+      
+	    <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b">b) amplia a capacidade das nações de realizar investimentos públicos em áreas prioritárias como na educação, saúde e saneamento básico, à proporção que cresce o controle do Estado sobre o fluxo de capitais oriundos de taxações e impostos.</p>
+	
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) retrata a interdependência crescente entre regiões e lugares que, apesar de geograficamente separados por grandes distâncias, podem ser influenciados por eventos ocorridos em qualquer parte do Planeta.</p>
+		
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d">d) propõe uma ruptura com o princípio, até há pouco vigente, de sociedades nacionais a pretexto da necessidade de se considerar a realidade de uma sociedade global, em que são intensas as relações socioeconômicas em escala mundial</p>
+	
+	
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 10</p>
+			
+		<p id="p3">   (UFMG 2001) A Organização Mundial do Comércio – OMC – tem sido o fórum de discussões que envolvem interesses comerciais conﬂitantes entre países pobres e ricos. Considerando-se esses conﬂitos comerciais, é INCORRETO afirmar que:   </p>
+					            
+        <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) os países pobres enfrentam barreiras comerciais, impostas por países ricos, sob a acusação de devastarem o meio ambiente, o que reduz a entrada de recursos necessários à modernização da exploração das riquezas naturais.</p>
+      
+	   <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) países pobres vêm elevando as tarifas alfandegárias impostas aos produtos industriais dos países ricos, como forma de estimular o desenvolvimento da tecnologia nacional.</p>
+		
+		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) países ricos, de modo geral, concedem subsídios a seus produtores agrícolas, mas rechaçam atitudes semelhantes dos países periféricos em relação a produtos industriais de exportação.</p>
+		
+		<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) países ricos impõem restrições às exportações dos países pobres, como forma de retaliação contra a suposta exploração da mão de obra infantil e do trabalho em regime de semiescravidão.</p>
+		
+		
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+	
+	
+	<div class = "area">
+    <img src="" id="imagem" style="display:none" alt="" width = "280" height="200">
+	</div>
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	 
+	 
+	     
+	     
+</script>
+
+<script>
+ 
+	 function mudaQuest(){
+		var t = document.getElementsByClassName("p2");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.fontFamily = tipo[fonte];
+			
+		
+			} 
+		}
+		
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				 
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                				
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "a") {
+                corretas++;
+                document.getElementById("q2a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2a").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "d") {
+                corretas++;
+                document.getElementById("q3d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3d").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "e") {
+                corretas++;
+                document.getElementById("q4e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4e").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "d") {
+                corretas++;
+                document.getElementById("q5d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "a") {
+                corretas++;
+                document.getElementById("q6a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "a") {
+                corretas++;
+                document.getElementById("q7a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "a") {
+                corretas++;
+                document.getElementById("q8a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "b") {
+                corretas++;
+                document.getElementById("q9b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "b") {
+                corretas++;
+                document.getElementById("q10b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+            }
+			
+						
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			//document.getElementById("resp1").innerHTML = pq1;
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

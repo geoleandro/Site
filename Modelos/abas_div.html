@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<style type= "text/css ">
+div{
+border: solid 2px;
+width: 500px;
+height: 300px;
+}
+</style>
+
+<script>
+function mostrar(id) {
+
+		if (document.getElementById(id)style.display =='block') {
+		document.getElementById(id)style.display =='none';
+          }
+			else {
+			document.getElementById(id)style.display == 'block';
+			}
+			  
+      
+      
+   
+}
+
+</script>
+</head>
+
+
+<div id ="diva">
+
+
+<div id="dq1"style="display:block"> <br><br>
+Conteúdo da Div 1
+</div>
+
+
+<br><br>
+<span id = "bdq2"  style="display:block"  onclick = "divMostrar(2)">Próximo</span><br><br>
+
+
+
+<div id="dq2"style="display:none"> 
+Conteúdo da Div 2
+</div>
+
+
+<br><br>
+<span id = "bdq3"  style="display:none"   onclick = "divMostrar(3)">Próximo</span><br><br>
+
+<div id="dq3"style="display:none"> 
+Conteúdo da Div 3
+</div>
+
+
+<br><br>
+<span id = "bdq4"  style="display:none"   onclick = "divMostrar(4)">Próximo</span><br><br>
+
+<div id="dq4"style="display:none"> 
+Conteúdo da Div 4
+</div>
+
+
+
+<br><br>
+<span id = "bdq5"  style="display:none"   onclick = "divMostrar(5)">Próximo</span><br><br>
+
+<div id="dq5"style="display:none"> 
+Conteúdo da Div 5
+</div>
+<br><br>
+
+
+<span id = "bdq6"  style="display:none"   onclick = "divMostrar(6)">Próximo</span>
+
+<div id="dq6"style="display:none"> 
+Terminou!
+</div>
+
+
+</div>
+<script>
+
+function divMostrar(qnum){
+
+     		
+	
+	
+	if (document.getElementById("bdq2").style.display='block'&& qnum==2) {
+	
+	document.getElementById("dq2").style.display='block';
+	document.getElementById("bdq2").style.display='none';
+	document.getElementById("bdq3").style.display='block';
+	 document.getElementById ("dq1").style.color = "lightgray";
+	 }
+	if (document.getElementById("bdq3").style.display='block' && qnum==3){
+	
+	document.getElementById("bdq3").style.display='none';
+	document.getElementById("dq3").style.display='block';
+	 document.getElementById("bdq4").style.display='block';
+	  document.getElementById ("dq2").style.color = "lightgray";
+	 }
+	 
+	if (document.getElementById("bdq4").style.display='block' && qnum==4){
+	document.getElementById("bdq4").style.display='none';
+	document.getElementById("dq4").style.display='block';
+	 document.getElementById("bdq5").style.display='block';
+	
+	}
+	if (document.getElementById("bdq5").style.display='block' && qnum==5){
+	
+	document.getElementById("bdq5").style.display='none';
+	document.getElementById("dq5").style.display='block';
+	 document.getElementById("bdq6").style.display='block';
+	}
+	if (document.getElementById("bdq6").style.display='block' && qnum==6){
+	
+	document.getElementById("bdq6").style.display='none';
+	document.getElementById("dq6").style.display='block';
+	 document.getElementById ("diva").style.color = "lightgray";
+	
+	}
+}
+
+
+
+
+</script>
+
+<script>
+function mostraDiv(id) {
+  var divs = document.querySelectorAll("div");
+
+  for (var i = 0; i < divs.length; i++) {
+      divs[i].style.display = "none";
+  }
+  var divToShow = document.getElementById(id);
+  divToShow.style.display = "block";
+}
+</script>
+
+

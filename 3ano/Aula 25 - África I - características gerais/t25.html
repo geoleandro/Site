@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t25</title>
+
+    
+<style>
+
+@font-face { font-family: pixel; src: url('slkscreb-webfont.woff');  }
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #69CB60FA; border: none; border-radius: 0px ; padding: 1%;  color: white; font-weight:bold; text-align:left;  font-family: "pixel"; box-shadow: 0px 0px 0px #151515 inset; background-image: url(iconePredio.gif);   background-position: right top ;   background-repeat: no-repeat;  background-size: contain;}
+
+.p2 {line-height: normal;  background: #69CB60FA; border: solid 0.5px; border-radius: 5px; padding: 2%;font-size: 14pt; color: #ffffff; font-weight:bold; font-family: pixel; box-shadow: 0px 0px 0px rgb(255, 255, 255) inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 0px   }
+
+
+#numeroCorreto { display: none; background: rgb(185, 185, 185);  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 5px;}
+
+#mensagem { display: none; background: rgb(185, 185, 185);  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 5px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  none rgb(0, 0, 0) 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 5px ; box-shadow:0px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 0px   }
+
+.comentarios {display: none;}
+
+.myText {height:150px; width: 320px; float:left; word-wrap: break-word; text-align:left; }
+
+#button1 {   display: inline-block;   padding: 10px 15px;   font-size: 14px;   cursor: pointer;   text-align: center;  text-decoration: none;   outline: none;   color: #fff;   background-color: #69CB60FA;   border: none;   border-radius: 5px;
+  box-shadow: 0 0px #999;   position: absolute;   font-family: pixel; }
+
+#button1:hover 	{background-color: #69CB60FA}
+#button1:active { background-color: #69CB60FA;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex; justify-content: center;}
+
+
+</style>
+
+</head>
+
+<body onload= "mudaQuest()">
+
+
+
+
+	<h1 id="h1">   Questões aula 25 - África I - características gerais. Clima, vegetação, demografia e minérios. </h1>
+  
+  
+	<p><b>Conteúdo:</b> Clima; Vegetação; Relevo; Hidrografia; problemas ambientais. </p>
+	
+	<p><b>Objetivo:</b> Compreender a diversidade natural do continente africano e sua influência na organização do espaço geográfico.  </p>
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p class ="p2">Questão 01</p>
+			
+		<p id="p3">   (2020) A África Mediterrânea está localizada ao norte do deserto do Saara e possui características físicas e humanas semelhantes às dos países do Oriente Médio. Seu clima é desértico, o idioma é o árabe e a principal religião é o Islamismo. Qual desses países africano não apresenta essas características, ou seja, não compõe a África Mediterrânea.    </p>
+		
+									
+	
+            
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) Líbia
+        <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b">b) Egito.</p>
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) Marrocos.</p>
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d">d) África do Sul.</p>
+		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e">e) Argélia.</p>
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p class ="p2">Questão  02</p>
+			
+		<p id = "p3">  (2020) Quente e úmido durante o ano todo, está presente [...] nas áreas de baixa latitude, como a América Central, a Indonésia, a região central da África e o norte do Brasil. A umidade relativa do ar é elevada, com média anual de 90%, e a chuva é abundante durante o ano todo. A temperatura também é alta e estável, com média anual de 25°C. (DIVERSIDADE..., 2012, p. 66).  </p>
+
+		<p id = "p3">A alternativa que identifica corretamente o tipo climático descrito no texto e o domínio vegetal correspondente é a </p>
+         
+        <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a">  a) tropical / tundra. </p>
+        <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b b) subtropical / caatinga. </p>
+		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c">  c) equatorial / floresta tropical. </p>
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d">  d) tropical continental / savanas.</p>
+		<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) tropical árido / floresta de coníferas.</p>
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	
+
+    <div class="campo">
+		
+        <p class ="p2">Questão 03</p>
+			
+		<p id="p3">   (2020) Considere as informações do texto e da figura. </p>
+				 
+		<p id="p3"> Texto I </p>
+				 
+		<p id="p3"> Percebemos uma nítida oposição entre uma África onde se situa uma das mais famosas (talvez até a mais popular) civilização de todos os tempos, o Egito, e as regiões restantes do continente, compreendendo os desertos (Saara e Kalahari), as latitudes equatoriais (Senegal a Angola), as das florestas (bacia do Zaire) e o sul. </p>
+
+		
+		<p id="citacao"><small>  LANGER, J., Civilizações Perdidas no Continente Negro: o imaginário arqueológico sobre a África. Adaptado.   </small>	</p>
+
+		<p id="p3">Texto II </p>
+										
+		<img src="t25q3.JPG" alt="" class="imagem" width="340" height="300">
+		
+		<p id="p3">	Os dados sobre o continente africano apresentados no texto e na figura enfatizam</p>
+		           
+        <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) sua diversidade cultural e físico-biológica.. </p>
+        <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) seus conflitos tribais e a degradação ambiental </p>
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) a tradição dos ancestrais e o potencial turístico do local. </p>
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) sua superioridade econômica e o perigo do mundo tropical.</p>
+		<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e">e) o histórico de escravidão e a exploração dos seus recursos naturais.</p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	
+	
+
+	<div class="campo">
+		
+        <p class ="p2">Questão 04</p>
+			
+		<p id="p3">   (2020) Leia o texto a seguir.</p>
+
+		<p id="p3"> O clima tropical ocupa cerca de metade do continente, onde apresenta temperaturas elevadas durante todo o ano e duas estações bem distintas: chuvosa no verão e seca no inverno. A vegetação predominante deste clima é uma transição entre a floresta úmida e as áreas áridas e semiáridas do norte e do sul do continente. Neste domínio, a vegetação apresenta árvores e arbustos de portes variados e dispersos na paisagem e plantas rasteiras (capins e gramíneas) que recobrem o solo (semelhante ao do cerrado brasileiro). O texto anterior descreve a formação vegetal típica do clima tropical africano e que também foi cenário natural de alguns filmes famosos com Tarzan e Sheena (a rainha da selva). </p>
+
+		<p id="p3"> Assinale a alternativa referente a esta paisagem vegetal</p>
+					
+		         
+        <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) Desertos.</p>
+        <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) Savanas.</p>
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) Floresta boreal.</p>
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) Floresta equatorial.</p>
+		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) Floresta Amazônica.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+	
+	
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 05</p>
+			
+		<p id="p3"> (2020) Observe o mapa a seguir. </p>
+			
+		<img src="t25q5.JPG" alt="" class="imagem" width="330" height="300">
+	
+		<p id="p3"> O mapa anterior indica duas importantes bacias hidrográ¬ficas africanas. Quais são elas, respectivamente? </p>
+
+
+		           
+        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a">a) A – bacia do rio Níger e B – bacia do rio Nilo.</p>
+        <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b">b) A – bacia do rio Congo e B – bacia do rio Orange.</p>
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) A – bacia do rio Nilo e B – bacia do rio Congo.</p>
+		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) A – bacia do rio Senegal e B – bacia do rio Zambeze.</p>
+		<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e">e) A – bacia do rio Orange e B – bacia do rio Senegal.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+			
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 06</p>
+			
+		<p id="p3">   (Unitau 2014) O continente africano é compreendido como uma unidade, no entanto é dotado de ampla diversidade étnico linguística, religiosa e cultural. Devido a esses aspectos, a África comumente é chamada de “Duas Áfricas”. Essa regionalização deve-se  </p>
+			         
+        <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) ao fato de terem ocorrido conflitos em Ruanda, entre Tutsis e Hutus.</p>
+        <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) ao fato da presença, no norte do continente, do Deserto do Saara, e no sul, a presença da Floresta Equatorial do Congo.</p>
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) ao movimento segregacionista ocorrido na África do Sul, conhecido como Apartheid.</p>
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) ao fato de o sul do continente apresentar características árabes, mulçumanas e brancas, enquanto o norte apresenta características negras, cristãs e animistas.</p>
+		<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) ao fato de o norte do continente apresentar características árabes, mulçumanas e brancas, enquanto o sul apresenta características negras, cristã e animistas.</p>
+
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+				
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 07</p>
+			
+		<p id="p3">  (2020) Observe o mapa a seguir. As partes destacadas no mapa indicam:   </p>
+		
+		<img src="t25q7.JPG" alt="" class="imagem" width="330" height="360">
+			
+		
+            
+        <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) áreas de clima e paisagens desérticas.</p>
+        <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) áreas de conflito.</p>
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) áreas de floresta.</p>
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) áreas de mineração.</p>
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) áreas de clima frio.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 08</p>
+				    
+		<p id="p3">(UEG 2014) Corresponde à região do Sahel, no continente africano:	 </p>
+	
+		
+        <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) região central da Angola, onde existe o mais moderno projeto de irrigação do continente africano.</p>
+        <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b">b) faixa de transição entre o deserto do Saara e as pastagens e matas ao sul deste deserto.
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) região industrial da África do Sul, onde se instalou o maior parque industrial da África.</p>
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d">d) cadeia de montanhas no centro da República Democrática do Congo, recoberta por matas tropicais</p>
+		
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+				
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 09</p>
+			
+		<p id="p3">   (2020) Sobre a localização e distribuição das savanas no Planeta, estão corretas as afirmações abaixo, exceto  </p>
+			           
+        <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) A região com maior incidência desse tipo de vegetação é o norte da Ásia e extremo sul do continente americano</p>
+        <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b">b) As savanas abrangem uma área de cerca de 33% da superfície continental da Terra e 40% da faixa tropical.</p>
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) Há a presença de savanas na América do Sul, África, Oceania e Ásia.</p>
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) A savana é considerada o quarto maior bioma mundial em área, com cerca de 15 milhões de km2.</p>
+		<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) No território em que se estendem as savanas, vivem cerca de 20% da população mundial.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  Há a presença de savanas na América do Sul, África, Oceania e Ásia. O norte da Ásia (Sibéria) e extremo sul do continente Americano (Terra do Fogo) são regiões com baixíssimas temperaturas e possuem vegetação adaptada a esse tipo clima.  </p>
+    </div>
+	
+		
+		
+		
+		
+				
+	<div class="campo">
+		
+        <p class ="p2">Questão 10</p>
+			
+		<p id="p3"> (ENEM 2014) Antes de o sol começar a esquentar as terras da faixa ao sul do Saara conhecida como Sahel, duas dezenas de mulheres da aldeia de Widou, no norte do Senegal, regam a horta cujas frutas e verduras alimentam a população local. É um pequeno terreno que, visto do céu, forma uma mancha verde — um dos primeiros pedaços da “Grande Muralha Verde”, barreira vegetal que se estenderá por 7 000 km do Senegal ao Djibuti, e é parte de um plano conjunto de vinte países africanos. </p>
+					
+		<p id="citacao"><small>   GIORGI, J. Muralha verde. Folha de S. Paulo, 20 maio 2013 (adaptado).  </small>	</p>
+		<p id="p3"> O projeto ambiental descrito proporciona a seguinte consequência regional imediata:</p>
+       
+	   <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a">  a) Facilita as trocas comerciais.</p>
+        <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) Soluciona os conflitos fundiários.</p>
+		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c">  c) Restringe a diversidade biológica.</p>
+		<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d">  d) Fomenta a atividade de pastoreio.</p>
+		<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e">  e) Evita a expansão da desertificação.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+	
+	
+	<div class = "area">
+    <img src="" id="imagem" style="display:none" alt="" width = "280" height="200">
+	</div>
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+	var fontes =["Courier New", "Arial", "Cursive","Times New Roman", "Monotype Corsiva", "Times New Roman", "Verdana","Calisto MT", "Tempus Sans ITC", "Tahoma"];
+	  var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082","#A020F0","#FF1493","#FA8072","#FF8C00","#DC143C"];
+	  var aleatorio = Math.round(Math.random() * 10);
+	  document.getElementById("h1").style.fontFamily = fontes[aleatorio];
+	 
+</script>
+
+<script>
+ 
+	 function mudaQuest(){
+		var t = document.getElementsByClassName("p2");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.fontFamily = fontes[aleatorio];
+			
+		
+			} 
+		}
+		
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				 
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			
+            if (pq1 == "d") {
+                corretas++;
+                document.getElementById("q1d").style.backgroundColor = cor[0];
+            } else {
+                				
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "c") {
+                corretas++;
+                document.getElementById("q2c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2c").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "a") {
+                corretas++;
+                document.getElementById("q3a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3a").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "b") {
+                corretas++;
+                document.getElementById("q4b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4b").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "a") {
+                corretas++;
+                document.getElementById("q5a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "e") {
+                corretas++;
+                document.getElementById("q6e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6e").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "a") {
+                corretas++;
+                document.getElementById("q7a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "b") {
+                corretas++;
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "a") {
+                corretas++;
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9a").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "e") {
+                corretas++;
+                document.getElementById("q10e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10e").style.backgroundColor = cor[0];
+
+            }
+			
+						
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

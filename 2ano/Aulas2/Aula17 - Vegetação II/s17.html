@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: normal 1px; border-radius: 35px ; padding: 0cm; font-size: auto; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+textarea {
+  overflow: auto;
+  wap:hard
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+	<h1 id="h1">   Questões aula 17 - Vegetação brasileira II   </h1>
+  
+  
+	<p><b>Conteúdo:</b> Mata dos Cocais, Pantanal, Cerrado, Caatinga, Pampas.   </p>
+	
+	
+	<p><b>Objetivo:</b> destacar as principais características das vegetações do Brasil: Mata dos Cocais, Pantanal, Cerrado, Caatinga, Pampas e os impactos da interferência humana nesses domínios.  </p>
+    
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p id="p2">Questão 01</p>
+			
+		<p id="p3">    (2019) Sobre o Pantanal, julgue os itens a seguir e assinale apenas as proposições que apresentam características desse bioma.  </p>
+
+		<p id="p3"> I. A fauna é semelhante à do bioma Amazônia. A flora conta com aproximadamente 20 mil espécies de vegetais.  </p>
+
+		<p id="p3"> II. Conhecido também como Campo Sulino, esse bioma abrange o território do estado do Rio Grande do Sul.  </p>
+
+		<p id="p3"> III. É considerado uma das maiores planícies alagadas do mundo, sendo o menor bioma em extensão territorial do Brasil.  </p>
+
+		<p id="p3"> IV. Esse bioma compreende a bacia hidrográfica do Rio Paraguai, e o clima predominante é o tropical.  </p>
+
+		<p id="p3"> Assinale a alternativa correta:  </p>
+						
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) I - III – IV.</p>
+       
+	   <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) II – III.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) II- III – IV.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) III – IV.</p>
+		
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+    <div class="campo">
+		
+        <p id="p2">Questão  02</p>
+			
+		<p id="p3">  (PUC-SP 2018) O texto abaixo deve ser lido como apoio para responder a questão. </p>
+
+		<p id="p3"> A imensa riqueza social e natural do Cerrado está ameaçada de se perder. No ritmo atual de devastação, o bioma como tal pode desaparecer para sempre já em 2030. As consequências socioambientais desse processo são dramáticas e ainda serão mais, como diversos analistas e organizações sociais vêm alertando, caso não seja feito um esforço articulado para impedir que essa expansão para a produção de commodities continue nos moldes de violência, predação e empobrecimento que a tem caracterizado. </p>
+  	
+		<p id="citacao"><small> (Le Monde Diplomatique Brasil, março de 2018, nº128, suplemento especial). </small>	</p>
+		
+		<p id="p3">	O texto apresenta uma enorme preocupação com o 2º maior bioma em área do Brasil. Assinale a alternativa que apresenta de forma explícita fatos, características e tendências que podem ser identificados de forma implícita no texto.</p>
+
+        <p class="bordaQuestoes"id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) O desmate do Cerrado tem uma relação direta com o avanço da pecuária leiteira, atividade que cresce em um ritmo muito acelerado no Centro-Oeste brasileiro, transformando Goiás no 1º produtor de leite e derivados, ultrapassando Minas Gerais em 2017.</p>
+        
+		<p class="bordaQuestoes"id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) O Cerrado conta hoje com algo em torno de 48% de sua cobertura original. O agronegócio, com destaque para o plantio da soja, carrega a bandeira do “campo moderno” e avança sobre a fronteira agrícola, transformando matas nativas em imensos desertos verdes.</p>
+		
+		<p class="bordaQuestoes"id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) O solo que sustenta a imensa diversidade fitobotânica do cerrado é de grande fertilidade, chamado de massapê e tem origem na decomposição do gnaisse. O massapê é utilizado, sobretudo, para o plantio da laranja e da soja.</p>
+		
+		<p class="bordaQuestoes"id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) O clima tropical úmido predomina no bioma Cerrado e, por apresentar chuvas bem distribuídas durante o ano, com índice pluviométrico de 1800mm/ano, se apresenta com uma vocação agrícola natural, importante para o plantio da soja. Essa característica faz do Centro-Oeste brasileiro, área com predomínio do cerrado, a região ideal para o cultivo da oleaginosa citada.</p>
+		
+		
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  O deserto verde a que se refere o texto são as grandes lavouras de soja, milho e algodão que tornam homogeneizadas as paisagens vegetais da região. </p>
+
+  
+    </div>
+	
+	
+    <div class="campo">
+		
+        <p id="p2">Questão 03</p>
+			
+		<p id="p3">   (IF SERTÂO-PE 2018) Considerando a vegetação brasileira e suas características, assinale a alternativa que relaciona corretamente a coluna A e B.</p>
+
+		<p id="p3">	COLUNA A</p>
+
+		<p id="p3">	1. Mata dos Cocais</p>
+			
+		<p id="p3">	2. Pampa</p>
+			
+		<p id="p3">	3. Mangue</p>
+			
+		<p id="p3">	4.Pantanal</p>
+
+		<p id="p3">	COLUNA B</p>
+
+		<p id="p3">	() encontrada no sul do país, esse tipo de vegetação é constituído principalmente por arbustos, árvores pequenas, gramíneas e plantas rasteiras.</p>
+
+		<p id="p3">	() surge em climas equatorial úmido e equatorial semiárido. É lá que surgem os babaçus, árvore típica desse local, e outras árvores de grande porte, tais como açaí, buriti e carnaúba.</p>
+
+		<p id="p3">	() A vegetação do mangue é constituída por vegetais halófilos, os quais compreendem arbustos e plantas que apresentam tronco fino e raízes aéreas.</p>
+
+		<p id="p3">	() é nas áreas alagadas que surgem as gramíneas, enquanto os arbustos e palmeiras crescem nas áreas onde o alagamento acontece de forma ocasional.</p>
+  
+	   
+        <p class="bordaQuestoes"id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) 4 - 3 - 1 - 2 </p>
+       
+	   <p class="bordaQuestoes"id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) 2 - 4 - 3 - 1 </p>
+
+		<p class="bordaQuestoes"id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) 2 - 1 - 3 - 4 </p>
+		
+		<p class="bordaQuestoes"id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) 3 - 4 - 1 - 2 </p>
+
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+
+	<div class="campo">
+		
+        <p id="p2">Questão 04</p>
+			
+		<p id="p3">   (ENEM 2017) Ao destruir uma paisagem de árvores de troncos retorcidos, folhas e arbustos ásperos sobre os solos ácidos, não raro laterizados ou tomados pelas formas bizarras dos cupinzeiros, essa modernização lineariza e aparentemente não permite que se questione a pretensão modernista de que a forma deve seguir a função.  </p>
+		
+		<p id="citacao"><small>    HAESBAERT, R. “Gaúchos” e baianos no “novo” Nordeste: entre a globalização econômica e a reinvenção das identidades territoriais. In: CASTRO, I. E.; GOMES, P. C. C.; CORREA, R. L. (Org.). Brasil: questões atuais da reorganização do território. Rio de Janeiro: Bertrand Brasil, 2008.  </small>	</p>
+		    
+		<p id="p3">	O processo descrito ocorre em uma área biogeográfica com predomínio de vegetação4</p>
+       
+	   <p class="bordaQuestoes"id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) tropófila e clima tropical.</p>
+
+	   <p class="bordaQuestoes"id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) xerófila e clima semiárido.</p>
+	
+		<p class="bordaQuestoes"id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) hidrófila e clima equatorial.</p>
+		
+		<p class="bordaQuestoes"id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) aciculifoliada e clima subtropical.</p>
+		
+		<p class="bordaQuestoes"id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) semidecídua e clima tropical úmido.</p>
+
+    </div>
+
+       
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   O trecho em destaque na questão destaca elementos típicos do Cerrado, tais, como troncos retorcidos e solos ácidos. Essa vegetação está adaptada ao clima tropical, onde há grande concentração de chuvas no verão e secas no inverno. A vegetação adaptada à alternância entre estação seca e chuvosa é chamada de tropófila. </p>
+
+		<p> a) Correta. A tropófila se caracteriza como o desenvolvimento da vegetação que se estabelece em condições sazonais de mudanças no regime de chuvas e temperatura. Dessa forma, plantas tropófilas são comuns em regiões onde predomina o clima tropical típico com verões muito úmidos e invernos secos, fator determinante para a existência de solos ácidos e fitofisionomia (forma das plantas) de troncos retorcidos, folhas e arbustos ásperos descritos no texto. </p>
+
+		<p> b) Incorreta. Plantas xerófilas são aquelas que possuem adaptações a climas áridos e semiáridos, como folhas espinhentas, raízes profundas e troncos espessos, características distintas daquelas apresentadas no texto.
+
+		<p> c) Incorreta. Vegetações hidrófilas (também chamada de “plantas aquáticas”) ou higrófilas são aquelas adaptadas às condições de grande umidade o ano todo sendo que muitas delas vivem submersas em rios ou possuem folhas largas e grande produtividade de flores como a Vitória-régia (Victoria amazônica), aspectos diferentes dos apontados no texto. </p>
+
+		<p> d) Incorreta. O clima subtropical não promove as características mencionadas no excerto, mas sim o surgimento de vegetações altas e aciculifoliadas, ou seja, com folhas finas ou até mesmo a ocorrência de domínios de gramíneas que se desenvolvem em terrenos planos no sul do Brasil. </p>
+
+		<p> e) Incorreta. Embora o clima tropical úmido possa promover a laterização mencionada no texto - processo que consiste no acúmulo de minerais pouco solúveis em água como o Ferro e Alumínio na porção superior dos solos decorrente da intensa lixiviação – este clima encontra-se ao longo do litoral brasileiro enquanto o Bioma Cerrado cujas características estão presentes no texto encontra-se no interior do Brasil. </p>
+ 
+    </div>
+	
+	
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 05</p>
+			
+		<p id="p3"> (FAMERP SP 2017) A partir de conhecimentos acerca das formações vegetais no Brasil, é correto afirmar que a Mata dos Cocais caracteriza uma mata de transição entre:   </p>
+		     
+        <p class="bordaQuestoes"id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) o Cerrado e o Pantanal.</p>
+       
+	   <p class="bordaQuestoes"id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) a Mata Atlântica e a Mata de Araucárias.</p>
+		
+		<p class="bordaQuestoes"id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) a Mata de Várzea e a Mata de Igapó.</p>
+		
+		<p class="bordaQuestoes"id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) os Mangues e a Vegetação Litorânea.</p>
+		
+		<p class="bordaQuestoes"id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) a Floresta Amazônica e a Caatinga.</p>
+
+
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+			
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 06</p>
+			
+		<p id="p3">   (Mackenzie 2017) O Pantanal Mato-grossense constitui-se como uma das mais importantes paisagens vegetais do mundo, entre outras razões, devido à sua biodiversidade e características únicas. Sendo assim, assinale a alternativa que indique corretamente uma característica desse ambiente.</p>
+	
+		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
+		    
+        <p class="bordaQuestoes"id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) O Pantanal ocupa um vasto planalto cristalino de inundação com altitudes que podem variar entre 600m e 900m na maior parte de sua área.</p>
+        
+		<p class="bordaQuestoes"id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) Os índices de devastação do Pantanal estão entre os mais elevados do país, perdendo apenas para os da Floresta Amazônica, ambos superiores a 80% de suas áreas de cobertura original.</p>
+		
+		<p class="bordaQuestoes"id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) Os índices de pluviosidade são inferiores aos verificados na maior parte da região Centro-Oeste. As inundações periódicas justificam-se mais pela topografia da Bacia do rio Paraguai do que propriamente pelo volume das chuvas, concentradas no verão.</p>
+		
+		<p class="bordaQuestoes"id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) A região do Pantanal tem sido amplamente explorada pelos cultivos de soja, trigo e pela criação intensiva de gado bovino. Devido às suas elevadas altitudes, grandes quantidades de agrotóxicos aplicados na região se deslocam para as áreas de chapadas do Cerrado Brasileiro.</p>
+		
+		<p class="bordaQuestoes"id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) A conservação ambiental do Pantanal atende aos diferentes interesses dos governos do Brasil, Argentina, Paraguai e Uruguai, países que compartilham esse rico ecossistema. Contudo, a facilidade de acesso e de ocupação com atividades agropecuárias tradicionais tem contribuído para a degradação desse ambiente.</p>
+
+    </div>
+	
+	
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+			
+	<div class="campo">
+		
+        <p id="p2">Questão 07</p>
+			
+		<p id="p3"> (UEFS BA 2016) Sua biodiversidade é única em todo o mundo. Seus 844,4 mil quilômetros quadrados representam cerca de 10% do território brasileiro. </p>
+		
+		<p id="p3">	Apesar do clima, é pontilhada por “ilhas de umidade”, de solo extremamente fértil. Vivem nesse bioma cerca de 1,2 mil espécies de plantas — 360 delas endêmicas (que não ocorrem em nenhum outro lugar do planeta) — e outras tantas de mamíferos, aves, répteis e anfíbios. </p>
+
+		<p id="p3">	Quanto à vegetação, as plantas são xerófilas, ou seja, adaptadas ao clima seco e à pouca quantidade de água. Algumas armazenam água; outras possuem raízes superficiais para captar o máximo das chuvas. Há as que contam com recursos para diminuir a transpiração, como espinhos e poucas folhas. A vegetação é formada por três estratos: o arbóreo, com árvores de 8 a 12 metros; o arbustivo, com vegetação de 2 a 5 metros; e o herbáceo, abaixo de 2 metros. </p>
+		
+		<p id="p3">	Os maiores problemas enfrentados pela região são a salinização do solo e a desertificação de grandes áreas. </p>
+   	
+		<p id="citacao"><small>  (MAIS VIDA, e mais temores. Geografia. Vestibular + ENEM. São Paulo: Abril, ed. 7, 2015. p. 81). </small>	</p>
+				
+		<p id="p3">	O bioma brasileiro descrito no texto é o:</p>
+
+        <p class="bordaQuestoes"id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) do Cerrado.</p>
+        
+		<p class="bordaQuestoes"id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b">b) do Pantanal.</p>
+		
+		<p class="bordaQuestoes"id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) da Amazônia.</p>
+		
+		<p class="bordaQuestoes"id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) da Caatinga.</p>
+	
+		<p class="bordaQuestoes"id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) da Mata Atlântica.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.</p>
+    </div>
+		
+		
+			
+	<div class="campo">
+		
+        <p id="p2">Questão 08 </p>
+			
+		<p id="p3">  ENEM 2013) Então, a travessia das veredas sertanejas é mais exaustiva que a de uma estepe nua. Nesta, ao menos, o viajante tem o desafogo de um horizonte largo e a perspectiva das planuras francas. Ao passo que a outra o afoga; abrevia-lhe o olhar; agride-o e estonteia-o; enlaça-o na trama espinescente e não o atrai; repulsa-o com as folhas urticantes, com o espinho, com os gravetos estalados em lanças, e desdobra-se lhe na frente léguas e léguas, imutável no aspecto desolado; árvore sem folhas, de galhos estorcidos e secos, revoltos, entrecruzados, apontando rijamente no espaço ou estirando-se flexuosos pelo solo, lembrando um bracejar imenso, de tortura, da flora agonizante…  </p>
+	
+		<p id="citacao"><small>   CUNHA, E. Os sertões. Disponível em: http://pt.scribd.com. Acesso em: 2 jun. 2012.</small>	</p>
+		  
+		<p id="p3">  Os elementos da paisagem descritos no texto correspondem a aspectos biogeográficos presentes na:</p>
+       
+	   <p class="bordaQuestoes"id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) composição de vegetação xerófila.</p>
+  
+	   <p class="bordaQuestoes"id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) formação de florestas latifoliadas.</p>
+		
+		<p class="bordaQuestoes"id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c">c) transição para mata de grande porte.</p>
+
+		<p class="bordaQuestoes"id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) adaptação à elevada salinidade.</p>
+		
+		<p class="bordaQuestoes"id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) homogeneização da cobertura perenifólia.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 09</p>
+			
+		<p id="p3">    (UFT 2010) Observe os mapas abaixo:   </p>
+			
+		<img src="s17q9.jpg" class="imagem" width="220" height="280">
+		
+		<p id="citacao"><small>  Ecossistemas brasileiros. Fonte: Ecologia Objetiva - Derville Ariza  </small>	</p>
+				
+		<p id="p3"> Analisando os mapas onde estão representados os biomas brasileiros é CORRETO afirmar que o conjunto de biomas estão relacionados da seguinte forma: </p>
+        
+		<p class="bordaQuestoes"id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) floresta de araucária, amazônica, mata atlântica, caatinga, pampas, costeiros.  </p>
+        
+		<p class="bordaQuestoes"id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) floresta amazônica, mata atlântica, agreste, zona cacaueira, costeiros, mangues. </p>
+		
+		<p class="bordaQuestoes"id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) agreste, mata atlântica, Floresta amazônica, mangues, cerrado, pampas. </p>
+		
+		<p class="bordaQuestoes"id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) floresta amazônica, de araucária, caatinga, zona dos cocais, cerrado, mata atlântica. 
+
+		<p class="bordaQuestoes"id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e">  e) caatinga, zona dos cocais, cerrado, mata atlântica, Floresta amazônica, zona cacaueira. </p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+	
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 10</p>
+			
+		<p id="p3">   (Unicamp 2010) O mapa abaixo destaca a área de ocorrência dos Pampas, no Brasil. Além de apresentarem solos susceptíveis à erosão, os Pampas se caracterizam   </p>
+			
+		<img src="s17q10.jpg" class="imagem" width="390" height="180">
+		      
+        <p class="bordaQuestoes"id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) pela vegetação arbórea, em área de clima temperado, sujeita a processos de voçorocamento decorrente da eliminação da cobertura vegetal.</p>
+  
+	   <p class="bordaQuestoes"id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) pela vegetação arbórea, em área de clima subtropical, sujeita a processos de arenização decorrente da eliminação da cobertura vegetal.</p>
+
+		<p class="bordaQuestoes"id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) Inserir alternativa cc) pela vegetação de gramíneas, em área de clima subtropical, sujeita a processos de arenização decorrente da eliminação da cobertura vegetal.
+		
+		<p class="bordaQuestoes"id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) pela vegetação de gramíneas, em área de clima temperado, sujeita a processos de voçorocamento decorrente da eliminação da cobertura vegetal.</p>
+		
+		<p class="bordaQuestoes"id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) Inserir alternativa e</p>
+    </div>
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A região dos Pampas, localizada no Rio Grande do Sul, é caracterizada pela presença de planaltos desgastados (aplainados), vegetação herbácea/gramíneas, e clima subtropical, o que favoreceu o desenvolvimento da pecuária extensiva. Tal atividade vem sendo realizada intensamente nos últimos séculos, promovendo uma destruição da cobertura vegetal que expõe o solo a processos de arenização.   </p>
+
+   
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+    <img id="imagem" style="display:none"  width = "280" height="200">
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	  document.getElementById("p2").style.fontFamily = tipo[fonte];
+	     
+	     
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "lightgray";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "d") {
+                corretas++;
+                document.getElementById("q1d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+			
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "c") {
+                corretas++;
+                document.getElementById("q3c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+			
+				document.getElementById("q3c").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "a") {
+                corretas++;
+                document.getElementById("q4a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "e") {
+                corretas++;
+                document.getElementById("q5e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5e").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "c") {
+                corretas++;
+                document.getElementById("q6c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6c").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "d") {
+                corretas++;
+                document.getElementById("q7d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7d").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "a") {
+                corretas++;
+                document.getElementById("q8a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				 document.getElementById("q8a").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "d") {
+                corretas++;
+                document.getElementById("q9d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9d").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "c") {
+                corretas++;
+                document.getElementById("q10c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10c").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none; border-radius: 35px ; padding: 0px; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+.p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex;
+        justify-content: center;}
+
+
+</style>
+
+</head>
+
+<body onload= "mudaQuest()">
+
+
+
+
+	<h1 id="h1">     Questões aula 04 - Desenvolvimento e qualidade de vida I     </h1>
+  
+  
+	<p><b>Conteúdo:</b>  População Economicamente Ativa (PEA); Setores econômicos; Fatores do desenvolvimento: educação, saúde, alimentação;     </p>
+	
+	
+	<p><b>Objetivo:</b> Comparar dados sobre educação, saúde, moradia, poder de consumo e outros para entender os determinantes do desenvolvimento. Relacionar o desenvolvimento econômico com as diferentes situações de distribuição da população entre os três setores da economia.   </p>
+    
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p class ="p2">Questão 01</p>
+			
+		<p id="p3">    (2020) O setor primário é um campo extremamente importante para a economia, pois carrega consigo a responsabilidade de fornecer as matérias-primas, que podem ser diretamente consumidas ou convertidas em mercadorias e produtos de base. Uma peculiaridade desse setor que pode, eventualmente, impactar todo o mercado é:   </p>
+		
+				
+		<img src="t4q1.jpg" alt="a" class="imagem" width="320" height="260"> 
+      
+		<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) a grande necessidade de incentivos fiscais públicos</p>
+       
+	   <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) o elevado e constante custo dos investimentos.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) a vulnerabilidade em relação às variações climáticas.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) a intensiva necessidade de mão de obra abundante.</p>
+		
+		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e) o resultante processo de desarticulação territorial.</p>
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>	Uma peculiaridade do setor primário – isto é, uma característica que somente essa área de atividade apresenta – que pode afetar negativamente a economia é a grande vulnerabilidade que esse setor possui em relação às oscilações climáticas. Assim, em caso de estiagens muito rigorosas, por exemplo, a produção diminui e os preços tendem a subir no mercado. </p>
+ 
+   
+    </div>
+
+
+    <div class="campo">
+		
+        <p class ="p2">Questão  02</p>
+			
+		<p id = "p3"> (2020) Nas antigas sociedades agrárias, a ocupação agrícola chegou a representar quatro em cada cinco postos de trabalho. Com a passagem para a sociedade urbana e industrial, a partir do século 19, o emprego da mão de obra no setor secundário das economias (construção civil e manufatura) chegou a alcançar quase dois quintos do total da ocupação, especialmente nos países de industrialização madura..</p>
+
+		<p id = "p3">E desde a segunda metade do século passado a nova transição da sociedade industrial aponta para a concentração dos postos de trabalho no setor terciário (serviços e comércio). Nas economias desenvolvidas, o setor de serviços responde por 83% do emprego da mão de obra [...]..</p>
+		
+		<p id = "citacao"><small> (POCHMANN, M. O desafio do emprego no novo mundo dos serviços. Rede Brasil Atual, 15/08/2014. Disponível em:  </small>	</p>
+			
+		<img src="t4q2.jpg" alt="a" class="imagem" width="320" height="260">
+			
+		 <p id = "p3"> O esvaziamento progressivo da mão de obra do setor secundário mencionado pelo texto deve-se principalmente:</p>
+          
+        <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) ao processo de constituição da revolução verde.</p>
+      
+	   <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) ao caráter especulativo do capital financeiro.</p>
+		
+		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) à queda da qualidade dos serviços manufatureiros.</p>
+		
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) à ampliação do desemprego estrutural nas indústrias.</p>
+		
+		<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) à retração das leis trabalhistas nas fábricas.</p>
+    </div>
+	
+
+
+    <div class="comentarios">
+    	<p> <b>Comentário:</b></p> 
+			
+		<p> A transição da concentração da população economicamente ativa do setor secundário para o terciário deve-se, principalmente, à substituição de parte dos empregados por maquinários mais eficientes, estimulando o chamado “desemprego estrutural”. Com isso, a consequência foi o processo de terciarização da economia, com mais empregos no setor de comércio e serviços.</p>
+    </div>
+	
+	
+
+    <div class="campo">
+		
+        <p class ="p2">Questão 03</p>
+			
+		<p id="p3">(2020) “Segundo o “Relatório de Investimento Estrangeiro Direto 2013” (fDi Report. 2013) [1], produzido pelo grupo inglês “Financial Times”, [...] há uma tendência de terciarização da economia global, o que significa afirmar que o volume de investimentos passa agora a se concentrar na área de serviços, destacando-se que nos últimos cinco anos ele tinha se concentrado na formatação de plataformas industriais em diversos países [...]”.</p>
+		
+			
+		<p id="citacao"><small>(BLUM, G. Tendências da terciarização da economia global: principais setores de “Investimento Estrangeiro Direto”. Ceiri Newspaper. Disponível em: http://www.jornal.ceiri.com.br).</small>	</p>
+		
+		<img src="t4q3.jpg" alt="a" class="imagem" width="320" height="260">
+		
+		<p id="p3">Um dos fatores, em termos macroeconômicos, que mais facilitaram a terciarização da economia foi:</p>
+		
+        <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) o avanço da globalização e a implantação de tecnologias no mundo do trabalho.</p>
+       
+	    <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) a difusão de perspectivas econômicas intervencionistas pelo mundo.</p>
+		
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) a diminuição das desigualdades entre as diferentes classes sociais.</p>
+		
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) a reafirmação das atividades primárias como centro da economia.</p>
+		
+		<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) o deslocamento financeiro para as atividades industrializadas.</p>
+    </div>
+	
+      
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+	    <p> Os setores primário e secundário, historicamente, sempre concentraram a maior parte das atividades produtivas, com uma grande dependência de mão de obra, seja essa qualificada ou não. No entanto, o processo de globalização e a difusão de maquinários permitiram uma maior mobilidade desse cenário, além da substituição do homem pela máquina no campo e nas indústrias, favorecendo, assim, o fenômeno da terciarização.  </p>
+    </div>
+	
+	
+	<div class="campo">
+		
+        <p class ="p2">Questão 04</p>
+			
+		<p id="p3">(Fuvest 2019) Segundo a Organização das Nações Unidas para a Alimentação e a Agricultura (FAO), anualmente, 1,3 bilhão de toneladas de alimentos (30% da produção total no planeta) é perdido em dois processos: o desperdício que se relaciona ao descarte de alimentos em bom estado e a perda ao longo da cadeia produtiva. O desperdício representa 46% e é muito maior nas regiões mais ricas. As perdas relativas ao circuito de produção representam 54% do total e são maiores nos países em desenvolvimento.</p>
+		
+			
+		<p id="citacao"><small>https://nacoesunidas.org/fao‐30‐de‐toda‐a‐comida‐produzida‐no‐mundo‐vaiparar‐no‐lixo. Adaptado.</small>	</p>
+		
+		<img src="t4q4.jpg" alt="a" class="imagem" width="320" height="260">
+		
+		<p id="citacao"><small> *pessoa que está sem alimento e/ou que ficou um dia todo sem comer várias vezes ao ano.</small></p>
+
+		<p id="citacao"><small> FAO. El estado de la seguridad alimentaria y la nutrición en el mundo.2018. Adaptado.</small></p>
+		
+		<p id="p3">Com base nas informações da FAO e em seus conhecimentos, indique a afirmação correta.</p>
+		       
+        <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) A produção de alimentos vem decaindo mundialmente devido aos problemas na logística de produção, o que tem provocado aumento da insegurança alimentar.  </p>
+       
+	    <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) Nos continentes mais desenvolvidos, a perda de alimentos devido ao sistema de transporte e armazenamento é a principal causa da inexistência da insegurança alimentar.  </p>
+		
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) O fato de parte significativa da população africana estar em estado de insegurança alimentar ocorre devido ao desperdício das monoculturas de cereais.</p>
+		
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) O controle rigoroso do desperdício explica o baixo percentual de pessoas em situação de insegurança alimentar na América Setentrional e na Europa. </p>
+		
+		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) Os dois diferentes processos que causam a enorme perda de alimentos no mundo refletem as desigualdades econômicas e sociais existentes entre os continentes.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+	    <p>	A insegurança alimentar é um flagelo que vitima parte expressiva da população mundial, sobretudo nos países do Sul pobre, a despeito do contínuo crescimento da produção de alimentos. Isso evidencia que o problema da fome não é resultado da escassez de alimentos – que ocorre, sem dúvida, em algumas regiões do planeta –, mas principalmente devido ao direcionamento da produção agrícola priorizando a atenção às demandas industriais e, nos países periféricos, o uso das maiores extensões e das mais férteis porções de suas áreas agricultáveis para o cultivo de gêneros comerciais e de exportação </p>
+		
+		<p>	a) incorreta. A produção agrícola no mundo aumenta, mas embalada pelo avanço da produção de commodities, relegando, assim, a produção de culturas alimentares a um papel secundário. </p>
+			
+		<p>	b) incorreta. A alternativa afirma que a insegurança alimentar é inexistente nos continentes mais ricos; o problema é muito pequeno, mas existe. </p>
+			
+		<p>	c) incorreta. O problema da fome na África se deve ao elevado número de pessoas com baixa renda e à baixa produtividade da agricultura de subsistência, que utiliza padrões tecnológicos mais rudimentares </p>
+			
+		<p>	d) incorreta. O texto fala que, nas regiões mais ricas, o desperdício é maior e o menor número de pessoas em insegurança alimentar se deve ao maior nível de renda média </p>
+			
+		<p>e) correta. Os dois diferentes processos que causam a enorme perda de alimentos no mundo refletem as desigualdades econômicas e sociais existentes entre os continentes. </p>
+
+ 
+    </div>
+	
+	
+			
+	<div class="campo">
+		
+        <p class ="p2">Questão 05</p>
+			
+		<p id="p3">(ENEM 2017) Procuramos demonstrar que o desenvolvimento pode ser visto como um processo de expansão das liberdades reais que as pessoas desfrutam. O enfoque nas liberdades humanas contrasta com visões mais restritas de desenvolvimento, como as que identificam desenvolvimento com crescimento do Produto Nacional Bruto, ou industrialização. O crescimento do PNB pode ser muito importante como um meio de expandir as liberdades. Mas as liberdades dependem também de outros determinantes, como os serviços de educação e saúde e os direitos civis.</p>
+		
+			
+		<p id="citacao"><small>SEN, A. Desenvolvimento como liberdade. São Paulo: Cia. das Letras, 2010.</small>	</p>
+		
+		
+		<p id="p3">A concepção de desenvolvimento proposta no texto fundamenta-se no vínculo entre</p>        
+      
+	   <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) incremento da indústria e atuação no mercado financeiro.</p>
+       
+	   <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) criação de programas assistencialistas e controle de preços.</p>
+	
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) elevação da renda média e arrecadação de impostos.</p>
+		
+		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) garantia da cidadania e ascensão econômica.</p>
+		
+		<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) ajuste de políticas econômicas e incentivos fiscais.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		 <p>  a) Incorreta. A industrialização é citada no texto como uma visão restrita de desenvolvimento e o texto não menciona nada sobre o mercado financeiro.</p>
+
+		<p> b) Incorreta. Inexiste no texto citação sobre programas assistencialistas ou controle de preços, deste modo não se pode concluir que a relação entre esses dois aspectos é a concepção proposta pelo texto.</p>
+
+		<p> c) Incorreta. Apesar da elevação da renda média estar presente no texto como forma de se expandir as liberdades, não há menção nenhuma à arrecadação de impostos como forma de se alcançar o desenvolvimento.</p>
+
+		<p> d) Correta. No início do texto, o autor define desenvolvimento como um “processo de expansão das liberdades”. Tal concepção fica evidente no final do texto quando o autor concorda que o “crescimento do PNB pode ser muito importante como meio de expandir as liberdades” fazendo referência à ascensão econômica. E ainda ressalva que para que as liberdades sejam alcançadas outros fatores são determinantes como a educação, saúde e direitos civis, fatores estes fundamentais para que as pessoas garantam sua cidadania e se tornem plenamente livres.</p>
+
+		<p> 	e) Incorreta. Não há no texto menção ao ajuste de políticas econômicas ou de incentivos fiscais como forma de se alcançar o desenvolvimento.</p>
+
+    </div>
+		
+		
+				 
+	<div class="campo">
+		
+        <p class ="p2">Questão 06</p>
+			
+		
+		<p id="p3">(FTD 2016) […] Um estudo do Banco Mundial […] aponta que as políticas de segurança adotadas por três estados do Sudeste foram importantes para reduzir os índices de homicídio na região. […] De acordo com Berthet [Rodrigo Serrano-Berthet, coordenador do estudo], outros fatores socioeconômicos também contribuíram para a queda de homicídios na região, como a redução da proporção de jovens de 15 a 29 anos na população (parcela que mais comete e é vítima desse tipo de crime), a redução das desigualdades sociais e a melhoria dos indicadores educacionais. Um estudo feito pelo Banco Mundial com o Bolsa Família de São Paulo mostrou que o programa teve impacto na queda da violência, na medida em que permitiu que os jovens de 16 a 17 anos ficassem mais tempo na escola.[…]</p>
+					
+		<p id="citacao"><small>ABDALA, Vitor. Região Sudeste foi a única a reduzir taxa de assassinatos entre 1998 e 2008, diz Banco Mundial. Agência Brasil, 22 mar. 2013. Disponível em: <http://memoriaebc.com.br>. Acesso em: 6 abr. 2016.</small>	</p>
+		
+		<p id="p3">A leitura do texto demonstra que ações públicas voltadas à economia e educação</p>
+		           
+        <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) revelam melhorias nos sistemas de saúde do país.</p>
+       
+	    <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) refletem diretamente na queda dos índices de violência.</p>
+		
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) têm contribuído para aumentar os níveis de violência escolar.</p>
+		
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) reduziram o número de jovens entre 15 e 29 anos.</p>
+		
+		<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) pouco interferem na segurança dos cidadãos locais.</p>
+    </div>
+	
+	
+
+		
+			
+	<div class="campo">	
+        <p class ="p2">Questão 07</p>
+			
+		<p id="p3">(PUC-RS 2012) Não é simples estabelecer critérios para aferir as condições de vida de uma população, mas é sempre verdade que quem não tem o que comer está em situação de carência extrema. A Organização das Nações Unidas para Agricultura e Alimentação (FAO) calculou a existência de 923 milhões de pessoas com fome no mundo em 2007.</p>
+		
+		<p id="p3">Um fator agravante para esse fato é/são</p>
+					        
+        <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) a desigualdade de acesso (de poder de compra) aos alimentos, cada vez mais caros, que exclui parcelas de população já comprometidas com a falta de uma nutrição adequada.</p>
+       
+	    <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) o índice de crescimento vegetativo mundial, que tem sido superior ao índice de produção de alimentos no Planeta, reafirmando a Teoria Malthusiana.</p>
+		
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) as beligerâncias civis, regionais e internacionais, que assolam as populações famintas que vivem em países ricos.</p>
+		
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) as novas tecnologias utilizadas na produção alimentar, que originam alimentação deficitária e crise nutricional.</p>
+		
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) as empresas que dominam o comércio de grãos no mercado internacional e tendem a garantir apenas em seus países de origem um consumo ideal de calorias/homem/dia, do tipo fast-food.</p>
+    </div>
+	
+	
+
+		
+			
+	<div class="campo">
+		
+        <p class ="p2">Questão 08</p>
+			
+		<p id="p3">(Fuvest 2010) "Pela primeira vez na história da humanidade, mais de um bilhão de pessoas, concretamente 1,02 bilhão, sofrerão de subnutrição em todo o mundo. O aumento da insegurança alimentar que aconteceu em 2009 mostra a urgência de encarar as causas profundas da fome com rapidez e eficácia."</p>
+		
+		<p id="p3">	Relatório da Organização das Nações Unidas para a Agricultura e Alimentação [FAO], primeiro semestre de 2009.</p>
+		
+		<p id="p3">Tendo em vista as questões levantadas pelo texto, é correto afirmar que</p>
+       
+        <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) a principal causa da fome e da subnutrição é a falta de terra agricultável para a produção de alimentos necessários para toda a população mundial.</p>
+      
+		<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) a proporção de subnutridos e famintos, de acordo com os dados do texto, é inferior a 10% da população mundial.</p>
+		
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) as principais causas da fome e da subnutrição são disparidades econômicas, pobreza extrema, guerras e conflitos.</p>
+		
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) as consequências da subnutrição severa em crianças são revertidas com alimentação adequada na vida adulta.</p>
+		
+		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) o uso de organismos geneticamente modificados na agricultura tem reduzido a subnutrição nas regiões mais pobres do planeta.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>a) Incorreta. O problema da fome não está relacionado à falta de terra agricultável, mas sim à questão da distribuição dos alimentos existentes para toda a população mundial.</p>
+
+		<p>b) Incorreta. A proporção de subnutridos e famintos mostra-se superior a 10% da população mundial, uma vez que segundo o texto atingem 1,02 bilhões de habitantes dos aproximadamente 6,5 bilhões de habitantes do planeta.</p>
+
+		<p>c) Correta. As causas da fome no mundo são múltiplas, mas podem estar relacionadas às disparidades econômicas, pobreza, guerras e conflitos pelo mundo.</p>
+
+		<p>d) Incorreta. As consequências da subnutrição na infância não podem ser revertidas na vida adulta e devem ser combatidas na população infantil.</p>
+				
+		<p>e) Incorreta. O uso de OGMs não reduziu a subnutrição, pois exige grandes investimentos e está concentrado nas regiões mais ricas do planeta, distante da grande massa de famintos.</p>
+
+    </div>
+		
+		
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 09</p>
+			
+		<p id="p3">(CPS 2008) Um jornalista está escrevendo um texto sobre o desenvolvimento desigual dos países no mundo atual com base nos dados da tabela a seguir.</p>
+			
+		<img src="t4q9.jpg" alt="a" class="imagem" width="320" height="260">
+			
+		<p id="p3">Um título adequado a esse texto jornalístico seria:</p>
+            
+        <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) Subdesenvolvidos primário-exportadores alcançam revoluções industriais e médios investimentos globais em ciência e tecnologia.</p>
+      
+	    <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) Analfabetismo mundial é erradicado pelo nível tecnológico e pelos investimentos científicos dos países desenvolvidos.</p>
+		
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) O segredo do desenvolvimento é a popularização de mercadorias tecnológicas entre pobres e analfabetos.</p>
+		
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) Desenvolvimento socioeconômico exige bons investimentos em educação básica, ciência e tecnologia.</p>
+		
+		<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) Países desenvolvidos diminuem taxas de alfabetização e estabilizam investimentos em ciência e tecnologia.</p>
+    </div>
+	
+	
+	
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 10</p>
+			
+		<p id="p3">(ENEM 2006) A tabela a seguir apresenta dados relativos a cinco países.</p>
+		
+		<img src="t4q10.jpg" alt="a" class="imagem" width="320" height="260">
+			
+		<p id="p3">Com base nessas informações, infere-se que </p>
+		      
+        <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) a educação tem relação direta com a saúde, visto que é menor a mortalidade de filhos cuja mães possuem maior nível de escolaridade, mesmo em países onde o saneamento básico é precário. </p>
+       
+	    <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) o nível de escolaridade das mães tem influência na saúde dos filhos, desde que, no país em que eles residam, o abastecimento de água favoreça, pelo menos, 50% da população. </p>
+		
+		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) a intensificação da educação de jovens e adultos e a ampliação do saneamento básico são medidas suficientes para se reduzir a zero a mortalidade infantil. </p>
+		
+		<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) mais crianças são acometidas pela diarreia no país III do que no país II. </p>
+		
+		<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) a taxa de mortalidade infantil é diretamente proporcional ao nível de escolaridade das mães e independe das condições sanitárias básicas.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>	O nível de escolaridade das mães reflete as condições socioeconômicas do grupo familiar. Quanto mais elevado o nível educacional das mães, melhores serão os meios de criação e de sobrevivência dos filhos, mesmo em áreas onde o saneamento básico seja precário. Levando-se em conta os países com precariedade de saneamento básico, as mães com maior escolaridade tenderão a dar melhores condições de sobrevivência a seus filhos.</p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+	
+	
+	<div class = "area">
+    <img src="" id="imagem" style="display:none" alt="" width = "280" height="200">
+	</div>
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	 
+	 
+	     
+	     
+</script>
+
+<script>
+ 
+	 function mudaQuest(){
+		var t = document.getElementsByClassName("p2");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.fontFamily = tipo[fonte];
+			
+		
+			} 
+		}
+		
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				 
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			//(pq1.includes("leite")||(pq1.includes("gato"))||(pq1.includes("pato")))
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                				
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "d") {
+                corretas++;
+                document.getElementById("q2d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "a") {
+                corretas++;
+                document.getElementById("q3a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3a").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "e") {
+                corretas++;
+                document.getElementById("q4e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4e").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "d") {
+                corretas++;
+                document.getElementById("q5d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "b") {
+                corretas++;
+                document.getElementById("q6b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6b").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "a") {
+                corretas++;
+                document.getElementById("q7a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "c") {
+                corretas++;
+                document.getElementById("q8c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8c").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "d") {
+                corretas++;
+                document.getElementById("q9d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9d").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "a") {
+                corretas++;
+                document.getElementById("q10a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10a").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

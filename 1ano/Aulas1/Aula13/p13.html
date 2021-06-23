@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p1Aula13</title>
+
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+
+		p {
+			padding: 10px;
+			background-color: #fff;
+
+		}
+	</style>
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+
+
+
+
+	</div>
+
+
+
+
+
+	<h1 class="h1"> Questões aula 13 – Ciclo das Rochas </h1>
+
+
+	<p><strong>Conteúdo:</strong> Mineral; tipos de rochas: magmáticas, metamórficas, sedimentares; fóssil; litificação.
+	</p>
+
+
+	<p><strong>Objetivo:</strong> Diferenciar os tipos de rochas com base em seu processo de formação. </p>
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+			<p> (UEMA 2019) Leia o texto a seguir para responder à questão </p>
+
+			<p> Rocha é um agregado natural, formada por um ou mais minerais, ou ainda mineraloides — vidro
+				vulcânico e matéria orgânica -, constituindo a parte essencial da crosta terrestre. Elas podem ser
+				classificadas de acordo com sua composição química, sua forma estrutural, ou sua textura, porém a sua
+				classificação mais utilizada se refere aos processos de sua formação. </p>
+
+			<p> Pelas suas origens-formação, as rochas são classificadas como ígneas ou magmáticas, sedimentares
+				e metamórficas. As rochas magmáticas foram formadas de magma, dentro da crosta, por resfriamento lento
+				ou fora dela, resfriando rapidamente; as sedimentares, pela deposição de sedimentos e, posterior
+				compressão destes, e as rochas metamórficas por qualquer uma das primeiras duas categorias e,
+				posteriormente, modificadas pelos efeitos de temperatura e de pressão. </p>
+
+			<p> Essas formações são de grande utilidade para o ser humano e, atualmente, as rochas são
+				utilizadas na construção civil de diversas formas. Elas são retiradas da natureza em estado bruto e, em
+				seguida, são modeladas de acordo com a finalidade de uso. </p>
+
+
+			<p class="citacao"> Fonte: http://www.cprm.gov.br </p>
+
+
+
+			<p> São exemplos de rochas magmáticas e metamórficas e suas utilidades, respectivamente </p>
+
+			<div class="w3-padding ">
+				<table class="w3-table-all w3-tiny">
+					<thead>
+						<tr class="w3-light-grey">
+							<th>Magmática</th>
+							<th>Utilidade</th>
+							<th>Metamórfica</th>
+							<th>Utilidade</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>a) Arenito</td>
+						<td>Construção de estradas</td>
+						<td>Granito</td>
+						<td>Ornamentação</td>
+					</tr>
+					<tr>
+						<td>b) Diabásio</td>
+						<td>Vidro</td>
+						<td>Calcário</td>
+						<td>Cimento</td>
+					</tr>
+					<tr>
+						<td>c) Gnaisse</td>
+						<td>Gesso</td>
+						<td>Carvão Mineral</td>
+						<td>Imã</td>
+					</tr>
+					<tr>
+						<td>d) Quartzito</td>
+						<td>Paredes</td>
+						<td>Calcita</td>
+						<td>Cal</td>
+					</tr>
+					<tr>
+						<td>e) Basalto</td>
+						<td>Brita</td>
+						<td>Mármore</td>
+						<td>Construção Civil</td>
+					</tr>
+
+				</table>
+			</div>
+
+
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
+				a)
+				Letra A</p>
+
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b)
+				Letra B </p>
+
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c)
+				Letra C</p>
+
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
+				Letra D</p>
+
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> e)
+				Letra E</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p> (UPF 2017) Observe o infográfico sobre o ciclo das rochas e, com base nas informações e nos seus
+				conhecimentos, analise as afirmativas que seguem. </p>
+
+			<div class="w3-center"><img src="p13q2.png" class="w3-mobile"></div>
+
+			<p> I. As rochas magmáticas podem se formar lentamente no interior da crosta terrestre pela
+				solidificação do magma, sendo chamadas de rochas magmáticas intrusivas ou plutônicas ou abissais.
+				<br><br>
+
+				II. O conjunto de processos que transforma sedimentos inconsolidados em rocha sedimentar é conhecido
+				como diagênese. <br><br>
+
+				III. São exemplos de rochas metamórficas o arenito, o mármore e o granito.
+
+				IV. O ciclo das rochas é ininterrupto e ocorre com os movimentos da crosta terrestre, com o vulcanismo,
+				com o intemperismo ou com a erosão, por exemplo. <br><br>
+			</p>
+
+			<p> É correto apenas o que se afirma em: </p>
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
+				I e IV. </p>
+
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
+				III e IV. </p>
+
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c)
+				I, II e III. </p>
+
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d)
+				I, II e IV</p>
+
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
+				II, III e IV. </p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p> (UCPEL-RS 2015) A rocha é um agregado natural formado por um ou mais minerais. De acordo com sua
+				origem, as rochas podem ser classificadas de diferentes maneiras.</p>
+
+			<p> Leia as informações sobre os diferentes tipos de rochas, classificadas quanto à origem.</p>
+
+			<p> I. São formadas pelo resfriamento e pela solidificação do magma pastoso. Uma grande parte dessas
+				rochas é bastante antiga e resistente. Predominam entre ela o granito e o diabásio. Constituem o
+				embasamento rochoso dos continentes.</p>
+
+			<p> II. São formadas a partir das transformações sofridas por outras rochas. Essas mudanças ocorrem,
+				quando as rochas são submetidas ao calor e à pressão do interior da Terra. A rocha transformada adquire
+				novas características e tem sua composição alterada. </p>
+
+			<p> III. São rochas de origem química, em que os sedimentos se acumulam e se consolidam em camadas
+				ou estratos. Decorrem dos processos que desgastam e sedimentam a superfície terrestre. </p>
+
+			<p> É correto afirmar que os tipos de rochas referidos são, respectivamente,</p>
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
+				estalactite, estalagmite e minerais.</p>
+
+
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
+				minerais, sedimentares e estalactite</p>
+
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
+				magmáticas, sedimentares e metamórficas.</p>
+
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
+				ígneas, magmáticas e minerais.</p>
+
+
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e)
+				ígneas, metamórficas e sedimentares </p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p> (UNESP 2013) As rochas, que podem ser divididas em três grandes grupos, estão em constante
+				transformação, passando de um tipo a outro, em virtude das dinâmicas interna e externa da Terra. O
+				chamado “Ciclo das Rochas” ilustra as diversas possibilidades de transformação de um tipo de rocha em
+				outro. </p>
+
+			<p class="citacao"> (Wilson Teixeira et al. (Orgs.). Decifrando a Terra, 2009. Adaptado.) </p>
+
+			<p> A partir do exame da figura, é correto afirmar que as letras X, Y e Z correspondem,
+				respectivamente, a:</p>
+
+			<div class="w3-center"><img src="p13q4.png" class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a)
+				metamórficas, sedimentares e ígneas.</p>
+
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
+				metamórficas, ígneas e sedimentares</p>
+
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c">c)
+				sedimentares, metamórficas e ígneas.</p>
+
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> c)
+				sedimentares, metamórficas e ígneas.</p>
+
+			<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e"> e)
+				ígneas, sedimentares e metamórficas</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 05</p>
+
+			<p> (ENEM 2010) </p>
+
+			<div class="w3-center"><img src="p13q5.png" class="w3-mobile"></div>
+
+			<p> O esquema mostra depósitos em que aparecem fósseis de animais do Período Jurássico. As rochas em
+				que se encontram esses fósseis são:</p>
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
+				magmáticas, pois a ação de vulcões causou as maiores extinções desses animais já conhecidas ao longo da
+				história terrestre.</p>
+
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required"  id="pq5" name="pq5" value="b"> b)
+				sedimentares, pois os restos podem ter sido soterrados e litificados com o restante dos sedimentos</p>
+
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
+				magmáticas, pois são as rochas mais facilmente erodidas, possibilitando a formação de tocas que foram
+				posteriormente lacradas.</p>
+
+			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
+				sedimentares, já que cada uma das camadas encontradas na figura simboliza um evento de erosão dessa área
+				representada. </p>
+
+			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e)
+				metamórficas, pois os animais representados precisavam estar perto de locais quentes.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<p> <strong>Comentário:</strong></p>
+
+			<p> As rochas ilustradas são sedimentares, formadas pela deposição de sedimentos provenientes de rochas mais
+				antigas e restos de matéria orgânica animal e vegetal. A deposição, combinada a outros processos
+				geológicos — como a litificação, a compactação e a cimentação —, originaram essas rochas, que apresentam
+				como uma das suas principais características a estratificação de camadas. </p>
+
+			<p> a) errado, pois as erupções vulcânicas não foram a maior causa da morte dos animais do período
+				jurássico, e
+				sim a queda de asteroides.</p>
+
+			<p> b) correto, porque a formação dessas rochas vem de uma série de fatores, tal como a formação de
+				sedimentos
+				por parte de matéria orgânica e inorgânica, tal como animais, vegetais, rochas e outros processos
+				geológicos.</p>
+
+			<p> c) errado, pois não há relação dessas supostas tocas, e sim um processo natural como citado na
+				alternativa B
+				que ocorreu em milhões de anos.</p>
+
+			<p> d) errado, porque não é necessária uma erosão para ocorrer o processo de sedimentação, e sim o acúmulo
+				de
+				matéria ao longo dos anos.</p>
+
+			<p> e) errado, pois as rochas metamórficas são resultados de uma combinação entre outras rochas e a
+				temperatura.
+			</p>
+
+
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 06</p>
+
+			<p> (UFV 2009) O relevo terrestre é extremamente dinâmico e está sujeito às ações de forças
+				endógenas e exógenas. Em relação ao relevo terrestre e seus agentes de formação, assinale a afirmativa
+				INCORRETA: </p>
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required"  name="pq6" value="a"> a)
+				Intemperismo é um conjunto de processos físicos, químicos e biológicos que operam na superfície
+				terrestre ocasionando a desintegração e decomposição das rochas</p>
+
+			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required"  name="pq6" value="b"> b)
+				b) Os agentes climáticos têm forte influência na desagregação mecânica e química das rochas, deixando
+				como consequência um espesso manto de intemperismo</p>
+
+			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required"  name="pq6" value="c"> c)
+				As bacias sedimentares recebem material produzido pela ação do intemperismo químico, físico e biológico
+				disponibilizados pelos efeitos dos agentes endógenos</p>
+
+			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d)
+				Os movimentos tectônicos verticais são chamados de orogênese, tendo sido as grandes cordilheiras atuais
+				formadas por esses movimentos</p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 07</p>
+
+			<p> (UEG 2008) A crosta é a parte sólida do globo terrestre. É constituída por três grandes grupos
+				de rochas que se formam sob condições e em períodos diferentes, originando uma diversidade de tipos
+				específicos. Sobre a origem das rochas, é CORRETO afirmar: </p>
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a)
+				As rochas magmáticas são resultantes do processo de solidificação do magma e se dividem em dois grupos:
+				intrusivas e extrusivas</p>
+
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required"  name="pq7" value="b">b)
+				As rochas ígneas são oriundas da transformação físico-química de outras previamente existentes. São
+				exemplo desse tipo de rocha o mármore e o gnaisse. </p>
+
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required"  name="pq7" value="c"> c)
+				Rochas sedimentares são formadas, sobretudo, pela deposição de detritos de rochas preexistentes ou de
+				matéria orgânica, sendo o granito o tipo de rocha sedimentar de maior ocorrência. </p>
+
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required"  name="pq7" value="d"> d)
+				As rochas extrusivas são formadas quando o magma se resfria e se solidifica no interior da crosta
+				terrestre, dando origem a rochas como o basalto e o arenito</p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+	
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 08</p>
+
+			<p >(UDESC 2011) As rochas e os minerais são importantes recursos para as sociedades. Observando a construção de uma casa, podem-se encontrar várias rochas e minerais. Assim, relacione a primeira coluna (elementos de uma casa) com a segunda coluna (rochas e minerais). </p>
+
+			<div class="w3-padding ">
+				<table class="w3-table-all">
+					<thead>
+						<tr class="w3-light-grey">
+						
+						</tr>
+					</thead>
+					<tr>
+						<td>(1) telhado</td>
+						<td>( ) ferro e zinco</td>
+					
+					</tr>
+					<tr>
+						<td>(2) calhas</td>
+						<td>( ) mármore, granito e ardósia</td>
+					
+					</tr>
+
+					<tr>
+						<td>(3) pisos de pedra</td>
+						<td>( ) calcário (cimento), quartzo (areia), basalto (brita)
+
+						</td>
+					
+					</tr>
+					<tr>
+						<td>(4) pilares</td>
+						<td>( ) argila</td>
+					
+					</tr>
+					<tr>
+						<td>(5) paredes</td>
+						<td>( ) argila (tijolo), calcário (cimento) e quartzo (areia)</td>
+					
+					</tr>
+					
+
+				</table>
+			</div>
+		
+
+			<p>A alternativa correta, de cima para baixo, é: </p>
+
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a">
+				a) 2 – 3 – 4 – 1 – 5
+			
+			</p>
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b"> 
+				b) 1 – 2 – 3 – 4 – 5
+			
+			</p>
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
+				c) 5 – 4 – 1 – 2 – 3
+			
+			</p>
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d"> 
+				d) 3 – 1 – 5 – 4 – 2
+			
+			</p>
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
+				e) 4 – 5 – 2 – 1 – 3
+			
+			</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 09</p>
+
+			<p> […] Utilizando um novo método de datação de rochas, pesquisadores relacionaram com precisão a
+				Província Magmática do Atlântico Central, série de grandes erupções ocorridas há cerca de 200 milhões de
+				anos, com a Quarta Grande Extinção pela qual a Terra passou.</p>
+
+			<p> O texto permite identificar que as rochas estudadas foram : </p>
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required"  name="pq9" value="a"> a)
+				expelidas desde o núcleo em estado sólido.</p>
+
+
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b)
+				formadas a partir da solidificação do magma.</p>
+
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required"  name="pq9" value="c"> c)
+				configuradas a partir da deposição de sedimentos.</p>
+
+
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required"  name="pq9" value="d"> d)
+				encontradas em estado líquido pelos pesquisadores</p>
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+
+		</div>
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 10</p>
+
+			<p> O intemperismo é um tipo de agente de transformação de relevo caracterizado por atuar através de
+				processos químicos, físicos e biológicos, transformando as rochas. O tipo de rocha formada pela ação do
+				intemperismo é a: </p>
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required"  name="pq10"
+					value="a"> a) ígnea.</p>
+
+			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b">
+				b) sedimentar.</p>
+
+			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required"  name="pq10" value="c">
+				c) granítica.</p>
+
+			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required"  name="pq10" value="d">
+				d) metamórfica</p>
+
+			<p class="bordaQuestoes" id="q10e"><input type="radio" required="required"  name="pq10" value="e">
+				e) intrusiva.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+	<script>
+
+
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "a") {
+				corretas++;
+				document.getElementById("q1e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+
+				document.getElementById("q1e").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq2 == "d") {
+				corretas++;
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+
+			}
+			if (pq3 == "e") {
+				corretas++;
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "c") {
+				corretas++;
+				document.getElementById("q4c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+
+				document.getElementById("q4c").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "b") {
+				corretas++;
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "d") {
+				corretas++;
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "a") {
+				corretas++;
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "a") {
+				corretas++;
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "b") {
+				corretas++;
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "b") {
+				corretas++;
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+			}
+
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			document.getElementById("resp8").innerHTML = pq8;
+
+
+
+
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p1Aula26</title>
+
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+
+		p {
+			padding: 10px;
+			background-color: #fff;
+
+		}
+	</style>
+
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+
+
+
+
+	</div>
+
+
+
+	<h1 class="h1"> Questões aula 26 – Sistemas fluviais </h1>
+
+
+	<p><strong>Conteúdo:</strong> Rios meandrantes, deltas, estuário, perfil longitudinal, bacias hidrográficas e erosão
+		fluvial.
+	</p>
+
+
+	<p><strong>Objetivo:</strong> Compreender a importância dos estudos sobre os rios para a dinâmica social e física do
+		planeta.
+	</p>
+
+
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+			<p>No esquema de um curso de água, abaixo, indique a nascente, a foz e os cursos superior, médio e inferior,
+				associando aos respectivos trechos assinalados com A, B e C. </p>
+
+
+
+			<div class="w3-center"><img src="p26q1.png" alt="p26q1" class="w3-mobile"></div>
+
+
+
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
+
+				a) A – Curso inferior, foz. B – Curso médio. C – Curso superior; nascente.
+
+			</p>
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b">
+
+				b) A – Curso montanhoso, nascente. B – Curso médio; meandro. C – Margem direita; foz.
+			</p>
+
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c">
+
+				c) A – Curso superior, nascente. B – Curso médio. C – Curso inferior; foz.
+
+			</p>
+
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d">
+
+				d) A – Curso superior, erosão. B – Curso médio, transporte. C – Curso inferior; sedimentação.
+
+			</p>
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p> (IFRS 2016) Considera-se recurso hídrico: </p>
+
+			<div class="w3-center"><img src="p26q2.png" alt="p26q2" class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
+				toda a água utilizada como bem econômico e que se encontra disponível para tal utilização.</p>
+
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
+				elemento natural renovável através do ciclo hidrológico e essencial à vida, não necessariamente
+				vinculado a algum uso.</p>
+
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c)
+				toda a água presente em lagos, rios, represas e aquíferos subterrâneos, também chamada de águas
+				interiores.</p>
+
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d)
+				toda a água doce do planeta, definida como aquela que apresenta baixo teor de salinidade.</p>
+
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
+				toda a água presente no planeta, nos estados líquido, sólido e gasoso.</p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p> (UFJF MG 2014) Observe a figura a seguir: </p>
+
+			<div class="w3-center"><img src="p26q3.png" alt="p26q3" class="w3-mobile"></div>
+
+			<p> Sobre o sistema fluvial, é correto afirmar que: </p>
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
+				a erosão fluvial é menor na área de deposição, em função do menor fluxo de drenagem e capacidade de
+				transporte.</p>
+
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
+				o divisor de drenagem delimita a área da bacia hidrográfica, definindo a área de escoamento e
+				infiltração no seu interior.</p>
+
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
+				o ganho de água num sistema fluvial se dá pelo fluxo que chega aos oceanos, a evaporação e pelo
+				escoamento de águas pluviais.</p>
+
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
+				os rios depositam seus sedimentos adjacentes aos seus canais, principalmente no período das secas, em
+				função do menor volume de águas.</p>
+
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e)
+				os sedimentos transportados pelo sistema fluvial são importantes na manutenção da qualidade e quantidade
+				de água
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p> (Unicamp 2011) Em 1902 os paulistas organizam o primeiro campeonato de futebol no Brasil. No
+				mesmo ano, surgem os primeiros campos de várzea, que logo se espalham pelos bairros operários, e já em
+				1908/1910, a várzea paulistana congregava vários e concorridos campeonatos, de forma que São Paulo não é
+				apenas pioneira nacional no futebol “oficial”, mas também, e sobretudo, no “futebol popular”. <br>A
+				retificação dos rios Pinheiros e Tietê, a partir dos anos 1950, eliminou da paisagem urbana inúmeros
+				campos de várzea, provavelmente mais de uma centena.</p>
+
+			<div class="w3-center"><img src="p26q4.png" alt="p26q4" class="w3-mobile"></div>
+
+			<p class="citacao"> (Adaptado de G.M. Jesus, “Várzeas, operários e futebol: uma outra Geografia”.
+				Geographia. Rio de Janeiro, v. 4, n. 8, p. 84-92, 2002.) </p>
+
+			<p> Várzea é uma forma geomorfológica associada às margens de rios caracterizadas pela topografia
+				plana (o que facilita o uso como campos de futebol) e</p>
+
+			<p> Alternativas</p>
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a)
+				sujeita a inundações periódicas anuais, quando ocorre a deposição de sedimentos finos. Está posicionada
+				entre o terraço e o rio.</p>
+
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
+				sujeita a inundações apenas em anos muito chuvosos, quando ocorre a deposição de sedimentos grossos.
+				Está posicionada entre o terraço e o rio.</p>
+
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c)
+				sujeita a inundações periódicas anuais, quando ocorre a deposição de sedimentos finos. Está posicionada
+				entre a vertente e o terraço.</p>
+
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d)
+				sujeita a inundações apenas em anos muito chuvosos, quando ocorre a deposição de sedimentos finos. Está
+				posicionada entre a vertente e o terraço.</p>
+
+
+			<div class="comentarios">
+				<!-- <p> <strong>Comentário:</strong></p>
+		
+					<p> Colocar os comentários aqui. </p> -->
+			</div>
+
+
+
+			<div class="w3-card-4">
+
+				<p class="p2">Questão 05</p>
+
+				<p> (UFRGS-RS 2011) As figuras abaixo representam uma comparação entre um riacho natural e outro
+					canalizado.</p>
+
+				<div class="w3-center"><img src="p26q5.png" alt="p26q5" class="w3-mobile"></div>
+
+				<p> Considere as seguintes afirmações, sobre os efeitos da canalização na dinâmica de um curso
+					d’água.</p>
+
+				<p> I - A retirada da cobertura vegetal ocasiona o desaparecimento da sombra, causando danos à flora
+					e aos organismos aquáticos sensíveis ao calor.</p>
+
+				<p> II - A eliminação dos meandros fluviais e da cobertura vegetal aumenta a velocidade das águas do
+					riacho.</p>
+
+				<p> III - A canalização consiste em retilinizar, aprofundar e revestir leitos fluviais, com o
+					objetivo de aumentar a capacidade de infiltração dos solos e, assim, diminuir o extravasamento do
+					leito
+					fluvial.</p>
+
+				<p> Quais estão corretas?</p>
+
+				<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
+					Apenas I.</p>
+
+				<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b)
+					apenas II.</p>
+
+				<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
+					apenas III.</p>
+
+				<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
+					apenas I e II.</p>
+
+				<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e)
+					I, II e III.</p>
+			</div>
+
+
+
+			<div class="comentarios">
+				<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+			</div>
+
+
+			<div class="w3-card-4">
+
+				<p class="p2">Questão 06 </p>
+
+				<p> (UECE 2008) sobre a dinâmica natural dos rios, assinale o INCORRETO.</p>
+
+				<div class="w3-center"><img src="p26q6.png" alt="p26q6" class="w3-mobile"></div>
+
+				<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a)
+					No alto curso, prevalecem as ações de erosão e os rios tendem a entalhar fortemente os seus vales.
+				</p>
+
+				<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b)
+					No baixo curso, prevalecem os processos de deposição com a formação de planícies fluviais.</p>
+
+				<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c)
+					Nas desembocaduras, a deposição é feita com materiais sedimentares grosseiros e com seixos,
+					denotando
+					alta energia dos rios.</p>
+
+				<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d"> d)
+					Os perfis longitudinais dos rios são traçados desde as nascentes até a foz; os perfis transversais
+					correspondem às configurações dos vales fluviais.</p>
+
+
+			</div>
+
+
+
+			<div class="comentarios">
+				<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+			</div>
+
+
+			<div class="w3-card-4">
+
+				<p class="p2">Questão 07</p>
+
+				<p> (UFPEL 2007) Os rios constituem um elemento essencial para o ser humano, desde os primórdios da
+					humanidade até os dias atuais. Além de sua importância natural, destaca-se também sua funcionalidade
+					política, econômica e social. Os rios são correntes de água doce que se formam a partir de uma
+					precipitação (chuva ou neve) ou de fontes naturais. Em uma bacia hidrográfica, e possível
+					identificar
+					diferentes elementos e características no percurso de um rio. </p>
+
+				<div class="w3-center"><img src="p26q7.png" alt="p26q7" class="w3-mobile"></div>
+
+				<p>Com base nos dados acima e em seus conhecimentos, assinale a alternativa que apresenta a relação
+					correta dos elementos e características identificados na figura. </p>
+
+
+				<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a)
+					(4) Nascente, (3) Afluente, (2) Meandro, (1) Foz em Delta, (5) Margem esquerda e (6) Margem direita.
+				</p>
+
+				<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b)
+					(6) Nascente, (2) Afluente, (4) Meandro, (1) Foz em Delta, (5) Margem esquerda e (3) Margem direita.
+				</p>
+
+				<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c)
+					(4) Nascente, (2) Afluente, (5) Meandro, (1) Foz em Delta, (6) Margem esquerda e (3) Margem direita.
+				</p>
+
+				<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d"> d)
+					(6) Nascente, (3) Afluente, (2) Meandro, (4) Foz em Delta, (5) Margem esquerda e (1) Margem direita.
+				</p>
+
+				<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e"> e)
+					(2) Nascente, (1) Afluente, (4) Meandro, (3) Foz em Delta, (6) Margem esquerda e (5) Margem direita.
+				</p>
+			</div>
+
+
+
+			<div class="comentarios">
+				<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+			</div>
+
+
+			<div class="w3-card-4">
+
+				<p class="p2">Questão 08</p>
+
+				<p> (UFOP-MG 2005) A figura apresenta áreas de ocorrência de água doce. </p>
+
+				<div class="w3-center"><img src="p26q8.png" alt="p26q8" class="w3-mobile"></div>
+
+				<p> Considerando os dados da legenda e seus conhecimentos sobre a questão da água como fator
+					estratégico para a humanidade, assinale a opção correta: </p>
+
+				<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a"> a)
+					A figura mostra que há grande disponibilidade mundial de água nos continentes e que não há
+					fundamento
+					para as preocupações sobre uma crise futura em relação à sua oferta</p>
+
+				<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b"> b)
+					As regiões onde há escassez de água são também as regiões onde se verifica que a população
+					desperdiça
+					mais os recursos hídricos disponíveis.</p>
+
+				<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c"> c)
+					As zonas polares apresentam maior ocorrência de água, facilmente utilizável por ser água de
+					superfície
+					disponível na forma de gelo.</p>
+
+				<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d"> d)
+					O Brasil apresenta 14% do recurso hídrico mundial, sendo que a distribuição dos mananciais de água
+					doce
+					se situam predominantemente na região amazônica.</p>
+
+
+
+			</div>
+
+
+
+			<div class="comentarios">
+				<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+
+			</div>
+
+			<div class="w3-card-4">
+
+				<p class="p2">Questão 09</p>
+
+				<p> (ENEM 2004) Por que o nível dos mares não sobe, mesmo recebendo continuamente as águas dos rios?
+					Essa questão já foi formulada por sábios da Grécia antiga. Hoje responderíamos que: </p>
+
+				<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a"> a)
+					a evaporação da água dos oceanos e o deslocamento do vapor e das nuvens compensam as águas dos rios
+					que
+					deságuam no mar.</p>
+
+				<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b"> b)
+					a formação de geleiras com água dos oceanos, nos polos, contrabalança as águas dos rios que deságuam
+					no
+					mar.</p>
+
+				<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c)
+					as águas dos rios provocam as marés, que as transferem para outras regiões mais rasas, durante a
+					vazante.</p>
+
+				<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d"> d)
+					o volume de água dos rios é insignificante para os oceanos e a água doce diminui de volume ao
+					receber
+					sal marinho.</p>
+
+				<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e"> e)
+					as águas dos rios afundam no mar devido a sua maior densidade, onde são comprimidas pela enorme
+					pressão
+					resultante da coluna de água.</p>
+			</div>
+
+
+
+			<div class="comentarios">
+				<p> <strong>Comentário:</strong></p>
+
+				<p> A água dos mares está em permanente processo de evaporação e a massa de água que passa para o estado
+					gasoso é compensada pela massa de água que os mares recebem dos rios. Há, entretanto, outros
+					fatores,
+					como infiltração de água, que também contribuem para a manutenção do nível dos mares. </p>
+			</div>
+
+
+
+
+
+
+
+
+			<div class="w3-card-4">
+
+				<p class="p2">Questão 10</p>
+
+				<p> (Unesp 2003) Um rio escava seu leito e aprofunda seu vale ao longo do tempo. </p>
+
+				<div class="w3-center"><img src="p26q10.png" alt="p26q10" class="w3-mobile"></div>
+
+				<p> Assinale a alternativa que contém fatores responsáveis pela maior intensidade deste trabalho.
+				</p>
+
+
+
+				<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a">
+					a) Vazão elevada, pequena velocidade da água escoada e transporte de poucos sedimentos.</p>
+
+				<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b">
+					b) Baixa pluviosidade, baixa declividade do terreno e pequena velocidade da água escoada.</p>
+
+
+				<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c">
+					c) Vazão elevada, alta velocidade da água escoada e transporte de grande quantidade de sedimentos.
+				</p>
+
+				<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
+					d) Baixa declividade do terreno, alta velocidade da água escoada e transporte de grande quantidade
+					de
+					sedimentos.</p>
+
+				<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" name="pq10" value="e"> e)
+					Vazão
+					elevada, baixa declividade do terreno e baixa pluviosidade.</p>
+			</div>
+
+
+
+			<div class="comentarios">
+				<p> <strong>Comentário:</strong></p>
+
+				<p> O rio, ao longo do seu percurso, realiza três trabalhos: erosão, transporte e deposição. No trabalho
+					de
+					escavação do leito e aprofundamento do vale, destacam-se os dois primeiros. </p>
+			</div>
+
+
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+	<script>
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "c") {
+				corretas++;
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+			} else {
+
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+			}
+
+
+			if (pq2 == "a") {
+				corretas++;
+				document.getElementById("q2a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+
+				document.getElementById("q2a").style.backgroundColor = cor[0];
+
+			}
+			if (pq3 == "b") {
+				corretas++;
+				document.getElementById("q3b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+
+				document.getElementById("q3b").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "a") {
+				corretas++;
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "d") {
+				corretas++;
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "a") {
+				corretas++;
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "b") {
+				corretas++;
+				document.getElementById("q7b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+
+				document.getElementById("q7b").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "d") {
+				corretas++;
+				document.getElementById("q8d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q8d").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "a") {
+				corretas++;
+				document.getElementById("q9a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+
+				document.getElementById("q9a").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "c") {
+				corretas++;
+				document.getElementById("q10c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+
+				document.getElementById("q10c").style.backgroundColor = cor[0];
+
+			}
+
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+
+
+
+
+
+
+
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

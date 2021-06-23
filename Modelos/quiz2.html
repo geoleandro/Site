@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+.imgbox {
+  float: left;
+  text-align: center;
+  width: 150px;
+  border: 1px solid #ddd;
+  margin: 4px;
+  padding: 5px;
+}
+
+#mylabel {
+
+text-align: left;
+}
+
+
+</style>
+</head>
+
+
+<body onload="loadquestion()">
+
+
+ 
+  <p id="numQ">
+
+  <p id="mylabel" name="questao">Questões</p><br>
+  
+  
+  <div class="imgbox" id="imgbox1"><br>
+    <input type="image" src=" " width =auto height= 80px   id="btn0"  value="option0" name="opt0" onclick="checkans(1)"><br><br>
+  </div>
+  
+  <div class="imgbox" id="imgbox2"><br>
+  <input type="image" src=" " width =auto  height= 80px  id="btn1"  value="option1" name="opt1" onclick="checkans(2)"><br><br>
+    </div>
+  
+  <br><br><br><br><br><br><br><br><br>
+  
+  <div class="imgbox" id="imgbox3"><br>
+  <input type="image" src=" " width =auto  height= 80px  id="btn2"  value="option2" name="opt2" onclick="checkans(3)"><br><br>
+  </div>
+  
+  
+  <div class="imgbox" id="imgbox4"><br>
+  <input type="image" src=" " width =auto  height= 80px  id="btn3"  value="option3" name="opt3" onclick="checkans(4)"><br><br>
+  </div>
+  
+  
+
+  <br><br><br><br><br><br>  <br><br><br><br>
+  
+     
+  <input type="button" id="next" value="Próximo" name="nxtbtn" onclick="mudarQ()"><br><br>
+
+
+   <input type="button" id="back" value="voltar" name="bkbtn" onclick="backQ()"><br><br>
+   
+
+<p id="erro">
+<p id="pontos">
+
+
+<script type="text/javascript">
+
+   i=0;
+   var pontos = 0;
+   var numQ = 1;
+  
+
+   
+ myqs=[["Questão 01?","img3.gif", "img2.gif","img1.gif","img1a.gif","3"],
+      ["Questão 02?","icone.png","icone2.png","certo.png","certo.png","2"],
+      ["Questão 03","icone.png","errado.png","certo.png","certo.png","4"]
+ ];
+
+ function loadquestion() {
+
+ 
+document.getElementById("mylabel").innerHTML= myqs[i][0];
+document.getElementById("btn0").src= myqs[i][1];
+document.getElementById("btn1").src= myqs[i][2];
+document.getElementById("btn2").src= myqs[i][3];
+document.getElementById("btn3").src= myqs[i][4];
+document.getElementById ("numQ").innerHTML = "Questão " + numQ + " de " + myqs.length;
+
+document.getElementById("next").value = "Próximo";
+document.getElementById("next").style.backgroundColor = "lightgray";
+
+   
+document.getElementById("imgbox1").style.backgroundColor = "white";
+document.getElementById("imgbox2").style.backgroundColor = "white";
+document.getElementById("imgbox3").style.backgroundColor = "white";
+document.getElementById("imgbox4").style.backgroundColor = "white";
+document.getElementById("erro").innerHTML = "";
+document.getElementById("erro").style.color = "";
+
+voltar();	
+
+}
+ 
+ 
+ 
+function mudarQ(){
+ i=i+1
+  loadquestion();
+}
+
+
+function backQ(){
+ i=i-1
+ loadquestion();
+}
+
+
+function voltar() {
+
+if (numQ != myqs.length) {
+
+numQ++;
+}else 
+
+numQ-=0;
+
+
+}
+
+
+
+function checkans(a){
+ respostas =parseInt(myqs[i][5]);
+ 
+ if(respostas==a && respostas==3){
+  pontos++;
+  
+document.getElementById ("pontos").innerHTML = "Você acertou " + pontos ;
+document.getElementById("imgbox3").style.backgroundColor = "#f36";
+  
+ }
+  else if(respostas==a && respostas==2){
+  pontos++;
+  
+document.getElementById ("pontos").innerHTML = "Você acertou " + pontos ;
+document.getElementById("imgbox2").style.backgroundColor = "#99ff99";
+ }
+ 
+  else if(respostas==a && respostas==4){
+  pontos++;
+  
+document.getElementById ("pontos").innerHTML = "Você acertou " + pontos ;
+document.getElementById("imgbox4").style.backgroundColor = "#99ff99";
+ }
+ 
+ else {
+ 
+ document.getElementById("erro").innerHTML = "Incorreta";
+ document.getElementById("erro").style.color = "red";
+ }
+
+
+}
+
+ </script>
+
+</body>
+</html>

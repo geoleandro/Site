@@ -1,0 +1,85 @@
+<html>
+<head>
+
+
+
+
+</head>
+
+    <body>
+
+        <p id="fuso"></p>
+       
+    
+
+
+<script language="JavaScript">
+
+
+
+
+function Data()
+{
+    var dt = new Date();
+    dt.setSeconds();
+document.getElementById("fuso").innerHTML = dt.getSeconds() + ":" + dt.getMilliseconds();
+}
+setInterval(Data,1000);
+
+
+
+//document.write(data.getSeconds()  +  "<br><br>") ;
+
+
+
+// function to calculate local time
+// in a different city
+// given the city's UTC offset
+function calcTime(city, offset) {
+
+    // create Date object for current location
+    d = new Date();
+   
+    // convert to msec
+    // add local time zone offset
+    // get UTC time in msec
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+   
+    // create new Date object for different city
+    // using supplied offset
+    nd = new Date(utc + (3600000*offset));
+   
+    // return time as a string
+    return "A data e a hora local em/no(a) " + city + " é: " + nd.toLocaleString() + "<br><br>";
+
+}
+
+// get Bombay time
+//alert(calcTime('Japão', '+12'));
+
+// get Singapore time
+document.write(calcTime('país', '-1'));
+
+ 
+document.write(calcTime('Londres', '0'));
+
+
+
+
+// //para o tempo
+// <button onclick="clearInterval(myVar)">Stop time</button>
+
+
+// var myVar = setInterval(myTimer ,1000);
+// function myTimer() {
+//   var d = new Date();
+//   document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+// }
+
+
+</script>
+
+</body>
+
+
+</html>

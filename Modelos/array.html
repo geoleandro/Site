@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <div id="out0">Array</div>
+
+    <div id="out0"></div>
+    <div id="out1"></div>
+    <div id="out2"></div>
+
+    <input type="text" id="numero" />
+    <input type="submit" value="Adicione e verifique no Bingo!"   id="verificar"/>
+
+
+
+    
+<script>
+
+
+var maximo = 12;
+var resultados = 12;
+
+var i, arr = [];
+for (i = 0; i  < maximo; i++) {
+    arr[i] = i + 1;
+}
+
+var p, n, tmp;
+for (p = arr.length; p;) {
+    n = Math.random() * p-- | 0;
+    tmp = arr[n];
+    arr[n] = arr[p];
+    arr[p] = tmp;
+}
+
+for (var i = 0; i < resultados; i++) {
+    document.getElementById('out0').innerHTML =  arr[0];
+    document.getElementById('out1').innerHTML =  arr[1];
+    document.getElementById('out2').innerHTML =  arr[2];
+
+}
+
+
+</script>
+
+</body>
+
+</html>

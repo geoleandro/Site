@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../../estilos/fade.css">
+	<link rel="stylesheet" href="../..//estilos/ModeloCss.css">
+	<link rel="stylesheet" href="../../estilos/w3.css">
+	<title>tp1aula01</title>
+
+	<style>
+		.topico {
+			display: block;
+		}
+
+		.topico:nth-child(1),
+		.topico.mostrar {
+			display: block
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 10px;
+
+		}
+	</style>
+
+
+</head>
+
+<body onload="paragrafotexto()">
+
+
+
+	<span onclick="this.innerHTML='conceito (uma ideia sobre algo ou alguma coisa)'"><mark>conceitos</mark></span>.
+
+	<!-- Multipla escolha -->
+
+	111111111111
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar1 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">a)
+			o aproveitamento da insolação solar.</button>
+
+
+		<button class="desativar1 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
+			a construção de um sistema técnico único.</button>
+
+
+		<button class="desativar1 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">c)
+			prejudicar a economia dos países no mundo.</button>
+
+
+
+
+		<span id="resp1"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+	22222222222
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar2 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
+			
+			a)
+			o aproveitamento da insolação solar.
+		</button>
+
+
+		<button class="desativar2 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+
+			b)
+			a construção de um sistema técnico único.
+		</button>
+
+
+		<button class="desativar2 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
+			
+			c)
+			prejudicar a economia dos países no mundo.
+		</button>
+
+
+
+
+		<span id="resp2"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+	33333333333
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar3 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
+			
+			a)
+			o aproveitamento da insolação solar.
+		
+		</button>
+
+
+		<button class="desativar3 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+			
+			b)
+			a construção de um sistema técnico único.
+		
+		</button>
+
+
+		<button class="desativar3 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
+			
+			c)
+			prejudicar a economia dos países no mundo.
+		
+		</button>
+
+
+
+
+		<span id="resp3"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+
+
+	44444444444444
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar4 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+			
+			a)
+			o aproveitamento da insolação solar.
+		
+		</button>
+	
+
+		<button class="desativar4 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+			
+			b)
+			a construção de um sistema técnico único.
+		
+		</button>
+	
+
+		<button class="desativar4 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+			
+			c)
+			prejudicar a economia dos países no mundo.
+		
+		</button>
+	
+
+
+
+		<span id="resp4"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+	55555555555555
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar5 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
+			
+			a)
+			o aproveitamento da insolação solar.
+		
+		</button>
+	
+
+		<button class="desativar5 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+			
+			b)
+			a construção de um sistema técnico único.
+		
+		</button>
+		
+
+		<button class="desativar5 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
+			
+			c)
+			prejudicar a economia dos países no mundo.
+		
+		</button>
+	
+
+
+
+		<span id="resp5"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+	6666666666666666666
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar6 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','1');this.style.backgroundColor='tomato'">a)
+			o aproveitamento da insolação solar.</button>
+		<br><br>
+
+		<button class="desativar6 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp6','globinho6', 'desativar6', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
+			a construção de um sistema técnico único.</button>
+		<br><br>
+
+		<button class="desativar6 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp6','globinho6', 'desativar6','1');this.style.backgroundColor='tomato'">c)
+			prejudicar a economia dos países no mundo.</button>
+		<br><br>
+
+
+
+		<span id="resp6"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho6" style="display:none" alt="globinho6" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+	777777777777777777777777
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar7 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">a)
+			o aproveitamento da insolação solar.</button>
+		<br><br>
+
+		<button class="desativar7 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp7','globinho7', 'desativar7', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
+			a construção de um sistema técnico único.</button>
+		<br><br>
+
+		<button class="desativar7 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">c)
+			prejudicar a economia dos países no mundo.</button>
+		<br><br>
+
+
+
+		<span id="resp7"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho7" style="display:none" alt="globinho7" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+	888888888888888888888
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar8 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp8','globinho8', 'desativar8','1');this.style.backgroundColor='tomato'">a)
+			o aproveitamento da insolação solar.</button>
+		<br><br>
+
+		<button class="desativar8 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp8','globinho8', 'desativar8', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
+			a construção de um sistema técnico único.</button>
+		<br><br>
+
+		<button class="desativar8 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp8','globinho8', 'desativar8','1');this.style.backgroundColor='tomato'">c)
+			prejudicar a economia dos países no mundo.</button>
+		<br><br>
+
+
+
+		<span id="resp8"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho8" style="display:none" alt="globinho8" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+	99999999999999999999999999999999999999999999999
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar9 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp9','globinho9', 'desativar9','1');this.style.backgroundColor='tomato'">a)
+			o aproveitamento da insolação solar.</button>
+		<br><br>
+
+		<button class="desativar9 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp9','globinho9', 'desativar9', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
+			a construção de um sistema técnico único.</button>
+		<br><br>
+
+		<button class="desativar9 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp9','globinho9', 'desativar9','1');this.style.backgroundColor='tomato'">c)
+			prejudicar a economia dos países no mundo.</button>
+		<br><br>
+
+
+
+		<span id="resp9"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho9" style="display:none" alt="globinho9" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+	100000000000000000000000000
+
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+		<button class="desativar10 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp10','globinho10', 'desativar10','1');this.style.backgroundColor='tomato'">a)
+			o aproveitamento da insolação solar.</button>
+		<br><br>
+
+		<button class="desativar10 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp10','globinho10', 'desativar10', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
+			a construção de um sistema técnico único.</button>
+		<br><br>
+
+		<button class="desativar10 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp10','globinho10', 'desativar10','1');this.style.backgroundColor='tomato'">c)
+			prejudicar a economia dos países no mundo.</button>
+		<br><br>
+
+
+
+		<span id="resp10"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho10" style="display:none" alt="globinho10" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+
+
+	imagens
+
+
+	<span onclick="Aparecer('imagem1','citacao1')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem1" src="tp10f1.png" alt="tp10f1" class="w3-mobile" style=display:none></div>
+
+
+	<p class="citacao" id="citacao1" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+	<span onclick="Aparecer('imagem2','citacao2')"><mark>ampulheta</mark></span>
+
+
+	<div class="area"><img id="imagem2" src="tp10f2.png" alt="tp10f2" class="w3-mobile" style=display:none></div>
+
+
+	<p class="citacao" id="citacao2" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+	<span onclick="Aparecer('imagem3','citacao3')"><mark>ampulheta</mark></span>
+
+
+
+	<div class="area"><img id="imagem3" src="tp10f3.png" alt="tp10f3" class="w3-mobile" style=display:none></div>
+
+
+	<p class="citacao" id="citacao3" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem4','citacao4')"><mark>ampulheta</mark></span>
+	<div class="area"><img id="imagem4" src="tp10f4.png" alt="tp10f4" class="w3-mobile" style=display:none></div>
+
+
+	<p class="citacao" id="citacao4" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem5','citacao5')"><mark>ampulheta</mark></span>
+	<div class="area"><img id="imagem5" src="tp10f5.png" alt="tp10f5" class="w3-mobile" style=display:none></div>
+
+	<p class="citacao" id="citacao5" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem6','citacao6')"><mark>ampulheta</mark></span>
+	<div class="area"><img id="imagem6" src="tp10f6.png" alt="tp10f6" class="w3-mobile" style=display:none></div>
+
+	<p class="citacao" id="citacao6" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+	<span onclick="Aparecer('imagem7','citacao7')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem7" src="tp10f7.png" alt="tp10f7" class="w3-mobile" style=display:none></div>
+
+
+	<p class="citacao" id="citacao7" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+
+	<span onclick="Aparecer('imagem8','citacao8')"><mark>ampulheta</mark></span>
+	
+	<div class="area"><img id="imagem8" src="tp10f8.png" alt="tp10f8" class="w3-mobile"style=display:none></div>
+
+
+	<p class="citacao" id="citacao8" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+	<span onclick="Aparecer('imagem9','citacao9')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem9" src="tp10f9.png" alt="tp10f9" class="w3-mobile" style=display:none></div>
+
+
+	<p class="citacao" id="citacao9" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+	<span onclick="Aparecer('imagem10','citacao10')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem10" src="tp10f10.png" alt="tp10f10" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao10" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem11','citacao11')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem11" src="tp10f11.png" alt="tp10f11" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao11" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem12','citacao12')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem12" src="tp10f12.png" alt="tp10f12" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao12" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem13','citacao13')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem13" src="tp10f13.png" alt="tp10f13" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao13" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem14','citacao14')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem14" src="tp10f14.png" alt="tp10f14" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao14" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+
+	<span onclick="Aparecer('imagem15','citacao15')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem15" src="tp10f15.png" alt="tp10f15" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao15" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem16','citacao16')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem16" src="tp10f16.png" alt="tp10f16" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao16" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	<span onclick="Aparecer('imagem17','citacao17')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem17" src="tp10f17.png" alt="tp10f17" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao17" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+
+
+	<span onclick="Aparecer('imagem18','citacao18')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem18" src="tp10f18.png" alt="8" class="w3-mobile" style=display:none></div>
+
+
+	<p class="citacao" id="citacao18" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+	<span onclick="Aparecer('imagem19','citacao19')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem19" src="tp10f19.png" alt="tp10f19" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao19" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+
+	<span onclick="Aparecer('imagem20','citacao20')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem20" src="tp10f20.png" alt="tp10f20" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao20" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	
+	<span onclick="Aparecer('imagem21','citacao21')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem21" src="tp10f21.png" alt="tp10f21" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao21" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	
+	<span onclick="Aparecer('imagem22','citacao22')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem22" src="tp10f22.png" alt="tp10f22" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao22" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	
+	<span onclick="Aparecer('imagem23','citacao23')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem23" src="tp10f23.png" alt="tp10f23" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao23" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+	
+	<span onclick="Aparecer('imagem24','citacao24')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem24" src="tp10f24.png" alt="tp10f24" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao24" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+
+	<span onclick="Aparecer('imagem25','citacao25')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem25" src="tp10f25.png" alt="tp10f25" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao25" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+	<span onclick="Aparecer('imagem26','citacao26')"><mark>ampulheta</mark></span>
+
+	<div class="area"><img id="imagem26" src="tp10f26.png" alt="tp10f26" class="w3-mobile" style=display:none>
+	</div>
+
+
+	<p class="citacao" id="citacao26" style=display:none> Fonte: Organizado pelo autor. </p>
+
+
+
+
+
+
+
+
+
+	<!-- //Questões abertas -->
+
+	<div class="topico">
+
+		<p class="caixa"> Teste suas habilidades!</p>
+
+
+
+		<p class="divCaixa1"> Encontre as direções dos objetos no mapa do tesouro abaixo e as escreva
+			corretamente:</p>
+
+		<p><img src="tp2Foto10.jpg" alt="teste2" width="340" height="300"> </p>
+
+
+
+
+
+
+		<form id="quiz" name="quiz">
+
+
+
+			<p>Em qual direção está o coqueiro ?</p>
+			<input class="input" id="q10a" type="text" name="q10a" value="">
+			<br><br>
+
+
+			<span id="resp1a"></span>
+			<br><br>
+
+			<input class="btnShow" id="buttonConferir10" type="button" value="Conferir"
+				onclick="PerguntasAbertas(1,'resp10','buttonConferir10','globinho10')">
+
+
+
+
+			<div class="area">
+				<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho10" style="display:none" alt="globinho10" width="64"
+						height="64"> </p>
+			</div>
+
+
+
+			<p>Em qual direção está a caveira ?</p>
+			<input class="input" id="q10b" type="text" name="q10b" value="">
+			<br><br>
+
+			<span id="resp10b"></span>
+			<br><br>
+
+			<input class="btnShow" id="buttonConferir10b" type="button" value="Conferir"
+				onclick="PerguntasAbertas(2,'resp10b','buttonConferir10b','globinho10b')">
+
+
+
+			<div class="area">
+				<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho10b" style="display:none" alt="globinho10b" width="64"
+						height="64"> </p>
+			</div>
+
+
+			<p>Em qual direção está o baú do tesouro ?</p>
+
+			<input class="input" id="q10c" type="text" name="q10c" value="">
+			<br><br>
+
+			<span id="resp10c"></span>
+			<br><br>
+
+			<input class="btnShow" id="buttonConferir10c" type="button" value="Conferir"
+				onclick="PerguntasAbertas(3,'resp10c','buttonConferir10c','globinho10c')">
+
+
+
+			<div class="area">
+				<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho10c" style="display:none" alt="globinho10c" width="64"
+						height="64"> </p>
+			</div>
+
+
+
+			<p>Em qual direção está a torre ?</p>
+
+			<input class="input" id="q1d" type="text" name="q1d" value="">
+			<br><br>
+
+			<span id="resp1d"></span>
+			<br><br>
+
+			<input class="btnShow" id="buttonConferirq1d" type="button" value="Conferir"
+				onclick="PerguntasAbertas(4,'resp1d','buttonConferirq1d','globinho11')">
+
+
+
+			<div class="area">
+				<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho11" style="display:none" alt="globinho11" width="64"
+						height="64"> </p>
+			</div>
+
+
+		</form>
+
+
+
+		<button class="btnHide" id="buttonq1d"
+			onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1d')">Proximo</button>
+
+		<hr>
+
+	</div>
+
+
+
+	<script>
+
+		// Função com perguntas abertas feita com formulário
+		function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+			var q1a = document.quiz.q1a.value.toLowerCase();
+			var q1b = document.quiz.q1b.value.toLowerCase();
+			var q1c = document.quiz.q1c.value.toLowerCase();
+			var q1d = document.quiz.q1d.value.toLowerCase();
+
+
+
+			var imagem = ['globinhoPe.png'];
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			if (q1a.match("noroeste") && qnum == 1) {
+
+				document.getElementById("q1a").style.backgroundColor = cor[0];
+
+				EscondeButton(buttonConferir);
+				Play("audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf();
+				nota += 0.25;
+				document.getElementById(globinho).style.display = "block";
+
+			}
+			else if (qnum == 1) {
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+				Play2("audio2.mp3");
+			}
+
+			if (q1b.match("sudoeste") && qnum == 2) {
+
+				document.getElementById("q1b").style.backgroundColor = cor[0];
+
+				EscondeButton(buttonConferir);
+				Play("audio1.mp3");
+
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf();
+				nota += 0.25;
+				document.getElementById(globinho).style.display = "block";
+
+			}
+			else if (qnum == 2) {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+				Play2("audio2.mp3");
+			}
+
+
+			if (q1c.match("sudeste") && qnum == 3) {
+
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+				EscondeButton(buttonConferir);
+				Play("audio1.mp3");
+
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1c.valueOf();
+				nota += 0.25;
+				document.getElementById(globinho).style.display = "block";
+
+			}
+			else if (qnum == 3) {
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+				Play2("audio2.mp3");
+			}
+
+			if (q1d.match("nordeste") && qnum == 4) {
+
+				if (q1a != "" && q1b != "" && q1c != "") {
+					document.getElementById("q1d").style.backgroundColor = cor[0];
+
+					EscondeButton(buttonConferir);
+					Play("audio1.mp3");
+
+					document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1d.valueOf();
+					nota += 0.25;
+					document.getElementById(globinho).style.display = "block";
+					MostraButton("buttonq1d")
+				}
+				else {
+					document.getElementById("q1d").style.backgroundColor = cor[1];
+					document.getElementById(idResp).innerHTML = "Quer pular sem responder todas as questões? Volte e preencha as outras espertinho(a).";
+
+				}
+
+			}
+			else if (qnum == 4) {
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+
+				// EscondeButton(buttonConferir);
+				// MostraButton("buttonq1d")
+				// Play2("audio2.mp3");
+			}
+
+			document.getElementById("notaFixa").innerHTML = nota;
+
+		}
+
+
+
+
+
+
+
+
+
+		//document.getElementById ("mensagem").innerHTML = 
+
+
+
+
+		//Função para esconder imagens no Desafio
+
+		// Adcionei um evento clique no botão e criei uma variavel global Clicou1 ou Clicou2
+
+
+		var foto1 = document.getElementById("div1").addEventListener("click", function () {
+			Clicou1 = 1;
+			ComparaImagens("resp10");
+		});
+
+
+		var foto2 = document.getElementById("div2").addEventListener("click", function () {
+			Clicou2 = 2;
+			ComparaImagens("resp10");
+		});
+
+
+		var foto3 = document.getElementById("div3").addEventListener("click", function () {
+			Clicou1 = 2;
+			ComparaImagens("resp10");
+		});
+
+		var foto4 = document.getElementById("div4").addEventListener("click", function () {
+			Clicou1 = 3;
+			ComparaImagens("resp10");
+		});
+
+		var foto5 = document.getElementById("div5").addEventListener("click", function () {
+			Clicou1 = 4;
+			ComparaImagens("resp10");
+		});
+
+		var foto6 = document.getElementById("div6").addEventListener("click", function () {
+			Clicou1 = 5;
+			ComparaImagens("resp10");
+		});
+
+		var foto7 = document.getElementById("div7").addEventListener("click", function () {
+			Clicou2 = 5;
+			ComparaImagens("resp10");
+		});
+
+		var foto8 = document.getElementById("div8").addEventListener("click", function () {
+			Clicou2 = 1;
+			ComparaImagens("resp10");
+		});
+
+		var foto9 = document.getElementById("div9").addEventListener("click", function () {
+			Clicou2 = 3;
+			ComparaImagens("resp10");
+		});
+
+		var foto10 = document.getElementById("div10").addEventListener("click", function () {
+			Clicou2 = 4;
+			ComparaImagens("resp10");
+		});
+
+		var foto11 = document.getElementById("div11").addEventListener("click", function () {
+			Clicou1 = 6;
+			ComparaImagens("resp10");
+		});
+
+		var foto12 = document.getElementById("div12").addEventListener("click", function () {
+			Clicou2 = 6;
+			ComparaImagens("resp10");
+		});
+
+
+
+
+		// Função do desafio final
+		function ComparaImagens(idResp) {
+
+
+			if (Clicou1 == 1 && Clicou2 == 1) {
+
+				document.getElementById("div1").style.opacity = "50%";
+				document.getElementById("div8").style.opacity = "50%";
+				notaDesafio++;
+
+			}
+
+
+
+			else if (Clicou1 == 2 && Clicou2 == 2) {
+
+				document.getElementById("div2").style.opacity = "50%";
+				document.getElementById("div3").style.opacity = "50%";
+				notaDesafio++;
+
+			}
+
+			else if (Clicou1 == 2 && Clicou2 == 2) {
+
+				document.getElementById("div2").style.opacity = "50%";
+				document.getElementById("div3").style.opacity = "50%";
+				notaDesafio++;
+
+			}
+
+			else if (Clicou1 == 3 && Clicou2 == 3) {
+
+				document.getElementById("div4").style.opacity = "50%";
+				document.getElementById("div9").style.opacity = "50%";
+				notaDesafio++;
+
+			}
+
+			else if (Clicou1 == 4 && Clicou2 == 4) {
+
+				document.getElementById("div10").style.opacity = "50%";
+				document.getElementById("div5").style.opacity = "50%";
+				notaDesafio++;
+
+			}
+
+			else if (Clicou1 == 5 && Clicou2 == 5) {
+
+				document.getElementById("div6").style.opacity = "50%";
+				document.getElementById("div7").style.opacity = "50%";
+				notaDesafio++;
+
+			}
+
+			else if (Clicou1 == 6 && Clicou2 == 6) {
+
+				document.getElementById("div11").style.opacity = "50%";
+				document.getElementById("div12").style.opacity = "50%";
+
+				notaDesafio++;
+
+
+			}
+
+
+
+
+		}
+
+
+
+		// Função que adiciona fundo verde no desafio, foi inserida na função nota final
+		function ClassGrid() {
+
+
+			var g = document.getElementsByClassName("grid-container");
+			for (var i = 0; i < g.length; i++) {
+				if (notaDesafio <= 6) {
+					g[i].style.backgroundColor = "green";
+					nota += 3;
+
+
+				}
+
+
+			}
+
+		}
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>

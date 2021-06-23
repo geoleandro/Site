@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p1Aula07</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+    <link rel="stylesheet" href="../../../estilos/questoes.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+
+    <script src="../../../estilos/javascript.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <style>
+        .larguraBar {
+            max-width: 700px;
+        }
+
+        @font-face {
+            font-family: pixel;
+            src: url('../../../fontes/FreePixel.woff');
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 0px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 40px;
+        }
+    </style>
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+    <!-- Navigation (Stays on Top) -->
+    <div class="w3-top w3-bar w3-black larguraBar">
+
+
+        <a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
+
+
+    </div>
+
+    <h1 class="h1"> Aula 07 - Sistemas de informações Geográficas (SIGs): Sensoriamento remoto e novas tecnologias</h1>
+
+
+    <p class="w3-container">
+        <strong>Conteúdo:</strong> Sensoriamento remoto, imagens de satélite, Cartografia digital, Geoprocessamento.
+    </p>
+
+    <p class="w3-container">
+        <strong>Objetivo:</strong> Compreender o papel estratégico da Cartografia diante da novas tecnologias de
+        informações Geográfica s (SIGs).
+    </p>
+
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 01</p>
+
+            <p class="p3">O monitoramento por satélite e o GPS (Sistema de Posicionamento Global) são inovações
+                tecnológicas atualmente usadas por órgãos governamentais, agricultura, empresas, pessoas etc. Sobre essa
+                questão, escreva verdadeiro (V) ou falso (F) para os itens abaixo e assinale a alternativa correta:
+            </p>
+
+            <p class="p3"> I. O GPS é um Sistema de Posicionamento Global constituído por dezenas de satélites que
+                emitem sinais de
+                rádio captados por aparelhos especiais em qualquer ponto da superfície da Terra. </p>
+
+            <p class="p3"> II. O GPS indica ao usuário sua localização em termos de latitude, longitude e altitude. </p>
+
+            <p class="p3"> III. Na agricultura, essas tecnologias podem ser utilizadas a fim de que se obtenha maior
+                produtividade
+                com custos menores. </p>
+
+            <p class="p3"> IV. Essas inovações tecnológicas permitem, por exemplo, detectar e acompanhar a direção e o
+                deslocamento
+                de queimadas e avaliar prejuízos em áreas atingidas por secas ou inundações.</p>
+
+            <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a)
+                VFVV.</p>
+
+            <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b)
+                VVVF.</p>
+
+            <p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c)
+                FVVV.</p>
+
+
+            <p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
+                VVVV </p>
+
+            <p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e"> e)
+                VFVF </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> Comentário: </p>
+            <p class="p3"> I. Incorreta. O GPS só permite a localização por aparelhos em pontos que há a cobertura de
+                ondas de
+                rádio transmitidas por torres instaladas em alguns pontos específicos. </p>
+
+            <p class="p3"> II. Correta. Ao se visualizar um aparelho de GPS, é possível saber a altitude, longitude e a
+                altitude em
+                que a pessoa se encontra.</p>
+
+
+            <p class="p3"> III. Correta. Através das imagens de satélite, podem ser fornecidos dados acerca da área de
+                plantio e
+                realizar previsões meteorológicas sobre o clima de uma determinada localidade, facilitando o
+                planejamento na agricultura. </p>
+
+            <p class="p3"> IV. Correta. As imagens de satélite podem fornecer informações através de imagens que
+                registram os
+                índices de queimadas, bem como sobre o clima e áreas devastadas pela seca ou pelas chuvas.</p>
+        </div>
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 02</p>
+
+            <p class="p3">(FUVEST 2009)</p>
+
+            <div class="w3-center"><img src="p7q2.png" alt="Foto satélite e aérea" class="w3-mobile"></div>
+
+
+            <p class="p3">Considere os exemplos das figuras e analise as frases abaixo, relativas às imagens de satélite
+                e às fotografias aéreas.</p>
+
+            <p class="p3"> I. Um dos usos das imagens de satélites refere-se à confecção de mapas temáticos de escala
+                pequena, enquanto as fotografias aéreas servem de base à confecção de cartas topográficas de escala
+                grande.</p>
+
+            <p class="p3"> II. Embora os produtos de sensoriamento remoto estejam, hoje, disseminados pelo mundo, nem
+                todos eles são disponibilizados para uso civil.</p>
+
+            <p class="p3"> III. Pelo fato de poderem ser obtidas com intervalos regulares de tempo, dentre outras
+                características,
+                as imagens de satélite constituem-se em ferramentas de monitoramento ambiental e instrumental
+                geopolítico valioso.</p>
+
+            <p class="p3"> Está correto o que se afirma em:</p>
+
+
+
+            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
+                I, apenas.</p>
+            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
+                II, apenas.</p>
+            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c)
+                II e III, apenas.</p>
+            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d)
+                I e III, apenas.</p>
+            <p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e)
+                I, II e III.</p>
+        </div>
+
+
+        <div class="comentarios">
+            <p> Comentário: </p>
+
+            <p class="p3"> I. Correta. A escala pequena é usada para cartografar áreas grandes onde há grande redução do
+                espaço
+                real e poucos detalhes.
+                A escala grande é usada para cartografar áreas pequenas, onde há redução menor do espaço real, portanto,
+                são mais ricas em detalhes. Mapas temáticos são produtos cartográficos que enfocam determinado fenômeno,
+                tais como população, vegetação, uso do solo e outros.
+
+            <p class="p3"> A carta topográfica mostra os desníveis do terreno, a rede hidrográfica, a altitude etc.
+                As imagens obtidas por satélites captam a irradiação emitida pela superfície terrestre, trabalhando em
+                termos de faixas da radiação. Como os sensores dos satélites conseguem captar a irradiação emitida por
+                uma área extensa, permitem a elaboração de mapas de escala pequena, o que na foto aérea seria inviável,
+                posto que nesta, o sensor é acoplado às aeronaves que tiram fotos oblíquas sobrepostas de áreas menores,
+                permitindo fazer mapas de grande escala. </p>
+
+            <p class="p3"> Como as fotos são tiradas em posição oblíqua e sobrepostas, por meio da estereoscópica é
+                possível obter
+                dados sobre a altitude dos objetos sobre a superfície e, portanto, fazer mapas topográficos.</p>
+
+            <p class="p3"> II. Correta. Os produtos de sensoriamento não estão todos disponíveis para o uso civil porque
+                as áreas
+                consideradas estratégicas ou de segurança ficam restritas somente ao acesso dos governos, por exemplo:
+                as imagens de embaixadas, sedes de governos, usinas nucleares e presídios obtidas por satélite não são
+                disponibilizadas à sociedade civil. </p>
+        </div>
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 03</p>
+
+            <p class="p3"> “Hoje, o sensoriamento remoto por meio de satélites representa o mais importante e eficiente
+                recurso tecnológico de observação da Terra, permitindo rapidez e precisão nos processos de levantamento
+                de dados e mapeamentos.” </p>
+
+
+            <p class="citacao"> (COELHO, Marcos de Amorim; TERRA, Lygia. Geografia Geral: o espaço natural e
+                socioeconômico. 2001, p.30) </p>
+
+            <p class="p3"> A esse respeito, leia as afirmativas abaixo. </p>
+
+            <p class="p3"> I – O sensoriamento remoto é um recurso técnico para ampliar os sentidos naturais do homem.
+            </p>
+
+            <p class="p3"> II –O sensoriamento remoto pode ser definido, de uma maneira ampla, como sendo a forma de se
+                obter informações de um objeto ou alvo, sem que haja contato físico com o mesmo. </p>
+
+            <p class="p3"> III – No sensoriamento remoto, as informações são obtidas utilizando-se a radiação
+                eletromagnética, geradas por fontes naturais como o Sol e a Terra, ou por fontes artificiais como, por
+                exemplo, o Radar. </p>
+
+            <p class="p3">Assinale a alternativa correta.</p>
+
+
+
+
+            <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
+                Somente a afirmativa I está correta.</p>
+            <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
+                Somente a afirmativa III está correta.</p>
+            <p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c)
+                Todas as afirmativas estão corretas.</p>
+            <p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
+                Somente as afirmativas I e III estão corretas.</p>
+            <p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e)
+                Somente a afirmativa II está correta.</p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <b>Comentário:</b></p> 
+                
+            <p>     </p> -->
+        </div>
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 04</p>
+
+            <p class="p3"> A importância do Geoprocessamento reside no tratamento de imagens para a produção de mapas,
+                cartas, projeções cartográficas e recolher dados em forma de gráficos, quadros e tabelas sobre os
+                diversos elementos da superfície terrestre. Sobre o Geoprocessamento, assinale a alternativa incorreta
+            </p>
+
+
+
+            <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a)
+                O uso de softwares e equipamentos tecnológicos é imprescindível para a operação do Geoprocessamento.</p>
+
+
+            <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
+                O uso de softwares e equipamentos tecnológicos é imprescindível para a operação do Geoprocessamento.</p>
+
+            <p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c)
+                O uso de softwares e equipamentos tecnológicos é imprescindível para a operação do Geoprocessamento.</p>
+
+
+            <p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d)
+                O Geoprocessamento pode ser muito útil para serviços de espionagem, uma vez que as imagens de satélite
+                permitem visualizar, em detalhes, qualquer ponto da superfície terrestre</p>
+
+
+        </div>
+
+
+        <div class="comentarios">
+            <p> Comentário: </p>
+            <p> a) Correta. O Geoprocessamento está diretamente vinculado à aparelhagem tecnológica informacional, de
+                modo que o uso de softwares é extremamente necessário. </p>
+
+            <p> b) Correta. A aerofotogrametria consiste na produção de fotografias aéreas que podem ser utilizadas para
+                a produção de mapas e cartas.</p>
+
+            <p> c) Incorreta. Na criação de mapas também pode ser utilizadas fotografias aéreas e, inclusive, imagens
+                terrestres. </p>
+
+            <p> d) Correta. Um dos principais usos das ferramentas do Geoprocessamento é o militar.</p>
+        </div>
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 05</p>
+
+            <p class="p3">O sensoriamento remoto é um recurso técnico para ampliar os sentidos naturais do homem. É um
+                dispositivo ou equipamento (câmara fotográfica, radar, satélite) que capta e registra, sob a forma de
+                imagens, a energia refletida ou emitida pelas áreas, acidentes, objetos e acontecimentos do meio
+                ambiente, incluindo os acidentes naturais e culturais.</p>
+
+            <p class="citacao"> <small> OLIVEIRA, Cêurio. In: COELHO, Amorim. Geografia geral: o espaço natural e
+                    socioeconômico. São Paulo: Moderna, 1992.</small></p>
+
+            <p class="p3">Com base no texto e nos conhecimentos sobre sensoriamento remoto e representações
+                cartográficas,
+                é correto afirmar:</p>
+
+
+
+            <p class="bordaQuestoes" id="q5a"><input type="radio" required="required"  name="pq5" value="a"> a)
+                As fotografias feitas por satélites dispensam todos os tipos de cartas geográficas temáticas.</p>
+
+            <p class="bordaQuestoes" id="q5b"><input type="radio" required="required"  name="pq5" value="b"> b)
+                A totalidade da superfície terrestre pode ser visualizada através de uma única foto feita por satélite..
+            </p>
+
+
+
+            <p class="bordaQuestoes" id="q5c"><input type="radio" required="required"  name="pq5" value="c"> c)
+                As imagens processadas de radar oferecem detalhes milimétricos, como a detecção de pragas nas lavouras..
+            </p>
+
+
+
+            <p class="bordaQuestoes" id="q5d"><input type="radio" required="required"  name="pq5" value="d"> d)
+                O mapa-múndi é a mais perfeita de todas as representações cartográficas, por possuir uma grande escala e
+                apresentar o espaço com todos os detalhes..</p>
+
+
+
+            <p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e)
+                As vantagens da fotografia aérea são, entre outras, a boa orientação espacial e o elevado nível de
+                precisão e rapidez, permitindo amplo campo de trabalho aos geógrafos.</p>
+
+        </div>
+
+        <div class="comentarios">
+            <!-- <p> Comentário: <br><br>
+                </p> -->
+        </div>
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 06</p>
+
+            <p class="p3"> (2021) Associe as colunas relacionadas com geotecnologia à esquerda com a coluna da
+                cartografia
+                à direita.</p>
+
+
+
+            <div  class="w3-container p3">
+
+
+                <table class="w3-table w3-striped">
+                    <tr>
+                        <th>Geotecnologia</th>
+                        <th>Cartografia</th>
+
+                    </tr>
+                    <tr>
+                        <td>(1) Equipamentos para estudar o espaço terrestre</td>
+                        <td>( ) Legenda </td>
+
+                    </tr>
+                    <tr> 
+                    <td> (2) Aquisição de imagens de satélite </td>
+                    <td>( ) GPS </td>
+
+                    </tr>
+                    <tr>
+                        <td>(3) posicionamento por satélites </td>
+                        <td>( ) Sensoriamento remoto</td>
+
+                    </tr>
+
+                    <tr>
+                        <td> (4) Representação x Real</td>
+                        <td>( ) Escala </td>
+
+                    </tr>
+
+                    <tr>
+                        <td> (5) Cores e símbolos </td>
+                        <td>( ) SIG </td>
+
+                    </tr>
+                </table>
+            </div>
+
+
+            
+
+            <p class="p3"> Assinale a alternativa correta que correlaciona as duas colunas: </p>
+
+
+            <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a)
+                1, 2, 3, 5, 4.</p>
+            <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b)
+                5, 3, 4, 2, 1</p>
+            <p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c)
+                2, 4, 3, 5, 1.</p>
+            <p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d"> d)
+                3, 5, 2, 1,4.</p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <b>Comentário:</b></p>
+
+            <p> </p> -->
+        </div>
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 07</p>
+
+            <p class="p3"> A cartografia utiliza a técnica de sensoriamento remoto na análise e interpretação do espaço
+                geográfico. Das alternativas abaixo uma indica corretamente o material utilizado por essa técnica.
+                Assinale-a:</p>
+
+
+
+            <p class="bordaQuestoes" id="q7a"><input type="radio" required="required"  name="pq7" value="a"> a)
+                Cartas náuticas, cartas marítimas e radares</p>
+
+            <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b)
+                Fotos aéreas, imagens de radar e de satélites </p>
+
+            <p class="bordaQuestoes" id="q7c"><input type="radio" required="required"  name="pq7" value="c"> c)
+                Telescópio, satélites e altímetros. </p>
+
+
+
+            <p class="bordaQuestoes" id="q7d"><input type="radio" required="required"  name="pq7" value="d"> d)
+                d) Astrolábio, bússola e clinômetro. </p>
+
+
+
+            <p class="bordaQuestoes" id="q7e"><input type="radio" required="required"  name="pq7" value="e"> e)
+                Termógrafo, bússolas e curvímetro</p>
+        </div>
+
+        <div class="comentarios">
+            <p> Comentário: </p>
+
+             <p>    O sensoriamento remoto é aquele que é realizado por instrumentos distantes do local que se pretende
+                medir, e tem relação direta com os fenômenos da radiação eletromagnética.</p>
+            
+
+             <p>    Com isto em mente, são exemplos de instrumentos deste tipo a foto aérea, as imagens de radar e de
+                satélites, uma vez que elas são realizadas por instrumentos bem distantes do observado e interagem com
+                fenômenos deste tipo.</p>
+
+
+        </div>
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 08</p>
+
+
+            <h2 class="w3-center p3">
+                História do Sensoriamento Remoto
+            </h2>
+
+            <p class="p3">A origem do sensoriamento remoto vincula-se ao surgimento da fotografia aérea. Assim, a
+                história
+                do sensoriamento remoto pode ser dividida em dois períodos: um, de 1860 a 1960, baseado no uso de
+                fotografias aéreas, e outro, de 1960 aos dias de hoje, caracterizado por uma variedade de tipos de
+                fotografias e imagens.</p>
+
+               <p class="p3">   O sensoriamento remoto é fruto de um esforço multidisciplinar que integra os avanços da Matemática,
+                Física, Química, Biologia e das Ciências da Terra e da Computação. A evolução das técnicas de
+                sensoriamento remoto e a sua aplicação envolvem um número cada vez maior de pessoas de diferentes áreas
+                do conhecimento.</p>
+            
+
+               <p class="p3">   Tendo-se em vista a importância do sensoriamento remoto para as mais diversas atividades humanas,
+                considera-se como principal objetivo dessa atividade</p>
+
+
+
+            <p class="bordaQuestoes" id="q8a"><input type="radio" required="required"  name="pq8" value="a"> a)
+                interpretar, visualizar e apontar os principais fluxos monetários internacionais.</p>
+
+            <p class="bordaQuestoes" id="q8b"><input type="radio" required="required"  name="pq8" value="b"> b)
+                monitorar as principais atividades correlacionadas à tectônica global.</p>
+
+     <p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c)
+                obter imagens e outros tipos de dados da superfície terrestrec</p>
+
+            <p class="bordaQuestoes" id="q8d"><input type="radio" required="required"  name="pq8" value="d"> d)
+                acompanhar a dinâmica das principais vias de circulação aérea.</p>
+
+            <p class="bordaQuestoes" id="q8e"><input type="radio" required="required"  name="pq8" value="e"> e)
+                diagnosticar as migrações intrarregionais, apontando as principais causas de emigração.</p>
+
+
+        </div>
+
+        <div class="comentarios">
+            <!-- <p> Comentário: <br><br>
+            </p> -->
+        </div>
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 09</p>
+
+
+            <p class="p3">(UEL 2010)</p>
+
+            <div class="w3-center"><img src="p7q9.png" alt="Foto satélite" class="w3-mobile"></div>
+
+            <p class="p3">Sobre a obtenção e interpretação de imagens, é CORRETO afirmar</p>
+
+            <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a)
+                Dentre os diversos objetivos da utilização do sensoriamento remoto destaca-se a obtenção e análise de
+                informações sobre materiais, objetos ou fenômenos na superfície da Terra, a partir de dispositivos
+                situados a distância</p>
+
+            <p class="bordaQuestoes" id="q9b"><input type="radio" required="required"  name="pq9" value="b"> b)
+                O sensoriamento remoto é uma sofisticação tecnológica entendida como avanço técnico que realiza
+                mapeamento e convenções cartográficas de imagens adquiridas por sensores próximos de seus alvos.</p>
+
+            <p class="bordaQuestoes" id="q9c"><input type="radio" required="required"  name="pq9" value="c"> c)
+                Na utilização do sensoriamento remoto, os dispositivos de coleta de dados têm função de digitalizar a
+                informação proveniente dos materiais, objetos ou fenômenos terrestres, para posterior processamento e
+                interpretação possível de ser realizado por qualquer pessoa.</p>
+
+            <p class="bordaQuestoes" id="q9d"><input type="radio" required="required"  name="pq9" value="d"> d)
+                As atividades de sensoriamento remoto excluem o processamento digitalizado de imagens, pois a técnica
+                por si mesma fornece instrumentos que facilitam a identificação e extração de informações para posterior
+                interpretação.</p>
+
+            <p class="bordaQuestoes" id="q9e"><input type="radio" required="required"  name="pq9" value="e"> e)
+                A transformação de imagens em dados que possam representar informações úteis está inteiramente
+                realizada, uma vez que o sensoriamento remoto descarta a necessidade do especialista humano para
+                identificar cada uma das classes de objetos passiveis de reconhecimento</p>
+
+        </div>
+
+        <div class="comentarios">
+            <!-- <p> Comentário: <br><br>
+            </p> -->
+        </div>
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 10</p>
+
+            <p class="p3"> (Enem 2000) Um determinado município, representado na planta abaixo, dividido em regiões de A
+                a
+                I, com altitudes de terrenos indicadas por curvas de nível, precisa decidir pela localização das
+                seguintes obras: </p>
+
+            <p class="p3"> 1. Instalação de um parque industrial. </p>
+
+            <p class="p3">2. Instalação de uma torre de transmissão e recepção. </p>
+
+            <div class="w3-center"><img src="p7q10.png" alt="Foto curvas de nível" class="w3-mobile"></div>
+
+
+            <p class="p3"> Considerando impacto ambiental e adequação, as regiões onde deveriam ser, de preferência,
+                instaladas indústrias e torres, são, respectivamente</p>
+
+
+
+
+            <p class="bordaQuestoes" id="q10a"><input type="radio" required="required"  name="pq10" value="a">
+                a) E e G </p>
+
+            <p class="bordaQuestoes" id="q10b"><input type="radio" required="required"  name="pq10" value="b">
+                b) H e A </p>
+
+            <p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c">
+                c) I e E
+
+
+            <p class="bordaQuestoes" id="q10d"><input type="radio" required="required"  name="pq10" value="d">
+                d) B e I</p>
+
+            <p class="bordaQuestoes" id="q10e"><input type="radio" required="required"  name="pq10" value="e">
+                e) E e F</p>
+
+
+        </div>
+
+        <div class="comentarios">
+            <p> Comentário: <br><br>
+
+                As curvas de nível mostram lugares altos ou baixos, quando mais íngreme for a altitude de um local mais
+                próximas as linhas de topografia estarão. Para a construção de um parque industrial é primeiro
+                necessário que o lugar seja plano, sem a necessidade de retirada de morros e também próximos a estrada
+                para que haja a possibilidade de escoamento do produto produzido.<br><br>
+
+                Já as torres normalmente estão localizadas em lugares com uma altitude relevante, para que o sinal seja
+                mais amplo e com melhor funcionamento sem muitas barreiras que interfiram na propagação das ondas.</p>
+        </div>
+
+    </form>
+
+
+    <br><br>
+
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+
+    <div class="area">
+        <img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+            height="200">
+    </div>
+
+
+
+    <p id="aviso"></p>
+    <br><br>
+
+
+    <div class="area"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+        function checar() {
+
+
+
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+            var pq4 = document.quiz.pq4.value;
+            var pq5 = document.quiz.pq5.value;
+            var pq6 = document.quiz.pq6.value;
+            var pq7 = document.quiz.pq7.value;
+            var pq8 = document.quiz.pq8.value;
+            var pq9 = document.quiz.pq9.value;
+            var pq10 = document.quiz.pq10.value;
+
+            var corretas = 0;
+
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById("q1d").style.backgroundColor = cor[1];
+                document.getElementById("q1e").style.backgroundColor = cor[1];
+
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq2 == "e") {
+                corretas++;
+                document.getElementById("q2e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+                document.getElementById("q2c").style.backgroundColor = cor[1];
+                document.getElementById("q2d").style.backgroundColor = cor[1];
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+
+                document.getElementById("q2e").style.backgroundColor = cor[0];
+
+            }
+            if (pq3 == "c") {
+                corretas++;
+                document.getElementById("q3c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+                document.getElementById("q3a").style.backgroundColor = cor[1];
+                document.getElementById("q3d").style.backgroundColor = cor[1];
+                document.getElementById("q3e").style.backgroundColor = cor[1];
+
+                document.getElementById("q3c").style.backgroundColor = cor[0];
+
+
+            }
+            if (pq4 == "c") {
+                corretas++;
+                document.getElementById("q4c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+                document.getElementById("q4d").style.backgroundColor = cor[1];
+
+                document.getElementById("q4c").style.backgroundColor = cor[0];
+
+            }
+            if (pq5 == "e") {
+                corretas++;
+                document.getElementById("q5e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+                document.getElementById("q5c").style.backgroundColor = cor[1];
+                document.getElementById("q5d").style.backgroundColor = cor[1];
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+
+                document.getElementById("q5e").style.backgroundColor = cor[0];
+
+            }
+            if (pq6 == "b") {
+                corretas++;
+                document.getElementById("q6b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6a").style.backgroundColor = cor[1];
+                document.getElementById("q6c").style.backgroundColor = cor[1];
+                document.getElementById("q6d").style.backgroundColor = cor[1];
+
+                document.getElementById("q6b").style.backgroundColor = cor[0];
+
+            }
+            if (pq7 == "b") {
+                corretas++;
+                document.getElementById("q7b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7a").style.backgroundColor = cor[1];
+                document.getElementById("q7c").style.backgroundColor = cor[1];
+                document.getElementById("q7d").style.backgroundColor = cor[1];
+                document.getElementById("q7e").style.backgroundColor = cor[1];
+
+                document.getElementById("q7b").style.backgroundColor = cor[0];
+
+            }
+            if (pq8 == "c") {
+                corretas++;
+                document.getElementById("q8c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+                document.getElementById("q8d").style.backgroundColor = cor[1];
+                document.getElementById("q8e").style.backgroundColor = cor[1];
+
+                document.getElementById("q8c").style.backgroundColor = cor[0];
+
+            }
+            if (pq9 == "a") {
+                corretas++;
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+                document.getElementById("q9c").style.backgroundColor = cor[1];
+                document.getElementById("q9d").style.backgroundColor = cor[1];
+                document.getElementById("q9e").style.backgroundColor = cor[1];
+
+                document.getElementById("q9a").style.backgroundColor = cor[0];
+
+            }
+            if (pq10 == "c") {
+                corretas++;
+                document.getElementById("q10c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+                document.getElementById("q10a").style.backgroundColor = cor[1];
+                document.getElementById("q10d").style.backgroundColor = cor[1];
+                document.getElementById("q10e").style.backgroundColor = cor[1];
+
+                document.getElementById("q10c").style.backgroundColor = cor[0];
+
+            }
+
+
+            corLenta();
+            classEscurecer();
+            comentarios();
+
+
+
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+            var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5 && corretas <= 7) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+
+
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+            document.getElementById("mensagem").style.display = 'block';
+            document.getElementById("imagem").style.display = 'block';
+
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

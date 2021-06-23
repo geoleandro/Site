@@ -1,0 +1,93 @@
+<style>
+    .topico {
+        display: none
+    }
+    .topico:nth-child(1), 
+	.topico.mostrar {
+        display: block
+    }
+
+    .btn{
+        display: block
+    }
+	
+	
+</style>
+
+<div class="topico"><br>
+    
+    <p>Primeiro <span onclick="document.getElementById('btn1').style.display='block'"><mark>integração</mark></span></p>
+	<button  id = "btn1" class = "button" style="display:none"onclick="MostrarProximo(this)"> Próximo</button><br>
+</div>
+
+
+
+
+<div class="topico"><br>
+
+	<p>segundo <span onclick="document.getElementById('btn2').style.display='block'"><mark>integração</mark></span></p>
+    <button  id = "btn2" class = "button" style="display:none"  onclick="MostrarProximo(this)"> Próximo</button><br>
+    	
+</div>
+
+
+
+<div class="topico"><br>
+
+	<p>terceiro <span onclick="document.getElementById('btn3').style.display='block'"><mark>integração </mark></span></p>
+    <button id = "btn3" class = "button" onclick="MostrarProximo(this)"> Próximo</button><br>
+    
+</div>
+
+
+
+
+<div class="topico"><br>
+
+	<p>quarto <span onclick="document.getElementById('btn4').style.display='block'"><mark>integração </mark></span></p>
+    <button id = "btn4"  class = "button" onclick="MostrarProximo(this)"> Próximo</button><br>
+    
+</div>
+
+
+
+<div class="topico"><br>
+
+	<p>Quinto <span onclick="document.getElementById('btn5').style.display='block'"><mark>integração </mark></span></p>
+    <button id = "btn5"  class = "button" onclick="MostrarProximo(this)"> Próximo</button><br>
+    
+</div>
+
+
+
+<script>
+    // "parametro" nada mais é que o botão clicado
+    function MostrarProximo(parametro) {
+        
+        var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+     	var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+        if (!proximo.classList.contains('mostrar')) { // Verificar se o seguinte já foi mostrado
+        	proximo.classList.add('mostrar'); // Mostrar o seguinte
+            //oculto.style.display = "none";
+               
+        
+		var t = document.getElementsByClassName("button");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.display = "none";
+			
+		
+			} 
+       
+         		
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+

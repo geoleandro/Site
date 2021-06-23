@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none; border-radius: 35px ; padding: 0px; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(livro.png);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+.p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex; justify-content: center;}
+
+
+</style>
+
+</head>
+
+<body onload= "mudaQuest()">
+
+
+
+
+	<h1 id="h1">    Questões aula 07 - Industrialização mundial I. Do meio natural ao meio técnico.   </h1>
+  
+  
+	<p><b>Conteúdo:</b>  Meio natural; Meio técnico; Revolução Industrial; Divisão Internacional do Trabalho; Tipos de indústrias;   </p>
+	
+	
+	<p><b>Objetivo:</b> Estudar a formação do meio técnico e identificar suas características fundamentais. Relacionar tais características ao processo de industrialização.    </p>
+    
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p class ="p2">Questão 01</p>
+			
+		<p id="p3">   (2020) Relacione as duas colunas abaixo, enumerando a segunda de acordo com a primeira:   </p>
+		
+		<img src="t7q1.png" alt="a" class="imagem" width="320" height="260">
+		
+		<p id="p3"> Assinale a alternativa que corresponde a sequência </p>
+		
+		
+		</div> 
+		            
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) 1-2-3-4-5</p>
+       
+	   <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) 3-3-2-1-2</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) 2-1-2-3-3</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d">d) 1-2-1-3-3</p>
+		
+		
+			
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p> a) (3) – a produção de bens materiais para o consumidor, sejam eles duráveis ou não duráveis, é realizada pelas indústrias de bens de consumo.</p>
+		
+		<p>	b) (3) – idem</p>
+		
+		<p>	c) (2) – a produção de peças e equipamentos para subsidiar outras indústrias é um importante papel exercido pelas indústrias de bens de capital.</p>
+		
+		<p>	d) (1) – o fornecimento de matérias-primas para outras indústrias é papel das indústrias de base..</p>
+		
+		<p>	e) (2) – o fornecimento de maquinários industrializados para outras empresas é papel das indústrias de bens de capital.</p>
+		 
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p class ="p2">Questão  02</p>
+			
+		<p id = "p3">   (2020) “Todo o sistema de produção e organização do espaço geográfico passou a ser definido pelo Estado [...]. O Estado determinava as metas a serem alcançadas e o tipo de produção de cada estabelecimento, realizava a distribuição e a comercialização dos produtos e investia em grandes obras de infraestrutura, como a canalização de rios, instalação de usinas de energia elétrica e ampliação do sistema ferroviário [...]. O objetivo era eliminar, ou diminuir ao máximo, a importação de equipamentos e matérias-primas industriais”.   </p>
+			
+		<p id = "citacao"><small> (LUCCI, E. A., et al. Território e sociedade no mundo globalizado: Geografia Geral e do Brasil. Ensino Médio. Editora Saraiva, 2005.pp.68-69).  </small>	  </p>
+ 		 
+		 <p id = "p3"> O texto se refere à:2</p>
+        
+		<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) Industrialização clássica.</p>
+       
+	   <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) Industrialização planificada.</p>
+		
+		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) Industrialização tardia.</p>
+		
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) Urbanização clássica.</p>
+		
+		<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) Urbanização estatal.</p>
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  O texto descreve as medidas tomadas pelo Estado soviético para industrializar a sua economia, até então de caráter puramente agrário. Tal configuração está ligada à Industrialização planificada.  </p>
+    </div>
+	
+	
+	
+	
+
+    <div class="campo">
+		
+        <p class ="p2">Questão 03</p>
+			
+		<p id="p3">  (2020) Leia o trecho a seguir e responda ao que se pede:</p>
+
+		<p id="p3">	“Essa forma de industrialização é a que nos interessa mais de perto por ter ocorrido no Brasil. Trata-se de uma industrialização que, como o nome sugere, foi historicamente atrasada em relação à original e ocorreu em muitos países subdesenvolvidos [...]. Foi mais comum no século XX, embora, em alguns casos, tenha se iniciado de forma tímida no fim do século XIX”.</p>
+ 			 
+		<p id="citacao"><small> Vicentini, José William. Geografia: o mundo em transição. São Paulo: Editora Ática, 2012. p.67. </small>	</p>
+		
+		<p id="p3">	A forma de industrialização a que o autor se refere é:</p>
+      
+		<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> aa) a do tipo clássica, caracterizada pelo predomínio das chamadas “indústrias de chaminés”, hoje obsoletas.</p>
+       
+		<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) a do tipo planificada, vista como a única forma de os países periféricos conseguirem se industrializar, sobre a forte proteção do Estado.</p>	
+		
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) a do tipo tardia, realizada, em geral, com a presença predominante de capital estrangeiro e empresas multinacionais.</p>
+
+		
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) a do tipo planificada, realizada em países socialistas e keynesianistas, procurando articular o setor da indústria de base com o setor de bens de consumo.</p>
+		
+		<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) a do tipo tardia, realizada graças à emancipação econômica apenas recentemente conquistada pelos países subdesenvolvidos.</p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   O trecho selecionado na questão relata o processo de industrialização dos países subdesenvolvidos, caracterizado pela grande dependência econômica para com o capital externo, principalmente de países estrangeiros. Em geral, a industrialização desses países marcou-se pela predominante presença de multinacionais, com menor contribuição de empresas locais. Portanto, a alternativa correta é a letra</p>
+    </div>
+	
+	
+	
+	
+	
+	<div class="campo">
+		
+        <p class ="p2">Questão 04</p>
+			
+		<p id="p3">   (Mackenzie 2014) Tendo como base de análise a figura e os aspectos que definiram a Primeira Revolução Industrial, considere as afirmativas a seguir:</p>
+		
+		<img src="t7q4.png" alt="a" class="imagem" width="320" height="330">
+		
+		<p id="p3">  I. Inicia-se nas últimas décadas do século XVIII e estende-se até meados do século XIX. A invenção da máquina a vapor e o uso do carvão como fonte de energia primária marcam o início das mudanças nos processos produtivos.</p>
+
+		<p id="p3"> II. O Reino Unido foi o primeiro país a reunir condições básicas para o início da industrialização devido à intensa acumulação de capitais no decorrer do Capitalismo Comercial.</p>
+
+		<p id="p3"> III. Os mais destacados segmentos fabris desta fase foram o têxtil, o metalúrgico e o de mineração.</p>
+
+		<p id="p3">IV. As transformações produtivas desta fase atingiram rapidamente outros países como a Alemanha, França e Estados Unidos ainda no Século XVIII recrutando operários com salários atrativos promovendo, assim, um intenso êxodo rural.</p>
+
+		<p id="p3">   Estão corretas:</p>
+        
+		<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) apenas I, II e III.</p>
+      
+		<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) apenas I, II e IV.</p>
+		
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) apenas II, I</p>
+	
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d">  d) I, II, III e IV.          </p>		
+		
+		
+	
+    </div>
+
+        
+		
+		<div class="comentarios">             
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  IV. Incorreta. Os países citados entraram na Segunda Revolução Industrial a partir de 1850. </p>
+    </div>
+	
+	
+	
+	
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 05</p>
+			
+		<p id="p3">  (UFRGS 2013) O desenvolvimento tecnológico dos séculos XIX e XX alterou as formas de trabalho, as paisagens geográficas, os hábitos e os costumes das populações.
+ 
+		<p id="p3"> Assinale a alternativa correta em relação a essas alterações:</p>
+							            
+        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) A produção de elevadores e automóveis, no final do século XIX e início do século XX, contribuiu para a verticalização e a intensificação da estrutura viária no espaço urbano.
+     
+		<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b">b) O conhecimento técnico-científico, nos séculos XIX e XX, contribuiu para reduzir a degradação ambiental.</p>
+		
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) A criação de equipamentos agrícolas modernos viabilizou o cultivo de grandes extensões de terras e o aumento da demanda por trabalhadores no campo.</p>
+		
+		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) O desenvolvimento econômico, tecnológico e social, que transformou as paisagens geográficas, tem sua origem nas políticas nacionalistas, implantadas pelos regimes autoritários, no final do século XIX.</p>
+		
+		<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> ee) Tecnologias avançadas, direcionadas para a automação da produção, proporcionaram o aumento da produtividade, exigindo maior esforço físico e mental dos trabalhadores para realizar as atividades.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			 
+		<p> O espaço foi bastante modificado a partir das transformações indicadas na alternativa a. Os automóveis exigiram a ampliação da rede rodoviária, criando uma nova forma de planejamento urbano voltado ao automóvel. Os elevadores possibilitaram que a engenharia civil evoluísse em suas estruturas, criando maior aproveitamento do espaço vertical com o advento de elevadores motorizados.</p>
+		
+		<p>	Apesar do conhecimento técnico- científico, não houve redução significativa da degradação ambiental e, com a criação de equipamentos modernos para as práticas agrícolas, a demanda por trabalhadores no campo foi reduzida, e não aumentada. </p>  
+		
+		<p>	Já o desenvolvimento econômico, tecnológico e social, que transformou as paisagens geográficas, tem sua origem na Revolução Industrial e influência das políticas ligadas ao liberalismo econômico. As tecnologias avançadas e a automação de produção exigiram cada vez menos esforço dos trabalhadores para realizar suas atividades.</p>
+	                  
+
+  
+    </div>
+		
+		
+		
+				 
+	<div class="campo">
+		
+        <p class ="p2">Questão 06</p>
+			
+		<p id="p3">    (UNESP 2013) Assinale a alternativa que indica corretamente o fator considerado determinante para a localização das indústrias durante a Primeira Revolução Industrial (final do século XVIII a meados do século XIX).  </p>
+							          
+        <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) Reservas de petróleo.</p>
+       
+	   <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b">  b) Incentivos fiscais.</p>
+		
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c">  c) Mão de obra especializada.</p>
+		
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d">  d) Jazidas de carvão mineral.</p>
+		
+		<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e">  e) Disponibilidade de água.</p>
+
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+	
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 07</p>
+			
+		<p id="p3">    (UDESC 2009) Assinale a alternativa INCORRETA, sobre a industrialização. </p>
+					      
+	   <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) Nunca houve na história um tipo de sociedade industrial que não fosse nomeada e produtivamente capitalista, ou seja, não há indústria em uma sociedade que não seja capitalista.</p>
+       
+	   <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) A industrialização se caracteriza pela produção em larga escala, localizada em estabelecimentos fabris, com uso de maquinaria e grande quantidade de mão de obra, com o objetivo de atingir um mercado consumidor.</p>
+		
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) A industrialização é um processo, nesse sentido se relacionam as etapas anteriores de produção, como nas manufaturas dos séculos XV, XVI e XVII, nas quais já era possível notar algumas das características da industrialização.</p>
+		
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) A Inglaterra é considerada uma das nações pioneiras no processo de industrialização.</p>
+		
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e">e) O conceito de industrialização implica uma série de elementos específicos, como: as descobertas científicas e seu emprego nas atividades produtivas; uma combinação entre as atividades de produção e de consumo; o mercado; o contrato; a moeda como instituições que norteiam a troca entre produtores e consumidores, etc.</p>
+
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 08</p>
+			
+		<p id="p3">  (UFC 2003) A Primeira Revolução Industrial provocou uma grande transformação no espaço geográfico. A esse respeito, leia as afirmações abaixo.</p>
+
+		<p id="p3"> I. Aconteceu um intenso processo de urbanização, e as cidades passaram a comandar as atividades econômicas e a organização do espaço geográfico.</p>
+
+		<p id="p3"> II. Com a ampliação da divisão internacional do trabalho, alguns países europeus especializaram-se na produção industrial, controlando o mercado mundial de produtos industrializados.</p>
+
+		<p id="p3"> III. Aconteceram grandes mudanças no modo de produção, sem implicações na organização política e territorial da Europa.</p>
+
+		<p id="p3">Assinale a alternativa correta.</p>         
+        
+		<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) Apenas I é verdadeira.</p>
+       
+	   <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) Apenas III é verdadeira.</p>
+		
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) Apenas I e II são verdadeiras.</p>
+		
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) Apenas II e III são verdadeiras.</p>
+	
+		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) I, II e III são verdadeiras.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+			
+		 
+	<div class="campo">
+		
+        <p class ="p2">Questão 09</p>
+			
+		<p id="p3">  (Unirio-RJ) Como a economia capitalista caracteriza-se pela propriedade privada do capital, os proprietários organizam seus negócios em condições de concorrência. Todos procuram maximizar seus lucros, diminuindo os custos de produção e ampliando seus mercados. [...] A concorrência tem início quando os empresários tomam decisões relativas à localização das suas fábricas. A opção por determinado lugar é o elemento inicial que pode definir o sucesso ou o fracasso de um empreendimento. </p>
+			
+		<p id="citacao"><small>  Magnoli, D.; Araujo, R. Geografia: a construção do mundo. São Paulo: Moderna, 2005. </small>	</p>
+           
+		<p id="p3">  A teoria básica da localização industrial está contida na seguinte afirmativa:</p>
+      
+	  <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) Uma fábrica atrai outra fábrica devido às vantagens da aglomeração.</p>
+       
+	   <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) O espaço geográfico oferece poucas opções de localização</p>
+		
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) A melhor localização reduz o tempo e os custos de produção.</p>
+		
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) A produção em série estimula as vantagens locacionais.</p>
+		
+		<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) A concentração industrial é fortalecida pelo avanço tecnológico.</p>
+		
+
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p class ="p2">Questão 10</p>
+			
+		<p id="p3">    A antiga Divisão Internacional do Trabalho e o imperialismo trouxeram novas formas de dominação e hierarquização no espaço mundial. Entre as novidades que passaram a determinar as formas de poder na relação, destaca-se:  </p>
+						            
+        <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) A presença de forças militares como estratégia de dominação.</p>
+       
+	   <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) A desigualdade econômica e militar entre os países.</p>
+		
+		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) A dominação fortemente baseada nas diferenças tecnológicas.</p>
+		
+	<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d">   d) A possibilidade de um pais passar de dominado a dominante.</p>
+			
+		<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e)  A criação de sistemas bancários e de comércio internacionalizados.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A antiga Divisão Internacional do Trabalho se formou a partir do processo de industrialização, que dividiu os países entre industrializados e agroexportadores, divisão fundamentada na superioridade tecnológica dos primeiros sobre os últimos </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+	
+	
+	<div class = "area">
+    <img src="" id="imagem" style="display:none" alt="" width = "280" height="200">
+	</div>
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	 
+	 
+	     
+	     
+</script>
+
+<script>
+ 
+	 function mudaQuest(){
+		var t = document.getElementsByClassName("p2");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.fontFamily = tipo[fonte];
+			
+		
+			} 
+		}
+		
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				 
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			//(pq1.includes("leite")||(pq1.includes("gato"))||(pq1.includes("pato")))
+            if (pq1 == "b") {
+                corretas++;
+                document.getElementById("q1b").style.backgroundColor = cor[0];
+            } else {
+                				
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q1b").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "c") {
+                corretas++;
+                document.getElementById("q3c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3c").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "a") {
+                corretas++;
+                document.getElementById("q4a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "a") {
+                corretas++;
+                document.getElementById("q5a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "d") {
+                corretas++;
+                document.getElementById("q6d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "a") {
+                corretas++;
+                document.getElementById("q7a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "c") {
+                corretas++;
+                document.getElementById("q8c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8c").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "c") {
+                corretas++;
+                document.getElementById("q9c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9c").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "c") {
+                corretas++;
+                document.getElementById("q10c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10c").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

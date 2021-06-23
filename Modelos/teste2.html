@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+	
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+#p123 {
+	text-align: center;
+	background: white; 
+	border: 1px solid lightgray; 
+	height: 30px; 
+	padding:10px;
+}
+
+#p123:hover {background-color: lightgray}
+
+#p4 {
+	text-align: left;
+	background: white; 
+	border: 1px solid lightgray; 
+	height: 30px; 
+	padding:10px;
+}
+
+#p4:hover {background-color: #ccc}
+
+
+#button2:hover 	{background-color: #3e8e41}
+
+#q3input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+p {
+
+text-align: justify;
+font-family: arial;
+line-height: 25px;
+}
+
+	
+#div1 {
+
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  border: 1px solid #aaaaaa;
+text-align: center;
+}
+
+.imgbox {
+  float: left;
+  text-align: center;
+  width: 90px;
+  border: 1px solid gray;
+  margin: 4px;
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+<button type="button"onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+<br/><br/>
+
+<span onclick="esconderDiv('foto1')">Divtexto (clique para aparecer os textos)</span>
+
+<div id ="foto1" style="display:none" > Esse texto ? um exemplo. Quando houver uma palavra desconhecida, por exemplo, <span onclick="this.innerHTML='dissenso (desist?ncia de um dos contratantes antes do vencimento do contrato)'"><mark>dissenso</mark></span>,
+ao clicar na palavra, ela mostrar? o significado entre par?nteses.</div>
+
+
+
+
+
+
+
+<br/><br/>
+<br/><br/>
+<button type="button" onclick="esconderDiv(Id)">Agora é com você! Clique para fazer os testes.</button>
+
+<script>
+function esconderDiv(Id) {
+        var display = document.getElementById(Id).style.display;
+        if(display == "none")
+            document.getElementById(Id).style.display = 'block';
+        else
+            document.getElementById(Id).style.display = 'none';
+    }
+
+</script>
+
+<div id="minhaDiv"> 
+
+<br/>
+<br/>
+
+<button type="button" onclick="myFunction()">Show content</button>
+
+<script>
+function myFunction() {
+  document.getElementById("div1").style.display='block';
+}
+</script>
+
+<p> QUEST?ES</p><br>
+
+<p>Responda as quest?es a seguir:</p>
+
+<form id = "quiz" name = "quiz">
+
+
+<div id="diva">
+<p> Qual ? a capital do Peru?</p>
+<input id = "q1" type = "text" name = "q1" value ="Digite a resposta aqui">
+<br><br>
+</div>
+
+<input id = "button1" type = "button" value = "Conferir" onclick = "checar(1)">
+
+
+<div id="quest1"style="display:none" >
+
+<p>Lorem Ipsum ? simplesmente uma simulação de texto da ind?stria tipogr?fica e de impressos, e vem sendo utilizado desde o s?culo XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+</div>
+
+
+
+<br><br>
+<div id="div2">
+<p>Qual ? a capital do Equador?</p>
+<p id="p1"><input type = "radio" id = "q2" name = "q2" value = "Quito"  checked="checked"> a) Quito <img id='certo' src="" style= width ="60" height="30" ;/></p>
+<p id="p2"><input type = "radio" id = "q2" name = "q2" value = "Quieto">b) Quieto</p>
+</div>
+<input id = "button2" type = "button" value = "Conferir" onclick = "checar(2)">
+
+<div id="quest2"style="display:none">
+<p>Lorem Ipsum ? simplesmente uma simula??o de texto da ind?stria tipogr?fica e de impressos, e vem sendo utilizado desde o s?culo XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p> 
+</div>
+
+<div id="div3">
+<p>Qual ? a capital da Argentina?</p>
+<p id="p3"><input type = "radio" id = "q3" name = "q3" value = "Bogot?">Bogot?</p>
+
+<p id="p4"><input type = "radio" id = "q3" name = "q3" value = "Buenos Aires" onclick = "checar(3)">Buenos Aires</p>
+</div>
+<input id = "button3" type = "button" value = "Conferir" onclick = "checar()">
+
+<div id="quest3"style="display:none" >
+<p>Lorem Ipsum ? simplesmente uma simula??o de texto da ind?stria tipogr?fica e de impressos, e vem sendo utilizado desde o s?culo XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p> 
+</div>
+
+
+</form>
+
+</div>
+
+
+<p id = "numeroCorreto"></p>
+
+<p id = "mensagem"></p>
+
+<img id = "imagem" style= width="300" height="150">
+
+<p id = "cor"></p>
+
+
+
+
+<script>
+
+function checar(qnum) {
+
+
+var q1 = document.quiz.q1.value;
+var q2 = document.quiz.q2.value;
+var q3 = document.quiz.q3.value;
+var corretas = 0;
+
+
+var cor = ["#99ff99", " #ee4466"];
+
+	if (q1.match("sol") && q1.match("lua") && qnum==1) {
+	corretas++; 
+   document.getElementById("q1").style.backgroundColor  = cor[0];
+   document.getElementById("quest1").style.display ="block";
+   document.getElementById("quest1").innerHTML = q1.valueOf();
+	}	else if (qnum==1){
+    document.getElementById ("q1").style.backgroundColor = cor[1];
+    document.getElementById("quest1").style.display ="block";
+		document.getElementById("quest1").innerHTML = q1.valueOf();
+	}
+
+
+	if (q2 == "Quito" && qnum == 2) {
+	corretas++; 
+	document.getElementById ("p1").style.backgroundColor  = cor[0];
+	document.getElementById("certo").src="certo.png";
+	
+	}	else if (qnum == 2){
+		document.getElementById ("p2").style.backgroundColor = cor[1];
+		document.getElementById("quest2").style.display='block';
+	}
+
+
+	if (q3 == "Buenos Aires" && qnum==3) {
+	corretas++;
+	document.getElementById("p4").style.backgroundColor = cor[0];
+	
+	}else if (qnum == 3){
+		document.getElementById ("p3").style.backgroundColor = cor[1];
+		document.getElementById ("div3").style.color = "lightgray";
+		document.getElementById("quest3").style.display='block';
+	}
+
+var incorrretas = 10 - corretas;
+var mensagem = ["Parab?ns!", "Foi bom!", "Melhor tentar novamente!"];
+
+var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+
+
+
+var pontos;
+
+	if (corretas < 1) {
+		pontos = 2;
+		
+	}
+
+	if (corretas > 0 && corretas < 3) {
+		pontos = 1;
+	}
+
+
+	if (corretas > 2) {
+		pontos = 0;
+		
+	}
+
+
+
+
+	document.getElementById ("numeroCorreto").innerHTML = "Voc? acertou " + corretas +" e errou " + incorrretas;
+	document.getElementById ("mensagem").innerHTML = mensagem[pontos];
+	document.getElementById ("imagem").src = imagem[pontos];
+	
+	}
+
+</script>
+
+
+Clque para descobrir a resposta
+<br><br>
+
+Qual ? a capital do Paran??
+<br/><br/>
+<span onclick="document.getElementById('p3301').src ='certo.png'"><mark><span onclick="play()">Curitiba</span></mark> </span><img id="p3301" src=" " style= width="60" height="30" /><br/><br/>
+
+<span onclick="document.getElementById('p3302').src='errado.png'"><span onclick="play2()">Londrina</span></span><img id='p3302' src="" style= width="60" height="30" />
+
+<p id = "p123" >Pr?ximo</p>
+
+<style>
+  .bordered {
+    width:200 px;
+    height:10 px;
+    padding:20 px;
+    border: 10 px solid yellowgreen;
+  };
+</style>
+
+<div class="bordered">
+Box with a border
+</div>
+
+
+
+
+
+
+
+
+<p id = "mensagemA"</p>
+<p id = "mensagemB"</p>
+<p id = "msga"</p>
+<img id = "imagem5" style= width ="300" height="150">
+
+
+
+
+<script>
+
+function msg(){
+	
+	
+	document.getElementById(obj).hidden = true;
+	
+	document.getElementById("mensagemA").innerHTML = contagem;
+}
+
+
+</script>
+
+
+
+
+<img src="" onclick="TocarMusica()" />
+
+<script>
+function play(obj){
+    var audio1 = new Audio();
+    audio1.src = "audio1.mp3";
+   audio1.play();
+  document.getElementById(obj).hidden=true;
+  
+   }
+</script>
+
+<script>
+function play2(obj){
+    var audio1 = new Audio();
+    audio1.src = "audio2.mp3";
+   audio1.play();
+  document.getElementById(id).hidden=true;
+  
+   }
+</script>
+
+
+
+<span onclick="document.getElementById('p3304').src ='icone.png'"><mark><span onclick="play()">Nova</span></mark> </span><img id="p3304" src=" " style= width="60" height="30" /><br/><br/>
+
+
+
+
+<input type="image" id ="img1" src="icone.png" alt="" style= width="120" height="60">
+<input type="image" id ="img2" src="icone.png" alt="" style= width="120" height="60">
+<input type="image" id ="img3" src="icone.png" alt="" style= width="120" height="60">
+<input type="image" id ="img4" src="icone2.png" alt="" style= width="120" height="60" onclick="play('img4')">
+<input type="image" id ="img5" src="icone.png" alt="" style= width="120" height="60" onclick="play('img5')">
+<input type="image" id ="img6" src="icone2.png" alt="" style= width="120" height="60" onclick="play('img6')">
+
+
+
+<body>
+
+<h3>Difference between display:none and visiblity: hidden</h3>
+<p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+<p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img src="icone.png" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <input type="image" src="icone2.png" alt="Lights" style="width:100%" onclick="changeVisibility()">
+
+</div>
+
+<div class="imgbox">Box 3<br>
+  <img src="icone.png" alt="Forest" style="width:100%">
+  <button onclick="resetElement()">Reset All</button>
+</div>
+
+<script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+<br/><br/>
+
+<br/><br/>
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+<br/><br/><br/><br/>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<br><br><br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br><br>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<div id="drag1"  draggable="true" ondragstart="drag(event)">Frase</div>
+
+<img id="drag2" src="icone.png" draggable="true" ondragstart="drag(event)" width="36" height="18">
+
+<div id="drag3"  draggable="true" ondragstart="drag(event)">Frase2</div>
+
+ 
+ 
+ <script>
+ 
+ function enterDroppable(elem) {
+      elem.style.background = 'pink';
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

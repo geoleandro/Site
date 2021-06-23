@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: normal 1px; border-radius: 35px ; padding: 0cm; font-size: auto; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+textarea {
+  overflow: auto;
+  wap:hard
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+	<h1 id="h1">   Questões aula 21 – Hidrografia brasileira    </h1>
+  
+  
+	<p><b>Conteúdo:</b> Bacias hidrográficas: Amazônica, Tocantins-Araguaia, São Francisco, Platina, Parnaíba; Rede hidrográfica; Rios brasileiros; Aquíferos. </p>
+  
+	
+	<p><b>Objetivo:</b> Definir e entender o conceito de bacia hidrográfica e comparar as características naturais e socioeconômicas da bacias brasileiras.  </p>
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p id="p2">Questão 01</p>
+			
+		<p id="p3">   (2020) Observe a imagem e defina bacia hidrográfica. </p>
+								
+		<img src="s21q1.jpg" class="imagem" width="330" height="200">
+			
+		<p class="bordaQuestoes" id="q1a"><textarea placeholder="Insira sua resposta aqui" required="required" id="pq1" name="pq1"    rows ="8" cols="35" maxlength="700"></textarea></p>
+            
+	
+    </div>
+
+    <div class="comentarios">
+		<p id="resp1"></p>
+		<p> Compare sua resposta com o comentário abaixo:</p>
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p id="p2">Questão  02</p>
+			
+		<p id="p3">   (2020) Analise as afirmativas e marque a que está INCORRETA.   </p>
+			
+				   
+        <p class="bordaQuestoes"id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) Com 7 milhões de quilômetros quadrados, a bacia hidrográfica Amazônica é considerada a maior do planeta.</p>
+        
+		<p class="bordaQuestoes"id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) No Brasil, a bacia hidrográfica do Paraguai está presente nos estados de Mato Grosso e Mato Grosso do Sul, tendo o Paraguai como principal rio.</p>
+		
+		<p class="bordaQuestoes"id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) Os estados do Rio Grande do Sul e Santa Catarina abrigam a bacia hidrográfica do Uruguai, que possui grande potencial hidrelétrico</p>
+		
+		<p class="bordaQuestoes"id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) A maior bacia hidrográfica exclusivamente brasileira é a Tocantins-Araguaia, com extensão de aproximadamente 967 mil quilômetros quadrados.</p>
+		
+		<p class="bordaQuestoes"id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) A bacia hidrográfica do São Francisco é a que possui a maior possibilidade de navegação no Brasil.</p>
+
+
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Verdadeiro – A bacia hidrográfica Amazônica é a maior do mundo. Sua extensão é de 7 milhões de quilômetros quadrados, sendo 3,8 milhões de km² em território brasileiro. </p>
+
+		<p> b) Verdadeiro – O rio Paraguai é o principal dessa bacia hidrográfica, que compreende os estados de Mato Grosso e Mato Grosso do Sul no território brasileiro. </p>
+
+		<p> c) Verdadeiro – Essa bacia hidrográfica apresenta grande potencial hidrelétrico, no entanto, ele é pouco explorado. A bacia do Uruguai está presente nos estados do Rio Grande do Sul e de Santa Catarina. </p>
+
+		<p> d) Verdadeiro – Com extensão de 967.059 quilômetros quadrados, a bacia hidrográfica do Tocantins-Araguaia é a maior do Brasil, considerando apenas as que estão presentes somente no território brasileiro. </p>
+
+		<p> e) Falso – A bacia hidrográfica que possui maior possibilidade de navegação é a Amazônica. O Rio Amazonas percorre mais de 3 mil quilômetros pelo território brasileiro, apresentando um desnível suave e progressivo. Essas características proporcionam condições de navegação em quase todo o seu trajeto. </p>   
+    </div>
+	
+	
+    <div class="campo">
+		
+        <p id="p2">Questão 03</p>
+			
+		<p id="p3">  (UERR 2019) Observe o mapa e as informações abaixo:   </p>
+			
+		<img src="s21q3.jpg" class="imagem" width="320" height="250">
+		
+		<p id="p3"> O mapa acima apresenta as 12 regiões hidrográficas brasileiras.</p>
+
+		<p id="p3"> I – A Região Hidrográfica (RH) ocupa 45% do território nacional, abrangendo sete Estados. Possui uma extensa rede de rios com grande abundância de água. A densidade populacional é 10 vezes menor que a média nacional, entretanto, a região concentra 81% da disponibilidade de águas superficiais do país. Cerca de 85% da área da RH permanece com cobertura vegetal nativa.</p>
+
+		<p id="p3"> II - A Região Hidrográfica ocupa 7,5% do território brasileiro, abrangendo sete estados: Bahia, Minas Gerais, Pernambuco, Alagoas, Sergipe, Goiás e Distrito Federal. A precipitação média anual na RH é muito abaixo da média nacional, apresentando frequentes situações de escassez de água. Entretanto, a RH tem importante papel na geração de energia para a região nordeste do país.</p>
+
+		<p id="p3"> III - A Região Hidrográfica ocupa 10% do território brasileiro, abrangendo sete estados: São Paulo, Paraná, Mato Grosso do Sul, Minas Gerais, Goiás, Santa Catarina e Distrito Federal. É a região mais populosa e de maior desenvolvimento econômico do país. Por isso, possui as maiores demandas por recursos hídricos, tendo como destaque o uso industrial. É também a região com maior área irrigada e maior aproveitamento do potencial hidráulico disponível.</p>
+
+		<p id="p3">  As características descritas acima se referem às seguintes regiões hidrográficas, respectivamente:</p>
+		        
+       <p class="bordaQuestoes"id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) Tocantins-Araguaia, São Francisco e Paraguai. </p>
+       
+	   <p class="bordaQuestoes"id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) Amazônica, Parnaíba e Paraná. </p>
+		
+		<p class="bordaQuestoes"id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) Pantanal, São Francisco e Paraná.</p>
+		
+		<p class="bordaQuestoes"id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) Amazônica, São Francisco e Paraná. </p>
+		
+		<p class="bordaQuestoes"id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) Amazônica, Tocantins-Araguaia e Paraguai.</p>
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+			  
+    </div>
+	
+	<div class="campo">
+		
+        <p id="p2">Questão 04</p>
+			
+		<p id="p3"> (Unicamp 2019) Compreender a dinâmica de vazão dos rios é fundamental para o gerenciamento dos recursos hídricos, pois a captação de água atende a diferentes necessidades da sociedade e pode ser comprometida em caso de estiagem extrema. Os gráficos de Regime Fluvial a seguir mostram a vazão de dois rios brasileiros ao longo do ano.  </p>
+		
+		<img src="s21q4.jpg" class="imagem" width="320" height="260">
+		
+		<p id="citacao"><small>   (Fonte: Agência Nacional de Águas, ANA.) </small>	</p>
+		
+		<p id="p3">	Considerando as informações dos gráficos e seus conhecimentos, assinale a alterativa correta.</p>
+        
+		<p class="bordaQuestoes"id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) O volume correspondente à vazão dos dois rios é similar, e o volume de chuvas responsáveis pela recarga desses cursos d’água é o mesmo.</p>
+	
+		<p class="bordaQuestoes"id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b">b) os dois rios possibilitam, durante todo o ano, o abastecimento humano, a geração de energia, a navegação e a pesca.</p>
+
+		<p class="bordaQuestoes"id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) A captação de água nos rios A e B pode ocorrer durante todo o ano, pois em ambos há excesso de água no verão e déficit no inverno.</p>
+		
+		<p class="bordaQuestoes"id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) os rios apresentam regimes fluviais diferentes: o rio A corresponde ao Regime Pluvial Tropical e o rio B representa o Regime Pluvial Semiárido.</p>
+		
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A alternativa D está correta: verifica-se no gráfico que os dois rios apresentam regimes fluviais distintos. </p>
+		<p> O Rio A corresponde a um regime típico de regiões tropicais, e o rio B se assemelha a um regime próprio de regiões semiáridas. </p>
+		<p> A alternativa A está errada porque o gráfico indica que a vazão dos dois rios não apresenta similaridade, sendo que o rio A apresenta mais vazão e mais regularidade que o rio B. </p>
+		<p> A alternativa B está incorreta: os dois rios têm vazões distintas e apenas o rio A permite consumo permanente de água, geração de energia e navegação. O rio B corresponde a um tipo de regime fluvial intermitente, não permitindo o seu uso durante os períodos de estiagens. </p>
+		<p> 
+    </div>
+	
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 05</p>
+			
+		<p id="p3">   (CUSC 2018) São conhecidos os números da distribuição da água no mundo. Apenas 3% de todos os recursos hídricos existentes no planeta são de água doce própria para consumo. Para dificultar ainda mais a situação, desse total de água doce existente, a maior parte encontra-se nas geleiras e no lençol freático. Por sorte, o Brasil possui a maior reserva mundial de água potável, com cerca de 12% do montante total, o que não necessariamente livra o país de sofrer com a falta desse importante recurso natural. (...)  </p>
+		
+		<img src="s21q5.jpg" class="imagem" width="320" height="260">
+		
+		<p id="p3">	A tabela acima demonstra a distribuição de recursos hídricos e densidade demográfica no Brasil. Destes dados, pode-se afirmar que:</p>
+		     
+        <p class="bordaQuestoes"id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) os recursos hídricos no Brasil são diretamente proporcionais ao número de habitantes da região.</p>
+        
+		<p class="bordaQuestoes"id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) a distribuição da água é naturalmente desigual, uma vez que as áreas menos povoadas concentram os maiores recursos hídricos do país. </p>
+
+		<p class="bordaQuestoes"id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) a menor densidade populacional localiza-se na região sudeste, onde os recursos hídricos são menores. </p>
+		
+		<p class="bordaQuestoes"id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) a maior densidade demográfica está localizada na região sul, onde também se encontra a menor quantidade de recursos hídricos. </p>
+		
+		<p class="bordaQuestoes"id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) o centro-oeste é a região que concentra a maior quantidade de recursos hídricos no Brasil.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+			
+		 
+	<div class="campo">
+		
+        <p id="p2">Questão 06</p>
+			
+		<p id="p3"> (ETC 2016) Nas décadas de 1970 e de 1980, a construção da usina hidrelétrica de Itaipu causou um grande impacto na vida dos Guarani: em 1981, mais de trinta de seus territórios, existentes na fronteira entre Brasil e Paraguai, foram inundados. As obras do empreendimento começaram em 1974 e sua inauguração oficial ocorreu em 1982. O lago de sua barragem ocupa uma área de 1 350 km2, alagando parte de dezesseis municípios brasileiros.   </p>
+		
+		<p id="citacao"><small>  http://tinyurl.com/ Adaptado.  </small>	</p>
+		
+      <p id="p3">  De acordo com o texto, é correto afirmar que:</p>
+       
+	   <p class="bordaQuestoes"id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) ao menos dezesseis municípios paraguaios na fronteira com o Brasil, habitados por povos Pataxó, foram inundados pelo lago da barragem.</p>
+        
+		<p class="bordaQuestoes"id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) ao longo dos vinte anos de construção da usina, no contexto da Guerra do Paraguai, trinta municípios daquele país foram seriamente afetados.</p>
+		
+		<p class="bordaQuestoes"id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) a construção da usina de Itaipu, no período da redemocratização do Brasil, manteve intactas áreas de preservação ambiental e terras indígenas.</p>
+		
+		<p class="bordaQuestoes"id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) respeitando os povos indígenas que, tradicionalmente, habitavam a região, o lago da barragem foi planejado em local que não inundasse seus territórios.</p>
+		
+		<p class="bordaQuestoes"id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) a usina hidrelétrica, localizada na fronteira entre Brasil e Paraguai, foi construída durante a ditadura militar brasileira e inundou mais de trinta territórios dos Guarani.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+				
+	<div class="campo">
+		
+        <p id="p2">Questão 07</p>
+			
+		<p id="p3"> (UEA 2016) Bacias hidrográficas são porções delimitadas por divisores de águas, que abrigam um rio principal e seus afluentes. Sobre as bacias hidrográficas brasileiras, é correto afirmar que :</p>
+		
+			      
+        <p class="bordaQuestoes"id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) a Bacia do São Francisco apresenta regime equatorial perene, terrenos elevados e muitos rios contaminados por mercúrio.</p>
+
+		<p class="bordaQuestoes"id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) a Bacia Amazônica apresenta relevo predominantemente plano, rios meândricos e elevado índice pluviométrico.</p>
+		
+		<p class="bordaQuestoes"id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) a Bacia Platina apresenta baixa precipitação, regime fluvial intermitente no alto e médio cursos e equatorial próximo à foz. </p>
+		
+		<p class="bordaQuestoes"id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) a Bacia do Tocantins apresenta elevada pluviosidade, baixa densidade de vegetação e clima semiárido em sua margem direita. </p>
+		
+		<p class="bordaQuestoes"id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) a Bacia do Parnaíba apresenta planaltos acidentados, bom aproveitamento hidrelétrico e interligação a outras bacias.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2"> Questão 08</p>
+			
+		<p id="p3">   (ENEM 2007) O artigo 1° da Lei Federal n°. 9.433/1997 (Lei das Águas) estabelece, entre outros, os seguintes fundamentos: </p>
+
+		<p id="p3">	I. a água é um bem de domínio público; </p>
+
+		<p id="p3">	II. a água é um recurso natural limitado, dotado de valor econômico; </p>
+
+		<p id="p3">	III. em situações de escassez, os usos prioritários dos recursos hídricos são o consumo humano e a dessedentação de animais; </p>
+
+		<p id="p3">	IV. a gestão dos recursos hídricos deve sempre proporcionar o uso múltiplo das águas. </p>
+
+		<p id="p3">	Considere que um rio nasça em uma fazenda cuja única atividade produtiva seja a lavoura irrigada de milho e que a companhia de águas do município em que se encontra a fazenda colete água desse rio para abastecer a cidade. Considere, ainda, que, durante uma estiagem, o volume de água do rio tenha chegado ao nível crítico, tornando-se insuficiente para garantir o consumo humano e a atividade agrícola mencionada. </p>
+
+		<p id="p3">	Nessa situação, qual das medidas adiante estaria de acordo com o artigo 1° da Lei das Águas? </p>
+	       
+        <p class="bordaQuestoes"id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) Manter a irrigação da lavoura, pois a água do rio pertence ao dono da fazenda.</p>
+       
+		<p class="bordaQuestoes"id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) Interromper a irrigação da lavoura, para se garantir o abastecimento de água para consumo humano.</p>
+		
+		<p class="bordaQuestoes"id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) Manter o fornecimento de água apenas para aqueles que pagam mais, já que a água é bem dotado de valor econômico.</p>
+
+		<p class="bordaQuestoes"id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) Manter o fornecimento de água tanto para a lavoura quanto para o consumo humano, até o esgotamento do rio.</p>
+		
+		<p class="bordaQuestoes"id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) Interromper o fornecimento de água para a lavoura e para o consumo humano, a fim de que a água seja transferida para outros rios.</p>
+
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+			 
+	<div class="campo">
+		
+        <p id="p2">Questão 09</p>
+			
+		<p id="p3">  (ENEM 2006) </p>
+		
+		<img src="s21q9.jpg" class="imagem" width="320" height="350">
+		
+		<p id="p3"> O aquífero Guarani, mega reservatório hídrico subterrâneo da América do Sul, com 1,2 milhão de km2, não é o "mar de água doce" que se pensava existir. Enquanto em algumas áreas a água é excelente, em outras, é inacessível, escassa ou não-potável. O aquífero pode ser dividido em quatro grandes compartimentos. No compartimento Oeste, há boas condições estruturais que proporcionam recarga rápida a partir das chuvas e as águas são, em geral, de boa qualidade e potáveis. Já no compartimento Norte-Alto Uruguai, o sistema encontra-se coberto por rochas vulcânicas, a profundidades que variam de 350 m a 1.200 m. Suas águas são muito antigas, datando da Era Mesozoica, e não são potáveis em grande parte da área, com elevada salinidade, sendo que os altos teores de fluoretos e de sódio podem causar alcalinização do solo.</p>
+	
+		<p id="citacao"><small>  Scientific American Brasil, n∘ 47, abr./2006 (com adaptações).</small>	</p>
+		
+		<p id="p3">	Em relação ao aquífero Guarani, é correto afirmar que:</p>
+       
+	   <p class="bordaQuestoes"id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) seus depósitos não participam do ciclo da água.</p>
+        
+		<p class="bordaQuestoes"id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) águas provenientes de qualquer um de seus compartimentos solidificam-se a 0 °C.</p>
+		
+		<p class="bordaQuestoes"id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) é necessário, para utilização de seu potencial como reservatório de água potável, conhecer detalhadamente o aquífero.</p>
+	
+		<p class="bordaQuestoes"id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) a água é adequada ao consumo humano direto em grande parte da área do compartimento Norte-Alto Uruguai.</p>
+		
+		<p class="bordaQuestoes"id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) o uso das águas do compartimento Norte-Alto Uruguai para irrigação deixaria ácido o solo.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 10</p>
+			
+		<p id="p3">   (ENEM 2003) A falta de água doce no planeta será, possivelmente, um dos mais graves problemas deste século. Prevê-se que, nos próximos vinte anos, a quantidade de água doce disponível para cada habitante será drasticamente reduzida.</p>
+
+		<p id="p3"> Por meio de seus diferentes usos e consumos, as atividades humanas interferem no ciclo da água, alterando: </p>
+ 				     
+        <p class="bordaQuestoes"id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) a quantidade total, mas não a qualidade da água disponível no planeta.</p>
+       
+	   <p class="bordaQuestoes"id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) a qualidade da água e sua quantidade disponível para o consumo das populações.</p>
+		
+		<p class="bordaQuestoes"id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) a qualidade da água disponível, apenas no subsolo terrestre.</p>
+		
+		<p class="bordaQuestoes"id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) apenas a disponibilidade de água superficial existente nos rios e lagos.</p>
+		
+		<p class="bordaQuestoes"id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) o regime de chuvas, mas não a quantidade de água disponível no Planeta.</p>
+
+</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  a) Incorreta. As atividades humanas causam modificações na quantidade e, principalmente, na qualidade das águas, pois os efluentes gerados alteram drasticamente a composição das águas, causando a poluição hídrica.
+		
+		<p> b) Correta. As atividades humanas alteram a quantidade da água através da grande utilização desse recurso, além dos desmatamentos, compactação e impermeabilização do solo, que dificultam a infiltração de água, havendo uma redução de volume nos cursos d’água. A qualidade da água é afetada por meio dos esgotos gerados que são lançados nos cursos d’água sem o devido tratamento. Essa atitude provoca a poluição hídrica.
+		
+		<p> c) Incorreta. Compromete as águas subterrâneas, pois a água contaminada infiltra no solo e atinge o lençol freático.
+		
+		<p>d) Incorreta. As atividades humanas causam alterações na composição química da água e diminuem a quantidade de água no subsolo.
+		
+		<p>e) Incorreta. As atividades antrópicas (humanas) alteram não somente o ritmo das precipitações, mas também a disponibilidade de água potável para os seres humanos e animais.
+  </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+    <img id="imagem" style="display:none"  width = "280" height="200">
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	  document.getElementById("p2").style.fontFamily = tipo[fonte];
+	     
+	     
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "lightgray";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "a") {
+                corretas++;
+                document.getElementById("q1a").style.backgroundColor = cor[0];
+            } else {
+                	
+				document.getElementById("q1a").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "e") {
+                corretas++;
+                document.getElementById("q2e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2e").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "d") {
+                corretas++;
+                document.getElementById("q3d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3d").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "d") {
+                corretas++;
+                document.getElementById("q4d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
+								
+				document.getElementById("q4d").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "b") {
+                corretas++;
+                document.getElementById("q5b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "e") {
+                corretas++;
+                document.getElementById("q6e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6e").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "b") {
+                corretas++;
+                document.getElementById("q7b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7b").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "b") {
+                corretas++;
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				 document.getElementById("q8b").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "c") {
+                corretas++;
+                document.getElementById("q9c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9c").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "b") {
+                corretas++;
+                document.getElementById("q10b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			document.getElementById("resp1").innerHTML = pq1;
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

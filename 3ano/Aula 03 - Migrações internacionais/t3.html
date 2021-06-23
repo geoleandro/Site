@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: none 1px; border-radius: 35px ; padding: 0cm; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left;
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+
+.area {display: flex;
+        justify-content: center;}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+	<h1 id="h1">   Questões aula 03 - Migrações internacionais    </h1>
+  
+  
+	<p><b>Conteúdo:</b>  Tipos de movimentos populacionais: voluntário, forçado e controlado; Imigrantes; Refugiados; Xenofobia.  </p>
+	
+	
+	<p><b>Objetivo:</b>  Caracterizar e analisar os principais conceitos relativos aos fluxos de pessoas no mundo. </p>
+    
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p id="p2">Questão 01</p>
+			
+		<p id="p3">   (UERJ 2020)   </p>
+										
+		<img src="t3q1.jpg" alt ="" class="imagem" width="330" height="200">
+		
+		<p id="p3">	Os gráficos acima são parte do resultado de uma pesquisa feita em 2015 sobre a percepção dos cidadãos de diferentes países acerca do fenômeno migratório.</p>
+
+		<p id="p3">	A diferença entre o percentual médio estimado pelos que responderam à pergunta e o percentual real de imigrantes em cada população nacional expressa uma grande preocupação de cidadãos europeus na atualidade.</p>
+
+		<p id="p3">	Uma consequência direta dessa preocupação é:</p>
+     
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) ampliação dos programas de proteção social.</p>
+       
+	   <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) intensificação dos conflitos de caráter militar.</p>
+		
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) crescimento dos partidos de extrema-direita.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d) fortalecimento dos acordos de integração econômica.</p>
+				
+    </div>
+
+
+
+    <div class="comentarios">
+	
+         <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+
+
+
+    <div class="campo">
+		
+        <p id="p2">Questão  02</p>
+			
+		<p id="p3">   (FMP 2020) Considere o texto sobre deslocamento populacional.</p>
+
+		<p id="p3"> O deslocamento mencionado no texto refere-se à categoria demográfica especificamente denominada	A perseguição aos judeus e a outros grupos étnicos e religiosos, durante a Segunda Guerra Mundial, alertou o mundo para a necessidade de ampliar a proteção internacional às vítimas de perseguição e de estruturar um programa de asilo que envolvesse o maior número possível de países. Em meados dos anos 2010, o mundo conheceu o início de uma crise provocada pelo deslocamento geográfico de pessoas em dimensões globais. Trata-se da maior crise desta natureza desde a Segunda Guerra Mundial. Segundo dados da ONU, o número de pessoas deslocadas por guerras, perseguições de toda ordem e conflito, além daquelas que se deslocam devido a eventos ambientais extremos, atingia cerca de 60 milhões, considerando os que se deslocaram interna e externamente. Um dos maiores fluxos dessas pessoas passou a ocorrer do Oriente Médio e da África em direção à Europa </p>			
+		
+		<p id="citacao"><small>   LUCCI, A. et al. Território e Sociedade no Mundo Globalizado. Ensino Médio, 3. São Paulo: Saraiva, 2017, p. 185. Adaptado </small>	</p>
+		
+		<p id="p3">  O deslocamento mencionado no texto refere-se à categoria demográfica especificamente denominada </p>
+       
+	    <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) imigrante.</p>
+
+		<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) refugiado.</p>
+		
+		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) transumante.</p>
+		
+		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) emigrante.</p>
+		
+		<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) repatriado.</p>
+    </div>
+	
+
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+
+    <div class="campo">
+		
+        <p id="p2">Questão 03</p>
+			
+		<p id="p3">   (PUC-RS 2019)    </p>
+		
+		<img src="t3q3.jpg" alt ="" class="imagem" width="330" height="200">
+		
+		<p id="p3"> Os movimentos de deslocamento de populações é um tema central na pauta de discussões dos governos nacionais e das organizações internacionais como a ONU e a Comunidade Europeia. Em face das medidas tomadas pela maioria dos países desenvolvidos no intento de restringir a entrada de imigrantes, o tráfico destes tem se intensificado. No mapa acima, alguns dos movimentos migratórios são representados por setas, indicando as principais áreas e os países de saída e de destino. O processo de migração internacional pode ser desencadeado por diversos fatores, entre os quais pode-se citar: desastres ambientais; guerras; perseguições políticas, étnicas ou culturais; oportunidades de estudo e trabalho; melhores condições de vida. </p>
+		
+
+ 
+		<p id="p3">A partir da observação do mapa e do texto acima, é possível afirmar: </p>
+		
+ 
+		<p id="p3"> I. Nas áreas do mapa onde o contraste de desenvolvimento econômico e social entre países vizinhos é acentuado, observam-se fluxos migratórios. </p>
+		
+
+		<p id="p3"> II. No mapa, constata-se que os fluxos migratórios regionais são mais frequentes que os intercontinentais. </p>
+		
+
+		<p id="p3">III. Os fluxos sul-norte são predominantes e estão relacionados à dependência cultural, econômica e histórica dos países chamados subdesenvolvidos em relação aos países ditos desenvolvidos. </p>
+		
+
+		<p id="p3"> IV. A Europa Ocidental é o principal destino dos movimentos migratórios mundiais, seguido pelos fluxos para os EUA. </p>
+		
+		<p id="p3"> 	Estão corretas apenas as afirmativas </p>
+		          
+        <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a">a) I e III. </p>
+     
+		<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) II e IV. </p>
+	
+		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) I, III e IV. </p>
+	
+		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) II, III e IV.</p>
+	
+		
+    </div>
+	
+        
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+
+
+	<div class="campo">
+		
+        <p id="p2">Questão 04</p>
+			
+		<p id="p3"> (Fuvest 2019) A tabela mostra o número total de refugiados no mundo em 2017, segundo relatório do Alto Comissariado das Nações Unidas Para Refugiados (UNHCR ou ACNUR em português).</p>
+
+		<img src="t3q4.jpg" alt ="" class="imagem" width="330" height="350">
+				
+		<p id="p3">	Sobre os refugiados e sua distribuição no mundo, é correto afirmar:</p>	
+			       
+        <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) Os provenientes do Sudão do Sul e da Somália são acolhidos na Turquia, onde encontram oferta de empregos nas atividades comerciais, tradição econômica do país, desde o século XVII. </p>
+      
+		<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) A maioria provém da África, devido aos processos de desertificação, e tem como destino o Oriente Médio e a Europa.    </p>
+		
+		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c">c) O Irã recebe majoritariamente refugiados de países da África Subsaariana, dentre os quais se destacam o Sudão e o Sudão do Sul</p>
+		
+		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) Os de origem síria são a maior população nesta condição, e estão sendo acolhidos em vários países do Extremo Oriente e da África, os quais apoiam o governo sírio na guerra civil que ocorre nesse país desde 2011.    </p>
+		
+		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) São majoritariamente provenientes do Oriente Médio, África e Ásia, deslocam‐se, forçadamente, devido a longas guerras, em grande parte para países e/ou regiões fronteiriços</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  Nas regiões apresentadas como aquelas de origem dos grupos emigrantes – Oriente Médio, África e Ásia –, há países como Síria, Afeganistão e Sudão do Sul, que se encontram em sérias crises políticas, alguns envolvidos em guerras civis, o que força sua população a se retirar desesperadamente. O caminho mais fácil é se transferir para países vizinhos, em função da proximidade, deixando os países mais distantes como último recurso. </p>
+		
+		<p>	a) incorreta. Os refugiados do Sudão do Sul e da Somália se refugiam em Uganda (com destaque na segunda parte da tabela como país que abriga refugiados e elogiado em relatórios da ONU pela política de acolhimento) ou tentam uma arriscada jornada até a Europa, para países mais desenvolvidos como Alemanha e França. Uma observação importante é a dificuldade para os refugiados arrumarem emprego nos países que chegam. </p>
+		
+		<p>	b) incorreta. A maioria provém do Oriente Médio, com destaque para Síria e Afeganistão, e o destino são países vizinhos pobres, como Uganda e Paquistão, e países da Europa, como Turquia e Alemanha. </p>
+		
+		<p>	c) incorreta. O Irã recebe majoritariamente refugiados afegãos (inclusive o país também foi elogiado pela ONU pela política de acolhimento dos refugiados), e não da África Subsaariana. </p>
+		
+		<p>	d) incorreta. Os refugiados sírios se dirigem especialmente para a Europa, com destaque para Turquia e Alemanha, e não países do Extremo Oriente e da África. Vale lembrar as dificuldades de acolhimento desses refugiados na maioria dos países e que grande parte dos países dessas regiões não apoia o governo sírio.</p>
+		
+		<p>	e) correta. Os principais países de origem dos refugiados estão no Oriente Médio (Síria e Afeganistão), África (Sudão do Sul, Somália e Sudão) e Ásia (Síria, Afeganistão e Myanmar). São migrações forçadas por guerras e, na maioria dos casos, refugiam-se em países fronteiriços. </p>
+  
+    </div>
+	
+	
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 05</p>
+			  
+		<p id="p3"> (Enem 2016) Dados recentes mostram que muitos são os países periféricos que dependem dos recursos enviados pelos imigrantes que estão nos países centrais. Grande parte dos países da América Latina, por exemplo, depende hoje das remessas de seus imigrantes. Para se ter uma ideia mais concreta, recentes dados divulgados pela ONU revelaram que somente os indianos recebem 10 bilhões de dólares de seus compatriotas no exterior. No México, segundo maior volume de divisas, esse valor chega a 9,9 bilhões de dólares e nas Filipinas, o terceiro, a 8,4 bilhões. </p>
+		
+		<p id="citacao"><small>   HAESBAERT. R.; PORTO-GONÇALVES, C. W. A nova desordem mundial. São Paulo: Edunesp, 2006.   </small>	</p>
+		       
+		<p id="p3"> Um aspecto do mundo globalizado que facilitou a ocorrência do processo descrito, na transição do século XX para o século XXI, foi o(a) </p>
+
+        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) integração de culturas distintas. </p>
+
+	   <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) avanço técnico das comunicações. </p>
+		
+		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) quebra de barreiras alfandegárias. </p>
+		
+		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) flexibilização de regras trabalhistas. </p>
+		
+		<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) desconcentração espacial da produção.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   A globalização facilitou o acesso às comunicações, aos transportes e às informações, o que estimulou muitos imigrantes de países periféricos a buscar melhores oportunidades de vida e emprego em países centrais.</p>
+		
+		<p> Como consequência disso, eles enviam remessas aos seus familiares.</p>
+
+		<p> a) Incorreta. O texto apresentado não trata da questão cultural mas sim dos “recursos enviados pelos imigrantes estão nos países culturais”, Além disso, a integração cultural não é uma realidade em muitos lugares no mundo atual.</p>
+
+		<p> b)  Correta.  As crescentes inovações e melhorias relacionadas aos sistemas de comunicação propiciaram maior facilidade de acesso às informações e instantaneidade das relações à distância, sobretudo por meio da internet.  O desenvolvimento do uso da rede mundial possibilitou maior fluxo de informações e também   das remessas financeiras que retornam aos países de origem dos imigrantes.</p>
+
+		<p> c) Incorreta. Embora as dinâmicas globalizantes do capitalismo atual tenham enfraquecido as barreiras comerciais entre os países, vale lembrar que há aplicação de taxas e impostos sobre circulação de mercadorias e transações financeiras, aspectos inerentes à atuação econômica dos Estados-nação e até de instituições financeiras privadas.  Tal realidade, portanto, não facilitaria o envio de grandes quantias de dinheiro em âmbito internacional.</p>
+
+		<p> d) Incorreta. Há atualmente maior flexibilização das leis trabalhistas a fim de favorecer a ação das grandes corporações transnacionais na economia global, porém tal realidade não explica a facilidade da circulação do capital (investimentos, financiamentos, remessas de dinheiro privado) apontada no texto.</p>
+
+		<p> e) Incorreta. A descentralização produtiva, ou seja, a intensificação da presença de empresas globais em diversas regiões do mundo é uma característica do mundo globalizado, mas isso não possui relação direta com o retorno dos ganhos de trabalhadores imigrantes ao seu país de origem, uma vez que é necessário um elemento técnico para tornar mais fácil a dimensão apresentada no texto. </p>
+ 
+    </div>
+		
+			 
+	<div class="campo">
+		
+        <p id="p2">Questão 06</p>
+			
+		<p id="p3">  (Unicamp 2016) Imigrantes cruzam a Macedônia para chegar ao Norte da Europa. </p>
+		
+		<img src="t3q6.jpg" alt ="" class="imagem" width="330" height="260">
+		
+		<p id="p3"> Indique a afirmação correta a respeito dos grandes fluxos migratórios atuais no contexto da globalização. </p>
+			         
+        <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) envolvem imigrantes da América Latina, do norte da África e do Oriente Médio, atraídos pela industrialização fordista da Europa e dos Estados Unidos, que gera trabalho nas fábricas e na construção civil.</p>
+      
+		<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) direcionam-se para os países ricos ou em crescimento econômico e envolvem aquelas áreas de expulsão, cujas populações de origem sempre tiveram culturalmente vocação para a realização de grandes deslocamentos.</p>
+		
+		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) Resultam das diferenças entre a situação econômica dos países pobres e ricos e se direcionam para os lugares em que as populações falam a mesma língua ou possuem proximidades culturais.</p>
+		
+		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) assumem distintas direções, sendo que uma das rotas dos imigrantes para a Europa inicia-se em países do Oriente Médio e da costa oriental do norte da África, indo até a Grécia, com travessia pelo mar Mediterrâneo.</p>
+		
+		
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p> A alternativa d está correta porque afirma que os grandes fluxos migratórios atuais no contexto da globalização estão associados a pessoas que se deslocam de distintos lugares e em diversas direções. E que os imigrantes que chegam à Europa procedentes do Oriente Médio e da costa oriental do norte da África atravessam o Mar Mediterrâneo, desembarcando especialmente no sul da Grécia.</p>
+		
+		<p> A alternativa a está errada porque os atuais fluxos migratórios da América Latina, do norte da África e do Oriente Médio que se deslocam para os Estados Unidos ou para a Europa não são compostos de pessoas que vão trabalhar na industrialização fordista - essa fase da industrialização ocorreu especialmente no final do século XIX e na primeira metade do século XX nos países ditos industrializados.</p>
+		
+		<p> A alternativa b está errada: os fluxos migratórios internacionais para os países ricos não ocorrem porque a população de onde se origina o fluxo tem vocação cultural para a migração, mas resultam de condições econômicas adversas que obrigam determinados grupos sociais a buscarem novas oportunidades de ocupação em outros países.</p>
+		
+		<p> A alternativa c está incorreta: os fluxos migratórios entre os países não ocorrem porque esses países têm proximidade cultural ou falam a mesma língua. Os deslocamentos espaciais da população estão associados, frequentemente, a questões econômicas e se direcionam de países em condições econômicas mais debilitadas para aqueles com melhores condições de emprego, independentemente do fato de apresentarem ou não semelhanças linguísticas ou culturais.</p>
+			
+    </div>
+		
+		
+			
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 07</p>
+		   
+		<p id="p3">	(Fuvest 2015) um tema recorrente no debate contemporâneo é a migração global. A Organização das Nações Unidas estima que existam 232 milhões de migrantes em todo o mundo (ONU, 2013). Há, atualmente, mais mobilidade que em qualquer outra época da história mundial. Comparando a migração atual com a do século XIX, é correto afirmar:  </p>
+   	
+        <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) até o século XIX, as nações norte-americanas destacaram-se como emissoras de migrantes, enquanto, hoje em dia, encontram-se entre as principais receptoras desses fluxos, sobretudo os originários do continente africano.</p>
+       
+	   <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b">  b) Diferentemente do que ocorreu no século XIX, os recursos envolvidos são um traço diferenciador na atualidade, pois remessas enviadas por migrantes originários de nações pobres, como Haiti e Jamaica, são, muitas vezes, utilizadas para sustentar suas famílias no país de origem, além de representarem parte significativa do PIB desses países.</p>
+		
+		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) Países europeus, como Irlanda, Itália, Grécia e Espanha, foram importantes emissores de migrantes no século XIX e continuam a figurar, hoje em dia, dentre os países com maior fluxo migratório para os EUA.</p>
+		
+		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) no século XIX, a emissão e a recepção de migrantes concentravam-se na Europa, enquanto, na atualidade, a emissão restringe-se à América do Sul e a recepção tem alcance global.</p>
+		
+		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) O movimento migratório do continente africano para a Ásia foi significativo no século XIX e, atualmente, apresenta importante crescimento decorrente de políticas de cooperação internacional (Ásia/África) para o desenvolvimento socioeconômico africano, especialmente para Angola e África do Sul.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A nova ordem internacional e as diferenças existentes entre as nações ricas e as pobres impuseram uma maior mobilidade populacional, comparativamente a outras épocas históricas. 
+		
+		<p>	Na atualidade, observam-se traços diferenciadores e distintos daqueles verificados no século XX, evidenciando-se países centro-americanos pobres, como Haiti e Jamaica, cujos migrantes, muitas vezes, enviam os valores auferidos para complementar ou contribuir para uma melhor qualidade de vida de seus familiares nos países de origem. </p>
+
+		<p>	a) incorreta. Até o século XIX, as nações norte-americanas destacaram-se como receptoras de grandes fluxos de migração como, por exemplo, ingleses e irlandeses nos EUA, ingleses e franceses no Canadá e espanhóis no México. Atualmente os grandes fluxos do continente africano dirigem-se para a Europa, e não para a América do Norte. </p>
+
+		<p>	b) correta. Atualmente a possibilidade de envio de recursos dos migrantes para as famílias em países pobres, graças ao desenvolvimento dos meios de comunicação, representa grande fatia do PIB desses países. No século XIX esse envio era pouco significativo e as famílias, na maioria das vezes, migravam inteira para a construção de uma nova vida. </p>
+
+		<p>	c) incorreta. Países europeus foram importantes emissores de migrantes no século XIX para os EUA, porém atualmente os maiores grupos migrantes para os EUA são latinos (55%) e asiáticos (26%).
+
+		<p>	d) incorreta. No século XIX a Europa destacava-se como importante área emissora, transformando-se em importante área receptora na segunda metade do século XX. Na atualidade, países pobres, não só da América do Sul, mas também da América Latina, África e Ásia, são importantes áreas emissoras, enquanto áreas receptoras se concentram nos países ricos e emergentes do planeta. </p>
+
+		<p>	e) incorreta. O movimento migratório da África para a Ásia não foi significativo no século XIX e atualmente também não representa grande parcela dos fluxos, uma vez que os africanos mais pobres buscam principalmente condições de vida melhores na Europa. Angola a África do Sul não recebem atualmente grandes fluxos migratórios asiáticos, e sim de seus países vizinhos mais pobres. </p>
+
+ 
+    </div>
+		
+		
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 08</p>
+			
+		<p id="p3"> (Enem 2011) As migrações tradicionais, intensificadas e generalizadas nas últimas décadas do século XX, expressam aspectos particularmente importantes da problemática racial, visto como dilema também mundial. Deslocam-se indivíduos, famílias e coletividades para lugares próximos e distantes, envolvendo mudanças mais ou menos drásticas nas condições de vida e trabalho, em padrões e valores socioculturais. Deslocam-se para sociedades semelhantes ou radicalmente distintas, algumas vezes compreendendo culturas ou mesmo civilizações totalmente diversas: </p>
+		
+		<p id="citacao"><small>  IANNI, O. A era do globalismo. Rio de Janeiro: Civilização Brasileira, 1996.  </small>	</p>          
+     
+		<p id="p3">A mobilidade populacional da segunda metade do século XX teve um papel importante na formação social e econômica de diversos estados nacionais. Uma razão para os movimentos migratórios nas últimas décadas e uma política migratória atual dos países desenvolvidos são:</p>
+	  
+	  <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) a busca de oportunidades de trabalho e o aumento de barreiras contra a imigração.
+   
+	   <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) a necessidade de qualificação profissional e a abertura das fronteiras para os imigrantes.</p>
+		
+		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) o desenvolvimento de projetos de pesquisa e o acautelamento dos bens dos imigrantes.</p>
+		
+		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) a expansão da fronteira agrícola e a expulsão dos imigrantes qualificados.</p>
+		
+		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) a fuga decorrente de conflitos políticos e o fortalecimento de políticas sociais.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  As migrações são intensificadas nos momentos de crises econômicas, em que grandes massas populacionais buscam melhores condições de vida, emprego, etc. Contudo, esses movimentos também aumentam a xenofobia no país receptor, obrigando os governantes a criarem barreiras para dificultar a entrada de imigrantes.  </p>
+
+  
+    </div>
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 09</p>
+			
+		<p id="p3">   (UFG-GO 2009) Um dos principais traços da dinâmica demográfica mundial é a migração internacional, que recria conflitos espaciais de diferentes ordens. Esse tipo de migração é explicado  </p>
+			
+		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
+            
+        <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) pela incorporação de valores ocidentais no Oriente e de valores orientais no Ocidente, diminuindo as fronteiras simbólicas.   </p>
+	  
+		<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) pela facilidade do fluxo de trabalhadores condicionados pelos novos meios de comunicação e transportes.</p>
+		
+		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) pela aprendizagem de idiomas dos países ricos como forma de incorporação às novas demandas da indústria.</p>
+	
+		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) pelo livre acesso dos indivíduos no interior dos países signatários de acordos de livre comércio e cooperação.</p>
+	
+		<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) pelo aumento global do desemprego, que gera miséria nas nações de baixo índice de desenvolvimento humano.</p>
+
+
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+		
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 10</p>
+			
+		<p id="p3">    (UFMG 2003) Todas as seguintes afirmativas relacionadas aos diferentes fluxos de população que atravessam, hoje, as fronteiras políticas internacionais estão corretas, EXCETO:  </p>
+				
+		<p id="citacao"><small>    Coloque a citação aqui se houver   </small>	</p>
+	         
+        <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) O crescimento do número de migrantes clandestinos e de ações terroristas, fruto de fundamentalismos diversos, tem contribuído para tornar mais rigorosa a legislação referente à imigração em muitos países.</p>
+     
+		<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) A retomada, em países europeus, de taxas demográficas típicas de meados do século XX, fruto de políticas natalistas, é uma garantia de autossuficiência de mão-de-obra nas próximas décadas.</p>
+	
+		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) Os movimentos migratórios internacionais tendem a se intensificar no interior de blocos econômicos, amenizando os desequilíbrios entre oferta e demanda de mão-de-obra, com menor participação da força de trabalho das áreas de pobreza.</p>
+ 
+		<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) O tráfico de seres humanos visto, no presente, como um crime que produz uma forma moderna de escravidão é, em parte, decorrência de restrições legais impostas à imigração.</p>
+	
+		
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+    <img id="imagem" style="display:none"  width = "280" height="200">
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	  document.getElementById("p2").style.fontFamily = tipo[fonte];
+	     
+	     
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "##424242";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+			//(pq1.includes("leite")||(pq1.includes("gato"))||(pq1.includes("pato")))
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				
+				
+				
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "b") {
+                corretas++;
+                document.getElementById("q2b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q2b").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "c") {
+                corretas++;
+                document.getElementById("q3c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3c").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "e") {
+                corretas++;
+                document.getElementById("q4e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4e").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "b") {
+                corretas++;
+                document.getElementById("q5b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5b").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "d") {
+                corretas++;
+                document.getElementById("q6d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "b") {
+                corretas++;
+                document.getElementById("q7b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7b").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "a") {
+                corretas++;
+                document.getElementById("q8a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q8a").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "e") {
+                corretas++;
+                document.getElementById("q9e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9e").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "b") {
+                corretas++;
+                document.getElementById("q10b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10a").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q10b").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			//document.getElementById("resp1").innerHTML = pq1;
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>p1Aula14</title>
+
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+	<script src="../../../estilos/javascript.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+
+
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
+
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
+
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
+
+		p {
+			padding: 10px;
+			background-color: #fff;
+
+		}
+	</style>
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+
+
+
+
+	</div>
+
+
+
+	<h1 class="h1"> Questões aula 14 – Estrutura geológica mundial: Crátons, bacias sedimentares e dobramentos
+		modernos </h1>
+
+
+	<p><strong>Conteúdo:</strong> Estrutura geológica; Crátons; Escudos cristalinos; Plataformas; Dobramentos; Bacias
+		sedimentares
+	</p>
+
+
+	<p><strong>Objetivo:</strong> Identificar as estruturas geológicas presentes no mundo através da constituição de
+		suas rochas.
+	</p>
+
+
+	<form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 01</p>
+
+			<p>(UFSM 2017) A distribuição dos vários tipos de rocha na crosta terrestre indica as grandes formações
+				geológicas estruturais do planeta: as províncias geológicas. Em relação às províncias geológicas e
+				geomorfológicas da Terra, é correto afirmar que </p>
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a)
+				as bacias sedimentares estão constituídas por rochas formadas na Era Pré-cambriana, que são muito
+				resistentes a meteorização e, por isso, apresentam-se pouco desgastadas pelos processos erosivos,
+				resultando em formas jovens de relevo.</p>
+
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b)
+				os maciços antigos consistem em áreas que foram influenciadas por forças tectônicas durante o período
+				terciário, originando cadeias montanhosas.</p>
+
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c)
+				as áreas sedimentares constituem lugares de aporte que, por serem topograficamente mais baixas, foram
+				preenchidas por detritos e sedimentos provenientes de áreas adjacentes.</p>
+
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
+				os dobramentos modernos compreendem estruturas estáveis em cujas áreas ocorrem minerais fósseis como
+				petróleo, carvão e gás natural. </p>
+
+
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e"> e)
+				os escudos cristalinos são áreas tectonicamente instáveis constituídas por rochas formadas em períodos
+				geológicos recentes.</p>
+
+		</div>
+
+
+
+		<div class="comentarios">
+
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 02</p>
+
+			<p> (IFMT 2017) Apesar do contínuo processo de formação e transformação da litosfera, é possível
+				identificar, atualmente, três grandes conjuntos de estruturas geológicas, ou seja tipos de terreno
+				rochoso que compõem os continentes terrestres. São eles: </p>
+
+			<div class="w3-center"><img src="p14q2.png" alt="p14q2" class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
+				Crátons ou escudos antigos, planossolos e alissolos.</p>
+
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
+				Bacias sedimentares, nitossolos e cambissolos. </p>
+
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c)
+				Argissolos, cadeias orogênicas e planossolos. </p>
+
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d)
+				Crátons ou escudos antigos, bacias sedimentares e cadeias orogênicas. </p>
+
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
+				Cambissolos, vertissolos e alissolos.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 03</p>
+
+			<p> (Unicentro 2015) Analise o mapa a seguir.</p>
+
+			<div class="w3-center"><img src="p14q3.png" alt="p14q3"  class="w3-mobile"></div>
+
+			<p> Com base no mapa das principais estruturas geológicas da Terra e nos conhecimentos sobre o tema,
+				considere as afirmativas a seguir.</p>
+
+			<p> I. As montanhas a leste do continente sul-americano são de altitudes elevadas se comparadas às cadeias a
+				oeste, devido ao fato de as primeiras serem mais antigas que as segundas. </p>
+
+			<p> II. As bacias sedimentares são as mais extensas das estruturas geológicas terrestres, formadas a partir
+				da deposição de sedimentos ao longo das eras geológicas. </p>
+
+			<p> III. A estrutura geológica do Brasil compõe-se de maciços antigos e bacias sedimentares, não ocorrendo a
+				existência de dobramentos modernos. </p>
+
+			<p> IV. A cordilheira dos Andes e a do Himalaia são cadeias montanhosas de dobramentos modernos formados por
+				rochas magmáticas e sedimentares, de formação geológica recente. </p>
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
+				Somente as afirmativas I e II são corretas.</p>
+
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
+				Somente as afirmativas I e IV são corretas.</p>
+
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
+				Somente as afirmativas III e IV são corretas.</p>
+
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
+				Somente as afirmativas I, II e III são corretas.</p>
+
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e)
+				Somente as afirmativas II, III e IV são corretas.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 04</p>
+
+			<p> (UFRGS–2006) Assinale com V ou F as afirmações a seguir, referentes à classificação genética das
+				rochas.<br><br>
+
+				() A rocha ígnea intrusiva mais abundante na crosta terrestre é o granito. <br><br>
+
+				() as rochas sedimentares são formadas a partir da compactação de fragmentos provenientes somente das
+				rochas ígneas e metamórficas. <br><br>
+
+				() quando ocorrer a litificação do material magmático em áreas profundas da crosta terrestre, a rocha
+				resultante será do tipo ígnea vulcânica. <br><br>
+
+				() O gnaisse e o mármore são rochas metamórficas resultantes da transformação de outras rochas devido ao
+				aumento de pressão e temperatura sobre a rocha preexistente</p>
+
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) V
+				F F V.</p>
+
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b) F
+				F V V. </p>
+
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c)
+				V V F F. </p>
+
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d) V
+				F V V.</p>
+
+			<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e"> e) V
+				F V V.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 05</p>
+
+			<p> As estruturas que formam a superfície refletem os eventos geológicos da história do Planeta. No passado,
+				mares rasos cobriram vastas extensões, que atualmente constituem planícies, e cordilheiras montanhosas
+				emergiram dos oceanos, como revelam, por exemplo, registros fósseis descobertos nos Andes</p>
+
+
+			<p class="citacao"> (MAGNOLI, D.; ARAÚJO, R. Geografia geral: projeto de ensino de Geografia. São Paulo:
+				Moderna, 2010, p. 37.). </p>
+
+			<p> Com base nas informações contidas no texto e nos conhecimentos sobre as estruturas geológicas da Terra,
+				marque V nas afirmativas verdadeiras e F, nas falsas.</p>
+
+			<p> () A estrutura geológica da superfície terrestre continua em mutação e constitui o embasamento do
+				modelado terrestre.</p>
+
+			<p> () as terras imersas exibem dorsais submarinas e fossas abissais, ambas relacionadas a movimentos de
+				placas tectônicas.</p>
+
+			<p> () os escudos cristalinos são dobramentos modernos surgidos do entrechoque de massas continentais,
+				quando se formou a Pangeia.</p>
+
+			<p> () as bacias sedimentares, formadas ao longo do Período Pré-Cambriano, são resultantes da solidificação
+				do material magmático e da ascensão das rochas até a superfície.</p>
+
+			<p> () os dobramentos modernos assinalaram episódios de acomodação tectônica, que ocorreram ao longo do
+				litoral e, no Brasil, estão concentrados na porção meridional.</p>
+
+			<p> A alternativa que indica a sequência correta, de cima para baixo, é a:</p>
+
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a)
+				V V F F F.</p>
+
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b) F
+				F V V V.</p>
+
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
+				V F V F V.</p>
+
+			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
+				F V F V F.</p>
+
+			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e)
+				V V V V V.</p>
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 06</p>
+
+			<p> Os crátons, subdivididos em escudos cristalinos e ________________, são caracterizados por serem
+				formações geologicamente __________________. Eles apresentam uma estrutura rígida e resistente composta
+				quase sempre por rochas ígneas e ___________________, posicionando-se em áreas de elevada
+				________________ geológica. </p>
+
+
+			<p>Assinale a alternativa que corretamente preenche as lacunas do texto:</p>
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a)
+				maciços antigos, recentes, metamórficas, instabilidade.</p>
+
+			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b)
+				dobramentos modernos, recentes, vulcânicas, estabilidade.</p>
+
+			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c)
+				bacias sedimentares, antigas, sedimentares, instabilidade.</p>
+
+			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d)
+				plataformas continentais, antigas, metamórficas, estabilidade.</p>
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 07</p>
+
+			<p> (PUC-MG) A estrutura geológica da superfície terrestre constitui o embasamento do modelado do relevo, em
+				contínuo processo de transformação. </p>
+
+			<p> São grandes estruturas geológicas, EXCETO: </p>
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a)
+				os escudos cristalinos ou maciços antigos, resultantes da solidificação do material magmático e da
+				ascensão de suas formações rochosas até a superfície.</p>
+
+
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b)
+				as bacias sedimentares, de formação antiga ou recente, resultantes da ação destrutiva da erosão sobre os
+				maciços e da posterior deposição do material erodido sobre áreas rebaixadas ou de sedimentação em
+				períodos mais recentes.</p>
+
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c)
+				os dobramentos modernos, originados do entrechoque de placas, formando os episódios mais recentes de
+				acomodação tectônica.</p>
+
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d)
+				os Círculos de Fogo, formadores de áreas de elevada instabilidade tectónica, com elevada incidência de
+				atividade vulcânica, terremotos e maremotos. </p>
+
+
+		</div>
+
+		<div class="comentarios">
+			<p> <strong>Comentário:</strong></p>
+
+			<p> O Círculo de Fogo do Pacífico (ou Anel de Fogo) é uma área formada no fundo do oceano por uma grande
+				série de arcos vulcânicos e fossas oceânicas, coincidindo com as extremidades de uma das maiores placas
+				tectônicas do planeta.</p>
+
+			<p> A região, de cerca de 40 mil km de extensão, tem formato de ferradura e circunda a bacia do Pacífico,
+				abrangendo toda a costa do continente americano, além do Japão, Filipinas, Indonésia, Nova Zelândia e
+				ilhas
+				do Pacífico Sul. </p>
+
+
+		</div>
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 08</p>
+
+			<p> (UTFPR) As estruturas geológicas da crosta terrestre refletem os processos, que as originaram e ajudam a
+				reconstituir a história do planeta. Em relação a esse assunto é CORRETO AFIRMAR que:</p>
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required"  name="pq8" value="a"> a)
+				Os escudos cristalinos constituem o embasamento fundamental das terras emersas, pois se originaram de
+				dobramentos modernos.</p>
+
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b)
+				As bacias sedimentares resultam da ação combinada dos processos destrutivos de erosão e dos processos
+				construtivos de acumulação ou sedimentação.</p>
+
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required"  name="pq8" value="c"> c) O
+				núcleo da Terra encontra-se em estado pastoso.</p>
+
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required"  name="pq8" value="d"> d)
+				O manto é o envoltório rochoso da Terra.</p>
+
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required"  name="pq8" value="e"> e)
+				Os vulcões são gerados por violentos movimentos de massas no interior do núcleo.</p>
+
+
+		</div>
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 09</p>
+
+			<p> (UEPB) A história e a evolução da Terra são estudadas por meio das rochas e dos fósseis animais e
+				vegetais. Sobre esse assunto, que diz respeito ao ramo de conhecimento da Geologia, assinale o que for
+				CORRETO.</p>
+
+			<div class="w3-center"><img src="p14q9.png" alt="p14q9"  class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required"  name="pq9" value="a"> a)
+				O aparecimento do homem se deu na Era Primitiva ou Pré-Cambriana, como atestam os fósseis nas rochas
+				mais antigas do planeta.</p>
+
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b)
+				A Era Cenozoica é marcada pelo aparecimento dos dobramentos modernos, esses correspondem aos terrenos
+				mais jovens e instáveis produzidos pela tectônica de placas.</p>
+
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required"  name="pq9" value="c"> c)
+				A Era Primária ou Paleozoica, da qual fazem parte os Períodos Triássico, Jurássico e Cretáceo,
+				caracterizou-se por intensa atividade vulcânica, com vestígios no Brasil Meridional, e também pela
+				existência de grandes répteis (os dinossauros).</p>
+		
+
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required"  name="pq9" value="d"> d)
+				Do ponto de vista geológico, as maiores cadeias de montanhas da Terra, como os Andes, os Alpes, as
+				Rochosas e o Himalaia, são muito antigas. Apareceram no começo da Era Primária ou Paleozoica, há mais de
+				400 milhões de anos.</p>
+
+		</div>
+
+
+		<div class="comentarios">
+
+			<p> <strong>Comentário:</strong></p>
+
+			<p> A questão aborda a temática referente à coluna geológica.</p>
+
+			<p>	A assertiva A está incorreta, pois o homem surgiu na Era Cenozoica.</p>
+
+			<p>	A assertiva B está correta. São exemplos de dobramentos modernos: a Cordilheira dos Andes, na América do
+			Sul, e a Cordilheira do Himalaia, na Ásia, onde se encontra o Monte Everest.</p>
+
+			<p>	A assertiva C está incorreta, pois os Períodos denominados Triássico, Jurássico e Cretáceo fazem parte da
+			Era Mesozoica. </p>
+
+			<p>	A assertiva D está incorreta, pois as maiores cadeias de montanhas da Terra, como os Andes, os Alpes, as
+			Rochosas e o Himalaia, correspondem às áreas de relevo mais recente da Terra.</p>
+
+		</div>
+
+
+		<div class="w3-card">
+
+			<p class="p2">Questão 10</p>
+
+			<p> (UERJ) A crosta terrestre é formada por três tipos de estruturas geológicas, caracterizadas pelos tipos
+				predominantes de rochas, pelo processo de formação e pela idade geológica. Essas estruturas são os
+				maciços cristalinos (Escudos), as bacias sedimentares e os dobramentos modernos. Sobre esse assunto, é
+				CORRETO afirmar:</p>
+
+			<div class="w3-center"><img src="p14q10.png" alt="p14q10"  class="w3-mobile"></div>
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required"  name="pq10" value="a">
+				a) os maciços antigos ou escudos cristalinos datam da era pré-cambriana, são constituídos por rochas
+				sedimentares e são ricos em jazidas de minerais não metálicos.</p>
+
+			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required"  name="pq10"
+					value="b"> b) as bacias sedimentares são formações muito recentes, datando da era quaternária, ricas
+				em minerais energéticos e com intenso processo erosivo; constituem 64% do território brasileiro. </p>
+
+			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required"  name="pq10" value="c">
+				c) os dobramentos modernos, resultantes de movimentos epirogenéticos, são constituídos por rochas
+				magmáticas, datam do período terciário e são ricos em carvão e petróleo, como os Andes, os Alpes e o
+				Himalaia.</p>
+
+			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d">
+				d) as principais reservas petrolíferas e carboníferas do mundo encontram-se nas bacias sedimentares,
+				enquanto minerais como ferro, níquel, manganês, ouro, bauxita etc. são encontrados nos maciços
+				cristalinos; os dobramentos modernos constituem áreas de intenso vulcanismo.</p>
+
+
+		</div>
+
+
+
+		<div class="comentarios">
+			<!-- <p> <strong>Comentário:</strong></p>
+
+			<p> Colocar os comentários aqui. </p> -->
+		</div>
+
+
+
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+	<script>
+
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "c") {
+				corretas++;
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq2 == "d") {
+				corretas++;
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2c").style.backgroundColor = cor[1];
+				document.getElementById("q2a").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+
+				document.getElementById("q2d").style.backgroundColor = cor[0];
+
+			}
+			if (pq3 == "e") {
+				corretas++;
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+
+			}
+			if (pq4 == "a") {
+				corretas++;
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+			}
+			if (pq5 == "a") {
+				corretas++;
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
+
+				document.getElementById("q5a").style.backgroundColor = cor[0];
+
+			}
+			if (pq6 == "d") {
+				corretas++;
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6a").style.backgroundColor = cor[1];
+
+				document.getElementById("q6d").style.backgroundColor = cor[0];
+
+			}
+			if (pq7 == "d") {
+				corretas++;
+				document.getElementById("q7d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
+
+				document.getElementById("q7d").style.backgroundColor = cor[0];
+
+			}
+			if (pq8 == "b") {
+				corretas++;
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
+			}
+			if (pq9 == "b") {
+				corretas++;
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9d").style.backgroundColor = cor[1];
+
+				document.getElementById("q9b").style.backgroundColor = cor[0];
+
+			}
+			if (pq10 == "d") {
+				corretas++;
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
+
+				document.getElementById("q10d").style.backgroundColor = cor[0];
+
+			}
+
+
+
+			corLenta();
+			classEscurecer();
+			comentarios();
+
+
+
+
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+
+
+
+
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+
+
+
+
+
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p1Aula12 - Revisão</title>
+
+    <link rel="stylesheet" href="../../../estilos/questoes.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/javascript.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+    <style>
+        .larguraBar {
+            max-width: 700px;
+        }
+
+        @font-face {
+            font-family: pixel;
+            src: url('../../../fontes/FreePixel.woff');
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 0px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 40px;
+        }
+
+        p {
+            padding: 10px;
+            background-color: #fff;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+    <!-- Navigation (Stays on Top) -->
+    <div class="w3-top w3-bar w3-black larguraBar">
+
+
+        <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+
+
+
+
+    </div>
+
+
+    <h1 class="h1"> Aula 12 – Revisão (aulas 07 a 11) </h1>
+
+    <div class="w3-container w3-card-4 w3-padding">
+        <strong>Conteúdo</strong>:
+
+
+        <ul class="w3-padding">
+
+
+            <li>Sensoriamento remoto, imagens de satélite, Cartografia digital, Geoprocessamento.</li>
+            <li>Crosta terrestre, manto, núcleo externo, núcleo interno, Princípio de isostasia, Correntes de
+                convecção, Campo magnético, grau geotérmico; Eras geológicas: Azoica, Pré-Cambriano, Paleozoica,
+                Mesozoica, Cenozoica.</li>
+            <li>Deriva continental, Tectônica de placas, isostasia, Correntes de Convecção, tipos de falhas
+                tectônicas.</li>
+            <li>Relevo, Tectonismo, Epirogênese, Orogênese, vulcanismo, Magma, lava, Gêiseres, Hipocentro,
+                Epicentro.</li>
+            <li>Tipos de intemperismo: químico, físico e biológico; Erosão: marinha, glacial, eólica; sedimentação.
+            </li>
+
+        </ul>
+
+
+
+    </div>
+
+
+
+
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 01</p>
+
+            <p>(Unichristus 2020) Leia atentamente. </p>
+
+
+            <p class="w3-center"> SENSORIAMENTO REMOTO </p>
+
+
+            <p> A técnica cartográfica chamada de sensoriamento remoto consiste na transmissão, a partir de um satélite,
+                de informações sobre a superfície do planeta ou da atmosfera. Quase toda coleta de dados físicos, para
+                os especialistas, é feita por meio de sensoriamento remoto, com satélites especializados que tiram fotos
+                da Terra em intervalos fixos. Para a geração das imagens pelos satélites, escolhe-se o espectro de luz
+                que se quer enxergar. Alguns podem enviar sinais para captá-los em seu reflexo com a Terra, gerando
+                milhares de possibilidades de informação sobre minerais, concentrações e tipos de vegetação, entre
+                outros.
+
+            </p>
+
+            <p> Com base no texto, pode-se concluir que a técnica cartográfica</p>
+
+
+
+
+
+            <p class="citacao">Disponível em: https://www.sogeografia.com.br
+                /Conteudos/GeografiaFisica/Cartografia/content1.php. Acesso em: 9 jul. 2020. </p>
+
+
+
+
+
+
+
+
+
+
+            <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
+                a) é de uso restrito em função do baixo nível de versatilidade técnica e dos elevados custos de
+                produção.
+
+            </p>
+            <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b">
+                b) tem artifícios que acabam com as distorções espaciais das representações cartográficas e, com isso,
+                cria-se uma multifuncionalidade em torno dos produtos cartográficos.
+
+            </p>
+            <p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c">
+                c) apresenta uma evolução pífia e, por isso, coloca a cartografia como uma ciência marginal e de baixa
+                funcionalidade.
+
+            </p>
+            <p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d">
+                d) garante à produção de representações espaciais uma relevância em função da utilização dos seus
+                produtos em vários setores socioeconômicos.
+
+            </p>
+            <p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e">
+                e) é de uso restrito devido a ser um setor estratégico e de garantia de soberania nacional, pois, por
+                meio das imagens, as fronteiras nacionais podem ficar mais bem protegidas.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 02</p>
+
+            <p> (UPF Inverno 2010) O sensoriamento remoto é um conjunto de técnicas utilizado pela cartografia para
+                analisar e interpretar o espaço geográfico. </p>
+
+
+            <p>A alternativa que indica corretamente essa técnica é:</p>
+
+
+            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
+                a) termógrafo, bússola, curvímetro
+
+            </p>
+            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
+                b) cartas marítimas, cartas topográficas, radar
+
+            </p>
+            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c">
+                c) fotografias aéreas, imagens de radar, imagens de satélites
+
+            </p>
+            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
+                d) telescópio, bússola, clinômetro.
+
+            </p>
+            <p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e">
+                e) altímetro, GPS, astrolábio.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 03</p>
+
+            <p> (ACAFE Medicina 2021) A Terra é dividida em diferentes camadas com características e composições
+                distintas. </p>
+
+            <p> Sobre a estrutura e a dinâmica interna da Terra, assinale a alternativa <strong>incorreta</strong>: </p>
+
+
+
+
+
+            <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a)
+                A crosta terrestre ou litosfera é a camada mais externa da Terra, formada por placas tectônicas. A
+                crosta oceânica, que serve de base para os oceanos, atinge uma espessura maior que a crosta continental.
+
+            </p>
+            <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b) O núcleo
+                é dividido em duas partes: núcleo interno e núcleo externo. O campo magnético da Terra é formado a
+                partir das características de composição e da dinâmica do núcleo externo.
+
+            </p>
+            <p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c) As
+                informações, que se têm sobre as camadas internas da Terra, foram obtidas por vias indiretas, como o
+                estudo de abalos sísmicos e do vulcanismo e das pesquisas dos fundos oceânicos.
+
+            </p>
+            <p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d) O manto é
+                a camada intermediária entre o núcleo e a crosta. Os materiais que compõem o manto, em altíssima
+                temperatura, formam o magma, que se movimenta através de correntes de convecção. É dessa camada que
+                provêm as lavas que chegam à superfície quando ocorrem erupções vulcânicas.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 04</p>
+
+            <p> (UFPI 2006) Marque a alternativa que indica algumas características das Eras Geológicas da Terra: </p>
+
+
+
+
+
+            <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a) Na Era
+                Paleozóica, durante os períodos Cretáceo e Jurássico, ocorreu a formação do petróleo e o início da
+                separação dos continentes.
+
+            </p>
+            <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b)
+                A Era Cenozóica se iniciou há cerca de 65 milhões de anos, sendo marcada pelo aparecimento do homem
+                moderno e pela formação das montanhas jovens: Andes, Alpes, Rochosas e Himalaia.
+
+            </p>
+            <p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c) O
+                Pré-Cambriano corresponde ao período geológico em que se iniciou a formação das praias brasileiras e do
+                delta do rio Parnaíba.
+
+            </p>
+            <p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d) O
+                Quaternário e o Terciário são períodos da Era Mesozóica que definem a última grande mudança climática
+                (glaciação) e o desaparecimento dos dinossauros.
+
+            </p>
+            <p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e"> e) Os
+                períodos Pré-cambriano e Carbonífero, da era Mesozóica, correspondem ao tempo de formação das grandes
+                jazidas de carvão mineral e dos vegetais superiores, como as coníferas.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 05</p>
+
+            <p> (IFRS 2016) Considere as afirmações abaixo sobre tectônica de placas. </p>
+
+
+            <p> I - O movimento das placas tectônicas é apenas convergente ou divergente.</p>
+
+            <p>II - As zonas de convergência de placas tectônicas são as regiões mais suscetíveis a terremotos e
+                vulcões.</p>
+
+            <p> III - Entre o choque de duas placas tectônicas, uma continental e outra oceânica, a placa que
+                normalmente mergulha sob a outra é a placa oceânica, que é mais densa.</p>
+
+
+            <p>IV - No livro “A origem dos continentes e oceanos”, Alfred Wegener formulou a teoria da deriva
+                continental que afirmava que os continentes se movimentavam. </p>
+
+            <p>Estão corretas apenas </p>
+
+
+            <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a) I e II.
+
+            </p>
+            <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b) II e III.
+
+            </p>
+            <p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c) I, II e
+                III.
+
+            </p>
+            <p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d) I, II e
+                IV.
+
+            </p>
+            <p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e)
+                II, III e IV.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 06</p>
+
+            <p> (IFMG 2015) O estabelecimento da teoria da Tectônica de Placas foi um importante marco para o
+                desenvolvimento das Geociências. </p>
+
+
+            <p>Sobre essa teoria e os processos a ela relacionados, analise as afirmativas e marque a opção correta.
+            </p>
+
+
+            <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a)
+                Uma zona de subducção se forma na faixa de contato entre placas divergentes, como no caso da América do
+                Sul e Nazca, em que a placa oceânica, menos densa, mergulha sobre a continental.
+
+            </p>
+
+
+            <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b) As
+                correntes de convecção, consideradas o motor da Tectônica de Placas, constituem-se na explicação
+                fundamental para a movimentação dos continentes. Tais correntes foram descobertas pelo cientista alemão
+                Alfred Wegener há mais de 100 anos.
+
+            </p>
+            <p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c) Os
+                terremotos são fenômenos de ordem geológica comuns nos limites de placas, explicando, por exemplo, os
+                tremores que vêm ocorrendo no norte de Minas Gerais.
+
+            </p>
+            <p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d)
+                O mapeamento do fundo oceânico levou à descoberta de evidências que comprovaram o movimento dos
+                continentes confirmando a Deriva Continental (1915) e fornecendo os argumentos para elaboração da
+                Tectônica de Placas (1960).
+
+            </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 07</p>
+
+            <p>(UEL 2015) A crosta terrestre sofreu, no decorrer da história da Terra, processos endógenos presentes na
+                formação do relevo. </p>
+
+            <p> Em relação aos processos endógenos presentes nessa formação, considere as afirmativas a seguir. </p>
+
+            <p> I. Orogenia de dobramento resulta de pressões horizontais que formam ondulações no terreno em estruturas
+                plásticas. </p>
+
+            <p> II. Orogenia de falhamento é submetida a um esforço interno de grande intensidade (vertical ou
+                inclinado) sobre rochas de estruturas rígidas que se quebram.</p>
+
+            <p> III. Diastrofismo resulta de movimentos da crosta produzidos por processos tectônicos provocados e
+                propagados pela energia interna da Terra. </p>
+
+            <p> IV. Dobramentos geológicos resultam de pressões verticais que ocorrem, geralmente, sobre as rochas
+                basálticas.</p>
+
+
+
+            <p>Assinale a alternativa correta. </p>
+
+
+            <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a">
+                a) Somente as afirmativas I e II são corretas.
+            </p>
+            <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
+                b) Somente as afirmativas I e IV são corretas.
+            </p>
+            <p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c">
+                c) Somente as afirmativas III e IV são corretas.
+            </p>
+            <p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d">
+                d) Somente as afirmativas I, II e III são corretas.
+            </p>
+            <p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e">
+                e) Somente as afirmativas II, III e IV são corretas.
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 08</p>
+
+            <p>(FGV-SP 2019) Observe a sequência de imagens para responder à questão. </p>
+
+
+            <div class="w3-center"><img src="p12q8.png" alt="Ilhas vulcânicas" class="w3-mobile"></div>
+
+            <p class="citacao"> (TEIXEIRA, Wilson et all, Decifrando a Terra, 2000). </p>
+
+
+            <p> Com base em conhecimentos acerca da tectônica global, assinale a alternativa que nomeia e explica o
+                fenômeno responsável pela formação das ilhas vulcânicas esquematizado na sequência.</p>
+
+
+
+
+            <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a">
+                a) Subducção: parte mais fria e velha de uma placa mergulha por debaixo de outra placa menos densa.
+
+            </p>
+            <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
+                b) Obducção: deslocamento de partes da crosta oceânica sobre uma continental.
+
+
+
+            </p>
+            <p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
+                c) Hot spots: atividades magmáticas ligadas a porções ascendentes de plumas do manto.
+
+            </p>
+            <p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
+                d) Epirogenia: ascendência de parte da crosta continental devido a fraturas.
+
+            </p>
+            <p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
+                e) Convecção: ascendência de material magmático do manto para a superfície da crosta.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> O arquipélago mapeado é o Havaí, em pleno oceano Pacífico, uma região de forte manifestação vulcânica.
+                Trata-se de um hotspot, traduzindo literalmente, uma “região quente” no sentido de forte atividade
+                vulcânica, onde uma pluma de material magmático ascende à superfície, dando origem a vulcões como os
+                montes Kilauea e Mauna Loa no Havaí. </p>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 09</p>
+
+            <p> (FMJ SP 2017) Tal fenômeno geológico consiste na formação de grandes buracos causados por chuvas e
+                intempéries em solos onde a vegetação é escassa, que ficam assim cascalhentos e suscetíveis de
+                carregamento por enxurradas. Ocorre no Sul, Sudeste e Centro-Oeste do Brasil e está geralmente associado
+                ao uso e ao tipo do solo, ao substrato geológico, às características climáticas, hidrológicas e ao
+                relevo. </p>
+
+            <p class="citacao"> (www.agencia.cnptia.embrapa.br. Adaptado.) </p>
+
+
+            <div class="w3-center"><img src="p12q9.png" alt="Voçoroca" class="w3-mobile"></div>
+
+            <p class="citacao"> Fonte: https://conteudoms.com/site/ver-conteudo/
+                novo-horizonte-do-sul-vocoroca-na-linha-santa-rosa-causa-revolta-de-morador </p>
+
+
+            <p> O fenômeno descrito no excerto denomina-se</p>
+
+
+
+            <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a">a)
+                eutrofização.
+            </p>
+            <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b"> b)
+                lixiviação.
+
+            </p>
+            <p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c)
+                voçorocamento.
+
+            </p>
+            <p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d"> d)
+                arenização.
+
+            </p>
+            <p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e"> e)
+                laterização.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 10</p>
+
+            <p> (UFJF 2019) Observe a figura: </p>
+
+            <div class="w3-center"><img src="p12q10.png" alt="Tipos de erosão" class="w3-mobile"></div>
+
+            <p class="citacao"> Fonte: https://www.britannica.com
+                /science/erosion-geology (Adaptado). </p>
+
+
+            <p>Todas as figuras estão associadas ao processo de </p>
+
+
+            <p class="bordaQuestoes" id="q10a"><input type="radio" id="pq10" name="pq10" value="a"> a) erosão.
+
+            </p>
+            <p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b"> b) lixiviação.
+
+            </p>
+            <p class="bordaQuestoes" id="q10c"><input type="radio" name="pq10" value="c"> c) assoreamento.
+
+
+            </p>
+            <p class="bordaQuestoes" id="q10d"><input type="radio" name="pq10" value="d"> d) voçorocamento.
+
+
+            </p>
+            <p class="bordaQuestoes" id="q10e"><input type="radio" name="pq10" value="e"> e) laterização.
+
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <!-- <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+    </form>
+
+
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+
+    <div class="area">
+        <img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+            height="200">
+    </div>
+
+    <p id="aviso"></p>
+
+
+
+    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+
+
+
+
+    <script>
+
+
+
+        // Altere a alternativa correta substituindo em cada questão abaixo. Todas estão com resposta letra a
+        function checar() {
+
+
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+            var pq4 = document.quiz.pq4.value;
+            var pq5 = document.quiz.pq5.value;
+            var pq6 = document.quiz.pq6.value;
+            var pq7 = document.quiz.pq7.value;
+            var pq8 = document.quiz.pq8.value;
+            var pq9 = document.quiz.pq9.value;
+            var pq10 = document.quiz.pq10.value;
+
+            var corretas = 0;
+
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "d") {
+                corretas++;
+                document.getElementById("q1d").style.backgroundColor = cor[0];
+            } else {
+
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById("q1c").style.backgroundColor = cor[1];
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById("q1e").style.backgroundColor = cor[1];
+
+                document.getElementById("q1d").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq2 == "c") {
+                corretas++;
+                document.getElementById("q2c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+                document.getElementById("q2d").style.backgroundColor = cor[1];
+                document.getElementById("q2e").style.backgroundColor = cor[1];
+
+                document.getElementById("q2c").style.backgroundColor = cor[0];
+
+            }
+            if (pq3 == "a") {
+                corretas++;
+                document.getElementById("q3a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+                document.getElementById("q3c").style.backgroundColor = cor[1];
+                document.getElementById("q3d").style.backgroundColor = cor[1];
+
+
+                document.getElementById("q3a").style.backgroundColor = cor[0];
+
+            }
+            if (pq4 == "b") {
+                corretas++;
+                document.getElementById("q4b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+                document.getElementById("q4c").style.backgroundColor = cor[1];
+                document.getElementById("q4d").style.backgroundColor = cor[1];
+                document.getElementById("q4e").style.backgroundColor = cor[1];
+
+                document.getElementById("q4b").style.backgroundColor = cor[0];
+
+            }
+            if (pq5 == "e") {
+                corretas++;
+                document.getElementById("q5e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+                document.getElementById("q5c").style.backgroundColor = cor[1];
+                document.getElementById("q5d").style.backgroundColor = cor[1];
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+
+                document.getElementById("q5e").style.backgroundColor = cor[0];
+
+            }
+            if (pq6 == "d") {
+                corretas++;
+                document.getElementById("q6d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+                document.getElementById("q6c").style.backgroundColor = cor[1];
+                document.getElementById("q6a").style.backgroundColor = cor[1];
+                document.getElementById("q6e").style.backgroundColor = cor[1];
+
+                document.getElementById("q6d").style.backgroundColor = cor[0];
+
+            }
+            if (pq7 == "d") {
+                corretas++;
+                document.getElementById("q7d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+                document.getElementById("q7c").style.backgroundColor = cor[1];
+                document.getElementById("q7a").style.backgroundColor = cor[1];
+                document.getElementById("q7e").style.backgroundColor = cor[1];
+
+                document.getElementById("q7d").style.backgroundColor = cor[0];
+
+            }
+            if (pq8 == "c") {
+                corretas++;
+                document.getElementById("q8c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+                document.getElementById("q8d").style.backgroundColor = cor[1];
+                document.getElementById("q8e").style.backgroundColor = cor[1];
+
+                document.getElementById("q8c").style.backgroundColor = cor[0];
+
+            }
+            if (pq9 == "c") {
+                corretas++;
+                document.getElementById("q9c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+                document.getElementById("q9a").style.backgroundColor = cor[1];
+                document.getElementById("q9d").style.backgroundColor = cor[1];
+                document.getElementById("q9e").style.backgroundColor = cor[1];
+
+                document.getElementById("q9c").style.backgroundColor = cor[0];
+
+            }
+            if (pq10 == "a") {
+                corretas++;
+                document.getElementById("q10a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+                document.getElementById("q10c").style.backgroundColor = cor[1];
+                document.getElementById("q10d").style.backgroundColor = cor[1];
+                document.getElementById("q10e").style.backgroundColor = cor[1];
+
+                document.getElementById("q10a").style.backgroundColor = cor[0];
+
+            }
+
+
+            corLenta();
+            classEscurecer();
+            comentarios();
+
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5 && corretas <= 7) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+
+
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+            document.getElementById("mensagem").style.display = 'block';
+            document.getElementById("imagem").style.display = 'block';
+
+
+
+
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<style>
+
+
+.campo { color: black;}
+
+body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+
+
+#h1 {line-height: normal; background: #7a607F; border: normal 1px; border-radius: 35px ; padding: 0cm; font-size: auto; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+
+background-image: url(globinho.jpg);
+  background-position: right top ; 
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+
+#p3{background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+
+#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+
+.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
+
+.bordaQuestoes:hover 	{background-color: #ccc}
+
+#citacao {background: white;  border:  normal;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+
+.comentarios {display: none;}
+
+.myText {
+
+height:150px;
+width: 320px;
+float:left
+word-wrap: break-word;
+text-align:left;
+ 
+}
+
+#button1 {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  position: absolute;
+
+}
+
+#button1:hover 	{background-color: #3e8e41}
+#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
+
+textarea {
+  overflow: auto;
+  wap:hard
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+	<h1 id="h1">   Questões aula 04 - Geografa agrária I: a questão fundiária no Brasil.  </h1>
+  
+  
+	<p><b>Conteúdo:</b> Estrutura fundiária; Reforma agrária; Estatuto da Terra;  </p>
+	
+	
+	<p><b>Objetivo:</b> : Identificar e compreender os fatores ligados aos conflitos em torno da posse e do uso da terra no Brasil. Identificar a produção agropecuária e a modernização agrícola brasileira.  </p>
+    
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+    <div class="campo">
+
+        <p id="p2">Questão 01</p>
+			
+		<p id="p3">  (Unicamp 2019) O gráfico a seguir mostra que o Brasil tem registrado, nos últimos anos, crescimento da violência no campo. Assinale a alternativa que indica corretamente o que vem motivando esse fenômeno e em que região tem predominado esse tipo de ocorrência. </p>
+
+		<img src="s4q1.jpg" class="imagem" width="320" height="200">
+		
+		<p id="citacao"><small>  (Fonte: Centro de Documentação Dom Tomás Balduino – CPT.) </small>	</p>
+		
+		<p id="p3"> Alternativas</p>
+		    
+        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) A expulsão de agricultores familiares pelo avanço das culturas da cana-de-açúcar e do algodão tem gerado conflitos entre pequenos e grandes proprietários de terra; região Centro-Oeste.</p>
+       
+	   <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> b) A fragmentação da propriedade em áreas de colonização dirigida e a disputa pela posse da terra entre herdeiros vêm produzindo violência agrária; região Norte.</p>
+
+		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> c) A rivalidade entre trabalhadores rurais e criadores extensivos de gado bovino no Pantanal e nas chapadas mato-grossenses tem resultado em violência agrária; região Centro-Oeste.</p>
+		
+		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d">  d)A disputa pela terra envolvendo grileiros contra posseiros em áreas de expansão de monocultivos e de projetos de exploração mineral e madeireira tem gerado violência; região Norte.</p>
+
+		
+    </div>
+
+
+
+    <div class="comentarios">
+		
+         <p> <b>Comentário:</b></p> 
+			
+		<p>  A alternativa D está correta: o Norte do Brasil constitui atualmente a principal região de conflitos no campo.  Isso se deve sobretudo à disputa por terra envolvendo grileiros (que se apropriam irregularmente de áreas) e posseiros. Essa situação tem se agravado em razão da expansão de monocultivos agroflorestais e de projetos de extração mineral e madeireira. </p>
+		
+		</p>A alternativa A está incorreta porque embora tenha ocorrido a expansão do cultivo de cana-de-açúcar e soja na região Centro-Oeste brasileira, inclusive produzindo conflitos fundiários entre pequenos e grandes agricultores, não é nessa região que os conflitos derivados da disputa pela posse da terra são mais evidentes. O levantamento de conflitos agrários realizado pela Comissão Pastoral da Terra (CPT) indica que a situação mais grave ocorre na região Norte, especialmente no Estado do Pará. </p>
+		
+		</p>A alternativa B está incorreta porque não são registrados grandes conflitos agrários decorrentes das disputas por herança entre familiares em áreas de colonização dirigida. </p>
+		 
+		 </p>A alternativa C está incorreta porque no contexto agrário brasileiro os conflitos envolvendo trabalhadores rurais e criadores de gado no Pantanal e chapadas mato-grossenses são menos relevantes do que aqueles provocados em áreas de monocultivos e exploração mineral e madeireira da Amazônia brasileira. </p>
+ 
+    </div>
+
+
+
+
+    <div class="campo">
+		
+        <p id="p2">Questão  02</p>
+			
+		<p id="p3">   (FUVEST 2018 - 2ª fase) A Lei de Terras, de 1850, e a legislação subsequente codificaram os interesses combinados de fazendeiros e comerciantes, instituindo as garantias legais e judiciais de continuidade do padrão de exploração da força de trabalho, mesmo que o cativeiro entrasse em colapso. Na iminência de transformações nas condições do regime escravista, que poderiam comprometer a sujeição do trabalhador, criavam as peculiares condições que garantissem, ao menos, a sujeição do trabalho na produção do café. </p>
+			
+		<p id="citacao"><small>   José de Souza Martins, O cativeiro da terra, 1979. Adaptado. </small>	</p>
+     
+        <p id="p3">   a) Considerando o contexto social de transformações a que se refere o autor, explique os interesses combinados de fazendeiros e comerciantes que se codificaram na promulgação da Lei de Terras de 1850.   </p>
+
+		 <p id="p3"> b) Cite e explique um impacto da abolição da escravidão em relação aos processos de urbanização e de industrialização.   </p>
+
+		<p class="bordaQuestoes" id="q2a"><textarea placeholder="Insira sua resposta aqui" required="required" id="pq2" name="pq2"    rows ="8" cols="35" maxlength="700"></textarea></p>
+		
+		
+    </div>
+	
+
+
+    <div class="comentarios">
+       <p id="resp2"></p>
+		<p> Compare sua resposta com o comentário abaixo:</p>
+
+	   <p> <b>Comentário:</b></p> 
+			
+		<p>  a) A Lei de Terras de 1850 foi criada com o objetivo de dificultar o acesso dos imigrantes europeus e não proprietários às terras, já que obrigava a aquisição de um terreno apenas pela compra e não mais pela posse.  </p>
+
+		 </p> Com ela, fazendeiros e comerciantes brasileiros garantiam tanto o suprimento de mão de obra quanto o mercado consumidor proporcionados por esse imigrante assalariado, que deixava de ter o tão sonhado acesso a uma terra própria e se desestimulava a buscar uma possível reforma agrária.  </p>
+
+		</p> b) A urbanização passou a se intensificar, pois os escravos libertos, substituídos pelos imigrantes assalariados europeus, migraram em massa para as cidades, que já começara a receber imigrantes europeus.  </p>
+
+		</p> Já o processo de industrialização foi estimulado pela substituição da mão de obra escrava pela assalariada, fomentando um mercado consumidor, além do fato de que boa parte desses imigrantes europeus que vieram substituir o negro já eram operários, tendo, portanto, capacidade para suprir a demanda de nossa indústria.  </p>
+			  
+    </div>
+	
+	
+	
+    <div class="campo">
+		
+        <p id="p2">Questão 03.</p>
+			
+		<p id="p3"> (UEG 2017) A modernização da agricultura brasileira, que no início do século XXI está presente em quase todas as regiões do país, ainda é tratada na literatura como sendo de cunho “conservadora”, uma vez que essa modernização.  </p>
+				      
+        <p class="bordaQuestoes"id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a">a) reduziu o crescimento desordenado das cidades.</p>
+         
+		 <p class="bordaQuestoes"id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) restringiu a capacidade produtiva do campo.</p>
+		
+		<p class="bordaQuestoes"id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c)c) limitou a quantidade de áreas destinadas ao desmatamento..</p>
+		
+		<p class="bordaQuestoes"id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) distribuiu alimentos à população de baixa renda..</p>
+		
+		<p class="bordaQuestoes"id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) manteve inalterada a estrutura fundiária do campo.</p>
+
+    </div>
+	
+        
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+	
+	
+
+	<div class="campo">
+		
+        <p id="p2">Questão 04</p>
+			
+		<p id="p3">   (IFPE 2014)  </p>
+		
+			<img src="s4q4.jpg" class="imagem" width="320" height="260">
+		
+		<p id="citacao"><small>  Disponível em:< http://guebala.blogspot.com.br/2011/11/
+							
+							estrutura-fundiaria-do-brasil-continua.html>. Acesso em: 04set.2013 </small> </p>
+		
+		<p id="p3">	A estrutura fundiária do Brasil continua a mesma do período colonial”. A afirmação de Gilmar Mauro, dirigente nacional do Movimento dos Trabalhadores Rurais Sem Terra, o MST, não é mera retórica. Está calcada em estudos que comprovam que pouco se avançou em termos de distribuição da terra desde os tempos da Coroa Portuguesa.</p>
+
+		<p id="p3">	O coeficiente de Gini, índice utilizado em pesquisas científicas para medir o grau de desigualdade social, revela que a concentração de terra no país até aumentou, se os dados analisados forem os do Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
+		
+		
+		<p id="p3">	Com base nas informações acima e nos seus conhecimentos sobre a estrutura fundiária brasileira, assinale a alternativa correta.</p>
+			
+	   <p class="bordaQuestoes"id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) Constitui uma questão primordial para a sociedade brasileira que, no entanto, não avança no que diz respeito à aplicação efetiva de uma ampla reforma agrária.</p>
+       
+	   <p class="bordaQuestoes"id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) Tal como vem ocorrendo nas últimas décadas, tem promovido a inclusão social dos trabalhadores rurais e sua absorção pelo mercado de trabalho.</p>
+		
+		<p class="bordaQuestoes"id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) Tem contribuído para aumentar a capacidade produtiva das pequenas propriedades rurais, garantindo, assim, as condições de subsistência para a agricultura familiar.</p>
+
+		<p class="bordaQuestoes"id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) Contribui para acentuar a degradação ambiental, provocada pelas monoculturas de exportação, realizadas, em geral, nas pequenas e médias propriedades.</p>
+
+		<p class="bordaQuestoes"id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) A legislação agrária proibiu a compra de terras por empresas estrangeiras, de modo que as áreas agrícolas ociosas passaram a ser ocupadas pelos trabalhadores rurais, democratizando o acesso à terra.</p>
+    </div>
+
+        
+		
+		<div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A reforma agrária é o processo de redistribuição das terras improdutivas de um país para beneficiar camponeses sem terras. Essa redistribuição tem como principal objetivo diminuir a quantidade de terras ociosas e de trabalhadores rurais sem terra, o que resultaria em um aumento da produtividade brasileira e da quantidade de alimentos para a população.  </p>
+    </div>
+	
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 05</p>
+			
+		<p id="p3">   (ENEM 2013) </p>
+
+		<p id="p3"> TEXTO I </p>
+
+		<p id="p3"> A nossa luta é pela democratização da propriedade da terra, cada vez mais concentrada em nosso país. Cerca de 1% de todos os proprietários controla 46% das terras. Fazemos pressão por meio da ocupação de latifúndios improdutivos e grandes propriedades, que não cumprem a função social, como determina a Constituição de 1988. Também ocupamos as fazendas que têm origem na grilagem de terras públicas. </p>
+		
+		<p id="citacao"><small>   Disponível em: www.mst.org.br. Acesso em: 25 ago. 2011 (adaptado).  </small>	</p>
+					
+		   <p id="p3">   TEXTO II</p>
+
+		<p id="p3"> O pequeno proprietário rural é igual a um pequeno proprietário de loja: quanto menor o negócio, mais difícil de manter, pois tem de ser produtivo e os encargos são difíceis de arcar. Sou a favor de propriedades produtivas e sustentáveis e que gerem empregos. Apoiar uma empresa produtiva que gere emprego é muito mais barato e gera muito mais do que apoiar a reforma agrária.</p>
+			
+		<p id="citacao"><small>	LESSA, C. Disponível em: www.observadorpolitico.org.br. Acesso em: 25 ago 2011 (adaptado). </small>	</p>
+
+	  <p id="p3">   Nos fragmentos dos textos, os posicionamentos em relação à reforma agrária se opõem. Isso acontece porque os autores associam a reforma agrária, respectivamente, à  </p>
+
+	  <p class="bordaQuestoes"id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) redução do inchaço urbano e à crítica ao minifúndio camponês.</p>
+  
+		<p class="bordaQuestoes"id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) ampliação da renda nacional e à prioridade ao mercado externo.</p>
+		
+		<p class="bordaQuestoes"id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) contenção da mecanização agrícola e ao combate ao êxodo rural.</p>
+		
+		<p class="bordaQuestoes"id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) privatização de empresas estatais e ao estímulo ao crescimento econômico.</p>
+		
+		<p class="bordaQuestoes"id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) correção de distorções históricas e ao prejuízo ao agronegócio.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+		
+		
+			 
+	<div class="campo">
+		
+        <p id="p2">Questão 06</p>
+			
+		<p id="p3">    (ENEM 2010)   </p>
+		
+			<img src="s4q6.jpg" class="imagem" width="320" height="360">
+		
+		<p id="citacao"><small>  Fonte: Incra, 2006.  </small>	</p>
+		         
+        <p id="p3">   O gráfico representa a relação entre o tamanho e a totalidade dos imóveis rurais no Brasil. Que característica da estrutura fundiária brasileira está evidenciada no gráfico apresentado? </p>
+
+	    <p class="bordaQuestoes"id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) A concentração de terras nas mãos de poucos.</p>
+  
+		<p class="bordaQuestoes"id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b">b) A existência de poucas terras agricultáveis.</p>
+		
+		<p class="bordaQuestoes"id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) O domínio territorial dos minifúndios.</p>
+		
+		<p class="bordaQuestoes"id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) A primazia da agricultura familiar.</p>
+
+		<p class="bordaQuestoes"id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) A debilidade dos plantations modernos.</p>
+    </div>
+	
+	
+
+   <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A catacterística da estrutura fundiária evidenciada pelo gráfico é a concentração de terras na mão de poucos proprietários, já que as propriedades com área superior a 1.000 ha (os chamados latifúndios) concentram 53% das terras agricultáveis do País.  </p>
+    </div>
+		
+		
+		
+	<div class="campo">
+		
+        <p id="p2">Questão 07</p>
+			
+		<p id="p3">  (ENEM 2009) A luta pela terra no Brasil é marcada por diversos aspectos que chamam a atenção. Entre os aspectos positivos, destaca-se a perseverança dos movimentos do campesinato e, entre os aspectos negativos, a violência que manchou de sangue essa história. Os movimentos pela reforma agrária articularam-se por todo o território nacional, principalmente entre 1985 e 1996, e conseguiram de maneira expressiva a inserção desse tema nas discussões pelo acesso à terra. </p>
+
+		<p id="p3">	O mapa seguinte apresenta a distribuição dos conflitos agrários em todas as regiões do Brasil nesse período, e o número de mortes ocorridas nessas lutas. </p>
+
+		<p id="p3">	BRASIL – VÍTMIAS FATAIS DE CONFLITOS OCORRIDOS NO CAMPO – 1985-1996</p>
+					   	 
+		<img src="s4q7.jpg" class="imagem" width="320" height="300">
+       
+	    <p id="citacao"><small>  Imagem (Foto: Fonte: Comissão Pastoral da Terra — CPT OLIVEIRA, A. U. A longa marcha do campesinato brasileiro: movimentos sociais, conflitos e reforma agrária. Revista Estudos Avançados. Vol. 15 n. 43, São Paulo, set./dez. 2001.) </small>	</p>
+
+		<p id="p3">	Com base nas informações do mapa acerca dos conflitos pela posse de terra no Brasil, a região.</p>
+	   
+	    <p class="bordaQuestoes"id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) conhecida historicamente como das Missões Jesuíticas é a de maior violência. </p>
+        
+		<p class="bordaQuestoes"id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) do Bico do Papagaio apresenta os números mais expressivos.</p>
+		
+		<p class="bordaQuestoes"id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) conhecida como oeste baiano tem o maior número de mortes.</p>
+		
+		<p class="bordaQuestoes"id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) do norte do Mato Grosso, área de expansão da agricultura mecanizada, é a mais violenta do país.</p>
+		
+		<p class="bordaQuestoes"id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) da Zona da Mata mineira teve o maior registro de mortes.</p>
+    </div>
+	
+	
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   A região no qual os conflitos pela posse da terra são mais intensos é a do Bico do Papagaio, localizado na divisa entre os estados do Tocantins, Maranhão e Pará, resultado das disputas entre os proprietários de terras, posseiros, grileiros, indígenas e sem-terra, este último articulados com movimentos sociais com o âmbito de conseguir a reforma agrária nesta região. Muitas pessoas acabam sendo assassinadas, por existir interesses políticos e econômicos na manutenção dos latifúndios. </p>
+    </div>
+			
+	<div class="campo">
+		
+        <p id="p2">Questão 08</p>
+			
+		<p id="p3">   Sobre o conceito de reforma agrária, é correto afirmar que:   </p>
+		  
+        <p class="bordaQuestoes"id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) a reforma agrária é o processo de redistribuição das propriedades produtivas de um determinado país ou região.</p>
+       
+	   <p class="bordaQuestoes"id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) a reforma agrária é o processo de redistribuição das propriedades rurais improdutivas para camponeses que não possuem terras.</p>
+		
+		<p class="bordaQuestoes"id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) é uma política de incentivo à produção agrária vinculada ao Ministério do Desenvolvimento Agrário..</p>
+		
+		<p class="bordaQuestoes"id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) a reforma agrária é o processo de redistribuição das propriedades rurais improdutivas que só atende quem tem condições para produzir na terra.</p>
+		
+		<p class="bordaQuestoes"id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) a reforma agrária é o processo de doação de terras para o Governo, que produzirá alimentos para os mais carentes. Muitos fazendeiros realizam essa prática em troca de isenção de impostos.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Colocar os comentários aqui.   </p>
+    </div>
+			 
+	<div class="campo">
+		
+        <p id="p2">Questão 09</p>
+			
+		<p id="p3">  No Brasil, a reforma agrária nunca foi plenamente realizada. Um dos principais fatores que impedem a sua realização no país é: </p>
+			        
+        <p class="bordaQuestoes"id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) A falta de interesse dos camponeses em adquirir propriedades, já que o Brasil possui diversas propriedades disponíveis para a redistribuição de terras.</p>
+       
+	   <p class="bordaQuestoes"id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b">b) O baixo preço pago pelo Governo pelas propriedades desapropriadas desincentiva os fazendeiros a entregarem suas terras para a redistribuição promovida pela reforma agrária.</p>
+	
+		<p class="bordaQuestoes"id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) A grande corrupção dos movimentos que lutam em prol da reforma agrária, o que acaba resultando na não redistribuição das terras conquistadas.</p>
+		
+		<p class="bordaQuestoes"id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) O custo de manutenção dos assentados, pois, mais do que apenas desapropriar e redistribuir terras, a reforma agrária tem que dar condições para o camponês produzir nas terras adquiridas.</p>
+		
+		<p class="bordaQuestoes"id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) O pequeno número de terras improdutivas no país faz com que não seja possível realizar nenhuma redistribuição, já que, segundo a constituição de 1988, somente as terras improdutivas podem ser redistribuídas.</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>   Mais do que redistribuir terras, o Governo precisa garantir que o camponês tenha condições de produzir. Isso é feito a partir da concessão de empréstimos com juros baixíssimos para que o camponês compre insumos e o maquinário necessário para a produção agropecuária. </p>
+    </div>
+	
+			
+	<div class="campo">
+		
+        <p id="p2">Questão 10</p>
+			
+		<p id="p3">  A Constituição Federal de 1988 legitimou a realização da reforma agrária no Brasil. Porém, essa determinação gerou muitos conflitos em virtude da:   </p>
+			      
+        <p class="bordaQuestoes"id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) falha no artigo da Constituição ao não determinar o que é considerado propriedade improdutiva, dando margem para diversas interpretações, tanto a favor da reforma agrária quanto contra.</p>
+       
+	   <p class="bordaQuestoes"id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) falha na execução da lei, uma vez que muitas propriedades produtivas são redistribuídas para os camponeses.</p>
+		
+		<p class="bordaQuestoes"id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) falha na execução da lei, já que muitas propriedades improdutivas são redistribuídas para grandes latifundiários em vez de serem repassadas para trabalhadores sem-terra.</p>
+		
+		<p class="bordaQuestoes"id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) falha no artigo da Constituição, que determina que todas as propriedades agrárias estão sujeitas a serem redistribuídas de acordo com a vontade do poder público.</p>
+		
+		<p class="bordaQuestoes"id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) falha na execução da lei, que não prevê indenizações para os proprietários das terras desapropriadas, causando, assim, muitos conflitos.</p>
+
+</p>
+    </div>
+	
+	
+
+    <div class="comentarios">
+        <p> <b>Comentário:</b></p> 
+			
+		<p>  A Constituição de 1988 não determina o conceito de propriedade improdutiva, o que causa diversos conflitos em virtude das diferentes interpretações. Enquanto os sem-terra, ao encontrarem uma propriedade improdutiva, veem-se no direito de invadi-la, os proprietários afirmam que as terras são produtivas, condenando a invasão.  </p>
+    </div>
+		
+		
+
+    <br><br>
+		
+		
+
+	
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+    <img id="imagem" style="display:none"  width = "280" height="200">
+
+    <br><br>
+		
+	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
+	<br><br>
+	
+		
+<script>
+       
+
+      var tipo = new Array()
+      tipo[0]= "Courier New";
+      tipo[1]= "Arial";
+      tipo[2]= "Cursive";
+      tipo[3]= "Trebuchet MS";
+      tipo[4]= "Monotype Corsiva";
+      tipo[5]= "Times New Roman";
+      tipo[6]= "Comic Sans MS";
+      tipo[7]= "Verdana";
+      tipo[8]= "Calisto MT";
+      tipo[9]= "Tempus Sans ITC"; 
+      tipo[10]= "Impact";
+	  
+	
+      var fonte = Math.round(Math.random() * 10);
+      document.getElementById("h1").style.fontFamily = tipo[fonte];
+	  document.getElementById("p2").style.fontFamily = tipo[fonte];
+	     
+	     
+</script>
+		
+			
+			
+<script>
+
+	function verificar() {
+	
+		var y = document.getElementById("button1");
+		var x = document.forms.quiz;
+			for( i=0; i< x.length; i++) {
+				if(x[i].checked==!"") {
+							
+				checar();
+				y.disabled = true;
+				y.value="Corrigido";
+				
+			}
+		}
+  }
+  
+  
+</script>
+
+
+
+
+
+<script>
+	function classEscurecer(){
+		var x = document.getElementsByClassName("campo");
+			for (var i = 0; i < x.length; i++) {
+			x[i].style.color = "lightgray";
+			x[i].style.transition = "6s";
+			}
+		}
+</script>
+
+
+
+<script>
+
+ 
+	function corLenta(){
+		var t = document.getElementsByClassName("bordaQuestoes");
+			for (var i = 0; i < t.length; i++) {
+			t[i].style.transition = "4s";
+			
+			}
+		}
+
+</script>
+  
+  
+<script>
+
+ 
+	function comentarios(){
+		var c = document.getElementsByClassName("comentarios");
+			for (var i = 0; i < c.length; i++) {
+			c[i].style.display="block";
+			
+		
+			} 
+		}
+
+</script>
+  
+ 
+  
+  
+</form>
+
+  
+
+	
+	
+
+
+
+
+
+   
+
+
+<script>
+
+
+    function checar() {
+			
+			
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+			var pq4 = document.quiz.pq4.value;
+			var pq5 = document.quiz.pq5.value;
+			var pq6 = document.quiz.pq6.value;
+			var pq7 = document.quiz.pq7.value;
+			var pq8 = document.quiz.pq8.value;
+			var pq9 = document.quiz.pq9.value;
+			var pq10 = document.quiz.pq10.value;
+			
+            var corretas = 0;
+			
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "d") {
+                corretas++;
+                document.getElementById("q1d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				
+				
+				document.getElementById("q1d").style.backgroundColor = cor[0];
+
+            }
+			
+			if (pq2 == "a") {
+                corretas++;
+                document.getElementById("q2a").style.backgroundColor = cor[0];
+            } else {
+                
+				document.getElementById("q2a").style.backgroundColor = cor[0];
+
+            }
+			if (pq3 == "e") {
+                corretas++;
+                document.getElementById("q3e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
+				document.getElementById("q3d").style.backgroundColor = cor[1];
+				document.getElementById("q3a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q3e").style.backgroundColor = cor[0];
+
+            }
+			if (pq4 == "a") {
+                corretas++;
+                document.getElementById("q4a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+				document.getElementById("q4c").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
+            }
+			if (pq5 == "e") {
+                corretas++;
+                document.getElementById("q5e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+				
+				document.getElementById("q5e").style.backgroundColor = cor[0];
+
+            }
+			if (pq6 == "a") {
+                corretas++;
+                document.getElementById("q6a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+				document.getElementById("q6c").style.backgroundColor = cor[1];
+				document.getElementById("q6d").style.backgroundColor = cor[1];
+				document.getElementById("q6e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+
+            }
+			if (pq7 == "b") {
+                corretas++;
+                document.getElementById("q7b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7a").style.backgroundColor = cor[1];
+				document.getElementById("q7c").style.backgroundColor = cor[1];
+				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q7b").style.backgroundColor = cor[0];
+
+            }
+			if (pq8 == "b") {
+                corretas++;
+                document.getElementById("q8b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8c").style.backgroundColor = cor[1];
+				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8e").style.backgroundColor = cor[1];
+				
+				 document.getElementById("q8b").style.backgroundColor = cor[0];
+
+            }
+			if (pq9 == "d") {
+                corretas++;
+                document.getElementById("q9d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q9c").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
+				document.getElementById("q9e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q9d").style.backgroundColor = cor[0];
+
+            }
+			if (pq10 == "a") {
+                corretas++;
+                document.getElementById("q10a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+				document.getElementById("q10c").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				document.getElementById("q10e").style.backgroundColor = cor[1];
+				
+				document.getElementById("q10a").style.backgroundColor = cor[0];
+
+            }
+			
+			
+			
+			corLenta();
+			classEscurecer();
+			comentarios();
+			
+			
+			
+						
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5  && corretas <=7 ) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+		
+		
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+			document.getElementById("mensagem").style.display = 'block';
+			document.getElementById("imagem").style.display = 'block';
+			document.getElementById("resp2").innerHTML = pq2;
+		
+			
+			
+			
+        }
+</script>
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

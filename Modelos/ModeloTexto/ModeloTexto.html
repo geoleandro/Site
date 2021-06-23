@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../estilos/fade.css">
+    <link rel="stylesheet" href="../..//estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../fotoIndex/favicon.ico">
+
+    <title>Modelo Texto</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <style>
+        .topico {
+            display: block;
+            margin-top: 60px;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .larguraBar {
+            max-width: 680px;
+        }
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .zoom {
+            animation: animatezoom 1s
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+
+        h1 {
+            margin-top: 0px;
+
+            font-family: pixel;
+        }
+
+        h2 {
+            margin-top: 10px;
+
+            font-family: pixel;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: pixel;
+        }
+    </style>
+
+
+    <!-- impedir que o botão direito do mouse seja apertado -->
+    <!-- <script>
+        if (document.addEventListener) {
+            document.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+                return false;
+            });
+        } else { //Versões antigas do IE
+            document.attachEvent("oncontextmenu", function (e) {
+                e = e || window.event;
+                e.returnValue = false;
+                return false;
+            });
+        }
+    </script> -->
+
+</head>
+
+<body onload="paragrafotexto()">
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
+
+                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></a>
+
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 00 – Modelo Texto </h1>
+
+
+        <p><strong> Conteúdo:</strong>: Deriva continental, Tectônica de placas, isostasia, Correntes de Convecção,
+            tipos de falhas tectônicas.
+
+        </p>
+
+        <p><strong>Objetivo:</strong> : Entender os processos de separação dos continentes terrestres por meio da teoria
+            da deriva continental e tectônica de placas. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <input class="input" type="text" id="pq0" name="pq0">
+
+
+        <span id="resp0"></span>
+
+        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, vimos como o sensoriamento remoto, o
+            geoprocessamento e a cartografia digital alteraram profundamente a maneira como conhecemos a superfície
+            terrestre. </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+        <p>Ao final, com ajuda dos exercícios, você será capaz de distinguir as camadas internas da
+            Terra e as eras geológicas que duraram milhões de anos.</p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    
+    <div class="topico">
+
+        <h2>  </h2>
+
+
+       
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+      
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+<!-- Modelo duas colunas -->
+
+    <div  class="w3-container p3">
+
+
+        <table class="w3-table w3-striped">
+            <tr>
+                <th>Geotecnologia</th>
+                <th>Cartografia</th>
+
+            </tr>
+            <tr>
+                <td>(1) Equipamentos para estudar o espaço terrestre</td>
+                <td>( ) Legenda </td>
+
+            </tr>
+            <tr> 
+            <td> (2) Aquisição de imagens de satélite </td>
+            <td>( ) GPS </td>
+
+            </tr>
+            <tr>
+                <td>(3) posicionamento por satélites </td>
+                <td>( ) Sensoriamento remoto</td>
+
+            </tr>
+
+            <tr>
+                <td> (4) Representação x Real</td>
+                <td>( ) Escala </td>
+
+            </tr>
+
+            <tr>
+                <td> (5) Cores e símbolos </td>
+                <td>( ) SIG </td>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="w3-card-4 w3-yellow w3-padding-small">
+        <ul>
+            <li>Placa Euroasiática, predominantemente continental, apesar de incluir parte do Atlântico Norte;</li>
+            <li> Placa Africana, que inclui a África e parte do Atlântico Sul;
+            </li>
+            <li>Placa Norte-Americana, que abrange parte do Atlântico Norte e quase toda a América do Norte;</li>
+            <li>Placa Sul-Americana, que inclui a América do Sul e parte do Atlântico Sul;</li>
+            <li>Placa Antártica, que inclui o continente antártico e uma imensa área oceânica;</li>
+            <li>Placa Indo-Australiana, que abrange boa parte do oceano Índico e da Oceania;</li>
+            <li>Placa do Pacífico, predominantemente oceânica;</li>
+            <li>Placa de Nazca, a oeste da América do Sul,
+                predominantemente oceânica.
+            </li>
+        </ul>
+
+
+        <div class="topico">
+
+            <p class="caixa"> Teste seu conhecimento</p>
+
+
+            <h2> Assinale todas as alternativas que satisfazem as características da projeção de Mercator:
+            </h2>
+
+            <form id="check">
+                <input type="checkbox" id="r1" name="r1">
+                <label> privilegia (favorece) a Europa em detrimento (prejuízo) de outras
+                    áreas.</label><br><br>
+
+                <input type="checkbox" id="r2" name="r2">
+                <label> aumenta as terras do hemisfério Norte em relação ao Sul;</label><br><br>
+
+                <input type="checkbox" id="r3" name="r3">
+                <label> respeita as dimensões reais dos territórios;</label><br><br>
+
+                <input type="checkbox" id="r4" name="r4">
+                <label> representa de modo preciso a forma dos continentes e as linhas da
+                    costa.</label><br><br>
+
+
+
+            </form>
+
+            <button class="btnShow" id="buttoncheck1"
+                onclick="confereBox('acertou, parabéns', 'resp40','globinho40')">Conferir</button>
+
+
+
+            <br><br><br><br>
+            <span id="resp40"></span>
+
+
+            <div class="area">
+                <p><img src="globinhoPe.png" id="globinho40" style="display:none" alt="globinho40" width="64"
+                        height="64">
+                </p>
+            </div>
+
+            <button class="btnHide" id="buttoncheck2"
+                onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+            <hr>
+
+        </div>
+
+
+        <div class="topico">
+
+
+
+
+            <p class="caixa"> Teste seu conhecimento</p>
+    
+            <form id="quiz" name="quiz">
+    
+    
+    
+                <p>O nome dessa era geológica significa ausência de vida”. Caracterizada pelo resfriamento
+                    da Terra, solidificação dos minerais e formação das primeiras rochas oriundas do interior da Terra
+                    (magma). </p>
+    
+                <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+    
+    
+                <p id="resp1a"></p>
+              
+    
+                <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
+                    onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
+    
+    
+    
+    
+    
+                <div class="area">
+                    <p>
+                        <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
+                            width="64" height="64">
+                    </p>
+                </div>
+    
+    
+    
+                <p>Trata-se de uma Era geológica mais recente. É subdividida em Terciário
+                    (cerca de 65 milhões de anos) quando apareceram os Dobramentos modernos (Andes, Alpes, Himalaia).
+                    Desenvolvimento dos mamíferos e vegetação com flores. Foi no Quaternário (cerca de 1,6 milhões de anos).
+                    Aparecimento dos primeiros hominídeos.</p>
+    
+    
+    
+                <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+               
+    
+                <p id="resp1b"></p>
+               
+    
+                <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
+                    onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
+    
+    
+    
+    
+                <div class="area">
+                    <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1b" style="display:none" alt="globinho9"
+                            width="64" height="64"> </p>
+                </div>
+    
+    
+                <p>Corresponde à denominação dos geólogos de uma fase da história da Terra. A história de
+                    nosso planeta, que tem cerca de 4,6 bilhões de anos, foi dividida pelos geólogos em escalas de tempo
+                    como forma de melhor organizar a compreensão sobre a passagem da evolução da Terra.</p>
+    
+                <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+    
+            
+    
+                <p id="resp1c"></p>
+              
+                <input class="btnShow" id="buttonConferirQ1c" type="button" value="Conferir"
+                    onclick="PerguntasAbertas(3,'resp1c','buttonConferirQ1c','globinho1c')">
+    
+    
+    
+    
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1c" style="display:none" alt="globinho10"
+                        width="64" height="64"> </p>
+    
+    
+    
+    
+            </form>
+    
+    
+    
+            <button class="btnHide" id="buttonq1d"
+                onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1c')">Proximo</button>
+    
+    
+            <hr>
+    
+        </div>
+
+
+        <div class="topico">
+
+
+            <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+    
+    
+            <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+              
+                
+                </strong> </p>
+    
+            <p><span class="primeiraLetra">R:</span> </p>
+    
+            <p class="borda"> <span class="primeiraLetra">P:</span> <strong>? </strong></p>
+    
+            <p><span class="primeiraLetra">R:</span> 
+    
+            </p>
+    
+    
+            <p class="borda"> <span class="primeiraLetra">P:</span> <strong> 
+                
+              
+                
+                </strong></p>
+    
+            <p><span class="primeiraLetra">R:</span> 
+                
+             
+            
+            </p>
+    
+           
+    
+    
+            <button class="btnShow" onclick="AbrirDivFinal();   this.style.display='none'">Desafio!</button>
+    
+    
+            <hr>
+    
+        </div>
+
+
+
+
+        <div class="topico">
+
+
+            <h2> Desafio em grupo: Exposição de ideias sobre a dinâmica do Planeta Terra.</h2>
+
+            <h3>Escolha um período ou um fato marcante apresentado nas Eras geológicas da Terra e
+                apresenta
+                três argumentos sobre a importância do conhecimento das dinâmicas do Planeta atualmente. </h3>
+
+
+            <h2>Instruções </h2>
+
+            <div class="w3-card-4">
+
+                <ul>
+
+                    <li>Forme um grupo com três estudantes;</li>
+
+                    <li> Selecione os fatos e discuta com seu grupo os argumentos da questão; (5 minutos);</li>
+
+                    <li> Escreva sua resposta à questão solicitada.</li>
+
+                    <li> Escolha um integrante do grupo para expor a questão a turma; (1 a 2 minutos).</li>
+
+
+
+                </ul>
+
+            </div>
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <hr>
+
+        </div>
+
+
+
+        <div class="topico">
+
+
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+            <div class="w3-container">
+
+
+
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                        <div class="w3-center w3-padding-48">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                title="Close Modal">&times;</span>
+
+
+
+                            <div class="nota">
+
+                            </div>
+
+                            <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                                class="w3-circle w3-animate-zoom ">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="w3-padding-48">
+
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+
+
+        <div class="bibliografias">
+
+            <h3><strong>Para saber mais:</strong></h3>
+
+
+
+            <div class="area">
+
+
+                <div class="postit-tp9 ">
+
+                    <a href="https://www.youtube.com/watch?v=s5rgBF4H6b4" target="_blank">
+                        O nascimento da Terra
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+            <p> DAMBRÓS, Cristiane. <strong>Geografia física</strong>. Londrina: Editora e Distribuidora
+                Educacional S.A., 2017.</p>
+
+            <p>PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>.
+                4a edição. Tradução: MENEGAT, R. Porto Alegre, Bookman. 2006.
+            </p>
+
+
+            <p>O buraco mais profundo já cavado na Terra. Disponível em:www.bbc. Acesso em: 17.mar.2021.
+            </p>
+
+            <p>'Um planeta dentro de outro': estudo mostra que centro da Terra é 'sólido e macio'.
+                Disponível em: www.terra.com.br Acesso em: 17.mar.2021.
+            </p>
+
+
+
+            <p>TOLEDO, Maria Cristina Mota.<strong> Estrutura interna da Terra</strong>. Disponível em:
+                https://midia.atp.usp.br/plc/plc0011/
+                impressos/plc0011_03.pdf
+            </p>
+
+            <p>WHAT'S WHERE ON EARTH - ATLAS. London: Penguim Random House, 2017. </p>
+
+        </div>
+        <br><br>
+
+
+
+
+
+
+        <script>
+
+            var nomeEstudante = "";
+
+            var nota = 0;
+
+            var fontes = ["Courier New", "Arial", "Times New Roman", "Verdana", "Tahoma"];
+
+            var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082", "#A020F0", "#FF1493", "#FA8072", "#FF8C00", "#DC143C"];
+
+            var aleatorio = Math.round(Math.random() * 5);
+
+            var h1 = document.getElementById("h1").style.fontFamily = fontes[aleatorio];
+
+            var imagemGlobinhoFinal = document.getElementById("globinhoFinal");
+
+            var numB = 0;
+
+
+            var notaDesafio = 0;
+
+            var button1 = document.getElementById("button50");
+            var button52 = document.getElementById("button52");
+
+            var corretas = 0;
+
+            // Inserido geralmente no final das questões abertas para chamar o botão Próximo 
+            function MostraButton(btn) {
+                buttonQ1 = document.getElementById(btn).style.display = "block";
+
+            }
+
+            function EscondeButton(btn) {
+                buttonQ2 = document.getElementById(btn).style.display = "none";
+
+            }
+
+            // Função inicial para inserir nome do aluno
+            function NomeAlunos(idResp, pqx) {
+                nomeEstudante = document.getElementById(pqx).value;
+                button = document.getElementById("buttonA");
+                buttonConfira = document.getElementById("buttonConfira");
+
+
+                if (nomeEstudante == "" || nomeEstudante.match(/^(\s)+$/)) {// se não digitar no textarea não faz nada
+                    document.getElementById(pqx).style.backgroundColor = "#EF5959";
+                    Play("../audio2.mp3");
+                    return;
+                }
+
+                else {
+                    document.getElementById(idResp).innerHTML = "Bem-vindo(a) " + nomeEstudante + ".";
+                    document.getElementById(pqx).style.display = "none";
+                    document.getElementById("caixaNomeAluno").style.display = "none";
+                    button.style.display = "block";
+                    buttonConfira.style.display = "none";
+                }
+
+            }
+
+
+
+            // Modifica as fontes do texto aleatoriamente. É chamada no body onload
+            function paragrafotexto() {
+                var p = document.getElementsByClassName("topico");
+                for (var i = 0; i < p.length; i++) {
+                    p[i].style.fontFamily = fontes[aleatorio];
+
+                }
+
+
+            }
+
+
+
+            function MostrarProximo(parametro) {
+
+                var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+                var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+                if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+                {
+                    proximo.classList.add('mostrar'); // Mostrar o seguinte
+                    addProgressBar();
+                    //numButton();
+                    ApagaButton();
+                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                }
+
+            }
+
+            // Apaga os botões próximo	
+            function ApagaButton() {
+                var t = document.getElementsByClassName("button");
+                for (var i = 0; i < t.length; i++) {
+                    t[i].style.display = "none";
+                }
+            }
+
+
+            // //Função para medir o tamanho da barra de progresso
+            // function numButton() {
+            //     numB++;
+            //     document.getElementById("numero").innerHTML = numB;
+            // }
+
+            // Deixa as divs cinzas quando completar a atividade
+            function mostraCinza() {
+
+                var g = document.getElementsByClassName("mostrar");
+                var radiosInput = document.getElementsByTagName('input');
+                var todosBtn = document.getElementsByTagName('button');
+
+                for (var i = 0; i < g.length; i++) {
+                    g[i].style.color = "gray";
+                    g[i].style.transition = "6s";
+
+                }
+
+                mostrarNota();
+                mostraBiblio();
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                for (var i = 0; i < radiosInput.length; i++) {
+                    radiosInput[i].disabled = true;
+                }
+
+
+                for (var b = 0; b < todosBtn.length; b++) {
+                    todosBtn[b].disabled = true;
+                    todosBtn[b].style.backgroundColor = "lightgray";
+                }
+
+
+            }
+
+
+            // Mostra a bibliografia no final
+            function mostraBiblio() {
+
+                var b = document.getElementsByClassName("bibliografias");
+                for (var i = 0; i < b.length; i++) {
+                    b[i].style.display = "block";
+
+                }
+            }
+
+            //Mostra a nota no final da aula
+            function mostrarNota() {
+
+                globoFinalNota = document.getElementsByClassName("nota");
+
+                if (nota >= 6) {
+
+                    for (var i = 0; i < globoFinalNota.length; i++) {
+                        document.getElementById('id01').style.display = "block";
+                        globoFinalNota[i].style.display = "block";
+                        globoFinalNota[i].innerHTML = "Parabéns " + nomeEstudante + "," + " você ganhou: " + nota + " globinhos! e completou sua lição!";
+                        Play("../notaFinal.mp3");
+
+                    }
+
+                }
+                else {
+                    for (var i = 0; i < globoFinalNota.length; i++) {
+                        document.getElementById('id01').style.display = "block";
+                        globoFinalNota[i].style.display = "block";
+                        globoFinalNota[i].innerHTML = nomeEstudante + ", você não completou sua lição, pois conseguiu apenas " + nota + " globinho(s). Tente novamente.";
+                        Play("../notaFinal2.mp3");
+
+
+                    }
+                }
+
+            }
+
+
+            // function addNota(pontos)
+            // {
+
+            // 	nota += pontos;
+            // }
+
+            //Mostra a resposta correta. Deve ser colocado o nome para ser exibido na tela (resp), o id do globo, a desativação da questão e a mensagem
+
+            function MostrarFrase(idFrase, idGlobinho, desativar, mensagem, qtdNota) {
+
+                notaInt = parseFloat(qtdNota);
+                nota += notaInt;
+                q = document.getElementsByClassName(desativar);
+                frase = document.getElementById(idFrase);
+                globo = document.getElementById(idGlobinho);
+
+                for (var i = 0; i < q.length; i++) {
+                    q[i].disabled = true;
+                    q[i].style.transition = "4s";
+
+                }
+
+
+                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+                globo.style.display = "block";
+                Play("../audio1.mp3");
+
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+
+            // Retira os pontos de acordo com o parametro e desativa a classe botões para não serem apertados mais
+            function RetirarPontos(idFrase2, idGlobinho2, desativar2, perdeNota) {
+
+                nota -= perdeNota;
+
+                q2 = document.getElementsByClassName(desativar2);
+                frase2 = document.getElementById(idFrase2);
+                globo2 = document.getElementById(idGlobinho2);
+
+
+                for (var i = 0; i < q2.length; i++) {
+                    q2[i].disabled = true;
+                    q2[i].style.transition = "4s";
+
+                }
+
+                if (nota <= 0) {
+                    nota = 0;
+                    frase2.innerHTML = nomeEstudante + ", você perdeu todos os globinhos e agora está com " + nota + "." + " Mantenha o foco.";
+                    globo2.style.display = "block";
+                    Play2("../audio2.mp3");
+                }
+                else {
+                    frase2.innerHTML = nomeEstudante + ", você perdeu um ou parte de um globinho " + " Mantenha o foco.";
+                    globo2.style.display = "block";
+                    Play2("../audio2.mp3");
+
+                }
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+
+
+
+            //audio acerto
+            function Play(nomeAudio) {
+                var audio1 = new Audio();
+                audio1.src = nomeAudio;
+                audio1.play();
+                //document.getElementById(obj).hidden = true;
+            }
+            //audio erro
+            function Play2(nomeAudio2) {
+                var audio1 = new Audio();
+                audio1.src = nomeAudio2;
+                audio1.play();
+
+                //document.getElementById(obj).hidden = true;
+            }
+
+
+            function addProgressBar() {
+                var barra = document.getElementById("progress");
+                txtBarra = document.getElementById("txtBarra");
+
+                i = Math.round(100 / 26);
+                barra.value += i;
+
+                if (barra.value >= 100) {
+                    barra.value = 100;
+                }
+
+                txtBarra.innerHTML = barra.value + "%";
+
+            }
+
+
+
+
+            function Aparecer(imagem, paragrafo) {
+
+                document.getElementById(imagem).style.display = "block";
+                document.getElementById(paragrafo).style.display = "block";
+
+
+            }
+
+            // Função com apenas uma palavra
+
+            function confereBox(mensagem, frase2, globinho) {
+
+                r1 = document.getElementById("r1");
+                r2 = document.getElementById("r2");
+                r3 = document.getElementById("r3");
+                r4 = document.getElementById("r4");
+                frase = document.getElementById(frase2);
+                globo = document.getElementById(globinho);
+
+                if (r3.checked == true) {
+
+                    frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
+                    Play2("../audio2.mp3");
+                }
+
+                else if (r1.checked == true && r2.checked == true && r4.checked == true) {
+
+
+                    nota += 1;
+                    frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+                    globo.style.display = "block";
+                    Play("../audio1.mp3");
+
+                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                    EscondeButton("buttoncheck1");
+                    MostraButton("buttoncheck2");
+
+
+                }
+
+
+                else {
+                    frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
+                    Play2("../audio2.mp3");
+                }
+
+
+
+
+
+
+
+            }
+
+
+            // Função com perguntas abertas feita com formulário
+            function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+                var q1a = document.quiz.q1a.value.toLowerCase();
+                var q1b = document.quiz.q1b.value.toLowerCase();
+                var q1c = document.quiz.q1c.value.toLowerCase();
+
+
+
+
+                var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+                var cor = ["#99ff99", " #ee4466"];
+
+                if (q1a.match("azoica") && qnum == 1) {
+
+                    document.getElementById("q1a").style.backgroundColor = cor[0];
+
+                    EscondeButton(buttonConferir);
+                    Play("../audio1.mp3");
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
+                    nota += 0.2;
+                    document.getElementById(globinho).style.display = "block";
+
+                }
+                else if (qnum == 1) {
+                    document.getElementById("q1a").style.backgroundColor = cor[1];
+                    document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+                    Play2("../audio2.mp3");
+                }
+
+                if (q1b.match("cenozoica") && qnum == 2) {
+
+                    document.getElementById("q1b").style.backgroundColor = cor[0];
+
+                    EscondeButton(buttonConferir);
+                    Play("../audio1.mp3");
+
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf();
+                    nota += 0.4;
+                    document.getElementById(globinho).style.display = "block";
+
+                }
+                else if (qnum == 2) {
+                    document.getElementById("q1b").style.backgroundColor = cor[1];
+                    document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+                    Play2("../audio2.mp3");
+                }
+
+
+                if (q1c.match("eras geológicas") && qnum == 3) {
+
+                    if (q1a.match("azoica") && q1b.match("cenozoica")) {
+                        document.getElementById("q1c").style.backgroundColor = cor[0];
+
+                        EscondeButton(buttonConferir);
+                        Play("../audio1.mp3");
+
+                        document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1c.valueOf();
+                        nota += 0.4;
+                        document.getElementById(globinho).style.display = "block";
+                        MostraButton("buttonq1d");
+                    }
+                    else {
+                        document.getElementById("q1c").style.backgroundColor = cor[1];
+                        document.getElementById(idResp).innerHTML = "Quer pular sem responder todas as questões? Volte e preencha as outras espertinho(a). Depois retorne aqui";
+                        Play2("../audio2.mp3");
+
+                    }
+
+                }
+                else if (qnum == 3) {
+                    document.getElementById("q1c").style.backgroundColor = cor[1];
+                    document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
+                    Play2("../audio2.mp3");
+                }
+
+
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+            // É chamada nas questões abertas decimais para ver se completou um inteiro.
+            function VerificaInteiro(idResp) {
+
+                var inteiro = Number.isInteger(nota);
+                var int = Math.trunc(nota)
+
+
+                if (inteiro == false) {
+                    nota = int;
+                    document.getElementById(idResp).innerHTML = " Quase lá " + nomeEstudante + "." + " Acerte todas as questões para ganhar o globinho. Você permanece com " + nota + ".";
+                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                }
+
+                else {
+                    document.getElementById(idResp).innerHTML = "Por ter acertado todas as questões " + nomeEstudante + ", ganhou mais um globinho, agora já possui " + nota + ".";
+                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                }
+
+                // document.getElementById(idResp).innerHTML = "Não atingiu o máximo para ganhar o globinho. Está com "  + nota;
+            }
+
+
+
+
+
+            //PERGUNTAS ALEATORIAS NÃO FUNCIONA NO MODO TEXTO TRANCADO
+            i = 0;
+
+            myqs = [["1) Nesse tipo de limite de placas tectônicas, a crosta é destruída, enquanto uma placa mergulha sob a outra. Pode ocorrer uma colisão entre duas placas oceânicas e formar uma fossa no fundo do mar com cadeia de vulcões submarinos. Há também a colisão entre uma placa oceânica e uma continental, formando cadeias de montanhas como os Andes, além de abalos sísmicos e vulcanismos. E, finalmente, a colisão entre duas placas continentais como o Himalaia, com fortes terremotos associados. Trata-se do limite:", "tp9f8.png", "Transformante", "Divergente", "Convergente", "4"],
+
+            ["2) Esse conceito diz respeito ao equilíbrio nas camadas da Terra. Quando uma área da litosfera atinge o equilíbrio entre o peso da placa e a sua porção inserida na parte superior do manto (astenosfera), diz-se que essa região atingiu o equilíbrio ...", "", "tectônico", "isostático", "transformante", "3"],
+
+
+            ["3) Nas regiões profundas do manto, as temperaturas são mais elevadas, o que provoca a ascendência dos materiais em direção às áreas próximas da litosfera. Esses materiais ao chegarem perto da crosta, se resfriam e mergulham novamente para o interior do manto. Esse fenômeno é chamado de:", "", "Dorsal Mesoatlântica", "Correntes de convecção", "Isostasia", "3"],
+
+
+            ["4) Nesses limites de placas tectônicas, há um deslizamento horizontal de uma placa em relação à outra. A crosta não é destruída e nem produzida. Esses movimentos ocasionam forte atividade sísmica. A maior parte encontra-se nos oceanos, mas as mais conhecidas estão nos continentes, como a falha de San Andreas nos EUA. Trata-se do limite:", "tp9f9.png", "Transformante", "Divergente", "Convergente", "2"],
+
+            ["5) Nesses limites de placas tectônicas, uma nova crosta é formada. Ocorre um movimento de separação de placas nos oceanos, ao longo das cadeias montanhas no fundo do mar. Essas montanhas são chamadas de:", "tp9f7.png", "Movimento divergente", "Dorsal Mesoatlântica", "Placas tectônicas", "3"]
+            ];
+
+
+
+            function loadquestion() {
+
+
+
+                document.getElementById("mylabel").innerHTML = myqs[i][0];
+                document.getElementById("myIma").src = myqs[i][1];
+                myform.opt1.value = myqs[i][2];
+                myform.opt2.value = myqs[i][3];
+                myform.opt3.value = myqs[i][4];
+
+                document.getElementById("proximo").style.display = "none";
+
+
+
+                //document.getElementById("aviso").style.backgroundColor = "#fff";
+                //document.getElementById("aviso").innerHTML = "";
+
+            }
+
+
+
+            function changequestion() {
+                i = i + 1;
+
+
+
+                if (i >= myqs.length) {
+                    MostraButton("btnFinal");
+                    document.getElementById("proximo").style.display = "none";
+
+                    return;
+                }
+
+
+
+                myform.opt1.disabled = false;
+                myform.opt2.disabled = false;
+                myform.opt3.disabled = false;
+
+                myform.opt1.style.backgroundColor = "lightgrey";
+                myform.opt2.style.backgroundColor = "lightgrey";
+                myform.opt3.style.backgroundColor = "lightgrey";
+
+                loadquestion();
+            }
+
+
+
+
+
+            function checkans(a, btn) {
+
+
+                ans = parseInt(myqs[i][5]);
+
+                if (ans == a) {
+
+                    nota += 1;
+
+                    document.getElementById(btn).style.backgroundColor = "#99ff99";
+                    Play("../audio1.mp3");
+                    document.getElementById("proximo").style.display = "block";
+
+                    myform.opt1.disabled = true;
+                    myform.opt2.disabled = true;
+                    myform.opt3.disabled = true;
+                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                }
+                else {
+                    document.getElementById(btn).style.backgroundColor = "#ee4466";
+                    Play("../audio2.mp3");
+                    document.getElementById("proximo").style.display = "block";
+
+                    myform.opt1.disabled = true;
+                    myform.opt2.disabled = true;
+                    myform.opt3.disabled = true;
+                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                }
+
+
+            }
+
+
+            function AbrirDivFinal() {
+                document.getElementById("divFinal").style.display = "block";
+                loadquestion();
+            }
+
+
+
+
+
+
+            function MostrarProximo(parametro) {
+
+                var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+                var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+                if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+                {
+                    proximo.classList.add('mostrar'); // Mostrar o seguinte
+                    //addProgressBar();
+                    //numButton();
+                    ApagaButton();
+
+                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                }
+
+            }
+
+
+
+        </script>
+
+
+
+
+
+</body>
+
+</html>
