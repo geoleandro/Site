@@ -152,3 +152,7 @@ ul.lista { font-size:22px; margin:20px}
 .topico > p{
   padding:8px;
 }
+
+form > p{
+  padding:8px;
+}
