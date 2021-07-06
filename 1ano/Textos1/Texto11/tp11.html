@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js"></script>
+    <title>Texto11</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <style>
+        .topico {
+            display: block;
+            margin-top: 60px;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .larguraBar {
+            max-width: 680px;
+        }
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .zoom {
+            animation: animatezoom 1s
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+
+        h1 {
+            margin-top: 0px;
+
+
+        }
+
+        h2 {
+            margin-top: 0px;
+
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        #divFinal {
+            display: none;
+        }
+
+
+        .margemAcima {
+            margin-top: 50px;
+        }
+
+        .margemAbaixo {
+            margin-bottom: 70px;
+        }
+    </style>
+
+
+
+</head>
+
+<body onload="paragrafotexto()">
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
+
+                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></a>
+
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 11 – Dinâmica externa do relevo </h1>
+
+
+        <p><strong> Conteúdo:</strong>: Relevo; agentes externos do relevo; água, gelo, vento, gravidade; Intemperismo:
+            físico e químico; Erosão: hídrica, marinha, glacial, eólica, laminar, ravina, voçoroca, deslizamento;
+            sedimentação.
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Entender o papel das forças externas na configuração das estruturas e formas do
+            relevo terrestre. Distinguir entre intemperismo físico e químico e seus fatores. Identificar os fatores do
+            intemperismo. Descrever os diferentes tipos de erosão. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <input class="input" type="text" id="pq0" name="pq0">
+
+
+        <span id="resp0"></span>
+
+        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, conhecemos alguns processos relacionados a dinâmica
+            interna do relevo, como o tectonismo, vulcanismo e os terremotos. </p>
+
+        <p> Nesta lição, veremos os agentes externos que moldam a superfície terrestre (água, vento, geleiras etc.), ao
+            provocar alterações físicas e químicas nas rochas.</p>
+
+        <p>Ao final, você compreenderá como funciona o intemperismo, o processo de erosão, transporte e sedimentação e a
+            importância do conhecimento do relevo para a sociedade. </p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2> O que são os agentes externos do relevo? </h2>
+
+
+
+
+        <p>Aprendemos que o relevo é basicamente o conjunto das diversas configurações da crosta terrestre. Entretanto,
+            essa superfície é a morada do homem, diferenciada por processos naturais e socais. </p>
+
+        <p>A importância do estudo do espaço terrestre no atual período é fundamental, uma vez que atingimos um
+            conhecimento total do Planeta, graças as novas tecnologias (Sensoriamento Remoto, Geoprocessamento) em um
+            período marcado pela ciência, técnica e informação. </p>
+
+        <p>O que o relevo tem a ver com tudo isso? O relevo é feito de rochas, assim como nossas calçadas, pontes,
+            moradias e estas se degradam ao longo do tempo. </p>
+
+
+        <p>Nós dependemos dos materiais disponíveis na superfície terrestre para diversas atividades humanas, como o
+            cultivo do solo, construção civil ou desenvolvimento da indústria. </p>
+
+
+        <p>Por meio da ação das águas, do vento, do mar, das geleiras, dos seres vivos etc., a paisagem terrestre é
+            modelada e alterada. </p>
+
+
+        <p>Esses são os <strong>agentes externos do relevo</strong>. Eles são responsáveis por deteriorar e desintegrar
+            os materiais da Terra, na superfície ou próxima a ela, através de sua quebra física e alteração química.
+        </p>
+
+        <p>Trata-se do <strong>intemperismo</strong>, que age sobre a rocha desagregando-a para formar peças menores.
+            Alguns minerais são alterados ou dissolvidos dando origem a outras formações. Exemplo de intemperismo pode
+            ser visto na <span onclick="Aparecer('imagem1','citacao1')"><mark>figura abaixo:</mark></span> </p>
+
+
+
+
+        <div class="area"><img id="imagem1" src="tp11f1.png" alt="tp11f1" class="w3-mobile" style=display:none></div>
+
+
+        <span class="citacao" id="citacao1" style=display:none> O Parque Estadual de Vila Velha é um sítio geológico situado no município brasileiro de Ponta Grossa, do qual é a principal atração turística. Fonte: Wikipedia. </span>
+
+
+        <p>Esse exemplo mostra um tipo de rocha, o Arenito esculpido pela força do vento e das chuvas ao longo de milhões de anos. Esse alicerce de rocha sedimentar sofreu intemperismo com a exposição e o desgaste por milhares ou milhões de anos. </p>
+
+
+        <p> O transporte do material erodido das rochas é chamado de <strong>erosão</strong> e pode ser carregado para outro local e finalmente depositado como <strong>sedimento</strong>. O chão onde pisamos pode ter sido, no passado, montanha desgastada ou erodida dependendo do local no Planeta em que vivemos.</p>
+
+
+        <p>Veremos em detalhes cada um desses processos responsáveis por alterar a configuração do relevo terrestre. </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+    
+
+        <div class="caixa">
+            <h3>Agora é com você!</h3>
+        </div>
+
+        <p> Faça uma lista em seu caderno sobre o que já ouviu falar sobre esse assunto: intemperismo, erosão e seus tipos. </p>
+
+        <p>O que gostaria de saber mais?  </p>
+
+       
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+	<div class="topico">
+
+		<p class="caixa"> Teste sua observação!</p>
+
+		<h3>O que aconteceu com esse automóvel enferrujado sob o ponto de vista dos agentes externos do relevo?</h3>
+
+
+        <p class="area"><img  src="tp11f19.png" alt="tp11f19" class="w3-mobile"></p>
+
+        <span class="citacao"> Fonte: https://pixabay.com/pt/photos/carro-velho-carro-enferrujado-704560/ </span>
+
+		<button class="desativar1 area p4 margemAcima"
+			onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">a) ele não pagou os impostos do DETRAN; (foi multado e guinchado);</button>
+
+
+            <button class="desativar1 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">b) ele sofreu intemperismo físico (desagregação);</button>
+
+
+		<button class="desativar1 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'boa, quando o ferro entra em contato com o ar, ele oxida, perde elétrons, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">c) ele sofreu intemperismo químico (oxidação).</button>
+
+
+	
+
+
+
+
+		<span id="resp1"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+    <div class="topico">
+
+        <h2> </h2>
+
+
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    
+
+    <div class="topico">
+
+        <h2> </h2>
+
+
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    
+
+    <div class="topico">
+
+        <h2> </h2>
+
+
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    <!-- Modelo duas colunas -->
+
+    <div class="w3-container p3">
+
+
+        <table class="w3-table w3-striped">
+            <tr>
+                <th>Geotecnologia</th>
+                <th>Cartografia</th>
+
+            </tr>
+            <tr>
+                <td>(1) Equipamentos para estudar o espaço terrestre</td>
+                <td>( ) Legenda </td>
+
+            </tr>
+            <tr>
+                <td> (2) Aquisição de imagens de satélite </td>
+                <td>( ) GPS </td>
+
+            </tr>
+            <tr>
+                <td>(3) posicionamento por satélites </td>
+                <td>( ) Sensoriamento remoto</td>
+
+            </tr>
+
+            <tr>
+                <td> (4) Representação x Real</td>
+                <td>( ) Escala </td>
+
+            </tr>
+
+            <tr>
+                <td> (5) Cores e símbolos </td>
+                <td>( ) SIG </td>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="w3-card-4 w3-yellow w3-padding-small">
+        <ul>
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+
+        <h2> Assinale todas as alternativas que satisfazem as características da projeção de Mercator:
+        </h2>
+
+        <form id="check">
+            <input type="checkbox" id="r1" name="r1">
+            <label> privilegia (favorece) a Europa em detrimento (prejuízo) de outras
+                áreas.</label><br><br>
+
+            <input type="checkbox" id="r2" name="r2">
+            <label> aumenta as terras do hemisfério Norte em relação ao Sul;</label><br><br>
+
+            <input type="checkbox" id="r3" name="r3">
+            <label> respeita as dimensões reais dos territórios;</label><br><br>
+
+            <input type="checkbox" id="r4" name="r4">
+            <label> representa de modo preciso a forma dos continentes e as linhas da
+                costa.</label><br><br>
+
+
+
+        </form>
+
+        <button class="btnShow" id="buttoncheck1"
+            onclick="confereBox('acertou, parabéns', 'resp40','globinho40')">Conferir</button>
+
+
+
+        <br><br><br><br>
+        <span id="resp40"></span>
+
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho40" style="display:none" alt="globinho40"
+                    width="64" height="64">
+            </p>
+        </div>
+
+        <button class="btnHide" id="buttoncheck2"
+            onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <form id="quiz" name="quiz">
+
+
+
+            <p>O nome dessa era geológica significa ausência de vida”. Caracterizada pelo resfriamento
+                da Terra, solidificação dos minerais e formação das primeiras rochas oriundas do interior da Terra
+                (magma). </p>
+
+            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+
+
+            <p id="resp1a"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
+                onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
+
+
+
+
+
+            <div class="area">
+                <p>
+                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
+                        width="64" height="64">
+                </p>
+            </div>
+
+
+
+            <p>Trata-se de uma Era geológica mais recente. É subdividida em Terciário
+                (cerca de 65 milhões de anos) quando apareceram os Dobramentos modernos (Andes, Alpes, Himalaia).
+                Desenvolvimento dos mamíferos e vegetação com flores. Foi no Quaternário (cerca de 1,6 milhões de anos).
+                Aparecimento dos primeiros hominídeos.</p>
+
+
+
+            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+
+
+            <p id="resp1b"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
+                onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
+
+
+
+
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1b" style="display:none" alt="globinho9"
+                        width="64" height="64"> </p>
+            </div>
+
+
+            <p>Corresponde à denominação dos geólogos de uma fase da história da Terra. A história de
+                nosso planeta, que tem cerca de 4,6 bilhões de anos, foi dividida pelos geólogos em escalas de tempo
+                como forma de melhor organizar a compreensão sobre a passagem da evolução da Terra.</p>
+
+            <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+
+
+
+            <p id="resp1c"></p>
+
+            <input class="btnShow" id="buttonConferirQ1c" type="button" value="Conferir"
+                onclick="PerguntasAbertas(3,'resp1c','buttonConferirQ1c','globinho1c')">
+
+
+
+
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1c" style="display:none" alt="globinho10"
+                    width="64" height="64"> </p>
+
+
+
+
+        </form>
+
+
+
+        <button class="btnHide" id="buttonq1d"
+            onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1c')">Proximo</button>
+
+
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> </p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>? </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+        </p>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+
+
+        </p>
+
+
+
+
+        <button class="btnShow" onclick="AbrirDivFinal();   this.style.display='none'">Desafio!</button>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <h2> Desafio em grupo: Exposição de ideias sobre a dinâmica do Planeta Terra.</h2>
+
+        <h3>Escolha um período ou um fato marcante apresentado nas Eras geológicas da Terra e
+            apresenta
+            três argumentos sobre a importância do conhecimento das dinâmicas do Planeta atualmente. </h3>
+
+
+        <h2>Instruções </h2>
+
+        <div class="w3-card-4">
+
+            <ul>
+
+                <li>Forme um grupo com três estudantes;</li>
+
+                <li> Selecione os fatos e discuta com seu grupo os argumentos da questão; (5 minutos);</li>
+
+                <li> Escreva sua resposta à questão solicitada.</li>
+
+                <li> Escolha um integrante do grupo para expor a questão a turma; (1 a 2 minutos).</li>
+
+
+
+            </ul>
+
+        </div>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=s5rgBF4H6b4" target="_blank">
+                    O nascimento da Terra
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+        <p> DAMBRÓS, Cristiane. <strong>Geografia física</strong>. Londrina: Editora e Distribuidora
+            Educacional S.A., 2017.</p>
+
+        <p>PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>.
+            4a edição. Tradução: MENEGAT, R. Porto Alegre, Bookman. 2006.
+        </p>
+
+
+        <p>O buraco mais profundo já cavado na Terra. Disponível em:www.bbc. Acesso em: 17.mar.2021.
+        </p>
+
+        <p>'Um planeta dentro de outro': estudo mostra que centro da Terra é 'sólido e macio'.
+            Disponível em: www.terra.com.br Acesso em: 17.mar.2021.
+        </p>
+
+
+
+        <p>TOLEDO, Maria Cristina Mota.<strong> Estrutura interna da Terra</strong>. Disponível em:
+            https://midia.atp.usp.br/plc/plc0011/
+            impressos/plc0011_03.pdf
+        </p>
+
+        <p>WHAT'S WHERE ON EARTH - ATLAS. London: Penguim Random House, 2017. </p>
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 26);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+   
+
+        // Função com perguntas abertas feita com formulário
+        function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+            var q1a = document.quiz.q1a.value.toLowerCase();
+            var q1b = document.quiz.q1b.value.toLowerCase();
+            var q1c = document.quiz.q1c.value.toLowerCase();
+
+
+
+
+            var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+            var cor = ["#99ff99", " #ee4466"];
+
+            if (q1a.match("azoica") && qnum == 1) {
+
+                document.getElementById("q1a").style.backgroundColor = cor[0];
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
+                nota += 0.2;
+                document.getElementById(globinho).style.display = "block";
+
+            }
+            else if (qnum == 1) {
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+                Play2("../audio2.mp3");
+            }
+
+            if (q1b.match("cenozoica") && qnum == 2) {
+
+                document.getElementById("q1b").style.backgroundColor = cor[0];
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf();
+                nota += 0.4;
+                document.getElementById(globinho).style.display = "block";
+
+            }
+            else if (qnum == 2) {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+                Play2("../audio2.mp3");
+            }
+
+
+            if (q1c.match("eras geológicas") && qnum == 3) {
+
+                if (q1a.match("azoica") && q1b.match("cenozoica")) {
+                    document.getElementById("q1c").style.backgroundColor = cor[0];
+
+                    EscondeButton(buttonConferir);
+                    Play("../audio1.mp3");
+
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1c.valueOf();
+                    nota += 0.4;
+                    document.getElementById(globinho).style.display = "block";
+                    MostraButton("buttonq1d");
+                }
+                else {
+                    document.getElementById("q1c").style.backgroundColor = cor[1];
+                    document.getElementById(idResp).innerHTML = "Quer pular sem responder todas as questões? Volte e preencha as outras espertinho(a). Depois retorne aqui";
+                    Play2("../audio2.mp3");
+
+                }
+
+            }
+            else if (qnum == 3) {
+                document.getElementById("q1c").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
+                Play2("../audio2.mp3");
+            }
+
+
+          
+            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+           
+
+        }
+
+        // É chamada nas questões abertas decimais para ver se completou um inteiro.
+        function VerificaInteiro(idResp) {
+
+            var inteiro = Number.isInteger(nota);
+            var int = Math.trunc(nota)
+
+
+            if (inteiro == false) {
+                nota = int;
+                document.getElementById(idResp).innerHTML = " Quase lá " + nomeEstudante + "." + " Acerte todas as questões para ganhar o globinho. Você permanece com " + nota + ".";
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+            }
+
+            else {
+                document.getElementById(idResp).innerHTML = "Por ter acertado todas as questões " + nomeEstudante + ", ganhou mais um globinho, agora já possui " + nota + ".";
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+            }
+
+            // document.getElementById(idResp).innerHTML = "Não atingiu o máximo para ganhar o globinho. Está com "  + nota;
+        }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                //addProgressBar();
+                //numButton();
+                ApagaButton();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

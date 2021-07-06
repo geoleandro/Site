@@ -185,6 +185,9 @@ function MostrarFrase(idFrase, idGlobinho, desativar, mensagem, qtdNota) {
 
 
     document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+    document.getElementById("imagem50").classList.add("balancar");
+    document.getElementById("notaFixa").classList.add("w3-animate-zoom");
+
 
 }
 
