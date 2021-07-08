@@ -28,7 +28,7 @@
 
     <style>
         .topico {
-            display: block;
+            display: none;
             margin-top: 60px;
         }
 
@@ -65,6 +65,14 @@
             -webkit-transform: rotate(-3deg);
             -o-transform: rotate(-3deg);
             -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
         }
 
         .zoom {
@@ -176,10 +184,12 @@
         <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
         <br>
 
-        <input class="input" type="text" id="pq0" name="pq0">
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
 
 
-        <span id="resp0"></span>
+        <p id="resp0"></p>
 
         <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
 
@@ -448,6 +458,7 @@
 
         <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
         <hr>
+        <br>
 
 
     </div>
@@ -1432,54 +1443,6 @@
 	</div>
 
 
-    
-	<div class="topico">
-
-		<p class="caixa"> Teste seu conhecimento</p>
-
-		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
-
-		<button class="desativar10 area p4"
-			onclick=" MostrarProximo(this);RetirarPontos('resp10','globinho10', 'desativar10','1');this.style.backgroundColor='tomato'">
-			
-			a)
-			o aproveitamento da insolação solar.
-		
-		</button>
-		
-
-		<button class="desativar10 area p4"
-			onclick="MostrarProximo(this); MostrarFrase('resp10','globinho10', 'desativar10', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
-			
-			b)
-			a construção de um sistema técnico único.
-		
-		</button>
-	
-
-		<button class="desativar10 area p4"
-			onclick="MostrarProximo(this); RetirarPontos('resp10','globinho10', 'desativar10','1');this.style.backgroundColor='tomato'">
-			
-			c)
-			prejudicar a economia dos países no mundo.
-		
-		</button>
-	
-
-
-
-		<span id="resp10"></span>
-
-		<div class="area">
-			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho10" style="display:none" alt="globinho10" width="64" height="64">
-			</p>
-		</div>
-
-
-		<hr>
-
-
-	</div>
 
 
 
@@ -1517,16 +1480,6 @@
 
 
 
-     
-
-    
-
-
-
-
-
-
-
     <div class="topico">
 
 
@@ -1535,37 +1488,37 @@
 
         <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
-
+            Qual a relação entre intemperismo e clima?
             </strong> </p>
 
-        <p><span class="primeiraLetra">R:</span> </p>
+        <p><span class="primeiraLetra">R:</span> O clima influencia diretamente o intemperismo devido a temperatura e em relação a espessura do solo. Em grandes altitudes, uma montanha por exemplo, o intemperismo químico é baixo, uma vez que devido a baixa temperatura torna-se dificil para a água dissolver os minerais das rochas. O que favorece o intemperismo físico pelo gelo. Se há pouca chuva, pouca água percorrendo as rochas. Em regiões desérticas há muito intemperismo físico, já em regiões tropicais o intemperismo químico é mais forte. Também se o relevo é mais íngreme (inclinado) aprofunda a erosão, se o relevo é mais suave, mais plano, favorece o intemperismo químico.</p>
 
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>? </strong></p>
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>Qual é o produto do intemperismo? </strong></p>
 
         <p><span class="primeiraLetra">R:</span>
-
+            Depois que o intemperismo químico e física atuam para erodir uma superfície rochosa, partes desse material é carregado pelas correntes de água, geleiras ou pelo vento. Outra parte permanece no local seja em planícies suaves ou em encostas moderadas com parte ainda da rocha matriz, rocha que pode ser sedimentar, magmática ou metamórfica. Essa superfície que se assemelha com o terreno da Lua ainda não tem matéria orgânica suficiente para ser chamada de solo. É o que os geólogos chamam de <strong>regolito</strong>. Com o tempo, uma fina camada de restos de animais, plantas e bactérias formarão o <strong>solo</strong>. O solo é um dos principais produtos do intemperismo (temos um capítulo específico sobre solos).
         </p>
 
 
         <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
-
+            Os deslizamentos de Terra em uma encosta têm a ver com o intemperismo?
 
             </strong></p>
 
         <p><span class="primeiraLetra">R:</span>
 
-
+            Uma vez que o intemperismo alterou e deixou “afrouxado” o solo, a gravidade se encarrega de empurrá-lo ladeira abaixo. Também estão relacionados aos problemas dos deslizamentos nas encostas o clima, a topografia (forma, inclinação e altitude do terreno), o tipo de rocha e solo e a maneira de ocupação da área pela população do entorno.
 
         </p>
 
 
 
-
-        <button class="btnShow" onclick="AbrirDivFinal();   this.style.display='none'">Desafio!</button>
-
-
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
         <hr>
+
+
+   
 
     </div>
 
@@ -1575,26 +1528,34 @@
     <div class="topico">
 
 
-        <h2> Desafio em grupo: Exposição de ideias sobre a dinâmica do Planeta Terra.</h2>
+        <h2> Desafio em dupla: Produção de recomendações para visita em uma caverna.</h2>
 
-        <h3>Escolha um período ou um fato marcante apresentado nas Eras geológicas da Terra e
-            apresenta
-            três argumentos sobre a importância do conhecimento das dinâmicas do Planeta atualmente. </h3>
+        <h3>Leia o texto abaixo sobre a gruta da Lapinha em Minas Gerais: </h3>
+
+        <p> A gruta da Lapinha, localizada no município de Lagoa Santa (MG), possui 40 metros de profundidade e 511 metros de extensão abertos à visitação pública. A gruta foi formada a partir de rochas calcárias formadas pelos restos marinhos do fundo do mar raso da bacia do rio das Velhas, de restos que foram acumulados em camadas superpostas e trabalhados pela erosão provocada pelas correntes marinhas e aéreas.</p>
+
+
+        <p>A gruta, de grande beleza cênica, foi descoberta por volta de 1835 pelo naturalista dinamarquês Peter Wilhelm Lund, conhecido como o pai da paleontologia brasileira, que pesquisou toda a região. Em 1840, Lund descobriu restos de fósseis do primeiro homem americano, como também animais pré-históricos que viveram há 25 mil anos, dentre eles o tigre dente de sabre, a preguiça gigante e o tatu gigante. No espaço cultural anexo à gruta, uma réplica de uma preguiça gigante está em exposição. </p>
+
+        <p class="w3-small">Fonte: https://www.mg.gov.br/
+            conteudo/conheca-minas/turismo/gruta-da-lapinha</p>
+
+
+        
 
 
         <h2>Instruções </h2>
 
-        <div class="w3-card-4">
+        <div class="w3-light-green w3-padding">
 
+            <p>Em dupla, reflita e escreva cada um em seu caderno, um texto explicando para os visitantes da gruta o processo de formação de cavernas de calcário utilizando suas próprias palavras e alguns dos conceitos vistos na aula de hoje.</p>
             <ul>
 
-                <li>Forme um grupo com três estudantes;</li>
+                <li>Relevo; agentes externos do relevo; água, gelo, vento, gravidade; </li>
 
-                <li> Selecione os fatos e discuta com seu grupo os argumentos da questão; (5 minutos);</li>
+                <li> Intemperismo: físico e químico; </li>
 
-                <li> Escreva sua resposta à questão solicitada.</li>
-
-                <li> Escolha um integrante do grupo para expor a questão a turma; (1 a 2 minutos).</li>
+                <li>Erosão: hídrica, marinha, glacial, eólica, ravina, voçoroca, deslizamento; sedimentação. </li>
 
 
 
@@ -1603,8 +1564,9 @@
         </div>
 
 
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
         <hr>
+        <br>
 
     </div>
 
@@ -1613,10 +1575,11 @@
     <div class="topico">
 
 
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        <button class="btnShow " onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        <br>
 
 
-        <div class="w3-container">
+        <div class="w3-container ">
 
 
 
@@ -1649,6 +1612,7 @@
 
     <div class="w3-padding-48">
 
+        <!-- <span id="numero"></span>  -->
         <span id="txtBarra">0%</span>
         <progress value="0" max="100" id="progress"></progress>
     </div>
@@ -1666,8 +1630,38 @@
 
             <div class="postit-tp9 ">
 
-                <a href="https://www.youtube.com/watch?v=s5rgBF4H6b4" target="_blank">
-                    O nascimento da Terra
+                <a href="https://www.youtube.com/watch?v=xk_d4j1_7N4" target="_blank">
+                    Imagens lindas das falésias de Torres, no Rio Grande do Sul
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=PgqJvfrihMw" target="_blank">
+                    Conheça o Parque Estadual de Vila Velha, um lugar lindo e cheio de histórias
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=V_HRPsaQqe4&ab_channel=OrigensNT
+
+                " target="_blank">
+                Grand Canyon:  A Grande Catástrofe
                 </a>
 
             </div>
@@ -1677,34 +1671,48 @@
 
 
 
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=CRVG3tIg880" target="_blank">
+                    (SGB) Conhecer para prevenir - Meio Físico
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+      
+
 
         <h3> <strong> Referências bibliográficas </strong></h3>
 
 
 
-        <p> DAMBRÓS, Cristiane. <strong>Geografia física</strong>. Londrina: Editora e Distribuidora
-            Educacional S.A., 2017.</p>
+        <p> BORRERO, Francisco (et all).<strong> Earth Science</strong>: Geology, the Environment, and the Universe. Columbus, McGraw-Hill Companies, 2008.</p>
 
         <p>PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>.
             4a edição. Tradução: MENEGAT, R. Porto Alegre, Bookman. 2006.
         </p>
 
 
-        <p>O buraco mais profundo já cavado na Terra. Disponível em:www.bbc. Acesso em: 17.mar.2021.
+        <p>REYNOLDS, Stephen J (et all.). <strong>Exploring physical geography</strong>. 2.ed. New York, NY: McGraw-Hill, 2017.
         </p>
 
-        <p>'Um planeta dentro de outro': estudo mostra que centro da Terra é 'sólido e macio'.
-            Disponível em: www.terra.com.br Acesso em: 17.mar.2021.
+        <p>STRAHLER, Alan. <strong>Introducing Physical Geography</strong>. 6.ed. Wiley, New York, 2013.
         </p>
 
 
 
-        <p>TOLEDO, Maria Cristina Mota.<strong> Estrutura interna da Terra</strong>. Disponível em:
-            https://midia.atp.usp.br/plc/plc0011/
-            impressos/plc0011_03.pdf
+        <p>TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F.<strong> Decifrando a Terra</strong>. 2ª ed. São Paulo: Companhia Editora Nacional, 2009. 
         </p>
 
-        <p>WHAT'S WHERE ON EARTH - ATLAS. London: Penguim Random House, 2017. </p>
+        <p>WICANDER, Reed; MONROE, James S. <strong>Fundamentos de Geologia</strong>. São Paulo: Cengage Learning, 2009.</p>
 
     </div>
     <br><br>
@@ -1721,7 +1729,7 @@
             var barra = document.getElementById("progress");
             txtBarra = document.getElementById("txtBarra");
 
-            i = Math.round(100 / 26);
+            i = Math.round(100 / 22);
             barra.value += i;
 
             if (barra.value >= 100) {
@@ -1756,20 +1764,30 @@
             if (q1a.match("intemperismo") && qnum == 1) {
 
                 document.getElementById("q1a").style.backgroundColor = cor[0];
+                document.getElementById("q1a").disabled = true;
+
 
                 EscondeButton(buttonConferir);
                 Play("../audio1.mp3");
                 document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
-                nota += 1;
+                nota += 0.5;
                 document.getElementById(globinho).style.display = "block";
+               
 
                 BalancarGlobo();
+                
+                document.getElementById("buttonConferirQ1b").disabled = false;
+                document.getElementById("buttonConferirQ1b").style.backgroundColor = "#69CB60FA";
+                document.getElementById("buttonConferirQ1b").value = "Agora sim!";
+
+             
 
             }
             else if (qnum == 1) {
                 document.getElementById("q1a").style.backgroundColor = cor[1];
                 document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
                 Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
             }
 
 
@@ -1778,25 +1796,30 @@
                 if (q1a.match("intemperismo")) {
 
                     document.getElementById("q1b").style.backgroundColor = cor[0];
+                    document.getElementById("q1b").disabled = true;
 
                     EscondeButton(buttonConferir);
                     Play("../audio1.mp3");
 
-                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf();
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf() + ", acertou!.";
 
-                    nota += 1;
+                    nota += 0.5;
                     document.getElementById(globinho).style.display = "block";
 
 
-
+                  
                     MostraButton("buttonq1d");
                     BalancarGlobo();
                 }
                 else {
                     document.getElementById("q1b").style.backgroundColor = cor[0];
+                    document.getElementById("q1b").disabled = true;
                     document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui";
                     Play2("../audio2.mp3");
-                    document.getElementById("buttonConferirQ1b").value = "Aguardando..."
+                    document.getElementById("buttonConferirQ1b").value = "Aguardando...";
+                    document.getElementById("buttonConferirQ1b").disabled = true;
+                    document.getElementById("buttonConferirQ1b").style.backgroundColor = "lightgray";
+                    RemoveBalancarGlobo();
 
                 }
 
@@ -1805,6 +1828,8 @@
                 document.getElementById("q1b").style.backgroundColor = cor[1];
                 document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
                 Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
+
             }
 
 
@@ -1832,6 +1857,7 @@
 
             else {
                 document.getElementById(idResp).innerHTML = "Por ter acertado todas as questões " + nomeEstudante + ", ganhou mais um globinho, agora já possui " + nota + ".";
+               
                 document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
 
             }
@@ -1855,7 +1881,7 @@
             if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
             {
                 proximo.classList.add('mostrar'); // Mostrar o seguinte
-                //addProgressBar();
+                addProgressBar();
                 //numButton();
                 ApagaButton();
                 RemoveBalancarGlobo();
@@ -1877,6 +1903,13 @@
             document.getElementById("imagem50").classList.remove("balancar");
             document.getElementById("notaFixa").classList.remove("w3-animate-zoom");
         }
+
+
+       
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        // }
 
 
 
