@@ -660,27 +660,32 @@
                 da Terra, solidificação dos minerais e formação das primeiras rochas oriundas do interior da Terra
                 (magma). </p>
 
-            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> <br><br></div>
+            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
 
 
-            <span id="resp1a"></span>
-            <br><br>
+            <p id="resp1a"></p>
+        
+
+            <div class="w3-padding-24">
 
             <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
                 onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
+            </div>
 
 
 
 
 
             <div class="area">
-                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
-                    width="64" height="64">
+                <p>
+                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
+                        width="64" height="64">
+                </p>
             </div>
 
 
 
-            <p class="paragrafo w3-section">Trata-se de uma Era geológica mais recente. É subdividida em Terciário
+            <p>Trata-se de uma Era geológica mais recente. É subdividida em Terciário
                 (cerca de 65 milhões de anos) quando apareceram os Dobramentos modernos (Andes, Alpes, Himalaia).
                 Desenvolvimento dos mamíferos e vegetação com flores. Foi no Quaternário (cerca de 1,6 milhões de anos).
                 Aparecimento dos primeiros hominídeos.</p>
@@ -688,13 +693,14 @@
 
 
             <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
-            <br><br>
 
-            <span id="resp1b"></span>
-            <br><br>
 
+            <p id="resp1b"></p>
+      
+            <div class="w3-padding-24">
             <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
                 onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
+            </div>
 
 
 
@@ -711,21 +717,21 @@
 
             <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
 
-            <br><br>
+       
 
-            <span id="resp1c"></span>
-            <br><br>
+            <p id="resp1c"></p>
+        
 
             <input class="btnShow" id="buttonConferirQ1c" type="button" value="Conferir"
                 onclick="PerguntasAbertas(3,'resp1c','buttonConferirQ1c','globinho1c')">
 
 
 
-
+                <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1c" style="display:none" alt="globinho10"
                     width="64" height="64"> </p>
 
-
+                </div>
 
 
         </form>
@@ -1577,6 +1583,7 @@
             if (q1a.match("azoica") && qnum == 1) {
 
                 document.getElementById("q1a").style.backgroundColor = cor[0];
+                document.getElementById("q1a").disabled = true;
 
                 EscondeButton(buttonConferir);
                 Play("../audio1.mp3");
@@ -1594,6 +1601,7 @@
             if (q1b.match("cenozoica") && qnum == 2) {
 
                 document.getElementById("q1b").style.backgroundColor = cor[0];
+                document.getElementById("q1b").disabled = true;
 
                 EscondeButton(buttonConferir);
                 Play("../audio1.mp3");
@@ -1614,6 +1622,7 @@
 
                 if (q1a.match("azoica") && q1b.match("cenozoica")) {
                     document.getElementById("q1c").style.backgroundColor = cor[0];
+                    document.getElementById("q1c").disabled = true;
 
                     EscondeButton(buttonConferir);
                     Play("../audio1.mp3");
@@ -1625,7 +1634,8 @@
                 }
                 else {
                     document.getElementById("q1c").style.backgroundColor = cor[1];
-                    document.getElementById(idResp).innerHTML = "Quer pular sem responder todas as questões? Volte e preencha as outras espertinho(a). Depois retorne aqui";
+                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui.";
+                    document.getElementById("q1c").disabled = true;
                     Play2("../audio2.mp3");
 
                 }
