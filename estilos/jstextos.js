@@ -148,12 +148,12 @@ function RetirarPontos(idFrase2, idGlobinho2, desativar2, perdeNota) {
 
     if (nota <= 0) {
         nota = 0;
-        frase2.innerHTML = nomeEstudante + ", você perdeu todos os globinhos e agora está com " + nota + "." + " Mantenha o foco.";
+        frase2.innerHTML = nomeEstudante + ", você deixou de ganhar os globinhos e agora está com " + nota + "." + " Mantenha o foco.";
         globo2.style.display = "block";
         Play2("../audio2.mp3");
     }
     else {
-        frase2.innerHTML = nomeEstudante + ", você perdeu um ou parte de um globinho " + " Mantenha o foco.";
+        frase2.innerHTML = nomeEstudante + ", você deixou de ganhar um ou parte de um globinho. " + " Mantenha o foco.";
         globo2.style.display = "block";
         Play2("../audio2.mp3");
 
