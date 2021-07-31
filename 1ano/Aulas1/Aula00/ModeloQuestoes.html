@@ -5,15 +5,13 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Modelo questões</title>
+	<title>Modelo</title>
 
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js"></script>
+	<script src="../../../estilos/javascript.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -65,25 +63,24 @@
 
 <body onload="mudaQuest()">
 
-	<!-- Navigation (Stays on Top) -->
+
 	<div class="w3-top w3-bar w3-black larguraBar">
 
 
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		<a href="../../../Duvid2Ano.html" class=" w3-button">2º ano</a>
 
 
 
 
 	</div>
 
-
 	<h1 class="h1"> Modelo questões aula 01 - Nome da aula </h1>
 
 	<div class="w3-card">
-		<p ><strong>Conteúdo</strong>: Colocar o conteúdo aqui </p>
+		<p ><strong>Conteúdo:</strong> Colocar o conteúdo aqui </p>
 
 
-		<p ><strong>Objetivo</strong>: Colocar o objetivo aqui </p>
+		<p ><strong>Objetivo:</strong>: Colocar o objetivo aqui </p>
 	</div>
 
 
@@ -108,7 +105,7 @@
 
 
 			<!-- Copiar essa linha e colar em outra questão, alterando o nome da foto.				 -->
-			<div class="w3-center"><img src="s21q1.png" alt="s21q1" class="w3-mobile"></div>
+			<div class="w3-center"><img src="s24q1.png" alt="s24q1" class="w3-mobile"></div>
 
 
 
@@ -654,8 +651,6 @@
 
 
 
-
-
 	</form>
 
 
@@ -676,15 +671,9 @@
 	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
-	
-
-
-
 	<script>
 
 
-
-		// Altere a alternativa correta substituindo em cada questão abaixo. Todas estão com resposta letra a
 		function checar() {
 
 
@@ -719,58 +708,53 @@
 			}
 
 
-			if (pq2 == "b") {
+			if (pq2 == "e") {
 				corretas++;
-				document.getElementById("q2b").style.backgroundColor = cor[0];
+				document.getElementById("q2e").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q2a").style.backgroundColor = cor[1];
 				document.getElementById("q2c").style.backgroundColor = cor[1];
 				document.getElementById("q2d").style.backgroundColor = cor[1];
-				document.getElementById("q2e").style.backgroundColor = cor[1];
+				document.getElementById("q2b").style.backgroundColor = cor[1];
 
-				document.getElementById("q2b").style.backgroundColor = cor[0];
+				document.getElementById("q2e").style.backgroundColor = cor[0];
 			}
-
-
-			if (pq3 == "c") {
+			if (pq3 == "a") {
 				corretas++;
-				document.getElementById("q3c").style.backgroundColor = cor[0];
+				document.getElementById("q3a").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q3b").style.backgroundColor = cor[1];
-				document.getElementById("q3a").style.backgroundColor = cor[1];
+				document.getElementById("q3c").style.backgroundColor = cor[1];
 				document.getElementById("q3d").style.backgroundColor = cor[1];
 				document.getElementById("q3e").style.backgroundColor = cor[1];
 
-				document.getElementById("q3c").style.backgroundColor = cor[0];
-			}
+				document.getElementById("q3a").style.backgroundColor = cor[0];
 
-			
-			if (pq4 == "d") {
+			}
+			if (pq4 == "a") {
 				corretas++;
-				document.getElementById("q4d").style.backgroundColor = cor[0];
+				document.getElementById("q4a").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q4b").style.backgroundColor = cor[1];
 				document.getElementById("q4c").style.backgroundColor = cor[1];
-				document.getElementById("q4a").style.backgroundColor = cor[1];
+				document.getElementById("q4d").style.backgroundColor = cor[1];
 				document.getElementById("q4e").style.backgroundColor = cor[1];
 
-				document.getElementById("q4d").style.backgroundColor = cor[0];
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+
 			}
-
-
-			if (pq5 == "e") {
+			if (pq5 == "d") {
 				corretas++;
-				document.getElementById("q5e").style.backgroundColor = cor[0];
+				document.getElementById("q5d").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q5b").style.backgroundColor = cor[1];
 				document.getElementById("q5c").style.backgroundColor = cor[1];
-				document.getElementById("q5d").style.backgroundColor = cor[1];
 				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5e").style.backgroundColor = cor[1];
 
-				document.getElementById("q5e").style.backgroundColor = cor[0];
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+
 			}
-
-
 			if (pq6 == "a") {
 				corretas++;
 				document.getElementById("q6a").style.backgroundColor = cor[0];
@@ -781,9 +765,8 @@
 				document.getElementById("q6e").style.backgroundColor = cor[1];
 
 				document.getElementById("q6a").style.backgroundColor = cor[0];
+
 			}
-
-
 			if (pq7 == "a") {
 				corretas++;
 				document.getElementById("q7a").style.backgroundColor = cor[0];
@@ -794,36 +777,32 @@
 				document.getElementById("q7e").style.backgroundColor = cor[1];
 
 				document.getElementById("q7a").style.backgroundColor = cor[0];
+
 			}
-
-
-			if (pq8 == "a") {
+			if (pq8 == "b") {
 				corretas++;
-				document.getElementById("q8a").style.backgroundColor = cor[0];
+				document.getElementById("q8b").style.backgroundColor = cor[0];
 			} else {
-				document.getElementById("q8b").style.backgroundColor = cor[1];
+				document.getElementById("q8a").style.backgroundColor = cor[1];
 				document.getElementById("q8c").style.backgroundColor = cor[1];
 				document.getElementById("q8d").style.backgroundColor = cor[1];
 				document.getElementById("q8e").style.backgroundColor = cor[1];
 
-				document.getElementById("q8a").style.backgroundColor = cor[0];
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
 			}
-
-
-			if (pq9 == "a") {
+			if (pq9 == "e") {
 				corretas++;
-				document.getElementById("q9a").style.backgroundColor = cor[0];
+				document.getElementById("q9e").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q9b").style.backgroundColor = cor[1];
 				document.getElementById("q9c").style.backgroundColor = cor[1];
 				document.getElementById("q9d").style.backgroundColor = cor[1];
-				document.getElementById("q9e").style.backgroundColor = cor[1];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
 
-				document.getElementById("q9a").style.backgroundColor = cor[0];
+				document.getElementById("q9e").style.backgroundColor = cor[0];
 
 			}
-
-
 			if (pq10 == "a") {
 				corretas++;
 				document.getElementById("q10a").style.backgroundColor = cor[0];
@@ -838,9 +817,13 @@
 			}
 
 
+
 			corLenta();
 			classEscurecer();
 			comentarios();
+
+
+
 
 			var incorrretas = 10 - corretas;
 			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
@@ -874,9 +857,8 @@
 
 
 
+
 		}
-
-
 	</script>
 
 
