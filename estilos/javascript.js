@@ -11,13 +11,15 @@ var aleatorio = Math.round(Math.random() * 5);
 function mudaQuest() {
 
     var t = document.querySelectorAll(".h1, .p2");
-
+   
 
     for (var i = 0; i < t.length; i++) {
 
         t[i].style.fontFamily = fontes[aleatorio];
 
     }
+
+   
 
 }
 
