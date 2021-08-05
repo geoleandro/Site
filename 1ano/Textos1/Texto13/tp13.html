@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js"></script>
+
+    <title>Text13</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <style>
+        .topico {
+            display: block;
+            margin-top: 60px;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .larguraBar {
+            max-width: 680px;
+        }
+
+        .postit-tp13 {
+            background: #e6ff5b;
+
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp13>a {
+            text-decoration: none;
+        }
+
+        .postit-tp13>a:hover {
+            text-decoration: underline;
+        }
+
+        .zoom {
+            animation: animatezoom 1s
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+
+        h1 {
+            margin-top: 0px;
+
+
+        }
+
+        h2 {
+            margin-top: 0px;
+
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: pixel;
+            padding: 10px;
+        }
+
+        #divFinal {
+            display: none;
+        }
+
+
+        .margemAcima {
+            margin-top: 50px;
+        }
+
+        .margemAbaixo {
+            margin-bottom: 70px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body onload="paragrafotexto()">
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
+
+                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></a>
+
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 13 – Ciclo das Rochas </h1>
+
+
+        <p><strong> Conteúdo:</strong> Mineral; tipos de rochas: magmáticas: intrusiva, extrusiva, basáltica, granítica;
+            metamórficas, sedimentares; fóssil; litificação.
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Diferenciar os tipos de rochas com base em seu processo de formação. Classificar
+            tipos e texturas das rochas ígneas. Compreender o processo de formação das rochas sedimentares. Analisar as
+            rochas metamórficas e seu processo de formação. Entender o ciclo das rochas. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <span id="resp0"></span>
+
+        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada,conhecemos os processos externos modeladores do relevo, o
+            intemperismo físico e químico, além do processo de erosão pela água, vento, geleiras, dentre outros. </p>
+
+        <p> Nesta aula, vamos entender o ciclo das rochas, o processo pelo qual as rochas são continuamente
+            transformadas
+            dando origem a diversos tipos e usos para o homem.</p>
+
+        <p> Ao final, você será capaz de reconhecer, comparar e contrastar diferentes tipos de rochas, além de explicar
+            como
+            os minerais combinam-se para formar a maior parte da superfície terrestre juntamente com os agentes internos
+            e
+            externos do relevo. </p>
+
+        <p> O estudo das rochas e dos minerais, do qual são constituídas, envolvem um conhecimento muito amplo como
+            química,
+            física, geologia, geografia, dentre outros. A Ciência é única, embora dividida para facilitar o entendimento
+            da
+            complexidade do mundo. Vamos começar com os minerais e suas características. </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2>A história humana e os minerais </h2>
+
+
+
+
+        <p> A humanidade é dependente dos minerais e de suas propriedades desde antes da história escrita. Portanto, não
+            é surpresa que alguns nomes de minerais sejam baseados em línguas antigas.</p>
+
+        <p>Por milênios as pessoas necessitaram de um meio para produzir faíscas para iniciar um fogo. Os antigos sabiam
+            que uma forma de produzir faíscas era bater uma rocha dura, como o quartzo, que chamamos de sílex córneo,
+            com um mineral muito menos comum, da cor do ouro. </p>
+
+        <p>Os gregos deram o nome de “fogo” ao mineral dourado. Em grego, “fogo” é “pyr”. Esse mineral dourado é
+            conhecido como<mark>“pirita” </mark> por causa de sua
+            antiga conexão com a produção do fogo. </p>
+
+
+
+        <div class="area"><img id="imagem1" src="tp13f1.png" alt="tp13f1" class="w3-mobile"></div>
+
+
+        <span class="citacao"> Sílex córneo constituída de quartzo. Minério Pirita. Fonte: Pixabay.com.
+        </span>
+
+
+
+        <p> Eis uma ideia prática: se você estiver perdido em uma floresta, sem uma maneira de se aquecer, caso encontre
+            tanto pirita quanto um quartzo, você pode salvar sua vida. Friccionando os dois materiais, você gerará
+            faíscas que (se tiver sorte) poderá usar para começar a queimar madeira ou capim seco. E você se lembrará
+            desse cenário todo, simplesmente, recordando a palavra grega para fogo e sua conexão com o mineral pirita.
+        </p>
+
+
+        <p> O nome <mark>hematita</mark> e suas riscas vermelho-cereja são pistas para o que os gregos pensavam desse
+            óxido de ferro. </p>
+
+
+
+
+
+        <div class="area"><img id="imagem2" src="tp13f2.png" alt="tp13f2" class="w3-mobile"></div>
+
+
+        <span class="citacao"> Hematita é um óxido de ferro de ocorrência frequente em solos e rochas. Fonte:
+            geology.com. </span>
+
+
+        <p> Em razão das riscas da hematita serem vermelhas como sangue, a conexão entre essas duas substâncias foi
+            feita pelos gregos. Você ainda pode ver essa conexão em palavras como hematologista (um médico que se
+            especializa em estudar o sangue). Algumas vezes, os gregos encontravam à hematita em estruturas longas e
+            finas, descendo para dentro da Terra. Eles chamaram essas estruturas cheias de minerais, associadas com a
+            cor vermelha, de “veios”. Esses “veios” na Terra, pensaram os gregos, eram como as veias longas e finas de
+            seus braços que contém sangue vermelho e corre através de seus músculos. </p>
+
+        <p>Embora possa parecer estranho para nós, fazer uma analogia (semelhança) hoje entre o corpo humano e a Terra,
+            no mundo antigo a Terra era vista de uma forma muito mais fluida. Partes da Terra eram consideradas vivas,
+            ou relacionadas às criaturas vivas ou deuses. Assim, a diferença entre o corpo humano e a Terra era apenas
+            uma questão de grau. </p>
+
+        <p>Muitas vezes, pelos nomes dos minerais, você pode deduzir há quanto tempo as pessoas já haviam conhecido e
+            identificado alguns minérios. Obviamente, a pirita e a hematita eram conhecidas há muito tempo. E porque o
+            sal tem feito parte da cozinha dos homens, desde tempos imemoriais, não se surpreende que o mineral halita
+            tenha recebido seu nome na antiga Grécia. </p>
+
+        <div class="area"><img id="imagem3" src="tp13f3.png" alt="tp13f3" class="w3-mobile"></div>
+
+
+        <span class="citacao"> Halita, composto químico NaCl, nome do sal, produto vital para a saúde humana e bem
+            econômico com demanda mundial.
+            Fonte: Wikipedia. </span>
+
+
+        <p>O mineral rubi recebeu seu nome da palavra latina para o vermelho. Talvez mais antigo ainda em nosso
+            conhecimento seja a safira, que recebeu seu nome do hebraico antigo “sappir”. </p>
+
+
+        <p>Alguns minerais menores e incomuns foram descobertos mais recentemente. Normalmente, esses minerais são mais
+            conhecidos pelos geólogos que se especializam no estudo da mineralogia. Esses “novos” minerais recebem,
+            frequentemente, o nome dos cientistas que os descobriram. Por exemplo, um sobrenome com uma sonoridade
+            moderna seguido do sufixo “ita” denota um mineral que só recentemente tornou-se conhecido da humanidade. Mas
+            muitos nomes de minerais, e termos básicos de mineração como veio, justificadamente, nos lembra da herança
+            cultural que temos do mundo antigo. <span class="citacao">(Wicander, 2009, adaptado). </span> </p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2>O que é um mineral? </h2>
+
+
+
+
+        <p>Vimos nas aulas passadas os grandes processos da crosta terrestre como o vulcanismo e o tectonismo e a
+            modelagem do relevo pelos agentes externos. </p>
+
+        <p>É necessário, entretanto, verificar como as rochas são formadas durante esses grandes fenômenos que ocorrem
+            no Planeta Terra. </p>
+
+        <p> O conhecimento das rochas é de suma importância para o homem, tanto economicamente quanto para as
+            construções humanas ao longo da história.</p>
+
+
+        <p>A <strong>mineralogia</strong> estuda a ocorrência, estrutura, propriedades, tipos de ocorrências dos
+            minerais na Terra. Há muito conhecimento sobre química e a estrutura atômica, que são aprofundados nessas
+            disciplinas na escola. Essas ciências nos oferecem, portanto, bastante conhecimento sobre a formação das
+            rochas. </p>
+
+
+        <p>Os cientistas definem o <strong>mineral</strong> como um sólido inorgânico, de ocorrência natural, com
+            estruturas cristalinas específicas e composições químicas fixas ou variáveis. Um mineral é constituído de
+            átomos, que são pequenas unidades de matéria que se combinam por meio de reações químicas. </p>
+
+        <p>Como os átomos se combinam para formar minerais? </p>
+
+        <p> De modo simplificado, os átomos dos elementos quando estão mergulhados no magma se encontram separados um do
+            outro. Quando o magma chega à superfície através da lava, os átomos se agrupam devido a solidificação e se
+            cristalizam com uma estrutura que se repete.</p>
+        <div class="area"><img id="imagem3a" src="tp13f3a.png" alt="tp13f3a" class="w3-mobile"></div>
+
+
+        <span class="citacao"> Elementos químicos e aglomerações. Fonte: Fredette (2007). </span>
+
+
+        <p> Essa combinação, portanto, dos elementos químicos é o ponto de partida para a formação dos minerais.
+            Primeiro há uma estrutura molecular base, uma malha elementar que se aglomera a outras malhas, formando o
+            cristal. Nesse caso, o próprio peso da rocha fez com que os diversos cristais se associassem produzindo a
+            rocha formado de pequenos sedimentos.</p>
+
+
+        <p>Mas em outras rochas, os minerais podem aparecer após sua a lava se resfriar, como no caso abaixo, em que os
+            mineradores encontram o mineral ametista encrustado em uma rocha que surgiu das profundezas da crosta e se
+            resfriou na superfície. </p>
+
+
+        <div class="area"><img id="imagem4" src="tp13f4.png" alt="tp13f4" class="w3-mobile"></div>
+
+
+        <span class="citacao"> Fonte: Mineradores encontraram cristal de ametista raro em forma de coração.
+            https://www.sonoticiaboa.com.br
+        </span>
+
+
+
+
+        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2>O que é uma Rocha? </h2>
+
+
+
+        <p> Já uma rocha é formada por um conjunto de minerais agregados e ocorrência natural. Quando a lava se resfria,
+            por exemplo, e se torna sólida, é possível identificar tipos de minerais em sua composição, como é o caso da
+            rocha granito.</p>
+
+        <div class="area"><img id="imagem5" src="tp13f5.png" alt="tp13f5" class="w3-mobile"></div>
+
+        <span class="citacao"> Fonte: Organizado pelo autor. </span>
+
+        <p>O granito possui minerais grossos que podem ser vistos a olho nu, como o quartzo, o feldspato, biotita, além
+            de outros dependendo de seu processo de formação. É possível ver esse tipo de rocha na mesa de jantar de
+            muitas casas ou na pia da cozinha. </p>
+
+        <p>Outros tipos de rochas não surgem das profundezas do magma. Após resfriadas elas são atingidas pelos
+            processos de intemperismo e erosão, (visto na aula sobre os agentes externos do relevo), e são formadas pela
+            acumulação de sedimentos, como a rocha arenito. Essas rochas, geralmente, são marcadas pela estratificação,
+            isto é, diferentes camadas que compõem essas rochas revelando idades diferentes de formação. </p>
+
+
+        <p> Desses dois tipos de rochas, as surgidas do magma e as surgidas a partir de sedimentos, existe um terceiro
+            tipo resultado do aumento de temperatura e pressão. Elas mudam de forma e, por isso, são chamadas de
+            metamórficas. </p>
+
+
+        <p>A partir disso, apresentam nova composição e características, por exemplo, a transformação do calcário (rocha
+            sedimentar) em mármore. Esse processo ocorre, em geral, junto as placas tectônicas e em movimentos
+            convergentes das placas onde se desenvolvem as grandes cadeias de montanhas, como os Andes e os Himalaias.
+        </p>
+
+
+        <p>Qual a importância desse tipo de estudo para o conhecimento do Planeta? </p>
+
+        <p> Entender o que uma rocha é e suas características nos permite descobrir sua origem. Assim podemos conhecer
+            melhor o Planeta em que vivemos e encontrar distintos minerais e combustíveis, além de evitar problemas
+            ambientais. Por exemplo, o petróleo, o gás e o carvão mineral são rochas sedimentares e de grande valor
+            econômico para a sociedade. </p>
+
+        <p>O conhecimento dos tipos de rochas nos permite avaliar novas reservas minerais como a de ferro, alumínio ou
+            ouro e efetivar planos para reduzir a degradação ambiental, a erosão e a poluição. </p>
+
+
+        <p> Portanto, vamos conhecer os principais tipos de rochas: a magmática, a sedimentar e a metamórfica, suas
+            características e sua importância para o Planeta e para a sociedade. Veja os grandes grupos de rochas
+            existentes no Planeta:</p>
+
+        <div class="area"><img id="imagem6" src="tp13f6.png" alt="tp13f6" class="w3-mobile"></div>
+
+        <span class="citacao"> Fonte: Press (2006, p. 105). </span>
+
+
+
+
+        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2>Rochas magmáticas ou ígneas </h2>
+
+
+
+
+        <p>As rochas magmáticas são também chamadas de ígneas (do latim “ignis” que significa “fogo”) e são formadas
+            através do resfriamento do magma tanto no interior da crosta como quando o magma extravasa para à superfície
+            através de lavas. </p>
+
+        <p>Sabemos que o magma consiste em rocha derretida, gases dissolvidos e cristais de diversos minerais nas
+            profundidades da crosta terrestre e próxima ao manto superior, onde as temperaturas atingem cerca de 700ºC,
+            suficiente para fundir as rochas. </p>
+
+        <p> Há momentos em que o magma se resfria antes de sair de um vulcão no interior da própria crosta. Nesse
+            exemplo, os minerais como quartzo, mica ou feldspato encontram-se separados na rocha derretida e à medida em
+            que a temperatura diminui, os cristais tendem a se agrupar e a crescer alguns milímetros. A rocha nesse caso
+            tem uma granulação grossa, isto é, podemos ver a olho nu os minerais que as formam.</p>
+
+
+        <p> Já quando o magma extravasa para a superfície através de lava, ele resfria rapidamente e não resta tempo
+            suficiente para os cristais dessas rochas crescerem. Essas são rochas possuem, portanto, granulação fina,
+            porque formaram-se fora da crosta terrestre. As rochas formadas dentro da crosta são chamadas de intrusivas
+            e as rochas formadas no exterior, são denominadas de extrusivas.</p>
+
+
+        <h3>Rochas ígneas intrusivas </h3>
+
+
+        <p>As rochas intrusivas resultam do resfriamento do magma em partes profundas da crosta terrestre. Também
+            chamadas de plutônicas ou abissais. Ex. Granito, usado para calçamento, pedras ornamentais, brita para
+            concreto, dentre inúmeros outros usos. Veja: </p>
+
+        <div class="area"><img id="imagem7" src="tp13f7.png" alt="tp13f7" class="w3-mobile"></div>
+
+
+        <span class="citacao">Formação de rochas ígneas extrusivas e intrusivas. Fonte: Press (2006, p. 106). </span>
+
+        <p> Na figura acima, o granito foi resfriado dentro da crosta. É possível visualizar seus cristais porque são
+            grandes. Justamente a <strong>composição mineral</strong>, o <strong>tamanho dos cristais</strong> e a
+            <strong>textura</strong> são utilizados para classificar os diferentes tipos de rocha. Vejamos o exemplo do
+            granito.</p>
+
+
+        <div class="area"><img id="imagem8" src="tp13f8.png" alt="tp13f8" class="w3-mobile"></div>
+
+
+        <span class="citacao"> Fonte: geology.com. Wikipédia, organizado pelo autor. </span>
+
+        <p>As diferenças entre a composição do magma afetam o modo como as rochas são cristalizadas. As rochas
+            graníticas possuem uma colorização clara e contém um alto taxa de sílica em sua composição, além de minerais
+            como o quartzo, feldspato, mica, biotita, dentre outras variações. </p>
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste sua observação</p>
+
+        <h3>Na foto acima é possível onde está destacado o Gabro, o Diorito e o Granito, podemos observar que tipo de
+            padrão?</h3>
+
+        <button class="desativar2 area p4"
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            a) as rochas são duras e resistentes;
+        </button>
+
+
+        <button class="desativar2 area p4"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'isso ai, a textura é uma das formas de classificação das rochas em geral','1'); this.style.backgroundColor='lightgreen'">
+
+            b) as rochas possuem cristais de granulação grossa;
+        </button>
+
+
+        <button class="desativar2 area p4"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            c) não é possível visualizar os cristais nas rochas.
+        </button>
+
+
+
+
+        <span id="resp2"></span>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h3>Rochas ígneas extrusivas </h3>
+
+
+
+
+        <p>Por outro lado, há rochas que se formam através do rápido resfriamento do magma quando este chega à superfície por meio de erupções vulcânicas. Um exemplo clássico é a rocha basalto, muito utilizada como pedra britada para uso asfáltico, para concretos e lastros de ferrovias. </p>
+
+        <div class="area"><img id="imagem9" src="tp13f9.png" alt="tp13f9" class="w3-mobile"></div>
+
+
+        <span class="citacao" ></span>Fonte: geology.com. Wikipédia. </span>
+
+        <p> As rochas Andesito, Riolito e o Basalto, por exemplo, possui uma textura com granulação fina, o que dificulta a visualização de seus cristais. Às vezes, o resfriamento é tão rápido que os cristais nem se quer são formados, como no caso da rocha de vidro vulcânica Obsidiana.</p>
+
+        <div class="area"><img id="imagem10" src="tp13f10.png" alt="tp13f10" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Mineral Obsidiana. Fonte: Wikipedia. </span>
+
+        <p>A rocha Obsidiana possui um aspecto vítreo devido sua composição de mais de 70% de sílica, o que devido a sua viscosidade impede a formação de cristais. Nesse caso, a Obsidiana pode ser considerada um mineraloide, uma vez que não possui uma estrutura cristalina, típica dos minerais. </p>
+
+
+        <p>Existem também rochas intermediárias chamadas de porfiríticas, que possuem cristais grandes e pequenos na mesma formação rochosa. Isso se deve ao resfriamento do magma no início de forma lenta, porém devido a movimentação da crosta ou uma erupção repentina, o magma remanescente se resfria rapidamente e forma cristais menores. </p>
+
+
+        <p>Como o magma contém gases dissolvidos e que escapam quando a pressão diminui, pode ocorrer buracos nas rochas tal como uma esponja, conhecidas como <mark>pedra-pomes</mark>, muito utilizada na indústria de cosméticos. Aliás, pedra é um nome utilizada em geral para se referir a um fragmento de rocha. </p>
+
+        <div class="area"><img id="imagem11" src="tp13f11.png" alt="tp13f11" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao">Pedra-Pomes. Fonte: Wikipedia. </span>
+
+
+        <p>O estudo das rochas ígneas, portanto, tem muita relação com as possibilidades de exploração recursos minerais. </p>
+
+
+      
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h3>Rochas ígneas como recurso ao ser humano </h3>
+
+
+
+
+        <p> Além da fascinação que as rochas provocam, tanto pela sua força, durabilidade e beleza, ou pelo seu uso na construção civil, fabricação de joias, ornamentos como calçadas, soleiras de portas, tampo de mesas, dentre outras utilidades, o estudo das rochas ígneas se destacam pelo seu potencial econômico.</p>
+
+        <p> Há minerais formados sob determinadas circunstâncias e utilizados para render lucro, o qual chamamos de minérios. Seus cristais frequentemente ocorrem nas intrusões das rochas ígneas.</p>
+
+        <p>Durante a cristalização dos minerais no magma pode ocorrer a infiltração nas cavidades das rochas de minerais como ouro, prata, diamantes, chumbo, lítio, nióbio, dentre outros. </p>
+
+        <div class="area"><img id="imagem12" src="tp13f12.png" alt="tp13f12" class="w3-mobile" >
+        </div>
+    
+    
+        <span class="citacao"> Ouro e Quartzo são extraídos das minas juntos. Os dois são posteriormente separados. Fonte: Borrero (2008, p. 121).
+
+        </span>
+
+
+        <p> Na região da <mark>África do Sul</mark>, Kimberly, foi identificado pela primeira vez rochas com uma variedade de diamantes. Eles são formados no interior da crosta e no manto em uma profundidade de aproximadamente de 150 a 300 km, sob alta pressão.</p>
+
+        <div class="area"><img id="imagem13" src="tp13f13.png" alt="tp13f13" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Fonte: Borrero (2008, p. 122). </span>
+
+
+        <p>A maioria das minas de diamante estão localizadas na África do Sul, no parque de Richtersveld, na cidade do Cabo, com uma paisagem desértica, com planícies arenosas e montanhas escarpadas. </p>
+
+
+      
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    
+	<div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>Você deve estar se perguntando como o granito surgiu na superfície se ele foi formado no interior da crosta terrestre?</h3>
+
+
+        
+		<button class="desativar3 area p4"
+        onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+        
+        a) pela ação do intemperismo físico e químico.
+    
+    </button>
+
+
+		<button class="desativar3 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
+			
+            b) pela ação do vulcanismo;
+		</button>
+
+
+
+		<button class="desativar3 area p4"
+			onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
+			
+            c) pelas correntes de convecção.
+		
+		</button>
+
+
+
+
+		<span id="resp3"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+    <div class="topico">
+
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h3>A classificação das rochas ígneas ou metamórficas estão baseadas em três principais características, são elas:</h3>
+
+		<button class="desativar4 area p4"
+			onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+			
+            a) dureza, granulação grossa e a textura.
+		
+		</button>
+
+        
+		<button class="desativar4 area p4"
+        onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+        
+        b) tio de magma, tipo de lava, e os tipos de sedimentos.
+    
+    </button>
+	
+
+		<button class="desativar4 area p4"
+			onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+			
+            c) composição mineral, tamanho dos cristais e a textura.
+		
+		</button>
+	
+
+	
+
+
+
+		<span id="resp4"></span>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+    
+
+    <div class="topico">
+
+        <h2> Rochas sedimentares</h2>
+
+
+
+
+        <p>Muitas rochas não são formadas diretamente pelo resfriamento do magma ou expelidas por erupções vulcânicas. Veja a imagem abaixo: </p>
+
+        <div class="area"><img id="imagem14" src="tp13f14.png" alt="tp13f14" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Parque Geológico do Varvito. Fonte: 
+            https://itu.sp.gov.br/
+            meio-ambiente/parque-geologico-do-varvito/
+             </span>
+
+        <p>O que mais chama à atenção nesta imagem de uma rocha no Parque do Varvito, em Itu, Estado de São Paulo? </p>
+
+        <p>A formação de camadas umas sobre as outras é um fato importante e envolve tempo e diferentes tipos de sedimentos. </p>
+
+
+        <p>Nesta rocha, especificamente, as camadas foram formadas pela deposição de sedimentos das geleiras cerca de 360 e 270 milhões de anos, no supercontinente Gondwana. </p>
+
+
+        <p> As rochas sedimentares são as mais comuns em muitas regiões do Planeta e formam muitas paisagens com características próprias. </p>
+
+        <div class="area"><img id="imagem15" src="tp13f15.png" alt="tp13f15" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Os sedimentos e as rochas sedimentares cobrem a maior parte da superfície dos continentes e do fundo dos oceanos. Fonte: Press (2006, p. 108). </span>
+
+
+        <p>As rochas magmáticas e metamórficas formam mais de 70% da crosta terrestre. Entretanto, a maior parte dessas rochas estão soterradas na crosta. As rochas sedimentares, por sua vez, cobrem as outras rochas por serem resultado do intemperismo. É como se as rochas sedimentares fossem uma capa para um sofá, ou seja, embora cubra toda a superfície, não constitui o seu volume total. </p>
+
+        <p> As rochas sedimentares são formadas a partir do <strong>intemperismo</strong>, isto é, pela desagregação química e física de sedimentos como areia, argila, seixos (cascalho) e, posteriormente, transportados pela <strong>erosão</strong> e, finalmente, depositados e convertidos em rocha por um processo chamado de <strong>litificação</strong>.</p>
+
+        <div class="area"><img id="imagem16" src="tp13f16.png" alt="tp13f16" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao">Fonte: Press (2006, p. 109). </span>
+
+        <p>Vejamos como o intemperismo atua para formar as rochas sedimentares. Seguindo a figura anterior, temos que: </p>
+
+
+        <p> 1 – As partículas de rocha são geradas pelo intemperismo.</p>
+
+
+        <p>2 – transportadas morro abaixo pela erosão. </p>
+
+        <p>3 – e depositadas como camadas de sedimento no solo ou água. </p>
+
+
+
+        <p>4 – onde elas formam camadas paralelas ou estratificação. </p>
+
+        <p>5 – Os sedimentos soterrados litificam-se pela compactação e cimentação. </p>
+
+        <p> 6 – Os sedimentos clásticos são compostos por partículas depositadas de areia, silte e cascalho.</p>
+
+
+        <p>7 – Os sedimentos químicos e bioquímicos são precipitados no mar ou compostos por recife de corais e conchas. </p>
+
+
+        <p>Os sedimentos, como vimos, surgem do intemperismo químico e físico, que desintegram as rochas. Juntamente com esse processo cabe à erosão transportá-los para outros locais.</p>
+
+
+        <p>Os sedimentos “quebrados” como grão de areia, partículas de granito são chamados de <strong>clásticos</strong>. Outros sedimentos são derivados de intemperismo químico e são novas substâncias como a calcita na formação de cavernas. E temos rochas de origem orgânica formado a partir de restos de animais e vegetais (será visto na aula sobre recursos minerais com mais detalhes) Após isso temos a litificação. </p>
+
+        <h3> Litificação</h3>
+
+        <p>É no processo de litificação que a formação da rocha sedimentar vai realmente se completar. </p>
+
+        <div class="area"><img id="imagem17" src="tp13f17.png" alt="tp13f17" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Fonte: Pinterest. </span>
+
+
+        <p>Na <strong>compactação</strong>, os grãos são unidos pelo peso das próprias camadas de sedimentos, geralmente, “apertando” a rocha e reduzindo seu volume de água, como no exemplo da argila. </p>
+
+        <div class="area"><img id="imagem18" src="tp13f18.png" alt="8" class="w3-mobile"></div>
+
+
+	<span class="citacao">Fonte: Borrero (2008, p. 137). </span>
+
+
+        <p> Já a areia não compacta da mesma forma do que a argila. Os grãos de quartzo não se deformam quando são enterrados e possuem espaços vazios em sua estrutura. O processo que une os grãos de areia e forma o arenito, por exemplo, é a <strong>cimentação</strong>. Isso ocorre quando minerais dissolvidos pela água corrente preenchem os espaços desses grãos e atuam como um cimento. É comum ver pedaços de conchas solidificadas por litificação em rochas calcárias, </p>
+
+        <p>Um dos aspectos mais importantes das rochas sedimentares é revelar as evidências do passado através de fósseis. </p>
+
+        
+        <p> Os fósseis são, grosso modo, restos de organismos animais ou vegetais que foram preservados ao longo do tempo. As condições mais favoráveis para a formação de restos desses organismos vivos ocorrem junto às praias ou em mares pouco profundos. Quando os rios lançam neles as suas águas lodosas ou as tempestades lhes revolvem o lodo do fundo, ficam suspensas na água muitas partículas minerais. Tais partículas depositam-se gradualmente, recobrindo animais e vegetais vivos ou mortos. Depois, novas camadas de lodo e outros materiais sedimentares vão-se depositando sobre as primeiras, devido a posteriores tempestades e cheias. Com o tempo e as pressões que as camadas superiores vão exercendo, as camadas inferiores de sedimento convertem-se em rochas compacta.</p>
+
+        <p> Observe a formação de uma fossilização dos grandes répteis da era Mesozoica:</p>
+
+        <div class="area"><img id="imagem19" src="tp13f19.png" alt="tp13f19" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao">Estágios na fossilização de um dinossauro. Fonte: Marshak (2015, p. 421, Adaptado). </span>
+
+        <p> O estudo dos fósseis, dentre outras coisas, contribui para o melhor conhecimento de regiões geográficas distantes, principalmente em relação a recursos como tipos de rochas sedimentares e reservas de petróleo e gás natural.</p>
+
+
+        <p>Mas o que acontece com uma rocha preexistente se for submetida a altas temperaturas e pressão? Elas mudarão de forma? </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+       
+    
+
+    <div class="topico">
+
+        <h2> Rochas metamórficas</h2>
+
+
+
+
+        <p>Tal como um preparo de um bolo ou de um pão, em que distintos ingredientes no recipiente se transformam em algo novo, da mesma maneira as rochas, quando submetidas a altas temperaturas e pressão, formarão algo totalmente diferente em relação as suas características, texturas, minerais etc. </p>
+
+        <p> A palavra metamórfica vem do grego <em>meta</em>, “mudança” e <em>morfo</em>, “forma”. Durante o metamorfismo, os minerais não atingem o ponto de fusão, isto é, esse processo ocorre em estado sólido.</p>
+
+        <p>A textura, a composição mineral e química sofre intensa transformação e ocorre uma recristalização de seus minerais. Observe a imagem abaixo: </p>
+
+        <div class="area"><img id="imagem19a" src="tp13f19a.png" alt="tp13f19" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao">Rocha metamórfica dobrada. Fonte: Pinterest. </span>
+
+
+        <p> Imagine a intensa força que foi necessária para dobrar essas camadas de rochas na forma que elas estão hoje.</p>
+
+
+        <p><strong>Onde estão localizadas as rochas metamórficas?</strong> </p>
+
+
+        <p> Obviamente que as rochas presentes na natureza não estão separadas em magmáticas, sedimentares ou metamórficas de maneira fixa e organizada. Elas dependem da história geológica da região, de outros fatores como dinâmica das placas tectônicas, formação de montanhas, intemperismo, erosão, do clima etc.</p>
+
+        <p>O mapeamento das rochas pode ocorrer por meio de perfurações no solo. Nos primeiros quilômetros vamos encontrar rochas sedimentares. Ao perfurar mais fundo entre 6 e 10 km, podemos áreas com rochas ígneas e metamórficas antigas. </p>
+
+        <p>Outra possibilidade são os chamados <mark>afloramentos</mark>, no qual as rochas que estão no interior da crosta emergem à superfície devido as ações dos agentes externos do relevo. </p>
+
+        <div class="area"><img id="imagem20" src="tp13f20.png" alt="tp13f20" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Afloramento de rocha na Ucrânia. Fonte: https://brasilescola.uol.com.br
+            /geografia/cratons.htm. </span>
+    
+
+
+        <p>Os afloramentos variam conforme a região e criam, por isso, diversas paisagens.  </p>
+
+
+        <h3>Os tipos de metamorfismo e suas texturas </h3>
+
+        <p>As diferentes combinações de temperatura e pressão resultam em distintos graus de metamorfismo. Um baixo grau de metamorfismo está associado a baixas temperaturas e pressão e, logo, uma textura particular. O mesmo ocorre com altas temperaturas e pressão. </p>
+
+
+        <p>O arranjo, o tamanho, e a forma dos minerais definem suas <strong>texturas</strong>. Estas podem ser foliadas e não foliadas: </p>
+
+        <div class="area"><img id="imagem21" src="tp13f21.png" alt="tp13f21" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Fonte: Organizado pelo autor. </span>
+
+
+        <p>As camadas das texturas <strong>foliadas</strong> possuem uma direção em determinado plano devido ao processo de deformação e recristalização que sofreu, como o xisto, a ardósia, o micaxisto ou o gnaisse. </p>
+
+        <p> Já as rochas <strong>não foliadas</strong> como o mármore e quartzito são formadas geralmente por um mineral. </p>
+
+
+
+        <h3> Onde ocorre esse metamorfismo?</h3>
+
+        <p>Através das investigações científicas foram reconhecidos três grandes tipos de metamorfismo e sua área de ocorrência: 1) <strong>metamorfismo de contato</strong>, 2) <strong>metamorfismo regional</strong> 3) <strong>metamorfismo do assoalho oceânico</strong>. Embora estudados separadamente, esses limites não devem ser vistos de forma isolada na realidade. </p>
+
+        <div class="area"><img id="imagem22" src="tp13f22.png" alt="tp13f22" class="w3-mobile">
+        </div>
+    
+    
+        <span class="citacao"> Fonte: Press (2006). </span>
+    
+
+        <p>O<strong> metamorfismo de contato</strong> ocorre quando o magma derretido modifica uma rocha preexistente através da elevação da temperatura, geralmente em áreas pouco extensas. Também contribui para esse processo a liberação de fluídos quentes em uma rocha ígnea que pode contribuir na formação de novos minerais. </p>
+
+
+        <p>Um fluxo de lava pode alterar a temperatura de rochas na superfície, em um afloramento já existente ou em uma rocha sedimentar. Esse metamorfismo abrange uma área das rochas circundantes, ou seja, uma transformação localizada. </p>
+
+
+        <p>Já o metamorfismo que abrange extensas áreas refere-se ao <strong>regional</strong>. Ele aparece nos limites convergentes de placas (quando elas colidem entre si) e na formação de montanhas (orogênese), no dobramento e fraturamento das camadas sedimentares. Exemplos nas montanhas dos Andes, na América do Sul, no Himalaia, na Ásia Central.  </p>
+
+
+        <p>O metamorfismo regional de alta pressão está relacionado a zonas de falhas tectônicas ou encontros de placas em que existe alta pressão. Por esse fato, essas rochas estão restritas a essas áreas de fraturas e apresentam textura foliadas, como em porções da falha de San Andreas na Califórnia. </p>
+
+        <p>O metamorfismo regional de alta pressão está relacionado a zonas de falhas tectônicas ou encontros de placas em que existe alta pressão. Por esse fato, essas rochas estão restritas a essas áreas de fraturas e apresentam textura foliadas, como em porções da falha de San Andreas na Califórnia. </p>
+
+        <p>O <strong>metamorfismo do assoalho oceânico</strong> tem relação com as dorsais oceânicas. Nesse caso, a água do mar percorre os basaltos fraturados e quentes e, assim, provocam reações químicos alterando a rocha original. </p>
+
+
+        <p> Há também um outro tipo de metamorfismo resultado do impacto de meteoritos na superfície rochosa. Os meteoritos são fragmentos de cometas ou asteroides que foram atraídos pela Terra por meio de seu campo gravitacional. Eles são mais raros e as ondas de choque produz calor e alteram as rochas em seu entorno.</p>
+
+
+        <h3>O valor econômico das rochas metamórficas </h3>
+
+        <p> Algumas rochas metamórficas como o mármore e a ardósia são utilizadas há séculos pelos homens. No metamorfismo de contato, por sua vez, muitos minerais migram das rochas ígneas e produzem verdadeiros depósitos minerais como hematita (ferro), magnetita, estanho e tungstênio.</p>
+
+
+        <p>Outros minerais importantes para área dos cosméticos são o talco; grafita para os lápis e lubrificantes secos; coríndon usados como abrasivos em joalheria; andaluzita no uso de porcelanas de altas temperaturas, velas de ignição e revestimentos de fornalhas. </p>
+
+
+       
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    
+    
+
+    <div class="topico">
+
+        <h2> </h2>
+
+
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+        <p> </p>
+
+
+        <p> </p>
+
+        <p> </p>
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    <!-- Modelo duas colunas -->
+
+    <div class="w3-container p3 w3-padding-32">
+
+
+        <table class="w3-table w3-striped">
+            <tr>
+                <th>Geotecnologia</th>
+                <th>Cartografia</th>
+
+            </tr>
+            <tr>
+                <td>(1) Equipamentos para estudar o espaço terrestre</td>
+                <td>( ) Legenda </td>
+
+            </tr>
+            <tr>
+                <td> (2) Aquisição de imagens de satélite </td>
+                <td>( ) GPS </td>
+
+            </tr>
+            <tr>
+                <td>(3) posicionamento por satélites </td>
+                <td>( ) Sensoriamento remoto</td>
+
+            </tr>
+
+            <tr>
+                <td> (4) Representação x Real</td>
+                <td>( ) Escala </td>
+
+            </tr>
+
+            <tr>
+                <td> (5) Cores e símbolos </td>
+                <td>( ) SIG </td>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> </h2>
+
+
+
+        <div class="w3-card-4 w3-yellow w3-padding-small">
+            <ul>
+                <li>
+
+                </li>
+
+                <li>
+
+                </li>
+
+                <li>
+
+                </li>
+
+                <li>
+
+                </li>
+
+                <li>
+
+                </li>
+
+                <li>
+
+                </li>
+
+                <li>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+
+        <h2> Assinale todas as alternativas que satisfazem as características da projeção de Mercator:
+        </h2>
+
+        <form id="check">
+            <input type="checkbox" id="r1" name="r1">
+            <label> privilegia (favorece) a Europa em detrimento (prejuízo) de outras
+                áreas.</label><br><br>
+
+            <input type="checkbox" id="r2" name="r2">
+            <label> aumenta as terras do hemisfério Norte em relação ao Sul;</label><br><br>
+
+            <input type="checkbox" id="r3" name="r3">
+            <label> respeita as dimensões reais dos territórios;</label><br><br>
+
+            <input type="checkbox" id="r4" name="r4">
+            <label> representa de modo preciso a forma dos continentes e as linhas da
+                costa.</label><br><br>
+
+
+
+        </form>
+
+        <button class="btnShow" id="buttoncheck1"
+            onclick="confereBox('acertou, parabéns', 'resp40','globinho40')">Conferir</button>
+
+
+
+        <br><br><br><br>
+        <span id="resp40"></span>
+
+
+        <div class="area">
+            <p><img src="globinhoPe.png" id="globinho40" style="display:none" alt="globinho40" width="64" height="64">
+            </p>
+        </div>
+
+        <button class="btnHide" id="buttoncheck2"
+            onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <form id="quiz" name="quiz">
+
+
+
+            <p>O nome dessa era geológica significa ausência de vida”. Caracterizada pelo resfriamento
+                da Terra, solidificação dos minerais e formação das primeiras rochas oriundas do interior da Terra
+                (magma). </p>
+
+            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+
+
+            <p id="resp1a"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
+                onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
+
+
+
+
+
+            <div class="area">
+                <p>
+                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
+                        width="64" height="64">
+                </p>
+            </div>
+
+
+
+            <p>Trata-se de uma Era geológica mais recente. É subdividida em Terciário
+                (cerca de 65 milhões de anos) quando apareceram os Dobramentos modernos (Andes, Alpes, Himalaia).
+                Desenvolvimento dos mamíferos e vegetação com flores. Foi no Quaternário (cerca de 1,6 milhões de anos).
+                Aparecimento dos primeiros hominídeos.</p>
+
+
+
+            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+
+
+            <p id="resp1b"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
+                onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
+
+
+
+
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1b" style="display:none" alt="globinho9"
+                        width="64" height="64"> </p>
+            </div>
+
+
+            <p>Corresponde à denominação dos geólogos de uma fase da história da Terra. A história de
+                nosso planeta, que tem cerca de 4,6 bilhões de anos, foi dividida pelos geólogos em escalas de tempo
+                como forma de melhor organizar a compreensão sobre a passagem da evolução da Terra.</p>
+
+            <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+
+
+
+            <p id="resp1c"></p>
+
+            <input class="btnShow" id="buttonConferirQ1c" type="button" value="Conferir"
+                onclick="PerguntasAbertas(3,'resp1c','buttonConferirQ1c','globinho1c')">
+
+
+
+
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1c" style="display:none" alt="globinho10"
+                    width="64" height="64"> </p>
+
+
+
+
+        </form>
+
+
+
+        <button class="btnHide" id="buttonq1d"
+            onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1c')">Proximo</button>
+
+
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> </p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>? </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+        </p>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+
+
+        </p>
+
+
+
+
+        <button class="btnShow" onclick="AbrirDivFinal();   this.style.display='none'">Desafio!</button>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <h2> Desafio em grupo: Exposição de ideias sobre a dinâmica do Planeta Terra.</h2>
+
+        <h3>Escolha um período ou um fato marcante apresentado nas Eras geológicas da Terra e
+            apresenta
+            três argumentos sobre a importância do conhecimento das dinâmicas do Planeta atualmente. </h3>
+
+
+        <h2>Instruções </h2>
+
+        <div class="w3-card-4">
+
+            <ul>
+
+                <li>Forme um grupo com três estudantes;</li>
+
+                <li> Selecione os fatos e discuta com seu grupo os argumentos da questão; (5 minutos);</li>
+
+                <li> Escreva sua resposta à questão solicitada.</li>
+
+                <li> Escolha um integrante do grupo para expor a questão a turma; (1 a 2 minutos).</li>
+
+
+
+            </ul>
+
+        </div>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=s5rgBF4H6b4" target="_blank">
+                    O nascimento da Terra
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+        <p> DAMBRÓS, Cristiane. <strong>Geografia física</strong>. Londrina: Editora e Distribuidora
+            Educacional S.A., 2017.</p>
+
+        <p>PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>.
+            4a edição. Tradução: MENEGAT, R. Porto Alegre, Bookman. 2006.
+        </p>
+
+
+        <p>O buraco mais profundo já cavado na Terra. Disponível em:www.bbc. Acesso em: 17.mar.2021.
+        </p>
+
+        <p>'Um planeta dentro de outro': estudo mostra que centro da Terra é 'sólido e macio'.
+            Disponível em: www.terra.com.br Acesso em: 17.mar.2021.
+        </p>
+
+
+
+        <p>TOLEDO, Maria Cristina Mota.<strong> Estrutura interna da Terra</strong>. Disponível em:
+            https://midia.atp.usp.br/plc/plc0011/
+            impressos/plc0011_03.pdf
+        </p>
+
+        <p>WHAT'S WHERE ON EARTH - ATLAS. London: Penguim Random House, 2017. </p>
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                //numButton();
+                ApagaButton();
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 26);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+        // Função com apenas uma palavra
+
+        function confereBox(mensagem, frase2, globinho) {
+
+            r1 = document.getElementById("r1");
+            r2 = document.getElementById("r2");
+            r3 = document.getElementById("r3");
+            r4 = document.getElementById("r4");
+            frase = document.getElementById(frase2);
+            globo = document.getElementById(globinho);
+
+            if (r3.checked == true) {
+
+                frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
+                Play2("../audio2.mp3");
+            }
+
+            else if (r1.checked == true && r2.checked == true && r4.checked == true) {
+
+
+                nota += 1;
+                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+                globo.style.display = "block";
+                Play("../audio1.mp3");
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                EscondeButton("buttoncheck1");
+                MostraButton("buttoncheck2");
+
+
+            }
+
+
+            else {
+                frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
+                Play2("../audio2.mp3");
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+        // Função com perguntas abertas feita com formulário
+        function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+            var q1a = document.quiz.q1a.value.toLowerCase();
+            var q1b = document.quiz.q1b.value.toLowerCase();
+
+
+
+
+
+            var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+            var cor = ["#99ff99", " #ee4466"];
+
+            if (q1a.match("intemperismo") && qnum == 1) {
+
+                document.getElementById("q1a").style.backgroundColor = cor[0];
+                document.getElementById("q1a").disabled = true;
+
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
+                nota += 0.5;
+                document.getElementById(globinho).style.display = "block";
+
+
+                BalancarGlobo();
+
+                document.getElementById("buttonConferirQ1b").disabled = false;
+                document.getElementById("buttonConferirQ1b").style.backgroundColor = "#69CB60FA";
+                document.getElementById("buttonConferirQ1b").value = "Agora sim!";
+
+
+
+            }
+            else if (qnum == 1) {
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+                Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
+            }
+
+
+            if (q1b.match("erosão") && qnum == 2) {
+
+                if (q1a.match("intemperismo")) {
+
+                    document.getElementById("q1b").style.backgroundColor = cor[0];
+                    document.getElementById("q1b").disabled = true;
+
+                    EscondeButton(buttonConferir);
+                    Play("../audio1.mp3");
+
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf() + ", acertou!.";
+
+                    nota += 0.5;
+                    document.getElementById(globinho).style.display = "block";
+
+
+
+                    MostraButton("buttonq1d");
+                    BalancarGlobo();
+                }
+                else {
+                    document.getElementById("q1b").style.backgroundColor = cor[0];
+                    document.getElementById("q1b").disabled = true;
+                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui";
+                    Play2("../audio2.mp3");
+                    document.getElementById("buttonConferirQ1b").value = "Aguardando...";
+                    document.getElementById("buttonConferirQ1b").disabled = true;
+                    document.getElementById("buttonConferirQ1b").style.backgroundColor = "lightgray";
+                    RemoveBalancarGlobo();
+
+                }
+
+            }
+            else if (qnum == 2) {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
+                Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
+
+            }
+
+
+
+            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+
+
+
+
+        }
+
+        // É chamada nas questões abertas decimais para ver se completou um inteiro.
+        function VerificaInteiro(idResp) {
+
+            var inteiro = Number.isInteger(nota);
+            var int = Math.trunc(nota)
+
+
+            if (inteiro == false) {
+                nota = int;
+                document.getElementById(idResp).innerHTML = " Quase lá " + nomeEstudante + "." + " Acerte todas as questões para ganhar o globinho. Você permanece com " + nota + ".";
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+            }
+
+            else {
+                document.getElementById(idResp).innerHTML = "Por ter acertado todas as questões " + nomeEstudante + ", ganhou mais um globinho, agora já possui " + nota + ".";
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+            }
+
+            // document.getElementById(idResp).innerHTML = "Não atingiu o máximo para ganhar o globinho. Está com "  + nota;
+        }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                //addProgressBar();
+                //numButton();
+                ApagaButton();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+      
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

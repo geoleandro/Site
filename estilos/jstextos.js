@@ -3,7 +3,7 @@ var nomeEstudante = "";
 
 var nota = 0;
 
-var fontes = ["Courier New", "Arial", "Times New Roman", "Verdana",  "Tahoma"];
+var fontes = ["Courier New", "Arial", "Times New Roman", "Verdana", "Tahoma"];
 
 var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082", "#A020F0", "#FF1493", "#FA8072", "#FF8C00", "#DC143C"];
 
@@ -264,4 +264,16 @@ function mostraCinza() {
     }
 
 
+}
+
+
+function BalancarGlobo() {
+
+    document.getElementById("imagem50").classList.add("balancar");
+    document.getElementById("notaFixa").classList.add("w3-animate-zoom");
+}
+
+function RemoveBalancarGlobo() {
+    document.getElementById("imagem50").classList.remove("balancar");
+    document.getElementById("notaFixa").classList.remove("w3-animate-zoom");
 }

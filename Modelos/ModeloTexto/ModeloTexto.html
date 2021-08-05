@@ -6,10 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../estilos/fade.css">
-    <link rel="stylesheet" href="../..//estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../fotoIndex/favicon.ico">
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js"></script>
 
     <title>Modelo Texto</title>
 
@@ -64,6 +66,14 @@
             -webkit-transform: rotate(-3deg);
             -o-transform: rotate(-3deg);
             -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
         }
 
         .zoom {
@@ -124,21 +134,7 @@
     </style>
 
 
-    <!-- impedir que o botão direito do mouse seja apertado -->
-    <!-- <script>
-        if (document.addEventListener) {
-            document.addEventListener("contextmenu", function (e) {
-                e.preventDefault();
-                return false;
-            });
-        } else { //Versões antigas do IE
-            document.attachEvent("oncontextmenu", function (e) {
-                e = e || window.event;
-                e.returnValue = false;
-                return false;
-            });
-        }
-    </script> -->
+    
 
 </head>
 
@@ -188,7 +184,9 @@
         <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
         <br>
 
-        <input class="input" type="text" id="pq0" name="pq0">
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
 
 
         <span id="resp0"></span>
@@ -230,8 +228,7 @@
 
         <p> </p>
 
-        <p>Ao final, com ajuda dos exercícios, você será capaz de distinguir as camadas internas da
-            Terra e as eras geológicas que duraram milhões de anos.</p>
+      
 
 
 
