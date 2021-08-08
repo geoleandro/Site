@@ -149,10 +149,13 @@ td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;  height: 
 textarea {    height: auto;  padding: 6px 10px;  box-sizing: border-box;  border: 2px solid #ccc;  border-radius: 5px;  margin: auto; background-color: #f8f8f8;  font-size: auto;  resize: none; margin-bottom: 20px;	margin-top:20px;  justify-content: center;  align-items: center;  display: flex;  width:100%;}
 tr:nth-child(even) {  background-color: #dddddd;}
 ul.lista { font-size:22px; margin:20px}
+
 .topico > p{
   padding:8px;
+ 
 }
 
 form > p{
   padding:8px;
+  
 }
