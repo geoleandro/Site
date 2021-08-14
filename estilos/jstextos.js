@@ -3,11 +3,15 @@ var nomeEstudante = "";
 
 var nota = 0;
 
-var fontes = ["Courier New", "Arial", "Times New Roman", "Verdana", "Tahoma"];
+//var fontes = ["Tahoma"];
 
-var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082", "#A020F0", "#FF1493", "#FA8072", "#FF8C00", "#DC143C"];
 
-var aleatorio = Math.round(Math.random() * 5);
+
+//var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082", "#A020F0", "#FF1493", "#FA8072", "#FF8C00", "#DC143C"];
+
+//var aleatorio = Math.round(Math.random() * 1);
+
+//console.log(fontes[aleatorio]);
 
 var imagemGlobinhoFinal = document.getElementById("globinhoFinal");
 
@@ -57,16 +61,19 @@ function NomeAlunos(idResp, pqx) {
 
 
 
-// Modifica as fontes do texto aleatoriamente. É chamada no body onload
-function paragrafotexto() {
-    var p = document.querySelectorAll(".topico");
-    for (var i = 0; i < p.length; i++) {
-        p[i].style.fontFamily = fontes[aleatorio];
+// // Modifica as fontes do texto aleatoriamente. É chamada no body onload
+// function paragrafotexto() {
+//     var p = document.querySelectorAll(".topico");
+//     for (var i = 0; i < p.length; i++) {
+//         p[i].style.fontFamily = fontes[aleatorio];
 
-    }
+//     }
 
 
-}
+// }
+
+
+
 // Apaga os botões próximo	
 function ApagaButton() {
     var t = document.getElementsByClassName("button");
