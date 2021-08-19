@@ -2,108 +2,99 @@
 <html lang="pt-br">
 
 <head>
-	<title>Modelo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-<style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3ano - Aula02</title>
 
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-.campo { color: black;}
+	<script src="../../../estilos/javascript.js"></script>
 
-body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
 
-#h1 {line-height: normal; background: #7a607F; border: none 1px; border-radius: 35px ; padding: 0cm; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+	</script>
 
-background-image: url(globinho.jpg);
-  background-position: right top ; 
-  background-repeat: no-repeat, repeat;
-  background-size: contain;
-}
+	<style>
+		.larguraBar {
+			max-width: 700px;
+		}
 
-#p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
+		@font-face {
+			font-family: pixel;
+			src: url('../../../fontes/FreePixel.woff');
+		}
 
-#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+		body {
+			max-width: 700px;
+			margin: auto;
+			padding: 0px;
+		}
 
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 40px;
+		}
 
-#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
+		p {
+			padding: 10px;
+			background-color: #fff;
 
-#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
-
-.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
-
-.bordaQuestoes:hover 	{background-color: #ccc}
-
-#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
-
-.comentarios {display: none;}
-
-.myText {
-
-height:150px;
-width: 320px;
-float:left;
-word-wrap: break-word;
-text-align:left;
- 
-}
-
-#button1 {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px #999;
-  position: absolute;
-
-}
-
-#button1:hover 	{background-color: #3e8e41}
-#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
-
-
-.area {display: flex;
-        justify-content: center;}
+		}
+	</style>
 
 
 
-
-</style>
 
 </head>
 
-<body>
+<body onload="mudaQuest()">
+
+
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+
+		<a href="../../../Duvid3Ano.html" class=" w3-button">3º ano</a>
 
 
 
 
-	<h1 id="h1">   Questões aula 02 - A população no mundo   </h1>
+	</div>
+
+
+
+	<h1 class="h1">   Questões aula 02 - A população no mundo   </h1>
     
-	<p><b>Conteúdo:</b> Conceito de demografia: taxas de mortalidade, natalidade e fecundidade. Transição demográfica. Estrutura etária. Teorias populacionais e mudanças socioeconômicas. </p>
+	<p><strong>Conteúdo:</strong> Conceito de demografia: taxas de mortalidade, natalidade e fecundidade. Transição demográfica. Estrutura etária. Teorias populacionais e mudanças socioeconômicas. </p>
 
 	
-	<p><b>Objetivo:</b>  entender e aplicar os principais conceitos da demografia: taxas de mortalidade, natalidade e fecundidade, transição demográfica, teorias demográficas e estrutura da população.   </p>
+	<p><strong>Objetivo:</strong>  Entender e aplicar os principais conceitos da demografia: taxas de mortalidade, natalidade e fecundidade, transição demográfica, teorias demográficas e estrutura da população mundial.  </p>
     
     <form id="quiz" name="quiz" onsubmit="return verificar()">
 
     <div class="campo">
 
-        <p id="p2">Questão 01</p>
+        <p class="p2">Questão 01</p>
 			
-		<p id="p3">   (ENEM 2019) O bônus demográfico é caracterizado pelo período em que, por causa da redução do número de filhos por mulher, a estrutura populacional fica favorável ao crescimento econômico. Isso acontece porque há proporcionalmente menos crianças na população, e o percentual de idosos ainda não é alto.   </p>
+		<p >   (ENEM 2019) O bônus demográfico é caracterizado pelo período em que, por causa da redução do número de filhos por mulher, a estrutura populacional fica favorável ao crescimento econômico. Isso acontece porque há proporcionalmente menos crianças na população, e o percentual de idosos ainda não é alto.   </p>
 		
 			
-		<p id="citacao"><small>   GOIS, A. O Globo, 5 abr. 2015 (adaptado).   </small>	</p>
+		<p class="citacao">   GOIS, A. O Globo, 5 abr. 2015 (adaptado).   	</p>
 			
-		<p id="p3"> A ação estatal que contribui para o aproveitamento do bônus demográfico é o estímulo à:</p>
+		<p > A ação estatal que contribui para o aproveitamento do bônus demográfico é o estímulo à:</p>
 								        
         <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> a) atração de imigrantes.</p>
        
@@ -121,7 +112,7 @@ text-align:left;
 
     <div class="comentarios">
 		
-         <p> <b>Comentário:</b></p> 
+         <p> <strong>Comentário:</strong></p> 
 			
 		<p>  a) incorreta. A fase do bônus demográfico corresponde ao aumento da PEA (população economicamente ativa), em relação à população total, portanto, seria necessário gerar empregos e qualificar esses imigrantes para o mercado de trabalho, não sendo uma ação diretamente realizada pelo Estado.</p>
 		
@@ -141,13 +132,13 @@ text-align:left;
 
     <div class="campo">
 		
-        <p id="p2">Questão  02</p>
+        <p class="p2">Questão  02</p>
 			
-		<p id="p3">(ENEM 2018) Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos.  </p>   
+		<p >(ENEM 2018) Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos.  </p>   
 		
-		<p id="citacao"><small>   GEORGE, P. Panorama do mundo atual. São Paulo: Difusão Europeia do Livro, 1968 (adaptado).   </small>	</p>
+		<p class="citacao">   GEORGE, P. Panorama do mundo atual. São Paulo: Difusão Europeia do Livro, 1968 (adaptado).   	</p>
 			           
-		<p id="p3">	Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de:</p>
+		<p >	Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de:</p>
 
 
         <p class="bordaQuestoes"id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) estabilização da pirâmide etária. </p>
@@ -164,7 +155,7 @@ text-align:left;
 
 
     <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>  resultado a diminuição do percentual de jovens, o que acelerou o processo de transição demográfica, levando o continente rapidamente à sua conclusão.  Isto, somado à elevada expectativa de vida da população da Europa, fez com que o percentual de idosos se expandisse de tal forma que ameaça os serviços assistenciais e previdenciários da maioria dos países do continente. </p>
 
@@ -187,13 +178,13 @@ text-align:left;
 
     <div class="campo">
 		
-        <p id="p2">Questão 03</p>
+        <p class="p2">Questão 03</p>
 			
-		<p id="p3">  (ENEM 2018) Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos.   </p>
+		<p >  (ENEM 2018) Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos.   </p>
 				
-		<p id="citacao"><small>  GEORGE, P. Panorama do mundo atual. São Paulo. Difusão Europeia do Livro, 1968 (adaptado) </small>	</p>
+		<p class="citacao">  GEORGE, P. Panorama do mundo atual. São Paulo. Difusão Europeia do Livro, 1968 (adaptado) 	</p>
 		 
-		<p id="p3"> Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de:</p>
+		<p > Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de:</p>
        
 	   <p class="bordaQuestoes"id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) Estabilização da pirâmide etária.</p>
        
@@ -209,7 +200,7 @@ text-align:left;
         
 
     <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>  As nações caracterizadas na questão como sendo os “países industriais” são aquelas em que o nível de desenvolvimento (produção de riqueza combinada com a qualidade de vida) atingiram na atualidade os níveis mais elevados. Esses níveis socioeconômicos mais elevados trouxeram para a realidade demográfica destas nações uma conjuntura populacional distinta do restante do mundo, principalmente pelas variações observadas nas suas pirâmides etárias.</p>
 
@@ -224,9 +215,9 @@ text-align:left;
 
 	<div class="campo">
 		
-        <p id="p2">Questão 04</p>
+        <p class="p2">Questão 04</p>
 			
-		<p id="p3"> (ENEM 2016) Uma consequência socioeconômica para os países que vivenciam o fenômeno demográfico ilustrado é a diminuição da:   </p>
+		<p > (ENEM 2016) Uma consequência socioeconômica para os países que vivenciam o fenômeno demográfico ilustrado é a diminuição da:   </p>
 		
 		<img src="T2q4.jpg" class="imagem" width="330" height="200">
 			      
@@ -244,7 +235,7 @@ text-align:left;
         
 		
 		<div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>  A queda na taxa de fecundidade provocará num primeiro momento a redução do crescimento vegetativo, o que determinará – a médio prazo – uma redução da oferta de mão de obra e a longo prazo um envelhecimento da população e um eventual colapso do sistema previdenciário.</p>
 
@@ -267,10 +258,10 @@ text-align:left;
 		
 	<div class="campo">
 		
-        <p id="p2">Questão 05</p>
+        <p class="p2">Questão 05</p>
 			
 		  
-		<p id="p3"> (FTD 2016) Analisando os dados apresentados no gráfico, fica evidente que a população mundial</p>
+		<p > (FTD 2016) Analisando os dados apresentados no gráfico, fica evidente que a população mundial</p>
    
 		<img src="T2q5.jpg" class="imagem" width="330" height="260">
 			          
@@ -288,7 +279,7 @@ text-align:left;
 	
 
    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>   Colocar os comentários aqui.   </p>
     </div>
@@ -299,25 +290,25 @@ text-align:left;
 		 
 	<div class="campo">
 		
-        <p id="p2">Questão 06</p>
+        <p class="p2">Questão 06</p>
 			
-		<p id="p3">  (UFTM 2010) Considere o gráfico. </p>
+		<p >  (UFTM 2010) Considere o gráfico. </p>
 
-		<p id="p3"> Fases da transição demográfica </p>
+		<p > Fases da transição demográfica </p>
 		
 		<img src="T2q6.jpg" class="imagem" width="320" height="150">
 			
-		<p id="p3">	Considere as afirmações</p>
+		<p >	Considere as afirmações</p>
 
-		<p id="p3">	I. A primeira fase de transição demográfica é marcada pelo   rápido crescimento da população, como consequência da queda da mortalidade e manutenção das elevadas taxas de natalidade.</p>
+		<p >	I. A primeira fase de transição demográfica é marcada pelo   rápido crescimento da população, como consequência da queda da mortalidade e manutenção das elevadas taxas de natalidade.</p>
 
-		<p id="p3">	II. A segunda fase caracteriza-se pela diminuição das taxas de fecundidade, provocando queda da taxa de natalidade mais acentuada que a de mortalidade e diminuindo o ritmo de crescimento da população.</p>
+		<p >	II. A segunda fase caracteriza-se pela diminuição das taxas de fecundidade, provocando queda da taxa de natalidade mais acentuada que a de mortalidade e diminuindo o ritmo de crescimento da população.</p>
 
-		<p id="p3">	III A   terceira   fase, encontrada em diversos países europeus, é denominada de fase de estabilização demográfica.</p>
+		<p >	III A   terceira   fase, encontrada em diversos países europeus, é denominada de fase de estabilização demográfica.</p>
 
-		<p id="p3">	IV. O   Brasil ainda   se encontra na primeira fase da transição demográfica, apesar das melhorias das condições médico-sanitárias.</p>
+		<p >	IV. O   Brasil ainda   se encontra na primeira fase da transição demográfica, apesar das melhorias das condições médico-sanitárias.</p>
 
-		<p id="p3">	Está CORRETO apenas o que se afirma em:</p>
+		<p >	Está CORRETO apenas o que se afirma em:</p>
 	         
         <p class="bordaQuestoes"id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a)  I e II.</p>
        
@@ -333,7 +324,7 @@ text-align:left;
 	
 
    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>   Colocar os comentários aqui.   </p>
     </div>
@@ -344,11 +335,11 @@ text-align:left;
 		
 	<div class="campo">
 		
-        <p id="p2">Questão 07</p>
+        <p class="p2">Questão 07</p>
 			
-		<p id="p3">  (Mackenzie-SP 2008) Hoje, a população idosa no mundo é de aproximadamente 650 milhões de habitantes. Segundo a ONU, a perspectiva para 2050 é de que o mundo tenha 2 bilhões de pessoas com mais de 60 anos.   </p>
+		<p >  (Mackenzie-SP 2008) Hoje, a população idosa no mundo é de aproximadamente 650 milhões de habitantes. Segundo a ONU, a perspectiva para 2050 é de que o mundo tenha 2 bilhões de pessoas com mais de 60 anos.   </p>
 
-		<p id="p3">	Assinale a Alternativa que corresponde à CORRETA distribuição demográfica de idosos no planeta, nesse período.  </p>
+		<p >	Assinale a Alternativa que corresponde à CORRETA distribuição demográfica de idosos no planeta, nesse período.  </p>
 								        
         <p class="bordaQuestoes"id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a)  A população idosa terá uma distribuição demográfica homogênea, devido à conquista de recursos na área de saúde, que atingirão a maior parte da população mundial.</p>
       
@@ -364,7 +355,7 @@ text-align:left;
 	
 
     <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>   Colocar os comentários aqui.   </p>
     </div>
@@ -375,15 +366,15 @@ text-align:left;
 		
 	<div class="campo">
 		
-        <p id="p2">Questão 08</p>
+        <p class="p2">Questão 08</p>
 			
-		<p id="p3">   (PUC-PR 2007) Confira com atenção o gráfico a seguir.</p>
+		<p >   (PUC-PR 2007) Confira com atenção o gráfico a seguir.</p>
 		
 		<img src="T2q8.jpg" class="imagem" width="320" height="200">
 		
-		<p id="citacao"><small>  Fonte: United Matino Populário Divisional, 2003. MAGNOLI, Demétrio; ARAÚJO, Regina. Projeto de Ensino de Geografia: geografia geral. Fig. 6, p. 140.  </small>	</p>
+		<p class="citacao">  Fonte: United Matino Populário Divisional, 2003. MAGNOLI, Demétrio; ARAÚJO, Regina. Projeto de Ensino de Geografia: geografia geral. Fig. 6, p. 140.  	</p>
 		           
-		<p id="p3"> A miséria e as doenças a ela correlacionadas explicam os elevados índices de mortalidade na porção da África que se estende desde o deserto do Saara até o extremo sul desse continente. Tanto a África do Norte, como a América Latina e Caribe apresentam, no entanto, índices menores de mortalidade do que a Europa. Isso se deve principalmente a quê?</p>
+		<p > A miséria e as doenças a ela correlacionadas explicam os elevados índices de mortalidade na porção da África que se estende desde o deserto do Saara até o extremo sul desse continente. Tanto a África do Norte, como a América Latina e Caribe apresentam, no entanto, índices menores de mortalidade do que a Europa. Isso se deve principalmente a quê?</p>
 
         <p class="bordaQuestoes"id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a)  Mudanças culturais, relacionadas a formas racionais de uso do solo, melhorias alimentares e de higiene têm reduzido os índices de mortalidade das populações da África Setentrional, América Latina e Caribe.</p>
   
@@ -399,7 +390,7 @@ text-align:left;
 	
 
     <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>   Colocar os comentários aqui.   </p>
     </div>
@@ -410,13 +401,13 @@ text-align:left;
 		 
 	<div class="campo">
 		
-        <p id="p2">Questão 09</p>
+        <p class="p2">Questão 09</p>
 			
-		<p id="p3">  (PUC-RJ 2006) A taxa de crescimento populacional atual da Rússia é negativa: a população do país diminuiu em 286 mil   pessoas no primeiro quadrimestre deste ano. </p> 
+		<p >  (PUC-RJ 2006) A taxa de crescimento populacional atual da Rússia é negativa: a população do país diminuiu em 286 mil   pessoas no primeiro quadrimestre deste ano. </p> 
 	
-	<p id="p3"> O número de mortes no país é, em média, 70% superior ao número de nascimentos. A diminuição vem ocorrendo desde o desmantelamento da União Soviética, em 1991.</p>
+	<p > O número de mortes no país é, em média, 70% superior ao número de nascimentos. A diminuição vem ocorrendo desde o desmantelamento da União Soviética, em 1991.</p>
 
-	<p id="p3"> Essa situação é decorrência </p>
+	<p > Essa situação é decorrência </p>
 		
 		       
         <p class="bordaQuestoes"id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a">  a)  dos fluxos migratórios em direção à Europa Ocidental </p>
@@ -435,7 +426,7 @@ text-align:left;
 	
 
     <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>   Colocar os comentários aqui.   </p>
     </div>
@@ -445,9 +436,9 @@ text-align:left;
 				
 	<div class="campo">
 		
-        <p id="p2">Questão 10</p>
+        <p class="p2">Questão 10</p>
 			
-		<p id="p3">  Thomas R. Malthus (1766-1834) defendia a tese de que a população crescia em patamares superiores aos da produção de alimentos, o que causaria graves convulsões sociais em razão do excesso de pessoas no mundo. Como solução para esse problema, Malthus propôs:  </p>
+		<p >  Thomas R. Malthus (1766-1834) defendia a tese de que a população crescia em patamares superiores aos da produção de alimentos, o que causaria graves convulsões sociais em razão do excesso de pessoas no mundo. Como solução para esse problema, Malthus propôs:  </p>
 			      
         <p class="bordaQuestoes"id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) a difusão de métodos de controle da natalidade, como medicamentos e acessórios que inibissem a natalidade.</p>
      
@@ -463,138 +454,36 @@ text-align:left;
 	
 
     <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
+        <p> <strong>Comentário:</strong></p> 
 			
 		<p>   Colocar os comentários aqui.   </p>
     </div>
 		
 		
 
-    <br><br>
-		
-		
 
-	
-    <p id="numeroCorreto"></p>
+	</form>
 
-    <p id="mensagem" style="display:none"></p>
 
-    <img id="imagem" alt="" style="display:none"  width = "280" height="200">
+	<p id="numeroCorreto"></p>
 
-    <br><br>
-		
-	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
-	<br><br>
-	
-		
-<script>
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<p id="aviso"></p>
+
+
+
+	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+	<script>
        
-
-      var tipo = new Array()
-      tipo[0]= "Courier New";
-      tipo[1]= "Arial";
-      tipo[2]= "Cursive";
-      tipo[3]= "Trebuchet MS";
-      tipo[4]= "Monotype Corsiva";
-      tipo[5]= "Times New Roman";
-      tipo[6]= "Comic Sans MS";
-      tipo[7]= "Verdana";
-      tipo[8]= "Calisto MT";
-      tipo[9]= "Tempus Sans ITC"; 
-      tipo[10]= "Impact";
-	  
-	
-      var fonte = Math.round(Math.random() * 10);
-      document.getElementById("h1").style.fontFamily = tipo[fonte];
-	  document.getElementById("p2").style.fontFamily = tipo[fonte];
-	     
-	     
-</script>
-		
-			
-			
-<script>
-
-	function verificar() {
-	
-		var y = document.getElementById("button1");
-		var x = document.forms.quiz;
-			for( i=0; i< x.length; i++) {
-				if(x[i].checked==!"") {
-							
-				checar();
-				y.disabled = true;
-				y.value="Corrigido";
-				
-			}
-		}
-  }
-  
-  
-</script>
-
-
-
-
-
-<script>
-	function classEscurecer(){
-		var x = document.getElementsByClassName("campo");
-			for (var i = 0; i < x.length; i++) {
-			x[i].style.color = "##424242";
-			x[i].style.transition = "6s";
-			}
-		}
-</script>
-
-
-
-<script>
-
- 
-	function corLenta(){
-		var t = document.getElementsByClassName("bordaQuestoes");
-			for (var i = 0; i < t.length; i++) {
-			t[i].style.transition = "4s";
-			
-			}
-		}
-
-</script>
-  
-  
-<script>
-
- 
-	function comentarios(){
-		var c = document.getElementsByClassName("comentarios");
-			for (var i = 0; i < c.length; i++) {
-			c[i].style.display="block";
-			
-		
-			} 
-		}
-
-</script>
-  
- 
-  
-  
-</form>
-
-  
-
-	
-	
-
-
-
-
-
-   
-
-
-<script>
 
 
     function checar() {
@@ -750,7 +639,7 @@ text-align:left;
 						
             var incorrretas = 10 - corretas;
             var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
-            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
             var pontos;
 
             if (corretas < 5) {
