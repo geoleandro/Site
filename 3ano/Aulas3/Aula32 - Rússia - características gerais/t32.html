@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ano - Aula32</title>
+
+    <link rel="stylesheet" href="../../../estilos/questoes.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/javascript.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+    <style>
+        .larguraBar {
+            max-width: 700px;
+        }
+
+        @font-face {
+            font-family: pixel;
+            src: url('../../../fontes/FreePixel.woff');
+        }
+
+        body {
+            max-width: 700px;
+            margin: auto;
+            padding: 0px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 40px;
+        }
+
+        p {
+            padding: 10px;
+            background-color: #fff;
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body onload="mudaQuest()">
+
+
+    <div class="w3-top w3-bar w3-black larguraBar">
+
+
+        <a href="../../../Duvid2Ano.html" class=" w3-button">2º ano</a>
+
+
+
+
+    </div>
+
+    <h1 class="h1"> Questões aula 32 – Rússia: características gerais </h1>
+
+    <div class="w3-card">
+        <p><strong>Conteúdo:</strong> Aspecto físicos da federação russa; impactos do fim da URSS;
+           Conflitos no Cáucaso. </p>
+
+
+        <p><strong>Objetivo:</strong> Compreender a dinâmica e o papel da Rússia no mundo atual. Identificar suas
+            principais características como quadro físico, economia e território e principais conflitos separatistas nos
+            últimos anos. </p>
+    </div>
+
+
+
+
+
+    <form id="quiz" name="quiz" onsubmit="return verificar()">
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 01</p>
+
+            <p> (ENEM 2020) </p>
+
+
+            <p> TEXTO </p>
+
+
+            <p> A intervenção da Rússia na crise no Leste da Ucrânia reacendeu a tensão entre os aliados da Otan e
+                Moscou. Os EUA informaram que pretendem instalar armamento pesado no Leste da Europa, plano criticado
+                pelo governo russo. Em resposta, a Rússia anunciou o reforço de seu arsenal nuclear, novos mísseis
+                balísticos intercontinentais, descritos como “capazes de superar sistemas de defesa mais avançados”.
+            </p>
+
+
+            <p class="citacao"> STEWART, P. Disponível em: http://noticias.uol.com.br. Acesso em: 26 jun. 2015
+                (adaptado).</p>
+
+
+            <p> TEXTO </p>
+
+            <p> Os Estados Unidos e seus aliados não vão deixar a Rússia “nos arrastar de volta ao passado”, disse o
+                secretário de Defesa dos Estados Unidos em um discurso em Berlim, dia 22 de junho de 2015, quando acusou
+                o governo russo de tentar recriar uma esfera de influência da era soviética. </p>
+
+            <p class="citacao"> Disponível em: http://oglobo.globo.com. Acesso em: 26 jun. 2015 (adaptado).
+
+            </p>
+
+            <p> Que tema da geopolítica da segunda metade do século XX é o fundamento histórico da referência feita ao
+                passado? </p>
+
+
+
+
+
+            <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
+
+                a) Livre comércio.
+
+            </p>
+            <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b">
+
+                b) Luta antiditatorial.
+
+            </p>
+            <p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c">
+
+                c) Corrida armamentista.
+
+            </p>
+            <p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d">
+
+                d) Conservação ambiental.
+
+            </p>
+            <p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e">
+
+                e) Terrorismo internacional.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+
+            <!--       <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 02</p>
+
+            <p> (UERJ 2020) </p>
+
+            <p class="w3-center">PUTIN INAUGURA PONTE ENTRE RÚSSIA E CRIMEIA </p>
+
+            <div class="w3-center"><img src="t32q2.png" alt="t32q2" class="w3-mobile"></div>
+
+            <p> O presidente russo, Vladimir Putin, inaugurou em maio de 2018 o trecho rodoviário de nova ponte que liga
+                a Rússia continental à Península da Crimeia, anexada à Russia em 2014. A Crimeia, uma ex-república
+                autônoma que integrava a Ucrânia, foi anexada pela Rússia durante uma grave crise que culminou num
+                conflito entre forças leais ao governo ucraniano e milícias separatistas apoiadas por Moscou. A Ucrânia
+                denunciou a construção como uma flagrante violação das leis internacionais. Putin dirigiu um enorme
+                caminhão Kamaz, de fabricação russa, pelos 19 quilômetros da ponte sobre o estreito de Kerch. Em
+                discurso, o presidente exaltou a construção da ponte de 3,6 bilhões de dólares como um feito histórico e
+                prometeu novas obras de infraestrutura na península.</p>
+
+            <p class="citacao"> Adaptado de dw.com. </p>
+
+
+
+            <p>A ponte mencionada indica mudanças no processo de anexação da Crimeia à jurisdição do governo russo, na
+                atualidade. </p>
+
+            <p> Tendo como base o mapa da Crimeia e as informações da reportagem, observa-se que a construção da ponte
+                se insere em um projeto russo para promoção de:</p>
+
+
+
+
+            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
+
+                a) homogeneização política.
+
+            </p>
+            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
+
+                b) modernização financeira.
+
+            </p>
+            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c">
+
+                c) centralização cultural.
+
+            </p>
+            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
+
+                d) integração territorial.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> O objetivo da questão está relacionado a identificar ações do governo russo destinadas à consolidação de
+                seus interesses geopolíticos na Crimeia, na atualidade.. </p>
+
+
+            <p> A história das relações entre a Rússia e a Crimeia remonta à conquista da região pelo governo russo em
+                finais do século XVIII. Em 1954, a jurisdição sobre a Crimeia passou para a Ucrânia, uma das repúblicas
+                que compunham a U.R.S.S.. Com a desintegração dessa última, a Ucrânia tornou-se, em 1991, país
+                independente, e a Crimeia uma de suas regiões. </p>
+
+            <p> Em função da composição populacional, com maioria de russos – cerca de 65%, segundo censo de 2014 – e da
+                polarização política interna relacionada às pretensões autonomistas, em março de 2014, referendo popular
+                garantiu separação da Ucrânia e a anexação da Crimeia pelo governo russo. </p>
+
+
+            <p> O presidente russo Vladimir Putin buscou, a partir de então, ampliar as bases desse controle tendo em
+                vista, como indica o mapa do enunciado da questão, o caráter estratégico da Península da Crimeia no Mar
+                Negro. </p>
+
+            <p> Entre as ações destinadas a ampliar investimentos e solidificar a anexação, destaca-se a construção de
+                ponte ferroviária e rodoviária sobre o estreito de Kerch, situado entre o Mar de Azov e o Mar Negro. Na
+                reportagem do enunciado da questão é comentada a inauguração do trecho rodoviário dessa ponte, com
+                direito a presença de Putin dirigindo um caminhão, simbolizando, assim, a integração territorial
+                almejada para a consolidação do controle russo sobre a península. </p>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 03</p>
+
+            <p> (2020) O texto a seguir descreve as características da população que habita a Rússia: </p>
+
+            <p>A Rússia é um dos países com a maior diversidade étnica do mundo. Além dos russos, que compõem 82% da
+                população, há importantes minorias de tártaros (3,8%) e de ucranianos (3%). Outros grupos são os
+                bielorrussos, os germanos, os chuvaches e os judeus. Cerca de 80% da população vive na parte europeia do
+                país. Na porção asiática, a densidade é em geral muito baixa. Quanto à religião, mais da metade dos
+                habitantes são cristãos ortodoxos. O segundo maior grupo é o dos que se declaram sem religião: 25,8%. A
+                língua oficial e predominante é o russo.</p>
+
+            <p class="citacao"> Atlas National Geographic, Ed. Abril. </p>
+
+            <p>Pela análise do texto é possível concluir que</p>
+
+
+            <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a">
+
+                a) com mais de 82% de população com uma única origem – russa – podemos afirmar que o país é,
+                etnicamente, homogêneo.
+
+            </p>
+            <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b">
+
+                b) além da religião dominante, o cristianismo ortodoxo, há, na Rússia, outras religiões, como o
+                judaísmo.
+
+            </p>
+            <p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c">
+
+                c) o vazio demográfico da porção asiática da Rússia se deve à ausência de meios de acesso, como
+                ferrovias e rodovias.
+
+            </p>
+            <p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d">
+
+                d) a diversidade étnica parece não constituir um problema para o relacionamento da população da Rússia.
+
+            </p>
+            <p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e">
+
+                e) os climas frios trazem como consequência o ateísmo, professado por 25,8% da população.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> A diversidade étnica e religiosa é uma característica da Rússia, apesar do predomínio da etnia russa.
+            </p>
+        </div>
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 04</p>
+
+            <p> (2020) Leia o texto a seguir: </p>
+
+            <p>“Agricultura na Rússia reage e produtores rurais vão colher uma safra de cereais de 90 milhões de
+                toneladas.
+                Depois de passar por uma grave crise no ano passado, provocada por dois anos de muito calor e secas
+                prolongadas, a agricultura russa reagiu. [...].
+            </p>
+
+            <p> Os principais compradores de grãos produzidos na Rússia são o Egito (demanda de três milhões de
+                toneladas por ano) e alguns países africanos, no entanto, as metas do país incluem a expansão das vendas
+                externas para a América do Sul e Canadá. Para ajudar os produtores, o governo russo vai subsidiar os
+                custos de transporte da produção para regiões de difícil acesso, como a Sibéria, afirmou Zubkov. A
+                Rússia já possui tarifas especiais para escoamento da safra de grãos, dentro do país, por via férrea.”
+
+            </p>
+
+            <div class="w3-center">
+                
+                <figure>
+                    
+                    <img src="t32q4.png" alt="t32q4" class="w3-mobile">
+                    <figcaption class="citacao">http://revistagloborural.globo.com
+                        /Revista/Common/0,,ERT270477-18078,00.html </figcaption>
+
+                </figure>
+            
+            </div>
+
+
+
+          
+            <p> A partir da reportagem acima, assinale a alternativa que melhor descreve a relação entre o rede de transportes e a agricultura na Rússia.</p>
+
+       
+            <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a">
+
+                a) O solo pobre na planície Siberiana, o tchernoziom, sofre com a influência da maritimidade e, por isso, agrava o processo de erosão.
+
+            </p>
+
+            <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b">
+
+                b) Os inversos são rigosoros com temperaturas baixas (sempre abaixo de zero no inverto) e clima seco, com pouca chuva o que impede a prática agrícola.
+
+            </p>
+
+            <p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c">
+
+                c) A região é rica em rios, muito utilizados para navegação. O rio mais importante é o Volga, que liga Moscou até o mar Cáspio, e permite irrigação, geração de energia e o escoamento da produção de trigo e outros cereais.
+
+            </p>
+            <p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d">
+
+                d) A vegetação da Tundra facilita a prática agrícola devido a profundidade de seu solo, o qual nunca congela.
+            </p>
+
+          
+        </div>
+
+
+
+        <div class="comentarios">
+          <!--   <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 05</p>
+
+            <p> (UNICAMP 2018)  </p>
+
+            <div class="w3-center"><img src="t32q5.png" alt="t32q5" class="w3-mobile"></div>
+
+
+           <p> Ao percorrer a Ferrovia Transiberiana, de Moscou a Vladivostok, em uma extensão de atravessamos diferentes unidades do relevo russo:</p>
+
+            <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a">
+
+                a) Montes Urais, Planície Russa, Planalto da Anatólia e Planalto Central Siberiano.
+
+            </p>
+            <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b">
+
+                b) Planalto do Deca, Planalto Central Siberiano, Montes Urais e Planície Russa.
+
+            </p>
+            <p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c">
+
+                c) Planalto Central Siberiano, Planície Russa, Montes Urais e Planalto dos Bálcãs.
+            </p>
+            <p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d">
+
+                d) Planície Russa, Montes Urais, Planalto Central Siberiano e Planalto de Aldan.
+
+            </p>
+          
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> A alternativa d está correta porque, ao percorrer o território russo no sentido oeste-leste, a Ferrovia Transiberiana (mencionada no enunciado da questão) percorre unicamente as unidades de relevo daquele país. Todas as alternativas são inválidas porque estão invertidas as unidades geomorfológicas, considerando a direção anunciada do ponto partida e de chegada percorrida pela ferrovia Transiberiana; ou porque uma ou mais unidades de relevo enunciadas não se localizam no território russo. </p>
+
+            <p>A alternativa a apresenta incorreção na sequência nas unidades de relevo, sendo que os Montes Urais não são o ponto de partida da Transiberiana. Além disso, o Planalto de Anatólia não se localiza na Rússia e, sim, no território turco. </p>
+
+            <p> A alterativa b está incorreta porque o Planalto de Decã não se localiza na Rússia e, sim, na Índia. Ademais, a sequência das outras unidades geomorfológicas está invertida. </p>
+
+            <p> A alternativa c está incorreta porque a sequência das unidades geomorfológicas indicada está invertida e o Planalto dos Balcãs não se localiza na Rússia e, sim, no sul do continente europeu.</p>
+
+            
+        </div>
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 06</p>
+
+            <p> (Mackenzie 2018) Com o colapso da União Soviética, as transformações na ordem mundial e, a partir da década de 1990, o fim da Guerra Fria, a Rússia passou a participar de uma nova agenda internacional tanto no campo político como no militar. Atualmente, o país busca maior participação no contexto internacional e afirma-se como potência. Apesar de enfrentar uma etapa difícil de transição da economia centralmente planejada para uma economia de mercado – capitalista – às voltas com crises econômico-financeiras, aumento da pobreza e da corrupção, concentração de renda e guerras separatistas, em finais da década de 1990, a Rússia passou a integrar o G8.</p>
+
+
+            <p class="citacao"> 
+                LUCCI, BRANCO e MENCONÇA. Território e Sociedade no Mundo Globalizado. São Paulo: Saraiva, 2014, p. 261.
+                 </p>
+
+            <p>Considere as seguintes afirmações a respeito da Rússia. </p>
+
+            <p> I. É uma grande potência nuclear e seu imenso território dispõe de grandes reservas minerais, entre elas petróleo e gás natural.</p>
+
+
+            <p> II. Apresenta invernos rigorosos, sobretudo em sua porção setentrional.</p>
+
+
+            <p>III. É um dos componentes dos chamados BRICS. </p>
+
+
+            <p> IV. É uma forte opositora do regime iraniano e tem evitado estreitar relações políticas com a China.</p>
+
+            <p>É correto o que se afirma em</p>
+
+
+
+
+            <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
+
+               a) I e II, apenas.
+
+            </p>
+            <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b">
+
+                b) III e IV, apenas.
+
+            </p>
+            <p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c">
+
+                c) I, II e III, apenas.
+
+            </p>
+            <p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d">
+
+                d) II, III e IV, apenas.
+            </p>
+            <p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e">
+
+                e) I, II, III e IV.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+        <!--     <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 07</p>
+
+            <p> (MACKENZIE 2015) - Em relação à distribuição dos recursos naturais da Federação Russa, considere as afirmativas:  </p>
+
+
+            <p> I. É considerado um dos países mais ricos em recursos minerais, devido a sua imensa extensão territorial e por possuir uma estrutura geológica diversificada.  </p>
+
+            <p> II. É o maior exportador de gás natural do mundo. Atualmente atravessa uma crise geopolítica com sua vizinha Ucrânia, antiga república soviética, culminando com a independência da península da Crimeia.  </p>
+
+            <p>III. Nas extensas bacias sedimentares dos Montes Urais o país dispõe de grandes reservas minerais das quais são exploradas, principalmente, jazidas de ferro, bauxita, cobre, potássio e amianto.   </p>
+
+            <p> IV. Há importantes usinas hidrelétricas localizadas nos rios da Bacia do Volga e nos rios Ienissei e Angara que cortam os planaltos da Sibéria Ocidental. </p>
+
+            <p> Estão corretas, apenas,  </p>
+
+           
+
+            <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">
+
+                a) I e II.
+            </p>
+            <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
+
+                b) II e III. 
+            </p>
+            <p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c">
+
+                c) III e IV. 
+            </p>
+            <p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d">
+
+                d) I, II e III. 
+            </p>
+            <p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e">
+
+                e) I, II e IV.
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+           <!--  <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 08</p>
+
+            <p> (UFU 2015) Durante quase 50 anos, a União Soviética foi o único país a fazer frente ao poder econômico e militar dos Estados Unidos. Mesmo com o seu esfacelamento territorial e político, no início da década de 1990, a Rússia ainda preserva parte do seu antigo poder. </p>
+                
+                <p>   Considerando o texto e os principais desafios enfrentados pela Rússia e a região onde ela está localizada, é CORRETO afirmar que</p>
+
+
+         
+
+
+            <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
+
+                a) o intenso processo migratório entre a Rússia e as repúblicas autônomas é considerado de grande importância para a economia local e tem promovido a unificação regional.
+            </p>
+            <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
+
+                b) grande parte das indústrias da Rússia continua voltada à produção de armamentos e veículos militares, o que a torna a maior fornecedora de material bélico no mundo.
+
+            </p>
+            <p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
+
+                c) a Rússia mantém a unidade territorial devido às melhorias nas condições socioeconômicas da população e ao aumento da renda per capita nas repúblicas autônomas.
+
+            </p>
+            <p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
+
+                d) a Rússia, na atualidade, pode ser considerada um dos países com maior diversidade de etnias convivendo em seu território e é o principal centro de poder político e militar na região.
+
+            </p>
+            
+        </div>
+
+
+
+        <div class="comentarios">
+           <!--  <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 09</p>
+
+            <p> (FUVEST 2008)  </p>
+
+            <p>“Há oitenta anos, a Rússia era forte por causa do dinamismo revolucionário do comunismo, incluindo o poder de atração da sua ideologia. Há quarenta anos, a Rússia Soviética era forte por causa do poderio do Exército Vermelho. Hoje, a Rússia de Putin é forte por causa do gás e do petróleo.”</p>
+
+            <p class="citacao"> Timothy Garton Ash, historiador inglês, janeiro de 2007. </p>
+
+            <p>Do texto, depreende-se que a Rússia</p>
+
+            <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a">
+
+                a) manteve inalterada sua posição de grande potência em todo o período mencionado.
+
+            </p>
+            <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b">
+
+                b) recuperou, na atualidade, o seu papel de país líder da Europa.
+
+
+
+            </p>
+            <p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c">
+
+                c) conheceu períodos de altos e baixos em função das conjunturas externas.
+
+            </p>
+            <p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d">
+
+                d) passou de força política, a força militar e desta, a força econômica.
+
+            </p>
+            <p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e">
+
+                e) conservou, sempre, a sua preeminência graças ao incomparável poderio militar.
+
+            </p>
+        </div>
+
+
+
+        <div class="comentarios">
+          <!--   <p> <strong>Comentário:</strong></p>
+
+            <p> Colocar os comentários aqui. </p> -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+
+            <p class="p2">Questão 10</p>
+
+            <p> (PUC-MG 2001) Leia atentamente o texto abaixo. </p>
+
+<p>Antes da desintegração da União Soviética havia uma república autônoma, a da Tchetchênia-Ingústia, que reunia dois povos que lhe davam nome. Quando a União Soviética não mais existia, a Tchetchênia se recusou a assinar o Tratado de adesão à Federação Russa e proclamou a independência, o que não foi reconhecido pelo governo de Moscou. Em dezembro de 1994 iniciou-se a intervenção militar russa na Tchetchênia.</p>
+            <p class="citacao"> 
+                Adaptado de o lic , Nelson Bacic. Conflitos no Mundo: questões e visões geopolíticas. São Paulo: Moderna, 2000.
+                 </p>
+
+                 <p>Assinale a opção que MELHOR EXPLICA os interesses russos pela região da Tchetchênia.</p>
+
+
+            <p class="bordaQuestoes" id="q10a"><input type="radio" name="pq10" value="a">
+
+                a)  Áreas de produção e transporte de petróleo e gás das importantes jazidas da região; posição geográfica estratégica entre o “mundo-russo” e o Oriente Médio; implicações geopolíticas da religião islâmica.
+
+            </p>
+            <p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b">
+
+                b)  Produção de haxixe e ópio para o mercado consumidor da Rússia; atuação da máfia tchetchena na capital Moscou; proteção à maioria russa na região.
+
+            </p>
+            <p class="bordaQuestoes" id="q10c"><input type="radio" name="pq10" value="c">
+
+                c)  Posição estratégica privilegiada (entre o Mar Negro, Cáspio e o Oriente Médio); importantes usinas nucleares e bases militares na região.
+
+            </p>
+            <p class="bordaQuestoes" id="q10d"><input type="radio" name="pq10" value="d">
+
+                d) Jazidas de petróleo e gás natural; atuação de grupos terroristas tchetchenos que, tendo na religião ortodoxa ponto de união, desafiam o poder de Moscou.
+
+            </p>
+          
+        </div>
+
+
+
+        <div class="comentarios">
+            <p> <strong>Comentário:</strong></p>
+
+            <p> a.  CORRETA. Trata-se da frase que melhor retrata as relações na região. </p>
+
+            <p> b.  INCORRETA. Haxixe e ópio são drogas ilegais nesses países. </p>
+
+            <p> c.  INCORRETA. Embora sejam locais estratégicos, entre os mares Negro e Cáspio e o Oriente Médio não há importantes usinas nucleares.
+
+            </p>
+
+            <p> d.  INCORRETA. Os governos não apoiam oficialmente as ações de grupos terroristas.</p>
+        </div>
+
+
+
+
+
+
+    </form>
+
+
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+
+    <div class="area">
+        <img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+            height="200">
+    </div>
+
+    <p id="aviso"></p>
+
+
+
+    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+    <script>
+
+
+
+
+
+        function checar() {
+
+
+
+            var pq1 = document.quiz.pq1.value;
+            var pq2 = document.quiz.pq2.value;
+            var pq3 = document.quiz.pq3.value;
+            var pq4 = document.quiz.pq4.value;
+            var pq5 = document.quiz.pq5.value;
+            var pq6 = document.quiz.pq6.value;
+            var pq7 = document.quiz.pq7.value;
+            var pq8 = document.quiz.pq8.value;
+            var pq9 = document.quiz.pq9.value;
+            var pq10 = document.quiz.pq10.value;
+
+            var corretas = 0;
+
+
+            var cor = ["#99ff99", "#ee4466"];
+
+            if (pq1 == "c") {
+                corretas++;
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            } else {
+
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById("q1d").style.backgroundColor = cor[1];
+                document.getElementById("q1e").style.backgroundColor = cor[1];
+
+                document.getElementById("q1c").style.backgroundColor = cor[0];
+            }
+
+
+            if (pq2 == "d") {
+                corretas++;
+                document.getElementById("q2d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q2a").style.backgroundColor = cor[1];
+                document.getElementById("q2b").style.backgroundColor = cor[1];
+                document.getElementById("q2c").style.backgroundColor = cor[1];
+
+
+                document.getElementById("q2d").style.backgroundColor = cor[0];
+            }
+
+            if (pq3 == "b") {
+                corretas++;
+                document.getElementById("q3b").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q3b").style.backgroundColor = cor[1];
+                document.getElementById("q3c").style.backgroundColor = cor[1];
+                document.getElementById("q3d").style.backgroundColor = cor[1];
+                document.getElementById("q3a").style.backgroundColor = cor[1];
+
+                document.getElementById("q3b").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq4 == "c") {
+                corretas++;
+                document.getElementById("q4c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q4b").style.backgroundColor = cor[1];
+                document.getElementById("q4a").style.backgroundColor = cor[1];
+                document.getElementById("q4d").style.backgroundColor = cor[1];
+              
+
+                document.getElementById("q4c").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq5 == "d") {
+                corretas++;
+                document.getElementById("q5d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q5b").style.backgroundColor = cor[1];
+                document.getElementById("q5c").style.backgroundColor = cor[1];
+                document.getElementById("q5a").style.backgroundColor = cor[1];
+              
+
+                document.getElementById("q5d").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq6 == "c") {
+                corretas++;
+                document.getElementById("q6c").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q6b").style.backgroundColor = cor[1];
+                document.getElementById("q6c").style.backgroundColor = cor[1];
+                document.getElementById("q6d").style.backgroundColor = cor[1];
+                document.getElementById("q6a").style.backgroundColor = cor[1];
+
+                document.getElementById("q6c").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq7 == "e") {
+                corretas++;
+                document.getElementById("q7e").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q7b").style.backgroundColor = cor[1];
+                document.getElementById("q7c").style.backgroundColor = cor[1];
+                document.getElementById("q7d").style.backgroundColor = cor[1];
+                document.getElementById("q7a").style.backgroundColor = cor[1];
+
+                document.getElementById("q7e").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq8 == "d") {
+                corretas++;
+                document.getElementById("q8d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q8a").style.backgroundColor = cor[1];
+                document.getElementById("q8c").style.backgroundColor = cor[1];
+                document.getElementById("q8b").style.backgroundColor = cor[1];
+              
+
+                document.getElementById("q8d").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq9 == "d") {
+                corretas++;
+                document.getElementById("q9d").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q9e").style.backgroundColor = cor[1];
+                document.getElementById("q9c").style.backgroundColor = cor[1];
+                document.getElementById("q9b").style.backgroundColor = cor[1];
+                document.getElementById("q9a").style.backgroundColor = cor[1];
+
+                document.getElementById("q9d").style.backgroundColor = cor[0];
+
+            }
+
+            if (pq10 == "a") {
+                corretas++;
+                document.getElementById("q10a").style.backgroundColor = cor[0];
+            } else {
+                document.getElementById("q10b").style.backgroundColor = cor[1];
+                document.getElementById("q10c").style.backgroundColor = cor[1];
+                document.getElementById("q10d").style.backgroundColor = cor[1];
+              
+
+                document.getElementById("q10a").style.backgroundColor = cor[0];
+
+            }
+
+
+
+            corLenta();
+            classEscurecer();
+            comentarios();
+
+
+
+
+            var incorrretas = 10 - corretas;
+            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+            var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+            var pontos;
+
+            if (corretas < 5) {
+                pontos = 2;
+
+            }
+
+            if (corretas >= 5 && corretas <= 7) {
+                pontos = 1;
+            }
+
+
+            if (corretas >= 7) {
+                pontos = 0;
+
+            }
+
+
+
+            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+            document.getElementById("mensagem").innerHTML = mensagem[pontos];
+            document.getElementById("imagem").src = imagem[pontos];
+            document.getElementById("numeroCorreto").style.display = 'block';
+            document.getElementById("mensagem").style.display = 'block';
+            document.getElementById("imagem").style.display = 'block';
+
+
+
+
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
