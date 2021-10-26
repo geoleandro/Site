@@ -3,13 +3,13 @@ var nomeEstudante = "";
 
 var nota = 0;
 
-//var fontes = ["Tahoma"];
+var fontes = ["Tahoma", "pixel", "Arial"];
 
 
 
-//var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082", "#A020F0", "#FF1493", "#FA8072", "#FF8C00", "#DC143C"];
+// var cor = ["#000000", "#191970", "#20B2AA", "#6B8E23", "#4B0082", "#A020F0", "#FF1493", "#FA8072", "#FF8C00", "#DC143C"];
 
-//var aleatorio = Math.round(Math.random() * 1);
+var aleatorio = Math.round(Math.random() * fontes.length);
 
 //console.log(fontes[aleatorio]);
 
@@ -61,16 +61,16 @@ function NomeAlunos(idResp, pqx) {
 
 
 
-// // Modifica as fontes do texto aleatoriamente. É chamada no body onload
-// function paragrafotexto() {
-//     var p = document.querySelectorAll(".topico");
-//     for (var i = 0; i < p.length; i++) {
-//         p[i].style.fontFamily = fontes[aleatorio];
+// Modifica as fontes do texto aleatoriamente. É chamada no body onload
+function paragrafotexto() {
+    var p = document.querySelectorAll("h1");
+    for (var i = 0; i < p.length; i++) {
+        p[i].style.fontFamily = fontes[aleatorio];
 
-//     }
+    }
 
 
-// }
+}
 
 
 
