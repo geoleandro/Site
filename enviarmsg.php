@@ -19,9 +19,9 @@
       
         $mail = new PHPMailer(true);
 
-        $nome = filter_input(INPUT_POST,"nome",FILTER_SANITIZE_STRING);
-        $email = filter_input(INPUT_POST,"email",FILTER_SANITIZE_STRING);
-        $msg = filter_input(INPUT_POST,"mensagem",FILTER_SANITIZE_STRING);
+        $nome = filter_input(INPUT_POST,"nome",FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        $email = filter_input(INPUT_POST,"email",FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        $msg = filter_input(INPUT_POST,"mensagem",FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 
 //$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
