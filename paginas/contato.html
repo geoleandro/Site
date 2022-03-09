@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
+
+
+
+
+
+
+    <style>
+        @font-face {
+            font-family: pixel;
+            src: url('../fontes/FreePixel.woff');
+        }
+
+        body {
+            /* max-width: 700px; */
+            margin: auto;
+            font-family: pixel;
+        }
+
+        h1 {
+            font-family: pixel;
+            margin-top: 80px;
+        }
+
+        .larguraBar {
+            max-width: 700px;
+
+
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .rodape {
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: auto;
+            font-family: pixel;
+            position: absolute;
+            bottom: 0 ;
+           
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <div class="w3-top w3-bar w3-black w3-large ">
+        <a href="../index.html" class=" w3-button">Home</a>
+        <a href="../sobre.html" class=" w3-button">Sobre</a>
+
+
+    </div>
+
+    <div class="w3-content ">
+
+        <div id="contact" class="w3-container w3-center w3-padding-32 ">
+
+
+            <h2 class="w3-wide w3-padding-top-64 ">CONTATO</h2>
+            <p>Avaré, São Paulo.</p>
+            <p>Email: contato@duvid.com.br</p>
+
+
+
+            <form method="POST" action="enviarmsg.php">
+                <input class="w3-input" type="text" placeholder="Nome" required name="nome">
+                <input class="w3-input" type="email" placeholder="Email" required name="email">
+                <textarea name="mensagem" cols="10" rows="5" class="w3-input" placeholder="Digite aqui sua mensagem"
+                    required></textarea>
+                <button id="enviar" class="w3-button w3-black w3-ripple w3-margin-top" type="submit">Enviar</button>
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+    <footer class="w3-container rodape w3-black">
+
+
+        <div>
+            <p> &copy; Duvid - Geografia 2022.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+</body>
+
+</html>

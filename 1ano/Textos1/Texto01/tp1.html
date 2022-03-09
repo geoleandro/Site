@@ -115,7 +115,7 @@
 
 
 
-	<div class="topico">
+	<div class="topico ">
 
 		<div class="centerBar w3-padding-24">
 			<!-- Navigation (Stays on Top) -->
@@ -237,7 +237,7 @@
 
 	<div class="topico">
 
-		<p id="caixa"> Agora é com você!</p>
+		<p class="caixa"> Agora é com você!</p>
 
 
 		<div class="w3-panel w3-pale-green">
@@ -633,7 +633,7 @@
 
 		<br>
 		<button class="btnShow"
-			onclick="MostrarProximo(this); MostrarFrase('resp4', 'globinho4','','Esse exercício valeu pontos!','1'); this.style.display='none'">Proximo</button>
+			onclick=" MostrarFrase('resp4', 'globinho4','','esse exercício valeu pontos!','1'); MostrarProximo(this); this.style.display='none'">Proximo</button>
 
 	
 		<p id="resp4"></p>
@@ -912,7 +912,7 @@
 
 
 
-		<div class="area w3-padding-24">
+		<div class="area w3-padding-32">
 			<div class="postit">
 				<a href="https://www.bbc.com/portuguese/vert-fut-38770580" target="_blank"> Como a geografia e a
 					economia
@@ -977,6 +977,7 @@
 				//numButton();
 				ApagaButton();
 				document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+				RemoveBalancarGlobo();
 
 			}
 
@@ -1025,6 +1026,7 @@
 					nota += 1;
 
 					document.getElementById("resp1").innerHTML = "Ai sim! Acertou as palavras " + palavra1 + " e " + palavra3 + " e também ganhou " + " 0" + nota + " globinho.";
+					BalancarGlobo();
 					EscondeButton("button1q");
 					buttonA.style.display = "block";
 

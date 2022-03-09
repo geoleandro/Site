@@ -488,57 +488,43 @@
 
 			<p class="p2">Questão 08</p>
 
-			<p>(UFC) Considere um mapa geográfico cuja escala e de 1/1000.000, e a distância em linha
-				reta
-				entre duas
-				cidades e de aproximadamente 7cm. </p>
+			<p>
+				(FUVEST 2022) A escala cartográfica expressa as dimensões presentes em um mapa e a sua correspondência no terreno, ou seja, é uma abstração adotada que permite transpor a realidade terrestre para o mapa mantendo as proporções. Considerando a distância de 6 cm entre dois municípios em um mapa com escala numérica de 1: 1.000.000, qual é a distância, em linha reta, entre eles? 
+				 </p>
 
-			<p> Assinale a alternativa que indica corretamente a distância real
-				entre
-				as duas cidades. </p>
-
+		
 
 
 			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
-				a)
-				700 km </p>
+				a) 0,6 km. 
+			</p>
+
 			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
-				b)
-				70 km </p>
+				b) 6 km. 
+			</p>
+
 			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
-				c)
-				7 km </p>
+				c) 6,6 km. 
+			</p>
+
 			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
-				d)
-				7000 km </p>
+				d) 60 km. 
+			</p>
+
 			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
-				e)
-				170 km</p>
+				e) 600 km.
+			</p>
 		</div>
 
 		<div class="comentarios">
 			<p> <strong>Comentário:</strong></p>
-			<p> Se a escala é de 1/1.000.000, significa que 1 cm no mapa equivale a 1.000.000 cm na
-				realidade. </p>
+			<p> Numa escala numérica de 1:1. 000.000, um centímetro equivale a um milhão de centímetros, equivalente a dez mil metros e, portanto, dez quilômetros. Como a distância entre as duas cidades é de seis centímetros no mapa, a questão buscar descobrir a distância correta na realidade (D = d x E), esta, por sua vez, é equivalente a seis vezes dez quilômetros, o que indica sessenta quilômetros como resposta certa. </p>
 
-			<p> Então, podemos fazer uma regra de 3 simples: </p>
-
-			<p> MAPA REALIDADE </p>
-
-			<p> 1 cm ------ 1.000.000 cm </p>
-
-			<p> 7 cm ------------- x </p>
-
-			<p> 1 . x = 7 . 1.000.000 </p>
-
-			<p> x = 7.000.000 cm </p>
-
-			<p> Para transformar esse valor em km, basta retirar 5 casas, 7.0<span style="color:red">00.000</span>.
-				cm = 70km.
+		
 
 
 
-			</p>
+		
 		</div>
 
 
@@ -779,16 +765,16 @@
 
 
 			}
-			if (pq8 == "b") {
+			if (pq8 == "d") {
 				corretas++;
-				document.getElementById("q8b").style.backgroundColor = cor[0];
+				document.getElementById("q8d").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q8a").style.backgroundColor = cor[1];
 				document.getElementById("q8c").style.backgroundColor = cor[1];
-				document.getElementById("q8d").style.backgroundColor = cor[1];
+				document.getElementById("q8b").style.backgroundColor = cor[1];
 				document.getElementById("q8e").style.backgroundColor = cor[1];
 
-				document.getElementById("q8b").style.backgroundColor = cor[0];
+				document.getElementById("q8d").style.backgroundColor = cor[0];
 
 			}
 			if (pq9 == "b") {
