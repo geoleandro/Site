@@ -85,7 +85,7 @@
 
 
 
-	<form id="quiz" name="quiz" onsubmit="return verificar()">
+	<form id="quiz" name="quiz" onsubmit="verificar()">
 
 
 		<div class="w3-card-4">
@@ -149,12 +149,7 @@
 		</div>
 
 
-		<div class="comentarios">
-
-			<p> <strong>Comentário:</strong></p>
-
-
-		</div>
+		
 
 
 
@@ -351,15 +346,15 @@
 
 
 			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
-				1: 700</p>
+				1: 700.</p>
 			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b)
-				1: 7000</p>
+				1: 7000.</p>
 			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
-				1: 70000</p>
+				1: 70000.</p>
 			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
-				1: 700000</p>
+				1: 700000.</p>
 			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e)
-				1: 7000000</p>
+				1: 7000000.</p>
 		</div>
 
 
@@ -445,40 +440,42 @@
 			<p class="p2">Questão 07</p>
 
 
-			<p>(MACKENZIE 2004) Considerando que a distância real entre duas cidades é de 120km e que a sua
-				distância gráfica, num mapa, é de 6cm, podemos afirmar que esse mapa foi projetado na escala:</p>
+			<p>(UEL 2021) A figura a seguir mostra a maior fronteira entre dois países no mundo: o Canadá e os Estados Unidos. A sua distância total é de aproximadamente 9.000 km.</p>
 
 
+			<div class="area"><img src="p4q7.png" alt="p4q7" class="w3-mobile"></div>
 
-			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a)
-				1 : 1.200.000</p>
-			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b)
-				1 : 2.000.000</p>
-			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c)
-				1 : 12.000.000</p>
-			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d"> d)
-				1 : 20.000.000</p>
-			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e"> e)
-				1 : 48.000.000</p>
+			<p>Considerando as medidas em centímetros ilustradas na figura, assinale a alternativa que apresenta, corretamente, a escala da representação.</p>
+
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> 
+				a) 1:60.000.
+			
+			</p>
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> 
+				b) 1:250.000.
+			
+			</p>
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> 
+				c) 1:15.000.000.
+			
+			</p>
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d"> 
+				d) 1:60.000.000.
+			
+			</p>
+			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e"> 
+				e) 1:150.000.000.
+			
+			</p>
 		</div>
 
 
 
 		<div class="comentarios">
 			<p> <strong>Comentário:</strong></p>
-			<p> A solução da questão está em encontrar a escala usada no mapa.</p>
-			<p>	D = 120km</p>
-			<p>E = ?</p>
-			<p>	d = 6cm</p>
-
-			<p> Nesse caso, uma divisão entre a distância real “D” e a distância representada no mapa “d”.</p>
-			<p>	E = D/d</p>
-			<p>E = 120km /6(cm)</p>
-			<p> E = 20km </p>
-
-			<p> Agora, é só convertermos 20 km em centímetros, é só acrescentar 5 zeros:</p>
-			<p> Veja: 2000000.</p>
-			<p> Resultado: 1: 2.0<span style="color:red">00.000</span>. </p>
+			<p>Sabendo-se que a soma das distâncias é equivalente a 15 cm, basta dividir 9.000 km por 15 cm. O valor será de 600km por centímetro. Fazendo a conversão de km para cm, tem-se 60.000.000 de cm, ou seja, 1:60.000.000.</p>
+		
 		</div>
 
 
@@ -752,16 +749,16 @@
 				document.getElementById("q6d").style.backgroundColor = cor[0];
 
 			}
-			if (pq7 == "b") {
+			if (pq7 == "d") {
 				corretas++;
-				document.getElementById("q7b").style.backgroundColor = cor[0];
+				document.getElementById("q7d").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q7a").style.backgroundColor = cor[1];
 				document.getElementById("q7e").style.backgroundColor = cor[1];
 				document.getElementById("q7c").style.backgroundColor = cor[1];
-				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7b").style.backgroundColor = cor[1];
 
-				document.getElementById("q7b").style.backgroundColor = cor[0];
+				document.getElementById("q7d").style.backgroundColor = cor[0];
 
 
 			}
