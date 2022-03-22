@@ -1,5 +1,13 @@
 
-	@font-face { font-family: pixel; src: url('FreePixel.woff'); }		
+	@font-face { src: url('FreePixel.woff'); font-family: pixel;  }
+	
+	
+	
+	.larguraBar {
+			max-width: 700px;
+		}
+		
+		
 	
 	.area {display: flex; justify-content: center; margin-bottom:20px;}
 	.areaBtn {display: flex; justify-content: center; margin-bottom:80px;}
@@ -19,6 +27,24 @@
 	#h1 {line-height: normal; background: #24753a;  border-radius: 5px ; padding: 10px;  color: white; font-weight:bold; text-align:left;  font-family: "pixel";   }
 	#mensagem { display: none; background: rgb(185, 185, 185);  border:  none;  height: auto;   padding: 10px;  width: auto; border-radius: 5px;}
 	#numeroCorreto { display: none; background: rgb(185, 185, 185);  border:  none;  height: auto;   padding: 10px;  width: auto; border-radius: 5px;}
-	body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+	 
+	.flex-container {
+		display: flex;
+		justify-content: right;
+	   	
+	}
+
+	.margemDireita{
+		margin-right: 30px;
+	}
+
+body	{
+	max-width: 700px;
+	width: 100%;
+	}
+
+
+	
+	
 
 	
