@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js"></script>
+    <script src="../../../estilos/jstextos.js" defer></script>
     <title>Texto11</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -29,7 +29,7 @@
     <style>
         .topico {
             display: none;
-            margin-top: 60px;
+            
         }
 
         .topico:nth-child(1),
@@ -37,10 +37,6 @@
             display: block
         }
 
-
-        .larguraBar {
-            max-width: 680px;
-        }
 
         .postit-tp9 {
             background: #e6ff5b;
@@ -75,61 +71,7 @@
             text-decoration: underline;
         }
 
-        .zoom {
-            animation: animatezoom 1s
-        }
-
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
-
-            to {
-                transform: scale(1)
-            }
-        }
-
-        body {
-            max-width: 700px;
-            margin: auto;
-            padding: 10px;
-
-        }
-
-
-        h1 {
-            margin-top: 0px;
-
-
-        }
-
-        h2 {
-            margin-top: 0px;
-
-            font-family: pixel;
-            padding: 10px;
-        }
-
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: pixel;
-            padding: 10px;
-        }
-
-        #divFinal {
-            display: none;
-        }
-
-
-        .margemAcima {
-            margin-top: 50px;
-        }
-
-        .margemAbaixo {
-            margin-bottom: 70px;
-        }
+       
     </style>
 
 
@@ -142,20 +84,28 @@
 
     <div class="topico">
 
-        <div class="centerBar">
+      
+    <div class="topico">
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
+        <div class="centerBar w3-padding">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
 
-                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
 
-                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></a>
-
-            </div>
-        </div>
-
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
 
 
         <h1 id="h1"> Texto 11 – Dinâmica externa do relevo </h1>
@@ -191,7 +141,7 @@
 
         <p id="resp0"></p>
 
-        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+       <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
 
         <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -305,12 +255,10 @@
 
 
 
-        <div class="caixa">
-            <h3>Agora é com você!</h3>
-        </div>
+        <p class="caixa">Agora é com você!</p>
 
         <p> Faça uma lista em seu caderno sobre o que já ouviu falar sobre esse assunto: intemperismo, erosão e seus
-            tipos. </p>
+            tipos, deslizamentos de terra. </p>
 
         <p>O que gostaria de saber mais? </p>
 
@@ -329,24 +277,24 @@
 
         <p class="caixa"> Teste sua observação!</p>
 
-        <h3>O que aconteceu com esse automóvel enferrujado sob o ponto de vista dos agentes externos do relevo?</h3>
+        <h4>O que aconteceu com esse automóvel enferrujado sob o ponto de vista dos agentes externos do relevo?</h4>
 
 
-        <p class="area"><img src="tp11f19.png" alt="tp11f19" class="w3-mobile"></p>
+        <p class="area marge"><img src="tp11f19.png" alt="tp11f19" class="w3-mobile"></p>
 
-        <span class="citacao"> Fonte: https://pixabay.com/pt/photos/carro-velho-carro-enferrujado-704560/ </span>
+        <div class="margemAbaixo"><span class="citacao"> Fonte: https://pixabay.com/pt/photos/carro-velho-carro-enferrujado-704560/ </span></div>
 
-        <button class="desativar1 area p4 margemAcima"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">a)
             ele não pagou os impostos do DETRAN; (foi multado e guinchado);</button>
 
 
-        <button class="desativar1 area p4"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">b)
             ele sofreu intemperismo físico (desagregação);</button>
 
 
-        <button class="desativar1 area p4"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'boa, quando o ferro entra em contato com o ar, ele oxida, perde elétrons, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">c)
             ele sofreu intemperismo químico (oxidação).</button>
 
@@ -356,7 +304,7 @@
 
 
 
-        <span id="resp1"></span>
+        <p id="resp1"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
@@ -375,40 +323,39 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Esse tipo de relevo chamado de falésia sempre apresentou esse formato? Quais agentes contribuíram para tal
-            resultado?</h3>
+        <h4>Esse tipo de relevo chamado de falésia sempre apresentou esse formato? Quais agentes contribuíram para tal
+            resultado?</h4>
 
         <p class="area"><img src="tp11f20.png" alt="tp11f20" class="w3-mobile"></p>
 
-        <span class="citacao">Falésia, Normandia, França.
-            Fonte: https://pixabay.com/pt/photos/fal%c3%a9sias-etretat-normandia-fran%c3%a7a-111534/
-        </span>
+        <div class="margemAbaixo">
+            <span class="citacao">Falésia, Normandia, França.
+                Fonte: https://pixabay.com/pt/
+            </span>
+        </div>
 
 
-        <button class="desativar2 area p4 margemAcima"
+        <button class="desativar2 p4 area w3-padding w3-margin margemAcima"
             onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
 
             a) Não, geleiras moldaram esse relevo.
         </button>
 
 
-
-
-
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
 
             b) Sim, surgiu direto do magma.
         </button>
 
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'certo, já vamos descobrir como a erosão eólica gerou essas formas de relevo','1'); this.style.backgroundColor='lightgreen'">
 
             c) Não, agentes como o vento e as ondas do mar esculpiram esse formato.
         </button>
 
 
-        <span id="resp2"></span>
+        <p id="resp2"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
@@ -425,9 +372,9 @@
 
     <div class="topico">
 
-        <div class="w3-card-4 w3-yellow w3-padding-small">
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small fontePixel">
 
-            <h3>Questione a realidade!</h3>
+            <h4 class="fontePixel">Questione a realidade!</h4>
             <ul>
                 <li>
                     Como o intemperismo físico afeta a superfície da Terra?
@@ -630,14 +577,14 @@
 
         <form id="quiz" name="quiz">
 
-            <h3> Um exercício para reforçar alguns conceitos.</h3>
+            <h4> Um exercício para reforçar alguns conceitos.</h4>
 
 
             <p>Escreva o nome do processo de quebra e que promove alteração química e física das rochas na superfície
                 terrestre.
             </p>
 
-            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+            <div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
 
 
             <p id="resp1a"></p>
@@ -665,7 +612,7 @@
 
 
 
-            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+            <div class="w3-margin"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
 
 
             <p id="resp1b"></p>
@@ -840,9 +787,9 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Quais fatores abaixo não contribuem para o aumento das taxas de intemperismo?</h3>
+        <h4>Quais fatores abaixo não contribuem para o aumento das taxas de intemperismo?</h4>
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
 
             a) clima.
@@ -850,7 +797,7 @@
         </button>
 
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
 
             b) tipo de rocha.
@@ -859,7 +806,7 @@
 
 
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'certo, o fóssil é, na realidade, um fenônemo que se contrapõe ao intemperismo','1'); this.style.backgroundColor='lightgreen'">
 
             c) fósseis.
@@ -871,7 +818,7 @@
 
 
 
-        <span id="resp3"></span>
+        <p id="resp3"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
@@ -892,17 +839,17 @@
 
         <p class="caixa"> Aplique seu conhecimento</p>
 
-        <h3>O que ocorre com o intemperismo em climas nas regiões tropicais?</h3>
+        <h4>O que ocorre com o intemperismo em climas nas regiões tropicais?</h4>
 
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'beleza, o intemperismo químico aumenta devido a quantidade de chuva','1'); this.style.backgroundColor='lightgreen'">
 
             a) ocorre um aumento da taxa de intemperismo.
 
         </button>
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
 
             b) ocorre uma diminuição da taxa de intemperismo.
@@ -913,7 +860,7 @@
 
 
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
 
             c) ocorre uma estagnação (paralisação) da taxa de intemperismo.
@@ -923,7 +870,7 @@
 
 
 
-        <span id="resp4"></span>
+        <p id="resp4"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
@@ -1236,19 +1183,19 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Como o tempo influencia o processo de intemperismo?</h3>
+        <h4>Como o tempo influencia o processo de intemperismo?</h4>
 
 
 
 
-        <button class="desativar5 area p4"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'acertou, o tempo geológico é muito amplo em relação ao nosso tempo histórico','1'); this.style.backgroundColor='lightgreen'">
 
             a) quanto maior o tempo, maior a alteração química e física.
 
         </button>
 
-        <button class="desativar5 area p4"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">
 
             b) quanto maior o tempo, menor a dissolução e menor a desagregação das rochas.
@@ -1256,7 +1203,7 @@
         </button>
 
 
-        <button class="desativar5 area p4"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">
 
             c) quanto menor o tempo, maior a erosão devido a gravidade.
@@ -1268,7 +1215,7 @@
 
 
 
-        <span id="resp5"></span>
+        <p id="resp5"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5"
@@ -1289,23 +1236,24 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Que agente de erosão formou esta estrutura e qual processo ocorreu?
+        <h4>Que agente de erosão formou esta estrutura e qual processo ocorreu?
 
-        </h3>
+        </h4>
 
         <div class="w3-center"><img src="tp11f21.png" alt="tp11f21" class="w3-mobile"></div>
 
-        <span class="w3-small">Wadi Al-Hitan, Egito. Fonte: https://commons.wikimedia.org/.
+        <div class="margemAbaixo">
+            <span class="w3-small">Wadi Al-Hitan, Egito. Fonte: https://commons.wikimedia.org/.
+            </span>
+        </div>
 
-        </span>
-
-        <button class="desativar6 area p4 margemAcima"
+        <button class="desativar6 p4 area w3-padding w3-margin margemAcima"
             onclick=" MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','0');this.style.backgroundColor='tomato'">
             a) gelo, cunhamento.
         </button>
 
 
-        <button class="desativar6 area p4"
+        <button class="desativar6 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp6','globinho6', 'desativar6', 'boa, esse processo pode modelar diversas formas de relevo','1'); this.style.backgroundColor='lightgreen'">
 
             b) vento, abrasão.
@@ -1313,7 +1261,7 @@
         </button>
 
 
-        <button class="desativar6 area p4"
+        <button class="desativar6 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp6','globinho6', 'desativar6','0');this.style.backgroundColor='tomato'">
 
             c) água, dissolução.
@@ -1325,7 +1273,7 @@
 
 
 
-        <span id="resp6"></span>
+        <p id="resp6"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho6" style="display:none" alt="globinho6"
@@ -1346,17 +1294,17 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Trata-se de uma erosão realizada pela ação de córregos e enxurradas. São normalmente classificadas como de
-            menor escala do que as voçorocas, vales e cânions.</h3>
+        <h4>Trata-se de uma erosão realizada pela ação de córregos e enxurradas. São normalmente classificadas como de
+            menor escala do que as voçorocas, vales e cânions.</h4>
 
-        <button class="desativar7 area p4"
+        <button class="desativar7 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp7','globinho7', 'desativar7','0');this.style.backgroundColor='tomato'">
 
             a) Erosão marinha.
         </button>
 
 
-        <button class="desativar7 area p4"
+        <button class="desativar7 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp7','globinho7', 'desativar7', 'beleza, essa foi tranquila','1'); this.style.backgroundColor='lightgreen'">
 
             b) Ravina.
@@ -1364,7 +1312,7 @@
         </button>
 
 
-        <button class="desativar7 area p4"
+        <button class="desativar7 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp7','globinho7', 'desativar7','0');this.style.backgroundColor='tomato'">
 
             c) Erosão hídrica.
@@ -1374,7 +1322,7 @@
 
 
 
-        <span id="resp7"></span>
+        <p id="resp7"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho7" style="display:none" alt="globinho7"
@@ -1395,9 +1343,9 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Sedimentação diz respeito:</h3>
+        <h4>Sedimentação diz respeito:</h4>
 
-        <button class="desativar8 area p4"
+        <button class="desativar8 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp8','globinho8', 'desativar8','0');this.style.backgroundColor='tomato'">
 
             a) aos movimentos gravitacionais de massa, mobilizando sedimentos, solos e rochas, que ocorrem de modo
@@ -1407,7 +1355,7 @@
 
 
 
-        <button class="desativar8 area p4"
+        <button class="desativar8 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp8','globinho8', 'desativar8','0');this.style.backgroundColor='tomato'">
 
             b) ao conjunto de processos que provocam a alteração e a decomposição das rochas, também chamado de
@@ -1416,7 +1364,7 @@
 
         </button>
 
-        <button class="desativar8 area p4"
+        <button class="desativar8 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp8','globinho8', 'desativar8', 'opa, essa foi fácil!','1'); this.style.backgroundColor='lightgreen'">
 
 
@@ -1426,7 +1374,7 @@
 
 
 
-        <span id="resp8"></span>
+        <p id="resp8"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho8" style="display:none" alt="globinho8"
@@ -1447,19 +1395,19 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>O intemperismo biológico resulta da decomposição da rocha por processos mecânicos produzidos por vegetais
+        <h4>O intemperismo biológico resulta da decomposição da rocha por processos mecânicos produzidos por vegetais
             através de suas raízes, escavação de roedores ou quimicamente por meio da ação de algas e bactérias que
-            adentram nas fraturas das rochas.</h3>
+            adentram nas fraturas das rochas.</h4>
 
 
-        <button class="desativar9 area p4"
+        <button class="desativar9 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp9','globinho9', 'desativar9', 'ótimo,o intemperismo biológico está relacionado ao físico da mesma forma','1'); this.style.backgroundColor='lightgreen'">
 
             Verdadeiro.
 
         </button>
 
-        <button class="desativar9 area p4"
+        <button class="desativar9 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp9','globinho9', 'desativar9','0');this.style.backgroundColor='tomato'">
 
             Falso.
@@ -1471,7 +1419,7 @@
 
 
 
-        <span id="resp9"></span>
+        <p id="resp9"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho9" style="display:none" alt="globinho9"
@@ -1588,22 +1536,20 @@
 
         <h2> Desafio em dupla: Produção de recomendações para visita em uma caverna.</h2>
 
-        <h3>Leia o texto abaixo sobre a gruta da Lapinha em Minas Gerais: </h3>
-
-        <p> A gruta da Lapinha, localizada no município de Lagoa Santa (MG), possui 40 metros de profundidade e 511
-            metros de extensão abertos à visitação pública. A gruta foi formada a partir de rochas calcárias formadas
-            pelos restos marinhos do fundo do mar raso da bacia do rio das Velhas, de restos que foram acumulados em
-            camadas superpostas e trabalhados pela erosão provocada pelas correntes marinhas e aéreas.</p>
-
-
-        <p>A gruta, de grande beleza cênica, foi descoberta por volta de 1835 pelo naturalista dinamarquês Peter Wilhelm
-            Lund, conhecido como o pai da paleontologia brasileira, que pesquisou toda a região. Em 1840, Lund descobriu
-            restos de fósseis do primeiro homem americano, como também animais pré-históricos que viveram há 25 mil
-            anos, dentre eles o tigre dente de sabre, a preguiça gigante e o tatu gigante. No espaço cultural anexo à
-            gruta, uma réplica de uma preguiça gigante está em exposição. </p>
-
-        <p class="w3-small">Fonte: https://www.mg.gov.br/
-            conteudo/conheca-minas/turismo/gruta-da-lapinha</p>
+        <div class="w3-pale-green">
+            <h3>Leia o texto abaixo sobre a gruta da Lapinha em Minas Gerais: </h3>
+            <p> A gruta da Lapinha, localizada no município de Lagoa Santa (MG), possui 40 metros de profundidade e 511
+                metros de extensão abertos à visitação pública. A gruta foi formada a partir de rochas calcárias formadas
+                pelos restos marinhos do fundo do mar raso da bacia do rio das Velhas, de restos que foram acumulados em
+                camadas superpostas e trabalhados pela erosão provocada pelas correntes marinhas e aéreas.</p>
+            <p>A gruta, de grande beleza cênica, foi descoberta por volta de 1835 pelo naturalista dinamarquês Peter Wilhelm
+                Lund, conhecido como o pai da paleontologia brasileira, que pesquisou toda a região. Em 1840, Lund descobriu
+                restos de fósseis do primeiro homem americano, como também animais pré-históricos que viveram há 25 mil
+                anos, dentre eles o tigre dente de sabre, a preguiça gigante e o tatu gigante. No espaço cultural anexo à
+                gruta, uma réplica de uma preguiça gigante está em exposição. </p>
+            <p class="w3-small">Fonte: https://www.mg.gov.br/
+                conteudo/conheca-minas/turismo/gruta-da-lapinha</p>
+        </div>
 
 
 
@@ -1611,7 +1557,7 @@
 
         <h2>Instruções </h2>
 
-        <div class="w3-light-green w3-padding">
+        <div class="w3-pale-green w3-padding">
 
             <p>Em dupla, reflita e escreva cada um em seu caderno, um texto explicando para os visitantes da gruta o
                 processo de formação de cavernas de calcário utilizando suas próprias palavras e alguns dos conceitos
@@ -1651,7 +1597,7 @@
 
 
             <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-padding" style="max-width:600px">
 
                     <div class="w3-center w3-padding-48">
                         <span onclick="document.getElementById('id01').style.display='none'"
@@ -1849,7 +1795,15 @@
 
                 document.getElementById("buttonConferirQ1b").disabled = false;
                 document.getElementById("buttonConferirQ1b").style.backgroundColor = "#69CB60FA";
-                document.getElementById("buttonConferirQ1b").value = "Agora sim!";
+
+                if (q1a.match("intemperismo") && q1b.match("erosão") && qnum ==1){
+                    document.getElementById("buttonConferirQ1b").value = "Finalizar!";
+                }
+                else
+                {
+                    document.getElementById("buttonConferirQ1b").value = "Conferir!";
+                }
+               
 
 
 
@@ -1885,7 +1839,7 @@
                 else {
                     document.getElementById("q1b").style.backgroundColor = cor[0];
                     document.getElementById("q1b").disabled = true;
-                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui";
+                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui.";
                     Play2("../audio2.mp3");
                     document.getElementById("buttonConferirQ1b").value = "Aguardando...";
                     document.getElementById("buttonConferirQ1b").disabled = true;
@@ -1967,16 +1921,6 @@
 
 
 
-        function BalancarGlobo() {
-
-            document.getElementById("imagem50").classList.add("balancar");
-            document.getElementById("notaFixa").classList.add("w3-animate-zoom");
-        }
-
-        function RemoveBalancarGlobo() {
-            document.getElementById("imagem50").classList.remove("balancar");
-            document.getElementById("notaFixa").classList.remove("w3-animate-zoom");
-        }
 
         // function numButton() {
         //     numB++;

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js"></script>
+    <script src="../../../estilos/jstextos.js" defer></script>
 
     <title>Texto08</title>
 
@@ -39,9 +39,6 @@
         }
 
 
-        .larguraBar {
-            max-width: 680px;
-        }
 
         .postit-tp8 {
             background: #e6ff5b;
@@ -68,53 +65,15 @@
             -ms-transform: rotate(-3deg);
         }
 
-        .zoom {
-            animation: animatezoom 1s
-        }
+        .postit-tp8>a {
+			text-decoration: none;
+		}
 
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
+		.postit-tp8>a:hover {
+			text-decoration: underline;
+		}
 
-            to {
-                transform: scale(1)
-            }
-        }
-
-        body {
-            max-width: 700px;
-            margin: auto;
-            padding: 10px;
-        }
-
-
-        h1 {
-            margin-top: 0px;
-
-            font-family: pixel;
-        }
-
-        h2 {
-            margin-top: 10px;
-
-            font-family: pixel;
-        }
-
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: pixel;
-        }
-
-        .margemAcima {
-            margin-top: 80px;
-        }
-
-        .margemAbaixo {
-            margin-bottom: 50px;
-        }
+       
     </style>
 
 </head>
@@ -125,19 +84,25 @@
 
     <div class="topico">
 
-        <div class="centerBar w3-padding-24">
+        <div class="centerBar w3-padding">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
 
-                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
-
-                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></a>
-
-            </div>
-        </div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
 
 
 
@@ -172,7 +137,7 @@
 
         <p id="resp0"></p>
 
-        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
 
         <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -224,7 +189,7 @@
         <div class="w3-center ">
 
 
-            <h2> <img src="micro2.png" alt="microfone" width="84" height="84"> Duvid - Entrevista</h2>
+            <h2 class="fontePixel"> <img src="micro2.png" alt="microfone" width="84" height="84"> Duvid - Entrevista</h2>
 
 
             <p><strong>Essa semana temos a honra de receber o Planeta Terra.</strong> </p>
@@ -348,7 +313,7 @@
             pensa dos humanos? </p>
 
         <p><strong>Terra:</strong> É uma pergunta muito difícil, pois se compararmos minha história e
-            colocá-la no tempo de 01 ano humano, ou seja, 365 dias, os humanos só teriam surgidos na última hora antes
+            colocá-la no tempo um ano humano, ou seja, 365 dias, os humanos só teriam surgidos na última hora antes
             da meia-noite no dia 31 de dezembro. Os humanos são pequenos e frágeis, mas juntos podem construir grandes
             obras. Em relação ao tamanho, não ocupam muito meu espaço, pois as cidades são pontos pequenos em comparação
             com minha superfície. Eu sempre digo que há espaço para todos, resta saber o que os humanos farão com toda
@@ -356,7 +321,7 @@
 
         <p><strong>Duvid:</strong> Gostaríamos de agradecer por seu depoimento e nos vemos sempre,
             pois vivemos em sua superfície em permanente processo de transformação, mas não em nosso tempo humano, mas
-            sim no tempo do Planeta Terra. </p>
+            sim no seu tempo, na dinâmica do Planeta Terra. </p>
 
 
 
@@ -429,7 +394,7 @@
         <div class="area "><img id="imagem2" src="tp8f2.png" alt="tp8f2" class="w3-mobile" style=display:none></div>
 
 
-        <span class="paragrafo citacao" id="citacao2" style=display:none> Fonte: Fonte: Wikipedia. </span>
+        <div class="w3-margin-left"><span class="paragrafo citacao" id="citacao2" style=display:none> Fonte: Fonte: Wikipedia. </span></div>
 
         <p>Já o período Proterozoico (com duração de cerca de 2 bilhões de anos) é marcado pela
             existência e acúmulo de oxigênio na atmosfera e a formação dos primeiros vertebrados. </p>
@@ -660,7 +625,7 @@
                 da Terra, solidificação dos minerais e formação das primeiras rochas oriundas do interior da Terra
                 (magma). </p>
 
-            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+            <div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
 
 
             <p id="resp1a"></p>
@@ -692,7 +657,7 @@
 
 
 
-            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+            <div class="w3-margin"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
 
 
             <p id="resp1b"></p>
@@ -715,7 +680,7 @@
                 nosso planeta, que tem cerca de 4,6 bilhões de anos, foi dividida pelos geólogos em escalas de tempo
                 como forma de melhor organizar a compreensão sobre a passagem da evolução da Terra.</p>
 
-            <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+            <div class="w3-margin"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
 
        
 
@@ -752,23 +717,23 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Assinale verdadeiro ou falso para a afirmação a seguir: " A Era Mesozoica significa vida
+        <h4>Assinale verdadeiro ou falso para a afirmação a seguir: " A Era Mesozoica significa vida
             intermediária. É quando surgiram grande atividade vulcânica no planeta e ocorreram a formação das bacias
-            sedimentares.Do mesmo modo, apareceram os primeiros mamíferos e aves, répteis gigantescos, como os
-            dinossauros, dentre outros".</h3>
+            sedimentares. Do mesmo modo, apareceram os primeiros mamíferos e aves, répteis gigantescos, como os
+            dinossauros, dentre outros".</h4>
 
 
 
-        <button class="desativar1 p4 area"
+        <button class="desativar1 p4 area w3-padding w3-margin "
             onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'essa foi bem tranquila','1'); this.style.backgroundColor='lightgreen'">Verdadeiro</button>
 
 
-        <button class="desativar1 p4 area"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">Falso</button>
 
 
 
-        <span id="resp1"></span>
+        <p id="resp1"></p>
 
         <div class="area">
             <p><img src="globinhoPe.png" id="globinho1" style="display:none" alt="globinho1" width="64" height="64">
@@ -791,16 +756,16 @@
             há 4,5 bilhões de anos. E Proterozoica (vida em desenvolvimento com a formação das rochas sedimentares e
             aprimoramento da vida).</h3>
 
-        <button class="desativar2 p4 area"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">Verdadeiro</button>
 
 
-        <button class="desativar2 p4 area"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'isso mesmo, a resposta certa é era Pré-Cambriana','1'); this.style.backgroundColor='lightgreen'">Falso</button>
 
 
 
-        <span id="resp2"></span>
+        <p id="resp2"></p>
 
         <div class="area">
             <p><img src="globinhoPe.png" id="globinho2" style="display:none" alt="globinho2" width="64" height="64">
@@ -1061,28 +1026,28 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Qual a importância do campo magnético para a Terra?</h3>
+        <h4>Qual a importância do campo magnético para a Terra?</h4>
 
-        <button class="desativar3 p4 area"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">a)
             a) fornecem energia para a Terra.</button>
 
 
-        <button class="desativar3 p4 area"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'essa foi um pouco complicada, mas se saiu bem','1'); this.style.backgroundColor='lightgreen'">b)
             protege a Terra dos ventos solares;
 
         </button>
 
 
-        <button class="desativar3 p4 area"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">c)
             atraem outros astros para a Terra.</button>
 
 
 
 
-        <span id="resp3"></span>
+        <p id="resp3"></p>
 
         <div class="area">
             <p><img src="globinhoPe.png" id="globinho3" style="display:none" alt="globinho3" width="64" height="64">
@@ -1127,29 +1092,29 @@
 
         <p class="caixa"> Teste sua habilidade</p>
 
-        <h3>A figura abaixo ilustra qual tipo de fenômeno?</h3>
+        <h4>A figura abaixo ilustra qual tipo de fenômeno?</h4>
 
         <div class="area"><img id="imagem16" src="tp8f16.png" alt="tp8f16" class="w3-mobile">
         </div>
 
-        <button class="desativar4 p4 area"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">a)
             o campo magnético da Terra.</button>
 
 
-        <button class="desativar4 p4 area"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4','identificou bem a dinâmica das ondas sísmicas, ganhou mais um globinho','1'); this.style.backgroundColor='lightgreen'">b)
             as ondas sísmicas P e S.</button>
 
 
-        <button class="desativar4 p4 area"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">c)
             movimento de convecção.</button>
 
 
 
 
-        <span id="resp4" class="area"></span>
+        <p id="resp4" class="area"></p>
 
         <div class="area">
             <p><img src="globinhoPe.png" id="globinho4" style="display:none" alt="globinho4" width="64" height="64">
@@ -1168,8 +1133,8 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>A figura abaixo apresenta a distribuição percentual dos minerais na crosta terrestre e no
-            planeta.</h3>
+        <h4>A figura abaixo apresenta a distribuição percentual dos minerais na crosta terrestre e no
+            planeta.</h4>
 
         <div class="area"><img id="imagem17" src="tp8f17.png" alt="tp8f17" class="w3-mobile">
         </div>
@@ -1179,18 +1144,18 @@
         <p>Quais elementos são predominantes na crosta terrestre e qual a importância desse
             conhecimento? </p>
 
-        <button class="desativar5 p4 area"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">a)
             K, Mg, Ca – fertilização do solo.</button>
 
 
 
-        <button class="desativar5 p4 area"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">b)
             O, Al, Si – fabricação de produtos industriais</button>
 
 
-        <button class="desativar5 p4 area"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">c)
             Si, Al, O – desenvolvimento tecnológico.</button>
 
@@ -1199,7 +1164,7 @@
 
 
 
-        <span id="resp5"></span>
+        <p id="resp5"></p>
 
         <div class="area">
             <p><img src="globinhoPe.png" id="globinho5" style="display:none" alt="globinho5" width="64" height="64">
@@ -1217,7 +1182,7 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Sobre as camadas da Terra, marque a alternativa correta:</h3>
+        <h4>Sobre as camadas da Terra, marque a alternativa correta:</h4>
 
 
         <p> Crosta terrestre - Camada mais superficial da litosfera (camada sólida da Terra). Varia de
@@ -1239,24 +1204,24 @@
             espessura. Encontra-se em estado sólido. </p>
 
 
-        <button class="desativar6 p4 area"
+        <button class="desativar6 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','1');this.style.backgroundColor='tomato'">a)
             VVVF.</button>
 
 
-        <button class="desativar6 p4 area"
+        <button class="desativar6 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp6','globinho6', 'desativar6', 'bacana, essa foi a penúltima questão','1'); this.style.backgroundColor='lightgreen'">b)
             VFFV.</button>
 
 
-        <button class="desativar6 p4 area"
+        <button class="desativar6 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp6','globinho6', 'desativar6','1');this.style.backgroundColor='tomato'">c)
             VVVF.</button>
 
 
 
 
-        <span id="resp6"></span>
+        <p id="resp6"></p>
 
         <div class="area">
             <p><img src="globinhoPe.png" id="globinho6" style="display:none" alt="globinho6" width="64" height="64">
@@ -1273,21 +1238,21 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>A figura abaixo mostra o planeta Terra em outra fase de sua evolução geológica em
-            comparação com a atual.</h3>
+        <h4>A figura abaixo mostra o planeta Terra em outra fase de sua evolução geológica em
+            comparação com a atual.</h4>
 
         <div class="area"><img id="imagem18" src="tp8f18.png" alt="8" class="w3-mobile">
         </div>
 
 
 
-        <button class="desativar7 p4 area"
+        <button class="desativar7 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp7','globinho7', 'desativar7', 'foi muito bem, esta foi a última, parabéns!','1'); this.style.backgroundColor='lightgreen'">a)
             Resfriamento do planeta com formação de uma crosta mais espessa. Lançamento de vapores e gases do interior
             da Terra devido atividades vulcânicas.</button>
 
 
-        <button class="desativar7 p4 area"
+        <button class="desativar7 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">b)
             aparecimento dos primeiros hominídeos na era Cenozoica. Formação dos atuais contornos dos continentes e
             oceanos.</button>
@@ -1296,14 +1261,14 @@
 
 
 
-        <button class="desativar7 p4 area"
+        <button class="desativar7 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">c)
             Formação de grandes depósitos de petróleo no fundo dos oceanos. Surgimento dos mamíferos e dos grandes
             répteis. Grandes erupções vulcânicas.</button>
 
 
 
-        <span id="resp7"></span>
+        <p id="resp7"></p>
 
         <div class="area">
             <p><img src="globinhoPe.png" id="globinho7" style="display:none" alt="globinho7" width="64" height="64">
@@ -1424,7 +1389,7 @@
 
 
             <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom w3-padding" style="max-width:600px">
 
                     <div class="w3-center w3-padding-48">
                         <span onclick="document.getElementById('id01').style.display='none'"

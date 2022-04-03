@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/jstextos.js"></script>
+	<script src="../../../estilos/jstextos.js" Defer></script>
 
 	<title>Texto05</title>
 
@@ -30,7 +30,7 @@
 	<style>
 		.topico {
 			display: none;
-			
+
 		}
 
 		.topico:nth-child(1),
@@ -39,23 +39,19 @@
 		}
 
 
-		.larguraBar {
-			max-width: 680px;
-		}
 
 		.postit-tp5 {
-			background: #906dd1;
+			background-color: #fd6fc2;
 			width: 250px;
 			height: auto;
 			padding: 20px;
 			font-family: pixel;
 			margin-bottom: 60px;
 			margin-top: 60px;
-
-
 			position: relative;
 			Color: white;
 			font-size: 18px;
+
 			box-shadow: 2px 4px 6px #444;
 			-moz-box-shadow: 2px 4px 6px #444;
 			-webkit-box-shadow: 2px 4px 6px #444;
@@ -66,36 +62,13 @@
 			-ms-transform: rotate(-3deg);
 		}
 
-		.zoom {
-			animation: animatezoom 1s
+		.postit-tp5>a {
+			text-decoration: none;
 		}
 
-		@keyframes animatezoom {
-			from {
-				transform: scale(0)
-			}
-
-			to {
-				transform: scale(1)
-			}
+		.postit-tp5>a:hover {
+			text-decoration: underline;
 		}
-
-		body {
-			max-width: 700px;
-			margin: auto;
-			padding: 10px;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			padding: 10px;
-			font-family: pixel;
-		}
-
 
 
 
@@ -111,7 +84,8 @@
 			margin-top: -20px;
 			line-height: 20px;
 			position: relative;
-			font-size: 24px;
+			font-size: 18px;
+
 			box-shadow: 2px 4px 6px #444;
 			-moz-box-shadow: 2px 4px 6px #444;
 			-webkit-box-shadow: 2px 4px 6px #444;
@@ -121,6 +95,15 @@
 			-o-transform: rotate(-3deg);
 			-ms-transform: rotate(-3deg);
 		}
+
+		.postit-tp5a>a {
+			text-decoration: none;
+		}
+
+		.postit-tp5a>a:hover {
+			text-decoration: underline;
+		}
+
 
 		.postit-tp5b {
 			background: #ffd257;
@@ -133,7 +116,8 @@
 			line-height: 20px;
 			position: relative;
 			margin: auto;
-			font-size: 24px;
+			font-size: 18px;
+
 			box-shadow: 2px 4px 6px #444;
 			-moz-box-shadow: 2px 4px 6px #444;
 			-webkit-box-shadow: 2px 4px 6px #444;
@@ -144,14 +128,13 @@
 			-ms-transform: rotate(-3deg);
 		}
 
-		.margemAcima {
-			margin-top: 80px;
+		.postit-tp5b>a {
+			text-decoration: none;
 		}
 
-		.margemAbaixo {
-			margin-bottom: 50px;
+		.postit-tp5b>a:hover {
+			text-decoration: underline;
 		}
-
 	</style>
 
 </head>
@@ -162,17 +145,25 @@
 
 	<div class="topico">
 
-		<div class="centerBar w3-padding-24">
+		<div class="centerBar w3-padding">
 			<!-- Navigation (Stays on Top) -->
 			<div class="w3-top w3-bar w3-black  larguraBar ">
-				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop ">1º ano</a>
-				<a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
-				<a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-						alt="tp3Foto4" width="32" height="32"></a>
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span  class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+						alt="tp3Foto4" width="32" height="32"></span>
 			</div>
 		</div>
 
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
 
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
 
 		<h1 id="h1"> Texto 05 - Projeções cartográficas </h1>
 
@@ -204,7 +195,7 @@
 
 
 		<p id="caixaNomeAluno">Digite seu nome</p>
-		
+
 		<div class="area">
 			<input class="input" type="text" id="pq0" name="pq0">
 		</div>
@@ -212,7 +203,7 @@
 
 		<p id="resp0"></p>
 
-		<p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+		<button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
 
 		<button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -275,7 +266,7 @@
 		<p> A ideia principal é <span onclick="Aparecer('imagem1','citacao1')"><mark>esta:</mark></span> </p>
 
 		<img id="imagem1" src="tp5f1.png" alt="tp5f1" class="w3-mobile" style=display:none>
-		
+
 
 		<span class="paragrafo citacao" id="citacao1" style=display:none> Fonte: Organizado pelo autor. </span>
 
@@ -305,7 +296,8 @@
 		<div class="area"><img id="imagem2" src="tp5f2.png" alt="tp5f2" class="w3-mobile" style=display:none>
 		</div>
 
-		<span class="paragrafo citacao" id="citacao2" style=display:none> Fonte: Fonte: Moreira e Sene (2016, p. 60). </span>
+		<span class="paragrafo citacao" id="citacao2" style=display:none> Fonte: Fonte: Moreira e Sene (2016, p. 60).
+		</span>
 
 
 
@@ -328,7 +320,8 @@
 		</div>
 
 
-		<span class="paragrafo citacao" id="citacao4" style=display:none> Fonte: Fonte: Moreira e Sene (2016, p. 60). </span>
+		<span class="paragrafo citacao" id="citacao4" style=display:none> Fonte: Fonte: Moreira e Sene (2016, p. 60).
+		</span>
 
 		<p> Já na projeção <span onclick="Aparecer('imagem5','citacao5')"><mark>cônica</mark></span>,
 			o globo parece estar envolvido por um cone de papel no qual são projetados os paralelos e os meridianos.
@@ -354,17 +347,17 @@
 
 		<h3>Quais são os três tipos principais de projeções cartográficas?</h3>
 
-		<button class="desativar1 p4 w3-padding"
+		<button class="desativar1 p4 w3-padding w3-margin"
 			onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">a)
 			Cilíndrico, perpendicular e cônico.</button>
 		<br>
 
-		<button class="desativar1 p4 w3-padding"
+		<button class="desativar1 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'legal, essa foi bem fácil, ganhou seu primeiro globinho. Este é, aliás, a projeção mais próxima da realidade que temos','1'); this.style.backgroundColor='lightgreen'">b)
 			Cilíndrico, plano ou azimutal e cônico.</button>
 		<br>
 
-		<button class="desativar1 p4 w3-padding"
+		<button class="desativar1 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">c)
 			Cilíndrico, cônico e esférico.</button>
 		<br>
@@ -419,28 +412,34 @@
 
 		<p class="caixa"> Teste seu conhecimento</p>
 
-		<div class="w3-padding">
-			<p class="w3-panel w3-leftbar w3-sand">Um mapa é a representação, sobre uma superfície plana, folha de papel ou monitor de vídeo,
-				da superfície terrestre, que é uma superfície curva. (JOLY, 1990). </p>
+
+		<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+			<p class="w3-sand">
+				Um mapa é a representação, sobre uma superfície plana, folha de papel ou monitor de vídeo,
+				da superfície terrestre, que é uma superfície curva.<span class="w3-small"> (JOLY, 1990).</span>
+			</p>
+
 		</div>
+
 
 		<p> A passagem de uma para outra suscita (provoca) várias dificuldades, dentre elas: </p>
 
-		
-			<button class="desativar2 p4 w3-padding"
-				onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">a)
-				permitir representar fielmente a realidade com todos seus detalhes.</button>
-			
-			<button class="desativar2 p4 w3-padding"
-				onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">b)
-				gerar distorções em todo o mapa.</button>
-				<br>
-		
-			<button class="desativar2 p4 w3-padding"
-				onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">c)
-				gerar distorções em algumas áreas do mapa.</button>
-		
-		
+
+		<button class="desativar2 p4 w3-padding w3-margin"
+			onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">a)
+			permitir representar fielmente a realidade com todos seus detalhes.</button>
+
+		<button class="desativar2 p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">b)
+			gerar distorções em todo o mapa.</button>
+		<br>
+
+		<button class="desativar2 p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">c)
+			gerar distorções em algumas áreas do mapa.</button>
+
+
 
 		<p id="resp2"></p>
 
@@ -475,8 +474,8 @@
 
 		<span class="paragrafo citacao" id="citacao7" style=display:none> Fonte: Fonte: Wikipedia. </span>
 
-		<div class="w3-panel w3-light-blue">
-			<p> <mark>Características principais:</mark></p>
+		<div class="w3-panel w3-light-gray">
+			<p> <strong>Principais características</strong>:</p>
 			<ul>
 				<li>
 					<p>Apresenta paralelos retos e horizontais e os meridianos retos e verticais;</p>
@@ -512,6 +511,7 @@
 
 
 		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<br>
 		<hr>
 
 	</div>
@@ -532,21 +532,15 @@
 			e Europa parece maiores do que são. </p>
 
 
+		<button class="desativar3 p4 w3-padding w3-margin area"
+			onclick="MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','');this.style.backgroundColor='tomato'">Verdadeiro</button>
 
 
 
+		<button class="desativar3 p4 w3-padding w3-margin area"
+			onclick="MostrarProximo(this);MostrarFrase('resp3','globinho3', 'desativar3', 'essa foi bem fácil ', '1'); this.style.backgroundColor='lightgreen'">
+			Falso</button>
 
-
-	
-			<button class="desativar3 p4 w3-padding"
-				onclick="MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','');this.style.backgroundColor='tomato'">Verdadeiro</button>
-
-				<br>
-			
-			<button class="desativar3 p4 w3-padding"
-				onclick="MostrarProximo(this);MostrarFrase('resp3','globinho3', 'desativar3', 'essa foi bem fácil ', '1'); this.style.backgroundColor='lightgreen'">
-				Falso</button>
-			
 
 
 		<p id="resp3"></p>
@@ -575,16 +569,16 @@
 
 		<form id="check">
 
-			
+
 			<input type="checkbox" id="r1" name="r1">
-			<label > privilegia (favorece) a Europa em detrimento (prejuízo) de outras
+			<label> privilegia (favorece) a Europa em detrimento (prejuízo) de outras
 				áreas.</label><br><br>
 
 			<input type="checkbox" id="r2" name="r2">
-			<label > aumenta as terras do hemisfério Norte em relação ao Sul;</label><br><br>
+			<label> aumenta as terras do hemisfério Norte em relação ao Sul;</label><br><br>
 
 			<input type="checkbox" id="r3" name="r3">
-			<label>  respeita as dimensões reais dos territórios;</label><br><br>
+			<label> respeita as dimensões reais dos territórios;</label><br><br>
 
 			<input type="checkbox" id="r4" name="r4">
 			<label> representa de modo preciso a forma dos continentes e as linhas da
@@ -594,14 +588,14 @@
 
 		</form>
 
-		
-			<div class="w3-padding-48">
-				<button class="btnShow " id="buttoncheck1"
-					onclick="confereBox('acertou, parabéns', 'resp40','globinho40')">Conferir</button>
-			</div>
-				
-		
-		
+
+		<div class="w3-padding-48">
+			<button class="btnShow " id="buttoncheck1"
+				onclick="confereBox('acertou, parabéns', 'resp40','globinho40')">Conferir</button>
+		</div>
+
+
+
 		<p id="resp40"></p>
 
 
@@ -647,40 +641,41 @@
 
 
 
-<div class="w3-panel w3-light-green">
-	
-			<p> Principais características:</p>
-	
+		<div class="w3-panel w3-light-gray">
+
+			<p> <strong>Principais características</strong>:</p>
+
 			<ul>
-	
-	
+
+
 				<li>
 					<p>Altera as formas para manter as reais proporções dos continentes;</p>
 				</li>
-	
+
 				<li>
 					<p>Apesar de deformar as áreas, procura mantê-las mais próximas do tamanho real;
 					</p>
 				</li>
-	
+
 				<li>
 					<p>Destaca o continente africano no centro;</p>
 				</li>
-	
+
 				<li>
 					<p>Propõe a valorização do mundo subdesenvolvido, mostrando sua área real.</p>
 				</li>
-	
-	
+
+
 			</ul>
-</div>
+		</div>
 
 		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
 		<hr>
 
+
 	</div>
 
-	<div class="topico">
+	<div class="topico margemAcima">
 
 		<p class="caixa"> Teste seu conhecimento</p>
 
@@ -689,12 +684,12 @@
 			terceiro-mundista, uma vez que, em comparação com a de Mercator, é mais fiel entre as verdadeiras áreas dos
 			países, sendo a América Latina, África e Ásia ficam em destaque.</h4>
 
-		<button class="desativar4 p4 w3-padding"
+		<button class="desativar4 p4 w3-padding w3-margin"
 			onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">a)
 			falso.</button>
 		<br>
 
-		<button class="desativar4 p4 w3-padding"
+		<button class="desativar4 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'bacana, Peters oferece outra visão de mundo','1'); this.style.backgroundColor='lightgreen'">b)
 			Verdadeiro.</button>
 		<br>
@@ -748,7 +743,7 @@
 
 
 		<p class="paragrafo citacao" id="citacao10" style=display:none> Fonte: Organizado pelo autor. </p>
-		
+
 		<p>Ou uma projeção plana da
 
 			<span onclick="Aparecer('imagem11','citacao11')"><mark>América do Norte.</mark></span>
@@ -805,7 +800,7 @@
 
 
 		<div class="w3-panel w3-light-gray">
-			<p>Principais características: </p>
+			<p><strong>Principais características</strong>: </p>
 			<ul>
 				<li>Apresenta paralelos circulares e meridianos radiais, isto é, retas que se originam de um
 					único ponto;
@@ -841,17 +836,17 @@
 		<p> Sobre essa projeção cartográfica, complete, respectivamente, as lacunas do trecho acima:
 		</p>
 
-		<button class="desativar5 p4 w3-padding"
+		<button class="desativar5 p4 w3-padding w3-margin"
 			onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">a)
 			azimutal equidistante / local de escolha / máxima / distorções diminuem.</button>
 		<br>
 
-		<button class="desativar5 p4 w3-padding"
+		<button class="desativar5 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'muito bem, essa pode ser considerada difícil, ganhou o dobro de globinhos','2'); this.style.backgroundColor='lightgreen'">b)
 			azimutal equidistante / centro de projeção / mínima / distorções aumentam.</button>
 		<br>
 
-		<button class="desativar5 p4 w3-padding"
+		<button class="desativar5 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">c)
 			azimutal equidistante / centro de distorção / máxima / distorções aumentam.</button>
 		<br>
@@ -909,7 +904,7 @@
 	</div>
 
 
-	<div class="topico">
+	<div class="topico margemAcima">
 
 
 		<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
@@ -944,7 +939,7 @@
 
 		<div class="area"><img id="imagem17" src="tp5f17.png" alt="tp5f17" class="w3-mobile" style=display:none>
 		</div>
-	
+
 
 		<span class="paragrafo citacao" id="citacao17" style=display:none> Fonte: commons.wilimedia.org. </span>
 
@@ -1001,9 +996,9 @@
 		<p class="caixa"> Agora é com você!</p>
 
 
-		<p class="divCaixa1">Vamos analisar diferentes tipos de mapas temáticos com distintas projeções
+		<h4 class="divCaixa1 w3-margin">Vamos analisar diferentes tipos de mapas temáticos com distintas projeções
 			cartográficas. Dividam-se em grupos de 3 alunos e escolham 3 mapas com projeções cilíndricas, planas e
-			cônicas respectivamente.</p>
+			cônicas respectivamente.</h4>
 
 
 
@@ -1014,7 +1009,7 @@
 
 
 			<li>
-				<p class="divCaixa1">Quais as diferenças entre os mapas a partir das projeções; </p>
+				<h4 class="divCaixa1 w3-margin">Quais as diferenças entre os mapas a partir das projeções; </h4>
 			</li>
 
 			<li>
@@ -1023,7 +1018,7 @@
 			</li>
 
 			<li>
-				<p class="divCaixa1">Vantagens e desvantagens do uso de determinada projeção..</p>
+				<h4 class="divCaixa1 w3-margin">Vantagens e desvantagens do uso de determinada projeção..</h4>
 			</li>
 
 
@@ -1034,9 +1029,9 @@
 		</p>
 
 
-		<p class="divCaixa1">Tempo da atividade. 15 minutos. </p>
+		<h4 class="divCaixa1 w3-margin">Tempo da atividade. 15 minutos. </h4>
 
-	
+
 		<p id="resp10"></p>
 
 		<button class="btnShow"
@@ -1070,7 +1065,7 @@
 
 
 			<div id="id01" class="w3-modal">
-				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-padding" style="max-width:600px">
 
 					<div class="w3-center"><br>
 						<span onclick="document.getElementById('id01').style.display='none'"
@@ -1095,7 +1090,7 @@
 
 
 
-	
+
 	<div class="margemAcima">
 
 		<span id="txtBarra">0%</span>
@@ -1113,33 +1108,37 @@
 
 		<h3><strong>Para saber mais:</strong></h3>
 
-	
 
-		<div class="postit-tp5 margemAbaixo">
-			<a href="https://www.bbc.com/portuguese/internacional-39349115" target="_blank"> O que é a projeção
-				Gall-Peters, mapa que promete acabar com '4 séculos de visão colonialista' do mundo. </a>
+		<div class="justificadoDireita">
+
+			<div class="postit-tp5 margemAbaixo">
+				<a href="https://www.bbc.com/portuguese/internacional-39349115" target="_blank"> O que é a projeção
+					Gall-Peters, mapa que promete acabar com '4 séculos de visão colonialista' do mundo. </a>
+
+			</div>
 
 		</div>
 
-		
 
 
 
 		<div class="postit-tp5a margemAbaixo">
-			<a href="https://observablehq.com/@d3/projection-transitions" target="_blank"> Transições de projeções</a>
+			<a href="https://observablehq.com/@d3/projection-transitions" target="_blank"> Transições de projeções.</a>
 
 		</div>
 
-	
 
 
 
-		<div class="postit-tp5b margemAbaixo">
-			<a href="https://www.mdig.com.br/index.php?itemid=29149" target="_blank"> 40 mapas que irão ajudá-lo a
-				entender melhor o mundo</a>
+		<div class="justificadoDireita">
 
+			<div class="postit-tp5b margemAbaixo w3-margin">
+				<a href="https://www.mdig.com.br/index.php?itemid=29149" target="_blank"> 40 mapas que irão ajudá-lo a
+					entender melhor o mundo.</a>
+
+			</div>
 		</div>
-	
+
 
 
 

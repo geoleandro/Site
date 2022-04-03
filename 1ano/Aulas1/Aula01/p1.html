@@ -10,16 +10,16 @@
 	<link rel="stylesheet" href="../../../estilos/questoes.css">
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
-
+	<script src="../../../estilos/javascript.js" defer></script>
 
 
 
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
 
 	<!-- Navigation (Stays on Top) -->
 	<div class="w3-top w3-bar w3-black larguraBar w3-large">
@@ -31,13 +31,16 @@
 
 
 
-
 	</div>
+
+	
 
 
 	<h1 class="h1"> Questões aula 01 - Conceitos fundamentais da Geografia: Espaço geográfico, território, lugar,
 		paisagem
 		e região.</h1>
+
+		
 
 
 	<p>
@@ -48,6 +51,16 @@
 		<strong>Objetivo:</strong> Correlacionar os principais conceitos da geografia na explicação das desigualdades
 		socioespaciais do mundo atual.
 	</p>
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+	
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
 
 
 	<form id="quiz" name="quiz" onsubmit="verificar()">
@@ -404,13 +417,13 @@
 
 
 			<p class="bordaQuestoes" id="q8a"><input type="radio"  name="pq8" value="a"> a) Rodovias e
-				legislação</p>
+				legislação.</p>
 			<p class="bordaQuestoes" id="q8b"><input type="radio"  name="pq8" value="b"> b) Hidrelétricas e
-				praiass</p>
+				praias.</p>
 			<p class="bordaQuestoes" id="q8c"><input type="radio"  name="pq8" value="c"> c) Fluxo de comunicação
-				e fluxo de informação</p>
+				e fluxo de informação.</p>
 			<p class="bordaQuestoes" id="q8d"><input type="radio"  name="pq8" value="d"> d) Fábricas e fluxo de
-				informação</p>
+				informação.</p>
 
 		</div>
 
@@ -552,7 +565,7 @@
 
 
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 
@@ -769,7 +782,7 @@
 
 
 
-	<script src="../../../estilos/javascript.js"></script>
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>

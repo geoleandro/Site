@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js"></script>
+    <script src="../../../estilos/jstextos.js" defer></script>
 
     <title>Texto10</title>
 
@@ -30,7 +30,7 @@
     <style>
         .topico {
             display: none;
-            margin-top: 0px;
+           
         }
 
         .topico:nth-child(1),
@@ -39,9 +39,7 @@
         }
 
 
-        .larguraBar {
-            max-width: 680px;
-        }
+        
 
         .postit-tp10 {
             background: #eeff8c;
@@ -77,62 +75,7 @@
             text-decoration: underline;
         }
 
-
-        .zoom {
-            animation: animatezoom 1s
-        }
-
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
-
-            to {
-                transform: scale(1)
-            }
-        }
-
-        body {
-            max-width: 700px;
-            margin: auto;
-            padding: 10px;
-
-        }
-
-
-        h1 {
-            margin-top: 0px;
-
-
-        }
-
-        h2 {
-            margin-top: 0px;
-
-            font-family: pixel;
-            padding: 10px;
-        }
-
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: pixel;
-            padding: 10px;
-        }
-
-        #divFinal {
-            display: none;
-        }
-
-
-        .margemAcima {
-            margin-top: 50px;
-        }
-
-        .margemAbaixo {
-            margin-bottom: 70px;
-        }
+             
     </style>
 
 </head>
@@ -142,20 +85,25 @@
 
 
     <div class="topico">
+        <div class="centerBar w3-padding">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
 
-        <div class="centerBar w3-padding-24">
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
-
-                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
-
-                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></a>
-
-            </div>
-        </div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
 
 
 
@@ -450,13 +398,11 @@
 
     <div class="topico">
 
-        <div class="caixa">
-            <p>Teste suas habilidades</p>
-        </div>
+        <p class="caixa">Teste o seu conhecimento!</p>
 
-        <h3>
+        <h4>
             (Unimontes) Observe a figura:
-        </h3>
+        </h4>
 
         <div class="area"><img id="imagem9b" src="tp10f9b.png" alt="tp10f9b" class="w3-mobile"></div>
 
@@ -465,7 +411,7 @@
         <p> Os números 1, 2 e 3, na figura acima, representam, respectivamente:</p>
 
 
-        <button class="desativar1 area p4"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">
             a) terremoto, tsunami e magma. </button>
 
@@ -473,18 +419,18 @@
 
 
 
-        <button class="desativar1 area p4"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">
             b) movimento divergente, vulcão e fossa marinha.</button>
 
-        <button class="desativar1 area p4"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'muito bom, acertou sobre o afundamento da placa litosférica, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
             c) zona de subducção, placa tectônica oceânica e manto.</button>
 
 
 
 
-        <span id="resp1"></span>
+        <p id="resp1"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
@@ -505,23 +451,23 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Qual a idade da crosta oceânica?</h3>
+        <h4>Qual a idade da crosta oceânica?</h4>
 
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
 
             a) a mesma idade da crosta continental.
         </button>
 
 
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'bacana, o assoalho oceânico tem profunda relação com o movimento de convecção no manto, vamos continuar!','1'); this.style.backgroundColor='lightgreen'">
 
             b) mais jovem do que a crosta continental.
         </button>
 
 
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
             c) a ciência ainda não determinou sua idade.
         </button>
@@ -529,7 +475,7 @@
 
 
 
-        <span id="resp2"></span>
+        <p id="resp2"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
@@ -751,11 +697,11 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Qual a relação entre vulcões e placas tectônicas?</h3>
+        <h4>Qual a relação entre vulcões e placas tectônicas?</h4>
 
 
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'Parabéns, essa é uma área repleta de terremotos!','1'); this.style.backgroundColor='lightgreen'">
 
             a) a maior parte dos vulcões estão localizados nos limites de placas tectônicas, como o Círculo de Fogo do
@@ -763,7 +709,7 @@
 
         </button>
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
 
             b) a maior parte dos vulcões estão localizados nos limites divergentes de placas tectônicas.
@@ -774,7 +720,7 @@
 
 
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
 
             c) a maior parte dos vulcões são resultados do processo de hotspots.
@@ -784,7 +730,7 @@
 
 
 
-        <span id="resp3"></span>
+        <p id="resp3"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
@@ -802,9 +748,9 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>Qual a relação entre erupções e tipos de vulcões?</h3>
+        <h4>Qual a relação entre erupções e tipos de vulcões?</h4>
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
 
             a) as erupções liberam materiais piroclásticos
@@ -812,7 +758,7 @@
         </button>
 
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'certo, há erupções mais fluidas e outras mais explosivas!','1'); this.style.backgroundColor='lightgreen'">
 
             b) as erupções moldam a aparência dos vulcões.
@@ -820,7 +766,7 @@
         </button>
 
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
 
             c) as erupções determinam os tipos de magma.
@@ -830,7 +776,7 @@
 
 
 
-        <span id="resp4"></span>
+        <p id="resp4"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
@@ -962,7 +908,7 @@
             psicológico, inquietação civil, deslocamento de milhares de pessoas de suas casas, muitos mortos e feridos,
             dentre outros. </p>
 
-        <div class="w3-card w3-teal w3-padding">
+        <div class="w3-card w3-pale-green w3-padding">
             <p>Os terremotos podem causar efeitos destrutivos como: </p>
 
             <ul>
@@ -1026,7 +972,7 @@
         <p>Pode-se <span onclick="this.innerHTML='inferir (deduzir, tirar conclusões)'"><mark>inferir</mark></span> do
             texto acima que:</p>
 
-        <button class="desativar5 area p4"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
 
             a) os vulcões sempre entram em erupção de forma explosiva.
@@ -1036,14 +982,14 @@
         </button>
 
 
-        <button class="desativar5 area p4"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'acertou, o tempo geológico é muito extenso para se obter alguma previsão ainda.','1'); this.style.backgroundColor='lightgreen'">
 
             b) os vulcões são imprevisíveis e podem entrar em erupção a qualquer tempo.
         </button>
 
 
-        <button class="desativar5 area p4"
+        <button class="desativar5 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
 
             c) os vulcões estão sempre acompanhados de terremotos.
@@ -1053,7 +999,7 @@
 
 
 
-        <span id="resp5"></span>
+        <p id="resp5"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5"
@@ -1079,12 +1025,12 @@
 
         <form id="quiz" name="quiz">
 
-            <h3>Complete com o vocabulário relativo aos terremotos:</h3>
+            <h4>Complete com o vocabulário relativo aos terremotos:</h4>
 
 
             <p>a) ponto da superfície onde as ondas sísmicas são manifestadas: </p>
 
-            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+            <div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
 
 
             <p id="resp1a"></p>
@@ -1110,7 +1056,7 @@
 
 
 
-            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+            <div class="w3-margin"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
 
 
             <p id="resp1b"></p>
@@ -1130,7 +1076,7 @@
 
             <p>c) Escala utilizada para medir a magnitude dos terremotos.</p>
 
-            <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+            <div class="w3-margin"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
 
 
 
@@ -1280,7 +1226,7 @@
     <div class="topico">
 
         <p class="caixa"> Questione a realidade</p>
-        <div class="w3-card-4 w3-padding w3-margin-bottom w3-yellow">
+        <div class="w3-card-4 w3-padding w3-margin-bottom w3-pale-yellow">
             <h4> Em dupla, escreva no caderno e explique a relação entre tectonismo, vulcanismo e abalos sísmicos
                 baseado no tremor registrado na reportagem abaixo:</h4>
 
@@ -1323,7 +1269,7 @@
 
 
             <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom w3-padding" style="max-width:600px">
 
                     <div class="w3-center w3-padding-48">
                         <span onclick="document.getElementById('id01').style.display='none'"
@@ -1429,13 +1375,6 @@
 
     <script>
 
-
-
-
-        function AbrirDivFinal() {
-            document.getElementById("divFinal").style.display = "block";
-            loadquestion();
-        }
 
 
 

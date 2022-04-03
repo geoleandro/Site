@@ -12,20 +12,11 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
 
-	</script>
 
-	
 
 
 
@@ -37,7 +28,10 @@
 	<div class="w3-top w3-bar w3-black larguraBar">
 
 
-		<a href="../../../Duvid2Ano.html" class=" w3-button">2º ano</a>
+		<div class="w3-container">
+			<h5><a href="../../../Duvid2Ano.html" class=" w3-button">2º ano</a></h5>
+		</div>
+
 
 
 
@@ -48,20 +42,30 @@
 
 	<div class="w3-container w3-white ">
 
-        <p><strong>Conteúdo:</strong></p>
+		<p><strong>Conteúdo:</strong></p>
 
 		<ul class="w3-padding-32">
-            <li>  </li>
-            <li>            </li>
-            <li> </li>
-            <li>  </li>
-            <li> </li>
+			<li> 
+				Conteúdo: Energia; Petróleo, Carvão Mineral; Gás natural.
+				 </li>
+			<li> Clima; Tempo; Tipos de Clima: Equatorial, tropical, subtropical, tropical de altitude, tropical úmido, tropical semiárido.</li>
+			<li> Massas de ar: Equatorial continental, Equatorial Atlântica, Tropical Atlântica, Polar Atlântica, Tropical continental; Tipos de Chuvas; Ciclones.</li>
+			<li> Floresta amazônica; Mata Atlântica; Mata de Araucárias.</li>
+			<li> Mata dos Cocais, Pantanal, Cerrado, Caatinga, Pampas.</li>
 
-        </ul>
+		</ul>
 
-    </div>
+	</div>
 
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
 
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
 
 
 	<form id="quiz" name="quiz" onsubmit="verificar()">
@@ -72,60 +76,63 @@
 
 			<p class="p2">Questão 01</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (FUVEST 2009) Observe o gráfico a seguir. </p>
+
+
+			<div class="w3-center"><img src="s19q1.png" alt="s19q1" class="w3-mobile"></div>
+
+			<p>Com base nos seus conhecimentos e no gráfico, assinale a alternativa CORRETA.</p>
 
 
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
-
-
-
-			<!-- Copiar essa linha e colar em outra questão, alterando o nome da foto.				 -->
-			<div class="w3-center"><img src="" alt="t35q1" class="w3-mobile"></div>
 
 
 
 
 			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
 
-				Inserir alternativa a
+				a) A maior parte da oferta de energia no Brasil é proveniente de fontes renováveis, com reduzida
+				participação dos combustíveis fósseis.
 
 			</p>
 			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b">
-
-				Inserir alternativa b
+				b) A participação dos combustíveis provenientes de fontes renováveis é mais expressiva no restante do
+				mundo do que no Brasil.
 
 			</p>
 			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c">
 
-				Inserir alternativa c
-
+				c) A participação das fontes renováveis é majoritária mundialmente, com destaque para a biomassa e a
+				hidreletricidade.
 			</p>
 			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d">
 
-				Inserir alternativa d
+				d) A participação do carvão mineral na oferta interna de energia do Brasil é maior do que no restante do
+				mundo.
 
 			</p>
 			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e">
 
-				Inserir alternativa e
+				e) Os combustíveis fósseis representam mais de 50% da oferta de energia, tanto no Brasil quanto no
+				mundo.
 
 			</p>
 
-			<div class="comentarios">
 
-				<p> <strong>Comentário:</strong></p>
+			<div class="comentarios ">
 
-				<p> </p>
-
-				<p> </p>
+				<!-- <p> <strong>Comentário:</strong></p>
 
 				<p> </p>
 
 				<p> </p>
 
 				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
 
 
 			</div>
@@ -143,46 +150,49 @@
 
 			<p class="p2">Questão 02</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (UFPE) Leia com atenção o texto a seguir e observe o climograma: </p>
+
+			<p>“Esses climas não conhecem a estação fria, pois a mais baixa temperatura no mês menos quente não desce
+				abaixo de 18ºC. Não apresentam estação seca e os índices pluviométricos anuais superam os 2.000mm. As
+				amplitudes térmicas anuais, nas áreas onde predominam, são insignificantes, mas os valores de umidade
+				relativa do ar apresentam-se, durante todo o ano, muito elevados.” Em relação ao enunciado acima, é
+				correto afirmar que o clima é:</p>
+
+			<div class="w3-center"><img src="s19q2.png" alt="s19q2" class="w3-mobile"></div>
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
+
 
 
 			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
 
-				a)
-				Inserir alternativa a
+				a) subtropical.
 
 			</p>
 			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
 
-				b)
-				Inserir alternativa b
+				b) tropical de altitude.
 
 			</p>
 			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c">
 
-				c)
-				Inserir alternativa c
+				c) equatorial.
 
 			</p>
 			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
 
-				d)
-				Inserir alternativa d
+				d) tropical.
 
 			</p>
 			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e">
 
-				e)
-				Inserir alternativa e
+				e) mesotérmico úmido.
 
 			</p>
 
 			<div class="comentarios">
 
-				<p> <strong>Comentário:</strong></p>
+				<!-- <p> <strong>Comentário:</strong></p>
 
 				<p> </p>
 
@@ -192,7 +202,7 @@
 
 				<p> </p>
 
-				<p> </p>
+				<p> </p> -->
 
 
 			</div>
@@ -211,46 +221,67 @@
 
 			<p class="p2">Questão 03</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (URCA 2017) De acordo com a influência de massas de ar, podemos dividir o território brasileiro em cinco
+				principais tipos climáticos. Relacione a 2ª coluna de acordo com a 1ª e indique a alternativa correta:
+			</p>
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
+			<p>I. Clima Equatorial Úmido</p>
+
+			<p>II. Clima Litorâneo Úmido</p>
+
+			<p>III. Clima Tropical Alternadamente Úmido e Seco</p>
+
+			<p>IV. Clima Tropical tendendo a Seco ou Semiárido</p>
+
+			<p>V. Clima Subtropical Úmido.</p>
+
+			<p> ( ) É um tipo de clima tropical, portanto quente, com médias anuais de pluviosidade geralmente
+				inferiores a 1.000mm. As chuvas se concentram num período curto como no interior do Estado da Paraíba,
+				por exemplo.</p>
+
+			<p>( ) As médias pluviométricas oscilam entre 1.500 e 2.000 mm/ano; abrangendo a porção do território
+				brasileiro próxima ao litoral, desde o Rio Grande do Norte até a parte setentrional do Estado de São
+				Paulo.</p>
+
+			<p>( ) Abrange a porção do território brasileiro localizada ao sul do Trópico de Capricórnio; é o tipo de
+				clima classificado como “mesotérmico”, isto é, de temperaturas médias.</p>
+
+			<p>( ) Abrange a Amazônia brasileira; quente e úmido, da convergência dos alísios.</p>
+
+			<p>( ) É um clima tropical típico, quente e semiúmido com uma estação chuvosa (verão) e outra seca
+				(inverno). Abrange Mato Grosso do Sul, Minas Gerais, trechos da Bahia e do Ceará, Maranhão e Piauí.</p>
 
 
 			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a">
 
-				a)
-				Inserir alternativa a
+				a) IV; II; V; I; III.
 
 			</p>
 			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b">
 
-				b)
-				Inserir alternativa b
+				b) II; V; IV; III; I.
 
 			</p>
 			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c">
 
-				c)
-				Inserir alternativa c
+				c) III; IV; I; V; II.
 
 			</p>
 			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d">
 
-				d)
-				Inserir alternativa d
+				d) IV; V; I; III; II.
 
 			</p>
 			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e">
 
-				e)
-				Inserir alternativa e
+				e) III; V; IV; II; I.
 
 			</p>
 
 			<div class="comentarios">
 
-				<p> <strong>Comentário:</strong></p>
+				<!-- <p> <strong>Comentário:</strong></p>
 
 				<p> </p>
 
@@ -260,7 +291,7 @@
 
 				<p> </p>
 
-				<p> </p>
+				<p> </p> -->
 
 
 			</div>
@@ -278,43 +309,42 @@
 
 			<p class="p2">Questão 04</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p>(ENEM 2016) A vegetação apresenta adaptações ao ambiente, como plantas arbóreas e arbustivas com raízes
+				que se expandem horizontalmente, permitindo forte ancoragem no substrato lamacento; raízes que se
+				expandem verticalmente, por causa da baixa oxigenação do substrato; folhas que têm glândulas para
+				eliminar o excesso de sais; folhas que podem apresentar cutícula espessa para reduzir a perda de água
+				por evaporação. As características descritas referem-se a plantas adaptadas ao bioma:
+			</p>
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
 
 
 			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a">
 
-				a)
-				Inserir alternativa a
+				a) Cerrado.
 
 			</p>
 
 			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b">
 
-				b)
-				Inserir alternativa b
+				b) Pampas.
 
 			</p>
 
 			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c">
 
-				c)
-				Inserir alternativa c
+				c) Pantanal.
 
 			</p>
 			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d">
 
-				d)
-				Inserir alternativa d
+				d) Manguezal.
 
 			</p>
 
 			<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e">
 
-				e)
-				Inserir alternativa e
+				e) Mata de Cocais.
 
 			</p>
 
@@ -322,15 +352,11 @@
 
 				<p> <strong>Comentário:</strong></p>
 
-				<p> </p>
+				<p>Bioma caracterizado pelo solo lamacento, com baixa oxigenação, no qual as raízes apresentam
+					pneumatóforos para captação do gás. Por estar localizado na região costeira, a salinidade da água
+					exige da vegetação glândulas nas folhas para eliminação do excesso de sais.
 
-				<p> </p>
 
-				<p> </p>
-
-				<p> </p>
-
-				<p> </p>
 
 
 			</div>
@@ -350,40 +376,48 @@
 
 			<p class="p2">Questão 05</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (FUVEST 2022) Uma forma de conservação do Cerrado é a prática de queimadas controladas que simulam o
+				ciclo natural do fogo. Observe a imagem que retrata os efeitos visuais de uma queimada controlada em um
+				trecho de Cerrado da Estação Ecológica de Santa Bárbara, no interior do estado de São Paulo. </p>
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
+			<div class="w3-center"><img src="s19q5.png" alt="s19q5" class="w3-mobile"></div>
+
+			<p>Nessa área foram conduzidos experimentos com queimadas controladas, e os resultados sugerem que essa
+				prática é benéfica para a flora, cujas plantas rebrotam rapidamente depois da passagem do fogo. Nos
+				grupos vegetais em que as queimadas produziram mais efeitos positivos foi registrado até um discreto
+				aumento de espécies vegetais. Antes das queimadas, os pesquisadores contabilizaram 38 espécies de
+				gramíneas e 68 de outras ervas. Depois, esses números subiram para 44 e 74, respectivamente. </p>
+
+			<p class="w3-small"> Durigan G et al. (2020), Front. For. Glob. Change, 3:13, doi:10.3389/ffgc.2020.00013.
+				Adaptado. </p>
+
+			<p>No bioma Cerrado, de acordo com a informação do texto, a prática de queimadas controladas </p>
 
 
 			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a">
 
-				a)
-				Inserir alternativa a
+				a) contribui para a manutenção da biodiversidade local.
 
 			</p>
 			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b">
 
-				b)
-				Inserir alternativa b
+				b) constitui uma técnica de ponta para o plantio agrícola.
 
 			</p>
 			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c">
 
-				c)
-				Inserir alternativa c
+				c) é uma técnica tradicional denominada agricultura itinerante.
 
 			</p>
 			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d">
 
-				d)
-				Inserir alternativa d
+				d) tem como objetivo permitir a pecuária extensiva.
 
 			</p>
 			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e">
 
-				e)
-				Inserir alternativa e
+				e) apresenta desvantagem em termos de ganho para a flora.
 
 			</p>
 
@@ -391,15 +425,11 @@
 
 				<p> <strong>Comentário:</strong></p>
 
-				<p> </p>
-
-				<p> </p>
-
-				<p> </p>
-
-				<p> </p>
-
-				<p> </p>
+				<p> Segundo as informações do enunciado, a prática de queimadas controladas pode contribuir para a
+					manutenção da biodiversidade do Cerrado e, até mesmo, provocar um aumento discreto de espécies
+					vegetais. A rebrota de algumas espécies do Cerrado depende da ação do fogo que ocorre naturalmente
+					em sua área de abrangência no território nacional, onde predomina o clima tropical marcado por
+					severos períodos de estiagem durante o inverno.</p>
 
 
 			</div>
@@ -420,40 +450,45 @@
 
 			<p class="p2">Questão 06</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (ENEM 2015) Tanto potencial poderia ter ficado pelo caminho, se não fosse o reforço em tecnologia que um
+				gaúcho buscou. Há pouco mais de oito anos, ele usava o bico da botina para cavoucar a terra e descobrir
+				o nível de umidade do solo, na tentativa de saber o momento ideal para acionar os pivôs de irrigação.
+				Até que conheceu uma estação meteorológica que, instalada na propriedade, ajuda a determinar a
+				quantidade de água de que a planta necessita. </p>
+
+			<p>Assim, quando inicia um plantio, o agricultor já entra no site do sistema e cadastra a área, o pivô, a
+				cultura, o sistema de plantio, o espaçamento entre linhas e o número de plantas, para então receber
+				recomendações diretamente dos técnicos da universidade.</p>
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
+			<p class="w3-small"> CAETANO, M. O valor de cada gota. Globo Rural, n. 312, out. 2011. </p>
+
+			<p>A implementação das tecnologias mencionadas no texto garante o avanço do processo de</p>
 
 
 			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
 
-				a)
-				Inserir alternativa a
+				a) monitoramento da produção.
 
 			</p>
 			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b">
 
-				b)
-				Inserir alternativa b
+				b) valorização do preço da terra.
 
 			</p>
 			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c">
 
-				c)
-				Inserir alternativa c
+				c) correção dos fatores climáticos.
 
 			</p>
 			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d">
 
-				d)
-				Inserir alternativa d
+				d) divisão de tarefas na propriedade.
 
 			</p>
 			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e">
 
-				e)
-				Inserir alternativa e
+				e) estabilização da fertilidade do solo.
 
 			</p>
 
@@ -461,16 +496,37 @@
 
 				<p> <strong>Comentário:</strong></p>
 
-				<p> </p>
+				<p> A tecnologia hoje disponível permite aos agricultores um monitoramento cada vez maior da produção
+					agrícola, tornando a atividade cada vez mais independente das variações ambientais. </p>
 
-				<p> </p>
+				<p> a) Correta. A introdução de novas tecnologias no campo promove a adequação das etapas produtivas a
+					processos que as otimizam, reforçando a expansão de uma agricultura científica globalizada que
+					confere racionalidade e aumento da produtividade à atividade agrícola moderna.
+				</p>
 
-				<p> </p>
+				<p>
+					b) Incorreta. O texto não faz menção ao aspecto econômico de valorização fundiária no campo, mas a
+					elementos técnicos vinculados à produção. </p>
 
-				<p> </p>
+				<p> c) Incorreta. Embora irrigação seja um processo utilizado para corrigir a ausência de umidade dos
+					solos, o tema principal que o texto aborda vincula-se à implementação de tecnologias no campo e às
+					mudanças que isso ocasiona. </p>
 
-				<p> </p>
+				<p> d) Incorreta. A divisão do trabalho na propriedade agrícola tecnificada tem sido restrita pelo uso
+					de tecnologias automatizadas capazes de centralizar cada vez mais o controle de todas as etapas da
+					produção. </p>
 
+
+				<p>
+					e) Incorreta. O excerto apresentado fala da vulnerabilidade dos solos associada à variação dos
+					níveis de umidade, sujeitos a medições para estabelecer a quantidade de água de que a planta
+					necessita além de abordar como os elementos técnicos podem contribui para estabelecer os objetivos
+					produtos pretendidos. Portanto, não há certeza sobrea estabilidade da influência dos elementos
+					naturais na atividade agrícola, tampouco se menciona o `fator fertilidade dos solos no âmbito da
+					questão.
+
+
+				</p>
 
 			</div>
 
@@ -491,38 +547,41 @@
 
 			<p class="p2">Questão 07</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (ENEM 2018) A presunção de que a superfície das chapadas e chapadões representa uma velha peneplanície é
+				<span onclick="this.innerHTML='corroborara (confirmada)'"><mark>corroborada</mark></span> pelo fato de
+				que ela é coberta por acumulações superficiais, tais como massas de areia, camadas de cascalhos e seixos
+				e pela ocorrência generalizada de concreções ferruginosas que formam uma crosta laterítica, denominada
+				“canga”. </p>
 
 
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
+			<p class="w3-small"> WEIBEL, L. Disponível em: http://biblioteca.ibge.gov.br. Acesso em:
+				8 jul. 2015 (adaptado).
+			</p>
+
+			<p>Qual tipo climático favorece o processo de alteração do solo descrito no texto? </p>
 
 
 			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">
 
-				a)
-				Inserir alternativa a
+				a) Árido, com déficit hídrico.
 			</p>
 			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
 
-				b)
-				Inserir alternativa b
+				b) Subtropical, com baixas temperaturas.
 			</p>
 			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c">
 
-				c)
-				Inserir alternativa c
+				c) Temperado, com invernos frios e secos.
 			</p>
 			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d">
 
-				d)
-				Inserir alternativa d
+				d) Tropical, com sazonalidade das chuvas.
 			</p>
 			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e">
 
-				e)
-				Inserir alternativa e
+				e) Equatorial, com pluviosidade abundante.
 			</p>
 
 
@@ -530,15 +589,25 @@
 
 				<p> <strong>Comentário:</strong></p>
 
-				<p> </p>
+				<p>A região descrita no texto apresenta características típicas da região central do País, na qual se
+					destaca o intenso processo erosivo. Nestas regiões, predominam o ambiente tropical típico, com
+					chuvas concentradas no verão. </p>
 
-				<p> </p>
+				<p>a) Incorreto. Nessa alternativa, o clima árido não permite a sazonalidade chuvosa necessária à
+					formação do processo de laterização. </p>
 
-				<p> </p>
+				<p> b) Incorreto. O clima subtropical não traz as condições necessárias à formação de cangas e do solo
+					proposto no enunciado devido ao menor volume de chuvas e ausência de sazonalidade.</p>
 
-				<p> </p>
+				<p> c) Incorreto. O clima Temperado, apesar de ser sazonal, não traz o volume de chuvas necessário e nem
+					as condições necessárias à formação de cangas e do solo proposto no enunciado.</p>
 
-				<p> </p>
+				<p>d) Correto. O clima tropical traz perfeitamente as condições necessárias à formação de cangas e do
+					solo proposto no enunciado, pois tem sazonalidade contribuindo tanto para o processo erosivo quanto
+					para o processo de laterização. </p>
+
+				<p>e) Incorreto. Sempre deve haver sazonalidade hídrica para haver laterização, e chuvas constantes não
+					trazem essas condições.</p>
 
 
 			</div>
@@ -556,58 +625,48 @@
 
 			<p class="p2">Questão 08</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (UFES) Para responder a esta questão, analise a figura abaixo. </p>
+
+			<div class="w3-center"><img src="s19q8.png" alt="s19q8" class="w3-mobile"></div>
+
+			<p>Qual a alternativa que não descreve os movimentos das massas de ar que atuam no território brasileiro?
+			</p>
 
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
 
 
 			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
 
-				a)
-				Inserir alternativa a
+				a) No Inverno, a Massa Polar Atlântica pode penetrar no território brasileiro até as imediações do norte do País, mas não provoca queda na temperatura, já que esta região está sob domínio da Massa Equatorial Continental, quente e úmida.
 
 			</p>
 			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
 
-				b)
-				Inserir alternativa b
+				b) A Massa de ar Equatorial tem sua função atenuada durante o Inverno, devido ao avanço das massas polares.
 
 			</p>
 			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
 
-				c)
-				Inserir alternativa c
+				c) No Brasil predominam os climas quentes e úmidos, uma vez que este país possui 92% de seu território na zona intertropical do planeta, sob forte influência das massas de ar oceânicas.
 
 			</p>
 			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
 
-				d)
-				Inserir alternativa d
+				d) A Massa Equatorial Continental, a despeito de se originar sobre o continente Sul-Americano, é quente e úmida.
 
 			</p>
 			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
 
-				e)
-				Inserir alternativa e
-
+				e) Durante o Inverno, a Massa Equatorial Atlântica tem sua atuação restringida devido ao avanço da Massa Tropical Atlântica, que se desloca em função do avanço da Massa Polar Atlântica.
 			</p>
 
 			<div class="comentarios">
 
 				<p> <strong>Comentário:</strong></p>
 
-				<p> </p>
+				<p>Embora a região Norte do país permaneça sob a influência da Massa Equatorial Continental, é comum que no inverno a Massa de ar Polar avance sobre o interior do país, provocando redução das temperaturas em todas as regiões. Quando esse fenômeno acontece na região Norte, ele recebe o nome de friagem. </p>
 
-				<p> </p>
-
-				<p> </p>
-
-				<p> </p>
-
-				<p> </p>
-
-
+				
 			</div>
 
 		</div>
@@ -630,44 +689,33 @@
 
 			<p class="p2">Questão 09</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p>(FAMP 2019) Domínio morfoclimático foi um conceito usado por Aziz Nacib Ab’Saber e representa a combinação de uma série de elementos atuais como relevos, climas, vegetações, solos e hidrografias. As interações desses elementos formam as unidades paisagísticas. Dessa forma, o segundo maior domínio morfoclimático do Brasil é formado por áreas relativamente planas, de clima que apresenta inverno seco e verão bastante chuvoso, além de espécies vegetais com gramíneas, arbustos e árvores que apresentam folhas endurecidas, galhos tortuosos e cascas grossas. Esse domínio é conhecido com o nome de: </p>
 
-			<p class="citacao"> (Coloque a citação aqui) </p>
+			
 
 			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a">
 
-				a)
-				Inserir alternativa a
-
+				a) Cerrado.
 			</p>
 			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b">
 
-				b)
-				Inserir alternativa b
+				b) Caatinga.
 
 			</p>
 			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c">
 
-				c)
-				Inserir alternativa c
+				c) Floresta Amazônica.
 
 			</p>
 			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d">
-
-				d)
-				Inserir alternativa d
+				d) Mata dos Cocais.
 
 			</p>
-			<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e">
-
-				e)
-				Inserir alternativa e
-
-			</p>
+			
 
 			<div class="comentarios">
 
-				<p> <strong>Comentário:</strong></p>
+				<!-- <p> <strong>Comentário:</strong></p>
 
 				<p> </p>
 
@@ -677,7 +725,7 @@
 
 				<p> </p>
 
-				<p> </p>
+				<p> </p> -->
 
 
 			</div>
@@ -699,46 +747,40 @@
 
 			<p class="p2">Questão 10</p>
 
-			<p> Texto da questão vai aqui </p>
+			<p> (UNIVESP 2018) Uma característica do bioma do Pantanal em destaque na imagem é a presença de </p>
 
 
-			<p class="citacao"> Coloque a citação aqui se houver </p>
-
+			<div class="w3-center"><img src="s19q10.png" alt="s19q10" class="w3-mobile"></div>
 
 			<p class="bordaQuestoes" id="q10a"><input type="radio" name="pq10" value="a">
 
-				a) Inserir
-				alternativa a
+				a) dobramentos modernos. 
 
 			</p>
 			<p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b">
 
-				b) Inserir
-				alternativa b
+				b) mares de morros.
 
 			</p>
 			<p class="bordaQuestoes" id="q10c"><input type="radio" name="pq10" value="c">
 
-				c) Inserir
-				alternativa c
+				c) vegetação xerófita. 
 
 			</p>
 			<p class="bordaQuestoes" id="q10d"><input type="radio" name="pq10" value="d">
 
-				d) Inserir
-				alternativa d
+				d) depressões interplanálticas. 
 
 			</p>
 			<p class="bordaQuestoes" id="q10e"><input type="radio" name="pq10" value="e">
 
-				e) Inserir
-				alternativa e
+				e) terras periodicamente alagáveis.
 
 			</p>
 
 			<div class="comentarios">
 
-				<p> <strong>Comentário:</strong></p>
+				<!-- <p> <strong>Comentário:</strong></p>
 
 				<p> </p>
 
@@ -748,7 +790,7 @@
 
 				<p> </p>
 
-				<p> </p>
+				<p> </p> -->
 
 
 			</div>
@@ -775,11 +817,14 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
+
+	<div id="aviso" class="w3-panel w3-yellow">
+
+	</div>
 
 
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 	<script>
@@ -808,30 +853,30 @@
 
 			var cor = ["#99ff99", "#ee4466"];
 
-			if (pq1 == "a") {
+			if (pq1 == "e") {
 				corretas++;
-				document.getElementById("q1a").style.backgroundColor = cor[0];
+				document.getElementById("q1e").style.backgroundColor = cor[0];
 			} else {
 
+				document.getElementById("q1a").style.backgroundColor = cor[1];
 				document.getElementById("q1b").style.backgroundColor = cor[1];
 				document.getElementById("q1c").style.backgroundColor = cor[1];
 				document.getElementById("q1d").style.backgroundColor = cor[1];
-				document.getElementById("q1e").style.backgroundColor = cor[1];
 
-				document.getElementById("q1a").style.backgroundColor = cor[0];
+				document.getElementById("q1e").style.backgroundColor = cor[0];
 			}
 
 
-			if (pq2 == "e") {
+			if (pq2 == "c") {
 				corretas++;
-				document.getElementById("q2e").style.backgroundColor = cor[0];
+				document.getElementById("q2c").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q2a").style.backgroundColor = cor[1];
-				document.getElementById("q2c").style.backgroundColor = cor[1];
-				document.getElementById("q2d").style.backgroundColor = cor[1];
 				document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q2e").style.backgroundColor = cor[1];
+				document.getElementById("q2d").style.backgroundColor = cor[1];
 
-				document.getElementById("q2e").style.backgroundColor = cor[0];
+				document.getElementById("q2c").style.backgroundColor = cor[0];
 			}
 
 			if (pq3 == "a") {
@@ -847,29 +892,29 @@
 
 			}
 
-			if (pq4 == "a") {
+			if (pq4 == "d") {
 				corretas++;
-				document.getElementById("q4a").style.backgroundColor = cor[0];
+				document.getElementById("q4d").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q4b").style.backgroundColor = cor[1];
 				document.getElementById("q4c").style.backgroundColor = cor[1];
-				document.getElementById("q4d").style.backgroundColor = cor[1];
+				document.getElementById("q4a").style.backgroundColor = cor[1];
 				document.getElementById("q4e").style.backgroundColor = cor[1];
 
-				document.getElementById("q4a").style.backgroundColor = cor[0];
+				document.getElementById("q4d").style.backgroundColor = cor[0];
 
 			}
 
-			if (pq5 == "d") {
+			if (pq5 == "a") {
 				corretas++;
-				document.getElementById("q5d").style.backgroundColor = cor[0];
+				document.getElementById("q5a").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q5b").style.backgroundColor = cor[1];
 				document.getElementById("q5c").style.backgroundColor = cor[1];
-				document.getElementById("q5a").style.backgroundColor = cor[1];
+				document.getElementById("q5d").style.backgroundColor = cor[1];
 				document.getElementById("q5e").style.backgroundColor = cor[1];
 
-				document.getElementById("q5d").style.backgroundColor = cor[0];
+				document.getElementById("q5a").style.backgroundColor = cor[0];
 
 			}
 
@@ -886,55 +931,55 @@
 
 			}
 
-			if (pq7 == "a") {
+			if (pq7 == "d") {
 				corretas++;
-				document.getElementById("q7a").style.backgroundColor = cor[0];
+				document.getElementById("q7d").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q7b").style.backgroundColor = cor[1];
 				document.getElementById("q7c").style.backgroundColor = cor[1];
-				document.getElementById("q7d").style.backgroundColor = cor[1];
+				document.getElementById("q7a").style.backgroundColor = cor[1];
 				document.getElementById("q7e").style.backgroundColor = cor[1];
 
-				document.getElementById("q7a").style.backgroundColor = cor[0];
+				document.getElementById("q7d").style.backgroundColor = cor[0];
 
 			}
 
-			if (pq8 == "b") {
+			if (pq8 == "a") {
 				corretas++;
-				document.getElementById("q8b").style.backgroundColor = cor[0];
+				document.getElementById("q8a").style.backgroundColor = cor[0];
 			} else {
-				document.getElementById("q8a").style.backgroundColor = cor[1];
+				document.getElementById("q8b").style.backgroundColor = cor[1];
 				document.getElementById("q8c").style.backgroundColor = cor[1];
 				document.getElementById("q8d").style.backgroundColor = cor[1];
 				document.getElementById("q8e").style.backgroundColor = cor[1];
 
-				document.getElementById("q8b").style.backgroundColor = cor[0];
+				document.getElementById("q8a").style.backgroundColor = cor[0];
 
 			}
 
-			if (pq9 == "e") {
+			if (pq9 == "a") {
 				corretas++;
-				document.getElementById("q9e").style.backgroundColor = cor[0];
+				document.getElementById("q9a").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q9b").style.backgroundColor = cor[1];
 				document.getElementById("q9c").style.backgroundColor = cor[1];
 				document.getElementById("q9d").style.backgroundColor = cor[1];
-				document.getElementById("q9a").style.backgroundColor = cor[1];
+				
 
-				document.getElementById("q9e").style.backgroundColor = cor[0];
+				document.getElementById("q9a").style.backgroundColor = cor[0];
 
 			}
 
-			if (pq10 == "a") {
+			if (pq10 == "e") {
 				corretas++;
-				document.getElementById("q10a").style.backgroundColor = cor[0];
+				document.getElementById("q10e").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q10b").style.backgroundColor = cor[1];
 				document.getElementById("q10c").style.backgroundColor = cor[1];
 				document.getElementById("q10d").style.backgroundColor = cor[1];
-				document.getElementById("q10e").style.backgroundColor = cor[1];
+				document.getElementById("q10a").style.backgroundColor = cor[1];
 
-				document.getElementById("q10a").style.backgroundColor = cor[0];
+				document.getElementById("q10e").style.backgroundColor = cor[0];
 
 			}
 
@@ -986,7 +1031,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

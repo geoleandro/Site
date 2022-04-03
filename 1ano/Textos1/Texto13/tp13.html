@@ -30,7 +30,7 @@
     <style>
         .topico {
             display: none;
-            margin-top: 60px;
+           
         }
 
         .topico:nth-child(1),
@@ -39,9 +39,7 @@
         }
 
 
-        .larguraBar {
-            max-width: 680px;
-        }
+     
 
         .postit-tp13 {
             background: #e6ff5b;
@@ -76,59 +74,7 @@
             text-decoration: underline;
         }
 
-        .zoom {
-            animation: animatezoom 1s
-        }
-
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
-
-            to {
-                transform: scale(1)
-            }
-        }
-
-        body {
-            max-width: 700px;
-            margin: auto;
-            padding: 10px;
-
-        }
-
-
-        h1 {
-            margin-top: 0px;
-
-
-        }
-
-        h2 {
-            margin-top: 0px;
-
-            font-family: pixel;
-            padding: 10px;
-        }
-
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: pixel;
-            padding: 10px;
-        }
-
-
-
-
-        .margemAcima {
-            margin-top: 50px;
-        }
-
-        .margemAbaixo {
-            margin-bottom: 70px;
-        }
+     
     </style>
 
 
@@ -142,20 +88,25 @@
 
     <div class="topico">
 
-        <div class="centerBar">
+        <div class="centerBar w3-padding">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
 
-                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-
-                <span  class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span  class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
-            </div>
-        </div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
 
 
 
@@ -191,7 +142,7 @@
 
         <span id="resp0"></span>
 
-        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+       <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
 
         <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -541,24 +492,24 @@
 
         <p class="caixa"> Teste sua observação</p>
 
-        <h3>Na foto acima é possível onde está destacado o Gabro, o Diorito e o Granito, podemos observar que tipo de
-            padrão?</h3>
+        <h4>Na foto acima é possível onde está destacado o Gabro, o Diorito e o Granito, podemos observar que tipo de
+            padrão?</h4>
 
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
 
             a) as rochas são duras e resistentes;
         </button>
 
 
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'isso ai, a textura é uma das formas de classificação das rochas em geral','1'); this.style.backgroundColor='lightgreen'">
 
             b) as rochas possuem cristais de granulação grossa;
         </button>
 
 
-        <button class="desativar2 area p4"
+        <button class="desativar2 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
 
             c) não é possível visualizar os cristais nas rochas.
@@ -567,7 +518,7 @@
 
 
 
-        <span id="resp2"></span>
+        <p id="resp2"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
@@ -704,7 +655,7 @@
 
 
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'bacana, esse intemperismo não perdoa nada','1'); this.style.backgroundColor='lightgreen'">
 
             a) pela ação do intemperismo físico e químico.
@@ -712,7 +663,7 @@
         </button>
 
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
 
             b) pela ação do vulcanismo;
@@ -720,7 +671,7 @@
 
 
 
-        <button class="desativar3 area p4"
+        <button class="desativar3 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
 
             c) pelas correntes de convecção.
@@ -730,7 +681,7 @@
 
 
 
-        <span id="resp3"></span>
+        <p id="resp3"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
@@ -749,10 +700,10 @@
 
         <p class="caixa"> Teste seu conhecimento</p>
 
-        <h3>A classificação das rochas ígneas ou metamórficas estão baseadas em três principais características, são
-            elas:</h3>
+        <h4>A classificação das rochas ígneas ou metamórficas estão baseadas em três principais características, são
+            elas:</h4>
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
 
             a) dureza, granulação grossa e a textura.
@@ -760,7 +711,7 @@
         </button>
 
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
 
             b) tio de magma, tipo de lava, e os tipos de sedimentos.
@@ -768,7 +719,7 @@
         </button>
 
 
-        <button class="desativar4 area p4"
+        <button class="desativar4 p4 area w3-padding w3-margin"
             onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'opa, essa foi bem tranquila!','1'); this.style.backgroundColor='lightgreen'">
 
             c) composição mineral, tamanho dos cristais e a textura.
@@ -780,7 +731,7 @@
 
 
 
-        <span id="resp4"></span>
+        <p id="resp4"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
@@ -854,28 +805,18 @@
 
         <span class="citacao">Fonte: Press (2006, p. 109). </span>
 
-        <p>Vejamos como o intemperismo atua para formar as rochas sedimentares. Seguindo a figura anterior, temos que:
-        </p>
-
-
-        <p> 1 – As partículas de rocha são geradas pelo intemperismo.</p>
-
-
-        <p>2 – transportadas morro abaixo pela erosão. </p>
-
-        <p>3 – e depositadas como camadas de sedimento no solo ou água. </p>
-
-
-
-        <p>4 – onde elas formam camadas paralelas ou estratificação. </p>
-
-        <p>5 – Os sedimentos soterrados litificam-se pela compactação e cimentação. </p>
-
-        <p> 6 – Os sedimentos clásticos são compostos por partículas depositadas de areia, silte e cascalho.</p>
-
-
-        <p>7 – Os sedimentos químicos e bioquímicos são precipitados no mar ou compostos por recife de corais e conchas.
-        </p>
+        <div class="w3-pale-blue">
+            <p>Vejamos como o intemperismo atua para formar as rochas sedimentares. Seguindo a figura anterior, temos que:
+            </p>
+            <p> 1 – As partículas de rocha são geradas pelo intemperismo.</p>
+            <p>2 – transportadas morro abaixo pela erosão. </p>
+            <p>3 – e depositadas como camadas de sedimento no solo ou água. </p>
+            <p>4 – onde elas formam camadas paralelas ou estratificação. </p>
+            <p>5 – Os sedimentos soterrados litificam-se pela compactação e cimentação. </p>
+            <p> 6 – Os sedimentos clásticos são compostos por partículas depositadas de areia, silte e cascalho.</p>
+            <p>7 – Os sedimentos químicos e bioquímicos são precipitados no mar ou compostos por recife de corais e conchas.
+            </p>
+        </div>
 
 
         <p>Os sedimentos, como vimos, surgem do intemperismo químico e físico, que desintegram as rochas. Juntamente com
@@ -1199,10 +1140,10 @@
         <p class="caixa"> Teste seu conhecimento</p>
 
 
-        <h2> Quais fatores não causam o metamorfismo nas rochas?
-        </h2>
+        <h4> Quais fatores causam o metamorfismo nas rochas?
+        </h4>
 
-        <form id="check">
+        <form class="w3-margin" id="check">
 
             <input type="checkbox" id="r1" class="checkbox1">
             <label>fluidos quentes.</label><br><br>
@@ -1222,7 +1163,7 @@
 
 
 
-        <span id="resp40"></span>
+        <p id="resp40"></p>
 
         <button class="btnShow margemAcima" id="buttoncheck1"  onclick="confereBox('acertou, parabéns', 'resp40','globinho40')">Conferir</button>
 
@@ -1262,7 +1203,7 @@
                 limites do magma e novos minerais podem crescer ou aumentar os já existentes. Foi descrito o
                 metamorfismo (de): </p>
 
-            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+            <div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
 
 
             <p id="resp1a"></p>
@@ -1291,7 +1232,7 @@
 
 
 
-            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+            <div class="w3-margin"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
 
 
             <p id="resp1b"></p>
@@ -1402,19 +1343,19 @@
     <div class="topico">
 
 
-        <div class="w3-card-4 w3-pale-blue w3-padding">
+        <div class="w3-card-4 w3-pale-green w3-padding">
 
-            <h2> Desafio em grupo: hipóteses sobre o ciclo das rochas.</h2>
+            <h4 class="w3-center"> Desafio em grupo: hipóteses sobre o ciclo das rochas.</h4>
 
-            <h3>Após assistir à animação sobre o ciclo das rochas, compare com a explicação científica sobre as etapas
-                de transformação que uma rocha pode passar. </h3>
+            <p>Após assistir à animação sobre o ciclo das rochas, compare com a explicação científica sobre as etapas
+                de transformação que uma rocha pode passar. </p>
 
-            <h3> Um ponto importante é que o ciclo das rochas ilustra as coisas que podem acontecer a uma rocha. A
+            <p> Um ponto importante é que o ciclo das rochas ilustra as coisas que podem acontecer a uma rocha. A
                 maioria delas não completa o ciclo devido a muitos caminhos, interrupções, retrocessos e atalhos que uma
-                rocha pode tomar.</h3>
+                rocha pode tomar.</p>
 
 
-            <h2>Instruções </h2>
+            <h4>Instruções: </h4>
 
 
 
@@ -1457,7 +1398,7 @@
 
 
             <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom w3-padding" style="max-width:600px">
 
                     <div class="w3-center w3-padding-48">
                         <span onclick="document.getElementById('id01').style.display='none'"
@@ -1697,7 +1638,16 @@
 
                 document.getElementById("buttonConferirQ1b").disabled = false;
                 document.getElementById("buttonConferirQ1b").style.backgroundColor = "#69CB60FA";
-                document.getElementById("buttonConferirQ1b").value = "Agora sim!";
+                
+
+                if (q1a.match("contato") && q1b.match("regional") && qnum ==1){
+                    document.getElementById("buttonConferirQ1b").value = "Finalizar!";
+                }
+                else
+                {
+                    document.getElementById("buttonConferirQ1b").value = "Conferir!";
+                }
+               
 
 
 
@@ -1733,7 +1683,7 @@
                 else {
                     document.getElementById("q1b").style.backgroundColor = cor[0];
                     document.getElementById("q1b").disabled = true;
-                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui";
+                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui.";
                     Play2("../audio2.mp3");
                     document.getElementById("buttonConferirQ1b").value = "Aguardando...";
                     document.getElementById("buttonConferirQ1b").disabled = true;

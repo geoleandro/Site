@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
 
-	<script src="../../../estilos/jstextos.js"></script>
+	<script src="../../../estilos/jstextos.js" Defer></script>
 
 	<title>Texto04</title>
 
@@ -39,22 +39,20 @@
 		}
 
 
-		.larguraBar {
-			max-width: 680px;
-		}
 
 		.postit-tp4 {
-			background: #906dd1;
-			width: auto;
+			
+			background: #ffffa5;
+			width: 70%;
 			height: auto;
-			padding: 20px;
+			color: #000;
+			padding: 5px;
 			font-family: pixel;
-			margin-bottom: 60px;
-			margin-top: 60px;
-
+			margin-bottom: 5px;
+			margin-top: -20px;
+			line-height: 20px;
 			position: relative;
-			Color: white;
-			font-size: 18px;
+			font-size: 16px;
 			box-shadow: 2px 4px 6px #444;
 			-moz-box-shadow: 2px 4px 6px #444;
 			-webkit-box-shadow: 2px 4px 6px #444;
@@ -63,45 +61,10 @@
 			-webkit-transform: rotate(-3deg);
 			-o-transform: rotate(-3deg);
 			-ms-transform: rotate(-3deg);
+		
 		}
 
-		.zoom {
-			animation: animatezoom 1s
-		}
-
-		@keyframes animatezoom {
-			from {
-				transform: scale(0)
-			}
-
-			to {
-				transform: scale(1)
-			}
-		}
-
-		body {
-			max-width: 700px;
-			margin: auto;
-			padding: 10px;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			padding: 10px;
-			font-family: pixel;
-		}
-
-		.margemAcima {
-			margin-top: 80px;
-		}
-
-		.margemAbaixo {
-			margin-bottom: 50px;
-		}
+	
 	</style>
 
 
@@ -120,10 +83,20 @@
 		<div class="centerBar w3-padding-24">
 			<!-- Navigation (Stays on Top) -->
 			<div class="w3-top w3-bar w3-black  larguraBar ">
-				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop ">1º ano</a>
-				<a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
-				<a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-						alt="tp3Foto4" width="32" height="32"></a>
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span  class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+						alt="tp3Foto4" width="32" height="32"></span>
+			</div>
+		</div>
+
+			<div class="w3-padding-top">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
+
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
 			</div>
 		</div>
 
@@ -132,14 +105,7 @@
 
 
 
-
-
-
-
-
 		<p class=""><strong>Conteúdo:</strong> Escala geográfica; Escala cartográfica: numérica e gráfica.</p>
-
-
 
 
 		<p class=""><strong>Objetivo:</strong> Entender e aplicar o conceito de escala geográfica e cartográfica. </p>
@@ -165,7 +131,7 @@
 
 		<p id="resp0"></p>
 
-		<p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+		<button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
 
 		<button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -235,17 +201,17 @@
 
 		<h3>Qual o impacto da disseminação do vírus da Covid-19 no espaço terrestre?</h3>
 
-		<button class="desativar1 p4 w3-padding"
+		<button class="desativar1 p4 w3-padding w3-margin "
 			onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">a)
 			Local (rua, bairros, cidades).</button>
 		<br>
  
-		<button class="desativar1 p4 w3-padding"
+		<button class="desativar1 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', ',legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
 			Mundial (os continentes do Planeta).</button>
 		<br>
 
-		<button class="desativar1 p4 w3-padding"
+		<button class="desativar1 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">c)
 			Regional (alguns Estados ou parte de continentes).</button>
 		<br>
@@ -434,18 +400,18 @@
 		</p>
 
 
-		<p class="divCaixa1">E = representado a escala; </p>
+		<h4 class="divCaixa1 w3-margin">E = representado a escala; </h4>
 
 
-		<p class="divCaixa1">d = distância no mapa (ou papel); </p>
+		<h4 class="divCaixa1 w3-margin">d = distância no mapa (ou papel); </h4>
 
-		<p class="divCaixa1"> D = distância real na superfície terrestre;</p>
+		<h4 class="divCaixa1 w3-margin"> D = distância real na superfície terrestre;</h4>
 		<p> Podemos estabelecer relações entre esses elementos, isto é, se tivermos dois deles, será
 			fácil descobrir o terceiro. </p>
 
-		<p class="divCaixa1"> D = E x d.
+		<h4 class="divCaixa1 w3-margin"> D = E x d.
 
-		</p>
+		</h4>
 
 
 		<p>Vários exercícios solicitam a transformação das unidades na resposta, ou seja, você deverá
@@ -456,14 +422,14 @@
 		</p>
 
 
-		<p class="divCaixa1"> E = d/D </p>
+		<h4 class="divCaixa1 w3-margin"> E = d/D </h4>
 
 
 		<p> Finalmente, para descobrir a distância no papel, dividimos a distância real pela escala.
 		</p>
 
 
-		<p class="divCaixa1"> d = D/E </p>
+		<h4 class="divCaixa1 w3-margin"> d = D/E </h4>
 
 		
 		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -483,11 +449,10 @@
 			<p>Um mapa na escala de 1:1000 apresenta a distância entre duas casas no valor de 45 cm.
 				Qual é a distância real entre essas casas em metros?</p>
 
-			<input class="input" id="q10a" type="text" name="q10a" value="">
+			<div class="w3-margin"><input class="input" id="q10a" type="text" name="q10a" value=""></div>
 
 
-			 <p
-					onclick="this.innerHTML='Dica: a distância na realidade é o resultado de multiplicação da escala pela distância colocada no papel.'"><mark>Dica:</mark></p>
+			 <p	onclick="this.innerHTML='Dica: a distância na realidade é o resultado de multiplicação da escala pela distância colocada no papel.'"><mark>Dica:</mark></p>
 			
 
 
@@ -512,7 +477,8 @@
 
 			<p>Em uma pequena cidade, um rio mede 3km de extensão. No mapa, sua medida está em 20 cm.
 				Qual é a escala do mapa? Será 1 para?</p>
-			<input class="input" id="q10b" type="text" name="q10b" value="">
+
+			<div class="w3-margin"><input class="input" id="q10b" type="text" name="q10b" value=""></div>
 
 
 			<p id="resp10b"></p>
@@ -539,7 +505,7 @@
 
 			<p class="citacao" id="citacao8" style=display:block> Fonte: Organizado pelo autor. </p>
 
-			<input class="input" id="q10c" type="text" name="q10c" value="" placeholder="Ex. a e b.">
+			<div class="w3-margin"><input class="input" id="q10c" type="text" name="q10c" value="" placeholder="Ex. a e b."></div>
 
 
 			<p id="resp10c"></p>
@@ -600,8 +566,8 @@
 
 
 
-		<p> Vejas as imagens a seguir. Conforme a escala vai se aproximando da realidade, ou seja, 1:1
-			– torna-se menor- ocorre um aumento da área representada e uma diminuição do grau de detalhamento
+		<p> Isso quer dizer que conforme a escala vai se aproximando da realidade, ou seja, 1:1
+			– torna-se menor - ocorre um aumento da área representada e uma diminuição do grau de detalhamento
 			cartográficos. </p>
 
 
@@ -630,17 +596,17 @@
 
 
 
-		<button class="desativar3 p4 w3-padding"
+		<button class="desativar3 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">a)
 			Escala grande, área grande, bastante detalhes.</button>
 		<br>
 
-		<button class="desativar3 p4 w3-padding"
+		<button class="desativar3 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">b)
 			Escala pequena, área pequena, poucos detalhes..</button>
 		<br>
 
-		<button class="desativar3 p4 w3-padding"
+		<button class="desativar3 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'viu como não é difícil, mais um globinho','1'); this.style.backgroundColor='lightgreen'">c)
 			Escala pequena, área grande, pouco detalhes.</button>
 		<br>
@@ -665,17 +631,17 @@
 		<p>Uma cidade está localizada a 5cm de outra, medidos sobre um mapa de escala 1:200.000 Qual a
 			distância real (no terreno) entre as cidades. </p>
 
-		<button class="desativar4 p4 w3-padding"
+		<button class="desativar4 p4 w3-padding w3-margin"
 			onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">a)
 			5km .</button>
 		<br>
 
-		<button class="desativar4 p4 w3-padding"
+		<button class="desativar4 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'essa foi bem fácil, continue assim!','1'); this.style.backgroundColor='lightgreen'">b)
 			10km </button>
 		<br>
 
-		<button class="desativar4 p4 w3-padding"
+		<button class="desativar4 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">c)
 			100km. </button>
 		<br>
@@ -753,7 +719,7 @@
 			ser levada em consideração, e que, em consequência, a escala possa ser considerada constante".
 		</div>
 		
-		<span onclick="Aparecer('imagem13','citacao13')"><mark> Veja a figura de uma planta:</mark></span>
+		<p onclick="Aparecer('imagem13','citacao13')"><mark> Veja a figura de uma planta:</mark></p>
 
 		<div class="area"><img id="imagem13" src="tp4f13.png" alt="tp4f13" class="w3-mobile" style=display:none>
 		</div>
@@ -811,14 +777,14 @@
 			representação cartográfica, marque a alternativa correta.</p>
 
 
-		<button class="desativar5 p4 w3-padding"
+		<button class="desativar5 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'essa confunde um pouco, parabéns, falta pouco','1'); this.style.backgroundColor='lightgreen'">a)
 			Quanto maior a escala, maior a riqueza de detalhes e menor a área representada.</button>
 		
 
 
 
-		<button class="desativar5 p4 w3-padding"
+		<button class="desativar5 p4 w3-padding w3-margin"
 			onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">b)
 			Quanto maior a escala de um mapa, maior a área representada e, consequentemente, maior riqueza de
 			detalhes.</button>
@@ -826,7 +792,7 @@
 
 
 
-		<button class="desativar5 p4 w3-padding"
+		<button class="desativar5 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">c)
 			O tamanho da escala não interfere na área representada de um mapa.</button>
 		<br>
@@ -922,16 +888,17 @@
 			refeitórios, estacionamentos, vamos fazer uma planta da Escola na escala de 1:200. Como a escala é de 1:
 			200, logo: </p>
 
-		<div class="postit-tp4">
-
-			<mark>
-				D = d/E
-			</mark><br><br>
-			<mark>
-				100 = d/200<br>
-			</mark><br>
-			<mark>
-				D = 0.5 cm.</mark> Cada metro na realidade terá 0.5 cm no papel.
+		<div class="area ">
+			<div class="postit-tp4 w3-padding">
+				<mark>
+					D = d/E
+				</mark><br><br>
+				<mark>
+					100 = d/200<br>
+				</mark><br>
+				<mark>
+					D = 0.5 cm.</mark> Cada metro na realidade terá 0.5 cm no papel.
+			</div>
 		</div>
 
 

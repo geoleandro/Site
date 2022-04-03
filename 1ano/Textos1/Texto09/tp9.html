@@ -11,20 +11,10 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js"></script>
+    <script src="../../../estilos/jstextos.js" defer></script>
 
     <title>Texto09</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
 
 
     <style>
@@ -39,9 +29,7 @@
         }
 
 
-        .larguraBar {
-            max-width: 680px;
-        }
+
 
         .postit-tp9 {
             background: #e6ff5b;
@@ -77,60 +65,11 @@
         }
 
 
-        .zoom {
-            animation: animatezoom 1s
-        }
-
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
-
-            to {
-                transform: scale(1)
-            }
-        }
-
-        body {
-            max-width: 700px;
-            margin: auto;
-            padding: 10px;
-
-        }
 
 
-        h1 {
-            margin-top: 0px;
-
-
-        }
-
-        h2 {
-            margin-top: 10px;
-
-            font-family: pixel;
-            padding: 10px;
-        }
-
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: pixel;
-            padding: 10px;
-        }
 
         #divFinal {
             display: none;
-        }
-
-
-        .margemAcima {
-            margin-top: 80px;
-        }
-
-        .margemAbaixo {
-            margin-bottom: 50px;
         }
     </style>
 
@@ -142,19 +81,26 @@
 
     <div class="topico">
 
-        <div class="centerBar w3-padding-24">
-
+        <div class="centerBar w3-padding">
             <!-- Navigation (Stays on Top) -->
             <div class="w3-top w3-bar w3-black  larguraBar ">
-
                 <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-                <a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
-
-                <a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></a>
-
+                <span class="w3-bar-item  margemTop" id="notaFixa"></span>
+                <span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+                        width="32" height="32"></span>
             </div>
         </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
 
 
 
@@ -188,10 +134,10 @@
 
         <p id="resp0"></p>
 
-        <p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button></p>
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
 
 
-        <button  id="buttonA" onclick="MostrarProximo(this);  this.style.display='none'">Iniciar</button>
+        <button id="buttonA" onclick="MostrarProximo(this);  this.style.display='none'">Iniciar</button>
         <hr>
     </div>
 
@@ -454,29 +400,29 @@
 
     <div class="topico">
 
-        <div class="caixa">
-            <h4>Teste o seu conhecimento!</h4>
-        </div>
 
-        <h3>Por que Alfred Wegener foi esquecido e até mesmo ridicularizado pela comunidade científica no início do
-            século XX?</h3>
+        <p class="caixa">Teste o seu conhecimento!</p>
 
-        <button class="desativar1 area p4"
+
+        <h4>Por que Alfred Wegener foi esquecido e até mesmo ridicularizado pela comunidade científica no início do
+            século XX?</h4>
+
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick=" RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">a)
             Ele não seguiu o método científico e baseou seus estudos em outras formas de conhecimento.</button>
 
-        <button class="desativar1 area p4"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick=" RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">b)
             Ele seguiu o método científico, mas não criou hipóteses válidas.</button>
 
-        <button class="desativar1 area p4"
+        <button class="desativar1 p4 area w3-padding w3-margin"
             onclick=" MostrarFrase('resp1','globinho1', 'desativar1', 'isso mesmo, as hipóteses de Wegener foram comprovadas anos depois','1'); this.style.backgroundColor='lightgreen'">c)
             Ele não conseguiu provar suas hipóteses devido a falta de tecnologia na época.</button>
 
 
 
 
-        <span id="resp1"></span>
+        <p id="resp1"></p>
 
         <div class="area">
             <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
@@ -521,7 +467,7 @@
 
         <p>Há mais de 50 placas tectônicas, as principais são: </p>
 
-        <div class="w3-card-4 w3-yellow w3-padding-small">
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small">
             <ul>
                 <li>Placa Euroasiática, predominantemente continental, apesar de incluir parte do Atlântico Norte;</li>
                 <li> Placa Africana, que inclui a África e parte do Atlântico Sul;
@@ -564,15 +510,13 @@
 
     <div class="topico">
 
-        <div class="caixa">
-            <h4>Teste o seu conhecimento!</h4>
-        </div>
+        <p class="caixa">Teste o seu conhecimento!</p>
 
 
-        <h2> Assinale todas as alternativas que satisfazem as principais evidências da hipótese da Deriva continental.
-        </h2>
+        <h4> Assinale todas as alternativas que satisfazem as principais evidências da hipótese da Deriva continental.
+        </h4>
 
-        <form id="check">
+        <form class="w3-margin" id="check">
             <input type="checkbox" id="r1" name="r1">
             <label> O encaixe do litoral da África No contorno do litoral da América; (Evidência
                 Morfológica).</label><br><br>
@@ -601,12 +545,12 @@
         </form>
 
         <button class="btnShow" id="buttoncheck1"
-            onclick="confereBox('acertou, parabéns', 'resp40','globinho40',)">Conferir</button>
+            onclick="confereBox('acertou, parabéns','resp40','globinho40',)">Conferir</button>
 
 
 
-        <br><br><br><br>
-        <span id="resp40"></span>
+
+        <p class="margemAcima" id="resp40"></p>
 
 
         <div class="area">
@@ -844,9 +788,7 @@
 
     <div class="topico">
 
-        <div class="caixa">
-            <h4>Teste suas habilidades!</h4>
-        </div>
+        <p class="caixa">Teste suas habilidades!</p>
 
 
 
@@ -989,8 +931,8 @@
                 <input class="w3-col w3-input w3-margin-bottom w3-hover-border-black  w3-left-align" type="button"
                     id="btn3" value="option3" name="opt3" onclick="checkans(4,'btn3')">
 
-                <input class=" w3-col w3-input w3-margin-bottom" type="button" id="proximo" value="Próximo"
-                    name="nxtbtn" onclick="changequestion()">
+                <input class=" w3-col w3-input w3-margin-bottom w3-animate-left" type="button" id="proximo"
+                    value="Próximo" name="nxtbtn" onclick="EsperaSeg()">
 
 
             </div>
@@ -1013,7 +955,7 @@
 
 
 
-    <div class="topico">
+    <div class="topico margemAbaixo">
 
 
         <button class="btnHide" id="btnFinal" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
@@ -1024,7 +966,7 @@
 
 
             <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom w3-padding" style="max-width:600px">
 
                     <div class="w3-center w3-padding-48">
                         <span onclick="document.getElementById('id01').style.display='none'"
@@ -1177,7 +1119,7 @@
 
                 document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
                 EscondeButton("buttoncheck1");
-                MostraButton("buttoncheck2");
+                //MostraButton("buttoncheck2");
 
 
             }
@@ -1259,8 +1201,18 @@
             myform.opt1.style.backgroundColor = "lightgrey";
             myform.opt2.style.backgroundColor = "lightgrey";
             myform.opt3.style.backgroundColor = "lightgrey";
+            document.getElementById("proximo").disabled = false;
 
             loadquestion();
+        }
+
+
+        function EsperaSeg() {
+
+            document.getElementById("proximo").disabled = true;
+            setTimeout(changequestion, 1000);
+
+
         }
 
 
@@ -1329,6 +1281,18 @@
             }
 
         }
+
+    </script>
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
 
     </script>
 

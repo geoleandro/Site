@@ -43,6 +43,9 @@ function verificar() {
         document.getElementById("aviso").style.display = "none";
         document.getElementById("aviso").innerHTML = "";
 
+        document.getElementById('increase-font').disabled = true;
+        document.getElementById('decrease-font').disabled = true;
+
         button1.disabled = true;
         button1.value = "Corrigido";
         button1.style.backgroundColor = "lightgray";
@@ -83,5 +86,30 @@ function comentarios() {
         c[i].style.display = "block";
 
     }
+}
+
+
+
+window.onload = function () {
+
+    var elementBody = document.querySelector('body');
+    var elementBtnIncreaseFont = document.getElementById('increase-font');
+    var elementBtnDecreaseFont = document.getElementById('decrease-font');
+    // Padrão de tamanho, equivale a 100% do valor definido no Body
+    var fontSize = 100;
+    // Valor de incremento ou decremento, equivale a 10% do valor do Body
+    var increaseDecrease = 10;
+
+    // Evento de click para aumentar a fonte
+    elementBtnIncreaseFont.addEventListener('click', function (event) {
+        fontSize = fontSize + increaseDecrease;
+        elementBody.style.fontSize = fontSize + '%';
+    });
+
+    // Evento de click para diminuir a fonte
+    elementBtnDecreaseFont.addEventListener('click', function (event) {
+        fontSize = fontSize - increaseDecrease;
+        elementBody.style.fontSize = fontSize + '%';
+    });
 }
 

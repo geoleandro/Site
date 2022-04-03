@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>Texto com questões</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <style>
+        .topico {
+            display: none;
+           
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+       
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            max-width: 340px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+            justify-content: center;
+            text-align: left;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+       
+
+        #divFinal {
+            display: none;
+        }
+
+
+      
+    </style>
+
+</head>
+
+<body onload="loadquestion()">
+
+
+
+    <div class="topico">
+
+        <div class="centerBar w3-padding">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
+
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
+
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
+
+
+
+
+        <h1 id="h1"> Texto 09 – Deriva continental e tectônicas de placas. </h1>
+
+
+        <p><strong> Conteúdo:</strong>: Deriva continental, Tectônica de placas, isostasia, Correntes de Convecção,
+            tipos de falhas tectônicas.
+
+        </p>
+
+        <p><strong>Objetivo:</strong> : Entender os processos de separação dos continentes terrestres por meio da teoria
+            da deriva continental e tectônica de placas. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p id="caixaNomeAluno">Digite seu nome</p>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
+
+
+        <button  id="buttonA" onclick="MostrarProximo(this);  this.style.display='none'">Próximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2 class="margemAcima"> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, conhecemos um pouco mais sobre a história do Planeta
+            Terra, sua formação através das eras geológicas e as características principais de suas camadas internas.
+        </p>
+
+        <p>Na aula de hoje, veremos a dinâmica da litosfera e como os continentes se movimentam através das placas
+            tectônicas.</p>
+
+        <p>Ao final, você será capaz de reconhecer como funciona a defesa de uma hipótese científica, os tipos de falhas
+            tectônicas e a influência do movimento de convecção do interior do Planeta na superfície terrestre.</p>
+
+
+
+        <!-- <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+
+    </div>
+
+    <div class="margemAbaixo"></div>
+
+     
+        <button class="btnShow" onclick="AbrirDivFinal();   this.style.display='none'">Desafio!</button>
+
+
+        <hr>
+
+ 
+
+
+
+
+
+    <div id="divFinal">
+
+
+        <h2 class="w3-center"> Respondas às questões para finalizar sua lição:</h2>
+
+
+
+        <form id="myform" name="myform">
+
+
+            <div class="w3-container    w3-mobile w3-left-align">
+
+                <p class="w3-col" id="mylabel">Question</p>
+
+                <img class=" w3-margin-bottom w3-mobile" id="myIma" alt="" src="tp13f1.png">
+
+                <input class="w3-col w3-input w3-margin-bottom w3-hover-border-black  w3-left-align" type="button"
+                    id="btn1" value="option1" name="opt1" onclick="checkans(2,'btn1')">
+
+                <input class="w3-col w3-input w3-margin-bottom w3-hover-border-black w3-left-align" type="button"
+                    id="btn2" value="option2" name="opt2" onclick="checkans(3,'btn2')">
+
+                <input class="w3-col w3-input w3-margin-bottom w3-hover-border-black  w3-left-align" type="button"
+                    id="btn3" value="option3" name="opt3" onclick="checkans(4,'btn3')">
+
+                <input class=" w3-col w3-input w3-margin-bottom w3-animate-opacity" type="button" id="proximo" value="Próximo"
+                    name="nxtbtn" onclick="EsperaSeg()">
+
+
+            </div>
+
+
+
+
+
+        </form>
+
+
+
+
+        <button class="btnHide" id="btnFinal" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+
+        <!-- <button class="btnHide" id="btnFinal" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button> -->
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico margemAbaixo">
+
+
+     
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom w3-padding" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- <div class="w3-padding-48">
+
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div> -->
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+        <div class="area">
+
+
+            <div class="w3-row-padding">
+
+
+                <div class="postit-tp9 ">
+
+                    <a href="https://www.bbc.com/portuguese/internacional-43620442" target="_blank">
+                        A enorme fenda que pode separar o Chifre da África do resto do continente.
+                    </a>
+
+                </div>
+
+
+
+                <div class="postit-tp9 ">
+
+                    <a href="https://www.nationalgeographicbrasil.com/meio-ambiente/2021/03/erupcao-na-islandia-pode-marcar-o-inicio-de-decadas-de-atividade-vulcanica"
+                        target="_blank">
+                        Erupção na Islândia pode marcar o início de décadas de atividade vulcânica.
+                    </a>
+
+                </div>
+
+
+
+
+                <div class="postit-tp9 ">
+
+                    <a href="https://g1.globo.com/sc/santa-catarina/noticia/2020/05/19/fosseis-de-repteis-que-viveram-antes-dos-dinossauros-sao-descobertos-em-sc.ghtml"
+                        target="_blank">
+                        FÓSSEIS de répteis que viveram antes dos dinossauros são descobertos em SC.
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>BRITANNICA Illustrated Science Library. 2008.</p>
+
+
+        <p>PRESS, F.; GROTZINGER, J.; SIERVER, R.; JORDAN, T. H. <strong>Para entender a Terra</strong>. 4ª ed. Porto
+            Alegre: Bookam, 2006.</p>
+
+        <p>
+            SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil</strong>: espaço geográfico e
+            globalização: ensino
+            médio 3. ed. São Paulo: Scipione, 2016.
+        </p>
+
+        <p>
+            TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F. <strong>Decifrando a Terra.</strong> 2ª ed. São
+            Paulo: Companhia
+            Editora Nacional, 2009.
+        </p>
+
+        <p>VESENTINI, José William. <strong>Geografia</strong>: o mundo em transição. ensino médio. 2.ed. – São Paulo:
+            Ática, 2013.</p>
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+        // Função com apenas uma palavra
+
+        function confereBox(mensagem, frase2, globinho) {
+
+            r1 = document.getElementById("r1");
+            r2 = document.getElementById("r2");
+            r3 = document.getElementById("r3");
+            r4 = document.getElementById("r4");
+            r5 = document.getElementById("r5");
+            r6 = document.getElementById("r6");
+            frase = document.getElementById(frase2);
+            globo = document.getElementById(globinho);
+
+            if (r2.checked == true || r4.checked == true) {
+
+                frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
+                Play2("../audio2.mp3");
+            }
+
+            else if (r1.checked == true && r3.checked == true && r5.checked == true && r6.checked == true) {
+
+
+                nota += 1;
+                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+                globo.style.display = "block";
+                Play("../audio1.mp3");
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                EscondeButton("buttoncheck1");
+                //MostraButton("buttoncheck2");
+
+
+            }
+
+
+            else {
+                frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
+                Play2("../audio2.mp3");
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+        i = 0;
+
+        myqs = [["1) Nesse tipo de limite de placas tectônicas, a crosta é destruída, enquanto uma placa mergulha sob a outra. Pode ocorrer uma colisão entre duas placas oceânicas e formar uma fossa no fundo do mar com cadeia de vulcões submarinos. Há também a colisão entre uma placa oceânica e uma continental, formando cadeias de montanhas como os Andes, além de abalos sísmicos e vulcanismos. E, finalmente, a colisão entre duas placas continentais como o Himalaia, com fortes terremotos associados. Trata-se do limite:", "tp13f1.png", "Transformante", "Divergente", "Convergente", "4"],
+
+        ["2) Esse conceito diz respeito ao equilíbrio nas camadas da Terra. Quando uma área da litosfera atinge o equilíbrio entre o peso da placa e a sua porção inserida na parte superior do manto (astenosfera), diz-se que essa região atingiu o equilíbrio ...", "", "tectônico", "isostático", "transformante", "3"],
+
+
+        ["3) Nas regiões profundas do manto, as temperaturas são mais elevadas, o que provoca a ascendência dos materiais em direção às áreas próximas da litosfera. Esses materiais ao chegarem perto da crosta, se resfriam e mergulham novamente para o interior do manto. Esse fenômeno é chamado de:", "", "Dorsal Mesoatlântica", "Correntes de convecção", "Isostasia", "3"],
+
+
+        ["4) Nesses limites de placas tectônicas, há um deslizamento horizontal de uma placa em relação à outra. A crosta não é destruída e nem produzida. Esses movimentos ocasionam forte atividade sísmica. A maior parte encontra-se nos oceanos, mas as mais conhecidas estão nos continentes, como a falha de San Andreas nos EUA. Trata-se do limite:", "tp13f1.png", "Transformante", "Divergente", "Convergente", "2"],
+
+        ["5) Nesses limites de placas tectônicas, uma nova crosta é formada. Ocorre um movimento de separação de placas nos oceanos, ao longo das cadeias montanhas no fundo do mar. Essas montanhas são chamadas de:", "tp13f1.png", "Movimento divergente", "Dorsal Mesoatlântica", "Placas tectônicas", "3"]
+        ];
+
+
+
+        function loadquestion() {
+
+
+
+            document.getElementById("mylabel").innerHTML = myqs[i][0];
+            document.getElementById("myIma").src = myqs[i][1];
+            myform.opt1.value = myqs[i][2];
+            myform.opt2.value = myqs[i][3];
+            myform.opt3.value = myqs[i][4];
+
+            document.getElementById("proximo").style.display = "none";
+
+
+
+            //document.getElementById("aviso").style.backgroundColor = "#fff";
+            //document.getElementById("aviso").innerHTML = "";
+
+        }
+
+
+
+        function changequestion() {
+            i = i + 1;
+
+
+
+            if (i >= myqs.length) {
+                MostraButton("btnFinal");
+                document.getElementById("proximo").style.display = "none";
+
+                return;
+            }
+
+
+
+            myform.opt1.disabled = false;
+            myform.opt2.disabled = false;
+            myform.opt3.disabled = false;
+
+            myform.opt1.style.backgroundColor = "lightgrey";
+            myform.opt2.style.backgroundColor = "lightgrey";
+            myform.opt3.style.backgroundColor = "lightgrey";
+            document.getElementById("proximo").disabled = false;
+
+            loadquestion();
+        }
+
+        
+
+            function EsperaSeg(){
+
+                document.getElementById("proximo").disabled = true;
+                setTimeout(changequestion,1000);
+
+                
+            }
+
+
+
+        function checkans(a, btn) {
+
+
+            ans = parseInt(myqs[i][5]);
+
+            if (ans == a) {
+
+                nota += 1;
+
+                document.getElementById(btn).style.backgroundColor = "#99ff99";
+                Play("../audio1.mp3");
+                document.getElementById("proximo").style.display = "block";
+
+                myform.opt1.disabled = true;
+                myform.opt2.disabled = true;
+                myform.opt3.disabled = true;
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+            else {
+                document.getElementById(btn).style.backgroundColor = "#ee4466";
+                Play("../audio2.mp3");
+                document.getElementById("proximo").style.display = "block";
+
+                myform.opt1.disabled = true;
+                myform.opt2.disabled = true;
+                myform.opt3.disabled = true;
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+
+        }
+
+
+        function AbrirDivFinal() {
+            document.getElementById("divFinal").style.display = "block";
+            loadquestion();
+        }
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                //addProgressBar();
+                //numButton();
+                ApagaButton();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -243,7 +243,7 @@ function mostrarNota() {
 // Deixa as divs cinzas quando completar a atividade
 function mostraCinza() {
 
-
+    // var gen = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
     var t = document.getElementsByClassName("topico");
     var radiosInput = document.getElementsByTagName('input');
     var todosBtn = document.getElementsByTagName('button');
@@ -270,6 +270,14 @@ function mostraCinza() {
         todosBtn[b].style.backgroundColor = "gray";
     }
 
+    // for (var c = 0; c < gen.length; c++) {
+    //     gen[c].disabled = true;
+    //     gen[c].style.backgroundColor = "gray";
+    // }
+
+
+
+
 
 }
 
@@ -283,4 +291,28 @@ function BalancarGlobo() {
 function RemoveBalancarGlobo() {
     document.getElementById("imagem50").classList.remove("balancar");
     document.getElementById("notaFixa").classList.remove("w3-animate-zoom");
+}
+
+
+window.onload = function () {
+
+    var elementBody = document.querySelector('body');
+    var elementBtnIncreaseFont = document.getElementById('increase-font');
+    var elementBtnDecreaseFont = document.getElementById('decrease-font');
+    // Padrão de tamanho, equivale a 100% do valor definido no Body
+    var fontSize = 100;
+    // Valor de incremento ou decremento, equivale a 10% do valor do Body
+    var increaseDecrease = 10;
+
+    // Evento de click para aumentar a fonte
+    elementBtnIncreaseFont.addEventListener('click', function (event) {
+        fontSize = fontSize + increaseDecrease;
+        elementBody.style.fontSize = fontSize + '%';
+    });
+
+    // Evento de click para diminuir a fonte
+    elementBtnDecreaseFont.addEventListener('click', function (event) {
+        fontSize = fontSize - increaseDecrease;
+        elementBody.style.fontSize = fontSize + '%';
+    });
 }

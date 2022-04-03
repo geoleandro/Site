@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
 
-	<script src="../../../estilos/jstextos.js"></script>
+	<script src="../../../estilos/jstextos.js" Defer></script>
 
 	<title>Texto07</title>
 
@@ -40,21 +40,18 @@
 		}
 
 
-		.larguraBar {
-			max-width: 680px;
-		}
 
 		.postit-tp7 {
 			background: #fffb76;
-			width: auto;
+			width: 85%;
 			height: auto;
+			color: #000;
 			padding: 5px;
 			font-family: pixel;
-			margin-bottom: 60px;
-			margin-top: 40px;
+			margin-bottom: 5px;
+			margin-top: -20px;
+			line-height: 20px;
 			position: relative;
-
-			Color: rgb(0, 0, 0);
 			font-size: 18px;
 			box-shadow: 2px 4px 6px #444;
 			-moz-box-shadow: 2px 4px 6px #444;
@@ -64,47 +61,6 @@
 			-webkit-transform: rotate(-3deg);
 			-o-transform: rotate(-3deg);
 			-ms-transform: rotate(-3deg);
-		}
-
-		.zoom {
-			animation: animatezoom 1s
-		}
-
-		@keyframes animatezoom {
-			from {
-				transform: scale(0)
-			}
-
-			to {
-				transform: scale(1)
-			}
-		}
-
-		body {
-			max-width: 700px;
-			margin: auto;
-			padding: 10px;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			margin-top: 50px;
-
-			font-family: pixel;
-			padding: 10px;
-		}
-
-
-		.margemAcima {
-			margin-top: 80px;
-		}
-
-		.margemAbaixo {
-			margin-bottom: 50px;
 		}
 	</style>
 
@@ -116,13 +72,23 @@
 
 	<div class="topico">
 
-		<!-- Navigation (Stays on Top) -->
-		<div class="centerBar">
+		<div class="centerBar w3-padding">
+			<!-- Navigation (Stays on Top) -->
 			<div class="w3-top w3-bar w3-black  larguraBar ">
 				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-				<a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
-				<a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-						alt="tp3Foto4" width="32" height="32"></a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
+
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
+
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
 			</div>
 		</div>
 
@@ -148,7 +114,7 @@
 	<div class="topico">
 
 
-		<p  id="caixaNomeAluno">Digite seu nome</p>
+		<p id="caixaNomeAluno">Digite seu nome</p>
 
 		<div class="area">
 			<input class="input" type="text" id="pq0" name="pq0">
@@ -157,7 +123,7 @@
 
 		<p id="resp0"></p>
 
-		<p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+		<button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
 
 		<button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -218,13 +184,13 @@
 		<p> Os aparelhos eletrônicos receptores imitam o olho humano, que também é um sensor. Como
 			também será visto na disciplina de Física, todo corpo emite radiação eletromagnética. Entretanto, não
 			conseguimos enxergar essas radiações, pois a maioria não são visíveis à visão humana, conforme <span
-				onclick="Aparecer('imagem1','citacao1')"><mark>figura abaixo</mark></span> </p>
+				onclick="Aparecer('imagem1','citacao1')"><mark>figura abaixo.</mark></span> </p>
 
-		<div class="area"><img id="imagem1" src="tp7f1.png" alt="Espectro de luz" class="w3-mobile" style=display:none>
-		</div>
-
-
-		<span class="citacao" id="citacao1" style=display:none> Fonte: Wikipedia. </span>
+	
+			<div class="w3-center"><img id="imagem1" src="tp7f1.png" alt="Espectro de luz" class="w3-mobile" style=display:none></div>
+		
+			<div class="w3-margin-left"><span class="citacao" id="citacao1" style=display:none> Fonte: Wikipedia. </span></div>
+		
 
 
 		<p> De todo tipo de comprimentos de ondas existentes, só conseguimos ver uma parte bem
@@ -232,7 +198,7 @@
 
 		<p>O estudo desse espectro gerou diversos aparelhos eletrônicos, como controles remotos,
 			câmeras fotográficas, dentro outros. Vamos estudar alguns deles, os SIGs, que, por sua vez, resultam da
-			combinação entre três tipos de tecnologias distintos: O sensoriamento remoto, o GPS e o geoprocessamento.
+			combinação entre três tipos de tecnologias distintos: O <strong>sensoriamento remoto</strong>, o <strong>GPS</strong> e o <strong>geoprocessamento</strong>.
 		</p>
 
 
@@ -562,37 +528,26 @@
 
 
 
-		<div class="w3-mobile w3-padding">
-
-
-			<p><strong>As principais aplicações do GPS são:</strong></p>
-
-
-			<div class="postit-tp7">
-
-				<ul>
-
-					<li>Aviação: civil e militar;</li>
-
-					<li>Navegação: marítima e comercial;</li>
-
-					<li>Esportes; rally, balonismo, corrida de aventura etc.;</li>
-
-					<li>Rastreamento de frotas, veículos e animais;</li>
-
-					<li>Agricultura de precisão;</li>
-
-					<li>Geodinâmica – movimento da crosta terrestre;</li>
-
-					<li>Topografia – definição de limites, áreas etc;</li>
-
-					<li>Coleta de dados de dados para Sistema de Informação Geográfica, dentre outras.</li>
-
-
-				</ul>
-
+		<div class="area margemAbaixo">
+			<div class="postit-tp7 w3-margin-top">
+				<h2 class="fontePixel"><strong>As principais aplicações do GPS são:</strong></h2>
+				
+					<ul class="lista">
+						<li>Aviação: civil e militar;</li>
+						<li>Navegação: marítima e comercial;</li>
+						<li>Esportes; rally, balonismo, corrida de aventura etc.;</li>
+						<li>Rastreamento de frotas, veículos e animais;</li>
+						<li>Agricultura de precisão;</li>
+						<li>Geodinâmica – movimento da crosta terrestre;</li>
+						<li>Topografia – definição de limites, áreas etc;</li>
+						<li>Coleta de dados de dados para Sistema de Informação Geográfica, dentre outras.</li>
+					</ul>
+				
 			</div>
 		</div>
+
+
+		
 
 
 
@@ -680,7 +635,7 @@
 
 		<p>- Programas de processamento; </p>
 
-		<p> - Métodos e técnicas de levantamentos; <span id="citacao">(Oliveira, 2011)</span>.</p>
+		<p> - Métodos e técnicas de levantamentos; <span id="w3-small">(Oliveira, 2011)</span>.</p>
 
 		<p> Atualmente há dois sistemas de GPS em operação: um norte-americano, o Navstar e um russo,
 			o Glonass, ambos começaram durante a Guerra Fria</p>
@@ -772,14 +727,14 @@
 
 
 
-		<div class="divCaixa1">
-			<p>Os órgãos do governo brasileiro utilizam as imagens de satélites e GPS para: </p>
-			<ul>
+		<div class="divCaixa1 w3-margin">
+			<h4 class="fontePixel">Os órgãos do governo brasileiro utilizam as imagens de satélites e GPS para: </h4>
+			<ul class="lista">
 				<li> Identificar com exatidão os limites de fazendas improdutivas a serem desapropriadas para reforma
 					agrária;</li>
 				<li>Controlar queimadas em florestas e desmatamentos;</li>
-				<li>Demarcar limites fronteiriços, entre outras finalidades</li>
-				<li></li>
+				<li>Demarcar limites fronteiriços, entre outras finalidades.</li>
+				
 
 			</ul>
 
@@ -928,15 +883,15 @@
 	<div class="topico">
 
 
-		<h2> Em grupos de 3 e de, no máximo, 5 estudantes, responda corretamente as 10 questões abaixo
-			e tente somar 1500 globinhos.</h2>
-
-		<p> <strong>Instruções</strong>: Escreva o nome do seu grupo na lousa (use sua criatividade!),
-			ao final será constrúido um painel com todas as notas</p>
-
-		<p> - As sentenças afirmativas possuem duas alternativas e somente uma resposta correta, que
-			pode ser: Verdadeiro ou Falso.</p>
-		<p>- O tempo total da atividade será de 10 minutos. </p>
+		<div class ="divCaixa1 w3-margin" >
+			<h4 class="fontePixel"> Em grupos de 3 e de, no máximo, 5 estudantes, responda corretamente as 10 questões abaixo
+				e tente somar 15 globinhos. Algumas perguntas valem mais do que outras.</h4>
+			<h4 class="fontePixel"> <strong>Instruções</strong>: Escreva o nome do seu grupo na lousa (use sua criatividade!),
+				ao final será constrúido um painel com todas as notas</h4>
+			<h4 class="fontePixel"> - As sentenças afirmativas possuem duas alternativas e somente uma resposta correta, que
+				pode ser: Verdadeiro ou Falso.</h4>
+			<h4 class="fontePixel">- O tempo total da atividade será de 10 minutos. </h4>
+		</div>
 
 
 		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -950,22 +905,22 @@
 	<div class="topico">
 
 
-		<form id="quiz" name="quiz" onsubmit="return verificar()">
+		<form id="quiz" name="quiz" onsubmit="verificar()">
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 01</p>
+				<h4 class="divCaixa1">Questão 01</h4>
 
-				<p> Radar - É um dispositivo que permite detectar objetos a longas distâncias. É
+				<p> <strong>Radar</strong> - É um dispositivo que permite detectar objetos a longas distâncias. É
 					constituído de sensores ativos que emitem fluxos de energia (ondas eletromagnéticas) por meio de uma
 					antena e registradas por seus instrumentos. </p>
 
 
 				<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1"
-						value="b">Verdadeiro</p>
+						value="b"> Verdadeiro.</p>
 				<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
-					Falso</p>
+					Falso.</p>
 
 
 			</div>
@@ -982,11 +937,11 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 02</p>
+				<h4 class="divCaixa1">Questão 02</h4>
 
-				<p> Sistemas de informações Geográficas -Consiste na captação de informações através de
+				<p><strong> Sistemas de informações Geográficas</strong> - Consiste na captação de informações através de
 					sensores instalados em satélites artificiais, aeronaves ou até balões. Obtém imagens e dados da
 					superfície terrestre pela captação e registro da energia refletida/emitida pela superfície, sem que
 					haja contato físico entre o sensor e a superfície estudada. </p>
@@ -996,9 +951,9 @@
 
 
 				<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
-					Verdadeiro</p>
+					Verdadeiro.</p>
 				<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2"
-						value="b">Falso</p>
+						value="b"> Falso.</p>
 
 			</div>
 
@@ -1017,11 +972,11 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 03</p>
+				<h4 class="divCaixa1">Questão 03</h4>
 
-				<p> Sensoriamento remoto - É a utilização de imagens digitais, sejam elas captadas por
+				<p> <strong>Sensoriamento remoto</strong> - É a utilização de imagens digitais, sejam elas captadas por
 					satélites ou por fotografias aéreas, para o estudo da superfície terrestre. Sua utilidade reside no
 					tratamento quantitativo e qualitativo dessas imagens que propiciam a realização de estudos sobre
 					elementos como as florestas, os biomas, o clima, a agricultura, as atividades humanas, entre outros.
@@ -1029,10 +984,10 @@
 
 
 				<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3"
-						value="b">Verdadeiro</p>
+						value="b"> Verdadeiro.</p>
 
 				<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a">
-					Falso</p>
+					Falso.</p>
 
 			</div>
 
@@ -1047,25 +1002,25 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 04</p>
+				<h4 class="divCaixa1">Questão 04</h4>
 
-				<p>Aerofotogrametria - É a fotografia obtida por meio de uma câmera aérea instalada em
+				<p><strong>Aerofotogrametria</strong> - É a fotografia obtida por meio de uma câmera aérea instalada em
 					uma aeronave. </p>
 
 
 				<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a">
-					falso</p>
+					Falso.</p>
 				<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b">
-					Verdadeiro</p>
+					Verdadeiro.</p>
 
 			</div>
 
 
 
 			<div class="comentarios">
-				<p> <strong>Comentário: </strong></p>
+				<!-- <p> <strong>Comentário: </strong></p> -->
 
 
 			</div>
@@ -1075,19 +1030,19 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 05</p>
+				<h4 class="divCaixa1">Questão 05</h4>
 
-				<p> Sistema de posicionamento global - É um dispositivo que permite detectar objetos a
+				<p> <strong>Sistema de posicionamento global</strong> - É um dispositivo que permite detectar objetos a
 					longas distâncias. É constituído de sensores ativos que emitem fluxos de energia (ondas
 					eletromagnéticas) por meio de uma antena e registradas por seus instrumentos. </p>
 
 
 				<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a">
-					Verdadeiro</p>
+					Verdadeiro.</p>
 				<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b">
-					Falso</p>
+					Falso.</p>
 
 			</div>
 
@@ -1107,19 +1062,19 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 06</p>
+				<h4 class="divCaixa1">Questão 06</h4>
 
-				<p>Geoprocessamento - É a fotografia obtida por meio de uma câmera aérea instalada em uma
+				<p><strong>Geoprocessamento</strong> - É a fotografia obtida por meio de uma câmera aérea instalada em uma
 					aeronave </p>
 
 
 
 				<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
-					Verdadeiro</p>
+					Verdadeiro.</p>
 				<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b">
-					Falso</p>
+					Falso.</p>
 
 			</div>
 
@@ -1140,11 +1095,11 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 07</p>
+				<h4 class="divCaixa1">Questão 07</h4>
 
-				<p> Satélite brasileiro - O CBERS é um satélite Sino-Brasileiro de Recursos terrestres,
+				<p> <strong>Satélite brasileiro</strong> - O CBERS é um satélite Sino-Brasileiro de Recursos terrestres,
 					resultado de um acordo entre China e Brasil. Esse satélite foi projetado com o objetivo de gerar
 					imagens da superfície da Terra, usando equipamentos de sensoriamento remoto. Essas imagens, podem
 					ser usadas nas mais variadas aplicações, como: agricultura, meio ambiente, recursos hidrológicos e
@@ -1153,9 +1108,9 @@
 
 
 				<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b">
-					Verdadeiro</p>
+					Verdadeiro.</p>
 
-				<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">Falso</p>
+				<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> Falso.</p>
 
 
 			</div>
@@ -1171,20 +1126,20 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 08</p>
+				<h4 class="divCaixa1">Questão 08</h4>
 
-				<p> Sistema de posicionamento global - É todo satélite especificamente projetado para
+				<p> <strong>Sistema de posicionamento global</strong> - É todo satélite especificamente projetado para
 					observar a Terra quando em órbita, de forma similar aos satélites espiões, mas com finalidades não
 					militares, tais como: monitoração ambiental, meteorologia, cartografia, etc. </p>
 
 
 
 				<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
-					Verdadeiro</p>
+					Verdadeiro.</p>
 				<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b">
-					Falso</p>
+					Falso.</p>
 
 			</div>
 
@@ -1193,7 +1148,7 @@
 			<div class="comentarios">
 				<p> <strong>Comentário: </strong></p>
 
-				<p> Resposta correta: Satélite de observação da Terra </p>
+				<p> Resposta correta: Satélite de observação da Terra. </p>
 			</div>
 
 
@@ -1203,19 +1158,19 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 09</p>
+				<h4 class="divCaixa1">Questão 09</h4>
 
-				<p> produção de mapas digitais depende única e exclusivamente das imagens e dados
+				<p> A produção de mapas digitais depende única e exclusivamente das imagens e dados
 					fornecidos pelos satélites. </p>
 
 
 
 				<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a">
-					Verdadeiro</p>
+					Verdadeiro.</p>
 				<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9"
-						value="b">Falso</p>
+						value="b"> Falso.</p>
 
 			</div>
 
@@ -1235,11 +1190,11 @@
 
 
 
-			<div class="campo">
+			<div class="campo w3-margin w3-padding-top-48">
 
-				<p class="divCaixa1">Questão 10</p>
+				<h4 class="divCaixa1">Questão 10</h4>
 
-				<p> A gênese da divulgação do conhecimento sobre a cartografia surgiu por meio da arte,
+				<p> (UNB 2015) A gênese da divulgação do conhecimento sobre a cartografia surgiu por meio da arte,
 					uma vez que Claudius Ptolomeu, pensador grego, intensificou seu trabalho como cartógrafo ao escrever
 					a obra Geografia de Ptolomeu. Essa obra tornou-se conhecida como “o primeiro atlas mundial”. A
 					partir do século XVII, a cartografia se tornou ciência distinta, perdendo as características
@@ -1251,7 +1206,7 @@
 
 
 
-				<p class="citacao"> M. A. de Moraes. A arte com olhar e raciocínio geográfico. In: Revista Geografia,
+				<p class="w3-small"> M. A. de Moraes. A arte com olhar e raciocínio geográfico. In: Revista Geografia,
 					n.º 54, 2014 (com adaptações). </p>
 
 				<p> Tendo como referência inicial o texto acima, julgue o item seguinte.</p>
@@ -1263,8 +1218,8 @@
 
 
 
-				<p class="bordaQuestoes" id="q10a"><input type="radio" id="pq10" name="pq10" value="a"> Verdadeiro</p>
-				<p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b"> Falso</p>
+				<p class="bordaQuestoes" id="q10a"><input type="radio" id="pq10" name="pq10" value="a"> Verdadeiro.</p>
+				<p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b"> Falso.</p>
 
 			</div>
 
@@ -1323,7 +1278,7 @@
 
 
 			<div id="id01" class="w3-modal">
-				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-padding" style="max-width:600px">
 
 					<div class="w3-center"><br>
 						<span onclick="document.getElementById('id01').style.display='none'"
@@ -1366,9 +1321,9 @@
 		<h3><strong>Para saber mais: </strong></h3>
 
 
-		<div class="area">
+		<div class="area w3-margin">
 
-			<div class="postit">
+			<div class="postit w3-padding-48">
 				<a href="https://www.youtube.com/watch?v=qzOA41vA8Qw&feature=emb_logo&ab_channel=AprendaEngenharia"
 					target="_blank">
 					GPS, como funciona?
@@ -1635,12 +1590,12 @@
 
 			}
 
-			if (corretas >= 5 && corretas <= 7) {
+			if (corretas >= 5 && corretas <= 10) {
 				pontos = 1;
 			}
 
 
-			if (corretas >= 7) {
+			if (corretas >= 10) {
 				pontos = 0;
 
 			}

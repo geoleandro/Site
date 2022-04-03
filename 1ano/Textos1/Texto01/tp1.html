@@ -10,21 +10,13 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="stylesheet" href="../../../estilos/ModeloCss.css">
 
-	<script src="../../../estilos/jstextos.js"></script>
+	<script src="../../../estilos/jstextos.js" defer></script>
+
+
 
 	<title>Texto01</title>
 
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 	<style>
@@ -38,97 +30,85 @@
 			display: block
 		}
 
-		.larguraBar {
-			max-width: 680px;
-		}
 
-		.zoom {
-			animation: animatezoom 1s
-		}
-
-		@keyframes animatezoom {
-			from {
-				transform: scale(0)
-			}
-
-			to {
-				transform: scale(1)
-			}
-		}
 
 		#fundoQ {
-			background: url(tp1F01A.png)no-repeat;
+			background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(tp1F01A.png)no-repeat;
 			width: 340px;
-			height: 290px;
+			height: auto;
 			margin: auto;
 			overflow: visible;
 			background-position: center;
 			background-size: cover;
+			color: white;
+
 
 		}
 
-		body {
-			max-width: 700px;
-			margin: auto;
-			padding: 10px;
-			
-		}
 
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			padding: 10px;
+		.postit-tp1 {
+			background: #ffffa5;
+			width: 85%;
+			height: auto;
+			color: #000;
+			padding: 5px;
 			font-family: pixel;
+			margin-bottom: 5px;
+			margin-top: -20px;
+			line-height: 20px;
+			position: relative;
+			font-size: 18px;
+			box-shadow: 2px 4px 6px #444;
+			-moz-box-shadow: 2px 4px 6px #444;
+			-webkit-box-shadow: 2px 4px 6px #444;
+			transform: rotate(-3deg);
+			-moz-transform: rotate(-3deg);
+			-webkit-transform: rotate(-3deg);
+			-o-transform: rotate(-3deg);
+			-ms-transform: rotate(-3deg);
 		}
 
-
-
-		.margemAcima {
-			margin-top: 80px;
+		.postit-tp1>a {
+			text-decoration: none;
 		}
 
-		.margemAbaixo {
-			margin-bottom: 50px;
+		.postit-tp1>a:hover {
+			text-decoration: underline;
 		}
-
-		.postit-tp1{ background:#ffffa5;  width: 85%; height: 400px;;  color: #000; padding:5px; font-family: pixel; margin-bottom: 5px; margin-top: -20px;   line-height:20px; position: relative;font-size:24px; box-shadow: 2px 4px 6px #444;-moz-box-shadow: 2px 4px 6px #444; -webkit-box-shadow: 2px 4px 6px #444; transform: rotate(-3deg); -moz-transform: rotate(-3deg);-webkit-transform: rotate(-3deg);-o-transform: rotate(-3deg); -ms-transform: rotate(-3deg);    }
-
-		.postit-tp1 > a {
-			text-decoration: none;  
-		}
-
-		.postit-tp1 > a:hover {
-			text-decoration: underline;  
-		}
-
-
 	</style>
 
 
 
 </head>
 
-<body onload="paragrafotexto() ">
+<body>
+
+
 
 
 
 	<div class="topico ">
 
-		<div class="centerBar w3-padding-24">
+		<div class="centerBar w3-padding">
 			<!-- Navigation (Stays on Top) -->
 			<div class="w3-top w3-bar w3-black  larguraBar ">
-				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop ">1º ano</a>
-				<a href="" class="w3-bar-item w3-button margemTop" id="notaFixa"></a>
-				<a href="" class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-						alt="tp3Foto4" width="32" height="32"></a>
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span  class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+						alt="tp3Foto4" width="32" height="32"></span>
 			</div>
 		</div>
 
 
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
 
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
 
 
 
@@ -136,8 +116,8 @@
 			região; desigualdades socioespaciais. </h1>
 
 
-		<div class="area"><img src="iconeTransicao.gif" alt="Espaço geográfico" class="w3-mobile" width="630"
-				height="104"> </div>
+		<div class="area w3-padding-top-32"><img src="iconeTransicao.gif" alt="Espaço geográfico" class="w3-mobile"
+				width="630" height="104"> </div>
 
 		<p><strong>Conteúdo:</strong> Conceitos de Espaço geográfico, Território, Lugar, Paisagem e
 			Região;
@@ -171,7 +151,7 @@
 
 		<p id="resp0"></p>
 
-		<p><button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button></p>
+		<button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
 
 		<button id="buttonA" onclick="MostrarProximo(this);  this.style.display='none'">Próximo</button>
@@ -210,10 +190,11 @@
 					geográfico.</mark></span> </p>
 
 		<img id="imagem1" src="tp1F01.png" alt="Salvador, Bahia" class="w3-mobile" style=display:none>
-	
 
 
-		<span class="citacao" id="citacao1" style=display:none> Vista aérea da cidade de Salvador, Estado da Bahia. Fonte: Wikipédia. </span>
+
+		<span class="citacao" id="citacao1" style=display:none> Vista aérea da cidade de Salvador, Estado da Bahia.
+			Fonte: Wikipédia. </span>
 
 
 
@@ -241,13 +222,16 @@
 
 
 		<div class="w3-panel w3-pale-green">
-			<p> Você estudou Geografia desde o ensino primário. Fez exercícios sobre o seu
+			<p class="w3-pale-green"> Você estudou Geografia desde o ensino primário. Fez exercícios sobre o seu
 				local de moradia (maquete de sua casa), desenhou um mapa do seu bairro e estudou seu município.
-				<p>No ensino fundamental conheceu as diferentes paisagens e continentes em direção a um mundo
+			<p class="w3-pale-green">No ensino fundamental conheceu as diferentes paisagens e continentes em direção a
+				um mundo
 				conectado, isto é, globalizado.</p>
-				<p> Agora no Ensino Médio, vai aprofundar essas relações no conhecimento do mundo natural, do Brasil e
+			<p class="w3-pale-green"> Agora no Ensino Médio, vai aprofundar essas relações no conhecimento do mundo
+				natural, do Brasil e
 				do mundo na era da globalização.</p>
-				<p>A partir disso, escreva em seu <strong>caderno</strong> 5 palavras (sem a preocupação com o
+			<p class="w3-pale-green">A partir disso, escreva em seu <strong>caderno</strong> 5 palavras (sem a
+				preocupação com o
 				significado neste
 				momento) sobre o que acha que é Geografia.
 			</p>
@@ -264,7 +248,7 @@
 	<div class="topico">
 
 		<p class=" caixa"> Complete:</p>
-		<h2> O objeto de estudo da Geografia é o:</h2>
+		<h4> O objeto de estudo da Geografia é o:</h4>
 
 		<div class="area">
 			<p><textarea placeholder="Insira sua resposta aqui" required="required" id="pq1" name="pq1" rows="2"
@@ -273,8 +257,7 @@
 
 		<p id="resp1"></p>
 
-		<p><button id="button1q" class="btnShow-tp1"
-				onclick="mostraTexto2('espaço', 'geográfico','pq1')">Confira</button></p>
+		<button id="button1q" class="btnShow-tp1" onclick="mostraTexto2('espaço', 'geográfico','pq1')">Confira</button>
 
 		<div class="area">
 			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho" style="display:none" alt="globinho" width="64"
@@ -295,17 +278,19 @@
 		<p class=" caixa"> Questione a realidade!</p>
 
 		<div class="w3-panel w3-pale-yellow ">
-			<p> Dentre as diversas palavras sobre o que a Geografia estuda anotadas no caderno, temos:
+			<p class="w3-pale-yellow"> Dentre as diversas palavras sobre o que a Geografia estuda anotadas no caderno,
+				temos:
 				<strong>espaço geográfico</strong>, climas, mapas, montanhas, <strong>lugar</strong>,
 				<strong>território</strong>, vegetação,
 				<strong>região</strong>, globalização, <strong>paisagens</strong> etc.
 			</p>
-			<p> Nesse exercício você vai treinar sua habilidade de fazer perguntas. A Geografia estuda
+			<p class="w3-pale-yellow"> Nesse exercício você vai treinar sua habilidade de fazer perguntas. A Geografia
+				estuda
 				tudo isso, mas não de forma desorganizada! </p>
-			<p>Ela utiliza ferramentas chamadas <span
+			<p class="w3-pale-yellow">Ela utiliza ferramentas chamadas <span
 					onclick="this.innerHTML='conceito (uma ideia sobre algo ou alguma coisa)'"><mark>conceitos</mark></span>.
 				Esses conceitos estão destacados acima.</p>
-			<p>Elabore em seu caderno uma pergunta para cada um deles. Por exemplo:</p>
+			<p class="w3-pale-yellow">Elabore em seu caderno uma pergunta para cada um deles. Por exemplo:</p>
 			<div>
 				<ul>
 					<li> Desde quando existe o território? </li>
@@ -332,12 +317,12 @@
 
 	<div class="topico">
 
-		<div class="area margemAbaixo">
+		<div class="area margemAbaixo ">
 			<div class="postit-tp1 w3-margin-top ">
-				<h2><mark><span  class="w3-padding" >Anote ai:</span></mark></h2>
+				<h2><mark><span class="w3-padding">Anote ai:</span></mark></h2>
 				<h4>A Geografia estuda a realidade por meio de seu conceito geral chamado <span class="mark2">Espaço
 						Geográfico</span> e de seus auxiliares principais:</h4>
-				<ul class="lista">
+				<ul class="lista ">
 					<li>Território</li>
 					<li>Paisagem</li>
 					<li>Lugar</li>
@@ -346,11 +331,11 @@
 			</div>
 		</div>
 
-	
+
 		<button class="btnShow"
 			onclick="MostrarProximo(this); MostrarFrase('resp2', 'globinho2','','isso ai, ganhou mais um globinho','1'); this.style.display='none'">Proximo</button>
 
-	
+
 		<p id="resp2"></p>
 
 		<div class="area">
@@ -401,7 +386,7 @@
 		<p> Veja abaixo o processo de transformação desse espaço geográfico.</p>
 
 		<div class="area">
-		<img id="imagem" src="tp1F01B.png" alt="Transformação do espaço geográfico" class="w3-mobile">
+			<img id="imagem" src="tp1F01B.png" alt="Transformação do espaço geográfico" class="w3-mobile">
 		</div>
 
 
@@ -451,7 +436,7 @@
 
 		<p><img src="tp1F02.png" alt="Paisagem natural e social" class="w3-mobile"> </p>
 
-		<p class="divCaixa1 w3-large"> a) Quais elementos estão presentes na foto A ? E quais os elementos estão
+		<p class="divCaixa1 w3-large w3-margin"> a) Quais elementos estão presentes na foto A ? E quais os elementos estão
 			evidentes na foto B?</p>
 
 
@@ -528,39 +513,45 @@
 
 		<p class=" caixa"> Teste seu conhecimento</p>
 
-		<p class="w3-panel w3-leftbar w3-sand"> "Uma região produtora de algodão, de café ou trigo. Uma paisagem urbana ou uma cidade de
-			tipo europeu ou de tipo americano. Um centro urbano de negócios e as diferentes periferias urbanas. Tudo
-			isto são paisagens, formas mais ou menos duráveis. O seu traço comum é ser a combinação de objetos naturais
-			e de objetos fabricados, isto é, objetos sociais, e ser o resultado da acumulação da atividade de muitas
-			gerações" <span class="w3-small">(SANTOS, 2004).</span></p>
+		<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+			<p class="w3-sand">Uma região produtora de algodão, de café ou trigo. Uma paisagem urbana
+				ou uma cidade de
+				tipo europeu ou de tipo americano. Um centro urbano de negócios e as diferentes periferias urbanas. Tudo
+				isto são paisagens, formas mais ou menos duráveis. O seu traço comum é ser a combinação de objetos
+				naturais
+				e de objetos fabricados, isto é, objetos sociais, e ser o resultado da acumulação da atividade de muitas
+				gerações" <span class="w3-small">(SANTOS, 2004).</span></p>
+
+		</div>
 
 
 
 		<p>Pode-se inferir do texto acima que a paisagem é constituída ao longo do tempo:</p>
 
-		<button class="desativar3 p4 area"
+		<button class="desativar3 p4 area w3-margin "
 			onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">a)
 			por objetos naturais.</button>
-	
 
-		<button class="desativar3 p4 area"
+
+		<button class="desativar3 p4 area w3-margin "
 			onclick="MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">b)
 			por objetos sociais.</button>
-		
 
-		<button class="desativar3 p4 area"
+
+		<button class="desativar3 p4 area w3-margin "
 			onclick="MostrarProximo(this);MostrarFrase('resp3','globinho3', 'desativar3', 'opa, essa foi bem fácil, já possui','1'); this.style.backgroundColor='lightgreen'">c)
 			pelo acúmulo de objetos naturais e sociais.</button>
-	
 
 
-		<span id="resp3"></span>
+
+		<p id="resp3"></p>
 
 		<div class="area">
 			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
 					width="64" height="64"> </p>
 		</div>
-	
+
 
 
 	</div>
@@ -603,10 +594,16 @@
 
 		<p>Leia a citação abaixo:</p>
 
-		<p class="w3-panel w3-leftbar w3-sand">O território é um campo de forças, uma teia ou rede de relações sociais que, a
-			par de sua complexidade interna, define, ao mesmo tempo, um limite, uma alteridade: a diferença entre nós (o
-			grupo, os membros da coletividade ou 'comunidade', os insiders) e os 'outros' (os de fora, os estranhos, os
-			outsiders).”<span class="w3-small"> (SOUZA, 1995)</span>.</p>
+		<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+			<p class="w3-sand"> O território é um campo de forças, uma teia ou rede de relações sociais
+				que, a
+				par de sua complexidade interna, define, ao mesmo tempo, um limite, uma alteridade: a diferença entre
+				nós (o
+				grupo, os membros da coletividade ou 'comunidade', os insiders) e os 'outros' (os de fora, os estranhos,
+				os
+				outsiders).” <span class="w3-small"> (SOUZA, 1995).</span></p>
+		</div>
 
 		<p>É por meio da análise da construção histórica de um determinado território que podemos
 			reconhecer a origem das desigualdades no espaço, a destruição da cultura ou de povos indígenas ou o domínio
@@ -627,15 +624,17 @@
 		<p class=" caixa"> Teste seu conhecimento!</p>
 
 
-		<p class="divCaixa1 w3-large"> Em sua cidade, dê exemplos de territórios ocupados por grupos sociais.
-			Quais conflitos por território você já ouviu falar? Esses conflitos podem afetar bastante o lugar em que
-			vivemos.</p>
+		<div class="w3-margin">
+			<p class="divCaixa1 w3-large"> Em sua cidade, dê exemplos de territórios ocupados por grupos sociais.
+				Quais conflitos por território você já ouviu falar? Esses conflitos podem afetar bastante o lugar em que
+				vivemos.</p>
+		</div>
 
 		<br>
 		<button class="btnShow"
 			onclick=" MostrarFrase('resp4', 'globinho4','','esse exercício valeu mais pontos!','2'); MostrarProximo(this); this.style.display='none'">Proximo</button>
 
-	
+
 		<p id="resp4"></p>
 
 		<div class="area">
@@ -682,8 +681,10 @@
 		<p class=" caixa"> Teste suas habilidades!</p>
 
 
-		<p class="divCaixa1 w3-large"> Identifique os lugares, na cidade ou no campo, com os quais você possui
-			relações diretas, seja na área de lazer, estudo, trabalho, deslocamentos, dentre outros.</p>
+		<div class="w3-margin">
+			<p class="divCaixa1 w3-large"> Identifique os lugares, na cidade ou no campo, com os quais você possui
+				relações diretas, seja na área de lazer, estudo, trabalho, deslocamentos, dentre outros.</p>
+		</div>
 
 		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
 
@@ -697,20 +698,20 @@
 
 		<h2> O conceito de lugar, na perspectiva da Geografia, pode ser definido como:</h2>
 
-		<button class="desativar5 p4 area"
+		<button class="desativar5 p4 area w3-margin"
 			onclick="MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">a)
 			um espaço de luta.</button>
-	
 
-		<button class="desativar5 p4 area"
+
+		<button class="desativar5 p4 area w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5','Parabéns, ganhou','1'); this.style.backgroundColor='lightgreen'">b)
 			um espaço afetivo.</button>
-	
 
-		<button class="desativar5 p4 area"
+
+		<button class="desativar5 p4 area w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">c)
 			um espaço para contemplação.</button>
-		
+
 
 
 
@@ -721,7 +722,7 @@
 					width="64" height="64"> </p>
 		</div>
 
-	
+
 	</div>
 
 
@@ -741,10 +742,20 @@
 			capitalismo. Ou como escreveu o grande geógrafo Milton Santos:</p>
 
 
-		<p class="w3-panel w3-leftbar w3-sand"> "[...] A região é, na verdade, o resultado do próprio avanço da globalização,
-			já que a cada progresso da difusão dos vetores da modernidade global cria-se uma correspondente
-			diferenciação dos espaços da superfície terrestre: por mais que a globalização tente homogeneizar o espaço,
-			ela acaba por fragmentá-lo e regionalizá-lo ainda mais"<span class="w3-small"> (Adaptado)</span>.</p>
+		<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+			
+
+				<p class="w3-sand">[...] A região é, na verdade, o resultado do próprio avanço da
+					globalização,
+					já que a cada progresso da difusão dos vetores da modernidade global cria-se uma correspondente
+					diferenciação dos espaços da superfície terrestre: por mais que a globalização tente homogeneizar o
+					espaço,
+					ela acaba por fragmentá-lo e regionalizá-lo ainda mais"<span class="w3-small"> (Adaptado)</span>.
+				</p>
+			
+
+		</div>
 
 		<p> Veja o mapa abaixo sobre as possibilidades de se regionalizar o espaço geográfico: </p>
 
@@ -770,19 +781,19 @@
 
 		<h3> A região pode ser definida como...</h3>
 
-		<button class="desativar6 p4 area"
+		<button class="desativar6 p4 area w3-margin"
 			onclick="MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','0');this.style.backgroundColor='tomato'">a)
 			uma relação entre espaço e poder.</button>
-		
 
-		<button class="desativar6 p4 area"
+
+		<button class="desativar6 p4 area w3-margin"
 			onclick="MostrarProximo(this); MostrarFrase('resp6','globinho6', 'desativar6','Bacana, está quase finalizando, ganhou','1'); this.style.backgroundColor='lightgreen'">b)
 			um subespaço do espaço global. </button>
-	
-		<button class="desativar6 p4 area"
+
+		<button class="desativar6 p4 area w3-margin"
 			onclick="MostrarProximo(this); RetirarPontos('resp6','globinho6', 'desativar6','0');this.style.backgroundColor='tomato'">c)
 			um sistema de objetos e ações em conjunto.</button>
-	
+
 		<p id="resp6"></p>
 
 		<div class="area">
@@ -790,7 +801,7 @@
 					width="64" height="64"> </p>
 		</div>
 
-	
+
 	</div>
 
 
@@ -852,10 +863,12 @@
 		<p class=" caixa"> Trabalhe em dupla!</p>
 
 		<div class="w3-panel w3-sand">
-			<p> Escreva cada um em seu caderno, troquem ideias sobre como estruturar um mapa mental, tal
+			<p class="w3-sand"> Escreva cada um em seu caderno, troquem ideias sobre como estruturar um mapa mental, tal
 				como no exemplo abaixo:</p>
-			<div class="area"><img src="tp1F07.png" alt="Mapa mental conceitos geográficos" class="w3-mobile"></div>
-			<p>Complete os pontos de interrogação com textos ou desenhos e faça um resumo da aula.Valor da
+			<div class="area w3-sand"><img src="tp1F07.png" alt="Mapa mental conceitos geográficos" class="w3-mobile">
+			</div>
+			<p class="w3-sand">Complete os pontos de interrogação com textos ou desenhos e faça um resumo da aula.Valor
+				da
 				atividade: 04 globinhos.</p>
 		</div>
 
@@ -1059,6 +1072,18 @@
 		}
 
 
+
+	</script>
+
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
 
 	</script>
 
