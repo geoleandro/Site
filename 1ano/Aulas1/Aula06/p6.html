@@ -11,45 +11,38 @@
 	<link rel="stylesheet" href="../../../estilos/questoes.css">
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
+<div class="w3-top w3-bar w3-black larguraBar w3-large">
+
+    <div class="w3-container">
+
+        <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+    </div>
 
 
-		<a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
 
+</div>
 
-	</div>
 
 
 	<h1 class="h1"> Aula 06 – Revisão (aulas 01 a 05)</h1>
 
-
 	<div class="w3-container w3-white ">
 
-        <p><strong>Conteúdo:</strong></p>
+		<p><strong>Conteúdo:</strong></p>
 
-		<ul class="w3-padding-32">
+		<ul class="w3-padding-top">
 			<li >Conceitos fundamentais da Geografia: Espaço geográfico, território, lugar, paisagem e região;</li>
 			<li >Introdução à História da Cartografia; Mapas; Sistemas referenciais para localização espacial: pontos
 				cardeais; Rotação; coordenadas geográficas, longitude, latitude;</li>
@@ -66,6 +59,15 @@
 
 
 
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+	
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
 
 
 	<form id="quiz" name="quiz" onsubmit="verificar()">
@@ -83,8 +85,8 @@
 				movimento.</p>
 
 			<div class="w3-panel w3-leftbar w3-sand w3-margin">
-				<p class="w3-sand"> <em>"Todos os espaços são geográficos porque determinados pelo movimento da sociedade, da produção. Mas tanto a paisagem quanto o espaço resultam de movimentos superficiais e de fundo da sociedade, uma realidade de funcionamento unitário, um mosaico de relações, de formas, funções e sentidos"</em>.</p>
-				<p class="w3-sand w3-small"> SANTOS, M. Metamorfose do Espaço habitado: Fundamentos
+				<p > <em>"Todos os espaços são geográficos porque determinados pelo movimento da sociedade, da produção. Mas tanto a paisagem quanto o espaço resultam de movimentos superficiais e de fundo da sociedade, uma realidade de funcionamento unitário, um mosaico de relações, de formas, funções e sentidos"</em>.</p>
+				<p class="w3-small"> SANTOS, M. Metamorfose do Espaço habitado: Fundamentos
 					teóricos e metodológicos da Geografia. São Paulo: EDUSP, 2008, p.67.
 				
 				</p>
@@ -354,7 +356,7 @@
 
 
 
-			<p class="citacao">(Http://sportv.globo.com. Adaptado.)</p>
+			<p class="w3-small w3-right-align">(Http://sportv.globo.com. Adaptado.)</p>
 
 
 			<p>Ciente de que os EUA utilizavam o horário de verão, a última atuação do atleta foi
@@ -505,7 +507,7 @@
 				coordenadas
 			</p>
 
-			<p class="citacao">Http://www.freewebs.com/
+			<p class="w3-small">Http://www.freewebs.com/
 				manetsute/meridian.png. Acesso em: 03 nov.
 				2015.
 			</p>
@@ -724,7 +726,7 @@
 
 			<div class="w3-center"><img src="p6q10.png" alt="Mapa antigo" class="w3-mobile"></div>
 
-			<p class="citacao">
+			<p class="w3-small">
 
 				(Prefeitura de Paris. A descoberta dos Planos de Paris do XVI ao XVIII séculos. Paris: Agência
 				Cultural de Paris, 1994. p.5). Acesso em: 03 nov. 2015.
@@ -801,13 +803,14 @@
 	</div>
 
 
-	<p id="aviso"></p>
-	<br><br>
 
 
-	<div class="areaBtn"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
-	<br><br>
+	<div id="aviso" class="w3-panel w3-yellow">
 
+	</div>
+	
+	
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 
@@ -1020,6 +1023,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

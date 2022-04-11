@@ -11,18 +11,9 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -32,30 +23,44 @@
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+    
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
-
-
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
-
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
+	
+		<div class="w3-container">
+	
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
+	
 	</div>
-
 
 
 	<h1 class="h1"> Questões aula 15 – Formas do relevo terrestre </h1>
 
 
-	<p><strong>Conteúdo:</strong> Relevo; Planaltos; Planícies; Montanhas; Depressões. </p>
+	<p><strong>Conteúdo:</strong> Relevo; Planaltos; Planícies; Montanhas; Depressões; Sedimentação; erosão. </p>
 
 
-	<p><strong>Objetivo:</strong> Identificar e comparar as grandes unidades do relevo terrestre </p>
+	<p><strong>Objetivo:</strong> Identificar e comparar as grandes unidades do relevo terrestre. </p>
 
 
+
+
+
+
+	
+
+<div class="w3-padding-top-24">
+    <div class="w3-white larguraBar w3-padding flex-container">
+
+        <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                id="decrease-font" title="Diminuir fonte">A -</button></div>
+        <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                id="increase-font" title="Aumentar fonte">A +</button></div>
+    </div>
+</div>
 
 	<form id="quiz" name="quiz" onsubmit="verificar()">
 
@@ -108,7 +113,7 @@
 				I - Planaltos; II - Depressões; III - Planícies; IV - Montanhas.</p>
 
 			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e"> e)
-				I - Depressões; II - Montanhas; III - Planaltos; IV - Planícies</p>
+				I - Depressões; II - Montanhas; III - Planaltos; IV - Planícies.</p>
 
 		</div>
 
@@ -222,23 +227,34 @@
 
 			<p class="p2">Questão 04</p>
 
-			<p>(UFPR 2015) As formas ou conjuntos de formas de relevo participam da composição das paisagens em
-				diferentes escalas. Relevos de grandes dimensões, ao serem observados em um curto espaço de tempo,
-				mostram aparência estática e imutável; entretanto, estão sendo permanentemente trabalhados por processos
-				erosivos ou deposicionais, desencadeados pelas condições climáticas existentes. </p>
+			<p>(UFPR 2015)  </p>
 
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+					<p>“As formas ou conjuntos de formas de relevo participam da composição das paisagens em
+						diferentes escalas. Relevos de grandes dimensões, ao serem observados em um curto espaço de tempo,
+						mostram aparência estática e imutável; entretanto, estão sendo permanentemente trabalhados por processos
+						erosivos ou deposicionais, desencadeados pelas condições climáticas existentes.</p>
 
-			<p> Esses processos, originados pelas forças exógenas, promovendo, ao longo de grandes períodos de tempo, a
-				degradação (erosão) das áreas topograficamente elevadas e a agradação (deposição) nas áreas
-				topograficamente baixas, conduzem a uma tendência de nivelamento da superfície terrestre. </p>
+						<p> Esses processos, originados pelas forças exógenas, promovendo, ao longo de grandes períodos de tempo, a
+							degradação (erosão) das áreas topograficamente elevadas e a agradação (deposição) nas áreas
+							topograficamente baixas, conduzem a uma tendência de nivelamento da superfície terrestre. </p>
 
-			<p> Isso só se completará caso não haja interferência das forças endógenas, que podem promover soerguimentos
-				ou rebaixamentos terrestres. Há que se considerar, ainda, a ação conjunta das duas forças e as
-				implicações altimétricas geradas por ocorrências de variações do nível do mar. </p>
-
-			<p class="citacao"> Adaptado de MARQUES, J.S. Ciência Geomorfológica. In: GUERRA, A. J. T.; CUNHA, S. B.
+							<p> Isso só se completará caso não haja interferência das forças endógenas, que podem promover soerguimentos
+								ou rebaixamentos terrestres. Há que se considerar, ainda, a ação conjunta das duas forças e as
+								implicações altimétricas geradas por ocorrências de variações do nível do mar”. </p>
+			
+	
+				
+			<p class="w3-small"> Adaptado de MARQUES, J.S. Ciência Geomorfológica. In: GUERRA, A. J. T.; CUNHA, S. B.
 				(Orgs.) Geomorfologia: uma atualização de bases e conceitos. Rio de Janeiro: Bertrand,1994, p. 23-45.
 			</p>
+
+				</div>
+	
+
+
+		
+		
 
 			<p> Tendo como referência o texto acima e os conhecimentos de geomorfologia, a ciência que estuda as formas
 				do relevo, identifique as seguintes afirmativas como verdadeiras (V) ou falsas (F): </p>
@@ -347,20 +363,20 @@
 			<p> Acertaram a questão os alunos que a denominaram da seguinte forma: </p>
 
 			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a)
-				I – Planície, II – depressão relativa </p>
+				I – Planície, II – depressão relativa. </p>
 
 			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b)
-				I – Depressão relativa, II – Planície </p>
+				I – Depressão relativa, II – Planície. </p>
 
 			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c)
-				I – Depressão absoluta, II – Planície </p>
+				I – Depressão absoluta, II – Planície. </p>
 
 
 			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d"> d)
-				I – Planície, II – Planalto </p>
+				I – Planície, II – Planalto. </p>
 
 			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e"> e)
-				I – Depressão absoluta, II – Planalto</p>
+				I – Depressão absoluta, II – Planalto.</p>
 		</div>
 
 
@@ -442,11 +458,11 @@
 
 			<p class="p2">Questão 08</p>
 
-			<p> A figura seguinte representa o relevo da América Latina.</p>
+			<p> (2022) A figura seguinte representa o relevo da América Latina.</p>
 
 			<div class="w3-center"><img src="p15q8.png" alt="p15q8.png" class="w3-mobile"></div>
 
-			<p class="citacao"> Fonte: adaptada de
+			<p class="w3-small"> Fonte: adaptada de
 				https://pixabay.com/pt/mapa-do-mundo-mapa-mapa-de-relevo-1804890. Acesso
 				em: 10 abr. 2017.
 
@@ -506,7 +522,7 @@
 
 			<p class="p2">Questão 09</p>
 
-			<p> Na imagem abaixo, temos a representação do Mar Morto, paisagem que apresenta as menores altitudes dentre
+			<p> (2022) Na imagem abaixo, temos a representação do Mar Morto, paisagem que apresenta as menores altitudes dentre
 				as terras emersas do planeta Terra, caracterizando uma área de: </p>
 
 			<div class="w3-center"><img src="p15q9.png" alt="p15q9.png" class="w3-mobile"></div>
@@ -514,16 +530,16 @@
 			<p> Paisagem do mar morto, no Oriente Médio </p>
 
 			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a"> a)
-				planícies latitudinais</p>
+				planícies latitudinais.</p>
 
 			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b"> b)
-				formação basáltica</p>
+				formação basáltica.</p>
 
 			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c)
-				acentuada altimetria</p>
+				acentuada altimetria.</p>
 
 			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d)
-				baixa deposição sedimentar</p>
+				baixa deposição sedimentar.</p>
 
 			<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e"> e)
 				baixa deposição sedimentar.</p>
@@ -542,7 +558,7 @@
 
 			<p class="p2">Questão 10</p>
 
-			<p> Observe a imagem a seguir: </p>
+			<p> (BRASIL ESCOLA 2022) Observe a imagem a seguir: </p>
 
 			<div class="w3-center"><img src="p15q10.png" alt="p15q10.png" class="w3-mobile"></div>
 
@@ -603,11 +619,13 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
 
+	<div id="aviso" class="w3-panel w3-yellow">
 
-
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	</div>
+	
+	
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 	<script>
@@ -810,7 +828,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

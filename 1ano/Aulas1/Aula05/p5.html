@@ -11,24 +11,10 @@
     <link rel="stylesheet" href="../../../estilos/questoes.css">
     <link rel="stylesheet" href="../../../estilos/w3.css">
 
-    <script src="../../../estilos/javascript.js"></script>
+    <script src="../../../estilos/javascript.js" defer></script>
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-
-
-
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
+  
 
 
 
@@ -36,16 +22,20 @@
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
 
-    <!-- Navigation (Stays on Top) -->
-    <div class="w3-top w3-bar w3-black larguraBar">
+   
+<!-- Navigation (Stays on Top) -->
+<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+    <div class="w3-container">
 
-        <a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
-
-
+        <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
     </div>
+
+
+
+</div>
 
 
 
@@ -61,6 +51,17 @@
 
 
 
+
+    <div class="w3-padding-top-24">
+        <div class="w3-white larguraBar w3-padding flex-container">
+    
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                    id="decrease-font" title="Diminuir fonte">A -</button></div>
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                    id="increase-font" title="Aumentar fonte">A +</button></div>
+        </div>
+    </div>
+    
 
     <form id="quiz" name="quiz" onsubmit="verificar()">
 
@@ -129,7 +130,7 @@
 
             <div class="w3-center"><img src="p5q2.jpg" alt="p5q2" class="w3-mobile"></div>
 
-            <p class=" citacao">
+            <p class="w3-small w3-right-align w3-margin">
                 (Www.worldmapper.org)
             </p>
 
@@ -538,17 +539,20 @@
 
             <div class="w3-panel w3-leftbar w3-sand w3-margin">
 
-                <em>
-                    "Quem e com que interesse dita o que é o norte e o sul? Defendo a chamada Escola do Sul por
-                    que na realidade, nosso Norte é o Sul. Não deve haver norte, senão em oposição ao nosso sul.
-                    Por isso colocamos o mapa ao revés, desde já, e então teremos a justa ideia de nossa
-                    posição, e não como querem no resto do mundo. A ponta da América assinala insistentemente o
-                    sul, nosso norte"
-                </em>
+                <p>
+                    <em>
+                        "Quem e com que interesse dita o que é o norte e o sul? Defendo a chamada Escola do Sul por
+                        que na realidade, nosso Norte é o Sul. Não deve haver norte, senão em oposição ao nosso sul.
+                        Por isso colocamos o mapa ao revés, desde já, e então teremos a justa ideia de nossa
+                        posição, e não como querem no resto do mundo. A ponta da América assinala insistentemente o
+                        sul, nosso norte"
+                    </em>
+                </p>
 
 
             </div>
 
+         
 
             <p>O referido autor, no texto e imagem acima,</p>
 
@@ -733,12 +737,13 @@
             height="200">
     </div>
 
-    <p id="aviso"></p>
 
+    <div id="aviso" class="w3-panel w3-yellow">
 
-
-    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
-
+    </div>
+    
+    
+    <div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 
@@ -944,6 +949,20 @@
 
 
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+
+
+
+
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-DPX55DSFZ0');
+
+  </script>
 
 
 

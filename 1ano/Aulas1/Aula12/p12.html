@@ -11,19 +11,9 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/javascript.js"></script>
+    <script src="../../../estilos/javascript.js" defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
+  
 
 
 
@@ -31,18 +21,18 @@
 
 </head>
 
-<body onload="mudaQuest()">
-
-    <!-- Navigation (Stays on Top) -->
-    <div class="w3-top w3-bar w3-black larguraBar">
+<body>
 
 
-        <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+	<div class="w3-top w3-bar w3-black larguraBar">
+
+		<div class="w3-container">
+			<h5> <a href="../../../Duvid3Ano.html" class=" w3-button">3º ano</a></h5>
+		</div>
 
 
+	</div>
 
-
-    </div>
 
 
     <h1 class="h1"> Aula 12 – Revisão (aulas 07 a 11) </h1>
@@ -51,7 +41,7 @@
 
         <p><strong>Conteúdo:</strong></p>
 
-		<ul class="w3-padding-32">
+		<ul class="w3-padding-top">
 
 
             <li>Sensoriamento remoto, imagens de satélite, Cartografia digital, Geoprocessamento.</li>
@@ -73,6 +63,18 @@
 
 
 
+    <div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
+
+
+
 
 
 
@@ -83,8 +85,7 @@
 
             <p class="p2">Questão 01</p>
 
-            <p>(Unichristus 2020) Leia atentamente. </p>
-
+            <p>(UNICHRISTUS 2020) Leia atentamente. </p>
 
             <p class="w3-center"> SENSORIAMENTO REMOTO </p>
 
@@ -105,7 +106,7 @@
 
 
 
-            <p class="citacao">Disponível em: https://www.sogeografia.com.br
+            <p class="w3-small">Disponível em: https://www.sogeografia.com.br
                 /Conteudos/GeografiaFisica/Cartografia/content1.php. Acesso em: 9 jul. 2020. </p>
 
 
@@ -161,7 +162,7 @@
 
             <p class="p2">Questão 02</p>
 
-            <p> (UPF Inverno 2010) O sensoriamento remoto é um conjunto de técnicas utilizado pela cartografia para
+            <p> (UPF 2010) O sensoriamento remoto é um conjunto de técnicas utilizado pela cartografia para
                 analisar e interpretar o espaço geográfico. </p>
 
 
@@ -169,15 +170,15 @@
 
 
             <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
-                a) termógrafo, bússola, curvímetro
+                a) termógrafo, bússola, curvímetro.
 
             </p>
             <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
-                b) cartas marítimas, cartas topográficas, radar
+                b) cartas marítimas, cartas topográficas, radar.
 
             </p>
             <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c">
-                c) fotografias aéreas, imagens de radar, imagens de satélites
+                c) fotografias aéreas, imagens de radar, imagens de satélites.
 
             </p>
             <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
@@ -479,7 +480,7 @@
 
             <div class="w3-center"><img src="p12q8.png" alt="Ilhas vulcânicas" class="w3-mobile"></div>
 
-            <p class="citacao"> (TEIXEIRA, Wilson et all, Decifrando a Terra, 2000). </p>
+            <p class="w3-small w3-right-align"> (TEIXEIRA, Wilson et all, Decifrando a Terra, 2000). </p>
 
 
             <p> Com base em conhecimentos acerca da tectônica global, assinale a alternativa que nomeia e explica o
@@ -540,12 +541,12 @@
                 ao uso e ao tipo do solo, ao substrato geológico, às características climáticas, hidrológicas e ao
                 relevo. </p>
 
-            <p class="citacao"> (www.agencia.cnptia.embrapa.br. Adaptado.) </p>
+            <p class="w3-small w3-right-align"> (www.agencia.cnptia.embrapa.br. Adaptado.) </p>
 
 
             <div class="w3-center"><img src="p12q9.png" alt="Voçoroca" class="w3-mobile"></div>
 
-            <p class="citacao"> Fonte: https://conteudoms.com/site/ver-conteudo/
+            <p class="w3-small"> Fonte: https://conteudoms.com/site/ver-conteudo/
                 novo-horizonte-do-sul-vocoroca-na-linha-santa-rosa-causa-revolta-de-morador </p>
 
 
@@ -597,7 +598,7 @@
 
             <div class="w3-center"><img src="p12q10.png" alt="Tipos de erosão" class="w3-mobile"></div>
 
-            <p class="citacao"> Fonte: https://www.britannica.com
+            <p class="w3-small"> Fonte: https://www.britannica.com
                 /science/erosion-geology (Adaptado). </p>
 
 
@@ -645,11 +646,12 @@
             height="200">
     </div>
 
-    <p id="aviso"></p>
+    <div id="aviso" class="w3-panel w3-yellow">
+
+	</div>
 
 
-
-    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 
@@ -849,6 +851,16 @@
 
 
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-DPX55DSFZ0');
+
+  </script>
 
 
 

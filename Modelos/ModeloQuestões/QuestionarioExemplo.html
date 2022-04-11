@@ -2,584 +2,775 @@
 <html lang="pt-br">
 
 <head>
-	<title>Modelo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-<style>
-
-
-.campo { color: black;}
-
-body { font-family: "Verdana", sans-serif; background-color:#F8F6F7; }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2º ano - Aula 36 - Revisão</title>
 
 
-#h1 {line-height: normal; background: #7a607F; border: none; border-radius: 35px ; padding: 0px; color: white; font-weight:bold; text-align:left; padding: 5%; font-family: "Arial"; box-shadow: 5px 10px 20px #380B61 inset; 
+	<link rel="stylesheet" href="../../../estilos/questoes.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-background-image: url(livro.png);
-  background-position: right top ; 
-  background-repeat: no-repeat, repeat;
-  background-size: contain;
-}
-
-.p2 {line-height: normal;  background: white; border: solid 0.5px; border-radius: 35px; padding: 2%;font-size: 14pt; color: #427236; font-weight:bold; font-family: Arial; box-shadow: 5px 10px 20px darkgreen inset;   }
-
-#p3{background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
+	<script src="../../../estilos/javascript.js" defer></script>
 
 
-#numeroCorreto { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
-
-#mensagem { display: none; background: white;  border:  solid;  height: auto;   padding: 5px;  width: auto; border-radius: 10px;}
-
-.bordaQuestoes { text-align: left;  background: white;  border:  solid lightgray 0.5px;  height: auto;   padding: 3px;  width: auto; border-radius: 10px ; box-shadow: 2.5px 5px 4px #888888;  }
-
-.bordaQuestoes:hover 	{background-color: #ccc}
-
-#citacao {background: white;  border:  none;  height: auto;   padding: 5px;  width: auto; border-radius: 10px   }
-
-.comentarios {display: none;}
-
-.myText {
-
-height:150px;
-width: 320px;
-float:left;
-word-wrap: break-word;
-text-align:left;
- 
-}
-
-#button1 {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px #999;
-  position: absolute;
-
-}
-
-#button1:hover 	{background-color: #3e8e41}
-#button1:active { background-color: #3e8e41;  box-shadow: 0 5px #666;  transform: translateY(3px);}
 
 
-.area {display: flex; justify-content: left;}
 
-
-</style>
 
 </head>
 
-<body onload= "mudaQuest()">
+<body>
 
 
+	<div class="w3-top w3-bar w3-black larguraBar">
 
 
-	<h1 id="h1">     Questões aula 00 - Coloque o nome da aula aqui     </h1>
-  
-  
+		<div class="w3-container">
+			<h5><a href="../../../Duvid2Ano.html" class=" w3-button">2º ano</a></h5>
+		</div>
 
 
-    <form id="quiz" name="quiz" onsubmit="return verificar()">
-
-        <div class ="area">
-            <p class="bordaQuestoes" id="pqa"><textarea placeholder="Insira o texto da questão 01" required="required" id="pqa" name="pqa"    rows ="5" cols="60" maxlength="700" wrap="hard"></textarea></p>
-            </div> 
-            
-            
-
-            <input id="button1"  type="submit" value="Inserir" onclick="InserirQuest()">
-
-
-	<br><br>
-    <div class="campo">
-
-        <p class ="p2">Questão 01</p>
-			
-		<p id="p3">    <span id="resp1"></span>   </p>
-		
-		
-		
-			
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-			
-			
-			
-						
-		<img src="p1q1.png" alt="" class="imagem" width="320" height="260">
-		
-	
-            
-        <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" id="pq1" name="pq1" value="a"> </p>
-        <!-- <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" id="pq1" name="pq1" value="c"> Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" id="pq1" name="pq1" value="e"> Inserir alternativa e</p> -->
-			
-    </div>
-
-
-
-    <div class="comentarios">
-		
-		<p> Compare sua resposta com o comentário abaixo:
-         <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-
-    <br><br>
-		
-	
-
-
-    <div class="campo">
-		
-        <p class ="p2">Questão  02</p>
-			
-		<p id = "p3">    Texto da questão vai aqui    </p>
-		
-			
-		<p id = "citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" id="pq2" name="pq2" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" id="pq2" name="pq2" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" id="pq2" name="pq2" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" id="pq2" name="pq2" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-
-
-    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-	
-	
-	
-	
-
-    <div class="campo">
-		
-        <p class ="p2">Questão 03</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-		
-			
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" id="pq3" name="pq3" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" id="pq3" name="pq3" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" id="pq3" name="pq3" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-        
-
-    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-	
-	
-	
-	
-	
-
-	<div class="campo">
-		
-        <p class ="p2">Questão 04</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-		
-			
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" id="pq4" name="pq4" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" id="pq4" name="pq4" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" id="pq4" name="pq4" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" id="pq4" name="pq4" value="e"> e) Inserir alternativa e</p>
-    </div>
-
-        
-		
-		<div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-	
-	
-	
-	
-	
-	
-		
-		
-	<div class="campo">
-		
-        <p class ="p2">Questão 05</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-		
-			
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" id="pq5" name="pq5" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" id="pq5" name="pq5" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" id="pq5" name="pq5" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-	
-
-   <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-		
-		
-		
-		
-		
-		
-		 
-	<div class="campo">
-		
-        <p class ="p2">Questão 06</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-		
-			
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" id="pq6" name="pq6" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" id="pq6" name="pq6" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" id="pq6" name="pq6" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" id="pq6" name="pq6" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-	
-
-   <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-		
-		
-		
-		
-		
-		
-		
-		
-	<div class="campo">
-		
-        <p class ="p2">Questão 07</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-		
-			
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" id="pq7" name="pq7" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" id="pq7" name="pq7" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" id="pq7" name="pq7" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-	
-
-    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-		
-		
-		
-		
-		
-		
-	<div class="campo">
-		
-        <p class ="p2">Questão 08</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-		
-		
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" id="pq8" name="pq8" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" id="pq8" name="pq8" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" id="pq8" name="pq8" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-	
-
-    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-		
-		
-		
-		
-		
-		
-		
-		 
-	<div class="campo">
-		
-        <p class ="p2">Questão 09</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-			
-		<p id="citacao"><small>    (Coloque a citação aqui)   </small>	</p>
-            
-        <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" id="pq9" name="pq9" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" id="pq9" name="pq9" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" id="pq9" name="pq9" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" id="pq9" name="pq9" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-	
-
-    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-	
-		
-		
-		
-		
-		
-		
-		
-	<div class="campo">
-		
-        <p class ="p2">Questão 10</p>
-			
-		<p id="p3">    Texto da questão vai aqui    </p>
-			
-			
-			
-		<p id="citacao"><small>    Coloque a citação aqui se houver   </small>	</p>
-		
-            
-        <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a"> a) Inserir alternativa a</p>
-        <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" id="pq10" name="pq10" value="b"> b) Inserir alternativa b</p>
-		<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" id="pq10" name="pq10" value="c"> c) Inserir alternativa c</p>
-		<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" id="pq10" name="pq10" value="d"> d) Inserir alternativa d</p>
-		<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" id="pq10" name="pq10" value="e"> e) Inserir alternativa e</p>
-    </div>
-	
-	
-
-    <div class="comentarios">
-        <p> <b>Comentário:</b></p> 
-			
-		<p>   Colocar os comentários aqui.   </p>
-    </div>
-		
-		
-
-    <br><br>
-		
-		
-
-	
-    <p id="numeroCorreto"></p>
-
-    <p id="mensagem" style="display:none"></p>
-	
-	
-	<div class = "area">
-    <img src="" id="imagem" style="display:none" alt="" width = "280" height="200">
 	</div>
 
-    <br><br>
+
+	<h1 class="h1"> Aula 36 – Revisão (aulas 32 a 35) </h1>
+
+	<div class="w3-container w3-white ">
+
+		<p><strong>Conteúdo:</strong></p>
+
+		<ul class="w3-padding-top">
+
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+			<li> </li>
+
+		</ul>
+
+	</div>
+
+
+
+
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
+
+
+
+	<form id="quiz" name="quiz" onsubmit="verificar()">
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 01</p>
+
+
+			<div class="w3-panel w3-leftbar w3-sand w3-margin">
+				<p class="w3-sand"> “lorem is Lorem ipsum dolor sit amet, consectet</p>
+
+				<p class="w3-small">lorem ipsum dolor sit amet, con</p>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a">
+
+			
+			</p>
+			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d">
+
+			
+
+			</p>
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e">
+
+				
+			</p>
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 02</p>
+
+			<p> Texto da questão vai aqui </p>
+
+
+			<p> </p>
+
+			
+
+
+
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
+
+			
+			</p>
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
+
+			
+
+			</p>
+			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e">
+
+			
+
+			</p>
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 03</p>
+
+			<p> </p>
+
+
+			
+
+
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c">
+
+			</p>
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e">
+
+				
+
+			</p>
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p>
+
+				<p></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 04</p>
+
+			<p>  </p>
+
 		
-	<input id="button1"  type="submit" value="Conferir" onclick="verificar()">
-	<br><br>
-	
-		
-<script>
-       
-
-      var tipo = new Array()
-      tipo[0]= "Courier New";
-      tipo[1]= "Arial";
-      tipo[2]= "Cursive";
-      tipo[3]= "Trebuchet MS";
-      tipo[4]= "Monotype Corsiva";
-      tipo[5]= "Times New Roman";
-      tipo[6]= "Comic Sans MS";
-      tipo[7]= "Verdana";
-      tipo[8]= "Calisto MT";
-      tipo[9]= "Tempus Sans ITC"; 
-      tipo[10]= "Impact";
-	  
-	
-      var fonte = Math.round(Math.random() * 10);
-      document.getElementById("h1").style.fontFamily = tipo[fonte];
-	 
-	 
-	     
-	     
-</script>
-
-<script>
-
-function InserirQuest()
-{
-    
-        
-    var pqa = document.quiz.pqa.value;
-   // var exemplo = document.getElementById("pqa").value;
-    document.getElementById("resp1").innerHTML = pqa;
-
-
-}
-
-</script>
-
-<script>
- 
-	 function mudaQuest(){
-		var t = document.getElementsByClassName("p2");
-			for (var i = 0; i < t.length; i++) {
-			t[i].style.fontFamily = tipo[fonte];
-			
-		
-			} 
-		}
-		
-</script>
-		
-			
-			
-<script>
-
-	function verificar() {
-	
-		var y = document.getElementById("button1");
-		var x = document.forms.quiz;
-			for( i=0; i< x.length; i++) {
-				if(x[i].checked==!"") {
-							
-				checar();
-				y.disabled = true;
-				y.value="Corrigido";
-				 
-			}
-		}
-  }
-  
-  
-</script>
 
 
 
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a">
 
-
-<script>
-	function classEscurecer(){
-		var x = document.getElementsByClassName("campo");
-			for (var i = 0; i < x.length; i++) {
-			x[i].style.color = "##424242";
-			x[i].style.transition = "6s";
-			}
-		}
-</script>
-
-
-
-<script>
-
- 
-	function corLenta(){
-		var t = document.getElementsByClassName("bordaQuestoes");
-			for (var i = 0; i < t.length; i++) {
-			t[i].style.transition = "4s";
-			
-			}
-		}
-
-</script>
-  
-  
-<script>
-
- 
-	function comentarios(){
-		var c = document.getElementsByClassName("comentarios");
-			for (var i = 0; i < c.length; i++) {
-			c[i].style.display="block";
-			
-		
-			} 
-		}
-
-</script>
-  
- 
-  
-  
-</form>
-
-  
-
-	
-	
-
-
-
-
-
-   
-
-
-<script>
-
-
-    function checar() {
-			
 			
 
-            //var pq1 = document.quiz.pq1.value;
-            var pq2 = document.quiz.pq2.value;
-            var pq3 = document.quiz.pq3.value;
+			</p>
+
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b">
+
+			
+
+			</p>
+
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d">
+
+			
+
+			</p>
+
+			<p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e">
+
+				
+
+			</p>
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p> -->
+				<!-- 
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 05</p>
+
+			<p> </p>
+
+
+
+
+
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a">
+
+			
+
+			</p>
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b">
+
+			
+
+			</p>
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d">
+
+				
+			</p>
+
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 06</p>
+
+			<p>  </p>
+
+
+
+
+
+			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
+
+			
+
+			</p>
+			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b">
+
+			
+
+			</p>
+			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c">
+
+				
+
+			</p>
+			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d">
+
+			
+
+			</p>
+			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e">
+
+				
+			</p>
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p>
+
+				<p> </p> -->
+
+				<!-- <p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 07</p>
+
+			<p>  </p>
+
+
+
+
+			<p class="w3-small"> (Coloque a citação aqui) </p>
+
+
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">
+
+				a)
+				Inserir alternativa a
+			</p>
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
+
+				b)
+				Inserir alternativa b
+			</p>
+			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c">
+
+				c)
+				Inserir alternativa c
+			</p>
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d">
+
+				d)
+				Inserir alternativa d
+			</p>
+			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e">
+
+				e)
+				Inserir alternativa e
+			</p>
+
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 08</p>
+
+			<p> Texto da questão vai aqui </p>
+
+
+			<p class="w3-small"> (Coloque a citação aqui) </p>
+
+
+			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
+
+				a)
+				Inserir alternativa a
+
+			</p>
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
+
+				b)
+				Inserir alternativa b
+
+			</p>
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
+
+				c)
+				Inserir alternativa c
+
+			</p>
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
+
+				d)
+				Inserir alternativa d
+
+			</p>
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
+
+				e)
+				Inserir alternativa e
+
+			</p>
+
+			<div class="comentarios">
+<!-- 
+				<p> <strong>Comentário:</strong></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 09</p>
+
+			<p> Texto da questão vai aqui </p>
+
+			<p class="w3-small"> (Coloque a citação aqui) </p>
+
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a">
+
+				a)
+				Inserir alternativa a
+
+			</p>
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b">
+
+				b)
+				Inserir alternativa b
+
+			</p>
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c">
+
+				c)
+				Inserir alternativa c
+
+			</p>
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d">
+
+				d)
+				Inserir alternativa d
+
+			</p>
+			<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e">
+
+				e)
+				Inserir alternativa e
+
+			</p>
+
+			<div class="comentarios">
+
+				<!-- <p> <strong>Comentário:</strong></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p> -->
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="w3-card-4">
+
+			<p class="p2">Questão 10</p>
+
+			<p> Texto da questão vai aqui </p>
+
+
+			<p class="w3-small"> Coloque a citação aqui se houver </p>
+
+
+			<p class="bordaQuestoes" id="q10a"><input type="radio" name="pq10" value="a">
+
+				a) Inserir
+				alternativa a
+
+			</p>
+			<p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b">
+
+				b) Inserir
+				alternativa b
+
+			</p>
+			<p class="bordaQuestoes" id="q10c"><input type="radio" name="pq10" value="c">
+
+				c) Inserir
+				alternativa c
+
+			</p>
+			<p class="bordaQuestoes" id="q10d"><input type="radio" name="pq10" value="d">
+
+				d) Inserir
+				alternativa d
+
+			</p>
+			<p class="bordaQuestoes" id="q10e"><input type="radio" name="pq10" value="e">
+
+				e) Inserir
+				alternativa e
+
+			</p>
+
+			<div class="comentarios">
+
+				<p> <strong>Comentário:</strong></p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+				<p> </p>
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+	</form>
+
+
+	<p id="numeroCorreto"></p>
+
+	<p id="mensagem" style="display:none"></p>
+
+
+	<div class="area">
+		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+			height="200">
+	</div>
+
+	<div id="aviso" class="w3-panel w3-yellow">
+
+	</div>
+
+
+
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+	<script>
+
+
+
+
+
+		function checar() {
+
+
+
+			var pq1 = document.quiz.pq1.value;
+			var pq2 = document.quiz.pq2.value;
+			var pq3 = document.quiz.pq3.value;
 			var pq4 = document.quiz.pq4.value;
 			var pq5 = document.quiz.pq5.value;
 			var pq6 = document.quiz.pq6.value;
@@ -587,181 +778,205 @@ function InserirQuest()
 			var pq8 = document.quiz.pq8.value;
 			var pq9 = document.quiz.pq9.value;
 			var pq10 = document.quiz.pq10.value;
-			
-            var corretas = 0;
-			
 
-            var cor = ["#99ff99", "#ee4466"];
-			
-            if (pq1 == "a") {
-                corretas++;
-                document.getElementById("q1a").style.backgroundColor = cor[0];
-            } else {
-                				
-				// document.getElementById("q1b").style.backgroundColor = cor[1];
-				// document.getElementById("q1c").style.backgroundColor = cor[1];
-				// document.getElementById("q1d").style.backgroundColor = cor[1];
-				// document.getElementById("q1e").style.backgroundColor = cor[1];
-				
+			let respA = "a";
+			let respB = "b";
+			let respC = "c";
+			let respD = "d";
+			let respE = "e";
+
+			var corretas = 0;
+
+
+			var cor = ["#99ff99", "#ee4466"];
+
+			if (pq1 == "a") {
+				corretas++;
 				document.getElementById("q1a").style.backgroundColor = cor[0];
+			} else {
 
-            }
-			
-			if (pq2 == "a") {
-                corretas++;
-                document.getElementById("q2a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q2b").style.backgroundColor = cor[1];
+				document.getElementById("q1b").style.backgroundColor = cor[1];
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById("q1d").style.backgroundColor = cor[1];
+				document.getElementById("q1e").style.backgroundColor = cor[1];
+
+				document.getElementById("q1a").style.backgroundColor = cor[0];
+			}
+
+
+			if (pq2 == "e") {
+				corretas++;
+				document.getElementById("q2e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q2a").style.backgroundColor = cor[1];
 				document.getElementById("q2c").style.backgroundColor = cor[1];
 				document.getElementById("q2d").style.backgroundColor = cor[1];
-				document.getElementById("q2e").style.backgroundColor = cor[1];
-				
-				document.getElementById("q2a").style.backgroundColor = cor[0];
+				document.getElementById("q2b").style.backgroundColor = cor[1];
 
-            }
+				document.getElementById("q2e").style.backgroundColor = cor[0];
+			}
+
 			if (pq3 == "a") {
-                corretas++;
-                document.getElementById("q3a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q3b").style.backgroundColor = cor[1];
+				corretas++;
+				document.getElementById("q3a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q3b").style.backgroundColor = cor[1];
 				document.getElementById("q3c").style.backgroundColor = cor[1];
 				document.getElementById("q3d").style.backgroundColor = cor[1];
 				document.getElementById("q3e").style.backgroundColor = cor[1];
-				
+
 				document.getElementById("q3a").style.backgroundColor = cor[0];
 
-            }
+			}
+
 			if (pq4 == "a") {
-                corretas++;
-                document.getElementById("q4a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q4b").style.backgroundColor = cor[1];
+				corretas++;
+				document.getElementById("q4a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q4b").style.backgroundColor = cor[1];
 				document.getElementById("q4c").style.backgroundColor = cor[1];
 				document.getElementById("q4d").style.backgroundColor = cor[1];
 				document.getElementById("q4e").style.backgroundColor = cor[1];
-				
+
 				document.getElementById("q4a").style.backgroundColor = cor[0];
 
-            }
-			if (pq5 == "a") {
-                corretas++;
-                document.getElementById("q5a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q5b").style.backgroundColor = cor[1];
-				document.getElementById("q5c").style.backgroundColor = cor[1];
-				document.getElementById("q5d").style.backgroundColor = cor[1];
-				document.getElementById("q5e").style.backgroundColor = cor[1];
-				
-				document.getElementById("q5a").style.backgroundColor = cor[0];
+			}
 
-            }
+			if (pq5 == "d") {
+				corretas++;
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q5b").style.backgroundColor = cor[1];
+				document.getElementById("q5c").style.backgroundColor = cor[1];
+				document.getElementById("q5a").style.backgroundColor = cor[1];
+
+
+				document.getElementById("q5d").style.backgroundColor = cor[0];
+
+			}
+
 			if (pq6 == "a") {
-                corretas++;
-                document.getElementById("q6a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q6b").style.backgroundColor = cor[1];
+				corretas++;
+				document.getElementById("q6a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q6b").style.backgroundColor = cor[1];
 				document.getElementById("q6c").style.backgroundColor = cor[1];
 				document.getElementById("q6d").style.backgroundColor = cor[1];
 				document.getElementById("q6e").style.backgroundColor = cor[1];
-				
+
 				document.getElementById("q6a").style.backgroundColor = cor[0];
 
-            }
+			}
+
 			if (pq7 == "a") {
-                corretas++;
-                document.getElementById("q7a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q7b").style.backgroundColor = cor[1];
+				corretas++;
+				document.getElementById("q7a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q7b").style.backgroundColor = cor[1];
 				document.getElementById("q7c").style.backgroundColor = cor[1];
 				document.getElementById("q7d").style.backgroundColor = cor[1];
 				document.getElementById("q7e").style.backgroundColor = cor[1];
-				
+
 				document.getElementById("q7a").style.backgroundColor = cor[0];
 
-            }
-			if (pq8 == "a") {
-                corretas++;
-                document.getElementById("q8a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q8b").style.backgroundColor = cor[1];
+			}
+
+			if (pq8 == "b") {
+				corretas++;
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q8a").style.backgroundColor = cor[1];
 				document.getElementById("q8c").style.backgroundColor = cor[1];
 				document.getElementById("q8d").style.backgroundColor = cor[1];
 				document.getElementById("q8e").style.backgroundColor = cor[1];
-				
-				document.getElementById("q8a").style.backgroundColor = cor[0];
 
-            }
-			if (pq9 == "a") {
-                corretas++;
-                document.getElementById("q9a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q9b").style.backgroundColor = cor[1];
+				document.getElementById("q8b").style.backgroundColor = cor[0];
+
+			}
+
+			if (pq9 == "e") {
+				corretas++;
+				document.getElementById("q9e").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q9b").style.backgroundColor = cor[1];
 				document.getElementById("q9c").style.backgroundColor = cor[1];
 				document.getElementById("q9d").style.backgroundColor = cor[1];
-				document.getElementById("q9e").style.backgroundColor = cor[1];
-				
-				document.getElementById("q9a").style.backgroundColor = cor[0];
+				document.getElementById("q9a").style.backgroundColor = cor[1];
 
-            }
+				document.getElementById("q9e").style.backgroundColor = cor[0];
+
+			}
+
 			if (pq10 == "a") {
-                corretas++;
-                document.getElementById("q10a").style.backgroundColor = cor[0];
-            } else {
-                document.getElementById("q10b").style.backgroundColor = cor[1];
+				corretas++;
+				document.getElementById("q10a").style.backgroundColor = cor[0];
+			} else {
+				document.getElementById("q10b").style.backgroundColor = cor[1];
 				document.getElementById("q10c").style.backgroundColor = cor[1];
 				document.getElementById("q10d").style.backgroundColor = cor[1];
 				document.getElementById("q10e").style.backgroundColor = cor[1];
-				
+
 				document.getElementById("q10a").style.backgroundColor = cor[0];
 
-            }
-			
-						
+			}
+
+
+
 			corLenta();
 			classEscurecer();
 			comentarios();
-			
-			
-						
-            var incorrretas = 10 - corretas;
-            var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
-            var imagem = ["img1.gif", "img2.gif", "img3.gif"];
-            var pontos;
-
-            if (corretas < 5) {
-                pontos = 2;
-
-            }
-
-            if (corretas >= 5  && corretas <=7 ) {
-                pontos = 1;
-            }
 
 
-            if (corretas >= 7) {
-                pontos = 0;
 
-            }
-		
-		
 
-            document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100)/10 + "%.";
-            document.getElementById("mensagem").innerHTML = mensagem[pontos];
-            document.getElementById("imagem").src = imagem[pontos];
-            document.getElementById("numeroCorreto").style.display = 'block';
+			var incorrretas = 10 - corretas;
+			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+			var pontos;
+
+			if (corretas < 5) {
+				pontos = 2;
+
+			}
+
+			if (corretas >= 5 && corretas <= 7) {
+				pontos = 1;
+			}
+
+
+			if (corretas >= 7) {
+				pontos = 0;
+
+			}
+
+
+
+			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+			document.getElementById("mensagem").innerHTML = mensagem[pontos];
+			document.getElementById("imagem").src = imagem[pontos];
+			document.getElementById("numeroCorreto").style.display = 'block';
 			document.getElementById("mensagem").style.display = 'block';
 			document.getElementById("imagem").style.display = 'block';
-			
-		
-			
-			
-			
-        }
-</script>
-	
-	
-	
-	
+
+
+
+
+
+		}
+	</script>
+
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 
@@ -772,8 +987,3 @@ function InserirQuest()
 </body>
 
 </html>
-
-
-
-
-

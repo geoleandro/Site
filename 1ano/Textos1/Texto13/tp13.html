@@ -11,20 +11,11 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js"></script>
+    <script src="../../../estilos/jstextos.js" defer></script>
 
     <title>Texto13</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
+  
 
 
     <style>
@@ -140,7 +131,7 @@
         </div>
 
 
-        <span id="resp0"></span>
+        <p id="resp0"></p>
 
        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
 
@@ -1186,82 +1177,103 @@
     </div>
 
 
+	<div class="topico">
 
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h4> O magma em ascensão traz energia térmica na crosta, aquecendo a parede das rochas. Ocorre próximo aos limites do magma e novos minerais podem crescer ou aumentar os já existentes. Foi descrito o metamorfismo (de): </h4>
+
+		<button class="desativar5 area p4 w3-padding w3-margin"
+			onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
+			
+			a)
+			metamorfismo regional
+		
+		</button>
+	
+
+		<button class="desativar5 area p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+			
+			b)
+			metamorfismo de contato.
+		
+		</button>
+		
+
+		<button class="desativar5 area p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
+			
+			c)
+			metamorfismo do assoalho oceânico
+		
+		</button>
+	
+
+
+
+		<p id="resp5"></p>
+
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+    
 
     <div class="topico">
 
+		<p class="caixa"> Teste seu conhecimento</p>
+
+		<h4>O aquecimento costuma ser acompanhado de uma força suficiente para causar deformação. Estas forças podem ser resultado de placas tectônicas ou de subducção. Foi descrito o metamorfismo (de):
+
+        </h4>
+
+        <button class="desativar6 area p4 w3-padding w3-margin"
+        onclick="MostrarProximo(this); MostrarFrase('resp6','globinho6', 'desativar6', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+        a) metamorfismo regional.
+    
+    </button>
+    
+
+		<button class="desativar6 area p4 w3-padding w3-margin margemAcima"
+			onclick=" MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','1');this.style.backgroundColor='tomato'">
+            b)  metamorfismo do assoalho oceânico.
+        </button>
+	
+
+		
+
+		<button class="desativar6 area p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this); RetirarPontos('resp6','globinho6', 'desativar6','1');this.style.backgroundColor='tomato'">
+            
+            c)  metamorfismo de contato.
+
+
+        
+        </button>
+	
 
 
 
-        <p class="caixa"> Teste seu conhecimento</p>
+		<p id="resp6"></p>
 
-        <form id="quiz" name="quiz">
-
-            <h3>Leia a descrição abaixo e escreva os tipos de metamorfismo:</h3>
-
-            <p>a) O magma em ascensão traz energia térmica na crosta, aquecendo a parede das rochas. Ocorre próximo aos
-                limites do magma e novos minerais podem crescer ou aumentar os já existentes. Foi descrito o
-                metamorfismo (de): </p>
-
-            <div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+		<div class="area">
+			<p><img  src="../../../fotoIndex/globinhoPe.png" id="globinho6" style="display:none" alt="globinho6" width="64" height="64">
+			</p>
+		</div>
 
 
-            <p id="resp1a"></p>
+		<hr>
 
 
-            <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
-                onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
-
-
-
-
-
-            <div class="area">
-                <p>
-                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
-                        width="64" height="64">
-                </p>
-            </div>
-
-
-
-            <p class="margemAcima">
-                b) O aquecimento costuma ser acompanhado de uma força suficiente para causar deformação. Estas forças
-                podem ser resultado de placas tectônicas ou de subducção. Foi descrito o metamorfismo (de):
-            </p>
-
-
-
-            <div class="w3-margin"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
-
-
-            <p id="resp1b"></p>
-
-
-            <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
-                onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
-
-
-
-
-            <div class="area">
-                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1b" style="display:none" alt="globinho9"
-                        width="64" height="64"> </p>
-            </div>
-
-
-
-        </form>
-
-
-
-        <button class="btnHide" id="buttonq1d"
-            onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1b')">Proximo</button>
-
-
-        <hr>
-
-    </div>
+	</div>
 
 
 
@@ -1777,6 +1789,17 @@
 
 
     </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+  
+          gtag('config', 'G-DPX55DSFZ0');
+  
+      </script>
 
 
 

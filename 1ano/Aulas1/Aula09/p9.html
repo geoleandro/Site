@@ -11,42 +11,33 @@
     <link rel="stylesheet" href="../../../estilos/questoes.css">
     <link rel="stylesheet" href="../../../estilos/w3.css">
 
-    <script src="../../../estilos/javascript.js"></script>
+    <script src="../../../estilos/javascript.js" defer></script>
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
+  
 
 
 
 
 </head>
 
-
-<body onload="mudaQuest()">
+<body>
+    
 
     <!-- Navigation (Stays on Top) -->
-    <div class="w3-top w3-bar w3-black larguraBar">
-
-
-        <a href="../../../Duvid1Ano.html" class="w3-button">1º ano</a>
-
-
+    <div class="w3-top w3-bar w3-black larguraBar w3-large">
+    
+        <div class="w3-container">
+    
+            <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+        </div>
+    
     </div>
-
 
 
     <h1 class="h1"> Questões aula 09 - Deriva continental e tectônicas de placas </h1>
 
-    <div class="w3-card">
+   
         <p><strong>Conteúdo</strong>: Deriva continental; Tectônica de placas; Isostasia; Correntes de Convecção; Falhas
             tectônicas: transformantes, divergente e convergente.
 
@@ -56,9 +47,21 @@
         <p><strong>Objetivo</strong>: Entender os processos de separação dos continentes terrestres por meio
             da
             teoria da deriva continental e tectônica de placas. </p>
+  
+
+
+
+    
+
+<div class="w3-padding-top-24">
+    <div class="w3-white larguraBar w3-padding flex-container">
+
+        <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                id="decrease-font" title="Diminuir fonte">A -</button></div>
+        <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                id="increase-font" title="Aumentar fonte">A +</button></div>
     </div>
-
-
+</div>
 
 
     <form id="quiz" name="quiz" onsubmit="verificar()">
@@ -172,7 +175,7 @@
             <div class="w3-center"><img src="p9q2a.png" alt="Pangeia" class="w3-mobile"></div>
 
 
-            <p class="citacao"> Disponível em: https://hypescience.com. Acesso em: 1 dez. 2018 (adaptado).
+            <p class="w3-small"> Disponível em: https://hypescience.com. Acesso em: 1 dez. 2018 (adaptado).
             </p>
 
             <p> A divisão política do mundo como apresentada na imagem seria possível caso o planeta fosse
@@ -277,7 +280,7 @@
                 I, II e IV, apenas. </p>
 
             <p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
-                II, III e IV, apenas</p>
+                II, III e IV, apenas.</p>
 
             <p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
                 I, III e IV, apenas. </p>
@@ -403,7 +406,7 @@
 
             <p> (MACKENZIE 2014)</p>
 
-            <p class="w3-center p3"> Placas Tectônicas)</p>
+            <h2 class="w3-center"> Placas Tectônicas</h2>
 
             <div class="w3-center"><img src="p9q5.png" alt="Placas-tectônicas" class="w3-mobile"></div>
 
@@ -435,13 +438,13 @@
             <p>Estão corretas:</p>
 
             <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
-                I e III, apenas</p>
+                I e III, apenas.</p>
 
             <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b)
-                II e III, apenas</p>
+                II e III, apenas.</p>
 
             <p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
-                I, II e III, apenas</p>
+                I, II e III, apenas.</p>
 
             <p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
                 I, II e IV, apenas.</p>
@@ -513,7 +516,7 @@
 
 
 
-            <p class="citacao"> TEIXEIRA, Wilson, et al. Decifrando a Terra, 2003. (Adaptação) </p>
+            <p class="w3-small w3-right-align"> TEIXEIRA, Wilson, et al. Decifrando a Terra, 2003. (Adaptação) </p>
 
             <p> Os termos e as afirmações estão corretamente associados em:</p>
 
@@ -811,11 +814,13 @@
             height="200">
     </div>
 
-    <p id="aviso"></p>
+   
+<div id="aviso" class="w3-panel w3-yellow">
+
+</div>
 
 
-
-    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 
@@ -1008,7 +1013,16 @@
     </script>
 
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
+      gtag('config', 'G-DPX55DSFZ0');
+
+  </script>
 
 
 

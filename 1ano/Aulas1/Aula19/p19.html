@@ -11,18 +11,9 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -32,18 +23,21 @@
 
 </head>
 
-<body onload="mudaQuest()">
+
+
+<body>
+
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+		<div class="w3-container">
 
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
 
 	</div>
+
 
 
 
@@ -57,8 +51,21 @@
 
 
 
-	<p><strong>Objetivo:</strong> Diferenciar tempo e clima. Identificar e compreender os elementos do clima (temperatura, pressão
+	<p><strong>Objetivo:</strong> Diferenciar tempo e clima. Identificar e compreender os elementos do clima
+		(temperatura, pressão
 		atmosférica, umidade, ventos e precipitação). </p>
+
+
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
 
 
 
@@ -69,16 +76,24 @@
 
 			<p class="p2">Questão 01</p>
 
-			<p> (UNESP 2019) Leia o excerto e analise as três afirmações a seguir.
+			<p> (UNESP 2019) Leia o excerto e analise as três afirmações a seguir.	</p>
 
-				Todas as moléculas de uma parcela de ar contribuem para a pressão atmosférica. Como o vapor d’água é um
-				gás, ele também contribui com um valor de pressão parcial, conhecido como pressão de vapor (e),
-				aumentando ou diminuindo a pressão atmosférica. Quando a pressão de vapor (e) atinge seu valor máximo
-				possível para uma determinada temperatura do ar, diz-se que o ar está saturado de umidade ou, em outras
-				palavras, que o ar está cheio de vapor. Tem-se, portanto, a pressão de vapor de saturação (es). A
-				umidade relativa é a razão entre a pressão de vapor e) e a pressão de vapor de saturação (es).</p>
 
-			<p class="citacao"> (Ercília T. Steinke. Climatologia fácil, 2012. Adaptado.)  </p>
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+					<p>“Todas as moléculas de uma parcela de ar contribuem para a pressão atmosférica. Como o vapor d’água é um
+						gás, ele também contribui com um valor de pressão parcial, conhecido como pressão de vapor (e),
+						aumentando ou diminuindo a pressão atmosférica. Quando a pressão de vapor (e) atinge seu valor máximo
+						possível para uma determinada temperatura do ar, diz-se que o ar está saturado de umidade ou, em outras
+						palavras, que o ar está cheio de vapor. Tem-se, portanto, a pressão de vapor de saturação (es). A
+						umidade relativa é a razão entre a pressão de vapor e) e a pressão de vapor de saturação (es).”</p>
+	
+						<p class="w3-small w3-right-align"> (Ercília T. Steinke. Climatologia fácil, 2012. Adaptado.) </p>
+				</div>
+	
+
+				</p>
+
+			
 
 			<p> I. A temperatura caracteriza uma variável para determinarmos a pressão de vapor de saturação.
 			</p>
@@ -92,20 +107,20 @@
 			<p>Está correto o que se afirma em: </p>
 
 
-			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required"  name="pq1" value="a"> a)
+			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a)
 				I e II, apenas.</p>
 
 			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" id="pq1" name="pq1" value="b"> a)
 				I e II, apenas.</p>
 
-			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required"  name="pq1" value="c"> c)
+			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c)
 				I, II e III.</p>
 
-			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required"  name="pq1" value="d"> d)
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
 				III, apenas. </p>
 
-			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required"  name="pq1" value="e"> e)
-				II e III, apenas</p>
+			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e"> e)
+				II e III, apenas.</p>
 
 		</div>
 
@@ -119,12 +134,12 @@
 				possível para uma determinada temperatura do ar, diz-se que o ar está saturado de umidade”, ou seja, a
 				temperatura é elemento importante para a pressão do vapor de saturação. </p>
 
-			<p>	II. Incorreta. Como o próprio texto dia: “a umidade relativa é a razão entre a pressão de vapor (e) a
+			<p> II. Incorreta. Como o próprio texto dia: “a umidade relativa é a razão entre a pressão de vapor (e) a
 				pressão de vapor de saturação (es)”, ou seja, quando o ar está cheio de vapor. A afirmação II refere-se
 				ao total de umidade do ar (umidade absoluta) como algo que expressa a real quantidade de vapor d’água
 				existente no ar.</p>
 
-			<p>	III. Correta. Segundo o texto, uma das variáveis que compõe o cálculo da umidade relativa do ar é a
+			<p> III. Correta. Segundo o texto, uma das variáveis que compõe o cálculo da umidade relativa do ar é a
 				pressão de vapor de saturação (es) que ocorre quando o ar está saturado de vapor d´água, ou seja, quando
 				a atmosfera não suporta mais conter o vapor e está prestes a chover.</p>
 
@@ -145,19 +160,19 @@
 			<p> Qual característica do meio físico é condição necessária para a distribuição espacial do
 				fenômeno representado? </p>
 
-			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required"  name="pq2" value="a"> a)
+			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
 				Cobertura vegetal com porte arbóreo.</p>
 
-			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required"  name="pq2" value="b"> b)
+			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
 				Barreiras orográficas com altitudes elevadas.</p>
 
 			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" id="pq2" name="pq2" value="c"> c)
 				Pressão atmosférica com diferença acentuada.</p>
 
-			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required"  name="pq2" value="d"> d)
+			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d)
 				Superfície continental com refletividade intensa.</p>
 
-			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required"  name="pq2" value="e"> e)
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
 				Correntes marinhas com direções convergentes.</p>
 
 
@@ -174,20 +189,20 @@
 				massas de ar mais frias, com pressão atmosférica mais alta. Isso permitirá o deslocamento das massas de
 				alta pressão marinhas em direção às áreas continentais, nas faixas intertropicais. </p>
 
-			<p>	a) incorreto. Como vimos acima, as vegetações em nada contribuem para a ocorrência de tal
+			<p> a) incorreto. Como vimos acima, as vegetações em nada contribuem para a ocorrência de tal
 				fenômeno.</p>
 
-			<p>	b) incorreto. As barreiras de relevo não colaboram efetivamente com a formação de tais eventos
+			<p> b) incorreto. As barreiras de relevo não colaboram efetivamente com a formação de tais eventos
 				(principalmente no mar, onde não existem).</p>
 
-			<p>	c) correto. Podemos ver que a origem dos ventos em alta pressão atmosférica e seu direcionamento para as
+			<p> c) correto. Podemos ver que a origem dos ventos em alta pressão atmosférica e seu direcionamento para as
 				baixas pressões atípicas são o ponto central da origem deste fenômeno.</p>
 
-			<p>	d) incorreto. A refletividade da superfície não influencia tal fenômeno, pois, ao contrário, os polos
+			<p> d) incorreto. A refletividade da superfície não influencia tal fenômeno, pois, ao contrário, os polos
 				seriam as áreas de maior ocorrência, uma vez que são também as áreas com maior refletividade superficial
 				do planeta (maior albedo).</p>
 
-			<p>	e) incorreto. As correntes marinhas influenciam pouco tais eventos e, apesar de termos que ter oceanos
+			<p> e) incorreto. As correntes marinhas influenciam pouco tais eventos e, apesar de termos que ter oceanos
 				quentes para gerar baixas pressões, não são os únicos fatores de aquecimento oceânico existentes. </p>
 		</div>
 
@@ -209,19 +224,19 @@
 			<p> Esse processo é resultado de: </p>
 
 
-			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required"  name="pq3" value="a"> a)
+			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
 				uniformidade do gradiente de pressão atmosférica. </p>
 
 			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" id="pq3" name="pq3" value="b"> b)
 				aquecimento diferencial da superfície.</p>
 
-			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required"  name="pq3" value="c"> c)
+			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
 				quedas acentuadas de médias térmicas.</p>
 
-			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required"  name="pq3" value="d"> d)
+			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
 				mudanças na umidade relativa do ar.</p>
 
-			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required"  name="pq3" value="e"> e)
+			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e)
 				variações altimétricas acentuadas.</p>
 		</div>
 
@@ -233,23 +248,23 @@
 			<p> As figuras mostram o padrão de circulação dos ventos da brisa marinha e do terral em razão do
 				aquecimento diferencial da superfície ao longo do dia. </p>
 
-			<p>	Na figura 1, ventos oceânicos deslocam-se em direção ao continente em razão do maior aquecimento e,
+			<p> Na figura 1, ventos oceânicos deslocam-se em direção ao continente em razão do maior aquecimento e,
 				consequentemente, menor pressão atmosférica. Na figura 2, ao contrário, ventos de alta pressão e menor
 				temperatura, deslocam-se do continente para o oceano.</p>
 
-			<p>	a) Incorreta. Como observado nas imagens, não há uniformidade espacial das pressões atmosféricas, uma
+			<p> a) Incorreta. Como observado nas imagens, não há uniformidade espacial das pressões atmosféricas, uma
 				vez que na formação da brisa marinha (Figura 1) predomina a baixa pressão no continente e alta pressão
 				no oceano, enquanto na formação do terral (Figura 2) a situação se inverte.</p>
 
-			<p>	b) Correta. Conforme explicado acima.</p>
+			<p> b) Correta. Conforme explicado acima.</p>
 
-			<p>	c) Incorreta. Os fenômenos apresentados não decorrem da queda acentuada de temperatura, mas sim do
+			<p> c) Incorreta. Os fenômenos apresentados não decorrem da queda acentuada de temperatura, mas sim do
 				aquecimento diferencial da superfície do oceano e do continente ao longo do dia.</p>
 
-			<p>	d) Incorreta. A umidade relativa do ar não é uma causa das brisas marinha e terrestre. Ela pode sim ser
+			<p> d) Incorreta. A umidade relativa do ar não é uma causa das brisas marinha e terrestre. Ela pode sim ser
 				influenciada pelas brisas.</p>
 
-			<p>	e) Incorreta. Nas imagens não há variação altimétrica, isto é, de altura significativa.</p>
+			<p> e) Incorreta. Nas imagens não há variação altimétrica, isto é, de altura significativa.</p>
 
 		</div>
 
@@ -269,27 +284,27 @@
 
 			<div class="w3-center"><img src="p19q4.png" alt="p19q4" class="w3-mobile"></div>
 
-			<p class="citacao"> www.estudopratico.com.br/camadas-da-atmosfera. </p>
+			<p class="w3-small"> www.estudopratico.com.br/camadas-da-atmosfera. </p>
 
 			<p> Considerando o gráfico e as características destacadas das camadas atmosféricas, pode-se afirmar
 				que </p>
 
-			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required"  name="pq4" value="a"> a)
+			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a)
 				a estratosfera é a camada mais exterior da atmosfera. A densidade do ar é muito menor do que na
 				troposfera e contém pequena parte do ozônio do total atmosférico, concentrado na altitude de 22
 				quilômetros.</p>
 
-			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required"  name="pq4" value="b"> b)
+			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
 				a termosfera é uma camada que alcança até 5 mil quilômetros de altitude e é muito concentrada. Exerce um
 				papel muito importante nas transmissões de rádio e de televisão, com ondas de diversos comprimentos
 				emitidas da Terra
 
-			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required"  name="pq4" value="c"> c)
+			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c)
 				na exosfera, há o predomínio dos átomos de hidrogênio, hélio, aerossóis e do nitrogênio (leves). A
 				densidade atmosférica é igual a do gás interespacial que a circunda e ocorre grande incidência de poeira
 				cósmica e baixas temperaturasc.</p>
 
-			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required"  name="pq4" value="d"> d)
+			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d)
 				a mesosfera, camada que se estende da estratosfera até aproximadamente 80 km de altitude, apresenta
 				aumento da temperatura de +3,5°C, por quilômetro. Nessa camada, há uma pequena quantidade de ozônio e de
 				vapores de sódio.</p>
@@ -314,20 +329,20 @@
 
 			<p class="p2">Questão 05</p>
 
-			<p> (Unicamp 2016) A figura a seguir exibe a imagem de um ciclone: </p>
+			<p> (UNICAMP 2016) A figura a seguir exibe a imagem de um ciclone: </p>
 
 			<div class="w3-center"><img src="p19q5.png" alt="p19q5" class="w3-mobile"></div>
 
 			<p> É correto afirmar que o ciclone em questão. </p>
 
-			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required"  name="pq5" value="a"> a)
+			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
 				ocorreu no Hemisfério Sul e corresponde a uma área de alta pressão atmosférica.
 
-			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required"  name="pq5" value="b"> b)
+			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b)
 				pode ocorrer em qualquer hemisfério, independentemente da pressão atmosférica.</p>
 
 
-			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required"  name="pq5" value="c"> c)
+			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
 				ocorreu no Hemisfério Norte, em zonas tropicais e de baixa pressão atmosférica.</p>
 
 			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" id="pq5" name="pq5" value="d"> d)
@@ -399,7 +414,7 @@
 				d) apenas II e III.
 
 			</p>
-			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required"  id="pq6" name="pq6" value="e">
+			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" id="pq6" name="pq6" value="e">
 
 				e) I, II, III.
 
@@ -420,19 +435,19 @@
 
 			<p> Aponte a alternativa que expressa corretamente a denominação das chuvas.</p>
 
-			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required"  name="pq7" value="a"> a)
+			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a)
 				I – orográfica II – frontaIII – convectiva.</p>
 
-			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required"  name="pq7" value="b"> b) I
+			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b) I
 				– orográfica II – convectiva III – frontal.</p>
 
 			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" id="pq7" name="pq7" value="c"> c)
 				I – convectiva II – frontal III – orográfica.</p>
 
-			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required"  name="pq7" value="d"> d)
+			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d"> d)
 				I – frontal II – convectiva III – orográfica.</p>
 
-			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required"  name="pq7" value="e"> e)
+			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e"> e)
 				I – convectiva II – orográfica III – frontal.</p>
 
 		</div>
@@ -450,24 +465,24 @@
 
 			<p class="p2">Questão 08</p>
 
-			<p> (Mackenzie-SP) Observe a figura e responda sobre os deslocamentos das massas de ar: </p>
+			<p> (MACKENZIE-SP) Observe a figura e responda sobre os deslocamentos das massas de ar: </p>
 
 			<div class="w3-center"><img src="p19q8.png" alt="p19q8" class="w3-mobile"></div>
 
 			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" id="pq8" name="pq8" value="a"> a)
 				são sempre das áreas de alta pressão para as áreas de baixa pressão.</p>
 
-			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required"  name="pq8" value="b"> b)
+			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b"> b)
 				independem das condições de pressão atmosférica.</p>
 
-			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required"  name="pq8" value="c"> c)
+			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c"> c)
 				dependem das condições de umidade atmosférica.</p>
 
 
-			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required"  name="pq8" value="d"> d)
+			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d"> d)
 				são sempre de uma área seca para uma área úmida.</p>
 
-			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required"  name="pq8" value="e"> e)
+			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e"> e)
 				são sempre entre áreas de mesma temperatura.</p>
 
 		</div>
@@ -484,21 +499,21 @@
 
 			<p class="p2">Questão 09</p>
 
-			<p> Os principais elementos que atuam na formação do solo são: </p>
+			<p> (MUNDO EDUCAÇÃO 2022) Os principais elementos que atuam na formação do solo são: </p>
 
-			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required"  name="pq9" value="a"> a)
+			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a"> a)
 				Apenas elementos da natureza (clima, relevo, água e seres vivos), pois as atividades humanas não exercem
 				nenhuma influência na formação do solo.</p>
 
-			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required"  name="pq9" value="b"> b)
+			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b"> b)
 				O tectonismo é o elemento mais importante para a formação dos solos, pois a movimentação das placas
 				tectônicas gera a decomposição da rocha em grande escala.</p>
 
-			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required"  name="pq9" value="c"> c)
+			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c)
 				Os principais elementos que interagem entre si na formação do solo são o tempo, clima, relevo, água e
 				seres vivos. O ser humano, todavia, não tem nenhuma influência nesse processo.</p>
 
-			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required"  name="pq9" value="d"> d) O
+			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d"> d) O
 				solo é formado a partir de grandes desastres naturais, como terremotos, tsunamis, furacões etc. Como são
 				eventos extremos, têm uma capacidade maior para decompor a rocha.</p>
 
@@ -510,9 +525,9 @@
 
 
 		<div class="comentarios">
-			<!-- <p> <strong>Comentário:</strong></p>
+			<p> <strong>Comentário:</strong></p>
 
-			<p> Colocar os comentários aqui. </p> -->
+			<p> O solo é formado a partir da interação entre o tempo, clima, relevo, água e seres vivos. Em contato com a rocha-mãe, esses elementos provocam a decomposição dela, que vai se fragmentando em vários sedimentos, que, por sua vez, acumulam-se em áreas de baixo relevo, juntamente com a matéria orgânica, formando os solos. </p>
 		</div>
 
 
@@ -525,11 +540,11 @@
 			<div class="w3-center"><img src="p19q10.png" alt="p19q10" class="w3-mobile"></div>
 
 
-			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required"  name="pq10" value="a">
+			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a">
 				a) em matas e bosques, a grande oscilação diuturna da temperatura mantém as nuvens baixas, fazendo com
 				que chova mais.</p>
 
-			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required"  name="pq10" value="b">
+			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b">
 				b) em áreas com escassa cobertura vegetal, o ar frio e seco empurra as nuvens para cima, fazendo com que
 				chova menos.</p>
 
@@ -538,11 +553,11 @@
 				c) o ar mais úmido e quente sobre as matas e bosques ocasiona maior regularidade pluviométrica.</p>
 
 
-			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required"  name="pq10" value="d">
+			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
 				d) as pequenas amplitudes térmicas sobre as plantações produzem uma camada estacionária de ar úmido,
 				impedindo a presença de nuvens baixas.</p>
 
-			<p class="bordaQuestoes" id="q10e"><input type="radio" required="required"  name="pq10" value="e">
+			<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" name="pq10" value="e">
 				e) em áreas com abundante cobertura vegetal, o ar mais frio e rarefeito facilita a descida das nuvens
 				mais pesadas.</p>
 
@@ -572,11 +587,14 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
 
 
+	<div id="aviso" class="w3-panel w3-yellow">
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	</div>
+
+
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 	<script>
 
@@ -776,7 +794,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

@@ -11,18 +11,9 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -31,17 +22,18 @@
 
 </head>
 
-<body onload="mudaQuest()">
+
+<body>
+    
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
-
-
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
-
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
+	
+		<div class="w3-container">
+	
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
+	
 	</div>
 
 
@@ -62,6 +54,17 @@
 
 
 
+
+		<div class="w3-padding-top-24">
+			<div class="w3-white larguraBar w3-padding flex-container">
+		
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
+		
 	<form id="quiz" name="quiz" onsubmit="verificar()">
 
 
@@ -75,7 +78,7 @@
 				pelo processamento de milhões de barris de petróleo por dia, suprindo o mercado com derivados que podem
 				ser obtidos a partir de petróleo nacional ou importado. </p>
 
-			<p class="citacao"> MURTA, A. L. S. Energia: o vício da civilização; crise energética e alternativas
+			<p class="w3-small"> MURTA, A. L. S. Energia: o vício da civilização; crise energética e alternativas
 				sustentáveis. Rio de Janeiro: Garamond, 2011. </p>
 
 			<p> A territorialização de uma unidade produtiva depende de diversos fatores locacionais. A partir
@@ -122,12 +125,19 @@
 			<p> (FUVEST 2008) A questão energética contemporânea, especialmente no que se refere ao uso de
 				combustíveis fósseis, pode ser olhada sob uma perspectiva mais ampla. </p>
 
-			<p>A vida na Terra tem alguns bilhões de anos. Nossa espécie, que surgiu há cerca de 150 mil anos, produz
-				ferramentas há cerca de 40 mil anos, usa carvão mineral há cerca de 300 anos e petróleo há cerca de 100
-				anos. Esses recursos energéticos, devidos à longa deposição de organismos, encontram-se em diversas
-				regiões, algumas delas hoje desérticas. O consumo combinado atual desses combustíveis, sobretudo na
-				indústria e nos transportes, equivale a uma queima da ordem de 100 milhões de barris de petróleo por
-				dia, fato que preocupa pelo aumento, na atmosfera, de gases responsáveis pelo efeito estufa .</p>
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+					<p>“A vida na Terra tem alguns bilhões de anos. Nossa espécie, que surgiu há cerca de 150 mil anos, produz
+						ferramentas há cerca de 40 mil anos, usa carvão mineral há cerca de 300 anos e petróleo há cerca de 100
+						anos. Esses recursos energéticos, devidos à longa deposição de organismos, encontram-se em diversas
+						regiões, algumas delas hoje desérticas. O consumo combinado atual desses combustíveis, sobretudo na
+						indústria e nos transportes, equivale a uma queima da ordem de 100 milhões de barris de petróleo por
+						dia, fato que preocupa pelo aumento, na atmosfera, de gases responsáveis pelo efeito estufa.”</p>
+	
+				
+				</div>
+	
+
+		
 
 			<p>Da leitura desse texto, é correto afirmar que: </p>
 
@@ -174,7 +184,7 @@
 				planaltos, planícies, depressões, chapadas, etc.), após serem moldadas pela atuação de agentes internos
 				e externos sobre a crosta terrestre. </p>
 
-			<p class="citacao"> (SENE, Eustáquio. Geografia geral e do Brasil. São Paulo; Scipione, 1998.).
+			<p class="w3-small w3-right-align"> (SENE, Eustáquio. Geografia geral e do Brasil. São Paulo; Scipione, 1998.).
 
 			<div class="w3-center"><img src="p17q3.png" alt="p17q3" class="w3-mobile"></div>
 
@@ -185,24 +195,24 @@
 
 			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
 				Os fenômenos meteorológicos, ocorridos em um instante ou em um dia, são relativos ao clima, assim a
-				afirmação de que o “dia está frio e seco” é uma referência ao clima </p>
+				afirmação de que o “dia está frio e seco” é uma referência ao clima. </p>
 
 			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
 				A matéria orgânica, fornecida pela fauna e pela flora decompostas, encontra-se concentrada em todas as
-				camadas do solo</p>
+				camadas do solo.</p>
 
 			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
 				As cadeias dobradas no arqueano, como os Andes, o Himalaia, as Montanhas Rochosas e outras, por serem
-				antigas, mostram forte estabilidade tectônica</p>
+				antigas, mostram forte estabilidade tectônica.</p>
 
 
 			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" id="pq3" name="pq3" value="d"> d)
 				As bacias sedimentares são importantes províncias, onde podem ocorrer combustíveis fósseis de origem
-				orgânica, como o petróleo e o carvão mineral</p>
+				orgânica, como o petróleo e o carvão mineral.</p>
 
 			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e)
 				Os solos encontrados nas bacias sedimentares apresentam todos os horizontes, por se formarem a partir do
-				acúmulo de sedimentos em uma depressão</p>
+				acúmulo de sedimentos em uma depressão.</p>
 		</div>
 
 
@@ -226,24 +236,24 @@
 			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a)
 				Fonte de energia que se forma através da decomposição da matéria orgânica no subsolo, assim como o
 				petróleo. Pode substituir a gasolina e o diesel em automóveis. Vantagens: menos poluente e mais barato.
-				Problema: falta de infraestrutura necessária (gasodutos)</p>
+				Problema: falta de infraestrutura necessária (gasodutos).</p>
 
 			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
 				Tudo aquilo que pode ser queimado para produção de energia. Exemplos: lenha, carvão, petróleo, gás
 				natural e biocombustíveis. Problemas: são fontes de energias não renováveis e intensificadoras do efeito
-				estufa</p>
+				estufa.</p>
 
 
 			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" id="pq4" name="pq4" value="c"> c)
 				Mistura complexa de hidrocarbonetos. É refinado por um processo de destilação fracionada, na qual são
 				produzidos: gasolina e diesel para veículos, querosene para aviões, óleos lubrificantes, óleo
 				combustível, asfalto e outros produtos químicos. Vantagem: eficiência. Problema: recurso finito de
-				difícil extração</p>
+				difícil extração.</p>
 
 
 			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d)
 				Produto da natureza que é a base para todo o funcionamento do universo. A energia pode ser química,
-				mecânica, térmica, elétrica, hidráulica ou de radiação</p>
+				mecânica, térmica, elétrica, hidráulica ou de radiação.</p>
 
 
 		</div>
@@ -268,24 +278,24 @@
 				Mistura complexa de hidrocarbonetos. É refinado por um processo de destilação fracionada, na qual são
 				produzidos: gasolina e diesel para veículos, querosene para aviões, óleos lubrificantes, óleo
 				combustível, asfalto e outros produtos químicos. Vantagem: eficiência. Problema: recurso finito de
-				difícil extração</p>
+				difícil extração.</p>
 
 			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b)
 				Rocha sedimentar combustíveis formada a partir de matéria orgânica. Muito usada durante a Revolução
 				Industrial. É dividido em turfa, linhito, hulha e antracito de acordo com o grau crescente de
 				hidrocarbonetos. Vantagens: alto poder calorífico e baixo custo. Problemas: mineração insalubre para os
 				operários, contaminação do ar e dos rios, altamente poluente, provoca chuva ácida e problemas
-				respiratórios </p>
+				respiratórios. </p>
 
 			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" id="pq5" name="pq5" value="c"> c)
 				Fonte de energia que se forma através da decomposição da matéria orgânica no subsolo, assim como o
 				petróleo. Pode substituir a gasolina e o diesel em automóveis. Vantagens: menos poluente e mais barato.
-				Problema: falta de infraestrutura necessária (gasodutos)</p>
+				Problema: falta de infraestrutura necessária (gasodutos).</p>
 
 			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
 				Tudo aquilo que pode ser queimado para produção de energia. Exemplos: lenha, carvão, petróleo, gás
 				natural e biocombustíveis. Problemas: são fontes de energias não renováveis e intensificadoras do efeito
-				estufa</p>
+				estufa.</p>
 
 
 		</div>
@@ -305,7 +315,7 @@
 
 			<p class="p2">Questão 06</p>
 
-			<p> (Fatec 2019) O carvão mineral é a segunda fonte de energia mais usada no planeta, representando mais de
+			<p> (FATEC 2019) O carvão mineral é a segunda fonte de energia mais usada no planeta, representando mais de
 				30% do consumo energético mundial. Sobre essa fonte de energia, podemos afirmar corretamente que é </p>
 
 
@@ -347,39 +357,47 @@
 
 			<p class="p2">Questão 07</p>
 
-			<p> (UEPB 2011) “Todas as atividades humanas, desde o surgimento da humanidade na Terra, implicam no
-				chamado ‘consumo’ de energia. Isto porque para produzir bens necessários à vida, produzir alimentos,
-				prazer e bem-estar, não há como não consumir energia, ou melhor, não converter energia. Vida humana e
-				conversão de energia são sinônimos e não existe qualquer possibilidade de separar um do outro”.</p>
+			<p> (UEPB 2011)</p>
 
 
-			<p class="citacao"> (WALDMAN, Maurício. Para onde vamos? S.d., p. 10. Disponível em:
-				http://www.mw.pro.br) </p>
+		
+
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+					<p> “Todas as atividades humanas, desde o surgimento da humanidade na Terra, implicam no
+						chamado ‘consumo’ de energia. Isto porque para produzir bens necessários à vida, produzir alimentos,
+						prazer e bem-estar, não há como não consumir energia, ou melhor, não converter energia. Vida humana e
+						conversão de energia são sinônimos e não existe qualquer possibilidade de separar um do outro”.</p>
+	
+					<p class="w3-small">(WALDMAN, Maurício. Para onde vamos? S.d., p. 10. Disponível em:
+						http://www.mw.pro.br) </p>
+				</div>
+	
 
 			<p> Apesar de toda importância do consumo de energia para a vida moderna, podemos afirmar que sua
 				forma de utilização no mundo contemporâneo continua a ser insustentável porque: </p>
 
 			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a)
 				o consumo de energia é desigual entre ricos e pobres, sendo que os pobres continuam a utilizar fontes
-				arcaicas que são muito mais danosas ao meio</p>
+				arcaicas que são muito mais danosas ao meio.</p>
 
 			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b)
 				as chamadas fontes alternativas que são não-poluentes são de custos elevadíssimos e só podem ser
-				produzidas em pequena escala para consumo muito reduzido</p>
+				produzidas em pequena escala para consumo muito reduzido.</p>
 
 			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c)
 				a energia hidroelétrica que assumiu a liderança no consumo mundial necessita da construção de grandes
-				represas que causam grandes impactos ambientais</p>
+				represas que causam grandes impactos ambientais.</p>
 
 
 			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" id="pq7" name="pq7" value="d"> d)
 				as principais matrizes energéticas do mundo continuam a ser o petróleo e o carvão, que são fontes
-				não-renováveis e muito poluentes</p>
+				não-renováveis e muito poluentes.</p>
 
 			<p class="bordaQuestoes" id="q7e"><input type="radio" required="required" name="pq7" value="e"> e)
 				a energia nuclear, que é a solução mais viável para a questão energética do mundo, depende do
 				enriquecimento do urânio, cuja tecnologia é controlada por poucos países e inacessível para a grande
-				maioria</p>
+				maioria.</p>
 
 
 		</div>
@@ -401,7 +419,7 @@
 
 			<div class="w3-center"><img src="p17q8.png" alt="p17q8" class="w3-mobile"></div>
 
-			<p class="citacao"> TEIXEIRA et al. Decifrando a Terra. São Paulo: Oficina de Textos, 2000.
+			<p class="w3-small w3-right-align"> TEIXEIRA et al. Decifrando a Terra. São Paulo: Oficina de Textos, 2000.
 			</p>
 
 			<p>Com o avanço do consumo como lógica de expansão capitalista, a demanda por energia tende a
@@ -409,22 +427,22 @@
 
 
 			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a"> a)
-				estabilização do crescimento da população assegurará o decréscimo da utilização de petróleo</p>
+				estabilização do crescimento da população assegurará o decréscimo da utilização de petróleo.</p>
 
 			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b"> b)
-				consumo gradativo do combustível fóssil possibilitará a equalização do acesso ao recurso no mundo</p>
+				consumo gradativo do combustível fóssil possibilitará a equalização do acesso ao recurso no mundo.</p>
 
 			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c"> c)
 				relação direta entre natalidade e utilização energética permitirá o controle de crises nos formigueiros
-				humanos</p>
+				humanos.</p>
 
 			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" id="pq8" name="pq8" value="d"> d)
 				ampliação gradual do uso do hidrocarboneto revelará a inserção crescente da população no circuito
-				consumista</p>
+				consumista.</p>
 
 			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e"> e)
 				limitação espacial das reservas de petróleo impedirá a expansão industrial nas áreas economicamente
-				desenvolvidas</p>
+				desenvolvidas.</p>
 		</div>
 
 
@@ -440,7 +458,7 @@
 
 			<p class="p2">Questão 09</p>
 
-			<p> As três principais fontes de energia (petróleo, carvão mineral e gás natural) em todo o mundo
+			<p> (BRASIL ESCOLA 2022) As três principais fontes de energia (petróleo, carvão mineral e gás natural) em todo o mundo
 				são combustíveis fósseis. Juntas, essas três fontes correspondem a 80% de todo o consumo mundial de
 				energia. </p>
 
@@ -450,18 +468,18 @@
 
 			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a"> a)
 				positiva, pois esses recursos são abundantes e economicamente vantajosos para os países em
-				desenvolvimento</p>
+				desenvolvimento.</p>
 
 			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" id="pq9" name="pq9" value="b"> b)
-				negativa, pois os combustíveis fósseis são altamente poluentes e apresentam uma disponibilidade limitada
+				negativa, pois os combustíveis fósseis são altamente poluentes e apresentam uma disponibilidade limitada.
 			</p>
 
 			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c)
-				negativa, pois tais combustíveis são a principal forma de poluição dos recursos hídricos do planeta</p>
+				negativa, pois tais combustíveis são a principal forma de poluição dos recursos hídricos do planeta.</p>
 
 			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d"> d)
 				positiva, pois a substituição de outras fontes de energia por combustíveis favorece o combate ao
-				aquecimento global</p>
+				aquecimento global.</p>
 
 
 		</div>
@@ -483,7 +501,7 @@
 
 			<p class="p2">Questão 10 </p>
 
-			<p> O petróleo é, sem dúvidas, um dos principais recursos que o ser humano extrai da natureza para
+			<p> (BRASIL ESCOLA 2022) O petróleo é, sem dúvidas, um dos principais recursos que o ser humano extrai da natureza para
 				fins econômicos. Trata-se de um elemento altamente estratégico no contexto internacional e alvo de
 				muitas disputas geopolíticas entre países dependentes desse recurso para utilização ou exportação. </p>
 
@@ -498,16 +516,16 @@
 
 
 			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a">
-				a) destilação fracionada</p>
+				a) destilação fracionada.</p>
 
 			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b">
-				b) separação de misturas orgânicas</p>
+				b) separação de misturas orgânicas.</p>
 
 			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c">
-				c) ampliação da octanagem </p>
+				c) ampliação da octanagem. </p>
 
 			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
-				d) ampliação da octanagem </p>
+				d) ampliação da octanagem. </p>
 
 
 		</div>
@@ -538,11 +556,12 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
+	<div id="aviso" class="w3-panel w3-yellow">
 
-
-
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	</div>
+	
+	
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 	<script>
@@ -742,7 +761,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 
