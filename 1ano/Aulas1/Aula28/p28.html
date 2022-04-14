@@ -11,39 +11,28 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/javascript.js"></script>
+    <script src="../../../estilos/javascript.js" defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-DPX55DSFZ0');
 
-    </script>
-
-   
 
 
 
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+
 
     <!-- Navigation (Stays on Top) -->
-    <div class="w3-top w3-bar w3-black larguraBar">
+    <div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+        <div class="w3-container">
 
-        <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+            <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+        </div>
 
     </div>
-
 
     <h1 class="h1"> Aula 28 – Revisão (aulas 24 a 27)</h1>
 
@@ -52,7 +41,7 @@
 
         <p><strong>Conteúdo:</strong></p>
 
-		<ul class="w3-padding-32">
+        <ul class="w3-padding-top">
             <li>A água na natureza. Ciclo, conceitos de hidrografia. A água em movimento: correntes marinhas, ondas e
                 marés. A bacia hidrográfica como unidade de análise. A rede hidrográfica.
             </li>
@@ -83,6 +72,16 @@
 
 
 
+    <div class="w3-padding-top-24">
+        <div class="w3-white larguraBar w3-padding flex-container">
+
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                    id="decrease-font" title="Diminuir fonte">A -</button></div>
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                    id="increase-font" title="Aumentar fonte">A +</button></div>
+        </div>
+    </div>
+
 
 
     <form id="quiz" name="quiz" onsubmit="verificar()">
@@ -100,7 +99,7 @@
 
 
 
-            <p class="citacao"> Botelho, R. G. M. e Silva, A. S. da. Bacia Hidrográfica e Qualidade Ambiental. Reflexões
+            <p class="w3-small"> Botelho, R. G. M. e Silva, A. S. da. Bacia Hidrográfica e Qualidade Ambiental. Reflexões
                 sobre a geografia física no Brasil. Vitte, A. C. Guerra, A. J. T. Rio de Janeiro. Bertrand Brasil. 2004.
                 p. 153. </p>
 
@@ -172,7 +171,7 @@
             <div class="w3-center"><img src="p28q2.png" alt="p28q2" class="w3-mobile"></div>
 
 
-            <p class="citacao"> SANTOS, Vanessa dos. Ciclo da água, 2019. Disponível:
+            <p class="w3-small"> SANTOS, Vanessa dos. Ciclo da água, 2019. Disponível:
                 https://brasilescola.uol.com.br/biologia/ciclo-agua.htm (Adaptado). </p>
 
             <p>Os fenômenos expressos em A, B e C são, respectivamente, conhecidos como </p>
@@ -337,15 +336,15 @@
 
             <p> Assinale com V as afirmações verdadeiras e com F, as falsas. </p>
 
-            <p>() Os rios são poderosos agentes de transformação da paisagem em virtude da sua capacidade de erodir,
+            <p>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Os rios são poderosos agentes de transformação da paisagem em virtude da sua capacidade de erodir,
                 transportar e depositar. </p>
 
-            <p> () Diversos rios que drenam litologias cristalinas podem ser classificados como rios antecedentes. </p>
+            <p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Diversos rios que drenam litologias cristalinas podem ser classificados como rios antecedentes. </p>
 
-            <p> () As bacias de drenagem apresentam áreas muito pequenas que juntas compõem a bacia hidrográfica de um
+            <p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) As bacias de drenagem apresentam áreas muito pequenas que juntas compõem a bacia hidrográfica de um
                 rio. </p>
 
-            <p> () Os processos aluviais podem compreender erosão, transporte e sedimentação, também em leques aluviais.
+            <p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Os processos aluviais podem compreender erosão, transporte e sedimentação, também em leques aluviais.
             </p>
 
             <p>A sequência correta, de cima para baixo, é:</p>
@@ -402,8 +401,8 @@
             <div class="w3-center"><img src="p28q6.png" alt="p28q6" class="w3-mobile"></div>
 
 
-            <p class="citacao"> Fonte de pesquisa: IBGE Países@. Disponível em: http:
-                    //www.ibge.gov.br. Acesso em: 3 set. 2011.
+            <p class="w3-small"> Fonte de pesquisa: IBGE Países@. Disponível em: http:
+                //www.ibge.gov.br. Acesso em: 3 set. 2011.
 
             </p>
 
@@ -412,7 +411,7 @@
 
             <div class="w3-center"><img src="p28q6a.png" alt="p28q6a" class="w3-mobile"></div>
 
-            <p class="citacao"> Fonte de pesquisa: David Blanchon. Atlas mondial de l’eau. Paris: Autrement, 2009. p.
+            <p class="w3-small"> Fonte de pesquisa: David Blanchon. Atlas mondial de l’eau. Paris: Autrement, 2009. p.
                 20.
 
             </p>
@@ -423,27 +422,32 @@
 
             <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a">
 
-                a)  as maiores concentrações populacionais ocorrem nas regiões onde há grande disponibilidade de água potável, como na América do Sul.
+                a) as maiores concentrações populacionais ocorrem nas regiões onde há grande disponibilidade de água
+                potável, como na América do Sul.
 
             </p>
             <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b">
 
-                b) boa parte das maiores concentrações populacionais ocorrem nas áreas onde há escassez de água potável, como no sul asiático.
+                b) boa parte das maiores concentrações populacionais ocorrem nas áreas onde há escassez de água potável,
+                como no sul asiático.
 
             </p>
             <p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c">
 
-                c)  não há nenhuma relação que se possa estabelecer entre concentração populacional e disponibilidade de água potável.
+                c) não há nenhuma relação que se possa estabelecer entre concentração populacional e disponibilidade de
+                água potável.
 
             </p>
             <p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d">
 
-                d) as regiões onde há uma situação próxima da escassez de água potável são as de menor concentração populacional do planeta, como no caso do continente africano.
+                d) as regiões onde há uma situação próxima da escassez de água potável são as de menor concentração
+                populacional do planeta, como no caso do continente africano.
 
             </p>
             <p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e">
 
-                e)  onde há a necessidade de se fazer economia de água potável, ocorrem as maiores concentrações populacionais do planeta, esse é o caso da Europa ocidental.
+                e) onde há a necessidade de se fazer economia de água potável, ocorrem as maiores concentrações
+                populacionais do planeta, esse é o caso da Europa ocidental.
 
             </p>
         </div>
@@ -453,21 +457,26 @@
         <div class="comentarios">
             <p> <strong>Comentário:</strong></p>
 
-            <p> a) Incorreta.  A América do Sul tem entre as menores concentrações populacionais do planeta. </p>
+            <p> a) Incorreta. A América do Sul tem entre as menores concentrações populacionais do planeta. </p>
 
 
-            <p>b) Correta. Comparando os dois mapas é possível perceber que há uma relação entre a escassez de água existente no território do sul asiático com a grande concentração populacional que ali existe. Lembre-se de que dois dos países mais populosos do mundo se localizam nessa região: China e Índia. </p>
-
-            
-            <p>c)  Incorreta. Conforme observamos no mapa, há uma relação inversa entre concentração populacional alta e baixa quantidade de água potável. </p>
-
-
-            
-            <p> d)  Incorreta. O continente africano tem uma concentração populacional moderada, mas não há ali uma situação próxima da escassez. </p>
+            <p>b) Correta. Comparando os dois mapas é possível perceber que há uma relação entre a escassez de água
+                existente no território do sul asiático com a grande concentração populacional que ali existe. Lembre-se
+                de que dois dos países mais populosos do mundo se localizam nessa região: China e Índia. </p>
 
 
-            
-            <p> e)  Incorreta. Apesar de boa concentração populacional, a maior parte do continente europeu não sofre com escassez de água potável.</p>
+            <p>c) Incorreta. Conforme observamos no mapa, há uma relação inversa entre concentração populacional alta e
+                baixa quantidade de água potável. </p>
+
+
+
+            <p> d) Incorreta. O continente africano tem uma concentração populacional moderada, mas não há ali uma
+                situação próxima da escassez. </p>
+
+
+
+            <p> e) Incorreta. Apesar de boa concentração populacional, a maior parte do continente europeu não sofre com
+                escassez de água potável.</p>
 
 
         </div>
@@ -483,15 +492,18 @@
 
             <p class="p2">Questão 07</p>
 
-            <p> (ENEM 2012) O uso da água aumenta de acordo com as necessidades da população no mundo. Porém, diferentemente do que se possa imaginar, o aumento do consumo de água superou em duas vezes o crescimento populacional durante o século XX. </p>
-
-          
-
-
-            <p class="citacao"> TEIXEIRA, W. et al. Decifrando a Terra. São Paulo: Cia. Editora Nacional, 2009. </p>
+            <p> (ENEM 2012) O uso da água aumenta de acordo com as necessidades da população no mundo. Porém,
+                diferentemente do que se possa imaginar, o aumento do consumo de água superou em duas vezes o
+                crescimento populacional durante o século XX. </p>
 
 
-            <p>Uma estratégia socioespacial que pode contribuir para alterar a lógica de uso da água apresentada no texto é a </p>
+
+
+            <p class="w3-small w3-right-align"> TEIXEIRA, W. et al. Decifrando a Terra. São Paulo: Cia. Editora Nacional, 2009. </p>
+
+
+            <p>Uma estratégia socioespacial que pode contribuir para alterar a lógica de uso da água apresentada no
+                texto é a </p>
 
 
             <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a">
@@ -501,12 +513,12 @@
             </p>
             <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b">
 
-               b) expansão da irrigação por aspersão das lavouras.
+                b) expansão da irrigação por aspersão das lavouras.
 
             </p>
             <p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c">
 
-              c) intensificação do controle do desmatamento de florestas.
+                c) intensificação do controle do desmatamento de florestas.
             </p>
             <p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d">
 
@@ -525,20 +537,27 @@
         <div class="comentarios">
             <p> <strong>Comentário:</strong></p>
 
-            <p> a) Correta. De acordo com o texto o consumo de água aumentou muito mais do que o crescimento da população. Nesse sentido, uma das práticas para garantir o fornecimento de água para o Planeta seria o uso de técnicas de reutilização de água tratada para evitar desabastecimento.  </p>
+            <p> a) Correta. De acordo com o texto o consumo de água aumentou muito mais do que o crescimento da
+                população. Nesse sentido, uma das práticas para garantir o fornecimento de água para o Planeta seria o
+                uso de técnicas de reutilização de água tratada para evitar desabastecimento. </p>
 
-            <p> b) Incorreta. A irrigação é o maior consumidor de água do Planeta e sua ampliação provocaria a escassez de água.</p>
+            <p> b) Incorreta. A irrigação é o maior consumidor de água do Planeta e sua ampliação provocaria a escassez
+                de água.</p>
 
 
-            
-            <p> c) Incorreta. Embora o desmatamento seja fundamental para proteção dos mananciais (fontes de água), somente essa medida não levaria ao controle do consumo de água. As nascentes de água também estão localizadas em áreas não florestais.</p>
+
+            <p> c) Incorreta. Embora o desmatamento seja fundamental para proteção dos mananciais (fontes de água),
+                somente essa medida não levaria ao controle do consumo de água. As nascentes de água também estão
+                localizadas em áreas não florestais.</p>
 
 
-            
-            <p> d) Incorreta. As técnicas tradicionais de produção possuem um manejo do solo rudimentar, além de diminuir a retenção de água e promover o desgaste de sua superfície.</p>
 
-            
-            <p>e) Incorreta. Embora a produção de orgânicos esteja baseada na não utilização de produtos químicos como agrotóxicos de modo geral, essa produção utiliza uma quantidade e qualidade da água elevada. </p>
+            <p> d) Incorreta. As técnicas tradicionais de produção possuem um manejo do solo rudimentar, além de
+                diminuir a retenção de água e promover o desgaste de sua superfície.</p>
+
+
+            <p>e) Incorreta. Embora a produção de orgânicos esteja baseada na não utilização de produtos químicos como
+                agrotóxicos de modo geral, essa produção utiliza uma quantidade e qualidade da água elevada. </p>
 
 
 
@@ -556,33 +575,41 @@
 
             <p class="p2">Questão 08</p>
 
-            <p> (IFMT 2014) À água potável encontrada na natureza é considerada um elemento muito importante para o desenvolvimento da vida no planeta. No entanto, tem se tornado cada vez mais escassa. Com relação a esse elemento, assinale a alternativa correta.</p>
+            <p> (IFMT 2014) À água potável encontrada na natureza é considerada um elemento muito importante para o
+                desenvolvimento da vida no planeta. No entanto, tem se tornado cada vez mais escassa. Com relação a esse
+                elemento, assinale a alternativa correta.</p>
 
 
-          
+
             <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a">
 
-                a) Os recursos hídricos estão equitativamente bem distribuídos por todos os continentes e dentro deles a carência de acesso a esse bem renovável se dá não por escassez, mas por questões políticas.
+                a) Os recursos hídricos estão equitativamente bem distribuídos por todos os continentes e dentro deles a
+                carência de acesso a esse bem renovável se dá não por escassez, mas por questões políticas.
 
             </p>
             <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b">
 
-                b) A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, e pelos desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.
+                b) A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, e pelos
+                desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.
 
             </p>
             <p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c">
 
-                c) O Brasil possui pouca água superficial (rios, lagos) e subterrânea devido às suas características geológicas dominantes.
+                c) O Brasil possui pouca água superficial (rios, lagos) e subterrânea devido às suas características
+                geológicas dominantes.
 
             </p>
             <p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d">
 
-                d) O maior estoque de água doce na atualidade está nos lençóis freáticos, superando o volume de águas em estado sólido (calotas polares, geleiras e neves permanentes), em razão do derretimento das geleiras provocado pelo efeito estufa.
+                d) O maior estoque de água doce na atualidade está nos lençóis freáticos, superando o volume de águas em
+                estado sólido (calotas polares, geleiras e neves permanentes), em razão do derretimento das geleiras
+                provocado pelo efeito estufa.
 
             </p>
             <p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e">
 
-                e) A diminuição da chuva no Brasil tem sido o maior problema ligado à falta de água para abastecer as cidades e as áreas rurais.
+                e) A diminuição da chuva no Brasil tem sido o maior problema ligado à falta de água para abastecer as
+                cidades e as áreas rurais.
 
             </p>
         </div>
@@ -608,37 +635,43 @@
 
             <p> (FACID 2012) Observe a imagem abaixo: </p>
 
-            
 
-	<div class="w3-center"><img src="p28q9.png" alt="p28q9" class="w3-mobile"></div>
 
-            <p class="citacao">Fonte: e-geo.ineti.pt. Acesso em 22/10/2011 </p>
+            <div class="w3-center"><img src="p28q9.png" alt="p28q9" class="w3-mobile"></div>
 
-            <p>A água constitui um elemento fundamental para o desenvolvimento da vida no nosso planeta. Com relação a esse elemento, assinale a alternativa correta. </p>
+            <p class="w3-small">Fonte: e-geo.ineti.pt. Acesso em 22/10/2011 </p>
+
+            <p>A água constitui um elemento fundamental para o desenvolvimento da vida no nosso planeta. Com relação a
+                esse elemento, assinale a alternativa correta. </p>
 
             <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a">
 
-                a) A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, e pelos desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.
+                a) A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, e pelos
+                desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.
 
             </p>
             <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b">
 
-                b) Desvios de água para projetos de irrigação, construção de hidrelétricas, consumo excessivo, desmatamento e poluição têm contribuído para a redução de conflitos entre usuários.
+                b) Desvios de água para projetos de irrigação, construção de hidrelétricas, consumo excessivo,
+                desmatamento e poluição têm contribuído para a redução de conflitos entre usuários.
 
             </p>
             <p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c">
 
-                c) A água tem sido utilizada para a geração de energia elétrica assegurando a sustentabilidade do meio ambiente local.
+                c) A água tem sido utilizada para a geração de energia elétrica assegurando a sustentabilidade do meio
+                ambiente local.
 
             </p>
             <p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d">
 
-                d) O Brasil possui pouca quantidade de água superficial e subterrânea devido às suas características geológicas dominantes.
+                d) O Brasil possui pouca quantidade de água superficial e subterrânea devido às suas características
+                geológicas dominantes.
 
             </p>
             <p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e">
 
-                e) A diminuição da chuva no Brasil tem sido o maior problema ligado à falta de água para abastecer as cidades.
+                e) A diminuição da chuva no Brasil tem sido o maior problema ligado à falta de água para abastecer as
+                cidades.
 
             </p>
         </div>
@@ -668,22 +701,30 @@
 
             <div class="w3-center"><img src="p28q10.png" alt="p28q10" class="w3-mobile"></div>
 
-            <p class="citacao"> Diário Popular, 25 mar 2007 </p>
+            <p class="w3-small w3-right-align"> Diário Popular, 25 mar 2007 </p>
 
 
-            <p> Em 22 de março, comemora-se o Dia Mundial da Água, data criada pela ONU em 1993, com o objetivo de chamar a atenção para a escassez desse recurso, bem como para conscientizar as pessoas sobre a necessidade de preservação e reaproveitamento da água de que dispomos hoje.</p>
+            <p> Em 22 de março, comemora-se o Dia Mundial da Água, data criada pela ONU em 1993, com o objetivo de
+                chamar a atenção para a escassez desse recurso, bem como para conscientizar as pessoas sobre a
+                necessidade de preservação e reaproveitamento da água de que dispomos hoje.</p>
 
             <p>Considere as alternativas abaixo a respeito da água doce. </p>
 
-            <p>I. O aumento da população, o crescimento econômico não-sustentável e a agricultura irrigada estão entre os principais fatores que ameaçam as fontes de água em todo o mundo. </p>
+            <p>I. O aumento da população, o crescimento econômico não-sustentável e a agricultura irrigada estão entre
+                os principais fatores que ameaçam as fontes de água em todo o mundo. </p>
 
-            <p>II. O Brasil tem grande disponibilidade de água doce e, por essa razão, não enfrenta problemas de abastecimento em nenhuma de suas metrópoles nacionais. </p>
+            <p>II. O Brasil tem grande disponibilidade de água doce e, por essa razão, não enfrenta problemas de
+                abastecimento em nenhuma de suas metrópoles nacionais. </p>
 
-            <p>III. Os fertilizantes e agrotóxicos podem modificar as características dos "corpos de água", gerando impactos em aquíferos, rios e mananciais. </p>
+            <p>III. Os fertilizantes e agrotóxicos podem modificar as características dos "corpos de água", gerando
+                impactos em aquíferos, rios e mananciais. </p>
 
-            <p> IV. A impossibilidade da dessalinização de águas salgadas do planeta dificulta a solução de um problema que, com custos pouco elevados, atenderia toda a demanda mundial.</p>
+            <p> IV. A impossibilidade da dessalinização de águas salgadas do planeta dificulta a solução de um problema
+                que, com custos pouco elevados, atenderia toda a demanda mundial.</p>
 
-            <p> V. Uma das consequências relacionadas à falta de água potável é o aumento da incidência de doenças, como a diarreia e outros males provocados pela água contaminada, os quais causam a morte de milhões de crianças em todo mundo.</p>
+            <p> V. Uma das consequências relacionadas à falta de água potável é o aumento da incidência de doenças, como
+                a diarreia e outros males provocados pela água contaminada, os quais causam a morte de milhões de
+                crianças em todo mundo.</p>
 
 
             <p>Somente são corretas as afirmativas </p>
@@ -691,26 +732,26 @@
 
             <p class="bordaQuestoes" id="q10a"><input type="radio" name="pq10" value="a">
 
-                a) II, III e IV. 
+                a) II, III e IV.
 
             </p>
             <p class="bordaQuestoes" id="q10b"><input type="radio" name="pq10" value="b">
-                b) I, II e V. 
+                b) I, II e V.
 
             </p>
             <p class="bordaQuestoes" id="q10c"><input type="radio" name="pq10" value="c">
 
-                c) III, IV e V. 
+                c) III, IV e V.
 
             </p>
             <p class="bordaQuestoes" id="q10d"><input type="radio" name="pq10" value="d">
 
-                d) I, II e IV. 
+                d) I, II e IV.
 
             </p>
             <p class="bordaQuestoes" id="q10e"><input type="radio" name="pq10" value="e">
 
-                e) I, III e V. 
+                e) I, III e V.
 
             </p>
         </div>
@@ -742,11 +783,15 @@
             height="200">
     </div>
 
-    <p id="aviso"></p>
 
 
 
-    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+    <div id="aviso" class="w3-panel w3-yellow">
+
+    </div>
+
+
+    <div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 
@@ -838,7 +883,7 @@
                 document.getElementById("q5b").style.backgroundColor = cor[1];
                 document.getElementById("q5c").style.backgroundColor = cor[1];
                 document.getElementById("q5d").style.backgroundColor = cor[1];
-              
+
 
                 document.getElementById("q5a").style.backgroundColor = cor[0];
             }
@@ -954,6 +999,16 @@
 
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
 
 
 

@@ -11,18 +11,9 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -30,18 +21,19 @@
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+		<div class="w3-container">
 
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
 
 	</div>
+
 
 
 
@@ -58,6 +50,18 @@
 		regime dos
 		oceanos e mares, bem como a dinâmica de sua utilização econômica, comercial, turísticas, dentre outras. </p>
 
+
+
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
 
 
 	<form id="quiz" name="quiz" onsubmit="verificar()">
@@ -189,7 +193,7 @@
 				de ambos os lados — tal como acontece com o oceano Atlântico. Por sua vez, o leito oceânico é produzido
 				e alastra-se de forma contínua a partir do sistema de dorsais (cordilheiras) oceânicas. </p>
 
-			<p class="citacao"> (TESOUROS E PERIGOS dos oceanos. Planeta. São Paulo: Três, ano 37, ed. 439, abr.
+			<p class="w3-small"> (TESOUROS E PERIGOS dos oceanos. Planeta. São Paulo: Três, ano 37, ed. 439, abr.
 				2009.). </p>
 
 			<p> A partir da análise do texto e dos conhecimentos sobre oceanos, pode-se afirmar: </p>
@@ -411,12 +415,12 @@
 
 			<p class="p2">Questão 10</p>
 
-			<p> (Brasil Escola) Nas áreas onde se constituem as dorsais oceânicas, as formas de relevo submarino mais
+			<p> (BRASIL ESCOLA) Nas áreas onde se constituem as dorsais oceânicas, as formas de relevo submarino mais
 				comuns são:</p>
 
 			<div class="w3-center"><img src="p25q10.png" alt="p23q10" class="w3-mobile"></div>
 
-		
+
 
 
 			<p class="bordaQuestoes" id="q10a"><input type="radio" name="pq10" value="a">
@@ -470,11 +474,15 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
 
 
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<div id="aviso" class="w3-panel w3-yellow">
+
+	</div>
+
+
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 	<script>
 
@@ -671,7 +679,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

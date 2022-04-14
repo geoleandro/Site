@@ -11,18 +11,9 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -31,16 +22,16 @@
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+		<div class="w3-container">
 
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
 
 	</div>
 
@@ -52,7 +43,7 @@
 
 		<p><strong>Conteúdo:</strong></p>
 
-		<ul class="w3-padding-32">
+		<ul class="w3-padding-top">
 			<li>Camas da atmosfera; Tempo; Clima; Elementos do clima: temperatura, umidade e pressão atmosférica.</li>
 			<li>
 				Latitude; Altitude; Maritimidade; Continentalidade; Correntes Marítimas; Monções; Ventos Alísios; Massas
@@ -65,6 +56,19 @@
 
 		</ul>
 
+	</div>
+
+
+
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
 	</div>
 
 
@@ -135,28 +139,30 @@
 
 			<p class="p2">Questão 02 </p>
 
-			<p>(UEFS BA 2017) </p>
-
-			<p> Os elementos climáticos caracterizam o clima, que são definidos por fatores ou fenômenos. </p>
-
-			<p>A partir dos conhecimentos sobre os elementos e fatores climáticos, marque V nas afirmativas
+			<p>(UEFS BA 2017) Os elementos climáticos caracterizam o clima, que são definidos por fatores ou fenômenos.A
+				partir dos conhecimentos sobre os elementos e fatores climáticos, marque V nas afirmativas
 				verdadeiras e F, nas falsas.</p>
 
 
 
-			<p>() As áreas sob a influência da continentalidade apresentam temperatura mais elevadas, devido à baixa
+			<p>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) As áreas sob a influência da continentalidade apresentam temperatura
+				mais elevadas, devido à baixa
 				umidade relativa do ar.</p>
 
-			<p> () O impacto do desmatamento no clima recai sobre o regime de chuvas, em decorrência da diminuição
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) O impacto do desmatamento no clima recai sobre o regime de chuvas, em
+				decorrência da diminuição
 				da emissão de umidade para atmosfera.</p>
 
-			<p> () Os movimentos das massas de ar e dos ventos resultam da desigual distribuição de energia solar
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Os movimentos das massas de ar e dos ventos resultam da desigual
+				distribuição de energia solar
 				nas diversas latitudes.</p>
 
-			<p> () Na circulação atmosférica, as massas de ar de características diferentes entram em contato entre
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Na circulação atmosférica, as massas de ar de características
+				diferentes entram em contato entre
 				si, dando origem ás frentes frias e, como consequência, as chuvas orográficas.</p>
 
-			<p> () As áreas anticiclonais se caracterizam pelas baixas temperaturas e altas pressões e são
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) As áreas anticiclonais se caracterizam pelas baixas temperaturas e
+				altas pressões e são
 				dispersoras de vento.</p>
 
 			<p>A alternativa que apresenta a sequência correta, de cima para baixo, é a</p>
@@ -164,27 +170,27 @@
 
 			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
 
-				a) F V F F V
+				a) F V F F V.
 
 			</p>
 			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
 
-				b) F V V F V
+				b) F V V F V.
 
 			</p>
 			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c">
 
-				c) V V F V F
+				c) V V F V F.
 
 			</p>
 			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
 
-				d) V F V V F
+				d) V F V V F.
 
 			</p>
 			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e">
 
-				e) F F V F V
+				e) F F V F V.
 
 			</p>
 		</div>
@@ -303,12 +309,11 @@
 					[...].”
 				</p>
 
-				<span class="w3-small"> (Disponível em: www.publico.pt/desporto/noticia/o-futebol. Acesso em: 07
-					set. 2015) </span>
+				<p class="w3-small w3-right-align"> (Disponível em: www.publico.pt/desporto/noticia/o-futebol. Acesso
+					em: 07
+					set. 2015) </p>
 
 			</div>
-
-
 
 
 
@@ -427,13 +432,13 @@
 			<p class="p2">Questão 06</p>
 
 
-			<p>(IFSudMinas 2017) Correlacione, de forma correta, os fatores climáticos:</p>
+			<p>(IFSULDEMINAS 2017) Correlacione, de forma correta, os fatores climáticos:</p>
 
 
-			<div class="w3-container p3 ">
+			<div class="w3-container ">
 
 
-				<table class="w3-table w3-striped ">
+				<table class="w3-table-all">
 					<tr>
 						<th class="w3-center">Coluna 1</th>
 						<th class="w3-center">Coluna 2</th>
@@ -576,43 +581,69 @@
 
 			<p class="p2">Questão 08</p>
 
-			<p> Aula 21 – Mudanças climáticas globais</p>
-
 
 			<p>(UEPB 2011) Associe os fenômenos climáticos citados na coluna 1 às suas respectivas características
 				descritas na coluna 2.</p>
 
-			<p><strong> Coluna 1</strong></p>
+
+			<div class="w3-container ">
 
 
-			<p>(1) El Niño </p>
-			<p>(2) Circulação geral da atmosfera </p>
-			<p> (3) Monções</p>
-			<p> (4) Alísios </p>
-			<p>(5) Contra-alísios</p>
+				<table class="w3-table-all">
+					<tr>
+						<th class="w3-center">Coluna 1</th>
+						<th class="w3-center">Coluna 2</th>
+
+					</tr>
+					<tr>
+						<td>(1) El Niño</td>
+						<td>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Ventos que se deslocam das áreas de alta pressão
+							localizadas nos trópicos para as zonas de baixa
+							pressão do Equador. Tais ventos são de nordeste no hemisfério norte e de sudeste no
+							hemisfério sul;
+							na sua zona de convergência são responsáveis pelos maiores índices pluviométricos do
+							planeta. </td>
+
+					</tr>
+					<tr>
+						<td>(2) Circulação geral da atmosfera </td>
+						<td> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Mecanismo global proveniente do aquecimento desigual da
+							superfície terrestre através do qual o
+							calor é distribuído pelo planeta e possibilita a formação das grandes zonas climática.</td>
+
+					</tr>
+					<tr>
+						<td> (3) Monções</td>
+						<td> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Ventos secos que perderam umidade e se aqueceram na zona
+							equatorial, de onde retornam aos
+							trópicos, latitude na qual contribuem para a formação da maioria dos grandes desertos do
+							planeta.</td>
+
+					</tr>
+
+					<tr>
+						<td> (4) Alísios</td>
+						<td> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Aquecimento das águas do Pacífico Sul, de causas ainda não
+							conhecidas, com consequências globais
+							ao provocar seca em algumas regiões do planeta e precipitações excessivas em outras. </td>
+
+					</tr>
+
+					<tr>
+						<td> (5) Contra-alísios</td>
+						<td> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Ventos sazonais que mudam de direção em função da
+							alternância entre as áreas de alta e de baixa
+							pressão atmosférica (continental e oceânica) e definem uma estaçã seca e outra chuvosa em
+							grandes
+							regiões tropicais e subtropicais do planeta. </td>
+
+					</tr>
 
 
+				</table>
+			</div>
 
-			<p><strong>Coluna 2</strong></p>
 
-
-			<p>( ) Ventos que se deslocam das áreas de alta pressão localizadas nos trópicos para as zonas de baixa
-				pressão do Equador. Tais ventos são de nordeste no hemisfério norte e de sudeste no hemisfério sul;
-				na sua zona de convergência são responsáveis pelos maiores índices pluviométricos do planeta.</p>
-
-			<p>( ) Mecanismo global proveniente do aquecimento desigual da superfície terrestre através do qual o
-				calor é distribuído pelo planeta e possibilita a formação das grandes zonas climática.</p>
-
-			<p> ( ) Ventos secos que perderam umidade e se aqueceram na zona equatorial, de onde retornam aos
-				trópicos, latitude na qual contribuem para a formação da maioria dos grandes desertos do
-				planeta.</p>
-
-			<p> ( ) Aquecimento das águas do Pacífico Sul, de causas ainda não conhecidas, com consequências globais
-				ao provocar seca em algumas regiões do planeta e precipitações excessivas em outras.</p>
-
-			<p> ( ) Ventos sazonais que mudam de direção em função da alternância entre as áreas de alta e de baixa
-				pressão atmosférica (continental e oceânica) e definem uma estaçã seca e outra chuvosa em grandes
-				regiões tropicais e subtropicais do planeta.</p>
 
 
 			<p>A sequência correta da enumeração é</p>
@@ -670,7 +701,8 @@
 				resultantes de vários fatores e vetores, incluindo as variações e alterações climáticas e as
 				atividades humanas.</p>
 
-			<p class="citacao"> BRASIL, Ministério do Meio Ambiente. Disponível em http://www.mma.gov.br/.</p>
+			<p class="w3-small w3-right-align"> BRASIL, Ministério do Meio Ambiente. Disponível em
+				http://www.mma.gov.br/.</p>
 
 			<p>Dentre as medidas mais adequadas para mitigação dos efeitos da desertificação encontra(m)‐se</p>
 
@@ -722,29 +754,42 @@
 			<p class="p2">Questão 10</p>
 
 
-			<p>(IFSulDeMinas 2018) Observe a reportagem:</p>
+			<p>(IFSULDEMINAS 2018) Observe a reportagem:</p>
+
+
+
+			<h2 class="w3-center w3-bold w3-padding-top-32 w3-margin"> Por que Los Angeles está pintando o asfalto da
+				cidade de cinza claro</h2>
 
 			<div class="w3-center"><img src="p23q10.png" alt="p23q10" class="w3-mobile"></div>
 
-			<p> Por que Los Angeles está pintando o asfalto da cidade de cinza claro</p>
-
-			<p> Tinta especial criada para esconder aviões de satélites espiões reflete o sol e refresca asfalto,
-				ajudando moradores a enfrentar ondas de calor.</p>
 
 
-			<p> Os ventiladores de teto e os aparelhos de ar-condicionado conseguiram apenas aliviar os efeitos da
-				sufocante onda de calor que atingiu o sul da Califórnia recentemente.</p>
-
-			<p> Foram dias em que a maioria dos moradores de Los Angeles desejaram morar em um dos bairros que há
-				algumas semanas testa uma nova ideia para combater as altas temperaturas.</p>
-
-			<p> Trata-se do CoolSeal ("selo fresco", em tradução livre), uma espécie de pintura de cor cinza claro
-				que "refresca" o asfalto e que foi criada para combater o chamado fenômeno da "ilha de calor"
-				urbana.</p>
+			<div class="w3-panel w3-leftbar w3-sand w3-margin">
+				<p>“Tinta especial criada para esconder aviões de satélites espiões reflete o sol e refresca asfalto,
+					ajudando moradores a enfrentar ondas de calor. </p>
 
 
-			<p class="citacao">Fonte: BBC BRASIL. (29 de SETEMBRO de 2017). G1. Acesso em: 29 set. 2017, disponível
-				em G1 NATUREZA:</p>
+				<p> Os ventiladores de teto e os aparelhos de ar-condicionado conseguiram apenas aliviar os efeitos da
+					sufocante onda de calor que atingiu o sul da Califórnia recentemente.</p>
+
+				<p> Foram dias em que a maioria dos moradores de Los Angeles desejaram morar em um dos bairros que há
+					algumas semanas testa uma nova ideia para combater as altas temperaturas.</p>
+
+				<p> Trata-se do CoolSeal ("selo fresco", em tradução livre), uma espécie de pintura de cor cinza claro
+					que "refresca" o asfalto e que foi criada para combater o chamado fenômeno da "ilha de calor"
+					urbana.”</p>
+
+				<p class="w3-small">Fonte: BBC BRASIL. (29 de SETEMBRO de 2017). G1. Acesso em: 29 set. 2017, disponível
+					em G1 NATUREZA:</p>
+			</div>
+
+			<p> </p>
+
+
+
+
+
 			<p>
 				Sobre o fenômeno “ilhas de calor” urbanas, é correto afirmar:
 			</p>
@@ -778,9 +823,9 @@
 
 
 		<div class="comentarios">
-			<p> <strong>Comentário:</strong></p>
+			<!-- <p> <strong>Comentário:</strong></p>
 
-			<p> Colocar os comentários aqui. </p>
+			<p> Colocar os comentários aqui. </p> -->
 		</div>
 
 
@@ -797,12 +842,14 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
 
 
+	<div id="aviso" class="w3-panel w3-yellow">
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	</div>
 
+
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 
@@ -1000,7 +1047,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

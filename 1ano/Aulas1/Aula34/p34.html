@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/javascript.js"></script>
+    <script src="../../../estilos/javascript.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -25,51 +25,54 @@
 
     </script>
 
-    
+
 
 
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+
 
     <!-- Navigation (Stays on Top) -->
-    <div class="w3-top w3-bar w3-black larguraBar">
+    <div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+        <div class="w3-container">
 
-        <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+            <a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+        </div>
 
     </div>
 
 
 
-    <h1 id="h1"> Aula 34 – Revisão (aula 29 a 33) </h1>
+    <h1 class="h1"> Aula 34 – Revisão (aula 29 a 33) </h1>
 
     <div class="w3-container w3-white ">
 
         <p><strong>Conteúdo:</strong></p>
 
-		<ul class="w3-padding-32">
+        <ul class="w3-padding-top">
             <li>Distribuição da vegetação; regiões tropicais, florestas pluviais; climas tropicais; savanas; desertos.
 
 
             </li>
 
             <li>
-                Floresta boreal (coníferas); estepes e pradarias; floresta temperada; vegetação mediterrâneas; floresta subtropicais.
+                Floresta boreal (coníferas); estepes e pradarias; floresta temperada; vegetação mediterrâneas; floresta
+                subtropicais.
 
             </li>
 
             <li>
-                Impacto ambiental; poluição; desmatamento; correntes do ambientalismo: Conservacionismo; Preservacionismo; Ecossocialismo.
+                Impacto ambiental; poluição; desmatamento; correntes do ambientalismo: Conservacionismo;
+                Preservacionismo; Ecossocialismo.
 
             </li>
 
             <li>
-                Conferências internacionais; Clube de Roma; Eco-92; Protocolo de Kyoto; Acordo de Paris; Sustentabilidade.
+                Conferências internacionais; Clube de Roma; Eco-92; Protocolo de Kyoto; Acordo de Paris;
+                Sustentabilidade.
 
 
             </li>
@@ -82,46 +85,56 @@
 
 
 
+    <div class="w3-padding-top-24">
+        <div class="w3-white larguraBar w3-padding flex-container">
+
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                    id="decrease-font" title="Diminuir fonte">A -</button></div>
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                    id="increase-font" title="Aumentar fonte">A +</button></div>
+        </div>
+    </div>
+
 
 
     <form id="quiz" name="quiz" onsubmit="verificar()">
 
 
-      <div class="w3-container w3-card-4">
+        <div class="w3-container w3-card-4">
 
             <p class="p2">Questão 01</p>
 
-            <p > (UESPI 2017) A questão ambiental nos dias atuais é tomada como preocupação mundial. Várias
+            <p> (UESPI 2017) A questão ambiental nos dias atuais é tomada como preocupação mundial. Várias
                 conferências vêm sendo promovidas pelas Nações Unidas na tentativa de estabelecer acordos para minimizar
                 os impactos ambientais em escala global e conflitos decorrentes da possibilidade de escassez de recursos
                 naturais. Considerando a relevância da temática, leia as afirmações e marque a alternativa CORRETA.</p>
 
-            <p >I - Os desastres naturais acontecem porque existem muitas pessoas que vivem em locais nos quais
+            <p>I - Os desastres naturais acontecem porque existem muitas pessoas que vivem em locais nos quais
                 podem ocorrer eventos naturais potencialmente catastróficos e quase todas as áreas habitadas do mundo
                 estão sujeitas a esses desastres.</p>
 
-            <p > II - Os danos ambientais são resultados da poluição da atmosfera associada à industrialização,
+            <p> II - Os danos ambientais são resultados da poluição da atmosfera associada à industrialização,
                 principalmente dos países desenvolvidos. Outros países em desenvolvimento tentam acelerar o processo de
                 industrialização, intensificando a degradação ambiental. Esse é um problema mundial, pois afeta
                 diretamente as atividades humanas, em diferentes regiões do mundo e as medidas para conter, ou minimizar
                 estes impactos devem envolver a cooperação internacional.</p>
 
-            <p > III - Os diversos desastres naturais, como terremotos, incêndios, inundações e tempestades,
-                espacialmente distribuídos na superfície terrestre, são diretamente relacionados ao meio físico</p>
+            <p> III - Os diversos desastres naturais, como terremotos, incêndios, inundações e tempestades,
+                espacialmente distribuídos na superfície terrestre, são diretamente relacionados ao meio físico.</p>
 
-            <p class="bordaQuestoes" id="q1a"><input type="radio" required="required"   name="pq1" value="a"> a)
+            <p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a)
                 Somente a afirmativa III é correta.</p>
 
-            <p class="bordaQuestoes" id="q1b"><input type="radio" required="required"   name="pq1" value="b"> b)
+            <p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b)
                 Somente a afirmativa II é correta.</p>
 
-            <p class="bordaQuestoes" id="q1c"><input type="radio" required="required"   name="pq1" value="c"> c)
+            <p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c)
                 Somente a afirmativa I é correta.</p>
 
-            <p class="bordaQuestoes" id="q1d"><input type="radio" required="required"   name="pq1" value="d"> d)
+            <p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d)
                 Todas as afirmativas estão corretas.</p>
 
-            <p class="bordaQuestoes" id="q1e"><input type="radio" required="required"   name="pq1" value="e"> e)
+            <p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e"> e)
                 Todas as afirmativas estão erradas.</p>
 
         </div>
@@ -139,40 +152,42 @@
 
             <p class="p2">Questão 02</p>
 
-            <p > (ENEM 2016) </p>
+            <p> (ENEM 2016) </p>
 
             <div class="w3-center"><img src="p34q2.png" alt="p34q2" class="w3-mobile"></div>
 
-            <p class="citacao">  AROEIRA. Disponível em: http:appsodia.ig.com.br. Acesso em: 19 jun. 2012
-                    (adaptado.)  </p>
+            <p class="w3-small"> AROEIRA. Disponível em: http:appsodia.ig.com.br. Acesso em: 19 jun. 2012
+                (adaptado.) </p>
 
-            <p > O processo ambiental ao qual a charge faz referência tende a se agravar em função do(a) </p>
+            <p> O processo ambiental ao qual a charge faz referência tende a se agravar em função do(a) </p>
 
-            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required"   name="pq2" value="a"> a)
+            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a)
                 expansão gradual das áreas de desertificação.</p>
 
-            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required"   name="pq2" value="b"> b)
+            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b)
                 aumento acelerado do nível médio dos oceanos.</p>
 
-            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required"   name="pq2" value="c"> c)
+            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c)
                 controle eficaz da emissão antrópica de gases poluentes.</p>
 
-            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required"   name="pq2" value="d"> d)
+            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d)
                 crescimento paulatino do uso de fontes energéticas alternativas.</p>
 
-                <p class="bordaQuestoes" id="q2e"><input type="radio" required="required"   name="pq2" value="e"> e)
-                    <span onclick="this.innerHTML='dissenso (discordância, divergência)'"><mark>dissenso</mark></span>  político entre países componentes de acordos climáticos internacionais.</p>
+            <p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
+                <span onclick="this.innerHTML='dissenso (discordância, divergência)'"><mark>dissenso</mark></span>
+                político entre países componentes de acordos climáticos internacionais.
+            </p>
         </div>
 
 
 
         <div class="comentarios">
-            <p>  <strong>Comentário: </strong></p>
+            <p> <strong>Comentário: </strong></p>
 
             <p> Trata-se do aquecimento global, intensificado pela emissão de gases-estufa, cuja redução sofre entraves
                 provocados pela falta de vontade de muitos países em modificar sua postura produtiva, recusando-se a
                 adotar os acordos climáticos criados. </p>
-          
+
 
         </div>
 
@@ -180,31 +195,37 @@
 
             <p class="p2">Questão 03</p>
 
-            <p > (ACAFE 2014) “Podemos definir bioma como um conjunto de ecossistemas que funcionam de forma
-                estável. Um bioma é caracterizado por um tipo principal de vegetação (num mesmo bioma podem existir
-                diversos tipos de vegetação). </p>
+            <p> (ACAFE 2014) </p>
 
-            <p > Os seres vivos de um bioma vivem de forma adaptada às condições da natureza (vegetação, chuva,
-                umidade, calor, etc.) existentes. </p>
+            <div class="w3-panel w3-leftbar w3-sand w3-margin">
+                <p>“Podemos definir bioma como um conjunto de ecossistemas que funcionam de forma
+                    estável. Um bioma é caracterizado por um tipo principal de vegetação (num mesmo bioma podem existir
+                    diversos tipos de vegetação).</p>
 
-            <p > Os biomas brasileiros caracterizam-se, no geral, por uma grande diversidade de animais e
-                vegetais (biodiversidade)”.</p>
+                <p> Os seres vivos de um bioma vivem de forma adaptada às condições da natureza (vegetação, chuva,
+                    umidade, calor, etc.) existentes. </p>
 
-            <p class="citacao">  Fonte: http:www.suapesquisa.com/geografia.htm   </p>
+                <p> Os biomas brasileiros caracterizam-se, no geral, por uma grande diversidade de animais e
+                    vegetais (biodiversidade)”.</p>
 
-            <p > Nesse sentido, assinale a alternativa correta. </p>
+                <p class="w3-small w3-right-align"> Fonte: http:www.suapesquisa.com/geografia.htm </p>
+            </div>
 
-            <p class="bordaQuestoes" id="q3a"><input type="radio" required="required"   name="pq3" value="a"> a)
+
+
+            <p> Nesse sentido, assinale a alternativa correta. </p>
+
+            <p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a)
                 Pelo que se depreende do texto, nos diferentes biomas encontramos ecossistemas diversos, isto é, cada
                 bioma pode conter vários ecossistemas. </p>
 
-            <p class="bordaQuestoes" id="q3b"><input type="radio" required="required"   name="pq3" value="b"> b)
+            <p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
                 Biomas e ecossistemas são sinônimos, com características distintas. </p>
 
-            <p class="bordaQuestoes" id="q3c"><input type="radio" required="required"   name="pq3" value="c"> c)
+            <p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
                 A diversidade biológica é maior nos ecossistemas que nos biomas. </p>
 
-            <p class="bordaQuestoes" id="q3d"><input type="radio" required="required"   name="pq3" value="d"> d)
+            <p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d)
                 Os ecossistemas brasileiros apresentam maior diversidade biológica que os biomas. </p>
 
         </div>
@@ -221,34 +242,41 @@
 
             <p class="p2">Questão 04</p>
 
-            <p > (UEPB 2011) "Todas as atividades humanas, desde o surgimento da humanidade na Terra, implicam no
-                chamado `consumo´ de energia. Isto porque para produzir bens necessários à vida, produzir alimentos,
-                prazer e bem-estar, não há como não consumir energia, ou melhor, não converter energia. Vida humana e
-                conversão de energia são sinônimos e não existe qualquer possibilidade de separar um do outro." </p>
+            <p> (UEPB 2011) </p>
 
-            <p class="citacao">  (WALDMAN, Maurício. Para onde vamos? S.d., p. 10. Disponível em:
-                    http://www.mw.pro.br>)  </p>
 
-            <p > Apesar de toda importância do consumo de energia para a vida moderna, podemos afirmar que sua
+
+            <div class="w3-panel w3-leftbar w3-sand w3-margin">
+                <p>"Todas as atividades humanas, desde o surgimento da humanidade na Terra, implicam no
+                    chamado ´consumo` de energia. Isto porque para produzir bens necessários à vida, produzir alimentos,
+                    prazer e bem-estar, não há como não consumir energia, ou melhor, não converter energia. Vida humana
+                    e
+                    conversão de energia são sinônimos e não existe qualquer possibilidade de separar um do outro."</p>
+
+                <p class="w3-small w3-right-align"> (WALDMAN, Maurício. Para onde vamos? S.d., p. 10. Disponível em:
+                    http://www.mw.pro.br>) </p>
+            </div>
+
+            <p> Apesar de toda importância do consumo de energia para a vida moderna, podemos afirmar que sua
                 forma de utilização no mundo contemporâneo continua a ser insustentável porque: </p>
 
-            <p class="bordaQuestoes" id="q4a"><input type="radio" required="required"   name="pq4" value="a"> a)
+            <p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a)
                 o consumo de energia é desigual entre ricos e pobres, sendo que os pobres continuam a utilizar fontes
                 arcaicas que são muito mais danosas ao meio. </p>
 
-            <p class="bordaQuestoes" id="q4b"><input type="radio" required="required"   name="pq4" value="b"> b)
+            <p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b)
                 as chamadas fontes alternativas que são não-poluentes são de custos elevadíssimos e só podem ser
                 produzidas em pequena escala para consumo muito reduzido. </p>
 
-            <p class="bordaQuestoes" id="q4c"><input type="radio" required="required"   name="pq4" value="c"> c)
+            <p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c)
                 a energia hidroelétrica que assumiu a liderança no consumo mundial necessita da construção de grandes
                 represas que causam grandes impactos ambientais. </p>
 
-            <p class="bordaQuestoes" id="q4d"><input type="radio" required="required"   name="pq4" value="d"> d)
+            <p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d)
                 as principais matrizes energéticas do mundo continuam a ser o petróleo e o carvão, que são fontes
                 não-renováveis e muito poluentes. </p>
 
-            <p class="bordaQuestoes" id="q4e"><input type="radio" required="required"   name="pq4" value="e"> e) a
+            <p class="bordaQuestoes" id="q4e"><input type="radio" required="required" name="pq4" value="e"> e) a
                 energia nuclear, que é a solução mais viável para a questão energética do mundo, depende do
                 enriquecimento do urânio, cuja tecnologia é controlada por poucos países e inacessível para a grande
                 maioria. </p>
@@ -258,7 +286,7 @@
 
 
         <div class="comentarios">
-            <p>  <strong>Comentário: </strong></p>
+            <p> <strong>Comentário: </strong></p>
 
             <p> Matriz energética um conjunto de fontes de energia ofertado no país para captar, distribuir e utilizar
                 energia nos setores comerciais, industriais e residenciais. A matriz representa a quantidade de energia
@@ -270,38 +298,38 @@
 
             <p class="p2">Questão 05</p>
 
-            <p > (UNIFOR CE 2010) Os principais relatórios do Programa das Nações Unidas para o Meio Ambiente
+            <p> (UNIFOR CE 2010) Os principais relatórios do Programa das Nações Unidas para o Meio Ambiente
                 abordam os problemas centrais que afligem a humanidade; dentre eles, destacamos: a concentração de gás
                 carbônico na atmosfera; a crescente escassez de água potável; a degradação dos solos por erosão; a
                 poluição dos rios, lagos, zonas costeiras e baías; os desmatamentos constantes; e o crescimento da
                 população e suas mudanças de padrão do consumo, que geram mais resíduos poluentes, principalmente nas
                 áreas urbanas. </p>
 
-            <p > Já os principais agentes poluentes são: a camada de ozônio, produzida pela acumulação de gases
+            <p> Já os principais agentes poluentes são: a camada de ozônio, produzida pela acumulação de gases
                 na atmosfera, e os resíduos nucleares que atingem negativamente a natureza e o ambiente humano. O maior
                 problema detectado é a elevação da temperatura global. </p>
 
-            <p > Com relação a essas questões ambientais, a nova ordem internacional tem exigido das nações
+            <p> Com relação a essas questões ambientais, a nova ordem internacional tem exigido das nações
                 mudanças em seus modelos de produção, evoluindo para o conceito de desenvolvimento sustentável. </p>
 
-            <p > A respeito deste assunto, é CORRETO afirmar: </p>
+            <p> A respeito deste assunto, é CORRETO afirmar: </p>
 
-            <p class="bordaQuestoes" id="q5a"><input type="radio" required="required"   name="pq5" value="a"> a)
+            <p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
                 A necessidade de crescimento econômico, quer da indústria ou da agropecuária não pode prescindir da
                 preocupação de sua sustentabilidade. </p>
 
-            <p class="bordaQuestoes" id="q5b"><input type="radio" required="required"   name="pq5" value="b"> b)
+            <p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b)
                 Desses problemas todos, o único agente poluente a preocupar é o que produz resíduos nucleares. </p>
 
-            <p class="bordaQuestoes" id="q5c"><input type="radio" required="required"   name="pq5" value="c"> c)
+            <p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
                 Por serem problemas que afetam a todos, a preocupação ambiental é amplamente respeitada pelas nações
                 mais desenvolvidas. </p>
 
-            <p class="bordaQuestoes" id="q5d"><input type="radio" required="required"   name="pq5" value="d"> d)
+            <p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
                 A preocupação do controle ambiental sempre esteve presente entre as nações, desde a Revolução Industrial
                 do século XVIII. </p>
 
-            <p class="bordaQuestoes" id="q5e"><input type="radio" required="required"   name="pq5" value="e"> e)
+            <p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e)
                 As mudanças de padrão de consumo, principalmente dos países industrializados têm contribuído para
                 reduzir os riscos ambientais. </p>
         </div>
@@ -320,23 +348,23 @@
 
             <p class="p2">Questão 06</p>
 
-            <p > (UFG 2009) A questão ambiental, uma das principais pautas do espaço contemporâneo mundial,
+            <p> (UFG 2009) A questão ambiental, uma das principais pautas do espaço contemporâneo mundial,
                 possibilitou o surgimento de várias vertentes e concepções políticas. É característica do
                 Preservacionismo: </p>
 
-            <p class="bordaQuestoes" id="q6a"><input type="radio" required="required"   name="pq6" value="a"> a)
+            <p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a)
                 estabelecer códigos normativos e práticas de proteção aos recursos naturais. </p>
 
-            <p class="bordaQuestoes" id="q6b"><input type="radio" required="required"   name="pq6" value="b"> b)
+            <p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b)
                 associar o uso dos recursos naturais ao progresso industrial. </p>
 
-            <p class="bordaQuestoes" id="q6c"><input type="radio" required="required"   name="pq6" value="c"> c)
+            <p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c)
                 desenvolver medidas em comum acordo com populações envolvidas. </p>
 
-            <p class="bordaQuestoes" id="q6d"><input type="radio" required="required"   name="pq6" value="d"> d)
+            <p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d"> d)
                 desenvolver técnicas de contenção de problemas ambientais urbanos e rurais. </p>
 
-            <p class="bordaQuestoes" id="q6e"><input type="radio" required="required"   name="pq6" value="e"> e)
+            <p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e"> e)
                 definir áreas prioritárias para o uso sustentável da biodiversidade. </p>
 
 
@@ -356,32 +384,35 @@
 
             <p class="p2">Questão 07</p>
 
-            <p > (UNIMONTES-MG 2009) Leia o texto. </p>
+            <p> (UNIMONTES-MG 2009) Leia o texto. </p>
 
-            <p >O estudo das características mais significativas dos seres vivos e de sua distribuição pela
-                superfície terrestre é objeto de diferentes disciplinas, entre elas a Geografia, que desenvolve esse
-                estudo por um ramo específico, a Biogeografia. </p>
+            <div class="w3-panel w3-leftbar w3-sand w3-margin">
+                <p>“O estudo das características mais significativas dos seres vivos e de sua distribuição pela
+                    superfície terrestre é objeto de diferentes disciplinas, entre elas a Geografia, que desenvolve esse
+                    estudo por um ramo específico, a Biogeografia.”</p>
+
+                <p class="w3-small"> ALMEIDA, M. Geografia Global - Geral e do Brasil. São Paulo: Escala Educacional,
+                    2008. </p>
+            </div>
 
 
-            <p class="citacao">  ALMEIDA, M. Geografia Global - Geral e do Brasil. São Paulo: Escala Educacional,
-                    2008.   </p>
 
-            <p >Esse ramo da Geografia estuda, entre outros temas, a distribuição da vegetação que é influenciada
+            <p>Esse ramo da Geografia estuda, entre outros temas, a distribuição da vegetação que é influenciada
                 pelos seguintes fatores, EXCETO </p>
 
-            <p class="bordaQuestoes" id="q7a"><input type="radio" required="required"   name="pq7" value="a"> a) O
+            <p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a) O
                 clima, através da temperatura, da umidade, da luminosidade e dos ventos, faz com que a vegetação se
                 desenvolva de acordo com o fornecimento desses elementos. </p>
 
-            <p class="bordaQuestoes" id="q7b"><input type="radio" required="required"   name="pq7" value="b"> b)
+            <p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b)
                 O solo serve como sustentação física da planta e fonte de nutrição, por isso, quanto mais fértil o solo,
                 mais nutrida será a vegetação. </p>
 
-            <p class="bordaQuestoes" id="q7c"><input type="radio" required="required"   name="pq7" value="c"> c)
+            <p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c)
                 O tipo de rocha de uma área determinará as características da vegetação, uma vez que os nutrientes da
                 rocha alimentam os vegetais. </p>
 
-            <p class="bordaQuestoes" id="q7d"><input type="radio" required="required"   name="pq7" value="d"> d)
+            <p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d"> d)
                 O relevo interfere indiretamente no desenvolvimento da vegetação, pois altera as condições edáficas e
                 climáticas. </p>
 
@@ -401,22 +432,22 @@
 
             <p class="p2">Questão 08</p>
 
-            <p > (UECE 2008) Nas regiões de altas latitudes e próximas ao Círculo Polar Ártico, os horizontes
+            <p> (UECE 2008) Nas regiões de altas latitudes e próximas ao Círculo Polar Ártico, os horizontes
                 superficiais do solo permanecem gelados. É comum, durante poucos meses do ano, a ocorrência de um tipo
                 de vegetação de pequeno porte e que é constituído, basicamente, por musgos e liquens. </p>
 
-            <p > Assinale a alternativa que contém essa vegetação. </p>
+            <p> Assinale a alternativa que contém essa vegetação. </p>
 
-            <p class="bordaQuestoes" id="q8a"><input type="radio" required="required"   name="pq8" value="a"> a)
+            <p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a"> a)
                 Estepe. </p>
 
-            <p class="bordaQuestoes" id="q8b"><input type="radio" required="required"   name="pq8" value="b"> b)
+            <p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b"> b)
                 Araucárias. </p>
 
-            <p class="bordaQuestoes" id="q8c"><input type="radio" required="required"   name="pq8" value="c"> c)
+            <p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c"> c)
                 Tundra. </p>
 
-            <p class="bordaQuestoes" id="q8d"><input type="radio" required="required"   name="pq8" value="d"> d)
+            <p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d"> d)
                 Campos cerrados.</p>
 
         </div>
@@ -435,41 +466,47 @@
 
             <p class="p2">Questão 09</p>
 
-            <p > (UEL 2007) Há uma área de pesquisa ligada à ecologia que analisa "essencialmente como as
-                espécies reagem aos diferentes tipos de solo, climas e formas de relevo. </p>
+            <p> (UEL 2007) </p>
 
-            <p > Tais estudos geraram um grande volume de conhecimentos sobre o papel limitante desempenhado
-                pelos fatores abióticos na distribuição: sobre a natureza, sobre a estrutura das comunidades e sobre a
-                capacidade fisiológica dos seres vivos de suportar as condições de determinados ambientes. </p>
+            <div class="w3-panel w3-leftbar w3-sand w3-margin">
+                <p>“Há uma área de pesquisa ligada à ecologia que analisa essencialmente como as
+                    espécies reagem aos diferentes tipos de solo, climas e formas de relevo. Tais estudos geraram um
+                    grande volume de conhecimentos sobre o papel limitante desempenhado pelos fatores abióticos na
+                    distribuição: sobre a natureza, sobre a estrutura das comunidades e sobre a
+                    capacidade fisiológica dos seres vivos de suportar as condições de determinados ambientes.
 
-            <p >Esse conhecimento tem sido muito útil na agricultura, na biologia da conservação, no planejamento
-                ambiental, entre outros." </p>
+                    Esse conhecimento tem sido muito útil na agricultura, na biologia da conservação, no planejamento
+                    ambiental, entre outros." </p>
 
-            <p class="citacao">  Fonte: FURLAN, S. A. In: VENTURI, L. A. B. (org.), Praticando Geografia, técnicas de
-                    campo e laboratório. São Paulo: Oficina de Textos, 2005, p. 99.   </p>
+                <p class="w3-small"> Fonte: FURLAN, S. A. In: VENTURI, L. A. B. (org.), Praticando Geografia, técnicas
+                    de
+                    campo e laboratório. São Paulo: Oficina de Textos, 2005, p. 99. </p>
+            </div>
 
-            <p > Assinale a alternativa correta que corresponde à área de pesquisa mencionada no texto: </p>
 
-            <p class="bordaQuestoes" id="q9a"><input type="radio" required="required"   name="pq9" value="a"> a)
+
+            <p> Assinale a alternativa correta que corresponde à área de pesquisa mencionada no texto: </p>
+
+            <p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a"> a)
                 Biogeografia. </p>
 
-            <p class="bordaQuestoes" id="q9b"><input type="radio" required="required"   name="pq9" value="b"> b)
+            <p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b"> b)
                 Geomorfologia. </p>
 
-            <p class="bordaQuestoes" id="q9c"><input type="radio" required="required"   name="pq9" value="c"> c)
+            <p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c)
                 Ecologia. </p>
 
-            <p class="bordaQuestoes" id="q9d"><input type="radio" required="required"   name="pq9" value="d"> d)
+            <p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d"> d)
                 Fitogeografia. </p>
 
-            <p class="bordaQuestoes" id="q9e"><input type="radio" required="required"   name="pq9" value="e"> e)
+            <p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e"> e)
                 Zoogeografia. </p>
         </div>
 
 
 
         <div class="comentarios">
-            <p>  <strong>Comentário: </strong></p>
+            <p> <strong>Comentário: </strong></p>
 
             <p> É uma ciência que estuda o padrão de distribuição de organismos na Terra, bem como as variações nesse
                 padrão que ocorreram no passado e ainda ocorrem no presente </p>
@@ -481,27 +518,27 @@
 
             <p class="p2">Questão 10</p>
 
-            <p > (UFPB 2006) No que se refere às grandes paisagens naturais e suas modificações, é correto
+            <p> (UFPB 2006) No que se refere às grandes paisagens naturais e suas modificações, é correto
                 afirmar: </p>
 
 
-            <p class="bordaQuestoes" id="q10a"><input type="radio" required="required"   name="pq10" value="a">
+            <p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a">
                 a) Os desertos correspondem às áreas que sofreram modificações resultantes da exploração irracional do
                 petróleo. </p>
 
-            <p class="bordaQuestoes" id="q10b"><input type="radio" required="required"   name="pq10" value="b">
+            <p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b">
                 b) As pradarias e as estepes apresentam modificações drásticas, na sua biodiversidade, devido à
                 introdução de espécies arbóreas típicas da savana. </p>
 
-            <p class="bordaQuestoes" id="q10c"><input type="radio" required="required"   name="pq10" value="c">
+            <p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c">
                 c) A tundra é uma vegetação rasteira bastante alterada pela expansão agrícola nas áreas circumpolares.
             </p>
 
-            <p class="bordaQuestoes" id="q10d"><input type="radio" required="required"   name="pq10" value="d">
+            <p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
                 d) A savana corresponde a um bioma característico de áreas temperadas e subtropicais, com impactos
                 ambientais resultantes da introdução dos transgênicos. </p>
 
-            <p class="bordaQuestoes" id="q10e"><input type="radio" required="required"   name="pq10" value="e">
+            <p class="bordaQuestoes" id="q10e"><input type="radio" required="required" name="pq10" value="e">
                 e) As florestas equatoriais e tropicais, as mais ricas em biodiversidade, sofrem grandes impactos
                 ambientais decorrentes da ação das madeireiras. </p>
         </div>
@@ -530,12 +567,16 @@
             height="200">
     </div>
 
-    <p id="aviso"></p>
 
 
 
-    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
+    <div id="aviso" class="w3-panel w3-yellow">
+
+    </div>
+
+
+    <div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
     <script>
 
 
@@ -690,7 +731,7 @@
 
             var incorrretas = 10 - corretas;
             var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
-        	var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+            var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
             var pontos;
 
             if (corretas < 5) {

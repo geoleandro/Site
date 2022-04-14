@@ -11,18 +11,9 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -31,16 +22,16 @@
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+		<div class="w3-container">
 
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
 
 	</div>
 
@@ -59,6 +50,21 @@
 
 
 
+
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
+
+
+
+
 	<form id="quiz" name="quiz" onsubmit="verificar()">
 
 
@@ -66,7 +72,7 @@
 
 			<p class="p2">Questão 01</p>
 
-			<p> (Unicamp 2019) O termo smog se forma pela junção das palavras smoke (fumo) e fog (neblina). Ele designa
+			<p> (UNICAMP 2019) O termo smog se forma pela junção das palavras smoke (fumo) e fog (neblina). Ele designa
 				o resultado da mistura de um processo natural (a neblina) com os fumos produzidos pela atividade
 				industrial e queima de combustíveis fósseis, originando um tipo de nevoeiro que pode ser altamente
 				tóxico.</p>
@@ -104,7 +110,8 @@
 				nos gases liberados pelos automóveis, cuja composição contém dióxido de nitrogênio e hidrocarbonetos não
 				queimados.</p>
 
-			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1"  name="pq1" value="d"> d) smog
+			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" id="pq1" name="pq1" value="d"> d)
+				smog
 				industrial, que acompanha a inversão térmica, é comum nos dias mais frios e úmidos, e tem sua origem nos
 				gases liberados pela atividade industrial, cuja composição contém dióxido de enxofre e material
 				particulado.
@@ -150,8 +157,14 @@
 
 			<p> (UPE 2017) Considere a afirmação a seguir:</p>
 
-			<p> As cidades são as áreas onde o homem mais percebe a mudança no clima decorrente da interferência
-				provocada pela estrutura urbana nas trocas de energia entre a superfície e a atmosfera.</p>
+			<div class="w3-panel w3-leftbar w3-sand w3-margin">
+				<p>“As cidades são as áreas onde o homem mais percebe a mudança no clima decorrente da interferência
+					provocada pela estrutura urbana nas trocas de energia entre a superfície e a atmosfera. ”</p>
+
+			
+			</div>
+
+		
 
 			<p> Com relação ao assunto abordado, assinale a alternativa CORRETA.</p>
 
@@ -178,7 +191,7 @@
 
 
 
-			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required"  name="pq2" value="e"> e)
+			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e)
 				A afirmação é verdadeira, mas só se aplica para ambientes urbanos que se situam muito próximos de massas
 				oceânicas.</p>
 
@@ -551,41 +564,64 @@
 				acompanhados por cientistas. Considerando os fenômenos climáticos, listados na Coluna A, associe-os às
 				características que os identificam, elencadas na Coluna B. </p>
 
-			<p> COLUNA A </p>
+				<div class="w3-padding ">
+					<table class="w3-table-all">
+						<thead>
+							<tr class="w3-light-grey">
+								<th class="w3-center">COLUNA A</th> 
+								<th class="w3-center">COLUNA B</th>
+								
+								<!-- INSERIR COLUNAS -->
+							
+							</tr>
+						</thead>
+						<tr>
+							<td>1-Inversão Térmica</td>
+							<td>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Desequilíbrio da composição atmosférica com elevação de dióxido de carbono, causada pela queima de
+								combustíveis fósseis, florestas e outros.</td>
+							
+							
+						</tr>
+						<tr>
+							<td>2-Ilhas de Calor</td>
+							<td> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Fenômeno natural, frequente nos meses de inverno, geralmente ocorre no final da madrugada e no início
+								da
+								manhã.</td>
+							
+						
+						</tr>
+						<tr>
+							<td>3-Efeito Estufa</td>
+							<td>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Fenômeno antrópico, típico de aglomerações urbanas, com elevação das temperaturas médias, se
+								comparadas
+								às das zonas rurais.</td>
+							
+							
+							
+						</tr>
+						
+	
+					</table>
+				</div>
 
-			<p> 1- Inversão Térmica</p>
-			<p> 2- Ilhas de Calor</p>
-			<p> 3- Efeito Estufa</p>
-
-			<p> COLUNA B</p>
-
-			<p> () Desequilíbrio da composição atmosférica com elevação de dióxido de carbono, causada pela queima de
-				combustíveis fósseis, florestas e outros.</p>
-
-			<p> () Fenômeno natural, frequente nos meses de inverno, geralmente ocorre no final da madrugada e no início
-				da
-				manhã.</p>
-
-			<p> () Fenômeno antrópico, típico de aglomerações urbanas, com elevação das temperaturas médias, se
-				comparadas
-				às das zonas rurais.</p>
+			
 
 			<p> Assinale a alternativa que preenche corretamente os parênteses, de cima para baixo. </p>
 
 			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" id="pq10" name="pq10" value="a">
-				a) 3 - 1 - 2 </p>
+				a) 3 - 1 - 2. </p>
 
 			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b">
-				b) 1 - 2 - 3 </p>
+				b) 1 - 2 - 3. </p>
 
 			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c">
-				c) 2 - 1 - 3 </p>
+				c) 2 - 1 - 3. </p>
 
 			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
-				d) 3 - 2 - 1 </p>
+				d) 3 - 2 - 1. </p>
 
 			<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" name="pq10" value="e">
-				e) 1 - 3 - 2 </p>
+				e) 1 - 3 - 2. </p>
 		</div>
 
 
@@ -611,11 +647,13 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
+
+	<div id="aviso" class="w3-panel w3-yellow">
+
+	</div>
 
 
-
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 	<script>
@@ -809,7 +847,16 @@
 	</script>
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

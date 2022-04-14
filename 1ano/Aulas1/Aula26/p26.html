@@ -11,18 +11,9 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -30,16 +21,16 @@
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+		<div class="w3-container">
 
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
 
 	</div>
 
@@ -60,13 +51,26 @@
 
 
 
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
+
+
+
 	<form id="quiz" name="quiz" onsubmit="verificar()">
 
 		<div class="w3-card-4">
 
 			<p class="p2">Questão 01</p>
 
-			<p>No esquema de um curso de água, abaixo, indique a nascente, a foz e os cursos superior, médio e inferior,
+			<p>(2022) No esquema de um curso de água, abaixo, indique a nascente, a foz e os cursos superior, médio e inferior,
 				associando aos respectivos trechos assinalados com A, B e C. </p>
 
 
@@ -194,7 +198,7 @@
 
 			<p class="p2">Questão 04</p>
 
-			<p> (Unicamp 2011) Em 1902 os paulistas organizam o primeiro campeonato de futebol no Brasil. No
+			<p> (UNICAMP 2011) Em 1902 os paulistas organizam o primeiro campeonato de futebol no Brasil. No
 				mesmo ano, surgem os primeiros campos de várzea, que logo se espalham pelos bairros operários, e já em
 				1908/1910, a várzea paulistana congregava vários e concorridos campeonatos, de forma que São Paulo não é
 				apenas pioneira nacional no futebol “oficial”, mas também, e sobretudo, no “futebol popular”. <br>A
@@ -203,7 +207,7 @@
 
 			<div class="w3-center"><img src="p26q4.png" alt="p26q4" class="w3-mobile"></div>
 
-			<p class="citacao"> (Adaptado de G.M. Jesus, “Várzeas, operários e futebol: uma outra Geografia”.
+			<p class="w3-small"> (Adaptado de G.M. Jesus, “Várzeas, operários e futebol: uma outra Geografia”.
 				Geographia. Rio de Janeiro, v. 4, n. 8, p. 84-92, 2002.) </p>
 
 			<p> Várzea é uma forma geomorfológica associada às margens de rios caracterizadas pela topografia
@@ -233,6 +237,8 @@
 		
 					<p> Colocar os comentários aqui. </p> -->
 			</div>
+
+		</div>
 
 
 
@@ -467,7 +473,7 @@
 
 				<p class="p2">Questão 10</p>
 
-				<p> (Unesp 2003) Um rio escava seu leito e aprofunda seu vale ao longo do tempo. </p>
+				<p> (UNESP 2003) Um rio escava seu leito e aprofunda seu vale ao longo do tempo. </p>
 
 				<div class="w3-center"><img src="p26q10.png" alt="p26q10" class="w3-mobile"></div>
 
@@ -523,12 +529,15 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
 
 
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<div id="aviso" class="w3-panel w3-yellow">
 
+	</div>
+
+
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 	<script>
 
@@ -725,7 +734,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

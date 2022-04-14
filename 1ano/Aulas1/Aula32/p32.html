@@ -11,35 +11,26 @@
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
 
-	</script>
 
-	
 
 
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
+
 
 	<!-- Navigation (Stays on Top) -->
-	<div class="w3-top w3-bar w3-black larguraBar">
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+		<div class="w3-container">
 
-		<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
-
-
-
+			<a href="../../../Duvid1Ano.html" class=" w3-button">1º ano</a>
+		</div>
 
 	</div>
 
@@ -60,6 +51,20 @@
 
 
 
+
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
+
+
+
+
 	<form id="quiz" name="quiz" onsubmit="verificar()">
 
 
@@ -67,17 +72,26 @@
 
 			<p class="p2">Questão 01</p>
 
-			<p> (ENEM 2020) A produtividade ecológica articula-se com uma produtividade tecnológica, porque não se deve
-				renunciar a todas as possibilidades da ciência e da técnica, e sim reencaminhar muitas delas para a
-				construção desse novo paradigma produtivo. Essa construção social, porém, não pode ser guiada por um
-				planejamento centralizado da tecnologia normatizada pela ecologia. A alma dessa nova economia humana são
-				os valores culturais. Cada cultura dá significado a seus conhecimentos, a sua natureza, recriando-a e
-				abrindo o fluxo de possibilidades de coevolução, articulando o pensamento humano com o potencial da
-				natureza. </p>
+			<p> (ENEM 2020)  </p>
+
+
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+					<p>“A produtividade ecológica articula-se com uma produtividade tecnológica, porque não se deve
+						renunciar a todas as possibilidades da ciência e da técnica, e sim reencaminhar muitas delas para a
+						construção desse novo paradigma produtivo. Essa construção social, porém, não pode ser guiada por um
+						planejamento centralizado da tecnologia normatizada pela ecologia. A alma dessa nova economia humana são
+						os valores culturais. Cada cultura dá significado a seus conhecimentos, a sua natureza, recriando-a e
+						abrindo o fluxo de possibilidades de coevolução, articulando o pensamento humano com o potencial da
+						natureza. ”</p>
+	
+						<p class="w3-small w3-right-align"> LEFF, E. Discursos sustentáveis. São Paulo: Cortez, 2010 (adaptado). </p>
+				</div>
+	
 
 
 
-			<p class="citacao"> LEFF, E. Discursos sustentáveis. São Paulo: Cortez, 2010 (adaptado). </p>
+		
 
 
 			<p>O paradigma produtivo apresentado no texto tem como base a harmonização entre tecnologia e ecologia e
@@ -139,7 +153,7 @@
 
 			<div class="w3-center"><img src="p32q2.png" alt="p32q2" class="w3-mobile"></div>
 
-			<p class="citacao"> http://www.revistapesquisafapesp.br, maio de 2016. </p>
+			<p class="w3-small w3-right-align"> http://www.revistapesquisafapesp.br, maio de 2016. </p>
 
 
 			<p> Os depósitos flutuantes representados na figura apresentam-se.</p>
@@ -238,14 +252,21 @@
 
 			<p class="p2">Questão 04</p>
 
-			<p> (ENEM 2015) A questão ambiental, uma das principais pautas contemporâneas, possibilitou o
-				surgimento de concepções políticas diversas, dentre as quais se destaca a preservação ambiental, que
-				sugere uma ideia de intocabilidade da natureza e impede o seu aproveitamento econômico sob qualquer
-				justificativa. </p>
+			<p> (ENEM 2015)  </p>
+
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+					<p>“A questão ambiental, uma das principais pautas contemporâneas, possibilitou o
+						surgimento de concepções políticas diversas, dentre as quais se destaca a preservação ambiental, que
+						sugere uma ideia de intocabilidade da natureza e impede o seu aproveitamento econômico sob qualquer
+						justificativa.”</p>
+	
+						<p class="w3-small"> PORTO-GONÇALVES, C. W. A globalização da natureza e a natureza da globalização. Rio
+							de Janeiro: Civilização Brasileira, 2006 (adaptado). </p>
+				</div>
+	
 
 
-			<p class="citacao"> PORTO-GONÇALVES, C. W. A globalização da natureza e a natureza da globalização. Rio
-				de Janeiro: Civilização Brasileira, 2006 (adaptado). </p>
+		
 
 			<p> Considerando as atuais concepções políticas sobre a questão ambiental, a dinâmica caracterizada
 				no texto quanto à proteção do meio ambiente está baseada na: </p>
@@ -319,16 +340,16 @@
 			<p> Analise a veracidade (V) ou a falsidade (F) das afirmações a seguir, relacionadas ao efeito
 				estufa. </p>
 
-			<p> () O efeito estufa é um processo natural que, se não existisse, tornaria a Terra um planeta
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) O efeito estufa é um processo natural que, se não existisse, tornaria a Terra um planeta
 				gelado e inabitável para a maioria dos seres vivos. </p>
 
-			<p> () O aumento da emissão de gases, como o gás carbônico e o metano, pode gerar um aumento na
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) O aumento da emissão de gases, como o gás carbônico e o metano, pode gerar um aumento na
 				retenção de calor na atmosfera, aquecendo nosso planeta. </p>
 
-			<p> () uma fonte emissora de metano é o rebanho de gado bovino, pois tais animais eliminam grandes
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) uma fonte emissora de metano é o rebanho de gado bovino, pois tais animais eliminam grandes
 				quantidades desse gás, proveniente do metabolismo dos seus tratos digestórios. </p>
 
-			<p> () A quantidade de gás carbônico na atmosfera vem aumentando desde a Revolução Industrial. </p>
+			<p> (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) A quantidade de gás carbônico na atmosfera vem aumentando desde a Revolução Industrial. </p>
 
 			<p> Assinale a alternativa que preenche corretamente os parênteses, de cima para baixo. </p>
 
@@ -365,14 +386,22 @@
 
 			<p class="p2">Questão 06</p>
 
-			<p> (ENEM 2011) Como os combustíveis energéticos, as tecnologias da informação são, hoje em dia,
-				indispensáveis em todos os setores econômicos. Através delas, um maior número de produtores é capaz de
-				inovar e a obsolescência de bens e serviços se acelera. Longe de estender a vida útil dos equipamentos e
-				a sua capacidade de reparação, o ciclo de vida desses produtos diminui, resultando em maior necessidade
-				de matéria-prima para a fabricação de novos.</p>
+			<p> (ENEM 2011) </p>
 
-			<p class="citacao"> GROSSARD, C. Le Monde Diplomatique Brasil. Ano 3, nº 36, 2010 (adaptado)
-			</p>
+			
+
+
+			<div class="w3-panel w3-leftbar w3-sand w3-margin">
+				<p>“Como os combustíveis energéticos, as tecnologias da informação são, hoje em dia,
+					indispensáveis em todos os setores econômicos. Através delas, um maior número de produtores é capaz de
+					inovar e a obsolescência de bens e serviços se acelera. Longe de estender a vida útil dos equipamentos e
+					a sua capacidade de reparação, o ciclo de vida desses produtos diminui, resultando em maior necessidade
+					de matéria-prima para a fabricação de novos.”</p>
+
+					<p class="w3-small w3-right-align"> GROSSARD, C. Le Monde Diplomatique Brasil. Ano 3, nº 36, 2010 (adaptado)
+					</p>
+			</div>
+
 
 			<p> A postura consumista de nossa sociedade indica a crescente produção de lixo, principalmente nas
 				áreas urbanas, o que, associado a modos incorretos de deposição, </p>
@@ -420,14 +449,21 @@
 
 			<p class="p2">Questão 07</p>
 
-			<p> (ENEM 2010) A poluição e outras ofensas ambientais ainda não tinham esse nome, mas já eram
-				largamente notadas no século XIX, nas grandes cidades inglesas e continentais. E a própria chegada ao
-				campo das estradas de ferro suscitou protestos. A reação antimaquinista, protagonizada pelos diversos
-				luddismos, antecipa a batalha atual dos ambientalistas. Esse era, então, o combate social contra os
-				miasmas urbanos. </p>
+			<p> (ENEM 2010)</p>
 
-			<p class="citacao"> SANTOS M. A natureza do espaço: técnica e tempo, razão e emoção. São Paulo: EDUSP,
-				2002 (adaptado). </p>
+		
+
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+					<p>“ A poluição e outras ofensas ambientais ainda não tinham esse nome, mas já eram
+						largamente notadas no século XIX, nas grandes cidades inglesas e continentais. E a própria chegada ao
+						campo das estradas de ferro suscitou protestos. A reação antimaquinista, protagonizada pelos diversos
+						luddismos, antecipa a batalha atual dos ambientalistas. Esse era, então, o combate social contra os
+						miasmas urbanos. ”</p>
+	
+					<p class="w3-small "> SANTOS M. A natureza do espaço: técnica e tempo, razão e emoção. São Paulo: EDUSP,
+						2002 (adaptado). </p>
+				</div>
+	
 
 			<p> O crescente desenvolvimento técnico-produtivo impõe modificações na paisagem e nos objetos
 				culturais vivenciados pelas sociedades. De acordo com o texto, pode-se dizer que tais movimentos sociais
@@ -629,11 +665,15 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
 
 
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	<div id="aviso" class="w3-panel w3-yellow">
+
+	</div>
+
+
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 	<script>
@@ -829,7 +869,16 @@
 
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 
