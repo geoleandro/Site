@@ -11,36 +11,28 @@
     <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/javascript.js"></script>
+    <script src="../../../estilos/javascript.js" defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-DPX55DSFZ0');
 
-    </script>
 
-    
 
 
 
 
 </head>
 
-<body onload="mudaQuest()">
+
+<body>
 
 
-    <div class="w3-top w3-bar w3-black larguraBar">
+    <!-- Navigation (Stays on Top) -->
+    <div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+        <div class="w3-container">
 
-        <div class="w3-container w3-large"><a href="../../../Duvid2Ano.html" class=" w3-button">2º ano</a></div>
-
-
-
+            <a href="../../../Duvid2Ano.html" class=" w3-button">2º ano</a>
+        </div>
 
     </div>
 
@@ -53,7 +45,7 @@
 
         <p><strong>Conteúdo:</strong></p>
 
-		<ul class="w3-padding-32">
+        <ul class="w3-padding-top">
             <li> Capitalismo Comercial; Grandes Navegações; Divisão internacional do trabalho; Tratado de Tordesilhas;
                 Tratado de Madri; Arquipélago econômico; Pau-Brasil; Cana-de-açúcar; Latifúndio; Plantation; Centros
                 urbanos; Pecuária; Metais preciosos; Ocupação da Amazônia; Borracha; Café; Fronteiras. </li>
@@ -67,6 +59,20 @@
         </ul>
 
     </div>
+
+
+
+    <div class="w3-padding-top-24">
+        <div class="w3-white larguraBar w3-padding flex-container">
+
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                    id="decrease-font" title="Diminuir fonte">A -</button></div>
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                    id="increase-font" title="Aumentar fonte">A +</button></div>
+        </div>
+    </div>
+
+
 
     <form id="quiz" name="quiz" onsubmit="verificar()">
 
@@ -111,36 +117,37 @@
 
             <p class="p2">Questão 02</p>
 
-            <p> (UNESP 2022) Na formação do território brasileiro, nos séculos XVII e XVIII, as atividades econômicas da pecuária e da mineração foram responsáveis pela </p>
+            <p> (UNESP 2022) Na formação do território brasileiro, nos séculos XVII e XVIII, as atividades econômicas da
+                pecuária e da mineração foram responsáveis pela </p>
 
-            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> 
-                
-                a) construção de feitorias no litoral. 
-            
+            <p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a">
+
+                a) construção de feitorias no litoral.
+
             </p>
 
-            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> 
-                
-                b) conquista dos sertões. 
-            
+            <p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b">
+
+                b) conquista dos sertões.
+
             </p>
 
-            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> 
-                
-                c) grilagem de terras. 
-            
+            <p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c">
+
+                c) grilagem de terras.
+
             </p>
 
-            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> 
-                
-                d) elaboração de políticas aduaneiras. 
-            
+            <p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d">
+
+                d) elaboração de políticas aduaneiras.
+
             </p>
 
-            <p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> 
-                
+            <p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e">
+
                 e) realocação espacial das agroindústrias.
-            
+
             </p>
 
         </div>
@@ -150,7 +157,10 @@
         <div class="comentarios">
             <p> <strong>Comentário:</strong></p>
 
-			<p> A pecuária e a mineração foram determinantes para a expansão das atividades econômicas em direção ao interior do país (sertões), considerando que no primeiro século de colonização a ocupação territorial concentrou-se na faixa litorânea, especialmente nas atuais regiões Nordeste e Sudeste, atrelada à exploração do pau-brasil e ao desenvolvimento da economia canavieira.
+            <p> A pecuária e a mineração foram determinantes para a expansão das atividades econômicas em direção ao
+                interior do país (sertões), considerando que no primeiro século de colonização a ocupação territorial
+                concentrou-se na faixa litorânea, especialmente nas atuais regiões Nordeste e Sudeste, atrelada à
+                exploração do pau-brasil e ao desenvolvimento da economia canavieira.
 
             </p>
         </div>
@@ -163,17 +173,21 @@
 
             <p> (CESGRANRIO 2020) Considere o texto sobre a regionalização brasileira.</p>
 
-            <div class="w3-panel w3-leftbar w3-sand w3-margin"> 
-                
-                <p class="w3-sand">  “Poderíamos, grosseiramente, reconhecer a existência de quatro Brasis, ou seja, regiões
-                específicas dentro do País. Num desses Brasis, verifica-se a implantação mais consolidada dos dados da
-                ciência, da técnica e da informação, além de uma urbanização importante, com um padrão de consumo das
-                empresas e das famílias mais intenso. Nele se produzem novíssimas formas específicas de terciário
-                superior, um quaternário e um quinquinário ligados à finança, à assistência técnica e política e à
-                informação em suas diferentes modalidades”.</p>
+            <div class="w3-panel w3-leftbar w3-sand w3-margin">
 
-                <p class="citacao w3-sand"> SANTOS, M. e SILVEIRA, M. O Brasil. Território e sociedade no início do século XXI.
-                Rio de Janeiro: Record, 2001, p. 268-269. Adaptado. </p>
+                <p class="w3-sand"> “Poderíamos, grosseiramente, reconhecer a existência de quatro Brasis, ou seja,
+                    regiões
+                    específicas dentro do País. Num desses Brasis, verifica-se a implantação mais consolidada dos dados
+                    da
+                    ciência, da técnica e da informação, além de uma urbanização importante, com um padrão de consumo
+                    das
+                    empresas e das famílias mais intenso. Nele se produzem novíssimas formas específicas de terciário
+                    superior, um quaternário e um quinquinário ligados à finança, à assistência técnica e política e à
+                    informação em suas diferentes modalidades”.</p>
+
+                <p class="citacao w3-sand"> SANTOS, M. e SILVEIRA, M. O Brasil. Território e sociedade no início do
+                    século XXI.
+                    Rio de Janeiro: Record, 2001, p. 268-269. Adaptado. </p>
 
             </div>
 
@@ -251,15 +265,23 @@
 
             <p class="p2">Questão 05</p>
 
-            <p>(UCS 2013) A população brasileira é formada por vários grupos étnicos, entre eles, índio, branco, negro e amarelo. A miscigenação desses grupos deu origem à diversificação étnica atual do Brasil. </p>
+            <p>(UCS 2013) A população brasileira é formada por vários grupos étnicos, entre eles, índio, branco, negro e
+                amarelo. A miscigenação desses grupos deu origem à diversificação étnica atual do Brasil. </p>
 
             <p>Analise a veracidade (V) ou a falsidade (F) das afirmativas abaixo, sobre a população brasileira.</p>
 
-            <p>( ) Os descendentes de atlanto-mediterrâneos formam a menor parte da população brasileira. O grupo é constituído por portugueses, suíços, ingleses, franceses e holandeses, sendo os últimos representados por um número muito reduzido no total da população.</p>
+            <p>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Os descendentes de atlanto-mediterrâneos formam a menor parte da população brasileira. O grupo é
+                constituído por portugueses, suíços, ingleses, franceses e holandeses, sendo os últimos representados
+                por um número muito reduzido no total da população.</p>
 
-            <p>( ) A lei Afonso Arinos, de 1951, proibia a discriminação racial no país. Era uma lei branda, pois tratava essa questão como contravenção penal: bastava que o infrator pagasse uma multa para livrar-se da acusação e da prisão.</p>
+            <p>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) A lei Afonso Arinos, de 1951, proibia a discriminação racial no país. Era uma lei branda, pois
+                tratava essa questão como contravenção penal: bastava que o infrator pagasse uma multa para livrar-se da
+                acusação e da prisão.</p>
 
-            <p>( ) Na década de 1970, foi fundado o Movimento Negro Unificado (MNU), e, nas décadas de 1980 e 1990, ocorreu a reafirmação do movimento negro por meio da organização e mobilização. Rap, hip hop e break, por exemplo, são manifestações artísticas contestatórias para mexer com os referenciais de beleza, apoiados no modelo branco.</p>
+            <p>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) Na década de 1970, foi fundado o Movimento Negro Unificado (MNU), e, nas décadas de 1980 e 1990,
+                ocorreu a reafirmação do movimento negro por meio da organização e mobilização. Rap, hip hop e break,
+                por exemplo, são manifestações artísticas contestatórias para mexer com os referenciais de beleza,
+                apoiados no modelo branco.</p>
 
             <p>Assinale a alternativa que preenche corretamente os parênteses, de cima para baixo.</p>
 
@@ -297,7 +319,7 @@
         <div class="comentarios">
             <!-- <p> <strong>Comentário:</strong></p> -->
 
-            
+
         </div>
 
 
@@ -359,7 +381,7 @@
                 trabalhadores rurais, para a massa camponesa de proprietários ou não, a terra e as atividades que
                 nela se exercem constituem a única fonte de subsistência para eles acessível. </p>
 
-            <p class="citacao"> (C. Prado Junior. A questão agrária no Brasil, 2000.) </p>
+            <p class="w3-small w3-right-align"> (C. Prado Junior. A questão agrária no Brasil, 2000.) </p>
 
             <p> A estrutura fundiária brasileira caracteriza-se por:</p>
 
@@ -463,7 +485,7 @@
                 morfologia brasileira. A modesta altitude de nosso relevo apresenta-se distribuída em variadas
                 formas. </p>
 
-            <p class="citacao"> ADÃO, Edilson; FURQUIM JR., Laercio. GEOGRAFIA em REDE. Vol. 1. 1. ed. São
+            <p class="w3-small"> ADÃO, Edilson; FURQUIM JR., Laercio. GEOGRAFIA em REDE. Vol. 1. 1. ed. São
                 Paulo: FTD, 2013. </p>
 
             <p> Quanto as formas o relevo brasileiro é classificado como:</p>
@@ -551,11 +573,13 @@
             height="200">
     </div>
 
-    <p id="aviso"></p>
+
+    <div id="aviso" class="w3-panel w3-yellow">
+
+    </div>
 
 
-
-    <div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+    <div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
     <script>
@@ -749,7 +773,16 @@
     </script>
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
 
 
 
