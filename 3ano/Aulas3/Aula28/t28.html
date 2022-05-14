@@ -5,24 +5,15 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>3ano - Aula28</title>
+	<title>3º ano - Questões</title>
 
 	<link rel="stylesheet" href="../../../estilos/questoes.css">
 	<link rel="stylesheet" href="../../../estilos/w3.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-	<script src="../../../estilos/javascript.js"></script>
+	<script src="../../../estilos/javascript.js" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 
@@ -30,18 +21,19 @@
 
 </head>
 
-<body onload="mudaQuest()">
+<body>
 
 
-	<div class="w3-top w3-bar w3-black larguraBar">
+	<!-- Navigation (Stays on Top) -->
+	<div class="w3-top w3-bar w3-black larguraBar w3-large">
 
+		<div class="w3-container">
 
-		<a href="../../../Duvid3Ano.html" class=" w3-button">3º ano</a>
-
-
-
+			<a href="../../../Duvid3Ano.html" class=" w3-button">3º ano</a>
+		</div>
 
 	</div>
+
 
 
 
@@ -57,6 +49,19 @@
 
 
 
+	<div class="w3-padding-top-24">
+		<div class="w3-white larguraBar w3-padding flex-container">
+
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+					id="decrease-font" title="Diminuir fonte">A -</button></div>
+			<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+					id="increase-font" title="Aumentar fonte">A +</button></div>
+		</div>
+	</div>
+
+
+
+
 	<form id="quiz" name="quiz" onsubmit="verificar()">
 
 
@@ -64,7 +69,9 @@
 
 			<p class="p2">Questão 01</p>
 
-			<p> (UERJ 2020) Entre 2014 e 2017, derrotar o Estado Islâmico  <span onclick="this.innerHTML='ISIS - Islamic State of Iraq and Syria ou Estado Islâmico do Iraque e da Síria)'"><mark>(ISIS)</mark></span> foi uma das prioridades da
+			<p> (UERJ 2020) Entre 2014 e 2017, derrotar o Estado Islâmico <span
+					onclick="this.innerHTML='(ISIS - Islamic State of Iraq and Syria ou Estado Islâmico do Iraque e da Síria)'"><mark>(ISIS)</mark></span>
+				foi uma das prioridades da
 				política externa dos Estados Unidos. Ao final de 2017, o ISIS foi considerado militarmente derrotado,
 				perdendo o controle de praticamente todos os territórios que havia conquistado na Síria e no Iraque.
 			</p>
@@ -114,20 +121,23 @@
 
 			<p class="p2">Questão 02</p>
 
-			<p> (ENEM 2018)  </p>
-				
+			<p> (ENEM 2018) </p>
+
 			<div class="w3-panel w3-leftbar w3-margin w3-sand">
-				
-				Em Beirute, no Líbano, quando perguntado sobre onde se encontram os refugiados
-				sírios, a resposta do homem é imediata: “em todos os lugares e em lugar nenhum”. Andando ao acaso, não é
-				raro ver , sob um prédio ou num canto de calçada, ao abrigo do vento, uma família refugiada em volta de
-				uma refeição frugal posta sobre jornais como se fossem guardanapos. Também se vê de vez em quando uma
-				tenda com a sigla ACNUR (Alto Comissariado das Nações Unidas para Refugiados), erguida em um dos raros
-				terrenos vagos da capital.
+
+				<p>
+					“Em Beirute, no Líbano, quando perguntado sobre onde se encontram os refugiados
+					sírios, a resposta do homem é imediata: “em todos os lugares e em lugar nenhum”. Andando ao acaso, não é
+					raro ver , sob um prédio ou num canto de calçada, ao abrigo do vento, uma família refugiada em volta de
+					uma refeição frugal posta sobre jornais como se fossem guardanapos. Também se vê de vez em quando uma
+					tenda com a sigla ACNUR (Alto Comissariado das Nações Unidas para Refugiados), erguida em um dos raros
+					terrenos vagos da capital”.
+				</p>
 
 
-			<p class="citacao w3-sand"> JABER, H. Quem realmente acolhe os refugiados? Le Monde Diplomatique Brasil, out. 2015
-				(adaptado). </p>
+				<p class="w3-small"> JABER, H. Quem realmente acolhe os refugiados? Le Monde Diplomatique Brasil,
+					out. 2015
+					(adaptado). </p>
 
 			</div>
 
@@ -192,7 +202,7 @@
 				duas gerações uma maioria árabe "entre o rio e o mar". </p>
 
 
-			<p class="citacao"> DEMANT, P. Israel: a crise próxima. História, n. 2. jul.-dez. 2014. </p>
+			<p class="w3-small"> DEMANT, P. Israel: a crise próxima. História, n. 2. jul.-dez. 2014. </p>
 
 			<p> A preocupação apresentada no texto revela um aspecto da condução política desse Estado
 				identificado ao(à)</p>
@@ -238,7 +248,7 @@
 
 			<p class="p2">Questão 04</p>
 
-			<p> (UEA - SIS 2018) </p>
+			<p> (UEA-SIS 2018) </p>
 
 
 			<div class="w3-center"><img src="t28q4.png" alt="t28q4" class="w3-mobile"></div>
@@ -265,7 +275,7 @@
 
 		<div class="comentarios">
 
-		<!-- 	<p> <strong>Comentário:</strong></p>
+			<!-- 	<p> <strong>Comentário:</strong></p>
 
 			<p> Colocar os comentários aqui. </p> -->
 		</div>
@@ -281,16 +291,26 @@
 
 			<p class="p2">Questão 05</p>
 
-			<p> (ENEM 2017) Palestinos se agruparam em frente a aparelhos de televisão e telas montadas ao ar
-				livre em Ramalah, na Cisjordânia, para acompanhar o voto da resolução que pedia o reconhecimento da
-				chamada Palestina como um Estado observador não membro da Organização das Nações Unidas (ONU). O
-				objetivo era esperar pelo nascimento, ao menos-formal, de um Estado palestino. Depois da aprovação da
-				resolução, centenas de pessoas foram à praça da cidade com bandeiras palestinas, soltaram fogos de
-				artifício, fizeram buzinaços e dançaram pelas ruas. Aprovada com 138 votos dos 193 da Assembleia-Geral,
-				a Comentário: eleva o status do Estado palestino perante a organização. Palestinos comemoram elevação de
-				status na ONU com bandeiras e fogos.</p>
+			<p> (ENEM 2017) 		
+			</p>
 
-			<p class="citacao">Disponível em: http://folha.com. Acesso em: 4 dez. 2012 (adaptado)</p>
+				
+				<div class="w3-panel w3-leftbar w3-sand w3-margin">
+					<p>“Palestinos se agruparam em frente a aparelhos de televisão e telas montadas ao ar
+						livre em Ramalah, na Cisjordânia, para acompanhar o voto da resolução que pedia o reconhecimento da
+						chamada Palestina como um Estado observador não membro da Organização das Nações Unidas (ONU). O
+						objetivo era esperar pelo nascimento, ao menos-formal, de um Estado palestino. Depois da aprovação da
+						resolução, centenas de pessoas foram à praça da cidade com bandeiras palestinas, soltaram fogos de
+						artifício, fizeram buzinaços e dançaram pelas ruas. Aprovada com 138 votos dos 193 da Assembleia-Geral,
+						a Comentário: eleva o status do Estado palestino perante a organização. Palestinos comemoram elevação de
+						status na ONU com bandeiras e fogos”.</p>
+	
+						<p class="w3-small">Disponível em: http://folha.com. Acesso em: 4 dez. 2012 (adaptado)</p>
+				</div>
+	
+				
+		
+		
 			<p>A mencionada resolução da ONU referendou o (a)</p>
 
 			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a)
@@ -315,28 +335,28 @@
 				internacional à demanda nacional palestina que espera- se permita futuramente a criação de um Estado
 				nacional palestino.</p>
 
-			<p> 	a) Incorreta. Os Palestinos são hoje um povo sem território, que desde 1948 vivem dentro do território
-			de Israel. Uma longa luta por independência e soberania é travada por esta nação em seu histórico
-			território, hoje dominado pelos judeus. No texto do enunciado, a ONU reconhece a Palestina como um
-			“Estado observador não membro da Organização das Nações Unidas”. Isso mostra que as 138 nações que
-			aprovaram a Palestina como estado observador não se comprometeram com o reconhecimento da soberania
-			nacional Palestina, fato que nos permite dizer que não houve apoio mundial para a soberania territorial
-			da palestina e sim houve o reconhecimento de que a luta da nação Palestina é vista como legítima por
-			estes países votantes.</p>
+			<p> a) Incorreta. Os Palestinos são hoje um povo sem território, que desde 1948 vivem dentro do território
+				de Israel. Uma longa luta por independência e soberania é travada por esta nação em seu histórico
+				território, hoje dominado pelos judeus. No texto do enunciado, a ONU reconhece a Palestina como um
+				“Estado observador não membro da Organização das Nações Unidas”. Isso mostra que as 138 nações que
+				aprovaram a Palestina como estado observador não se comprometeram com o reconhecimento da soberania
+				nacional Palestina, fato que nos permite dizer que não houve apoio mundial para a soberania territorial
+				da palestina e sim houve o reconhecimento de que a luta da nação Palestina é vista como legítima por
+				estes países votantes.</p>
 
-			<p> 	b) Incorreta. Tal reconhecimento da ONU não trouxe qualquer mudança na situação econômica, social e
-			política do povo palestino, que vivencia má qualidade de vida.</p>
+			<p> b) Incorreta. Tal reconhecimento da ONU não trouxe qualquer mudança na situação econômica, social e
+				política do povo palestino, que vivencia má qualidade de vida.</p>
 
-			<p> 	c) Incorreta. O reconhecimento da ONU não representa uma consolidação da paz entre Israel e a Palestina,
-			uma vez que não funciona como tratado de Paz entre os dois envolvidos e ainda há tensões e
-			enfrentamentos entre árabes e judeus em território israelense.</p>
+			<p> c) Incorreta. O reconhecimento da ONU não representa uma consolidação da paz entre Israel e a Palestina,
+				uma vez que não funciona como tratado de Paz entre os dois envolvidos e ainda há tensões e
+				enfrentamentos entre árabes e judeus em território israelense.</p>
 
-			<p> 	d) Correta. Está correta, pois como já mencionado, houve sim o reconhecimento de que a luta da nação
-			Palestina é legítima, algo que vai ao encontro das reivindicações da nação palestina.</p>
+			<p> d) Correta. Está correta, pois como já mencionado, houve sim o reconhecimento de que a luta da nação
+				Palestina é legítima, algo que vai ao encontro das reivindicações da nação palestina.</p>
 
-			<p> 	e) Incorreta. O texto fala que a ONU reconhece a Palestina como um “Estado observador não membro da
-			Organização das Nações Unidas”. Tal afirmação mostra que apesar da aceitação da palestina como membro
-			observado ela não foi aceita como membro igualitário dentro da Assembleia das Nações Unidas.
+			<p> e) Incorreta. O texto fala que a ONU reconhece a Palestina como um “Estado observador não membro da
+				Organização das Nações Unidas”. Tal afirmação mostra que apesar da aceitação da palestina como membro
+				observado ela não foi aceita como membro igualitário dentro da Assembleia das Nações Unidas.
 			</p>
 		</div>
 
@@ -361,9 +381,9 @@
 				da Terra Santa — nome bíblico que compreende o território de Israel, da Cisjordânia e de parte da
 				Jordânia, que teria sido prometida ao povo judeu no Antigo Testamento. </p>
 
-				<div class="w3-center"><img src="t28q6.png" alt="t28q6" class="w3-mobile"></div>
+			<div class="w3-center"><img src="t28q6.png" alt="t28q6" class="w3-mobile"></div>
 
-		
+
 			<p>Considerando o texto e a imagem anteriormente apresentados, julgue o item. </p>
 			<p>O texto menciona áreas situadas na região modernamente conhecida como Oriente Médio. Além de
 				estratégica para a economia e a geopolítica do mundo contemporâneo, essa região é o berço histórico das
@@ -380,10 +400,10 @@
 		</div>
 
 
-		
+
 		<div class="comentarios">
 
-		<!-- 	<p> <strong>Comentário:</strong></p>
+			<!-- 	<p> <strong>Comentário:</strong></p>
 
 			<p> Colocar os comentários aqui. </p> -->
 		</div>
@@ -419,9 +439,9 @@
 
 
 
-		
+
 		<div class="comentarios">
-<!-- 
+			<!-- 
 			<p> <strong>Comentário:</strong></p>
 
 			<p> Colocar os comentários aqui. </p> -->
@@ -460,7 +480,7 @@
 
 
 
-		
+
 		<div class="comentarios">
 
 			<!-- <p> <strong>Comentário:</strong></p>
@@ -486,7 +506,7 @@
 				charge a seguir faz referência a esse conflito, apontando para o fato de que nem israelenses, nem
 				palestinos são donos da razão numa região marcada pela violência. </p>
 
-				<div class="w3-center"><img src="t28q9.png" alt="t28q9" class="w3-mobile"></div>
+			<div class="w3-center"><img src="t28q9.png" alt="t28q9" class="w3-mobile"></div>
 
 			<p>Assinale a alternativa que indica a razão pela qual se deu o início do conflito
 				palestino-israelense.</p>
@@ -512,7 +532,7 @@
 
 
 
-		
+
 		<div class="comentarios">
 
 			<!-- <p> <strong>Comentário:</strong></p>
@@ -526,7 +546,7 @@
 
 			<p class="p2">Questão 10</p>
 
-			<p> (EsPCEx 2012) O conflito árabe-israelense está relacionado com a criação de um Estado judeu na
+			<p> (ESPCEX 2012) O conflito árabe-israelense está relacionado com a criação de um Estado judeu na
 				Palestina em 1948. Essa região era então habitada por árabes muçulmanos que se opuseram à divisão das
 				terras. As guerras entre os dois povos transformaram o Oriente Médio numa das regiões mais instáveis do
 				globo. </p>
@@ -560,7 +580,7 @@
 
 
 		<div class="comentarios">
-		<!-- 	<p> <strong>Comentário:</strong></p>
+			<!-- 	<p> <strong>Comentário:</strong></p>
 
 			<p> Colocar os comentários aqui. </p> -->
 		</div>
@@ -581,11 +601,14 @@
 			height="200">
 	</div>
 
-	<p id="aviso"></p>
 
 
+	<div id="aviso" class="w3-panel w3-yellow">
 
-	<div class="area w3-padding-32"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+	</div>
+
+
+	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
 	<script>
@@ -774,7 +797,16 @@
 	</script>
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 
