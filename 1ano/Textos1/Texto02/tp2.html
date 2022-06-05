@@ -113,7 +113,7 @@
 
 		<p id="resp0"></p>
 
-		<button id="buttonConfira" class="btnShow" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+		<button id="buttonConfira" class="btnShow" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
 
 		<button id="buttonA" class="btnHide" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
 		<hr>
@@ -1182,7 +1182,7 @@
 
 
 
-		var notaPergunta = 0;
+		let notaPergunta = 0;
 
 		// Função com perguntas abertas feita com formulário
 		function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
@@ -1248,13 +1248,6 @@
 			}
 
 
-			else if (qnum == 4) {
-				document.getElementById("q1d").style.backgroundColor = cor[1];
-				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
-				Play2("../audio2.mp3");
-
-
-			}
 
 
 			else {
