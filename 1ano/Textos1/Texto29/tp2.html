@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../../../estilos/fade.css">
+	<link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+	<script src="../../../estilos/jstextos.js" defer></script>
+
+	<title>Texto29</title>
+
+
+
+
+	<style>
+		.topico {
+			display: block;
+		}
+
+		.topico:nth-child(1),
+		.topico.mostrar {
+			display: block
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-gap: 0px;
+			background-color: gray;
+			padding: 0px;
+			border-radius: 5px;
+			width: auto;
+		}
+
+		.grid-container>div {
+			background-color: lightgrey;
+			border: 0px solid black;
+			text-align: center;
+			font-size: 30px;
+			border-radius: 5px;
+			justify-content: center;
+			padding: 0px;
+		}
+	</style>
+
+
+
+</head>
+
+<body onload="paragrafotexto()">
+
+
+
+	<div class="topico">
+
+		<div class="centerBar w3-padding-24">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
+
+		<div class="w3-padding-top">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
+
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
+
+		<h1 id="h1"> Texto 02 – Cartografia: representações do espaço geográfico, localização e coordenadas geográficas.
+		</h1>
+
+
+
+		<p><strong>Conteúdo:</strong> Introdução à História da Cartografia; Mapas; Sistemas referenciais para
+			localização espacial: pontos cardeais; Rotação; coordenadas geográficas, longitude, latitude. </p>
+
+
+
+
+		<p><strong>Objetivo:</strong> Entender a importância da Cartografia para a construção do conhecimento do
+			ser humano. Aplicar o sistema de coordenadas geográficas à localização de pontos na superfície terrestre. </p>
+
+		<button class="btnShow"
+			onclick="MostrarProximo(this);	Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Começar</button>
+
+
+
+
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p id="caixaNomeAluno">Digite seu nome</p>
+
+		<div class="area">
+			<input class="input" type="text" id="pq0" name="pq0">
+		</div>
+
+		<p id="resp0"></p>
+
+		<button id="buttonConfira" class="btnShow" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
+
+		<button id="buttonA" class="btnHide" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+	</div>
+
+
+	<div class="topico">
+
+		<h2> Introdução </h2>
+
+
+		<p> <span class="primeiraLetra">N</span>a aula passada, vimos que o espaço geográfico e seus
+			conceitos auxiliares, constituem o objeto de estudo da Geografia, uma ciência envolvida com os aspectos
+			sociais e espaciais da sociedade. </p>
+
+		<p>Nesta aula, veremos como a Geografia, em colaboração com a Cartografia, dispõem de técnicas
+			para representar o espaço geográfico.</p>
+
+		<p>Ao final, você saberá qual a importância da Cartografia para o conhecimento do ser humano e,
+			também, aprenderá a localizar-se no espaço pelos pontos cardeais e pelas coordenadas geográficas. </p>
+
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+	</div>
+
+
+
+
+
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Combine as imagens com textos sobre o tema da Cartografia. Valor: 3 globinhos.
+		</p>
+		<br><br>
+
+
+		<div class="area">
+			<div class="grid-container">
+				<div><img id="div4" src="tp2Foto2.png" alt="div4" width="170" height="170"> </div>
+				<div><img id="div12" src="tp2Foto14.png" alt="div12" width="170" height="170"></div>
+				<div><img id="div4" src="tp2Foto3.png" alt="div4" width="170" height="170"> </div>
+				<div id="div8"><img id="div8a" src="tp2Foto5.png" alt="div8" width="170" height="170"></div>
+				<div><img id="div2" src="tp2Foto12.png" alt="div2" width="170" height="170"></div>
+				<div><img id="div4" src="tp2Foto10.png" alt="div4" width="170" height="170"> </div>
+				
+
+			</div>
+		</div>
+
+		<p id="resp10"></p>
+		<br><br>
+
+
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+
+
+	</div>
+
+	<div class="topico">
+
+
+
+		<button class="btnShow" onclick="mostraCinza2(); this.style='display:none'">Finalizar</button>
+
+
+
+
+
+
+		<div class="w3-container">
+
+
+
+			<div id="id01" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+					<div class="w3-center"><br>
+						<span onclick="document.getElementById('id01').style.display='none'"
+							class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+							title="Close Modal">&times;</span>
+
+
+
+						<div class="nota zoom  ">
+
+						</div>
+
+						<img src="globinhoPe.png" alt="Avatar" style="width:20%" class="w3-circle w3-margin-bottom">
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<div class="margemAcima">
+
+		<span id="txtBarra">0%</span>
+		<progress value="0" max="100" id="progress"></progress>
+	</div>
+
+
+
+	<div class="bibliografias">
+
+
+		<h3><strong>Referências bibliográficas</strong></h3>
+
+		<p>CARPANELLI,Francesca. <strong>La geografia in 30 lezioni</strong>. Geografia generale ed economica.
+			Itália:
+			Zanichelli, 2015.</p>
+
+		<p>FREITAS, Maria Isabel Castreghini de (Org.). <strong>Cartograﬁa e Meio Ambiente</strong>. Rio Claro:
+			IGCE/UNESP; Bauru: FC/Unesp; CECEMCA. 2005.</p>
+
+		<p>SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil</strong>: espaço geográfico
+			e
+			globalização: ensino médio 3. ed. São Paulo: Scipione, 2016.</p>
+
+		<p>Yves Lacoste. <strong>A geografia</strong> – isso serve, em primeiro lugar, para fazer a guerra. 2. ed.
+			Campinas: Papirus, 2003 [1989]./p>
+
+	</div>
+
+
+
+
+
+
+	<script>
+
+
+		Clicou1 = 0;
+		Clicou2 = 0;
+
+
+
+
+
+
+		function MostrarProximo(parametro) {
+
+			var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+			var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+			if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+			{
+				proximo.classList.add('mostrar'); // Mostrar o seguinte
+				addProgressBar();
+				//numButton();
+				ApagaButton();
+
+				document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+			}
+
+		}
+
+
+
+		// Deixa as divs cinzas quando completar a atividade
+		function mostraCinza2() {
+
+
+			var t = document.getElementsByClassName("topico");
+			var radiosInput = document.getElementsByTagName('input');
+			var todosBtn = document.getElementsByTagName('button');
+
+			for (var i = 0; i < t.length; i++) {
+
+				t[i].style.color = "gray";
+				t[i].style.transition = "6s";
+
+			}
+
+			mostrarNota2();
+			mostraBiblio();
+			document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+			for (var i = 0; i < radiosInput.length; i++) {
+				radiosInput[i].disabled = true;
+
+			}
+
+
+			for (var b = 0; b < todosBtn.length; b++) {
+				todosBtn[b].disabled = true;
+				todosBtn[b].style.backgroundColor = "gray";
+			}
+
+
+		}
+
+		//Mostra a nota no final da aula
+		function mostrarNota2() {
+
+
+
+			globoFinalNota = document.getElementsByClassName("nota");
+
+
+			ClassGrid();
+			if (nota >= 6) {
+				for (var i = 0; i < globoFinalNota.length; i++) {
+					document.getElementById('id01').style.display = "block";
+					globoFinalNota[i].style.display = "block";
+					globoFinalNota[i].innerHTML = "Parabéns " + nomeEstudante + "," + " você ganhou: " + nota + " globinhos! e completou sua lição!";
+					Play("../notaFinal.mp3");
+
+
+				}
+
+
+
+			}
+			else {
+				for (var i = 0; i < globoFinalNota.length; i++) {
+					document.getElementById('id01').style.display = "block";
+					globoFinalNota[i].style.display = "block";
+					globoFinalNota[i].innerHTML = nomeEstudante + ", você não completou sua lição, pois conseguiu apenas " + nota + " globinho(s). Tente novamente.";
+					Play("../notaFinal2.mp3");
+
+
+				}
+			}
+
+		}
+
+
+		// function addNota(pontos)
+		// {
+
+		// 	nota += pontos;
+		// }
+
+		//Mostra a resposta correta. Deve ser colocado o nome para ser exibido na tela (resp), o id do globo, a desativação da questão e a mensagem
+
+
+
+
+		function addProgressBar() {
+			var barra = document.getElementById("progress");
+			txtBarra = document.getElementById("txtBarra");
+
+			i = Math.round(100 / 17);
+			barra.value += i;
+
+			if (barra.value >= 100) {
+				barra.value = 100;
+			}
+
+			txtBarra.innerHTML = barra.value + "%";
+
+		}
+
+
+
+
+		let notaPergunta = 0;
+
+		// Função com perguntas abertas feita com formulário
+		function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+			var q1a = document.quiz.q1a.value.toLowerCase();
+
+			var q1c = document.quiz.q1c.value.toLowerCase();
+
+
+
+
+			var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			
+
+			if (q1a.match("noroeste") && qnum == 1) {
+
+				document.getElementById("q1a").style.backgroundColor = cor[0];
+				document.getElementById("q1a").disabled = true;
+
+
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ".";
+				nota += 0.5;
+				
+				document.getElementById(globinho).style.display = "block";
+				notaPergunta +=1;
+
+			}
+			else if (qnum == 1) {
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+				Play2("../audio2.mp3");
+			}
+
+
+
+			if (q1c.match("sudeste") && qnum == 3) {
+
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+				document.getElementById("q1c").disabled = true;
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1c.valueOf() + ".";
+				nota += 0.5;
+				
+				document.getElementById(globinho).style.display = "block";
+				notaPergunta +=1;
+
+			}
+			else if (qnum == 3) {
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+				Play2("../audio2.mp3");
+			}
+
+
+
+
+			else {
+				document.getElementById(idResp).innerHTML = "Acerte todas as perguntas para prosseguir.";
+			}
+
+			
+		
+
+
+
+			document.getElementById("notaFixa").innerHTML = nota;
+
+			if (notaPergunta >= 2) {
+				MostraButton("buttonq1d");
+				
+			}
+
+		
+
+		}
+
+		//Função para esconder imagens no Desafio
+
+		// Adcionei um evento clique no botão e criei uma variavel global Clicou1 ou Clicou2
+
+
+		var foto1 = document.getElementById("div1").addEventListener("click", function () {
+			Clicou1 = 1;
+			ComparaImagens("resp10");
+		});
+
+
+		var foto2 = document.getElementById("div2").addEventListener("click", function () {
+			Clicou2 = 2;
+			ComparaImagens("resp10");
+		});
+
+
+		var foto3 = document.getElementById("div3").addEventListener("click", function () {
+			Clicou1 = 2;
+			ComparaImagens("resp10");
+		});
+
+		var foto4 = document.getElementById("div4").addEventListener("click", function () {
+			Clicou1 = 3;
+			ComparaImagens("resp10");
+		});
+
+		var foto5 = document.getElementById("div5").addEventListener("click", function () {
+			Clicou1 = 4;
+			ComparaImagens("resp10");
+		});
+
+		var foto6 = document.getElementById("div6").addEventListener("click", function () {
+			Clicou1 = 5;
+			ComparaImagens("resp10");
+		});
+
+	
+
+
+		// Função do desafio final
+		function ComparaImagens(idResp) {
+
+
+			let cor = ["#99ff99", " #ee4466"];
+
+			if (Clicou1 == 1 && Clicou2 == 1) {
+
+				document.getElementById("div1").style.opacity = "30%";
+
+				document.getElementById("div8").style.opacity = "30%";
+				Play("../audio1.mp3");
+
+				notaDesafio++;
+
+			}
+
+
+
+
+			else if (Clicou1 == 2 && Clicou2 == 2) {
+
+				document.getElementById("div2").style.opacity = "30%";
+				document.getElementById("div3").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+
+			}
+
+			else if (Clicou1 == 3 && Clicou2 == 3) {
+
+				document.getElementById("div4").style.opacity = "30%";
+				document.getElementById("div9").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+			}
+
+			else if (Clicou1 == 4 && Clicou2 == 4) {
+
+				document.getElementById("div10").style.opacity = "30%";
+				document.getElementById("div5").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+			}
+
+			else if (Clicou1 == 5 && Clicou2 == 5) {
+
+				document.getElementById("div6").style.opacity = "30%";
+				document.getElementById("div7").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+			}
+
+			else if (Clicou1 == 6 && Clicou2 == 6) {
+
+				document.getElementById("div11").style.opacity = "30%";
+				document.getElementById("div12").style.opacity = "30%";
+
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+
+			}
+
+
+
+
+		}
+
+
+
+		// Função que adiciona fundo verde no desafio, foi inserida na função nota final
+		function ClassGrid() {
+
+
+			var g = document.getElementsByClassName("grid-container");
+			for (var i = 0; i < g.length; i++) {
+				if (notaDesafio >= 6) {
+					g[i].style.backgroundColor = "green";
+					nota += 3;
+
+
+				}
+
+
+			}
+
+		}
+
+
+
+
+
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+
+
+</body>
+
+</html>

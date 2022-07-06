@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>Texto 01</title>
+
+  
+
+
+    <style>
+        .topico {
+            display: none;
+           
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+     
+
+        .postit-tp13 {
+            background: #e6ff5b;
+
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp13>a {
+            text-decoration: none;
+        }
+
+        .postit-tp13>a:hover {
+            text-decoration: underline;
+        }
+
+     
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar w3-padding">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
+
+		<div class="w3-padding-top-48">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
+
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
+
+
+
+        <h1 id="h1"> Texto modelo </h1>
+
+
+        <p><strong> Conteúdo:</strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis expedita porro tempore, earum veritatis voluptatibus tenetur dicta culpa, sequi consequuntur suscipit consectetur id qui officia corporis quos. Et, id nulla?.
+
+        </p>
+
+        <p><strong>Objetivo:</strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dignissimos tenetur perspiciatis omnis vitae. Nihil, neque eius. Sit illo consectetur deserunt esse, odio dolore, voluptate quod, veniam provident accusamus error. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+       <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, conhecemos os processos externos modeladores do relevo, o
+            intemperismo físico e químico, além do processo de erosão pela água, vento, geleiras, dentre outros. </p>
+
+        <p> </p>
+
+        <p>  </p>
+
+        <p></p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2>Lorem ipsum dolor  </h2>
+
+
+
+
+        <p></p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+
+        <div class="area"><img id="imagem1" src="tp13f1.png" alt="tp13f1" class="w3-mobile"></div>
+
+
+        <span class="citacao"> 
+        </span>
+
+
+
+        <p> 
+        </p>
+
+
+        <p>  </p>
+
+
+
+
+
+        <div class="area"><img id="imagem2" src="tp13f2.png" alt="tp13f2" class="w3-mobile"></div>
+
+
+        <span class="citacao">  </span>
+
+
+        <p>  </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <div class="area"><img id="imagem3" src="tp13f3.png" alt="tp13f3" class="w3-mobile"></div>
+
+
+     
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> </h2>
+
+
+
+
+
+
+
+
+
+        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+        <br>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> </h2>
+
+
+
+
+
+
+
+        <div class="area"><img id="imagem6" src="tp13f6.png" alt="tp13f6" class="w3-mobile"></div>
+
+        <span class="citacao"> Fonte: Press (2006, p. 105). </span>
+
+
+
+
+        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+        <br>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+               
+
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> </p>
+
+      
+
+        <p></p>
+
+
+
+      
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+                
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+          
+
+        </p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <br><br>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <div class="w3-card-4 w3-pale-green w3-padding">
+
+            <h4 class="w3-center"> Desafio em grupo: hipóteses sobre o ciclo das rochas.</h4>
+
+            <p>Após assistir à animação sobre o ciclo das rochas, compare com a explicação científica sobre as etapas
+                de transformação que uma rocha pode passar. </p>
+
+            <p> Um ponto importante é que o ciclo das rochas ilustra as coisas que podem acontecer a uma rocha. A
+                maioria delas não completa o ciclo devido a muitos caminhos, interrupções, retrocessos e atalhos que uma
+                rocha pode tomar.</p>
+
+
+            <h4>Instruções: </h4>
+
+
+
+            <ul>
+
+                <li>Forme um grupo com três estudantes;</li>
+
+                <li> Reflita sobre o caminho que uma rocha pode percorrer dependendo dos eventos naturais específicos e
+                    a ordem em que ocorrem. </li>
+
+                <li> Escreva, ao menos, três diferentes caminhos que uma rocha pode encontrar durante seu ciclo. </li>
+
+                <li> Escolha um integrante do grupo para escrever os tópicos na lousa.</li>
+
+                <li>Tempo de atividade: 20 minutos.</li>
+
+
+
+            </ul>
+
+        </div>
+
+
+        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr><br>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow " onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        <br>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom w3-padding" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+
+        <!-- <span id="numero"></span>  -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp13 ">
+
+                <a href="https://itu.sp.gov.br/meio-ambiente/parque-geologico-do-varvito/" target="_blank">
+                   Lorem, ipsum dolor sit
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>dfgd <strong>dfgd dfgdfg</strong>. São Paulo: Cengage Learning, 2009.
+        </p>
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        //  function numButton() {
+        //             numB++;
+        //             document.getElementById("numero").innerHTML = numB;
+        //         }
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                numButton();
+                ApagaButton();
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 18);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+        // Função com apenas uma palavra
+
+        function confereBox(mensagem, frase2, globinho) {
+
+            r1 = document.getElementById("r1");
+            r2 = document.getElementById("r2");
+            r3 = document.getElementById("r3");
+            r4 = document.getElementById("r4");
+            frase = document.getElementById(frase2);
+            globo = document.getElementById(globinho);
+            let t = document.getElementsByClassName("checkbox1");
+
+            if (r2.checked == true) {
+
+                frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
+                Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
+            }
+
+            else if (r1.checked == true && r3.checked == true && r4.checked == true) {
+
+
+                nota += 1;
+                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+                globo.style.display = "block";
+                Play("../audio1.mp3");
+                BalancarGlobo();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                
+
+                EscondeButton("buttoncheck1");
+                MostraButton("buttoncheck2");
+               
+
+             
+                for (let i = 0; i < t.length; i++) {
+                    t[i].disabled = true;
+                }
+
+
+            }
+
+
+            else {
+                frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
+                Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
+            }
+
+
+
+        }
+
+
+
+        // Função com perguntas abertas feita com formulário
+        function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+            var q1a = document.quiz.q1a.value.toLowerCase();
+            var q1b = document.quiz.q1b.value.toLowerCase();
+
+
+
+
+
+            var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+            var cor = ["#99ff99", " #ee4466"];
+
+            if (q1a.match("contato") && qnum == 1) {
+
+                document.getElementById("q1a").style.backgroundColor = cor[0];
+                document.getElementById("q1a").disabled = true;
+
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
+                nota += 0.5;
+                document.getElementById(globinho).style.display = "block";
+
+
+                BalancarGlobo();
+
+                document.getElementById("buttonConferirQ1b").disabled = false;
+                document.getElementById("buttonConferirQ1b").style.backgroundColor = "#69CB60FA";
+                
+
+                if (q1a.match("contato") && q1b.match("regional") && qnum ==1){
+                    document.getElementById("buttonConferirQ1b").value = "Finalizar!";
+                }
+                else
+                {
+                    document.getElementById("buttonConferirQ1b").value = "Conferir!";
+                }
+               
+
+
+
+            }
+            else if (qnum == 1) {
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+                Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
+            }
+
+
+            if (q1b.match("regional") && qnum == 2) {
+
+                if (q1a.match("contato")) {
+
+                    document.getElementById("q1b").style.backgroundColor = cor[0];
+                    document.getElementById("q1b").disabled = true;
+
+                    EscondeButton(buttonConferir);
+                    Play("../audio1.mp3");
+
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf() + ", acertou!.";
+
+                    nota += 0.5;
+                    document.getElementById(globinho).style.display = "block";
+
+
+
+                    MostraButton("buttonq1d");
+                    BalancarGlobo();
+                }
+                else {
+                    document.getElementById("q1b").style.backgroundColor = cor[0];
+                    document.getElementById("q1b").disabled = true;
+                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui.";
+                    Play2("../audio2.mp3");
+                    document.getElementById("buttonConferirQ1b").value = "Aguardando...";
+                    document.getElementById("buttonConferirQ1b").disabled = true;
+                    document.getElementById("buttonConferirQ1b").style.backgroundColor = "lightgray";
+                    RemoveBalancarGlobo();
+
+                }
+
+            }
+            else if (qnum == 2) {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
+                Play2("../audio2.mp3");
+                RemoveBalancarGlobo();
+
+            }
+
+
+
+            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+
+
+
+
+        }
+
+        // É chamada nas questões abertas decimais para ver se completou um inteiro.
+        function VerificaInteiro(idResp) {
+
+            var inteiro = Number.isInteger(nota);
+            var int = Math.trunc(nota)
+
+
+            if (inteiro == false) {
+                nota = int;
+                document.getElementById(idResp).innerHTML = " Quase lá " + nomeEstudante + "." + " Acerte todas as questões para ganhar o globinho. Você permanece com " + nota + ".";
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+            }
+
+            else {
+                document.getElementById(idResp).innerHTML = "Por ter acertado todas as questões " + nomeEstudante + ", ganhou mais um globinho, agora já possui " + nota + ".";
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+            }
+
+            // document.getElementById(idResp).innerHTML = "Não atingiu o máximo para ganhar o globinho. Está com "  + nota;
+        }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                //numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+  
+          gtag('config', 'G-DPX55DSFZ0');
+  
+      </script>
+
+
+
+
+
+</body>
+
+</html>
