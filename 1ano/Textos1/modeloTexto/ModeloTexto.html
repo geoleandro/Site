@@ -63,10 +63,14 @@
 
 
 
+
+        /* 
+Css do memory card */
+
         .container {
             display: grid;
             place-items: center;
-            min-height: 100vh;
+
         }
 
         .heading {
@@ -78,36 +82,37 @@
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(6, auto);
+            grid-template-columns: repeat(4, auto);
             grid-gap: 1em;
         }
 
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 680px) {
 
-           
-          
+
+
 
             .cards {
                 display: grid;
-                grid-template-columns: repeat(3, auto);
+                grid-template-columns: repeat(2, auto);
                 grid-gap: 1em;
             }
 
-            
-                 
+
+
+
         }
 
         .card {
-            height: 100px;
-            width: 100px;
+            height: 140px;
+            width: 140px;
             background-color: #ffff00;
             border-radius: 10px;
             display: grid;
             place-items: center;
             cursor: pointer;
             transition: 0.3s all ease;
-       
+
 
         }
 
@@ -116,17 +121,24 @@
         }
 
         .card img {
-            width: 80%;
-            max-height: 90px;
+            width: 90%;
+            max-height: 120px;
             opacity: 1;
             transition: 0.3s all ease;
         }
 
+        .card2 img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 0;
+            transition: 0.3s all ease;
+        }
+
         .card p {
-                    
+
             font-size: 12px;
             overflow: auto;
-            text-align:center;
+            text-align: center;
         }
 
         .card.clicked {
@@ -146,6 +158,24 @@
             background-color: #f15f5f;
             animation: shake 0.5s;
         }
+
+        #score {
+            margin-bottom: 10px;
+        }
+
+        .desativado {
+
+
+            cursor: not-allowed;
+            pointer-events: none;
+
+        }
+
+
+
+
+
+
 
         @keyframes shake {
             0% {
@@ -199,7 +229,7 @@
 
 </head>
 
-<body onload="paragrafotexto()">
+<body>
 
 
 
@@ -235,12 +265,12 @@
         <h1 id="h1"> Texto 00 – Modelo Texto </h1>
 
 
-        <p><strong> Conteúdo:</strong>: Deriva continental, Tectônica de placas, isostasia, Correntes de Convecção,
+        <p><strong> Conteúdo:</strong> Deriva continental, Tectônica de placas, isostasia, Correntes de Convecção,
             tipos de falhas tectônicas.
 
         </p>
 
-        <p><strong>Objetivo:</strong> : Entender os processos de separação dos continentes terrestres por meio da teoria
+        <p><strong>Objetivo:</strong> Entender os processos de separação dos continentes terrestres por meio da teoria
             da deriva continental e tectônica de placas. </p>
 
         <button class="btnShow"
@@ -310,6 +340,38 @@
 
     </div>
 
+    <p> Lembra que o território foi considerado um <span
+            onclick="document.getElementById('arquipelago').style.display='block'" class="w3-yellow">arquipélago</span>
+        econômico? Por conta da sua falta de integração entre as regiões e
+        ainda mais com a colonização de Portugal que exigia e organizava toda a produção daqui para a Metrópole.</p>
+
+
+    <div id="arquipelago" class="w3-modal w3-margin-top">
+        <div class="w3-modal-content">
+            <div class="w3-container w3-padding">
+                <span onclick="document.getElementById('arquipelago').style.display='none'"
+                    class="w3-button w3-red w3-display-topright">&times;</span>
+                <p>"O Brasil foi, durante muitos séculos, um grande arquipélago, formado por subespaços, que
+                    evoluíram, segundo lógicas próprias, ditadas em grande parte por suas relações com o mundo
+                    exterior. Havia, sem dúvida, para cada um desses subespaços, polos dinâmicos internos. Estes,
+                    porém, tinham entre si escassa relação, não sendo interdependentes". <span class="w3-small">Mílton
+                        Santos. A Urbanização brasileira, 1993. Adaptado</span>.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <span
+        onclick="this.innerHTML='conjuntura (combinação ou concorrência de acontecimentos ou eventos num dado momento; circunstância, situação.)'"><mark>conjuntura</mark></span>
+
+
+    <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+
+        “Vai-se à escola para
+        <span class="w3-small w3-sand">(LACOSTE, 2003, p.55).</span>
+    </div>
 
 
 
@@ -450,7 +512,7 @@
             onclick="confereBox('acertou, parabéns', 'resp40','globinho40')">Conferir</button>
 
 
- 
+
         <p id="resp40"></p>
 
 
@@ -564,63 +626,87 @@
     </div>
 
 
-    <div class="container">
-        <h2 class="heading">Memory Game using JavaScript</h2>
-        <div class="cards">
-            <div class="card" animal="duck">
-                <p>Regionalização</p>
-            </div>
-            <div class="card" animal="lion">
-                <img src="https://imgkub.com/images/2022/02/16/lion.png" alt="" />
-            </div>
-            <div class="card" animal="dog">
-                <img src="https://imgkub.com/images/2022/02/16/dog.png" alt="" />
-            </div>
-            <div class="card" animal="tiger">
-                <img src="https://imgkub.com/images/2022/02/16/tiger.png" alt="" />
-            </div>
-            <div class="card" animal="jaguar">
-                <img src="https://imgkub.com/images/2022/02/16/jaguar.png
-      " alt="" />
-            </div>
-            <div class="card" animal="cat">
-                <img src="https://imgkub.com/images/2022/02/16/cat.png" alt="" />
-            </div>
-            <div class="card" animal="duck">
-                <p>Regionalização do mundo</p>
-            </div>
-            <div class="card" animal="dog">
-                <img src="https://imgkub.com/images/2022/02/16/dog.png" alt="" />
-            </div>
-            <div class="card" animal="jaguar">
-                <img src="https://imgkub.com/images/2022/02/16/jaguar.png
-      " alt="" />
-            </div>
-            <div class="card" animal="lion">
-                <img src="https://imgkub.com/images/2022/02/16/lion.png" alt="" />
-            </div>
-            <div class="card" animal="cat">
-                <img src="https://imgkub.com/images/2022/02/16/cat.png" alt="" />
-            </div>
-            <div class="card" animal="snake">
-                <img src="https://imgkub.com/images/2022/02/16/snake.png" alt="" />
-            </div>
-            <div class="card" animal="tiger">
-                <img src="https://imgkub.com/images/2022/02/16/tiger.png" alt="" />
-            </div>
-            <div class="card" animal="panther">
-                <img src="https://imgkub.com/images/2022/02/16/panther.png" alt="" />
-            </div>
-            <div class="card" animal="panther">
-                <img src="https://imgkub.com/images/2022/02/16/panther.png" alt="" />
-            </div>
-            <div class="card" animal="snake">
-                <img src="https://imgkub.com/images/2022/02/16/snake.png" alt="" />
+    <div class="topico">
+
+        <p class="caixa">Reforce seu conhecimento</p>
+
+        <div class="container">
+            <h4 class="">Selecione os conceitos com as imagens correspondentes e relacione as capitais com seus Estados:
+            </h4>
+            <!-- <div class="w3-margin">Acertos: <span id="score">0</span></div> -->
+            <div class="cards">
+
+
+                <div class="card" animal="1">
+                    <p>Regionalização</p>
+                </div>
+
+                <div class="card" animal="1">
+                    <img src="ts02mapa02.png" alt="Acre">
+                </div>
+
+
+                <div class="card" animal="2">
+                    <img src="ts02mapa05.png" alt="Pará">
+                </div>
+
+                <div class="card" animal="2">
+                    <p>Belém</p>
+                </div>
+
+                <div class="card" animal="3">
+                    <p>Rio Branco</p>
+                </div>
+
+                <div class="card" animal="3">
+                    <img src="ts02mapa01.png" alt="Regionalização">
+                </div>
+
+                <div class="card" animal="4">
+                    <img src="ts02mapa03.png" alt="Amapá">
+                </div>
+
+                <div class="card" animal="4">
+                    <p>Macapá</p>
+                </div>
+
+                <div class="card" animal="5">
+                    <img src="ts02mapa04.png" alt="Roraima">
+                </div>
+
+                <div class="card" animal="5">
+                    <p>Boa Vista</p>
+                </div>
+
+                <div class="card" animal="6">
+                    <img src="ts02mapa06.png" alt="Rondônia">
+                </div>
+
+                <div class="card" animal="6">
+                    <p>Porto Velho</p>
+                </div>
+
+
+
+
+
+
+
             </div>
         </div>
+
+
+
+
+        <br>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+
+
     </div>
 
-    <!-- Download all Images- https://bit.ly/memory-game-images -->
 
 
     <div class="topico">
@@ -631,7 +717,7 @@
 
         <!--  inserir pseudo elemento na primeira letra -->
 
-       
+
 
 
 
@@ -751,8 +837,9 @@
 
 
 
-    <div class="w3-padding-48">
 
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span>  -->
         <span id="txtBarra">0%</span>
         <progress value="0" max="100" id="progress"></progress>
     </div>
@@ -785,30 +872,34 @@
         <h3> <strong> Referências bibliográficas </strong></h3>
 
 
+        <p>
+            Agência Senado. Negro continuará sendo oprimido enquanto o Brasil não se assumir racista, dizem
+            especialistas. Disponível em:
+            https://www12.senado.leg.br/noticias/infomaterias/2020/06/negro-continuara-sendo-oprimido-enquanto-o-brasil-nao-se-assumir-racista-dizem-especialistas.
+            Acesso em: 17 ago. 2022.
 
-        <p> DAMBRÓS, Cristiane. <strong>Geografia física</strong>. Londrina: Editora e Distribuidora
-            Educacional S.A., 2017.</p>
-
-        <p>PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>.
-            4a edição. Tradução: MENEGAT, R. Porto Alegre, Bookman. 2006.
         </p>
 
 
-        <p>O buraco mais profundo já cavado na Terra. Disponível em:www.bbc. Acesso em: 17.mar.2021.
+        <p> IBGE - Conheça o Brasil – População cor ou raça. Disponível em: https://educa.ibge.gov.br/jovens/
+            conheca-o-brasil/populacao/18319-cor-ou-raca.html. Acesso em: 28 jul. 2022.</p>
+
+        <p>Navios portugueses e brasileiros fizeram mais de 9 mil viagens com africanos escravizados. Disponível em:
+            https://www.bbc.com/portuguese/brasil-45092235#:~:text=4%2C8%20milh%C3%B5es%20de%20africanos,de%20mais%20de%20tr%C3%AAs%20s%C3%A9culos.
+            Acesso em: 17 ago. 2022.</p>
+
+
+        <p>SANTOS, Milton. Ser negro no Brasil hoje. Disponível em:
+            https://www1.folha.uol.com.br/fsp/mais/fs0705200007.htm. Acesso em: 17 ago. 2022.
+            Somos todos iguais? Retratos (A revista do IBGE), n.11, maio 2018.
         </p>
 
-        <p>'Um planeta dentro de outro': estudo mostra que centro da Terra é 'sólido e macio'.
-            Disponível em: www.terra.com.br Acesso em: 17.mar.2021.
+
+      
+        <p>  VESENTINI, José William.<strong>  Geografia: o mundo em transição. Ensino médio.</strong>. 2. ed. – São Paulo: Ática, 2013. 
         </p>
 
 
-
-        <p>TOLEDO, Maria Cristina Mota.<strong> Estrutura interna da Terra</strong>. Disponível em:
-            https://midia.atp.usp.br/plc/plc0011/
-            impressos/plc0011_03.pdf
-        </p>
-
-        <p>WHAT'S WHERE ON EARTH - ATLAS. London: Penguim Random House, 2017. </p>
 
     </div>
     <br><br>
@@ -819,6 +910,15 @@
 
 
     <script>
+
+
+
+        //  function numButton() {
+        //             numB++;
+        //             document.getElementById("numero").innerHTML = numB;
+        //             console.log(numB);
+        //         }
+
 
 
         // function addNota(pontos)
@@ -1141,9 +1241,9 @@
         suffleImage();
 
 
-        function suffleImage(){
+        function suffleImage() {
 
-            card.forEach(c=> {
+            card.forEach(c => {
 
                 const num = [...Array(card.length).keys()];
                 const random = Math.floor(Math.random() * card.length);
