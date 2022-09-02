@@ -213,3 +213,4 @@ h6 {
 .justificadoDireita{display: flex; justify-content: right; position: relative}
 
 
+.justificadoEsquerda{display: flex; justify-content: left; position: relative}

@@ -19,7 +19,7 @@
 
     <style>
         .topico {
-            display: block;
+            display: none;
         }
 
         .topico:nth-child(1),
@@ -59,168 +59,6 @@
 
         .postit-tp9>a:hover {
             text-decoration: underline;
-        }
-
-
-
-
-        /* 
-Css do memory card */
-
-        .container {
-            display: grid;
-            place-items: center;
-
-        }
-
-        .heading {
-            text-align: center;
-            font-family: "Poppins", sans-serif;
-            font-size: 2rem;
-            font-weight: 500;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(4, auto);
-            grid-gap: 1em;
-        }
-
-
-        @media screen and (max-width: 680px) {
-
-
-
-
-            .cards {
-                display: grid;
-                grid-template-columns: repeat(2, auto);
-                grid-gap: 1em;
-            }
-
-
-
-
-        }
-
-        .card {
-            height: 140px;
-            width: 140px;
-            background-color: #ffff00;
-            border-radius: 10px;
-            display: grid;
-            place-items: center;
-            cursor: pointer;
-            transition: 0.3s all ease;
-
-
-        }
-
-        .card:hover {
-            transform: scale(1.03);
-        }
-
-        .card img {
-            width: 90%;
-            max-height: 120px;
-            opacity: 1;
-            transition: 0.3s all ease;
-        }
-
-        .card2 img {
-            width: 90%;
-            max-height: 120px;
-            opacity: 0;
-            transition: 0.3s all ease;
-        }
-
-        .card p {
-
-            font-size: 12px;
-            overflow: auto;
-            text-align: center;
-        }
-
-        .card.clicked {
-            background-color: orange;
-        }
-
-        .card.checked {
-            background-color: lightgreen;
-        }
-
-        .card.clicked img,
-        .card.checked img {
-            opacity: 1;
-        }
-
-        .card.shake {
-            background-color: #f15f5f;
-            animation: shake 0.5s;
-        }
-
-        #score {
-            margin-bottom: 10px;
-        }
-
-        .desativado {
-
-
-            cursor: not-allowed;
-            pointer-events: none;
-
-        }
-
-
-
-
-
-
-
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            10% {
-                transform: translate(-1px, -2px) rotate(-1deg);
-            }
-
-            20% {
-                transform: translate(-3px, 0px) rotate(1deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            40% {
-                transform: translate(1px, -1px) rotate(1deg);
-            }
-
-            50% {
-                transform: translate(-1px, 2px) rotate(-1deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            70% {
-                transform: translate(3px, 1px) rotate(-1deg);
-            }
-
-            80% {
-                transform: translate(-1px, -1px) rotate(1deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(1px, -2px) rotate(-1deg);
-            }
         }
     </style>
 
@@ -347,7 +185,8 @@ Css do memory card */
             <h2 class="fontePixel"> <img src="micro2.png" alt="microfone" width="84" height="84"> Duvid - Entrevista
             </h2>
 
-            <p><strong>Essa semana a convidado é o professor Darcy Ribeiro (1922-1997 - in memoriam).</strong> </p>
+            <p><strong>Essa semana a convidado é o professor Darcy Ribeiro (1922-1997 - <em>in memoriam</em>).</strong>
+            </p>
 
         </div>
 
@@ -495,9 +334,27 @@ Css do memory card */
         </p>
 
 
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  MostrarFrase('resp1','globinho1', 'desativar1', 'essa entrevista foi sensacional!','3');this.style.display='none'">Proximo</button>
         <hr>
 
+
+
+
+
+        <p id="resp1"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+
+
+
+        <hr>
 
     </div>
 
@@ -540,7 +397,9 @@ Css do memory card */
 
 
         <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
+
+
+
 
 
     </div>
@@ -600,53 +459,71 @@ Css do memory card */
 
 
 
-        <p> No meio acadêmico, hoje, há amplo consenso de da ineficácia teórica do termo raça como conceito biológico, tendo sido definitivamente erradicado pela genética, mas, ao mesmo tempo, multiplicam-se as constatações de sua persistência como realidade simbólica extremamente eficaz nos seus efeitos sociais.</p>
+        <p> No meio acadêmico, hoje, há amplo consenso de da ineficácia teórica do termo raça como conceito biológico,
+            tendo sido definitivamente erradicado pela genética, mas, ao mesmo tempo, multiplicam-se as constatações de
+            sua persistência como realidade simbólica extremamente eficaz nos seus efeitos sociais.</p>
 
-        <p> Isso se confirma quando, por exemplo, o IBGE realizou um pesquisa específica sobre as características étnico-raciais da população em 2008. Nessa pesquisa, o quesito das respostas é fechado, quer dizer, o entrevistado responde a partir de opções já estabelecidas. Entretanto, quando se fez um teste com questões abertas, surgiram mais de 300 respostas, como cor branca, clara, morena, escura, misturada, rosa, dentre inúmeras outras.</p>
+        <p> Isso se confirma quando, por exemplo, o IBGE realizou um pesquisa específica sobre as características
+            étnico-raciais da população em 2008. Nessa pesquisa, o quesito das respostas é fechado, quer dizer, o
+            entrevistado responde a partir de opções já estabelecidas. Entretanto, quando se fez um teste com questões
+            abertas, surgiram mais de 300 respostas, como cor branca, clara, morena, escura, misturada, rosa, dentre
+            inúmeras outras.</p>
 
 
-        <p>Para se ter uma ideia da distribuição da população de acordo com a raça, temos os dados do último Censo de 2010: </p>
+        <p>Para se ter uma ideia da distribuição da população de acordo com a raça, temos os dados do último Censo de
+            2010: </p>
 
-        <div class="w3-margin"><img id="imagem1" src="ts03f01.png" alt="ts03f01" class="w3-mobile" >
+        <div class="w3-margin"><img id="imagem1" src="ts03f01.png" alt="ts03f01" class="w3-mobile">
 
-            <span class="w3-small w3-margin-left" id="citacao1" > Fonte: IBGE. Censo demográfico 2010.</span>
-        
-        
+            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: IBGE. Censo demográfico 2010.</span>
+
+
         </div>
 
 
-        <p>É interessante notar que a maioria da população brasileira é formada por pardos e pretos. Em 2019, essa situação sofreu uma modificação: </p>
-
-      
-
+        <p>É interessante notar que a maioria da população brasileira é formada por pardos e pretos. Em 2019, essa
+            situação sofreu uma modificação: </p>
 
 
-        <p> O IBGE pesquisa a cor ou raça da população brasileira com base na declaração. Ou seja, as pessoas são perguntadas sobre sua cor e podem se declarar como brancas, pretas, pardas, indígenas ou amarelas.</p>
-
-        <p> Se fôssemos uma pequena comunidade de 100 pessoas, 43 brasileiros se declarariam como brancos, 47 como pardos, nove como pretos e, aproximadamente, um brasileiro se declararia como amarelo ou indígena.Veja:</p>
-
-        <div class="w3-margin"><img id="imagem2" src="ts03f02.png" alt="ts03f02" class="w3-mobile" ></div>
 
 
-        <p> Porém, somente uma tabela não permite visualizar a distribuição completa pelo território. Nesse caso, é necessário um mapa, conforme abaixo:</p>
+
+        <p> O IBGE pesquisa a cor ou raça da população brasileira com base na declaração. Ou seja, as pessoas são
+            perguntadas sobre sua cor e podem se declarar como brancas, pretas, pardas, indígenas ou amarelas.</p>
+
+        <p> Se fôssemos uma pequena comunidade de 100 pessoas, 43 brasileiros se declarariam como brancos, 47 como
+            pardos, nove como pretos e, aproximadamente, um brasileiro se declararia como amarelo ou indígena.Veja:</p>
+
+        <div class="w3-margin"><img id="imagem2" src="ts03f02.png" alt="ts03f02" class="w3-mobile"></div>
+
+
+        <p> Porém, somente uma tabela não permite visualizar a distribuição completa pelo território. Nesse caso, é
+            necessário um mapa, conforme abaixo:</p>
 
 
         <p class="w3-center"> <strong>Mapa de distribuição racial no Brasil (2010)</strong></p>
 
 
-        <div class="w3-margin"><img id="imagem3" src="ts03f03.png" alt="ts03f03" class="w3-mobile" >
-            <span class="w3-small w3-margin-left" id="citacao3" > Fonte: http://patadata.org/maparacial/. Acesso em 10 ago. 2022. </span>
-        
+        <div class="w3-margin"><img id="imagem3" src="ts03f03.png" alt="ts03f03" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao3"> Fonte: http://patadata.org/maparacial/. Acesso em 10
+                ago. 2022. </span>
+
         </div>
 
-        <p>No mapa é possível observar o predomínio da população branca nas regiões sudeste e sul do Brasil. O mapa, evidentemente, não é uma representação idêntica à realidade, mas fornece um panorama interessante sobre a localização dos indivíduos no território e também seu vazio demográfico, isto é, área onde não há muitas pessoas concentradas.</p>
+        <p>No mapa é possível observar o predomínio da população branca nas regiões sudeste e sul do Brasil. O mapa,
+            evidentemente, não é uma representação idêntica à realidade, mas fornece um panorama interessante sobre a
+            localização dos indivíduos no território e também seu vazio demográfico, isto é, área onde não há muitas
+            pessoas concentradas.</p>
 
-        <p>Vamos falar de matriz étnica quando quisermos nos referir a formação da população brasileira baseada em brancos, negros africanos e povos indígenas. Nossa população formou-se tanto pela colonização como pela vinda de imigrantes. É uma história de concentração relativa e de miscigenações.</p>
+        <p>Vamos falar de matriz étnica quando quisermos nos referir a formação da população brasileira baseada em
+            brancos, negros africanos e povos indígenas. Nossa população formou-se tanto pela colonização como pela
+            vinda de imigrantes. É uma história de concentração relativa e de miscigenações.</p>
 
-        <p>Iniciaremos essa jornada pela origem histórica, depois sobre os índios, em seguida sobre a participação dos negros e, por fim, do papel da imigração na formação da população do Brasil.</p>
-    
-    
-        
+        <p>Iniciaremos essa jornada pela origem histórica, depois sobre os índios, em seguida sobre a participação dos
+            negros e, por fim, do papel da imigração na formação da população do Brasil.</p>
+
+
+
 
 
         <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
@@ -668,38 +545,67 @@ Css do memory card */
 
 
 
-        <p>Em 1500 havia, por volta, de 5 milhões de índios no Brasil. Depois entraram cerca de 6 milhões de negros e, aproximadamente, 4 milhões de brancos. O Nordeste foi a primeira região a ser colonizada, com mão de obra escrava para a cultura da cana-de-açúcar. No Norte ocorreu ocupação tardia com influência indígena, em caboclos (brancos e índios) e cafuzos (negros e índios). No Sudeste, predomínio de brancos imigrantes que vieram trabalhar na cultura de café, após o término da escravidão. No Sul, maioria branca, imigrantes que receberam propriedades para ocupar essa parcela do território. </p>
+        <p>Em 1500 havia, por volta, de 5 milhões de índios no Brasil. Depois entraram cerca de 6 milhões de negros e,
+            aproximadamente, 4 milhões de brancos. O Nordeste foi a primeira região a ser colonizada, com mão de obra
+            escrava para a cultura da cana-de-açúcar. No Norte ocorreu ocupação tardia com influência indígena, em
+            caboclos (brancos e índios) e cafuzos (negros e índios). No Sudeste, predomínio de brancos imigrantes que
+            vieram trabalhar na cultura de café, após o término da escravidão. No Sul, maioria branca, imigrantes que
+            receberam propriedades para ocupar essa parcela do território. </p>
 
-        <p>A grande marca da população brasileira está baseada na miscigenação ou no cruzamento entre grupos étnicos. Diferentes de outros países, a cor da pele tem um peso grande no Brasil, daí a denominação de mulato (branco e negro). Esse critério não leva em conta a herança genética da pessoa. Há países que classificam sua população pelas origens e pela identificação cultural de cada um. Mesmo com pele branca e cabelos lisos, há aqueles que preferem se declarar afro-americanos ou indígenas, pois possuem ancestrais desses grupos étnicos. Entretanto, esse tema vem mudando ao longo das décadas. </p>
+        <p>A grande marca da população brasileira está baseada na miscigenação ou no cruzamento entre grupos étnicos.
+            Diferentes de outros países, a cor da pele tem um peso grande no Brasil, daí a denominação de mulato (branco
+            e negro). Esse critério não leva em conta a herança genética da pessoa. Há países que classificam sua
+            população pelas origens e pela identificação cultural de cada um. Mesmo com pele branca e cabelos lisos, há
+            aqueles que preferem se declarar afro-americanos ou indígenas, pois possuem ancestrais desses grupos
+            étnicos. Entretanto, esse tema vem mudando ao longo das décadas. </p>
 
-        <div class="w3-margin"><img id="imagem4" src="ts03f04.png" alt="ts03f04" class="w3-mobile" >
-            <span class="w3-small w3-margin-left" id="citacao4" > Fonte: IBGE. Recenseamentos gerais de 1950, 1980, 2000 e 2010. </span>
-        
+        <div class="w3-margin"><img id="imagem4" src="ts03f04.png" alt="ts03f04" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao4"> Fonte: IBGE. Recenseamentos gerais de 1950, 1980, 2000
+                e 2010. </span>
+
         </div>
-    
-    
-       
-
-        <p> As informações sobre etnias nem sempre fizeram parte das pesquisas no Brasil. Os Censos de 1960 e 1970, por exemplo, não registraram esses dados. Na tabela acima é possível observar um ajuste sobre o pertencimento dos grupos étnicos. Sabemos hoje que o Brasil é constituído por maioria parda e negra, o que tem ligação direta com o passado de formação da população.</p>
 
 
-        <p>Houve melhorias com o passar das décadas, como incluir os indígenas em grupos separados dos orientais. Entretanto, a noção de pardo ainda pode confundir, pois incluiria tanto descendentes de africanos como de indígenas. </p>
 
 
-        <p>Quais os motivos dessa mudança de percepção ou de atitude dos brasileiros em sua declaração sobre qual grupo étnico pertencem? </p>
+        <p> As informações sobre etnias nem sempre fizeram parte das pesquisas no Brasil. Os Censos de 1960 e 1970, por
+            exemplo, não registraram esses dados. Na tabela acima é possível observar um ajuste sobre o pertencimento
+            dos grupos étnicos. Sabemos hoje que o Brasil é constituído por maioria parda e negra, o que tem ligação
+            direta com o passado de formação da população.</p>
 
 
-        <p>Há diversos motivos, mas o fato de que nas décadas passadas a maioria da população se declarava de cor branca com mais de 60% na década de 1950, mesmo tendo descendentes negros ou indígenas tem a ver com o preconceito existente na sociedade brasileira. Porém, com as conquistas e avanço da legislação em favor dos direitos dos indígenas e, por exemplo, da demarcação de suas terras, além das políticas de cotas nas universidades para negros, tudo isso contribuiu para uma mudança de percepção e culminou em um maior ajustamento da realidade entre a população e seus grupos étnicos. </p>
-
-        <p> O Censo de 2010 revelou, da mesma forma, a distribuição e diferenças regionais em relação às etnias. A região Sul concentrava 78% da proporção de brancos, em seguida pela região Sudeste 56%. Nas regiões Norte e Nordeste esses dados são reduzidos, com 23% e 29% respectivamente do total.</p>
-
-        <p>Na Região concentram quase 40% dos indígenas do Brasil e quase 70% se declaram pardos. Na região Nordeste há o maior percentual de negros (8%) e pardos, a segunda maior proporção (62%). </p>
+        <p>Houve melhorias com o passar das décadas, como incluir os indígenas em grupos separados dos orientais.
+            Entretanto, a noção de pardo ainda pode confundir, pois incluiria tanto descendentes de africanos como de
+            indígenas. </p>
 
 
-        <p>Em pesquisas envolvendo amostras de DNA nos grupos considerados brancos, constatou-se uma média de 33% de linhagens provenientes de indígenas e 28% de africanas. A miscigenação no Brasil ocorreu com heranças genéticas a partir do sexo feminino, isto é, essa mistura foi resultado do homem branco europeu com mulheres indígenas ou africanas. </p>
+        <p>Quais os motivos dessa mudança de percepção ou de atitude dos brasileiros em sua declaração sobre qual grupo
+            étnico pertencem? </p>
 
 
-        <p>Isso porque na época da colonização havia poucas mulheres europeias. Os colonizadores raramente traziam as mulheres e filhas. </p>
+        <p>Há diversos motivos, mas o fato de que nas décadas passadas a maioria da população se declarava de cor branca
+            com mais de 60% na década de 1950, mesmo tendo descendentes negros ou indígenas tem a ver com o preconceito
+            existente na sociedade brasileira. Porém, com as conquistas e avanço da legislação em favor dos direitos dos
+            indígenas e, por exemplo, da demarcação de suas terras, além das políticas de cotas nas universidades para
+            negros, tudo isso contribuiu para uma mudança de percepção e culminou em um maior ajustamento da realidade
+            entre a população e seus grupos étnicos. </p>
+
+        <p> O Censo de 2010 revelou, da mesma forma, a distribuição e diferenças regionais em relação às etnias. A
+            região Sul concentrava 78% da proporção de brancos, em seguida pela região Sudeste 56%. Nas regiões Norte e
+            Nordeste esses dados são reduzidos, com 23% e 29% respectivamente do total.</p>
+
+        <p>Na Região concentram quase 40% dos indígenas do Brasil e quase 70% se declaram pardos. Na região Nordeste há
+            o maior percentual de negros (8%) e pardos, a segunda maior proporção (62%). </p>
+
+
+        <p>Em pesquisas envolvendo amostras de DNA nos grupos considerados brancos, constatou-se uma média de 33% de
+            linhagens provenientes de indígenas e 28% de africanas. A miscigenação no Brasil ocorreu com heranças
+            genéticas a partir do sexo feminino, isto é, essa mistura foi resultado do homem branco europeu com mulheres
+            indígenas ou africanas. </p>
+
+
+        <p>Isso porque na época da colonização havia poucas mulheres europeias. Os colonizadores raramente traziam as
+            mulheres e filhas. </p>
 
 
 
@@ -721,49 +627,60 @@ Css do memory card */
 
 
 
-        <p>De acordo com os dados do Censo 2010, no Brasil vivem 896.917 pessoas que se declaram como indígenas. Desse total de pessoas, 57,7% vivem em terras indígenas oficialmente reconhecidas. </p>
+        <p>De acordo com os dados do Censo 2010, no Brasil vivem 896.917 pessoas que se declaram como indígenas. Desse
+            total de pessoas, 57,7% vivem em terras indígenas oficialmente reconhecidas. </p>
 
-        <div class="w3-margin"><img id="imagem5" src="ts03f05.png" alt="ts03f05" class="w3-mobile" >
-        
-        
-         
+        <div class="w3-margin"><img id="imagem5" src="ts03f05.png" alt="ts03f05" class="w3-mobile">
+
+
+
         </div>
-    
+
 
         <p>A estimativa é a de que viviam cerca de 3,5 milhões de indígenas na época da chegada dos portugueses. </p>
 
-        <p>Já em relação as etnias, o IBGE contabilizou 305 diferentes no Brasil. Os principais troncos étnicos e suas ramificações são: </p>
+        <p>Já em relação as etnias, o IBGE contabilizou 305 diferentes no Brasil. Os principais troncos étnicos e suas
+            ramificações são: </p>
 
         <div class="w3-card-4 w3-yellow w3-padding-small">
-        <p>Macro-Jê - Boróro / Guató / Jê / Karajá / Krenák / Maxakali / Ofayé / Rikbaktsa / Yatê. </p>
+            <p>Macro-Jê - Boróro / Guató / Jê / Karajá / Krenák / Maxakali / Ofayé / Rikbaktsa / Yatê. </p>
 
 
-        <p>Tupi - Arikém / Awetí / Jurúna / Mawé / Mondé / Mundurukú / Puroborá / Ramaráma / Tuparí / Tupi- Guarani. </p>
+            <p>Tupi - Arikém / Awetí / Jurúna / Mawé / Mondé / Mundurukú / Puroborá / Ramaráma / Tuparí / Tupi- Guarani.
+            </p>
 
         </div>
 
-        <p>Com relação à língua falada, o Censo 2010 identificou 274 línguas indígenas no Brasil, sendo que 57,1% dos indígenas não falam a língua indígena, já 76,9% deles falam a Língua Portuguesa. </p>
+        <p>Com relação à língua falada, o Censo 2010 identificou 274 línguas indígenas no Brasil, sendo que 57,1% dos
+            indígenas não falam a língua indígena, já 76,9% deles falam a Língua Portuguesa. </p>
 
-        <p>Entre os indígenas que vivem em Terras Indígenas esses percentuais se alteram, 57,3% falam alguma língua indígena e 28,8% não falam a Língua Portuguesa. </p>
+        <p>Entre os indígenas que vivem em Terras Indígenas esses percentuais se alteram, 57,3% falam alguma língua
+            indígena e 28,8% não falam a Língua Portuguesa. </p>
 
-        <p> A maior parte dos indígenas são alfabetizados (76,6%). Inclusive os indígenas que vivem em Terras Indígenas são alfabetizados, em sua maioria (67,7%).</p>
-
-
-        <p>É importante lembrar que o termo índio ou indígenas foi uma classificação imposta pelos colonizadores, pois a população <span
-            onclick="this.innerHTML='autóctone (quem é natural do país ou da região que habita e descende das raças que ali sempre viveram)'"><mark>autóctone</mark></span>, que já ocupava esse território se identificava como Xavante, Karajá, Suyá etc. </p>
+        <p> A maior parte dos indígenas são alfabetizados (76,6%). Inclusive os indígenas que vivem em Terras Indígenas
+            são alfabetizados, em sua maioria (67,7%).</p>
 
 
-        <p>Obviamente que para garantir seus direitos houve através dos séculos uma unidade e uma união em torno de uma minoria étnica no intuito de reivindicar a solução dos problemas indígenas, seja no reconhecimento das terras indígenas ou na forma de relação com a terra, diferente da sociedade dominante. </p>
+        <p>É importante lembrar que o termo índio ou indígenas foi uma classificação imposta pelos colonizadores, pois a
+            população <span
+                onclick="this.innerHTML='autóctone (quem é natural do país ou da região que habita e descende das raças que ali sempre viveram)'"><mark>autóctone</mark></span>,
+            que já ocupava esse território se identificava como Xavante, Karajá, Suyá etc. </p>
 
-        <p>Nas próximas aulas veremos os problemas da política indigenista e da remarcação de terras que envolvem conflitos com brancos pelo país. </p>
 
-        <div class="w3-margin"><img id="imagem7" src="ts03f07.png" alt="ts03f05" class="w3-mobile" >
-            <span class="w3-small w3-margin-left" id="citacao7" > Fonte: https://portalamazonia.com/amazonia/
+        <p>Obviamente que para garantir seus direitos houve através dos séculos uma unidade e uma união em torno de uma
+            minoria étnica no intuito de reivindicar a solução dos problemas indígenas, seja no reconhecimento das
+            terras indígenas ou na forma de relação com a terra, diferente da sociedade dominante. </p>
+
+        <p>Nas próximas aulas veremos os problemas da política indigenista e da remarcação de terras que envolvem
+            conflitos com brancos pelo país. </p>
+
+        <div class="w3-margin"><img id="imagem7" src="ts03f07.png" alt="ts03f05" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao7"> Fonte: https://portalamazonia.com/amazonia/
                 terras-indigenas-ficarao-desprotegidas-entre-setembro-e-janeiro-de-2022.</span>
         </div>
-    
-       
-    
+
+
+
 
 
 
@@ -785,27 +702,40 @@ Css do memory card */
 
 
 
-        <p>Estima-se que 4,8 milhões de africanos foram transportados para o Brasil e vendidos como escravos, ao longo de mais de três séculos. Outros 670 mil morreram no caminho entre as mais de 9 mil viagens de navios entre o Brasil e o continente africano nas mais desumanas condições. </p>
+        <p>Estima-se que 4,8 milhões de africanos foram transportados para o Brasil e vendidos como escravos, ao longo
+            de mais de três séculos. Outros 670 mil morreram no caminho entre as mais de 9 mil viagens de navios entre o
+            Brasil e o continente africano nas mais desumanas condições. </p>
 
-        <p>Todo o processo de escravização dos africanos pelos colonizadores e seu uso como mão de obra foi marcada pela desumanidade. </p>
+        <p>Todo o processo de escravização dos africanos pelos colonizadores e seu uso como mão de obra foi marcada pela
+            desumanidade. </p>
 
-        <p>As línguas e a cultura africana foi quase que totalmente extirpada de cada grupo que chegava no Brasil. Banto, Fulas ou Kanembu eram proibidos, inclusive, de estar na mesma vila. </p>
+        <p>As línguas e a cultura africana foi quase que totalmente extirpada de cada grupo que chegava no Brasil.
+            Banto, Fulas ou Kanembu eram proibidos, inclusive, de estar na mesma vila. </p>
 
 
-        <p>Aliás, o próprio desenvolvimento do capitalismo, a escravidão e nascimento de outro tipo de economia internacional devem ser analisados em conjunto. </p>
+        <p>Aliás, o próprio desenvolvimento do capitalismo, a escravidão e nascimento de outro tipo de economia
+            internacional devem ser analisados em conjunto. </p>
 
 
         <p>Por que escravizar outros seres humanos, ao invés de contratar trabalhadores livres assalariados? </p>
 
-        
-        <p>Claro que o Brasil estava inserido na política mercantilista da época, ou seja, enriquecer a metrópole através da produção de gêneros tropicais e da extração de metrais preciosos com baixo custo. </p>
 
-        <p>Dado o tamanho do território brasileiro com milhões de hectares de terras disponíveis, os europeus não precisariam trabalhar para ninguém, mas cultivar a própria terra.  </p>
+        <p>Claro que o Brasil estava inserido na política mercantilista da época, ou seja, enriquecer a metrópole
+            através da produção de gêneros tropicais e da extração de metrais preciosos com baixo custo. </p>
 
-        <p>O objetivo principal era o lucro que o tráfico de escravos proporcionava com o transporte de seres humanos da África para a América. Haviam distinções entre a escravidão indígena e a africana. Características de cada etnia, além de preocupação política da Metrópole com a possibilidade de revoltos dos colonos no Brasil. </p>
+        <p>Dado o tamanho do território brasileiro com milhões de hectares de terras disponíveis, os europeus não
+            precisariam trabalhar para ninguém, mas cultivar a própria terra. </p>
+
+        <p>O objetivo principal era o lucro que o tráfico de escravos proporcionava com o transporte de seres humanos da
+            África para a América. Haviam distinções entre a escravidão indígena e a africana. Características de cada
+            etnia, além de preocupação política da Metrópole com a possibilidade de revoltos dos colonos no Brasil. </p>
 
 
-        <p> Entretanto, com a Revolução Industrial iniciado no século XVIII e intensificada no século XIX, as máquinas aumentaram a produtividade capitalista a tal ponto que foi necessário ampliar o mercado consumidor. Por isso, segundo os historiadores, O Reino Unido decidiu pôr fim ao comércio de escravos em suas colônias a partir de 1807 e em todo o mundo. Portugal e Brasil foram os países que mais resistiram. No Brasil o tráfico negreiro foi proibido em 1850 e a escravidão em 1888 (último país do mundo a tomar essa decisão).</p>
+        <p> Entretanto, com a Revolução Industrial iniciado no século XVIII e intensificada no século XIX, as máquinas
+            aumentaram a produtividade capitalista a tal ponto que foi necessário ampliar o mercado consumidor. Por
+            isso, segundo os historiadores, O Reino Unido decidiu pôr fim ao comércio de escravos em suas colônias a
+            partir de 1807 e em todo o mundo. Portugal e Brasil foram os países que mais resistiram. No Brasil o tráfico
+            negreiro foi proibido em 1850 e a escravidão em 1888 (último país do mundo a tomar essa decisão).</p>
 
 
         <p> </p>
@@ -832,35 +762,51 @@ Css do memory card */
 
 
 
-        <p>O geógrafo Milton Santos escreveu que:  </p>
+        <p>O geógrafo Milton Santos escreveu que: </p>
 
         <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-            
-            Ser negro no Brasil é, pois, com frequência, ser objeto de um olhar enviesado. A chamada boa sociedade parece considerar que há um lugar predeterminado, lá em baixo, para os negros e assim tranquilamente se comporta. Logo, tanto é incômodo haver permanecido na base da pirâmide social quanto haver "subido na vida"
 
-            <div class="w3-margin"><img id="imagem6" src="ts03f06.png" alt="ts03f06" class="w3-mobile" >
-                <span class="w3-small w3-margin-left" id="citacao6" > Fonte: https://vejasp.abril.com.br/
+            Ser negro no Brasil é, pois, com frequência, ser objeto de um olhar enviesado. A chamada boa sociedade
+            parece considerar que há um lugar predeterminado, lá em baixo, para os negros e assim tranquilamente se
+            comporta. Logo, tanto é incômodo haver permanecido na base da pirâmide social quanto haver "subido na vida"
+
+            <div class="w3-margin"><img id="imagem6" src="ts03f06.png" alt="ts03f06" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao6"> Fonte: https://vejasp.abril.com.br/
                     coluna/memoria/trajetoria-milton-santos-geografo/</span>
             </div>
-			
-		</div>
 
-      
-    
-
-        <p>Ao observar a realidade, vemos que há diferenças sociais e econômicas seculares e permanentes entre a população brasileira. Trata-se de um fato. As condições, além de não serem as mesmas, revelam um país de maioria parda e negra com um lugar inferior na hierarquia social para essa população, com salários mais baixos, vivendo em piores condições, e com os piores trabalhos, dentre outros aspectos.</p>
-
-        <p> Os dados recentes mostram que a média de rendimento mensal dos pardos correspondem a 80% da população branca e o dos negros a 74%. Por exemplo, se o rendimento mensal em média do branco é de 2.796 reais, o da população negra é de 1.608 reais. Os negros também compõem 63% dos pobres e 69% dos indigentes totais do Brasil, sem falar na taxa de desemprego que é maior nessa faixa da população, e o, acesso à educação através de anos de estudo, em média menor, dentre outras variáveis (Agência, 2022).</p>
+        </div>
 
 
-        <p>Se as desigualdades no Brasil são evidentes e muito fortes nos grupos étnicos, a situação dos negros é pior, com raras exceções. Veja o exemplo das mulheres negras, além do preconceito ocupam posições subalternas no mercado de trabalho. No Brasil, quase 80% das empregadas domésticas são de <span
-            onclick="this.innerHTML='autóctone (diz respeito à linha de gerações anteriores a uma determinada pessoa)'"><mark>ascendência</mark></span>   afro-brasileira. </p>
 
 
-        <p> Esse tipo de atividade, raro na maioria de outros países em virtude dos elevados salários desses profissionais, aqui no Brasil é praticamente cultural ou quase como uma forma de escravidão, embora as conquistas trabalhistas nas últimas décadas tenha reduzidos os abusos com esses profissionais.</p>
+        <p>Ao observar a realidade, vemos que há diferenças sociais e econômicas seculares e permanentes entre a
+            população brasileira. Trata-se de um fato. As condições, além de não serem as mesmas, revelam um país de
+            maioria parda e negra com um lugar inferior na hierarquia social para essa população, com salários mais
+            baixos, vivendo em piores condições, e com os piores trabalhos, dentre outros aspectos.</p>
+
+        <p> Os dados recentes mostram que a média de rendimento mensal dos pardos correspondem a 80% da população branca
+            e o dos negros a 74%. Por exemplo, se o rendimento mensal em média do branco é de 2.796 reais, o da
+            população negra é de 1.608 reais. Os negros também compõem 63% dos pobres e 69% dos indigentes totais do
+            Brasil, sem falar na taxa de desemprego que é maior nessa faixa da população, e o, acesso à educação através
+            de anos de estudo, em média menor, dentre outras variáveis (Agência, 2022).</p>
 
 
-        <p>A busca de direitos é um processo longo, mas o reconhecimento dos Quilombos (comunidades de negros despossuídos de terras) e, de forma polêmica, ações afirmativas, como cotas nos processos seletivos para universidades no país estão na ordem do dia para reduzir essas desigualdades.</p>
+        <p>Se as desigualdades no Brasil são evidentes e muito fortes nos grupos étnicos, a situação dos negros é pior,
+            com raras exceções. Veja o exemplo das mulheres negras, além do preconceito ocupam posições subalternas no
+            mercado de trabalho. No Brasil, quase 80% das empregadas domésticas são de <span
+                onclick="this.innerHTML='ascendência (diz respeito à linha de gerações anteriores a uma determinada pessoa)'"><mark>ascendência</mark></span>
+            afro-brasileira. </p>
+
+
+        <p> Esse tipo de atividade, raro na maioria de outros países em virtude dos elevados salários desses
+            profissionais, aqui no Brasil é praticamente cultural ou quase como uma forma de escravidão, embora as
+            conquistas trabalhistas nas últimas décadas tenha reduzidos os abusos com esses profissionais.</p>
+
+
+        <p>A busca de direitos é um processo longo, mas o reconhecimento dos Quilombos (comunidades de negros
+            despossuídos de terras) e ações afirmativas, como cotas nos processos seletivos para universidades no país
+            estão na ordem do dia para reduzir essas desigualdades.</p>
 
 
 
@@ -871,7 +817,7 @@ Css do memory card */
     </div>
 
 
-    
+
     <div class="topico">
 
         <h2>O papel da imigração no Brasil </h2>
@@ -881,35 +827,54 @@ Css do memory card */
 
         <p>A matriz étnica branca no Brasil foi formada por diversos povos, mas sobretudo pela população europeia. </p>
 
-        <p>No período colonial, além dos portugueses, entraram no Brasil espanhóis, holandeses, franceses, ingleses e italianos. </p>
+        <p>No período colonial, além dos portugueses, entraram no Brasil espanhóis, holandeses, franceses, ingleses e
+            italianos. </p>
 
-        <p>Após a independência do Brasil houve uma nova entrada maciça de imigrantes, principalmente entre 1850 a 1934 e se instalaram em diversas regiões do país. Os principais são: </p>
+        <p>Após a independência do Brasil houve uma nova entrada maciça de imigrantes, principalmente entre 1850 a 1934
+            e se instalaram em diversas regiões do país. Os principais são: </p>
 
 
-        <p><strong>Portugueses</strong> – Desde a colonização os portugueses, o grupo mais numeroso, contribuiu para a formação do povo brasileiro com a mistura com indígenas e negros. Nos grandes centros urbanos, principalmente Rio de Janeiro e São Paulo, a presença de portugueses é mais numerosa. </p>
+        <p><strong>Portugueses</strong> – desde a colonização os portugueses, o grupo mais numeroso, contribuiu para a
+            formação do povo brasileiro com a mistura com indígenas e negros. Nos grandes centros urbanos,
+            principalmente Rio de Janeiro e São Paulo, a presença de portugueses é mais numerosa. </p>
 
 
-        <p><strong>Italianos</strong> – Depois dos portugueses, outro grupo mais numeroso a imigrar para o Brasil. Grande parte vieram para São Paulo, entretanto grande número para o Rio Grande do Sul (especialmente Bento Gonçalves, Garibaldi, Caxias do Sul), em Santa Catarina (Nova Trento, Nova Veneza), no Paraná e no Rio de Janeiro. </p>
+        <p><strong>Italianos</strong> – depois dos portugueses, outro grupo mais numeroso a imigrar para o Brasil.
+            Grande parte vieram para São Paulo, entretanto grande número para o Rio Grande do Sul (especialmente Bento
+            Gonçalves, Garibaldi, Caxias do Sul), em Santa Catarina (Nova Trento, Nova Veneza), no Paraná e no Rio de
+            Janeiro. </p>
 
-        <p><strong>Espanhóis</strong> – o terceiro grupo mais numeroso dentro do grupo branco no país. Distribuídos, principalmente em São Paulo e, em menor proporção, no Rio de Janeiro, em Minas Gerais e no Rio Grande do Sul.</p>
+        <p><strong>Espanhóis</strong> – o terceiro grupo mais numeroso dentro do grupo branco no país. Distribuídos,
+            principalmente em São Paulo e, em menor proporção, no Rio de Janeiro, em Minas Gerais e no Rio Grande do
+            Sul.</p>
 
         <p>Há outros grupos brancos de origem europeia que também se destacam na população brasileira, são eles:</p>
 
-        <p><strong>Alemães</strong>imigrantes alemães foram alocados principalmente no Sul do Brasil, nos Estados de Santa Catarina (Blumenau, Joinville) e no Rio Grande do Sul (São Leopoldo, Novo Hamburgo). Há pequenos grupos em São Paulo, Paraná e no Espírito Santo.</p>
+        <p><strong>Alemães</strong> - os imigrantes alemães foram alocados principalmente no Sul do Brasil, nos Estados
+            de Santa Catarina (Blumenau, Joinville) e no Rio Grande do Sul (São Leopoldo, Novo Hamburgo). Há pequenos
+            grupos em São Paulo, Paraná e no Espírito Santo.</p>
 
-        <p><strong>Eslavos</strong>ovo eslavo são oriundos de países como Polônia, Rússia e Ucrânia, com predominância no Paraná, nas cidades de Curitiba e Ponta Grossa.</p>
 
-        <p><strong>Eslavos</strong> – O povo eslavo são oriundos de países como Polônia, Rússia e Ucrânia, com predominância no Paraná, nas cidades de Curitiba e Ponta Grossa.</p>
+        <p><strong>Eslavos</strong> – o povo eslavo são oriundos de países como Polônia, Rússia e Ucrânia, com
+            predominância no Paraná, nas cidades de Curitiba e Ponta Grossa.</p>
 
         <p>Muitos imigrantes vieram da Ásia, os principais são:</p>
 
-        <p><strong>Sírio-libaneses</strong> – O Brasil possui milhões de descendentes de sírios e de libaneses. De língua árabe, a maioria cristão, mas há muitos muçulmanos também. Dedicam-se principalmente no comércio e há muitos políticos brasileiros com essa origem.</p>
+        <p><strong>Sírio-libaneses</strong> – o Brasil possui milhões de descendentes de sírios e de libaneses. De
+            língua árabe, a maioria cristão, mas há muitos muçulmanos também. Dedicam-se principalmente no comércio e há
+            muitos políticos brasileiros com essa origem.</p>
 
-        <p><strong>Japoneses</strong>a-se que 2 milhões de japoneses e descendentes vivam no Brasil. A maior população foram do Japão. Estão radicados principalmente em São Paulo e Norte do Paraná (Londrina e Maringá). Mas também no Mato Grosso, Pará e Amazonas. A maioria iniciou nas atividades agrícolas, ligados ao plantio de hortaliças, além de arroz e algodão.</p>
+        <p><strong>Japoneses</strong> - estima-se que quase 2 milhões de japoneses e descendentes vivam no Brasil. A
+            maior população foram do Japão. Estão radicados principalmente em São Paulo e Norte do Paraná (Londrina e
+            Maringá). Mas também no Mato Grosso, Pará e Amazonas. A maioria iniciou nas atividades agrícolas, ligados ao
+            plantio de hortaliças, além de arroz e algodão.</p>
 
-        <p><strong>Chineses</strong> – Calculam-se que a população total de chineses no Brasil seja de 250 a 300 mil habitantes. Desde a década de 1990 os número aumentaram bastante, principalmente nos grandes centros como Rio de Janeiro e São Paulo nas atividades do comércio, alimentação.</p>
+        <p><strong>Chineses</strong> – calculam-se que a população total de chineses no Brasil seja de 250 a 300 mil
+            habitantes. Desde a década de 1990 os número aumentaram bastante, principalmente nos grandes centros como
+            Rio de Janeiro e São Paulo nas atividades do comércio, alimentação.</p>
 
-        <p><strong>Coreanos</strong> – Mais recente e em menor número )50 mil) estão os coreanos residentes em São Paulo na capital paulista.</p>
+        <p><strong>Coreanos</strong> – mais recente e em menor número (50 mil) estão os coreanos residentes em São Paulo
+            na capital paulista.</p>
 
 
 
@@ -926,44 +891,61 @@ Css do memory card */
         <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
 
 
-        <!--  inserir pseudo elemento na primeira letra -->
-
-
-
-
-
-
 
         <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
-
+                O que diferencia o povo brasileiro dos outros povos?
             </strong> </p>
 
-        <p><span class="primeiraLetra">R:</span> </p>
+        <p><span class="primeiraLetra">R:</span> Essa questão se refere a identidade étnica brasileira. Na geografia e
+            história local, ondo o povo habita mesmo, se forjou os tipos de brasileiros como a cultura crioula que se
+            desenvolveu nas comunidades da faixa de terras frescas do Nordeste, principalmente com base no engenho
+            açucareiro; Pela cultura caipira junto aos mamelucos paulistas, inicialmente com as atividades de caça de
+            índios para venda e, depois, da mineração de outro e diamantes e mais tarde com as grandes fazendas de café.
+            Pela cultura sertaneja que se difundiu pelos currais de gado, desde o Nordeste árido até os cerrados do
+            Centro-Oeste. Pela cultura cabloca das populações da Amazônia, na coleta das drogas da mata e,
+            principalmente, nos seringais. Pela cultura gaúcha do pastoreio no Sul do Brasil em áreas colonizadas por
+            imigrantes, principalmente alemães e italianos.</p>
 
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>? </strong></p>
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>Quais as marcas para a população brasileira
+                deixadas pelo colonizador europeu? </strong></p>
 
-        <p><span class="primeiraLetra">R:</span>
+        <p><span class="primeiraLetra">R:</span> O Brasil nasceu como uma empresa escravista e exótica devido a força e
+            diversidade de suas florestas com sua fauna e flora exuberantes. O seu povo mestiço, com sangue de índio,
+            afros e brancos viveu como um proletariado externo dentro de uma possessão estrangeira. Os interesses e
+            aspirações de seu povo jamais foram levados em conta. A consequência disso, foi, dentre outras coisas, um
+            território marcado pela prosperidade empresarial de um lado, e uma penúria generalizada da população local,
+            um aglomerado multiétnico com brutal perda da sua cultura e pela eliminação física dos seus povos. Quando os
+            imigrantes chegaram mais tarde, esse povo falante, sobretudo, da língua portuguesa já amadurecia sua
+            integração como Estado-Nação.
 
         </p>
 
 
         <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
-
+                O que é racismo?
 
             </strong></p>
 
         <p><span class="primeiraLetra">R:</span>
 
+            Racismo é toda distinção, exclusão ou restrição baseada em raça, cor, descendência ou origem nacional ou
+            étnica que tenha por objeto anular ou restringir o reconhecimento, gozo ou exercício de direitos humanos e
+            liberdade fundamentais.
 
+            <span class="w3-small">
+                Fonte: Convenção Internacional sobre a Eliminação de Todas as Formas de Discriminação Racial.
+
+            </span>
 
         </p>
 
 
 
 
-        <button class="btnShow" onclick="AbrirDivFinal();   this.style.display='none'">Desafio!</button>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <br><br>
 
 
         <hr>
@@ -975,36 +957,154 @@ Css do memory card */
 
     <div class="topico">
 
+        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
+            <h2> <strong>Desafio - Jornada do herói: o mundo comum</strong></h2>
 
-        <h2> Desafio em grupo: Exposição de ideias sobre a dinâmica do Planeta Terra.</h2>
+            <h4>Nesta aula vamos continuar a estudar a jornada do herói para pensarmos sobre um jogo com o tema do
+                Brasil. Hoje vamos novamente formar o nosso grupo e refletir sobre o primeiro tema dessa jornada: o
+                mundo comum. Ao final, anote suas observações em seu caderno. </h4>
+        </div>
 
-        <h3>Escolha um período ou um fato marcante apresentado nas Eras geológicas da Terra e
-            apresenta
-            três argumentos sobre a importância do conhecimento das dinâmicas do Planeta atualmente. </h3>
 
 
-        <h2>Instruções </h2>
-
-        <div class="w3-card-4">
-
+        <div class="w3-card-4 w3-pale-yellow w3-padding">
+            <h2><strong>Instruções</strong> </h2>
             <ul>
 
-                <li>Forme um grupo com três estudantes;</li>
+                <li>Forme um grupo com 5-6 estudantes;</li>
 
-                <li> Selecione os fatos e discuta com seu grupo os argumentos da questão; (5 minutos);</li>
+                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
 
-                <li> Escreva sua resposta à questão solicitada.</li>
+                <li> Faça anotações em seu caderno;</li>
 
-                <li> Escolha um integrante do grupo para expor a questão a turma; (1 a 2 minutos).</li>
+                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
 
-
+                <li>Tempo da atividade: 25 minutos.</li>
 
             </ul>
 
         </div>
 
+        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
 
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <h4><strong>Mundo comum</strong></h4>
+
+            <p>Este é o começo da história, serve para contextualizar e mostrar o cenário. É aqui que a história do
+                herói é revelada para o público.</p>
+
+            <p>O começo da jornada do herói é sobre seu mundo cotidiano. Como seria o mundo comum dos indígenas antes da
+                chegada dos colonizadores portugueses?</p>
+
+            <p>O mundo comum é como o herói se aventura do mundo da vida cotidiana para uma região de aventuras e
+                conflitos.</p>
+
+            <h4><strong>Contraste</strong></h4>
+
+            <p>No filme <em>Star Wars</em>, Luke Skywalker vive uma vida frustrante com seu tio e tia em Tatooine. Mas o
+                herói está inquieto, sente que deve mudar algo na realidade e se transformar. O mundo comum parece algo
+                chato e calmo, mas os problemas e conflitos do herói já estão presentes, só esperando ser ativados.</p>
+
+            <h4><strong>Levantando a questão dramática</strong></h4>
+
+            <p>É no mundo comum do herói que vai surgir a questão dramática principal do jogo ou do filme. Toda boa
+                história levanta uma série de perguntas sobre o herói. Será que ela vai atingir seu objetivo? Superar
+                seu defeito? Aprender sua lição? Ou voltar para casa? Conseguir o outo ou ganhar o jogo?</p>
+
+            <h4><strong>Problemas internos e externos</strong></h4>
+
+            <p>Todo herói precisa de um problema interno e outro externo. Será que o herói é egoísta ou precisa
+                acreditar mais em si mesmo? Veja uma exemplo de jogo sobre a população indígena:Todo herói precisa de um
+                problema interno e outro externo. Será que o herói é egoísta ou precisa acreditar mais em si mesmo? Veja
+                uma exemplo de jogo sobre a população indígena criado pela Universidade Federal de São Carlos:</p>
+
+
+            <p>O jogo "Jeriguigi e o Jaguar na terra dos bororos" é voltado para crianças de 5 a 9 anos.</p>
+
+            <div class="w3-margin"><img id="imagem8" src="ts03f08.png" alt="ts01f08" class="w3-mobile"></div>
+
+            <p>Na história, o personagem deve enfrentar três desafios antes de retornar à aldeia, durante os quais ele
+                se depara com animais perigosos, condições naturais adversas e as próprias limitações comuns ao ser
+                humano.</p>
+
+            <h4><strong>Título</strong></h4>
+
+            <p>Como podemos pensar em nosso próprio jogo sobre o Brasil? Qual seria o título do jogo? </p>
+
+            <h4><strong>Entrando em cena</strong></h4>
+
+            <p>No jogo <em>Zelda – A Link to the Past</em>, o personagem Link aparece dormindo em seu quarto quando
+                recebe um pedido de ajuda. Já no jogo <em>God of War IV</em>, Kratos surge cortando uma árvore e, de
+                repente, se lembra de seu passado como Deus da Guerra ao apertar suas faixas em seu braço, agora sem as
+                lâminas do caos.</p>
+
+            <h4><strong>Apresentando o herói a plateia</strong></h4>
+
+            <p>Essa parte é importante da caracterização e apresentação do personagem e do mundo ao seu redor para o
+                público: Que roupa está usando, quem está em volta, como reage a ele? Qual sua atitude, emoção, objetivo
+                nesse momento? Entra em cena sozinho ou dentro de um grupo? Ou já está em cena quando a história começa?
+                É ele quem narra a história, esta é vista pelos olhos de outro personagem ou é contada objetivamente,
+                por meio de uma narrativa convencional?</p>
+
+            <h4><strong>Identificação entre o público e o herói</strong></h4>
+
+
+            <p>O herói deve ter objetivos, impulsos, desejos e necessidades especiais. O herói quer ser reconhecido?
+                Quer afeição ou ser aceito por uma comunidade?</p>
+
+
+
+
+            <h4><strong>A carência do herói</strong></h4>
+
+
+            <p>Quais as carências do herói? O que lhe foi tirado? Por que ele está disposto a lutar por isso? Alguém foi
+                raptado, morto ou ficou doente e o herói precisa resgatar, se vingar ou cuidar.</p>
+
+            <h4><strong>Falhas trágicas</strong></h4>
+
+            <p>Quais são as falhas do herói? Ele é arrogante ou orgulhoso.</p>
+
+            <h4><strong>Heróis feridos</strong></h4>
+
+            <p>O herói tem uma ferida psicológica? Ele sofreu rejeição, traição ou desapontamento?</p>
+
+            <h4><strong>Estabelecer o que está em jogo</strong></h4>
+
+            <p>O que é que o herói se arrisca a ganhar ou perder na aventura? Quais serão as consequências para o herói,
+                para a sociedade, e para o mundo, se ele tiver êxito ou fracassar?</p>
+
+            <p>O herói grego Perseu, retratado no filme Fúria de Titãs, tem que vencer várias provas, caso contrário sua
+                amada princesa Andrômeda será devorada por um monstro marinho. Outras histórias ameaçam parentes, como o
+                pai que corre risco em A Bela e a Fera. A heroína tem uma motivação forte para se colocar na posição
+                perigosa de ficar à mercê da Fera, pois o pai dela morrerá caso ela não faça o que o monstro exige. </p>
+
+            <h4><strong>História Pregressa e Exposição</strong></h4>
+
+            <p>Qual a história pregressa do herói? Qual o passado dele?</p>
+
+            <h4><strong>Tema</strong></h4>
+
+            <p>Qual o tema principal do jogo? Vaidade, preconceito, Ambição, Justiça? No jogo <em>The Last of Us
+                    II</em>, o tema principal é a vingança.</p>
+
+
+
+        </div>
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'esse desafio foi bem denso, você já pode finalizar sua lição','7');this.style.display='none'">Proximo</button>
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
         <hr>
 
     </div>
@@ -1049,7 +1149,7 @@ Css do memory card */
 
 
     <div class="w3-padding-48">
-
+        <!-- <span id="numero"></span> -->
         <span id="txtBarra">0%</span>
         <progress value="0" max="100" id="progress"></progress>
     </div>
@@ -1068,12 +1168,28 @@ Css do memory card */
             <div class="postit-tp9 ">
 
                 <a href="https://educa.ibge.gov.br/jovens/materias-especiais.html" target="_blank">
-                   IBGE - Materias especiais
+                    IBGE - Matérias especiais
                 </a>
 
             </div>
 
         </div>
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://g1.globo.com/sp/sao-carlos-regiao/noticia/2022/03/20/ufscar-cria-jogo-digital-gratuito-com-personagem-indigena-para-ensinar-criancas-em-sala-de-aula.ghtml"
+                    target="_blank">
+                    UFSCar cria jogo digital gratuito
+                </a>
+
+            </div>
+
+        </div>
+
 
 
 
@@ -1086,7 +1202,8 @@ Css do memory card */
         <p>
             Agência Senado. Negro continuará sendo oprimido enquanto o Brasil não se assumir racista, dizem
             especialistas. Disponível em:
-            https://www12.senado.leg.br/noticias/infomaterias/2020/06/negro-continuara-sendo-oprimido-enquanto-o-brasil-nao-se-assumir-racista-dizem-especialistas.
+            https://www12.senado.leg.br/noticias/
+            infomaterias/2020/06/negro-continuara-sendo-oprimido-enquanto-o-brasil-nao-se-assumir-racista-dizem-especialistas.
             Acesso em: 17 ago. 2022.
 
         </p>
@@ -1096,18 +1213,21 @@ Css do memory card */
             conheca-o-brasil/populacao/18319-cor-ou-raca.html. Acesso em: 28 jul. 2022.</p>
 
         <p>Navios portugueses e brasileiros fizeram mais de 9 mil viagens com africanos escravizados. Disponível em:
-            https://www.bbc.com/portuguese/brasil-45092235#:~:text=4%2C8%20milh%C3%B5es%20de%20africanos,de%20mais%20de%20tr%C3%AAs%20s%C3%A9culos.
+            https://www.bbc.com/portuguese
+            /brasil-45092235#:
             Acesso em: 17 ago. 2022.</p>
 
 
         <p>SANTOS, Milton. Ser negro no Brasil hoje. Disponível em:
-            https://www1.folha.uol.com.br/fsp/mais/fs0705200007.htm. Acesso em: 17 ago. 2022.
+            https://www1.folha.uol.com.br
+            /fsp/mais/fs0705200007.htm. Acesso em: 17 ago. 2022.
             Somos todos iguais? Retratos (A revista do IBGE), n.11, maio 2018.
         </p>
 
 
-      
-        <p>  VESENTINI, José William.<strong>  Geografia: o mundo em transição. Ensino médio.</strong>. 2. ed. – São Paulo: Ática, 2013. 
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. – São
+            Paulo: Ática, 2013.
         </p>
 
     </div>
@@ -1121,76 +1241,14 @@ Css do memory card */
     <script>
 
 
-        // function addNota(pontos)
-        // {
-
-        // 	nota += pontos;
-        // }
-
-
-        // Função com apenas uma palavra
-
-        function confereBox(mensagem, frase2, globinho) {
-
-            r1 = document.getElementById("r1");
-            r2 = document.getElementById("r2");
-            r3 = document.getElementById("r3");
-            r4 = document.getElementById("r4");
-            frase = document.getElementById(frase2);
-            globo = document.getElementById(globinho);
-
-            if (r3.checked == true) {
-
-                frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
-                Play2("../audio2.mp3");
-            }
-
-            else if (r1.checked == true && r2.checked == true && r4.checked == true) {
-
-
-                nota += 1;
-                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
-                globo.style.display = "block";
-                Play("../audio1.mp3");
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-                EscondeButton("buttoncheck1");
-                MostraButton("buttoncheck2");
-
-
-            }
-
-
-            else {
-                frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
-                Play2("../audio2.mp3");
-            }
-
-
-        }
+        //   function numButton() {
+        //             numB++;
+        //             document.getElementById("numero").innerHTML = numB;
+        //             console.log(numB);
+        //         }
 
 
 
-        // É chamada nas questões abertas decimais para ver se completou um inteiro.
-        function VerificaInteiro(idResp) {
-
-            var inteiro = Number.isInteger(nota);
-            var int = Math.trunc(nota)
-
-
-            if (inteiro == false) {
-                nota = int;
-                document.getElementById(idResp).innerHTML = " Quase lá " + nomeEstudante + "." + " Acerte todas as questões para ganhar o globinho. Você permanece com " + nota + ".";
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-            }
-
-            else {
-                document.getElementById(idResp).innerHTML = "Por ter acertado todas as questões " + nomeEstudante + ", ganhou mais um globinho, agora já possui " + nota + ".";
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-            }
-
-            // document.getElementById(idResp).innerHTML = "Não atingiu o máximo para ganhar o globinho. Está com "  + nota;
-        }
 
 
 
@@ -1213,8 +1271,8 @@ Css do memory card */
             if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
             {
                 proximo.classList.add('mostrar'); // Mostrar o seguinte
-                //addProgressBar();
-                //numButton();
+                addProgressBar();
+                // numButton();
                 ApagaButton();
 
                 document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
@@ -1222,6 +1280,22 @@ Css do memory card */
             }
 
         }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 12);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
 
 
 
