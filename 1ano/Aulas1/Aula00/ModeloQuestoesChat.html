@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeloChat</title>
+
+    <link rel="stylesheet" href="../../../estilos/questoes.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/javascript.js" defer></script>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+    <div class="w3-top w3-bar w3-black larguraBar">
+
+
+        <div class="w3-container">
+            <h5> <a href="../../../Duvid3Ano.html" class=" w3-button">3º ano</a></h5>
+        </div>
+
+
+
+
+    </div>
+
+    <h1 class="h1"> Aula 00 – nome da aula (aulas 13 a 18) </h1>
+
+    <div class="w3-container w3-white ">
+
+        <p><strong>Conteúdo:</strong></p>
+
+        <ul class="w3-padding-top">
+            <li> </li>
+
+            <li> </li>
+
+            <li> </li>
+
+            <li> </li>
+
+            <li> </li>
+
+
+        </ul>
+
+    </div>
+
+
+
+    <div class="w3-padding-top-24">
+        <div class="w3-white larguraBar w3-padding flex-container">
+
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                    id="decrease-font" title="Diminuir fonte">A -</button></div>
+            <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                    id="increase-font" title="Aumentar fonte">A +</button></div>
+        </div>
+    </div>
+
+    <form id="quiz" name="quiz" onsubmit="verificar()">
+
+
+
+
+        <div class="w3-card-4">
+            <p class="p1">Questão 02</p>
+            <p>Texto da questão vai aqui</p>
+            <p class="w3-small"> (Coloque a citação aqui) </p>
+            <table>
+                <tr>
+                    <td><input type="radio" required="required" name="pq1" value="a"></td>
+                    <td><label for="pq1a">a) Inserir alternativa a</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq1" value="b"></td>
+                    <td><label for="pq1b">b) Inserir alternativa b</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq1" value="c"></td>
+                    <td><label for="pq1c">c) Inserir alternativa c</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq1" value="d"></td>
+                    <td><label for="pq1d">d) Inserir alternativa d</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq1" value="e"></td>
+                    <td><label for="pq1e">e) Inserir alternativa e</label></td>
+                </tr>
+            </table>
+            <div class="comentarios">
+
+                <p> <strong>Comentário:</strong></p>
+
+                <p> </p>
+
+                <p> </p>
+
+                <p> </p>
+
+                <p> </p>
+
+                <p> </p>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="w3-card-4">
+            <p class="p2">Questão 02</p>
+            <p>Texto da questão vai aqui</p>
+            <p class="w3-small"> (Coloque a citação aqui) </p>
+            <table>
+                <tr>
+                    <td><input type="radio" required="required" name="pq2" value="a"></td>
+                    <td><label for="pq2a">a) Inserir alternativa a</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq2" value="b"></td>
+                    <td><label for="pq2b">b) Inserir alternativa b</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq2" value="c"></td>
+                    <td><label for="pq2c">c) Inserir alternativa c</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq2" value="d"></td>
+                    <td><label for="pq2d">d) Inserir alternativa d</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" required="required" name="pq2" value="e"></td>
+                    <td><label for="pq2e">e) Inserir alternativa e</label></td>
+                </tr>
+            </table>
+            <div class="comentarios">
+
+                <p> <strong>Comentário:</strong></p>
+
+                <p> </p>
+
+                <p> </p>
+
+                <p> </p>
+
+                <p> </p>
+
+                <p> </p>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+    <p id="numeroCorreto"></p>
+
+    <p id="mensagem" style="display:none"></p>
+
+
+    <div class="area">
+        <img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+            height="200">
+    </div>
+
+    <div id="aviso" class="w3-panel w3-yellow">
+
+    </div>
+
+
+    <div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
+
+
+
+    <script>
+
+
+
+
+
+        // array para armazenar as respostas corretas
+        const respostasCorretas = ["c", "e", "b", "c", "d", "e", "e", "a", "a", "a"];
+
+        function checar() {
+            let corretas = 0;
+
+            // loop para percorrer as perguntas
+            for (let i = 0; i < respostasCorretas.length; i++) {
+                const resposta = document.quiz[`pq${i + 1}`].value;
+
+                if (resposta === respostasCorretas[i]) {
+                    corretas++;
+                    mudarCorDeFundo(`q${i + 1}${resposta}`, "#99ff99");
+                } else {
+                    mudarCorDeFundo(`q${i + 1}a`, "#ee4466");
+                    mudarCorDeFundo(`q${i + 1}b`, "#ee4466");
+                    mudarCorDeFundo(`q${i + 1}c`, "#ee4466");
+                    mudarCorDeFundo(`q${i + 1}d`, "#ee4466");
+                    mudarCorDeFundo(`q${i + 1}e`, "#ee4466");
+                    mudarCorDeFundo(`q${i + 1}${respostasCorretas[i]}`, "#99ff99");
+                }
+            }
+
+            alert(`Você acertou ${corretas} de ${respostasCorretas.length} perguntas.`);
+        }
+
+        // função para mudar a cor de fundo
+        function mudarCorDeFundo(elementoId, cor) {
+            document.getElementById(elementoId).style.backgroundColor = cor;
+        }
+
+
+
+        corLenta();
+        classEscurecer();
+        comentarios();
+
+
+
+
+        var incorrretas = 10 - corretas;
+        var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
+        var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
+        var pontos;
+
+        if (corretas < 5) {
+            pontos = 2;
+
+        }
+
+        if (corretas >= 5 && corretas <= 7) {
+            pontos = 1;
+        }
+
+
+        if (corretas >= 7) {
+            pontos = 0;
+
+        }
+
+
+
+        document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
+        document.getElementById("mensagem").innerHTML = mensagem[pontos];
+        document.getElementById("imagem").src = imagem[pontos];
+        document.getElementById("numeroCorreto").style.display = 'block';
+        document.getElementById("mensagem").style.display = 'block';
+        document.getElementById("imagem").style.display = 'block';
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+   
+ 
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

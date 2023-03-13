@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+
+
+
+</head>
+
+<body>
+
+   
+    
+    <input type="file" id="file-input" onchange="convertWordToHtml()" />
+    <div id="output"></div>
+    <br>
+    <button id="download-button" onclick="downloadHtml()">Download</button>
+
+    
+    <script>
+        function convertWordToHtml() {
+            // Get the selected file
+            var file = document.getElementById("file-input").files[0];
+    
+            // Create a FileReader object
+            var reader = new FileReader();
+    
+            // Set the onload event of the FileReader
+            reader.onload = function() {
+                // Get the ArrayBuffer
+                var arrayBuffer = reader.result;
+    
+                // Create a new Word Document
+                var doc = new window.docx.Document(arrayBuffer);
+    
+                // Initialize an empty string to store the HTML
+                var html = "";
+    
+                // Iterate through each paragraph in the Word document
+                for (var i = 0; i < doc.paragraphs.length; i++) {
+                    // Get the paragraph
+                    var para = doc.paragraphs[i];
+    
+                    // Add the paragraph text to the HTML string, wrapped in <p> tags
+                    html += "<p>" + para.text + "</p>";
+                }
+    
+                // Set the output HTML
+                document.getElementById("output").innerHTML = html;
+            };
+    
+            // Read the file as ArrayBuffer
+            reader.readAsArrayBuffer(file);
+        }
+
+        function downloadHtml() {
+        // Get the output HTML
+        var html = document.getElementById("output").innerHTML;
+
+        // Create a new Blob with the HTML
+        var blob = new Blob([html], { type: "text/html" });
+
+        // Create a link element for the download
+        var link = document.createElement("a");
+
+        // Set the href of the link to the Blob
+        link.href = window.URL.createObjectURL(blob);
+
+        // Set the download attribute of the link
+        link.download = "output.html";
+
+        // Append the link to the body and click it
+        document.body.appendChild(link);
+        link.click();
+
+        // Remove the link after downloading
+        document.body.removeChild(link);
+    }
+
+
+        </script>
+    
+    
+      
+</body>
+
+</html>
+
+
+
+
+
+
+</body>
+
+</html>

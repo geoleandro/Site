@@ -199,6 +199,66 @@ function MostrarFrase(idFrase, idGlobinho, desativar, mensagem, qtdNota) {
 }
 
 
+
+//Mostra a nota no final da aula
+function mostrarNota() {
+    const notaThreshold = 6;
+    const notaElements = document.getElementsByClassName("nota");
+    const message = nota >= notaThreshold 
+      ? `Parabéns ${nomeEstudante}, você ganhou ${nota} globinhos e completou sua lição!`
+      : `${nomeEstudante}, você não completou sua lição, pois conseguiu apenas ${nota} globinho(s). Tente novamente.`;
+    const audio = nota >= notaThreshold ? "../notaFinal.mp3" : "../notaFinal2.mp3";
+  
+    for (let i = 0; i < notaElements.length; i++) {
+      document.getElementById('id01').style.display = "block";
+      notaElements[i].style.display = "block";
+      notaElements[i].innerHTML = message;
+      Play(audio);
+    }
+  }
+  
+
+
+function mostraCinza() {
+
+    desativarBotoes();
+    desativarTextos();
+    mostrarNota();
+
+    mostraBiblio();
+    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+}
+
+function desativarBotoes() {
+    var botoes = document.getElementsByTagName('button');
+    for (var i = 0; i < botoes.length; i++) {
+        if (!botoes[i].classList.contains("bibliografias")) {
+            botoes[i].disabled = true;
+
+        }
+    }
+
+    var inputs = document.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].disabled = true;
+    }
+}
+
+function desativarTextos() {
+    var todosElementos = document.querySelectorAll('*');
+    for (var i = 0; i < todosElementos.length; i++) {
+        if (!todosElementos[i].classList.contains("bibliografias")) {
+            todosElementos[i].style.color = "gray";
+            todosElementos[i].style.transition = "3s";
+        }
+        else {
+            todosElementos[i].style.color = "black";
+        }
+
+    }
+}
+
 // Mostra a bibliografia no final
 function mostraBiblio() {
 
@@ -206,80 +266,16 @@ function mostraBiblio() {
     for (var i = 0; i < b.length; i++) {
         b[i].style.display = "block";
 
-    }
-}
-
-//Mostra a nota no final da aula
-function mostrarNota() {
-
-    globoFinalNota = document.getElementsByClassName("nota");
-
-    if (nota >= 6) {
-
-        for (var i = 0; i < globoFinalNota.length; i++) {
-            document.getElementById('id01').style.display = "block";
-            globoFinalNota[i].style.display = "block";
-            globoFinalNota[i].innerHTML = "Parabéns " + nomeEstudante + "," + " você ganhou: " + nota + " globinhos! e completou sua lição!";
-            Play("../notaFinal.mp3");
-
-        }
 
     }
-    else {
-        for (var i = 0; i < globoFinalNota.length; i++) {
-            document.getElementById('id01').style.display = "block";
-            globoFinalNota[i].style.display = "block";
-            globoFinalNota[i].innerHTML = nomeEstudante + ", você não completou sua lição, pois conseguiu apenas " + nota + " globinho(s). Tente novamente.";
-            Play("../notaFinal2.mp3");
-
-
-        }
-    }
-
 }
 
 
 
-// Deixa as divs cinzas quando completar a atividade
-function mostraCinza() {
-
-    // var gen = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
-    var t = document.getElementsByClassName("topico");
-    var radiosInput = document.getElementsByTagName('input');
-    var todosBtn = document.getElementsByTagName('button');
-
-    for (var i = 0; i < t.length; i++) {
-
-        t[i].style.color = "gray";
-        t[i].style.transition = "6s";
-
-    }
-
-    mostrarNota();
-    mostraBiblio();
-    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-    for (var i = 0; i < radiosInput.length; i++) {
-        radiosInput[i].disabled = true;
-
-    }
-
-
-    for (var b = 0; b < todosBtn.length; b++) {
-        todosBtn[b].disabled = true;
-        todosBtn[b].style.backgroundColor = "gray";
-    }
-
-    // for (var c = 0; c < gen.length; c++) {
-    //     gen[c].disabled = true;
-    //     gen[c].style.backgroundColor = "gray";
-    // }
 
 
 
 
-
-}
 
 
 function BalancarGlobo() {

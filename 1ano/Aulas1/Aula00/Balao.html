@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeloTimeLine</title>
+
+    <link rel="stylesheet" href="../../../estilos/questoes.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/javascript.js" defer></script>
+
+
+
+
+    <style>
+        .character {
+            position: relative;
+        }
+
+        /* Imagem alinhada à esquerda */
+        img.left {
+            margin-left: -40px;
+            margin-top: -40px;
+        }
+
+        /* Imagem alinhada à direita */
+        img.right {
+            margin-left: -10px;
+            margin: 0%;
+            margin-top: -50px;
+        }
+
+        .w3-row {
+            padding-top: 10%;
+            max-width: 580px;
+            margin: 0 auto;
+            border: 10px solid #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #ccc;
+            /* background-image: url("../Aula03/p3q1a.png");
+            background-size: cover;
+            background-position: auto; */
+        }
+
+        .balloon {
+            position: absolute;
+            display: inline-block;
+            padding: 3%;
+            background-color: #fff;
+            border-radius: 10px;
+            max-width: auto;
+            width: auto;
+            height: auto;
+            margin: 5%;
+            border: 3px solid #3a3a3a85;
+            box-shadow: 0 0 10px #474747a2;
+        }
+
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            transform: rotate(45deg);
+
+            border-top: 20px solid transparent;
+            border-bottom: none;
+            z-index: 10;
+            max-width: 100%;
+            width: auto;
+            bottom: -10px;
+            /* ajusta a posição do triângulo para baixo */
+        }
+
+
+        .left {
+
+            left: auto;
+            bottom: auto;
+        }
+
+        .right {
+            right: auto;
+            bottom: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .w3-row {
+                max-width: 320px;
+            }
+
+            .balloon {
+                position: relative;
+                display: inline-block;
+
+                background-color: #fff;
+                border-radius: 10px;
+                max-width: auto;
+                width: auto;
+                height: auto;
+                margin: 10px;
+                border: 1px solid #3a3a3a85;
+                box-shadow: 0 0 10px #474747a2;
+                padding: 3%;
+            }
+
+            .pad {
+                padding: 20px;
+            }
+
+
+            .triangle {
+                position: absolute;
+                width: 0;
+                height: 0;
+                transform: rotate(45deg);
+
+                border-top: 20px solid transparent;
+                border-bottom: none;
+                z-index: 10;
+                max-width: auto;
+                width: auto;
+                bottom: -12px;
+                /* ajusta a posição do triângulo para baixo */
+            }
+
+            img.right {
+                margin-left: -10px;
+                margin: -30%;
+                margin-top: -50px;
+            }
+
+            img.left {
+                margin-left: -50px;
+                margin-top: -40px;
+            }
+
+        }
+
+        #typingSpeed {
+            width: 100px;
+            /* largura do controle deslizante */
+            background-color: #407943;
+        }
+
+        #typingSpeed::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            /* remove o estilo padrão do polegar */
+            appearance: none;
+            width: 20px;
+            /* largura do polegar */
+            height: 20px;
+            /* altura do polegar */
+
+            /* cor do polegar */
+            cursor: pointer;
+        }
+
+        #typingSpeed::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background-color: #39693b;
+            cursor: pointer;
+        }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            outline: none;
+            margin: 10px 0;
+        }
+
+        input[type=range]:hover {
+            cursor: pointer;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #76a176;
+            margin-top: -5px;
+        }
+
+        input[type=range]::-moz-range-thumb {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #3a493a;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <p></p>
+
+        <p></p>
+
+        <p></p>
+
+        <p></p>
+
+
+
+
+    </div>
+
+
+
+
+    <div class="w3-row w3-container w3-mobile">
+
+
+
+
+        <div class="w3-col s6">
+            <div class="character">
+                <div class="balloon">
+                    <div class="triangle" style="border-right: 20px solid #7e7e7e6b; left: 50%;"></div>
+                    <span id="demo1" class="pad"></span>
+                </div>
+                <img onclick="ShowDialog(['Olá, eu sou a pessoa 1!', 'Olá, eu sou a pessoa 2!  fim', 'Olá, eu sou a pessoa 3!'], 'demo1');"
+                    class="left" src="FotoDir.png" width="auto" height="auto" alt="FotoDir">
+
+
+            </div>
+        </div>
+        <div class="w3-col s6">
+            <div class="character">
+                <div class="balloon ">
+                    <div class="triangle" style="border-right: 20px solid #7e7e7e6b; left: 50%;"></div>
+                    <span id="demo2" class="pad"></span>
+                </div>
+                <img onclick="ShowSecondDialog(['Olá, eu sou a pessoa 2!', 'Vamos conversa sobre essas coisas.'], 'demo2');"
+                    class="right" src="FotoEsq.png" width="auto" height="auto" alt="FotoDir">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container w3-mobile">
+        <label for="typingSpeed">Velocidade de digitação:</label>
+        <input type="range" id="typingSpeed" min="50" max="150" step="1" value="50">
+    </div>
+
+
+    <button onclick="resetDialogVariables()">Pessoa 2</button>
+    <div></div>
+
+    <script>
+
+
+
+
+
+
+
+        // function typeWriter(text, idBalao, contadorLetras) {
+
+        //         var txt = '';
+        //         if (!txt) {
+        //             txt = text;
+
+        //         if (contadorLetras < txt.length) {
+        //             document.getElementById(idBalao).innerHTML += txt.charAt(contadorLetras);
+        //             contadorLetras++;
+        //             setTimeout(function () {
+        //                 typeWriter(txt, idBalao, contadorLetras);
+        //             }, 50);
+        //         } else {
+        //            console.log("acabou dialogo");
+
+        //         }
+        //     }
+        // }
+
+        const typingSpeedSlider = document.getElementById("typingSpeed");
+
+        var currentTypingSpeed = typingSpeedSlider.value;
+
+
+
+
+
+        typingSpeedSlider.addEventListener("input", function () {
+            currentTypingSpeed = typingSpeedSlider.value;
+        });
+
+        console.log(currentTypingSpeed);
+
+
+        var currentLine = 0;
+        var dialogLines;
+        const typingSpeed = 50;
+        var isFirstDialogDone = false;
+        var isSecondDialogDone = true;
+        var apertouDialogo = true;
+        var isSecondDialogActivated = false;
+
+
+
+
+        function ShowDialog(newLines, targetID) {
+
+            if (isSecondDialogDone && apertouDialogo) {
+                dialogLines = newLines;
+                currentLine = 0;
+                document.getElementById(targetID).innerHTML = '';
+                AtivaDialogo(targetID, currentTypingSpeed);
+                isFirstDialogDone = false;
+            }
+
+
+
+
+        }
+
+        function ShowSecondDialog(newLines, targetID) {
+            if (isFirstDialogDone && apertouDialogo && !isSecondDialogActivated) {
+                dialogLines = newLines;
+                currentLine = 0;
+                document.getElementById(targetID).innerHTML = '';
+                AtivaDialogo(targetID, currentTypingSpeed);
+                isSecondDialogActivated = true;
+
+
+            }
+        }
+
+        function AtivaDialogo(targetID) {
+
+
+            typeWriter(dialogLines[currentLine], targetID, 0, currentTypingSpeed);
+
+
+        }
+
+        function typeWriter(txt, targetID, contadorLetras, speed) {
+
+            var balloonWidth = document.querySelector('.balloon').offsetWidth;
+            var waitTime = balloonWidth / 5;
+
+            if (contadorLetras < txt.length) {
+                document.getElementById(targetID).innerHTML += txt.charAt(contadorLetras);
+                contadorLetras++;
+                setTimeout(function () {
+
+                    apertouDialogo = false;
+                    typeWriter(txt, targetID, contadorLetras, speed);
+                }, speed);
+            } else {
+                setTimeout(function () {
+                    AvancaDialogo(targetID);
+                    apertouDialogo = true;
+                }, speed * waitTime);
+            }
+        }
+
+        function AvancaDialogo(targetID) {
+            currentLine++;
+
+
+            if (currentLine < dialogLines.length) {
+                document.getElementById(targetID).innerHTML = '';
+                AtivaDialogo(targetID, currentTypingSpeed);
+            } else {
+                document.getElementById(targetID).innerHTML = '';
+                isFirstDialogDone = true;
+                isSecondDialogDone = false;
+            }
+        }
+        5
+
+
+        function resetDialogVariables() {
+            isFirstDialogDone = false;
+            isSecondDialogDone = true;
+            apertouDialogo = true;
+            contadorDialogo = 0;
+            isSecondDialogActivated = false;
+        }
+
+
+
+
+    </script>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

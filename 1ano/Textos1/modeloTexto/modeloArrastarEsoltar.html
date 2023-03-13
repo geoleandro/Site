@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Quizlet Game</title>
+
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            height: 500px;
+            background-color: #f7f7f7;
+            border: 5px solid #ccc;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .grid-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .grid-item {
+            position: relative;
+            width: 100%;
+            height: 30%;
+            background-color: #fff;
+            color: #000;
+            font-size: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: 5px solid #ccc;
+            z-index: 2;
+        }
+
+        .grid-item:hover {
+            background-color: #f2f2f2;
+        }
+
+        .hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .selected {
+            border: 5px solid #3cb371;
+        }
+
+        .wrong {
+            border: 5px solid #ff6347;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                height: 400px;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="grid-item pair1" draggable="true" ondragstart="drag(event)">Pair 1</div>
+                <div class="grid-item pair2" draggable="true" ondragstart="drag(event)">Pair 2</div>
+                <div class="grid-item pair3" draggable="true" ondragstart="drag(event)">Pair 3</div>
+            </div>
+            <div class="grid-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="grid-item pair1" draggable="true" ondragstart="drag(event)">Pair 1</div>
+                <div class="grid-item pair2" draggable="true" ondragstart="drag(event)">Pair 2</div>
+                <div class="grid-item pair3" draggable="true" ondragstart="drag(event)">Pair 3</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+
+        // function ola() {
+        //     console.log("ola");
+        // }
+
+        // Matriz de pares de divs
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            var target = event.target;
+            // Verifica se o elemento de origem e o elemento de destino correspondem
+            if (target.classList.contains("grid-item pair1") && data.classList.contains("grid-item pair1")) {
+                // Remove os elementos correspondentes
+                document.getElementById(data).remove();
+                target.remove();
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
