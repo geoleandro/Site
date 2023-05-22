@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>ModeloScrowLento</title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block;
+        }
+
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :target {
+            scroll-margin-top: .8em;
+        }
+
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+
+        .card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 340px;
+            height: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            z-index: 2;
+        }
+
+        .map-container {
+            position: relative;
+            z-index: 1;
+        }
+
+
+
+        .card-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .card-image img {
+            max-width: 300px;
+            max-height: 300px;
+            object-fit: contain;
+        }
+
+        .card-text {
+            padding: 20px;
+        }
+
+
+        .card-text h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text p {
+            font-size: 1rem;
+        }
+
+        .btn-modal {
+            display: none;
+        }
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {
+            .btn-modal {
+                display: block;
+            }
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 14 - Climas do Brasil I – tipos de clima</h1>
+
+
+        <p><strong> Conteúdo:</strong> Clima; Tempo; Tipos de Clima: Equatorial, tropical, subtropical, tropical de
+            altitude, tropical úmido, tropical semiárido. Climogramas.
+        </p>
+
+        <p><strong>Objetivo:</strong> Identificar e localizar os principais climas do Brasil. Equatorial, tropical,
+            tropical úmido (litorâneo), tropical de altitude, tropical semiárido, subtropical.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <p>div </p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <p>div 1</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <p>div 2</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <div class="w3-center">
+
+            <h2 class="fontePixel"> <img src="micro2.png" alt="microfone" width="84" height="84"> Duvid - Podcast
+            </h2>
+
+            <p><strong>Aventuras climáticas pelo Brasil: a jornada do ganhador do concurso de redação</strong>
+            </p>
+
+        </div>
+
+
+
+        <p><strong>Duvid:</strong>
+
+            Olá e bem-vindos ao Duvid Podcast! Hoje vamos entrevistar o ganhador do concurso de redação sobre o Brasil.
+            Um estudante do ensino médio que escreveu sobre a diversidade climática no país e ganhou o prêmio de
+            participar de uma expedição para conhecer as diferentes regiões do Brasil. Acompanhado por geógrafos
+            renomados, esse jovem teve a oportunidade única de vivenciar de perto as características climáticas de cada
+            região e aprender sobre a importância do clima para a paisagem e a vida na terra. Então, vamos ouvir sobre
+            essa incrível jornada e como foi participar desse projeto para o ganhador do concurso.
+
+        </p>
+
+
+        <!-- <div class="w3-margin"><img id="imagem1" src="ts14f01.png" alt="ts01f01" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao1"> Moreira (2016). </span>
+
+        </div> -->
+
+
+
+
+
+        <!-- <img src="ts14f01.png" usemap="#image-map"> -->
+
+        <map name="image-map">
+            <area target="" alt="Belem" id="Belem" title="Belem" href="#" coords="400,150,315,108" shape="rect"
+                onclick="openModal('Belem', event); return false;" />
+
+            <area target="" alt="Salvador" id="Salvador" title="Salvador" href="#" coords="552,316,455,262" shape="rect"
+                onclick="openModal('Salvador', event); return false;" />
+
+            <area target="" alt="Brasilia" id="Brasilia" title="Brasilia" href="#" coords="287,272,401,329" shape="rect"
+                onclick="openModal('Brasilia', event); return false;" />
+
+            <area target="" alt="Belo Horizonte" id="BH" title="Belo Horizonte" href="#" coords="288,347,434,413"
+                shape="rect" onclick="openModal('BH', event); return false;" />
+
+            <area target="" alt="Porto Alegre" id="PortoAlegre" title="Porto Alegre" href="#" coords="291,478,414,534"
+                shape="rect" onclick="openModal('PortoAlegre', event); return false;" />
+        </map>
+
+
+
+
+
+
+
+
+        <div class="w3-center w3-padding-top-48">
+
+            <picture>
+                <source srcset="ts14f01B.png" usemap="#map-mobile" media="(max-width:700px)">
+                <img src="ts14f01.png" usemap="#image-map" alt="Logo Duvid">
+
+            </picture>
+
+
+        </div>
+
+        <div class="btn-modal w3-center w3-padding-top-48 w3-mobile">
+
+            <button onclick="openModal('Belem', event); return false;"
+                class="btn-open-modal w3-margin w3-green">Belém</button>
+            <button onclick="openModal('Salvador', event); return false;"
+                class="btn-open-modal w3-margin w3-green">Salvador</button>
+            <button onclick="openModal('Brasilia', event); return false;"
+                class="btn-open-modal w3-margin w3-green">Brasília</button>
+            <button onclick="openModal('BH', event); return false;" class="btn-open-modal w3-margin w3-green">Belo
+                Horizonte</button>
+            <button onclick="openModal('PortoAlegre', event); return false;"
+                class="btn-open-modal w3-margin w3-green">Porto Alegre</button>
+        </div>
+
+
+
+
+        <div id="Belem" class="content">
+
+            <div class="map-container">
+
+                <div class="card">
+
+                    <div class="card-text">
+                        <h2>Belém - PA</h2>
+                        <div class="card-image">
+                            <span onclick="closeModal();" class="w3-button w3-red w3-display-topright">&times;</span>
+                            <img src="ts14f02.png" alt="Climograma">
+                        </div>
+                        <p>O climograma da cidade de Belém do Pará é caracterizado por temperaturas quentes e chuvas
+                            abundantes ao longo do ano, com uma estação seca menos definida. As temperaturas médias
+                            variam pouco durante o ano, com mínimas em torno de 24°C e máximas entre 29°C e 32°C. A
+                            precipitação é elevada, com valores mensais acima de 100 mm na maioria dos meses, com
+                            exceção dos meses de agosto a outubro, que são os menos chuvosos.<br>
+
+                            A média anual de temperatura em Belém do Pará é de aproximadamente 26°C, enquanto a média
+                            anual de precipitação é de cerca de 2100 mm.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="Salvador" class="content">
+
+            <div class="map-container">
+
+                <div class="card">
+
+                    <div class="card-text">
+                        <h2>Salvador - BA</h2>
+                        <div class="card-image">
+                            <span onclick="closeModal();" class="w3-button w3-red w3-display-topright">&times;</span>
+                            <img src="ts14f03.png" alt="Climograma">
+                        </div>
+                        <p>A partir dos dados do climograma, pode-se observar que a cidade de Salvador apresenta
+                            temperaturas médias relativamente estáveis durante o ano, variando entre mínimas de 23°C a
+                            26°C e máximas de 25°C a 28°C. A precipitação é mais elevada nos meses de abril a julho, com
+                            valores acima de 135 mm por mês, e mais baixa nos meses de outubro a dezembro, com valores
+                            abaixo de 70 mm por mês.<br>
+
+                            A média anual de temperatura em Salvador é de cerca de 25°C, enquanto a média anual de
+                            precipitação é de aproximadamente 1200 mm.
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="Brasilia" class="content">
+
+            <div class="map-container">
+
+                <div class="card">
+
+                    <div class="card-text">
+                        <h2>Brasília - DF</h2>
+                        <div class="card-image">
+                            <span onclick="closeModal();" class="w3-button w3-red w3-display-topright">&times;</span>
+                            <img src="ts14f04.png" alt="Climograma">
+                        </div>
+                        <p>A partir dos dados do climograma, pode-se observar que a cidade de Brasília apresenta uma
+                            grande variação de temperatura ao longo do ano, com mínimas que podem chegar a 14°C no
+                            inverno e máximas que podem atingir 29°C no verão. A precipitação é mais elevada nos meses
+                            de janeiro a março, com valores acima de 200 mm por mês, e mais baixa nos meses de junho a
+                            agosto, com valores abaixo de 12 mm por mês.<br>
+
+                            A média anual de temperatura em Brasília é de cerca de 22°C, enquanto a média anual de
+                            precipitação é de aproximadamente 1118 mm.
+
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="BH" class="content">
+
+            <div class="map-container">
+
+                <div class="card">
+
+                    <div class="card-text">
+                        <h2>Belo Horizonte - MG</h2>
+                        <div class="card-image">
+                            <span onclick="closeModal();" class="w3-button w3-red w3-display-topright">&times;</span>
+                            <img src="ts14f05.png" alt="Climograma">
+                        </div>
+                        <p>A partir dos dados do climograma, pode-se observar que a cidade de Belo Horizonte apresenta
+                            uma temperatura média anual em torno de 20°C, com temperaturas mínimas que podem chegar a
+                            12°C no inverno e máximas que podem atingir 28°C no verão. A precipitação é mais elevada nos
+                            meses de dezembro a fevereiro, com valores acima de 160 mm por mês, e mais baixa nos meses
+                            de junho a agosto, com valores abaixo de 20 mm por mês.<br>
+
+                            A média anual de precipitação em Belo Horizonte é de cerca de 1381 mm.
+
+
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="PortoAlegre" class="content">
+
+            <div class="map-container">
+
+                <div class="card">
+
+                    <div class="card-text">
+                        <h2>Porto Alegre - RS</h2>
+                        <div class="card-image">
+                            <span onclick="closeModal();" class="w3-button w3-red w3-display-topright">&times;</span>
+                            <img src="ts14f06.png" alt="Climograma">
+                        </div>
+                        <p>A partir dos dados do climograma, é possível observar que a temperatura mínima varia entre
+                            8°C e 20°C ao longo do ano, enquanto a temperatura máxima varia de 17°C a 29°C. Isso indica
+                            que a cidade tem invernos frios e verões quentes, com uma amplitude térmica
+                            significativa.<br>
+
+                            A precipitação na cidade de Porto Alegre é distribuída de forma relativamente uniforme ao
+                            longo do ano, com a média de chuvas mensal variando entre 96mm e 146mm. A cidade tem uma
+                            estação chuvosa no verão, que vai de dezembro a março, quando a precipitação é mais intensa.
+                            A precipitação anual média é de 1386mm.<br>
+
+                            As médias de temperatura são de 13.8°C para a mínima e 22.8°C para a máxima. A média de
+                            precipitação mensal é de 115.5mm e a soma total de chuvas anual é de 1386mm.
+
+
+
+
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+
+        <h4>Em relação aos diferentes tipos de clima encontrados no país, é correto afirmar que:</h4>
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin pulsar "
+            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
+
+            a) O clima tropical úmido é caracterizado por altas temperaturas e baixa umidade, predominando nas regiões
+            Norte e Nordeste do Brasil.
+
+        </button>
+
+        <button class="desativar1 area p4 w3-padding w3-margin pulsar "
+            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'essa condição climática é resultado da influência de massas de ar polar e tropical, que se alternam durante o ano e provocam essa variação térmica sazonal','2'); this.style.backgroundColor='lightgreen'">
+
+            b) O clima subtropical apresenta verões quentes e úmidos e invernos frios e secos, sendo predominante na
+            região Sul do país.
+
+        </button>
+
+
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin pulsar "
+            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
+
+            c) O clima equatorial é marcado por temperaturas moderadas e chuvas frequentes durante todo o ano,
+            predominando em grande parte do Centro-Oeste brasileiro.
+
+
+        </button>
+
+
+
+
+
+
+        <p id="resp1"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" class="pulsar" style="display:none"
+                    alt="globinho1" width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Sobre o clima semiárido, é correto afirmar que:</h4>
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin pulsar"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'isso ocorre devido à influência das correntes de ar que, ao passar pelas áreas de baixa pressão, provocam a evaporação da umidade, gerando pouca precipitação','2'); this.style.backgroundColor='lightgreen'">
+
+            a) Apresenta baixa umidade do ar e chuvas escassas, comum em regiões do Nordeste e parte do Sudeste do
+            Brasil (MG).
+
+        </button>
+
+        <button class="desativar2 area p4 w3-padding w3-margin pulsar "
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            b) É caracterizado por chuvas abundantes durante todo o ano, permitindo o cultivo de diversas culturas
+            agrícolas.
+        </button>
+
+
+
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin pulsar"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            c) O clima semiárido é encontrado apenas em regiões de altitude elevada, com temperaturas amenas ao longo do
+            ano.
+        </button>
+
+
+
+
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" class="pulsar" style="display:none"
+                    alt="globinho2" width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+
+        <h4>Sobre o clima tropical de altitude, é correto afirmar que:</h4>
+
+
+
+
+
+
+
+        <button class="desativar3 area p4 w3-padding w3-margin pulsar"
+            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            a) É encontrado apenas em regiões do Nordeste, caracterizado por temperaturas amenas e baixa umidade do ar.
+
+        </button>
+
+
+
+        <button class="desativar3 area p4 w3-padding w3-margin pulsar"
+            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            b) Apresenta temperaturas elevadas durante todo o ano e chuvas abundantes, sendo predominante em regiões da
+            Amazônia.
+
+        </button>
+
+        <button class="desativar3 area p4 w3-padding w3-margin pulsar"
+            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'a redução da temperatura ocorre devido à diminuição da pressão atmosférica, o que acaba reduzindo a capacidade do ar de reter o calor','2'); this.style.backgroundColor='lightgreen'">
+
+            c) Possui temperaturas mais baixas em função da altitude, comumente encontrado em regiões serranas do
+            Sudeste e do Sul do país.
+
+        </button>
+
+
+
+        <p id="resp3"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" class="pulsar" style="display:none"
+                    alt="globinho3" width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+                Qual é a relação entre clima e desenvolvimento econômico no Brasil?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            O clima é um fator determinante para o desenvolvimento econômico de um país. No Brasil, as regiões com clima
+            favorável ao cultivo de alimentos e produção de energia hidrelétrica, como o Sul e Sudeste, são as mais
+            desenvolvidas economicamente. Por outro lado, regiões com clima desfavorável, como o semiárido nordestino,
+            têm um desenvolvimento econômico mais baixo. Além disso, as mudanças climáticas podem afetar o
+            desenvolvimento econômico, pois eventos climáticos extremos, como secas ou enchentes, podem impactar a
+            produção agrícola e a infraestrutura.
+
+        </p>
+
+
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+                Como o clima influencia a produção agrícola no Brasil?
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            O clima é um fator determinante na produção agrícola no Brasil, pois a maioria das culturas depende de
+            condições climáticas favoráveis para se desenvolver. As regiões com clima tropical úmido, como o Norte e
+            Nordeste, são ideais para o cultivo de frutas tropicais e grãos como milho e feijão. Já o clima subtropical
+            do Sul do país é adequado para a produção de grãos de inverno, como trigo e cevada. Além disso, eventos
+            climáticos extremos, como secas ou geadas, podem afetar negativamente a produção agrícola e gerar impactos
+            econômicos significativos.
+
+
+        </p>
+
+
+
+
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+
+                Como o clima afeta a geração de energia no Brasil?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            A geração de energia hidrelétrica é uma das principais fontes de energia no Brasil, e o clima tem um papel
+            crucial nesse processo. A disponibilidade de água é influenciada pelo regime de chuvas, que pode variar de
+            acordo com o clima de cada região. Por exemplo, a região Norte do Brasil, que possui clima Equatorial úmido,
+            tem um regime de chuvas constante e abundante, o que favorece a geração de energia hidrelétrica. Já a região
+            Nordeste, com clima semiárido, enfrenta períodos prolongados de seca, o que pode reduzir a capacidade de
+            geração de energia hidrelétrica. Além disso, eventos climáticos extremos, como secas ou enchentes, podem
+            afetar a geração de energia e a infraestrutura energética do país.
+
+
+        </p>
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <br><br>
+
+
+
+
+
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
+            <h2> <strong>Desafio - Jornada do herói: Caminho de Volta </strong></h2>
+
+            <h4>
+                Na última aula, nosso herói foi recompensado por seus feitos e finalmente recebeu o merecido
+                reconhecimento. <br>
+
+
+                Mas agora chegou a hora de enfrentar um novo desafio: decidir se irá permanecer no Mundo Especial ou
+                iniciar a jornada de volta para casa, retornando ao seu Mundo Comum.
+
+
+                <br>
+
+
+                E aí, estão prontos para colocar a imaginação em ação e descobrir qual será o destino do nosso corajoso
+                protagonista? Formem seus grupos e vamos em frente!
+            </h4>
+        </div>
+
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding">
+            <h3><strong>Instruções</strong> </h3>
+            <ul>
+
+                <li>Forme um grupo com 5-6 estudantes;</li>
+
+                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
+
+                <li> Faça anotações em seu caderno;</li>
+
+                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
+
+                <li>Tempo da atividade: 25 minutos.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
+
+            <h4><strong>Caminho de Volta (10)</strong></h4>
+
+
+            <p>Leia a passagem abaixo:</p>
+
+
+
+
+            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+
+                <p>“Acordem, Buscadores! Sacudam os efeitos do banquete e da celebração, e lembrem-se que viemos buscar
+                    aqui! As pessoas lá em casa estão morrendo de fome, e é urgente, do agora que nos recuperamos da
+                    provação, que carreguemos nossas mochilas com a comida e o tesouro, e voltemos logo. Além disso, não
+                    se sabe que perigos ainda nos aguardam às margens dos campos de caça. Você se detém à beira do
+                    acampamento para olhar. Quando contarem em casa, ninguém vai acreditar em você. Como narrar? Algo
+                    faiscante te atrai. Você se abaixa e pega - uma pedra linda e brilhante. De repente, uma forma
+                    escura salta sobre você, com os dentes à mostra. Corral Corra para salvar a vida!”. </p>
+
+
+
+            </div>
+
+
+            <p>Essa metáfora explora o que acontece com o herói após ter vivenciado toda a Jornada e como ele vai
+                aplicar as lições aprendidas no Mundo Especial. Será que alguém vai acreditar em tudo o que o herói
+                passou? Como o herói vai contar para os outros seus feitos?</p>
+
+            <h4><strong>Motivação</strong></h4>
+
+            <p>O Caminho de Volta marca o momento em que os heróis se dedicam novamente à aventura. Agora com a situação
+                mais confortável, ele deve decidir o que fazer, seja por sua conta própria ou pela ação de uma força
+                externa. Em <em>The Witcher 3: Wild Hunt. Geralt</em>, o protagonista, deve decidir se vai permanecer no
+                Mundo Especial e continuar a lutar contra os monstros e o caos, ou se iniciará a volta para casa, um
+                retorno ao Mundo Comum.</p>
+
+            <p>Poder ser uma decisão de voltar porque o herói já está cansado ou um nova ameaça do vilão que tinha
+                fugido. Muitas vezes o herói decide partir devido ao medo da retaliação ou perseguição enquanto as
+                forças que o desafiaram se reagrupam e se preparam para o contra-ataque.</p>
+
+            <p>Assim como em <em>God of War</em>, em que Kratos retorna para casa após ter enfrentado diversas provações
+                e desafios, o Caminho de Volta marca o momento em que os heróis se dedicam novamente à aventura. Agora
+                com a situação mais confortável, ele deve decidir o que fazer, seja por sua conta própria ou pela ação
+                de uma força externa.</p>
+
+            <p>Por exemplo, em <em>Horizon Zero Dawn</em>, a protagonista Aloy decide voltar ao Mundo Comum após
+                descobrir que a ameaça das máquinas ainda persiste e que precisa continuar lutando para proteger seu
+                povo. Em <em>The Last of Us</em>, Joel e Ellie também decidem partir em busca de uma nova comunidade
+                após serem ameaçados por um grupo de sobreviventes.</p>
+
+
+
+            <h4><strong>Retaliação e perseguição</strong></h4>
+
+            <p>Muitas vezes os heróis aprendem que os vilões não foram completamente derrotados e pode se levantar mais
+                fortes do que antes. O heróis pode descobrir na Provação que resolveu apenas uma parte do problema e que
+                agora despertou algo muito maior. É uma boa hora para fugir.</p>
+
+            <p>Quando tudo parece normal e monótono, pode ocorrer uma reviravolta e muita perseguição em direção ao
+                herói e sua equipe. Em<em> Red Dead Redemption 2</em>, Arthur Morgan precisa lidar com a retaliação e
+                perseguição
+                dos inimigos da gangue de Van der Linde, enquanto tenta proteger seus amigos e fugir dos agentes da lei
+                que estão em seu encalço.</p>
+
+            <h4><strong>Obstáculos</strong></h4>
+
+            <p>O Vilão pode ter fugido e para escapar o herói precisa utilizar tudo ao seu redor para sair do perigo.
+                Sempre surge diversos obstáculos para sair do Mundo Especial e o herói precisa ter consciência disso
+                para terminar sua aventura.</p>
+
+            <p>Em jogos como <em>Tomb Raider, Uncharted e Assassin's Creed</em>, os protagonistas enfrentam diversos
+                obstáculos durante suas aventuras. Em Tomb Raider, por exemplo, Lara Croft precisa utilizar seu instinto
+                de sobrevivência e habilidades de escalada para superar obstáculos e escapar de perigosos inimigos. Já
+                em <em>Uncharted</em>, Nathan Drake enfrenta situações desafiadoras que exigem sua habilidade em combate
+                e resolução de quebra-cabeças para prosseguir na história. Em <em>Assassin's Creed</em>, o protagonista
+                precisa usar sua habilidade de parkour para superar obstáculos e escapar de seus inimigos.</p>
+
+            <p>Em todos esses jogos, os protagonistas enfrentam desafios que podem impedir sua progressão na história.
+                Mesmo que os heróis se agrupem, ganhem ou consigam escapar do Mundo Especial, eles precisam passar por
+                outro teste, o exame final da jornada, a Ressurreição.</p>
+
+
+
+
+
+
+
+
+
+
+            <h4><strong>Questões para pensar a história do jogo:</strong></h4>
+
+            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+
+                <p> - Qual o caminho de Volta em sua história? Voltar ao ponto de partida? Buscar outro destino?
+                    Ajustar-se a uma nova vida no Mundo Especial?</p>
+
+                <p> - Há uma elemento de perseguição ou aceleração na sua história?
+
+                </p>
+
+                <p>- Qual seria a forma mais interessante de aplicar as lições aprendidas no Mundo Especial em uma
+                    história de jogo sobre o Caminho de Volta, considerando que essa aplicação pode ser voltada para a
+                    luta contra novas ameaças ou para a busca pela paz e pelo recomeço em um Mundo Comum renovado?</p>
+
+
+
+            </div>
+
+
+
+
+            <!-- <h4><strong>Guardiões do Limiar</strong></h4>
+
+         
+
+                <h4><strong>Mentor em pessoa</strong></h4>
+
+
+
+                 <h4><strong>Evitando os clichês de Mentor</strong></h4> -->
+
+
+
+
+
+        </div>
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','4');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://www.youtube.com/watch?v=gRo50eytz6s&ab_channel=Barong" target="_blank">
+                    O Mundo do Raimundo No Clima da Caatinga - Documentário
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+        <p>SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante</strong>: geografia do Brasil:
+            aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008.</p>
+
+        <p>FRANK, Bruno José Rodrigues.<strong> Geografia econômica</strong>. Londrina: Editora e Distribuidora
+            Educacional S.A., 2018.</p>
+
+        <p>
+            MENDONÇA, Francisco; DANNI-OLIVEIRA, Inês Moresco. <strong>Climatologia</strong>: noções básicas e climas do
+            Brasil. São Paulo: Oficina de Textos, 2007.
+        </p>
+
+        <p>
+            MOREIRA, João Carlos; SENE, Eustáquio de. Geografia geral e do Brasil: espaço geográfico e globalização:
+            ensino médio.3. ed. São Paulo: Scipione, 2016.
+        </p>
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. São
+            Paulo: Ática, 2013.
+        </p>
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.</p>
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+
+
+
+        function openModal(id, event) {
+            event.preventDefault();
+            // Obter todas as divs com a classe "content"
+            var divs = document.getElementsByClassName("content");
+
+            // Percorrer todas as divs
+            for (var i = 0; i < divs.length; i++) {
+                // Se a div atual for a div com o id passado como parâmetro, mostrar a div
+                if (divs[i].id === id) {
+                    divs[i].style.display = "block";
+                } else { // Caso contrário, esconder a div
+                    divs[i].style.display = "none";
+                }
+            }
+
+            console.log("ID do elemento:", id);
+        }
+
+
+
+
+        function closeModal() {
+
+
+
+            var contents = document.getElementsByClassName("content");
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                //addProgressBar();
+                //numButton();
+
+                // // Código para rolagem suave
+                // var offsetTop = proximo.offsetTop; // Obter a posição do topo do elemento seguinte
+                // var elementoRolado = document.scrollingElement || document.documentElement; // Obter o elemento rolado (compatibilidade com diferentes navegadores)
+                // elementoRolado.classList.add('scroll-transition'); // Adicionar a classe com as propriedades de transição
+                // elementoRolado.scrollTo({
+                //     top: offsetTop,
+                //     behavior: "smooth"
+                // });
+
+
+
+                ApagaButton();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 8);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

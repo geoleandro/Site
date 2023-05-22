@@ -1,0 +1,244 @@
+
+.character {
+    position: relative;
+}
+
+/* Imagem alinhada à esquerda */
+img.left {
+    margin-left: -10%;
+    margin-top: 10%;
+    padding: auto;
+    cursor: pointer;
+}
+
+/* Imagem alinhada à direita */
+img.right {
+    margin-left: -10%;
+    margin-top: 10%;
+    padding: auto;
+    cursor: pointer;
+}
+
+.w3-row {
+    padding-top: 5%;
+    max-width: 89%;
+    margin: 0 auto;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ccc;
+    /* background-image: url("../Aula03/p3q1a.png");
+    background-size: cover;
+    background-position: auto; */
+}
+
+.balloon {
+    position: absolute;
+    display: flex;
+
+    background-color: #fff;
+    border-radius: 10px;
+
+    min-width: 80%;
+    min-height: 20%;
+
+    padding: 2%;
+
+    border: 3px solid #3a3a3a85;
+    box-shadow: 0 0 10px #474747a2;
+
+
+
+}
+
+.balao1 {
+    display: block;
+    opacity: 0;
+    transition: opacity 1.5s;
+
+}
+
+.balao2 {
+    display: block;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.fadeBaloon {
+    opacity: 1;
+               
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: rotate(45deg);
+
+    border-top: 20px solid transparent;
+    border-bottom: none;
+    z-index: 10;
+    max-width: 100%;
+    width: auto;
+    bottom: -10px;
+    /* ajusta a posição do triângulo para baixo */
+}
+
+.triangleLeft {
+    border-right: 20px solid #7e7e7e6b;
+    left: 50%;
+}
+
+.triangleRight {
+    border-right: 20px solid #7e7e7e6b;
+    left: 30%;
+}
+
+.pad {
+    padding: 2%;
+    padding-right: 2%;
+}
+
+
+/* .left {
+
+    left: auto;
+    bottom: auto;
+}
+
+.right {
+    right: auto;
+    bottom: auto;
+} */
+
+@media screen and (max-width: 600px) {
+  
+
+   
+
+    .balloon {
+        position: relative;
+        display: inline-block;
+
+        background-color: #fff;
+        border-radius: 10px;
+        min-width: 70%;
+        min-height: 50px;
+        padding: 5%;
+
+        border: 1px solid #3a3a3a85;
+        box-shadow: 0 0 10px #474747a2;
+
+
+
+    }
+
+
+
+    .pad {
+        padding: 5%;
+
+    }
+
+
+    .triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        transform: rotate(45deg);
+
+        border-top: 20px solid transparent;
+        border-bottom: none;
+        z-index: 10;
+        max-width: auto;
+        width: auto;
+        bottom: -10px;
+        /* ajusta a posição do triângulo para baixo */
+    }
+
+    .triangleLeft {
+        border-right: 20px solid #7e7e7e6b;
+        left: 30%;
+    }
+
+    .triangleRight {
+        border-right: 20px solid #7e7e7e6b;
+        left: 30%;
+    }
+
+    /* Imagem alinhada à esquerda */
+    img.left {
+        max-width: 220px;
+        margin-left: -50%;
+        margin-top: -30%;
+        cursor: pointer;
+      
+
+    }
+
+    /* Imagem alinhada à direita */
+    img.right {
+        max-width: 220px;
+        margin-left: -20%;
+        margin-top: -30%;
+        cursor: pointer;
+      
+
+    }
+
+}
+
+#typingSpeed {
+    width: 100px;
+    /* largura do controle deslizante */
+    background-color: #407943;
+}
+
+#typingSpeed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* remove o estilo padrão do polegar */
+    appearance: none;
+    width: 20px;
+    /* largura do polegar */
+    height: 20px;
+    /* altura do polegar */
+
+    /* cor do polegar */
+    cursor: pointer;
+}
+
+#typingSpeed::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #39693b;
+    cursor: pointer;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+}
+
+input[type=range]:hover {
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #76a176;
+    margin-top: -5px;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #3a493a;
+}

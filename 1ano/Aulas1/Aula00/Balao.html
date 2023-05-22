@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <script src="../../../estilos/javascript.js" defer></script>
+    <script src="../../../estilos/estiloBalao.js" defer></script>
 
 
 
@@ -23,20 +24,23 @@
 
         /* Imagem alinhada à esquerda */
         img.left {
-            margin-left: -40px;
-            margin-top: -40px;
+            margin-left: -10%;
+            margin-top: 10%;
+            padding: auto;
+            cursor: pointer;
         }
 
         /* Imagem alinhada à direita */
         img.right {
-            margin-left: -10px;
-            margin: 0%;
-            margin-top: -50px;
+            margin-left: -10%;
+            margin-top: 10%;
+            padding: auto;
+            cursor: pointer;
         }
 
         .w3-row {
-            padding-top: 10%;
-            max-width: 580px;
+            padding-top: 5%;
+            max-width: 89%;
             margin: 0 auto;
             border: 10px solid #fff;
             border-radius: 20px;
@@ -48,16 +52,40 @@
 
         .balloon {
             position: absolute;
-            display: inline-block;
-            padding: 3%;
+            display: flex;
+
             background-color: #fff;
             border-radius: 10px;
-            max-width: auto;
-            width: auto;
-            height: auto;
-            margin: 5%;
+
+            min-width: 80%;
+            min-height: 20%;
+
+            padding: 2%;
+
             border: 3px solid #3a3a3a85;
             box-shadow: 0 0 10px #474747a2;
+         
+
+
+
+        }
+
+        .balao1 {
+           
+            opacity: 0.1;
+            transition: opacity 1.5s;
+
+        }
+
+        .balao2 {
+          
+            opacity: 0.1;
+            transition: opacity 1.5s;
+        }
+
+        .fadeBaloon {
+            opacity: 1;
+                       
         }
 
         .triangle {
@@ -75,8 +103,23 @@
             /* ajusta a posição do triângulo para baixo */
         }
 
+        .triangleLeft {
+            border-right: 20px solid #7e7e7e6b;
+            left: 50%;
+        }
 
-        .left {
+        .triangleRight {
+            border-right: 20px solid #7e7e7e6b;
+            left: 30%;
+        }
+
+        .pad {
+            padding: 2%;
+            padding-right: 2%;
+        }
+
+
+        /* .left {
 
             left: auto;
             bottom: auto;
@@ -85,11 +128,22 @@
         .right {
             right: auto;
             bottom: auto;
-        }
+        } */
 
         @media screen and (max-width: 600px) {
+          
+
             .w3-row {
                 max-width: 320px;
+                padding-top: 5%;
+                max-width: 85%;
+                margin: 0 auto;
+                border: 10px solid #fff;
+                border-radius: 20px;
+                box-shadow: 0 0 10px #ccc;
+                /* background-image: url("../Aula03/p3q1a.png");
+            background-size: cover;
+            background-position: auto; */
             }
 
             .balloon {
@@ -98,17 +152,22 @@
 
                 background-color: #fff;
                 border-radius: 10px;
-                max-width: auto;
-                width: auto;
-                height: auto;
-                margin: 10px;
+                min-width: 70%;
+                min-height: 50px;
+                padding: 5%;
+
                 border: 1px solid #3a3a3a85;
                 box-shadow: 0 0 10px #474747a2;
-                padding: 3%;
+
+
+
             }
 
+
+
             .pad {
-                padding: 20px;
+                padding: 5%;
+
             }
 
 
@@ -123,19 +182,34 @@
                 z-index: 10;
                 max-width: auto;
                 width: auto;
-                bottom: -12px;
+                bottom: -10px;
                 /* ajusta a posição do triângulo para baixo */
             }
 
-            img.right {
-                margin-left: -10px;
-                margin: -30%;
-                margin-top: -50px;
+            .triangleLeft {
+                border-right: 20px solid #7e7e7e6b;
+                left: 30%;
             }
 
+            .triangleRight {
+                border-right: 20px solid #7e7e7e6b;
+                left: 30%;
+            }
+
+            /* Imagem alinhada à esquerda */
             img.left {
-                margin-left: -50px;
-                margin-top: -40px;
+                margin-left: -50%;
+                margin-top: -30%;
+                cursor: pointer;
+
+            }
+
+            /* Imagem alinhada à direita */
+            img.right {
+                margin-left: -20%;
+                margin-top: -30%;
+                cursor: pointer;
+
             }
 
         }
@@ -254,48 +328,59 @@
 
     <div class="w3-row w3-container w3-mobile">
 
-
-
-
         <div class="w3-col s6">
-            <div class="character">
-                <div class="balloon">
-                    <div class="triangle" style="border-right: 20px solid #7e7e7e6b; left: 50%;"></div>
-                    <span id="demo1" class="pad"></span>
+            <div class="character ">
+                <div class="balloon balao1" id="baloon1">
+                    <div class="triangle triangleLeft"></div>
+                    <span id="demo1" class="pad ">Clique na personagem</span>
                 </div>
-                <img onclick="ShowDialog(['Olá, eu sou a pessoa 1!', 'Olá, eu sou a pessoa 2!  fim', 'Olá, eu sou a pessoa 3!'], 'demo1');"
+                <img id="demo1-img"
+                    onclick="ShowDialog(['Ei, Franciele, Você conhece o site Duvid - Geografia?' ,' É super legal porque tem um monte de textos e exercícios sobre geografia, tudo de graça. ', 
+                    'Têm um monte de conteúdo sobre geografia para o ensino médio, sabe?',
+                    'Ele explica tudo direitinho, com textos e imagens bem bacanas.', 
+                    'E ainda tem um monte de questões interativas para praticar e testar nosso conhecimento.'], 
+
+                    'demo1');"
                     class="left" src="FotoDir.png" width="auto" height="auto" alt="FotoDir">
 
 
             </div>
         </div>
         <div class="w3-col s6">
-            <div class="character">
-                <div class="balloon ">
-                    <div class="triangle" style="border-right: 20px solid #7e7e7e6b; left: 50%;"></div>
-                    <span id="demo2" class="pad"></span>
+            <div class="character ">
+                <div class="balloon balao2 " id="baloon2">
+                    <div class="triangle triangleRight"></div>
+                    <span id="demo2" class="pad">Clique na personagem</span>
                 </div>
-                <img onclick="ShowSecondDialog(['Olá, eu sou a pessoa 2!', 'Vamos conversa sobre essas coisas.'], 'demo2');"
-                    class="right" src="FotoEsq.png" width="auto" height="auto" alt="FotoDir">
+                <img id="demo2-img"
+                    onclick="ShowSecondDialog(['Nossa Jéssica, que demais!', 
+                    'Eu sempre tive um pouco de dificuldade em geografia.', 
+                    'Talvez esse site pode me ajudar!.',
+                    'Vou dar uma olhada agora mesmo!', 
+                    'Obrigada por avisar!'], 'demo2');"
+                    class="right" src="person28.png" width="auto" height="auto" alt="FotoDir">
+
+            </div>
+
+            <div class="container w3-mobile">
+                <label for="typingSpeed">Velocidade de digitação:</label>
+                <input type="range" id="typingSpeed" min="30" max="150" step="1" value="50">
+            </div>
+
+
+            <div class="w3-container w3-mobile">
+                <button Class="w3-button w3-bar-item w3-green w3-border" onclick="resetDialogVariables()">Reiniciar</button>
 
             </div>
         </div>
-    </div>
 
-    <div class="container w3-mobile">
-        <label for="typingSpeed">Velocidade de digitação:</label>
-        <input type="range" id="typingSpeed" min="50" max="150" step="1" value="50">
+
     </div>
 
 
-    <button onclick="resetDialogVariables()">Pessoa 2</button>
-    <div></div>
+
 
     <script>
-
-
-
-
 
 
 
@@ -318,111 +403,7 @@
         //     }
         // }
 
-        const typingSpeedSlider = document.getElementById("typingSpeed");
 
-        var currentTypingSpeed = typingSpeedSlider.value;
-
-
-
-
-
-        typingSpeedSlider.addEventListener("input", function () {
-            currentTypingSpeed = typingSpeedSlider.value;
-        });
-
-        console.log(currentTypingSpeed);
-
-
-        var currentLine = 0;
-        var dialogLines;
-        const typingSpeed = 50;
-        var isFirstDialogDone = false;
-        var isSecondDialogDone = true;
-        var apertouDialogo = true;
-        var isSecondDialogActivated = false;
-
-
-
-
-        function ShowDialog(newLines, targetID) {
-
-            if (isSecondDialogDone && apertouDialogo) {
-                dialogLines = newLines;
-                currentLine = 0;
-                document.getElementById(targetID).innerHTML = '';
-                AtivaDialogo(targetID, currentTypingSpeed);
-                isFirstDialogDone = false;
-            }
-
-
-
-
-        }
-
-        function ShowSecondDialog(newLines, targetID) {
-            if (isFirstDialogDone && apertouDialogo && !isSecondDialogActivated) {
-                dialogLines = newLines;
-                currentLine = 0;
-                document.getElementById(targetID).innerHTML = '';
-                AtivaDialogo(targetID, currentTypingSpeed);
-                isSecondDialogActivated = true;
-
-
-            }
-        }
-
-        function AtivaDialogo(targetID) {
-
-
-            typeWriter(dialogLines[currentLine], targetID, 0, currentTypingSpeed);
-
-
-        }
-
-        function typeWriter(txt, targetID, contadorLetras, speed) {
-
-            var balloonWidth = document.querySelector('.balloon').offsetWidth;
-            var waitTime = balloonWidth / 5;
-
-            if (contadorLetras < txt.length) {
-                document.getElementById(targetID).innerHTML += txt.charAt(contadorLetras);
-                contadorLetras++;
-                setTimeout(function () {
-
-                    apertouDialogo = false;
-                    typeWriter(txt, targetID, contadorLetras, speed);
-                }, speed);
-            } else {
-                setTimeout(function () {
-                    AvancaDialogo(targetID);
-                    apertouDialogo = true;
-                }, speed * waitTime);
-            }
-        }
-
-        function AvancaDialogo(targetID) {
-            currentLine++;
-
-
-            if (currentLine < dialogLines.length) {
-                document.getElementById(targetID).innerHTML = '';
-                AtivaDialogo(targetID, currentTypingSpeed);
-            } else {
-                document.getElementById(targetID).innerHTML = '';
-                isFirstDialogDone = true;
-                isSecondDialogDone = false;
-            }
-        }
-        5
-
-
-        function resetDialogVariables() {
-            isFirstDialogDone = false;
-            isSecondDialogDone = true;
-            apertouDialogo = true;
-            contadorDialogo = 0;
-            isSecondDialogActivated = false;
-        }
 
 
 
