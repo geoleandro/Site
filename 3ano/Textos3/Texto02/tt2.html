@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>Texto 02 - 3º ano</title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 02 - A população no mundo</h1>
+
+
+        <p><strong> Conteúdo:</strong> Conceito de demografia: taxas de mortalidade, natalidade e fecundidade. Transição
+            demográfica. Estrutura etária. Teorias populacionais e mudanças socioeconômicas.
+        </p>
+
+        <p><strong>Objetivo:</strong> Entender e aplicar os principais conceitos da demografia: taxas de mortalidade,
+            natalidade e fecundidade, transição demográfica, teorias demográficas e estrutura da população.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada conhecemos a arquitetura da globalização e uma visão
+            atual sobre a dinâmica do mundo.
+        </p>
+
+
+        <p>Nesta aula, veremos como a população mundial se movimenta e quais são as principais questões envolvendo sua
+            distribuição pelo globo terrestre. </p>
+
+        <p>A compreensão das dinâmicas populacionais é um pilar essencial para desvendar os desafios e oportunidades que
+            moldam o nosso mundo.</p>
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2> Evolução da População Mundial: Uma Jornada de Transformação </h2>
+
+        <h3>Um Crescimento Lento</h3>
+
+
+
+
+        <p>Até o século XVIII, nosso planeta abrigava aproximadamente 1 bilhão de pessoas. Imagine, esse era o total da
+            população global! A jornada da humanidade estava apenas começando, e o crescimento era devagar. Fatores como
+            doenças e condições precárias limitavam nosso avanço. </p>
+
+        <p> No início, a humanidade enfrentava um mundo desafiador. Doenças e dificuldades na obtenção de recursos
+            limitavam nossa expansão. As sociedades dependiam principalmente da agricultura para sobreviver, o que
+            controlava nosso crescimento. Era uma fase inicial da jornada, cheia de obstáculos.</p>
+
+
+
+        <div class="w3-margin"><img id="imagem1" src="tt02f01.png" alt="tt02f01" class="w3-mobile"><span
+                class="w3-small w3-margin-left" id="citacao1"> </span></div>
+
+
+
+
+        <h3>Revolução Demográfica </h3>
+
+        <p> No entanto, à medida que avançamos na jornada, o cenário começou a mudar. No final do século XVIII, ocorreu
+            o que chamamos de "Revolução Demográfica". Melhorias na higiene, cuidados médicos e saneamento começaram a
+            reduzir drasticamente as taxas de mortalidade. Um salto significativo nesse cenário estava acontecendo.</p>
+
+        <p>Imagine que as sociedades descobriram maneiras de superar as barreiras. A Revolução Demográfica trouxe
+            avanços em saúde e higiene, levando a uma queda nas mortes. Começamos a viver mais e prosperar. Era como se
+            tivéssemos encontrado aliados valiosos nesse percurso. </p>
+
+
+        <h3>Explosão Demográfica </h3>
+
+
+        <p>Ao longo do século XX, demos um passo gigante. As taxas de natalidade permaneceram altas enquanto as de
+            mortalidade caíam. Isso resultou na explosão demográfica. Nessa etapa estava em pleno vapor, mas as mudanças
+            estavam à vista. À medida que as sociedades se industrializavam, a forma como vivíamos começou a evoluir.
+        </p>
+
+        <p>E um período mais recente, testemunhamos um crescimento acelerado. A explosão demográfica nos fez crescer
+            rapidamente, com avanços médicos e melhorias na alimentação. Parecia que estávamos em um período de grande
+            prosperidade. No entanto, essas mudanças começaram a nos fazer questionar o que vinha a seguir.</p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Perspectivas para o Futuro </h2>
+
+        <p> Agora, olhamos para o horizonte futuro. A jornada continua, mas de maneira diferente. As taxas de
+            crescimento diminuíram, e muitos países estão entrando em uma nova fase. A população global ainda crescerá,
+            mas em um ritmo mais tranquilo. O envelhecimento, a migração e a distribuição geográfica estão entre os
+            desafios que enfrentamos.</p>
+
+
+        <div class="w3-margin"><img id="imagem2" src="tt02f02.png" alt="tt02f02" class="w3-mobile"><span
+                class="w3-small w3-margin-left" id="citacao2"> </span></div>
+
+
+
+        <p> Hoje, contemplamos o que está por vir. O século XX nos trouxe a um momento de reflexão. À medida que a
+            população mundial avança, entramos em uma fase de transformação. A velocidade diminuiu, mas novos desafios
+            surgiram. Algumas regiões enfrentam o envelhecimento, enquanto outras lidam com altas taxas de natalidade. A
+            migração continua a moldar nossas trajetórias. Em meio a tudo isso, estamos em busca de soluções para
+            garantir um futuro equilibrado e sustentável para todos nós. Veja como está a distribuição da população
+            pelos continentes.</p>
+
+        <div class="w3-margin"><img id="imagem3" src="tt02f03.png" alt="tt02f03" class="w3-mobile"><span
+                class="w3-small w3-margin-left" id="citacao3"> </span></div>
+
+
+
+
+
+        <h3> Desvendando o Crescimento da População: Explorando os Indicadores Demográficos</h3>
+
+        <p>Adentrar o universo da demografia é como abrir um intrigante livro que conta a história da humanidade por
+            meio de números e tendências. Nesta jornada, nos propomos a compreender como o crescimento populacional é
+            medido <span onclick="document.getElementById('arquipelago').style.display='block'" class="w3-yellow">(veja
+                as taxas demográficos)</span> e o que esses números podem nos revelar sobre sociedades e culturas. Vamos
+            explorar os conceitos de natalidade, mortalidade e fecundidade, descobrindo os segredos que eles escondem.
+        </p>
+
+
+
+
+
+        <div id="arquipelago" class="w3-modal w3-margin-top">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-padding">
+                    <span onclick="document.getElementById('arquipelago').style.display='none'"
+                        class="w3-button w3-red w3-display-topright">&times;</span>
+                    
+                        Taxas demográficas:
+
+                    <ul>
+                        <li>
+                            Para comparar região diferentes, foram criadas fórmulas ou taxas:
+                        </li>
+
+                        <li>
+                            <strong>Taxa bruta de natalidade (TBN)</strong>. Número de nascimentos por 1.000 habitantes
+                            em uma ano.
+
+                            TBN = <u>nº de nascidos</u> x 1.00<br>
+                            &nbsp; nº de habitantes
+
+                        </li>
+
+                        <li>
+                            <strong> Taxa bruta de mortalidade (TBM)</strong>. Número de falecimentos por 1.000
+                            habitantes em uma ano.
+
+                            TBN = <u>nº de falecidos</u> x 1.00<br>
+                            nº de habitantes
+
+
+                        </li>
+
+                        <li>
+                            <strong>Taxa de crescimento vegetativo (TCV)</strong>. Relação entre o número de nascimentos
+                            e de falecimentos em uma população em um ano.
+
+                            TBN = <u>nº de nascidos – nº de falecidos</u> x 1.00<br>
+                            população total
+
+
+                        </li>
+
+                        <li>
+                            <strong>Taxa de mortalidade infantil (TMI)</strong>. É o número de crianças por 1.000 bebês
+                            que nascem em um ano e que morrem antes de completar um ano de idade
+
+                            TBN = <u>nº de falecidos menores de um ano</u> x 1.000<br>
+                            &nbsp; nº de nascidos vivos em um ano
+
+                        </li>
+
+                        <li>
+                            <strong>Taxa bruta de natalidade (TBN)</strong>. Número de nascimentos por 1.000 habitantes
+                            em uma ano.
+
+                            TBN = <u>nº de nascidos x 1.00</u><br>
+                            &nbsp; nº de habitantes
+
+                        </li>
+
+
+
+
+                    </ul>
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+            <h3><strong><mark>Se você não sabia, agora já sabe!</mark></strong></h3>
+            <h4><strong>Disparidades demográficas</strong></h4>
+            <p>Apesar das melhorias em saúde e saneamento, a cada ano uma criança africana ainda tem 13 vezes mais
+                probabilidade de morrer do que uma criança da Europa ou da América do Norte.</p>
+
+            <p>Na África, a taxa de mortalidade reduziu-se à metade desde 1950, o que demostra que os programas de saúde
+                materna e infantil realmente funcionam.</p>
+
+            <p>A taxa de fecundidade média do planeta, que em 1950 era de 5 filhos por mulher, passou a 4 em 1975 e a
+                2,8 em 2003 e para 2,3 nascimentos por mulher em 2020. E a tendência segue em queda. Fonte: Banco
+                Mundial.</p>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Natalidade, Mortalidade e Fecundidade </h2>
+
+
+
+
+        <p> Comecemos pelo primeiro indicador: <strong>natalidade</strong>. Este termo refere-se à taxa de nascimentos
+            em uma determinada população durante um período específico. Em essência, é o índice que nos mostra quantos
+            novos indivíduos estão chegando ao mundo. Mas a natalidade é apenas uma peça do quebra-cabeça demográfico.
+        </p>
+
+        <p>A <strong>fecundidade</strong>, por sua vez, está ligada à capacidade reprodutiva das mulheres. Trata-se da
+            taxa de filhos que uma mulher média teria ao longo de sua vida, considerando as condições específicas de um
+            determinado local e período. Esta é uma janela para entender como fatores como educação, acesso a métodos
+            contraceptivos e dinâmicas sociais influenciam as escolhas familiares. </p>
+
+        <p>No entanto, a narrativa demográfica não seria completa sem a mortalidade. A <strong>mortalidade</strong>, em
+            termos populacionais, envolve a quantidade de óbitos em uma população durante um certo período. Essa taxa
+            pode nos revelar não apenas a qualidade dos sistemas de saúde e segurança, mas também aspectos culturais e
+            socioeconômicos que afetam a longevidade. </p>
+
+        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+
+            <h4><strong>Curiosidade sobre Thomas Robert Malthus: A Teoria da População em Debate</strong></h4>
+
+
+
+            <p> <img src="tt02f08.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">Thomas
+                Robert Malthus, um economista e demógrafo britânico do século XVIII, entrou para a história com sua
+                teoria pioneira sobre o crescimento populacional. Ele ficou conhecido por sua visão sombria, que
+                alertava sobre a possibilidade de que a população poderia crescer mais rápido do que a capacidade de
+                produção de alimentos, levando a um colapso social.</p>
+
+            <p>A teoria de Malthus, muitas vezes chamada de "teoria malthusiana", sugeria que o crescimento populacional
+                tendia a aumentar de maneira exponencial, enquanto a produção de alimentos crescia em um ritmo mais
+                lento, de forma linear. Ele argumentava que a escassez resultante de alimentos levaria a crises, fome e
+                morte, agindo como um mecanismo de controle populacional.</p>
+
+            <p>Apesar de sua teoria ter gerado debates e reflexões profundas sobre o equilíbrio entre população e
+                recursos, Malthus também recebeu críticas significativas. Alguns argumentavam que ele subestimava a
+                capacidade da humanidade de inovar e desenvolver tecnologias agrícolas mais eficientes, o que poderia
+                aumentar a produção de alimentos. Além disso, suas previsões sombrias não se concretizaram da maneira
+                como ele havia previsto, em parte devido aos avanços tecnológicos e mudanças sociais que ocorreram desde
+                a sua época.</p>
+
+
+
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> A Mortalidade em Foco </h2>
+
+
+
+
+        <p> À medida que nossos passos nos levam mais longe, observamos a mortalidade em uma escala global. Aqui, as
+            taxas de mortalidade podem variar drasticamente de região para região. O que causa essas discrepâncias
+            impressionantes? Como fatores históricos, econômicos e geográficos se entrelaçam para moldar os destinos das
+            nações?</p>
+
+        <p>No centro desse cenário, está a mortalidade infantil, um ponto crítico em nossa exploração. Essa medida
+            revela quantos bebês não sobrevivem até o primeiro ano de vida em um determinado local e tempo. Ao
+            examinarmos essa estatística, somos levados a questionar: quais são os principais determinantes da
+            mortalidade infantil? Que medidas estão sendo tomadas para proteger essas vidas frágeis? </p>
+
+        <div class="w3-margin"><img id="imagem4" src="tt02f04.png" alt="tt02f04" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao4"> </span>
+        </div>
+
+
+
+
+        <h3> Esperança de Vida ao Nascer</h3>
+
+        <p> Imagine ser capaz de prever a duração de sua própria vida. A esperança de vida ao nascer é como uma lente
+            através da qual podemos vislumbrar o futuro coletivo de uma população. Essa medida, simples em sua
+            definição, carrega consigo nuances complexas que conectam saúde, qualidade de vida e avanços médicos.</p>
+
+        <p> A esperança de vida ao nascer é a média de anos que se espera que um recém-nascido viva em uma determinada
+            região e período. Parece uma simples estatística, mas suas ramificações são profundas. Ela nos coloca frente
+            a frente com as conquistas em saúde pública, o acesso a cuidados médicos e os desafios que enfrentamos como
+            sociedade para garantir um futuro mais longo e saudável.</p>
+
+
+        <p>Considere isto: como a esperança de vida ao nascer muda ao redor do mundo? Que fatores, desde os avanços
+            médicos até as desigualdades socioeconômicas, influenciam esse número? Através dessa reflexão, vemos um
+            paralelo com a Jornada do Herói, onde o protagonista luta para superar obstáculos e emergir mais forte. </p>
+
+
+        <h3>Crescimento Vegetativo e Crescimento Real </h3>
+
+        <p>O palco agora se volta para as mudanças demográficas, personificado no conceito de crescimento vegetativo.
+            Esta é a diferença entre as taxas de natalidade e mortalidade em uma população. Quando a natalidade supera a
+            mortalidade, ocorre um crescimento vegetativo positivo - a população cresce. No entanto, quando a
+            mortalidade é maior que a natalidade, há um crescimento vegetativo negativo, sinalizando uma diminuição da
+            população.</p>
+
+        <p>Mas nosso enredo não para por aí. A entrada e saída de indivíduos, conhecidas como imigração e emigração,
+            influenciam dramaticamente o crescimento real de uma população. Isso nos leva a uma interseção curiosa: como
+            a busca por oportunidades, segurança e uma vida melhor orienta as decisões de migrar? Será que essa busca
+            ecoa as etapas da Jornada do Herói, onde um indivíduo se aventura em territórios desconhecidos?</p>
+
+
+        <h3>Imigração e Emigração</h3>
+
+
+        <p>A imigração, como uma parte essencial da narrativa populacional, é a chegada de pessoas a um país ou região
+            que não é sua terra natal. Isso pode ser impulsionado por uma gama de motivos, desde a busca por emprego até
+            a fuga de conflitos. A imigração pode enriquecer culturas e impulsionar economias, mas também pode trazer
+            desafios de integração e diversidade.</p>
+
+        <p>Em contrapartida, a emigração é a partida de pessoas de um local para buscar uma vida melhor em outro. Essa
+            busca pode estar alinhada com a ideia de que um novo lugar pode oferecer novas oportunidades e um recomeço.
+            Como os desafios enfrentados por migrantes refletem as provações do herói mítico? Como as histórias
+            individuais se entrelaçam com o tecido social das nações?</p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+
+        <h2> Modelos de Crescimento Demográfico </h2>
+
+
+
+
+        <p> Imagine a população como um oceano em constante movimento, ondas que sobem e descem. Estas são as ondas do
+            crescimento demográfico, um fenômeno que molda a paisagem humana. Nossa jornada agora nos leva a explorar os
+            modelos de crescimento, os padrões desiguais que abraçam nosso planeta e a transição demográfica que marca o
+            amanhecer de novas eras.</p>
+
+        <p> Existem diversos modelos que ajudam a descrever o crescimento populacional. Um deles é o crescimento
+            exponencial, onde a população aumenta de maneira constante em uma taxa fixa. Essa é uma representação
+            inicial, mas logo encontramos o crescimento logístico, que leva em consideração limitações de recursos e
+            ambiente, desacelerando o crescimento à medida que a capacidade de suporte é atingida.</p>
+
+        <div class="w3-margin"><img id="imagem5" src="tt02f05.png" alt="tt02f05" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao5"> </span>
+
+        </div>
+
+
+
+        <p>Mas nosso encontro com os modelos não é apenas matemático. Eles refletem histórias humanas: como a busca por
+            recursos, os avanços tecnológicos e os desafios ambientais interagem para moldar o crescimento. Nesse
+            sentido, esses modelos ressoam com as etapas da Jornada do Herói, onde o protagonista enfrenta obstáculos e
+            aprendizados. </p>
+
+        <h3> O Ritmo Diferenciado do Crescimento</h3>
+
+        <p>Enquanto a população mundial é um tecido interconectado, a tessitura é marcadamente desigual. O crescimento
+            populacional não ocorre uniformemente em todas as regiões. Alguns lugares testemunham um crescimento lento,
+            enquanto outros experimentam um florescer exuberante. </p>
+
+
+        <p>Em nosso conto demográfico, os países desenvolvidos assumem um papel. Com acesso a recursos, educação e
+            cuidados de saúde, essas nações testemunham um crescimento mais lento, refletindo um estado de estabilidade.
+            Por outro lado, os países subdesenvolvidos, lutando contra a pobreza, doenças e acesso limitado, enfrentam
+            um crescimento rápido. Aqui, vemos uma paralelo com a Jornada do Herói, onde alguns heróis enfrentam
+            desafios maiores e triunfos são mais difíceis de alcançar. </p>
+
+
+        <p>A transição demográfica é um capítulo fascinante de nossa saga. Ela narra a metamorfose de sociedades
+            agrárias para industrializadas e pós-industrializadas. Começamos com altas taxas de natalidade e
+            mortalidade, mas à medida que o progresso entra em cena, as taxas de mortalidade caem primeiro. Aqui, o
+            espelho da Jornada do Herói surge novamente - a superação de desafios, o encontro de aliados (neste caso,
+            avanços médicos) e a transformação. </p>
+
+
+        <p>O próximo ato desta transição é a queda das taxas de natalidade. As famílias se tornam menores, a educação é
+            valorizada e os direitos das mulheres são reconhecidos. Este é o eco da jornada do herói, onde a sabedoria é
+            adquirida e novos paradigmas emergem.</p>
+
+
+        <div class="w3-margin"><img id="imagem6" src="tt02f06.png" alt="tt02f06" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Organizado pelo autor. </span>
+
+        </div>
+
+
+
+        <h3>Um Mundo em Envelhecimento </h3>
+
+        <p>Hoje, exploramos as páginas da história demográfica e observamos como os capítulos se desenrolam, revelando
+            um mundo em constante metamorfose. Da transição demográfica ao desequilíbrio de gênero, das nuances da
+            estrutura econômica à desigual distribuição populacional, nossa jornada nos trouxe compreensão sobre os
+            fatores que moldam a sociedade e a vida em nosso planeta.</p>
+
+
+        <p>Nosso planeta passa por um processo notável - o envelhecimento. Como heróis de uma narrativa épica, cada
+            geração traz consigo sabedoria acumulada ao longo dos anos. Conforme a expectativa de vida aumenta, vemos
+            uma nova realidade: uma população que envelhece. Isso nos lembra da passagem do tempo, das histórias que
+            viveram e das contribuições que ainda podem fazer. Como uma jornada do herói, essa fase traz reflexões sobre
+            legados e a importância de cada capítulo da vida.</p>
+
+
+        <p>Na dança demográfica, os gêneros às vezes giram em desequilíbrio. Muitas vezes, a balança entre a população
+            masculina e feminina oscila devido a uma série de fatores, que ecoam a busca do herói por equilíbrio e
+            harmonia em sua jornada.</p>
+
+
+        <p>Além disso, a estrutura econômica é como o tecido que mantém a sociedade unida. A população ativa, engajada
+            em atividades produtivas, cria a base da economia e sustenta o progresso. Por outro lado, a população
+            inativa, incluindo jovens e idosos, completa o quadro da vida, lembrando-nos de que cada fase tem seu
+            próprio valor e papel.</p>
+
+
+
+        <h3>Fatores da Distribuição Populacional</h3>
+
+        <p>A distribuição populacional é como a maré que molda a paisagem. A água, que dá vida a muitos lugares, atrai
+            populações costeiras. Vales férteis são como oásis que abraçam a vida humana, enquanto recursos preciosos
+            são faróis para assentamentos. Planícies vastas convidam ao estabelecimento, enquanto climas amigáveis são
+            como calorosas boas-vindas.</p>
+
+        <p>Assim, terminamos nossa jornada demográfica, mas nossa exploração não cessa. Como heróis modernos,
+            continuamos a trilhar caminhos desconhecidos, enfrentando desafios e descobrindo novas histórias no cenário
+            em constante mudança da população mundial.</p>
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Qual foi o impacto da Revolução Demográfica no crescimento populacional?</h4>
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
+            aumentou a mortalidade devido à falta de saneamento.</button>
+
+
+
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">reduziu
+            drasticamente a natalidade por escassez de recursos.</button>
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'os avanços na medicina nos ajudaram muito a ter uma vida mais longa','1'); this.style.backgroundColor='lightgreen'">reduziu
+            a mortalidade devido a melhorias na higiene, impulsionando o crescimento populacional.</button>
+
+
+
+
+        <p id="resp1"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>O que descreve a transição demográfica?</h4>
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'diminuição dos nascimento e mortes é um fator de estabilização para o crescimento da população','1'); this.style.backgroundColor='lightgreen'">
+
+            mudança de altas taxas de natalidade e mortalidade para baixas taxas à medida que uma sociedade se
+            desenvolve.
+        </button>
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            crescimento rápido devido à industrialização.
+        </button>
+
+
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            crescimento lento devido à urbanização.
+        </button>
+
+
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>O que é esperança de vida ao nascer?</h4>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            a média de anos que uma pessoa vive após atingir 60 anos.
+
+        </button>
+
+
+
+
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            o período de tempo entre duas gerações de uma família.
+
+        </button>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'também chamado de expectativa de vida','1'); this.style.backgroundColor='lightgreen'">
+
+            a média de anos que um recém-nascido espera viver em uma determinada região e período.
+
+        </button>
+
+
+        <p id="resp3"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Ao encorajar perguntas, estamos fortalecendo o espírito investigativo e crítico dos
+            indivíduos, promovendo o pensamento autônomo e a busca constante por respostas e soluções.</h2>
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Por que em alguns lugares têm mais gente do que outros? Tipo, a Ásia é superpopulosa, enquanto a
+                Antártica quase não tem ninguém. Por que será que isso acontece?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            Boa pergunta! É bem curioso como a população é distribuída pelo mundo. A Ásia realmente se destaca,
+            sendo o continente mais populoso, com bilhões de pessoas! Isso tem a ver com vários fatores, como
+            recursos naturais, climas favoráveis em algumas regiões e tradições culturais. Por outro lado, a
+            Antártica é um caso especial. Ela é supergelada e não oferece condições de vida estáveis para a maioria
+            das pessoas. Além disso, tem um tratado internacional que restringe a ocupação humana para fins
+            científicos. É interessante pensar como esses fatores moldam a maneira como a população é distribuída
+            pelos continentes.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Eu estava lendo sobre algo chamado "transição demográfica". Parece que as populações mudam muito com
+                o tempo. O que exatamente é essa transição e o que ela nos diz sobre as sociedades?
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            A transição demográfica é uma viagem incrível no tempo das populações. Ela mostra como as taxas de
+            natalidade e mortalidade se transformam à medida que as sociedades evoluem. Sabe aquela época em que as
+            populações cresciam devagar por causa de doenças e condições precárias? Então, isso é o início da
+            transição. Conforme as nações se desenvolvem, melhoram a saúde, a higiene e a educação, a mortalidade
+            cai, fazendo a população crescer mais rápido. E aí, com mais acesso a informações e opções de vida, as
+            famílias têm menos filhos, levando a um crescimento mais controlado. É como uma história emocionante que
+            as sociedades passam, enfrentando desafios e encontrando soluções para crescer de maneira mais
+            equilibrada.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Quais as consequências do envelhecimento da população? Por que isso está acontecendo? E quais as
+                consequências disso?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            O envelhecimento da população é algo que está chamando bastante atenção! É bem interessante como isso
+            acontece. Com o avanço da medicina e melhores condições de vida, as pessoas estão vivendo mais. E isso é
+            ótimo, certo? Só que tem um efeito colateral curioso: a proporção de pessoas idosas está aumentando.
+            Isso acontece porque as taxas de natalidade estão diminuindo em muitos lugares, então temos mais pessoas
+            vivendo por mais tempo. Isso pode afetar a economia, a seguridade social e até mesmo a dinâmica das
+            famílias. Imagina, é como se tivéssemos que repensar algumas coisas para garantir que as pessoas idosas
+            tenham qualidade de vida, já que elas serão uma parte cada vez mais importante da população.
+
+
+        </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <br><br>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
+
+            <h2> Desafio em grupo: Exposição de ideias sobre a jornada do herói.</h2>
+
+            <h4>Você conhece a Jordana do Herói? Tenho certeza que já assistiu inúmeros filmes e jogou diversos
+                jogos com
+                essa forma de contar histórias. </h4>
+            <h4>Trata de um padrão narrativo que está presente em Star Wars ou Harry Potter por exemplo. O herói
+                deve deixar
+                sua comunidade e partir em uma jornada perigosa, geralmente para recuperar algo (ou alguém) valioso.
+            </h4>
+
+            <h4>Comente com seu professor(a) de língua portuguesa sobre o livro: O Herói de Mil Faces de Joseph
+                Campbell e
+                sobre A Jornada do Escritor de Christopher Vogler. Neste último está descrito os passos para
+                desenvolver
+                qualquer história, seja para games, filmes ou quadrinhos.</h4>
+
+
+        </div>
+
+
+        <h4>Instruções </h4>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ul>
+
+
+                <li>Com seu grupo da aula anterior, vamos discutir os passos para elaborarmos a história do nosso
+                    jogo
+                    sobre a Geografia do mundo atuall. Nas próximas aulas vamos nos aprofundar nesses tópicos:</li>
+
+
+                <li>Leia os passos sobre a jornada do herói abaixo e reflita sobre algum game ou filme em que
+                    vislumbrou alguns desses passos;</li>
+
+                <li> Anote algumas ideias no caderno sobre o jogo que iremos desenvolver com sua turma. Não se
+                    preocupe com correções nesse momento, deixe sua criatividade aflorar;</li>
+
+                <li> Apresente para a turma algumas de possíveis ideias para o jogo;</li>
+
+                <li> Tempo de atividade 25 minutos.</li>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+
+            <h4 class="w3-center"><strong>A Jornada do Herói</strong></h4>
+
+            <div class="w3-margin"><img id="imagem7" src="tt02f07.png" alt="ts01f07" width="580"
+                    class="w3-mobile">
+            </div>
+
+
+            <p><strong>1. Mundo Comum</strong> do herói é estabelecido. Sua vida cotidiana e seu ambiente são
+                introduzidos. No Final Fantasy, a alusão ao mundo comum aparece na frase de abertura: “Era um dia
+                como outro qualquer”.</p>
+
+            <p><strong>2. Chamado à Aventura</strong>: O herói conhece um mundo alternativo e é chamado a partir em
+                uma busca ou jornada. Nessa seção, o mundo alternativo, ou especial, é apresentado ao personagem
+                principal. Normalmente, há alguma espécie de intersecção de elementos do mundo alternativo com o
+                mundo comum e o personagem principal é chamado a ingressar nessa realidade alternativa e embarcar em
+                uma busca ou jornada.</p>
+
+            <p><strong>3. Recusa ao Chamado</strong> O chamado é rejeitado porque o herói não está disposto a
+                sacrificar sua vida confortável e seu ambiente familiar. O herói, porém, sente‑se desconfortável com
+                essa recusa.</p>
+
+            <p><strong>4. Encontro com o Mentor</strong>: O herói recebe informações que são relevantes para a busca
+                e para a sua necessidade pessoal de partir nessa jornada.</p>
+
+            <p><strong>5. Superando o Primeiro Obstáculo</strong>: O herói abandonou sua recusa inicial por causa
+                das informações recebidas. O herói embarca na jornada, aceita a aventura e ingressa no mundo
+                especial. Essa seção geralmente corresponde ao final do Ato I em uma narrativa tradicional.</p>
+
+            <p><strong>6. Testes, Aliados e Inimigos</strong> A determinação do herói é testada por meio de uma
+                série de desafios. Durante esse período, o herói encontra aliados e inimigos. Essa etapa constitui a
+                ação principal da maioria das narrativas. É quando o herói precisa solucionar problemas, enfrentar
+                seus temores, salvar outras pessoas e derrotar inimigos. Essa seção normalmente corresponde ao
+                início do Ato II em uma história.</p>
+
+            <p><strong>7. Chegada à Caverna Mais Interna</strong> Mais testes e um período de
+                supremo fascínio ou terror.. A provação começa a ser preparada.</p>
+
+            <p><strong>8. Provação</strong>: O herói enfrenta seu maior desafio até aqui. Ele deve derrotar o
+                “grande” vilão. Nessa fase, o herói mostra vulnerabilidade (por exemplo, Super‑Homem e kriptonita),
+                e não está claro se vencerá ou fracassará.</p>
+
+            <p><strong>9. Recompensa (Posse da Espada)</strong> Parece ser o fim da história, mas não é! Essa seção
+                corresponde ao final do Ato II da história.</p>
+
+            <p><strong>10. O Caminho de Volta</strong> Quando a provação termina, o herói pode optar entre
+                permanecer no mundo especial ou voltar ao mundo comum. Na maioria dos casos, ele decide regressar.
+                Essa seção corresponde ao início do Ato III da história.</p>
+
+            <p><strong>11. Ressurreição</strong>: O herói deve enfrentar a morte mais uma vez, em outra provação,
+                que é conhecida como o clímax. É aqui que o herói mostra que foi transformado pela jornada e
+                ressuscitou como uma pessoa plenamente formada. Durante essa etapa, o vilão pode ressurgir
+                repentinamente. (Nos filmes de terror, é o momento em que a plateia grita para o personagem
+                principal: “Olhe para trás! Ele ainda não está morto!”) É também onde o narrador pode incluir um
+                “final surpresa” inesperado. Talvez o vilão não seja realmente um vilão. Talvez o mentor seja um
+                impostor. (Yoda poderia ser mau? Hummm...).</p>
+
+            <p><strong>12. Retorno com o Elixir</strong>: O herói finalmente volta para casa, mas a experiência o
+                alterou irremediavelmente. Se agora é um herói, ele traz consigo um elixir do mundo especial que
+                ajudará aqueles que ele havia originalmente deixado para trás. A estrutura é circular, com o herói
+                voltando ao princípio. Isso facilita a comparação entre o “antes” e o “depois” pela audiência para
+                perceber como o herói foi transformado. A estrutura circular também permite deixar o final em
+                aberto. O herói será convocado novamente no futuro? O inimigo foi realmente derrotado? Há outra
+                ameaça no horizonte? O herói conseguirá descansar algum dia? Deixar perguntas como essas em aberto —
+                em vez de optar por um final em que tudo se esclarece — intriga a audiência e cria espaço para uma
+                continuação. E se o herói fosse transportado inesperadamente de volta para o mundo artificial bem no
+                final da história? O personagem principal do filme De Volta para o Futuro, Marty McFly, descobre no
+                final que sua jornada ao passado alterou substancialmente o futuro. </p>
+
+            <p>Ele deve atender a um novo chamado e viajar para o futuro para salvar sua família do desastre. Na
+                reviravolta de último minuto do enredo de Half‑Life, o personagem principal, Gordon Freeman, está
+                prestes a escapar quando é abordado pelo “homem de preto”, que lhe propõe uma difícil escolha.</p>
+        </div>
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','7');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://www.noticiasaominuto.com/mundo/1041555/taxa-de-mortalidade-materna-no-sudao-do-sul-entre-as-mais-altas-do-mundo./"
+                    target="_blank">
+                    Taxa de mortalidade materna no Sudão do Sul entre as mais altas do mundo
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="area justificadoDireita">
+
+
+            <div class="postit-tp9 w3-pink ">
+
+                <a href="https://www.bbc.com/portuguese/geral-63628547" target="_blank">
+                    <span class="w3-text-white">Onde estão concentrados os 8 bilhões de habitantes da Terra</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="area justificadoEsquerda">
+
+
+            <div class="postit-tp9 w3-orange ">
+
+                <a href="https://www.bbc.com/portuguese/geral-46149577" target="_blank">
+                    <span class="w3-text-white">Quase metade dos países tem nascimentos insuficientes para evitar
+                        declínio da população</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+        <p>CANDELORI, Roberto. <strong>Enciclopédia do Estudante</strong>: geografia geral. São Paulo: Moderna, 2008.
+        </p>
+
+        <p>SANTOS, Milton. <strong>O espaço do cidadão</strong>. São Paulo: Editora da Universidade de São
+
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+        // function myFunction(id) {
+        //     var x = document.getElementById(id);
+        //     if (x.className.indexOf("w3-show") == -1) {
+        //         x.className += " w3-show";
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-green", "w3-lightgrey");
+        //     } else {
+        //         x.className = x.className.replace(" w3-show", "");
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-lightgrey", "w3-green");
+        //     }
+        // }
+
+
+        // function openModal(id, event) {
+        //     event.preventDefault();
+        //     // Obter todas as divs com a classe "content"
+        //     var divs = document.getElementsByClassName("content");
+
+        //     // Percorrer todas as divs
+        //     for (var i = 0; i < divs.length; i++) {
+        //         // Se a div atual for a div com o id passado como parâmetro, mostrar a div
+        //         if (divs[i].id === id) {
+        //             divs[i].style.display = "block";
+        //         } else { // Caso contrário, esconder a div
+        //             divs[i].style.display = "none";
+        //         }
+        //     }
+
+        //     console.log("ID do elemento:", id);
+        // }
+
+
+
+
+        // function closeModal() {
+
+
+
+        //     var contents = document.getElementsByClassName("content");
+        //     for (var i = 0; i < contents.length; i++) {
+        //         contents[i].style.display = "none";
+        //     }
+
+
+
+        // }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 12);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
