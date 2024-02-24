@@ -13,13 +13,13 @@
 
     <script src="../../../estilos/jstextos.js" defer></script>
 
-    <title>2º ano - Texto 02 </title>
+    <title>3º ano - Texto 08</title>
 
 
 
     <style>
         .topico {
-            display: none;
+            display: block;
         }
 
         .topico:nth-child(1),
@@ -240,7 +240,7 @@ Css do memory card */
             <!-- Navigation (Stays on Top) -->
             <div class="w3-top w3-bar w3-black  larguraBar ">
 
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
 
                 <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
 
@@ -262,7 +262,7 @@ Css do memory card */
 
 
 
-        <h1 id="h1"> Texto 02 – A consolidação do território brasileiro </h1>
+        <h1 id="h1"> Texto 08 – Industrialização mundial II </h1>
 
 
         <p><strong> Conteúdo:</strong> Integração nacional; Modernização seletiva; Divisão regional IBGE,
@@ -1414,8 +1414,7 @@ Css do memory card */
 
     <script>
 
-
-
+      
 
         let counter = 0;
         let firstSelection = "";
@@ -1463,8 +1462,7 @@ Css do memory card */
                             Play("../audio3.mp3");
                             contadorCartas = 0;
                             document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-
+                            
                         }
 
                         firstSelection.classList.add("checked", "desativado");
@@ -1489,12 +1487,102 @@ Css do memory card */
         });
 
 
+        // let counter = 0;
+        // let firstSelection = "";
+        // let secondSelection = "";
+        // let cartaNota = "";
+        // let contadorCartas = 0
+
+        // const cards = document.querySelectorAll(".cards .card");
+
+        // const card = document.querySelectorAll(".card");
+        // // score = document.querySelector("#score");
+
+
+
+        // // suffleImage();
+
+
+        // function suffleImage() {
+
+        //     card.forEach(c => {
+
+        //         const num = [...Array(card.length).keys()];
+        //         const random = Math.floor(Math.random() * card.length);
+
+        //         c.style.order = num[random];
+        //     })
+        // }
+
+
+
+
+        // cards.forEach((card) => {
+        //     card.addEventListener("click", () => {
+        //         if (card.classList.contains("checked") || card.classList.contains("desativado")) {
+        //             // Ignora se o cartão já estiver marcado como "checked" ou "desativado"
+        //             return;
+        //         }
+
+        //         card.classList.add("clicked");
+
+        //         if (counter === 0) {
+        //             firstSelection = card.getAttribute("animal");
+        //             counter++;
+        //         } else {
+        //             secondSelection = card.getAttribute("animal");
+        //             counter = 0;
+
+        //             if (firstSelection === secondSelection) {
+        //                 // Caso de correspondência correta
+        //                 contadorCartas++;
+        //                 Play("../audio1.mp3");
+
+        //                 if (contadorCartas == 6) {
+        //                     nota += 4;
+        //                     contadorCartas = 0;
+        //                     document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+        //                     Play("../audio1.mp3");
+        //                 }
+
+        //                 const correctCards = document.querySelectorAll(".card[animal='" + firstSelection + "']");
+        //                 correctCards.forEach((correctCard) => {
+        //                     correctCard.classList.add("checked", "desativado");
+        //                     correctCard.classList.remove("clicked");
+        //                 });
+
+        //             } else {
+        //                 // Caso de correspondência incorreta
+        //                 const incorrectCards = document.querySelectorAll(".card.clicked");
+
+        //                 incorrectCards.forEach((incorrectCard) => {
+        //                     incorrectCard.classList.add("shake");
+        //                 });
+        //                 Play("../audio2.mp3");
+
+        //                 setTimeout(() => {
+        //                     incorrectCards.forEach((incorrectCard) => {
+        //                         incorrectCard.classList.remove("shake", "clicked");
+        //                     });
+        //                 }, 800);
+        //             }
+        //         }
+        //     });
+        // });
+
+
 
 
 
     </script>
 
+    <script>
 
+
+
+
+
+    </script>
 
     <script>
 
