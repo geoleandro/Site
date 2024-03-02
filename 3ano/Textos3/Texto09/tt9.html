@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 09 </title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* 
+Css do memory card */
+
+        .container {
+            display: grid;
+            place-items: center;
+
+        }
+
+        .heading {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 1em;
+        }
+
+
+        @media screen and (max-width: 680px) {
+
+
+
+
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 1em;
+            }
+
+
+
+
+        }
+
+        .card {
+            height: 140px;
+            width: 140px;
+            background-color: #ffff00;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            transition: 0.3s all ease;
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 1;
+            transition: 0.3s all ease;
+        }
+
+        .card2 img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 0;
+            transition: 0.3s all ease;
+        }
+
+        .card p {
+
+            font-size: 12px;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .card.clicked {
+            background-color: orange;
+        }
+
+        .card.checked {
+            background-color: lightgreen;
+        }
+
+        .card.clicked img,
+        .card.checked img {
+            opacity: 1;
+        }
+
+        .card.shake {
+            background-color: #f15f5f;
+            animation: shake 0.5s;
+        }
+
+        #score {
+            margin-bottom: 10px;
+        }
+
+        .desativado {
+
+
+            cursor: not-allowed;
+            pointer-events: none;
+
+        }
+
+
+
+
+
+
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 09 - Industrialização mundial III – Economia globalizada</h1>
+
+
+        <p><strong> Conteúdo:</strong> Acumulação flexível; Concentração da atividade industrial; Neoliberalismo;
+            Capitalismo monopolista.
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Compreender os novos processos no capitalismo global relacionadas as mudanças na
+            lógica de produção industrial no atual período. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>aula passada vimos o surgimento do meio
+            técnico-científico-informacional, e entendemos como o Fordismo, o Keynesianismo e as multinacionais se
+            moldaram novas formas das indústrias produzirem no mundo. </p>
+
+
+
+        <p>Hoje vamos estudar como a economia se tornou global e os fatores para o surgimento de novos modos de
+            produção, como a acumulação flexível amparada no neoliberalismo que se expandiu pelo globo a partir da
+            década de 1980. </p>
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Acumulação flexível </h2>
+
+
+
+
+        <p> Vamos falar sobre um tema bem importante na economia: a Acumulação Flexível. Esse termo pode parecer
+            complicado, mas é algo que afeta bastante o jeito como as empresas produzem e como isso influencia o
+            mercado.</p>
+
+        <p> A Acumulação Flexível é um modelo econômico que traz muita flexibilidade na produção. É como se as fábricas
+            conseguissem se adaptar rapidinho às mudanças do mercado, produzindo só o que é necessário, no momento
+            certo, sem fazer estoques gigantes.</p>
+
+        <div class="w3-margin"><img id="imagem2" src="tt09f02.png" alt="tt09f02" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao12"> Fonte: https://www.significados.com.br/ </span>
+
+        </div>
+
+        <p> Quando falamos das características desse modelo, vemos que a produção acontece em várias partes, de forma
+            espalhada, não mais concentrada em um lugar só. Muitas empresas também terceirizam parte do trabalho, ou
+            seja, contratam outras empresas para fazer algumas etapas do processo. O lado ruim é que isso às vezes acaba
+            gerando trabalhos precários, com menos direitos para os trabalhadores.</p>
+
+        <p> Você pode ver exemplos disso em vários lugares. Na indústria automobilística, por exemplo, as fábricas
+            conseguem mudar rapidamente de um modelo de carro para outro, seguindo as tendências do mercado. Na
+            tecnologia, com empresas lançando novos produtos o tempo todo, sempre buscando inovações. E na moda rápida,
+            aquela que traz as últimas tendências das passarelas para as lojas em um piscar de olhos.</p>
+
+        <div class="w3-margin"><img id="imagem9" src="tt09f09.png" alt="tt09f09" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao9"> Fonte: pixabay.com. </span>
+        </div>
+
+        <p> Mas quais são os impactos disso tudo? Infelizmente, a Acumulação Flexível pode aumentar a desigualdade, já
+            que muitas vezes os trabalhadores não têm condições justas. Além disso, pode trazer instabilidade, já que as
+            mudanças rápidas às vezes deixam alguns setores ou empresas para trás. E, por fim, ela pode concentrar a
+            riqueza em poucas mãos, deixando muita gente de fora dos benefícios.</p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>A Acumulação Flexível permite às empresas adaptarem rapidamente sua produção às mudanças do mercado, sem
+            necessidade de grandes estoques.</h4>
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+            Verdadeiro
+
+        </button>
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">
+            Falso</button>
+
+
+
+
+
+        <p id="resp1"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>O que caracteriza a Acumulação Flexível?</h4>
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
+
+            a)
+            Produção centralizada e grandes estoques.
+        </button>
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'verdade, é definida pela capacidade de adaptação às demandas do mercado, utilizando produção descentralizada e terceirização','1'); this.style.backgroundColor='lightgreen'">
+
+            b)
+            Adaptação rápida da produção e terceirização do trabalho.
+        </button>
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
+
+            c)
+            Enfoque no trabalho artesanal e produção sob medida.
+        </button>
+
+
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Na Acumulação Flexível, a terceirização de parte do trabalho sempre garante melhores condições e direitos
+            para os trabalhadores.</h4>
+
+
+
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
+
+            Verdadeiro
+
+        </button>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'nem sempre garante as melhores condições de vida e trabalho','1'); this.style.backgroundColor='lightgreen'">
+
+            Falso
+
+        </button>
+
+
+
+
+        <p id="resp3"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+
+        <h2> Concentração da atividade industrial </h2>
+
+
+
+
+        <p> Essa concentração acontece quando a produção industrial fica centralizada em algumas poucas empresas
+            gigantes. São aquelas que a gente vê todo dia nos noticiários, as que dominam o mercado e às vezes até
+            parecem ter o controle de tudo!</p>
+
+        <p>Isso acaba formando as principais regiões industrias do mundo como o Centro-Leste dos Estados Unidos e
+            sudeste do Canadá. A Europa Ocidental em países como Grã-Bretanha, França, Alemanhã etc; Japão, China,
+            Sudeste do Brasil e Argentina, além da Austrália.</p>
+
+        <div class="w3-margin"><img id="imagem1" src="tt09f01.png" alt="tt09f01" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao1"> </span>
+
+        </div>
+
+        <p> Quando olhamos de perto, vemos que essa concentração traz algumas características bem marcantes. Primeiro,
+            são poucas empresas que mandam na área, formando quase que um clube exclusivo. Elas têm tanto poder que
+            conseguem controlar os preços e até ditar as regras do mercado. E não podemos esquecer das economias de
+            escala, que são os benefícios de produzir em grande quantidade, deixando os concorrentes menores para trás.
+        </p>
+
+        <p> Para entender melhor, vamos ver alguns exemplos: na <span
+                onclick="document.getElementById('automobilística').style.display='block'" class="w3-yellow">indústria
+                automobilística</span> , essas empresas gigantes que conhecemos são as que dominam o mercado, lançam
+            modelos novos e fazem a concorrência correr atrás. Na tecnologia, com as grandes marcas que lançam os
+            smartphones mais esperados do ano. E na energia elétrica, onde algumas empresas têm o controle das fontes de
+            energia que usamos em casa.</p>
+
+
+
+
+
+        <div id="automobilística" class="w3-modal w3-margin-top">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-padding">
+                    <span onclick="document.getElementById('automobilística').style.display='none'"
+                        class="w3-button w3-red w3-display-topright">&times;</span>
+                    <p>Existem grandes conglomerados que controlam várias marcas de carros ao redor do mundo. O Grupo
+                        Stellantis é um dos maiores, formado pela fusão da FCA e PSA, e inclui marcas como Fiat,
+                        Chrysler, Peugeot e Jeep. Outro gigante é o Renault-Nissan-Mitsubishi, que uniu Renault e Nissan
+                        em 1999, posteriormente incluindo a Mitsubishi. O Grupo Volkswagen é outro destaque, sendo
+                        proprietário de marcas como Audi, Porsche, Lamborghini e Bentley. A Ford também faz parte dessa
+                        lista, com suas marcas Ford e Lincoln, anteriormente incluindo Aston Martin, Jaguar e Land
+                        Rover. Por fim, temos o Grupo Tata, da Índia, que adquiriu Jaguar e Land Rover da Ford e manteve
+                        suas operações e prestígio. Esses conglomerados têm grande influência na indústria
+                        automobilística global</span>.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-margin"><img id="imagem10" src="tt09f010.png" alt="tt09f010" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao10"> </span>
+        </div>
+
+        <p>Mas quais são os impactos disso tudo? Infelizmente, a concentração da atividade industrial pode aumentar a
+            desigualdade, já que essas empresas gigantes muitas vezes não dão oportunidades para as menores. Além disso,
+            o poder fica muito concentrado em algumas mãos, o que pode influenciar até nas decisões políticas do país.
+        </p>
+
+        <p> E não para por aí! Temos também alguns termos que ajudam a entender melhor esse mundo da concentração
+            industrial. Vamos lá:</p>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ul>
+                <li>
+                    <strong>Conglomerado</strong>: É quando várias empresas diferentes se juntam sob o controle de um
+                    único grupo, formando uma espécie de "império" empresarial.
+                    <div><img id="imagem3" src="tt09f03.png" alt="tt09f03" class="w3-mobile">
+
+                        <span class="w3-small w3-margin-left" id="citacao3"> Fonte:
+                            https://brunoantognolli.wordpress.com </span>
+
+                    </div>
+                </li>
+
+                <li>
+                    <strong>Truste</strong>: São acordos entre empresas concorrentes para limitar a competição,
+                    controlando preços e mercado.
+
+                    <div><img id="imagem4" src="tt09f04.png" alt="tt09f04" class="w3-mobile">
+
+                        <span class="w3-small w3-margin-left" id="citacao4"> Fonte: Descomplica. </span>
+
+                    </div>
+                </li>
+
+                <li>
+                    <strong>Holding</strong>: É uma empresa que tem o objetivo de controlar outras empresas, geralmente
+                    por meio da compra de suas ações.
+
+                    <div><img id="imagem5" src="tt09f05.png" alt="tt09f05" class="w3-mobile">
+
+                        <span class="w3-small w3-margin-left" id="citacao5"> Fonte:
+                            https://ebcon.com.br/blog/exemplos-de-holding/</span>
+                    </div>
+                </li>
+
+                <li>
+                    <strong>Cartel</strong>: Semelhante ao truste, é uma união de empresas do mesmo ramo que se juntam
+                    para controlar a oferta e o preço de um produto.
+                </li>
+
+                <li>
+                    <strong>Joint-venture:</strong> É uma parceria entre duas ou mais empresas para realizarem um
+                    projeto específico em conjunto, como uma nova linha de produtos ou a exploração de um mercado novo.
+                </li>
+
+
+
+
+            </ul>
+
+        </div>
+
+
+        <p> Entender esses conceitos nos ajuda a ter uma visão mais completa de como funciona a concentração da
+            atividade industrial e seus impactos na nossa sociedade.</p>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4> O que significa concentração da atividade industrial? </h4>
+
+        <button class="desativar4 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+
+            a)
+            Distribuição igualitária da produção entre muitas empresas.
+
+        </button>
+
+        <button class="desativar4 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','1');this.style.backgroundColor='tomato'">
+
+            b)
+            Domínio do mercado por uma única empresa.
+
+        </button>
+
+
+
+        <button class="desativar4 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'a concentração da atividade industrial ocorre quando poucas empresas têm grande controle sobre um setor, limitando a concorrência','1'); this.style.backgroundColor='lightgreen'">
+
+            c)
+            Domínio do mercado por poucas empresas.
+
+        </button>
+
+
+
+
+
+
+        <p id="resp4"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4> A concentração da atividade industrial pode ser observada no mercado de smartphones, onde poucas empresas
+            como Apple, Samsung e Huawei dominam a maior parte das vendas globais. </h4>
+
+
+        <button class="desativar5 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'Legal, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">
+
+            Verdadeiro
+
+        </button>
+
+
+        <button class="desativar5 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','1');this.style.backgroundColor='tomato'">
+
+            Falso
+
+        </button>
+
+
+
+
+
+
+
+
+
+        <p id="resp5"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+
+        <h2> Neoliberalismo </h2>
+
+
+
+
+        <p>O Neoliberalismo é uma ideologia econômica que prega o livre mercado, ou seja, menos interferência do Estado
+            na economia e mais espaço para as empresas se movimentarem. Isso se traduz em privatização de setores antes
+            controlados pelo governo, desregulamentação das atividades empresariais e um forte enfoque no
+            individualismo. </p>
+
+        <div class="w3-margin"><img id="imagem6" src="tt09f06.png" alt="tt09f06" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao6"> Fonte: https://www.ihu.unisinos.br/ </span>
+
+        </div>
+
+
+        <div class="w3-panel w3-leftbar w3-blue-gray w3-margin w3-padding">
+
+            <h4><strong>Características:</strong></h4>
+
+
+
+            <p>Privatização: Setores como transporte, energia e saúde passam para as mãos de empresas privadas.</p>
+
+            <p>Desregulamentação: Redução das regras que as empresas precisam seguir, como normas ambientais e
+                trabalhistas.</p>
+
+            <p>Ênfase no individualismo: Valorização da competição individual e redução do papel do Estado como provedor
+                de serviços sociais.</p>
+
+            <h4><strong>Exemplos:</strong></h4>
+
+
+            <p>Chile: Após as reformas neoliberais nos anos 70 e 80, o Chile privatizou setores como previdência e
+                educação, levando a uma maior desigualdade social.</p>
+
+            <p>Reino Unido: Sob o governo de Margaret Thatcher nos anos 80, o Reino Unido implementou políticas de
+                austeridade, cortando gastos sociais e favorecendo o setor privado.</p>
+
+            <p>Estados Unidos: Com a desregulamentação do setor financeiro nos anos 90 e 2000, os EUA viram um aumento
+                na concentração de riqueza e uma crise financeira global em 2008.</p>
+
+
+            <h4><strong>Impactos:</strong></h4>
+
+            <p> Desigualdade: Aumento da disparidade de renda e oportunidades entre ricos e pobres.</p>
+            <div class="w3-margin"><img id="imagem8" src="tt09f08.png" alt="8" class="w3-mobile">
+
+
+
+            </div>
+
+
+            <p> Concentração de riqueza: Poucos indivíduos e corporações acumulam a maior parte da riqueza da nação.</p>
+
+            <div class="w3-margin"><img id="imagem7" src="tt09f07.png" alt="tt09f07" class="w3-mobile">
+
+                <span class="w3-small w3-margin-left" id="citacao7">Fonte: https://www.pressenza.com</span>
+            </div>
+
+            <p>Fragilização dos serviços públicos: Redução na qualidade e acessibilidade de serviços como saúde e
+                educação, que passam a ser privatizados ou terceirizados. </p>
+
+
+
+
+        </div>
+
+        <p> O Neoliberalismo, com seus princípios de livre mercado e redução do Estado, tem gerado debates intensos
+            sobre seu impacto na sociedade e na economia dos países ao redor do mundo.</p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>O Neoliberalismo defende uma maior intervenção do Estado na economia e na proteção dos serviços públicos.
+
+        </h4>
+
+
+
+
+
+
+        <button class="desativar6 area p4 w3-padding w3-margin margemAcima"
+            onclick=" MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','1');this.style.backgroundColor='tomato'">
+            Verdadeiro
+        </button>
+
+
+        <button class="desativar6 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp6','globinho6', 'desativar6', 'ao contrário, o neoliberalismo é um sistema base para o livre mercado','1'); this.style.backgroundColor='lightgreen'">
+
+            Falso
+
+        </button>
+
+
+
+
+
+
+        <p id="resp6"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho6" style="display:none" alt="globinho6"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Qual é um dos principais princípios do Neoliberalismo?</h4>
+
+        <button class="desativar7 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">
+
+            a)
+            Fortalecimento dos serviços públicos.
+
+        </button>
+
+
+
+
+
+        <button class="desativar7 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">
+
+            b)
+            Maior intervenção do Estado na economia.
+
+        </button>
+
+        <button class="desativar7 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp7','globinho7', 'desativar7', 'o Neoliberalismo promove a ideia de que o Estado deve ter um papel mínimo na economia, favorecendo as operações de mercado livres.','1'); this.style.backgroundColor='lightgreen'">
+
+            c)
+            Redução da intervenção estatal e ênfase no livre mercado.
+
+        </button>
+
+
+
+
+        <p id="resp7"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho7" style="display:none" alt="globinho7"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> O Capitalismo monopolista</h2>
+
+
+
+
+        <p> O Capitalismo Monopolista impacta diretamente o mercado e as nossas escolhas como consumidores.</p>
+
+        <p> Então, o que é esse tal de Capitalismo Monopolista? Basicamente, é quando o poder econômico está concentrado
+            nas mãos de poucas empresas, que dominam praticamente um setor inteiro. É como se elas fossem as donas da
+            festa, controlando tudo o que acontece no mercado.</p>
+
+        <p> E quais são as características desse cenário? Primeiro, temos o controle do mercado. Isso significa que
+            essas empresas têm o poder de ditar as regras, os preços e até mesmo o que é produzido. Além disso, elas
+            conseguem suprimir a concorrência, ou seja, não deixam espaço para outras empresas competirem de igual para
+            igual. E, por fim, há a exploração de recursos, onde essas gigantes muitas vezes buscam lucro máximo, sem se
+            importar muito com o impacto social ou ambiental.</p>
+
+        <div class="w3-margin"><img id="imagem11" src="tt09f011.png" alt="tt09f011" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao11"> </span>
+
+
+        </div>
+
+        <p>Agora, vamos ver alguns exemplos para entender melhor. Quem aqui já ouviu falar das gigantes tecnológicas?
+            Estamos falando de empresas como Google, Apple, Facebook e Amazon, que têm um domínio quase absoluto em seus
+            respectivos campos. Outro setor que também é bastante monopolizado é o de telecomunicações, com empresas que
+            controlam desde a internet que usamos até as nossas ligações. E não podemos esquecer do setor farmacêutico,
+            onde algumas poucas empresas têm um controle enorme sobre os medicamentos que consumimos. </p>
+
+
+
+
+        <p> Em 2023, as gigantes da tecnologia arrebentaram: juntas, faturaram incríveis US$ 1.59 trilhão! Quem liderou
+            o ranking foi a Amazon, que bombou com um total de US$ 575 bilhões. Mas a Apple deu uma escorregada, foi a
+            única que teve uma receita menor em comparação com o ano passado: US$ 344 bilhões em 2023 contra US$ 388
+            bilhões em 2022. Loucura, né?</p>
+
+        <p> Mas por que isso tudo importa? Bem, os impactos são muitos. Primeiro, a desigualdade. Com essas empresas tão
+            poderosas, fica difícil para as pequenas e médias empresas competirem, o que pode aumentar as diferenças
+            econômicas entre as pessoas. Além disso, a gente acaba com menos opções de escolha, porque tudo acaba sendo
+            ditado por esses gigantes. E, por fim, a influência política. Com tanto poder econômico, essas empresas
+            também têm voz nas decisões políticas, o que pode afetar diretamente as políticas públicas.</p>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>O Capitalismo Monopolista é caracterizado pela diversidade de empresas em um setor, promovendo ampla
+            concorrência e inovação.</h4>
+
+        <button class="desativar8 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp8','globinho8', 'desativar8','1');this.style.backgroundColor='tomato'">
+
+            Verdadeiro
+
+        </button>
+
+
+
+        <button class="desativar8 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp8','globinho8', 'desativar8', 'é caracterizado pelo controle em poucos empresas','1'); this.style.backgroundColor='lightgreen'">
+
+            Falso
+
+        </button>
+
+
+
+
+
+        <p id="resp8"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho8" style="display:none" alt="globinho8"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Qual setor é conhecido por ter uma forte presença de empresas monopolistas?</h4>
+
+        <button class="desativar9 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp9','globinho9', 'desativar9','1');this.style.backgroundColor='tomato'">
+
+            a)
+            Agricultura familiar.
+
+        </button>
+
+
+        <button class="desativar9 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp9','globinho9', 'desativar9', 'empresas de tecnologia e telecomunicações, como Google, Apple, Facebook e Amazon, dominam seus respectivos campos, exemplificando o capitalismo monopolista','1'); this.style.backgroundColor='lightgreen'">
+
+            b)
+            Tecnologia e telecomunicações.
+
+        </button>
+
+
+        <button class="desativar9 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp9','globinho9', 'desativar9','1');this.style.backgroundColor='tomato'">
+
+            c)
+            Pequenas e médias empresas locais.
+
+        </button>
+
+
+
+
+        <p id="resp9"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho9" style="display:none" alt="globinho9"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Quais são os impactos do Capitalismo Monopolista?</h4>
+
+        <button class="desativar10 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp10','globinho10', 'desativar10','1');this.style.backgroundColor='tomato'">
+
+            a)
+            Aumento da diversidade de produtos no mercado.
+
+        </button>
+
+
+
+
+
+        <button class="desativar10 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp10','globinho10', 'desativar10','1');this.style.backgroundColor='tomato'">
+
+            b)
+            Diminuição da desigualdade econômica.
+
+        </button>
+
+        <button class="desativar10 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp10','globinho10', 'desativar10', 'o Capitalismo Monopolista pode levar a uma maior concentração de riqueza e poder nas mãos de poucas empresas, afetando a concorrência, a diversidade de escolhas e a política','1'); this.style.backgroundColor='lightgreen'">
+
+            c)
+            Aumento da desigualdade e influência política das grandes empresas.
+
+        </button>
+
+
+
+
+        <p id="resp10"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho10" style="display:none" alt="globinho10"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa">Reforce seu conhecimento</p>
+
+        <div class="container">
+            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na aula
+                de hoje:
+            </h4>
+            <!-- <div class="w3-margin">Acertos: <span id="score">0</span></div> -->
+            <div class="cards">
+
+
+                <div class="card" data-cards="1">
+                    <p>Acumulação Flexível </p>
+                </div>
+
+                <div class="card" data-cards="1">
+                    <p>Produção Adaptativa </p>
+                </div>
+
+
+                <div class="card" data-cards="2">
+                    <p>Concentração Industrial </p>
+                </div>
+
+                <div class="card" data-cards="2">
+                    <p>Economias de Escala</p>
+                </div>
+
+                <div class="card" data-cards="3">
+                    <p>Neoliberalismo </p>
+                </div>
+
+                <div class="card" data-cards="3">
+                    <p>Privatização </p>
+                </div>
+
+                <div class="card" data-cards="4">
+                    <p>Capitalismo Monopolista </p>
+                </div>
+
+                <div class="card" data-cards="4">
+                    <p>Controle de Mercado</p>
+                </div>
+
+                <div class="card" data-cards="5">
+                    <p>Desigualdade Social </p>
+                </div>
+
+                <div class="card" data-cards="5">
+                    <p>Concentração de Riqueza </p>
+                </div>
+
+                <div class="card" data-cards="6">
+                    <p>Gigantes Tecnológicas </p>
+                </div>
+
+                <div class="card" data-cards="6">
+                    <p>Big Techs</p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2 id="centralizado">Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Qual foi o impacto da acumulação flexível na organização do trabalho?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> A acumulação flexível trouxe mudanças significativas na organização do
+            trabalho,
+            como a fragmentação das atividades produtivas, o uso intensivo de tecnologia e a precarização das condições
+            de
+            trabalho.</p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Como a concentração da atividade industrial afeta a competição entre empresas?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span> A concentração da atividade industrial pode levar à formação de
+            monopólios
+            e oligopólios,
+            reduzindo a competição e limitando as opções disponíveis para os consumidores. Isso pode resultar em preços
+            mais
+            altos e menor qualidade dos produtos.</p>
+
+            <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Qual a diferença entre monopólio e oligopólio?
+            </strong> </p>
+
+            <p><span class="primeiraLetra">R:</span> O monopólio e o oligopólio são dois tipos de estruturas de mercado.
+                No monopólio, apenas uma empresa controla a oferta de um determinado produto ou serviço, não tendo concorrentes
+                significativos.
+                Já no oligopólio, algumas poucas empresas dominam o mercado, o que pode resultar em um alto grau de
+                interdependência entre elas e impactar os preços e a competição.</p>
+
+       
+
+       
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <br><br>
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
+            <h2> <strong>Desafio - Jornada do herói: Testes, Aliados, Inimigos (6)</strong></h2>
+
+            <h4>
+                Na aula passada, vimos A Travessia do Primeiro Limiar, que é o momento (sem volta) que o herói se
+                compromete com sua jornada.<br>
+
+                Agora, vamos conhecer os Testes, Aliados e Inimigos, quando o herói entra por completo no Mundo Especial
+                misterioso e excitante, onde ele deve sobreviver a uma sucessão de provações. <br>
+
+
+                Como sempre, formem seus grupos e use a criatividade para lidar com esse desafio.
+            </h4>
+        </div>
+
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding">
+            <h3><strong>Instruções</strong> </h3>
+            <ul>
+
+                <li>Forme um grupo com 5-6 estudantes;</li>
+
+                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
+
+                <li> Faça anotações em seu caderno;</li>
+
+                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
+
+                <li>Tempo da atividade: 25 minutos.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
+
+            <h4><strong>Testes, Aliados, Inimigos (6)</strong></h4>
+        
+            <p>Independente da experiência pregressa do herói, ele se encontra agora em um novo mundo do qual ele não
+                domina suas regras básicas. Veja o texto a seguir:</p>
+        
+            <p>Leia a passagem abaixo:</p>
+        
+            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+                <p>“Nós, os Buscadores, estamos em estado de choque - este mundo é tão diferente de tudo o que sempre
+                    conhecemos... Não apenas o terreno e os habitantes locais são diferentes, mas as regras deste lugar
+                    são as mais estranhas que se possa imaginar. Aqui, se valorizam coisas diferentes, e temos muito o
+                    que aprender sobre a moeda local, os costumes, a linguagem. Criaturas estranhas saltam em cima de
+                    você! Pense rápido! Não coma isso, pode ser veneno!<br>
+                    Exaustos pela jornada através da desolada zona do Limiar, sentimo-nos sem tempo e sem energia.
+                    Lembremos que nossa gente, lá na Nossa Tribo, conta conosco. Não estamos aqui para fazer turismo,
+                    temos que nos concentrar na nossa meta. Temos que ir para onde haja comida e informação, chegar ao
+                    lugar onde se joga o jogo. E lá que nossa capacidade será testada. Vamos nos aproximar do que
+                    buscamos”.
+                </p>
+            </div>
+        
+            <h4><strong>Contraste</strong></h4>
+        
+            <p>As primeiras impressões que o público deve ter do Mundo Especial são o seu contraste com o Mundo Comum. O
+                Mundo especial pode ser encarado no sentido figurado, ou seja, metaforicamente. Quando um adolescente
+                vai ingressar na vida adulta ou quando um príncipe decide não seguir os ditames da família real para ser
+                o novo rei.</p>
+        
+            <p>Também pode existir um limiar físico como quando um submarino mergulha em outra região, ou um trem parte
+                para alguma estação e até mesmo quando uma nave espacial deixa a Terra e passa a conviver com um outro
+                mundo com regras diferentes.</p>
+        
+            <p>Na construção da história do nosso jogo podemos utilizar esses recursos para ajudar nosso herói a atingir
+                seu objetivo.</p>
+        
+            <h4><strong>Testes</strong></h4>
+        
+            <p>A função mais importante desse período de adaptação ao Mundo Especial são os testes. O herói é desafiado
+                a cumprir tarefas, aparentemente impossíveis, e junto com os aliados enfrentam esses obstáculos. Uma
+                experiência em uma prova final para universidade ou a entrada em uma indústria para recuperar um
+                artefato importante. São tarefas que irão preparar os heróis para atividades mais perigosas que ainda
+                estão por vir.</p>
+        
+            <p>Os testes podem ser uma continuação do treinamento do Mentor. Eles podem acompanhar os heróis até esse
+                ponto da jornada, fornecendo instruções necessárias para os grandes embates que se aproximam.</p>
+        
+            <p>Os testes do Mundo Especial procuram fazer com que os heróis caiam em armadilhas, geralmente arquitetadas
+                por um vilão.</p>
+        
+            <h4><strong>Aliados</strong></h4>
+        
+            <p>Os heróis podem entrar no estágio dos testes procurando informações, mas podem sair com novos amigos e
+                aliados. Kratos, em <em>God of War Ragnarok</em>, possui aliados como os anões, Freya e a cabeça Mimir,
+                após ter libertado esse último de um feitiço de Odin. Podemos dizer que Mimir é um companheiro, pois
+                possui um vínculo duradouro para o desenrolar da história no jogo.</p>
+        
+            <p>Os aliados podem dar um alívio cômico às vezes, além de prestarem assistência ao herói.</p>
+        
+            <h4><strong>Equipes</strong></h4>
+        
+            <p>O estágio dos testes também dá oportunidade para se formarem equipes, como nos jogos da Marvel ou Star
+                Wars, tanto o jogo como os filmes. Uma equipe pode ser recrutada para ajudar os heróis ou para continuar
+                sua jornada, a exemplo do jogo <em>Gotham Knights</em> com personagens como Batgirls, Capuz vermelho,
+                Asa noturna e Robin.</p>
+        
+            <p>Outro exemplo de formação de equipe pode ser visto em <em>Mass Effect</em>, onde o comandante Shepard
+                lidera uma equipe diversificada de aliens e humanos em uma missão para salvar a galáxia.</p>
+        
+            <h4><strong>Inimigos</strong></h4>
+        
+            <p>Os heróis também podem fazer inimizades neste estágio. O aparecimento do herói no Mundo Especial pode
+                chamar a atenção do Vilão e, assim, desencadear uma série de eventos. Como o conflito de Hans Solo e
+                Luke Skywalker e o vilão Jabba em Stars Wars ou Kratos versus Thor. As inimizades incluem os capangas,
+                o Guardião do Limiar, dentre outros.</p>
+        
+            <p>Em jogos como <em>The Witcher 3: Wild Hunt</em>, Geralt de Rívia encontra vários inimigos em sua jornada,
+                desde criaturas selvagens até humanos corruptos, todos representando desafios únicos.</p>
+        
+            <h4><strong>Rival</strong></h4>
+        
+            <p>Um tipo especial de inimigo é o Rival. Ele não quer destruir o herói, mas vai competir com ele em todas
+                as oportunidades.</p>
+        
+            <h4><strong>Novas regras</strong></h4>
+        
+            <p>O herói e o público têm que aprender rapidamente as novas regras do Mundo Especial. É muito comum nesse
+                ponto nos filmes ou nos jogos que o herói entra em uma cidade ou bar e ele aprende como funciona o
+                lugar.</p>
+        
+            <p>O herói pode entrar em um bar e descobrir que a cidade está totalmente polarizada entre duas facções,
+                criadores de gado contra povos tradicionais, conservacionista contra destruidores do meio ambiente,
+                dentre outros.</p>
+        
+            <p>O bar pode ser um microcosmo do Mundo Especial, onde o herói pode sentir o que está por vir, fazer amigos
+                e, sobretudo, inimigos, tal como em <em>Red Dead Redemption 2</em> na figura de Arthur Morgan, que
+                precisa lidar com o declínio do Velho Oeste e sobreviver à perseguição de forças governamentais.</p>
+        
+            <p>Com a ajuda dos aliados, o herói está pronto para se aproximar da Caverna Oculta que o aguarda. Tema da
+                próxima aula.</p>
+        
+            <h4><strong>Questões para pensar na história do jogo:</strong></h4>
+        
+            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+                <p> - Em que o Mundo Especial da sua história é diferente do Mundo Comum? Como você pode aumentar esse
+                    contraste?</p>
+        
+                <p> - De que modo o herói é testado? Como faz Aliados e Inimigos? As necessidades da história são que
+                    ditam quando é conveniente fazer alianças.</p>
+        
+                <p> - Como seu herói reage ao Mundo Especial, com suas regras estranhas e pessoas diferentes? </p>
+        
+                <p> - Seu herói é um personagem solitário ou participa de um grupo, uma família ou turma?</p>
+            </div>
+      
+        
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'esse desafio foi bem denso, você já pode finalizar sua lição','6');this.style.display='none'">Proximo</button>
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=xPfkiR34law&ab_channel=RodaViva" target="_blank">
+                    Roda Viva Retrô | Milton Santos | 1997
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>SANTOS, Milton. <strong>A Natureza do Espaço:</strong> técnica e tempo, razão e emoção. São Paulo: EDUSP,
+            2002.</p>
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2.
+            ed. – São
+            Paulo: Ática, 2013.
+        </p>
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+    </div>
+    <br><br>
+
+    <!-- <script>
+
+    function numButton() {
+        numB++;
+        document.getElementById("numero").innerHTML = numB;
+        console.log(numB);
+    }
+
+    </script> -->
+
+
+
+    <script>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                
+                // numButton();
+                addProgressBar();
+               
+                ApagaButton();
+                RemoveBalancarGlobo();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 22);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+    <script>
+
+        //função para dar zoom no pc
+        function zoomIn(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth + 100) + "px";
+        }
+
+        function zoomOut(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth - 100) + "px";
+        }
+    </script>
+
+
+    <script>
+
+        //função para celular
+        function zoomIn(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth + 100) + "px";
+        }
+
+        function zoomOut(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth - 100) + "px";
+        }
+
+        // Função para cancelar o menu de contexto do navegador
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Eventos de toque para zoom em dispositivos móveis
+        var initialTouch = null;
+
+        function handleTouchStart(e) {
+            initialTouch = e.touches[0];
+        }
+
+        function handleTouchMove(e, idImagem) {
+            if (!initialTouch) {
+                return;
+            }
+
+            var currentTouch = e.touches[0];
+            var diffX = initialTouch.clientX - currentTouch.clientX;
+
+            if (diffX > 10) {
+                zoomIn(idImagem);
+                initialTouch = null;
+            } else if (diffX < -10) {
+                zoomOut(idImagem);
+                initialTouch = null;
+            }
+        }
+
+        function handleTouchEnd() {
+            initialTouch = null;
+        }
+    </script>
+
+    <script>
+
+
+
+        let counter = 0;
+        let firstSelection = "";
+        let secondSelection = "";
+        let cartaNota = "";
+        let contadorCartas = 0;
+
+        const cards = document.querySelectorAll(".cards .card");
+
+        const card = document.querySelectorAll(".card");
+
+        function suffleImage() {
+            card.forEach(c => {
+                const num = [...Array(card.length).keys()];
+                const random = Math.floor(Math.random() * card.length);
+                c.style.order = num[random];
+            });
+        }
+
+        suffleImage();
+
+        cards.forEach((card) => {
+            card.addEventListener("click", () => {
+                if (card.classList.contains("checked") || card.classList.contains("desativado") || card.classList.contains("clicked")) {
+                    // Ignora se o cartão já estiver marcado como "checked", "desativado" ou "clicked"
+                    return;
+                }
+
+                card.classList.add("clicked");
+
+                if (counter === 0) {
+                    firstSelection = card;
+                    counter++;
+                } else if (counter === 1) {
+                    secondSelection = card;
+                    counter = 0;
+
+                    if (firstSelection.getAttribute("data-cards") === secondSelection.getAttribute("data-cards")) {
+                        // Caso de correspondência correta
+                        contadorCartas++;
+                        Play("../audio1.mp3");
+
+                        if (contadorCartas == 6) {
+                            nota += 4;
+                            Play("../audio3.mp3");
+                            contadorCartas = 0;
+                            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                        }
+
+                        firstSelection.classList.add("checked", "desativado");
+                        firstSelection.classList.remove("clicked");
+
+                        secondSelection.classList.add("checked", "desativado");
+                        secondSelection.classList.remove("clicked");
+
+                    } else {
+                        // Caso de correspondência incorreta
+                        firstSelection.classList.add("shake");
+                        secondSelection.classList.add("shake");
+                        Play("../audio2.mp3");
+
+                        setTimeout(() => {
+                            firstSelection.classList.remove("shake", "clicked");
+                            secondSelection.classList.remove("shake", "clicked");
+                        }, 800);
+                    }
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

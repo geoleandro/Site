@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../estilos/fade.css">
+    <link rel="stylesheet" href="../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../estilos/jstextos.js" defer></script>
+
+    <title>Modelo total</title>
+
+
+
+    <style>
+        .topico {
+            display: block;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            width: 200px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+        /* 
+Css do memory card */
+
+        .container {
+            display: grid;
+            place-items: center;
+
+        }
+
+        .heading {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 1em;
+        }
+
+
+        @media screen and (max-width: 680px) {
+
+
+
+
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 1em;
+            }
+
+
+
+
+        }
+
+        .card {
+            height: 140px;
+            width: 140px;
+            background-color: #ffff00;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            transition: 0.3s all ease;
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 1;
+            transition: 0.3s all ease;
+        }
+
+        .card2 img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 0;
+            transition: 0.3s all ease;
+        }
+
+        .card p {
+
+            font-size: 12px;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .card.clicked {
+            background-color: orange;
+        }
+
+        .card.checked {
+            background-color: lightgreen;
+        }
+
+        .card.clicked img,
+        .card.checked img {
+            opacity: 1;
+        }
+
+        .card.shake {
+            background-color: #f15f5f;
+            animation: shake 0.5s;
+        }
+
+        #score {
+            margin-bottom: 10px;
+        }
+
+        .desativado {
+
+
+            cursor: not-allowed;
+            pointer-events: none;
+
+        }
+
+
+
+
+
+
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 08 – Industrialização mundial II </h1>
+
+
+        <p><strong> Conteúdo:</strong> Integração nacional; Modernização seletiva; Divisão regional IBGE,
+            técnico-científica e Geoeconômica;
+        </p>
+
+        <p><strong>Objetivo:</strong> Entender o processo de regionalização do território brasileiro, seus objetivos e
+            suas diferenças. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+            molestias, autem doloremque error aperiam sunt, quo a commodi veniam aut quaerat ipsam eligendi atque velit.
+            Ex amet facere delectus velit?</p>
+
+        <p>Nesta aula teremos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis illum adipisci pariatur
+            dolor, aut accusantium optio recusandae, libero distinctio voluptates perspiciatis quas dolores quisquam at
+            assumenda debitis ut reprehenderit temporibus.</p>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Lorem, ipsum dolor sit </h2>
+
+
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2>subtitulo </h2>
+
+        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+
+            <h4><strong>Curiosidade sobre Thomas Robert Malthus: A Teoria da População em Debate</strong></h4>
+    
+    
+    
+            <p> <img src="tt02f08.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Sapiente, consequuntur illo asperiores accusamus ea
+                exercitationem adipisci accusantium id dolore? Adipisci earum labore provident dolores possimus sit
+                officiis, fuga aspernatur asperiores?</p>
+    
+    
+    
+    
+        </div>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum ipsa, quasi enim iusto excepturi
+            architecto, molestias vero nobis aspernatur itaque voluptates voluptatem voluptatibus beatae debitis
+            voluptas nemo quidem cum.</p>
+
+
+        <div class="w3-margin"><img id="imagem1" src="ts02f01.png" alt="ts02f01" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: Fonte: https://novaescola.org.br.
+                Acesso em: 03 jul. 2022.
+            </span>
+        </div>
+
+
+
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tenetur maxime maiores. Laborum quidem
+            corporis totam sapiente, voluptatem ipsum harum tempora nesciunt voluptatum iusto, commodi illo? Assumenda
+            expedita doloremque quam. <span onclick="document.getElementById('arquipelago').style.display='block'"
+                class="w3-yellow">arquipélago</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+            distinctio, culpa fuga vel doloremque ullam, facilis amet corporis error nihil nisi adipisci ut repudiandae
+            dolorem officia! Vel quia magni autem.</p>
+
+
+        <div id="arquipelago" class="w3-modal w3-margin-top">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-padding">
+                    <span onclick="document.getElementById('arquipelago').style.display='none'"
+                        class="w3-button w3-red w3-display-topright">&times;</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore nihil, doloribus magni quos
+                        quibusdam adipisci nisi deserunt harum impedit dolores fugiat facere saepe reiciendis. Tempore,
+                        nam. Adipisci labore beatae delectus!. <span class="w3-small">Mílton Santos. A Urbanização
+                            brasileira, 1993. Adaptado</span>.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellendus, suscipit aliquid ut eos
+            aliquam, facilis minima sint totam maiores unde inventore libero! Quis commodi sit omnis, tempora obcaecati
+            tempore.
+            <span
+                onclick="this.innerHTML='conjuntura (combinação ou concorrência de acontecimentos ou eventos num dado momento; circunstância, situação.)'"><mark>conjuntura</mark></span>
+            internacional.
+        </p>
+
+
+
+
+
+
+
+        <div class="w3-margin"><img id="imagem10" src="ts02f010.png" alt="ts02f010" class="w3-mobile">
+
+            <span class="w3-small">https://www.labgis.uerj.br/noticias/
+                populacao-estimada-do-pais-chega-a-2133-milhoes-de-habitantes-em-2021. Acesso em: 10 jul. 2022.</span>
+
+        </div>
+
+
+
+        <div class="w3-margin">
+            <table class="w3-table w3-striped w3-centered">
+                <tr>
+                    <th>Posição</th>
+                    <th>Região</th>
+                    <th>População</th>
+                    <th>% da pop. total</th>
+                </tr>
+                <tr>
+                    <td>(1) </td>
+                    <td>Região Sudeste</td>
+                    <td>89.632.912 </td>
+                    <td>42,04% </td>
+                </tr>
+                <tr>
+                    <td>(2) </td>
+                    <td>Região Nordeste
+                    </td>
+                    <td>57.667.842 </td>
+                    <td>27,09% </td>
+
+                </tr>
+                <tr>
+                    <td>(3) </td>
+                    <td>Região Sul </td>
+                    <td>30.402.587 </td>
+                    <td>14,26%</td>
+                </tr>
+                <tr>
+                    <td>(4) </td>
+                    <td>Região Norte </td>
+                    <td>18.906.962 </td>
+                    <td>8,82% </td>
+                </tr>
+                <tr>
+                    <td>(5) </td>
+                    <td>Região Centro-Oeste
+                    </td>
+                    <td>16.707.336</td>
+                    <td>7,79% </td>
+                </tr>
+            </table>
+            <span class="w3-small">IBGE. Estimativa Populacional 2021.(PDF). FTP IBGE. ibge.gov.br. Acesso em: 10 jul.
+                2022.</span>
+        </div>
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    
+
+    
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa">Reforce seu conhecimento</p>
+
+        <div class="container">
+            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na aula
+                de hoje:
+            </h4>
+            <!-- <div class="w3-margin">Acertos: <span id="score">0</span></div> -->
+            <div class="cards">
+
+
+                <div class="card" data-animal="1">
+                    <p>Industrialização </p>
+                </div>
+
+                <div class="card" data-animal="1">
+                    <p>Fábricas </p>
+                </div>
+
+
+                <div class="card" data-animal="2">
+                    <p>Globalização </p>
+                </div>
+
+                <div class="card" data-animal="2">
+                    <p>Conexão</p>
+                </div>
+
+                <div class="card" data-animal="3">
+                    <p>Tecnologia </p>
+                </div>
+
+                <div class="card" data-animal="3">
+                    <p>Inovação </p>
+                </div>
+
+                <div class="card" data-animal="4">
+                    <p>Multinacionais </p>
+                </div>
+
+                <div class="card" data-animal="4">
+                    <p>Global</p>
+                </div>
+
+                <div class="card" data-animal="5">
+                    <p>Fordismo </p>
+                </div>
+
+                <div class="card" data-animal="5">
+                    <p>Produção em Massa </p>
+                </div>
+
+                <div class="card" data-animal="6">
+                    <p>Keynesianismo </p>
+                </div>
+
+                <div class="card" data-animal="6">
+                    <p>Intervenção Estatal</p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Lorem ipsum dolor sit amet </h2>
+
+
+
+
+
+
+        <p>consectetur adipisicing elit. Tenetur modi error molestiae, quae nesciunt, reprehenderit in dignissimos
+            dolor, ut optio est natus non aliquid aperiam nulla repellat distinctio iure iusto.</p>
+
+
+
+
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint aliquam veritatis odio at,
+                    impedit fugit deleniti obcaecati dicta est tempora quibusdam nisi laborum error quae! Doloribus fuga
+                    consequatur beatae.
+                </li>
+
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora omnis saepe debitis fugiat, vitae
+                    dolores amet aspernatur reprehenderit aliquam fugit rem adipisci, unde perspiciatis magni at ipsum
+                    error laudantium voluptatum.
+                </li>
+
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ducimus voluptatum nam deserunt
+                    dolore necessitatibus magni consequuntur. A necessitatibus quibusdam, magnam maxime, veniam dolore
+                    odio quaerat vel, consequatur magni unde.
+                </li>
+
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In pariatur voluptatum veniam culpa ab
+                    perferendis accusantium ad obcaecati labore, a animi consequuntur beatae quaerat veritatis aperiam,
+                    vel natus explicabo quam.
+                </li>
+
+
+
+
+            </ul>
+
+        </div>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+
+        <h4> Assinale todas as alternativas que satisfazem as características da regionalização do IBGE:
+        </h4>
+
+        <!-- <form class="w3-margin" id="check">
+
+            <input type="checkbox" id="r1" name="r1">
+            <label> a construção de Brasilía objetivou a integração nacional.</label><br><br>
+
+            <input type="checkbox" id="r3" name="r3">
+            <label> preocupa-se com a formação histórico-social.</label><br><br>
+
+            <input type="checkbox" id="r2" name="r2">
+            <label>baseado nas regiões homogêneas.</label><br><br>
+
+
+            <input type="checkbox" id="r4" name="r4">
+            <label>Ela não é cientificamente rigorosa, pois seus limites coincidem com os Estados.</label><br>
+
+
+
+        </form> -->
+
+        
+
+            <form id="check">
+
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r1" name="r1">
+                    <label for="r1" onclick="confereBox('r1')"> a construção de Brasilía objetivou a integração
+                        nacional.</label>
+                </div>
+
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r2" name="r2">
+                    <label for="r2" onclick="confereBox('r2')"> baseado nas regiões homogêneas.</label>
+                </div>
+
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r3" name="r3">
+                    <label for="r3" onclick="confereBox('r3')"> preocupa-se com a formação histórico-social.</label>
+                </div>
+
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r4" name="r4">
+                    <label for="r4" onclick="confereBox('r4')"> Ela não é cientificamente rigorosa, pois seus limites
+                        coincidem com os Estados.</label>
+                </div>
+
+            </form>
+
+
+            <!-- outro formulário -->
+            
+<!--             
+            <form id="outroFormulario">
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r5" name="r5">
+                    <label for="r5" onclick="confereBox('r5')"> Opção 1</label>
+                </div>
+            
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r6" name="r6">
+                    <label for="r6" onclick="confereBox('r6')"> Opção 2</label>
+                </div>
+            
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r7" name="r7">
+                    <label for="r7" onclick="confereBox('r7')"> Opção 3</label>
+                </div>
+            
+                <div class="w3-container w3-padding">
+                    <input type="checkbox" id="r8" name="r8">
+                    <label for="r8" onclick="confereBox('r8')"> Opção 4</label>
+                </div>
+            </form>
+             -->
+
+
+
+
+
+
+        <button class="btnShow" id="buttoncheck1"
+            onclick="confereBox('acertou, parabéns. A regionalização geoeconômica é que se preocupa com a formação histórica da sociedade', 'resp40','globinho40',[2,3,4])">Conferir</button>
+
+
+
+        <p id="resp40"></p>
+
+
+        <div class="area">
+            <p><img src="../fotoIndex/globinhoPe.png" id="globinho40" style="display:none" alt="globinho40" width="64"
+                    height="64">
+            </p>
+        </div>
+
+        <button class="btnHide" id="buttoncheck2"
+            onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Lorem, ipsum dolor sit </h2>
+
+
+
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+        <p> </p>
+
+
+
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+
+        <p class="caixa">Reforce seu conhecimento</p>
+
+        <div class="container">
+            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na aula
+                de hoje:
+            </h4>
+            <!-- <div class="w3-margin">Acertos: <span id="score">0</span></div> -->
+            <div class="cards">
+
+
+                <div class="card" data-animal="1">
+                    <p>Industrialização </p>
+                </div>
+
+                <div class="card" data-animal="1">
+                    <p>Fábricas </p>
+                </div>
+
+
+                <div class="card" data-animal="2">
+                    <p>Globalização </p>
+                </div>
+
+                <div class="card" data-animal="2">
+                    <p>Conexão</p>
+                </div>
+
+                <div class="card" data-animal="3">
+                    <p>Tecnologia </p>
+                </div>
+
+                <div class="card" data-animal="3">
+                    <p>Inovação </p>
+                </div>
+
+                <div class="card" data-animal="4">
+                    <p>Multinacionais </p>
+                </div>
+
+                <div class="card" data-animal="4">
+                    <p>Global</p>
+                </div>
+
+                <div class="card" data-animal="5">
+                    <p>Fordismo </p>
+                </div>
+
+                <div class="card" data-animal="5">
+                    <p>Produção em Massa </p>
+                </div>
+
+                <div class="card" data-animal="6">
+                    <p>Keynesianismo </p>
+                </div>
+
+                <div class="card" data-animal="6">
+                    <p>Intervenção Estatal</p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <form id="quiz" name="quiz">
+
+
+
+            <p>O nome dessa era geológica significa ausência de vida”. Caracterizada pelo resfriamento
+                da Terra, solidificação dos minerais e formação das primeiras rochas oriundas do interior da Terra
+                (magma). </p>
+
+            <div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
+
+
+            <p id="resp1a"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
+                onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
+
+
+
+
+
+            <div class="area">
+                <p>
+                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
+                        width="64" height="64">
+                </p>
+            </div>
+
+
+
+            <p>Trata-se de uma Era geológica mais recente. É subdividida em Terciário
+                (cerca de 65 milhões de anos) quando apareceram os Dobramentos modernos (Andes, Alpes, Himalaia).
+                Desenvolvimento dos mamíferos e vegetação com flores. Foi no Quaternário (cerca de 1,6 milhões de anos).
+                Aparecimento dos primeiros hominídeos.</p>
+
+
+
+            <div class="area"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
+
+
+            <p id="resp1b"></p>
+
+
+            <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
+                onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
+
+
+
+
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1b" style="display:none" alt="globinho9"
+                        width="64" height="64"> </p>
+            </div>
+
+
+            <p>Corresponde à denominação dos geólogos de uma fase da história da Terra. A história de
+                nosso planeta, que tem cerca de 4,6 bilhões de anos, foi dividida pelos geólogos em escalas de tempo
+                como forma de melhor organizar a compreensão sobre a passagem da evolução da Terra.</p>
+
+            <div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+
+
+
+            <p id="resp1c"></p>
+
+            <input class="btnShow" id="buttonConferirQ1c" type="button" value="Conferir"
+                onclick="PerguntasAbertas(3,'resp1c','buttonConferirQ1c','globinho1c')">
+
+
+
+
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1c" style="display:none" alt="globinho10"
+                    width="64" height="64"> </p>
+
+
+
+
+        </form>
+
+
+
+        <button class="btnHide" id="buttonq1d"
+            onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1c')">Proximo</button>
+
+
+        <hr>
+
+    </div>
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <p>Assinale abaixo se o texto é verddeiro ou falso. </p>
+
+        <p>A Projeção de Mercator - Surgida no século XVI, essa projeção é cilíndrica e equivalente
+            (preserva as áreas). Porém prova grande distorção nas áreas das superfícies representadas, principalmente as
+            regiões de alta latitude que ficam maiores do que realmente são na realidade. América do Norte, Groenlândia
+            e Europa parece maiores do que são. </p>
+
+
+        <button class="desativar3 p4 w3-padding w3-margin area"
+            onclick="MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','');this.style.backgroundColor='tomato'">Verdadeiro</button>
+
+
+
+        <button class="desativar3 p4 w3-padding w3-margin area"
+            onclick="MostrarProximo(this);MostrarFrase('resp3','globinho3', 'desativar3', 'essa foi bem fácil ', '1'); this.style.backgroundColor='lightgreen'">
+            Falso</button>
+
+
+
+        <p id="resp3"></p>
+
+        <div class="area">
+            <p><img src="globinhoPe.png" id="globinho3" style="display:none" alt="globinho3" width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+
+        <div class="borda">
+
+            <p> <span class="primeiraLetra">P:</span> <strong>
+
+                    Por quanto tempo vai durar a divisão territorial do Brasil?
+                </strong> </p>
+
+            <p><span class="primeiraLetra">R:</span> Quando estudamos o Brasil e vemos a maneira pela qual a maioria da
+                população tem ou deveria ter acesso aos bens necessários à uma vida digna, principalmente nas
+                periferias, podemos começar a questionar a razão de um município, Estado ou região ser do jeito que é. O
+                recorte atual do Brasil significa o que para a maioria da população? Ele deve ser permanente, rígido,
+                imutável para sempre? Vimos na história do Brasil os diversos movimentos para modificar seus limites
+                internos com amplas revoltas e guerras internas. Se cada época cria necessidades novas, também
+                precisaríamos de novos recortes territoriais para atender a sociedade. Como sabemos, a Geografia
+                preocupa-se com a sociedade e seu entorno, seu território. Se as regiões são desarticuladas, perpetuam a
+                pobreza, novos problemas da mesma forma, requerem novas soluções e o território não pode ficar
+                “congelado” no tempo sob o risco de vivermos em uma espaço cada vez mais desigual.</p>
+        </div>
+
+
+
+
+        <div class="borda">
+
+            <p> <span class="primeiraLetra">P:</span> <strong>Qual a relação entre os mapas e o estudo do território
+                    brasileiro?</strong></p>
+
+            <p><span class="primeiraLetra">R:</span>
+                Vimos inúmeros mapas e esse conhecimento está relacionado a Cartografia. A Geografia usa a Cartografia
+                como uma linguagem para revelar as relações sociais que ocorrem com o território. Os mapas nos permitem
+                visualizar adequadamente os problemas do país como áreas vazias de escolas, postos de saúde em
+                determinada cidade ou região. Nas cidades podemos constatar as desigualdades entre o centro e a
+                periferia, a faltar de saneamento básico, de bens culturais e de lazer. Tudo isso está mapeado,
+                inclusive por satélites modernos. Com toda essa informação é possível tomar decisões políticas para
+                satisfazer as necessidades atuais da sociedade.
+            </p>
+        </div>
+
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span><strong> Por que no Brasil se diz que há três poderes? </strong>
+            </p>
+
+            <p><span class="primeiraLetra">R:</span>
+                Artigo 2º da Constituição Federal diz o seguinte: São Poderes da União, independentes e harmônicos entre
+                si, o Legislativo, o Executivo e o Judiciário.
+                O Executivo, o Legislativo e o Judiciário são poderes interdependentes, ou seja, devem trabalhar
+                coordenados entre si e fiscalizar uns aos outros. </p>
+
+            <p> O <strong>Executivo</strong> é a instância de poder político que executa as leis e cuida da
+                administração. É exercido, no plano federal, pelo presidente com seus ministros; tem sede no Palácio do
+                Planalto. Em nivel estadual, é exercido pelos governadores e secretários e, na esfera municipal, pelos
+                prefeitos e secretários. </p>
+
+            <p> O <strong>Legislativo</strong> é o poder encarregado de fazer as leis. Em nivel federal, é exercido pelo
+                Congresso Nacional, composto pelo Senado e pela Câmara dos Deputados. Em nível estadual, é exercido pela
+                Assembleia Legislativa e, nos municípios, pela Câmara de Vereadores. </p>
+
+            <p> O poder <strong>Judiciário</strong> é o poder encarregado de fazer com que as leis sejam cumpridas,
+                garantindo os direitos dos indivíduos. Tem sede no Supremo Tribunal Federal, em Brasília. Além do
+                Supremo Tribunal Federal, é exercido pelo Superior Tribunal de Justiça, pelos tribunais eleitorais, de
+                justiça e do trabalho, entre outros órgãos. </p>
+
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <br><br>
+
+
+
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <h2> Desafio em grupo: Exposição de ideias sobre a jornada do herói.</h2>
+
+        <h4>Você conhece a Jordana do Herói? Tenho certeza que já assistiu inúmeros filmes e jogou diversos jogos com
+            essa forma de contar histórias. </h4>
+        <h4>Trata de um padrão narrativo que está presente em Star Wars ou Harry Potter por exemplo. O herói deve deixar
+            sua comunidade e partir em uma jornada perigosa, geralmente para recuperar algo (ou alguém) valioso.</h4>
+
+        <h4>Comente com seu professor(a) de língua portuguesa sobre o livro: O Herói de Mil Faces de Joseph Campbell e
+            sobre A Jornada do Escritor de Christopher Vogler. Neste último está descrito os passos para desenvolver
+            qualquer história, seja para games, filmes ou quadrinhos.</h4>
+
+
+        <h4>Instruções </h4>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ul>
+
+
+                <li>Com seu grupo da aula anterior, vamos discutir os passos para elaborarmos a história do nosso jogo
+                    sobre a Geografia do Brasil. Nas próximas aulas vamos nos aprofundar nesses tópicos:</li>
+
+
+                <li>Leia os passos sobre a jornada do herói abaixo e reflita sobre algum game ou filme em que vislumbrou
+                    alguns desses passos;</li>
+
+                <li> Anote algumas ideias no caderno sobre o jogo que iremos desenvolver com sua turma. Não se preocupe
+                    com correções nesse momento, deixe sua criatividade aflorar;</li>
+
+                <li> Apresente para a turma algumas de possíveis ideias para o jogo;</li>
+
+                <li> Tempo de atividade 25 minutos.</li>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+
+            <h4 class="w3-center"><strong>A Jornada do Herói</strong></h4>
+
+            <div class="w3-margin"><img id="imagem11" src="ts02f011.png" alt="ts01f011" width="580px" height="auto"
+                    class="w3-mobile">
+            </div>
+
+
+            <p><strong>1. Mundo Comum</strong> do herói é estabelecido. Sua vida cotidiana e seu ambiente são
+                introduzidos. No Final Fantasy, a alusão ao mundo comum aparece na frase de abertura: “Era um dia como
+                outro qualquer”.</p>
+
+            <p><strong>2. Chamado à Aventura</strong>: O herói conhece um mundo alternativo e é chamado a partir em uma
+                busca ou jornada. Nessa seção, o mundo alternativo, ou especial, é apresentado ao personagem principal.
+                Normalmente, há alguma espécie de intersecção de elementos do mundo alternativo com o mundo comum e o
+                personagem principal é chamado a ingressar nessa realidade alternativa e embarcar em uma busca ou
+                jornada.</p>
+
+            <p><strong>3. Recusa ao Chamado</strong> O chamado é rejeitado porque o herói não está disposto a sacrificar
+                sua vida confortável e seu ambiente familiar. O herói, porém, sente‑se desconfortável com essa recusa.
+            </p>
+
+            <p><strong>4. Encontro com o Mentor</strong>: O herói recebe informações que são relevantes para a busca e
+                para a sua necessidade pessoal de partir nessa jornada.</p>
+
+            <p><strong>5. Superando o Primeiro Obstáculo</strong>: O herói abandonou sua recusa inicial por causa das
+                informações recebidas. O herói embarca na jornada, aceita a aventura e ingressa no mundo especial. Essa
+                seção geralmente corresponde ao final do Ato I em uma narrativa tradicional.</p>
+
+            <p><strong>6. Testes, Aliados e Inimigos</strong> A determinação do herói é testada por meio de uma série de
+                desafios. Durante esse período, o herói encontra aliados e inimigos. Essa etapa constitui a ação
+                principal da maioria das narrativas. É quando o herói precisa solucionar problemas, enfrentar seus
+                temores, salvar outras pessoas e derrotar inimigos. Essa seção normalmente corresponde ao início do Ato
+                II em uma história.</p>
+
+            <p><strong>7. Chegada à Caverna Mais Interna</strong> Mais testes e um período de
+                supremo fascínio ou terror.. A provação começa a ser preparada.</p>
+
+            <p><strong>8. Provação</strong>: O herói enfrenta seu maior desafio até aqui. Ele deve derrotar o “grande”
+                vilão. Nessa fase, o herói mostra vulnerabilidade (por exemplo, Super‑Homem e kriptonita), e não está
+                claro se vencerá ou fracassará.</p>
+
+            <p><strong>9. Recompensa (Posse da Espada)</strong> Parece ser o fim da história, mas não é! Essa seção
+                corresponde ao final do Ato II da história.</p>
+
+            <p><strong>10. O Caminho de Volta</strong> Quando a provação termina, o herói pode optar entre permanecer no
+                mundo especial ou voltar ao mundo comum. Na maioria dos casos, ele decide regressar. Essa seção
+                corresponde ao início do Ato III da história.</p>
+
+            <p><strong>11. Ressurreição</strong>: O herói deve enfrentar a morte mais uma vez, em outra provação, que é
+                conhecida como o clímax. É aqui que o herói mostra que foi transformado pela jornada e ressuscitou como
+                uma pessoa plenamente formada. Durante essa etapa, o vilão pode ressurgir repentinamente. (Nos filmes de
+                terror, é o momento em que a plateia grita para o personagem principal: “Olhe para trás! Ele ainda não
+                está morto!”) É também onde o narrador pode incluir um “final surpresa” inesperado. Talvez o vilão não
+                seja realmente um vilão. Talvez o mentor seja um impostor. (Yoda poderia ser mau? Hummm...).</p>
+
+            <p><strong>12. Retorno com o Elixir</strong>: O herói finalmente volta para casa, mas a experiência o
+                alterou irremediavelmente. Se agora é um herói, ele traz consigo um elixir do mundo especial que ajudará
+                aqueles que ele havia originalmente deixado para trás. A estrutura é circular, com o herói voltando ao
+                princípio. Isso facilita a comparação entre o “antes” e o “depois” pela audiência para perceber como o
+                herói foi transformado. A estrutura circular também permite deixar o final em aberto. O herói será
+                convocado novamente no futuro? O inimigo foi realmente derrotado? Há outra ameaça no horizonte? O herói
+                conseguirá descansar algum dia? Deixar perguntas como essas em aberto — em vez de optar por um final em
+                que tudo se esclarece — intriga a audiência e cria espaço para uma continuação. E se o herói fosse
+                transportado inesperadamente de volta para o mundo artificial bem no final da história? O personagem
+                principal do filme De Volta para o Futuro, Marty McFly, descobre no final que sua jornada ao passado
+                alterou substancialmente o futuro. </p>
+
+            <p>Ele deve atender a um novo chamado e viajar para o futuro para salvar sua família do desastre. Na
+                reviravolta de último minuto do enredo de Half‑Life, o personagem principal, Gordon Freeman, está
+                prestes a escapar quando é abordado pelo “homem de preto”, que lhe propõe uma difícil escolha.</p>
+        </div>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span>  -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="http://cienciaecultura.bvs.br/scielo.php?script=sci_arttext&pid=S0009-67252012000100003"
+                    target="_blank">
+
+                    Brasil redesenhado: projetos de criação de novos estados e territórios
+                </a>
+
+            </div>
+
+        </div>
+
+        <div>
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://palavramagica.com/2020/08/04/como-criar-conflito-em-historias/" target="_blank">
+
+                    Como criar criar conflito em histórias? 7 dicas para criar uma narrativa envolvente.
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+        <p> MARIANO, Maryelle Florêncio (et al.). <strong> Geografia do Brasil </strong> Londrina: Editora e
+            Distribuidora Educacional S.A., 2018. </p>
+
+
+
+        <p> SANTOS, Mílton. <strong> O pais distorcido: </strong> o Brasil, a globalização a cidadania. São Paulo:
+            Publifolha, 2002. </p>
+
+        <p> SANTOS, Milton.; SILVEIRA, Maria Laura. <strong> O Brasil: </strong> território e sociedade no início do
+            século XXI. 4.ed. Rio de Janeiro: Record, 2002. </p>
+
+        <p> SANTOS, Patrícia Cardoso dos (et al.) <strong> Enciclopédia do Estudante: </strong> geografia do Brasil:
+            aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008. </p>
+
+        <p>VESENTINI, José William. <strong> Geografia </strong> o mundo em transição. Ensino médio. 2. ed. – São Paulo:
+            Ática, 2013. </p>
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        //  function numButton() {
+        //             numB++;
+        //             document.getElementById("numero").innerHTML = numB;
+        //             console.log(numB);
+        //         }
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+
+            }
+
+        }
+
+
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 10);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+    <script>
+
+
+
+        let counter = 0;
+        let firstSelection = "";
+        let secondSelection = "";
+        let cartaNota = "";
+        let contadorCartas = 0;
+
+        const cards = document.querySelectorAll(".cards .card");
+
+        const card = document.querySelectorAll(".card");
+
+        function suffleImage() {
+            card.forEach(c => {
+                const num = [...Array(card.length).keys()];
+                const random = Math.floor(Math.random() * card.length);
+                c.style.order = num[random];
+            });
+        }
+
+        suffleImage();
+
+        cards.forEach((card) => {
+            card.addEventListener("click", () => {
+                if (card.classList.contains("checked") || card.classList.contains("desativado") || card.classList.contains("clicked")) {
+                    // Ignora se o cartão já estiver marcado como "checked", "desativado" ou "clicked"
+                    return;
+                }
+
+                card.classList.add("clicked");
+
+                if (counter === 0) {
+                    firstSelection = card;
+                    counter++;
+                } else if (counter === 1) {
+                    secondSelection = card;
+                    counter = 0;
+
+                    if (firstSelection.getAttribute("data-animal") === secondSelection.getAttribute("data-animal")) {
+                        // Caso de correspondência correta
+                        contadorCartas++;
+                        Play("../audio1.mp3");
+
+                        if (contadorCartas == 6) {
+                            nota += 4;
+                            Play("../audio3.mp3");
+                            contadorCartas = 0;
+                            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                        }
+
+                        firstSelection.classList.add("checked", "desativado");
+                        firstSelection.classList.remove("clicked");
+
+                        secondSelection.classList.add("checked", "desativado");
+                        secondSelection.classList.remove("clicked");
+
+                    } else {
+                        // Caso de correspondência incorreta
+                        firstSelection.classList.add("shake");
+                        secondSelection.classList.add("shake");
+                        Play("../audio2.mp3");
+
+                        setTimeout(() => {
+                            firstSelection.classList.remove("shake", "clicked");
+                            secondSelection.classList.remove("shake", "clicked");
+                        }, 800);
+                    }
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+
+    <script>
+
+
+
+
+
+    </script>
+
+    <script>
+
+        // function confereBox(mensagem, frase2, globinho) {
+
+        //     r1 = document.getElementById("r1");
+        //     r2 = document.getElementById("r2");
+        //     r3 = document.getElementById("r3");
+        //     r4 = document.getElementById("r4");
+        //     frase = document.getElementById(frase2);
+        //     globo = document.getElementById(globinho);
+
+        //     if (r3.checked == true) {
+
+        //         frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
+        //         Play2("../audio2.mp3");
+        //     }
+
+        //     else if (r1.checked == true && r2.checked == true && r4.checked == true) {
+
+
+        //         nota += 2;
+        //         frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+        //         globo.style.display = "block";
+        //         Play("../audio1.mp3");
+
+        //         document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+        //         EscondeButton("buttoncheck1");
+        //         MostraButton("buttoncheck2");
+
+
+        //     }
+
+
+        //     else {
+        //         frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
+        //         Play2("../audio2.mp3");
+        //     }
+
+
+        // }
+
+        function confereBox(mensagem, frase2, globinho, respostasCorretas) {
+            // Seleciona as checkboxes e outros elementos necessários
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var frase = document.getElementById(frase2);
+            var globo = document.getElementById(globinho);
+
+            // Verifica quais respostas corretas foram marcadas pelo aluno
+            var marcadasCorretas = [];
+
+            checkboxes.forEach(function (checkbox, index) {
+                if (checkbox.checked) {
+                    marcadasCorretas.push(index + 1);
+                }
+            });
+
+            // Verifica se todas as opções marcadas pelo aluno coincidem com as respostas corretas
+            var todasCorretas = true;
+            for (var i = 0; i < marcadasCorretas.length; i++) {
+                if (!respostasCorretas.includes(marcadasCorretas[i])) {
+                    todasCorretas = false;
+                    break;
+                }
+            }
+
+            // Define as mensagens com base nas respostas marcadas
+            if (marcadasCorretas.length === respostasCorretas.length && todasCorretas) {
+                // Todas as opções marcadas pelo aluno coincidem com as respostas corretas
+                nota += 2;
+                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
+                globo.style.display = "block";
+                Play("../audio1.mp3");
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+                EscondeButton("buttoncheck1");
+                MostraButton("buttoncheck2");
+
+                checkboxes.forEach(function (checkbox) {
+                checkbox.disabled = true;
+            });
+
+
+
+            } else {
+                // Alguma das opções marcadas pelo aluno não coincide com as respostas corretas
+                frase.innerHTML = nomeEstudante + ", marque apenas as opções corretas para prosseguir.";
+                Play2("../audio2.mp3");
+            }
+
+           
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+    <script>
+        // Função com perguntas abertas feita com formulário
+        function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+            var q1a = document.quiz.q1a.value.toLowerCase();
+            var q1b = document.quiz.q1b.value.toLowerCase();
+            var q1c = document.quiz.q1c.value.toLowerCase();
+
+
+
+
+            var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+            var cor = ["#99ff99", " #ee4466"];
+
+            if (q1a.match("azoica") && qnum == 1) {
+
+                document.getElementById("q1a").style.backgroundColor = cor[0];
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
+                nota += 0.2;
+                document.getElementById(globinho).style.display = "block";
+
+            }
+            else if (qnum == 1) {
+                document.getElementById("q1a").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+                Play2("../audio2.mp3");
+            }
+
+            if (q1b.match("cenozoica") && qnum == 2) {
+
+                document.getElementById("q1b").style.backgroundColor = cor[0];
+
+                EscondeButton(buttonConferir);
+                Play("../audio1.mp3");
+
+                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf();
+                nota += 0.4;
+                document.getElementById(globinho).style.display = "block";
+
+            }
+            else if (qnum == 2) {
+                document.getElementById("q1b").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+                Play2("../audio2.mp3");
+            }
+
+
+            if (q1c.match("eras geológicas") && qnum == 3) {
+
+                if (q1a.match("azoica") && q1b.match("cenozoica")) {
+                    document.getElementById("q1c").style.backgroundColor = cor[0];
+
+                    EscondeButton(buttonConferir);
+                    Play("../audio1.mp3");
+
+                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1c.valueOf();
+                    nota += 0.4;
+                    document.getElementById(globinho).style.display = "block";
+                    MostraButton("buttonq1d");
+                }
+                else {
+                    document.getElementById("q1c").style.backgroundColor = cor[1];
+                    document.getElementById(idResp).innerHTML = "Quer pular sem responder todas as questões? Volte e preencha as outras espertinho(a). Depois retorne aqui";
+                    Play2("../audio2.mp3");
+
+                }
+
+            }
+            else if (qnum == 3) {
+                document.getElementById("q1c").style.backgroundColor = cor[1];
+                document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
+                Play2("../audio2.mp3");
+            }
+
+
+
+            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

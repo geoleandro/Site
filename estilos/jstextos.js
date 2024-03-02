@@ -204,19 +204,19 @@ function MostrarFrase(idFrase, idGlobinho, desativar, mensagem, qtdNota) {
 function mostrarNota() {
     const notaThreshold = 6;
     const notaElements = document.getElementsByClassName("nota");
-    const message = nota >= notaThreshold 
-      ? `Parabéns ${nomeEstudante}, você ganhou ${nota} globinhos e completou sua lição!`
-      : `${nomeEstudante}, você não completou sua lição, pois conseguiu apenas ${nota} globinho(s). Tente novamente.`;
+    const message = nota >= notaThreshold
+        ? `Parabéns ${nomeEstudante}, você ganhou ${nota} globinhos e completou sua lição!`
+        : `${nomeEstudante}, você não completou sua lição, pois conseguiu apenas ${nota} globinho(s). Tente novamente.`;
     const audio = nota >= notaThreshold ? "../notaFinal.mp3" : "../notaFinal2.mp3";
-  
+
     for (let i = 0; i < notaElements.length; i++) {
-      document.getElementById('id01').style.display = "block";
-      notaElements[i].style.display = "block";
-      notaElements[i].innerHTML = message;
-      Play(audio);
+        document.getElementById('id01').style.display = "block";
+        notaElements[i].style.display = "block";
+        notaElements[i].innerHTML = message;
+        Play(audio);
     }
-  }
-  
+}
+
 
 
 function mostraCinza() {
