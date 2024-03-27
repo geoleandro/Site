@@ -1,32 +1,19 @@
+Se você está antecipando um erro que já encontrou anteriormente: a variável currentHealth é privada, então seu script HealthCollectible atualmente não pode acessá-la. Você pode tornar a variável pública, mas ao tornar o código público quando não há necessidade, você aumenta a chance de bugs irritantes que precisará corrigir mais tarde. Por exemplo, se currentHealth for pública, então outro script poderia alterá-la para um valor acima do valor maxHealth — uma função como ChangeHealth que pode limitar os valores possíveis é uma maneira muito mais segura de controlar essa funcionalidade.
 
-Tente fazer um texto em uma linguagem mais estilo podcast com as mesmas informações acima. dê exemplos práticos e informações sobre países, utilize dados recentes. fale sobre diferentes países. Proponha algumas questões crítico-reflexivas sobre o tópico.
+O script HealthCollectible não precisa escrever na variável currentHealth como parte de suas verificações de condição, ele apenas precisa ler o valor atual da variável. Para facilitar isso, você pode usar uma propriedade somente leitura, um método que você pode usar para ler o valor de uma variável privada.
 
+Para definir uma propriedade para ler o valor de currentHealth, siga estas instruções:
 
+1. Abra o script PlayerController no seu IDE.
+2. No topo do script, em uma nova linha, acima da declaração da variável currentHealth, adicione o seguinte código:
+csharp
+Copy code
+public int health { get { return currentHealth; } }
+Aqui está uma explicação da sua mudança:
 
-
-
-
-
-
-
-
-5. Exemplos Práticos e Estudos de Caso
-Apresentação de exemplos de multinacionais e como elas operam em diferentes países.
-Estudo de caso sobre a evolução de um setor industrial específico sob a influência da globalização e do MTCI.
-
-
-6. Impactos Sociais e Ambientais
-Discussão sobre os impactos sociais da industrialização e da globalização, como desemprego estrutural e desigualdades econômicas.
-Abordagem dos desafios ambientais associados à intensificação da produção industrial e ao consumo em larga escala.
-
-
-7. Atividade Interativa
-Divisão dos alunos em grupos para pesquisar e apresentar uma empresa multinacional e seu impacto em diferentes países.
-Discussão em grupo sobre as implicações do MTCI na vida cotidiana, no mercado de trabalho e na economia local.
-
-
-8. Conclusão e Reflexão
-Recapitulação dos principais pontos abordados na aula.
-Estímulo à reflexão sobre o papel da tecnologia, da informação e das multinacionais na configuração do mundo atual.
-Convite para os alunos pensarem criticamente sobre o equilíbrio entre o desenvolvimento econômico e os impactos sociais e ambientais.
-Esses são os tópicos que você pode expandir ao preparar sua aula. Cada um deles pode ser desenvolvido com exemplos, dados concretos, vídeos, debates em grupo e outras atividades interativas para engajar os alunos e tornar a aula mais dinâmica e interessante.
+A definição de propriedade é semelhante a uma declaração de variável. Ela tem uma palavra-chave de nível de acesso (public), um tipo (int) e um nome (health).
+Esta definição então possui uma sintaxe pouco familiar: dois conjuntos de chaves (blocos de código), um aninhado dentro do outro.
+O bloco externo contém a palavra-chave get e um segundo bloco. Fiel ao seu nome, o propósito da palavra-chave é obter o que quer que esteja no bloco aninhado, para que essa informação possa ser lida em outros scripts.
+O bloco interno retorna o valor de currentHealth. O compilador trata este bloco como uma função normal, então você pode adicionar instruções para declarar uma variável, completar cálculos ou chamar outras funções aqui. No entanto, neste caso, tudo o que você precisa fazer é obter o valor da variável currentHealth.
+3. Salve suas mudanças.
+Desta maneira, você permite o acesso seguro à variável currentHealth sem expor diretamente a variável, mantendo a integridade e a encapsulação do seu código.

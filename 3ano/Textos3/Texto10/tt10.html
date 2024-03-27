@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 10 </title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            width: 60%;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* 
+Css do memory card */
+
+        .container {
+            display: grid;
+            place-items: center;
+
+        }
+
+        .heading {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 1em;
+        }
+
+
+        @media screen and (max-width: 680px) {
+
+
+
+
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 1em;
+            }
+
+
+
+
+        }
+
+        .card {
+            height: 140px;
+            width: 140px;
+            background-color: #ffff00;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            transition: 0.3s all ease;
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 1;
+            transition: 0.3s all ease;
+        }
+
+        .card2 img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 0;
+            transition: 0.3s all ease;
+        }
+
+        .card p {
+
+            font-size: 12px;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .card.clicked {
+            background-color: orange;
+        }
+
+        .card.checked {
+            background-color: lightgreen;
+        }
+
+        .card.clicked img,
+        .card.checked img {
+            opacity: 1;
+        }
+
+        .card.shake {
+            background-color: #f15f5f;
+            animation: shake 0.5s;
+        }
+
+        #score {
+            margin-bottom: 10px;
+        }
+
+        .desativado {
+
+
+            cursor: not-allowed;
+            pointer-events: none;
+
+        }
+
+
+
+
+
+
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 10 - Geopolítica e regionalização I: Guerra Fria</h1>
+
+
+        <p><strong> Conteúdo:</strong> Ordem Bipolar; Guerra Fria; Imperialismo; Regionalização; OTAN;
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Comparar e compreender as diferentes formas de regionalização do mundo ao longo
+            das últimas décadas.
+            <br>Destacar a importância das mudanças políticas e econômicas na regionalização.<br>
+            Descrever brevemente as ordens mundiais, focando até o período da Guerra Fria e suas consequências.
+        </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>aula passada vimos o surgimento do meio
+            técnico-científico-informacional, e entendemos como o Fordismo, o Keynesianismo e as multinacionais se
+            moldaram novas formas das indústrias produzirem no mundo. </p>
+
+
+
+        <p>Hoje vamos estudar como a economia se tornou global e os fatores para o surgimento de novos modos de
+            produção, como a acumulação flexível amparada no neoliberalismo que se expandiu pelo globo a partir da
+            década de 1980. </p>
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+        <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje: </h2>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ul style="list-style-type: none;">
+                <li>1. O que foi a Guerra Fria e por que foi importante para as relações internacionais?</li>
+                <li>2. Quais eram as principais diferenças econômicas entre os Estados Unidos e a União Soviética
+                    durante a Guerra Fria?</li>
+                <li>3. Por que a corrida espacial foi considerada uma metáfora da competição entre Estados Unidos e
+                    União Soviética?</li>
+                <li>4. Cite dois exemplos de impactos globais e regionais da Guerra Fria mencionados no texto.</li>
+                <li>5. O que foi a OTAN e qual era seu objetivo durante a Guerra Fria?</li>
+                <li>6. Explique o que foi o Pacto de Varsóvia e seu papel na geopolítica da época.</li>
+                <li>7. Por que a economia planificada da União Soviética foi considerada ineficiente?</li>
+                <li>8. Quais foram os principais fatores que contribuíram para o colapso da União Soviética em 1991?
+                </li>
+                <li>9. Como o colapso da União Soviética redefiniu as relações geopolíticas e econômicas globais?</li>
+                <li>10. Mencione três polos mundiais de poder emergentes no século XXI e como eles influenciam as
+                    relações internacionais atualmente.</li>
+            </ul>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+    <div class="topico">
+        <h2>Um mundo dividido: A Dinâmica de Poder entre Estados Unidos e União Soviética</h2>
+
+        <p>A segunda metade do século XX foi marcada pela ascensão de duas superpotências, Estados Unidos e União
+            Soviética, estabelecendo uma ordem mundial caracterizada pela bipolaridade. Este período, conhecido como
+            Guerra Fria, é fundamental para compreender as relações internacionais contemporâneas e a dinâmica de poder
+            global.</p>
+
+        <div class="w3-margin"><img id="imagem1" src="tt10f01.png" alt="tt10f01" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao1">Fonte: Vesentini (2013). </span>
+
+        </div>
+
+
+
+        <h3>Estruturas Econômicas e Políticas Divergentes</h3>
+
+        <p><strong>Economia:</strong> A principal distinção entre as duas superpotências residia em seus sistemas
+            econômicos. Os Estados Unidos promoviam um modelo capitalista de livre mercado, enquanto a União Soviética
+            adotava um sistema de economia planificada baseado em princípios comunistas.</p>
+
+        <div class="w3-margin"><img id="imagem2" src="tt10f02.png" alt="tt10f02" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao2"> Fonte: Pexels. </span>
+        </div>
+
+        <p><strong>Influência Política e Militar:</strong> Através da formação de alianças estratégicas como a OTAN e o
+            Pacto de Varsóvia, cada superpotência buscava expandir sua influência, estabelecendo esferas de influência
+            geopolíticas.</p>
+
+        <div class="w3-margin"><img id="imagem3" src="tt10f03.png" alt="tt10f03" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao3"> </span>
+
+        </div>
+
+        <h3>A Corrida Espacial como Metáfora de Dominação</h3>
+
+        <p>Um dos exemplos mais emblemáticos da competição por hegemonia foi a corrida espacial, destacando-se o pouso
+            lunar dos Estados Unidos em 1969. Esse evento não apenas simbolizava a supremacia tecnológica americana, mas
+            também servia como um poderoso instrumento de propaganda.</p>
+
+
+        <div class="w3-margin"><img id="imagem11" src="tt10f11.png" alt="tt10f011" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao11"> </span>
+
+
+        </div>
+
+        <h3>Exemplos de Impacto Global e Regional</h3>
+
+        <p><strong>Cuba:</strong> A Crise dos Mísseis de 1962 ilustra vividamente como nações menores se tornaram peões
+            no jogo estratégico das superpotências, colocando o mundo à beira de um conflito nuclear.</p>
+
+        <p><strong>Alemanha:</strong> A Alemanha dividida, com a construção do Muro de Berlim, simbolizava a cisão
+            ideológica e física imposta pela ordem mundial bipolar, evidenciando as profundas divisões dentro da Europa
+            e o mundo.</p>
+
+        <div class="w3-margin"><img id="imagem12" src="tt10f12.png" alt="tt10f12" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao12"> Fonte: https://g1.globo.com/mundo/noticia/html.
+            </span>
+        </div>
+
+        <h3>Análise Quantitativa: A Corrida Armamentista</h3>
+
+        <p>A escalada armamentista é um aspecto quantificável da competição por hegemonia. Dados sobre os arsenais
+            nucleares evidenciam a magnitude do poderio militar acumulado:</p>
+
+        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+
+            <p>- EUA: Cerca de 23.000 ogivas nucleares no auge da Guerra Fria.</p>
+            <p>- URSS: Aproximadamente 40.000 ogivas nucleares.</p>
+        </div>
+        <p>Estes números refletem a intensa competição e a permanente ameaça de escalada para um conflito nuclear,
+            caracterizando a era como um período de tensão e competição estratégica constante.</p>
+
+        <hr>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Durante a Guerra Fria, a União Soviética adotou um sistema de economia capitalista baseado na livre
+            iniciativa econômica.</h4>
+
+
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
+            Verdadeiro</button>
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'a União Soviética adotou um sistema de economia planificada baseado em princípios comunistas, não capitalistas','1'); this.style.backgroundColor='lightgreen'">
+            Falso
+
+        </button>
+
+
+        <p id="resp1"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+        <h2>Descolonização e a Emergência de Novos Estados:</h2>
+
+        <p>A descolonização, um fenômeno marcante do século XX, transformou o mapa político mundial ao permitir que
+            territórios na África e Ásia alcançassem independência. Este processo foi catalisado pelo enfraquecimento
+            das potências europeias após a Segunda Guerra Mundial e pelo desejo de autodeterminação, com países como
+            Índia (1947) e Gana (1957) liderando o caminho.</p>
+
+        <div class="w3-margin"><img id="imagem4" src="tt10f04.png" alt="tt10f04" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao4"> Fonte: Wikipedia. </span>
+
+        </div>
+
+        <p>A ascensão desses novos estados durante a Guerra Fria adicionou complexidade às relações internacionais, com
+            Estados Unidos e União Soviética competindo por influência. Essa era viu o nascimento do movimento de
+            não-alinhamento, especialmente significativo para países que buscavam uma terceira via além do confronto
+            Leste-Oeste.</p>
+
+        <p>Contudo, a descolonização também trouxe desafios, incluindo conflitos internos e dificuldades econômicas,
+            muitas vezes agravadas pela intromissão das superpotências. A longo prazo, esse processo contribuiu para a
+            emergência de um mundo mais multipolar e impulsionou o Movimento dos Países Não-Alinhados, redefinindo as
+            dinâmicas de poder global e promovendo uma nova consciência sobre cooperação internacional e soberania.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>A descolonização foi um fenômeno marcante do século XX que transformou o mapa político mundial.</h4>
+
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'a descolonização permitiu que territórios na África e Ásia alcançassem independência, transformando o mapa político mundial','1'); this.style.backgroundColor='lightgreen'">
+
+            Verdadeiro
+
+        </button>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            Falso
+
+        </button>
+
+
+
+
+
+
+        <p id="resp3"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+        <h2>Guerra Fria: Economia Planificada vs. Capitalista: </h2>
+
+        <div class="w3-margin"><img id="imagem5" src="tt10f05.png" alt="tt10f05" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao5"> </span>
+
+        </div>
+
+        <p>Durante grande parte do século XX, o mundo esteve dividido entre dois sistemas econômicos e políticos
+            diametralmente opostos: a economia planificada, representada pelo bloco soviético liderado pela União
+            Soviética, e a economia capitalista, representada pelo bloco ocidental liderado pelos Estados Unidos. Esses
+            sistemas não apenas moldaram as políticas internas de seus respectivos blocos, mas também influenciaram
+            profundamente as relações globais e a geopolítica da época.</p>
+
+        <h3>Economia Planificada do Bloco Soviético</h3>
+
+        <p>A União Soviética adotou o modelo de economia planificada, no qual o Estado detinha o controle dos meios de
+            produção, determinando o que seria produzido, em que quantidade e a que preço seria vendido. Esse sistema
+            buscava eliminar as disparidades sociais e econômicas, prometendo igualdade e justiça social para todos os
+            cidadãos soviéticos.</p>
+
+        <h4>Centralização do Planejamento:</h4>
+        <p>Um dos pilares da economia planificada era o planejamento centralizado. O Estado soviético elaborava planos
+            quinquenais que estabeleciam metas de produção para todos os setores da economia, desde a agricultura até a
+            indústria pesada.</p>
+
+
+
+        <div class="w3-margin"><img id="imagem6" src="tt10f06.png" alt="tt10f06" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao6">Fonte: Folha – UOL. </span>
+
+        </div>
+
+
+        <h4>Propriedade Estatal dos Meios de Produção:</h4>
+        <p>Sob o sistema soviético, fábricas, terras agrícolas e empresas eram propriedade do Estado. Isso significava
+            que não havia proprietários privados, e a produção estava voltada para o interesse coletivo.</p>
+
+
+        <div class="area justificadoEsquerda">
+
+
+            <div class="postit-tp9 w3-white ">
+
+                <p><strong>Questão Reflexiva:</strong> Até que ponto o controle estatal sobre os meios de
+                    produção garantiu ou restringiu a liberdade individual dos cidadãos soviéticos?</p>
+
+            </div>
+
+        </div>
+
+
+
+
+        <h4>Exemplo da Economia Soviética: Indústria Pesada</h4>
+        <p>Um exemplo notável da economia planificada soviética foi o foco na indústria pesada. Durante os primeiros
+            planos quinquenais, a URSS direcionou enormes recursos para construir uma base industrial robusta. Isso
+            resultou na rápida expansão da produção de aço, maquinaria e produtos químicos. No entanto, isso muitas
+            vezes significava a falta de bens de consumo básicos para os cidadãos comuns, levando a longas filas e
+            escassez de itens essenciais.</p>
+
+        <h3>Economia Capitalista do Bloco Ocidental</h3>
+
+        <p>Por outro lado, o bloco ocidental liderado pelos Estados Unidos adotou o sistema de economia capitalista,
+            baseado na propriedade privada dos meios de produção e na busca do lucro como motor da atividade econômica.
+        </p>
+
+        <h4>Economia de Mercado Livre:</h4>
+        <p>Sob o sistema capitalista, o mercado desempenha um papel fundamental na alocação de recursos. Os preços são
+            determinados pela oferta e demanda, e as empresas competem umas com as outras para atrair consumidores.</p>
+
+        <h4>Propriedade Privada e Iniciativa Individual:</h4>
+        <p>Ao contrário da URSS, no sistema capitalista, as empresas são de propriedade privada, e os indivíduos têm o
+            direito de iniciar seus próprios negócios e buscar lucro.</p>
+
+        <div class="w3-margin"><img id="imagem7" src="tt10f07.png" alt="tt10f07" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao7"> </span>
+        </div>
+
+
+        <div class="area ">
+
+
+            <div class="postit-tp9 w3-deep-orange ">
+
+                <p><strong>Questão Reflexiva:</strong> Como o sistema capitalista incentivou a inovação
+                    tecnológica e o crescimento econômico, e ao mesmo tempo criou disparidades de riqueza
+                    significativas?</p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <h4>Exemplo da Economia Capitalista: Silicon Valley</h4>
+
+        <p>Um exemplo notável da economia capitalista foi o desenvolvimento do Vale do Silício nos Estados Unidos. Esta
+            região tornou-se um ícone da inovação tecnológica e do empreendedorismo, onde empresas como Apple, Google e
+            Facebook foram fundadas. O incentivo à iniciativa individual e à busca de lucro levou a avanços
+            significativos em áreas como tecnologia da informação e comunicação.</p>
+
+        <div class="w3-margin"><img id="imagem8" src="tt10f08.png" alt="8" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao8"> </span>
+
+        </div>
+
+        <h3>Blocos Político-Militares: OTAN vs. Pacto de Varsóvia</h3>
+
+        <p>Além das diferenças econômicas, esses dois blocos também se distinguiram por suas alianças
+            político-militares.</p>
+
+        <h4>OTAN (Organização do Tratado do Atlântico Norte):</h4>
+        <p>Formada em 1949, a OTAN foi uma aliança militar liderada pelos Estados Unidos, Canadá e várias nações
+            europeias. Seu principal objetivo era conter a expansão soviética na Europa Ocidental e garantir a segurança
+            coletiva de seus membros.</p>
+
+
+        <div class="area justificadoDireita">
+
+
+            <div class="postit-tp9 w3-blue ">
+                <p><strong>Questão Reflexiva:</strong> Até que ponto a presença militar dos EUA na Europa
+                    Ocidental trouxe segurança ou incerteza para os países membros da OTAN?</p>
+
+            </div>
+
+        </div>
+
+
+
+        <h4>Pacto de Varsóvia:</h4>
+        <p>Criado em 1955 em resposta à formação da OTAN, o Pacto de Varsóvia foi uma aliança militar liderada pela
+            União Soviética e seus países satélites do Bloco do Leste Europeu. Ele serviu como contrapeso à presença
+            militar ocidental na Europa e foi visto como uma garantia de segurança para os Estados do Pacto.</p>
+
+
+        <div class="area ">
+
+
+            <div class="postit-tp9 w3-deep-purple ">
+
+
+                <p><strong>Questão Reflexiva:</strong> Como a formação do Pacto de Varsóvia influenciou a
+                    política interna dos países membros e sua relação com a União Soviética?</p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Qual foi a principal distinção entre os sistemas econômicos das superpotências durante a Guerra Fria?</h4>
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            a)
+            Economia de Mercado vs. Economia Capitalista
+        </button>
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'os EUA promoviam um modelo capitalista de livre mercado, enquanto a URSS adotava um sistema de economia planificada.','1'); this.style.backgroundColor='lightgreen'">
+
+            b)
+            Economia Planificada vs. Economia Capitalista
+        </button>
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0.5');this.style.backgroundColor='tomato'">
+
+            c)
+            Economia de Comando vs. Economia Socialista
+        </button>
+
+
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4> O que foi a OTAN durante a Guerra Fria?</h4>
+
+        <button class="desativar4 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
+
+            a)
+            Organização econômica internacional
+
+        </button>
+
+        <button class="desativar4 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
+
+            b)
+            Aliança militar liderada pela União Soviética
+
+        </button>
+
+
+
+        <button class="desativar4 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'a OTAN foi uma aliança militar liderada pelos EUA, Canadá e várias nações europeias','1'); this.style.backgroundColor='lightgreen'">
+
+            c)
+            Aliança militar liderada pelos EUA e aliados
+
+        </button>
+
+
+
+
+
+
+        <p id="resp4"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <div class="w3-panel w3-leftbar w3-pale-red w3-margin w3-padding">
+
+            <h2>Crise e Colapso do Mundo Bipolar</h2>
+
+            <p>Esgotamento das Economias Planificadas na URSS</p>
+            <p>Ineficiência Econômica: Ao longo das décadas, a economia planificada da União Soviética começou a mostrar
+                sinais de séria ineficiência. A falta de mecanismos de mercado levou a uma alocação ineficiente de
+                recursos e a uma produção de bens de baixa qualidade.</p>
+
+            <p>Corrupção e Burocracia: A burocracia excessiva, a corrupção generalizada e a falta de responsabilidade
+                econômica contribuíram para o declínio econômico. Muitas vezes, as metas dos planos quinquenais eram
+                cumpridas apenas de forma superficial, sem considerar a verdadeira eficácia ou demanda do mercado.</p>
+
+            <p>Desafios Tecnológicos: A URSS começou a ficar para trás em termos de inovação e tecnologia em comparação
+                com o Ocidente. Isso impactou negativamente sua competitividade global e sua capacidade de se adaptar às
+                mudanças no cenário econômico mundial.</p>
+
+            <div class="area justificadoEsquerda">
+
+
+                <div class="postit-tp9 w3-pale-yellow ">
+
+                    <p><strong>Questão Reflexiva:</strong> Em que medida a falta de flexibilidade e
+                        adaptabilidade do sistema econômico soviético
+                        contribuiu para seu declínio?</p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <h2>Colapso da União Soviética (1991)</h2>
+
+        <p><strong>Pressões Políticas Internas e Externas</strong>: Fatores como a perestroika (reestruturação) e
+            glasnost (transparência), iniciadas por Mikhail Gorbachev, abriram caminho para mudanças políticas e sociais
+            na União Soviética. Isso permitiu o surgimento de movimentos separatistas em várias repúblicas soviéticas.
+        </p>
+
+        <p><strong>Efeito Dominó</strong>: A queda do Muro de Berlim em 1989 e a subsequente reunificação da Alemanha
+            Ocidental e Oriental sinalizaram o início do fim do bloco comunista na Europa Oriental. Isso inspirou
+            movimentos pró-democracia em toda a região.</p>
+
+        <div class="w3-margin"><img id="imagem9" src="tt10f09.png" alt="tt10f09" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao9"> Fonte: O Globo. </span>
+        </div>
+
+        <p><strong>Declaração da Independência</strong>: Em dezembro de 1991, as repúblicas da União Soviética
+            declararam sua independência, levando ao colapso oficial do país. A Rússia emergiu como seu principal
+            sucessor, adotando uma economia de mercado e uma democracia, embora com muitos desafios.</p>
+
+        <div class="area justificadoDireita">
+
+
+            <div class="postit-tp9 w3-pale-red ">
+
+                <p><strong>Questão Reflexiva:</strong> Como o colapso da União Soviética redefiniu as
+                    relações geopolíticas e econômicas globais, e quais foram as consequências para os países do antigo
+                    bloco
+                    soviético?</p>
+
+            </div>
+
+        </div>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Surgimento de Novos Polos Mundiais de Poder </h2>
+
+
+        <h2>Multipolaridade no Século XXI</h2>
+
+        <p> Ascensão da China: Após o fim da Guerra Fria, a China emergiu como uma potência econômica e política global.
+            Seu rápido crescimento econômico, baseado em uma mistura de economia de mercado e controle estatal, a tornou
+            uma das maiores economias do mundo.</p>
+
+        <div class="w3-margin"><img id="imagem10" src="tt10f10.png" alt="tt10f10" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao10"> Fonte: Organizado pelo autor. </span>
+        </div>
+
+        <p>Rússia Pós-URSS: A Rússia, apesar dos desafios e dificuldades após o colapso da União Soviética, manteve seu
+            status como uma potência nuclear e regional. Sob o governo de Vladimir Putin, a Rússia tem buscado afirmar
+            sua influência em várias regiões do mundo. </p>
+
+        <p>Europa Unida: A União Europeia, formada inicialmente como uma aliança econômica, também emergiu como uma
+            potência política significativa. Sua moeda, o euro, e suas políticas comuns têm fortalecido sua posição no
+            cenário global. </p>
+
+        <p class="postit-tp9"><strong>Questão Reflexiva:</strong> Como a multipolaridade no século XXI influencia as
+            relações internacionais, o comércio global e os desafios geopolíticos enfrentados pelo mundo? </p>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2 id="centralizado">Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Qual era a função dos abrigos nucleares durante a Guerra Fria?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> Os abrigos nucleares eram construídos para proteger a população em caso
+            de ataque nuclear, oferecendo um local seguro para se abrigar contra os efeitos devastadores das explosões.
+        </p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Por que as pessoas costumavam estocar alimentos e suprimentos durante a Guerra Fria?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span> O estocagem de alimentos e suprimentos era comum durante a Guerra Fria
+            devido ao medo de uma possível guerra nuclear ou de um bloqueio econômico, garantindo que as pessoas teriam
+            provisões suficientes em caso de emergência.</p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Como eram as relações diplomáticas entre os Estados Unidos e a União Soviética durante a Guerra Fria?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> Durante a Guerra Fria, as relações entre os Estados Unidos e a União
+            Soviética eram marcadas por tensão e desconfiança mútua, com episódios como a Crise dos Mísseis em Cuba em
+            1962 demonstrando o potencial para um conflito direto.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
+        <br><br>
+
+        <hr>
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+            <h2>Atividade em Grupo: Simulação de Debate Capitalista vs. Comunista</h2>
+
+            <p><strong>Objetivo:</strong> Explorar e compreender as diferenças entre os sistemas econômicos capitalista
+                e comunista, bem como desenvolver habilidades de argumentação e debate.</p>
+
+            <h3>Divisão da Sala:</h3>
+            <p>- Metade dos alunos serão designados como "Capitalistas".</p>
+            <p>- A outra metade dos alunos serão designados como "Comunistas".</p>
+
+            <h3>Papéis dos Alunos:</h3>
+
+            <h4>Capitalistas:</h4>
+            <ul>
+                <li><strong>Empresário:</strong> Defende a liberdade de empreendimento e o papel do mercado na alocação
+                    eficiente de recursos.
+                    <ul>
+                        <li>Argumentos:
+                            <ul>
+                                <li>"No sistema capitalista, as empresas têm liberdade para inovar e competir, o que
+                                    leva a mais opções e produtos para os consumidores."</li>
+                                <li>"A propriedade privada estimula as pessoas a trabalharem mais, sabendo que poderão
+                                    colher os benefícios de seu esforço."</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Economista Capitalista:</strong> Apresenta dados e exemplos de crescimento econômico e
+                    sucesso empresarial no sistema capitalista.
+                    <ul>
+                        <li>Argumentos:
+                            <ul>
+                                <li>"Países com economias capitalistas têm PIB per capita mais alto e uma qualidade de
+                                    vida geralmente melhor para seus cidadãos."</li>
+                                <li>"O mercado livre é eficiente na alocação de recursos, respondendo às demandas dos
+                                    consumidores de forma rápida e eficaz."</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>Comunistas:</h4>
+            <ul>
+                <li><strong>Trabalhador:</strong> Defende a igualdade social e os benefícios do controle estatal dos
+                    meios de produção.
+                    <ul>
+                        <li>Argumentos:
+                            <ul>
+                                <li>"No sistema comunista, todos têm acesso aos mesmos recursos e oportunidades, o que
+                                    reduz as disparidades sociais."</li>
+                                <li>"O controle estatal dos meios de produção garante que os recursos sejam utilizados
+                                    para o bem-estar de toda a sociedade, não apenas para enriquecer alguns poucos."
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Ativista Social:</strong> Apresenta exemplos históricos de desigualdades reduzidas e
+                    programas sociais bem-sucedidos em regimes comunistas.
+                    <ul>
+                        <li>Argumentos:
+                            <ul>
+                                <li>"Sob o sistema comunista, vimos avanços significativos na educação, saúde e moradia
+                                    para todos os cidadãos."</li>
+                                <li>"A distribuição equitativa de recursos garante que ninguém fique para trás e que
+                                    todos tenham acesso aos bens essenciais."</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Etapas da Atividade:</h3>
+            <ol>
+                <li><strong>Introdução (10 minutos):</strong>
+                    <ul>
+                        <li>Explicação breve sobre os sistemas econômicos capitalista e comunista.</li>
+                        <li>Distribuição dos papéis: metade dos alunos como Capitalistas e a outra metade como
+                            Comunistas.</li>
+                    </ul>
+                </li>
+                <li><strong>Preparação (15 minutos):</strong>
+                    <ul>
+                        <li>Cada grupo terá 15 minutos para discutir e planejar seus argumentos.</li>
+                        <li>Devem usar exemplos fornecidos e criar outros argumentos para defender seus sistemas
+                            econômicos.</li>
+                    </ul>
+                </li>
+                <li><strong>Debate (30 minutos):</strong>
+                    <ul>
+                        <li>Os alunos começam o debate, seguindo as regras básicas de discussão.</li>
+                        <li>Cada grupo terá a oportunidade de apresentar seus argumentos e responder aos pontos
+                            levantados pelo outro grupo.</li>
+                        <li>O debate será moderado para garantir que todos tenham a chance de falar.</li>
+                    </ul>
+                </li>
+                <li><strong>Encerramento (10 minutos):</strong>
+                    <ul>
+                        <li>Conclusões finais: cada grupo terá um tempo para apresentar uma conclusão final, reforçando
+                            seus pontos de vista.</li>
+                        <li>Discussão em sala de aula: perguntas e reflexões sobre o debate, o que aprenderam e como
+                            isso se relaciona com a história e a geopolítica.</li>
+                    </ul>
+                </li>
+            </ol>
+
+
+
+        </div>
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'essa atividade foi bem interessante, você já pode finalizar sua lição','6');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+
+    </div>
+
+
+
+ 
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=I3ij-TeP41c&ab_channel=TramaFilmes" target="_blank">
+                    Ponto de Virada: A Bomba e a Guerra Fria | Site oficial da Netflix
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>SANTOS, Milton. <strong>A Natureza do Espaço:</strong> técnica e tempo, razão e emoção. São Paulo: EDUSP,
+            2002.</p>
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2.
+            ed. – São
+            Paulo: Ática, 2013.
+        </p>
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+    </div>
+    <br><br>
+
+    <!-- <script>
+
+    function numButton() {
+        numB++;
+        document.getElementById("numero").innerHTML = numB;
+        console.log(numB);
+    }
+
+    </script> -->
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+
+                // numButton();
+                addProgressBar();
+
+                ApagaButton();
+                RemoveBalancarGlobo();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 14);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+    <script>
+
+        //função para dar zoom no pc
+        function zoomIn(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth + 100) + "px";
+        }
+
+        function zoomOut(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth - 100) + "px";
+        }
+    </script>
+
+
+    <script>
+
+        //função para celular
+        function zoomIn(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth + 100) + "px";
+        }
+
+        function zoomOut(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth - 100) + "px";
+        }
+
+        // Função para cancelar o menu de contexto do navegador
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Eventos de toque para zoom em dispositivos móveis
+        var initialTouch = null;
+
+        function handleTouchStart(e) {
+            initialTouch = e.touches[0];
+        }
+
+        function handleTouchMove(e, idImagem) {
+            if (!initialTouch) {
+                return;
+            }
+
+            var currentTouch = e.touches[0];
+            var diffX = initialTouch.clientX - currentTouch.clientX;
+
+            if (diffX > 10) {
+                zoomIn(idImagem);
+                initialTouch = null;
+            } else if (diffX < -10) {
+                zoomOut(idImagem);
+                initialTouch = null;
+            }
+        }
+
+        function handleTouchEnd() {
+            initialTouch = null;
+        }
+    </script>
+
+    <script>
+
+
+
+        let counter = 0;
+        let firstSelection = "";
+        let secondSelection = "";
+        let cartaNota = "";
+        let contadorCartas = 0;
+
+        const cards = document.querySelectorAll(".cards .card");
+
+        const card = document.querySelectorAll(".card");
+
+        function suffleImage() {
+            card.forEach(c => {
+                const num = [...Array(card.length).keys()];
+                const random = Math.floor(Math.random() * card.length);
+                c.style.order = num[random];
+            });
+        }
+
+        suffleImage();
+
+        cards.forEach((card) => {
+            card.addEventListener("click", () => {
+                if (card.classList.contains("checked") || card.classList.contains("desativado") || card.classList.contains("clicked")) {
+                    // Ignora se o cartão já estiver marcado como "checked", "desativado" ou "clicked"
+                    return;
+                }
+
+                card.classList.add("clicked");
+
+                if (counter === 0) {
+                    firstSelection = card;
+                    counter++;
+                } else if (counter === 1) {
+                    secondSelection = card;
+                    counter = 0;
+
+                    if (firstSelection.getAttribute("data-cards") === secondSelection.getAttribute("data-cards")) {
+                        // Caso de correspondência correta
+                        contadorCartas++;
+                        Play("../audio1.mp3");
+
+                        if (contadorCartas == 6) {
+                            nota += 1;
+                            Play("../audio3.mp3");
+                            contadorCartas = 0;
+                            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                        }
+
+                        firstSelection.classList.add("checked", "desativado");
+                        firstSelection.classList.remove("clicked");
+
+                        secondSelection.classList.add("checked", "desativado");
+                        secondSelection.classList.remove("clicked");
+
+                    } else {
+                        // Caso de correspondência incorreta
+                        firstSelection.classList.add("shake");
+                        secondSelection.classList.add("shake");
+                        Play("../audio2.mp3");
+
+                        setTimeout(() => {
+                            firstSelection.classList.remove("shake", "clicked");
+                            secondSelection.classList.remove("shake", "clicked");
+                        }, 800);
+                    }
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
