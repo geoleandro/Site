@@ -224,8 +224,8 @@ function mostraCinza() {
     desativarBotoes();
     desativarTextos();
     mostrarNota();
-
     mostraBiblio();
+    desativarImagens();
     document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
 
 }
@@ -258,6 +258,17 @@ function desativarTextos() {
 
     }
 }
+
+// Função para aplicar o efeito de escala de cinza em todas as imagens
+function desativarImagens() {
+    var divsImagens = document.querySelectorAll('.w3-margin img.w3-mobile');
+    for (var i = 0; i < divsImagens.length; i++) {
+        divsImagens[i].style.filter = "grayscale(100%)"; // Aplica escala de cinza
+        divsImagens[i].style.transition = "3s"; // Adiciona transição para suavizar
+    }
+}
+
+
 
 // Mostra a bibliografia no final
 function mostraBiblio() {
