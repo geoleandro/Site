@@ -439,6 +439,14 @@
   -ms-transform: rotate(-3deg);
 }
 
+.postit-tp1>a {
+  text-decoration: none;
+}
+
+.postit-tp1>a:hover {
+  text-decoration: underline;
+}
+
 .primeiraLetra {
   font-size: 44px;
   font-family: cursive;
