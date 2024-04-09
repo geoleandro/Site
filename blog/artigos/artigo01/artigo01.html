@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-adsense-account" content="ca-pub-5408157966429216">
+
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>Duvid Blog - 01</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+
+    <style>
+        @font-face {
+
+            src: url('../../../fontes/FreePixel.woff');
+            font-family: pixel, "Oswald";
+        }
+
+
+        body {
+
+            margin: 0 auto;
+            font-family: pixel, Arial, sans-serif;
+            margin-bottom: 60px;
+            background-color: white;
+        }
+
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: pixel, Arial, Helvetica, sans-serif;
+            margin: auto;
+            padding: 10px;
+
+
+
+        }
+
+
+
+        .altura {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+
+            height: auto;
+        }
+
+        .larguraBar {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        /* Estilo padrão */
+        .artigo-texto {
+            max-width: 80%;
+            margin: auto;
+            padding: 0 40px;
+        }
+
+
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 0px;
+            margin-bottom: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+
+
+
+
+        /* Remove o sublinhado do link */
+        .link-artigo {
+            text-decoration: none;
+        }
+
+        .link-artigo:hover {
+            color: #0e8f2e;
+            /* Cor quando passa o mouse por cima */
+        }
+
+        .imagemBlog {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Estilo para o botão de compartilhamento do WhatsApp */
+        .balanco-share {
+            display: inline-block;
+
+            /* Cor de fundo do WhatsApp */
+            color: white;
+            font-size: 16px;
+            padding: 5px 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .balanco-share:hover {
+
+            animation: shake 0.3s ease-in-out;
+
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            50% {
+                transform: translateX(5px);
+            }
+
+            75% {
+                transform: translateX(-3px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+
+        }
+
+        .share-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ;
+            width: 100%;
+            max-width: 100px;
+            /* ajuste conforme necessário */
+            margin: 0 auto;
+        }
+
+        .share-icons a {
+            text-decoration: none;
+            padding: 8px;
+            /* Reduzindo o padding para diminuir o tamanho dos botões */
+            color: #fff;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-size: 12px;
+            /* Ajuste conforme necessário para diminuir o tamanho do texto */
+        }
+
+        .share-icons a.whatsapp {
+            background-color: #25D366;
+            /* verde do WhatsApp */
+        }
+
+        .share-icons a.facebook {
+            background-color: #1877F2;
+            /* azul do Facebook */
+        }
+
+        .share-icons a:hover {
+            opacity: 0.8;
+            /* reduzir a opacidade no hover */
+        }
+
+        .share-icons .button-container {
+            display: inline-block;
+        }
+
+        .share-icons .button-container:first-child {
+            margin-right: 5px;
+            /* Espaço entre os botões */
+        }
+
+        .share-icons .button-container:last-child {
+            margin-left: 5px;
+            /* Espaço entre os botões */
+        }
+
+
+
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 500px) {
+
+
+            .artigo-texto {
+                max-width: 100%;
+                margin: auto;
+                padding: 0 0px;
+            }
+
+            .imagemBlog {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+        }
+
+
+
+
+
+        /* Rodapé */
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            color: #FFF;
+            text-align: center
+        }
+
+        #iconeFooter {
+            width: 32px;
+            height: 32px;
+        }
+
+        .extrafonte {
+            font-size: 5em !important;
+        }
+
+        .margemDireitaBlog {
+            margin-right: 50px !important;
+            /* Altere o valor conforme desejado */
+        }
+
+        .margemEsquerdaBlog {
+            margin-left: 10px !important;
+            /* Altere o valor conforme desejado */
+        }
+
+
+        /* CSS para remover os pontos de uma lista não ordenada */
+        .sem-pontos {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body class="w3-light-grey">
+
+
+
+    <!-- Navigation (Stays on Top) -->
+    <div class="centerBar">
+
+        <!-- Navigation (Stays on Top) -->
+        <div class="w3-top w3-bar w3-black  larguraBar ">
+
+            <a href="../../../index.html" class=" w3-button  margemTop  ">Home</a>
+            <a href="../../../blog/blog.html" class=" w3-button  margemTop  ">Blog</a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="w3-padding-top-48">
+        <div class="w3-white larguraBar w3-padding w3-row">
+
+            <div class="share-icons w3-right w3-margin-right">
+                <div class="button-container">
+                    <button class="w3-green w3-border w3-round-large" name="decrease-font" id="decrease-font"
+                        title="Diminuir fonte">A -</button>
+                </div>
+                <div class="button-container">
+                    <button class="w3-green w3-border w3-round-large" name="increase-font" id="increase-font"
+                        title="Aumentar fonte">A +</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <div class="w3-content" style="max-width:1600px">
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-64 ">
+            <h1 class="extrafonte"><b>Duvid Blog</b></h1>
+            <h3>Bem-vindo ao blog <span class="w3-tag">do Duvid Geografia</span></h3>
+        </header>
+    </div>
+
+
+
+
+
+
+    <div class="w3-container">
+        <h3 class="w3-center w3-margin w3-padding-64">O Duvid Blog procura inspirar uma abordagem de escola criativa,
+            livre de temores
+            e
+            comparações com um padrão ideal.</h3>
+
+    </div>
+
+    
+
+    <div class="w3-row">
+        <div class="w3-container w3-threequarter">
+
+
+            <div class="w3-col  ">
+               
+                    <div class="w3-center imagemBlog">
+                        <img class="w3-hover-opacity w3-card w3-round-large w3-mobile" src="../artigo01/artigo01f01.jpg"
+                            alt="logo" width="100%">
+                    </div>
+              
+
+                <div class="w3-container artigo-texto w3-margin-bottom">
+                    <h2 class="w3-center w3-margin-top w3-margin-bottom">
+
+                        <strong>
+                            5 Razões Pelas Quais Muitos Estudantes
+                            Não Gostam da Escola
+                        </strong>
+
+                    </h2>
+
+                    <p>A escola é um lugar de aprendizado, crescimento e descobertas, mas para muitos estudantes, pode
+                        ser um ambiente desafiador e até mesmo desagradável. Aqui estão cinco razões profundas que podem
+                        explicar por que a maioria dos estudantes não gosta da escola, inspiradas por reflexões sobre
+                        medo, competição e experiências comuns:
+
+
+                    </p>
+
+                    <ul>
+                        <li class="w3-small sem-pontos">Por Leandro Henrique da Silva</li>
+                        <li class="w3-opacity w3-small sem-pontos">7 de abril de 2024.</li>
+                    </ul>
+
+
+
+
+                    <h5><strong>1. Medo do Julgamento</strong></h5>
+                    <p>A escola muitas vezes cria um ambiente de constante avaliação e comparação. Os estudantes são
+                        classificados, pontuados e comparados uns aos outros em termos de desempenho acadêmico. Esse
+                        sistema de avaliação pode instilar um profundo medo do julgamento, levando os estudantes a se
+                        preocuparem excessivamente com suas notas e a se sentirem constantemente pressionados para
+                        alcançar padrões impostos.
+                    </p>
+
+                    <h5><strong>2. Competição Desenfreada</strong></h5>
+                    <p>A competição é uma parte intrínseca do sistema educacional em muitas partes do mundo. Os
+                        estudantes são incentivados a competir entre si por notas, reconhecimento e até mesmo por
+                        atenção dos professores. Isso pode criar um ambiente hostil e desmotivador, onde os colegas são
+                        vistos como adversários em vez de colaboradores. A pressão para superar os outros, em vez de se
+                        concentrar no próprio crescimento, pode ser avassaladora.
+                    </p>
+
+                    <h5><strong>3. Falta de Autonomia e Criatividade</strong></h5>
+                    <p>Em muitas salas de aula, o foco está na memorização e na regurgitação de informações, em vez de
+                        promover a autonomia e a criatividade dos estudantes. O sistema educacional pode sufocar a
+                        curiosidade natural das crianças e jovens, forçando-os a seguir um currículo padronizado que
+                        nem sempre se alinha com seus interesses ou habilidades únicas. Isso pode resultar em
+                        desinteresse
+                        e falta de engajamento.
+                    </p>
+
+                    <h5><strong>4. Ausência de Significado</strong></h5>
+                    <p>Muitos estudantes lutam para encontrar significado nas tarefas e lições que lhes são atribuídas.
+                        Quando as atividades parecem desconectadas da vida real ou não oferecem uma compreensão mais
+                        profunda do mundo ao seu redor, os estudantes podem questionar o propósito de sua educação. A
+                        falta de relevância pode levar à desmotivação e à sensação de estar preso em um ciclo monótono
+                        de aprendizado sem sentido.
+                    </p>
+
+                    <h5><strong>5. Restrição da Individualidade</strong></h5>
+                    <p>Cada estudante é único, com seus próprios interesses, paixões e estilos de aprendizagem. No
+                        entanto, o sistema educacional muitas vezes adota uma abordagem de "tamanho único serve para
+                        todos", ignorando as diferentes necessidades e habilidades dos estudantes. Isso pode fazer com
+                        que os indivíduos se sintam desvalorizados e invisíveis, como se não pudessem expressar
+                        plenamente
+                        quem são.
+                    </p>
+
+                    <p>É fundamental reconhecer essas questões subjacentes para promover uma mudança significativa no
+                        sistema educacional. Ao cultivar um ambiente de aprendizado que valoriza a autenticidade,
+                        colaboração e crescimento pessoal, podemos criar espaços onde os estudantes não apenas
+                        sobrevivam,
+                        mas realmente floresçam.
+                    </p>
+
+                    <p>Lembre-se, como disse Krishnamurti, "Não é sinal de saúde estar bem ajustado a uma sociedade
+                        profundamente doente." Ao abordarmos as razões pelas quais muitos estudantes não gostam da
+                        escola, estamos também questionando e desafiando o status quo em busca de um sistema educacional
+                        mais humano, inclusivo e inspirador.
+
+
+
+
+                    </p>
+
+                    <div class="w3-left">
+
+                        <div class="share-icons ">
+                            <span class="w3-margin-right">Compartilhe:</span>
+                            <a href="https://api.whatsapp.com/send?text=Confira%20este%20artigo%20interessante:%20https://www.duvid.com.br/blog/artigos/artigo01/artigo01.html"
+                                target="_blank" class="whatsapp balanco-share">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <span class="w3-margin-right"></span>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.duvid.com.br/blog/artigos/artigo01/artigo01.html"
+                                target="_blank" class="facebook balanco-share">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    
+                </div>
+                <!-- fim da classe w3-row -->
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- ESPAÇO LATERAL -->
+
+        <!-- Espaço para Outro Anúncio ou Propaganda -->
+        <!-- <div class="w3-quarter w3-container w3-pink">
+            Código do Google AdSense ou outro tipo de anúncio
+            <p>Coloque outro anúncio aqui</p>
+        </div> -->
+
+
+        <div class="w3-container w3-quarter w3-pale-red">
+
+
+            <!-- Tags -->
+            <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-pale-green">
+                    <h4>Tags</h4>
+                </div>
+                <div class="w3-container w3-white">
+                    <p>
+                        <span class="w3-tag w3-black w3-small w3-margin-bottom">Educação</span> <span
+                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filosofia</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Finanças</span> <span
+                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Línguas</span> <span
+                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Viagem</span>
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programação</span> <span
+                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poemas</span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+
+
+
+
+
+            <!-- Inspiration -->
+            <!-- <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-black">
+                    <h4>Inspiration</h4>
+                </div>
+                <div class="w3-row-padding w3-white">
+                    <div class="w3-col s6">
+                        <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
+                        <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
+                    </div>
+                    <div class="w3-col s6">
+                        <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%"
+                                class="w3-grayscale">
+                        </p>
+                        <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
+                    </div>
+                </div>
+            </div>
+            <hr> -->
+
+
+            <!-- FIM DA CLASSE W3-QUARTER -->
+        </div>
+
+        <!-- Espaço para Outro Anúncio ou Propaganda -->
+        <!-- <div class="w3-quarter w3-container w3-pink">
+            Código do Google AdSense ou outro tipo de anúncio
+            <p>Coloque outro anúncio aqui</p>
+        </div> -->
+
+
+        <!-- FIM DA CLASSE ROW -->
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- 
+fim do row -->
+
+    </div>
+
+
+
+
+
+    <footer class="footer w3-black">
+
+        <div class="container">
+
+            <img id="iconeFooter" src="../../../fotoIndex/marcaDuvid.png" alt="icone" class="">
+
+            &copy; Duvid - Geografia 2022.
+
+
+        </div>
+
+    </footer>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

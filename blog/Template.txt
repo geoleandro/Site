@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-adsense-account" content="ca-pub-5408157966429216">
+
+    <link rel="stylesheet" href="../estilos/w3.css">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <title>Duvid Blog</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <meta name="google-adsense-account" content="ca-pub-5408157966429216">
+
+
+
+    <style>
+        @font-face {
+
+            src: url('../fontes/FreePixel.woff');
+            font-family: pixel;
+        }
+
+        body {
+
+            margin: 0 auto;
+            font-family: pixel, Arial, sans-serif, 'Press Start 2P', cursive;
+            margin-bottom: 60px;
+            background-color: white;
+        }
+
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: pixel, Arial, Helvetica, sans-serif;
+            margin: auto;
+            padding: 10px;
+
+
+
+        }
+
+
+        .altura {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+
+            height: auto;
+        }
+
+        .larguraBar {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* .texto {
+      padding: 10px;
+      font-family: pixel;
+    }
+
+    .texto a {
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+
+    .texto a>p:hover {
+      background-color: #a1ee9a81;
+      box-shadow: 2px 2px 2px black;
+
+    } */
+
+        .boxAulas {
+            width: 270px;
+            height: 200px;
+            position: relative;
+            z-index: 50;
+            background-color: rgb(255, 255, 255);
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+
+
+
+
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 8px;
+            margin-bottom: 0px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 50%;
+            padding: 0 8px;
+
+        }
+
+        .column>p {
+            text-align: center;
+            /* color: white; */
+        }
+
+        .column img {
+            margin-top: 16px;
+            vertical-align: middle;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 800px) {
+            .column {
+                flex: 33.3%;
+                max-width: 33.3%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 500px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+
+        }
+
+        .fotoFundo {
+            background-image: url("../../blog/fundoAmarelo.png");
+            /* background-color: rgb(61, 68, 63); */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .corFundoPrimeiro {
+            background-color: #6297cc49;
+        }
+
+        /* 
+    .rodape {
+      display: flex;
+      height: 50px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+
+      font-family: pixel;
+      position: absolute;
+      bottom: 0 0;
+
+    } */
+
+        /* Rodapé */
+
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            color: #FFF;
+            text-align: center
+        }
+
+        #iconeFooter {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+
+</head>
+
+<body class="w3-light-grey">
+
+
+
+    <!-- Navigation (Stays on Top) -->
+    <div class=" w3-bar w3-black  ">
+        <!-- <div class="w3-margin-left"><a href="../index.html" class=" w3-button   ">Home</a></div> -->
+        <!-- <a href="creditos.html" class=" w3-button w3-display-position">Créditos</a> -->
+
+
+
+        <div class="w3-margin-right"> <a href="../index.html" class="w3-bar-item w3-button w3-right">Home</a></div>
+
+    </div>
+
+
+
+    <h1 class="w3-padding-top-64 w3-center">Duvid Blog</h1>
+
+
+    <div class="w3-container larguraBar">
+        <h4>O Duvid Blog procura refletir em favor de uma escola criativa e livre do medo, da competição e da
+            comparação.</h4>
+
+
+    </div>
+
+
+    <div class="row larguraBar w3-padding-32">
+
+        <div class="column">
+
+            <!-- <img class="w3-hover-opacity w3-card w3-round-large" src="../blog/aula01.png" alt="logo" style="width:100%"
+                onclick="ExpandeDiv('div1')"> -->
+
+            <img class="w3-hover-opacity w3-card w3-round-large" src="../blog/blog01/aula01.png" alt="logo"
+                style="width:100%" onclick="window.location.href = '../blog/blog01/blog01.html'">
+
+
+
+
+
+
+            <p>Aula 1: Conceitos geográficos. </p>
+
+            <div class="w3-container">
+
+
+                <div id="div1" class="w3-modal " style="display:none">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom " style="max-width:500px">
+
+
+                        <div class="w3-center w3-padding-48">
+                            <span onclick="document.getElementById('div1').style.display='none'"
+                                class="w3-button w3-xlarge w3-hover-red w3-display-topright "
+                                title="Close Modal">&times;</span>
+
+                            <div class="w3-margin">
+                                <h3>Aula 01</h3>
+                                <strong>Conteúdo:</strong> Conceitos fundamentais da Geografia: Espaço geográfico,
+                                território, lugar,
+                                paisagem e região;
+                                desigualdades socioespaciais.
+
+                            </div>
+
+
+
+
+                            <a href="1ano/Aulas1/Aula01/p1.html"
+                                class="w3-button w3-teal w3-display-bottommiddle  w3-margin w3-center"
+                                style="width:35%">Questões</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- 
+        fim do row -->
+
+    </div>
+
+
+
+    <!-- <footer class="w3-container rodape w3-black">
+    <div class="w3-padding">
+      &copy; Duvid - Geografia 2022.
+    </div>
+  </footer> -->
+
+    <footer class="footer w3-black">
+
+        <div class="container">
+
+            <img id="iconeFooter" src="../fotoIndex/marcaDuvid.png" alt="icone" class="">
+
+            &copy; Duvid - Geografia 2022.
+
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+
+        /* 
+              function togglePanel(id) {
+            
+                var x = document.getElementById(id);
+        
+            
+                if (x.className.indexOf("w3-show") == -1) {
+                  x.className += " w3-show";
+        
+                }
+        
+                else {
+                  x.className = x.className.replace(" w3-show", "");
+        
+                }
+              }
+        */
+
+        // function myFunction(id) {
+        //   var x = document.getElementById(id);
+        //   if (x.className.indexOf("w3-show") == -1) {
+        //     x.className += " w3-show";
+        //   } else {
+        //     x.className = x.className.replace(" w3-show", "");
+        //   }
+        // }
+
+
+
+
+
+
+        function ExpandeDiv(id_cadastro) {
+
+            var qtd_div = document.getElementsByTagName('div').length;
+            var div_sel = document.getElementById(id_cadastro);
+            var todas_divs;
+
+            for (var i = 1; i <= qtd_div; i++) {
+                todas_divs = document.getElementById("div" + i);
+
+                if (todas_divs != null) {
+                    if (todas_divs.id != id_cadastro) {
+                        todas_divs.style.display = 'none';
+
+                    }
+
+                    else {
+                        div_sel.style.display = 'block';
+
+                    }
+
+                }
+            }
+
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
