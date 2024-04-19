@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 14 - A urbanização mundial </title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .postit-tp9 {
+            background: #f5ff9e;
+
+            width: 40%;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+        .imagem-fundo {
+            background-image: url('../../../fotoIndex/cortica.jpg');
+            background-size: auto;
+            background-repeat: inherit;
+            padding: 0px;
+            /* Ajuste conforme necessário */
+        }
+
+
+        /* 
+Css do memory card */
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 14 - A urbanização mundial
+
+        </h1>
+
+
+        <p><strong> Conteúdo:</strong> Urbanização; Metropolização; população urbana; Cidades globais; Megacidades;
+            Êxodo rural. </p>
+
+        <p><strong>Objetivo:</strong> Compreender o processo de urbanização mundial e as transformações do espaço
+            geográfico decorrente da dinâmica da população urbana no mundo.
+        </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula anterior, vimos a dinâmica da agropecuária mundial e os sistemas
+            agrícolas. </p>
+
+        <p>Hoje, veremos o outro lado desse processo através da urbanização, isto é, o crescimento das cidades, das
+            megacidades e megalópoles.</p>
+
+        <p>Nesta aula, exploraremos o que é urbanização, suas causas e consequências, além de analisar exemplos de
+            países e dados atuais para uma visão crítica desse fenômeno.</p>
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    <div class="topico">
+        <h2>Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ul style="list-style-type: none;">
+                <li>
+                    1. Explique o que é urbanização e como ela está relacionada ao crescimento da população nas áreas
+                    urbanas.
+                </li>
+                <li>
+                    2. Cite dois fatores que podem impulsionar a urbanização, de acordo com o texto, e explique como
+                    esses fatores contribuem para o fenômeno.
+                </li>
+                <li>
+                    3. Descreva as consequências da urbanização mencionadas no texto, destacando pelo menos duas áreas
+                    afetadas por esse processo.
+                </li>
+                <li>
+                    4. Com base nos exemplos apresentados no texto, discuta as características e desafios de uma
+                    megalópole e uma megacidade.
+                </li>
+                <li>
+                    5. Por que a urbanização desigual é um tema importante mencionado no texto? Dê exemplos de
+                    disparidades que podem surgir dentro das cidades.
+                </li>
+            </ul>
+        </div>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2>O Que é Urbanização?</h2>
+
+        <p>Dos 7,8 bilhões de habitantes do planeta, 56,2% vivem em áreas urbanas e 43,8% em áreas rurais em 2020. O
+            mundo passou a ser majoritariamente urbano em 2007. A urbanização refere-se ao processo pelo qual uma
+            população cresce em centros urbanos, resultando no aumento da proporção de pessoas que vivem nessas áreas em
+            relação às áreas rurais. </p>
+        <p>
+
+            Ela envolve o desenvolvimento de infraestrutura urbana, como edifícios, estradas,
+            sistemas de transporte, redes de abastecimento de água e energia, entre outros. A urbanização pode ser
+            impulsionada por diversos fatores, como migração, industrialização, modernização agrícola e busca por
+            oportunidades econômicas.
+        </p>
+
+
+
+        <p><strong>Exemplo: China</strong><br>
+            A China é um exemplo impressionante de urbanização acelerada. Nos últimos anos, o país testemunhou um êxodo
+            rural em massa, com milhões de pessoas migrando das áreas rurais para as cidades em busca de trabalho e
+            melhores condições de vida. Cidades como Pequim, Xangai e Guangzhou cresceram exponencialmente, tornando-se
+            centros econômicos globais.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+        <h2>As Cidades: Urbanização e Principais Cidades do Mundo</h2>
+        <p>As cidades são os centros da urbanização, onde a maioria da população mundial vive e trabalha. Elas
+            desempenham um papel vital na economia global, na cultura, na política e no desenvolvimento humano.</p>
+
+        <h3 class="w3-center">Principais aglomerações urbanas no mundo</h3>
+        <div class="w3-margin">
+            <div class="w3-responsive">
+                <table class="w3-table w3-striped w3-centered">
+                    <tr>
+                        <th>Posição</th>
+                        <th>Aglomerado Urbano</th>
+                        <th>País</th>
+                        <th>População (2000)</th>
+                        <th>População (2020)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tóquio</td>
+                        <td>Japão</td>
+                        <td>33,5 milhões</td>
+                        <td>37,4 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Delhi</td>
+                        <td>Índia</td>
+                        <td>15,9 milhões</td>
+                        <td>31,7 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Xangai</td>
+                        <td>China</td>
+                        <td>14,9 milhões</td>
+                        <td>27,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>São Paulo</td>
+                        <td>Brasil</td>
+                        <td>18,4 milhões</td>
+                        <td>22,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cidade do México</td>
+                        <td>México</td>
+                        <td>18,1 milhões</td>
+                        <td>22,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Cairo</td>
+                        <td>Egito</td>
+                        <td>14,1 milhões</td>
+                        <td>21,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Mumbai</td>
+                        <td>Índia</td>
+                        <td>16,5 milhões</td>
+                        <td>20,4 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Pequim</td>
+                        <td>China</td>
+                        <td>13,6 milhões</td>
+                        <td>20,4 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Dhaka</td>
+                        <td>Bangladesh</td>
+                        <td>10,6 milhões</td>
+                        <td>20,0 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Osaka</td>
+                        <td>Japão</td>
+                        <td>16,3 milhões</td>
+                        <td>19,2 milhões</td>
+                    </tr>
+                </table>
+            </div>
+            <span class="w3-small">Fonte:
+                World Urbanization Prospects: The 2018 Revision" do Departamento de Assuntos Econômicos e Sociais da
+                ONU </span>
+        </div>
+
+        <p>Os dados da tabela acima fornecem uma visão geral das megacidades e grandes áreas metropolitanas que têm um
+            papel significativo na urbanização global. Nota-se um crescimento populacional considerável ao longo das
+            duas décadas em todas as aglomerações listadas, refletindo o contínuo processo de urbanização em diversas
+            partes do mundo.</p>
+
+        <div class="w3-margin"><img id="imagem4" src="tt14f04.png" alt="População urbana no mundo - Duvid Geografia"
+                class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao4"> Fonte: https://www.nexojornal.com.br </span>
+
+        </div>
+
+
+
+
+        <h3>Exemplo: Nova Iorque, Estados Unidos</h3>
+        <p>Nova Iorque é um exemplo de cidade global que exerce uma influência significativa em escala mundial. É um
+            centro financeiro, cultural e de mídia, abrigando a Bolsa de Valores de Nova Iorque, a sede das Nações
+            Unidas e uma vibrante cena artística.</p>
+
+
+
+
+        <h3>Centralidade Urbana</h3>
+        <p>A centralidade urbana refere-se à concentração de atividades, como comércio, serviços, lazer e cultura, no
+            centro das cidades. Isso cria um núcleo dinâmico e movimentado, mas também pode levar a problemas de
+            congestionamento, poluição e desigualdade.</p>
+        <ul>
+            <li>
+                <p>Times Square, Nova Iorque, EUA</p>
+                <p>Um dos ícones mundiais de centralidade urbana, Times Square é conhecida por suas luzes brilhantes,
+                    teatros da Broadway, lojas de varejo, restaurantes e uma atmosfera vibrante que atrai milhões de
+                    turistas todos os anos.</p>
+
+            </li>
+        </ul>
+
+        <div class="w3-margin"><img id="imagem5" src="tt14f05.png"
+                alt="Times Square, Nova Iorque, EUA - Duvid Geografia" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao5"> Fonte: Pexels. Time Square, Nova Iorque, Estados
+                Unidos. </span>
+        </div>
+
+        <ul>
+            <li>
+                <p>Shibuya, Tóquio, Japão</p>
+                <p>Shibuya é um distrito movimentado de Tóquio, famoso por sua enorme interseção de pedestres (Shibuya
+                    Crossing), lojas de moda, restaurantes, cafés e vida noturna agitada. É um centro cultural e
+                    comercial da cidade.</p>
+
+            </li>
+        </ul>
+
+        <div class="w3-margin"><img id="imagem3" src="tt14f03.png"
+                alt="Distrito de Shibuya, Tóquio, Japão - Duvid Geografia" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao3"> Fonte: Pexels. Distrito de Shibuya, Tóquio, Japão.
+            </span>
+
+        </div>
+
+        <ul>
+            <li>
+                <p>Xangai, China</p>
+                <p>Xangai é uma aglomeração urbana vibrante na China, conhecida por sua paisagem urbana impressionante,
+                    centros comerciais luxuosos e uma mistura de arquitetura moderna e histórica. A cidade é um
+                    importante centro financeiro e cultural, oferecendo uma variedade de opções para entretenimento,
+                    compras e gastronomia. Entre os destaques de Xangai estão a Torre Pérola Oriental, o Bund à
+                    beira-rio com seus edifícios históricos, o moderno distrito de Pudong com arranha-céus imponentes,
+                    além de uma vida noturna diversificada e movimentada. Xangai é um exemplo fascinante de urbanização
+                    acelerada, representando o dinamismo e a modernidade da China contemporânea.</p>
+
+            </li>
+        </ul>
+
+        <div class="w3-margin"><img id="imagem9" src="tt14f09.png" alt="Xangai, China - Duvid Geografia "
+                class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao9"> Fonte: Pexels. Xangai, China. </span>
+
+        </div>
+
+        <div class="area w3-margin-bottom">
+
+            <div class="postit w3-large ">
+
+                <p>Como a centralidade urbana impacta a vida dos cidadãos em termos de acesso a serviços e qualidade de
+                    vida?
+                </p>
+            </div>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <div class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-padding">
+
+            <h2>As Consequências da Urbanização</h2>
+            <p>A urbanização tem consequências profundas para o meio ambiente, a sociedade e a economia. Isso inclui
+                questões como poluição do ar e da água, pressão sobre os recursos naturais, aumento da demanda por
+                habitação e serviços, desigualdade social e problemas de saúde pública.</p>
+
+            <h3>Exemplo: São Paulo, Brasil</h3>
+            <p>São Paulo é uma megacidade que enfrenta desafios significativos devido à urbanização rápida e
+                desordenada. A poluição do ar, o congestionamento do tráfego e a falta de espaços verdes são algumas das
+                questões críticas que a cidade enfrenta.</p>
+
+            <div class="w3-margin"><img id="imagem6" src="tt14f06.png"
+                    alt="Cidade de São Paulo, Brasil - Duvid Geografia" class="w3-mobile">
+
+                <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Pexels. Cidade de São Paulo, Brasil. </span>
+
+            </div>
+
+
+            <h3>Rede Urbana, Conurbação e Áreas Metropolitanas</h3>
+            <p>A rede urbana refere-se à interconexão de cidades e centros urbanos por meio de fluxos de pessoas,
+                mercadorias e informações. A conurbação é o processo pelo qual áreas urbanas vizinhas crescem e se
+                fundem, formando extensas regiões metropolitanas.</p>
+
+            <h4>Exemplo: BosWash, Estados Unidos</h4>
+            <p>A região de BosWash é um exemplo de conurbação, estendendo-se ao longo da costa leste dos Estados Unidos
+                e englobando cidades como Boston, Nova Iorque, Filadélfia e Washington, D.C. Essa região forma uma das
+                maiores e mais importantes áreas metropolitanas do mundo.</p>
+
+            <div class="w3-margin"><img id="imagem7" src="tt14f07.png"
+                    alt="BosWash conurbação nos Estados Unidos - Duvid Geografia" class="w3-mobile">
+
+                <span class="w3-small w3-margin-left" id="citacao7"> Fonte: Histoire Géographie: Le monde d’aujourd’hui.
+                    Paris: Hachette Éducation, 2003. </span>
+            </div>
+
+
+
+            <h3>Megalópoles e Megacidades</h3>
+            <p>Megalópoles são regiões altamente urbanizadas que se estendem por centenas de quilômetros, conectando
+                várias cidades e áreas metropolitanas. Megacidades são centros urbanos com mais de 10 milhões de
+                habitantes.</p>
+
+            <div class="w3-margin"><img id="imagem1" src="tt14f01.png" alt="Megacidade no mundo - Duvid Geografia"
+                    class="w3-mobile">
+
+                <span class="w3-small w3-margin-left" id="citacao1">Fonte: Fonte: Vesentini (2013). </span>
+
+            </div>
+
+            <h4>Exemplo: Baiyue Dianchi, China</h4>
+            <p>Baiyue Dianchi é uma megalópole em formação na região do Delta do Rio das Pérolas, na China.
+                Compreendendo cidades como Cantão, Shenzhen, Hong Kong e Macau, essa região é uma das áreas
+                metropolitanas mais densamente povoadas do mundo.</p>
+
+
+            <div class="w3-margin"><img id="imagem10" src="tt14f10.png" alt="Mapa da China - Duvid Geografia"
+                    class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao10"> </span>
+            </div>
+
+
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <div class="w3-panel w3-light-grey w3-leftbar w3-grey w3-padding">
+            <h2>A Urbanização Desigual</h2>
+            <p>A urbanização nem sempre é um processo equitativo, e muitas vezes vemos disparidades significativas na
+                distribuição de recursos, infraestrutura e oportunidades dentro das cidades.</p>
+
+
+
+            <div class="w3-margin"><img id="imagem2" src="tt14f02.png"
+                    alt="Áreas metropolitanas com dez milhões de habitantes ou mais no mundo - Duvid Geografia"
+                    class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao2"> </span>
+            </div>
+
+
+
+            <div class="area w3-margin-bottom">
+
+                <div class="postit w3-large ">
+
+                    <p><strong>Exemplo</strong>:<br>
+
+                        <span class="w3-green">Acesso à áreas verdes:</span> Em uma cidade, pode haver parques bem
+                        cuidados e acessíveis em bairros nobres, com uma média de 10 m² de área verde por habitante,
+                        enquanto em áreas mais pobres, a média pode ser de apenas 1 m² por habitante.
+                    </p>
+                </div>
+            </div>
+
+
+            <h4>Êxodo Rural e Urbanização na Economia, Política e Cultura</h4>
+            <p>O êxodo rural é o movimento de pessoas das áreas rurais para as urbanas. Isso pode ter implicações
+                profundas na economia, política e cultura de um país.</p>
+
+            <h5>Exemplo: Índia</h5>
+            <p>A Índia é um exemplo de um país onde o êxodo rural tem sido um fenômeno marcante. Cidades como Mumbai e
+                Nova Delhi experimentaram um rápido crescimento populacional devido à migração de áreas rurais. Isso
+                levanta questões sobre moradia, infraestrutura e serviços básicos.</p>
+
+
+            <div class="w3-margin"><img id="imagem8" src="tt14f08.png" alt="Nova Delho, Índia" class="w3-mobile">
+
+                <span class="w3-small w3-margin-left" id="citacao8"> Fonte: Ohttps://www.archdaily.com.br </span>
+
+            </div>
+
+            <h4>Urbanização e Industrialização</h4>
+            <p>A urbanização frequentemente coincide com o processo de industrialização, à medida que as cidades se
+                tornam centros de produção e comércio.</p>
+
+            <h5>Exemplo: Inglaterra durante a Revolução Industrial</h5>
+            <p>Durante a Revolução Industrial, cidades como Manchester e Birmingham na Inglaterra se expandiram
+                rapidamente devido à concentração de fábricas e indústrias. Isso resultou em condições de trabalho
+                precárias e problemas de poluição.</p>
+
+            <h3>Conclusão:</h3>
+            <p>A urbanização é um fenômeno complexo e multifacetado que molda o nosso mundo de maneiras profundas. Ao
+                compreender suas causas, consequências e impactos, podemos buscar abordagens mais equitativas e
+                sustentáveis para o desenvolvimento urbano.</p>
+
+
+            <div class="area w3-margin-bottom">
+
+                <div class="postit w3-large ">
+
+                    <p>Como podemos promover uma urbanização mais sustentável e inclusiva em um mundo cada vez mais
+                        urbano?
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2 id="centralizado">"A pergunta não é uma marca de ignorância, mas sim um sinal de inteligência."
+            (Sócrates).</h2>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Quais são os principais fatores que impulsionam a urbanização em países em desenvolvimento?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> Os principais fatores que impulsionam a urbanização em países em
+            desenvolvimento incluem o êxodo rural, migração interna em busca de oportunidades de emprego e melhoria
+            de vida, industrialização e concentração de serviços e infraestrutura nas áreas urbanas.</p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Quais são os desafios enfrentados pelas megacidades em relação à infraestrutura e qualidade de vida?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span> As megacidades enfrentam desafios como congestionamento do tráfego,
+            falta de moradia acessível, poluição do ar e da água, infraestrutura insuficiente para atender a uma
+            população em rápido crescimento e desigualdade socioeconômica.</p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Como a urbanização desigual pode impactar a coesão social e a segurança nas cidades?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span> A urbanização desigual pode levar à formação de áreas segregadas,
+            com disparidades significativas em termos de acesso a serviços básicos, oportunidades de emprego e
+            educação. Isso pode resultar em tensões sociais, aumento da criminalidade e falta de coesão comunitária.
+        </p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
+        <br><br>
+
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+
+        <h2>Atividade: "Desigualdades Urbanas ao Redor do Mundo"</h2>
+        <p><strong>Objetivo da Atividade:</strong> Observar e discutir as desigualdades entre áreas urbanas ao redor do
+            mundo, destacando o que outras cidades têm e o que a nossa não tem.</p>
+
+        <h3>Materiais Necessários:</h3>
+        <ul>
+            <li>Papel ou quadro branco para a lousa</li>
+            <li>Canetas coloridas ou giz</li>
+        </ul>
+
+        <h3>Passo 1: Escolha uma Cidade Internacional</h3>
+        <p>Escolha uma cidade internacional famosa, como Nova Iorque, Tóquio, Londres, Paris, etc.</p>
+
+        <h3>Passo 2: Identifique as Diferenças</h3>
+
+        <p><strong>Em Grupos (3-5 alunos):</strong> Escolham uma cidade internacional.</p>
+        <ul>
+            <li>Listem (15 minutos): Anotem o que essa cidade tem e a nossa não tem.</li>
+            <li><strong>Exemplo:</strong></li>
+        </ul>
+        <ul>
+            <li><strong>O Que Nova Iorque Tem e a Nossa Cidade Não Tem:</strong></li>
+        </ul>
+
+        <ul>
+            <li>Central Park</li>
+            <li>Estátua da Liberdade</li>
+            <li>Metrô 24 horas</li>
+            <li>Broadway</li>
+            <li>Empire State Building</li>
+            <li>Times Square</li>
+            <li>Museu de Arte Moderna (MoMA)</li>
+            <li>Evento do Ano-Novo na Times Square</li>
+            <li>Diversidade de restaurantes e culinária internacional</li>
+            <li>Wall Street</li>
+        </ul>
+        <ul>
+            <li><strong>O Que Nossa Cidade Tem e Nova Iorque Não Tem:</strong></li>
+        </ul>
+
+
+        <ul>
+            <li>Parque Municipal</li>
+            <li>Monumento aos Fundadores</li>
+            <li>Ônibus Turístico</li>
+            <li>Festival de Música Anual</li>
+            <li>Praça do Comércio</li>
+            <li>Praia Urbana</li>
+            <li>Feira de Artesanato Mensal</li>
+            <li>Ciclovias pela Cidade</li>
+            <li>Semáforos com Tempo de Espera</li>
+        </ul>
+        
+
+        <h3>Passo 3: Compare com a Nossa Cidade</h3>
+        <p>Listem o que a nossa cidade tem e a escolhida não tem.</p>
+        <p><strong>Pensem (Reflexão):</strong> Como essas diferenças refletem as desigualdades entre áreas urbanas?</p>
+
+        <h3>Passo 4: Apresentação e Adição na Lousa</h3>
+        <p><strong>Apresentem (15 minutos):</strong> Na lousa, destaquem as diferenças entre as cidades.</p>
+        <p><strong>Adicionem (Outros Grupos):</strong> Se notarem mais diferenças, adicionem à lista na lousa.</p>
+
+        <h3>Passo 5: Reflexão Individual (10 minutos)</h3>
+        <p><strong>Refletirem (Individuais):</strong> Escrevam como se sentem ao perceber essas diferenças.</p>
+        <p><strong>Reflexionem (Sobre):</strong> O que isso significa para vocês?</p>
+
+        <h3>Passo 6: Discussão Final (10 minutos)</h3>
+        <p><strong>Conversem (Todos Juntos):</strong> Como podemos diminuir essas desigualdades?</p>
+        <p><strong>Pensem (Juntos):</strong> Ideias para cidades mais justas e inclusivas.</p>
+
+        <h3>Discussão em Grupo:</h3>
+        <ul>
+            <li><strong>Importância (Reflexão):</strong> Por que é importante comparar essas características?</li>
+            <li><strong>Impacto (Consciência):</strong> Como essas diferenças afetam a vida nas cidades?</li>
+            <li><strong>Ação (Ideias):</strong> O que podemos fazer para uma cidade mais igual e acessível?</li>
+        </ul>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
+
+
+
+
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+        <div class="imagem-fundo w3-mobile">
+
+
+         
+
+            <div class="area">
+
+
+                <div class="postit-tp9 w3-margin-right ">
+
+                    <a href="https://brasil.un.org/pt-br/188520-onu-habitat-popula%C3%A7%C3%A3o-mundial-ser%C3%A1-68-urbana-at%C3%A9-2050" target="_blank">
+                        ONU-Habitat: população mundial será 68% urbana até 2050
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>SANTOS, Milton. <strong>A Natureza do Espaço:</strong> técnica e tempo, razão e emoção. São Paulo: EDUSP,
+            2002.</p>
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2.
+            ed. – São
+            Paulo: Ática, 2013.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+    <!-- <script>
+
+    function numButton() {
+        numB++;
+        document.getElementById("numero").innerHTML = numB;
+        console.log(numB);
+    }
+
+    </script> -->
+
+
+
+    <script>
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+
+                // numButton();
+                addProgressBar();
+
+                ApagaButton();
+                RemoveBalancarGlobo();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 10);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

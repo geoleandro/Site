@@ -1,0 +1,125 @@
+
+.postit {
+    background: #ffffa5;
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    font-family: pixel;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    line-height: 20px;
+    position: relative;
+    font-size: 24px;
+    box-shadow: 2px 4px 6px #444;
+    -moz-box-shadow: 2px 4px 6px #444;
+    -webkit-box-shadow: 2px 4px 6px #444;
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+  }
+  
+  .postit>a {
+    text-decoration: none;
+  }
+  
+  .postit>a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+.postit-tp1 {
+    background: #ca57ff;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    font-family: pixel;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    line-height: 20px;
+    margin: center;
+    position: relative;
+    Color: white;
+    font-size: 20px;
+    box-shadow: 2px 4px 6px #444;
+    -moz-box-shadow: 2px 4px 6px #444;
+    -webkit-box-shadow: 2px 4px 6px #444;
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+  }
+  
+  .postit-tp1>a {
+    text-decoration: none;
+  }
+  
+  .postit-tp1>a:hover {
+    text-decoration: underline;
+  }
+
+
+  
+
+  .postit-tp9 {
+    background: #f5ff9e;
+
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    font-family: pixel;
+    margin-bottom: 60px;
+    margin-top: 60px;
+
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    Color: rgb(0, 0, 0);
+    font-size: 18px;
+    box-shadow: 2px 4px 6px #444;
+    -moz-box-shadow: 2px 4px 6px #444;
+    -webkit-box-shadow: 2px 4px 6px #444;
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+}
+
+.postit-tp9>a {
+    text-decoration: none;
+}
+
+.postit-tp9>a:hover {
+    text-decoration: underline;
+}
+
+
+.area {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+  }
+
+  
+.justificadoDireita {
+    display: flex;
+    justify-content: right;
+    position: relative
+  }
+  
+  
+  .justificadoEsquerda {
+    display: flex;
+    justify-content: left;
+    position: relative
+  }
+  
+  

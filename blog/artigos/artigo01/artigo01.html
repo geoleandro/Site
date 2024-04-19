@@ -19,7 +19,11 @@
 
     <script src="../../../estilos/jstextos.js" defer></script>
 
-    <title>Duvid Blog - 01</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+     crossorigin="anonymous"></script>
+
+    <title>Duvid Blog 01 - 5 Razões Pelas Quais Muitos Estudantes
+        Não Gostam da Escola</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -76,13 +80,20 @@
 
         /* Estilo padrão */
         .artigo-texto {
-            max-width: 80%;
+            max-width: 70%;
             margin: auto;
-            padding: 0 40px;
+            padding: 0 20px;
+
+        }
+
+        .imagemBlog {
+            width: 65%;
+            margin: 0 auto;
         }
 
 
 
+       
 
         .row {
             display: flex;
@@ -108,10 +119,7 @@
             /* Cor quando passa o mouse por cima */
         }
 
-        .imagemBlog {
-            width: 80%;
-            margin: 0 auto;
-        }
+       
 
         /* Estilo para o botão de compartilhamento do WhatsApp */
         .balanco-share {
@@ -206,10 +214,28 @@
         }
 
 
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 1200px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
 
+            .artigo-texto {
+                max-width: 100%;
+                margin: auto;
+                padding: 0 60px;
+
+            }
+
+            .imagemBlog {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
 
         /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
 
 
             .artigo-texto {
@@ -282,10 +308,12 @@
     <div class="centerBar">
 
         <!-- Navigation (Stays on Top) -->
-        <div class="w3-top w3-bar w3-black  larguraBar ">
+        <div class="w3-top w3-bar w3-black   ">
 
             <a href="../../../index.html" class=" w3-button  margemTop  ">Home</a>
             <a href="../../../blog/blog.html" class=" w3-button  margemTop  ">Blog</a>
+            <a href="../../../paginas/sobre.html" class=" w3-button  margemTop  ">Sobre</a>
+
 
 
         </div>
@@ -297,7 +325,7 @@
 
 
     <div class="w3-padding-top-48">
-        <div class="w3-white larguraBar w3-padding w3-row">
+        <div class="w3-white  w3-padding w3-row">
 
             <div class="share-icons w3-right w3-margin-right">
                 <div class="button-container">
@@ -311,7 +339,7 @@
             </div>
         </div>
 
-        
+
     </div>
 
 
@@ -319,7 +347,7 @@
         <!-- Header -->
         <header class="w3-container w3-center w3-padding-64 ">
             <h1 class="extrafonte"><b>Duvid Blog</b></h1>
-            <h3>Bem-vindo ao blog <span class="w3-tag">do Duvid Geografia</span></h3>
+            <h3>Bem-vindo ao blog do <span class="w3-tag">Duvid Geografia</span></h3>
         </header>
     </div>
 
@@ -329,26 +357,27 @@
 
 
     <div class="w3-container">
-        <h3 class="w3-center w3-margin w3-padding-64">O Duvid Blog procura inspirar uma abordagem de escola criativa,
-            livre de temores
-            e
-            comparações com um padrão ideal.</h3>
+        <h4 class="w3-center w3-margin w3-padding-64">"Não é sinal de saúde estar bem ajustado a uma sociedade profundamente doente."
+            <p class="w3-medium">Krishnamurti.</p>
+        </h4>
 
+        
     </div>
 
-    
+  
+
 
     <div class="w3-row">
         <div class="w3-container w3-threequarter">
 
 
             <div class="w3-col  ">
-               
-                    <div class="w3-center imagemBlog">
-                        <img class="w3-hover-opacity w3-card w3-round-large w3-mobile" src="../artigo01/artigo01f01.jpg"
-                            alt="logo" width="100%">
-                    </div>
-              
+
+                <div class="w3-center imagemBlog">
+                    <img class="w3-hover-opacity w3-card w3-round-large w3-mobile" src="../artigo01/artigo01f01.jpg"
+                        alt="logo" width="100%">
+                </div>
+
 
                 <div class="w3-container artigo-texto w3-margin-bottom">
                     <h2 class="w3-center w3-margin-top w3-margin-bottom">
@@ -435,7 +464,7 @@
 
                     </p>
 
-                    <div class="w3-left">
+                    <div class="w3-left w3-margin-left">
 
                         <div class="share-icons ">
                             <span class="w3-margin-right">Compartilhe:</span>
@@ -454,7 +483,7 @@
 
 
 
-                    
+
                 </div>
                 <!-- fim da classe w3-row -->
             </div>
@@ -471,33 +500,44 @@
         <!-- ESPAÇO LATERAL -->
 
         <!-- Espaço para Outro Anúncio ou Propaganda -->
-        <!-- <div class="w3-quarter w3-container w3-pink">
-            Código do Google AdSense ou outro tipo de anúncio
-            <p>Coloque outro anúncio aqui</p>
-        </div> -->
+       
+
+       
+        <div class="w3-container w3-quarter w3-white w3-round-large">
 
 
-        <div class="w3-container w3-quarter w3-pale-red">
-
-
-            <!-- Tags -->
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-pale-green">
-                    <h4>Tags</h4>
-                </div>
-                <div class="w3-container w3-white">
-                    <p>
-                        <span class="w3-tag w3-black w3-small w3-margin-bottom">Educação</span> <span
-                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filosofia</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Finanças</span> <span
-                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Línguas</span> <span
-                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Viagem</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programação</span> <span
-                            class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poemas</span>
-                    </p>
-                </div>
+           <!-- Tags -->
+           <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+                <h4>Tags</h4>
             </div>
-            <hr>
+            <div class="w3-container w3-white">
+                <p>
+
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Arte</span>
+
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Educação</span>
+                    
+                    <span  class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filosofia</span>
+
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Finanças</span> 
+
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jogos digitais</span> 
+                    
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Línguas</span>
+
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programação</span>
+
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poemas</span>
+
+                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Viagens</span>
+
+                    
+                </p>
+            </div>
+        </div>
+        <hr>
+
 
 
 

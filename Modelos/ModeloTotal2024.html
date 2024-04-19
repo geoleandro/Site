@@ -336,6 +336,20 @@ Css do memory card */
 
 
 
+    <h2 id="sumario">Sumário</h2>
+    <ul>
+        <li><a href="#comentario">Comentário</a></li>
+        <li><a href="#checkbox">Checkbox</a></li>
+        <li><a href="#flashcards">Flashcards</a></li>
+        <li><a href="#imagemzoom">Imagem zoom</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#painelgrayscale">Painel grayscale</a></li>
+        <li><a href="#tabelas">Tabelas</a></li>
+
+
+        <!-- Adicione mais itens conforme necessário -->
+    </ul>
+
 
 
 
@@ -364,17 +378,17 @@ Css do memory card */
     </div>
 
 
-    
+
     insira o texto acima no código abaixo:
 
     <div class="topico">
 
-        <h2> Lorem, ipsum dolor sit </h2>
+        <h2> </h2>
 
 
 
-    
-               <p> </p>
+
+        <p> </p>
 
         <p> </p>
 
@@ -432,18 +446,32 @@ Css do memory card */
 
     </div>
 
+    <div class="topico">
+
+        <h2 id="comentario">Inserir comentário na frase</h2>
+        <a href="#sumario">
+            <p>Voltar ao sumário:</p>
+        </a>
+
+        <p>Lorem Quis commodi sit omnis, tempora obcaecati
+            tempore.
+            <!-- inserir comentário -->
+            <span
+                onclick="this.innerHTML='conjuntura (combinação ou concorrência de acontecimentos ou eventos num dado momento; circunstância, situação.)'"><mark>conjuntura</mark></span>
+            internacional.
+        </p>
 
 
-
-
-
-
+    </div>
 
 
 
     <div class="topico">
 
-        <h2>subtitulo </h2>
+        <h2 id="painelgrayscale">Painel grayscale</h2>
+        <a href="#sumario">
+            <p>Voltar ao sumário:</p>
+        </a>
 
         <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
 
@@ -453,42 +481,32 @@ Css do memory card */
 
             <p> <img src="tt02f08.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">Lorem
                 ipsum
-                dolor sit amet consectetur adipisicing elit. Sapiente, consequuntur illo asperiores accusamus ea
-                exercitationem adipisci accusantium id dolore? Adipisci earum labore provident dolores possimus sit
-                officiis, fuga aspernatur asperiores?</p>
-
+                dolor sit ?</p>
 
 
 
         </div>
 
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum ipsa, quasi enim iusto excepturi
-            architecto, molestias vero nobis aspernatur itaque voluptates voluptatem voluptatibus beatae debitis
-            voluptas nemo quidem cum.</p>
+
+        <h2 id="painelexplicativo">Painel explicativo</h2>
+        <a href="#sumario">
+            <p>Voltar ao sumário:</p>
+        </a>
 
 
-        <div class="w3-margin"><img id="imagem1" src="ts02f01.png" alt="ts02f01" class="w3-mobile">
+        <p> Clique para abrir o <span onclick="document.getElementById('painel').style.display='block'"
+                class="w3-yellow">paínel</span> na mesma tela. </p>
 
 
-            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: Fonte: https://novaescola.org.br.
-                Acesso em: 03 jul. 2022.
-            </span>
-        </div>
-
-
-
-
-        <p> Lorem <span onclick="document.getElementById('arquipelago').style.display='block'"
-                class="w3-yellow">arquipélago</span> Lorem </p>
-
-
-        <div id="arquipelago" class="w3-modal w3-margin-top">
+        <div id="painel" class="w3-modal w3-margin-top">
             <div class="w3-modal-content">
                 <div class="w3-container w3-padding">
-                    <span onclick="document.getElementById('arquipelago').style.display='none'"
+                    <span onclick="document.getElementById('painel').style.display='none'"
                         class="w3-button w3-red w3-display-topright">&times;</span>
-                    <p>Lorem i. <span class="w3-small">Mílton Santos. A Urbanização
+                    <p>Lorem i.
+
+                        <span class="w3-small">Mílton Santos. A Urbanização
                             brasileira, 1993. Adaptado</span>.
                     </p>
 
@@ -497,13 +515,7 @@ Css do memory card */
         </div>
 
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellendus, suscipit aliquid ut eos
-            aliquam, facilis minima sint totam maiores unde inventore libero! Quis commodi sit omnis, tempora obcaecati
-            tempore.
-            <span
-                onclick="this.innerHTML='conjuntura (combinação ou concorrência de acontecimentos ou eventos num dado momento; circunstância, situação.)'"><mark>conjuntura</mark></span>
-            internacional.
-        </p>
+    </div>
 
 
 
@@ -511,14 +523,16 @@ Css do memory card */
 
 
 
-        <div class="w3-margin"><img id="imagem10" src="ts02f010.png" alt="ts02f010" class="w3-mobile">
 
-            <span class="w3-small">https://www.labgis.uerj.br/noticias/
-                populacao-estimada-do-pais-chega-a-2133-milhoes-de-habitantes-em-2021. Acesso em: 10 jul. 2022.</span>
 
-        </div>
 
     <div class="topico">
+
+
+        <h2 id="tabelas">Tabelas</h2>
+        <a href="#sumario">
+            <p>Voltar ao sumário:</p>
+        </a>
 
         <div class="w3-margin">
             <table class="w3-table w3-striped w3-centered">
@@ -530,7 +544,7 @@ Css do memory card */
                 </tr>
                 <tr>
                     <td>(1) </td>
-                    <td>Região Sudeste</td>
+                    <td>Região S udeste</td>
                     <td>89.632.912 </td>
                     <td>42,04% </td>
                 </tr>
@@ -562,7 +576,8 @@ Css do memory card */
                     <td>7,79% </td>
                 </tr>
             </table>
-            <span class="w3-small">IBGE. Estimativa Populacional 2021.(PDF). FTP IBGE. ibge.gov.br. Acesso em: 10 jul.
+            <span class="w3-small">IBGE. Estimativa Populacional 2021.(PDF). FTP IBGE. ibge.gov.br. Acesso em: 10
+                jul.
                 2022.</span>
         </div>
 
@@ -575,18 +590,121 @@ Css do memory card */
     </div>
 
 
+    <!-- tabela responsiva -->
+
+    <div class="topico">
+
+        <h2 class="w3-center">Produção Mundial de Alimentos</h2>
+        <div class="w3-margin">
+            <div class="w3-responsive">
+                <table class="w3-table w3-striped w3-centered">
+                    <tr>
+                        <th>Posição</th>
+                        <th>Aglomerado Urbano</th>
+                        <th>País</th>
+                        <th>População (2000)</th>
+                        <th>População (2020)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tóquio</td>
+                        <td>Japão</td>
+                        <td>33,5 milhões</td>
+                        <td>37,4 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Delhi</td>
+                        <td>Índia</td>
+                        <td>15,9 milhões</td>
+                        <td>31,7 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Xangai</td>
+                        <td>China</td>
+                        <td>14,9 milhões</td>
+                        <td>27,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>São Paulo</td>
+                        <td>Brasil</td>
+                        <td>18,4 milhões</td>
+                        <td>22,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cidade do México</td>
+                        <td>México</td>
+                        <td>18,1 milhões</td>
+                        <td>22,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Cairo</td>
+                        <td>Egito</td>
+                        <td>14,1 milhões</td>
+                        <td>21,1 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Mumbai</td>
+                        <td>Índia</td>
+                        <td>16,5 milhões</td>
+                        <td>20,4 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Pequim</td>
+                        <td>China</td>
+                        <td>13,6 milhões</td>
+                        <td>20,4 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Dhaka</td>
+                        <td>Bangladesh</td>
+                        <td>10,6 milhões</td>
+                        <td>20,0 milhões</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Osaka</td>
+                        <td>Japão</td>
+                        <td>16,3 milhões</td>
+                        <td>19,2 milhões</td>
+                    </tr>
+                </table>
+            </div>
+            <span class="w3-small">Fonte:
+                World Urbanization Prospects: The 2018 Revision" do Departamento de Assuntos Econômicos e Sociais da
+                ONU </span>
+        </div>
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
 
 
 
 
 
+    <h2 id="flashcards">flashcards</h2>
+    <a href="#sumario">
+        <p>Voltar ao sumário:</p>
+    </a>
+    <!-- Flashcards -->
 
     <div class="topico">
 
         <p class="caixa">Reforce seu conhecimento</p>
 
         <div class="container">
-            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na aula
+            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na
+                aula
                 de hoje:
             </h4>
             <!-- <div class="w3-margin">Acertos: <span id="score">0</span></div> -->
@@ -644,10 +762,6 @@ Css do memory card */
 
 
 
-
-
-
-
             </div>
         </div>
 
@@ -664,8 +778,30 @@ Css do memory card */
     </div>
 
 
+    <h2 id="imagemzoom">flashcards</h2>
+    <a href="#sumario">
+        <p>Voltar ao sumário:</p>
+    </a>
+    <!-- Imagem zoom -->
 
+    <div class="topico">
 
+        <div class="w3-container">
+            <h2>W3.CSS Modal Image</h2>
+            <p>Click on the image to display it in full size:</p>
+
+            <img src="../blog/capaBlog.jpg" style="width:30%;cursor:zoom-in"
+                onclick="document.getElementById('modal01').style.display='block'">
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                    <img src="../blog/capaBlog.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -674,9 +810,6 @@ Css do memory card */
     <div class="topico">
 
         <h2> Lorem ipsum dolor sit amet </h2>
-
-
-
 
 
         <p>consectetur adipisicing elit. Tenetur modi error molestiae, quae nesciunt, reprehenderit in dignissimos
@@ -691,25 +824,30 @@ Css do memory card */
             <ul>
                 <li>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint aliquam veritatis odio at,
-                    impedit fugit deleniti obcaecati dicta est tempora quibusdam nisi laborum error quae! Doloribus fuga
+                    impedit fugit deleniti obcaecati dicta est tempora quibusdam nisi laborum error quae! Doloribus
+                    fuga
                     consequatur beatae.
                 </li>
 
                 <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora omnis saepe debitis fugiat, vitae
-                    dolores amet aspernatur reprehenderit aliquam fugit rem adipisci, unde perspiciatis magni at ipsum
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora omnis saepe debitis fugiat,
+                    vitae
+                    dolores amet aspernatur reprehenderit aliquam fugit rem adipisci, unde perspiciatis magni at
+                    ipsum
                     error laudantium voluptatum.
                 </li>
 
                 <li>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ducimus voluptatum nam deserunt
-                    dolore necessitatibus magni consequuntur. A necessitatibus quibusdam, magnam maxime, veniam dolore
+                    dolore necessitatibus magni consequuntur. A necessitatibus quibusdam, magnam maxime, veniam
+                    dolore
                     odio quaerat vel, consequatur magni unde.
                 </li>
 
                 <li>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. In pariatur voluptatum veniam culpa ab
-                    perferendis accusantium ad obcaecati labore, a animi consequuntur beatae quaerat veritatis aperiam,
+                    perferendis accusantium ad obcaecati labore, a animi consequuntur beatae quaerat veritatis
+                    aperiam,
                     vel natus explicabo quam.
                 </li>
 
@@ -738,6 +876,10 @@ Css do memory card */
 
 
 
+    <h2 id="checkbox">Checkbox</h2>
+    <a href="#sumario">
+        <p>Voltar ao sumário:</p>
+    </a>
 
 
     <div class="topico">
@@ -828,7 +970,7 @@ Css do memory card */
 
 
         <button class="btnShow" id="buttoncheck1"
-            onclick="confereBox('acertou, parabéns. A regionalização geoeconômica é que se preocupa com a formação histórica da sociedade', 'resp40','globinho40',[2,3,4])">Conferir</button>
+            onclick="confereBox('acertou, parabéns. A regionalização geoeconômica é que se preocupa com a formação histórica da sociedade', 'resp40','globinho40',[1,2,4])">Conferir</button>
 
 
 
@@ -892,7 +1034,8 @@ Css do memory card */
         <p class="caixa">Reforce seu conhecimento</p>
 
         <div class="container">
-            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na aula
+            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na
+                aula
                 de hoje:
             </h4>
             <!-- <div class="w3-margin">Acertos: <span id="score">0</span></div> -->
@@ -1011,7 +1154,8 @@ Css do memory card */
 
             <p>Trata-se de uma Era geológica mais recente. É subdividida em Terciário
                 (cerca de 65 milhões de anos) quando apareceram os Dobramentos modernos (Andes, Alpes, Himalaia).
-                Desenvolvimento dos mamíferos e vegetação com flores. Foi no Quaternário (cerca de 1,6 milhões de anos).
+                Desenvolvimento dos mamíferos e vegetação com flores. Foi no Quaternário (cerca de 1,6 milhões de
+                anos).
                 Aparecimento dos primeiros hominídeos.</p>
 
 
@@ -1075,8 +1219,10 @@ Css do memory card */
         <p>Assinale abaixo se o texto é verddeiro ou falso. </p>
 
         <p>A Projeção de Mercator - Surgida no século XVI, essa projeção é cilíndrica e equivalente
-            (preserva as áreas). Porém prova grande distorção nas áreas das superfícies representadas, principalmente as
-            regiões de alta latitude que ficam maiores do que realmente são na realidade. América do Norte, Groenlândia
+            (preserva as áreas). Porém prova grande distorção nas áreas das superfícies representadas,
+            principalmente as
+            regiões de alta latitude que ficam maiores do que realmente são na realidade. América do Norte,
+            Groenlândia
             e Europa parece maiores do que são. </p>
 
 
@@ -1125,14 +1271,18 @@ Css do memory card */
                     Por quanto tempo vai durar a divisão territorial do Brasil?
                 </strong> </p>
 
-            <p><span class="primeiraLetra">R:</span> Quando estudamos o Brasil e vemos a maneira pela qual a maioria da
+            <p><span class="primeiraLetra">R:</span> Quando estudamos o Brasil e vemos a maneira pela qual a maioria
+                da
                 população tem ou deveria ter acesso aos bens necessários à uma vida digna, principalmente nas
-                periferias, podemos começar a questionar a razão de um município, Estado ou região ser do jeito que é. O
-                recorte atual do Brasil significa o que para a maioria da população? Ele deve ser permanente, rígido,
+                periferias, podemos começar a questionar a razão de um município, Estado ou região ser do jeito que
+                é. O
+                recorte atual do Brasil significa o que para a maioria da população? Ele deve ser permanente,
+                rígido,
                 imutável para sempre? Vimos na história do Brasil os diversos movimentos para modificar seus limites
                 internos com amplas revoltas e guerras internas. Se cada época cria necessidades novas, também
                 precisaríamos de novos recortes territoriais para atender a sociedade. Como sabemos, a Geografia
-                preocupa-se com a sociedade e seu entorno, seu território. Se as regiões são desarticuladas, perpetuam a
+                preocupa-se com a sociedade e seu entorno, seu território. Se as regiões são desarticuladas,
+                perpetuam a
                 pobreza, novos problemas da mesma forma, requerem novas soluções e o território não pode ficar
                 “congelado” no tempo sob o risco de vivermos em uma espaço cada vez mais desigual.</p>
         </div>
@@ -1146,8 +1296,10 @@ Css do memory card */
                     brasileiro?</strong></p>
 
             <p><span class="primeiraLetra">R:</span>
-                Vimos inúmeros mapas e esse conhecimento está relacionado a Cartografia. A Geografia usa a Cartografia
-                como uma linguagem para revelar as relações sociais que ocorrem com o território. Os mapas nos permitem
+                Vimos inúmeros mapas e esse conhecimento está relacionado a Cartografia. A Geografia usa a
+                Cartografia
+                como uma linguagem para revelar as relações sociais que ocorrem com o território. Os mapas nos
+                permitem
                 visualizar adequadamente os problemas do país como áreas vazias de escolas, postos de saúde em
                 determinada cidade ou região. Nas cidades podemos constatar as desigualdades entre o centro e a
                 periferia, a faltar de saneamento básico, de bens culturais e de lazer. Tudo isso está mapeado,
@@ -1158,27 +1310,34 @@ Css do memory card */
 
 
         <div class="borda">
-            <p> <span class="primeiraLetra">P:</span><strong> Por que no Brasil se diz que há três poderes? </strong>
+            <p> <span class="primeiraLetra">P:</span><strong> Por que no Brasil se diz que há três poderes?
+                </strong>
             </p>
 
             <p><span class="primeiraLetra">R:</span>
-                Artigo 2º da Constituição Federal diz o seguinte: São Poderes da União, independentes e harmônicos entre
+                Artigo 2º da Constituição Federal diz o seguinte: São Poderes da União, independentes e harmônicos
+                entre
                 si, o Legislativo, o Executivo e o Judiciário.
                 O Executivo, o Legislativo e o Judiciário são poderes interdependentes, ou seja, devem trabalhar
                 coordenados entre si e fiscalizar uns aos outros. </p>
 
             <p> O <strong>Executivo</strong> é a instância de poder político que executa as leis e cuida da
-                administração. É exercido, no plano federal, pelo presidente com seus ministros; tem sede no Palácio do
-                Planalto. Em nivel estadual, é exercido pelos governadores e secretários e, na esfera municipal, pelos
+                administração. É exercido, no plano federal, pelo presidente com seus ministros; tem sede no Palácio
+                do
+                Planalto. Em nivel estadual, é exercido pelos governadores e secretários e, na esfera municipal,
+                pelos
                 prefeitos e secretários. </p>
 
-            <p> O <strong>Legislativo</strong> é o poder encarregado de fazer as leis. Em nivel federal, é exercido pelo
-                Congresso Nacional, composto pelo Senado e pela Câmara dos Deputados. Em nível estadual, é exercido pela
+            <p> O <strong>Legislativo</strong> é o poder encarregado de fazer as leis. Em nivel federal, é exercido
+                pelo
+                Congresso Nacional, composto pelo Senado e pela Câmara dos Deputados. Em nível estadual, é exercido
+                pela
                 Assembleia Legislativa e, nos municípios, pela Câmara de Vereadores. </p>
 
             <p> O poder <strong>Judiciário</strong> é o poder encarregado de fazer com que as leis sejam cumpridas,
                 garantindo os direitos dos indivíduos. Tem sede no Supremo Tribunal Federal, em Brasília. Além do
-                Supremo Tribunal Federal, é exercido pelo Superior Tribunal de Justiça, pelos tribunais eleitorais, de
+                Supremo Tribunal Federal, é exercido pelo Superior Tribunal de Justiça, pelos tribunais eleitorais,
+                de
                 justiça e do trabalho, entre outros órgãos. </p>
 
         </div>
@@ -1203,12 +1362,16 @@ Css do memory card */
 
         <h2> Desafio em grupo: Exposição de ideias sobre a jornada do herói.</h2>
 
-        <h4>Você conhece a Jordana do Herói? Tenho certeza que já assistiu inúmeros filmes e jogou diversos jogos com
+        <h4>Você conhece a Jordana do Herói? Tenho certeza que já assistiu inúmeros filmes e jogou diversos jogos
+            com
             essa forma de contar histórias. </h4>
-        <h4>Trata de um padrão narrativo que está presente em Star Wars ou Harry Potter por exemplo. O herói deve deixar
-            sua comunidade e partir em uma jornada perigosa, geralmente para recuperar algo (ou alguém) valioso.</h4>
+        <h4>Trata de um padrão narrativo que está presente em Star Wars ou Harry Potter por exemplo. O herói deve
+            deixar
+            sua comunidade e partir em uma jornada perigosa, geralmente para recuperar algo (ou alguém) valioso.
+        </h4>
 
-        <h4>Comente com seu professor(a) de língua portuguesa sobre o livro: O Herói de Mil Faces de Joseph Campbell e
+        <h4>Comente com seu professor(a) de língua portuguesa sobre o livro: O Herói de Mil Faces de Joseph Campbell
+            e
             sobre A Jornada do Escritor de Christopher Vogler. Neste último está descrito os passos para desenvolver
             qualquer história, seja para games, filmes ou quadrinhos.</h4>
 
@@ -1250,60 +1413,84 @@ Css do memory card */
 
 
             <p><strong>1. Mundo Comum</strong> do herói é estabelecido. Sua vida cotidiana e seu ambiente são
-                introduzidos. No Final Fantasy, a alusão ao mundo comum aparece na frase de abertura: “Era um dia como
+                introduzidos. No Final Fantasy, a alusão ao mundo comum aparece na frase de abertura: “Era um dia
+                como
                 outro qualquer”.</p>
 
-            <p><strong>2. Chamado à Aventura</strong>: O herói conhece um mundo alternativo e é chamado a partir em uma
-                busca ou jornada. Nessa seção, o mundo alternativo, ou especial, é apresentado ao personagem principal.
-                Normalmente, há alguma espécie de intersecção de elementos do mundo alternativo com o mundo comum e o
+            <p><strong>2. Chamado à Aventura</strong>: O herói conhece um mundo alternativo e é chamado a partir em
+                uma
+                busca ou jornada. Nessa seção, o mundo alternativo, ou especial, é apresentado ao personagem
+                principal.
+                Normalmente, há alguma espécie de intersecção de elementos do mundo alternativo com o mundo comum e
+                o
                 personagem principal é chamado a ingressar nessa realidade alternativa e embarcar em uma busca ou
                 jornada.</p>
 
-            <p><strong>3. Recusa ao Chamado</strong> O chamado é rejeitado porque o herói não está disposto a sacrificar
-                sua vida confortável e seu ambiente familiar. O herói, porém, sente‑se desconfortável com essa recusa.
+            <p><strong>3. Recusa ao Chamado</strong> O chamado é rejeitado porque o herói não está disposto a
+                sacrificar
+                sua vida confortável e seu ambiente familiar. O herói, porém, sente‑se desconfortável com essa
+                recusa.
             </p>
 
-            <p><strong>4. Encontro com o Mentor</strong>: O herói recebe informações que são relevantes para a busca e
+            <p><strong>4. Encontro com o Mentor</strong>: O herói recebe informações que são relevantes para a busca
+                e
                 para a sua necessidade pessoal de partir nessa jornada.</p>
 
-            <p><strong>5. Superando o Primeiro Obstáculo</strong>: O herói abandonou sua recusa inicial por causa das
-                informações recebidas. O herói embarca na jornada, aceita a aventura e ingressa no mundo especial. Essa
+            <p><strong>5. Superando o Primeiro Obstáculo</strong>: O herói abandonou sua recusa inicial por causa
+                das
+                informações recebidas. O herói embarca na jornada, aceita a aventura e ingressa no mundo especial.
+                Essa
                 seção geralmente corresponde ao final do Ato I em uma narrativa tradicional.</p>
 
-            <p><strong>6. Testes, Aliados e Inimigos</strong> A determinação do herói é testada por meio de uma série de
+            <p><strong>6. Testes, Aliados e Inimigos</strong> A determinação do herói é testada por meio de uma
+                série de
                 desafios. Durante esse período, o herói encontra aliados e inimigos. Essa etapa constitui a ação
                 principal da maioria das narrativas. É quando o herói precisa solucionar problemas, enfrentar seus
-                temores, salvar outras pessoas e derrotar inimigos. Essa seção normalmente corresponde ao início do Ato
+                temores, salvar outras pessoas e derrotar inimigos. Essa seção normalmente corresponde ao início do
+                Ato
                 II em uma história.</p>
 
             <p><strong>7. Chegada à Caverna Mais Interna</strong> Mais testes e um período de
                 supremo fascínio ou terror.. A provação começa a ser preparada.</p>
 
-            <p><strong>8. Provação</strong>: O herói enfrenta seu maior desafio até aqui. Ele deve derrotar o “grande”
-                vilão. Nessa fase, o herói mostra vulnerabilidade (por exemplo, Super‑Homem e kriptonita), e não está
+            <p><strong>8. Provação</strong>: O herói enfrenta seu maior desafio até aqui. Ele deve derrotar o
+                “grande”
+                vilão. Nessa fase, o herói mostra vulnerabilidade (por exemplo, Super‑Homem e kriptonita), e não
+                está
                 claro se vencerá ou fracassará.</p>
 
             <p><strong>9. Recompensa (Posse da Espada)</strong> Parece ser o fim da história, mas não é! Essa seção
                 corresponde ao final do Ato II da história.</p>
 
-            <p><strong>10. O Caminho de Volta</strong> Quando a provação termina, o herói pode optar entre permanecer no
+            <p><strong>10. O Caminho de Volta</strong> Quando a provação termina, o herói pode optar entre
+                permanecer no
                 mundo especial ou voltar ao mundo comum. Na maioria dos casos, ele decide regressar. Essa seção
                 corresponde ao início do Ato III da história.</p>
 
-            <p><strong>11. Ressurreição</strong>: O herói deve enfrentar a morte mais uma vez, em outra provação, que é
-                conhecida como o clímax. É aqui que o herói mostra que foi transformado pela jornada e ressuscitou como
-                uma pessoa plenamente formada. Durante essa etapa, o vilão pode ressurgir repentinamente. (Nos filmes de
-                terror, é o momento em que a plateia grita para o personagem principal: “Olhe para trás! Ele ainda não
-                está morto!”) É também onde o narrador pode incluir um “final surpresa” inesperado. Talvez o vilão não
+            <p><strong>11. Ressurreição</strong>: O herói deve enfrentar a morte mais uma vez, em outra provação,
+                que é
+                conhecida como o clímax. É aqui que o herói mostra que foi transformado pela jornada e ressuscitou
+                como
+                uma pessoa plenamente formada. Durante essa etapa, o vilão pode ressurgir repentinamente. (Nos
+                filmes de
+                terror, é o momento em que a plateia grita para o personagem principal: “Olhe para trás! Ele ainda
+                não
+                está morto!”) É também onde o narrador pode incluir um “final surpresa” inesperado. Talvez o vilão
+                não
                 seja realmente um vilão. Talvez o mentor seja um impostor. (Yoda poderia ser mau? Hummm...).</p>
 
             <p><strong>12. Retorno com o Elixir</strong>: O herói finalmente volta para casa, mas a experiência o
-                alterou irremediavelmente. Se agora é um herói, ele traz consigo um elixir do mundo especial que ajudará
-                aqueles que ele havia originalmente deixado para trás. A estrutura é circular, com o herói voltando ao
-                princípio. Isso facilita a comparação entre o “antes” e o “depois” pela audiência para perceber como o
+                alterou irremediavelmente. Se agora é um herói, ele traz consigo um elixir do mundo especial que
+                ajudará
+                aqueles que ele havia originalmente deixado para trás. A estrutura é circular, com o herói voltando
+                ao
+                princípio. Isso facilita a comparação entre o “antes” e o “depois” pela audiência para perceber como
+                o
                 herói foi transformado. A estrutura circular também permite deixar o final em aberto. O herói será
-                convocado novamente no futuro? O inimigo foi realmente derrotado? Há outra ameaça no horizonte? O herói
-                conseguirá descansar algum dia? Deixar perguntas como essas em aberto — em vez de optar por um final em
+                convocado novamente no futuro? O inimigo foi realmente derrotado? Há outra ameaça no horizonte? O
+                herói
+                conseguirá descansar algum dia? Deixar perguntas como essas em aberto — em vez de optar por um final
+                em
                 que tudo se esclarece — intriga a audiência e cria espaço para uma continuação. E se o herói fosse
                 transportado inesperadamente de volta para o mundo artificial bem no final da história? O personagem
                 principal do filme De Volta para o Futuro, Marty McFly, descobre no final que sua jornada ao passado
@@ -1424,7 +1611,8 @@ Css do memory card */
         <p> SANTOS, Patrícia Cardoso dos (et al.) <strong> Enciclopédia do Estudante: </strong> geografia do Brasil:
             aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008. </p>
 
-        <p>VESENTINI, José William. <strong> Geografia </strong> o mundo em transição. Ensino médio. 2. ed. – São Paulo:
+        <p>VESENTINI, José William. <strong> Geografia </strong> o mundo em transição. Ensino médio. 2. ed. – São
+            Paulo:
             Ática, 2013. </p>
 
 
