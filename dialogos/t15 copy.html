@@ -10,18 +10,25 @@
 
 	<title>3º ano - aula 15</title>
 
-	<link rel="stylesheet" href="../../../estilos/questoes.css">
-	<link rel="stylesheet" href="../../../estilos/w3.css">
-	<link rel="stylesheet" href="../../../estilos/dialogo.css">
+	<link rel="stylesheet" href="../estilos/questoes.css">
+	<link rel="stylesheet" href="../estilos/w3.css">
 
-	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+	<link rel="stylesheet" href="../estilos/dialogo.css">
 
-	<script src="../../../estilos/javascript.js" defer></script>
-	<script src="../../../estilos/dialogo.js" defer></script>
+
+
+
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
+
+	<script src="../estilos/javascript.js" defer></script>
+
+
+	<script src="../estilos/dialogo3.js" defer></script>
 
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
 		crossorigin="anonymous"></script>
-
 
 
 
@@ -33,7 +40,7 @@
 			border: 10px solid #fff;
 			border-radius: 20px;
 			box-shadow: 0 0 10px #ccc;
-			background-image: url("../../../fotoIndex/fotoDialogo1.png");
+			background-image: url("../fotoIndex/fotoDialogo1.png");
 			background-size: cover;
 			background-position: top;
 		}
@@ -50,7 +57,7 @@
 				border: 10px solid #fff;
 				border-radius: 20px;
 				box-shadow: 0 0 10px #ccc;
-				background-image: url("../../../fotoIndex/fotoDialogo2.png");
+				background-image: url("../fotoIndex/fotoDialogo2.png");
 				background-size: cover;
 				background-position: center;
 				z-index: 10;
@@ -58,7 +65,6 @@
 
 		}
 	</style>
-
 
 
 
@@ -72,11 +78,11 @@
 
 		<div class="w3-container">
 
-			<a href="../../../index.html" class=" w3-button  margemTop  ">Home</a>
-			<a href="../../../Duvid3Ano.html" class=" w3-button">3º ano</a>
+			<a href="../index.html" class=" w3-button  margemTop  ">Home</a>
+			<a href="../Duvid3Ano.html" class=" w3-button">3º ano</a>
 
-			<a href="../../../blog/blog.html" class=" w3-button  margemTop  ">Blog</a>
-			<a href="../../../paginas/sobre.html" class=" w3-button  margemTop  ">Sobre</a>
+			<a href="../blog/blog.html" class=" w3-button  margemTop  ">Blog</a>
+			<a href="../paginas/sobre.html" class=" w3-button  margemTop  ">Sobre</a>
 
 
 		</div>
@@ -156,6 +162,56 @@
 
 		</div>
 
+
+
+		<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-responsive">
+
+			<div class="w3-col s6">
+				<div class="character ">
+					<div class="balloon balao1" id="baloon3">
+						<div class="triangle triangleLeft"></div>
+						<span id="demo3" class="pad ">Clique na personagem</span>
+					</div>
+					<img id="demo3-img" onclick="ShowDialog(['Ei, Franciele, Geografia!' ], 
+	  
+						'demo3', 'baloon3');" class="left" src="../fotoIndex/FotoDir.gif" width="auto" height="auto"
+						alt="Foto personagem Jéssica - Jogo Aventura Geográfica">
+
+
+				</div>
+			</div>
+
+
+
+			<!-- segundo diálogo -->
+			<div class="w3-col s6">
+				<div class="character ">
+					<div class="balloon balao2 " id="baloon4">
+						<div class="triangle triangleRight"></div>
+						<span id="demo4" class="pad">Clique na personagem</span>
+					</div>
+					<img id="demo4-img"
+						onclick="ShowSecondDialog(['Nossa Jéssica, que demais!', ], 'demo4', 'baloon4');" class="right"
+						src="../fotoIndex/person28.gif" width="auto" height="auto"
+						alt="Foto personagem Franciele - Jogo Aventura Geográfica">
+
+				</div>
+
+				<div class="container w3-mobile">
+					<label for="typingSpeed" class="w3-text-white">Velocidade de digitação:</label>
+					<input type="range" id="typingSpeed" min="30" max="150" step="1" value="50">
+				</div>
+
+				<!-- 
+				<div class="w3-container w3-mobile w3-margin">
+					<button Class="w3-button w3-button w3-green w3-round-large"
+						onclick="resetDialogVariables()">Reiniciar</button>
+
+				</div> -->
+			</div>
+
+
+		</div>
 
 
 		<div class="comentarios">
@@ -583,10 +639,10 @@
 			<p> A viabilidade do processo de produção ilustrado pelo texto pressupõe o uso de: </p>
 
 
-			<span onclick="Ajuda('ajuda8'), showCurrentDialogue()" class="w3-button w3-pale-yellow w3-margin-left">
+			<span onclick="Ajuda('ajuda8')" class="w3-button w3-pale-yellow w3-margin-left">
 				Ajuda:</span>
 
-			<div id="ajuda8" class="w3-hide w3-container w3-leftbar w3-pale-yellow w3-margin">
+			<div id="ajuda8" class="w3-hide w3-container w3-leftbar w3-pale-yellow w3-margin ">
 				<p>Imagina um carro esportivo sendo feito, mas cada pedacinho dele está acontecendo em lugares
 					diferentes ao redor do mundo. Algumas partes são financiadas em um país, desenhadas em outro,
 					montadas em vários lugares e até a propaganda é feita em diferentes países. Isso tudo precisa de um
@@ -600,46 +656,57 @@
 
 				</p>
 
-				<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-margin-bottom w3-responsive">
 
-					<div class="w3-container w3-mobile w3-margin-top w3-responsive">
-						<div class="w3-col s6">
-							<div class="character">
-								<div class="balloon balao1" style="display: block;">
-									<div class="triangle triangleLeft"></div>
-									<span class="pad" id="dialogue1">Clique em próximo</span>
-								</div>
-								<img class="left" src="../../../fotoIndex/FotoDir.gif" width="auto" height="auto"
-									alt="Foto personagem Jéssica - Jogo Aventura Geográfica">
-							</div>
-						</div>
-			
-						<!-- Segundo diálogo -->
-						<div class="w3-col s6">
-							<div class="character">
-								<div class="balloon balao2" style="display: none;">
-									<div class="triangle triangleRight"></div>
-									<span class="pad" id="dialogue2"></span>
-								</div>
-								<img class="right" src="../../../fotoIndex/person28.gif" width="auto" height="auto"
-									alt="Foto personagem Franciele - Jogo Aventura Geográfica">
-							</div>
-			
-							<!-- <div class="container w3-mobile">
-								<label for="typingSpeed" class="w3-text-white">Velocidade de digitação:</label>
-								<input type="range" id="typingSpeed" min="30" max="150" step="1" value="30">
-							</div> -->
-						</div>
-					</div>
-			
-					<button id="botaoDialogo" onclick="nextDialogue()">Próximo</button>
-					<button id="botaoReiniciar" onclick="reiniciarDialogo()">Reiniciar Diálogo</button>
-			
-					<!-- <button  onclick="showCurrentDialogue()">chamarDialogo</button> -->
-			
-			
-			
+				
+
+	<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-responsive w3-margin-bottom">
+
+		<div class="w3-col s6">
+			<div class="character ">
+				<div class="balloon balao1" id="baloon1">
+					<div class="triangle triangleLeft"></div>
+					<span id="demo1" class="pad ">Clique na personagem</span>
 				</div>
+				<img id="demo1-img" onclick="ShowDialog(['Eu acho que agora vou começar a aprender Geografia! ','será um boa ajuda contar com você Franciele' ], 
+  
+					'demo1', 'baloon1',);" class="left" src="../fotoIndex/FotoDir.gif" width="auto" height="auto"
+					alt="Foto personagem Jéssica - Jogo Aventura Geográfica">
+
+
+			</div>
+		</div>
+
+
+
+		<!-- segundo diálogo -->
+		<div class="w3-col s6">
+			<div class="character ">
+				<div class="balloon balao2 " id="baloon2">
+					<div class="triangle triangleRight"></div>
+					<span id="demo2" class="pad">Clique na personagem</span>
+				</div>
+				<img id="demo2-img" onclick="ShowSecondDialog(['vamos estudar juntas!', 'legal!'
+			
+			], 'demo2', 'baloon2');" class="right " src="../fotoIndex/person28.gif" width="auto" height="auto"
+					alt="Foto personagem Franciele - Jogo Aventura Geográfica">
+
+			</div>
+			<!-- 
+			<div class="container w3-mobile">
+				<label for="typingSpeed" class="w3-text-white">Velocidade de digitação:</label>
+				<input type="range" id="typingSpeed" min="30" max="150" step="1" value="30">
+			</div> -->
+
+
+			<!-- <div class="w3-container w3-mobile w3-margin">
+				<button Class="w3-button w3-button w3-green w3-round-large"
+					onclick="resetDialogVariables()">Reiniciar</button>
+
+			</div> -->
+		</div>
+
+
+	</div>
 			</div>
 
 			<span onclick="Ajuda('resposta8')" class="w3-button w3-pale-green w3-margin-left">
@@ -826,13 +893,15 @@
 	</form>
 
 
+
+
 	<p id="numeroCorreto"></p>
 
 	<p id="mensagem" style="display:none"></p>
 
 
 	<div class="area">
-		<img src="../../../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
+		<img src="../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
 			height="200">
 	</div>
 
@@ -848,6 +917,7 @@
 
 
 	<script>
+
 
 
 		function checar() {
@@ -1060,25 +1130,6 @@
 			}
 		}
 	</script>
-
-
-<script>
-
-		
-
-	const dialogues = [
-		{ speaker: "NPC1", text: "Ei, Franciele, você viu o texto de ajuda que o professor passou sobre a produção do carro esportivo?" },
-		{ speaker: "NPC2", text: "Vi sim, Jéssica. Parece que a coisa toda é uma verdadeira bagunça geográfica, não é?" },
-		{ speaker: "NPC1", text: "Totalmente. Financiamento em um país, projeto em outro, montagem em vários lugares... É loucura!" },
-		{ speaker: "NPC2", text: "Mas o que mais me chamou a atenção foi a parte sobre a importância da tecnologia da informação nisso tudo." },
-		{ speaker: "NPC1", text: "Verdade, parece que a chave para lidar com toda essa complexidade está na organização interligada entre várias localidades." },
-		{ speaker: "NPC2", text: "Exato! Com um sistema eficiente, todas essas partes dispersas podem ser coordenadas de maneira integrada." },
-		{ speaker: "NPC1", text: "E aí, você acha que conseguimos pegar essa pista para a resposta da questão?" },
-		{ speaker: "NPC2", text: "Com certeza! Vamos lá!" }
-	];
-	
-	
-		</script>
 
 
 

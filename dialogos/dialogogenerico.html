@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../estilos/questoes.css">
+	<link rel="stylesheet" href="../estilos/w3.css">
+	<link rel="stylesheet" href="../estilos/dialogo.css">
+	<title>Diálogo entre NPCs</title>
+
+
+
+
+	<style>
+		.ImagemDialogo {
+			padding-top: 5%;
+			max-width: auto;
+			margin: 0 auto;
+			border: 10px solid #fff;
+			border-radius: 20px;
+			box-shadow: 0 0 10px #ccc;
+			background-image: url("../fotoIndex/fotoDialogo1.png");
+			background-size: cover;
+			background-position: top;
+		}
+
+
+		/* Mobile */
+
+		@media screen and (max-width: 600px) {
+
+			.ImagemDialogo {
+				padding-top: 5%;
+				max-width: auto;
+				margin: 0 auto;
+				border: 10px solid #fff;
+				border-radius: 20px;
+				box-shadow: 0 0 10px #ccc;
+				background-image: url("../fotoIndex/fotoDialogo2.png");
+				background-size: cover;
+				background-position: center;
+				z-index: 10;
+			}
+
+		}
+	</style>
+</head>
+
+
+<body>
+	<h1>Diálogo entre NPCs</h1>
+
+	<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-responsive">
+
+		<div class="w3-container w3-mobile w3-margin-top w3-responsive">
+			<div class="w3-col s6">
+				<div class="character">
+					<div class="balloon balao1" style="display: block;">
+						<div class="triangle triangleLeft"></div>
+						<span class="pad" id="dialogue1">Clique na personagem</span>
+					</div>
+					<img class="left" src="../fotoIndex/FotoDir.gif" width="auto" height="auto"
+						alt="Foto personagem Jéssica - Jogo Aventura Geográfica">
+				</div>
+			</div>
+
+			<!-- Segundo diálogo -->
+			<div class="w3-col s6">
+				<div class="character">
+					<div class="balloon balao2" style="display: none;">
+						<div class="triangle triangleRight"></div>
+						<span class="pad" id="dialogue2">Clique na personagem</span>
+					</div>
+					<img class="right" src="../fotoIndex/person28.gif" width="auto" height="auto"
+						alt="Foto personagem Franciele - Jogo Aventura Geográfica">
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<button id="botaoDialogo" onclick="nextDialogue('botaoDialogo',1)">Próximo</button>
+
+
+	<!-- HTML para a próxima dupla de personagens -->
+	<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-responsive">
+		<div class="w3-container w3-mobile w3-margin-top w3-responsive">
+			<div class="w3-col s6">
+				<div class="character">
+					<div class="balloon balao3" style="display: block;">
+						<div class="triangle triangleLeft"></div>
+						<span class="pad" id="dialogue3">Clique na personagem</span>
+					</div>
+					<img class="left" src="../fotoIndex/FotoDir2.gif" width="auto" height="auto"
+						alt="Foto personagem João">
+				</div>
+			</div>
+			<!-- Segundo diálogo -->
+			<div class="w3-col s6">
+				<div class="character">
+					<div class="balloon balao4" style="display: none;">
+						<div class="triangle triangleRight"></div>
+						<span class="pad" id="dialogue4">Clique na personagem</span>
+					</div>
+					<img class="right" src="../fotoIndex/person29.gif" width="auto" height="auto"
+						alt="Foto personagem Maria">
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<button id="botaoDialogo2" onclick="nextDialogue('botaoDialogo2',2)">Próximo</button>
+
+	<script>
+		// Array de diálogos 1
+		const dialogues1 = [
+			{ speaker: "NPC1", text: "Olá, viajante! Como você está hoje?" },
+			{ speaker: "NPC2", text: "Estou bem, obrigado! E você?" },
+			{ speaker: "NPC1", text: "Também estou bem. Está aproveitando a jornada?" },
+			{ speaker: "NPC2", text: "Sim, estou descobrindo novas terras e pessoas interessantes." },
+			// Adicione mais diálogos aqui, se desejar
+		];
+
+
+		// Array de diálogos 2
+		const dialogues2 = [
+			{ speaker: "NPC1", text: "Olá, viajante! Como você está hoje?" },
+			{ speaker: "NPC2", text: "Estou bem, obrigado! E você?" },
+			{ speaker: "NPC1", text: "Também estou bem. Está aproveitando a jornada?" },
+			{ speaker: "NPC2", text: "Sim, estou descobrindo novas terras e pessoas interessantes." },
+			// Adicione mais diálogos aqui, se desejar
+		];
+
+		// Variáveis globais
+		let currentDialogueIndex = 0;
+
+		// Função para exibir o diálogo atual
+		function showCurrentDialogue(idDialogo) {
+			const currentDialogue = eval(`dialogue${idDialogo}`)[currentDialogueIndex];
+			const dialogueElement = document.getElementById(`dialogue${idDialogo}${currentDialogueIndex % 2 + 1}`);
+			dialogueElement.textContent = `${currentDialogue.speaker}: ${currentDialogue.text}`;
+
+
+
+
+			// Oculta todos os balões de diálogo
+			document.querySelectorAll('.balloon').forEach(balloon => {
+				balloon.style.display = 'none';
+			});
+
+			// Exibe o balão de diálogo relevante
+			dialogueElement.parentElement.style.display = 'block';
+		}
+
+		// Função para avançar para o próximo diálogo
+		function nextDialogue(idBotao, idDialogo) {
+			currentDialogueIndex++;
+
+			// Verifica se ainda há diálogos para exibir
+			const dialoguesArray = eval(`dialogues${idDialogo}`);
+			if (currentDialogueIndex < dialoguesArray.length) {
+				// Exibe o próximo diálogo
+				// showCurrentDialogue(idDialogo);
+			} else {
+				// Caso contrário, todos os diálogos foram exibidos
+				const botaoDialogo = document.getElementById(idBotao);
+				botaoDialogo.disabled = true;
+				botaoDialogo.innerHTML = "Fim do diálogo";
+
+				// Oculta todos os balões de diálogo
+				// document.querySelectorAll('.balloon').forEach(balloon => {
+				// 	balloon.style.display = 'none';
+				// });
+			}
+		}
+
+		// Chamada para a primeira dupla de personagens
+		showCurrentDialogue(1);
+
+		// Chamada para a segunda dupla de personagens
+		showCurrentDialogue(2);
+	</script>
+</body>
+
+</html>

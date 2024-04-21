@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../estilos/questoes.css">
+	<link rel="stylesheet" href="../estilos/w3.css">
+	<link rel="stylesheet" href="../estilos/dialogo.css">
+
+	<script src="../estilos/dialogo.js" defer></script>
+
+
+
+
+	<title>Diálogo entre NPCs</title>
+
+
+
+
+	<style>
+
+		.ImagemDialogo {
+			padding-top: 5%;
+			max-width: auto;
+			margin: 0 auto;
+			border: 10px solid #fff;
+			border-radius: 20px;
+			box-shadow: 0 0 10px #ccc;
+			background-image: url("../fotoIndex/fotoDialogo1.png");
+			background-size: cover;
+			background-position: top;
+		}
+
+
+		/* Mobile */
+
+		@media screen and (max-width: 600px) {
+
+			.ImagemDialogo {
+				padding-top: 5%;
+				max-width: auto;
+				margin: 0 auto;
+				border: 10px solid #fff;
+				border-radius: 20px;
+				box-shadow: 0 0 10px #ccc;
+				background-image: url("../fotoIndex/fotoDialogo2.png");
+				background-size: cover;
+				background-position: center;
+				z-index: 10;
+			}
+
+		}
+	</style>
+</head>
+
+
+<body>
+	<h1>Diálogo entre NPCs</h1>
+
+	<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-responsive">
+
+		<div class="w3-container w3-mobile w3-margin-top w3-responsive">
+			<div class="w3-col s6">
+				<div class="character">
+					<div class="balloon balao1" style="display: block;">
+						<div class="triangle triangleLeft"></div>
+						<span class="pad" id="dialogue1">Clique em próximo</span>
+					</div>
+					<img class="left" src="../fotoIndex/FotoDir.gif" width="auto" height="auto"
+						alt="Foto personagem Jéssica - Jogo Aventura Geográfica">
+				</div>
+			</div>
+
+			<!-- Segundo diálogo -->
+			<div class="w3-col s6">
+				<div class="character">
+					<div class="balloon balao2" style="display: none;">
+						<div class="triangle triangleRight"></div>
+						<span class="pad" id="dialogue2"></span>
+					</div>
+					<img class="right" src="../fotoIndex/person28.gif" width="auto" height="auto"
+						alt="Foto personagem Franciele - Jogo Aventura Geográfica">
+				</div>
+
+				<!-- <div class="container w3-mobile">
+					<label for="typingSpeed" class="w3-text-white">Velocidade de digitação:</label>
+					<input type="range" id="typingSpeed" min="30" max="150" step="1" value="30">
+				</div> -->
+			</div>
+		</div>
+
+		<button id="botaoDialogo" onclick="nextDialogue()">Próximo</button>
+		<button id="botaoReiniciar" onclick="reiniciarDialogo()">Reiniciar Diálogo</button>
+
+		<button  onclick="showCurrentDialogue()">chamarDialogo</button>
+
+
+
+	</div>
+
+	
+
+	<script>
+
+		
+
+const dialogues = [
+    { speaker: "NPC1", text: "Ei, Franciele, você viu o texto de ajuda que o professor passou sobre a produção do carro esportivo?" },
+    { speaker: "NPC2", text: "Vi sim, Jéssica. Parece que a coisa toda é uma verdadeira bagunça geográfica, não é?" },
+    { speaker: "NPC1", text: "Totalmente. Financiamento em um país, projeto em outro, montagem em vários lugares... É loucura!" },
+    { speaker: "NPC2", text: "Mas o que mais me chamou a atenção foi a parte sobre a importância da tecnologia da informação nisso tudo." },
+    { speaker: "NPC1", text: "Verdade, parece que a chave para lidar com toda essa complexidade está na organização interligada entre várias localidades." },
+    { speaker: "NPC2", text: "Exato! Com um sistema eficiente, todas essas partes dispersas podem ser coordenadas de maneira integrada." },
+    { speaker: "NPC1", text: "E aí, você acha que conseguimos pegar essa pista para a resposta da questão?" },
+    { speaker: "NPC2", text: "Com certeza! Vamos lá!" }
+];
+
+
+	</script>
+</body>
+
+</html>
