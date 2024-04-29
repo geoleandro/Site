@@ -1377,7 +1377,7 @@
 
 
 		function exibirResultados(corretas, incorretas) {
-			const porcentagemCorretas = (corretas * 100) / 10;
+			const porcentagemCorretas = ((corretas * 100) / 10).toFixed(2); // Limita a duas casas decimais
 			const numeroCorreto = document.getElementById("numeroCorreto");
 			numeroCorreto.innerHTML = `Você acertou ${corretas} do total de 10 questões, ou seja, ${porcentagemCorretas}%.`;
 			numeroCorreto.style.display = 'block';
@@ -1394,6 +1394,9 @@
 			} else if (corretas >= 5 && corretas <= 7) {
 				pontos = 1;
 			}
+			else {
+                pontos = 0;
+            }
 
 			const mensagemElement = document.getElementById("mensagem");
 			mensagemElement.innerHTML = mensagem[pontos];

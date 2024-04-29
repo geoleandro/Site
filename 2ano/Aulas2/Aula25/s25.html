@@ -543,49 +543,74 @@
 
 			<p class="p2">Questão 10</p>
 
-			<p> (FGV-SP 2005) Observe o mapa para responder à questão.</p>
+			<p> (UNICAMP 2023) </p>
 
-			<div class="w3-center"><img src="s25q10.png" alt="s25q10" class="w3-mobile"></div>
+            <p>Alguns municípios do Sul do Brasil receberam, nos últimos 10 anos, importantes fluxos de imigrantes e refugiados, sobretudo de haitianos, congoleses, senegaleses e venezuelanos. A presença desses imigrantes e refugiados em regiões de elevada especialização produtiva tem sido motivada pela busca de trabalho; todavia, crescem registros de denúncias das precárias condições de vida e situações de xenofobia enfrentadas por essas populações nos municípios onde se instalam. </p>
 
-			<p>A leitura do mapa e seus conhecimentos sobre a dinâmica populacional brasileira permitem afirmar
-				que: </p>
+            <P>Assinale a alternativa que indique: (1) a região de especialização produtiva que mais tem absorvido essa força de trabalho imigrante; e (2) a atividade econômica envolvida:</P>
+
+
+			<!-- Ajuda -->
+
+			<span onclick="Ajuda('ajuda10')" class="w3-button w3-pale-yellow w3-margin-left w3-margin-bottom ">
+				Ajuda:</span>
+
+			<div id="ajuda10" class="w3-hide w3-container w3-leftbar w3-pale-yellow w3-margin">
+				<p> O objetivo da questão está relacionado ao conhecimento sobre a força de trabalho migrante no Brasil, preferencialmente na região Sul do país. Para acertar essa questão sobre xenofobia com imigrantes é preciso estar ciente de casos relatados ou evidências de discriminação ocorrendo na região sul. Isso pode incluir relatos de discriminação, violência ou tratamento injusto direcionado a imigrantes ou refugiados que se estabeleceram na área ou qual Estado tem chamado mais atenção nessa questão.
+
+					<span class="w3-smal w3-green w3-margin-bottom">Tente resolver sem ver a resposta</span>
+				</p>
+			</div>
+
+			<span onclick="Ajuda('resposta10')" class="w3-button w3-pale-green w3-margin-left w3-margin-bottom">
+				Resposta:</span>
+
+
+			<div id="resposta10" class="w3-hide w3-container w3-leftbar w3-pale-green w3-margin">
+
+				<p>Resposta: Letra A
+					<br>(1) Oeste catarinense; (2) indústria frigorífica.
+				</p>
+
+			</div>
 
 			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a">
-				a) o Nordeste transformou-se em área de atração de migrantes.</p>
+				a)  (1) Oeste catarinense; (2) indústria frigorífica.
+			
+			</p>
 
 			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b">
-				b) a Amazônia não conseguiu atrair mais migrantes.</p>
+				b)  (1) Vale dos Sinos (RS); (2) indústria de laticínios.</p>
 
 			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c">
-				c) os estados do Centro-Oeste tiveram saldo migratório negativo.</p>
+				c)  (1) Oeste paranaense; (2) indústria de confecção.
+			
+			</p>
 
 			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d">
-				d) estados como o Paraná e a Bahia tiveram saldo migratório negativo.</p>
+				d)  (1) Vale do Itajaí (SC); (2) indústria carbonífera.
+			
+			</p>
 
-			<p class="bordaQuestoes" id="q10e"><input type="radio" required="required" name="pq10" value="e">
-				e) a Região Sul apresentou os maiores fluxos inter-regionais do país.</p>
+			
 		</div>
 
 
+		
 		<div class="comentarios">
-			<p> <strong>Comentário:</strong></p>
 
-			<p> De acordo com o mapa adaptado do Censo-IBGE de 2000, o Estado da Bahia é ponto de partida de fluxos
-				migratórios para todos os estados do Sudeste e para o Centro-Oeste, enquanto é receptor de fluxos
-				originários de Pernambuco e São Paulo. É mais intensa a migração em direção ao Sudeste, em função da
-				busca de melhores condições de vida em regiões melhor estruturadas em termos de economia, enquanto as
-				áreas receptoras estão em parte associadas à expansão da agricultura moderna do Oeste da Bahia – soja, e
-				à fruticultura irrigada no Vale do São Francisco.</p>
-
-			<p> O Estado do Paraná é ponto de partida de fluxos migratórios em direção à fronteira agrícola do Mato
-				Grosso, que expande a produção mecanizada da soja e algodão; outro fluxo em direção a São Paulo e dois
-				em direção ao Rio Grande do Sul e Santa Catarina.
-
-			<p> No entanto recebe fluxos migratórios de três estados: São Paulo, Santa Catarina e Rio Grande do Sul. O
-				saldo migratório do Paraná é negativo, em função da liberação da mão-de-obra nas fazendas que empregam
-				maior automação agrícola assim como também da minifundiarização na agricultura familiar</p>
-
+			<p><strong>Comentário:</strong></p>
+		
+			<p>A alternativa A está correta, pois a indústria frigorífica, concentrada no oeste catarinense, opera com muitos trabalhadores imigrantes e refugiados.</p>
+		
+			<p>A alternativa B está incorreta, pois no Vale dos Sinos no Rio Grande do Sul prevalecem os setores da indústria calçadista e de couro.</p>
+		
+			<p>A resposta C está incorreta, pois no Oeste paranaense prevalecem os setores moveleiro, de mineração e de alimentos e bebidas.</p>
+		
+			<p>A resposta D está incorreta, pois no Vale do Itajaí prevalecem os setores têxtil e de confecções, naval e de tecnologia.</p>
+		
 		</div>
+		
 
 
 
@@ -747,16 +772,16 @@
 				document.getElementById("q9b").style.backgroundColor = cor[0];
 
 			}
-			if (pq10 == "d") {
+			if (pq10 == "a") {
 				corretas++;
-				document.getElementById("q10d").style.backgroundColor = cor[0];
+				document.getElementById("q10a").style.backgroundColor = cor[0];
 			} else {
 				document.getElementById("q10b").style.backgroundColor = cor[1];
 				document.getElementById("q10c").style.backgroundColor = cor[1];
-				document.getElementById("q10a").style.backgroundColor = cor[1];
-				document.getElementById("q10e").style.backgroundColor = cor[1];
+				document.getElementById("q10d").style.backgroundColor = cor[1];
+				// document.getElementById("q10e").style.backgroundColor = cor[1];
 
-				document.getElementById("q10d").style.backgroundColor = cor[0];
+				document.getElementById("q10a").style.backgroundColor = cor[0];
 
 			}
 

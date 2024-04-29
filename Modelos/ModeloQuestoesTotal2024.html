@@ -1014,7 +1014,9 @@
 
 		function checar() {
 
-			var respostasCertas = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+			// var respostasCertas = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+
+			var respostasCertas = ["a", "a", "a", "a", "a", "a", "a", "a", "a", "a"];
 			var corretas = 0;
 			var incorrretas = 10 - corretas;
 			var cor = ["#99ff99", "#ee4466"];
@@ -1067,6 +1069,9 @@
 			} else if (corretas >= 5 && corretas <= 7) {
 				pontos = 1;
 			}
+			else {
+                pontos = 0;
+            }
 
 			const mensagemElement = document.getElementById("mensagem");
 			mensagemElement.innerHTML = mensagem[pontos];

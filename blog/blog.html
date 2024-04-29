@@ -38,8 +38,16 @@
         }
 
         body {
-            font-family: "Open Sans"
+            font-family: "Open Sans";
+
         }
+
+        .larguraBar {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+
 
         /* Remove o sublinhado do link */
         .link-artigo {
@@ -82,6 +90,10 @@
             -webkit-mask-size: 100% 100%;
             mask-size: 100% 100%;
         }
+
+        .extrafonte {
+            font-size: 5em !important;
+        }
     </style>
 
 </head>
@@ -113,289 +125,165 @@
         </div>
 
         <!-- w3-content defines a container for fixed size centered content, 
-    and is wrapped around the whole page content, except for the footer in this example -->
+     and is wrapped around the whole page content, except for the footer in this example -->
 
         <div class="w3-content" style="max-width:1600px">
             <!-- Header -->
-            <header class="w3-container w3-center w3-padding-64  ">
-                <h1 class="extrafonte w3-hide-large w3-hide-medium w3-padding"><b>Duvid Blog</b></h1>
+            <div class="w3-container w3-center w3-padding-top-64 w3-margin-bottom ">
+                <h1 class="extrafonte  w3-hide-medium "><b>Duvid Blog</b></h1>
                 <h3>Bem-vindo ao blog do <span class="w3-tag"> Duvid Geografia</span></h3>
-            </header>
+            </div>
         </div>
 
         <!-- Image header -->
-        <header class="w3-display-container w3-wide" id="home">
-            <img class="w3-image" src="../blog/capaBlog.jpg" alt="Fashion Blog" width="1600" height="1060">
-            <div class="w3-display-left w3-padding-large">
+        <div class="w3-display-container " id="home">
+            <img class="w3-image w3-padding-top-24" src="../blog/capaBlog.jpg" alt="Foto de uma praia - Duvid Geografia"
+                width="1600">
+            <div class="w3-display-left w3-padding">
                 <!-- <h1 class="w3-text-white">Jane's</h1> -->
                 <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>DUVID BLOG</b></h1>
                 <!-- <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6> -->
             </div>
-        </header>
+        </div>
 
         <!-- Grid -->
-        <div class="w3-row w3-padding w3-border">
+        <div class="w3-row  w3-border larguraBar ">
+
+
 
             <!-- Blog entries -->
             <div class="w3-col l8 s12">
 
 
+                <!-- First Photo Grid-->
+                <div class="w3-row-padding">
 
-                 <!-- Blog entry -->
-                 <div class="w3-container w3-white w3-margin w3-padding-large w3-padding-top-24">
-                    <div class="w3-center ">
-                        <h3>
+                    <div class="w3-third w3-container w3-margin-bottom w3-padding-top-24">
+                        <img src="../blog/artigos/artigo04/artigo04f01.jpg"
+                            alt="Foto de uma mão manipulando um homem com cordas" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white ">
+                            <h2 class="w3-center"><strong>
+                                    <a href="../blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
+                                        class="link-artigo">
+                                        Neste mundo (financeiro) nada irá te salvar, nem mesmo o <em>Bitcoin</em> !</a>
+                                </strong>
+                            </h2>
 
-                            <a href="../blog/artigos/artigo03/artigo03.html" class="link-artigo">
-                                A nossa Guerra de cada dia</a>
-                        </h3>
-
-
-                        <h5 class="w3-padding-top-24"> A todo momento, o temor de uma Terceira Guerra Mundial surge na mídia e se prolonga por alguns dias ou até semanas, e isso tem se repetido há muito tempo. <span class="w3-opacity"> 20 de abril de
-                                2024.</span></h5>
-                    </div>
-
-                    <div class="w3-left">
-                        <img src="../blog/artigos/artigo03/artigo03f01.jpg" alt="Girl Hat" style="width:100%"
-                            class="w3-padding-16">
-                        <p>O fato é que transformamos nosso próprio cotidiano em uma verdadeira guerra interna, o que irá, com certeza, transbordar para o mundo externo. O que somos, a sociedade será...
-                        </p>
-                        <p> <a href="../blog/artigos/artigo03/artigo03.html" class="link-artigo"><span
-                                    class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS »</b></span></a>
-                        </p>
-
-                        <!-- <p class="w3-left"><button class="w3-button w3-white w3-border"
-                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                        <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')"
-                                id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
-                        <p class="w3-clear"></p>
-                        <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-                            <hr>
-                            <div class="w3-col l2 m3">
-                                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
-                            </div>
-                            <div class="w3-col l10 m9">
-                                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
-                                <p>Great blog post! Following</p>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <hr>
-
-
-
-                <!-- Blog entry -->
-                <div class="w3-container w3-white w3-margin w3-padding-large">
-                    <div class="w3-center ">
-                        <h3>
-
-                            <a href="../blog/artigos/artigo02/artigo02.html" class="link-artigo">
-                                Situações que me fizeram desistir de ser professor </a>
-                        </h3>
-
-
-                        <h5 class="w3-padding-top-24"> Fiz apenas um relato, dos inúmeros que um professor enfrenta em
-                            seu cotidiano.<span class="w3-opacity"> 14 de abril de
-                                2024.</span></h5>
-                    </div>
-
-                    <div class="w3-left">
-                        <img src="../blog/artigos/artigo02/artigo02f01.jpg" alt="Girl Hat" style="width:100%"
-                            class="w3-padding-16">
-                        <p>As dificuldades
-                            de lidar com a realidade das escolas públicas, a falta de recursos, os problemas sociais e
-                            as
-                            situações desumanas que tornam essa profissão tão nobre e, ao mesmo tempo, tão desgastante.
-                            Trata-se uma história de superação, resistência e de uma dolorosa decisão de abandonar a
-                            sala de
-                            aula. Este é um relato que revela não apenas as circunstâncias que levaram à desistência,
-                            mas
-                            também a força necessária para seguir em frente...
-                        </p>
-                        <p> <a href="../blog/artigos/artigo02/artigo02.html" class="link-artigo"><span
-                                    class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS »</b></span></a>
-                        </p>
-
-                        <!-- <p class="w3-left"><button class="w3-button w3-white w3-border"
-                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                        <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')"
-                                id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
-                        <p class="w3-clear"></p>
-                        <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-                            <hr>
-                            <div class="w3-col l2 m3">
-                                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
-                            </div>
-                            <div class="w3-col l10 m9">
-                                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
-                                <p>Great blog post! Following</p>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <hr>
-
-
-                <!-- Blog entry -->
-                <div class="w3-container w3-white w3-margin w3-padding-large">
-                    <div class="w3-center ">
-                        <h3>
-
-                            <a href="../blog/artigos/artigo01/artigo01.html" class="link-artigo">5
-                                Razões Pelas Quais
-                                Muitos Estudantes
-                                Não Gostam da Escola </a>
-                        </h3>
-
-
-                        <h5 class="w3-padding-top-24">A escola é um lugar de aprendizado, crescimento e descobertas, mas
-                            para muitos estudantes,
-                            pode
-                            ser
-                            um ambiente desafiador e até mesmo desagradável.<span class="w3-opacity"> 7 de abril de
-                                2024.</span></h5>
-                    </div>
-
-                    <div class="w3-left">
-                        <img src="../blog/artigos/artigo01/artigo01f01.jpg" alt="Girl Hat" style="width:100%"
-                            class="w3-padding-16">
-                        <p>A escola muitas vezes cria um ambiente de constante avaliação e comparação. Os estudantes são
-                            classificados, pontuados e comparados uns aos outros em termos de desempenho acadêmico. Esse
-                            sistema de avaliação pode instilar um profundo medo do julgamento, levando os estudantes a
-                            se
-                            preocuparem excessivamente com suas notas e a se sentirem constantemente pressionados para
-                            alcançar padrões impostos...
-                        </p>
-                        <p> <a href="../blog/artigos/artigo01/artigo01.html" class="link-artigo"><span
-                                    class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS »</b></span></a>
-                        </p>
-
-                        <!-- <p class="w3-left"><button class="w3-button w3-white w3-border"
-                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                        <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')"
-                                id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
-                        <p class="w3-clear"></p>
-                        <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-                            <hr>
-                            <div class="w3-col l2 m3">
-                                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
-                            </div>
-                            <div class="w3-col l10 m9">
-                                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
-                                <p>Great blog post! Following</p>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <hr>
-
-
-
-                <!-- Blog entry -->
-                <!-- <div class="w3-container w3-white w3-margin w3-padding-large">
-                    <div class="w3-center">
-                        <h3>TITLE HEADING</h3>
-                        <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
-                    </div>
-
-                    <div class="w3-justify">
-                        <img src="/w3images/man_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
-                        <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-                        <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl
-                            vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-                            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-                            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo
-                            condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <p class="w3-left"><button class="w3-button w3-white w3-border"
-                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                        <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies
-                                     </b> <span class="w3-tag w3-white">2</span></button></p>
-                        <p class="w3-clear"></p> -->
-
-                <!-- Example of comment field -->
-                <!-- <div id="demo2" style="display:none">
-                            <div class="w3-row">
-                                <hr>
-                                <div class="w3-col l2 m3">
-                                    <img src="/w3images/girl_train.jpg" style="width:90px;">
-                                </div>
-                                <div class="w3-col l10 m9">
-                                    <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
-                                    <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua.</p><br>
-                                </div>
-                            </div>
-                            <div class="w3-row w3-margin-bottom">
-                                <div class="w3-col l2 m3">
-                                    <img src="/w3images/girl.jpg" style="width:90px;">
-                                </div>
-                                <div class="w3-col l10 m9">
-                                    <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
-                                    <p>Love hats!!</p>
-                                </div>
-                            </div>
+                            <p>O Bitcoin é nova promessa de liberdade econômica atual. A promessa de
+                                que uma moeda promoverá uma mudança tão radical na sociedade que... <span class="w3-small w3-opacity" style="display: block;">27 de abril de
+                                    2024.</span>
+                            </p>
+                            <p> <a href="../blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
+                                    class="link-artigo"><span
+                                        class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
+                                            »</b></span></a>
+                            </p>
                         </div>
                     </div>
-                </div> -->
 
-                <!-- Blog entry -->
-                <!-- <div class="w3-container w3-white w3-margin w3-padding-large">
-                    <div class="w3-center">
-                        <h3>TITLE HEADING</h3>
-                        <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
-                    </div>
 
-                    <div class="w3-justify">
-                        <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
-                        <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!
-                        </p>
-                        <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl
-                            vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-                            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-                            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo
-                            condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <p class="w3-left"><button class="w3-button w3-white w3-border"
-                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                        <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies
-                                     </b> <span class="w3-tag w3-white">3</span></button></p>
-                        <p class="w3-clear"></p> -->
+                    <div class="w3-third w3-container w3-margin-bottom w3-padding-top-24">
+                        <img src="../blog/artigos/artigo03/artigo03f01.jpg"
+                            alt="Foto de uma mão manipulando um homem com cordas" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white ">
+                            <h2 class="w3-center"><strong>
+                                    <a href="../blog/artigos/artigo03/nossa-guerra-cada-dia.html" class="link-artigo">
+                                        A nossa Guerra de cada dia</a>
+                                </strong>
+                            </h2>
 
-                <!-- Example of comment field -->
-                <!-- <div id="demo3" style="display:none">
-                            <hr>
-                            <div class="w3-row w3-margin-bottom">
-                                <div class="w3-col l2 m3">
-                                    <img src="/w3images/girl_mountain.jpg" style="width:90px;">
-                                </div>
-                                <div class="w3-col l10 m9">
-                                    <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
-                                    <p>That was a great runway show! Thanks for everything.</p>
-                                </div>
-                            </div>
-                            <div class="w3-row w3-margin-bottom">
-                                <div class="w3-col l2 m3">
-                                    <img src="/w3images/boy.jpg" style="width:90px;">
-                                </div>
-                                <div class="w3-col l10 m9">
-                                    <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
-                                    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                </div>
-                            </div>
-                            <div class="w3-row w3-margin-bottom">
-                                <div class="w3-col l2 m3">
-                                    <img src="/w3images/girl_hood.jpg" style="width:90px;">
-                                </div>
-                                <div class="w3-col l10 m9">
-                                    <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
-                                    <p>Cant wait for the runway to start!</p>
-                                </div>
-                            </div>
+                            <p>A todo momento, o temor de uma Terceira Guerra Mundial surge na
+                                mídia e se prolonga por alguns dias ou até semanas, e isso tem se repetido há muito
+                                tempo.No entanto, o que não é suficiente para... <span class="w3-small w3-opacity"
+                                    style="display: block;">20 de abril de
+                                    2024.</span></p>
+                            <p> <a href="../blog/artigos/artigo03/nossa-guerra-cada-dia.html" class="link-artigo"><span
+                                        class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
+                                            »</b></span></a>
+                            </p>
                         </div>
                     </div>
-                </div> -->
+
+
+
+                    <div class="w3-third w3-container w3-margin-bottom w3-padding-top-24">
+                        <img src="../blog/artigos/artigo02/artigo02f01.jpg"
+                            alt="Sala de aula de uma escola pública - Duvid Geografia" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white ">
+                            <h2 class="w3-center">
+                                <a href="../blog/artigos/artigo02/situacoes-desistir-ser-professor.html"
+                                    class="link-artigo">
+                                    <strong>Situações que me fizeram desistir de ser professor </strong></a>
+                            </h2>
+
+                            <p>Fiz apenas um relato, dos inúmeros que um professor enfrenta em
+                                seu cotidiano.As dificuldades
+                                de lidar com a realidade das escolas públicas, a falta de recursos, os problemas sociais
+                                e
+                                as...
+                                <span class="w3-small w3-opacity" style="display: block;">14 de abril de 2024.</span>
+                            </p>
+
+
+                            <p> <a href="../blog/artigos/artigo02/situacoes-desistir-ser-professor.html"
+                                    class="link-artigo"><span
+                                        class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
+                                            »</b></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="w3-third w3-container w3-margin-bottom w3-padding-top-24">
+                        <img src="../blog/artigos/artigo01/artigo01f01.jpg" alt="Norway" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white ">
+                            <h2 class="w3-center">
+                                <a href="../blog/artigos/artigo01/razoes-estudantes-nao-gostam-escola.html"
+                                    class="link-artigo">
+                                    <strong>5 Razões Pelas Quais Muitos Estudantes Não Gostam da Escola </strong></a>
+                            </h2>
+
+
+
+
+                            <p>
+                                A escola é um lugar de aprendizado, crescimento e descobertas, mas
+                                para muitos estudantes,
+                                pode
+                                ser
+                                um ambiente desafiador...
+
+                                <span class="w3-small w3-opacity" style="display: block;">7 de abril de 2024.</span>
+                            </p>
+
+                            <p> <a href="../blog/artigos/artigo01/razoes-estudantes-nao-gostam-escola.html"
+                                    class="link-artigo"><span
+                                        class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
+                                            »</b></span></a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Fim do row -->
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <!-- END BLOG ENTRIES -->
             </div>
@@ -541,7 +429,8 @@
                         <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                         <div class="w3-modal-content w3-animate-zoom">
                             <img src="../blog/fotos/fotoblog02.jpeg" style="width:100%">
-                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Beco Ouro Preto, Minas Gerais.
+                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Beco
+                                    Ouro Preto, Minas Gerais.
                                 </strong></span>
                         </div>
                     </div>
@@ -550,8 +439,9 @@
                         <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                         <div class="w3-modal-content w3-animate-zoom">
                             <img src="../blog/fotos/fotoblog03.jpeg" style="width:100%">
-                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Ladeira em Ouro Preto, Minas Gerais.
-                            </strong></span>
+                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Ladeira
+                                    em Ouro Preto, Minas Gerais.
+                                </strong></span>
                         </div>
                     </div>
 
@@ -559,8 +449,9 @@
                         <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
                         <div class="w3-modal-content w3-animate-zoom">
                             <img src="../blog/fotos/fotoblog04.jpeg" style="width:100%">
-                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Fase continente africano - Jogo Aventura Geográfica
-                            </strong></span>
+                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Fase
+                                    continente africano - Jogo Aventura Geográfica
+                                </strong></span>
                         </div>
                     </div>
 
@@ -627,13 +518,13 @@
 
         </div>
 
-        <!-- END GRID -->
-
-        <div style="margin-left: 32px;">
+        <div class="w3-margin-left">
 
             <a href="#" class="w3-button w3-black w3-padding w3-margin-bottom"><i
                     class="fa fa-arrow-up w3-margin-right"></i>Início</a>
         </div>
+        <!-- END GRID -->
+
     </div>
 
 
