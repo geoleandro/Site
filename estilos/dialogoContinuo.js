@@ -2,7 +2,7 @@ const botaoDialogo = document.getElementById('botaoDialogo');
 
 const botaoDialogo2 = document.getElementById('botaoDialogo2');
 
-const typingSound = new Audio('../audios/dialogsound.mp3');
+const typingSound = new Audio('../../../audios/dialogsound.mp3');
 
 
 // Inicia o som junto com a exibição do primeiro diálogo
@@ -21,7 +21,7 @@ function showCurrentDialogue(idPrefix, nomeDialogo) {
     const dialogueElement = document.getElementById(`${idPrefix}${currentDialogueIndex % 2 + 1}`);
     dialogueElement.textContent = ''; // Limpa o conteúdo do elemento
 
-    console.log(dialogueElement);
+    // console.log(dialogueElement);
 
     let currentIndex = 0; // Variável para acompanhar o índice da letra atual
 
@@ -59,7 +59,8 @@ function showCurrentDialogue(idPrefix, nomeDialogo) {
 }
 
 // Função para avançar para o próximo diálogo
-function nextDialogue(idPrefix, nomeDialogo) {
+function nextDialogue(idPrefix, nomeDialogo, event) {
+    event.preventDefault(); // Evita o comportamento padrão do navegador
 
     document.getElementById(idPrefix + (currentDialogueIndex % 2 + 1)).disabled = true;
 
