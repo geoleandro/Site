@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 16 - O Comércio mundial</title>
+
+
+
+    <style>
+        .topico {
+            display: block;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .postit-tp9 {
+            background: #f5ff9e;
+
+            width: 40%;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+        .imagem-fundo {
+            background-image: url('../../../fotoIndex/cortica.jpg');
+            background-size: auto;
+            background-repeat: inherit;
+            padding: 0px;
+            /* Ajuste conforme necessário */
+        }
+
+
+        /* 
+Css do memory card */
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 16 - O Comércio mundial
+
+        </h1>
+
+
+        <p><strong> Conteúdo:</strong> Blocos comerciais; Organização Mundial do Comércio; Balança Comercial; Exportações e importações; Globalização. </p>
+
+        <p><strong>Objetivo:</strong> Relacionar as mudanças no comércio internacional no atual período da globalização.
+        </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, vimos o que é urbanização, suas causas e consequências
+            para o espaço geográfico. </p>
+
+        <p>Nesta aula, exploraremos outro elemento do espaço: as redes geográficas e seu papel na dinâmica do mundo
+            atual. </p>
+
+        <p>Discutiremos sobre os diferentes tipos de redes, os fluxos internacionais, o papel das empresas
+            multinacionais, as tecnologias da informação e a globalização e faremos uma atividade prática ao final da
+            aula.</p>
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+    <div class="topico">
+        <h2>Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+    
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ol>
+                <li>Qual é o papel da Organização Mundial do Comércio (OMC) no comércio internacional e como ela busca resolver disputas entre os países membros?</li>
+    
+                <li>Quais são os pontos positivos e negativos do protecionismo como política econômica? Explique pelo menos um exemplo de impacto negativo do protecionismo.</li>
+    
+                <li>Por que a balança comercial é uma medida importante para entender a economia de um país? Quais são os aspectos críticos a serem considerados ao analisar a balança comercial de um país?</li>
+    
+                <li>Explique a importância das exportações e importações para a economia de um país. Dê exemplos de como esses aspectos podem afetar a indústria doméstica e as relações comerciais internacionais.</li>
+    
+                <li>Quais são os principais desafios e questões críticas relacionados às commodities no comércio global? Dê exemplos de como a volatilidade dos preços das commodities pode afetar as economias de países exportadores.</li>
+            </ol>
+        </div>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2 id="centralizado">"Quanto mais eu leio, quanto mais aprendo, mais certo estou de que não sei nada". Voltaire</h2>
+    
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Como o comércio mundial na era da globalização afeta diferentes países?
+            </strong> </p>
+    
+        <p><span class="primeiraLetra">R:</span> O comércio mundial na globalização pode afetar países de maneiras diversas.
+            Por exemplo, países como China e Alemanha se beneficiam com acesso a novos mercados e oportunidades de exportação,
+            impulsionando seus setores manufatureiros e aumentando suas receitas de exportação. Enquanto isso, países
+            africanos podem enfrentar concorrência desleal devido à dependência de exportações de commodities, o que os
+            deixa vulneráveis a flutuações nos preços globais e pode dificultar seu desenvolvimento econômico.</p>
+    
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Quais são os principais ganhadores na globalização do comércio mundial?
+            </strong></p>
+    
+        <p><span class="primeiraLetra">R:</span> Os principais ganhadores na globalização do comércio mundial incluem países
+            como Singapura e Coreia do Sul, que têm vantagens comparativas em termos de mão de obra qualificada e
+            infraestrutura tecnológica. Esses países conseguiram diversificar suas exportações, passando de produtos
+            básicos para produtos de maior valor agregado, aumentando assim sua competitividade global e impulsionando seu
+            crescimento econômico.</p>
+    
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Quais são os possíveis perdedores na globalização do comércio mundial e por que eles enfrentam desafios?
+            </strong></p>
+    
+        <p><span class="primeiraLetra">R:</span> Os possíveis perdedores na globalização do comércio mundial incluem países
+            como Haiti e Bangladesh, que enfrentam dificuldades para competir em um mercado globalizado devido a
+            limitações de recursos, falta de infraestrutura e altos custos de produção. Esses países dependem
+            predominantemente de setores como têxtil e agrícola, que são suscetíveis a flutuações de preços e
+            concorrência internacional, o que pode resultar em desemprego, desindustrialização e aumento das desigualdades
+            econômicas.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
+        <br><br>
+    
+        <hr>
+    
+    </div>
+    
+
+
+
+    <div class="topico">
+
+
+        <h2>"Transformando a Sociedade e o Espaço Geográfico através das Redes Geográficas"</h2>
+
+        <p><strong>Descrição da Atividade:</strong></p>
+
+        <p>Em grupos elaborem uma solicitação às autoridades locais para que encontrem uma possível solução
+            para os problemas abaixo por meio das redes.</p>
+        <p>Cada grupo deve elaborar um plano sobre como utilizar as redes geográficas disponíveis para enfrentar o
+            problema identificado na cidade ou no campo. Considere quais redes podem ser modificadas, expandidas ou
+            melhoradas, quais parcerias podem ser estabelecidas e como a intervenção afetará diferentes partes da
+            sociedade.</p>
+        <p>Apresente seu plano de solicitação para a turma.</p>
+
+        <p>Reflita individualmente sobre o que aprendeu na aula. Tente fazer algumas questões de vestibulares sobre o
+            tema das redes se esse for seu foco neste momento.</p>
+        <p>Escolha um dos tópicos abaixo e discuta com seu grupo:</p>
+
+        <p><strong>Problema 1: Mobilidade Urbana</strong></p>
+        <p><strong>Desafio:</strong> Congestionamento de trânsito nas principais vias da cidade, resultando em atrasos,
+            estresse e poluição do ar.</p>
+        <p><strong>Qual a solução?</strong> </p>
+
+        <p><strong>Problema 2: Acesso à Saúde</strong></p>
+        <p><strong>Desafio:</strong> Falta de acesso a serviços de saúde em áreas periféricas da cidade, dificultando o
+            atendimento médico para a população local.</p>
+        <p><strong>Qual a solução?</strong> .</p>
+
+        <p><strong>Problema 3: Distribuição de Recursos Naturais</strong></p>
+        <p><strong>Desafio:</strong> Desigualdade na distribuição de água potável em comunidades rurais, resultando em
+            escassez e problemas de saúde relacionados à falta de higiene.</p>
+        <p><strong>Qual a solução?</strong> </p>
+
+        <p><strong>Problema 4: Desemprego Juvenil</strong></p>
+        <p><strong>Desafio:</strong> Alta taxa de desemprego entre jovens de baixa renda, resultando em ociosidade,
+            falta de perspectiva e aumento da criminalidade.</p>
+        <p><strong>Qual a solução?</strong> </p>
+
+        <p><strong>Problema 5: Poluição Ambiental</strong></p>
+        <p><strong>Desafio:</strong> Poluição do ar e da água devido à falta de saneamento básico e à emissão de gases
+            poluentes por indústrias e veículos.</p>
+        <p><strong>Qual a solução?</strong></p>
+
+        <p><strong>Problema 6: Exclusão Digital</strong></p>
+        <p><strong>Desafio:</strong> Falta de acesso à internet e tecnologia em áreas rurais e periféricas, resultando
+            em exclusão digital e limitação no acesso à informação e oportunidades educacionais e profissionais.</p>
+        <p><strong>Qual a solução?</strong> </p>
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
+
+
+
+
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+        <div class="imagem-fundo w3-mobile">
+
+
+
+
+            <div class="area">
+
+
+                <div class="postit-tp9 w3-margin-right ">
+
+                    <a href="https://www.em.com.br/app/noticia/economia/2021/11/22/internas_economia,1324901/veja-como-funciona-o-centro-de-distribuicao-da-amazon-em-minas-gerais.shtml"
+                        target="_blank">
+                        Veja como funciona o centro de distribuição da Amazon em Minas Gerais
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>SANTOS, Milton. <strong>A Natureza do Espaço:</strong> técnica e tempo, razão e emoção. São Paulo: EDUSP,
+            2002.</p>
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2.
+            ed. – São
+            Paulo: Ática, 2013.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+    <!-- <script>
+
+    function numButton() {
+        numB++;
+        document.getElementById("numero").innerHTML = numB;
+        console.log(numB);
+    }
+
+    </script> -->
+
+
+
+    <script>
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+
+                // numButton();
+                addProgressBar();
+
+                ApagaButton();
+                RemoveBalancarGlobo();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 10);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
