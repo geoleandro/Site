@@ -22,7 +22,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
-    <title>Duvid Blog</title>
+    <title>Duvid Blog2 Exemplos</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -95,47 +95,7 @@
             font-size: 5em !important;
         }
 
-        .dropdown-container {
-            position: relative;
-            display: inline-block;
-            background-color: #f9f9f9;
-        }
 
-        .dropdown-content,
-        .nested-dropdown-content {
-            display: none;
-
-            background-color: #f9f9f9;
-            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-            z-index: 1;
-        }
-
-        .dropdown-content .dropdown-item,
-        .nested-dropdown-content .dropdown-item {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            cursor: pointer;
-
-        }
-
-        .dropdown-content .dropdown-item:hover,
-        .nested-dropdown-content .dropdown-item:hover {
-
-            background-color: #f9f9f9;
-
-        }
-
-        .nested-dropdown-content .dropdown-item {
-            padding-left: 24px;
-        }
-
-        .nested-dropdown-content>a:hover {
-
-            text-decoration: underline;
-
-        }
 
 
 
@@ -157,6 +117,42 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+        }
+
+
+
+        /* Espaço para o dropdown arquivos blog */
+
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content,
+        .nested-dropdown-content {
+            display: none;
+            background-color: #f1f1f1;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            z-index: 1;
+        }
+
+        .dropdown-content .dropdown-item,
+        .nested-dropdown-content .dropdown-item {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+        }
+
+        .dropdown-content .dropdown-item:hover,
+        .nested-dropdown-content .dropdown-item:hover {
+
+            background-color: #f9f9f9;
+        }
+
+        .nested-dropdown-content .dropdown-item {
+            padding-left: 24px;
         }
     </style>
 
@@ -222,34 +218,6 @@
                 <!-- First Photo Grid-->
 
                 <div class="w3-row ">
-
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo09/artigo09f01.jpg"
-                                alt="Mãos apontando os dedos para um aluno" style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo09/o-que-a-escola-pode-aprender-com-os-videogames.html"
-                                        class="link-artigo">
-                                        <strong>  O que a Escola pode aprender com os videogames?</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Os videogames são frequentemente vistos apenas como entretenimento, mas eles também podem ser
-                        ferramentas poderosas de aprendizagem.
-                                    <span class="w3-small w3-opacity" style="display: block;">26 de maio de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo09/o-que-a-escola-pode-aprender-com-os-videogames.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
 
                     <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
@@ -676,8 +644,6 @@
                 </div>
 
 
-
-
                 <!-- Arquivo Blog -->
                 <div class="w3-container">
                     <div class="w3-container w3-padding w3-black">
@@ -685,12 +651,10 @@
                     </div>
 
                     <div class="dropdown-container">
-                        <button class="w3-button"
-                            onclick="toggleDropdown('dropdown')"><strong>Ano/Meses</strong></button>
+                        <button class="w3-button" onclick="toggleDropdown('dropdown')">Ano/Meses</button>
 
                         <div class="dropdown-content" id="dropdown">
-                            <div class="dropdown-item" onclick="toggleYearDropdown(event, 'dropdown-2024')"><strong>2024
-                                </strong>(9)
+                            <div class="dropdown-item" onclick="toggleYearDropdown(event, 'dropdown-2024')">2024
                                 <div class="nested-dropdown-content" id="dropdown-2024">
                                     <!-- 
                                     <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Junho
@@ -700,41 +664,28 @@
                                         </div>
                                     </div> -->
                                     <div class="dropdown-item"
-                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-janeiro')">Maio (5)
+                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-janeiro')">Maio
                                         <div class="nested-dropdown-content" id="dropdown-2024-janeiro">
                                             <!-- <a href="#" class="dropdown-item">Post 5</a> -->
-
-                                            <a href="../blog/artigos/artigo09/o-que-a-escola-pode-aprender-com-os-videogames.html"
-                                            class="dropdown-item"> O que a Escola pode aprender com os videogames?</a>
-
-                                            <a href="../blog/artigos/artigo08/o-impacto-destrutivo-da-competição-nas-escolas-a-cultura-nociva-do-melhor-aluno.html"
-                                                class="dropdown-item">O Impacto Destrutivo da Competição nas
+                                            <a href="#" class="dropdown-item">O Impacto Destrutivo da Competição nas
                                                 Escolas: A Cultura Nociva do “Melhor Aluno”</a>
-
-                                            <a href="../blog/artigos/artigo07/a-sociedade-so-valoriza-a-escola-quando-lhe-convem.html"
-                                                class="dropdown-item">A Sociedade Só Valoriza a Escola Quando
+                                            <a href="#" class="dropdown-item">A Sociedade Só Valoriza a Escola Quando
                                                 Lhe Convém</a>
-                                            <a href="../blog/artigos/artigo06/ser-socio-de-empresas-estatais-uma-escolha-estrategica.html"
-                                                class="dropdown-item">Ser Sócio de Empresas Estatais: Uma
+                                            <a href="#" class="dropdown-item">Ser Sócio de Empresas Estatais: Uma
                                                 Escolha Estratégica</a>
-                                            <a href="../blog/artigos/artigo05/ser-revolucionario-reformista-qual-melhor.html"
-                                                class="dropdown-item">Ser Revolucionário ou Reformista: Qual é a
+                                            <a href="#" class="dropdown-item">Ser Revolucionário ou Reformista: Qual é a
                                                 Melhor Opção?</a>
                                         </div>
                                     </div>
                                     <div class="dropdown-item"
-                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Abril (4)
+                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Abril
                                         <div class="nested-dropdown-content" id="dropdown-2024-fevereiro">
-                                            <a href="../blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
-                                                class="dropdown-item">Neste mundo (financeiro) nada irá te
+                                            <a href="#" class="dropdown-item">Neste mundo (financeiro) nada irá te
                                                 salvar, nem mesmo o Bitcoin!</a>
-                                            <a href="../blog/artigos/artigo03/nossa-guerra-cada-dia.html"
-                                                class="dropdown-item">A nossa Guerra de cada dia</a>
-                                            <a href="../blog/artigos/artigo02/situacoes-desistir-ser-professor.html"
-                                                class="dropdown-item">Situações que me fizeram desistir de ser
+                                            <a href="#" class="dropdown-item">A nossa Guerra de cada dia</a>
+                                            <a href="#" class="dropdown-item">Situações que me fizeram desistir de ser
                                                 professor</a>
-                                            <a href="../blog/artigos/artigo01/razoes-estudantes-nao-gostam-escola.html"
-                                                class="dropdown-item">5 Razões Pelas Quais Muitos Estudantes Não
+                                            <a href="#" class="dropdown-item">5 Razões Pelas Quais Muitos Estudantes Não
                                                 Gostam da Escola</a>
                                         </div>
                                     </div>
@@ -760,7 +711,6 @@
                         </div>
                     </div>
                 </div>
-
 
 
 
@@ -907,7 +857,6 @@
             var element = document.getElementById(id);
             if (element.style.display === "block") {
                 element.style.display = "none";
-                closeAllNestedDropdowns(); // Fecha todos os dropdowns de meses e posts
             } else {
                 element.style.display = "block";
             }

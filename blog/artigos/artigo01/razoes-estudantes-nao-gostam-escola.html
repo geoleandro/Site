@@ -20,7 +20,7 @@
     <script src="../../../estilos/jstextos.js" defer></script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
     <title>Duvid Blog 01 - 5 Razões Pelas Quais Muitos Estudantes
         Não Gostam da Escola</title>
@@ -93,7 +93,7 @@
 
 
 
-       
+
 
         .row {
             display: flex;
@@ -119,7 +119,7 @@
             /* Cor quando passa o mouse por cima */
         }
 
-       
+
 
         /* Estilo para o botão de compartilhamento do WhatsApp */
         .balanco-share {
@@ -214,6 +214,55 @@
         }
 
 
+
+        /* Espaço arquivo blog */
+
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+            background-color: #f9f9f9;
+        }
+
+        .dropdown-content,
+        .nested-dropdown-content {
+            display: none;
+         
+            background-color: #f9f9f9;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            z-index: 1;
+        }
+
+        .dropdown-content .dropdown-item,
+        .nested-dropdown-content .dropdown-item {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+          
+        }
+
+        .dropdown-content .dropdown-item:hover,
+        .nested-dropdown-content .dropdown-item:hover {
+
+            background-color: #f9f9f9;
+           
+        }
+
+        .nested-dropdown-content .dropdown-item {
+            padding-left: 24px;
+        }
+
+        .nested-dropdown-content > a:hover {
+
+           text-decoration: underline;
+           
+        }
+
+      
+
+
+
         /* Responsive layout - makes a two column-layout instead of four columns */
         @media (max-width: 1200px) {
             .column {
@@ -302,7 +351,10 @@
 
 <body class="w3-light-grey">
 
-
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v19.0&appId=422919300344152"
+        nonce="sF7mrsqT"></script>
 
     <!-- Navigation (Stays on Top) -->
     <div class="centerBar">
@@ -357,14 +409,15 @@
 
 
     <div class="w3-container">
-        <h4 class="w3-center w3-margin w3-padding-64">"Não é sinal de saúde estar bem ajustado a uma sociedade profundamente doente."
+        <h4 class="w3-center w3-margin w3-padding-64">"Não é sinal de saúde estar bem ajustado a uma sociedade
+            profundamente doente."
             <p class="w3-medium">Krishnamurti.</p>
         </h4>
 
-        
+
     </div>
 
-  
+
 
 
     <div class="w3-row">
@@ -373,7 +426,7 @@
 
             <div class="w3-col  ">
 
-                
+
 
 
                 <div class="w3-container artigo-texto w3-margin-bottom">
@@ -386,11 +439,12 @@
 
                     </h2>
 
-                    <div class="w3-margin w3-center"><img id="imagem1" src="../artigo01/artigo01f01.jpg" alt="Aluno triste na escola - Duvid Geografia" class="w3-mobile" style="width: 100%;">
+                    <div class="w3-margin w3-center"><img id="imagem1" src="../artigo01/artigo01f01.jpg"
+                            alt="Aluno triste na escola - Duvid Geografia" class="w3-mobile" style="width: 100%;">
 
                         <br>
 
-                        <span class="w3-small w3-margin-left" id="citacao1"> 
+                        <span class="w3-small w3-margin-left" id="citacao1">
                         </span>
                     </div>
 
@@ -489,6 +543,10 @@
 
 
 
+                    <div class="fb-comments"
+                        data-href="https://www.duvid.com.br/blog/artigos/artigo01/razoes-estudantes-nao-gostam-escola.html"
+                        data-width="700" data-numposts="10"></div>
+
                 </div>
                 <!-- fim da classe w3-row -->
             </div>
@@ -505,79 +563,200 @@
         <!-- ESPAÇO LATERAL -->
 
         <!-- Espaço para Outro Anúncio ou Propaganda -->
-       
-
-       
-        <div class="w3-container w3-quarter w3-white w3-round-large">
-
-
-           <!-- Tags -->
-           <div class="w3-white w3-margin">
-            <div class="w3-container w3-padding w3-black">
-                <h4>Tags</h4>
-            </div>
-            <div class="w3-container w3-white">
-                <p>
-
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Arte</span>
-
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Educação</span>
-                    
-                    <span  class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filosofia</span>
-
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Finanças</span> 
-
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jogos digitais</span> 
-                    
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Línguas</span>
-
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programação</span>
-
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poemas</span>
-
-                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Viagens</span>
-
-                    
-                </p>
-            </div>
-        </div>
-        <hr>
 
 
 
+        <div class="w3-container w3-quarter  w3-round-large">
 
 
-
-
-            <!-- Inspiration -->
-            <!-- <div class="w3-white w3-margin">
+            <!-- Tags -->
+            <div class="w3-white w3-margin">
                 <div class="w3-container w3-padding w3-black">
-                    <h4>Inspiration</h4>
+                    <h4>Tags</h4>
                 </div>
-                <div class="w3-row-padding w3-white">
-                    <div class="w3-col s6">
-                        <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
-                        <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
-                    </div>
-                    <div class="w3-col s6">
-                        <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%"
-                                class="w3-grayscale">
+                <div class="w3-container w3-white">
+                    <p>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Arte</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Educação</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filosofia</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Finanças</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jogos digitais</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Línguas</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programação</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poemas</span>
+
+                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Viagens</span>
+
+
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+
+
+
+            <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-black">
+                    <h4>Leia também</h4>
+                </div>
+                <div class="w3-container w3-white">
+                    <!-- artigo1 -->
+                    <div class="w3-container w3-white w3-row-padding">
+
+                        <div class="w3-padding-top-24">
+                            <img src="../artigo02/artigo02f01.jpg" alt="Foto de uma mão manipulando um homem com cordas"
+                                style="width:100%" class="w3-hover-opacity">
+                        </div>
+
+
+                        <p><strong>
+                                <a href="../artigo02/situacoes-desistir-ser-professor.html" class="link-artigo">
+                                    Situações que me fizeram desistir de ser professor
+                                </a>
+                            </strong>
                         </p>
-                        <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
+
+                    </div>
+
+                    <!-- artigo2 -->
+
+                    <div class="w3-container w3-white w3-row-padding">
+
+                        <div class="w3-padding-top-24">
+                            <img src="../artigo07/artigo07f01.jpg" alt="Foto de uma mão manipulando um homem com cordas"
+                                style="width:100%" class="w3-hover-opacity">
+                        </div>
+
+
+                        <p><strong>
+                                <a href="../artigo07/a-sociedade-so-valoriza-a-escola-quando-lhe-convem.html"
+                                    class="link-artigo">
+                                    A Sociedade Só Valoriza a Escola Quando Lhe Convém
+                                </a>
+                            </strong>
+                        </p>
+
+                    </div>
+
+
+                    <!-- artigo3 -->
+
+
+                    <div class="w3-container w3-white w3-row-padding">
+
+                        <div class="w3-padding-top-24">
+                            <img src="../artigo08/artigo08f01.jpg" alt="Foto de uma mão manipulando um homem com cordas"
+                                style="width:100%" class="w3-hover-opacity">
+                        </div>
+
+
+                        <p><strong>
+                                <a href="../artigo08/o-impacto-destrutivo-da-competição-nas-escolas-a-cultura-nociva-do-melhor-aluno.html"
+                                    class="link-artigo">
+                                    O Impacto Destrutivo da Competição nas Escolas: A Cultura Nociva do “Melhor Aluno”
+                                </a>
+                            </strong>
+                        </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+
+
+
+            <!-- Arquivo Blog -->
+            <div class="w3-container">
+                <div class="w3-container w3-padding w3-black">
+                    <h4>Arquivo Blog</h4>
+                </div>
+
+                <div class="dropdown-container">
+                    <button class="w3-button" onclick="toggleDropdown('dropdown')"><strong>Ano/Meses</strong></button>
+
+                    <div class="dropdown-content" id="dropdown">
+                        <div class="dropdown-item" onclick="toggleYearDropdown(event, 'dropdown-2024')"><strong>2024
+                            </strong>(8)
+                            <div class="nested-dropdown-content" id="dropdown-2024">
+                                <!-- 
+                    <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Junho
+                        <div class="nested-dropdown-content" id="dropdown-2024-fevereiro">
+                            <a href="#" class="dropdown-item">Post 1</a>
+                            <a href="#" class="dropdown-item">Post 2</a>
+                        </div>
+                    </div> -->
+                                <div class="dropdown-item"
+                                    onclick="toggleNestedDropdown(event, 'dropdown-2024-janeiro')">Maio (4)
+                                    <div class="nested-dropdown-content" id="dropdown-2024-janeiro">
+                                        <!-- <a href="#" class="dropdown-item">Post 5</a> -->
+                                        <a href="../artigo08/o-impacto-destrutivo-da-competição-nas-escolas-a-cultura-nociva-do-melhor-aluno.html"
+                                            class="dropdown-item">O Impacto Destrutivo da Competição nas
+                                            Escolas: A Cultura Nociva do “Melhor Aluno”</a>
+                                        <a href="../artigo07/a-sociedade-so-valoriza-a-escola-quando-lhe-convem.html"
+                                            class="dropdown-item">A Sociedade Só Valoriza a Escola Quando
+                                            Lhe Convém</a>
+                                        <a href="../artigo06/ser-socio-de-empresas-estatais-uma-escolha-estrategica.html"
+                                            class="dropdown-item">Ser Sócio de Empresas Estatais: Uma
+                                            Escolha Estratégica</a>
+                                        <a href="../artigo05/ser-revolucionario-reformista-qual-melhor.html"
+                                            class="dropdown-item">Ser Revolucionário ou Reformista: Qual é a
+                                            Melhor Opção?</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item"
+                                    onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Abril (4)
+                                    <div class="nested-dropdown-content" id="dropdown-2024-fevereiro">
+                                        <a href="../artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
+                                            class="dropdown-item">Neste mundo (financeiro) nada irá te
+                                            salvar, nem mesmo o Bitcoin!</a>
+                                        <a href="../artigo03/nossa-guerra-cada-dia.html"
+                                            class="dropdown-item">A nossa Guerra de cada dia</a>
+                                        <a href="../artigo02/situacoes-desistir-ser-professor.html"
+                                            class="dropdown-item">Situações que me fizeram desistir de ser
+                                            professor</a>
+                                        <a href="../artigo01/razoes-estudantes-nao-gostam-escola.html"
+                                            class="dropdown-item">5 Razões Pelas Quais Muitos Estudantes Não
+                                            Gostam da Escola</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="dropdown-item" onclick="toggleYearDropdown(event, 'dropdown-2023')">2023
+                <div class="nested-dropdown-content" id="dropdown-2023">
+                    <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2023-marco')">Março
+                        <div class="nested-dropdown-content" id="dropdown-2023-marco">
+                            <a href="#" class="dropdown-item">O Impacto Destrutivo da Competição nas Escolas: A Cultura Nociva do “Melhor Aluno”</a>
+                            <a href="#" class="dropdown-item">Post 2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2023-abril')">Abril
+                        <div class="nested-dropdown-content" id="dropdown-2023-abril">
+                            <a href="#" class="dropdown-item">Post 1</a>
+                            <a href="#" class="dropdown-item">Post 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
                     </div>
                 </div>
             </div>
-            <hr> -->
+
 
 
             <!-- FIM DA CLASSE W3-QUARTER -->
         </div>
-
-        <!-- Espaço para Outro Anúncio ou Propaganda -->
-        <!-- <div class="w3-quarter w3-container w3-pink">
-            Código do Google AdSense ou outro tipo de anúncio
-            <p>Coloque outro anúncio aqui</p>
-        </div> -->
 
 
         <!-- FIM DA CLASSE ROW -->
@@ -626,7 +805,40 @@ fim do row -->
 
 
 
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+                closeAllNestedDropdowns(); // Fecha todos os dropdowns de meses e posts
+            } else {
+                element.style.display = "block";
+            }
+        }
 
+        function toggleYearDropdown(event, id) {
+            event.stopPropagation();
+            closeAllNestedDropdowns(); // Fecha todos os dropdowns de meses e posts
+            toggleNestedDropdown(event, id);
+        }
+
+        function toggleNestedDropdown(event, id) {
+            event.stopPropagation();
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+
+        function closeAllNestedDropdowns() {
+            var nestedDropdowns = document.querySelectorAll('.nested-dropdown-content');
+            nestedDropdowns.forEach(function (dropdown) {
+                dropdown.style.display = 'none';
+            });
+        }
+    </script>
 
 
 

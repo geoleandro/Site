@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>2º ano - Texto 17 </title>
+
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 17 - Vegetação II</h1>
+
+
+        <p><strong> Conteúdo:</strong> Floresta amazônica; Mata Atlântica; Mata de Araucárias.
+        </p>
+
+        <p><strong>Objetivo:</strong> Destacar as principais características das vegetações do Brasil: Floresta
+            amazônica, Mata atlântica, Manguezal; Mata de Araucárias e os impactos da interferência humana nesses
+            domínios.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, entramos em contato com os principais problemas
+            climáticos do Brasil e sobre a influência das massas de ar, intervenções no relevo para tratar dessa
+            questão.
+        </p>
+
+
+        <p>Hoje, vamos relacionar o principal parceiro do clima: a vegetação em nosso país. Nessa primeira parte vamos
+            conhecer a Floresta amazônica, a Mata Atlântica e a Mata de Araucárias e seus problemas.</p>
+
+        <p>O Brasil é conhecido pela exuberância de sua vegetação, mas também pela sua ação predatória ao longo dos
+            séculos. </p>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2>Mata dos Cocais</h2>
+
+        
+		  <div class="w3-margin"><img id="imagem1" src="ts17f01.png" alt="ts17f01" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao1" >Fonte: https://conhecimentocientifico.r7.com </span>
+           
+           </div>
+
+        <p><strong>Localização e Características Gerais:</strong></p>
+        <p>A Mata dos Cocais é uma região de transição localizada entre a Floresta Amazônica (a oeste), a Caatinga (a
+            leste) e o Cerrado (ao sul). Ela se estende pelos estados do Maranhão, Piauí, partes do Ceará e norte do
+            Tocantins, sob o domínio do clima tropical.</p>
+
+        <p><strong>Vegetação Predominante:</strong></p>
+
+         
+		   <div class="w3-margin"><img id="imagem2" src="ts17f02.png" alt="ts17f02" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao2">  </span>
+        </div>
+        <p>Predominam as palmáceas, sendo as espécies mais conhecidas:</p>
+        <ul>
+            <li><strong>Babaçu:</strong> Uma palmeira cuja extração do coco é fundamental para a economia local.</li>
+            <li><strong>Carnaúba:</strong> Surge ao longo dos rios e terrenos alagados, conhecida por suas folhas
+                cerosas utilizadas na produção de cera.</li>
+            <li><strong>Buriti:</strong> Outra espécie de palmeira, típica de áreas alagadas, cujos frutos e palmeiras
+                são usados de diversas formas.</li>
+        </ul>
+
+        <p><strong>Interferência Humana e Impactos:</strong></p>
+        <p><strong>Extrativismo Vegetal:</strong> A extração do coco de babaçu é uma atividade tradicional e econômica
+            crucial para a região, alimentando tanto o mercado local quanto a indústria de cosméticos.</p>
+        <p><strong>Indústria de Cosméticos:</strong> A região é notável pela exploração de recursos naturais para a
+            produção de cosméticos, especialmente aqueles derivados do coco de babaçu.</p>
+        <p><strong>Desmatamento e Degradação Ambiental:</strong> A pressão econômica para a extração de recursos e a
+            expansão agrícola tem levado ao desmatamento e à degradação do ecossistema da Mata dos Cocais.</p>
+        <p><strong>Sustentabilidade:</strong> Iniciativas de manejo sustentável e conservação são essenciais para
+            mitigar os impactos da exploração humana e garantir a preservação da biodiversidade local.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2>Pantanal</h2>
+
+        <div class="w3-margin"><img id="imagem3" src="ts17f03.png" alt="ts17f03" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao3" > Fonte: Wikipedia. </span>
+            
+            </div>
+
+        <p><strong>Localização e Características Gerais:</strong></p>
+        <p>O Pantanal é a maior planície alagada do mundo, situado principalmente nos estados do Mato Grosso e Mato
+            Grosso do Sul, além de partes menores na Bolívia e Paraguai. Este bioma é caracterizado por sua vasta rede
+            de rios, lagoas e áreas alagadiças.</p>
+
+        <p><strong>Vegetação Predominante:</strong></p>
+        <p>A vegetação do Pantanal é uma combinação de espécies de cerrado, floresta amazônica e chaco boliviano,
+            incluindo gramíneas, arbustos e árvores esparsas.</p>
+
+        <p><strong>Interferência Humana e Impactos:</strong></p>
+        <p><strong>Pecuária Extensiva:</strong> A criação de gado é a principal atividade econômica, causando alterações
+            no solo e na vegetação.</p>
+
+            <div class="w3-margin"><img id="imagem4" src="ts17f04.png" alt="ts17f04" class="w3-mobile" >
+		   
+                <span class="w3-small w3-margin-left" id="citacao4" > Fonte: www.brasil.com </span>
+                
+                </div>
+            
+
+
+
+
+        <p><strong>Queimadas e Desmatamento:</strong> Práticas de manejo inadequado e queimadas sazonais contribuem para
+            a degradação do ecossistema.</p>
+        <p><strong>Turismo Sustentável:</strong> A promoção de turismo ecológico tem surgido como uma alternativa
+            econômica e ambientalmente sustentável.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2>Cerrado</h2>
+
+        <div class="w3-margin"><img id="imagem5" src="ts17f05.png" alt="ts17f05" class="w3-mobile" >
+		  
+			<span class="w3-small w3-margin-left" id="citacao5" > Fonte: Organizado pelo autor. </span>
+		   </div>
+
+        <p><strong>Localização e Características Gerais:</strong></p>
+        <p>O Cerrado, o segundo maior bioma da América do Sul, cobre aproximadamente 25% do território brasileiro,
+            incluindo Goiás, Mato Grosso, Mato Grosso do Sul, Minas Gerais, e partes de outros estados.</p>
+
+        <p><strong>Vegetação Predominante:</strong></p>
+        <p>A vegetação é composta por uma mistura de gramíneas, arbustos e árvores esparsas adaptadas ao clima
+            sazonalmente seco.</p>
+
+        <p><strong>Interferência Humana e Impactos:</strong></p>
+        <p><strong>Agronegócio:</strong> A expansão da agricultura e pecuária tem levado ao desmatamento extensivo do
+            Cerrado.</p>
+        <p><strong>Perda de Biodiversidade:</strong> A destruição do habitat natural ameaça inúmeras espécies endêmicas.
+        </p>
+        <p><strong>Iniciativas de Conservação:</strong> Programas de conservação e recuperação de áreas degradadas são
+            essenciais para preservar este bioma único.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2>Caatinga</h2>
+
+
+        <div class="w3-margin"><img id="imagem6" src="ts17f06.png" alt="ts17f06" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao6" >  </span>
+            
+            </div>
+        
+    
+        <p><strong>Localização e Características Gerais:</strong></p>
+        <p>A Caatinga é um bioma exclusivo do Brasil, cobrindo cerca de 10% do território nacional, predominantemente no Nordeste.</p>
+    
+        <p><strong>Vegetação Predominante:</strong></p>
+        <p>Caracteriza-se por uma vegetação xerófila, adaptada ao clima semiárido, incluindo cactos, arbustos espinhosos e árvores de pequeno porte.</p>
+    
+        <p><strong>Interferência Humana e Impactos:</strong></p>
+        <p><strong>Agricultura de Subsistência:</strong> Práticas agrícolas inadequadas contribuem para a degradação do solo.</p>
+        <p><strong>Desertificação:</strong> A exploração excessiva e as mudanças climáticas intensificam os processos de desertificação.</p>
+        <p><strong>Projetos de Sustentabilidade:</strong> Iniciativas de manejo sustentável e recuperação ambiental são vitais para a regeneração do bioma.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+    
+
+    <div class="topico">
+
+        <h2>Pampas</h2>
+
+        <div class="w3-margin"><img id="imagem7" src="ts17f07.png" alt="ts17f07" class="w3-mobile" >
+		  
+            <span class="w3-small w3-margin-left" id="citacao7" >  </span>
+            </div>
+        
+    
+        <p><strong>Localização e Características Gerais:</strong></p>
+        <p>Os Pampas estão localizados principalmente no Rio Grande do Sul, estendendo-se até o Uruguai e Argentina. Este bioma é caracterizado por vastas planícies cobertas por gramíneas.</p>
+    
+        <p><strong>Vegetação Predominante:</strong></p>
+        <p>A vegetação dos Pampas é composta principalmente por gramíneas e poucas árvores, adaptadas ao clima temperado com estações bem definidas.</p>
+    
+        <p><strong>Interferência Humana e Impactos:</strong></p>
+        <p><strong>Pecuária e Agricultura:</strong> A principal atividade econômica, que impacta o solo e a vegetação.</p>
+        <p><strong>Erosão do Solo:</strong> O manejo inadequado das pastagens pode levar à erosão e perda de fertilidade do solo.</p>
+        <p><strong>Conservação de Pastagens Naturais:</strong> Programas de manejo sustentável são necessários para manter a saúde ecológica do bioma.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+    
+
+
+    <div class="topico">
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>
+                    Qual é a situação atual do Cerrado em relação à sua cobertura original e qual é o impacto do
+                    agronegócio nessa região?
+                </strong> </p>
+            <p><span class="primeiraLetra">R:</span>
+                O Cerrado atualmente conta com algo em torno de 48% de sua cobertura original. O agronegócio,
+                especialmente o plantio da soja, tem desempenhado um papel significativo na transformação dessa região.
+                A expansão das fronteiras agrícolas tem levado à conversão de matas nativas em grandes áreas de
+                monocultura, conhecidas como desertos verdes, o que resulta na perda de biodiversidade e na degradação
+                dos ecossistemas naturais do Cerrado.
+            </p>
+        </div>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>
+                    Como o clima e a pluviosidade do Pantanal influenciam as inundações periódicas, e quais são as
+                    causas dessas inundações?
+                </strong></p>
+            <p><span class="primeiraLetra">R:</span>
+                No Pantanal, os índices de pluviosidade são inferiores aos verificados na maior parte da região
+                Centro-Oeste. As inundações periódicas nessa região são mais justificadas pela topografia da Bacia do
+                rio Paraguai do que pelo volume das chuvas. As chuvas, concentradas no verão, juntamente com a
+                topografia plana da bacia, resultam em extensas áreas alagadas, que são características do Pantanal.
+            </p>
+        </div>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span><strong>
+                    Quais são os principais conflitos que surgem no Cerrado e Pampas devido às práticas agrícolas e ao
+                    uso da terra?
+                </strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span>
+                No Cerrado, os principais conflitos envolvem camponeses e pequenos agricultores que enfrentam a expansão
+                do agronegócio, que muitas vezes leva à desapropriação de terras e à degradação ambiental. Nos Pampas, a
+                vegetação é composta por gramíneas em uma área de clima subtropical, e a eliminação da cobertura vegetal
+                para a prática agrícola pode levar a processos de arenização, que é a transformação do solo em areia.
+                Essa degradação do solo pode reduzir a produtividade agrícola e causar conflitos entre agricultores e
+                defensores da conservação ambiental.
+            </p>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
+        <br><br>
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="topico w3-pale-yellow ">
+
+        <p class="caixa">Agora é com você!</p>
+
+
+
+        <h1>Atividade: O livro das perguntas</h1>
+
+        <p><strong>Instruções</strong>:</p>
+
+        <ul>
+
+            <li>Forme um grupo com 5-6 estudantes;</li>
+
+            <li> Cada grupo deve escolher um tópico abaixo e desenvolver três questões relacionadas a ele. </li>
+
+            <li> Reflita criticamente e a explore diferentes perspectivas.</li>
+
+            <li> Pense em processos, causas e consequências </li>
+
+            <li>Faça questões desafiadoras sobre a relação entre o ser humano e a vegetação.</li>
+
+            <li>Tempo da atividade: 15 minutos.</li>
+
+        </ul>
+
+
+        <h1>Exemplo de tópico</h1>
+
+        <p><strong>Motivações e Interesses</strong>:</p>
+
+        <p>- Como as ambições individuais e coletivas podem levar à degradação da vegetação?</p>
+
+        <p>- Em que medida a busca por recursos naturais afeta a preservação da vegetação?</p>
+
+        <p><strong>Lucro e Crescimento Econômico</strong>:</p>
+
+        <p><strong>Consciência Ecológica e Conexão com a Natureza</strong>:</p>
+
+
+        <p><strong>Educação Ambiental:</strong>:</p>
+
+
+        <p><strong>Influências Sociais, Culturais e Políticas</strong>:</p>
+
+
+        <p><strong>Tecnologia e Degradação da Vegetação</strong>:</p>
+
+
+        <p><strong>Responsabilidade Individual e Coletiva</strong>:</p>
+
+
+        <p><strong>Consequências da Degradação da Vegetação</strong>:</p>
+
+
+
+      
+
+
+
+
+
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://ipam.org.br/desmatamento-no-cerrado-mais-do-que-dobrou-em-novembro-aponta-sad-cerrado/?gad_source=1&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8qW2ZscMUfzvBbNdqz812dy55FMgZOsYvepLRqUtZnGAaE67BxYaXwaAv7tEALw_wcB" target="_blank">
+                    Desmatamento no Cerrado mais que dobrou em novembro
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. - São
+            Paulo: Ática, 2013.
+        </p>
+
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace("w3-green", "w3-lightgrey");
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace("w3-lightgrey", "w3-green");
+            }
+        }
+
+
+        function openModal(id, event) {
+            event.preventDefault();
+            // Obter todas as divs com a classe "content"
+            var divs = document.getElementsByClassName("content");
+
+            // Percorrer todas as divs
+            for (var i = 0; i < divs.length; i++) {
+                // Se a div atual for a div com o id passado como parâmetro, mostrar a div
+                if (divs[i].id === id) {
+                    divs[i].style.display = "block";
+                } else { // Caso contrário, esconder a div
+                    divs[i].style.display = "none";
+                }
+            }
+
+            console.log("ID do elemento:", id);
+        }
+
+
+
+
+        function closeModal() {
+
+
+
+            var contents = document.getElementsByClassName("content");
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+            }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 12);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
