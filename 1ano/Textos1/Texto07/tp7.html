@@ -152,7 +152,27 @@
 
 
 
-
+	<div class="topico">
+		<div class="w3-pale-yellow">
+			<h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+			
+			<h3>1. O que são Sistemas de Informações Geográficas (SIGs)?</h3>
+			<h3>2. Como a tecnologia tem contribuído para a evolução da Cartografia?</h3>
+			<h3>3. Explique o que é sensoriamento remoto e como ele funciona.</h3>
+			<h3>4. Quais são os três tipos de tecnologias que compõem os SIGs?</h3>
+			<h3>5. Qual é a diferença entre sensoriamento remoto passivo e ativo?</h3>
+			<h3>6. Como as imagens de satélites são transformadas em imagens coloridas?</h3>
+			<h3>7. Qual é a importância do GPS na coleta de dados geográficos?</h3>
+			<h3>8. Quais são as principais aplicações do GPS mencionadas no texto?</h3>
+			<h3>9. O que é o projeto CBERS e qual é a sua finalidade?</h3>
+			<h3>10. Como os SIGs são utilizados no planejamento urbano e na administração pública?</h3>
+			
+		</div>
+		
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+	</div>
+	
 
 
 
@@ -1571,30 +1591,32 @@
 
 			comentarios();
 
-			var incorrretas = 15 - corretas;
+			var incorrretas = 10 - corretas;
 			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
 			var imagem = ["img1.gif", "img2.gif", "img3.gif"];
 			var pontos;
 
+			
 			if (corretas < 5) {
 				pontos = 2;
 
 			}
 
-			if (corretas >= 5 && corretas <= 10) {
+			if (corretas >= 5 && corretas <= 7) {
 				pontos = 1;
 			}
 
 
-			if (corretas >= 10) {
+			if (corretas >= 7) {
 				pontos = 0;
 
 			}
 
 
+
 			nota = corretas;
 
-			let percent = (corretas * 100) / 15;
+			let percent = (corretas * 100) / 10;
 
 			percent = percent.toFixed(0);
 
