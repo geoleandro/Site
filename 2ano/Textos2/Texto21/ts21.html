@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>2º ano - Texto 21 - Hidrografia brasileira</title>
+
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 21 - Hidrografia brasileira</h1>
+
+
+        <p><strong> Conteúdo:</strong> Bacias hidrográficas: Bacia Amazônica, Tocantins-Araguaia, São Francisco, Platina, Parnaíba; Rede hidrográfica; Rios brasileiros; Aquíferos.
+        </p>
+
+        <p><strong>Objetivo:</strong> Definir e entender o conceito de bacia hidrográfica e comparar as características naturais e socioeconômicas das bacias brasileiras.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada vimos a relação entre o uso da terra e as questões socioambientais.
+        </p>
+
+
+        <p>Na aula de hoje vamos estudar as bacias hidrográficas do Brasil. Estudar a hidrografia brasileira nos permite compreender como a água influencia a distribuição da população, as atividades econômicas e os desafios ambientais que o país enfrenta.</p>
+
+     
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+        <div class="w3-pale-yellow">
+            <h2>Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+            
+            <h3>1. Explique a importância das bacias hidrográficas para o Brasil, citando pelo menos três funções essenciais que elas desempenham.</h3>
+            <h3>2. O que são divisores de água e qual a sua importância na formação das bacias hidrográficas?</h3>
+            <h3>3. Compare as características do Rio Amazonas com as de outros rios brasileiros mencionados no texto, focando no regime hídrico e na importância socioeconômica.</h3>
+            <h3>4. Descreva as características e a importância da Bacia Amazônica para o Brasil e para o mundo.</h3>
+            <h3>5. Por que o Aquífero Guarani é considerado uma reserva estratégica de água doce? Quais são os desafios associados à sua exploração?</h3>
+            <h3>6. Qual é a diferença entre rios perenes e rios temporários? Dê exemplos desses tipos de rios no Brasil.</h3>
+            <h3>7. A transposição do Rio São Francisco é um dos maiores projetos de infraestrutura hídrica do Brasil. Explique seus objetivos e os desafios que essa obra enfrenta.</h3>
+            <h3>8. Como a Bacia Platina contribui para o desenvolvimento econômico do Brasil? Cite pelo menos duas atividades econômicas associadas a essa bacia.</h3>
+            <h3>9. Explique como a localização geográfica e os centros dispersores de água influenciam a rede hidrográfica do Brasil.</h3>
+            <h3>10. Discuta a relação entre a distribuição desigual de recursos hídricos no Brasil e os desafios de gestão enfrentados pelo país.</h3>
+        </div>
+        
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+    
+
+
+
+    <div class="topico">
+
+        <h2>Bacias Hidrográficas: Definição e Importância</h2>
+
+        <div class="w3-margin"><img id="imagem1" src="ts21f01.png" alt="ts21f01" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao1" > </span>
+           
+           </div>
+    
+    
+        <p>Uma bacia hidrográfica, também conhecida como bacia de drenagem, é uma área ou região onde as águas de chuva, montanhas, lençóis subterrâneos e rios escoam em direção a um curso d'água principal e seus afluentes. Em termos simples, é a porção de terreno onde as águas convergem para um único ponto de saída, como um rio, lago ou oceano.</p>
+    
+        <p>A Importância das Bacias Hidrográficas<br>As bacias hidrográficas desempenham um papel fundamental na vida humana e no meio ambiente. Elas são fontes essenciais de recursos hídricos, fornecendo água para o consumo humano, a irrigação de culturas, a produção industrial e a geração de energia. Além disso, as bacias sustentam ecossistemas diversos e complexos, abrigando uma ampla variedade de flora e fauna.</p>
+    
+        <p>No aspecto econômico, muitas bacias hidrográficas são vitais para atividades como pesca, agricultura irrigada e transporte fluvial. No Brasil, grandes projetos de infraestrutura, como a transposição do Rio São Francisco, demonstram a importância estratégica dessas áreas para o desenvolvimento regional e nacional.</p>
+    
+        <p>Divisores de Água e Rede Hidrográfica<br>Os divisores de água, também conhecidos como interflúvios, são as fronteiras naturais que separam uma bacia hidrográfica de outra. Eles estão geralmente localizados em áreas elevadas, como montanhas ou colinas, e desempenham um papel crucial na determinação de para onde as águas escoam.</p>
+    
+        <p>No Brasil, a rede hidrográfica é vasta e complexa. Ela é formada pelo conjunto de todos os cursos d'água de uma região, incluindo rios principais, afluentes e córregos. Essa rede recebe água de três centros dispersores: a Cordilheira dos Andes, o Planalto das Guianas e o Planalto Central Brasileiro, o que contribui para a diversidade e a extensão das bacias hidrográficas brasileiras.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+    
+    <div class="topico">
+
+        <h2>Características dos Rios Brasileiros</h2>
+    
+        <p>Os rios brasileiros são, em sua maioria, alimentados pelas chuvas, apresentando um regime hídrico pluvial. No entanto, há exceções, como o Rio Amazonas, que possui um regime misto, sendo alimentado tanto pelas chuvas quanto pelo derretimento de neves nos Andes.</p>
+    
+        <h2>Curiosidades sobre os Rios Brasileiros</h2>
+    
+        <p><strong>Perenidade:</strong> A maioria dos rios no Brasil é perene, ou seja, eles possuem água durante todo o ano. No entanto, em regiões semiáridas, como o Nordeste, existem rios temporários, que secam em períodos de estiagem.</p>
+    
+        <p><strong>Energia:</strong> Muitos rios brasileiros, especialmente aqueles localizados em planaltos, são aproveitados para a geração de energia hidrelétrica. Isso ocorre devido aos desníveis topográficos e ao elevado índice pluviométrico nessas regiões. Um exemplo icônico é o Rio Paraná, que abriga a Usina Hidrelétrica de Itaipu, uma das maiores do mundo.</p>
+    
+        <p><strong>Navegação:</strong> Rios de planície, como o Amazonas e o Paraguai, são amplamente utilizados para navegação, servindo como importantes vias de transporte para pessoas e mercadorias.</p>
+    
+        <p><strong>Fozes:</strong> O Brasil possui exemplos de diferentes tipos de fozes. O Rio Amazonas, por exemplo, possui uma foz mista, com delta e estuário. Já o Rio São Francisco tem uma foz em estuário.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+    
+
+    <div class="topico">
+
+        <h2>Principais Bacias Hidrográficas Brasileiras</h2>
+
+      
+	   
+        <div class="w3-margin"><img id="imagem2" src="ts21f02.png" alt="ts21f02" class="w3-mobile">
+         <span class="w3-small w3-margin-left" id="citacao2">  </span>
+     </div>
+    
+    
+        <h3>Bacia Amazônica</h3>
+        <p>A Bacia Amazônica é a maior bacia hidrográfica do mundo, cobrindo uma área extensa que abrange estados como Acre, Amazonas, Pará e Rondônia. O Rio Amazonas, que nasce na Cordilheira dos Andes, no Peru, percorre 6.992 km até desaguar no Oceano Atlântico.</p>
+        <p><strong>Importância:</strong> A Bacia Amazônica é fundamental para a manutenção da biodiversidade e para a regulação do clima global. Além disso, o rio Amazonas é uma importante via de transporte, facilitando o escoamento de produtos, como grãos e minérios, para o mercado externo. A bacia também desempenha um papel crucial no sustento das populações ribeirinhas, fornecendo água, alimentos e recursos naturais.</p>
+    
+        <h3>Bacia do Tocantins-Araguaia</h3>
+        <p>A Bacia do Tocantins-Araguaia é a maior bacia hidrográfica exclusivamente brasileira. Seus principais rios, o Tocantins e o Araguaia, têm grande relevância tanto para a navegação quanto para a geração de energia. A Usina Hidrelétrica de Tucuruí, localizada no Rio Tocantins, é uma das maiores do Brasil e desempenha um papel essencial no fornecimento de energia para a região Norte.</p>
+        <p><strong>Curiosidade:</strong> O Rio Araguaia abriga a maior ilha fluvial do mundo, a Ilha do Bananal, que é um importante santuário ecológico.</p>
+    
+        <h3>Bacia do São Francisco</h3>
+        <p>O Rio São Francisco, conhecido como "Velho Chico", é o principal rio da bacia que leva seu nome. Ele nasce na Serra da Canastra, em Minas Gerais, e percorre mais de 2.800 km até desaguar no Oceano Atlântico, entre os estados de Alagoas e Sergipe.</p>
+        <p><strong>Desafios:</strong> A transposição do Rio São Francisco é um dos maiores projetos de infraestrutura hídrica do Brasil. O objetivo é levar água para regiões do semiárido nordestino que sofrem com a seca, beneficiando mais de 12 milhões de pessoas.</p>
+        <p><strong>Importância:</strong> O Rio São Francisco é vital para a sobrevivência das populações ribeirinhas, especialmente no semiárido, onde a água é escassa. Ele também é utilizado para a irrigação de plantações, o que impulsiona a agricultura na região.</p>
+    
+        <h3>Bacia Platina</h3>
+        <p>A Bacia Platina é formada pelos rios Paraná, Paraguai e Uruguai, sendo a segunda maior bacia hidrográfica do Brasil. O Rio Paraná é o mais importante da bacia, servindo como fonte para várias usinas hidrelétricas, incluindo Itaipu.</p>
+        <p><strong>Curiosidade:</strong> A Usina Hidrelétrica de Itaipu, localizada no Rio Paraná, é uma das maiores geradoras de energia do mundo, abastecendo grande parte do Brasil e do Paraguai.</p>
+    
+        <h3>Bacia do Parnaíba</h3>
+        <p>Localizada no Nordeste do Brasil, a Bacia do Parnaíba abrange estados como Piauí e Maranhão. Embora seja menos expressiva economicamente em comparação com outras bacias, ela desempenha um papel importante na agricultura local e no abastecimento de água.</p>
+        <p><strong>Curiosidade:</strong> A vegetação ao longo da Bacia do Parnaíba varia desde a caatinga até a floresta tropical, refletindo a diversidade de ecossistemas encontrados na região.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+
+
+    <div class="topico">
+
+        <h2>Aquíferos Brasileiros</h2>
+    
+        <p>Além dos rios e bacias hidrográficas, o Brasil também é rico em aquíferos, que são reservatórios subterrâneos de água. O Aquífero Guarani é o maior e mais importante deles, estendendo-se por Brasil, Paraguai, Uruguai e Argentina.</p>
+    
+        <h3>Aquífero Guarani</h3>
+
+        <div class="w3-margin"><img id="imagem3" src="ts21f03.png" alt="ts21f03" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao3" >  </span>
+            
+            </div>
+        <p>O Aquífero Guarani ocupa uma área de cerca de 1,2 milhões de km² e é considerado o maior reservatório de água subterrânea do mundo. No Brasil, ele está presente em estados como São Paulo, Paraná e Mato Grosso do Sul.</p>
+        <p><strong>Importância:</strong> O Aquífero Guarani é uma reserva estratégica de água doce, essencial para o abastecimento futuro do país. Sua preservação é crucial, pois a contaminação ou a exploração excessiva poderiam comprometer a disponibilidade de água para as futuras gerações.</p>
+        <p><strong>Curiosidade:</strong> Em algumas regiões, o Aquífero Guarani está a mais de 1.800 metros de profundidade, o que torna sua exploração um desafio técnico e econômico.</p>
+    
+        <h3>Considerações Finais</h3>
+        <p>A hidrografia brasileira é um dos principais recursos naturais do país, e sua gestão sustentável é crucial para garantir o desenvolvimento econômico, social e ambiental. Compreender as características e a importância das bacias hidrográficas e aquíferos é essencial para a formação de cidadãos conscientes sobre a preservação e uso racional da água.</p>
+        <p><strong>Curiosidade Final:</strong> O Brasil, apesar de toda sua abundância de água, enfrenta desafios relacionados à sua distribuição desigual. Enquanto a região Norte concentra a maior parte dos recursos hídricos, o Nordeste sofre com escassez e secas frequentes. Isso destaca a importância de políticas públicas eficientes para garantir o acesso à água em todo o território nacional.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+    
+    
+
+    <div class="topico">
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+    
+        <div class="borda">
+
+            <p> <span class="primeiraLetra">P:</span> <strong>Por que a Bacia Amazônica é tão importante para o Brasil e para o mundo?</strong> </p>
+        
+            <p><span class="primeiraLetra">R:</span> A Bacia Amazônica é a maior bacia hidrográfica do mundo e desempenha um papel crucial na regulação do clima global, na manutenção da biodiversidade e como fonte de recursos naturais, como água e alimentos. Além disso, é uma via de transporte importante e sustenta a vida de muitas comunidades ribeirinhas.</p>
+        </div>
+        
+        <div class="borda">
+        
+            <p> <span class="primeiraLetra">P:</span> <strong>O que diferencia os rios de planície dos rios de planalto no Brasil?</strong></p>
+        
+            <p><span class="primeiraLetra">R:</span> Rios de planície, como o Amazonas e o Paraguai, têm cursos mais lentos e são amplamente utilizados para a navegação. Já os rios de planalto, como o São Francisco e o Paraná, possuem desníveis acentuados, o que os torna ideais para a geração de energia hidrelétrica devido ao seu potencial energético.</p>
+        </div>
+        
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span><strong>Quais são os principais desafios enfrentados na gestão do Aquífero Guarani?</strong></p>
+        
+            <p><span class="primeiraLetra">R:</span> Os principais desafios na gestão do Aquífero Guarani incluem a exploração sustentável dos seus recursos hídricos, a prevenção da contaminação por atividades agrícolas e industriais, e a necessidade de uma cooperação internacional eficaz entre os países que compartilham o aquífero, como Brasil, Paraguai, Uruguai e Argentina.</p>
+        </div>
+        
+    
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://www.gov.br/mdr/pt-br/assuntos/seguranca-hidrica/projeto-sao-francisco"
+                    target="_blank">
+                    Projeto de Integração do Rio São Francisco
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>MARIANO, Maryelle Florêncio (et al.). <strong>Geografia do Brasil.</strong> Londrina: Editora e Distribuidora Educacional S.A., 2018.</p>
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. - São
+            Paulo: Ática, 2013.
+        </p>
+
+
+     
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 8);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
