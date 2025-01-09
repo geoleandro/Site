@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>1º ano - Texto 16 - Fontes de energia II – alternativas renováveis</title>
+
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 16 - Fontes de energia II – alternativas renováveis</h1>
+
+
+        <p><strong> Conteúdo:</strong> Energias renováveis; Biomassa; Energia Eólica; Solar; Hidráulica; Geotérmica; Maremotriz; Eletricidade;
+
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Identificar alternativas energéticas renováveis para uso no mundo atual.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula anterior, vimos que as fontes de energia renováveis são aquelas que se regeneram naturalmente em um curto período de tempo e, por isso, são consideradas mais sustentáveis. Diferentemente das fontes fósseis (como petróleo e carvão), que liberam grandes quantidades de dióxido de carbono (CO₂) na atmosfera, as energias renováveis têm um impacto ambiental significativamente menor.
+        </p>
+
+        <p>Na aula de hoje, vamos estudar a preocupação com as mudanças climáticas e a segurança energética,  e como o uso de fontes renováveis está em ascensão. Vamos explorar as principais alternativas desse tipo de energia.</p>
+
+       
+
+      
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+        <div class="w3-pale-yellow">
+            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+            
+            <h3>1. O que é biomassa e quais são suas principais formas de aproveitamento?</h3>
+            <h3>2. Quais são as vantagens do uso da biomassa como fonte de energia?</h3>
+            <h3>3. Como funciona a geração de energia eólica e quais são seus principais desafios?</h3>
+            <h3>4. Dê um exemplo prático do uso da energia eólica no Brasil e explique por que essa região é ideal para essa fonte de energia.</h3>
+            <h3>5. Explique como a energia solar é aproveitada por meio de painéis fotovoltaicos e sistemas solares térmicos.</h3>
+            <h3>6. Quais são as principais vantagens e desafios da energia solar?</h3>
+            <h3>7. O que é energia geotérmica e quais são seus principais benefícios e limitações?</h3>
+            <h3>8. Como a energia maremotriz é gerada e quais são os desafios associados a essa fonte de energia?</h3>
+            <h3>9. O que é eletricidade verde e como a integração de fontes renováveis está sendo otimizada atualmente?</h3>
+            <h3>10. Qual é o impacto das fontes renováveis na diversificação da matriz energética do Brasil? Cite exemplos.</h3>
+        </div>
+        
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+    
+    
+    <div class="topico">
+
+        <h2>1. Biomassa: Energia Renovável a Partir da Matéria Orgânica</h2>
+
+        <div class="w3-margin"><img id="imagem1" src="tp16f01.png" alt="tp16f01" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao1" > </span>
+           
+           </div>
+    
+              
+     
+    
+        <p>A biomassa é uma fonte de energia renovável obtida a partir de matéria orgânica, incluindo resíduos agrícolas, restos florestais, dejetos de animais e até resíduos urbanos, como lixo orgânico. Essa fonte de energia tem se destacado por seu potencial de reaproveitamento de materiais que, de outra forma, seriam descartados, contribuindo para a redução de resíduos e o aproveitamento de recursos naturais.</p>
+    
+        <p><strong>Como a Biomassa Funciona?</strong> A energia da biomassa pode ser aproveitada de diversas formas:</p>
+        <p>- <strong>Combustão Direta:</strong> A biomassa é queimada para produzir calor, que pode ser usado diretamente em processos industriais ou para gerar vapor que aciona turbinas e produz eletricidade.</p>
+        <p>- <strong>Conversão em Biocombustíveis:</strong> Etanol (da fermentação de cana-de-açúcar ou milho) e biodiesel (de óleos vegetais ou gorduras animais) são usados em motores de combustão.</p>
+        <p>- <strong>Produção de Biogás:</strong> Por meio da decomposição anaeróbica de resíduos orgânicos, gerando gás metano que pode ser usado para eletricidade ou como combustível veicular.</p>
+    
+        <p><strong>Exemplo Prático no Brasil:</strong> O Brasil se destaca na produção de etanol a partir da cana-de-açúcar. O bagaço restante é utilizado para gerar eletricidade. Além disso, o biogás captado em aterros sanitários é convertido em energia, reduzindo gases de efeito estufa.</p>
+    
+        <p><strong>Vantagens:</strong> Aproveitamento de resíduos, redução de emissões, versatilidade no uso, e estímulo à economia local.</p>
+        <p><strong>Desafios:</strong> Impactos ambientais devido à obtenção insustentável, competição com a produção de alimentos, e poluição local causada pela queima.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+
+    <div class="topico">
+
+        <div class="w3-panel  w3-pale-red ">
+
+        <h2>2. Energia Eólica: Aproveitando a Força do Vento</h2>
+
+        <div class="w3-margin"><img id="imagem2" src="tp16f02.png" alt="tp16f02" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao2"> </span>
+        </div>
+	   
+    
+        <p>A energia eólica é uma das fontes renováveis mais limpas e promissoras para geração de eletricidade no mundo. Utilizando a força do vento, ela transforma a energia cinética do ar em energia elétrica por meio de turbinas eólicas, também chamadas de aerogeradores.</p>
+    
+        <p><strong>Como Funciona?</strong> O processo de geração de energia eólica é relativamente simples, mas altamente eficiente:</p>
+        <p>- <strong>Movimento das Pás:</strong> O vento move as pás das turbinas, projetadas para captar o máximo de energia do ar em movimento.</p>
+        <p>- <strong>Conversão de Energia:</strong> As pás conectadas a um rotor acionam um gerador que converte a energia mecânica em energia elétrica.</p>
+        <p>- <strong>Distribuição:</strong> A eletricidade gerada é enviada para subestações e distribuída para a rede elétrica.</p>
+    
+        <p><strong>Exemplo Prático no Brasil:</strong> O Brasil é líder na produção de energia eólica, com destaque para estados como Rio Grande do Norte, Bahia e Ceará. Um exemplo notável é o Parque Eólico de Lagoa do Mato, que fornece energia para milhares de residências.</p>
+        <p>A energia eólica representa cerca de 12% da matriz elétrica brasileira, com grande potencial de expansão devido às condições favoráveis de vento no país.</p>
+    
+        <p><strong>Vantagens:</strong> Sustentabilidade, fonte renovável e inesgotável, criação de empregos, geração de renda para proprietários de terras, e diversificação energética.</p>
+        <p><strong>Desafios:</strong> Dependência de ventos regulares, impacto na fauna, poluição visual e sonora, e altos custos iniciais de instalação.</p>
+
+        </div>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+    
+    <div class="topico">
+
+        <h2>3. Energia Solar: A Força do Sol ao Nosso Alcance</h2>
+
+        <div class="w3-margin"><img id="imagem3" src="tp16f03.png" alt="tp16f03" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao3" >  </span>
+            
+            </div>
+        
+    
+        <p>A energia solar é uma das fontes de energia renovável mais promissoras, especialmente em países tropicais como o Brasil, onde a radiação solar é abundante durante todo o ano. Essa fonte de energia é obtida diretamente do sol, utilizando tecnologias que convertem a luz e o calor em eletricidade ou outras formas de energia útil.</p>
+    
+        <p><strong>Como Funciona?</strong></p>
+        <p>- <strong>Painéis Fotovoltaicos:</strong> Contêm células fotovoltaicas feitas de materiais semicondutores, como o silício. A luz solar gera um fluxo de elétrons, produzindo eletricidade, que pode ser usada, armazenada ou enviada para a rede elétrica.</p>
+        <p>- <strong>Sistemas Solares Térmicos:</strong> Utilizam coletores solares para captar o calor do sol, aquecendo água ou fluidos específicos para uso residencial ou industrial.</p>
+    
+        <p><strong>Exemplo Prático no Brasil:</strong> A energia solar cresce rapidamente no país. Minas Gerais e São Paulo se destacam pela instalação de painéis em residências e empresas. O Complexo Solar Pirapora, em Minas Gerais, é um dos maiores parques solares da América Latina, fornecendo energia limpa para milhares de residências. Programas públicos incentivam a adoção de sistemas solares em áreas remotas.</p>
+    
+        <p><strong>Vantagens:</strong> Fonte renovável e infinita, sustentabilidade ambiental, independência energética, economia a longo prazo, e acessibilidade em áreas isoladas.</p>
+        <p><strong>Desafios:</strong> Alto custo inicial, dependência do clima, necessidade de grandes áreas, e descarte de materiais requerendo políticas de reciclagem adequadas.</p>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    
+    </div>
+    
+
+
+
+    <div class="topico">
+
+        <div class="w3-panel  w3-pale-green ">
+
+        <h2>4. Energia Geotérmica</h2>
+
+        <div class="w3-margin"><img id="imagem4" src="tp16f04.png" alt="tp16f04" class="w3-mobile" >
+		   
+            <span class="w3-small w3-margin-left" id="citacao4" >  </span>
+            
+            </div>
+    
+        <p>A energia geotérmica utiliza o calor proveniente do interior da Terra para geração de energia e aquecimento.</p>
+    
+        <p><strong>Como Funciona?</strong> O calor subterrâneo aquece a água, gerando vapor que movimenta turbinas e produz eletricidade.</p>
+        <p><strong>Exemplo Prático:</strong> A Islândia é um dos maiores exemplos de uso da energia geotérmica, empregando-a para aquecer residências e gerar eletricidade.</p>
+        <p><strong>Vantagens:</strong> Fonte constante e independente do clima.</p>
+        <p><strong>Desafios:</strong> Necessita de locais específicos com significativa atividade geotérmica, como regiões vulcânicas.</p>
+    
+        <hr>
+    
+        <h2>5. Energia Maremotriz</h2>
+
+        <div class="w3-margin"><img id="imagem5" src="tp16f05.png" alt="tp16f05" class="w3-mobile" >
+		  
+			<span class="w3-small w3-margin-left" id="citacao5" >  </span>
+		   </div>
+	   
+    
+        <p>A energia maremotriz é obtida pelo movimento das marés e ondas do mar, utilizando o fluxo natural da água para gerar energia.</p>
+    
+        <p><strong>Como Funciona?</strong> Turbinas submersas ou dispositivos flutuantes captam a força da água em movimento, transformando-a em eletricidade.</p>
+        <p><strong>Exemplo Prático:</strong> Projetos-piloto no Reino Unido e França mostram o potencial da energia maremotriz como fonte de energia limpa.</p>
+        <p><strong>Vantagens:</strong> Fonte previsível devido aos ciclos regulares das marés.</p>
+        <p><strong>Desafios:</strong> Tecnologia ainda em desenvolvimento e possível impacto nos ecossistemas marinhos.</p>
+    
+        <hr>
+    
+        <h2>6. Eletricidade Verde e Integração das Fontes</h2>
+    
+        <p>O conceito de eletricidade verde integra diferentes fontes renováveis em redes inteligentes, otimizando sua utilização de forma sustentável.</p>
+    
+        <p><strong>Exemplo Prático:</strong> Sistemas avançados de armazenamento, como baterias, permitem o uso da energia solar captada durante o dia para abastecer a demanda à noite.</p>
+    
+        <p><strong>Benefícios:</strong> A integração melhora a eficiência e torna o fornecimento de energia mais confiável, reduzindo a dependência de fontes fósseis.</p>
+
+        </div>
+    
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+    
+    </div>
+    
+
+
+
+    <div class="topico">
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>Por que as fontes renováveis, como a solar e a eólica, são consideradas sustentáveis em comparação às fontes não renováveis?</strong> </p>
+            <p><span class="primeiraLetra">R:</span> Elas são consideradas sustentáveis porque utilizam recursos naturais que se renovam continuamente, como o sol e o vento, e não produzem resíduos poluentes significativos. Além disso, essas fontes não contribuem diretamente para o aquecimento global, ao contrário dos combustíveis fósseis.</p>
+        </div>
+        
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>Quais são os maiores desafios para o uso em larga escala da energia geotérmica no Brasil?</strong></p>
+            <p><span class="primeiraLetra">R:</span> O principal desafio é a localização de áreas com potencial geotérmico significativo, já que essa fonte depende de atividade vulcânica ou termal. No Brasil, essas áreas são limitadas, o que dificulta a expansão dessa tecnologia.</p>
+        </div>
+        
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span><strong>Como as tecnologias atuais ajudam a integrar diferentes fontes de energias renováveis na matriz elétrica?</strong></p>
+            <p><span class="primeiraLetra">R:</span> Tecnologias como redes inteligentes (smart grids) e sistemas avançados de armazenamento, como baterias de longa duração, permitem equilibrar a intermitência de fontes como solar e eólica, otimizando o uso e distribuição da energia gerada.</p>
+        </div>
+        
+    
+    
+        
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://www.bbc.com/portuguese/articles/crg8lg80xlwo" target="_blank">
+                    Combustíveis fósseis: a humanidade vai conseguir viver sem eles?
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>MARIANO, Maryelle Florêncio (et al.). <strong>Geografia do Brasil.</strong> Londrina: Editora e Distribuidora
+            Educacional S.A., 2018.</p>
+
+      
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. - São
+            Paulo: Ática, 2013.
+        </p>
+
+
+
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 8);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
