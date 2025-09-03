@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>1º ano - Texto 19 - Fundamentos de climatologia I</title>
+
+
+
+
+    <style>
+        .topico {
+            display: block;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 19 - Fundamentos de climatologia I</h1>
+
+
+        <p><strong> Conteúdo:</strong> Camas da atmosfera; Tempo; Clima; Elementos do clima: temperatura, umidade e
+            pressão atmosférica.
+
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Diferenciar tempo e clima. Identificar e compreender os elementos do clima
+            (temperatura, pressão atmosférica, umidade, ventos e precipitação).</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula anterior estudamos os solos, entendendo como eles se formam, como
+            são utilizados e de que forma podem ser conservados. Agora, vamos olhar para o céu!
+        </p>
+
+        <p>Nesta aula, vamos dar os primeiros passos no estudo da Climatologia, a área da Geografia que analisa os
+            fenômenos que acontecem na atmosfera da Terra. Vamos entender o que é o clima, o que é o tempo e conhecer os
+            elementos do clima, que são:
+            temperatura, umidade, pressão atmosférica, ventos e precipitação.</p>
+
+        <p>Compreender esses elementos é essencial para interpretar as mudanças no tempo, entender os tipos de clima e
+            perceber como esses fenômenos afetam o nosso dia a dia.</p>
+
+
+
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+        <div class="w3-pale-yellow">
+            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+
+            <h3>1. O que é biomassa e quais são suas principais formas de aproveitamento?</h3>
+            <h3>2. Quais são as vantagens do uso da biomassa como fonte de energia?</h3>
+            <h3>3. Como funciona a geração de energia eólica e quais são seus principais desafios?</h3>
+            <h3>4. Dê um exemplo prático do uso da energia eólica no Brasil e explique por que essa região é ideal para
+                essa fonte de energia.</h3>
+            <h3>5. Explique como a energia solar é aproveitada por meio de painéis fotovoltaicos e sistemas solares
+                térmicos.</h3>
+            <h3>6. Quais são as principais vantagens e desafios da energia solar?</h3>
+            <h3>7. O que é energia geotérmica e quais são seus principais benefícios e limitações?</h3>
+            <h3>8. Como a energia maremotriz é gerada e quais são os desafios associados a essa fonte de energia?</h3>
+            <h3>9. O que é eletricidade verde e como a integração de fontes renováveis está sendo otimizada atualmente?
+            </h3>
+            <h3>10. Qual é o impacto das fontes renováveis na diversificação da matriz energética do Brasil? Cite
+                exemplos.</h3>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+    <div class="topico">
+        <div class="w3-pale-green">
+            <h2>1. O que é a atmosfera da Terra</h2>
+
+
+
+            <p>A atmosfera é uma camada de gases que envolve todo o planeta Terra, como se fosse um grande cobertor
+                protetor, ela atua sobre a manutenção de temperaturas adequadas à vida e protege os organismos da
+                radiação ultravioleta. Esses gases surgiram desde a formação do planeta, há bilhões de anos, e se
+                modificaram com o tempo. Eles vêm de diferentes fontes:</p>
+
+            <p>• Da própria atividade da Terra (como vulcões);<br>
+                • De impactos de meteoros;<br>
+                • Da vida orgânica (plantas, animais, microrganismos);<br>
+                • E, mais recentemente, das atividades humanas, como a indústria e a queima de combustíveis.</p>
+
+            <p>Essa mistura de gases não é igual em toda a atmosfera, ela não é homogênea. A composição, temperatura e
+                densidade do ar mudam conforme a altitude, ou seja, conforme a gente se afasta do solo.</p>
+
+            <p>A gravidade da Terra é o que mantém essa camada gasosa no lugar. Ela é mais densa perto do solo e vai
+                ficando mais rarefeita conforme subimos. Só para ter uma ideia: os primeiros 29 km da atmosfera
+                concentram cerca de 98% da sua massa.</p>
+
+            <p>A principal função da atmosfera é proteger a vida. Ela filtra as radiações perigosas do espaço, mantém a
+                temperatura adequada para vivermos e possibilita o ciclo da água e do ar, essenciais para a nossa
+                existência.</p>
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2>2. Composição da atmosfera</h2>
+
+        <p>Mesmo sendo muito fina em relação ao tamanho da Terra (representa apenas 0,0001% da massa total do planeta),
+            a atmosfera é fundamental para a manutenção da vida.</p>
+
+        <p>Ela é formada por uma mistura de gases invisíveis, como:</p>
+
+        <p><strong>Nitrogênio (N₂): 78%</strong><br>
+            É o gás mais abundante da atmosfera. Ele não participa diretamente da respiração, mas é essencial para os
+            ciclos naturais, como o ciclo do nitrogênio, que ajuda no crescimento das plantas.</p>
+
+        <p><strong>Oxigênio (O₂): 21%</strong><br>
+            É o gás que nós, os animais, e muitos microrganismos usamos para respirar. Também é importante para queimar
+            combustíveis (inclusive dentro do nosso corpo, quando usamos a energia dos alimentos!).</p>
+
+        <p><strong>Argônio (Ar): 0,0934%</strong><br>
+            É um gás nobre, que não tem cheiro, cor nem sabor, e não reage com outros elementos. Ele está presente em
+            pequenas quantidades.</p>
+
+        <p><strong>Dióxido de carbono (CO₂): 0,033%</strong><br>
+            Mesmo em pouca quantidade, é um gás muito importante. As plantas o utilizam na fotossíntese, e ele também
+            participa do efeito estufa, que ajuda a manter a Terra aquecida, mas seu excesso tem causado problemas como
+            o aquecimento global.</p>
+
+        <p>Além desses, existem outros gases em quantidades ainda menores, como o vapor d’água, o ozônio (O₃), o hélio
+            (He), o metano (CH₄) e o hidrogênio (H₂).</p>
+
+        <p><em>Curiosidade:</em> Mesmo em pequenas quantidades, esses gases "menores" podem ter grande impacto nos
+            fenômenos climáticos e na vida na Terra.</p>
+
+        <p>O vapor d’água, por exemplo, se condensa rapidamente sob as temperaturas predominantes no planeta, de modo
+            que sua concentração no ar depende da temperatura do local e da proximidade de grandes massas líquidas, como
+            os oceanos. Assim sendo, o vapor d’água é fundamental para os processos climáticos como a precipitação,
+            nevoeiros, geadas, granizo entre outros.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>Por que as fontes renováveis, como a solar e a eólica, são
+                    consideradas sustentáveis em comparação às fontes não renováveis?</strong> </p>
+            <p><span class="primeiraLetra">R:</span> Elas são consideradas sustentáveis porque utilizam recursos
+                naturais que se renovam continuamente, como o sol e o vento, e não produzem resíduos poluentes
+                significativos. Além disso, essas fontes não contribuem diretamente para o aquecimento global, ao
+                contrário dos combustíveis fósseis.</p>
+        </div>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>Quais são os maiores desafios para o uso em larga escala
+                    da energia geotérmica no Brasil?</strong></p>
+            <p><span class="primeiraLetra">R:</span> O principal desafio é a localização de áreas com potencial
+                geotérmico significativo, já que essa fonte depende de atividade vulcânica ou termal. No Brasil, essas
+                áreas são limitadas, o que dificulta a expansão dessa tecnologia.</p>
+        </div>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span><strong>Como as tecnologias atuais ajudam a integrar diferentes
+                    fontes de energias renováveis na matriz elétrica?</strong></p>
+            <p><span class="primeiraLetra">R:</span> Tecnologias como redes inteligentes (smart grids) e sistemas
+                avançados de armazenamento, como baterias de longa duração, permitem equilibrar a intermitência de
+                fontes como solar e eólica, otimizando o uso e distribuição da energia gerada.</p>
+        </div>
+
+
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://www.bbc.com/portuguese/articles/crg8lg80xlwo" target="_blank">
+                    Combustíveis fósseis: a humanidade vai conseguir viver sem eles?
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>MARIANO, Maryelle Florêncio (et al.). <strong>Geografia do Brasil.</strong> Londrina: Editora e Distribuidora
+            Educacional S.A., 2018.</p>
+
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. - São
+            Paulo: Ática, 2013.
+        </p>
+
+
+
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 8);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
