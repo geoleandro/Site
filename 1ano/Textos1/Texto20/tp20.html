@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+    <script src="../../../estilos/glossario.js" defer></script>
+
+    <title>1º ano - Texto 20 - Fundamentos de climatologia II</title>
+
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 20 - Fundamentos de climatologia II</h1>
+
+
+        <p><strong> Conteúdo:</strong> Latitude; Altitude; Maritimidade; Continentalidade; Correntes Marítimas; Monções;
+            Ventos Alísios; Massas de ar. Marés. Climas temperados, tropical e polar.
+
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Identificar e compreender o papel dos fatores climáticos na definição dos tipos de
+            clima no mundo.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+    <div class="topico w3-pale-blue w3-round-large w3-margin-top w3-padding-32">
+
+        <h2 class="w3-text-indigo"><b> Introdução</b></h2>
+
+
+
+
+        <!-- Texto reescrito de forma mais fluida -->
+        <p>
+            Na <span class="w3-text-teal"><b>aula 19</b></span>, demos os primeiros passos,
+            aprendendo a diferenciar <span class="w3-text-deep-orange"><b>tempo</b></span> e
+            <span class="w3-text-deep-orange"><b>clima</b></span>, além de conhecer os
+            <span class="w3-text-green"><b>elementos climáticos</b></span> — como a
+            <b>temperatura</b>, a <b>pressão atmosférica</b>, a <b>umidade</b>, os
+            <b>ventos</b> e a <b>precipitação</b>.
+        </p>
+
+        <p>
+            Agora, em <span class="w3-text-indigo"><b>Climatologia II</b></span>, vamos
+            avançar um pouco mais. Nesta etapa, o foco será compreender os
+            <span class="w3-text-brown"><b>fatores climáticos</b></span>, ou seja,
+            aqueles que <em>modificam</em> e <em>explicam</em> a diversidade de climas
+            ao redor do mundo.
+        </p>
+
+        <p>
+            Entre eles estão a <b>latitude</b>, a <b>altitude</b>, a
+            <b>maritimidade</b> e a <b>continentalidade</b>, além das
+            <b>correntes marítimas</b>, as <b>monções</b>, os
+            <b>ventos alísios</b>, as <b>massas de ar</b> e as
+            <b>marés</b>. Também vamos conhecer melhor climas específicos,
+            como o <b>temperado</b>, o <b>tropical</b> e o <b>polar</b>.
+        </p>
+
+        <div class="w3-panel w3-sand w3-leftbar w3-border-blue w3-margin">
+            <p><em>Ao final da aula, você terá uma visão mais clara
+                    de como esses fatores atuam em conjunto para moldar os diferentes
+                    cenários climáticos do planeta.</em></p>
+        </div>
+
+        <button class="btnShow w3-button w3-indigo w3-round"
+            onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+    </div>
+
+
+
+   <div id="sumario" class="topico w3-padding-64">
+        <div class="w3-pale-yellow">
+            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+
+            <h3>1. O que é latitude e como ela influencia o clima de uma região?</h3>
+            <h3>2. Por que cidades localizadas em altitudes elevadas, como La Paz (3.600 m), apresentam temperaturas
+                mais baixas que cidades no nível do mar, mesmo estando próximas aos trópicos?</h3>
+            <h3>3. Diferencie maritimidade e continentalidade e explique seus efeitos no clima.</h3>
+            <h3>4. Dê um exemplo de como as correntes marítimas influenciam o clima de uma região.</h3>
+            <h3>5. O que são massas de ar e quais os principais tipos?</h3>
+            <h3>6. Explique o fenômeno das monções e sua importância para a agricultura.</h3>
+            <h3>7. O que são ventos alísios e por que foram importantes na história das navegações?</h3>
+            <h3>8. Explique como se formam as marés e cite um local no mundo onde elas são muito intensas.</h3>
+            <h3>9. Quais são as características do clima temperado?</h3>
+            <h3>10. Compare os climas tropical e polar em termos de temperatura e umidade.</h3>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+    <div class="topico w3-pale-blue w3-margin-top">
+
+        <h2>🌍 1. Os Fatores do Clima</h2>
+
+        <p>Os <span class="w3-text-indigo"><strong>fatores climáticos</strong></span> são as condições naturais que
+            influenciam o clima de cada região do planeta. Eles ajudam a explicar por que alguns lugares são mais
+            <span class="w3-text-red">quentes ☀️</span>, outros mais <span class="w3-text-blue">frios ❄️</span>,
+            alguns mais <span class="w3-text-amber">secos 🌵</span> e outros mais <span class="w3-text-green">chuvosos
+                🌧️</span>.
+            Em resumo, representam características geográficas capazes de modificar os
+            <span class="w3-text-teal">elementos do clima</span>, como temperatura 🌡️, umidade 💧, pressão atmosférica,
+            ventos 🌬️ e precipitação 🌦️.
+        </p>
+
+        <div>
+            <p><strong>📍 <span class="termo clima" data-palavra="Latitude"
+                        data-definicao=" É uma coordenada geográfica que indica a distância de um lugar até a Linha do Equador (0º ) e, por causa disso, ela é o principal fator que define se o clima de um lugar vai ser quente (perto de 0º ) ou frio (perto de 90º).">Latitude</span></strong><br>
+                A <span class="w3-text-indigo">latitude</span> corresponde à distância, em graus, entre a linha do
+                <span class="w3-text-red">Equador</span> e o paralelo onde está localizado um ponto da superfície
+                terrestre.
+                Ela varia de <span class="w3-text-blue">0º (Equador)</span> até <span class="w3-text-purple">90º
+                    (polos)</span>,
+                sempre identificando o hemisfério: Norte (N) ou Sul (S).<br><br>
+                A latitude influencia diretamente a forma como os <span class="w3-text-orange">raios solares ☀️</span>
+                atingem a superfície: quanto maior a latitude, maior a inclinação dos raios e, portanto, menores as
+                temperaturas 🌡️.<br><br>
+                Além disso, a duração do <span class="w3-text-amber">dia</span> e da <span class="w3-text-indigo">noite
+                    🌙</span>
+                também muda conforme a latitude: quanto mais afastado do Equador, maiores as diferenças de luz e
+                escuridão ao longo do ano.
+            </p>
+            <div class="w3-margin"><img id="imagem1" src="tp20f01.png" alt="tp20f01"
+                    class="w3-mobile w3-image w3-card w3-round w3-hover-shadow ">
+
+                <span class="w3-small w3-margin-left w3-text-gray " id="citacao1"> Disponível em:
+                    https://materiasparaconcursos.com.br/</span>
+
+            </div>
+        </div>
+
+        <div>
+            <p><strong>⛰️ <span class="termo clima" data-palavra="Altitude"
+                        data-definicao="Altura de um ponto em relação ao nível do mar. Quanto maior a altitude, menor a temperatura e a pressão atmosférica.">Altitude</span></strong><br>
+                A <span class="w3-text-indigo">altitude</span> é a medida da altura de um ponto em relação ao nível do
+                mar 🌊.
+                Quanto maior a altitude, menor a <span class="w3-text-red">pressão atmosférica</span>, a densidade do ar
+                e, consequentemente, a <span class="w3-text-blue">temperatura ❄️</span>.<br><br>
+                Por isso, regiões em áreas elevadas, como cidades andinas 🏔️, costumam ser mais frias que regiões no
+                nível do mar,
+                mesmo estando próximas aos trópicos.
+            </p>
+
+            <p>Em locais altos, o <span class="w3-text-teal">ar é rarefeito</span> e retém menos calor 🔥 e umidade 💧.
+                Isso faz com que a variação entre o dia e a noite seja maior: durante o dia, a insolação é intensa e
+                aquece rapidamente;
+                já à noite 🌙, o resfriamento ocorre de forma acelerada.<br><br>
+                Além disso, em altitudes elevadas a <span class="w3-text-indigo">atmosfera é mais fina</span> e absorve
+                menos radiação solar,
+                o que reforça o resfriamento.
+            </p>
+
+            <div class="w3-margin"><img id="imagem2" src="tp20f02.png" alt="tp20f02"
+                    class="w3-mobile w3-image w3-card w3-round w3-hover-shadow">
+                <span class="w3-small w3-margin-left w3-text-gray" id="citacao2"> Fonte: Altitude positiva, negativa,
+                    nula. APROFGEO.
+                    Disponível em: https://ensina.rtp.pt/explicador/relevo/ </span>
+            </div>
+        </div>
+
+        <button class="btnShow " onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico w3-pale-blue w3-margin-top">
+
+        <h2>🌊 2. Maritimidade e 🏜️ Continentalidade</h2>
+
+        <p><strong>🌊 Maritimidade</strong></p>
+
+        <p>
+            A <span class="termo clima" data-palavra="Maritimidade"
+                data-definicao="Influência exercida pelos mares e oceanos sobre o clima, regulando temperaturas e aumentando a umidade do ar.">maritimidade</span>
+            é a influência que <strong>mares</strong> e <strong>oceanos</strong> exercem
+            sobre o clima.
+            Regiões próximas ao litoral tendem a apresentar <span class="w3-text-blue"><strong>maior
+                    umidade</strong></span>
+            e <span class="w3-text-green"><strong>pequenas variações de temperatura</strong></span>, já que a água
+            funciona como
+            um regulador térmico natural.
+        </p>
+
+        <p>
+            Os <strong>oceanos</strong> também distribuem <mark>energia</mark> pelo planeta através das
+            <strong>correntes marítimas</strong>.
+            ➡️ Águas <span class="w3-text-cyan">frias</span> resfriam o ar e dificultam a formação de nuvens, gerando
+            <em>clima seco</em>.
+            ➡️ Águas <span class="w3-text-red">quentes</span> aquecem o ar, favorecem a condensação e tornam o clima
+            <em>úmido e chuvoso</em>.
+        </p>
+
+        <div class="w3-panel w3-sand w3-leftbar w3-border-blue w3-margin">
+            <p><strong>💡 Curiosidade:</strong> O oceano Atlântico Sul influencia diretamente o clima do Brasil.
+                A <em>Corrente do Brasil</em>, quente, deixa o litoral mais úmido, enquanto a <em>Corrente das
+                    Malvinas</em>, fria,
+                contribui para a formação de frentes frias.</p>
+        </div>
+
+        <div class="w3-margin"><img id="imagem3" src="tp20f03.png" alt="tp20f03"
+                class="w3-mobile w3-image w3-card w3-round w3-hover-shadow">
+
+            <span class="w3-small w3-margin-left w3-text-gray" id="citacao3"> Fonte: Disponível em:
+                https://vestibulares.estrategia.com/public/questoes/ </span>
+
+        </div>
+
+
+        <p><strong>🏜️ Continentalidade</strong></p>
+
+        <p>
+            A <span class="termo clima" data-palavra="Continentalidade"
+                data-definicao="Condição climática de áreas afastadas dos oceanos, caracterizada por maior amplitude térmica e menor umidade.">continentalidade</span>
+            ocorre em áreas distantes do mar, onde os oceanos deixam de influenciar
+            diretamente
+            o clima. Nessas regiões, o <strong>solo</strong> e o <strong>ar continental</strong> aquecem e resfriam mais
+            rápido,
+            gerando <span class="w3-text-red"><strong>amplitude térmica acentuada</strong></span>
+            (diferença maior entre dia e noite).
+        </p>
+
+        <p>
+            Os climas continentais apresentam:
+            ✅ <strong>Grandes contrastes de temperatura</strong>
+            ✅ <strong>Menor umidade do ar</strong>
+            ✅ <strong>Redução das chuvas</strong>
+        </p>
+
+        <div class="w3-panel w3-sand w3-leftbar w3-border-blue">
+            <p><strong>🌍 Exemplo:</strong> O <em>deserto de Gobi</em>, na Ásia, apresenta verões muito quentes e
+                invernos
+                rigorosamente frios, resultado da forte <strong>continentalidade</strong>.</p>
+        </div>
+
+        <div class="w3-margin"><img id="imagem4" src="tp20f04.png" alt="tp20f04"
+                class="w3-mobile w3-image w3-card w3-round w3-hover-shadow">
+
+            <span class="w3-small w3-margin-left w3-text-gray" id="citacao4">
+            </span>
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+
+    </div>
+
+    <div class="topico w3-pale-blue w3-margin-top">
+
+        <h2>🌊 3. Marés</h2>
+
+        <p>As <span class="w3-text-indigo">
+                <span class="termo clima" data-palavra="Marés"
+                    data-definicao="Movimentos periódicos de subida e descida do nível do mar, provocados principalmente pela atração gravitacional da Lua e do Sol.">marés</span></span>
+            são movimentos periódicos de
+            <span class="w3-text-blue">subida e descida</span> do nível das águas dos mares e oceanos.
+            Elas ocorrem principalmente devido à <span class="w3-text-purple">atração gravitacional da Lua 🌙</span>
+            e, em menor escala, do <span class="w3-text-amber">Sol ☀️</span>.
+        </p>
+
+        <div>
+            <p><strong>🔄 Ciclo das Marés</strong><br>
+                - A água sobe durante cerca de <span class="w3-text-indigo">6 horas</span> →
+                <strong>maré alta (preamar)</strong> 🌊.<br>
+                - Depois desce durante outras <span class="w3-text-indigo">6 horas</span> →
+                <strong>maré baixa (baixa-mar)</strong> 🌊.<br>
+                - A diferença entre elas é chamada de
+                <span class="w3-text-red">amplitude da maré 📏</span>.<br><br>
+                ➡️ <strong>Enchente</strong>: água avança em direção à costa 🏖️.<br>
+                ➡️ <strong>Vazante</strong>: água recua em direção ao alto-mar 🌐.
+            </p>
+        </div>
+
+        <div>
+            <p><strong>🌕 Tipos de Maré</strong><br>
+                - <span class="w3-text-blue">Maré de Sizígia</span> (águas-vivas): ocorre na
+                <span class="w3-text-purple">Lua Nova 🌑</span> e
+                <span class="w3-text-purple">Lua Cheia 🌕</span>. Resulta em <strong>maior amplitude</strong>
+                📈.<br><br>
+                - <span class="w3-text-blue">Maré de Quadratura</span> (águas-mortas): ocorre no
+                <span class="w3-text-orange">Quarto Crescente 🌓</span> e
+                <span class="w3-text-orange">Quarto Minguante 🌗</span>. Resulta em <strong>menor amplitude</strong> 📉.
+            </p>
+        </div>
+
+        <div class="w3-sand w3-padding w3-round-large w3-margin-top">
+            <p><strong>📍 Fatores Locais</strong><br>
+                A intensidade das marés varia de acordo com:<br>
+                - A <span class="w3-text-indigo">formação da costa</span> 🏝️ → baías e estuários em forma de funil
+                podem gerar marés muito intensas.<br>
+                - A <span class="w3-text-teal">profundidade e tamanho</span> dos mares 🌐 → influenciam
+                a propagação da onda de maré.
+            </p>
+            <div class="w3-margin"><img id="imagem5" src="tp20f05.png" alt="tp20f05"
+                    class="w3-mobile w3-image w3-card w3-round w3-hover-shadow">
+
+                <span class="w3-small w3-margin-left w3-text-gray" id="citacao5"> Fonte: Brasil Escola </span>
+            </div>
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico w3-pale-blue w3-margin-top">
+
+        <h2>🌬️ 4. Massas de Ar</h2>
+
+        <p>As <span class="w3-text-indigo"><span class="termo clima" data-palavra="Massas de Ar"
+                    data-definicao="Grandes porções da atmosfera com características homogêneas de temperatura, pressão e umidade, capazes de se deslocar e alterar o clima de outras regiões.">massas
+                    de ar</span></span> são grandes porções da atmosfera
+            com características homogêneas de <span class="w3-text-red">temperatura 🌡️</span>,
+            <span class="w3-text-blue">umidade 💧</span> e
+            <span class="w3-text-teal">pressão 🧭</span>.
+            Elas podem se manter sobre oceanos ou continentes e influenciam diretamente o
+            <strong>clima</strong> e o <strong>tempo</strong> das regiões por onde passam.
+        </p>
+
+        <div>
+            <p><strong>📌 Condições para formação</strong><br>
+                - Superfícies <span class="w3-text-indigo">planas e extensas</span> 🌍<br>
+                - <span class="w3-text-purple">Baixa altitude</span> ⛰️<br>
+                - Homogeneidade das características superficiais ⚖️<br><br>
+                🔎 Por isso, as massas de ar geralmente se formam sobre
+                <span class="w3-text-blue">oceanos</span>,
+                <span class="w3-text-green">mares</span> e
+                <span class="w3-text-brown">planícies continentais</span>.
+            </p>
+        </div>
+
+        <div class="w3-sand w3-padding w3-round-large w3-margin-top">
+            <p><strong>🌍 Classificação das Massas de Ar</strong></p>
+            <ul>
+                <li><strong>cP</strong> – Polar Continental ❄️ → fria, seca e estável.</li>
+                <li><strong>mP</strong> – Polar Marítima 🌊❄️ → fria, úmida e instável.</li>
+                <li><strong>cT</strong> – Tropical Continental ☀️ → quente, seca e instável.</li>
+                <li><strong>mT</strong> – Tropical Marítima ☀️🌊 → quente, úmida e instável.</li>
+                <li><strong>cA</strong> – Ártica/Antártica Continental 🧊 → extremamente fria e seca.</li>
+            </ul>
+        </div>
+
+        <div>
+            <p><strong>📍 Locais de Formação</strong><br>
+                - Oceanos e mares tropicais → massas de ar <span class="w3-text-blue">quentes e úmidas</span> 🌊☀️<br>
+                - Planícies continentais → massas de ar <span class="w3-text-red">quentes e secas</span> ☀️🏜️<br>
+                - Regiões polares → massas de ar <span class="w3-text-indigo">frias e estáveis</span> ❄️🧊
+            </p>
+            <div class="w3-margin"><img id="imagem6" src="tp20f06.png" alt="tp20f06"
+                    class="w3-mobile w3-image w3-card w3-round w3-hover-shadow">
+
+                <span class="w3-small w3-margin-left w3-text-gray" id="citacao6"> Fonte:
+                    https://conhecimentocientifico.r7.com/massa-de-ar/ </span>
+
+            </div>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico w3-pale-blue w3-margin-top">
+
+        <h2>🌧️ 5. Monções</h2>
+
+        <p>As <span class="w3-text-indigo"><span class="termo clima" data-palavra="Monções"
+                    data-definicao="Ventos sazonais que ocorrem especialmente no sul e sudeste da Ásia, responsáveis por alternar períodos de intensas chuvas no verão e estiagem no inverno.">monções</span></span>
+            são sistemas de circulação atmosférica
+            caracterizados por uma <span class="w3-text-red">inversão sazonal dos ventos</span>.
+            Esse fenômeno ocorre devido às diferenças de aquecimento entre
+            <span class="w3-text-brown">continentes</span> 🌍 e
+            <span class="w3-text-blue">oceanos</span> 🌊.
+        </p>
+
+        <p>O caso mais conhecido acontece na <strong>Índia e no Sudeste Asiático</strong>,
+            onde as monções determinam períodos de <span class="w3-text-blue">chuvas intensas 🌧️</span> no verão
+            e de <span class="w3-text-orange">estiagem ☀️</span> no inverno.</p>
+
+        <div class="w3-sand w3-padding w3-round-large w3-margin-top">
+            <p><strong>☀️ Verão (Hemisfério Norte)</strong></p>
+            <ul>
+                <li>O continente asiático aquece mais rápido que o oceano.</li>
+                <li>Forma-se uma <span class="w3-text-red">baixa pressão</span> sobre a terra.</li>
+                <li>Ventos sopram do <span class="w3-text-blue">oceano Índico (alta pressão)</span> para o continente.
+                </li>
+                <li>Carregam <span class="w3-text-green">umidade 💧</span> que, ao encontrar o
+                    <span class="w3-text-indigo">Himalaia</span>, gera
+                    <strong>chuvas torrenciais</strong> → estação chuvosa.
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-pale-blue w3-padding w3-round-large w3-margin">
+            <p><strong>❄️ Inverno (Hemisfério Norte)</strong></p>
+            <ul>
+                <li>O continente resfria mais rápido que o oceano.</li>
+                <li>Forma-se uma <span class="w3-text-red">alta pressão</span> sobre a terra.</li>
+                <li>Ventos sopram do continente (frio e seco) em direção ao
+                    <span class="w3-text-blue">oceano Índico</span>.
+                </li>
+                <li>Resultado: <strong>estiagem</strong> → estação seca.</li>
+            </ul>
+        </div>
+
+      <div class="w3-panel w3-sand w3-leftbar w3-border-blue w3-margin">
+            <p><strong>💡 Curiosidade:</strong> As monções são vitais para a agricultura,
+                pois determinam o calendário de <span class="w3-text-green">plantio 🌱</span> e
+                <span class="w3-text-brown">colheita 🌾</span> em vários países asiáticos.
+            </p>
+            <div class="w3-margin"><img id="imagem7" src="tp20f07.png" alt="tp20f07"
+                    class="w3-mobile w3-image w3-card w3-round w3-hover-shadow">
+
+                <span class="w3-small w3-margin-left w3-text-gray" id="citacao7"> </span>
+            </div>
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo </button>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico w3-pale-blue w3-margin-top">
+
+        <h2>🌬️ 6. Ventos Alísios</h2>
+
+        <div class="w3-margin"><img id="imagem8" src="tp20f08.png" alt="8"
+                class="w3-mobile w3-image w3-card w3-round w3-hover-shadow  ">
+
+            <span class="w3-small w3-margin-left w3-text-gray" id="citacao8"> Fonte:
+                https://conhecimentocientifico.r7.com/ventos-o-que-sao-como-se-formam/ </span>
+
+        </div>
+
+        <p>
+            Os <strong class="w3-text-indigo"><span class="termo clima" data-palavra="Ventos Alísios"
+                    data-definicao="Ventos constantes que sopram de leste para oeste próximos ao Equador, transportando umidade e influenciando a formação de florestas tropicais e desertos.">ventos
+                    alísios</span></strong> são correntes de ar constantes que sopram
+            <span class="w3-text-blue">de leste para oeste</span> próximos ao Equador 🌍.
+            No Hemisfério Norte, eles vêm do nordeste; já no Hemisfério Sul, do sudeste.
+            Sua origem está no aquecimento desigual da Terra: a região equatorial recebe mais calor,
+            fazendo com que o ar quente suba. Esse espaço é então ocupado pelo ar mais frio proveniente
+            das zonas subtropicais. A rotação da Terra, por meio do <strong class="w3-text-indigo">Efeito
+                Coriolis</strong>,
+            desvia esses ventos, direcionando-os para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.
+        </p>
+
+        <p>
+            A importância dos ventos alísios é enorme. Eles transportam umidade e levam chuvas 🌧️ para as regiões
+            equatoriais, o que contribui para a formação das florestas tropicais. Em contrapartida, ajudam a criar
+            áreas secas em regiões subtropicais, favorecendo a formação de desertos 🏜️. Além disso, movimentam
+            correntes oceânicas 🌊 que regulam o clima global, contribuem para a formação de ciclones tropicais
+            (como furacões e tufões 🌀) e ainda transportam poeira e nutrientes 🌱, mantendo ecossistemas distantes.
+        </p>
+
+       <div class="w3-panel w3-sand w3-leftbar w3-border-blue w3-margin">
+
+            💡<span> <em>Curiosidade: durante séculos, os ventos alísios foram usados por navios à vela como rotas seguras e
+                rápidas de comércio.</em></span>
+ 
+        </div>
+
+        <hr>
+
+        <h2>🌊 7. Correntes Marítimas</h2>
+
+        <p><img src="tp20f09.png" style="width:100%;cursor:zoom-in" alt="Correntes marítimas."
+                onclick="document.getElementById('tp20f09').style.display='block'">
+        </p>
+
+        <div class="w3-container">
+
+
+
+            <div id="tp20f09" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                    <img src="tp20f09a.png" style="width:100%">
+                    <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Mapa
+                            Correntes marítimas.
+                        </strong></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- INSERIR NO KODULAR -->
+        <!-- <div class="w3-margin"><img id="imagem9" src="tp20f09.png" alt="tp20f09" class="w3-mobile w3-image w3-card w3-round w3-hover-shadow">
+
+            <span class="w3-small w3-margin-left w3-text-gray" id="citacao9"> Fonte:
+                https://www.scielo.br/j/rbef/a/CRkmLcsVstfkwdGVc4F6crM/?format=html&lang=pt </span>
+        </div> -->
+
+        <p>
+            As <strong class="w3-text-indigo">
+                <span class="termo clima" data-palavra="Correntes Marítimas"
+                    data-definicao="Movimentos contínuos das águas dos oceanos que transportam calor e influenciam o clima, podendo ser quentes ou frias.">correntes
+                    marítimas</span>
+            </strong> são movimentos contínuos das águas do mar,
+            que transportam grandes massas d’água com diferentes temperaturas, salinidade e densidade.
+            Essas correntes podem ser classificadas em <span class="w3-text-red">quentes 🔥</span>, que se originam
+            próximas ao Equador e aumentam a evaporação da água, tornando as regiões por onde passam mais chuvosas,
+            e em <span class="w3-text-blue">frias ❄️</span>, que vêm de áreas polares ou frias, reduzindo a umidade
+            e deixando as regiões mais secas.
+        </p>
+
+        <p>
+            No mundo, algumas correntes se destacam pela sua força e impacto climático. No
+            <u>Atlântico</u>, podemos citar as correntes Equatoriais do Norte e do Sul, a Corrente das Guianas (quente)
+            e as correntes das Malvinas e da Guiné (frias). Já no <u>Pacífico</u>, temos a Corrente de Kuroshio, a
+            Corrente
+            do Pacífico Norte, a das Aleutas, a do Peru ou Humboldt e o fenômeno El Niño. Entre as mais importantes
+            globalmente estão a <strong>Corrente do Golfo</strong>, extremamente poderosa e quente, e a
+            <strong>Corrente Circumpolar Antártica</strong>, uma das maiores do planeta. No Brasil 🇧🇷, a
+            <strong>Corrente do Brasil</strong> transporta um volume de água maior do que o próprio rio Amazonas,
+            mostrando sua grandiosidade.
+        </p>
+
+        <p>
+            Essas correntes desempenham um papel essencial para a <strong class="w3-text-indigo">regulação climática
+                global</strong>.
+            Elas redistribuem o calor no planeta, tornando áreas frias mais amenas e resfriando regiões quentes.
+            Também influenciam diretamente a navegação 🚢, a pesca, a biodiversidade marinha e até mesmo o clima em
+            continentes inteiros. 🌱
+        </p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>Por que lugares próximos ao mar costumam ter temperaturas
+                    mais amenas?</strong> </p>
+            <p><span class="primeiraLetra">R:</span> Porque a maritimidade faz com que a água dos oceanos funcione como
+                um regulador térmico. O mar esquenta e esfria mais lentamente que o solo, deixando o clima mais úmido e
+                com menor variação de temperatura entre o dia e a noite.</p>
+        </div>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span> <strong>Como a altitude pode mudar o clima de uma região?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Em locais mais altos a pressão atmosférica é menor e o ar é mais
+                rarefeito. Isso faz com que a temperatura seja mais baixa, mesmo em áreas próximas aos trópicos, como no
+                caso de cidades andinas em altitudes elevadas.</p>
+        </div>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span><strong>O que são ventos alísios e qual sua importância
+                    histórica?</strong></p>
+            <p><span class="primeiraLetra">R:</span> Os ventos alísios são ventos constantes que sopram em direção ao
+                Equador, de nordeste no hemisfério norte e de sudeste no hemisfério sul. Eles foram fundamentais para as
+                navegações no período das grandes descobertas, pois ajudavam os navios a cruzar o Atlântico.</p>
+        </div>
+
+
+
+
+
+        <div class=" w3-light-gray w3-padding" id="glossario">
+            <h2>📖 Você aprendeu sobre:</h2>
+            <ul id="lista-glossario"></ul>
+        </div>
+
+        
+        <p class="w3-right-align">
+            <a href="#sumario" class="w3-button w3-small w3-indigo w3-round">⬅ Voltar às Questões</a>
+        </p>
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://www.bbc.com/portuguese/articles/crg8lg80xlwo" target="_blank">
+                    Combustíveis fósseis: a humanidade vai conseguir viver sem eles?
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>MARIANO, Maryelle Florêncio (et al.). <strong>Geografia do Brasil.</strong> Londrina: Editora e Distribuidora
+            Educacional S.A., 2018.</p>
+
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. - São
+            Paulo: Ática, 2013.
+        </p>
+
+
+
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                // 👇 Ativa o glossário nos novos termos dentro da div revelada
+                ativarGlossario(proximo);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 10);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

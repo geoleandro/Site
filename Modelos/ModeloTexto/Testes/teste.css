@@ -1,0 +1,190 @@
+/* ========= GERAL ========= */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ========= TERMOS + TOOLTIP ========= */
+.termo {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.termo:hover {
+  background: #f0f0f0;
+}
+
+/* Tooltip estilo balão */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 10;
+  min-width: 240px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border-left: 5px solid #3f51b5;
+}
+
+.tooltip.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+/* Cores por tema */
+.termo.politica { color: #3f51b5; }    /* azul */
+.termo.economia { color: #4caf50; }    /* verde */
+.termo.tecnologia { color: #ff9800; }  /* laranja */
+
+/* ========= GLOSSÁRIO ========= */
+#glossario ul {
+  list-style: none;
+  padding: 0;
+}
+
+#glossario li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ========= QUIZ ========= */
+#quiz-container {
+  margin-top: 20px;
+}
+
+.quiz-pergunta {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.quiz-opcao {
+  display: block;
+  margin: 6px 0;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.quiz-opcao:hover {
+  background: #f1f1f1;
+}
+
+.quiz-correta {
+  background: #c8e6c9;
+}
+
+.quiz-incorreta {
+  background: #ffcdd2;
+}
+
+/* ========= CAIXAS DE DESTAQUE ========= */
+.caixa {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.caixa h3 {
+  margin-top: 0;
+}
+
+.curiosidade {
+  background: #e3f2fd;   /* azul claro */
+  border-left: 6px solid #2196f3;
+}
+
+.historico {
+  background: #fff3e0;   /* laranja claro */
+  border-left: 6px solid #ff9800;
+}
+
+.reflexao {
+  background: #f3e5f5;   /* lilás claro */
+  border-left: 6px solid #9c27b0;
+}
+
+
+/* TIMELINE */
+.game-timeline {
+  position: relative;
+  height: 120px;
+  background: #87ceeb; /* céu azul */
+  border: 2px solid #333;
+  border-radius: 12px;
+  margin: 20px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.timeline-path {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 2000px; /* linha longa para rolagem */
+  height: 10px;
+  background: #654321; /* plataforma tipo Mario */
+}
+
+.timeline-block {
+  display: inline-block;
+  position: relative;
+  margin: 0 60px;
+  width: 60px;
+  height: 60px;
+  background: #ffcc00; /* bloco amarelo Mario */
+  border: 2px solid #000;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.timeline-block:hover {
+  transform: translateY(-10px);
+  background: #ffc107;
+}
+
+.character {
+  position: absolute;
+  bottom: 45px;
+  width: 30px;
+  height: 40px;
+  background: url('mario.png') no-repeat center/contain;
+  left: 0;
+  transition: left 0.5s ease;
+}

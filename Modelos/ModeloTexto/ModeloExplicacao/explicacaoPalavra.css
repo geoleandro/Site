@@ -1,0 +1,125 @@
+
+
+
+/* Palavra marcada */
+.termo {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1a4d8f;
+  background: #ffec99;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.termo:hover {
+  background: #ffe066;
+}
+
+/* Ícone de informação */
+.termo::after {
+  content: " 💡";
+  font-size: 0.9em;
+}
+
+
+/* Temas por área */
+.amarelo {
+  color: #e8ff8b; /* Azul */
+}
+.politica {
+  color: #3f51b5; /* Azul */
+}
+
+.economia {
+  color: #e53935; /* Vermelho */
+}
+
+.tecnologia {
+  color: #fb8c00; /* Laranja */
+}
+
+
+/* Balão explicativo */
+.explicacao {
+  display: none;
+  position: absolute;
+  top: 130%;
+  left: 0;
+  width: 280px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  font-size: 0.9em;
+  line-height: 1.4;
+  z-index: 10;
+  animation: fadeIn 0.3s ease-in-out;
+  border-left: 5px solid #1a4d8f;
+}
+
+/* Setinha */
+.explicacao::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+  filter: drop-shadow(0 -2px 2px rgba(0,0,0,0.1));
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Tooltip estilo balão usando W3.CSS */
+
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 10;
+  min-width: 240px;
+
+  /* W3.CSS card */
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border-left: 5px solid #3f51b5;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.tooltip.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* Balão W3.CSS */
+.tooltip {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border-left: 5px solid #3f51b5;
+}

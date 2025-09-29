@@ -257,6 +257,60 @@ Css do memory card */
                 transform: translate(1px, -2px) rotate(-1deg);
             }
         }
+
+
+        /* tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 260px;
+            background-color: #333;
+            color: #fff;
+            text-align: justify;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            /* aparece em cima */
+            left: 50%;
+            margin-left: -130px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.9em;
+        }
+
+        .tooltip:hover .tooltiptext,
+        .tooltip:active .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+
+        /* Explicação */
+
+        .explicacao {
+            display: none;
+            background: #f0f8ff;
+            border-left: 4px solid #4682b4;
+            padding: 6px;
+            margin-left: 4px;
+            font-size: 0.9em;
+            border-radius: 6px;
+        }
+
+        mark {
+            cursor: pointer;
+            background-color: #ffec99;
+        }
     </style>
 
 
@@ -359,14 +413,9 @@ Css do memory card */
 
 
         <p> <span class="primeiraLetra">N</span>a aula Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-            molestias, autem doloremque error aperiam sunt, quo a commodi veniam aut quaerat ipsam eligendi atque velit.
+            molestias, autem dolore mque error aperiam sunt, quo a commodi veniam aut quaerat ipsam eligendi atque
+            velit.
             Ex amet facere delectus velit?</p>
-
-        <p>Nesta aula teremos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis illum adipisci pariatur
-            dolor, aut accusantium optio recusandae, libero distinctio voluptates perspiciatis quas dolores quisquam at
-            assumenda debitis ut reprehenderit temporibus.</p>
-
-
 
 
 
@@ -410,7 +459,7 @@ Css do memory card */
 
     <div class="topico  w3-pale-blue">
 
-        <h2>  </h2>
+        <h2> </h2>
 
 
 
@@ -459,6 +508,25 @@ Css do memory card */
             internacional.
         </p>
 
+
+        <p>
+            <span class="tooltip">
+                <mark>conjuntura</mark>
+                <span class="tooltiptext">
+                    combinação ou concorrência de acontecimentos ou eventos num dado momento; circunstância, situação.
+                </span>
+            </span> internacional.
+        </p>
+
+        <p>
+            <mark onclick="this.nextElementSibling.style.display =
+    this.nextElementSibling.style.display === 'inline' ? 'none' : 'inline'">
+                conjuntura
+            </mark>
+            <span class="explicacao">
+                (combinação ou concorrência de acontecimentos ou eventos num dado momento; circunstância, situação.)
+            </span> internacional.
+        </p>
 
     </div>
 
@@ -989,6 +1057,17 @@ Css do memory card */
     </div>
 
 
+    <div class="topico w3-light-gray w3-round-large">
+    <h2 class="w3-text-indigo">1. O que é a atmosfera da Terra?</h2>
+    <p>...conteúdo...</p>
+
+    <p class="w3-right-align">
+        <a href="#sumario" class="w3-button w3-small w3-yellow w3-round">⬅ Voltar às Questões</a>
+    </p>
+</div>
+
+
+
 
     <div class="topico">
 
@@ -1253,49 +1332,49 @@ Css do memory card */
 
 
 
-Insira as questões no código abaixo
+    Insira as questões no código abaixo
 
 
     <div class="topico">
 
 
-            <h2 id="centralizado">Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-        
-            <div class="borda">
-        
-                <p> <span class="primeiraLetra">P:</span> <strong></strong> </p>
-        
-                <p><span class="primeiraLetra">R:</span>
-                  </p>
-            </div>
-        
-            <div class="borda">
-        
-                <p> <span class="primeiraLetra">P:</span> <strong></strong></p>
-        
-                <p><span class="primeiraLetra">R:</span>
-                   </p>
-            </div>
-        
-            <div class="borda">
-                <p> <span class="primeiraLetra">P:</span><strong></strong></p>
-        
-                <p><span class="primeiraLetra">R:</span>
-                  </p>
-            </div>
-        
+        <h2 id="centralizado">Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+        <div class="borda">
+
+            <p> <span class="primeiraLetra">P:</span> <strong></strong> </p>
+
+            <p><span class="primeiraLetra">R:</span>
+            </p>
         </div>
-        
+
+        <div class="borda">
+
+            <p> <span class="primeiraLetra">P:</span> <strong></strong></p>
+
+            <p><span class="primeiraLetra">R:</span>
+            </p>
+        </div>
+
+        <div class="borda">
+            <p> <span class="primeiraLetra">P:</span><strong></strong></p>
+
+            <p><span class="primeiraLetra">R:</span>
+            </p>
+        </div>
+
+    </div>
 
 
 
 
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
-        <br><br>
+
+    <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+    <br><br>
 
 
 
-        <hr>
+    <hr>
 
     </div>
 
@@ -1304,11 +1383,11 @@ Insira as questões no código abaixo
     10 questões
 
     insira as questões acima no código abaixo:
-    
+
     <div class="topico">
         <div class="w3-pale-yellow">
             <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
-            
+
             <h3>1. </h3>
             <h3>2. </h3>
             <h3>3. </h3>
@@ -1320,11 +1399,94 @@ Insira as questões no código abaixo
             <h3>9. </h3>
             <h3>10. </h3>
         </div>
-        
+
         <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
         <hr>
     </div>
 
+
+    Cores
+
+    <div class="w3-pale-blue">
+        <h2>1. Atmosfera</h2>
+        <p>...</p>
+    </div>
+
+    <div class="w3-pale-green">
+        <h2>2. Composição da atmosfera</h2>
+        <p>...</p>
+    </div>
+
+    <div class="w3-pale-yellow">
+        <h2>3. Estrutura da atmosfera</h2>
+        <p>...</p>
+    </div>
+
+    <div class="w3-pale-red">
+        <h2>4. Tempo e Clima</h2>
+        <p>...</p>
+    </div>
+
+    <div class="w3-pale-cyan">
+        <h2>5. Massas de ar e pressão atmosférica</h2>
+        <p>...</p>
+    </div>
+
+    <div class="w3-pale-orange">
+        <h2>6. Ciclo da Água e Umidade</h2>
+        <p>...</p>
+    </div>
+
+    <div class="w3-pale-purple">
+        <h2>7. Precipitações</h2>
+        <p>...</p>
+    </div>
+
+    <div class="w3-light-gray">
+        <h2>8. Ventos</h2>
+        <p>...</p>
+    </div>
+
+
+    <!-- Explicação -->
+
+
+    <article class="w3-large w3-justify">
+        <p>
+            A <span class="termo politica" data-palavra="Conjuntura"
+                data-definicao="combinação ou concorrência de acontecimentos ou eventos em um dado momento; circunstância, situação.">conjuntura</span>
+            internacional no século XXI é marcada por rápidas transformações.
+        </p>
+
+        <p>
+            A <span class="termo politica" data-palavra="Geopolítica"
+                data-definicao="estudo da relação entre poder político e espaço geográfico.">geopolítica</span>
+            tornou-se ainda mais relevante com a globalização.
+        </p>
+
+        <p>
+            Um dos fatores centrais é a <span class="termo economia" data-palavra="Hegemonia"
+                data-definicao="supremacia ou liderança de um Estado ou grupo sobre os demais, seja no campo militar, econômico ou cultural.">hegemonia</span>
+            dos Estados Unidos.
+        </p>
+
+        <p>
+            Nesse contexto, o papel das <span class="termo politica" data-palavra="Organizações Internacionais"
+                data-definicao="instituições formadas por países com o objetivo de cooperar em questões políticas, econômicas ou sociais.">organizações
+                internacionais</span> é crucial.
+        </p>
+
+        <p>
+            Além disso, há crescente atenção para os <span class="termo tecnologia" data-palavra="Conflitos Híbridos"
+                data-definicao="guerras que combinam estratégias militares tradicionais com ciberataques, desinformação e pressões econômicas.">conflitos
+                híbridos</span>.
+        </p>
+    </article>
+
+    <section id="glossario">
+        <h2>📖 Glossário da Aula</h2>
+        <ul id="lista-glossario"></ul>
+    </section>
 
 
 
