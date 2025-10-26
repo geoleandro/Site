@@ -1,0 +1,108 @@
+<div class="topico">
+  <h2>Jogo: Tipos de Rochas</h2>
+  <p>Clique apenas nas rochas <strong>metamórficas</strong> para ganhar pontos!</p>
+
+  <div id="game">
+    <div id="pontos">Pontos: 0</div>
+    <div id="target">Clique nas: Metamórficas</div>
+  </div>
+
+  <style>
+    #game {
+      position: relative;
+      width: 640px;
+      height: 400px;
+      background: linear-gradient(#87ceeb, #fff);
+      overflow: hidden;
+      border: 2px solid #000;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .objeto {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .objeto:hover {
+      transform: scale(1.1);
+    }
+
+    #pontos,
+    #target {
+      position: absolute;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+
+    #pontos {
+      top: 10px;
+      left: 10px;
+    }
+
+    #target {
+      top: 10px;
+      right: 10px;
+      background: yellow;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    const game = document.getElementById("game");
+    const scoreDisplay = document.getElementById("pontos");
+    const correto = "metamorfica";
+
+    let pontuacao = 0;
+
+    const objetos = [
+      { tipo: "ígnea", img: "folha.png" },
+      { tipo: "sedimentar", img: "folha.png" },
+      {
+        tipo: "metamorfica", img: "micro.png"
+      }
+    ];
+
+    function criarObjeto() {
+      const item = objetos[Math.floor(Math.random() * objetos.length)];
+      const el = document.createElement("img");
+      el.src = item.img;
+      el.dataset.tipo = item.tipo;
+      el.classList.add("objeto");
+
+      el.style.top = "-70px";
+      el.style.left = Math.random() * (game.offsetWidth - 70) + "px";
+
+      game.appendChild(el);
+
+      const velocidade = 2 + Math.random() * 3;
+      const intervalo = setInterval(() => {
+        el.style.top = parseFloat(el.style.top) + velocidade + "px";
+        if (parseFloat(el.style.top) > game.offsetHeight) {
+          clearInterval(intervalo);
+          el.remove();
+        }
+      }, 20);
+
+      el.addEventListener("click", () => {
+        if (el.dataset.tipo.toLowerCase() === correto.toLowerCase()) {
+          pontuacao += 10;
+        } else {
+          pontuacao -= 5;
+        }
+        scoreDisplay.textContent = "Pontos: " + pontuacao;
+        clearInterval(intervalo);
+        el.remove();
+      });
+    }
+
+    setInterval(criarObjeto, 1000);
+  </script>
+</div>

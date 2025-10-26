@@ -1,0 +1,211 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div id="game" 
+     style="position: relative; 
+            width: 95vw; 
+            height: 75vh; 
+            max-width: 600px; 
+            border: 2px solid black; 
+            overflow: hidden; 
+            margin: 20px auto; 
+            background: url('mapa_climas.png') no-repeat center/cover;
+            touch-action: manipulation;">
+    
+    <div id="pontos" style="position:absolute; top:10px; left:10px; color:white; font-size:18px;">Pontos: 0</div>
+
+    <button id="btnIniciar" style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 10px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    ">Iniciar Jogo</button>
+</div>
+
+<script>
+const game = document.getElementById("game");
+const scoreDisplay = document.getElementById("pontos");
+const btnIniciar = document.getElementById("btnIniciar");
+
+let pontuacao = 0;
+let jogoAtivo = false;
+let icones = [];
+let ultimoSpawn = 0;
+
+// Áudios
+const acertoAudio = new Audio("../audio1.mp3");
+const erroAudio = new Audio("../audio2.mp3");
+
+// Regiões climáticas no mapa
+const regioesInfo = [
+    { nome: "Tropical", top: 50, left: 80, width: 180, height: 120 },
+    { nome: "Temperado", top: 220, left: 280, width: 180, height: 120 },
+    { nome: "Polar", top: 10, left: 450, width: 120, height: 100 }
+];
+
+const climas = [
+    { nome: "Tropical", img: "ignea.png" },
+    { nome: "Temperado", img: "sedimentar.png" },
+    { nome: "Polar", img: "metamorfica.png" }
+];
+
+// Criar ícones caindo
+function criarIcone() {
+    const item = climas[Math.floor(Math.random() * climas.length)];
+    const el = document.createElement("img");
+    el.src = item.img;
+    el.dataset.clima = item.nome;
+    el.classList.add("icone");
+    el.style.position = "absolute";
+    el.style.width = "60px";
+    el.style.height = "60px";
+    el.style.top = "-70px";
+    el.style.left = Math.random() * (game.offsetWidth - 60) + "px";
+    el.style.cursor = "pointer";
+
+    game.appendChild(el);
+
+    const icone = {
+        el,
+        tipo: item.nome,
+        y: -70,
+        x: parseFloat(el.style.left),
+        velocidade: 1 + Math.random() * 1.5
+    };
+
+    // Evento touch/click
+    el.addEventListener("pointerdown", () => {
+        if (!jogoAtivo) return;
+
+        // Verifica colisão com regiões corretas
+        let acertou = false;
+        for (const r of regioesInfo) {
+            if (
+                icone.x + 30 > r.left &&
+                icone.x < r.left + r.width &&
+                icone.y + 30 > r.top &&
+                icone.y < r.top + r.height
+            ) {
+                if (icone.tipo === r.nome) acertou = true;
+                break;
+            }
+        }
+
+        if (acertou) {
+            acertoAudio.currentTime = 0;
+            acertoAudio.play();
+            pontuacao += 10;
+            if (pontuacao > 100) pontuacao = 100;
+        } else {
+            erroAudio.currentTime = 0;
+            erroAudio.play();
+            pontuacao = Math.max(0, pontuacao - 5);
+        }
+
+        scoreDisplay.textContent = "Pontos: " + pontuacao;
+        el.remove();
+        icones = icones.filter(i => i !== icone);
+
+        if (pontuacao >= 100) encerrarJogo();
+    });
+
+    icones.push(icone);
+}
+
+// Atualizar posição dos ícones
+function atualizarIcones(delta) {
+    icones.forEach(i => {
+        i.y += i.velocidade * delta * 0.08;
+        i.el.style.top = i.y + "px";
+    });
+
+    // Remove os que saíram da tela
+    icones = icones.filter(i => {
+        if (i.y > game.offsetHeight) {
+            i.el.remove();
+            return false;
+        }
+        return true;
+    });
+}
+
+// Loop principal
+let anterior = 0;
+function loop(timestamp) {
+    if (!jogoAtivo) return;
+
+    const delta = timestamp - anterior;
+    anterior = timestamp;
+
+    // Spawn ícones a cada 2s, no máximo 8 na tela
+    if (timestamp - ultimoSpawn > 2000 && icones.length < 8) {
+        criarIcone();
+        ultimoSpawn = timestamp;
+    }
+
+    atualizarIcones(delta);
+    requestAnimationFrame(loop);
+}
+
+// Iniciar Jogo
+function iniciarJogo() {
+    pontuacao = 0;
+    scoreDisplay.textContent = "Pontos: 0";
+    jogoAtivo = true;
+
+    btnIniciar.style.display = "none";
+
+    // Remove ícones anteriores
+    icones.forEach(i => i.el.remove());
+    icones = [];
+
+    requestAnimationFrame(loop);
+
+    // Remove mensagem final se existir
+    const msg = document.getElementById("mensagemFinal");
+    if (msg) msg.remove();
+}
+
+// Encerrar Jogo
+function encerrarJogo() {
+    jogoAtivo = false;
+    icones.forEach(i => i.el.remove());
+    icones = [];
+
+    const msg = document.createElement("div");
+    msg.id = "mensagemFinal";
+    msg.style.position = "absolute";
+    msg.style.top = "50%";
+    msg.style.left = "50%";
+    msg.style.transform = "translate(-50%, -50%)";
+    msg.style.background = "rgba(0,0,0,0.8)";
+    msg.style.color = "white";
+    msg.style.padding = "30px 50px";
+    msg.style.borderRadius = "12px";
+    msg.style.textAlign = "center";
+    msg.style.fontSize = "22px";
+    msg.innerHTML = `
+        🎉 Parabéns! Você atingiu 100 pontos!<br><br>
+        <button id="reiniciarBtn" style="
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        ">Jogar novamente</button>
+    `;
+    game.appendChild(msg);
+
+    document.getElementById("reiniciarBtn").addEventListener("click", iniciarJogo);
+}
+
+btnIniciar.addEventListener("click", iniciarJogo);
+</script>

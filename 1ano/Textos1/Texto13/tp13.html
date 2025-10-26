@@ -1309,6 +1309,266 @@
 
 
 
+    <div class="topico">
+        <h2>Jogo: Tipos de Rochas</h2>
+        <p>Clique apenas nas rochas <strong>metamórficas</strong> para ganhar pontos!</p>
+
+        <div id="game">
+            <div id="pontos">Pontos: 0</div>
+            <div id="target">Clique nas: Metamórficas</div>
+            <!-- Botão de início -->
+            <button id="btnIniciar" style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 10px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    ">Iniciar Jogo</button>
+        </div>
+
+        <style>
+            #game {
+                position: relative;
+                width: 90vw;
+                height: 70vh;
+                max-width: 600px;
+                border: 2px solid black;
+                overflow: hidden;
+                margin: 20px auto;
+                touch-action: manipulation;
+                background: url('paisagem.jpg') no-repeat center/cover;
+            }
+
+            .objeto {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                cursor: pointer;
+                transition: transform 0.2s;
+            }
+
+            .objeto:hover {
+                transform: scale(1.1);
+            }
+
+            #pontos,
+            #target {
+                position: absolute;
+                background: white;
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-size: 18px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                z-index: 10;
+            }
+
+            #pontos {
+                top: 2vh;
+                left: 2vw;
+            }
+
+            #target {
+                top: 2vh;
+                right: 2vw;
+                background: yellow;
+                font-weight: bold;
+            }
+
+            @media (max-width: 600px) {
+
+                #pontos,
+                #target {
+                    font-size: 14px;
+                    padding: 6px 12px;
+                }
+
+                #pontos {
+                    top: 5px;
+                    left: 5px;
+                }
+
+                #target {
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+        </style>
+
+
+
+        <script>
+            const game = document.getElementById("game");
+            const scoreDisplay = document.getElementById("pontos");
+            const correto = "metamorfica";
+            const btnIniciar = document.getElementById("btnIniciar");
+
+            let pontuacao = 0;
+            let jogoAtivo = false;
+            let objetos = [];
+            let ultimoSpawn = 0;
+
+            const tipos = [
+                { tipo: "ígnea", img: "ignea.png" },
+                { tipo: "sedimentar", img: "sedimentar.png" },
+                { tipo: "metamorfica", img: "metamorfica.png" }
+            ];
+
+            function criarObjeto() {
+                const item = tipos[Math.floor(Math.random() * tipos.length)];
+                const el = document.createElement("img");
+                el.src = item.img;
+                el.dataset.tipo = item.tipo;
+                el.classList.add("objeto");
+                el.style.position = "absolute";
+                el.style.width = "70px";
+                el.style.height = "70px";
+                el.style.left = Math.random() * (game.offsetWidth - 70) + "px";
+                el.style.top = "-70px";
+
+                game.appendChild(el);
+
+                const objeto = {
+                    el,
+                    tipo: item.tipo,
+                    y: -70,
+                    x: parseFloat(el.style.left),
+                    velocidade: 1.0 + Math.random() * 1.8
+
+                };
+
+                el.addEventListener("pointerdown", () => {
+                    if (!jogoAtivo) return;
+
+                    if (objeto.tipo.toLowerCase() === correto.toLowerCase()) {
+                        // clique certo
+                        Play("../audio1.mp3");  // toca som de acerto
+                        pontuacao += 10;
+                        if (pontuacao > 100) pontuacao = 100;  // garante máximo de 100
+                    } else {
+                        // clique errado
+                        Play2("../audio2.mp3"); // toca som de erro
+                        pontuacao = Math.max(0, pontuacao - 5);
+                    }
+                    scoreDisplay.textContent = "Pontos: " + pontuacao;
+
+                    game.removeChild(el);
+                    objetos = objetos.filter(o => o !== objeto);
+
+                    if (pontuacao >= 100) encerrarJogo();
+                });
+
+                objetos.push(objeto);
+            }
+
+            function atualizarObjetos(delta) {
+                for (const obj of objetos) {
+                    obj.y += obj.velocidade * delta * 0.15;
+
+                    obj.el.style.top = obj.y + "px";
+                }
+
+                // Remove os que saíram da tela
+                objetos = objetos.filter(obj => {
+                    if (obj.y > game.offsetHeight) {
+                        game.removeChild(obj.el);
+                        return false;
+                    }
+                    return true;
+                });
+            }
+
+            let anterior = 0;
+            function loop(timestamp) {
+                if (!jogoAtivo) return;
+
+                const delta = timestamp - anterior;
+                anterior = timestamp;
+
+                // Cria novas rochas a cada 1000ms
+                if (timestamp - ultimoSpawn > 1500 && objetos.length < 10) {
+                    criarObjeto();
+                    ultimoSpawn = timestamp;
+                }
+
+                atualizarObjetos(delta);
+                requestAnimationFrame(loop);
+            }
+
+            function iniciarJogo() {
+                pontuacao = 0;
+                objetos.forEach(o => o.el.remove());
+                objetos = [];
+                jogoAtivo = true;
+                scoreDisplay.textContent = "Pontos: 0";
+
+                // Remove mensagem final se existir
+                const msg = document.getElementById("mensagemFinal");
+                if (msg) msg.remove();
+
+                // Esconde botão de início
+                btnIniciar.style.display = "none";
+
+
+                requestAnimationFrame(loop);
+            }
+
+            function encerrarJogo() {
+                jogoAtivo = false;
+
+                // remove todos os objetos
+                objetos.forEach(o => o.el.remove());
+                objetos = [];
+
+                const msg = document.createElement("div");
+                msg.id = "mensagemFinal";
+                msg.style.position = "absolute";
+                msg.style.top = "50%";
+                msg.style.left = "50%";
+                msg.style.transform = "translate(-50%, -50%)";
+                msg.style.background = "rgba(0,0,0,0.8)";
+                msg.style.color = "white";
+                msg.style.padding = "30px 50px";
+                msg.style.borderRadius = "12px";
+                msg.style.textAlign = "center";
+                msg.style.fontSize = "22px";
+                msg.innerHTML = `
+            🎉 Parabéns! Você atingiu 100 pontos!<br><br>
+            <button id="reiniciarBtn" style="
+                background: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 18px;
+            ">Jogar novamente</button>
+        `;
+
+                game.appendChild(msg);
+
+                document.getElementById("reiniciarBtn").addEventListener("click", iniciarJogo);
+            }
+
+            // O jogo agora só começa quando o aluno clicar no botão
+            btnIniciar.addEventListener("click", iniciarJogo);
+
+        </script>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+
+    </div>
+
+
+
 
     <div class="topico">
 
@@ -1447,7 +1707,7 @@
                 <li><strong>Poema de inspiração:</strong><br>
                     <br>
                     <em>
-                          <strong>Rochas</strong><br><br>
+                        <strong>Rochas</strong><br><br>
 
 
                         Agora entendo o silêncio das rochas.<br>
