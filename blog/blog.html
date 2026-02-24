@@ -6,12 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <link rel="stylesheet" href="../estilos/w3.css">
-
-
-
 
     <link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
 
@@ -21,6 +16,9 @@
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
+
+    <script src="scripts-blog.js"></script>
+
 
     <title>Duvid Blog</title>
 
@@ -158,19 +156,56 @@
             flex-direction: column;
             justify-content: space-between;
         }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 8px 0 24px;
+            margin: 0;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 14px;
+            border: 1px solid #d9d9d9;
+            color: #222;
+            background-color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .pagination a.active {
+            background-color: #111;
+            color: #fff;
+            border-color: #111;
+        }
+
+        .pagination a.disabled {
+            opacity: 0.45;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+        /* imagens de cabeçalho ocupam toda a tela */
+        #home {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #home img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 
 </head>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -191,7 +226,7 @@
         <!-- w3-content defines a container for fixed size centered content, 
      and is wrapped around the whole page content, except for the footer in this example -->
 
-        <div class="w3-content" style="max-width:1600px">
+        <div class="w3-content" style="max-width:100%">
             <!-- Header -->
             <div class="w3-container w3-center w3-padding-top-64 w3-margin-bottom ">
                 <h1 class="extrafonte  w3-hide-medium "><b>Duvid Blog</b></h1>
@@ -200,9 +235,8 @@
         </div>
 
         <!-- Image header -->
-        <div class="w3-display-container " id="home">
-            <img class="w3-image w3-padding-top-24" src="../blog/capaBlog.jpg" alt="Foto de uma praia - Duvid Geografia"
-                width="1600">
+        <div class="w3-display-container" id="home">
+            <img class="w3-image" src="../blog/capaBlog.jpg" alt="Foto de uma praia - Duvid Geografia">
             <div class="w3-display-left w3-padding">
                 <!-- <h1 class="w3-text-white">Jane's</h1> -->
                 <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>DUVID BLOG</b></h1>
@@ -221,330 +255,14 @@
 
                 <!-- First Photo Grid-->
 
-                <div class="w3-row ">
+                <div class="w3-row" id="posts-grid"></div>
 
-                  
-
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo11/artigo11f01.jpg"
-                                alt="Mãos apontando os dedos para um aluno" style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo11/por-uma-educacao-mais-humana.html"
-                                        class="link-artigo">
-                                        <strong>   Por uma Educação mais humana</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Nos últimos anos, venho refletindo profundamente sobre o processo educativo e o papel residual que o ser humano e suas emoções ocupam na escola. O ambiente escolar, em sua essência, tornou-se um local de mera transmissão...
-                                    <span class="w3-small w3-opacity" style="display: block;">02 de setembro de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo11/por-uma-educacao-mais-humana.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo10/artigo10f01.jpg"
-                                alt="Mãos apontando os dedos para um aluno" style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo10/educacao-nao-e-so-vestibular-reconhecendo-os-talentos-alem-da-prova.html"
-                                        class="link-artigo">
-                                        <strong>   Educação não é só vestibular: reconhecendo os talentos além da prova</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Quando pensamos em educação, é comum associarmos diretamente ao vestibular.
-                                    <span class="w3-small w3-opacity" style="display: block;">05 de junho de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo10/educacao-nao-e-so-vestibular-reconhecendo-os-talentos-alem-da-prova.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo09/artigo09f01.jpg"
-                                alt="Mãos apontando os dedos para um aluno" style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo09/o-que-a-escola-pode-aprender-com-os-videogames.html"
-                                        class="link-artigo">
-                                        <strong>  O que a Escola pode aprender com os videogames?</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Os videogames são frequentemente vistos apenas como entretenimento, mas eles também podem ser
-                        ferramentas poderosas de aprendizagem.
-                                    <span class="w3-small w3-opacity" style="display: block;">26 de maio de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo09/o-que-a-escola-pode-aprender-com-os-videogames.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo08/artigo08f01.jpg"
-                                alt="Mãos apontando os dedos para um aluno" style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo08/o-impacto-destrutivo-da-competição-nas-escolas-a-cultura-nociva-do-melhor-aluno.html"
-                                        class="link-artigo">
-                                        <strong> O Impacto Destrutivo da Competição nas Escolas: A Cultura Nociva do
-                                            “Melhor Aluno”</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Desde cedo, somos ensinados a competir em praticamente todos os aspectos da vida,
-                                    especialmente na educação.
-                                    <span class="w3-small w3-opacity" style="display: block;">18 de maio de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo08/o-impacto-destrutivo-da-competição-nas-escolas-a-cultura-nociva-do-melhor-aluno.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo07/artigo07f01.jpg" alt="Foto de uma sala de aula"
-                                style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo07/a-sociedade-so-valoriza-a-escola-quando-lhe-convem.html"
-                                        class="link-artigo">
-                                        <strong> A Sociedade Só Valoriza a Escola Quando Lhe Convém</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Vivemos em uma sociedade que frequentemente proclama a importância da educação. Os
-                                    pais,
-                                    as autoridades e os meios de comunicação exaltam o valor da escola ...
-                                    <span class="w3-small w3-opacity" style="display: block;">14 de maio de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo07/a-sociedade-so-valoriza-a-escola-quando-lhe-convem.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo06/artigo06f01.jpg"
-                                alt="Fotos de empresas estatais como Petrobrás, Banco do Brasil ou Sanepar"
-                                style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo06/ser-socio-de-empresas-estatais-uma-escolha-estrategica.html"
-                                        class="link-artigo">
-                                        <strong> Ser Sócio de Empresas Estatais: Uma Escolha Estratégica</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    No atual cenário, o debate entre a privatização e a manutenção das empresas estatais
-                                    está em destaque. O povo brasileiro pode e deve participar da geração de riqueza
-                                    do país...
-                                    <span class="w3-small w3-opacity" style="display: block;">10 de maio de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo06/ser-socio-de-empresas-estatais-uma-escolha-estrategica.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo05/artigo05f01.jpg"
-                                alt="Crianças vendo duas pinturas, uma queimando e outra normal" style="width:100%"
-                                class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo05/ser-revolucionario-reformista-qual-melhor.html"
-                                        class="link-artigo">
-                                        <strong> Ser Revolucionário ou Reformista: Qual é a Melhor Opção?</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Na jornada das ideias políticas e sociais, duas visões se destacam: ser
-                                    revolucionário
-                                    ou reformista. Qual delas é a melhor?
-                                    <span class="w3-small w3-opacity" style="display: block;">05 de maio de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo05/ser-revolucionario-reformista-qual-melhor.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo04/artigo04f01.jpg"
-                                alt="Foto de uma mão segurando moedas de bitcoin" style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
-                                        class="link-artigo">
-                                        <strong> Neste mundo (financeiro) nada irá te salvar, nem mesmo o
-                                            <em>Bitcoin</em>!</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    O Bitcoin é nova promessa de liberdade econômica atual. A promessa de
-                                    que uma moeda promoverá uma mudança tão radical na sociedade que...
-                                    <span class="w3-small w3-opacity" style="display: block;">27 de abril de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo03/artigo03f01.jpg"
-                                alt="Foto de uma mão manipulando um homem com cordas" style="width:100%"
-                                class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo03/nossa-guerra-cada-dia.html" class="link-artigo">
-                                        <strong> A nossa Guerra de cada dia</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    A todo momento, o temor de uma Terceira Guerra Mundial surge na
-                                    mídia e se prolonga por alguns dias ou até semanas, e isso tem se repetido há muito
-                                    tempo. No entanto, o que não é suficiente para...
-                                    <span class="w3-small w3-opacity" style="display: block;">20 de abril de 2024</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo03/nossa-guerra-cada-dia.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo02/artigo02f01.jpg"
-                                alt="Sala de aula de uma escola pública - Duvid Geografia" style="width:100%"
-                                class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo02/situacoes-desistir-ser-professor.html"
-                                        class="link-artigo">
-                                        <strong> Situações que me fizeram desistir de ser professor</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    Fiz apenas um relato, dos inúmeros que um professor enfrenta em
-                                    seu cotidiano. As dificuldades de lidar com a realidade das escolas públicas...
-                                    <span class="w3-small w3-opacity" style="display: block;">14 de abril de
-                                        2024.</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo02/situacoes-desistir-ser-professor.html"
-                                        class="link-artigo"><span
-                                            class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="w3-col l4 s12 w3-container w3-margin-bottom w3-padding-top-24">
-                        <div class="card-container w3-white w3-hover-opacity">
-                            <img src="../blog/artigos/artigo01/artigo01f01.jpg"
-                                alt="Foto de uma criança ajoelhada no muro" style="width:100%" class="card-image">
-                            <div class="w3-container w3-white card-content">
-                                <h2 class="w3-center">
-                                    <a href="../blog/artigos/artigo01/razoes-estudantes-nao-gostam-escola.html"
-                                        class="link-artigo">
-                                        <strong>5 Razões Pelas Quais Muitos Estudantes Não Gostam da Escola</strong>
-                                    </a>
-                                </h2>
-                                <p>
-                                    A escola é um lugar de aprendizado, crescimento e descobertas, mas para muitos
-                                    estudantes,
-                                    pode ser um ambiente desafiador...
-                                    <span class="w3-small w3-opacity" style="display: block;">7 de abril de 2024.</span>
-                                </p>
-                                <p>
-                                    <a href="../blog/artigos/artigo01/razoes-estudantes-nao-gostam-escola.html"
-                                        class="link-artigo">
-                                        <span class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS
-                                                »</b></span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
+                <div class="w3-center w3-padding-32">
+                    <div class="w3-bar pagination" id="blog-pagination"></div>
                 </div>
 
 
-
+                <ul class="pagination" id="blog-pagination" aria-label="Paginação dos artigos"></ul>
 
                 <!-- Fim do row -->
 
@@ -574,43 +292,7 @@
                 </div>
                 <hr>
 
-                <!-- Posts -->
-                <!-- <div class="w3-white w3-margin">
-                    <div class="w3-container w3-padding w3-black">
-                        <h4>Popular Posts</h4>
-                    </div>
-                    <ul class="w3-ul w3-hoverable w3-white">
-                        <li class="w3-padding-16">
-                            <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right"
-                                style="width:50px">
-                            <span class="w3-large">Denim</span>
-                            <br>
-                            <span>Sed mattis nunc</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right"
-                                style="width:50px">
-                            <span class="w3-large">Sweaters</span>
-                            <br>
-                            <span>Praes tinci sed</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right"
-                                style="width:50px">
-                            <span class="w3-large">Workshop</span>
-                            <br>
-                            <span>Ultricies congue</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia"
-                                style="width:50px">
-                            <span class="w3-large">Trends</span>
-                            <br>
-                            <span>Lorem ipsum dipsum</span>
-                        </li>
-                    </ul>
-                </div>
-                <hr> -->
+              
 
 
 
@@ -756,11 +438,13 @@
                                             <a href="#" class="dropdown-item">Post 2</a>
                                         </div>
                                     </div> -->
-                                    
-                                    <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Junho (1)
+
+                                    <div class="dropdown-item"
+                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Junho (1)
                                         <div class="nested-dropdown-content" id="dropdown-2024-fevereiro">
                                             <a href="../blog/artigos/artigo10/educacao-nao-e-so-vestibular-reconhecendo-os-talentos-alem-da-prova.html"
-                                            class="dropdown-item">  Educação não é só vestibular: reconhecendo os talentos além da prova</a>
+                                                class="dropdown-item"> Educação não é só vestibular: reconhecendo os
+                                                talentos além da prova</a>
                                         </div>
                                     </div>
                                     <div class="dropdown-item"
@@ -768,10 +452,11 @@
                                         <div class="nested-dropdown-content" id="dropdown-2024-janeiro">
                                             <!-- <a href="#" class="dropdown-item">Post 5</a> -->
 
-                                           
+
 
                                             <a href="../blog/artigos/artigo09/o-que-a-escola-pode-aprender-com-os-videogames.html"
-                                            class="dropdown-item"> O que a Escola pode aprender com os videogames?</a>
+                                                class="dropdown-item"> O que a Escola pode aprender com os
+                                                videogames?</a>
 
                                             <a href="../blog/artigos/artigo08/o-impacto-destrutivo-da-competição-nas-escolas-a-cultura-nociva-do-melhor-aluno.html"
                                                 class="dropdown-item">O Impacto Destrutivo da Competição nas
@@ -965,6 +650,72 @@
         //     x.style.fontWeight = "bold";
         //     x.innerHTML = "✓ Liked";
         // }
+    </script>
+
+    <script>
+        (function () {
+            const postsPerPage = 9;
+            const posts = Array.from(document.querySelectorAll('.blog-post-card'));
+            const pagination = document.getElementById('blog-pagination');
+
+            if (!posts.length || !pagination) {
+                return;
+            }
+
+            const totalPages = Math.ceil(posts.length / postsPerPage);
+            let currentPage = 1;
+
+            function renderPosts(page) {
+                const start = (page - 1) * postsPerPage;
+                const end = start + postsPerPage;
+
+                posts.forEach(function (post, index) {
+                    post.style.display = index >= start && index < end ? '' : 'none';
+                });
+            }
+
+            function createLink(label, page, isDisabled, isActive) {
+                const item = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = '#home';
+                link.textContent = label;
+
+                if (isDisabled) {
+                    link.classList.add('disabled');
+                    link.setAttribute('aria-disabled', 'true');
+                } else {
+                    link.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        currentPage = page;
+                        renderPosts(currentPage);
+                        renderPagination();
+                    });
+                }
+
+                if (isActive) {
+                    link.classList.add('active');
+                    link.setAttribute('aria-current', 'page');
+                }
+
+                item.appendChild(link);
+                return item;
+            }
+
+            function renderPagination() {
+                pagination.innerHTML = '';
+
+                pagination.appendChild(createLink('«', currentPage - 1, currentPage === 1, false));
+
+                for (let page = 1; page <= totalPages; page += 1) {
+                    pagination.appendChild(createLink(String(page), page, false, page === currentPage));
+                }
+
+                pagination.appendChild(createLink('»', currentPage + 1, currentPage === totalPages, false));
+            }
+
+            renderPosts(currentPage);
+            renderPagination();
+        })();
     </script>
 
 
