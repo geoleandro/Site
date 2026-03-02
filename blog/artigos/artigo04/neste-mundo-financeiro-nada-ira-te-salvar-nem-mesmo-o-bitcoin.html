@@ -3,458 +3,94 @@
 
 <head>
 
-
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <meta property="og:image" content="artigo04f01.jpg">
-   
-    
+    <meta property="og:image" content="artigo11f01.jpg">
 
     <meta name="google-adsense-account" content="ca-pub-5408157966429216">
 
-    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="stylesheet" href="../../blog-estilo.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <script src="../../../estilos/jstextos.js" defer></script>
+    <script src="../../scripts-blog.js" defer></script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
-    <title>Duvid Blog 04 - Neste mundo (financeiro) nada irá te salvar, nem mesmo o Bitcoin!</title>
+    <title></title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-
-
-
-
-    <style>
-        @font-face {
-
-            src: url('../../../fontes/FreePixel.woff');
-            font-family: pixel, "Oswald";
-        }
-
-
-        body {
-
-            margin: 0 auto;
-            font-family: pixel, Arial, sans-serif;
-            margin-bottom: 60px;
-            background-color: white;
-        }
-
-
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: pixel, Arial, Helvetica, sans-serif;
-            margin: auto;
-            padding: 10px;
-
-
-
-        }
-
-
-
-        .altura {
-            margin-top: 40px;
-            margin-bottom: 20px;
-            padding: 10px;
-
-            height: auto;
-        }
-
-        .larguraBar {
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-        /* Estilo padrão */
-        .artigo-texto {
-            max-width: 70%;
-            margin: auto;
-            padding: 0 20px;
-
-        }
-
-        .imagemBlog {
-            width: 65%;
-            margin: 0 auto;
-        }
-
-
-
-
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 0px;
-            margin-bottom: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-
-
-
-
-
-
-        /* Remove o sublinhado do link */
-        .link-artigo {
-            text-decoration: none;
-        }
-
-        .link-artigo:hover {
-            color: #0e8f2e;
-            /* Cor quando passa o mouse por cima */
-        }
-
-
-
-        /* Estilo para o botão de compartilhamento do WhatsApp */
-        .balanco-share {
-            display: inline-block;
-
-            /* Cor de fundo do WhatsApp */
-            color: white;
-            font-size: 16px;
-            padding: 5px 5px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .balanco-share:hover {
-
-            animation: shake 0.3s ease-in-out;
-
-        }
-
-        @keyframes shake {
-            0% {
-                transform: translateX(0);
-            }
-
-            25% {
-                transform: translateX(-5px);
-            }
-
-            50% {
-                transform: translateX(5px);
-            }
-
-            75% {
-                transform: translateX(-3px);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-
-        }
-
-        .share-icons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            ;
-            width: 100%;
-            max-width: 100px;
-            /* ajuste conforme necessário */
-            margin: 0 auto;
-        }
-
-        .share-icons a {
-            text-decoration: none;
-            padding: 8px;
-            /* Reduzindo o padding para diminuir o tamanho dos botões */
-            color: #fff;
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-            font-size: 12px;
-            /* Ajuste conforme necessário para diminuir o tamanho do texto */
-        }
-
-        .share-icons a.whatsapp {
-            background-color: #25D366;
-            /* verde do WhatsApp */
-        }
-
-        .share-icons a.facebook {
-            background-color: #1877F2;
-            /* azul do Facebook */
-        }
-
-        .share-icons a:hover {
-            opacity: 0.8;
-            /* reduzir a opacidade no hover */
-        }
-
-        .share-icons .button-container {
-            display: inline-block;
-        }
-
-        .share-icons .button-container:first-child {
-            margin-right: 5px;
-            /* Espaço entre os botões */
-        }
-
-        .share-icons .button-container:last-child {
-            margin-left: 5px;
-            /* Espaço entre os botões */
-        }
-
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media (max-width: 1200px) {
-            .column {
-                flex: 100%;
-                max-width: 100%;
-            }
-
-            .artigo-texto {
-                max-width: 100%;
-                margin: auto;
-                padding: 0 60px;
-
-            }
-
-            .imagemBlog {
-                width: 80%;
-                margin: 0 auto;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media (max-width: 600px) {
-
-
-            .artigo-texto {
-                max-width: 100%;
-                margin: auto;
-                padding: 0 0px;
-            }
-
-            .imagemBlog {
-                width: 100%;
-                margin: 0 auto;
-            }
-
-        }
-
-
-
-
-
-        /* Rodapé */
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            line-height: 60px;
-            color: #FFF;
-            text-align: center
-        }
-
-        #iconeFooter {
-            width: 32px;
-            height: 32px;
-        }
-
-        .extrafonte {
-            font-size: 5em !important;
-        }
-
-        .margemDireitaBlog {
-            margin-right: 50px !important;
-            /* Altere o valor conforme desejado */
-        }
-
-        .margemEsquerdaBlog {
-            margin-left: 10px !important;
-            /* Altere o valor conforme desejado */
-        }
-
-
-        /* CSS para remover os pontos de uma lista não ordenada */
-        .sem-pontos {
-            list-style-type: none;
-            padding: 0;
-        }
-
-
-        .share__container {
-            display: flex;
-            /* Define um layout flexível */
-            justify-content: flex-start;
-            /* Distribui os itens igualmente ao longo do contêiner */
-            align-items: center;
-            /* Centraliza os itens verticalmente */
-        }
-
-        .share__list {
-            list-style-type: none;
-            /* Remove os marcadores de lista */
-            padding: 0;
-            /* Remove o preenchimento padrão da lista */
-            margin: 0;
-            /* Remove a margem padrão da lista */
-            display: flex;
-            /* Define um layout flexível para os itens da lista */
-        }
-
-
-
-
-
-
-        .share__text {
-            margin-right: 10px;
-        }
-
-
-        .share__item {
-            margin-right: 10px;
-        }
-
-        .share__item:last-child {
-            margin-right: 0;
-        }
-    </style>
 
 </head>
 
 <body class="w3-light-grey">
 
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v19.0&appId=422919300344152" nonce="8vjinprp"></script>
 
+    <!-- Div para comentários do facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v18.0"></script>
 
     <!-- Navigation (Stays on Top) -->
     <div class="centerBar">
 
         <!-- Navigation (Stays on Top) -->
-        <div class="w3-top w3-bar w3-black   ">
-
-            <a href="../../../index.html" class=" w3-button  margemTop  ">Home</a>
-            <a href="../../../blog/blog.html" class=" w3-button  margemTop  ">Blog</a>
-            <a href="../../../paginas/sobre.html" class=" w3-button  margemTop  ">Sobre</a>
-
-
-
-        </div>
-
+        <div class="centerBar"></div>
 
     </div>
 
 
 
-
-    <div class="w3-padding-top-48">
-        <div class="w3-white  w3-padding w3-row">
-
-            <div class="share-icons w3-right w3-margin-right">
-                <div class="button-container">
-                    <button class="w3-green w3-border w3-round-large" name="decrease-font" id="decrease-font"
-                        title="Diminuir fonte">A -</button>
-                </div>
-                <div class="button-container">
-                    <button class="w3-green w3-border w3-round-large" name="increase-font" id="increase-font"
-                        title="Aumentar fonte">A +</button>
-                </div>
-            </div>
-        </div>
+   
 
 
-    </div>
+    <div id="header-dinamico"></div>
 
 
-    <div class="w3-content" style="max-width:1600px">
-        <!-- Header -->
-        <header class="w3-container w3-center w3-padding-64 ">
-            <h1 class="extrafonte"><b>Duvid Blog</b></h1>
-            <h3>Bem-vindo ao blog do <span class="w3-tag">Duvid Geografia</span></h3>
-        </header>
-
-
-
-    </div>
-
-
-
-
-<div class="w3-center">
-    
-        <div class="w3-container"   >
-            <h4 class="w3-center w3-margin w3-padding-64"  >"Aqueles que têm alguma coisa para vender, aqueles que desejam influenciar a opinião pública, <br>aqueles que estão no poder, diria um cético, têm um interesse pessoal em desencorajar o ceticismo.”
+    <div class="w3-center">
+    <div class="w3-container citacao-container">
+         <h4 class="w3-center w3-margin w3-padding-64"  >"Aqueles que têm alguma coisa para vender, aqueles que desejam influenciar a opinião pública, <br>aqueles que estão no poder, diria um cético, têm um interesse pessoal em desencorajar o ceticismo.”
                 <p class="w3-medium">Carl Sagan</p>
             </h4>
-    
-    
-        </div>
+    </div>
 </div>
-
-
-
-
 
     <div class="w3-row">
 
-
-
-
-
         <div class="w3-container w3-threequarter">
 
-        
             <div class="w3-col  ">
 
-
-
-
                 <div class="w3-container artigo-texto w3-margin-bottom">
-                    <h2 class="w3-center w3-margin-top ">
-
-                        <strong>
-                            Neste mundo (financeiro) nada irá te salvar, nem mesmo o <em>Bitcoin</em>!
+                    <h2 class="w3-center w3-margin-top">
+                        <strong id="artigo-titulo-principal">
                         </strong>
-
                     </h2>
 
-                    <div class="w3-margin w3-center"><img id="imagem1" src="../artigo04/artigo04f01.jpg"
-                            alt="Foto de arame farpado, guerra - Duvid Geografia" class="w3-mobile"
-                            style="width: 100%;">
-
-                        <br>
-
-                        <span class="w3-small w3-margin-left" id="citacao1">
-                        </span>
+                    <div class="w3-margin w3-center">
+                        <img id="imagem-principal" src="" alt="" class="w3-mobile" style="width: 100%;">
                     </div>
 
                     <ul>
-                        <li class="w3-small sem-pontos">Por Leandro Henrique da Silva</li>
-                        <li class="w3-opacity w3-small sem-pontos">27 de abril de 2024.</li>
+                        <li class="w3-small sem-pontos">Por <span id="artigo-autor">Leandro Henrique da Silva</span>
+                        </li>
+                        <li class="w3-opacity w3-small sem-pontos" id="artigo-data">Data carregando...</li>
                     </ul>
+
+                    <br>
+
+
+                    <!-- Insira o texto aqui -->
 
 
 
@@ -484,7 +120,7 @@
 
 
                         <blockquote class="w3-panel w3-leftbar w3-border-pale-red w3-white">
-                            <p class="w3-large"><i>"No jogo da vida, e especialmente nos investimentos, todos têm uma opinião sobre o que você
+                            <p><i>"No jogo da vida, e especialmente nos investimentos, todos têm uma opinião sobre o que você
                                 deveria fazer. Eles tentarão te induzir ao erro, aproveitar-se da sua falta de conhecimento.
                                 Irão dizer que a poupança é um péssimo investimento (de fato é), mas não para te ajudar, mas sim
                                 para fazer você transferir o seu suado dinheiro para o mercado."</i></p>
@@ -525,46 +161,19 @@
 
 
 
-
                     <!-- Fim do texto -->
 
 
-                    <div class="w3-left w3-margin-left">
-
-                        <div class="share-icons ">
-                            <span class="w3-margin-right">Compartilhe:</span>
-                            <a href="https://api.whatsapp.com/send?text=Confira%20este%20artigo%20interessante:%20https://www.duvid.com.br/blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
-                                target="_blank" class="whatsapp balanco-share">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-
-                            <span class="w3-margin-right"></span>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.duvid.com.br/blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
-                                target="_blank" class="facebook balanco-share">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </div>
+                    <div id="icones-compartilhamento" class="share-icons w3-left">
                     </div>
 
-
-
-
-
-
-
-                    <div class="fb-comments" data-href="https://www.duvid.com.br/blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html" data-width="700" data-numposts="10"></div>
+                    <div id="comentarios-fb"></div>
 
 
                 </div>
 
                 <!-- fim da classe w3-row -->
             </div>
-
-
-
-
-
-
 
 
         </div>
@@ -574,118 +183,42 @@
 
         <!-- Espaço para Outro Anúncio ou Propaganda -->
 
+        <div class="w3-container w3-quarter">
 
+            <div id="tags-container" class="w3-margin-bottom"></div>
 
-        <div class="w3-container w3-quarter  w3-round-large">
+            <div id="arquivo-blog-container" class="w3-margin-bottom"></div>
 
-
-            <!-- Tags -->
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-black">
-                    <h4>Tags</h4>
-                </div>
-                <div class="w3-container w3-white">
-                    <p>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Arte</span>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Educação</span>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filosofia</span>
-
-                        <span class="w3-tag w3-pale-yellow w3-small w3-margin-bottom">Finanças</span>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jogos digitais</span>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Línguas</span>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programação</span>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poemas</span>
-
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Viagens</span>
-
-
-
-                    </p>
-                </div>
-            </div>
-            <hr>
-
-
-
+            <div id="leia-tambem-container"></div>
 
             <div class="w3-white w3-margin">
                 <div class="w3-container w3-padding w3-black">
-                    <h4>Leia também</h4>
+                    <h4>Posts Recentes</h4>
                 </div>
-                <div class="w3-container w3-white">
-                    <!-- artigo1 -->
-                    <div class="w3-container w3-white w3-row-padding">
-
-                        <div class="w3-padding-top-24">
-                            <img src="../artigo06/artigo06f01.jpg" alt="Foto de uma mão manipulando um homem com cordas"
-                                style="width:100%" class="w3-hover-opacity">
-                        </div>
-
-
-                        <p><strong>
-                                <a href="../artigo06/ser-socio-de-empresas-estatais-uma-escolha-estrategica.html"
-                                    class="link-artigo">
-                                    Ser Sócio de Empresas Estatais: Uma Escolha Estratégica
-                                </a>
-                            </strong>
-                        </p>
-
-                    </div>
-
-                      <!-- artigo2 -->
-                     
-
-
-                </div>
+                <ul class="w3-ul w3-hoverable w3-white" id="recent-posts-list">
+                </ul>
             </div>
-            <hr>
 
-
-
-            <!-- FIM DA CLASSE W3-QUARTER -->
         </div>
 
- 
-
-        <!-- FIM DA CLASSE ROW -->
     </div>
 
 
 
+    <!-- FIM DA CLASSE W3-QUARTER -->
+
+
+
+
+    <!-- FIM DA CLASSE ROW -->
 
 
 
     <!-- 
 fim do row -->
 
-    </div>
 
-
-
-
-
-    <footer class="footer w3-black">
-
-        <div class="container">
-
-            <img id="iconeFooter" src="../../../fotoIndex/marcaDuvid.png" alt="icone" class="">
-
-            &copy; Duvid - Geografia 2022.
-
-
-        </div>
-
-    </footer>
-
-
-
+    <footer class="footer"></footer>
 
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -697,10 +230,6 @@ fim do row -->
         gtag('config', 'G-DPX55DSFZ0');
 
     </script>
-
-
-
-
 
 
 

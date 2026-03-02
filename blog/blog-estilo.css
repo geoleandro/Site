@@ -1,0 +1,792 @@
+/* === ESTILOS GERAIS E TEMPLATE === */
+
+* Garante que o corpo do site ocupe a altura toda */ html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o conteúdo principal "empurrar" o rodapé para baixo */
+.w3-row {
+    flex: 1 0 auto;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: pixel, Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 10px;
+
+
+
+}
+
+
+
+.altura {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    height: auto;
+}
+
+.larguraBar {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Estilo padrão */
+.artigo-texto {
+    max-width: 75%;
+    margin: auto;
+    padding: 0 20px;
+
+}
+
+.imagemBlog {
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+/* Remove o sublinhado do link */
+.link-artigo {
+    text-decoration: none;
+}
+
+.link-artigo:hover {
+    color: #0e8f2e;
+    /* Cor quando passa o mouse por cima */
+}
+
+
+
+/* Estilo para o botão de compartilhamento do WhatsApp */
+.balanco-share {
+    display: inline-block;
+
+    /* Cor de fundo do WhatsApp */
+    color: white;
+    font-size: 16px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.balanco-share:hover {
+
+    animation: shake 0.3s ease-in-out;
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.share-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+    width: 100%;
+    max-width: 100px;
+    /* ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+.share-icons a {
+    text-decoration: none;
+    padding: 8px;
+    /* Reduzindo o padding para diminuir o tamanho dos botões */
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    /* Ajuste conforme necessário para diminuir o tamanho do texto */
+}
+
+.share-icons a.whatsapp {
+    background-color: #25D366;
+    /* verde do WhatsApp */
+}
+
+.share-icons a.facebook {
+    background-color: #1877F2;
+    /* azul do Facebook */
+}
+
+.share-icons a:hover {
+    opacity: 0.8;
+    /* reduzir a opacidade no hover */
+}
+
+.share-icons .button-container {
+    display: inline-block;
+}
+
+.share-icons .button-container:first-child {
+    margin-right: 5px;
+    /* Espaço entre os botões */
+}
+
+.share-icons .button-container:last-child {
+    margin-left: 5px;
+    /* Espaço entre os botões */
+}
+
+/* Container de compartilhamento ajustado */
+.share-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;       
+    margin-top: 10px;
+}
+
+.share-container a {
+    /* Em vez de flex: 1, usamos um tamanho fixo máximo */
+    width: 160px;     
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px !important; /* Diminui a altura interna */
+    font-size: 0.9rem !important;  /* Fonte um pouco mais delicada */
+    margin: 0 !important;
+}
+
+/* No Mobile, eles podem crescer um pouco para facilitar o clique com o dedo */
+@media screen and (max-width: 600px) {
+    .share-container a {
+        width: 48%; /* Ficam dois por linha, menores */
+        min-width: 140px;
+    }
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1200px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .artigo-texto {
+        max-width: 100%;
+        margin: auto;
+        padding: 0 60px;
+
+    }
+
+    .imagemBlog {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+
+
+    .artigo-texto {
+        max-width: 100%;
+        margin: auto;
+        padding: 0 0px;
+    }
+
+    .imagemBlog {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+
+
+/* Rodapé */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #FFF;
+    text-align: center
+}
+
+#iconeFooter {
+    width: 32px;
+    height: 32px;
+}
+
+.extrafonte {
+    font-size: 5em !important;
+}
+
+.margemDireitaBlog {
+    margin-right: 50px !important;
+    /* Altere o valor conforme desejado */
+}
+
+.margemEsquerdaBlog {
+    margin-left: 10px !important;
+    /* Altere o valor conforme desejado */
+}
+
+
+/* CSS para remover os pontos de uma lista não ordenada */
+.sem-pontos {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.share__container {
+    display: flex;
+    /* Define um layout flexível */
+    justify-content: flex-start;
+    /* Distribui os itens igualmente ao longo do contêiner */
+    align-items: center;
+    /* Centraliza os itens verticalmente */
+}
+
+.share__list {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    padding: 0;
+    /* Remove o preenchimento padrão da lista */
+    margin: 0;
+    /* Remove a margem padrão da lista */
+    display: flex;
+    /* Define um layout flexível para os itens da lista */
+}
+
+
+
+
+
+
+.share__text {
+    margin-right: 10px;
+}
+
+
+.share__item {
+    margin-right: 10px;
+}
+
+.share__item:last-child {
+    margin-right: 0;
+}
+
+
+/* === ESTILOS EXCLUSIVOS DA HOME === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald"
+}
+
+body {
+    font-family: "Open Sans";
+
+}
+
+.larguraBar {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+/* Remove o sublinhado do link */
+.link-artigo {
+    text-decoration: none;
+}
+
+.link-artigo:hover {
+    color: #0e8f2e;
+    /* Cor quando passa o mouse por cima */
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #FFF;
+    text-align: center
+}
+
+#iconeFooter {
+    width: 32px;
+    height: 32px;
+}
+
+
+.fa-brands-tiktok {
+
+
+    display: inline-block;
+    width: 0.88em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23000' d='M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.extrafonte {
+    font-size: 5em !important;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content,
+.nested-dropdown-content {
+    display: none;
+
+    background-color: #f9f9f9;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item,
+.nested-dropdown-content .dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+
+}
+
+.dropdown-content .dropdown-item:hover,
+.nested-dropdown-content .dropdown-item:hover {
+
+    background-color: #f9f9f9;
+
+}
+
+.nested-dropdown-content .dropdown-item {
+    padding-left: 24px;
+}
+
+.nested-dropdown-content>a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* Container dos posts */
+#posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* O Card Individual */
+.card-container {
+    height: 100%; /* Faz todos os cards da mesma linha terem o mesmo tamanho */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+/* Ajuste da Imagem do Post */
+.card-image {
+    width: 100%;
+    height: 220px; /* Altura fixa para as fotos na vitrine */
+    object-fit: cover; /* Corta a imagem sem distorcer para caber no espaço */
+}
+
+/* Conteúdo do Texto dentro do Card */
+.card-content {
+    padding: 15px;
+    flex-grow: 1; /* Empurra o botão "Ler Mais" para o fundo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título do Artigo na Vitrine */
+.card-content h2 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    line-height: 1.1;
+    min-height: 3.9em; /* Reserva espaço para títulos de até 2 ou 3 linhas */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Link sem o sublinhado azul padrão */
+.link-artigo {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo da Paginação */
+.pagination button {
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+/* imagens de cabeçalho ocupam toda a tela */
+#home {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.citacao-container {
+    max-width: 700px; /* Ajuste este valor para ficar mais ou menos estreito */
+    margin: 0 auto;   /* Centraliza o bloco na tela */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas da frase */
+    font-style: italic; /* Opcional: deixa com cara de citação */
+}
+/* Estilo para as aspas grandes e elegantes */
+.citação-com-aspas p::before {
+    content: "“"; /* Aspa de abertura */
+    font-size: 4rem; /* Tamanho bem grande */
+    color: rgba(0,0,0,0.2); /* Cor sutil e semitransparente */
+    position: absolute;
+    margin-left: -40px; /* Joga a aspa para fora do texto */
+    margin-top: -20px;
+}
+
+.citação-com-aspas p::after {
+    content: "”"; /* Aspa de fechamento */
+    font-size: 4rem; /* Tamanho bem grande */
+    color: rgba(0,0,0,0.2); /* Cor sutil e semitransparente */
+    position: absolute;
+    margin-left: 10px; /* Dá um espaço do texto */
+    margin-top: 20px;
+}
+
+/* Tags */
+/* Efeito ao passar o mouse nas tags */
+.tag-clicavel {
+    transition: all 0.3s ease; /* Suaviza a mudança de cor */
+}
+
+.tag-clicavel:hover {
+    background-color: #000 !important; /* Fundo preto ao passar o mouse */
+    color: #fff !important;           /* Letras brancas */
+    transform: scale(1.05);           /* Dá um leve zoom */
+}
+
+/* Destaque para quando a tag estiver ativa (opcional) */
+.tag-ativa {
+    background-color: #2196F3 !important; /* Cor azul (ou a do seu tema) */
+    color: white !important;
+}
+
+/* Arquivo do estilo do blog, para os artigos e a vitrine de artigos */
+/* Estilo para os itens do arquivo */
+#drop-arquivo a:hover {
+    color: #000 !important;
+    text-decoration: underline;
+}
+
+#drop-arquivo span:hover {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+/* Espaçamento entre os widgets da lateral */
+#tags-container, #posts-recentes-container, #leia-tambem-container, #arquivo-blog-container {
+    margin-bottom: 24px;
+}
+
+/* Ajuste para o texto não ficar colado na borda em telas grandes */
+@media (min-width:993px) {
+    .w3-col.l4 { padding-left: 20px; }
+}
+
+/* Animação de Pulsação para o Skeleton */
+.skeleton {
+    background-color: #e2e2e2;
+    background-image: linear-gradient(90deg, #e2e2e2 0px, #eeeeee 40px, #e2e2e2 80px);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite linear;
+    border-radius: 4px;
+    display: block;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Esconder conteúdo real enquanto carrega */
+.hidden-loading {
+    visibility: hidden;
+}
+
+/* Melhoria da Leitura do Artigo */
+.artigo-texto {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Fontes sem serifa são melhores para telas */
+    font-size: 1.15rem; /* Aumenta levemente o tamanho padrão */
+    line-height: 1.8; /* Espaço generoso entre linhas para não "embolar" o texto */
+    color: #333; /* Cinza muito escuro é menos cansativo que o preto puro #000 */
+    text-align: left; /* Alinhamento à esquerda é mais fácil de ler que o justificado */
+}
+
+/* Espaçamento entre parágrafos */
+.artigo-texto p {
+    margin-bottom: 25px;
+}
+
+/* Destaque para subtítulos dentro do post (h3, h4) */
+.artigo-texto h3, .artigo-texto h4 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #2e7d32; /* Um verde escuro combinando com seu tema w3-green */
+    font-weight: bold;
+}
+
+/* Estilo para citações (blockquote) mais moderno */
+.artigo-texto blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50 !important;
+    padding: 20px 30px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Imagens com legenda */
+.artigo-texto img {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.legenda-imagem {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* --- MODO ESCURO GLOBAL --- */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Cards, containers brancos e elementos de fundo */
+body.dark-mode .w3-white, 
+body.dark-mode .w3-light-grey,
+body.dark-mode .artigo-texto,
+body.dark-mode .citacao-container,
+body.dark-mode #drop-arquivo,
+body.dark-mode .w3-container.w3-white {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* Ajuste de links para não "sumirem" no fundo escuro */
+body.dark-mode a {
+    color: #81c784 !important;
+}
+
+/* Ajuste de bordas e divisores */
+body.dark-mode hr, 
+body.dark-mode .w3-border,
+body.dark-mode .w3-leftbar {
+    border-color: #444 !important;
+}
+
+/* Garante que o texto dentro de inputs ou botões específicos também mude */
+body.dark-mode button:not(.w3-green) {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+/* Configuração do Corpo do Artigo */
+.corpo-artigo {
+    font-size: 1.25rem; /* Tamanho de fonte ideal para leitura */
+    color: #333;        /* Cinza escuro para menos cansaço visual */
+    padding: 10px;      /* Respiro lateral em dispositivos móveis */
+    transition: font-size 0.2s ease-out;/* Transição suave para mudanças de tamanho de fonte */
+    max-width: 850px; /* Largura ideal para o olho humano não se perder nas linhas */
+    margin: 0 auto;   /* Centraliza o texto */
+    font-family: 'Georgia', serif; /* Opcional: serifadas são melhores para textos longos */
+}
+
+.corpo-artigo p {
+    margin-bottom: 25px; /* Espaço entre um parágrafo e outro */
+    text-align: left;    /* Alinhamento à esquerda é mais natural para o olho */
+}
+
+/* Ajuste para o Dark Mode no corpo do artigo */
+body.dark-mode .corpo-artigo {
+    color: #e0e0e0;      /* Texto claro no modo escuro */
+}
+
+/* Garante que imagens dentro do corpo do artigo não estourem o tamanho */
+.corpo-artigo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+     cursor: zoom-in;
+    transition: transform 0.3s;
+    
+}
+ 
+
+.corpo-artigo img:hover {
+    transform: scale(1.02); /* Pequeno zoom ao passar o mouse */
+}
+
+/* Efeito de "Apertar" nos botões de fonte */
+#increase-font:active, 
+#decrease-font:active {
+    transform: scale(0.92); /* Reduz o botão em 8% no momento do clique */
+    background-color: #2e7d32 !important; /* Escurece o verde levemente */
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.2); /* Cria uma sombra interna de profundidade */
+    transition: transform 0.1s; /* Volta ao normal bem rápido */
+}
+
+/* Opcional: Efeito de Hover (quando o mouse passa por cima) */
+#increase-font:hover, 
+#decrease-font:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+/* Estado desativado para os botões de fonte */
+.btn-font-disabled {
+    background-color: #ccc !important; /* Cinza claro */
+    color: #888 !important;            /* Texto cinza escuro */
+    cursor: not-allowed !important;    /* Muda o ícone do mouse */
+    border-color: #bbb !important;
+    opacity: 0.6;
+    transform: none !important;        /* Remove o efeito de apertar */
+    box-shadow: none !important;
+}
+
+/* Garante que no Dark Mode o cinza combine com o fundo */
+body.dark-mode .btn-font-disabled {
+    background-color: #444 !important;
+    color: #777 !important;
+    border-color: #555 !important;
+}
+
+
+
+body.dark-mode img {
+    filter: brightness(0.8) contrast(1.1); /* Suaviza o brilho das fotos no escuro */
+}
+body.dark-mode img:hover {
+    filter: brightness(1); /* Volta ao brilho normal ao focar */
+}
+
+
+/* Botão Voltar ao Topo */
+#btn-topo {
+  display: none;      /* Escondido por padrão */
+  position: fixed;    /* Fica fixo na tela */
+  bottom: 20px;       /* Distância do fundo */
+  right: 30px;        /* Distância da direita */
+  z-index: 99;        /* Garante que fica por cima de tudo */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transition: opacity 0.3s;
+}
+
+#btn-topo:hover {
+  background-color: #2e7d32 !important; /* Verde mais escuro no hover */
+}
+
+/* Ajuste para não cobrir o conteúdo em telas muito pequenas */
+@media screen and (max-width: 600px) {
+  #btn-topo {
+    right: 15px;
+    bottom: 15px;
+    padding: 8px 12px;
+  }
+}
+

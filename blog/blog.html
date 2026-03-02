@@ -6,585 +6,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../estilos/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="blog-estilo.css">
+
+
 
     <link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
-    <script src="scripts-blog.js"></script>
-
+    <script src="scripts-blog.js" defer></script>
 
     <title>Duvid Blog</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <style>
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Oswald"
-        }
-
-        body {
-            font-family: "Open Sans";
-
-        }
-
-        .larguraBar {
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-
-
-        /* Remove o sublinhado do link */
-        .link-artigo {
-            text-decoration: none;
-        }
-
-        .link-artigo:hover {
-            color: #0e8f2e;
-            /* Cor quando passa o mouse por cima */
-        }
-
-        .footer {
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            line-height: 60px;
-            color: #FFF;
-            text-align: center
-        }
-
-        #iconeFooter {
-            width: 32px;
-            height: 32px;
-        }
-
-
-        .fa-brands-tiktok {
-
-
-            display: inline-block;
-            width: 0.88em;
-            height: 1em;
-            --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23000' d='M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z'/%3E%3C/svg%3E");
-            background-color: currentColor;
-            -webkit-mask-image: var(--svg);
-            mask-image: var(--svg);
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-            -webkit-mask-size: 100% 100%;
-            mask-size: 100% 100%;
-        }
-
-        .extrafonte {
-            font-size: 5em !important;
-        }
-
-        .dropdown-container {
-            position: relative;
-            display: inline-block;
-            background-color: #f9f9f9;
-        }
-
-        .dropdown-content,
-        .nested-dropdown-content {
-            display: none;
-
-            background-color: #f9f9f9;
-            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-            z-index: 1;
-        }
-
-        .dropdown-content .dropdown-item,
-        .nested-dropdown-content .dropdown-item {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            cursor: pointer;
-
-        }
-
-        .dropdown-content .dropdown-item:hover,
-        .nested-dropdown-content .dropdown-item:hover {
-
-            background-color: #f9f9f9;
-
-        }
-
-        .nested-dropdown-content .dropdown-item {
-            padding-left: 24px;
-        }
-
-        .nested-dropdown-content>a:hover {
-
-            text-decoration: underline;
-
-        }
-
-
-
-        .card-container {
-            height: 650px;
-            /* Altura total do card */
-        }
-
-        .card-image {
-            height: 200px;
-            /* Altura da imagem */
-            object-fit: cover;
-            /* Para garantir que a imagem preencha o espaço */
-        }
-
-        .card-content {
-            height: 200px;
-            /* Altura do conteúdo */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .pagination {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            list-style: none;
-            padding: 8px 0 24px;
-            margin: 0;
-        }
-
-        .pagination a {
-            text-decoration: none;
-            padding: 8px 14px;
-            border: 1px solid #d9d9d9;
-            color: #222;
-            background-color: #fff;
-            border-radius: 4px;
-            display: inline-block;
-            min-width: 40px;
-            text-align: center;
-        }
-
-        .pagination a.active {
-            background-color: #111;
-            color: #fff;
-            border-color: #111;
-        }
-
-        .pagination a.disabled {
-            opacity: 0.45;
-            pointer-events: none;
-            cursor: not-allowed;
-        }
-
-        /* imagens de cabeçalho ocupam toda a tela */
-        #home {
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        #home img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
-
 </head>
-
-
 
 
 <body class="w3-light-grey">
 
-    <div class="centerBar">
+    <!-- Navigation (Stays on Top) -->
+    <div class="centerBar"> </div>
 
-        <!-- Navigation (Stays on Top) -->
-        <div class="w3-top w3-bar w3-black   ">
+    <div id="header-dinamico"></div>
 
-            <a href="../index.html" class=" w3-button  margemTop  ">Home</a>
-            <a href="../paginas/sobre.html" class=" w3-button  margemTop  ">Sobre</a>
-
-
+    <!-- Image header -->
+    <div class="w3-display-container" id="home">
+        <img class="w3-image" src="../blog/capaBlog.jpg" alt="Foto de uma praia - Duvid Geografia">
+        <div class="w3-display-left w3-padding">
+            <!-- <h1 class="w3-text-white">Jane's</h1> -->
+            <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>DUVID BLOG</b></h1>
+            <!-- <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6> -->
         </div>
-
-        <!-- w3-content defines a container for fixed size centered content, 
-     and is wrapped around the whole page content, except for the footer in this example -->
-
-        <div class="w3-content" style="max-width:100%">
-            <!-- Header -->
-            <div class="w3-container w3-center w3-padding-top-64 w3-margin-bottom ">
-                <h1 class="extrafonte  w3-hide-medium "><b>Duvid Blog</b></h1>
-                <h3>Bem-vindo ao blog do <span class="w3-tag"> Duvid Geografia</span></h3>
-            </div>
-        </div>
-
-        <!-- Image header -->
-        <div class="w3-display-container" id="home">
-            <img class="w3-image" src="../blog/capaBlog.jpg" alt="Foto de uma praia - Duvid Geografia">
-            <div class="w3-display-left w3-padding">
-                <!-- <h1 class="w3-text-white">Jane's</h1> -->
-                <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>DUVID BLOG</b></h1>
-                <!-- <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6> -->
-            </div>
-        </div>
-
-        <!-- Grid -->
-        <div class="w3-row  w3-border larguraBar  ">
-
-
-
-            <!-- Blog entries -->
-            <div class="w3-col l8 s12">
-
-
-                <!-- First Photo Grid-->
-
-                <div class="w3-row" id="posts-grid"></div>
-
-                <div class="w3-center w3-padding-32">
-                    <div class="w3-bar pagination" id="blog-pagination"></div>
-                </div>
-
-
-                <ul class="pagination" id="blog-pagination" aria-label="Paginação dos artigos"></ul>
-
-                <!-- Fim do row -->
+    </div>
 
 
 
 
+    <!-- Grid -->
+    <div class="w3-row  w3-border larguraBar  ">
+
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
 
 
+            <!-- Área dos posts-->
 
+            <div class="w3-row" id="posts-grid"></div>
 
-
-
-                <!-- END BLOG ENTRIES -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar pagination" id="blog-pagination"></div>
             </div>
 
-            <!-- About/Information menu -->
-            <div class="w3-col l4">
-                <!-- About Card -->
-                <div class="w3-white w3-margin">
-                    <img src="../blog/fotos/fotoPerfilblog.png" alt="Duvid Geografia" style="width:100%"
-                        class="w3-grayscale">
-                    <div class="w3-container w3-black">
-                        <h4>Leandro</h4>
-                        <p>Observador; professor; aspirante a pixel artista; programador de fundo de
-                            quintal; escritor do mundo interno; Deutschlerner.</p>
-                    </div>
+            <!-- Fim do row -->
+
+            <!-- END BLOG ENTRIES -->
+        </div>
+
+
+
+
+
+        <!-- About/Information menu -->
+        <div class="w3-col l4">
+            <!-- About Card -->
+            <div class="w3-white w3-margin">
+                <img src="../blog/fotos/fotoPerfilblog.jpeg" alt="Duvid Geografia" style="width:100%"
+                    class="w3-grayscale">
+                <div class="w3-container w3-green">
+                    <h4>Leandro</h4>
+                    <p>Leitor; professor; aspirante a pixel artista; programador de fundo de
+                        quintal...</p>
                 </div>
-                <hr>
+            </div>
+            <hr>
 
-              
+            <!-- Posts Recentes -->
 
-
-
-                <!-- Tags -->
-                <div class="w3-white w3-margin">
-                    <div class="w3-container w3-padding w3-black">
-                        <h4>Tags</h4>
-                    </div>
-                    <div class="w3-container w3-white">
-                        <p>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Arte</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Educação</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Filosofia</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Finanças</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jogos digitais</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Línguas</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Programação</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Poemas</span>
-
-                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Viagens</span>
+            <div id="tags-container"></div>
+            <div id="posts-recentes-container"></div>
+            <div id="leia-tambem-container"></div>
 
 
-                        </p>
-                    </div>
+
+
+            <!-- Galeria de fotos -->
+            <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-green">
+                    <h4>Por aí</h4>
                 </div>
-                <hr>
-
-
-                <!-- Inspiration -->
-                <div class="w3-white w3-margin">
-                    <div class="w3-container w3-padding w3-black">
-                        <h4>Por aí</h4>
-                    </div>
-                    <div class="w3-row-padding w3-white">
-                        <div class="w3-col s6">
-
-
-                            <p><img src="../blog/fotos/fotoblog01.jpeg" style="width:100%;cursor:zoom-in"
-                                    alt="Basiléia, Suiça."
-                                    onclick="document.getElementById('fotoblog01').style.display='block'">
-                            </p>
-
-
-                            <p><img src="../blog/fotos/fotoblog02.jpeg" style="width:100%;cursor:zoom-in"
-                                    alt="Beco Ouro Preto, Minas Gerais"
-                                    onclick="document.getElementById('fotoblog02').style.display='block'">
-
-                            </p>
-
-
-                        </div>
-
-                        <div class="w3-col s6">
-                            <p><img src="../blog/fotos/fotoblog03.jpeg" style="width:100%;cursor:zoom-in"
-                                    alt="Ladeira Ouro Preto, Minas Gerais"
-                                    onclick="document.getElementById('fotoblog03').style.display='block'"></p>
-
-                            <p><img src="../blog/fotos/fotoblog04.jpeg" style="width:100%;cursor:zoom-in"
-                                    alt="Jogo Aventura Geográfica - Duvid Geografia"
-                                    onclick="document.getElementById('fotoblog04').style.display='block'"></p>
-                        </div>
-                    </div>
+                <div class="w3-row-padding w3-white" id="grid-galeria">
                 </div>
-                <hr>
+            </div>
+            <hr>
 
-
-                <div class="w3-container">
-
-
-
-                    <div id="fotoblog01" class="w3-modal" onclick="this.style.display='none'">
-                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                        <div class="w3-modal-content w3-animate-zoom">
-                            <img src="../blog/fotos/fotoblog01.jpeg" style="width:100%">
-                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Basiléia,
-                                    Suiça.</strong></span>
-                        </div>
-                    </div>
-
-                    <div id="fotoblog02" class="w3-modal" onclick="this.style.display='none'">
-                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                        <div class="w3-modal-content w3-animate-zoom">
-                            <img src="../blog/fotos/fotoblog02.jpeg" style="width:100%">
-                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Beco
-                                    Ouro Preto, Minas Gerais.
-                                </strong></span>
-                        </div>
-                    </div>
-
-                    <div id="fotoblog03" class="w3-modal" onclick="this.style.display='none'">
-                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                        <div class="w3-modal-content w3-animate-zoom">
-                            <img src="../blog/fotos/fotoblog03.jpeg" style="width:100%">
-                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Ladeira
-                                    em Ouro Preto, Minas Gerais.
-                                </strong></span>
-                        </div>
-                    </div>
-
-                    <div id="fotoblog04" class="w3-modal" onclick="this.style.display='none'">
-                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                        <div class="w3-modal-content w3-animate-zoom">
-                            <img src="../blog/fotos/fotoblog04.jpeg" style="width:100%">
-                            <span class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"><strong>Fase
-                                    continente africano - Jogo Aventura Geográfica
-                                </strong></span>
-                        </div>
-                    </div>
-
-
-
+            <div id="modal-galeria" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img-modal-expandida" style="width:100%">
+                    <span id="legenda-modal"
+                        class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"></span>
                 </div>
-
-
-
-
-                <!-- Arquivo Blog -->
-                <div class="w3-container">
-                    <div class="w3-container w3-padding w3-black">
-                        <h4>Arquivo Blog</h4>
-                    </div>
-
-                    <div class="dropdown-container">
-                        <button class="w3-button"
-                            onclick="toggleDropdown('dropdown')"><strong>Ano/Meses</strong></button>
-
-                        <div class="dropdown-content" id="dropdown">
-                            <div class="dropdown-item" onclick="toggleYearDropdown(event, 'dropdown-2024')"><strong>2024
-                                </strong>(11)
-                                <div class="nested-dropdown-content" id="dropdown-2024">
-
-                                    <!-- <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Julho
-                                        <div class="nested-dropdown-content" id="dropdown-2024-fevereiro">
-                                            <a href="#" class="dropdown-item">Post 1</a>
-                                            <a href="#" class="dropdown-item">Post 2</a>
-                                        </div>
-                                    </div> -->
-
-                                    <div class="dropdown-item"
-                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Junho (1)
-                                        <div class="nested-dropdown-content" id="dropdown-2024-fevereiro">
-                                            <a href="../blog/artigos/artigo10/educacao-nao-e-so-vestibular-reconhecendo-os-talentos-alem-da-prova.html"
-                                                class="dropdown-item"> Educação não é só vestibular: reconhecendo os
-                                                talentos além da prova</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-item"
-                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-janeiro')">Maio (5)
-                                        <div class="nested-dropdown-content" id="dropdown-2024-janeiro">
-                                            <!-- <a href="#" class="dropdown-item">Post 5</a> -->
-
-
-
-                                            <a href="../blog/artigos/artigo09/o-que-a-escola-pode-aprender-com-os-videogames.html"
-                                                class="dropdown-item"> O que a Escola pode aprender com os
-                                                videogames?</a>
-
-                                            <a href="../blog/artigos/artigo08/o-impacto-destrutivo-da-competição-nas-escolas-a-cultura-nociva-do-melhor-aluno.html"
-                                                class="dropdown-item">O Impacto Destrutivo da Competição nas
-                                                Escolas: A Cultura Nociva do “Melhor Aluno”</a>
-
-                                            <a href="../blog/artigos/artigo07/a-sociedade-so-valoriza-a-escola-quando-lhe-convem.html"
-                                                class="dropdown-item">A Sociedade Só Valoriza a Escola Quando
-                                                Lhe Convém</a>
-                                            <a href="../blog/artigos/artigo06/ser-socio-de-empresas-estatais-uma-escolha-estrategica.html"
-                                                class="dropdown-item">Ser Sócio de Empresas Estatais: Uma
-                                                Escolha Estratégica</a>
-                                            <a href="../blog/artigos/artigo05/ser-revolucionario-reformista-qual-melhor.html"
-                                                class="dropdown-item">Ser Revolucionário ou Reformista: Qual é a
-                                                Melhor Opção?</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-item"
-                                        onclick="toggleNestedDropdown(event, 'dropdown-2024-fevereiro')">Abril (4)
-                                        <div class="nested-dropdown-content" id="dropdown-2024-fevereiro">
-                                            <a href="../blog/artigos/artigo04/neste-mundo-financeiro-nada-ira-te-salvar-nem-mesmo-o-bitcoin.html"
-                                                class="dropdown-item">Neste mundo (financeiro) nada irá te
-                                                salvar, nem mesmo o Bitcoin!</a>
-                                            <a href="../blog/artigos/artigo03/nossa-guerra-cada-dia.html"
-                                                class="dropdown-item">A nossa Guerra de cada dia</a>
-                                            <a href="../blog/artigos/artigo02/situacoes-desistir-ser-professor.html"
-                                                class="dropdown-item">Situações que me fizeram desistir de ser
-                                                professor</a>
-                                            <a href="../blog/artigos/artigo01/razoes-estudantes-nao-gostam-escola.html"
-                                                class="dropdown-item">5 Razões Pelas Quais Muitos Estudantes Não
-                                                Gostam da Escola</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- <div class="dropdown-item" onclick="toggleYearDropdown(event, 'dropdown-2023')">2023
-                                <div class="nested-dropdown-content" id="dropdown-2023">
-                                    <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2023-marco')">Março
-                                        <div class="nested-dropdown-content" id="dropdown-2023-marco">
-                                            <a href="#" class="dropdown-item">O Impacto Destrutivo da Competição nas Escolas: A Cultura Nociva do “Melhor Aluno”</a>
-                                            <a href="#" class="dropdown-item">Post 2</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-item" onclick="toggleNestedDropdown(event, 'dropdown-2023-abril')">Abril
-                                        <div class="nested-dropdown-content" id="dropdown-2023-abril">
-                                            <a href="#" class="dropdown-item">Post 1</a>
-                                            <a href="#" class="dropdown-item">Post 2</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="w3-white w3-margin">
-                    <div class="w3-container w3-padding w3-black">
-                        <h4>Outras coisas</h4>
-                    </div>
-                    <div class="w3-container w3-xlarge w3-padding">
-
-                        <a class="fa fa-instagram w3-hover-opacity w3-margin-right"
-                            href="https://www.instagram.com/leandrohenriquedasilva/" target="_blank">
-
-                        </a>
-
-
-                        <a class="fa fa-youtube w3-margin-right" href="https://www.youtube.com/@duvidgeografia/"
-                            target="_blank">
-
-                        </a>
-
-                        <a class="fa-brands-tiktok" href="https://www.tiktok.com/@duvidgeografia/" target="_blank">
-
-                        </a>
-                    </div>
-                </div>
-                <hr>
-
-
-
-
-
-                <!-- Advertising -->
-                <!-- <div class="w3-white w3-margin">
-                    <div class="w3-container w3-padding w3-black">
-                        <h4>Publicidade</h4>
-                    </div>
-                    <div class="w3-container w3-white">
-                        <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
-                            <span class="w3-display-middle">Your AD Here</span>
-                        </div>
-                    </div>
-                </div>
-                <hr> -->
-
-                <!-- Subscribe -->
-                <!-- <div class="w3-white w3-margin">
-                    <div class="w3-container w3-padding w3-black">
-                        <h4>Subscribe</h4>
-                    </div>
-                    <div class="w3-container w3-white">
-                        <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-                        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%">
-                        </p>
-                        <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'"
-                                class="w3-button w3-block w3-red">Subscribe</button></p>
-                    </div>
-                </div> -->
-
-                <!-- END About/Intro Menu -->
             </div>
 
 
 
+            <!-- Arquivo Blog -->
+
+            <div id="arquivo-blog-container"></div>
+
+
+
+
+
         </div>
 
-        <div class="w3-margin-left">
 
-            <a href="#" class="w3-button w3-black w3-padding w3-margin-bottom"><i
-                    class="fa fa-arrow-up w3-margin-right"></i>Início</a>
-        </div>
-        <!-- END GRID -->
 
     </div>
+
+
+    <!-- END GRID -->
+
+
 
 
 
@@ -607,22 +160,14 @@
     </div> -->
 
 
-
+    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large"
+        title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
 
-    <footer class="footer w3-black">
-
-        <div class="container">
-
-            <img id="iconeFooter" src="../fotoIndex/marcaDuvid.png" alt="icone" class="">
-
-            &copy; Duvid - Geografia 2022.
-
-
-        </div>
-
-    </footer>
+    <footer class="footer w3-black"></footer>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>
@@ -634,125 +179,6 @@
 
     </script>
 
-    <script>
-        // Toggle between hiding and showing blog replies/comments
-        // document.getElementById("myBtn").click();
-        // function myFunction(id) {
-        //     var x = document.getElementById(id);
-        //     if (x.className.indexOf("w3-show") == -1) {
-        //         x.className += " w3-show";
-        //     } else {
-        //         x.className = x.className.replace(" w3-show", "");
-        //     }
-        // }
-
-        // function likeFunction(x) {
-        //     x.style.fontWeight = "bold";
-        //     x.innerHTML = "✓ Liked";
-        // }
-    </script>
-
-    <script>
-        (function () {
-            const postsPerPage = 9;
-            const posts = Array.from(document.querySelectorAll('.blog-post-card'));
-            const pagination = document.getElementById('blog-pagination');
-
-            if (!posts.length || !pagination) {
-                return;
-            }
-
-            const totalPages = Math.ceil(posts.length / postsPerPage);
-            let currentPage = 1;
-
-            function renderPosts(page) {
-                const start = (page - 1) * postsPerPage;
-                const end = start + postsPerPage;
-
-                posts.forEach(function (post, index) {
-                    post.style.display = index >= start && index < end ? '' : 'none';
-                });
-            }
-
-            function createLink(label, page, isDisabled, isActive) {
-                const item = document.createElement('li');
-                const link = document.createElement('a');
-                link.href = '#home';
-                link.textContent = label;
-
-                if (isDisabled) {
-                    link.classList.add('disabled');
-                    link.setAttribute('aria-disabled', 'true');
-                } else {
-                    link.addEventListener('click', function (event) {
-                        event.preventDefault();
-                        currentPage = page;
-                        renderPosts(currentPage);
-                        renderPagination();
-                    });
-                }
-
-                if (isActive) {
-                    link.classList.add('active');
-                    link.setAttribute('aria-current', 'page');
-                }
-
-                item.appendChild(link);
-                return item;
-            }
-
-            function renderPagination() {
-                pagination.innerHTML = '';
-
-                pagination.appendChild(createLink('«', currentPage - 1, currentPage === 1, false));
-
-                for (let page = 1; page <= totalPages; page += 1) {
-                    pagination.appendChild(createLink(String(page), page, false, page === currentPage));
-                }
-
-                pagination.appendChild(createLink('»', currentPage + 1, currentPage === totalPages, false));
-            }
-
-            renderPosts(currentPage);
-            renderPagination();
-        })();
-    </script>
-
-
-    <script>
-        function toggleDropdown(id) {
-            var element = document.getElementById(id);
-            if (element.style.display === "block") {
-                element.style.display = "none";
-                closeAllNestedDropdowns(); // Fecha todos os dropdowns de meses e posts
-            } else {
-                element.style.display = "block";
-            }
-        }
-
-        function toggleYearDropdown(event, id) {
-            event.stopPropagation();
-            closeAllNestedDropdowns(); // Fecha todos os dropdowns de meses e posts
-            toggleNestedDropdown(event, id);
-        }
-
-        function toggleNestedDropdown(event, id) {
-            event.stopPropagation();
-            var element = document.getElementById(id);
-            if (element.style.display === "block") {
-                element.style.display = "none";
-            } else {
-                element.style.display = "block";
-            }
-        }
-
-        function closeAllNestedDropdowns() {
-            var nestedDropdowns = document.querySelectorAll('.nested-dropdown-content');
-            nestedDropdowns.forEach(function (dropdown) {
-                dropdown.style.display = 'none';
-            });
-        }
-    </script>
 
 </body>
 
