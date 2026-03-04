@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="blog-estilo.css">
+    <link rel="stylesheet" href="/estilos/index-estilo.css">
 
 
 
@@ -22,7 +23,13 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
-    <script src="scripts-blog.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/abrirmenu.js" defer></script>
+
+    <script src="/blog/scripts-blog.js" defer></script>
+
+
+
 
     <title>Duvid Blog</title>
 
@@ -35,7 +42,7 @@
 <body class="w3-light-grey">
 
     <!-- Navigation (Stays on Top) -->
-    <div class="centerBar"> </div>
+    <div id="header-placeholder"></div>
 
     <div id="header-dinamico"></div>
 
@@ -95,30 +102,18 @@
             <div id="tags-container"></div>
             <div id="posts-recentes-container"></div>
             <div id="leia-tambem-container"></div>
+            <div id="viagens-container"></div>
 
 
 
 
-            <!-- Galeria de fotos -->
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-green">
-                    <h4>Por aí</h4>
-                </div>
-                <div class="w3-row-padding w3-white" id="grid-galeria">
-                </div>
-            </div>
-            <hr>
-
-            <div id="modal-galeria" class="w3-modal" onclick="this.style.display='none'">
+            <div id="modal-galeria" class="w3-modal" onclick="this.style.display='none'" style="z-index: 9999;">
                 <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                <div class="w3-modal-content w3-animate-zoom">
-                    <img id="img-modal-expandida" style="width:100%">
-                    <span id="legenda-modal"
-                        class="w3-display-bottomleft w3-margin-left w3-white w3-padding w3-opacity"></span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+                    <img id="img-modal" style="max-width:95%; max-height:80vh; border: 5px solid white;">
+                    <div id="legenda-modal" class="w3-container w3-text-white w3-padding-16 w3-large"></div>
                 </div>
             </div>
-
-
 
             <!-- Arquivo Blog -->
 
@@ -167,7 +162,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer w3-black"></footer>
+    <div id="footer-placeholder"></div>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>

@@ -13,13 +13,18 @@
 
     <meta name="google-adsense-account" content="ca-pub-5408157966429216">
 
-    <link rel="stylesheet" href="../../blog-estilo.css">
+
+    <link rel="stylesheet" href="/estilos/index-estilo.css">
+    <link rel="stylesheet" href="/blog/blog-estilo.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <script src="../../scripts-blog.js" defer></script>
+    <script src="/blog/scripts-blog.js" defer></script>
+     <script src="/js/main.js" defer></script>
+
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
@@ -32,9 +37,7 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v18.0"></script>
 
-    <div class="centerBar"></div>
-
-    <div style="padding-top: 60px;"></div>
+    <div id="header-placeholder"></div>
 
     <div id="header-dinamico"></div>
 
@@ -56,25 +59,14 @@
                 </div>
 
                 <div id="skeleton-data" class="skeleton" style="height: 20px; width: 150px; margin-left: 16px;"></div>
-                <ul class="w3-ul hidden-loading" id="lista-dados-autor">
-                    <li class="w3-small sem-pontos">Por <span id="artigo-autor">Leandro Henrique da Silva</span></li>
-                    <li class="w3-opacity w3-small sem-pontos" id="artigo-data"></li>
-                </ul>
+                 <ul>
+                        <li class="w3-small sem-pontos">Por <span id="artigo-autor">Leandro Henrique da Silva</span>
+                        </li>
+                        <li class="w3-opacity w3-small sem-pontos" id="artigo-data">Data carregando...</li>
+                    </ul>
 
                 <hr>
 
-                <div class="w3-row w3-padding">
-                    <div class="share-icons w3-right">
-                        <div class="button-container">
-                            <button class="w3-button w3-green w3-border w3-round-large" id="decrease-font"
-                                title="Diminuir fonte">A -</button>
-                        </div>
-                        <div class="button-container">
-                            <button class="w3-button w3-green w3-border w3-round-large" id="increase-font"
-                                title="Aumentar fonte">A +</button>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="corpo-artigo" style="line-height: 1.8;">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla sapiente culpa quasi ut,
@@ -135,7 +127,9 @@
 
 
 
-    <footer class="footer"></footer>
+    <div id="footer-placeholder"></div>
+
+   
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>

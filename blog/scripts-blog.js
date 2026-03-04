@@ -26,7 +26,7 @@ async function carregarDadosDoArquivo() {
         artigos = await resposta.json();
 
         // --- EXECUÇÃO DAS AUTOMAÇÕES ---
-        renderizarLayoutComum();           // Injeta Menu e Rodapé
+
         preencherDadosAutomaticos(artigos); // Injeta Título, Data e Imagem do post
         renderizarPostsRecentes();         // Monta a barra lateral
         renderizarNuvemDeTags();           // Monta as tags
@@ -34,10 +34,11 @@ async function carregarDadosDoArquivo() {
         carregarComentariosFacebook();     // Injeta o plugin do FB
         renderizarArquivoBlog();
         renderizarArtigos(paginaAtual);
+        renderizarSecaoViagens();
 
         // --- INICIALIZAÇÃO DE INTERAÇÕES ---
-        inicializarControleFonte();       // CORREÇÃO: Chamada aqui após o layout
-        inicializarLogicaDarkMode();      // Inicia o Dark Mode
+
+
 
 
     } catch (erro) {
@@ -47,7 +48,7 @@ async function carregarDadosDoArquivo() {
             const backupPath = window.location.pathname.includes('/artigos/') ? '../../artigos.json' : 'artigos.json';
             const resp = await fetch(backupPath);
             artigos = await resp.json();
-            renderizarLayoutComum();           // Injeta Menu e Rodapé
+
             preencherDadosAutomaticos(artigos); // Injeta Título, Data e Imagem do post
             renderizarPostsRecentes();         // Monta a barra lateral
             renderizarNuvemDeTags();           // Monta as tags
@@ -55,10 +56,11 @@ async function carregarDadosDoArquivo() {
             carregarComentariosFacebook();     // Injeta o plugin do FB
             renderizarArquivoBlog();
             renderizarArtigos(paginaAtual);
+            renderizarSecaoViagens();
 
             // --- INICIALIZAÇÃO DE INTERAÇÕES ---
-            inicializarControleFonte();       // CORREÇÃO: Chamada aqui após o layout
-            inicializarLogicaDarkMode();      // Inicia o Dark Mode
+
+
 
         } catch (e) {
             console.error("Falha total ao carregar o JSON:", e);
@@ -66,142 +68,8 @@ async function carregarDadosDoArquivo() {
     }
 }
 
-function renderizarLayoutComum() {
-    // 1. Injeta o Menu (centerBar)
-    const containerMenu = document.querySelector('.centerBar');
-    if (containerMenu) {
-        containerMenu.innerHTML = `
-            <div class="w3-top">
-                <div class="w3-bar w3-green w3-card">
-                    <a href="/index.html" class="w3-bar-item w3-button">Home</a>
-                    <a href="/blog/blog.html" class="w3-bar-item w3-button">Blog</a>
-                    <a href="/paginas/sobre.html" class="w3-bar-item w3-button">Sobre</a>
-                    
-                    <div class="w3-right">
-                        <button class="w3-button" id="toggle-dark-mode" title="Mudar Tema">
-                            <i class="fa fa-moon"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        `;
-    }
-
-    // 2. Injeta o Header
-    const containerHeader = document.getElementById('header-dinamico');
-    if (containerHeader) {
-        containerHeader.innerHTML = `
-            <div class="w3-content" style="max-width:1600px">
-                <header class="w3-container w3-center w3-padding-64">
-                    <h1 class="extrafonte"><b>Duvid Blog</b></h1>
-                    <h3>Bem-vindo ao blog do <span class="w3-tag">Duvid Geografia</span></h3>
-                </header>
-            </div>
-        `;
-    }
 
 
-    // 3. Injeta o Rodapé (Footer) igual ao da Index
-    const footer = document.querySelector('footer');
-    if (footer) {
-        const anoAtual = new Date().getFullYear();
-
-        // Aplicando as classes exatas do seu HTML original
-        footer.className = "w3-container w3-padding-24 w3-center w3-green w3-xlarge";
-
-        footer.innerHTML = `
-        <a class="fa-brands fa-instagram w3-margin-right" href="https://www.instagram.com/leandrohenriquedasilva/" target="_blank" style="text-decoration:none; color: white;"></a>
-        <a class="fa-brands fa-youtube w3-margin-right" href="https://www.youtube.com/@duvidgeografia/" target="_blank" style="text-decoration:none; color: white;"></a>
-        <a class="fa-brands fa-tiktok w3-margin-right" href="https://www.tiktok.com/@duvidgeografia/" target="_blank" style="text-decoration:none; color: white;"></a>
-
-        <p style="font-size: 1rem; margin-top: 15px;"> 
-            <a href="/paginas/politicaprivacidade.html" target="_blank" style="color: white; text-decoration: none;">Política de Privacidade</a>
-        </p>
-
-        <div class="w3-medium" style="margin-top: 10px;">
-            <img id="iconeFooter" src="/fotoIndex/marcaDuvid.png" alt="Marca" 
-                 class="w3-margin-right" style="width:40px; vertical-align: middle;">
-            <span style="color: white;">&copy; Duvid - Geografia 2022 - ${anoAtual}</span>
-        </div>
-    `;
-    }
-
-
-}
-
-// --- FUNÇÃO DE ACESSIBILIDADE CORRIGIDA ---
-function inicializarControleFonte() {
-    const btnAumentar = document.getElementById('increase-font');
-    const btnDiminuir = document.getElementById('decrease-font');
-    const corpoTexto = document.querySelector('.corpo-artigo');
-
-    if (!corpoTexto || !btnAumentar || !btnDiminuir) return;
-
-    // Começamos em 1.25rem (Tamanho normal/confortável)
-    let fontSizeAtual = 1.25;
-
-    function atualizarBotoes() {
-        // Limite máximo: 1.8rem (Texto bem grande para idosos ou cansaço visual)
-        if (fontSizeAtual >= 1.8) {
-            btnAumentar.classList.add('btn-font-disabled');
-        } else {
-            btnAumentar.classList.remove('btn-font-disabled');
-        }
-
-        // Limite mínimo: 1.1rem (Abaixo disso fica pequeno demais)
-        if (fontSizeAtual <= 1.1) {
-            btnDiminuir.classList.add('btn-font-disabled');
-        } else {
-            btnDiminuir.classList.remove('btn-font-disabled');
-        }
-    }
-
-    btnAumentar.onclick = function () {
-        if (fontSizeAtual < 1.8) {
-            fontSizeAtual += 0.1;
-            corpoTexto.style.fontSize = fontSizeAtual.toFixed(2) + "rem";
-            atualizarBotoes();
-        }
-        this.blur();
-    };
-
-    btnDiminuir.onclick = function () {
-        if (fontSizeAtual > 1.1) {
-            fontSizeAtual -= 0.1;
-            corpoTexto.style.fontSize = fontSizeAtual.toFixed(2) + "rem";
-            atualizarBotoes();
-        }
-        this.blur();
-    };
-
-    // Aplica o tamanho inicial ao carregar
-    corpoTexto.style.fontSize = fontSizeAtual + "rem";
-    atualizarBotoes();
-}
-
-// --- LOGICA DARK MODE ---
-function inicializarLogicaDarkMode() {
-    const btn = document.getElementById('toggle-dark-mode');
-    const body = document.body;
-
-    if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-mode');
-        if (btn) btn.innerHTML = '<i class="fa fa-sun"></i>';
-    }
-
-    if (btn) {
-        btn.onclick = function () {
-            body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-                this.innerHTML = '<i class="fa fa-sun"></i>';
-            } else {
-                localStorage.setItem('theme', 'light');
-                this.innerHTML = '<i class="fa fa-moon"></i>';
-            }
-        };
-    }
-}
 
 function preencherDadosAutomaticos(artigos) {
     const urlAtual = window.location.pathname;
@@ -628,105 +496,54 @@ function renderizarArquivoBlog() {
     container.innerHTML = html;
 }
 
-
-function configurarAcessibilidadeFonte() {
-    const btnAumentar = document.getElementById('increase-font');
-    const btnDiminuir = document.getElementById('decrease-font');
-    const corpoTexto = document.querySelector('.corpo-artigo');
-
-    if (!corpoTexto || !btnAumentar || !btnDiminuir) return;
-
-    let fontSizeAtual = 1.15; // Valor inicial em 'rem' (conforme o CSS)
-
-    btnAumentar.onclick = function () {
-        if (fontSizeAtual < 1.6) { // Limite máximo
-            fontSizeAtual += 0.1;
-            corpoTexto.style.fontSize = fontSizeAtual + "rem";
-        }
-    };
-
-    btnDiminuir.onclick = function () {
-        if (fontSizeAtual > 0.9) { // Limite mínimo
-            fontSizeAtual -= 0.1;
-            corpoTexto.style.fontSize = fontSizeAtual + "rem";
-        }
-    };
-
-    console.log("Configurações de acessibilidade de fonte ativadas.");
-}
-
-
-
-function mostrarBotaoTopo() {
-    const btn = document.getElementById("btn-topo");
-    if (!btn) return;
-
-    // Se rolar mais de 400px para baixo, o botão aparece
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-}
-
-// Função para subir suavemente
-function voltarAoTopo() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Subida suave (animação)
-    });
-}
-
-async function carregarGaleria() {
-    const container = document.getElementById('grid-galeria');
+// --- SEÇÃO "POR AÍ" (GALERIA DE VIAGENS) ---
+// --- SEÇÃO "POR AÍ" COM CLIQUE PARA AMPLIAR ---
+async function renderizarSecaoViagens() {
+    const container = document.getElementById('viagens-container');
     if (!container) return;
 
     try {
-        const response = await fetch('galeria.json'); // Certifique-se que o caminho está correto
-        const fotos = await response.json();
+        const resposta = await fetch('../blog/galeria.json');
+        if (!resposta.ok) throw new Error("Erro ao carregar galeria");
+        const fotos = await resposta.json();
 
-        let htmlGrid = '<div class="w3-col s6" id="col-galeria-1"></div><div class="w3-col s6" id="col-galeria-2"></div>';
-        container.innerHTML = htmlGrid;
+        let html = `
+            <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding ${corTemaLateral}">
+                    <h4>Por aí...</h4>
+                </div>
+                <div class="w3-row-padding w3-white w3-padding-16">
+        `;
 
-        const col1 = document.getElementById('col-galeria-1');
-        const col2 = document.getElementById('col-galeria-2');
-
-        fotos.forEach((foto, index) => {
-            const imgHtml = `
-                <p>
-                    <img src="${foto.url}" 
-                         style="width:100%;cursor:zoom-in" 
-                         alt="${foto.legenda}" 
-                         onclick="abrirModalGaleria('${foto.url}', '${foto.legenda}')"
-                         class="w3-hover-opacity">
-                </p>`;
-
-            // Distribui entre as duas colunas
-            if (index % 2 === 0) col1.innerHTML += imgHtml;
-            else col2.innerHTML += imgHtml;
+        fotos.forEach(foto => {
+            // Adicionamos o onclick="abrirModalGaleria(...)"
+            html += `
+                <div class="w3-col s6 w3-margin-bottom">
+                    <div style="height: 100px; overflow: hidden; cursor: pointer;">
+                        <img src="${foto.url}" alt="${foto.legenda}" 
+                             style="width:100%; height:100%; object-fit: cover;" 
+                             class="w3-hover-opacity" 
+                             onclick="abrirModalGaleria('${foto.url}', '${foto.legenda}')">
+                    </div>
+                </div>
+            `;
         });
-    } catch (error) {
-        console.error("Erro ao carregar a galeria:", error);
+
+        html += `</div></div>`;
+        container.innerHTML = html;
+    } catch (erro) {
+        console.error("Erro na galeria:", erro);
     }
 }
 
+// Função que faz a foto "ficar maior"
 function abrirModalGaleria(url, legenda) {
-    const modal = document.getElementById('modal-galeria');
-    const imgModal = document.getElementById('img-modal-expandida');
-    const legendaModal = document.getElementById('legenda-modal');
-
-    imgModal.src = url;
-    legendaModal.innerHTML = `<strong>${legenda}</strong>`;
-    modal.style.display = 'block';
+    document.getElementById('img-modal').src = url;
+    document.getElementById('legenda-modal').innerText = legenda;
+    document.getElementById('modal-galeria').style.display = 'block';
 }
 
-// Chame a função no carregamento
-document.addEventListener('DOMContentLoaded', carregarGaleria);
 
-// Monitora a rolagem da página
-window.onscroll = function () {
-    mostrarBotaoTopo();
-};
 // Inicia tudo
 carregarDadosDoArquivo();
 

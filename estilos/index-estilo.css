@@ -1,0 +1,322 @@
+/* Impede o balanço lateral no site todo */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Ajuste fino nos cards para não 'empurrarem' a tela no mobile */
+@media (max-width: 600px) {
+    .w3-row-padding {
+        padding: 0 8px !important; /* Diminui o respiro lateral da linha */
+        margin: 0 !important;      /* Zera margens que causam o balanço */
+    }
+
+    .w3-third {
+        padding: 0 !important;     /* Remove padding que pode somar à largura total */
+    }
+
+    .card-ano {
+        margin: 15px 5px !important; /* Margem pequena dos lados para não tocar a borda da tela */
+        width: calc(100% - 10px) !important; /* Garante que o card nunca seja 100% + margem */
+        box-sizing: border-box;
+    }
+}
+
+/* --- Configurações de Imagem do Slideshow --- */
+.mySlides img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Seção de Apps (Capas) --- */
+.fotosCapa img {
+    width: 100%;
+    max-width: 280px; /* Evita que a capa fique gigante em telas grandes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.fotosCapa img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.CardPlayImg img {
+    transition: 0.3s;
+    width: 160px;
+}
+
+.CardPlayImg img:hover {
+    filter: brightness(1.2);
+    border: 2px solid #f5ff9e;
+}
+
+/* --- Painel de Avisos (Mural de Cortiça) --- */
+.Avisos {
+    max-width: 1000px;
+    margin: 40px auto;
+    border: 12px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background-image: url("../images/imagensCapa/cortica.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+/* Estilo dos Post-its */
+.postit-tp9 {
+    background: #f5ff9e;
+    padding: 15px;
+    margin: 15px auto;
+    text-align: center;
+    color: #000;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.4);
+    transform: rotate(-2deg);
+    transition: 0.3s;
+    width: 90%; /* Ajustado para preencher a coluna do W3.CSS */
+}
+
+.postit-tp9:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 4px 8px 12px rgba(0,0,0,0.5);
+}
+
+.postit-tp9 a {
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+/* --- Rodapé (Ajustes de Ícones) --- */
+#iconeFooter {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.faIcone {
+    transition: 0.3s;
+    color: white;
+}
+
+.faIcone:hover {
+    transform: scale(1.3);
+    color: #f5ff9e;
+}
+
+/* Ícone do TikTok via SVG Mask */
+
+.fa-brands-tiktok {
+
+
+    display: inline-block;
+    width: 0.88em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23000' d='M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 600px) {
+    .mySlides img {
+        height: 300px; /* Menor em celulares */
+    }
+    .Avisos {
+        max-width: 95%;
+        border-width: 6px;
+    }
+    .postit-tp9 {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+#toggle-dark-mode {
+    display: flex;
+    align-items: center;
+    height: 48px; /* Mesma altura padrão da w3-bar-item */
+}
+
+/* Container dos botões de fonte */
+.font-controls {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1); /* Um fundo sutil para agrupar */
+    border-radius: 20px;
+    padding: 2px;
+    margin-right: 8px;
+}
+
+/* Botões individuais */
+.font-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.font-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estado desativado quando atinge o limite (definido no main.js) */
+.btn-font-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+
+/* Ajuste específico para o Dark Mode não sumir no hover */
+body.dark-mode .w3-bar {
+    background-color: #121212 !important;
+}
+
+/* Garante que os elementos dentro do conteúdo principal aceitem o zoom do JS */
+#conteudo-principal *, .corpo-artigo * {
+    font-size: inherit; /* Faz os filhos herdarem o tamanho definido no pai pelo JS */
+}
+
+/* Exceção: se você tiver títulos que devem ser sempre maiores, use porcentagem */
+#conteudo-principal h1, .corpo-artigo h2 {
+    font-size: 1.5em; /* 1.5 vezes o tamanho atual do zoom */
+}
+
+
+/* Efeito de hover suave nos cards da Index */
+.w3-card-4 {
+    transition: transform 0.3s ease;
+}
+
+.w3-card-4:hover {
+    transform: translateY(-5px); /* O card sobe um pouquinho ao passar o mouse */
+}
+
+/* Garante que o texto dos cards respeite o zoom do botão A+ / A- */
+#conteudo-principal .w3-container p {
+    font-size: inherit;
+}
+
+/* Estilo para as Frases e Transições */
+#frase {
+    transition: opacity 0.5s ease-in-out;
+    font-style: italic;
+    color: #444;
+    min-height: 80px; /* Evita que o layout "pule" quando a frase carrega */
+}
+
+#autor-img {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Começa invisível para o JS mostrar depois */
+    object-fit: cover; /* Garante que a foto não fique achatada */
+}
+
+/* Garante que o texto do autor também combine com o estilo */
+#autor {
+    transition: opacity 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+/* Centralização vertical do conteúdo do autor */
+.w3-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Transição suave para a mudança de cor */
+body, .w3-card, .w3-panel, .w3-white, .w3-light-grey, a {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Regras do Dark Mode */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Sobrescrevendo as classes do W3.CSS no modo escuro */
+body.dark-mode .w3-white, 
+body.dark-mode .w3-card, 
+body.dark-mode .w3-light-grey,
+body.dark-mode .w3-modal-content {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .w3-text-green {
+    color: #4ade80 !important; /* Um verde mais brilhante para ler no escuro */
+}
+
+/* Ajuste nos links de Quick Links para não sumirem */
+body.dark-mode .w3-button.w3-white:hover {
+    background-color: #333 !important;
+}
+
+/* Ajuste no Painel de Citação */
+body.dark-mode .w3-border-green {
+    border-color: #4ade80 !important;
+}
+
+/* Espaçamento entre os cards */
+.card-ano {
+    margin: 10px; /* Aumenta a distância entre um card e outro */
+    padding: 5px !important; /* Aumenta o espaço branco dentro do card, deixando-o mais "gordo" */
+    min-height: 450px; /* Garante que todos tenham uma altura mínima elegante */
+}
+
+.card-ano:hover {
+    transform: translateY(-5px); /* Efeito de levante ao passar o mouse */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Ajuste para o Dark Mode na seção cinza */
+body.dark-mode .w3-light-grey, 
+body.dark-mode .section-anos {
+    background-color: #121212 !important; /* Fundo bem escuro */
+}
+
+body.dark-mode .card-ano {
+    background-color: #1e1e1e !important; /* Card um pouco menos escuro */
+    color: white !important;
+    border: 1px solid #333;
+}
+
+body.dark-mode .w3-border-light-grey {
+    border-color: #333 !important;
+}
+
+/* Ajustes para telas pequenas (Mobile) */
+@media (max-width: 600px) {
+    .w3-third {
+        width: 100% !important; /* Força um card por linha no celular */
+        padding: 0 10px !important;
+    }
+    
+    .card-ano {
+        margin: 10px 0 !important; /* Remove margem lateral no mobile para ganhar espaço */
+        padding: 20px !important; /* Diminui o padding interno para caber mais conteúdo */
+    }
+
+    .btn-google-play {
+        width: 100%; /* Botão ocupa toda a largura do card no celular */
+    }
+}
+
+/* Garante que o ícone do hambúrguer seja visível no Dark Mode */
+body.dark-mode .w3-bar .fa-bars {
+    color: white !important;
+}

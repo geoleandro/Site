@@ -1,304 +1,173 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Instruções gerais</title>
-
-
+	<title>Instruções Gerais - Duvid</title>
 
 	<link rel="stylesheet" href="../estilos/w3.css">
-
+	<link rel="stylesheet" href="../estilos/index-estilo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
 
-	<script src="../estilos/jstextos.js" defer></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+		crossorigin="anonymous"></script>
 
-	
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
-    crossorigin="anonymous"></script>
+	<script src="/js/main.js" defer></script>
+	<script src="/js/abrirmenu.js" defer></script>
 
-
-	
-
+	<script src="/blog/scripts-blog.js" defer></script>
 
 	<style>
-		@font-face {
-
-			src: url('../fontes/FreePixel.woff');
-			font-family: pixel;
-		}
-
-
-		body {
-
-			margin: 0 auto;
-			font-family: pixel;
-			margin-bottom: 120px;
-			background-color: white;
-		}
-
-		.larguraBar {
-			max-width: 700px;
-			margin: 0 auto;
-		}
-
+		/* Tipografia Híbrida para melhor leitura */
 		h1,
 		h2,
 		h3,
-		h4,
-		h5,
-		h6 {
-			margin-top: 40px;
-			font-family: pixel
+		h4 {
+			font-family: 'pixel', sans-serif;
+			text-transform: uppercase;
 		}
 
-		.rodape {
-			height: 50px;
-			width: 100%;
-			text-align: center;
-			align-items: center;
-			margin: 0 auto;
-
-			font-family: pixel;
-			position: absolute;
-
-			font-family: pixel;
-			font-size: 16px;
-
+		/* Fonte de leitura clara para as instruções */
+		p,
+		li,
+		label,
+		input {
+			font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+			line-height: 1.6;
+			font-size: 1.05em;
 		}
 
-		/* Rodapé */
-		html {
-			position: relative;
-			min-height: 100%;
-			background-color: white;
+		.sessao-instrucao {
+			margin-bottom: 25px;
+			padding: 15px;
+			border-left: 5px solid #4ade80;
+			/* Verde tema */
+			background-color: rgba(0, 0, 0, 0.02);
 		}
 
-		.footer {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			height: 60px;
-			line-height: 60px;
-			color: #FFF;
-			text-align: center
+		body.dark-mode .sessao-instrucao {
+			background-color: rgba(255, 255, 255, 0.05);
 		}
 
-		#iconeFooter {
-			width: 32px;
-			height: 32px;
+		.btn-link {
+			transition: 0.3s;
+			text-decoration: none;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+
+		.btn-link:hover {
+			transform: scale(1.02);
 		}
 	</style>
-
-
-
-
 </head>
 
 <body>
 
+	<div id="header-placeholder"></div>
 
+	<div class="w3-content" style="max-width:1000px; margin-top: 80px; margin-bottom: 100px;">
 
+		<div class="w3-container w3-white w3-card-4 w3-margin w3-padding-32 w3-round-large card-ano">
+			<h1 class="w3-center w3-text-green"><b>Como serão nossas aulas?</b></h1>
+			<p class="w3-center w3-opacity">Guia de jornada e metodologia de aprendizado</p>
+			<hr>
 
-	<!-- Navigation (Stays on Top) -->
-	
-		<div class="w3-top w3-bar w3-black w3-large ">
+			<div class="w3-container">
+				<p>Bem-vindos! Na disciplina de Geografia vamos estudar o <b>Espaço Geográfico</b> e o mundo ao nosso
+					redor! Abaixo, veja como nossa jornada está organizada:</p>
+			</div>
 
-			<a href="../index.html" class=" w3-bar-item w3-button w3-left w3-margin-left">Home</a>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="sessao-instrucao">
+					<h3 class="w3-text-green"><i class="fa fa-chalkboard-teacher"></i> Dinâmica das Aulas</h3>
+					<p>Introdução rápida do tema -> Leitura e interpretação (App Duvid/Site) -> Desafios em grupo ->
+						Revisão final para consolidar o conhecimento.</p>
+				</div>
 
-			<a href="../blog/blog.html" class=" w3-bar-item w3-button w3-left w3-margin-left">Blog</a>
-			
-			
-			<a href="../paginas/sobre.html" class=" w3-bar-item w3-button w3-left w3-margin-left">Sobre</a>
+				<div class="sessao-instrucao">
+					<h3 class="w3-text-green"><i class="fa fa-gamepad"></i> Metodologia</h3>
+					<p>Aprendizagem gamificada! Utilizamos elementos de <b>jogos digitais</b> para tornar o estudo da
+						Geografia algo dinâmico e familiar ao seu dia a dia.</p>
+				</div>
 
-		</div>
+				<div class="sessao-instrucao">
+					<h3 class="w3-text-green"><i class="fa fa-star"></i> Avaliação e Pesos</h3>
+					<ul class="w3-ul">
+						<li><i class="fa fa-laptop-code"></i> <b>Prova (Peso 4):</b> Realizada em laboratório com
+							correção automática.</li>
+						<li><i class="fa fa-users"></i> <b>Projeto Integrador (Peso 4):</b> Criação de proposta de jogo
+							geográfico em grupo.</li>
+						<li><i class="fa fa-user-check"></i> <b>Autoavaliação (Peso 2):</b> Reflexão pessoal sobre suas
+							descobertas.</li>
+					</ul>
+				</div>
+			</div>
 
+			<hr>
 
+			<div class="w3-container">
+				<h2 class="w3-center"><i class="fa fa-link"></i> Recursos e Downloads</h2>
 
-		<div class="w3-container larguraBar ">
-
-
-
-
-
-			 <div class="w3-padding-top-48">
-				<div class="w3-white larguraBar w3-padding w3-center">
-					<div class="w3-row-padding">
-						<div class="w3-col s6">
-							<div class="w3-padding">
-								<button class="w3-green w3-border w3-round-large" name="decrease-font"
-									id="decrease-font" title="Diminuir fonte" style="margin-right: -80px;">A -</button>
-							</div>
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-half w3-padding">
+						<div class="w3-card w3-light-grey w3-padding w3-round">
+							<h4><i class="fa fa-lock"></i> Acesso aos Grupos</h4>
+							<p class="w3-small">Digite a senha para acessar o painel de desenvolvimento.</p>
+							<form action="../arquivosphp/logingrupos.php" method="POST"
+								onsubmit="return validateForm()">
+								<input class="w3-input w3-border w3-round" type="password" id="password" name="password"
+									placeholder="Senha...">
+								<button class="w3-button w3-green w3-block w3-margin-top w3-round"
+									type="submit">Entrar</button>
+							</form>
+							<p id="errorMessage" class="w3-text-red w3-small w3-center"></p>
 						</div>
-						<div class="w3-col s6">
-							<div class="w3-padding">
-								<button class="w3-green w3-border w3-round-large" name="increase-font"
-									id="increase-font" title="Aumentar fonte" style="margin-left: -80px;">A +</button>
-							</div>
-						</div>
+					</div>
+
+					<div class="w3-half w3-padding">
+						<h4><i class="fa fa-download"></i> Arquivos do Jogo</h4>
+						<a href="https://drive.google.com/file/d/1i479qRAbNm38qVuRXydsDx5nR8pIRt5e/view?usp=sharing"
+							class="w3-button w3-blue w3-round w3-block btn-link" target="_blank">Demo Android (.apk)</a>
+
+						<a href="https://drive.google.com/drive/folders/15cTExhiIohHhbDrESx7xycLqXgfYRUgA?usp=sharing"
+							class="w3-button w3-blue w3-round w3-block btn-link" target="_blank">Aseprite (Pixel
+							Art)</a>
+
+						<a href="https://drive.google.com/drive/folders/1z06k1Z9Y5Ch35Ug31TxdApbVXHN6r4sc?usp=sharing"
+							class="w3-button w3-blue w3-round w3-block btn-link" target="_blank">Pasta Geral do Jogo</a>
 					</div>
 				</div>
 			</div>
 
-
-
-			<h2 class="w3-margin w3-padding-top-48 w3-center">Como serão nossas aulas?</h2>
-
-
-
-			<p>Bem-vindos! Na disciplina de Geografia vamos estudar o Espaço Geográfico e o mundo ao nosso redor! Aqui
-				está
-				um guia sobre como será nossa jornada de aprendizado:</p>
-
-			<p><strong>Aulas</strong>: O Professor vai começar com uma rápida introdução do tema do dia e dos objetivos
-				que
-				queremos alcançar. Depois, vamos mergulhar na leitura e interpretação de materiais interessantes
-				fornecidos
-				pelo professor (Aplicativo Duvid, site e/ou material fornecido pela escola). Após essa atividade
-				solitária,
-				teremos momentos em grupo para realizar o Desafio da aula sob orientação do Professor. Ao final, teremos
-				uma
-				revisão para consolidar o que aprendemos e definir os próximos passos!</p>
-
-			<p><strong>Metodologia</strong>: Aqui na nossa sala de aula, a aprendizagem vai além das exposições
-				tradicionais. O Professor adora trazer elementos de jogos digitais para tornar tudo mais interessante.
-				Imagine aprender sobre Geografia de uma maneira que você já ama – através de elementos de jogos
-				digitais!
-			</p>
-
-			<p><strong>Avaliação</strong>: A parte da avaliação não coloca medo em ninguém. Teremos três tipos de
-				avaliações
-				tranquilas para manter as coisas dinâmicas. Primeiro, teremos uma prova tradicional em laboratórios de
-				informática, com agendamento prévio e correção automática – isso é muito bom. Em seguida, teremos um
-				trabalho em grupo superlegal, onde você vai mostrar como os temas que discutimos podem ser incorporados
-				no
-				desenvolvimento de um jogo com temas geográficos. E, para finalizar, uma autoavaliação, onde você terá a
-				chance de expressar suas próprias descobertas de maneira descontraída.</p>
-
-			<p><strong>Pesos das Avaliações</strong>: Claro, sobre os pesos das avaliações, não se preocupe. Cada parte
-				é
-				importante, mas a ideia é tornar o aprendizado mais criativo. A prova tem peso 4, o trabalho em grupo
-				também
-				tem peso 4, e a autoavaliação tem peso 2.</p>
-
-			<p>Nossa comunicação fora do horário de aula ocorrerá no atendimento ao aluno, bem como no e-mail
-				institucional
-				do professor: <strong>leandro.hsilva@ifsuldeminas.edu.br</strong></p>
-
-			<p>Bons estudos!</p>
-
-
-
-
-			<div class="w3-container w3-padding">
-				<h2><mark>Links Importantes</mark></h2>
-				<div class="w3-card w3-padding w3-light-grey">
-					<h3>Links para os Grupos</h3>
-
-
-					<p>Link para o grupo de desenvolvimento do jogo.</p>
-
-					<div class="w3-container w3-padding">
-
-						<form class="w3-container" action="../arquivosphp/logingrupos.php" method="POST">
-							<label class="w3-text" for="password">Senha:</label>
-							<input class="w3-input w3-border" type="password" id="password" name="password">
-							<button id="btnAviso" class="w3-button w3-blue w3-margin-top" type="submit">Entrar</button>
-						</form><br><br>
-						<!-- Área para exibir mensagem de erro -->
-						<p id="errorMessage" class="w3-text-red w3-margin-top w3-center"></p>
-						<!-- <?php echo $error_message; ?> -->
-					</div>
-
-
-					<a href="https://drive.google.com/file/d/1i479qRAbNm38qVuRXydsDx5nR8pIRt5e/view?usp=sharing"
-						class="w3-button w3-light-green  w3-margin-bottom" target="_blank">Demo do Jogo para Android</a>
-
-					<p>Link para a demo do jogo para Android.</p>
-
-					<a href="https://drive.google.com/drive/folders/15cTExhiIohHhbDrESx7xycLqXgfYRUgA?usp=sharing"
-						class="w3-button w3-light-green w3-margin-bottom" target="_blank">Baixar o Aseprite</a>
-
-					<p>Link para baixar o software Aseprite para desenhar em pixel art.</p>
-
-					<a href="https://drive.google.com/drive/folders/1z06k1Z9Y5Ch35Ug31TxdApbVXHN6r4sc?usp=sharing"
-						class="w3-button w3-light-green w3-margin-bottom" target="_blank">Acessar Pasta do Jogo</a>
-					<p>Link para acessar a pasta do jogo com livros e artes produzidas.</p>
-				</div>
+			<div class="w3-container w3-center w3-margin-top">
+				<p class="w3-small">Dúvidas? Entre em contato: <br><b>leandro.hsilva@ifsuldeminas.edu.br</b></p>
 			</div>
-
-
-
-
-
-
-
 		</div>
+	</div>
+
+	<div id="footer-placeholder"></div>
 
 
 
-		<footer class="footer w3-black">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-DPX55DSFZ0');
 
-			<div class="container">
-
-				<img id="iconeFooter" src="../fotoIndex/marcaDuvid.png" alt="icone" class="">
-
-				&copy; Duvid - Geografia 2022.
-
-
-			</div>
-
-		</footer>
-
-
-
-
-
-
-
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-
-
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-
-			gtag('config', 'G-DPX55DSFZ0');
-
-		</script>
-
-		<script>
-			function validateForm() {
-				var password = document.getElementById("password").value;
-
-				if (password === "") {
-					document.getElementById("errorMessage").innerHTML = "Por favor, digite a senha.";
-					return false;
-				}
-
-				// // Aqui você pode adicionar a lógica para validar a senha com o PHP
-				// // Por enquanto, vamos assumir que a senha correta é "Chopin"
-				// if (password !== "Chopin") {
-				// 	document.getElementById("errorMessage").innerHTML = "Senha incorreta. Por favor, tente novamente.";
-				// 	return false;
-				// }
-
-				// Se tudo estiver correto, o formulário será enviado
-				return true;
+		function validateForm() {
+			var password = document.getElementById("password").value;
+			if (password === "") {
+				document.getElementById("errorMessage").innerHTML = "Por favor, digite a senha.";
+				return false;
 			}
-
-		</script>
-
-
-
-
-
-
+			return true;
+		}
+	</script>
 </body>
 
 </html>

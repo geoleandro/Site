@@ -790,3 +790,20 @@ body.dark-mode img:hover {
   }
 }
 
+/* Ajuste para a árvore do Arquivo Blog */
+#drop-arquivo div {
+    transition: all 0.3s ease;
+}
+
+#drop-arquivo a:hover {
+    color: #4CAF50 !important; /* Verde ao passar o mouse nos títulos */
+    background-color: transparent !important;
+}
+
+/* Identação da árvore */
+.w3-margin-left {
+    margin-left: 15px !important;
+    border-left: 1px dotted #ccc;
+    padding-left: 5px;
+}
+
