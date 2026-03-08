@@ -1,9 +1,8 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
     injetarComponentesGlobais();
     aplicarTemaSalvo();
-    
+    inicializarControleFonte();
+
 });
 
 async function injetarComponentesGlobais() {
@@ -36,17 +35,36 @@ async function injetarComponentesGlobais() {
 }
 
 function inicializarControleFonte() {
-    const btnA = document.getElementById('increase-font');
-    const btnD = document.getElementById('decrease-font');
-    const corpo = document.querySelector('.corpo-artigo') || document.getElementById('conteudo-principal');
-    if (!btnA || !btnD || !corpo) return;
-    let size = parseFloat(localStorage.getItem('userFontSize')) || 1.25;
+    // Seleciona os botões (ajuste os IDs para baterem com o seu header.html)
+    const btnA = document.getElementById('increase-font') || document.querySelector('[onclick="aumentarFonte()"]');
+    const btnD = document.getElementById('decrease-font') || document.querySelector('[onclick="diminuirFonte()"]');
+    
+    // Alvo: O container principal que usamos em todas as páginas novas
+    const corpo = document.querySelector('.w3-content') || document.querySelector('main') || document.body;
+
+    if (!corpo) return;
+
+    // Recupera o tamanho salvo ou define o padrão
+    let size = parseFloat(localStorage.getItem('userFontSize')) || 1.05;
+
     const update = () => {
         corpo.style.fontSize = size.toFixed(2) + "rem";
         localStorage.setItem('userFontSize', size);
+        
     };
-    btnA.onclick = () => { if (size < 1.8) { size += 0.1; update(); } };
-    btnD.onclick = () => { if (size > 1.0) { size -= 0.1; update(); } };
+
+    // Se os botões existirem na página, atribui as funções
+    if (btnA) btnA.onclick = (e) => { 
+        e.preventDefault(); 
+        if (size < 1.5) { size += 0.05; update(); } 
+    };
+    
+    if (btnD) btnD.onclick = (e) => { 
+        e.preventDefault(); 
+        if (size > 0.8) { size -= 0.05; update(); } 
+    };
+
+    // Aplica o tamanho salvo ao carregar
     update();
 }
 

@@ -43,8 +43,22 @@
 
    color: black !important;
 
+   animation: surgimento 0.3s ease-out;
+
+ }
 
 
+
+ @keyframes surgimento {
+   from {
+     opacity: 0;
+     transform: scale(0.95) translateY(10px);
+   }
+
+   to {
+     opacity: 1;
+     transform: scale(1) translateY(0);
+   }
  }
 
  .balao1 {
@@ -61,7 +75,7 @@
    transition: opacity 1.5s;
 
  }
- 
+
 
  .fadeBaloon {
    opacity: 1;
@@ -172,7 +186,7 @@
      display: flex;
 
      background-color: #fff;
-     border-radius: 10px;
+     border-radius: 0px;
      min-width: 100%;
      min-height: 20%;
      padding: 2%;
@@ -240,5 +254,10 @@
 
 
    }
+
+   /* Nome do arquivo: style.css */
+   /* O que fazer: Adiciona um surgimento suave e um leve aumento */
+
+
 
  }

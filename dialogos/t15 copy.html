@@ -8,24 +8,17 @@
 
 
 
-	<title>3º ano - aula 15</title>
+	<title>Modelo de Diálogo independente</title>
 
 	<link rel="stylesheet" href="../estilos/questoes.css">
 	<link rel="stylesheet" href="../estilos/w3.css">
-
 	<link rel="stylesheet" href="../estilos/dialogo.css">
-
-
-
-
-
 
 	<link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
 
 	<script src="../estilos/javascript.js" defer></script>
 
-
-	<script src="../estilos/dialogo3.js" defer></script>
+	<script src="../estilos/script-dialogo.js" defer></script>
 
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
 		crossorigin="anonymous"></script>
@@ -119,664 +112,79 @@
 
 	<form id="quiz" name="quiz" onsubmit="verificar()">
 
-
+		<!-- Card de diálogo 1 -->
 		<div class="w3-card-4">
+			<div class="dialogo-secao" id="secao-carro">
+				<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-margin-bottom w3-responsive">
+					<div class="w3-container w3-mobile w3-margin-top w3-responsive">
+						<div class="w3-col s6">
+							<div class="character">
+								<div class="balloon balao1" style="display: none;">
+									<div class="triangle triangleLeft"></div>
+									<span class="pad npc-texto"></span>
+								</div>
+								<img class="left" src="../../../fotoIndex/FotoDir.gif" alt="Jéssica">
+							</div>
+						</div>
 
-			<p class="p2">Questão 01</p>
-
-			<p> (FUVEST 2020) É de grande relevância aqui o fato de que uma grande proporção do trânsito de internet do
-				mundo passa pelos Estados Unidos (...). Isso significa que a NSA (a agência de segurança nacional dos
-				EUA) poderia acessar uma quantidade alarmante de ligações telefônicas simplesmente escolhendo as
-				instalações certas. O que é ainda mais inacreditável: </p>
-
-			<div class="w3-center"><img src="t15q1.png" alt="t15q1" class="w3-mobile"></div>
-
-			<p> Essas instalações não passam de alguns prédios, conhecidos como “hotéis de telecomunicação”, que
-				hospedam os principais centros de conexão de internet e telefonia do planeta todo. </p>
-
-			<p> A respeito da configuração espacial e geopolítica retratada no excerto e no mapa, é possível afirmar que
-			</p>
-
-
-
-
-			<p class="bordaQuestoes" id="q1a"><input type="radio" required="required" name="pq1" value="a"> a) essa é a
-				razão do grande déficit econômico dos Estados Unidos atualmente, uma vez que a maior parte dos negócios
-				e transações é feita pela internet.</p>
-
-			<p class="bordaQuestoes" id="q1b"><input type="radio" required="required" name="pq1" value="b"> b) essa
-				situação explica o fato de que os Estados Unidos tenham, atualmente, a maior dívida pública do planeta,
-				já que os custos com o tratamento de dados são muito altos.</p>
-
-			<p class="bordaQuestoes" id="q1c"><input type="radio" required="required" name="pq1" value="c"> c) em um
-				mundo cada vez mais dependente dos fluxos imateriais de informação, a presença de objetos técnicos fixos
-				torna‐se irrelevante para a posição geopolítica dos Estados Unidos.
-
-			<p class="bordaQuestoes" id="q1d"><input type="radio" required="required" name="pq1" value="d"> d) o mapa
-				representa, por meio do “trânsito de internet” e do fluxo de “ligações telefônicas”, uma globalização
-				que integrou completamente tanto os norte‐americanos quanto as populações da África.</p>
-
-			<p class="bordaQuestoes" id="q1e"><input type="radio" required="required" name="pq1" value="e"> e) a
-				presença de fixos, como algumas instalações de armazenagem e conexão, influencia a orientação de fluxos
-				e dá aos EUA uma posição de destaque no contexto geopolítico.</p>
-
-		</div>
-
-
-
-		<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-responsive">
-
-			<div class="w3-col s6">
-				<div class="character ">
-					<div class="balloon balao1" id="baloon3">
-						<div class="triangle triangleLeft"></div>
-						<span id="demo3" class="pad ">Clique na personagem</span>
+						<div class="w3-col s6">
+							<div class="character">
+								<div class="balloon balao2" style="display: none;">
+									<div class="triangle triangleRight"></div>
+									<span class="pad npc-texto"></span>
+								</div>
+								<img class="right" src="../../../fotoIndex/person28.gif" alt="Franciele">
+							</div>
+						</div>
 					</div>
-					<img id="demo3-img" onclick="ShowDialog(['Ei, Franciele, Geografia!' ], 
-	  
-						'demo3', 'baloon3');" class="left" src="../fotoIndex/FotoDir.gif" width="auto" height="auto"
-						alt="Foto personagem Jéssica - Jogo Aventura Geográfica">
 
-
+					<button class="btnProximo w3-button w3-pale-yellow w3-margin-left w3-margin-bottom"
+						onclick="avancar('carro')">Iniciar Diálogo</button>
+					<button class="btnReiniciar w3-button w3-pale-yellow w3-margin-left w3-margin-bottom"
+						onclick="reiniciar('carro')" disabled>Reiniciar</button>
 				</div>
 			</div>
+		</div>
+
+		<!-- Segundo diálogo -->
+
+		<div class="w3-card-4">
 
 
 
-			<!-- segundo diálogo -->
-			<div class="w3-col s6">
-				<div class="character ">
-					<div class="balloon balao2 " id="baloon4">
-						<div class="triangle triangleRight"></div>
-						<span id="demo4" class="pad">Clique na personagem</span>
+			<div class="dialogo-secao" id="secao-outraQuestao">
+				<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-margin-bottom w3-responsive">
+					<div class="w3-container w3-mobile w3-margin-top w3-responsive">
+						<div class="w3-col s6">
+							<div class="character">
+								<div class="balloon balao1" style="display: none;">
+									<div class="triangle triangleLeft"></div>
+									<span class="pad npc-texto"></span>
+								</div>
+								<img class="left" src="../../../fotoIndex/FotoDir.gif" alt="Jéssica">
+							</div>
+						</div>
+
+						<div class="w3-col s6">
+							<div class="character">
+								<div class="balloon balao2" style="display: none;">
+									<div class="triangle triangleRight"></div>
+									<span class="pad npc-texto"></span>
+								</div>
+								<img class="right" src="../../../fotoIndex/person28.gif" alt="Franciele">
+							</div>
+						</div>
 					</div>
-					<img id="demo4-img"
-						onclick="ShowSecondDialog(['Nossa Jéssica, que demais!', ], 'demo4', 'baloon4');" class="right"
-						src="../fotoIndex/person28.gif" width="auto" height="auto"
-						alt="Foto personagem Franciele - Jogo Aventura Geográfica">
 
+					<button class="btnProximo w3-button w3-pale-yellow w3-margin-left w3-margin-bottom"
+						onclick="avancar('outraQuestao')">Iniciar Diálogo</button>
+					<button class="btnReiniciar w3-button w3-pale-yellow w3-margin-left w3-margin-bottom"
+						onclick="reiniciar('outraQuestao')" disabled>Reiniciar</button>
 				</div>
-
-				<div class="container w3-mobile">
-					<label for="typingSpeed" class="w3-text-white">Velocidade de digitação:</label>
-					<input type="range" id="typingSpeed" min="30" max="150" step="1" value="50">
-				</div>
-
-				<!-- 
-				<div class="w3-container w3-mobile w3-margin">
-					<button Class="w3-button w3-button w3-green w3-round-large"
-						onclick="resetDialogVariables()">Reiniciar</button>
-
-				</div> -->
-			</div>
-
-
-		</div>
-
-
-		<div class="comentarios">
-
-			<p> <strong>Comentário:</strong></p>
-
-			<p> a) Incorreta. A razão para o grande déficit econômico dos Estados Unidos atualmente deve-se ao déficit
-				na balança comercial - diferença entre o volume de exportações e importações de um país -, e não porque
-				a maior parte dos negócios e transações são feitas pela internet.</p>
-
-			<p> b) Incorreta. Os Estados Unidos têm a maior dívida pública do planeta porque o governo gasta mais do que
-				arrecada, e não por causa dos custos relacionados ao tratamento dos dados.</p>
-
-			<p> c) Incorreta. Como se pode observar no enunciado da questão, o controle dos dados da internet passa por
-				alguns prédios bem específicos, conhecidos como "hotéis de telecomunicação" que são os objetos técnicos
-				fixos, portanto muito relevantes para a posição geopolítica dos Estados Unidos.</p>
-
-			<p> d) Incorreta. Como mostrado no mapa, a globalização não integrou completamente as populações da África,
-				continente marcado pela exclusão em relação a grandes fluxos informacionais e por graves problemas
-				econômicos, sociais e geopolíticos.</p>
-
-			<p> e) Correta. A presença de fixos (hotéis de telecomunicação) e instalações de armazenagem e conexão
-				orienta os fluxos (linhas de tráfego no mapa) dá aos Estados Unidos uma posição de destaque no contexto
-				geopolítico, uma vez que o país controla a maior parte do trânsito de informações no mundo via internet.
-			</p>
-		</div>
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 02</p>
-
-			<p> (2020) A organização do espaço geográfico por meio de redes eliminou a necessidade de fixar as
-				atividades econômicas em um determinado lugar. Isso vale para o grande número de serviços, que podem ser
-				prestados a partir de qualquer lugar do mundo para qualquer outro, bastando que esses locais estejam
-				conectados. </p>
-
-			<p class="citacao"> (LUCCI, E. A. et. al. Território e sociedade no mundo globalizado: Geografia Geral e do
-				Brasil. Ensino Médio. Editora Saraiva, 2005. p.127). </p>
-
-			<p> A formação das redes geográficas na contemporaneidade, conforme indicado pelo trecho acima, expressa-se
-				materialmente por meio:</p>
-
-			<p class="bordaQuestoes" id="q2a"><input type="radio" required="required" name="pq2" value="a"> a) da
-				transição demográfica dos países desenvolvidos.</p>
-
-			<p class="bordaQuestoes" id="q2b"><input type="radio" required="required" name="pq2" value="b"> b) da
-				expansão das multinacionais para o mundo subdesenvolvido.</p>
-
-			<p class="bordaQuestoes" id="q2c"><input type="radio" required="required" name="pq2" value="c"> c) da
-				regionalização do espaço econômico mundial.</p>
-
-			<p class="bordaQuestoes" id="q2d"><input type="radio" required="required" name="pq2" value="d"> d) da
-				dinamização informacional das cidades globais.</p>
-
-			<p class="bordaQuestoes" id="q2e"><input type="radio" required="required" name="pq2" value="e"> e) da
-				diminuição dos fluxos industriais e comerciais</p>
-		</div>
-
-
-
-		<div class="comentarios">
-			<p> <strong>Comentário:</strong></p>
-
-			<p> Quando o texto menciona a possibilidade de serviços serem prestados de qualquer lugar do mundo para
-				outro, remonta à maior fluidez das práticas sociais, sobretudo no campo econômico. Um exemplo disso é a
-				expansão das empresas multinacionais ou globais, que se instalaram ao longo das últimas décadas em
-				países subdesenvolvidos e de industrialização tardia </p>
-		</div>
-
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 03</p>
-
-			<p> (2020) </p>
-
-			<div class="w3-panel w3-leftbar w3-margin w3-sand">
-
-
-				<p class="w3-sand"> “A tecnologia não é apenas um canal para se comunicar, cuja comunicação traz o
-					significado de ação recíproca que ocorre entre emissor e receptor da mensagem, mas sim faz parte do
-					ato comunicativo, estando integrada a ele. É uma nova maneira de aprender e agir, é construir novos
-					alicerces na forma de comunicar e conhecer. Com isso, a lógica da atual sociedade consolida-se para
-					a lógica das redes”. </p>
-
-				<p class="citacao w3-sand"> FORESTI, A. A era digital: apropriação tecnológica e inclusão digital.
-					Oficina da Net, ago. 2013. Disponível em: http://www.oficinadanet.com.br. Acesso em: 12 jun. 2015.
-				</p>
-			</div>
-
-			<p> A integração da tecnologia com a construção das sociedades e do espaço geográfico, no momento atual da
-				história, assinala o conceito de:</p>
-
-
-			<p class="bordaQuestoes" id="q3a"><input type="radio" required="required" name="pq3" value="a"> a) espaço
-				digital.</p>
-
-			<p class="bordaQuestoes" id="q3b"><input type="radio" required="required" name="pq3" value="b"> b)
-				espacialidade em rede.</p>
-
-			<p class="bordaQuestoes" id="q3c"><input type="radio" required="required" name="pq3" value="c"> c)
-				territórios virtuais.</p>
-
-			<p class="bordaQuestoes" id="q3d"><input type="radio" required="required" name="pq3" value="d"> d) meio
-				técnico-científico informacional.</p>
-
-			<p class="bordaQuestoes" id="q3e"><input type="radio" required="required" name="pq3" value="e"> e) espaço
-				físico-virtual.</p>
-		</div>
-
-
-
-		<div class="comentarios">
-			<p> <strong>Comentário:</strong></p>
-
-			<p> A integração das transformações tecnológicas nos tempos atuais – contando a partir da Terceira Revolução
-				Industrial – com o espaço geográfico assinala aquilo que Milton Santos denominou de meio
-				técnico-científico informacional, marcado pela evolução das técnicas e dos objetos técnicos. </p>
-		</div>
-
-
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 04</p>
-
-			<p> (2020) As redes geográficas são definidas: </p>
-
-			<p class="bordaQuestoes" id="q4a"><input type="radio" required="required" name="pq4" value="a"> a) a partir
-				da relação do espaço e o poder do Estado.</p>
-
-			<p class="bordaQuestoes" id="q4b"><input type="radio" required="required" name="pq4" value="b"> b) pelo
-				aspecto visível das suas formas no espaço geográfico.</p>
-
-			<p class="bordaQuestoes" id="q4c"><input type="radio" required="required" name="pq4" value="c"> c) pelos
-				locais da superfícies terrestre conectados ou interligados entre si.</p>
-
-			<p class="bordaQuestoes" id="q4d"><input type="radio" required="required" name="pq4" value="d"> d) por meio
-				do grau de desenvolvimento de um país.</p>
-
-
-		</div>
-
-
-
-		<div class="comentarios">
-			<!-- <p> <strong>Comentário:</strong></p> 
-			
-		<p>   Colocar os comentários aqui.   </p> -->
-		</div>
-
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 05</p>
-
-			<p> (ENEM 2018) Foi-se o tempo em que era possível mostrar um mundo econômico organizado em camadas bem
-				definidas, onde grandes centros urbanos se ligavam, por si próprios, a economias adjacentes “lentas”,
-				com o ritmo muito mais rápido do comércio e das finanças de longo alcance. Hoje tudo ocorre como se
-				essas camadas sobrepostas estivessem mescladas e interpermeadas. Interdependências de curto e longo
-				alcance não podem mais ser separadas umas das outras.
-
-			<p class="w3-small"> RENNER, N. A globalização como reterritorialização. Cadernos Metrópole, n. 24, jut-dez.
-				2010 (adaptado). </p>
-
-			<p> A maior complexidade dos espaços urbanos contemporâneos ressaltada no texto explica-se pela:</p>
-
-			<span onclick="Ajuda('ajuda5')" class="w3-button w3-pale-yellow w3-margin-left">
-				Ajuda:</span>
-
-			<div id="ajuda5" class="w3-hide w3-container w3-leftbar w3-pale-yellow w3-margin">
-				<p>O texto fala sobre como o mundo econômico não é mais como antigamente, com grandes cidades ligadas a
-					economias mais devagar. Agora, tudo está meio misturado, com várias camadas se sobrepondo umas às
-					outras. Não dá mais para separar as interdependências de curto e longo alcance.
-					<br>
-					Aí, quando o texto fala sobre a complexidade dos espaços urbanos hoje em dia, isso acontece por
-					causa de algo que faz essas coisas todas se conectarem e se misturarem. Então, para entender a
-					resposta, é legal pensar em algo que ajuda a conectar essas diferentes camadas e interdependências
-					nos espaços urbanos de hoje. <span class="w3-green">Tente fazer sem ver a resposta.</span>
-
-
-
-
-
-
-
-				</p>
-			</div>
-
-			<span onclick="Ajuda('resposta5')" class="w3-button w3-pale-green w3-margin-left">
-				Resposta:</span>
-
-
-			<div id="resposta5" class="w3-hide w3-container w3-leftbar w3-pale-green w3-margin">
-
-				<p>Resposta: Letra D.
-					<br>Articulação de redes multiescalares.
-				</p>
-
-			</div>
-
-
-			<p class="bordaQuestoes" id="q5a"><input type="radio" required="required" name="pq5" value="a"> a) expansão
-				de áreas metropolitanas. </p>
-
-			<p class="bordaQuestoes" id="q5b"><input type="radio" required="required" name="pq5" value="b"> b)
-				emancipação de novos municípios. </p>
-
-			<p class="bordaQuestoes" id="q5c"><input type="radio" required="required" name="pq5" value="c"> c)
-				consolidação de domínios jurídicos.
-
-			<p class="bordaQuestoes" id="q5d"><input type="radio" required="required" name="pq5" value="d"> d)
-				articulação de redes multiescalares. </p>
-
-			<p class="bordaQuestoes" id="q5e"><input type="radio" required="required" name="pq5" value="e"> e)
-				redefinição de regiões administrativas.</p>
-		</div>
-
-
-
-		<div class="comentarios">
-			<p> <strong>Comentário:</strong></p>
-
-			<p> Os espaços urbanos contemporâneos são cada vez mais complexos e definem-se estruturas que se articulam
-				em diferentes escalas. O fato que ratifica esta ideia é a característica extraterritorial da área de
-				influência das cidades.</p>
-
-			<p> As estruturas imateriais conectadas das cidades e os espaços polarizados por estas estruturas articulam
-				redes em diferentes escalas.</p>
-
-			<p> a) Incorreta. Embora tal processo esteja acontecendo de forma intensa a partir da segunda metade do
-				século XX, sobretudo nos países em desenvolvimento e com aumento da dependência de cidades pequenas de
-				curto alcance em relação a grandes centros urbanos, ele não explica as interdependências de longo
-				alcance a que o texto faz referência. É válido ressaltar que as áreas metropolitanas se estendem por uma
-				área conturbada, ou seja, onde há junção de vários municípios em um espaço contínuo. Por isso, tal
-				alternativa não se adequa à “maior complexidade” requerida no enunciado.</p>
-
-			<p> b) Incorreta. Tal fenômeno não possui relação com os aspectos econômicos abordados no texto (rapidez do
-				comércio, finanças e interdependência), mas sim com mudanças de caráter político- administrativos na
-				rede urbana.</p>
-
-			<p> c) Incorreta. Embora realmente haja definição de domínios jurídicos estabelecendo que os municípios
-				possuem autonomia relativa em diversos aspectos (respeitados sempre os pressupostos contidos na
-				Constituição Federal), isso não impede a realização de dinâmicas sobrepostas entre os entes federativos,
-				o que complexifica as relações urbanas atuais.</p>
-
-			<p> d) Correta. O trecho “camadas sobrepostas mescladas e interpermeadas” confere a ideia de complexidade
-				das relações estabelecidas na rede urbana atual no sentido de serem mais flexíveis e estabelecerem
-				interdependência entre entes federativos distintos (União, estados e municípios) e agentes econômicos e
-				públicos no espaço urbano atual.</p>
-
-			<p> e) Incorreta. O texto não faz menção a reconfigurações político-administrativas na rede urbana.</p>
-
-		</div>
-
-
-
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 06</p>
-
-			<p> (FUVEST 2018) No mundo virtual, milhões de pessoas falam, compram, compartilham dados e se reúnem para
-				tratar dos mais variados assuntos.</p>
-
-			<p> Nas figuras, os números mostram a movimentação média, em 1 minuto, de algumas das principais empresas e
-				ferramentas de internet nos anos de 2015 e 2017.</p>
-
-			<div class="w3-center"><img src="t15q6.png" alt="t15q6" class="w3-mobile"></div>
-
-			<p> Sobre a internet e os números mostrados nas figuras, é correto afirmar:</p>
-
-			<p>Sobre a internet e os números mostrados nas figuras, é correto afirmar:</p>
-
-
-			<p class="bordaQuestoes" id="q6a"><input type="radio" required="required" name="pq6" value="a"> a) Após um
-				crescimento até a primeira década do século XXI, as ferramentas na internet apresentaram estagnação de
-				utilização nos últimos anos. </p>
-
-			<p class="bordaQuestoes" id="q6b"><input type="radio" required="required" name="pq6" value="b"> b) Para
-				todos os governos do mundo, independentemente do regime, a democratização da internet é uma ação
-				estratégica. </p>
-
-			<p class="bordaQuestoes" id="q6c"><input type="radio" required="required" name="pq6" value="c"> c) O
-				controle de dados e informações é descentralizado, o que confere equanimidade aos países membros da ONU.
-			</p>
-
-			<p class="bordaQuestoes" id="q6d"><input type="radio" required="required" name="pq6" value="d"> d) A
-				internet está em constante e rápida mudança, com novas ferramentas aparecendo com contribuições
-				relevantes, enquanto outras vão perdendo espaço. </p>
-
-			<p class="bordaQuestoes" id="q6e"><input type="radio" required="required" name="pq6" value="e"> e) Empresas
-				do ramo de serviços têm apresentado crescimento acentuado, o que não é observado em relação a empresas
-				do ramo de entretenimento.</p>
-		</div>
-
-
-
-		<div class="comentarios">
-			<p> <strong>Comentário:</strong></p>
-
-			<p> A questão exige interpretação das informações fornecidas sobre empresas e ferramentas de internet, nas
-				quais são verificadas quedas no uso apenas de e-mails, tweets e novas postagens; as demais empresas e
-				ferramentas apresentaram crescimento no uso. No contexto do meio técnico-científico-informacional, há
-				rápidas mudanças no “mundo” da internet, com o aparecimento de novas ferramentas, ao mesmo tempo em que
-				outras perdem espaço no conjunto de nossos usos cotidianos. Vale lembrar, ainda, que tais usos podem ser
-				controlados por condições políticas e econômicas, a exemplo de Estados que continuam internet.</p>
-
-			<p> a) Incorreta. Observando as figuras pode-se concluir que algumas ferramentas da internet apresentaram
-				grande crescimento de 2015 a 2017 e não estagnação, como as visualizações no Youtube, as buscas no
-				Google, as músicas ouvidas no Spotify, as vendas na Amazona e as corridas no Uber.</p>
-
-			<p> b) Incorreta. Para vários governos autoritários do mundo a ação estratégica é exatamente o contrário, ou
-				seja, censurar a internet e evitar a democratização. Como exemplos podem ser citados China, alguns
-				governos do Oriente Médio e de países da África.</p>
-
-			<p> c) Incorreta. O controle de dados e informações é centralizado considerando o espaço mundial,
-				particularmente os EUA, onde estão as sedes das empresas e serviços citados, o que não confere
-				equanimidade aos países membros da ONU na apropriação dessas informações.</p>
-
-			<p> d) Correta. Observando as figuras podemos analisar o dinamismo da internet, com novas ferramentas que,
-				em dois anos, tiveram um grande crescimento como as visualizações no Youtube, as buscas no Google, as
-				músicas ouvidas no Spotify, as vendas na Amazona e as corridas no Uber. De outro lado, podemos também
-				observar ferramentas perdendo espaço nesse mesmo período, como as novas postagens, novos twists e
-				e-mails enviados.</p>
-
-			<p> e) Incorreta. Analisando as figuras, observa-se que empresas do ramo de serviços como postagens, twists
-				e e-mails tiveram redução no período demonstrado, enquanto empresas do ramo de entretenimento tiveram
-				crescimento acentuado como Youtube e Spotify.</p>
-
-		</div>
-
-
-
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 07</p>
-
-			<p> (IFSULDEMINAS 2017) A globalização é um fenômeno que tem várias dimensões: além da econômica, a mais
-				evidente e perceptível, também possui a social, a cultural e a política, entre outras de menor impacto.
-				Entretanto, todas essas dimensões se materializam no espaço geográfico em suas diversas escalas:
-				mundial, nacional, regional e local. Os lugares estão conectados a uma rede de fluxos, controlada a
-				partir de poucos centros de poder econômico e político. Entretanto, não são todos os lugares que estão
-				integrados ao sistema-mundo. </p>
-
-			<p class="w3-small"> (SENE, E. de; MOREIRA, J. C. Geografia Geral e do Brasil: espaço geográfico e
-				globalizado. 2 ed. São Paulo: Scipione, 2013) </p>
-
-			<p> Assinale a alternativa CORRETA:</p>
-
-			<p class="bordaQuestoes" id="q7a"><input type="radio" required="required" name="pq7" value="a"> a) No mundo
-				globalizado vem ocorrendo a diminuição progressiva da desigualdade entre os povos, uma vez que a
-				globalização integra todos os países do mundo. </p>
-
-			<p class="bordaQuestoes" id="q7b"><input type="radio" required="required" name="pq7" value="b"> b) A
-				globalização é um fenômeno que promove abertura de economias em um processo de integração, ao mesmo
-				tempo em que exclui determinadas regiões, atividades e segmentos sociais. </p>
-
-			<p class="bordaQuestoes" id="q7c"><input type="radio" required="required" name="pq7" value="c"> c) Na
-				globalização há uma padronização dos aspectos culturais, o que contribui para a valorização das culturas
-				em escala local. </p>
-
-			<p class="bordaQuestoes" id="q7d"><input type="radio" required="required" name="pq7" value="d"> d) A
-				globalização permite que a inovação tecnológica seja difundida de forma equilibrada aos países menos
-				desenvolvidos. </p>
-
-
-		</div>
-
-
-
-		<div class="comentarios">
-			<!-- <p> <strong>Comentário:</strong></p> 
-			
-		<p>   Colocar os comentários aqui.   </p> -->
-		</div>
-
-
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 08</p>
-
-			<p> (ENEM 2015) </p>
-
-			<div class="w3-panel w3-leftbar w3-sand w3-margin">
-				<p>“Um carro esportivo é financiado pelo Japão, projetado na Itália e montado em Indiana, México e
-					França, usando os mais avançados componentes eletrônicos, que foram inventados em Nova Jérsei e
-					fabricados na Coreia. A campanha publicitária é desenvolvida na Inglaterra, filmada no Canadá, a
-					edição e as cópias, feitas em Nova York para serem veiculadas no mundo todo. Teias globais
-					disfarçam-se com o uniforme nacional que lhes for mais conveniente”.</p>
-
-
-				<p class="w3-small"> REICH, R. O trabalho das nações: preparando-nos para o capitalismo no século XXI.
-					São Paulo: Educador, 1994 (adaptado). </p>
 			</div>
 
 
 
-
-
-
-			<p> A viabilidade do processo de produção ilustrado pelo texto pressupõe o uso de: </p>
-
-
-			<span onclick="Ajuda('ajuda8')" class="w3-button w3-pale-yellow w3-margin-left">
-				Ajuda:</span>
-
-			<div id="ajuda8" class="w3-hide w3-container w3-leftbar w3-pale-yellow w3-margin ">
-				<p>Imagina um carro esportivo sendo feito, mas cada pedacinho dele está acontecendo em lugares
-					diferentes ao redor do mundo. Algumas partes são financiadas em um país, desenhadas em outro,
-					montadas em vários lugares e até a propaganda é feita em diferentes países. Isso tudo precisa de um
-					sistema que conecte tudo isso de forma bem organizada, senão não daria certo, né? Então, essa
-					organização tem que ser capaz de juntar todas as etapas do carro, desde o começo até a propaganda,
-					de um jeito que tudo funcione certinho. E aí, o texto também fala sobre os eletrônicos modernos e a
-					propaganda global, mostrando como a tecnologia é super importante nesse processo. Então, uma dica
-					para descobrir a resposta é pensar em uma organização que consiga lidar com toda essa mistura de
-					jeito eficiente e bem coordenado.
-
-
-				</p>
-
-
-				
-
-	<div class="ImagemDialogo w3-container w3-mobile w3-margin-top w3-responsive w3-margin-bottom">
-
-		<div class="w3-col s6">
-			<div class="character ">
-				<div class="balloon balao1" id="baloon1">
-					<div class="triangle triangleLeft"></div>
-					<span id="demo1" class="pad ">Clique na personagem</span>
-				</div>
-				<img id="demo1-img" onclick="ShowDialog(['Eu acho que agora vou começar a aprender Geografia! ','será um boa ajuda contar com você Franciele' ], 
-  
-					'demo1', 'baloon1',);" class="left" src="../fotoIndex/FotoDir.gif" width="auto" height="auto"
-					alt="Foto personagem Jéssica - Jogo Aventura Geográfica">
-
-
-			</div>
-		</div>
-
-
-
-		<!-- segundo diálogo -->
-		<div class="w3-col s6">
-			<div class="character ">
-				<div class="balloon balao2 " id="baloon2">
-					<div class="triangle triangleRight"></div>
-					<span id="demo2" class="pad">Clique na personagem</span>
-				</div>
-				<img id="demo2-img" onclick="ShowSecondDialog(['vamos estudar juntas!', 'legal!'
-			
-			], 'demo2', 'baloon2');" class="right " src="../fotoIndex/person28.gif" width="auto" height="auto"
-					alt="Foto personagem Franciele - Jogo Aventura Geográfica">
-
-			</div>
-			<!-- 
-			<div class="container w3-mobile">
-				<label for="typingSpeed" class="w3-text-white">Velocidade de digitação:</label>
-				<input type="range" id="typingSpeed" min="30" max="150" step="1" value="30">
-			</div> -->
-
-
-			<!-- <div class="w3-container w3-mobile w3-margin">
-				<button Class="w3-button w3-button w3-green w3-round-large"
-					onclick="resetDialogVariables()">Reiniciar</button>
-
-			</div> -->
-		</div>
-
-
-	</div>
-			</div>
-
-			<span onclick="Ajuda('resposta8')" class="w3-button w3-pale-green w3-margin-left">
-				Resposta:</span>
-
-
-			<div id="resposta8" class="w3-hide w3-container w3-leftbar w3-pale-green w3-margin">
-
-				<p>Resposta: Letra D.
-					<br>Organização em rede e tecnologia da informação.
-				</p>
-
-			</div>
-
-
-
-
-			<p class="bordaQuestoes" id="q8a"><input type="radio" required="required" name="pq8" value="a"> a) linhas de
-				montagem e formação de estoques. </p>
-
-			<p class="bordaQuestoes" id="q8b"><input type="radio" required="required" name="pq8" value="b"> b) empresas
-				burocráticas e mão de obra barata</p>
-
-			<p class="bordaQuestoes" id="q8c"><input type="radio" required="required" name="pq8" value="c"> c) controle
-				estatal e infraestrutura consolidada. </p>
-
-			<p class="bordaQuestoes" id="q8d"><input type="radio" required="required" name="pq8" value="d"> d)
-				organização em rede e tecnologia da informação. </p>
-
-			<p class="bordaQuestoes" id="q8e"><input type="radio" required="required" name="pq8" value="e"> e) gestão
-				centralizada e protecionismo econômico.</p>
-		</div>
-
-
-
-		<div class="comentarios">
-			<p> <strong>Comentário:</strong></p>
-
-			<p> O processo de produção ilustrado pelo texto é característico da Terceira Revolução Industrial demonstra
-				claramente a desterritorialização da produção evidenciada pela origem diversa do financiamento, do
-				projeto, da montagem, com terceirização de boa parte da produção. Essa teia global (assim está no texto)
-				disfarça o uniforme nacional da produção, que se organiza em rede dependendo cada vez mais das
-				tecnologias de informações</p>
-
-			<p> a) Incorreta. O uso de linhas de montagem e grandes estoques é característico do sistema Fordista,
-				típico da Segunda Revolução industrial. O atual modelo produtivo é marcado por uma produção em "células
-				de produção" - com trabalho em equipe e uma certa autonomia dos funcionários sobre a melhor maneira de
-				executar as tarefas - e sistema "just in time" - com redução dos estoques, ou seja, cada peça chega
-				apenas no momento exato de ser utilizada. </p>
-
-			<p> b) Incorreta. O atual sistema produtivo é marcado por uma forte automação industrial. Este sistema
-				exclui boa parte da mão-de-obra barata, causando desemprego estrutural e uma necessidade de qualificação
-				dos funcionários para se inserir no mercado de trabalho. Além disso, dentro do modelo Toyotista, há uma
-				desburocratização das atividades produtivas. </p>
-
-			<p> c) Incorreta. O texto sequer cita o papel do Estado no processo produtivo. A produção globalizada é
-				marcada por um modelo Neoliberal de economia, com retomada das leis de mercado e privatização das
-				empresas estatais.</p>
-
-			<p> d) Correta. O texto faz referência ao atual modelo produtivo, marcado por um forte processo de
-				desconcentração industrial e pela dispersão da produção. Isto se dá em busca de vantagens locacionais,
-				tais como menores custos de produção, possibilidades de novos mercados consumidores ou disponibilidade
-				de mão-de-obra qualificada. Toda essa produção desconcentrada e integrada só é possível graças à
-				evolução nos sistemas de transportes e telecomunicações. Suas conexões se dão numa intrincada estrutura
-				de rede ("teias globais"), com intenso uso das tecnologias de informação.</p>
-
-			<p> e) Incorreta. No modelo Neoliberal, vemos um apelo econômico pelo fim das políticas protecionistas
-				(dentro da lógica de Estado mínimo). As fronteiras estão cada vez mais fluidas para a circulação de
-				capital e mercadorias, configurando um modelo de produção integrado e fortemente globalizado. </p>
-
 		</div>
 
 
@@ -785,108 +193,8 @@
 
 
 
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 09</p>
-
-			<p> (UFTM 2012) </p>
 
 
-			<div class="w3-panel w3-leftbar w3-sand w3-margin">
-				<p>“A organização do espaço geográfico por meio de redes eliminou a necessidade de fixar as atividades
-					econômicas em um determinado lugar. Isso vale para o grande número de serviços, que podem ser
-					prestados a partir de qualquer lugar do mundo para qualquer outro, bastando que esses locais estejam
-					conectados”.</p>
-
-				<p class="w3-small"> LUCCI, E. A. et. al. Território e sociedade no mundo globalizado: Geografia Geral e
-					do Brasil. Ensino Médio. Editora Saraiva, 2005. p.127). </p>
-			</div>
-
-
-
-
-
-
-			<p> A formação das redes geográficas na contemporaneidade, conforme indicado pelo trecho acima, expressa-se
-				materialmente por meio:</p>
-
-			<p class="bordaQuestoes" id="q9a"><input type="radio" required="required" name="pq9" value="a"> a) da
-				transição demográfica dos países desenvolvidos.</p>
-
-			<p class="bordaQuestoes" id="q9b"><input type="radio" required="required" name="pq9" value="b"> b) da
-				expansão das multinacionais para o mundo subdesenvolvido.</p>
-
-			<p class="bordaQuestoes" id="q9c"><input type="radio" required="required" name="pq9" value="c"> c) da
-				regionalização do espaço econômico mundial.</p>
-
-			<p class="bordaQuestoes" id="q9d"><input type="radio" required="required" name="pq9" value="d"> d) da
-				dinamização informacional das cidades globais.</p>
-
-			<p class="bordaQuestoes" id="q9e"><input type="radio" required="required" name="pq9" value="e"> e) da
-				diminuição dos fluxos industriais e comerciais.</p>
-		</div>
-
-
-
-		<div class="comentarios">
-			<!-- <p> <strong>Comentário:</strong></p> 
-			
-		<p>   Colocar os comentários aqui.   </p> -->
-		</div>
-
-
-
-
-
-
-		<div class="w3-card-4">
-
-			<p class="p2">Questão 10</p>
-
-			<p> (UERJ 2010) </p>
-
-			<div class="w3-panel w3-leftbar w3-sand w3-margin">
-				<p>“Cada um, de cada lugar do mundo, tem de assinalar em seu endereço eletrônico o país onde mora e de
-					onde fala (. Br, Ar, Max, etc.); aquele que fala a partir dos EUA não precisa apor. Us ao seu
-					endereço e, assim, é como se falasse de lugar-nenhum, tornando familiar que cada qual se veja,
-					sempre, de um lugar determinado, enquanto haveria aqueles que falam como se fossem do mundo e não de
-					nenhuma parte específica”.</p>
-
-				<p class="w3-small"> Adaptado de Carlos Walter Porto-Gonçalves In: LANDER, Edgardo (org.). A
-					colonialidade do saber. Buenos Aires: CLACSO, 2005. </p>
-			</div>
-
-
-
-
-
-
-
-			<p> O texto acima contém uma reflexão acerca de um aspecto importante das redes mundiais de produção e
-				circulação de conhecimento. Segundo o autor, essas redes são marcadas pelo conceito de:</p>
-
-			<p class="bordaQuestoes" id="q10a"><input type="radio" required="required" name="pq10" value="a"> a)
-				pluralismo.</p>
-
-			<p class="bordaQuestoes" id="q10b"><input type="radio" required="required" name="pq10" value="b"> b)
-				autoritarismo.</p>
-
-			<p class="bordaQuestoes" id="q10c"><input type="radio" required="required" name="pq10" value="c"> c)
-				nacionalismo.</p>
-
-			<p class="bordaQuestoes" id="q10d"><input type="radio" required="required" name="pq10" value="d"> d)
-				etnocentrismo.</p>
-
-
-		</div>
-
-
-
-		<div class="comentarios">
-			<!-- <p> <strong>Comentário:</strong></p> 
-			
-		<p>   Colocar os comentários aqui.   </p> -->
-		</div>
 
 
 
@@ -901,8 +209,7 @@
 
 
 	<div class="area">
-		<img src="../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280"
-			height="200">
+		<img src="../fotoIndex/globinhoPe.png" id="imagem" style="display:none" alt="imagem" width="280" height="200">
 	</div>
 
 
@@ -916,208 +223,6 @@
 	<div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
 
-	<script>
-
-
-
-		function checar() {
-
-
-
-			var pq1 = document.quiz.pq1.value;
-			var pq2 = document.quiz.pq2.value;
-			var pq3 = document.quiz.pq3.value;
-			var pq4 = document.quiz.pq4.value;
-			var pq5 = document.quiz.pq5.value;
-			var pq6 = document.quiz.pq6.value;
-			var pq7 = document.quiz.pq7.value;
-			var pq8 = document.quiz.pq8.value;
-			var pq9 = document.quiz.pq9.value;
-			var pq10 = document.quiz.pq10.value;
-
-			var corretas = 0;
-
-
-			var cor = ["#99ff99", "#ee4466"];
-
-			if (pq1 == "e") {
-				corretas++;
-				document.getElementById("q1e").style.backgroundColor = cor[0];
-			} else {
-
-				document.getElementById("q1b").style.backgroundColor = cor[1];
-				document.getElementById("q1c").style.backgroundColor = cor[1];
-				document.getElementById("q1d").style.backgroundColor = cor[1];
-				document.getElementById("q1a").style.backgroundColor = cor[1];
-
-				document.getElementById("q1e").style.backgroundColor = cor[0];
-
-			}
-
-			if (pq2 == "b") {
-				corretas++;
-				document.getElementById("q2b").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q2a").style.backgroundColor = cor[1];
-				document.getElementById("q2c").style.backgroundColor = cor[1];
-				document.getElementById("q2d").style.backgroundColor = cor[1];
-				document.getElementById("q2e").style.backgroundColor = cor[1];
-
-				document.getElementById("q2b").style.backgroundColor = cor[0];
-
-			}
-			if (pq3 == "d") {
-				corretas++;
-				document.getElementById("q3d").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q3b").style.backgroundColor = cor[1];
-				document.getElementById("q3c").style.backgroundColor = cor[1];
-				document.getElementById("q3a").style.backgroundColor = cor[1];
-				document.getElementById("q3e").style.backgroundColor = cor[1];
-
-				document.getElementById("q3d").style.backgroundColor = cor[0];
-
-			}
-			if (pq4 == "c") {
-				corretas++;
-				document.getElementById("q4c").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q4b").style.backgroundColor = cor[1];
-				document.getElementById("q4a").style.backgroundColor = cor[1];
-				document.getElementById("q4d").style.backgroundColor = cor[1];
-
-
-				document.getElementById("q4c").style.backgroundColor = cor[0];
-
-			}
-			if (pq5 == "d") {
-				corretas++;
-				document.getElementById("q5d").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q5b").style.backgroundColor = cor[1];
-				document.getElementById("q5c").style.backgroundColor = cor[1];
-				document.getElementById("q5a").style.backgroundColor = cor[1];
-				document.getElementById("q5e").style.backgroundColor = cor[1];
-
-				document.getElementById("q5d").style.backgroundColor = cor[0];
-
-			}
-			if (pq6 == "d") {
-				corretas++;
-				document.getElementById("q6d").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q6b").style.backgroundColor = cor[1];
-				document.getElementById("q6c").style.backgroundColor = cor[1];
-				document.getElementById("q6a").style.backgroundColor = cor[1];
-				document.getElementById("q6e").style.backgroundColor = cor[1];
-
-				document.getElementById("q6d").style.backgroundColor = cor[0];
-
-			}
-			if (pq7 == "b") {
-				corretas++;
-				document.getElementById("q7b").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q7a").style.backgroundColor = cor[1];
-				document.getElementById("q7c").style.backgroundColor = cor[1];
-				document.getElementById("q7d").style.backgroundColor = cor[1];
-
-
-				document.getElementById("q7b").style.backgroundColor = cor[0];
-
-			}
-			if (pq8 == "d") {
-				corretas++;
-				document.getElementById("q8d").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q8b").style.backgroundColor = cor[1];
-				document.getElementById("q8c").style.backgroundColor = cor[1];
-				document.getElementById("q8a").style.backgroundColor = cor[1];
-				document.getElementById("q8e").style.backgroundColor = cor[1];
-
-				document.getElementById("q8d").style.backgroundColor = cor[0];
-
-			}
-			if (pq9 == "b") {
-				corretas++;
-				document.getElementById("q9b").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q9a").style.backgroundColor = cor[1];
-				document.getElementById("q9c").style.backgroundColor = cor[1];
-				document.getElementById("q9d").style.backgroundColor = cor[1];
-				document.getElementById("q9e").style.backgroundColor = cor[1];
-
-				document.getElementById("q9b").style.backgroundColor = cor[0];
-
-			}
-			if (pq10 == "d") {
-				corretas++;
-				document.getElementById("q10d").style.backgroundColor = cor[0];
-			} else {
-				document.getElementById("q10b").style.backgroundColor = cor[1];
-				document.getElementById("q10c").style.backgroundColor = cor[1];
-				document.getElementById("q10a").style.backgroundColor = cor[1];
-
-
-				document.getElementById("q10d").style.backgroundColor = cor[0];
-
-			}
-
-
-			corLenta();
-			classEscurecer();
-			comentarios();
-
-
-
-			var incorrretas = 10 - corretas;
-			var mensagem = ["Parabéns!", "Foi bom!", "Melhor tentar novamente!"];
-			var imagem = ["../img1.gif", "../img2.gif", "../img3.gif"];
-			var pontos;
-
-			if (corretas < 5) {
-				pontos = 2;
-
-			}
-
-			if (corretas >= 5 && corretas <= 7) {
-				pontos = 1;
-			}
-
-
-			if (corretas >= 7) {
-				pontos = 0;
-
-			}
-
-
-
-			document.getElementById("numeroCorreto").innerHTML = "Você acertou " + corretas + " e errou " + incorrretas + " do total de questões" + ", ou seja, " + (corretas * 100) / 10 + "%.";
-			document.getElementById("mensagem").innerHTML = mensagem[pontos];
-			document.getElementById("imagem").src = imagem[pontos];
-			document.getElementById("numeroCorreto").style.display = 'block';
-			document.getElementById("mensagem").style.display = 'block';
-			document.getElementById("imagem").style.display = 'block';
-
-
-
-
-
-		}
-	</script>
-
-
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-DPX55DSFZ0');
-
-	</script>
 
 
 	<script>
@@ -1131,7 +236,120 @@
 		}
 	</script>
 
+	<script>
+		const bancoDeDados = {
+			"carro": [
+				{ speaker: "NPC1", text: "Ei, Franciele, você viu o texto sobre a produção do carro esportivo?" },
+				{ speaker: "NPC2", text: "Vi sim, Jéssica. Parece uma verdadeira bagunça geográfica!" },
+				{ speaker: "NPC1", text: "Totalmente! Financiamento em um país, montagem em outro..." },
+				{ speaker: "NPC2", text: "A tecnologia da informação é que une tudo isso." }
+			],
+			"outraQuestao": [
+				{ speaker: "NPC1", text: "Olá! Vamos estudar outro tema?" },
+				{ speaker: "NPC2", text: "Com certeza, estou pronta!" }
+			]
+		};
+	</script>
 
+	<script>
+		// 	const dialogues = [
+		// 		{ speaker: "NPC1", text: "Ei, Franciele, você viu o texto de ajuda que o professor passou sobre a produção do carro esportivo?" },
+		// 		{ speaker: "NPC2", text: "Vi sim, Jéssica. Parece que a coisa toda é uma verdadeira bagunça geográfica, não é?" },
+		// 		{ speaker: "NPC1", text: "Totalmente. Financiamento em um país, projeto em outro, montagem em vários lugares... É loucura!" },
+		// 		{ speaker: "NPC2", text: "Mas o que mais me chamou a atenção foi a parte sobre a importância da tecnologia da informação nisso tudo." },
+		// 		{ speaker: "NPC1", text: "Verdade, parece que a chave para lidar com toda essa complexidade está na organização interligada entre várias localidades." },
+		// 		{ speaker: "NPC2", text: "Exato! Com um sistema eficiente, todas essas partes dispersas podem ser coordenadas de maneira integrada." },
+		// 		{ speaker: "NPC1", text: "E aí, você acha que conseguimos pegar essa pista para a resposta da questão?" },
+		// 		{ speaker: "NPC2", text: "Com certeza! Vamos lá!" }
+		// 	];
+
+		// 	let currentDialogueIndex = 0;
+		// 	const typingSound = new Audio('../../../audios/dialogsound.mp3');
+		// 	const botaoDialogo = document.getElementById('botaoDialogo');
+		// 	const botaoReiniciar = document.getElementById('botaoReiniciar');
+
+		// 	function esconderTodosOsBaloes() {
+		// 		const baloes = document.querySelectorAll('.balloon');
+		// 		baloes.forEach(balao => {
+		// 			balao.style.display = 'none';
+		// 		});
+		// 	}
+
+		// 	function showCurrentDialogue() {
+		// 		botaoReiniciar.disabled = true;
+
+		// 		// 1. ESCONDE OS BALÕES ANTES DE MOSTRAR O NOVO
+		// 		esconderTodosOsBaloes();
+
+		// 		const currentDialogue = dialogues[currentDialogueIndex];
+
+		// 		// Define qual ID de diálogo usar (dialogue1 para NPC1, dialogue2 para NPC2)
+		// 		const dialogueId = currentDialogue.speaker === "NPC1" ? "dialogue1" : "dialogue2";
+		// 		const dialogueElement = document.getElementById(dialogueId);
+
+		// 		dialogueElement.textContent = '';
+		// 		let currentIndex = 0;
+
+		// 		// Som com Loop para não parar no meio
+		// 		typingSound.loop = true;
+		// 		typingSound.currentTime = 0;
+		// 		typingSound.play().catch(e => console.log("Interação necessária para som"));
+
+		// 		// Exibe apenas o balão do falante atual
+		// 		dialogueElement.parentElement.style.display = 'block';
+		// 		botaoDialogo.disabled = true;
+
+		// 		function addLetter() {
+		// 			if (currentIndex < currentDialogue.text.length) {
+		// 				dialogueElement.textContent += currentDialogue.text.charAt(currentIndex);
+		// 				currentIndex++;
+		// 				setTimeout(addLetter, 30);
+		// 			} else {
+		// 				// Finaliza som e libera botão
+		// 				typingSound.pause();
+		// 				typingSound.loop = false;
+		// 				botaoDialogo.disabled = false;
+
+		// 				// Se for o último diálogo, libera o reiniciar
+		// 				if (currentDialogueIndex === dialogues.length - 1) {
+		// 					botaoDialogo.innerHTML = "Fim do diálogo";
+		// 					botaoDialogo.disabled = true;
+		// 					botaoReiniciar.disabled = false;
+		// 				}
+		// 			}
+		// 		}
+
+		// 		addLetter();
+		// 	}
+
+		// 	function nextDialogue() {
+		// 		if (currentDialogueIndex < dialogues.length) {
+		// 			showCurrentDialogue();
+		// 			currentDialogueIndex++;
+		// 			botaoDialogo.innerHTML = "Próximo";
+		// 		}
+		// 	}
+
+		// 	function reiniciarDialogo() {
+		// 		currentDialogueIndex = 0;
+		// 		document.getElementById('dialogue1').textContent = '';
+		// 		document.getElementById('dialogue2').textContent = '';
+		// 		document.getElementById('wrapper-balao1').style.display = 'none';
+		// 		document.getElementById('wrapper-balao2').style.display = 'none';
+		// 		botaoDialogo.innerHTML = "Iniciar Diálogo";
+		// 		botaoDialogo.disabled = false;
+		// 		botaoReiniciar.disabled = true;
+		// 	}
+		// </script>
+
+	<script>
+
+		// Nome do arquivo: script-universal.js
+		// O que fazer: Este código substitui o anterior e gerencia múltiplos diálogos.
+
+
+
+	</script>
 
 
 </body>

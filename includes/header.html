@@ -1,13 +1,13 @@
 <div class="w3-top">
-    <div class="w3-bar w3-green w3-card">
-        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large"
-            href="/javascript:void(0)" onclick="AbrirNavBar()">
+    <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large" href="#"
+            onclick="AbrirNavBar(); return false;">
             <i class="fa fa-bars"></i>
         </a>
 
 
 
-        <a href="/index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="/home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
 
         <div class="w3-dropdown-click w3-hide-small">
             <button onclick="AbrirDropDown('aulas')" class="w3-padding-large w3-button">
@@ -22,11 +22,8 @@
 
 
         
-
+        <a href="/paginas/instrucoes.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Instruções</a>
         <a href="/blog/blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog</a>
-        <a href="/paginas/creditos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Créditos</a>
-        <a href="/paginas/instrucoes.html"
-            class="w3-bar-item w3-button w3-padding-large w3-hide-small">Instruções</a>
 
         <div class="w3-dropdown-click w3-hide-small">
             <button onclick="AbrirDropDown('simulados')" class="w3-padding-large w3-button">
@@ -35,12 +32,14 @@
             <div id="simulados" class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
                 <a href="/simulados/capasimuladoenem.html" class="w3-bar-item w3-button">Enem</a>
                 <a href="/simulados/capasimuladofuvest.html" class="w3-bar-item w3-button">Fuvest</a>
+                <a href="/simulados/capasimuladounesp.html" class="w3-bar-item w3-button w3-padding">Unesp</a>
                 <a href="/simulados/capasimuladounicamp.html" class="w3-bar-item w3-button">Unicamp</a>
             </div>
         </div>
+        <a href="/paginas/creditos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Créditos</a>
 
         <div class="w3-right" style="display: flex; align-items: center;">
-            <div class="font-controls w3-hide-small">
+            <div class="font-controls">
                 <button id="decrease-font" class="font-btn">A-</button>
                 <button id="increase-font" class="font-btn">A+</button>
             </div>
@@ -64,9 +63,10 @@
         </div>
     </div>
 
-    <a href="/blog/blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="AbrirNavBar()">Blog</a>
+
     <a href="/paginas/instrucoes.html" class="w3-bar-item w3-button w3-padding-large"
         onclick="AbrirNavBar()">Instruções</a>
+    <a href="/blog/blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="AbrirNavBar()">Blog</a>
 
     <div class="w3-dropdown-click">
         <button onclick="AbrirDropDown('simulados-mobile')" class="w3-button w3-block w3-left-align w3-padding-large">
@@ -75,6 +75,7 @@
         <div id="simulados-mobile" class="w3-dropdown-content w3-bar-block w3-white w3-card-4">
             <a href="/simulados/capasimuladoenem.html" class="w3-bar-item w3-button w3-padding">Enem</a>
             <a href="/simulados/capasimuladofuvest.html" class="w3-bar-item w3-button w3-padding">Fuvest</a>
+            <a href="/simulados/capasimuladounesp.html" class="w3-bar-item w3-button w3-padding">Unesp</a>
             <a href="/simulados/capasimuladounicamp.html" class="w3-bar-item w3-button w3-padding">Unicamp</a>
         </div>
     </div>

@@ -2,459 +2,145 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta property="og:image" content="capageral.jpg">
+    <title>Duvid - Simulados de Geografia</title>
 
-    <title>Duvid Simulados Geografia</title>
-    <link rel="stylesheet" href="../estilos/w3.css">
-
-
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../estilos/index-estilo.css">
     <link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/carregar.js" defer></script>
+    <script src="/js/abrirmenu.js" defer></script>
 
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
-        crossorigin="anonymous"></script>
-
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-
-
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216" crossorigin="anonymous"></script>
 
     <style>
         @font-face {
-
             src: url('../fontes/FreePixel.woff');
             font-family: pixel;
         }
 
+        h1, h2, h3, h4 {
+            font-family: 'pixel', sans-serif;
+            text-transform: uppercase;
+            color: #2e7d32;
+        }
+
         body {
-
-            margin: 0 auto;
-            font-family: pixel, Arial, sans-serif;
-            margin-bottom: 60px;
-            background-color: white;
-        }
-
-
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: pixel, Arial, Helvetica, sans-serif;
-            margin: auto;
-            padding: 10px;
-
-
-
-        }
-
-
-        .altura {
-            margin-top: 40px;
-            margin-bottom: 20px;
-            padding: 10px;
-
-            height: auto;
+            font-family: 'Verdana', sans-serif;
+            line-height: 1.6;
         }
 
         .larguraBar {
-            max-width: 700px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        /* .texto {
-      padding: 10px;
-      font-family: pixel;
-    }
-
-    .texto a {
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-
-    .texto a>p:hover {
-      background-color: #a1ee9a81;
-      box-shadow: 2px 2px 2px black;
-
-    } */
-
-        .boxAulas {
-            width: 270px;
-            height: 200px;
-            position: relative;
-            z-index: 50;
-            background-color: rgb(255, 255, 255);
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-
-
-
-
+        .grid-simulados {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
         }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 8px;
-            margin-bottom: 0px;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 8px;
-
-        }
-
-        .column>p {
+        .card-simulado {
+            transition: transform 0.3s;
             text-align: center;
-            /* color: white; */
         }
 
-        .column img {
-            margin-top: 16px;
-            vertical-align: middle;
+        .card-simulado:hover {
+            transform: scale(1.05);
         }
 
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media (max-width: 800px) {
-            .column {
-                flex: 33.3%;
-                max-width: 33.3%;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media (max-width: 500px) {
-            .column {
-                flex: 50%;
-                max-width: 50%;
-            }
-
-        }
-
-        .fotoFundo {
-            background-image: url("fotoIndex/fundoAmarelo.png");
-            /* background-color: rgb(61, 68, 63); */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        .corFundoPrimeiro {
-            background-color: #6297cc49;
-        }
-
-        /* 
-    .rodape {
-      display: flex;
-      height: 50px;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-
-      font-family: pixel;
-      position: absolute;
-      bottom: 0 0;
-
-    } */
-
-        /* Rodapé */
-
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 0;
+        .card-simulado img {
             width: 100%;
-            height: 60px;
-            line-height: 60px;
-            color: #FFF;
-            text-align: center
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
-        #iconeFooter {
-            width: 32px;
-            height: 32px;
-        }
-
-        .dark-mode {
-            background-color: #333333;
-            color: white;
-        }
-
-        a {
-            text-decoration: none;
+        .card-simulado p {
+            font-family: 'pixel', sans-serif;
+            margin-top: 10px;
+            font-weight: bold;
         }
     </style>
-
 </head>
 
-<body>
+<body class="w3-light-grey">
 
+    <div id="header-placeholder"></div>
 
+    <div class="w3-content" style="max-width:1000px; margin-top: 80px; margin-bottom: 100px;">
 
-    <!-- Navigation (Stays on Top) -->
-    <div class="w3-top w3-bar w3-black w3-large ">
-
-        <a href="../index.html" class=" w3-bar-item w3-button w3-left w3-margin-left">Home</a>
-
-        <a href="../blog/blog.html" class=" w3-bar-item w3-button w3-left w3-margin-left">Blog</a>
-
-
-        <a href="../paginas/sobre.html" class=" w3-bar-item w3-button w3-left w3-margin-left">Sobre</a>
-
-        <a href="#" class="w3-bar-item w3-button w3-left w3-margin-left" onclick="DarkMode()"><i
-                class="fa fa-lightbulb-o"></i> </a>
-
-    </div>
-
-
-
-
-    <h1 class="w3-padding-top-64 w3-center">Duvid Simulados</h1>
-
-
-    <div class="w3-container larguraBar">
-
-
-        <h2>Simulados de Geografia focados em vestibulares</h2>
-
-    
-  
-        <div class="w3-margin"><img id="imagem1" src="capageral.jpg" alt="Estudando Geografia - Duvid Geografia" class="w3-mobile" >
-		   
-            <span class="w3-small w3-margin-left" id="citacao1" >Fonte: https://www.pexels.com </span>
-           
-           </div>
-        <p>O Duvid Simulado oferece uma preparação completa para quem deseja praticar questões de vestibulares no seu tempo, com foco especial no Exame Nacional do Ensino Médio (ENEM).</p>
-        
-        <p>Aqui temos as principais questões de Geografia presentes no ENEM, UNICAMP, UEL, UNESP e muito mais!</p>
-        
-        <p>Cada simulado do Duvid vem com uma ajuda especial: ao enfrentar uma questão, você pode contar com dicas e informações relevantes para encontrar a resposta correta.</p>
-        
-        <p>Além disso, ao final de cada simulado, é fornecido comentários detalhados sobre as questões, tanto as corretas quanto as incorretas. Isso permite que você não apenas veja as respostas certas, mas também entenda o porquê, ajudando na consolidação do conhecimento.</p>
-        
-        <p>Prepare-se de forma sólida e eficaz para os desafios das provas de Geografia com o Duvid Simulado!</p>
-        
-
-
-    </div>
-
-
-    <div class="row larguraBar w3-padding-32">
-
-        <div class="column">
-
-            <a href="capasimuladoenem.html">
-                <img class="w3-hover-opacity w3-card w3-round-large" src="enem/capaenem.png" alt="logo"
-                    style="width:100%"></a>
-
-            <p><a href="capasimuladoenem.html">ENEM</a> </p>
-
-
-
-        </div>
-
-        <div class="column">
-
-            <a href="capasimuladofuvest.html">
-                <img class="w3-hover-opacity w3-card w3-round-large" src="fuvest/capafuvest.png" alt="logo"
-                    style="width:100%"></a>
-
-            <p><a href="capasimuladofuvest.html">FUVEST</a> </p>
-
-
-
-        </div>
-
-
-
-        <div class="column">
-
-            <a href="capasimuladounesp.html">
-                <img class="w3-hover-opacity w3-card w3-round-large" src="unesp/capaunesp.png" alt="logo"
-                    style="width:100%"></a>
-
-            <p><a href="capasimuladounesp.html">UNESP</a> </p>
-
-
-
-        </div>
-        <div class="column">
-
-            <a href="capasimuladounicamp.html">
-                <img class="w3-hover-opacity w3-card w3-round-large" src="unicamp/capaunicamp.png" alt="logo"
-                    style="width:100%"></a>
-
-            <p><a href="capasimuladounicamp.html">UNICAMP</a> </p>
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- 
-fim do row -->
-
-    </div>
-
-
-
-    <!-- <footer class="w3-container rodape w3-black">
-    <div class="w3-padding">
-      &copy; Duvid - Geografia 2022.
-    </div>
-  </footer> -->
-
-    <footer class="footer w3-black">
-
-        <div class="container">
-
-            <img id="iconeFooter" src="../fotoIndex/marcaDuvid.png" alt="icone" class="">
-
-            &copy; Duvid - Geografia 2022.
-
-
-        </div>
-
-    </footer>
-
-
-
-    <script>
-
-        /* 
-              function togglePanel(id) {
+        <div class="w3-container w3-white w3-card-4 w3-margin w3-padding-32 w3-round-large">
             
-                var x = document.getElementById(id);
-        
-            
-                if (x.className.indexOf("w3-show") == -1) {
-                  x.className += " w3-show";
-        
-                }
-        
-                else {
-                  x.className = x.className.replace(" w3-show", "");
-        
-                }
-              }
-        */
+            <h1 class="w3-center w3-text-green"><b>Duvid Simulados</b></h1>
+            <p class="w3-center w3-opacity">Questões de Geografia focadas em vestibulares</p>
+            <hr>
 
-        // function myFunction(id) {
-        //   var x = document.getElementById(id);
-        //   if (x.className.indexOf("w3-show") == -1) {
-        //     x.className += " w3-show";
-        //   } else {
-        //     x.className = x.className.replace(" w3-show", "");
-        //   }
-        // }
+            <div class="w3-container larguraBar">
+                <div class="w3-display-container w3-margin-bottom">
+                    <img src="capageral.jpg" alt="Estudando Geografia" class="w3-image w3-round-large" style="width:100%">
+                    <span class="w3-display-bottomright w3-padding w3-tiny w3-text-white" style="text-shadow: 1px 1px 2px black;">Fonte: Pexels</span>
+                </div>
 
+                <p>O <b>Duvid Simulado</b> oferece uma preparação completa para quem deseja praticar questões no seu próprio tempo, com foco especial no ENEM e grandes vestibulares estaduais.</p>
+                
+                <div class="w3-panel w3-leftbar w3-border-green w3-pale-green w3-padding-16">
+                    <p><b>Diferencial:</b> Cada questão conta com dicas e informações relevantes para te ajudar a encontrar a resposta correta, além de comentários detalhados ao final.</p>
+                </div>
+            </div>
 
+            <div class="grid-simulados larguraBar">
+                
+                <div class="card-simulado">
+                    <a href="capasimuladoenem.html">
+                        <img src="enem/capaenem.png" alt="Simulado ENEM">
+                        <p>ENEM</p>
+                    </a>
+                </div>
 
+                <div class="card-simulado">
+                    <a href="capasimuladofuvest.html">
+                        <img src="fuvest/capafuvest.png" alt="Simulado FUVEST">
+                        <p>FUVEST</p>
+                    </a>
+                </div>
 
+                <div class="card-simulado">
+                    <a href="capasimuladounesp.html">
+                        <img src="unesp/capaunesp.png" alt="Simulado UNESP">
+                        <p>UNESP</p>
+                    </a>
+                </div>
 
+                <div class="card-simulado">
+                    <a href="capasimuladounicamp.html">
+                        <img src="unicamp/capaunicamp.png" alt="Simulado UNICAMP">
+                        <p>UNICAMP</p>
+                    </a>
+                </div>
 
-        function ExpandeDiv(id_cadastro) {
+            </div>
 
-            var qtd_div = document.getElementsByTagName('div').length;
-            var div_sel = document.getElementById(id_cadastro);
-            var todas_divs;
+            <div class="w3-container w3-center w3-margin-top">
+                <p class="w3-small">Prepare-se de forma sólida para os desafios da Geografia!</p>
+            </div>
+        </div>
+    </div>
 
-            for (var i = 1; i <= qtd_div; i++) {
-                todas_divs = document.getElementById("div" + i);
-
-                if (todas_divs != null) {
-                    if (todas_divs.id != id_cadastro) {
-                        todas_divs.style.display = 'none';
-
-                    }
-
-                    else {
-                        div_sel.style.display = 'block';
-
-                    }
-
-                }
-            }
-
-
-
-
-        }
-
-
-
-
-
-
-    </script>
-
-
+    <div id="footer-placeholder"></div>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-DPX55DSFZ0');
-
     </script>
-
-
-    <script>
-
-        function DarkMode() {
-            let element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-    </script>
-
-
-
-
 
 </body>
-
 </html>
