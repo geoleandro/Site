@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 03 </title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 03 - Migrações internacionais</h1>
+
+
+        <p><strong> Conteúdo:</strong> Tipos de movimentos populacionais: voluntário, forçado e controlado; Imigrantes;
+            Refugiados; Xenofobia.
+        </p>
+
+        <p><strong>Objetivo:</strong> Caracterizar e analisar os principais conceitos relativos aos fluxos de pessoas no
+            mundo.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada vimos como a população mundial evoluiu e quais foram as
+            principais questões envolvendo sua distribuição pelo mundo.
+        </p>
+
+
+        <p>Hoje, vamos embarcar em uma jornada pelo intrigante mundo das migrações. Vamos explorar porque as pessoas
+            deixam suas terras natais e como isso afeta as regiões de origem e destino. </p>
+
+        <p>Ao final desta aula, vamos saber as causas e as características das migrações pelo mundo.</p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+        <div class="w3-pale-yellow">
+            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+
+            <h3>1. O que são movimentos migratórios e quais são suas principais causas?</h3>
+            <h3>2. Qual é a diferença entre emigrantes e imigrantes?</h3>
+            <h3>3. Quais são os três tipos principais de movimentos populacionais mencionados no texto? Explique cada
+                um.
+            </h3>
+            <h3>4. Como as mudanças climáticas influenciam os movimentos migratórios? Dê um exemplo citado no texto.
+            </h3>
+            <h3>5. Por que países desenvolvidos atraem um maior número de imigrantes?</h3>
+            <h3>6. O que é xenofobia e como ela afeta os imigrantes nos países de destino?</h3>
+            <h3>7. Como a crise dos refugiados sírios exemplifica uma migração forçada?</h3>
+            <h3>8. O que é a “fuga de cérebros” e como ela pode impactar os países de origem?</h3>
+            <h3>9. Como a migração varia entre os continentes? Cite exemplos.</h3>
+            <h3>10. Como as políticas de imigração diferem entre os países? Dê exemplos de abordagens citadas no texto.
+            </h3>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+    <div class="topico">
+
+        <h2>Movimentos Migratórios </h2>
+
+
+
+
+        <p> Para começar, o que exatamente são movimentos migratórios? Eles representam os deslocamentos de pessoas de
+            um lugar para outro, seja dentro das fronteiras de um país ou cruzando fronteiras internacionais. Este
+            fenômeno tem raízes profundas na história da humanidade e continua a moldar nosso mundo de maneiras
+            fascinantes.</p>
+
+
+        <div class="w3-margin"><img id="imagem1" src="tt03f08.png" alt="ts03f08" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: https://ourworldindata.org/. Acesso em: 09 set.
+                2023. </span>
+        </div>
+
+
+
+
+        <p>É fundamental entender dois termos essenciais no estudo das migrações: "emigrantes" e "imigrantes".
+            <strong>Emigrantes</strong> são indivíduos que deixam sua terra natal em busca de novos horizontes, enquanto
+            <strong>imigrantes</strong> são aqueles que chegam a uma nova região ou país em busca de oportunidades e uma
+            vida melhor. Imagine os emigrantes como aventureiros corajosos e os imigrantes como pessoas que estão
+            construindo um novo lar em terras desconhecidas.
+        </p>
+
+        <div class="w3-margin"><img id="imagem2" src="tt03f02.png" alt="tt03f02" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao2"> Fonte: Disponível em: https://operamundi.uol.com.br.
+                Acesso em: 09 set. 2023. </span>
+
+        </div>
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Por que as pessoas migram?</h2>
+
+        <p>Vamos ver alguns dados sobre migrantes pelo mundo.</p>
+
+
+
+        <div class="w3-margin"><img id="imagem3" src="tt03f06.png" alt="tt03f06" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao3"> Fonte:
+                https://publications.iom.int/books/world-migration-report-2022. Acesso em: 09 set. 2023. </span>
+
+        </div>
+
+
+
+
+
+
+
+        <p> Agora, o que leva as pessoas a fazerem essas jornadas? As causas são diversas e multifacetadas. As causas
+            naturais envolvem eventos como desastres naturais, como terremotos ou furacões, que podem destruir casas e
+            meios de subsistência, forçando as pessoas a se deslocarem. </p>
+
+        <p>Mudanças climáticas, como desertificação e elevação do nível do mar, também têm impulsionado a migração de
+            comunidades inteiras. Por exemplo, na região do Sahel, na África, as mudanças climáticas têm causado a
+            desertificação de terras agrícolas, tornando impossível a sobrevivência para muitas comunidades locais. </p>
+
+
+        <div class="w3-margin"><img id="imagem4" src="tt03f03.png" alt="tt03f03" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao4"> Refugiados em Minawao, no nordeste dos Camarões,
+                plantam árvores em uma região que foi desmatada devido às mudanças climáticas e à atividade humana.
+                Fonte: Nações Unidas. Disponível em: https://brasil.un.org/pt-br/125639. Acesso em 09 set. 2023. </span>
+
+        </div>
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Tipos de Migrações </h2>
+
+
+
+
+        <p> As migrações são incrivelmente diversas em suas manifestações. Algumas são <strong>temporárias</strong>,
+            como uma viagem de férias, enquanto outras são <strong>permanentes</strong>, envolvendo a mudança definitiva
+            de residência. </p>
+
+        <p>Além disso, migrações podem ser individuais ou em grupo, e podem ocorrer tanto dentro de um mesmo país quanto
+            entre diferentes nações. Essa diversidade nos lembra que a experiência migratória é única para cada pessoa e
+            comunidade. </p>
+
+
+
+        <h3>Migrações Internacionais </h3>
+
+        <p> Quando as migrações cruzam fronteiras de outros países, chamamos isso de migrações internacionais. É
+            importante notar que nem todos os países atraem o mesmo número de imigrantes. </p>
+
+
+        <p>Os países desenvolvidos, geralmente abastecidos com recursos e oportunidades, tendem a atrair um grande
+            número de imigrantes em busca de uma vida melhor. </p>
+
+
+        <p>De acordo com o Banco Mundial, os países de alta renda receberam 65% dos imigrantes internacionais em 2020,
+            evidenciando a disparidade nas oportunidades globais. Por exemplo, os Estados Unidos têm sido um destino
+            histórico para imigrantes de várias partes do mundo devido às oportunidades econômicas e culturais que
+            oferecem. </p>
+
+
+        <p>Em 2020, por exemplos, os Estados Unidos receberam mais de 50 milhões de imigrantes internacionais, segundo
+            dados do da Organização Internacional para as Migrações, destacando sua atratividade como destino para
+            imigrantes em busca de oportunidades econômicas.</p>
+
+        <div class="w3-margin"><img id="imagem5" src="tt03f04.png" alt="tt03f04" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao5"> </span>
+
+        </div>
+
+
+        <p>Muitos desses imigrantes eram proveniente do México. Mas há muito mais corredores de migração pelo mundo.
+            Veja abaixo:</p>
+
+
+        <div class="w3-margin"><img id="imagem6" src="tt03f07.png" alt="tt03f07" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao6"> </span>
+
+        </div>
+
+
+
+
+        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+            <h3><strong><mark>Se você não sabia, agora já sabe!</mark></strong></h3>
+            <h4><strong>Reflita!</strong></h4>
+
+
+            <p>Os movimentos migratórios não são apenas deslocamentos geográficos; eles também são fenômenos sociais e
+                políticos complexos. Muitas vezes, eles refletem desigualdades gritantes em termos de recursos,
+                oportunidades e segurança em diferentes partes do mundo. Por exemplo, países com sistemas de saúde e
+                educação eficazes podem atrair imigrantes em busca de acesso a esses serviços, enquanto áreas assoladas
+                pela pobreza podem ver seus habitantes emigrando em busca de uma vida melhor.</p>
+
+            <p>É fundamental, portanto, adotar uma perspectiva crítica ao analisar as migrações. Nem todos têm a mesma
+                liberdade de escolher quando e para onde migrar. Muitos emigrantes são forçados a fazê-lo devido a
+                conflitos, perseguições, pobreza extrema ou desastres naturais. Por exemplo, os refugiados sírios foram
+                impulsionados a deixar sua pátria devido à devastação causada pela guerra civil em seu país, uma
+                situação que os forçou a buscar refúgio em outras nações.</p>
+
+
+
+
+
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2>Migrações forçadas </h2>
+
+
+
+
+        <p>Encaremos a dura realidade: as causas das migrações frequentemente estão enraizadas em condições precárias em
+            seus lugares de origem. </p>
+
+        <p> Conflitos armados, desastres climáticos e falta de oportunidades econômicas são impulsionadores
+            significativos. </p>
+
+        <p>De acordo com as estatísticas da ONU, mais de 80 milhões de pessoas foram forçadas a se deslocar devido a
+            conflitos em 2020, um número alarmante que nos faz refletir sobre o estado atual do mundo. </p>
+
+
+        <div class="w3-margin"><img id="imagem7" src="tt03f01.png" alt="tt03f01" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao7"> Fonte: Refugiados sírios.
+                https://matheusdesouza.com/2015/09/26/refugiados-sirios-um-breve-resumo/</span>
+
+        </div>
+
+
+
+
+
+
+        <p>A crise de refugiados sírios é um exemplo notável dessa realidade. Mais de 5,6 milhões de sírios se tornaram
+            refugiados devido ao conflito em seu país, de acordo com o Alto Comissariado das Nações Unidas para os
+            Refugiados (ACNUR). </p>
+
+
+        <h2>Desigualdades entre os países</h2>
+
+        <p>As migrações internacionais frequentemente revelam desigualdades globais. Os países desenvolvidos atraem
+            imigrantes em busca de melhores condições de vida, enquanto os países subdesenvolvidos continuam a sofrer
+            com a emigração de seus cidadãos. </p>
+
+
+        <p>De acordo com o Banco Mundial, os países de alta renda receberam 65% dos imigrantes internacionais em 2020,
+            evidenciando a disparidade nas oportunidades globais.</p>
+
+        <p>A Suécia, devido a sua política de imigração mais acolhedora, recebeu um grande número de refugiados sírios
+            nos últimos anos, enquanto muitos sírios continuam a fugir para nações vizinhas com menos recursos
+            disponíveis.</p>
+
+
+
+        <h2>Quais são os efeitos das migrações?</h2>
+
+
+        <p>Migrações não são eventos isolados; eles têm impactos profundos nos países de origem e nos receptores. </p>
+
+
+        <p>Um desses impactos é a fuga de cérebros, onde profissionais altamente qualificados deixam seus países de
+            origem em busca de melhores oportunidades no exterior.</p>
+
+        <p> Isso pode privar os países de saída de talento vital, o que levanta questões sobre desenvolvimento e
+            progresso.</p>
+
+
+        <p>A Índia, por exemplo, é um país que envia muitos emigrantes qualificados, contribuindo para a fuga de
+            cérebros em setores como tecnologia e medicina.</p>
+
+
+
+
+
+        <p>
+            <span onclick="document.getElementById('arquipelago').style.display='block'" class="w3-yellow">Veja um
+                panorama das migrações por continente:</span>
+        </p>
+
+
+        <div id="arquipelago" class="w3-modal w3-margin-top">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-padding">
+                    <span onclick="document.getElementById('arquipelago').style.display='none'"
+                        class="w3-button w3-red w3-display-topright">&times;</span>
+
+
+
+                    <ul>
+
+                        <li>
+                            <h3><strong>África:</strong></h3>
+
+                            Migração Interna: A África apresenta uma alta taxa de migração interna, com muitas pessoas
+                            se deslocando dentro do continente em busca de melhores oportunidades econômicas, acesso a
+                            serviços básicos e segurança.<br><br>
+
+                            Conflitos e Desastres: Conflitos armados, instabilidade política e desastres naturais, como
+                            secas e inundações, têm sido fatores significativos que impulsionam as migrações em algumas
+                            partes do continente.<br><br>
+
+                            Refugiados: A África abriga uma proporção significativa dos refugiados do mundo,
+                            especialmente devido a conflitos em países como Sudão do Sul, Somália e República
+                            Democrática do Congo.
+
+                        </li>
+
+
+
+                        <li>
+                            <h3><strong>Europa:</strong></h3>
+
+                            Migração Intracontinental: A União Europeia (UE) facilita a livre circulação de pessoas
+                            entre os Estados membros, promovendo uma migração significativa dentro do continente, com
+                            destaque para migrações do leste para o oeste em busca de emprego.<br><br>
+
+                            Imigração Externa: A Europa também é um destino importante para imigrantes de outras partes
+                            do mundo, incluindo migrantes econômicos, refugiados e solicitantes de asilo.<br><br>
+
+
+
+                        </li>
+
+                        <li>
+                            <h3><strong>América do Norte:</strong></h3>
+
+                            Estados Unidos: Os Estados Unidos são historicamente um dos principais destinos para
+                            migrantes em busca de oportunidades econômicas e um padrão de vida melhor.<br><br>
+
+                            México: O México tem uma relação próxima com os Estados Unidos em termos de migração, com
+                            muitos mexicanos buscando empregos nos EUA. Além disso, o México tem experimentado um
+                            aumento no número de solicitantes de asilo de países da América Central.<br><br>
+
+                            Canadá: O Canadá tem políticas de imigração favoráveis e é um destino atraente para
+                            imigrantes qualificados.<br><br>
+
+
+                        </li>
+
+                        <li>
+                            <h3><strong>Ásia:</strong></h3>
+
+                            Migração Intrarregional: A Ásia é o lar de várias regiões densamente povoadas e tem uma alta
+                            taxa de migração intrarregional, com movimentos significativos de áreas rurais para urbanas
+                            em busca de trabalho.<br><br>
+
+                            Trabalhadores Migrantes: Países como a Arábia Saudita e os Emirados Árabes Unidos atraem um
+                            grande número de trabalhadores migrantes de países asiáticos em busca de emprego.<br><br>
+
+                            Refugiados: A Ásia também abriga uma população significativa de refugiados, especialmente
+                            devido a conflitos em Myanmar, Síria e Afeganistão.<br><br>
+
+
+
+                        </li>
+
+
+
+
+
+
+                        <li>
+
+                            <h3><strong>América do Sul e Central:</strong></h3>
+
+
+                            Migração Intrarregional: A migração dentro da América Latina é comum, com pessoas buscando
+                            melhores oportunidades em países vizinhos.<br><br>
+
+                            Venezuela: A crise na Venezuela tem levado a um êxodo significativo de venezuelanos em busca
+                            de
+                            refúgio e oportunidades econômicas em outros países da região.<br><br>
+
+                        </li>
+
+                        <li>
+
+                            <h3><strong>Oceania:</strong></h3>
+
+                            Austrália e Nova Zelândia: Esses países têm políticas de imigração seletivas e atraem
+                            imigrantes qualificados de todo o mundo. Também há migração interna dentro da Austrália, com
+                            pessoas se mudando de áreas rurais para urbanas.<br><br>
+
+
+                        </li>
+
+
+
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Xenofobia - O Lado Obscuro da Imigração:</h2>
+
+
+        <div class="w3-margin"><img id="imagem8" src="tt03f05.png" alt="tt03f05" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao8"> </span>
+
+        </div>
+
+
+
+
+        <p>Em muitos países receptores, a xenofobia, o medo ou ódio em relação a estrangeiros, pode surgir. Isso pode
+            levar a tensões sociais e políticas, prejudicando a integração de imigrantes e a coesão social. </p>
+
+        <p> Em algumas partes da Europa, houve um aumento nos crimes de ódio e na discriminação contra imigrantes devido
+            a preocupações sobre emprego e segurança.</p>
+
+        <h3> Políticas de Imigração </h3>
+
+
+        <p>Vamos dar uma olhada nas políticas de imigração. Cada país tem suas próprias regras e regulamentos para
+            controlar quem entra e quem sai. </p>
+
+
+        <p>Algumas nações têm políticas mais abertas, incentivando a imigração para impulsionar a economia e a
+            diversidade cultural. Outras adotam abordagens mais restritivas, com quotas rigorosas e processos de seleção
+            rigorosos. </p>
+
+
+        <p>O Canadá tem um sistema de imigração baseado em méritos que avalia candidatos com base em habilidades,
+            educação e experiência, enquanto outros países, como a Austrália, têm políticas semelhantes.</p>
+
+
+        <h3>E se eu fosse um imigrante?</h3>
+
+        <p>À medida que concluímos nossa exploração dos movimentos migratórios, é crucial lembrar que essas são
+            histórias de vidas e aspirações humanas. Migração é uma força motriz que molda nosso mundo. </p>
+
+        <p>Confrontando as complexidades, desigualdades e desafios, nossa esperança é que, como estudantes de geografia,
+            vocês possam refletir sobre essas questões e considerar como podem contribuir para um mundo mais inclusivo e
+            solidário. </p>
+
+        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+
+
+            <p><strong>Algumas perguntas para reflexão:</strong></p>
+
+
+            <p> Como você reagiria se fosse um imigrante e enfrentasse preconceito em seu novo país?<br><br>
+
+                Como se sentiria ao ser tratado de maneira diferente devido à sua origem cultural em um país
+                estrangeiro?<br><br>
+
+                Quais seriam seus maiores desafios ao tentar se adaptar a uma nova língua e cultura?<br><br>
+
+                Você se sentiria mais atraído por um país que oferece oportunidades econômicas, mas tem políticas de
+                imigração
+                restritivas, ou por um país com políticas mais abertas, mas com menos oportunidades de trabalho?<br><br>
+
+                Como você lidaria com a saudade da família e dos amigos que ficaram em seu país de origem?<br><br>
+
+                Você acha que a xenofobia e o preconceito são desafios inevitáveis para os imigrantes? Como você lidaria
+                com
+                essas situações?<br><br>
+
+                Quais são os principais fatores que podem levar um imigrante a se sentir isolado em seu novo
+                país?<br><br>
+
+                Você consideraria participar de grupos ou comunidades de imigrantes para se sentir mais
+                conectado?<br><br>
+
+                Como as histórias de sucesso de outros imigrantes influenciariam sua decisão de deixar seu país de
+                origem?<br><br>
+
+                Você acredita que os imigrantes têm a responsabilidade de preservar sua cultura de origem ou devem se
+                assimilar
+                completamente à cultura do país de destino?</p>
+
+        </div>
+
+
+
+
+
+
+        <p>Continuem explorando e aprendendo sobre esse fenômeno global que define a história da humanidade. </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Infográfico - Resumo</h2>
+
+
+
+        <div class="w3-margin"><img id="infograficot2" src="inforesumot3.jpg" alt="Infográfico resumo migração"
+                class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Organizado e revisado pelo autor. </span>
+        </div>
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Quais são alguns dos principais desafios enfrentados pelos migrantes em busca de refúgio e asilo em países
+            receptores?</h4>
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'isso dificulta muito a integração e acesso a serviços essenciais','1'); this.style.backgroundColor='lightgreen'">discriminação
+            e xenofobia.</button>
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
+            processos de integração eficientes.</button>
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">acesso
+            fácil a empregos e serviços de saúde.</button>
+
+
+
+
+
+
+        <p id="resp1"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Como as políticas de imigração restritivas podem afetar negativamente os países receptores?</h4>
+
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            garantem a segurança e a estabilidade do país.
+        </button>
+
+
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            promovem a coesão social.
+        </button>
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'afeta negativamente a economia e a sociedade dos países receptores','1'); this.style.backgroundColor='lightgreen'">
+
+            levam à falta de diversidade cultural e à escassez de mão de obra qualificada.
+        </button>
+
+
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Qual é o papel das causas sociais, como conflitos e instabilidade política, nas migrações internacionais?
+        </h4>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            Elas desempenham um papel menor nas migrações internacionais.
+
+        </button>
+
+
+
+
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            Elas estão principalmente relacionadas a eventos naturais, como desastres.
+
+        </button>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'essas instabilidades obrigam, no geral, as pessoas a deixarem suas casas em busca de segurança.','1'); this.style.backgroundColor='lightgreen'">
+
+            Elas frequentemente são as principais causas de migrações forçadas.
+
+        </button>
+
+
+        <p id="resp3"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> A curiosidade humana é o motor impulsionador das perguntas, levando-nos a explorar o
+            desconhecido e expandir nosso conhecimento.</h2>
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Por que algumas pessoas escolhem migrar para países com climas extremos, como lugares muito frios ou
+                quentes?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            Algumas pessoas migram para lugares com climas extremos devido a oportunidades de emprego específicas ou
+            atrações naturais, como a busca por empregos na indústria do petróleo em regiões árticas ou a atração de
+            praias tropicais para trabalhos na indústria do turismo. Suas motivações podem variar, mas frequentemente
+            envolvem a busca por oportunidades econômicas ou experiências únicas.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Como as redes sociais e a tecnologia impactaram as migrações internacionais?
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            As redes sociais e a tecnologia desempenharam um papel significativo nas migrações internacionais,
+            facilitando a comunicação e o compartilhamento de informações. Por exemplo, as pessoas agora podem se
+            conectar facilmente com amigos e familiares em outros países, o que pode influenciar sua decisão de migrar.
+            Além disso, a internet permite que os migrantes acessem informações sobre destinos, oportunidades de emprego
+            e até mesmo as condições políticas e econômicas de outros países, auxiliando na tomada de decisão.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Qual é o impacto das migrações internacionais na cultura e na culinária dos países receptores?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            As migrações internacionais têm um impacto profundo na cultura e na culinária dos países receptores. À
+            medida que as pessoas de diferentes origens se estabelecem em novas regiões, elas trazem consigo suas
+            tradições culinárias e culturais únicas. Isso pode resultar em uma diversificação da oferta de alimentos e
+            em uma mistura de pratos e sabores. Além disso, a interação entre culturas pode enriquecer a vida cultural
+            de um país receptor, contribuindo para festivais, celebrações e práticas tradicionais que refletem a
+            diversidade das comunidades migrantes.
+
+        </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <br><br>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('resp20','globinho2', 'desativar2', 'esse desafio foi bem denso, você já pode finalizar sua lição','7');this.style.display='none'">Proximo</button>
+
+
+        <p id="resp20"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho20" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://g1.globo.com/mundo/noticia/2016/02/protestos-contra-imigrantes-levam-milhares-ruas-da-europa.html"
+                    target="_blank">
+                    Protestos contra imigrantes levam milhares a ruas da Europa
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="area justificadoDireita">
+
+
+            <div class="postit-tp9 w3-blue-gray ">
+
+                <a href="https://pt.euronews.com/2022/10/27/acordo-de-combate-a-migracao-ilegal-com-libia-gera-protestos-em-italia"
+                    target="_blank">
+                    <span class="w3-text-white">Acordo de combate à migração ilegal com Líbia gera protestos em
+                        Itália</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="area justificadoEsquerda">
+
+
+            <div class="postit-tp9 w3-green ">
+
+                <a href="https://agoraeuropa.com/ultimas-noticias/imigracao-protesto-contra-o-sef-ocorre-nesta-sexta-em-lisboa/"
+                    target="_blank">
+                    <span class="w3-text-white">Imigração: protesto contra o SEF ocorre nesta sexta em Lisboa</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+        <p>CANDELORI, Roberto. <strong>Enciclopédia do Estudante</strong>: geografia geral. São Paulo: Moderna, 2008.
+        </p>
+
+
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+        // function myFunction(id) {
+        //     var x = document.getElementById(id);
+        //     if (x.className.indexOf("w3-show") == -1) {
+        //         x.className += " w3-show";
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-green", "w3-lightgrey");
+        //     } else {
+        //         x.className = x.className.replace(" w3-show", "");
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-lightgrey", "w3-green");
+        //     }
+        // }
+
+
+        // function openModal(id, event) {
+        //     event.preventDefault();
+        //     // Obter todas as divs com a classe "content"
+        //     var divs = document.getElementsByClassName("content");
+
+        //     // Percorrer todas as divs
+        //     for (var i = 0; i < divs.length; i++) {
+        //         // Se a div atual for a div com o id passado como parâmetro, mostrar a div
+        //         if (divs[i].id === id) {
+        //             divs[i].style.display = "block";
+        //         } else { // Caso contrário, esconder a div
+        //             divs[i].style.display = "none";
+        //         }
+        //     }
+
+        //     console.log("ID do elemento:", id);
+        // }
+
+
+
+
+        // function closeModal() {
+
+
+
+        //     var contents = document.getElementsByClassName("content");
+        //     for (var i = 0; i < contents.length; i++) {
+        //         contents[i].style.display = "none";
+        //     }
+
+
+
+        // }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 12);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

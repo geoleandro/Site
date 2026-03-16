@@ -1,11 +1,6 @@
-
-
 var fontes = ["Courier New", "Arial", "Times New Roman", "Verdana",  "pixel"];
 
-
-
 var aleatorio = Math.round(Math.random() * 5);
-
 
 
 // function mudaQuest() {

@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     inicializarControleFonte();
 
 });
-
 async function injetarComponentesGlobais() {
     const carregarRecurso = async (id, path) => {
         const container = document.getElementById(id);
@@ -22,7 +21,28 @@ async function injetarComponentesGlobais() {
         return false;
     };
 
-    await carregarRecurso('header-placeholder', '/includes/header.html');
+    // 1. Carrega o Header e trata o painel de pontos
+    const hOk = await carregarRecurso('header-placeholder', '/includes/header.html');
+    
+    if (hOk) {
+        const painel = document.getElementById("painel-pontos");
+        
+        // Verifica se deve mostrar o globinho
+        if (verificarSeEhAula() && painel) {
+            painel.style.display = "flex"; // Usa flex para manter o alinhamento corrigido
+            painel.classList.remove("w3-hide");
+            
+            // Sincroniza a nota inicial se ela já existir no script da aula
+            if (typeof nota !== 'undefined') {
+                const displayNota = document.getElementById("notaFixa");
+                if (displayNota) displayNota.innerHTML = nota.toFixed(1);
+            }
+        } else if (painel) {
+            painel.style.display = "none"; // Garante que fique oculto na Home/Blog
+        }
+    }
+
+    // 2. Carrega o Footer e atualiza o ano
     const fOk = await carregarRecurso('footer-placeholder', '/includes/footer.html');
 
     if (fOk) {
@@ -30,9 +50,26 @@ async function injetarComponentesGlobais() {
         if (spanAno) spanAno.textContent = new Date().getFullYear();
     }
 
+    // 3. Inicializa as ferramentas de acessibilidade
+    if (typeof aplicarTemaSalvo === "function") aplicarTemaSalvo(); // Garante o tema antes do ícone
     if (typeof inicializarLogicaDarkMode === "function") inicializarLogicaDarkMode();
     if (typeof inicializarControleFonte === "function") inicializarControleFonte();
 }
+
+/**
+ * Verifica se a página atual é uma lição interativa
+ * baseada na existência de elementos de aula.
+ */
+function verificarSeEhAula() {
+    // Procura pela barra de progresso ou pelos tópicos da aula
+    const temProgresso = document.getElementById("progress");
+    const temTopicos = document.querySelector(".topico");
+    
+    // Retorna verdadeiro se qualquer um dos dois existir
+    return !!(temProgresso || temTopicos);
+}
+
+
 
 function inicializarControleFonte() {
     // Seleciona os botões (ajuste os IDs para baterem com o seu header.html)
@@ -114,7 +151,11 @@ function voltarAoTopo() {
 }
 
 
+
+
 // Monitora a rolagem da página
 window.onscroll = function () {
     mostrarBotaoTopo();
 };
+
+

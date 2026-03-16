@@ -1,0 +1,109 @@
+/* Removida a @font-face da fonte pixel */
+
+body {
+    margin: 0 auto;
+    /* Fonte moderna e de fácil leitura, igual às outras páginas */
+    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+    background-color: #f1f1f1; 
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Títulos elegantes em verde, seguindo o padrão do site */
+h1, h2, h3, h4 {
+    font-family: "Oswald", sans-serif; /* Mesma fonte dos títulos do Blog/Simulados */
+    text-transform: uppercase;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Grid de Aulas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* Estilo do Card (Texto da Aula) */
+.column p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 16px;
+    color: #444;
+    height: 3.5em; /* Alinhamento vertical dos títulos */
+    overflow: hidden;
+}
+
+/* Wrapper da Imagem com Zoom Suave */
+.wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.wrapper:hover {
+    transform: translateY(-5px); /* Card sobe levemente ao passar o mouse */
+}
+
+.wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.wrapper img:hover {
+    transform: scale(1.1);
+}
+
+/* Modais (Escolha entre Texto e Questões) */
+.w3-modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Estilo para os botões dentro do Modal */
+.w3-modal-content .w3-button {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Dark Mode - Sincronizado com o restante do site */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .w3-white, 
+body.dark-mode .w3-modal-content {
+    background-color: #2d2d2d !important;
+    color: #fff !important;
+}
+
+body.dark-mode .column p {
+    color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .column { flex: 33.33%; max-width: 33.33%; }
+}
+
+@media (max-width: 600px) {
+    .column { flex: 50%; max-width: 50%; padding: 6px; }
+    .column p { font-size: 1.2rem; height: 3em; }
+}

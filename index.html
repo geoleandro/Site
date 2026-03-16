@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,47 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css">
     <style>
-        body { 
-            background-color: #2e7d32; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
-            overflow: hidden; 
+        body {
+            background-color: #2e7d32;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .container { text-align: center; }
-        .logo-splash { width: 180px; margin-bottom: 20px; animation: pulse 2s infinite; }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo-splash {
+            width: 180px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
         @keyframes pulse {
-            0% { transform: scale(1); opacity: 0.8; }
-            50% { transform: scale(1.05); opacity: 1; }
-            100% { transform: scale(1); opacity: 0.8; }
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -39,10 +61,17 @@
     </div>
 
     <script>
-        // Redireciona para a página principal (agora home.html) após 2.5 segundos
-        setTimeout(() => {
-            window.location.href = "home.html";
-        }, 2500);
+        window.addEventListener('load', () => {
+            // 1. Apenas a lógica de redirecionamento ou Splash
+            setTimeout(() => {
+                window.location.href = "Home.html"; // Ou o nome do seu arquivo de Home
+            }, 3000); // Exemplo de 3 segundos de Splash
+
+        
+
+
+        });
     </script>
 </body>
+
 </html>

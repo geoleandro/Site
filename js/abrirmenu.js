@@ -45,3 +45,12 @@ function AbrirDropDown(id) {
       }
     }
 
+
+    // Adicione esta função ao seu arquivo de menus
+function fecharModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+

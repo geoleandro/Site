@@ -1,0 +1,274 @@
+[
+  {
+    "id": 101,
+    "titulo": "Conceitos fundamentais da Geografia",
+    "imagem": "fotoIndex/1ano/aula01.png",
+    "conteudo": "Conceitos fundamentais da Geografia: Espaço geográfico, território, lugar, paisagem e região; desigualdades socioespaciais.",
+    "linkTexto": "1ano/Textos1/Texto01/tp1.html",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=101"
+  },
+  {
+    "id": 102,
+    "titulo": "Coordenadas geográficas",
+    "imagem": "fotoIndex/1ano/aula02.png",
+    "conteudo": "Cartografia: representações do espaço geográfico, localização e coordenadas geográficas.",
+    "linkTexto": "1ano/Textos1/Texto02/tp2.html",
+    "linkQuestoes": "1ano/Aulas1/Aula02/p2.html"
+  },
+  {
+    "id": 103,
+    "titulo": "Fusos horários",
+    "imagem": "fotoIndex/1ano/aula03.png",
+    "conteudo": "Cartografia: hemisférios, fusos horários e zonas terrestres.",
+    "linkTexto": "1ano/Textos1/Texto03/tp3.html",
+    "linkQuestoes": "1ano/Aulas1/Aula03/p3.html"
+  },
+  {
+    "id": 104,
+    "titulo": "Escalas cartográficas",
+    "imagem": "fotoIndex/1ano/aula04.png",
+    "conteudo": "Escala cartográfica: numérica e gráfica; generalização cartográfica.",
+    "linkTexto": "1ano/Textos1/Texto04/tp4.html",
+    "linkQuestoes": "1ano/Aulas1/Aula04/p4.html"
+  },
+  {
+    "id": 105,
+    "titulo": "Projeções cartográficas",
+    "imagem": "fotoIndex/1ano/aula05.png",
+    "conteudo": "Projeções cilíndricas, cônicas e azimutais. Projeção de Mercator, Peters; Mapas temáticos; Anamorfoses.",
+    "linkTexto": "1ano/Textos1/Texto05/tp5.html",
+    "linkQuestoes": "1ano/Aulas1/Aula05/p5.html"
+  },
+  {
+    "id": 106,
+    "titulo": "Revisão (Aulas 01 a 05)",
+    "imagem": "fotoIndex/revisao.png",
+    "conteudo": "Revisão dos conteúdos abordados nas aulas 01 a 05.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula06/p6.html"
+  },
+  {
+    "id": 107,
+    "titulo": "Sensoriamento remoto",
+    "imagem": "fotoIndex/1ano/aula07.png",
+    "conteudo": "Sistemas de Informações Geográficas; Geoprocessamento; Sensoriamento remoto, GPS; imagens de satélite; Cartografia digital.",
+    "linkTexto": "1ano/Textos1/Texto07/tp7.html",
+    "linkQuestoes": "1ano/Aulas1/Aula07/p7.html"
+  },
+  {
+    "id": 108,
+    "titulo": "Eras geológicas e estrutura interna",
+    "imagem": "fotoIndex/1ano/aula08.png",
+    "conteudo": "Crosta, manto e núcleo; Eras geológicas: Azoica, Pré-Cambriano, Paleozoica, Mesozoica e Cenozoica.",
+    "linkTexto": "1ano/Textos1/Texto08/tp8.html",
+    "linkQuestoes": "1ano/Aulas1/Aula08/p8.html"
+  },
+  {
+    "id": 109,
+    "titulo": "Deriva continental e tectônica",
+    "imagem": "fotoIndex/1ano/aula09.png",
+    "conteudo": "Deriva continental; Tectônica de placas; Isostasia; Correntes de Convecção; Falhas tectônicas.",
+    "linkTexto": "1ano/Textos1/Texto09/tp9.html",
+    "linkQuestoes": "1ano/Aulas1/Aula09/p9.html"
+  },
+  {
+    "id": 110,
+    "titulo": "Dinâmica interna do relevo",
+    "imagem": "fotoIndex/1ano/aula10.png",
+    "conteudo": "Relevo, Tectonismo, Epirogênese, Orogênese, vulcanismo, magma, hipocentro e epicentro.",
+    "linkTexto": "1ano/Textos1/Texto10/tp10.html",
+    "linkQuestoes": "1ano/Aulas1/Aula10/p10.html"
+  },
+  {
+    "id": 111,
+    "titulo": "Dinâmica externa do relevo",
+    "imagem": "fotoIndex/1ano/aula11.png",
+    "conteudo": "Agentes externos: água, gelo, vento; Intemperismo físico e químico; Erosão e sedimentação.",
+    "linkTexto": "1ano/Textos1/Texto11/tp11.html",
+    "linkQuestoes": "1ano/Aulas1/Aula11/p11.html"
+  },
+  {
+    "id": 112,
+    "titulo": "Revisão (Aulas 07 a 11)",
+    "imagem": "fotoIndex/revisao.png",
+    "conteudo": "Revisão dos conteúdos abordados nas aulas 07 a 11.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula12/p12.html"
+  },
+  {
+    "id": 113,
+    "titulo": "Ciclo das Rochas",
+    "imagem": "fotoIndex/1ano/aula13.png",
+    "conteudo": "Minerais; tipos de rochas: magmáticas, metamórficas, sedimentares; fósseis e litificação.",
+    "linkTexto": "1ano/Textos1/Texto13/tp13.html",
+    "linkQuestoes": "1ano/Aulas1/Aula13/p13.html"
+  },
+  {
+    "id": 114,
+    "titulo": "Estrutura geológica e relevo",
+    "imagem": "fotoIndex/1ano/aula14.png",
+    "conteudo": "Crátons, escudos cristalinos, bacias sedimentares; Planaltos, planícies, montanhas e depressões.",
+    "linkTexto": "1ano/Textos1/Texto14/tp14.html",
+    "linkQuestoes": "1ano/Aulas1/Aula14/p14.html"
+  },
+  {
+    "id": 115,
+    "titulo": "Fontes de energia I",
+    "imagem": "fotoIndex/1ano/aula15.png",
+    "conteudo": "Combustíveis fósseis: Petróleo, Gás natural e Carvão Mineral.",
+    "linkTexto": "1ano/Textos1/Texto15/tp15.html",
+    "linkQuestoes": "1ano/Aulas1/Aula15/p15.html"
+  },
+  {
+    "id": 116,
+    "titulo": "Fontes de energia II",
+    "imagem": "fotoIndex/1ano/aula16.png",
+    "conteudo": "Energias renováveis: Biomassa, Eólica, Solar, Hidráulica, Geotérmica e Maremotriz.",
+    "linkTexto": "1ano/Textos1/Texto16/tp16.html",
+    "linkQuestoes": "1ano/Aulas1/Aula16/p16.html"
+  },
+  {
+    "id": 117,
+    "titulo": "Solos",
+    "imagem": "fotoIndex/1ano/aula17.png",
+    "conteudo": "Pedogênese; Horizontes do solo; laterização; lixiviação; salinização e desertificação.",
+    "linkTexto": "1ano/Textos1/Texto17/tp17.html",
+    "linkQuestoes": "1ano/Aulas1/Aula17/p17.html"
+  },
+  {
+    "id": 118,
+    "titulo": "Revisão (Aulas 13 a 17)",
+    "imagem": "fotoIndex/revisao.png",
+    "conteudo": "Revisão dos conteúdos abordados nas aulas 13 a 17.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula18/p18.html"
+  },
+  {
+    "id": 119,
+    "titulo": "Climatologia I",
+    "imagem": "fotoIndex/1ano/aula19.png",
+    "conteudo": "Camadas da atmosfera; Tempo vs Clima; Temperatura, umidade e pressão atmosférica.",
+    "linkTexto": "1ano/Textos1/Texto19/tp19.html",
+    "linkQuestoes": "1ano/Aulas1/Aula19/p19.html"
+  },
+  {
+    "id": 120,
+    "titulo": "Climatologia II",
+    "imagem": "fotoIndex/1ano/aula20.png",
+    "conteudo": "Fatores climáticos: Latitude, Altitude, Maritimidade, Correntes Marítimas e Massas de Ar.",
+    "linkTexto": "1ano/Textos1/Texto20/tp20.html",
+    "linkQuestoes": "1ano/Aulas1/Aula20/p20.html"
+  },
+  {
+    "id": 121,
+    "titulo": "Mudanças climáticas globais",
+    "imagem": "fotoIndex/1ano/aula21.png",
+    "conteudo": "Aquecimento global; El Niño; La Niña; Camada de ozônio; efeito estufa.",
+    "linkTexto": "1ano/Textos1/Texto21/tp21.html",
+    "linkQuestoes": "1ano/Aulas1/Aula21/p21.html"
+  },
+  {
+    "id": 122,
+    "titulo": "Mudanças climáticas locais",
+    "imagem": "fotoIndex/1ano/aula22.png",
+    "conteudo": "Ilhas de calor; Inversão térmica; Chuva ácida; Desertificação; Desmatamento.",
+    "linkTexto": "1ano/Textos1/Texto22/tp22.html",
+    "linkQuestoes": "1ano/Aulas1/Aula22/p22.html"
+  },
+  {
+    "id": 123,
+    "titulo": "Revisão (Aulas 19 a 22)",
+    "imagem": "fotoIndex/revisao.png",
+    "conteudo": "Revisão dos conteúdos abordados nas aulas 19 a 22.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula23/p23.html"
+  },
+  {
+    "id": 124,
+    "titulo": "Hidrografia",
+    "imagem": "fotoIndex/1ano/aula24.png",
+    "conteudo": "Ciclo da água; Bacia hidrográfica como unidade de análise; Movimentos oceânicos.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula24/p24.html"
+  },
+  {
+    "id": 125,
+    "titulo": "Relevo oceânico",
+    "imagem": "fotoIndex/1ano/aula25.png",
+    "conteudo": "Plataforma continental, talude, bacia oceânica, fossas e cadeias oceânicas.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula25/p25.html"
+  },
+  {
+    "id": 126,
+    "titulo": "Sistemas fluviais",
+    "imagem": "fotoIndex/1ano/aula26.png",
+    "conteudo": "Rios meandrantes, deltas, estuários e processos de erosão fluvial.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula26/p26.html"
+  },
+  {
+    "id": 127,
+    "titulo": "O uso da água",
+    "imagem": "fotoIndex/1ano/aula27.png",
+    "conteudo": "Poluição hídrica; desmatamento de matas ciliares e contaminação do solo.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula27/p27.html"
+  },
+  {
+    "id": 128,
+    "titulo": "Revisão (Aulas 24 a 27)",
+    "imagem": "fotoIndex/revisao.png",
+    "conteudo": "Revisão dos conteúdos abordados nas aulas 24 a 27.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula28/p28.html"
+  },
+  {
+    "id": 129,
+    "titulo": "Biogeografia I",
+    "imagem": "fotoIndex/1ano/aula29.png",
+    "conteudo": "Biomas tropicais: florestas pluviais e savanas; Dinâmicas climáticas tropicais.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula29/p29.html"
+  },
+  {
+    "id": 130,
+    "titulo": "Biogeografia II",
+    "imagem": "fotoIndex/1ano/aula30.png",
+    "conteudo": "Biomas temperados: coníferas, estepes, pradarias e vegetação mediterrânea.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula30/p30.html"
+  },
+  {
+    "id": 131,
+    "titulo": "Biogeografia III",
+    "imagem": "fotoIndex/1ano/aula31.png",
+    "conteudo": "Regiões polares; Clima ártico e antártico; Tundra.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula31/p31.html"
+  },
+  {
+    "id": 132,
+    "titulo": "Questão ambiental I",
+    "imagem": "fotoIndex/1ano/aula32.png",
+    "conteudo": "Impacto ambiental; Conservacionismo vs Preservacionismo; Ecossocialismo.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula32/p32.html"
+  },
+  {
+    "id": 133,
+    "titulo": "Questão ambiental II",
+    "imagem": "fotoIndex/1ano/aula33.png",
+    "conteudo": "Políticas globais: Eco-92, Protocolo de Kyoto, Acordo de Paris e Sustentabilidade.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula33/p33.html"
+  },
+  {
+    "id": 134,
+    "titulo": "Revisão (Aulas 29 a 33)",
+    "imagem": "fotoIndex/revisao.png",
+    "conteudo": "Revisão final dos biomas e questões ambientais.",
+    "linkTexto": null,
+    "linkQuestoes": "1ano/Aulas1/Aula34/p34.html"
+  }
+]

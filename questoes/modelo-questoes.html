@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../js/jsquestoes-padrao.js" defer></script>
+
+
+    <title>Questões modelo p0</title>
+
+
+
+    <style>
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom topico" style="max-width:750px">
+
+
+        <div id="aviso-status" class="w3-margin-top"></div>
+
+        <div class="w3-light-grey w3-round-xlarge w3-margin-top" style="height:12px;">
+            <div id="barra-progresso-simulado" class="w3-container w3-green w3-round-xlarge"
+                style="width:0%; height:12px; transition: 0.5s"></div>
+        </div>
+
+        <div id="container-questao" class="w3-animate-right">
+        </div>
+
+        <div id="barra-feedback" class="w3-bottom w3-container w3-padding-24 w3-animate-bottom w3-hide"
+            style="z-index:1001">
+            <div class="w3-content" style="max-width:750px">
+                <h3 id="feedback-msg"></h3>
+                <p id="feedback-txt"></p>
+                <button onclick="proxima()" class="w3-button w3-right w3-white w3-round-large">CONTINUAR</button>
+            </div>
+        </div>
+
+        <div id="resultado-final" class="w3-hide w3-center w3-padding-32">
+            <h2 class="fontePixel">Questões Concluídas!</h2>
+            <img src="../../../fotoIndex/globinhoPe.png" width="150" class="w3-margin">
+            <p id="placar-final" class="w3-xlarge"></p>
+            <button class="w3-button w3-blue w3-round-large" onclick="location.href='/home.html'">Voltar para
+                Home</button>
+        </div>
+    </main>
+
+
+
+
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+    <!-- Footer -->
+
+    <div id="footer-placeholder"></div>
+
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const nomeSalvo = localStorage.getItem("duvid_nome") || "Estudante";
+        const params = new URLSearchParams(window.location.search);
+        const aulaID = params.get('id');
+
+        if (aulaID) {
+            const jaFezQuestoes = localStorage.getItem("duvid_" + aulaID + "_questoes") === "true";
+            const jaLeuTexto = localStorage.getItem("concluido_texto_" + aulaID) === "true";
+            
+            const areaAviso = document.getElementById('aviso-status');
+            if (!areaAviso) return;
+
+            let mensagem = "";
+            let cor = "w3-blue";
+            let icone = "fa-info-circle";
+
+            // LÓGICA DE MENSAGENS
+            if (jaFezQuestoes && jaLeuTexto) {
+                // TUDO PRONTO
+                mensagem = `Olá, <b>${nomeSalvo}</b>! Você já dominou esta aula. Deseja revisar as questões para fixar o conhecimento?`;
+                cor = "w3-green";
+                icone = "fa-check-circle";
+                console.log(`Aula ID: ${aulaID} | Fez questões: ${jaFezQuestoes} | Leu texto: ${jaLeuTexto}`);
+            } else if (jaFezQuestoes && !jaLeuTexto) {
+                // FEZ QUESTÃO MAS NÃO LEU O TEXTO
+                mensagem = `Parabéns pelas questões, <b>${nomeSalvo}</b>! Mas notei que você ainda não leu o texto base. Que tal dar uma lida agora?`;
+                cor = "w3-orange";
+                icone = "fa-book";
+            } else if (!jaFezQuestoes && !jaLeuTexto) {
+                // NÃO FEZ NADA AINDA
+                mensagem = `Bem-vindo! Recomendo ler o texto antes de enfrentar as questões, mas se preferir, pode começar o desafio agora!`;
+                cor = "w3-teal";
+                icone = "fa-rocket";
+            }
+
+            // Injeta o HTML se houver mensagem
+            if (mensagem) {
+                areaAviso.innerHTML = `
+                    <div class="w3-panel ${cor} w3-display-container w3-round-large w3-animate-top">
+                        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-round-large">&times;</span>
+                        <p class="w3-padding-16"><i class="fa ${icone}"></i> ${mensagem}</p>
+                    </div>
+                `;
+            }
+            
+        }
+    });
+</script>
+
+</body>
+
+</html>

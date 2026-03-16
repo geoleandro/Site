@@ -5,24 +5,6 @@ html, body {
     position: relative;
 }
 
-/* Ajuste fino nos cards para não 'empurrarem' a tela no mobile */
-@media (max-width: 600px) {
-    .w3-row-padding {
-        padding: 0 8px !important; /* Diminui o respiro lateral da linha */
-        margin: 0 !important;      /* Zera margens que causam o balanço */
-    }
-
-    .w3-third {
-        padding: 0 !important;     /* Remove padding que pode somar à largura total */
-    }
-
-    .card-ano {
-        margin: 15px 5px !important; /* Margem pequena dos lados para não tocar a borda da tela */
-        width: calc(100% - 10px) !important; /* Garante que o card nunca seja 100% + margem */
-        box-sizing: border-box;
-    }
-}
-
 /* --- Configurações de Imagem do Slideshow --- */
 .mySlides img {
     width: 100%;
@@ -126,21 +108,6 @@ html, body {
     mask-size: 100% 100%;
 }
 
-/* --- Responsividade --- */
-@media (max-width: 600px) {
-    .mySlides img {
-        height: 300px; /* Menor em celulares */
-    }
-    .Avisos {
-        max-width: 95%;
-        border-width: 6px;
-    }
-    .postit-tp9 {
-        width: 80%;
-        margin: 10px auto;
-    }
-}
-
 #toggle-dark-mode {
     display: flex;
     align-items: center;
@@ -174,11 +141,7 @@ html, body {
 }
 
 /* Estado desativado quando atinge o limite (definido no main.js) */
-.btn-font-disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-    filter: grayscale(1);
-}
+/* + */
 
 /* Ajuste específico para o Dark Mode não sumir no hover */
 body.dark-mode .w3-bar {
@@ -299,6 +262,91 @@ body.dark-mode .w3-border-light-grey {
     border-color: #333 !important;
 }
 
+
+/* Garante que o ícone do hambúrguer seja visível no Dark Mode */
+body.dark-mode .w3-bar .fa-bars {
+    color: white !important;
+}
+
+/* --- BLINDAGEM CONTRA BOTÕES INVISÍVEIS --- */
+
+/* Garante que o botão .p4 (questões) nunca fique transparente ao ser desativado */
+.p4:disabled {
+    cursor: not-allowed !important;
+    opacity: 1 !important;            /* O segredo para não sumir */
+    visibility: visible !important;
+    background-color: #f9f9f9 !important; /* Cor sólida para não fundir com o fundo */
+    color: #444 !important;
+    border: 2px solid #ddd !important;
+}
+
+/* Ajuste para o Dark Mode: botão desativado precisa ser legível no escuro */
+body.dark-mode .p4:disabled {
+    background-color: #2a2a2a !important; 
+    color: #ccc !important;
+    border-color: #444 !important;
+}
+
+/* Remove qualquer transição de opacidade que possa causar o efeito de sumiço */
+button:disabled {
+    transition: none !important; 
+}
+
+/* --- AJUSTE DARK MODE PARA O FOOTER --- */
+body.dark-mode footer.w3-green {
+    background-color: #1a1a1a !important; /* Cinza quase preto */
+    color: #e0e0e0 !important;           /* Texto cinza claro */
+    border-top: 4px solid #4CAF50 !important; /* Mantém uma linha verde fina no topo para estilo */
+}
+
+/* Garante que os links de política e textos do footer fiquem legíveis */
+body.dark-mode footer a, 
+body.dark-mode footer p, 
+body.dark-mode footer span {
+    color: #b0b0b0 !important;
+}
+
+/* Deixa os ícones das redes sociais brancos ou verde-claro no escuro */
+body.dark-mode footer .fa-brands {
+    color: #ffffff !important;
+}
+
+#buttonConfira {
+    display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+    
+    /* Altera de '20px auto' para: */
+    margin: 20px 0; 
+    
+    cursor: pointer;
+    color: #fff;
+    background-color: #69CB60;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 #39693b;
+    position: relative;
+    font-family: 'pixel', sans-serif;
+    transition: all 0.1s;
+}
+
+/* Estilo para o campo de entrada de nome */
+.input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.input:focus {
+    border-color: #69CB60;
+}
+
 /* Ajustes para telas pequenas (Mobile) */
 @media (max-width: 600px) {
     .w3-third {
@@ -316,7 +364,36 @@ body.dark-mode .w3-border-light-grey {
     }
 }
 
-/* Garante que o ícone do hambúrguer seja visível no Dark Mode */
-body.dark-mode .w3-bar .fa-bars {
-    color: white !important;
+/* Ajuste fino nos cards para não 'empurrarem' a tela no mobile */
+@media (max-width: 600px) {
+    .w3-row-padding {
+        padding: 0 8px !important; /* Diminui o respiro lateral da linha */
+        margin: 0 !important;      /* Zera margens que causam o balanço */
+    }
+
+    .w3-third {
+        padding: 0 !important;     /* Remove padding que pode somar à largura total */
+    }
+
+    .card-ano {
+        margin: 15px 5px !important; /* Margem pequena dos lados para não tocar a borda da tela */
+        width: calc(100% - 10px) !important; /* Garante que o card nunca seja 100% + margem */
+        box-sizing: border-box;
+    }
+}
+
+
+/* --- Responsividade --- */
+@media (max-width: 600px) {
+    .mySlides img {
+        height: 300px; /* Menor em celulares */
+    }
+    .Avisos {
+        max-width: 95%;
+        border-width: 6px;
+    }
+    .postit-tp9 {
+        width: 80%;
+        margin: 10px auto;
+    }
 }

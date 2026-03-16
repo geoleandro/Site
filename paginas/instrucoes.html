@@ -4,11 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Instruções Gerais - Duvid</title>
+	<title>Duvid - Instruções </title>
 
-	    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="../estilos/index-estilo.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 	<link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
 
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
@@ -17,7 +19,7 @@
 	<script src="/js/carregar.js" defer></script>
 	<script src="/js/abrirmenu.js" defer></script>
 
-	
+
 
 	<style>
 		/* Tipografia Híbrida para melhor leitura */
@@ -142,8 +144,55 @@
 				</div>
 			</div>
 
+
+
+			<hr>
+			<div class="w3-container w3-center w3-padding-16">
+				<h4 class="w3-text-grey">Gerenciar Meu Progresso</h4>
+				<p class="w3-small">Deseja recomeçar a jornada e ver os cards cinzas novamente?</p>
+
+				<button onclick="document.getElementById('modalReset').style.display='flex'"
+					class="w3-button w3-white w3-border w3-border-red w3-round-large w3-hover-red w3-text-red">
+					<i class="fa fa-refresh"></i> Limpar Aulas Concluídas
+				</button>
+			</div>
+
+			<div id="modalReset" class="w3-modal" style="display: none; align-items: center; justify-content: center;">
+
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
+					<div class="w3-container w3-center w3-padding-32">
+						<span onclick="document.getElementById('modalReset').style.display='none'"
+							class="w3-button w3-display-topright w3-round-large">&times;</span>
+
+						<h3 class="fontePixel w3-text-red">Atenção!</h3>
+						<p id="msgPersonalizada">Deseja realmente apagar o histórico de aulas concluídas?</p>
+
+						<img src="../fotoIndex/globinhoPe.png" width="100" class="w3-animate-bottom">
+						<br><br>
+
+						<div class="w3-row">
+							<div class="w3-half w3-padding">
+								<button class="w3-button w3-red w3-round w3-block" onclick="executarReset()">
+									Sim, Apagar
+								</button>
+							</div>
+							<div class="w3-half w3-padding">
+								<button class="w3-button w3-light-grey w3-round w3-block"
+									onclick="document.getElementById('modalReset').style.display='none'">
+									Cancelar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
 			<div class="w3-container w3-center w3-margin-top">
-				<p class="w3-small">Dúvidas? Entre em contato: <br><b>leandro.hsilva@ifsuldeminas.edu.br</b></p>
+				<p class="w3-small">Dúvidas? Quer trabalhar em colaboração com sugestões? Entre em contato:
+					<br><b>leandro.hsilva@ifsuldeminas.edu.br</b>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -166,6 +215,45 @@
 				return false;
 			}
 			return true;
+		}
+	</script>
+
+	<script>
+		// --- NOVA FUNÇÃO DE SENIOR: LIMPAR PROGRESSO ---
+		// Quando o modal abrir, podemos personalizar o nome do aluno
+		document.addEventListener('DOMContentLoaded', function () {
+			const nome = localStorage.getItem("duvid_nome") || "Estudante";
+			const msg = document.getElementById("msgPersonalizada");
+			if (msg) msg.innerHTML = `Olá <b>${nome}</b>, deseja realmente apagar o histórico de aulas concluídas?`;
+		});
+
+		function executarReset() {
+			// 1. Limpa todas as chaves de progresso (Texto e Questões)
+			Object.keys(localStorage).forEach(key => {
+				// Apaga o progresso dos textos (concluido_texto_XXX)
+				// Apaga o progresso das questões (duvid_XXX_questoes)
+				// Apaga as chaves antigas (concluido_...html) se ainda existirem
+				if (key.startsWith("concluido_") || key.startsWith("duvid_") && key.endsWith("_questoes")) {
+					// Só NÃO apaga o "duvid_nome" para o aluno não ter que digitar o nome de novo
+					if (key !== "duvid_nome") {
+						localStorage.removeItem(key);
+					}
+				}
+			});
+
+			// 2. Feedback visual (Mantendo o seu estilo original)
+			const modalContent = document.querySelector("#modalReset .w3-container");
+			modalContent.innerHTML = `
+        <h3 class="fontePixel w3-text-green">Sucesso!</h3>
+        <p>Tudo limpo! Agora você pode recomeçar sua jornada do zero.</p>
+        <img src="../fotoIndex/globinhoPe.png" width="80" class="w3-spin">
+        <p class="w3-small">Recarregando ambiente...</p>
+    `;
+
+			// 3. Recarrega a página após 1,5 segundos
+			setTimeout(() => {
+				location.reload();
+			}, 1500);
 		}
 	</script>
 </body>

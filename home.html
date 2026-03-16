@@ -12,6 +12,7 @@
 
 
 
+
     <link rel="shortcut icon" type="image/x-icon" href="/fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -22,13 +23,15 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
+    <script src="/estilos/jstextos-padrao.js" defer></script>
+    <script src="/js/aulas-geral.js" defer></script>
+
     <script src="/js/carregar.js" defer></script>
     <script src="/js/abrirmenu.js" defer></script>
 
 
 
-
-    <title>Duvid Blog</title>
+    <title>Duvid Home</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -54,11 +57,86 @@
             <h2 class="w3-wide w3-center w3-text-green">O PROJETO</h2>
             <p class="w3-opacity w3-center"><i>Gratuito, inovador e feito para a sala de aula</i></p>
             <div class="w3-justify">
-                <p>O site <strong>Duvid Geografia</strong> oferece mais de 1000 questões atualizadas, textos autorais
-                    interativos e correção automática com comentários. Além disso, nossos aplicativos para Android
+                <p>O site <strong>Duvid Geografia</strong> oferece mais de 1000 questões atualizadas, dezenas de textos
+                    autorais
+                    interativos com correção automática e comentários, além de sugestões de atividades. Além disso,
+                    nossos aplicativos para Android
                     funcionam 100%
                     offline!</p>
             </div>
+
+            <div class="NomeHome w3-container w3-white w3-card-2 w3-round-large w3-margin-top w3-padding-16"
+                id="container-login" style="display: block;">
+                <div id="loading-painel" class="w3-center w3-padding-16">
+                    <i class="fa fa-spinner w3-spin w3-text-green w3-xlarge"></i>
+                    <p class="w3-small w3-opacity">Carregando seu progresso...</p>
+                </div>
+
+                <div id="form-identificacao" style="display:none;">
+                    <p class="paragrafo">Digite seu nome</p>
+                    <input class="input" type="text" id="pq0">
+                    <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="w3-margin-bottom"></div>
+
+            <!-- Blocos dos resumos gerais -->
+            <div id="resumo-geral" class="w3-row-padding w3-margin-top" style="display:none;">
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                        <div id="conquista-1ano" class="w3-display-topright w3-padding" style="display: none;">
+                            <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
+                        </div>
+
+                        <h6 class="w3-text-teal"><b>1º Ano</b></h6>
+                        <div class="w3-light-grey w3-round-xlarge w3-tiny">
+                            <div id="bar-1ano" class="w3-container w3-green w3-round-xlarge"
+                                style="width:0%; height:10px;"></div>
+                        </div>
+                        <p class="w3-tiny w3-margin-top"><span id="txt-1ano">0/0</span> aulas feitas</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                        <div id="conquista-2ano" class="w3-display-topright w3-padding" style="display: none;">
+                            <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
+                        </div>
+
+                        <h6 class="w3-text-teal"><b>2º Ano</b></h6>
+                        <div class="w3-light-grey w3-round-xlarge w3-tiny">
+                            <div id="bar-2ano" class="w3-container w3-blue w3-round-xlarge"
+                                style="width:0%; height:10px;"></div>
+                        </div>
+                        <p class="w3-tiny w3-margin-top"><span id="txt-2ano">0/0</span> aulas feitas</p>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                        <div id="conquista-3ano" class="w3-display-topright w3-padding" style="display: none;">
+                            <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
+                        </div>
+
+                        <h6 class="w3-text-teal"><b>3º Ano</b></h6>
+                        <div class="w3-light-grey w3-round-xlarge w3-tiny">
+                            <div id="bar-3ano" class="w3-container w3-orange w3-round-xlarge"
+                                style="width:0%; height:10px;"></div>
+                        </div>
+                        <p class="w3-tiny w3-margin-top"><span id="txt-3ano">0/0</span> aulas feitas</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- termino da div -->
         </div>
 
 
@@ -204,26 +282,25 @@
         </div>
 
 
-        <!-- Citação inova -->
-        <div class="w3-container w3-center w3-padding-64 w3-light-grey">
-            <h3>Apoio:</h3>
-            <img src="fotoIndex/imagensCapa/inova.png" alt="Inova IFSP" class="w3-image w3-mobile "
-                style="max-width:800px">
-        </div>
+
 
 
 
     </main>
 
 
-   <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large"
+    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large"
         title="Voltar ao topo">
         <i class="fa fa-arrow-up"></i>
     </button>
 
+    <div class="w3-padding-top-48"></div>
+
     <!-- Footer -->
 
     <div id="footer-placeholder"></div>
+
+
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>
@@ -235,62 +312,86 @@
 
     </script>
 
-    
 
-  <script>
-    async function carregarFrase() {
-      const f = document.getElementById('frase');
-      const a = document.getElementById('autor');
-      const imgAutor = document.getElementById('autor-img');
 
-      if (!f) return;
+    <script>
+        async function carregarFrase() {
+            const f = document.getElementById('frase');
+            const a = document.getElementById('autor');
+            const imgAutor = document.getElementById('autor-img');
 
-      try {
-        // Efeito visual de saída
-        f.style.opacity = 0;
-        if (imgAutor) imgAutor.style.opacity = 0;
+            if (!f) return;
 
-        // Busca o JSON (o "/" inicial evita erro no blog)
-        const resposta = await fetch('/estilos/frases.json');
-        const frases = await resposta.json();
+            try {
+                // Efeito visual de saída
+                f.style.opacity = 0;
+                if (imgAutor) imgAutor.style.opacity = 0;
 
-        // Sorteio
-        const aleatoria = frases[Math.floor(Math.random() * frases.length)];
+                // Busca o JSON (o "/" inicial evita erro no blog)
+                const resposta = await fetch('/estilos/frases.json');
+                const frases = await resposta.json();
 
-        // Pequena pausa para a transição do CSS
-        setTimeout(() => {
-          f.innerText = `"${aleatoria.frase}"`;
-          if (a) a.innerText = `— ${aleatoria.autor}`;
+                // Sorteio
+                const aleatoria = frases[Math.floor(Math.random() * frases.length)];
 
-          if (imgAutor && aleatoria.imagem) {
-            // Monta o caminho: /imgFrases/milton.jpg
-            imgAutor.src = "/" + aleatoria.imagem;
+                // Pequena pausa para a transição do CSS
+                setTimeout(() => {
+                    f.innerText = `"${aleatoria.frase}"`;
+                    if (a) a.innerText = `— ${aleatoria.autor}`;
 
-            // Só exibe quando a imagem terminar de carregar
-            imgAutor.onload = () => {
-              imgAutor.style.display = 'block';
-              imgAutor.style.opacity = 1;
-            };
-          } else if (imgAutor) {
-            imgAutor.style.display = 'none';
-          }
+                    if (imgAutor && aleatoria.imagem) {
+                        // Monta o caminho: /imgFrases/milton.jpg
+                        imgAutor.src = "/" + aleatoria.imagem;
 
-          f.style.opacity = 1;
-        }, 500);
+                        // Só exibe quando a imagem terminar de carregar
+                        imgAutor.onload = () => {
+                            imgAutor.style.display = 'block';
+                            imgAutor.style.opacity = 1;
+                        };
+                    } else if (imgAutor) {
+                        imgAutor.style.display = 'none';
+                    }
 
-      } catch (erro) {
-        console.error("Erro ao carregar JSON:", erro);
-        f.innerText = "A geografia é a arte de ler o mundo.";
-        f.style.opacity = 1;
-      }
-    }
+                    f.style.opacity = 1;
+                }, 500);
 
-    // Inicialização
-    window.addEventListener('load', carregarFrase);
+            } catch (erro) {
+                console.error("Erro ao carregar JSON:", erro);
+                f.innerText = "A geografia é a arte de ler o mundo.";
+                f.style.opacity = 1;
+            }
+        }
 
-    // Troca automática a cada 10 segundos
-    setInterval(carregarFrase, 10000);
-  </script>
+        document.addEventListener('DOMContentLoaded', async () => { // Voltamos com o async aqui
+            carregarFrase();
+
+            const nomeSalvo = localStorage.getItem("duvid_nome");
+
+            if (nomeSalvo) {
+                if (typeof exibirSaudacao === "function") {
+                    exibirSaudacao(nomeSalvo);
+                }
+
+                // AGORA SIM: Esperamos a contagem automática dos JSONs terminar
+                if (typeof atualizarResumoHome === "function") {
+                    await atualizarResumoHome();
+                }
+            } else {
+                const loading = document.getElementById('loading-painel');
+                const form = document.getElementById('form-identificacao');
+                if (loading) loading.style.display = 'none';
+                if (form) form.style.display = 'block';
+            }
+        });
+        // Mantém o seu intervalo de 10 segundos para as frases
+        setInterval(carregarFrase, 10000);
+    </script>
+
+    <script>
+
+    </script>
+
+
 
 
 

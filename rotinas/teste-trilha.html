@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duvid - 1º ano</title>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="estilos/index-estilo.css">
+  <link rel="stylesheet" href="estilos/aulas-estilo.css">
+   <link rel="stylesheet" href="estilos/trilha-estilo.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="fotoIndex/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <script src="/js/carregar.js" defer></script>
+  <script src="/js/aulas-trilha.js" defer></script>
+  <script src="/js/abrirmenu.js" defer></script>
+</head>
+
+<body class="w3-light-grey">
+
+    <div class="w3-container w3-padding-48 w3-center">
+        <h1 class="w3-text-green"><b>Trilha de Aprendizagem</b></h1>
+        <p>Siga o caminho para completar as missões de Geografia!</p>
+    </div>
+
+    <main id="grid-aulas" class="trilha-container">
+        </main>
+
+    <script>
+        window.onload = function() {
+            if (typeof carregarAulas === 'function') {
+                carregarAulas(1); // Testando com o 1º ano
+            }
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+
+    <title></title>
+
+
+
+    <style>
+        .topico {
+            display: block;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+        <!-- Navigation (Stays on Top) -->
+
+
+        <div class="topico">
+
+
+            <div class="w3-padding-top-48">
+
+            </div>
+
+
+
+            <h1 id="h1"> </h1>
+
+
+            <!-- Futuro audio -->
+            <!-- <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div> -->
+
+
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
+
+                <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae error
+                    expedita veritatis voluptatem eos earum nisi necessitatibus culpa assumenda voluptate possimus
+                    ratione tempora a cumque quibusdam distinctio, nihil quam. Obcaecati..</p>
+            </div>
+
+
+
+
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); Play('inicioNome.mp3'); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+
+        </div>
+
+
+
+        <div class="topico ">
+
+            <h2> Introdução </h2>
+
+
+            <p> <span class="primeiraLetra">N</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                cupiditate iusto ex nisi reprehenderit! Esse fuga aliquid quisquam quis quia saepe officiis et odit
+                atque corporis. Quibusdam ex in quia.
+            </p>
+
+
+            <p></p>
+
+            <p></p>
+
+
+
+
+
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <hr>
+
+
+        </div>
+
+        <div class="topico">
+            <div class="w3-pale-yellow">
+                <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+
+                <h3>1. Como o autor descreve os três mundos (primeiro, segundo e terceiro) e o que essa visão sugere
+                    sobre
+                    as diferenças entre eles?</h3>
+                <h3>2. O autor critica o modelo atual de globalização. Quais são os principais problemas apontados e
+                    qual
+                    seria uma alternativa mais justa segundo ele?</h3>
+                <h3>3. De que maneira as redes geográficas são utilizadas como instrumentos de poder e controle no mundo
+                    globalizado?</h3>
+
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <hr>
+        </div>
+
+
+
+        <div class="topico ">
+
+            <h2> primeiro texto </h2>
+
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+
+
+
+
+
+
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <hr>
+
+
+        </div>
+
+
+
+
+
+        <div class="topico w3-container w3-padding-16">
+            <p class="caixa">Escolha a alternativa correta:</p>
+
+            <h4>Pergunta 1</h4>
+
+            <div id="questao1">
+                <p>
+                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
+                    <label>
+                        Errado
+                    </label>
+                </p>
+                <p>
+                    <input class="w3-radio" type="radio" name="pergunta1" value="correto">
+                    <label>
+                        Correta
+                    </label>
+                </p>
+                <p>
+                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
+                    <label>
+                        Errado
+                    </label>
+                </p>
+            </div>
+
+            <!-- <button class="btnShow"
+                onclick="validarRadio(this, 'g1', 'f1', 'gl1', 'Tente revisar o conceito de território!', '1.0')">
+                Confirmar
+            </button> -->
+
+            <button class="btnShow"
+                onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'comentário aqui', '4')">
+                Confirmar Resposta
+            </button>
+
+            <p id="resp1" class="w3-center w3-padding"></p>
+            <div class="area">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80px"
+                    height="80px" alt="globinho1">
+            </div>
+        </div>
+
+
+
+        <div class="topico">
+
+
+            <h2 id="centralizado"> As perguntas nos levam a questionar o <em>status quo</em> e a desafiar ideias
+                preestabelecidas, impulsionando o progresso e a transformação em todas as áreas do conhecimento.</h2>
+
+
+
+            <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </strong> </p>
+
+            <p><span class="primeiraLetra">R:</span>
+
+                Unde doloremque corrupti aliquam culpa et consequatur explicabo laudantium repellat sapiente.
+                Accusantium laborum aut debitis nostrum ipsum aliquid reiciendis aliquam asperiores qui!
+
+            </p>
+
+
+            <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </strong> </p>
+
+            <p><span class="primeiraLetra">R:</span>
+
+                Unde doloremque corrupti aliquam culpa et consequatur explicabo laudantium repellat sapiente.
+                Accusantium laborum aut debitis nostrum ipsum aliquid reiciendis aliquam asperiores qui!
+
+            </p>
+
+
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <br><br>
+
+
+            <hr>
+
+        </div>
+
+
+
+
+
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+
+    ProcessarResposta(this, {
+        correto: true, 
+        idFrase: 'respFinal', 
+        idGlobo: 'globinhorespFinal', 
+        classe: '', 
+        mensagem: 'O tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 4
+    });
+    
+    MostrarProximo(this);
+">Próximo</button>
+
+            <p id="respFinal"></p>
+
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="80" height="80">
+                </p>
+            </div>
+            <hr>
+        </div>
+
+
+        <div class="topico">
+
+
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+            <div class="w3-container">
+
+                <div id="id01" class="w3-modal" style="z-index: 2000;">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
+                        <div class="w3-container w3-center w3-padding-32">
+                            <span onclick="fecharModal('id01')" class="w3-button w3-display-topright">&times;</span>
+
+                            <div class="nota w3-xlarge w3-padding-16 fontePixel"></div>
+
+                            <img src="../../../fotoIndex/globinhoPe.png" width="100" class="w3-animate-bottom">
+                            <br><br>
+                            <button class="w3-button w3-green w3-round" onclick="fecharModal('id01');">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+
+            <div class="w3-row-padding">
+
+                <div class="w3-col m6 w3-margin-bottom">
+                    <div class="postit-tp9 w3-green w3-card-4 pulsar">
+                        <a href="https://www.dw.com/..." target="_blank">
+                            <span class="w3-text-white">Quase metade da população mundial vive na pobreza</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w3-col m6 w3-margin-bottom">
+                    <div class="postit-tp9 w3-blue w3-card-4 pulsar">
+                        <a href="https://www.acnur.org/..." target="_blank">
+                            <span class="w3-text-white">108,4 milhões de pessoas deslocadas à força</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w3-col m6 w3-margin-bottom">
+                    <div class="postit-tp9 w3-white w3-card-4 pulsar">
+                        <a href="https://news.un.org/..." target="_blank">
+                            <span class="w3-text-black">Fome cresce no mundo e atinge 9,8% da população</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w3-col m6 w3-margin-bottom">
+                    <div class="postit-tp9 w3-deep-orange w3-card-4 pulsar">
+                        <a href="https://cee.fiocruz.br/..." target="_blank">
+                            <span class="w3-text-white">2,2 bilhões de pessoas não têm água potável</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
+                        Bibliográficas</strong></h3>
+
+                <div class="w3-row-padding w3-margin-top">
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-green"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
+                                <p class="w3-margin-top">SANTOS, Mílton. <br><b>Por uma outra globalização</b>: do
+                                    pensamento único à consciência universal. <br>Rio de Janeiro: Record, 2000.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-blue"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-blue w3-small fontePixel">Geografia Crítica</span>
+                                <p class="w3-margin-top">SANTOS, Milton. <br><b>O espaço do cidadão</b>. <br>São Paulo:
+                                    Editora da USP, 2007.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-deep-orange"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
+                                <p class="w3-margin-top">VOGLER, Christopher. <br><b>A jornada do escritor</b>. <br>Rio
+                                    de
+                                    Janeiro: Nova Fronteira, 2006.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-indigo"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-indigo w3-small fontePixel">Documento Oficial</span>
+                                <p class="w3-margin-top">BRASIL. Ministério da Educação. <br><b>Base Nacional Comum
+                                        Curricular</b>. <br>Brasília: MEC/Secretaria de Educação Básica, 2018.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+
+    </main>
+
+
+
+
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+    <!-- Footer -->
+
+    <div id="footer-placeholder"></div>
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <script>
+    window.addEventListener('load', () => {
+        // 1. Recupera o nome para as mensagens
+        const nomeSalvo = localStorage.getItem("duvid_nome");
+        if (nomeSalvo) {
+            nomeEstudante = nomeSalvo; 
+        }
+
+        atualizarInterface();
+        injetarMetadadosAula();
+
+        // 2. Verifica conclusão com a nova lógica de ID
+        const params = new URLSearchParams(window.location.search);
+        const aulaID = params.get('id'); 
+        
+        if (aulaID && localStorage.getItem("concluido_texto_" + aulaID) === "true") {
+            console.log("Modo Revisão: Este texto já foi lido anteriormente.");
+            // Aqui você pode até injetar um aviso visual na tela: "Você já leu este material"
+        }
+    });
+</script>
+
+</body>
+
+</html>

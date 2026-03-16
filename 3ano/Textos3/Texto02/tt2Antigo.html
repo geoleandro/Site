@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 02 </title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 02 - A população no mundo</h1>
+
+
+        <p><strong> Conteúdo:</strong> Conceito de demografia: taxas de mortalidade, natalidade e fecundidade. Transição
+            demográfica. Estrutura etária. Teorias populacionais e mudanças socioeconômicas.
+        </p>
+
+        <p><strong>Objetivo:</strong> Entender e aplicar os principais conceitos da demografia: taxas de mortalidade,
+            natalidade e fecundidade, transição demográfica, teorias demográficas e estrutura da população.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada conhecemos a arquitetura da globalização e uma visão
+            atual sobre a dinâmica do mundo.
+        </p>
+
+
+        <p>Nesta aula, veremos como a população mundial se movimenta e quais são as principais questões envolvendo sua
+            distribuição pelo globo terrestre. </p>
+
+        <p>A compreensão das dinâmicas populacionais é um pilar essencial para desvendar os desafios e oportunidades que
+            moldam o nosso mundo.</p>
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+        <div class="w3-pale-yellow">
+            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+
+            <h3>1. Explique o conceito de Revolução Demográfica e como ela impactou o crescimento populacional mundial.
+            </h3>
+            <h3>2. O que é a explosão demográfica e quais fatores a impulsionaram?</h3>
+            <h3>3. Analise como a transição demográfica reflete a evolução de uma sociedade agrária para uma urbana-industrial, destacando seu impacto no crescimento vegetativo</h3>
+            <h3>4. Compare a taxa de natalidade e a taxa de fecundidade. Qual a importância de cada uma para os estudos
+                demográficos?</h3>
+            <h3>5. Por que a mortalidade infantil é um importante indicador da qualidade de vida em uma sociedade?</h3>
+            <h3>6. O que a teoria de Thomas Malthus previa sobre o crescimento populacional? Essa previsão se
+                concretizou?</h3>
+            <h3>7. Quais são as principais diferenças na dinâmica populacional entre países desenvolvidos e países em
+                desenvolvimento?</h3>
+            <h3>8. Quais desafios as sociedades enfrentam devido ao envelhecimento populacional?</h3>
+            <h3>9. Como a migração influencia a distribuição da população pelo mundo?</h3>
+            <h3>10. Por que as taxas de fecundidade estão diminuindo globalmente? Quais fatores explicam essa mudança?
+            </h3>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Evolução da População Mundial: Fases e Dinâmicas </h2>
+
+        <h3>O Período de Crescimento Lento</h3>
+
+        <p>Até o século XVIII, a população global apresentava um crescimento demográfico modesto, atingindo a marca de
+            aproximadamente 1 bilhão de habitantes apenas por volta de 1800. Esse ritmo lento era reflexo do
+            equilíbrio demográfico primitivo, caracterizado por altas taxas de natalidade compensadas por taxas
+            de mortalidade igualmente elevadas.</p>
+
+        <p>Fatores como a precariedade das condições sanitárias, a baixa eficiência da medicina da época e a ocorrência
+            frequente de epidemias e fomes cíclicas limitavam o aumento populacional. A base econômica era
+            predominantemente agrícola e dependente de variáveis climáticas, o que restringia a capacidade de
+            suporte para um crescimento acelerado.</p>
+
+
+
+        <div class="w3-margin"><img id="imagem1" src="tt02f01.png" alt="tt02f01" class="w3-mobile"><span
+                class="w3-small w3-margin-left" id="citacao1"> </span></div>
+
+        <h3>A Transição e a Revolução Demográfica</h3>
+
+        <p>A partir do final do século XVIII e durante o século XIX, o cenário iniciou uma transformação profunda com a
+            "Revolução Demográfica". Este período foi marcado pela queda acentuada das taxas de mortalidade, resultante
+            das inovações da Revolução Industrial, que trouxeram melhorias no saneamento básico e avanços na medicina
+            preventiva.</p>
+
+        <p>A redução da mortalidade, enquanto a natalidade permanecia elevada, gerou um excedente populacional
+            significativo.
+            O aumento da expectativa de vida e a urbanização crescente foram os pilares que permitiram o início de
+            uma expansão mais consistente da população mundial em escala global.</p>
+
+
+
+        <h3>A Explosão Demográfica do Século XX</h3>
+
+        <p>Ao longo do século XX, ocorreu o fenômeno conhecido como Explosão Demográfica. As taxas de natalidade
+            permaneceram altas em diversas regiões, enquanto as de mortalidade caíram drasticamente devido à difusão
+            de tecnologias médicas, vacinação em massa e melhorias na produção e distribuição de alimentos.</p>
+
+        <p>Em períodos mais recentes, o crescimento acelerado passou a ser acompanhado por novas dinâmicas sociais.
+            À medida que as sociedades se industrializavam e se urbanizavam, a entrada da mulher no mercado de trabalho
+            e o planejamento familiar começaram a reduzir os índices de fecundidade, sinalizando uma transição
+            para uma fase de estabilização populacional.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Perspectivas para o Futuro Demográfico </h2>
+
+        <p> As projeções demográficas indicam uma desaceleração no ritmo de crescimento da população mundial. Embora o
+            total de habitantes continue a aumentar nas próximas décadas, a taxa de crescimento anual tem declinado,
+            refletindo a entrada de diversos países em fases avançadas da transição demográfica. Os principais desafios
+            contemporâneos incluem o envelhecimento populacional, os fluxos migratórios internacionais e as disparidades
+            na distribuição geográfica.</p>
+
+        <div class="w3-margin"><img id="imagem2" src="tt02f02.png" alt="tt02f02" class="w3-mobile"><span
+                class="w3-small w3-margin-left" id="citacao2"> Fonte: https://www.nexojornal.com.br/grafico/2022/11/14/populacao-mundial-chega-a-8-bilhoes-segundo-a-onu</span></div>
+
+        <p> No século XXI, a dinâmica populacional apresenta uma heterogeneidade acentuada entre as regiões do globo.
+            Países desenvolvidos e alguns emergentes enfrentam os impactos socioeconômicos da redução da base da
+            pirâmide
+            etária e o aumento da longevidade. Em contrapartida, nações em desenvolvimento, especialmente na África
+            Subsaariana,
+            ainda apresentam taxas de natalidade elevadas. Esse cenário exige políticas públicas voltadas para a
+            sustentabilidade, planejamento urbano e integração de imigrantes, visando o equilíbrio entre os recursos
+            disponíveis e as necessidades das populações locais.</p>
+          
+
+
+        <h3> Análise do Crescimento Populacional: Indicadores Demográficos</h3>
+
+        <p>O estudo da demografia fundamenta-se na análise quantitativa de dados para compreender as transformações
+            sociais.
+            O crescimento populacional é mensurado por meio de indicadores específicos que permitem comparar diferentes
+            realidades e prever tendências futuras. <span
+                onclick="document.getElementById('arquipelago').style.display='block'" class="w3-yellow"
+                style="cursor:pointer;">(Acesse as fórmulas e definições aqui)</span>.
+            A seguir, exploramos os conceitos essenciais de natalidade, mortalidade e fecundidade.
+        </p>
+
+        <div id="arquipelago" class="w3-modal w3-margin-top">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-padding">
+                    <span onclick="document.getElementById('arquipelago').style.display='none'"
+                        class="w3-button w3-red w3-display-topright">&times;</span>
+
+                    <h4>Principais Indicadores Demográficos:</h4>
+
+                    <ul>
+                        <li>
+                            <strong>Taxa Bruta de Natalidade (TBN):</strong> Representa o número de nascidos vivos para
+                            cada grupo de 1.000 habitantes em um determinado ano.<br>
+                            $$TBN = \frac{\text{nº de nascidos}}{\text{população total}} \times 1.000$$
+                        </li>
+
+                        <li>
+                            <strong>Taxa Bruta de Mortalidade (TBM):</strong> Representa o número de óbitos para cada
+                            grupo de 1.000 habitantes em um determinado ano.<br>
+                            $$TBM = \frac{\text{nº de óbitos}}{\text{população total}} \times 1.000$$
+                        </li>
+
+                        <li>
+                            <strong>Taxa de Crescimento Vegetativo (TCV):</strong> É a diferença entre a natalidade e a
+                            mortalidade, expressa geralmente em porcentagem.<br>
+                            $$TCV = TBN - TBM$$
+                        </li>
+
+                        <li>
+                            <strong>Taxa de Mortalidade Infantil (TMI):</strong> Indica o número de crianças que morrem
+                            antes de completar um ano de idade para cada 1.000 nascidos vivos.<br>
+                            $$TMI = \frac{\text{óbitos menores de 1 ano}}{\text{nascidos vivos}} \times 1.000$$
+                        </li>
+
+                        <li>
+                            <strong>Taxa de Fecundidade:</strong> Estimativa do número médio de filhos que uma mulher
+                            teria ao longo de seu período reprodutivo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+            <h3><strong>Destaques Demográficos</strong></h3>
+            <h4><strong>Disparidades Globais</strong></h4>
+            <p>Apesar dos avanços globais em saúde, as desigualdades regionais permanecem críticas: uma criança nascida
+                na África
+                ainda possui uma probabilidade significativamente maior de morrer antes dos cinco anos em comparação a
+                uma
+                criança na Europa ou América do Norte.</p>
+
+            <p>Contudo, há progressos: na África, a taxa de mortalidade infantil reduziu-se drasticamente desde 1950,
+                evidenciando a eficácia de programas de saúde pública e saneamento.</p>
+
+            <p>A taxa de fecundidade global demonstra uma tendência de queda contínua: de uma média de 5 filhos por
+                mulher em 1950,
+                o índice reduziu para aproximadamente 2,3 em 2020, aproximando-se do nível de reposição populacional
+                (2,1).
+                <em>Fonte: Banco Mundial.</em>
+            </p>
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+    <div class="topico">
+
+        <h2> Natalidade, Mortalidade e Fecundidade </h2>
+
+        <p> O estudo da dinâmica populacional fundamenta-se em três indicadores principais. O primeiro é a
+            <strong>natalidade</strong>, que representa a frequência de nascimentos em uma população dentro de um
+            período determinado. Este índice é essencial para calcular o crescimento natural e entender a renovação
+            geracional de uma sociedade.</p>
+
+        <p>A <strong>fecundidade</strong> é um indicador mais específico, que estima o número médio de filhos que uma
+            mulher teria ao longo de seu período reprodutivo. Diferente da natalidade, a fecundidade reflete variáveis
+            socioeconômicas profundas, como o nível de escolaridade, o acesso a métodos contraceptivos, o custo de vida
+            urbano e a inserção da mulher no mercado de trabalho.</p>
+
+        <p>Complementando a análise, a <strong>mortalidade</strong> indica o número de óbitos em uma população em um
+            dado período. A análise dessas taxas permite aferir a eficácia das políticas de saúde pública, as condições
+            de saneamento básico e o nível de desenvolvimento socioeconômico de uma região, fatores que impactam
+            diretamente a expectativa de vida e a longevidade.</p>
+
+        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+
+            <h4><strong>Thomas Robert Malthus e a Teoria Malthusiana</strong></h4>
+
+            <p> <img src="tt02f08.png" alt="Thomas Malthus" class="w3-left w3-circle w3-margin-right"
+                    style="width:80px">
+                Thomas Robert Malthus, economista britânico do final do século XVIII, formulou uma das primeiras teorias
+                demográficas sistemáticas. Em sua obra, Malthus alertava para um desequilíbrio estrutural entre o
+                crescimento populacional e a produção de meios de subsistência, prevendo um colapso social caso o
+                crescimento não fosse controlado.</p>
+
+            <p>A teoria malthusiana sustentava que a população tendia a crescer em <strong>progressão geométrica
+                    (PG)</strong>, enquanto a produção de alimentos cresceria apenas em <strong>progressão aritmética
+                    (PA)</strong>. Segundo Malthus, esse descompasso resultaria inevitavelmente em crises de fome,
+                epidemias e guerras, que atuariam como freios naturais ao excesso populacional.</p>
+
+            <p>Embora pioneira, a teoria recebeu críticas severas ao longo do tempo. Malthus subestimou o impacto das
+                inovações tecnológicas na agricultura — a chamada "Revolução Verde" — que aumentou exponencialmente a
+                produtividade do campo. Além disso, ele não previu a queda espontânea da natalidade decorrente da
+                urbanização e do desenvolvimento social, fenômenos que invalidaram suas projeções mais pessimistas no
+                longo prazo.</p>
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+
+  <div class="topico">
+
+        <h2> A Mortalidade em Foco </h2>
+
+        <p> A análise da mortalidade em escala global revela disparidades acentuadas entre diferentes regiões. Essas variações são explicadas por uma combinação de fatores históricos, níveis de desenvolvimento econômico e o acesso desigual a infraestruturas básicas. Países com sistemas de saúde consolidados e ampla cobertura de saneamento apresentam taxas significativamente menores em comparação a nações com vulnerabilidades socioeconômicas.</p>
+
+        <p>Um indicador central nesta análise é a <strong>mortalidade infantil</strong>. Este índice mede o número de óbitos de crianças menores de um ano para cada mil nascidos vivos. A mortalidade infantil é considerada um dos principais termômetros do desenvolvimento social de um país, pois reflete diretamente a qualidade da assistência pré-natal, as condições de higiene, a eficácia das campanhas de vacinação e o estado nutricional da população.</p>
+
+        <div class="w3-margin"><img id="imagem4" src="tt02f04.png" alt="Gráfico de Mortalidade Infantil" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao4"> </span>
+        </div>
+
+        <h3> Esperança de Vida ao Nascer</h3>
+
+        <p> A <strong>esperança de vida ao nascer</strong>, ou longevidade média, é um indicador estatístico que projeta o número médio de anos que se espera que um recém-nascido viva, mantidas as taxas de mortalidade observadas no momento de seu nascimento. Este índice sintetiza as condições gerais de vida de uma população, conectando avanços na medicina, segurança pública e qualidade ambiental.</p>
+
+        <p> O aumento global da expectativa de vida nas últimas décadas é resultado direto da expansão da saúde pública e de inovações biotecnológicas. No entanto, as desigualdades socioeconômicas criam contrastes profundos: enquanto países desenvolvidos atingem médias superiores a 80 anos, regiões em conflito ou com extrema pobreza apresentam números consideravelmente inferiores, evidenciando o impacto do meio social na biologia humana.</p>
+
+        
+
+        <h3>Crescimento Vegetativo e Crescimento Real </h3>
+
+        <p>A dinâmica demográfica de um local é definida inicialmente pelo <strong>crescimento vegetativo</strong> (ou natural). Este conceito representa a diferença entre a taxa de natalidade e a taxa de mortalidade. O crescimento é positivo quando nascem mais pessoas do que morrem, e negativo quando o número de óbitos supera o de nascimentos, fenômeno observado atualmente em diversos países europeus e no Japão.</p>
+
+        <p>Para determinar o <strong>crescimento real</strong> (ou demográfico) de uma população, deve-se somar o crescimento vegetativo ao <strong>saldo migratório</strong> (a diferença entre a entrada e a saída de pessoas). A migração é influenciada por fatores de "expulsão" nos países de origem (como guerras, crises econômicas ou perseguições) e fatores de "atração" nos países de destino (como oferta de emprego, estabilidade política e direitos civis).</p>
+
+        <h3>Imigração e Emigração</h3>
+
+        <p>A <strong>imigração</strong> caracteriza-se pela entrada de indivíduos em um país ou região que não é seu local de origem, visando residência temporária ou permanente. Economicamente, a imigração pode suprir carências de mão de obra e contribuir para o dinamismo cultural, embora possa gerar debates políticos sobre integração social e soberania nacional.</p>
+
+        <p>A <strong>emigração</strong>, por outro lado, é o processo de saída do país de origem. Geralmente, ocorre em busca de melhores condições de subsistência ou segurança. O fluxo constante de emigrantes e imigrantes altera a estrutura etária das populações, influenciando diretamente a oferta de trabalhadores e o sistema de previdência social das nações envolvidas.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+    </div>
+
+   
+<div class="topico">
+
+    <h2> Modelos de Crescimento Demográfico </h2>
+
+    <p> O crescimento populacional pode ser analisado através de modelos matemáticos que descrevem como as sociedades se expandem no espaço e no tempo. O <strong>crescimento exponencial</strong> ocorre quando uma população aumenta a uma taxa constante, resultando em um salto numérico rápido em curtos períodos. Entretanto, na realidade geográfica, prevalece o <strong>crescimento logístico</strong>.</p>
+
+    
+
+    <p> O modelo logístico considera a <strong>capacidade de suporte</strong> do meio ambiente. À medida que a população se aproxima do limite de recursos disponíveis (espaço, alimento, água), o ritmo de crescimento desacelera até atingir um ponto de equilíbrio ou estabilização. Fatores como avanços tecnológicos podem elevar essa capacidade de suporte, mas os limites biofísicos do planeta permanecem como uma variável crítica.</p>
+
+    <div class="w3-margin"><img id="imagem6" src="tt02f06.png" alt="Gráfico de Crescimento Populacional" class="w3-mobile">
+        <span class="w3-small w3-margin-left" id="citacao5"> </span>
+    </div>
+
+    <h3> O Ritmo Diferenciado do Crescimento Global</h3>
+
+    <p>A distribuição do crescimento populacional é heterogênea. Países desenvolvidos encontram-se, em sua maioria, na fase final da transição demográfica, apresentando crescimento lento, nulo ou até negativo. Esse fenômeno é resultado de altos níveis de urbanização, ampla escolaridade e planejamento familiar consolidado.</p>
+
+    <p>Em contraste, muitas nações em desenvolvimento ainda apresentam taxas de crescimento elevadas. Embora a mortalidade tenha caído nessas regiões, a natalidade permanece alta devido a fatores socioeconômicos e culturais. Essa disparidade cria um cenário global onde o aumento populacional está concentrado em regiões que enfrentam maiores desafios de infraestrutura e segurança alimentar.</p>
+
+    <h3>A Transição Demográfica</h3>
+
+    <p>A <strong>Transição Demográfica</strong> é o conceito que descreve a passagem de um regime de alta natalidade e mortalidade para um regime de baixas taxas. Esse processo ocorre em quatro fases principais:</p>
+    
+    <ul>
+        <li><strong>Fase 1 (Pré-industrial):</strong> Alta natalidade e alta mortalidade (crescimento lento).</li>
+        <li><strong>Fase 2 (Explosão Demográfica):</strong> Queda brusca da mortalidade com natalidade ainda alta (crescimento acelerado).</li>
+        <li><strong>Fase 3 (Desaceleração):</strong> Queda da natalidade e estabilização da mortalidade (crescimento reduzido).</li>
+        <li><strong>Fase 4 (Estabilização):</strong> Baixa natalidade e baixa mortalidade (equilíbrio demográfico moderno).</li>
+    </ul>
+
+    
+
+    <div class="w3-margin"><img id="imagem7" src="tt02f07.png" alt="Esquema da Transição Demográfica" class="w3-mobile">
+        <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Mundo Educação. </span>
+    </div>
+
+    <h3>Estrutura Etária e o Envelhecimento Populacional</h3>
+
+    <p>Atualmente, o mundo vivencia um processo acelerado de <strong>envelhecimento populacional</strong>. Com o aumento da expectativa de vida e a queda da fecundidade, a proporção de idosos na população total cresce significativamente. Esse fenômeno gera impactos diretos na economia, exigindo reformas nos sistemas de previdência e maiores investimentos em saúde geriatra.</p>
+
+    <p>A análise da estrutura econômica de um país divide a população entre <strong>População Economicamente Ativa (PEA)</strong> — indivíduos em idade de trabalhar que estão empregados ou procurando emprego — e a população inativa (jovens e aposentados). O equilíbrio entre esses grupos é fundamental para a manutenção do dinamismo econômico e do bem-estar social.</p>
+
+    <h3>Fatores da Distribuição Populacional</h3>
+
+    <p>A ocupação humana no espaço geográfico é influenciada por <strong>fatores naturais</strong> e <strong>fator humanos</strong>. Áreas próximas a cursos d'água, vales férteis e regiões de clima temperado tendem a ser densamente povoadas (áreas ecúmenas). Por outro lado, desertos, regiões polares e cadeias montanhosas dificultam a fixação humana (áreas anecúmenas).</p>
+
+    <p>Além das condições físicas, fatores econômicos como a presença de indústrias, polos de serviços e infraestrutura de transportes determinam os principais fluxos de adensamento populacional na contemporaneidade, consolidando as grandes regiões metropolitanas globais.</p>
+
+    <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+    <hr>
+
+</div>
+
+<div class="topico">
+
+        <h2> Infográfico - Resumo</h2>
+
+
+
+    <div class="w3-margin"><img id="infograficot2" src="inforesumot2.jpg" alt="Infográfico resumo raio x da população" class="w3-mobile">
+        <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Organizado pelo autor. </span>
+    </div>
+
+        
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>Qual foi o impacto da Revolução Demográfica no crescimento populacional?</h4>
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
+            aumentou a mortalidade devido à falta de saneamento.</button>
+
+
+
+
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">reduziu
+            drasticamente a natalidade por escassez de recursos.</button>
+
+        <button class="desativar1 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'os avanços na medicina nos ajudaram muito a ter uma vida mais longa','1'); this.style.backgroundColor='lightgreen'">reduziu
+            a mortalidade devido a melhorias na higiene, impulsionando o crescimento populacional.</button>
+
+
+
+
+        <p id="resp1"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>O que descreve a transição demográfica?</h4>
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'diminuição dos nascimento e mortes é um fator de estabilização para o crescimento da população','1'); this.style.backgroundColor='lightgreen'">
+
+            mudança de altas taxas de natalidade e mortalidade para baixas taxas à medida que uma sociedade se
+            desenvolve.
+        </button>
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            crescimento rápido devido à industrialização.
+        </button>
+
+
+
+
+        <button class="desativar2 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
+
+            crescimento lento devido à urbanização.
+        </button>
+
+
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <p class="caixa"> Teste seu conhecimento</p>
+
+        <h4>O que é esperança de vida ao nascer?</h4>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            a média de anos que uma pessoa vive após atingir 60 anos.
+
+        </button>
+
+
+
+
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
+
+            o período de tempo entre duas gerações de uma família.
+
+        </button>
+
+        <button class="desativar3 area p4 w3-padding w3-margin"
+            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'também chamado de expectativa de vida','1'); this.style.backgroundColor='lightgreen'">
+
+            a média de anos que um recém-nascido espera viver em uma determinada região e período.
+
+        </button>
+
+
+        <p id="resp3"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+
+
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> Ao encorajar perguntas, estamos fortalecendo o espírito investigativo e crítico dos
+            indivíduos, promovendo o pensamento autônomo e a busca constante por respostas e soluções.</h2>
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Por que em alguns lugares têm mais gente do que outros? Tipo, a Ásia é superpopulosa, enquanto a
+                Antártica quase não tem ninguém. Por que será que isso acontece?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            Boa pergunta! É bem curioso como a população é distribuída pelo mundo. A Ásia realmente se destaca,
+            sendo o continente mais populoso, com bilhões de pessoas! Isso tem a ver com vários fatores, como
+            recursos naturais, climas favoráveis em algumas regiões e tradições culturais. Por outro lado, a
+            Antártica é um caso especial. Ela é supergelada e não oferece condições de vida estáveis para a maioria
+            das pessoas. Além disso, tem um tratado internacional que restringe a ocupação humana para fins
+            científicos. É interessante pensar como esses fatores moldam a maneira como a população é distribuída
+            pelos continentes.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Eu estava lendo sobre algo chamado "transição demográfica". Parece que as populações mudam muito com
+                o tempo. O que exatamente é essa transição e o que ela nos diz sobre as sociedades?
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            A transição demográfica é uma viagem incrível no tempo das populações. Ela mostra como as taxas de
+            natalidade e mortalidade se transformam à medida que as sociedades evoluem. Sabe aquela época em que as
+            populações cresciam devagar por causa de doenças e condições precárias? Então, isso é o início da
+            transição. Conforme as nações se desenvolvem, melhoram a saúde, a higiene e a educação, a mortalidade
+            cai, fazendo a população crescer mais rápido. E aí, com mais acesso a informações e opções de vida, as
+            famílias têm menos filhos, levando a um crescimento mais controlado. É como uma história emocionante que
+            as sociedades passam, enfrentando desafios e encontrando soluções para crescer de maneira mais
+            equilibrada.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Quais as consequências do envelhecimento da população? Por que isso está acontecendo? E quais as
+                consequências disso?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            O envelhecimento da população é algo que está chamando bastante atenção! É bem interessante como isso
+            acontece. Com o avanço da medicina e melhores condições de vida, as pessoas estão vivendo mais. E isso é
+            ótimo, certo? Só que tem um efeito colateral curioso: a proporção de pessoas idosas está aumentando.
+            Isso acontece porque as taxas de natalidade estão diminuindo em muitos lugares, então temos mais pessoas
+            vivendo por mais tempo. Isso pode afetar a economia, a seguridade social e até mesmo a dinâmica das
+            famílias. Imagina, é como se tivéssemos que repensar algumas coisas para garantir que as pessoas idosas
+            tenham qualidade de vida, já que elas serão uma parte cada vez mais importante da população.
+
+
+        </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+        <br><br>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','7');this.style.display='none'">Proximo</button>
+
+
+        <p id="respFinal"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                    alt="globinhorespFinal" width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <span id="numero"></span>
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://www.noticiasaominuto.com/mundo/1041555/taxa-de-mortalidade-materna-no-sudao-do-sul-entre-as-mais-altas-do-mundo./"
+                    target="_blank">
+                    Taxa de mortalidade materna no Sudão do Sul entre as mais altas do mundo
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="area justificadoDireita">
+
+
+            <div class="postit-tp9 w3-pink ">
+
+                <a href="https://www.bbc.com/portuguese/geral-63628547" target="_blank">
+                    <span class="w3-text-white">Onde estão concentrados os 8 bilhões de habitantes da Terra</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="area justificadoEsquerda">
+
+
+            <div class="postit-tp9 w3-orange ">
+
+                <a href="https://www.bbc.com/portuguese/geral-46149577" target="_blank">
+                    <span class="w3-text-white">Quase metade dos países tem nascimentos insuficientes para evitar
+                        declínio da população</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+        <p>CANDELORI, Roberto. <strong>Enciclopédia do Estudante</strong>: geografia geral. São Paulo: Moderna, 2008.
+        </p>
+
+        <p>SANTOS, Milton. <strong>O espaço do cidadão</strong>. São Paulo: Editora da Universidade de São Paulo, 2008.
+        </p>
+
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+        // function myFunction(id) {
+        //     var x = document.getElementById(id);
+        //     if (x.className.indexOf("w3-show") == -1) {
+        //         x.className += " w3-show";
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-green", "w3-lightgrey");
+        //     } else {
+        //         x.className = x.className.replace(" w3-show", "");
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-lightgrey", "w3-green");
+        //     }
+        // }
+
+
+        // function openModal(id, event) {
+        //     event.preventDefault();
+        //     // Obter todas as divs com a classe "content"
+        //     var divs = document.getElementsByClassName("content");
+
+        //     // Percorrer todas as divs
+        //     for (var i = 0; i < divs.length; i++) {
+        //         // Se a div atual for a div com o id passado como parâmetro, mostrar a div
+        //         if (divs[i].id === id) {
+        //             divs[i].style.display = "block";
+        //         } else { // Caso contrário, esconder a div
+        //             divs[i].style.display = "none";
+        //         }
+        //     }
+
+        //     console.log("ID do elemento:", id);
+        // }
+
+
+
+
+        // function closeModal() {
+
+
+
+        //     var contents = document.getElementsByClassName("content");
+        //     for (var i = 0; i < contents.length; i++) {
+        //         contents[i].style.display = "none";
+        //     }
+
+
+
+        // }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 12);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

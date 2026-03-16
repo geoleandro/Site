@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+
+
+    <title>Questões modelo p0</title>
+
+
+
+    <style>
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom topico" style="max-width:750px">
+
+        <div class="w3-light-grey w3-round-xlarge w3-margin-top" style="height:12px;">
+            <div id="barra-progresso-simulado" class="w3-container w3-green w3-round-xlarge"
+                style="width:0%; height:12px; transition: 0.5s"></div>
+        </div>
+
+        <div id="container-questao" class="w3-animate-right">
+        </div>
+
+        <div id="barra-feedback" class="w3-bottom w3-container w3-padding-24 w3-animate-bottom w3-hide"
+            style="z-index:1001">
+            <div class="w3-content" style="max-width:750px">
+                <h3 id="feedback-msg"></h3>
+                <p id="feedback-txt"></p>
+                <button onclick="proxima()" class="w3-button w3-right w3-white w3-round-large">CONTINUAR</button>
+            </div>
+        </div>
+
+        <div id="resultado-final" class="w3-hide w3-center w3-padding-32">
+            <h2 class="fontePixel">Questões Concluídas!</h2>
+            <img src="../../../fotoIndex/globinhoPe.png" width="150" class="w3-margin">
+            <p id="placar-final" class="w3-xlarge"></p>
+            <button class="w3-button w3-blue w3-round-large" onclick="location.href='/home.html'">Voltar para
+                Home</button>
+        </div>
+    </main>
+
+
+
+
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+    <!-- Footer -->
+
+    <div id="footer-placeholder"></div>
+
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+    <script>
+        // --- INICIALIZAÇÃO DA AULA (ALTA PERFORMANCE) ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Recupera o nome imediatamente para evitar o "Estudante" genérico
+            const nomeSalvo = localStorage.getItem("duvid_nome");
+            if (nomeSalvo) {
+                nomeEstudante = nomeSalvo;
+            }
+
+            // 2. Injeta Título e Placar antes das imagens carregarem
+            // atualizarInterface();
+            // injetarMetadadosAula();
+
+            // 3. Verifica Modo Revisão
+            const path = window.location.pathname;
+            const aulaID = path.startsWith('/') ? path.substring(1) : path;
+
+            if (localStorage.getItem("concluido_" + aulaID) === "true") {
+                console.log("Modo Revisão Ativado.");
+                // Opcional: Você pode colocar um aviso visual de "Aula Concluída" aqui
+            }
+        });
+    </script>
+
+</body>
+
+</html>

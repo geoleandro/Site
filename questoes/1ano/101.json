@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "ano": "ENEM 2024",
+    "imagem_apoio": "1ano/img/101_q1.png",
+    "pergunta": "Questão com tudo (Imagem e Ajuda):",
+    "alternativas": ["a", "b", "c", "d", "e"],
+    "correta": 0,
+    "comentario": "Explicação completa.",
+    "ajuda": { "texto": "Dica importante!" }
+  },
+  {
+    "id": 2,
+    "ano": "FUVEST",
+    "pergunta": "Questão simples (Sem imagem e Sem ajuda):",
+    "alternativas": ["Sim", "Não"],
+    "correta": 1,
+    "comentario": "O script não vai dar erro aqui.",
+     "ajuda": { "texto": "Dica importante!", "imagem": "1ano/img/102_q1.png" }
+  },
+  {
+    "id": 3,
+    "ano": "ENEM 2023",
+    "imagem_apoio": "1ano/img/103_q1.png",
+    "pergunta": "Questão com imagem (Sem ajuda):",
+    "alternativas": ["a", "b", "c", "d", "e"],
+    "correta": 2,
+    "comentario": "Explicação completa.",
+     "ajuda": { "texto": "Dica importante!", "imagem": "1ano/img/103_q1.png" }
+  }
+
+  
+]

@@ -1,0 +1,144 @@
+/* Container da Trilha */
+.trilha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+    /* Fundo com textura ou cor suave */
+    background-color: #f7f7f7;
+}
+
+/* O Caminho Sinuoso (A Linha) - FORÇAR PARA O FUNDO */
+.trilha-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px; /* Ajustei a largura para parecer uma trilha */
+    background: #e5e5e5;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Valor baixo para ficar atrás */
+    border-radius: 30px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Ajuste dos Cards (Ícones) */
+/* Ajuste das Colunas - PRECISA DE POSITION PARA O Z-INDEX FUNCIONAR */
+.column {
+    flex: none !important;
+    width: 220px !important;
+    margin-bottom: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; /* MAIOR que o da linha (1) */
+    transition: transform 0.3s ease;
+    overflow: visible !important;
+}
+
+/* --- A MÁGICA DA SINUOSIDADE (S-Curve) --- */
+/* Substituímos o translateX direto por uma variável para não quebrar o layout */
+.column:nth-child(6n+1) { transform: translateX(0); }
+.column:nth-child(6n+2) { transform: translateX(-70px); }
+.column:nth-child(6n+3) { transform: translateX(-110px); }
+.column:nth-child(6n+4) { transform: translateX(0); }
+.column:nth-child(6n+5) { transform: translateX(80px); }
+.column:nth-child(6n+6) { transform: translateX(120px); }
+
+/* Estilo do Círculo do Personagem/Aula */
+/* Wrapper da imagem - O zoom agora é separado do deslocamento */
+/* Wrapper da imagem - O segredo para parar de tremer é o isolamento */
+/* Wrapper da imagem (A bolinha) */
+.wrapper {
+    width: 110px;
+    height: 110px;
+    border-radius: 50% !important;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 0 #d0d0d0;
+    background: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 10; /* Garante que a bolinha esteja bem à frente */
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* O Zoom agora é independente do deslocamento da coluna */
+.wrapper:hover {
+    transform: scale(1.15); 
+    box-shadow: 0 4px 0 #bbb;
+}
+/* Adicionando Personagens Aleatórios (Elementos Decorativos) */
+.column::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Exemplo: Um personagem aparece na esquerda da aula 3 */
+.column:nth-child(3)::after {
+    background-image: url('../fotoIndex/globinhoPe.png');
+    left: -100px;
+    top: -20px;
+}
+
+/* Exemplo: Uma árvore ou elemento geográfico na direita da aula 7 */
+.column:nth-child(7)::after {
+    background-image: url('../fotoIndex/imagensCapa/fotoperfil.jpg');
+    right: -120px;
+    top: 0;
+}
+
+/* Posicionamento do Menu de Escolha */
+.menu-escolha {
+    position: absolute;
+    bottom: 115%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    width: 320px;
+    border-radius: 20px;
+    padding: 15px;
+    z-index: 9999 !important; /* Valor altíssimo para nada cobrir o menu */
+    border: 3px solid #4CAF50;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Seta do menu apontando para baixo */
+.menu-escolha::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #4CAF50 transparent transparent transparent;
+}
+
+/* Remove qualquer trava de overflow do container pai */
+#grid-aulas {
+    overflow: visible !important;
+}
+
+.menu-escolha {
+    /* ... suas regras anteriores ... */
+    z-index: 9999 !important;
+    pointer-events: auto; /* Garante que os botões dentro sejam clicáveis */
+}
+
+/* Evita que o texto da aula suma atrás do balão */
+.column p {
+    position: relative;
+    z-index: 1;
+}

@@ -1,11 +1,10 @@
-<div class="w3-top">
+<div class="w3-top" style="z-index: 1000; left: 0; right: 0;">
     <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+
         <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large" href="#"
             onclick="AbrirNavBar(); return false;">
             <i class="fa fa-bars"></i>
         </a>
-
-
 
         <a href="/home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
 
@@ -20,8 +19,6 @@
             </div>
         </div>
 
-
-        
         <a href="/paginas/instrucoes.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Instruções</a>
         <a href="/blog/blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog</a>
 
@@ -38,15 +35,26 @@
         </div>
         <a href="/paginas/creditos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Créditos</a>
 
-        <div class="w3-right" style="display: flex; align-items: center;">
-            <div class="font-controls">
-                <button id="decrease-font" class="font-btn">A-</button>
+
+
+        <div class="w3-right" style="display: flex; align-items: center; justify-content: flex-end; gap: 5px;">
+            <div id="painel-pontos" class="w3-round-large w3-green w3-card-2 w3-hide"
+                style="display: flex; align-items: center; padding: 4px 12px; margin-right: 5px;">
+                <span id="notaFixa" class="fontePixel"
+                    style="font-size: 18px; color: white; margin-right: 8px;">0.0</span>
+                <img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="globo" width="28" height="28">
+            </div>
+
+            <div class="font-controls w3-hide-small"> <button id="decrease-font" class="font-btn">A-</button>
                 <button id="increase-font" class="font-btn">A+</button>
             </div>
             <button class="w3-button w3-padding-large" id="toggle-dark-mode">
                 <i class="fa fa-moon"></i>
             </button>
+
+
         </div>
+        
     </div>
 </div>
 
@@ -81,4 +89,6 @@
     </div>
 
     <a href="/paginas/creditos.html" class="w3-bar-item w3-button w3-padding-large" onclick="AbrirNavBar()">Créditos</a>
+
+
 </div>

@@ -200,24 +200,6 @@ function MostrarFrase(idFrase, idGlobinho, desativar, mensagem, qtdNota) {
 
 
 
-//Mostra a nota no final da aula
-function mostrarNota() {
-    const notaThreshold = 6;
-    const notaElements = document.getElementsByClassName("nota");
-    const message = nota >= notaThreshold
-        ? `Parabéns ${nomeEstudante}, você ganhou ${nota} globinhos e completou sua lição!`
-        : `${nomeEstudante}, você não completou sua lição, pois conseguiu apenas ${nota} globinho(s). Tente novamente.`;
-    const audio = nota >= notaThreshold ? "../notaFinal.mp3" : "../notaFinal2.mp3";
-
-    for (let i = 0; i < notaElements.length; i++) {
-        document.getElementById('id01').style.display = "block";
-        notaElements[i].style.display = "block";
-        notaElements[i].innerHTML = message;
-        Play(audio);
-    }
-}
-
-
 
 function mostraCinza() {
 
@@ -259,12 +241,21 @@ function desativarTextos() {
     }
 }
 
-// Função para aplicar o efeito de escala de cinza em todas as imagens
-function desativarImagens() {
-    var divsImagens = document.querySelectorAll('.w3-margin img.w3-mobile');
-    for (var i = 0; i < divsImagens.length; i++) {
-        divsImagens[i].style.filter = "grayscale(100%)"; // Aplica escala de cinza
-        divsImagens[i].style.transition = "3s"; // Adiciona transição para suavizar
+
+//Mostra a nota no final da aula
+function mostrarNota() {
+    const notaThreshold = 6;
+    const notaElements = document.getElementsByClassName("nota");
+    const message = nota >= notaThreshold
+        ? `Parabéns ${nomeEstudante}, você ganhou ${nota} globinhos e completou sua lição!`
+        : `${nomeEstudante}, você não completou sua lição, pois conseguiu apenas ${nota} globinho(s). Tente novamente.`;
+    const audio = nota >= notaThreshold ? "../notaFinal.mp3" : "../notaFinal2.mp3";
+
+    for (let i = 0; i < notaElements.length; i++) {
+        document.getElementById('id01').style.display = "block";
+        notaElements[i].style.display = "block";
+        notaElements[i].innerHTML = message;
+        Play(audio);
     }
 }
 
@@ -280,6 +271,17 @@ function mostraBiblio() {
 
     }
 }
+
+// Função para aplicar o efeito de escala de cinza em todas as imagens
+function desativarImagens() {
+    var divsImagens = document.querySelectorAll('.w3-margin img.w3-mobile');
+    for (var i = 0; i < divsImagens.length; i++) {
+        divsImagens[i].style.filter = "grayscale(100%)"; // Aplica escala de cinza
+        divsImagens[i].style.transition = "3s"; // Adiciona transição para suavizar
+    }
+}
+
+
 
 
 
@@ -301,25 +303,25 @@ function RemoveBalancarGlobo() {
 }
 
 
-window.onload = function () {
+// window.onload = function () {
 
-    var elementBody = document.querySelector('body');
-    var elementBtnIncreaseFont = document.getElementById('increase-font');
-    var elementBtnDecreaseFont = document.getElementById('decrease-font');
-    // Padrão de tamanho, equivale a 100% do valor definido no Body
-    var fontSize = 100;
-    // Valor de incremento ou decremento, equivale a 10% do valor do Body
-    var increaseDecrease = 10;
+//     var elementBody = document.querySelector('body');
+//     var elementBtnIncreaseFont = document.getElementById('increase-font');
+//     var elementBtnDecreaseFont = document.getElementById('decrease-font');
+//     // Padrão de tamanho, equivale a 100% do valor definido no Body
+//     var fontSize = 100;
+//     // Valor de incremento ou decremento, equivale a 10% do valor do Body
+//     var increaseDecrease = 10;
 
-    // Evento de click para aumentar a fonte
-    elementBtnIncreaseFont.addEventListener('click', function (event) {
-        fontSize = fontSize + increaseDecrease;
-        elementBody.style.fontSize = fontSize + '%';
-    });
+//     // Evento de click para aumentar a fonte
+//     elementBtnIncreaseFont.addEventListener('click', function (event) {
+//         fontSize = fontSize + increaseDecrease;
+//         elementBody.style.fontSize = fontSize + '%';
+//     });
 
-    // Evento de click para diminuir a fonte
-    elementBtnDecreaseFont.addEventListener('click', function (event) {
-        fontSize = fontSize - increaseDecrease;
-        elementBody.style.fontSize = fontSize + '%';
-    });
-}
+//     // Evento de click para diminuir a fonte
+//     elementBtnDecreaseFont.addEventListener('click', function (event) {
+//         fontSize = fontSize - increaseDecrease;
+//         elementBody.style.fontSize = fontSize + '%';
+//     });
+// }

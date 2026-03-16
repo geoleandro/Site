@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "ano": "ENEM 2024",
+    "imagem_apoio": "3ano/img/101_q1.png",
+    "pergunta": "Questão com tudo (Imagem e Ajuda):",
+    "alternativas": ["a", "b", "c", "d", "e"],
+    "correta": 0,
+   "comentario": "<p>a) <b>Incorreta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum!FIM. </p><p>b) <b>Incorreta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum! FIM.</p><p>c) <b>Correta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum! FIM. </p><p>d) <b>Incorreta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum! FIM.</p><p>e) <b>Incorreta.</b> O uso de OGMs não reduziu.O problema da fome não está relacionado à falta de terra O problema da fome não está relacionado à falta de terra FIM. </p>",
+    "ajuda": { "texto": "Dica importante!" }
+  },
+  {
+    "id": 2,
+    "ano": "FUVEST",
+    "pergunta": "Questão simples (Sem imagem e Sem ajuda):",
+    "alternativas": ["Sim", "Não"],
+    "correta": 1,
+    "comentario": "O script não vai dar erro aqui.",
+     "ajuda": { "texto": "Dica importante!", "imagem": "3ano/img/102_q1.png" }
+  },
+  {
+    "id": 3,
+    "ano": "ENEM 2023",
+    "imagem_apoio": "3ano/img/103_q1.png",
+    "pergunta": "Questão com imagem (Sem ajuda):",
+    "alternativas": ["a", "b", "c", "d", "e"],
+    "correta": 2,
+    "comentario": "Explicação completa.",
+     "ajuda": { "texto": "Dica importante!", "imagem": "3ano/img/103_q1.png" }
+  }
+
+  
+]

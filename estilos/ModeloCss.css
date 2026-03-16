@@ -3,13 +3,33 @@
   src: url('FreePixel.woff');
 }
 
+body {
+    font-family: "Verdana", "Tahoma", "Arial", sans-serif;
+    background-color: #f1f1f1;
+    margin: 0 !important; /* Zera margens do body para a barra encostar nos cantos */
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: none !important; /* Remove o limite de 700px do body */
+    overflow-x: hidden;
+}
 
+/* O conteúdo da aula é quem fica centralizado e limitado */
+main {
+    background-color: white;
+    width: 100%;
+    max-width: 750px; /* Largura ideal de leitura */
+    margin: 80px auto 20px auto; /* 80px no topo para não ficar sob a Navbar */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
 
 
 .balancar {
   animation: shake 0.5s;
   animation-iteration-count: 1;
 }
+
 
 @keyframes shake {
   0% {
@@ -97,6 +117,7 @@
 }
 
 .area {
+  min-height: 90px;
   display: flex;
   justify-content: center;
   margin-top: 0px;
@@ -197,21 +218,27 @@
   position: relative;
   font-family: pixel
 }
-
+/* Melhoria nos botões para parecerem clicáveis (Feedback tátil) */
 .btnShow {
-  display: block;
-  padding: 10px 15px;
-  font-size: 16px;
-  margin: 20px;
-  cursor: pointer;
-  text-align: center;
-  color: #fff;
-  background-color: #69CB60FA;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0px #999;
-  position: relative;
-  font-family: pixel
+    display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #69CB60;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 #39693b;
+    position: relative;
+    font-family: 'pixel', sans-serif;
+    transition: all 0.1s;
+}
+
+.btnShow:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #39693b;
 }
 
 .btnShow-tp1 {
@@ -355,23 +382,21 @@
   width: 33.33%;
   padding: 5px;
 }
-
+/* Estilo para o campo de entrada de nome */
 .input {
-  position: center;
-  width: 95%;
-  height: auto;
-  padding: 6px 10px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  margin: 0;
-  background-color: #f8f8f8;
-  font-size: auto;
-  resize: auto;
-  text-overflow: wrap;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  display: flex;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.input:focus {
+    border-color: #69CB60;
 }
 
 .margemDireita {
@@ -520,38 +545,36 @@
 
 #buttonA {
   display: none;
-  padding: 10px 15px;
-  margin: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #69CB60FA;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0px rgb(31, 26, 26);
-  position: relative;
-  font-family: pixel
+  padding: 12px 20px;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #69CB60;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 #39693b;
+    position: relative;
+    font-family: 'pixel', sans-serif;
+    transition: all 0.1s;
 }
 
 #buttonConfira {
-  display: block;
-  padding: 10px 15px;
-  margin: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #69CB60FA;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0px #999;
-  position: relative;
-  font-family: pixel
+ display: block;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #69CB60;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 #39693b;
+    position: relative;
+    font-family: 'pixel', sans-serif;
+    transition: all 0.1s;
 }
 
 #buttonConfira1 {
@@ -589,38 +612,24 @@
   font-family: pixel
 }
 
-.caixa {
-  font-size: 18px;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 20px;
-  background: #f89f76fa;
-  color: black;
-  font-weight: bold;
-  border: none black 0px;
-  width: 340px;
-  height: auto;
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgb(27, 27, 27);
-  font-family: pixel;
+/* Caixas de Interação (Nome, Pergunta, etc) */
+.caixa, #caixaNomeAluno {
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: center;
+    background: #f1f1f1; /* Cinza bem claro */
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #ddd;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #ccc;
+    font-family: 'pixel', sans-serif;
 }
 
-#caixaNomeAluno {
-  font-size: 18px;
-  margin: auto;
-  text-align: center;
-  background: #f89f76fa;
-  color: black;
-  font-weight: bold;
-  border: none black 0px;
-  height: auto;
-  padding: 5px;
-  width: 200px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgb(27, 27, 27);
-  font-family: pixel
-}
 
 #caixaPerguntas
 
@@ -667,16 +676,19 @@
   display: none;
   width: 320px
 }
-
+/* Título Principal - Agora em Verde Duvid com borda suave */
 #h1 {
-  line-height: normal;
-  background: #f89f76fa;
-  border-radius: 5px;
-  width: auto;
-  color: black;
-  font-weight: bold;
-  text-align: left;
-  box-shadow: 0px 0px 0px #151515 inset;
+    line-height: normal;
+    background: #69CB60; /* Verde principal */
+    border-radius: 8px;
+    width: auto;
+    color: white; /* Texto branco para melhor contraste */
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 0 #39693b; /* Sombra sólida estilo cartoon */
+    font-family: 'pixel', sans-serif;
+    margin-bottom: 30px;
 }
 
 #imagem {
@@ -721,24 +733,52 @@
   font-weight: bold;
   box-shadow: 0px 0px 0px white inset;
 }
+/* Card de Questão (Melhorado) */
+.p4 {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto !important;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 15px !important;
+    font-family: 'Arial', sans-serif; /* Texto da pergunta mais legível */
+    font-size: 16px;
+    color: #4b4b4b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 0 #e5e5e5; /* Efeito de profundidade */
+    text-align: left;
+    display: block;
+}
 
-.p4
+.p4:hover:not([disabled]) {
+    background-color: #f7f7f7;
+    border-color: #69CB60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #e5e5e5;
+}
 
-/* perguntas no meio do texto */
-  {
-  width: auto;
-  word-wrap: break-word;
-  text-align: left;
-  background: lightgrey;
-  border: solid 0.5px;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 10pt;
-  color: black;
-  font-family: Arial;
-  box-shadow: 0px 0px 0px white;
-  box-shadow: 2.5px 5px 4px #888888;
-  margin-bottom: 20px;
+.p4:active:not([disabled]) {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #e5e5e5;
+}
+
+/* Quando o botão for desativado (após o clique) */
+.p4:disabled {
+    cursor: not-allowed;
+    opacity: 1 !important;        /* NÃO deixa ficar transparente */
+    background-color: #f1f1f1 !important; /* Cor sólida de fundo */
+    color: #4b4b4b !important;    /* Cor sólida do texto */
+    border: 2px solid #ddd !important;
+}
+/* Estilo para o feedback de texto (resp1) */
+#resp1 {
+    font-family: 'pixel', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
 }
 
 #postit {
@@ -791,12 +831,24 @@
   text-decoration: underline;
 }
 
-
 #progress {
-  border-radius: 30px;
-  height: 30px;
-  width: 100%;
-  padding: 3px;
+    border-radius: 20px;
+    height: 15px;
+    width: 100%;
+    appearance: none;
+    border: none;
+    background-color: #eee;
+}
+
+#progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+#progress::-webkit-progress-value {
+    background-color: #69CB60;
+    border-radius: 20px;
+    transition: width 0.5s ease;
 }
 
 #Questione {
@@ -806,16 +858,23 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important
 }
 
-body {
-  font-family: "Verdana", "tahoma", "arial" sans-serif;
-  background-color: white;
-  padding: 15px;
-  max-width: 700px;
-  margin: 0 auto;
-  overflow-x: hidden;
-  /* impede scroll lateral */
-}
 
+
+/* Este seletor garante que o conteúdo principal (Main) 
+   fique sempre no centro e com uma largura agradável */
+
+
+/* Ajuste para telas pequenas (Mobile) */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Pequena margem lateral no celular */
+    }
+    
+    main {
+        margin: 10px 0;
+        border-radius: 0; /* Remove arredondamento no celular para ganhar espaço */
+    }
+}
 span, p {
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -951,4 +1010,313 @@ h6 {
   display: flex;
   justify-content: left;
   position: relative
+}
+
+/* Efeito de Card Acadêmico */
+.w3-card-4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.w3-card-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+}
+
+.w3-card-4 p {
+    font-size: 13px; /* Um pouco menor para caber bem no card */
+    line-height: 1.4;
+    color: #444;
+}
+
+.w3-tag {
+    letter-spacing: 1px;
+}
+
+/* --- COMPATIBILIDADE DARK MODE PARA AULAS --- */
+
+
+
+/* Ajuste do Footer injetado */
+footer i.faIcone {
+    color: white !important;
+}
+
+/* --- BLINDAGEM DO DARK MODE --- */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+/* Força os textos a ficarem brancos no modo escuro */
+body.dark-mode p, 
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4,
+body.dark-mode span,
+body.dark-mode b,
+body.dark-mode strong {
+    color: #ffffff !important;
+}
+
+/* Mantém o fundo dos tópicos escuro */
+body.dark-mode .topico, 
+body.dark-mode main {
+    background-color: #1e1e1e !important;
+    border-color: #333 !important;
+}
+
+/* Ajuste específico para a Navbar Injetada */
+body.dark-mode .w3-bar {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .w3-bar-item {
+    color: #ffffff !important;
+}
+
+/* Garante que o botão de fechar o modal não suma */
+body.dark-mode .w3-modal-content {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+/* Painel de Pontos "Slim" (Fino) */
+#painel-pontos {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(4px);
+    /* Padding reduzido: 2px em cima/baixo e 10px nas laterais */
+    padding: 2px 10px !important; 
+    /* Margem zero para não esticar a Navbar */
+    margin: 0 10px 0 0 !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Bordas bem arredondadas estilo pílula */
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    height: 32px; /* Altura fixa para garantir que a barra não engorde */
+}
+
+/* Ajuste do número dentro do painel */
+#notaFixa {
+    font-size: 16px !important; /* Diminuído levemente */
+    margin-right: 5px !important;
+    line-height: 1 !important;
+}
+
+/* Ajuste do globinho dentro do painel */
+#imagem50 {
+    width: 22px !important; /* Globinho menor para caber na barra fina */
+    height: 22px !important;
+    margin: 0 !important;
+}
+
+/* Ajuste da Navbar para não ter altura mínima excessiva */
+.w3-bar {
+    display: flex;
+    align-items: center;
+    min-height: 48px; /* Altura padrão elegante */
+}
+
+@media (max-width: 400px) {
+    #imagem50 { width: 20px; height: 20px; }
+    #notaFixa { font-size: 16px; }
+}
+
+/* Garante que botões dentro de modais NUNCA fiquem com cursor de bloqueio */
+.w3-modal-content button, 
+.w3-modal-content span {
+    cursor: pointer !important;
+}
+
+
+
+
+
+/* Força o cursor de clique em todos os botões do modal */
+#id01 .w3-button, 
+#id01 button {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    z-index: 10001 !important;
+}
+
+/* Remove qualquer bloqueio vindo de classes de "desativar" */
+#id01 .w3-button:disabled,
+#id01 button:disabled {
+    cursor: pointer !important;
+    opacity: 1 !important;
+}
+
+/* Garante que o modal seja a camada mais alta do site */
+.w3-modal {
+    z-index: 99999 !important;
+}
+
+  .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Container principal limitado a 800px para não perder qualidade */
+        .hq-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* Divide em 6 partes para dar precisão */
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 10px;
+        }
+
+        .hq-grid img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #000;
+            display: block;
+        }
+
+        /* CLASSE PARA 3 QUADROS POR LINHA (Padrão) */
+        .tres-por-linha {
+            grid-column: span 2;
+        }
+
+        /* CLASSE PARA 2 QUADROS POR LINHA (Destaque Médio) */
+        .dois-por-linha {
+            grid-column: span 3;
+        }
+
+        /* CLASSE PARA 1 QUADRO CENTRALIZADO (Grande Destaque) */
+        .centro-grande {
+            grid-column: span 6;
+            max-width: 600px;
+            /* Opcional: para não esticar demais se a imagem for vertical */
+            margin: 0 auto;
+        }
+
+        /* Media Query para dispositivos móveis */
+        /* Estilo específico para Celular */
+        @media (max-width: 480px) {
+            .mobile-story-container {
+                display: flex;
+                flex-direction: column;
+                /* Empilha tudo */
+                width: 100%;
+                max-width: 400px;
+                /* Largura padrão de celular */
+                margin: 0 auto;
+            }
+
+            /* Classe para QUADRO ÚNICO (ocupa a largura toda) */
+            .full-width-mobile {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            /* Classe para DOIS QUADROS (lado a lado se forem pequenos, ou empilhados) */
+            /* Se os quadros tiverem muito texto, melhor empilhar mesmo em dupla */
+            .duo-mobile {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* Dois quadros pequenos lado a lado */
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* --- CORREÇÃO PARA O BOTÃO NÃO SUMIR --- */
+
+        
+
+button:disabled {
+    -webkit-print-color-adjust: exact;
+}
+
+/* No ModeloCss.css */
+.p4:disabled {
+    opacity: 1 !important; /* Essencial para as cores do JS aparecerem */
+    cursor: not-allowed;
+}
+
+/* --- AJUSTE DARK MODE PARA CAIXAS COLORIDAS --- */
+
+/* Força as caixas de destaque (como a w3-pale-yellow) a mudarem no Dark Mode */
+body.dark-mode .w3-pale-yellow, 
+body.dark-mode .w3-light-grey,
+body.dark-mode .w3-amber {
+    background-color: #2d2d2d !important; /* Cinza escuro suave */
+    color: #f5ff9e !important;           /* O seu amarelo de destaque para o texto */
+    border-left: 6px solid #f5ff9e !important; /* Mantém a bordinha de destaque */
+}
+
+/* Garante que o título H2 dentro dessas caixas também fique visível */
+body.dark-mode .topico h2 {
+    color: #ffffff !important;
+}
+
+/* --- AJUSTE DARK MODE PARA O FOOTER --- */
+body.dark-mode footer.w3-green {
+    background-color: #1a1a1a !important; /* Cinza quase preto */
+    color: #e0e0e0 !important;           /* Texto cinza claro */
+    border-top: 4px solid #4CAF50 !important; /* Mantém uma linha verde fina no topo para estilo */
+}
+
+/* Garante que os links de política e textos do footer fiquem legíveis */
+body.dark-mode footer a, 
+body.dark-mode footer p, 
+body.dark-mode footer span {
+    color: #b0b0b0 !important;
+}
+
+/* Deixa os ícones das redes sociais brancos ou verde-claro no escuro */
+body.dark-mode footer .fa-brands {
+    color: #ffffff !important;
 }
