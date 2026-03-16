@@ -5,6 +5,19 @@ const fontes = ["Tahoma", "Verdana", "Arial"];
 let tituloAulaGlobal = ""; // Variável que guardará o nome da aula
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    if (id) {
+        // O CORE agora faz todo aquele trabalho de mensagens e conferência
+        if (typeof verificarStatusAula === "function") verificarStatusAula(id);
+        if (typeof inicializarAula === "function") inicializarAula(id);
+        
+        // Segue o baile com o carregamento dos dados
+        carregarDados(id); 
+    }
+});
 
 // --- MOTOR DE NAVEGAÇÃO (A que resolve o problema do container) ---
 function MostrarProximo(botao) {
@@ -18,43 +31,36 @@ function MostrarProximo(botao) {
 
         atualizarInterface();
         addProgressBar();
-       botao.style.display = 'none';
+        botao.style.display = 'none';
     }
 }
 
 // --- MOTOR DE IDENTIFICAÇÃO ---
 function NomeAlunos(idResp, idInput) {
     const input = document.getElementById(idInput);
-    nomeEstudante = input.value.trim();
+    const nome = input.value.trim();
 
-    if (!nomeEstudante) {
+    // 1. Lógica Centralizada no Core
+    if (!DuvidDB.salvarNome(nome)) {
         input.style.backgroundColor = "#EF5959";
-        Play("audio2.mp3"); // Usando a nova lógica de áudio centralizado
+        playSom('erro'); 
         return;
     }
 
-    // Salva no navegador
-    localStorage.setItem("duvid_nome", nomeEstudante);
+    // 2. Visual: Apenas o que muda na tela
+    document.getElementById(idResp).innerHTML = `Bem-vindo(a), <b>${nome}</b>!`;
+    
+    // Esconde os elementos de entrada (você pode criar uma classe CSS .esconder { display: none; })
+    ["caixaNomeAluno", idInput, "buttonConfira"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = "none";
+    });
 
-    // NOVO: Se o painel de progresso estiver na tela, atualiza o nome nele na hora!
+    // 3. Integração com outros componentes
+    if (typeof exibirSaudacao === 'function') exibirSaudacao(nome);
+    
     const nomeNoPainel = document.querySelector('#painel-usuario b');
-    if (nomeNoPainel) {
-        nomeNoPainel.innerText = nomeEstudante;
-    }
-
-    // --- MELHORIA AQUI ---
-    // Verifica se a função exibirSaudacao existe (ela existe na Home)
-    if (typeof exibirSaudacao === 'function') {
-        exibirSaudacao(nomeEstudante);
-    } else {
-        // Caso esteja dentro de uma aula e não na home
-        document.getElementById(idResp).innerHTML = `Bem-vindo(a), <b>${nomeEstudante}</b>!`;
-        document.getElementById("caixaNomeAluno").style.display = "none";
-        input.style.display = "none";
-        document.getElementById("buttonConfira").style.display = "none";
-    }
-
-    // console.log("Nome do estudante salvo: " + nomeEstudante);
+    if (nomeNoPainel) nomeNoPainel.innerText = nome;
 }
 // Mostra a resposta correta. Deve ser colocado o nome para ser exibido na tela (resp), o id do globo, a desativação da questão e a mensagem
 
@@ -67,8 +73,19 @@ function ProcessarResposta(selecionado, config) {
     }
 
     // 1. Pontuação e Som
+    // 1. Som e Efeitos via CORE
+    if (correto) {
+        playSom('acerto');
+        dispararComemoracao();
+        DuvidDB.addGlobinhos(parseFloat(pontos) || 1.0); // Só salva no banco global se acertar
+        feedbackVisualAcerto();
+    } else {
+        playSom('erro'); // Toca o som de erro (aquele random que configuramos)
+        // Não chamamos DuvidDB.addGlobinhos aqui para não inflar o saldo global com erros
+    }
+
+    // A variável 'nota' interna do script pode continuar para o cálculo do modal final
     nota += correto ? (parseFloat(pontos) || 1.0) : 0.2;
-    Play(correto ? "audio1.mp3" : "audio2.mp3");
 
     // 2. Feedback no grupo de opções (Radios)
     document.getElementsByName(nomeGrupo).forEach(opt => {
@@ -91,19 +108,19 @@ function ProcessarResposta(selecionado, config) {
     }
 
     const frase = document.getElementById(idFrase);
-    if (frase) frase.innerHTML = `<b>${nomeEstudante || 'Estudante'}</b>, ${mensagem}`;
+    if (frase) frase.innerHTML = `<b>${nomeEstudante || 'Estudante'}</b>, ${correto ? getFraseSucesso() : mensagem}`; // <--- FRASE DINÂMICA
 
     atualizarInterface();
-    if (correto) feedbackVisualAcerto();
+
 }
 
 function aplicarEstiloResultado(el, tipo) {
     const cores = {
         correto: { bg: "#e8f5e9", border: "#69CB60", texto: "#2e7d32" },
-        errado:  { bg: "#ffebee", border: "#ef5350", texto: "#c62828" }
+        errado: { bg: "#ffebee", border: "#ef5350", texto: "#c62828" }
     };
     const c = cores[tipo];
-    
+
     el.style.backgroundColor = c.bg;
     el.style.borderColor = c.border;
     el.style.color = c.texto;
@@ -116,21 +133,9 @@ function aplicarEstiloResultado(el, tipo) {
     }
 }
 
-function feedbackVisualAcerto() {
-    const globoHeader = document.getElementById("imagem50"); // O globinho da Navbar
-    const notaHeader = document.getElementById("notaFixa");   // O número da nota na Navbar
 
-    // 1. Adiciona as classes de animação do seu CSS e do W3.CSS
-    if (globoHeader) globoHeader.classList.add("balancar");
-    if (notaHeader) notaHeader.classList.add("w3-animate-zoom");
 
-    // 2. Remove as classes após 1 segundo (1000ms)
-    // Isso é vital para que a animação possa acontecer de novo no próximo acerto!
-    setTimeout(() => {
-        if (globoHeader) globoHeader.classList.remove("balancar");
-        if (notaHeader) notaHeader.classList.remove("w3-animate-zoom");
-    }, 1000);
-}
+
 
 function validarRadio(btnConfirmar, nomeGrupo, idFrase, idGlobo, msg, pts) {
     // Busca qual rádio do grupo está marcado
@@ -149,7 +154,8 @@ function validarRadio(btnConfirmar, nomeGrupo, idFrase, idGlobo, msg, pts) {
         idFrase: idFrase,
         idGlobo: idGlobo,
         nomeGrupo: nomeGrupo,
-        mensagem: ehCorreto ? "Exato! Você acertou." : msg,
+        // MUDANÇA AQUI: Chamamos a função do Core sem aspas
+        mensagem: ehCorreto ? getFraseSucesso() : msg,
         pontos: pts
     });
 
@@ -180,31 +186,28 @@ function addProgressBar() {
 
 
 
-
-
 function mostraCinza() {
-    // 1. IDENTIFICAÇÃO DO ID (Lógica Sênior para pegar o ID da URL ou do arquivo)
+    // 1. IDENTIFICAÇÃO DO ID (Mantendo sua lógica sênior)
     const params = new URLSearchParams(window.location.search);
     let aulaID = params.get('id');
 
-    // Caso não tenha ?id= na URL, tentamos extrair do nome do arquivo (ex: tp1.html -> 1)
     if (!aulaID) {
         const nomeArquivo = window.location.pathname.split('/').pop();
         const numero = nomeArquivo.replace(/\D/g, "");
         const path = window.location.pathname;
-        
+
         if (path.includes("1ano")) aulaID = 100 + parseInt(numero);
         else if (path.includes("2ano")) aulaID = 200 + parseInt(numero);
         else if (path.includes("3ano")) aulaID = 300 + parseInt(numero);
     }
 
-    const chaveStorage = "concluido_texto_" + aulaID;
+    // 2. TRAVA DE SEGURANÇA (Usando a lógica centralizada)
+    const jaConcluiu = localStorage.getItem(`concluido_texto_${aulaID}`) === "true";
 
-    // 2. TRAVA DE SEGURANÇA
-    if (localStorage.getItem(chaveStorage) === "true") {
+    if (jaConcluiu) {
         console.log("Modo Revisão: Texto " + aulaID + " já lido.");
-        mostrarNota();
-        return; 
+        mostrarNota(); // Abre o modal direto, mas sem dar novos pontos
+        return;
     }
 
     // 3. FLUXO NORMAL (Primeira vez que lê)
@@ -215,13 +218,13 @@ function mostraCinza() {
     desativarImagens();
     atualizarInterface();
 
-    // 4. SALVA COM A NOVA CHAVE PADRONIZADA
+    // 4. SALVA USANDO O CORE
     if (aulaID) {
-        localStorage.setItem(chaveStorage, "true");
-        console.log("Conclusão de texto registrada: " + chaveStorage);
+        DuvidDB.salvarConclusao(aulaID, 'texto');
+        // Se quiser dar pontos fixos pela leitura completa:
+        DuvidDB.addGlobinhos(5);
     }
 }
-
 
 
 
@@ -259,38 +262,45 @@ function desativarTextos() {
 // --- DENTRO DA FUNÇÃO mostrarNota ---
 function mostrarNota() {
     const notaThreshold = 6;
-    const notaElements = document.querySelectorAll(".nota"); // Usar querySelectorAll é mais seguro
+    const notaElements = document.querySelectorAll(".nota");
     const modal = document.getElementById('id01');
-    
+
     if (!modal) {
         console.error("Erro: Modal id01 não encontrado no HTML!");
         return;
     }
 
+    // 1. Identifica a aula para salvar a conclusão no Core
     const path = window.location.pathname;
-    const aulaID = path.startsWith('/') ? path.substring(1) : path;
-    
-    // IMPORTANTE: Só consideramos revisão se o registro já existia ANTES desta sessão
-    // Mas para exibir a nota, vamos focar no resultado atual
-    const jaConcluiuAntes = localStorage.getItem("concluido_" + aulaID) === "true";
+    const aulaID = path.split('/').pop().replace('.html', ''); // Pega só o nome do arquivo, ex: "tp1"
 
-    const message = nota >= notaThreshold
-        ? `Parabéns <b>${nomeEstudante || 'Estudante'}</b>, você ganhou ${nota.toFixed(1)} globinhos!`
-        : `<b>${nomeEstudante || 'Estudante'}</b>, você conseguiu ${nota.toFixed(1)} globinho(s). Tente revisar!`;
+    // 2. Define se o aluno passou ou não
+    const passou = nota >= notaThreshold;
 
-    const somFinal = nota >= notaThreshold ? "notaFinal.mp3" : "notaFinal2.mp3";
+    // 3. Monta a mensagem dinamicamente
+    // Se passou, usamos uma frase de sucesso do Core + a nota
+    const message = passou
+        ? `<b>${getFraseSucesso()}</b><br>Você conquistou ${nota.toFixed(1)} globinhos!`
+        : `<b>${nomeEstudante || 'Estudante'}</b>, você conseguiu ${nota.toFixed(1)} globinhos. Tente revisar para ganhar mais!`;
 
-    // Exibe o Modal
+    // 4. Executa as ações do CORE (Som, Confete e Gravação)
+    playSomFinal(passou); // Aquela função que criamos com notaFinal.mp3 e notaFinal2.mp3
+
+    if (passou) {
+        dispararComemoracao(); // Solta um dos 10 efeitos de confete
+        DuvidDB.salvarConclusao(aulaID, 'texto'); // Marca como concluído no LocalStorage
+        // Opcional: DuvidDB.addGlobinhos(nota); // Se quiser somar a nota final ao saldo global agora
+    }
+
+    // 5. Interface: Exibe o Modal e injeta o texto
     modal.style.display = "block";
-
-    // Injeta a mensagem em todos os elementos de classe 'nota'
     notaElements.forEach(el => {
         el.innerHTML = message;
-        el.style.display = "block"; // Garante que o texto apareça
+        el.style.display = "block";
     });
 
-    // Toca o som (opcional: travar se quiser silêncio na revisão)
-    Play(somFinal);
+    // 6. Atualiza o saldo na tela (se houver o contador de globinhos no topo)
+    if (typeof atualizarInterface === "function") atualizarInterface();
 }
 
 
@@ -326,18 +336,6 @@ function desativarImagens() {
 
 
 
-//audio acerto
-function Play(nomeArquivo) {
-    const audio = new Audio();
-
-    // IMPORTANTE: O '/' no início garante que ele busque na raiz, 
-    // não importa em qual subpasta o aluno esteja.
-    audio.src = "/audios/" + nomeArquivo;
-
-    audio.play().catch(erro => {
-        console.warn("Não foi possível tocar o áudio: " + nomeArquivo, erro);
-    });
-}
 
 function atualizarInterface() {
     const notaDisplay = document.getElementById("notaFixa");
@@ -356,7 +354,7 @@ function atualizarInterface() {
 
 
 function exibirSaudacao(nome) {
-   const container = document.getElementById('container-login');
+    const container = document.getElementById('container-login');
     if (!container) return;
 
     const nomeSalvo = localStorage.getItem("duvid_nome");
@@ -374,7 +372,7 @@ function exibirSaudacao(nome) {
         container.style.display = "block"; // Liga a div já com a saudação
     } else {
         // CASO B: Não tem nome. Apenas liga o formulário original que já está lá
-        container.style.display = "block"; 
+        container.style.display = "block";
         console.log("Aluno novo: formulário de identificação ativado.");
     }
 }
@@ -404,12 +402,12 @@ async function injetarMetadadosAula() {
         const aulaDados = aulas.find(a => a.linkTexto.includes(aulaArquivo));
 
         if (aulaDados) {
-        tituloAulaGlobal = aulaDados.titulo; // SALVA NA VARIÁVEL GLOBAL
-        
-        const tituloH1 = document.getElementById('h1');
-        if (tituloH1) tituloH1.innerText = tituloAulaGlobal;
-        
-        document.title = `Duvid - ${tituloAulaGlobal}`;
+            tituloAulaGlobal = aulaDados.titulo; // SALVA NA VARIÁVEL GLOBAL
+
+            const tituloH1 = document.getElementById('h1');
+            if (tituloH1) tituloH1.innerText = tituloAulaGlobal;
+
+            document.title = `Duvid - ${tituloAulaGlobal}`;
 
             // Injeta na descrição (se houver um ID para isso)
             const desc = document.getElementById('descricao-aula');

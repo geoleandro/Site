@@ -9,9 +9,9 @@ async function carregarAulas(ano) {
 
         if (grid) {
             grid.innerHTML = aulas.map(aula => {
-                // --- NOVA LÓGICA DE VERIFICAÇÃO ---
+               // --- PADRONIZAÇÃO TOTAL AQUI ---
                 const leuTexto = localStorage.getItem("concluido_texto_" + aula.id) === "true";
-                const fezQuestoes = localStorage.getItem("duvid_" + aula.id + "_questoes") === "true";
+                const fezQuestoes = localStorage.getItem("concluido_questoes_" + aula.id) === "true";
 
                 const concluidaTotal = leuTexto && fezQuestoes;
                 const concluidaParcial = leuTexto || fezQuestoes;
@@ -83,34 +83,82 @@ async function carregarAulas(ano) {
 
 
 // ATUALIZE TAMBÉM A CONTAGEM NO PROGRESSO GLOBAL
+// VERSÃO COMPACTA DO PROGRESSO GLOBAL
 function mostrarProgressoGlobal(aulas, ano) {
     const painel = document.getElementById('painel-usuario');
     if (!painel) return;
 
-    const nome = localStorage.getItem("duvid_nome") || "Estudante";
+    let nome = "Estudante";
+    let globinhosTotal = 0;
 
-    // Agora só conta como aula concluída se o Texto E as Questões estiverem prontos
-    const concluidasNoAno = aulas.filter(aula =>
-        localStorage.getItem("concluido_texto_" + aula.id) === "true" &&
-        localStorage.getItem("duvid_" + aula.id + "_questoes") === "true"
-    ).length;
+    try {
+        if (typeof DuvidDB !== 'undefined') {
+            nome = DuvidDB.getNome() || "Estudante";
+            globinhosTotal = DuvidDB.getGlobinhos();
+        } else {
+            nome = localStorage.getItem("duvid_nome") || "Estudante";
+            globinhosTotal = parseFloat(localStorage.getItem("duvid_globinhos")) || 0;
+        }
+    } catch (e) {
+        nome = localStorage.getItem("duvid_nome") || "Estudante";
+        globinhosTotal = parseFloat(localStorage.getItem("duvid_globinhos")) || 0;
+    }
 
     const totalAulasAno = aulas.length;
-    const porcentagem = Math.round((concluidasNoAno / totalAulasAno) * 100) || 0;
+    const concluidasNoAno = aulas.filter(aula => {
+        const texto = localStorage.getItem("concluido_texto_" + aula.id) === "true";
+        const questoes = localStorage.getItem("concluido_questoes_" + aula.id) === "true";
+        return texto && questoes;
+    }).length;
+
+    const porcentagem = totalAulasAno > 0 ? Math.round((concluidasNoAno / totalAulasAno) * 100) : 0;
+    const saldoFormatado = globinhosTotal.toFixed(1);
 
     painel.innerHTML = `
-        <div class="w3-container w3-card-4 w3-light-grey w3-round-large w3-margin-bottom w3-padding-16">
-            <h4>Bem-vindo(a) de volta, <b>${nome}</b>!</h4>
-            <p>Seu progresso no <b>${ano}º Ano</b> (Aulas 100% concluídas):</p>
-            <div class="w3-grey w3-round-xlarge w3-small" style="height:20px">
-                <div class="w3-container w3-center w3-round-xlarge w3-green" 
-                     style="width:${porcentagem}%; height:20px; transition: width 1s;">
-                    ${porcentagem}%
+        <div class="w3-container w3-card-4 w3-white w3-round-large w3-margin-bottom w3-padding" 
+             style="border-left: 6px solid #4CAF50; max-width: 750px; margin: auto;">
+            
+            <div class="w3-row w3-flex" style="display: flex; align-items: center;">
+                <div class="w3-col s8">
+                    <h4 class="w3-margin-0" style="font-size: 1.1em;">Olá, <b class="w3-text-green">${nome.toUpperCase()}</b></h4>
+                    <p class="w3-tiny w3-text-grey w3-margin-0">Progresso no <b>${ano}º Ano</b></p>
+                </div>
+                <div class="w3-col s4 w3-right-align">
+                    <div class="w3-tag w3-round w3-amber w3-padding-small">
+                         <i class="fa fa-globe"></i> <b id="display-globinhos-home">${saldoFormatado}</b>
+                    </div>
                 </div>
             </div>
-            <p class="w3-small w3-margin-top">
-                Você finalizou <b>${concluidasNoAno}</b> de <b>${totalAulasAno}</b> aulas (Texto + Exercícios).
-            </p>
+
+            <div class="w3-light-grey w3-round-xlarge w3-margin-top" style="height:10px;">
+                <div class="w3-container w3-green w3-round-xlarge" 
+                     style="width:${porcentagem}%; height:10px; transition: width 1s;">
+                </div>
+            </div>
+            
+            <div class="w3-row w3-margin-bottom">
+                <div class="w3-col s6 w3-tiny">
+                    <b class="w3-text-green">${porcentagem}%</b> concluído
+                </div>
+                <div class="w3-col s6 w3-right-align w3-tiny">
+                    <b>${concluidasNoAno}/${totalAulasAno}</b> aulas
+                </div>
+            </div>
+
+            <div class="w3-row w3-center w3-border-top w3-padding-small" style="border-color: #f1f1f1 !important;">
+                <div class="w3-col s4">
+                    <i class="fa fa-trophy ${globinhosTotal >= 500 ? 'w3-text-amber' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
+                    <p style="font-size:8px; margin:0">500 pts</p>
+                </div>
+                <div class="w3-col s4">
+                    <i class="fa fa-star ${globinhosTotal >= 2000 ? 'w3-text-blue' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
+                    <p style="font-size:8px; margin:0">2k pts</p>
+                </div>
+                <div class="w3-col s4">
+                    <i class="fa fa-diamond ${globinhosTotal >= 10000 ? 'w3-text-purple' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
+                    <p style="font-size:8px; margin:0">Mestre</p>
+                </div>
+            </div>
         </div>`;
 }
 
@@ -145,49 +193,6 @@ window.onclick = function (event) {
 
 
 
-
-// Atualiza o resumo geral na Home (chamado no onload da Home)
-// function atualizarResumoHome() {
-//     const painelResumo = document.getElementById('resumo-geral');
-//     if (!painelResumo) {
-//         console.error("Painel 'resumo-geral' não encontrado no HTML!");
-//         return;
-//     }
-
-//     painelResumo.style.display = "block";
-
-//     // Defina aqui exatamente quantas aulas você tem em cada ano
-//     const totais = {
-//         "1": 15, 
-//         "2": 12,
-//         "3": 22 
-//     };
-
-//     ["1", "2", "3"].forEach(ano => {
-//         const concluidas = contarAulasConcluidas(ano);
-//         const total = totais[ano];
-//         const porc = total > 0 ? Math.round((concluidas / total) * 100) : 0;
-
-//         // Tentei usar o padrão que você usou nas mensagens de erro (1ano, 2ano...)
-//         const barra = document.getElementById(`bar-${ano}ano`);
-//         const texto = document.getElementById(`txt-${ano}ano`);
-//         const iconeConquista = document.getElementById(`conquista-${ano}ano`);
-
-//         if (barra) {
-//             barra.style.width = porc + "%";
-//             // Se quiser que a cor mude conforme o progresso:
-//             if(porc === 100) barra.className = "w3-container w3-center w3-round-xlarge w3-blue";
-//         }
-
-//         if (texto) {
-//             texto.innerText = `${concluidas}/${total}`;
-//         }
-
-//         if (iconeConquista) {
-//             iconeConquista.style.display = (concluidas >= total && total > 0) ? "block" : "none";
-//         }
-//     });
-// }
 async function atualizarResumoHome() {
     const painelResumo = document.getElementById('resumo-geral');
     if (!painelResumo) return;
@@ -201,7 +206,7 @@ async function atualizarResumoHome() {
             // Busca o arquivo JSON de cada ano (ex: aulas-1ano.json)
             const resposta = await fetch(`/js/aulas-${ano}ano.json`);
             if (!resposta.ok) throw new Error(`Erro HTTP: ${resposta.status}`);
-            
+
             const aulas = await resposta.json();
 
             // CONTAGEM AUTOMÁTICA: Filtra apenas itens válidos (não nulos)
@@ -209,8 +214,8 @@ async function atualizarResumoHome() {
             const total = aulasValidas.length;
 
             // Pega as concluídas do LocalStorage (Texto + Questão)
-            const concluidas = contarAulasConcluidas(ano); 
-            
+            const concluidas = contarAulasConcluidas(ano);
+
             const porc = total > 0 ? Math.round((concluidas / total) * 100) : 0;
 
             // Atualiza os elementos na tela
@@ -220,7 +225,7 @@ async function atualizarResumoHome() {
 
             if (barra) barra.style.width = porc + "%";
             if (texto) texto.innerText = `${concluidas}/${total}`;
-            
+
             if (iconeConquista) {
                 iconeConquista.style.display = (porc >= 100 && total > 0) ? "block" : "none";
             }
@@ -231,16 +236,13 @@ async function atualizarResumoHome() {
     }
 }
 
-
 function contarAulasConcluidas(anoPrefixo) {
     let contagem = 0;
-    // Se o ano for "1", ele testa 101, 102... até 150
-    // Se o ano for "2", ele testa 201, 202... 
     for (let i = 1; i <= 50; i++) {
         let idAula = anoPrefixo + (i < 10 ? "0" + i : i);
-
+        // ATUALIZADO PARA O NOVO PADRÃO
         const texto = localStorage.getItem("concluido_texto_" + idAula) === "true";
-        const questoes = localStorage.getItem("duvid_" + idAula + "_questoes") === "true";
+        const questoes = localStorage.getItem("concluido_questoes_" + idAula) === "true";
 
         if (texto && questoes) {
             contagem++;

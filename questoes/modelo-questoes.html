@@ -26,9 +26,12 @@
 
 
     <script src="../../../js/carregar.js" defer></script>
+    
+
     <script src="../../../js/abrirmenu.js" defer></script>
     <script src="../../../js/aulas-geral.js" defer></script>
     <script src="../../../js/jsquestoes-padrao.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
 
 
     <title>Questões modelo p0</title>
@@ -114,55 +117,7 @@
 
     </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const nomeSalvo = localStorage.getItem("duvid_nome") || "Estudante";
-        const params = new URLSearchParams(window.location.search);
-        const aulaID = params.get('id');
-
-        if (aulaID) {
-            const jaFezQuestoes = localStorage.getItem("duvid_" + aulaID + "_questoes") === "true";
-            const jaLeuTexto = localStorage.getItem("concluido_texto_" + aulaID) === "true";
-            
-            const areaAviso = document.getElementById('aviso-status');
-            if (!areaAviso) return;
-
-            let mensagem = "";
-            let cor = "w3-blue";
-            let icone = "fa-info-circle";
-
-            // LÓGICA DE MENSAGENS
-            if (jaFezQuestoes && jaLeuTexto) {
-                // TUDO PRONTO
-                mensagem = `Olá, <b>${nomeSalvo}</b>! Você já dominou esta aula. Deseja revisar as questões para fixar o conhecimento?`;
-                cor = "w3-green";
-                icone = "fa-check-circle";
-                console.log(`Aula ID: ${aulaID} | Fez questões: ${jaFezQuestoes} | Leu texto: ${jaLeuTexto}`);
-            } else if (jaFezQuestoes && !jaLeuTexto) {
-                // FEZ QUESTÃO MAS NÃO LEU O TEXTO
-                mensagem = `Parabéns pelas questões, <b>${nomeSalvo}</b>! Mas notei que você ainda não leu o texto base. Que tal dar uma lida agora?`;
-                cor = "w3-orange";
-                icone = "fa-book";
-            } else if (!jaFezQuestoes && !jaLeuTexto) {
-                // NÃO FEZ NADA AINDA
-                mensagem = `Bem-vindo! Recomendo ler o texto antes de enfrentar as questões, mas se preferir, pode começar o desafio agora!`;
-                cor = "w3-teal";
-                icone = "fa-rocket";
-            }
-
-            // Injeta o HTML se houver mensagem
-            if (mensagem) {
-                areaAviso.innerHTML = `
-                    <div class="w3-panel ${cor} w3-display-container w3-round-large w3-animate-top">
-                        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright w3-round-large">&times;</span>
-                        <p class="w3-padding-16"><i class="fa ${icone}"></i> ${mensagem}</p>
-                    </div>
-                `;
-            }
-            
-        }
-    });
-</script>
+    
 
 </body>
 

@@ -23,11 +23,16 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
-    <script src="/estilos/jstextos-padrao.js" defer></script>
-    <script src="/js/aulas-geral.js" defer></script>
 
+
+
+    <script src="/js/duvid-core.js" defer></script>
+
+    <script src="/js/aulas-geral.js" defer></script>
     <script src="/js/carregar.js" defer></script>
     <script src="/js/abrirmenu.js" defer></script>
+
+
 
 
 
@@ -65,17 +70,22 @@
                     offline!</p>
             </div>
 
-            <div class="NomeHome w3-container w3-white w3-card-2 w3-round-large w3-margin-top w3-padding-16"
-                id="container-login" style="display: block;">
-                <div id="loading-painel" class="w3-center w3-padding-16">
-                    <i class="fa fa-spinner w3-spin w3-text-green w3-xlarge"></i>
-                    <p class="w3-small w3-opacity">Carregando seu progresso...</p>
-                </div>
+            <div id="painel-usuario">
+                <div class="NomeHome w3-container w3-white w3-card-2 w3-round-large w3-margin-top w3-padding-16"
+                    id="container-login">
+                    <div id="loading-painel" class="w3-center w3-padding-16">
+                        <i class="fa fa-spinner w3-spin w3-text-green w3-xlarge"></i>
+                        <p class="w3-small w3-opacity">Carregando seu progresso...</p>
+                    </div>
 
-                <div id="form-identificacao" style="display:none;">
-                    <p class="paragrafo">Digite seu nome</p>
-                    <input class="input" type="text" id="pq0">
-                    <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar</button>
+                    <div id="form-identificacao" style="display:none;" class="w3-center">
+                        <p class="w3-large"><b>Bem-vindo ao Duvid!</b></p>
+                        <p>Para começar a ganhar globinhos, digite seu nome:</p>
+                        <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" id="pq0"
+                            style="max-width: 300px; margin: auto;">
+                        <button class="w3-button w3-green w3-round-large" onclick="NomeAlunos('resp0','pq0')"><b>COMEÇAR
+                                JORNADA</b></button>
+                    </div>
                 </div>
             </div>
 
@@ -362,32 +372,54 @@
             }
         }
 
-        document.addEventListener('DOMContentLoaded', async () => { // Voltamos com o async aqui
-            carregarFrase();
+        document.addEventListener('DOMContentLoaded', async () => {
+            // 1. Carrega a frase do dia
+            if (typeof carregarFrase === "function") carregarFrase();
 
-            const nomeSalvo = localStorage.getItem("duvid_nome");
+            // 2. Verifica identificação no Core
+            const nomeSalvo = (typeof DuvidDB !== 'undefined') ? DuvidDB.getNome() : localStorage.getItem("duvid_nome");
 
             if (nomeSalvo) {
-                if (typeof exibirSaudacao === "function") {
-                    exibirSaudacao(nomeSalvo);
+                // ALUNO EXISTENTE:
+                // O carregarAulas vai disparar o mostrarProgressoGlobal que desenha o painel novo
+                if (typeof atualizarResumoHome === "function") {
+                    await atualizarResumoHome(); // Atualiza as barrinhas de 1º, 2º e 3º ano
                 }
 
-                // AGORA SIM: Esperamos a contagem automática dos JSONs terminar
-                if (typeof atualizarResumoHome === "function") {
-                    await atualizarResumoHome();
+                // Forçamos o carregamento de uma lista de aulas (ex: do 3º ano) para gerar o painel largo
+                if (typeof carregarAulas === "function") {
+                    // Carrega o progresso do 3º ano como padrão para o painel de boas-vindas
+                    await carregarAulas('3');
                 }
+
             } else {
+                // ALUNO NOVO:
                 const loading = document.getElementById('loading-painel');
                 const form = document.getElementById('form-identificacao');
                 if (loading) loading.style.display = 'none';
                 if (form) form.style.display = 'block';
             }
         });
-        // Mantém o seu intervalo de 10 segundos para as frases
-        setInterval(carregarFrase, 10000);
-    </script>
 
-    <script>
+        // Função para capturar o nome (NomeAlunos) adaptada ao Core
+        function NomeAlunos(resp, inputId) {
+            const nome = document.getElementById(inputId).value.trim();
+            if (nome.length > 2) {
+                localStorage.setItem("duvid_nome", nome);
+                localStorage.setItem("duvid_globinhos", 0);
+                location.reload(); // Recarrega para ativar o sistema
+            } else {
+                alert("Por favor, digite um nome válido.");
+            }
+        }
+
+        setInterval(() => {
+            if (typeof carregarFrase === "function") carregarFrase();
+        }, 10000);
+
+
+
+
 
     </script>
 
