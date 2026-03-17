@@ -220,47 +220,14 @@
 	</script>
 
 	<script>
-		// --- NOVA FUNÇÃO DE SENIOR: LIMPAR PROGRESSO ---
-		// Quando o modal abrir, podemos personalizar o nome do aluno
+		// 1. Personaliza a mensagem quando a página carrega
 		document.addEventListener('DOMContentLoaded', function () {
 			const nome = localStorage.getItem("duvid_nome") || "Estudante";
 			const msg = document.getElementById("msgPersonalizada");
 			if (msg) msg.innerHTML = `Olá <b>${nome}</b>, deseja realmente apagar o histórico de aulas concluídas?`;
 		});
 
-		function executarReset() {
-			// 1. Limpa todas as chaves de progresso (Texto e Questões)
-			Object.keys(localStorage).forEach(key => {
-				// Apaga o progresso dos textos (concluido_texto_XXX)
-				// Apaga o progresso das questões (duvid_XXX_questoes)
-				// Apaga as chaves antigas (concluido_...html) se ainda existirem
-				if (key.startsWith("concluido_") || key.startsWith("duvid_") && key.endsWith("_questoes")) {
-					// Só NÃO apaga o "duvid_nome" para o aluno não ter que digitar o nome de novo
-					if (key !== "duvid_nome") {
-						localStorage.removeItem(key);
-					}
-				}
-				resetarGlobinhos();
-
-			});
-
-			// 2. Feedback visual (Mantendo o seu estilo original)
-			const modalContent = document.querySelector("#modalReset .w3-container");
-			modalContent.innerHTML = `
-        <h3 class="fontePixel w3-text-green">Sucesso!</h3>
-        <p>Tudo limpo! Agora você pode recomeçar sua jornada do zero.</p>
-        <img src="../fotoIndex/globinhoPe.png" width="80" class="w3-spin">
-        <p class="w3-small">Recarregando ambiente...</p>
-    `;
-
-			// 3. Recarrega a página após 1,5 segundos
-			setTimeout(() => {
-				location.reload();
-			}, 1500);
-		}
-
 		
-
 	</script>
 </body>
 

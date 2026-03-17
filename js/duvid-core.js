@@ -3,12 +3,20 @@
    ========================================================== */
 
 // 1. CONFIGURAÇÕES DE SOM (Global)
+// 1. Garante que a variável de sessão exista
+if (typeof window.ganhosAtuais === 'undefined') {
+    window.ganhosAtuais = 0;
+}
+
 const SONS_VITORIA = ['/audios/acerto1.mp3', '/audios/acerto2.mp3'];
 const SONS_ERRO = ['/audios/erro1.mp3', '/audios/erro2.mp3'];
 
 // Sons de encerramento (Média Boa vs Média Ruim)
 const SOM_FINAL_BOM = new Audio('/audios/notaFinal.mp3');
 const SOM_FINAL_RUIM = new Audio('/audios/notaFinal2.mp3');
+
+// Valores oficiais para o site pronto
+const MARCOS_CONQUISTAS = [110, 2000, 10000];
 
 function playSomFinal(vitoria) {
     if (vitoria) {
@@ -90,19 +98,65 @@ const DuvidDB = {
         return parseInt(localStorage.getItem(DB_CHAVE)) || 0;
     },
 
+
     addGlobinhos: function (quantidade) {
-        // Pega o valor atual e garante que seja um número
-        let atual = Number(localStorage.getItem("duvid_globinhos")) || 0;
-        let novoTotal = atual + Number(quantidade);
+        // 1. Soma no Global (Banco)
+        // Soma no banco de dados (localStorage)
+        let saldoAnterior = Number(localStorage.getItem("duvid_globinhos")) || 0;
+        let novoSaldo = saldoAnterior + Number(quantidade);
+        localStorage.setItem("duvid_globinhos", novoSaldo);
 
-        // Salva o novo total
-        localStorage.setItem("duvid_globinhos", novoTotal);
+        // 2. Soma no Local (Sessão da página atual)
+        window.ganhosAtuais += Number(quantidade);
+        console.log("Ganho na aula:", window.ganhosAtuais);
 
-        console.log(`Globinhos adicionados: ${quantidade}. Novo total: ${novoTotal}`);
+        // 3. Atualiza a tela
+        atualizarHeaderGlobinhos();
 
-        // Se estivermos em uma aula, tenta balançar o globinho da navbar
-        if (typeof feedbackVisualAcerto === "function") feedbackVisualAcerto();
+        // --- LÓGICA DO TROFÉU ---
+        // Definimos os marcos (thresholds) dos troféus
+        const marcos = MARCOS_CONQUISTAS;
+
+        // Verifica se o novo saldo ultrapassou um marco que o anterior não tinha atingido
+        const conquistouAgora = marcos.find(m => saldoAnterior < m && novoSaldo >= m);
+
+        if (conquistouAgora) {
+            console.log("🏆 TROFÉU DESBLOQUEADO!");
+            // Toca o som final bom que você já tem
+            if (typeof playSomFinal === "function") {
+                playSomFinal(true);
+            }
+            // Opcional: Solta um confetti especial se a função existir
+            if (typeof dispararComemoracao === "function") {
+                dispararComemoracao();
+            }
+
+            const notificacao = document.createElement('div');
+            notificacao.innerHTML = `
+        <div class="w3-animate-zoom w3-amber w3-card-4 w3-round-large w3-padding" 
+             style="position:fixed; top:20px; left:50%; transform:translateX(-50%); z-index:10000; text-align:center;">
+            <i class="fa fa-trophy w3-xxlarge"></i><br>
+            <b>NOVA CONQUISTA!</b><br>
+            <span class="w3-small">Você atingiu ${conquistouAgora} pontos!</span>
+        </div>
+    `;
+            document.body.appendChild(notificacao);
+
+            // Remove o aviso após 4 segundos
+            setTimeout(() => {
+                notificacao.classList.add('w3-animate-opacity');
+                setTimeout(() => notificacao.remove(), 500);
+            }, 4000);
+
+        }
+
+
+        // Atualiza a interface (Header/Painel)
+        if (typeof feedbackVisualAcerto === "function") {
+            feedbackVisualAcerto();
+        }
     },
+
 
     salvarConclusao: function (idAula, tipo) {
         localStorage.setItem(`concluido_${tipo}_${idAula}`, "true");
@@ -127,6 +181,8 @@ const DuvidDB = {
         else if (saldo >= 5000) localStorage.setItem("patente", "Geógrafo Sênior");
         else if (saldo >= 500) localStorage.setItem("patente", "Explorador");
     },
+
+
     resetarSistema: function () {
         if (confirm("Deseja zerar seu progresso e globinhos? Esta ação não pode ser desfeita.")) {
             // 1. Zera os globinhos
@@ -222,35 +278,101 @@ function atualizarGlobinhosGeral() {
     }
 }
 
-function resetarGlobinhos() {
 
-    localStorage.setItem("duvid_globinhos", 0);
+// 2. A função que realmente faz o trabalho (só roda ao clicar no botão do modal)
+function executarReset() {
+    console.log("Iniciando reset total do sistema...");
 
+    // Lista de chaves para remoção segura
+    const chavesParaRemover = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+
+        // Critérios: Progresso novo, Progresso antigo e Globinhos
+        if (
+            key.startsWith("concluido_") ||
+            (key.startsWith("duvid_") && key.endsWith("_questoes")) ||
+            key === "duvid_globinhos"
+        ) {
+            if (key !== "duvid_nome") {
+                chavesParaRemover.push(key);
+            }
+        }
+    }
+
+    // Executa a limpeza
+    chavesParaRemover.forEach(key => localStorage.removeItem(key));
+
+    // Zera explicitamente o saldo
+    localStorage.setItem("duvid_globinhos", "0");
+
+    // 3. Feedback Visual dentro do Modal
+    const modalContent = document.querySelector("#modalReset .w3-container");
+    if (modalContent) {
+        modalContent.innerHTML = `
+                <div class="w3-animate-zoom w3-center w3-padding-32">
+                    <h3 class="fontePixel w3-text-red"><b>SISTEMA REBOOTADO!</b></h3>
+                    <img src="../fotoIndex/globinhoPe.png" width="80" class="w3-spin w3-margin">
+                    <p>Limpando memórias... <b>Aguarde.</b></p>
+                </div>
+            `;
+    }
+
+    // Som de erro/reset
+    if (typeof playSom === "function") playSom('erro');
+
+    // 4. Redireciona para a Home zerada após 1.8s
+    setTimeout(() => {
+        window.location.href = "/index.html";
+    }, 1800);
 }
+
+// --- 2. Função Mestre de Interface ---
 function feedbackVisualAcerto() {
-    // 1. Pega o valor e garante que seja um número (Trata o saldo como 'saldo')
-    const saldo = Number((typeof DuvidDB !== 'undefined') ? DuvidDB.getGlobinhos() : localStorage.getItem("duvid_globinhos")) || 0;
-
-    console.log("Iniciando feedback visual. Saldo atualizado:", saldo);
-
-    // 2. Atualiza o notaFixa (Header) com o .0
     const notaFixa = document.getElementById("notaFixa");
-    if (notaFixa) {
-        notaFixa.innerText = saldo.toFixed(1); 
-        notaFixa.classList.add('w3-animate-zoom');
-        setTimeout(() => notaFixa.classList.remove('w3-animate-zoom'), 500);
-    }
-
-    // 3. Atualiza o painel da Home ou da página de aulas
     const displayHome = document.getElementById("display-globinhos-home");
-    if (displayHome) {
-        displayHome.innerText = saldo.toFixed(1);
+    const imagemGlobo = document.getElementById("imagem50");
+    const painelPontos = document.getElementById("painel-pontos"); 
+    
+    const url = window.location.href.toLowerCase();
+    const ehAula = url.includes('modelo-') || url.includes('questoes') || url.includes('texto');
+    const saldoTotal = Number(localStorage.getItem("duvid_globinhos")) || 0;
+
+    // 1. ATUALIZA VALORES E CORES
+    if (notaFixa) {
+        if (ehAula) {
+            notaFixa.innerText = (window.ganhosAtuais || 0).toFixed(1);
+            notaFixa.style.color = "#ffffff"; 
+            notaFixa.style.fontWeight = "bold";
+        } else {
+            notaFixa.innerText = saldoTotal.toFixed(1);
+            notaFixa.style.color = ""; 
+            notaFixa.style.fontWeight = "normal";
+        }
     }
 
-    // 4. Garante que o painel-pontos apareça
-    const painel = document.getElementById('painel-pontos');
-    if (painel) {
-        painel.classList.remove('w3-hide');
-        painel.style.display = 'flex';
+    if (displayHome) displayHome.innerText = saldoTotal.toFixed(1);
+
+    // 2. DISPARA AS ANIMAÇÕES INDIVIDUAIS
+    
+    // Faz o painel (número) pular
+    if (painelPontos) {
+        painelPontos.classList.remove('pulo-elastico');
+        void painelPontos.offsetWidth; // Reset da animação
+        painelPontos.classList.add('pulo-elastico');
+    }
+
+    // Faz o globinho girar
+    if (imagemGlobo) {
+        imagemGlobo.classList.remove('giro-globinho');
+        void imagemGlobo.offsetWidth; // Reset da animação
+        imagemGlobo.classList.add('giro-globinho');
     }
 }
+// --- 3. Atalhos e Inicialização ---
+function atualizarHeaderGlobinhos() {
+    feedbackVisualAcerto();
+}
+
+// Quando a página carrega, inicia zerado se for aula
+atualizarHeaderGlobinhos();

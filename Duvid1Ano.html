@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
+  <script src="/js/duvid-core.js" defer></script>
   <script src="/js/carregar.js" defer></script>
   <script src="/js/aulas-geral.js" defer></script>
   <script src="/js/abrirmenu.js" defer></script>
@@ -23,21 +23,21 @@
 
 
 <style>
-    /* Garante que o painel de progresso não fique "esmagado" */
-    #painel-usuario {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
+  /* Garante que o painel de progresso não fique "esmagado" */
+  #painel-usuario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
 
-    #painel-usuario>div {
-        min-width: 320px;
-        /* Largura mínima para mobile */
-        width: 100%;
-        max-width: 600px;
-        /* Largura máxima para desktop */
-    }
+  #painel-usuario>div {
+    min-width: 320px;
+    /* Largura mínima para mobile */
+    width: 100%;
+    max-width: 600px;
+    /* Largura máxima para desktop */
+  }
 </style>
 
 <body class="w3-light-grey">
@@ -73,27 +73,35 @@
   </main>
 
   <div id="footer-placeholder"></div>
-<script>
-        // Executa o carregamento das aulas do 3º ano
-        document.addEventListener('DOMContentLoaded', async () => {
-            // 1. Identifica o ano pela URL ou pela página (ex: 3º ano)
-            const anoPagina = "1"; // Ajuste conforme a página (1, 2 ou 3)
 
-            // 2. Carrega as aulas e desenha o painel
-            if (typeof carregarAulas === "function") {
-                await carregarAulas(anoPagina);
-            }
 
-            // 3. FORÇA A ATUALIZAÇÃO DA NOTA (O pulo do gato)
-            // Isso garante que o saldo 101.5 (ou o valor atual) apareça no painel desenhado
-            const saldoatual = (typeof DuvidDB !== 'undefined') ? DuvidDB.getGlobinhos() : localStorage.getItem("duvid_globinhos");
-            const displayHome = document.getElementById("display-globinhos-home");
 
-            if (displayHome && saldoatual) {
-                displayHome.innerText = Number(saldoatual).toFixed(1);
-            }
-        });
-    </script>
+  <script>
+    // Executa o carregamento das aulas do 3º ano
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Detecta o ano automaticamente se o nome do seu arquivo for Duvid3Ano.html, Duvid1Ano.html, etc.
+      // Ele pega o número que estiver no nome da página atual
+      const nomeArquivo = window.location.pathname;
+      const anoPagina = nomeArquivo.match(/\d+/) ? nomeArquivo.match(/\d+/)[0] : "1";
+
+      // O restante do código permanece igual...
+      if (typeof carregarAulas === "function") {
+        await carregarAulas(anoPagina);
+      }
+       
+
+   
+
+      // 3. FORÇA A ATUALIZAÇÃO DA NOTA (O pulo do gato)
+      // Isso garante que o saldo 101.5 (ou o valor atual) apareça no painel desenhado
+      const saldoatual = (typeof DuvidDB !== 'undefined') ? DuvidDB.getGlobinhos() : localStorage.getItem("duvid_globinhos");
+      const displayHome = document.getElementById("display-globinhos-home");
+
+      if (displayHome && saldoatual) {
+        displayHome.innerText = Number(saldoatual).toFixed(1);
+      }
+    });
+  </script>
 
 
 </body>

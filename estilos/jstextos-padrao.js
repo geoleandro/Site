@@ -77,7 +77,7 @@ function ProcessarResposta(selecionado, config) {
     if (correto) {
         playSom('acerto');
         dispararComemoracao();
-        DuvidDB.addGlobinhos(parseFloat(pontos) || 1.0); // Só salva no banco global se acertar
+        DuvidDB.addGlobinhos(parseFloat(pontos) || 10.0); // Só salva no banco global se acertar
         feedbackVisualAcerto();
     } else {
         playSom('erro'); // Toca o som de erro (aquele random que configuramos)
@@ -85,7 +85,7 @@ function ProcessarResposta(selecionado, config) {
     }
 
     // A variável 'nota' interna do script pode continuar para o cálculo do modal final
-    nota += correto ? (parseFloat(pontos) || 1.0) : 0.2;
+    nota += correto ? (parseFloat(pontos) || 10.0) : 2.0;
 
     // 2. Feedback no grupo de opções (Radios)
     document.getElementsByName(nomeGrupo).forEach(opt => {
@@ -141,11 +141,28 @@ function validarRadio(btnConfirmar, nomeGrupo, idFrase, idGlobo, msg, pts) {
     // Busca qual rádio do grupo está marcado
     const selecionado = Array.from(document.getElementsByName(nomeGrupo)).find(r => r.checked);
 
-    if (!selecionado) {
-        btnConfirmar.innerHTML = "⚠️ Escolha uma opção!";
-        setTimeout(() => btnConfirmar.innerHTML = "Confirmar Resposta", 1500);
-        return;
+   // --- VALIDAÇÃO DE OPÇÃO SELECIONADA ---
+if (!selecionado) {
+    // 1. Toca o som de erro (ou um som específico de 'aviso')
+    if (typeof playSom === "function") {
+        playSom('erro'); 
     }
+
+    // 2. Transforma o botão: Fica Amarelo + Tremedeira (Shake)
+    btnConfirmar.innerHTML = "⚠️ Escolha uma opção!";
+    btnConfirmar.classList.add('w3-amber', 'shake-erro');
+
+    // 3. O "Pulo do Gato": Vibração no celular (se o aluno estiver no Android/iOS)
+    if (navigator.vibrate) navigator.vibrate(100);
+
+    // 4. Reseta o botão após 1.5 segundos
+    setTimeout(() => {
+        btnConfirmar.innerHTML = "Confirmar Resposta";
+        btnConfirmar.classList.remove('w3-amber', 'shake-erro');
+    }, 1500);
+
+    return; // Mata a execução para não dar erro de "undefined" nas próximas linhas
+}
 
     const ehCorreto = selecionado.value === "correto";
 

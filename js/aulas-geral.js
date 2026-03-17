@@ -9,7 +9,7 @@ async function carregarAulas(ano) {
 
         if (grid) {
             grid.innerHTML = aulas.map(aula => {
-               // --- PADRONIZAÇÃO TOTAL AQUI ---
+                // --- PADRONIZAÇÃO TOTAL AQUI ---
                 const leuTexto = localStorage.getItem("concluido_texto_" + aula.id) === "true";
                 const fezQuestoes = localStorage.getItem("concluido_questoes_" + aula.id) === "true";
 
@@ -145,20 +145,23 @@ function mostrarProgressoGlobal(aulas, ano) {
                 </div>
             </div>
 
-            <div class="w3-row w3-center w3-border-top w3-padding-small" style="border-color: #f1f1f1 !important;">
-                <div class="w3-col s4">
-                    <i class="fa fa-trophy ${globinhosTotal >= 500 ? 'w3-text-amber' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
-                    <p style="font-size:8px; margin:0">500 pts</p>
-                </div>
-                <div class="w3-col s4">
-                    <i class="fa fa-star ${globinhosTotal >= 2000 ? 'w3-text-blue' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
-                    <p style="font-size:8px; margin:0">2k pts</p>
-                </div>
-                <div class="w3-col s4">
-                    <i class="fa fa-diamond ${globinhosTotal >= 10000 ? 'w3-text-purple' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
-                    <p style="font-size:8px; margin:0">Mestre</p>
-                </div>
-            </div>
+          
+<div class="w3-row w3-center w3-border-top w3-padding-small">
+    <div class="w3-col s4">
+        <i class="fa fa-trophy ${globinhosTotal >= MARCOS_CONQUISTAS[0] ? 'w3-text-amber' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
+        <p style="font-size:8px; margin:0">${MARCOS_CONQUISTAS[0]} pts</p>
+    </div>
+    
+    <div class="w3-col s4">
+        <i class="fa fa-star ${globinhosTotal >= MARCOS_CONQUISTAS[1] ? 'w3-text-blue' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
+        <p style="font-size:8px; margin:0">${MARCOS_CONQUISTAS[1] / 1000}k pts</p>
+    </div>
+    
+    <div class="w3-col s4">
+        <i class="fa fa-diamond ${globinhosTotal >= MARCOS_CONQUISTAS[2] ? 'w3-text-purple' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
+        <p style="font-size:8px; margin:0">Mestre</p>
+    </div>
+</div>
         </div>`;
 }
 

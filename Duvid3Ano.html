@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
+
+
+
+    <script src="/js/duvid-core.js" defer></script>
     <script src="/js/carregar.js" defer></script>
     <script src="/js/aulas-geral.js" defer></script>
     <script src="/js/abrirmenu.js" defer></script>
@@ -79,13 +83,16 @@
     <script>
         // Executa o carregamento das aulas do 3º ano
         document.addEventListener('DOMContentLoaded', async () => {
-            // 1. Identifica o ano pela URL ou pela página (ex: 3º ano)
-            const anoPagina = "3"; // Ajuste conforme a página (1, 2 ou 3)
+            // Detecta o ano automaticamente se o nome do seu arquivo for Duvid3Ano.html, Duvid1Ano.html, etc.
+            // Ele pega o número que estiver no nome da página atual
+            const nomeArquivo = window.location.pathname;
+            const anoPagina = nomeArquivo.match(/\d+/) ? nomeArquivo.match(/\d+/)[0] : "1";
 
-            // 2. Carrega as aulas e desenha o painel
+            // O restante do código permanece igual...
             if (typeof carregarAulas === "function") {
                 await carregarAulas(anoPagina);
             }
+
 
             // 3. FORÇA A ATUALIZAÇÃO DA NOTA (O pulo do gato)
             // Isso garante que o saldo 101.5 (ou o valor atual) apareça no painel desenhado
@@ -95,6 +102,8 @@
             if (displayHome && saldoatual) {
                 displayHome.innerText = Number(saldoatual).toFixed(1);
             }
+
+           
         });
     </script>
 

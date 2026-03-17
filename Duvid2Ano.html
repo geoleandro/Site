@@ -2,22 +2,22 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duvid - 2º ano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duvid - 2º ano</title>
 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="estilos/index-estilo.css">
-  <link rel="stylesheet" href="estilos/aulas-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos/index-estilo.css">
+    <link rel="stylesheet" href="estilos/aulas-estilo.css">
 
-  <link rel="shortcut icon" type="image/x-icon" href="fotoIndex/favicon.ico">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="fotoIndex/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <script src="/js/carregar.js" defer></script>
-  <script src="/js/aulas-geral.js" defer></script>
-  <script src="/js/abrirmenu.js" defer></script>
+    <script src="/js/duvid-core.js" defer></script>
+    <script src="/js/carregar.js" defer></script>
+    <script src="/js/aulas-geral.js" defer></script>
+    <script src="/js/abrirmenu.js" defer></script>
 
 </head>
 
@@ -41,12 +41,12 @@
 </style>
 
 <body class="w3-light-grey">
-  <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
-  <main class="w3-content" style="max-width:1100px; margin-top: 80px;">
+    <main class="w3-content" style="max-width:1100px; margin-top: 80px;">
 
-    
-    <div class="w3-container w3-padding-48 w3-center hero-ano w3-round-large w3-card-2">
+
+        <div class="w3-container w3-padding-48 w3-center hero-ano w3-round-large w3-card-2">
             <h1 class="w3-text-green w3-jumbo fonte-pixel-titulo">
                 <b>Duvid - 2º ano</b>
             </h1>
@@ -66,22 +66,25 @@
 
         <div class="row w3-padding-32" id="painel-usuario"></div>
 
-    <div id="grid-aulas" class="row w3-padding-32">
-    </div>
-  </main>
+        <div id="grid-aulas" class="row w3-padding-32">
+        </div>
+    </main>
 
-  <div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 
-  <script>
+    <script>
         // Executa o carregamento das aulas do 3º ano
         document.addEventListener('DOMContentLoaded', async () => {
-            // 1. Identifica o ano pela URL ou pela página (ex: 3º ano)
-            const anoPagina = "2"; // Ajuste conforme a página (1, 2 ou 3)
+            // Detecta o ano automaticamente se o nome do seu arquivo for Duvid3Ano.html, Duvid1Ano.html, etc.
+            // Ele pega o número que estiver no nome da página atual
+            const nomeArquivo = window.location.pathname;
+            const anoPagina = nomeArquivo.match(/\d+/) ? nomeArquivo.match(/\d+/)[0] : "1";
 
-            // 2. Carrega as aulas e desenha o painel
+            // O restante do código permanece igual...
             if (typeof carregarAulas === "function") {
                 await carregarAulas(anoPagina);
             }
+       
 
             // 3. FORÇA A ATUALIZAÇÃO DA NOTA (O pulo do gato)
             // Isso garante que o saldo 101.5 (ou o valor atual) apareça no painel desenhado
