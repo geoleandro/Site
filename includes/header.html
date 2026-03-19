@@ -1,16 +1,11 @@
 <div class="w3-top" style="z-index: 1000; left: 0; right: 0;">
-    <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <div class="w3-bar w3-green w3-card w3-left-align w3-medium">
 
-        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large" href="#"
-            onclick="AbrirNavBar(); return false;">
-            <i class="fa fa-bars"></i>
-        </a>
-
-        <a href="/home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="/home.html" class="w3-bar-item w3-button w3-padding-small w3-margin-left">HOME</a>
 
         <div class="w3-dropdown-click w3-hide-small">
-            <button onclick="AbrirDropDown('aulas')" class="w3-padding-large w3-button">
-                Aulas <i class="fa fa-caret-down"></i>
+            <button onclick="AbrirDropDown('aulas')" class="w3-padding-small w3-button">
+                AULAS <i class="fa fa-caret-down"></i>
             </button>
             <div id="aulas" class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
                 <a href="/Duvid1Ano.html" class="w3-bar-item w3-button">1º ano</a>
@@ -19,42 +14,45 @@
             </div>
         </div>
 
-        <a href="/paginas/instrucoes.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Instruções</a>
-        <a href="/blog/blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog</a>
+        <a href="/paginas/instrucoes.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">INSTRUÇÕES</a>
+        <a href="/blog/blog.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">BLOG</a>
 
         <div class="w3-dropdown-click w3-hide-small">
-            <button onclick="AbrirDropDown('simulados')" class="w3-padding-large w3-button">
-                Simulados <i class="fa fa-caret-down"></i>
+            <button onclick="AbrirDropDown('simulados')" class="w3-padding-small w3-button">
+                SIMULADOS <i class="fa fa-caret-down"></i>
             </button>
             <div id="simulados" class="w3-dropdown-content w3-bar-block w3-card-4 w3-light-grey">
                 <a href="/simulados/capasimuladoenem.html" class="w3-bar-item w3-button">Enem</a>
                 <a href="/simulados/capasimuladofuvest.html" class="w3-bar-item w3-button">Fuvest</a>
-                <a href="/simulados/capasimuladounesp.html" class="w3-bar-item w3-button w3-padding">Unesp</a>
+                <a href="/simulados/capasimuladounesp.html" class="w3-bar-item w3-button">Unesp</a>
                 <a href="/simulados/capasimuladounicamp.html" class="w3-bar-item w3-button">Unicamp</a>
             </div>
         </div>
-        <a href="/paginas/creditos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Créditos</a>
+        <a href="/paginas/creditos.html" class="w3-bar-item w3-button w3-padding-small w3-hide-small">CRÉDITOS</a>
 
-
-
-        <div class="w3-right" style="display: flex; align-items: center; justify-content: flex-end; gap: 5px;">
+        <div class="w3-right" style="display: flex; align-items: center; height: 38px; gap: 5px;">
+            
             <div id="painel-pontos" class="w3-round-large w3-green w3-card-2 w3-hide"
-                style="display: flex; align-items: center; padding: 4px 12px; margin-right: 5px;">
-                <span id="notaFixa" class="fontePixel"
-                    style="font-size: 18px; color: white; margin-right: 8px;">0.0</span>
-                <img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="globo" width="28" height="28">
+                style="display: flex; align-items: center; padding: 2px 10px; margin-right: 5px; height: 30px;">
+                <span id="notaFixa" class="fontePixel" style="font-size: 16px; color: white; margin-right: 5px;">0.0</span>
+                <img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="globo" width="22" height="22">
             </div>
 
-            <div class="font-controls w3-hide-small"> <button id="decrease-font" class="font-btn">A-</button>
-                <button id="increase-font" class="font-btn">A+</button>
+            <div class="font-controls w3-hide-small" style="display: flex; align-items: center;"> 
+                <button id="decrease-font" class="font-btn" style="padding: 2px 8px;">A-</button>
+                <button id="increase-font" class="font-btn" style="padding: 2px 8px;">A+</button>
             </div>
-            <button class="w3-button w3-padding-large" id="toggle-dark-mode">
-                <i class="fa fa-moon"></i>
+            
+            <button class="w3-button" id="toggle-dark-mode" style="padding: 8px 12px;">
+           <i class="fa fa-moon fa-fw"></i>
             </button>
 
+            <a class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-hover-white" href="#"
+                onclick="AbrirNavBar(); return false;" style="padding: 8px 16px;">
+                <i class="fa fa-bars"></i>
+            </a>
 
         </div>
-        
     </div>
 </div>
 

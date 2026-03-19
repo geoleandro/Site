@@ -16,18 +16,19 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
 
-
-    <script src="../../../estilos/jstextos-padrao.js" defer></script>
-    <script src="../../../js/carregar.js" defer></script>
-    <script src="../../../js/abrirmenu.js" defer></script>
-    <script src="../../../js/aulas-geral.js" defer></script>
     <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+
+    <script src="../../../js/aulas-geral.js" defer></script>
+
 
     <title>3º ano - Texto 01</title>
 
@@ -35,7 +36,7 @@
 
     <style>
         .topico {
-            display: block;
+            display: none;
         }
 
         .topico:nth-child(1),
@@ -53,6 +54,8 @@
 
     <div id="header-placeholder"></div>
 
+     <div id="aviso-status" class="w3-margin-top"></div>
+
 
     <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
 
@@ -68,7 +71,7 @@
 
 
 
-            <h1 id="h1"> Texto 01 - A Geografia no período atual</h1>
+            <h1 id="h1"> </h1>
 
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
@@ -83,7 +86,8 @@
 
 
 
-            <button class="btnShow" onclick="MostrarProximo(this); Play('inicioNome.mp3'); this.style.display='none'">
+            <button class="btnShow"
+                onclick="playSomUnico('/audios/inicioNome.mp3'); MostrarProximo(this); this.style.display='none'">
                 <i class="fa fa-play"></i> Iniciar Aula
             </button>
             <hr>
@@ -503,35 +507,45 @@
 
 
 
+        <div class="topico pergunta-bloco w3-container w3-padding-24 ">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+            <h4 class="fontePixel"><b>Qual é a visão do professor Milton Santos sobre os diferentes mundos existentes
+                    atualmente?</b></h4>
 
-        <div class="topico w3-container w3-padding-16">
-            <p class="caixa">Escolha a alternativa correta:</p>
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao">
+                        <span>a) Existe apenas um mundo, conforme difundido pela globalização.</span>
+                    </label>
+                </div>
 
-            <h4>Qual é a visão do professor Milton Santos sobre os diferentes mundos existentes atualmente?</h4>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="correto" class="radio-duvid">
+                    <label for="p1b" class="card-opcao">
+                        <span>b) Existem três perspectivas diferentes sobre o mundo: o mundo como nos fazem crer
+                            (fábula), o
+                            mundo como ele é (perversidade), e a possibilidade de construir um outro mundo.</span>
+                    </label>
+                </div>
 
-            <div id="questao1">
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
-                    <label> Existe apenas um mundo, conforme difundido pela globalização.</label>
-                </p>
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="correto">
-                    <label>Existem três perspectivas diferentes sobre o mundo: o mundo como nos fazem crer (fábula), o
-                        mundo como ele é (perversidade), e a possibilidade de construir um outro mundo.</label>
-                </p>
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
-                    <label>Existem múltiplos mundos, cada um com sua própria realidade e globalização.</label>
-                </p>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao">
+                        <span>c) Existem múltiplos mundos, cada um com sua própria realidade e globalização.</span>
+                    </label>
+                </div>
             </div>
 
-            <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'Quase! Milton Santos propõe que vivemos a globalização como fábula (o que dizem ser), como perversidade (a realidade cruel) e a possibilidade de uma outra globalização.', '10')">
-                Confirmar Resposta
-            </button>
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'Dica: O território envolve fronteiras e poder!', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
 
-            <p id="resp1" class="w3-center w3-padding"></p>
-            <div class="area">
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
                 <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80">
             </div>
         </div>
@@ -539,44 +553,53 @@
 
 
 
-        
 
-        <div class="topico w3-container w3-padding-16">
-            <p class="caixa">Questão 02</p>
 
-            <h4>De acordo com o professor Milton Santos, qual é uma das perspectivas negativas da globalização?</h4>
 
-            <div id="questao2">
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta2" value="correto">
-                    <label>
-                        A globalização como uma fábrica de perversidades, com aumento da pobreza e desigualdades.
+
+        <div class="topico pergunta-bloco w3-container w3-padding-24 ">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+            <h4 class="fontePixel"><b>De acordo com o professor Milton Santos, qual é uma das perspectivas negativas da
+                    globalização?</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2a" value="correto" class="radio-duvid">
+                    <label for="p2a" class="card-opcao">
+                        <span>a) A globalização como uma fábrica de perversidades, com aumento da pobreza e
+                            desigualdades.</span>
                     </label>
-                </p>
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta2" value="errado">
-                    <label>
-                        A globalização como um processo benéfico, que promove o desenvolvimento econômico e social.
+                </div>
+
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2b" value="errado" class="radio-duvid">
+                    <label for="p2b" class="card-opcao">
+                        <span>b) A globalização como um processo benéfico, que promove o desenvolvimento econômico e
+                            social.</span>
                     </label>
-                </p>
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta2" value="errado">
-                    <label>
-                        A globalização como uma utopia alcançável, que leva à igualdade global.
+                </div>
+
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
+                    <label for="p2c" class="card-opcao">
+                        <span>c) A globalização como uma utopia alcançável, que leva à igualdade global.</span>
                     </label>
-                </p>
+                </div>
             </div>
 
-            <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'Atenção! Milton Santos critica a globalização atual chamando-a de perversidade, pois ela exclui milhões de pessoas e acentua as desigualdades sociais e econômicas.', '10.0')">
-                Confirmar Resposta
-            </button>
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'para o professor a globalização amplia as desigualdades', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
 
-            <p id="resp2" class="w3-center w3-padding"></p>
-            <div class="area">
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
                 <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80">
             </div>
         </div>
+
 
 
 
@@ -964,22 +987,6 @@
     <div id="footer-placeholder"></div>
 
 
-    <script>
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        //     console.log(numB);
-        // }
-
-
-
-
-
-
-    </script>
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -993,7 +1000,7 @@
     </script>
 
 
-    
+
 
 
 </body>

@@ -1,8 +1,89 @@
 /* Impede o balanço lateral no site todo */
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
+    font-family: "Roboto", "Verdana", "Tahoma", "Arial", sans-serif;
+}
+
+
+
+/* 2. Defina a fonte da Navbar (Unificada) */
+.w3-bar,
+.w3-bar-item,
+.w3-button,
+.w3-dropdown-content a {
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+    /* Dá um ar mais elegante */
+    letter-spacing: 1px;
+    font-size: medium;
+}
+
+/* Diminui o respiro dos itens da barra */
+.w3-bar-item.w3-button,
+.w3-bar .w3-dropdown-click button {
+    padding-top: 14px !important;
+    /* Ajuste este valor para ficar mais fina */
+    padding-bottom: 14px !important;
+    /* Ajuste este valor para ficar mais fina */
+    line-height: 1.2;
+}
+
+/* Adicione isso ao seu CSS para dar um respiro elegante na esquerda */
+.w3-bar-item:first-child {
+    margin-left: 15px !important;
+}
+
+/* Garante que o ícone de menu (hambúrguer) fique na direita extrema */
+.w3-bar .w3-right,
+.w3-bar-item.w3-right {
+    float: right !important;
+}
+
+/* Ajuste específico para o botão Home descolar da borda esquerda */
+.w3-bar-item:first-child {
+    margin-left: 12px !important;
+}
+
+/* --- INTERAÇÃO: GLOBO E HAMBÚRGUER NA DIREITA --- */
+/* Esta regra garante que o painel de pontos e o menu fiquem juntos no canto */
+.w3-right {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px;
+    padding-right: 15px !important;
+}
+
+
+
+.font-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.font-btn:hover {
+    background: white;
+    color: green;
+}
+
+/* Centraliza os botões de A- A+ e Lua que ficaram desalinhados */
+.w3-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* 3. Mantenha a fonte Pixel apenas onde faz sentido (Nota/Globinhos) */
+.fontePixel {
+    font-family: 'VT323', monospace !important;
+    font-size: 22px !important;
 }
 
 /* --- Configurações de Imagem do Slideshow --- */
@@ -16,14 +97,15 @@ html, body {
 /* --- Seção de Apps (Capas) --- */
 .fotosCapa img {
     width: 100%;
-    max-width: 280px; /* Evita que a capa fique gigante em telas grandes */
+    max-width: 280px;
+    /* Evita que a capa fique gigante em telas grandes */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
 }
 
 .fotosCapa img:hover {
     transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .CardPlayImg img {
@@ -42,36 +124,14 @@ html, body {
     margin: 40px auto;
     border: 12px solid #fff;
     border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     background-image: url("../images/imagensCapa/cortica.jpg");
     background-size: cover;
     background-position: center;
     padding: 20px;
 }
 
-/* Estilo dos Post-its */
-.postit-tp9 {
-    background: #f5ff9e;
-    padding: 15px;
-    margin: 15px auto;
-    text-align: center;
-    color: #000;
-    box-shadow: 2px 4px 6px rgba(0,0,0,0.4);
-    transform: rotate(-2deg);
-    transition: 0.3s;
-    width: 90%; /* Ajustado para preencher a coluna do W3.CSS */
-}
 
-.postit-tp9:hover {
-    transform: rotate(0deg) scale(1.05);
-    box-shadow: 4px 8px 12px rgba(0,0,0,0.5);
-}
-
-.postit-tp9 a {
-    color: #000;
-    font-weight: bold;
-    display: block;
-}
 
 /* --- Rodapé (Ajustes de Ícones) --- */
 #iconeFooter {
@@ -111,13 +171,15 @@ html, body {
 #toggle-dark-mode {
     display: flex;
     align-items: center;
-    height: 48px; /* Mesma altura padrão da w3-bar-item */
+    height: 48px;
+    /* Mesma altura padrão da w3-bar-item */
 }
 
 /* Container dos botões de fonte */
 .font-controls {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.1); /* Um fundo sutil para agrupar */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Um fundo sutil para agrupar */
     border-radius: 20px;
     padding: 2px;
     margin-right: 8px;
@@ -149,13 +211,17 @@ body.dark-mode .w3-bar {
 }
 
 /* Garante que os elementos dentro do conteúdo principal aceitem o zoom do JS */
-#conteudo-principal *, .corpo-artigo * {
-    font-size: inherit; /* Faz os filhos herdarem o tamanho definido no pai pelo JS */
+#conteudo-principal *,
+.corpo-artigo * {
+    font-size: inherit;
+    /* Faz os filhos herdarem o tamanho definido no pai pelo JS */
 }
 
 /* Exceção: se você tiver títulos que devem ser sempre maiores, use porcentagem */
-#conteudo-principal h1, .corpo-artigo h2 {
-    font-size: 1.5em; /* 1.5 vezes o tamanho atual do zoom */
+#conteudo-principal h1,
+.corpo-artigo h2 {
+    font-size: 1.5em;
+    /* 1.5 vezes o tamanho atual do zoom */
 }
 
 
@@ -165,7 +231,8 @@ body.dark-mode .w3-bar {
 }
 
 .w3-card-4:hover {
-    transform: translateY(-5px); /* O card sobe um pouquinho ao passar o mouse */
+    transform: translateY(-5px);
+    /* O card sobe um pouquinho ao passar o mouse */
 }
 
 /* Garante que o texto dos cards respeite o zoom do botão A+ / A- */
@@ -178,13 +245,16 @@ body.dark-mode .w3-bar {
     transition: opacity 0.5s ease-in-out;
     font-style: italic;
     color: #444;
-    min-height: 80px; /* Evita que o layout "pule" quando a frase carrega */
+    min-height: 80px;
+    /* Evita que o layout "pule" quando a frase carrega */
 }
 
 #autor-img {
     transition: opacity 0.5s ease-in-out;
-    opacity: 0; /* Começa invisível para o JS mostrar depois */
-    object-fit: cover; /* Garante que a foto não fique achatada */
+    opacity: 0;
+    /* Começa invisível para o JS mostrar depois */
+    object-fit: cover;
+    /* Garante que a foto não fique achatada */
 }
 
 /* Garante que o texto do autor também combine com o estilo */
@@ -201,7 +271,12 @@ body.dark-mode .w3-bar {
 }
 
 /* Transição suave para a mudança de cor */
-body, .w3-card, .w3-panel, .w3-white, .w3-light-grey, a {
+body,
+.w3-card,
+.w3-panel,
+.w3-white,
+.w3-light-grey,
+a {
     transition: background-color 0.4s, color 0.4s;
 }
 
@@ -212,8 +287,8 @@ body.dark-mode {
 }
 
 /* Sobrescrevendo as classes do W3.CSS no modo escuro */
-body.dark-mode .w3-white, 
-body.dark-mode .w3-card, 
+body.dark-mode .w3-white,
+body.dark-mode .w3-card,
 body.dark-mode .w3-light-grey,
 body.dark-mode .w3-modal-content {
     background-color: #1e1e1e !important;
@@ -221,7 +296,8 @@ body.dark-mode .w3-modal-content {
 }
 
 body.dark-mode .w3-text-green {
-    color: #4ade80 !important; /* Um verde mais brilhante para ler no escuro */
+    color: #4ade80 !important;
+    /* Um verde mais brilhante para ler no escuro */
 }
 
 /* Ajuste nos links de Quick Links para não sumirem */
@@ -234,26 +310,31 @@ body.dark-mode .w3-border-green {
     border-color: #4ade80 !important;
 }
 
-/* Espaçamento entre os cards */
-.card-ano {
-    margin: 10px; /* Aumenta a distância entre um card e outro */
-    padding: 5px !important; /* Aumenta o espaço branco dentro do card, deixando-o mais "gordo" */
-    min-height: 450px; /* Garante que todos tenham uma altura mínima elegante */
+body.dark-mode #navDemo {
+    background-color: #1e1e1e !important;
+    color: white !important;
 }
 
-.card-ano:hover {
-    transform: translateY(-5px); /* Efeito de levante ao passar o mouse */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+body.dark-mode #navDemo a {
+    border-bottom: 1px solid #333;
 }
+
+/* No Dark Mode, garantimos que a barra de feedback não fique "cega" */
+body.dark-mode #barra-feedback.w3-green { background-color: #1b5e20 !important; }
+body.dark-mode #barra-feedback.w3-red { background-color: #b71c1c !important; }
+
+
 
 /* Ajuste para o Dark Mode na seção cinza */
-body.dark-mode .w3-light-grey, 
+body.dark-mode .w3-light-grey,
 body.dark-mode .section-anos {
-    background-color: #121212 !important; /* Fundo bem escuro */
+    background-color: #121212 !important;
+    /* Fundo bem escuro */
 }
 
 body.dark-mode .card-ano {
-    background-color: #1e1e1e !important; /* Card um pouco menos escuro */
+    background-color: #1e1e1e !important;
+    /* Card um pouco menos escuro */
     color: white !important;
     border: 1px solid #333;
 }
@@ -268,40 +349,76 @@ body.dark-mode .w3-bar .fa-bars {
     color: white !important;
 }
 
+/* Espaçamento entre os cards */
+.card-ano {
+    margin: 10px;
+    /* Aumenta a distância entre um card e outro */
+    padding: 5px !important;
+    /* Aumenta o espaço branco dentro do card, deixando-o mais "gordo" */
+    min-height: 450px;
+    /* Garante que todos tenham uma altura mínima elegante */
+}
+
+.card-ano:hover {
+    transform: translateY(-5px);
+    /* Efeito de levante ao passar o mouse */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/* Ajuste para a barra de feedback inferior */
+#barra-feedback {
+    border-top: 2px solid rgba(0,0,0,0.1);
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+}
+
+#barra-feedback .w3-button {
+    height: 50px; /* Mais fácil de clicar no celular */
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+#barra-feedback .w3-button:active {
+    transform: scale(0.98);
+}
+
 /* --- BLINDAGEM CONTRA BOTÕES INVISÍVEIS --- */
 
 /* Garante que o botão .p4 (questões) nunca fique transparente ao ser desativado */
 .p4:disabled {
     cursor: not-allowed !important;
-    opacity: 1 !important;            /* O segredo para não sumir */
+    opacity: 1 !important;
+    /* O segredo para não sumir */
     visibility: visible !important;
-    background-color: #f9f9f9 !important; /* Cor sólida para não fundir com o fundo */
+    background-color: #f9f9f9 !important;
+    /* Cor sólida para não fundir com o fundo */
     color: #444 !important;
     border: 2px solid #ddd !important;
 }
 
 /* Ajuste para o Dark Mode: botão desativado precisa ser legível no escuro */
 body.dark-mode .p4:disabled {
-    background-color: #2a2a2a !important; 
+    background-color: #2a2a2a !important;
     color: #ccc !important;
     border-color: #444 !important;
 }
 
 /* Remove qualquer transição de opacidade que possa causar o efeito de sumiço */
 button:disabled {
-    transition: none !important; 
+    transition: none !important;
 }
 
 /* --- AJUSTE DARK MODE PARA O FOOTER --- */
 body.dark-mode footer.w3-green {
-    background-color: #1a1a1a !important; /* Cinza quase preto */
-    color: #e0e0e0 !important;           /* Texto cinza claro */
-    border-top: 4px solid #4CAF50 !important; /* Mantém uma linha verde fina no topo para estilo */
+    background-color: #1a1a1a !important;
+    /* Cinza quase preto */
+    color: #e0e0e0 !important;
+    /* Texto cinza claro */
+    border-top: 4px solid #4CAF50 !important;
+    /* Mantém uma linha verde fina no topo para estilo */
 }
 
 /* Garante que os links de política e textos do footer fiquem legíveis */
-body.dark-mode footer a, 
-body.dark-mode footer p, 
+body.dark-mode footer a,
+body.dark-mode footer p,
 body.dark-mode footer span {
     color: #b0b0b0 !important;
 }
@@ -311,14 +428,46 @@ body.dark-mode footer .fa-brands {
     color: #ffffff !important;
 }
 
+/* --- BLINDAGEM DARK MODE PARA ALTERNATIVAS --- */
+body.dark-mode .card-opcao {
+    background-color: #2a2a2a !important; /* Cinza escuro */
+    border-color: #444 !important;        /* Borda discreta */
+    color: #eeeeee !important;           /* Texto quase branco */
+}
+
+/* Efeito de Hover no Dark Mode */
+body.dark-mode .card-opcao:hover {
+    background-color: #333 !important;
+    border-color: #009688 !important;
+}
+
+/* Quando a alternativa estiver SELECIONADA no Dark Mode */
+body.dark-mode .radio-duvid:checked + .card-opcao {
+    background-color: #004d40 !important; /* Verde bem escuro (Teal) */
+    border-color: #009688 !important;     /* Brilho verde na borda */
+    color: #ffffff !important;
+    box-shadow: 0 0 10px rgba(0, 150, 136, 0.3);
+}
+
+/* Ajuste para o texto de apoio e perguntas no Dark Mode */
+body.dark-mode .w3-panel.w3-sand {
+    background-color: #252520 !important; /* Um areia bem escuro */
+    color: #f1f1f1 !important;
+    border-left-color: #69CB60 !important;
+}
+
+body.dark-mode p.w3-large {
+    color: #ffffff !important;
+}
+
 #buttonConfira {
     display: block;
     padding: 12px 20px;
     font-size: 16px;
-    
+
     /* Altera de '20px auto' para: */
-    margin: 20px 0; 
-    
+    margin: 20px 0;
+
     cursor: pointer;
     color: #fff;
     background-color: #69CB60;
@@ -347,56 +496,7 @@ body.dark-mode footer .fa-brands {
     border-color: #69CB60;
 }
 
-/* Ajustes para telas pequenas (Mobile) */
-@media (max-width: 600px) {
-    .w3-third {
-        width: 100% !important; /* Força um card por linha no celular */
-        padding: 0 10px !important;
-    }
-    
-    .card-ano {
-        margin: 10px 0 !important; /* Remove margem lateral no mobile para ganhar espaço */
-        padding: 20px !important; /* Diminui o padding interno para caber mais conteúdo */
-    }
 
-    .btn-google-play {
-        width: 100%; /* Botão ocupa toda a largura do card no celular */
-    }
-}
-
-/* Ajuste fino nos cards para não 'empurrarem' a tela no mobile */
-@media (max-width: 600px) {
-    .w3-row-padding {
-        padding: 0 8px !important; /* Diminui o respiro lateral da linha */
-        margin: 0 !important;      /* Zera margens que causam o balanço */
-    }
-
-    .w3-third {
-        padding: 0 !important;     /* Remove padding que pode somar à largura total */
-    }
-
-    .card-ano {
-        margin: 15px 5px !important; /* Margem pequena dos lados para não tocar a borda da tela */
-        width: calc(100% - 10px) !important; /* Garante que o card nunca seja 100% + margem */
-        box-sizing: border-box;
-    }
-}
-
-
-/* --- Responsividade --- */
-@media (max-width: 600px) {
-    .mySlides img {
-        height: 300px; /* Menor em celulares */
-    }
-    .Avisos {
-        max-width: 95%;
-        border-width: 6px;
-    }
-    .postit-tp9 {
-        width: 80%;
-        margin: 10px auto;
-    }
-}
 
 
 /* Animação de Troféu Novo */
@@ -406,12 +506,97 @@ body.dark-mode footer .fa-brands {
 }
 
 @keyframes trofeuPula {
-    from { transform: scale(1); }
-    to { transform: scale(1.2); }
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
 }
 
 /* Brilho constante para troféus já conquistados */
 .trofeu-ativo {
-    filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
     transition: all 0.5s ease;
 }
+
+
+
+
+/* VERSÃO CELULAR */
+/* VERSÃO CELULAR - AJUSTE DA NAVBAR */
+@media (max-width: 600px) {
+    /* Faz a parte direita da barra ser um grupo que não quebra linha */
+    .w3-right {
+        display: flex !important;
+        float: right !important;
+        height: 48px; /* Altura padrão da barra */
+        align-items: center;
+        gap: 5px; /* Espaço entre Lua, Globinho e Menu */
+        position: absolute;
+        padding-right: 10px !important;
+        right: 0;
+        top: 0;
+    }
+
+    /* Garante que o botão da Lua (ou qualquer item na direita) apareça */
+    .w3-bar-item.w3-right, #toggle-dark-mode {
+        display: flex !important;
+        padding: 8px 12px !important;
+    }
+
+    /* Ajuste para o botão Home não ser esmagado */
+    .w3-bar-item:first-child {
+        margin-left: 10px !important;
+        padding-left: 8px !important;
+    }
+}
+
+
+/* Ajuste fino nos cards para não 'empurrarem' a tela no mobile */
+@media (max-width: 600px) {
+    .w3-row-padding {
+        padding: 0 8px !important;
+        /* Diminui o respiro lateral da linha */
+        margin: 0 !important;
+        /* Zera margens que causam o balanço */
+    }
+
+    .w3-third {
+        padding: 0 !important;
+        /* Remove padding que pode somar à largura total */
+    }
+
+    .card-ano {
+        margin: 15px 5px !important;
+        /* Margem pequena dos lados para não tocar a borda da tela */
+        width: calc(100% - 10px) !important;
+        /* Garante que o card nunca seja 100% + margem */
+        box-sizing: border-box;
+    }
+}
+
+
+/* Ajustes para telas pequenas (Mobile) */
+@media (max-width: 600px) {
+    .w3-third {
+        width: 100% !important;
+        /* Força um card por linha no celular */
+        padding: 0 10px !important;
+    }
+
+    .card-ano {
+        margin: 10px 0 !important;
+        /* Remove margem lateral no mobile para ganhar espaço */
+        padding: 20px !important;
+        /* Diminui o padding interno para caber mais conteúdo */
+    }
+
+    .btn-google-play {
+        width: 100%;
+        /* Botão ocupa toda a largura do card no celular */
+    }
+}
+
+

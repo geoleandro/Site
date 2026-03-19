@@ -22,6 +22,7 @@
     <script src="/js/carregar.js" defer></script>
     <script src="/js/aulas-geral.js" defer></script>
     <script src="/js/abrirmenu.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js"></script>
 
 </head>
 
@@ -80,32 +81,44 @@
 
 
 
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>
-        // Executa o carregamento das aulas do 3º ano
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+    <script src="../../../js/duvid-core.js"></script>
+    <script src="../../../js/aulas-geral.js"></script>
+    <script src="../../../estilos/jstextos-padrao.js"></script>
+
+    <script>
         document.addEventListener('DOMContentLoaded', async () => {
-            // Detecta o ano automaticamente se o nome do seu arquivo for Duvid3Ano.html, Duvid1Ano.html, etc.
-            // Ele pega o número que estiver no nome da página atual
             const nomeArquivo = window.location.pathname;
             const anoPagina = nomeArquivo.match(/\d+/) ? nomeArquivo.match(/\d+/)[0] : "1";
 
-            // O restante do código permanece igual...
+            // Desenha os cards das aulas na tela
             if (typeof carregarAulas === "function") {
                 await carregarAulas(anoPagina);
             }
 
-
-            // 3. FORÇA A ATUALIZAÇÃO DA NOTA (O pulo do gato)
-            // Isso garante que o saldo 101.5 (ou o valor atual) apareça no painel desenhado
-            const saldoatual = (typeof DuvidDB !== 'undefined') ? DuvidDB.getGlobinhos() : localStorage.getItem("duvid_globinhos");
-            const displayHome = document.getElementById("display-globinhos-home");
-
-            if (displayHome && saldoatual) {
-                displayHome.innerText = Number(saldoatual).toFixed(1);
+            // Tenta injetar título (caso a página de listagem também tenha um título dinâmico)
+            if (typeof injetarMetadadosAula === "function") {
+                await injetarMetadadosAula();
             }
 
-           
+            // Sincroniza o nome do aluno que pode ter sido trocado
+            if (typeof sincronizarNomeGlobal === "function") {
+                sincronizarNomeGlobal();
+            }
         });
     </script>
+
 
 </body>
 

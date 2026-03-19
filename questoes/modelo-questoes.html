@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../../../estilos/index-estilo.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -24,14 +24,16 @@
 
 
 
-
-    <script src="../../../js/carregar.js" defer></script>
-    
-
-    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
     <script src="../../../js/aulas-geral.js" defer></script>
     <script src="../../../js/jsquestoes-padrao.js" defer></script>
-    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+
+
+    <script src="../../../js/abrirmenu.js" defer></script>
+
+
+
 
 
     <title>Questões modelo p0</title>
@@ -39,7 +41,14 @@
 
 
     <style>
+        .w3-large {
+            white-space: pre-line;
+        }
 
+        /* Aplique na classe onde o texto de apoio é renderizado */
+        .w3-panel p {
+            white-space: pre-line;
+        }
     </style>
 
 
@@ -65,12 +74,17 @@
         <div id="container-questao" class="w3-animate-right">
         </div>
 
+
         <div id="barra-feedback" class="w3-bottom w3-container w3-padding-24 w3-animate-bottom w3-hide"
-            style="z-index:1001">
+            style="z-index:10">
             <div class="w3-content" style="max-width:750px">
-                <h3 id="feedback-msg"></h3>
-                <p id="feedback-txt"></p>
-                <button onclick="proxima()" class="w3-button w3-right w3-white w3-round-large">CONTINUAR</button>
+                <h3 id="feedback-msg" class="w3-xlarge"></h3>
+                <p id="feedback-txt" class="w3-medium"></p>
+
+                <button onclick="proxima()"
+                    class="w3-button btn-acao-duvid  w3-teal w3-round-large w3-block w3-margin-top ">
+                    <b>CONTINUAR</b>
+                </button>
             </div>
         </div>
 
@@ -85,7 +99,30 @@
 
 
 
+    <div id="modal-dica" class="w3-modal" style="display:none; z-index:9999;">
+        <div class="w3-modal-content w3-card-4 w3-animate-top w3-round-large" style="max-width:500px">
 
+            <header class="w3-container w3-teal w3-round-large"
+                style="border-bottom-left-radius:0; border-bottom-right-radius:0;">
+                <span onclick="document.getElementById('modal-dica').style.display='none'"
+                    class="w3-button w3-display-topright w3-round-large">&times;</span>
+                <h4>💡 Dica do Professor</h4>
+            </header>
+
+            <div class="w3-container w3-padding-32 w3-white">
+                <p id="texto-da-dica" class="w3-large w3-serif" style="font-style: italic; color: #555;"></p>
+            </div>
+
+            <footer class="w3-container w3-light-grey w3-padding w3-right-align w3-round-large"
+                style="border-top-left-radius:0; border-top-right-radius:0;">
+                <button class="w3-button w3-teal w3-round-medium"
+                    onclick="document.getElementById('modal-dica').style.display='none'">
+                    ENTENDI!
+                </button>
+            </footer>
+
+        </div>
+    </div>
 
     <button onclick="voltarAoTopo()" id="btn-topo"
         class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
@@ -117,7 +154,16 @@
 
     </script>
 
-    
+
+    <script>
+        // Apenas para teste, comente depois!
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                // gerarPaginaRevisao(); 
+            }, 500); // Espera meio segundo para o JSON carregar e renderiza tudo
+        });
+    </script>
+
 
 </body>
 

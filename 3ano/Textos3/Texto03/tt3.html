@@ -16,15 +16,20 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
 
 
-    <script src="../../../estilos/jstextos-padrao.js" defer></script>
-    <script src="../../../js/carregar.js" defer></script>
-    <script src="../../../js/abrirmenu.js" defer></script>
-    <script src="../../../js/aulas-geral.js" defer></script>
+<script src="../../../js/duvid-core.js" defer></script>
+
+<script src="../../../js/abrirmenu.js" defer></script>
+<script src="../../../js/carregar.js" defer></script>
+
+<script src="../../../js/aulas-geral.js" defer></script>
+<script src="../../../estilos/jstextos-padrao.js" defer></script>
 
     <title></title>
 
@@ -77,8 +82,8 @@
 
 
 
-
-            <button class="btnShow" onclick="MostrarProximo(this); Play('inicioNome.mp3'); this.style.display='none'">
+            <button class="btnShow"
+                onclick="playSom('/audios/inicioNome.mp3'); MostrarProximo(this); this.style.display='none'">
                 <i class="fa fa-play"></i> Iniciar Aula
             </button>
             <hr>
@@ -745,7 +750,7 @@
 
 
             <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o imigrante enfrenta diversos preconceitos e dificuldades sociais, culturais e econômicas', '3')">
+                onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o imigrante enfrenta diversos preconceitos e dificuldades sociais, culturais e econômicas', '10')">
                 Confirmar Resposta
             </button>
 
@@ -786,7 +791,7 @@
                 </p>
             </div>
             <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'leva à redução da competitividade, investimento em treinamento e dificuldade em preencher vagas', '3')">
+                onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'leva à redução da competitividade, investimento em treinamento e dificuldade em preencher vagas', '10')">
                 Confirmar Resposta
             </button>
             <p id="resp2" class="w3-center w3-padding"></p>
@@ -1070,22 +1075,7 @@
     <div id="footer-placeholder"></div>
 
 
-    <script>
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        //     console.log(numB);
-        // }
-
-
-
-
-
-
-    </script>
-
+   
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -1099,29 +1089,6 @@
     </script>
 
 
-<script>
-    // --- INICIALIZAÇÃO DA AULA (ALTA PERFORMANCE) ---
-    document.addEventListener('DOMContentLoaded', () => {
-        // 1. Recupera o nome imediatamente para evitar o "Estudante" genérico
-        const nomeSalvo = localStorage.getItem("duvid_nome");
-        if (nomeSalvo) {
-            nomeEstudante = nomeSalvo; 
-        }
-
-        // 2. Injeta Título e Placar antes das imagens carregarem
-        atualizarInterface();
-        injetarMetadadosAula();
-
-        // 3. Verifica Modo Revisão
-        const path = window.location.pathname;
-        const aulaID = path.startsWith('/') ? path.substring(1) : path;
-
-        if (localStorage.getItem("concluido_" + aulaID) === "true") {
-            console.log("Modo Revisão Ativado.");
-            // Opcional: Você pode colocar um aviso visual de "Aula Concluída" aqui
-        }
-    });
-</script>
 
 </body>
 

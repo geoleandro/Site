@@ -1,33 +1,162 @@
 [
-  {
+ {
     "id": 1,
-    "ano": "ENEM 2024",
-    "imagem_apoio": "3ano/img/101_q1.png",
-    "pergunta": "Questão com tudo (Imagem e Ajuda):",
-    "alternativas": ["a", "b", "c", "d", "e"],
-    "correta": 0,
-   "comentario": "<p>a) <b>Incorreta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum!FIM. </p><p>b) <b>Incorreta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum! FIM.</p><p>c) <b>Correta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum! FIM. </p><p>d) <b>Incorreta.</b>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum id distinctio architecto omnis delectus, adipisci maiores eos voluptatum velit accusantium laudantium aspernatur autem eveniet nesciunt doloremque voluptatibus, necessitatibus illum! FIM.</p><p>e) <b>Incorreta.</b> O uso de OGMs não reduziu.O problema da fome não está relacionado à falta de terra O problema da fome não está relacionado à falta de terra FIM. </p>",
-    "ajuda": { "texto": "Dica importante!" }
+    "ano": "(UEL 2019)",
+    "texto_apoio": "Todos os espaços são geográficos porque determinados pelo movimento da sociedade, da produção. Mas tanto a paisagem quanto o espaço resultam de movimentos superficiais e de fundo da sociedade, uma realidade de funcionamento unitário, um mosaico de relações, de formas, funções e sentidos.",
+    "fonte_apoio": "SANTOS, M. Metamorfose do Espaço habitado: Fundamentos teóricos e metodológicos da Geografia. São Paulo: EDUSP, 2008, p.67.",
+   "pergunta": "O espaço geográfico é o principal objeto de estudo da Geografia e, a partir dele, conceitos e categorias de análises compõem a relação sociedade-natureza. Com bases nesses conhecimentos, associe a primeira coluna com a segunda coluna:\n\n<b>Categorias:</b>\n(I) Paisagem\n(II) Lugar\n(III) Território\n(IV) Região\n(V) Rede\n\n<b>Definições:</b>\n(A) Caracteriza-se pela valorização das relações de afetividade desenvolvidas pelos indivíduos em relação ao ambiente, sendo o resultado de significados construídos pela experiência, com referenciais afetivos desenvolvidos ao longo da vida.\n\n(B) Compreende tudo aquilo que nós vemos, o que nossa visão alcança: trata-se do domínio do visível, aquilo que a vista abarca. Forma-se não apenas de volumes, mas também de cores, movimentos, odores, sons etc.\n\n(C) Sistema integrado de fluxos que se constitui por pontos de acesso, arcos de transmissão e nós ou polos de bifurcação, definindo-se pelo grau de acesso que eles oferecem, além de exibirem aspectos materiais, embora seu conteúdo seja imaterial.\n\n(D) Liga-se à formação econômica e social de uma nação, sendo produto do processo de apropriação e domínio social, cotidianamente, inscrevendo-se num campo de poder, de relações socioespaciais, nas quais a natureza exterior do homem está presente de diferentes maneiras.\n\n(E) É uma porção do espaço delimitada a partir do agrupamento de aspectos, em certa medida, homogêneos, seja por um critério físico-natural, socioeconômico, cultural, entre outros, que resulta em uma diferenciação de área.",
+    
+    "alternativas": [
+      "a) I-A, II-B, III-C, IV-E, V-D.",
+      "b) I-A, II-D, III-C, IV-B, V-E.",
+      "c) I-B, II-A, III-D, IV-E, V-C.",
+      "d) I-B, II-D, III-A, IV-C, V-E.",
+      "e) I-E, II-A, III-B, IV-C, V-D."
+    ],
+    "correta": 2,
+    "comentario": "<p> </p>\n\n\t\t\t<p> O objetivo da questão é de relacionar os processos sociais e culturais e suas expressões territoriais. A\n\t\t\t\tdimensão política do espaço geográfico. A leitura de diferentes linguagens e a produção de conhecimentos\n\t\t\t\tgeográficos.</p>\n\n\n\t\t\t<p>(I-B) PAISAGEM é tudo aquilo que nós vemos, o que nossa visão alcança. Pode ser definida como o domínio\n\t\t\t\tdo visível, aquilo que a vista abarca. É formada não apenas de volumes, mas também de cores, movimentos,\n\t\t\t\todores, sons, etc. Dessa forma, a percepção é sempre um processo seletivo de apreensão. Precisa ser\n\t\t\t\tapreendida para além do que é visível, observável. Essa apreensão é a busca das explicações do que está\n\t\t\t\tpor trás da paisagem, a busca dos significados do que aparece.</p>\n\n\t\t\t<p>(II-A) LUGAR – Caracteriza-se pela valorização das relações de afetividade desenvolvidas pelos indivíduos\n\t\t\t\tem relação ao ambiente, sendo o resultado de significados construídos pela experiência. Trata-se de\n\t\t\t\treferenciais afetivos desenvolvidos ao longo da vida. Lugar se diferencia pela maneira como os fatores\n\t\t\t\tinternos resistem aos externos, determinando as modalidades do impacto sobre a organização\n\t\t\t\tpré-existente. A partir desse choque, impõe-se uma nova combinação de variáveis, um novo arranjo,\n\t\t\t\tdestinado a se manter em constante movimento. É onde a vida acontece, é o lócus do convívio social.</p>\n\n\t\t\t<p>(III-D) TERRITÓRIO - Está ligada à formação econômica e social de uma nação, sendo produto do processo de\n\t\t\t\tapropriação e domínio social, cotidianamente, inscrevendo se num campo de poder, de relações\n\t\t\t\tsocioespaciais, nas quais a natureza exterior do homem está presente de diferentes maneiras. Define-se\n\t\t\t\ttambém como sendo formada pela constelação dos recursos naturais – lagos, rios, planícies, montanhas e\n\t\t\t\tflorestas – e também de recursos criados: estradas de ferro e de rodagem, condutos de toda ordem,\n\t\t\t\tbarragens, açudes, cidades, o que for. É esse conjunto de todas as coisas, arranjadas em sistema, uma\n\t\t\t\ttotalidade, ainda que inerte. Refere-se ao conceito de Milton Santos sobre o território usado (2000, p.\n\t\t\t\t105), que se constitui como um todo complexo, em meio a uma trama de relações complementares e\n\t\t\t\tconflitantes. Daí o vigor do conceito, que convida a pensar processualmente as relações estabelecidas\n\t\t\t\tentre o lugar, a formação socioespacial e o mundo.</p>\n\n\t\t\t<p>(IV-E) REGIÃO - É uma porção do espaço delimitada a partir do agrupamento de aspectos, em certa medida,\n\t\t\t\thomogêneos, seja por um critério físico-natural, socioeconômico, cultural, entre outros, que resulta em\n\t\t\t\tuma diferenciação de área. É também uma unidade administrativa, já que os Estados utilizam, para\n\t\t\t\tadministração com fins de planejamento e hierarquia, a divisão regional. A região não é estática e\n\t\t\t\tengessada; ao contrário disso, ela é dinâmica.</p>\n\n\t\t\t<p>(V-C) REDE – Esquematicamente, uma rede é um sistema integrado de fluxos. A rede é constituída por pontos\n\t\t\t\tde acesso, arcos de transmissão e nós ou polos de bifurcação. Numa rede, o valor dos lugares define-se\n\t\t\t\tpelo grau de acesso que eles oferecem ao conjunto da rede. As redes exibem aspectos materiais, como os\n\t\t\t\tcomputadores, cabos de fibra óptica e satélites de comunicação, mas seu conteúdo é imaterial.</p>"
+   
   },
+  
   {
     "id": 2,
-    "ano": "FUVEST",
-    "pergunta": "Questão simples (Sem imagem e Sem ajuda):",
-    "alternativas": ["Sim", "Não"],
-    "correta": 1,
-    "comentario": "O script não vai dar erro aqui.",
-     "ajuda": { "texto": "Dica importante!", "imagem": "3ano/img/102_q1.png" }
+    "ano": "ENEM 2019",
+    "texto_apoio": "“No sistema capitalista, as muitas manifestações de crise criam condições que forçam a algum tipo de racionalização. Em geral, essas crises periódicas têm o efeito de expandir a capacidade produtiva e de renovar as condições de acumulação. Podemos conceber cada crise como uma mudança do processo de acumulação para um nível novo e superior”.",
+    "fonte_apoio": "HARVEY, D. A produção capitalista do espaço. São Paulo: Annablume, 2005 (adaptado).",
+    "pergunta": "A condição para a inclusão dos trabalhadores no novo processo produtivo descrito no texto é a:",
+    "alternativas": [
+      "associação sindical.",
+      "participação eleitoral.",
+      "migração internacional.",
+      "qualificação profissional.",
+      "regulamentação funcional."
+    ],
+    "correta": 3,
+   "comentario": "<p><b>a) Incorreta.</b> As associações sindicais influenciam na defesa dos interesses, mas não decidem contratações.</p><p><b>b) Incorreta.</b> Fatores políticos/eleitorais não são mencionados como condição de inclusão no texto.</p><p><b>c) Incorreta.</b> Migrações não são centrais para a inclusão e podem até complicar relações trabalhistas.</p><p><b>d) Correta.</b> A fase atual do capitalismo exige maior qualificação profissional para o sistema produtivo moderno.</p><p><b>e) Incorreta.</b> Regulamentações funcionais ligam-se ao Estado, não à capacidade técnica de contratação.</p>"
   },
   {
     "id": 3,
-    "ano": "ENEM 2023",
-    "imagem_apoio": "3ano/img/103_q1.png",
-    "pergunta": "Questão com imagem (Sem ajuda):",
-    "alternativas": ["a", "b", "c", "d", "e"],
+    "ano": "ENEM 2018",
+    "texto_apoio": "“No Segundo Congresso Internacional de Ciências Geográficas, em 1875, a que compareceram o presidente da República, o governador de Paris e o presidente da Assembleia, o discurso inaugural do almirante La Roucière-Le Noury expôs a atitude predominante no encontro: “Cavalheiros, a Providência nos ditou a obrigação de conhecer e conquistar a terra. Essa ordem suprema é um dos deveres imperiosos inscritos em nossas inteligências e nossas atividades. A geografia, essa ciência que inspira tão bela devoção e em cujo nome foram sacrificadas tantas vítimas, tornou-se a filosofia da terra”.",
+    "fonte_apoio": "SAID, E. Cultura e política. São Paulo; Cia das Letras, 1995.",
+    "pergunta": "No contexto histórico apresentado, a exaltação da ciência geográfica decorre do seu uso para o(a):",
+    "alternativas": [
+      "preservação cultural dos territórios ocupados.",
+      "formação humanitária da sociedade europeia.",
+      "catalogação de dados úteis aos propósitos colonialistas.",
+      "desenvolvimento de técnicas matemáticas de construção de cartas.",
+      "consolidação do conhecimento topográfico como campo acadêmico."
+    ],
     "correta": 2,
-    "comentario": "Explicação completa.",
-     "ajuda": { "texto": "Dica importante!", "imagem": "3ano/img/103_q1.png" }
+    "comentario": "<p>A Geografia foi fundamental no século XIX como ciência estratégica para a catalogação de recursos e conquista de territórios no colonialismo.</p>"
+  },
+  {
+    "id": 4,
+    "ano": "IFBA 2018",
+    "imagem_apoio": "3ano/img/t1q4.png",
+    "pergunta": "A ilustração é uma crítica à Divisão Internacional do Trabalho. Além disso, é correto assinalar que ela retrata:",
+    "alternativas": [
+      "O avanço da ciência produzindo um mundo mais igualitário.",
+      "A divisão do mundo entre os países capitalistas industrializados e as empresas transnacionais.",
+      "A presença das novas tecnologias, ao mesmo tempo, nas diversas regiões do mundo.",
+      "A unificação das técnicas na escala global.",
+      "A existência de “dois mundos”: um produtor de tecnologias e outro fornecedor de matérias-primas."
+    ],
+    "correta": 4,
+    "comentario": "<p>A charge critica a desigualdade onde um polo detém a tecnologia e outro é submetido ao fornecimento de recursos básicos.</p>"
+  },
+  {
+    "id": 5,
+    "ano": "UERJ 2014",
+    "imagem_apoio": "3ano/img/t1q5.png",
+    "texto_apoio": "As mesmas forças produtivas engajadas no desenvolvimento extensivo e intensivo do capitalismo produzem tanto a integração como a fragmentação.",
+    "fonte_apoio": "Octavio Ianni. Sociedade global. Rio de Janeiro: Civilização Brasileira, 1999.",
+    "pergunta": "A ilustração e o texto expressam diferentes pontos de vista acerca do processo de globalização. Essa diferença se manifesta pela contradição entre:",
+    "alternativas": [
+      "polarização e dispersão econômica.",
+      "elitização e popularização financeira.",
+      "homogeneização e diversidade cultural.",
+      "especialização e flexibilidade profissional."
+    ],
+    "correta": 2,
+    "comentario": "<p>A globalização integra mercados e comunicações (homogeneização), mas também gera reações de preservação de identidades locais (diversidade).</p>"
+  },
+  {
+    "id": 6,
+    "ano": "ENEM 2011",
+    "texto_apoio": "A introdução de novas tecnologias desencadeou uma série de efeitos sociais que afetaram os trabalhadores e sua organização. O uso de novas tecnologias trouxe a diminuição do trabalho necessário que se traduz na economia líquida do tempo de trabalho, uma vez que, com a presença da automação microeletrônica, começou a ocorrer a diminuição dos coletivos operários e uma mudança na organização dos processos de trabalho.",
+    "pergunta": "A utilização de novas tecnologias tem causado inúmeras alterações no mundo do trabalho. Essas mudanças são observadas em um modelo de produção caracterizado:",
+    "alternativas": [
+      "pelo uso intensivo do trabalho manual.",
+      "pelo ingresso tardio das mulheres no mercado de trabalho industrial.",
+      "pela participação ativa das empresas e trabalhadores na qualificação laboral.",
+      "pelo aumento na oferta de vagas para funções repetitivas.",
+      "pela manutenção de estoques de larga escala."
+    ],
+    "correta": 2,
+    "comentario": "<p>Modelos modernos como o Toyotismo exigem que o trabalhador seja multifuncional e esteja em constante qualificação.</p>"
+  },
+  {
+    "id": 7,
+    "ano": "CPS 2007",
+    "texto_apoio": "Janela indiscreta\n\nBem depois do desaparecimento da fonte\nQue deu origem ao nome da minha rua\nFoi a vez do riacho\nVieram homens e máquinas\nEsmagaram quintais, galinhas e hortas\nMeteram a água em manilhas\nE cobriram tudo com cimento\nMais tarde, foi a vez das velhas casas\nE passaram suas barulhentas máquinas\nSobre as velhas casas e seus muros\nCobertos de hera e fantasmas\nOs herdeiros dos velhos moradores\nNão resistiram ao apelo imobiliário\nE aos apartamentos cotados em dólar\nNo lugar do que era verde\nCrescem estacas adubadas\nPor mãos calosas, rudes mãos,\nDe famintos e suados homens\nQue de vez em quando\nE nem se dão conta disso\nA minha rua, vista assim do oitavo andar\nÉ um gigantesco tabuleiro – móvel paisagem\nOnde só é permitido observar",
+    "fonte_apoio": "Dalila Teles Veras. Janela indiscreta.",
+    "pergunta": "A partir da análise do poema, pode-se argumentar que:",
+    "alternativas": [
+      "os seres vivos procuram se adequar às condições do espaço geográfico.",
+      "a paisagem está cada vez mais condicionada à ação do homem e à sua técnica.",
+      "o homem permanece subordinado às leis fundamentais da natureza física.",
+      "a paisagem sofre alterações provocadas apenas pela ação da água.",
+      "o homem possui uma tendência a preservar seu patrimônio histórico-cultural."
+    ],
+    "correta": 1,
+    "comentario": "<p>O poema relata a artificialização da paisagem e o domínio da construção humana sobre o meio natural.</p>",
+     "ajuda": {
+    "texto": "Dica do Professor: Repare como o texto cita 'homens e máquinas' transformando o que era natural em 'cimento'. Isso é a marca da técnica humana sobre a paisagem!"
   }
-
+  },
   
+  {
+    "id": 8,
+    "ano": "UFMG 2006",
+    "imagem_apoio": "3ano/img/t1q8.png",
+    "pergunta": "Analise a figura das relações entre esferas da Terra. É INCORRETO afirmar que:",
+    "alternativas": [
+      "as setas representam fluxos de matéria e energia.",
+      "a interação resulta na produção do espaço geográfico.",
+      "interações entre litosfera, biosfera, hidrosfera e atmosfera formam paisagens naturais.",
+      "a tecnosfera exerce papel pouco significativo no processo de transformação da superfície."
+    ],
+    "correta": 3,
+    "comentario": "<p>A afirmação incorreta é a D, pois a tecnosfera hoje é a principal responsável pela alteração acelerada da superfície do planeta.</p>"
+  },
+  {
+    "id": 9,
+    "ano": "IF-Sertão-PE 2018",
+    "pergunta": "Se considerarmos o processo de desenvolvimento do capitalismo, podemos dizer que ele foi respectivamente:",
+    "alternativas": [
+      "Industrial, financeiro, comercial e informacional.",
+      "Comercial, industrial, financeiro e informacional.",
+      "Liberal, industrial, comercial e informacional.",
+      "Financeiro, imperialista, comercial e informacional."
+    ],
+    "correta": 1,
+    "comentario": "<p>A ordem histórica correta é: Comercial (Navegações), Industrial (Máquinas), Financeiro (Bancos) e Informacional (Tecnologia/Dados).</p>"
+  },
+  {
+    "id": 10,
+    "ano": "Milton Santos (2020)",
+    "texto_apoio": "“A história das chamadas relações entre sociedade e natureza é... a da substituição de um meio natural... por um meio cada vez mais artificializada, isto é sucessivamente instrumentalizada por essa mesma sociedade”.",
+    "fonte_apoio": "Milton Santos. A natureza do espaço. Edusp 2002.",
+    "pergunta": "Com base nessa afirmação, assinale a opção correta.",
+    "alternativas": [
+      "Cada sociedade se adapta às condições naturais do meio.",
+      "O meio instrumentalizado permite agir sem limites sobre o meio natural.",
+      "As mudanças no meio se dão de forma homogênea.",
+      "O meio natural predomina sobre o social.",
+      "Em cada lugar a intensidade da transformação pode ser diferente, porém a ação humana tende a resultar em algum nível de substituição."
+    ],
+    "correta": 4,
+    "comentario": "<p>Milton Santos explica que o espaço é transformado de natural em artificial conforme as necessidades e técnicas de cada sociedade, gerando substituição do meio.</p>"
+  }
 ]

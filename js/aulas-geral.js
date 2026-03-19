@@ -60,14 +60,22 @@ async function carregarAulas(ano) {
                                     <strong>Conteúdo:</strong> ${aula.conteudo}
                                 </div>
 
-                                <div class="w3-row w3-padding">
-                                    <a href="${aula.linkTexto}" class="w3-button ${leuTexto ? 'w3-green' : 'w3-teal'} w3-margin" style="width:50%">
-                                        ${leuTexto ? 'Revisar Texto' : 'Ler Texto'}
-                                    </a>
+                               <div class="w3-container w3-padding-16">
+                                    <div class="w3-center">
+                                        <a href="${aula.linkTexto}" 
+                                           class="w3-button ${leuTexto ? 'w3-green' : 'w3-teal'} w3-round-large w3-margin-bottom" 
+                                           style="width: 85%; max-width: 300px; font-weight: bold; padding: 12px;">
+                                            ${leuTexto ? '🔍 REVISAR TEXTO' : '📖 LER TEXTO'}
+                                        </a>
+                                    </div>
                                     
-                                    <a href="${aula.linkQuestoes}" class="w3-button ${fezQuestoes ? 'w3-blue' : 'w3-yellow'} w3-margin" style="width:50%">
-                                        ${fezQuestoes ? 'Revisar Questões' : 'Fazer Questões'}
-                                    </a>
+                                    <div class="w3-center">
+                                        <a href="${aula.linkQuestoes}" 
+                                           class="w3-button ${fezQuestoes ? 'w3-blue' : 'w3-yellow'} w3-round-large" 
+                                           style="width: 85%; max-width: 300px; font-weight: bold; padding: 12px;">
+                                            ${fezQuestoes ? '🔄 REVISAR QUESTÕES' : '✍️ FAZER QUESTÕES'}
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -78,6 +86,10 @@ async function carregarAulas(ano) {
     } catch (e) {
         console.error("Erro ao carregar as aulas:", e);
         grid.innerHTML = "<p class='w3-center'>Erro ao carregar as aulas.</p>";
+    }
+    // APÓS desenhar tudo no HTML:
+    if (typeof atualizarHeaderGlobinhos === "function") {
+        atualizarHeaderGlobinhos();
     }
 }
 
@@ -120,7 +132,12 @@ function mostrarProgressoGlobal(aulas, ano) {
             
             <div class="w3-row w3-flex" style="display: flex; align-items: center;">
                 <div class="w3-col s8">
-                    <h4 class="w3-margin-0" style="font-size: 1.1em;">Olá, <b class="w3-text-green">${nome.toUpperCase()}</b></h4>
+                    <h4 class="w3-margin-0" style="font-size: 1.1em;">Olá, <b class="w3-text-green">${nome.toUpperCase()}</b>
+                    <button onclick="prepararTrocaNome()" class="w3-button w3-tiny w3-round-xlarge w3-light-grey" title="Trocar meu nome" style="margin-left:5px;">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                    </h4>
+                    
                     <p class="w3-tiny w3-text-grey w3-margin-0">Progresso no <b>${ano}º Ano</b></p>
                 </div>
                 <div class="w3-col s4 w3-right-align">

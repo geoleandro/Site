@@ -16,14 +16,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
 
 
-    <script src="../../../estilos/jstextos-padrao.js" defer></script>
-    <script src="../../../js/carregar.js" defer></script>
+
+    <script src="../../../js/duvid-core.js" defer></script>
+
     <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+
 
     <title>3º ano - Texto 02</title>
 
@@ -76,9 +84,8 @@
 
 
 
-
             <button class="btnShow"
-                onclick="MostrarProximo(this); Play('../../../audios/inicioNome.mp3'); this.style.display='none'">
+                onclick="playSomUnico('/audios/inicioNome.mp3'); MostrarProximo(this); this.style.display='none'">
                 <i class="fa fa-play"></i> Iniciar Aula
             </button>
             <hr>
@@ -454,51 +461,51 @@
 
 
 
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+            <h4 class="fontePixel"><b>Qual foi o impacto da Revolução Demográfica no crescimento populacional?</b></h4>
 
-
-        <div class="topico w3-container w3-padding-16">
-            <p class="caixa">Escolha a alternativa correta:</p>
-
-            <h4>Qual foi o impacto da Revolução Demográfica no crescimento populacional?</h4>
-
-            <div id="questao1">
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
-                    <label>
-                        aumentou a mortalidade devido à falta de saneamento.
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao">
+                        <span>
+                            a) Aumentou a mortalidade devido à falta de saneamento.
+                        </span>
                     </label>
-                </p>
+                </div>
 
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
-                    <label>
-                        reduziu
-                        drasticamente a natalidade por escassez de recursos.
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="errado" class="radio-duvid">
+                    <label for="p1b" class="card-opcao">
+                        <span>
+                            b) Reduziu drasticamente a natalidade por escassez de recursos.
+                        </span>
                     </label>
-                </p>
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="correto">
-                    <label>
-                        reduziu
-                        a mortalidade devido a melhorias na higiene, impulsionando o crescimento populacional.
+                </div>
+
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="correto" class="radio-duvid">
+                    <label for="p1c" class="card-opcao">
+                        <span>
+                            c) Reduziu a mortalidade devido a melhorias na higiene, impulsionando o crescimento
+                            populacional.
+                        </span>
                     </label>
-                </p>
+                </div>
             </div>
 
-            <!-- <button class="btnShow"
-                onclick="validarRadio(this, 'g1', 'f1', 'gl1', 'Tente revisar o conceito de território!', '1.0')">
-                Confirmar
-            </button> -->
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'Quase! A Revolução Demográfica marca a queda da mortalidade por avanços na medicina e higiene, e não o aumento de mortes ou queda de natalidade imediata.', '10.0')">
+                    Confirmar Resposta
+                </button>
+            </div>
 
-            <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'Quase! A Revolução Demográfica marca a queda da mortalidade por avanços na medicina e higiene, e não o aumento de mortes ou queda de natalidade imediata.', '1.0')">
-                Confirmar Resposta
-            </button>
-
-            <p id="resp1" class="w3-center w3-padding"></p>
-            <div class="area">
-                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80px"
-                    height="80px" alt="globinho1">
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80" height="80"
+                    alt="globinho1">
             </div>
         </div>
 
@@ -541,7 +548,7 @@
             </button> -->
 
             <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'Quase! é a média do tempo de vida de um ser humano.', '1.0')">
+                onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'Quase! é a média do tempo de vida de um ser humano.', '10.0')">
                 Confirmar Resposta
             </button>
 
@@ -763,7 +770,7 @@
         idGlobo: 'globinhorespFinal', 
         classe: '', 
         mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
-        pontos: 4
+        pontos: 5
     });
     
     MostrarProximo(this);
@@ -780,7 +787,7 @@
         </div>
 
 
-     
+
 
 
         <div class="topico">
@@ -935,22 +942,6 @@
     <div id="footer-placeholder"></div>
 
 
-    <script>
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        //     console.log(numB);
-        // }
-
-
-
-
-
-
-    </script>
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -963,29 +954,7 @@
 
     </script>
 
-    <script>
-        // --- INICIALIZAÇÃO DA AULA (ALTA PERFORMANCE) ---
-        document.addEventListener('DOMContentLoaded', () => {
-            // 1. Recupera o nome imediatamente para evitar o "Estudante" genérico
-            const nomeSalvo = localStorage.getItem("duvid_nome");
-            if (nomeSalvo) {
-                nomeEstudante = nomeSalvo;
-            }
 
-            // 2. Injeta Título e Placar antes das imagens carregarem
-            atualizarInterface();
-            injetarMetadadosAula();
-
-            // 3. Verifica Modo Revisão
-            const path = window.location.pathname;
-            const aulaID = path.startsWith('/') ? path.substring(1) : path;
-
-            if (localStorage.getItem("concluido_" + aulaID) === "true") {
-                console.log("Modo Revisão Ativado.");
-                // Opcional: Você pode colocar um aviso visual de "Aula Concluída" aqui
-            }
-        });
-    </script>
 
 
 
