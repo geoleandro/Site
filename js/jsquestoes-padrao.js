@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. ATUALIZA A NAVBAR (Garante que o saldo de globinhos apareça na hora)
         if (typeof atualizarInterface === "function") atualizarInterface();
+
+        atualizarGlobinhosGeral();
+        setTimeout(atualizarGlobinhosGeral, 100);
+        setTimeout(atualizarGlobinhosGeral, 500);
     }
 });
 
@@ -99,6 +103,10 @@ function renderizarQuestao() {
             </button>
         </div>
     `;
+    // NO FINAL DA FUNÇÃO: Reaplica o tamanho de fonte salvo
+    if (typeof inicializarControleFonte === "function") {
+        inicializarControleFonte(); 
+    }
 }
 
 
@@ -119,14 +127,21 @@ function verificar() {
 
     if (!selecionada) {
         if (typeof playSom === "function") playSom('erro');
+
         const textoOriginal = btnVerificar.innerHTML;
-        btnVerificar.innerHTML = "<i class='fa fa-exclamation-triangle'></i> ESCOLHA UMA ALTERNATIVA!";
-        btnVerificar.classList.replace('w3-green', 'w3-red');
+
+        // 1. Muda o texto e adiciona a classe de erro e a tremedeira
+        btnVerificar.innerHTML = "<i class='fa fa-exclamation-triangle'></i> ESCOLHA UMA OPÇÃO!";
+        btnVerificar.classList.add('btn-erro-animado', 'shake-erro');
+
+        if (navigator.vibrate) navigator.vibrate(100); // Vibra no celular
 
         setTimeout(() => {
+            // 2. Volta ao normal
             btnVerificar.innerHTML = textoOriginal;
-            btnVerificar.classList.replace('w3-red', 'w3-green');
+            btnVerificar.classList.remove('btn-erro-animado', 'shake-erro');
         }, 2000);
+
         return;
     }
 
@@ -153,6 +168,9 @@ function verificar() {
         if (typeof DuvidDB !== "undefined") {
             DuvidDB.addGlobinhos(10); // <--- Adiciona 10 globinhos por acerto
         }
+         if (typeof atualizarGlobinhosGeral === "function") {
+        atualizarGlobinhosGeral();
+    }
 
 
         // Dá um fôlego de 100ms para o banco salvar e a tela atualizar
@@ -174,13 +192,30 @@ function verificar() {
         </div>
     `;
 
+
+
     feedback.classList.remove('w3-hide');
     if (btnVerificar) btnVerificar.disabled = true;
+
+    // Faz a tela descer suavemente para mostrar o comentário que acabou de aparecer
+    setTimeout(() => {
+        const feedbackTxt = document.getElementById('feedback-txt');
+        if (feedbackTxt) {
+            feedbackTxt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }, 300); // 300ms de delay para a animação 'w3-animate-bottom' terminar
 }
+
 
 function proxima() {
     document.getElementById('barra-feedback').classList.add('w3-hide');
     indiceAtual++;
+
+    // Faz a página voltar para o topo para ler a nova questão
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 
     if (indiceAtual < questoes.length) {
         renderizarQuestao();
@@ -189,11 +224,11 @@ function proxima() {
     }
 }
 function finalizar() {
-    
+
     // Força a barra a encher totalmente no final
     const progressBarr = document.getElementById('barra-progresso-simulado');
     if (progressBarr) progressBarr.style.width = "100%";
-    
+
     // 1. Esconde as questões e mostra o container de resultado
     document.getElementById('container-questao').classList.add('w3-hide');
     const res = document.getElementById('resultado-final');
@@ -267,59 +302,3 @@ function finalizar() {
     // 6. Atualiza a interface global (Navbar)
     if (typeof atualizarInterface === "function") atualizarInterface();
 }
-
-// function gerarPaginaRevisao() {
-//     const container = document.getElementById('container-questao');
-//     if (!container) return;
-
-//     // Limpa o container e prepara para o "listão"
-//     container.innerHTML = '<h2 class="w3-center fontePixel w3-text-teal">Modo de Revisão Geral</h2>';
-
-//     questoes.forEach((q, index) => {
-//         const divQuestao = document.createElement('div');
-//         divQuestao.className = "w3-card-4 w3-white w3-margin-bottom w3-padding-24 w3-border-bottom";
-//         divQuestao.style.borderLeft = "6px solid #4CAF50"; // Uma bordinha verde para separar
-
-//         divQuestao.innerHTML = `
-//             <div class="w3-row w3-margin-bottom">
-//                 <div class="w3-col s8"><b class="w3-text-green">Questão ${index + 1}</b></div>
-//                 <div class="w3-col s4 w3-right-align w3-text-grey">ID: ${q.id} | ${q.ano || ''}</div>
-//             </div>
-
-//             ${q.texto_apoio ? `
-//                 <div class="w3-panel w3-leftbar w3-sand w3-padding-small w3-small" style="white-space: pre-line;">
-//                     <i>${q.texto_apoio}</i>
-//                     ${q.fonte_apoio ? `<p class="w3-tiny w3-right-align">— ${q.fonte_apoio}</p>` : ''}
-//                 </div>
-//             ` : ''}
-
-//             ${q.imagem_apoio ? `
-//                 <div class="w3-center w3-margin-bottom">
-//                     <img src="${q.imagem_apoio}" style="max-height:150px; border:1px solid #ddd">
-//                     <p class="w3-tiny w3-text-red">Caminho: ${q.imagem_apoio}</p>
-//                 </div>
-//             ` : ''}
-
-//             <p class="w3-medium" style="white-space: pre-line;">${q.pergunta}</p>
-
-//             <div class="w3-light-grey w3-padding w3-round w3-small">
-//                 <b>Alternativas:</b><br>
-//                 ${q.alternativas.map((alt, i) => `
-//                     <span style="${i === q.correta ? 'color: green; font-weight: bold;' : 'color: #777;'}">
-//                         ${String.fromCharCode(97 + i)}) ${alt} ${i === q.correta ? ' ✅' : ''}
-//                     </span><br>
-//                 `).join('')}
-//             </div>
-
-//             <div class="w3-margin-top w3-padding w3-pale-blue w3-border w3-border-blue w3-round w3-small">
-//                 <b>Comentário Cadastrado:</b><br>
-//                 ${q.comentario || '<span class="w3-text-red">Sem comentário!</span>'}
-//             </div>
-//         `;
-//         container.appendChild(divQuestao);
-//     });
-
-//     // Remove botões de navegação para não atrapalhar a leitura
-//     const btnVerificar = document.getElementById('btn-verificar');
-//     if (btnVerificar) btnVerificar.style.display = 'none';
-// }

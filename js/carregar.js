@@ -70,27 +70,28 @@ function verificarSeEhAula() {
 }
 
 
-
 function inicializarControleFonte() {
-    // Seleciona os botões (ajuste os IDs para baterem com o seu header.html)
     const btnA = document.getElementById('increase-font') || document.querySelector('[onclick="aumentarFonte()"]');
     const btnD = document.getElementById('decrease-font') || document.querySelector('[onclick="diminuirFonte()"]');
     
-    // Alvo: O container principal que usamos em todas as páginas novas
-    const corpo = document.querySelector('.w3-content') || document.querySelector('main') || document.body;
+    // Alvos: O main e especificamente o container das questões
+    const corpo = document.querySelector('main') || document.body;
+    const containerQuestao = document.getElementById('container-questao');
 
-    if (!corpo) return;
-
-    // Recupera o tamanho salvo ou define o padrão
     let size = parseFloat(localStorage.getItem('userFontSize')) || 1.05;
 
     const update = () => {
-        corpo.style.fontSize = size.toFixed(2) + "rem";
-        localStorage.setItem('userFontSize', size);
+        // Aplica ao corpo principal
+        if (corpo) corpo.style.fontSize = size.toFixed(2) + "rem";
         
+        // Aplica especificamente ao container de questões para forçar as alternativas
+        if (containerQuestao) {
+            containerQuestao.style.fontSize = size.toFixed(2) + "rem";
+        }
+        
+        localStorage.setItem('userFontSize', size);
     };
 
-    // Se os botões existirem na página, atribui as funções
     if (btnA) btnA.onclick = (e) => { 
         e.preventDefault(); 
         if (size < 1.5) { size += 0.05; update(); } 
@@ -101,7 +102,6 @@ function inicializarControleFonte() {
         if (size > 0.8) { size -= 0.05; update(); } 
     };
 
-    // Aplica o tamanho salvo ao carregar
     update();
 }
 

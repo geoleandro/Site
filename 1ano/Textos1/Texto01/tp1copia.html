@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="../../../js/duvid-core.js" defer></script>
+
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+
+    <title></title>
+
+
+
+    <style>
+        .topico {
+            display: block;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+
+        #fundoQ {
+            background: url(tp1F01A.png), no-repeat;
+            width: 340px;
+            height: auto;
+            margin: auto;
+            overflow: visible;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 10px;
+
+
+
+
+        }
+
+        
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+        <!-- Navigation (Stays on Top) -->
+
+
+        <div class="topico">
+
+
+         
+
+
+
+            <h1 id="h1"> </h1>
+
+
+            <!-- Futuro audio -->
+            <!-- <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div> -->
+
+
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
+
+
+                <p><strong>Objetivo:</strong> Entender como estão relacionados os conceitos fundamentais da
+                    Geografia na
+                    explicação das desigualdades socioespaciais presentes no mundo atual. </p>
+            </div>
+
+
+
+
+
+
+
+            <button class="btnShow"
+                onclick="playSom('/audios/inicioNome.mp3'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+
+
+            <div class="topico">
+
+                <h2> Introdução </h2>
+
+
+
+                <p> <span class="primeiraLetra">O</span>estudo da Geografia pode ser representado de acordo
+                    com o movimento da imagem acima: no início uma superfície terrestre sem modificações pelo homem.
+                    Com o passar do tempo, a capacidade de modificar a natureza se intensifica através do acréscimo de
+                    objetos
+                    fabricados pelos homens, como estradas, energia elétrica e indústrias. </p>
+
+                <p>Assim temos um novo mundo criado e organizado de maneira distinta, à depender do grau de
+                    tecnologia e da influência dos objetos, naturais ou sociais em uma determinada porção da superfície
+                    terrestre.</p>
+
+                <p>A Geografia contribui para entendermos essa relação entre o homem e natureza, que foi
+                    transformada pelo trabalho humano. </p>
+
+                <p>Sabemos que há uma distribuição desigual dos objetos pelo globo terrestre, tanto o clima e
+                    a vegetação como as infraestruturas de transportes ou acesso ao sistema de saúde.</p>
+
+
+
+
+                <p>Nesta aula, veremos como a Geografia dispõe de verdadeiras ferramentas para explicar a
+                    dinâmica social repleta de desigualdades através do <span
+                        onclick="Aparecer('imagem1','citacao1')"><mark>espaço
+                            geográfico.</mark></span> </p>
+
+                <img id="imagem1" src="tp1F01.png" alt="Salvador, Bahia" class="w3-mobile" style=display:none>
+
+
+
+                <span class="citacao" id="citacao1" style=display:none> Vista aérea da cidade de Salvador, Estado da
+                    Bahia.
+                    Fonte: Wikipédia. </span>
+
+
+
+                <p>Ao final, entenderemos como o espaço em que vivemos influencia na formação das sociedades,
+                    dos países, das cidades ou do próprio bairro em que moramos. </p>
+
+                <p>Como que a Geografia faz isso? Mas afinal de contas, o que é Geografia?</p>
+
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+                <hr>
+
+
+
+
+            </div>
+
+
+
+
+
+
+            <div class="topico">
+
+                <p class="caixa"> Agora é com você!</p>
+
+
+                <div class="w3-panel w3-pale-green">
+                    <p class="w3-pale-green"> Você estudou Geografia desde o ensino primário. Fez exercícios sobre o seu
+                        local de moradia (maquete de sua casa), desenhou um mapa do seu bairro e estudou seu município.
+                    <p class="w3-pale-green">No ensino fundamental conheceu as diferentes paisagens e continentes em
+                        direção a
+                        um mundo
+                        conectado, isto é, globalizado.</p>
+                    <p class="w3-pale-green"> Agora no Ensino Médio, vai aprofundar essas relações no conhecimento do
+                        mundo
+                        natural, do Brasil e
+                        do mundo na era da globalização.</p>
+                    <p class="w3-pale-green">A partir disso, escreva em seu <strong>caderno</strong> 5 palavras (sem a
+                        preocupação com o
+                        significado neste
+                        momento) sobre o que acha que é Geografia.
+                    </p>
+                </div>
+
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+            </div>
+
+
+
+
+
+
+            <div class="topico w3-container w3-padding-16">
+                <p class="caixa">Escolha a alternativa correta:</p>
+
+                <h4> O objeto de estudo da Geografia é o:</h4>
+
+                <div id="questao1">
+                    <p>
+                        <input class="w3-radio" type="radio" name="pergunta1" value="errado">
+                        <label>
+                            vegetação
+                        </label>
+                    </p>
+                    <p>
+                        <input class="w3-radio" type="radio" name="pergunta1" value="correto">
+                        <label>
+                            espaço geográfico
+                        </label>
+                    </p>
+                    <p>
+                        <input class="w3-radio" type="radio" name="pergunta1" value="errado">
+                        <label>
+                            populações
+                        </label>
+                    </p>
+                </div>
+
+                <!-- <button class="btnShow"
+                onclick="validarRadio(this, 'g1', 'f1', 'gl1', 'Tente revisar o conceito de território!', '1.0')">
+                Confirmar
+            </button> -->
+
+                <button class="btnShow"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'é o espaço geográfico!', '1')">
+                    Confirmar Resposta
+                </button>
+
+                <p id="resp1" class="w3-center w3-padding"></p>
+                <div class="area">
+                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80px"
+                        height="80px" alt="globinho1">
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="topico">
+
+
+                <p class=" caixa"> Questione a realidade!</p>
+
+                <div class="w3-panel w3-pale-yellow ">
+                    <p class="w3-pale-yellow"> Dentre as diversas palavras sobre o que a Geografia estuda anotadas no
+                        caderno,
+                        temos:
+                        <strong>espaço geográfico</strong>, climas, mapas, montanhas, <strong>lugar</strong>,
+                        <strong>território</strong>, vegetação,
+                        <strong>região</strong>, globalização, <strong>paisagens</strong> etc.
+                    </p>
+                    <p class="w3-pale-yellow"> Nesse exercício você vai treinar sua habilidade de fazer perguntas. A
+                        Geografia
+                        estuda
+                        tudo isso, mas não de forma desorganizada! </p>
+                    <p class="w3-pale-yellow">Ela utiliza ferramentas chamadas <span
+                            onclick="this.innerHTML='conceito (uma ideia sobre algo ou alguma coisa)'"><mark>conceitos</mark></span>.
+                        Esses conceitos estão destacados acima.</p>
+                    <p class="w3-pale-yellow">Elabore em seu caderno uma pergunta para cada um deles. Por exemplo:</p>
+                    <div>
+                        <ul>
+                            <li> Desde quando existe o território? </li>
+                            <li> Para que serve a região? </li>
+                            <li> Qual a relação deste conceito com a política ou o poder? </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+                <p>E assim por diante. Não se preocupe com as respostas neste momento.</p>
+
+
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+            </div>
+
+
+
+
+            <div class="topico">
+
+                <div class="area margemAbaixo ">
+                    <div class="postit-tp1 w3-margin-top ">
+                        <h2><mark><span class="w3-padding">Anote ai:</span></mark></h2>
+                        <h4>A Geografia estuda a realidade por meio de seu conceito geral chamado <span
+                                class="mark2">Espaço
+                                Geográfico</span> e de seus auxiliares principais:</h4>
+                        <ul class="lista ">
+                            <li>Território</li>
+                            <li>Paisagem</li>
+                            <li>Lugar</li>
+                            <li>Região</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+            </div>
+
+
+            <div class="topico">
+
+                <p><span class="mark2"> <strong>Espaço geográfico</strong></span> - A Geografia estuda a
+                    realidade a partir
+                    desse conceito principal e de seus auxiliares. </p>
+
+                <p>Esse espaço humano está ligado aos objetos visíveis nas paisagens, como casas, indústrias,
+                    igrejas etc., mas também aos invisíveis, como dinheiro, informação, comunicação, dentre outros. </p>
+
+                <p>O que permite a modificação da superfície terrestre pelo homem é a <span
+                        onclick="this.innerHTML='técnica  (meios ou instrumentos que alteram a natureza)'"><mark>técnica</mark></span>.
+                    E o espaço geográfico incorpora e reflete o grau de desenvolvimento técnico de cada sociedade.</p>
+
+                <p>Assim, os objetos criados pela técnica permitem as ações humanas se manifestarem e
+                    organizarem espacialmente a sociedade. Exemplo: os eventos culturais precisam de um objeto para
+                    serem
+                    realizados, um teatro, praça ou uma rua. </p>
+
+                <p> Veja abaixo o processo de transformação desse espaço geográfico.</p>
+
+                <div class="area">
+                    <img id="imagem" src="tp1F01B.png" alt="Transformação do espaço geográfico" class="w3-mobile">
+                </div>
+
+
+                <p>Portanto, o Espaço Geográfico é um conjunto <span
+                        onclick="this.innerHTML='indissociável (que não pode ser separado)'"><mark>indissociável</mark></span>
+                    de sistemas de objetos e sistemas de ações.
+
+                <p> Leia a citação abaixo: </p>
+
+                <div id="fundoQ">
+
+                    <p>
+                        “Durante a Guerra Fria, os laboratórios do Pentágono chegaram a cogitar a
+                        produção de um engenho, a bomba de nêutrons, capaz de aniquilar a vida humana em uma dada área,
+                        mas
+                        preservando todas as construções. O presidente Kennedy afinal renunciou de levar a cabo esse
+                        projeto. Senão,
+                        o que na véspera seria ainda o espaço, após a temida explosão seria apenas paisagem.”
+                    </p>
+
+                    <span id="citacao6">SANTOS, 2002. Foto: O Globo.</span>
+                </div>
+
+
+
+                <p>Esse episódio da bomba de nêutrons mostra a diferença entre esses dois conceitos, espaço e
+                    paisagem.</p>
+
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+            </div>
+
+
+
+
+
+            <div class="topico">
+
+                <p><span class="mark2"> <strong>Paisagem</strong> </span> - É tudo aquilo que vemos, o que a
+                    visão alcança
+                    em um lance de olhar. É formada de volume, mas também de odores, sons, movimentos, ou seja, pelo o
+                    que os
+                    sentidos captam. </p>
+
+                <p>Ela pode ser <strong>natural</strong> (com a presença de montanhas, rios ou vegetação) ou
+                    <strong>social</strong> (repleta de prédios, casas ou hospitais).
+                </p>
+
+                <p>A paisagem é o ponto de partida do estudo do Espaço geográfico.</p>
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+            </div>
+
+
+
+            <div class="topico">
+
+                <p class=" caixa"> Teste suas habilidades!</p>
+
+                <p><img src="tp1F02.png" alt="Paisagem natural e social" class="w3-mobile"> </p>
+
+                <p class="divCaixa1 w3-large w3-margin"> a) Quais elementos estão presentes na foto A ? E quais os
+                    elementos estão
+                    evidentes na foto B?</p>
+
+
+                <p>Os elementos naturais também provocam alterações nas paisagens, mesmo que demorem milhares
+                    de anos para ocorrer, como o desgaste do relevo de uma montanha pelo vento.</p>
+
+                <p>As paisagens humanizadas ou <span
+                        onclick="this.innerHTML='antrópicas (do grego Antropos - ser humano, relativo ao homem)'"><mark>antrópicas</mark></span>
+                    são o resultado do trabalho humano na superfície terrestre.</p>
+
+                <p>Esse trabalho resulta em várias formas ou objetos que persistem no tempo e que podemos
+                    identificar em diferentes paisagens pelo mundo.</p>
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+                <br><br>
+
+            </div>
+
+
+
+            <div class="topico">
+
+
+                <div class="area"><img src="tp1F02A.png" alt="tp1F02A" class="w3-mobile"></div>
+
+                <span class="citacao">Fonte: Wikipédia </span>
+
+
+                <p>Na foto acima vemos Machu Picchu ("velha montanha"), também chamada "cidade perdida dos
+                    Incas", é uma cidade pré-colombiana bem conservada, localizada no topo de uma montanha, a 2 400
+                    metros de
+                    altitude, no vale do rio Urubamba, atual Peru.</p>
+
+                <p>A leitura dessa paisagem através da observação, <span
+                        onclick="this.innerHTML='análise (decompor um todo complexo em suas partes)'"><mark>análise</mark></span>
+                    e interpretação de seus elementos podem nos ajudar a entender como era a forma de organização
+                    social,
+                    cultural, territorial e política dessa cidade.</p>
+
+
+
+                <p>As paisagens registram as várias transformações da natureza e da sociedade realizada pelos
+                    homens. Ela acumula diferentes “tempos” em seus elementos. E pode conter o antigo junto ao novo.</p>
+
+                <div class="area"><img src="tp1F02B.png" alt="Central Park" class="w3-mobile"></div>
+
+                <span class="citacao">Fonte: Pixalbay </span>
+
+
+
+                <p>O Central Park é um grande parque dentro da cidade de Nova Iorque. Possui uma área de 3,41
+                    km² e está localizado no distrito de Manhattan. </p>
+
+                <p>Foi inaugurado em 1857 e sua paisagem revela o grande poder técnico do homem em transformar
+                    a natureza.</p>
+
+
+                <p>Embora o parque pareça natural, ele é, na verdade, ajardinado quase inteiramente e contém
+                    diversos lagos artificiais, trilhas para caminhadas, duas pistas de patinagem no gelo, um santuário
+                    vivo e
+                    campos diversos.</p>
+
+                <p>Os grandes edifícios, os escritórios, o poder econômico da cidade de Nova Iorque no mundo
+                    mostram que as leis da natureza já não exercem o total domínio no ritmo de vida da sociedade do
+                    século XXI.
+                </p>
+
+                <p>Alguns objetos como casas rurais foram substituídas por lojas modernas de departamento ou
+                    teatros famosos. </p>
+
+                <p>Os elementos naturais, como o rio Hudson que desemboca no Oceano Atlântico, influenciam a
+                    organização do espaço geográfico e também serve como fronteira entre Estados, países ou territórios.
+                </p>
+
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+            </div>
+
+            <div class="topico w3-container w3-padding-16">
+                <p class="caixa">Escolha a alternativa correta:</p>
+
+                <div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+                    <p class="w3-sand">Uma região produtora de algodão, de café ou trigo. Uma paisagem urbana
+                        ou uma cidade de
+                        tipo europeu ou de tipo americano. Um centro urbano de negócios e as diferentes periferias
+                        urbanas. Tudo
+                        isto são paisagens, formas mais ou menos duráveis. O seu traço comum é ser a combinação de
+                        objetos
+                        naturais
+                        e de objetos fabricados, isto é, objetos sociais, e ser o resultado da acumulação da atividade
+                        de muitas
+                        gerações" <span class="w3-small">(SANTOS, 2004).</span></p>
+
+                </div>
+
+                <p>Pode-se inferir do texto acima que a paisagem é constituída ao longo do tempo:</p>
+
+                <div id="questao2">
+                    <p>
+                        <input class="w3-radio" type="radio" name="pergunta2" value="errado">
+                        <label>
+                            por objetos sociais.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input class="w3-radio" type="radio" name="pergunta2" value="errado">
+                        <label>
+                            por objetos naturais.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input class="w3-radio" type="radio" name="pergunta2" value="correto">
+                        <label>
+                            pelo acúmulo de objetos naturais e sociais.
+                        </label>
+                    </p>
+                </div>
+
+                <!-- <button class="btnShow"
+                onclick="validarRadio(this, 'g1', 'f1', 'gl1', 'Tente revisar o conceito de território!', '1.0')">
+                Confirmar
+            </button> -->
+
+                <button class="btnShow"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'formada pelo acúmulo de objetos naturais e sociais.', '1')">
+                    Confirmar Resposta
+                </button>
+
+                <p id="resp2" class="w3-center w3-padding"></p>
+                <div class="area">
+                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80px"
+                        height="80px" alt="globinho2">
+                </div>
+            </div>
+
+
+
+            <div class="topico">
+
+
+
+
+                <p><span class="mark2"><strong>Território</strong></span> - Está intimamente relacionado com o
+                    espaço e
+                    poder. É comumente entendido como uma área delimitada por <strong>fronteiras</strong>. </p>
+
+                <p> A partir dessa configuração de poder são gerados conflitos para controlar um determinado
+                    espaço e seus recursos, sejam eles naturais ou sociais. </p>
+
+                <p>Trata-se de uma porção do espaço geográfico onde relações hierárquicas se estabelecem. </p>
+
+
+
+
+                <p>Na foto abaixo temos o exemplo da disputa por território por décadas entre os país de
+                    Israel e o povo da Palestina, este último ainda sem Estado reconhecido. </p>
+
+                <div class="area"><img src="tp1F03.png" alt="Área de tensão no globo" class="w3-mobile"> </div>
+
+
+                <p>Ao longo do tempo o conflito entre distintas visões de mundo, religioso (Israel
+                    representando o Judaísmo e a Palestina o Islamismo) e poder econômico e político alterou a
+                    delimitação do
+                    espaço em diversos territórios.</p>
+
+                <p>O território, portanto, não é somente uma área delimitada por uma espécie animal, mas
+                    também adquiriu contornos políticos.</p>
+
+                <p>Quando um grupo de pessoas, instituições, empresas etc. <span
+                        onclick="this.innerHTML='apropriam-se (tomar como propriedade, apropriar)'"><mark>apropriam-se</mark></span>
+                    de um espaço e constroem regras para seu uso, delimitam fronteiras, que devem ser seguidas por todos
+                    aqueles
+                    inseridos naquele espaço, elas definem um território.</p>
+
+                <p>Leia a citação abaixo:</p>
+
+                <div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+                    <p class="w3-sand"> O território é um campo de forças, uma teia ou rede de relações sociais
+                        que, a
+                        par de sua complexidade interna, define, ao mesmo tempo, um limite, uma alteridade: a diferença
+                        entre
+                        nós (o
+                        grupo, os membros da coletividade ou 'comunidade', os insiders) e os 'outros' (os de fora, os
+                        estranhos,
+                        os
+                        outsiders).” <span class="w3-small"> (SOUZA, 1995).</span></p>
+                </div>
+
+                <p>É por meio da análise da construção histórica de um determinado território que podemos
+                    reconhecer a origem das desigualdades no espaço, a destruição da cultura ou de povos indígenas ou o
+                    domínio
+                    de um povo sobre outro atualmente.</p>
+
+                <div class="w3-margin">
+                    <p class="divCaixa1 w3-large"> Em sua cidade, dê exemplos de territórios ocupados por grupos
+                        sociais.
+                        Quais conflitos por território você já ouviu falar? Esses conflitos podem afetar bastante o
+                        lugar em que
+                        vivemos.</p>
+                </div>
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+
+            </div>
+
+
+
+
+
+            
+	<div class="topico">
+		<p><span class="mark2"> <strong>Lugar</strong> </span> - Trata-se da porção do espaço
+			geográfico com a qual
+			os sujeitos convivem diretamente e possuem uma ligação mais estreita, como o local de moradia, do trabalho,
+			do lazer etc.</p>
+
+		<p>O nosso quarto constitui um dos exemplos da porção do espaço geográfico em que temos
+			relações diretas de pertencimento, embora nem todos apresentem a mesma infraestrutura.</p>
+
+		<div class="area"><img src="tp1F06.png" alt="tp1F06" class="w3-mobile"></div>
+
+		<span class="citacao">Fonte: Pinterest,2020.</span>
+
+		<p>Da mesma forma, o lugar recebe os impulsos globais, alterando o cotidiano e as relações
+			estabelecidas historicamente entre a comunidade e seu entorno. </p>
+
+		<p>Um exemplo diz respeito à chegada de uma empresa transnacional, como uma grande firma do
+			setor automobilístico, em uma pequena cidade. </p>
+
+
+		<p>O lugar participa dessa relação entre a escala global e a local, e revela as transformações
+			desses eventos na sua infraestrutura, circulação, comércio, serviços etc.</p>
+
+		<p>O assunto sobre as escalas geográficas e cartográficas será visto nas próximas aulas.</p>
+
+        
+		<div class="w3-margin">
+			<p class="divCaixa1 w3-large"> Identifique os lugares, na cidade ou no campo, com os quais você possui
+				relações diretas, seja na área de lazer, estudo, trabalho, deslocamentos, dentre outros.</p>
+		</div>
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+	</div>
+
+
+
+    
+	<div class="topico">
+
+		<p><span class="mark2"> <strong>Região</strong> </span> – No passado, a noção de região
+			compreendia a união
+			de elementos com características comuns, como clima, vegetação ou tipo de solo. De acordo com o interesse do
+			pesquisador, escolhia-se um determinado critério e dividia-se o espaço em regiões, tal como no mapa abaixo
+			sobre a vegetação mundial: </p>
+
+		<div class="area"><img src="tp1F04.png" alt="Mapa vegetação mundial" class="w3-mobile"></div>
+
+		<p> No período atual, pode ser entendida como o resultado da expansão da globalização que
+			fragmenta o espaço total em partes funcionais, isto é, áreas responsáveis por desempenhar um papel
+			específico, seja na produção, comercialização ou distribuição de mercadorias na atual dinâmica do
+			capitalismo. Ou como escreveu o grande geógrafo Milton Santos:</p>
+
+
+		<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+			
+
+				<p class="w3-sand">[...] A região é, na verdade, o resultado do próprio avanço da
+					globalização,
+					já que a cada progresso da difusão dos vetores da modernidade global cria-se uma correspondente
+					diferenciação dos espaços da superfície terrestre: por mais que a globalização tente homogeneizar o
+					espaço,
+					ela acaba por fragmentá-lo e regionalizá-lo ainda mais"<span class="w3-small"> (Adaptado)</span>.
+				</p>
+			
+
+		</div>
+
+		<p> Veja o mapa abaixo sobre as possibilidades de se regionalizar o espaço geográfico: </p>
+
+		<div class="area"><img src="tp1F05.png" alt="Regionalização saúde Estado de São Paulo" class="w3-mobile"></div>
+
+		<p class="citacao"> Fonte: COSEMS/SP - Conselho de Secretarias Municipais de Saúde (Adaptado).
+		</p>
+		<br>
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+	</div>
+
+
+            <div class="topico">
+
+
+               <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+
+                <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                     A Geografia estuda o espaço onde ficam
+				as estrelas e os planetas? O espaço sideral?
+                    </strong> </p>
+
+                <p><span class="primeiraLetra">R:</span>
+
+                  É uma boa pergunta. A Geografia estuda o espaço
+			geográfico, o espaço humano. Conforme vimos, a presença do homem, de suas ações com os objetos naturais e
+			sociais são fundamentais para a existência do espaço geográfico, das paisagens transformadas pelo trabalho
+			do homem. Sendo assim, o espaço dos astros, dos planetas não é o que caracterizaria o estudo da Geografia,
+			não diretamente, pois precisamos do elemento humano nesse contexto.
+
+                </p>
+
+
+                <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                       Poderia explicar melhor a diferença
+				entre Lugar e Região?
+                    </strong> </p>
+
+                <p><span class="primeiraLetra">R:</span>
+
+                  Vamos pensar no Espaço geográfico como algo que
+			envolve a todos nós, isto é, uma totalidade sempre em movimento. Entretanto, não vivemos em todo o espaço
+			geográfico, mas sim em algumas de suas partes. O Lugar, de modo geral, é aquela porção do espaço onde
+			realmente existimos, temos experiências e vivências cotidianas com outras pessoas, como em nossa casa, nosso
+			bairro, ou em um parque. Já a região é, da mesma forma, uma porção do espaço total, mas ela foi criada a
+			partir de um interesse e segundo critérios específicos. Existe, por exemplo, a região do Cerrado brasileiro,
+			delimitada a partir da vegetação típica que ela apresenta. Ou a região das pessoas sem acesso ao saneamento
+			básico, no qual foram utilizados um critério social e outro sanitário. Esse assunto também está ligado a
+			<strong>escala geográfica</strong> e <strong>cartográfica</strong> que veremos mais adiante.
+
+                </p>
+
+
+                  <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                     Por que é importante estudar
+				Geografia?
+                    </strong> </p>
+
+                <p><span class="primeiraLetra">R:</span>
+
+                 A Geografia é tão antiga quanto a própria História, e
+			porque não dizer da curiosidade do homem pelo seu mundo. No passado, as grandes conquistas, batalhas e
+			relatos de viagens, fascinavam os povos e seus governantes. Nesse sentido, o estudo da Geografia foi (e
+			ainda é) uma forma de descobrir como o espaço inimigo era organizado, onde estavam localizados os seus
+			exércitos, seu armamento, enfim, sua estratégia de domínio do território. Hoje, as transformações no mundo
+			são extremamente rápidas, desde o local, representado pelo nosso bairro, até o global, quer dizer, o mundo
+			todo. Dessa forma, dependendo da maneira como organizamos nosso meio, teremos uma sociedade mais justa ou
+			uma repleta de desigualdades. Todo esse conhecimento vai refletir no exercício de nossa cidadania, que é, de
+			modo geral, a capacidade de participarmos da transformação da realidade em que vivemos, seja qual for a
+			porção do espaço geográfico em que estamos localizados.
+                </p>
+
+
+
+
+                <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+                <br><br>
+
+
+                <hr>
+
+            </div>
+
+
+
+
+
+            <div class="topico">
+                <h3>Já podemos finalizar esta aula!</h3>
+                <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+
+    ProcessarResposta(this, {
+        correto: true, 
+        idFrase: 'respFinal', 
+        idGlobo: 'globinhorespFinal', 
+        classe: '', 
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    
+    MostrarProximo(this);
+">Próximo</button>
+
+                <p id="respFinal"></p>
+
+                <div class="area">
+                    <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                            alt="globinhorespFinal" width="80" height="80">
+                    </p>
+                </div>
+                <hr>
+            </div>
+
+
+            <div class="topico">
+
+
+                <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+                <div class="w3-container">
+
+                    <div id="id01" class="w3-modal" style="z-index: 2000;">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
+                            <div class="w3-container w3-center w3-padding-32">
+                                <span onclick="fecharModal('id01')" class="w3-button w3-display-topright">&times;</span>
+
+                                <div class="nota w3-xlarge w3-padding-16 fontePixel"></div>
+
+                                <img src="../../../fotoIndex/globinhoPe.png" width="100" class="w3-animate-bottom">
+                                <br><br>
+                                <button class="w3-button w3-green w3-round" onclick="fecharModal('id01');">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+                <hr>
+                <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+
+                <div class="w3-row-padding">
+
+                    <div class="w3-col m6 w3-margin-bottom">
+                        <div class="postit-tp9 w3-green w3-card-4 pulsar">
+                            <a href="https://www.dw.com/..." target="_blank">
+                                <span class="w3-text-white">Quase metade da população mundial vive na pobreza</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w3-col m6 w3-margin-bottom">
+                        <div class="postit-tp9 w3-blue w3-card-4 pulsar">
+                            <a href="https://www.acnur.org/..." target="_blank">
+                                <span class="w3-text-white">108,4 milhões de pessoas deslocadas à força</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w3-col m6 w3-margin-bottom">
+                        <div class="postit-tp9 w3-white w3-card-4 pulsar">
+                            <a href="https://news.un.org/..." target="_blank">
+                                <span class="w3-text-black">Fome cresce no mundo e atinge 9,8% da população</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w3-col m6 w3-margin-bottom">
+                        <div class="postit-tp9 w3-deep-orange w3-card-4 pulsar">
+                            <a href="https://cee.fiocruz.br/..." target="_blank">
+                                <span class="w3-text-white">2,2 bilhões de pessoas não têm água potável</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="w3-container w3-padding-64">
+                    <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
+                            Bibliográficas</strong></h3>
+
+                    <div class="w3-row-padding w3-margin-top">
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <div class="w3-card-4 w3-white w3-border-top w3-border-green"
+                                style="border-width: 6px !important; min-height: 180px;">
+                                <div class="w3-container w3-padding">
+                                    <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
+                                    <p class="w3-margin-top">SANTOS, Mílton. <br><b>Por uma outra globalização</b>: do
+                                        pensamento único à consciência universal. <br>Rio de Janeiro: Record, 2000.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <div class="w3-card-4 w3-white w3-border-top w3-border-blue"
+                                style="border-width: 6px !important; min-height: 180px;">
+                                <div class="w3-container w3-padding">
+                                    <span class="w3-tag w3-blue w3-small fontePixel">Geografia Crítica</span>
+                                    <p class="w3-margin-top">SANTOS, Milton. <br><b>O espaço do cidadão</b>. <br>São
+                                        Paulo:
+                                        Editora da USP, 2007.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <div class="w3-card-4 w3-white w3-border-top w3-border-deep-orange"
+                                style="border-width: 6px !important; min-height: 180px;">
+                                <div class="w3-container w3-padding">
+                                    <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
+                                    <p class="w3-margin-top">VOGLER, Christopher. <br><b>A jornada do escritor</b>.
+                                        <br>Rio
+                                        de
+                                        Janeiro: Nova Fronteira, 2006.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <div class="w3-card-4 w3-white w3-border-top w3-border-indigo"
+                                style="border-width: 6px !important; min-height: 180px;">
+                                <div class="w3-container w3-padding">
+                                    <span class="w3-tag w3-indigo w3-small fontePixel">Documento Oficial</span>
+                                    <p class="w3-margin-top">BRASIL. Ministério da Educação. <br><b>Base Nacional Comum
+                                            Curricular</b>. <br>Brasília: MEC/Secretaria de Educação Básica, 2018.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+
+    </main>
+
+
+
+
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+    <!-- Footer -->
+
+    <div id="footer-placeholder"></div>
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+    <script>
+        // --- INICIALIZAÇÃO DA AULA (ALTA PERFORMANCE) ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Recupera o nome imediatamente para evitar o "Estudante" genérico
+            const nomeSalvo = localStorage.getItem("duvid_nome");
+            if (nomeSalvo) {
+                nomeEstudante = nomeSalvo;
+            }
+
+            // 2. Injeta Título e Placar antes das imagens carregarem
+            atualizarInterface();
+            injetarMetadadosAula();
+
+            // 3. Verifica Modo Revisão
+            const path = window.location.pathname;
+            const aulaID = path.startsWith('/') ? path.substring(1) : path;
+
+            if (localStorage.getItem("concluido_" + aulaID) === "true") {
+                console.log("Modo Revisão Ativado.");
+                // Opcional: Você pode colocar um aviso visual de "Aula Concluída" aqui
+            }
+        });
+    </script>
+
+</body>
+
+</html>

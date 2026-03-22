@@ -44,6 +44,10 @@
         .topico.mostrar {
             display: block
         }
+         .topico * {
+            transition: color 3s ease, background-color 3s ease;
+        }
+
     </style>
 
 
@@ -55,10 +59,14 @@
 
     <div id="header-placeholder"></div>
 
-      <div id="aviso-status" class="w3-margin-top"></div>
+   
 
 
     <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+           <div id="aviso-status" class="w3-margin-top"></div>
+
+                
 
         <!-- Navigation (Stays on Top) -->
 
@@ -308,7 +316,7 @@
         idGlobo: 'globinhorespFinal', 
         classe: '', 
         mensagem: 'O tema {TITULO} é fantástico! Continue estudando!',
-        pontos: 4
+        pontos: 0
     });
     
     MostrarProximo(this);
@@ -356,7 +364,7 @@
 
 
 
-        <div class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+         <div class="bibliografias w3-content w3-padding-64" style="max-width:700px; display:none;">
             <hr>
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
 

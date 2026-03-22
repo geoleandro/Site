@@ -52,7 +52,12 @@ h1, h2, h3, h4 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     background-color: #fff;
     transition: transform 0.3s;
+    
+    
+    
 }
+
+
 
 .wrapper:hover {
     transform: translateY(-5px); /* Card sobe levemente ao passar o mouse */
@@ -75,6 +80,19 @@ h1, h2, h3, h4 {
     overflow: hidden;
 }
 
+
+/* Seleciona o parágrafo de título dentro dos cards da home */
+.card-aula p {
+    white-space: normal;      /* Permite quebra de linha */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;    /* Limita a no máximo 2 linhas (estético) */
+    -webkit-box-orient: vertical;
+    overflow: hidden;         /* Esconde o que passar de 2 linhas */
+    text-overflow: ellipsis;  /* Adiciona "..." se for realmente MUITO longo */
+    height: 40px;             /* Mantém todos os cards com a mesma altura */
+    text-align: center;
+    font-size: 0.9em;
+}
 /* Estilo para os botões dentro do Modal */
 .w3-modal-content .w3-button {
     font-weight: bold;

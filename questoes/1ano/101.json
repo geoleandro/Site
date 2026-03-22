@@ -1,33 +1,160 @@
 [
   {
     "id": 1,
-    "ano": "ENEM 2024",
-    "imagem_apoio": "1ano/img/101_q1.png",
-    "pergunta": "Questão com tudo (Imagem e Ajuda):",
-    "alternativas": ["a", "b", "c", "d", "e"],
-    "correta": 0,
-    "comentario": "Explicação completa.",
-    "ajuda": { "texto": "Dica importante!" }
+    "ano": "2022",
+    "imagem_apoio": "",
+    "texto_apoio": "<p class=\"w3-sand\"> \"O homem também vai impondo à natureza suas próprias formas, a que podemos chamar de formas ou objetos culturais, artificiais, históricos. Estas formas históricas não são as mesmas através dos tempos; aqueles acréscimos dos tempos primitivos são diferentes dos atuais. Hoje, as formas impostas à natureza são muito mais complexas, resultado também de uma série de heranças. </p> <p class=\"w3-sand\"> A natureza conhece um processo de humanização cada vez maior, ganhando a cada passo elementos que são resultado da cultura. Torna-se cada dia mais culturalizada, mais artificializada, mais humanizada. [...]. No processo de desenvolvimento humano, não há uma separação do homem e da natureza. A natureza se socializa e o homem se naturaliza\".</p> <p class=\"w3-small w3-sand\"> (Milton Santos. Metamorfoses do espaço habitado, 1997).</p>",
+    "pergunta": "De acordo com o autor, é correto afirmar que:",
+    "alternativas": [
+      "o homem e a natureza constituem elementos opostos e dissociados, já que mantêm poucas relações entre si, evoluindo, do ponto de vista da organização e funcionamento, paralelamente.",
+      "a natureza, hoje, subordina o homem às suas “leis” e “regras”, restando às sociedades adaptar suas atividades econômicas e culturais aos ritmos e condicionamentos impostos pelos fenômenos naturais.",
+      "as transformações do espaço geográfico realizadas pelo homem produziram uma “nova natureza”, caracterizada, cada vez mais, pela presença de formas e objetos artificiais e culturais.",
+      "os objetos artificiais instalados no espaço geográfico pelo homem caracterizam-se, hoje, pela sua baixa sofisticação, diferentemente daqueles acréscimos dos tempos primitivos, caracterizados pela alta complexidade.",
+      "a natureza, através dos tempos, mantém-se como um obstáculo intransponível a todo tipo de ação transformadora do espaço geográfico intentada pelo homem."
+    ],
+    "correta": 2,
+    "comentario": "<p> <strong>Comentário:</strong></p><p> a) Incorreta. Homem e natureza não são opostos. A ação humana depende da natureza para se realizar, e,através do trabalho, o homem modifica a si mesmo e o seu entorno.</p><p> b) Incorreta. Ao contrário, hoje no período tecnológico, é o homem que subordina à natureza aos seusobjetivos, seja através de produtos químicos em uma plantação ou o aumento da produção pela retirada derecursos naturais.</p><p> c) Correta. Hoje o meio de vida do homem está repleto de técnica, ciência e informação conectadosglobalmente, conhecido como meio técnico-científico-informacional.</p><p> d) Incorreta. Os objetos hoje são extremamente sofisticados, altamente técnicos e precisos, como ossatélites, os computadores e o fluxo de informação. Além dos grandes objetos técnicos comohidrelétricas, usinas nucleares ou cidades complexas.</p><p> e) Incorreta. A natureza, hoje, não é mais intransponível, dado o avanço da tecnologia em geral e da engenharia em particular, com grandes obras, até então impossíveis em épocas passadas, como túneis em formações rochosas, estações espaciais, dentre outros exemplos. </p>"
   },
   {
     "id": 2,
-    "ano": "FUVEST",
-    "pergunta": "Questão simples (Sem imagem e Sem ajuda):",
-    "alternativas": ["Sim", "Não"],
-    "correta": 1,
-    "comentario": "O script não vai dar erro aqui.",
-     "ajuda": { "texto": "Dica importante!", "imagem": "1ano/img/102_q1.png" }
+    "ano": "2021",
+    "imagem_apoio": "",
+    "texto_apoio": "<p class=\"w3-sand\">O espaço geográfico é fruto de um processo que ocorre ao longo da história das diversas sociedades humanas; dessa forma, representa interesses, técnicas e valores dessas mesmas sociedades, que o constroem segundo suas necessidades. Então, é possível dizer que ele reflete o estágio de desenvolvimento dos meios técnicos de cada sociedade”.</p> <p class=\"w3-small w3-sand\"> (SILVA, A. C. et. al. Geografia contextos e redes 01. 1º ed. São Paulo: Moderna, 2013. p.19).</p>",
+    "pergunta": "No trecho acima, observa a noção de espaço geográfico vinculada:",
+    "alternativas": [
+      "ao emprego aleatório de ferramentas desprovidas de seus contextos.",
+      "à ideia de que a sociedade é o reflexo do meio onde vive e que nele se reproduz",
+      "à história da humanidade, limitando esse conceito às justaposições do passado",
+      "aos interesses da sociedade, em uma perspectiva totalitária e sem subjetividades",
+      "à utilização das técnicas para a produção da sociedade e suas espacialidades"
+    ],
+    "correta": 4,
+    "comentario": "<p> <strong>Comentário:</strong></p><p> a) Incorreta. O espaço geográfico é fruto, dentre outras coisas, do trabalho humano em sua relação com anatureza. O homem possui objetivos e sua ação sempre precede de uma finalidade. Portanto, não há açõesaleatórias no fazer humano.</p><p> b) Incorreta. Embora o espaço geográfico reflita um estágio de desenvolvimento da sociedade, ele não ésomente um “reflexo” das ações humanas, mas sim condiciona, autoriza ou restringe a sociedade de acordocom sua organização.</p><p> c) Incorreta. O espaço geográfico acumula ações do passado, mas sobretudo do presente. Objetos novos sãoincorporados ao espaço geográfico de forma dinâmica.</p><p> d) Incorreta. A construção social do espaço geográfico ocorre sob influência de diversas sociedades, deacordo com interesses próprios dos cidadãos, cada qual exercendo seus valores, ideias e crenças, isto é,sua subjetividade na maneira em que o espaço se organiza.</p><p> e) Correta. O destaque da questão é dados pelas técnicas, que são modos de fazer na sociedade.Dependendo do grau do desenvolvimento das técnicas (o que inclui as tecnologias) o espaço geográficoserá configurado de uma forma, contendo objetos dos mais variados tipos, como indústrias, zonas urbanas,rurais etc.\n\t\t\t</p>"
   },
   {
     "id": 3,
-    "ano": "ENEM 2023",
-    "imagem_apoio": "1ano/img/103_q1.png",
-    "pergunta": "Questão com imagem (Sem ajuda):",
-    "alternativas": ["a", "b", "c", "d", "e"],
+    "ano": "2019",
+    "imagem_apoio": "",
+    "texto_apoio": "<p class=\"w3-sand\">\"No conceito de espaço geográfico está implícita a ideia de articulação entre natureza e sociedade. Na busca desta articulação, a Geografia tem que trabalhar, de um lado, com os elementos e atributos naturais, procurando não só descrevê-los, mas entender as interações existentes entre eles; e de outro, verificar a maneira pela qual a sociedade está administrando e interferindo nos sistemas naturais. <br>Para perceber a ação da sociedade é necessário adentrar em sua estrutura social, procurando apreender o seu modo de produção e as relações socioeconômicas vigentes”.</p> <p class=\"w3-small w3-sand\"> (GIOMETTI, A. B. R., et al. Leitura do Espaço Geográfico através das categorias: Lugar, Paisagem e Território. In: Caderno de formação: formação de professores didática dos conteúdos. São Paulo: Cultura Acadêmica, 2012. p.34).</p>",
+    "pergunta": "Na conceituação acima apresentada, temos a Geografia como uma ciência da natureza e da sociedade, no sentido de:",
+    "alternativas": [
+      "descrever as narrativas individuais do natural e do social.",
+      "evidenciar as relações de interação entre esses dois elementos da realidade.",
+      "compreender as dinâmicas naturais dos espaços humanizados.",
+      "avaliar as estruturas dos sistemas naturais para neles interferir.",
+      "evidenciar a complementaridade nula entre o espaço e as práticas humanas."
+    ],
+    "correta": 1,
+    "comentario": "<p> <strong>Comentário:</strong></p><p>a) Incorreta. A ciência geográfica procura estabelecer as relações entre a Natureza e a Sociedade, nãosomente de indivíduos isolados.</p><p>b) Correto. No texto, cabe a Geografia estudar as interações entre a Sociedade e a Natureza de maneiraarticulada ao longo do tempo. O conceito de espaço geográfico, ao ser visto como a relação entre asociedade e os sistemas naturais, faz com que a ciência geográfica porte-se como a área que estrutura ainteração entre esses elementos naturais e sociais, com todas as suas respectivas complexidades.</p><p>c) Incorreto. Não basta somente compreender a maneira pela qual a natureza se comporta nos espaços ondehá seres humanos, mas sim de identificar as relações fruto tanto da interferência da ação do homemquanto das barreiras que a natureza impõem à sociedade.</p><p>d) Incorreta. No texto, não há separação entre o estudo da Natureza e o estudo da Sociedade. </p><p>e) Incorreta. O espaço geográfico exerce grande influência nas ações humanas, ora como obstáculos (umamontanha) ora como facilitador (uma planície para plantação). Sendo assim, o espaço pode complementar asações do homem, não sendo nula essa relação.</p>"
+  },
+  {
+    "id": 4,
+    "ano": "2020",
+    "imagem_apoio": "",
+    "texto_apoio": "",
+    "pergunta": "Assinale, a seguir, a alternativa que melhor indica o conceito atual de espaço geográfico:",
+    "alternativas": [
+      "Compreende o substrato superficial onde habitam os seres vivos terrestres.",
+      "Abrange o meio físico da Terra e suas dinâmicas naturais, tais como o clima, o relevo e a vegetação.",
+      "É o resultado da interação mediada pelas técnicas entre as práticas humanas e suas sociedades com a superfície terrestre e seus elementos.",
+      "É tudo aquilo que pode ser contemplado pela visão em um ambiente imediatamente próximo.",
+      "É o “palco” das práticas sociais, caracterizando-se por ser um receptáculo das ações antrópicas."
+    ],
     "correta": 2,
-    "comentario": "Explicação completa.",
-     "ajuda": { "texto": "Dica importante!", "imagem": "1ano/img/103_q1.png" }
+    "comentario": "<p> <strong>Comentário:</strong></p><p>a) Incorreta. Esse conceito corresponde o de superfície terrestre e não o de espaço geográfico.</p><p>b) Incorreta. Somente o meio físico não é suficiente para designar o espaço geográfico, pois necessitadas ações humanas.</p><p>c) Correta. O espaço geográfico representa essa relação por meio das técnicas entre as ações humanas e omeio geográfico.</p><p>d) Incorreta. Esse conceito está relacionado à paisagem.</p><p>e) Incorreta. O espaço geográfico não é somente o palco ou o reflexo da sociedade, mas participaativamente do processo social, restringindo ou facilitando as ações humanas.</p>"
+  },
+  {
+    "id": 5,
+    "ano": "2022",
+    "imagem_apoio": "",
+    "texto_apoio": "",
+    "pergunta": "Qual o objeto de estudo da Geografia?",
+    "alternativas": [
+      "Interpretação de Mapas.",
+      "Descrição dos Lugares.",
+      "Observação da Paisagem.",
+      "Estudo do Espaço Geográfico.",
+      "Saber todos os nomes de países e capitais."
+    ],
+    "correta": 3,
+    "comentario": "<p> <strong>Comentário:</strong></p><p>a) Incorreta. Os mapas, e todas as técnicas cartográficas que utilizam tecnologias como GPS e fotografiaspor satélites, são ferramentas para se estudar os fenômenos no espaço terrestre.</p><p>b) Incorreta. Somente a descrição dos lugares não leva ao conhecimento científico, o qual necessita deteorias, hipóteses e verificação na realidade.</p><p>c) Incorreta. Embora a observação da paisagem seja o ponto de partida para os estudos geográficos, esseaspecto isolado não faz da paisagem o objeto de estudo da geografia.</p><p>d) Correta. A geografia estuda o espaço geográfico, a superfície terrestre e suas relações com os sereshumanos mediados pela técnica.</p><p>e) Incorreta. Decorar listas de nomes de acidentes geográficos ou capitais não é aprender uma ciência.Embora o ensino de Geografia tenha sido marcado desde o século XIX e metade do XX por essa prática,atualmente o ensino pressupõe que os alunos desenvolvam suas habilidades e aprendem a descobrir, pelainvestigação científica, as explicações dos fenômenos complexos do mundo atual.</p>"
+  },
+  {
+    "id": 6,
+    "ano": "2024",
+    "imagem_apoio": "",
+    "texto_apoio": "",
+    "pergunta": "Sobre o conceito de espaço geográfico e sua abrangência no estudo da Geografia, assinale a alternativa incorreta.",
+    "alternativas": [
+      "O espaço geográfico não constitui uma totalidade homogênea, uma vez que reflete as diferentes singularidades da natureza e das dimensões do trabalho humano",
+      "O espaço geográfico abrange, além dos elementos naturais e artefatos humanos, a rede de relações criada por fluxo de pessoas, mercadorias, capitais e informações",
+      "O espaço geográfico constitui uma totalidade homogênea, uma vez que reflete o resultado das interações do trabalho humano e suas interações com a natureza.",
+      "O espaço geográfico é o produto material da interação, mediada pelas técnicas, entre as sociedades e a superfície terrestre em que estão inseridas",
+      "O espaço geográfico é dinâmico e está, ao mesmo tempo, organizando-se e reorganizando-se. Nesse sentido é que se pode dizer que a Geografia analisa a organização espacial"
+    ],
+    "correta": 2,
+    "comentario": "<p> <strong>Comentário:</strong></p><p> a) Correta. O espaço geográfico não é semelhante em todo as regiões e lugares. A localização dasatividades, econômicas, a distribuição dos homens é resultado de relações sociais do passado e dopresente e das infraestruturas do território, natural ou social. </p><p> b) Correta. O espaço geográfico é constituído por objetos materiais (físicos) como casas, hospitais,rodovias, mas também pela circulação desses objetos como informação, tecnologia, produtos agrícolas etc.\n\t\t\t</p><p> c) Incorreta. O espaço geográfico é uma totalidade heterogênea, isto é, ele reproduz o movimento dasociedade e do meio geográfico natural, técnico ou técnico-científico-informacional. Cada sociedadecombina formas e funções de maneira distinta, daí ser o espaço geográfico também diferente e nãohomogêneo. </p><p> d) Correta. No espaço geográfico existe os sistemas naturais formados por aquilo que o homem nãoconstruiu, como rios, relevo, solo, e pelos acréscimos realizados pelo trabalho humano, como pontes,indústrias, rodovias, dentre outros. </p><p> e) Correta. O espaço geográfico é dinâmico, ou seja, possui movimento pois é formado por um certoarranjo de objetos sociais e naturais e mais a sociedade que lhe dá vida. A sociedade não viveria sem asformas geográficas e as formas não teriam sentido sem a sociedade. </p>"
+  },
+  {
+    "id": 7,
+    "ano": "2021",
+    "imagem_apoio": "",
+    "texto_apoio": "",
+    "pergunta": "Assinale a opção incorreta em relação às características do espaço geográfico:",
+    "alternativas": [
+      "O espaço geográfico é a natureza transformada pelos seres humanos, por meio de seu trabalho ao longo da história.",
+      "Lugar é a parte do espaço geográfico onde vivemos e interagimos com a paisagem.",
+      "Para entendermos o espaço geográfico faz-se necessário compreender a sociedade que o criou e continua a transformá-lo ao longo do tempo",
+      "Espaço geográfico é que predominam os aspectos originais da natureza."
+    ],
+    "correta": 3,
+    "comentario": "<p> <strong>Comentário:</strong></p><p> a) Correta. Podemos entender, resumidamente, que toda ação humana é trabalho, e que todo trabalha criaformas geográficas. Logo o espaço geográfico tem relação direta com a transformação da superfícieterrestre pelo ser humano. </p><p> b) Correta. O lugar pode ser considerado uma fração do espaço geográfico, ele acolhe as relaçõesglobais. É o espaço onde as pessoas vivem realmente, trabalham, constroem relações em sociedade. </p><p>c) Correta. A geografia estuda a sociedade através de seu espaço geográfico, suas formas, funções,relações globais e locais. A sociedade modifica a superfície terrestre pelas técnicas e o espaçoparticipa do movimento da sociedade. </p><p> d) Incorreta. O espaço geográfico é formado tanto pelos objetos naturais quanto pelos objetos sociais,ele é uma totalidade que reúne a natureza transformada pelo trabalho humano e a sociedade que lhe dávida. </p>"
+  },
+  {
+    "id": 8,
+    "ano": "2022",
+    "imagem_apoio": "",
+    "texto_apoio": "",
+    "pergunta": "O espaço geográfico é composto por “formas visíveis” e “formas invisíveis”. Assinale a alternativa abaixo que contenha apenas “formas invisíveis” do espaço geográfico",
+    "alternativas": [
+      "Rodovias e legislação.",
+      "Hidrelétricas e praias.",
+      "Fluxo de comunicação e fluxo de informação.",
+      "Fábricas e fluxo de informação."
+    ],
+    "correta": 2,
+    "comentario": "<p> <strong>Comentário:</strong></p><p> Incorreta. As alternativas a, b e d retratam objetos geográficos concretos existente no território. </p><p> c) Correta. Na época atual da globalização há uma difusão muito rápida da informação, mesmo assim essefluxo não atinge todos os lugares e ainda há muita desigualdade no espaço mundial em se tratando deinformação. O espaço geográfico inclui esse espaço de fluxos, tanto material como imaterial, quanto maisartificial o espaço, quanto mais tecnologia ele possui, mais técnico e inserido na globalização ele é.Uma das consequências desse espaço de fluxos é o surgimento de grandes empresas multinacionais comrepartição de seu processo produtivo em diversas regiões do globo. </p>"
+  },
+  {
+    "id": 9,
+    "ano": "2021",
+    "imagem_apoio": "",
+    "texto_apoio": "Espaço e paisagem são conceitos importantes dentro do contexto geográfico. Analise as afirmativas abaixo acerca destes conceitos:<br>1) Os elementos naturais que formam a paisagem são aqueles construídos pela natureza.<br>2) Existem ainda algumas paisagens predominantemente naturais. Podemos citar algumas regiões polares e trechos de florestas de difícil acesso, oe oceanos e altas montanhas como exemplos.<br>3) As paisagens geográficas são aquelas que resultam da ação antrópica.<br>4) O lugar é uma porção do espaço ou parte dele onde vivemos o nosso dia-a-dia, em interação com uma paisagem.",
+    "pergunta": "Assinale a alternativa que indica todas as afirmativas corretas.",
+    "alternativas": [
+      "É correta apenas a afirmativa 4.",
+      "São corretas apenas as afirmativas 1 e 3.",
+      "São corretas apenas as afirmativas 1 e 4.",
+      "São corretas apenas as afirmativas 2 e 3.",
+      "São corretas as afirmativas 1, 2, 3 e 4."
+    ],
+    "correta": 4,
+    "comentario": "<p> <strong>Comentário:</strong></p><p>1) Correta. Os objetos naturais são elementos da natureza os quais o homem não fabricou. Mas é importanteressaltar de que a paisagem não é formada somente por objetos, mas sons, odores etc. </p><p> 2) Correta. A paisagem natural é aquela que ainda não foi mudada pela ação humana. Não existe muitosrecantos do Planeta intocado pelo homem, mesmo que fisicamente o ser humano não tenha visitado esselocal, há preocupações políticas ou econômicas com essa porção do espaço. </p><p> 3) Correta. As paisagens geográficas, culturais ou artificiais são resultado do trabalho dos sereshumanos sobre os objetos naturais e, principalmente, sobre os objetos sociais em que vive. A paisagemexiste através de suas formas, a partir de diferentes necessidades na sociedade atual, como teatros,campo de moderno de plantação, aeroportos, dentre outros. </p><p> 4) Correta. O lugar é uma porção do espaço geográfico em que vivemos nosso cotidiano, pois ele ésingular, quer dizer, o lugar não é igual a outro. Cada lugar combina de maneira particular a influênciado mundo a sua maneira. Ninguém existe no mundo inteiro, mas sim sua existência se concretiza noslugares, com a presença de outros seres humanos. </p>"
+  },
+  {
+    "id": 10,
+    "ano": "2022",
+    "imagem_apoio": "",
+    "texto_apoio": "Cotidianamente convivemos com diferentes paisagens.<br>Analise as afirmativas abaixo acerca de paisagem, espaço e lugar:<br>1) Em Geografia, paisagem não é apenas um belo panorama natural, é o conjunto dos elementos naturais e culturais que podem ser vistos em um local;<br>2) Os elementos naturais que compõem uma paisagem são aqueles construídos pela natureza, como as formas de relevo, a hidrografia, a vegetação, as casas, os rios, as montanhas, as serras, os planaltos etc.<br>3) Os elementos culturais são aqueles humanizados como, por exemplo, as plantações.",
+    "pergunta": "Assinale a alternativa que indica todas as afirmativas corretas.",
+    "alternativas": [
+      "É correta apenas a afirmativa 1",
+      "É correta apenas a afirmativa 2.",
+      "São corretas apenas as afirmativas 1 e 2.",
+      "São corretas apenas as afirmativas 1 e 3.",
+      "São corretas apenas as afirmativas 2 e 3."
+    ],
+    "correta": 3,
+    "comentario": "<p> <strong>Comentário:</strong></p><p>1) Correta. A paisagem está ligada aos sentidos. É a forma e o arranjo dos objetos da realidade. É umafração do espaço geográfico que a visão alcança. A paisagem também registra em suas formas o acúmulo dotrabalho dos seres humanos do passado e combinas com os objetos do presente. </p><p> 2) Incorreta. Barragens, plantação e casas são objetos construídos pelo homem, são formas com uma funçãoespecífica na sociedade. Apesar de conter elementos naturais, esses objetos são sociais pois atendem afinalidades de quem os criou, no caso a sociedade. </p><p> 3) Correta. A paisagem é um conjunto heterogêneo (distinto) de elementos, sendo a maior parte delesconstruídos pela ação humana. A vida em sociedade demanda muitas funções, e quanto mais complexa essamesma sociedade, mais formas teremos na paisagem. A paisagem de uma cidade é um grande exemplo de objeto criado pelo trabalho humano. </p>"
   }
-
-  
 ]

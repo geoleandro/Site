@@ -58,6 +58,37 @@ body {
 }
 
 
+/* Garante que o painel de pontos tenha largura mínima e não quebre linha */
+#painel-pontos {
+    min-width: 120px; /* Dá espaço para os dois números */
+    flex-shrink: 0;   /* Impede que o flexbox esmague o painel */
+    justify-content: space-around;
+}
+
+.caixa-total-dourada {
+    background: linear-gradient(145deg, #ffcf33, #ffaa00); /* Degradê Ouro */
+    color: #4a3b00 !important; /* Texto marrom escuro para contraste */
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid #e69900;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.4);
+    min-width: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-total-dourada span {
+    font-size: 12px !important;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* Ajuste para o painel não ficar espremido no mobile */
+#painel-pontos {
+    min-width: 120px;
+}
 
 .font-btn {
     background: rgba(255, 255, 255, 0.2);

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1. Mostra o aviso (Incentiva a fazer as questões depois)
         if (typeof verificarStatusAula === "function") verificarStatusAula(id);
-        
+
         // 2. Busca o título e conteúdo da aula no JSON
         if (typeof injetarMetadadosAula === "function") injetarMetadadosAula();
 
@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. ATUALIZA A NAVBAR (Saldo de globinhos sempre visível)
         if (typeof atualizarInterface === "function") atualizarInterface();
+
+
+
+        atualizarGlobinhosGeral();
+        setTimeout(atualizarGlobinhosGeral, 100);
+        setTimeout(atualizarGlobinhosGeral, 500);
     }
 });
 
@@ -58,7 +64,7 @@ function MostrarProximo(botao) {
 
 //     // 2. Visual: Apenas o que muda na tela
 //     document.getElementById(idResp).innerHTML = `Bem-vindo(a), <b>${nome}</b>!`;
-    
+
 //     // Esconde os elementos de entrada (você pode criar uma classe CSS .esconder { display: none; })
 //     ["caixaNomeAluno", idInput, "buttonConfira"].forEach(id => {
 //         const el = document.getElementById(id);
@@ -67,7 +73,7 @@ function MostrarProximo(botao) {
 
 //     // 3. Integração com outros componentes
 //     if (typeof exibirSaudacao === 'function') exibirSaudacao(nome);
-    
+
 //     const nomeNoPainel = document.querySelector('#painel-usuario b');
 //     if (nomeNoPainel) nomeNoPainel.innerText = nome;
 // }
@@ -117,7 +123,7 @@ function ProcessarResposta(selecionado, config) {
     }
 
     const frase = document.getElementById(idFrase);
-    if (frase) frase.innerHTML = `<b>${nomeEstudante || 'Estudante'}</b>, ${correto ? getFraseSucesso() : mensagem}`; // <--- FRASE DINÂMICA
+    if (frase) frase.innerHTML = `<b>${nomeEstudante || 'Estudante'}</b>, ${correto ? mensagem : mensagem}`; // <--- FRASE DINÂMICA
 
     atualizarInterface();
 
@@ -150,28 +156,28 @@ function validarRadio(btnConfirmar, nomeGrupo, idFrase, idGlobo, msg, pts) {
     // Busca qual rádio do grupo está marcado
     const selecionado = Array.from(document.getElementsByName(nomeGrupo)).find(r => r.checked);
 
-   // --- VALIDAÇÃO DE OPÇÃO SELECIONADA ---
-if (!selecionado) {
-    // A mágica acontece lá no Core agora!
-    if (typeof playSom === "function") {
-        playSom('erro'); 
+    // --- VALIDAÇÃO DE OPÇÃO SELECIONADA ---
+    if (!selecionado) {
+        // A mágica acontece lá no Core agora!
+        if (typeof playSom === "function") {
+            playSom('erro');
+        }
+
+        // 2. Transforma o botão: Fica Amarelo + Tremedeira (Shake)
+        btnConfirmar.innerHTML = "⚠️ Escolha uma opção!";
+        btnConfirmar.classList.add('w3-amber', 'shake-erro');
+
+        // 3. O "Pulo do Gato": Vibração no celular (se o aluno estiver no Android/iOS)
+        if (navigator.vibrate) navigator.vibrate(100);
+
+        // 4. Reseta o botão após 1.5 segundos
+        setTimeout(() => {
+            btnConfirmar.innerHTML = "Confirmar Resposta";
+            btnConfirmar.classList.remove('w3-amber', 'shake-erro');
+        }, 1500);
+
+        return; // Mata a execução para não dar erro de "undefined" nas próximas linhas
     }
-
-    // 2. Transforma o botão: Fica Amarelo + Tremedeira (Shake)
-    btnConfirmar.innerHTML = "⚠️ Escolha uma opção!";
-    btnConfirmar.classList.add('w3-amber', 'shake-erro');
-
-    // 3. O "Pulo do Gato": Vibração no celular (se o aluno estiver no Android/iOS)
-    if (navigator.vibrate) navigator.vibrate(100);
-
-    // 4. Reseta o botão após 1.5 segundos
-    setTimeout(() => {
-        btnConfirmar.innerHTML = "Confirmar Resposta";
-        btnConfirmar.classList.remove('w3-amber', 'shake-erro');
-    }, 1500);
-
-    return; // Mata a execução para não dar erro de "undefined" nas próximas linhas
-}
 
     const ehCorreto = selecionado.value === "correto";
 
@@ -209,49 +215,36 @@ function addProgressBar() {
     barra.value = novoValor;
     txtBarra.innerHTML = Math.round(novoValor) + "%";
 }
-
-
-
 function mostraCinza() {
-    // 1. IDENTIFICAÇÃO DO ID (Mantendo sua lógica sênior)
+    // 1. IDENTIFICAÇÃO (Lógica de ID)
     const params = new URLSearchParams(window.location.search);
     let aulaID = params.get('id');
+    // ... (sua lógica de captura de ID aqui) ...
 
-    if (!aulaID) {
-        const nomeArquivo = window.location.pathname.split('/').pop();
-        const numero = nomeArquivo.replace(/\D/g, "");
-        const path = window.location.pathname;
+    // --- MUDANÇAS VISUAIS OBRIGATÓRIAS (Acontecem SEMPRE) ---
+    desativarBotoes();   // Bloqueia cliques em rádios e botões de validar
+    desativarTextos();   // Aplica o cinza (exceto bibliografia e modal)
+    desativarImagens();  // Filtro PB nas imagens
+    mostraBiblio();      // REVELA a div .bibliografias (display: block)
+    mostrarNota();       // Abre o Modal com o feedback
 
-        if (path.includes("1ano")) aulaID = 100 + parseInt(numero);
-        else if (path.includes("2ano")) aulaID = 200 + parseInt(numero);
-        else if (path.includes("3ano")) aulaID = 300 + parseInt(numero);
-    }
-
-    // 2. TRAVA DE SEGURANÇA (Usando a lógica centralizada)
+    // 2. LOGICA DE DADOS (Ponto e Save)
     const jaConcluiu = localStorage.getItem(`concluido_texto_${aulaID}`) === "true";
 
     if (jaConcluiu) {
-        console.log("Modo Revisão: Texto " + aulaID + " já lido.");
-        mostrarNota(); // Abre o modal direto, mas sem dar novos pontos
+        console.log("Modo Revisão: Interface bloqueada para consulta.");
+        atualizarInterface();
         return;
     }
 
-    // 3. FLUXO NORMAL (Primeira vez que lê)
-    desativarBotoes();
-    desativarTextos();
-    mostrarNota();
-    mostraBiblio();
-    desativarImagens();
-    atualizarInterface();
-
-    // 4. SALVA USANDO O CORE
+    // 3. REGISTRO DE PRIMEIRA CONCLUSÃO
     if (aulaID) {
         DuvidDB.salvarConclusao(aulaID, 'texto');
-        // Se quiser dar pontos fixos pela leitura completa:
-        DuvidDB.addGlobinhos(5);
+        // Adicionar pontos se necessário: DuvidDB.addGlobinhos(10);
     }
-}
 
+    atualizarInterface();
+}
 
 
 function desativarBotoes() {
@@ -270,17 +263,28 @@ function desativarBotoes() {
 }
 
 function desativarTextos() {
-    // Selecionamos todos os elementos de texto
-    var todosElementos = document.querySelectorAll('p, h1, h2, h3, h4, span, li');
+    // 1. Selecionamos todos os tipos de texto e elementos clicáveis
+    var todosElementos = document.querySelectorAll('p, h1, h2, h3, h4, span, li, b, strong, i, a, label');
+
     for (var i = 0; i < todosElementos.length; i++) {
-        // Se o elemento NÃO estiver dentro da bibliografia E NÃO estiver dentro do Modal (id01)
-        if (!todosElementos[i].closest('.bibliografias') && !todosElementos[i].closest('#id01')) {
-            todosElementos[i].style.color = "gray";
-            todosElementos[i].style.transition = "3s";
-        } else {
-            todosElementos[i].style.color = "black";
+        let el = todosElementos[i];
+
+        // 2. FILTRO DE EXCEÇÃO: Ignora o que está na Bibliografia, no Modal e no Header
+        if (!el.closest('.bibliografias') &&
+            !el.closest('#id01') &&
+            !el.closest('.w3-modal') &&
+            !el.closest('#header-placeholder')) {
+
+            el.style.transition = "color 3s ease, opacity 3s ease";
+            el.style.color = "#a0a0a0"; // Cinza "desativado"
+        }
+        // 3. REFORÇO: Garante que o texto da bibliografia permaneça nítido
+        else if (el.closest('.bibliografias')) {
+            el.style.color = ""; // Volta para a cor padrão do CSS
         }
     }
+
+    
 }
 
 
@@ -297,7 +301,7 @@ function mostrarNota() {
 
     // 2. Montando o HTML interno do Modal de forma BONITA e ESPAÇADA
     const containerModal = modal.querySelector('.w3-modal-content');
-    
+
     // Injetando o novo layout
     containerModal.innerHTML = `
         <div class="w3-container w3-padding-32 w3-center">
@@ -344,57 +348,75 @@ function mostrarNota() {
 
     // Exibe o modal
     modal.style.display = "block";
-    
+
     // Atualiza o saldo global se necessário
     if (typeof atualizarInterface === "function") atualizarInterface();
 }
 
 
 
-// Mostra a bibliografia no final
 function mostraBiblio() {
-
     var b = document.getElementsByClassName("bibliografias");
+
     for (var i = 0; i < b.length; i++) {
+        // 1. Torna visível
         b[i].style.display = "block";
 
+        // 2. Adiciona a animação de fade-in do W3.CSS
+        b[i].classList.add("w3-animate-opacity");
 
+        // 3. Garante que a cor do texto na bibliografia seja legível (preto/padrão)
+        // Isso anula qualquer efeito do desativarTextos que tenha "vazado"
+        b[i].style.color = "black";
     }
+
+    // 4. Scroll suave para a primeira bibliografia encontrada
+    if (b.length > 0) {
+        setTimeout(function () {
+            b[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 800); // Aguarda um pouco a animação do modal/cinza antes de rolar
+    }
+
+  
+    
 }
 
-// Função para aplicar o efeito de escala de cinza em todas as imagens
+
+
+
 function desativarImagens() {
-    // Seleciona TODAS as imagens que estão dentro de tópicos ou da linha de quadrinhos
-    var imagensAula = document.querySelectorAll('.topico img, .w3-row-padding img');
+    // Seleciona imagens de tópicos, quadrinhos e áreas de conteúdo
+    var imagensAula = document.querySelectorAll('.topico img, .w3-row-padding img, main img');
 
     for (var i = 0; i < imagensAula.length; i++) {
-        // Aplica o filtro de cinza
-        imagensAula[i].style.filter = "grayscale(100%)";
+        let img = imagensAula[i];
 
-        // Deixa um pouco transparente para dar o efeito de "desativado"
-        imagensAula[i].style.opacity = "0.5";
-
-        // Suaviza a transição (3 segundos como você já usava)
-        imagensAula[i].style.transition = "3s";
+        // EXCEÇÃO: Não desativa imagens dentro do Modal ou da Bibliografia
+        if (!img.closest('#id01') && !img.closest('.bibliografias')) {
+            img.style.transition = "filter 3s ease, opacity 3s ease";
+            img.style.filter = "grayscale(100%)";
+            img.style.opacity = "0.5";
+        }
     }
-    // console.log("Imagens e Quadrinhos desativados.");
+  
+    
 }
-
-
-
 
 function atualizarInterface() {
+    // 1. Nota da Aula Atual (Branca)
     const notaDisplay = document.getElementById("notaFixa");
-    // Só tenta mudar o texto se o elemento realmente existir na página
-    if (notaDisplay) {
+    if (notaDisplay && typeof nota !== 'undefined') {
         notaDisplay.innerHTML = nota.toFixed(1);
-    } else {
-        console.warn("Aviso: O elemento #notaFixa ainda não foi carregado.");
     }
+
+    // 2. Saldo Global (Dourado) - Aproveitamos a função para atualizar tudo
+    const saldoDisplay = document.getElementById("saldoTotalHeader");
+    if (saldoDisplay && typeof DuvidDB !== 'undefined') {
+        saldoDisplay.innerHTML = DuvidDB.getGlobinhos().toFixed(1);
+    }
+
+    // Removi o console.warn para não poluir seu console caso o elemento não exista na página atual
 }
-// Mecanica da contagem das aulas
-
-
 
 
 
@@ -454,7 +476,7 @@ async function injetarMetadadosAula() {
             if (tituloH1) tituloH1.innerText = tituloAulaGlobal;
 
             document.title = `Duvid - ${tituloAulaGlobal}`;
-     
+
 
             // Injeta na descrição (se houver um ID para isso)
             const desc = document.getElementById('descricao-aula');
@@ -477,17 +499,5 @@ function Aparecer(imagem, paragrafo) {
 
 
 }
-document.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
 
-    // Esta função deve rodar independente de ter ID ou não (ela tem lógica própria de fallback)
-    injetarMetadadosAula();
 
-    if (id) {
-        aulaID = id; 
-        if (typeof verificarStatusAula === "function") verificarStatusAula(id);
-        if (typeof inicializarAula === "function") inicializarAula(id);
-        carregarDados(id);
-    }
-});

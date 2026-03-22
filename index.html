@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duvid - Geografia</title>
+
+
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="/estilos/index-estilo.css">
-
-
-
 
     <link rel="shortcut icon" type="image/x-icon" href="/fotoIndex/favicon.ico">
 
@@ -24,14 +23,13 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
+    <title>Duvid - Geografia</title>
 
 
-
-
-    
     <style>
         body {
-            background-color: #2e7d32;
+            /* Usamos o verde exato da sua capa para não ter "degrau" visual */
+            background-color: #2b5d34;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,28 +42,105 @@
 
         .container {
             text-align: center;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
         }
 
-        .logo-splash {
-            width: 180px;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
+        /* A Capa do Jogo RPG */
+        .capa-rpg {
+            width: 100%;
+            max-width: 350px;
+            /* Ajuste conforme preferir */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 25px;
+            animation: floating 3s ease-in-out infinite;
         }
 
-        @keyframes pulse {
+        /* Efeito de flutuação estilo RPG */
+        @keyframes floating {
             0% {
-                transform: scale(1);
-                opacity: 0.8;
+                transform: translateY(0px);
             }
 
             50% {
-                transform: scale(1.05);
-                opacity: 1;
+                transform: translateY(-15px);
             }
 
             100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .loader-box {
+            margin-top: 20px;
+        }
+
+        .pixel-text {
+            font-family: 'Courier New', Courier, monospace;
+            /* Simula fonte pixel se não tiver uma específica */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Barra de progresso fake para dar sensação de carregamento de jogo */
+        .progress-bar-container {
+            width: 200px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 20px auto;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 0%;
+            height: 100%;
+            background: #ffc107;
+            /* Cor de ouro/XP */
+            animation: fillProgress 2.5s forwards;
+        }
+
+        @keyframes fillProgress {
+            to {
+                width: 100%;
+            }
+        }
+
+        .gold-pulse {
+            font-size: 1.4rem;
+            /* Tamanho grande e legível */
+            color: #ffc107;
+            text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+            animation: pulseGold 2s infinite ease-in-out;
+            margin-top: 10px;
+        }
+
+        @keyframes pulseGold {
+            0% {
+                text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
                 transform: scale(1);
-                opacity: 0.8;
+            }
+
+            50% {
+                text-shadow: 0 0 20px rgba(255, 193, 7, 1), 0 0 30px rgba(255, 255, 255, 0.5);
+                transform: scale(1.02);
+                color: #fff;
+                /* Brilha para branco no auge */
+            }
+
+            100% {
+                text-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+                transform: scale(1);
+                color: #ffc107;
+            }
+        }
+
+        /* Ajuste para mobile para não quebrar a linha */
+        @media (max-width: 600px) {
+            .gold-pulse {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -73,38 +148,45 @@
 
 <body>
 
-    <div class="container">
-        <img src="/fotoIndex/marcaDuvid.png" alt="Duvid" class="logo-splash">
-        <h1 class="w3-xlarge"><b>DUVID</b></h1>
-        <p class="w3-opacity">Geografia para o Ensino Médio</p>
-        <div class="w3-padding-16">
-            <i class="fa fa-refresh w3-spin w3-xlarge"></i>
-        </div>
-    </div>
-
+   <div class="container">
+    <img src="fotoIndex/DuvidCapa.jpg" alt="Duvid RPG" class="capa-rpg w3-animate-zoom">
     
+    <div class="loader-box">
+        <h2 class="pixel-text w3-animate-bottom gold-pulse">
+            <b>Geografia para o Ensino Médio</b>
+        </h2>
+
+        <div class="progress-bar-container">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <p class="w3-opacity w3-small pixel-text">Sincronizando Espaço Geográfico...</p>
+        <i class="fa fa-compass w3-spin w3-xlarge w3-text-amber"></i>
+    </div>
+</div>
+
+
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-DPX55DSFZ0');
-
     </script>
-
 
     <script>
         window.addEventListener('load', () => {
-            // 1. Apenas a lógica de redirecionamento ou Splash
+            // Redireciona após 3 segundos (tempo para o aluno admirar a arte)
             setTimeout(() => {
-                window.location.href = "Home.html"; // Ou o nome do seu arquivo de Home
-            }, 3000); // Exemplo de 3 segundos de Splash
+                // Adicionamos um fade out suave antes de trocar de página
+                document.body.style.transition = "opacity 0.5s";
+                document.body.style.opacity = "0";
 
-        
-
-
+                setTimeout(() => {
+                    window.location.href = "home.html";
+                }, 500);
+            }, 4000);
         });
     </script>
 </body>

@@ -54,7 +54,7 @@ async function carregarAulas(ano) {
                                       class="w3-button w3-xlarge w3-hover-red w3-display-topright">&times;</span>
                                 
                                 <div class="w3-margin">
-                                    <h3>Aula ${String(aula.id).slice(-2)}</h3>
+                                    <h3> ${(aula.titulo)}</h3>
                                     ${concluidaTotal ? '<span class="w3-tag w3-green w3-round">Concluída!</span>' : (concluidaParcial ? '<span class="w3-tag w3-orange w3-round">Em andamento</span>' : '')}
                                     <br><br>
                                     <strong>Conteúdo:</strong> ${aula.conteudo}
@@ -96,90 +96,96 @@ async function carregarAulas(ano) {
 
 // ATUALIZE TAMBÉM A CONTAGEM NO PROGRESSO GLOBAL
 // VERSÃO COMPACTA DO PROGRESSO GLOBAL
+
 function mostrarProgressoGlobal(aulas, ano) {
     const painel = document.getElementById('painel-usuario');
     if (!painel) return;
 
-    let nome = "Estudante";
-    let globinhosTotal = 0;
+    // 1. Pede os dados ao Core (Cálculo centralizado!)
+    const progresso = DuvidDB.getProgressoAcademico(aulas);
+    const rpg = DuvidDB.getProgressoRPG();
+    const nome = DuvidDB.getNome();
 
-    try {
-        if (typeof DuvidDB !== 'undefined') {
-            nome = DuvidDB.getNome() || "Estudante";
-            globinhosTotal = DuvidDB.getGlobinhos();
-        } else {
-            nome = localStorage.getItem("duvid_nome") || "Estudante";
-            globinhosTotal = parseFloat(localStorage.getItem("duvid_globinhos")) || 0;
-        }
-    } catch (e) {
-        nome = localStorage.getItem("duvid_nome") || "Estudante";
-        globinhosTotal = parseFloat(localStorage.getItem("duvid_globinhos")) || 0;
+    // 2. Validação de Login
+    if (!nome) {
+        document.getElementById('loading-painel')?.style.setProperty('display', 'none');
+        document.getElementById('form-identificacao')?.style.setProperty('display', 'block');
+        return;
     }
-
-    const totalAulasAno = aulas.length;
-    const concluidasNoAno = aulas.filter(aula => {
-        const texto = localStorage.getItem("concluido_texto_" + aula.id) === "true";
-        const questoes = localStorage.getItem("concluido_questoes_" + aula.id) === "true";
-        return texto && questoes;
-    }).length;
-
-    const porcentagem = totalAulasAno > 0 ? Math.round((concluidasNoAno / totalAulasAno) * 100) : 0;
-    const saldoFormatado = globinhosTotal.toFixed(1);
-
+// 2. Renderiza o HTML usando as variáveis do Core
     painel.innerHTML = `
         <div class="w3-container w3-card-4 w3-white w3-round-large w3-margin-bottom w3-padding" 
-             style="border-left: 6px solid #4CAF50; max-width: 750px; margin: auto;">
+             style="border-left: 6px solid ${rpg.cor}; max-width: 750px; margin: auto;">
             
-            <div class="w3-row w3-flex" style="display: flex; align-items: center;">
-                <div class="w3-col s8">
-                    <h4 class="w3-margin-0" style="font-size: 1.1em;">Olá, <b class="w3-text-green">${nome.toUpperCase()}</b>
-                    <button onclick="prepararTrocaNome()" class="w3-button w3-tiny w3-round-xlarge w3-light-grey" title="Trocar meu nome" style="margin-left:5px;">
-                        <i class="fa fa-pencil"></i>
-                    </button>
-                    </h4>
-                    
-                    <p class="w3-tiny w3-text-grey w3-margin-0">Progresso no <b>${ano}º Ano</b></p>
-                </div>
-                <div class="w3-col s4 w3-right-align">
-                    <div class="w3-tag w3-round w3-amber w3-padding-small">
-                         <i class="fa fa-globe"></i> <b id="display-globinhos-home">${saldoFormatado}</b>
-                    </div>
-                </div>
-            </div>
-
+            ${gerarCabecalhoPainel(nome, rpg)}
+            
             <div class="w3-light-grey w3-round-xlarge w3-margin-top" style="height:10px;">
                 <div class="w3-container w3-green w3-round-xlarge" 
-                     style="width:${porcentagem}%; height:10px; transition: width 1s;">
+                     style="width:${progresso.porc}%; height:10px; transition: width 1.5s ease-in-out;">
                 </div>
             </div>
             
             <div class="w3-row w3-margin-bottom">
-                <div class="w3-col s6 w3-tiny">
-                    <b class="w3-text-green">${porcentagem}%</b> concluído
-                </div>
-                <div class="w3-col s6 w3-right-align w3-tiny">
-                    <b>${concluidasNoAno}/${totalAulasAno}</b> aulas
-                </div>
+                <div class="w3-col s6 w3-small"><b class="w3-text-green">${progresso.porc}%</b> concluído</div>
+                <div class="w3-col s6 w3-right-align w3-small"><b>${progresso.concluidas}/${progresso.total}</b> aulas</div>
             </div>
 
-          
-<div class="w3-row w3-center w3-border-top w3-padding-small">
-    <div class="w3-col s4">
-        <i class="fa fa-trophy ${globinhosTotal >= MARCOS_CONQUISTAS[0] ? 'w3-text-amber' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
-        <p style="font-size:8px; margin:0">${MARCOS_CONQUISTAS[0]} pts</p>
-    </div>
-    
-    <div class="w3-col s4">
-        <i class="fa fa-star ${globinhosTotal >= MARCOS_CONQUISTAS[1] ? 'w3-text-blue' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
-        <p style="font-size:8px; margin:0">${MARCOS_CONQUISTAS[1] / 1000}k pts</p>
-    </div>
-    
-    <div class="w3-col s4">
-        <i class="fa fa-diamond ${globinhosTotal >= MARCOS_CONQUISTAS[2] ? 'w3-text-purple' : 'w3-text-light-grey'}" style="font-size:18px;"></i>
-        <p style="font-size:8px; margin:0">Mestre</p>
-    </div>
-</div>
+            <div class="w3-row w3-center w3-border-top w3-padding-top-8">
+                ${gerarHtmlTrofeus(rpg.saldoAtual)}
+            </div>
         </div>`;
+}
+
+// Sub-função para o topo do painel
+function gerarCabecalhoPainel(nome, rpg) {
+    return `
+        <div class="w3-row" style="display: flex; align-items: center;">
+            <div class="w3-col s8">
+                <h4 class="w3-margin-0" style="font-size: 1.1em;">
+                    <span class="w3-tag w3-black w3-round w3-tiny">LEVEL ${rpg.lvl}</span> 
+                    Olá, <b class="w3-text-green">${nome.toUpperCase()}</b>
+                    <button onclick="prepararTrocaNome()" class="w3-button w3-tiny w3-round-xlarge w3-light-grey">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                </h4>
+                <p class="w3-tiny w3-text-grey w3-margin-0">Patente: <b style="color:${rpg.cor}">${rpg.patente}</b></p>
+            </div>
+            <div class="w3-col s4 w3-right-align">
+                <div class="w3-tag w3-round w3-amber w3-padding-small">
+                     <i class="fa fa-globe"></i> <b>${rpg.saldoAtual.toFixed(1)}</b>
+                </div>
+            </div>
+        </div>`;
+}
+function gerarHtmlTrofeus(saldoTotal) {
+    const marcos = [
+        { info: DuvidDB.RANKING_SISTEMA[0], icone: 'fa-seedling' }, 
+        { info: DuvidDB.RANKING_SISTEMA[1], icone: 'fa-shoe-prints' }, 
+        { info: DuvidDB.RANKING_SISTEMA[2], icone: 'fa-map' }, 
+        { info: DuvidDB.RANKING_SISTEMA[3], icone: 'fa-chess-knight' }, 
+        { info: DuvidDB.RANKING_SISTEMA[4], icone: 'fa-graduation-cap' }, 
+        { info: DuvidDB.RANKING_SISTEMA[5], icone: 'fa-gem' } 
+    ];
+
+    return marcos.map(marco => {
+        const conquistado = saldoTotal >= marco.info.min;
+        const corIcone = conquistado ? marco.info.cor : '#e0e0e0';
+        
+        // Adicionamos a classe 'w3-animate-zoom' apenas se conquistado for true
+        const animacao = conquistado ? 'w3-animate-zoom' : '';
+
+        return `
+            <div class="w3-col s4 w3-center w3-padding-small">
+                <i class="fa ${marco.icone} ${animacao}" 
+                   style="font-size:32px; transition: 0.8s; color: ${corIcone}; 
+                   text-shadow: ${conquistado ? '0 0 12px ' + corIcone : 'none'}; 
+                   opacity: ${conquistado ? '1' : '0.4'}"></i>
+                <p class="w3-tiny" style="margin:0; font-weight:bold; color: ${conquistado ? '#333' : '#bbb'}; font-size:8px !important;">
+                    ${marco.info.patente}
+                </p>
+            </div>
+        `;
+    }).join('');
 }
 
 function ExpandeDiv(id_cadastro) {
@@ -211,8 +217,6 @@ window.onclick = function (event) {
 }
 
 
-
-
 async function atualizarResumoHome() {
     const painelResumo = document.getElementById('resumo-geral');
     if (!painelResumo) return;
@@ -223,22 +227,21 @@ async function atualizarResumoHome() {
 
     for (const ano of anos) {
         try {
-            // Busca o arquivo JSON de cada ano (ex: aulas-1ano.json)
-            const resposta = await fetch(`/js/aulas-${ano}ano.json`);
+            // Busca o arquivo JSON (Certifique-se que o caminho está correto)
+            const resposta = await fetch(`./js/aulas-${ano}ano.json`); 
             if (!resposta.ok) throw new Error(`Erro HTTP: ${resposta.status}`);
 
             const aulas = await resposta.json();
 
-            // CONTAGEM AUTOMÁTICA: Filtra apenas itens válidos (não nulos)
+            // CONTAGEM AUTOMÁTICA
             const aulasValidas = aulas.filter(a => a !== null && a.id !== undefined);
             const total = aulasValidas.length;
 
-            // Pega as concluídas do LocalStorage (Texto + Questão)
+            // Pega as concluídas (Baseado na sua função contarAulasConcluidas)
             const concluidas = contarAulasConcluidas(ano);
-
             const porc = total > 0 ? Math.round((concluidas / total) * 100) : 0;
 
-            // Atualiza os elementos na tela
+            // --- CORREÇÃO DE IDS AQUI ---
             const barra = document.getElementById(`bar-${ano}ano`);
             const texto = document.getElementById(`txt-${ano}ano`);
             const iconeConquista = document.getElementById(`conquista-${ano}ano`);
@@ -251,22 +254,40 @@ async function atualizarResumoHome() {
             }
 
         } catch (erro) {
-            console.error(`Falha ao processar progresso automático do ano ${ano}:`, erro);
+            console.error(`Falha ao processar progresso do ano ${ano}:`, erro);
         }
+    }
+
+    // --- O PULO DO GATO: Sincronização com o RPG ---
+    // Após carregar os anos, garantimos que o nível global e XP apareçam no topo
+    if (typeof atualizarSistemaNivelHome === "function") {
+        atualizarSistemaNivelHome();
     }
 }
 
+
+
+
+
 function contarAulasConcluidas(anoPrefixo) {
     let contagem = 0;
-    for (let i = 1; i <= 50; i++) {
-        let idAula = anoPrefixo + (i < 10 ? "0" + i : i);
-        // ATUALIZADO PARA O NOVO PADRÃO
-        const texto = localStorage.getItem("concluido_texto_" + idAula) === "true";
-        const questoes = localStorage.getItem("concluido_questoes_" + idAula) === "true";
-
-        if (texto && questoes) {
-            contagem++;
+    // Percorre o localStorage uma única vez (Mais rápido que loop de 1 a 50)
+    for (let i = 0; i < localStorage.length; i++) {
+        let chave = localStorage.key(i);
+        
+        // Procuramos apenas as chaves de questões concluídas desse ano
+        if (chave.startsWith("concluido_questoes_" + anoPrefixo)) {
+            let idAula = chave.replace("concluido_questoes_", "");
+            
+            // Verifica se o texto daquela mesma aula também foi lido
+            const textoLido = localStorage.getItem("concluido_texto_" + idAula) === "true";
+            
+            if (textoLido) {
+                contagem++;
+               
+            }
         }
     }
     return contagem;
+    
 }

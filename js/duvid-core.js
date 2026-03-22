@@ -1,3 +1,20 @@
+// Força o scroll para o topo toda vez que a página recarregar
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
+// Reforço ao carregar o DOM
+document.addEventListener('DOMContentLoaded', () => {
+    window.scrollTo(0, 0);
+
+    // Pequeno atraso para garantir que o navegador não "puxe" para baixo
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 10);
+});
+
+
+
 window.ganhosAtuais = window.ganhosAtuais || 0;
 // Se não existir, ele cria. Se existir, ele mantém o que já tem.
 
@@ -11,7 +28,7 @@ const SOM_FINAL_RUIM = new Audio('/audios/notaFinal2.mp3');
 const SOM_INCIO_NOME = new Audio('/audios/inicioNome.mp3');
 
 // Valores oficiais para o site pronto
-const MARCOS_CONQUISTAS = [110, 2000, 10000];
+const MARCOS_CONQUISTAS = [500, 2000, 10000];
 
 function playSomFinal(vitoria) {
     if (vitoria) {
@@ -28,7 +45,7 @@ function playSom(tipo) {
     if (tipo === 'erro') {
         // Escolhe um rândomico da lista SONS_ERRO
         caminho = SONS_ERRO[Math.floor(Math.random() * SONS_ERRO.length)];
-    } 
+    }
     // 3. Lógica de sorteio para o Acerto (Opcional)
     else if (tipo === 'acerto') {
         caminho = SONS_ACERTO[Math.floor(Math.random() * SONS_ACERTO.length)];
@@ -128,63 +145,51 @@ const DuvidDB = {
         return parseInt(localStorage.getItem(DB_CHAVE)) || 0;
     },
 
-
     addGlobinhos: function (quantidade) {
-        // 1. Soma no Global (Banco)
-        // Soma no banco de dados (localStorage)
+        // 1. Pega os dados ANTES da soma
         let saldoAnterior = Number(localStorage.getItem("duvid_globinhos")) || 0;
+        let lvlAnterior = this.getProgressoRPG().lvl; // Pega o nível atual antes de somar
+
+        // 2. Realiza a soma no Global
         let novoSaldo = saldoAnterior + Number(quantidade);
         localStorage.setItem("duvid_globinhos", novoSaldo);
 
-        // 2. Soma no Local (Sessão da página atual)
-        window.ganhosAtuais += Number(quantidade);
-        console.log("Ganho na aula:", window.ganhosAtuais);
+        // 3. Pega os dados DEPOIS da soma
+        const progressoAtual = this.getProgressoRPG();
+        let novoLvl = progressoAtual.lvl;
 
-        // 3. Atualiza a tela
-        atualizarHeaderGlobinhos();
+        // --- LÓGICA DE LEVEL UP (O NOVO "TROFÉU") ---
+        if (novoLvl > lvlAnterior) {
 
-        // --- LÓGICA DO TROFÉU ---
-        // Definimos os marcos (thresholds) dos troféus
-        const marcos = MARCOS_CONQUISTAS;
+            // 1. Toca o som de vitória
+            if (typeof playSomFinal === "function") playSomFinal(true);
 
-        // Verifica se o novo saldo ultrapassou um marco que o anterior não tinha atingido
-        const conquistouAgora = marcos.find(m => saldoAnterior < m && novoSaldo >= m);
+            // 2. Dispara confetes se a função existir
+            if (typeof dispararComemoracao === "function") dispararComemoracao();
 
-        if (conquistouAgora) {
-            console.log("🏆 TROFÉU DESBLOQUEADO!");
-            // Toca o som final bom que você já tem
-            if (typeof playSomFinal === "function") {
-                playSomFinal(true);
-            }
-            // Opcional: Solta um confetti especial se a função existir
-            if (typeof dispararComemoracao === "function") {
-                dispararComemoracao();
-            }
-
+            // 3. Notificação Épica de Level Up
             const notificacao = document.createElement('div');
             notificacao.innerHTML = `
-        <div class="w3-animate-zoom w3-amber w3-card-4 w3-round-large w3-padding" 
-             style="position:fixed; top:20px; left:50%; transform:translateX(-50%); z-index:10000; text-align:center;">
-            <i class="fa fa-trophy w3-xxlarge"></i><br>
-            <b>NOVA CONQUISTA!</b><br>
-            <span class="w3-small">Você atingiu ${conquistouAgora} pontos!</span>
-        </div>
-    `;
+            <div class="w3-animate-zoom w3-card-4 w3-round-large w3-padding" 
+                 style="position:fixed; top:20px; left:50%; transform:translateX(-50%); z-index:10000; text-align:center; background-color:${progressoAtual.cor}; color:white;">
+                <i class="fa fa-arrow-up w3-xlarge"></i><br>
+                <b class="w3-large">SUBIU DE NÍVEL!</b><br>
+                <span>Agora você é um <b>${progressoAtual.patente}</b></span><br>
+                <span class="w3-tag w3-white w3-text-black w3-round w3-margin-top">LVL ${novoLvl}</span>
+            </div>
+        `;
             document.body.appendChild(notificacao);
 
-            // Remove o aviso após 4 segundos
             setTimeout(() => {
                 notificacao.classList.add('w3-animate-opacity');
                 setTimeout(() => notificacao.remove(), 500);
-            }, 4000);
-
+            }, 5000);
         }
 
-
-        // Atualiza a interface (Header/Painel)
-        if (typeof feedbackVisualAcerto === "function") {
-            feedbackVisualAcerto();
-        }
+        // Mantém o restante da sua lógica (atualizar header, ganhos atuais, etc)
+        window.ganhosAtuais += Number(quantidade);
+        atualizarHeaderGlobinhos();
+        if (typeof feedbackVisualAcerto === "function") feedbackVisualAcerto();
     },
 
 
@@ -204,12 +209,65 @@ const DuvidDB = {
         }
         return false;
     },
+    // NOVA FUNÇÃO CENTRALIZADA
+    getProgressoAcademico: function(aulas) {
+        if (!aulas || !Array.isArray(aulas)) return { concluidas: 0, total: 0, porc: 0 };
+
+        const aulasValidas = aulas.filter(a => a !== null && a.id !== undefined);
+        const total = aulasValidas.length;
+
+        const concluidas = aulasValidas.filter(aula => {
+            const texto = localStorage.getItem("concluido_texto_" + aula.id) === "true";
+            const questoes = localStorage.getItem("concluido_questoes_" + aula.id) === "true";
+            return texto && questoes;
+        }).length;
+
+        return {
+            concluidas: concluidas,
+            total: total,
+            porc: total > 0 ? Math.round((concluidas / total) * 100) : 0
+        };
+    },
+
+    // Configuração de Níveis do RPG
+    RANKING_SISTEMA: [
+        { lvl: 1, patente: "NOVATO", min: 0, max: 100, cor: "#9d9d9d" },
+        { lvl: 2, patente: "EXPLORADOR", min: 1001, max: 3500, cor: "#4caf50" },
+        { lvl: 3, patente: "CARTÓGRAFO", min: 3501, max: 8000, cor: "#2196f3" },
+        { lvl: 4, patente: "ESTRATEGISTA", min: 8001, max: 15000, cor: "#9c27b0" },
+        { lvl: 5, patente: "GEÓGRAFO SÊNIOR", min: 15001, max: 20000, cor: "#ff9800" },
+        { lvl: 6, patente: "LENDA DA TERRA", min: 20001, max: 99999, cor: "#f44336" }
+    ],
+
+    getProgressoRPG: function () {
+        let saldo = this.getGlobinhos();
+        // Encontra em qual faixa de nível o saldo atual se encaixa
+        let info = this.RANKING_SISTEMA.find(r => saldo <= r.max) || this.RANKING_SISTEMA[this.RANKING_SISTEMA.length - 1];
+
+        // Cálculo de XP para a barra (fórmula de progresso dentro do nível)
+        let xpNoNivel = saldo - info.min;
+        let totalNecessarioNivel = info.max - info.min;
+        let porcentagem = (xpNoNivel / totalNecessarioNivel) * 100;
+
+        return {
+            lvl: info.lvl,
+            patente: info.patente,
+            cor: info.cor,
+            proximoLvl: info.max,
+            progressoBarra: Math.min(porcentagem, 100),
+            saldoAtual: saldo
+        };
+    },
 
     verificarConquistas: function () {
-        let saldo = this.getGlobinhos();
-        if (saldo >= 12000) localStorage.setItem("patente", "Lenda da Terra");
-        else if (saldo >= 5000) localStorage.setItem("patente", "Geógrafo Sênior");
-        else if (saldo >= 500) localStorage.setItem("patente", "Explorador");
+        const progresso = this.getProgressoRPG();
+
+        // Salva os dados processados para acesso rápido por outras páginas
+        localStorage.setItem("patente", progresso.patente);
+        localStorage.setItem("user_lvl", progresso.lvl);
+
+        // Retorna os dados caso a função que chamou precise usar na hora
+        return progresso;
     },
 
 
@@ -226,12 +284,64 @@ const DuvidDB = {
                 }
             });
 
-            alert("Progresso resetado com sucesso!");
+            console.log("Progresso resetado com sucesso!");
             location.reload(); // Recarrega para a Home voltar a ficar cinza
         }
     },// Caso queira resetar APENAS os globinhos (para testes rápidos)
 
 };
+
+function atualizarSistemaNivelHome() {
+    // Pede os dados processados ao Core
+    const rpg = DuvidDB.getProgressoRPG();
+
+    // Atualiza a Interface da Home
+    // 3. Atualiza o contador central da Home
+    const displayTotal = document.getElementById('valor-total-central');
+    if (displayTotal) {
+        // Usamos a animação para mostrar que todos os pontos foram somados
+        animarContador('valor-total-central', rpg.saldoAtual);
+    }
+
+    document.getElementById('lvl-tag').innerText = `LEVEL ${rpg.lvl}`;
+    document.getElementById('lvl-tag').style.backgroundColor = "black"; // Ou use rpg.cor
+
+    document.getElementById('rank-nome').innerText = rpg.patente;
+    document.getElementById('rank-nome').style.color = rpg.cor; // Cor dinâmica da patente!
+
+    document.getElementById('xp-atual').innerText = Math.floor(rpg.saldoAtual);
+    document.getElementById('xp-proximo').innerText = rpg.proximoLvl;
+
+    // Anima a barra azul com a porcentagem calculada pelo Core
+    const barra = document.getElementById('barra-xp-total');
+    if (barra) {
+        barra.style.width = rpg.progressoBarra + "%";
+        barra.style.backgroundColor = "#2196f3"; // Cor de XP
+    }
+}
+
+function animarContador(idElemento, valorFinal) {
+    const el = document.getElementById(idElemento);
+    if (!el) return;
+
+    let valorAtual = parseFloat(el.innerText) || 0;
+    let incremento = (valorFinal - valorAtual) / 20; // Divide a subida em 20 passos
+
+    let timer = setInterval(() => {
+        valorAtual += incremento;
+        if ((incremento > 0 && valorAtual >= valorFinal) || (incremento < 0 && valorAtual <= valorFinal)) {
+            el.innerText = valorFinal.toFixed(1);
+            clearInterval(timer);
+        } else {
+            el.innerText = valorAtual.toFixed(1);
+        }
+    }, 30);
+}
+
+// Chame assim dentro da sua atualizarSistemaNivelHome:
+// animarContador('valor-total-central', rpg.saldoAtual);
+
+
 function verificarStatusAula(id) {
     const areaAviso = document.getElementById('aviso-status');
     if (!areaAviso || !id) return;
@@ -244,22 +354,22 @@ function verificarStatusAula(id) {
 
     // CASO 1: Já completou TUDO
     if (jaFezQuestoes && jaLeuTexto) {
-        msg = `Sensacional, <b>${nome}</b>! Você já dominou esta aula 100%. Que tal um desafio em outra aula?`;
+        msg = `Sensacional, <b>${nome}</b>! Você já dominou esta aula 100%. Aproveite para revisar ou seguir adiante!`;
         cor = "w3-green"; icone = "fa-check-circle";
-    } 
+    }
     // CASO 2: Fez questões, mas NÃO leu o texto
     else if (jaFezQuestoes && !jaLeuTexto) {
         msg = `Mandou bem nas questões, <b>${nome}</b>! 💡 <b>Dica:</b> Leia o texto base agora para garantir seus globinhos extras de leitura!`;
         cor = "w3-orange"; icone = "fa-book";
-    } 
+    }
     // CASO 3: Leu o texto, mas NÃO fez questões (O mais comum)
     else if (!jaFezQuestoes && jaLeuTexto) {
-        msg = `Texto lido! Agora, <b>${nome}</b>, que tal testar seus conhecimentos nas questões e <b>ganhar +20 globinhos</b>?`;
+        msg = `Texto lido <b>${nome}</b>, agora que tal testar seus conhecimentos nas questões e <b>ganhar mais globinhos</b>?`;
         cor = "w3-indigo"; icone = "fa-pencil";
     }
     // CASO 4: Não fez nada ainda (Aluno novo na aula)
     else if (!jaFezQuestoes && !jaLeuTexto) {
-        msg = `Olá! Recomendo ler o texto primeiro, mas o desafio das questões já está liberado para você ganhar pontos!`;
+        msg = `Olá! Começar pelo texto é uma ótima ideia! As questões também já estão liberadas para você ganhar pontos!`;
     }
 
     if (msg) {
@@ -267,12 +377,13 @@ function verificarStatusAula(id) {
             <div class="w3-panel ${cor} w3-display-container w3-round-large w3-animate-top w3-card-4">
                 <span onclick="this.parentElement.style.display='none'" 
                       class="w3-button w3-display-topright w3-round-large" style="padding:12px 16px">&times;</span>
-                <p class="w3-padding-16" style="margin-right:20px">
+                <p class="w3-padding-16 w3-medium w3-text-white" style="margin-right:20px">
                     <i class="fa ${icone} w3-xlarge"></i> &nbsp; ${msg}
                 </p>
             </div>`;
     }
 }
+
 
 // Adicione esta função ao seu DuvidCore ou como função global no core.js
 function inicializarAula(tipo) {
@@ -301,23 +412,22 @@ function inicializarAula(tipo) {
 
     return aulaID;
 }
-
 function atualizarGlobinhosGeral() {
-    const pts = DuvidDB.getGlobinhos();
+    if (typeof DuvidDB === 'undefined') return;
 
-    // 1. Tenta atualizar o painel da Home
-    const elHome = document.getElementById('display-globinhos-home');
+    const saldo = DuvidDB.getGlobinhos();
+    const pts = saldo.toFixed(1);
+
+    // 1. Atualiza o saldo total na Navbar (O novo span que criamos)
+    const elTotal = document.getElementById('saldoTotalHeader');
+    if (elTotal) elTotal.innerText = pts;
+
+    // 2. Se estiver na Home, atualiza o card central também
+    const elHome = document.getElementById('valor-total-central');
     if (elHome) elHome.innerText = pts;
-
-    // 2. Tenta atualizar o contador da Navbar (nas aulas)
-    const elAula = document.getElementById('globinhos-aula');
-    if (elAula) {
-        elAula.innerText = pts;
-        // Adiciona um efeito de "pulso" para o aluno ver que ganhou
-        elAula.classList.add('w3-animate-zoom');
-        setTimeout(() => elAula.classList.remove('w3-animate-zoom'), 500);
-    }
 }
+
+
 
 
 // 2. A função que realmente faz o trabalho (só roda ao clicar no botão do modal)
@@ -369,6 +479,7 @@ function executarReset() {
 }
 
 // --- 2. Função Mestre de Interface ---
+
 function feedbackVisualAcerto() {
     const notaFixa = document.getElementById("notaFixa");
     const displayHome = document.getElementById("display-globinhos-home");
@@ -414,6 +525,7 @@ function feedbackVisualAcerto() {
 function atualizarHeaderGlobinhos() {
     feedbackVisualAcerto();
 }
+
 // --- LÓGICA DE IDENTIFICAÇÃO (LOGIN / TROCA DE NOME) ---
 function gerenciarIdentificacaoHome() {
     const nomeSalvo = DuvidDB.getNome();
@@ -422,43 +534,88 @@ function gerenciarIdentificacaoHome() {
     const display = document.getElementById('display-identificado');
     const nomeTexto = document.getElementById('nome-aluno-texto');
 
-    // Esconde o loading primeiro
     if (loading) loading.style.display = 'none';
 
     if (nomeSalvo) {
-        // Se tem nome: mostra o "Olá, Fulano"
         if (form) form.style.display = 'none';
         if (display) display.style.display = 'block';
         if (nomeTexto) nomeTexto.innerText = nomeSalvo.toUpperCase();
 
-        // Dispara o carregamento das aulas (resumo de 1, 2 e 3 ano)
-        if (typeof atualizarResumoHome === "function") atualizarResumoHome();
+        // --- GATILHOS DE RPG ---
+        // 1. Atualiza o Nível, Patente e Barra de XP Total
+        if (typeof atualizarSistemaNivelHome === "function") {
+            atualizarSistemaNivelHome();
+        }
+
+        // 2. Dispara o resumo das aulas (1, 2 e 3 ano)
+        if (typeof atualizarResumoHome === "function") {
+            atualizarResumoHome();
+        }
     } else {
-        // Se não tem nome: mostra o formulário
         if (display) display.style.display = 'none';
         if (form) form.style.display = 'block';
     }
 }
 
-function NomeAlunos(resp, inputId) {
-    const input = document.getElementById(inputId);
-    const nome = input ? input.value.trim() : "";
+function NomeAlunos(respid, inputid) {
+    const nome = document.getElementById(inputid).value;
+    if (nome.trim() !== "") {
+        // Salva o nome
+        DuvidDB.setNome(nome);
 
-    if (nome.length >= 3) {
-        DuvidDB.salvarNome(nome);
+        // Troca as telas
+        document.getElementById('form-identificacao').style.display = 'none';
+        document.getElementById('display-identificado').style.display = 'block';
+        document.getElementById('nome-aluno-texto').innerText = nome.toUpperCase();
+        document.getElementById('resumo-geral').style.display = 'block';
 
-        // Inicializa globinhos se for a primeira vez
-        if (localStorage.getItem("duvid_globinhos") === null) {
-            localStorage.setItem("duvid_globinhos", "0");
+        // GATILHO 2: Inicializa o sistema de nível para o novo jogador
+        atualizarSistemaNivelHome();
+    }
+}
+
+
+function atualizarResumoHome() {
+    // Configuração: Total de aulas que existem em cada ano no seu projeto
+    const totaisPorAno = { "1ano": 32, "2ano": 36, "3ano": 36 };
+
+    Object.keys(totaisPorAno).forEach(ano => {
+        let concluidas = 0;
+        const total = totaisPorAno[ano];
+
+        // Percorre o localStorage procurando conclusões desse ano
+        // Ex: concluido_questoes_101, concluido_questoes_205...
+        for (let i = 0; i < localStorage.length; i++) {
+            let chave = localStorage.key(i);
+
+            // Lógica: Se a chave começa com 'concluido_questoes_' e o ID bate com o ano
+            // IDs 100+ (1º ano), 200+ (2º ano), 300+ (3º ano)
+            if (chave.startsWith("concluido_questoes_")) {
+                let id = parseInt(chave.replace("concluido_questoes_", ""));
+
+                if (ano === "1ano" && id >= 100 && id < 200) concluidas++;
+                if (ano === "2ano" && id >= 200 && id < 300) concluidas++;
+                if (ano === "3ano" && id >= 300 && id < 400) concluidas++;
+            }
         }
 
-        if (typeof playSom === "function") playSom('acerto');
+        // Calcula porcentagem e atualiza a interface
+        const porcentagem = Math.round((concluidas / total) * 100);
 
-        // Recarrega para aplicar todas as mudanças
-        location.reload();
-    } else {
-        alert("O nome deve ter pelo menos 3 letras!");
-    }
+        const barra = document.getElementById(`bar-${ano}`);
+        const texto = document.getElementById(`txt-${ano}`);
+        const conquista = document.getElementById(`conquista-${ano}`);
+
+        if (barra) barra.style.width = porcentagem + "%";
+        if (texto) texto.innerText = `${concluidas}/${total}`;
+
+        // Se completou 100%, mostra o troféu do card
+        if (conquista && porcentagem >= 100) conquista.style.display = 'block';
+    });
+
+    // Mostra o container dos resumos agora que está preenchido
+    const resumoGeral = document.getElementById('resumo-geral');
+    if (resumoGeral) resumoGeral.style.display = 'block';
 }
 
 function prepararTrocaNome() {
@@ -545,4 +702,27 @@ function sincronizarNomeGlobal() {
     // 4. Se você usa aquele "Olá, Fulano" no topo das aulas
     const bNome = document.querySelector(".w3-col.s8 b.w3-text-green");
     if (bNome) bNome.innerText = nomeSalvo.toUpperCase();
+}
+
+
+//Função quando se clica na palavra
+
+function revelarParentese(elemento, definicao) {
+    if (elemento.classList.contains('desbloqueado')) return;
+
+    // 1. Mantém a palavra e adiciona o parêntese DEPOIS dela
+    elemento.innerHTML += ` <span class="definicao-fade">(${definicao})</span>`;
+
+    // 2. Estiliza a palavra original para mostrar que foi "coletada"
+    elemento.classList.add('desbloqueado');
+    elemento.style.color = "#155724"; // Verde escuro
+    elemento.style.fontWeight = "bold";
+    elemento.style.cursor = "default";
+
+    // 3. Feedback Sonoro e XP (Opcional, mas recomendado para o 'vício')
+    if (typeof playSom === "function") playSom('acerto');
+    if (typeof DuvidDB !== "undefined") {
+        DuvidDB.addGlobinhos(2);
+        if (typeof atualizarGlobinhosGeral === "function") atualizarGlobinhosGeral();
+    }
 }

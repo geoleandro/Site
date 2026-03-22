@@ -78,6 +78,14 @@ main {
     margin-top: 10px !important; /* Se tiver aviso, o main não precisa de 80px de topo */
 }
 
+/* Classe de erro para o botão tremer e mudar de cor */
+.btn-erro-animado {
+    background-color: #ffc107 !important; /* Amarelo Amber para atenção */
+    color: #000 !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5) !important;
+}
+
 
 #button1q {
   display: block;
@@ -180,10 +188,6 @@ main {
 }
 
 
-.bibliografias {
-  display: none;
-  width: auto;
-}
 
 .bordaQuestoes {
   text-align: left;
@@ -445,7 +449,7 @@ main {
 }
 
 .postit-tp1 {
-  background: #ca57ff;
+
   width: auto;
   height: auto;
   padding: 20px;
@@ -941,6 +945,7 @@ ul.lista {
   background-color: white;
 }
 
+
 form>p {
   padding: 15px;
 
@@ -1376,6 +1381,14 @@ button:disabled {
   display: none !important;
 }
 
+/* Isso faz com que as alternativas herdem o tamanho do container-questao */
+#container-questao .card-opcao span, 
+#container-questao p, 
+#container-questao label {
+    font-size: inherit !important; 
+    line-height: 1.4;
+}
+
 /* Estilo do Card de Opção */
 .card-opcao {
   display: flex;
@@ -1448,6 +1461,32 @@ button:disabled {
   color: #000 !important;
 }
 
+.mark-skill {
+    background-color: #fff3cd; /* Amarelo alerta */
+    border-bottom: 2px dashed #ffc107;
+    cursor: help;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.mark-skill:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.mark-skill.desbloqueado {
+    border-bottom: none;
+    animation: pulse-green 0.5s ease-in-out;
+}
+
+@keyframes pulse-green {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); }
+    100% { transform: scale(1); }
+}
+
+
+
 
 
 /* Media Query para dispositivos móveis *//* --- AJUSTES PARA DISPOSITIVOS MÓVEIS (UNIFICADO 600px) --- */
@@ -1495,4 +1534,8 @@ button:disabled {
     .w3-large {
         font-size: 16px !important; /* Garante leitura confortável sem ser gigante */
     }
+}
+
+.bibliografias{
+  display: none;
 }
