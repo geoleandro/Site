@@ -1355,6 +1355,7 @@ body.dark-mode footer .fa-brands {
 
 
 button:disabled {
+  print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
 
@@ -1485,8 +1486,25 @@ button:disabled {
     100% { transform: scale(1); }
 }
 
+.comentario-box {
+    max-height: 600px; 
+    overflow-y: auto; 
+    background: rgba(255, 255, 255, 0.15); 
+    padding: 12px; 
+    border-radius: 8px; 
+    margin: 10px 0 20px 0; 
+    border: 1px solid rgba(255,255,255,0.1); 
+    text-align: left; 
+    position: relative; 
+    z-index: 1;
+}
 
-
+.btn-final {
+    width: 85%; 
+    max-width: 300px; 
+    font-weight: bold; 
+    padding: 15px;
+}
 
 
 /* Media Query para dispositivos móveis *//* --- AJUSTES PARA DISPOSITIVOS MÓVEIS (UNIFICADO 600px) --- */

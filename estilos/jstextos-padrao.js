@@ -3,27 +3,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const id = params.get('id');
 
     if (id) {
-        aulaID = id; // Crucial para o finalizar() do texto salvar os pontos
+        aulaID = id;
 
-        // 1. Mostra o aviso (Incentiva a fazer as questões depois)
-        if (typeof verificarStatusAula === "function") verificarStatusAula(id);
+        // 1. Verifica status e metadados (Título/Conteúdo)
+        if (typeof verificarStatusAula === "function") {
+            verificarStatusAula(id);
+        }
+        
+        if (typeof injetarMetadadosAula === "function") {
+            injetarMetadadosAula();
+        }
 
-        // 2. Busca o título e conteúdo da aula no JSON
-        if (typeof injetarMetadadosAula === "function") injetarMetadadosAula();
+        // 2. ATUALIZAÇÃO ÚNICA DA INTERFACE
+        // Como o Core já está carregado, uma única chamada basta.
+        if (typeof atualizarInterface === "function") {
+            atualizarInterface();
+        }
 
-        // 3. Verifica se o aluno já concluiu para travar/liberar botões
-        if (typeof verificarStatusAula === "function") verificarStatusAula(id);
-
-        // 4. ATUALIZA A NAVBAR (Saldo de globinhos sempre visível)
-        if (typeof atualizarInterface === "function") atualizarInterface();
-
-
-
-        atualizarGlobinhosGeral();
-        setTimeout(atualizarGlobinhosGeral, 100);
-        setTimeout(atualizarGlobinhosGeral, 500);
+        // 3. Opcional: Um único delay curto de segurança 
+        // apenas se o seu JSON de metadados demorar a carregar o DOM.
+        setTimeout(() => {
+            if (typeof atualizarInterface === "function") atualizarInterface();
+        }, 100);
     }
 });
+
+
 
 
 let nota = 0;
@@ -240,7 +245,7 @@ function mostraCinza() {
     // 3. REGISTRO DE PRIMEIRA CONCLUSÃO
     if (aulaID) {
         DuvidDB.salvarConclusao(aulaID, 'texto');
-        // Adicionar pontos se necessário: DuvidDB.addGlobinhos(10);
+         DuvidDB.addGlobinhos(10);
     }
 
     atualizarInterface();
@@ -402,54 +407,9 @@ function desativarImagens() {
     
 }
 
-function atualizarInterface() {
-    // 1. Nota da Aula Atual (Branca)
-    const notaDisplay = document.getElementById("notaFixa");
-    if (notaDisplay && typeof nota !== 'undefined') {
-        notaDisplay.innerHTML = nota.toFixed(1);
-    }
-
-    // 2. Saldo Global (Dourado) - Aproveitamos a função para atualizar tudo
-    const saldoDisplay = document.getElementById("saldoTotalHeader");
-    if (saldoDisplay && typeof DuvidDB !== 'undefined') {
-        saldoDisplay.innerHTML = DuvidDB.getGlobinhos().toFixed(1);
-    }
-
-    // Removi o console.warn para não poluir seu console caso o elemento não exista na página atual
-}
 
 
 
-
-function exibirSaudacao(nome) {
-    const container = document.getElementById('container-login');
-    if (!container) return;
-
-    const nomeSalvo = localStorage.getItem("duvid_nome");
-
-    if (nomeSalvo) {
-        // CASO A: Já tem nome. Injetamos a saudação e ligamos a div
-        container.innerHTML = `
-            <div class="w3-center">
-                <p class="paragrafo">Bem-vindo(a) de volta, <b class="w3-text-teal">${nomeSalvo}</b>!</p>
-                <button onclick="resetarNome()" class="w3-button w3-small w3-text-grey w3-hover-text-red">
-                    <i class="fa fa-refresh"></i> Trocar nome
-                </button>
-            </div>
-        `;
-        container.style.display = "block"; // Liga a div já com a saudação
-    } else {
-        // CASO B: Não tem nome. Apenas liga o formulário original que já está lá
-        container.style.display = "block";
-        console.log("Aluno novo: formulário de identificação ativado.");
-    }
-}
-
-function resetarNome() {
-    // Se ele quiser trocar o nome, limpamos apenas o nome e recarregamos a identificação
-    localStorage.removeItem("duvid_nome");
-    location.reload();
-}
 
 async function injetarMetadadosAula() {
     // 1. Identifica o ano e a aula pela URL

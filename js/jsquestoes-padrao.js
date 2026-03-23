@@ -1,6 +1,6 @@
 let questoes = [];
 let indiceAtual = 0;
-let acertos = 0;
+let nota = 0;
 let aulaID = ""; // Variável global
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,25 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const id = params.get('id');
 
     if (id) {
-        aulaID = id; // Garante que o ID global seja usado no finalizar()
+        aulaID = id;
 
-        // 1. Mostra o aviso (Ler texto, ganhar +20 globinhos, etc)
+        // 1. Garante que o ID e o banco existam
         if (typeof verificarStatusAula === "function") verificarStatusAula(id);
 
-        // 2. Prepara os dados da aula (JSON)
-        if (typeof inicializarAula === "function") inicializarAula(id);
-
-        // 3. Carrega as perguntas específicas dessa aula
+        // 2. Carrega as perguntas
         carregarDados(id);
 
-        // 4. ATUALIZA A NAVBAR (Garante que o saldo de globinhos apareça na hora)
-        if (typeof atualizarInterface === "function") atualizarInterface();
+        // --- O PULO DO GATO AQUI ---
+        // 3. Zera os ganhos da aula atual (Nota Branca)
+        window.ganhosAtuais = 0;
 
-        atualizarGlobinhosGeral();
-        setTimeout(atualizarGlobinhosGeral, 100);
-        setTimeout(atualizarGlobinhosGeral, 500);
+        // Dentro do seu DOMContentLoaded das questões
+        setTimeout(() => {
+            if (typeof atualizarInterface === "function") atualizarInterface();
+        }, 100);
+        // ---------------------------
     }
 });
+
+
 
 async function carregarDados(id) {
     try {
@@ -41,18 +43,19 @@ async function carregarDados(id) {
     }
 }
 
-
+// --- FUNÇÃO PRINCIPAL ---
 function renderizarQuestao() {
+    
     const q = questoes[indiceAtual];
     const container = document.getElementById('container-questao');
-    if (!container) return;
+    if (!container || !q) return;
 
-    // Barra de progresso
-    // Soma +1 para a barra chegar no final na última questão
+    // 1. Lógica de Progresso (Isolada da renderização)
     const porc = ((indiceAtual + 1) / questoes.length) * 100;
     const progressBarr = document.getElementById('barra-progresso-simulado');
-    if (progressBarr) progressBarr.style.width = porc + "%";
+    if (progressBarr) progressBarr.style.width = `${porc}%`;
 
+    // 2. Construção do Layout (Usa as peças de LEGO acima)
     container.innerHTML = `
         <div class="w3-animate-right w3-padding-24">
             <div class="w3-row">
@@ -60,54 +63,57 @@ function renderizarQuestao() {
                 <div class="w3-col s4 w3-right-align w3-text-grey"><b>${q.ano || ''}</b></div>
             </div>
 
-             
-
-
-            ${q.texto_apoio ? `
-                <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding-16">
-                    <p style="font-style: italic; line-height: 1.6;">${q.texto_apoio}</p>
-                    ${q.fonte_apoio ? `<p class="w3-small w3-opacity w3-right-align">— ${q.fonte_apoio}</p>` : ''}
-                </div>
-            ` : ''}
-
-            ${q.imagem_apoio ? `
-                <div class="w3-center w3-margin-bottom">
-                    <img src="${q.imagem_apoio}" class="w3-image w3-card" style="max-height:100%; width:100%; object-fit:contain">
-                </div>
-            ` : ''}
+            ${gerarBlocoApoio(q)}
+            ${gerarImagemApoio(q)}
             
             <p class="w3-large">${q.pergunta}</p>
 
-             ${q.ajuda ? `
+            ${q.ajuda ? `
                 <div class="w3-center w3-margin-top">
                     <button onclick="mostrarDica()" class="w3-button w3-light-grey w3-text-teal w3-round-large w3-small w3-border">
                         💡 <b>DICA DO PROFESSOR</b>
                     </button>
-                </div>
-            ` : ''}
+                </div>` : ''}
 
             <div class="w3-margin-top grupo-respostas">
-                ${q.alternativas.map((alt, i) => `
-                    <div class="item-resposta w3-margin-bottom">
-                        <input type="radio" name="opcao" id="opt${i}" value="${i}" class="radio-duvid">
-                        <label for="opt${i}" class="card-opcao w3-block">
-                            <span><b>${String.fromCharCode(97 + i)})</b> ${alt}</span>
-                        </label>
-                    </div>
-                `).join('')}
+                ${gerarAlternativas(q.alternativas)}
             </div>
 
-          
             <button onclick="verificar()" id="btn-verificar" class="btn-acao-duvid w3-margin-top">
                 <b>VERIFICAR RESPOSTA</b>
             </button>
         </div>
     `;
-    // NO FINAL DA FUNÇÃO: Reaplica o tamanho de fonte salvo
-    if (typeof inicializarControleFonte === "function") {
-        inicializarControleFonte(); 
-    }
+
+    // 3. Pós-renderização (Reaplicar estilos/fontes)
+    if (typeof inicializarControleFonte === "function") inicializarControleFonte();
 }
+
+
+
+// Funções auxiliares para manter a função principal limpa
+const gerarBlocoApoio = (q) => !q.texto_apoio ? '' : `
+    <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding-16">
+        <p style="font-style: italic; line-height: 1.6;">${q.texto_apoio}</p>
+        ${q.fonte_apoio ? `<p class="w3-small w3-opacity w3-right-align">— ${q.fonte_apoio}</p>` : ''}
+    </div>`;
+
+const gerarImagemApoio = (q) => !q.imagem_apoio ? '' : `
+    <div class="w3-center w3-margin-bottom">
+        <img src="${q.imagem_apoio}" class="w3-image w3-card" style="max-height:100%; width:100%; object-fit:contain">
+    </div>`;
+
+const gerarAlternativas = (alternativas) => alternativas.map((alt, i) => `
+    <div class="item-resposta w3-margin-bottom">
+        <input type="radio" name="opcao" id="opt${i}" value="${i}" class="radio-duvid">
+        <label for="opt${i}" class="card-opcao w3-block">
+            <span><b>${String.fromCharCode(97 + i)})</b> ${alt}</span>
+        </label>
+    </div>`).join('');
+
+
+
+
 
 
 // FUNÇÃO PARA EXIBIR A DICA
@@ -121,91 +127,125 @@ function mostrarDica() {
     }
 }
 
+
+
+
 function verificar() {
+
     const selecionada = document.querySelector('input[name="opcao"]:checked');
     const btnVerificar = document.getElementById('btn-verificar');
 
+    // Validação inicial
     if (!selecionada) {
-        if (typeof playSom === "function") playSom('erro');
-
-        const textoOriginal = btnVerificar.innerHTML;
-
-        // 1. Muda o texto e adiciona a classe de erro e a tremedeira
-        btnVerificar.innerHTML = "<i class='fa fa-exclamation-triangle'></i> ESCOLHA UMA OPÇÃO!";
-        btnVerificar.classList.add('btn-erro-animado', 'shake-erro');
-
-        if (navigator.vibrate) navigator.vibrate(100); // Vibra no celular
-
-        setTimeout(() => {
-            // 2. Volta ao normal
-            btnVerificar.innerHTML = textoOriginal;
-            btnVerificar.classList.remove('btn-erro-animado', 'shake-erro');
-        }, 2000);
-
+        exibirErroSelecao(btnVerificar);
         return;
     }
 
     const resp = parseInt(selecionada.value);
     const q = questoes[indiceAtual];
+    const isCorreto = (resp === q.correta);
+
+    // 1. Visual: Pinta as respostas
+    aplicarEstiloRespostas(resp, q.correta);
+
+    // 2. Gamificação: Sons, Pontos e Level Up
+    processarRecompensa(isCorreto);
+
+    // 3. Feedback: Monta a barra de explicação
+    exibirPainelFeedback(isCorreto, q);
+
+    // 4. Bloqueia botão e desce a tela
+    if (btnVerificar) btnVerificar.disabled = true;
+    scrollSuaveFeedback();
+}
+
+// Função auxiliar para o painel inferior
+function exibirPainelFeedback(isCorreto, questao) {
     const feedback = document.getElementById('barra-feedback');
     const msg = document.getElementById('feedback-msg');
     const txt = document.getElementById('feedback-txt');
 
+    feedback.className = `w3-bottom w3-container w3-padding-16 w3-animate-bottom ${isCorreto ? 'w3-green' : 'w3-amber'}`;
+
+    msg.innerHTML = isCorreto
+        ? `<b><i class='fa fa-smile-o'></i> ${typeof getFraseSucesso === "function" ? getFraseSucesso() : "Boa!"}</b>`
+        : `<b>Opa! A resposta correta é a (${String.fromCharCode(65 + questao.correta)})</b>`;
+
+    txt.innerHTML = `
+        <div class="comentario-box">
+            ${questao.comentario}
+        </div>
+    `;
+    feedback.classList.remove('w3-hide');
+}
+
+
+
+function scrollSuaveFeedback() {
+    setTimeout(() => {
+        const feedbackTxt = document.getElementById('feedback-txt');
+        if (feedbackTxt) feedbackTxt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 300);
+}
+
+// 1. Lógica para quando o aluno esquece de marcar
+function exibirErroSelecao(btn) {
+    if (typeof playSom === "function") playSom('erro');
+    const textoOriginal = btn.innerHTML;
+    btn.innerHTML = "<i class='fa fa-exclamation-triangle'></i> ESCOLHA UMA OPÇÃO!";
+    btn.classList.add('btn-erro-animado', 'shake-erro');
+    if (navigator.vibrate) navigator.vibrate(100);
+
+    setTimeout(() => {
+        btn.innerHTML = textoOriginal;
+        btn.classList.remove('btn-erro-animado', 'shake-erro');
+    }, 2000);
+}
+
+// 2. Pintar as opções na tela
+function aplicarEstiloRespostas(respUsuario, correta) {
     const todasOpcoes = document.querySelectorAll('.opcao-container');
     todasOpcoes.forEach((div, index) => {
-        if (index === q.correta) {
+        if (index === correta) {
             div.classList.add('w3-pale-green', 'w3-border-green', 'w3-leftbar');
         }
-        if (index === resp && resp !== q.correta) {
+        if (index === respUsuario && respUsuario !== correta) {
             div.classList.add('w3-pale-red', 'w3-border-red', 'w3-leftbar');
         }
     });
-
-    if (resp === q.correta) {
-        acertos++;
-        if (typeof playSom === "function") playSom('acerto');
-        if (typeof dispararComemoracao === "function") dispararComemoracao();
-        if (typeof DuvidDB !== "undefined") {
-            DuvidDB.addGlobinhos(10); // <--- Adiciona 10 globinhos por acerto
-        }
-         if (typeof atualizarGlobinhosGeral === "function") {
-        atualizarGlobinhosGeral();
-    }
-
-
-        // Dá um fôlego de 100ms para o banco salvar e a tela atualizar
-        setTimeout(() => {
-            if (typeof feedbackVisualAcerto === "function") feedbackVisualAcerto();
-        }, 100);
-
-        feedback.className = "w3-bottom w3-container w3-padding-16 w3-animate-bottom w3-green";
-        msg.innerHTML = `<b><i class='fa fa-smile-o'></i> ${typeof getFraseSucesso === "function" ? getFraseSucesso() : "Boa!"}</b>`;
-    } else {
-        if (typeof playSom === "function") playSom('erro');
-        feedback.className = "w3-bottom w3-container w3-padding-16 w3-animate-bottom w3-amber";
-        msg.innerHTML = `<b>Opa! A resposta correta é a (${String.fromCharCode(65 + q.correta)})</b>`;
-    }
-
-    txt.innerHTML = `
-        <div style="max-height: 600px; overflow-y: auto; background: rgba(255, 255, 255, 0.15); padding: 12px; border-radius: 8px; margin: 10px 0 20px 0; border: 1px solid rgba(255,255,255,0.1); text-align: left; position: relative; z-index: 1;">
-            ${q.comentario}
-        </div>
-    `;
-
-
-
-    feedback.classList.remove('w3-hide');
-    if (btnVerificar) btnVerificar.disabled = true;
-
-    // Faz a tela descer suavemente para mostrar o comentário que acabou de aparecer
-    setTimeout(() => {
-        const feedbackTxt = document.getElementById('feedback-txt');
-        if (feedbackTxt) {
-            feedbackTxt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    }, 300); // 300ms de delay para a animação 'w3-animate-bottom' terminar
 }
 
+
+
+
+function processarRecompensa(isCorreto) {
+    if (isCorreto) {
+        // 2. A variável 'nota' serve APENAS para contar acertos (1, 2, 3...)
+        // Ela NÃO deve ser usada para somar globinhos aqui.
+        nota++;
+
+        // 3. Chama o banco APENAS UMA VEZ
+        if (typeof DuvidDB !== "undefined") {
+            // Se o saldo pular 20 aqui, o erro está DEFINITIVAMENTE 
+            // dentro da função addGlobinhos no duvid-core.js
+            DuvidDB.addGlobinhos(RECOMPENSA_QUESTOES);
+        }
+
+    } else {
+        // 3. O "ELSE" é o erro! Como não vai para o banco, o som tem que ser aqui:
+        if (typeof playSom === "function") {
+            playSom('erro');
+        }
+
+        // Opcional: Feedback visual de erro se você tiver a função
+        if (typeof feedbackVisualErro === "function") {
+            feedbackVisualErro();
+        }
+    }
+
+
+
+}
 
 function proxima() {
     document.getElementById('barra-feedback').classList.add('w3-hide');
@@ -223,29 +263,59 @@ function proxima() {
         finalizar();
     }
 }
+
+
 function finalizar() {
+    // 1. Cálculos de Performance
+    const total = questoes.length;
+    const media = (nota / total) * 10;
+    const aprovado = media >= 6;
 
-    // Força a barra a encher totalmente no final
-    const progressBarr = document.getElementById('barra-progresso-simulado');
-    if (progressBarr) progressBarr.style.width = "100%";
+    // 2. Ações de Estado e Persistência (Cérebro)
+    concluirSimuladoNoSistema(aprovado);
 
-    // 1. Esconde as questões e mostra o container de resultado
-    document.getElementById('container-questao').classList.add('w3-hide');
-    const res = document.getElementById('resultado-final');
-    res.classList.remove('w3-hide');
+    // 3. Efeitos de Áudio e Visual (Sentidos)
+    dispararEfeitosFinais(aprovado);
 
-    // 2. Cálculos e Lógica
-    const media = (acertos / questoes.length) * 10;
-    const passou = media >= 6;
-    const notaFormatada = media.toFixed(1);
+    // 4. Mudança de Tela (Interface)
+    exibirTelaDeResultado(aprovado, total);
+}
 
-    // 3. Som e Comemoração
-    if (typeof playSomFinal === "function") playSomFinal(passou);
-    if (passou && typeof dispararComemoracao === "function") dispararComemoracao();
+// --- FUNÇÕES AUXILIARES (As peças de baixo nível) ---
 
-    // 4. Montando o HTML DINÂMICO (Igual ao do Texto para padronizar)
-    // Vamos injetar o layout espaçado dentro do container de resultado
-    res.innerHTML = `
+function concluirSimuladoNoSistema(aprovado) {
+    const barra = document.getElementById('barra-progresso-simulado');
+    if (barra) barra.style.width = "100%";
+
+    if (typeof salvarProgressoFinal === "function") {
+        salvarProgressoFinal(aprovado);
+    }
+}
+
+function dispararEfeitosFinais(aprovado) {
+    if (typeof playSomFinal === "function") playSomFinal(aprovado);
+
+    if (aprovado && typeof dispararComemoracao === "function") {
+        dispararComemoracao();
+    }
+}
+
+function exibirTelaDeResultado(aprovado, total) {
+    // Esconde o container de perguntas
+    document.getElementById('container-questao')?.classList.add('w3-hide');
+
+    // Mostra e renderiza o resultado
+    const resContainer = document.getElementById('resultado-final');
+    if (resContainer) {
+        resContainer.classList.remove('w3-hide');
+        resContainer.innerHTML = gerarHtmlResultado(aprovado, total);
+    }
+}
+
+
+// Gera o HTML da tela final
+function gerarHtmlResultado(passou, total) {
+    return `
         <div class="w3-container w3-padding-32 w3-center w3-animate-zoom">
             <div class="w3-margin-bottom pulse">
                 <img src="../../../fotoIndex/globinhoPe.png" width="80" height="80" 
@@ -257,7 +327,7 @@ function finalizar() {
             </h2>
             
             <div class="w3-padding-16">
-                <p class="w3-xlarge">Você acertou <b>${acertos}</b> de ${questoes.length} questões!</p>
+                <p class="w3-xlarge">Você acertou <b>${nota}</b> de ${total} questões!</p>
                 <p class="w3-text-grey" style="font-style: italic;">
                     ${passou ? 'Excelente! Você dominou este conteúdo.' : 'Que tal revisar os pontos onde teve dúvida?'}
                 </p>
@@ -265,40 +335,32 @@ function finalizar() {
 
             <div class="w3-container w3-padding-24">
                 <div class="w3-center">
-                    <button onclick="location.reload()" 
-                            class="w3-button ${passou ? 'w3-light-grey' : 'w3-blue'} w3-round-large w3-margin-bottom" 
-                            style="width: 85%; max-width: 300px; font-weight: bold; padding: 15px;">
+                    <button onclick="location.reload()" class="w3-button ${passou ? 'w3-light-grey' : 'w3-blue'} w3-round-large w3-margin-bottom btn-final">
                         🔄 REFAZER SIMULADO
                     </button>
                 </div>
-
                 <div class="w3-center">
-                    <button onclick="window.location.href='/home.html'" 
-                            class="w3-button w3-green w3-round-large" 
-                            style="width: 85%; max-width: 300px; font-weight: bold; padding: 15px;">
+                    <button onclick="window.location.href='/home.html'" class="w3-button w3-green w3-round-large btn-final">
                         🏠 VOLTAR PARA A HOME
                     </button>
                 </div>
             </div>
-        </div>
-    `;
+        </div>`;
+}
 
-    // 5. Gravação de Progresso no Banco (CORE)
-    if (typeof aulaID !== "undefined" && aulaID) {
-        if (typeof DuvidDB !== "undefined") {
-            // Salva que as questões foram concluídas
-            DuvidDB.salvarConclusao(aulaID, 'questoes');
 
-            // Dá bônus de globinhos se passar
-            if (passou) {
-                DuvidDB.addGlobinhos(20);
-                console.log("Progresso e Globinhos gravados para: " + aulaID);
-            }
+// Salva os dados no DuvidDB usando Constantes
+function salvarProgressoFinal(passou) {
+    if (typeof aulaID !== "undefined" && aulaID && typeof DuvidDB !== "undefined") {
+
+        // TROCA: Sai 'questoes' (texto fixo) -> Entra TIPO_CONCLUSAO.QUESTOES (variável global)
+        DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.QUESTOES);
+
+        if (passou) {
+            DuvidDB.addGlobinhos(RECOMPENSA_GERAL); // Bônus por passar no simulado
+
         }
     } else {
-        console.error("Erro: aulaID não definido nas questões.");
+        console.warn("[RPG] Erro ao salvar: aulaID ou DuvidDB não encontrados.");
     }
-
-    // 6. Atualiza a interface global (Navbar)
-    if (typeof atualizarInterface === "function") atualizarInterface();
 }

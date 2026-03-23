@@ -148,36 +148,38 @@
 
 
 			<hr>
+			<hr>
 			<div class="w3-container w3-center w3-padding-16">
 				<h4 class="w3-text-grey">Gerenciar Meu Progresso</h4>
 				<p class="w3-small">Deseja recomeçar a jornada e ver os cards cinzas novamente?</p>
 
-				<button onclick="document.getElementById('modalReset').style.display='flex'"
+				<button onclick="document.getElementById('modalReset').style.display='block'"
 					class="w3-button w3-white w3-border w3-border-red w3-round-large w3-hover-red w3-text-red">
-					<i class="fa fa-refresh"></i> Limpar Aulas Concluídas
+					<i class="fa fa-refresh"></i> Limpar Tudo e Reiniciar
 				</button>
 			</div>
 
-			<div id="modalReset" class="w3-modal" style="display: none; align-items: center; justify-content: center;">
+			<div id="modalReset" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large"
+					style="max-width:400px; margin-top: 80px; margin-bottom: 50px;">
 
-				<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
 					<div class="w3-container w3-center w3-padding-32">
 						<span onclick="document.getElementById('modalReset').style.display='none'"
 							class="w3-button w3-display-topright w3-round-large">&times;</span>
 
 						<h3 class="fontePixel w3-text-red">Atenção!</h3>
-						<p id="msgPersonalizada">Deseja realmente apagar o histórico de aulas concluídas?</p>
+						<p id="msgPersonalizada">Deseja realmente apagar todo o seu progresso?</p>
 
 						<img src="../fotoIndex/globinhoPe.png" width="100" class="w3-animate-bottom">
 						<br><br>
 
-						<div class="w3-row">
-							<div class="w3-half w3-padding">
+						<div class="w3-row-padding">
+							<div class="w3-half w3-margin-bottom">
 								<button class="w3-button w3-red w3-round w3-block" onclick="executarReset()">
 									Sim, Apagar
 								</button>
 							</div>
-							<div class="w3-half w3-padding">
+							<div class="w3-half">
 								<button class="w3-button w3-light-grey w3-round w3-block"
 									onclick="document.getElementById('modalReset').style.display='none'">
 									Cancelar
@@ -209,6 +211,21 @@
 		gtag('js', new Date());
 		gtag('config', 'G-DPX55DSFZ0');
 
+
+	</script>
+
+	<script>
+		// 1. Configurações Iniciais ao carregar a página
+		document.addEventListener('DOMContentLoaded', function () {
+			const nome = localStorage.getItem("duvid_nome") || "Estudante";
+			const msg = document.getElementById("msgPersonalizada");
+			if (msg) msg.innerHTML = `Olá <b>${nome.toUpperCase()}</b>, deseja apagar seu histórico e reiniciar a jornada?`;
+		});
+
+	</script>
+
+
+	<script>
 		function validateForm() {
 			var password = document.getElementById("password").value;
 			if (password === "") {
@@ -217,17 +234,6 @@
 			}
 			return true;
 		}
-	</script>
-
-	<script>
-		// 1. Personaliza a mensagem quando a página carrega
-		document.addEventListener('DOMContentLoaded', function () {
-			const nome = localStorage.getItem("duvid_nome") || "Estudante";
-			const msg = document.getElementById("msgPersonalizada");
-			if (msg) msg.innerHTML = `Olá <b>${nome}</b>, deseja realmente apagar o histórico de aulas concluídas?`;
-		});
-
-		
 	</script>
 </body>
 

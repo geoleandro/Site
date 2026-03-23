@@ -1,3 +1,13 @@
+// 1. CONSTANTES (FORA DE TUDO)
+const TIPO_CONCLUSAO = { TEXTO: 'texto', QUESTOES: 'questoes' };
+const DB_CHAVE = "duvid_globinhos";
+const NOME_CHAVE = "duvid_nome";
+const PATENTE_CHAVE = "duvid_patente";
+const NIVEL_CHAVE = "duvid_lvl";
+const RECOMPENSA_TEXTO = 10;
+const RECOMPENSA_QUESTOES = 10;
+const RECOMPENSA_GERAL = 20;
+
 // Força o scroll para o topo toda vez que a página recarregar
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -28,15 +38,17 @@ const SOM_FINAL_RUIM = new Audio('/audios/notaFinal2.mp3');
 const SOM_INCIO_NOME = new Audio('/audios/inicioNome.mp3');
 
 // Valores oficiais para o site pronto
-const MARCOS_CONQUISTAS = [500, 2000, 10000];
 
 function playSomFinal(vitoria) {
-    if (vitoria) {
-        SOM_FINAL_BOM.play().catch(e => console.log("Erro som final: ", e));
-    } else {
-        SOM_FINAL_RUIM.play().catch(e => console.log("Erro som final: ", e));
+    // 1. Escolhe o som baseado no resultado
+    const som = vitoria ? SOM_FINAL_BOM : SOM_FINAL_RUIM;
+
+    if (som) {
+        som.currentTime = 0; // REBOBINA O SOM (Garante que toque sempre do início)
+        som.play().catch(e => console.log("Erro som final: ", e));
     }
 }
+
 
 function playSom(tipo) {
     let caminho = tipo;
@@ -138,58 +150,72 @@ function dispararComemoracao() {
 }
 
 // 4. CENTRAL DE ECONOMIA (LocalStorage)
-const DB_CHAVE = "duvid_globinhos";
+
 
 const DuvidDB = {
+
+
     getGlobinhos: function () {
-        return parseInt(localStorage.getItem(DB_CHAVE)) || 0;
+        // Usa a constante para ler o saldo
+        const saldo = localStorage.getItem(DB_CHAVE);
+        return saldo ? parseInt(saldo) : 0;
     },
 
+
     addGlobinhos: function (quantidade) {
-        // 1. Pega os dados ANTES da soma
-        let saldoAnterior = Number(localStorage.getItem("duvid_globinhos")) || 0;
-        let lvlAnterior = this.getProgressoRPG().lvl; // Pega o nível atual antes de somar
+        // 1. Dados ANTES da soma
+        let saldoAnterior = this.getGlobinhos();
+        let lvlAnterior = this.getProgressoRPG().lvl;
 
-        // 2. Realiza a soma no Global
+        // 2. Realiza a soma e salva usando a Constante
         let novoSaldo = saldoAnterior + Number(quantidade);
-        localStorage.setItem("duvid_globinhos", novoSaldo);
+        localStorage.setItem(DB_CHAVE, novoSaldo);
 
-        // 3. Pega os dados DEPOIS da soma
-        const progressoAtual = this.getProgressoRPG();
+        // --- NOVIDADE AQUI: Sincroniza Patente e Nível no LocalStorage ---
+        const progressoAtual = this.verificarConquistas();
+        // ----------------------------------------------------------------
+     
         let novoLvl = progressoAtual.lvl;
 
-        // --- LÓGICA DE LEVEL UP (O NOVO "TROFÉU") ---
+        // --- LÓGICA DE FEEDBACK (Sem alterações aqui, está ótima!) ---
         if (novoLvl > lvlAnterior) {
-
-            // 1. Toca o som de vitória
             if (typeof playSomFinal === "function") playSomFinal(true);
-
-            // 2. Dispara confetes se a função existir
-            if (typeof dispararComemoracao === "function") dispararComemoracao();
-
-            // 3. Notificação Épica de Level Up
-            const notificacao = document.createElement('div');
-            notificacao.innerHTML = `
-            <div class="w3-animate-zoom w3-card-4 w3-round-large w3-padding" 
-                 style="position:fixed; top:20px; left:50%; transform:translateX(-50%); z-index:10000; text-align:center; background-color:${progressoAtual.cor}; color:white;">
-                <i class="fa fa-arrow-up w3-xlarge"></i><br>
-                <b class="w3-large">SUBIU DE NÍVEL!</b><br>
-                <span>Agora você é um <b>${progressoAtual.patente}</b></span><br>
-                <span class="w3-tag w3-white w3-text-black w3-round w3-margin-top">LVL ${novoLvl}</span>
-            </div>
-        `;
-            document.body.appendChild(notificacao);
-
-            setTimeout(() => {
-                notificacao.classList.add('w3-animate-opacity');
-                setTimeout(() => notificacao.remove(), 500);
-            }, 5000);
+            if (typeof dispararComemoracao === "function") dispararComemoracao(true);
+            this.exibirNotificacaoLevelUp(progressoAtual);
+        } else {
+            if (typeof playSom === "function") playSom('acerto');
         }
 
-        // Mantém o restante da sua lógica (atualizar header, ganhos atuais, etc)
-        window.ganhosAtuais += Number(quantidade);
-        atualizarHeaderGlobinhos();
-        if (typeof feedbackVisualAcerto === "function") feedbackVisualAcerto();
+        // Atualiza elementos da interface
+        window.ganhosAtuais = (window.ganhosAtuais || 0) + Number(quantidade);
+        if (typeof atualizarHeaderGlobinhos === "function") atualizarHeaderGlobinhos();
+       
+    },
+
+    // Função auxiliar para não poluir o addGlobinhos
+    exibirNotificacaoLevelUp: function (progresso) {
+        const notificacao = document.createElement('div');
+        notificacao.innerHTML = `
+            <div class="w3-animate-zoom w3-card-4 w3-round-large w3-padding" 
+                 style="position:fixed; top:20px; left:50%; transform:translateX(-50%); z-index:10000; text-align:center; background-color:${progresso.cor}; color:white; min-width:250px;">
+                <i class="fa fa-arrow-up w3-xlarge"></i><br>
+                <b class="w3-large">SUBIU DE NÍVEL!</b><br>
+                <span>Agora você é um <b>${progresso.patente}</b></span><br>
+                <span class="w3-tag w3-white w3-text-black w3-round w3-margin-top">LVL ${progresso.lvl}</span>
+            </div>
+        `;
+        document.body.appendChild(notificacao);
+        setTimeout(() => {
+            notificacao.classList.add('w3-animate-opacity');
+            setTimeout(() => notificacao.remove(), 500);
+        }, 5000);
+    },
+
+    // NOVA FUNÇÃO: O "Leitor" de status blindado
+    estaConcluido: function (idAula, tipo) {
+        // 'tipo' deve vir da constante TIPO_CONCLUSAO (texto ou questoes)
+        // Retorna true se estiver "true" no localStorage, senão retorna false
+        return localStorage.getItem(`concluido_${tipo}_${idAula}`) === "true";
     },
 
 
@@ -199,26 +225,33 @@ const DuvidDB = {
 
 
     getNome: function () {
-        return localStorage.getItem("duvid_nome") || "";
+        return localStorage.getItem(NOME_CHAVE) || "";
     },
 
     salvarNome: function (nome) {
         if (nome.trim() !== "") {
-            localStorage.setItem("duvid_nome", nome.trim());
+            localStorage.setItem(NOME_CHAVE, nome.trim());
             return true;
         }
         return false;
     },
-    // NOVA FUNÇÃO CENTRALIZADA
-    getProgressoAcademico: function(aulas) {
+    // ADICIONE ESTA LINHA ABAIXO:
+    setNome: function (nome) { return this.salvarNome(nome); },
+
+
+    // NOVA FUNÇÃO CENTRALIZADA (Versão Blindada)
+    getProgressoAcademico: function (aulas) {
         if (!aulas || !Array.isArray(aulas)) return { concluidas: 0, total: 0, porc: 0 };
 
         const aulasValidas = aulas.filter(a => a !== null && a.id !== undefined);
         const total = aulasValidas.length;
 
         const concluidas = aulasValidas.filter(aula => {
-            const texto = localStorage.getItem("concluido_texto_" + aula.id) === "true";
-            const questoes = localStorage.getItem("concluido_questoes_" + aula.id) === "true";
+            // Agora usamos a função interna 'estaConcluido' e as Constantes
+            // Isso garante que se você mudar o nome das chaves no topo, aqui continua funcionando
+            const texto = this.estaConcluido(aula.id, TIPO_CONCLUSAO.TEXTO);
+            const questoes = this.estaConcluido(aula.id, TIPO_CONCLUSAO.QUESTOES);
+
             return texto && questoes;
         }).length;
 
@@ -229,9 +262,8 @@ const DuvidDB = {
         };
     },
 
-    // Configuração de Níveis do RPG
     RANKING_SISTEMA: [
-        { lvl: 1, patente: "NOVATO", min: 0, max: 100, cor: "#9d9d9d" },
+        { lvl: 1, patente: "NOVATO", min: 0, max: 1000, cor: "#9d9d9d" },
         { lvl: 2, patente: "EXPLORADOR", min: 1001, max: 3500, cor: "#4caf50" },
         { lvl: 3, patente: "CARTÓGRAFO", min: 3501, max: 8000, cor: "#2196f3" },
         { lvl: 4, patente: "ESTRATEGISTA", min: 8001, max: 15000, cor: "#9c27b0" },
@@ -262,34 +294,21 @@ const DuvidDB = {
     verificarConquistas: function () {
         const progresso = this.getProgressoRPG();
 
-        // Salva os dados processados para acesso rápido por outras páginas
-        localStorage.setItem("patente", progresso.patente);
-        localStorage.setItem("user_lvl", progresso.lvl);
+        // Usando as novas constantes para salvar
+        localStorage.setItem(PATENTE_CHAVE, progresso.patente);
+        localStorage.setItem(NIVEL_CHAVE, progresso.lvl);
 
-        // Retorna os dados caso a função que chamou precise usar na hora
+        console.log(`[RPG] Status Sincronizado: ${progresso.patente} (Nível ${progresso.lvl})`);
+
         return progresso;
     },
 
+};//fIM DAS FUNÇÕES DuvidDB
 
-    resetarSistema: function () {
-        if (confirm("Deseja zerar seu progresso e globinhos? Esta ação não pode ser desfeita.")) {
-            // 1. Zera os globinhos
-            localStorage.setItem("duvid_globinhos", 0);
 
-            // 2. Remove todas as conclusões de texto e questões
-            // Filtramos as chaves que começam com 'concluido_' para não apagar o nome do aluno
-            Object.keys(localStorage).forEach(key => {
-                if (key.startsWith('concluido_')) {
-                    localStorage.removeItem(key);
-                }
-            });
 
-            console.log("Progresso resetado com sucesso!");
-            location.reload(); // Recarrega para a Home voltar a ficar cinza
-        }
-    },// Caso queira resetar APENAS os globinhos (para testes rápidos)
 
-};
+
 
 function atualizarSistemaNivelHome() {
     // Pede os dados processados ao Core
@@ -304,7 +323,7 @@ function atualizarSistemaNivelHome() {
     }
 
     document.getElementById('lvl-tag').innerText = `LEVEL ${rpg.lvl}`;
-    document.getElementById('lvl-tag').style.backgroundColor = "black"; // Ou use rpg.cor
+    document.getElementById('lvl-tag').style.backgroundColor = "amber"; // Ou use rpg.cor
 
     document.getElementById('rank-nome').innerText = rpg.patente;
     document.getElementById('rank-nome').style.color = rpg.cor; // Cor dinâmica da patente!
@@ -340,35 +359,35 @@ function animarContador(idElemento, valorFinal) {
 
 // Chame assim dentro da sua atualizarSistemaNivelHome:
 // animarContador('valor-total-central', rpg.saldoAtual);
-
-
 function verificarStatusAula(id) {
     const areaAviso = document.getElementById('aviso-status');
     if (!areaAviso || !id) return;
 
+    // 1. Usando o DuvidDB para pegar o nome e os status (Muito mais limpo!)
     const nome = (typeof DuvidDB !== "undefined" ? DuvidDB.getNome() : "Estudante") || "Estudante";
-    const jaFezQuestoes = localStorage.getItem(`concluido_questoes_${id}`) === "true";
-    const jaLeuTexto = localStorage.getItem(`concluido_texto_${id}`) === "true";
+
+    const jaFezQuestoes = DuvidDB.estaConcluido(id, TIPO_CONCLUSAO.QUESTOES);
+    const jaLeuTexto = DuvidDB.estaConcluido(id, TIPO_CONCLUSAO.TEXTO);
 
     let msg = "", cor = "w3-teal", icone = "fa-rocket";
 
-    // CASO 1: Já completou TUDO
+    // CASO 1: Já completou TUDO (Checkmate!)
     if (jaFezQuestoes && jaLeuTexto) {
         msg = `Sensacional, <b>${nome}</b>! Você já dominou esta aula 100%. Aproveite para revisar ou seguir adiante!`;
         cor = "w3-green"; icone = "fa-check-circle";
     }
-    // CASO 2: Fez questões, mas NÃO leu o texto
+    // CASO 2: Fez questões, mas NÃO leu o texto (Raro, mas acontece)
     else if (jaFezQuestoes && !jaLeuTexto) {
         msg = `Mandou bem nas questões, <b>${nome}</b>! 💡 <b>Dica:</b> Leia o texto base agora para garantir seus globinhos extras de leitura!`;
         cor = "w3-orange"; icone = "fa-book";
     }
-    // CASO 3: Leu o texto, mas NÃO fez questões (O mais comum)
+    // CASO 3: Leu o texto, mas NÃO fez questões (Fluxo padrão)
     else if (!jaFezQuestoes && jaLeuTexto) {
         msg = `Texto lido <b>${nome}</b>, agora que tal testar seus conhecimentos nas questões e <b>ganhar mais globinhos</b>?`;
         cor = "w3-indigo"; icone = "fa-pencil";
     }
-    // CASO 4: Não fez nada ainda (Aluno novo na aula)
-    else if (!jaFezQuestoes && !jaLeuTexto) {
+    // CASO 4: Não fez nada ainda (Início da Jornada)
+    else {
         msg = `Olá! Começar pelo texto é uma ótima ideia! As questões também já estão liberadas para você ganhar pontos!`;
     }
 
@@ -384,6 +403,24 @@ function verificarStatusAula(id) {
     }
 }
 
+
+function atualizarInterface() {
+    // 1. Saldo Global (Dourado/Header)
+    const saldoDisplay = document.getElementById("saldoTotalHeader");
+    if (saldoDisplay && typeof DuvidDB !== 'undefined') {
+        saldoDisplay.innerHTML = DuvidDB.getGlobinhos().toFixed(1);
+    }
+
+    // 2. Nota da Aula/Questão (Branca/NotaFixa)
+    const notaDisplay = document.getElementById("notaFixa");
+    if (notaDisplay) {
+        // Tenta pegar ganhosAtuais (questões) ou nota (texto)
+        let valorAula = (typeof window.ganhosAtuais !== 'undefined') ? window.ganhosAtuais : 
+                        (typeof nota !== 'undefined') ? nota : 0;
+        
+        notaDisplay.innerHTML = Number(valorAula).toFixed(1);
+    }
+}
 
 // Adicione esta função ao seu DuvidCore ou como função global no core.js
 function inicializarAula(tipo) {
@@ -412,6 +449,8 @@ function inicializarAula(tipo) {
 
     return aulaID;
 }
+
+
 function atualizarGlobinhosGeral() {
     if (typeof DuvidDB === 'undefined') return;
 
@@ -428,56 +467,59 @@ function atualizarGlobinhosGeral() {
 }
 
 
-
-
-// 2. A função que realmente faz o trabalho (só roda ao clicar no botão do modal)
 function executarReset() {
-    console.log("Iniciando reset total do sistema...");
+    // 1. Efeito visual: Sobe a página
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Lista de chaves para remoção segura
-    const chavesParaRemover = [];
-    for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
+    console.log("Iniciando Protocolo de Reboot...");
 
-        // Critérios: Progresso novo, Progresso antigo e Globinhos
-        if (
-            key.startsWith("concluido_") ||
-            (key.startsWith("duvid_") && key.endsWith("_questoes")) ||
-            key === "duvid_globinhos"
-        ) {
-            if (key !== "duvid_nome") {
-                chavesParaRemover.push(key);
-            }
+    // 2. Limpeza Inteligente do LocalStorage
+    const chaves = Object.keys(localStorage);
+    chaves.forEach(key => {
+        // Verifica se a chave começa com os prefixos do sistema
+        const isConcluido = key.startsWith("concluido_");
+        const isDuvid = key.startsWith("duvid_");
+
+        // Também garante a limpeza das chaves específicas que você definiu no topo
+        const isChaveGlobal = (key === DB_CHAVE || key === NOME_CHAVE);
+
+        if (isConcluido || isDuvid || isChaveGlobal) {
+            localStorage.removeItem(key);
+            console.log(`Chave removida: ${key}`);
         }
-    }
+    });
 
-    // Executa a limpeza
-    chavesParaRemover.forEach(key => localStorage.removeItem(key));
-
-    // Zera explicitamente o saldo
-    localStorage.setItem("duvid_globinhos", "0");
-
-    // 3. Feedback Visual dentro do Modal
+    // 3. Feedback Visual no Modal (com o texto de RPG)
     const modalContent = document.querySelector("#modalReset .w3-container");
     if (modalContent) {
         modalContent.innerHTML = `
-                <div class="w3-animate-zoom w3-center w3-padding-32">
-                    <h3 class="fontePixel w3-text-red"><b>SISTEMA REBOOTADO!</b></h3>
-                    <img src="../fotoIndex/globinhoPe.png" width="80" class="w3-spin w3-margin">
-                    <p>Limpando memórias... <b>Aguarde.</b></p>
-                </div>
-            `;
+            <div class="w3-animate-zoom w3-center w3-padding-32">
+                <h3 class="w3-text-red fontePixel"><b>SISTEMA REBOOTADO!</b></h3>
+                <img src="../fotoIndex/globinhoPe.png" width="80" class="w3-spin w3-margin">
+                <p>Formatando banco de dados...<br><b>Aguarde a reinicialização.</b></p>
+            </div>
+        `;
     }
 
-    // Som de erro/reset
+    // 4. Som e Redirecionamento
     if (typeof playSom === "function") playSom('erro');
 
-    // 4. Redireciona para a Home zerada após 1.8s
     setTimeout(() => {
-        window.location.href = "/index.html";
-    }, 1800);
+        // Volta para a Splash Screen para o aluno colocar o nome novamente
+        window.location.href = "../index.html";
+    }, 2200);
 }
 
+
+// 3. Validação do formulário de acesso aos grupos (Senha)
+function validateForm() {
+    const password = document.getElementById("password").value;
+    if (password === "") {
+        document.getElementById("errorMessage").innerHTML = "Digite a senha de acesso.";
+        return false;
+    }
+    return true;
+}
 // --- 2. Função Mestre de Interface ---
 
 function feedbackVisualAcerto() {
@@ -488,7 +530,7 @@ function feedbackVisualAcerto() {
 
     const url = window.location.href.toLowerCase();
     const ehAula = url.includes('modelo-') || url.includes('questoes') || url.includes('texto');
-    const saldoTotal = Number(localStorage.getItem("duvid_globinhos")) || 0;
+    const saldoTotal = Number(localStorage.getItem(DB_CHAVE)) || 0;
 
     // 1. ATUALIZA VALORES E CORES
     if (notaFixa) {
@@ -560,8 +602,8 @@ function gerenciarIdentificacaoHome() {
 function NomeAlunos(respid, inputid) {
     const nome = document.getElementById(inputid).value;
     if (nome.trim() !== "") {
-        // Salva o nome
-        DuvidDB.setNome(nome);
+        // CORREÇÃO AQUI: De setNome para salvarNome
+        DuvidDB.salvarNome(nome);
 
         // Troca as telas
         document.getElementById('form-identificacao').style.display = 'none';
@@ -569,54 +611,11 @@ function NomeAlunos(respid, inputid) {
         document.getElementById('nome-aluno-texto').innerText = nome.toUpperCase();
         document.getElementById('resumo-geral').style.display = 'block';
 
-        // GATILHO 2: Inicializa o sistema de nível para o novo jogador
+        // GATILHO 2
         atualizarSistemaNivelHome();
     }
 }
 
-
-function atualizarResumoHome() {
-    // Configuração: Total de aulas que existem em cada ano no seu projeto
-    const totaisPorAno = { "1ano": 32, "2ano": 36, "3ano": 36 };
-
-    Object.keys(totaisPorAno).forEach(ano => {
-        let concluidas = 0;
-        const total = totaisPorAno[ano];
-
-        // Percorre o localStorage procurando conclusões desse ano
-        // Ex: concluido_questoes_101, concluido_questoes_205...
-        for (let i = 0; i < localStorage.length; i++) {
-            let chave = localStorage.key(i);
-
-            // Lógica: Se a chave começa com 'concluido_questoes_' e o ID bate com o ano
-            // IDs 100+ (1º ano), 200+ (2º ano), 300+ (3º ano)
-            if (chave.startsWith("concluido_questoes_")) {
-                let id = parseInt(chave.replace("concluido_questoes_", ""));
-
-                if (ano === "1ano" && id >= 100 && id < 200) concluidas++;
-                if (ano === "2ano" && id >= 200 && id < 300) concluidas++;
-                if (ano === "3ano" && id >= 300 && id < 400) concluidas++;
-            }
-        }
-
-        // Calcula porcentagem e atualiza a interface
-        const porcentagem = Math.round((concluidas / total) * 100);
-
-        const barra = document.getElementById(`bar-${ano}`);
-        const texto = document.getElementById(`txt-${ano}`);
-        const conquista = document.getElementById(`conquista-${ano}`);
-
-        if (barra) barra.style.width = porcentagem + "%";
-        if (texto) texto.innerText = `${concluidas}/${total}`;
-
-        // Se completou 100%, mostra o troféu do card
-        if (conquista && porcentagem >= 100) conquista.style.display = 'block';
-    });
-
-    // Mostra o container dos resumos agora que está preenchido
-    const resumoGeral = document.getElementById('resumo-geral');
-    if (resumoGeral) resumoGeral.style.display = 'block';
-}
 
 function prepararTrocaNome() {
     const form = document.getElementById('form-identificacao');
@@ -686,7 +685,7 @@ async function carregarFrase() {
 
 function sincronizarNomeGlobal() {
     // 1. Pega o nome atualizado
-    const nomeSalvo = localStorage.getItem("duvid_nome");
+    const nomeSalvo = localStorage.getItem(NOME_CHAVE);
     if (!nomeSalvo) return; // Se não tem nome, não faz nada
 
     // 2. Atualiza no Header das Aulas (se houver o ID 'nome-aluno-header')

@@ -1,98 +1,113 @@
 async function carregarAulas(ano) {
     const grid = document.getElementById('grid-aulas');
+    if (!grid) return;
 
     try {
-        const res = await fetch(`/js/aulas-${ano}ano.json`);
+        const res = await fetch(`./js/aulas-${ano}ano.json`);
         const aulas = await res.json();
 
+        // 1. Atualiza o Painel de RPG no topo
         mostrarProgressoGlobal(aulas, ano);
 
-        if (grid) {
-            grid.innerHTML = aulas.map(aula => {
-                // --- PADRONIZAÇÃO TOTAL AQUI ---
-                const leuTexto = localStorage.getItem("concluido_texto_" + aula.id) === "true";
-                const fezQuestoes = localStorage.getItem("concluido_questoes_" + aula.id) === "true";
+        // 2. Desenha o Grid
+        grid.innerHTML = aulas.map(aula => {
+            const status = obterStatusAula(aula.id);
+            const numAula = String(aula.id).slice(-2);
 
-                const concluidaTotal = leuTexto && fezQuestoes;
-                const concluidaParcial = leuTexto || fezQuestoes;
+            return `
+            <div class="column" style="margin-bottom: 25px;">
+                <div class="wrapper" style="position: relative;">
+                    <img class="w3-round-large w3-card w3-hover-opacity" 
+                         src="${aula.imagem}" 
+                         alt="${aula.titulo}" 
+                         onclick="document.getElementById('div${aula.id}').style.display='block'"
+                         style="width:100%; cursor:pointer; transition: 0.5s; ${status.estilo}">
+                    ${status.icone}
+                </div>
+                
+                <p style="font-weight: bold; ${status.corTexto}">
+                    ${status.prefixo} ${numAula}: ${aula.titulo}
+                </p>
 
-                // Define a cor da borda e filtros
-                let estiloCard = 'filter: grayscale(1); opacity: 0.7;';
-                let iconeStatus = '';
-                let corTexto = 'color: #777;';
+                ${gerarHtmlModal(aula, status)}
+            </div>`;
+        }).join('');
 
-                if (concluidaTotal) {
-                    estiloCard = 'border: 4px solid #4CAF50 !important; filter: grayscale(0); opacity: 1;';
-                    iconeStatus = '<i class="fa fa-check-circle w3-text-green w3-xlarge" style="position: absolute; top: 10px; right: 10px; background: white; border-radius: 50%; padding: 2px;"></i>';
-                    corTexto = 'color: #2e7d32;';
-                } else if (concluidaParcial) {
-                    estiloCard = 'border: 4px solid #ff9800 !important; filter: grayscale(0); opacity: 0.9;';
-                    iconeStatus = '<i class="fa fa-clock-o w3-text-orange w3-xlarge" style="position: absolute; top: 10px; right: 10px; background: white; border-radius: 50%; padding: 2px;"></i>';
-                    corTexto = 'color: #e65100;';
-                }
-
-                return `
-                <div class="column" style="margin-bottom: 25px;">
-                    <div class="wrapper" style="position: relative;">
-                        <img class="w3-round-large w3-card w3-hover-opacity" 
-                             src="${aula.imagem}" 
-                             alt="${aula.titulo}" 
-                             onclick="ExpandeDiv('div${aula.id}')"
-                             style="width:100%; cursor:pointer; transition: 0.5s; ${estiloCard}">
-                        
-                        ${iconeStatus}
-                    </div>
-                    
-                    <p style="font-weight: bold; ${corTexto}">
-                        ${concluidaTotal ? '✔ ' : (concluidaParcial ? '⏳ ' : '')} ${String(aula.id).slice(-2)}: ${aula.titulo}
-                    </p>
-
-                    <div id="div${aula.id}" class="w3-modal" style="display:none">
-                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px">
-                            <div class="w3-center w3-padding-48">
-                                <span onclick="document.getElementById('div${aula.id}').style.display='none'"
-                                      class="w3-button w3-xlarge w3-hover-red w3-display-topright">&times;</span>
-                                
-                                <div class="w3-margin">
-                                    <h3> ${(aula.titulo)}</h3>
-                                    ${concluidaTotal ? '<span class="w3-tag w3-green w3-round">Concluída!</span>' : (concluidaParcial ? '<span class="w3-tag w3-orange w3-round">Em andamento</span>' : '')}
-                                    <br><br>
-                                    <strong>Conteúdo:</strong> ${aula.conteudo}
-                                </div>
-
-                               <div class="w3-container w3-padding-16">
-                                    <div class="w3-center">
-                                        <a href="${aula.linkTexto}" 
-                                           class="w3-button ${leuTexto ? 'w3-green' : 'w3-teal'} w3-round-large w3-margin-bottom" 
-                                           style="width: 85%; max-width: 300px; font-weight: bold; padding: 12px;">
-                                            ${leuTexto ? '🔍 REVISAR TEXTO' : '📖 LER TEXTO'}
-                                        </a>
-                                    </div>
-                                    
-                                    <div class="w3-center">
-                                        <a href="${aula.linkQuestoes}" 
-                                           class="w3-button ${fezQuestoes ? 'w3-blue' : 'w3-yellow'} w3-round-large" 
-                                           style="width: 85%; max-width: 300px; font-weight: bold; padding: 12px;">
-                                            ${fezQuestoes ? '🔄 REVISAR QUESTÕES' : '✍️ FAZER QUESTÕES'}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>`;
-            }).join('');
-        }
     } catch (e) {
         console.error("Erro ao carregar as aulas:", e);
-        grid.innerHTML = "<p class='w3-center'>Erro ao carregar as aulas.</p>";
+        grid.innerHTML = "<p class='w3-center'>Erro ao carregar o mapa de aulas.</p>";
     }
-    // APÓS desenhar tudo no HTML:
-    if (typeof atualizarHeaderGlobinhos === "function") {
-        atualizarHeaderGlobinhos();
-    }
+
+    if (typeof atualizarHeaderGlobinhos === "function") atualizarHeaderGlobinhos();
 }
 
+// 1. Lógica de Estilo e Status
+function obterStatusAula(aulaId) {
+   
+    const leuTexto = DuvidDB.estaConcluido(aulaId, TIPO_CONCLUSAO.TEXTO);
+    const fezQuestoes = DuvidDB.estaConcluido(aulaId, TIPO_CONCLUSAO.QUESTOES);
+
+    const total = leuTexto && fezQuestoes;
+    const parcial = leuTexto || fezQuestoes;
+
+    if (total) {
+        return {
+            estilo: 'border: 4px solid #4CAF50 !important; filter: grayscale(0); opacity: 1;',
+            icone: '<i class="fa fa-check-circle w3-text-green w3-xlarge status-icon"></i>',
+            corTexto: 'color: #2e7d32;',
+            prefixo: '✔',
+            tag: '<span class="w3-tag w3-green w3-round">Concluída!</span>',
+            btnTexto: '🔍 REVISAR TEXTO', btnQuest: '🔄 REVISAR QUESTÕES',
+            concluido: { texto: true, quest: true }
+        };
+    } else if (parcial) {
+        return {
+            estilo: 'border: 4px solid #ff9800 !important; filter: grayscale(0); opacity: 0.9;',
+            icone: '<i class="fa fa-clock-o w3-text-orange w3-xlarge status-icon"></i>',
+            corTexto: 'color: #e65100;',
+            prefixo: '⏳',
+            tag: '<span class="w3-tag w3-orange w3-round">Em andamento</span>',
+            btnTexto: leuTexto ? '🔍 REVISAR TEXTO' : '📖 LER TEXTO',
+            btnQuest: fezQuestoes ? '🔄 REVISAR QUESTÕES' : '✍️ FAZER QUESTÕES',
+            concluido: { texto: leuTexto, quest: fezQuestoes }
+        };
+    }
+    return {
+        estilo: 'filter: grayscale(1); opacity: 0.7;',
+        icone: '',
+        corTexto: 'color: #777;',
+        prefixo: '',
+        tag: '',
+        btnTexto: '📖 LER TEXTO', btnQuest: '✍️ FAZER QUESTÕES',
+        concluido: { texto: false, quest: false }
+    };
+}
+
+// 2. Gerador do Modal (O conteúdo que abre)
+function gerarHtmlModal(aula, status) {
+    return `
+    <div id="div${aula.id}" class="w3-modal" style="display:none">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:500px">
+            <div class="w3-center w3-padding-48">
+                <span onclick="document.getElementById('div${aula.id}').style.display='none'"
+                      class="w3-button w3-xlarge w3-display-topright w3-round-large">&times;</span>
+                <div class="w3-margin">
+                    <h3>${aula.titulo}</h3>
+                    ${status.tag}<br><br>
+                    <strong>Conteúdo:</strong> ${aula.conteudo}
+                </div>
+                <div class="w3-container w3-padding-16">
+                    <a href="${aula.linkTexto}" class="w3-button ${status.concluido.texto ? 'w3-green' : 'w3-teal'} btn-aula">
+                        ${status.btnTexto}
+                    </a>
+                    <a href="${aula.linkQuestoes}" class="w3-button ${status.concluido.quest ? 'w3-blue' : 'w3-yellow'} btn-aula">
+                        ${status.btnQuest}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>`;
+}
 
 // ATUALIZE TAMBÉM A CONTAGEM NO PROGRESSO GLOBAL
 // VERSÃO COMPACTA DO PROGRESSO GLOBAL
@@ -142,7 +157,7 @@ function gerarCabecalhoPainel(nome, rpg) {
         <div class="w3-row" style="display: flex; align-items: center;">
             <div class="w3-col s8">
                 <h4 class="w3-margin-0" style="font-size: 1.1em;">
-                    <span class="w3-tag w3-black w3-round w3-tiny">LEVEL ${rpg.lvl}</span> 
+                    <span class="w3-tag w3-amber w3-round w3-small w3-"><strong>LEVEL</strong> ${rpg.lvl}</span> 
                     Olá, <b class="w3-text-green">${nome.toUpperCase()}</b>
                     <button onclick="prepararTrocaNome()" class="w3-button w3-tiny w3-round-xlarge w3-light-grey">
                         <i class="fa fa-pencil"></i>
@@ -157,6 +172,10 @@ function gerarCabecalhoPainel(nome, rpg) {
             </div>
         </div>`;
 }
+
+
+
+
 function gerarHtmlTrofeus(saldoTotal) {
     const marcos = [
         { info: DuvidDB.RANKING_SISTEMA[0], icone: 'fa-seedling' }, 
@@ -187,6 +206,8 @@ function gerarHtmlTrofeus(saldoTotal) {
         `;
     }).join('');
 }
+
+
 
 function ExpandeDiv(id_cadastro) {
     var div_sel = document.getElementById(id_cadastro);
@@ -268,26 +289,32 @@ async function atualizarResumoHome() {
 
 
 
-
+//conta os troféus para o seu sistema de RPG
 function contarAulasConcluidas(anoPrefixo) {
     let contagem = 0;
-    // Percorre o localStorage uma única vez (Mais rápido que loop de 1 a 50)
+    
+    // 1. Criamos o prefixo de busca usando a nossa constante Global
+    // Isso vai gerar algo como "concluido_questoes_"
+    const prefixoBusca = `concluido_${TIPO_CONCLUSAO.QUESTOES}_`;
+
     for (let i = 0; i < localStorage.length; i++) {
         let chave = localStorage.key(i);
         
-        // Procuramos apenas as chaves de questões concluídas desse ano
-        if (chave.startsWith("concluido_questoes_" + anoPrefixo)) {
-            let idAula = chave.replace("concluido_questoes_", "");
+        // 2. Procuramos as chaves que começam com o prefixo + o ano (ex: 1 para 1º ano)
+        if (chave.startsWith(prefixoBusca + anoPrefixo)) {
             
-            // Verifica se o texto daquela mesma aula também foi lido
-            const textoLido = localStorage.getItem("concluido_texto_" + idAula) === "true";
+            // Extraímos o ID da aula da chave (ex: de "concluido_questoes_101" sobra "101")
+            let idAula = chave.replace(prefixoBusca, "");
+            
+            // 3. Usamos o nosso "Gerente" DuvidDB para checar se o texto também foi lido
+            // Passamos a constante TIPO_CONCLUSAO.TEXTO para garantir a simetria
+            const textoLido = DuvidDB.estaConcluido(idAula, TIPO_CONCLUSAO.TEXTO);
             
             if (textoLido) {
                 contagem++;
-               
             }
         }
     }
-    return contagem;
     
+    return contagem;
 }
