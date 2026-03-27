@@ -1,0 +1,203 @@
+/* CONTAINER PRINCIPAL */
+.trilha-conquistas-container {
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+    overflow-x: auto;
+    /* Garante que funcione em celular */
+    scrollbar-width: none;
+    /* Esconde scrollbar no Firefox */
+    z-index: 1;
+    /* REDUZIDO: Para o menu lateral (que costuma ser z-index 10+) passar por cima */
+}
+
+.trilha-conquistas-container::-webkit-scrollbar {
+    display: none;
+    /* Esconde scrollbar no Chrome */
+}
+
+/* O WRAPPER QUE Alinha TUDO */
+.trilha-wrapper {
+    position: relative;
+    min-width: 700px; /* FORÇA o scroll no celular para as patentes não encavalarem */
+    height: 110px; /* Altura aumentada para caber as duas linhas de texto */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* AS LINHAS DE FUNDO (A cinza e a ativa) */
+/* Ajuste as linhas de fundo para acompanharem esse respiro */
+.linha-trilha-fundo, .linha-trilha-ativa {
+    position: absolute;
+    top: 50%;
+    /* Deixe o left/right igual ao padding que você usou acima */
+    left: 30px; 
+    right: 30px;
+    height: 8px;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.linha-trilha-fundo {
+    background-color: #e0e0e0;
+    /* Cinza claro de fundo */
+}
+
+.linha-trilha-ativa {
+    background: linear-gradient(90deg, #4caf50, #2196f3);
+    /* Degradê Verde/Azul para progresso */
+    width: 0%;
+    /* Começa zerada, o JS aumenta */
+    transition: width 1s ease-out;
+    /* Animação suave */
+    z-index: 1;
+}
+
+/* O CONTAINER DOS ÍCONES */
+.icones-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    /* Espaçamento igual entre as bolinhas */
+    align-items: center;
+    /* Centraliza verticalmente */
+    z-index: 3;
+    padding: 0 10px; /* Dá folga para a primeira e última bolinha não colarem */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* ESTILO DE CADA PONTO DE NÍVEL (As Bolinhas) */
+/* Cada Ponto agora contém o texto fixo abaixo */
+.ponto-nivel {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 4px solid #bdbdbd;
+    border-radius: 50%;
+    flex-shrink: 0; /* Impede que a bolinha amasse no celular */
+}
+
+/* Efeito Hover nas bolinhas */
+.ponto-nivel:hover {
+    transform: scale(1.2);
+    /* A bolinha aumenta um pouco */
+}
+
+/* ESTILO DO NÍVEL ATIVO (Conquistado) */
+.ponto-nivel.ativo {
+    background-color: #ffc107;
+    /* Cor Amber (Amarelo RPG) */
+    border-color: #ffffff;
+    /* Borda branca para destacar */
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
+    /* Brilho RPG! */
+}
+
+/* ESTILO DA BOLINHA DO NÍVEL ATUAL (A última conquistada) */
+.ponto-nivel.atual {
+    animation: pulsoAtivo 2s infinite;
+    /* Efeito pulsação */
+}
+
+
+/* Ajuste no Container dos Ícones */
+.icones-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* O Texto do Nível (Substituindo o Tooltip por texto fixo) */
+.ponto-nivel::after {
+    content: attr(data-label); /* Pega o texto do atributo HTML */
+    position: absolute;
+    top: 40px; /* Joga o texto para baixo da bolinha */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Impede que o texto quebre linha */
+    font-size: 10px;
+    font-weight: bold;
+    color: #666;
+    opacity: 0.7;
+}
+
+/* Destaque para o nível que já passou ou o atual */
+.ponto-nivel.ativo::after, .ponto-nivel.atual::after {
+    color: #333;
+    opacity: 1;
+}
+
+/* CONTAINER DO SCROLL */
+.trilha-scroll-area {
+    width: 100%;
+    overflow-x: auto; /* Ativa o scroll lateral */
+    -webkit-overflow-scrolling: touch; /* Scroll suave no iOS */
+    padding-bottom: 20px; /* Espaço para não cortar a legenda */
+}
+
+/* Estilização da Scrollbar para a Trilha */
+.trilha-scroll-area::-webkit-scrollbar {
+    height: 6px; /* Barra bem fininha */
+    display: block; /* Garante que ela apareça */
+}
+
+.trilha-scroll-area::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.trilha-scroll-area::-webkit-scrollbar-thumb {
+    background: #bdbdbd; /* Cinza discreto */
+    border-radius: 10px;
+}
+
+.trilha-scroll-area::-webkit-scrollbar-thumb:hover {
+    background: #999; 
+}
+
+/* ANIMAÇÃO DE PULSAÇÃO DO NÍVEL ATUAL */
+@keyframes pulsoAtivo {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(255, 193, 7, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+    }
+}
+
+@media (max-width: 600px) {
+    .trilha-conquistas-container {
+        margin-top: 60px;
+        /* Espaço extra para o botão de menu/header */
+        padding: 0 15px;
+    }
+
+    /* Se o seu menu (sidebar) usa W3-Sidebar, force o Z-INDEX dele no CSS */
+    .w3-sidebar {
+        z-index: 999 !important;
+        /* O menu SEMPRE vence a trilha */
+    }
+
+    trilha-wrapper {
+        /* Se você tem 6 níveis, 800px ou 900px garante que a 
+           quarta ou quinta bolinha fique cortada no meio */
+        min-width: 850px; 
+        padding-right: 50px; /* Garante que a última não cole na borda */
+    }
+}

@@ -45,7 +45,7 @@ async function carregarDados(id) {
 
 // --- FUNÇÃO PRINCIPAL ---
 function renderizarQuestao() {
-    
+
     const q = questoes[indiceAtual];
     const container = document.getElementById('container-questao');
     if (!container || !q) return;
@@ -93,7 +93,7 @@ function renderizarQuestao() {
 
 // Funções auxiliares para manter a função principal limpa
 const gerarBlocoApoio = (q) => !q.texto_apoio ? '' : `
-    <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding-16">
+    <div class="w3-panel w3-leftbar w3-margin w3-padding-16 bloco-apoio-duvid">
         <p style="font-style: italic; line-height: 1.6;">${q.texto_apoio}</p>
         ${q.fonte_apoio ? `<p class="w3-small w3-opacity w3-right-align">— ${q.fonte_apoio}</p>` : ''}
     </div>`;
@@ -127,17 +127,18 @@ function mostrarDica() {
     }
 }
 
-
-
-
 function verificar() {
-
     const selecionada = document.querySelector('input[name="opcao"]:checked');
     const btnVerificar = document.getElementById('btn-verificar');
 
-    // Validação inicial
+    // 1. VALIDAÇÃO (Delega ao UI)
     if (!selecionada) {
-        exibirErroSelecao(btnVerificar);
+        // Tenta a função global ou direto no objeto DuvidUI
+        if (typeof avisoSelecaoPendente === "function") {
+            avisoSelecaoPendente(btnVerificar);
+        } else if (typeof DuvidUI !== "undefined") {
+            DuvidUI.avisoSelecaoPendente(btnVerificar);
+        }
         return;
     }
 
@@ -145,19 +146,39 @@ function verificar() {
     const q = questoes[indiceAtual];
     const isCorreto = (resp === q.correta);
 
-    // 1. Visual: Pinta as respostas
-    aplicarEstiloRespostas(resp, q.correta);
+    // 2. INTERFACE: Pinta as respostas (Delega ao UI)
+    if (typeof DuvidUI !== "undefined") {
+        DuvidUI.estilizarResultadoQuestao(resp, q.correta);
+    }
 
-    // 2. Gamificação: Sons, Pontos e Level Up
-    processarRecompensa(isCorreto);
+    // 3. GAMIFICAÇÃO & PONTUAÇÃO (Integração com o Banco de Dados)
+    if (isCorreto) {
+        nota++; // Incrementa o contador local para o modal final
 
-    // 3. Feedback: Monta a barra de explicação
+        // --- AQUI ENTRA O DUVIDDB ---
+        if (typeof DuvidDB !== "undefined") {
+            // Adiciona os globinhos baseados na constante de recompensa
+            // Se a constante não existir, usamos 10 como padrão (fallback)
+            const valorGanhos = typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10;
+            DuvidDB.addGlobinhos(valorGanhos);
+        }
+    }
+
+    // 4. EFEITOS (Som, Confete e Atualização do Saldo no Topo)
+    if (typeof executarGatilhoResultado === "function") {
+        executarGatilhoResultado(isCorreto, isCorreto ? (typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10) : 0);
+    }
+
+    // 5. FEEDBACK E SCROLL
     exibirPainelFeedback(isCorreto, q);
-
-    // 4. Bloqueia botão e desce a tela
     if (btnVerificar) btnVerificar.disabled = true;
-    scrollSuaveFeedback();
+    
+    // Usando o Scroll centralizado que criamos
+    if (typeof DuvidUI !== "undefined") {
+        DuvidUI.scrollParaElemento('feedback-txt', 'center');
+    }
 }
+
 
 // Função auxiliar para o painel inferior
 function exibirPainelFeedback(isCorreto, questao) {
@@ -188,64 +209,28 @@ function scrollSuaveFeedback() {
     }, 300);
 }
 
-// 1. Lógica para quando o aluno esquece de marcar
-function exibirErroSelecao(btn) {
-    if (typeof playSom === "function") playSom('erro');
-    const textoOriginal = btn.innerHTML;
-    btn.innerHTML = "<i class='fa fa-exclamation-triangle'></i> ESCOLHA UMA OPÇÃO!";
-    btn.classList.add('btn-erro-animado', 'shake-erro');
-    if (navigator.vibrate) navigator.vibrate(100);
 
-    setTimeout(() => {
-        btn.innerHTML = textoOriginal;
-        btn.classList.remove('btn-erro-animado', 'shake-erro');
-    }, 2000);
-}
-
-// 2. Pintar as opções na tela
-function aplicarEstiloRespostas(respUsuario, correta) {
-    const todasOpcoes = document.querySelectorAll('.opcao-container');
-    todasOpcoes.forEach((div, index) => {
-        if (index === correta) {
-            div.classList.add('w3-pale-green', 'w3-border-green', 'w3-leftbar');
-        }
-        if (index === respUsuario && respUsuario !== correta) {
-            div.classList.add('w3-pale-red', 'w3-border-red', 'w3-leftbar');
-        }
-    });
-}
 
 
 
 
 function processarRecompensa(isCorreto) {
     if (isCorreto) {
-        // 2. A variável 'nota' serve APENAS para contar acertos (1, 2, 3...)
-        // Ela NÃO deve ser usada para somar globinhos aqui.
-        nota++;
-
-        // 3. Chama o banco APENAS UMA VEZ
-        if (typeof DuvidDB !== "undefined") {
-            // Se o saldo pular 20 aqui, o erro está DEFINITIVAMENTE 
-            // dentro da função addGlobinhos no duvid-core.js
-            DuvidDB.addGlobinhos(RECOMPENSA_QUESTOES);
-        }
-
-    } else {
-        // 3. O "ELSE" é o erro! Como não vai para o banco, o som tem que ser aqui:
-        if (typeof playSom === "function") {
-            playSom('erro');
-        }
-
-        // Opcional: Feedback visual de erro se você tiver a função
-        if (typeof feedbackVisualErro === "function") {
-            feedbackVisualErro();
-        }
+        nota++; // Mantemos o contador interno para o modal final
     }
 
-
-
+    // O GRANDE GATILHO (A única linha necessária)
+    // Ele já cuida de: Som, Confete, Giro do Globinho, Salvar Pontos e Atualizar Interface
+    if (typeof executarGatilhoResultado === "function") {
+        const pontos = isCorreto ? (typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10) : 0;
+        executarGatilhoResultado(isCorreto, pontos);
+    } else {
+        // Fallback caso o UI não carregue (segurança)
+        if (typeof playSom === "function") playSom(isCorreto ? 'acerto' : 'erro');
+    }
 }
+
+
 
 function proxima() {
     document.getElementById('barra-feedback').classList.add('w3-hide');
@@ -264,103 +249,22 @@ function proxima() {
     }
 }
 
-
 function finalizar() {
-    // 1. Cálculos de Performance
     const total = questoes.length;
-    const media = (nota / total) * 10;
-    const aprovado = media >= 6;
+    const acertos = nota; // 'nota' aqui são os acertos acumulados
+    const aprovado = (acertos / total) >= 0.6; // 60% de aproveitamento
 
-    // 2. Ações de Estado e Persistência (Cérebro)
-    concluirSimuladoNoSistema(aprovado);
+    // 1. Dados e Persistência
+    if (typeof DuvidDB !== "undefined" && typeof aulaID !== "undefined") {
+        DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.QUESTOES);
+        if (aprovado) DuvidDB.addGlobinhos(RECOMPENSA_GERAL);
+    }
 
-    // 3. Efeitos de Áudio e Visual (Sentidos)
-    dispararEfeitosFinais(aprovado);
-
-    // 4. Mudança de Tela (Interface)
-    exibirTelaDeResultado(aprovado, total);
+    // 2. Interface (Chama o Maestro)
+    if (typeof DuvidUI !== "undefined") {
+        DuvidUI.exibirModalSimulado(aprovado, acertos, total);
+    }
 }
 
 // --- FUNÇÕES AUXILIARES (As peças de baixo nível) ---
 
-function concluirSimuladoNoSistema(aprovado) {
-    const barra = document.getElementById('barra-progresso-simulado');
-    if (barra) barra.style.width = "100%";
-
-    if (typeof salvarProgressoFinal === "function") {
-        salvarProgressoFinal(aprovado);
-    }
-}
-
-function dispararEfeitosFinais(aprovado) {
-    if (typeof playSomFinal === "function") playSomFinal(aprovado);
-
-    if (aprovado && typeof dispararComemoracao === "function") {
-        dispararComemoracao();
-    }
-}
-
-function exibirTelaDeResultado(aprovado, total) {
-    // Esconde o container de perguntas
-    document.getElementById('container-questao')?.classList.add('w3-hide');
-
-    // Mostra e renderiza o resultado
-    const resContainer = document.getElementById('resultado-final');
-    if (resContainer) {
-        resContainer.classList.remove('w3-hide');
-        resContainer.innerHTML = gerarHtmlResultado(aprovado, total);
-    }
-}
-
-
-// Gera o HTML da tela final
-function gerarHtmlResultado(passou, total) {
-    return `
-        <div class="w3-container w3-padding-32 w3-center w3-animate-zoom">
-            <div class="w3-margin-bottom pulse">
-                <img src="../../../fotoIndex/globinhoPe.png" width="80" height="80" 
-                     style="filter: ${passou ? 'none' : 'grayscale(100%)'};">
-            </div>
-
-            <h2 class="${passou ? 'w3-text-green' : 'w3-text-orange'} fontePixel">
-                ${passou ? '🎉 SIMULADO CONCLUÍDO!' : '👍 VALEU O ESFORÇO!'}
-            </h2>
-            
-            <div class="w3-padding-16">
-                <p class="w3-xlarge">Você acertou <b>${nota}</b> de ${total} questões!</p>
-                <p class="w3-text-grey" style="font-style: italic;">
-                    ${passou ? 'Excelente! Você dominou este conteúdo.' : 'Que tal revisar os pontos onde teve dúvida?'}
-                </p>
-            </div>
-
-            <div class="w3-container w3-padding-24">
-                <div class="w3-center">
-                    <button onclick="location.reload()" class="w3-button ${passou ? 'w3-light-grey' : 'w3-blue'} w3-round-large w3-margin-bottom btn-final">
-                        🔄 REFAZER SIMULADO
-                    </button>
-                </div>
-                <div class="w3-center">
-                    <button onclick="window.location.href='/home.html'" class="w3-button w3-green w3-round-large btn-final">
-                        🏠 VOLTAR PARA A HOME
-                    </button>
-                </div>
-            </div>
-        </div>`;
-}
-
-
-// Salva os dados no DuvidDB usando Constantes
-function salvarProgressoFinal(passou) {
-    if (typeof aulaID !== "undefined" && aulaID && typeof DuvidDB !== "undefined") {
-
-        // TROCA: Sai 'questoes' (texto fixo) -> Entra TIPO_CONCLUSAO.QUESTOES (variável global)
-        DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.QUESTOES);
-
-        if (passou) {
-            DuvidDB.addGlobinhos(RECOMPENSA_GERAL); // Bônus por passar no simulado
-
-        }
-    } else {
-        console.warn("[RPG] Erro ao salvar: aulaID ou DuvidDB não encontrados.");
-    }
-}

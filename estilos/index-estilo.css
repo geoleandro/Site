@@ -571,10 +571,119 @@ body.dark-mode p.w3-large {
     transition: all 0.5s ease;
 }
 
+/* O Segredo Sênior para Pixel Art */
+.img-trofeu-pixel {
+    image-rendering: pixelated; /* Mantém os pixels nítidos */
+    display: block;
+    margin: 0 auto;
+    width:90px; 
+    height:90px; 
+    transition: 0.5s;
+}
+
+/* Quando o aluno NÃO conquistou: fica cinza e mais transparente */
+.icon-bloqueado {
+    filter: grayscale(100%) brightness(1.2);
+    opacity: 0.3;
+}
+
+/* Quando o aluno conquistou: cores vibrantes e um brilho suave */
+.icon-conquistado {
+    filter: grayscale(0%) drop-shadow(0 0 5px rgba(255, 193, 7, 0.5));
+    opacity: 1;
+}
+
+
+.img-pixel-icon {
+    width: 80px;  /* Tamanho ideal para esses botões */
+    height: 80px;
+    margin-bottom: 10px;
+    
+    /* ESSENCIAL para Pixel Art de alta resolução: */
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges; /* Para Firefox */
+    
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito de "pulo" ao passar o mouse no botão */
+.w3-button:hover .img-pixel-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contador-digital-card {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    background: #222;
+    color: #00ff00;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    box-shadow: inset 0 0 5px #000;
+}
+
+/* Garante que os widgets (que não são botões) tenham a mesma altura dos botões */
+.w3-block.w3-white.w3-card.w3-padding-24 {
+    min-height: 180px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nova classe específica para os Ícones dos Widgets Dinâmicos */
+.img-widget-hero {
+    width: 120px; /* Definir um tamanho fixo ajuda na estabilidade da animação */
+    height: auto;
+    margin-bottom: 10px;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Base do Card com transição suave */
+.card-widget, .card-widge {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: default;
+    border-bottom: 4px solid transparent; /* Reserva espaço para a borda */
+}
+
+/* EFEITO HOVER LEGAL */
+.card-widget:hover, .card-widge:hover {
+    transform: translateY(-8px); /* Card sobe levemente */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important; /* Sombra mais profunda */
+    border-bottom: 4px solid #4CAF50; /* Linha verde de "ativado" no fundo */
+}
+
+/* Faz o ícone "pular" e rodar levemente quando passa o mouse no card */
+.card-widget:hover .img-widget-hero, 
+.card-widge:hover .img-widget-hero {
+    transform: scale(1.15) rotate(3deg);
+}
+
+/* Efeito de brilho sutil nos números ao interagir */
+.card-widget:hover .w3-xxlarge, 
+.card-widge:hover .w3-xxlarge {
+    color: #4CAF50 !important;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+}
+
+/* Adicione isso no seu CSS para dar um feedback visual dinâmico */
+#temp-atual.quente { color: #ff5722; } /* Laranja para calor */
+#temp-atual.frio { color: #2196f3; }   /* Azul para frio */
 
 
 
-/* VERSÃO CELULAR */
+
+
+
+
 /* VERSÃO CELULAR - AJUSTE DA NAVBAR */
 @media (max-width: 600px) {
     /* Faz a parte direita da barra ser um grupo que não quebra linha */
@@ -648,5 +757,3 @@ body.dark-mode p.w3-large {
         /* Botão ocupa toda a largura do card no celular */
     }
 }
-
-

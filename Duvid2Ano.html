@@ -14,7 +14,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+
+
     <script src="/js/duvid-core.js" defer></script>
+
+    <script src="/js/duvid-db.js" defer></script>
+
+    <script src="/js/duvid-audio.js" defer></script>
+    <script src="/js/duvid-ui.js" defer></script>
+
     <script src="/js/carregar.js" defer></script>
     <script src="/js/aulas-geral.js" defer></script>
     <script src="/js/abrirmenu.js" defer></script>
@@ -71,7 +79,7 @@
     </main>
 
 
-    
+
     <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-pale-green w3-padding w3-round-large w3-right"
         title="Voltar ao topo">
         <i class="fa fa-arrow-up"></i>
@@ -79,7 +87,7 @@
 
     <div id="footer-placeholder"></div>
 
-   
+
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>
@@ -90,7 +98,7 @@
         gtag('config', 'G-DPX55DSFZ0');
 
     </script>
- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', async () => {
             const nomeArquivo = window.location.pathname;
             const anoPagina = nomeArquivo.match(/\d+/) ? nomeArquivo.match(/\d+/)[0] : "1";

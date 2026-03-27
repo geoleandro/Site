@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 04</title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 04 - Fatores do desenvolvimento</h1>
+
+
+        <p><strong> Conteúdo:</strong> População Economicamente Ativa (PEA); Setores econômicos; Fatores do
+            desenvolvimento: educação, saúde, alimentação;
+        </p>
+
+        <p><strong>Objetivo:</strong> Comparar dados sobre educação, saúde, moradia, poder de consumo e outros para
+            entender os determinantes do desenvolvimento. Relacionar o desenvolvimento econômico com as diferentes
+            situações de distribuição da população entre os três setores da economia.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula anterior, exploramos as complexidades das migrações
+            internacionais, descobrindo por que as pessoas deixam suas terras natais em busca de novas oportunidades e
+            como esses movimentos afetam as regiões de origem e destino.
+        </p>
+
+
+        <p>Hoje, nossa jornada nos leva a um tema igualmente fascinante e importante: desenvolvimento e qualidade de
+            vida. Vamos mergulhar nas nuances desse conceito e entender por que nem sempre é válido comparar países como
+            mais ou menos desenvolvidos. </p>
+
+        <p>Ao final desta aula, teremos uma compreensão mais profunda das causas e características do desenvolvimento em
+            todo o mundo.</p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+        <h2>Atividade: Criando um País Fictício</h2>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+
+            <ul>
+                <li>Objetivo: Criar um país fictício aplicando os conceitos de desenvolvimento econômico, qualidade de
+                    vida e fatores do desenvolvimento.</li>
+                <li>Formem grupos de 4 a 5 alunos.</li>
+                <li>Escolham um nome para o país fictício e decidam sua localização geográfica imaginária.</li>
+                <li>Criem um mapa simples do país, destacando características como rios, montanhas, cidades principais,
+                    etc.</li>
+                <li>Definam a População Economicamente Ativa (PEA) do país fictício.</li>
+                <li>Estabeleçam a faixa etária da PEA (por exemplo, 15 a 64 anos).</li>
+                <li>Estimem a porcentagem de pessoas ocupadas e desocupadas na PEA.</li>
+                <li>Dividam a economia em Setores Econômicos:</li>
+                <li>Identifiquem e listem atividades para o Setor Primário (agricultura, pecuária, pesca, etc.).</li>
+                <li>Definam atividades para o Setor Secundário (indústrias de transformação, manufatura, etc.).</li>
+                <li>Planejem atividades para o Setor Terciário (serviços, educação, saúde, turismo, etc.).</li>
+                <li>Desenvolvam o Sistema Educacional:</li>
+                <li>Planejem a estrutura escolar do país fictício (ensino fundamental, médio, superior, etc.).</li>
+                <li>Decidam sobre o acesso à educação gratuita, políticas de incentivo à educação, etc.</li>
+                <li>Estabeleçam o Sistema de Saúde:</li>
+                <li>Planejem a disponibilidade de hospitais, postos de saúde, acesso a medicamentos, etc.</li>
+                <li>Discutam programas de prevenção, vacinação e cuidados médicos.</li>
+                <li>Garantam a Segurança Alimentar e Nutrição:</li>
+                <li>Definam políticas para acesso a alimentos saudáveis e nutritivos.</li>
+                <li>Planejem apoio à agricultura familiar, distribuição de alimentos, programas de nutrição, etc.</li>
+                <li>Desenvolvam Políticas Públicas para o Desenvolvimento Sustentável:</li>
+                <li>Criem medidas para preservação ambiental e uso sustentável dos recursos.</li>
+                <li>Incentivem o empreendedorismo, igualdade de gênero, programas de habitação, etc.</li>
+                <li>Elaborem uma Apresentação do País Fictício:</li>
+                <li>Preparem uma apresentação para mostrar à turma as características do país fictício.</li>
+                <li>Usem mapas, gráficos, infográficos ou dramatizações para ilustrar suas ideias.</li>
+                <li>Apresentem o País Fictício à Turma:</li>
+                <li>Expliquem o nome e a localização do país, as características da PEA, setores econômicos, sistema
+                    educacional, sistema de saúde, políticas de alimentação e desenvolvimento sustentável.</li>
+                <li>Participem de uma Discussão em Grupo:</li>
+                <li>Discutam com a turma as abordagens de cada grupo e as semelhanças/diferenças entre os países
+                    fictícios.</li>
+                <li>Respondam perguntas sobre os pontos fortes, desafios enfrentados e como planejam superá-los.</li>
+                <li>Refletiam sobre a Atividade:</li>
+                <li>Pensem sobre o processo de criação do país fictício.</li>
+                <li>Reflitam sobre a importância dos fatores do desenvolvimento para o bem-estar de uma sociedade.</li>
+
+
+            </ul>
+        </div>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Um panorama do mundo atual</h2>
+
+
+        <div class="w3-margin"><img id="imagem1" src="tt04f02.png" alt="tt04f01" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: : https://www.pexels.com </span>
+        </div>
+
+
+
+
+        <p> Nossa jornada começa pelos fatores do desenvolvimento, o que não deixa de ser um tema complexo. Comparar
+            nações
+            simplesmente com base em números econômicos não reflete a realidade da qualidade de vida das pessoas</p>
+
+        <p>Para compreender verdadeiramente o desenvolvimento, devemos adotar uma abordagem holística (perceber o todo)
+            que considere não apenas o crescimento econômico, mas também os fatores sociais, ambientais e culturais que
+            moldam a vida das pessoas. </p>
+
+        <p>É possível promover um desenvolvimento genuíno e equitativo em todo o mundo? Já pensou sobre isso? </p>
+
+
+
+
+        <h3>População Economicamente Ativa (PEA): Entendendo o Papel-Chave</h3>
+
+
+        <p>A População Economicamente Ativa, ou PEA, é um termo essencial quando se trata de entender como uma sociedade
+            funciona em termos de trabalho e economia. Ela engloba todas as pessoas em idade ativa, geralmente entre 15
+            e 64 anos, que estão aptas a trabalhar. Dentro desse grupo, podemos identificar duas categorias principais:
+            as<strong> pessoas ocupadas</strong>, que estão atualmente empregadas e desempenham uma atividade
+            remunerada, e as <strong>pessoas desocupadas</strong>, que fazem parte da PEA, mas estão em busca de
+            oportunidades de emprego. </p>
+
+
+        <p>Pessoas Ocupadas - Este grupo refere-se às pessoas que estão atualmente empregadas e exercem uma atividade
+            remunerada. São indivíduos que contribuem ativamente para a produção de bens e serviços, desempenhando um
+            papel crucial na economia de um país. </p>
+
+
+        <p>Pessoas Desocupadas - Incluem-se aqui as pessoas que fazem parte da PEA, mas não têm emprego no momento.
+            Essas pessoas estão em busca de oportunidades de emprego e podem enfrentar desafios relacionados ao
+            desemprego. A taxa de desemprego é um indicador-chave usado para medir o nível de desocupação na PEA.</p>
+
+
+        <h3>Setores Econômicos</h3>
+
+        <p>A economia de um país é frequentemente dividida em três setores principais: o setor primário, o setor
+            secundário e o setor terciário. Cada um desses setores desempenha um papel fundamental na produção e
+            distribuição de bens e serviços.</p>
+
+        <div class="w3-margin"><img id="imagem2" src="tt04f01.png" alt="tt04f02" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao2"> Fonte: : https://www.pexels.com </span>
+
+        </div>
+
+
+        <p><strong>Setor Primário</strong>: Este é o setor que envolve atividades relacionadas à agricultura, pecuária,
+            pesca, silvicultura e extrativismo. No setor primário, as pessoas estão diretamente envolvidas na produção
+            de matérias-primas, como alimentos e recursos naturais.</p>
+
+        <div class="w3-margin"><img id="imagem10" src="tt04f010.png" alt="tt04f010" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao10"> Fonte: Simielli. </span>
+        </div>
+
+
+        <p><strong>Setor Secundário</strong>: O setor secundário abrange as indústrias de transformação e produção.
+            Aqui, os produtos brutos do setor primário são processados e transformados em bens manufaturados. Exemplos
+            incluem a indústria automobilística, têxtil e de construção.</p>
+
+
+        <div class="w3-margin"><img id="imagem3" src="tt04f03.png" alt="tt04f03" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao3"> Fonte: https://www.pexels.com </span>
+
+
+        </div>
+
+        <p><strong>Setor Terciário</strong>: O setor terciário concentra-se em serviços. Isso inclui uma ampla gama de
+            atividades, como educação, saúde, comércio, turismo, tecnologia da informação e finanças. O setor terciário
+            é frequentemente considerado um indicador do desenvolvimento de um país, pois reflete a diversificação da
+            economia e a criação de empregos em áreas de maior valor agregado.</p>
+
+        <div class="w3-margin"><img id="imagem4" src="tt04f04.png" alt="tt04f04" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao4"> Fonte: https://www.pexels.com </span>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Inserção da Mulher no Mercado de Trabalho: Uma Mudança Significativa</h2>
+
+
+
+
+        <p> Essa mudança é notável ao examinarmos dados globais sobre a participação das mulheres no mercado de
+            trabalho. De acordo com o Banco Mundial, a taxa de emprego feminino global aumentou consideravelmente nas
+            últimas décadas. Em 1990, a taxa de participação feminina na força de trabalho era de aproximadamente 46%,
+            enquanto em 2020, esse número subiu para cerca de 51%. Esse aumento é um reflexo das crescentes
+            oportunidades educacionais e profissionais para as mulheres, bem como de mudanças nas percepções sociais
+            sobre o papel das mulheres na sociedade.</p>
+
+        <p> Além disso, as mulheres também têm buscado cada vez mais carreiras em campos tradicionalmente dominados por
+            homens, como ciência, tecnologia, engenharia e matemática (STEM). No entanto, apesar desses avanços,
+            desafios persistem, como disparidades salariais de gênero e a necessidade contínua de políticas que promovam
+            um equilíbrio entre trabalho e vida pessoal. Essa evolução na participação das mulheres no mercado de
+            trabalho é uma demonstração de progresso, mas também destaca a importância de se manter o ímpeto na luta
+            pela igualdade de gênero no ambiente profissional.</p>
+
+        <h3>
+            Desigualdades entre Países
+        </h3>
+
+
+        <p>É importante observar que a inserção das mulheres no mercado de trabalho varia significativamente entre os
+            países e até mesmo dentro deles. As desigualdades de gênero persistem em muitas partes do mundo, com
+            mulheres enfrentando barreiras para igualdade salarial, acesso a cargos de liderança e equilíbrio entre
+            trabalho e vida pessoal. Essas desigualdades também podem ser influenciadas por fatores culturais, políticos
+            e econômicos.</p>
+
+
+        <div class="w3-margin"><img id="imagem5" src="tt04f05.png" alt="tt04f05" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao5"> Fonte: https://www.pexels.com</span>
+
+
+        </div>
+
+
+        <p>Países Desenvolvidos: Em muitos países desenvolvidos, a participação das mulheres na força de trabalho
+            aumentou consideravelmente nas últimas décadas. Por exemplo, na Suécia e na Noruega, as taxas de
+            participação das mulheres na força de trabalho estão entre as mais altas do mundo, com mais de 75% das
+            mulheres economicamente ativas. Isso ocorreu em parte devido a políticas de igualdade de gênero, licença
+            parental e creches acessíveis.</p>
+
+
+        <p>Países em Desenvolvimento: Em países em desenvolvimento, a participação das mulheres no mercado de trabalho
+            também está em crescimento, embora a taxas variem amplamente. Em algumas regiões da Ásia, como o Japão, a
+            participação das mulheres na força de trabalho tem aumentado gradualmente, mas ainda enfrenta desafios em
+            relação a oportunidades de liderança e igualdade salarial.</p>
+
+
+        <p>Em resumo, a PEA é um conceito essencial para entender a economia e o mercado de trabalho de uma nação. A
+            evolução da inserção das mulheres no mercado de trabalho representa uma mudança significativa nas últimas
+            décadas, embora desigualdades de gênero ainda persistam em muitos lugares. É fundamental continuar
+            promovendo políticas e práticas que incentivem a igualdade de oportunidades e a participação plena das
+            mulheres na força de trabalho, contribuindo assim para um desenvolvimento econômico mais inclusivo e
+            sustentável.</p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Alimentação: Compreendendo a Nutrição e a Segurança Alimentar</h2>
+
+
+
+        <p>O tema da alimentação é central quando discutimos o bem-estar das populações e o desenvolvimento de uma
+            nação. Vai muito além do simples ato de comer e envolve questões críticas, como nutrição, segurança
+            alimentar e soberania alimentar. Para entendermos o panorama completo, precisamos mergulhar mais
+            profundamente nesses conceitos. </p>
+
+        <p> <strong>Nutrição</strong>: A nutrição não se refere apenas à quantidade de alimentos consumidos, mas também
+            à qualidade dos nutrientes obtidos a partir desses alimentos. É essencial para o crescimento e
+            desenvolvimento saudáveis, bem como para a prevenção de doenças. A desnutrição, que inclui a subnutrição
+            (consumo insuficiente de nutrientes essenciais) e a fome (escassez crônica de alimentos), é um problema
+            persistente em muitas partes do mundo.</p>
+
+        <p><strong>Segurança Alimentar</strong>: A segurança alimentar é um conceito que vai além da simples
+            disponibilidade de alimentos. Refere-se à garantia de que todas as pessoas tenham acesso físico, econômico e
+            social a alimentos suficientes, seguros e nutritivos para atender às suas necessidades alimentares e
+            preferências culturais. A insegurança alimentar é um desafio global, afetando milhões de pessoas em todo o
+            mundo. </p>
+
+
+        <p> <strong>Soberania Alimentar</strong>: A soberania alimentar envolve o direito dos países e comunidades a
+            definirem suas próprias políticas alimentares e agrícolas, sem dependência excessiva de importações de
+            alimentos. Isso inclui o fortalecimento da produção local, o apoio à agricultura familiar e a promoção da
+            diversidade de cultivos. A soberania alimentar visa garantir que as populações tenham controle sobre sua
+            própria produção e acesso a alimentos saudáveis.</p>
+
+
+        <p><strong>Subnutrição no Mundo</strong>: Segundo a Organização das Nações Unidas para a Alimentação e a
+            Agricultura (FAO), em 2020, aproximadamente 9,9% da população global, ou seja, quase 768 milhões de pessoas,
+            estavam subnutridas, enfrentando insegurança alimentar. </p>
+
+
+        <div class="w3-margin"><img id="imagem6" src="tt04f06.png" alt="tt04f06" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao6"> Fonte: https://pixabay.com/pt. </span>
+
+
+        </div>
+
+
+        <p><strong>Fome Crônica em Regiões Vulneráveis</strong>: Regiões como o Corno de África e partes da Ásia
+            continuam a enfrentar desafios significativos relacionados à fome crônica devido a fatores como conflitos,
+            mudanças climáticas e instabilidade política.</p>
+
+        <p><strong>Soberania Alimentar em Ação</strong>: Em alguns países da América Latina, como o Brasil, políticas de
+            segurança alimentar e programas de agricultura familiar foram implementados com sucesso para promover a
+            soberania alimentar e melhorar o acesso da população a alimentos nutritivos.</p>
+
+
+
+
+        <h3>Desafios e Futuro:</h3>
+
+        <p>O desafio de garantir a nutrição adequada e a segurança alimentar para todas as pessoas continua sendo uma
+            prioridade global. À medida que enfrentamos questões como o crescimento populacional, as mudanças climáticas
+            e a degradação ambiental, é fundamental adotar abordagens sustentáveis para a produção e distribuição de
+            alimentos.</p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Fatores do Desenvolvimento: Educação, Saúde e Alimentação</h2>
+
+        <div class="w3-margin"><img id="imagem9" src="tt04f09.png" alt="tt04f09" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao9"> Fonte: https://pixabay.com/pt. </span>
+
+
+        </div>
+
+        <p><strong>Educação</strong>: A educação é uma espinha dorsal do desenvolvimento econômico e social. A qualidade
+            do sistema educacional de um país está diretamente relacionada à sua força de trabalho qualificada e
+            produtiva. A alfabetização, em particular, é um indicador crítico, pois a capacidade de ler e escrever
+            desempenha um papel fundamental no acesso ao conhecimento e no sucesso no mercado de trabalho. Um exemplo
+            notável é o caso da Finlândia, que investiu fortemente em educação e colheu benefícios significativos,
+            criando uma força de trabalho altamente educada e uma sociedade próspera.</p>
+
+
+        <div class="w3-margin"><img id="imagem11" src="tt04f011.png" alt="tt04f011" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao11"> Fonte: Simielli. </span>
+        </div>
+
+
+
+
+
+
+        <p> <strong>Saúde</strong>: A saúde é um dos pilares fundamentais do bem-estar humano e do desenvolvimento. O
+            acesso a serviços médicos de qualidade e a disponibilidade de saneamento básico são vitais para garantir que
+            as pessoas levem vidas saudáveis e produtivas. Além disso, a nutrição adequada é essencial para o
+            crescimento e o desenvolvimento saudáveis, especialmente em crianças. Por exemplo, o sistema de saúde eficaz
+            da Suécia, com atendimento médico acessível e de alta qualidade, contribui para uma população saudável e uma
+            força de trabalho robusta.</p>
+
+        <div class="w3-margin"><img id="imagem7" src="tt04f07.png" alt="tt04f07" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao7"> Fonte: https://pixabay.com/pt. </span>
+
+        </div>
+
+
+
+
+        <p> <strong>Alimentação</strong>: A alimentação está no centro das preocupações globais, incluindo a segurança e
+            a soberania alimentar. A subnutrição e a fome afetam milhões de pessoas em todo o mundo, prejudicando seu
+            desenvolvimento físico e cognitivo. A segurança alimentar é a garantia de que as pessoas tenham acesso
+            constante a alimentos suficientes e nutritivos. A soberania alimentar vai além, envolvendo o direito das
+            nações de determinar suas políticas alimentares e promover práticas agrícolas sustentáveis. Um exemplo
+            notável é o Brasil, que implementou programas de segurança alimentar e apoiou a agricultura familiar,
+            melhorando a disponibilidade de alimentos nutritivos para sua população.</p>
+
+        <div class="w3-margin"><img id="imagem12" src="tt04f012.png" alt="tt04f012" class="w3-mobile">
+
+
+
+            <span class="w3-small w3-margin-left" id="citacao12"> Fonte: Simielli. </span>
+        </div>
+
+        <p><strong>Desafios e Perspectivas Futuras</strong>: Abordar esses fatores do desenvolvimento é crucial para
+            melhorar a qualidade de vida das populações em todo o mundo. À medida que enfrentamos desafios como o
+            crescimento populacional, as mudanças climáticas e as disparidades econômicas, é fundamental adotar
+            políticas e práticas que garantam acesso à educação de qualidade, cuidados de saúde adequados e alimentos
+            nutritivos. Promover a igualdade de oportunidades é uma parte essencial da busca por um desenvolvimento
+            sustentável e inclusivo. </p>
+
+
+        <p>Em resumo, educação, saúde e alimentação desempenham papéis interligados e fundamentais no desenvolvimento de
+            indivíduos e na prosperidade das nações. Compreender esses fatores e trabalhar para melhorá-los é essencial
+            para construir um mundo mais equitativo e próspero. </p>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2>Desenvolvimento: A Complexidade da Comparação entre Países </h2>
+
+
+        <div class="w3-margin"><img id="imagem8" src="tt04f08.png" alt="tt04f08" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao8"> Fonte: https://pixabay.com/pt. </span>
+
+        </div>
+
+
+
+
+
+        <p> A avaliação do desenvolvimento de diferentes nações é uma tarefa complexa e desafiadora. À primeira vista,
+            pode parecer simples comparar países e classificá-los como mais ou menos desenvolvidos. No entanto, uma
+            análise mais profunda revela a intricada teia de fatores que moldam o desenvolvimento e nos alerta sobre a
+            simplificação excessiva dessa questão.</p>
+
+
+
+        <div class="w3-margin"><img id="imagem13" src="tt04f013.png" alt="tt04f013" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao13"> Fonte: Simielli. </span>
+        </div>
+
+        <p> Primeiramente, é importante compreender que o desenvolvimento não é um conceito unidimensional. Ele é
+            multifacetado, abrangendo diversos aspectos da vida de uma sociedade, como a qualidade de vida das pessoas,
+            a saúde, a educação, a economia, o meio ambiente e muito mais. Tentar resumir essa complexidade em uma única
+            medida, como o Produto Interno Bruto (PIB) per capita, pode ser enganador.</p>
+
+        <p>Além disso, o que significa desenvolvimento pode variar amplamente entre diferentes culturas e contextos. Uma
+            sociedade pode valorizar mais a qualidade de vida, o bem-estar das pessoas e a igualdade social em
+            detrimento do crescimento econômico desenfreado. Outra pode priorizar o crescimento econômico, mesmo que
+            isso resulte em desigualdades sociais significativas. </p>
+
+
+        <p>Comparar países também requer considerar as diferenças históricas, geográficas, culturais e políticas que
+            moldaram suas trajetórias. Países que enfrentaram desafios únicos, como conflitos armados, colonização,
+            desastres naturais ou regimes políticos opressivos, podem ter enfrentado obstáculos significativos ao seu
+            desenvolvimento. </p>
+
+
+        <p> Além disso, a simples categorização de países em "desenvolvidos" e "em desenvolvimento" não reflete a
+            heterogeneidade interna de cada nação. Dentro de qualquer país, existem disparidades substanciais em termos
+            de riqueza, acesso à educação, saúde e oportunidades econômicas.</p>
+
+
+        <p>Portanto, afirmar que um país é mais desenvolvido do que outro sem levar em consideração todos esses fatores
+            pode ser enganoso e injusto. Em vez de comparações simplistas, é mais útil adotar uma abordagem holística ao
+            avaliar o desenvolvimento, considerando múltiplos indicadores e compreendendo as nuances de cada contexto.
+        </p>
+
+
+        <p>Em suma, o desenvolvimento é uma questão complexa e multifacetada, e a comparação entre países requer uma
+            análise cuidadosa e contextualizada. É fundamental reconhecer que nem sempre é válido classificar um país
+            como mais desenvolvido do que outro sem considerar todas as variáveis que influenciam o bem-estar e o
+            progresso de uma sociedade.</p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+    
+<div class="topico">
+
+        <h2> Infográfico - Resumo</h2>
+
+
+
+    <div class="w3-margin"><img id="infograficot2" src="inforesumot4.jpg" alt="nfográfico: Fatores de Desenvolvimento e Mercado de Trabalho Global" class="w3-mobile">
+        <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Organizado e revisado pelo autor. </span>
+    </div>
+
+        
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> A curiosidade e a vontade de entender o mundo ao nosso redor são fundamentais para fazer
+            perguntas e contribuir com a construção do conhecimento científico.</h2>
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Ouvimos muito sobre o desenvolvimento econômico, mas o que exatamente significa qualidade de vida e como
+                ela está relacionada ao desenvolvimento?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            Excelente pergunta! A qualidade de vida se refere ao bem-estar geral das pessoas em uma sociedade e engloba
+            diversos aspectos, como acesso à educação de qualidade, assistência médica adequada, moradia digna,
+            segurança, liberdade, meio ambiente saudável e muito mais. O desenvolvimento, por sua vez, está
+            intrinsecamente ligado à qualidade de vida. Um país que busca o desenvolvimento econômico deve fazê-lo de
+            forma a melhorar a qualidade de vida de sua população, garantindo não apenas crescimento econômico, mas
+            também igualdade de oportunidades e bem-estar para todos.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Por que é tão difícil comparar o desenvolvimento entre países? Não podemos simplesmente usar indicadores
+                econômicos, como o PIB per capita?
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            Ótima pergunta! e vamos estudar esse tópico também na próxima aula. Embora o PIB per capita (Produto Interno
+            Bruto) seja um indicador importante, ele não é suficiente para capturar toda a complexidade do
+            desenvolvimento. Comparar países envolve muito mais do que apenas medir a produção econômica. É necessário
+            considerar uma série de fatores, como acesso à educação, cuidados de saúde, igualdade de gênero,
+            distribuição de renda, preservação ambiental e qualidade de vida em geral. Essa abordagem mais holística nos
+            ajuda a entender melhor como diferentes nações estão progredindo em várias dimensões.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Vejo que a infraestrutura de uma cidade pode variar muito dentro de um mesmo país. Como isso acontece e
+                por que é importante?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            A variação na distribuição da infraestrutura do território mesmo dentro de um país é uma realidade comum.
+            Isso ocorre devido a disparidades econômicas, acesso desigual à educação, serviços de saúde, oportunidades
+            de emprego e outros fatores. É importante reconhecer essas diferenças, pois nos lembram que o
+            desenvolvimento não é uniforme e que algumas comunidades podem estar em desvantagem. Governos e organizações
+            trabalham para reduzir essas disparidades, garantindo que o desenvolvimento beneficie a todos os cidadãos,
+            não apenas alguns grupos privilegiados.
+
+        </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
+        <br><br>
+
+
+        <hr>
+
+    </div>
+
+    <div class="topico">
+
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small">
+
+
+            <h3><strong>Hora de refletir!</strong></h3>
+            <ul>
+
+
+                <li>
+                    Como você definiria o desenvolvimento de uma nação? O que, em sua opinião, são os principais
+                    indicadores
+                    de uma alta qualidade de vida?
+                </li>
+
+                <li>
+                    Você acha que é justo comparar dois países apenas com base em seu Produto Interno Bruto (PIB) per
+                    capita? Quais outros fatores você consideraria ao fazer comparações entre nações?
+                </li>
+
+                <li>
+                    Pode citar exemplos de desigualdades internas em um país que afetam a qualidade de vida das pessoas?
+                    Como essas desigualdades podem ser abordadas?
+                </li>
+
+                <li>
+                    Qual é o papel das dimensões sociais e ambientais no desenvolvimento de uma nação? Você acredita que
+                    a
+                    sustentabilidade ambiental é uma parte crucial do desenvolvimento equitativo?
+                </li>
+
+
+
+
+            </ul>
+
+        </div>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+      
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho3', 'desativar2', 'se chegou até aqui, você merece um 10!','10');this.style.display='none'">Proximo</button>
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-yellow">
+
+                <a href="https://hdr.undp.org/system/files/documents/global-report-document/hdr2021-22ptpdf.pdf"
+                    target="_blank">
+                    Relatório do Desenvolvimento Humano 2021-2022
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>SIMIELLI, Maria Elena. <strong>Geoatlas básico</strong>: Mapas políticos, mapas físicos, mapas temáticos e
+            imagens de satélites. </p>
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+        // function myFunction(id) {
+        //     var x = document.getElementById(id);
+        //     if (x.className.indexOf("w3-show") == -1) {
+        //         x.className += " w3-show";
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-green", "w3-lightgrey");
+        //     } else {
+        //         x.className = x.className.replace(" w3-show", "");
+        //         x.previousElementSibling.className =
+        //             x.previousElementSibling.className.replace("w3-lightgrey", "w3-green");
+        //     }
+        // }
+
+
+        // function openModal(id, event) {
+        //     event.preventDefault();
+        //     // Obter todas as divs com a classe "content"
+        //     var divs = document.getElementsByClassName("content");
+
+        //     // Percorrer todas as divs
+        //     for (var i = 0; i < divs.length; i++) {
+        //         // Se a div atual for a div com o id passado como parâmetro, mostrar a div
+        //         if (divs[i].id === id) {
+        //             divs[i].style.display = "block";
+        //         } else { // Caso contrário, esconder a div
+        //             divs[i].style.display = "none";
+        //         }
+        //     }
+
+        //     console.log("ID do elemento:", id);
+        // }
+
+
+
+
+        // function closeModal() {
+
+
+
+        //     var contents = document.getElementsByClassName("content");
+        //     for (var i = 0; i < contents.length; i++) {
+        //         contents[i].style.display = "none";
+        //     }
+
+
+
+        // }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 10);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -75,7 +75,7 @@ function inicializarControleFonte() {
     const btnD = document.getElementById('decrease-font') || document.querySelector('[onclick="diminuirFonte()"]');
     
     // Alvos: O main e especificamente o container das questões
-    const corpo = document.querySelector('main') || document.body;
+    const corpo = document.querySelector('.corpo-artigo') || document.querySelector('main') || document.body;
     const containerQuestao = document.getElementById('container-questao');
 
     let size = parseFloat(localStorage.getItem('userFontSize')) || 1.05;

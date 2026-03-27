@@ -28,6 +28,7 @@ async function carregarDadosDoArquivo() {
         // --- EXECUÇÃO DAS AUTOMAÇÕES ---
 
         preencherDadosAutomaticos(artigos); // Injeta Título, Data e Imagem do post
+      
         renderizarPostsRecentes();         // Monta a barra lateral
         renderizarNuvemDeTags();           // Monta as tags
         renderizarLeiaTambem();            // Monta as sugestões
@@ -50,6 +51,7 @@ async function carregarDadosDoArquivo() {
             artigos = await resp.json();
 
             preencherDadosAutomaticos(artigos); // Injeta Título, Data e Imagem do post
+           
             renderizarPostsRecentes();         // Monta a barra lateral
             renderizarNuvemDeTags();           // Monta as tags
             renderizarLeiaTambem();            // Monta as sugestões
@@ -94,8 +96,10 @@ function preencherDadosAutomaticos(artigos) {
 
             document.getElementById('artigo-titulo-principal').classList.remove('hidden-loading');
             document.getElementById('imagem-principal').classList.remove('hidden-loading');
-            document.getElementById('lista-dados-autor').classList.remove('hidden-loading');
+            document.getElementById('artigo-data').classList.remove('hidden-loading');
         };
+
+        renderizarCitacaoDoArtigo(artigoDados);
 
         atualizarMetaTags(artigoDados);
         renderizarBotoesCompartilhamento(artigoDados);
@@ -122,6 +126,9 @@ function atualizarMetaTags(artigo) {
         ogImg.setAttribute('content', window.location.origin + artigo.imagem);
     }
 }
+
+
+
 function renderizarBotoesCompartilhamento(artigo) {
     const container = document.getElementById('icones-compartilhamento');
     if (!container) return;
@@ -176,6 +183,30 @@ function renderizarPostsRecentes() {
 
     html += `</ul></div>`;
     containerDinamico.innerHTML = html;
+}
+
+
+function renderizarCitacaoDoArtigo(artigo) {
+    const container = document.getElementById('citacao-dinamica');
+    
+    if (container && artigo.citacao_texto) {
+        // Usamos apenas as classes de cor/borda do W3.CSS 
+        // A classe 'citacao-container' e 'corpo-artigo' cuidam do resto pelo seu CSS
+        container.innerHTML = `
+            <div class="citacao-container w3-light-grey w3-leftbar w3-border-green w3-padding-64 w3-margin-top w3-margin-bottom">
+                <div class="w3-container"> 
+                    <h4 class="w3-large w3-center" style="margin-top:0;">
+                        "${artigo.citacao_texto}"
+                    </h4>
+                    <p class="w3-small w3-right-align">
+                        <strong>— ${artigo.citacao_autor || 'Autor desconhecido'}</strong>
+                    </p>
+                </div>
+            </div>
+        `;
+    } else if (container) {
+        container.innerHTML = '';
+    }
 }
 
 // 2. ATUALIZAÇÃO: Nuvem de Tags
@@ -243,6 +274,10 @@ function renderizarLeiaTambem() {
     html += `</div></div>`;
     container.innerHTML = html;
 }
+
+
+
+
 function renderizarArtigos(pagina) {
     const grid = document.getElementById('posts-grid');
     if (!grid) return;
@@ -271,6 +306,7 @@ function renderizarArtigos(pagina) {
     });
     renderizarPaginacao();
 }
+
 
 function renderizarPaginacao() {
     const totalPaginas = Math.ceil(artigos.length / postsPorPagina);

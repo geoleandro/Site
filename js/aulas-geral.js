@@ -43,7 +43,7 @@ async function carregarAulas(ano) {
 
 // 1. Lógica de Estilo e Status
 function obterStatusAula(aulaId) {
-   
+
     const leuTexto = DuvidDB.estaConcluido(aulaId, TIPO_CONCLUSAO.TEXTO);
     const fezQuestoes = DuvidDB.estaConcluido(aulaId, TIPO_CONCLUSAO.QUESTOES);
 
@@ -127,7 +127,7 @@ function mostrarProgressoGlobal(aulas, ano) {
         document.getElementById('form-identificacao')?.style.setProperty('display', 'block');
         return;
     }
-// 2. Renderiza o HTML usando as variáveis do Core
+    // 2. Renderiza o HTML usando as variáveis do Core
     painel.innerHTML = `
         <div class="w3-container w3-card-4 w3-white w3-round-large w3-margin-bottom w3-padding" 
              style="border-left: 6px solid ${rpg.cor}; max-width: 750px; margin: auto;">
@@ -155,9 +155,9 @@ function mostrarProgressoGlobal(aulas, ano) {
 function gerarCabecalhoPainel(nome, rpg) {
     return `
         <div class="w3-row" style="display: flex; align-items: center;">
-            <div class="w3-col s8">
-                <h4 class="w3-margin-0" style="font-size: 1.1em;">
-                    <span class="w3-tag w3-amber w3-round w3-small w3-"><strong>LEVEL</strong> ${rpg.lvl}</span> 
+            <div class="w3-col s8 ">
+                <h4 class="w3-margin-0 " style="font-size: 1.1em; ">
+                    <span class="w3-tag w3-round w3-small w3-green"><strong>LEVEL</strong> ${rpg.lvl}</span> 
                     Olá, <b class="w3-text-green">${nome.toUpperCase()}</b>
                     <button onclick="prepararTrocaNome()" class="w3-button w3-tiny w3-round-xlarge w3-light-grey">
                         <i class="fa fa-pencil"></i>
@@ -174,38 +174,41 @@ function gerarCabecalhoPainel(nome, rpg) {
 }
 
 
-
-
 function gerarHtmlTrofeus(saldoTotal) {
     const marcos = [
-        { info: DuvidDB.RANKING_SISTEMA[0], icone: 'fa-seedling' }, 
-        { info: DuvidDB.RANKING_SISTEMA[1], icone: 'fa-shoe-prints' }, 
-        { info: DuvidDB.RANKING_SISTEMA[2], icone: 'fa-map' }, 
-        { info: DuvidDB.RANKING_SISTEMA[3], icone: 'fa-chess-knight' }, 
-        { info: DuvidDB.RANKING_SISTEMA[4], icone: 'fa-graduation-cap' }, 
-        { info: DuvidDB.RANKING_SISTEMA[5], icone: 'fa-gem' } 
+        { info: DuvidDB.RANKING_SISTEMA[0], img: 'duvid-patentes-novato.png' },
+        { info: DuvidDB.RANKING_SISTEMA[1], img: 'duvid-patentes-explorador.png' },
+        { info: DuvidDB.RANKING_SISTEMA[2], img: 'duvid-patentes-cartografo.png' },
+        { info: DuvidDB.RANKING_SISTEMA[3], img: 'duvid-patentes-estrategista.png' },
+        { info: DuvidDB.RANKING_SISTEMA[4], img: 'duvid-patentes-geografo.png' },
+        { info: DuvidDB.RANKING_SISTEMA[5], img: 'duvid-patentes-lenda.png' } // A imagem que você enviou
     ];
 
     return marcos.map(marco => {
         const conquistado = saldoTotal >= marco.info.min;
-        const corIcone = conquistado ? marco.info.cor : '#e0e0e0';
-        
-        // Adicionamos a classe 'w3-animate-zoom' apenas se conquistado for true
-        const animacao = conquistado ? 'w3-animate-zoom' : '';
+
+        // Classe de animação e classe de "bloqueado"
+        const animacao = conquistado ? 'w3-animate-zoom icon-conquistado' : 'icon-bloqueado';
 
         return `
-            <div class="w3-col s4 w3-center w3-padding-small">
-                <i class="fa ${marco.icone} ${animacao}" 
-                   style="font-size:32px; transition: 0.8s; color: ${corIcone}; 
-                   text-shadow: ${conquistado ? '0 0 12px ' + corIcone : 'none'}; 
-                   opacity: ${conquistado ? '1' : '0.4'}"></i>
-                <p class="w3-tiny" style="margin:0; font-weight:bold; color: ${conquistado ? '#333' : '#bbb'}; font-size:8px !important;">
-                    ${marco.info.patente}
-                </p>
-            </div>
+            <div class="w3-col s4 w3-center" style="margin-bottom: 8px;">
+        <img src="fotoIndex/icones/${marco.img}" 
+             alt="${marco.info.patente}"
+             class="img-trofeu-pixel ${animacao}">
+        
+        <span style="display: block; margin-top: -2px; 
+               color: ${conquistado ? '#333' : '#bbb'}; 
+               font-size: 12px !important; 
+               font-weight: bold;
+               text-transform: uppercase;
+               line-height: 1;">
+            ${marco.info.patente}
+        </span>
+    </div>
         `;
     }).join('');
 }
+
 
 
 
@@ -249,7 +252,7 @@ async function atualizarResumoHome() {
     for (const ano of anos) {
         try {
             // Busca o arquivo JSON (Certifique-se que o caminho está correto)
-            const resposta = await fetch(`./js/aulas-${ano}ano.json`); 
+            const resposta = await fetch(`./js/aulas-${ano}ano.json`);
             if (!resposta.ok) throw new Error(`Erro HTTP: ${resposta.status}`);
 
             const aulas = await resposta.json();
@@ -292,29 +295,29 @@ async function atualizarResumoHome() {
 //conta os troféus para o seu sistema de RPG
 function contarAulasConcluidas(anoPrefixo) {
     let contagem = 0;
-    
+
     // 1. Criamos o prefixo de busca usando a nossa constante Global
     // Isso vai gerar algo como "concluido_questoes_"
     const prefixoBusca = `concluido_${TIPO_CONCLUSAO.QUESTOES}_`;
 
     for (let i = 0; i < localStorage.length; i++) {
         let chave = localStorage.key(i);
-        
+
         // 2. Procuramos as chaves que começam com o prefixo + o ano (ex: 1 para 1º ano)
         if (chave.startsWith(prefixoBusca + anoPrefixo)) {
-            
+
             // Extraímos o ID da aula da chave (ex: de "concluido_questoes_101" sobra "101")
             let idAula = chave.replace(prefixoBusca, "");
-            
+
             // 3. Usamos o nosso "Gerente" DuvidDB para checar se o texto também foi lido
             // Passamos a constante TIPO_CONCLUSAO.TEXTO para garantir a simetria
             const textoLido = DuvidDB.estaConcluido(idAula, TIPO_CONCLUSAO.TEXTO);
-            
+
             if (textoLido) {
                 contagem++;
             }
         }
     }
-    
+
     return contagem;
 }

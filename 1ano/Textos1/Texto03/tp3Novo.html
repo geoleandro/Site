@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+
+    	<script src="../../../estilos/jstextos.js" defer></script>
+
+    <title></title>
+
+
+
+    <style>
+        .topico {
+            display: block;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .topico * {
+            transition: color 3s ease, background-color 3s ease;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+
+
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+        <div id="aviso-status" class="w3-margin-top"></div>
+
+
+
+        <!-- Navigation (Stays on Top) -->
+
+
+        <div class="topico">
+
+
+            <div class="w3-padding-top-48">
+
+            </div>
+
+
+
+            <h1 id="h1"> </h1>
+
+
+            <!-- Futuro audio -->
+            <!-- <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div> -->
+
+
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
+
+                <p><strong>Conteúdo:</strong> Fusos horários, GMT (Greenwich Mean time ou horário médio de
+                    Greenwich);
+                    Linha Internacional da Data; Fuso horário brasileiro. </p>
+            </div>
+
+
+
+
+
+            <button class="btnShow"
+                onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+
+        <div class="topico ">
+
+            <h2> Introdução </h2>
+
+            <p> <span class="primeiraLetra">V</span>imos na aula sobre Cartografia a importância da
+                localização, dos pontos cardeais e das coordenadas geográficas. </p>
+
+            <p> Na aula de hoje, veremos como os fusos horários impactam, por exemplo, no comércio
+                mundial, já que podemos fazer compras online no Japão enquanto eles estão sob o Sol, sendo que nós
+                estamos
+                sob a luz da lua. </p>
+
+            <p>Ao final, saberemos como as diferenças de horários entre os países são calculados e por que
+                ter horários padronizados no mundo foi um grande avanço para as relações entre as nações distantes. </p>
+
+
+
+
+
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <hr>
+
+
+        </div>
+
+
+	<div class="topico">
+
+
+		<h2> <strong>Por que os fusos horários são importantes?</strong></h2>
+
+		<p> Quando não havia uma padronização de horários no mundo, cada localidade, povoados, cidades
+			seguiam a quantidade de iluminação solar disponível e possuíam um horário distinto para cada atividade.</p>
+
+		<p>O funcionamento do comércio, os horários dos trens, dos ônibus e até mesmo os trabalhadores
+			que moravam e trabalhavam em cidades diferentes viviam um caos para se organizarem. </p>
+
+
+		<p>Quando o mundo possuía uma pequena população e as relações entre os lugares estavam
+			submetidos às condições naturais, as atividades econômicas não estavam realmente interligadas. </p>
+
+
+		<p> No atual período da globalização, onde as compras online e as atividades do mercado de
+			ações ao redor do mundo são instantâneas, o horário de compra e venda pode influenciar em muito os negócios
+			pelo planeta. Alguns países, como a China, adaptam a questão dos fusos e adotam um único horário para o país
+			inteiro. Assim, há cidades na parte Oeste que começam a manhã por volta das 10h, e na parte Leste, há outras
+			em que já é meia-noite quando o sol se põe. </p>
+
+
+
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Teste seu conhecimento</p>
+
+		<h3>A padronização através de fusos horários pelo mundo contribuiu para:</h3>
+
+
+		<button class="desativar1 p4 w3-padding area w3-margin"
+			onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">a)
+			o aproveitamento da insolação solar.</button>
+
+		<button class="desativar1 p4 w3-padding area  w3-margin"
+			onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'opa, essa foi bem fácil, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">b)
+			a construção de um sistema técnico único.</button>
+
+		<button class="desativar1 p4 w3-padding area  w3-margin"
+			onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','1');this.style.backgroundColor='tomato'">c)
+			prejudicar a economia dos países no mundo.</button>
+
+
+
+
+
+		<p id="resp1"></p>
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho1" style="display:none" alt="globinho1" width="64" height="64">
+			</p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+
+	<div class="topico">
+
+		<h2> <strong>Por que existem fusos horários?</strong></h2>
+
+
+		<p> Desde as civilizações antigas como a Egípcia ou os Maias, a preocupação com a medição do
+			tempo foi central. Acertar o horário quando o sol estivesse a pino, isto é, ao meio-dia, e contar o tempo
+			utilizando <span onclick="Aparecer('imagem1','citacao1')"><mark>ampulheta</mark></span> eram práticas
+			comuns. Até o século XIX, o horário mundial ainda não havia sido padronizado. </p>
+
+
+		<div class="area"><img id="imagem1" src="tp3Foto1.jpg" alt="tp3Foto1" class="w3-mobile" style=display:none>
+		</div>
+
+
+		<span class="citacao" id="citacao1" style=display:none> Fonte: Organizado pelo autor. </span>
+
+
+
+
+
+		<p>Nos Estados Unidos, por exemplo, com o advento da ferrovia que percorria longas distâncias
+			no sentido Oeste-Leste, chegou-se a ter cerca de 300 horas oficiais diferentes ao longo das estradas de
+			ferro.</p>
+
+		<p> A solução adotada pela Grã-Bretanha (ilha onde estão localizadas Escócia, Inglaterra e
+			País de Gales) foi o de estabelecer a partir de 1830 uma única hora legal para o país, medida pelo
+			Observatório Real de Greenwich. O sistema era fundamentado em eventos astronômicos, como o movimento de
+			rotação terrestre, que vimos na aula 02. (Carvalho, 2011).</p>
+
+		<p><span class="mark2"> <strong>Rotação</strong></span> - O movimento de rotação terrestre é
+			aquele que o
+			planeta executa em torno de seu próprio eixo, em um período de, aproximadamente, 24 horas. Graças a ele, a
+			Terra é achatada nos polos e expandida no Equador, não formando uma esfera perfeita. Mas é, também, por
+			causa desse movimento que temos a variação dos períodos de claro e escuro, isto é, dias e noites na Terra,
+			dentre outros fenômenos.
+		<p>
+
+
+		<p>A rotação é um movimento realizado no sentido Oeste-Leste, <span
+				onclick="Aparecer('imagem2','citacao2')"><mark>clique para ver a imagem</mark></span>. Temos a impressão
+			de que o Sol nasce no horizonte A Leste e com o passar das horas, ele descreve uma trajetória sobre nossas
+			cabeças no sentido Leste-Oeste, até o pôr do Sol. Na verdade, é a Terra que está girando na direção
+			contrária.</p>
+
+		<div class="area"><img id="imagem2" src="tp3Foto2.jpg" alt="tp3Foto2" class="w3-mobile" style=display:none>
+		</div>
+
+		<span class="citacao" id="citacao2" style=display:none> Fonte: Organizado pelo autor. </span>
+
+		<p> Desse modo, o Sol aparece no horizonte por volta das 6 da manhã, ele está na posição
+			horizontal, na linha do horizonte. Já as 7 horas, a Terra já girou 15 graus e o Sol já estará 15 graus acima
+			da linha do horizonte. Às 8 horas, 30 graus, as 9 horas 45 graus e assim por diante ao longo de todo o dia.
+			Por isso somos induzidos a acreditar que o Sol está descrevendo essa trajetória, mas é o movimento de
+			rotação da Terra que provoca tal “ilusão”. <span onclick="Aparecer('imagem3','citacao3')"><mark>Veja
+					aqui</mark></span>.</p>
+		<div class="area"><img id="imagem3" src="sol.gif" alt="sol" width="330" height="350" style=display:none></div>
+
+		<span class="citacao" id="citacao3" style=display:none> Fonte: Organizado pelo autor. </span>
+
+
+
+
+		<p>É esse movimento aparente do Sol o responsável pela sucessão das horas do dia, o que pode
+			ser comprovado pelas sombras de objetos fixos nos locais em que vivemos (Carvalho, 2011).</p>
+
+		<p>Essa sombra que podemos ver nos objetos quando da passagem do Sol é a hora real ou solar,
+			isto é, a hora que é definida pela passagem do Sol sobre um meridiano de um local na Terra. Lembra da aula
+			passada que a linha do Equador divide a Terra entre duas metades, chamadas <span
+				onclick="Aparecer('imagem4','citacao4')"><mark>hemisférios?</mark></span> O Norte e o Sul. Já o
+			meridiano de Greenwich divide a Terra entre hemisfério Leste e Oeste.</p>
+
+
+		<div class="area"><img id="imagem4" src="tp3Foto3.jpg" alt="tp3Foto3" class="w3-mobile" style=display:none>
+		</div>
+
+		<span class="citacao" id="citacao4" style=display:none> Fonte: Organizado pelo autor. </span>
+
+
+		<p>Também vimos que se dividirmos a circunferência da Terra (40.075 km) por 360º no Equador
+			obteremos o número de 111,3 km. Isso significa que a cada um 1º de longitude a Terra percorre 111,3 km. Se a
+			Terra leva uma hora para percorrer 15º, logo ela vai levar 4 minutos para percorrer 1º grau.
+
+			<br><br>
+			15º ------ 60 minutos<br>
+			1º ------- x<br>
+
+			15x = 60<br>
+			x = 60/15<br>
+			x = 4 minutos.<br>
+		</p>
+
+
+		<p>A Terra leva, portanto, <strong>4 minutos</strong> para percorrer a distância no Equador de
+			<strong>111,3
+				km</strong>. E podemos ser ainda mais precisos com essas distâncias. A Terra tem 360 meridianos de 1º de
+			longitude. Cada <span onclick="Aparecer('imagem5','citacao5')"><mark>grau</mark></span> é dividido em 60
+			minutos que, por sua vez, se dividem em 60 segundos. Não se preocupem com os cálculos agora, vocês verão
+			esse assunto nas aulas de Geometria na disciplina de Matemática. <br><br>
+		</p>
+		<div class="area"><img id="imagem5" src="graus.gif" alt="grauGif" width="330" height="400" style=display:none>
+		</div>
+
+		<span class="citacao" id="citacao5" style=display:none> Fonte: Organizado pelo autor. </span>
+
+
+		<p>Se dividirmos <strong>1º</strong> de longitude por 60 obteremos cerca de 1855 m,
+			equivalente a
+			<strong>1’</strong>(um minuto) de longitude. E se dividirmos 1855 m por 60 novamente, teremos a largura de
+			longitude
+			com cerca de 30,9 m. Portanto, um <strong>1”</strong> (um segundo) de meridiano equivale a 30 metros e nove
+			centímetros de distância.
+		</p>
+
+		<p>Com as atuais tecnologias surgidas com a incorporação dos satélites no mapeamento do mundo,
+			podemos ter uma precisão bem maior e mapear até centímetros no Planeta. Mas nem sempre foi assim. Os fusos
+			eram ainda um desafio grande para ser padronizado.</p>
+
+
+		<p>Em 1840 adotou-se o Greenwich Mean Time (GMT) – Tempo Médio de Greenwich, como forma de
+			uniformizar a hora em toda a Grã-Bretanha. Em 1878, o canadense Sir Sanford Fleming (1827-1915), engenheiro
+			chefe das ferrovias do Canadá, sugeriu adotar um sistema de tempo no mundo inteiro a partir do meridiano que
+			passava pelo Observatório de Greenwich e propôs divisão do Planeta em fusos horários.</p>
+
+
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+		<hr>
+
+	</div>
+
+
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Teste sua habilidade de observação</p>
+
+
+		<form id="quiz1" name="quiz1">
+
+			<h4 class="paragrafo divCaixa1 w3-margin"> Em qual hemisfério está localizado o Brasil em relação ao
+				meridiano de Greenwich?</h4>
+
+
+
+
+			<div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""></div>
+			
+
+
+			<p id="resp1a"></p>
+			<br><br>
+
+			<input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
+				onclick=" PerAberta(1,'resp1a','buttonConferirQ1','globinho10')">
+		</form>
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho10" style="display:none" alt="globinho10" width="64" height="64">
+			</p>
+		</div>
+
+
+
+
+
+		<button class="btnHide" id="btnq1a" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+
+
+		<hr>
+
+	</div>
+
+
+	<div class="topico">
+
+		<p><span class="mark2"> <strong>Fuso horário </strong></span> - São linhas (meridianos)
+			traçados de um polo
+			ao outro, em um total de 24 <span onclick="Aparecer('imagem6','citacao6')"><mark>faixas</mark></span> de
+			modo a padronizar o cálculo de tempo em todo o planeta Terra. Cada hora representa 15º (resultado da divisão
+			de 360º por 24h, que é o tempo de rotação da Terra em seu próprio eixo).
+		<p>
+
+		<div class="area"><img id="imagem6" src="tp3Foto4.jpg" alt="tp3Foto4" class="w3-mobile" style=display:none>
+		</div>
+
+		<span class="citacao" id="citacao6" style=display:none> Fonte: https://www.worldtimezone.com/. Adaptada.
+		</span>
+
+		<p>Greenwich é uma cidade inglesa localizada as margens do Rio Tâmisa. Em outubro de 1884, 41
+			delegados de 25 nações se encontraram em Washington – DC nos Estados Unidos, para a Conferência
+			Internacional do Primeiro Meridiano e decidiram que:</p>
+
+		<p>- O dia universal seria um Dia Solar Médio e começaria à meia-noite em Greenwich contado no
+			formatado de 0 a 24 horas;</p>
+
+
+		<p>- O primeiro Fuso Horário abrangeria uma faixa que vai de 07º 30’ E(East-Leste) a 07º 30’
+			W(West-Oeste), portanto, 15º de longitude. (Carvalho, 2011).</p>
+
+		<p>Sendo assim, houve uma convenção em que as horas aumentam no sentido Leste e diminuem no
+			sentido Oeste até a longitude de 180º.</p>
+
+
+		<p>Dessa forma, à medida que nos deslocamos para o Oeste do planeta,
+			<strong>diminuímos</strong> as
+			horas e, à medida que nos deslocamos para o Leste, <strong>aumentamos</strong> os horários.
+		</p>
+
+
+		<p>Por exemplo: se na cidade de Nova York – localizada no fuso -5GMT – são 8h, na cidade de
+			Brasília – que está localizada no fuso -3GMT, são 10h, pois a capital brasileira encontra-se dois fusos a
+			leste da cidade estadunidense.<span onclick="Aparecer('imagem7','citacao7')"><mark> Observe</mark></span>:
+		</p>
+
+		<div class="area"><img id="imagem7" src="tp3Foto5.jpg" alt="tp3Foto5" class="w3-mobile" style=display:none>
+		</div>
+
+		<span class="citacao" id="citacao7" style=display:none> Organizado pelo autor. </span>
+
+
+		<p>Nesse exemplo, é simples visualizar a diferença de horários, pois nos deslocamos dois fusos
+			em direção a leste, então é só aumentar duas horas. Mas e quando a diferença envolve fusos localizados em
+			uma distância maior ou em hemisférios diferentes? Existe uma maneira ou uma fórmula mais simples de se
+			calcular isso?</p>
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+	</div>
+
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Teste seu conhecimento</p>
+
+		<p>Quando vamos em direção Leste, as horas são acrescentadas, e quando vamos em direção Oeste,
+			as horas são diminuídas. Isso acontece devido:</p>
+
+		<button class="desativar2 p4  w3-padding w3-margin"
+			onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">a)
+			ao movimento de translação da Terra</button>
+		<br>
+
+		<button class="desativar2 p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">b)
+			devido a latitude e longitude</button>
+		<br>
+
+		<button class="desativar2 p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this);MostrarFrase('resp2','globinho2', 'desativar2', 'Legal, essa foi bem fácil, ganhou mais um globinho. Está indo muito bem!','1'); this.style.backgroundColor='lightgreen'">c)
+			ao movimento de rotação da Terra.</button>
+
+
+
+		<p id="resp2"></p>
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho2" style="display:none" alt="globinho2" width="64" height="64">
+			</p>
+		</div>
+
+
+
+
+
+
+		<hr>
+
+
+	</div>
+
+	<div class="topico">
+
+
+		<h2> Como calcular fusos horários?</h2>
+
+
+		<p>No período atual da globalização, as compras pela internet são muito populares. Imaginem se
+			cada empresa pelo mundo tivesse um horário específico? Isso traria uma imensa confusão para as entregas dos
+			produtos. </p>
+
+		<p>Outro exemplo refere-se as bolsas de valores. Enquanto no Japão as operações de compra e
+			venda de ações estão encerrando suas atividades, no Brasil estamos apenas iniciando o fluxo de queda ou alta
+			da Bolsa. </p>
+
+
+		<p>Indo mais longe, há estudos que medem, por exemplo, os efeitos negativos dos fusos horários
+			para justificar cobranças de maiores taxas de transferência para transições bancárias entre países situados
+			em fusos distintos. (Santos, 2018).</p>
+
+		<p>Isso nos dá uma ideia da importância do cálculo do fuso horário para a economia no mundo
+			atual..</p>
+
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Calcule os fusos horários</p>
+
+
+		<h3>Descubra o horário em qualquer parte do Planeta pelo fuso a partir do meridiano de
+			Greenwich:</h3>
+
+
+		<p>Digite o nome da cidade e o fuso horário em que ela se encontra. Ex. Londres, 0 fuso,
+			descobrirá o horário em Londres. Digite Brasília, -3 horas e encontrará o horário de Brasília, atrasado
+			(Oeste) em relação à Greenwich.</p>
+
+
+
+		<form id="calcFuso">
+			<p>Digite o nome da cidade: </p>
+			<div class="w3-margin"><input class="input" id="f1b" type="text" name="f1b" onfocus="this.value=''" value="Roma"></div>
+
+
+			<p id="resp1b"></p>
+
+			<p>Digite o fuso horário. Ex: 3 ou -3 ?</p>
+			<div class="w3-margin"><input class="input" id="f1c" type="text" name="f1c" onfocus="this.value=''" value="1"></div>
+
+		</form>
+
+		<p id="resp1c"></p>
+
+
+		<button class="buttonB" id="btnShowq1c"
+			onclick="MostrarProximo(this); calcTime('f1b','f1c','resp1c')">Calcular</button>
+			<br><br>
+
+		<hr>
+
+
+
+
+	</div>
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Teste seu conhecimento</p>
+
+		<h4 class="paragrafo divCaixa1 w3-margin"> Outro exemplo: Estamos no Brasil, localizado no meridiano 45º Oeste
+			de
+			Greenwich. Isso significa que se dividirmos 45 por 15º, teremos 3 horas. Porque 15º é a distância em que o
+			planeta percorre dentro de uma hora. O Brasil está, portanto, a -3 horas de Greenwich, pois se encontra a
+			Oeste do meridiano principal.</h4>
+
+		<h4 class="paragrafo divCaixa1 w3-margin">Se no Brasil, são 11h da manhã, que horas serão em Greenwich,
+			localizado no
+			fuso 0º?</h4>
+
+		<form id="quiz2" name="quiz2">
+
+			<div class="w3-margin"><input class="input" id="q1d" type="text" name="q1d" value=""></div>
+
+
+		</form>
+
+		<p id="resp1d"></p>
+
+
+		<input class="btnShow" id="buttonConferirQ1d" type="button" value="Conferir"
+			onclick=" PerAberta(2,'resp1d','buttonConferirQ1d','globinho11')">
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho11" style="display:none" alt="globinho11" width="64" height="64">
+			</p>
+		</div>
+
+		<button class="btnHide" id="btnq1d" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Teste seu conhecimento</p>
+
+		<p>Vimos que o computador é capaz de realizar esse cálculo de forma muita rápida e eficaz.
+			Entretanto, resta saber como ele faz isso.</p>
+
+		<h4 class="paragrafo divCaixa1 w3-margin"> Numa cidade A, localizada no fuso de 60º Oeste, são 14h. Que horas serão
+			numa cidade B, localizada no fuso de 30º Leste? </h4>
+
+		<form id="quiz3" name="quiz3">
+
+			<div class="w3-margin"><input class="input" id="q1e" type="text" name="q1e" value=""></div>
+
+
+		</form>
+
+		<p id="resp1e"></p>
+
+
+		<input class="btnShow" id="btnConferirQ1e" type="button" value="Conferir"
+			onclick=" PerguntasAbertas(3,'resp1d','btnConferirQ1e','globinho111')">
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho111" style="display:none" alt="globinho111" width="64" height="64">
+			</p>
+		</div>
+
+
+
+		<button class="btnHide" id="buttonE" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p id="caixa"> Agora é com você!</p>
+
+		<h4 class="paragrafo divCaixa1">Completa a tabela das horas e seus respectivos fusos horários em seu
+			caderno. </h4>
+
+		<p> Ex: </p>
+
+
+
+		<table class="w3-margin">
+			<tr>
+				<th>Hora</th>
+				<th>Fuso</th>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>15º</td>
+			</tr>
+			<tr>
+				<td>02</td>
+				<td>30º</td>
+			</tr>
+			<tr>
+				<td>03</td>
+				<td>45º</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>??</td>
+			</tr>
+		</table>
+
+		<p>Essa tabela vai te ajudar a fazer os cálculos dos fusos pelo mundo. </p>
+
+		<button class="btnShow"
+			onclick="MostrarProximo(this); MostrarFrase('resp3', 'globinho13','','por ter feito essa lição ganhou outro globinho','1'); this.style.display='none'">Proximo</button>
+
+
+
+		<p id="resp3"></p>
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho13" style="display:none" alt="globinho13" width="64" height="64">
+			</p>
+		</div>
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+
+		<h2> Exemplos de cálculos de fusos horários </h2>
+
+		<p> Vamos avançar em nossos cálculos dos fusos horários. Recomendamos a realização de três
+			diferentes passos. O primeiro seria identificar os fusos de origem e de destino; o segundo seria calcular a
+			diferença entre eles, já o terceiro seria verificar se os horários deverão ser adiantados ou atrasados.
+			Vamos considerar o Exemplo 01 para explicar mais detalhadamente cada um deles.</p>
+
+		<p> <strong>Exemplo 01:</strong> uma pessoa encontra-se na cidade de São Paulo, localizada no
+			fuso
+			horário -3GMT, e resolve fazer uma ligação, às 9h da manhã, para um amigo que se encontra em Tóquio, no fuso
+			9GMT. A que horas o amigo atenderá a ligação? </p>
+
+
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>1º passo: identificar os fusos.</strong> Nesse caso, eles foram
+			fornecidos no
+			enunciado da questão, mas nem sempre isso acontece, como veremos no próximo exemplo. Assim, </h4>
+
+		<p> Fuso de origem: –3GMT</p>
+
+
+		<p>Fuso de destino: +9GMT </p>
+
+
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>2º passo: calcular a diferença entre os fusos.</strong> Basta subtrair o
+			fuso
+			da cidade de destino pelo da cidade de origem. Caso eles se encontrem em hemisférios diferentes, terão
+			sinais diferentes e, inevitavelmente, serão somados. </h4>
+
+		<p> 9GMT – (-3GMT) = 12GMT</p>
+
+
+		<p>Portanto, a diferença entre São Paulo e o Japão é de <strong>12 fusos</strong>, ou seja,
+			<strong>12
+				horas</strong>.
+		</p>
+
+
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>3º passo: verificar se os fusos serão somados ou subtraídos ao horário de
+				origem.</strong> Sabemos que a ligação foi realizada às 9h da manhã e que a diferença das localidades é
+			de 12
+			horas. Mas devemos somar ou subtrair esse horário em relação ao original? Para responder a essa pergunta e
+			finalizar o exercício, basta observar em que direção a ligação está sendo direcionada.</h4>
+
+
+		<p>Em direção a Leste, os fusos são somados. Em direção a Oeste, eles são diminuídos. </p>
+
+		<p> Assim, como o Japão fica a leste de Greenwich e São Paulo fica a oeste, então somamos:</p>
+
+		<p>9h + 12h = 21h. </p>
+
+		<p> A pessoa atendeu a ligação em Tóquio às 21 horas.</p>
+
+		<p><strong>Lembre-se:</strong> </p>
+
+		<p> Locais no mesmo hemisfério, subtraem-se as suas longitudes:</p>
+
+		<div class="area">
+			<p><img src="tp3Foto6.jpg" id="imagem8" style="display:block" alt="HemisferioIgual" class="w3-mobile"> </p>
+		</div>
+
+		<p>Locais em hemisférios opostos, somam-se as suas longitudes: </p>
+
+		<div class="area">
+			<p><img src="tp3Foto7.jpg" id="imagem9" style="display:block" alt="HemisferioOposto" class="w3-mobile"> </p>
+		</div>
+
+		<p>Vamos resolver, agora, o exemplo 02. Nele, não serão fornecidos os fusos, mas as
+			longitudes. Além disso, faremos um deslocamento, cuja duração deverá ser levada em conta.
+
+		</p>
+
+		<p><strong>Exemplo 02:</strong> José Carlos atualmente mora e trabalha na cidade de Roma,
+			localizada a
+			15º a Leste do Meridiano de Greenwich. Certo dia, ele resolveu ir para o Brasil, na cidade de Brasília,
+			visitar a sua família, a 45º de longitude a Oeste de Greenwich. Saindo da Itália às 15h e com um tempo de
+			viagem de 11h, ele chegou ao seu destino em que horário? </p>
+
+		<h4 class="paragrafo divCaixa1 w3-margin"> <strong>1º passo: identificar os fusos. </strong>Aqui, os fusos não estão
+			expressos
+			no enunciado, então teremos que calculá-los. Como afirmamos no início do texto, cada fuso possui 15º de
+			longitude. Dessa forma, para transformar as longitudes em fusos, basta dividi-las por 15.</h4>
+
+		<p>Cidade de origem: 15º ÷ 15 = 1GMT </p>
+
+		<p>Cidade de destino: -45º ÷ 15 = -3GMT </p>
+
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>2º passo: calcular a diferença entre os fusos.</strong> Agora basta
+			repetir o
+			mesmo procedimento do exemplo 01, diminuindo o fuso de destino pelo fuso de origem. </h4>
+
+		<p>-3GMT - 1GMT: -4GMT </p>
+
+		<p>Portanto, a diferença entre o local de origem e o local de destino é de 4 horas. </p>
+
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>3º passo: verificar se somamos ou diminuímos os fusos.</strong> Como José
+			Carlos está se deslocando do Leste em direção ao Oeste, então devemos diminuir os fusos em relação ao
+			horário de origem. No entanto, não podemos nos esquecer de somar o tempo de viagem, que é de 11 horas.
+			Assim, </h4>
+
+		<p>15h (hora local de partida) – 4h (diferença entre os fusos) = 11h. </p>
+
+		<p>Em Brasília era 11h no início da viagem. Agora devemos somar o tempo que levou a viagem +
+			11h (tempo de viagem) = 22h. </p>
+
+		<p>Portanto, José Carlos chegou a Brasília às 22h. </p>
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Teste seu conhecimento</p>
+
+		<h4 class="paragrafo divCaixa1 w3-margin"> Numa cidade A, localizada no fuso 120º Oeste, são 21h. Que horas serão na
+			localidade B, situada a 60º Leste? </h4>
+
+		<form id="quiz4" name="quiz4">
+
+			<div class="w3-margin"><input class="input" id="q1f" type="text" name="q1f" value=""></div>
+
+
+		</form>
+		<p> <span
+				onclick="this.innerHTML='Dica: (Quando há deslocamento para Leste, as horas são adicionadas.Calcule os fusos em horas, isto é, divida-os por 15º, e adicione ao horário conhecido. Caso ultrapasse as 24h, será o dia seguinte mais a quantidade de horas que ultrapassou 24h. Neste exemplo As horas serão no mesmo dia ou no dia seguinte?)'"><mark>Dica</mark></span>.
+		</p>
+
+		<p id="resp1f"></p>
+
+
+		<input class="btnShow" id="buttonConferirQ1f" type="button" value="Conferir"
+			onclick="PerguntasAbertas4(4,'resp1f','buttonConferirQ1f','globinho14')">
+
+
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho14" style="display:none" alt="globinho14" width="64" height="64">
+			</p>
+		</div>
+
+
+
+
+		<button class="btnHide" id="buttonF" onclick="MostrarProximo(this);this.style.display='none'">Proximo</button>
+
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p class="paragrafo caixa"> Teste seu conhecimento</p>
+
+		<p>Observe a figura abaixo:</p>
+
+
+		<div class="area">
+			<p><img src="tp3Foto8.jpg" id="imagem10" alt="FusoTabela" class="w3-mobile">
+			</p>
+		</div>
+
+		<p>Considerando-se que em Greenwich o relógio acusa 15 horas, nas cidades situadas nos pontos
+			A e B, serão, respectivamente,</p>
+
+		<button class="desativar3 p4 w3-padding w3-margin"
+			onclick=" MostrarProximo(this);RetirarPontos('resp3a','globinho15', 'desativar3','1');this.style.backgroundColor='tomato'">a)
+			20 horas e 9 horas.</button>
+		
+
+		<button class="desativar3 p4 w3-padding w3-margin"
+			onclick=" MostrarProximo(this);RetirarPontos('resp3a','globinho15', 'desativar3','1');this.style.backgroundColor='tomato'">b)
+			9 horas e 21 horas.</button>
+	
+
+		<button class="desativar3 p4 w3-padding w3-margin"
+			onclick="MostrarProximo(this);MostrarFrase('resp3a','globinho15', 'desativar3', 'Já está pegando o jeito!', '1'); this.style.backgroundColor='lightgreen'">
+			c) 9 horas e 20 horas.</button>
+	
+
+		<p id="resp3a"></p>
+
+		<div class="area">
+			<p><img src="globinhoPe.png" id="globinho15" style="display:none" alt="globinho15" width="64" height="64">
+			</p>
+		</div>
+
+		<hr>
+
+
+	</div>
+
+	<div class="topico">
+
+		<div class="w3-container area">
+			<div class="postit-tp3 ">
+				<p class=""><mark>Anote ai:</mark></p>
+				<p>É possível voltar no tempo? O que a <mark>Linha Internacional de Mudança de Data</mark> tem a ver com
+					isso?</p>
+			</div>
+		</div>
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<br>
+
+	</div>
+
+	<div class="topico">
+
+		<p>É estranho pensar que haja um local em que o dia possa ter um início e um fim, uma vez que
+			o movimento de rotação da Terra é ininterrupto, isto é, sem fim. Porém, em se tratando de fusos horários,
+			foi necessário estabelecer um local na Terra em que ocorreria uma mudança de data. É a chamada <span
+				onclick="Aparecer('imagem11','citacao11')"><mark>linha internacional de mudança de data</mark></span>.
+
+
+
+		<div class="area"><img id="imagem11" src="tp3Foto9.jpg" alt="tp2Foto1" class="w3-mobile" style=display:none>
+		</div>
+
+
+		<span class="citacao" id="citacao11" style=display:none> Fonte: Organizado pelo autor. </span>
+
+		<p><span class="mark2"> <strong>Linha internacional da Data - LID </strong></span> - Próximo
+			ao
+			antimeridiano de Greenwich, ou meridiano de 180 graus, convencionou-se estabelecer a Linha da mudança de
+			Data. Ao atravessar essa linha de Oeste para Leste, você se adianta no tempo um dia, enquanto no sentido
+			Leste para Oeste, você volta no tempo (atrasa) um dia.</p>
+
+		<p>Essa área foi pensada estrategicamente por ser pouco habitada. Mesmo assim, a linha foi
+			ajustada para não passar diretamente sobre o meio dos países da região. Não é uma linha reta, o primeiro
+			desvio ocorre no Estreito de Bering, no Oceano Pacífico na divisão entre Rússia e Estados Unidos. Também
+			mantém a Rússia e o Alaska separados. Quando chega ao sul do Pacífico, a linha LDI é desviada para Leste e
+			mantém as ilhas da Polinésia, como Tonga e a República das Ilhas Fiji.</p>
+
+		<p>É claro se você estiver próximo a LID é possível, por exemplo celebrar duas vezes a
+			passagem do ano do dia 31 de dezembro para 1 de janeiro.</p>
+
+		<p>Mas suponha que você esteja na cidade de Auckland na Nova Zelândia e queira viajar para
+			Santiago no Chile. A viagem tem duração de, aproximadamente, 19 horas. Ela vai cruzar o LID no sentido
+			Leste-Oeste (atrasa um dia) pelo Oceano Pacífico. Digamos que saia do aeroporto as 18h do dia 3 de novembro.
+			18h + 19h de viagem é igual a 37h. Diminuímos 24h e obtemos o resultado de 13h do dia 03 em Santiago. Ou
+			seja, a viagem saiu as 18h e chegou as 13h no mesmo dia, isto é, “voltou no tempo” 5h.
+		</p>
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<br>
+
+
+	</div>
+
+	<div class="topico">
+
+		<h2> Os fusos horários no Brasil </h2>
+
+		<p>O Brasil está localizado totalmente no hemisfério ocidental e possui mais de 4 mil km no
+			sentido Leste-Oeste. Os fusos horários em nosso país foram adaptados as linhas de fronteiras e a rios como
+			limites de Estados, como no exemplo dos Estados do Nordeste que foram literalmente “encaixados” no 2º fuso.
+		</p>
+
+		<p><span class="mark2"> <strong>Fuso horário brasileiro </strong></span> - Localizado no
+			hemisfério
+			ocidental, o Brasil possui 4 fusos horários e seu horário está atrasado em relação à Greenwich. </p>
+
+		<p><strong>1º fuso - 30º graus Oeste</strong>, estando 2horas atrasado em relação à GMT.
+			Abrange as
+			ilhas oceânicas, inclusive de Fernando de Noronha. </p>
+
+		<p> <strong>2º fuso - 45º Oeste</strong>, estando 3horas atrasado em relação a GMT. Abrange
+			Amapá,
+			Nordeste, Sudeste e Sul, Goiás, Tocantins, Distrito Federal e Pará. É o horário oficial do país.</p>
+
+		<p><strong> fuso - 60º graus Oeste></strong>, estando atrasado 4 horas em relação à GMT.
+			Abrange
+			Rondônia, Roraima, Mato Grosso do Sul, Mato Grosso, Amazonas. </p>
+
+		<p><strong>4º fuso - 75º graus Oeste,</strong> estando 5 horas atrasados em relação à GMT.
+			Abrange o
+			Estado do Acre e a parte sudoeste do Amazonas.</p>
+
+		<div class="area">
+			<p><img src="tp3Foto10.jpg" id="globinho16" style="display:block" alt="globinho16" class="w3-mobile">
+			</p>
+		</div>
+		<p class="citacao"> Fonte: https://mastergeografia.wordpress.com/ </p>
+
+
+		<button class="btnShow " onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<br>
+
+
+	</div>
+
+
+
+
+
+        <div class="topico">
+
+
+            <h2 id="centralizado"> As perguntas nos levam a questionar o <em>status quo</em> e a desafiar ideias
+                preestabelecidas, impulsionando o progresso e a transformação em todas as áreas do conhecimento.</h2>
+
+
+
+            <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                   É verdade que se fizerem um buraco no
+				chão vamos para na China?
+                </strong> </p>
+
+            <p><span class="primeiraLetra">R:</span>
+
+               Caso atravessemos o núcleo da Terra, quem sabe
+			poderíamos chegar à China, ou em outro local diametralmente oposto. Eles locais são chamados de antípodas. E
+			possuem uma diferença de 180º, isto é, cerca de 12h entre eles.
+
+            </p>
+
+            	<div class="area">
+			<p><img src="tp3Foto11.jpg" id="foto11" style="display:block" alt="foto11" class="w3-mobile"> </p>
+		</div>
+		<span class="citacao"> Projeção da sobreposição de áreas antípodas no planeta.Fonte: Wikipedia. </span>
+
+        <p>Suas latitudes são simétricas; isto é, a distância para o equador é a mesma, mas no outro
+			hemisfério, portanto as estações de cada ano são opostas. </p>
+
+		<p> Para obter as coordenadas geográficas do antípoda de um ponto P, o procedimento é: </p>
+
+		<ul>
+			<li>Latitude da antípoda = Latitude do ponto P com o hemisfério invertido. (Norte a sul ou vice-versa)</li>
+			<li>Comprimento do antípoda = 180° - Comprimento do ponto P com o hemisfério invertido (leste a oeste ou
+				vice-versa)</li>
+
+		</ul>
+
+		<p>Por exemplo, para calcular a antípoda de Pequim. (40°N 116°L) </p>
+
+		<p>A latitude do antípoda será: </p>
+		<ul>
+			<li>40° N o inverso é 40° S</li>
+
+		</ul>
+		<p> Logo Para calcular o comprimento:</p>
+		<ul>
+			<li>C = 180° - 116° = 64 ° O</li>
+
+		</ul>
+
+		<p>Assim a antípoda de Pequim está a 40°S 64°O e fica em Conesa, Rio Negro, Argentina. </p>
+		<p>No Brasil, a antípoda do município de Barra do Quaraí, Rio Grande do Sul fica em Zhoushan
+			(República Popular da China) </p>
+
+
+            <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                   O que é horário de verão?
+                </strong> </p>
+
+           <p><span class="primeiraLetra">R:</span> . É a prática de adiantar os relógios uma hora
+			durante os meses da primavera e do verão, com o alegado objetivo de economizar energia nas regiões que mais
+			recebem luminosidade solar nesse período do ano.</p>
+
+		<p>Pelo segundo ano seguido o Brasil não terá horário de verão com a publicação do decreto
+			9.772/19. O horário de verão foi usado de 2008 a 2018 com o objetivo de economizar o consumo de energia em
+			10 estados que registram maior luminosidade entre outubro e fevereiro. </p>
+
+		<p class="citacao"> Fonte:
+			https://www.agazeta.com.br/brasil/
+			brasil-nao-tera-horario-de-verao-pelo-
+			segundo-ano-consecutivo-1020. </p>
+
+<p class="paragrafo borda"> <span class="primeiraLetra">P:</span> <strong>Qual país tem mais fusos
+				horários?</strong>
+		</p>
+
+		<p><span class="primeiraLetra">R:</span> É a Rússia, maior país do mundo em extensão
+			longitudinal. Ao todo, 11 fusos horários e mais de 10 mil quilômetros separam a região Oeste do extremo
+			Leste. Assim, quando é meio-dia na capital, Moscou, já são 9 horas da noite nas cidades do extremo Leste (há
+			um pequeno território no mar Báltico que não se comunica com o restante do país, cujos relógios são 1 hora
+			atrasados em relação aos da capital.</p>
+
+		<p> Em 2º lugar vêm os EUA, com 9 fusos – incluem-se aí o Havaí, outras ilhas do Pacífico e o
+			Alasca. O Canadá é terceiro, com 6 horários diferentes.</p>
+
+		<p>Caso fosse levada em conta apenas a área do território, a China deveria vir em seguida, com
+			5 fusos. Ocorre que o governo obriga todos os relógios do país a ser ajustados em um único horário: o da
+			capital, Pequim. Isso pode ser bom para os negócios, mas é ruim para os habitantes da região oeste, que na
+			maior parte do ano só veem o Sol nascer às 9 da manhã. </p>
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <br><br>
+
+
+            <hr>
+
+        </div>
+
+
+
+
+
+
+        <div class="topico">
+            <h3>Já podemos finalizar esta aula!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+
+    ProcessarResposta(this, {
+        correto: true, 
+        idFrase: 'respFinal', 
+        idGlobo: 'globinhorespFinal', 
+        classe: '', 
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    
+    MostrarProximo(this);
+">Próximo</button>
+
+            <p id="respFinal"></p>
+
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="80" height="80">
+                </p>
+            </div>
+            <hr>
+        </div>
+
+
+
+        <div class="topico">
+
+
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+            <div class="w3-container">
+
+                <div id="id01" class="w3-modal" style="z-index: 998;">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
+                        <div class="w3-container w3-center w3-padding-32">
+                            <span onclick="fecharModal('id01')" class="w3-button w3-display-topright">&times;</span>
+
+                            <div class="nota w3-xlarge w3-padding-16 fontePixel"></div>
+
+                            <img src="../../../fotoIndex/globinhoPe.png" width="100" class="w3-animate-bottom">
+                            <br><br>
+                            <button class="w3-button w3-green w3-round" onclick="fecharModal('id01');">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="bibliografias w3-content w3-padding-64" style="max-width:700px; display:none;">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+
+            <div class="w3-row-padding">
+
+              <div class="w3-col m6 w3-margin-bottom">
+            <div class="postit-tp9 w3-red w3-card-4 pulsar">
+                <a href="https://blogdoaftm.com.br/china-fuso/" target="_blank">
+                    <span class="w3-text-white">O mistério da China: Um país gigante com apenas um fuso horário</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-col m6 w3-margin-bottom">
+            <div class="postit-tp9 w3-blue w3-card-4 pulsar">
+                <a href="https://brasilescola.uol.com.br/geografia/linha-internacional-da-data.htm" target="_blank">
+                    <span class="w3-text-white">Viagem no tempo? Entenda como funciona a Linha Internacional da Data</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-col m6 w3-margin-bottom">
+            <div class="postit-tp9 w3-amber w3-card-4 pulsar">
+                <a href="https://atlasescolar.ibge.gov.br/brasil/3025-federacao-e-territorio/3033-territorio.html" target="_blank">
+                    <span class="w3-text-black">Mapa Oficial: Conheça os 4 fusos horários do Brasil (IBGE)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-col m6 w3-margin-bottom">
+            <div class="postit-tp9 w3-deep-purple w3-card-4 pulsar">
+                <a href="https://brasilescola.uol.com.br/geografia/a-historia-meridiano-greenwich.htm" target="_blank">
+                    <span class="w3-text-white">Observatório de Greenwich: Onde o tempo do mundo começa</span>
+                </a>
+            </div>
+        </div>
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
+                        Bibliográficas</strong></h3>
+
+                <div class="w3-row-padding w3-margin-top">
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-green"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
+                                <p class="w3-margin-top">CARVALHO, Edilson Alves de.<br><b>Leituras cartográficas e
+                                        interpretações estatísticasI</b><br>2.ed. Natal: EDUFRN, 2011.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-blue"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-blue w3-small fontePixel">Cartografia</span>
+                                <p class="w3-margin-top">PENA, Rodolfo F. Alves. <br><b>Como calcular fuso horário?</b>.
+                                    <br>Disponível em:
+                                    https://mundoeducacao.uol.com.br.htm. Acesso em: 18 maio 2018.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-deep-orange"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
+                                <p class="w3-margin-top">VOGLER, Christopher. <br><b>A jornada do escritor</b>. <br>Rio
+                                    de Janeiro: Nova Fronteira, 2006.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-card-4 w3-white w3-border-top w3-border-indigo"
+                            style="border-width: 6px !important; min-height: 180px;">
+                            <div class="w3-container w3-padding">
+                                <span class="w3-tag w3-indigo w3-small fontePixel">Documento Oficial</span>
+                                <p class="w3-margin-top">BRASIL. Ministério da Educação. <br><b>Base Nacional Comum
+                                        Curricular</b>. <br>Brasília: MEC/Secretaria de Educação Básica, 2018.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+
+    </main>
+
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+    <!-- Footer -->
+
+    <div id="footer-placeholder"></div>
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+	<script>
+
+		var liberaBtn = 0;
+
+
+
+
+		function MostrarProximo(parametro) {
+
+			var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+			var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+			if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+			{
+				proximo.classList.add('mostrar'); // Mostrar o seguinte
+				addProgressBar();
+				//numButton();
+				ApagaButton();
+				document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+
+			}
+
+		}
+
+
+
+
+		function addProgressBar() {
+			var barra = document.getElementById("progress");
+			txtBarra = document.getElementById("txtBarra");
+
+			i = Math.round(100 / 20);
+			barra.value += i;
+
+			if (barra.value >= 100) {
+				barra.value = 100;
+			}
+
+			txtBarra.innerHTML = barra.value + "%";
+
+		}
+
+
+		function PerguntasAbertasDesafio(qnum, idResp, buttonConferir, globinho) {
+
+
+
+
+			var q1Desafio1 = document.PerguntasDesafio.q1Desafio1.value.toLowerCase();
+			var q1Desafio2 = document.PerguntasDesafio.q1Desafio2.value.toLowerCase();
+			var q1Desafio3 = document.PerguntasDesafio.q1Desafio3.value.toLowerCase();
+			var q1Desafio4 = document.PerguntasDesafio.q1Desafio4.value.toLowerCase();
+			//var q1Desafio5 = document.PerguntasDesafio.q1Desafio5.value.toLowerCase();
+
+
+
+			var imagem = ['globinhoPe.png'];
+
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			if (q1Desafio1.includes("30 norte") && q1Desafio1.includes("60 oeste") && qnum == 5) {
+				liberaBtn += 1;
+				document.getElementById("q1Desafio1").style.backgroundColor = cor[0];
+				document.getElementById("q1Desafio1").disabled = true;
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1Desafio1.valueOf();
+
+				document.getElementById(globinho).style.display = "block";
+
+
+			}
+			else if (qnum == 5) {
+				document.getElementById("q1Desafio1").style.backgroundColor = cor[1];
+
+				document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+				Play2("../audio2.mp3");
+			}
+
+			if (q1Desafio2.includes("13h") && qnum == 6) {
+				liberaBtn += 1;
+				document.getElementById("q1Desafio2").style.backgroundColor = cor[0];
+				document.getElementById("q1Desafio2").disabled = true;
+
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1Desafio2.valueOf();
+
+				document.getElementById(globinho).style.display = "block";
+
+
+			}
+			else if (qnum == 6) {
+				document.getElementById("q1Desafio2").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+				Play2("../audio2.mp3");
+			}
+
+
+			if (q1Desafio3.includes("5h") && qnum == 7) {
+				liberaBtn += 1;
+				document.getElementById("q1Desafio3").style.backgroundColor = cor[0];
+				document.getElementById("q1Desafio3").disabled = true;
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1Desafio3.valueOf();
+
+				document.getElementById(globinho).style.display = "block";
+
+
+			}
+			else if (qnum == 7) {
+				document.getElementById("q1Desafio3").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+				Play2("../audio2.mp3");
+			}
+
+			if (q1Desafio4.includes("22h") && qnum == 8) {
+				liberaBtn += 1;
+
+
+				document.getElementById("q1Desafio4").style.backgroundColor = cor[0];
+				document.getElementById("q1Desafio4").disabled = true;
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1Desafio4.valueOf();
+
+				document.getElementById(globinho).style.display = "block";
+
+
+			}
+			else if (qnum == 8) {
+				document.getElementById("q1Desafio4").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+				Play2("../audio2.mp3");
+
+			}
+
+
+			if (liberaBtn >= 4) {
+
+				MostraButton("buttonq1d8");
+				nota += 2;
+			}
+			else {
+
+				document.getElementById(idResp).innerHTML = "Você deve acertar todas para finalizar sua lição.";
+
+			}
+
+
+
+			document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+		}
+
+		// Função com apenas uma palavra
+
+
+
+		// Função com perguntas abertas feita com formulário
+		function PerAberta(qnum, idResp, buttonConferir, globinho) {
+
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			var q1a = document.quiz1.q1a.value.toLowerCase();
+
+			var q1d = document.quiz2.q1d.value.toLowerCase();
+
+			if (q1a.includes("ocidental") && qnum == 1) {
+
+
+				document.getElementById("q1a").style.borderColor = cor[0];
+				document.getElementById("q1a").disabled = true;
+
+				//EscondeButton(buttonConferir);
+				document.getElementById(buttonConferir).disabled = true;
+				document.getElementById(buttonConferir).style.backgroundColor = "lightgray";
+				Play("../audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ". E mais um globinho para a conta!";
+				nota += 1;
+				document.getElementById(globinho).style.display = "block";
+				MostraButton("btnq1a");
+
+			}
+			else if (qnum == 1) {
+				document.getElementById("q1a").style.borderColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+				Play2("../audio2.mp3");
+				return false;
+			}
+
+			if (q1d.includes("14h") || q1d.includes("14 horas") && qnum == 2) {
+
+				document.getElementById("q1d").style.borderColor = cor[0];
+				document.getElementById("q1d").disabled = true;
+				//EscondeButton(buttonConferir);
+				document.getElementById(buttonConferir).disabled = true;
+				document.getElementById(buttonConferir).style.backgroundColor = "lightgray";
+				Play("../audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1d.valueOf() + ". E mais um globinho para a conta!";
+				nota += 1;
+				document.getElementById(globinho).style.display = "block";
+				MostraButton("btnq1d");
+
+
+
+			}
+			else if (qnum == 2) {
+				document.getElementById("q1d").style.borderColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Você deve responder corretamente para seguir.";
+				Play2("../audio2.mp3");
+				return false;
+
+			}
+
+			document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+		}
+
+		// Função com perguntas abertas feita com formulário
+		function PerguntasAbertas4(qnum, idResp, buttonConferir, globinho) {
+
+			var q1f = document.quiz4.q1f.value.toLowerCase();
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			if (q1f.includes("9h") || q1f.includes("9 horas") && qnum == 4) {
+
+				document.getElementById("q1f").style.borderColor = cor[0];
+				document.getElementById("q1f").disabled = true;
+
+				document.getElementById(buttonConferir).disabled = true;
+				document.getElementById(buttonConferir).style.backgroundColor = "lightgray";
+				Play("../audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1f.valueOf() + ". E ganhou mais um globinho!";
+				nota += 1;
+				document.getElementById(globinho).style.display = "block";
+				MostraButton("buttonF");
+
+
+
+			}
+			else if (qnum == 4) {
+				document.getElementById("q1f").style.borderColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+				Play2("../audio2.mp3");
+				return false;
+			}
+
+
+			document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+		}
+
+
+		// Função com perguntas abertas feita com formulário
+		function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			var q1e = document.quiz3.q1e.value.toLowerCase();
+
+
+
+
+
+
+
+			if (q1e.includes("20h") || q1e.includes("20 horas") && qnum == 3) {
+
+
+				document.getElementById("q1e").style.borderColor = cor[0];
+				document.getElementById("q1e").disabled = true;
+				//EscondeButton(buttonConferir);
+				document.getElementById(buttonConferir).disabled = true;
+				document.getElementById(buttonConferir).style.backgroundColor = "lightgray";
+
+				Play("../audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1e.valueOf() + " .E mais um globinho para a conta!";
+				nota += 1;
+				document.getElementById(globinho).style.display = "block";
+				MostraButton("buttonE");
+
+
+
+
+			}
+			else if (qnum == 3) {
+				document.getElementById("q1e").style.borderColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Você deve responder corretamente para seguir.";
+				Play2("../audio2.mp3");
+				return false;
+
+
+			}
+
+
+
+
+			document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+		}
+
+
+
+		function calcTime(city, offset, idResp) {
+
+			var nomeCidade = document.getElementById(city).value;
+			var qtdfuso = document.getElementById(offset).value.toLowerCase();
+
+			// create Date object for current location
+			d = new Date();
+
+			// convert to msec
+			// add local time zone offset
+			// get UTC time in msec
+			utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+			// create new Date object for different city
+			// using supplied offset
+			nd = new Date(utc + (3600000 * qtdfuso));
+
+
+			if (nomeCidade == "") {// se não digitar no textarea não faz nada
+				isPreenchido = true;
+				document.getElementById(city).style.borderColor = "#EF5959";
+				Play2("../audio2.mp3");
+				return;
+
+			}
+
+			else if (qtdfuso == "" || qtdfuso < -12 || qtdfuso > 12) {// se não digitar no textarea não faz nada
+
+				document.getElementById(offset).style.borderColor = "#EF5959";
+				document.getElementById(idResp).innerHTML = "O Fuso não pode ser maior ou menor que 12.";
+				return;
+
+
+
+			}
+
+			// return time as a string
+
+			document.getElementById(idResp).innerHTML = "A data e a hora local em/no(a) " + nomeCidade + " é: " + nd.toLocaleString() + "<br><br>";
+
+
+
+		}
+
+
+
+
+	</script>
+
+</body>
+
+</html>

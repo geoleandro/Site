@@ -16,20 +16,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
 
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
 
-<script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
 
-<script src="../../../js/abrirmenu.js" defer></script>
-<script src="../../../js/carregar.js" defer></script>
-
-<script src="../../../js/aulas-geral.js" defer></script>
-<script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
 
     <title></title>
 
@@ -44,7 +46,8 @@
         .topico.mostrar {
             display: block
         }
-           .topico * {
+
+        .topico * {
             transition: color 3s ease, background-color 3s ease;
         }
     </style>
@@ -58,6 +61,7 @@
 
     <div id="header-placeholder"></div>
 
+    <div id="aviso-status" class="w3-margin-top"></div>
 
     <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
 
@@ -85,14 +89,12 @@
 
 
 
-            <button class="btnShow"
-                onclick="playSom('/audios/inicioNome.mp3'); MostrarProximo(this); this.style.display='none'">
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
                 <i class="fa fa-play"></i> Iniciar Aula
             </button>
             <hr>
 
         </div>
-
 
 
 
@@ -719,95 +721,96 @@
 
 
 
+        <div class="topico pergunta-bloco w3-container w3-padding-24 ">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA 01</p>
+            <h4 class="fontePixel"><b>Quais são alguns dos principais desafios enfrentados pelos migrantes em busca de
+                    refúgio e asilo em países receptores?</b></h4>
 
-        <div class="topico w3-container w3-padding-16">
-            <p class="caixa">Escolha a alternativa correta:</p>
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="correto" class="radio-duvid">
+                    <label for="p1a" class="card-opcao">
+                        <span>a) Discriminação e xenofobia.</span>
+                    </label>
+                </div>
 
-            <h4>Quais são alguns dos principais desafios enfrentados pelos migrantes em busca de refúgio e asilo em
-                países
-                receptores?</h4>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="errado" class="radio-duvid">
+                    <label for="p1b" class="card-opcao">
+                        <span>b) Processos de integração eficientes.</span>
+                    </label>
+                </div>
 
-            <div id="questao1">
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="correto">
-                    <label>
-                        discriminação
-                        e xenofobia.
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao">
+                        <span>c) Acesso fácil a empregos e serviços de saúde.</span>
                     </label>
-                </p>
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
-                    <label>
-                        processos de integração eficientes.
-                    </label>
-                </p>
-                <p>
-                    <input class="w3-radio" type="radio" name="pergunta1" value="errado">
-                    <label>
-                        acesso
-                        fácil a empregos e serviços de saúde.
-                    </label>
-                </p>
+                </div>
             </div>
 
-
-
-            <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o imigrante enfrenta diversos preconceitos e dificuldades sociais, culturais e econômicas', '10')">
-                Confirmar Resposta
-            </button>
-
-            <p id="resp1" class="w3-center w3-padding"></p>
-            <div class="area">
-                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80px"
-                    height="80px" alt="globinho1">
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o imigrante enfrenta diversos preconceitos e dificuldades sociais, culturais e econômicas.', '10')">
+                    Confirmar Resposta
+                </button>
             </div>
-        </div>
 
-
-
-
-        <div class="topico">
-            <p class="caixa">Questão 02</p>
-            <h4>Como as políticas de imigração restritivas podem afetar negativamente os países receptores?</h4>
-            <div class="w3-padding">
-
-                <p><input class="w3-radio" type="radio" name="pergunta2" value="errado">
-                    <label>
-                        garantem a segurança e a estabilidade do país.
-                    </label>
-                </p>
-
-
-
-                <p><input class="w3-radio" type="radio" name="pergunta2" value="errado">
-
-                    <label>
-                        promovem a coesão social.
-                    </label>
-                </p>
-
-                <p><input class="w3-radio" type="radio" name="pergunta2" value="correto">
-                    <label>
-                        levam à falta de diversidade cultural e à escassez de mão de obra qualificada.
-                    </label>
-                </p>
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80">
             </div>
-            <button class="btnShow"
-                onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'leva à redução da competitividade, investimento em treinamento e dificuldade em preencher vagas', '10')">
-                Confirmar Resposta
-            </button>
-            <p id="resp2" class="w3-center w3-padding"></p>
-            <div class="area"><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none"
-                    width="80">
-            </div>
+
+            <button class="btnShow" style="display:none"
+                onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
             <hr>
         </div>
 
 
+        <div class="topico pergunta-bloco w3-container w3-padding-24 ">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA 02</p>
+            <h4 class="fontePixel"><b>Como as políticas de imigração restritivas podem afetar negativamente os países
+                    receptores?</b></h4>
 
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2a" value="errado" class="radio-duvid">
+                    <label for="p2a" class="card-opcao">
+                        <span>a) Garantem a segurança e a estabilidade do país.</span>
+                    </label>
+                </div>
 
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2b" value="errado" class="radio-duvid">
+                    <label for="p2b" class="card-opcao">
+                        <span>b) Promovem a coesão social.</span>
+                    </label>
+                </div>
 
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2c" value="correto" class="radio-duvid">
+                    <label for="p2c" class="card-opcao">
+                        <span>c) Levam à falta de diversidade cultural e à escassez de mão de obra qualificada.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'leva à redução da competitividade, investimento em treinamento e dificuldade em preencher vagas.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80">
+            </div>
+
+            <button class="btnShow" style="display:none"
+                onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
 
         <div class="topico">
 
@@ -903,7 +906,7 @@
         idGlobo: 'globinhorespFinal', 
         classe: '', 
         mensagem: 'o tema {TITULO} é fantástico! Agora vamos fazer as questões para fixar o conteúdo!',
-        pontos: 4
+        pontos: 40
     });
     
     MostrarProximo(this);
@@ -920,6 +923,7 @@
         </div>
 
 
+
         <div class="topico">
 
 
@@ -927,18 +931,38 @@
 
             <div class="w3-container">
 
-                <div id="id01" class="w3-modal" style="z-index: 2000;">
+                <div id="id01" class="w3-modal" style="z-index: 999;">
                     <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
-                        <div class="w3-container w3-center w3-padding-32">
-                            <span onclick="fecharModal('id01')" class="w3-button w3-display-topright">&times;</span>
+                        <div class="w3-container w3-padding-32 w3-center">
 
-                            <div class="nota w3-xlarge w3-padding-16 fontePixel"></div>
+                            <div class="w3-margin-bottom pulse">
+                                <img id="modal-img-globinho" src="../../../fotoIndex/globinhoPe.png" width="80"
+                                    height="80">
+                            </div>
 
-                            <img src="../../../fotoIndex/globinhoPe.png" width="100" class="w3-animate-bottom">
-                            <br><br>
-                            <button class="w3-button w3-green w3-round" onclick="fecharModal('id01');">
-                                Fechar
-                            </button>
+                            <h2 id="modal-titulo" class="fontePixel"></h2>
+
+                            <div class="w3-padding-16">
+                                <p class="w3-xlarge">Você conquistou <br>
+                                    <span class="w3-text-green w3-xxlarge"><b id="modal-nota-valor">0.0</b></span> <br>
+                                    globinhos nesta aula!
+                                </p>
+                                <p id="modal-frase-feedback" class="w3-text-grey" style="font-style: italic;"></p>
+                            </div>
+
+                            <div class="w3-container w3-padding-16">
+                                <button onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-green w3-round-large w3-block w3-margin-bottom w3-padding-large"
+                                    style="font-weight: bold;">
+                                    🎯 CONTINUAR ESTUDANDO
+                                </button>
+
+                                <button onclick="window.location.href='/home.html'"
+                                    class="w3-button w3-light-grey w3-round-large w3-block w3-padding-large"
+                                    style="font-weight: bold;">
+                                    🏠 VOLTAR PARA A HOME
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -951,7 +975,7 @@
 
 
 
-     <div class="bibliografias w3-content w3-padding-64" style="max-width:700px; display:none;">
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px; display:none;">
             <hr>
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
 
@@ -1078,7 +1102,7 @@
     <div id="footer-placeholder"></div>
 
 
-   
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>

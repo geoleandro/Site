@@ -21,7 +21,7 @@
 
 	<style>
 		.topico {
-			display: block;
+			display: none;
 		}
 
 		.topico:nth-child(1),
@@ -51,6 +51,13 @@
 			-o-transform: rotate(-3deg);
 			-ms-transform: rotate(-3deg);
 		}
+
+		body {
+			max-width: 800px;
+			overflow-x: hidden;
+			position: relative;
+			font-family: "Roboto", "Verdana", "Tahoma", "Arial", sans-serif;
+		}
 	</style>
 
 
@@ -66,9 +73,9 @@
 			<!-- Navigation (Stays on Top) -->
 			<div class="w3-top w3-bar w3-black  larguraBar ">
 				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-				<span  class="w3-bar-item  margemTop" id="notaFixa"></span>
-				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-						alt="tp3Foto4" width="32" height="32"></span>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
 			</div>
 		</div>
 
@@ -373,7 +380,7 @@
 
 
 			<div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""></div>
-			
+
 
 
 			<p id="resp1a"></p>
@@ -546,13 +553,15 @@
 
 		<form id="calcFuso">
 			<p>Digite o nome da cidade: </p>
-			<div class="w3-margin"><input class="input" id="f1b" type="text" name="f1b" onfocus="this.value=''" value="Roma"></div>
+			<div class="w3-margin"><input class="input" id="f1b" type="text" name="f1b" onfocus="this.value=''"
+					value="Roma"></div>
 
 
 			<p id="resp1b"></p>
 
 			<p>Digite o fuso horário. Ex: 3 ou -3 ?</p>
-			<div class="w3-margin"><input class="input" id="f1c" type="text" name="f1c" onfocus="this.value=''" value="1"></div>
+			<div class="w3-margin"><input class="input" id="f1c" type="text" name="f1c" onfocus="this.value=''"
+					value="1"></div>
 
 		</form>
 
@@ -561,7 +570,7 @@
 
 		<button class="buttonB" id="btnShowq1c"
 			onclick="MostrarProximo(this); calcTime('f1b','f1c','resp1c')">Calcular</button>
-			<br><br>
+		<br><br>
 
 		<hr>
 
@@ -615,7 +624,8 @@
 		<p>Vimos que o computador é capaz de realizar esse cálculo de forma muita rápida e eficaz.
 			Entretanto, resta saber como ele faz isso.</p>
 
-		<h4 class="paragrafo divCaixa1 w3-margin"> Numa cidade A, localizada no fuso de 60º Oeste, são 14h. Que horas serão
+		<h4 class="paragrafo divCaixa1 w3-margin"> Numa cidade A, localizada no fuso de 60º Oeste, são 14h. Que horas
+			serão
 			numa cidade B, localizada no fuso de 30º Leste? </h4>
 
 		<form id="quiz3" name="quiz3">
@@ -710,7 +720,8 @@
 			9GMT. A que horas o amigo atenderá a ligação? </p>
 
 
-		<h4 class="paragrafo divCaixa1 w3-margin"><strong>1º passo: identificar os fusos.</strong> Nesse caso, eles foram
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>1º passo: identificar os fusos.</strong> Nesse caso, eles
+			foram
 			fornecidos no
 			enunciado da questão, mas nem sempre isso acontece, como veremos no próximo exemplo. Assim, </h4>
 
@@ -720,7 +731,8 @@
 		<p>Fuso de destino: +9GMT </p>
 
 
-		<h4 class="paragrafo divCaixa1 w3-margin"><strong>2º passo: calcular a diferença entre os fusos.</strong> Basta subtrair o
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>2º passo: calcular a diferença entre os fusos.</strong> Basta
+			subtrair o
 			fuso
 			da cidade de destino pelo da cidade de origem. Caso eles se encontrem em hemisférios diferentes, terão
 			sinais diferentes e, inevitavelmente, serão somados. </h4>
@@ -734,7 +746,8 @@
 		</p>
 
 
-		<h4 class="paragrafo divCaixa1 w3-margin"><strong>3º passo: verificar se os fusos serão somados ou subtraídos ao horário de
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>3º passo: verificar se os fusos serão somados ou subtraídos ao
+				horário de
 				origem.</strong> Sabemos que a ligação foi realizada às 9h da manhã e que a diferença das localidades é
 			de 12
 			horas. Mas devemos somar ou subtrair esse horário em relação ao original? Para responder a essa pergunta e
@@ -774,7 +787,8 @@
 			visitar a sua família, a 45º de longitude a Oeste de Greenwich. Saindo da Itália às 15h e com um tempo de
 			viagem de 11h, ele chegou ao seu destino em que horário? </p>
 
-		<h4 class="paragrafo divCaixa1 w3-margin"> <strong>1º passo: identificar os fusos. </strong>Aqui, os fusos não estão
+		<h4 class="paragrafo divCaixa1 w3-margin"> <strong>1º passo: identificar os fusos. </strong>Aqui, os fusos não
+			estão
 			expressos
 			no enunciado, então teremos que calculá-los. Como afirmamos no início do texto, cada fuso possui 15º de
 			longitude. Dessa forma, para transformar as longitudes em fusos, basta dividi-las por 15.</h4>
@@ -783,7 +797,8 @@
 
 		<p>Cidade de destino: -45º ÷ 15 = -3GMT </p>
 
-		<h4 class="paragrafo divCaixa1 w3-margin"><strong>2º passo: calcular a diferença entre os fusos.</strong> Agora basta
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>2º passo: calcular a diferença entre os fusos.</strong> Agora
+			basta
 			repetir o
 			mesmo procedimento do exemplo 01, diminuindo o fuso de destino pelo fuso de origem. </h4>
 
@@ -791,7 +806,8 @@
 
 		<p>Portanto, a diferença entre o local de origem e o local de destino é de 4 horas. </p>
 
-		<h4 class="paragrafo divCaixa1 w3-margin"><strong>3º passo: verificar se somamos ou diminuímos os fusos.</strong> Como José
+		<h4 class="paragrafo divCaixa1 w3-margin"><strong>3º passo: verificar se somamos ou diminuímos os
+				fusos.</strong> Como José
 			Carlos está se deslocando do Leste em direção ao Oeste, então devemos diminuir os fusos em relação ao
 			horário de origem. No entanto, não podemos nos esquecer de somar o tempo de viagem, que é de 11 horas.
 			Assim, </h4>
@@ -813,7 +829,8 @@
 
 		<p class="paragrafo caixa"> Teste seu conhecimento</p>
 
-		<h4 class="paragrafo divCaixa1 w3-margin"> Numa cidade A, localizada no fuso 120º Oeste, são 21h. Que horas serão na
+		<h4 class="paragrafo divCaixa1 w3-margin"> Numa cidade A, localizada no fuso 120º Oeste, são 21h. Que horas
+			serão na
 			localidade B, situada a 60º Leste? </h4>
 
 		<form id="quiz4" name="quiz4">
@@ -866,17 +883,17 @@
 		<button class="desativar3 p4 w3-padding w3-margin"
 			onclick=" MostrarProximo(this);RetirarPontos('resp3a','globinho15', 'desativar3','1');this.style.backgroundColor='tomato'">a)
 			20 horas e 9 horas.</button>
-		
+
 
 		<button class="desativar3 p4 w3-padding w3-margin"
 			onclick=" MostrarProximo(this);RetirarPontos('resp3a','globinho15', 'desativar3','1');this.style.backgroundColor='tomato'">b)
 			9 horas e 21 horas.</button>
-	
+
 
 		<button class="desativar3 p4 w3-padding w3-margin"
 			onclick="MostrarProximo(this);MostrarFrase('resp3a','globinho15', 'desativar3', 'Já está pegando o jeito!', '1'); this.style.backgroundColor='lightgreen'">
 			c) 9 horas e 20 horas.</button>
-	
+
 
 		<p id="resp3a"></p>
 
@@ -1637,16 +1654,16 @@
 
 	</script>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-	
-			gtag('config', 'G-DPX55DSFZ0');
-	
-		</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
 
 
 

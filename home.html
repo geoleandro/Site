@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="/estilos/index-estilo.css">
+    <link rel="stylesheet" href="/estilos/trilha-niveis.css">
 
 
 
@@ -27,12 +28,18 @@
 
 
 
-
     <script src="/js/duvid-core.js" defer></script>
+
+    <script src="/js/duvid-db.js" defer></script>
+
+    <script src="/js/duvid-audio.js" defer></script>
+    <script src="/js/duvid-ui.js" defer></script>
 
     <script src="/js/aulas-geral.js" defer></script>
     <script src="/js/carregar.js" defer></script>
     <script src="/js/abrirmenu.js" defer></script>
+
+    <script src="/js/duvid-api-home" defer></script>
 
 
 
@@ -55,8 +62,17 @@
 
     <main id="conteudo-principal">
 
+
+
         <!-- <section id="slideshow-container" class="slideshow-container w3-display-container w3-center">
     </section> -->
+
+
+
+
+
+
+
 
 
 
@@ -74,15 +90,35 @@
 
 
 
-
             <div class="NomeHome w3-container w3-white w3-card-2 w3-round-large w3-margin-top w3-padding-16"
                 id="container-login">
+
+
 
 
 
                 <div id="loading-painel" class="w3-center w3-padding-16">
                     <i class="fa fa-spinner w3-spin w3-text-green w3-xlarge"></i>
                     <p class="w3-small w3-opacity">Carregando seu progresso...</p>
+                </div>
+
+                <!-- Trilha de níveis -->
+                <div class="trilha-container-wrapper w3-center">
+                    <p id="frase-motivacional-trilha" class="w3-small w3-text-grey"
+                        style="margin-bottom: 10px; font-weight: bold;">
+                        Carregando sua jornada...
+                    </p>
+                </div>
+
+                <div class="trilha-scroll-area">
+                    <div class="trilha-conquistas-container">
+                        <div id="trilha-niveis" class="trilha-wrapper">
+                            <div class="linha-trilha-fundo"></div>
+                            <div id="linha-trilha-progresso" class="linha-trilha-ativa"></div>
+                            <div id="icones-trilha-placeholder" class="icones-wrapper">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -96,11 +132,14 @@
                         <b>COMEÇAR JORNADA</b>
                     </button>
                 </div>
+
+
                 <div id="display-identificado" style="display:none;" class="w3-container w3-padding-16">
                     <div class="w3-row" style="display: flex; align-items: center; justify-content: space-between;">
                         <div class="w3-left-align">
                             <h4 class="w3-margin-0">
-                               <strong> <span id="lvl-tag" class="w3-tag w3-amber w3-round-large w3-small">Level 1</span></strong>
+                                <strong> <span id="lvl-tag" class="w3-tag w3-amber w3-round-large w3-small">Level
+                                        1</span></strong>
                                 Olá, <b class="w3-text-green" id="nome-aluno-texto"></b>
                                 <button onclick="prepararTrocaNome()"
                                     class="w3-button w3-tiny w3-round-xlarge w3-light-grey">
@@ -133,70 +172,62 @@
                     </div>
                 </div>
 
+                <!-- Blocos dos resumos gerais -->
+                <div id="resumo-geral" class="w3-row-padding w3-margin-top" style="display:none;">
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                            <div id="conquista-1ano" class="w3-display-topright w3-padding" style="display: none;">
+                                <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
+                            </div>
+
+                            <h6 class="w3-text-teal"><b>1º Ano</b></h6>
+                            <div class="w3-light-grey w3-round-xlarge w3-tiny">
+                                <div id="bar-1ano" class="w3-container w3-green w3-round-xlarge"
+                                    style="width:0%; height:10px;"></div>
+                            </div>
+                            <p class="w3-tiny w3-margin-top"><span id="txt-1ano">0/0</span> aulas feitas</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                            <div id="conquista-2ano" class="w3-display-topright w3-padding" style="display: none;">
+                                <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
+                            </div>
+
+                            <h6 class="w3-text-teal"><b>2º Ano</b></h6>
+                            <div class="w3-light-grey w3-round-xlarge w3-tiny">
+                                <div id="bar-2ano" class="w3-container w3-blue w3-round-xlarge"
+                                    style="width:0%; height:10px;"></div>
+                            </div>
+                            <p class="w3-tiny w3-margin-top"><span id="txt-2ano">0/0</span> aulas feitas</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                            <div id="conquista-3ano" class="w3-display-topright w3-padding" style="display: none;">
+                                <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
+                            </div>
+
+                            <h6 class="w3-text-teal"><b>3º Ano</b></h6>
+                            <div class="w3-light-grey w3-round-xlarge w3-tiny">
+                                <div id="bar-3ano" class="w3-container w3-orange w3-round-xlarge"
+                                    style="width:0%; height:10px;"></div>
+                            </div>
+                            <p class="w3-tiny w3-margin-top"><span id="txt-3ano">0/0</span> aulas feitas</p>
+                        </div>
+                    </div>
+                </div>
 
 
             </div>
-
-
-
-
-
-            <div class="w3-margin-bottom"></div>
-
-            <!-- Blocos dos resumos gerais -->
-            <div id="resumo-geral" class="w3-row-padding w3-margin-top" style="display:none;">
-                <div class="w3-third w3-margin-bottom">
-                    <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
-                        <div id="conquista-1ano" class="w3-display-topright w3-padding" style="display: none;">
-                            <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
-                        </div>
-
-                        <h6 class="w3-text-teal"><b>1º Ano</b></h6>
-                        <div class="w3-light-grey w3-round-xlarge w3-tiny">
-                            <div id="bar-1ano" class="w3-container w3-green w3-round-xlarge"
-                                style="width:0%; height:10px;"></div>
-                        </div>
-                        <p class="w3-tiny w3-margin-top"><span id="txt-1ano">0/0</span> aulas feitas</p>
-                    </div>
-                </div>
-
-                <div class="w3-third w3-margin-bottom">
-                    <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
-                        <div id="conquista-2ano" class="w3-display-topright w3-padding" style="display: none;">
-                            <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
-                        </div>
-
-                        <h6 class="w3-text-teal"><b>2º Ano</b></h6>
-                        <div class="w3-light-grey w3-round-xlarge w3-tiny">
-                            <div id="bar-2ano" class="w3-container w3-blue w3-round-xlarge"
-                                style="width:0%; height:10px;"></div>
-                        </div>
-                        <p class="w3-tiny w3-margin-top"><span id="txt-2ano">0/0</span> aulas feitas</p>
-                    </div>
-                </div>
-
-                <div class="w3-third w3-margin-bottom">
-                    <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
-                        <div id="conquista-3ano" class="w3-display-topright w3-padding" style="display: none;">
-                            <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
-                        </div>
-
-                        <h6 class="w3-text-teal"><b>3º Ano</b></h6>
-                        <div class="w3-light-grey w3-round-xlarge w3-tiny">
-                            <div id="bar-3ano" class="w3-container w3-orange w3-round-xlarge"
-                                style="width:0%; height:10px;"></div>
-                        </div>
-                        <p class="w3-tiny w3-margin-top"><span id="txt-3ano">0/0</span> aulas feitas</p>
-                    </div>
-                </div>
-            </div>
-
-
 
 
 
             <!-- termino da div -->
         </div>
+
 
 
 
@@ -230,7 +261,7 @@
                             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">2º ANO</h3>
                             <div class="w3-padding">
                                 <a href="/Duvid2Ano.html">
-                                    <img src="fotoIndex/imagensCapa/capa2anob.png" alt="Capa 2º Ano"
+                                    <img src="fotoIndex/imagensCapa/capa2ano.png" alt="Capa 2º Ano"
                                         class="w3-round w3-hover-opacity w3-margin-bottom"
                                         style="width:100%; max-width: 250px;">
                                 </a>
@@ -249,7 +280,7 @@
                             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">3º ANO</h3>
                             <div class="w3-padding">
                                 <a href="/Duvid3Ano.html">
-                                    <img src="fotoIndex/imagensCapa/capa3anob.png" alt="Capa 3º Ano"
+                                    <img src="fotoIndex/imagensCapa/capa3ano.png" alt="Capa 3º Ano"
                                         class="w3-round w3-hover-opacity w3-margin-bottom"
                                         style="width:100%; max-width: 250px;">
                                 </a>
@@ -264,7 +295,11 @@
 
                 </div>
             </div>
+
+
         </div>
+
+
 
         <!-- Quadro de exploração do site -->
         <div class="w3-container w3-padding-64 w3-light-grey">
@@ -275,7 +310,7 @@
                     <div class="w3-col l4 m6 w3-margin-bottom">
                         <a href="paginas/sobre.html"
                             class="w3-button w3-block w3-white w3-card w3-hover-green w3-padding-24 w3-round-large">
-                            <i class="fa-solid fa-circle-info w3-xxlarge w3-text-green"></i><br>
+                            <img src="/fotoIndex/icones/projeto-icone.png" alt="Projeto" class="img-pixel-icon"><br>
                             <span class="w3-large">O Projeto</span>
                         </a>
                     </div>
@@ -283,7 +318,7 @@
                     <div class="w3-col l4 m6 w3-margin-bottom">
                         <a href="https://www.youtube.com/@duvidgeografia" target="_blank"
                             class="w3-button w3-block w3-white w3-card w3-hover-red w3-padding-24 w3-round-large">
-                            <i class="fab fa-youtube w3-xxlarge w3-text-red"></i><br>
+                            <img src="/fotoIndex/icones/youtube-icone.png" alt="YouTube" class="img-pixel-icon"><br>
                             <span class="w3-large">YouTube</span>
                         </a>
                     </div>
@@ -291,7 +326,9 @@
                     <div class="w3-col l4 m6 w3-margin-bottom">
                         <a href="blog/blog.html"
                             class="w3-button w3-block w3-white w3-card w3-hover-blue w3-padding-24 w3-round-large">
-                            <i class="fa-solid fa-newspaper w3-xxlarge w3-text-blue"></i><br>
+                            <img src="/fotoIndex/icones/duvidblog-icone.png"
+                                alt="Duvid Blog icon with stylized text and design elements representing the blog section of the platform"
+                                class="img-pixel-icon"><br>
                             <span class="w3-large">Duvid Blog</span>
                         </a>
                     </div>
@@ -299,7 +336,9 @@
                     <div class="w3-col l4 m6 w3-margin-bottom">
                         <a href="simulados/capasimuladogeral.html"
                             class="w3-button w3-block w3-white w3-card w3-hover-pink w3-padding-24 w3-round-large">
-                            <i class="fa-solid fa-pen-to-square w3-xxlarge w3-text-pink"></i><br>
+                            <img src="/fotoIndex/icones/simulado-icone.png"
+                                alt="Simulados icon with clipboard and checkmark symbol on light background"
+                                class="img-pixel-icon"><br>
                             <span class="w3-large">Simulados</span>
                         </a>
                     </div>
@@ -307,7 +346,8 @@
                     <div class="w3-col l4 m6 w3-margin-bottom">
                         <a href="paginas/livrosgeografia.html"
                             class="w3-button w3-block w3-white w3-card w3-hover-orange w3-padding-24 w3-round-large">
-                            <i class="fa-solid fa-book-open w3-xxlarge w3-text-orange"></i><br>
+                            <img src="/fotoIndex/icones/biblioteca-icone.png" alt="Biblioteca"
+                                class="img-pixel-icon"><br>
                             <span class="w3-large">Biblioteca</span>
                         </a>
                     </div>
@@ -315,6 +355,65 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="w3-container w3-padding-64 w3-light-grey">
+            <div class="w3-content" style="max-width:1100px">
+                <h2 class="w3-center w3-margin-bottom"><b>Monitor Global Duvid</b></h2>
+                <div class="w3-row-padding">
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center  card-widge">
+                    <img src="/fotoIndex/icones/populacao-icone.png" alt="População" class="img-widget-hero">
+                    <span class="w3-large w3-text-green"><b>Mundo Pulsa</b></span>
+                    <div id="populacao-live" class="w3-xxlarge w3-text-dark-grey" style="font-weight: bold; letter-spacing: -1px;">
+                        8.254.130.400
+                    </div>
+                    <p class="w3-tiny w3-opacity">Estimativa Populacional</p>
+                </div>
+            </div>
+
+           
+
+            <div class="w3-col l4 m6 w3-margin-bottom">
+                <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widge">
+                    <img src="/fotoIndex/icones/dolar-icone.png" alt="Economia" class="img-widget-hero">
+                    <span class="w3-large w3-text-orange"><b>Dólar Comercial</b></span>
+                    <div class="w3-xxlarge w3-text-dark-grey"><b id="dolar-valor">R$ --</b></div>
+                    <p class="w3-tiny w3-opacity">Cotação em tempo real</p>
+                </div>
+            </div>
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
+                            <img src="/fotoIndex/icones/clima-icone.png" alt="Clima" class="img-widget-hero"><br>
+
+                            <div class="w3-container">
+                                <span class="w3-large w3-text-blue">
+                                    <b id="cidade-nome">Poços de Caldas</b>
+                                    <i class="fa fa-search w3-small w3-opacity w3-hover-text-blue"
+                                        style="cursor:pointer" onclick="mudarCidadeClima()"></i>
+                                </span><br>
+                                <div class="w3-xlarge"><b id="temp-atual">--°C</b></div>
+                                <span id="clima-desc" class="w3-small w3-opacity">Carregando...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Painel de citações -->
         <div class="w3-container w3-padding-64">
@@ -348,7 +447,7 @@
     </main>
 
 
-    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large"
+    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large w3-right"
         title="Voltar ao topo">
         <i class="fa fa-arrow-up"></i>
     </button>

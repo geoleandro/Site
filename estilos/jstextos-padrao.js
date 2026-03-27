@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof verificarStatusAula === "function") {
             verificarStatusAula(id);
         }
-        
+
         if (typeof injetarMetadadosAula === "function") {
             injetarMetadadosAula();
         }
@@ -35,7 +35,7 @@ let nota = 0;
 const fontes = ["Tahoma", "Verdana", "Arial"];
 let tituloAulaGlobal = ""; // Variável que guardará o nome da aula
 // ADICIONE ESTA LINHA AQUI:
-let nomeEstudante = localStorage.getItem("duvid_nome") || "Estudante";
+let nomeEstudante = (typeof DuvidDB !== "undefined") ? DuvidDB.getNome() : "Estudante";
 
 
 
@@ -55,84 +55,69 @@ function MostrarProximo(botao) {
     }
 }
 
-// --- MOTOR DE IDENTIFICAÇÃO ---
-// function NomeAlunos(idResp, idInput) {
-//     const input = document.getElementById(idInput);
-//     const nome = input.value.trim();
 
-//     // 1. Lógica Centralizada no Core
-//     if (!DuvidDB.salvarNome(nome)) {
-//         input.style.backgroundColor = "#EF5959";
-//         playSom('erro'); 
-//         return;
-//     }
-
-//     // 2. Visual: Apenas o que muda na tela
-//     document.getElementById(idResp).innerHTML = `Bem-vindo(a), <b>${nome}</b>!`;
-
-//     // Esconde os elementos de entrada (você pode criar uma classe CSS .esconder { display: none; })
-//     ["caixaNomeAluno", idInput, "buttonConfira"].forEach(id => {
-//         const el = document.getElementById(id);
-//         if (el) el.style.display = "none";
-//     });
-
-//     // 3. Integração com outros componentes
-//     if (typeof exibirSaudacao === 'function') exibirSaudacao(nome);
-
-//     const nomeNoPainel = document.querySelector('#painel-usuario b');
-//     if (nomeNoPainel) nomeNoPainel.innerText = nome;
-// }
-// Mostra a resposta correta. Deve ser colocado o nome para ser exibido na tela (resp), o id do globo, a desativação da questão e a mensagem
 
 function ProcessarResposta(selecionado, config) {
     let { correto, idFrase, idGlobo, nomeGrupo, mensagem, pontos } = config;
+    const pts = parseFloat(pontos) || 10.0;
 
-    // Se a mensagem contiver {TITULO}, substitui pela nossa variável global
+    // 1. LÓGICA DE TEXTO
     if (mensagem.includes("{TITULO}")) {
         mensagem = mensagem.replace("{TITULO}", tituloAulaGlobal || "este tema");
     }
 
-    // 1. Pontuação e Som
-    // 1. Som e Efeitos via CORE
-    if (correto) {
-        playSom('acerto');
-        dispararComemoracao();
-        DuvidDB.addGlobinhos(parseFloat(pontos) || 10.0); // Só salva no banco global se acertar
-        feedbackVisualAcerto();
-    } else {
-        playSom('erro'); // Toca o som de erro (aquele random que configuramos)
-        // Não chamamos DuvidDB.addGlobinhos aqui para não inflar o saldo global com erros
+    // 2. O GRANDE GATILHO (Substitui todo aquele bloco de IFs)
+    executarGatilhoResultado(correto, pts);
+
+    // 3. PONTUAÇÃO INTERNA (Para o modal final da aula)
+    nota += correto ? pts : 2.0;
+
+    // 4. INTERFACE (Funções que já limpamos antes)
+    estilizarGrupoRadios(nomeGrupo, selecionado, correto);
+    exibirFeedbackQuestao(idFrase, idGlobo, mensagem, correto);
+}
+
+
+function exibirFeedbackQuestao(idFrase, idGlobo, mensagem, correto) {
+    const globo = document.getElementById(idGlobo);
+    const frase = document.getElementById(idFrase);
+    const nome = (typeof DuvidDB !== "undefined") ? DuvidDB.getNome() : "Estudante";
+
+    // 1. O Globinho (Lógica de exibição e cor)
+    if (globo) {
+        globo.style.display = "block";
+        globo.style.filter = correto ? "none" : "grayscale(100%)";
+        // Se acertou, faz o globinho da questão também dar um pulinho
+        if (correto) globo.classList.add('pulo-elastico');
     }
 
-    // A variável 'nota' interna do script pode continuar para o cálculo do modal final
-    nota += correto ? (parseFloat(pontos) || 10.0) : 2.0;
+    // 2. A Frase (Montagem do texto)
+    if (frase) {
+        frase.innerHTML = `<b>${nome}</b>, ${mensagem}`;
+        frase.classList.add('w3-animate-opacity'); // Efeito suave de aparecimento
+    }
+}
 
-    // 2. Feedback no grupo de opções (Radios)
-    document.getElementsByName(nomeGrupo).forEach(opt => {
-        opt.disabled = true;
+function estilizarGrupoRadios(nomeGrupo, selecionado, correto) {
+    const opcoes = document.getElementsByName(nomeGrupo);
+
+    opcoes.forEach(opt => {
+        opt.disabled = true; // Trava a questão
+
         if (opt.value === "correto") {
             aplicarEstiloResultado(opt, 'correto');
         } else if (opt === selecionado && !correto) {
             aplicarEstiloResultado(opt, 'errado');
         } else {
-            opt.style.opacity = "0.6";
-            opt.style.filter = "grayscale(0.6)";
+            // Deixa as outras opções "apagadinhas"
+            opt.style.opacity = "0.5";
+            opt.style.filter = "grayscale(1)";
         }
     });
-
-    // 3. Interface: Globo e Frase
-    const globo = document.getElementById(idGlobo);
-    if (globo) {
-        globo.style.display = "block";
-        globo.style.filter = correto ? "none" : "grayscale(100%)";
-    }
-
-    const frase = document.getElementById(idFrase);
-    if (frase) frase.innerHTML = `<b>${nomeEstudante || 'Estudante'}</b>, ${correto ? mensagem : mensagem}`; // <--- FRASE DINÂMICA
-
-    atualizarInterface();
-
 }
+
+
+
 
 function aplicarEstiloResultado(el, tipo) {
     const cores = {
@@ -155,35 +140,17 @@ function aplicarEstiloResultado(el, tipo) {
 
 
 
-
-
 function validarRadio(btnConfirmar, nomeGrupo, idFrase, idGlobo, msg, pts) {
-    // Busca qual rádio do grupo está marcado
+    // 1. Busca a seleção
     const selecionado = Array.from(document.getElementsByName(nomeGrupo)).find(r => r.checked);
 
-    // --- VALIDAÇÃO DE OPÇÃO SELECIONADA ---
+    // 2. SE NÃO SELECIONOU: Chama o especialista do UI
     if (!selecionado) {
-        // A mágica acontece lá no Core agora!
-        if (typeof playSom === "function") {
-            playSom('erro');
-        }
-
-        // 2. Transforma o botão: Fica Amarelo + Tremedeira (Shake)
-        btnConfirmar.innerHTML = "⚠️ Escolha uma opção!";
-        btnConfirmar.classList.add('w3-amber', 'shake-erro');
-
-        // 3. O "Pulo do Gato": Vibração no celular (se o aluno estiver no Android/iOS)
-        if (navigator.vibrate) navigator.vibrate(100);
-
-        // 4. Reseta o botão após 1.5 segundos
-        setTimeout(() => {
-            btnConfirmar.innerHTML = "Confirmar Resposta";
-            btnConfirmar.classList.remove('w3-amber', 'shake-erro');
-        }, 1500);
-
-        return; // Mata a execução para não dar erro de "undefined" nas próximas linhas
+        avisoSelecaoPendente(btnConfirmar);
+        return;
     }
 
+    // 3. SE SELECIONOU: Processa a resposta normalmente
     const ehCorreto = selecionado.value === "correto";
 
     ProcessarResposta(selecionado, {
@@ -191,14 +158,15 @@ function validarRadio(btnConfirmar, nomeGrupo, idFrase, idGlobo, msg, pts) {
         idFrase: idFrase,
         idGlobo: idGlobo,
         nomeGrupo: nomeGrupo,
-        // MUDANÇA AQUI: Chamamos a função do Core sem aspas
         mensagem: ehCorreto ? getFraseSucesso() : msg,
         pontos: pts
     });
 
-    btnConfirmar.style.display = 'none'; // Esconde o botão após responder
+    // 4. Finalização visual
+    btnConfirmar.style.display = 'none';
     if (typeof MostrarProximo === "function") MostrarProximo(btnConfirmar);
 }
+
 
 
 function addProgressBar() {
@@ -220,195 +188,137 @@ function addProgressBar() {
     barra.value = novoValor;
     txtBarra.innerHTML = Math.round(novoValor) + "%";
 }
+
+
 function mostraCinza() {
-    // 1. IDENTIFICAÇÃO (Lógica de ID)
     const params = new URLSearchParams(window.location.search);
-    let aulaID = params.get('id');
-    // ... (sua lógica de captura de ID aqui) ...
+    const aulaID = params.get('id');
 
-    // --- MUDANÇAS VISUAIS OBRIGATÓRIAS (Acontecem SEMPRE) ---
-    desativarBotoes();   // Bloqueia cliques em rádios e botões de validar
-    desativarTextos();   // Aplica o cinza (exceto bibliografia e modal)
-    desativarImagens();  // Filtro PB nas imagens
-    mostraBiblio();      // REVELA a div .bibliografias (display: block)
-    mostrarNota();       // Abre o Modal com o feedback
+    // 1. MUDANÇAS VISUAIS (Executadas em um único ciclo)
+    this.aplicarEstadoFinalAula();
+    this.mostraBiblio();
+    this.mostrarNota();
 
-    // 2. LOGICA DE DADOS (Ponto e Save)
-    const jaConcluiu = localStorage.getItem(`concluido_texto_${aulaID}`) === "true";
+    // 2. LÓGICA DE DADOS
+    if (aulaID && typeof DuvidDB !== "undefined") {
+        // SÊNIOR: Perguntamos ao DB em vez de mexer no localStorage
+        const jaConcluiu = DuvidDB.estaConcluido(aulaID, TIPO_CONCLUSAO.TEXTO);
 
-    if (jaConcluiu) {
-        console.log("Modo Revisão: Interface bloqueada para consulta.");
-        atualizarInterface();
-        return;
+        if (!jaConcluiu) {
+            DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.TEXTO);
+            DuvidDB.addGlobinhos(10);
+        }
     }
 
-    // 3. REGISTRO DE PRIMEIRA CONCLUSÃO
-    if (aulaID) {
-        DuvidDB.salvarConclusao(aulaID, 'texto');
-         DuvidDB.addGlobinhos(10);
-    }
-
-    atualizarInterface();
+    if (typeof atualizarInterface === "function") atualizarInterface();
 }
 
 
-function desativarBotoes() {
-    // Seleciona todos os botões de questões (classe .p4 ou .btnShow)
-    const botoesQuestoes = document.querySelectorAll('.p4, .btnShow');
+function aplicarEstadoFinalAula() {
+    // Selecionamos TUDO o que queremos "desativar" de uma vez só
+    const seletores = 'p, h1, h2, h3, h4, span, li, b, strong, i, a, label, img, button, input';
+    const elementos = document.querySelectorAll(seletores);
 
-    botoesQuestoes.forEach(btn => {
-        btn.disabled = true;
-        btn.style.transition = "0.8s"; // Transição suave ao travar
-        btn.style.opacity = "1";        // GARANTE que não suma!
-        btn.style.filter = "grayscale(0.7)"; // Feedback visual de 'trancado'
-        btn.style.cursor = "not-allowed";
+    elementos.forEach(el => {
+        // FILTRO DE EXCEÇÃO: Ignora Header, Modal e Bibliografia
+        if (el.closest('.bibliografias') || el.closest('#id01') || el.closest('#header-placeholder')) {
+            return; // Pula este elemento
+        }
+
+        // 1. Aplica a transição suave
+        el.style.transition = "all 3s ease";
+
+        // 2. Lógica por tipo de elemento
+        if (el.tagName === 'IMG') {
+            el.style.filter = "grayscale(100%)";
+            el.style.opacity = "0.5";
+        }
+        else if (el.tagName === 'BUTTON' || el.tagName === 'INPUT') {
+            el.disabled = true;
+            el.style.cursor = "not-allowed";
+            el.style.filter = "grayscale(0.8)";
+        }
+        else {
+            // Textos em geral
+            el.style.color = "#a0a0a0";
+        }
     });
-
-    // console.log("Lição finalizada e botões trancados.");
 }
 
-function desativarTextos() {
-    // 1. Selecionamos todos os tipos de texto e elementos clicáveis
-    var todosElementos = document.querySelectorAll('p, h1, h2, h3, h4, span, li, b, strong, i, a, label');
 
-    for (var i = 0; i < todosElementos.length; i++) {
-        let el = todosElementos[i];
 
-        // 2. FILTRO DE EXCEÇÃO: Ignora o que está na Bibliografia, no Modal e no Header
-        if (!el.closest('.bibliografias') &&
-            !el.closest('#id01') &&
-            !el.closest('.w3-modal') &&
-            !el.closest('#header-placeholder')) {
-
-            el.style.transition = "color 3s ease, opacity 3s ease";
-            el.style.color = "#a0a0a0"; // Cinza "desativado"
-        }
-        // 3. REFORÇO: Garante que o texto da bibliografia permaneça nítido
-        else if (el.closest('.bibliografias')) {
-            el.style.color = ""; // Volta para a cor padrão do CSS
-        }
-    }
-
-    
-}
 
 
 //Mostra a nota no final da aula
-// --- DENTRO DA FUNÇÃO mostrarNota ---
 function mostrarNota() {
     const notaThreshold = 6;
     const modal = document.getElementById('id01');
     if (!modal) return;
 
-    // 1. Definições de Sucesso
     const passou = nota >= notaThreshold;
     const notaFormatada = nota.toFixed(1);
 
-    // 2. Montando o HTML interno do Modal de forma BONITA e ESPAÇADA
-    const containerModal = modal.querySelector('.w3-modal-content');
+    // 1. ATUALIZAÇÃO DOS ELEMENTOS (Busca pelos IDs que criamos no HTML)
 
-    // Injetando o novo layout
-    containerModal.innerHTML = `
-        <div class="w3-container w3-padding-32 w3-center">
-            <div class="w3-margin-bottom pulse">
-                <img src="../../../fotoIndex/globinhoPe.png" width="80" height="80" 
-                     style="filter: ${passou ? 'none' : 'grayscale(100%)'};">
-            </div>
+    // Título
+    const titulo = document.getElementById('modal-titulo');
+    if (titulo) titulo.innerText = passou ? '🎉 PARABÉNS!' : '👍 VALEU O ESFORÇO!';
 
-            <h2 class="fontePixel">${passou ? '🎉 PARABÉNS!' : '👍 VALEU O ESFORÇO!'}</h2>
-            
-            <div class="w3-padding-16">
-                <p class="w3-xlarge">Você conquistou <br>
-                   <span class="w3-text-green w3-xxlarge"><b>${notaFormatada}</b></span> <br>
-                   globinhos nesta aula!
-                </p>
-                <p class="w3-text-grey" style="font-style: italic;">
-                    ${passou ? getFrasePainel() : 'Que tal revisar o conteúdo para melhorar sua pontuação?'}
-                </p>
-            </div>
+    // Valor da Nota
+    const notaDisplay = document.getElementById('modal-nota-valor');
+    if (notaDisplay) notaDisplay.innerText = notaFormatada;
 
-            <div class="w3-container w3-padding-24">
-                <div class="w3-center">
-                    <button onclick="document.getElementById('id01').style.display='none'" 
-                            class="w3-button w3-green w3-round-large w3-margin-bottom" 
-                            style="width: 85%; max-width: 300px; font-weight: bold; padding: 15px;">
-                        🎯 CONTINUAR ESTUDANDO
-                    </button>
-                </div>
+    // Frase Motivacional (Usa a função auxiliar que já criamos ou a getFrasePainel)
+    const frase = document.getElementById('modal-frase-feedback');
+    if (frase) {
+        frase.innerText = passou ? getFrasePainel() : 'Que tal revisar o conteúdo para melhorar sua pontuação?';
+    }
 
-                <div class="w3-center">
-                    <button onclick="window.location.href='/home.html'" 
-                            class="w3-button w3-light-grey w3-round-large" 
-                            style="width: 85%; max-width: 300px; font-weight: bold; padding: 12px;">
-                        🏠 VOLTAR PARA A HOME
-                    </button>
-                </div>
-            </div>
-        </div>
-    `;
+    // Imagem do Globinho (Filtro Cinza se não passar)
+    const imgGlobinho = document.getElementById('modal-img-globinho');
+    if (imgGlobinho) {
+        imgGlobinho.style.filter = passou ? 'none' : 'grayscale(100%)';
+    }
 
-    // 3. Efeitos de som e confete
+    // 2. DISPARO DE EFEITOS (O Gatilho Sênior que unificamos)
     if (typeof playSomFinal === "function") playSomFinal(passou);
-    if (passou && typeof dispararComemoracao === "function") dispararComemoracao();
 
-    // Exibe o modal
+    if (passou && typeof dispararComemoracao === "function") {
+        dispararComemoracao();
+        setTimeout(dispararComemoracao, 500);
+    }
+
+    // 3. EXIBIÇÃO
     modal.style.display = "block";
 
-    // Atualiza o saldo global se necessário
+    // 4. SINCRONIZAÇÃO GLOBAL
     if (typeof atualizarInterface === "function") atualizarInterface();
 }
 
-
-
 function mostraBiblio() {
-    var b = document.getElementsByClassName("bibliografias");
+    const bibliografias = document.querySelectorAll(".bibliografias");
 
-    for (var i = 0; i < b.length; i++) {
-        // 1. Torna visível
-        b[i].style.display = "block";
+    // 1. Processamento Moderno (Iteração Única)
+    bibliografias.forEach(bib => {
+        bib.style.display = "block";
+        bib.style.color = "black"; // Garante legibilidade pós-cinza
+        bib.classList.add("w3-animate-opacity");
+    });
 
-        // 2. Adiciona a animação de fade-in do W3.CSS
-        b[i].classList.add("w3-animate-opacity");
-
-        // 3. Garante que a cor do texto na bibliografia seja legível (preto/padrão)
-        // Isso anula qualquer efeito do desativarTextos que tenha "vazado"
-        b[i].style.color = "black";
+    // 2. Scroll Inteligente (Usando o Maestro de UI)
+    if (bibliografias.length > 0) {
+        // Aguarda a transição do modal antes de rolar para as referências
+        setTimeout(() => {
+            if (typeof DuvidUI !== "undefined") {
+                // Se você já moveu a função de scroll para o DuvidUI:
+                DuvidUI.scrollParaElemento(bibliografias[0].id || 'final-da-aula');
+            } else {
+                // Fallback seguro caso ainda não tenha movido
+                bibliografias[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 800);
     }
-
-    // 4. Scroll suave para a primeira bibliografia encontrada
-    if (b.length > 0) {
-        setTimeout(function () {
-            b[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 800); // Aguarda um pouco a animação do modal/cinza antes de rolar
-    }
-
-  
-    
 }
-
-
-
-
-function desativarImagens() {
-    // Seleciona imagens de tópicos, quadrinhos e áreas de conteúdo
-    var imagensAula = document.querySelectorAll('.topico img, .w3-row-padding img, main img');
-
-    for (var i = 0; i < imagensAula.length; i++) {
-        let img = imagensAula[i];
-
-        // EXCEÇÃO: Não desativa imagens dentro do Modal ou da Bibliografia
-        if (!img.closest('#id01') && !img.closest('.bibliografias')) {
-            img.style.transition = "filter 3s ease, opacity 3s ease";
-            img.style.filter = "grayscale(100%)";
-            img.style.opacity = "0.5";
-        }
-    }
-  
-    
-}
-
-
-
 
 
 async function injetarMetadadosAula() {

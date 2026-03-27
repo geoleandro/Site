@@ -14,7 +14,16 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+
+
+
+
   <script src="/js/duvid-core.js" defer></script>
+  <script src="/js/duvid-db.js" defer></script>
+
+  <script src="/js/duvid-audio.js" defer></script>
+  <script src="/js/duvid-ui.js" defer></script>
+
   <script src="/js/carregar.js" defer></script>
   <script src="/js/aulas-geral.js" defer></script>
   <script src="/js/abrirmenu.js" defer></script>
@@ -73,46 +82,46 @@
   </main>
 
 
-  
-    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-pale-green w3-padding w3-round-large w3-right"
-        title="Voltar ao topo">
-        <i class="fa fa-arrow-up"></i>
-    </button>
+
+  <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-pale-green w3-padding w3-round-large w3-right"
+    title="Voltar ao topo">
+    <i class="fa fa-arrow-up"></i>
+  </button>
 
   <div id="footer-placeholder"></div>
 
 
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-DPX55DSFZ0');
+    gtag('config', 'G-DPX55DSFZ0');
 
-    </script>
- <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            const nomeArquivo = window.location.pathname;
-            const anoPagina = nomeArquivo.match(/\d+/) ? nomeArquivo.match(/\d+/)[0] : "1";
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const nomeArquivo = window.location.pathname;
+      const anoPagina = nomeArquivo.match(/\d+/) ? nomeArquivo.match(/\d+/)[0] : "1";
 
-            // Desenha os cards das aulas na tela
-            if (typeof carregarAulas === "function") {
-                await carregarAulas(anoPagina);
-            }
+      // Desenha os cards das aulas na tela
+      if (typeof carregarAulas === "function") {
+        await carregarAulas(anoPagina);
+      }
 
-            // Tenta injetar título (caso a página de listagem também tenha um título dinâmico)
-            if (typeof injetarMetadadosAula === "function") {
-                await injetarMetadadosAula();
-            }
+      // Tenta injetar título (caso a página de listagem também tenha um título dinâmico)
+      if (typeof injetarMetadadosAula === "function") {
+        await injetarMetadadosAula();
+      }
 
-            // Sincroniza o nome do aluno que pode ter sido trocado
-            if (typeof sincronizarNomeGlobal === "function") {
-                sincronizarNomeGlobal();
-            }
-        });
-    </script>
+      // Sincroniza o nome do aluno que pode ter sido trocado
+      if (typeof sincronizarNomeGlobal === "function") {
+        sincronizarNomeGlobal();
+      }
+    });
+  </script>
 
 
 </body>

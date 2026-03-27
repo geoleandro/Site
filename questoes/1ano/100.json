@@ -1,0 +1,21 @@
+[
+  {
+    "id": 101,
+    "ano": "1º ANO - INTRODUÇÃO",
+    "pergunta": "Qual é o principal objeto de estudo da Geografia?",
+    "texto_apoio": "A Geografia é uma ciência que busca compreender as modificações feitas pelo homem no meio em que vive.",
+    "fonte_apoio": "Manual do Duvid 2026",
+    "imagem_apoio": "https://www.w3schools.com/w3images/map.jpg",
+    "alternativas": [
+      "O estudo exclusivo das rochas e minerais.",
+      "O Espaço Geográfico e as relações entre sociedade e natureza.",
+      "Apenas a memorização de nomes de capitais e rios.",
+      "O movimento dos astros no sistema solar."
+    ],
+    "correta": 1,
+    "ajuda": {
+      "texto": "Pense na interação entre as cidades, as plantações e o meio ambiente natural."
+    },
+    "comentario": "Parabéns! O **Espaço Geográfico** é o conceito central, pois engloba tanto a natureza quanto as transformações humanas (espaço humanizado)."
+  }
+]

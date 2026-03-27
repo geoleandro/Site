@@ -2,102 +2,83 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:image" content="artigo11f01.jpg">
+    <meta name="description" id="meta-description" content="Leia mais no Duvid Blog">
+    <meta property="og:title" id="og-title" content="Duvid Blog">
+    <meta property="og:description" id="og-description" content="Artigo de Geografia e educação.">
+    <meta property="og:image" id="og-image" content="/fotoIndex/marcaDuvid.png">
+    <meta property="og:type" content="article">
 
     <meta name="google-adsense-account" content="ca-pub-5408157966429216">
 
-    <link rel="stylesheet" href="../../blog-estilo.css">
 
+    <link rel="stylesheet" href="/estilos/index-estilo.css">
+    <link rel="stylesheet" href="/blog/blog-estilo.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <script src="../../scripts-blog.js" defer></script>
+    <script src="/blog/scripts-blog.js" defer></script>
+    <script src="/js/carregar.js" defer></script>
+    <script src="/js/abrirmenu.js" defer></script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
-    <title></title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
+    <title id="aba-titulo">Duvid Blog</title>
 </head>
+
+
+
 
 <body class="w3-light-grey">
 
-
-    <!-- Div para comentários do facebook -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v18.0"></script>
 
-    <!-- Navigation (Stays on Top) -->
-    <div class="centerBar">
-
-        <!-- Navigation (Stays on Top) -->
-        <div class="centerBar"></div>
-
-    </div>
-
-
-
-   
-
+    <div id="header-placeholder"></div>
 
     <div id="header-dinamico"></div>
 
+  
 
-    <div class="w3-center">
+    <div class="w3-row w3-content" style="max-width:1600px; margin-top: 20px;">
 
-        <div class="w3-container citacao-container">
-            <h4 class="w3-center w3-margin w3-padding-64">"Os vestibulares são uma aberração [...] A ideia de pesquisa, de busca, de dúvida acabou".<br>
-                <span class="w3-medium">Rubem Alves
-                    </span>
-            </h4>
+        <div class="w3-col l8 s12">
+            <div class="w3-container artigo-texto w3-white w3-margin-bottom w3-padding-32">
 
+                <h2 class="w3-center">
+                    <span id="skeleton-title" class="skeleton"
+                        style="height: 40px; width: 80%; margin: 0 auto; display: block;"></span>
+                    <strong id="artigo-titulo-principal" class="hidden-loading"></strong>
+                </h2>
 
-        </div>
-    </div>
+                <div id="skeleton-img" class="skeleton w3-margin" style="height: 400px; width: 100%;"></div>
+                <div class="w3-margin w3-center">
+                    <img id="imagem-principal" src="" alt="" class="w3-mobile hidden-loading"
+                        style="width: 100%; border-radius: 5px; max-height: 500px; object-fit: cover;">
+                </div>
 
+                <div id="skeleton-data" class="skeleton" style="height: 20px; width: 150px; margin-left: 16px;"></div>
+                <ul>
+                    <li class="w3-small sem-pontos">Por <span id="artigo-autor">Leandro Henrique da Silva</span>
+                    </li>
+                    <li class="w3-opacity w3-small sem-pontos hidden-loading" id="artigo-data">Data carregando...</li>
+                </ul>
 
-    <div class="w3-row">
-
-        <div class="w3-container w3-threequarter">
-
-            <div class="w3-col  ">
-
-                <div class="w3-container artigo-texto w3-margin-bottom">
-                    <h2 class="w3-center w3-margin-top">
-                        <strong id="artigo-titulo-principal">
-                        </strong>
-                    </h2>
-
-                    <div class="w3-margin w3-center">
-                        <img id="imagem-principal" src="" alt="" class="w3-mobile" style="width: 100%;">
-                    </div>
-
-                    <ul>
-                        <li class="w3-small sem-pontos">Por <span id="artigo-autor">Leandro Henrique da Silva</span>
-                        </li>
-                        <li class="w3-opacity w3-small sem-pontos" id="artigo-data">Data carregando...</li>
-                    </ul>
-
-                    <br>
+                <hr>
 
 
-                    <!-- Insira o texto aqui -->
+                <div class="corpo-artigo" style="line-height: 1.8;">
 
-                   
+                    <div id="citacao-dinamica"></div>
+
+
 
                     <p>Quando pensamos em educação, é comum associarmos diretamente ao vestibular. No entanto, essa visão limitada não faz jus à verdadeira essência do ensino e aprendizado. A educação vai muito além de preparar jovens para uma prova. Ela deve ser uma ferramenta para desenvolver habilidades, despertar talentos e formar cidadãos sem medo e livres.</p>
 
@@ -127,69 +108,41 @@
 
                     <p>Devemos lutar por um sistema educacional que realmente cumpra o que está previsto no artigo 205 da Constituição: um ensino que promova o pleno desenvolvimento da pessoa, sua preparação para a cidadania e sua qualificação para o trabalho, em todas as suas formas e manifestações. Só assim, quem sabe, poderemos construir uma sociedade distinta da atual, inclusiva e verdadeiramente educada.</p>
                     
-                    
-                    
 
 
-
-                    <!-- Fim do texto -->
-
-
-                    <div id="icones-compartilhamento" class="share-icons w3-left">
-                    </div>
-
-                    <div id="comentarios-fb"></div>
 
 
                 </div>
 
-                <!-- fim da classe w3-row -->
+
+
+
+
+                <div id="icones-compartilhamento" class="w3-padding-16"></div>
+                <hr>
+                <div id="comentarios-fb"></div>
             </div>
-
-
         </div>
 
-
-        <!-- ESPAÇO LATERAL -->
-
-        <!-- Espaço para Outro Anúncio ou Propaganda -->
-
-        <div class="w3-container w3-quarter">
-
-            <div id="tags-container" class="w3-margin-bottom"></div>
-
-            <div id="arquivo-blog-container" class="w3-margin-bottom"></div>
-
+        <div class="w3-col l4 s12">
+            <div id="tags-container"></div>
+            <div id="posts-recentes-container"></div>
             <div id="leia-tambem-container"></div>
-
-            <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-black">
-                    <h4>Posts Recentes</h4>
-                </div>
-                <ul class="w3-ul w3-hoverable w3-white" id="recent-posts-list">
-                </ul>
-            </div>
-
+            <div id="arquivo-blog-container"></div>
         </div>
 
     </div>
 
-
-
-    <!-- FIM DA CLASSE W3-QUARTER -->
-
-
-
-
-    <!-- FIM DA CLASSE ROW -->
+    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large"
+        title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
 
 
 
-    <!-- 
-fim do row -->
 
+    <div id="footer-placeholder"></div>
 
-    <footer class="footer"></footer>
 
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -197,9 +150,7 @@ fim do row -->
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-DPX55DSFZ0');
-
     </script>
 
 

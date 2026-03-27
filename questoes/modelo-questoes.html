@@ -17,14 +17,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
         crossorigin="anonymous"></script>
 
 
 
+
+
+    <script src="../../../js/duvid-db.js" defer></script>
+
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+
     <script src="../../../js/duvid-core.js" defer></script>
+
     <script src="../../../js/aulas-geral.js" defer></script>
     <script src="../../../js/jsquestoes-padrao.js" defer></script>
     <script src="../../../js/carregar.js" defer></script>
@@ -121,6 +129,39 @@
                 </button>
             </footer>
 
+        </div>
+    </div>
+
+
+    <div id="id01" class="w3-modal" style="z-index: 999;">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
+            <div class="w3-container w3-padding-32 w3-center">
+
+                <div class="w3-margin-bottom pulse">
+                    <img id="modal-img-globinho" src="../../../fotoIndex/globinhoPe.png" width="80" height="80">
+                </div>
+
+                <h2 id="modal-titulo" class="fontePixel"></h2>
+
+                <div class="w3-padding-16">
+                    <p id="modal-feedback-principal" class="w3-xlarge">
+                    </p>
+                    <p id="modal-frase-motivacional" class="w3-text-grey" style="font-style: italic;"></p>
+                </div>
+
+                <div class="w3-container w3-padding-16">
+                    <button onclick="location.reload()"
+                        class="w3-button w3-light-grey w3-round-large w3-block w3-margin-bottom w3-padding-large"
+                        style="font-weight: bold;">
+                        🔄 REFAZER SIMULADO
+                    </button>
+
+                    <button onclick="window.location.href='/home.html'"
+                        class="w3-button w3-green w3-round-large w3-block w3-padding-large" style="font-weight: bold;">
+                        🏠 VOLTAR PARA A HOME
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 

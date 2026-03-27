@@ -1,5 +1,4 @@
 [
- 
   {
     "id": 11,
     "titulo": "Por uma Educação mais humana",
@@ -7,7 +6,9 @@
     "imagem": "/blog/artigos/artigo11/artigo11f01.jpg",
     "data": "02 de setembro de 2024",
     "tags": ["Educação", "Filosofia"],
-    "resumo": "Nos últimos anos, venho refletindo profundamente sobre o processo educativo e o papel residual que o ser humano e suas emoções ocupam na escola."
+    "resumo": "Nos últimos anos, venho refletindo profundamente sobre o processo educativo e o papel residual que o ser humano e suas emoções ocupam na escola.",
+    "citacao_texto": "Não é sinal de saúde estar bem ajustado a uma sociedade profundamente doente.",
+    "citacao_autor": "Krishnamurti"
   },
   {
     "id": 10,
@@ -16,7 +17,9 @@
     "imagem": "/blog/artigos/artigo10/artigo10f01.jpg",
     "data": "05 de junho de 2024",
     "tags": ["Educação", "Sociedade"],
-    "resumo": "Quando pensamos em educação, é comum associarmos diretamente ao vestibular. É preciso reconhecer talentos que vão além das provas."
+    "resumo": "Quando pensamos em educação, é comum associarmos diretamente ao vestibular. É preciso reconhecer talentos que vão além das provas.",
+    "citacao_texto": "Os vestibulares são uma aberração [...] A ideia de pesquisa, de busca, de dúvida acabou.",
+    "citacao_autor": "Rubem Alves"
   },
   {
     "id": 9,
@@ -25,7 +28,9 @@
     "imagem": "/blog/artigos/artigo09/artigo09f01.jpg",
     "data": "26 de maio de 2024",
     "tags": ["Educação", "Jogos"],
-    "resumo": "Os videogames são frequentemente vistos apenas como entretenimento, mas eles também podem ser ferramentas poderosas de aprendizagem."
+    "resumo": "Os videogames são frequentemente vistos apenas como entretenimento, mas eles também podem ser ferramentas poderosas de aprendizagem.",
+    "citacao_texto": "Um jogo é uma oportunidade de focar nossa energia, com otimismo implacável, em algo que somos bons (ou melhorar) e desfrutar. Em outras palavras, a jogabilidade é o oposto emocional direto da depressão.",
+    "citacao_autor": "Jane McGonigal"
   },
   {
     "id": 8,
@@ -34,7 +39,9 @@
     "imagem": "/blog/artigos/artigo08/artigo08f01.jpg",
     "data": "18 de maio de 2024",
     "tags": ["Educação", "Filosofia"],
-    "resumo": "Desde cedo, somos ensinados a competir em praticamente todos os aspectos da vida, especialmente na educação."
+    "resumo": "Desde cedo, somos ensinados a competir em praticamente todos os aspectos da vida, especialmente na educação.",
+    "citacao_texto": "A educação no Brasil não é pensada para garantir o sucesso de todos os alunos, mas para privilegiar os que são considerados os 'melhores' estudantes.",
+    "citacao_autor": "Ocimar Munhoz Alavarse"
   },
   {
     "id": 7,
@@ -43,7 +50,9 @@
     "imagem": "/blog/artigos/artigo07/artigo07f01.jpg",
     "data": "14 de maio de 2024",
     "tags": ["Educação", "Sociedade"],
-    "resumo": "Vivemos em uma sociedade que frequentemente proclama a importância da educação, mas o valor real só aparece em momentos específicos."
+    "resumo": "Vivemos em uma sociedade que frequentemente proclama a importância da educação, mas o valor real só aparece em momentos específicos.",
+    "citacao_texto": "Nenhum homem é uma ilha, isolado em si mesmo; todos são parte do continente da vida.",
+    "citacao_autor": "John Donne"
   },
   {
     "id": 6,
@@ -52,7 +61,9 @@
     "imagem": "/blog/artigos/artigo06/artigo06f01.jpg",
     "data": "10 de maio de 2024",
     "tags": ["Finanças", "Política"],
-    "resumo": "O povo brasileiro pode e deve participar da geração de riqueza do país através das empresas estatais."
+    "resumo": "O povo brasileiro pode e deve participar da geração de riqueza do país através das empresas estatais.",
+    "citacao_texto": "O petróleo é nosso!",
+    "citacao_autor": "Otacílio Rainho"
   },
   {
     "id": 5,
@@ -61,7 +72,9 @@
     "imagem": "/blog/artigos/artigo05/artigo05f01.jpg",
     "data": "05 de maio de 2024",
     "tags": ["Política", "Filosofia"],
-    "resumo": "Na jornada das ideias políticas e sociais, duas visões se destacam: ser revolucionário ou reformista. Qual delas é a melhor?"
+    "resumo": "Na jornada das ideias políticas e sociais, duas visões se destacam: ser revolucionário ou reformista. Qual delas é a melhor?",
+    "citacao_texto": "Para melhorar é preciso mudar; para ser perfeito é preciso mudar com frequência.",
+    "citacao_autor": "Winston Churchill"
   },
   {
     "id": 4,
@@ -70,7 +83,9 @@
     "imagem": "/blog/artigos/artigo04/artigo04f01.jpg",
     "data": "27 de abril de 2024",
     "tags": ["Finanças", "Tecnologia"],
-    "resumo": "O Bitcoin é a nova promessa de liberdade econômica, mas será que uma moeda pode realmente promover uma mudança radical sozinha?"
+    "resumo": "O Bitcoin é a nova promessa de liberdade econômica, mas será que uma moeda pode realmente promover uma mudança radical sozinha?",
+    "citacao_texto": "Aqueles que têm alguma coisa para vender, aqueles que desejam influenciar a opinião pública, aqueles que estão no poder, diria um cético, têm um interesse pessoal em desencorajar o ceticismo.",
+    "citacao_autor": "Carl Sagan"
   },
   {
     "id": 3,
@@ -79,7 +94,9 @@
     "imagem": "/blog/artigos/artigo03/artigo03f01.jpg",
     "data": "20 de abril de 2024",
     "tags": ["Sociedade", "Política"],
-    "resumo": "O temor de uma Terceira Guerra Mundial surge na mídia constantemente, mas ignoramos as guerras invisíveis do cotidiano."
+    "resumo": "O temor de uma Terceira Guerra Mundial surge na mídia constantemente, mas ignoramos as guerras invisíveis do cotidiano.",
+    "citacao_texto": "Se a guerra é uma coisa horrível, não seria o patriotismo a ideia-mãe que a nutre?",
+    "citacao_autor": "Guy de Maupassant"
   },
   {
     "id": 2,
@@ -88,7 +105,9 @@
     "imagem": "/blog/artigos/artigo02/artigo02f01.jpg",
     "data": "14 de abril de 2024",
     "tags": ["Educação", "Relato"],
-    "resumo": "Um relato das inúmeras dificuldades que um professor enfrenta em seu cotidiano nas escolas públicas."
+    "resumo": "Um relato das inúmeras dificuldades que um professor enfrenta em seu cotidiano nas escolas públicas.",
+    "citacao_texto": "A educação é o que sobrevive depois que tudo o que se aprendeu foi esquecido.",
+    "citacao_autor": "B. F. Skinner"
   },
   {
     "id": 1,
@@ -97,6 +116,10 @@
     "imagem": "/blog/artigos/artigo01/artigo01f01.jpg",
     "data": "07 de abril de 2024",
     "tags": ["Educação", "Filosofia"],
-    "resumo": "A escola é um lugar de aprendizado e crescimento, mas para muitos estudantes, pode ser um ambiente desafiador e desmotivador."
+    "resumo": "A escola é um lugar de aprendizado e crescimento, mas para muitos estudantes, pode ser um ambiente desafiador e desmotivador.",
+    "citacao_texto": "Educação não é encher um balde, mas acender um fogo.",
+    "citacao_autor": "William Butler Yeats"
   }
+
+
 ]

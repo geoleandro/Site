@@ -142,3 +142,29 @@
     position: relative;
     z-index: 1;
 }
+
+/* Container que permite deslizar a trilha no celular */
+.trilha-scroll-area {
+    width: 100%;
+    overflow-x: auto; /* Permite scroll horizontal */
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch; /* Scroll suave no iOS */
+    scrollbar-width: none; /* Esconde barra no Firefox */
+}
+
+.trilha-scroll-area::-webkit-scrollbar {
+    display: none; /* Esconde barra no Chrome/Safari */
+}
+
+.trilha-wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 500px; /* Garante que as bolinhas mantenham distância no celular */
+    height: 40px;
+    margin: 0 auto;
+}
+#frase-motivacional-trilha {
+    min-height: 40px; /* Garante que o layout não "pule" quando o texto carregar */
+    line-height: 1.4;
+    padding: 0 15px;
+}

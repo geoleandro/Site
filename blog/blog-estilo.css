@@ -691,6 +691,9 @@ body.dark-mode button:not(.w3-green) {
     max-width: 850px; /* Largura ideal para o olho humano não se perder nas linhas */
     margin: 0 auto;   /* Centraliza o texto */
     font-family: 'Georgia', serif; /* Opcional: serifadas são melhores para textos longos */
+    max-width: 75ch; /* Limita a linha a cerca de 75 caracteres, o ideal para leitura */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .corpo-artigo p {
@@ -806,4 +809,14 @@ body.dark-mode img:hover {
     border-left: 1px dotted #ccc;
     padding-left: 5px;
 }
+.skeleton {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
 
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
