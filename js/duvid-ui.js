@@ -5,10 +5,16 @@ const DuvidUI = {
         const progresso = DuvidDB.getProgressoRPG();
         const saldoFormatado = progresso.saldoAtual.toFixed(1);
 
-        // Atualiza Header (Globinhos Dourados)
-        const elHeader = document.getElementById("saldoTotalHeader");
-        if (elHeader) elHeader.innerText = saldoFormatado;
-
+        // 1. Atualiza Header (Globinhos Dourados)
+    const elHeader = document.getElementById("saldoTotalHeader");
+    if (elHeader) {
+        // Se o valor mudou, dá um "pulso" visual
+        if (elHeader.innerText !== saldoFormatado) {
+            elHeader.classList.add('w3-animate-zoom');
+            setTimeout(() => elHeader.classList.remove('w3-animate-zoom'), 500);
+        }
+        elHeader.innerText = saldoFormatado;
+    }
         // Atualiza Nota da Aula (Nota Fixa Branca)
         const elNota = document.getElementById("notaFixa");
         if (elNota) {
@@ -64,7 +70,7 @@ const DuvidUI = {
 
         // O SEGREDO: Colocamos o texto aqui e o CSS exibe abaixo
         ponto.setAttribute('data-label', `Level ${marco.lvl} `);
-        
+
 
         return ponto;
     },
@@ -189,6 +195,10 @@ const DuvidUI = {
             }
         }, 30);
     },
+
+
+
+
     atualizarPainelHome: function (progresso) {
         // 1. O VALOR REAL (O que o aluno vê nos textos)
         // Usamos o saldo total vindo do DB para não confundir o usuário
@@ -279,6 +289,8 @@ const DuvidUI = {
                 imagemGlobo.style.filter = "";
             }, 500);
         }
+            // 3. Atualiza os números na tela
+        this.atualizarInterface();
     },
 
 
@@ -471,6 +483,89 @@ function getFrasePainel() {
     ];
     return frases[Math.floor(Math.random() * frases.length)];
 }
+
+
+/**
+ * Mestre de Metadados: Busca no JSON do ano correto e aplica o SEO
+ * @param {string|number} id - O ID da aula (ex: 101, 205)
+ * @param {string} tipo - 'texto' ou 'questao' para personalizar o título
+ */
+// duvid-ui.js
+
+async function configurarSEOAutomatico(id, tipo = 'texto') {
+    if (!id) return;
+
+    // Converte para string e pega o primeiro dígito
+    const idStr = id.toString();
+    const ano = idStr.charAt(0); // Pega '1', '2' ou '3'
+
+    console.log(`🔍 Buscando JSON para o ano: ${ano} (ID: ${id})`);
+
+    try {
+        // CORREÇÃO AQUI: Use crases (atrás do P no teclado) e verifique o caminho
+        // Se o arquivo estiver em /js/aulas-1ano.json, o caminho abaixo está correto
+        const caminhoJson = `/js/aulas-${ano}ano.json`;
+        
+        const res = await fetch(caminhoJson);
+        
+        if (!res.ok) throw new Error(`Arquivo não encontrado: ${caminhoJson}`);
+
+        const aulas = await res.json();
+
+        // Encontra os dados
+        const aulaDados = aulas.find(a => a.id == id);
+
+        if (aulaDados) {
+            const prefixo = tipo === 'questao' ? 'Exercícios: ' : '';
+            
+            // Chama a função de aplicação (certifique-se que ela existe no duvid-ui)
+            aplicarSEO({
+                titulo: `${prefixo}${aulaDados.titulo}`,
+                conteudo: aulaDados.conteudo,
+                imagem: aulaDados.imagem
+            });
+
+            // Atualiza o título visual
+            const h1 = document.getElementById('h1') || document.getElementById('h1-questoes');
+            if (h1) h1.innerText = `${prefixo}${aulaDados.titulo}`;
+
+        } else {
+            console.warn(`⚠️ Aula ${id} não encontrada no JSON do ${ano}º ano.`);
+        }
+    } catch (e) {
+        console.error("🚨 Erro ao configurar SEO automático:", e);
+    }
+}
+/**
+ * Função Universal de SEO para o Duvid
+ * @param {Object} dados - Objeto contendo titulo, conteudo (resumo) e imagem
+ */
+function aplicarSEO(dados) {
+    // Título da Aba
+    document.title = `${dados.titulo} | Duvid Geografia`;
+
+    // Meta Description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        // Limita o resumo a 160 caracteres para o Google
+        const resumo = dados.conteudo ? dados.conteudo.substring(0, 160) + "..." : "Aprenda Geografia de forma gamificada.";
+        metaDesc.setAttribute('content', resumo);
+    }
+
+    // Open Graph (Redes Sociais)
+    const ogTags = {
+        'og:title': dados.titulo,
+        'og:description': dados.conteudo,
+        'og:image': window.location.origin + "/" + (dados.imagem || "fotoIndex/icones/duvid-icone.png"),
+        'og:url': window.location.href
+    };
+
+    for (let prop in ogTags) {
+        let el = document.querySelector(`meta[property="${prop}"]`);
+        if (el) el.setAttribute('content', ogTags[prop]);
+    }
+}
+
 
 
 // --- 5. FUNÇÕES GLOBAIS (Compatibilidade) ---

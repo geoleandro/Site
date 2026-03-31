@@ -84,7 +84,7 @@ const DuvidDB = {
         localStorage.setItem(`concluido_${tipo}_${idAula}`, "true");
     },
 
-  
+
 
     getNome: function () {
         return localStorage.getItem(NOME_CHAVE) || "";
@@ -140,36 +140,37 @@ const DuvidDB = {
         { lvl: 6, patente: "LENDA DA TERRA", min: 20001, max: 99999, cor: "#f44336" }
     ],
 
+    // RANKING_SISTEMA: [
+    //     { lvl: 1, patente: "NOVATO", min: 0, max: 10, cor: "#9d9d9d" },
+    //     { lvl: 2, patente: "EXPLORADOR", min: 11, max: 20, cor: "#4caf50" },
+    //     { lvl: 3, patente: "CARTÓGRAFO", min: 21, max: 30, cor: "#2196f3" },
+    //     { lvl: 4, patente: "ESTRATEGISTA", min: 31, max: 40, cor: "#9c27b0" },
+    //     { lvl: 5, patente: "GEÓGRAFO SÊNIOR", min: 41, max: 50, cor: "#ff9800" },
+    //     { lvl: 6, patente: "LENDA DA TERRA", min: 51, max: 99999, cor: "#f44336" }
+    // ],
+
     getProgressoRPG: function () {
-    let saldo = this.getGlobinhos();
+        let saldo = this.getGlobinhos();
 
-    // 1. Encontra o nível ATUAL
-    const indexAtual = this.RANKING_SISTEMA.findIndex(r => saldo >= r.min && saldo <= r.max);
-    const i = indexAtual !== -1 ? indexAtual : this.RANKING_SISTEMA.length - 1;
-    const info = this.RANKING_SISTEMA[i];
+        // 1. Encontra o nível ATUAL
+        const indexAtual = this.RANKING_SISTEMA.findIndex(r => saldo >= r.min && saldo <= r.max);
+        const i = indexAtual !== -1 ? indexAtual : this.RANKING_SISTEMA.length - 1;
+        const info = this.RANKING_SISTEMA[i];
 
-    // 2. Cálculo de XP Relativo (O segredo da barra honesta)
-    // Subtraímos o 'min' para a barra começar do zero em cada nível
-    let xpNoNivel = saldo - info.min;
-    let totalFaixaNivel = info.max - info.min;
-    let porcentagem = (xpNoNivel / totalFaixaNivel) * 100;
+        // 2. Cálculo de XP Relativo (O segredo da barra honesta)
+        let porcentagem = (saldo / info.max) * 100;
 
-    return {
-        lvl: info.lvl,
-        patente: info.patente,
-        cor: info.cor,
-        
-        // CORREÇÃO AQUI: O objetivo visual deve ser o MAX do nível ATUAL.
-        // Assim, quando chegar em 3500, a barra enche e o texto diz 3500.
-        proximoLvl: info.max, 
-        
-        // Enviamos o valor mínimo para a UI saber onde "zerar" o contador se precisar
-        xpMinimo: info.min,
-
-        progressoBarra: Math.min(Math.max(porcentagem, 2), 100), // Mínimo 2% para não sumir
-        saldoAtual: saldo
-    };
-},
+        return {
+            lvl: info.lvl,
+            patente: info.patente,
+            cor: info.cor,
+            proximoLvl: info.max,
+            xpMinimo: info.min,
+            // Agora a porcentagem será ~44.7% para o seu caso atual
+            progressoBarra: Math.min(Math.max(porcentagem, 2), 100),
+            saldoAtual: saldo
+        };
+    },
 
 
 
@@ -180,7 +181,7 @@ const DuvidDB = {
         localStorage.setItem(PATENTE_CHAVE, progresso.patente);
         localStorage.setItem(NIVEL_CHAVE, progresso.lvl);
 
-        console.log(`[RPG] Status Sincronizado: ${progresso.patente} (Nível ${progresso.lvl})`);
+        // console.log(`[RPG] Status Sincronizado: ${progresso.patente} (Nível ${progresso.lvl})`);
 
         return progresso;
     },

@@ -206,7 +206,7 @@ function mostraCinza() {
 
         if (!jaConcluiu) {
             DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.TEXTO);
-            DuvidDB.addGlobinhos(10);
+            DuvidDB.addGlobinhos(RECOMPENSA_TEXTO);
         }
     }
 
@@ -351,6 +351,10 @@ async function injetarMetadadosAula() {
             // Injeta na descrição (se houver um ID para isso)
             const desc = document.getElementById('descricao-aula');
             if (desc) desc.innerText = aulaDados.conteudo;
+
+            configurarSEOAutomatico(aulaDados.id, 'texto');
+           
+       
 
             // console.log("Metadados injetados: " + aulaDados.titulo);
         }

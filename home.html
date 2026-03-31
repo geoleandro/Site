@@ -39,7 +39,7 @@
     <script src="/js/carregar.js" defer></script>
     <script src="/js/abrirmenu.js" defer></script>
 
-    <script src="/js/duvid-api-home" defer></script>
+    <script src="/js/duvid-api-home.js" defer></script>
 
 
 
@@ -47,7 +47,6 @@
 
     <title>Duvid Home</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
 </head>
@@ -62,7 +61,16 @@
 
     <main id="conteudo-principal">
 
+        <div class="w3-display-container w3-animate-opacity w3-padding-48">
+            <img src="/fotoIndex/duvid-banner1.png" alt="Duvid Geografia Banner"
+                style="width:100%; min-height:200px; max-height:auto; object-fit:cover;" class="w3-card-4">
 
+            <div class="w3-display-middle w3-margin-top w3-center">
+                <h1 class="w3-xlarge w3-text-white w3-wide" style="text-shadow: 2px 2px 10px #000;">
+                    <span class="w3-hide-small w3-text-light-grey">EXPLORE O MUNDO</span>
+                </h1>
+            </div>
+        </div>
 
         <!-- <section id="slideshow-container" class="slideshow-container w3-display-container w3-center">
     </section> -->
@@ -76,11 +84,12 @@
 
 
 
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-            <h2 class="w3-wide w3-center w3-text-green">O PROJETO</h2>
+        <div class="w3-container w3-content w3-padding-64 " style="max-width:800px">
+            <h2 class="w3-wide w3-center w3-text-green w3-xlarge">O PROJETO</h2>
             <p class="w3-opacity w3-center"><i>Gratuito, inovador e feito para a sala de aula</i></p>
             <div class="w3-justify">
-                <p>O site <strong>Duvid Geografia</strong> oferece mais de 1000 questões atualizadas, dezenas de textos
+                <p>O site <strong>Duvid Geografia</strong> oferece mais de 1000 questões atualizadas, dezenas de
+                    textos
                     autorais
                     interativos com correção automática, comentários, e sugestões de atividades. Além disso,
                     nossos aplicativos para Android
@@ -136,6 +145,15 @@
 
                 <div id="display-identificado" style="display:none;" class="w3-container w3-padding-16">
                     <div class="w3-row" style="display: flex; align-items: center; justify-content: space-between;">
+
+
+                        <!-- Local para medalha de patente (pode ser substituído por um ícone ou imagem representando a patente atual do aluno) -->
+                        <div class="medalha-container">
+                            <img id="medalha-patente" src="fotoIndex/icones/duvid-patentes-novato.png" alt="Patente"
+                                title="Sua Patente Atual" class="pixel-art-icon">
+                        </div>
+
+
                         <div class="w3-left-align">
                             <h4 class="w3-margin-0">
                                 <strong> <span id="lvl-tag" class="w3-tag w3-amber w3-round-large w3-small">Level
@@ -146,7 +164,7 @@
                                     <i class="fa fa-pencil"></i>
                                 </button>
                             </h4>
-                            <p id="rank-nome" class="w3-tiny w3-text-amber w3-margin-0"
+                            <p id="rank-nome" class="w3-tiny w3-text-black w3-margin-0"
                                 style="font-weight: bold; letter-spacing: 1px;">NOVATO</p>
                         </div>
 
@@ -174,48 +192,46 @@
 
                 <!-- Blocos dos resumos gerais -->
                 <div id="resumo-geral" class="w3-row-padding w3-margin-top" style="display:none;">
+
                     <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                        <div class="card-inventario-item w3-round-large w3-padding" style="position: relative;">
                             <div id="conquista-1ano" class="w3-display-topright w3-padding" style="display: none;">
                                 <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
                             </div>
-
-                            <h6 class="w3-text-teal"><b>1º Ano</b></h6>
+                            <h6 class="w3-text-teal" style="font-family: 'Courier New', monospace;"><b>1º ANO</b></h6>
                             <div class="w3-light-grey w3-round-xlarge w3-tiny">
                                 <div id="bar-1ano" class="w3-container w3-green w3-round-xlarge"
                                     style="width:0%; height:10px;"></div>
                             </div>
-                            <p class="w3-tiny w3-margin-top"><span id="txt-1ano">0/0</span> aulas feitas</p>
+                            <p class="w3-tiny w3-margin-top"><b><span id="txt-1ano">0/0</span></b> aulas feitas</p>
                         </div>
                     </div>
 
                     <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                        <div class="card-inventario-item w3-round-large w3-padding" style="position: relative;">
                             <div id="conquista-2ano" class="w3-display-topright w3-padding" style="display: none;">
                                 <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
                             </div>
-
-                            <h6 class="w3-text-teal"><b>2º Ano</b></h6>
+                            <h6 class="w3-text-teal" style="font-family: 'Courier New', monospace;"><b>2º ANO</b></h6>
                             <div class="w3-light-grey w3-round-xlarge w3-tiny">
                                 <div id="bar-2ano" class="w3-container w3-blue w3-round-xlarge"
                                     style="width:0%; height:10px;"></div>
                             </div>
-                            <p class="w3-tiny w3-margin-top"><span id="txt-2ano">0/0</span> aulas feitas</p>
+                            <p class="w3-tiny w3-margin-top"><b><span id="txt-2ano">0/0</span></b> aulas feitas</p>
                         </div>
                     </div>
 
                     <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card-2 w3-white w3-round-large w3-padding" style="position: relative;">
+                        <div class="card-inventario-item w3-round-large w3-padding" style="position: relative;">
                             <div id="conquista-3ano" class="w3-display-topright w3-padding" style="display: none;">
                                 <i class="fa fa-trophy w3-text-amber w3-large" title="Concluído!"></i>
                             </div>
-
-                            <h6 class="w3-text-teal"><b>3º Ano</b></h6>
+                            <h6 class="w3-text-teal" style="font-family: 'Courier New', monospace;"><b>3º ANO</b></h6>
                             <div class="w3-light-grey w3-round-xlarge w3-tiny">
                                 <div id="bar-3ano" class="w3-container w3-orange w3-round-xlarge"
                                     style="width:0%; height:10px;"></div>
                             </div>
-                            <p class="w3-tiny w3-margin-top"><span id="txt-3ano">0/0</span> aulas feitas</p>
+                            <p class="w3-tiny w3-margin-top"><b><span id="txt-3ano">0/0</span></b> aulas feitas</p>
                         </div>
                     </div>
                 </div>
@@ -231,130 +247,146 @@
 
 
 
-        <!-- Cards dos anos -->
-        <div class="w3-light-grey section-anos">
-            <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
-                <div class="w3-row-padding">
-                    <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card w3-white w3-round-large w3-padding-large w3-center card-ano">
-                            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">1º ANO</h3>
-                            <div class="w3-padding">
-                                <a href="/Duvid1Ano.html">
-                                    <img src="fotoIndex/imagensCapa/capa1ano.png" alt="Capa 1º Ano"
-                                        class="w3-round w3-hover-opacity w3-margin-bottom"
-                                        style="width:100%; max-width: 250px;">
-                                </a>
-                                <p class="w3-small w3-opacity">Baixe o app offline:</p>
-                                <a href="https://play.google.com/store/apps/details?id=io.kodular.geoleandro.Duvid1ano"
-                                    target="_blank">
-                                    <img src="fotoIndex/imagensCapa/google-play-badge1.png"
-                                        style="width:70%; min-width: 140px;" alt="Google Play">
-                                </a>
+        <div class="w3-col l8 s12">
+
+            <!-- Cards dos anos -->
+            <div class="w3-light-grey section-anos">
+                <div class="w3-container w3-content w3-padding-64" style="max-width:1200px">
+                    <div class="w3-row-padding">
+                        <div class="w3-third w3-margin-bottom">
+                            <div class="w3-card w3-white w3-round-large w3-padding-large w3-center card-ano">
+                                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">1º ANO</h3>
+                                <div class="w3-padding">
+                                    <a href="/Duvid1Ano.html">
+                                        <img src="fotoIndex/imagensCapa/capa1ano.png" alt="Capa 1º Ano"
+                                            class="w3-round w3-hover-opacity w3-margin-bottom"
+                                            style="width:100%; max-width: 250px;">
+                                    </a>
+                                    <p class="w3-small w3-opacity">Baixe o app offline:</p>
+                                    <a href="https://play.google.com/store/apps/details?id=io.kodular.geoleandro.Duvid1ano"
+                                        target="_blank">
+                                        <img src="fotoIndex/imagensCapa/google-play-badge1.png"
+                                            style="width:70%; min-width: 140px;" alt="Google Play">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
 
-                    <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card w3-white w3-round-large w3-padding-large w3-center card-ano">
-                            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">2º ANO</h3>
-                            <div class="w3-padding">
-                                <a href="/Duvid2Ano.html">
-                                    <img src="fotoIndex/imagensCapa/capa2ano.png" alt="Capa 2º Ano"
-                                        class="w3-round w3-hover-opacity w3-margin-bottom"
-                                        style="width:100%; max-width: 250px;">
-                                </a>
-                                <p class="w3-small w3-opacity">Baixe o app offline:</p>
-                                <a href="https://play.google.com/store/apps/details?id=io.kodular.geoleandro.Duvid2"
-                                    target="_blank">
-                                    <img src="fotoIndex/imagensCapa/google-play-badge1.png"
-                                        style="width:70%; min-width: 140px;" alt="Google Play">
-                                </a>
+                        <div class="w3-third w3-margin-bottom">
+                            <div class="w3-card w3-white w3-round-large w3-padding-large w3-center card-ano">
+                                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">2º ANO</h3>
+                                <div class="w3-padding">
+                                    <a href="/Duvid2Ano.html">
+                                        <img src="fotoIndex/imagensCapa/capa2ano.png" alt="Capa 2º Ano"
+                                            class="w3-round w3-hover-opacity w3-margin-bottom"
+                                            style="width:100%; max-width: 250px;">
+                                    </a>
+                                    <p class="w3-small w3-opacity">Baixe o app offline:</p>
+                                    <a href="https://play.google.com/store/apps/details?id=io.kodular.geoleandro.Duvid2"
+                                        target="_blank">
+                                        <img src="fotoIndex/imagensCapa/google-play-badge1.png"
+                                            style="width:70%; min-width: 140px;" alt="Google Play">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="w3-third w3-margin-bottom">
-                        <div class="w3-card w3-white w3-round-large w3-padding-large w3-center card-ano">
-                            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">3º ANO</h3>
-                            <div class="w3-padding">
-                                <a href="/Duvid3Ano.html">
-                                    <img src="fotoIndex/imagensCapa/capa3ano.png" alt="Capa 3º Ano"
-                                        class="w3-round w3-hover-opacity w3-margin-bottom"
-                                        style="width:100%; max-width: 250px;">
-                                </a>
-                                <p class="w3-small w3-opacity">Baixe o app offline:</p>
-                                <a href="https://play.google.com/store/apps/details?id=br.com.duvid" target="_blank">
-                                    <img src="fotoIndex/imagensCapa/google-play-badge1.png"
-                                        style="width:70%; min-width: 140px;" alt="Google Play">
-                                </a>
+                        <div class="w3-third w3-margin-bottom">
+                            <div class="w3-card w3-white w3-round-large w3-padding-large w3-center card-ano">
+                                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">3º ANO</h3>
+                                <div class="w3-padding">
+                                    <a href="/Duvid3Ano.html">
+                                        <img src="fotoIndex/imagensCapa/capa3ano.png" alt="Capa 3º Ano"
+                                            class="w3-round w3-hover-opacity w3-margin-bottom"
+                                            style="width:100%; max-width: 250px;">
+                                    </a>
+                                    <p class="w3-small w3-opacity">Baixe o app offline:</p>
+                                    <a href="https://play.google.com/store/apps/details?id=br.com.duvid"
+                                        target="_blank">
+                                        <img src="fotoIndex/imagensCapa/google-play-badge1.png"
+                                            style="width:70%; min-width: 140px;" alt="Google Play">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Fim da coluna principal -->
+        </div>
+
+
+        <div class="w3-col l4 s12">
+
+            <!-- Quadro de exploração do site -->
+            <div class="w3-container w3-padding-64 w3-light-grey">
+                <div class="w3-content" style="max-width:1100px">
+                    <h2 class="w3-center w3-margin-bottom"><b>Explorar o Duvid</b></h2>
+                    <div class="w3-row-padding">
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <a href="paginas/sobre.html"
+                                class="w3-button w3-block w3-white w3-card w3-hover-green w3-padding-24 w3-round-large">
+                                <img src="/fotoIndex/icones/projeto-icone.png" alt="Projeto" class="img-pixel-icon"><br>
+                                <span class="w3-large">O Projeto</span>
+                            </a>
+                        </div>
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <a href="https://www.youtube.com/@duvidgeografia" target="_blank"
+                                class="w3-button w3-block w3-white w3-card w3-hover-red w3-padding-24 w3-round-large">
+                                <img src="/fotoIndex/icones/youtube-icone.png" alt="YouTube" class="img-pixel-icon"><br>
+                                <span class="w3-large">YouTube</span>
+                            </a>
+                        </div>
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <a href="blog/blog.html"
+                                class="w3-button w3-block w3-white w3-card w3-hover-blue w3-padding-24 w3-round-large">
+                                <img src="/fotoIndex/icones/duvidblog-icone.png"
+                                    alt="Duvid Blog icon with stylized text and design elements representing the blog section of the platform"
+                                    class="img-pixel-icon"><br>
+                                <span class="w3-large">Duvid Blog</span>
+                            </a>
+                        </div>
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <a href="simulados/capasimuladogeral.html"
+                                class="w3-button w3-block w3-white w3-card w3-hover-pink w3-padding-24 w3-round-large">
+                                <img src="/fotoIndex/icones/simulado-icone.png"
+                                    alt="Simulados icon with clipboard and checkmark symbol on light background"
+                                    class="img-pixel-icon"><br>
+                                <span class="w3-large">Simulados</span>
+                            </a>
+                        </div>
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <a href="paginas/livrosgeografia.html"
+                                class="w3-button w3-block w3-white w3-card w3-hover-orange w3-padding-24 w3-round-large">
+                                <img src="/fotoIndex/icones/biblioteca-icone.png" alt="Biblioteca"
+                                    class="img-pixel-icon"><br>
+                                <span class="w3-large">Biblioteca</span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
 
+
+
+            <!-- fim da coluna lateral -->
         </div>
 
 
 
-        <!-- Quadro de exploração do site -->
-        <div class="w3-container w3-padding-64 w3-light-grey">
-            <div class="w3-content" style="max-width:1100px">
-                <h2 class="w3-center w3-margin-bottom"><b>Explorar o Duvid</b></h2>
-                <div class="w3-row-padding">
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <a href="paginas/sobre.html"
-                            class="w3-button w3-block w3-white w3-card w3-hover-green w3-padding-24 w3-round-large">
-                            <img src="/fotoIndex/icones/projeto-icone.png" alt="Projeto" class="img-pixel-icon"><br>
-                            <span class="w3-large">O Projeto</span>
-                        </a>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <a href="https://www.youtube.com/@duvidgeografia" target="_blank"
-                            class="w3-button w3-block w3-white w3-card w3-hover-red w3-padding-24 w3-round-large">
-                            <img src="/fotoIndex/icones/youtube-icone.png" alt="YouTube" class="img-pixel-icon"><br>
-                            <span class="w3-large">YouTube</span>
-                        </a>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <a href="blog/blog.html"
-                            class="w3-button w3-block w3-white w3-card w3-hover-blue w3-padding-24 w3-round-large">
-                            <img src="/fotoIndex/icones/duvidblog-icone.png"
-                                alt="Duvid Blog icon with stylized text and design elements representing the blog section of the platform"
-                                class="img-pixel-icon"><br>
-                            <span class="w3-large">Duvid Blog</span>
-                        </a>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <a href="simulados/capasimuladogeral.html"
-                            class="w3-button w3-block w3-white w3-card w3-hover-pink w3-padding-24 w3-round-large">
-                            <img src="/fotoIndex/icones/simulado-icone.png"
-                                alt="Simulados icon with clipboard and checkmark symbol on light background"
-                                class="img-pixel-icon"><br>
-                            <span class="w3-large">Simulados</span>
-                        </a>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <a href="paginas/livrosgeografia.html"
-                            class="w3-button w3-block w3-white w3-card w3-hover-orange w3-padding-24 w3-round-large">
-                            <img src="/fotoIndex/icones/biblioteca-icone.png" alt="Biblioteca"
-                                class="img-pixel-icon"><br>
-                            <span class="w3-large">Biblioteca</span>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
 
         <div class="w3-container w3-padding-64 w3-light-grey">
@@ -363,26 +395,27 @@
                 <div class="w3-row-padding">
 
                     <div class="w3-col l4 m6 w3-margin-bottom">
-                <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center  card-widge">
-                    <img src="/fotoIndex/icones/populacao-icone.png" alt="População" class="img-widget-hero">
-                    <span class="w3-large w3-text-green"><b>Mundo Pulsa</b></span>
-                    <div id="populacao-live" class="w3-xxlarge w3-text-dark-grey" style="font-weight: bold; letter-spacing: -1px;">
-                        8.254.130.400
+                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center  card-widge">
+                            <img src="/fotoIndex/icones/populacao-icone.png" alt="População" class="img-widget-hero">
+                            <span class="w3-large w3-text-green"><b>Mundo Pulsa</b></span>
+                            <div id="populacao-live" class="w3-xxlarge w3-text-dark-grey"
+                                style="font-weight: bold; letter-spacing: -1px;">
+                                8.254.130.400
+                            </div>
+                            <p class="w3-tiny w3-opacity">Estimativa Populacional</p>
+                        </div>
                     </div>
-                    <p class="w3-tiny w3-opacity">Estimativa Populacional</p>
-                </div>
-            </div>
 
-           
 
-            <div class="w3-col l4 m6 w3-margin-bottom">
-                <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widge">
-                    <img src="/fotoIndex/icones/dolar-icone.png" alt="Economia" class="img-widget-hero">
-                    <span class="w3-large w3-text-orange"><b>Dólar Comercial</b></span>
-                    <div class="w3-xxlarge w3-text-dark-grey"><b id="dolar-valor">R$ --</b></div>
-                    <p class="w3-tiny w3-opacity">Cotação em tempo real</p>
-                </div>
-            </div>
+
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widge">
+                            <img src="/fotoIndex/icones/dolar-icone.png" alt="Economia" class="img-widget-hero">
+                            <span class="w3-large w3-text-orange"><b>Dólar Comercial</b></span>
+                            <div class="w3-xxlarge w3-text-dark-grey"><b id="dolar-valor">R$ --</b></div>
+                            <p class="w3-tiny w3-opacity">Cotação em tempo real</p>
+                        </div>
+                    </div>
 
                     <div class="w3-col l4 m6 w3-margin-bottom">
                         <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
@@ -403,8 +436,6 @@
                 </div>
             </div>
         </div>
-
-
 
 
 
@@ -438,7 +469,6 @@
                 </div>
             </div>
         </div>
-
 
 
 

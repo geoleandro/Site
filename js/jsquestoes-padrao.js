@@ -37,6 +37,10 @@ async function carregarDados(id) {
         const response = await fetch(`../../../questoes/${anoPasta}/${id}.json`);
         questoes = await response.json();
         renderizarQuestao();
+        configurarSEOAutomatico(id, 'questao');
+
+
+
     } catch (error) {
         console.error("Erro ao carregar o JSON:", error);
         document.getElementById('container-questao').innerHTML = "Erro ao carregar questões.";
@@ -117,23 +121,13 @@ const gerarAlternativas = (alternativas) => alternativas.map((alt, i) => `
 
 
 // FUNÇÃO PARA EXIBIR A DICA
-function mostrarDica() {
-    const q = questoes[indiceAtual];
-    if (q.ajuda && q.ajuda.texto) {
-        // Localiza o parágrafo dentro da div e injeta o texto do JSON
-        document.getElementById('texto-da-dica').innerText = q.ajuda.texto;
-        // Faz a div aparecer
-        document.getElementById('modal-dica').style.display = 'block';
-    }
-}
 
 function verificar() {
     const selecionada = document.querySelector('input[name="opcao"]:checked');
     const btnVerificar = document.getElementById('btn-verificar');
 
-    // 1. VALIDAÇÃO (Delega ao UI)
+    // 1. VALIDAÇÃO
     if (!selecionada) {
-        // Tenta a função global ou direto no objeto DuvidUI
         if (typeof avisoSelecaoPendente === "function") {
             avisoSelecaoPendente(btnVerificar);
         } else if (typeof DuvidUI !== "undefined") {
@@ -146,34 +140,34 @@ function verificar() {
     const q = questoes[indiceAtual];
     const isCorreto = (resp === q.correta);
 
-    // 2. INTERFACE: Pinta as respostas (Delega ao UI)
+    // 2. INTERFACE: Pinta as respostas (Verde ou Vermelho)
     if (typeof DuvidUI !== "undefined") {
         DuvidUI.estilizarResultadoQuestao(resp, q.correta);
     }
 
-    // 3. GAMIFICAÇÃO & PONTUAÇÃO (Integração com o Banco de Dados)
+    // 3. GAMIFICAÇÃO & PONTUAÇÃO (Lógica de Acerto ou Erro)
+    // 3. O GRANDE GATILHO (A única chamada de efeito/pontos necessária)
+    if (typeof DuvidUI !== "undefined" && typeof DuvidUI.executarGatilhoResultado === "function") {
+        // Se acertou, passa os pontos da constante. Se errou, passa 0.
+        const pontosParaDar = isCorreto ? (typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10) : 0;
+        
+        // Esta função abaixo já faz TUDO: som, confete, erro, salvar pontos e girar a moeda
+        DuvidUI.executarGatilhoResultado(isCorreto, pontosParaDar);
+    }
+
+    // 4. CONTROLE LOCAL: Para o modal de conclusão no final do simulado
     if (isCorreto) {
-        nota++; // Incrementa o contador local para o modal final
-
-        // --- AQUI ENTRA O DUVIDDB ---
-        if (typeof DuvidDB !== "undefined") {
-            // Adiciona os globinhos baseados na constante de recompensa
-            // Se a constante não existir, usamos 10 como padrão (fallback)
-            const valorGanhos = typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10;
-            DuvidDB.addGlobinhos(valorGanhos);
-        }
+        nota++; 
     }
 
-    // 4. EFEITOS (Som, Confete e Atualização do Saldo no Topo)
-    if (typeof executarGatilhoResultado === "function") {
-        executarGatilhoResultado(isCorreto, isCorreto ? (typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10) : 0);
-    }
+     this.atualizarInterface();
 
-    // 5. FEEDBACK E SCROLL
+    // 5. EXIBIR PAINEL DE COMENTÁRIOS E SCROLL
     exibirPainelFeedback(isCorreto, q);
+
     if (btnVerificar) btnVerificar.disabled = true;
-    
-    // Usando o Scroll centralizado que criamos
+
+    // Scroll suave para o comentário do professor
     if (typeof DuvidUI !== "undefined") {
         DuvidUI.scrollParaElemento('feedback-txt', 'center');
     }

@@ -9,20 +9,20 @@ body {
 
 /* No seu arquivo de estilo ou dentro de <style> */
 .status-icon {
-    position: absolute; 
-    top: 10px; 
-    right: 10px; 
-    background: white; 
-    border-radius: 50%; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 50%;
     padding: 2px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn-aula {
-    width: 85%; 
-    max-width: 300px; 
-    font-weight: bold; 
-    padding: 12px; 
+    width: 85%;
+    max-width: 300px;
+    font-weight: bold;
+    padding: 12px;
     border-radius: 8px;
     margin-bottom: 10px;
     transition: 0.3s;
@@ -79,18 +79,22 @@ body {
 
 /* Garante que o painel de pontos tenha largura mínima e não quebre linha */
 #painel-pontos {
-    min-width: 120px; /* Dá espaço para os dois números */
-    flex-shrink: 0;   /* Impede que o flexbox esmague o painel */
+    min-width: 120px;
+    /* Dá espaço para os dois números */
+    flex-shrink: 0;
+    /* Impede que o flexbox esmague o painel */
     justify-content: space-around;
 }
 
 .caixa-total-dourada {
-    background: linear-gradient(145deg, #ffcf33, #ffaa00); /* Degradê Ouro */
-    color: #4a3b00 !important; /* Texto marrom escuro para contraste */
+    background: linear-gradient(145deg, #ffcf33, #ffaa00);
+    /* Degradê Ouro */
+    color: #4a3b00 !important;
+    /* Texto marrom escuro para contraste */
     padding: 2px 8px;
     border-radius: 6px;
     border: 1px solid #e69900;
-    box-shadow: inset 0 1px 1px rgba(255,255,255,0.4);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
     min-width: 45px;
     text-align: center;
     display: flex;
@@ -101,7 +105,7 @@ body {
 .caixa-total-dourada span {
     font-size: 12px !important;
     font-weight: bold;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* Ajuste para o painel não ficar espremido no mobile */
@@ -370,8 +374,13 @@ body.dark-mode #navDemo a {
 }
 
 /* No Dark Mode, garantimos que a barra de feedback não fique "cega" */
-body.dark-mode #barra-feedback.w3-green { background-color: #1b5e20 !important; }
-body.dark-mode #barra-feedback.w3-red { background-color: #b71c1c !important; }
+body.dark-mode #barra-feedback.w3-green {
+    background-color: #1b5e20 !important;
+}
+
+body.dark-mode #barra-feedback.w3-red {
+    background-color: #b71c1c !important;
+}
 
 
 
@@ -414,14 +423,16 @@ body.dark-mode .w3-bar .fa-bars {
     /* Efeito de levante ao passar o mouse */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 /* Ajuste para a barra de feedback inferior */
 #barra-feedback {
-    border-top: 2px solid rgba(0,0,0,0.1);
-    box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
 }
 
 #barra-feedback .w3-button {
-    height: 50px; /* Mais fácil de clicar no celular */
+    height: 50px;
+    /* Mais fácil de clicar no celular */
     letter-spacing: 1px;
     transition: 0.2s;
 }
@@ -480,9 +491,12 @@ body.dark-mode footer .fa-brands {
 
 /* --- BLINDAGEM DARK MODE PARA ALTERNATIVAS --- */
 body.dark-mode .card-opcao {
-    background-color: #2a2a2a !important; /* Cinza escuro */
-    border-color: #444 !important;        /* Borda discreta */
-    color: #eeeeee !important;           /* Texto quase branco */
+    background-color: #2a2a2a !important;
+    /* Cinza escuro */
+    border-color: #444 !important;
+    /* Borda discreta */
+    color: #eeeeee !important;
+    /* Texto quase branco */
 }
 
 /* Efeito de Hover no Dark Mode */
@@ -492,16 +506,19 @@ body.dark-mode .card-opcao:hover {
 }
 
 /* Quando a alternativa estiver SELECIONADA no Dark Mode */
-body.dark-mode .radio-duvid:checked + .card-opcao {
-    background-color: #004d40 !important; /* Verde bem escuro (Teal) */
-    border-color: #009688 !important;     /* Brilho verde na borda */
+body.dark-mode .radio-duvid:checked+.card-opcao {
+    background-color: #004d40 !important;
+    /* Verde bem escuro (Teal) */
+    border-color: #009688 !important;
+    /* Brilho verde na borda */
     color: #ffffff !important;
     box-shadow: 0 0 10px rgba(0, 150, 136, 0.3);
 }
 
 /* Ajuste para o texto de apoio e perguntas no Dark Mode */
 body.dark-mode .w3-panel.w3-sand {
-    background-color: #252520 !important; /* Um areia bem escuro */
+    background-color: #252520 !important;
+    /* Um areia bem escuro */
     color: #f1f1f1 !important;
     border-left-color: #69CB60 !important;
 }
@@ -573,11 +590,12 @@ body.dark-mode p.w3-large {
 
 /* O Segredo Sênior para Pixel Art */
 .img-trofeu-pixel {
-    image-rendering: pixelated; /* Mantém os pixels nítidos */
+    image-rendering: pixelated;
+    /* Mantém os pixels nítidos */
     display: block;
     margin: 0 auto;
-    width:90px; 
-    height:90px; 
+    width: 90px;
+    height: 90px;
     transition: 0.5s;
 }
 
@@ -595,14 +613,16 @@ body.dark-mode p.w3-large {
 
 
 .img-pixel-icon {
-    width: 80px;  /* Tamanho ideal para esses botões */
+    width: 80px;
+    /* Tamanho ideal para esses botões */
     height: 80px;
     margin-bottom: 10px;
-    
+
     /* ESSENCIAL para Pixel Art de alta resolução: */
-    image-rendering: pixelated; 
-    image-rendering: crisp-edges; /* Para Firefox */
-    
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    /* Para Firefox */
+
     transition: transform 0.2s ease-in-out;
 }
 
@@ -625,7 +645,7 @@ body.dark-mode p.w3-large {
 
 /* Garante que os widgets (que não são botões) tenham a mesma altura dos botões */
 .w3-block.w3-white.w3-card.w3-padding-24 {
-    min-height: 180px; 
+    min-height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -634,16 +654,18 @@ body.dark-mode p.w3-large {
 
 /* Nova classe específica para os Ícones dos Widgets Dinâmicos */
 .img-widget-hero {
-    width: 120px; /* Definir um tamanho fixo ajuda na estabilidade da animação */
+    width: 120px;
+    /* Definir um tamanho fixo ajuda na estabilidade da animação */
     height: auto;
     margin-bottom: 10px;
-    image-rendering: pixelated; 
+    image-rendering: pixelated;
     image-rendering: crisp-edges;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Base do Card com transição suave */
-.card-widget, .card-widge {
+.card-widget,
+.card-widge {
     min-height: 280px;
     display: flex;
     flex-direction: column;
@@ -651,48 +673,160 @@ body.dark-mode p.w3-large {
     justify-content: center;
     transition: all 0.3s ease;
     cursor: default;
-    border-bottom: 4px solid transparent; /* Reserva espaço para a borda */
+    border-bottom: 4px solid transparent;
+    /* Reserva espaço para a borda */
 }
 
 /* EFEITO HOVER LEGAL */
-.card-widget:hover, .card-widge:hover {
-    transform: translateY(-8px); /* Card sobe levemente */
-    box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important; /* Sombra mais profunda */
-    border-bottom: 4px solid #4CAF50; /* Linha verde de "ativado" no fundo */
+.card-widget:hover,
+.card-widge:hover {
+    transform: translateY(-8px);
+    /* Card sobe levemente */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    /* Sombra mais profunda */
+    border-bottom: 4px solid #4CAF50;
+    /* Linha verde de "ativado" no fundo */
 }
 
 /* Faz o ícone "pular" e rodar levemente quando passa o mouse no card */
-.card-widget:hover .img-widget-hero, 
+.card-widget:hover .img-widget-hero,
 .card-widge:hover .img-widget-hero {
     transform: scale(1.15) rotate(3deg);
 }
 
 /* Efeito de brilho sutil nos números ao interagir */
-.card-widget:hover .w3-xxlarge, 
+.card-widget:hover .w3-xxlarge,
 .card-widge:hover .w3-xxlarge {
     color: #4CAF50 !important;
     text-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
 }
 
 /* Adicione isso no seu CSS para dar um feedback visual dinâmico */
-#temp-atual.quente { color: #ff5722; } /* Laranja para calor */
-#temp-atual.frio { color: #2196f3; }   /* Azul para frio */
+#temp-atual.quente {
+    color: #ff5722;
+}
+
+/* Laranja para calor */
+#temp-atual.frio {
+    color: #2196f3;
+}
+
+/* Azul para frio */
+
+
+/* Garante que o Pixel Art fique nítido */
+.pixel-art-icon {
+    width: 128px;
+    /* Tamanho ideal para destaque */
+    height: auto;
+    image-rendering: pixelated;
+    /* O segredo da nitidez */
+    image-rendering: crisp-edges;
+}
 
 
 
+/* Efeito de painel de madeira/ferro */
+.inventario-container {
+    background-color: #4a4a4a;
+    /* Cor base escura */
+    border: 4px solid #2d2d2d;
+    box-shadow: inset 4px 4px 0px #6b6b6b, inset -4px -4px 0px #1a1a1a;
+    padding: 15px;
+}
+
+/* O Container Principal (A Moldura do Inventário) */
+.NomeHome {
+    /* 1. Criando as ripas de madeira com gradiente */
+    background: #e3d5b8 !important;
+    /* Cor base (bege amadeirado) */
+    background-image:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        /* Divisão das ripas */
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    /* Textura de fibra */
+    background-size: 80px 100%, 100% 4px;
+    /* Tamanho das ripas e das fibras */
+
+    /* 2. Bordas de "Encaixe" de marceneiro */
+    border: 4px solid #bdae93 !important;
+
+    /* 3. O efeito 3D (Bevel) reforçado */
+    box-shadow:
+        inset 4px 4px 0px #f5eedf,
+        /* Brilho da quina superior (luz) */
+        inset -4px -4px 0px #8d7f6b,
+        /* Sombra da quina inferior (profundidade) */
+        0 8px 15px rgba(0, 0, 0, 0.15);
+    /* Sombra externa projetada */
+
+    padding: 24px !important;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* No seu CSS para o display amarelo */
+#valor-total-central-container {
+    border: 2px solid #b45309;
+    box-shadow: 
+        inset 0px 2px 0px rgba(255,255,255,0.4), /* Brilho do vidro */
+        2px 2px 0px #78350f; /* Sombra sólida de pixel art */
+}
+
+/* O Slot da Medalha - Agora parece madeira entalhada/cavada */
+.medalha-container {
+    /* Invertemos o box-shadow para parecer um buraco escavado */
+    box-shadow: 
+        inset 4px 4px 8px rgba(0,0,0,0.2), /* Sombra profunda */
+        1px 1px 0px rgba(255,255,255,0.8); /* Brilho na quina da madeira */
+    border: 2px solid #bdae93;
+    background-color: #d7ccc8; /* Cor de madeira "cortada" */
+}
+
+/* Deixar o Saldo com cara de Display Digital de RPG */
+.w3-tag.w3-amber {
+    background-color: #facc15 !important;
+    border: 2px solid #b45309;
+    box-shadow: 2px 2px 0px #78350f;
+    font-family: 'Courier New', monospace;
+}
 
 
+/* Estilo Ficha de Papel para os cards internos */
+.card-inventario-item {
+    background-color: #dfded9 !important; /* Cor de papel/pergaminho claro */
+    border: 2px solid #d1c7ac !important; /* Borda sutil */
+    box-shadow: 
+        inset 2px 2px 0px #ffffff,    /* Brilho interno */
+        2px 2px 4px rgba(0,0,0,0.1);  /* Sombra externa suave */
+    transition: transform 0.2s ease;
+}
+
+.card-inventario-item:hover {
+    transform: translateY(-3px); /* Efeito de flutuar ao passar o mouse */
+    background-color: #ffffff !important;
+}
+
+/* Ajuste nas barras para parecerem encaixadas no papel */
+.card-inventario-item .w3-light-grey {
+    background-color: #e0d7c6 !important;
+    border: 1px solid #bdae93;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
 
 
 /* VERSÃO CELULAR - AJUSTE DA NAVBAR */
 @media (max-width: 600px) {
+
     /* Faz a parte direita da barra ser um grupo que não quebra linha */
     .w3-right {
         display: flex !important;
         float: right !important;
-        height: 48px; /* Altura padrão da barra */
+        height: 48px;
+        /* Altura padrão da barra */
         align-items: center;
-        gap: 5px; /* Espaço entre Lua, Globinho e Menu */
+        gap: 5px;
+        /* Espaço entre Lua, Globinho e Menu */
         position: absolute;
         padding-right: 10px !important;
         right: 0;
@@ -700,7 +834,8 @@ body.dark-mode p.w3-large {
     }
 
     /* Garante que o botão da Lua (ou qualquer item na direita) apareça */
-    .w3-bar-item.w3-right, #toggle-dark-mode {
+    .w3-bar-item.w3-right,
+    #toggle-dark-mode {
         display: flex !important;
         padding: 8px 12px !important;
     }
@@ -745,15 +880,70 @@ body.dark-mode p.w3-large {
         padding: 0 10px !important;
     }
 
-    .card-ano {
-        margin: 10px 0 !important;
-        /* Remove margem lateral no mobile para ganhar espaço */
-        padding: 20px !important;
-        /* Diminui o padding interno para caber mais conteúdo */
-    }
+    
 
     .btn-google-play {
         width: 100%;
         /* Botão ocupa toda a largura do card no celular */
+    }
+
+    /* 1. O painel principal ganha mais respiro */
+    .NomeHome {
+        padding: 15px !important;
+        margin: 10px !important;
+    }
+
+   #display-identificado .w3-row {
+        display: flex !important;
+        flex-direction: column !important; /* Itens um embaixo do outro */
+        align-items: center !important;    /* Centraliza tudo horizontalmente */
+        justify-content: center !important;
+        gap: 10px !important;              /* Espaço entre os blocos */
+        text-align: center !important;
+    }
+
+    /* Ajuste da Medalha para não flutuar sobre o texto */
+    .medalha-container {
+        position: relative !important;     /* Garante que ela respeite o fluxo */
+        margin: 0 auto 10px auto !important;
+        width: 80px !important;            /* Tamanho de avatar mobile */
+        height: 80px !important;
+        display: flex !important;
+        order: 1;                          /* Medalha vem primeiro no topo */
+    }
+
+    /* Bloco de Informações (Nome, Level, Rank) */
+    .user-info-wrapper, .w3-left-align {
+        width: 100% !important;
+        text-align: center !important;
+        order: 2;                          /* Nome vem depois da medalha */
+    }
+
+    /* O Saldo de Globinhos (O quadrado amarelo) */
+    .w3-right-align {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 5px !important;
+        order: 3;                          /* Saldo por último ou logo abaixo do nome */
+    }
+
+    /* Ajuste no botão de editar para não fugir da tela */
+    #display-identificado h4 {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    /* 5. Ajusta os cards de ano para ocuparem a largura total */
+    #resumo-geral .w3-third {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    /* 6. Barra de XP: Garante que os textos de XP Atual e Próximo Nível não sumam */
+    .xp-text-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px !important;
     }
 }
