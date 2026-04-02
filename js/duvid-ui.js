@@ -5,6 +5,8 @@ const DuvidUI = {
         const progresso = DuvidDB.getProgressoRPG();
         const saldoFormatado = progresso.saldoAtual.toFixed(1);
 
+        this.atualizarMedalhas(progresso.patente);
+
         // 1. Atualiza Header (Globinhos Dourados)
     const elHeader = document.getElementById("saldoTotalHeader");
     if (elHeader) {
@@ -313,6 +315,35 @@ const DuvidUI = {
             botao.innerHTML = textoOriginal;
             botao.classList.remove('w3-amber', 'shake-erro');
         }, 1500);
+    },
+
+    atualizarMedalhas: function (patente) {
+        if (!patente) return;
+
+        // 1. O "TRADUTOR": Converte "GEÓGRAFO SÊNIOR" em "geografo-senior"
+        const slug = patente.toLowerCase()
+                        .normalize("NFD")
+                        .replace(/[\u0300-\u036f]/g, "")
+                        .replace(/\s+/g, '-');
+        
+        const caminhoImg = `fotoIndex/icones/duvid-patentes-${slug}.png`;
+
+        // 2. O "ALVO": Procura os IDs no HTML (Header e Painel Home)
+        const idsMedalhas = ["medalha-header", "medalha-patente"];
+
+        idsMedalhas.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                // Só troca se a imagem for diferente da atual
+                if (!el.src.includes(caminhoImg)) {
+                    el.src = caminhoImg;
+                    
+                    // 3. O "TOQUE DE MESTRE": Animação de subida de nível
+                    el.classList.add('w3-animate-zoom');
+                    setTimeout(() => el.classList.remove('w3-animate-zoom'), 500);
+                }
+            }
+        });
     },
 
     executarGatilhoResultado: function (correto, pontos = 0) {

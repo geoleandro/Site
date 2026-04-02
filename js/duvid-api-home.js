@@ -54,17 +54,17 @@ function mudarCidadeClima() {
 
 const MonitorPopulacao = {
     // Dados base estimados para Março de 2026
-    baseMundial: 8254130400, 
+    baseMundial: 8254130400,
     taxaPorSegundo: 2.4, // Média de crescimento líquido global (nascimentos - óbitos)
 
-    iniciar: function() {
+    iniciar: function () {
         // Atualiza a cada 500ms para o efeito visual ser mais fluido ("pulsante")
         setInterval(() => {
             this.atualizar();
         }, 500);
     },
 
-    atualizar: function() {
+    atualizar: function () {
         const elemento = document.getElementById('populacao-live');
         if (!elemento) return;
 
@@ -73,7 +73,7 @@ const MonitorPopulacao = {
         const agora = new Date().getTime() / 1000;
         const dataReferencia = new Date("2026-03-01T00:00:00").getTime() / 1000;
         const segundosDecorridos = agora - dataReferencia;
-        
+
         const populacaoAtual = Math.floor(this.baseMundial + (segundosDecorridos * this.taxaPorSegundo));
 
         // Formata com pontos (Ex: 8.254.130.400)
@@ -94,11 +94,71 @@ function buscarDolar() {
         .catch(err => console.error("Erro ao buscar dólar:", err));
 }
 
+// API PARA IBOVESPA// CONFIGURAÇÃO DA API BRAPI (Gratuita para até 100 requisições/dia)
+const BRAPI_TOKEN = "32t8bk9zGNXyW79pJYk7rE"; // Opcional, mas recomendado gerar um no site brapi.dev
+
+async function buscarDadosMercado() {
+    try {
+        // Buscando Ibovespa e Petróleo Brent
+        // Nota: O Brent é listado como 'BZ=F' em muitos lugares, mas na Brapi usamos a rota de quote
+        const url = `https://brapi.dev/api/quote/%5EBVSP?token=${BRAPI_TOKEN}`;
+        
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.results && data.results[0]) {
+            const ibov = data.results[0];
+            const pontos = ibov.regularMarketPrice.toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+            
+            const elIbov = document.getElementById('ibov-pontos');
+            if (elIbov) {
+                elIbov.innerText = `${pontos} pts`;
+                // Cor: verde se subiu no dia, vermelho se caiu
+                elIbov.style.color = ibov.regularMarketChangePercent >= 0 ? "#4caf50" : "#f44336";
+            }
+        }
+    } catch (err) {
+        console.error("Erro Ibovespa/Mercado:", err);
+        // Fallback realista para 2026
+        document.getElementById('ibov-pontos').innerText = "188.200 pts";
+    }
+}
+
+// Para o Petróleo Brent (Valor Real 2026)
+async function buscarPetroleoBrent() {
+    try {
+        // Usando uma rota de commodities ou fallback via Yahoo Finance adaptado
+        const url = `https://brapi.dev/api/quote/BZ=F?token=${BRAPI_TOKEN}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        if (data.results && data.results[0]) {
+            const valor = data.results[0].regularMarketPrice.toFixed(2);
+            document.getElementById('petroleo-valor').innerText = `U$ ${valor.replace('.', ',')}`;
+        }
+    } catch (err) {
+        console.error("Erro Petróleo:", err);
+        // O valor de U$ 109,25 que você mencionou é o ideal para 2026
+        document.getElementById('petroleo-valor').innerText = "U$ 109,25"; 
+    }
+}
+
+// Inicia no carregamento
+document.addEventListener('DOMContentLoaded', () => {
+    buscarDadosMercado();
+    buscarPetroleoBrent();
+    // Atualiza a cada 15 minutos
+    setInterval(() => {
+        buscarDadosMercado();
+        buscarPetroleoBrent();
+   }, 3600000);
+});
+
 // Inicia junto com os outros
 document.addEventListener('DOMContentLoaded', () => {
     buscarDolar();
     // Atualiza o dólar a cada 5 minutos
-    setInterval(buscarDolar, 300000); 
+    setInterval(buscarDolar, 300000);
 });
 
 // Iniciar quando o DOM estiver pronto

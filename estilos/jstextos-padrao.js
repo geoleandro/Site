@@ -375,3 +375,81 @@ function Aparecer(imagem, paragrafo) {
 }
 
 
+/**
+ * Valida respostas abertas de forma flexível
+ * @param {string} inputId - ID do campo de texto
+ * @param {string} gabarito - Resposta correta esperada
+ * @param {string} feedbackId - Onde exibir o texto de retorno
+ * @param {HTMLElement} btn - O botão que foi clicado
+ * @param {string} globinhoId - ID da imagem do globinho
+ */
+function validarAberta(inputId, gabarito, feedbackId, btn, globinhoId) {
+    const inputElement = document.getElementById(inputId);
+    const feedbackElement = document.getElementById(feedbackId);
+    
+    // 1. Tratamento da string (O "pulo do gato" sênior)
+    // Converte para minúsculo e remove espaços inúteis no início/fim
+    let respostaUser = inputElement.value.toLowerCase().trim();
+    
+    // 2. Lógica de validação
+    if (respostaUser === "") {
+        feedbackElement.innerHTML = "<span class='w3-text-red'>Escreva algo antes de conferir!</span>";
+        playSom('erro'); // ou Play2("../audio2.mp3");
+        return;
+    }
+
+    // Compara a resposta (pode usar regex se quiser aceitar "no noroeste" e "noroeste")
+    if (respostaUser.includes(gabarito)) {
+        // ACERTO
+        inputElement.disabled = true;
+        inputElement.classList.add("w3-pale-green");
+        btn.style.display = 'none';
+        
+        feedbackElement.innerHTML = `<span class='w3-text-green'><b>Correto!</b> A resposta é ${gabarito}.</span>`;
+        
+        // Gamificação
+        document.getElementById(globinhoId).style.display = "inline-block";
+        executarGatilhoResultado(true, 10); // Função do seu UI.js que soma pontos e faz confete
+        
+        // Verifica se todas do bloco foram respondidas para mostrar o "Próximo"
+        verificarProgressoBloco(); 
+    } else {
+        // ERRO
+        inputElement.classList.add("w3-border-red");
+        feedbackElement.innerHTML = "<span class='w3-text-red'>Tente novamente! Observe a rosa dos ventos.</span>";
+        playSom('erro');
+    }
+}
+
+/**
+ * Verifica se todas as perguntas do tópico atual foram respondidas
+ * para liberar o botão de próximo de forma automática.
+ */
+function verificarProgressoBloco() {
+    // 1. Encontra o tópico que está visível no momento
+    const topicoAtual = document.querySelector('.topico.mostrar');
+    if (!topicoAtual) return;
+
+    // 2. Conta quantos inputs de texto ou rádio existem neste tópico
+    // (Ajuste os seletores conforme sua necessidade)
+    const perguntas = topicoAtual.querySelectorAll('input[type="text"], .grupo-respostas');
+    const totalPerguntas = perguntas.length;
+
+    // 3. Conta quantos desses já foram "concluídos" (Inputs desativados)
+    const respondidas = topicoAtual.querySelectorAll('input:disabled').length;
+
+    // Se for um bloco de rádio, a lógica muda um pouco, 
+    // mas para campos de texto desativados:
+    if (respondidas >= totalPerguntas && totalPerguntas > 0) {
+        // 4. Localiza o botão de próximo deste tópico específico e o exibe
+        const btnNext = topicoAtual.querySelector('.btnShow[style*="display: none"], .btnHide');
+        if (btnNext) {
+            btnNext.style.display = 'block';
+            btnNext.classList.add('w3-animate-zoom'); // Efeito visual de "liberado"
+            
+            // Opcional: Tocar um som de "Seção Concluída"
+            if (typeof playSom === 'function') playSom('click'); 
+             
+        }
+    }
+}

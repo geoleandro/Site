@@ -375,6 +375,16 @@
                             </a>
                         </div>
 
+
+                        <div class="w3-col l4 m6 w3-margin-bottom">
+                            <a href="paginas/livrosgeografia.html"
+                                class="w3-button w3-block w3-white w3-card w3-hover-yellow w3-padding-24 w3-round-large">
+                                <img src="/fotoIndex/icones/atividades-icone.png" alt="Atividades"
+                                    class="img-pixel-icon"><br>
+                                <span class="w3-large">Atividades</span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -392,46 +402,77 @@
         <div class="w3-container w3-padding-64 w3-light-grey">
             <div class="w3-content" style="max-width:1100px">
                 <h2 class="w3-center w3-margin-bottom"><b>Monitor Global Duvid</b></h2>
-                <div class="w3-row-padding">
+                <div class="w3-row-padding card-monitor-global">
 
+
+                    <!-- CARD POPULAÇÃO -->
                     <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center  card-widge">
-                            <img src="/fotoIndex/icones/populacao-icone.png" alt="População" class="img-widget-hero">
+                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
+                            <img src="/fotoIndex/icones/populacao-icone.png" alt="População"
+                                class="img-widget-hero"><br>
                             <span class="w3-large w3-text-green"><b>Mundo Pulsa</b></span>
                             <div id="populacao-live" class="w3-xxlarge w3-text-dark-grey"
-                                style="font-weight: bold; letter-spacing: -1px;">
-                                8.254.130.400
-                            </div>
-                            <p class="w3-tiny w3-opacity">Estimativa Populacional</p>
+                                style="font-weight: bold; letter-spacing: -1px;">8.254.130.400</div>
+                            <p class="w3-tiny w3-opacity w3-margin-0">Estimativa Populacional</p>
                         </div>
                     </div>
 
 
 
+                    <!-- CARD DÓLAR -->
                     <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widge">
-                            <img src="/fotoIndex/icones/dolar-icone.png" alt="Economia" class="img-widget-hero">
+                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
+                            <img src="/fotoIndex/icones/dolar-icone.png" alt="Economia" class="img-widget-hero"><br>
                             <span class="w3-large w3-text-orange"><b>Dólar Comercial</b></span>
                             <div class="w3-xxlarge w3-text-dark-grey"><b id="dolar-valor">R$ --</b></div>
-                            <p class="w3-tiny w3-opacity">Cotação em tempo real</p>
+                            <p class="w3-tiny w3-opacity w3-margin-0">Cotação em tempo real</p>
                         </div>
                     </div>
 
+
+
+                    <!-- CARD IBOVESPA -->
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
+                            <img src="/fotoIndex/icones/ibovespa-icone.png" alt="Ibov" class="img-widget-hero"><br>
+                            <span class="w3-large w3-text-purple"><b>Ibovespa</b></span>
+                            <div id="ibov-pontos" class="w3-xxlarge w3-text-dark-grey" style="font-weight: bold;">
+                                Carregando...</div>
+                            <p class="w3-tiny w3-opacity w3-margin-0">Pontos da B3 (Brasil)</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD PETRÓLEO -->
+                    <div class="w3-col l4 m6 w3-margin-bottom">
+                        <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
+                            <img src="/fotoIndex/icones/petroleo-icone.png" alt="Petróleo" class="img-widget-hero"><br>
+                            <span class="w3-large w3-text-dark-grey"><b>Petróleo Brent</b></span>
+                            <div id="petroleo-valor" class="w3-xxlarge w3-text-dark-grey" style="font-weight: bold;">U$
+                                109,25</div>
+                            <p class="w3-tiny w3-opacity w3-margin-0">Cotação Internacional (Barril)</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD PETRÓLEO -->
                     <div class="w3-col l4 m6 w3-margin-bottom">
                         <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
                             <img src="/fotoIndex/icones/clima-icone.png" alt="Clima" class="img-widget-hero"><br>
-
-                            <div class="w3-container">
-                                <span class="w3-large w3-text-blue">
-                                    <b id="cidade-nome">Poços de Caldas</b>
-                                    <i class="fa fa-search w3-small w3-opacity w3-hover-text-blue"
-                                        style="cursor:pointer" onclick="mudarCidadeClima()"></i>
-                                </span><br>
-                                <div class="w3-xlarge"><b id="temp-atual">--°C</b></div>
-                                <span id="clima-desc" class="w3-small w3-opacity">Carregando...</span>
-                            </div>
+                            <span class="w3-large w3-text-blue">
+                                <b id="cidade-nome">Poços de Caldas</b>
+                                <i class="fa fa-search w3-small w3-opacity w3-hover-text-blue" style="cursor:pointer"
+                                    onclick="mudarCidadeClima()"></i>
+                            </span>
+                            <div class="w3-xxlarge"><b id="temp-atual">--°C</b></div>
+                            <p id="clima-desc" class="w3-tiny w3-opacity" style="display: block;">Carregando...</p>
                         </div>
                     </div>
+
+
+
+
+
+
 
                 </div>
             </div>

@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../../../estilos/fade.css">
+	<link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+	<link rel="stylesheet" href="../../../estilos/w3.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+	<script src="../../../estilos/jstextos.js" defer></script>
+
+	<title>1º ano - Texto 02 </title>
+
+
+
+
+	<style>
+		.topico {
+			display: block;
+		}
+
+		.topico:nth-child(1),
+		.topico.mostrar {
+			display: block
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-gap: 20px;
+			background-color: gray;
+			padding: 10px;
+			border-radius: 5px;
+			width: auto;
+		}
+
+		.grid-container>div {
+			background-color: lightgrey;
+			border: 1px solid black;
+			text-align: center;
+			font-size: 30px;
+			border-radius: 5px;
+			justify-content: center;
+			padding: 10px;
+		}
+	</style>
+
+
+
+</head>
+
+<body>
+
+
+
+	<div class="topico">
+
+		<div class="centerBar w3-padding-24">
+			<!-- Navigation (Stays on Top) -->
+			<div class="w3-top w3-bar w3-black  larguraBar ">
+				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
+				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
+				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
+						width="32" height="32"></span>
+			</div>
+		</div>
+
+		<div class="w3-padding-top">
+			<div class="w3-white larguraBar w3-padding ladoDireito">
+
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+						id="decrease-font" title="Diminuir fonte">A -</button></div>
+				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+						id="increase-font" title="Aumentar fonte">A +</button></div>
+			</div>
+		</div>
+
+		<h1 id="h1"> Texto 02 – Cartografia: representações do espaço geográfico, localização e coordenadas geográficas.
+		</h1>
+
+
+
+		<p><strong>Conteúdo:</strong> Introdução à História da Cartografia; Mapas; Sistemas referenciais para
+			localização espacial: pontos cardeais; Rotação; coordenadas geográficas, longitude, latitude. </p>
+
+
+
+
+		<p><strong>Objetivo:</strong> Entender a importância da Cartografia para a construção do conhecimento do
+			ser humano. Aplicar o sistema de coordenadas geográficas à localização de pontos na superfície terrestre. </p>
+
+		<button class="btnShow"
+			onclick="MostrarProximo(this);	Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Começar</button>
+
+
+
+
+		<hr>
+
+	</div>
+
+	<div class="topico">
+
+		<p id="caixaNomeAluno">Digite seu nome</p>
+
+		<div class="area">
+			<input class="input" type="text" id="pq0" name="pq0">
+		</div>
+
+		<p id="resp0"></p>
+
+		<button id="buttonConfira" class="btnShow" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
+
+		<button id="buttonA" class="btnHide" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+	</div>
+
+
+	<div class="topico">
+
+		<h2> Introdução </h2>
+
+
+		<p> <span class="primeiraLetra">N</span>a aula passada, vimos que o espaço geográfico e seus
+			conceitos auxiliares, constituem o objeto de estudo da Geografia, uma ciência envolvida com os aspectos
+			sociais e espaciais da sociedade. </p>
+
+		<p>Nesta aula, veremos como a Geografia, em colaboração com a Cartografia, dispõem de técnicas
+			para representar o espaço geográfico.</p>
+
+		<p>Ao final, você saberá qual a importância da Cartografia para o conhecimento do ser humano e,
+			também, aprenderá a localizar-se no espaço pelos pontos cardeais e pelas coordenadas geográficas. </p>
+
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+	</div>
+
+
+	<div class="topico">
+
+
+		<div class="w3-center">
+
+			<h2 class="fontePixel"> <img src="micro2.png" alt="microfone" width="84" height="84"> Duvid - Entrevista
+			</h2>
+
+			<p><strong>Essa semana o convidado é a Cartografia.</strong> </p>
+
+		</div>
+
+
+		<p><strong>Duvid:</strong>. Bem-vinda Cartografia. Sabemos que a
+			senhora está bem ocupada cuidando da localização da Terra. Então, estamos felizes que tenha tido tempo para
+			falar conosco. </p>
+
+		<p><strong>Cartografia: </strong>Sem problemas. E, eu estou bastante ocupada, ainda mais nos dias de
+			hoje com satélites e GPS, antigamente era mais fácil se preocupar com o mapeamento do mundo.</p>
+
+		<p><strong>Duvid: </strong>Podemos imaginar. Antes o ser humano nem sabia escrever e já fazia pinturas nas
+			cavernas ou marcava locais de caça para conseguir voltar com segurança. </p>
+
+		<p><strong>Cartografia: </strong>Foi minha primeira experiência, eu me lembro. Ah, como eu era
+			primitiva, os homens faziam as pinturas no teto das cavernas de animais ou situações do cotidiano. Eu ainda
+			era bem nova, isso há uns 40 mil anos atrás na época do neolítico. Como o tempo passa, não é verdade?</p>
+
+		<p><strong>Duvid: </strong>Sim, passa rápido. Aproveitando esse tema, nós pesquisamos sua rede social e
+			descobrimos essa sua <span onclick="Aparecer('imagem1','citacao1')"><mark>obra aqui</mark></span> que a
+			senhora postou
+			há cerca de 2500 a 3000 anos A.C: </p>
+
+
+		<img id="imagem1" src="tp2Foto1.png" alt="tp2Foto1" class="w3-mobile" style=display:none>
+
+
+		<span class="citacao" id="citacao1" style=display:none>Fonte: https://commons.wikimedia.org.</span>
+
+
+		<p><strong>Cartografia: </strong>Vocês pesquisam mesmo sobre nossa origem! Esse trabalho é uma
+			verdadeira relíquia. Eu até esqueci a data correta lá na Mesopotâmia. Hoje já mudou o nome, para o atual
+			Iraque e Kuwait, mas antigamente era na cidade da Babilônia que fazíamos esse tipo de mapa. Era comum
+			escrever na argila, queríamos registrar o encontro do rio Tigre com o Eufrates, tempo bom aquele.</p>
+
+		<p><strong>Duvid: </strong>E, do mesmo modo, os gregos tiveram um papel muito importante para conhecer o
+			espaço geográfico, não foi? </p>
+
+		<p><strong>Cartografia: </strong>Sem dúvida. Eu ajudei Eratóstenes, uns 200 anos antes de Cristo, a
+			fazer um mapa da área até então conhecida pelos homens, eles não sabiam o que ainda estava por vir.</p>
+
+		<p><strong>Duvid: </strong>Nós também recuperamos essa obra-prima. Olha, uma reconstituição (de autor
+			não identificado) do <span onclick="Aparecer('imagem2','citacao2')"><mark>mapa de Eratóstenes</mark></span>,
+			de cerca
+			de 220 A.C. O matemático, geógrafo, poeta grego e bibliotecário de Alexandria usou os levantamentos do mundo
+			conhecidos, após as conquistas de Alexandre, o Grande. </p>
+
+		<img id="imagem2" src="tp2Foto2.png" alt="tp2Foto2" class="w3-mobile" style=display:none>
+
+		<span class="citacao" id="citacao2" style=display:none>Fonte:
+			http://www.mapas-historicos.com/mapa-eratostenes.html.</span>
+
+		<p><strong>Cartografia: </strong>Maravilhoso. Esse mapa mostra a Europa, parte da Ásia e parte do Norte
+			da África. E ele ainda fez o cálculo da circunferência da Terra, quase de maneira exata com os dados de
+			hoje.</p>
+
+		<p><strong>Duvid: </strong>Esses gregos eram realmente incríveis. A china e o mundo árabe produziram
+			muitos mapas. Mas na Idade Média, um chamou à atenção, <span
+				onclick="Aparecer('imagem3','citacao3')"><mark>o mapa em
+					T.</mark></span> Por que ele foi tão importante? O que significa esse formato?</p>
+
+
+		<img id="imagem3" src="tp2Foto3.png" alt="tp2Foto3" class="w3-mobile" style=display:none>
+
+		<span class="citacao" id="citacao3" style=display:none> Fonte: https://pt.wikipedia.org/wiki/Mapa_T_e_O. </span>
+
+
+
+		<p><strong>Cartografia: </strong>Bom, diferente dos outros mapas, esse representou a influência da
+			religião cristã. Eu vivi muito ligada à igreja. Perceba que a forma em círculo representa a esfericidade da
+			Terra e a letra T a divisão entre a Europa, Ásia e África. Mas não posso negar a representação da cruz
+			cristã e da Santíssima Trindade nesse mapa. Era comum colocar Jerusalém no centro dos mapas. </p>
+
+		<p><strong>Duvid: </strong>Uau! Que história. E ainda nem haviam mapeado as Américas. E para encerrar,
+			uma última pergunta: Como a senhora se definiria? </p>
+
+		<p><strong>Cartografia: </strong>Essa pergunta é realmente difícil. Eu diria que não sou de uma única
+			maneira ou não me defino por apenas um ângulo. Eu sou uma ciência, mas também uma técnica. E porque não
+			dizer uma arte! Eu ajudo os homens a conhecerem e representarem o mundo e sou quase como uma irmã para a
+			Geografia em particular. Eu mudei muito com o passar do tempo. Lembra que comecei nas cavernas, passei pela
+			argila, pelo couro, pelos papiros, as grandes navegações e hoje estou inteiramente conectada com os
+			satélites pela internet. Eu localizo fenômenos naturais e sociais e estou em constante mutação. É isso que
+			penso que sou.</p>
+
+		<p><strong>Duvid: </strong>Nós vimos hoje um outro lado seu, senhora Cartografia. Acho que teremos que
+			fazer outra entrevista no futuro. </p>
+
+		<p><strong>Cartografia: </strong>Eu agradeço pelo interesse e, da mesma forma, de poder compartilhar o
+			que sei. Obrigado e até mais.</p>
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+	</div>
+
+
+
+	<div class="topico">
+
+		<p class="caixa"> Agora é com você!</p>
+
+
+		<div class="w3-padding">
+			<h4 class="divCaixa1">Após ter lido a Entrevista com a Cartografia, <strong>escreva em seu caderno três
+					perguntas</strong> que gostaria de fazer para aprender mais sobre esse tema. Seja criativo! Vale um
+				globinho.
+				Você precisará deles para completar sua aula e seguir adiante.</h4>
+		</div>
+
+		<button class="btnShow"
+			onclick="MostrarProximo(this); MostrarFrase('resp9', 'globinho9a','','isso ai, ganhou seu primeiro globinho!','1'); this.style.display='none'">Proximo</button>
+
+
+
+		<p id="resp9"></p>
+
+		<div class="area">
+			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho9a" style="display:none" alt="globinho9a"
+					width="64" height="64"> </p>
+		</div>
+
+		<hr>
+
+	</div>
+
+
+
+
+
+	<div class="topico">
+
+
+		<h2> Por que aprender a se localizar?</h2>
+
+		<p> É comum representar o espaço geográfico para melhor conhecê-lo. Mas como fazer isso? É ai
+			que entre a Cartografia. Assim como aprender a ler e escrever é vital para nossa formação humana, “ler” o
+			espaço em que vivemos é fundamental para melhor organizarmos nosso bairro, cidade ou país.:</p>
+		<p> Veja o que diz um famoso geógrafo francês, Yves Lacoste:</p>
+
+		<div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding"> “Vai-se à escola para aprender a ler, a escrever
+			e a
+			contar. Por que não para
+			aprender a ler uma carta? Por que não para compreender a diferença entre uma carta de grande escala e uma
+			outra em pequena escala e se perceber que não há nisso apenas uma diferença de relação matemática com a
+			realidade, mas que elas não mostram as mesmas coisas? Por que não aprender a esboçar o plano da aldeia ou do
+			bairro? Por que não representam sobre o plano de sua cidade os diferentes bairros que conhecem, aquele onde
+			vivem, aquele onde os pais das crianças vão trabalhar etc.? Por que não aprender a se orientar, a passear na
+			floresta, na montanha, a escolher determinado itinerário para evitar uma rodovia que está congestionada?”
+			<span class="w3-small w3-sand">(LACOSTE, 2003, p.55).</span>
+		</div>
+
+
+		<p> As cartas, como veremos a seguir, representam áreas menores que o mapa. Esse registro do
+			espaço geográfico começou quando os homens estabeleceram referências simples para sua localização, como
+			montanhas, rios, árvores ou outros elementos da paisagem para retornarem de maneira segura para casa.:</p>
+		<p> Outra referência principal foi por meio dos astros, no caso o Sol, a lua e as estrelas.
+			Foi ai que foi desenvolvido pelos homens um sistema de referências chamado de <span
+				onclick="this.innerHTML='pontos cardeais (pontos principais)'"><mark>pontos cardeais </mark></span>.
+			Veja a representação
+			<span onclick="Aparecer('imagem4','citacao4')"><mark>aqui</mark></span>:
+		</p>
+
+		<img id="imagem4" src="tp2Foto4.png" alt="tp2Foto4" class="w3-mobile" style=display:none>
+
+		<span class="citacao" id="citacao4" style=display:none> Fonte: Carpanelli (2015, p.7). Adaptado.</span>
+
+		<p> Para se localizar por meio do Sol, temos que observar em que lado ele “nasce” ou surge
+			pela manhã. Esse fenômeno ocorre devido o movimento de rotação da Terra.</p>
+
+		<p><span class="mark2"> <strong>Rotação</strong></span> - O movimento de rotação terrestre é aquele que
+			o
+			planeta executa em torno de seu próprio eixo, em um período de, aproximadamente, 24 horas. Graças a ele, a
+			Terra é achatada nos polos e expandida no Equador, não formando uma esfera perfeita. Mas é, também, por
+			causa desse movimento que temos a variação dos períodos de claro e escuro, isto é, dias e noites na Terra,
+			dentre outros fenômenos. <span onclick="Aparecer('imagem5','citacao5')"><mark>Veja a
+					imagem:</mark></span> </p>
+
+		<img id="imagem5" src="tp2Foto5.png" alt="tp2Foto5" class="w3-mobile" style=display:none>
+
+		<span class="citacao" id="citacao5" style=display:none> </span>
+
+		<p> Na realidade, o sol não nasce todo dia, mas sim a Terra que gira em torno de si mesma e
+			possibilita esse movimento aparente do Sol.
+
+		</p>
+
+		<p> É esse movimento que utilizamos para nos <span
+				onclick="this.innerHTML='orientarmos (tomar o rumo certo)'"><mark> orientarmos </mark></span> no espaço.
+			Desse modo, ao apontar o braço direito para onde o Sol nasce estabeleceu-se uma <span
+				onclick="this.innerHTML='convenção (acordo)'"><mark> convenção </mark></span> que seria o ponto cardeal
+			Leste. Isso porque na tradição religiosa, Jerusalém estava no Leste da Europa ou Oriente. Já o lado oposto
+			ou o braço esquerdo é o Oeste ou Ocidente.</p>
+
+
+		<p> À nossa frente está o Norte, e nas nossas costas o Sul. A mesma coisa acontece com a Lua.
+			Ela nasce no Leste e se põe no Oeste. </p>
+
+
+		<p> A nossa frente está o Norte, e nas nossas costas o Sul. A mesma coisa acontece com a Lua.
+			Ela nasce no Leste e se põe no Oeste. </p>
+
+
+		<p> É possível, também, orientar-se pelas estrelas. Nesse caso através das constelações da
+			<span onclick="Aparecer('imagem6','citacao6')"><mark>Ursa Menor</mark></span>, (visível somente no
+			hemisfério Norte) e a <span onclick="Aparecer('imagem7','citacao7')"><mark>Cruzeiro do
+					Sul </mark></span>(visível no hemisfério Sul).
+		</p>
+
+
+		<img id="imagem6" src="tp2Foto6.png" alt="tp2Foto6" class="w3-mobile" style=display:none>
+
+
+		<span class="citacao" id="citacao6" style=display:none> Constelação da Ursa menor. Fonte: Carpanelli (2015,
+			p.7). Adaptado. </span>
+
+		<img id="imagem7" src="tp2Foto7.png" alt="tp2Foto7" class="w3-mobile" style=display:none>
+
+
+
+		<span class="citacao" id="citacao7" style=display:none> Constelação Cruzeiro do Sul. Fonte: Moreira e Sene
+			(2016, p.32).
+
+		</span>
+
+
+
+		<p> É por isso que temos a <span onclick="Aparecer('imagem8','citacao8')"><mark>Rosa-dos-Ventos</mark></span>.
+			Inicialmente utilizada para a navegação, daí o seu nome e formato ligado ao vento. Ela concentra a ideia do
+			plano cartesiano de Norte e Sul no eixo Y e de Leste e Oeste no
+			eixo X. Além de seus pontos colaterais: nordeste, noroeste, sudoeste e sudeste, além de outros. </p>
+
+		<img id="imagem8" src="tp2Foto8.png" alt="tp2Foto8" class="w3-mobile" style=display:none>
+
+		<span class="citacao" id="citacao8" style=display:none> Fonte: Organizado pelo autor.</span>
+
+
+		<p> Entretanto, essa navegação somente por orientação pelos astros, as vezes não é muito
+			precisa ou exata. Diante disso, os aparelhos foram <span
+				onclick="Aparecer('imagem9','citacao9')"><mark>aperfeiçoados
+				</mark></span>, tais como a bússola, inventada pelos chineses e com uma agulha imantada que aponta para
+			o norte magnético da Terra; o Astrolábio, que determinava geometricamente a posição das estrelas, mas era de
+			difícil manuseio e foi substituído pelo Sextante. Este utiliza o sistema de latitudes que veremos
+			adiante.</p>
+
+
+		<img id="imagem9" src="tp2Foto9.png" alt="tp2Foto9" class="w3-mobile " style=display:none>
+
+		<span class="citacao" id="citacao9" style=display:none> Fonte: Organizado pelo autor, Wikipedia. </span>
+
+		<br><br>
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+		<hr>
+
+
+
+
+
+	</div>
+
+
+
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Teste seu conhecimento</p>
+
+		<p>Denominação do local onde vemos o nascimento aparente do sol?</p>
+
+
+
+
+		<button class="desativar3 p4  w3-padding area w3-margin "
+			onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','');this.style.backgroundColor='tomato'">Oeste</button>
+		<button class="desativar3 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);MostrarFrase('resp3','globinho3', 'desativar3', 'muito bem, essa foi bem fácil ', '0.25'); this.style.backgroundColor='lightgreen'">
+			Leste</button>
+		<button class="desativar3 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','');this.style.backgroundColor='tomato'">Sul</button>
+		<button class="desativar3 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','');this.style.backgroundColor='tomato'">Norte</button>
+
+
+
+
+
+
+
+
+
+		<p id="resp3"></p>
+
+		<div class="area">
+			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+					width="64" height="64"> </p>
+		</div>
+
+
+		<hr>
+
+
+
+
+
+	</div>
+
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Teste seu conhecimento</p>
+
+
+		<p>Denominação do local onde vemos o poente do sol?</p>
+
+
+
+
+
+		<button class="desativar4 p4 w3-padding area w3-margin"
+			onclick="MostrarProximo(this);MostrarFrase('resp4','globinho4', 'desativar4', 'essa foi mamão com açúcar ', '0.25'); this.style.backgroundColor='lightgreen'">Oeste</button>
+
+
+		<button class="desativar4 p4 w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','');this.style.backgroundColor='tomato'">Norte</button>
+
+
+		<button class="desativar4 p4 w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','');this.style.backgroundColor='tomato'">Leste</button>
+
+
+		<button class="desativar4 p4 w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','');this.style.backgroundColor='tomato'">Sul</button>
+
+
+
+
+
+
+
+		<p id="resp4"></p>
+
+		<div class="area">
+			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
+					width="64" height="64"> </p>
+		</div>
+
+
+
+		<hr>
+
+
+
+
+
+	</div>
+
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Teste seu conhecimento</p>
+
+
+		<p>Denominação do local que fica a sua frente ao estender o braço esquerdo na direção do
+			surgimento do sol?</p>
+
+
+
+
+		<button class="desativar5 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','');this.style.backgroundColor='tomato'">Norte</button>
+
+
+		<button class="desativar5 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','');this.style.backgroundColor='tomato'">Leste</button>
+
+
+		<button class="desativar5 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','');this.style.backgroundColor='tomato'">Oeste</button>
+
+
+		<button class="desativar5 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);MostrarFrase('resp5','globinho5', 'desativar5', 'suave na nave essa questão', '0.25'); this.style.backgroundColor='lightgreen'">Sul</button>
+
+
+
+
+
+
+
+		<p id="resp5"></p>
+
+		<div class="area">
+			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5"
+					width="64" height="64"> </p>
+		</div>
+
+
+		<hr>
+
+
+	</div>
+
+
+
+
+
+
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Teste seu conhecimento</p>
+
+
+
+		<p>Denominação do local que fica em suas costas ao estender o braço direito na direção poente
+			do sol?</p>
+
+
+
+
+
+		<button class="desativar6 p4  w3-padding area w3-margin "
+			onclick="MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','');this.style.backgroundColor='tomato'">Sul</button>
+
+		<button class="desativar6 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);MostrarFrase('resp6','globinho6', 'desativar6', 'essa foi de boa na lagoa ', ' 0.25'); this.style.backgroundColor='lightgreen'">Norte</button>
+
+
+		<button class="desativar6 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','');this.style.backgroundColor='tomato'">Leste</button>
+
+
+		<button class="desativar6 p4  w3-padding area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','');this.style.backgroundColor='tomato'">Rotação</button>
+
+
+		<p id="resp6"></p>
+
+		<div class="area">
+			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho6" style="display:none" alt="globinho6"
+					width="64" height="64"> </p>
+		</div>
+
+
+
+
+
+
+	</div>
+
+
+	<div class="topico">
+
+		<button class="btnShow"
+			onclick="MostrarProximo(this); VerificaInteiro('resp6');this.style.display='none'">Proximo</button>
+		<hr>
+
+	</div>
+
+
+
+
+
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Teste suas habilidades!</p>
+
+
+
+		<div class="w3-container">
+			<h4 class="divCaixa1"> Encontre as direções dos objetos no mapa do tesouro abaixo e as escreva
+				corretamente:</h4>
+			<p><img src="tp2Foto10.png" alt="teste2" class="w3-mobile"> </p>
+		</div>
+
+
+
+
+
+
+		<form id="quiz" name="quiz">
+
+
+
+			<p>Em qual direção está o coqueiro ?</p>
+			<div class="area"><input class="input" id="q1a" type="text" name="q1a" value=""></div>
+
+
+
+			<p id="resp1a"></p>
+
+
+			<div class="w3-padding-24">
+				<input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
+					onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho8')">
+			</div>
+
+
+
+
+			<div class="area">
+				<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho8" style="display:none" alt="globinho8"
+						width="64" height="64"> </p>
+			</div>
+
+
+
+
+
+			<p>Em qual direção está o baú do tesouro ?</p>
+
+			<div class="area"><input class="input" id="q1c" type="text" name="q1c" value=""></div>
+
+
+			<p id="resp1c"></p>
+
+
+			<div class="w3-padding-24">
+				<input class="btnShow" id="buttonConferirQ1c" type="button" value="Conferir"
+					onclick="PerguntasAbertas(3,'resp1c','buttonConferirQ1c','globinho10')">
+			</div>
+
+
+
+			<div class="area">
+				<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho10" style="display:none" alt="globinho10"
+						width="64" height="64"> </p>
+			</div>
+
+
+
+
+
+		</form>
+
+
+
+		<button class="btnHide" id="buttonq1d"
+			onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1c')">Proximo</button>
+
+		<hr>
+
+	</div>
+
+
+
+	
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Teste seu conhecimento!!</p>
+
+		<div class="w3-panel w3-leftbar w3-sand w3-margin">
+
+			<p class="w3-sand"> É preciso lembrar que ninguém escolhe o ventre, a localização
+				geográfica, a
+				condição socioeconômica e a condição cultural para nascer. Nasce onde o acaso determinar. Por isso,
+				temos
+				que cuidar de todos aqueles que estão em todos os recantos deste planeta." (Aziz Ab'Saber, geógrafo.)
+			</p>
+		</div>
+
+
+		<p>Pode-se <span onclick="this.innerHTML='inferir (concluir, deduzir)'"><mark> inferir
+				</mark></span> do texto acima:</p>
+
+		<button class="desativar7 p4 area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">a)
+			a política territorial é seletiva.</button>
+
+
+		<button class="desativar7 p4 area w3-margin"
+			onclick="MostrarProximo(this);MostrarFrase('resp7','globinho7', 'desativar7', 'essa foi uma boa questão, acertou! ', ' 1'); this.style.backgroundColor='lightgreen'">b)
+			a política deve abranger a todos.</button>
+
+
+		<button class="desativar7 p4 area w3-margin"
+			onclick="MostrarProximo(this);RetirarPontos('resp7','globinho7', 'desativar7','1');this.style.backgroundColor='tomato'">c)
+			a vida é feita de escolhas. </button>
+
+
+
+
+
+		<p id="resp7"></p>
+
+		<div class="area">
+			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho7" style="display:none" alt="globinho7"
+					width="64" height="64"> </p>
+		</div>
+
+
+		<hr>
+	</div>
+
+
+
+
+
+
+
+	<div class="topico">
+
+		<h2> As Coordenadas Geográficas</h2>
+
+
+		<p>Vimos que a localização através dos astros como o Sol, a lua ou as estrelas nem sempre
+			possuem a precisão necessária ou exata. </p>
+
+		<p>Para resolver esse problema, desde o tempo dos gregos, um sistema de linhas imaginárias
+			foram criados para obter uma localização exata de qualquer ponto na Terra, as chamadas coordenadas
+			geográficas.</p>
+
+		<p><span class="mark2"> <strong>Coordenadas geográficas</strong></span> - Consiste em um sistema de
+			mapeamento global utilizado pela Cartografia e baseado em linhas imaginárias sobre a superfície
+			terrestre e
+			alinhadas ao eixo de rotação do planeta. É formado por linhas horizontais (<strong>paralelos</strong>) e
+			verticais
+			(<strong>meridianos</strong>). </p>
+
+		<img src="tp2Foto11.png" alt="tp2Foto11" class="w3-mobile">
+
+
+		<span class="citacao"> Fonte: (Freitas, 2005). </span>
+
+
+		<p><span class="mark2"> <strong>Paralelos </strong></span> - São linhas que dividem o globo
+			horizontalmente, sendo o Equador o paralelo zero grau. (0º). Este divide o globo em dois hemisférios:
+			<strong>Norte</strong> (Boreal ou setentrional) e <strong>Sul</strong> (Austral ou Meridional).
+		</p>
+
+
+
+		<img src="tp2Foto12.png" alt="tp2Foto12" class="w3-mobile">
+
+
+		<span class="citacao"> Fonte: (Freitas, 2005). </span>
+
+
+		<p id="Fundo1"><span class="mark2"> <strong>Meridianos </strong></span> - São linhas imaginárias que
+			dividem o globo verticalmente em: hemisfério oriental (<strong>Leste</strong>) e ocidental
+			(<strong>Oeste</strong>). O Meridiano
+			zero grau foi convencionado como o da cidade de Greenwich, nos arredores Londres, Inglaterra. </p>
+
+
+		<img src="tp2Foto14.png" alt="tp2Foto14" class="w3-mobile">
+
+
+		<span class="citacao"> Fonte: (Freitas, 2005). </span>
+
+		<p><span class="mark2"> <strong>Latitude </strong></span> - É o ângulo formado pelo paralelo principal,
+			Equador e o paralelo do lugar que se quer localizar, variando de 0º a 90º Sul ou Norte </p>
+
+
+		<p><span class="mark2"> <strong>Longitude </strong></span> - É o ângulo formado entre o meridiano
+			inicial,
+			Greenwich, e o meridiano do lugar que queremos localizar. A longitude varia de 0º a 180 para Leste e
+			para
+			Oeste. </p>
+
+
+		<p> Juntos, Latitude e Longitude formam o sistema de referência para localização espacial
+			terrestre. </p>
+
+		<img src="tp2Foto15.png" alt="tp2Foto15" class="w3-mobile">
+
+
+
+		<p>Para facilitar a localização, as coordenadas são, frequentemente, dispostas em um
+			planisfério (assunto ligado as Projeções Cartográficas que veremos nas próximas aulas). </p>
+
+		<img src="tp2Foto16.png" alt="tp2Foto16" class="w3-mobile">
+
+		<span class="citacao"> Fonte: https://suportegeografico77.blogspot.com/ </span>
+
+
+		<p>Para localizarmos qualquer ponto na superfície da Terra, basta iniciarmos pela Latitude
+			(Norte ou Sul) e depois a Longitude (Oeste ou Leste). </p>
+
+
+		<p> Exemplo: Localização do ponto A acima: </p>
+		<p> <span class="w3-yellow">Ponto A:</span> Lat. 50ºS, Long. 100ºL ou 50ºS 100ºL. É comum aparecer a
+			nomenclatura em inglês
+			das localizações: North, South, East e West. </p>
+		<p> <span class="w3-yellow">Ponto B:</span> Lat. 30ºN, Long. 160ºL ou 30ºN 160ºL</p>
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+		<hr>
+
+	</div>
+
+
+
+
+
+	<div class="topico">
+
+		<p class="caixa"> Agora é com você!</p>
+
+
+		<h4 class="divCaixa1 w3-margin-bottom">Localize no planisfério acima os pontos C, D, E e escreva em seu
+			<strong>caderno</strong> corretamente:
+		</h4>
+
+		<h4 class="divCaixa1 w3-padding w3-margin-bottom">Ponto C: Lat.: ___º__; Long.:___º___.</h4>
+
+		<h4 class="divCaixa1 w3-padding w3-margin-bottom">Ponto D: Lat.: ___º __; Long.:___º___.</h4>
+
+		<h4 class="divCaixa1 w3-padding w3-margin-bottom">Ponto E: Lat.: ___º __; Long.:___º___.</h4>
+
+
+
+
+		<button class="btnShow"
+			onclick="MostrarProximo(this); MostrarFrase('resp1', 'globinho1','','Esse exercício merece mais um globinho',' 1'); this.style.display='none'">Proximo</button>
+
+
+
+		<p id="resp1"></p>
+
+		<div class="area">
+			<p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
+					width="64" height="64"> </p>
+		</div>
+
+		<hr>
+
+
+
+
+	</div>
+
+
+
+
+
+	<div class="topico">
+
+
+
+		<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+
+		<p class="paragrafo borda"> <span class="primeiraLetra">P:</span> <strong>Sempre que penso em Geografia já
+				me
+				lembro de mapas, isso é correto?</strong> </p>
+
+		<p><span class="primeiraLetra">R:</span> Sim, isso é normal devido à associação com a
+			linguagem cartográfica. Aliás, podemos dizer que a linguagem da Geografia é a Cartografia. Embora os
+			mapas
+			sejam usados em diversas áreas do conhecimento, é na Geografia que ele é mais evidente pelo fato de que
+			o
+			estudo do espaço geográfico se torna melhor representado pelos mapas.</p>
+
+
+
+		<p class="paragrafo borda"><span class="primeiraLetra">P:</span> <strong>Qual a diferença entre mapas,
+				cartas e
+				plantas?</strong> </p>
+
+		<p><span class="primeiraLetra">R:</span> Trata-se, mais uma vez, de formas de representar o
+			espaço geográfico e do nível de detalhes que queremos revelar. Por exemplo, quero que um arquiteto faça
+			um
+			modelo de uma casa, ele usará uma planta com uma escala próxima da realidade (assunto que veremos nas
+			próximas aulas). Já o mapeamento de bairro inteiro exige outra escala. Quero representar o território
+			brasileiro, então usamos o mapa, pois o nível de detalhes não será muito grande.</p>
+
+		<p class="paragrafo borda"> <span class="primeiraLetra">P:</span> <strong>Qual a circunferência da Terra e
+				quanto vale 1º em km, já que a Terra é uma esfera de 360º?</strong> </p>
+
+		<p><span class="primeiraLetra">R:</span> Para saber quanto vale 1º grau devemos dividir a
+			circunferência da Terra no Equador, que é de 40.075 km por 360º. O resultado é de aproximadamente 111
+			km.
+			Isso no Equador, pois a longitude varia de acordo com a proximidade dos polos. Como o dia tem 24 horas e
+			uma
+			circunferência tem 360º, se dividirmos 360 por 24m obteremos 15º, que é o caminho percorrido pela Terra
+			em
+			apenas 01 hora. Calcular a longitude é fazer esse cálculo de tempo entre uma posição e outra. </p>
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio!</button>
+		<br><br>
+
+		<hr>
+
+	</div>
+
+
+
+
+	<div class="topico">
+
+		<p class="paragrafo  caixa"> Combine as imagens com textos sobre o tema da Cartografia. Valor: 3 globinhos.
+		</p>
+		<br><br>
+
+
+		<div class="area">
+			<div class="grid-container">
+				<div id="div9">Mapa</div>
+				<div><img id="div12" src="tp2Foto14.png" alt="div12" width="100" height="80"></div>
+				<div id="div7">Cruzeiro do Sul</div>
+				<div id="div8"><img id="div8a" src="tp2Foto5.png" alt="div8" width="100" height="60"></div>
+				<div><img id="div2" src="tp2Foto12.png" alt="div2" width="100" height="80"></div>
+				<div><img id="div4" src="tp2Foto10.png" alt="div4" width="100" height="80"> </div>
+				<div id="div1">Rotação </div>
+				<div id="div11">Longitude</div>
+				<div><img id="div10" src="tp2Foto17.png" alt="div10" width="100" height="60"> </div>
+				<div><img id="div6" src="tp2Foto7.png" alt="div6" width="100" height="120"></div>
+				<div id="div3">Latitude</div>
+				<div id="div5">Bússola</div>
+
+			</div>
+		</div>
+
+		<p id="resp10"></p>
+		<br><br>
+
+
+
+
+
+		<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+
+
+	</div>
+
+	<div class="topico">
+
+
+
+		<button class="btnShow" onclick="mostraCinza2(); this.style='display:none'">Finalizar</button>
+
+
+
+
+
+
+		<div class="w3-container">
+
+
+
+			<div id="id01" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+					<div class="w3-center"><br>
+						<span onclick="document.getElementById('id01').style.display='none'"
+							class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+							title="Close Modal">&times;</span>
+
+
+
+						<div class="nota zoom  ">
+
+						</div>
+
+						<img src="globinhoPe.png" alt="Avatar" style="width:20%" class="w3-circle w3-margin-bottom">
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<div class="margemAcima">
+
+		<span id="txtBarra">0%</span>
+		<progress value="0" max="100" id="progress"></progress>
+	</div>
+
+
+
+	<div class="bibliografias">
+
+
+		<h3><strong>Referências bibliográficas</strong></h3>
+
+		<p>CARPANELLI,Francesca. <strong>La geografia in 30 lezioni</strong>. Geografia generale ed economica.
+			Itália:
+			Zanichelli, 2015.</p>
+
+		<p>FREITAS, Maria Isabel Castreghini de (Org.). <strong>Cartograﬁa e Meio Ambiente</strong>. Rio Claro:
+			IGCE/UNESP; Bauru: FC/Unesp; CECEMCA. 2005.</p>
+
+		<p>SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil</strong>: espaço geográfico
+			e
+			globalização: ensino médio 3. ed. São Paulo: Scipione, 2016.</p>
+
+		<p>Yves Lacoste. <strong>A geografia</strong> – isso serve, em primeiro lugar, para fazer a guerra. 2. ed.
+			Campinas: Papirus, 2003 [1989]./p>
+
+	</div>
+
+
+
+
+
+
+	<script>
+
+
+		Clicou1 = 0;
+		Clicou2 = 0;
+
+
+
+
+
+
+		function MostrarProximo(parametro) {
+
+			var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+			var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+			if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+			{
+				proximo.classList.add('mostrar'); // Mostrar o seguinte
+				addProgressBar();
+				//numButton();
+				ApagaButton();
+
+				document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+			}
+
+		}
+
+
+
+		// Deixa as divs cinzas quando completar a atividade
+		function mostraCinza2() {
+
+
+			var t = document.getElementsByClassName("topico");
+			var radiosInput = document.getElementsByTagName('input');
+			var todosBtn = document.getElementsByTagName('button');
+
+			for (var i = 0; i < t.length; i++) {
+
+				t[i].style.color = "gray";
+				t[i].style.transition = "6s";
+
+			}
+
+			mostrarNota2();
+			mostraBiblio();
+			document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+			for (var i = 0; i < radiosInput.length; i++) {
+				radiosInput[i].disabled = true;
+
+			}
+
+
+			for (var b = 0; b < todosBtn.length; b++) {
+				todosBtn[b].disabled = true;
+				todosBtn[b].style.backgroundColor = "gray";
+			}
+
+
+		}
+
+		//Mostra a nota no final da aula
+		function mostrarNota2() {
+
+
+
+			globoFinalNota = document.getElementsByClassName("nota");
+
+
+			ClassGrid();
+			if (nota >= 6) {
+				for (var i = 0; i < globoFinalNota.length; i++) {
+					document.getElementById('id01').style.display = "block";
+					globoFinalNota[i].style.display = "block";
+					globoFinalNota[i].innerHTML = "Parabéns " + nomeEstudante + "," + " você ganhou: " + nota + " globinhos! e completou sua lição!";
+					Play("../notaFinal.mp3");
+
+
+				}
+
+
+
+			}
+			else {
+				for (var i = 0; i < globoFinalNota.length; i++) {
+					document.getElementById('id01').style.display = "block";
+					globoFinalNota[i].style.display = "block";
+					globoFinalNota[i].innerHTML = nomeEstudante + ", você não completou sua lição, pois conseguiu apenas " + nota + " globinho(s). Tente novamente.";
+					Play("../notaFinal2.mp3");
+
+
+				}
+			}
+
+		}
+
+
+		// function addNota(pontos)
+		// {
+
+		// 	nota += pontos;
+		// }
+
+		//Mostra a resposta correta. Deve ser colocado o nome para ser exibido na tela (resp), o id do globo, a desativação da questão e a mensagem
+
+
+
+
+		function addProgressBar() {
+			var barra = document.getElementById("progress");
+			txtBarra = document.getElementById("txtBarra");
+
+			i = Math.round(100 / 17);
+			barra.value += i;
+
+			if (barra.value >= 100) {
+				barra.value = 100;
+			}
+
+			txtBarra.innerHTML = barra.value + "%";
+
+		}
+
+
+
+
+		let notaPergunta = 0;
+
+		// Função com perguntas abertas feita com formulário
+		function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
+
+
+			var q1a = document.quiz.q1a.value.toLowerCase();
+
+			var q1c = document.quiz.q1c.value.toLowerCase();
+
+
+
+
+			var imagem = ['../../../fotoIndex/globinhoPe.png'];
+
+
+			var cor = ["#99ff99", " #ee4466"];
+
+			
+
+			if (q1a.match("noroeste") && qnum == 1) {
+
+				document.getElementById("q1a").style.backgroundColor = cor[0];
+				document.getElementById("q1a").disabled = true;
+
+
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ".";
+				nota += 0.5;
+				
+				document.getElementById(globinho).style.display = "block";
+				notaPergunta +=1;
+
+			}
+			else if (qnum == 1) {
+				document.getElementById("q1a").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
+				Play2("../audio2.mp3");
+			}
+
+
+
+			if (q1c.match("sudeste") && qnum == 3) {
+
+				document.getElementById("q1c").style.backgroundColor = cor[0];
+				document.getElementById("q1c").disabled = true;
+
+				EscondeButton(buttonConferir);
+				Play("../audio1.mp3");
+
+				document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1c.valueOf() + ".";
+				nota += 0.5;
+				
+				document.getElementById(globinho).style.display = "block";
+				notaPergunta +=1;
+
+			}
+			else if (qnum == 3) {
+				document.getElementById("q1c").style.backgroundColor = cor[1];
+				document.getElementById(idResp).innerHTML = "Responda a pergunta.";
+				Play2("../audio2.mp3");
+			}
+
+
+
+
+			else {
+				document.getElementById(idResp).innerHTML = "Acerte todas as perguntas para prosseguir.";
+			}
+
+			
+		
+
+
+
+			document.getElementById("notaFixa").innerHTML = nota;
+
+			if (notaPergunta >= 2) {
+				MostraButton("buttonq1d");
+				
+			}
+
+		
+
+		}
+
+		//Função para esconder imagens no Desafio
+
+		// Adcionei um evento clique no botão e criei uma variavel global Clicou1 ou Clicou2
+
+
+		var foto1 = document.getElementById("div1").addEventListener("click", function () {
+			Clicou1 = 1;
+			ComparaImagens("resp10");
+		});
+
+
+		var foto2 = document.getElementById("div2").addEventListener("click", function () {
+			Clicou2 = 2;
+			ComparaImagens("resp10");
+		});
+
+
+		var foto3 = document.getElementById("div3").addEventListener("click", function () {
+			Clicou1 = 2;
+			ComparaImagens("resp10");
+		});
+
+		var foto4 = document.getElementById("div4").addEventListener("click", function () {
+			Clicou1 = 3;
+			ComparaImagens("resp10");
+		});
+
+		var foto5 = document.getElementById("div5").addEventListener("click", function () {
+			Clicou1 = 4;
+			ComparaImagens("resp10");
+		});
+
+		var foto6 = document.getElementById("div6").addEventListener("click", function () {
+			Clicou1 = 5;
+			ComparaImagens("resp10");
+		});
+
+		var foto7 = document.getElementById("div7").addEventListener("click", function () {
+			Clicou2 = 5;
+			ComparaImagens("resp10");
+		});
+
+		var foto8 = document.getElementById("div8").addEventListener("click", function () {
+			Clicou2 = 1;
+			ComparaImagens("resp10");
+		});
+
+		var foto9 = document.getElementById("div9").addEventListener("click", function () {
+			Clicou2 = 3;
+			ComparaImagens("resp10");
+		});
+
+		var foto10 = document.getElementById("div10").addEventListener("click", function () {
+			Clicou2 = 4;
+			ComparaImagens("resp10");
+		});
+
+		var foto11 = document.getElementById("div11").addEventListener("click", function () {
+			Clicou1 = 6;
+			ComparaImagens("resp10");
+		});
+
+		var foto12 = document.getElementById("div12").addEventListener("click", function () {
+			Clicou2 = 6;
+			ComparaImagens("resp10");
+		});
+
+
+
+
+		// Função do desafio final
+		function ComparaImagens(idResp) {
+
+
+			let cor = ["#99ff99", " #ee4466"];
+
+			if (Clicou1 == 1 && Clicou2 == 1) {
+
+				document.getElementById("div1").style.opacity = "30%";
+
+				document.getElementById("div8").style.opacity = "30%";
+				Play("../audio1.mp3");
+
+				notaDesafio++;
+
+			}
+
+
+
+
+			else if (Clicou1 == 2 && Clicou2 == 2) {
+
+				document.getElementById("div2").style.opacity = "30%";
+				document.getElementById("div3").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+
+			}
+
+			else if (Clicou1 == 3 && Clicou2 == 3) {
+
+				document.getElementById("div4").style.opacity = "30%";
+				document.getElementById("div9").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+			}
+
+			else if (Clicou1 == 4 && Clicou2 == 4) {
+
+				document.getElementById("div10").style.opacity = "30%";
+				document.getElementById("div5").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+			}
+
+			else if (Clicou1 == 5 && Clicou2 == 5) {
+
+				document.getElementById("div6").style.opacity = "30%";
+				document.getElementById("div7").style.opacity = "30%";
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+			}
+
+			else if (Clicou1 == 6 && Clicou2 == 6) {
+
+				document.getElementById("div11").style.opacity = "30%";
+				document.getElementById("div12").style.opacity = "30%";
+
+				notaDesafio++;
+				Play("../audio1.mp3");
+
+
+			}
+
+
+
+
+		}
+
+
+
+		// Função que adiciona fundo verde no desafio, foi inserida na função nota final
+		function ClassGrid() {
+
+
+			var g = document.getElementsByClassName("grid-container");
+			for (var i = 0; i < g.length; i++) {
+				if (notaDesafio >= 6) {
+					g[i].style.backgroundColor = "green";
+					nota += 3;
+
+
+				}
+
+
+			}
+
+		}
+
+
+
+
+
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-DPX55DSFZ0');
+
+	</script>
+
+
+
+
+</body>
+
+</html>

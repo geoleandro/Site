@@ -2,9 +2,9 @@
 
 
 // Força o scroll para o topo toda vez que a página recarregar
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+// };
 
 // Reforço ao carregar o DOM
 document.addEventListener('DOMContentLoaded', () => {

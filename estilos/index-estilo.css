@@ -652,16 +652,30 @@ body.dark-mode p.w3-large {
     justify-content: center;
 }
 
-/* Nova classe específica para os Ícones dos Widgets Dinâmicos */
+/* Nova classe específica para os Ícones dos Widgets Dinâmicos MONITOR GLOBAL */
+
+.card-monitor-global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
 .img-widget-hero {
-    width: 120px;
+    width: 150px;
     /* Definir um tamanho fixo ajuda na estabilidade da animação */
-    height: auto;
+    height: 150px;
     margin-bottom: 10px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    object-fit: contain;
+    margin-bottom: 10px;
 }
+
+
 
 /* Base do Card com transição suave */
 .card-widget,
@@ -670,12 +684,15 @@ body.dark-mode p.w3-large {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    /* Distribui o conteúdo igualmente */
     transition: all 0.3s ease;
     cursor: default;
     border-bottom: 4px solid transparent;
     /* Reserva espaço para a borda */
 }
+
+
 
 /* EFEITO HOVER LEGAL */
 .card-widget:hover,
@@ -768,20 +785,27 @@ body.dark-mode p.w3-large {
 /* No seu CSS para o display amarelo */
 #valor-total-central-container {
     border: 2px solid #b45309;
-    box-shadow: 
-        inset 0px 2px 0px rgba(255,255,255,0.4), /* Brilho do vidro */
-        2px 2px 0px #78350f; /* Sombra sólida de pixel art */
+    box-shadow:
+        inset 0px 2px 0px rgba(255, 255, 255, 0.4),
+        /* Brilho do vidro */
+        2px 2px 0px #78350f;
+    /* Sombra sólida de pixel art */
 }
 
 /* O Slot da Medalha - Agora parece madeira entalhada/cavada */
 .medalha-container {
     /* Invertemos o box-shadow para parecer um buraco escavado */
-    box-shadow: 
-        inset 4px 4px 8px rgba(0,0,0,0.2), /* Sombra profunda */
-        1px 1px 0px rgba(255,255,255,0.8); /* Brilho na quina da madeira */
+    box-shadow:
+        inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+        /* Sombra profunda */
+        1px 1px 0px rgba(255, 255, 255, 0.8);
+    /* Brilho na quina da madeira */
     border: 2px solid #bdae93;
-    background-color: #d7ccc8; /* Cor de madeira "cortada" */
+    background-color: #d7ccc8;
+    /* Cor de madeira "cortada" */
+
 }
+
 
 /* Deixar o Saldo com cara de Display Digital de RPG */
 .w3-tag.w3-amber {
@@ -794,16 +818,21 @@ body.dark-mode p.w3-large {
 
 /* Estilo Ficha de Papel para os cards internos */
 .card-inventario-item {
-    background-color: #dfded9 !important; /* Cor de papel/pergaminho claro */
-    border: 2px solid #d1c7ac !important; /* Borda sutil */
-    box-shadow: 
-        inset 2px 2px 0px #ffffff,    /* Brilho interno */
-        2px 2px 4px rgba(0,0,0,0.1);  /* Sombra externa suave */
+    background-color: #dfded9 !important;
+    /* Cor de papel/pergaminho claro */
+    border: 2px solid #d1c7ac !important;
+    /* Borda sutil */
+    box-shadow:
+        inset 2px 2px 0px #ffffff,
+        /* Brilho interno */
+        2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra externa suave */
     transition: transform 0.2s ease;
 }
 
 .card-inventario-item:hover {
-    transform: translateY(-3px); /* Efeito de flutuar ao passar o mouse */
+    transform: translateY(-3px);
+    /* Efeito de flutuar ao passar o mouse */
     background-color: #ffffff !important;
 }
 
@@ -811,7 +840,7 @@ body.dark-mode p.w3-large {
 .card-inventario-item .w3-light-grey {
     background-color: #e0d7c6 !important;
     border: 1px solid #bdae93;
-    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -880,7 +909,7 @@ body.dark-mode p.w3-large {
         padding: 0 10px !important;
     }
 
-    
+
 
     .btn-google-play {
         width: 100%;
@@ -893,30 +922,38 @@ body.dark-mode p.w3-large {
         margin: 10px !important;
     }
 
-   #display-identificado .w3-row {
+    #display-identificado .w3-row {
         display: flex !important;
-        flex-direction: column !important; /* Itens um embaixo do outro */
-        align-items: center !important;    /* Centraliza tudo horizontalmente */
+        flex-direction: column !important;
+        /* Itens um embaixo do outro */
+        align-items: center !important;
+        /* Centraliza tudo horizontalmente */
         justify-content: center !important;
-        gap: 10px !important;              /* Espaço entre os blocos */
+        gap: 10px !important;
+        /* Espaço entre os blocos */
         text-align: center !important;
     }
 
     /* Ajuste da Medalha para não flutuar sobre o texto */
     .medalha-container {
-        position: relative !important;     /* Garante que ela respeite o fluxo */
+        position: relative !important;
+        /* Garante que ela respeite o fluxo */
         margin: 0 auto 10px auto !important;
-        width: 80px !important;            /* Tamanho de avatar mobile */
+        width: 80px !important;
+        /* Tamanho de avatar mobile */
         height: 80px !important;
         display: flex !important;
-        order: 1;                          /* Medalha vem primeiro no topo */
+        order: 1;
+        /* Medalha vem primeiro no topo */
     }
 
     /* Bloco de Informações (Nome, Level, Rank) */
-    .user-info-wrapper, .w3-left-align {
+    .user-info-wrapper,
+    .w3-left-align {
         width: 100% !important;
         text-align: center !important;
-        order: 2;                          /* Nome vem depois da medalha */
+        order: 2;
+        /* Nome vem depois da medalha */
     }
 
     /* O Saldo de Globinhos (O quadrado amarelo) */
@@ -925,7 +962,8 @@ body.dark-mode p.w3-large {
         display: flex !important;
         justify-content: center !important;
         margin-top: 5px !important;
-        order: 3;                          /* Saldo por último ou logo abaixo do nome */
+        order: 3;
+        /* Saldo por último ou logo abaixo do nome */
     }
 
     /* Ajuste no botão de editar para não fugir da tela */
