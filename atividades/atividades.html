@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duvid - Atividades</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../estilos/index-estilo.css">
+        <link rel="stylesheet" href="../estilos/atividades-estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216" crossorigin="anonymous"></script>
+
+
+   <script src="/js/duvid-core.js" defer></script>
+
+    <script src="/js/duvid-db.js" defer></script>
+
+    <script src="/js/duvid-audio.js" defer></script>
+    <script src="/js/duvid-ui.js" defer></script>
+    
+	<script src="/js/carregar.js" defer></script>
+	<script src="/js/abrirmenu.js" defer></script>
+    <script src="/js/atividades-duvid.js" defer></script>
+
+   
+  
+</head>
+
+<body class="w3-light-grey">
+
+    <div id="header-placeholder"></div>
+
+    <main class="w3-content" style="max-width:1100px; margin-top: 80px;">
+
+    <!-- Cabeçalho -->
+    <div class="w3-container w3-padding-48 w3-center hero-ano w3-round-large w3-card-2 w3-white w3-margin-bottom">
+        <h1 class="w3-text-green w3-jumbo fonte-pixel-titulo"><b>Duvid - Atividades</b></h1>
+        <p class="w3-text-grey">Recursos didáticos prontos para imprimir e aplicar.</p>
+    </div>
+
+    <!-- Barra de Ferramentas: Busca e Filtros -->
+    <div class="w3-container w3-margin-bottom">
+        <div class="w3-row-padding w3-card w3-white w3-round-large w3-padding-16">
+            <!-- Campo de Busca -->
+            <div class="w3-col l4 m12 s12 w3-margin-bottom">
+                <label class="w3-small w3-text-grey"><b>PESQUISAR</b></label>
+                <div class="w3-display-container">
+                    <input id="inputBusca" class="w3-input w3-border w3-round-medium" type="text" placeholder="Ex: Clima, Escala...">
+                    <i class="fa fa-search w3-display-right w3-margin-right w3-opacity"></i>
+                </div>
+            </div>
+
+            <!-- Filtros de Categoria -->
+            <div class="w3-col l8 m12 s12">
+                <label class="w3-small w3-text-grey"><b>FILTRAR POR TEMA</b></label>
+                <div class="w3-bar">
+                    <button class="w3-bar-item w3-button w3-border w3-round-medium w3-margin-right btn-filtro active" onclick="filtrar('Todos')">Todos</button>
+                    <button class="w3-bar-item w3-button w3-border w3-round-medium w3-margin-right btn-filtro" onclick="filtrar('Cartografia')">Cartografia</button>
+                    <button class="w3-bar-item w3-button w3-border w3-round-medium w3-margin-right btn-filtro" onclick="filtrar('Física')">Física</button>
+                    <button class="w3-bar-item w3-button w3-border w3-round-medium w3-margin-right btn-filtro" onclick="filtrar('Geopolítica')">Geopolítica</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid de Atividades -->
+    <div id="container-atividades" class="w3-row-padding"></div> 
+
+</main>
+
+
+    <div id="footer-placeholder"></div>
+
+     <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DPX55DSFZ0');
+    </script>
+
+</body>
+</html>

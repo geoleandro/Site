@@ -102,14 +102,14 @@ async function buscarDadosMercado() {
         // Buscando Ibovespa e Petróleo Brent
         // Nota: O Brent é listado como 'BZ=F' em muitos lugares, mas na Brapi usamos a rota de quote
         const url = `https://brapi.dev/api/quote/%5EBVSP?token=${BRAPI_TOKEN}`;
-        
+
         const response = await fetch(url);
         const data = await response.json();
 
         if (data.results && data.results[0]) {
             const ibov = data.results[0];
             const pontos = ibov.regularMarketPrice.toLocaleString('pt-BR', { maximumFractionDigits: 0 });
-            
+
             const elIbov = document.getElementById('ibov-pontos');
             if (elIbov) {
                 elIbov.innerText = `${pontos} pts`;
@@ -131,7 +131,7 @@ async function buscarPetroleoBrent() {
         const url = `https://brapi.dev/api/quote/BZ=F?token=${BRAPI_TOKEN}`;
         const response = await fetch(url);
         const data = await response.json();
-        
+
         if (data.results && data.results[0]) {
             const valor = data.results[0].regularMarketPrice.toFixed(2);
             document.getElementById('petroleo-valor').innerText = `U$ ${valor.replace('.', ',')}`;
@@ -139,32 +139,91 @@ async function buscarPetroleoBrent() {
     } catch (err) {
         console.error("Erro Petróleo:", err);
         // O valor de U$ 109,25 que você mencionou é o ideal para 2026
-        document.getElementById('petroleo-valor').innerText = "U$ 109,25"; 
+        document.getElementById('petroleo-valor').innerText = "U$ 109,25";
     }
 }
 
-// Inicia no carregamento
+const MonitorBrasil = {
+    // Estimativa para 1º de Abril de 2026 (aprox. 213,5 milhões)
+    baseBrasil: 213500000,
+    // Taxa de crescimento líquido (nascimentos - óbitos) estimada em ~0.022 por segundo
+    taxaPorSegundo: 0.022,
+
+    iniciar: function () {
+        // Atualiza a cada 500ms para o efeito visual de "pulso"
+        setInterval(() => {
+            this.atualizar();
+        }, 500);
+    },
+
+    atualizar: function () {
+        const elemento = document.getElementById('pop-brasil-live');
+        if (!elemento) return;
+
+        // Cálculo baseado no tempo decorrido desde 01/04/2026
+        const agora = new Date().getTime() / 1000;
+        const dataReferencia = new Date("2026-04-01T00:00:00").getTime() / 1000;
+        const segundosDecorridos = agora - dataReferencia;
+
+        const populacaoAtual = Math.floor(this.baseBrasil + (segundosDecorridos * this.taxaPorSegundo));
+
+        // Formata com pontos para ficar idêntico ao mundial: 213.500.420
+        elemento.innerText = populacaoAtual.toLocaleString('pt-BR');
+    }
+};
+
+// Como chamar:
+
+async function buscarIndicadoresBC() {
+    try {
+        // 1. SELIC (Mantemos a série 1178 - Meta fixada pelo COPOM)
+        const urlSelic = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados/ultimos/1?formato=json";
+        const resSelic = await fetch(urlSelic);
+        const dataSelic = await resSelic.json();
+
+        if (dataSelic.length > 0) {
+            document.getElementById('selic-valor').innerText = dataSelic[0].valor + "%";
+        }
+
+        // 2. IPCA ACUMULADO 12 MESES (Série 13522)
+        // Esta série já entrega o valor percentual acumulado do ano/período
+        const urlIpca = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados/ultimos/1?formato=json";
+        const resIpca = await fetch(urlIpca);
+        const dataIpca = await resIpca.json();
+
+        if (dataIpca.length > 0) {
+            // O Banco Central entrega ex: "3.90". Vamos garantir que exiba bonito.
+            const valorAcumulado = parseFloat(dataIpca[0].valor).toFixed(2);
+            document.getElementById('ipca-valor').innerText = valorAcumulado.replace('.', ',') + "%";
+        }
+
+    } catch (err) {
+        console.error("Erro Banco Central:", err);
+        // Fallbacks baseados na sua observação de 2025/2026
+        document.getElementById('selic-valor').innerText = "10,75%";
+        document.getElementById('ipca-valor').innerText = "3,90%"; 
+    }
+}
+
+
+// BOA PRÁTICA: Um único ponto de entrada para todas as funções
 document.addEventListener('DOMContentLoaded', () => {
+    // Inicia Relógios (Pulsantes)
+    MonitorPopulacao.iniciar();
+    MonitorBrasil.iniciar();
+    
+    // Inicia Clima
+    ClimaDuvid.init();
+    
+    // Chamadas iniciais de APIs (Dados Estáticos)
+    buscarDolar();
     buscarDadosMercado();
     buscarPetroleoBrent();
-    // Atualiza a cada 15 minutos
-    setInterval(() => {
-        buscarDadosMercado();
-        buscarPetroleoBrent();
-   }, 3600000);
+    buscarIndicadoresBC();
+
+    // Configura os intervalos de atualização de cada um
+    setInterval(buscarDolar, 300000);           // 5 min
+    setInterval(buscarDadosMercado, 3600000);    // 60 min
+    setInterval(buscarPetroleoBrent, 3600000);   // 60 min
+    setInterval(buscarIndicadoresBC, 86400000);  // 24 horas
 });
-
-// Inicia junto com os outros
-document.addEventListener('DOMContentLoaded', () => {
-    buscarDolar();
-    // Atualiza o dólar a cada 5 minutos
-    setInterval(buscarDolar, 300000);
-});
-
-// Iniciar quando o DOM estiver pronto
-document.addEventListener('DOMContentLoaded', () => MonitorPopulacao.iniciar());
-
-// Inicia o monitoramento ao carregar a página
-window.addEventListener('DOMContentLoaded', () => ClimaDuvid.init());
-
-

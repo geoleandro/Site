@@ -1,0 +1,39 @@
+/* Estilo dos Cards */
+.card-rpg {
+    border-top: 4px solid #4CAF50; /* Verde Duvid */
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 4px solid #ddd;
+    transition: all 0.3s ease;
+    min-height: 220px;
+    padding: 10px;
+}
+
+.card-rpg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* Botões de Filtro */
+.btn-filtro {
+    background-color: #f1f1f1;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.btn-filtro.active {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-color: #4CAF50 !important;
+}
+
+/* Badge de Nível */
+.badge-nivel {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
