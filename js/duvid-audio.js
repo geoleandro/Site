@@ -1,7 +1,7 @@
 // --- 1. CONFIGURAÇÃO DOS SONS ---
 const AUDIO_PATHS = {
-    acerto: ['/audios/acerto1.mp3', '/audios/acerto2.mp3'],
-    erro: ['/audios/erro1.mp3', '/audios/erro2.mp3'],
+    acerto: ['/audios/acerto1.mp3', '/audios/acerto2.mp3', '/audios/acerto3.mp3', '/audios/acerto4.mp3'],
+    erro: ['/audios/erro1.mp3', '/audios/erro2.mp3', '/audios/erro3.mp3', '/audios/erro4.mp3'],
     finalBom: '/audios/notaFinal.mp3',
     finalRuim: '/audios/notaFinal2.mp3',
     inicio: '/audios/inicioNome.mp3'

@@ -89,7 +89,7 @@ function renderizarQuestao() {
             
             <p class="w3-large w3-padding">${q.pergunta}</p>
 
-            ${gerarBotaoDica(q)}
+        
 
             <div class="w3-margin-top grupo-respostas">
                 ${gerarAlternativas(q.alternativas)}
@@ -238,7 +238,7 @@ function mostrarDica() {
                                 class="duvid-dica-fechar">&times;</button>
                         
                         <h5 class="duvid-dica-titulo">
-                            <i class="fa fa-lightbulb-o"></i> <b>PENSE NISSO...</b>
+                            <i class="fa fa-lightbulb-o"></i> <b>Vamos analisar...</b>
                         </h5>
                         
                         <p class="w3-small" id="texto-dica-conteudo"></p>
@@ -331,23 +331,33 @@ function exibirPainelFeedback(isCorreto, questao) {
     feedback.className = `w3-bottom w3-container w3-padding-16 w3-animate-bottom ${isCorreto ? 'w3-green' : 'w3-amber'}`;
 
     if (isCorreto) {
+        // ACERTO — mensagem de sucesso + comentário completo do professor
         msg.innerHTML = `<b><i class='fa fa-smile-o'></i> ${getFraseSucesso()}</b>`;
+        txt.innerHTML = `
+            <div class="comentario-box">
+                ${questao.comentario}
+                ${gerarImagemComentario(questao)}
+            </div>
+        `;
     } else {
-        // Erro — mensagem neutra, sem revelar a alternativa correta
-        msg.innerHTML = `<b><i class='fa fa-lightbulb-o'></i> Não foi dessa vez — leia a dica do professor:</b>`;
-    }
+        // ERRO — mensagem neutra + só a dica, sem revelar resposta
+      msg.innerHTML = `<b><i class='fa fa-search'></i> ${getFraseAnalise()}</b>`;
 
-    // Comentário sempre aparece — no erro é a dica implícita
-    txt.innerHTML = `
-        <div class="comentario-box">
-            ${questao.comentario}
-            ${gerarImagemComentario(questao)}
-        </div>
-    `;
+        // Se tiver dica, mostra ela. Se não tiver, mensagem genérica.
+        txt.innerHTML = questao.ajuda
+            ? `<div class="duvid-painel-dica w3-card-2">
+                   <h5 class="duvid-dica-titulo">
+                       <i class="fa fa-lightbulb-o"></i> <b>Vamos analisar...</b>
+                   </h5>
+                   <p class="w3-small">${questao.ajuda}</p>
+               </div>`
+            : `<p class="w3-small w3-text-grey">
+                   Revise o conteúdo desta aula e tente novamente!
+               </p>`;
+    }
 
     feedback.classList.remove('w3-hide');
 }
-
 
 
 

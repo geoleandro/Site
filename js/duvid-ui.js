@@ -544,6 +544,20 @@ function getFrasePainel() {
     return frases[Math.floor(Math.random() * frases.length)];
 }
 
+function getFraseAnalise() {
+    const frases = [
+        "Análise de campo: Vamos observar os detalhes que passaram despercebidos?",
+        "Recalculando rota! As evidências do texto sugerem outro caminho...",
+        "Atenção aos sinais! No vestibular, cada palavra é uma pista.",
+        "Mapeando o erro: Use a dica do professor para iluminar sua escolha.",
+        "Quase lá, desbravador! Geografia exige olhar atento aos detalhes.",
+        "Opa! Encontramos uma zona de dúvida. Vamos investigar a alternativa correta?",
+        "Estratégia falhou? Sem problemas! Aprender com o erro é a melhor tática.",
+        "Pausa para reconhecimento! Veja por que o gabarito seguiu por este lado."
+    ];
+    return frases[Math.floor(Math.random() * frases.length)];
+}
+
 
 /**
  * Mestre de Metadados: Busca no JSON do ano correto e aplica o SEO
