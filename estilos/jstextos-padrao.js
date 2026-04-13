@@ -189,21 +189,16 @@ function addProgressBar() {
     txtBarra.innerHTML = Math.round(novoValor) + "%";
 }
 
-
 function mostraCinza() {
     const params = new URLSearchParams(window.location.search);
     const aulaID = params.get('id');
 
-    // 1. MUDANÇAS VISUAIS (Executadas em um único ciclo)
-    this.aplicarEstadoFinalAula();
-    this.mostraBiblio();
-    this.mostrarNota();
+    aplicarEstadoFinalAula();  // ✅ função global, chamada direta
+    mostraBiblio();            // ✅ idem
+    mostrarNota();             // ✅ idem
 
-    // 2. LÓGICA DE DADOS
     if (aulaID && typeof DuvidDB !== "undefined") {
-        // SÊNIOR: Perguntamos ao DB em vez de mexer no localStorage
         const jaConcluiu = DuvidDB.estaConcluido(aulaID, TIPO_CONCLUSAO.TEXTO);
-
         if (!jaConcluiu) {
             DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.TEXTO);
             DuvidDB.addGlobinhos(RECOMPENSA_TEXTO);
@@ -212,6 +207,7 @@ function mostraCinza() {
 
     if (typeof atualizarInterface === "function") atualizarInterface();
 }
+
 
 
 function aplicarEstadoFinalAula() {
@@ -330,39 +326,28 @@ async function injetarMetadadosAula() {
     if (!anoMatch) return;
     const ano = anoMatch[1];
 
-    try {
-        // 2. Busca o JSON correspondente ao ano
-        const res = await fetch(`/js/aulas-${ano}ano.json`);
-        const aulas = await res.json();
+   try {
+        const aulas = await DuvidCache.get(`/js/aulas-${ano}ano.json`); // << NOVO
 
-        // 3. Encontra a aula que tem o linkTexto igual ao caminho atual
-        // Procuramos o final da string para evitar problemas de caminho absoluto/relativo
         const aulaDados = aulas.find(a => a.linkTexto.includes(aulaArquivo));
 
         if (aulaDados) {
-            tituloAulaGlobal = aulaDados.titulo; // SALVA NA VARIÁVEL GLOBAL
+            tituloAulaGlobal = aulaDados.titulo;
 
             const tituloH1 = document.getElementById('h1');
             if (tituloH1) tituloH1.innerText = tituloAulaGlobal;
 
             document.title = `Duvid - ${tituloAulaGlobal}`;
 
-
-            // Injeta na descrição (se houver um ID para isso)
             const desc = document.getElementById('descricao-aula');
             if (desc) desc.innerText = aulaDados.conteudo;
 
             configurarSEOAutomatico(aulaDados.id, 'texto');
-           
-       
-
-            // console.log("Metadados injetados: " + aulaDados.titulo);
         }
     } catch (e) {
         console.error("Erro ao injetar metadados:", e);
     }
 }
-
 
 
 
@@ -453,3 +438,48 @@ function verificarProgressoBloco() {
         }
     }
 }
+
+// Arquivo: js-textos.js
+
+const injetarModalFinalizacao = () => {
+    const modalHTML = `
+    <div id="id01" class="w3-modal" style="z-index: 999;">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
+            <div class="w3-container w3-padding-32 w3-center">
+                <div class="w3-margin-bottom pulse">
+                    <img id="modal-img-globinho" src="../../../fotoIndex/globinhoPe.png" width="64" height="64">
+                </div>
+                <h2 id="modal-titulo" class="fontePixel"></h2>
+                <div class="w3-padding-16">
+                    <p class="w3-xlarge">Você conquistou <br>
+                        <span class="w3-text-green w3-xxlarge"><b id="modal-nota-valor">0.0</b></span> <br>
+                        globinhos nesta aula!
+                    </p>
+                    <p id="modal-frase-feedback" class="w3-text-grey" style="font-style: italic;"></p>
+                </div>
+                <div class="w3-container w3-padding-16">
+                    <button onclick="document.getElementById('id01').style.display='none'"
+                        class="w3-button w3-green w3-round-large w3-block w3-margin-bottom w3-padding-large"
+                        style="font-weight: bold;">
+                        🎯 CONTINUAR ESTUDANDO
+                    </button>
+                    <!-- AQUI VOCÊ PODE ACRESCENTAR O BOTÃO DE QUESTÕES FACILMENTE NO FUTURO -->
+                    <button id="btn-questoes-modal" style="display:none;" class="w3-button w3-orange w3-round-large w3-block w3-margin-bottom w3-padding-large">
+                        📝 FAZER QUESTÕES
+                    </button>
+                    <button onclick="window.location.href='/home.html'"
+                        class="w3-button w3-light-grey w3-round-large w3-block w3-padding-large"
+                        style="font-weight: bold;">
+                        🏠 VOLTAR PARA A HOME
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>`;
+
+    // Injeta o HTML no final do body
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+};
+
+// Chama a injeção automaticamente quando o script carregar
+document.addEventListener('DOMContentLoaded', injetarModalFinalizacao);

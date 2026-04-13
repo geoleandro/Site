@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="blog-estilo.css">
     <link rel="stylesheet" href="/estilos/index-estilo.css">
+    <link rel="stylesheet" href="/estilos/navbar.css">
 
 
 
@@ -44,12 +45,12 @@
     <!-- Navigation (Stays on Top) -->
     <div id="header-placeholder"></div>
 
-    <div id="header-dinamico"></div>
+
 
     <div class="w3-container w3-center w3-padding-top-64 w3-margin-bottom ">
-                <h1 class="extrafonte w3-hide-small "><b>Duvid Blog</b></h1>
+        <h1 class="extrafonte w3-hide-small "><b>Duvid Blog</b></h1>
 
-        </div>
+    </div>
 
 
     <!-- Image header -->
@@ -62,7 +63,7 @@
         </div>
     </div>
 
-    
+
 
 
 
@@ -72,8 +73,9 @@
         <!-- Blog entries -->
         <div class="w3-col l8 s12">
 
-
             <!-- Área dos posts-->
+
+          <div id="post-destaque" class="w3-container w3-margin-bottom"></div>
 
             <div class="w3-row" id="posts-grid"></div>
 
@@ -162,10 +164,6 @@
     </div> -->
 
 
-    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large"
-        title="Voltar ao topo">
-        <i class="fa fa-arrow-up"></i>
-    </button>
 
     <!-- Footer -->
 

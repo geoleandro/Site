@@ -1,12 +1,45 @@
 /* Estilo dos Cards */
 .card-rpg {
-    border-top: 4px solid #4CAF50; /* Verde Duvid */
+    border-top: 4px solid #4CAF50;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 4px solid #ddd;
     transition: all 0.3s ease;
-    min-height: 220px;
-    padding: 10px;
+    
+    /* Mude para flex-start para o conteúdo não "espalhar" */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    /* Define um espaço padrão entre cada elemento do card */
+    gap: 5px; 
+    
+    padding: 20px;
+    min-height: auto; /* Deixe o card crescer conforme o texto */
+}
+
+/* Garante que os botões fiquem no final sem empurrar o resto */
+.card-buttons {
+    margin-top: auto; /* Empurra apenas os botões para o fim se o card for alto */
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.card-rpg h3, .card-rpg .titulo-atividade {
+    margin: 0; /* O gap do container já cuida do espaçamento */
+    line-height: 1.3;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ESPAÇAMENTO ENTRE AS TAGS SUPERIORES */
+.card-header-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .card-rpg:hover {

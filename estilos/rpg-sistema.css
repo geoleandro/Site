@@ -1,0 +1,455 @@
+/* O Container Principal (A Moldura do Inventário) */
+.NomeHome {
+    /* 1. Criando as ripas de madeira com gradiente */
+    background: #e3d5b8 !important;
+    /* Cor base (bege amadeirado) */
+    background-image:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        /* Divisão das ripas */
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    /* Textura de fibra */
+    background-size: 80px 100%, 100% 4px;
+    /* Tamanho das ripas e das fibras */
+
+    /* 2. Bordas de "Encaixe" de marceneiro */
+    border: 4px solid #bdae93 !important;
+
+    /* 3. O efeito 3D (Bevel) reforçado */
+    box-shadow:
+        inset 4px 4px 0px #f5eedf,
+        /* Brilho da quina superior (luz) */
+        inset -4px -4px 0px #8d7f6b,
+        /* Sombra da quina inferior (profundidade) */
+        0 8px 15px rgba(0, 0, 0, 0.15);
+    /* Sombra externa projetada */
+
+    padding: 24px !important;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* No seu CSS para o display amarelo */
+#valor-total-central-container {
+    border: 2px solid #b45309;
+    box-shadow:
+        inset 0px 2px 0px rgba(255, 255, 255, 0.4),
+        /* Brilho do vidro */
+        2px 2px 0px #78350f;
+    /* Sombra sólida de pixel art */
+}
+
+/* O Slot da Medalha - Agora parece madeira entalhada/cavada */
+.medalha-container {
+    /* Invertemos o box-shadow para parecer um buraco escavado */
+    box-shadow:
+        inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+        /* Sombra profunda */
+        1px 1px 0px rgba(255, 255, 255, 0.8);
+    /* Brilho na quina da madeira */
+    border: 2px solid #bdae93;
+    background-color: #d7ccc8;
+    /* Cor de madeira "cortada" */
+
+}
+
+
+/* Deixar o Saldo com cara de Display Digital de RPG */
+.w3-tag.w3-amber {
+    background-color: #facc15 !important;
+    border: 2px solid #b45309;
+    box-shadow: 2px 2px 0px #78350f;
+    font-family: 'Courier New', monospace;
+}
+
+
+/* Estilo Ficha de Papel para os cards internos */
+.card-inventario-item {
+    background-color: #dfded9 !important;
+    /* Cor de papel/pergaminho claro */
+    border: 2px solid #d1c7ac !important;
+    /* Borda sutil */
+    box-shadow:
+        inset 2px 2px 0px #ffffff,
+        /* Brilho interno */
+        2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra externa suave */
+    transition: transform 0.2s ease;
+}
+
+.card-inventario-item:hover {
+    transform: translateY(-3px);
+    /* Efeito de flutuar ao passar o mouse */
+    background-color: #ffffff !important;
+}
+
+/* Ajuste nas barras para parecerem encaixadas no papel */
+.card-inventario-item .w3-light-grey {
+    background-color: #e0d7c6 !important;
+    border: 1px solid #bdae93;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Estilo geral dos cards compactos */
+/* Estilo geral dos cards compactos */
+.card-widget-pequeno {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.card-widget-pequeno:hover {
+    transform: scale(1.03);
+}
+
+.img-mini {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+.txt-rotulo {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #777;
+    display: block;
+}
+
+.txt-valor {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 2px;
+}
+
+
+/* Animação de Troféu Novo */
+.conquista-recente {
+    animation: trofeuPula 0.6s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 8px #FFC107);
+}
+
+@keyframes trofeuPula {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* Brilho constante para troféus já conquistados */
+.trofeu-ativo {
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    transition: all 0.5s ease;
+}
+
+/* O Segredo Sênior para Pixel Art */
+.img-trofeu-pixel {
+    image-rendering: pixelated;
+    /* Mantém os pixels nítidos */
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    transition: 0.5s;
+}
+
+/* Quando o aluno NÃO conquistou: fica cinza e mais transparente */
+.icon-bloqueado {
+    filter: grayscale(100%) brightness(1.2);
+    opacity: 0.3;
+}
+
+/* Quando o aluno conquistou: cores vibrantes e um brilho suave */
+.icon-conquistado {
+    filter: grayscale(0%) drop-shadow(0 0 5px rgba(255, 193, 7, 0.5));
+    opacity: 1;
+}
+
+
+.img-pixel-icon {
+    width: 80px;
+    /* Tamanho ideal para esses botões */
+    height: 80px;
+    margin-bottom: 10px;
+
+    /* ESSENCIAL para Pixel Art de alta resolução: */
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    /* Para Firefox */
+
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito de "pulo" ao passar o mouse no botão */
+.w3-button:hover .img-pixel-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contador-digital-card {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    background: #222;
+    color: #00ff00;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    box-shadow: inset 0 0 5px #000;
+}
+
+/* Garante que os widgets (que não são botões) tenham a mesma altura dos botões */
+.w3-block.w3-white.w3-card.w3-padding-24 {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nova classe específica para os Ícones dos Widgets Dinâmicos MONITOR GLOBAL */
+
+.card-monitor-global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
+.img-widget-hero {
+    width: 150px;
+    /* Definir um tamanho fixo ajuda na estabilidade da animação */
+    height: 150px;
+    margin-bottom: 10px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+
+/* Base do Card com transição suave */
+.card-widget,
+.card-widge {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Distribui o conteúdo igualmente */
+    transition: all 0.3s ease;
+    cursor: default;
+    border-bottom: 4px solid transparent;
+    /* Reserva espaço para a borda */
+}
+
+
+
+/* EFEITO HOVER LEGAL */
+.card-widget:hover,
+.card-widge:hover {
+    transform: translateY(-8px);
+    /* Card sobe levemente */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    /* Sombra mais profunda */
+    border-bottom: 4px solid #4CAF50;
+    /* Linha verde de "ativado" no fundo */
+}
+
+/* Faz o ícone "pular" e rodar levemente quando passa o mouse no card */
+.card-widget:hover .img-widget-hero,
+.card-widge:hover .img-widget-hero {
+    transform: scale(1.15) rotate(3deg);
+}
+
+/* Efeito de brilho sutil nos números ao interagir */
+.card-widget:hover .w3-xxlarge,
+.card-widge:hover .w3-xxlarge {
+    color: #4CAF50 !important;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+}
+
+/* Adicione isso no seu CSS para dar um feedback visual dinâmico */
+#temp-atual.quente {
+    color: #ff5722;
+}
+
+/* Laranja para calor */
+#temp-atual.frio {
+    color: #2196f3;
+}
+
+/* Azul para frio */
+
+
+/* Garante que o Pixel Art fique nítido */
+.pixel-art-icon {
+    width: 128px;
+    /* Tamanho ideal para destaque */
+    height: auto;
+    image-rendering: pixelated;
+    /* O segredo da nitidez */
+    image-rendering: crisp-edges;
+}
+
+
+
+/* Efeito de painel de madeira/ferro */
+.inventario-container {
+    background-color: #4a4a4a;
+    /* Cor base escura */
+    border: 4px solid #2d2d2d;
+    box-shadow: inset 4px 4px 0px #6b6b6b, inset -4px -4px 0px #1a1a1a;
+    padding: 15px;
+}
+
+
+/* Garante que o painel de pontos tenha largura mínima e não quebre linha */
+#painel-pontos {
+    min-width: 120px;
+    /* Dá espaço para os dois números */
+    flex-shrink: 0;
+    /* Impede que o flexbox esmague o painel */
+    justify-content: space-around;
+}
+
+.caixa-total-dourada {
+    background: linear-gradient(145deg, #ffcf33, #ffaa00);
+    /* Degradê Ouro */
+    color: #4a3b00 !important;
+    /* Texto marrom escuro para contraste */
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid #e69900;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    min-width: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-total-dourada span {
+    font-size: 12px !important;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Ajuste para o painel não ficar espremido no mobile */
+#painel-pontos {
+    min-width: 120px;
+}
+
+.font-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.font-btn:hover {
+    background: white;
+    color: green;
+}
+
+/* Ajustes específicos para Celular (2 por linha) */
+@media (max-width: 600px) {
+    .w3-row-padding {
+        padding: 0 8px !important;
+    }
+
+    .card-widget-pequeno {
+        padding: 12px 5px !important;
+        min-height: 100px;
+    }
+
+  
+
+    .txt-valor {
+        font-size: 14px;
+        /* Tamanho confortável para leitura no mobile */
+    }
+
+    /* 1. O painel principal ganha mais respiro */
+    .NomeHome {
+        padding: 15px !important;
+        margin: 10px !important;
+    }
+
+
+    #display-identificado .w3-row {
+        display: flex !important;
+        flex-direction: column !important;
+        /* Itens um embaixo do outro */
+        align-items: center !important;
+        /* Centraliza tudo horizontalmente */
+        justify-content: center !important;
+        gap: 10px !important;
+        /* Espaço entre os blocos */
+        text-align: center !important;
+    }
+
+    /* Ajuste da Medalha para não flutuar sobre o texto */
+    .medalha-container {
+        position: relative !important;
+        /* Garante que ela respeite o fluxo */
+        margin: 0 auto 10px auto !important;
+        width: 80px !important;
+        /* Tamanho de avatar mobile */
+        height: 80px !important;
+        display: flex !important;
+        order: 1;
+        /* Medalha vem primeiro no topo */
+    }
+
+    /* Bloco de Informações (Nome, Level, Rank) */
+    .user-info-wrapper,
+    .w3-left-align {
+        width: 100% !important;
+        text-align: center !important;
+        order: 2;
+        /* Nome vem depois da medalha */
+    }
+
+    /* O Saldo de Globinhos (O quadrado amarelo) */
+    .w3-right-align {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 5px !important;
+        order: 3;
+        /* Saldo por último ou logo abaixo do nome */
+    }
+
+    /* Ajuste no botão de editar para não fugir da tela */
+    #display-identificado h4 {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    /* 5. Ajusta os cards de ano para ocuparem a largura total */
+    #resumo-geral .w3-third {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    /* 6. Barra de XP: Garante que os textos de XP Atual e Próximo Nível não sumam */
+    .xp-text-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px !important;
+    }
+}

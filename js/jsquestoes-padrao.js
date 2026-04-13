@@ -2,6 +2,10 @@ let questoes = [];
 let indiceAtual = 0;
 let nota = 0;
 let aulaID = ""; // Variável global
+// << NOVO: sistema de vidas
+let vidas = 3;
+const TOTAL_VIDAS = 3;
+const BONUS_VIDAS = 20; // globinhos extras por terminar sem perder vida
 
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
@@ -28,56 +32,64 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-
 async function carregarDados(id) {
     try {
         const anoPasta = id.startsWith('1') ? '1ano' : id.startsWith('2') ? '2ano' : '3ano';
-        // Ajuste o caminho se necessário (removendo ../../../ se estiver na mesma raiz)
-        const response = await fetch(`../../../questoes/${anoPasta}/${id}.json`);
-        questoes = await response.json();
+        const url = `/questoes/${anoPasta}/${id}.json`;
+
+        const dadosBrutos = await DuvidCache.get(url); // << NOVO
+
+        // Embaralha uma cópia — não o original cacheado
+        questoes = embaralharArray([...dadosBrutos]); // << spread para não mutar o cache
         renderizarQuestao();
         configurarSEOAutomatico(id, 'questao');
 
-
-
     } catch (error) {
-        console.error("Erro ao carregar o JSON:", error);
+        console.error("Erro ao carregar questões:", error);
         document.getElementById('container-questao').innerHTML = "Erro ao carregar questões.";
     }
 }
 
+
+
+
+
+function embaralharArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // --- FUNÇÃO PRINCIPAL ---
 function renderizarQuestao() {
-
     const q = questoes[indiceAtual];
     const container = document.getElementById('container-questao');
     if (!container || !q) return;
 
-    // 1. Lógica de Progresso (Isolada da renderização)
+    // Progresso
     const porc = ((indiceAtual + 1) / questoes.length) * 100;
     const progressBarr = document.getElementById('barra-progresso-simulado');
     if (progressBarr) progressBarr.style.width = `${porc}%`;
 
-    // 2. Construção do Layout (Usa as peças de LEGO acima)
+    // Montagem do Layout usando as funções separadas
     container.innerHTML = `
         <div class="w3-animate-right w3-padding-24">
-            <div class="w3-row">
-                <div class="w3-col s8"><h4 class="w3-text-green"><b>Questão ${indiceAtual + 1}</b></h4></div>
-                <div class="w3-col s4 w3-right-align w3-text-grey"><b>${q.ano || ''}</b></div>
-            </div>
+            
+            ${gerarHeader(q, indiceAtual)}
+            
+            ${gerarInfoInstituicao(q)}
+
+            ${gerarTags(q.tags)}
 
             ${gerarBlocoApoio(q)}
+            
             ${gerarImagemApoio(q)}
             
-            <p class="w3-large">${q.pergunta}</p>
+            <p class="w3-large w3-padding">${q.pergunta}</p>
 
-            ${q.ajuda ? `
-                <div class="w3-center w3-margin-top">
-                    <button onclick="mostrarDica()" class="w3-button w3-light-grey w3-text-teal w3-round-large w3-small w3-border">
-                        💡 <b>DICA DO PROFESSOR</b>
-                    </button>
-                </div>` : ''}
+            ${gerarBotaoDica(q)}
 
             <div class="w3-margin-top grupo-respostas">
                 ${gerarAlternativas(q.alternativas)}
@@ -89,31 +101,119 @@ function renderizarQuestao() {
         </div>
     `;
 
-    // 3. Pós-renderização (Reaplicar estilos/fontes)
     if (typeof inicializarControleFonte === "function") inicializarControleFonte();
 }
 
 
+// 1. Função para o Título e Nível
+const gerarHeader = (q, indice) => `
+    <div class="duvid-coracoes-container">
+        ${gerarCoracoes()}
+         <span id="aviso-vidas-questao" class="aviso-vidas"></span>
+    </div>
+    <div class="duvid-header-questao">
+        <h4 class="duvid-titulo-questao"><b>Questão ${indice + 1}</b></h4>
+        <span class="duvid-badge-dificuldade ${definirClasseDificuldade(q.dificuldade)}">
+            NÍVEL: ${q.dificuldade || 'MÉDIO'}
+        </span>
+    </div>
+`;
+
+// Função auxiliar que gera os corações com base no estado atual
+const gerarCoracoes = () => {
+    let html = '';
+    for (let i = 0; i < TOTAL_VIDAS; i++) {
+        const perdido = i >= vidas;
+        html += `<span class="coracao-questao ${perdido ? 'perdido' : ''}">❤️</span>`;
+    }
+    return html;
+};
+
+// 2. Função para Instituição e Ano (Com o padding solicitado)
+const gerarInfoInstituicao = (q) => `
+    <div class="duvid-info-instituicao">
+        <span class="w3-text-grey w3-small"><b>${q.instituicao || ''} ${q.ano || ''}</b></span>
+    </div>
+`;
+
+// 3. Função para o Botão de Dica
+const gerarBotaoDica = (q) => {
+    if (!q.ajuda) return '';
+    return `
+        <div class="w3-center w3-margin-top w3-margin-bottom">
+            <button onclick="mostrarDica()" class="w3-button w3-light-grey w3-text-teal w3-round-large w3-small w3-border">
+                💡 <b>DICA DO PROFESSOR</b>
+            </button>
+        </div>
+    `;
+};
+
+// Função auxiliar para a cor da dificuldade
+const definirClasseDificuldade = (dif) => {
+    const d = (dif || 'médio').toLowerCase();
+    if (d.includes('fácil') || d.includes('facil')) return 'dificuldade-facil';
+    if (d.includes('difícil') || d.includes('dificil')) return 'dificuldade-dificil';
+    return 'dificuldade-medio';
+};
+
+const gerarTags = (tags) => {
+    if (!tags || tags.length === 0) return '';
+    const badges = tags.map(tag => `<span class="duvid-tag-assunto">#${tag}</span>`).join('');
+    return `<div class="container-tags">${badges}</div>`; // Usando a nova classe aqui
+};
 
 // Funções auxiliares para manter a função principal limpa
-const gerarBlocoApoio = (q) => !q.texto_apoio ? '' : `
-    <div class="w3-panel w3-leftbar w3-margin w3-padding-16 bloco-apoio-duvid">
-        <p style="font-style: italic; line-height: 1.6;">${q.texto_apoio}</p>
-        ${q.fonte_apoio ? `<p class="w3-small w3-opacity w3-right-align">— ${q.fonte_apoio}</p>` : ''}
-    </div>`;
+const gerarBlocoApoio = (q) => {
+    if (!q.texto_apoio) return '';
 
-const gerarImagemApoio = (q) => !q.imagem_apoio ? '' : `
-    <div class="w3-center w3-margin-bottom">
-        <img src="${q.imagem_apoio}" class="w3-image w3-card" style="max-height:100%; width:100%; object-fit:contain">
+    // .trim() remove os espaços vazios invisíveis do começo e do fim
+    const textoLimpo = q.texto_apoio.trim();
+
+    return `
+    <div class="duvid-bloco-apoio">
+        <div class="duvid-texto-citacao">${textoLimpo}</div>
+
+        ${q.fonte_apoio ? `
+            <div class="duvid-fonte-texto">
+                — ${q.fonte_apoio}
+            </div>` : ''}
     </div>`;
+};
+
+const gerarImagemApoio = (q) => {
+    if (!q.imagem_apoio) return '';
+
+    const criarBloco = (img, legenda) => `
+            <div class="w3-center">
+                <div class="duvid-img-container">
+                    <img src="${img}" class="duvid-img-principal" alt="Apoio Pedagógico">
+                    
+                    ${legenda ? `
+                        <div class="duvid-legenda-box">
+                            <p class="duvid-legenda-texto">
+                                ${legenda}
+                            </p>
+                        </div>` : ''}
+                </div>
+            </div>
+        `;
+
+    let htmlFinal = criarBloco(q.imagem_apoio, q.legenda_imagem);
+
+    if (q.imagem_apoio_2) {
+        htmlFinal += criarBloco(q.imagem_apoio_2, q.legenda_imagem_2);
+    }
+
+    return htmlFinal;
+};
 
 const gerarAlternativas = (alternativas) => alternativas.map((alt, i) => `
-    <div class="item-resposta w3-margin-bottom">
-        <input type="radio" name="opcao" id="opt${i}" value="${i}" class="radio-duvid">
-        <label for="opt${i}" class="card-opcao w3-block">
-            <span><b>${String.fromCharCode(97 + i)})</b> ${alt}</span>
-        </label>
-    </div>`).join('');
+        <div class="item-resposta w3-margin-bottom">
+            <input type="radio" name="opcao" id="opt${i}" value="${i}" class="radio-duvid">
+            <label for="opt${i}" class="card-opcao w3-block">
+                <span><b>${String.fromCharCode(97 + i)})</b> ${alt}</span>
+            </label>
+        </div>`).join('');
 
 
 
@@ -121,18 +221,48 @@ const gerarAlternativas = (alternativas) => alternativas.map((alt, i) => `
 
 
 // FUNÇÃO PARA EXIBIR A DICA
+function mostrarDica() {
+    const q = questoes[indiceAtual];
+    if (!q.ajuda) return;
+
+    let painelDica = document.getElementById('painel-dica-container');
+
+    if (!painelDica) {
+        // Encontra o container do botão de dica
+        const btnDica = document.querySelector('button[onclick="mostrarDica()"]').parentNode;
+
+        btnDica.insertAdjacentHTML('afterend', `
+                <div id="painel-dica-container" class="w3-animate-opacity">
+                    <div class="duvid-painel-dica w3-card-2">
+                        <button onclick="this.parentElement.parentElement.style.display='none'" 
+                                class="duvid-dica-fechar">&times;</button>
+                        
+                        <h5 class="duvid-dica-titulo">
+                            <i class="fa fa-lightbulb-o"></i> <b>PENSE NISSO...</b>
+                        </h5>
+                        
+                        <p class="w3-small" id="texto-dica-conteudo"></p>
+                    </div>
+                </div>
+            `);
+        painelDica = document.getElementById('painel-dica-container');
+    }
+
+    // Injeta o texto e exibe
+    document.getElementById('texto-dica-conteudo').innerText = q.ajuda;
+    painelDica.style.display = 'block';
+
+    // Scroll suave
+    painelDica.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
 
 function verificar() {
     const selecionada = document.querySelector('input[name="opcao"]:checked');
     const btnVerificar = document.getElementById('btn-verificar');
 
-    // 1. VALIDAÇÃO
     if (!selecionada) {
-        if (typeof avisoSelecaoPendente === "function") {
-            avisoSelecaoPendente(btnVerificar);
-        } else if (typeof DuvidUI !== "undefined") {
-            DuvidUI.avisoSelecaoPendente(btnVerificar);
-        }
+        avisoSelecaoPendente(btnVerificar);
         return;
     }
 
@@ -140,38 +270,56 @@ function verificar() {
     const q = questoes[indiceAtual];
     const isCorreto = (resp === q.correta);
 
-    // 2. INTERFACE: Pinta as respostas (Verde ou Vermelho)
-    if (typeof DuvidUI !== "undefined") {
-        DuvidUI.estilizarResultadoQuestao(resp, q.correta);
-    }
-
-    // 3. GAMIFICAÇÃO & PONTUAÇÃO (Lógica de Acerto ou Erro)
-    // 3. O GRANDE GATILHO (A única chamada de efeito/pontos necessária)
-    if (typeof DuvidUI !== "undefined" && typeof DuvidUI.executarGatilhoResultado === "function") {
-        // Se acertou, passa os pontos da constante. Se errou, passa 0.
-        const pontosParaDar = isCorreto ? (typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10) : 0;
-        
-        // Esta função abaixo já faz TUDO: som, confete, erro, salvar pontos e girar a moeda
-        DuvidUI.executarGatilhoResultado(isCorreto, pontosParaDar);
-    }
-
-    // 4. CONTROLE LOCAL: Para o modal de conclusão no final do simulado
     if (isCorreto) {
-        nota++; 
+        // ACERTO — mostra resposta correta normalmente
+        DuvidUI.estilizarResultadoQuestao(resp, q.correta);
+        DuvidUI.executarGatilhoResultado(true, RECOMPENSA_QUESTOES);
+        nota++;
+    } else {
+        // ERRO — não revela a resposta, só some as alternativas
+        perderVida();
+        DuvidUI.executarGatilhoResultado(false, 0);
+
+        // Esmaece todas as alternativas sem marcar a correta
+        document.querySelectorAll('.item-resposta').forEach(item => {
+            item.style.opacity = '0.3';
+            item.style.filter = 'grayscale(1)';
+            const radio = item.querySelector('input');
+            if (radio) radio.disabled = true;
+        });
     }
 
-     this.atualizarInterface();
-
-    // 5. EXIBIR PAINEL DE COMENTÁRIOS E SCROLL
     exibirPainelFeedback(isCorreto, q);
-
     if (btnVerificar) btnVerificar.disabled = true;
+    DuvidUI.scrollParaElemento('feedback-txt', 'center');
+}
 
-    // Scroll suave para o comentário do professor
-    if (typeof DuvidUI !== "undefined") {
-        DuvidUI.scrollParaElemento('feedback-txt', 'center');
+function perderVida() {
+    if (vidas <= 0) return;
+    vidas--;
+
+    // Atualiza corações já renderizados
+    const coracoes = document.querySelectorAll('.coracao-questao');
+    coracoes.forEach((c, i) => {
+        if (i >= vidas) c.classList.add('perdido');
+    });
+
+    // Shake no container
+    const container = document.querySelector('.duvid-coracoes-container');
+    if (container) {
+        container.classList.add('shake-erro');
+        setTimeout(() => container.classList.remove('shake-erro'), 500);
+    }
+
+    // Aviso contextual
+    const aviso = document.getElementById('aviso-vidas-questao');
+    if (aviso) {
+        aviso.innerText = vidas === 1 ? '❗ Última vida!' : '';
+        aviso.style.display = vidas <= 1 ? 'inline' : 'none';
     }
 }
+
+
 
 
 // Função auxiliar para o painel inferior
@@ -182,17 +330,40 @@ function exibirPainelFeedback(isCorreto, questao) {
 
     feedback.className = `w3-bottom w3-container w3-padding-16 w3-animate-bottom ${isCorreto ? 'w3-green' : 'w3-amber'}`;
 
-    msg.innerHTML = isCorreto
-        ? `<b><i class='fa fa-smile-o'></i> ${typeof getFraseSucesso === "function" ? getFraseSucesso() : "Boa!"}</b>`
-        : `<b>Opa! A resposta correta é a (${String.fromCharCode(65 + questao.correta)})</b>`;
+    if (isCorreto) {
+        msg.innerHTML = `<b><i class='fa fa-smile-o'></i> ${getFraseSucesso()}</b>`;
+    } else {
+        // Erro — mensagem neutra, sem revelar a alternativa correta
+        msg.innerHTML = `<b><i class='fa fa-lightbulb-o'></i> Não foi dessa vez — leia a dica do professor:</b>`;
+    }
 
+    // Comentário sempre aparece — no erro é a dica implícita
     txt.innerHTML = `
         <div class="comentario-box">
             ${questao.comentario}
+            ${gerarImagemComentario(questao)}
         </div>
     `;
+
     feedback.classList.remove('w3-hide');
 }
+
+
+
+
+const gerarImagemComentario = (q) => {
+    if (!q.imagem_comentario) return '';
+
+    return `
+        <div class="duvid-container-comentario">
+            <img src="${q.imagem_comentario}" class="duvid-img-comentario" alt="Reforço Visual">
+            ${q.legenda_comentario ? `
+                <div class="duvid-legenda-box">
+                    <p class="duvid-legenda-texto"><i>${q.legenda_comentario}</i></p>
+                </div>` : ''}
+        </div>
+    `;
+};
 
 
 
@@ -206,35 +377,14 @@ function scrollSuaveFeedback() {
 
 
 
-
-
-function processarRecompensa(isCorreto) {
-    if (isCorreto) {
-        nota++; // Mantemos o contador interno para o modal final
-    }
-
-    // O GRANDE GATILHO (A única linha necessária)
-    // Ele já cuida de: Som, Confete, Giro do Globinho, Salvar Pontos e Atualizar Interface
-    if (typeof executarGatilhoResultado === "function") {
-        const pontos = isCorreto ? (typeof RECOMPENSA_QUESTOES !== "undefined" ? RECOMPENSA_QUESTOES : 10) : 0;
-        executarGatilhoResultado(isCorreto, pontos);
-    } else {
-        // Fallback caso o UI não carregue (segurança)
-        if (typeof playSom === "function") playSom(isCorreto ? 'acerto' : 'erro');
-    }
-}
-
-
-
 function proxima() {
     document.getElementById('barra-feedback').classList.add('w3-hide');
     indiceAtual++;
 
-    // Faz a página voltar para o topo para ler a nova questão
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    // Vidas NÃO resetam aqui — carregam durante toda a sessão
+    // Só resetam ao tentar novamente (no finalizar)
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     if (indiceAtual < questoes.length) {
         renderizarQuestao();
@@ -245,20 +395,45 @@ function proxima() {
 
 function finalizar() {
     const total = questoes.length;
-    const acertos = nota; // 'nota' aqui são os acertos acumulados
-    const aprovado = (acertos / total) >= 0.6; // 60% de aproveitamento
+    const acertos = nota;
+    const aprovado = (acertos / total) >= 0.6;
+    const ganhouBonus = aprovado && vidas === TOTAL_VIDAS; // << vidas intactas
 
-    // 1. Dados e Persistência
-    if (typeof DuvidDB !== "undefined" && typeof aulaID !== "undefined") {
-        DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.QUESTOES);
-        if (aprovado) DuvidDB.addGlobinhos(RECOMPENSA_GERAL);
+    // 1. Persistência
+    if (typeof DuvidDB !== "undefined" && aulaID) {
+        if (aprovado) {
+            DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.QUESTOES);
+            DuvidDB.addGlobinhos(RECOMPENSA_GERAL);
+
+            // Bônus extra por vidas intactas
+            if (ganhouBonus) {
+                DuvidDB.addGlobinhos(BONUS_VIDAS);
+            }
+        }
     }
 
-    // 2. Interface (Chama o Maestro)
+    // 2. Modal
     if (typeof DuvidUI !== "undefined") {
-        DuvidUI.exibirModalSimulado(aprovado, acertos, total);
+        DuvidUI.exibirModalSimulado(aprovado, acertos, total, ganhouBonus);
     }
 }
 
+// Função global chamada pelo botão do modal
+function tentarNovamente() {
+    // Reseta tudo para uma sessão nova limpa
+    indiceAtual = 0;
+    nota = 0;
+    vidas = TOTAL_VIDAS; // << vidas voltam para 3
+
+    // Fecha o modal
+    const modal = document.getElementById('id01');
+    if (modal) modal.style.display = 'none';
+
+    // Reembaralha — aluno não vê as mesmas questões na mesma ordem
+    questoes = embaralharArray([...questoes]);
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    renderizarQuestao();
+}
 // --- FUNÇÕES AUXILIARES (As peças de baixo nível) ---
 

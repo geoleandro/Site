@@ -57,7 +57,7 @@ async function injetarComponentesGlobais() {
 }
 
 /**
- * Verifica se a página atual é uma lição interativa
+ * Verifica se a página atual é uma lição interativa 
  * baseada na existência de elementos de aula.
  */
 function verificarSeEhAula() {

@@ -55,7 +55,7 @@ function mudarCidadeClima() {
 const MonitorPopulacao = {
     // Dados base estimados para Março de 2026
     baseMundial: 8254130400,
-    taxaPorSegundo: 2.4, // Média de crescimento líquido global (nascimentos - óbitos)
+   taxaPorSegundo: 2.22, // Média de crescimento líquido global (nascimentos - óbitos)
 
     iniciar: function () {
         // Atualiza a cada 500ms para o efeito visual ser mais fluido ("pulsante")
@@ -147,7 +147,7 @@ const MonitorBrasil = {
     // Estimativa para 1º de Abril de 2026 (aprox. 213,5 milhões)
     baseBrasil: 213500000,
     // Taxa de crescimento líquido (nascimentos - óbitos) estimada em ~0.022 por segundo
-    taxaPorSegundo: 0.022,
+    taxaPorSegundo: 0.0352,
 
     iniciar: function () {
         // Atualiza a cada 500ms para o efeito visual de "pulso"
@@ -201,7 +201,7 @@ async function buscarIndicadoresBC() {
         console.error("Erro Banco Central:", err);
         // Fallbacks baseados na sua observação de 2025/2026
         document.getElementById('selic-valor').innerText = "10,75%";
-        document.getElementById('ipca-valor').innerText = "3,90%"; 
+        document.getElementById('ipca-valor').innerText = "3,90%";
     }
 }
 
@@ -211,10 +211,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicia Relógios (Pulsantes)
     MonitorPopulacao.iniciar();
     MonitorBrasil.iniciar();
-    
+
     // Inicia Clima
     ClimaDuvid.init();
-    
+
     // Chamadas iniciais de APIs (Dados Estáticos)
     buscarDolar();
     buscarDadosMercado();

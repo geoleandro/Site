@@ -1,0 +1,159 @@
+[
+  {
+    "id": 1,
+    "ano": "ENEM 2019",
+    "imagem_apoio": "",
+    "texto_apoio": "<h3 class=\"w3-center\"> <strong>Os moradores de Utqiagvik passaram dois meses quase totalmente na escuridão</strong> </h3> <p>Os habitantes desta pequena cidade no Alasca — o estado dos Estados Unidos mais ao norte — já estão acostumados a longas noites sem ver a luz do dia. <br>Em 18 de novembro de 2018, seus pouco mais de 4 mil habitantes viram o último pôr do sol do ano. A oportunidade seguinte para ver a luz do dia ocorreu no dia 23 de janeiro de 2019, às 13 h 04 min (horário local).</p> <p>O fenômeno descrito está relacionado ao fato de a cidade citada ter uma posição geográfica condicionada pela</p> <p class=\"w3-small\"> Disponível em: http://www.bbc.com. Acesso em: 16 maio 2019 (adaptado). </p>",
+    "pergunta": "",
+    "alternativas": [
+      " continentalidade.",
+      " maritimidade.",
+      " longitude.",
+      " latitude.",
+      " altitude."
+    ],
+    "correta": 3,
+    "comentario": "\n\n\t\t\t<p>a) Incorreta. A continentalidade, isto é, a distância entre mares e oceanos, não afeta o a duração do dia\n\t\t\t\tem relação à noite (fotoperíodo) e a o Alasca é banhado pelo Oceano Pacífico ao Sul e pelo Oceano Ártico\n\t\t\t\tao Norte.</p>\n\n\t\t\t<p>b) Incorreta. A maritimidade, ou seja, a influência da umidade do mar no clima, está relacionado a\n\t\t\t\tpluviosidade a variação de temperatura de uma região, e não a duração da intensidade solar.</p>\n\n\t\t\t<p> c) Incorreta. A longitude é a distância ao meridiano de Greenwich ao longo do Equador e influencia\n\t\t\t\tdiretamente nos fusos horários, mas necessidade da latitude para resultar em uma coordenada geográfica.\n\t\t\t</p>\n\n\t\t\t<p>d) Correta. A latitude é a distância medida em graus em relação à linha do Equador em direção aos polos,\n\t\t\t\tvariando de 0° a 90° ao norte e ao sul. Como a cidade citada está localizada no extremo Norte do Globo,\n\t\t\t\ta influência da latitude é o principal responsável pela duração dos dias e da noite.</p>\n\n\t\t\t<p>Devido a inclinação do Planeta, locais onde a latitude é alta recebe menor intensidade de luz, por isso o\n\t\t\t\tclima é mais frio e a duração do dia durante o inverno é menor. Os paralelos determinam as zonas\n\t\t\t\tclimáticas da Terra. Por exemplo, latitudes acima de 66°33' pertencem aos Círculos Polares, onde ocorre\n\t\t\t\to fenômeno das \"noites polares\", em que o período de penumbra pode variar de 24 horas até vários meses,\n\t\t\t\tdependendo da latitude.</p>\n\n\n\t\t\t\n\n\t\t\t<p> e) Incorreta. A Altitude influencia o clima através da temperatura, umidade e pressão. Logo, não\n\t\t\t\tinterfere diretamente na intensidade de luz solar.\n\n\t\t\t</p>"
+  },
+  { "id": 2,
+    "ano": "UNICAMP 2018",
+    "imagem_apoio": "1ano/img/102/p2q2.png",
+    "texto_apoio": "A figura a seguir exibe uma representação estilizada do mapa do Estado de São Paulo. As linhas pontilhadas horizontais e verticais indicam intervalos iguais de longitude e latitude, e o ponto preto representa a cidade de Campinas.",
+    "pergunta": "Considere que o Estado de São Paulo está, aproximadamente, entre as latitudes 20° e 25°Sul e entre as longitudes 44° e 54°Oeste. A partir da representação acima, conclui-se que Campinas se localiza entre",
+    "alternativas": [
+      "as latitudes 24º e 25º sul.",
+      "as latitudes 21º e 22º Sul.",
+      "as longitudes 46º e 48º Oeste.",
+      "as longitudes 50º e 52º Oeste."
+    ],
+    "correta": 2,
+    "comentario": "\n\n\t\t\t<p> Como o estado de São Paulo se localiza no Hemisfério Ocidental e no Hemisfério Sul, a longitude aumenta\n\t\t\t\tde Leste para Oeste, sendo contadaa partir do Meridiano de Greenwich (0º); a latitude aumenta do Norte\n\t\t\t\t(Equador, 0º) para o Sul. O mapa representa a localização aproximada do estado de São Paulo, entre as\n\t\t\t\tlatitudes 20° e 25° sul e longitude 44° e 54° oeste.</p>\n\t\t\t<p> As linhas pontilhadas representam intervalos regulares de latitude e longitude. Sabendo-se que a\n\t\t\t\tlatitude aumenta em direção aos polos, a linha horizontal central representa aproximadamente 22.5° sul,\n\t\t\t\te Campinas está ao sul dessa linha.</p>\n\t\t\t<p> Em relação à longitude, os intervalos regulares das linhas pontilhadas são de 2.5°. Como no hemisfério\n\t\t\t\tocidental a longitude aumenta em direção a oeste, conclui-se que a cidade de Campinas localiza-se entre\n\t\t\t\tas linhas 46.5° e 49° oeste.</p>"
+  },
+ {
+  "id": 3,
+  "ano": "IFSULDEMINAS 2018",
+  "imagem_apoio": "1ano/img/102/p2q3.png",
+  "texto_apoio": "A localização precisa de qualquer ponto da superfície do planeta é fornecida pelas coordenadas geográficas, que resultaram do desenvolvimento de técnicas cartográficas para a elaboração de mapas. São linhas imaginárias que foram traçadas com o objetivo de determinar a posição correta dos diversos lugares do planeta. Os paralelos são linhas imaginárias traçadas sobre a superfície terrestre, que representam cada um dos cortes horizontais; já os meridiano são cada um dos círculos máximos que cortam a terra em duas partes iguais, que passam pelos polos norte e sul.",
+  "pergunta": "A partir dos dados, marque as opções com V para as VERDADEIRAS e com F para as FALSAS:\n\n(     ) O ponto B é o que se localiza na parte mais austral do planeta.\n\n(     ) Os pontos D e B estão localizados no Oceano Atlântico.\n\n(     ) O ponto E apresenta as seguintes coordenadas: 40º de latitude norte e 120º de longitude oeste.\n\n(     ) O território brasileiro tem a maior parte de suas terras no hemisfério austral.\n\n(     ) O ponto E é o que se encontra em maior grau no hemisfério oriental. A sequência CORRETA será:",
+  "alternativas": [
+    "V V V V V.",
+    "V V F V V.",
+    "F F F V V.",
+    "V F V F V.",
+    "V V V F V."
+  ],
+  "correta": 1,
+  "comentario": "\n\t\t\t<p>\n\t\t\t\tAustral: do Latim <em>meridionāle</em>, relativo às regiões ou aos habitantes do Sul. Contrário: Boreal,\n\t\t\t\trelativo às regiões ou aos habitantes do norte ou setentrional.\n\n\t\t\t</p><p>Correta. O ponto B está na porção Sul do Planeta (mais austral).</p>\n\n\t\t\t<p>Correta. Os pontos D e B estão localizados no Oceano Atlântico.</p>\n\n\t\t\t<p>Incorreta. O ponto E está na latitude 40ºN, porém na longitude 120º Leste (Oriental), e não Oeste.</p>\n\n\t\t\t<p>Correta. O território brasileiro tem 93% de suas terras no hemisfério Sul (Austral).</p>\n\n\t\t\t<p>Correta. O ponto E está localizado no extremo oriente (Leste) do globo.</p>\n\t\t\t<p></p>"
+},
+  {
+    "id": 4,
+    "ano": "UNCISAL 2017",
+    "imagem_apoio": "1ano/img/102/p2q4.png",
+    "texto_apoio": "Observe com atenção o desenho a seguir. De acordo com o desenho, considerando que são 18 horas, se a bola for chutada do centro em direção aos pontos A, B e C respectivamente, as direções percorridas serão:",
+    "pergunta": "",
+    "alternativas": [
+      "leste, norte, noroeste.",
+      "oeste, sul, sudeste.",
+      "leste, sul, sudoeste.",
+      "oeste, norte, noroeste.",
+      "sul, leste, noroeste."
+    ],
+    "correta": 0,
+    "comentario": "\n\t\t\t<p>\n\t\t\t\tObservando a rosa dos ventos na figura, vemos que entre Norte e Leste se encontra o nordeste, entre\n\t\t\t\tNorte e\n\t\t\t\tOeste se encontra o noroeste, entre Sul e Leste o Sudeste e entre Sul e Oeste o Sudoeste. O Sol sempre\n\t\t\t\tnasce\n\t\t\t\tao Leste e se põe no Oeste, então, como são 18 horas, o Sol está se pondo na direção Oeste. Observando a\n\t\t\t\tfigura do enunciado, podemos ver que o ponto A está a Leste, o ponto B ao norte e o ponto C entre Norte\n\t\t\t\te\n\t\t\t\tOeste, ou Noroeste.\n\t\t\t</p>"
+  },
+  {
+    "id": 5,
+    "ano": "UNICENTRO 2015",
+    "imagem_apoio": "1ano/img/102/p2q5.png",
+    "texto_apoio": "Observe a imagem a seguir.",
+   "pergunta": "Relacione os pontos indicados no globo (coluna da esquerda) com suas respectivas coordenadas geográficas (coluna da direita):\n\n( I ) Ponto A       a) 60°N; 30°L\n( II ) Ponto B      b) 20°N; 0°\n( III ) Ponto C     c) 40°N; 80°O\n( IV ) Ponto D      d) 20°S; 60°L\n( V ) Ponto E       e) 10°S; 60°O\n\nAssinale a alternativa que contém a associação correta:",
+    "alternativas": [
+      "I-C, II-A, III-B, IV-E, V-D.",
+      "I-C, II-E, III-A, IV-D, V-B.",
+      "I-D, II-A, III-B, IV-E, V-C",
+      "I-A, II-C, III-E, IV-D, V-B.",
+      "I-D, II-C, III-E, IV-B, V-A."
+    ],
+    "correta": 3,
+    "comentario": "\n\n\t\t\t<p>A questão propõe a resolução de coordenadas geográficas, que são as linhas imaginárias que cortem Planeta\n\t\t\t\tTerra e compreendem: os meridianos (com o plano no eixo de rotação da Terra) e os paralelos (com o plano\n\t\t\t\tperpendicular ao eixo da Terra, isto é, formando um ângulo de 90º com esse eixo).</p>"
+  },
+  {
+    "id": 6,
+    "ano": "ENEM 2010",
+    "imagem_apoio": "",
+    "texto_apoio": "Em casa que não entra Sol, entra médico.” Esse antigo ditado reforça a importância de, ao construirmos casas, darmos orientações adequadas aos dormitórios, de forma a garantir o máximo conforto térmico e salubridade. Assim, confrontando casas construídas em Lisboa (ao norte do trópico de Câncer) e em Curitiba (ao sul do trópico de Capricórnio), para garantir a necessária luz do Sol, as janelas dos quartos não devem estar voltadas, respectivamente, para os pontos cardeais:",
+    "pergunta": "",
+    "alternativas": [
+      "norte / sul.",
+      "sul / norte.",
+      "leste / oeste.",
+      "oeste / leste.",
+      "oeste / oeste."
+    ],
+    "correta": 0,
+    "comentario": "\n\n\t\t\t<p>a) Correta. A questão procura saber qual posição as janelas dos quartos não devem estar localizadas, fato\n\t\t\t\tque dificultaria a incidência da luz solar nesses quartos. A posição norte no Hemisfério Norte se situa\n\t\t\t\tdistante do Equador, e no Hemisfério Sul, o quarto voltado para a posição Sul também ficaria em oposição\n\t\t\t\tao\n\t\t\t\tEquador. Portanto, Norte/Sul é a resposta correta.</p>\n\n\t\t\t<p> b) Incorreta. A questão demanda qual posição as janelas dos quartos não devem estar localizadas para que\n\t\t\t\ta\n\t\t\t\tluz solar seja garantida. A posição Sul no hemisfério Norte recebe maior incidência de luz solar, uma\n\t\t\t\tvez\n\t\t\t\tque essa posição vai em direção do Equador. O mesmo ocorre no hemisfério Sul, onde a posição Norte\n\t\t\t\trecebe\n\t\t\t\tluz de forma mais intensa. Portanto, essas posições Sul/Norte garantem a luz solar necessária.</p>\n\n\t\t\t<p> c) Incorreta. Assim como o Sol nasce ao Leste e se põem no Oeste, as janelas localizadas nessa posição\n\t\t\t\trecebem luz, naturalmente, em algum período do dia.</p>\n\n\t\t\t<p> d) Incorreta. Tal como na letra c, as janelas localizadas nessa posição recebem luz, naturalmente, em\n\t\t\t\talgum\n\t\t\t\tperíodo do dia.</p>\n\n\t\t\t<p> e) Incorreta. Tal como na letra c e d, as janelas localizadas nessa posição recebem luz, naturalmente,\n\t\t\t\tem\n\t\t\t\talgum período do dia.</p>"
+  },
+  {
+    "id": 7,
+    "ano": "UERJ 2009",
+    "imagem_apoio": "1ano/img/102/p2q7.png",
+    "texto_apoio": "Se uma imagem vale mais do que mil palavras, um mapa pode valer um milhão – mas cuidado. Todos os mapas distorcem a realidade. (…) Todos os cartógrafos procuram retratar o complexo mundo tridimensional em uma folha de papel ou em uma televisão ou tela de vídeo. Em resumo, o autor avisa, todos os mapas precisam contar mentirinhas.",
+    "pergunta": "Observe o planisfério acima, considerando as ressalvas presentes no texto. </p>\n\n\t\t\t<p> Para deslocar-se sequencialmente, sem interrupções, pelos pontos A, B, C e D, percorrendo a menor distância física possível em rotas por via aérea, as direções aproximadas a serem seguidas seriam:",
+    "alternativas": [
+      "Leste – Norte – Oeste.",
+      "Oeste – Norte – Leste.",
+      "Leste – Noroeste – Leste.",
+      "Oeste – Noroeste – Oeste."
+    ],
+    "correta": 0,
+    "comentario": "\n\n\t\t\t<p> a) Correta. O texto de Mark Monmonier constitui uma advertência às distorções da realidade que\n\t\t\t\tnecessariamente ocorrem nas representações em mapas. Considerando essa informação e conhecimentos\n\t\t\t\tprévios de\n\t\t\t\tcartografia, é possível orientar-se corretamente entre os pontos assinalados no planisfério,\n\t\t\t\tdeslocando-se\n\t\t\t\tpela menor distância possível da seguinte forma: do ponto A ao ponto B, deve-se seguir para o leste, uma\n\t\t\t\tvez\n\t\t\t\tque a Terra é uma esfera e atravessar o Oceano Pacífico é o menor caminho para ir do Japão à Costa Oeste\n\t\t\t\tnorte-americana; do ponto B ao ponto C, no norte canadense, a direção correta é a norte, seguindo a\n\t\t\t\tlinha do\n\t\t\t\tmeridiano que passa entre os dois pontos e que converge para o Pólo Norte; do ponto C ao ponto D, pela\n\t\t\t\tdireção oeste, apenas o Estreito de Bering separa o continente americano do asiático.</p>\n\n\t\t\t<p> b) Incorreta. Esse caminho seria o de maior distância possível, contrariando o que solicita a questão.</p>\n\n\t\t\t<p> c) Incorreta. Embora a primeira parte à Leste esteja correta, no segundo deslocamento (B para C) não é\n\t\t\t\tpossível se deslocar a Noroeste, uma vez que caso fosse traçado um linha reta na vertical entre esses\n\t\t\t\tdois\n\t\t\t\tpontos, não haveria um avanço para o lado Oeste (esquerda).</p>\n\n\t\t\t<p> d) Incorreta. Conforme questão b e c, não seria possível atingir o que demanda a questão.</p>"
+  },
+  {
+    "id": 8,
+    "ano": "",
+    "imagem_apoio": "",
+    "texto_apoio": "O jardim de caminhos que se bifurcam (....) Uma lâmpada aclarava a plataforma, mas os rostos dos meninos ficavam na sombra. Um me perguntou: O senhor vai à casa do Dr. Stephen Albert? Sem aguardar resposta, outro disse: A casa fica longe daqui, mas o senhor não se perderá se tomar esse caminho à esquerda e se em cada encruzilhada do caminho dobrar à esquerda.</p> <p class=\"citacao w3-sand w3-small\"> (Adaptado. Borges, J. Ficções. Rio de Janeiro: Globo, 1997. p.96.) </p>",
+    "pergunta": "Quanto à cena descrita acima, considere que:</p>\n\n\t\t\t<p>I - o sol nasce à direita dos meninos</p>\n\n\t\t\t<p>II - o senhor seguiu o conselho dos meninos, tendo encontrado duas encruzilhadas até a casa.</p>\n\n\t\t\t<p>Concluiu-se que o senhor caminhou, respectivamente, nos sentidos",
+    "alternativas": [
+      "oeste, sul e leste.",
+      "leste, sul e oeste.",
+      "leste, norte e oeste",
+      "leste, norte e oeste.",
+      "leste, norte e sul."
+    ],
+    "correta": 0,
+    "comentario": "\n\n\t\t\t<p>\n\t\t\t\tSabendo que o Sol nasce à direita (leste) e o senhor tomou a direção à esquerda, repetindo esta opção\n\t\t\t\toutras\n\t\t\t\tduas vezes, conclui-se que partiu em direção oeste e, nas encruzilhadas seguintes, tomou,\n\t\t\t\trespectivamente,\n\t\t\t\tas direções sul e leste.\n\t\t\t</p>"
+  },
+  {
+    "id": 9,
+    "ano": "ENEM 2004",
+    "imagem_apoio": "1ano/img/102/p2q9.png",
+    "texto_apoio": "Um leitor encontra o seguinte anúncio entre os classificados de um jornal: (use escala para resolver). Interessado no terreno, o leitor vai ao endereço indicado e, lá chegando, observa um painel com a planta a seguir, onde estavam destacados os terrenos ainda não vendidos, numerados de I a V:",
+    "pergunta": "Considerando as informações do jornal, é possível afirmar que o terreno anunciado é o:",
+    "alternativas": [
+      "I.",
+      "II.",
+      "III.",
+      "IV.",
+      "V."
+    ],
+    "correta": 3,
+    "comentario": "\n\n\t\t\t<p>\n\t\t\t\tDadas as informações do mapa e do anúncio, os únicos terrenos com 200 m² são III e IV. Contudo, apenas o\n\t\t\t\tterreno IV recebe o sol de frente no período da manhã, pois tem sua frente voltada para o leste.\n\t\t\t</p>"
+  },
+  {
+    "id": 10,
+    "ano": "ENEM 2000",
+    "imagem_apoio": "1ano/img/102/p2q10.png",
+    "texto_apoio": "Em certa cidade, algumas de suas principais vias têm a designação 'radial' ou 'perimetral', acrescentando-se ao nome da via uma referência ao ponto cardeal correspondente. As ruas 1 e 2 estão indicadas no esquema abaixo, em que não estão explicitados os pontos cardeais.",
+    "pergunta": "Os nomes corretos das vias 1 e 2 podem, respectivamente, ser:",
+    "alternativas": [
+      "perimetral sul, radial leste.",
+      "perimetral sul, radial oeste.",
+      "perimetral norte, radial oeste.",
+      "radial sul, perimetral norte.",
+      "radial sul, perimetral oeste."
+    ],
+    "correta": 1,
+    "comentario": "\n\n\t\t\tA terminologia perimetral vem de perímetro, que corresponde à medida do que está em volta. Dessa forma, a\n\t\t\tvia indicada por 1 é uma perimetral.\n\t\t\tRadial, vem de raio (distância do centro a qualquer ponto da circunferência); dessa forma, a via indicada\n\t\t\tpor 2 é uma radial.<br>\n\t\t\tSe você está de frente para o norte, seu braço direito aponta para o leste. Da mesma forma, se você está de\n\t\t\tfrente para o sul, seu braço direito aponta para oeste. Seguindo esse raciocínio, o nome das ruas está\n\t\t\tcorretamente indicado pela letra B."
+  }
+]

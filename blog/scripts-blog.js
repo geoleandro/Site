@@ -28,12 +28,13 @@ async function carregarDadosDoArquivo() {
         // --- EXECUÇÃO DAS AUTOMAÇÕES ---
 
         preencherDadosAutomaticos(artigos); // Injeta Título, Data e Imagem do post
-      
+
         renderizarPostsRecentes();         // Monta a barra lateral
         renderizarNuvemDeTags();           // Monta as tags
         renderizarLeiaTambem();            // Monta as sugestões
         carregarComentariosFacebook();     // Injeta o plugin do FB
         renderizarArquivoBlog();
+        renderizarDestaque();
         renderizarArtigos(paginaAtual);
         renderizarSecaoViagens();
 
@@ -51,7 +52,7 @@ async function carregarDadosDoArquivo() {
             artigos = await resp.json();
 
             preencherDadosAutomaticos(artigos); // Injeta Título, Data e Imagem do post
-           
+
             renderizarPostsRecentes();         // Monta a barra lateral
             renderizarNuvemDeTags();           // Monta as tags
             renderizarLeiaTambem();            // Monta as sugestões
@@ -59,6 +60,7 @@ async function carregarDadosDoArquivo() {
             renderizarArquivoBlog();
             renderizarArtigos(paginaAtual);
             renderizarSecaoViagens();
+            renderizarDestaque();
 
             // --- INICIALIZAÇÃO DE INTERAÇÕES ---
 
@@ -188,7 +190,7 @@ function renderizarPostsRecentes() {
 
 function renderizarCitacaoDoArtigo(artigo) {
     const container = document.getElementById('citacao-dinamica');
-    
+
     if (container && artigo.citacao_texto) {
         // Usamos apenas as classes de cor/borda do W3.CSS 
         // A classe 'citacao-container' e 'corpo-artigo' cuidam do resto pelo seu CSS
@@ -280,12 +282,30 @@ function renderizarLeiaTambem() {
 
 function renderizarArtigos(pagina) {
     const grid = document.getElementById('posts-grid');
+    const destaqueContainer = document.getElementById('post-destaque');
     if (!grid) return;
     grid.innerHTML = "";
 
+    // 1. LIDAR COM O DESTAQUE
+    // Só mostra o destaque se for a página 1 e se NÃO houver filtro de tags ativo
+    const filtroAtivo = document.getElementById('btn-limpar-filtro')?.style.display === 'block';
+
+    if (pagina === 1 && !filtroAtivo) {
+        if (destaqueContainer) {
+            destaqueContainer.style.display = 'block';
+            renderizarDestaque(); // Sua função que monta o post[0]
+        }
+    } else {
+        if (destaqueContainer) destaqueContainer.style.display = 'none';
+    }
+
+    // 2. AJUSTAR O GRID PARA NÃO REPETIR
+    // Criamos uma lista que ignora o primeiro artigo (que é o destaque)
+    const artigosParaGrid = artigos.slice(1);
+
     const inicio = (pagina - 1) * postsPorPagina;
     const fim = inicio + postsPorPagina;
-    const artigosPaginados = artigos.slice(inicio, fim);
+    const artigosPaginados = artigosParaGrid.slice(inicio, fim);
 
     artigosPaginados.forEach(artigo => {
         grid.innerHTML += `
@@ -304,15 +324,17 @@ function renderizarArtigos(pagina) {
                 </div>
             </div>`;
     });
-    renderizarPaginacao();
+    renderizarPaginacao(artigosParaGrid.length); // Passamos o novo tamanho para a paginação
 }
 
 
-function renderizarPaginacao() {
-    const totalPaginas = Math.ceil(artigos.length / postsPorPagina);
+function renderizarPaginacao(totalArtigosGrid) {
+    const totalPaginas = Math.ceil(totalArtigosGrid / postsPorPagina);
     const paginacaoContainer = document.getElementById('blog-pagination');
     if (!paginacaoContainer) return;
     paginacaoContainer.innerHTML = "";
+
+    if (totalPaginas <= 1) return; // Não precisa de botões se só houver uma página
 
     for (let i = 1; i <= totalPaginas; i++) {
         const classeAtiva = (i === paginaAtual) ? 'w3-green' : 'w3-white';
@@ -326,10 +348,43 @@ function irParaPagina(p) {
     window.scrollTo(0, 0);
 }
 
+// FUNÇÃO EXCLUSIVA PARA O DESTAQUE
+function renderizarDestaque() {
+    const destaqueContainer = document.getElementById('post-destaque');
+    if (!destaqueContainer || artigos.length === 0) return;
+
+    // O primeiro artigo do array é o mais recente
+    const destaque = artigos[0];
+
+    destaqueContainer.innerHTML = `
+        <div class="w3-card-4 w3-margin-top w3-white">
+            <div class="w3-display-container">
+                <img src="${destaque.imagem}" style="width:100%; max-height:450px; object-fit:cover" alt="${destaque.titulo}">
+               <div class="w3-display-topleft ${corTemaLateral} w3-padding">Novo Post</div>
+            </div>
+            <div class="w3-container">
+                <h2 class="w3-xxxlarge"><b>${destaque.titulo}</b></h2>
+                <p>${destaque.resumo}</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                        <p><a href="${destaque.link}" class="w3-button w3-padding-large w3-white w3-border"><b>LER MAIS »</b></a></p>
+                    </div>
+                    <div class="w3-col m4 s12 w3-hide-small">
+                        <p class="w3-right"><span class="w3-padding w3-right w3-opacity"><b>Data: </b> ${destaque.data}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+    `;
+}
+
 
 function filtrarPorTag(tagSelecionada) {
     const grid = document.getElementById('posts-grid');
     if (!grid) return;
+    document.getElementById('post-destaque').style.display = 'none';
 
     // Filtra os artigos que contém a tag selecionada
     const artigosFiltrados = artigos.filter(artigo =>
@@ -370,6 +425,7 @@ function limparFiltro() {
     document.getElementById('btn-limpar-filtro').style.display = 'none';
     const paginacao = document.getElementById('blog-pagination');
     if (paginacao) paginacao.style.display = 'block';
+    document.getElementById('post-destaque').style.display = 'block';
 
     paginaAtual = 1;
     renderizarArtigos(paginaAtual); // Volta a mostrar todos os artigos
@@ -483,15 +539,15 @@ function renderizarArquivoBlog() {
     });
 
     let html = `
-        <div class="w3-white w3-margin">
+        <div class="w3-margin">
             <div class="w3-container w3-padding ${corTemaLateral}">
                 <h4>Arquivo Blog</h4>
             </div>
-            <div class="dropdown-container w3-padding">
+            <div class="dropdown-container w3-padding arquivo-blog">
                 <button class="w3-button w3-block w3-left-align" onclick="document.getElementById('drop-arquivo').classList.toggle('w3-show')">
                     <strong>Anos e Meses</strong> <i class="fa fa-caret-down"></i>
                 </button>
-                <div id="drop-arquivo" class="w3-hide w3-container w3-white">`;
+                <div id="drop-arquivo" class="w3-hide w3-container">`;
 
     // Ordenar anos (do mais novo para o mais antigo)
     const anosOrdenados = Object.keys(arquivo).sort((a, b) => b - a);
@@ -513,13 +569,13 @@ function renderizarArquivoBlog() {
             const idMes = `mes-${ano}-${mes}`;
             html += `
                 <div class="w3-padding-small">
-                    <span style="cursor:pointer; color: #555;" onclick="document.getElementById('${idMes}').classList.toggle('w3-show')">
+                    <span style="cursor:pointer; color: ##444;" onclick="document.getElementById('${idMes}').classList.toggle('w3-show')">
                         <i class="fa fa-calendar-alt w3-tiny"></i> ${mes} (${postsNoMes.length})
                     </span>
                     <div id="${idMes}" class="w3-hide w3-margin-left">`;
 
             postsNoMes.forEach(post => {
-                html += `<a href="${post.link}" class="w3-bar-item w3-button w3-small w3-text-grey" style="display:block; white-space: normal; border-left: 1px solid #ddd;">• ${post.titulo}</a>`;
+                html += `<a href="${post.link}" class="w3-bar-item w3-button w3-small" style="display:block; white-space: normal; border-left: 1px solid ##444;">• ${post.titulo}</a>`;
             });
 
             html += `</div></div>`;

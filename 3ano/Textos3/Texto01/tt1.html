@@ -12,6 +12,8 @@
     <meta property="og:image" content="">
 
     <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
@@ -27,7 +29,7 @@
         crossorigin="anonymous"></script>
 
 
-
+    <script src="../../../js/duvid-cache.js" defer></script>
     <script src="../../../js/duvid-db.js" defer></script>
 
     <script src="../../../js/duvid-audio.js" defer></script>
@@ -48,7 +50,7 @@
 
     <style>
         .topico {
-            display: none;
+            display: block;
         }
 
         .topico:nth-child(1),
@@ -848,44 +850,7 @@
 
             <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
 
-            <div class="w3-container">
 
-                <div id="id01" class="w3-modal" style="z-index: 999;">
-                    <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
-                        <div class="w3-container w3-padding-32 w3-center">
-
-                            <div class="w3-margin-bottom pulse">
-                                <img id="modal-img-globinho" src="../../../fotoIndex/globinhoPe.png" width="64"
-                                    height="64">
-                            </div>
-
-                            <h2 id="modal-titulo" class="fontePixel"></h2>
-
-                            <div class="w3-padding-16">
-                                <p class="w3-xlarge">Você conquistou <br>
-                                    <span class="w3-text-green w3-xxlarge"><b id="modal-nota-valor">0.0</b></span> <br>
-                                    globinhos nesta aula!
-                                </p>
-                                <p id="modal-frase-feedback" class="w3-text-grey" style="font-style: italic;"></p>
-                            </div>
-
-                            <div class="w3-container w3-padding-16">
-                                <button onclick="document.getElementById('id01').style.display='none'"
-                                    class="w3-button w3-green w3-round-large w3-block w3-margin-bottom w3-padding-large"
-                                    style="font-weight: bold;">
-                                    🎯 CONTINUAR ESTUDANDO
-                                </button>
-
-                                <button onclick="window.location.href='/home.html'"
-                                    class="w3-button w3-light-grey w3-round-large w3-block w3-padding-large"
-                                    style="font-weight: bold;">
-                                    🏠 VOLTAR PARA A HOME
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
@@ -1005,13 +970,6 @@
 
 
 
-    <button onclick="voltarAoTopo()" id="btn-topo"
-        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
-        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
-        <i class="fa fa-arrow-up"></i>
-    </button>
-
-    <div class="w3-padding-top-48"></div>
     <!-- Footer -->
 
     <div id="footer-placeholder"></div>

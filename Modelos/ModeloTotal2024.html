@@ -27,6 +27,12 @@
             display: block
         }
 
+        body {
+            max-width: 850px;
+            overflow-x: hidden;
+            position: relative;
+            font-family: "Roboto", "Verdana", "Tahoma", "Arial", sans-serif;
+        }
 
         .postit-tp9 {
             background: #e6ff5b;
@@ -92,7 +98,13 @@
 
 
 
-
+        .icon-rpg {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
 
 
 
@@ -399,6 +411,7 @@ Css do memory card */
         <li><a href="#listas">Listas</a></li>
         <li><a href="#painelgrayscale">Painel explicativo</a></li>
         <li><a href="#tabelas">Tabelas</a></li>
+        <li><a href="#card-explicativo">Card Explicativo</a></li>
 
 
         <!-- Adicione mais itens conforme necessário -->
@@ -434,6 +447,45 @@ Css do memory card */
 
         <h2> </h2>
 
+        <p>Para medir o padrão de vida, usamos o PIB per capita <img src="../fotoIndex/icones/dolar-icone.png" class="icon-rpg">, mas
+            lembre-se que o ouro precisa ser distribuído!</p>
+
+
+    <h3 class="fontePixel w3-text-green">O Mercado de Trabalho: A PEA</h3>
+    
+    <div class="w3-container">
+        <img src="../../../fotoIndex/icones/dolar-icone.png" 
+             alt="PEA" 
+             class="w3-left w3-margin-right w3-margin-bottom" 
+             style="width: 80px; image-rendering: pixelated;">
+        
+        <p>
+            A <strong>População Economicamente Ativa (PEA)</strong> compreende o potencial humano do nosso "servidor" global. 
+            São indivíduos entre 15 e 64 anos que estão aptos a produzir riqueza. Imagine como os personagens 
+            de uma guilda: alguns estão em missões ativas (Ocupados), enquanto outros estão na taverna buscando 
+            novos contratos (Desocupados).
+        </p>
+        
+      
+    </div>
+
+    <p>
+    <img src="../../../fotoIndex/icones/dolar-icone.png" class="w3-right w3-margin-left icon-rpg">
+    No <strong>Setor Primário</strong>, o foco é a extração e a agricultura. É a base da pirâmide econômica.
+</p>
+
+<p>
+    <img src="../../../fotoIndex/icones/dolar-icone.png" class="w3-left w3-margin-right icon-rpg">
+    Já o <strong>Setor Secundário</strong> transforma essa matéria em produtos, como se fosse a forja de um ferreiro.
+</p>
+    
+    <hr>
+
+    <p>
+    <img src="../../../fotoIndex/icones/dolar-icone.png" class="w3-left icon-rpg" style="width:60px;">
+    A <b>Expectativa de Vida</b> é o termômetro do HP da nossa população. 
+    Quanto melhor o sistema de saúde, mais tempo os players permanecem ativos no jogo da vida.
+</p>
 
 
 
@@ -493,6 +545,55 @@ Css do memory card */
 
     </div>
 
+
+
+    <div class="topico">
+        <h2 id="card-explicativo">Inserir comentário na frase</h2>
+        <a href="#sumario">
+            <p>Voltar ao sumário:</p>
+        </a>
+        <h3 class="fontePixel w3-text-indigo w3-center">Os Três Pilares do IDH</h3>
+
+        <div class="w3-row-padding w3-margin-top">
+
+            <div class="w3-col l4 m12 w3-margin-bottom">
+                <div class="w3-card-2 w3-round-large w3-white w3-padding-16 w3-center" style="min-height: 250px;">
+                    <img src="../../../fotoIndex/icones/pixel-heart.png"
+                        style="width: 64px; image-rendering: pixelated;" class="w3-hover-opacity" alt="Saúde">
+                    <h5 class="fontePixel w3-text-red">Saúde</h5>
+                    <p class="w3-small">Representa a <b>Expectativa de Vida</b>. É o "HP" da nação, refletindo acesso
+                        médico e segurança.</p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m12 w3-margin-bottom">
+                <div class="w3-card-2 w3-round-large w3-white w3-padding-16 w3-center" style="min-height: 250px;">
+                    <img src="../../../fotoIndex/icones/pixel-book.png" style="width: 64px; image-rendering: pixelated;"
+                        class="w3-hover-opacity" alt="Educação">
+                    <h5 class="fontePixel w3-text-blue">Educação</h5>
+                    <p class="w3-small">Mede os anos de <b>escolaridade</b>. É o status de "Inteligência" que garante o
+                        desenvolvimento sustentável.</p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m12 w3-margin-bottom">
+                <div class="w3-card-2 w3-round-large w3-white w3-padding-16 w3-center" style="min-height: 250px;">
+                    <img src="../../../fotoIndex/icones/pixel-coin.png" style="width: 64px; image-rendering: pixelated;"
+                        class="w3-hover-opacity" alt="Renda">
+                    <h5 class="fontePixel w3-text-amber">Padrão de Vida</h5>
+                    <p class="w3-small">Focado no <b>PIB per capita</b>. É o "Ouro" acumulado, mas aqui olhamos se ele
+                        realmente chega a todos os cidadãos.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+    </div>
+
+
+
+
     <div class="topico w3-container w3-padding-16 mostrar">
         <p class="caixa">Questão 01</p>
         <h4>TEXTO DA PERGUNTA 01 AQUI</h4>
@@ -515,85 +616,85 @@ Css do memory card */
 
 
     <div class="pergunta-bloco w3-container w3-padding-24 w3-card">
-            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
-            <h4 class="fontePixel"><b>Pergunta 2</b></h4>
+        <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+        <h4 class="fontePixel"><b>Pergunta 2</b></h4>
 
-            <div class="grupo-respostas w3-margin-top">
-                <div class="item-resposta">
-                    <input type="radio" name="pergunta2" id="p2a" value="correto" class="radio-duvid">
-                    <label for="p2a" class="card-opcao">
-                        <span>a) correto</span>
-                    </label>
-                </div>
-
-                <div class="item-resposta">
-                    <input type="radio" name="pergunta2" id="p2b" value="errado" class="radio-duvid">
-                    <label for="p2b" class="card-opcao">
-                        <span>b) errado</span>
-                    </label>
-                </div>
-
-                <div class="item-resposta">
-                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
-                    <label for="p2c" class="card-opcao">
-                        <span>c) errado</span>
-                    </label>
-                </div>
+        <div class="grupo-respostas w3-margin-top">
+            <div class="item-resposta">
+                <input type="radio" name="pergunta2" id="p2a" value="correto" class="radio-duvid">
+                <label for="p2a" class="card-opcao">
+                    <span>a) correto</span>
+                </label>
             </div>
 
-            <div class="w3-margin-top">
-                <button class="btn-acao-duvid" 
-                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'Explicação da questão 2 aqui', '10')">
-                    Confirmar Resposta
-                </button>
+            <div class="item-resposta">
+                <input type="radio" name="pergunta2" id="p2b" value="errado" class="radio-duvid">
+                <label for="p2b" class="card-opcao">
+                    <span>b) errado</span>
+                </label>
             </div>
 
-            <p id="resp2" class="w3-center w3-padding w3-large"></p>
-            <div class="area w3-center">
-                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80">
+            <div class="item-resposta">
+                <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
+                <label for="p2c" class="card-opcao">
+                    <span>c) errado</span>
+                </label>
             </div>
         </div>
 
+        <div class="w3-margin-top">
+            <button class="btn-acao-duvid"
+                onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'Explicação da questão 2 aqui', '10')">
+                Confirmar Resposta
+            </button>
+        </div>
 
-<div class="pergunta-bloco w3-container w3-padding-24 w3-card">
-            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
-            <h4 class="fontePixel"><b>Pergunta 3</b></h4>
+        <p id="resp2" class="w3-center w3-padding w3-large"></p>
+        <div class="area w3-center">
+            <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80">
+        </div>
+    </div>
 
-            <div class="grupo-respostas w3-margin-top">
-                <div class="item-resposta">
-                    <input type="radio" name="pergunta3" id="p3a" value="errado" class="radio-duvid">
-                    <label for="p3a" class="card-opcao">
-                        <span>a) errado</span>
-                    </label>
-                </div>
 
-                <div class="item-resposta">
-                    <input type="radio" name="pergunta3" id="p3b" value="errado" class="radio-duvid">
-                    <label for="p3b" class="card-opcao">
-                        <span>b) errado</span>
-                    </label>
-                </div>
+    <div class="pergunta-bloco w3-container w3-padding-24 w3-card">
+        <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+        <h4 class="fontePixel"><b>Pergunta 3</b></h4>
 
-                <div class="item-resposta">
-                    <input type="radio" name="pergunta3" id="p3c" value="correto" class="radio-duvid">
-                    <label for="p3c" class="card-opcao">
-                        <span>c) correto</span>
-                    </label>
-                </div>
+        <div class="grupo-respostas w3-margin-top">
+            <div class="item-resposta">
+                <input type="radio" name="pergunta3" id="p3a" value="errado" class="radio-duvid">
+                <label for="p3a" class="card-opcao">
+                    <span>a) errado</span>
+                </label>
             </div>
 
-            <div class="w3-margin-top">
-                <button class="btn-acao-duvid" 
-                    onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'Explicação da questão 3 aqui', '10')">
-                    Confirmar Resposta
-                </button>
+            <div class="item-resposta">
+                <input type="radio" name="pergunta3" id="p3b" value="errado" class="radio-duvid">
+                <label for="p3b" class="card-opcao">
+                    <span>b) errado</span>
+                </label>
             </div>
 
-            <p id="resp3" class="w3-center w3-padding w3-large"></p>
-            <div class="area w3-center">
-                <img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" width="80">
+            <div class="item-resposta">
+                <input type="radio" name="pergunta3" id="p3c" value="correto" class="radio-duvid">
+                <label for="p3c" class="card-opcao">
+                    <span>c) correto</span>
+                </label>
             </div>
         </div>
+
+        <div class="w3-margin-top">
+            <button class="btn-acao-duvid"
+                onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'Explicação da questão 3 aqui', '10')">
+                Confirmar Resposta
+            </button>
+        </div>
+
+        <p id="resp3" class="w3-center w3-padding w3-large"></p>
+        <div class="area w3-center">
+            <img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" width="80">
+        </div>
+    </div>
 
 
 

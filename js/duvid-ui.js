@@ -8,15 +8,15 @@ const DuvidUI = {
         this.atualizarMedalhas(progresso.patente);
 
         // 1. Atualiza Header (Globinhos Dourados)
-    const elHeader = document.getElementById("saldoTotalHeader");
-    if (elHeader) {
-        // Se o valor mudou, dá um "pulso" visual
-        if (elHeader.innerText !== saldoFormatado) {
-            elHeader.classList.add('w3-animate-zoom');
-            setTimeout(() => elHeader.classList.remove('w3-animate-zoom'), 500);
+        const elHeader = document.getElementById("saldoTotalHeader");
+        if (elHeader) {
+            // Se o valor mudou, dá um "pulso" visual
+            if (elHeader.innerText !== saldoFormatado) {
+                elHeader.classList.add('w3-animate-zoom');
+                setTimeout(() => elHeader.classList.remove('w3-animate-zoom'), 500);
+            }
+            elHeader.innerText = saldoFormatado;
         }
-        elHeader.innerText = saldoFormatado;
-    }
         // Atualiza Nota da Aula (Nota Fixa Branca)
         const elNota = document.getElementById("notaFixa");
         if (elNota) {
@@ -264,8 +264,8 @@ const DuvidUI = {
             painelPontos.classList.add('pulo-elastico');
         }
 
-        // 3. Atualiza os números na tela
-        this.atualizarInterface();
+        // // 3. Atualiza os números na tela
+        // this.atualizarInterface();
     },
 
     feedbackVisualErro: function () {
@@ -291,8 +291,29 @@ const DuvidUI = {
                 imagemGlobo.style.filter = "";
             }, 500);
         }
-            // 3. Atualiza os números na tela
+        // 3. Atualiza os números na tela
         this.atualizarInterface();
+    },
+
+    mostrarXPFlutuante: function (pontos, correto = true) {
+        const ancora = document.getElementById('notaFixa');
+        if (!ancora) return;
+
+        const rect = ancora.getBoundingClientRect();
+        const el = document.createElement('div');
+
+        el.className = 'xp-flutuante' + (correto ? '' : ' erro');
+        el.innerText = correto ? `+${pontos} XP` : '-♥';
+
+        // Com position: fixed, usamos rect.top diretamente
+        // Isso posiciona o elemento exatamente sobre o saldo no topo
+        el.style.left = `${rect.left + (rect.width / 2)}px`;
+        el.style.top = `${rect.top}px`;
+        el.style.transform = 'translateX(-50%)';
+
+        document.body.appendChild(el);
+
+        el.addEventListener('animationend', () => el.remove());
     },
 
 
@@ -322,10 +343,10 @@ const DuvidUI = {
 
         // 1. O "TRADUTOR": Converte "GEÓGRAFO SÊNIOR" em "geografo-senior"
         const slug = patente.toLowerCase()
-                        .normalize("NFD")
-                        .replace(/[\u0300-\u036f]/g, "")
-                        .replace(/\s+/g, '-');
-        
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/\s+/g, '-');
+
         const caminhoImg = `fotoIndex/icones/duvid-patentes-${slug}.png`;
 
         // 2. O "ALVO": Procura os IDs no HTML (Header e Painel Home)
@@ -337,7 +358,7 @@ const DuvidUI = {
                 // Só troca se a imagem for diferente da atual
                 if (!el.src.includes(caminhoImg)) {
                     el.src = caminhoImg;
-                    
+
                     // 3. O "TOQUE DE MESTRE": Animação de subida de nível
                     el.classList.add('w3-animate-zoom');
                     setTimeout(() => el.classList.remove('w3-animate-zoom'), 500);
@@ -348,64 +369,72 @@ const DuvidUI = {
 
     executarGatilhoResultado: function (correto, pontos = 0) {
         if (correto) {
-            // Orquestra o Acerto
-            if (typeof playSom === "function") playSom('acerto');
-            if (typeof dispararComemoracao === "function") dispararComemoracao();
-            this.feedbackVisualAcerto(); // Já atualiza interface e gira globinho
-
+            playSom('acerto');
+            this.dispararComemoracao();   // ← usa o método do objeto, não a global
+            this.feedbackVisualAcerto();  // ← só giro + pulo, sem confete
+            this.mostrarXPFlutuante(pontos, true);  // << NOVO
             if (typeof DuvidDB !== "undefined") {
                 DuvidDB.addGlobinhos(pontos);
             }
         } else {
-            // Orquestra o Erro
-            if (typeof playSom === "function") playSom('erro');
-            this.feedbackVisualErro(); // Já balança o saldo em vermelho
+            playSom('erro');
+            this.feedbackVisualErro();
+            this.mostrarXPFlutuante(0, false);      // << NOVO — mostra -♥
         }
     },
-    // Dentro do objeto DuvidUI no duvid-ui.js:
-    // Dentro do objeto DuvidUI no duvid-ui.js:
-    // Dentro do objeto DuvidUI:
 
-    exibirModalSimulado: function (passou, acertos, total) {
-        const modal = document.getElementById('id01');
-        if (!modal) return;
+exibirModalSimulado: function (passou, acertos, total, ganhouBonus = false) {
+    const modal = document.getElementById('id01');
+    if (!modal) return;
 
-        // 1. PERSISTÊNCIA (Substitui a 'salvarProgressoFinal')
-        if (typeof DuvidDB !== "undefined" && typeof aulaID !== "undefined") {
-            DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.QUESTOES);
+    // Título — 3 cenários
+    let titulo, frase;
 
-            if (passou) {
-                // Usa a constante centralizada de recompensa
-                DuvidDB.addGlobinhos(typeof RECOMPENSA_GERAL !== "undefined" ? RECOMPENSA_GERAL : 50);
+    if (passou && ganhouBonus) {
+        titulo = '🏆 AULA PERFEITA!';
+        frase = 'Você terminou sem perder nenhuma vida. Bônus de +' + BONUS_VIDAS + ' globinhos conquistado!';
+    } else if (passou) {
+        titulo = '🎉 PARABÉNS!';
+        frase = typeof getFrasePainel === "function" ? getFrasePainel() : 'Missão cumprida!';
+    } else {
+        titulo = '↺ TENTAR NOVAMENTE';
+        frase = 'Você não atingiu 60%. Releia o texto e tente de novo — você consegue!';
+    }
+
+    this._atualizarElemento('modal-titulo', titulo);
+    this._atualizarElemento('modal-frase-motivacional', frase);
+
+    const pFeedback = document.getElementById('modal-feedback-principal');
+    if (pFeedback) {
+        pFeedback.innerHTML = `Você acertou <br>
+            <span class="w3-xxlarge"><b>${acertos}</b></span> de ${total} questões!
+            ${ganhouBonus ? '<br><span class="w3-text-amber"><b>+' + BONUS_VIDAS + ' bônus ❤️❤️❤️</b></span>' : ''}`;
+    }
+
+    // Efeitos — bônus tem comemoração especial
+    if (passou) {
+        if (typeof playSomFinal === "function") playSomFinal(true);
+        if (ganhouBonus) {
+            // Confete duplo para o bônus
+            if (typeof dispararComemoracao === "function") {
+                dispararComemoracao();
+                setTimeout(dispararComemoracao, 600);
             }
+        } else {
+            if (typeof dispararComemoracao === "function") dispararComemoracao();
         }
+    } else {
+        if (typeof playSomFinal === "function") playSomFinal(false);
+    }
 
-        // 2. INTERFACE (Preenche o modal universal)
-        this._atualizarElemento('modal-titulo', passou ? '🎉 EXCELENTE!' : '👍 VALEU O ESFORÇO!');
+    // Botão de tentar novamente — só aparece se não passou
+    const btnTentar = document.getElementById('btn-tentar-novamente');
+    if (btnTentar) {
+        btnTentar.style.display = passou ? 'none' : 'block';
+    }
 
-        const frase = passou ?
-            (typeof getFrasePainel === "function" ? getFrasePainel() : "Domínio total do tema!") :
-            "Revise os pontos de dúvida e tente novamente!";
-        this._atualizarElemento('modal-frase-motivacional', frase);
-
-        const pFeedback = document.getElementById('modal-feedback-principal');
-        if (pFeedback) {
-            pFeedback.innerHTML = `Você acertou <br><span class="w3-text-green w3-xxlarge"><b>${acertos}</b></span> de ${total} questões!`;
-        }
-
-        // 3. EFEITOS (Substitui a 'dispararEfeitosFinais')
-        // O GatilhoResultado já cuida de som + confete + animação do saldo no topo
-        if (typeof executarGatilhoResultado === "function") {
-            executarGatilhoResultado(passou, 0);
-        }
-
-        // 4. EXIBIÇÃO
-        modal.style.display = 'block';
-
-        // Atualiza a barra de progresso do simulado se ela existir na tela
-        const barra = document.getElementById('barra-progresso-simulado');
-        if (barra) barra.style.width = "100%";
-    },
+    modal.style.display = 'block';
+},
 
     // Dentro do objeto DuvidUI:
 
@@ -530,15 +559,15 @@ async function configurarSEOAutomatico(id, tipo = 'texto') {
     const idStr = id.toString();
     const ano = idStr.charAt(0); // Pega '1', '2' ou '3'
 
-    console.log(`🔍 Buscando JSON para o ano: ${ano} (ID: ${id})`);
+
 
     try {
         // CORREÇÃO AQUI: Use crases (atrás do P no teclado) e verifique o caminho
         // Se o arquivo estiver em /js/aulas-1ano.json, o caminho abaixo está correto
         const caminhoJson = `/js/aulas-${ano}ano.json`;
-        
+
         const res = await fetch(caminhoJson);
-        
+
         if (!res.ok) throw new Error(`Arquivo não encontrado: ${caminhoJson}`);
 
         const aulas = await res.json();
@@ -548,7 +577,7 @@ async function configurarSEOAutomatico(id, tipo = 'texto') {
 
         if (aulaDados) {
             const prefixo = tipo === 'questao' ? 'Exercícios: ' : '';
-            
+
             // Chama a função de aplicação (certifique-se que ela existe no duvid-ui)
             aplicarSEO({
                 titulo: `${prefixo}${aulaDados.titulo}`,

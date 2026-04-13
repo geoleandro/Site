@@ -31,9 +31,11 @@ function renderizarCards(lista) {
                             <span class="badge-nivel">${atv.nivel}</span>
                         </div>
                     </div>
-                    <h4 class="w3-text-dark-grey" style="height: 50px; overflow: hidden;"><b>${atv.titulo}</b></h4>
-                    <p class="w3-small w3-opacity" style="height: 40px; overflow: hidden;">${atv.descricao}</p>
-                    <hr>
+                    <h4 class="w3-text-dark-grey"><b>${atv.titulo}</b></h4>
+                    <p class="w3-small w3-opacity">${atv.descricao}</p>
+                   
+                     <p class="w3-small w3-opacity">Tag: ${atv.tema}</p>
+                 
                     <p class="w3-tiny w3-text-grey"><b>BNCC:</b> ${atv.bncc}</p>
                     <div class="w3-row w3-center">
                         <div class="w3-col s6">

@@ -560,12 +560,12 @@ body {
 /* Arquivo do estilo do blog, para os artigos e a vitrine de artigos */
 /* Estilo para os itens do arquivo */
 #drop-arquivo a:hover {
-    color: #000 !important;
+    color: #0e8f2e !important;
     text-decoration: underline;
 }
 
 #drop-arquivo span:hover {
-    color: #000 !important;
+    color: #0e8f2e !important;
     font-weight: bold;
 }
 
@@ -764,6 +764,12 @@ body.dark-mode img {
 body.dark-mode img:hover {
     filter: brightness(1); /* Volta ao brilho normal ao focar */
 }
+
+
+body.dark-mode .arquivo-blog{
+    background-color: #1e1e1e !important;
+}
+
 
 
 /* Botão Voltar ao Topo */

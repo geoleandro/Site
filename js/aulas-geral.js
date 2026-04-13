@@ -3,10 +3,9 @@ async function carregarAulas(ano) {
     if (!grid) return;
 
     try {
-        const res = await fetch(`./js/aulas-${ano}ano.json`);
-        const aulas = await res.json();
-
-        // 1. Atualiza o Painel de RPG no topo
+       const aulas = await DuvidCache.get(`/js/aulas-${ano}ano.json`); // << NOVO
+         
+       // 1. Atualiza o Painel de RPG no topo
         mostrarProgressoGlobal(aulas, ano);
 
         // 2. Desenha o Grid
@@ -240,55 +239,37 @@ window.onclick = function (event) {
     }
 }
 
-
 async function atualizarResumoHome() {
     const painelResumo = document.getElementById('resumo-geral');
     if (!painelResumo) return;
-
     painelResumo.style.display = "block";
 
     const anos = ["1", "2", "3"];
 
     for (const ano of anos) {
         try {
-            // Busca o arquivo JSON (Certifique-se que o caminho está correto)
-            const resposta = await fetch(`./js/aulas-${ano}ano.json`);
-            if (!resposta.ok) throw new Error(`Erro HTTP: ${resposta.status}`);
+            const aulas = await DuvidCache.get(`/js/aulas-${ano}ano.json`); // << NOVO
 
-            const aulas = await resposta.json();
-
-            // CONTAGEM AUTOMÁTICA
-            const aulasValidas = aulas.filter(a => a !== null && a.id !== undefined);
+            const aulasValidas = aulas.filter(a => a && a.id !== undefined);
             const total = aulasValidas.length;
-
-            // Pega as concluídas (Baseado na sua função contarAulasConcluidas)
             const concluidas = contarAulasConcluidas(ano);
             const porc = total > 0 ? Math.round((concluidas / total) * 100) : 0;
 
-            // --- CORREÇÃO DE IDS AQUI ---
             const barra = document.getElementById(`bar-${ano}ano`);
             const texto = document.getElementById(`txt-${ano}ano`);
-            const iconeConquista = document.getElementById(`conquista-${ano}ano`);
+            const icone = document.getElementById(`conquista-${ano}ano`);
 
             if (barra) barra.style.width = porc + "%";
             if (texto) texto.innerText = `${concluidas}/${total}`;
-
-            if (iconeConquista) {
-                iconeConquista.style.display = (porc >= 100 && total > 0) ? "block" : "none";
-            }
+            if (icone) icone.style.display = (porc >= 100 && total > 0) ? "block" : "none";
 
         } catch (erro) {
-            console.error(`Falha ao processar progresso do ano ${ano}:`, erro);
+            console.error(`Falha ao processar ${ano}º ano:`, erro);
         }
     }
 
-    // --- O PULO DO GATO: Sincronização com o RPG ---
-    // Após carregar os anos, garantimos que o nível global e XP apareçam no topo
-    if (typeof atualizarSistemaNivelHome === "function") {
-        atualizarSistemaNivelHome();
-    }
+    if (typeof atualizarSistemaNivelHome === "function") atualizarSistemaNivelHome();
 }
-
 
 
 

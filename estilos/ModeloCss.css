@@ -18,14 +18,31 @@ main {
 }
 
 .shake-erro {
-  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
 }
 
 @keyframes shake {
-  10%, 90% { transform: translate3d(-1px, 0, 0); }
-  20%, 80% { transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-  40%, 60% { transform: translate3d(4px, 0, 0); }
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 
@@ -74,27 +91,32 @@ main {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
 /* Espaçamento para o Card de Aviso (Texto e Questões) */
 #aviso-status {
-    display: block;
-    width: 95%;
-    max-width: 750px;
-    margin: 70px auto 10px auto !important; /* 70px de topo para descolar da Navbar */
-    padding: 0 10px;
-    z-index: 5; /* Garante que fique abaixo do dropdown da Navbar se abrir */
+  display: block;
+  width: 95%;
+  max-width: 750px;
+  margin: 70px auto 10px auto !important;
+  /* 70px de topo para descolar da Navbar */
+  padding: 0 10px;
+  z-index: 5;
+  /* Garante que fique abaixo do dropdown da Navbar se abrir */
 }
 
 /* Ajuste para o Main logo abaixo do aviso */
-#aviso-status + main {
-    margin-top: 10px !important; /* Se tiver aviso, o main não precisa de 80px de topo */
+#aviso-status+main {
+  margin-top: 10px !important;
+  /* Se tiver aviso, o main não precisa de 80px de topo */
 }
 
 /* Classe de erro para o botão tremer e mudar de cor */
 .btn-erro-animado {
-    background-color: #ffc107 !important; /* Amarelo Amber para atenção */
-    color: #000 !important;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5) !important;
+  background-color: #ffc107 !important;
+  /* Amarelo Amber para atenção */
+  color: #000 !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5) !important;
 }
 
 
@@ -421,26 +443,7 @@ main {
   margin-right: 30px;
 }
 
-.navbar {
-  overflow: auto;
-  background-color: rgb(134, 125, 125);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 40px;
-  z-index: 100;
-}
 
-.navbar a {
-  float: center;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 22px;
-  grid: 33.33%;
-}
 
 .nota {
   display: none;
@@ -1041,14 +1044,23 @@ a {
 }
 
 .item-resposta {
-    transition: background-color 0.5s ease, border-left 0.3s ease, opacity 0.5s ease;
-    border-left: 6px solid transparent; /* Evita que a div "pule" quando a borda aparecer */
+  transition: background-color 0.5s ease, border-left 0.3s ease, opacity 0.5s ease;
+  border-left: 6px solid transparent;
+  /* Evita que a div "pule" quando a borda aparecer */
 }
 
 @keyframes giroGlobinho {
-  0% { transform: rotate(0deg) scale(1); }
-  50% { transform: rotate(180deg) scale(1.3); }
-  100% { transform: rotate(360deg) scale(1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.3);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 @keyframes zoomPulo {
@@ -1228,42 +1240,122 @@ body.dark-mode footer .fa-brands {
 
 /* Estilo Adaptado (Dark Mode) */
 body.dark-mode .bloco-apoio-duvid {
-    background-color: #2d2d2d !important; /* Cinza escuro */
-    border-left: 6px solid #fbc02d !important; /* Amarelo mais fechado */
-    color: #eee;
+  background-color: #2d2d2d !important;
+  /* Cinza escuro */
+  border-left: 6px solid #fbc02d !important;
+  /* Amarelo mais fechado */
+  color: #eee;
 }
 
 
-
-
-/* Estilo Base (Light Mode) */
-.bloco-apoio-duvid {
-    background-color: #fdf5e6 !important; /* Cor areia suave */
-    border-left: 6px solid #ffeb3b !important;
-    color: #333;
-    transition: all 0.3s ease;
-}
-
-
-body.dark-mode .bloco-apoio-duvid, 
-body.dark-mode .bloco-apoio-duvid p, 
+body.dark-mode .bloco-apoio-duvid,
+body.dark-mode .bloco-apoio-duvid p,
 body.dark-mode .bloco-apoio-duvid span {
-   background-color: #1b1b1b !important; /* Cor areia suave */
-    color: #ffffff !important;
+  background-color: #1b1b1b !important;
+  /* Cor areia suave */
+  color: #ffffff !important;
 }
 
 body.dark-mode .bloco-apoio-duvid {
-    background-color: #1b1b1b !important;
-    color: #ffffff !important;
-    border-left-color: #fbc02d !important; /* Um amarelo mais escuro/âmbar */
+  background-color: #1b1b1b !important;
+  color: #ffffff !important;
+  border-left-color: #fbc02d !important;
+  /* Um amarelo mais escuro/âmbar */
 }
 
 
 body.dark-mode img {
-    filter: brightness(.6) contrast(1.2);
+  filter: brightness(.6) contrast(1.2);
+}
+
+/* --- DARK MODE: TAGS --- */
+body.dark-mode .duvid-tag-assunto {
+  background-color: #333 !important;
+  /* Fundo escuro para a tag */
+  color: #bbb !important;
+  /* Texto cinza claro */
+  border: 1px solid #444;
+}
+
+/* --- DARK MODE: DIFICULDADE (BADGES) --- */
+/* Mantemos as cores, mas ajustamos o brilho para não "ofuscar" no escuro */
+
+body.dark-mode .dificuldade-facil {
+  background-color: #1b2e1c !important;
+  color: #81c784 !important;
+  border-color: #2e7d32 !important;
+}
+
+body.dark-mode .dificuldade-medio {
+  background-color: #2e2111 !important;
+  color: #ffb74d !important;
+  border-color: #ef6c00 !important;
+}
+
+body.dark-mode .dificuldade-dificil {
+  background-color: #2d1313 !important;
+  color: #e57373 !important;
+  border-color: #c62828 !important;
 }
 
 
+body.dark-mode .duvid-img-container {
+  background-color: #222 !important;
+  /* Fundo do card da imagem */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .duvid-img-principal,
+body.dark-mode .duvid-img-comentario {
+  filter: brightness(0.85) contrast(1.1);
+  /* Reduz o brilho para não ofuscar */
+  transition: filter 0.3s ease;
+}
+
+body.dark-mode .duvid-img-principal:hover {
+  filter: brightness(1);
+  /* Volta ao brilho normal se o aluno passar o mouse */
+}
+
+body.dark-mode .duvid-legenda-box {
+  background-color: #2a2a2a !important;
+  /* Faixa da legenda escura */
+}
+
+body.dark-mode .duvid-legenda-texto {
+  color: #aaa !important;
+  /* Texto da legenda cinza claro */
+}
+
+body.dark-mode .duvid-bloco-apoio {
+  background-color: #1e1e1e !important;
+  color: #ddd !important;
+  border-left-color: #4CAF50 !important;
+  /* Mantém o verde da marca */
+}
+
+body.dark-mode .duvid-texto-citacao {
+  color: #ccc !important;
+}
+
+body.dark-mode .duvid-fonte-texto {
+  color: #888 !important;
+}
+
+body.dark-mode .duvid-painel-dica {
+  background-color: #333 !important;
+  color: #bbb !important;
+  border: 1px solid #444;
+}
+
+/* Estilo Base (Light Mode) */
+.bloco-apoio-duvid {
+  background-color: #fdf5e6 !important;
+  /* Cor areia suave */
+  border-left: 6px solid #ffeb3b !important;
+  color: #333;
+  transition: all 0.3s ease;
+}
 
 /* Painel de Pontos "Slim" (Fino) */
 #painel-pontos {
@@ -1443,11 +1535,11 @@ button:disabled {
 }
 
 /* Isso faz com que as alternativas herdem o tamanho do container-questao */
-#container-questao .card-opcao span, 
-#container-questao p, 
+#container-questao .card-opcao span,
+#container-questao p,
 #container-questao label {
-    font-size: inherit !important; 
-    line-height: 1.4;
+  font-size: inherit !important;
+  line-height: 1.4;
 }
 
 /* Estilo do Card de Opção */
@@ -1523,97 +1615,474 @@ button:disabled {
 }
 
 .mark-skill {
-    background-color: #fff3cd; /* Amarelo alerta */
-    border-bottom: 2px dashed #ffc107;
-    cursor: help;
-    font-weight: bold;
-    transition: all 0.3s ease;
+  background-color: #fff3cd;
+  /* Amarelo alerta */
+  border-bottom: 2px dashed #ffc107;
+  cursor: help;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .mark-skill:hover {
-    background-color: #ffc107;
-    color: white;
+  background-color: #ffc107;
+  color: white;
 }
 
 .mark-skill.desbloqueado {
-    border-bottom: none;
-    animation: pulse-green 0.5s ease-in-out;
+  border-bottom: none;
+  animation: pulse-green 0.5s ease-in-out;
 }
 
 @keyframes pulse-green {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); }
-    100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .comentario-box {
-    max-height: 600px; 
-    overflow-y: auto; 
-    background: rgba(255, 255, 255, 0.15); 
-    padding: 12px; 
-    border-radius: 8px; 
-    margin: 10px 0 20px 0; 
-    border: 1px solid rgba(255,255,255,0.1); 
-    text-align: left; 
-    position: relative; 
-    z-index: 1;
+  max-height: 600px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0 20px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-final {
-    width: 85%; 
-    max-width: 300px; 
-    font-weight: bold; 
-    padding: 15px;
+  width: 85%;
+  max-width: 300px;
+  font-weight: bold;
+  padding: 15px;
 }
 
 
-/* Media Query para dispositivos móveis *//* --- AJUSTES PARA DISPOSITIVOS MÓVEIS (UNIFICADO 600px) --- */
-@media (max-width: 600px) {
-    
-    /* 1. Ajuste do Body e Main */
-    body {
-        padding: 0 !important; /* Remove paddings que causam scroll lateral */
-    }
 
-    main {
-        margin-top: 60px; /* Reduz o espaço do topo no celular */
-        padding: 15px;    /* Respiro interno menor para ganhar tela */
-        border-radius: 0; /* Remove arredondamento para ocupar a largura toda */
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* 2. Estilo para Histórias/Quadrinhos (HQ) */
-    .mobile-story-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .full-width-mobile {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .duo-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Mantém dois quadrinhos lado a lado */
-        gap: 8px;
-        margin-bottom: 15px;
-    }
-
-    /* 3. Ajuste de Textos e Títulos no Mobile */
-    #h1 {
-        font-size: 1.2em; /* Diminui o título para não quebrar em 3 linhas */
-        padding: 15px 10px;
-    }
-
-    .w3-large {
-        font-size: 16px !important; /* Garante leitura confortável sem ser gigante */
-    }
-}
-
-.bibliografias{
+.bibliografias {
   display: none;
+}
+
+
+/* No seu arquivo CSS ou dentro de <style> */
+.grid-bibliografia {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-livro {
+  height: 100%;
+  /* Faz o card preencher toda a coluna */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-livro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Container da imagem de apoio */
+.duvid-img-container {
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.duvid-img-principal {
+  max-height: 580px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Faixa da Legenda */
+.duvid-legenda-box {
+  background-color: #f1f1f1;
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  /* Substituí 'smaller' por rem para manter o padrão */
+
+  /* Centralização do Box */
+  display: flex;
+
+}
+
+/* 2. Textos de Apoio */
+.duvid-legenda-texto {
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+  /* Centraliza o texto internamente */
+  width: 100%;
+  /* Garante que o texto ocupe o espaço para alinhar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bloco de citação/texto de apoio */
+.duvid-bloco-apoio {
+
+  border-left: 6px solid #009688;
+  background-color: #fdf5e6;
+  /* w3-light-grey */
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.duvid-texto-citacao {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 0;
+  /* Garante que não haja margem no topo do texto */
+  display: block;
+  /* Ajuda no alinhamento vertical */
+}
+
+.duvid-fonte-texto {
+  font-size: 0.85rem !important;
+  color: #757575;
+  /* w3-text-grey */
+  text-align: right;
+  margin-top: 10px;
+  line-height: 1.2;
+  display: block;
+  /* Garante que o alinhamento à direita funcione */
+  width: 100%;
+}
+
+.duvid-legenda-apoio {
+  font-size: 11px;
+  /* w3-tiny */
+  color: #4CAF50;
+  /* w3-text-green */
+  margin-top: 5px;
+
+
+}
+
+/* 3. Cabeçalho */
+.duvid-header-questao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.duvid-titulo-questao {
+  padding: auto;
+  color: #666;
+}
+
+.duvid-ano-questao {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 4. Dicas */
+.duvid-dica-titulo {
+  margin-top: 0;
+}
+
+/* 5. Legendas */
+.duvid-legenda-box {
+  background-color: #f9f9f9;
+  padding: 5px;
+  margin-top: 5px;
+  border-top: 1px solid #eee;
+}
+
+.duvid-legenda-texto {
+  font-size: 11px;
+  color: #666;
+  margin: 0;
+  text-align: left;
+}
+
+
+/* Container da Dica (O painel amarelo) */
+.duvid-painel-dica {
+  border-left: 6px solid #ffc107 !important;
+  /* Amarelo/Dourado */
+  background-color: #ffffcc !important;
+  /* w3-pale-yellow */
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  position: relative;
+}
+
+/* Título da Dica */
+.duvid-dica-titulo {
+  margin-top: 0;
+  color: #ff9800;
+  /* Laranja para contraste */
+  font-family: 'Courier New', Courier, monospace;
+  /* fontePixel */
+}
+
+/* Botão Fechar (o X) */
+.duvid-dica-fechar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #999;
+}
+
+.duvid-dica-fechar:hover {
+  color: #333;
+}
+
+/* Badges de Dificuldade */
+.duvid-badge-dificuldade {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* Cores por Nível */
+.dificuldade-facil {
+  background-color: #e8f5e9;
+  /* Verde claro */
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.dificuldade-medio {
+  background-color: #fff3e0;
+  /* Laranja claro */
+  color: #ef6c00;
+  border: 1px solid #ffe0b2;
+}
+
+.dificuldade-dificil {
+  background-color: #ffebee;
+  /* Vermelho claro */
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+/* Tags de Assunto */
+.duvid-tag-assunto {
+  background: #f0f0f0;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  margin-right: 5px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.container-tags {
+  display: flex;
+  flex-wrap: wrap;
+  /* Isso faz as tags pularem de linha sozinhas */
+  gap: 5px;
+  /* Espaço entre elas */
+  margin-bottom: 15px;
+}
+
+/* Container da Instituição e Ano */
+.duvid-info-instituicao {
+  padding-left: 15px;
+  /* Alinha com o texto da questão */
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* XP flutuante — aparece, sobe e some */
+.xp-flutuante {
+    position: fixed;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    pointer-events: none;
+    z-index: 99999;
+    /* Duração de 2.5s para ser perceptível, mas não lenta demais */
+   animation: xp-subir 2.5s ease-out forwards;
+}
+
+.xp-flutuante.erro {
+  color: #ef5350;
+}
+
+
+@keyframes xp-subir {
+    0% { 
+        opacity: 0; 
+        /* Adicionado 'px' ao -5 */
+        transform: translate(-50%, -5px) scale(0.6); 
+    }
+    25% { 
+        opacity: 1; 
+        transform: translate(-80%, -10px) scale(1.1); 
+    }
+    85% { 
+        opacity: 1; 
+        transform: translate(-120%, -15px) scale(1); 
+    }
+    100% { 
+        opacity: 0; 
+        transform: translate(-140%, -20px) scale(0.8); 
+    }
+}
+
+
+.duvid-coracoes-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: #fff8f8;
+    border-radius: 10px;
+    border: 1px solid #ffebee;
+}
+
+.coracao-questao {
+    font-size: 22px;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.coracao-questao.perdido {
+    filter: grayscale(1);
+    opacity: 0.25;
+    transform: scale(0.8);
+}
+
+.aviso-vidas {
+    font-size: 12px;
+    font-weight: 500;
+    color: #c62828;
+    margin-left: 4px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query para dispositivos móveis */
+/* --- AJUSTES PARA DISPOSITIVOS MÓVEIS (UNIFICADO 600px) --- */
+@media (max-width: 600px) {
+
+  /* 1. Ajuste do Body e Main */
+  body {
+    padding: 0 !important;
+    /* Remove paddings que causam scroll lateral */
+  }
+
+  main {
+    margin-top: 60px;
+    /* Reduz o espaço do topo no celular */
+    padding: 15px;
+    /* Respiro interno menor para ganhar tela */
+    border-radius: 0;
+    /* Remove arredondamento para ocupar a largura toda */
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* 2. Estilo para Histórias/Quadrinhos (HQ) */
+  .mobile-story-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .full-width-mobile {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .duo-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Mantém dois quadrinhos lado a lado */
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  /* 3. Ajuste de Textos e Títulos no Mobile */
+  #h1 {
+    font-size: 1.2em;
+    /* Diminui o título para não quebrar em 3 linhas */
+    padding: 15px 10px;
+  }
+
+  .w3-large {
+    font-size: 16px !important;
+    /* Garante leitura confortável sem ser gigante */
+  }
+
+  .duvid-header-questao {
+    flex-direction: row;
+    /* Mantém na mesma linha se couber */
+    flex-wrap: wrap;
+    /* Se não couber, joga o "MÉDIO" para baixo */
+    align-items: center;
+  }
+
+  .duvid-titulo-questao {
+    font-size: 1.2rem;
+    align-items: center;
+    /* No celular, centraliza o alinhamento vertical */
+    /* Diminui um pouco o tamanho no celular */
+  }
+
+  .duvid-badge-dificuldade {
+    font-size: 9px;
+    padding: 3px 8px;
+
+  }
+
+  /* Garante que as tags não criem barra de rolagem lateral */
+  .duvid-tag-assunto {
+    font-size: 10px;
+    margin-bottom: 5px;
+    /* Espaço entre as linhas de tags */
+  }
 }

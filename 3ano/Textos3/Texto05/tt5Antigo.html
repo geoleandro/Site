@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 05</title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+        .postit-tp9 {
+
+
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+        .pulsar {
+            transition: transform 500ms;
+            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
+        }
+
+        .pulsar:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+            position: relative;
+
+        }
+
+
+        /* Estilo pinterest */
+
+
+
+
+
+        /* Media Query para dispositivos móveis */
+        @media screen and (max-width: 640px) {}
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 05 - Como medir o desenvolvimento?</h1>
+
+
+        <p><strong> Conteúdo:</strong> Produto Interno Bruto(PIB); Índice de Desenvolvimento Humano(IDH); Índice de GINI.
+        </p>
+
+        <p><strong>Objetivo:</strong> Citar e explicar as tentativas de medir o desenvolvimento, com destaque para o PIB, o IDH, o índice GINI e a desigualdade de acesso a elementos fundamentais.</p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico ">
+
+        <h2> <strong>Introdução </strong></h2>
+
+
+        <p> <span class="primeiraLetra">N</span>a aula passada, mergulhamos nas complexidades que envolvem os fatores do
+            desenvolvimento como os setores econômicos e as áreas consideradas fundamentais para qualquer país
+            atualmente: educação, saúde e alimentação.
+        </p>
+
+
+
+        <p>Hoje, nossa jornada nos leva a um tópico igualmente cativante e crucial: a mensuração do desenvolvimento e da
+            qualidade de vida em escala global. Em um mundo diverso e multifacetado, é vital entender o progresso das
+            nações e das sociedades não apenas por números econômicos, mas também por seu impacto real na vida das
+            pessoas.</p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    
+
+    <div class="topico">
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small">
+            
+            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje: </h2>
+            <p>1. O que o Índice de Desenvolvimento Humano (IDH) mede e quais são suas três dimensões principais?</p>
+            <p>2. Por que o Produto Interno Bruto (PIB) por si só não é suficiente para avaliar o bem-estar geral de uma população?</p>
+            <p>3. Como a expectativa de vida contribui para a mensuração do desenvolvimento humano de um país?</p>
+            <p>4. De que forma a educação é considerada no cálculo do IDH?</p>
+            <p>5. Qual é a relevância do PIB per capita na avaliação do padrão de vida de um país segundo o IDH?</p>
+            <p>6. Por que países com altos PIBs, como os Estados Unidos, podem não necessariamente refletir um alto nível de qualidade de vida para todos os seus cidadãos?</p>
+            <p>7. Como o Butão aborda o desenvolvimento de forma diferente de outros países?</p>
+            <p>8. O que o Índice de Gini mede e como ele é utilizado para compreender a desigualdade de renda em um país?</p>
+            <p>9. Qual é a diferença observada entre a África do Sul e a Suécia em termos de desigualdade de renda, baseando-se no Índice de Gini?</p>
+            <p>10. De que maneira a desigualdade de acesso a serviços fundamentais como saúde e educação pode impactar o desenvolvimento de um país?</p>
+        
+          
+
+        </div>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+       
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+
+        <h2><strong>Medindo o Desenvolvimento e a Qualidade de Vida</strong></h2>
+
+        <p>Você já se perguntou como avaliamos o desenvolvimento de uma nação? Muitas vezes, esse é um processo complexo
+            que vai além de verificar seu Produto Interno Bruto (PIB). Avaliar o desenvolvimento envolve considerar
+            várias dimensões, como saúde, educação, igualdade e a distribuição de renda.</p>
+
+        <div class="w3-margin"><img id="imagem4" src="tt05f04.png" alt="tt05f04" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao4"> Fonte: Fonte: https://www.politize.com.br. </span>
+
+        </div>
+
+
+
+        <p>O Relatório de Desenvolvimento Humano das Nações Unidas, publicado anualmente, é uma ferramenta valiosa para
+            entender o estado do desenvolvimento em escala global. Ele classifica países com base em seu Índice de
+            Desenvolvimento Humano (IDH). O IDH é um indicador composto por três dimensões principais: saúde, mensurada
+            pela expectativa de vida, educação, mensurada pelos anos médios de escolaridade, e padrão de vida, mensurado
+            pelo PIB per capita.</p>
+
+        <p>Vamos explorar essas dimensões brevemente:</p>
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small">
+            <ul>
+                <li>
+                    1. Expectativa de Vida: A expectativa de vida representa a média de anos que uma pessoa pode esperar
+                    viver em um determinado país. Ela é uma medida da qualidade de vida, do acesso a cuidados médicos e
+                    da segurança.
+
+
+                </li>
+
+                <li>
+                    2. Educação: A dimensão educacional do IDH leva em conta os anos médios de escolaridade dos adultos
+                    e o tempo de escolarização das crianças. Isso reflete o investimento em educação, um dos pilares do
+                    desenvolvimento sustentável.
+                </li>
+
+                <li>
+                    3. Padrão de Vida: O PIB per capita é uma medida econômica amplamente conhecida. No entanto, ele não
+                    é suficiente para avaliar o bem-estar geral de uma população, pois não leva em consideração a
+                    distribuição de renda. O IDH considera essa dimensão de forma mais abrangente.
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+
+        <p>O Relatório de Desenvolvimento Humano classifica os países em quatro categorias: muito alto, alto, médio e
+            baixo desenvolvimento humano. Os dados e exemplos fornecidos neste relatório são ferramentas valiosas para
+            compreender o estado do desenvolvimento global e, mais importante, para analisar o impacto real nas vidas
+            das pessoas.</p>
+
+        <p>Ao abordarmos essa complexa questão da mensuração do desenvolvimento, é importante lembrar que o
+            desenvolvimento é um processo multifacetado. Não podemos simplificá-lo a uma única métrica. A riqueza
+            econômica é apenas uma parte da equação. As dimensões sociais, de saúde e igualdade desempenham um papel
+            crucial no bem-estar de uma sociedade.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2><strong>Desenvolvimento e Qualidade de Vida: Uma Visão Complexa</strong></h2>
+
+        <p>Quando falamos em desenvolvimento e qualidade de vida, estamos explorando um território complexo e
+            multifacetado. Esses conceitos não podem ser resumidos a um único número ou métrica, pois abrangem uma série
+            de dimensões que afetam diretamente a vida das pessoas. Nesta aula, vamos aprofundar essa discussão e
+            explorar várias métricas que nos ajudam a entender o desenvolvimento de uma nação.</p>
+
+        <p><strong>Significado de Desenvolvimento e Qualidade de Vida</strong></p>
+
+        <p>O termo "desenvolvimento" é muitas vezes erroneamente associado apenas ao crescimento econômico, mas é muito
+            mais abrangente do que isso. Desenvolvimento não se trata apenas de gerar riqueza; trata-se de melhorar a
+            qualidade de vida das pessoas. Isso envolve a promoção de acesso à educação de qualidade, assistência médica
+            adequada, moradia, segurança, igualdade de gênero, sustentabilidade ambiental e muito mais.</p>
+
+        <div class="w3-margin"><img id="imagem1" src="tt05f01.png" alt="tt05f01" class="w3-mobile">
+
+
+
+            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: https://www.pexels.com/pt-br/. </span>
+
+
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <h2><strong>Produto Interno Bruto (PIB)</strong></h2>
+
+        <p>O Produto Interno Bruto (PIB) ou (GPD – Gross Domestic Product em inglês) é uma métrica econômica amplamente
+            utilizada para avaliar o desempenho de uma economia. Ele mede o valor de todos os bens e serviços finais
+            produzidos em um país em um determinado período de tempo. Embora o PIB seja uma ferramenta valiosa, ele tem
+            suas limitações e não captura todos os aspectos do desenvolvimento e da qualidade de vida.</p>
+
+        <div class="w3-margin"><img id="imagem3" src="tt05f03.png" alt="tt05f03" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao3">Fonte:
+                https://www.poder360.com.br/economia//
+
+            </span>
+
+
+        </div>
+
+
+
+
+        <p><strong>Exemplo 1: Estados Unidos</strong></p>
+
+        <p>Os Estados Unidos têm consistentemente um dos maiores PIBs do mundo. No entanto, uma análise mais profunda
+            mostra que essa riqueza não é distribuída igualmente. A desigualdade de renda tem aumentado nas últimas
+            décadas, e a falta de acesso universal a cuidados médicos é uma preocupação significativa. Portanto, o alto
+            PIB dos EUA não reflete necessariamente um alto nível de qualidade de vida para todos os seus cidadãos.</p>
+
+        <p><strong>Exemplo 2: Butão</strong></p>
+
+        <p>Butão, um pequeno país no Himalaia, é um exemplo intrigante. Seu PIB é relativamente baixo em comparação com
+            nações desenvolvidas, mas sua abordagem única para o desenvolvimento foca na felicidade nacional bruta, em
+            vez do PIB. O Butão coloca grande ênfase na cultura, espiritualidade, preservação ambiental e igualdade.
+            Embora o PIB seja modesto, a qualidade de vida de muitos butaneses é considerada alta devido a esses
+            valores.</p>
+
+        <p><strong>Rankings e Dados Internacionais</strong></p>
+
+        <p>Para entender melhor as nuances do desenvolvimento e da qualidade de vida, podemos recorrer a rankings e
+            dados internacionais. O Relatório de Desenvolvimento Humano das Nações Unidas é uma referência valiosa. Ele
+            classifica os países com base no Índice de Desenvolvimento Humano (IDH), que considera dimensões como
+            expectativa de vida, anos médios de escolaridade e PIB per capita. Isso nos permite avaliar o
+            desenvolvimento de um país de maneira mais holística.</p>
+
+        <p><strong>Exemplo 3: Noruega e Nigéria</strong></p>
+
+        <p>A Noruega, frequentemente classificada como tendo um dos mais altos IDHs do mundo, se beneficia de sua
+            riqueza de recursos naturais, educação de qualidade e um sistema de saúde abrangente. Em contraste, a
+            Nigéria, embora seja uma das maiores economias da África, enfrenta desafios significativos em termos de
+            saúde, educação e desigualdade, o que impacta seu IDH.</p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <h2><strong>Índice de Desenvolvimento Humano (IDH): Uma Medida Abrangente do Bem-Estar Humano</strong></h2>
+
+
+        <div class="w3-margin"><img id="imagem2" src="tt05f02.png" alt="tt05f02" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao2"> Fonte: O Globo. 2023. </span>
+
+
+        </div>
+
+
+
+
+        <p class="w3-small">Essa tabela apresenta o Índice de Desenvolvimento Humano (IDH) de 10 países em ordem
+            decrescente,
+            representando suas respectivas pontuações. O IDH é uma medida amplamente reconhecida que avalia o bem-estar
+            humano em um país, considerando fatores como a expectativa de vida, educação e renda per capita. Quanto mais
+            próximo o valor do IDH estiver de 1, maior é o desenvolvimento humano do país. Nesta tabela, países como
+            Suíça, Noruega e Islândia lideram com índices de desenvolvimento humano muito elevados, enquanto países como
+            Alemanha e Holanda também exibem níveis significativos de desenvolvimento. Esses números refletem a
+            qualidade de vida e o bem-estar das populações dessas nações.</p>
+
+        <p>Ao explorar o desenvolvimento e a qualidade de vida, uma das métricas mais abrangentes e reconhecidas é o
+            Índice de Desenvolvimento Humano (IDH). O IDH, apresentado no Relatório de Desenvolvimento Humano das Nações
+            Unidas, visa capturar uma imagem mais completa do bem-estar humano em uma nação. Ele não se limita a
+            aspectos econômicos, mas engloba três dimensões essenciais:</p>
+
+        <p>1. Saúde (Expectativa de Vida): A saúde é uma pedra angular do desenvolvimento. O IDH incorpora a expectativa
+            de vida no cálculo. Por exemplo, o Japão, com uma expectativa de vida significativamente alta, tem um IDH
+            robusto.</p>
+
+        <p>2. Educação (Anos Médios de Escolaridade): A educação desempenha um papel vital no desenvolvimento. O IDH
+            avalia anos médios de escolaridade, levando em conta a educação primária e secundária. Países como Canadá e
+            Finlândia têm um alto IDH, graças a seus sistemas educacionais robustos.</p>
+
+        <p>3. Padrão de Vida (PIB per capita): Embora o PIB por si só seja limitado, seu uso em conjunto com outras
+            dimensões pelo IDH permite uma visão mais completa. A Noruega, com seu alto PIB per capita, é um exemplo
+            disso.</p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+    <div class="topico">
+
+
+
+        <p><strong>Índice de Gini: Medindo a Desigualdade de Renda</strong></p>
+
+        <p>A desigualdade é uma preocupação significativa no desenvolvimento. O Índice de Gini é uma métrica usada para
+            medir a desigualdade de renda em um país. Funciona em uma escala de 0 a 1, onde 0 representa igualdade
+            perfeita, e 1 representa desigualdade absoluta.</p>
+
+        <div class="w3-margin"><img id="imagem6" src="tt05f06.png" alt="tt05f06" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao6"> Fonte: https://www.poder360.com.br/economia/ </span>
+
+
+        </div>
+
+
+
+        <p><strong>Exemplo: África do Sul vs. Suécia</strong></p>
+
+        <p>A África do Sul tem um Índice de Gini de cerca de 0,63, indicando uma grande desigualdade de renda. Grande
+            parte da população enfrenta dificuldades econômicas substanciais, enquanto uma pequena parcela acumula
+            grande parte da riqueza.</p>
+
+        <p>Por outro lado, a Suécia, com um Índice de Gini mais baixo, reflete uma distribuição mais equitativa da
+            riqueza. A combinação de políticas de bem-estar social e tributação progressiva contribui para essa menor
+            desigualdade.</p>
+
+
+
+        <h2><strong>Desigualdade de Acesso a Elementos Fundamentais</strong></h2>
+
+
+        <div class="w3-margin"><img id="imagem5" src="tt05f05.png" alt="tt05f05" class="w3-mobile">
+
+
+            <span class="w3-small w3-margin-left" id="citacao5"> Fonte: https://www.estrategiasdeinversion.com </span>
+
+        </div>
+
+
+        <p>O acesso desigual a elementos fundamentais, como educação, saúde e emprego, é um obstáculo significativo para
+            o desenvolvimento. Em muitos países, a desigualdade é evidente no acesso a serviços de saúde de qualidade.
+            Por exemplo, nos Estados Unidos, o acesso a cuidados de saúde pode ser limitado para aqueles que não têm
+            seguro de saúde, o que resulta em disparidades na saúde.</p>
+
+        <p>Da mesma forma, a desigualdade de acesso à educação é observada em todo o mundo. Em alguns países, as
+            oportunidades educacionais são desiguais com base no gênero, origem étnica ou geografia, o que restringe o
+            potencial de desenvolvimento de muitos.</p>
+
+
+        <p>O tema de medir o desenvolvimento dos países, portanto, nos leva a refletir sobre a complexidade desse
+            processo e a importância de considerar múltiplas dimensões além dos indicadores econômicos. É uma jornada
+            que nos desafia a olhar além dos números e a compreender o verdadeiro impacto nas vidas das pessoas. A
+            mensuração do desenvolvimento é uma tarefa multifacetada que envolve aspectos sociais, de saúde e igualdade,
+            reforçando a necessidade de abordagens holísticas para promover uma qualidade de vida cada vez melhor em
+            todas as nações.</p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <h2 id="centralizado"> A curiosidade e a vontade de entender o mundo ao nosso redor são fundamentais para fazer
+            perguntas e contribuir com a construção do conhecimento científico.</h2>
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Por que o Produto Interno Bruto (PIB) nem sempre é uma medida suficiente para avaliar o desenvolvimento
+                de um país? Quais são suas limitações?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            O PIB é uma medida que avalia a produção total de bens e serviços em um país. No entanto, ele não considera
+            fatores importantes, como a distribuição de renda. Isso significa que um país com um alto PIB per capita
+            pode ainda ter uma grande desigualdade de renda e qualidade de vida precária para muitos de seus cidadãos.
+            Além disso, o PIB não leva em consideração outros indicadores cruciais de desenvolvimento, como a educação,
+            a saúde e o bem-estar social.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                O que é o Índice de Desenvolvimento Humano (IDH) e como ele difere do PIB na avaliação do
+                desenvolvimento de um país? Forneça exemplos de como essas medidas podem variar em diferentes nações.
+
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            O Índice de Desenvolvimento Humano (IDH) é uma medida mais abrangente que inclui PIB, expectativa de vida e
+            anos médios de escolaridade. Ele oferece uma visão mais holística do desenvolvimento de um país, levando em
+            consideração não apenas o aspecto econômico, mas também a saúde e a educação. O IDH varia de 0 a 1, sendo 1
+            o desenvolvimento máximo. Por exemplo, a Noruega tem um IDH muito alto (0,957), graças ao seu alto PIB per
+            capita, educação de qualidade e sistema de saúde. Já o Chade tem um IDH baixo (0,404) devido a desafios
+            econômicos, de saúde e educação.
+
+        </p>
+
+
+
+
+
+
+        <p class="w3-border w3-round-large"> <span class="primeiraLetra">P:</span> <strong>
+
+                Como o Índice de Gini é usado para medir a desigualdade de renda em um país? Explique como a
+                desigualdade de renda pode impactar o desenvolvimento econômico e a qualidade de vida.
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span>
+
+            O Índice de Gini é uma medida que avalia a desigualdade de renda em uma sociedade, variando de 0 (igualdade
+            total) a 1 (desigualdade total). Ele calcula a distribuição de renda, mostrando quão equitativamente (ou
+            desigualmente) a renda é distribuída entre os cidadãos. Quando a desigualdade de renda é alta, significa que
+            uma pequena parte da população detém a maior parte da riqueza, enquanto a maioria possui recursos limitados.
+            Isso pode resultar em disparidades significativas no acesso a serviços, educação e oportunidades de emprego,
+            afetando negativamente o desenvolvimento econômico e a qualidade de vida para a maioria dos cidadãos. Por
+            outro lado, sociedades com uma distribuição de renda mais equitativa tendem a experimentar um
+            desenvolvimento mais equitativo e uma qualidade de vida mais elevada para a população em geral.
+
+        </p>
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <br><br>
+
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+
+
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho3', 'desativar2', 'se chegou até aqui, você merece um 10!','10');this.style.display='none'">Proximo</button>
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+        <hr>
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+
+        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+
+
+        <div class="w3-container">
+
+
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
+
+                    <div class="w3-center w3-padding-48">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+
+
+
+                        <div class="nota">
+
+                        </div>
+
+                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
+                            class="w3-circle w3-animate-zoom ">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 w3-pink ">
+
+                <a href="https://hdr.undp.org/system/files/documents/global-report-document/hdr2021-22ptpdf.pdf"
+                    target="_blank">
+                    <span class="w3-text-white"> Relatório do Desenvolvimento Humano 2021-2022</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        // function numButton() {
+        //     numB++;
+        //     document.getElementById("numero").innerHTML = numB;
+        //     console.log(numB);
+        // }
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();//retirar no Kodular
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 12);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

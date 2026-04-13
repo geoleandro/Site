@@ -123,7 +123,7 @@ function executarReset() {
     // 1. Efeito visual: Sobe a página
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    console.log("Iniciando Protocolo de Reboot...");
+
 
     // 2. Limpeza Inteligente do LocalStorage
     const chaves = Object.keys(localStorage);
@@ -241,36 +241,26 @@ function prepararTrocaNome() {
 }
 
 
-
+// DEPOIS: fetch só na primeira vez
 async function carregarFrase() {
     const f = document.getElementById('frase');
     const a = document.getElementById('autor');
     const imgAutor = document.getElementById('autor-img');
-
     if (!f) return;
 
     try {
-        // Efeito visual de saída
         f.style.opacity = 0;
         if (imgAutor) imgAutor.style.opacity = 0;
 
-        // Busca o JSON (o "/" inicial evita erro no blog)
-        const resposta = await fetch('/estilos/frases.json');
-        const frases = await resposta.json();
+        const frases = await DuvidCache.get('/estilos/frases.json'); // << NOVO
 
-        // Sorteio
-        const aleatoria = frases[Math.floor(Math.random() * frases.length)];
-
-        // Pequena pausa para a transição do CSS
         setTimeout(() => {
+            const aleatoria = frases[Math.floor(Math.random() * frases.length)];
             f.innerText = `"${aleatoria.frase}"`;
             if (a) a.innerText = `— ${aleatoria.autor}`;
 
             if (imgAutor && aleatoria.imagem) {
-                // Monta o caminho: /imgFrases/milton.jpg
                 imgAutor.src = "/" + aleatoria.imagem;
-
-                // Só exibe quando a imagem terminar de carregar
                 imgAutor.onload = () => {
                     imgAutor.style.display = 'block';
                     imgAutor.style.opacity = 1;
@@ -278,12 +268,11 @@ async function carregarFrase() {
             } else if (imgAutor) {
                 imgAutor.style.display = 'none';
             }
-
             f.style.opacity = 1;
         }, 500);
 
     } catch (erro) {
-        console.error("Erro ao carregar JSON:", erro);
+        console.error("Erro ao carregar frases:", erro);
         f.innerText = "A geografia é a arte de ler o mundo.";
         f.style.opacity = 1;
     }

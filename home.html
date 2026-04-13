@@ -6,41 +6,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Preconnect: avisa o browser para conectar nesses servidores antes de precisar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
+    <!-- CSS local primeiro — chega antes de qualquer coisa externa -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/estilos/index-estilo.css">
+    <link rel="stylesheet" href="/estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="/estilos/navbar.css">
     <link rel="stylesheet" href="/estilos/trilha-niveis.css">
 
+    <!-- 3 fontes viram 1 requisição só -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Oswald&family=Open+Sans&family=VT323&display=swap">
 
-
-
-    <link rel="shortcut icon" type="image/x-icon" href="/fotoIndex/favicon.ico">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <!-- W3 e Font Awesome -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
-        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/fotoIndex/favicon.ico">
 
 
-
+    <script src="/js/duvid-cache.js" defer></script>
+    <!-- O Cérebro. Contém as funções lógicas principais que sustentam todo o site, como cálculos de XP, verificação de nível e variáveis globais que todos os outros scripts consultam. -->
     <script src="/js/duvid-core.js" defer></script>
 
+    <!-- O Cofre (LocalStorage). É o responsável por salvar e ler os dados do usuário no navegador. Sem ele, o aluno perderia o progresso (pontos e conquistas) toda vez que fechasse a aba. -->
     <script src="/js/duvid-db.js" defer></script>
 
+    <!-- A Sonoplastia. Gerencia todos os efeitos sonoros do site (cliques, sons de acerto, erro e notificações), garantindo que a experiência de "jogo" seja imersiva. -->
     <script src="/js/duvid-audio.js" defer></script>
+
+    <!-- O Esteticista (Interface). Cuida de elementos visuais genéricos que mudam dinamicamente, como o Dark Mode, o ajuste do tamanho da fonte e comportamentos de botões. -->
     <script src="/js/duvid-ui.js" defer></script>
 
+    <!-- O Bibliotecário. Gerencia a lógica de exibição das aulas, filtragem de temas por ano escolar e a navegação entre os conteúdos pedagógicos. -->
     <script src="/js/aulas-geral.js" defer></script>
+
+    <!-- O Construtor. É o script que "monta" as páginas. Ele busca o HTML do Header (Topo) e do Footer (Rodapé) e os injeta automaticamente em todas as páginas para você não ter que copiar o código em cada arquivo -->
     <script src="/js/carregar.js" defer></script>
+
+    <!-- O Porteiro. Contém apenas as funções de abrir e fechar o menu lateral (Navbar) e os Dropdowns, especialmente focado na usabilidade em celulares. -->
     <script src="/js/abrirmenu.js" defer></script>
 
+    <!-- O Painel de Controle. É específico para a página inicial. Ele busca dados em tempo real (como a temperatura global ou frases do dia) e atualiza aqueles widgets dinâmicos do "Monitor Global" -->
     <script src="/js/duvid-api-home.js" defer></script>
-
 
 
 
@@ -62,8 +74,8 @@
     <main id="conteudo-principal">
 
         <div class="w3-display-container w3-animate-opacity w3-padding-48">
-            <img src="/fotoIndex/duvid-banner1.png" alt="Duvid Geografia Banner"
-                style="width:100%; min-height:200px; max-height:auto; object-fit:cover;" class="w3-card-4">
+            <img src="/fotoIndex/duvid-banner1.png" width="1200" height="400" style="width:100%; height:auto;"
+                fetchpriority="high" alt="Duvid Geografia Banner" class="w3-card-4">
 
             <div class="w3-display-middle w3-margin-top w3-center">
                 <h1 class="w3-xlarge w3-text-white w3-wide" style="text-shadow: 2px 2px 10px #000;">
@@ -85,7 +97,7 @@
 
 
         <div class="w3-container w3-content w3-padding-64 " style="max-width:800px">
-            <h2 class="w3-wide w3-center w3-text-green w3-xlarge">O PROJETO</h2>
+            <h2 class="w3-wide w3-center w3-text-green w3-xlarge">O PROJETO (em atualização dos textos e questões)</h2>
             <p class="w3-opacity w3-center"><i>Gratuito, inovador e feito para a sala de aula</i></p>
             <div class="w3-justify">
                 <p>O site <strong>Duvid Geografia</strong> oferece mais de 1000 questões atualizadas, dezenas de
@@ -258,7 +270,7 @@
                                 <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">1º ANO</h3>
                                 <div class="w3-padding">
                                     <a href="/Duvid1Ano.html">
-                                        <img src="fotoIndex/imagensCapa/capa1ano.png" alt="Capa 1º Ano"
+                                        <img src="fotoIndex/imagensCapa/capa1ano.png" loading="lazy" alt="Capa 1º Ano"
                                             class="w3-round w3-hover-opacity w3-margin-bottom"
                                             style="width:100%; max-width: 250px;">
                                     </a>
@@ -279,7 +291,7 @@
                                 <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">2º ANO</h3>
                                 <div class="w3-padding">
                                     <a href="/Duvid2Ano.html">
-                                        <img src="fotoIndex/imagensCapa/capa2ano.png" alt="Capa 2º Ano"
+                                        <img src="fotoIndex/imagensCapa/capa2ano.png" loading="lazy" alt="Capa 2º Ano"
                                             class="w3-round w3-hover-opacity w3-margin-bottom"
                                             style="width:100%; max-width: 250px;">
                                     </a>
@@ -298,7 +310,7 @@
                                 <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">3º ANO</h3>
                                 <div class="w3-padding">
                                     <a href="/Duvid3Ano.html">
-                                        <img src="fotoIndex/imagensCapa/capa3ano.png" alt="Capa 3º Ano"
+                                        <img src="fotoIndex/imagensCapa/capa3ano.png" loading="lazy" alt="Capa 3º Ano"
                                             class="w3-round w3-hover-opacity w3-margin-bottom"
                                             style="width:100%; max-width: 250px;">
                                     </a>
@@ -469,7 +481,7 @@
                     <!-- CARD POPULAÇÃO BRASIL -->
                     <div class="w3-col l3 m6 s6 w3-margin-bottom">
                         <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
-                           <img src="/fotoIndex/icones/popbrasil-icone.png" alt="População Brasil"
+                            <img src="/fotoIndex/icones/popbrasil-icone.png" alt="População Brasil"
                                 class="img-widget-hero"><br>
                             <span class="w3-large w3-text-green"><b>Habitantes</b></span>
                             <div id="pop-brasil-live" class="w3-large w3-text-dark-grey" style="font-weight: bold;">
@@ -503,7 +515,7 @@
                     <!-- CARD INFLAÇÃO IPCA -->
                     <div class="w3-col l3 m6 s6 w3-margin-bottom">
                         <div class="w3-block w3-white w3-card w3-padding-24 w3-round-large w3-center card-widget">
-                             <img src="/fotoIndex/icones/ipca-icone.png" alt="Inflação" class="img-widget-hero"><br>
+                            <img src="/fotoIndex/icones/ipca-icone.png" alt="Inflação" class="img-widget-hero"><br>
                             <span class="w3-large w3-text-orange"><b>Inflação IPCA</b></span>
                             <div id="ipca-valor" class="w3-large w3-text-dark-grey" style="font-weight: bold;">--%</div>
                             <p class="w3-tiny w3-opacity w3-margin-0">Acumulado 12 meses</p>
@@ -515,7 +527,7 @@
         </div>
 
 
- 
+
 
 
         <!-- Painel de citações -->
@@ -534,7 +546,7 @@
                             style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 20px;">
                             <img id="autor-img" src="" alt="Autor" class="w3-circle w3-card-2"
                                 style="width:130px; height:130px; object-fit: cover; border: 3px solid #4CAF50;">
-                            <p id="autor" class="w3-xlarge w3-text-green" style="font-weight: bold; margin: 0;">
+                            <p id="autor" class="w3-large w3-text-green" style="font-weight: bold; margin: 0;">
                             </p>
                         </div>
                     </div>
@@ -549,62 +561,37 @@
     </main>
 
 
-    <button onclick="voltarAoTopo()" id="btn-topo" class="w3-button w3-green w3-padding w3-round-large w3-right"
-        title="Voltar ao topo">
-        <i class="fa fa-arrow-up"></i>
-    </button>
 
-    <div class="w3-padding-top-48"></div>
 
     <!-- Footer -->
 
     <div id="footer-placeholder"></div>
 
-
+    <!-- AdSense e Analytics movidos para cá: carregam depois do conteúdo -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-DPX55DSFZ0');
-
     </script>
-
-
 
     <script>
-
-
-        document.addEventListener('DOMContentLoaded', async () => {
-            // 1. Frase do dia
-            if (typeof carregarFrase === "function") carregarFrase();
-
-            // 2. Identificação (Agora centralizada no Core)
+        document.addEventListener('DOMContentLoaded', () => {
             gerenciarIdentificacaoHome();
 
-            setTimeout(() => {
-                if (typeof atualizarGlobinhosGeral === "function") {
-                    atualizarGlobinhosGeral();
-                }
+            if (typeof atualizarGlobinhosGeral === "function") atualizarGlobinhosGeral();
 
-            }, 100);
+            // Primeira frase imediata, depois repete a cada 10 segundos
+            if (typeof carregarFrase === "function") {
+                carregarFrase();
+                setInterval(carregarFrase, 10000);
+            }
         });
-
-        // Mantém o intervalo da frase
-        setInterval(() => {
-            if (typeof carregarFrase === "function") carregarFrase();
-        }, 10000);
     </script>
-
-
-
-
-
-
-
-
 
 </body>
 

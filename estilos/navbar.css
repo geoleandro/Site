@@ -1,0 +1,137 @@
+
+/* 2. Defina a fonte da Navbar (Unificada) */
+.w3-bar,
+.w3-bar-item,
+.w3-button,
+.w3-dropdown-content a {
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+    /* Dá um ar mais elegante */
+    letter-spacing: 1px;
+    font-size: medium;
+   
+}
+
+/* Diminui o respiro dos itens da barra */
+.w3-bar-item.w3-button,
+.w3-bar .w3-dropdown-click button {
+    padding-top: 14px !important;
+    /* Ajuste este valor para ficar mais fina */
+    padding-bottom: 14px !important;
+    /* Ajuste este valor para ficar mais fina */
+    line-height: 1.2;
+}
+
+/* Adicione isso ao seu CSS para dar um respiro elegante na esquerda */
+.w3-bar-item:first-child {
+    margin-left: 15px !important;
+}
+
+/* Garante que o ícone de menu (hambúrguer) fique na direita extrema */
+.w3-bar .w3-right,
+.w3-bar-item.w3-right {
+    float: right !important;
+}
+
+/* Ajuste específico para o botão Home descolar da borda esquerda */
+.w3-bar-item:first-child {
+    margin-left: 12px !important;
+}
+
+/* --- INTERAÇÃO: GLOBO E HAMBÚRGUER NA DIREITA --- */
+/* Esta regra garante que o painel de pontos e o menu fiquem juntos no canto */
+.w3-right {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px;
+    padding-right: 15px !important;
+}
+
+
+
+
+/* Ajuste específico para o Dark Mode não sumir no hover */
+body.dark-mode .w3-bar {
+    background-color: #121212 !important;
+}
+
+/* Garante que o ícone do hambúrguer seja visível no Dark Mode */
+body.dark-mode .w3-bar .fa-bars {
+    color: white !important;
+}
+
+
+body.dark-mode #navDemo {
+    background-color: #1e1e1e !important;
+    color: white !important;
+}
+
+body.dark-mode #navDemo a {
+    border-bottom: 1px solid #333;
+}
+
+
+/* Container dos botões de fonte */
+.font-controls {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Um fundo sutil para agrupar */
+    border-radius: 20px;
+    padding: 2px;
+    margin-right: 8px;
+}
+
+/* Botões individuais */
+.font-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.font-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+/* VERSÃO CELULAR - AJUSTE DA NAVBAR */
+@media (max-width: 600px) {
+
+    /* Faz a parte direita da barra ser um grupo que não quebra linha */
+    .w3-right {
+        display: flex !important;
+        float: right !important;
+        height: 48px;
+        /* Altura padrão da barra */
+        align-items: center;
+        gap: 5px;
+        /* Espaço entre Lua, Globinho e Menu */
+        position: absolute;
+        padding-right: 10px !important;
+        right: 0;
+        top: 0;
+    }
+
+    /* Garante que o botão da Lua (ou qualquer item na direita) apareça */
+    .w3-bar-item.w3-right,
+    #toggle-dark-mode {
+        display: flex !important;
+        padding: 8px 12px !important;
+    }
+
+    /* Ajuste para o botão Home não ser esmagado */
+    .w3-bar-item:first-child {
+        margin-left: 10px !important;
+        padding-left: 8px !important;
+    }
+
+    
+}

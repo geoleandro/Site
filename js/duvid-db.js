@@ -14,10 +14,19 @@ const TIPO_CONCLUSAO = { TEXTO: 'texto', QUESTOES: 'questoes' };
 const DuvidDB = {
 
 
-    getGlobinhos: function () {
-        // Usa a constante para ler o saldo
-        const saldo = localStorage.getItem(DB_CHAVE);
-        return saldo ? parseInt(saldo) : 0;
+ // << NOVO: cache em memória — vive enquanto a aba está aberta
+    _cache: {
+        globinhos: null,
+        conclusoes: null
+    },
+
+   getGlobinhos: function () {
+        // << NOVO: só lê o localStorage na primeira vez
+        if (this._cache.globinhos === null) {
+            const saldo = localStorage.getItem(DB_CHAVE);
+            this._cache.globinhos = saldo ? parseInt(saldo) : 0;
+        }
+        return this._cache.globinhos;
     },
 
 
@@ -28,12 +37,12 @@ const DuvidDB = {
 
         // 2. Realiza a soma e salva usando a Constante
         let novoSaldo = saldoAnterior + Number(quantidade);
+
+        this._cache.globinhos = novoSaldo;
         localStorage.setItem(DB_CHAVE, novoSaldo);
 
         // --- NOVIDADE AQUI: Sincroniza Patente e Nível no LocalStorage ---
         const progressoAtual = this.verificarConquistas();
-        // ----------------------------------------------------------------
-
         let novoLvl = progressoAtual.lvl;
 
         // --- LÓGICA DE FEEDBACK (Sem alterações aqui, está ótima!) ---
@@ -73,15 +82,30 @@ const DuvidDB = {
     },
 
     // NOVA FUNÇÃO: O "Leitor" de status blindado
-    estaConcluido: function (idAula, tipo) {
-        // 'tipo' deve vir da constante TIPO_CONCLUSAO (texto ou questoes)
-        // Retorna true se estiver "true" no localStorage, senão retorna false
-        return localStorage.getItem(`concluido_${tipo}_${idAula}`) === "true";
+   estaConcluido: function (idAula, tipo) {
+        // << NOVO: monta o cache de conclusões uma única vez
+        if (this._cache.conclusoes === null) {
+            this._cache.conclusoes = {};
+            // varre só as chaves do duvid no localStorage
+            for (let i = 0; i < localStorage.length; i++) {
+                const chave = localStorage.key(i);
+                if (chave && chave.startsWith('concluido_')) {
+                    this._cache.conclusoes[chave] = localStorage.getItem(chave);
+                }
+            }
+        }
+        return this._cache.conclusoes[`concluido_${tipo}_${idAula}`] === "true";
     },
 
 
     salvarConclusao: function (idAula, tipo) {
-        localStorage.setItem(`concluido_${tipo}_${idAula}`, "true");
+        const chave = `concluido_${tipo}_${idAula}`;
+        // << NOVO: garante que o cache existe antes de escrever
+        if (this._cache.conclusoes === null) {
+            this._cache.conclusoes = {};
+        }
+        this._cache.conclusoes[chave] = "true";   // << NOVO: atualiza cache
+        localStorage.setItem(chave, "true");       // salva no disco
     },
 
 
