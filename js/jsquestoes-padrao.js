@@ -292,6 +292,8 @@ function verificar() {
     exibirPainelFeedback(isCorreto, q);
     if (btnVerificar) btnVerificar.disabled = true;
     DuvidUI.scrollParaElemento('feedback-txt', 'center');
+
+    DuvidUI.atualizarInterface();
 }
 
 function perderVida() {

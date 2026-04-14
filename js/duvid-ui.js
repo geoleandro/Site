@@ -264,8 +264,8 @@ const DuvidUI = {
             painelPontos.classList.add('pulo-elastico');
         }
 
-        // // 3. Atualiza os números na tela
-        // this.atualizarInterface();
+       
+        // atualizarInterface();
     },
 
     feedbackVisualErro: function () {
