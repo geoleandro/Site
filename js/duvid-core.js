@@ -69,7 +69,7 @@ function verificarStatusAula(id) {
     // CASO 3: Leu o texto, mas NÃO fez questões (Fluxo padrão)
     else if (!jaFezQuestoes && jaLeuTexto) {
         msg = `Texto lido <b>${nome}</b>, agora que tal testar seus conhecimentos nas questões e <b>ganhar mais globinhos</b>?`;
-        cor = "w3-indigo"; icone = "fa-pencil";
+        cor = "w3-indigo"; 
     }
     // CASO 4: Não fez nada ainda (Início da Jornada)
     else {
@@ -78,12 +78,13 @@ function verificarStatusAula(id) {
 
     if (msg) {
         areaAviso.innerHTML = `
-            <div class="w3-panel ${cor} w3-display-container w3-round-large w3-animate-top w3-card-4">
+            <div class="aviso-pergaminho aviso-pergaminho2 w3-animate-top">
                 <span onclick="this.parentElement.style.display='none'" 
-                      class="w3-button w3-display-topright w3-round-large" style="padding:12px 16px">&times;</span>
-                <p class="w3-padding-16 w3-medium w3-text-white" style="margin-right:20px">
-                    <i class="fa ${icone} w3-xlarge"></i> &nbsp; ${msg}
-                </p>
+                      class="btn-fechar-rpg">&times;</span>
+                
+                <div class="permaginho-texto">
+                    </i> &nbsp; ${msg}
+                </div>
             </div>`;
     }
 }

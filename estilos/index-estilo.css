@@ -129,6 +129,7 @@ body {
 }
 
 
+
 /* Estado desativado quando atinge o limite (definido no main.js) */
 /* + */
 
@@ -387,7 +388,7 @@ body.dark-mode p.w3-large {
 }
 
 /* Garante que a frase e o autor fiquem brancos no modo escuro */
-body.dark-mode #frase, 
+body.dark-mode #frase,
 body.dark-mode #autor {
     color: #ffffff !important;
 }
@@ -434,7 +435,25 @@ body.dark-mode #frase {
     border-color: #69CB60;
 }
 
+/* no arquivo index-estilo.css */
+.duvid-banner {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 2%;
+}
 
+
+
+@media (min-width: 993px) {
+    .duvid-banner {
+        min-height: auto;
+    }
+
+    /* desktop: volta ao comportamento natural */
+}
 
 
 
@@ -479,5 +498,9 @@ body.dark-mode #frase {
         /* Botão ocupa toda a largura do card no celular */
     }
 
-}
+    .duvid-banner {
+        min-height: 350px;
+       margin-top: 10%;
+    }
 
+}
