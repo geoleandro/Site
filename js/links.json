@@ -1,0 +1,50 @@
+{
+    "ACNURVenezuela": {
+        "texto": "Crise migratória venezuelana — ACNUR",
+        "url": "https://www.acnur.org/br/emergencias/venezuela",
+        "cor": "w3-deep-orange",
+        "corTexto": "w3-text-white"
+    },
+    "BrasilEscolaDIT": {
+        "texto": "Divisão Internacional do Trabalho — Brasil Escola",
+        "url": "https://brasilescola.uol.com.br/geografia/divisao-internacional-trabalho-dit.htm",
+        "cor": "w3-green",
+        "corTexto": "w3-text-white"
+    },
+    "BBCGuerrilhas": {
+        "texto": "Guerrilhas na América Latina — BBC Brasil",
+        "url": "https://www.bbc.com/portuguese/articles/c8jry8z4j0po",
+        "cor": "w3-green",
+        "corTexto": "w3-text-white"
+    },
+    "CNNBrasilCuba": {
+        "texto": "Revolução Cubana enfrenta a maior ameaça da sua história",
+        "url": "https://www.bbc.com/portuguese/articles/cvgkkn5g3ymo",
+        "cor": "w3-white",
+        "corTexto": "w3-text-black"
+    },
+    "KardiaMeioTecnico": {
+        "texto": "Meio técnico-científico-informacional de Milton Santos — Kardia Sociologia",
+        "url": "https://kardiasociologia.org/2024/05/23/meio-tecnico-cientifico-informacional/",
+        "cor": "w3-blue",
+        "corTexto": "w3-text-white"
+    },
+    "NatGeoRevolucaoIndustrial": {
+        "texto": "O que foi e quando começou a Revolução Industrial — National Geographic Brasil",
+        "url": "https://www.nationalgeographicbrasil.com/historia/2024/12/o-que-foi-e-quando-comecou-a-revolucao-industrial",
+        "cor": "w3-yellow",
+        "corTexto": "w3-text-black"
+    },
+    "NerdologiaRevolucaoIndustrial": {
+        "texto": "A Primeira Revolução Industrial — Nerdologia",
+        "url": "https://www.youtube.com/watch?v=m_KTF3iNrY0&ab_channel=Nerdologia",
+        "cor": "w3-red",
+        "corTexto": "w3-text-white"
+    },
+    "UNODCNarcotrafico": {
+        "texto": "Narcotráfico: dados e relatórios — UNODC (ONU)",
+        "url": "https://www.unodc.org/cofrb/pt/noticias/2025/6/relatorio-mundial-sobre-drogas-2025-do-unodc_-instabilidade-global-agrava-custos-sociais--economicos-e-de-seguranca-do-problema-mundial-das-drogas.html",
+        "cor": "w3-blue",
+        "corTexto": "w3-text-white"
+    }
+}

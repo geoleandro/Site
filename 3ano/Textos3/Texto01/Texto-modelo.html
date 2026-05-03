@@ -12,11 +12,11 @@
     <meta property="og:image" content="">
 
     <link rel="stylesheet" href="../../../estilos/index-estilo.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -46,13 +46,14 @@
     <script src="../../../js/aulas-geral.js" defer></script>
 
 
-    <title>Texto-modelo</title>
+
+    <title></title>
 
 
 
     <style>
         .topico {
-            display: block;
+            display: none;
         }
 
         .topico:nth-child(1),
@@ -92,9 +93,11 @@
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
 
-                <p><strong>Objetivo:</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, harum?
-                    Nisi atque quis voluptatem at neque voluptate doloremque rerum reprehenderit deserunt distinctio
-                    quaerat in excepturi eaque, ullam unde, tenetur commodi.</p>
+                <p><strong>Objetivo:</strong> Caracterizar o mundo atual. Identificar e entender as principais
+                    características
+                    da sociedade no capitalismo atual, a divisão internacional do trabalho e suas desigualdades
+                    socioespaciais e
+                    os processos que ocorrem no espaço geográfico.</p>
             </div>
 
 
@@ -106,8 +109,6 @@
             <hr>
 
         </div>
-
-
 
 
         <div class="topico ">
@@ -170,6 +171,30 @@
 
 
         </div>
+
+
+        
+        <div class="topico ">
+
+            <h2> Titulo 2 </h2>
+
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                soluta consectetur neque eos quia temporibus, recusandae quis dignissimos ut tempora rem quaerat!
+                Similique vero explicabo soluta quae earum necessitatibus praesentium!
+            </p>
+
+
+
+
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <hr>
+
+
+        </div>
+
+
 
 
 
@@ -291,20 +316,13 @@
 
             <h2> Infográfico - Resumo</h2>
 
-
-
             <div class="w3-margin"><img id="infograficot2" src="inforesumot1.jpg"
                     alt="Infográfico resumo raio x da população" class="w3-mobile">
                 <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Organizado e revisado pelo autor. </span>
             </div>
 
-
-
-
-
             <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
             <hr>
-
 
         </div>
 
@@ -389,124 +407,32 @@
         </div>
 
 
+        <!-- TÓPICO 13: FINALIZAR -->
         <div class="topico">
-
-
             <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-
         </div>
 
 
-
-
-
+        <!-- ===== SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS ===== -->
         <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
+
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
-            <div class="w3-row-padding">
 
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-green w3-card-4 pulsar">
-                        <a href="https://www.dw.com/..." target="_blank">
-                            <span class="w3-text-white">Quase metade da população mundial vive na pobreza</span>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-blue w3-card-4 pulsar">
-                        <a href="https://www.acnur.org/..." target="_blank">
-                            <span class="w3-text-white">108,4 milhões de pessoas deslocadas à força</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-white w3-card-4 pulsar">
-                        <a href="https://news.un.org/..." target="_blank">
-                            <span class="w3-text-black">Fome cresce no mundo e atinge 9,8% da população</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-deep-orange w3-card-4 pulsar">
-                        <a href="https://cee.fiocruz.br/..." target="_blank">
-                            <span class="w3-text-white">2,2 bilhões de pessoas não têm água potável</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
 
             <div class="w3-container w3-padding-64">
-                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                        Bibliográficas</strong></h3>
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
 
-                <div class="w3-row w3-margin-bottom">
-                    <div class="w3-card-4 w3-white w3-border-left w3-border-green w3-padding-16"
-                        style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                        <div class="w3-container">
-                            <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
-                            <p class="w3-large w3-margin-top">
-                                SANTOS, Mílton. <strong>Por uma outra globalização</strong>: do pensamento único à
-                                consciência universal.
-                                <span class="w3-opacity w3-medium">Rio de Janeiro: Record, 2000.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-row w3-margin-bottom">
-                    <div class="w3-card-4 w3-white w3-border-left w3-border-blue w3-padding-16"
-                        style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                        <div class="w3-container">
-                            <span class="w3-tag w3-blue w3-small fontePixel">Geografia Crítica</span>
-                            <p class="w3-large w3-margin-top">
-                                SANTOS, Milton. <strong>O espaço do cidadão</strong>.
-                                <span class="w3-opacity w3-medium">São Paulo: Editora da USP, 2007.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-row w3-margin-bottom">
-                    <div class="w3-card-4 w3-white w3-border-left w3-border-deep-orange w3-padding-16"
-                        style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                        <div class="w3-container">
-                            <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
-                            <p class="w3-large w3-margin-top">
-                                VOGLER, Christopher. <strong>A jornada do escritor</strong>.
-                                <span class="w3-opacity w3-medium">Rio de Janeiro: Nova Fronteira, 2006.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- CARD BNCC -->
-                <div class="w3-row w3-margin-bottom">
-                    <div class="w3-card-4 w3-white w3-border-left w3-border-amber w3-padding-16"
-                        style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                        <div class="w3-container">
-                            <!-- Cor Amber (Âmbar) para documentos oficiais -->
-                            <span class="w3-tag w3-amber w3-text-white w3-small fontePixel">Diretriz Nacional</span>
-                            <p class="w3-large w3-margin-top">
-                                BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>.
-                                <span class="w3-opacity w3-medium">Brasília: MEC/CONSED/UNDIME, 2018.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
             </div>
         </div>
-
-
 
 
 

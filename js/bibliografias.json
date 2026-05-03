@@ -1,0 +1,224 @@
+{
+  "Borrero": {
+    "tag": "Geociências",
+    "cor": "w3-teal",
+    "texto": "BORRERO, Francisco. <strong>Earth Science: Geology, the Environment, and the Universe</strong>.",
+    "complemento": "Columbus: McGraw-Hill Companies, 2008."
+  },
+  "Britannica": {
+    "tag": "Enciclopédia",
+    "cor": "w3-blue",
+    "texto": "<strong>Britannica Illustrated Science Library</strong>.",
+    "complemento": "2008."
+  },
+  "Candelori": {
+    "tag": "Geografia Geral",
+    "cor": "w3-green",
+    "texto": "CANDELORI, Roberto. <strong>Enciclopédia do Estudante: geografia geral</strong>.",
+    "complemento": "São Paulo: Moderna, 2008."
+  },
+  "Carpanelli": {
+    "tag": "Geografia Econômica",
+    "cor": "w3-blue",
+    "texto": "CARPANELLI, Francesca. <strong>La geografia in 30 lezioni: Geografia generale ed economica</strong>.",
+    "complemento": "Itália: Zanichelli, 2015."
+  },
+  "CarvalhoLeituras": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "CARVALHO, Edilson Alves de. <strong>Leituras cartográficas e interpretações estatísticas I</strong>. 2.ed.",
+    "complemento": "Natal: EDUFRN, 2011."
+  },
+  "CarvalhoAraujo": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "CARVALHO, Edílson Alves; ARAÚJO, Paulo César. <strong>Leituras cartográficas e interpretações estatísticas</strong>. 2.ed.",
+    "complemento": "Natal: EDUFRN, 2011."
+  },
+  "Dambros": {
+    "tag": "Geografia Física",
+    "cor": "w3-green",
+    "texto": "DAMBRÓS, Cristiane. <strong>Geografia Física</strong>.",
+    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2017."
+  },
+  "Faria": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "FARIA, Daniela Resende de. <strong>Cartografia</strong>.",
+    "complemento": "Londrina: Educacional S.A., 2016."
+  },
+  "Frank": {
+    "tag": "Geografia Econômica",
+    "cor": "w3-blue",
+    "texto": "FRANK, Bruno José Rodrigues. <strong>Geografia econômica</strong>.",
+    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2018."
+  },
+  "Fredette": {
+    "tag": "Geociências",
+    "cor": "w3-teal",
+    "texto": "FREDETTE, Nathalie (et al.). <strong>La Terre: Comprendre notre planète</strong>.",
+    "complemento": "Éditions Québec Amérique, 2007."
+  },
+  "Freitas": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "FREITAS, Maria Isabel Castreghini de (Org.). <strong>Cartografia e Meio Ambiente</strong>.",
+    "complemento": "Rio Claro: IGCE/UNESP; Bauru: FC/Unesp; CECEMCA, 2005."
+  },
+  "GeographyDK": {
+    "tag": "Atlas",
+    "cor": "w3-indigo",
+    "texto": "<strong>Geography: A unique step-by-step visual guide</strong>.",
+    "complemento": "DK: New York, 2019."
+  },
+  "Hess": {
+    "tag": "Geografia Física",
+    "cor": "w3-green",
+    "texto": "HESS, Darrel. <strong>McKnight's Physical Geography: A Landscape Appreciation</strong>. 12.ed.",
+    "complemento": "Pearson, Hoboken, NJ, 2016."
+  },
+  "IBGE": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "IBGE. <strong>Noções Básicas de Cartografia</strong>.",
+    "complemento": "Rio de Janeiro, 1999."
+  },
+  "Joly": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "JOLY, Fernand. <strong>A Cartografia</strong>.",
+    "complemento": "Campinas: Papirus, 1990."
+  },
+  "Lacoste": {
+    "tag": "Geografia Crítica",
+    "cor": "w3-purple",
+    "texto": "LACOSTE, Yves. <strong>A geografia – isso serve, em primeiro lugar, para fazer a guerra</strong>. 2.ed.",
+    "complemento": "Campinas: Papirus, 2003 [1989]."
+  },
+  "Mariano": {
+    "tag": "Geografia do Brasil",
+    "cor": "w3-green",
+    "texto": "MARIANO, Maryelle Florêncio (et al.). <strong>Geografia do Brasil</strong>.",
+    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2018."
+  },
+  "Marsh": {
+    "tag": "Geografia Física",
+    "cor": "w3-teal",
+    "texto": "MARSH, William M.; KAUFMAN, Martin M. <strong>Physical Geography: Great Systems and Global Environments</strong>.",
+    "complemento": "Cambridge University Press, New York, 2013."
+  },
+  "Marshak": {
+    "tag": "Geociências",
+    "cor": "w3-teal",
+    "texto": "MARSHAK, Stephen. <strong>Earth: Portrait of a Planet</strong>. 5.ed.",
+    "complemento": "University of Illinois, 2015."
+  },
+  "Mendonca": {
+    "tag": "Climatologia",
+    "cor": "w3-cyan",
+    "texto": "MENDONÇA, Francisco; DANNI-OLIVEIRA, Inês Moresco. <strong>Climatologia: noções básicas e climas do Brasil</strong>.",
+    "complemento": "São Paulo: Oficina de Textos, 2007."
+  },
+  "MoreiraSene": {
+    "tag": "Livro Base",
+    "cor": "w3-blue",
+    "texto": "MOREIRA, João Carlos; SENE, Eustáquio de. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed.",
+    "complemento": "São Paulo: Scipione, 2016."
+  },
+  "Press": {
+    "tag": "Geociências",
+    "cor": "w3-teal",
+    "texto": "PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>. 4.ed.",
+    "complemento": "Porto Alegre: Bookman, 2006."
+  },
+  "SantosNatureza": {
+    "tag": "Geografia Crítica",
+    "cor": "w3-green",
+    "texto": "SANTOS, Milton. <strong>A Natureza do Espaço</strong>. 4.ed.",
+    "complemento": "São Paulo: EDUSP, 2002."
+  },
+  "SantosPaisDistorcido": {
+    "tag": "Geografia Crítica",
+    "cor": "w3-green",
+    "texto": "SANTOS, Milton. <strong>O país distorcido: o Brasil, a globalização e a cidadania</strong>.",
+    "complemento": "São Paulo: Publifolha, 2002."
+  },
+  "SantosPensando": {
+    "tag": "Geografia Crítica",
+    "cor": "w3-green",
+    "texto": "SANTOS, Milton. <strong>Pensando o espaço do homem</strong>. 5.ed.",
+    "complemento": "São Paulo: Edusp, 2004."
+  },
+  "SantosGlobalizacao": {
+    "tag": "Geografia Crítica",
+    "cor": "w3-green",
+    "texto": "SANTOS, Milton. <strong>Por uma outra globalização: do pensamento único à consciência universal</strong>.",
+    "complemento": "Rio de Janeiro: Record, 2000."
+  },
+  "SantosPatricia": {
+    "tag": "Geografia do Brasil",
+    "cor": "w3-blue",
+    "texto": "SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante: geografia do Brasil</strong>.",
+    "complemento": "São Paulo: Moderna, 2008."
+  },
+  "SeneMoreira": {
+    "tag": "Livro Base",
+    "cor": "w3-blue",
+    "texto": "SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed.",
+    "complemento": "São Paulo: Scipione, 2016."
+  },
+  "Skolnick": {
+    "tag": "Narrativa",
+    "cor": "w3-deep-orange",
+    "texto": "SKOLNICK, Evan. <strong>Video Game Storytelling: what every developer needs to know about narrative techniques</strong>.",
+    "complemento": "New York: Watson-Guptill, 2014."
+  },
+  "Souza": {
+    "tag": "Teoria Espacial",
+    "cor": "w3-purple",
+    "texto": "SOUZA, Marcelo Lopes de. O território: sobre espaço e poder, autonomia e desenvolvimento. In: CASTRO, Iná Elias et al. (Org.). <strong>Geografia: conceitos e temas</strong>.",
+    "complemento": "Rio de Janeiro: Bertrand Brasil, 1995. p. 86."
+  },
+  "Suertegaray": {
+    "tag": "Geociências",
+    "cor": "w3-teal",
+    "texto": "SUERTEGARAY, Dirce Maria Antunes (Org.). <strong>Terra: feições ilustradas</strong>.",
+    "complemento": "Porto Alegre: UFRGS, 2003."
+  },
+  "Teixeira": {
+    "tag": "Geociências",
+    "cor": "w3-teal",
+    "texto": "TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F. <strong>Decifrando a Terra</strong>. 2.ed.",
+    "complemento": "São Paulo: Companhia Editora Nacional, 2009."
+  },
+  "VanDerPluijm": {
+    "tag": "Geologia",
+    "cor": "w3-teal",
+    "texto": "VAN DER PLUIJM, Ben A.; MARSHAK, Stephen. <strong>Earth Structure: an introduction to structural geology and tectonics</strong>.",
+    "complemento": "New York/London: W.W. Norton & Company, 2004."
+  },
+  "Vesentini": {
+    "tag": "Livro Base",
+    "cor": "w3-blue",
+    "texto": "VESENTINI, José William. <strong>Geografia: o mundo em transição</strong>. 2.ed.",
+    "complemento": "São Paulo: Ática, 2013."
+  },
+  "WhatsWhere": {
+    "tag": "Atlas",
+    "cor": "w3-indigo",
+    "texto": "<strong>What's Where on Earth - Atlas</strong>.",
+    "complemento": "London: Penguin Random House, 2017."
+  },
+  "Wicander": {
+    "tag": "Geologia",
+    "cor": "w3-teal",
+    "texto": "WICANDER, Reed; MONROE, James S. <strong>Fundamentos de Geologia</strong>.",
+    "complemento": "São Paulo: Cengage Learning, 2009."
+  },
+  "BNCC": {
+    "tag": "Diretriz Nacional",
+    "cor": "w3-amber",
+    "texto": "BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>.",
+    "complemento": "Brasília: MEC/CONSED/UNDIME, 2018."
+  }
+}

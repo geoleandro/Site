@@ -316,7 +316,7 @@ function mostraBiblio() {
     }
 }
 
-
+// Função para injetar os metadados da aula (Título e Descrição) a partir do JSON
 async function injetarMetadadosAula() {
     // 1. Identifica o ano e a aula pela URL
     const path = window.location.pathname;
@@ -326,10 +326,11 @@ async function injetarMetadadosAula() {
     if (!anoMatch) return;
     const ano = anoMatch[1];
 
-   try {
+    try {
         const aulas = await DuvidCache.get(`/js/aulas-${ano}ano.json`); // << NOVO
 
-        const aulaDados = aulas.find(a => a.linkTexto.includes(aulaArquivo));
+        // 2. Busca os dados da aula atual no JSON (Usando o "pulo do gato" sênior)
+        const aulaDados = aulas.find(a => a.linkTexto && a.linkTexto.includes(aulaArquivo));
 
         if (aulaDados) {
             tituloAulaGlobal = aulaDados.titulo;
@@ -343,10 +344,15 @@ async function injetarMetadadosAula() {
             if (desc) desc.innerText = aulaDados.conteudo;
 
             configurarSEOAutomatico(aulaDados.id, 'texto');
+
+              await injetarBibliografiaAula(aulaDados.bibliografia);
+              await injetarLinksAula(aulaDados.links);
         }
     } catch (e) {
         console.error("Erro ao injetar metadados:", e);
     }
+  
+
 }
 
 
@@ -371,11 +377,11 @@ function Aparecer(imagem, paragrafo) {
 function validarAberta(inputId, gabarito, feedbackId, btn, globinhoId) {
     const inputElement = document.getElementById(inputId);
     const feedbackElement = document.getElementById(feedbackId);
-    
+
     // 1. Tratamento da string (O "pulo do gato" sênior)
     // Converte para minúsculo e remove espaços inúteis no início/fim
     let respostaUser = inputElement.value.toLowerCase().trim();
-    
+
     // 2. Lógica de validação
     if (respostaUser === "") {
         feedbackElement.innerHTML = "<span class='w3-text-red'>Escreva algo antes de conferir!</span>";
@@ -389,15 +395,15 @@ function validarAberta(inputId, gabarito, feedbackId, btn, globinhoId) {
         inputElement.disabled = true;
         inputElement.classList.add("w3-pale-green");
         btn.style.display = 'none';
-        
+
         feedbackElement.innerHTML = `<span class='w3-text-green'><b>Correto!</b> A resposta é ${gabarito}.</span>`;
-        
+
         // Gamificação
         document.getElementById(globinhoId).style.display = "inline-block";
         executarGatilhoResultado(true, 10); // Função do seu UI.js que soma pontos e faz confete
-        
+
         // Verifica se todas do bloco foram respondidas para mostrar o "Próximo"
-        verificarProgressoBloco(); 
+        verificarProgressoBloco();
     } else {
         // ERRO
         inputElement.classList.add("w3-border-red");
@@ -431,10 +437,10 @@ function verificarProgressoBloco() {
         if (btnNext) {
             btnNext.style.display = 'block';
             btnNext.classList.add('w3-animate-zoom'); // Efeito visual de "liberado"
-            
+
             // Opcional: Tocar um som de "Seção Concluída"
-            if (typeof playSom === 'function') playSom('click'); 
-             
+            if (typeof playSom === 'function') playSom('click');
+
         }
     }
 }
@@ -480,6 +486,185 @@ const injetarModalFinalizacao = () => {
     // Injeta o HTML no final do body
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 };
+
+// ================================================
+// MÓDULO DE BIBLIOGRAFIA
+// ================================================
+
+/**
+ * Busca o arquivo central de bibliografias
+ * @returns {Object|null} objeto com todas as referências ou null
+ */
+async function carregarBibliografias() {
+    try {
+        const biblio = await DuvidCache.get('/js/bibliografias.json');
+        return biblio || null;
+    } catch (e) {
+        console.error("Erro ao carregar bibliografias.json:", e);
+        return null;
+    }
+}
+
+/**
+ * Filtra as referências de uma aula específica
+ * @param {string[]} chaves - array de chaves da aula ex: ["MiltonSantos", "BNCC"]
+ * @param {Object} biblio - objeto completo de bibliografias
+ * @returns {Object[]} array de referências encontradas
+ */
+function filtrarBibliografiasAula(chaves, biblio) {
+    if (!chaves || chaves.length === 0 || !biblio) return [];
+
+    return chaves
+        .map(chave => {
+            const ref = biblio[chave];
+            if (!ref) {
+                console.warn(`Bibliografia não encontrada: "${chave}"`);
+                return null;
+            }
+            if (!ref.texto || !ref.complemento) {
+                console.warn(`Bibliografia incompleta: "${chave}"`);
+                return null;
+            }
+            return { chave, ...ref };
+        })
+        .filter(ref => ref !== null);
+}
+
+/**
+ * Gera o HTML de um card de referência
+ * @param {Object} ref - objeto da referência
+ * @returns {string} HTML do card
+ */
+function renderizarCardBibliografia(ref) {
+    const cor = ref.cor || 'w3-green';
+    const tag = ref.tag || 'Referência';
+    const borderCor = cor.replace('w3-', '');
+
+    return `
+    <div class="w3-row w3-margin-bottom">
+        <div class="w3-card-4 w3-white w3-border-left w3-border-${borderCor} w3-padding-16"
+            style="border-left-width:8px !important; border-radius:0 10px 10px 0;">
+            <div class="w3-container">
+                <span class="w3-tag ${cor} w3-small fontePixel">${tag}</span>
+                <p class="w3-large w3-margin-top">
+                    ${ref.texto}
+                    <span class="w3-opacity w3-medium">${ref.complemento}</span>
+                </p>
+            </div>
+        </div>
+    </div>`;
+}
+
+/**
+ * Injeta as referências no container da página
+ * @param {string[]} chaves - chaves da aula
+ * @param {string} containerId - ID do elemento HTML alvo
+ */
+async function injetarBibliografiaAula(chaves, containerId = 'biblio-gerada') {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    if (!chaves || chaves.length === 0) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const biblio = await carregarBibliografias();
+    if (!biblio) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const refs = filtrarBibliografiasAula(chaves, biblio);
+    container.innerHTML = refs.map(renderizarCardBibliografia).join('');
+}
+
+// ================================================
+// MÓDULO DE LINKS
+// ================================================
+
+/**
+ * Busca o arquivo central de links
+ * @returns {Object|null}
+ */
+async function carregarLinks() {
+    try {
+        const links = await DuvidCache.get('/js/links.json');
+        return links || null;
+    } catch (e) {
+        console.error("Erro ao carregar links.json:", e);
+        return null;
+    }
+}
+
+/**
+ * Filtra os links de uma aula específica
+ * @param {string[]} chaves
+ * @param {Object} links
+ * @returns {Object[]}
+ */
+function filtrarLinksAula(chaves, links) {
+    if (!chaves || chaves.length === 0 || !links) return [];
+
+    return chaves
+        .map(chave => {
+            const link = links[chave];
+            if (!link) {
+                console.warn(`Link não encontrado: "${chave}"`);
+                return null;
+            }
+            if (!link.texto || !link.url) {
+                console.warn(`Link incompleto: "${chave}"`);
+                return null;
+            }
+            return { chave, ...link };
+        })
+        .filter(link => link !== null);
+}
+
+/**
+ * Gera o HTML de um postit
+ * @param {Object} link
+ * @returns {string}
+ */
+function renderizarPostit(link) {
+    const cor = link.cor || 'w3-green';
+    const corTexto = link.corTexto || 'w3-text-white';
+
+    return `
+    <div class="w3-col m6 w3-margin-bottom">
+        <div class="postit-tp9 ${cor} w3-card-4 pulsar">
+            <a href="${link.url}" target="_blank">
+                <span class="${corTexto}">${link.texto}</span>
+            </a>
+        </div>
+    </div>`;
+}
+
+/**
+ * Injeta os links no container da página
+ * @param {string[]} chaves
+ * @param {string} containerId
+ */
+async function injetarLinksAula(chaves, containerId = 'links-gerados') {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    if (!chaves || chaves.length === 0) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const links = await carregarLinks();
+    if (!links) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const refs = filtrarLinksAula(chaves, links);
+    container.innerHTML = refs.map(renderizarPostit).join('');
+}
+
 
 // Chama a injeção automaticamente quando o script carregar
 document.addEventListener('DOMContentLoaded', injetarModalFinalizacao);

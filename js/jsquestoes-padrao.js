@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // 3. Zera os ganhos da aula atual (Nota Branca)
         window.ganhosAtuais = 0;
 
+        DuvidUI.atualizarInterface();
+
         // Dentro do seu DOMContentLoaded das questões
         setTimeout(() => {
             if (typeof atualizarInterface === "function") atualizarInterface();

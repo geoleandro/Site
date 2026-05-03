@@ -5,7 +5,7 @@
     "imagem": "fotoIndex/3ano/aula01.png",
     "conteudo": "Globalização. Desigualdades socioespaciais; Divisão Internacional do trabalho.",
     "linkTexto": "3ano/Textos3/Texto01/tt1.html?id=301",
-     "linkQuestoes": "questoes/modelo-questoes.html?id=301"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=301"
   },
   {
     "id": 302,
@@ -47,20 +47,22 @@
     "linkTexto": null,
     "linkQuestoes": "3ano/Aulas3/Aula06/t6.html"
   },
-  {
-    "id": 307,
-    "titulo": "Industrialização mundial I",
-    "imagem": "fotoIndex/3ano/aula07.png",
-    "conteudo": "Meio natural; Meio técnico; Revolução Industrial; Divisão Internacional do Trabalho; Tipos de indústrias.",
-    "linkTexto": "3ano/Textos3/Texto07/tt7.html",
-    "linkQuestoes": "3ano/Aulas3/Aula07/t7.html"
-  },
+ {
+  "id": 307,
+  "titulo": "Industrialização mundial I",
+  "imagem": "fotoIndex/3ano/aula07.png",
+  "conteudo": "Meio natural; Meio técnico; Revolução Industrial; Divisão Internacional do Trabalho; Tipos de indústrias.",
+  "linkTexto": "3ano/Textos3/Texto07/tt7.html?id=307",
+  "linkQuestoes": "3ano/Aulas3/Aula07/t7.html",
+  "bibliografia": ["SantosPatricia", "SantosNatureza", "Vesentini", "Skolnick"],
+  "links": [ "NerdologiaRevolucaoIndustrial",  "NatGeoRevolucaoIndustrial",  "BrasilEscolaDIT",  "KardiaMeioTecnico"]
+},
   {
     "id": 308,
     "titulo": "Industrialização mundial II",
     "imagem": "fotoIndex/3ano/aula08.png",
     "conteudo": "Globalização; Meio técnico-científico-informacional; Fordismo; Keynesianismo; Multinacionais.",
-    "linkTexto": "3ano/Textos3/Texto08/tt8.html",
+    "linkTexto": "3ano/Textos3/Texto08/tt8.html?id=308",
     "linkQuestoes": "3ano/Aulas3/Aula08/t8.html"
   },
   {
@@ -68,7 +70,7 @@
     "titulo": "Industrialização mundial III",
     "imagem": "fotoIndex/3ano/aula09.png",
     "conteudo": "Acumulação flexível; Concentração da atividade industrial; Neoliberalismo; Capitalismo monopolista.",
-    "linkTexto": "3ano/Textos3/Texto09/tt9.html",
+    "linkTexto": "3ano/Textos3/Texto09/tt9.html?id=309",
     "linkQuestoes": "3ano/Aulas3/Aula09/t9.html"
   },
   {
@@ -76,7 +78,7 @@
     "titulo": "Geopolítica e regionalização I",
     "imagem": "fotoIndex/3ano/aula10.png",
     "conteudo": "Ordem Bipolar; Guerra Fria; Imperialismo; Regionalização; OTAN.",
-    "linkTexto": "3ano/Textos3/Texto10/tt10.html",
+    "linkTexto": "3ano/Textos3/Texto10/tt10.html?id=310",
     "linkQuestoes": "3ano/Aulas3/Aula10/t10.html"
   },
   {
@@ -84,7 +86,7 @@
     "titulo": "Geopolítica e regionalização II",
     "imagem": "fotoIndex/3ano/aula11.png",
     "conteudo": "Nova Ordem Mundial; Blocos Econômicos; Nacionalismo; Novos conflitos Mundiais.",
-    "linkTexto": "3ano/Textos3/Texto11/tt11.html",
+    "linkTexto": "3ano/Textos3/Texto11/tt11.html?id=311",
     "linkQuestoes": "3ano/Aulas3/Aula11/t11.html"
   },
   {
@@ -100,7 +102,7 @@
     "titulo": "Agropecuária mundial",
     "imagem": "fotoIndex/3ano/aula13.png",
     "conteudo": "Práticas agrícolas; Condições socioterritoriais; Formas de acesso à terra; Técnicas e relações de trabalho; Sistemas agrícolas.",
-    "linkTexto": "3ano/Textos3/Texto13/tt13.html",
+    "linkTexto": "3ano/Textos3/Texto13/tt13.html?id=313",
     "linkQuestoes": "3ano/Aulas3/Aula13/t13.html"
   },
   {
@@ -108,7 +110,7 @@
     "titulo": "A urbanização mundial",
     "imagem": "fotoIndex/3ano/aula14.png",
     "conteudo": "Urbanização; Metropolização; População urbana; Cidades globais; Megacidades; Êxodo rural.",
-    "linkTexto": "3ano/Textos3/Texto14/tt14.html",
+    "linkTexto": "3ano/Textos3/Texto14/tt14.html?id=314",
     "linkQuestoes": "3ano/Aulas3/Aula14/t14.html"
   },
   {
@@ -116,7 +118,7 @@
     "titulo": "As redes do espaço geográfico",
     "imagem": "fotoIndex/3ano/aula15.png",
     "conteudo": "Fluxos internacionais: pessoas, informações, dinheiro e mercadorias; Empresas Multinacionais; Tecnologias da informação.",
-    "linkTexto": "3ano/Textos3/Texto15/tt15.html",
+    "linkTexto": "3ano/Textos3/Texto15/tt15.html?id=315",
     "linkQuestoes": "3ano/Aulas3/Aula15/t15.html"
   },
   {
@@ -124,7 +126,7 @@
     "titulo": "Comércio multilateral",
     "imagem": "fotoIndex/3ano/aula16.png",
     "conteudo": "Blocos comerciais; Organização Mundial do Comércio (OMC); Balança Comercial; Exportações e importações.",
-    "linkTexto": "3ano/Textos3/Texto16/tt16.html",
+    "linkTexto": "3ano/Textos3/Texto16/tt16.html?id=316",
     "linkQuestoes": "3ano/Aulas3/Aula16/t16.html"
   },
   {
@@ -132,7 +134,7 @@
     "titulo": "União Europeia I",
     "imagem": "fotoIndex/3ano/aula17.png",
     "conteudo": "Características geográficas da Europa; Processo de integração: CECA, MCE, UE; Tratado de Maastricht.",
-    "linkTexto": "3ano/Textos3/Texto17/tt17.html",
+    "linkTexto": "3ano/Textos3/Texto17/tt17.html?id=317",
     "linkQuestoes": "3ano/Aulas3/Aula17/t17.html"
   },
   {
@@ -140,7 +142,7 @@
     "titulo": "União Europeia II",
     "imagem": "fotoIndex/3ano/aula18.png",
     "conteudo": "Crise econômica; Conflitos separatistas (Bascos, Catalunha, Irlanda do Norte); Brexit; Imigração e Xenofobia.",
-    "linkTexto": "3ano/Textos3/Texto18/tt18.html",
+    "linkTexto": "3ano/Textos3/Texto18/tt18.html?id=318",
     "linkQuestoes": "3ano/Aulas3/Aula18/t18.html"
   },
   {
@@ -156,7 +158,7 @@
     "titulo": "América do Norte: Estados Unidos",
     "imagem": "fotoIndex/3ano/aula20.png",
     "conteudo": "Agricultura; Poder militar; Industrialização; Imigração; Geopolítica norte-americana.",
-    "linkTexto": "3ano/Textos3/Texto20/tt20.html",
+    "linkTexto": "3ano/Textos3/Texto20/tt20.html?id=320",
     "linkQuestoes": "3ano/Aulas3/Aula20/t20.html"
   },
   {
@@ -164,7 +166,7 @@
     "titulo": "América do Norte: Canadá e México",
     "imagem": "fotoIndex/3ano/aula21.png",
     "conteudo": "USMCA (antigo NAFTA); Canadá e o multiculturalismo; México: questão indígena e fronteiras.",
-    "linkTexto": "3ano/Textos3/Texto21/tt21.html",
+    "linkTexto": "3ano/Textos3/Texto21/tt21.html?id=321",
     "linkQuestoes": "3ano/Aulas3/Aula21/t21.html"
   },
   {
@@ -172,7 +174,7 @@
     "titulo": "Américas Central e do Sul",
     "imagem": "fotoIndex/3ano/aula22.png",
     "conteudo": "Aspectos gerais; Países Andinos; Economia; Mercosul; Embargo a Cuba.",
-    "linkTexto": "3ano/Textos3/Texto22/tt22.html",
+    "linkTexto": "3ano/Textos3/Texto22/tt22.html?id=322",
     "linkQuestoes": "3ano/Aulas3/Aula22/t22.html"
   },
   {
@@ -180,8 +182,10 @@
     "titulo": "Conflitos e política na América",
     "imagem": "fotoIndex/3ano/aula23.png",
     "conteudo": "Guerrilhas; Narcotráfico; Situação política na Venezuela, Cuba e Bolívia.",
-    "linkTexto": null,
-    "linkQuestoes": "3ano/Aulas3/Aula23/t23.html"
+    "linkTexto": "3ano/Textos3/Texto23/tt23.html?id=323",
+    "linkQuestoes": "3ano/Aulas3/Aula23/t23.html",
+    "bibliografia": ["SantosGlobalizacao", "Vesentini", "BNCC"],
+    "links": ["BBCGuerrilhas", "UNODCNarcotrafico", "ACNURVenezuela", "CNNBrasilCuba"]
   },
   {
     "id": 324,

@@ -176,34 +176,70 @@ const MonitorBrasil = {
 
 async function buscarIndicadoresBC() {
     try {
-        // 1. SELIC (Mantemos a série 1178 - Meta fixada pelo COPOM)
-        const urlSelic = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados/ultimos/1?formato=json";
+        // 1. SELIC META (Série 432 — definida pelo COPOM, é o número "oficial")
+        const urlSelic = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json";
         const resSelic = await fetch(urlSelic);
         const dataSelic = await resSelic.json();
 
         if (dataSelic.length > 0) {
-            document.getElementById('selic-valor').innerText = dataSelic[0].valor + "%";
+            const valorSelic = parseFloat(dataSelic[0].valor).toFixed(2).replace('.', ',');
+            document.getElementById('selic-valor').innerText = valorSelic + "%";
         }
 
         // 2. IPCA ACUMULADO 12 MESES (Série 13522)
-        // Esta série já entrega o valor percentual acumulado do ano/período
         const urlIpca = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados/ultimos/1?formato=json";
         const resIpca = await fetch(urlIpca);
         const dataIpca = await resIpca.json();
 
         if (dataIpca.length > 0) {
-            // O Banco Central entrega ex: "3.90". Vamos garantir que exiba bonito.
-            const valorAcumulado = parseFloat(dataIpca[0].valor).toFixed(2);
-            document.getElementById('ipca-valor').innerText = valorAcumulado.replace('.', ',') + "%";
+            const valorAcumulado = parseFloat(dataIpca[0].valor).toFixed(2).replace('.', ',');
+            document.getElementById('ipca-valor').innerText = valorAcumulado + "%";
         }
 
     } catch (err) {
         console.error("Erro Banco Central:", err);
-        // Fallbacks baseados na sua observação de 2025/2026
-        document.getElementById('selic-valor').innerText = "10,75%";
+        document.getElementById('selic-valor').innerText = "14,50%";
         document.getElementById('ipca-valor').innerText = "3,90%";
     }
 }
+
+
+
+async function carregarDadoDesemprego() {
+    const url = "https://servicodados.ibge.gov.br/api/v3/agregados/6381/periodos/-1/variaveis/4099?localidades=N1[all]";
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        // NAVEGAÇÃO EXATA:
+        // data[0] -> resultados[0] -> series[0] -> serie
+        const seriesObjeto = data[0].resultados[0].series[0].serie;
+        
+        // Pega a chave da data (ex: "202602")
+        const ultimaData = Object.keys(seriesObjeto)[0];
+        const taxa = seriesObjeto[ultimaData];
+
+      
+
+        const display = document.getElementById('desemprego-valor');
+        if (display && taxa !== undefined) {
+            // Formata para padrão brasileiro (vírgula)
+            display.innerText = `${taxa.replace('.', ',')}%`;
+            
+            // Lógica de cor (opcional - estilo Gamer)
+            const valorNumerico = parseFloat(taxa);
+            display.style.color = valorNumerico > 9 ? "#f44336" : "#4caf50";
+        }
+    } catch (error) {
+        console.error("Erro ao buscar desemprego:", error);
+        const display = document.getElementById('desemprego-valor');
+        if (display) display.innerText = "Erro API";
+    }
+}
+
+// Chame a função ao carregar a página
+
 
 
 // BOA PRÁTICA: Um único ponto de entrada para todas as funções
@@ -220,10 +256,12 @@ document.addEventListener('DOMContentLoaded', () => {
     buscarDadosMercado();
     buscarPetroleoBrent();
     buscarIndicadoresBC();
+    carregarDadoDesemprego();
 
     // Configura os intervalos de atualização de cada um
     setInterval(buscarDolar, 300000);           // 5 min
     setInterval(buscarDadosMercado, 3600000);    // 60 min
     setInterval(buscarPetroleoBrent, 3600000);   // 60 min
     setInterval(buscarIndicadoresBC, 86400000);  // 24 horas
+    setInterval(carregarDadoDesemprego, 86400000); // 24 horas
 });
