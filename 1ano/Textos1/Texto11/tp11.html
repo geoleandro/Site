@@ -1,1514 +1,795 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-   <title>1º ano - Texto 11 </title>
-
- 
-
-
-    <style>
-        .topico {
-            display: none;
-            
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-
-        .postit-tp9 {
-            background: #e6ff5b;
-
-            width: auto;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-
-       
-    </style>
-
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<link href="../../../estilos/index-estilo.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="../../../estilos/navbar.css" rel="stylesheet"/>
+<link href="../../../estilos/rpg-sistema.css" rel="stylesheet"/>
+<link href="../../../estilos/ModeloCss.css" rel="stylesheet"/>
+<link href="../../../fotoIndex/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"></script>
+<script defer="" src="../../../js/duvid-cache.js"></script>
+<script defer="" src="../../../js/duvid-db.js"></script>
+<script defer="" src="../../../js/duvid-audio.js"></script>
+<script defer="" src="../../../js/duvid-ui.js"></script>
+<script defer="" src="../../../js/duvid-core.js"></script>
+<script defer="" src="../../../estilos/jstextos-padrao.js"></script>
+<script defer="" src="../../../js/abrirmenu.js"></script>
+<script defer="" src="../../../js/carregar.js"></script>
+<script defer="" src="../../../js/aulas-geral.js"></script>
+<title>1º ano - Texto 11</title>
 </head>
-
-<body onload="paragrafotexto()">
-
-
-
-    <div class="topico">
-
-      
-    <div class="topico">
-
-        <div class="centerBar w3-padding">
-			<!-- Navigation (Stays on Top) -->
-			<div class="w3-top w3-bar w3-black  larguraBar ">
-				<a href="../../../Duvid1Ano.html" class=" w3-button  margemTop w3-large ">1º ano</a>
-				<span class="w3-bar-item  margemTop" id="notaFixa"></span>
-				<span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
-						width="32" height="32"></span>
-			</div>
-		</div>
-
-		<div class="w3-padding-top-48">
-			<div class="w3-white larguraBar w3-padding ladoDireito">
-
-				<div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-						id="decrease-font" title="Diminuir fonte">A -</button></div>
-				<div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-						id="increase-font" title="Aumentar fonte">A +</button></div>
-			</div>
-		</div>
-
-
-        <h1 id="h1"> Texto 11 – Dinâmica externa do relevo </h1>
-
-
-        <p><strong> Conteúdo:</strong>: Relevo; agentes externos do relevo; água, gelo, vento, gravidade; Intemperismo:
-            físico e químico; Erosão: hídrica, marinha, glacial, eólica, laminar, ravina, voçoroca, deslizamento;
-            sedimentação.
-
-        </p>
-
-        <p><strong>Objetivo:</strong> Entender o papel das forças externas na configuração das estruturas e formas do
-            relevo terrestre. Distinguir entre intemperismo físico e químico e seus fatores. Identificar os fatores do
-            intemperismo. Descrever os diferentes tipos de erosão. </p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-       <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Introdução </h2>
-
-
-        <p> <span class="primeiraLetra">N</span>a aula passada, conhecemos alguns processos relacionados a dinâmica
+<body>
+<div id="header-placeholder"></div>
+<div class="w3-margin-top" id="aviso-status"></div>
+<main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+<div class="topico">
+<div class="w3-padding-top-48"></div>
+<h1 id="h1"></h1>
+<!-- Futuro audio -->
+<div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+<div class="w3-row">
+<div class="w3-col s2 m1 w3-center">
+<i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+</div>
+<div class="w3-col s10 m11 w3-padding-small">
+<b class="fontePixel">OUVIR AULA</b>
+<p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+</div>
+</div>
+<audio controls="" style="width:100%; margin-top: 10px;">
+<source id="audioSource" src="" type="audio/mp3"/>
+</audio>
+</div>
+<div class="w3-container w3-padding-16">
+<p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+<p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+</div>
+<button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+<i class="fa fa-play"></i> Iniciar Aula
+            </button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Introdução </h2>
+<p> <span class="primeiraLetra">N</span>a aula passada, conhecemos alguns processos relacionados a dinâmica
             interna do relevo, como o tectonismo, vulcanismo e os terremotos. </p>
-
-        <p> Nesta lição, veremos os agentes externos que moldam a superfície terrestre (água, vento, geleiras etc.), ao
+<p> Nesta lição, veremos os agentes externos que moldam a superfície terrestre (água, vento, geleiras etc.), ao
             provocar alterações físicas e químicas nas rochas.</p>
-
-        <p>Ao final, você compreenderá como funciona o intemperismo, o processo de erosão, transporte e sedimentação e a
+<p>Ao final, você compreenderá como funciona o intemperismo, o processo de erosão, transporte e sedimentação e a
             importância do conhecimento do relevo para a sociedade. </p>
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-    
-
-    <div class="topico">
-        <div class="w3-pale-yellow">
-            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
-
-            <h3>1. Explique o que são os agentes externos do relevo e dê exemplos de como eles afetam a superfície
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<div class="w3-pale-yellow">
+<h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+<h3>1. Explique o que são os agentes externos do relevo e dê exemplos de como eles afetam a superfície
                 terrestre.</h3>
-            <h3>2. Defina intemperismo e descreva as diferenças entre intemperismo físico e químico.</h3>
-            <h3>3. Como o clima influencia o processo de intemperismo? Dê exemplos.</h3>
-            <h3>4. Explique como o processo de erosão está relacionado ao intemperismo.</h3>
-            <h3>5. Dê exemplos de paisagens formadas pelo intemperismo e explique o processo envolvido.</h3>
-            <h3>6. O que são ravinas e voçorocas? Como elas se formam?</h3>
-            <h3>7. Como a ação dos seres vivos pode contribuir para o intemperismo físico?</h3>
-            <h3>8. Qual a importância do processo de sedimentação para a formação de novas paisagens?</h3>
-            <h3>9. Descreva como ocorre a erosão eólica e onde ela é mais comum.</h3>
-            <h3>10. Qual é o impacto da erosão no uso do solo para a agricultura?</h3>
-        </div>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h2> O que são os agentes externos do relevo? </h2>
-
-
-
-
-        <p>Aprendemos que o relevo é basicamente o conjunto das diversas configurações da crosta terrestre. Entretanto,
+<h3>2. Defina intemperismo e descreva as diferenças entre intemperismo físico e químico.</h3>
+<h3>3. Como o clima influencia o processo de intemperismo? Dê exemplos.</h3>
+<h3>4. Explique como o processo de erosão está relacionado ao intemperismo.</h3>
+<h3>5. Dê exemplos de paisagens formadas pelo intemperismo e explique o processo envolvido.</h3>
+<h3>6. O que são ravinas e voçorocas? Como elas se formam?</h3>
+<h3>7. Como a ação dos seres vivos pode contribuir para o intemperismo físico?</h3>
+<h3>8. Qual a importância do processo de sedimentação para a formação de novas paisagens?</h3>
+<h3>9. Descreva como ocorre a erosão eólica e onde ela é mais comum.</h3>
+<h3>10. Qual é o impacto da erosão no uso do solo para a agricultura?</h3>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> O que são os agentes externos do relevo? </h2>
+<p>Aprendemos que o relevo é basicamente o conjunto das diversas configurações da crosta terrestre. Entretanto,
             essa superfície é a morada do homem, diferenciada por processos naturais e socais. </p>
-
-        <p>A importância do estudo do espaço terrestre no atual período é fundamental, uma vez que atingimos um
+<p>A importância do estudo do espaço terrestre no atual período é fundamental, uma vez que atingimos um
             conhecimento total do Planeta, graças as novas tecnologias (Sensoriamento Remoto, Geoprocessamento) em um
             período marcado pela ciência, técnica e informação. </p>
-
-        <p>O que o relevo tem a ver com tudo isso? O relevo é feito de rochas, assim como nossas calçadas, pontes,
+<p>O que o relevo tem a ver com tudo isso? O relevo é feito de rochas, assim como nossas calçadas, pontes,
             moradias e estas se degradam ao longo do tempo. </p>
-
-
-        <p>Nós dependemos dos materiais disponíveis na superfície terrestre para diversas atividades humanas, como o
+<p>Nós dependemos dos materiais disponíveis na superfície terrestre para diversas atividades humanas, como o
             cultivo do solo, construção civil ou desenvolvimento da indústria. </p>
-
-
-        <p>Por meio da ação das águas, do vento, do mar, das geleiras, dos seres vivos etc., a paisagem terrestre é
+<p>Por meio da ação das águas, do vento, do mar, das geleiras, dos seres vivos etc., a paisagem terrestre é
             modelada e alterada. </p>
-
-
-        <p>Esses são os <strong>agentes externos do relevo</strong>. Eles são responsáveis por deteriorar e desintegrar
+<p>Esses são os <strong>agentes externos do relevo</strong>. Eles são responsáveis por deteriorar e desintegrar
             os materiais da Terra, na superfície ou próxima a ela, através de sua quebra física e alteração química.
         </p>
-
-        <p>Trata-se do <strong>intemperismo</strong>, que age sobre a rocha desagregando-a para formar peças menores.
+<p>Trata-se do <strong>intemperismo</strong>, que age sobre a rocha desagregando-a para formar peças menores.
             Alguns minerais são alterados ou dissolvidos dando origem a outras formações. Exemplo de intemperismo pode
             ser visto na <span onclick="Aparecer('imagem1','citacao1')"><mark>figura abaixo:</mark></span> </p>
-
-
-
-
-        <div class="area"><img id="imagem1" src="tp11f1.png" alt="tp11f1" class="w3-mobile" style=display:none></div>
-
-
-        <span class="citacao" id="citacao1" style=display:none> O Parque Estadual de Vila Velha é um sítio geológico
+<div class="area"><img alt="tp11f1" class="w3-mobile" id="imagem1" src="tp11f1.png" style="display:none"/></div>
+<span class="citacao" id="citacao1" style="display:none"> O Parque Estadual de Vila Velha é um sítio geológico
             situado no município brasileiro de Ponta Grossa, do qual é a principal atração turística. Fonte: Wikipedia.
         </span>
-
-
-        <p>Esse exemplo mostra um tipo de rocha, o Arenito esculpido pela força do vento e das chuvas ao longo de
+<p>Esse exemplo mostra um tipo de rocha, o Arenito esculpido pela força do vento e das chuvas ao longo de
             milhões de anos. Esse alicerce de rocha sedimentar sofreu intemperismo com a exposição e o desgaste por
             milhares ou milhões de anos. </p>
-
-
-        <p> O transporte do material erodido das rochas é chamado de <strong>erosão</strong> e pode ser carregado para
+<p> O transporte do material erodido das rochas é chamado de <strong>erosão</strong> e pode ser carregado para
             outro local e finalmente depositado como <strong>sedimento</strong>. O chão onde pisamos pode ter sido, no
             passado, montanha desgastada ou erodida dependendo do local no Planeta em que vivemos.</p>
-
-
-        <p>Veremos em detalhes cada um desses processos responsáveis por alterar a configuração do relevo terrestre.
+<p>Veremos em detalhes cada um desses processos responsáveis por alterar a configuração do relevo terrestre.
         </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-
-
-        <p class="caixa">Agora é com você!</p>
-
-        <p> Faça uma lista em seu caderno sobre o que já ouviu falar sobre esse assunto: intemperismo, erosão e seus
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<p class="caixa">Agora é com você!</p>
+<p> Faça uma lista em seu caderno sobre o que já ouviu falar sobre esse assunto: intemperismo, erosão e seus
             tipos, deslizamentos de terra. </p>
-
-        <p>O que gostaria de saber mais? </p>
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste sua observação!</p>
-
-        <h4>O que aconteceu com esse automóvel enferrujado sob o ponto de vista dos agentes externos do relevo?</h4>
-
-
-        <p class="area marge"><img src="tp11f19.png" alt="tp11f19" class="w3-mobile"></p>
-
-        <div class="margemAbaixo"><span class="citacao"> Fonte: https://pixabay.com/pt/photos/carro-velho-carro-enferrujado-704560/ </span></div>
-
-        <button class="desativar1 p4 area w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">a)
-            ele não pagou os impostos do DETRAN; (foi multado e guinchado);</button>
-
-
-        <button class="desativar1 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">b)
-            ele sofreu intemperismo físico (desagregação);</button>
-
-
-        <button class="desativar1 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'boa, quando o ferro entra em contato com o ar, ele oxida, perde elétrons, ganhou seu primeiro globinho','1'); this.style.backgroundColor='lightgreen'">c)
-            ele sofreu intemperismo químico (oxidação).</button>
-
-
-
-
-
-
-
-        <p id="resp1"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Esse tipo de relevo chamado de falésia sempre apresentou esse formato? Quais agentes contribuíram para tal
-            resultado?</h4>
-
-        <p class="area"><img src="tp11f20.png" alt="tp11f20" class="w3-mobile"></p>
-
-        <div class="margemAbaixo">
-            <span class="citacao">Falésia, Normandia, França.
-                Fonte: https://pixabay.com/pt/
-            </span>
-        </div>
-
-
-        <button class="desativar2 p4 area w3-padding w3-margin margemAcima"
-            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            a) Não, geleiras moldaram esse relevo.
-        </button>
-
-
-        <button class="desativar2 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            b) Sim, surgiu direto do magma.
-        </button>
-
-        <button class="desativar2 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'certo, já vamos descobrir como a erosão eólica gerou essas formas de relevo','1'); this.style.backgroundColor='lightgreen'">
-
-            c) Não, agentes como o vento e as ondas do mar esculpiram esse formato.
-        </button>
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding-small fontePixel">
-
-            <h4 class="fontePixel">Questione a realidade!</h4>
-            <ul>
-                <li>
+<p>O que gostaria de saber mais? </p>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>O que aconteceu com esse automóvel enferrujado sob o ponto de vista dos agentes externos do relevo?</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p1a" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1a">
+<span>a) ele não pagou os impostos do DETRAN; (foi multado e guinchado);</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1b" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1b">
+<span>b) ele sofreu intemperismo físico (desagregação);</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1c" name="pergunta1" type="radio" value="correto"/>
+<label class="card-opcao" for="p1c">
+<span>c) ele sofreu intemperismo químico (oxidação).</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'boa, quando o ferro entra em contato com o ar, ele oxida, perde elétrons, ganhou seu primeiro globinho', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp1"></p>
+<div class="area w3-center">
+<img height="64" id="globinho1" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Esse tipo de relevo chamado de falésia sempre apresentou esse formato? Quais agentes contribuíram para tal
+            resultado?</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p2a" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2a">
+<span>a) Não, geleiras moldaram esse relevo.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2b" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2b">
+<span>b) Sim, surgiu direto do magma.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2c" name="pergunta2" type="radio" value="correto"/>
+<label class="card-opcao" for="p2c">
+<span>c) Não, agentes como o vento e as ondas do mar esculpiram esse formato.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'certo, já vamos descobrir como a erosão eólica gerou essas formas de relevo', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp2"></p>
+<div class="area w3-center">
+<img height="64" id="globinho2" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<div class="w3-card-4 w3-pale-yellow w3-padding-small fontePixel">
+<h4 class="fontePixel">Questione a realidade!</h4>
+<ul>
+<li>
                     Como o intemperismo físico afeta a superfície da Terra?
                 </li>
-
-                <li>
+<li>
                     Como os processos químicos dissolvem as rochas?
                 </li>
-
-                <li>
+<li>
                     Qual o resultado do intemperismo?
                 </li>
-
-                <li>
+<li>
                     Quem é o responsável por levar o material intemperizado de um local para o outro?
                 </li>
-
-                <li>
+<li>
                     Como a ação do vento, água, gelo, e organismos vivos atuam na modificação das paisagens?
                 </li>
-
-
-            </ul>
-
-        </div>
-
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-        <br>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h2> Intemperismo</h2>
-
-
-
-
-        <p>É comum dizer que “nada resiste ao tempo”. Podemos acrescentar que nem mesmo as rochas, apesar de sua dureza
+</ul>
+</div>
+<button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+<br/>
+</div>
+<div class="topico">
+<h2> Intemperismo</h2>
+<p>É comum dizer que “nada resiste ao tempo”. Podemos acrescentar que nem mesmo as rochas, apesar de sua dureza
             e resistência. </p>
-
-        <p>Não há material que não seja suscetível (capaz ou passível de receber) ao intemperismo, também chamado de
+<p>Não há material que não seja suscetível (capaz ou passível de receber) ao intemperismo, também chamado de
             <strong>meteorização</strong>. A deterioração das rochas ou de qualquer coisa na Terra seria uma resposta
             desses materiais às mudanças de ambiente nas quais estão inseridas.
         </p>
-
-        <p>Estruturas metálicas, carros, granito, monumentos, podem enferrujar-se, enfraquecer-se ou esfacelar-se quando
+<p>Estruturas metálicas, carros, granito, monumentos, podem enferrujar-se, enfraquecer-se ou esfacelar-se quando
             expostos à água ou gases da atmosfera, em um deserto, geleira ou região tropical. </p>
-
-
-        <p>Isso tudo é o intemperismo. Esse processo prepara a rocha para a erosão ao enfraquecê-la ou quebrá-la. Ele
+<p>Isso tudo é o intemperismo. Esse processo prepara a rocha para a erosão ao enfraquecê-la ou quebrá-la. Ele
             pode ser, basicamente, de dois tipos: intemperismo <strong>físico</strong> ou químico. No primeiro ocorrem
             mudanças físicas dos materiais da Terra, mas não mudam sua composição; Já no segundo caso, os minerais das
             rochas são quimicamente dissolvidos. </p>
-
-
-        <p>Os intemperismos físico e químico atuam juntos, reforçando um ao outro. Enquanto o físico quebra o material
+<p>Os intemperismos físico e químico atuam juntos, reforçando um ao outro. Enquanto o físico quebra o material
             rochoso em pedaços menores, seu parceiro nesse processo, o químico, pode dissolvê-lo sem grandes problemas.
         </p>
-
-
-        <h3>Fatores do intemperismo </h3>
-
-        <p>Existem fatores que influenciam e controlam a forma de atuação do intemperismo. </p>
-
-        <p> O primeiro deles é o <strong>clima</strong>, representado pelas mudanças de temperaturas e na distribuição
+<h3>Fatores do intemperismo </h3>
+<p>Existem fatores que influenciam e controlam a forma de atuação do intemperismo. </p>
+<p> O primeiro deles é o <strong>clima</strong>, representado pelas mudanças de temperaturas e na distribuição
             das chuvas. Depois temos o <strong>relevo</strong>, que dependendo da sua inclinação afeta diretamente a
             infiltração de água pluviais (chuvas). O tipo de <strong>fauna</strong> e <strong>flora</strong> também
             interfere no grau de intemperismo, pois eles fornecem matéria orgânica para relações químicas. O tipo de
             <strong>rocha matriz</strong>, devido a sua resistência aos processos intempéricos. E o
             <strong>tempo</strong> de exposição das rochas aos agentes externos. (Fonte: Teixeira (2009, adaptado).
         </p>
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h3> Intemperismo físico</h3>
-
-
-
-
-        <p>O intemperismo físico ou mecânico fratura a rocha em pequenos pedaços sem promover alteração química de seus
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h3> Intemperismo físico</h3>
+<p>O intemperismo físico ou mecânico fratura a rocha em pequenos pedaços sem promover alteração química de seus
             minerais. </p>
-
-        <p> O granito, por exemplo, é uma rocha muito resistente, mas pode ser rompida pelas forças físicas como
+<p> O granito, por exemplo, é uma rocha muito resistente, mas pode ser rompida pelas forças físicas como
             congelamento, variação da temperatura em áreas desérticas, liberação de pressão ou por meio da atividade
             orgânica, isto é, ligado a ação de seres vivos diretamente nas rochas.</p>
-
-        <p>A variação de temperatura, como um dos fatores do intemperismo, transforma as rochas na medida em que elas
+<p>A variação de temperatura, como um dos fatores do intemperismo, transforma as rochas na medida em que elas
             são aquecidas e depois resfriadas. </p>
-
-        <p>Em áreas desérticas a diferença de temperaturas entre o dia e a noite é muito alta, podendo variar em até 30º
+<p>Em áreas desérticas a diferença de temperaturas entre o dia e a noite é muito alta, podendo variar em até 30º
             C ou até mais. (essa diferença é chamada de <span onclick="Aparecer('imagem2','citacao2')"><mark>amplitude
                     térmica</mark></span>). </p>
-
-
-
-
-        <div class="area"><img id="imagem2" src="tp11f2.png" alt="tp11f2" class="w3-mobile" style=display:none></div>
-
-
-        <span class="citacao" id="citacao2" style=display:none> Fonte: https://novaescola.org.br/
+<div class="area"><img alt="tp11f2" class="w3-mobile" id="imagem2" src="tp11f2.png" style="display:none"/></div>
+<span class="citacao" id="citacao2" style="display:none"> Fonte: https://novaescola.org.br/
             conteudo/2280/que-fatores-interferem-na-amplitude-termica.
 
         </span>
-
-
-
-
-
-        <p>Essa alternância de calor gera uma tensão e causa uma fratura nas rochas, bem como a queima de florestas e o,
+<p>Essa alternância de calor gera uma tensão e causa uma fratura nas rochas, bem como a queima de florestas e o,
             intenso calor provoca expansão e contração nas rochas. </p>
-
-
-        <p>Já nas áreas de desertos frios, como o continente Antártico, à água congela e descongela de forma repetida
+<p>Já nas áreas de desertos frios, como o continente Antártico, à água congela e descongela de forma repetida
             nas juntas ou <span onclick="Aparecer('imagem3','citacao3')"><mark>rachaduras das rochas</mark></span>. </p>
-
-
-
-        <div class="area"><img id="imagem3" src="tp11f3.png" alt="tp11f3" class="w3-mobile" style=display:none></div>
-
-
-        <span class="citacao" id="citacao3" style=display:none> Bloco de gnaisse fraturado pela ação do gelo nas
+<div class="area"><img alt="tp11f3" class="w3-mobile" id="imagem3" src="tp11f3.png" style="display:none"/></div>
+<span class="citacao" id="citacao3" style="display:none"> Bloco de gnaisse fraturado pela ação do gelo nas
             fissuras (Antártica). Fonte: Teixeira (2009, p. 142).
 
         </span>
-
-        <p> Na figura acima podemos observar o processo de abertura de fissuras, pois a água ao congelar aumenta seu
+<p> Na figura acima podemos observar o processo de abertura de fissuras, pois a água ao congelar aumenta seu
             volume (em cerca de 9%), se expande contra as paredes das rochas, causando as chamadas cunhas de gelo.</p>
-
-        <p> Outro fator do intemperismo está relacionado a atividades dos organismos vivos. O exemplo mais marcante diz
+<p> Outro fator do intemperismo está relacionado a atividades dos organismos vivos. O exemplo mais marcante diz
             respeito a pressão exercida pelas <span onclick="Aparecer('imagem5','citacao5')"><mark>raízes das plantas,
                 </mark></span> ao se infiltrarem nas rochas ocasionando fraturas. Também participam desse processo
             animais, plantas e bactérias. Animais que vivem em tocas, répteis ou roedores, dentre outros, misturam o
             solo e trazem material das profundezas para a superfície para sofrerem intemperismo. Já as bactérias, algas
             e fungos penetram nas fraturas e produzem ácidos responsáveis pela dissolução dos minerais, o material de
             que são feitas as rochas.</p>
-
-
-
-        <div class="area"><img id="imagem5" src="tp11f5.png" alt="tp11f5" class="w3-mobile" style=display:none></div>
-
-        <span class="citacao" id="citacao5" style=display:none> As raízes das plantas aceleram o intemperismo físico.
+<div class="area"><img alt="tp11f5" class="w3-mobile" id="imagem5" src="tp11f5.png" style="display:none"/></div>
+<span class="citacao" id="citacao5" style="display:none"> As raízes das plantas aceleram o intemperismo físico.
             Fonte:
             https://www.geocaching.com/geocache
             /GC1JMFF_biological-weathering. </span>
-
-
-
-        <p>Além de fissuras e fraturas causadas por expansão do gelo ou variação de calor, temos o intemperismo por
+<p>Além de fissuras e fraturas causadas por expansão do gelo ou variação de calor, temos o intemperismo por
             <strong> <span onclick="Aparecer('imagem6','citacao6')"><mark>esfoliação</mark></span></strong>. Trata-se de
             um processo de descamação das rochas tal como uma grande cebola ou quando grandes blocos são destacados da
             parede rochosa.
         </p>
-
-
-
-        <div class="area"><img id="imagem6" src="tp11f6.png" alt="tp11f6" class="w3-mobile" style=display:none></div>
-
-        <span class="citacao" id="citacao6" style=display:none> Placas esfoliadas de granito, em Half Dome no Parque
+<div class="area"><img alt="tp11f6" class="w3-mobile" id="imagem6" src="tp11f6.png" style="display:none"/></div>
+<span class="citacao" id="citacao6" style="display:none"> Placas esfoliadas de granito, em Half Dome no Parque
             Nacional de Yosemite, EUA na figura acima. Nesta, uma alteração esferoidal tal como as camadas de um
             repolho. Fonte: Wikipedia e Press (2006). </span>
-
-        <p>Resumindo: o intemperismo físico abre o caminho e facilita o intemperismo químico. </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-    <div class="topico">
-
-
-
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-
-        <form id="quiz" name="quiz">
-
-            <h4> Um exercício para reforçar alguns conceitos.</h4>
-
-
-            <p>Escreva o nome do processo de quebra e que promove alteração química e física das rochas na superfície
-                terrestre.
-            </p>
-
-            <div class="w3-margin"><input class="input" id="q1a" type="text" name="q1a" value=""> </div>
-
-
-            <p id="resp1a"></p>
-
-
-            <input class="btnShow" id="buttonConferirQ1" type="button" value="Conferir"
-                onclick="PerguntasAbertas(1,'resp1a','buttonConferirQ1','globinho1a')">
-
-
-
-
-
-            <div class="area">
-                <p>
-                    <img src="../../../fotoIndex/globinhoPe.png" id="globinho1a" style="display:none" alt="globinho8"
-                        width="64" height="64">
-                </p>
-            </div>
-
-
-
-            <p class="margemAcima">Escreva o nome do processo de remover os materiais que foram intemperizado de um
+<p>Resumindo: o intemperismo físico abre o caminho e facilita o intemperismo químico. </p>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-aberta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO ABERTA</p>
+<h4 class="fontePixel"><b>Um exercício para reforçar alguns conceitos.</b></h4>
+<p>Escreva o nome do processo de quebra e que promove alteração química e física das rochas na superfície
+                terrestre.</p>
+<div class="w3-margin">
+<input class="input" id="q1a" placeholder="sua resposta..." type="text"/>
+</div>
+<p class="w3-center w3-padding" id="resp1a"></p>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarAberta('q1a', 'intemperismo', 'resp1a', this, 'globinho1a')">
+            Conferir
+        </button>
+</div>
+<div class="area w3-center">
+<img height="64" id="globinho1a" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+<p>Escreva o nome do processo de remover os materiais que foram intemperizado de um
                 local para o
                 outro através do vento, gelo ou água.</p>
-
-
-
-            <div class="w3-margin"><input class="input" id="q1b" type="text" name="q1b" value=""></div>
-
-
-            <p id="resp1b"></p>
-
-
-            <input class="btnShow" id="buttonConferirQ1b" type="button" value="Conferir"
-                onclick="PerguntasAbertas(2,'resp1b','buttonConferirQ1b','globinho1b')">
-
-
-
-
-            <div class="area">
-                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1b" style="display:none" alt="globinho9"
-                        width="64" height="64"> </p>
-            </div>
-
-
-
-
-
-        </form>
-
-
-
-        <button class="btnHide" id="buttonq1d"
-            onclick="MostrarProximo(this); this.style.display='none'; VerificaInteiro('resp1b')">Proximo</button>
-
-
-        <hr>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-        <h3>Intemperismo químico </h3>
-
-
-
-
-        <p>As rochas sofrem alterações químicas quando seus minerais entram em contato com a água e o ar, com dióxido de
+<div class="w3-margin">
+<input class="input" id="q1b" placeholder="sua resposta..." type="text"/>
+</div>
+<p class="w3-center w3-padding" id="resp1b"></p>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarAberta('q1b', 'erosão', 'resp1b', this, 'globinho1b')">
+            Conferir
+        </button>
+</div>
+<div class="area w3-center">
+<img height="64" id="globinho1b" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+<div class="w3-margin-top">
+<button class="btnHide" onclick="MostrarProximo(this)" style="display:none">
+                Próximo ➜
+            </button>
+</div>
+</div>
+<div class="topico">
+<h3>Intemperismo químico </h3>
+<p>As rochas sofrem alterações químicas quando seus minerais entram em contato com a água e o ar, com dióxido de
             carbono e chuvas ácidas. </p>
-
-        <p> Elas mudam de composição e seus minerais são literalmente dissolvidos, tal como uma pedra de sal em contato
+<p> Elas mudam de composição e seus minerais são literalmente dissolvidos, tal como uma pedra de sal em contato
             com a água. </p>
-
-        <p> Além de dissolução, pode ocorrer a formação de novos minerais diferentes daqueles da rocha original.</p>
-
-
-        <p>O tipo de rocha vai determinar os efeitos do intemperismo químico. Alguns minerais como a calcita, que é
+<p> Além de dissolução, pode ocorrer a formação de novos minerais diferentes daqueles da rocha original.</p>
+<p>O tipo de rocha vai determinar os efeitos do intemperismo químico. Alguns minerais como a calcita, que é
             composta por carbonato de cálcio, uma rocha sedimentar, pode se decompor completamente em água acidificada.
         </p>
-
-
-        <p>Como que a água se torna ácida? </p>
-
-
-        <p> Estamos acostumados com refrigerantes gaseificados, eles nada mais são do que água com gás sob pressão. Esse
+<p>Como que a água se torna ácida? </p>
+<p> Estamos acostumados com refrigerantes gaseificados, eles nada mais são do que água com gás sob pressão. Esse
             gás é e o dióxido de carbono (CO2) e quando combinado com a água forma o <strong>ácido carbônico</strong>.
             Quando abrimos a garrafa com o refrigerante o gás dissolvido efervesce (se transfere para o ar) e a bebida
             se torna
             “choca” e levemente ácida.</p>
-
-        <p>O material orgânico em decomposição também produz dióxido de carbono nos solos, dessa forma a água
+<p>O material orgânico em decomposição também produz dióxido de carbono nos solos, dessa forma a água
             subterrânea é levemente ácida. </p>
-
-        <p>Em terrenos calcários, em consequência dessa acidez do solo, pode levar à formação dos chamados relevos
-            cársticos, ou seja, a presença de <span
-                onclick="Aparecer('imagem7','citacao7')"><mark>cavernas</mark></span>. </p>
-
-
-
-        <div class="area"><img id="imagem7" src="tp11f7.png" alt="tp11f7" class="w3-mobile" style=display:none></div>
-
-
-        <span class="citacao" id="citacao7" style=display:none> Paisagem típica de relevo cárstico. Fonte: Wikipedia.
+<p>Em terrenos calcários, em consequência dessa acidez do solo, pode levar à formação dos chamados relevos
+            cársticos, ou seja, a presença de <span onclick="Aparecer('imagem7','citacao7')"><mark>cavernas</mark></span>. </p>
+<div class="area"><img alt="tp11f7" class="w3-mobile" id="imagem7" src="tp11f7.png" style="display:none"/></div>
+<span class="citacao" id="citacao7" style="display:none"> Paisagem típica de relevo cárstico. Fonte: Wikipedia.
         </span>
-
-
-        <h3> Como as cavernas são formadas?</h3>
-
-
-        <p>A água próxima a superfície ou no subsolo pode dissolver o calcário e formar cavidades, especialmente se a
+<h3> Como as cavernas são formadas?</h3>
+<p>A água próxima a superfície ou no subsolo pode dissolver o calcário e formar cavidades, especialmente se a
             água for ácida. O sistema de cavernas é, geralmente, formado a partir do calcário porque outros tipos de
             rocha não são facilmente dissolvidos. Observe a <span onclick="Aparecer('imagem8','citacao8')"><mark>figura
                     abaixo:</mark></span> </p>
-
-
-
-
-
-        <div class="area"><img id="imagem8" src="tp11f8.png" alt="tp11f8" class="w3-mobile" style=display:none></div>
-
-
-        <span class="citacao" id="citacao8" style=display:none> Fonte: Reynolds (2017, p.428). </span>
-
-        <p>O número 1 representa a rocha calcário constituída, principalmente, pelo mineral calcita (carbonato de
+<div class="area"><img alt="tp11f8" class="w3-mobile" id="imagem8" src="tp11f8.png" style="display:none"/></div>
+<span class="citacao" id="citacao8" style="display:none"> Fonte: Reynolds (2017, p.428). </span>
+<p>O número 1 representa a rocha calcário constituída, principalmente, pelo mineral calcita (carbonato de
             cálcio), relativamente solúvel em água ácida. A água da chuva é um pouco ácida poque ela reage com dióxido
             de carbono, enxofre e material orgânico. Quando a água reage com a calcita no calcário, ela o dissolve.
             Ainda pode ser ajudada pelos ácidos produzidos pelos micróbios no fundo do solo, como já visto. </p>
-
-        <p> O número 2 indica que a água subterrânea dissolve o calcário, muitas vezes começando ao longo de fraturas e
+<p> O número 2 indica que a água subterrânea dissolve o calcário, muitas vezes começando ao longo de fraturas e
             limites entre as camadas e, em seguida, vai progressivamente ampliando-os ao longo do tempo. As cavidades
             abertas tornam-se maiores e mais extensas, permitindo que mais água passe, o que acelera a dissolução e
             alargamento. Se as aberturas se tornam muito grandes, elas podem acomodar piscinas subterrâneas ou córregos.
         </p>
-
-        <p>O número 3 aponta que muitas cavernas se formam abaixo do lençol freático e o processo pode levar milhões de
+<p>O número 3 aponta que muitas cavernas se formam abaixo do lençol freático e o processo pode levar milhões de
             anos. O resultado é uma rede de cavernas interconectadas através de túneis de calcário. Se houver um
             rompimento dessa piscina de água subterrânea, a água pode ser drenada para fora dos túneis e secar parte do
             sistema de cavernas. </p>
-
-
-        <p>E por fim, o número 4 mostra que se parte do teto da caverna desabar, ela será exposta ao ar e secará ainda
+<p>E por fim, o número 4 mostra que se parte do teto da caverna desabar, ela será exposta ao ar e secará ainda
             mais. Essa quebra do telhado forma o chamado “sumidouro” na superfície. </p>
-
-
-        <p>As cavernas são ótimos e interessantes locais para se explorar. Algumas possuem passagens estreitas
+<p>As cavernas são ótimos e interessantes locais para se explorar. Algumas possuem passagens estreitas
             conectando outras câmaras ou permitindo encontrar imensas cavidades. </p>
-
-        <p>As formas mais conhecidas das cavernas estão relacionadas a dissolução e precipitação da calcita formando
+<p>As formas mais conhecidas das cavernas estão relacionadas a dissolução e precipitação da calcita formando
             as<span onclick="Aparecer('imagem9','citacao9')"><mark> estalagmites e as estalactites.</mark></span> </p>
-
-
-
-        <div class="area"><img id="imagem9" src="tp11f9.png" alt="tp11f9" class="w3-mobile" style=display:none></div>
-
-
-        <span class="citacao" id="citacao9" style=display:none> Fonte: https://escolanacaverna.com.br/
+<div class="area"><img alt="tp11f9" class="w3-mobile" id="imagem9" src="tp11f9.png" style="display:none"/></div>
+<span class="citacao" id="citacao9" style="display:none"> Fonte: https://escolanacaverna.com.br/
             o-que-e-caverna e https://www.ufrgs.br/paleotocas/Origem.htm.</span>
-
-
-        <p>Além das cavernas, as construções antigas não escapam do poder do intemperismo químico. <span
-                onclick="Aparecer('imagem10','citacao10')"><mark>Veja:</mark></span> </p>
-
-
-
-
-        <div class="area"><img id="imagem10" src="tp11f10.png" alt="tp11f10" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <p class="citacao" id="citacao10" style=display:none> Alteração nos blocos e ruínas de calcário nas colunas
+<p>Além das cavernas, as construções antigas não escapam do poder do intemperismo químico. <span onclick="Aparecer('imagem10','citacao10')"><mark>Veja:</mark></span> </p>
+<div class="area"><img alt="tp11f10" class="w3-mobile" id="imagem10" src="tp11f10.png" style="display:none"/>
+</div>
+<p class="citacao" id="citacao10" style="display:none"> Alteração nos blocos e ruínas de calcário nas colunas
             estilo grego de 2.500 anos, em Segesta, Itália. Fonte: Wikiwand. </p>
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Quais fatores abaixo não contribuem para o aumento das taxas de intemperismo?</h4>
-
-        <button class="desativar3 p4 area w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            a) clima.
-
-        </button>
-
-
-        <button class="desativar3 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            b) tipo de rocha.
-
-        </button>
-
-
-
-        <button class="desativar3 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'certo, o fóssil é, na realidade, um fenônemo que se contrapõe ao intemperismo','1'); this.style.backgroundColor='lightgreen'">
-
-            c) fósseis.
-
-        </button>
-
-
-
-
-
-
-        <p id="resp3"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Aplique seu conhecimento</p>
-
-        <h4>O que ocorre com o intemperismo em climas nas regiões tropicais?</h4>
-
-
-        <button class="desativar4 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'beleza, o intemperismo químico aumenta devido a quantidade de chuva','1'); this.style.backgroundColor='lightgreen'">
-
-            a) ocorre um aumento da taxa de intemperismo.
-
-        </button>
-
-        <button class="desativar4 p4 area w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
-
-            b) ocorre uma diminuição da taxa de intemperismo.
-
-        </button>
-
-
-
-
-
-        <button class="desativar4 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
-
-            c) ocorre uma estagnação (paralisação) da taxa de intemperismo.
-
-        </button>
-
-
-
-
-        <p id="resp4"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> Intemperismo e erosão</h2>
-
-
-
-
-        <p>Vimos que o vulcanismo e os processos tectônicos formaram as montanhas e a decomposição física e química
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Quais fatores abaixo não contribuem para o aumento das taxas de intemperismo?</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p3a" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3a">
+<span>a) clima.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3b" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3b">
+<span>b) tipo de rocha.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3c" name="pergunta3" type="radio" value="correto"/>
+<label class="card-opcao" for="p3c">
+<span>c) fósseis.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'certo, o fóssil é, na realidade, um fenônemo que se contrapõe ao intemperismo', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp3"></p>
+<div class="area w3-center">
+<img height="64" id="globinho3" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>O que ocorre com o intemperismo em climas nas regiões tropicais?</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p4a" name="pergunta4" type="radio" value="correto"/>
+<label class="card-opcao" for="p4a">
+<span>a) ocorre um aumento da taxa de intemperismo.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p4b" name="pergunta4" type="radio" value="errado"/>
+<label class="card-opcao" for="p4b">
+<span>b) ocorre uma diminuição da taxa de intemperismo.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p4c" name="pergunta4" type="radio" value="errado"/>
+<label class="card-opcao" for="p4c">
+<span>c) ocorre uma estagnação (paralisação) da taxa de intemperismo.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta4', 'resp4', 'globinho4', 'beleza, o intemperismo químico aumenta devido a quantidade de chuva', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp4"></p>
+<div class="area w3-center">
+<img height="64" id="globinho4" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2> Intemperismo e erosão</h2>
+<p>Vimos que o vulcanismo e os processos tectônicos formaram as montanhas e a decomposição física e química
             provocada pela chuva, vento, gelo, calor, ou seja, pelo intemperismo, alteraram todo o material rochoso da
             Terra. </p>
-
-        <p>Agora temos que nos concentrar em quem leva esses materiais para outros locais e os depositam, isto é, a
+<p>Agora temos que nos concentrar em quem leva esses materiais para outros locais e os depositam, isto é, a
             erosão. </p>
-
-        <p>A erosão, portanto, trabalha junto com o intemperismo, desgasta, transporta as rochas alteradas e novas
+<p>A erosão, portanto, trabalha junto com o intemperismo, desgasta, transporta as rochas alteradas e novas
             rochas que antes estavam escondidas são expostas e, assim, renovam o ciclo de alteração das paisagens. </p>
-
-
-        <h3>Tipos de erosão </h3>
-
-
-        <p>Vamos recapitular que o processo de intemperismo quebra as rochas e o solo em pedaços menores, mas não move
+<h3>Tipos de erosão </h3>
+<p>Vamos recapitular que o processo de intemperismo quebra as rochas e o solo em pedaços menores, mas não move
             eles. A remoção desse material intemperizado é de responsabilidade da erosão. </p>
-
-
-        <p> Isso pode ser feito através de diversos agentes como o vento, água corrente, geleiras, chuvas, correntes
-            oceânicas, ondas do mar, dentre outros. Os principais estão na <span
-                onclick="Aparecer('imagem11','citacao11')"><mark>figura abaixo:</mark></span> </p>
-
-
-
-
-
-        <div class="area"><img id="imagem11" src="tp11f11.png" alt="tp11f11" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao11" style=display:none> Fonte: Borrero (2008, p. 162 adaptado). </span>
-
-
-        <p>Quando vemos nossas calçadas repletas de lama vindas de um morro acima, por exemplo, temos aí o transporte e,
+<p> Isso pode ser feito através de diversos agentes como o vento, água corrente, geleiras, chuvas, correntes
+            oceânicas, ondas do mar, dentre outros. Os principais estão na <span onclick="Aparecer('imagem11','citacao11')"><mark>figura abaixo:</mark></span> </p>
+<div class="area"><img alt="tp11f11" class="w3-mobile" id="imagem11" src="tp11f11.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao11" style="display:none"> Fonte: Borrero (2008, p. 162 adaptado). </span>
+<p>Quando vemos nossas calçadas repletas de lama vindas de um morro acima, por exemplo, temos aí o transporte e,
             após isso, a deposição. </p>
-
-        <h3>Erosão hídrica </h3>
-
-
-        <p>É a gravidade que atua empurrando esses materiais encosta abaixo. A água é um poderoso agente de erosão. Os
+<h3>Erosão hídrica </h3>
+<p>É a gravidade que atua empurrando esses materiais encosta abaixo. A água é um poderoso agente de erosão. Os
             rios, por exemplo, podem moldar toda uma paisagem e carregarem toneladas de sedimentos, como os rios
-            Amazonas no Brasil, o Nilo no Egito ou o Yangtzé na China. Vejamos essa alteração na <span
-                onclick="Aparecer('imagem12','citacao12')"><mark>ilustração abaixo:</mark></span> </p>
-
-
-
-        <div class="area"><img id="imagem12" src="tp11f12.png" alt="tp11f12" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao12" style=display:none>Fonte: Strahler (2013, p.528).</span>
-
-
-        <p>Na figura acima vemos um determinado rio (número 1) onde o fluxo de água é mais rápido nas cachoeiras e
+            Amazonas no Brasil, o Nilo no Egito ou o Yangtzé na China. Vejamos essa alteração na <span onclick="Aparecer('imagem12','citacao12')"><mark>ilustração abaixo:</mark></span> </p>
+<div class="area"><img alt="tp11f12" class="w3-mobile" id="imagem12" src="tp11f12.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao12" style="display:none">Fonte: Strahler (2013, p.528).</span>
+<p>Na figura acima vemos um determinado rio (número 1) onde o fluxo de água é mais rápido nas cachoeiras e
             corredeiras. Logo esses segmentos mais íngremes (inclinado) do rio são rapidamente corroídos. Onde o fluxo
             do rio diminui (por exemplo, em lagoas e lagos), o sedimento é depositado. </p>
-
-
-        <p>No número 2 as cachoeiras e corredeiras erodiram até que sua declividade (inclinação para baixo) ficasse mais
+<p>No número 2 as cachoeiras e corredeiras erodiram até que sua declividade (inclinação para baixo) ficasse mais
             próxima da declividade média do rio. Já os lagos e lagoas foram drenados e desapareceram. </p>
-
-        <p> O número 3 mostra o rio uma expansão lateral, erodindo essas encostas e criando um caminho curvo. Começa um
+<p> O número 3 mostra o rio uma expansão lateral, erodindo essas encostas e criando um caminho curvo. Começa um
             depósito de sedimentos clásticos (areia, cascalho ou lama) e se acumula no interior de cada curva. É o
             chamado aluvião.</p>
-
-        <p> No número 4, à medida que o fluxo continua a erodir as margens, o canal desenvolve meandros extensos. </p>
-
-
-        <p>Com o tempo, essas curvas desde a nascente até onde se desemboca o rio (foz) forma uma planície de inundação,
+<p> No número 4, à medida que o fluxo continua a erodir as margens, o canal desenvolve meandros extensos. </p>
+<p>Com o tempo, essas curvas desde a nascente até onde se desemboca o rio (foz) forma uma planície de inundação,
             isto é, um terreno plano entre penhascos íngremes. O rio atinge sua maturidade. </p>
-
-
-        <h3>Aspectos destrutivos da erosão em águas correntes </h3>
-
-
-        <p>Outro aspecto da erosão causada por enxurradas, rios ou córregos ou por mau uso do solo estão relacionados à
+<h3>Aspectos destrutivos da erosão em águas correntes </h3>
+<p>Outro aspecto da erosão causada por enxurradas, rios ou córregos ou por mau uso do solo estão relacionados à
             ravina e as voçorocas. </p>
-
-        <p>As <span onclick="Aparecer('imagem13','citacao13')"><mark>ravinas</mark></span> ocorrem quando a água
+<p>As <span onclick="Aparecer('imagem13','citacao13')"><mark>ravinas</mark></span> ocorrem quando a água
             corrente erode pequenos canais nas encostas dos córregos e riachos. Elas são normalmente classificadas como
             de menor escala do que as voçorocas, vales e cânions. </p>
-
-
-
-
-
-        <div class="area"><img id="imagem13" src="tp11f13.png" alt="tp11f13" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao13" style=display:none> Fonte: https://meioambiente.culturamix.com/
+<div class="area"><img alt="tp11f13" class="w3-mobile" id="imagem13" src="tp11f13.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao13" style="display:none"> Fonte: https://meioambiente.culturamix.com/
             natureza/vocoroca-e-ravinas-caracteristicas-gerais</span>
-
-        <p>Quando esses canais erodidos pelas ravinas se tornam mais profundos e extensos, eles evoluem para as
+<p>Quando esses canais erodidos pelas ravinas se tornam mais profundos e extensos, eles evoluem para as
             voçorocas. </p>
-
-
-        <p> As <span onclick="Aparecer('imagem14','citacao14')"><mark> voçorocas ou boçorocas </mark></span>são
+<p> As <span onclick="Aparecer('imagem14','citacao14')"><mark> voçorocas ou boçorocas </mark></span>são
             geologicamente um fenômeno que consiste na formação de grandes buracos de erosão causados pela água da chuva
             e intempéries em solos onde a vegetação não protege mais o solo, que fica cascalhento e suscetível de
             carregamento por enxurradas. Ela torna o solo pobre, seco, quimicamente morto e nada fecundo.</p>
-
-
-
-        <div class="area"><img id="imagem14" src="tp11f14.png" alt="tp11f14" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao14" style=display:none> Fonte: https://www.gazetavg.com.br/
+<div class="area"><img alt="tp11f14" class="w3-mobile" id="imagem14" src="tp11f14.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao14" style="display:none"> Fonte: https://www.gazetavg.com.br/
             2019/08/15/obra-para-conter-vocoroca-tera-inicio/. </span>
-
-
-
-        <p>Da mesma forma temos a erosão marinha realizada pelo movimento constante das ondas do mar provocando a
+<p>Da mesma forma temos a erosão marinha realizada pelo movimento constante das ondas do mar provocando a
             abrasão dos paredões rochosos no litoral, com a formação das falésias. Essa erosão forma as praias, as
             restingas e os tômbolos (veremos no capítulo sobre as formas do relevo marinho). </p>
-
-
-
-        <h3>Erosão Glacial </h3>
-
-        <p> O Planeta já registrou diversas eras do gelo, desde a Pangeia até o quaternário, sendo que a última era
+<h3>Erosão Glacial </h3>
+<p> O Planeta já registrou diversas eras do gelo, desde a Pangeia até o quaternário, sendo que a última era
             glacial terminou há cerca de 12 mil anos. </p>
-
-        <p>O que é uma geleira? </p>
-
-
-        <p>Geleiras são massas continentais de gelo de limites definidos, que se movimentam pela ação da gravidade.
-            Originam-se pela acumulação de neve e sua compactação por pressão transformando-a em gelo <span
-                class="w3-small">(Teixeira, 2009, p.216).</span> </p>
-
-
-        <p>As marcas das geleiras estão visíveis nas paisagens e seus efeitos erosivos abrange uma escala elevada. </p>
-
-
-        <p>As geleiras podem carregar toneladas de sedimentos através verdadeiros rios de gelo levando imensas rochas e
+<p>O que é uma geleira? </p>
+<p>Geleiras são massas continentais de gelo de limites definidos, que se movimentam pela ação da gravidade.
+            Originam-se pela acumulação de neve e sua compactação por pressão transformando-a em gelo <span class="w3-small">(Teixeira, 2009, p.216).</span> </p>
+<p>As marcas das geleiras estão visíveis nas paisagens e seus efeitos erosivos abrange uma escala elevada. </p>
+<p>As geleiras podem carregar toneladas de sedimentos através verdadeiros rios de gelo levando imensas rochas e
             detritos à longas distâncias. Esses detritos arranham a superfície das rochas, esculpem vales em forma de U,
             chamado Fiordes, principalmente na região da Escandinávia (Suécia, Noruega e Dinamarca). Veja uma imagem de
             uma geleira na <span onclick="Aparecer('imagem22','citacao22')"><mark>Noruega.</mark></span> </p>
-
-
-
-
-        <div class="area"><img id="imagem22" src="tp11f22.png" alt="tp11f22" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao22" style=display:none> Geleira de Briksdal, Noruega. Fonte: Wikipedia. </span>
-
-
-
-        <p>As geleiras têm uma imensa capacidade de erodir a rocha dura, gerando toneladas de sedimentos, geralmente um
+<div class="area"><img alt="tp11f22" class="w3-mobile" id="imagem22" src="tp11f22.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao22" style="display:none"> Geleira de Briksdal, Noruega. Fonte: Wikipedia. </span>
+<p>As geleiras têm uma imensa capacidade de erodir a rocha dura, gerando toneladas de sedimentos, geralmente um
             material escuro, uma mistura de gelo com rochas e lama chamado de <em>morena</em> nas áreas de deposição
-            onde o gelo desemboca nas partes baixas do terreno. <span
-                onclick="Aparecer('imagem15','citacao15')"><mark>Veja na ilustração abaixo: </mark></span>
-        </p>
-
-
-
-        <div class="area"><img id="imagem15" src="tp11f15.png" alt="tp11f15" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao15" style=display:none> Fonte: Press (2006, p. 403). </span>
-
-        <p>Na figura acima, vemos que antes da glaciação, um rio montanhoso que entalha um vale em for de “V”. Durante a
+            onde o gelo desemboca nas partes baixas do terreno. <span onclick="Aparecer('imagem15','citacao15')"><mark>Veja na ilustração abaixo: </mark></span>
+</p>
+<div class="area"><img alt="tp11f15" class="w3-mobile" id="imagem15" src="tp11f15.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao15" style="display:none"> Fonte: Press (2006, p. 403). </span>
+<p>Na figura acima, vemos que antes da glaciação, um rio montanhoso que entalha um vale em for de “V”. Durante a
             glaciação, a ação do gelo arrancando e rasgando as rochas produz uma forma arredondada chamado de circo. À
             medida que a geleira do vale se move para baixo, ela escava um novo vale ou aprofunda o vale existente,
             originando um vale em U, com paredes abruptas, diferentes dos vales erodidos pelos rios montanhosos. </p>
-
-
-        <p>Após ter visto o processo erosivo da ação da água e das geleiras, veremos como a ação do vento molda as
+<p>Após ter visto o processo erosivo da ação da água e das geleiras, veremos como a ação do vento molda as
             paisagens terrestres. </p>
-
-
-        <h3>Erosão eólica </h3>
-
-        <p>O que é o vento? </p>
-
-
-        <p>De modo geral, o vento é um fluxo natural de ar em movimento, paralelo à superfície de rotação da Terra. Ou
+<h3>Erosão eólica </h3>
+<p>O que é o vento? </p>
+<p>De modo geral, o vento é um fluxo natural de ar em movimento, paralelo à superfície de rotação da Terra. Ou
             seja, existe vento causado pelo movimento de rotação terrestre e pela diferença de pressão e temperatura na
             atmosfera. (Veja capítulo sobre o clima terrestre). </p>
-
-
-        <p>É comum utilizar o termo eólica para se referir ao trabalho do vento, em referência à mitologia grega em que
+<p>É comum utilizar o termo eólica para se referir ao trabalho do vento, em referência à mitologia grega em que
             Éolo era o guardião dos ventos e o senhor da ilha Eólia, na Odisseia de Homero. </p>
-
-        <p>Voltando para o tempo presente, a ação do vento é um importante agente de erosão, assim como a água,
+<p>Voltando para o tempo presente, a ação do vento é um importante agente de erosão, assim como a água,
             entretanto de modo um pouco mais lento. </p>
-
-        <p>Os ventos podem mover enormes quantidade de area, partículas menores chamadas silte e pó sobre grandes
+<p>Os ventos podem mover enormes quantidade de area, partículas menores chamadas silte e pó sobre grandes
             regiões do globo. </p>
-
-
-        <p> No que diz respeito a erosão, os ventos moldam á superfície terrestre principalmente em zonas áridas onde
+<p> No que diz respeito a erosão, os ventos moldam á superfície terrestre principalmente em zonas áridas onde
             não há umidade. Só depois que o intemperismo físico e químico atuou que o vento pode deslocar essas
             partículas pelo ar.</p>
-
-
-        <p> O <span onclick="Aparecer('imagem16','citacao16')"><mark>vento</mark></span> desgasta as rochas e arranca
+<p> O <span onclick="Aparecer('imagem16','citacao16')"><mark>vento</mark></span> desgasta as rochas e arranca
             areia desagregadas e depois as lança sobre outras rochas, processo esse chamado de <strong>abrasão</strong>.
         </p>
-
-
-
-
-        <div class="area"><img id="imagem16" src="tp11f16.png" alt="tp11f16" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao16" style=display:none> Parque Nacional dos Arcos, Utah, Estados Unidos. Famosa
+<div class="area"><img alt="tp11f16" class="w3-mobile" id="imagem16" src="tp11f16.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao16" style="display:none"> Parque Nacional dos Arcos, Utah, Estados Unidos. Famosa
             imagem de rocha esculpida pela ação do vento formando um arco. Fonte: Wikipedia. </span>
-
-
-        <p> Já quando o vento transporta areia por longas distâncias e as deposita, acaba por formar <span
-                onclick="Aparecer('imagem17','citacao17')"><mark>dunas</mark></span>.</p>
-
-
-
-
-
-        <div class="area"><img id="imagem17" src="tp11f17.png" alt="tp11f17" class="w3-mobile" style=display:none>
-        </div>
-
-
-        <span class="citacao" id="citacao17" style=display:none>Fonte: https://epoca.oglobo.globo.com/
+<p> Já quando o vento transporta areia por longas distâncias e as deposita, acaba por formar <span onclick="Aparecer('imagem17','citacao17')"><mark>dunas</mark></span>.</p>
+<div class="area"><img alt="tp11f17" class="w3-mobile" id="imagem17" src="tp11f17.png" style="display:none"/>
+</div>
+<span class="citacao" id="citacao17" style="display:none">Fonte: https://epoca.oglobo.globo.com/
             colunas-e-blogs/viajologia/noticia/2016/03/
             cores-do-por-do-sol-nas-dunas-de-erg-chebbi-no-saara-seduzem-viajantes.html </span>
-
-        <p> A maioria das dunas é encontrada em climas secos, como desertos, poque o vento não pode transportar material
+<p> A maioria das dunas é encontrada em climas secos, como desertos, poque o vento não pode transportar material
             úmido. Deve haver um suprimento de areia solta disponível no local para esse tipo de formação. Ela também
             apresenta uma angulação devido à direção dos ventos.</p>
-
-        <p>Pode haver também dunas nas regiões costeiras devido a abundância de areia que é transportada pelo vento
+<p>Pode haver também dunas nas regiões costeiras devido a abundância de areia que é transportada pelo vento
             rapidamente, sendo que somente em outro momento a vegetação e o solo passa a cobri-la. Nesse caso em
             específico, em climas úmidos também pode ocorrer dunas. </p>
-
-
-        <p>Além das paisagens formadas pela abrasão e pela deposição, temos os efeitos destrutivos da erosão eólica,
+<p>Além das paisagens formadas pela abrasão e pela deposição, temos os efeitos destrutivos da erosão eólica,
             principalmente no solo. </p>
-
-
-        <p>Um dos métodos utilizado nas áreas de cultivo para reduzir a perda da camada superior do solo na agricultura
+<p>Um dos métodos utilizado nas áreas de cultivo para reduzir a perda da camada superior do solo na agricultura
             consiste na construção de <span onclick="Aparecer('imagem18','citacao18')"><mark>barreiras de
                     vento</mark></span>. Os quebra-ventos, como são chamados, são árvores plantadas de forma
             perpendicular uma ao lado da outra com o objetivo de formar uma fila de árvores ao longo das bordas de uma
             plantação. Essas barreiras ainda podem ajudar na conservação da umidade, barrar a neve dependendo do tipo de
             clima ou proteger a plantação dos efeitos do vento. </p>
-
-
-
-
-
-        <div class="area"><img id="imagem18" src="tp11f18.png" alt="8" class="w3-mobile" style=display:none></div>
-
-
-        <span class="citacao" id="citacao18" style=display:none> Fonte: https://www.researchgate.net/
+<div class="area"><img alt="8" class="w3-mobile" id="imagem18" src="tp11f18.png" style="display:none"/></div>
+<span class="citacao" id="citacao18" style="display:none"> Fonte: https://www.researchgate.net/
             figure/fig5_347582938. </span>
-
-        <p> Outros seres vivos também participam do processo erosivo como plantas e animais que vivem movendo a
+<p> Outros seres vivos também participam do processo erosivo como plantas e animais que vivem movendo a
             superfície de um local a outro. O exemplo de animais que se enterram no solo, atividades humanas de grandes
             escavações minerais, construção de rodovias, dentre inúmeras outras atividades.</p>
-
-
-        <p>Dependendo da organização do território realizada pelos homens, o processo erosivo pode ser evitado ou
+<p>Dependendo da organização do território realizada pelos homens, o processo erosivo pode ser evitado ou
             agravado e produzir efeitos danosos a sociedade. </p>
-
-
-        <p> Veremos com mais detalhes os impactos da atividade humana no meio geográfico no capítulo sobre a questão
+<p> Veremos com mais detalhes os impactos da atividade humana no meio geográfico no capítulo sobre a questão
             ambiental.</p>
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Como o tempo influencia o processo de intemperismo?</h4>
-
-
-
-
-        <button class="desativar5 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'acertou, o tempo geológico é muito amplo em relação ao nosso tempo histórico','1'); this.style.backgroundColor='lightgreen'">
-
-            a) quanto maior o tempo, maior a alteração química e física.
-
-        </button>
-
-        <button class="desativar5 p4 area w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">
-
-            b) quanto maior o tempo, menor a dissolução e menor a desagregação das rochas.
-
-        </button>
-
-
-        <button class="desativar5 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">
-
-            c) quanto menor o tempo, maior a erosão devido a gravidade.
-
-
-
-        </button>
-
-
-
-
-        <p id="resp5"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Que agente de erosão formou esta estrutura e qual processo ocorreu?
-
-        </h4>
-
-        <div class="w3-center"><img src="tp11f21.png" alt="tp11f21" class="w3-mobile"></div>
-
-        <div class="margemAbaixo">
-            <span class="w3-small">Wadi Al-Hitan, Egito. Fonte: https://commons.wikimedia.org/.
-            </span>
-        </div>
-
-        <button class="desativar6 p4 area w3-padding w3-margin margemAcima"
-            onclick=" MostrarProximo(this);RetirarPontos('resp6','globinho6', 'desativar6','0');this.style.backgroundColor='tomato'">
-            a) gelo, cunhamento.
-        </button>
-
-
-        <button class="desativar6 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp6','globinho6', 'desativar6', 'boa, esse processo pode modelar diversas formas de relevo','1'); this.style.backgroundColor='lightgreen'">
-
-            b) vento, abrasão.
-
-        </button>
-
-
-        <button class="desativar6 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp6','globinho6', 'desativar6','0');this.style.backgroundColor='tomato'">
-
-            c) água, dissolução.
-
-
-
-        </button>
-
-
-
-
-        <p id="resp6"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho6" style="display:none" alt="globinho6"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Trata-se de uma erosão realizada pela ação de córregos e enxurradas. São normalmente classificadas como de
-            menor escala do que as voçorocas, vales e cânions.</h4>
-
-        <button class="desativar7 p4 area w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp7','globinho7', 'desativar7','0');this.style.backgroundColor='tomato'">
-
-            a) Erosão marinha.
-        </button>
-
-
-        <button class="desativar7 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp7','globinho7', 'desativar7', 'beleza, essa foi tranquila','1'); this.style.backgroundColor='lightgreen'">
-
-            b) Ravina.
-
-        </button>
-
-
-        <button class="desativar7 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp7','globinho7', 'desativar7','0');this.style.backgroundColor='tomato'">
-
-            c) Erosão hídrica.
-
-        </button>
-
-
-
-
-        <p id="resp7"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho7" style="display:none" alt="globinho7"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Sedimentação diz respeito:</h4>
-
-        <button class="desativar8 p4 area w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp8','globinho8', 'desativar8','0');this.style.backgroundColor='tomato'">
-
-            a) aos movimentos gravitacionais de massa, mobilizando sedimentos, solos e rochas, que ocorrem de modo
-            brusco em morros ou encontras.
-
-        </button>
-
-
-
-        <button class="desativar8 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp8','globinho8', 'desativar8','0');this.style.backgroundColor='tomato'">
-
-            b) ao conjunto de processos que provocam a alteração e a decomposição das rochas, também chamado de
-            meteorização.
-
-
-        </button>
-
-        <button class="desativar8 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp8','globinho8', 'desativar8', 'opa, essa foi fácil!','1'); this.style.backgroundColor='lightgreen'">
-
-
-            c) ao acúmulo de deposição dos materiais fragmentados de rochas em áreas de baixa altitude.
-
-        </button>
-
-
-
-        <p id="resp8"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho8" style="display:none" alt="globinho8"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>O intemperismo biológico resulta da decomposição da rocha por processos mecânicos produzidos por vegetais
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Como o tempo influencia o processo de intemperismo?</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p5a" name="pergunta5" type="radio" value="correto"/>
+<label class="card-opcao" for="p5a">
+<span>a) quanto maior o tempo, maior a alteração química e física.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p5b" name="pergunta5" type="radio" value="errado"/>
+<label class="card-opcao" for="p5b">
+<span>b) quanto maior o tempo, menor a dissolução e menor a desagregação das rochas.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p5c" name="pergunta5" type="radio" value="errado"/>
+<label class="card-opcao" for="p5c">
+<span>c) quanto menor o tempo, maior a erosão devido a gravidade.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta5', 'resp5', 'globinho5', 'acertou, o tempo geológico é muito amplo em relação ao nosso tempo histórico', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp5"></p>
+<div class="area w3-center">
+<img height="64" id="globinho5" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Que agente de erosão formou esta estrutura e qual processo ocorreu?</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p6a" name="pergunta6" type="radio" value="errado"/>
+<label class="card-opcao" for="p6a">
+<span>a) gelo, cunhamento.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p6b" name="pergunta6" type="radio" value="correto"/>
+<label class="card-opcao" for="p6b">
+<span>b) vento, abrasão.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p6c" name="pergunta6" type="radio" value="errado"/>
+<label class="card-opcao" for="p6c">
+<span>c) água, dissolução.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta6', 'resp6', 'globinho6', 'boa, esse processo pode modelar diversas formas de relevo', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp6"></p>
+<div class="area w3-center">
+<img height="64" id="globinho6" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Trata-se de uma erosão realizada pela ação de córregos e enxurradas. São normalmente classificadas como de
+            menor escala do que as voçorocas, vales e cânions.</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p7a" name="pergunta7" type="radio" value="errado"/>
+<label class="card-opcao" for="p7a">
+<span>a) Erosão marinha.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p7b" name="pergunta7" type="radio" value="correto"/>
+<label class="card-opcao" for="p7b">
+<span>b) Ravina.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p7c" name="pergunta7" type="radio" value="errado"/>
+<label class="card-opcao" for="p7c">
+<span>c) Erosão hídrica.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta7', 'resp7', 'globinho7', 'beleza, essa foi tranquila', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp7"></p>
+<div class="area w3-center">
+<img height="64" id="globinho7" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Sedimentação diz respeito:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p8a" name="pergunta8" type="radio" value="errado"/>
+<label class="card-opcao" for="p8a">
+<span>a) aos movimentos gravitacionais de massa, mobilizando sedimentos, solos e rochas, que ocorrem de modo
+            brusco em morros ou encontras.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p8b" name="pergunta8" type="radio" value="errado"/>
+<label class="card-opcao" for="p8b">
+<span>b) ao conjunto de processos que provocam a alteração e a decomposição das rochas, também chamado de
+            meteorização.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p8c" name="pergunta8" type="radio" value="correto"/>
+<label class="card-opcao" for="p8c">
+<span>c) ao acúmulo de deposição dos materiais fragmentados de rochas em áreas de baixa altitude.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta8', 'resp8', 'globinho8', 'opa, essa foi fácil!', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp8"></p>
+<div class="area w3-center">
+<img height="64" id="globinho8" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>O intemperismo biológico resulta da decomposição da rocha por processos mecânicos produzidos por vegetais
             através de suas raízes, escavação de roedores ou quimicamente por meio da ação de algas e bactérias que
-            adentram nas fraturas das rochas.</h4>
-
-
-        <button class="desativar9 p4 area w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp9','globinho9', 'desativar9', 'ótimo,o intemperismo biológico está relacionado ao físico da mesma forma','1'); this.style.backgroundColor='lightgreen'">
-
-            Verdadeiro.
-
-        </button>
-
-        <button class="desativar9 p4 area w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp9','globinho9', 'desativar9','0');this.style.backgroundColor='tomato'">
-
-            Falso.
-
-        </button>
-
-
-
-
-
-
-        <p id="resp9"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho9" style="display:none" alt="globinho9"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-
-    <!-- 
-    <div class="w3-container">
-
-
-        <table class="w3-table">
-            <tr>
-                <th class="w3-center">Coluna I</th>
-                <th class="w3-center">Coluna II</th>
-
-            </tr>
-            <tr>
-                <td>A. Erosão</td>
-                <td>1. É causada pela ação dos ventos, que provoca o intemperismo das rochas e também atua no transporte de sedimentos para zonas mais distantes dos pontos de erosão. Costuma ser um processo mais lento do que os demais que envolvem a ação da água. </td>
-
-            </tr>
-            <tr>
-                <td>B. Erosão eólica </td>
-                <td>2. É um fenômeno geológico que consiste na formação de grandes buracos de erosão causados pela água da chuva e intempéries em solos onde a vegetação não protege mais o solo, que fica cascalhento e suscetível de carregamento por enxurradas. Ela torna o solo pobre, seco, quimicamente morto e nada fecundo.</td>
-
-            </tr>
-            <tr>
-                <td>C. Voçoroca </td>
-                <td>3. O conjunto de etapas responsável pelo desgaste, transporte e deposição de material sedimentar, rochas e solos, os quais foram desagregados pelo intemperismo. A ação humana pode intensificar esse processo na medida em que retira a cobertura vegetal de áreas de encostas ou utiliza de forma inadequado o solo.</td>
-
-            </tr>
-
-          
-        </table>
-    </div> -->
-
-
-
-
-
-    <div class="topico">
-
-
-        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+            adentram nas fraturas das rochas.</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p9a" name="pergunta9" type="radio" value="correto"/>
+<label class="card-opcao" for="p9a">
+<span>a) Verdadeiro.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p9b" name="pergunta9" type="radio" value="errado"/>
+<label class="card-opcao" for="p9b">
+<span>b) Falso.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta9', 'resp9', 'globinho9', 'ótimo,o intemperismo biológico está relacionado ao físico da mesma forma', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp9"></p>
+<div class="area w3-center">
+<img height="64" id="globinho9" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Qual a relação entre intemperismo e clima?
             </strong> </p>
-
-        <p><span class="primeiraLetra">R:</span> O clima influencia diretamente o intemperismo devido a temperatura e em
+<p><span class="primeiraLetra">R:</span> O clima influencia diretamente o intemperismo devido a temperatura e em
             relação a espessura do solo. Em grandes altitudes, uma montanha por exemplo, o intemperismo químico é baixo,
             uma vez que devido a baixa temperatura torna-se dificil para a água dissolver os minerais das rochas. O que
             favorece o intemperismo físico pelo gelo. Se há pouca chuva, pouca água percorrendo as rochas. Em regiões
             desérticas há muito intemperismo físico, já em regiões tropicais o intemperismo químico é mais forte. Também
             se o relevo é mais íngreme (inclinado) aprofunda a erosão, se o relevo é mais suave, mais plano, favorece o
             intemperismo químico.</p>
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>Qual é o produto do intemperismo? </strong></p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>Qual é o produto do intemperismo? </strong></p>
+<p><span class="primeiraLetra">R:</span>
             Depois que o intemperismo químico e física atuam para erodir uma superfície rochosa, partes desse material é
             carregado pelas correntes de água, geleiras ou pelo vento. Outra parte permanece no local seja em planícies
             suaves ou em encostas moderadas com parte ainda da rocha matriz, rocha que pode ser sedimentar, magmática ou
@@ -1517,15 +798,12 @@
             camada de restos de animais, plantas e bactérias formarão o <strong>solo</strong>. O solo é um dos
             principais produtos do intemperismo (temos um capítulo específico sobre solos).
         </p>
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Os deslizamentos de Terra em uma encosta têm a ver com o intemperismo?
 
             </strong></p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p><span class="primeiraLetra">R:</span>
 
             Uma vez que o intemperismo alterou e deixou “afrouxado” o solo, a gravidade se encarrega de empurrá-lo
             ladeira abaixo. Também estão relacionados aos problemas dos deslizamentos nas encostas o clima, a topografia
@@ -1533,435 +811,53 @@
             população do entorno.
 
         </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
-        <hr>
-
-
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-
-        <h2> Desafio em dupla: Produção de recomendações para visita em uma caverna.</h2>
-
-        <div class="w3-pale-green">
-            <h3>Leia o texto abaixo sobre a gruta da Lapinha em Minas Gerais: </h3>
-            <p> A gruta da Lapinha, localizada no município de Lagoa Santa (MG), possui 40 metros de profundidade e 511
-                metros de extensão abertos à visitação pública. A gruta foi formada a partir de rochas calcárias formadas
-                pelos restos marinhos do fundo do mar raso da bacia do rio das Velhas, de restos que foram acumulados em
-                camadas superpostas e trabalhados pela erosão provocada pelas correntes marinhas e aéreas.</p>
-            <p>A gruta, de grande beleza cênica, foi descoberta por volta de 1835 pelo naturalista dinamarquês Peter Wilhelm
-                Lund, conhecido como o pai da paleontologia brasileira, que pesquisou toda a região. Em 1840, Lund descobriu
-                restos de fósseis do primeiro homem americano, como também animais pré-históricos que viveram há 25 mil
-                anos, dentre eles o tigre dente de sabre, a preguiça gigante e o tatu gigante. No espaço cultural anexo à
-                gruta, uma réplica de uma preguiça gigante está em exposição. </p>
-            <p class="w3-small">Fonte: https://www.mg.gov.br/
-                conteudo/conheca-minas/turismo/gruta-da-lapinha</p>
-        </div>
-
-
-
-
-
-        <h2>Instruções </h2>
-
-        <div class="w3-pale-green w3-padding">
-
-            <p>Em dupla, reflita e escreva cada um em seu caderno, um texto explicando para os visitantes da gruta o
-                processo de formação de cavernas de calcário utilizando suas próprias palavras e alguns dos conceitos
-                vistos na aula de hoje.</p>
-            <ul>
-
-                <li>Relevo; agentes externos do relevo; água, gelo, vento, gravidade; </li>
-
-                <li> Intemperismo: físico e químico; </li>
-
-                <li>Erosão: hídrica, marinha, glacial, eólica, ravina, voçoroca, deslizamento; sedimentação. </li>
-
-
-
-            </ul>
-
-        </div>
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-        <br>
-
-    </div>
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow " onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-        <br>
-
-
-        <div class="w3-container ">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-padding" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-
-        <!-- <span id="numero"></span>  -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://www.youtube.com/watch?v=xk_d4j1_7N4" target="_blank">
-                    Imagens lindas das falésias de Torres, no Rio Grande do Sul
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://www.youtube.com/watch?v=PgqJvfrihMw" target="_blank">
-                    Conheça o Parque Estadual de Vila Velha, um lugar lindo e cheio de histórias
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://www.youtube.com/watch?v=V_HRPsaQqe4&ab_channel=OrigensNT
-
-                " target="_blank">
-                    Grand Canyon: A Grande Catástrofe
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://www.youtube.com/watch?v=CRVG3tIg880" target="_blank">
-                    (SGB) Conhecer para prevenir - Meio Físico
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-        <p> BORRERO, Francisco (et all).<strong> Earth Science</strong>: Geology, the Environment, and the Universe.
-            Columbus, McGraw-Hill Companies, 2008.</p>
-
-        <p>PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>.
-            4a edição. Tradução: MENEGAT, R. Porto Alegre, Bookman. 2006.
-        </p>
-
-
-        <p>REYNOLDS, Stephen J (et all.). <strong>Exploring physical geography</strong>. 2.ed. New York, NY:
-            McGraw-Hill, 2017.
-        </p>
-
-        <p>STRAHLER, Alan. <strong>Introducing Physical Geography</strong>. 6.ed. Wiley, New York, 2013.
-        </p>
-
-
-
-        <p>TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F.<strong> Decifrando a Terra</strong>. 2ª ed. São
-            Paulo: Companhia Editora Nacional, 2009.
-        </p>
-
-        <p>WICANDER, Reed; MONROE, James S. <strong>Fundamentos de Geologia</strong>. São Paulo: Cengage Learning, 2009.
-        </p>
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 22);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-
-
-
-        // Função com perguntas abertas feita com formulário
-        function PerguntasAbertas(qnum, idResp, buttonConferir, globinho) {
-
-
-            var q1a = document.quiz.q1a.value.toLowerCase();
-            var q1b = document.quiz.q1b.value.toLowerCase();
-
-
-
-
-
-            var imagem = ['../../../fotoIndex/globinhoPe.png'];
-
-
-            var cor = ["#99ff99", " #ee4466"];
-
-            if (q1a.match("intemperismo") && qnum == 1) {
-
-                document.getElementById("q1a").style.backgroundColor = cor[0];
-                document.getElementById("q1a").disabled = true;
-
-
-                EscondeButton(buttonConferir);
-                Play("../audio1.mp3");
-                document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1a.valueOf() + ", acertou!.";
-                nota += 0.5;
-                document.getElementById(globinho).style.display = "block";
-
-
-                BalancarGlobo();
-
-                document.getElementById("buttonConferirQ1b").disabled = false;
-                document.getElementById("buttonConferirQ1b").style.backgroundColor = "#69CB60FA";
-
-                if (q1a.match("intemperismo") && q1b.match("erosão") && qnum ==1){
-                    document.getElementById("buttonConferirQ1b").value = "Finalizar!";
-                }
-                else
-                {
-                    document.getElementById("buttonConferirQ1b").value = "Conferir!";
-                }
-               
-
-
-
-            }
-            else if (qnum == 1) {
-                document.getElementById("q1a").style.backgroundColor = cor[1];
-                document.getElementById(idResp).innerHTML = "Você deve responder para seguir.";
-                Play2("../audio2.mp3");
-                RemoveBalancarGlobo();
-            }
-
-
-            if (q1b.match("erosão") && qnum == 2) {
-
-                if (q1a.match("intemperismo")) {
-
-                    document.getElementById("q1b").style.backgroundColor = cor[0];
-                    document.getElementById("q1b").disabled = true;
-
-                    EscondeButton(buttonConferir);
-                    Play("../audio1.mp3");
-
-                    document.getElementById(idResp).innerHTML = "Sua resposta foi: " + q1b.valueOf() + ", acertou!.";
-
-                    nota += 0.5;
-                    document.getElementById(globinho).style.display = "block";
-
-
-
-                    MostraButton("buttonq1d");
-                    BalancarGlobo();
-                }
-                else {
-                    document.getElementById("q1b").style.backgroundColor = cor[0];
-                    document.getElementById("q1b").disabled = true;
-                    document.getElementById(idResp).innerHTML = "Acertou, mas está faltando uma questão. Volte e preencha a(s) outra(s) espertinho(a). Depois retorne aqui.";
-                    Play2("../audio2.mp3");
-                    document.getElementById("buttonConferirQ1b").value = "Aguardando...";
-                    document.getElementById("buttonConferirQ1b").disabled = true;
-                    document.getElementById("buttonConferirQ1b").style.backgroundColor = "lightgray";
-                    RemoveBalancarGlobo();
-
-                }
-
-            }
-            else if (qnum == 2) {
-                document.getElementById("q1b").style.backgroundColor = cor[1];
-                document.getElementById(idResp).innerHTML = "Responda a pergunta corretamente.";
-                Play2("../audio2.mp3");
-                RemoveBalancarGlobo();
-
-            }
-
-
-
-            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-
-
-
-
-        }
-
-        // É chamada nas questões abertas decimais para ver se completou um inteiro.
-        function VerificaInteiro(idResp) {
-
-            var inteiro = Number.isInteger(nota);
-            var int = Math.trunc(nota)
-
-
-            if (inteiro == false) {
-                nota = int;
-                document.getElementById(idResp).innerHTML = " Quase lá " + nomeEstudante + "." + " Acerte todas as questões para ganhar o globinho. Você permanece com " + nota + ".";
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-            }
-
-            else {
-                document.getElementById(idResp).innerHTML = "Por ter acertado todas as questões " + nomeEstudante + ", ganhou mais um globinho, agora já possui " + nota + ".";
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-            // document.getElementById(idResp).innerHTML = "Não atingiu o máximo para ganhar o globinho. Está com "  + nota;
-        }
-
-
-
-
-
-
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                //numButton();
-                ApagaButton();
-                RemoveBalancarGlobo();
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-
-            }
-
-        }
-
-
-
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        // }
-
-
-
-    </script>
-
-       <!-- Global site tag (gtag.js) - Google Analytics -->
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-       <script>
-           window.dataLayer = window.dataLayer || [];
-           function gtag() { dataLayer.push(arguments); }
-           gtag('js', new Date());
-   
-           gtag('config', 'G-DPX55DSFZ0');
-   
-       </script>
-
-
-
-
-
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+<hr/>
+</div>
+<div class="topico">
+<h3>Antes de finalizar, vamos fazer as questões!</h3>
+<button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+<p id="respFinal"></p>
+<div class="area">
+<p><img alt="globinhorespFinal" height="64" id="globinhorespFinal" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/></p>
+</div>
+<hr/>
+</div>
+<!-- TÓPICO FINALIZAR -->
+<div class="topico">
+<button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+</div>
+<div class="bibliografias w3-content w3-padding-64" id="final-da-aula" style="max-width:700px">
+<hr/>
+<h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+<div class="w3-row-padding" id="links-gerados"></div>
+<div class="w3-container w3-padding-64">
+<h3 class="fontePixel w3-center w3-text-green">
+<strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+</h3>
+<div id="biblio-gerada"></div>
+</div>
+<br/><br/>
+<div class="w3-padding-48">
+<span id="numero"></span>
+<span id="txtBarra">0%</span>
+<progress id="progress" max="100" value="0"></progress>
+</div>
+</div></main>
+<div id="footer-placeholder"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
 </body>
-
 </html>

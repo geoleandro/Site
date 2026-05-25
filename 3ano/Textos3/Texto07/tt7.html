@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -45,21 +44,11 @@
 
     <script src="../../../js/aulas-geral.js" defer></script>
 
-
-
-    <title></title>
+    <title>3º ano - Texto 01</title>
 
 
 
     <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
     </style>
 
 
@@ -77,28 +66,36 @@
     <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
 
         <!-- Navigation (Stays on Top) -->
-        <!-- ============================================================
-     AULA 07 — Industrialização mundial I
-     Cole este conteúdo dentro do <main> do seu template
-     ============================================================ -->
 
-        <!-- TÓPICO 0: ABERTURA -->
+
         <div class="topico">
-            <div class="w3-padding-top-48"></div>
 
-            <h1 id="h1"></h1>
+
+            <div class="w3-padding-top-48">
+
+            </div>
+
+
+
+            <h1 id="h1"> </h1>
 
             <div class="w3-container w3-padding-16">
-                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
-                <p><strong>Objetivo:</strong> Estudar a formação do meio técnico e identificar suas características
-                    fundamentais. Relacionar tais características ao processo de industrialização.</p>
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
+
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Estudar a formação do meio técnico e identificar suas características
+                    fundamentais. Relacionar tais características ao processo de industrialização.</span></p>
             </div>
+
+
+
 
             <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
                 <i class="fa fa-play"></i> Iniciar Aula
             </button>
             <hr>
+
         </div>
+
 
 
         <!-- TÓPICO 1: INTRODUÇÃO -->
@@ -359,7 +356,7 @@
             <hr>
         </div>
 
-        
+
 
         <div class="topico">
 
@@ -509,7 +506,7 @@
         </div>
 
 
-        <!-- TÓPICO 10: FINALIZAR -->
+        <!-- TÓPICO 13: FINALIZAR -->
         <div class="topico">
             <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
         </div>
@@ -518,17 +515,23 @@
         <!-- ===== SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS ===== -->
         <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
-            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
 
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <!-- Cards gerados automaticamente pelo JS -->
             <div class="w3-row-padding" id="links-gerados"></div>
 
+
+
+
             <div class="w3-container w3-padding-64">
-                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                        Bibliográficas</strong></h3>
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+
+                <!-- Cards gerados automaticamente pelo JS -->
                 <div id="biblio-gerada"></div>
             </div>
         </div>
-        <!-- FIM DA AULA 07 -->
 
         <br><br>
 
@@ -543,6 +546,13 @@
 
 
 
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
     <!-- Footer -->
 
     <div id="footer-placeholder"></div>
@@ -559,6 +569,8 @@
         gtag('config', 'G-DPX55DSFZ0');
 
     </script>
+
+  
 
 
 

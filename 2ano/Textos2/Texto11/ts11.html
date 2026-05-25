@@ -1,656 +1,336 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-    <title>2º ano - Texto 11 </title>
-
-
-
-
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-        .postit-tp9 {
-
-
-            width: 250px;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-
-        .pulsar {
-            transition: transform 500ms;
-            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
-        }
-
-        .pulsar:hover {
-            transform: scale(1.1);
-        }
-    </style>
-
-
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<link href="../../../estilos/index-estilo.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="../../../estilos/navbar.css" rel="stylesheet"/>
+<link href="../../../estilos/rpg-sistema.css" rel="stylesheet"/>
+<link href="../../../estilos/ModeloCss.css" rel="stylesheet"/>
+<link href="../../../fotoIndex/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"></script>
+<script defer="" src="../../../js/duvid-cache.js"></script>
+<script defer="" src="../../../js/duvid-db.js"></script>
+<script defer="" src="../../../js/duvid-audio.js"></script>
+<script defer="" src="../../../js/duvid-ui.js"></script>
+<script defer="" src="../../../js/duvid-core.js"></script>
+<script defer="" src="../../../estilos/jstextos-padrao.js"></script>
+<script defer="" src="../../../js/abrirmenu.js"></script>
+<script defer="" src="../../../js/carregar.js"></script>
+<script defer="" src="../../../js/aulas-geral.js"></script>
+<title>2º ano - Texto 11</title>
 </head>
-
 <body>
-
-
-
-    <div class="topico">
-
-        <div class="centerBar">
-
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
-
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
-            </div>
-        </div>
-
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
-            </div>
-        </div>
-
-
-
-        <h1 id="h1"> Texto 11 - O sistema de transportes no Brasil</h1>
-
-
-        <p><strong> Conteúdo:</strong> Meios de transportes; rodoviário; ferroviário; hidroviário e aéreo.
-        </p>
-
-        <p><strong>Objetivo:</strong> Analisar o papel do sistema de transporte no Brasil. Compreender sua evolução,
-            importância, comparar os meios de transportes em termos de eficiência, problemáticas do espaço de circulação
-            no país.</p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Introdução </h2>
-
-
-        <p> <span class="primeiraLetra">N</span>a aula passada, vimos os fatores para a concentração e desconcentração
+<div id="header-placeholder"></div>
+<div class="w3-margin-top" id="aviso-status"></div>
+<main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+<div class="topico">
+<div class="w3-padding-top-48"></div>
+<h1 id="h1"></h1>
+<!-- Futuro audio -->
+<div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+<div class="w3-row">
+<div class="w3-col s2 m1 w3-center">
+<i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+</div>
+<div class="w3-col s10 m11 w3-padding-small">
+<b class="fontePixel">OUVIR AULA</b>
+<p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+</div>
+</div>
+<audio controls="" style="width:100%; margin-top: 10px;">
+<source id="audioSource" src="" type="audio/mp3"/>
+</audio>
+</div>
+<div class="w3-container w3-padding-16">
+<p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+<p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+</div>
+<button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+<i class="fa fa-play"></i> Iniciar Aula
+            </button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Introdução </h2>
+<p> <span class="primeiraLetra">N</span>a aula passada, vimos os fatores para a concentração e desconcentração
             industrial nas regiões brasileiras.</p>
-
-
-        <p>Hoje, veremos os principais meios de transporte como o rodoviário, ferroviário, hidroviário e aéreo.</p>
-
-
-
-        <p>
+<p>Hoje, veremos os principais meios de transporte como o rodoviário, ferroviário, hidroviário e aéreo.</p>
+<p>
             O desenvolvimento tecnológico é essencial para o crescimento dos setores de transportes. No Brasil, esse
             processo se intensificou a partir dos anos 1990.
 
 
         </p>
-
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-<div class="topico">
-    <div class="w3-pale-yellow">
-        <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
-        
-        <h3>1. Quais foram os fatores históricos que impulsionaram o desenvolvimento do transporte rodoviário no Brasil, e quais foram os principais marcos desse desenvolvimento?</h3>
-        <h3>2. Como a criação do Departamento Nacional de Infraestrutura de Transportes (DNIT) em 2002 influenciou o desenvolvimento das rodovias e ferrovias no Brasil?</h3>
-        <h3>3. Quais foram as principais consequências ambientais e sociais do projeto da Rodovia Transamazônica (BR-230)?</h3>
-        <h3>4. Explique a importância da malha ferroviária para a economia brasileira no final do século XIX e início do século XX, e os motivos para seu declínio após a crise da cafeicultura.</h3>
-        <h3>5. Como a privatização das ferrovias brasileiras entre 1996 e 1998 mudou a administração e operação desse meio de transporte?</h3>
-        <h3>6. Quais são as características e funções dos corredores de exportação no sistema hidroviário brasileiro, e quais portos principais desempenham esse papel?</h3>
-        <h3>7. De que maneira o transporte aéreo no Brasil contribui para o deslocamento de cargas e passageiros, e quais são os desafios enfrentados por esse setor?</h3>
-        <h3>8. Como a mudança da capital federal para Brasília influenciou o desenvolvimento do sistema rodoviário brasileiro?</h3>
-        <h3>9. Quais foram as razões para a extinção do Departamento Nacional de Estradas de Rodagem (DNER) e como suas funções foram redistribuídas?</h3>
-        <h3>10. Como a infraestrutura de transportes no Brasil se compara com a de países ricos, e quais são os principais desafios enfrentados pelos países emergentes e periféricos nessa área?</h3>
-    </div>
-    
-    <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-    <hr>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
 </div>
-
-
-    <div class="topico">
-
-        <h2>A evolução dos meios de transporte </h2>
-
-
-
-
-        <p> O transporte tem como finalidade o deslocamento de mercadorias e pessoas entre cidades, regiões (Estados ou
+<div class="topico">
+<div class="w3-pale-yellow">
+<h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+<h3>1. Quais foram os fatores históricos que impulsionaram o desenvolvimento do transporte rodoviário no Brasil, e quais foram os principais marcos desse desenvolvimento?</h3>
+<h3>2. Como a criação do Departamento Nacional de Infraestrutura de Transportes (DNIT) em 2002 influenciou o desenvolvimento das rodovias e ferrovias no Brasil?</h3>
+<h3>3. Quais foram as principais consequências ambientais e sociais do projeto da Rodovia Transamazônica (BR-230)?</h3>
+<h3>4. Explique a importância da malha ferroviária para a economia brasileira no final do século XIX e início do século XX, e os motivos para seu declínio após a crise da cafeicultura.</h3>
+<h3>5. Como a privatização das ferrovias brasileiras entre 1996 e 1998 mudou a administração e operação desse meio de transporte?</h3>
+<h3>6. Quais são as características e funções dos corredores de exportação no sistema hidroviário brasileiro, e quais portos principais desempenham esse papel?</h3>
+<h3>7. De que maneira o transporte aéreo no Brasil contribui para o deslocamento de cargas e passageiros, e quais são os desafios enfrentados por esse setor?</h3>
+<h3>8. Como a mudança da capital federal para Brasília influenciou o desenvolvimento do sistema rodoviário brasileiro?</h3>
+<h3>9. Quais foram as razões para a extinção do Departamento Nacional de Estradas de Rodagem (DNER) e como suas funções foram redistribuídas?</h3>
+<h3>10. Como a infraestrutura de transportes no Brasil se compara com a de países ricos, e quais são os principais desafios enfrentados pelos países emergentes e periféricos nessa área?</h3>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>A evolução dos meios de transporte </h2>
+<p> O transporte tem como finalidade o deslocamento de mercadorias e pessoas entre cidades, regiões (Estados ou
             municípios) e países, difundindo também a cultura entre os povos.</p>
-
-        <p>Nos países emergentes e periféricos, a rede de transportes não é tão evoluída quanto nos países ricos, que
+<p>Nos países emergentes e periféricos, a rede de transportes não é tão evoluída quanto nos países ricos, que
             colocam essa infraestrutura a serviço das relações econômicas internas e externas, com alto grau de
             eficiência nas diversas modalidades de transporte. </p>
-
-        <p> Nos países subdesenvolvidos, basicamente exportadores de matérias-primas, essa expansão é organizada para a
+<p> Nos países subdesenvolvidos, basicamente exportadores de matérias-primas, essa expansão é organizada para a
             economia externa, viabilizando transporte próximo aos portos.</p>
-
-
-        <h2> Tipos de transporte no Brasil</h2>
-
-        <p> No Brasil, o setor de transportes experimentou o grande crescimento na segunda metade do século XX. Esse
+<h2> Tipos de transporte no Brasil</h2>
+<p> No Brasil, o setor de transportes experimentou o grande crescimento na segunda metade do século XX. Esse
             fato contribuiu para a integração do território nacional em especial nas regiões Norte e Centro-Oeste,
             tradicionalmente isoladas dos polos econômicos e comerciais do Sudeste. </p>
-
-        <p>Mas foi um crescimento desigual, impulsionado pelas rodovias, enquanto o setor ferroviário conhecia uma longa
+<p>Mas foi um crescimento desigual, impulsionado pelas rodovias, enquanto o setor ferroviário conhecia uma longa
             decadência. Para favorecer um desenvolvimento mais equilibrado dos diferentes segmentos, criou em 2002
             Departamento Nacional de Infraestrutura de Transportes (DNIT), encarregado de construir, conservar e
             fiscalizar rodovias, ferrovias e o transporte marítimo. a figura abaixo há um resumo sobre a matriz de
             transporte no país.</p>
-
-        <div class="w3-margin"><img id="imagem1" src="ts11f01.png" alt="ts11f01" class="w3-mobile">
-
-            <span class="w3-small w3-margin-left" id="citacao1"> </span>
-
-        </div>
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> Transporte rodoviário </h2>
-
-
-
-
-        <p>O transporte rodoviário no Brasil teve seu primeiro grande incentivo na época do presidente Washington Luís
+<div class="w3-margin"><img alt="ts11f01" class="w3-mobile" id="imagem1" src="ts11f01.png"/>
+<span class="w3-small w3-margin-left" id="citacao1"> </span>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Transporte rodoviário </h2>
+<p>O transporte rodoviário no Brasil teve seu primeiro grande incentivo na época do presidente Washington Luís
             (1926-1930), que tinha como lema político “governar é abrir estradas”. Em seu governo foi inaugurada a
             ligação rodoviária entre o Rio de Janeiro e São Paulo, principais cidades do país. </p>
-
-        <p> Em 1945, surgiu o Departamento Nacional de Estradas de Rodagem (DNER), autarquia encarregada da implantação,
+<p> Em 1945, surgiu o Departamento Nacional de Estradas de Rodagem (DNER), autarquia encarregada da implantação,
             conservação e fiscalização da malha rodoviária. </p>
-
-        <p> Na década seguinte, no governo Juscelino Kubitschek, enquanto muitas montadoras automobilísticas se
+<p> Na década seguinte, no governo Juscelino Kubitschek, enquanto muitas montadoras automobilísticas se
             instalaram no Brasil, o sistema rodoviário consolidou-se como principal meio de transporte. </p>
-
-
-        <p> Sua hegemonia foi impulsionada pelas indústrias automobilísticas, devido a facilidade do acesso às
+<p> Sua hegemonia foi impulsionada pelas indústrias automobilísticas, devido a facilidade do acesso às
             matérias-primas, à energia e aos mercados consumidores.</p>
-
-
-        <p> Todos esses itens foram importantes para iniciar uma política rodoviária que atende aos interesses dos
+<p> Todos esses itens foram importantes para iniciar uma política rodoviária que atende aos interesses dos
             empresários do setor, bem como às expectativas de uma parcela cada vez maior de brasileiros que há muito
             sonhava com carro próprio.</p>
-
-
-        <p> Além da instalação das montadoras, outro marco do governo Kubitschek foi a mudança da capital federal para o
+<p> Além da instalação das montadoras, outro marco do governo Kubitschek foi a mudança da capital federal para o
             Centro-Oeste. A integração regional brasileira ocorreu com maior intensidade após a construção de Brasília,
             que necessitava de uma ligação com as demais regiões do país.</p>
-
-        <p>Iniciou-se desse modo a abertura de várias rodovias federais como a BR-040 ligando Brasília, Belo Horizonte E
+<p>Iniciou-se desse modo a abertura de várias rodovias federais como a BR-040 ligando Brasília, Belo Horizonte E
             Rio de Janeiro; a BR-050 ligando Brasília, Uberaba, Ribeirão Preto, São Paulo e Santos; a BR-153, que liga
             Belém a Brasília e muitas outras. </p>
-
-        <p>Outro grande projeto rodoviário lançado durante o regime militar foi a Rodovia Transamazônica (BR-230).
+<p>Outro grande projeto rodoviário lançado durante o regime militar foi a Rodovia Transamazônica (BR-230).
             Inaugurada em 1972, a estrada foi concebida para acelerar a integração econômica na Amazônia e no norte do
             país. </p>
-
-
-        <p>Esse projeto fracassou; além dos impactos ambientais provocados pelo desmatamento e pelo garimpo
+<p>Esse projeto fracassou; além dos impactos ambientais provocados pelo desmatamento e pelo garimpo
             descontrolados, contribuiu para as invasões das terras indígenas dessa região. </p>
-
-
-
-        <p> Muitos colonos transplantados para as vilas agrícolas construídas junto à rodovia tiveram de abandoná-las na
+<p> Muitos colonos transplantados para as vilas agrícolas construídas junto à rodovia tiveram de abandoná-las na
             tentativa de fugir da miséria.</p>
-
-        <p> Três décadas depois, segundo dados do Ministério dos transportes em 2004, a malha rodoviária estendia-se por
+<p> Três décadas depois, segundo dados do Ministério dos transportes em 2004, a malha rodoviária estendia-se por
             cerca de 1,4 milhão de km, dos quais menos de 197 mil km eram pavimentados. </p>
-
-        <p>Com a política de privatizações desenvolvidas no Brasil, muitas rodovias federais e estaduais passaram ao
+<p>Com a política de privatizações desenvolvidas no Brasil, muitas rodovias federais e estaduais passaram ao
             controle de empresários. Foi o caso da rodovia Dutra (Rio-São Paulo), federal, atualmente conhecida como
             Nova Dutra, e das rodovias Anchieta-Imigrantes, antes ligadas ao governo paulista e que hoje integram o
             sistema Ecovias. </p>
-
-
-        <p> Mesmo com essas mudanças de gestão, da extinção do DNER e da transferência e suas funções ao DNIT, muitas
+<p> Mesmo com essas mudanças de gestão, da extinção do DNER e da transferência e suas funções ao DNIT, muitas
             rodovias brasileiras concentradas no Centro-Sul e no litoral, ainda estão aquém dos padrões ideais de
             conservação e fiscalização.</p>
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Transporte Ferroviário</h2>
-
-
-
-
-        <p> A implantação da malha ferroviária brasileira teve início efetivo com a expansão das lavouras de café por
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Transporte Ferroviário</h2>
+<p> A implantação da malha ferroviária brasileira teve início efetivo com a expansão das lavouras de café por
             terras paulistas, na segunda metade do século XIX. O auge da expansão das ferrovias ocorreu entre as décadas
             de 1870 e 1920, quando foram construídos quase 28 mil km de trilhos que facilitavam o transporte do café
             para os portos de embarque. </p>
-
-        <p> Com a crise da cafeicultura, no final dos anos 1920, a malha ferroviária perdeu espaço para as rodovias. Com
+<p> Com a crise da cafeicultura, no final dos anos 1920, a malha ferroviária perdeu espaço para as rodovias. Com
             esse declínio e a falta de evolução tecnológica diante das indústrias automobilísticas, as ferrovias não
             integraram a regionalização brasileira, acelerada na segunda metade do século.</p>
-
-        <p>Iniciativas como a criação da Rede Ferroviária Federal S/A (RFFSA) pelo Governo Federal em 1957, e da
+<p>Iniciativas como a criação da Rede Ferroviária Federal S/A (RFFSA) pelo Governo Federal em 1957, e da
             Ferrovia Paulista (Fepasa) pelo governo de São Paulo em 1971, não conseguiram reverter essa tendência. </p>
-
-
-        <p>Entre 1996 e 1998 foi empreendida a privatização das ferrovias brasileiras. Em 1999, a RFFSA e a Fepasa foram
+<p>Entre 1996 e 1998 foi empreendida a privatização das ferrovias brasileiras. Em 1999, a RFFSA e a Fepasa foram
             extintas. Hoje, o DNIT é responsável por apenas 1% dos cerca de 30.000 km da malha ferroviária brasileira.
         </p>
-
-
-        <p>Todo o restante está concedido à iniciativa privada sobre responsabilidade da Agência Nacional de Transportes
+<p>Todo o restante está concedido à iniciativa privada sobre responsabilidade da Agência Nacional de Transportes
             Terrestres (ANTT), que tem entre suas atribuições fiscalizar e regular as concessionárias. </p>
-
-        <div class="w3-margin"><img id="imagem2" src="ts11f02.png" alt="ts11f02" class="w3-mobile">
-
-            <span class="w3-small w3-margin-left" id="citacao2"> Estrada de ferro Santos-Jundiaí. Fonte:
+<div class="w3-margin"><img alt="ts11f02" class="w3-mobile" id="imagem2" src="ts11f02.png"/>
+<span class="w3-small w3-margin-left" id="citacao2"> Estrada de ferro Santos-Jundiaí. Fonte:
                 https://www.cidadeecultura.com
             </span>
-
-        </div>
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-
-    <div class="topico">
-
-        <h2>Transporte hidroviário </h2>
-
-
-
-
-        <p> Os transportes hidroviários, que podem ser classificados como marítimos ou fluviais, são utilizados
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Transporte hidroviário </h2>
+<p> Os transportes hidroviários, que podem ser classificados como marítimos ou fluviais, são utilizados
             basicamente para movimentação de mercadorias importadas ao mercado externo.</p>
-
-        <p> Desde a década de 1990, a extensa orla marinha brasileira possibilitou o estabelecimento de
+<p> Desde a década de 1990, a extensa orla marinha brasileira possibilitou o estabelecimento de
             <strong>corredores de exportação</strong>, também conhecidos como polos exportadores. Tornou-se cada vez
             mais frequente o arrendamento das operações de instalações, principalmente nos terminais de
             <strong>contêineres</strong>, que vêm sendo controlados por empresas privadas nacionais e estrangeiras.
         </p>
-
-        <p>Os corredores de exportação integram o sistema intermodal de transporte no Brasil. Além de contarem com uma
+<p>Os corredores de exportação integram o sistema intermodal de transporte no Brasil. Além de contarem com uma
             infraestrutura adequada e com boas condições de armazenamento e comercialização, acham-se integrados aos
             locais de origem dos produtos exportados. Os portos de Santos, Rio de Janeiro, Recife, Salvador, Paranaguá e
             Vitória, entre outros, já atuam como corredores de exportação. </p>
-
-
-        <p> A competência desses corredores e o avanço tecnológico evitam prejuízos, aumentam a competitividade e
+<p> A competência desses corredores e o avanço tecnológico evitam prejuízos, aumentam a competitividade e
             reduzem custos, contribuindo para ampliar os negócios e, consequentemente, aumentar o PIB brasileiro. </p>
-
-
-        <div class="w3-margin"><img id="imagem3" src="ts11f03.png" alt="ts11f03" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao3"> </span>
-
-        </div>
-
-
-
-
-
-        <p> </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <h2>Transporte aéreo </h2>
-
-
-
-
-        <p> O transporte aéreo no Brasil é caracterizado pelos altos custos no deslocamento de cargas e de passageiros.
+<div class="w3-margin"><img alt="ts11f03" class="w3-mobile" id="imagem3" src="ts11f03.png"/>
+<span class="w3-small w3-margin-left" id="citacao3"> </span>
+</div>
+<p> </p>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Transporte aéreo </h2>
+<p> O transporte aéreo no Brasil é caracterizado pelos altos custos no deslocamento de cargas e de passageiros.
             No ano de 2018, as empresas aéreas brasileiras transportaram pouco mais de 103 milhões de passageiros pagos
             em voos domésticos e internacionais. O Brasil tem 99 aeroportos, sendo 18 internacionais e 81 para voos
             regionais. Todas as companhias aéreas do país são administradas pela empresa brasileira de infraestrutura
             aeroportuária (Infraero) estatal ligada ao Ministério da Defesa, cabendo à Agência Nacional de Aviação Civil
             (ANAC), o controle dos aeroportos e de outros aspectos do transporte aéreo</p>
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-
-        <h4>As ferrovias no Brasil estão geograficamente concentradas na(o):</h4>
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin pulsar "
-            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
-
-            a) região Nordeste, como resultado das políticas coloniais de transportes das commodities aqui cultivadas
-            pela metrópole.
-
-        </button>
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin pulsar "
-            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'essas estruturas foram construídas, em sua maioria, durante o período da produção de café nessa região','2'); this.style.backgroundColor='lightgreen'">
-
-            b) região Sudeste, em razão das estruturas instaladas no auge da economia cafeeira.
-
-        </button>
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin pulsar "
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
-
-            c) Centro-Oeste, como uma obra de promoção da política da Marcha para o Oeste.
-
-
-        </button>
-
-
-
-        <p id="resp1"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" class="pulsar" style="display:none"
-                    alt="globinho1" width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>O Brasil necessita de transporte interligados, devido à:</h4>
-
-
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin pulsar "
-            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            a) Proximidade entre portos e produção agrícola.
-        </button>
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin pulsar"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'o transporte intermodal é aquele que requer tráfego misto ou múltiplo, envolvendo mais de uma ou várias modalidades de transporte, é indicado para atingir locais de difícil acesso.','2'); this.style.backgroundColor='lightgreen'">
-
-            b) Grandes distâncias e busca por redução no frete.
-
-        </button>
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin pulsar"
-            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            c) Variações climáticas no território brasileiro.
-        </button>
-
-
-
-
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" class="pulsar" style="display:none"
-                    alt="globinho2" width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-
-        <h4>Os corredores de exportação podem ser definidos como:</h4>
-
-
-
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin pulsar"
-            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            a) Regiões agrícolas que se formam no entorno das grandes cidades.
-
-        </button>
-
-
-
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin pulsar"
-            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            b) Áreas dotadas de terminais intermodais e estações aduaneiras que utilizam a infraestrutura ferroviária.
-
-        </button>
-
-        <button class="desativar3 area p4 w3-padding w3-margin pulsar"
-            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'os corredores de exportação estão ligados ao escoamento da produção para os portos','2'); this.style.backgroundColor='lightgreen'">
-
-            c) Áreas dotadas de infraestrutura que envolve o transporte, a armazenagem e a comercialização de produtos.
-
-        </button>
-
-
-
-
-
-
-
-        <p id="resp3"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" class="pulsar" style="display:none"
-                    alt="globinho3" width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>As ferrovias no Brasil estão geograficamente concentradas na(o):</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p1a" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1a">
+<span>a) região Nordeste, como resultado das políticas coloniais de transportes das commodities aqui cultivadas
+            pela metrópole.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1b" name="pergunta1" type="radio" value="correto"/>
+<label class="card-opcao" for="p1b">
+<span>b) região Sudeste, em razão das estruturas instaladas no auge da economia cafeeira.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1c" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1c">
+<span>c) Centro-Oeste, como uma obra de promoção da política da Marcha para o Oeste.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'essas estruturas foram construídas, em sua maioria, durante o período da produção de café nessa região', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp1"></p>
+<div class="area w3-center">
+<img height="64" id="globinho1" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>O Brasil necessita de transporte interligados, devido à:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p2a" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2a">
+<span>a) Proximidade entre portos e produção agrícola.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2b" name="pergunta2" type="radio" value="correto"/>
+<label class="card-opcao" for="p2b">
+<span>b) Grandes distâncias e busca por redução no frete.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2c" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2c">
+<span>c) Variações climáticas no território brasileiro.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'o transporte intermodal é aquele que requer tráfego misto ou múltiplo, envolvendo mais de uma ou várias modalidades de transporte, é indicado para atingir locais de difícil acesso.', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp2"></p>
+<div class="area w3-center">
+<img height="64" id="globinho2" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Os corredores de exportação podem ser definidos como:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p3a" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3a">
+<span>a) Regiões agrícolas que se formam no entorno das grandes cidades.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3b" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3b">
+<span>b) Áreas dotadas de terminais intermodais e estações aduaneiras que utilizam a infraestrutura ferroviária.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3c" name="pergunta3" type="radio" value="correto"/>
+<label class="card-opcao" for="p3c">
+<span>c) Áreas dotadas de infraestrutura que envolve o transporte, a armazenagem e a comercialização de produtos.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'os corredores de exportação estão ligados ao escoamento da produção para os portos', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp3"></p>
+<div class="area w3-center">
+<img height="64" id="globinho3" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Quais fatores são responsáveis pela decadência do transporte ferroviário no Brasil?
             </strong> </p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p><span class="primeiraLetra">R:</span>
 
             A decadência do transporte ferroviária resultou de vários fatores: falta de investimentos, material rodante
             obsoleto, administração ineficiente, morosidade no serviço e, principalmente, a concorrência com o ramo
             rodoviário.
 
         </p>
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Quais os principais problemas do transporte urbano do Brasil?
 
             </strong></p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p><span class="primeiraLetra">R:</span>
 
             Em razão dos baixos investimentos públicos, existe um descompasso entre a demanda e a oferta de coletivos
             urbanos. Entre as consequências dessa situação estão o aumento do transporte informal ou clandestino
@@ -659,384 +339,65 @@
 
 
         </p>
-
-
-
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Quais os principais problemas do transporte marítimo no país?
             </strong></p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p><span class="primeiraLetra">R:</span>
 
             Um dos principais problemas estão relacionados ao envelhecimento da frota mercante, a deterioração da
             infraestrutura portuária, a concorrência crescente das rodovias e os altos custos da movimentação de cargas,
             que afastam do padrão internacional os terminais portuários brasileiros.
 
         </p>
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
-        <br><br>
-
-
-
-
-
-
-
-        <hr>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
-            <h2> <strong>Desafio - Jornada do herói: Provação </strong></h2>
-
-            <h4>
-                Na aula passada, chegamos na Aproximação da Caverna Oculta, isto é, o ponto culminante em que o herói irá enfrentar sua provação.<br>
-
-                Hoje, vamos passar por essa Provação, o aposento mais profundo da Caverna Oculta, o maior desafio e o adversário mais terrível que teremos de enfrentar. <br>
-
-
-                Como sempre, formem seus grupos e use a criatividade para lidar com esse desafio.
-            </h4>
-        </div>
-
-
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding">
-            <h3><strong>Instruções</strong> </h3>
-            <ul>
-
-                <li>Forme um grupo com 5-6 estudantes;</li>
-
-                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
-
-                <li> Faça anotações em seu caderno;</li>
-
-                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
-
-                <li>Tempo da atividade: 25 minutos.</li>
-
-            </ul>
-
-        </div>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
-
-            <h4><strong>Provação (8)</strong></h4>
-
-          
-            <p>Leia a passagem abaixo:</p>
-
-
-
-
-            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                <p>“Eis a hora de completar a Busca, entrar na Caverna Oculta e procurar o que irá restaurar a vida de Nossa Tribo. O caminho fica mais estreito e escuro. Você tem que prosseguir sozinho, rastejando, sentindo a terra fechar-se à sua volta. Mal dá para respirar. De repente, você vai deparar-se com o aposento mais profundo, e se encontrar, frente a frente, com uma figura imensa, uma Sombra ameaçadora, composta de todas as suas dúvidas e medos, e bem armada para defender um tesouro. Aqui, neste exato momento, está a chance de ganhar tudo ou morrer. Não importa o que você veio buscar, agora é a Morte que está tendo que encarar. Qualquer que seja o resultado da batalha, você está a ponto de sentir o gosto da morte e isso vai muda-lo para sempre”. </p>
-
-               
-
-            </div>
-
-          
-
-            <h4><strong>Morte e renascimento</strong></h4>
-
-            <p>O segredo mais simples da Provação é este: o herói tem que morrer para poder renascer. Esse é o momento dramático de que a plateia mais gosta, acima de qualquer outro, quando o herói quase morre, seja pelos seus medos, pelo seu fracasso, o fim de uma relação ou a morte metafórica de sua personalidade antiga. Ao passar por este teste principal, o herói será consagrado.</p>
-
-            <p>Sherlock Holmes, aparentemente morto pelo professor Moriarty, atirado na cachoeira, desafia a morte e retorna transformado e pronto para novas aventuras. Tudo isso traz mudanças para o herói, que passa a ser mais cooperativo, disposto a controlar seu ego, em benefício do grupo, quem sabe.</p>
-
-           
-            <h4><strong>A crise</strong></h4>
-
-            <p>A Provação é um dos principais núcleos nervosos da história. Em <em>God of War Ragnarok</em> é aquele momento em que Kratos se torna o general e com sua equipe parte para atacar Asgard. Em <em>Days Gone </em>representa a passagem pelo ponte com o caminhão bomba em direção ao esconderijo do coronel Garret. É ponto mais tenso da história, uma verdadeira crise se instala e precisa ser resolvida.</p>
-
-            <p>A crise é um divisor de águas na Jornada do Herói, que mostra que o viajante alcançou o meio da viagem. É o acontecimento central da história: chegar ao topo da montanha, o ponto mais profundo da caverna, o interior de uma país estrangeiro ou dentro de um mina de carvão (com um carrinho de mina típico dos videogames).</p>
-
-         
-
-
-            <h4><strong>Testemunha do sacrifício</strong></h4>
-
-            <p>Quando Frodo em, <em>O Senhor dos Anéis</em>, é atacado pela aranha Laracna, Sam foi a testemunha de que o herói havia morrido. Ele chora sua perda e fica eufórico quando descobre que Frodo não está morto. Assim como ocorre com Skywalker, em <em>Star Wars</em>, ao ser engolido pelo compressor de lixo.</p>
-
-            <p>Luke é puxado para baixo do esgoto pelo tentáculo de um monstro que não é visto. Foi essa cena que realmente faz entender o que é a Provação. Por um momento, parece que o herói realmente está morto e fortes emoções tomam conta da plateia. Será mesmo que ele morreu? Pouco tempo depois o herói surge vivo, renascido com a ajuda de seus companheiros.</p>
-
-            <p>Na Provação o herói também presencia a morte de seus aliados. Como o sacrifício do irmão de Freya em <em>God of War Ragnarok</em> ou a morte de Obi Wan ao lutar com o vilão Darth Vader no clássifico filme <em>Star Wars</em> ou Guerra nas Estrelas.</p>
-
-            <h4><strong>Encarando a Sombra</strong></h4>
-
-            <p>A Provação é, por assim dizer, algum tipo de batalha ou confrontação com uma força oposta. Pode ser um inimigo mortal, vilão, adversário ou mesmo uma força da natureza. O arquétipo da Sombra é usado nas narrativas de games ou de filmes, pois sintetiza as possibilidades negativas do próprio herói. A Sombra é uma polarização, um sistema que dá ao herói alguma forma de resistência e cria o conflito da história.</p>
-
-            <p>Se o herói quase morre, o vilão certamente pode perecer ou escapar. Geralmente um subalterno do vilão enfrenta o herói e permite que o vilão principal fuja. É bom lembrar que o vilão não se considera como tal, mas sim age como se pretendesse salvar algo, não importa os meios. Por isso que é importante em uma história conta-la a partir do ponto de vista de todos: heróis, vilões, auxiliares, aliados, guardiões e personagens menores.</p>
-
-            <p>A Provação, portanto, é o momento em que o herói enfrenta seu maior medo. É quando ele vai ultrapassar os seus limites e mudar. Essa mudança lhe trará uma Recompensa, tema da próxima Jornada.</p>
-
-
-
-
-
-
-            <h4><strong>Questões para pensar na história do jogo:</strong></h4>
-
-            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                <p> - Qual é a Provação na sua história? Sua história tem mesmo um vilão? Ou é simplesmente um antagonista?</p>
-
-                <p> - De que modo seu herói enfrenta a morte na Provação? Qual é o maior medo de seu herói?
-
-                </p>
-
-              
-
-            </div>
-
-
-
-
-            <!-- <h4><strong>Guardiões do Limiar</strong></h4>
-
-         
-
-                <h4><strong>Mentor em pessoa</strong></h4>
-
-
-
-                 <h4><strong>Evitando os clichês de Mentor</strong></h4> -->
-
-
-
-
-
-        </div>
-
-
-
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','4');this.style.display='none'">Proximo</button>
-
-
-        <p id="respFinal"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
-                    alt="globinhorespFinal" width="64" height="64">
-            </p>
-        </div>
-        <hr>
-
-    </div>
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span> -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 w3-green">
-
-                <a href="https://www.youtube.com/watch?v=QO_WZSrQt5g " target="_blank">
-                    Vídeo institucional da ANTT
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-      
-
-
-        <p>SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante</strong>: geografia do Brasil:
-            aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008.</p>
-
-        <p>FRANK, Bruno José Rodrigues.<strong> Geografia econômica</strong>. Londrina: Editora e Distribuidora
-            Educacional S.A., 2018.</p>
-
-
-        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. – São
-            Paulo: Ática, 2013.
-        </p>
-
-        <p>
-            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
-            Tradução de
-            Ana Maria Machado. -
-            2.ed. Rio de Janeiro: Nova Fronteira, 2006.
-        </p>
-
-        <p>SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
-            narrative
-            techniques.New Yoirk: Watson-Guptill, 2014.</p>
-
-
-
-
-
-
-
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        //     console.log(numB);
-        // }
-
-
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                // numButton();
-                ApagaButton();
-                RemoveBalancarGlobo();//retirar no Kodular
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-        }
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 12);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-
-    </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-
-
-
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+<br/><br/>
+<hr/>
+</div>
+<div class="topico">
+<h3>Antes de finalizar, vamos fazer as questões!</h3>
+<button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+<p id="respFinal"></p>
+<div class="area">
+<p><img alt="globinhorespFinal" height="64" id="globinhorespFinal" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/></p>
+</div>
+<hr/>
+</div>
+<!-- TÓPICO FINALIZAR -->
+<div class="topico">
+<button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+</div>
+<div class="bibliografias w3-content w3-padding-64" id="final-da-aula" style="max-width:700px">
+<hr/>
+<h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+<div class="w3-row-padding" id="links-gerados"></div>
+<div class="w3-container w3-padding-64">
+<h3 class="fontePixel w3-center w3-text-green">
+<strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+</h3>
+<div id="biblio-gerada"></div>
+</div>
+<br/><br/>
+<div class="w3-padding-48">
+<span id="numero"></span>
+<span id="txtBarra">0%</span>
+<progress id="progress" max="100" value="0"></progress>
+</div>
+</div></main>
+<div id="footer-placeholder"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
 </body>
-
 </html>

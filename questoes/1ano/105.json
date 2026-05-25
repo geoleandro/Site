@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(UESC) Os conhecimentos sobre projeções cartográficas e uso de mapas possibilitam afirmar:",
+    "alternativas": [
+      "A projeção azimutal fornece uma visão eurocêntrica do mundo e, por isso, ela não é mais utilizada.",
+      "As distorções da representação, nas projeções cilíndricas, são maiores no Equador e menores nos polos.",
+      "A projeção de Peters é a única que não pretende privilegiar nenhum continente, porque ela reproduz rigorosamente a realidade.",
+      "A projeção cônica só pode ser utilizada para representar grandes regiões, porque as distorções são pequenas entre os trópicos, não representando, portanto, a realidade das áreas mapeadas.",
+      "As projeções cartográficas permitem que, na construção dos mapas temáticos, os meridianos e os paralelos terrestres sejam transformados de uma realidade tridimensional para uma realidade bidimensional."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 2,
+    "instituicao": "UNIFACEF-SP",
+    "ano": "2017",
+    "dificuldade": "",
+    "tags": [],
+    "fonte_apoio": "(Www.worldmapper.org)",
+    "imagem_apoio": "1ano/img/105/p5q2.jpg",
+    "pergunta": "Observe um exemplo de produto cartográfico.\n\nÉ correto afirmar que a técnica utilizada no cartograma tem como objetivo",
+    "alternativas": [
+      "demonstrar a dinâmica e a velocidade de transformação dos dados.",
+      "oferecer a percepção imediata da proporção do fenômeno e do lugar onde ele ocorre.",
+      "questionar o senso comum que diminui a importância dos países subdesenvolvidos nas representações cartográficas.",
+      "proporcionar uma dificuldade analítica ao leitor acerca da orientação espacial dos dados.",
+      "valorizar a expressão subjetiva do cartógrafo ao romper com os diferentes tipos de projeções."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 3,
+    "instituicao": "ENEM",
+    "ano": "2016",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/105/p5q3a.jpg",
+    "imagem_apoio_2": "1ano/img/105/p5q3b.jpg",
+    "pergunta": "A ONU faz referência a uma projeção cartográfica em seu logotipo. A figura que ilustra o modelo dessa projeção é:\n\nAssinale a alternativa que corresponde a figura acima:",
+    "alternativas": [
+      "Letra A.",
+      "Letra B.",
+      "Letra C.",
+      "Letra D.",
+      "Letra E."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 4,
+    "instituicao": "ENEM",
+    "ano": "2016",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/105/p5q4.jpg",
+    "pergunta": "A projeção cartográfica do mapa configura-se como hegemônica desde a sua elaboração, no século XVI. A sua principal contribuição inovadora foi a.",
+    "alternativas": [
+      "redução comparativa das terras setentrionais.",
+      "manutenção da proporção real das áreas representadas.",
+      "consolidação das técnicas utilizadas nas cartas medievais.",
+      "valorização dos continentes recém-descobertos pelas Grandes Navegações.",
+      "adoção de um plano em que os paralelos fazem ângulos constantes com os meridianos."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 5,
+    "instituicao": "UNICAMP",
+    "ano": "2015",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/105/p5q5.jpg",
+    "pergunta": "A representação de uma esfera num plano estabelece um desafio técnico resolvido a partir de distintas formas de projeção, cada uma delas adequada a um objetivo. Faça a correspondência entre cada um dos mapas e sua correta projeção.",
+    "alternativas": [
+      "A, cônica; B, azimutal; C, cilíndrica.",
+      "A, cilíndrica; B, cônica; C, azimutal.",
+      "A, azimutal; B, cilíndrica; C, cônica.",
+      "A, cilíndrica; B, azimutal; C, cônica."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 6,
+    "instituicao": "UNESP",
+    "ano": "2015",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/105/p5q6.jpg",
+    "pergunta": "Analise as diferentes projeções cartográficas.\n\nConsiderando conhecimentos geográficos sobre projeções cartográficas, é correto afirmar que elas",
+    "alternativas": [
+      "respeitam os mesmos graus de proporcionalidade, conformidade, equidistância e orientação, regras e convenções que garantem rigor na representação do planeta.",
+      "podem ser admitidas como representações fiéis da realidade, pois expressam de forma precisa e rigorosa o planeta como ele é.",
+      "trazem consigo diferentes formas de representação do planeta, buscando difundir ideologias e determinadas visões de mundo.",
+      "se caracterizam pela objetividade e neutralidade, sem que fatores de ordem política, técnica ou cultural tenham influência sobre as formas de representação do planeta.",
+      "são relações métricas entre a superfície do planeta e as áreas representadas no mapa, não apresentando distorções e deformações em relação à realidade."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 7,
+    "instituicao": "UEMG",
+    "ano": "2010",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "“A transferência de uma imagem da superfície curva da esfera terrestre para o plano da carta sempre produz deformações, isoladas ou conjuntas, de várias naturezas: na forma, em área, em distâncias e em ângulo. As projeções cartográficas foram desenvolvidas para tentar oferecer uma solução conveniente para essas dicotomias”",
+    "fonte_apoio": "BOCHICCHIO,Vincenzo Raffaele. Atlas Mundo Atual. Ed. Atual. 2003.",
+    "pergunta": "Analise as informações e as ilustrações seguintes:\n\nConsidere os conceitos, a seguir, que relacionam as informações do texto com as ilustrações 1, 2 e 3, acima. Depois, assinale a alternativa que aponta a sequência correta dessa relação.\n\n( ) os meridianos convergem para os polos e os paralelos são arcos concêntricos situados a igual distância uns dos outros.\n\n( ) a projeção deforma as superfícies nas altas latitudes, mantendo as baixas latitudes em forma e dimensão mais próximas do real.\n\n( ) a construção se organiza em volta de um ponto central chamado “centro de projeção”.\n\nEstá CORRETA a relação sequencial indicada em:",
+    "alternativas": [
+      "1 – 2 – 3.",
+      "2 – 3 – 1.",
+      "3 – 1 – 2.",
+      "3 – 2 – 1.",
+      "2 – 1 - 3."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 8,
+    "instituicao": "ENEM",
+    "ano": "2009",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "\"Quem e com que interesse dita o que é o norte e o sul? Defendo a chamada Escola do Sul por que na realidade, nosso Norte é o Sul. Não deve haver norte, senão em oposição ao nosso sul. Por isso colocamos o mapa ao revés, desde já, e então teremos a justa ideia de nossa posição, e não como querem no resto do mundo. A ponta da América assinala insistentemente o sul, nosso norte\"",
+    "fonte_apoio": "TORRES-GARCÍA, J. Universalismo construtivo. Buenos Aires: Poseidón, 1941. (Com adaptações).",
+    "imagem_apoio": "1ano/img/105/p5q8.jpg",
+    "pergunta": "O desenho do artista uruguaio Joaquin Torres-García trabalha com uma representação diferente da usual da América Latina. Em artigo publicado em 1941, em que apresenta a imagem e trata do assunto, Joaquin afirma:\n\nO referido autor, no texto e imagem acima,",
+    "alternativas": [
+      "privilegiou a visão dos colonizadores da América",
+      "questionou as noções eurocêntricas sobre o mundo.",
+      "resgatou a imagem da América como centro do mundo.",
+      "defendeu a Doutrina Monroe expressa no lema \"América para os americanos\".",
+      "propôs que o sul fosse chamado de norte e vice-versa."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 9,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/105/p5q9.jpg",
+    "pergunta": "(UNIMONTES-MG–2008) A partir da projeção dos meridianos e paralelos geográficos, a forma cartográfica representada na figura é construída em:",
+    "alternativas": [
+      "um cilindro tangente à superfície de referência, desenvolvendo, a seguir, o cilindro num plano.",
+      "uma esfera tangente à superfície de referência, desenvolvendo, a seguir, o globo num plano.",
+      "um cone tangente à superfície de referência, desenvolvendo, a seguir, o cone num plano.",
+      "qualquer ponto da superfície de referência por um pedaço de papel num plano."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 10,
+    "instituicao": "UNICAMP",
+    "ano": "2021",
+    "dificuldade": "",
+    "tags": [],
+    "fonte_apoio": "(Rosely Sampaio Archela e Hervé Théry, Orientação metodológica para construção e leitura de mapas temáticos. Revista Confins. n.3. 2008, p. 1-36.)",
+    "imagem_apoio": "1ano/img/105/p5q10.jpg",
+    "pergunta": "Os mapas temáticos são elaborados com a utilização de técnicas que objetivam a melhor visualização e comunicação, distinguindo-se essencialmente dos topográficos, que representam fenômenos de qualquer natureza, geograficamente distribuídos sobre a superfície terrestre. O nível de organização dos dados, qualitativos, ordenados ou quantitativos, de um mapa está diretamente relacionado ao método de mapeamento e à utilização de variáveis visuais adequadas à sua representação.\n\nOs mapas temáticos anteriores mostram o cenário brasileiro da pandemia em 7 de julho de 2020. O mapa 1 apresenta o número de casos confirmados de Covid19 por ente federativo e o mapa 2, a taxa de incidência da Covid19 por Estado brasileiro. No que se refere à análise dos dados representados nos mapas, é correto afirmar:",
+    "alternativas": [
+      "O objetivo do mapa 1 é apresentar os dados de forma quantitativa, enquanto o mapa 2 prioriza uma apresentação qualitativa dos dados.",
+      "Os mapas 1 e 2 apresentam dados absolutos qualitativos referentes à Covid19 obtidos em órgãos oficiais do governo federal.",
+      "O mapa 1 apresenta os dados absolutos dos casos confirmados de Covid19, enquanto o mapa 2 apresenta a proporção de casos por milhão de habitantes.",
+      "Os mapas 1 e 2 apresentam dados proporcionais referentes à Covid19, pois não é possível apresentar com exatidão dados da área de saúde."
+    ],
+    "correta": 2,
+    "comentario": ""
+  }
+]

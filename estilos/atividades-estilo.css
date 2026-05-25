@@ -1,3 +1,19 @@
+/* Equaliza altura dos cards na mesma linha */
+#container-atividades {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#container-atividades > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#container-atividades .card-rpg {
+    flex: 1;
+}
+
 /* Estilo dos Cards */
 .card-rpg {
     border-top: 4px solid #4CAF50;

@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(UECE) A respeito do “subdesenvolvimento” é correto afirmar que:",
+    "alternativas": [
+      "o subdesenvolvimento é uma situação socioeconômica caracterizada por dependência econômica e grandes desigualdades sociais.",
+      "antes de serem países desenvolvidos, Inglaterra, França, Bélgica e Alemanha passaram pelo subdesenvolvimento.",
+      "neste final de século, a principal contradição da ordem mundial é o conflito Leste × Oeste, isto é, entre os países ricos e os países pobres.",
+      "as disparidades socioeconômicas entre os países surgem com as grandes navegações (séculos XV e XVI), daí se formando os países subdesenvolvidos."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 2,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(2020) O Índice de Desenvolvimento Humano (IDH), criado pela ONU, avalia com mais precisão as condições humanas e sociais de um país. Assinale a alternativa que apresente os indicadores utilizados na determinação do IDH.\n\nAssinale a alternativa que apresente os indicadores utilizados na determinação do IDH.",
+    "alternativas": [
+      "Consumo de calorias, taxa de analfabetismo, número de médicos por 1.000 habitantes.",
+      "Renda per capita, escolaridade, taxa de alfabetização entre adultos e expectativa de vida ao nascer.",
+      "Taxa de fecundidade, PIB por habitante, população empregada no setor primário.",
+      "Taxa de mortalidade infantil, valor do salário mínimo, taxa de natalidade"
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 3,
+    "instituicao": "BRASIL ESCOLA",
+    "ano": "2022",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "O cálculo do PIB de um país, estado ou região atende a diversas finalidades. Das alternativas abaixo, assinale a que não corresponde a uma das utilidades desse importante índice econômico:",
+    "alternativas": [
+      "É útil para evidenciar possíveis diagnósticos sobre problemas estruturais e financeiros.",
+      "É um importante indicador para analisar a população relativa de um país e o seu crescimento vegetativo.",
+      "Serve para estabelecer uma medição das riquezas que foram produzidas no país a fim de comparar o nível do crescimento",
+      "Pode enunciar eventuais problemas em algumas atividades, demandando ações públicas para corrigir essas dificuldades",
+      "O cálculo do PIB fornece informações sobre os diferentes setores, demonstrando aqueles em que há uma maior geração de renda e os que possuem menor peso."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 4,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "3ano/img/305/t5q4.png",
+    "pergunta": "(2020) Observe o mapa abaixo sobre a distribuição do índice de Gini no mundo:\n\nAssinale a alternativa incorreta sobre este índice:",
+    "alternativas": [
+      "Trata-se de um instrumento utilizado para medir a desigualdade social de um determinado país, unidade federativa ou município.",
+      "É medida em uma escala de 0 (quando não há desigualdade) a 1 (com desigualdade máxima).",
+      "Ele pode mensurar a desigualdade de renda em termos dinâmicos, não sendo necessário sua associação com outros indicadores, como IDH, PIB ou PIB per capita",
+      "No mapa é possível observar que o Brasil encontra-se nas piores posições ao lado de países da África, sudeste asiático e Oceania."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 5,
+    "instituicao": "UNESP",
+    "ano": "2019",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "O cálculo do Produto Interno Bruto (PIB) busca expressar o dinamismo de uma economia a partir da soma das riquezas produzidas por um país durante determinado período. No entanto, o cálculo do PIB ignora",
+    "alternativas": [
+      "os valores consumidos pelas importações, o que artificializa cálculos superavitários.",
+      "os gastos do governo, o que interfere na produção de bens e serviços.",
+      "a dimensão territorial, condição que interfere na paridade do cálculo.",
+      "os investimentos de empresas, mascarados em balanços comerciais positivos.",
+      "a apropriação da riqueza gerada, o que prejudica análises sociais."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 6,
+    "instituicao": "UECE",
+    "ano": "2018",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "Sobre a desigualdade geográfica do desenvolvimento humano, é correto afirmar que:",
+    "alternativas": [
+      "no que diz respeito aos problemas sociais que crescem no mundo, a noção de segregação, associada ao fenômeno de exclusão de direitos por parte de algumas pessoas, ainda não atingiu a população residente nos países europeus.",
+      "mesmo nos países considerados muito ricos, tais como Estados Unidos e Inglaterra, em suas grandes cidades existem áreas ou bairros onde reinam a violência, a delinquência, a economia informal e atividades ilícitas, e a população residente nesses locais é desprovida de serviços públicos de qualidade.",
+      "as disparidades do binômio riqueza-pobreza ainda são marcantes entre certos grupos de países no mundo; porém, o mesmo não se observa no interior do território de cada país, geralmente marcado por homogeneidade no que tange ao bem-estar social da população.",
+      "as desigualdades sociais entre zonas rurais e urbanas — um dos contrastes geográficos mais flagrantes já sentidos pela humanidade — foram superadas com o advento da biotecnologia voltada à produção de alimentos."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 7,
+    "instituicao": "UNESP",
+    "ano": "2016",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "3ano/img/305/t5q7.png",
+    "pergunta": "A charge ironiza uma das variáveis que compõem o cálculo do Índice de Desenvolvimento Humano proposto pela Organização das Nações Unidas, a saber,",
+    "alternativas": [
+      "a renda, pela referência ao dia em que as personagens almoçaram.",
+      "a expectativa de vida, pela alusão ao condicionamento físico da personagem que move o carrinho.",
+      "a renda, pela referência aos objetos de alto valor agregado que as personagens carregam",
+      "a escolaridade, pela alusão à língua portuguesa empregada em sua forma padrão pelas personagens.",
+      "a mobilidade, pela referência ao meio de transporte utilizado pelas personagens."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 8,
+    "instituicao": "UERJ",
+    "ano": "2016",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "3ano/img/305/t5q8.png",
+    "pergunta": "O Índice de Desenvolvimento Humano Municipal (IDH-M) é composto por três indicadores: longevidade, educação e renda. No Brasil, o IDH-M cresceu 47,5% entre 1991 e 2010, conforme os mapas.\n\nGeograficamente, o desenvolvimento humano no Brasil apresenta mudanças decorrentes dos seguintes fatores principais:",
+    "alternativas": [
+      "erradicação do analfabetismo – elevação do PIB.",
+      "desaceleração do desemprego – incremento da industrialização.",
+      "decréscimo da natalidade – crescimento da qualificação profissional.",
+      "diminuição da mortalidade infantil – aumento da expectativa de vida"
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 9,
+    "instituicao": "UFTM",
+    "ano": "2012",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "3ano/img/305/t5q9.png",
+    "pergunta": "O Coeficiente de Gini é uma relação estatística para medir a desigualdade social, incluindo a distribuição de renda, e varia de 0 (zero) a 1 (um). O gráfico apresenta, no período de 2005 a 2009, os coeficientes encontrados em alguns países do G20, onde para a distribuição de renda o coeficiente 0 corresponde à completa igualdade na renda (todos detêm a mesma renda per capita) e o coeficiente 1 corresponde à completa desigualdade entre as rendas.\n\nA partir da análise do gráfico, é correto afirmar que, no período e dentre os países analisados,",
+    "alternativas": [
+      "o Brasil é o segundo país com maior desigualdade na distribuição de renda dentre os países do G20.",
+      "o Brasil apresenta a melhor taxa de distribuição de renda dos países da América Latina.",
+      "assim como no Brasil, os governos de países de economias emergentes priorizaram a melhoria na distribuição de renda.",
+      "a África do Sul apresenta a melhor distribuição de renda do grupo em função dos recursos minerais existentes em seu território.",
+      "países desenvolvidos como França, Alemanha e Canadá, embora apresentem economia estável, possuem elevados índices de desigualdade social."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 10,
+    "instituicao": "UFLA-MG",
+    "ano": "2012",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "“[...] pode ser definido como um processo abrangente de expansão do exercício do direito de escolhas individuais em diversas áreas: econômica, política, social ou cultural. Algumas dessas escolhas são básicas para a vida humana. [...] Tal noção [...] está ligada às condições sociais em que as pessoas vivem, ao padrão de consumo da sociedade em que estão inseridas e muitos outros fatores”.",
+    "fonte_apoio": "Programa das Nações Unidas para o Desenvolvimento - PNUD, 1998, p. 35-6.",
+    "pergunta": "Com base nessa premissa, a partir de 1990, a ONU criou um parâmetro fundamentado nas variáveis: expectativa de vida ao nascer; escolaridade e produto interno bruto per capita.\n\nO parâmetro a que se referem as variáveis e que, por sua vez, completa o trecho citado é:",
+    "alternativas": [
+      "Sistema de Avaliação da Educação Básica – SAEB.",
+      "Índice de Desenvolvimento Humano - IDH.",
+      "Índice de Pobreza Humana – IPH.",
+      "Produto Interno Bruto – PIB."
+    ],
+    "correta": 1,
+    "comentario": ""
+  }
+]

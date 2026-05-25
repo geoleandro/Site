@@ -1,1108 +1,554 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-    <title>3º ano - Texto 13 </title>
-
-
-
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-
-        .postit-tp9 {
-            background: #f5ff9e;
-
-            width: 40%;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-
-
-        .imagem-fundo {
-            background-image: url('../../../fotoIndex/cortica.jpg');
-            background-size: auto;
-            background-repeat: inherit;
-            padding: 0px;
-            /* Ajuste conforme necessário */
-        }
-
-
-        /* 
-Css do memory card */
-    </style>
-
-
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<link href="../../../estilos/index-estilo.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="../../../estilos/navbar.css" rel="stylesheet"/>
+<link href="../../../estilos/rpg-sistema.css" rel="stylesheet"/>
+<link href="../../../estilos/ModeloCss.css" rel="stylesheet"/>
+<link href="../../../fotoIndex/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"></script>
+<script defer="" src="../../../js/duvid-cache.js"></script>
+<script defer="" src="../../../js/duvid-db.js"></script>
+<script defer="" src="../../../js/duvid-audio.js"></script>
+<script defer="" src="../../../js/duvid-ui.js"></script>
+<script defer="" src="../../../js/duvid-core.js"></script>
+<script defer="" src="../../../estilos/jstextos-padrao.js"></script>
+<script defer="" src="../../../js/abrirmenu.js"></script>
+<script defer="" src="../../../js/carregar.js"></script>
+<script defer="" src="../../../js/aulas-geral.js"></script>
+<title>3º ano - Texto 13</title>
 </head>
-
 <body>
-
-
-
-    <div class="topico">
-
-        <div class="centerBar">
-
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
-
-                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
-            </div>
-        </div>
-
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
-            </div>
-        </div>
-
-
-
-        <h1 id="h1"> Texto 13 - Agropecuária mundial: sistemas agrícolas
-
-        </h1>
-
-
-        <p><strong> Conteúdo:</strong> Práticas agrícolas, condições socioterritoriais, formas de acesso à terra e
-            técnicas e relações de trabalho. Sistemas agrícolas. </p>
-
-        <p><strong>Objetivo:</strong> Identificar e compreender as condições sociais e territoriais que determinam as
-            práticas agrícolas, com destaque para as formas de acesso à terra e para as técnicas e relações de trabalho
-            utilizadas. Descrever e comparar alguns exemplos de sistemas agrícolas existentes hoje no mundo.
-        </p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Introdução </h2>
-
-
-        <p> <span class="primeiraLetra">N</span>a aula anterior, vimos a Nova Ordem Mundial Multipolar e como o cenário
+<div id="header-placeholder"></div>
+<div class="w3-margin-top" id="aviso-status"></div>
+<main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+<div class="topico">
+<div class="w3-padding-top-48"></div>
+<h1 id="h1"> </h1>
+<div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+<div class="w3-row">
+<div class="w3-col s2 m1 w3-center">
+<i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+</div>
+<div class="w3-col s10 m11 w3-padding-small">
+<b class="fontePixel">OUVIR AULA</b>
+<p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+</div>
+</div>
+<audio controls="" style="width:100%; margin-top: 10px;">
+<source id="audioSource" src="" type="audio/mp3"/>
+</audio>
+</div>
+<div class="w3-container w3-padding-16">
+<p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+<p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+</div>
+<button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+<i class="fa fa-play"></i> Iniciar Aula
+            </button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Introdução </h2>
+<p> <span class="primeiraLetra">N</span>a aula anterior, vimos a Nova Ordem Mundial Multipolar e como o cenário
             geopolítico e econômico do mundo se transformou. </p>
-
-
-
-        <p>Hoje vamos expandir essa análise para as práticas agrícolas e as relações com o espaço geográfico atual </p>
-
-        <p>A agricultura não escapou do movimento de modernização do meio técnico científico informacional. É isso que
+<p>Hoje vamos expandir essa análise para as práticas agrícolas e as relações com o espaço geográfico atual </p>
+<p>A agricultura não escapou do movimento de modernização do meio técnico científico informacional. É isso que
             vamos estudar hoje!</p>
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-    <div class="topico">
-        <h2>Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
-            <ul style="list-style-type: none;">
-                <li>1. Por que a agricultura é considerada um pilar fundamental da humanidade? Explique.</li>
-                <li>2. Quais são os principais benefícios do Meio Técnico-Científico-Informacional (MTCI) na
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+<div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+<ul style="list-style-type: none;">
+<li>1. Por que a agricultura é considerada um pilar fundamental da humanidade? Explique.</li>
+<li>2. Quais são os principais benefícios do Meio Técnico-Científico-Informacional (MTCI) na
                     agricultura? Dê exemplos.</li>
-                <li>3. Descreva um exemplo de como a agricultura arcaica impactou o desenvolvimento das primeiras
+<li>3. Descreva um exemplo de como a agricultura arcaica impactou o desenvolvimento das primeiras
                     civilizações.</li>
-                <li>4. Qual é o papel da rotação de culturas na agricultura? Explique como essa prática beneficia o
+<li>4. Qual é o papel da rotação de culturas na agricultura? Explique como essa prática beneficia o
                     solo.</li>
-                <li>5. Por que a urbanização pode afetar a produção agrícola em áreas rurais? Dê um exemplo.</li>
-                <li>6. Explique como o afolhamento contribui para a proteção e enriquecimento do solo na agricultura.
+<li>5. Por que a urbanização pode afetar a produção agrícola em áreas rurais? Dê um exemplo.</li>
+<li>6. Explique como o afolhamento contribui para a proteção e enriquecimento do solo na agricultura.
                 </li>
-                <li>7. O que são plantation na agricultura? Dê um exemplo de um país que é um grande produtor de uma
+<li>7. O que são plantation na agricultura? Dê um exemplo de um país que é um grande produtor de uma
                     cultura específica em plantation.</li>
-                <li>8. Por que a produção mundial de alimentos é crucial para a segurança alimentar global? Explique.
+<li>8. Por que a produção mundial de alimentos é crucial para a segurança alimentar global? Explique.
                 </li>
-                <li>9. Como o comércio internacional de alimentos pode beneficiar os países exportadores e importadores?
+<li>9. Como o comércio internacional de alimentos pode beneficiar os países exportadores e importadores?
                     Dê exemplos.</li>
-                <li>10. Em sua opinião, qual é a importância de se adotar práticas sustentáveis na agricultura? Dê sua
+<li>10. Em sua opinião, qual é a importância de se adotar práticas sustentáveis na agricultura? Dê sua
                     perspectiva sobre os benefícios de práticas agrícolas sustentáveis para o futuro.</li>
-            </ul>
-        </div>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-
-
-    <div class="topico">
-        <h2>Importância da Agricultura no Mundo</h2>
-
-        <p>A agricultura é um dos pilares fundamentais da humanidade, sendo responsável por produzir alimentos, fibras e
+</ul>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Importância da Agricultura no Mundo</h2>
+<p>A agricultura é um dos pilares fundamentais da humanidade, sendo responsável por produzir alimentos, fibras e
             matérias-primas essenciais para a nossa sobrevivência e o desenvolvimento das sociedades. Seu impacto vai
             desde as comunidades rurais mais remotas até as economias globais.</p>
-
-        <div class="w3-margin"><img id="imagem1" src="tt13f01.png" alt="tt13f01" class="w3-mobile">
-
-            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: https://www.pexels.com/.</span>
-
-        </div>
-
-
-        <h3>Por que a Agricultura é Importante?</h3>
-
-        <p><strong>Segurança Alimentar e Nutricional:</strong> Com o crescimento da população mundial, a agricultura
+<div class="w3-margin"><img alt="tt13f01" class="w3-mobile" id="imagem1" src="tt13f01.png"/>
+<span class="w3-small w3-margin-left" id="citacao1"> Fonte: https://www.pexels.com/.</span>
+</div>
+<h3>Por que a Agricultura é Importante?</h3>
+<p><strong>Segurança Alimentar e Nutricional:</strong> Com o crescimento da população mundial, a agricultura
             desempenha um papel crucial em garantir que milhões de pessoas tenham acesso a alimentos básicos para uma
             vida saudável.</p>
-
-        <p><strong>Contribuição para a Economia Global:</strong> Além de alimentar o mundo, a agricultura é um setor
+<p><strong>Contribuição para a Economia Global:</strong> Além de alimentar o mundo, a agricultura é um setor
             econômico vital para muitos países. Ela contribui significativamente para o Produto Interno Bruto (PIB),
             gerando empregos e impulsionando o comércio internacional.</p>
-
-
-
-
-
-
-
-        <div class="w3-margin"><img id="imagem2" src="tt13f02.png" alt="tt13f02" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao2"> </span>
-        </div>
-
-
-        <p><strong>Sustentabilidade Ambiental:</strong> A forma como cultivamos nossos alimentos afeta diretamente a
+<div class="w3-margin"><img alt="tt13f02" class="w3-mobile" id="imagem2" src="tt13f02.png"/>
+<span class="w3-small w3-margin-left" id="citacao2"> </span>
+</div>
+<p><strong>Sustentabilidade Ambiental:</strong> A forma como cultivamos nossos alimentos afeta diretamente a
             saúde do planeta. Práticas agrícolas sustentáveis, como o cuidado com o solo e a conservação da água, são
             essenciais para proteger o meio ambiente a longo prazo.</p>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-
-
-
-
-    <div class="topico">
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Qual a importância da agricultura para a humanidade?</h4>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0'); this.style.backgroundColor='tomato'">
-            É uma atividade recreativa sem grande impacto
-        </button>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'certo! A agricultura é crucial para alimentar a população mundial e fornecer matérias-primas fundamentais','2'); this.style.backgroundColor='lightgreen'">
-
-            Fornece alimentos essenciais e matérias-primas para a sobrevivência humana
-        </button>
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0'); this.style.backgroundColor='tomato'">
-            Contribui para o desenvolvimento de tecnologias espaciais
-        </button>
-
-        <p id="resp1"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
-                    width="64" height="64">
-            </p>
-        </div>
-
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <div class="w3-panel w3-pale-green w3-leftbar w3-border-green w3-padding">
-            <h2>Histórico da Agricultura no Mundo</h2>
-
-            <h3>Agricultura Arcaica</h3>
-
-            <div class="w3-margin"><img id="imagem3" src="tt13f03.png" alt="tt13f03" class="w3-mobile">
-
-                <span class="w3-small w3-margin-left" id="citacao3"></span>
-
-            </div>
-
-            <p>A agricultura arcaica marca o início das práticas agrícolas na história da humanidade. Foi nesse período
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Qual a importância da agricultura para a humanidade?</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p1a" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1a">
+<span>a) É uma atividade recreativa sem grande impacto</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1b" name="pergunta1" type="radio" value="correto"/>
+<label class="card-opcao" for="p1b">
+<span>b) Fornece alimentos essenciais e matérias-primas para a sobrevivência humana</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1c" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1c">
+<span>c) Contribui para o desenvolvimento de tecnologias espaciais</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'certo! A agricultura é crucial para alimentar a população mundial e fornecer matérias-primas fundamentais', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp1"></p>
+<div class="area w3-center">
+<img height="64" id="globinho1" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<div class="w3-panel w3-pale-green w3-leftbar w3-border-green w3-padding">
+<h2>Histórico da Agricultura no Mundo</h2>
+<h3>Agricultura Arcaica</h3>
+<div class="w3-margin"><img alt="tt13f03" class="w3-mobile" id="imagem3" src="tt13f03.png"/>
+<span class="w3-small w3-margin-left" id="citacao3"></span>
+</div>
+<p>A agricultura arcaica marca o início das práticas agrícolas na história da humanidade. Foi nesse período
                 que as comunidades humanas começaram a abandonar o nomadismo em busca de alimentos e passaram a cultivar
                 plantas e criar animais. Algumas das civilizações antigas que se destacaram nesse período foram:</p>
-            <ul>
-                <li><strong>Mesopotâmia:</strong> Conhecida como o "berço da civilização", a Mesopotâmia, localizada
+<ul>
+<li><strong>Mesopotâmia:</strong> Conhecida como o "berço da civilização", a Mesopotâmia, localizada
                     entre os rios Tigre e Eufrates, desenvolveu técnicas de irrigação que permitiram o cultivo de grãos
                     como cevada e trigo. Cidades como Ur e Babilônia prosperaram graças à agricultura.</li>
-
-
-               
-
-            </ul>
-
-            <div class="w3-margin"><img id="imagem4" src="tt13f04.png" alt="tt13f04" class="w3-mobile">
-
-                <span class="w3-small w3-margin-left" id="citacao4">  </span>
-
-            </div>
-
-                <ul>
-                <li><strong>Egito Antigo:</strong> Às margens do rio Nilo, o Egito Antigo floresceu com uma agricultura
+</ul>
+<div class="w3-margin"><img alt="tt13f04" class="w3-mobile" id="imagem4" src="tt13f04.png"/>
+<span class="w3-small w3-margin-left" id="citacao4"> </span>
+</div>
+<ul>
+<li><strong>Egito Antigo:</strong> Às margens do rio Nilo, o Egito Antigo floresceu com uma agricultura
                     altamente produtiva. A inundação anual do rio depositava nutrientes ricos nas terras, permitindo o
                     cultivo de uma variedade de culturas, incluindo trigo, cevada, linho e vegetais.</li>
-
-
-
-
-
-                   
-                   
-            </ul>
-
-            <div class="w3-margin"><img id="imagem5" src="tt13f05.png" alt="tt13f05" class="w3-mobile" >
-    
-                <span class="w3-small w3-margin-left" id="citacao5" >  </span>
-               </div>
-
-            <h3>Agricultura Moderna</h3>
-
-
-            <p>A transição para a agricultura moderna foi marcada pelas Revoluções Agrícolas, momentos de grandes
+</ul>
+<div class="w3-margin"><img alt="tt13f05" class="w3-mobile" id="imagem5" src="tt13f05.png"/>
+<span class="w3-small w3-margin-left" id="citacao5"> </span>
+</div>
+<h3>Agricultura Moderna</h3>
+<p>A transição para a agricultura moderna foi marcada pelas Revoluções Agrícolas, momentos de grandes
                 avanços tecnológicos e práticas inovadoras que aumentaram significativamente a produção de alimentos. Um
                 exemplo notável desse período é a Revolução Verde.</p>
-
-             
-
-
-
-
-            <ul>
-                <li><strong>Índia:</strong> A Índia é um dos países que se beneficiaram enormemente da Revolução Verde.
+<ul>
+<li><strong>Índia:</strong> A Índia é um dos países que se beneficiaram enormemente da Revolução Verde.
                     No final do século XX, o país estava enfrentando uma crise alimentar devido ao rápido crescimento
                     populacional. No entanto, com a introdução de variedades de alto rendimento de trigo e arroz, além
                     do uso intensivo de fertilizantes e irrigação, a Índia conseguiu se tornar autossuficiente em
                     produção de alimentos. Isso teve um impacto significativo na redução da fome e da pobreza no país.
                 </li>
-
-              
-            </ul>
-
-            <div class="w3-margin"><img id="imagem6" src="tt13f06.png" alt="tt13f06" class="w3-mobile" >
-     
-                <span class="w3-small w3-margin-left" id="citacao6" > Uso de fertilizantes na agricultura indiana.</span>
-                
-                </div>
-
-            <h3>Agricultura Contemporânea</h3>
-            <p>Na agricultura contemporânea, o uso de tecnologia, biotecnologia e práticas sustentáveis está moldando o
+</ul>
+<div class="w3-margin"><img alt="tt13f06" class="w3-mobile" id="imagem6" src="tt13f06.png"/>
+<span class="w3-small w3-margin-left" id="citacao6"> Uso de fertilizantes na agricultura indiana.</span>
+</div>
+<h3>Agricultura Contemporânea</h3>
+<p>Na agricultura contemporânea, o uso de tecnologia, biotecnologia e práticas sustentáveis está moldando o
                 futuro da produção de alimentos. Países líderes nesse campo estão desenvolvendo métodos inovadores para
                 enfrentar os desafios da produção agrícola no século XXI.</p>
-
-
-            <ul>
-                <li><strong>Israel:</strong> Apesar de seu tamanho pequeno e de seu clima desafiador, Israel se tornou
+<ul>
+<li><strong>Israel:</strong> Apesar de seu tamanho pequeno e de seu clima desafiador, Israel se tornou
                     um líder em tecnologias agrícolas. O país é conhecido por suas práticas avançadas de irrigação, como
                     o gotejamento, que permite uma utilização eficiente da água. Além disso, Israel investe em pesquisa
                     e desenvolvimento de variedades de plantas resistentes a condições extremas, como a seca,
                     tornando-se um exemplo de como a inovação pode transformar a agricultura.</li>
-
-                    
-            </ul>
-
-            
-            <div class="w3-margin"><img id="imagem7" src="tt13f07.png" alt="tt13f07" class="w3-mobile" >
-    
-                <span class="w3-small w3-margin-left" id="citacao7" > Agricultura irrigada em Israel. </span>
-                </div>
-
-            <p>Esses exemplos ilustram a evolução da agricultura ao longo dos séculos, desde as práticas rudimentares
+</ul>
+<div class="w3-margin"><img alt="tt13f07" class="w3-mobile" id="imagem7" src="tt13f07.png"/>
+<span class="w3-small w3-margin-left" id="citacao7"> Agricultura irrigada em Israel. </span>
+</div>
+<p>Esses exemplos ilustram a evolução da agricultura ao longo dos séculos, desde as práticas rudimentares
                 das civilizações antigas até a tecnologia de ponta e as abordagens sustentáveis da agricultura
                 contemporânea. A história da agricultura é uma narrativa de adaptação e inovação, essenciais para
                 alimentar uma população em constante crescimento em todo o mundo.</p>
-
-        </div>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
-        <hr>
-    </div>
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>As técnicas agrícolas antigas, apesar de não serem informatizadas, tiveram um impacto significativo na
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>As técnicas agrícolas antigas, apesar de não serem informatizadas, tiveram um impacto significativo na
             modificação do espaço geográfico, como evidenciado pela construção de sistemas de irrigação, desmatamento
-            para expansão agrícola e o surgimento de assentamentos permanentes.</h4>
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'verdade! As técnicas agrícolas antigas contribuíram para a modificação do espaço geográfico','2'); this.style.backgroundColor='lightgreen'">
-
-            Verdadeiro
-        </button>
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0'); this.style.backgroundColor='tomato'">
-
-            Falso
-        </button>
-
-
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
-                    width="64" height="64">
-            </p>
-        </div>
-
-        <hr>
-
-    </div>
-
-
-
-    <div class="topico">
-        <h2>Relação entre Campo e Cidade no Mundo Atual</h2>
-
-        <h3>Diferenças na População Rural e Urbana</h3>
-
-
-
-        <p>No mundo contemporâneo, a distribuição da população entre áreas rurais e urbanas desempenha um papel crucial
+            para expansão agrícola e o surgimento de assentamentos permanentes.</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p2a" name="pergunta2" type="radio" value="correto"/>
+<label class="card-opcao" for="p2a">
+<span>a) Verdadeiro</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2b" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2b">
+<span>b) Falso</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'verdade! As técnicas agrícolas antigas contribuíram para a modificação do espaço geográfico', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp2"></p>
+<div class="area w3-center">
+<img height="64" id="globinho2" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2>Relação entre Campo e Cidade no Mundo Atual</h2>
+<h3>Diferenças na População Rural e Urbana</h3>
+<p>No mundo contemporâneo, a distribuição da população entre áreas rurais e urbanas desempenha um papel crucial
             na dinâmica socioeconômica dos países. Essa relação varia consideravelmente ao redor do globo, com impactos
             significativos na agricultura e no desenvolvimento urbano.</p>
-
-
-
-            <div class="w3-margin"><img id="imagem8" src="tt13f08.png" alt="8" class="w3-mobile" >
-
-                <span class="w3-small w3-margin-left" id="citacao8" >  </span>
-               
-               </div>
-
-        <p><strong>Índia:</strong> Um exemplo marcante dessa relação é a Índia, um país com uma vasta população rural e
+<div class="w3-margin"><img alt="8" class="w3-mobile" id="imagem8" src="tt13f08.png"/>
+<span class="w3-small w3-margin-left" id="citacao8"> </span>
+</div>
+<p><strong>Índia:</strong> Um exemplo marcante dessa relação é a Índia, um país com uma vasta população rural e
             uma crescente urbanização. Enquanto cerca de 60% da população indiana ainda vive em áreas rurais, as cidades
             como Mumbai, Nova Delhi e Bangalore têm testemunhado um rápido crescimento populacional e econômico. Esse
             contraste entre o campo e a cidade na Índia reflete desafios e oportunidades únicas, como a necessidade de
             modernização agrícola e o surgimento de centros urbanos como polos de desenvolvimento econômico.</p>
-
-        <h3>Impacto da Urbanização na Agricultura</h3>
-        <p>A urbanização, processo pelo qual a população migra das áreas rurais para as áreas urbanas, tem um impacto
+<h3>Impacto da Urbanização na Agricultura</h3>
+<p>A urbanização, processo pelo qual a população migra das áreas rurais para as áreas urbanas, tem um impacto
             direto na agricultura, principalmente em países em desenvolvimento.</p>
-
-        <p><strong>China:</strong> Um exemplo notável é a China, que experimentou uma das maiores migrações urbanas da
+<p><strong>China:</strong> Um exemplo notável é a China, que experimentou uma das maiores migrações urbanas da
             história. Milhões de pessoas deixaram o campo em busca de oportunidades nas cidades. Esse êxodo rural teve
             um impacto significativo na agricultura chinesa, com áreas rurais enfrentando uma diminuição da mão de obra
             agrícola e mudanças nos padrões de produção. Além disso, a urbanização também tem levado à conversão de
             terras agrícolas em áreas urbanas, o que pode afetar a produção de alimentos e a segurança alimentar.</p>
-
-        <p>Esses exemplos destacam a complexa relação entre campo e cidade no mundo atual. Enquanto a urbanização
+<p>Esses exemplos destacam a complexa relação entre campo e cidade no mundo atual. Enquanto a urbanização
             oferece oportunidades econômicas e sociais para muitos, também apresenta desafios para a agricultura,
             exigindo inovação, modernização e planejamento cuidadoso para garantir a segurança alimentar e o
             desenvolvimento sustentável.</p>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
-        <hr>
-    </div>
-
-
-
-
-
-    <div class="topico">
-
-        <div class="w3-panel w3-pale-red w3-leftbar w3-border-red w3-padding">
-            <h2>Sistemas Agrícolas e Técnicas de Cultivo</h2>
-
-            <p><strong>Rotação de Culturas</strong></p>
-            <p>A rotação de culturas é uma prática agrícola essencial que envolve a alternância de diferentes tipos de
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+<hr/>
+</div>
+<div class="topico">
+<div class="w3-panel w3-pale-red w3-leftbar w3-border-red w3-padding">
+<h2>Sistemas Agrícolas e Técnicas de Cultivo</h2>
+<p><strong>Rotação de Culturas</strong></p>
+<p>A rotação de culturas é uma prática agrícola essencial que envolve a alternância de diferentes tipos de
                 plantações em uma mesma área ao longo do tempo. Essa técnica é fundamental para manter a saúde do solo,
                 evitar o esgotamento de nutrientes e reduzir a incidência de pragas e doenças.</p>
-
-            <p><strong>Brasil:</strong> Um exemplo notável é o Brasil, onde a rotação de culturas é amplamente adotada.
+<p><strong>Brasil:</strong> Um exemplo notável é o Brasil, onde a rotação de culturas é amplamente adotada.
                 Muitos agricultores brasileiros alternam o cultivo de soja com milho, por exemplo. Isso não apenas ajuda
                 a melhorar a fertilidade do solo, mas também contribui para uma produção agrícola mais sustentável e
                 diversificada.</p>
-
-
-                <div class="w3-margin"><img id="imagem9" src="tt13f09.png" alt="tt13f09" class="w3-mobile" >
-
-                    <span class="w3-small w3-margin-left" id="citacao9" > Fonte: https://runcloud.auer-gruppe.de/gr/o-que-e-rotacao-de-cultura.html. </span>
-                  </div>
-
-            <p><strong>Afolhamento</strong></p>
-            <p>O afolhamento é uma técnica que envolve o uso de plantas de cobertura para proteger e enriquecer o solo.
+<div class="w3-margin"><img alt="tt13f09" class="w3-mobile" id="imagem9" src="tt13f09.png"/>
+<span class="w3-small w3-margin-left" id="citacao9"> Fonte: https://runcloud.auer-gruppe.de/gr/o-que-e-rotacao-de-cultura.html. </span>
+</div>
+<p><strong>Afolhamento</strong></p>
+<p>O afolhamento é uma técnica que envolve o uso de plantas de cobertura para proteger e enriquecer o solo.
                 Essas plantas, geralmente cultivadas entre as safras principais, ajudam a evitar a erosão, melhorar a
                 estrutura do solo e fornecer matéria orgânica valiosa.</p>
-
-            <p><strong>Canadá:</strong> No Canadá, o uso de trevo e aveia como plantas de cobertura é comum. Essas
+<p><strong>Canadá:</strong> No Canadá, o uso de trevo e aveia como plantas de cobertura é comum. Essas
                 plantas não apenas protegem o solo durante os períodos em que não há cultivos principais, mas também
                 ajudam a fixar nitrogênio no solo, reduzindo a necessidade de fertilizantes químicos.</p>
-
-            <p><strong>Agricultura em Curvas de Nível</strong></p>
-            <p>A agricultura em curvas de nível é uma prática de manejo do solo projetada para reduzir a erosão e
+<p><strong>Agricultura em Curvas de Nível</strong></p>
+<p>A agricultura em curvas de nível é uma prática de manejo do solo projetada para reduzir a erosão e
                 conservar a água. Essa técnica envolve o cultivo das terras em níveis horizontais, seguindo as curvas
                 naturais do terreno.</p>
-
-
-
-            <p><strong>Filipinas:</strong> Um exemplo impressionante são os terraços agrícolas nas Filipinas. Por
+<p><strong>Filipinas:</strong> Um exemplo impressionante são os terraços agrícolas nas Filipinas. Por
                 séculos, os agricultores filipinos têm construído terraços em encostas de montanhas, criando degraus de
                 cultivo que ajudam a reter a água da chuva, reduzir a erosão e maximizar o espaço disponível para o
                 cultivo de arroz e outros cultivos.</p>
-
-
-                <div class="w3-margin"><img id="imagem10" src="tt13f010.png" alt="tt13f010" class="w3-mobile" >
-     
-                    <span class="w3-small w3-margin-left" id="citacao10" > Terraços de arroz nas Filipinas. </span>
-                    </div>
-
-            <p><strong>Plantio Direto</strong></p>
-            <p>O plantio direto é uma prática em que as sementes são plantadas diretamente no solo sem a necessidade de
+<div class="w3-margin"><img alt="tt13f010" class="w3-mobile" id="imagem10" src="tt13f010.png"/>
+<span class="w3-small w3-margin-left" id="citacao10"> Terraços de arroz nas Filipinas. </span>
+</div>
+<p><strong>Plantio Direto</strong></p>
+<p>O plantio direto é uma prática em que as sementes são plantadas diretamente no solo sem a necessidade de
                 aração prévia. Essa técnica ajuda a conservar a umidade do solo, reduzir a perda de nutrientes e
                 melhorar a estrutura do solo.</p>
-
-            <p><strong>Estados Unidos:</strong> No Meio-Oeste dos Estados Unidos, o plantio direto é amplamente adotado.
+<p><strong>Estados Unidos:</strong> No Meio-Oeste dos Estados Unidos, o plantio direto é amplamente adotado.
                 Agricultores nessa região utilizam essa técnica em larga escala para cultivar culturas como milho e
                 soja. O resultado é uma redução significativa na erosão do solo e uma maior eficiência no uso de insumos
                 agrícolas.</p>
-
-            <p>Essas técnicas e sistemas agrícolas representam a busca contínua por práticas mais sustentáveis,
+<p>Essas técnicas e sistemas agrícolas representam a busca contínua por práticas mais sustentáveis,
                 eficientes e amigáveis ao meio ambiente na produção de alimentos ao redor do mundo. Ao incorporar essas
                 inovações, os agricultores podem não apenas melhorar a produtividade, mas também contribuir para a
                 conservação dos recursos naturais e a proteção do solo a longo prazo.</p>
-
-        </div>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
-        <h2>Classificação das Atividades Agrícolas</h2>
-
-        <div class="w3-margin"><img id="imagem11" src="tt13f011.png" alt="tt13f011" class="w3-mobile" >
-     
-            <span class="w3-small w3-margin-left" id="citacao11" >  </span>
-            
-        
-        </div>
-
-        <h3>Agricultura de Subsistência</h3>
-        <p>A agricultura de subsistência é aquela em que os agricultores produzem alimentos principalmente para o
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Classificação das Atividades Agrícolas</h2>
+<div class="w3-margin"><img alt="tt13f011" class="w3-mobile" id="imagem11" src="tt13f011.png"/>
+<span class="w3-small w3-margin-left" id="citacao11"> </span>
+</div>
+<h3>Agricultura de Subsistência</h3>
+<p>A agricultura de subsistência é aquela em que os agricultores produzem alimentos principalmente para o
             consumo próprio e de suas famílias, com uma produção limitada para o mercado.</p>
-        <p><strong>Nepal:</strong> Um exemplo notável é o Nepal, onde a agricultura de subsistência é uma prática comum
+<p><strong>Nepal:</strong> Um exemplo notável é o Nepal, onde a agricultura de subsistência é uma prática comum
             em muitas áreas rurais. Os agricultores no Nepal cultivam arroz, legumes e outras culturas para atender às
             necessidades alimentares de suas comunidades locais, com uma parte menor destinada à venda em mercados
             locais.</p>
-
-        <h3>Agricultura Comercial</h3>
-        <p>A agricultura comercial é caracterizada pela produção em larga escala de culturas destinadas principalmente à
+<h3>Agricultura Comercial</h3>
+<p>A agricultura comercial é caracterizada pela produção em larga escala de culturas destinadas principalmente à
             venda e ao mercado consumidor.</p>
-        <p><strong>Brasil:</strong> O Brasil é um exemplo destacado de agricultura comercial, sendo um dos líderes
+<p><strong>Brasil:</strong> O Brasil é um exemplo destacado de agricultura comercial, sendo um dos líderes
             mundiais na exportação de produtos agrícolas, como soja, milho, café e carne bovina. Grandes áreas de terras
             são dedicadas ao cultivo em larga escala para atender à demanda nacional e internacional.</p>
-
-
-
-            <div class="w3-margin"><img id="imagem12" src="tt13f012.png" alt="tt13f012" class="w3-mobile" >
-
-                <span class="w3-small w3-margin-left" id="citacao12" > </span>
-              </div>
-
-        <h3>Agricultura de Jardinagem</h3>
-        <p>A agricultura de jardinagem refere-se à produção agrícola em pequenas propriedades ou jardins familiares,
+<div class="w3-margin"><img alt="tt13f012" class="w3-mobile" id="imagem12" src="tt13f012.png"/>
+<span class="w3-small w3-margin-left" id="citacao12"> </span>
+</div>
+<h3>Agricultura de Jardinagem</h3>
+<p>A agricultura de jardinagem refere-se à produção agrícola em pequenas propriedades ou jardins familiares,
             geralmente com o objetivo de venda em mercados locais ou regionais.</p>
-        <p><strong>Quênia:</strong> No Quênia, a agricultura de jardinagem é uma parte significativa da economia rural.
+<p><strong>Quênia:</strong> No Quênia, a agricultura de jardinagem é uma parte significativa da economia rural.
             Muitas famílias têm pequenas parcelas de terra onde cultivam uma variedade de produtos, como frutas, legumes
             e ervas, para vender em mercados locais ou diretamente aos consumidores.</p>
-
-        <h3>Plantation</h3>
-        <p>As plantações são grandes propriedades agrícolas que se dedicam à produção em larga escala de uma única
+<h3>Plantation</h3>
+<p>As plantações são grandes propriedades agrícolas que se dedicam à produção em larga escala de uma única
             cultura, conhecida como monocultura.</p>
-        <p><strong>Costa do Marfim:</strong> Um exemplo emblemático de plantation é a Costa do Marfim, que é o principal
+<p><strong>Costa do Marfim:</strong> Um exemplo emblemático de plantation é a Costa do Marfim, que é o principal
             produtor mundial de cacau. As vastas plantações de cacau na Costa do Marfim são cultivadas de forma
             intensiva e destinadas principalmente à exportação para atender à demanda global por chocolate e produtos de
             cacau.</p>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-
-
-
-
-
-    <div class="topico">
-
-        <h2 class="w3-center ">Produção Mundial de Alimentos</h2>
-        <div class="w3-margin">
-
-            <table class="w3-table w3-striped w3-centered w3-mobile">
-                <tr>
-                    <th>Principais Grãos</th>
-                    <th>Líderes de Produção Mundial</th>
-                </tr>
-                <tr>
-                    <td>Milho</td>
-                    <td>Estados Unidos: Líder mundial na produção de milho, com vastas extensões de terras dedicadas a
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2 class="w3-center">Produção Mundial de Alimentos</h2>
+<div class="w3-margin">
+<table class="w3-table w3-striped w3-centered w3-mobile">
+<tr>
+<th>Principais Grãos</th>
+<th>Líderes de Produção Mundial</th>
+</tr>
+<tr>
+<td>Milho</td>
+<td>Estados Unidos: Líder mundial na produção de milho, com vastas extensões de terras dedicadas a
                         esse cereal.</td>
-                </tr>
-                <tr>
-                    <td>Trigo</td>
-                    <td>Rússia: Um dos maiores produtores de trigo do mundo, com extensas planícies de cultivo em suas
+</tr>
+<tr>
+<td>Trigo</td>
+<td>Rússia: Um dos maiores produtores de trigo do mundo, com extensas planícies de cultivo em suas
                         regiões.</td>
-                </tr>
-                <tr>
-                    <td>Arroz</td>
-                    <td>China: Principal produtor mundial de arroz, cultivando uma variedade de tipos de arroz em suas
+</tr>
+<tr>
+<td>Arroz</td>
+<td>China: Principal produtor mundial de arroz, cultivando uma variedade de tipos de arroz em suas
                         terras férteis.</td>
-                </tr>
-            </table>
-
-            <h2 class="w3-center">Exportação e Importação de Alimentos</h2>
-
-            <table class="w3-table w3-striped w3-centered w3-mobile">
-                <tr>
-                    <th>Principais Exportadores</th>
-                    <th>Principais Importadores</th>
-                </tr>
-                <tr>
-                    <td>Brasil: Líder mundial na exportação de soja, um dos principais produtos agrícolas do país.</td>
-                    <td>Japão: Importa uma grande quantidade de alimentos processados devido à sua demanda interna e à
+</tr>
+</table>
+<h2 class="w3-center">Exportação e Importação de Alimentos</h2>
+<table class="w3-table w3-striped w3-centered w3-mobile">
+<tr>
+<th>Principais Exportadores</th>
+<th>Principais Importadores</th>
+</tr>
+<tr>
+<td>Brasil: Líder mundial na exportação de soja, um dos principais produtos agrícolas do país.</td>
+<td>Japão: Importa uma grande quantidade de alimentos processados devido à sua demanda interna e à
                         escassez de terras agrícolas.</td>
-                </tr>
-                <tr>
-                    <td>Estados Unidos: Importante exportador de milho, fornecendo uma parte significativa do mercado
+</tr>
+<tr>
+<td>Estados Unidos: Importante exportador de milho, fornecendo uma parte significativa do mercado
                         global.</td>
-                    <td>Alemanha: Importante importador de carnes de diversos países, atendendo à demanda de seus
+<td>Alemanha: Importante importador de carnes de diversos países, atendendo à demanda de seus
                         consumidores.</td>
-                </tr>
-                <tr>
-                    <td>Países Baixos: Conhecidos por suas exportações de flores e produtos agrícolas de alto valor
+</tr>
+<tr>
+<td>Países Baixos: Conhecidos por suas exportações de flores e produtos agrícolas de alto valor
                         agregado.</td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h2 id="centralizado">Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-    
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<td></td>
+</tr>
+</table>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2 id="centralizado">Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
                 Quais são os impactos socioeconômicos da expansão das plantações de monocultura de soja na América do Sul?
             </strong> </p>
-    
-        <p><span class="primeiraLetra">R:</span> A expansão das plantações de monocultura de soja na América do Sul tem
+<p><span class="primeiraLetra">R:</span> A expansão das plantações de monocultura de soja na América do Sul tem
             gerado diversos impactos socioeconômicos. Isso inclui a concentração de terras em mãos de grandes empresas,
             levando à expulsão de pequenos agricultores e à desigualdade de acesso à terra. Além disso, a monocultura de
             soja pode resultar na perda de biodiversidade, impactando negativamente os ecossistemas locais. Do ponto de
             vista econômico, muitas vezes essa produção é destinada à exportação, o que pode criar uma dependência
             econômica e vulnerabilidade a oscilações no mercado internacional.</p>
-    
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
                 Como a intensificação da pecuária impacta as mudanças climáticas globais?
             </strong></p>
-    
-        <p><span class="primeiraLetra">R:</span> A intensificação da pecuária tem um papel significativo nas mudanças
+<p><span class="primeiraLetra">R:</span> A intensificação da pecuária tem um papel significativo nas mudanças
             climáticas globais. O aumento do número de animais em confinamento resulta em maiores emissões de gases de efeito
             estufa, como metano e óxido nitroso. Além disso, o desmatamento para criação de pastagens e produção de ração
             contribui para a liberação de dióxido de carbono na atmosfera. Esses fatores combinados aumentam a pegada
             ambiental da indústria pecuária, contribuindo para o aquecimento global e outros impactos climáticos.</p>
-    
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
                 Quais são os benefícios e desafios da agricultura orgânica em comparação com a agricultura convencional?
             </strong></p>
-    
-        <p><span class="primeiraLetra">R:</span> A agricultura orgânica traz diversos benefícios, como a redução do uso de
+<p><span class="primeiraLetra">R:</span> A agricultura orgânica traz diversos benefícios, como a redução do uso de
             agrotóxicos e fertilizantes químicos, preservação da biodiversidade e produção de alimentos mais saudáveis. No
             entanto, enfrenta desafios como menor produtividade por área cultivada, custos mais elevados de produção e
             controle de pragas e doenças sem o uso de produtos químicos. Além disso, a certificação orgânica pode ser um
             processo complexo e oneroso para os agricultores.</p>
-    
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
-        <br><br>
-    
-        <hr>
-    
-    </div>
-
-
-
-    <div class="topico">
-
-        <div class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-padding">
-
-        <h2> RESUMO </h2>
-
-        <h2> A Importância da Agricultura no Mundo </h2>
-    
-        <p><strong>Segurança Alimentar e Nutricional:</strong> Garante o acesso a alimentos básicos para uma vida saudável.</p>
-        <p><strong>Contribuição para a Economia Global:</strong> Importante setor econômico, contribui para o PIB, gera empregos e impulsiona o comércio internacional.</p>
-        <p><strong>Sustentabilidade Ambiental:</strong> Práticas agrícolas sustentáveis são essenciais para proteger o meio ambiente.</p>
-    
-        <h2> Meio Técnico-Científico-Informacional (MTCI) na Agricultura </h2>
-    
-        <p><strong>Mecanização Agrícola:</strong> Exemplo: EUA (tratores e colheitadeiras).</p>
-        <p><strong>Biotecnologia e OGMs:</strong> Exemplo: Brasil (soja transgênica).</p>
-        <p><strong>Sensoriamento Remoto e Agricultura de Precisão:</strong> Exemplo: Índia (monitoramento das plantações).</p>
-        <p><strong>Uso de Dados e Análise:</strong> Exemplo: Países Baixos (análise de dados para otimizar o cultivo).</p>
-    
-        <h2> Histórico da Agricultura no Mundo </h2>
-    
-        <p><strong>Agricultura Arcaica:</strong> Mesopotâmia (irrigação e cultivo de grãos) e Egito Antigo (agricultura ao longo do Nilo).</p>
-        <p><strong>Agricultura Moderna:</strong> Revolução Verde (uso de fertilizantes e variedades de alto rendimento). Exemplo: Índia (autossuficiência alimentar).</p>
-        <p><strong>Agricultura Contemporânea:</strong> Uso de tecnologia, biotecnologia e práticas sustentáveis. Exemplo: Israel (irrigação avançada).</p>
-    
-        <h2> Relação entre Campo e Cidade no Mundo Atual </h2>
-    
-        <p><strong>Diferenças na População Rural e Urbana:</strong> Exemplo: Índia (população rural e urbanização crescente).</p>
-        <p><strong>Impacto da Urbanização na Agricultura:</strong> Exemplo: China (migração urbana e mudanças na agricultura).</p>
-    
-        <h2> Sistemas Agrícolas e Técnicas de Cultivo </h2>
-    
-        <p><strong>Rotação de Culturas:</strong> Exemplo: Brasil (alternância de soja e milho).</p>
-        <p><strong>Afolhamento:</strong> Exemplo: Canadá (uso de trevo e aveia).</p>
-        <p><strong>Agricultura em Curvas de Nível:</strong> Exemplo: Filipinas (terraços de arroz).</p>
-        <p><strong>Plantio Direto:</strong> Exemplo: EUA (cultivo de milho e soja).</p>
-    
-        <h2> Classificação das Atividades Agrícolas </h2>
-    
-        <p><strong>Agricultura de Subsistência:</strong> Exemplo: Nepal (produção para consumo próprio).</p>
-        <p><strong>Agricultura Comercial:</strong> Exemplo: Brasil (produção em larga escala para exportação).</p>
-        <p><strong>Agricultura de Jardinagem:</strong> Exemplo: Quênia (produção em pequenas propriedades).</p>
-        <p><strong>Plantation:</strong> Exemplo: Costa do Marfim (monocultura de cacau).</p>
-    
-        <h2> Dados Mundiais Relevantes na Agricultura </h2>
-    
-        <p><strong>Produção Mundial de Alimentos:</strong></p>
-        <p>Milho: EUA.</p>
-        <p>Arroz: China.</p>
-        <p>Trigo: Rússia.</p>
-    
-        <p><strong>Exportação e Importação de Alimentos:</strong></p>
-        <p>Principais Exportadores:</p>
-        <p>Brasil: Soja.</p>
-        <p>EUA: Milho.</p>
-        <p>Países Baixos: Flores e produtos agrícolas.</p>
-    
-        <p>Principais Importadores:</p>
-        <p>Japão: Alimentos processados.</p>
-        <p>Alemanha: Carnes.</p>
-
-        </div>
-    
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
-        <hr>
-    
-    </div>
-    
-    
-
-
-    <div class="topico">
-
-
-
-        <h2>Atividade: Descrição de uma Foto sobre Agropecuária Mundial</h2>
-
-        <p><strong>Objetivo:</strong> Desenvolver a habilidade de descrever detalhadamente uma foto relacionada ao tema
-            da aula "Agropecuária mundial: sistemas agrícolas".</p>
-
-        <p><strong>Materiais Necessários:</strong> Três fotos relacionadas à agropecuária mundial e sistemas agrícolas.
-        </p>
-
-        <p><strong>Foto 1:</strong></p>
-
-        <div class="w3-margin"><img id="imagem13" src="tt13f013.png" alt="tt13f013" class="w3-mobile" >
-       
-            <span class="w3-small w3-margin-left" id="citacao13" > Fonte: https://aspta.org.br/2016/03/04/agroecologia-a-resistencia-da-agricultura-familiar-no-sertao/</span>
-       
-        </div>
-      
-      
-       
-
-
-        <p><strong>Foto 2:</strong></p>
-
-        <div class="w3-margin"><img id="imagem14" src="tt13f014.png" alt="tt13f014" class="w3-mobile" >
-       
-            <span class="w3-small w3-margin-left" id="citacao14" > Fonte: Agro Insight.</span>
-        </div>
-      
-      
-       
-
-        <p><strong>Foto 3:</strong></p>
-
-        <div class="w3-margin"><img id="imagem15" src="tt13f015.png" alt="tt13f015" class="w3-mobile" >
-  
-            <span class="w3-small w3-margin-left" id="citacao15" > Fonte: Organizado pelo autor. </span>
-        
-        </div>
-
-        <h3>Roteiro da Atividade:</h3>
-
-        <p>1. Escolha uma das três fotos acima relacionadas à agropecuária mundial e sistemas agrícolas para cada dupla.</p>
-        <p><strong>Instruções para a Descrição:</strong></p>
-        <ul>
-            <li>Observe atentamente a foto. Utilize os conhecimentos prévios de conceitos geográficos que já possui.</li>
-            <li>Procure incluir na descrição:
-                <ul>
-                    <li><strong>a) Localização e Contexto:</strong> Comece descrevendo o contexto geográfico da foto. Onde a
-                        cena está localizada? É uma área rural, urbana ou suburbana?</li>
-                    <li><strong>b) Elementos Físicos:</strong> Descreva os elementos físicos presentes na foto, como
-                        terrenos, plantações, animais, estruturas agrícolas, máquinas, etc.</li>
-                    <li><strong>c) Atividades Agrícolas:</strong> Identifique e descreva as atividades agrícolas sendo
-                        realizadas na foto. Por exemplo, cultivo de determinada cultura, criação de animais, colheita, etc.
-                    </li>
-                    <li><strong>d) Condições Socioterritoriais:</strong> Analise as condições sociais e territoriais que
-                        podem ser inferidas pela foto. Isso inclui aspectos como tipo de propriedade (pequena, média,
-                        grande), presença de trabalhadores, tecnologias utilizadas, etc.</li>
-                    <li><strong>e) Clima e Ambiente:</strong> Se possível, observe e descreva aspectos do clima e ambiente
-                        presentes na foto. Isso pode incluir o tipo de vegetação, características do solo, clima
-                        predominante, entre outros.</li>
-                </ul>
-            </li>
-            <li><strong>Dicas:</strong>
-                <ul>
-                    <li>Utilize termos geográficos específicos, como tipos de relevo, clima, tipos de solo, sistemas
-                        agrícolas (subsistência, comercial, etc.), formas de uso da terra, entre outros.</li>
-                    <li>Façam anotações enquanto observam a foto, destacando os elementos mais relevantes para a descrição.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        
-
-        <h3>Apresentação:</h3>
-        <p>Apresente sua descrição para a turma.</p>
-
-        <p>Após todas as apresentações, vamos discutir as diferentes descrições feitas.</p>
-
-
-
-
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','6');this.style.display='none'">Proximo</button>
-
-
-
-
-
-
-        <p id="respFinal"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
-                    alt="globinhorespFinal" width="64" height="64">
-            </p>
-        </div>
-        <hr>
-
-    </div>
-
-
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span> -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-        <div class="imagem-fundo w3-mobile">
-            <div class="area">
-
-
-                <div class="postit-tp1">
-
-                    <a href="https://www.youtube.com/watch?v=605h1MegTdY&ab_channel=Elementar" target="_blank">
-                        <span class="w3-text-white"> O Futuro da Agricultura Mundial</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="area justificadoDireita">
-
-
-                <div class="postit-tp9 w3-margin-right ">
-
-                    <a href="https://www.youtube.com/watch?v=OGFaTo2qUCY" target="_blank">
-                        Agricultores familiares produzem 80% da comida do mundo- ONU Brasil
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-        <p>SANTOS, Milton. <strong>A Natureza do Espaço:</strong> técnica e tempo, razão e emoção. São Paulo: EDUSP,
-            2002.</p>
-
-
-        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2.
-            ed. – São
-            Paulo: Ática, 2013.
-        </p>
-
-
-
-    </div>
-    <br><br>
-
-    <!-- <script>
-
-    function numButton() {
-        numB++;
-        document.getElementById("numero").innerHTML = numB;
-        console.log(numB);
-    }
-
-    </script> -->
-
-
-
-    <script>
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-
-                // numButton();
-                addProgressBar();
-
-                ApagaButton();
-                RemoveBalancarGlobo();
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-        }
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 12);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-    </script>
-
-
-
-
-
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+<br/><br/>
+<hr/>
+</div>
+<div class="topico">
+<div class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-padding">
+<h2> RESUMO </h2>
+<h2> A Importância da Agricultura no Mundo </h2>
+<p><strong>Segurança Alimentar e Nutricional:</strong> Garante o acesso a alimentos básicos para uma vida saudável.</p>
+<p><strong>Contribuição para a Economia Global:</strong> Importante setor econômico, contribui para o PIB, gera empregos e impulsiona o comércio internacional.</p>
+<p><strong>Sustentabilidade Ambiental:</strong> Práticas agrícolas sustentáveis são essenciais para proteger o meio ambiente.</p>
+<h2> Meio Técnico-Científico-Informacional (MTCI) na Agricultura </h2>
+<p><strong>Mecanização Agrícola:</strong> Exemplo: EUA (tratores e colheitadeiras).</p>
+<p><strong>Biotecnologia e OGMs:</strong> Exemplo: Brasil (soja transgênica).</p>
+<p><strong>Sensoriamento Remoto e Agricultura de Precisão:</strong> Exemplo: Índia (monitoramento das plantações).</p>
+<p><strong>Uso de Dados e Análise:</strong> Exemplo: Países Baixos (análise de dados para otimizar o cultivo).</p>
+<h2> Histórico da Agricultura no Mundo </h2>
+<p><strong>Agricultura Arcaica:</strong> Mesopotâmia (irrigação e cultivo de grãos) e Egito Antigo (agricultura ao longo do Nilo).</p>
+<p><strong>Agricultura Moderna:</strong> Revolução Verde (uso de fertilizantes e variedades de alto rendimento). Exemplo: Índia (autossuficiência alimentar).</p>
+<p><strong>Agricultura Contemporânea:</strong> Uso de tecnologia, biotecnologia e práticas sustentáveis. Exemplo: Israel (irrigação avançada).</p>
+<h2> Relação entre Campo e Cidade no Mundo Atual </h2>
+<p><strong>Diferenças na População Rural e Urbana:</strong> Exemplo: Índia (população rural e urbanização crescente).</p>
+<p><strong>Impacto da Urbanização na Agricultura:</strong> Exemplo: China (migração urbana e mudanças na agricultura).</p>
+<h2> Sistemas Agrícolas e Técnicas de Cultivo </h2>
+<p><strong>Rotação de Culturas:</strong> Exemplo: Brasil (alternância de soja e milho).</p>
+<p><strong>Afolhamento:</strong> Exemplo: Canadá (uso de trevo e aveia).</p>
+<p><strong>Agricultura em Curvas de Nível:</strong> Exemplo: Filipinas (terraços de arroz).</p>
+<p><strong>Plantio Direto:</strong> Exemplo: EUA (cultivo de milho e soja).</p>
+<h2> Classificação das Atividades Agrícolas </h2>
+<p><strong>Agricultura de Subsistência:</strong> Exemplo: Nepal (produção para consumo próprio).</p>
+<p><strong>Agricultura Comercial:</strong> Exemplo: Brasil (produção em larga escala para exportação).</p>
+<p><strong>Agricultura de Jardinagem:</strong> Exemplo: Quênia (produção em pequenas propriedades).</p>
+<p><strong>Plantation:</strong> Exemplo: Costa do Marfim (monocultura de cacau).</p>
+<h2> Dados Mundiais Relevantes na Agricultura </h2>
+<p><strong>Produção Mundial de Alimentos:</strong></p>
+<p>Milho: EUA.</p>
+<p>Arroz: China.</p>
+<p>Trigo: Rússia.</p>
+<p><strong>Exportação e Importação de Alimentos:</strong></p>
+<p>Principais Exportadores:</p>
+<p>Brasil: Soja.</p>
+<p>EUA: Milho.</p>
+<p>Países Baixos: Flores e produtos agrícolas.</p>
+<p>Principais Importadores:</p>
+<p>Japão: Alimentos processados.</p>
+<p>Alemanha: Carnes.</p>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
+<hr/>
+</div>
+<div class="topico">
+<h3>Antes de finalizar, vamos fazer as questões!</h3>
+<button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+
+    MostrarProximo(this);
+">Próximo</button>
+<p id="respFinal"></p>
+<div class="area">
+<p><img alt="globinhorespFinal" height="64" id="globinhorespFinal" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/></p>
+</div>
+<hr/>
+</div>
+<!-- TÓPICO FINALIZAR -->
+<div class="topico">
+<button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+</div>
+
+
+<div class="bibliografias w3-content w3-padding-64" id="final-da-aula" style="max-width:700px">
+<hr/>
+<h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+<!-- Cards gerados automaticamente pelo JS -->
+<div class="w3-row-padding" id="links-gerados"></div>
+<div class="w3-container w3-padding-64">
+<h3 class="fontePixel w3-center w3-text-green">
+<strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+</h3>
+<!-- Cards gerados automaticamente pelo JS -->
+<div id="biblio-gerada"></div>
+</div>
+<br/><br/>
+<div class="w3-padding-48">
+<span id="numero"></span>
+<span id="txtBarra">0%</span>
+<progress id="progress" max="100" value="0"></progress>
+</div>
+</div></main>
+<button class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-bottom" id="btn-topo" onclick="voltarAoTopo()" style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+<i class="fa fa-arrow-up"></i>
+</button>
+<div class="w3-padding-top-48"></div>
+<div id="footer-placeholder"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+<script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-DPX55DSFZ0');
-
     </script>
-
-
-
-
-
 </body>
-
 </html>

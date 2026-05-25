@@ -1,0 +1,36 @@
+# ── Imagens ──
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+*.aseprite
+*.webp
+
+# ── Áudio e vídeo ──
+*.mp3
+*.wav
+*.mp4
+*.ogg
+
+# ── Documentos binários ──
+*.pdf
+*.docx
+*.odt
+
+# ── Fontes ──
+*.woff
+*.woff2
+*.ttf
+*.otf
+
+# ── Outros binários ──
+*.wasm
+*.data
+
+# ── Sistema ──
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]

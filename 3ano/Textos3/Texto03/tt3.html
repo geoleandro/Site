@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -50,18 +49,6 @@
 
 
     <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-        .topico * {
-            transition: color 3s ease, background-color 3s ease;
-        }
     </style>
 
 
@@ -94,9 +81,9 @@
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
 
-                <p><strong>Objetivo:</strong> Caracterizar e analisar os principais conceitos relativos aos fluxos de
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Caracterizar e analisar os principais conceitos relativos aos fluxos de
                     pessoas no
-                    mundo.</p>
+                    mundo.</span></p>
             </div>
 
 
@@ -950,107 +937,21 @@
 
 
 
-        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px; display:none;">
+        
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
-
-            <div class="w3-row-padding">
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-green w3-card-4 pulsar">
-                        <a href="https://www.dw.com/..." target="_blank">
-                            <span class="w3-text-white">Quase metade da população mundial vive na pobreza</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-blue w3-card-4 pulsar">
-                        <a href="https://www.acnur.org/..." target="_blank">
-                            <span class="w3-text-white">108,4 milhões de pessoas deslocadas à força</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-white w3-card-4 pulsar">
-                        <a href="https://news.un.org/..." target="_blank">
-                            <span class="w3-text-black">Fome cresce no mundo e atinge 9,8% da população</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-deep-orange w3-card-4 pulsar">
-                        <a href="https://cee.fiocruz.br/..." target="_blank">
-                            <span class="w3-text-white">2,2 bilhões de pessoas não têm água potável</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
             <div class="w3-container w3-padding-64">
-                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                        Bibliográficas</strong></h3>
-
-                <div class="w3-row-padding w3-margin-top">
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-green"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
-                                <p class="w3-margin-top">SANTOS, Mílton. <br><b>Por uma outra globalização</b>: do
-                                    pensamento único à consciência universal. <br>Rio de Janeiro: Record, 2000.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-blue"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-blue w3-small fontePixel">Geografia Crítica</span>
-                                <p class="w3-margin-top">SANTOS, Milton. <br><b>O espaço do cidadão</b>. <br>São Paulo:
-                                    Editora da USP, 2007.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-deep-orange"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
-                                <p class="w3-margin-top">VOGLER, Christopher. <br><b>A jornada do escritor</b>. <br>Rio
-                                    de
-                                    Janeiro: Nova Fronteira, 2006.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-indigo"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-indigo w3-small fontePixel">Documento Oficial</span>
-                                <p class="w3-margin-top">BRASIL. Ministério da Educação. <br><b>Base Nacional Comum
-                                        Curricular</b>. <br>Brasília: MEC/Secretaria de Educação Básica, 2018.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
             </div>
-        </div>
-
-
-        </div>
-        <br><br>
+        </div><br><br>
 
         <div class="w3-padding-48">
             <span id="numero"></span>

@@ -1,295 +1,159 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-    <title>2º ano - Texto 05 </title>
-
-
-
-
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-    </style>
-
-
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<link href="../../../estilos/index-estilo.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="../../../estilos/navbar.css" rel="stylesheet"/>
+<link href="../../../estilos/rpg-sistema.css" rel="stylesheet"/>
+<link href="../../../estilos/ModeloCss.css" rel="stylesheet"/>
+<link href="../../../fotoIndex/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"></script>
+<script defer="" src="../../../js/duvid-cache.js"></script>
+<script defer="" src="../../../js/duvid-db.js"></script>
+<script defer="" src="../../../js/duvid-audio.js"></script>
+<script defer="" src="../../../js/duvid-ui.js"></script>
+<script defer="" src="../../../js/duvid-core.js"></script>
+<script defer="" src="../../../estilos/jstextos-padrao.js"></script>
+<script defer="" src="../../../js/abrirmenu.js"></script>
+<script defer="" src="../../../js/carregar.js"></script>
+<script defer="" src="../../../js/aulas-geral.js"></script>
+<title>2º ano - Texto 05</title>
 </head>
-
 <body>
-
-
-
-    <div class="topico">
-
-        <div class="centerBar">
-
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
-
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
-            </div>
-        </div>
-
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
-            </div>
-        </div>
-
-
-
-        <h1 id="h1"> Texto 05 - Estrutura geológica e formas do relevo brasileiro</h1>
-
-
-        <p><strong> Conteúdo:</strong> Formação do espaço natural brasileiro; Estrutura geológica: Escudos cristalinos,
-            bacias sedimentares e Dobramentos antigos; principais formas do relevo do brasileiro.
-
-        </p>
-
-        <p><strong>Objetivo:</strong> Identificar as principais formações geológicas do Brasil e suas formas de relevo
-            predominantes.</p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Introdução </h2>
-
-
-        <p> <span class="primeiraLetra">N</span>a aula passada, vimos a relação entre a população e o espaço agrário
+<div id="header-placeholder"></div>
+<div class="w3-margin-top" id="aviso-status"></div>
+<main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+<div class="topico">
+<div class="w3-padding-top-48"></div>
+<h1 id="h1"></h1>
+<!-- Futuro audio -->
+<div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+<div class="w3-row">
+<div class="w3-col s2 m1 w3-center">
+<i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+</div>
+<div class="w3-col s10 m11 w3-padding-small">
+<b class="fontePixel">OUVIR AULA</b>
+<p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+</div>
+</div>
+<audio controls="" style="width:100%; margin-top: 10px;">
+<source id="audioSource" src="" type="audio/mp3"/>
+</audio>
+</div>
+<div class="w3-container w3-padding-16">
+<p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+<p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+</div>
+<button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+<i class="fa fa-play"></i> Iniciar Aula
+            </button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Introdução </h2>
+<p> <span class="primeiraLetra">N</span>a aula passada, vimos a relação entre a população e o espaço agrário
             brasileiro. Todavia, a investigação geográfica, diferente de outras ciências sociais, incorpora os objetos
             naturais como relevo, rios, clima, vegetação etc. para entender melhor o mundo em que vivemos.</p>
-
-
-        <p>Por isso vamos estudar na aula de hoje, o papel da estrutura geológica e as formas de relevo no território
+<p>Por isso vamos estudar na aula de hoje, o papel da estrutura geológica e as formas de relevo no território
             brasileiro.</p>
-
-
-
-        <p>
+<p>
             Ao final, você ficará familiarizado com a influências das rochas e do relevo na vida da população e de seu
             território. </p>
-
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-   
-    <div class="topico">
-
-        <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje: </h2>
-
-        <div Class="w3-pale-yellow">
-            <p>1. Qual é o objetivo principal da aula de hoje?</p>
-            <p>2. Explique a importância da análise e síntese na investigação geográfica.</p>
-            <p>3. O que constitui o espaço geográfico e como ele é formado?</p>
-            <p>4. Qual é a importância de conhecer a estrutura geológica para entender o funcionamento do planeta?</p>
-            <p>5. O que é a estrutura geológica e como ela influencia as formas de relevo?</p>
-            <p>6. Descreva o papel das rochas na formação das paisagens geográficas.</p>
-            <p>7. O que são dobramentos antigos e como eles se relacionam com o relevo brasileiro?</p>
-            <p>8. Explique as características das bacias sedimentares e sua importância para o Brasil.</p>
-            <p>9. Quais são os principais tipos de relevo presentes no Brasil? Dê exemplos de cada um.</p>
-            <p>10. Onde estão localizados os principais escudos cristalinos e bacias sedimentares no Brasil?</p>
-        </div>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-    </div>
- 
-
-   
-
-    <div class="topico">
-
-        <h2> O espaço geográfico: entre análise e síntese</h2>
-
-
-
-
-        <p>Desde a formação do Brasil e a consolidação do seu território, seu povoamento e a repartição de suas terras,
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje: </h2>
+<div class="w3-pale-yellow">
+<p>1. Qual é o objetivo principal da aula de hoje?</p>
+<p>2. Explique a importância da análise e síntese na investigação geográfica.</p>
+<p>3. O que constitui o espaço geográfico e como ele é formado?</p>
+<p>4. Qual é a importância de conhecer a estrutura geológica para entender o funcionamento do planeta?</p>
+<p>5. O que é a estrutura geológica e como ela influencia as formas de relevo?</p>
+<p>6. Descreva o papel das rochas na formação das paisagens geográficas.</p>
+<p>7. O que são dobramentos antigos e como eles se relacionam com o relevo brasileiro?</p>
+<p>8. Explique as características das bacias sedimentares e sua importância para o Brasil.</p>
+<p>9. Quais são os principais tipos de relevo presentes no Brasil? Dê exemplos de cada um.</p>
+<p>10. Onde estão localizados os principais escudos cristalinos e bacias sedimentares no Brasil?</p>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> O espaço geográfico: entre análise e síntese</h2>
+<p>Desde a formação do Brasil e a consolidação do seu território, seu povoamento e a repartição de suas terras,
             estamos vendo alguns aspectos da realidade. Porém, todos esses acontecimentos, esses eventos ocorrem de
             forma simultânea, uns mais rápidos, outros mais lentos. </p>
-
-        <p> Na Ciência, temos que fazer uma divisão (análise) dos temas para depois realizar uma junção de tudo
+<p> Na Ciência, temos que fazer uma divisão (análise) dos temas para depois realizar uma junção de tudo
             (síntese).</p>
-
-        <p>O espaço geográfico é um só, ele é composto por objetos naturais e sociais, mas é, grosso modo, formado por
+<p>O espaço geográfico é um só, ele é composto por objetos naturais e sociais, mas é, grosso modo, formado por
             várias camadas. A estrutura geológica e as formas de relevo constituem mais uma dessas camadas. Elas
             pertencem a geografia física, assim como o clima, a vegetação, a hidrografia, dentre outras. </p>
-
-
-        <p> Esses elementos combinam-se e, devido a extensão do território brasileiro, acabam por constituir diferentes
+<p> Esses elementos combinam-se e, devido a extensão do território brasileiro, acabam por constituir diferentes
             paisagens naturais. </p>
-
-
-        <p>Nessas paisagens o clima e o solo influenciam a vegetação, que por sua vez é influenciado pelo relevo e o
+<p>Nessas paisagens o clima e o solo influenciam a vegetação, que por sua vez é influenciado pelo relevo e o
             solo depende da estrutura geológica que serve de base para o nosso espaço habitado. </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <h2> A estrutura geológica </h2>
-
-
-
-
-        <p> Vamos retomar brevemente a dinâmica das rochas e do relevo.</p>
-
-        <p> Conhecer as dinâmicas das rochas é fundamental para o entendimento do funcionamento do Planeta em que
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> A estrutura geológica </h2>
+<p> Vamos retomar brevemente a dinâmica das rochas e do relevo.</p>
+<p> Conhecer as dinâmicas das rochas é fundamental para o entendimento do funcionamento do Planeta em que
             vivemos. Podemos encontrar diversos minerais e combustíveis, além de evitar problemas ambientais.</p>
-
-        <p>Há rochas que surgem das profundezas do magma e outras que são formadas por sedimentos acumulados por milhões
+<p>Há rochas que surgem das profundezas do magma e outras que são formadas por sedimentos acumulados por milhões
             de anos. Ambas podem voltar para o manto e se transformarem em rochas metamórficas com características
             novas. </p>
-
-
-        <p>A estrutura geológica corresponde aos grandes corpos rochosos que sustentam as formas de relevo. Trata-se da
+<p>A estrutura geológica corresponde aos grandes corpos rochosos que sustentam as formas de relevo. Trata-se da
             disposição de rochas em camadas de diversos tipos e idades diferentes. </p>
-
-
-        <p>Veja a foto abaixo de um famoso ponto turístico na cidade de Salvador, Bahia. O Elevador Lacerda inaugurado
+<p>Veja a foto abaixo de um famoso ponto turístico na cidade de Salvador, Bahia. O Elevador Lacerda inaugurado
             em 1873. </p>
-
-        <div class="w3-margin"><img id="imagem1" src="ts05f01.png" alt="ts05f01" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao1"> Cidade Alta e Cidade Baixa de Salvador, Bahia.
+<div class="w3-margin"><img alt="ts05f01" class="w3-mobile" id="imagem1" src="ts05f01.png"/>
+<span class="w3-small w3-margin-left" id="citacao1"> Cidade Alta e Cidade Baixa de Salvador, Bahia.
                 Fonte: https://oprofessorweb.wordpress.com
                 /2015/03/27/entre-as-cidades-baixa-e-alta/.
 
             </span>
-        </div>
-
-
-
-
-
-
-        <p> Essa paisagem foi resultado de uma falha geológica, isto é, geralmente exercida por pressão de movimentos de
+</div>
+<p> Essa paisagem foi resultado de uma falha geológica, isto é, geralmente exercida por pressão de movimentos de
             placas tectônicas, pelo acúmulo e liberação de energia ocorrem verdadeiras fraturas nas rochas que a
             compõem.</p>
-
-        <p> Essas rochas, por sua vez, sustentam as formas do relevo da paisagem, nesse caso a existência de uma cidade
+<p> Essas rochas, por sua vez, sustentam as formas do relevo da paisagem, nesse caso a existência de uma cidade
             alta e outra cidade baixa.</p>
-
-
-        <p>Para encontrar o relevo basta observar as formas da superfície terrestre, áreas mais altas, montanhas,
+<p>Para encontrar o relevo basta observar as formas da superfície terrestre, áreas mais altas, montanhas,
             planaltos, áreas mais baixas, planícies e depressões, paredões rochosos no mar, falésias, colinas, golfo,
             cabos, ilhas, dentre inúmeros outras configurações da crosta terrestre. </p>
-
-
-        <p>Qual a importância do relevo? </p>
-
-
-        <p> O releve é muito importante para a construção de moradias fora de área de riscos, manejo de culturas
+<p>Qual a importância do relevo? </p>
+<p> O releve é muito importante para a construção de moradias fora de área de riscos, manejo de culturas
             agrícolas, determinar o local adequado para o turismo, implantação de grandes obras de engenharia como
             túneis, pontes, portos, hidrelétricas etc.</p>
-
-        <div class="w3-margin"><img id="imagem2" src="ts05f02.png" alt="ts05f02" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao2"> Fonte: Florenzano (2008). </span>
-        </div>
-
-
-
-
-        <p>Veja na imagem acima as cores representando algumas formas de relevo: planície, planaltos, depressão e relevo
+<div class="w3-margin"><img alt="ts05f02" class="w3-mobile" id="imagem2" src="ts05f02.png"/>
+<span class="w3-small w3-margin-left" id="citacao2"> Fonte: Florenzano (2008). </span>
+</div>
+<p>Veja na imagem acima as cores representando algumas formas de relevo: planície, planaltos, depressão e relevo
             de Montanha. </p>
-
-
-        <p> E se no mapa do Brasil pudéssemos visualizar onde estão localizados essas formas de relevo?</p>
-
-        <div class="w3-margin"><img id="imagem3" src="ts05f03.png" alt="ts05f03" class="w3-mobile">
-
-            <span class="w3-small w3-margin-left" id="citacao3"> Fonte: Florenzano (2008). </span>
-        </div>
-
-
-
-
-
-        <p>O que podemos observar no mapa de relevo do Brasil? Primeiramente, podemos observar uma grande área de
+<p> E se no mapa do Brasil pudéssemos visualizar onde estão localizados essas formas de relevo?</p>
+<div class="w3-margin"><img alt="ts05f03" class="w3-mobile" id="imagem3" src="ts05f03.png"/>
+<span class="w3-small w3-margin-left" id="citacao3"> Fonte: Florenzano (2008). </span>
+</div>
+<p>O que podemos observar no mapa de relevo do Brasil? Primeiramente, podemos observar uma grande área de
             depressão (área em verde), isto é, relevo rebaixado em relação as áreas em volta devido ao processo intenso
             de erosão. Logo depois, temos uma grande porção de planaltos (área marrom) ao Norte e Centro-Sul do país.
             Temos outro relevo montanhoso (área em azul) e poucas áreas de planície (área em amarelo) no litoral,
             pantanal e alguns trechos na área central do Brasil. </p>
-
-        <p>Quer dizer que no Brasil tem montanhas? Tecnicamente não. No senso comum, o fato de existir uma área na
+<p>Quer dizer que no Brasil tem montanhas? Tecnicamente não. No senso comum, o fato de existir uma área na
             paisagem muito alto já é o suficiente para classifica-la como montanha. Porém, na Geologia não funciona
             assim. As montanhas são formadas por processo tectônicos, dobramentos modernos como o Himalaia, resultado de
             choques entre placas tectônicas e também pelo acúmulo de material vulcânico. O Brasil não possui dobramentos
@@ -297,910 +161,383 @@
             todos reunidos, mas elas foram muito desgastadas pela ação do tempo com a erosão. Portanto, o Brasil não
             possui montanhas no sentido específico formada pelos dobramentos modernos, mas sim resquícios de montanhas
             esculpidas pela erosão há milhares de anos.</p>
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> Os componentes da estrutura geológica</h2>
-
-
-
-
-        <p>De modo geral, as estruturas geológicos, ou seja, o modo de distribuição das rochas na superfície terrestre
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Os componentes da estrutura geológica</h2>
+<p>De modo geral, as estruturas geológicos, ou seja, o modo de distribuição das rochas na superfície terrestre
             surgem a partir de três tipos principais no globo terrestre. </p>
-
-        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
-            <p>1) A primeira estrutura são chamados de<strong> escudos cristalinos</strong> ou <strong>crátons</strong>.
+<div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+<p>1) A primeira estrutura são chamados de<strong> escudos cristalinos</strong> ou <strong>crátons</strong>.
                 São porções da crosta terrestre
                 muito antigas e resistentes compostas por rochas magmáticas e metamórficas (ver aula sobre ciclo das
                 rochas do 1º ano). Os escudos são formações bem antigas das eras Pré-Cambriana e Paleozoica e originam
                 baixos planaltos ou mesmo depressões, já que foram bastante desgastados pelos processos de intemperismo
                 e erosão; </p>
-
-            <p> 2) As <strong>bacias sedimentares</strong>. Essas são formadas por rochas resultantes do acúmulo de
+<p> 2) As <strong>bacias sedimentares</strong>. Essas são formadas por rochas resultantes do acúmulo de
                 sedimentos e detritos
                 ao longo de milhões de anos e distribuídas em camadas na superfícies terrestre. Elas associadas à
                 planícies, planaltos sedimentares ou mesmo depressões;</p>
-
-
-            <p> 3) Os <strong>dobramentos modernos</strong>. Esse tipo de estrutura geológica surgiu a partir dos
+<p> 3) Os <strong>dobramentos modernos</strong>. Esse tipo de estrutura geológica surgiu a partir dos
                 grandes dobramentos,
                 isto é, grandes elevações do terreno em consequência de pressões vinda do interior da Terra. Nas eras
                 Mesozoica até a Cenozoica formaram as grandes cadeias de montanhas existente no Planeta, como o
                 Himalaia, os Alpes, os Andes, dentre outras.</p>
-
-        </div>
-
-
-        <p> Como está distribuído essa estrutura geológica no Brasil?</p>
-
-        <p>O Brasil está inserido na Placa Sul-Americana, uma das inúmeras placas tectônicas que formam a superfície
+</div>
+<p> Como está distribuído essa estrutura geológica no Brasil?</p>
+<p>O Brasil está inserido na Placa Sul-Americana, uma das inúmeras placas tectônicas que formam a superfície
             terrestre e estão em movimento. </p>
-
-        <p>Nesse sentido, o Brasil está situado no interior da placa, onde a espessura é de aproximadamente de 200
+<p>Nesse sentido, o Brasil está situado no interior da placa, onde a espessura é de aproximadamente de 200
             quilômetros, por isso o nosso país é pouco afetado por terremotos e vulcões. Caso estivesse localizado nas
             bordas das placas, como o Japão, as chances de sofrer com abalos sísmicos e erupções vulcânicas seriam
             extremamente altas. </p>
-
-        <p>Assim, podemos entender melhor porque o Brasil não tem montanhas. O Chile, por exemplo, está localizado na
+<p>Assim, podemos entender melhor porque o Brasil não tem montanhas. O Chile, por exemplo, está localizado na
             borda das Placas tectônicas, por isso está inserido na Cordilheira dos Andes, veja no mapa: </p>
-
-        <div class="w3-margin"><img id="imagem4" src="ts05f04.png" alt="ts05f04" class="w3-mobile">
-
-            <span class="w3-small w3-margin-left" id="citacao4"> Escudos e principais bacias sedimentares do Brasil.
+<div class="w3-margin"><img alt="ts05f04" class="w3-mobile" id="imagem4" src="ts05f04.png"/>
+<span class="w3-small w3-margin-left" id="citacao4"> Escudos e principais bacias sedimentares do Brasil.
                 Fonte: Florenzano (2008, p. 133).Adaptado. </span>
-        </div>
-
-
-
-
-        <p> Através do mapa, vemos que o Brasil possui Escudos como o da Guiana (I), Brasil-Central (II) e Atlântico
+</div>
+<p> Através do mapa, vemos que o Brasil possui Escudos como o da Guiana (I), Brasil-Central (II) e Atlântico
             (III) o restante são as bacias sedimentares.</p>
-
-        <p>Nos escudos predominam as rochas de alto grau metamórfico e granítico, como o Pão-de-Açúcar no Rio de
+<p>Nos escudos predominam as rochas de alto grau metamórfico e granítico, como o Pão-de-Açúcar no Rio de
             Janeiro. Os grandes escudos são separados por bacias sedimentares, quer dizer, rochas que sofreram processo
             de erosão e se acumularam nas partes mais baixas do terreno originando as formas do relevo mais recentes.
         </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> Eventos geológicos no Brasil</h2>
-
-
-
-
-        <p> Vale lembrar os acontecimentos geológicos que ocorreram no Brasil.</p>
-
-        <p>Na era Pré-Cambriana e Arqueozoica e Proterozoica ocorreram a formação dos escudos cristalinos, junto com o
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Eventos geológicos no Brasil</h2>
+<p> Vale lembrar os acontecimentos geológicos que ocorreram no Brasil.</p>
+<p>Na era Pré-Cambriana e Arqueozoica e Proterozoica ocorreram a formação dos escudos cristalinos, junto com o
             acúmulo de jazidas minerais metálicas. Foi nesse período que se formou a Serra do Mar e da Mantiqueira. </p>
-
-        <p>Na era Paleozoica formaram-se as bacias sedimentares antigas e as bacias carboníferas do sul do país. </p>
-
-
-        <p>Na era Mesozoica ocorreram os derrames de rochas basálticas na Região Sul, a formação do petróleo e das
+<p>Na era Paleozoica formaram-se as bacias sedimentares antigas e as bacias carboníferas do sul do país. </p>
+<p>Na era Mesozoica ocorreram os derrames de rochas basálticas na Região Sul, a formação do petróleo e das
             bacias sedimentares mais atuais. </p>
-
-
-        <p> E na última era, a Cenozoica, as bacias sedimentares do Pantanal, da Amazônia e planícies costeiras. Além
+<p> E na última era, a Cenozoica, as bacias sedimentares do Pantanal, da Amazônia e planícies costeiras. Além
             das ilhas vulcânicas como do Arquipélago de Fernando de Noronha, Ilha Trindade, dentre outras.</p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h2> ...mais sobre a estrutura geológica do Brasil</h2>
-
-
-
-
-        <p> Desde a separação dos continentes da Pangeia há mais de 65 milhões de anos, o Brasil sofreu impacto dessa
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> ...mais sobre a estrutura geológica do Brasil</h2>
+<p> Desde a separação dos continentes da Pangeia há mais de 65 milhões de anos, o Brasil sofreu impacto dessa
             separação entre África e América, formação das cordilheiras e do atual contorno do continente americano.</p>
-
-        <p> Um deles diz respeito ao vulcanismo. Os grandes derrames de lava em Poços de Caldas e Araxá (MG), São
+<p> Um deles diz respeito ao vulcanismo. Os grandes derrames de lava em Poços de Caldas e Araxá (MG), São
             Sebastião (SP), Itatiaia e Cabo Frio (RJ) e Lajes (SC). No Sul (SP até RG) grande derrame basáltico na bacia
             do Paraná (origem dos solos Terra-Roxa), Bacia Amazônica e Parnaíba).</p>
-
-        <p> O que acontece se sobrepormos a estrutura geológica com seus escudos cristalinos e bacias sedimentares com
+<p> O que acontece se sobrepormos a estrutura geológica com seus escudos cristalinos e bacias sedimentares com
             as variações de altitude do relevo?</p>
-
-
-        <p> Observe o mapa abaixo:</p>
-        <div class="w3-margin"><img id="imagem5" src="ts05f05.png" alt="ts05f05" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao5"> </span>
-        </div>
-
-
-
-
-        <p>Ele ilustra a relação entre as rochas que servem de base para as variações do terreno que temos na
+<p> Observe o mapa abaixo:</p>
+<div class="w3-margin"><img alt="ts05f05" class="w3-mobile" id="imagem5" src="ts05f05.png"/>
+<span class="w3-small w3-margin-left" id="citacao5"> </span>
+</div>
+<p>Ele ilustra a relação entre as rochas que servem de base para as variações do terreno que temos na
             superfície. </p>
-
-        <p>É possível também descobrimos os locais ou onde estão as rochas magmáticas e metamórficas com reservas
+<p>É possível também descobrimos os locais ou onde estão as rochas magmáticas e metamórficas com reservas
             minerais e onde estão as bacias sedimentares com petróleo, por exemplo.</p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2>Os escudos cristalinos e dobramentos antigos </h2>
-
-
-
-
-        <p> Os Dobramentos antigos correspondem à Serra do Mar e Mantiqueira ainda na Era Arqueozoica. Já a Serra do
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Os escudos cristalinos e dobramentos antigos </h2>
+<p> Os Dobramentos antigos correspondem à Serra do Mar e Mantiqueira ainda na Era Arqueozoica. Já a Serra do
             Espinhaço (BA e MG) foram formados na Era Proterozóica, porém são profundamente desgastadas pela erosão.</p>
-
-        <p>Em relação ao percentual, as áreas cratônicas que abrigam jazidas de minerais metálicos, como ferro, manganês
+<p>Em relação ao percentual, as áreas cratônicas que abrigam jazidas de minerais metálicos, como ferro, manganês
             e cobre, por exemplo constituem 36% do território. Destes, 32% são da Era Arqueozoica, os mais antigos, com
             rochas magmáticas intrusivas (granito) e metamórfica (gnaisse). O complexo cristalino. Os outros 4%, da Era
             Proterozóica, predominavam rochas metamórficas. Nessas últimas estão localizadas as jazidas de minérios,
             como: Quadrilátero de Ferro (MG), Serra dos Carajás (PA) e Maciço do Urucum (MS); Manganês da Serra do Navio
             (AP) e Cassiterita de (RO). </p>
-
-        <p>O Escudo cristalino divide-se em: Escudo das Guianas, situado ao norte e o Escudo Brasileiro, porção central,
+<p>O Escudo cristalino divide-se em: Escudo das Guianas, situado ao norte e o Escudo Brasileiro, porção central,
             leste e sul do país. </p>
-
-        <div class="w3-margin"><img id="imagem6" src="ts05f06.png" alt="ts05f06" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao6"> </span>
-
-        </div>
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h2> Bacias sedimentares</h2>
-
-
-
-
-        <p>Em relação as bacias sedimentares, essas cobrem uma área maior: 64% da área total. Localizadas nas Bacias
+<div class="w3-margin"><img alt="ts05f06" class="w3-mobile" id="imagem6" src="ts05f06.png"/>
+<span class="w3-small w3-margin-left" id="citacao6"> </span>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Bacias sedimentares</h2>
+<p>Em relação as bacias sedimentares, essas cobrem uma área maior: 64% da área total. Localizadas nas Bacias
             Amazônica, do Meio-Norte, Paranaica, São Franciscana e do Pantanal e pequenas bacias (do Recôncavo baiano,
             de SP e Curitiba). </p>
-
-        <p> As bacias sedimentares são muito importantes para a obtenção de recursos minerais, como o petróleo e carvão
+<p> As bacias sedimentares são muito importantes para a obtenção de recursos minerais, como o petróleo e carvão
             mineral. O petróleo localiza-se nas sedimentares continentais (recôncavo baiano), marítimas, bacia de Campos
             – RJ.</p>
-
-        <p> Já o carvão mineral formou-se mais intensamente na Bacia Paranaica, SC (Vale do rio Tubarão) e RS Vale do
+<p> Já o carvão mineral formou-se mais intensamente na Bacia Paranaica, SC (Vale do rio Tubarão) e RS Vale do
             Rio Jacuí.</p>
-
-
-        <p>O carvão brasileiro é considerado de má qualidade devido ao seu baixo teor calorífero, além de sua
+<p>O carvão brasileiro é considerado de má qualidade devido ao seu baixo teor calorífero, além de sua
             distribuição descontínua pelas bacias. Além desses elementos, há possibilidades de encontrar minerais
             radioativos como urânio e tório, além de xisto betuminoso na formação Irati do Paraná e Rio Grande do Sul e
             materiais para construção como areia, cascalho e calcário. </p>
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> O relevo brasileiro</h2>
-
-
-
-
-        <p>O Brasil é um país de altitude média relativamente baixa, contando com cerca de 45% de todo o território
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> O relevo brasileiro</h2>
+<p>O Brasil é um país de altitude média relativamente baixa, contando com cerca de 45% de todo o território
             nacional abaixo dos 200 m de altitude. Os pontos mais elevados do relevo brasileiro são o Pico da Neblina,
             com 2993 metros de altitude, e o Pico 31 de Março, com 2972 metros de altitude. </p>
-
-        <p> A altitude média do território brasileiro se deve ao país estar localizado sobre uma grande placa tectônica
+<p> A altitude média do território brasileiro se deve ao país estar localizado sobre uma grande placa tectônica
             livre da possibilidade de se chocar com outras placas, o que torna o Brasil um país imune a sofrer
             terremotos.</p>
-
-        <p>Podemos dizer em resumo do relevo brasileiro, que ele se dá em: </p>
-
-        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-
-            <p>• Planaltos: Áreas com elevação e aplanadas, caracterizadas por declives onde o processo de desgaste
+<p>Podemos dizer em resumo do relevo brasileiro, que ele se dá em: </p>
+<div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+<p>• Planaltos: Áreas com elevação e aplanadas, caracterizadas por declives onde o processo de desgaste
                 erodido é maior do que o acúmulo sedimentar. </p>
-
-
-            <p>
+<p>
                 • Planícies: áreas moderadamente planas, nas quais o processo de depósito de sedimentos é maior que o de
                 desgaste.
             </p>
-
-
-            <p>
+<p>
                 • Depressão Relativa: áreas situadas acima do nível do mar, mas abaixo de regiões que lhe são próximas.
             </p>
-
-        </div>
-
-        <p> Além disso, temos inúmeros outros tipos de relevo, veja:</p>
-
-        <h4 class="w3-center">Formas de relevo</h4>
-
-        <div class="w3-content w3-display-container  w3-mobile w3-padding">
-            <img class="mySlides" src="ts05f07a.png" style="width:80%" alt="1">
-            <img class="mySlides" src="ts05f07b.png" style="width:80%" alt="2">
-            <img class="mySlides" src="ts05f07c.png" style="width:80%" alt="3">
-            <img class="mySlides" src="ts05f07d.png" style="width:80%" alt="4">
-            <img class="mySlides" src="ts05f07e.png" style="width:80%" alt="5">
-            <img class="mySlides" src="ts05f07f.png" style="width:80%" alt="6">
-            <img class="mySlides" src="ts05f07g.png" style="width:80%" alt="7">
-            <img class="mySlides" src="ts05f07h.png" style="width:80%" alt="8">
-
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
-
-
-
-
-        <!-- 
+</div>
+<p> Além disso, temos inúmeros outros tipos de relevo, veja:</p>
+<h4 class="w3-center">Formas de relevo</h4>
+<div class="w3-content w3-display-container w3-mobile w3-padding">
+<img alt="1" class="mySlides" src="ts05f07a.png" style="width:80%"/>
+<img alt="2" class="mySlides" src="ts05f07b.png" style="width:80%"/>
+<img alt="3" class="mySlides" src="ts05f07c.png" style="width:80%"/>
+<img alt="4" class="mySlides" src="ts05f07d.png" style="width:80%"/>
+<img alt="5" class="mySlides" src="ts05f07e.png" style="width:80%"/>
+<img alt="6" class="mySlides" src="ts05f07f.png" style="width:80%"/>
+<img alt="7" class="mySlides" src="ts05f07g.png" style="width:80%"/>
+<img alt="8" class="mySlides" src="ts05f07h.png" style="width:80%"/>
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+</div>
+<!-- 
         <div class="w3-margin"><img id="imagem7" src="ts05f07.png" alt="ts05f07" class="w3-mobile">
 
             <span class="w3-small w3-margin-left" id="citacao7"> Fonte: Florenzano (2008). </span>
         </div> -->
-
-
-
-
-
-        <p>Chapadas, planalto com altitude com mais de 500 metros. Famosos: Chapada Diamantina (sul da Bahia) Chapada
+<p>Chapadas, planalto com altitude com mais de 500 metros. Famosos: Chapada Diamantina (sul da Bahia) Chapada
             dos Guimarães (MT) e Veadeiros (GO). </p>
-
-
-        <p> Pediplano: é o processo que leva, em regiões de clima árido a semiárido, ao desenvolvimento de áreas
+<p> Pediplano: é o processo que leva, em regiões de clima árido a semiárido, ao desenvolvimento de áreas
             aplainadas</p>
-
-
-        <p>Inselberg: relevos residuais que se acumulam em uma superfície, formando um tipo de monte ou elevação, que
+<p>Inselberg: relevos residuais que se acumulam em uma superfície, formando um tipo de monte ou elevação, que
             pode se apresentar de formas variadas. </p>
-
-        <div class="w3-margin"><img id="imagem8" src="ts05f08.png" alt="ts05f08" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao8"> </span>
-
-        </div>
-
-
-
-        <p>Na próxima aula vamos ver com detalhes as classificações do relevo brasileiro e a morfologia de seu litoral.
+<div class="w3-margin"><img alt="ts05f08" class="w3-mobile" id="imagem8" src="ts05f08.png"/>
+<span class="w3-small w3-margin-left" id="citacao8"> </span>
+</div>
+<p>Na próxima aula vamos ver com detalhes as classificações do relevo brasileiro e a morfologia de seu litoral.
         </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>As altitudes do território brasileiro são modestas. 40% do território tem no máximo 200m de altitude, isso
-            ocorre:</h4>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">a)
-            Pois o relevo é muito acidentado.</button>
-
-
-
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">b)
-            É influenciado diretamente pelo tectonismo.</button>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'o relevo brasileiro sofreu bastante com os agentes externos como vento, chuva, erosão marinha etc','2'); this.style.backgroundColor='lightgreen'">c)
-            É geologicamente antigo, portanto desgastado.</button>
-
-
-        <p id="resp1"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>No território brasileiro não há cadeias montanhas devido:</h4>
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
-
-            a) Pela escassez de depósitos sedimentares.
-        </button>
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'o Brasil está situado em uma posição interna da Placa Sul-America, mais estável do que nas bordas.','2'); this.style.backgroundColor='lightgreen'">
-
-            b) Pela ausência de dobramentos modernos.
-        </button>
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
-
-            c) Pela intensa ação humana sobre áreas naturais.
-        </button>
-
-
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>As jazidas de minerais metálicos são encontradas, preferencialmente, no(a)s;</h4>
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'é possível encontrar ouro, ferro, cobre, manganês e granito, quarzto, ardósia, metálico e não metálicos','2'); this.style.backgroundColor='lightgreen'">
-
-            a) Escudos cristalinos.
-
-        </button>
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
-
-            b) Bacias sedimentares.
-
-        </button>
-
-
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
-
-            c) Dobramentos modernos.
-
-        </button>
-
-
-
-
-        <p id="resp3"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>As altitudes do território brasileiro são modestas. 40% do território tem no máximo 200m de altitude, isso
+            ocorre:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p1a" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1a">
+<span>a) Pois o relevo é muito acidentado.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1b" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1b">
+<span>b) É influenciado diretamente pelo tectonismo.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1c" name="pergunta1" type="radio" value="correto"/>
+<label class="card-opcao" for="p1c">
+<span>c) É geologicamente antigo, portanto desgastado.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o relevo brasileiro sofreu bastante com os agentes externos como vento, chuva, erosão marinha etc', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp1"></p>
+<div class="area w3-center">
+<img height="64" id="globinho1" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>No território brasileiro não há cadeias montanhas devido:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p2a" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2a">
+<span>a) Pela escassez de depósitos sedimentares.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2b" name="pergunta2" type="radio" value="correto"/>
+<label class="card-opcao" for="p2b">
+<span>b) Pela ausência de dobramentos modernos.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2c" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2c">
+<span>c) Pela intensa ação humana sobre áreas naturais.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'o Brasil está situado em uma posição interna da Placa Sul-America, mais estável do que nas bordas.', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp2"></p>
+<div class="area w3-center">
+<img height="64" id="globinho2" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>As jazidas de minerais metálicos são encontradas, preferencialmente, no(a)s;</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p3a" name="pergunta3" type="radio" value="correto"/>
+<label class="card-opcao" for="p3a">
+<span>a) Escudos cristalinos.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3b" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3b">
+<span>b) Bacias sedimentares.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3c" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3c">
+<span>c) Dobramentos modernos.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'é possível encontrar ouro, ferro, cobre, manganês e granito, quarzto, ardósia, metálico e não metálicos', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp3"></p>
+<div class="area w3-center">
+<img height="64" id="globinho3" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Quais as características da estrutura geológica do Brasil?
             </strong> </p>
-
-        <p><span class="primeiraLetra">R:</span> O território brasileiro é formado por estruturas geológicas antigas.
+<p><span class="primeiraLetra">R:</span> O território brasileiro é formado por estruturas geológicas antigas.
             Trata-se de um conjunto de rochas que servem de alicerce para o território. Suas idades geológicas vão desde
             Paleozoico ao Mesozoico em relação as bacias sedimentares e do Pré-Cambriano (Arqueozoico-Proterozóico) para
             os terrenos cristalinos.</p>
-
-        <p>Já o relevo brasileiro é um pouco mais recente (isso considerando milhões de anos). Isso quer dizer que o
+<p>Já o relevo brasileiro é um pouco mais recente (isso considerando milhões de anos). Isso quer dizer que o
             relevo continua sendo desgastado pelos agentes de erosão e ele tem relação com as rochas antigas e com as
             transformações que ocorram a partir do Mesozoico, como a criação das cordilheiras andinas e da própria
             abertura do continente Atlântico na época da separação da Pangeia.</p>
-
-        <p>Portanto, a estrutura geológica do Brasil é marcada pelos crátons, pelos dobramentos antigos e pelas grandes
+<p>Portanto, a estrutura geológica do Brasil é marcada pelos crátons, pelos dobramentos antigos e pelas grandes
             bacias sedimentares.</p>
-
-
-
-
-
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>Qual a diferença entre Crátons e Escudos
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>Qual a diferença entre Crátons e Escudos
                 cristalinos? </strong></p>
-
-        <p><span class="primeiraLetra">R:</span> A diferença é que os Escudos cristalinos estão expostos a processos
+<p><span class="primeiraLetra">R:</span> A diferença é que os Escudos cristalinos estão expostos a processos
             erosivos. Já as áreas cratônicas estão subjacente (por baixo) de bacias sedimentares, por exemplo. Vamos
             fazer uma analogia com uma cama. O colchão são as rochas magmática ou metamórficas (Crátons). O forro de
             cama, aquele com elástico seria a bacia sedimentar. As vezes o colchão fica exposto e pode sofrer ação do
             tempo, este seria o escudo cristalino. Veja na imagem abaixo um exemplo na bacia do Amazonas:
 
         </p>
-
-
-
-        <div class="w3-margin"><img id="imagem13" src="ts05f013.png" alt="ts05f013" class="w3-mobile">
-
-            <span class="w3-small w3-margin-left" id="citacao13"> </span>
-        </div>
-
-        <p>Os crátons e as plataformas (crátons recobertos por bacias sedimentares) formam a base sobre a qual se
+<div class="w3-margin"><img alt="ts05f013" class="w3-mobile" id="imagem13" src="ts05f013.png"/>
+<span class="w3-small w3-margin-left" id="citacao13"> </span>
+</div>
+<p>Os crátons e as plataformas (crátons recobertos por bacias sedimentares) formam a base sobre a qual se
             assenta o território brasileiro.</p>
-
-        <p>Há três importantes formações de crátons na porção continental do Brasil:</p>
-
-        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
-
-            <p>- província da <strong>Guiana Meridional</strong>, situada no extremo norte, abrangendo os Estados do
+<p>Há três importantes formações de crátons na porção continental do Brasil:</p>
+<div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+<p>- província da <strong>Guiana Meridional</strong>, situada no extremo norte, abrangendo os Estados do
                 Amazonas, Roraima e Amapá, possui altitudes elevadas;</p>
-
-            <p>- <strong>Xingu</strong>, localizada na porção sul das terras amazônicas, nos Estados de Rondônia, Mato
+<p>- <strong>Xingu</strong>, localizada na porção sul das terras amazônicas, nos Estados de Rondônia, Mato
                 Grosso, Pará e sul do Amazonas, apresentam altitudes medianas;</p>
-
-            <p>- crátons de<strong> São Francisco</strong> Minas Gerais e Bahia.</p>
-
-        </div>
-
-        <p>Os escudos cristalinos foram formados há mais de 2 bilhões de anos no Pré-Cambriano, estiveram sujeitos a
+<p>- crátons de<strong> São Francisco</strong> Minas Gerais e Bahia.</p>
+</div>
+<p>Os escudos cristalinos foram formados há mais de 2 bilhões de anos no Pré-Cambriano, estiveram sujeitos a
             dobramentos, são eles: os cinturões do Atlântico que se estendem desde a parte leste do Nordeste até o
             sudeste do Rio Grande do Sul; a porção de Brasília, com áreas ao sul de Tocantins até o sudeste de Minas
             Gerais e o cinturão orogênico do Paraguai-Araguaia, que ocupa terras de Goiás, Tocantins e Mato Grosso, este
             o mais erodido. </p>
-
-        <p>Os escudos cristalinos são áreas de exploração de minérios e corresponde a 36% do território nacional.</p>
-
-
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p>Os escudos cristalinos são áreas de exploração de minérios e corresponde a 36% do território nacional.</p>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Qual a importância das bacias sedimentares?
 
             </strong></p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p><span class="primeiraLetra">R:</span>
 
             As bacias sedimentares corresponde a 64% do território brasileiro e são basicamente três: a bacia Amazônica,
             com petróleo e gás natural de difícil acesso devido a longa compactação de suas camadas; a bacia do
             Parnaíba, com importantes reservas de água subterrânea e carvão mineral; e a bacia do Paraná com exposição
             de enormes derrames de lava vulcânica que deram origem a solos extremamente férteis chamados de terra roxa.
         </p>
-
-        <p>As bacias sedimentares foram formadas há mais de 500 milhões de anos a partir de sedimentos e fósseis. Muitos
+<p>As bacias sedimentares foram formadas há mais de 500 milhões de anos a partir de sedimentos e fósseis. Muitos
             fósseis são de peixes e conchas marinhos, pois durante a era Paleozoica, extensas áreas do território da
             América do Sul estavam submersas por águas, fenômeno conhecido como “mar Devoniano”.</p>
-
-        <p>Nas áreas de bacias sedimentares devido a decomposição incompleta de seres vivos, animais e vegetais, e após
+<p>Nas áreas de bacias sedimentares devido a decomposição incompleta de seres vivos, animais e vegetais, e após
             milhões de anos recobertos por sedimentos, há grande possibilidade de se encontrar petróleo, gás natural ou
             carvão mineral, uma das razões para o seu estudo.</p>
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
-        <br><br>
-
-
-
-
-
-
-
-        <hr>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
-            <h2> <strong>Desafio - Jornada do herói: A Recusa do Chamado</strong></h2>
-
-            <h4>Na aula passada vimos como ocorre “O chamado à Aventura” para o desenvolvimento da nossa história do
-                jogo com temas ligados ao Brasil. Algum conflito provoca uma reação em cadeia que levará o herói até o
-                seu objetivo. Neste desafio vamos ver a Recusa do Chamado, ou seja, as dificuldades em aceitar o que
-                está por vir. Como sempre, formem seus grupos e use a criatividade para lidar com esse desafio.</h4>
-        </div>
-
-
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding">
-            <h2><strong>Instruções</strong> </h2>
-            <ul>
-
-                <li>Forme um grupo com 5-6 estudantes;</li>
-
-                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
-
-                <li> Faça anotações em seu caderno;</li>
-
-                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
-
-                <li>Tempo da atividade: 25 minutos.</li>
-
-            </ul>
-
-        </div>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
-
-            <h4><strong>A Recusa do Chamado (3)</strong></h4>
-
-            <p>Leia a passagem abaixo:</p>
-
-
-
-
-            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                <p>“Junte o que é seu, meu camarada. Pense no que vai precisar para enfrentar possíveis perigos, reflita
-                    sobre desastres já acontecidos. O espectro do desconhecido sempre caminha conosco, detendo nosso
-                    progresso neste limiar. Alguns de nós abandonam a busca, outros hesitam, outros ouvem as ponderações
-                    das famílias que temem por nossas vidas e não querem que partamos. A gente ouve dizer que a jornada
-                    já começa errada, não vai dar certo, está fadada ao fracasso. Dá para sentir o medo que nos sufoca o
-                    fôlego e nos acelera os corações. Será que não é melhor ficar em casa, com Nossa Tribo, e deixar que
-                    os outros arrisquem o pescoço nessa busca? Será que você nasceu mesmo para isso e pode sair em busca
-                    de aventuras?”</p>
-
-            </div>
-
-            <p>A passagem acima ilustra A Recusa ao Chamado, que é o momento em que o herói diz que o Chamado não é seu
-                problema ou que nada pode ser feito, e o melhor seria deixar as coisas como estão. Pode ser o momento em
-                que um mentor entra em cena para tentar convencê-lo a se comprometer na resolução do conflito.</p>
-
-
-            <p>Quando Obi-Wan Kenobi, em <em>Star Wars</em>, pede à ajuda de Luke Skywalker para ir até Alderaan, ele
-                primeiro nega o pedido, até que seus tios são assinados pelo Império. Após esse fato, ele decide ajudar
-                a resgatar a princesa Leia.
-            </p>
-
-            <p>Em <em>O Senhor dos Anéis</em>, Após Gandalf revelar à Frodo que o anel dado a ele pelo seu tio Bilbo
-                deve ser destruído para derrotar Sauron, Frodo está indeciso e recusa inicialmente o chamado. Ele
-                argumenta que nunca esteve em uma aventura antes, e deseja aproveitar o verão no Condado. Ele se sentiu
-                fraco ou não à altura da tarefa. Entretanto, Com a figura do mentor Gandolf, também como um protetor do
-                Condado, Frodo ganha confiança e decide partir para sua missão. </p>
-
-            <p>Como que a descrição do relevo e das rochas podem contribuir ilustrar o cenário de um jogo?</p>
-
-            <p>O ambiente pode ser uma pedreira de minério de ferro ou o solo do sertão nordestino. Ou uma mina de
-                carvão em Santa Catarina ou a paisagem natural do Rio de Janeiro. A planície do rio amazonas ou do
-                Pantanal. A caracterização do cenário passa, portanto, pela observação e descrição geográfica e é muito
-                importante para relevar o caminho no qual o herói irá trilhar para atingir seus objetivos.</p>
-
-            <p>Em nossa história, de que os personagens têm medo? São medos falsos ou verdadeiros? Como eles se
-                expressam?</p>
-
-            <p>De que modo eles recusam o Chamado à Aventura? Quais as consequências desse ato na realidade?</p>
-
-            <p>Você já recusou Chamados à Aventura? Em que sua vida seria diferente, se os tivesse aceitado?</p>
-
-            <p>Você já aceitou Chamados à Aventura que preferia ter recusado?</p>
-
-            <p>Todas essas questões estão envolvidas na desenvolvimento da história de um jogo. O herói quer evitar o
-                chamado e pode dar uma lista interminável de desculpas ou compromissos inadiáveis.</p>
-
-            <p>O herói também pode ter chamados conflitantes, dois ou mais chamados ao mesmo tempo e, portanto, fica
-                mais difícil decidirpanedesafio
-                qual ele deve aceitar. As vezes o herói deve recusar uma chamado, pois trata-se de algo negativo, quando
-                é algo ilegal, uma sedução ou tentação inoportuna.</p>
-
-            <p>Quando os herói entende o medo e engaja-se na aventura, ele pode receber a ajuda de mentores, colegas,
-                grupos, instituições, isto é, ele não estará sozinho dependendo das escolhas que fez e por quais
-                caminhos decidiu seguir.</p>
-
-
-
-
-
-        </div>
-
-
-
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','4');this.style.display='none'">Proximo</button>
-
-
-        <p id="respFinal"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
-                    alt="globinhorespFinal" width="64" height="64">
-            </p>
-        </div>
-        <hr>
-
-    </div>
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span> -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-
-
-
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-        <p>FLORENZANO, Teresa Gallotti. <strong>Geomorfologia</strong>: conceitos e tecnologias atuais. São Paulo:
-            Oficina de Textos, 2008.</p>
-
-        <p>
-            ROSS, Jurandyr. L. S. Compartimentação do relevo da América do Sul. <strong>Revista Brasileira de
-                Geografia</strong>
-            1, p.21-58, 2016.
-        </p>
-
-
-        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. – São
-            Paulo: Ática, 2013.
-        </p>
-
-        <p>
-            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores. Tradução de
-            Ana Maria Machado. -
-            2.ed. Rio de Janeiro: Nova Fronteira, 2006.
-        </p>
-
-        <p>SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about narrative
-            techniques.</p>
-
-
-
-
-
-
-
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        //     console.log(numB);
-        // }
-
-
-        // Slides
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                // numButton();
-                ApagaButton();
-                // RemoveBalancarGlobo();
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-        }
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 14);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-
-    </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-
-
-
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+<br/><br/>
+<hr/>
+</div>
+<div class="topico">
+<h3>Antes de finalizar, vamos fazer as questões!</h3>
+<button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+<p id="respFinal"></p>
+<div class="area">
+<p><img alt="globinhorespFinal" height="64" id="globinhorespFinal" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/></p>
+</div>
+<hr/>
+</div>
+<!-- TÓPICO FINALIZAR -->
+<div class="topico">
+<button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+</div>
+<div class="bibliografias w3-content w3-padding-64" id="final-da-aula" style="max-width:700px">
+<hr/>
+<h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+<div class="w3-row-padding" id="links-gerados"></div>
+<div class="w3-container w3-padding-64">
+<h3 class="fontePixel w3-center w3-text-green">
+<strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+</h3>
+<div id="biblio-gerada"></div>
+</div>
+<br/><br/>
+<div class="w3-padding-48">
+<span id="numero"></span>
+<span id="txtBarra">0%</span>
+<progress id="progress" max="100" value="0"></progress>
+</div>
+</div></main>
+<div id="footer-placeholder"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
 </body>
-
 </html>

@@ -11,8 +11,11 @@
 
     <title>Duvid Geografia - Simulado Fuvest 2023</title>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/questoes.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="../../../estilos/dialogo.css">
@@ -61,6 +64,8 @@
         
 
 
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
 </head>
 
 
@@ -69,27 +74,13 @@
 
 
 
-<body>
+<body class="w3-light-grey">
 
-    <!-- Navigation (Stays on Top) -->
-    <div class="w3-top w3-bar w3-black larguraBar w3-large">
+    <div id="header-placeholder"></div>
 
-        <div class="w3-container">
-
-            <a href="../../../index.html" class=" w3-button  margemTop  ">Home</a>
-
-
-            <a href="../../../blog/blog.html" class=" w3-button  margemTop  ">Blog</a>
-            <a href="../../../paginas/sobre.html" class=" w3-button  margemTop  ">Sobre</a>
-
-
-        </div>
-
-    </div>
-
-
-
-    <h1 class="h1"> Simulado Fuvest 2023 </h1>
+    <main style="max-width:750px; margin:0 auto; padding-top:80px">
+    <div class="w3-content">
+<h1 class="h1"> Simulado Fuvest 2023 </h1>
 
     <div class="w3-container w3-white ">
 
@@ -114,17 +105,6 @@
         </ul>
 
     </div>
-
-
-
-    <div class="w3-padding-top-24">
-        <div class="w3-white larguraBar w3-padding flex-container">
-
-            <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                    id="decrease-font" title="Diminuir fonte">A -</button></div>
-            <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                    id="increase-font" title="Aumentar fonte">A +</button></div>
-        </div>
     </div>
 
     <form id="quiz" name="quiz" onsubmit="verificar()">
@@ -1472,7 +1452,7 @@
 
     <div class="area w3-padding-64"><input id="button1" type="button" value="Conferir" onclick="verificar()"></div>
 
-
+    </main>
 
 
 	<script>
@@ -1609,6 +1589,11 @@
 
 
 
+
+    </div>
+
+
+    <div id="footer-placeholder"></div>
 
 </body>
 

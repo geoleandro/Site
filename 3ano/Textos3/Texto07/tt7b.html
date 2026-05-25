@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+
+    <script src="../../../js/duvid-core.js" defer></script>
+
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+
+    <script src="../../../js/aulas-geral.js" defer></script>
+
+
+
+    <title></title>
+
+
+
+    <style>
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div id="aviso-status" class="w3-margin-top"></div>
+
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+    
+
+        <!-- TÓPICO 0: ABERTURA -->
+        <div class="topico">
+            <div class="w3-padding-top-48"></div>
+
+            <h1 id="h1"></h1>
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Estudar a formação do meio técnico e identificar suas características
+                    fundamentais. Relacionar tais características ao processo de industrialização.</span></p>
+            </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 1: INTRODUÇÃO -->
+        <div class="topico">
+            <h2>Introdução</h2>
+
+            <p><span class="primeiraLetra">N</span>a aula passada, mergulhamos no processo de avaliar o desenvolvimento
+                dos países, tarefa nada fácil.</p>
+
+            <p>Hoje, vamos embarcar em uma jornada pela história da industrialização mundial e suas profundas
+                transformações geográficas. Ao longo do tempo, a humanidade tem testemunhado mudanças significativas no
+                modo como produzimos bens, organizamos nossas sociedades e interagimos com o meio ambiente.</p>
+
+            <p>Nesta aula, exploraremos os diferentes estágios desse processo, desde a formação do meio técnico até os
+                impactos das revoluções industriais em escala global.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 2: QUESTÕES DO CADERNO -->
+        <div class="topico w3-pale-yellow">
+            <h2>Questões para responder no caderno</h2>
+
+            <h3>1. Como o ser humano modificou o meio natural para criar o meio técnico necessário ao desenvolvimento
+                industrial?</h3>
+            <h3>2. Quais são os exemplos de transformações do meio natural mencionados no texto?</h3>
+            <h3>3. Explique o conceito de "meio técnico" conforme apresentado no texto.</h3>
+            <h3>4. O que foi a Revolução Industrial e qual foi o seu impacto global?</h3>
+            <h3>5. Quais foram os principais avanços tecnológicos da Primeira Revolução Industrial?</h3>
+            <h3>6. Como a Segunda Revolução Industrial impactou as sociedades e a economia?</h3>
+            <h3>7. Quais são as características da Terceira Revolução Industrial, também conhecida como Revolução
+                Técnico-Científica?</h3>
+            <h3>8. Explique as diferentes maneiras de classificar as indústrias mencionadas no texto.</h3>
+            <h3>9. Quais são os principais fatores de produção que impulsionam a indústria?</h3>
+            <h3>10. Qual é a relação entre o meio natural e o desenvolvimento industrial ao longo da história, conforme
+                descrito no texto?</h3>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 3: MEIO NATURAL E MEIO TÉCNICO -->
+        <div class="topico">
+            <h2>Meio Natural e Meio Técnico</h2>
+
+            <p><span class="primeiraLetra">A</span>o longo da história, o ser humano tem exercido um papel fundamental
+                na modificação do meio natural para criar o meio técnico necessário ao desenvolvimento industrial. Um
+                exemplo marcante é a canalização de rios para a geração de energia hidrelétrica, um processo utilizado
+                em diversos países, como Brasil, China e Canadá. Essa transformação do curso dos rios não apenas fornece
+                energia limpa e renovável, mas também influencia diretamente o ambiente ao redor, alterando ecossistemas
+                aquáticos e terrestres.</p>
+
+            <p>Outro exemplo é o desmatamento para abrir espaço para áreas industriais. Países como Estados Unidos,
+                Rússia e Brasil têm enfrentado o desafio de equilibrar a expansão industrial com a preservação
+                ambiental. A Amazônia, por exemplo, tem sido alvo de intensa exploração industrial, levando a
+                preocupações sobre o impacto na biodiversidade e no clima global.</p>
+
+            <div class="w3-margin">
+                <img id="imagem1" src="tt07f01.png" alt="Meio natural e técnico" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao1">Fonte: pexels.com</span>
+            </div>
+
+            <p>A extração de recursos minerais também desempenha um papel crucial no desenvolvimento industrial. Países
+                como Austrália, Chile e África do Sul são importantes produtores de minerais utilizados na fabricação de
+                produtos industrializados. No entanto, essa exploração muitas vezes gera conflitos socioambientais, como
+                os observados em regiões de mineração na África, onde comunidades locais enfrentam desafios relacionados
+                à poluição e ao deslocamento.</p>
+
+            <div class="w3-margin">
+                <img id="imagem2" src="tt07f02.png" alt="Mineração" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao2">Fonte: pexels.com</span>
+            </div>
+
+            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+                <h3><strong><mark>Se liga nesse conceito!</mark></strong></h3>
+                <h4><strong>Meio natural</strong></h4>
+                <p>Quando tudo era meio natural, o homem escolhia da natureza aquelas suas partes ou aspectos
+                    considerados fundamentais ao exercício da vida, valorizando, diferentemente, segundo os lugares e as
+                    culturas, essas condições naturais que constituíam a base material da existência do grupo.</p>
+                <h4><strong>O meio técnico</strong></h4>
+                <p>O período técnico vê a emergência do espaço mecanizado. Os objetos que formam o meio não são, apenas,
+                    objetos culturais; eles são culturais e técnicos, ao mesmo tempo. Quanto ao espaço, o componente
+                    material é crescentemente formado do "natural" e do "artificial". Mas o número e a qualidade de
+                    artefatos variam. As áreas, os espaços, as regiões, os países passam a se distinguir em função da
+                    extensão e da densidade da substituição, neles, dos objetos naturais e dos objetos culturais, por
+                    objetos técnicos.<br>
+                    <span class="w3-small">Santos, Milton. A Natureza do Espaço.</span>
+                </p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 4: REVOLUÇÃO INDUSTRIAL -->
+        <div class="topico">
+            <h2>Revolução Industrial</h2>
+
+            <p><span class="primeiraLetra">A</span> Revolução Industrial teve origem na Inglaterra do século XVIII e se
+                espalhou pelo mundo, transformando radicalmente as sociedades e economias. Um exemplo emblemático é o
+                desenvolvimento da máquina a vapor por James Watt, que impulsionou a produção em larga escala e a
+                expansão das ferrovias, ampliando as conexões entre diferentes regiões e países.</p>
+
+            <div class="w3-margin">
+                <img id="imagem3" src="tt07f03.png" alt="Revolução Industrial" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao3">Fonte: pexels.com</span>
+            </div>
+
+            <p>As repercussões da Revolução Industrial foram globais, afetando países em todos os continentes. Nos
+                Estados Unidos, por exemplo, a Revolução Industrial estimulou o crescimento econômico e a expansão
+                territorial, com a construção de ferrovias e a consolidação de indústrias como a siderúrgica e a
+                automobilística. Na Alemanha, a Segunda Revolução Industrial trouxe avanços significativos na indústria
+                química e na produção de aço, contribuindo para a ascensão do país como potência industrial.</p>
+
+            <p>Conectando com a última aula sobre globalização, podemos observar como a Revolução Industrial foi um
+                catalisador para o processo de globalização. O surgimento de novas tecnologias e métodos de produção
+                facilitou a integração econômica e a circulação de mercadorias em escala mundial. Além disso, a demanda
+                por recursos naturais e mão de obra barata impulsionou o colonialismo e o comércio internacional,
+                estabelecendo conexões cada vez mais complexas entre os países.</p>
+
+            <h2>As Revoluções Industriais: Mudando o Mundo</h2>
+
+            <h3>Primeira Revolução Industrial</h3>
+            <p>A Primeira Revolução Industrial marcou o início da era moderna, iniciando-se na Inglaterra do século
+                XVIII. Com a introdução da máquina a vapor e a mecanização da produção têxtil, a forma como os bens eram
+                produzidos mudou drasticamente. Exemplo disso é a invenção do tear mecânico por Edmund Cartwright, que
+                aumentou significativamente a velocidade de produção de tecidos. O impacto da Primeira Revolução
+                Industrial foi sentido não apenas na esfera econômica, mas também na social, com o surgimento de novas
+                classes sociais, como a burguesia industrial, e o crescimento das cidades devido à migração do campo
+                para as fábricas nas áreas urbanas.</p>
+
+            <div class="w3-margin">
+                <img id="imagem7" src="tt07f07.png" alt="Tear mecânico de Edmund Cartwright" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao7">Tear mecânico de Edmund Cartwright. Fonte:
+                    pexels.com</span>
+            </div>
+
+            <h3>Segunda Revolução Industrial</h3>
+            <p>A Segunda Revolução Industrial, ocorrida no final do século XIX até a década de 1970, foi impulsionada
+                por avanços como eletricidade, petróleo e aço. A eletricidade, por exemplo, permitiu a automação de
+                processos industriais, enquanto o petróleo e o aço foram essenciais para o desenvolvimento de novos
+                setores industriais, como o automobilístico e o químico. Países como Estados Unidos, Alemanha e Japão
+                foram os principais protagonistas desse período, que testemunhou uma rápida urbanização e um aumento sem
+                precedentes na produção em massa.</p>
+
+            <div class="w3-margin">
+                <img id="imagem4" src="tt07f04.png" alt="Segunda Revolução Industrial" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao4">Fonte: pexels.com</span>
+            </div>
+
+            <h3>Terceira Revolução Industrial</h3>
+            <p>A Terceira Revolução Industrial, também conhecida como Revolução Técnico-Científica, teve início na
+                segunda metade do século XX com o advento da revolução digital e das tecnologias da informação. A
+                computação, a internet e a robótica revolucionaram completamente os processos de produção, distribuição
+                e consumo, levando à automatização de tarefas e ao surgimento de novos modelos de negócios. Empresas
+                como Google, Apple e Microsoft se tornaram gigantes globais, enquanto países como Estados Unidos, Japão
+                e China lideraram o desenvolvimento tecnológico nesse período.</p>
+
+            <div class="w3-margin">
+                <img id="imagem5" src="tt07f05.png" alt="Terceira Revolução Industrial" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao5">Fonte: pexels.com</span>
+            </div>
+
+            <p>Essas três revoluções industriais não apenas mudaram a face da indústria, mas também redefiniram o curso
+                da história humana, moldando o mundo moderno em que vivemos.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 5: CLASSIFICAÇÃO DAS INDÚSTRIAS -->
+        <div class="topico">
+            <h2>Classificação das Indústrias: Uma Visão Abrangente</h2>
+
+            <p><span class="primeiraLetra">N</span>este tópico, vamos explorar as diversas maneiras de classificar as
+                indústrias:</p>
+
+            <h3>Quanto ao Fator Histórico</h3>
+            <p>Ao longo da história, as indústrias passaram por diferentes estágios de evolução, refletindo mudanças nos
+                métodos de produção e organização do trabalho. Começando pelo artesanato, onde a produção era manual e
+                descentralizada, passando pela manufatura, que envolvia a divisão do trabalho e a produção em larga
+                escala em oficinas, até chegar à maquinofatura, onde máquinas e processos mecanizados dominam a produção
+                em fábricas.</p>
+
+            <h3>Quanto ao Desenvolvimento Tecnológico</h3>
+            <p>As indústrias também podem ser classificadas de acordo com o nível de tecnologia empregada em seus
+                processos produtivos. Desde a manufatura, que utiliza máquinas simples e processos semiautomatizados,
+                até a indústria 4.0, caracterizada pela integração de tecnologias avançadas como inteligência
+                artificial, internet das coisas e robótica, as diferentes fases refletem a constante busca por
+                eficiência e inovação na produção industrial.</p>
+
+            <div class="w3-margin">
+                <img id="imagem6" src="tt07f06.png" alt="Indústria 4.0" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao6">Fonte: pexels.com</span>
+            </div>
+
+            <h3>Quanto à Finalidade dos Bens Produzidos</h3>
+            <p>As indústrias também podem ser classificadas de acordo com a finalidade dos bens que produzem. As
+                indústrias de consumo não durável fornecem produtos de curta duração, como alimentos e produtos de
+                higiene pessoal. Já as indústrias de consumo durável produzem bens que têm uma vida útil mais longa,
+                como eletrodomésticos, veículos e móveis. Por fim, as indústrias de bens de produção fornecem os
+                equipamentos e maquinários necessários para a fabricação de outros bens, como máquinas industriais,
+                ferramentas e equipamentos agrícolas.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 6: FATORES DE PRODUÇÃO -->
+        <div class="topico">
+            <h2>Os Fatores de Produção na Indústria: Elementos Essenciais</h2>
+
+            <p><span class="primeiraLetra">N</span>este tópico, vamos explorar os principais fatores que impulsionam a
+                produção industrial:</p>
+
+            <h3>Capital</h3>
+            <p>O investimento de capital desempenha um papel crucial na produção industrial, fornecendo os recursos
+                financeiros necessários para construir fábricas, adquirir equipamentos modernos e tecnologicamente
+                avançados, além de financiar pesquisas e desenvolvimento de novos produtos. Países e regiões que possuem
+                acesso a um grande volume de capital tendem a ter indústrias mais desenvolvidas e competitivas no
+                cenário global.</p>
+
+            <h3>Energia</h3>
+            <p>A energia é essencial para impulsionar os processos produtivos na indústria. Fontes tradicionais de
+                energia, como petróleo e carvão, são amplamente utilizadas em fábricas e indústrias ao redor do mundo.
+                No entanto, o aumento da conscientização ambiental tem impulsionado a busca por fontes de energia mais
+                limpas e renováveis, como a energia solar e eólica, que estão sendo cada vez mais adotadas pela
+                indústria.</p>
+
+            <h3>Matéria-Prima</h3>
+            <p>A disponibilidade e o acesso a matérias-primas desempenham um papel crucial na localização e no
+                desenvolvimento das indústrias. Regiões ricas em recursos naturais, como minerais, metais e produtos
+                agrícolas, tendem a atrair investimentos industriais devido à facilidade de acesso a matéria-prima. No
+                entanto, a dependência excessiva de recursos naturais pode levar à exploração descontrolada e à
+                degradação ambiental.</p>
+
+            <h3>Mão de Obra</h3>
+            <p>Os trabalhadores são um dos pilares fundamentais da produção industrial. A disponibilidade de mão de obra
+                qualificada e produtiva influencia diretamente na eficiência e competitividade das indústrias.
+                Investimentos em educação e treinamento são essenciais para desenvolver uma força de trabalho capacitada
+                e adaptável às demandas do mercado.</p>
+
+            <h3>Resumindo</h3>
+            <p>O meio natural foi transformado ao longo dos séculos para dar lugar a um espaço geográfico mecanizado,
+                onde a produção industrial é a principal atividade econômica. Essa transformação trouxe consigo uma
+                série de problemas, como a degradação ambiental, a poluição do ar e da água, o esgotamento de recursos
+                naturais e o aumento das desigualdades sociais. No entanto, também trouxe avanços significativos, como o
+                aumento da produtividade, a melhoria das condições de vida e o desenvolvimento de novas tecnologias e
+                inovações.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+        
+
+        <div class="topico">
+
+            <h2> Infográfico - Resumo</h2>
+
+            <div class="w3-margin"><img id="infograficot2" src="inforesumot7.png"
+                    alt="Infográfico resumo raio x da população" class="w3-mobile">
+                <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Organizado e revisado pelo autor. </span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+            <hr>
+
+        </div>
+
+
+        <!-- TÓPICO 7: PERGUNTAS E RESPOSTAS -->
+        <div class="topico">
+            <h2 id="centralizado">O desejo de entender o mundo é o que nos impulsiona a descobrir as maravilhas da
+                ciência.</h2>
+
+            <p class="w3-border w3-round-large">
+                <span class="primeiraLetra">P:</span>
+                <strong>Como a Revolução Industrial impactou diretamente o meio ambiente, considerando tanto os
+                    benefícios quanto os problemas decorrentes desse processo?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> A Revolução Industrial trouxe uma série de transformações
+                significativas para o meio ambiente. Por um lado, houve avanços tecnológicos e melhorias na qualidade de
+                vida, como o acesso a novos produtos e serviços. Por outro lado, o rápido crescimento industrial
+                resultou em problemas ambientais graves, como a poluição do ar, da água e do solo, além do desmatamento
+                e da degradação de ecossistemas naturais. Esses impactos continuam a ser desafios contemporâneos,
+                ressaltando a importância de abordagens sustentáveis para o desenvolvimento industrial.</p>
+
+            <p class="w3-border w3-round-large">
+                <span class="primeiraLetra">P:</span>
+                <strong>Qual é o papel das fontes de energia na indústria moderna, e como a transição para fontes
+                    renováveis pode influenciar o futuro da produção industrial?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> As fontes de energia desempenham um papel fundamental na indústria
+                moderna, impulsionando os processos produtivos e fornecendo a energia necessária para alimentar máquinas
+                e equipamentos. Atualmente, há um crescente interesse e investimento em fontes de energia renováveis,
+                como solar, eólica e hidrelétrica, devido à preocupação com os impactos ambientais das fontes de energia
+                tradicionais. A transição para fontes de energia mais limpas e sustentáveis pode não apenas reduzir os
+                impactos ambientais da indústria, mas também abrir novas oportunidades de inovação e desenvolvimento
+                tecnológico.</p>
+
+            <p class="w3-border w3-round-large">
+                <span class="primeiraLetra">P:</span>
+                <strong>Como as mudanças na organização do trabalho ao longo das revoluções industriais influenciaram a
+                    vida das pessoas e as relações sociais dentro das comunidades?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> As revoluções industriais não apenas transformaram os processos de
+                produção, mas também redefiniram as relações sociais e econômicas dentro das comunidades. Com a
+                mecanização e a automação, houve uma mudança significativa na natureza do trabalho, com a substituição
+                de empregos manuais por empregos mais especializados e, posteriormente, por empregos na área de serviços
+                e tecnologia. Isso impactou diretamente a dinâmica social, gerando novas classes sociais e contribuindo
+                para o surgimento de movimentos sociais e sindicatos em busca de melhores condições de trabalho e
+                direitos trabalhistas.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <br><br>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 8: ATIVIDADE DE DEBATE -->
+        <div class="topico">
+            <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+                <h2>Debate sobre Desenvolvimento Industrial</h2>
+                <h3>Tema: Implantação de uma Indústria de Tintas na Cidade: Oportunidades e Desafios</h3>
+
+                <h4>Descrição do Tema:</h4>
+                <p>Uma empresa de tintas está planejando se instalar em nossa cidade, com a promessa de criar 800
+                    empregos diretos. A prefeitura já negociou a doação de um terreno para a construção das instalações
+                    da empresa. Esse empreendimento traz consigo diversas oportunidades econômicas, mas também levanta
+                    importantes questões sobre o desenvolvimento industrial, impactos ambientais, sociais e urbanos.</p>
+
+                <h3>Objetivo:</h3>
+                <p>Promover uma discussão estruturada e reflexiva sobre os benefícios e desafios da industrialização de
+                    uma região, explorando diferentes perspectivas e estimulando o pensamento crítico.</p>
+
+                <h3>Roteiro da Atividade:</h3>
+                <ol>
+                    <li>
+                        <h4>Preparação:</h4>
+                        <p>A sala será dividida em dois grupos: <strong>A favor</strong> e <strong>Contra</strong> o
+                            Desenvolvimento Industrial da Região.</p>
+                        <ul>
+                            <li><strong>Grupo A favor:</strong> benefícios econômicos, desenvolvimento de
+                                infraestrutura, atração de investimentos e diversificação da economia.</li>
+                            <li><strong>Grupo Contra:</strong> impactos ambientais negativos, riscos para a
+                                biodiversidade e ecossistemas, problemas de saúde pública e riscos à população.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Debate:</h4>
+                        <ol>
+                            <li>Apresentação inicial — 5 minutos por grupo</li>
+                            <li>Contraponto e respostas — 3 minutos por grupo</li>
+                            <li>Rodada de perguntas do público — 5 minutos</li>
+                            <li>Conclusão — 2 minutos por grupo</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4>Questões para discussão:</h4>
+                        <ul>
+                            <li>Como equilibrar o desenvolvimento econômico com a preservação ambiental?</li>
+                            <li>Quais medidas poderiam ser adotadas para mitigar os impactos negativos da
+                                industrialização?</li>
+                            <li>Qual é o papel das autoridades locais, empresas e comunidade na tomada de decisões sobre
+                                o desenvolvimento industrial?</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO 9: TRANSIÇÃO FINAL -->
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+
+    MostrarProximo(this);
+">Próximo</button>
+
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
+            </div>
+            <hr>
+        </div>
+
+
+       <!-- TÓPICO 13: FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+
+
+        <!-- ===== SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS ===== -->
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
+
+
+
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <div id="footer-placeholder"></div>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -7,7 +7,7 @@
     <meta property="og:image" content="fuvest/capafuvest.png">
     <title>Duvid - Simulado FUVEST</title>
 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../estilos/index-estilo.css">
     <link rel="shortcut icon" type="image/x-icon" href="../fotoIndex/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -21,7 +21,9 @@
             font-family: pixel;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             font-family: 'pixel', sans-serif;
             text-transform: uppercase;
             color: #2e7d32;
@@ -35,10 +37,11 @@
         .grid-provas {
             display: grid;
             /* Mantém o card pequeno (180px) mesmo se houver apenas um */
-            grid-template-columns: repeat(auto-fill, 180px); 
+            grid-template-columns: repeat(auto-fill, 180px);
             gap: 25px;
             margin-top: 30px;
-            justify-content: center; /* Centraliza o card na página */
+            justify-content: center;
+            /* Centraliza o card na página */
         }
 
         .card-prova {
@@ -53,7 +56,7 @@
         .card-prova img {
             width: 100%;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .card-prova p {
@@ -78,27 +81,30 @@
     <div class="w3-content" style="max-width:900px; margin-top: 80px; margin-bottom: 100px;">
 
         <div class="w3-container w3-white w3-card-4 w3-margin w3-padding-32 w3-round-large">
-            
+
             <h1 class="w3-center w3-text-green"><b>Simulado FUVEST</b></h1>
             <p class="w3-center w3-opacity">Fundação Universitária para o Vestibular</p>
             <hr>
 
             <div class="w3-container">
                 <div class="w3-center w3-margin-bottom">
-                    <img src="fuvest/capafuvest.png" alt="Capa FUVEST" class="w3-image w3-round-large" style="max-width: 100%; height: auto;">
+                    <img src="fuvest/capafuvest.png" alt="Capa FUVEST" class="w3-image w3-round-large"
+                        style="max-width: 100%; height: auto;">
                 </div>
 
-                <p>Prepare-se para um dos vestibulares mais concorridos do país. O <b>Duvid Simulado</b> traz questões da FUVEST para você testar seus conhecimentos em Geografia de forma prática.</p>
-                
+                <p>Prepare-se para um dos vestibulares mais concorridos do país. O <b>Duvid Simulado</b> traz questões
+                    da FUVEST para você testar seus conhecimentos em Geografia de forma prática.</p>
+
                 <div class="w3-panel w3-leftbar w3-border-green w3-pale-green w3-padding-16">
-                    <p><i class="fa fa-lightbulb"></i> <b>Dica:</b> A FUVEST costuma cobrar análises regionais e cartografia de forma bem técnica. Use as dicas durante o simulado para revisar os conceitos!</p>
+                    <p><i class="fa fa-lightbulb"></i> <b>Dica:</b> A FUVEST costuma cobrar análises regionais e
+                        cartografia de forma bem técnica. Use as dicas durante o simulado para revisar os conceitos!</p>
                 </div>
 
                 <h3><i class="fa fa-graduation-cap"></i> Provas Disponíveis</h3>
-                
+
                 <div class="grid-provas">
                     <div class="card-prova">
-                        <a href="fuvest/fuvest2023/fuvest23.html">
+                        <a href="fuvest/fuvest23/fuvest23.html">
                             <img src="fuvest/fuvest23.png" alt="FUVEST 2023" class="w3-hover-opacity">
                             <p>FUVEST 2023</p>
                         </a>
@@ -119,4 +125,5 @@
     </script>
 
 </body>
+
 </html>

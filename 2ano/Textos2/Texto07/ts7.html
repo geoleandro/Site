@@ -1,1409 +1,600 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-    <title>2º ano - Texto 07 </title>
-
-
-
-
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-        .postit-tp9 {
-
-
-            width: auto;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-    </style>
-
-
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<link href="../../../estilos/index-estilo.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="../../../estilos/navbar.css" rel="stylesheet"/>
+<link href="../../../estilos/rpg-sistema.css" rel="stylesheet"/>
+<link href="../../../estilos/ModeloCss.css" rel="stylesheet"/>
+<link href="../../../fotoIndex/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"></script>
+<script defer="" src="../../../js/duvid-cache.js"></script>
+<script defer="" src="../../../js/duvid-db.js"></script>
+<script defer="" src="../../../js/duvid-audio.js"></script>
+<script defer="" src="../../../js/duvid-ui.js"></script>
+<script defer="" src="../../../js/duvid-core.js"></script>
+<script defer="" src="../../../estilos/jstextos-padrao.js"></script>
+<script defer="" src="../../../js/abrirmenu.js"></script>
+<script defer="" src="../../../js/carregar.js"></script>
+<script defer="" src="../../../js/aulas-geral.js"></script>
+<title>2º ano - Texto 07</title>
 </head>
-
 <body>
-
-
-
-    <div class="topico">
-
-        <div class="centerBar">
-
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
-
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
-            </div>
-        </div>
-
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
-            </div>
-        </div>
-
-
-
-        <h1 id="h1"> Texto 07 - Classificação do relevo e morfologia do litoral brasileiro</h1>
-
-
-        <p><strong> Conteúdo:</strong> Classificação geomorfológica; geomorfoclimática; morfoestrutural. Aspectos do
-            relevo litorâneo brasileiro.
-
-        </p>
-
-        <p><strong>Objetivo:</strong> Identificar as classificações do relevo e a morfologia do litoral brasileiro.</p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Introdução </h2>
-
-
-        <p> <span class="primeiraLetra">N</span>a última aula vimos a relação entre a estrutura geológica e as formas do
+<div id="header-placeholder"></div>
+<div class="w3-margin-top" id="aviso-status"></div>
+<main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+<div class="topico">
+<div class="w3-padding-top-48"></div>
+<h1 id="h1"></h1>
+<!-- Futuro audio -->
+<div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+<div class="w3-row">
+<div class="w3-col s2 m1 w3-center">
+<i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+</div>
+<div class="w3-col s10 m11 w3-padding-small">
+<b class="fontePixel">OUVIR AULA</b>
+<p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+</div>
+</div>
+<audio controls="" style="width:100%; margin-top: 10px;">
+<source id="audioSource" src="" type="audio/mp3"/>
+</audio>
+</div>
+<div class="w3-container w3-padding-16">
+<p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+<p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+</div>
+<button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+<i class="fa fa-play"></i> Iniciar Aula
+            </button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Introdução </h2>
+<p> <span class="primeiraLetra">N</span>a última aula vimos a relação entre a estrutura geológica e as formas do
             relevo, quer dizer, o relacionamento entre os tipos de rochas e as feições da superfície no Brasil.</p>
-
-
-        <p>Nesta aula, vamos ver como a classificação do relevo mudou ao longo do tempo devido aos novos avanços
+<p>Nesta aula, vamos ver como a classificação do relevo mudou ao longo do tempo devido aos novos avanços
             científicos na área da geomorfologia.</p>
-
-
-
-        <p>
+<p>
             Vamos conhecer a diversidade de paisagens existentes no território brasileiro, seus recortes e variações
-            <span
-                onclick="this.innerHTML='topográficas (estudo da superfície terrestre e de suas características, formas e elevações)'"><mark>topográficas</mark>.</span>
-
-        </p>
-
-
-
-
-     
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
-
-            <h2> Questões a serem respondidas no caderno sobre o tema da aula de hoje:</h2>
-
-            <p>1. Como o Brasil era conhecido em termos de relevo até a década de 1940?</p>
-
-            <p>2. Quais são as altitudes mais elevadas do Brasil e em que regiões elas ocorrem?</p>
-
-            <p>3. Quais foram os critérios utilizados por Aroldo de Azevedo para classificar o relevo brasileiro?
+            <span onclick="this.innerHTML='topográficas (estudo da superfície terrestre e de suas características, formas e elevações)'"><mark>topográficas</mark>.</span>
+</p>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+<h2> Questões a serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+<p>1. Como o Brasil era conhecido em termos de relevo até a década de 1940?</p>
+<p>2. Quais são as altitudes mais elevadas do Brasil e em que regiões elas ocorrem?</p>
+<p>3. Quais foram os critérios utilizados por Aroldo de Azevedo para classificar o relevo brasileiro?
             </p>
-
-            <p>4. Quantas unidades geomorfológicas foram identificadas por Aroldo de Azevedo?</p>
-
-            <p>5. Quem propôs uma nova classificação do relevo brasileiro nos anos 1960 e 1970?</p>
-
-            <p>6. Quais foram os critérios considerados por Aziz Ab’Saber em sua nova classificação do relevo?</p>
-
-            <p>7. Quais as principais formas do litoral brasileiro mencionadas no texto?</p>
-
-            <p>8. O que são enseadas e onde são encontradas?</p>
-
-            <p>9. O que são tômbolos e em que praias brasileiras são encontrados?</p>
-
-            <p>10. Como o litoral brasileiro é afetado pelas correntes marítimas e quais são as principais correntes
+<p>4. Quantas unidades geomorfológicas foram identificadas por Aroldo de Azevedo?</p>
+<p>5. Quem propôs uma nova classificação do relevo brasileiro nos anos 1960 e 1970?</p>
+<p>6. Quais foram os critérios considerados por Aziz Ab’Saber em sua nova classificação do relevo?</p>
+<p>7. Quais as principais formas do litoral brasileiro mencionadas no texto?</p>
+<p>8. O que são enseadas e onde são encontradas?</p>
+<p>9. O que são tômbolos e em que praias brasileiras são encontrados?</p>
+<p>10. Como o litoral brasileiro é afetado pelas correntes marítimas e quais são as principais correntes
                 mencionadas no texto?</p>
-
-          
-
-        </div>
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-        <h2>As características do relevo no Brasil </h2>
-
-
-
-
-        <p>O Brasil era conhecido como um país de planaltos e planícies, pelo menos até a década de 1940. Embora o país
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>As características do relevo no Brasil </h2>
+<p>O Brasil era conhecido como um país de planaltos e planícies, pelo menos até a década de 1940. Embora o país
             tenha altitudes modestas, que variam em média, entre 200 m a 800 m, com apenas 7,3% do território com
             altitudes superiores a esse número. </p>
-
-        <p>As altitudes mais elevadas ocorrem no geral na região Sudeste e Picos entre a Amazônia e a fronteira com a
+<p>As altitudes mais elevadas ocorrem no geral na região Sudeste e Picos entre a Amazônia e a fronteira com a
             Guiana e Venezuela, como o Pico da Neblina (2.993,7 m) e o Pico 31 de Março (2.972,6 m) na Serra do Imeri,
             ambos situados ao norte do Estado do Amazonas. </p>
-
-        <p>E foi a altitude o primeiro critério utilizado para classificar o relevo brasileiro. Seguido do critério
+<p>E foi a altitude o primeiro critério utilizado para classificar o relevo brasileiro. Seguido do critério
             geomorfoclimático, com a dinâmica da erosão e sedimentação e, o mais recente, baseado na estrutura geológica
             ou morfoestrutural. Vamos ver cada um deles. </p>
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2>As classificações do relevo brasileiro </h2>
-
-        <h3>Classificação geomorfológica</h3>
-
-
-
-
-        <p> A extensão territorial do Brasil levou diversos cientistas a adotarem distintas classificações para a grande
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>As classificações do relevo brasileiro </h2>
+<h3>Classificação geomorfológica</h3>
+<p> A extensão territorial do Brasil levou diversos cientistas a adotarem distintas classificações para a grande
             variedade geológica e de paisagens existentes no Brasil.</p>
-
-        <p>Dentre os precursores geógrafos e geomorfólogos, destaca-se o professor Aroldo de Azevedo, na década de 1940.
+<p>Dentre os precursores geógrafos e geomorfólogos, destaca-se o professor Aroldo de Azevedo, na década de 1940.
         </p>
-
-        <p>O professor Aroldo de Azevedo privilegiou uma abordagem geomorfológica e, por isso, adotou o critério de
+<p>O professor Aroldo de Azevedo privilegiou uma abordagem geomorfológica e, por isso, adotou o critério de
             altitudes para lidar com o relevo brasileiro. Ele identificou oito unidades geomorfológicas, conforme o mapa
             abaixo: </p>
-
-        <div class="w3-margin"><img id="imagem1" src="ts07f01.png" alt="ts07f01" class="w3-mobile">
-
-
-        </div>
-
-
-
-
-
-        <p> Essa classificação adotou um caráter mais abrangente à época, mais generalizado. Dividiu o país em oito
+<div class="w3-margin"><img alt="ts07f01" class="w3-mobile" id="imagem1" src="ts07f01.png"/>
+</div>
+<p> Essa classificação adotou um caráter mais abrangente à época, mais generalizado. Dividiu o país em oito
             grandes unidades: quatro planaltos (das Guianas, Central, Atlântico e Meridional) e três planícies
             (Amazônica, Costeira e do Pantanal).</p>
-
-
-        <p>Esse modelo de representação do relevo brasileiro foi muito utilizado na maioria dos livros didáticos até a
+<p>Esse modelo de representação do relevo brasileiro foi muito utilizado na maioria dos livros didáticos até a
             década de 1950. </p>
-
-        <h3>O relevo e a dinâmica geomorfoclimática</h3>
-
-
-        <p>Nos anos de 1960 e 1970, o geógrafo Aziz Ab’Saber propôs uma nova classificação do relevo brasileiro. Ele
-            aperfeiçoou o modelo anterior. Ele contou com ajuda da <span
-                onclick="document.getElementById('aerofotogrametria').style.display='block'"
-                class="w3-yellow">aerofotogrametria</span> uma nova proposta do relevo brasileiro a partir da erosão e
+<h3>O relevo e a dinâmica geomorfoclimática</h3>
+<p>Nos anos de 1960 e 1970, o geógrafo Aziz Ab’Saber propôs uma nova classificação do relevo brasileiro. Ele
+            aperfeiçoou o modelo anterior. Ele contou com ajuda da <span class="w3-yellow" onclick="document.getElementById('aerofotogrametria').style.display='block'">aerofotogrametria</span> uma nova proposta do relevo brasileiro a partir da erosão e
             sedimentação. </p>
-
-        <div id="aerofotogrametria" class="w3-modal w3-margin-top">
-            <div class="w3-modal-content">
-                <div class="w3-container w3-padding">
-                    <span onclick="document.getElementById('aerofotogrametria').style.display='none'"
-                        class="w3-button w3-red w3-display-topright">&times;</span>
-                    <p>
+<div class="w3-modal w3-margin-top" id="aerofotogrametria">
+<div class="w3-modal-content">
+<div class="w3-container w3-padding">
+<span class="w3-button w3-red w3-display-topright" onclick="document.getElementById('aerofotogrametria').style.display='none'">×</span>
+<p>
                         O levantamento aerofotogramétrico é um dos métodos utilizados para o mapeamento da
                         superfície terrestre. O voo fotogramétrico é realizado por uma aeronave, na qual é acoplada
                         uma câmera fotogramétrica que cobre toda a área a ser mapeada.
 
                     </p>
-
-                </div>
-            </div>
-        </div>
-
-        <p>Ab’Saber percebeu que, além da altitude, era importante avaliar os processos geomorfológicos ligados à
+</div>
+</div>
+</div>
+<p>Ab’Saber percebeu que, além da altitude, era importante avaliar os processos geomorfológicos ligados à
             dinâmica climática. Essa abordagem considerava se o relevo sofria processos de erosão (desgaste) ou de
             sedimentação (acúmulo de sedimentos), ou seja, se determinada área perdia ou recebia sedimentos. </p>
-
-
-
-
-        <p>Nessa reformulação, os planaltos foram considerados como áreas desgastadas pela ação da erosão, enquanto que
+<p>Nessa reformulação, os planaltos foram considerados como áreas desgastadas pela ação da erosão, enquanto que
             as planícies eram áreas que recebiam esses detritos em permanente processo de construção. </p>
-
-        <div class="w3-margin"><img id="imagem2" src="ts07f02.png" alt="ts07f02" class="w3-mobile">
-
-
-        </div>
-
-
-
-
-
-        <p>O autor manteve o planalto das Guianas, mas o subdividiu o planalto Brasileiro nas seguintes unidades, são
+<div class="w3-margin"><img alt="ts07f02" class="w3-mobile" id="imagem2" src="ts07f02.png"/>
+</div>
+<p>O autor manteve o planalto das Guianas, mas o subdividiu o planalto Brasileiro nas seguintes unidades, são
             elas: Planalto das Guianas; Central, Meridional, Serras e Planaltos do Leste e Sudeste, Maranhão-Piauí,
             Nordestino e Uruguaio-Sul-Rio-Grandense. As planícies estão relacionadas à: planície Costeira, Amazônica, do
             Pantanal e do Pampa. </p>
-
-
-        <p>Esses estudos buscavam provar que a Amazônia não era uma planície, pelo menos não totalmente, pois essa área
+<p>Esses estudos buscavam provar que a Amazônia não era uma planície, pelo menos não totalmente, pois essa área
             era composta por planícies e terras baixas. Isso quer dizer que o terreno em construção (que recebia
             sedimentos) estava apenas localizado nas margens do rio Amazonas, enquanto que o restante era constituído
             por terrenos bastante desgastados. </p>
-
-        <p>Para o autor, 75% das terras brasileiras eram de planaltos; as planícies comporiam 25% restantes. Mesmo com
+<p>Para o autor, 75% das terras brasileiras eram de planaltos; as planícies comporiam 25% restantes. Mesmo com
             observações feitas em viagens por terra e por aviões, o maior avanço viria com a incorporação dos radares no
             detalhamento do relevo. </p>
-
-        <h3>Classificação morfoestrutural</h3>
-
-        <p>Publicado em 1989 pelo geógrafo Jurandyr Ross, essa classificação utilizou de fotografias áreas do projeto
-            <span onclick="document.getElementById('RADAM').style.display='block'" class="w3-yellow">RADAM</span>
+<h3>Classificação morfoestrutural</h3>
+<p>Publicado em 1989 pelo geógrafo Jurandyr Ross, essa classificação utilizou de fotografias áreas do projeto
+            <span class="w3-yellow" onclick="document.getElementById('RADAM').style.display='block'">RADAM</span>
             Brasil. Leva em conta a estrutura geológica na formação do relevo e o fator escultural das formas de relevo.
             Além dos planaltos e das planícies, surge as unidades das depressões. São no total, 28 unidades do relevo,
             sendo 12 Planaltos, 12 Depressões e 06 planícies. É um mapeamento mais detalhado para nortear o ocupação do
             território, a construção de estradas, o planejamento, a ocupação do solo e proteção ambiental.
         </p>
-
-        <div id="RADAM" class="w3-modal w3-margin-top">
-            <div class="w3-modal-content">
-                <div class="w3-container w3-padding">
-                    <span onclick="document.getElementById('RADAM').style.display='none'"
-                        class="w3-button w3-red w3-display-topright">&times;</span>
-                    <p>
+<div class="w3-modal w3-margin-top" id="RADAM">
+<div class="w3-modal-content">
+<div class="w3-container w3-padding">
+<span class="w3-button w3-red w3-display-topright" onclick="document.getElementById('RADAM').style.display='none'">×</span>
+<p>
                         O Projeto RADAM foi realizado pelo governo brasileiro na década de 70 para a pesquisa de
                         recursos naturais. Na época, o uso do radar representou um avanço tecnológico, pois, sendo um
                         sensor ativo, a imagem podia ser obtida tanto durante o dia quanto à noite e em condições de
                         nebulosidade, devido às microondas penetrarem na maioria das nuvens.
 
                     </p>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-margin"><img id="imagem3" src="ts07f03.png" alt="ts07f03" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao3"> Fonte: Vesentini (2013). </span>
-
-        </div>
-
-
-
-
-
-
-        <p>A classificação de Ross considera a influência dos tipos de rocha nas formas do relevo, isto é, a
+</div>
+</div>
+</div>
+<div class="w3-margin"><img alt="ts07f03" class="w3-mobile" id="imagem3" src="ts07f03.png"/>
+<span class="w3-small w3-margin-left" id="citacao3"> Fonte: Vesentini (2013). </span>
+</div>
+<p>A classificação de Ross considera a influência dos tipos de rocha nas formas do relevo, isto é, a
             morfoestrutura. Também considera os climas atuais na modificação do relevo, quer dizer a morfoclimática e os
             processos de erosão e sedimentação; além dos climas passados (morfoescultura) e sua influência na
             modificação do relevo. </p>
-
-
-        <p>As planícies ficaram mais restritas no litoral e áreas inundáveis como Lagoas dos Patos no Rio Grande do Sul,
+<p>As planícies ficaram mais restritas no litoral e áreas inundáveis como Lagoas dos Patos no Rio Grande do Sul,
             planície do rio Araguaia em meio a depressão anteriormente classificada como Planalto Central. </p>
-
-        <p> Há, da mesma forma, enormes áreas de depressão, anteriormente denominas como planaltos ou planícies. A
+<p> Há, da mesma forma, enormes áreas de depressão, anteriormente denominas como planaltos ou planícies. A
             planície do rio Amazonas ficou restrita à área de inundação e agora com uma depressão em sua porção
             ocidental e um planalto em seu lado oriental. Se fizéssemos um corte nessa área veríamos o seguinte:</p>
-
-        <div class="w3-margin"><img id="imagem4" src="ts07f04.png" alt="ts07f04" class="w3-mobile">
-        </div>
-
-
-
-
-
-        <p> O mesmo poderíamos fazer com o que era classificado como Planalto Atlântico, agora classificado como
+<div class="w3-margin"><img alt="ts07f04" class="w3-mobile" id="imagem4" src="ts07f04.png"/>
+</div>
+<p> O mesmo poderíamos fazer com o que era classificado como Planalto Atlântico, agora classificado como
             Depressão Sertaneja e do São Francisco, onde ocorrem elevações como o Planalto da Borborema e a Chapada do
             Araripe.</p>
-
-        <div class="w3-margin"><img id="imagem6" src="ts07f06.png" alt="ts07f06" class="w3-mobile"></div>
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2>O relevo da América do Sul </h2>
-
-
-
-
-        <p>Em 2016, o geógrafo Jurandyr Rossa publicou um novo mapa do relevo da América do Sul, muito mais detalhado e
+<div class="w3-margin"><img alt="ts07f06" class="w3-mobile" id="imagem6" src="ts07f06.png"/></div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>O relevo da América do Sul </h2>
+<p>Em 2016, o geógrafo Jurandyr Rossa publicou um novo mapa do relevo da América do Sul, muito mais detalhado e
             com ajuda de imagens de radar de satélites, Google Earth e Mapas geológicos das empresas públicas do
             Ministério de Minas e Energia. </p>
-
-        <p>O mapa delimita as unidades dos três blocos fundamentais do continente com base em diferenças geológica,
+<p>O mapa delimita as unidades dos três blocos fundamentais do continente com base em diferenças geológica,
             solos e formas de relevo. </p>
-
-        <div class="w3-margin"><img id="imagem9" src="ts07f09.png" alt="ts07f09" class="w3-mobile"></div>
-
-
-        <div class="w3-container">
-            <h3>Clique para ver as descrições contidas no mapa:</h3>
-
-            <div class="w3-row">
-                <a href="javascript:void(0)" onclick="openCity(event, 'London');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">1</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">2</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">3</div>
-                </a>
-            </div>
-
-            <div id="London" class="w3-container city" style="display:none">
-                <div class="w3-margin"><img id="imagem10" src="ts07f010.png" alt="ts07f010" class="w3-mobile">
-                </div>
-
-                <p>A serra da Mantiqueira integra planaltos bastante erodidos, entremeados por depressões (cor laranja,
+<div class="w3-margin"><img alt="ts07f09" class="w3-mobile" id="imagem9" src="ts07f09.png"/></div>
+<div class="w3-container">
+<h3>Clique para ver as descrições contidas no mapa:</h3>
+<div class="w3-row">
+<a href="javascript:void(0)" onclick="openCity(event, 'London');">
+<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">1</div>
+</a>
+<a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">2</div>
+</a>
+<a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">3</div>
+</a>
+</div>
+<div class="w3-container city" id="London" style="display:none">
+<div class="w3-margin"><img alt="ts07f010" class="w3-mobile" id="imagem10" src="ts07f010.png"/>
+</div>
+<p>A serra da Mantiqueira integra planaltos bastante erodidos, entremeados por depressões (cor laranja,
                     2.6-2.9). As bacias sedimentares mais antigas estão em azul (4.1-4.4).</p>
-
-            </div>
-
-            <div id="Paris" class="w3-container city" style="display:none">
-
-                <div class="w3-margin"><img id="imagem11" src="ts07f011.png" alt="ts07f011" class="w3-mobile">
-                </div>
-                <p>O deserto da Patagônia representa um resquício do Gondwana, com planaltos bastante erodidos com
+</div>
+<div class="w3-container city" id="Paris" style="display:none">
+<div class="w3-margin"><img alt="ts07f011" class="w3-mobile" id="imagem11" src="ts07f011.png"/>
+</div>
+<p>O deserto da Patagônia representa um resquício do Gondwana, com planaltos bastante erodidos com
                     chapadas e morros de origem vulcânica que se cobrem de gelo no inverno (3.3.2).</p>
-
-
-
-            </div>
-
-            <div id="Tokyo" class="w3-container city" style="display:none">
-                <div class="w3-margin"><img id="imagem12" src="ts07f012.png" alt="ts07f012" class="w3-mobile">
-                </div>
-                <p>A conformação recortada do extremo sul decorre do deslocamento do continente para Oeste. Ao lado, a
+</div>
+<div class="w3-container city" id="Tokyo" style="display:none">
+<div class="w3-margin"><img alt="ts07f012" class="w3-mobile" id="imagem12" src="ts07f012.png"/>
+</div>
+<p>A conformação recortada do extremo sul decorre do deslocamento do continente para Oeste. Ao lado, a
                     cidade de Ushuaia, no extremo sul da América do Sul (5.1-5.3).</p>
-            </div>
-        </div>
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> As formas do litoral brasileiro</h2>
-
-
-
-
-        <p>No Brasil, as áreas de contato entre o continente e o mar revelam uma diversidade de paisagens e feições
+</div>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> As formas do litoral brasileiro</h2>
+<p>No Brasil, as áreas de contato entre o continente e o mar revelam uma diversidade de paisagens e feições
             geomorfológicas (relevo), com ampla variação topográfica. </p>
-
-        <p>O relevo do litoral brasileiro sofre atuação da erosão e da sedimentação proveniente das águas dos rios e
+<p>O relevo do litoral brasileiro sofre atuação da erosão e da sedimentação proveniente das águas dos rios e
             oceânicas que deságuam no litoral. </p>
-
-        <p>Dentre inúmeras formas, as principais são a <strong>baía</strong>. A baía é uma faixa de mar ou de oceano
+<p>Dentre inúmeras formas, as principais são a <strong>baía</strong>. A baía é uma faixa de mar ou de oceano
             rodeada de terra que avança para o continente, ela é menor do que o golfo. A entrada da baía é estreita e
             alarga-se para o interior. Normalmente são locais de exploração económica, porque nelas as águas ficam mais
             calmas, favorecendo por exemplo construção de portos. Veja abaixo: </p>
-
-        <div class="w3-margin"><img id="imagem7" src="ts07f07.png" alt="ts07f07" class="w3-mobile"></div>
-
-
-
-
-        <p> Algumas são importantes áreas de preservação ambiental, como: a baía dos Golfinhos e dos Porcos, em Fernando
+<div class="w3-margin"><img alt="ts07f07" class="w3-mobile" id="imagem7" src="ts07f07.png"/></div>
+<p> Algumas são importantes áreas de preservação ambiental, como: a baía dos Golfinhos e dos Porcos, em Fernando
             de Noronha e a baía de Guanabara no Rio de Janeiro.</p>
-
-        <div class="w3-margin"><img id="imagem14" src="ts07f014.png" alt="ts07f014" class="w3-mobile">
-        </div>
-
-
-        <p> Outra importante formação litorânea são as <strong>enseadas</strong>, que também correspondem a reentrâncias
+<div class="w3-margin"><img alt="ts07f014" class="w3-mobile" id="imagem14" src="ts07f014.png"/>
+</div>
+<p> Outra importante formação litorânea são as <strong>enseadas</strong>, que também correspondem a reentrâncias
             na costa, só que um pouco mais aberta do que a baía. São encontradas de norte a sul em todos os estados
             litorâneos do Brasil.</p>
-
-        <p>Nas praias brasileiras é possível, da mesma maneira, vislumbrar também a existência de outras formas
+<p>Nas praias brasileiras é possível, da mesma maneira, vislumbrar também a existência de outras formas
             resultantes do acúmulo de sedimentos transportados pelo mar, pelos ventos e pelos rios que deságuam no
             litoral. Verifica-se a presença de <strong>tômbolos</strong>, formações arenosas que ligam uma ilha ao
             continente, e também de <strong>cabos</strong> ou <strong>promontórios</strong>, porções de terra que se
             projetam na direção do mar. Em alguns lugares do país, a formação desse relevo dá nome a municípios, por
             exemplo: Cabo de Santo Agostinho, no estado de Pernambuco, Cabo Frio e Arraial do Cabo, no Estado do Rio de
             Janeiro. </p>
-
-        <div class="w3-margin"><img id="imagem13" src="ts07f013.png" alt="ts07f013" class="w3-mobile">
-        </div>
-
-        <p> Nas áreas de desembocadura dos rios junto ao mar pode ocorrer acúmulo de sedimentos como areia, cascalho ou
+<div class="w3-margin"><img alt="ts07f013" class="w3-mobile" id="imagem13" src="ts07f013.png"/>
+</div>
+<p> Nas áreas de desembocadura dos rios junto ao mar pode ocorrer acúmulo de sedimentos como areia, cascalho ou
             lama. Este material é retirado das margens e das vertentes, sendo levado em suspensão pelas águas dos
             rios que o acumulam em bancos, constituindo os depósitos aluvionares. Esse acúmulo forma um relevo chamado
             de <strong>Barra</strong> ou barra de praia. Os exemplos são: Barra da Tijuca no RJ, Garopaba em SC, praia
             do Farol da Barra na BA, dentre inúmeros outros.</p>
-
-        <p> O acúmulo de sedimentos e a presença de <span
-                onclick="document.getElementById('recifes').style.display='block'" class="w3-yellow">recifes</span> de
+<p> O acúmulo de sedimentos e a presença de <span class="w3-yellow" onclick="document.getElementById('recifes').style.display='block'">recifes</span> de
             coral dá origem a formações de lagunas. Estas são caracterizadas por serem uma porção de água salgada
             separada parcialmente separada do mar devido a essas barreiras naturais, havendo, no entanto, aberturas que
             permitem a ligação com o mar. Esse tipo de relevo é comum no litoral brasileiro em Alagoas, Rio de Janeiro,
             Rio Grande do Sul, etc.</p>
-
-        <div id="recifes" class="w3-modal w3-margin-top">
-            <div class="w3-modal-content">
-                <div class="w3-container w3-padding">
-                    <span onclick="document.getElementById('recifes').style.display='none'"
-                        class="w3-button w3-red w3-display-topright">&times;</span>
-                    <p>
+<div class="w3-modal w3-margin-top" id="recifes">
+<div class="w3-modal-content">
+<div class="w3-container w3-padding">
+<span class="w3-button w3-red w3-display-topright" onclick="document.getElementById('recifes').style.display='none'">×</span>
+<p>
                         Os recifes de coral são formados pelo acúmulo de animais marinhos e de certas algas. Com o
                         tempo, em condições favoráveis, um recife de coral pode transformar-se numa ilha ou, pelo menos,
                         em um atol.
 
                     </p>
-
-                </div>
-            </div>
-        </div>
-
-
-
-        <p>O litoral brasileiro é conhecido por possuir costas baixas, isto é, formações com baixa altitude. Entretanto,
+</div>
+</div>
+</div>
+<p>O litoral brasileiro é conhecido por possuir costas baixas, isto é, formações com baixa altitude. Entretanto,
             há formações com costas altas em vários Estados, formado por paredões escarpados junto ao oceano, são as
             chamadas <strong>falésias</strong>. Podem ser encontrados nos Estados de Alagoas, Bahia, Ceará, Rio Grande
             do Norte e Rio Grande do Sul. </p>
-
-
-        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-            <h3><strong><mark>Se você não sabia, agora já sabe!</mark></strong></h3>
-            <h4><strong>As Falésias de Torres</strong></h4>
-            <p>As falésias do município de Torres localizam-se no litoral norte do Estado do Rio Grande do Sul.
+<div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+<h3><strong><mark>Se você não sabia, agora já sabe!</mark></strong></h3>
+<h4><strong>As Falésias de Torres</strong></h4>
+<p>As falésias do município de Torres localizam-se no litoral norte do Estado do Rio Grande do Sul.
                 Correspondem a uma importante formação vulcânica resultante dos derrames basálticos da era Mesozoica. O
                 nome da cidade se deve à presença de três torres formadas por rochas basálticas que compõem as Guaritas
                 e o Morro do Farol, no perímetro urbano.</p>
-
-            <p>Esses morros vêm sendo modificados intensamente desde o início da era Cenozoica. Houve forte atuação de
+<p>Esses morros vêm sendo modificados intensamente desde o início da era Cenozoica. Houve forte atuação de
                 agentes climáticos, como o vento e a chuva, e também do oceano: nos últimos 230 mil anos a região sofreu
                 Quatro regressões e transgressões marinhas.</p>
-
-            <div class="w3-margin"><img id="imagem8" src="ts07f08.png" alt="ts07f08" class="w3-mobile"></div>
-
-        </div>
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h2> A divisão do litoral brasileiro</h2>
-
-
-
-        <p> O litoral brasileiro é pouco recortado com golfos e penínsulas pouco expressivas. Ele possui incríveis 7.408
+<div class="w3-margin"><img alt="ts07f08" class="w3-mobile" id="imagem8" src="ts07f08.png"/></div>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> A divisão do litoral brasileiro</h2>
+<p> O litoral brasileiro é pouco recortado com golfos e penínsulas pouco expressivas. Ele possui incríveis 7.408
             km de orla marítima, mas se considerarmos todas suas reentrâncias, seus recortes, esse número vai para cerca
             de 9.200 km.</p>
-
-        <h3>Litoral equatorial amazônico e setentrional do Nordeste</h3>
-
-        <p>Podemos nos referir ao litoral norte aquele que se estende desde o Cabo Orange, na foz do Rio Oiapoque (AP),
+<h3>Litoral equatorial amazônico e setentrional do Nordeste</h3>
+<p>Podemos nos referir ao litoral norte aquele que se estende desde o Cabo Orange, na foz do Rio Oiapoque (AP),
             até o Cabo São Roque (RN). </p>
-
-        <p>São trechos de costas baixas e de acumulação de sedimentos ligados à planície litorânea da Amazônia e
+<p>São trechos de costas baixas e de acumulação de sedimentos ligados à planície litorânea da Amazônia e
             nordestina. Na parte amazônica, destaca-se o grande volume de água da bacia amazônica, desde os Estados do
             Amapá, Pará até o Maranhão com uma vegetação típica de áreas onde se encontram o rio com o mar: os
             <strong>manguezais</strong>. O manguezal é um tipo de solo lodoso com plantas adaptadas a salinidade e com
             raízes aéreas, ricas em nutrientes e fundamental para o balanço do ecossistema fluvial e marinho.
         </p>
-
-
-        <p> No trecho nordestino, a partir do Golfo do Maranhão até o Cabo de São Roque, o relevo é formado por dunas,
+<p> No trecho nordestino, a partir do Golfo do Maranhão até o Cabo de São Roque, o relevo é formado por dunas,
             com restingas e lagoas costeiras.</p>
-
-        <div class="w3-margin"><img id="imagem15" src="ts07f015.png" alt="ts07f015" class="w3-mobile">
-        </div>
-
-
-        <p>É ai que se localizam as famosas dunas como os lençóis maranhenses. As dunas são formadas pela ação dos <span
-                onclick="document.getElementById('ventos').style.display='block'" class="w3-yellow">ventos
+<div class="w3-margin"><img alt="ts07f015" class="w3-mobile" id="imagem15" src="ts07f015.png"/>
+</div>
+<p>É ai que se localizam as famosas dunas como os lençóis maranhenses. As dunas são formadas pela ação dos <span class="w3-yellow" onclick="document.getElementById('ventos').style.display='block'">ventos
                 alísios</span> que invadem o continente durante todo o ano. </p>
-
-
-
-        <div id="ventos" class="w3-modal w3-margin-top">
-            <div class="w3-modal-content">
-                <div class="w3-container w3-padding">
-                    <span onclick="document.getElementById('ventos').style.display='none'"
-                        class="w3-button w3-red w3-display-topright">&times;</span>
-                    <p>
+<div class="w3-modal w3-margin-top" id="ventos">
+<div class="w3-modal-content">
+<div class="w3-container w3-padding">
+<span class="w3-button w3-red w3-display-topright" onclick="document.getElementById('ventos').style.display='none'">×</span>
+<p>
                         Os ventos alísios são ventos constantes e úmidos que tem ocorrência nas zonas subtropicais em
                         baixas altitudes. Ele sopra nos trópicos na região do Equador de Leste a Oeste (ao contrário
                         do sentido da rotação da Terra) e por serem úmidos provocam grande incidência de chuvas.
 
                     </p>
-
-                </div>
-            </div>
-        </div>
-
-        <p> O litoral nordestino também apresenta costas altas com falésias sedimentares, como em Canoa Quebrada no
+</div>
+</div>
+</div>
+<p> O litoral nordestino também apresenta costas altas com falésias sedimentares, como em Canoa Quebrada no
             Estado do Ceará. Com o clima quente e seco no Rio Grande do Norte, por exemplo, a invasão das marés na costa
             baixa proporciona a técnica de represar as águas através de diques e com isso pode ser formadas salinas.</p>
-
-        <h3>O litoral tropical ou oriental</h3>
-
-
-        <p> Esse trecho do litoral já é marcado por ser quente e úmido com falésias e praias mais estreitas. Vai desde o
+<h3>O litoral tropical ou oriental</h3>
+<p> Esse trecho do litoral já é marcado por ser quente e úmido com falésias e praias mais estreitas. Vai desde o
             Cabo de São Roque (RN) até o Cabo de São Tomé (RJ).</p>
-
-        <div class="w3-margin"><img id="imagem16" src="ts07f016.png" alt="ts07f016" class="w3-mobile">
-        </div>
-
-
-        <p>Destaca-se a presença de recifes de arenito e coral. Os recifes de arenito são formados por antigas praias
+<div class="w3-margin"><img alt="ts07f016" class="w3-mobile" id="imagem16" src="ts07f016.png"/>
+</div>
+<p>Destaca-se a presença de recifes de arenito e coral. Os recifes de arenito são formados por antigas praias
             que se solidificaram e transformaram-se em arenito. São geralmente estreitos e não passa de 100 m de
             largura. O recife cujo nome da capital de Pernambuco possui pouco mais de 5 km de extensão. </p>
-
-
-
-        <p>Já os recifes de corais ocorrem da acumulação de restos calcários, seja na forma de franjas perpendiculares à
+<p>Já os recifes de corais ocorrem da acumulação de restos calcários, seja na forma de franjas perpendiculares à
             costa ou como barreiras paralelas. </p>
-
-
-        <p> É nesse trecho que se encontra a Costa do Descobrimento – o trecho litorâneo atingido pelas caravelas de
+<p> É nesse trecho que se encontra a Costa do Descobrimento – o trecho litorâneo atingido pelas caravelas de
             Cabral e onde teve início à colonização portuguesa. Estão localizados a Baía de Todos os Santos (BA), Porto
             Seguro (BA), Cabo Branco, ilha de Itamaracá, dentre outros.</p>
-
-        <h3>O litoral meridional ou subtropical</h3>
-
-
-        <p>O litoral neste trecho que cobre as regiões Sudeste e Sul é o mais acidentado e diversificado de todo o país.
+<h3>O litoral meridional ou subtropical</h3>
+<p>O litoral neste trecho que cobre as regiões Sudeste e Sul é o mais acidentado e diversificado de todo o país.
             Abrange desde a fronteira do Espírito Santo com o Rio de Janeiro até o Arroio Chuí no Rio Grande do Sul.
         </p>
-
-        <div class="w3-margin"><img id="imagem17" src="ts07f017.png" alt="ts07f017" class="w3-mobile">
-        </div>
-
-        <p>Caracteriza-se por falésias cristalinas devido à proximidade com a Serra do Mar com o oceano Atlântico. A
+<div class="w3-margin"><img alt="ts07f017" class="w3-mobile" id="imagem17" src="ts07f017.png"/>
+</div>
+<p>Caracteriza-se por falésias cristalinas devido à proximidade com a Serra do Mar com o oceano Atlântico. A
             planície costeira não é contínua e, em algumas partes surgem as baixadas, como a Santista, Fluminense,
             Iguape, dentre outras. </p>
-
-        <p>Na divisão com Paraná e Santa Catarina há um predomínio de ilhas devido ao afloramento da crista externa da
+<p>Na divisão com Paraná e Santa Catarina há um predomínio de ilhas devido ao afloramento da crista externa da
             Serra do Mar. De Laguna (SC) até o Arroio Chuí (RS) o litoral torna-se mais arenoso com formação de lagoas
             costeiras como a dos Patos, Mirim e Mangueira. Além de conviver com paisagens de blocos falhados escarpados.
         </p>
-
-        <p> Os principais acidentes geográficos são: Cabo Frio (RJ), ilhas de Paquetá, Governador, Cobras RJ); Ilhas de
+<p> Os principais acidentes geográficos são: Cabo Frio (RJ), ilhas de Paquetá, Governador, Cobras RJ); Ilhas de
             São Sebastião (SP), São Vicente (SP); Baía de Paranaguá (PR); Ilhas de São Francisco e Santa Catarina (SC),
             dentre outros.</p>
-
-        <h3>O movimento das águas oceânicas no litoral brasileiro</h3>
-
-        <p>Devemos mencionar os movimentos das águas que repercutem no litoral brasileiro como aquele realizado pelas
+<h3>O movimento das águas oceânicas no litoral brasileiro</h3>
+<p>Devemos mencionar os movimentos das águas que repercutem no litoral brasileiro como aquele realizado pelas
             correntes marítimas. No caso do Brasil, o litoral sofre influência de três correntes: a das Malvinas ou
             Falklands, com águas frias, na região Sul do país; a do Brasil, de águas quentes, que banha a costa Sudeste
             e Nordeste; e a das Guinas, também de águas quentes, que passa pelo litoral da região Norte. A dinâmica das
             correntes marítimas ocorre devido ao vento e as diferenças de densidade da água. Os ventos movimentos
             enormes massas de água, enquanto as alterações de temperatura e salinidade modificam a densidade da água
             fazendo-a subir ou baixar ao fundo do oceânico, criando assim correntes circulatórias.</p>
-
-        <div class="w3-margin"><img id="imagem18" src="ts07f018.png" alt="8" class="w3-mobile"></div>
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Leia o texto abaixo:</h4>
-
-        <h4>Cerca de 36% do território brasileiro é constituído por rochas desse tipo, sendo 32% arqueo-proterozoicas e
-            4% vulcânicas basálticas, mesozoicas.</h4>
-        <h4>O texto refere-se à:</h4>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
-            a) Bacias sedimentares;</button>
-
-
-
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">b)
-            Depressões relativas;</button>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'os Escudos cristalinos estão distribuidos ao norte das Guianas e no Escudo Brasileiro','2'); this.style.backgroundColor='lightgreen'">
-            c) Escudos cristalinos;</button>
-
-
-        <p id="resp1"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Descubra sobre o termo descrito no trecho abaixo:</h4>
-        <h4>Sua superfície é pouco acidentada e normalmente em nível altimétrico não é elevado. Nessa área os processos
-            de sedimentação sobrepõem-se aos de erosão.</h4>
-        <h4>Depreende-se que o texto aborda o(a):</h4>
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'as planícies sempre foram áreas de povoamento ao longo da história, principalmente as margens de rios, desde o Nilo no Egito até o Pinheiros em São Paulo','2'); this.style.backgroundColor='lightgreen'">
-
-            a) Planícies;
-        </button>
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
-
-            b) Planaltos;
-        </button>
-
-
-
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','1');this.style.backgroundColor='tomato'">
-
-            c) Depressões;
-        </button>
-
-
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-
-        <h4>Leia o trecho abaixo:</h4>
-        <h4>O Litoral do Brasil: Da ação de solapamento realizada pelas ondas do mar na costa brasileira resulta uma
-            forma de relevo escarpado, que se apresenta, geralmente, mais vertical nas formações sedimentares que nas
-            cristalinas. São:</h4>
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
-
-            a) os tômbolos.
-
-        </button>
-
-
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','1');this.style.backgroundColor='tomato'">
-
-            b) os “pães-de-açúcar”.
-
-        </button>
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'as falésias são formadas pela abrasão marinha, um tipo de erosão ocasionada pela ação contínua da água do mar em uma superfície rochosa','2'); this.style.backgroundColor='lightgreen'">
-
-            c) as falésias.
-
-        </button>
-
-
-
-
-
-        <p id="resp3"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<div class="w3-margin"><img alt="8" class="w3-mobile" id="imagem18" src="ts07f018.png"/></div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Leia o texto abaixo:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p1a" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1a">
+<span>a) Bacias sedimentares;</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1b" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1b">
+<span>b) Depressões relativas;</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1c" name="pergunta1" type="radio" value="correto"/>
+<label class="card-opcao" for="p1c">
+<span>c) Escudos cristalinos;</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'os Escudos cristalinos estão distribuidos ao norte das Guianas e no Escudo Brasileiro', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp1"></p>
+<div class="area w3-center">
+<img height="64" id="globinho1" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Descubra sobre o termo descrito no trecho abaixo:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p2a" name="pergunta2" type="radio" value="correto"/>
+<label class="card-opcao" for="p2a">
+<span>a) Planícies;</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2b" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2b">
+<span>b) Planaltos;</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2c" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2c">
+<span>c) Depressões;</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'as planícies sempre foram áreas de povoamento ao longo da história, principalmente as margens de rios, desde o Nilo no Egito até o Pinheiros em São Paulo', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp2"></p>
+<div class="area w3-center">
+<img height="64" id="globinho2" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Leia o trecho abaixo:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p3a" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3a">
+<span>a) os tômbolos.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3b" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3b">
+<span>b) os “pães-de-açúcar”.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3c" name="pergunta3" type="radio" value="correto"/>
+<label class="card-opcao" for="p3c">
+<span>c) as falésias.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'as falésias são formadas pela abrasão marinha, um tipo de erosão ocasionada pela ação contínua da água do mar em uma superfície rochosa', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp3"></p>
+<div class="area w3-center">
+<img height="64" id="globinho3" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Quais os tipos de planaltos existentes?
             </strong> </p>
-
-        <p><span class="primeiraLetra">R:</span> Embora os planaltos sejam relevos em processo erosivo, neles podem ser
+<p><span class="primeiraLetra">R:</span> Embora os planaltos sejam relevos em processo erosivo, neles podem ser
             observadas diferentes formas, porque as rochas que os constituem são diferentes. As formações planálticas
             mais comuns no Brasil são as escarpas de planalto, as chapadas e as <em>cuestas</em>.</p>
-
-        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
-
-            <p>- As escarpas de planalto são mais íngremes porque são formadas por rochas cristalinas, mantendo
+<div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+<p>- As escarpas de planalto são mais íngremes porque são formadas por rochas cristalinas, mantendo
                 altitudes mais elevadas. </p>
-
-            <p>- As chapadas são planaltos com topos achatados, aplainados. Essa forma se deve à presença de rochas
+<p>- As chapadas são planaltos com topos achatados, aplainados. Essa forma se deve à presença de rochas
                 sedimentares sobrepostas a uma base de rochas cristalinas. Portanto, o topo sofre uma erosão mais rápida
                 porque as rochas sedimentares desgastam-se facilmente.</p>
-
-            <p> - As <em>cuestas</em>, chamadas também de planaltos arenito-basálticos, aparecem na bacia do Paraná e
+<p> - As <em>cuestas</em>, chamadas também de planaltos arenito-basálticos, aparecem na bacia do Paraná e
                 apresentam rochas magmáticas dispostas ao lado de rochas sedimentares. Por isso, uma parte do planalto
                 fica mais íngreme, porque sofre uma erosão mais lenta, sendo chamada de front ou frente da cuesta. Seu
                 reverso desgasta-se mais rapidamente, por ser constituído por rochas sedimentares, mais frágeis. Algumas
                 vezes, todo o reverso desaparece, formando os chamados "morros testemunhos”. A cuesta de Botucatu no
                 Estado de São Paulo é um exemplo dessa formação.</p>
-
-        </div>
-
-
-
-
-
-
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>Por que as dunas se movem? </strong></p>
-
-        <p><span class="primeiraLetra">R:</span> As dunas se formam devido à interação do trabalho de acúmulo de
+</div>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>Por que as dunas se movem? </strong></p>
+<p><span class="primeiraLetra">R:</span> As dunas se formam devido à interação do trabalho de acúmulo de
             sedimentos feito pelo vento e pelo mar. Os sedimentos são arenosos e vem sendo transportados há cerca de 5
             mil anos. As correntes marítimas carregam grande quantidade de areia, depositando-as nas praias. Quando
             esses sedimentos secam, tem início o trabalho de transporte pelo vento, que os acumula nas partes mais altas
             da praia. </p>
-
-        <p>A seguir, ocorre um processo natural de sucessão ecológica que faz surgir a vegetação que recobre as dunas.
+<p>A seguir, ocorre um processo natural de sucessão ecológica que faz surgir a vegetação que recobre as dunas.
             Por meio de seu complexo sistema de raízes, a vegetação contém o deslocamento desses montes de areia. O
             problema é que as dunas são o ecossistema costeiro que mais sofre pressão da ocupação humana, e a retirada
             de sua vegetação tem gerado consequências desastrosas.</p>
-
-        <p>O desmatamento da vegetação que recobre as dunas para dar lugar a loteamentos de veraneio, trilha para a
+<p>O desmatamento da vegetação que recobre as dunas para dar lugar a loteamentos de veraneio, trilha para a
             passagem de veículos e até mesmo queimadas expõe a areia, favorecendo seu deslocamento. Há áreas bastante
             ameaçadas pelo avanço das dunas, como Cabo Frio, no Rio de Janeiro: Itaúnas, no Espírito Santo; e Mangue
             Seco, na divisa dos estados da Bahia e de Sergipe.</p>
-
-
-
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Poderia explicar melhor a existência das Depressões?
 
             </strong></p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p><span class="primeiraLetra">R:</span>
 
             As depressões apresentam superfícies levemente inclinadas, altitudes modestas situadas entre 100 e 500 m e
             são bastante aplainadas. As depressões são circundadas, geralmente, por planaltos elevados. No Brasil, 11
             unidades dessa forma de relevo são áreas mais baixas que o relevo em que se localizam e são classificadas
             em:
         </p>
-
-        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
-
-            <p>Depressões periféricas: áreas rebaixadas no contato entre terrenos sedimentares e cristalinos, como na
+<div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+<p>Depressões periféricas: áreas rebaixadas no contato entre terrenos sedimentares e cristalinos, como na
                 borda leste da bacia do Paraná e da depressão periférica Central ou Sul-rio-grandense.</p>
-
-            <p>Depressões marginais: margeiam as bordas de terrenos sedimentares como nas depressões amazônicas.</p>
-
-            <p>Depressões interplanálticas: áreas mais baixas do que os planaltos que as circundam. O exemplo é o da
+<p>Depressões marginais: margeiam as bordas de terrenos sedimentares como nas depressões amazônicas.</p>
+<p>Depressões interplanálticas: áreas mais baixas do que os planaltos que as circundam. O exemplo é o da
                 depressão Sertaneja e do São Francisco.</p>
-
-        </div>
-
-        <div class="w3-margin"><img id="imagem19" src="ts07f019.png" alt="ts01f019" class="w3-mobile">
-        </div>
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
-        <br><br>
-
-
-
-
-
-
-
-        <hr>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
-            <h2> <strong>Desafio - Jornada do herói: O Encontro com o Mentor </strong></h2>
-
-            <h4>Na aula passada, vimos que as formas de relevo pode ser um excelente aliado na ambientação da história
-                do nosso jogo sobre o Brasil.
-
-                O herói recusa o chamado para a aventura, mas as vezes não é má ideia, até que se tenha tempo para
-                sentir-se preparado para tomar o rumo da “região desconhecida” que está à espera.
-
-                Nesta aula, vamos conhecer o Encontro com o Mentor, que será à ajuda necessária que o herói precisará
-                para atingir seus objetivos.
-
-                Como sempre, formem seus grupos e use a criatividade para lidar com esse desafio.
-            </h4>
-        </div>
-
-
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding">
-            <h3><strong>Instruções</strong> </h3>
-            <ul>
-
-                <li>Forme um grupo com 5-6 estudantes;</li>
-
-                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
-
-                <li> Faça anotações em seu caderno;</li>
-
-                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
-
-                <li>Tempo da atividade: 25 minutos.</li>
-
-            </ul>
-
-        </div>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
-
-            <h4><strong>O Encontro com o Mentor (4)</strong></h4>
-
-            <p>Leia a passagem abaixo:</p>
-
-
-
-
-            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                <p>“Vocês, Buscadores, temerosos no início da aventura, consultem-se com os anciãos de Nossa Tribo.
-                    Procurem aqueles que já partiram antes. Aprendam as histórias secretas das fontes de água, das
-                    trilhas de caça, das moitas de frutas e saibam onde ficam as terras más, as areias movediças, os
-                    monstros a evitar. Alguém muito velho, fraco demais para ir conosco desenha para nós um mapa na
-                    poeira do chão. O xama da tribo, em seguida, nos entrega alguma coisa, um presente mágico, um
-                    talismã poderoso que vai nos proteger e guiar durante a busca. Agora podemos partir com o coração
-                    mais leve e confiante porque levamos conosco a sabedoria acumulada de Nossa Tribo”.</p>
-
-            </div>
-
-            <p>O trecho destaca aquilo que existe em praticamente todas as histórias em todas as civilizações, seja na
-                mitologia, folclore ou mesmo na vida cotidiana: a figura sábia e protetora do Mentor. </p>
-
-            <p>O Mentor é aquele que ajuda, orienta, treina ou fornece dons ou presentes mágicos para o herói cumprir
-                sua jornada. </p>
-
-            <p>Aloy, em no jogo <em>Horizon Zero Dawn</em>, segue seu caminho ao lado de seu tutor Rost e aprende a
-                sobreviver no mundo pós-apocalíptico onde máquinas hostis dominam a natureza mil anos no futuro. </p>
-
-
-            <p>Nos quadrinhos, o professor Charles Xavier é o mentor e fundador dos X-Men, cujo sonho é a convivência
-                pacífica entre humanos e mutantes. </p>
-
-
-            <p>Já Luke Skywalker possui alguns mentores na sua jornada em <em>Star Wars</em>, como Obi-Wan Kenobi e o
-                mestre Jedi Yoda, os quais procuram ensinar a Luke como descobrir e lidar com a Força. </p>
-
-            <p>O Encontro com o Mentor é o estágio da Jornada do Herói em que este recebe provisões, o conhecimento e a
-                confiança necessários para superar o medo e começar sua aventura. </p>
-
-            <h4><strong>Fontes de sabedoria</strong></h4>
-
-            <p> Mesmo se não houver um personagem concreto a desempenhar as muitas funções do <span
-                    onclick="document.getElementById('arquetipo').style.display='block'"
-                    class="w3-yellow">arquétipo</span> do Mentor, os heróis sempre entram em contato com alguma fonte de
-                sabedoria antes de se lançarem numa aventura.</p>
-
-            <div id="arquetipo" class="w3-modal w3-margin-top">
-                <div class="w3-modal-content">
-                    <div class="w3-container w3-padding">
-                        <span onclick="document.getElementById('arquetipo').style.display='none'"
-                            class="w3-button w3-red w3-display-topright">&times;</span>
-                        <p>
-                            Arquétipo é um conceito da psicologia utilizado para representar padrões de comportamento
-                            associados a um personagem ou papel social. A mãe, o sábio e o herói são exemplos de
-                            arquétipos. Esses “personagens” têm características percebidas de maneira semelhante por
-                            todos os seres humanos. Esse conceito foi desenvolvido por Carl G. Jung, psiquiatra suíço e
-                            fundador da psicologia analítica. Para Jung, esses comportamentos estão no inconsciente
-                            coletivo e, por isso, são percebidos de maneira similar por todos. Jung dizia que os
-                            arquétipos são uma herança psicológica, ou seja, resultam das experiências de milhares de
-                            gerações de seres humanos no enfrentamento das situações cotidianas. A partir do conceito de
-                            Jung, desenvolveu-se uma classificação com 12 arquétipos que simbolizam algumas motivações
-                            básicas dos seres humanos: Sábio, Mago, Explorador, Criador, Herói, Rebelde, Amante, Tolo,
-                            Cuidador, Homem comum, Inocente e Governante.
-
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <p> Pode ser a experiência do que já partiram numa busca antes deles, ou pode ser que olhem para dentro de
-                si mesmos, em busca da sabedoria pela qual já pagaram caro, em aventuras anteriores. O Encontro com o
-                Mentor é um momento rico na história e para desenvolver o conflito. Todo mundo já teve uma experiência
-                com um Mentor ou um modelo, a fim de desempenhar determinado papel.</p>
-
-            <h4><strong>Mentores no folclore e no mito</strong></h4>
-
-
-            <p>Desde a proteção mágica ou quando elfos ajudam os animais, contos de fadas, proteção dos deuses e deusas
-                são todas projeções do arquétipo de Mentor ajudando o herói. </p>
-
-
-            <p>Na mitologia os heróis procuram o conselho de bruxas, magos, feiticeiros, espíritos e deuses de seus
-                mundos. Na mitologia grega é famosa a figura do centauro Quíron, metade homem e metade cavalo. Quíron
-                guiou Hércules no seu aprendizado e faz a ponta entre o humano e os poderes superiores da natureza. </p>
-
-            <h4><strong>Mentor em pessoa</strong></h4>
-
-
-
-            <p>O termo Mentor vem de uma personagem em Odisseia de Homero. Era o amigo leal de Ulisses ou Odisseu, a
-                quem este confiou a responsabilidade de educar seu filho Telêmaco, enquanto Odisseu fazia sua longa
-                viagem de volta da Guerra de Troia. Mentor deu seu nome a todos os guias e preceptores, mas na verdade é
-                Atena, a deusa da sabedoria, quem age para trazer à história a energia do arquétipo de Mentor. </p>
-
-            <h4><strong>Evitando os clichês de Mentor</strong></h4>
-
-            <p>É muito fácil cair nos estereótipos e clichês dos comportamentos dos velhos sábios que já são conhecidas
-                através de milhares de histórias. Para evitar isso, desafie os arquétipos do homem de barba branca ou
-                fadas-madrinhas. </p>
-
-            <h4><strong>Engano</strong></h4>
-
-            <p>A vida pode ser marcada pela instabilidade e nem sempre o mentor pode ser o “bonzinho” da história. Ele
-                pode enganar o herói ou para aliciá-lo para uma vida de crimes. </p>
-
-            <h4><strong>Conflitos entre Mentor e Herói</strong></h4>
-
-
-            <p>A relação entre herói e mentor pode assumir contornos trágicos desde a existência de um mentor corrupto
-                como de um herói violento e sem escrúpulos. Dependendo da história, ela pode girar em torno do mentor. O
-                mentor pode ser uma evolução do herói, pois sobreviveu a diversas experiências na jornada do herói. </p>
-
-
-            <p>Enfim, com o mentor presente ou esporadicamente participante da história, sua presença pode ajudar o
-                herói a vencer o medo e o levar ao limite da aventura, ao estágio seguinte da Jornada do Herói, a
-                Travessia do Primeiro Limiar. </p>
-
-            <h4><strong>Questões para discutir:</strong></h4>
-
-
-            <p> Pense em alguns jogos, eles possuem mentores?</p>
-
-            <p>Quais funções de Mentor podem ser encontradas e desenvolvidas em sua história? Seu herói precisa de um
-                mentor? </p>
-
-            <p>Seu herói tem algum código íntimo de ética, ou modelo de comportamento? Seu herói tem consciência das
-                situações? Como ela se manifesta? </p>
-
-
-            <p>Qual a atitude do herói em relação à energia do Mentor? </p>
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','4');this.style.display='none'">Proximo</button>
-
-
-        <p id="respFinal"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
-                    alt="globinhorespFinal" width="64" height="64">
-            </p>
-        </div>
-        <hr>
-
-    </div>
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span> -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 w3-pale-blue">
-
-                <a href="https://revistapesquisa.fapesp.br/sob-a-forca-dos-andes/?cat=ciencia/" target="_blank">
-                    Entrevista geógrafo Jurandyr Ross.
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-        <p>FLORENZANO, Teresa Gallotti. <strong>Geomorfologia</strong>: conceitos e tecnologias atuais. São Paulo:
-            Oficina de Textos, 2008.</p>
-
-        <p>
-            ROSS, Jurandyr. L. S. Compartimentação do relevo da América do Sul. <strong>Revista Brasileira de
-                Geografia</strong>
-            1, p.21-58, 2016.
-        </p>
-
-        <p>SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante</strong>: geografia do Brasil:
-            aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008.</p>
-
-
-        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. – São
-            Paulo: Ática, 2013.
-        </p>
-
-        <p>
-            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores. Tradução de
-            Ana Maria Machado. -
-            2.ed. Rio de Janeiro: Nova Fronteira, 2006.
-        </p>
-
-        <p>SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about narrative
-            techniques.</p>
-
-
-
-
-
-
-
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        //     console.log(numB);
-        // }
-
-        function openCity(evt, cityName) {
-            var i, x, tablinks;
-            x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < x.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.firstElementChild.className += " w3-border-red";
-        }
-
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                // numButton();
-                ApagaButton();
-                RemoveBalancarGlobo();
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-        }
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 12);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-
-    </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-
-
-
+</div>
+<div class="w3-margin"><img alt="ts01f019" class="w3-mobile" id="imagem19" src="ts07f019.png"/>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+<br/><br/>
+<hr/>
+</div>
+<div class="topico">
+<h3>Antes de finalizar, vamos fazer as questões!</h3>
+<button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+<p id="respFinal"></p>
+<div class="area">
+<p><img alt="globinhorespFinal" height="64" id="globinhorespFinal" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/></p>
+</div>
+<hr/>
+</div>
+<!-- TÓPICO FINALIZAR -->
+<div class="topico">
+<button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+</div>
+<div class="bibliografias w3-content w3-padding-64" id="final-da-aula" style="max-width:700px">
+<hr/>
+<h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+<div class="w3-row-padding" id="links-gerados"></div>
+<div class="w3-container w3-padding-64">
+<h3 class="fontePixel w3-center w3-text-green">
+<strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+</h3>
+<div id="biblio-gerada"></div>
+</div>
+<br/><br/>
+<div class="w3-padding-48">
+<span id="numero"></span>
+<span id="txtBarra">0%</span>
+<progress id="progress" max="100" value="0"></progress>
+</div>
+</div></main>
+<div id="footer-placeholder"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
 </body>
-
 </html>

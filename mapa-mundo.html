@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duvid - Mapa-Mundo 3º Ano</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos/index-estilo.css">
+    <link rel="stylesheet" href="/estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="/estilos/navbar.css">
+    <link rel="stylesheet" href="estilos/aulas-estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="fotoIndex/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="/js/duvid-cache.js" defer></script>
+    <script src="/js/duvid-core.js" defer></script>
+    <script src="/js/duvid-db.js" defer></script>
+    <script src="/js/duvid-audio.js" defer></script>
+    <script src="/js/duvid-ui.js" defer></script>
+    <script src="/js/carregar.js" defer></script>
+    <script src="/js/aulas-geral.js" defer></script>
+    <script src="/js/abrirmenu.js" defer></script>
+    <script src="/estilos/jstextos-padrao.js"></script>
+</head>
+
+<style>
+/* ── Tela principal ───────────────────────────────── */
+#mapa-screen {
+    background: #0d1117;
+    border-radius: 12px;
+    border: 1px solid #1e2d40;
+    padding: 16px;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+#mapa-title {
+    color: #44aaff;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* ── Abas de ano ──────────────────────────────────── */
+#mapa-ano-tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+.mapa-tab {
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    padding: 5px 14px;
+    background: transparent;
+    border: 1px solid #234;
+    color: #567;
+    cursor: pointer;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+.mapa-tab.ativo { border-color: #44aaff; color: #44aaff; background: rgba(68,170,255,0.08); }
+.mapa-tab:hover:not(.ativo) { border-color: #345; color: #789; }
+
+/* ── SVG do mapa ──────────────────────────────────── */
+#mapa-wrap { position: relative; }
+#world-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #071020;
+    border-radius: 6px;
+    cursor: crosshair;
+}
+
+/* Países não mapeados em regiões */
+.pais-neutro {
+    fill: #111c2a;
+    stroke: #0a1628;
+    stroke-width: 0.4px;
+    shape-rendering: crispEdges;
+}
+/* Oceano / graticule */
+.graticule { fill: none; stroke: #0d1e30; stroke-width: 0.3px; }
+.sphere { fill: #071020; }
+
+/* Cada grupo de região */
+.regiao path {
+    stroke: #0a1628;
+    stroke-width: 0.5px;
+    shape-rendering: crispEdges;
+    cursor: pointer;
+    transition: none;
+}
+.regiao:hover path, .regiao.hover path {
+    stroke: rgba(255,255,255,0.4);
+    stroke-width: 1px;
+}
+.regiao.sel path {
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+}
+
+/* Scanlines no topo do mapa (overlay) */
+#scan-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    border-radius: 6px;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 2px,
+        rgba(0,0,0,0.07) 2px,
+        rgba(0,0,0,0.07) 3px
+    );
+}
+
+/* Tooltip */
+#mapa-tt {
+    position: absolute;
+    background: rgba(7,16,32,0.95);
+    border: 1px solid #44aaff;
+    color: #44aaff;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    padding: 3px 10px;
+    pointer-events: none;
+    white-space: nowrap;
+    display: none;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+/* ── Painel de aulas ──────────────────────────────── */
+#mapa-panel {
+    margin-top: 12px;
+    border-top: 1px solid #1a2535;
+    padding-top: 12px;
+    min-height: 68px;
+}
+.mp-hint { font-family:'Courier New',monospace; font-size:11px; color:#2a3a4a; }
+.mp-nome  { font-family:'Courier New',monospace; font-size:11px; color:#44aaff; font-weight:bold; letter-spacing:2px; margin-bottom:10px; }
+.mp-grid  { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:7px; }
+.mp-card  { background:#131c28; border:1px solid #1e3048; border-radius:4px; padding:9px 11px; }
+.mp-card.ok { border-color:#1a4a2a; }
+.mp-id    { font-family:'Courier New',monospace; font-size:9px; color:#3a5060; margin-bottom:3px; }
+.mp-titulo{ font-family:'Courier New',monospace; font-size:10px; color:#aabccc; line-height:1.5; margin-bottom:7px; }
+.mp-card.ok .mp-titulo { color:#7aaa8a; }
+.mp-btns  { display:flex; gap:5px; flex-wrap:wrap; }
+.mp-btn   { font-family:'Courier New',monospace; font-size:9px; padding:3px 9px; border-radius:2px; text-decoration:none; display:inline-block; background:transparent; }
+.mp-texto { border:1px solid #4a944a; color:#4a944a; }
+.mp-texto:hover { background:#4a944a; color:#000; }
+.mp-quest { border:1px solid #cc8800; color:#cc8800; }
+.mp-quest:hover { background:#cc8800; color:#000; }
+
+/* ── Legenda ──────────────────────────────────────── */
+#mapa-leg { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; padding-top:10px; border-top:1px solid #1a2535; }
+.leg-item { display:flex; align-items:center; gap:5px; font-family:'Courier New',monospace; font-size:9px; color:#567; cursor:pointer; padding:2px 6px; border:1px solid transparent; border-radius:2px; }
+.leg-item:hover { border-color:#234; color:#89a; }
+.leg-dot  { width:10px; height:10px; border-radius:2px; flex-shrink:0; }
+
+/* ── Botão globais ────────────────────────────────── */
+#btn-globais {
+    font-family:'Courier New',monospace; font-size:9px; padding:4px 12px;
+    border:1px solid #334; color:#567; background:transparent; cursor:pointer;
+    border-radius:2px; letter-spacing:1px;
+}
+#btn-globais:hover { border-color:#44aaff; color:#44aaff; }
+#btn-globais.ativo { border-color:#44aaff; color:#44aaff; background:rgba(68,170,255,0.08); }
+
+/* Em breve */
+#mapa-em-breve { display:none; padding:40px 20px; text-align:center; font-family:'Courier New',monospace; font-size:12px; color:#2a3a4a; letter-spacing:2px; }
+
+/* Loading */
+#mapa-loading { padding:40px 20px; text-align:center; font-family:'Courier New',monospace; font-size:11px; color:#2a3a4a; letter-spacing:2px; }
+</style>
+
+<body class="w3-light-grey">
+
+<div id="header-placeholder"></div>
+
+<main class="w3-content" style="max-width:1100px; margin-top:80px;">
+
+    <div id="mapa-screen">
+
+        <div id="mapa-title">&#9632; DUVID &#9632; MAPA INTERATIVO &#9632; GEOGRAFIA</div>
+
+        <div id="mapa-ano-tabs">
+            <button class="mapa-tab" data-ano="1">1&ordm; ANO</button>
+            <button class="mapa-tab ativo" data-ano="3">3&ordm; ANO</button>
+            <button class="mapa-tab" data-ano="2">2&ordm; ANO</button>
+        </div>
+
+        <div id="mapa-wrap">
+            <div id="mapa-loading">carregando mapa&#8230;</div>
+            <svg id="world-svg" viewBox="0 0 960 500" style="display:none;"></svg>
+            <div id="scan-overlay"></div>
+            <div id="mapa-tt"></div>
+        </div>
+
+        <div id="mapa-leg"></div>
+
+        <div id="mapa-panel">
+            <div class="mp-hint">clique em uma regiao do mapa para ver as aulas</div>
+        </div>
+
+        <div id="mapa-em-breve"></div>
+
+    </div>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<!-- D3 + TopoJSON via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date()); gtag('config', 'G-DPX55DSFZ0');
+</script>
+
+<script>
+/* ============================================================
+   MAPA-MUNDO DUVID — D3 + TopoJSON
+   Países reais agrupados em regiões temáticas do 3o ano
+============================================================ */
+(function(){
+
+/* ── Regiões e seus códigos ISO 3166-1 numéricos ───── */
+const REGIOES = [
+  { id:'n-america', nome:'AMERICA DO NORTE',
+    color:'#1e4a8a', hover:'#2a60aa',
+    aulaIds:[320,321],
+    iso:[840,124,484]   // EUA, Canadá, México
+  },
+  { id:'latina', nome:'AMERICA LATINA',
+    color:'#1a6b2e', hover:'#228538',
+    aulaIds:[322,323],
+    iso:[32,68,76,84,152,170,188,192,214,218,222,254,320,328,332,340,388,558,591,600,604,630,740,858,862,44,52,659,662,670,780,308,796]
+  },
+  { id:'europa', nome:'EUROPA',
+    color:'#5b3d9e', hover:'#6d4bb8',
+    aulaIds:[317,318],
+    iso:[8,20,40,56,70,100,112,191,196,203,208,233,246,250,276,300,348,352,372,380,428,440,442,470,492,498,499,528,578,616,620,642,688,703,705,724,752,756,804,807,826,831,832,833,336]
+  },
+  { id:'africa', nome:'AFRICA',
+    color:'#8a5a00', hover:'#aa6e00',
+    aulaIds:[325,326,327],
+    iso:[12,24,72,108,120,132,140,148,174,178,180,204,226,231,232,262,266,270,288,324,384,404,426,430,434,450,454,466,478,480,504,508,516,562,566,624,638,646,678,686,694,706,710,716,728,729,748,768,788,800,818,834,854,894,175,706]
+  },
+  { id:'or-medio', nome:'ORIENTE MEDIO',
+    color:'#8a2200', hover:'#aa2800',
+    aulaIds:[328,329],
+    iso:[31,48,275,364,368,376,400,414,422,512,634,682,760,784,792,887]
+    // Iran(364), Turkey(792) incluídos pois são aula 329
+  },
+  { id:'russia', nome:'RUSSIA',
+    color:'#1e6b8a', hover:'#2480a0',
+    aulaIds:[332],
+    iso:[643,398,417,762,795,860,51,268,112]
+    // Rússia + Cazaquistão + Ásia Central + Armênia + Geórgia
+  },
+  { id:'china', nome:'CHINA E LESTE ASIATICO',
+    color:'#8a1a33', hover:'#a82040',
+    aulaIds:[333,334,335],
+    iso:[156,392,408,410,158,496]
+    // China, Japão, Coreias, Taiwan, Mongólia
+  },
+  { id:'s-asia', nome:'SUL DA ASIA',
+    color:'#7a5500', hover:'#966800',
+    aulaIds:[331],
+    iso:[4,50,64,356,462,524,586,144]
+    // Afeganistão, Bangladesh, Butão, Índia, Maldivas, Nepal, Paquistão, Sri Lanka
+  },
+  { id:'se-asia', nome:'SUDESTE ASIATICO',
+    color:'#0a6b4a', hover:'#0c8560',
+    aulaIds:[335],
+    iso:[96,116,360,418,458,104,608,702,764,626,704]
+    // Brunei, Camboja, Indonésia, Laos, Malásia, Myanmar, Filipinas, Singapura, Tailândia, Timor, Vietnã
+  },
+  { id:'oceania', nome:'AUSTRALIA E OCEANIA',
+    color:'#7a4400', hover:'#965200',
+    aulaIds:[335,336],
+    iso:[36,554,598,242,296,584,583,520,585,882,90,776,798,548,90,570]
+    // Austrália, NZ, PNG, Fiji e ilhas do Pacífico
+  },
+];
+
+// Aulas "globais" sem região específica
+const AULAS_GLOBAIS_IDS = [301,302,303,304,305,307,308,309,310,311,313,314,315,316];
+
+// Mapa ISO -> região para lookup rápido
+const isoParaRegiao = new Map();
+REGIOES.forEach(r => r.iso.forEach(c => isoParaRegiao.set(c, r)));
+
+/* ── Estado ────────────────────────────────────────── */
+let aulasData = [];
+let selId = null;
+
+/* ── Elementos ──────────────────────────────────────── */
+const svg     = d3.select('#world-svg');
+const tt      = document.getElementById('mapa-tt');
+const panel   = document.getElementById('mapa-panel');
+const legEl   = document.getElementById('mapa-leg');
+const loading = document.getElementById('mapa-loading');
+
+/* ── Projeção D3 ────────────────────────────────────── */
+const proj = d3.geoNaturalEarth1()
+    .scale(153)
+    .translate([480, 250]);
+const pathGen = d3.geoPath().projection(proj);
+
+/* ── Renderizar mapa ────────────────────────────────── */
+function renderMapa(world) {
+    loading.style.display = 'none';
+    document.getElementById('world-svg').style.display = 'block';
+
+    const countries = topojson.feature(world, world.objects.countries);
+    const borders   = topojson.mesh(world, world.objects.countries, (a,b) => a !== b);
+
+    // Esfera (fundo oceano)
+    svg.append('path').datum({type:'Sphere'})
+        .attr('class','sphere').attr('d', pathGen);
+
+    // Gratículo
+    svg.append('path').datum(d3.geoGraticule()())
+        .attr('class','graticule').attr('d', pathGen);
+
+    // Países neutros (base escura)
+    svg.append('g').selectAll('path')
+        .data(countries.features)
+        .join('path')
+        .attr('class','pais-neutro')
+        .attr('d', pathGen);
+
+    // Regiões coloridas em grupos
+    REGIOES.forEach(reg => {
+        const feats = countries.features.filter(f => isoParaRegiao.get(+f.id) === reg);
+        if (!feats.length) return;
+
+        const g = svg.append('g')
+            .attr('class', `regiao`)
+            .attr('id', `reg-${reg.id}`);
+
+        g.selectAll('path')
+            .data(feats)
+            .join('path')
+            .attr('d', pathGen)
+            .attr('fill', reg.color);
+
+        // Eventos no grupo todo
+        g.on('mouseenter', function(event) {
+                d3.select(this).classed('hover', true);
+                d3.select(this).selectAll('path').attr('fill', reg.hover);
+                mostrarTooltip(event, reg.nome);
+            })
+            .on('mousemove', function(event) {
+                moverTooltip(event);
+            })
+            .on('mouseleave', function() {
+                d3.select(this).classed('hover', false);
+                const isSel = selId === reg.id;
+                d3.select(this).selectAll('path').attr('fill', isSel ? reg.hover : reg.color);
+                tt.style.display = 'none';
+            })
+            .on('click', function() {
+                // Deselecionar anterior
+                if (selId) {
+                    const prev = REGIOES.find(r => r.id === selId);
+                    if (prev) {
+                        d3.select(`#reg-${prev.id}`)
+                            .classed('sel', false)
+                            .selectAll('path').attr('fill', prev.color);
+                    }
+                }
+                selId = reg.id;
+                d3.select(this).classed('sel', true);
+                mostrarPainel(reg);
+            });
+    });
+
+    // Bordas internacionais por cima
+    svg.append('path').datum(borders)
+        .attr('fill','none')
+        .attr('stroke','rgba(0,0,0,0.5)')
+        .attr('stroke-width','0.3')
+        .attr('shape-rendering','crispEdges')
+        .attr('d', pathGen);
+
+    // Labels das regiões
+    const labelPos = {
+        'n-america': [150, 160], 'latina':   [160, 310],
+        'europa':    [470,  95], 'africa':   [470, 290],
+        'or-medio':  [550, 195], 'russia':   [650,  80],
+        'china':     [740, 165], 's-asia':   [610, 250],
+        'se-asia':   [730, 295], 'oceania':  [800, 380],
+    };
+    const labG = svg.append('g').attr('pointer-events','none');
+    REGIOES.forEach(reg => {
+        const [lx, ly] = labelPos[reg.id] || [0,0];
+        if (!lx) return;
+        labG.append('text')
+            .attr('x', lx).attr('y', ly)
+            .attr('text-anchor','middle')
+            .attr('font-size','8')
+            .attr('font-family','Courier New, monospace')
+            .attr('font-weight','bold')
+            .attr('fill','rgba(255,255,255,0.5)')
+            .attr('class', `label-${reg.id}`)
+            .text(reg.nome.split(' ')[0]);
+    });
+
+    montarLegenda();
+}
+
+/* ── Tooltip ────────────────────────────────────────── */
+function mostrarTooltip(event, nome) {
+    const rc = document.getElementById('mapa-wrap').getBoundingClientRect();
+    tt.style.display = 'block';
+    tt.textContent = nome;
+    moverTooltip(event);
+}
+function moverTooltip(event) {
+    const rc = document.getElementById('mapa-wrap').getBoundingClientRect();
+    tt.style.left = (event.clientX - rc.left + 14) + 'px';
+    tt.style.top  = (event.clientY - rc.top  - 10) + 'px';
+}
+
+/* ── Painel de aulas ────────────────────────────────── */
+function mostrarPainel(reg) {
+    const progresso = (typeof DuvidProgress !== 'undefined') ? (DuvidProgress.get() || {}) : {};
+    const aulas = reg.aulaIds.map(id => aulasData.find(a => a.id === id)).filter(Boolean);
+
+    let html = `<div class="mp-nome">${reg.nome}</div><div class="mp-grid">`;
+    for (const a of aulas) {
+        const ok = progresso[a.id] && progresso[a.id].quest;
+        html += `<div class="mp-card ${ok?'ok':''}">
+            <div class="mp-id">AULA ${a.id}</div>
+            <div class="mp-titulo">${a.titulo}</div>
+            <div class="mp-btns">
+                ${a.linkTexto  ? `<a href="${a.linkTexto}"  class="mp-btn mp-texto">TEXTO</a>` : ''}
+                ${a.linkQuestoes ? `<a href="${a.linkQuestoes}" class="mp-btn mp-quest">${ok?'&#10003; REFAZER':'QUESTOES'}</a>` : ''}
+            </div>
+        </div>`;
+    }
+    html += '</div>';
+    panel.innerHTML = html;
+
+    // Destacar label no mapa
+    svg.selectAll('text').attr('fill','rgba(255,255,255,0.5)');
+    svg.select(`.label-${reg.id}`).attr('fill','rgba(255,255,255,0.95)').attr('font-size','10');
+}
+
+function mostrarGlobais() {
+    const aulas = AULAS_GLOBAIS_IDS.map(id => aulasData.find(a => a.id === id)).filter(Boolean);
+    let html = `<div class="mp-nome">GLOBALIZACAO E GEOPOLITICA MUNDIAL</div><div class="mp-grid">`;
+    for (const a of aulas) {
+        html += `<div class="mp-card">
+            <div class="mp-id">AULA ${a.id}</div>
+            <div class="mp-titulo">${a.titulo}</div>
+            <div class="mp-btns">
+                ${a.linkTexto   ? `<a href="${a.linkTexto}"  class="mp-btn mp-texto">TEXTO</a>` : ''}
+                ${a.linkQuestoes ? `<a href="${a.linkQuestoes}" class="mp-btn mp-quest">QUESTOES</a>` : ''}
+            </div>
+        </div>`;
+    }
+    html += '</div>';
+    panel.innerHTML = html;
+}
+
+/* ── Legenda ────────────────────────────────────────── */
+function montarLegenda() {
+    legEl.innerHTML = '';
+    REGIOES.forEach(reg => {
+        const el = document.createElement('div');
+        el.className = 'leg-item';
+        el.innerHTML = `<div class="leg-dot" style="background:${reg.color}"></div>${reg.nome.split(' ')[0]}`;
+        el.addEventListener('click', () => {
+            // Simular clique na região
+            if (selId) {
+                const prev = REGIOES.find(r => r.id === selId);
+                if (prev) d3.select(`#reg-${prev.id}`).classed('sel',false).selectAll('path').attr('fill', prev.color);
+            }
+            selId = reg.id;
+            d3.select(`#reg-${reg.id}`).classed('sel',true).selectAll('path').attr('fill', reg.hover);
+            mostrarPainel(reg);
+        });
+        legEl.appendChild(el);
+    });
+
+    // Botão globais
+    const btnG = document.createElement('button');
+    btnG.id = 'btn-globais';
+    btnG.textContent = '&#9632; TEMAS GLOBAIS';
+    btnG.addEventListener('click', () => {
+        document.querySelectorAll('.leg-item').forEach(l => l.style.color='');
+        mostrarGlobais();
+    });
+    legEl.appendChild(btnG);
+}
+
+/* ── Abas de ano ────────────────────────────────────── */
+document.querySelectorAll('.mapa-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.mapa-tab').forEach(b => b.classList.remove('ativo'));
+        btn.classList.add('ativo');
+        const ano = btn.dataset.ano;
+        const wrap = document.getElementById('mapa-wrap');
+        const emBreve = document.getElementById('mapa-em-breve');
+        if (ano === '3') {
+            wrap.style.display = 'block';
+            legEl.style.display = 'flex';
+            emBreve.style.display = 'none';
+        } else {
+            wrap.style.display = 'none';
+            legEl.style.display = 'none';
+            emBreve.style.display = 'block';
+            emBreve.textContent = `[ MAPA DO ${ano}O ANO - EM BREVE ]`;
+        }
+    });
+});
+
+/* ── Inicialização ──────────────────────────────────── */
+async function init() {
+    // 1. Carregar dados das aulas
+    let tentativas = 0;
+    while (typeof DuvidCache === 'undefined' && tentativas++ < 20)
+        await new Promise(r => setTimeout(r, 100));
+
+    aulasData = typeof DuvidCache !== 'undefined'
+        ? (await DuvidCache.get('/js/aulas-3ano.json') || [])
+        : await fetch('/js/aulas-3ano.json').then(r => r.json()).catch(() => []);
+
+    // 2. Carregar TopoJSON do mundo
+    try {
+        const world = await d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
+        renderMapa(world);
+    } catch(e) {
+        loading.textContent = 'erro ao carregar o mapa. verifique a conexao.';
+        console.error('Mapa:', e);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+})();
+</script>
+
+</body>
+</html>

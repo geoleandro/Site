@@ -1,4 +1,28 @@
 {
+  "Abdal": {
+    "tag": "Geografia do Brasil",
+    "cor": "w3-indigo",
+    "texto": "ABDAL, Alexandre. <strong>Trajetórias regionais de desenvolvimento no Brasil contemporâneo</strong>.",
+    "complemento": "São Paulo: Editora Fundação Perseu Abramo, 2011."
+  },
+  "BNCC": {
+    "tag": "Diretriz Nacional",
+    "cor": "w3-amber",
+    "texto": "BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>.",
+    "complemento": "Brasília: MEC/CONSED/UNDIME, 2018."
+  },
+  "Bizzi": {
+    "tag": "Geologia",
+    "cor": "w3-brown",
+    "texto": "BIZZI, Luiz Augusto; SCHOBBENHAUS, Carlos; VIDOTTI, Roberta Mary (Orgs.). <strong>Geologia, tectônica e recursos minerais do Brasil</strong>: texto, mapas e SIG.",
+    "complemento": "Brasília: CPRM — Serviço Geológico do Brasil, 2003."
+  },
+  "Boniface": {
+    "tag": "Atlas",
+    "cor": "w3-blue",
+    "texto": "BONIFACE, Pascal. <strong>Atlas du Monde Global</strong>: 100 cartes pour comprendre un monde chaotique.",
+    "complemento": "Paris: Éditions Armand Colin/Fayard, 2015."
+  },
   "Borrero": {
     "tag": "Geociências",
     "cor": "w3-teal",
@@ -23,17 +47,23 @@
     "texto": "CARPANELLI, Francesca. <strong>La geografia in 30 lezioni: Geografia generale ed economica</strong>.",
     "complemento": "Itália: Zanichelli, 2015."
   },
+  "CarvalhoAraujo": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "CARVALHO, Edílson Alves; ARAÚJO, Paulo César. <strong>Leituras cartográficas e interpretações estatísticas</strong>. 2.ed.",
+    "complemento": "Natal: EDUFRN, 2011."
+  },
   "CarvalhoLeituras": {
     "tag": "Cartografia",
     "cor": "w3-orange",
     "texto": "CARVALHO, Edilson Alves de. <strong>Leituras cartográficas e interpretações estatísticas I</strong>. 2.ed.",
     "complemento": "Natal: EDUFRN, 2011."
   },
-  "CarvalhoAraujo": {
-    "tag": "Cartografia",
-    "cor": "w3-orange",
-    "texto": "CARVALHO, Edílson Alves; ARAÚJO, Paulo César. <strong>Leituras cartográficas e interpretações estatísticas</strong>. 2.ed.",
-    "complemento": "Natal: EDUFRN, 2011."
+  "Cogueto": {
+    "tag": "Geografia Agrária",
+    "cor": "w3-brown",
+    "texto": "COGUETO, Jaqueline Vigo. <strong>Geografia agrária</strong>.",
+    "complemento": "Londrina: Editora Distribuidora Educacional S.A., 2018."
   },
   "Dambros": {
     "tag": "Geografia Física",
@@ -46,6 +76,12 @@
     "cor": "w3-orange",
     "texto": "FARIA, Daniela Resende de. <strong>Cartografia</strong>.",
     "complemento": "Londrina: Educacional S.A., 2016."
+  },
+  "Florenzano": {
+    "tag": "Geomorfologia",
+    "cor": "w3-teal",
+    "texto": "FLORENZANO, Teresa Gallotti. <strong>Geomorfologia</strong>: conceitos e tecnologias atuais.",
+    "complemento": "São Paulo: Oficina de Textos, 2008."
   },
   "Frank": {
     "tag": "Geografia Econômica",
@@ -83,6 +119,12 @@
     "texto": "IBGE. <strong>Noções Básicas de Cartografia</strong>.",
     "complemento": "Rio de Janeiro, 1999."
   },
+  "IBRAM": {
+    "tag": "Mineração",
+    "cor": "w3-grey",
+    "texto": "IBRAM. <strong>Mineração em números</strong>.",
+    "complemento": "Disponível em: https://ibram.org.br/mineracao-em-numeros/."
+  },
   "Joly": {
     "tag": "Cartografia",
     "cor": "w3-orange",
@@ -119,17 +161,65 @@
     "texto": "MENDONÇA, Francisco; DANNI-OLIVEIRA, Inês Moresco. <strong>Climatologia: noções básicas e climas do Brasil</strong>.",
     "complemento": "São Paulo: Oficina de Textos, 2007."
   },
+  "Milanez": {
+    "tag": "Mineração",
+    "cor": "w3-grey",
+    "texto": "MILANEZ, Bruno. Mineração, ambiente e sociedade: impactos complexos e simplificação da legislação.",
+    "complemento": "UFJF/POEMAS, 2017."
+  },
   "MoreiraSene": {
     "tag": "Livro Base",
     "cor": "w3-blue",
     "texto": "MOREIRA, João Carlos; SENE, Eustáquio de. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed.",
     "complemento": "São Paulo: Scipione, 2016."
   },
+  "Novak": {
+    "tag": "Narrativa",
+    "cor": "w3-purple",
+    "texto": "NOVAK, Jeannie. <strong>Desenvolvimento de games</strong>.",
+    "complemento": "São Paulo: Cengage Learning, 2017."
+  },
+  "Oliveira": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "OLIVEIRA, Juliano. <strong>Conceitos básicos sobre posicionamento por satélites artificiais</strong>. 2011.",
+    "complemento": "Disponível em: http://www.dsr.inpe.br/vcsr/files/Apresentacao_GPS.pdf. Acesso em 06. fev. 2021."
+  },
   "Press": {
     "tag": "Geociências",
     "cor": "w3-teal",
     "texto": "PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>. 4.ed.",
     "complemento": "Porto Alegre: Bookman, 2006."
+  },
+  "RevistaGalileu": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "REVISTA GALILEU. <strong>Qual foi a primeira foto tirada do espaço?</strong>",
+    "complemento": "Disponível em: http://revistagalileu.globo.com.html"
+  },
+  "Reynolds": {
+    "tag": "Geografia Física",
+    "cor": "w3-green",
+    "texto": "REYNOLDS, Stephen J. <em>et al.</em> <strong>Exploring Physical Geography</strong>. 2.ed.",
+    "complemento": "New York: McGraw-Hill, 2015."
+  },
+  "Ross": {
+    "tag": "Geomorfologia",
+    "cor": "w3-teal",
+    "texto": "ROSS, Jurandyr L. S. Compartimentação do relevo da América do Sul. <strong>Revista Brasileira de Geografia</strong>, v. 61, n. 1, p. 21–58.",
+    "complemento": "2016."
+  },
+  "SantosEspacoCidadao": {
+    "tag": "Geografia Crítica",
+    "cor": "w3-green",
+    "texto": "SANTOS, Milton. <strong>O espaço do cidadão</strong>.",
+    "complemento": "São Paulo: Editora da USP, 2007."
+  },
+  "SantosGlobalizacao": {
+    "tag": "Geografia Crítica",
+    "cor": "w3-green",
+    "texto": "SANTOS, Milton. <strong>Por uma outra globalização: do pensamento único à consciência universal</strong>.",
+    "complemento": "Rio de Janeiro: Record, 2000."
   },
   "SantosNatureza": {
     "tag": "Geografia Crítica",
@@ -143,23 +233,29 @@
     "texto": "SANTOS, Milton. <strong>O país distorcido: o Brasil, a globalização e a cidadania</strong>.",
     "complemento": "São Paulo: Publifolha, 2002."
   },
+  "SantosPatricia": {
+    "tag": "Geografia do Brasil",
+    "cor": "w3-blue",
+    "texto": "SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante: geografia do Brasil</strong>.",
+    "complemento": "São Paulo: Moderna, 2008."
+  },
   "SantosPensando": {
     "tag": "Geografia Crítica",
     "cor": "w3-green",
     "texto": "SANTOS, Milton. <strong>Pensando o espaço do homem</strong>. 5.ed.",
     "complemento": "São Paulo: Edusp, 2004."
   },
-  "SantosGlobalizacao": {
-    "tag": "Geografia Crítica",
-    "cor": "w3-green",
-    "texto": "SANTOS, Milton. <strong>Por uma outra globalização: do pensamento único à consciência universal</strong>.",
-    "complemento": "Rio de Janeiro: Record, 2000."
-  },
-  "SantosPatricia": {
+  "SantosTerritorioSociedade": {
     "tag": "Geografia do Brasil",
-    "cor": "w3-blue",
-    "texto": "SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante: geografia do Brasil</strong>.",
-    "complemento": "São Paulo: Moderna, 2008."
+    "cor": "w3-deep-orange",
+    "texto": "SANTOS, Milton; SILVEIRA, Maria Laura. <strong>O Brasil</strong>: território e sociedade no início do século XXI. 4.ed.",
+    "complemento": "Rio de Janeiro: Record, 2002."
+  },
+  "Sausen": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "SAUSEN, Tania Maria. <strong>Desastres naturais e geotecnologias</strong>—sensoriamento remoto, cadernos didáticos nº 2. São José dos Campos, 2008.",
+    "complemento": "Disponível em: http://mtc-m16c.sid.inpe.br/col/sid.inpe.br.pdf"
   },
   "SeneMoreira": {
     "tag": "Livro Base",
@@ -167,17 +263,47 @@
     "texto": "SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed.",
     "complemento": "São Paulo: Scipione, 2016."
   },
+  "Silva": {
+    "tag": "Livro Base",
+    "cor": "w3-orange",
+    "texto": "SILVA, Angela Corrêa da. <strong>Geografia: contextos e redes</strong>.",
+    "complemento": "São Paulo: Moderna, 2016."
+  },
+  "Simielli": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "SIMIELLI, Maria Elena. <strong>Geoatlas básico</strong>: mapas políticos, físicos e temáticos.",
+    "complemento": "São Paulo: Ática, 2019."
+  },
   "Skolnick": {
     "tag": "Narrativa",
     "cor": "w3-deep-orange",
     "texto": "SKOLNICK, Evan. <strong>Video Game Storytelling: what every developer needs to know about narrative techniques</strong>.",
     "complemento": "New York: Watson-Guptill, 2014."
   },
+  "Soja": {
+    "tag": "Teoria Espacial",
+    "cor": "w3-purple",
+    "texto": "SOJA, Edward. <strong>Postmetropolis: Critical Studies of Cities and Regions</strong>.",
+    "complemento": "Oxford: Blackwell, 2000."
+  },
   "Souza": {
     "tag": "Teoria Espacial",
     "cor": "w3-purple",
     "texto": "SOUZA, Marcelo Lopes de. O território: sobre espaço e poder, autonomia e desenvolvimento. In: CASTRO, Iná Elias et al. (Org.). <strong>Geografia: conceitos e temas</strong>.",
     "complemento": "Rio de Janeiro: Bertrand Brasil, 1995. p. 86."
+  },
+  "Steffen": {
+    "tag": "Cartografia",
+    "cor": "w3-orange",
+    "texto": "STEFFEN, Carlos Alberto. <strong>Introdução ao Sensoriamento Remoto</strong>.",
+    "complemento": "Disponível em: http://www3.inpe.br/unidades/cep/atividadescep/educasere/apostila.htm. Acesso em 01. fev. 2021."
+  },
+  "Strahler": {
+    "tag": "Geografia Física",
+    "cor": "w3-green",
+    "texto": "STRAHLER, Alan. <strong>Introducing Physical Geography</strong>. 6.ed.",
+    "complemento": "New York: Wiley, 2013."
   },
   "Suertegaray": {
     "tag": "Geociências",
@@ -203,6 +329,12 @@
     "texto": "VESENTINI, José William. <strong>Geografia: o mundo em transição</strong>. 2.ed.",
     "complemento": "São Paulo: Ática, 2013."
   },
+  "Vogler": {
+    "tag": "Narrativa",
+    "cor": "w3-deep-orange",
+    "texto": "VOGLER, Christopher. <strong>A jornada do escritor</strong>.",
+    "complemento": "Rio de Janeiro: Nova Fronteira, 2006."
+  },
   "WhatsWhere": {
     "tag": "Atlas",
     "cor": "w3-indigo",
@@ -214,11 +346,5 @@
     "cor": "w3-teal",
     "texto": "WICANDER, Reed; MONROE, James S. <strong>Fundamentos de Geologia</strong>.",
     "complemento": "São Paulo: Cengage Learning, 2009."
-  },
-  "BNCC": {
-    "tag": "Diretriz Nacional",
-    "cor": "w3-amber",
-    "texto": "BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>.",
-    "complemento": "Brasília: MEC/CONSED/UNDIME, 2018."
   }
 }

@@ -5,7 +5,15 @@
     "imagem": "fotoIndex/1ano/aula01.png",
     "conteudo": "Conceitos fundamentais da Geografia: Espaço geográfico, território, lugar, paisagem e região; desigualdades socioespaciais.",
     "linkTexto": "1ano/Textos1/Texto01/tp1.html?id=101",
-    "linkQuestoes": "questoes/modelo-questoes.html?id=101"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=101",
+    "objetivo": "Entender como estão relacionados os conceitos fundamentais da Geografia na explicação das desigualdades socioespaciais presentes no mundo atual.",
+    "audio": null,
+    "bibliografia": [
+      "SantosGlobalizacao",
+      "Souza",
+      "Boniface",
+      "BNCC"
+    ]
   },
   {
     "id": 102,
@@ -13,7 +21,15 @@
     "imagem": "fotoIndex/1ano/aula02.png",
     "conteudo": "Cartografia: representações do espaço geográfico, localização e coordenadas geográficas.",
     "linkTexto": "1ano/Textos1/Texto02/tp2.html?id=102",
-    "linkQuestoes": "questoes/modelo-questoes.html?id=102"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=102",
+    "objetivo": "Entender a importância da Cartografia para a construção do conhecimento do ser humano. Aplicar o sistema de coordenadas geográficas à localização de pontos na superfície terrestre.",
+    "audio": null,
+    "bibliografia": [
+      "Carpanelli",
+      "Freitas",
+      "SeneMoreira",
+      "BNCC"
+    ]
   },
   {
     "id": 103,
@@ -21,23 +37,52 @@
     "imagem": "fotoIndex/1ano/aula03.png",
     "conteudo": "Cartografia: hemisférios, fusos horários e zonas terrestres.",
     "linkTexto": "1ano/Textos1/Texto03/tp3.html?id=103",
-    "linkQuestoes": "questoes/modelo-questoes.html?id=103"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=103",
+    "objetivo": "Entender e aplicar o sistema de fusos horários no mundo.",
+    "audio": null,
+    "bibliografia": [
+      "CarvalhoAraujo",
+      "SantosGlobalizacao"
+    ]
   },
   {
     "id": 104,
     "titulo": "Escalas cartográficas",
     "imagem": "fotoIndex/1ano/aula04.png",
     "conteudo": "Escala cartográfica: numérica e gráfica; generalização cartográfica.",
-    "linkTexto": "1ano/Textos1/Texto04/tp4.html",
-    "linkQuestoes": "1ano/Aulas1/Aula04/p4.html"
+    "linkTexto": "1ano/Textos1/Texto04/tp4.html?id=104",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=104",
+    "bibliografia": [
+      "IBGE",
+      "MoreiraSene",
+      "SeneMoreira",
+      "BNCC"
+    ],
+    "objetivo": "Entender e aplicar o conceito de escala geográfica e cartográfica.",
+    "audio": null
   },
   {
     "id": 105,
     "titulo": "Projeções cartográficas",
     "imagem": "fotoIndex/1ano/aula05.png",
     "conteudo": "Projeções cilíndricas, cônicas e azimutais. Projeção de Mercator, Peters; Mapas temáticos; Anamorfoses.",
-    "linkTexto": "1ano/Textos1/Texto05/tp5.html",
-    "linkQuestoes": "1ano/Aulas1/Aula05/p5.html"
+    "linkTexto": "1ano/Textos1/Texto05/tp5.html?id=105",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=105",
+    "objetivo": "Comparar os diferentes sistemas de projeções cartográficas e conhecer outras formas de representação da realidade através dos mapas.",
+    "audio": null,
+    "bibliografia": [
+      "Faria",
+      "Joly",
+      "SeneMoreira",
+      "CarvalhoAraujo",
+      "BNCC"
+    ],
+    "links": [
+      "GallPetersBBC",
+      "ProjecoesCartograficasD3",
+      "40MapasMundo",
+      "BBCMapaMundoReal"
+    ]
   },
   {
     "id": 106,
@@ -45,47 +90,105 @@
     "imagem": "fotoIndex/revisao.png",
     "conteudo": "Revisão dos conteúdos abordados nas aulas 01 a 05.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula06/p6.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=106",
+    "objetivo": null,
+    "audio": null
   },
   {
     "id": 107,
     "titulo": "Sensoriamento remoto",
     "imagem": "fotoIndex/1ano/aula07.png",
     "conteudo": "Sistemas de Informações Geográficas; Geoprocessamento; Sensoriamento remoto, GPS; imagens de satélite; Cartografia digital.",
-    "linkTexto": "1ano/Textos1/Texto07/tp7.html",
-    "linkQuestoes": "1ano/Aulas1/Aula07/p7.html"
+    "linkTexto": "1ano/Textos1/Texto07/tp7.html?id=107",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=107",
+    "bibliografia": [
+      "Oliveira",
+      "RevistaGalileu",
+      "BNCC",
+      "Sausen",
+      "MoreiraSene",
+      "STEFFEN",
+      "SeneMoreira"
+    ],
+    "links": [
+      "GPSComoFunciona"
+    ],
+    "objetivo": "Compreender o papel estratégico da Cartografia diante das novas tecnologias de informações Geográficas (SIGs).",
+    "audio": null
   },
   {
     "id": 108,
     "titulo": "Eras geológicas e estrutura interna da Terra",
     "imagem": "fotoIndex/1ano/aula08.png",
     "conteudo": "Crosta, manto e núcleo; Eras geológicas: Azoica, Pré-Cambriano, Paleozoica, Mesozoica e Cenozoica.",
-    "linkTexto": "1ano/Textos1/Texto08/tp8.html",
-    "linkQuestoes": "1ano/Aulas1/Aula08/p8.html"
+    "linkTexto": "1ano/Textos1/Texto08/tp8.html?id=108",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=108",
+    "objetivo": "Comparar a escala geológica do tempo (eras geológicas) com a temporalidade da história humana. Entender como funciona as camadas internas da Terra.",
+    "audio": null,
+    "bibliografia": [
+      "Dambros",
+      "Press",
+      "SeneMoreira",
+      "Teixeira",
+      "Vesentini",
+      "BNCC"
+    ]
   },
   {
     "id": 109,
     "titulo": "Deriva continental e tectônica",
     "imagem": "fotoIndex/1ano/aula09.png",
     "conteudo": "Deriva continental; Tectônica de placas; Isostasia; Correntes de Convecção; Falhas tectônicas.",
-    "linkTexto": "1ano/Textos1/Texto09/tp9.html",
-    "linkQuestoes": "1ano/Aulas1/Aula09/p9.html"
+    "linkTexto": "1ano/Textos1/Texto09/tp9.html?id=109",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=109",
+    "objetivo": "Entender os processos de separação dos continentes terrestres por meio da teoria da deriva continental e tectônica de placas.",
+    "audio": null,
+    "bibliografia": [
+      "Press",
+      "SeneMoreira",
+      "Teixeira",
+      "Vesentini",
+      "BNCC"
+    ]
   },
   {
     "id": 110,
     "titulo": "Dinâmica interna do relevo",
     "imagem": "fotoIndex/1ano/aula10.png",
     "conteudo": "Relevo, Tectonismo, Epirogênese, Orogênese, vulcanismo, magma, hipocentro e epicentro.",
-    "linkTexto": "1ano/Textos1/Texto10/tp10.html",
-    "linkQuestoes": "1ano/Aulas1/Aula10/p10.html"
+    "linkTexto": "1ano/Textos1/Texto10/tp10.html?id=110",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=110",
+    "objetivo": "Entender o papel das forças internas na configuração das estruturas e formas do relevo terrestre.",
+    "audio": null,
+    "bibliografia": [
+      "Marshak",
+      "Press",
+      "Suertegaray",
+      "Teixeira",
+      "Vesentini",
+      "Wicander",
+      "BNCC"
+
+    ]
   },
   {
     "id": 111,
     "titulo": "Dinâmica externa do relevo",
     "imagem": "fotoIndex/1ano/aula11.png",
     "conteudo": "Agentes externos: água, gelo, vento; Intemperismo físico e químico; Erosão e sedimentação.",
-    "linkTexto": "1ano/Textos1/Texto11/tp11.html",
-    "linkQuestoes": "1ano/Aulas1/Aula11/p11.html"
+    "linkTexto": "1ano/Textos1/Texto11/tp11.html?id=111",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=111",
+    "objetivo": "Entender o papel das forças externas na configuração das estruturas e formas do relevo terrestre. Distinguir entre intemperismo físico e químico e seus fatores. Identificar os fatores do intemperismo. Descrever os diferentes tipos de erosão.",
+    "audio": null,
+    "bibliografia": [
+      "Borrero",
+      "Press",
+      "Reynolds",
+      "Strahler",
+      "Teixeira",
+      "Wicander",
+      "BNCC"
+    ]
   },
   {
     "id": 112,
@@ -93,47 +196,101 @@
     "imagem": "fotoIndex/revisao.png",
     "conteudo": "Revisão dos conteúdos abordados nas aulas 07 a 11.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula12/p12.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=112",
+    "objetivo": null,
+    "audio": null
   },
   {
     "id": 113,
     "titulo": "Ciclo das Rochas",
     "imagem": "fotoIndex/1ano/aula13.png",
     "conteudo": "Minerais; tipos de rochas: magmáticas, metamórficas, sedimentares; fósseis e litificação.",
-    "linkTexto": "1ano/Textos1/Texto13/tp13.html",
-    "linkQuestoes": "1ano/Aulas1/Aula13/p13.html"
+    "linkTexto": "1ano/Textos1/Texto13/tp13.html?id=113",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=113",
+    "objetivo": "Diferenciar os tipos de rochas com base em seu processo de formação. Classificar tipos e texturas das rochas ígneas. Compreender o processo de formação das rochas sedimentares. Analisar as rochas metamórficas e seu processo de formação. Entender o ciclo das rochas.",
+    "audio": null,
+    "bibliografia": [
+      "Borrero",
+      "Fredette",
+      "Marshak",
+      "Press",
+      "Teixeira",
+      "Wicander",
+      "BNCC"
+    ]
   },
   {
     "id": 114,
     "titulo": "Estrutura geológica e relevo",
     "imagem": "fotoIndex/1ano/aula14.png",
     "conteudo": "Crátons, escudos cristalinos, bacias sedimentares; Planaltos, planícies, montanhas e depressões.",
-    "linkTexto": "1ano/Textos1/Texto14/tp14.html",
-    "linkQuestoes": "1ano/Aulas1/Aula14/p14.html"
+    "linkTexto": "1ano/Textos1/Texto14/tp14.html?id=114",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=114",
+    "objetivo": "Identificar as estruturas geológicas presentes no Planeta através da constituição de suas rochas. Identificar e comparar as grandes unidades do relevo terrestre.",
+    "audio": null,
+    "bibliografia": [
+      "Marshak",
+      "Press",
+      "Suertegaray",
+      "Teixeira",
+      "Vesentini",
+      "Wicander",
+      "BNCC"
+    ]
   },
   {
     "id": 115,
     "titulo": "Fontes de energia I",
     "imagem": "fotoIndex/1ano/aula15.png",
     "conteudo": "Combustíveis fósseis: Petróleo, Gás natural e Carvão Mineral.",
-    "linkTexto": "1ano/Textos1/Texto15/tp15.html",
-    "linkQuestoes": "1ano/Aulas1/Aula15/p15.html"
+    "linkTexto": "1ano/Textos1/Texto15/tp15.html?id=115",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=115",
+    "objetivo": "Compreender o papel da matriz energética no período atual, as principais questões econômicas, políticas, territoriais ligada à comercialização e distribuição do petróleo, do gás natural e do carvão mineral no mundo.",
+    "audio": null,
+    "links": [
+      "ANPPetroleo",
+      "PetrobrasPreSal",
+      "ANPAnuario2018"
+    ],
+    "bibliografia": [
+      "Vesentini",
+      "SeneMoreira",
+      "MoreiraSene",
+      "BNCC"
+    ]
   },
   {
     "id": 116,
     "titulo": "Fontes de energia II",
     "imagem": "fotoIndex/1ano/aula16.png",
     "conteudo": "Energias renováveis: Biomassa, Eólica, Solar, Hidráulica, Geotérmica e Maremotriz.",
-    "linkTexto": "1ano/Textos1/Texto16/tp16.html",
-    "linkQuestoes": "1ano/Aulas1/Aula16/p16.html"
+    "linkTexto": "1ano/Textos1/Texto16/tp16.html?id=116",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=116",
+    "objetivo": "Identificar alternativas energéticas renováveis para uso no mundo atual.",
+    "audio": null,
+    "bibliografia": [
+      "Vesentini",
+      "SeneMoreira",
+      "MoreiraSene",
+      "BNCC"
+    ]
   },
   {
     "id": 117,
     "titulo": "Solos",
     "imagem": "fotoIndex/1ano/aula17.png",
     "conteudo": "Pedogênese; Horizontes do solo; laterização; lixiviação; salinização e desertificação.",
-    "linkTexto": "1ano/Textos1/Texto17/tp17.html",
-    "linkQuestoes": "1ano/Aulas1/Aula17/p17.html"
+    "linkTexto": "1ano/Textos1/Texto17/tp17.html?id=117",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=117",
+    "objetivo": "Entender como se formam os solos, seus tipos mais comuns e identificar as formas de uso que degradam ou conservam os solos.",
+    "audio": null,
+    "bibliografia": [
+      "Teixeira",
+      "Press",
+      "Suertegaray",
+      "Strahler",
+      "BNCC"
+    ]
   },
   {
     "id": 118,
@@ -141,39 +298,76 @@
     "imagem": "fotoIndex/revisao.png",
     "conteudo": "Revisão dos conteúdos abordados nas aulas 13 a 17.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula18/p18.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=118",
+    "objetivo": null,
+    "audio": null
   },
   {
     "id": 119,
     "titulo": "Climatologia I",
     "imagem": "fotoIndex/1ano/aula19.png",
     "conteudo": "Camadas da atmosfera; Tempo vs Clima; Temperatura, umidade e pressão atmosférica.",
-    "linkTexto": "1ano/Textos1/Texto19/tp19.html",
-    "linkQuestoes": "1ano/Aulas1/Aula19/p19.html"
+    "linkTexto": "1ano/Textos1/Texto19/tp19.html?id=119",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=119",
+    "objetivo": "Diferenciar tempo e clima. Identificar e compreender os elementos do clima (temperatura, pressão atmosférica, umidade, ventos e precipitação).",
+    "audio": null,
+    "bibliografia": [
+      "Teixeira",
+      "Press",
+      "Strahler",
+      "Hess",
+      "BNCC"
+    ]
   },
   {
     "id": 120,
     "titulo": "Climatologia II",
     "imagem": "fotoIndex/1ano/aula20.png",
     "conteudo": "Fatores climáticos: Latitude, Altitude, Maritimidade, Correntes Marítimas e Massas de Ar.",
-    "linkTexto": "1ano/Textos1/Texto20/tp20.html",
-    "linkQuestoes": "1ano/Aulas1/Aula20/p20.html"
+    "linkTexto": "1ano/Textos1/Texto20/tp20.html?id=120",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=120",
+    "objetivo": "Identificar e compreender o papel dos fatores climáticos na definição dos tipos de clima no mundo.",
+    "audio": null,
+    "bibliografia": [
+      "Teixeira",
+      "Press",
+      "Strahler",
+      "Hess",
+      "BNCC"
+    ]
   },
   {
     "id": 121,
     "titulo": "Mudanças climáticas globais",
     "imagem": "fotoIndex/1ano/aula21.png",
     "conteudo": "Aquecimento global; El Niño; La Niña; Camada de ozônio; efeito estufa.",
-    "linkTexto": "1ano/Textos1/Texto21/tp21.html",
-    "linkQuestoes": "1ano/Aulas1/Aula21/p21.html"
+    "linkTexto": "1ano/Textos1/Texto21/tp21.html?id=121",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=121",
+    "objetivo": "Identificar as mudanças climáticas globais e entender os processos que as causam. Destacar as possíveis consequências dessas mudanças para a vida humana e de outros seres vivos do planeta",
+    "audio": null,
+    "links": [
+      "ONUMudancaClimatica"
+    ],
+    "bibliografia": [
+      "Vesentini",
+      "SeneMoreira",
+      "BNCC"
+    ]
   },
   {
     "id": 122,
     "titulo": "Mudanças climáticas locais",
     "imagem": "fotoIndex/1ano/aula22.png",
     "conteudo": "Ilhas de calor; Inversão térmica; Chuva ácida; Desertificação; Desmatamento.",
-    "linkTexto": "1ano/Textos1/Texto22/tp22.html",
-    "linkQuestoes": "1ano/Aulas1/Aula22/p22.html"
+    "linkTexto": "1ano/Textos1/Texto22/tp22.html?id=122",
+    "linkQuestoes": "questoes/modelo-questoes.html?id=122",
+    "objetivo": "Identificar as mudanças climáticas locais, principalmente aquelas ligadas às áreas urbanas, e entender os processos que as causam e as consequências para as pessoas que vivem nessas áreas.",
+    "audio": null,
+    "bibliografia": [
+      "Vesentini",
+      "SeneMoreira",
+      "BNCC"
+    ]
   },
   {
     "id": 123,
@@ -181,7 +375,9 @@
     "imagem": "fotoIndex/revisao.png",
     "conteudo": "Revisão dos conteúdos abordados nas aulas 19 a 22.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula23/p23.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=123",
+    "objetivo": null,
+    "audio": null
   },
   {
     "id": 124,
@@ -189,7 +385,22 @@
     "imagem": "fotoIndex/1ano/aula24.png",
     "conteudo": "Ciclo da água; Bacia hidrográfica como unidade de análise; Movimentos oceânicos.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula24/p24.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=124",
+    "objetivo": null,
+    "audio": null,
+    "links": [
+      "MMAAgua",
+      "ONUAgua",
+      "ANAAtlasAgua"
+    ],
+    "bibliografia": [
+      "Teixeira",
+      "Press",
+      "Suertegaray",
+      "SeneMoreira",
+      "Vesentini",
+      "BNCC"
+    ]
   },
   {
     "id": 125,
@@ -197,7 +408,16 @@
     "imagem": "fotoIndex/1ano/aula25.png",
     "conteudo": "Plataforma continental, talude, bacia oceânica, fossas e cadeias oceânicas.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula25/p25.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=125",
+    "objetivo": null,
+    "audio": null,
+    "bibliografia": [
+      "Teixeira",
+      "Press",
+      "Marshak",
+      "Wicander",
+      "BNCC"
+    ]
   },
   {
     "id": 126,
@@ -205,7 +425,15 @@
     "imagem": "fotoIndex/1ano/aula26.png",
     "conteudo": "Rios meandrantes, deltas, estuários e processos de erosão fluvial.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula26/p26.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=126",
+    "objetivo": null,
+    "audio": null,
+    "bibliografia": [
+      "Teixeira",
+      "Press",
+      "Suertegaray",
+      "BNCC"
+    ]
   },
   {
     "id": 127,
@@ -213,7 +441,17 @@
     "imagem": "fotoIndex/1ano/aula27.png",
     "conteudo": "Poluição hídrica; desmatamento de matas ciliares e contaminação do solo.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula27/p27.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=127",
+    "objetivo": null,
+    "audio": null,
+    "links": [
+      "BBCMarAral"
+    ],
+    "bibliografia": [
+      "Vesentini",
+      "SeneMoreira",
+      "BNCC"
+    ]
   },
   {
     "id": 128,
@@ -221,7 +459,9 @@
     "imagem": "fotoIndex/revisao.png",
     "conteudo": "Revisão dos conteúdos abordados nas aulas 24 a 27.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula28/p28.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=128",
+    "objetivo": null,
+    "audio": null
   },
   {
     "id": 129,
@@ -229,7 +469,15 @@
     "imagem": "fotoIndex/1ano/aula29.png",
     "conteudo": "Biomas tropicais: florestas pluviais e savanas; Dinâmicas climáticas tropicais.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula29/p29.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=129",
+    "objetivo": null,
+    "audio": null,
+    "bibliografia": [
+      "Suertegaray",
+      "SeneMoreira",
+      "Vesentini",
+      "BNCC"
+    ]
   },
   {
     "id": 130,
@@ -237,7 +485,15 @@
     "imagem": "fotoIndex/1ano/aula30.png",
     "conteudo": "Biomas temperados: coníferas, estepes, pradarias e vegetação mediterrânea.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula30/p30.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=130",
+    "objetivo": null,
+    "audio": null,
+    "bibliografia": [
+      "Suertegaray",
+      "SeneMoreira",
+      "Vesentini",
+      "BNCC"
+    ]
   },
   {
     "id": 131,
@@ -245,7 +501,15 @@
     "imagem": "fotoIndex/1ano/aula31.png",
     "conteudo": "Regiões polares; Clima ártico e antártico; Tundra.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula31/p31.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=131",
+    "objetivo": null,
+    "audio": null,
+    "bibliografia": [
+      "Suertegaray",
+      "SeneMoreira",
+      "Vesentini",
+      "BNCC"
+    ]
   },
   {
     "id": 132,
@@ -253,7 +517,14 @@
     "imagem": "fotoIndex/1ano/aula32.png",
     "conteudo": "Impacto ambiental; Conservacionismo vs Preservacionismo; Ecossocialismo.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula32/p32.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=132",
+    "objetivo": null,
+    "audio": null,
+    "bibliografia": [
+      "Vesentini",
+      "SeneMoreira",
+      "BNCC"
+    ]
   },
   {
     "id": 133,
@@ -261,7 +532,14 @@
     "imagem": "fotoIndex/1ano/aula33.png",
     "conteudo": "Políticas globais: Eco-92, Protocolo de Kyoto, Acordo de Paris e Sustentabilidade.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula33/p33.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=133",
+    "objetivo": null,
+    "audio": null,
+    "bibliografia": [
+      "Vesentini",
+      "SeneMoreira",
+      "BNCC"
+    ]
   },
   {
     "id": 134,
@@ -269,6 +547,8 @@
     "imagem": "fotoIndex/revisao.png",
     "conteudo": "Revisão final dos biomas e questões ambientais.",
     "linkTexto": null,
-    "linkQuestoes": "1ano/Aulas1/Aula34/p34.html"
+    "linkQuestoes": "questoes/modelo-questoes.html?id=134",
+    "objetivo": null,
+    "audio": null
   }
 ]

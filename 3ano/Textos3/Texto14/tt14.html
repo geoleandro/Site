@@ -6,158 +6,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-    <title>3º ano - Texto 14 - A urbanização mundial </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
 
-    <style>
-        .topico {
-            display: none;
-        }
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
 
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-
-        .postit-tp9 {
-            background: #f5ff9e;
-
-            width: 40%;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-
-
-        .imagem-fundo {
-            background-image: url('../../../fotoIndex/cortica.jpg');
-            background-size: auto;
-            background-repeat: inherit;
-            padding: 0px;
-            /* Ajuste conforme necessário */
-        }
-
-
-        /* 
-Css do memory card */
-    </style>
-
-
-
+    <title>3º ano - Texto 14 - A urbanização mundial</title>
 
 </head>
 
 <body>
 
+    <div id="header-placeholder"></div>
+    <div id="aviso-status" class="w3-margin-top"></div>
 
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
 
-    <div class="topico">
+        <div class="topico">
 
-        <div class="centerBar">
+            <div class="w3-padding-top-48"></div>
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
+            <h1 id="h1"> </h1>
 
-                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
             </div>
-        </div>
 
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
             </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+
         </div>
 
-
-
-        <h1 id="h1"> Texto 14 - A urbanização mundial
-
-        </h1>
-
-
-        <p><strong> Conteúdo:</strong> Urbanização; Metropolização; população urbana; Cidades globais; Megacidades;
-            Êxodo rural. </p>
-
-        <p><strong>Objetivo:</strong> Compreender o processo de urbanização mundial e as transformações do espaço
-            geográfico decorrente da dinâmica da população urbana no mundo.
-        </p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> Introdução </h2>
 
@@ -182,8 +108,7 @@ Css do memory card */
 
 
     </div>
-
-    <div class="topico">
+<div class="topico">
         <h2>Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
 
         <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
@@ -215,10 +140,7 @@ Css do memory card */
         <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
         <hr>
     </div>
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>Resumo: Urbanização</h2>
     
@@ -256,10 +178,7 @@ Css do memory card */
         <hr>
     
     </div>
-    
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>O Que é Urbanização?</h2>
 
@@ -287,9 +206,7 @@ Css do memory card */
         <hr>
 
     </div>
-
-
-    <div class="topico">
+<div class="topico">
         <h2>As Cidades: Urbanização e Principais Cidades do Mundo</h2>
         <p>As cidades são os centros da urbanização, onde a maioria da população mundial vive e trabalha. Elas
             desempenham um papel vital na economia global, na cultura, na política e no desenvolvimento humano.</p>
@@ -478,12 +395,7 @@ Css do memory card */
         <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
         <hr>
     </div>
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <div class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-padding">
 
@@ -554,13 +466,7 @@ Css do memory card */
         <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
         <hr>
     </div>
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <div class="w3-panel w3-light-grey w3-leftbar w3-grey w3-padding">
             <h2>A Urbanização Desigual</h2>
@@ -639,14 +545,7 @@ Css do memory card */
         <hr>
 
     </div>
-
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2 id="centralizado">"A pergunta não é uma marca de ignorância, mas sim um sinal de inteligência."
             (Sócrates).</h2>
@@ -683,272 +582,73 @@ Css do memory card */
 
     </div>
 
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
 
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
 
-    <div class="topico">
+    MostrarProximo(this);
+">Próximo</button>
 
-
-
-        <h2>Atividade: "Desigualdades Urbanas ao Redor do Mundo"</h2>
-        <p><strong>Objetivo da Atividade:</strong> Observar e discutir as desigualdades entre áreas urbanas ao redor do
-            mundo, destacando o que outras cidades têm e o que a nossa não tem.</p>
-
-        <h3>Materiais Necessários:</h3>
-        <ul>
-            <li>Papel ou quadro branco para a lousa</li>
-            <li>Canetas coloridas ou giz</li>
-        </ul>
-
-        <h3>Passo 1: Escolha uma Cidade Internacional</h3>
-        <p>Escolha uma cidade internacional famosa, como Nova Iorque, Tóquio, Londres, Paris, etc.</p>
-
-        <h3>Passo 2: Identifique as Diferenças</h3>
-
-        <p><strong>Em Grupos (3-5 alunos):</strong> Escolham uma cidade internacional.</p>
-        <ul>
-            <li>Listem (15 minutos): Anotem o que essa cidade tem e a nossa não tem.</li>
-            <li><strong>Exemplo:</strong></li>
-        </ul>
-        <ul>
-            <li><strong>O Que Nova Iorque Tem e a Nossa Cidade Não Tem:</strong></li>
-        </ul>
-
-        <ul>
-            <li>Central Park</li>
-            <li>Estátua da Liberdade</li>
-            <li>Metrô 24 horas</li>
-            <li>Broadway</li>
-            <li>Empire State Building</li>
-            <li>Times Square</li>
-            <li>Museu de Arte Moderna (MoMA)</li>
-            <li>Evento do Ano-Novo na Times Square</li>
-            <li>Diversidade de restaurantes e culinária internacional</li>
-            <li>Wall Street</li>
-        </ul>
-        <ul>
-            <li><strong>O Que Nossa Cidade Tem e Nova Iorque Não Tem:</strong></li>
-        </ul>
-
-
-        <ul>
-            <li>Parque Municipal</li>
-            <li>Monumento aos Fundadores</li>
-            <li>Ônibus Turístico</li>
-            <li>Festival de Música Anual</li>
-            <li>Praça do Comércio</li>
-            <li>Praia Urbana</li>
-            <li>Feira de Artesanato Mensal</li>
-            <li>Ciclovias pela Cidade</li>
-            <li>Semáforos com Tempo de Espera</li>
-        </ul>
-        
-
-        <h3>Passo 3: Compare com a Nossa Cidade</h3>
-        <p>Listem o que a nossa cidade tem e a escolhida não tem.</p>
-        <p><strong>Pensem (Reflexão):</strong> Como essas diferenças refletem as desigualdades entre áreas urbanas?</p>
-
-        <h3>Passo 4: Apresentação e Adição na Lousa</h3>
-        <p><strong>Apresentem (15 minutos):</strong> Na lousa, destaquem as diferenças entre as cidades.</p>
-        <p><strong>Adicionem (Outros Grupos):</strong> Se notarem mais diferenças, adicionem à lista na lousa.</p>
-
-        <h3>Passo 5: Reflexão Individual (10 minutos)</h3>
-        <p><strong>Refletirem (Individuais):</strong> Escrevam como se sentem ao perceber essas diferenças.</p>
-        <p><strong>Reflexionem (Sobre):</strong> O que isso significa para vocês?</p>
-
-        <h3>Passo 6: Discussão Final (10 minutos)</h3>
-        <p><strong>Conversem (Todos Juntos):</strong> Como podemos diminuir essas desigualdades?</p>
-        <p><strong>Pensem (Juntos):</strong> Ideias para cidades mais justas e inclusivas.</p>
-
-        <h3>Discussão em Grupo:</h3>
-        <ul>
-            <li><strong>Importância (Reflexão):</strong> Por que é importante comparar essas características?</li>
-            <li><strong>Impacto (Consciência):</strong> Como essas diferenças afetam a vida nas cidades?</li>
-            <li><strong>Ação (Ideias):</strong> O que podemos fazer para uma cidade mais igual e acessível?</li>
-        </ul>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
-
-
-
-
-
-
-        <p id="respFinal"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
-                    alt="globinhorespFinal" width="64" height="64">
-            </p>
-        </div>
-        <hr>
-
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span> -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-        <div class="imagem-fundo w3-mobile">
-
-
-         
-
+            <p id="respFinal"></p>
             <div class="area">
-
-
-                <div class="postit-tp9 w3-margin-right ">
-
-                    <a href="https://brasil.un.org/pt-br/188520-onu-habitat-popula%C3%A7%C3%A3o-mundial-ser%C3%A1-68-urbana-at%C3%A9-2050" target="_blank">
-                        ONU-Habitat: população mundial será 68% urbana até 2050
-                    </a>
-
-                </div>
-
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
             </div>
+            <hr>
         </div>
 
-
-
-
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-        <p>SANTOS, Milton. <strong>A Natureza do Espaço:</strong> técnica e tempo, razão e emoção. São Paulo: EDUSP,
-            2002.</p>
-
-
-        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2.
-            ed. – São
-            Paulo: Ática, 2013.
-        </p>
-
-
+        <!-- TÓPICO FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+        </div>
 
     </div>
-    <br><br>
-
-    <!-- <script>
-
-    function numButton() {
-        numB++;
-        document.getElementById("numero").innerHTML = numB;
-        console.log(numB);
-    }
-
-    </script> -->
 
 
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
-    <script>
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
+            </div>
 
+        <br><br>
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
 
+    </main>
 
-        function MostrarProximo(parametro) {
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-bottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
 
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+    <div class="w3-padding-top-48"></div>
 
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-
-                // numButton();
-                addProgressBar();
-
-                ApagaButton();
-                RemoveBalancarGlobo();
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-        }
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 10);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-    </script>
-
-
-
-
-
-
-
+    <div id="footer-placeholder"></div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
@@ -956,15 +656,8 @@ Css do memory card */
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-DPX55DSFZ0');
-
     </script>
 
-
-
-
-
 </body>
-
 </html>

@@ -96,9 +96,7 @@ function gerarHtmlModal(aula, status) {
                     <strong>Conteúdo:</strong> ${aula.conteudo}
                 </div>
                 <div class="w3-container w3-padding-16">
-                    <a href="${aula.linkTexto}" class="w3-button ${status.concluido.texto ? 'w3-green' : 'w3-teal'} btn-aula">
-                        ${status.btnTexto}
-                    </a>
+                    ${aula.linkTexto ? `<a href="${aula.linkTexto}" class="w3-button ${status.concluido.texto ? 'w3-green' : 'w3-teal'} btn-aula">${status.btnTexto}</a>` : ''}
                     <a href="${aula.linkQuestoes}" class="w3-button ${status.concluido.quest ? 'w3-blue' : 'w3-yellow'} btn-aula">
                         ${status.btnQuest}
                     </a>

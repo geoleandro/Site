@@ -1,280 +1,137 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-    <title>2º ano - Texto 09 </title>
-
-
-
-
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-        .postit-tp9 {
-
-
-            width: 250px;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-    </style>
-
-
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<link href="../../../estilos/index-estilo.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="../../../estilos/navbar.css" rel="stylesheet"/>
+<link href="../../../estilos/rpg-sistema.css" rel="stylesheet"/>
+<link href="../../../estilos/ModeloCss.css" rel="stylesheet"/>
+<link href="../../../fotoIndex/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"></script>
+<script defer="" src="../../../js/duvid-cache.js"></script>
+<script defer="" src="../../../js/duvid-db.js"></script>
+<script defer="" src="../../../js/duvid-audio.js"></script>
+<script defer="" src="../../../js/duvid-ui.js"></script>
+<script defer="" src="../../../js/duvid-core.js"></script>
+<script defer="" src="../../../estilos/jstextos-padrao.js"></script>
+<script defer="" src="../../../js/abrirmenu.js"></script>
+<script defer="" src="../../../js/carregar.js"></script>
+<script defer="" src="../../../js/aulas-geral.js"></script>
+<title>2º ano - Texto 09</title>
 </head>
-
 <body>
-
-
-
-    <div class="topico">
-
-        <div class="centerBar">
-
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
-
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
-            </div>
-        </div>
-
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
-            </div>
-        </div>
-
-
-
-        <h1 id="h1"> Texto 09 - A industrialização brasileira I</h1>
-
-
-        <p><strong> Conteúdo:</strong> Indústria; Economia Agroexportadora; Substituição de importações; Economia
-            Urbano-Industrial; Modernização periférica; Endividamento externo.
-        </p>
-
-        <p><strong>Objetivo:</strong> Entender o processo de industrialização do Brasil. Identificar os agentes, as
-            características da transição da economia agroexportadora para a urbano-industrial, a integração do
-            território nacional e sua configuração desigual.</p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Introdução </h2>
-
-
-        <p> <span class="primeiraLetra">N</span>a aula anterior, vimos o potencial do território brasileiro em relação
+<div id="header-placeholder"></div>
+<div class="w3-margin-top" id="aviso-status"></div>
+<main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+<div class="topico">
+<div class="w3-padding-top-48"></div>
+<h1 id="h1"></h1>
+<!-- Futuro audio -->
+<div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+<div class="w3-row">
+<div class="w3-col s2 m1 w3-center">
+<i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+</div>
+<div class="w3-col s10 m11 w3-padding-small">
+<b class="fontePixel">OUVIR AULA</b>
+<p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+</div>
+</div>
+<audio controls="" style="width:100%; margin-top: 10px;">
+<source id="audioSource" src="" type="audio/mp3"/>
+</audio>
+</div>
+<div class="w3-container w3-padding-16">
+<p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+<p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+</div>
+<button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+<i class="fa fa-play"></i> Iniciar Aula
+            </button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Introdução </h2>
+<p> <span class="primeiraLetra">N</span>a aula anterior, vimos o potencial do território brasileiro em relação
             aos recursos minerais presentes no país.</p>
-
-
-        <p>Hoje, veremos como esse território foi transformado através da industrialização no Brasil.</p>
-
-
-
-        <p>
+<p>Hoje, veremos como esse território foi transformado através da industrialização no Brasil.</p>
+<p>
             Você entrará em contato com os fatores e o processo de industrialização brasileiro ao logo do tempo e do
             espaço.
         </p>
-
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-    
-    <div class="topico">
-        <div class="w3-pale-yellow">
-            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
-        
-    
-        <p>1) O que é a indústria?</p>
-        <p>2) Qual é a contribuição do setor industrial para o PIB brasileiro?</p>
-        <p>3) Por que a distribuição das indústrias é concentrada na região Sudeste do Brasil?</p>
-        <p>4) Quais são os tipos de indústrias mencionadas no texto?</p>
-        <p>5) Como o modelo agrário-exportador impactou a industrialização no Brasil?</p>
-        <p>6) Qual evento econômico levou à falência de muitos fazendeiros no Brasil em 1929?</p>
-        <p>7) O que foi a Política de Substituição de Importações?</p>
-        <p>8) Quais grandes empresas públicas foram criadas pelo governo de Getúlio Vargas?</p>
-        <p>9) Como Juscelino Kubitschek contribuiu para a industrialização no Brasil?</p>
-        <p>10) Qual foi o impacto do regime militar no endividamento externo do Brasil?</p>
-
-    </div>
-    
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-    
-
-
-
-    <div class="topico">
-
-        <h2>O que é uma indústria? </h2>
-
-
-
-
-        <p> O nome indústria pode ser sinônimo de transformação. Ela modifica matérias-primas, como o minério de ferro,
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<div class="w3-pale-yellow">
+<h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+<p>1) O que é a indústria?</p>
+<p>2) Qual é a contribuição do setor industrial para o PIB brasileiro?</p>
+<p>3) Por que a distribuição das indústrias é concentrada na região Sudeste do Brasil?</p>
+<p>4) Quais são os tipos de indústrias mencionadas no texto?</p>
+<p>5) Como o modelo agrário-exportador impactou a industrialização no Brasil?</p>
+<p>6) Qual evento econômico levou à falência de muitos fazendeiros no Brasil em 1929?</p>
+<p>7) O que foi a Política de Substituição de Importações?</p>
+<p>8) Quais grandes empresas públicas foram criadas pelo governo de Getúlio Vargas?</p>
+<p>9) Como Juscelino Kubitschek contribuiu para a industrialização no Brasil?</p>
+<p>10) Qual foi o impacto do regime militar no endividamento externo do Brasil?</p>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>O que é uma indústria? </h2>
+<p> O nome indústria pode ser sinônimo de transformação. Ela modifica matérias-primas, como o minério de ferro,
             e o transforma em um produto comercializável e pronto para o uso, a exemplo do aço.</p>
-
-        <p>No Brasil, o segmento industrial representa cerca de 20% do Produto Interno Bruto – PIB e representa quase
+<p>No Brasil, o segmento industrial representa cerca de 20% do Produto Interno Bruto – PIB e representa quase
             70% das exportações brasileiras de bens e serviços. É um setor que emprega 9,7 milhões de trabalhadores e
             possui uma média salarial de cerca de 5.887 reais para ensino superior e 2.128 reais para nível médio (CNI,
             2022). </p>
-
-        <p> Qualquer mapa do Brasil nos induz a questão sobre qual a razão da distribuição das indústrias ser tão
+<p> Qualquer mapa do Brasil nos induz a questão sobre qual a razão da distribuição das indústrias ser tão
             concentrada na região Sudeste?</p>
-
-        <div class="w3-margin"><img id="imagem1" src="ts09f01.png" alt="ts09f01" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: IBGE (2016). </span>
-        </div>
-
-
-
-
-
-        <p>Primeiro, vamos ver algumas características das indústrias no geral e depois no Brasil. Existem muitas
+<div class="w3-margin"><img alt="ts09f01" class="w3-mobile" id="imagem1" src="ts09f01.png"/>
+<span class="w3-small w3-margin-left" id="citacao1"> Fonte: IBGE (2016). </span>
+</div>
+<p>Primeiro, vamos ver algumas características das indústrias no geral e depois no Brasil. Existem muitas
             classificações para diferentes tipos de indústrias, como aquelas que produzem produtos para outras
             indústrias, a exemplo da petroquímica ao refinar o petróleo, siderúrgica ao produzir metal, e a produção de
             máquinas e equipamentos. Estas serias as indústrias de <strong>bens de produção</strong> ou <strong>bens de
                 capital</strong>. </p>
-
-
-        <p>Há, igualmente, indústrias que produzem produtos que duram bastante, como carros, eletrodomésticos ou
+<p>Há, igualmente, indústrias que produzem produtos que duram bastante, como carros, eletrodomésticos ou
             produtos de informática. Essas são as indústrias de bens duráveis. Assim como há aquelas que produzem
             alimentos, bebidas, cosméticos, remédios, são indústrias de <strong>bens não-duráveis</strong>. </p>
-
-        <p> Desde o seu início na Primeira Revolução Industrial, no fim do século XVIII e início do século XIX, na
+<p> Desde o seu início na Primeira Revolução Industrial, no fim do século XVIII e início do século XIX, na
             Inglaterra, utilizando para isto força humana, máquinas e energia, o processo de industrialização passou por
             diversas etapas, como a fase <strong>artesanal</strong>, com pouca divisão do trabalho e mais focada no
             trabalho do artesão; depois a fase <strong>Manufatureira</strong>, com alguma divisão do trabalho e
             introdução de máquinas simples; até a fase <strong>moderna</strong> com a presença de tecnologia avançada
             como robotização e informática. O Brasil também teve seu histórico particular nesse processo de
             industrialização, que marcou e ainda marca seu território ainda hoje.</p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2>Economia agroexportadora </h2>
-
-
-
-
-        <p> O Brasil viveu séculos como um país eminentemente agrário, com uma economia agrária voltada para o comércio
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Economia agroexportadora </h2>
+<p> O Brasil viveu séculos como um país eminentemente agrário, com uma economia agrária voltada para o comércio
             externo. Iniciada no século XVI com a colonização promovida pelos portugueses com o objetivo de exportar
             riquezas para a Europa, formando uma elite ligada às grandes propriedades de terra, ao trabalho escravo e a
             exportação de bens primários, como cana-de-açúcar e do algodão no Nordeste e extração do látex na Amazônia.
         </p>
-
-        <p> Esse modelo agrário-exportador imposto pelos colonizadores durante mais de três séculos foi um dos fatores
+<p> Esse modelo agrário-exportador imposto pelos colonizadores durante mais de três séculos foi um dos fatores
             impeditivos para o desenvolvimento da atividade manufatureira no Brasil, conforme texto abaixo:</p>
-
-
-        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-            <p> "O obstáculo definitivo para a indústria no Brasil foi a produção de gêneros agrícolas em alta escala
+<div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+<p> "O obstáculo definitivo para a indústria no Brasil foi a produção de gêneros agrícolas em alta escala
                 para o exterior, molda do sistema colonial. Constitua-se a grande empresa, trabalhada pelo escravo no
                 latifúndio. As propriedades territoriais eram entidades autónomas, isoladas umas das outras. De
                 exigências modestas, dispensavam intercâmbio. O básico é obtido no mundo rural. A autossuficiência
@@ -284,936 +141,366 @@
                 manufatureiro. [...]"
                 <span class="w3-small w3-sand">(IGLESIAS Fernando. A industrialização brasileira. São Paulo:
                     Brasiliense, 1985, p. 20-27.).</span>
-            </p>
-        </div>
-
-
-
-
-        <p> Como visto, o território foi organizado para ser um arquipélago econômico. Arquipélago é um substantivo
+</p>
+</div>
+<p> Como visto, o território foi organizado para ser um arquipélago econômico. Arquipélago é um substantivo
             coletivo para um conjunto de ilhas. Nesse caso, o Brasil foi marcado para possuir algumas “ilhas” de
             produção sem comunicação entre si com transporte deficiente em benefício do colonizador europeu.</p>
-
-
-        <p>A atividade industrial, portanto, só iria se iniciar no final do século XIX, com o surgimento de indústrias
+<p>A atividade industrial, portanto, só iria se iniciar no final do século XIX, com o surgimento de indústrias
             voltada para a produção de bens de consumo duráveis, como tecidos, roupas, calçados, alimentos e bebidas.
             Antes tudo isso era importado da metrópole portuguesa. </p>
-
-
-        <p>Isso porque com a mão de obra escrava, não havia um mercado consumidor amplo. Além disso, os principais
+<p>Isso porque com a mão de obra escrava, não havia um mercado consumidor amplo. Além disso, os principais
             dirigentes do país à época estavam ligados as oligarquias agrárias, que não tinham muito interesse nos
             investimentos em atividades urbanas. </p>
-
-        <p>Nessa época, mais um ciclo econômico surgiu com o Café e com ele uma grande acumulação de capital, riqueza e
+<p>Nessa época, mais um ciclo econômico surgiu com o Café e com ele uma grande acumulação de capital, riqueza e
             poder. Uma elite de cafeicultores paulistas comandavam o cenário político na era recente da primeira
             república. Dessa forma, o Brasil ingressou no século XX ocupando uma posição de nação agroexportadora na
             Divisão Internacional do Trabalho. </p>
-
-        <p> Esse cenário que parecia imutável por séculos, começou a se modificar com a vinda dos imigrantes a partir de
+<p> Esse cenário que parecia imutável por séculos, começou a se modificar com a vinda dos imigrantes a partir de
             1850 e com o fim da escravidão e o surgimento do trabalho assalariado, o qual gerou uma mercado consumidor
             ainda pouco expressivo.</p>
-
-
-        <p>Por que a indústria ficou concentrada no Sudeste? </p>
-
-
-        <p> Há vários fatores naturais, técnicos e políticos para o predomínio de São Paulo e Rio de Janeiro como
+<p>Por que a indústria ficou concentrada no Sudeste? </p>
+<p> Há vários fatores naturais, técnicos e políticos para o predomínio de São Paulo e Rio de Janeiro como
             regiões pioneiras do processo de industrialização. Sabemos que o Brasil era essencialmente agrário até o
             final do século XIX, vejamos como os mapas representam esse cenário:</p>
-
-        <div class="w3-margin"><img id="imagem2" src="ts09f02.png" alt="ts09f02" class="w3-mobile">
-            <span class="w3-small w3-margin-left" id="citacao2"> Fonte: FRANK (2018). </span>
-        </div>
-
-
-        <div class="w3-margin w3-panel w3-card-4 w3-yellow w3-padding-small">
-            <p>Pelos mapas, vemos, dentre outras coisas, que o território era desarticulado até por volta de 1940 e
+<div class="w3-margin"><img alt="ts09f02" class="w3-mobile" id="imagem2" src="ts09f02.png"/>
+<span class="w3-small w3-margin-left" id="citacao2"> Fonte: FRANK (2018). </span>
+</div>
+<div class="w3-margin w3-panel w3-card-4 w3-yellow w3-padding-small">
+<p>Pelos mapas, vemos, dentre outras coisas, que o território era desarticulado até por volta de 1940 e
                 depois ocorre uma expansão da integração nacional sob o comando do Sudeste. Por que ocorreu isso? Alguns
                 fatos explicam essa configuração territorial:</p>
-
-            <ul>
-                <li>
+<ul>
+<li>
                     disponibilidade de capital fornecido pela cafeicultura: presença de bancos e de uma estrutura
                     comercial:
                 </li>
-
-                <li>
+<li>
                     energia elétrica (as duas cidades, São Paulo e Rio de Janeiro, receberam eletrificação entre os anos
                     de 1889 e 1905): implantação de uma rede ferroviária eficiente.
                 </li>
-
-                <li>
+<li>
                     mão-de-obra fornecida por imigrantes europeus.
                 </li>
-
-                <li>
+<li>
                     O mercado consumidor, porque o dinheiro do café havia se concentrado no Sudeste, formando uma elite
                     econômica e uma crescente classe média que vivia em ambas as cidades.
                 </li>
-
-                <li>
+<li>
                     o papel do solo, marcado pelo derrabe basáltico e do clima tropical de altitude em grande parte.
                 </li>
-
-
-            </ul>
-
-        </div>
-
-
-
-
-        <p>Os censos indústrias da época demonstram essa hegemonia do Sudeste. Um levantamento feito em 1920 revela que,
+</ul>
+</div>
+<p>Os censos indústrias da época demonstram essa hegemonia do Sudeste. Um levantamento feito em 1920 revela que,
             do total da produção industrial brasileira na época, 65.3% concentravam-se na região. São Paulo detinha
             31.5% das indústrias, o Rio de Janeiro, então capital do país, contava com 28,2% dos estabelecimentos
             industriais, e Minas Gerais abrigava 5.69% do total. </p>
-
-        <p> As três primeiras décadas do século XX foram marcadas por algum crescimento industrial no Brasil graças à
+<p> As três primeiras décadas do século XX foram marcadas por algum crescimento industrial no Brasil graças à
             disponibilidade de capital oriundo da cafeicultura, à expansão urbana, a chegada das ferrovias, entre outros
             fatores. Por isso, o processo de industrialização brasileiro é considerado tardio, porque ocorreu
             efetivamente mais de cem anos depois da Revolução Industrial, iniciada na Inglaterra no século XVIII e que
             prosseguiu em diferentes países europeus e nos Estados Unidos. Dessa forma, o país tornou-se profundamente
             dependente dessas nações em termos econômicos e tecnológicos.</p>
-
-        <p>Em 1929, ocorreu a quebra da Bolsa de Nova York, que levou as exportações de café brasileiro a um quadro
+<p>Em 1929, ocorreu a quebra da Bolsa de Nova York, que levou as exportações de café brasileiro a um quadro
             caótico, sem precedentes, e resultou na falência de inúmeros fazendeiros. Nesse contexto de dificuldades
             econômicas, Getúlio Vargas ascendeu ao poder, com a vitória da Revolução de 30. Com a crise, o modelo
             político e econômico precisava mudar. </p>
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> A Política de substituição de importações</h2>
-
-
-
-
-        <p>A Política econômica de substituição de importações objetivava produzir internamente tudo aquilo que antes
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> A Política de substituição de importações</h2>
+<p>A Política econômica de substituição de importações objetivava produzir internamente tudo aquilo que antes
             era importado a fim de fomentar a indústria nacional. </p>
-
-        <p>Alguns fatores importantes foram fundamentais para o desenvolvimento da indústria no Brasil. O primeiro foi a
+<p>Alguns fatores importantes foram fundamentais para o desenvolvimento da indústria no Brasil. O primeiro foi a
             ascensão do governo de Getúlio Vargas (1930-45), que promoveu a destituição da oligarquia agroexportadora
             que dominou a vida política e econômica do Brasil dura a primeira fase da República (1889-1930). </p>
-
-        <p>Do ponto de vista econômico, o referencial teórico que fundamentava as decisões do governo estava ligado à
+<p>Do ponto de vista econômico, o referencial teórico que fundamentava as decisões do governo estava ligado à
             intervenção do Estado na economia, aliado a um sentimento nacionalista. </p>
-
-
-        <p>A partir disso, o governo criou grandes empresas públicas consideradas estratégicas para o avanço da
+<p>A partir disso, o governo criou grandes empresas públicas consideradas estratégicas para o avanço da
             indústria: A Companhia Vale do Rio Doce – atual Vale -, criada em 1942, para atuar na exploração de minério
             de ferro, em Minas Gerais, na área do Quadrilátero ferrífero; a Companhia Siderúrgica Nacional – CSN -,
             inaugurada em 1946, no município de Volta Redonda, no Estado do Rio de Janeiro; e a Petrobrás, fundada em
             1953, uma empresa ligada à pesquisa e prospecção de petróleo, no segundo mandato do governo Vargas. E o
             Banco Nacional de Desenvolvimento Econômico e Social – BNDES encarregado por financiar os investimentos a
             longo prazo dessas infraestruturas.</p>
-
-
-
-        <div class="w3-margin" style='transform:rotate(-5deg)'><img id="imagem3" src="ts09f03.png" alt="ts09f03"
-                class="w3-mobile">
-
-
-        </div>
-        <span class="w3-small w3-margin-left" id="citacao3"> Fonte: Organizado pelo autor. </span>
-
-
-
-
-
-        <p>Para criar as condições para que a indústria se expandisse no Brasil e pudesse atender à demanda interna, o
+<div class="w3-margin" style="transform:rotate(-5deg)"><img alt="ts09f03" class="w3-mobile" id="imagem3" src="ts09f03.png"/>
+</div>
+<span class="w3-small w3-margin-left" id="citacao3"> Fonte: Organizado pelo autor. </span>
+<p>Para criar as condições para que a indústria se expandisse no Brasil e pudesse atender à demanda interna, o
             Estado passou a facilitar a importação de máquinas e equipamentos, mas restringiu, por outro lado, a
             importação de produtos industrializados. </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> Economia urbano-industrial</h2>
-
-
-
-
-        <p> A transição de uma economia agroexportadora em direção à economia urbano-industrial ocorreu através da
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Economia urbano-industrial</h2>
+<p> A transição de uma economia agroexportadora em direção à economia urbano-industrial ocorreu através da
             abertura ao capital estrangeiro.</p>
-
-        <p>Essa transição ocorreu a partir da década de 1950, com o <strong>Plano de Metas</strong> de Juscelino
+<p>Essa transição ocorreu a partir da década de 1950, com o <strong>Plano de Metas</strong> de Juscelino
             Kubitschek, após o acúmulo de capitais derivados da política de substituições de importação e com o avanço
             da internacionalização da economia, o país consolidava o modelo de consumo, o crescimento das cidades e das
             indústrias. Lembra que foi JK quem transferiu a capital federal do Rio de Janeiro para Brasília buscando
             promover à ocupação do interior do território. </p>
-
-        <p>A industrialização deveria ser alcançada a qualquer custo, do jeito que fosse possível, amparado nas elites,
+<p>A industrialização deveria ser alcançada a qualquer custo, do jeito que fosse possível, amparado nas elites,
             nos intelectuais e no povo, formou-se uma política submissa aos interesses das grandes empresas
             estrangeiras. Foi no governo de Juscelino Kubitschek, (1956-1960), que esse modelo se instaurou através do
             tripé econômico: capital privado nacional, capital privado internacional (as multinacionais) e intervenção
             do Estado. </p>
-
-
-        <p>Dessa forma, o processo de industrialização do país ingressou em uma nova fase, marcada pela crescente
+<p>Dessa forma, o processo de industrialização do país ingressou em uma nova fase, marcada pela crescente
             presença de empresas multinacionais, voltadas principalmente para a produção de bens de consumo duráveis,
             como automóveis, eletrodomésticos, transportes, comunicações etc. </p>
-
-
-        <p>O Brasil, diante desse cenário, é caracterizado como uma país de industrialização tardia, tendo em vista que
+<p>O Brasil, diante desse cenário, é caracterizado como uma país de industrialização tardia, tendo em vista que
             seu processo de industrialização se concretizou após quase dois séculos do início da Revolução Industrial na
             Europa. </p>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2> O período militar e o endividamento externo</h2>
-
-
-
-
-        <p>A partir de 1950, o Brasil ainda era um país pouco industrializado, e o dinheiro para realizar diversas obras
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2> O período militar e o endividamento externo</h2>
+<p>A partir de 1950, o Brasil ainda era um país pouco industrializado, e o dinheiro para realizar diversas obras
             como indústrias de aço, hidrelétricas, estradas, dentre outras, vieram de empréstimos internacionais,
             agravados pelas crises seguintes de 1980 e 1990. </p>
-
-        <p> Após JK, o governo no Brasil entrou em um período conturbado, com a renúncia de Jânio Quadros e com o
+<p> Após JK, o governo no Brasil entrou em um período conturbado, com a renúncia de Jânio Quadros e com o
             governo de João Goulart (1961-64) que perdurou até o golpe de Estado de 1964.</p>
-
-        <p> Com o regime militar houve um grande aumento do endividamento do país de cerca de 3,7 bilhões de dívida
+<p> Com o regime militar houve um grande aumento do endividamento do país de cerca de 3,7 bilhões de dívida
             externa no início do regime e de aproximadamente 95 bilhões ao término desse período em 1985. O PIB do
             Brasil passou de 43º no mundo para 9º. O país cresceu muito nesse tempo, mas com consequências sociais e
             políticas.</p>
-
-
-        <p>O parque industrial se desenvolveu de forma significativa e a infraestrutura de transportes, energia e
+<p>O parque industrial se desenvolveu de forma significativa e a infraestrutura de transportes, energia e
             telecomunicações se modernizou. </p>
-
-
-        <p>O capital estrangeiro entrou em vários setores da economia, principalmente na extração de minerais metálicos
+<p>O capital estrangeiro entrou em vários setores da economia, principalmente na extração de minerais metálicos
             em Carajás, Trombetas e Jari; nas indústrias químicas e farmacêuticas e na fabricação de bens de capital
             utilizados pelas indústrias de bens de consumo. </p>
-
-
-        <p>Esse período é conhecido pelos historiadores como “Milagre econômico”, com crescimento elevado do PIB, mas
+<p>Esse período é conhecido pelos historiadores como “Milagre econômico”, com crescimento elevado do PIB, mas
             também com a diminuição do poder de compra por parte dos trabalhadores. </p>
-
-        <p> Com a crise do petróleo, dentre outras, no final da década, os investimentos externos foram reduzidos e a
+<p> Com a crise do petróleo, dentre outras, no final da década, os investimentos externos foram reduzidos e a
             economia brasileira teve de arcar com o pagamento dos juros da dívida externa.</p>
-
-        <p> O lema era exportar a qualquer custo e na busca por <span
-                onclick="document.getElementById('superavit').style.display='block'" class="w3-yellow">superávit</span>,
+<p> O lema era exportar a qualquer custo e na busca por <span class="w3-yellow" onclick="document.getElementById('superavit').style.display='block'">superávit</span>,
             o país aumentou os impostos de importação e, assim, reduziu a competitividade do parque industrial
             brasileiro diante do exterior ao longo dos anos 1980.</p>
-
-        <div id="superavit" class="w3-modal w3-margin-top">
-            <div class="w3-modal-content">
-                <div class="w3-container w3-padding">
-                    <span onclick="document.getElementById('superavit').style.display='none'"
-                        class="w3-button w3-red w3-display-topright">&times;</span>
-                    <p> Em economia ou contabilidade nacional, quando há uma diferença positiva entre receita e despesa
+<div class="w3-modal w3-margin-top" id="superavit">
+<div class="w3-modal-content">
+<div class="w3-container w3-padding">
+<span class="w3-button w3-red w3-display-topright" onclick="document.getElementById('superavit').style.display='none'">×</span>
+<p> Em economia ou contabilidade nacional, quando há uma diferença positiva entre receita e despesa
                         na balança comercial de um país, esta passa a ser superavitária, sobrando, ao país, capital para
                         ser reinvestido no seu sistema financeiro.
 
 
                     </p>
-
-                </div>
-            </div>
-        </div>
-
-
-        <p> Na próxima aula vamos conhecer o que ocorreu com a indústria no Brasil no período de abertura econômica e
+</div>
+</div>
+</div>
+<p> Na próxima aula vamos conhecer o que ocorreu com a indústria no Brasil no período de abertura econômica e
             desconcentração industrial.</p>
-
-
-        <div class="w3-panel w3-green">
-            <h3>Saiba mais!</h3>
-            <h4>Depois da tempestade, vem o “milagre”</h4>
-            <p>Do ponto de vista da industrialização brasileira propriamente dita, o golpe de 1964 não trouxe nenhuma
+<div class="w3-panel w3-green">
+<h3>Saiba mais!</h3>
+<h4>Depois da tempestade, vem o “milagre”</h4>
+<p>Do ponto de vista da industrialização brasileira propriamente dita, o golpe de 1964 não trouxe nenhuma
                 mudança nos rumos por ela tomada desde 1955. Muito pelo contrário, o papel da ditadura militar foi o de
                 consolidar o modelo econômico implantado nos anos 1950, aperfeiçoando-o. Logo, a primeira característica
                 da industrialização brasileira dessa época foi a permanência das diretrizes estabelecidas pelo Plano de
                 Metas, mantendo-se o tripé inaugurado nos anos 1950 a pleno vapor.</p>
-            <p>A história da economia e da industrialização brasileiras do pós-64 pode ser dividida em três períodos: a)
+<p>A história da economia e da industrialização brasileiras do pós-64 pode ser dividida em três períodos: a)
                 <strong>1962-1967</strong> – fase caracteriza como de crise e recessão; b) <strong>1968-1974</strong> –
                 fase de retomada do crescimento industrial, vulgarmente conhecida como “milagre econômico brasileiro”,
                 em virtude das elevadas taxas de crescimento de nossa economia; c) de <strong>1974 até o presente
                     (1992)</strong> – fase em que o “milagre” entrou em total e completo declínio, sem que as várias
                 saídas tentadas tenham conseguido grande sucesso.
             </p>
-
-
-        </div>
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-
-        <h4>O modelo de industrialização brasileira é considerado:</h4>
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
-
-            a) moderno.
-
-        </button>
-
-
-
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">
-
-            b) estatal.
-
-
-        </button>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'o processo de industrialização brasileiro ocorreu quase dois séculos mais tarde do que os países desenvolvidos do mundo','2'); this.style.backgroundColor='lightgreen'">
-
-            c) tardio.
-
-        </button>
-
-
-        <p id="resp1"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-        <h4>Na era Vargas e com a economia fortemente intervencionista, a industrialização brasileira baseou-se na:</h4>
-
-
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            a) fabricação de armamentos militares.
-        </button>
-
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'devido a Segunda Guerra Mundial houve grande dificuldade de importação de bens industrializados do exterior','2'); this.style.backgroundColor='lightgreen'">
-
-            b) política de substituição das importações.
-
-        </button>
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            c) produção de artigos de alta tecnologia.
-        </button>
-
-
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <p class="caixa"> Teste seu conhecimento</p>
-
-
-        <h4>No governo JK, o aspecto central da industrialização brasileira pode ser destacada a partir do(a):</h4>
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'os investimentos estrangeiros priorizavam a indústria automobilística, estradas de ferro, eletricidade e aço no Brasil','2'); this.style.backgroundColor='lightgreen'">
-
-            a) elevado investimento do capital estrangeiro;
-
-        </button>
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            c) acumulação do capital advindo da cafeicultura paulista.
-
-        </button>
-
-
-
-
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            c) Formação de chuvas ácidas.
-
-        </button>
-
-
-
-
-
-
-
-        <p id="resp3"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>O modelo de industrialização brasileira é considerado:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p1a" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1a">
+<span>a) moderno.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1b" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1b">
+<span>b) estatal.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1c" name="pergunta1" type="radio" value="correto"/>
+<label class="card-opcao" for="p1c">
+<span>c) tardio.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o processo de industrialização brasileiro ocorreu quase dois séculos mais tarde do que os países desenvolvidos do mundo', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp1"></p>
+<div class="area w3-center">
+<img height="64" id="globinho1" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Na era Vargas e com a economia fortemente intervencionista, a industrialização brasileira baseou-se na:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p2a" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2a">
+<span>a) fabricação de armamentos militares.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2b" name="pergunta2" type="radio" value="correto"/>
+<label class="card-opcao" for="p2b">
+<span>b) política de substituição das importações.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2c" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2c">
+<span>c) produção de artigos de alta tecnologia.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'devido a Segunda Guerra Mundial houve grande dificuldade de importação de bens industrializados do exterior', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp2"></p>
+<div class="area w3-center">
+<img height="64" id="globinho2" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>No governo JK, o aspecto central da industrialização brasileira pode ser destacada a partir do(a):</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p3a" name="pergunta3" type="radio" value="correto"/>
+<label class="card-opcao" for="p3a">
+<span>a) elevado investimento do capital estrangeiro;</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3b" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3b">
+<span>b) acumulação do capital advindo da cafeicultura paulista.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3c" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3c">
+<span>c) Formação de chuvas ácidas.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'os investimentos estrangeiros priorizavam a indústria automobilística, estradas de ferro, eletricidade e aço no Brasil', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp3"></p>
+<div class="area w3-center">
+<img height="64" id="globinho3" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
             Por que se fala que a industrialização do Brasil foi dependente?
             </strong> </p>
+<p><span class="primeiraLetra">R:</span>
 
-        <p><span class="primeiraLetra">R:</span>
-
-            A teoria da dependência surgiu após o esgotamento da teoria da substituição das importações na era JK, com a entrada de indústrias automotivas internacionais, dentre outras. Essa teoria diz que o subdesenvolvimento dos países como o Brasil, México, África do Sul etc. além do processo de colonização era também resultado do interesse do centro do capitalismo e das elites do próprio país em manter esses países produzindo bens primários.<br>A ideia é a de que os países subdesenvolvidos, porém industrializados como o Brasil, não estão no mesmo patamar de igualdade com os países desenvolvidos, onde fornecem matérias-primas e recebem produtos industrializados, criando uma relação de dependência.
+            A teoria da dependência surgiu após o esgotamento da teoria da substituição das importações na era JK, com a entrada de indústrias automotivas internacionais, dentre outras. Essa teoria diz que o subdesenvolvimento dos países como o Brasil, México, África do Sul etc. além do processo de colonização era também resultado do interesse do centro do capitalismo e das elites do próprio país em manter esses países produzindo bens primários.<br/>A ideia é a de que os países subdesenvolvidos, porém industrializados como o Brasil, não estão no mesmo patamar de igualdade com os países desenvolvidos, onde fornecem matérias-primas e recebem produtos industrializados, criando uma relação de dependência.
 
         </p>
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
             Quais são as fórmulas econômicas mais utilizadas para industrializar um país?
 
 
             </strong></p>
+<p><span class="primeiraLetra">R:</span>
 
-        <p><span class="primeiraLetra">R:</span>
+            Existem diversas formas de teorizar e aplicar uma fórmula econômica, a depender das regras do sistema proposto. No sistema capitalista, as variáveis giram, grosso modo, em torno do lucro e do trabalho assalariado e pela lei de oferta e procura. Dentro desse sistema, temos, de modo geral, grandes formas e suas variações que englobam várias visões de mundo sobre o que seria um bom caminho para a economia e, consequentemente, para a industrialização. Temos a forma da economia neoliberal e a economia desenvolvimentista.<br/>
 
-            Existem diversas formas de teorizar e aplicar uma fórmula econômica, a depender das regras do sistema proposto. No sistema capitalista, as variáveis giram, grosso modo, em torno do lucro e do trabalho assalariado e pela lei de oferta e procura. Dentro desse sistema, temos, de modo geral, grandes formas e suas variações que englobam várias visões de mundo sobre o que seria um bom caminho para a economia e, consequentemente, para a industrialização. Temos a forma da economia neoliberal e a economia desenvolvimentista.<br>
-
-            A forma neoliberal baseia-se na suposição de que o mecanismo de preços deveria ser respeitado como o fator determinante da economia. Isso significa que o Estado controlaria o mínimo possível as medidas fiscais e monetárias, por exemplo.<br>
+            A forma neoliberal baseia-se na suposição de que o mecanismo de preços deveria ser respeitado como o fator determinante da economia. Isso significa que o Estado controlaria o mínimo possível as medidas fiscais e monetárias, por exemplo.<br/>
             
             Por outro lado, temos a visão desenvolvimentista nacionalista, como a de Vargas, O Estado interviria mais diretamente por meio de empresas estatais e das empresas de economia mista, como o Banco do Brasil, no sentido de assegurar as áreas que deveriam receber investimentos.
             
 
         </p>
-
-
-
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
             Qual a posição do Brasil perante os outros países do Mundo?
 
             </strong></p>
+<p><span class="primeiraLetra">R:</span>
 
-        <p><span class="primeiraLetra">R:</span>
+            Essa questão remete à Divisão Internacional do Trabalho (DIT), que busca entender como são caracterizados o conjunto de países de acordo com a produção industrial, dentre outras coisas.<br/>
 
-            Essa questão remete à Divisão Internacional do Trabalho (DIT), que busca entender como são caracterizados o conjunto de países de acordo com a produção industrial, dentre outras coisas.<br>
-
-            Até a década de 1960, a velha DIT se referia aos países do Norte como os responsáveis pelo fornecimento de produtos industrializados e os do Sul, pelos produtos primários, como minérios e produtos agrícolas. Com o passar do tempo, surgiram países, como o Brasil, México e Coréia do Sul, Hong Kong, Taiwan, Singapura, Índia, etc. que reorganizaram seu espaço produtivo e foram caracterizados de Países recentemente industrializados.<br>
+            Até a década de 1960, a velha DIT se referia aos países do Norte como os responsáveis pelo fornecimento de produtos industrializados e os do Sul, pelos produtos primários, como minérios e produtos agrícolas. Com o passar do tempo, surgiram países, como o Brasil, México e Coréia do Sul, Hong Kong, Taiwan, Singapura, Índia, etc. que reorganizaram seu espaço produtivo e foram caracterizados de Países recentemente industrializados.<br/>
             
             Alguns desses países favorecem a entrada de multinacionais em seu território e melhoraram suas exportações. Outros investiram em bens de capital como o Brasil e em infraestrutura. O importante é lembrar que a análise sobre um país está intimamente ligada aos interesses do capitalismo mundial, dos governos locais, dos fatores naturais e das características próprias de cada povo com seu território, não se trata de simples comparação entre um país e outro, pois há história e geografias diferentes entre cada país no mundo.
             
         </p>
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
-        <br><br>
-
-
-
-
-
-
-
-        <hr>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
-            <h2> <strong>Desafio - Jornada do herói: A Travessia do Primeiro Limiar </strong></h2>
-
-            <h4>
-                Na aula passada, vimos A Travessia do Primeiro Limiar, que é o momento (sem volta) que o herói se
-                compromete com sua jornada.<br>
-
-                Agora, vamos conhecer os Testes, Aliados e Inimigos, quando o herói entra por completo no Mundo Especial
-                misterioso e excitante, onde ele deve sobreviver a uma sucessão de provações. <br>
-
-
-                Como sempre, formem seus grupos e use a criatividade para lidar com esse desafio.
-            </h4>
-        </div>
-
-
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding">
-            <h3><strong>Instruções</strong> </h3>
-            <ul>
-
-                <li>Forme um grupo com 5-6 estudantes;</li>
-
-                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
-
-                <li> Faça anotações em seu caderno;</li>
-
-                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
-
-                <li>Tempo da atividade: 25 minutos.</li>
-
-            </ul>
-
-        </div>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
-
-            <h4><strong>Testes, Aliados, Inimigos (6)</strong></h4>
-
-            <p>Independente da experiência pregressa do herói, ele se encontra agora em um novo mundo do qual ele não
-                domina suas regras básicas. Veja o texto a seguir:</p>
-
-            <p>Leia a passagem abaixo:</p>
-
-
-
-
-            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                <p>“Nós, os Buscadores, estamos em estado de choque - este mundo é tão diferente de tudo o que sempre
-                    conhecemos... Não apenas o terreno e os habitantes locais são diferentes, mas as regras deste lugar
-                    são as mais estranhas que se possa imaginar. Aqui, se valorizam coisas diferentes, e temos muito o
-                    que aprender sobre a moeda local, os costumes, a linguagem. Criaturas estranhas saltam em cima de
-                    você! Pense rápido! Não coma isso, pode ser veneno!<br>
-
-                    Exaustos pela jornada através da desolada zona do Limiar, sentimo-nos sem tempo e sem energia.
-                    Lembremos que nossa gente, lá na Nossa Tribo, conta conosco. Não estamos aqui para fazer turismo,
-                    temos que nos concentrar na nossa meta. Temos que ir para onde haja comida e informação, chegar ao
-                    lugar onde se joga o jogo. E lá que nossa capacidade será testada. Vamos nos aproximar do que
-                    buscamos”.
-                </p>
-
-            </div>
-
-
-
-            <h4><strong>Contraste</strong></h4>
-
-            <p>As primeiras impressões que o público deve ter do Mundo Especial é o seu contraste com o Mundo Comum. O
-                Mundo especial pode ser encarado no sentido figurado, ou seja, metaforicamente. Quando um adolescente
-                vai ingressar na vida adulta ou quando um príncipe decide não seguir os ditames da família real para ser
-                o novo rei.</p>
-
-            <p>Também pode existir um limiar físico como quando um submarino mergulha em outra região, ou um trem parte
-                para alguma estação e até mesmo quando uma nave espacial deixa a Terra e passa a conviver com um outro
-                mundo com regras diferentes.</p>
-
-            <p>Na construção da história do nosso jogo podemos utilizar esses recursos para ajudar nosso herói a atingir
-                seu objetivo.</p>
-
-
-
-            <h4><strong>Testes</strong></h4>
-
-            <p>A função mais importante desse período de adaptação ao Mundo Especial são os testes. O herói é desafiado
-                a cumprir tarefas, aparentemente impossíveis, e junto com os aliados enfrentam esses obstáculos. Uma
-                experiência em uma prova final para universidade ou a entrada em uma indústria para recuperar um
-                artefato importante. São tarefas que irão preparar os heróis para atividades mais perigosas que ainda
-                estão por vir.</p>
-
-            <p>Os testes podem ser uma continuação do treinamento do Mentor. Eles podem acompanhar os heróis até esse
-                ponto da jornada, fornecendo instruções necessários para os grandes embates que se aproximam.</p>
-
-            <p>Os testes do Mundo Especial procuram fazer com que o heróis caia em armadilhas, geralmente arquitetado por
-                uma vilão.</p>
-
-
-
-
-            <h4><strong>Aliados</strong></h4>
-
-            <p>Os heróis podem entrar no estágio dos testes procurando informações, mas podem sair com novos amigos e
-                aliados. Kratos, em <em>God of War Ragnarok</em>, possui aliados como os anões, Freya e a cabeça Mimir,
-                após ter libertado esse último de um feitiço de Odin. Podemos dizer que Mimir é um companheiro, pois
-                possui um vínculo duradouro para o desenrolar da história no jogo.</p>
-
-            <p>Os aliados podem dar um alívio cômico as vezes, além de prestarem assistência ao herói.</p>
-
-            <h4><strong>Equipes</strong></h4>
-
-            <p>O estágio dos testes também dá oportunidade para se formarem equipes, como nos jogos da Marvel ou Star
-                Wars, tanto o jogo como os filmes. Uma equipe pode ser recrutada para ajudar os heróis ou para continuar
-                sua jornada, a exemplo do jogo <em>Gotham Knights</em> com personagens como Batgirls, Capuz vermelho,
-                Asa noturna e Robin.</p>
-
-            <h4><strong>Inimigos</strong></h4>
-
-            <p>Os heróis também podem fazer inimizades neste estágio. O aparecimento do herói no Mundo Especial pode
-                chamar à atenção do Vilão e, assim, desencadear uma série de eventos. Como o conflito de Hans Solo e Luke
-                Skywalker e o vilão Jabba em Stars Wars ou Kratos versus Thor. As inimizades incluem os capangas, o
-                Guardião do Limiar, dentre outros.</p>
-
-            <h4><strong>Rival</strong></h4>
-
-            <p>Um tipo especial de inimigo é o Rival. Ele não quer destruir o herói, mas vai competir com ele em todas
-                as oportunidades.</p>
-
-            <h4><strong>Novas regras</strong></h4>
-
-            <p>O herói e o público têm que aprender rapidamente as novas regras do Mundo Especial. É muito comum nesse
-                ponto nos filmes ou nos jogos que o herói entra em uma cidade ou bar e ele aprende como funciona o
-                lugar.</p>
-
-            <p>O herói pode entrar em um bar e descobrir que a cidade está totalmente polarizada entre duas facções,
-                criadores de gado contra povos tradicionais, conservacionista contra destruidores do meio ambiente,
-                dentre outros.</p>
-
-            <p>O bar pode ser um microcosmo do Mundo Especial, onde o herói pode sentir o que está por vir, fazer amigos
-                e, sobretudo, inimigos, tal como em <em>Red Dead Redemption 2</em> na figura de Arthur Morgan, que
-                precisa lidar com o declínio do Velho Oeste e sobreviver à perseguição de forças governamentais.</p>
-
-            <p>Com a ajuda dos aliados, o herói está pronto para se aproximar da Caverna Oculta que o aguarda. Tema da
-                próxima aula.</p>
-
-
-
-            <h4><strong>Questões para pensar na história do jogo:</strong></h4>
-
-            <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                <p> - Em que o Mundo Especial da sua história é diferente do Mundo Comum? Como você pode aumentar esse
-                    contraste?</p>
-
-                <p> - De que modo o herói é testado? Como faz Aliados e Inimigos? As necessidades da história é que
-                    ditam quando é conveniente fazer alianças.
-
-                </p>
-
-                <p> - Como seu herói reage ao Mundo Especial, com suas regras estranhas e pessoas diferentes? </p>
-
-                <p> - Seu herói é um personagem solitário ou participa de um grupo, uma família ou turma?</p>
-            </div>
-
-
-
-
-            <!-- <h4><strong>Guardiões do Limiar</strong></h4>
-
-         
-
-                <h4><strong>Mentor em pessoa</strong></h4>
-
-
-
-                 <h4><strong>Evitando os clichês de Mentor</strong></h4> -->
-
-
-
-
-
-        </div>
-
-
-
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this); MostrarFrase('respFinal','globinho3', '', 'esse desafio foi bem tranquilo, você já pode finalizar sua lição','4');this.style.display='none'">Proximo</button>
-
-
-        <p id="respFinal"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
-                    alt="globinhorespFinal" width="64" height="64">
-            </p>
-        </div>
-        <hr>
-
-    </div>
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span> -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 w3-blue">
-
-                <a href="https://www.portaldaindustria.com.br/cni/institucional/#carrossel" target="_blank">
-                    Confederação Nacional da Indústria – CNI
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-        <p>FRANK, Bruno José Rodrigues. <strong>Geografia econômica</strong>. Londrina: Editora e Distribuidora
-            Educacional S.A., 2018.</p>
-
-
-        <p>SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante</strong>: geografia do Brasil:
-            aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008.</p>
-
-
-        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. – São
-            Paulo: Ática, 2013.
-        </p>
-
-        <p>
-            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
-            Tradução de
-            Ana Maria Machado. -
-            2.ed. Rio de Janeiro: Nova Fronteira, 2006.
-        </p>
-
-        <p>SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
-            narrative
-            techniques.New Yoirk: Watson-Guptill, 2014.</p>
-
-
-
-
-
-
-
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        // function numButton() {
-        //     numB++;
-        //     document.getElementById("numero").innerHTML = numB;
-        //     console.log(numB);
-        // }
-
-
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                // numButton();
-                ApagaButton();
-                RemoveBalancarGlobo();//retirar no Kodular
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-        }
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 12);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-
-    </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-
-
-
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+<br/><br/>
+<hr/>
+</div>
+<div class="topico">
+<h3>Antes de finalizar, vamos fazer as questões!</h3>
+<button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+<p id="respFinal"></p>
+<div class="area">
+<p><img alt="globinhorespFinal" height="64" id="globinhorespFinal" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/></p>
+</div>
+<hr/>
+</div>
+<!-- TÓPICO FINALIZAR -->
+<div class="topico">
+<button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+</div>
+<div class="bibliografias w3-content w3-padding-64" id="final-da-aula" style="max-width:700px">
+<hr/>
+<h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+<div class="w3-row-padding" id="links-gerados"></div>
+<div class="w3-container w3-padding-64">
+<h3 class="fontePixel w3-center w3-text-green">
+<strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+</h3>
+<div id="biblio-gerada"></div>
+</div>
+<br/><br/>
+<div class="w3-padding-48">
+<span id="numero"></span>
+<span id="txtBarra">0%</span>
+<progress id="progress" max="100" value="0"></progress>
+</div>
+</div></main>
+<div id="footer-placeholder"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
 </body>
-
 </html>

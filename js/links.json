@@ -1,50 +1,194 @@
 {
-    "ACNURVenezuela": {
-        "texto": "Crise migratória venezuelana — ACNUR",
-        "url": "https://www.acnur.org/br/emergencias/venezuela",
-        "cor": "w3-deep-orange",
-        "corTexto": "w3-text-white"
-    },
-    "BrasilEscolaDIT": {
-        "texto": "Divisão Internacional do Trabalho — Brasil Escola",
-        "url": "https://brasilescola.uol.com.br/geografia/divisao-internacional-trabalho-dit.htm",
-        "cor": "w3-green",
-        "corTexto": "w3-text-white"
-    },
-    "BBCGuerrilhas": {
-        "texto": "Guerrilhas na América Latina — BBC Brasil",
-        "url": "https://www.bbc.com/portuguese/articles/c8jry8z4j0po",
-        "cor": "w3-green",
-        "corTexto": "w3-text-white"
-    },
-    "CNNBrasilCuba": {
-        "texto": "Revolução Cubana enfrenta a maior ameaça da sua história",
-        "url": "https://www.bbc.com/portuguese/articles/cvgkkn5g3ymo",
-        "cor": "w3-white",
-        "corTexto": "w3-text-black"
-    },
-    "KardiaMeioTecnico": {
-        "texto": "Meio técnico-científico-informacional de Milton Santos — Kardia Sociologia",
-        "url": "https://kardiasociologia.org/2024/05/23/meio-tecnico-cientifico-informacional/",
-        "cor": "w3-blue",
-        "corTexto": "w3-text-white"
-    },
-    "NatGeoRevolucaoIndustrial": {
-        "texto": "O que foi e quando começou a Revolução Industrial — National Geographic Brasil",
-        "url": "https://www.nationalgeographicbrasil.com/historia/2024/12/o-que-foi-e-quando-comecou-a-revolucao-industrial",
-        "cor": "w3-yellow",
-        "corTexto": "w3-text-black"
-    },
-    "NerdologiaRevolucaoIndustrial": {
-        "texto": "A Primeira Revolução Industrial — Nerdologia",
-        "url": "https://www.youtube.com/watch?v=m_KTF3iNrY0&ab_channel=Nerdologia",
-        "cor": "w3-red",
-        "corTexto": "w3-text-white"
-    },
-    "UNODCNarcotrafico": {
-        "texto": "Narcotráfico: dados e relatórios — UNODC (ONU)",
-        "url": "https://www.unodc.org/cofrb/pt/noticias/2025/6/relatorio-mundial-sobre-drogas-2025-do-unodc_-instabilidade-global-agrava-custos-sociais--economicos-e-de-seguranca-do-problema-mundial-das-drogas.html",
-        "cor": "w3-blue",
-        "corTexto": "w3-text-white"
-    }
+  "40MapasMundo": {
+    "texto": "40 mapas que irão ajudá-lo a entender melhor o mundo",
+    "url": "https://www.mdig.com.br/index.php?itemid=29149",
+    "cor": "w3-purple",
+    "corTexto": "w3-text-white"
+  },
+  "ACNURDeslocados": {
+    "texto": "108 milhões de pessoas deslocadas à força no mundo — ACNUR",
+    "url": "https://www.acnur.org/br/noticias/press-releases-do-acnur/acnur-tendencias-globais-2023",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "ACNURVenezuela": {
+    "texto": "Crise migratória venezuelana — ACNUR",
+    "url": "https://www.acnur.org/br/emergencias/venezuela",
+    "cor": "w3-deep-orange",
+    "corTexto": "w3-text-white"
+  },
+  "ANAAtlasAgua": {
+    "texto": "Atlas Brasil: Abastecimento urbano de água — ANA",
+    "url": "http://atlas.ana.gov.br/Atlas/forms/Home.aspx",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "ANEELAtlasEnergia": {
+    "texto": "Atlas da Energia Elétrica do Brasil — ANEEL",
+    "url": "http://www2.aneel.gov.br/arquivos/PDF/atlas3ed.pdf",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "ANPAnuario2018": {
+    "texto": "Anuário Estatístico da ANP — 2018",
+    "url": "http://www.anp.gov.br/images/central-de-conteudo/publicacoes/anuario-estatistico/2018/anuario-2018.pdf",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "ANPPetroleo": {
+    "texto": "Agência Nacional do Petróleo — ANP",
+    "url": "http://www.anp.gov.br/",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "BBCGuerrilhas": {
+    "texto": "Guerrilhas na América Latina — BBC Brasil",
+    "url": "https://www.bbc.com/portuguese/articles/c8jry8z4j0po",
+    "cor": "w3-green",
+    "corTexto": "w3-text-white"
+  },
+  "BBCMapaMundoReal": {
+    "texto": "O criativo mapa que mostra o mundo como realmente é — BBC",
+    "url": "https://www.bbc.com/portuguese/curiosidades-37864328",
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white"
+  },
+  "BBCMarAral": {
+    "texto": "A plantação de algodão que fez o Mar de Aral virar deserto — BBC",
+    "url": "https://www.bbc.com/portuguese/noticias/2015/02/150226_mar_aral_gch_lab",
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white"
+  },
+  "BrasilEscolaDIT": {
+    "texto": "Divisão Internacional do Trabalho — Brasil Escola",
+    "url": "https://brasilescola.uol.com.br/geografia/divisao-internacional-trabalho-dit.htm",
+    "cor": "w3-green",
+    "corTexto": "w3-text-white"
+  },
+  "BrasilEscolaMiltonSantos": {
+    "texto": "Milton Santos: vida, obra e legado para a Geografia — Brasil Escola",
+    "url": "https://brasilescola.uol.com.br/geografia/milton-santos.htm",
+    "cor": "w3-green",
+    "corTexto": "w3-text-white"
+  },
+  "CNNBrasilCuba": {
+    "texto": "Revolução Cubana enfrenta a maior ameaça da sua história",
+    "url": "https://www.bbc.com/portuguese/articles/cvgkkn5g3ymo",
+    "cor": "w3-white",
+    "corTexto": "w3-text-black"
+  },
+  "DWPobreza": {
+    "texto": "Quase metade da população mundial vive na pobreza — DW Brasil",
+    "url": "https://www.dw.com/pt-br/quase-metade-da-popula%C3%A7%C3%A3o-mundial-vive-em-situa%C3%A7%C3%A3o-de-pobreza/a-49497041",
+    "cor": "w3-green",
+    "corTexto": "w3-text-white"
+  },
+  "EPEBalancoEnergetico": {
+    "texto": "Balanço energético nacional 2019 — EPE",
+    "url": "http://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-303/topico-419/BEN2019.pdf",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "FapespJurandyrRoss": {
+    "texto": "Entrevista: geógrafo Jurandyr Ross e o mapa de relevo da América do Sul — FAPESP",
+    "url": "https://revistapesquisa.fapesp.br/sob-a-forca-dos-andes/?cat=ciencia/",
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white"
+  },
+  "FapespRelevoInterior": {
+    "texto": "O relevo econômico do interior — Revista FAPESP",
+    "url": "https://revistapesquisa.fapesp.br/wp-content/uploads/2012/07/Pesquisa_197-24.pdf",
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white"
+  },
+  "GPSComoFunciona": {
+    "texto": "GPS, como funciona?",
+    "url": "https://www.youtube.com/watch?v=qzOA41vA8Qw&feature=emb_logo&ab_channel=AprendaEngenharia",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "GallPetersBBC": {
+    "texto": "O que é a projeção Gall-Peters, mapa que promete acabar com '4 séculos de visão colonialista' do mundo — BBC",
+    "url": "https://www.bbc.com/portuguese/internacional-39349115",
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white"
+  },
+  "IBGECidades": {
+    "texto": "Conheça cidades e estados do Brasil — IBGE",
+    "url": "https://cidades.ibge.gov.br/",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "KardiaMeioTecnico": {
+    "texto": "Meio técnico-científico-informacional de Milton Santos — Kardia Sociologia",
+    "url": "https://kardiasociologia.org/2024/05/23/meio-tecnico-cientifico-informacional/",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "MMAAgua": {
+    "texto": "Ministério do Meio Ambiente — Recursos Hídricos",
+    "url": "http://www.mma.gov.br/agua.html",
+    "cor": "w3-green",
+    "corTexto": "w3-text-white"
+  },
+  "MMANumeros": {
+    "texto": "Ministério do Meio Ambiente — MMA em números",
+    "url": "http://www.mma.gov.br/mma-em-numeros.html",
+    "cor": "w3-green",
+    "corTexto": "w3-text-white"
+  },
+  "NatGeoRevolucaoIndustrial": {
+    "texto": "O que foi e quando começou a Revolução Industrial — National Geographic Brasil",
+    "url": "https://www.nationalgeographicbrasil.com/historia/2024/12/o-que-foi-e-quando-comecou-a-revolucao-industrial",
+    "cor": "w3-yellow",
+    "corTexto": "w3-text-black"
+  },
+  "NerdologiaRevolucaoIndustrial": {
+    "texto": "A Primeira Revolução Industrial — Nerdologia",
+    "url": "https://www.youtube.com/watch?v=m_KTF3iNrY0&ab_channel=Nerdologia",
+    "cor": "w3-red",
+    "corTexto": "w3-text-white"
+  },
+  "ONUAgua": {
+    "texto": "A ONU e a água — Nações Unidas",
+    "url": "https://nacoesunidas.org/acao/agua/",
+    "cor": "w3-blue-grey",
+    "corTexto": "w3-text-white"
+  },
+  "ONUMudancaClimatica": {
+    "texto": "A ONU e a mudança climática — Nações Unidas",
+    "url": "https://nacoesunidas.org/acao/mudanca-climatica/",
+    "cor": "w3-blue-grey",
+    "corTexto": "w3-text-white"
+  },
+  "ONUPopulacaoMundial": {
+    "texto": "População mundial — ONU",
+    "url": "https://nacoesunidas.org/acao/populacao-mundial/",
+    "cor": "w3-blue-grey",
+    "corTexto": "w3-text-white"
+  },
+  "PetrobrasPreSal": {
+    "texto": "Tecnologias pioneiras do Pré-Sal — Petrobras",
+    "url": "https://presal.hotsitespetrobras.com.br/tecnologias-pioneiras/#5",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  },
+  "ProjecoesCartograficasD3": {
+    "texto": "Transições de projeções cartográficas — Observable",
+    "url": "https://observablehq.com/@d3/projection-transitions",
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white"
+  },
+  "UNFome": {
+    "texto": "Fome cresce no mundo e atinge 9,8% da população — FAO/ONU",
+    "url": "https://news.un.org/pt/story/2024/07/1535846",
+    "cor": "w3-white",
+    "corTexto": "w3-text-black"
+  },
+  "UNODCNarcotrafico": {
+    "texto": "Narcotráfico: dados e relatórios — UNODC (ONU)",
+    "url": "https://www.unodc.org/cofrb/pt/noticias/2025/6/relatorio-mundial-sobre-drogas-2025-do-unodc_-instabilidade-global-agrava-custos-sociais--economicos-e-de-seguranca-do-problema-mundial-das-drogas.html",
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white"
+  }
 }

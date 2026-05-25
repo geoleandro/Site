@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -46,19 +45,13 @@
     <script src="../../../js/aulas-geral.js" defer></script>
 
 
+
     <title>Texto-modelo</title>
 
 
 
     <style>
-        .topico {
-            display: none;
-        }
 
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
 
         .postit-tp3 {
 			background: #b085ff;
@@ -111,10 +104,26 @@
 
             <h1 id="h1"> </h1>
 
+            <!-- Futuro audio -->
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
+            </div>
+
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
 
-                <p><strong>Objetivo:</strong> Entender e aplicar o sistema de fusos horários no mundo.</p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Entender e aplicar o sistema de fusos horários no mundo.</span></p>
             </div>
 
 
@@ -1247,117 +1256,42 @@
         </div>
 
 
+       <!-- TÓPICO 13: FINALIZAR -->
         <div class="topico">
-
-
             <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-
         </div>
 
 
-
-
-
+        <!-- ===== SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS ===== -->
         <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
+
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
-
-            <div class="w3-row-padding">
-
-                <div class="w3-row-padding">
-                    <div class="w3-col m6 w3-margin-bottom">
-                        <div class="postit-tp9 w3-green w3-card-4 pulsar">
-                            <a href="https://pt.euronews.com/viagens/2026/03/28/curiosidades-sobre-fusos-horarios-no-mundo-que-muitos-viajantes-desconhecem/"
-                                target="_blank">
-                                <span class="w3-text-white">Curiosidades sobre fusos horários no mundo que muitos
-                                    viajantes desconhecem</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="w3-col m6 w3-margin-bottom">
-                        <div class="postit-tp9 w3-blue w3-card-4 pulsar">
-                            <a href="https://www.tnh1.com.br/variedades/fuso-horario-mais-insano-do-mundo-ilhas-vizinhas-ficam-a-4-km-de-distancia-mas-vivem-com-21-horas-de-diferenca//"
-                                target="_blank">
-                                <span class="w3-text-white">Fuso-horário mais insano do mundo</span>
-                            </a>
-                        </div>
-                    </div>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
 
 
 
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
 
-                    <div class="w3-container w3-padding-64">
-                        <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                                Bibliográficas</strong></h3>
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
+            </div>
+        </div>
 
+        <br><br>
 
-                        <div class="w3-row w3-margin-bottom">
-                            <div class="w3-card-4 w3-white w3-border-left w3-border-green w3-padding-16"
-                                style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                                <div class="w3-container">
-                                    <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
-                                    <p class="w3-large w3-margin-top">
-                                        CARVALHO, Edilson Alves de. <strong>Leituras cartográficas e interpretações
-                                            estatísticas
-                                            I</strong>.
-                                        <span class="w3-opacity w3-medium">2.ed. Natal: EDUFRN, 2011.</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="w3-row w3-margin-bottom">
-                            <div class="w3-card-4 w3-white w3-border-left w3-border-green w3-padding-16"
-                                style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                                <div class="w3-container">
-                                    <span class="w3-tag w3-green w3-small fontePixel">Referência Digital</span>
-                                    <p class="w3-large w3-margin-top">
-                                        PENA, Rodolfo F. Alves. <strong>Como calcular fuso horário?</strong>
-                                        <span class="w3-opacity w3-medium">Disponível em:
-                                            https://mundoeducacao.uol.com.br.htm.
-                                            Acesso em: 18 maio 2018.</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
 
 
-
-                        <!-- CARD BNCC -->
-                        <div class="w3-row w3-margin-bottom">
-                            <div class="w3-card-4 w3-white w3-border-left w3-border-amber w3-padding-16"
-                                style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                                <div class="w3-container">
-                                    <!-- Cor Amber (Âmbar) para documentos oficiais -->
-                                    <span class="w3-tag w3-amber w3-text-white w3-small fontePixel">Diretriz
-                                        Nacional</span>
-                                    <p class="w3-large w3-margin-top">
-                                        BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>.
-                                        <span class="w3-opacity w3-medium">Brasília: MEC/CONSED/UNDIME, 2018.</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-
-
-
-                <br><br>
-
-                <div class="w3-padding-48">
-                    <span id="numero"></span>
-                    <span id="txtBarra">0%</span>
-                    <progress value="0" max="100" id="progress"></progress>
-                </div>
 
 
     </main>

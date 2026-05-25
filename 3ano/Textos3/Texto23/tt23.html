@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -51,17 +50,7 @@
 
 
 
-    <style>
-        .topico {
-            display: block;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-    </style>
-
+   
 
 
 
@@ -87,11 +76,27 @@
 
             <h1 id="h1"></h1>
 
+            <!-- Futuro audio -->
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="audiott23.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
-                <p><strong>Objetivo:</strong> Compreender a relação entre guerrilhas e narcotráfico na América Latina.
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Compreender a relação entre guerrilhas e narcotráfico na América Latina.
                     Identificar as principais crises políticas em Cuba, Venezuela e Bolívia, analisando seus contextos
-                    históricos e suas consequências sociais.</p>
+                    históricos e suas consequências sociais.</span></p>
             </div>
 
             <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
@@ -585,4 +590,4 @@
 
 </body>
 
-</html>
+</html>                                                                                                                                                                                      

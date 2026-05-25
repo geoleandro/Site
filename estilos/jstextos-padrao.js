@@ -57,6 +57,64 @@ function MostrarProximo(botao) {
 
 
 
+// ── Botões auxiliares ──────────────────────────────────────────
+function MostraButton(id) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'block';
+}
+function EscondeButton(id) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+}
+
+// ── Exercício de múltiplas checkboxes ─────────────────────────
+// Uso: confereBox('acertou!', 'resp40', 'globinho40', [1,2,4])
+// respostasCorretas: array com os índices (1-based) das checkboxes certas
+// O botão "Próximo" (id="buttoncheck2") só aparece quando o aluno acerta tudo
+function confereBox(mensagem, idFrase, idGlobinho, respostasCorretas) {
+    const form     = document.getElementById('check');
+    const frase    = document.getElementById(idFrase);
+    const globo    = document.getElementById(idGlobinho);
+
+    // Coleta quais checkboxes estão marcadas (índice 1-based)
+    const checkboxes = form
+        ? form.querySelectorAll('input[type="checkbox"]')
+        : document.querySelectorAll('input[type="checkbox"]');
+
+    const marcadas = [];
+    checkboxes.forEach((cb, i) => { if (cb.checked) marcadas.push(i + 1); });
+
+    // Compara marcadas com corretas (tamanho + conteúdo)
+    const corretas = respostasCorretas || [];
+    const acertou  =
+        marcadas.length === corretas.length &&
+        marcadas.every(n => corretas.includes(n));
+
+    if (acertou) {
+        // Feedback positivo
+        if (frase)  frase.innerHTML  = nomeEstudante + ', ' + mensagem + '.';
+        if (globo)  globo.style.display = 'block';
+
+        // Pontuação
+        nota += 2;
+        const notaEl = document.getElementById('notaFixa');
+        if (notaEl) notaEl.innerHTML = nota.toFixed(1);
+
+        // Áudio de acerto (se disponível)
+        if (typeof Play === 'function') Play('../audio1.mp3');
+
+        // Desabilita checkboxes e troca botões
+        checkboxes.forEach(cb => cb.disabled = true);
+        EscondeButton('buttoncheck1');
+        MostraButton('buttoncheck2');
+
+    } else {
+        // Feedback negativo — mantém "Próximo" escondido
+        if (frase) frase.innerHTML = nomeEstudante + ', marque apenas as opções corretas para prosseguir.';
+        if (typeof Play2 === 'function') Play2('../audio2.mp3');
+    }
+}
+
 function ProcessarResposta(selecionado, config) {
     let { correto, idFrase, idGlobo, nomeGrupo, mensagem, pontos } = config;
     const pts = parseFloat(pontos) || 10.0;
@@ -329,8 +387,11 @@ async function injetarMetadadosAula() {
     try {
         const aulas = await DuvidCache.get(`/js/aulas-${ano}ano.json`); // << NOVO
 
-        // 2. Busca os dados da aula atual no JSON (Usando o "pulo do gato" sênior)
-        const aulaDados = aulas.find(a => a.linkTexto && a.linkTexto.includes(aulaArquivo));
+        // 2. Busca os dados da aula atual no JSON
+        // Usa optional chaining (?.) para não quebrar se linkTexto for null
+        // (ex: aulas de revisão que só têm questões, sem texto)
+        if (!Array.isArray(aulas) || !aulaArquivo) return;
+        const aulaDados = aulas.find(a => a.linkTexto?.includes(aulaArquivo));
 
         if (aulaDados) {
             tituloAulaGlobal = aulaDados.titulo;
@@ -343,10 +404,16 @@ async function injetarMetadadosAula() {
             const desc = document.getElementById('descricao-aula');
             if (desc) desc.innerText = aulaDados.conteudo;
 
+            const obj = document.getElementById('objetivo-aula');
+            if (obj && aulaDados.objetivo) obj.innerText = aulaDados.objetivo;
+
+            const audioSource = document.getElementById('audioSource');
+            if (audioSource && aulaDados.audio) audioSource.src = aulaDados.audio;
+
             configurarSEOAutomatico(aulaDados.id, 'texto');
 
-              await injetarBibliografiaAula(aulaDados.bibliografia);
-              await injetarLinksAula(aulaDados.links);
+            await injetarBibliografiaAula(aulaDados.bibliografia);
+            await injetarLinksAula(aulaDados.links);
         }
     } catch (e) {
         console.error("Erro ao injetar metadados:", e);
@@ -367,81 +434,92 @@ function Aparecer(imagem, paragrafo) {
 
 
 /**
- * Valida respostas abertas de forma flexível
- * @param {string} inputId - ID do campo de texto
- * @param {string} gabarito - Resposta correta esperada
- * @param {string} feedbackId - Onde exibir o texto de retorno
- * @param {HTMLElement} btn - O botão que foi clicado
- * @param {string} globinhoId - ID da imagem do globinho
+ * Valida respostas abertas de forma flexível.
+ * A resposta do aluno é aceita se CONTIVER o gabarito (case-insensitive).
+ *
+ * @param {string}      inputId    - ID do campo de texto
+ * @param {string}      gabarito   - Palavra/frase correta esperada
+ * @param {string}      feedbackId - ID do <p> onde exibir o retorno
+ * @param {HTMLElement} btn        - O botão "Conferir" clicado
+ * @param {string}      globinhoId - ID da imagem do globinho
  */
 function validarAberta(inputId, gabarito, feedbackId, btn, globinhoId) {
-    const inputElement = document.getElementById(inputId);
-    const feedbackElement = document.getElementById(feedbackId);
+    const inputEl    = document.getElementById(inputId);
+    const feedbackEl = document.getElementById(feedbackId);
+    const globoEl    = document.getElementById(globinhoId);
 
-    // 1. Tratamento da string (O "pulo do gato" sênior)
-    // Converte para minúsculo e remove espaços inúteis no início/fim
-    let respostaUser = inputElement.value.toLowerCase().trim();
+    const respostaUser = inputEl.value.toLowerCase().trim();
 
-    // 2. Lógica de validação
-    if (respostaUser === "") {
-        feedbackElement.innerHTML = "<span class='w3-text-red'>Escreva algo antes de conferir!</span>";
-        playSom('erro'); // ou Play2("../audio2.mp3");
+    // 1. Vazio
+    if (respostaUser === '') {
+        feedbackEl.innerHTML = "<span class='w3-text-red'>Escreva algo antes de conferir!</span>";
+        if (typeof Play2 === 'function') Play2('../audio2.mp3');
         return;
     }
 
-    // Compara a resposta (pode usar regex se quiser aceitar "no noroeste" e "noroeste")
-    if (respostaUser.includes(gabarito)) {
-        // ACERTO
-        inputElement.disabled = true;
-        inputElement.classList.add("w3-pale-green");
+    // 2. Compara (contém o gabarito)
+    if (respostaUser.includes(gabarito.toLowerCase())) {
+        // ── ACERTO ──────────────────────────────────────────────
+        inputEl.disabled = true;
+        inputEl.classList.remove('w3-border-red');
+        inputEl.classList.add('w3-pale-green');
         btn.style.display = 'none';
 
-        feedbackElement.innerHTML = `<span class='w3-text-green'><b>Correto!</b> A resposta é ${gabarito}.</span>`;
+        feedbackEl.innerHTML = `<span class='w3-text-green'><b>Correto! ✔</b></span>`;
 
-        // Gamificação
-        document.getElementById(globinhoId).style.display = "inline-block";
-        executarGatilhoResultado(true, 10); // Função do seu UI.js que soma pontos e faz confete
+        if (globoEl) {
+            globoEl.style.display  = 'inline-block';
+            globoEl.style.filter   = 'none';
+            globoEl.classList.add('pulo-elastico');
+        }
 
-        // Verifica se todas do bloco foram respondidas para mostrar o "Próximo"
-        verificarProgressoBloco();
+        // Pontuação interna
+        nota += 2;
+        const notaEl = document.getElementById('notaFixa');
+        if (notaEl) notaEl.innerHTML = nota.toFixed(1);
+
+        if (typeof Play === 'function') Play('../audio1.mp3');
+        if (typeof executarGatilhoResultado === 'function') executarGatilhoResultado(true, 2);
+
+        // Libera o botão "Próximo" quando todo o bloco estiver resolvido
+        verificarProgressoBloco(btn);
+
     } else {
-        // ERRO
-        inputElement.classList.add("w3-border-red");
-        feedbackElement.innerHTML = "<span class='w3-text-red'>Tente novamente! Observe a rosa dos ventos.</span>";
-        playSom('erro');
+        // ── ERRO ────────────────────────────────────────────────
+        inputEl.classList.add('w3-border-red');
+        feedbackEl.innerHTML = "<span class='w3-text-red'>Não é bem isso — tente novamente!</span>";
+        if (typeof Play2 === 'function') Play2('../audio2.mp3');
     }
 }
 
 /**
- * Verifica se todas as perguntas do tópico atual foram respondidas
- * para liberar o botão de próximo de forma automática.
+ * Verifica se todos os inputs de texto do bloco já foram respondidos.
+ * Quando sim, exibe o botão "Próximo" do tópico.
+ *
+ * @param {HTMLElement} [triggerEl] - Elemento que disparou a ação
+ *   (usado para localizar o tópico pai via closest).
+ *   Se omitido, busca o primeiro tópico visível.
  */
-function verificarProgressoBloco() {
-    // 1. Encontra o tópico que está visível no momento
-    const topicoAtual = document.querySelector('.topico.mostrar');
+function verificarProgressoBloco(triggerEl) {
+    // 1. Acha o tópico pai
+    const topicoAtual = triggerEl
+        ? triggerEl.closest('.topico')
+        : document.querySelector('.topico.mostrar') ||
+          document.querySelector('.topico:first-child');
     if (!topicoAtual) return;
 
-    // 2. Conta quantos inputs de texto ou rádio existem neste tópico
-    // (Ajuste os seletores conforme sua necessidade)
-    const perguntas = topicoAtual.querySelectorAll('input[type="text"], .grupo-respostas');
-    const totalPerguntas = perguntas.length;
+    // 2. Conta apenas inputs de texto (ignora radios, checkboxes, botões)
+    const perguntas   = topicoAtual.querySelectorAll('input[type="text"]');
+    const respondidas = topicoAtual.querySelectorAll('input[type="text"]:disabled');
 
-    // 3. Conta quantos desses já foram "concluídos" (Inputs desativados)
-    const respondidas = topicoAtual.querySelectorAll('input:disabled').length;
+    if (perguntas.length === 0 || respondidas.length < perguntas.length) return;
 
-    // Se for um bloco de rádio, a lógica muda um pouco, 
-    // mas para campos de texto desativados:
-    if (respondidas >= totalPerguntas && totalPerguntas > 0) {
-        // 4. Localiza o botão de próximo deste tópico específico e o exibe
-        const btnNext = topicoAtual.querySelector('.btnShow[style*="display: none"], .btnHide');
-        if (btnNext) {
-            btnNext.style.display = 'block';
-            btnNext.classList.add('w3-animate-zoom'); // Efeito visual de "liberado"
-
-            // Opcional: Tocar um som de "Seção Concluída"
-            if (typeof playSom === 'function') playSom('click');
-
-        }
+    // 3. Exibe o botão "Próximo" do bloco
+    const btnNext = topicoAtual.querySelector('.btnHide');
+    if (btnNext) {
+        btnNext.style.display = 'block';
+        btnNext.classList.add('w3-animate-zoom');
+        if (typeof Play === 'function') Play('../audio1.mp3');
     }
 }
 

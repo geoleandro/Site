@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(UNIFEI-SP) O monitoramento por satélite e o GPS (Sistema de Posicionamento Global) são inovações tecnológicas atualmente usadas por órgãos governamentais, agricultura, empresas, pessoas etc. Sobre essa questão, escreva verdadeiro (V) ou falso (F) para os itens abaixo e assinale a alternativa correta:\n\nI. O GPS é um Sistema de Posicionamento Global constituído por dezenas de satélites que emitem sinais de rádio captados por aparelhos especiais em qualquer ponto da superfície da Terra.\n\nII. O GPS indica ao usuário sua localização em termos de latitude, longitude e altitude.\n\nIII. Na agricultura, essas tecnologias podem ser utilizadas a fim de que se obtenha maior produtividade com custos menores.\n\nIV. Essas inovações tecnológicas permitem, por exemplo, detectar e acompanhar a direção e o deslocamento de queimadas e avaliar prejuízos em áreas atingidas por secas ou inundações.",
+    "alternativas": [
+      "VFVV.",
+      "VVVF.",
+      "FVVV.",
+      "VVVV.",
+      "VFVF."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 2,
+    "instituicao": "FUVEST",
+    "ano": "2009",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/107/p7q2.png",
+    "pergunta": "Considere os exemplos das figuras e analise as frases abaixo, relativas às imagens de satélite e às fotografias aéreas.\n\nI. Um dos usos das imagens de satélites refere-se à confecção de mapas temáticos de escala pequena, enquanto as fotografias aéreas servem de base à confecção de cartas topográficas de escala grande.\n\nII. Embora os produtos de sensoriamento remoto estejam, hoje, disseminados pelo mundo, nem todos eles são disponibilizados para uso civil.\n\nIII. Pelo fato de poderem ser obtidas com intervalos regulares de tempo, dentre outras características, as imagens de satélite constituem-se em ferramentas de monitoramento ambiental e instrumental geopolítico valioso.\n\nEstá correto o que se afirma em:",
+    "alternativas": [
+      "I, apenas.",
+      "II, apenas.",
+      "II e III, apenas.",
+      "I e III, apenas.",
+      "I, II e III."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 3,
+    "instituicao": "UNISC",
+    "ano": "2013",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "“Hoje, o sensoriamento remoto por meio de satélites representa o mais importante e eficiente recurso tecnológico de observação da Terra, permitindo rapidez e precisão nos processos de levantamento de dados e mapeamentos.” (COELHO, Marcos de Amorim; TERRA, Lygia. Geografia Geral: o espaço natural e socioeconômico. 2001, p.30)",
+    "fonte_apoio": "(COELHO, Marcos de Amorim; TERRA, Lygia. Geografia Geral: o espaço natural e socioeconômico. 2001, p.30)",
+    "pergunta": "A esse respeito, leia as afirmativas abaixo.\n\nI – O sensoriamento remoto é um recurso técnico para ampliar os sentidos naturais do homem.\n\nII –O sensoriamento remoto pode ser definido, de uma maneira ampla, como sendo a forma de se obter informações de um objeto ou alvo, sem que haja contato físico com o mesmo.\n\nIII – No sensoriamento remoto, as informações são obtidas utilizando-se a radiação eletromagnética, geradas por fontes naturais como o Sol e a Terra, ou por fontes artificiais como, por exemplo, o Radar.\n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "Somente a afirmativa I está correta.",
+      "Somente a afirmativa III está correta.",
+      "Todas as afirmativas estão corretas.",
+      "Somente as afirmativas I e III estão corretas.",
+      "Somente a afirmativa II está correta."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 4,
+    "instituicao": "BRASIL ESCOLA",
+    "ano": "2022",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "A importância do Geoprocessamento reside no tratamento de imagens para a produção de mapas, cartas, projeções cartográficas e recolher dados em forma de gráficos, quadros e tabelas sobre os diversos elementos da superfície terrestre. Sobre o Geoprocessamento, assinale a alternativa incorreta:",
+    "alternativas": [
+      "O uso de softwares e equipamentos tecnológicos é imprescindível para a operação do Geoprocessamento.",
+      "A aerofotogrametria pode ser uma importante ferramenta a ser utilizada pelo Geoprocessamento.",
+      "A produção de mapas digitais depende única e exclusivamente das imagens e dados fornecidos pelos satélites.",
+      "O Geoprocessamento pode ser muito útil para serviços de espionagem, uma vez que as imagens de satélite permitem visualizar, em detalhes, qualquer ponto da superfície terrestre."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 5,
+    "instituicao": "UNINTA",
+    "ano": "2017",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "O sensoriamento remoto é um recurso técnico para ampliar os sentidos naturais do homem. É um dispositivo ou equipamento (câmara fotográfica, radar, satélite) que capta e registra, sob a forma de imagens, a energia refletida ou emitida pelas áreas, acidentes, objetos e acontecimentos do meio ambiente, incluindo os acidentes naturais e culturais.\n\nOLIVEIRA, Cêurio. In: COELHO, Amorim. Geografia geral: o espaço natural e socioeconômico. São Paulo: Moderna, 1992.\n\nCom base no texto e nos conhecimentos sobre sensoriamento remoto e representações cartográficas, é correto afirmar:",
+    "alternativas": [
+      "As fotografias feitas por satélites dispensam todos os tipos de cartas geográficas temáticas.",
+      "A totalidade da superfície terrestre pode ser visualizada através de uma única foto feita por satélite..",
+      "As imagens processadas de radar oferecem detalhes milimétricos, como a detecção de pragas nas lavouras..",
+      "O mapa-múndi é a mais perfeita de todas as representações cartográficas, por possuir uma grande escala e apresentar o espaço com todos os detalhes..",
+      "As vantagens da fotografia aérea são, entre outras, a boa orientação espacial e o elevado nível de precisão e rapidez, permitindo amplo campo de trabalho aos geógrafos."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 6,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(2021) Associe as colunas relacionadas com geotecnologia à esquerda com a coluna da cartografia à direita.\n\nAssinale a alternativa correta que correlaciona as duas colunas:",
+    "alternativas": [
+      "1, 2, 3, 5, 4.",
+      "5, 3, 4, 2, 1",
+      "2, 4, 3, 5, 1.",
+      "3, 5, 2, 1,4."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 7,
+    "instituicao": "URCA",
+    "ano": "2018",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "A cartografia utiliza a técnica de sensoriamento remoto na análise e interpretação do espaço geográfico. Das alternativas abaixo uma indica corretamente o material utilizado por essa técnica. Assinale-a.",
+    "alternativas": [
+      "Cartas náuticas, cartas marítimas e radares",
+      "Fotos aéreas, imagens de radar e de satélites",
+      "Telescópio, satélites e altímetros.",
+      "d) Astrolábio, bússola e clinômetro.",
+      "Termógrafo, bússolas e curvímetro."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 8,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "A origem do sensoriamento remoto vincula-se ao surgimento da fotografia aérea. Assim, a história do sensoriamento remoto pode ser dividida em dois períodos: um, de 1860 a 1960, baseado no uso de fotografias aéreas, e outro, de 1960 aos dias de hoje, caracterizado por uma variedade de tipos de fotografias e imagens. O sensoriamento remoto é fruto de um esforço multidisciplinar que integra os avanços da Matemática, Física, Química, Biologia e das Ciências da Terra e da Computação. A evolução das técnicas de sensoriamento remoto e a sua aplicação envolvem um número cada vez maior de pessoas de diferentes áreas do conhecimento.",
+    "pergunta": "(ENEM)\n\nTendo-se em vista a importância do sensoriamento remoto para as mais diversas atividades humanas, considera-se como principal objetivo dessa atividade",
+    "alternativas": [
+      "interpretar, visualizar e apontar os principais fluxos monetários internacionais.",
+      "monitorar as principais atividades correlacionadas à tectônica global.",
+      "obter imagens e outros tipos de dados da superfície terrestre.",
+      "acompanhar a dinâmica das principais vias de circulação aérea.",
+      "diagnosticar as migrações intrarregionais, apontando as principais causas de emigração."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 9,
+    "instituicao": "UEL",
+    "ano": "2010",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/107/p7q9.png",
+    "pergunta": "Sobre a obtenção e interpretação de imagens, é CORRETO afirmar",
+    "alternativas": [
+      "Dentre os diversos objetivos da utilização do sensoriamento remoto destaca-se a obtenção e análise de informações sobre materiais, objetos ou fenômenos na superfície da Terra, a partir de dispositivos situados a distância.",
+      "O sensoriamento remoto é uma sofisticação tecnológica entendida como avanço técnico que realiza mapeamento e convenções cartográficas de imagens adquiridas por sensores próximos de seus alvos.",
+      "Na utilização do sensoriamento remoto, os dispositivos de coleta de dados têm função de digitalizar a informação proveniente dos materiais, objetos ou fenômenos terrestres, para posterior processamento e interpretação possível de ser realizado por qualquer pessoa.",
+      "As atividades de sensoriamento remoto excluem o processamento digitalizado de imagens, pois a técnica por si mesma fornece instrumentos que facilitam a identificação e extração de informações para posterior interpretação.",
+      "A transformação de imagens em dados que possam representar informações úteis está inteiramente realizada, uma vez que o sensoriamento remoto descarta a necessidade do especialista humano para identificar cada uma das classes de objetos passiveis de reconhecimento"
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 10,
+    "instituicao": "FGV-SP",
+    "ano": "2021",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/107/p7q10.png",
+    "pergunta": "Leia a tirinha de Fernando Gonsales.\n\nDe maneira lúdica, a tirinha sugere o emprego do",
+    "alternativas": [
+      "sistema de posicionamento global, técnica que, utilizando sensores, capta e registra imagens à distância.",
+      "sensoriamento remoto, rede de aparelhos portáteis que, sem contato físico, determina as características de um dado lugar.",
+      "sistema de posicionamento global, conjunto de aparelhos que, realizando a trilateração, fornecem os dados espaciais de um objeto. d) sensoriamento remoto, banco de dados que, de acordo com os interesses do usuário, gerencia as informações espaciais. e) sistema de posicionamento global, cartas topográficas articuladas que, padronizadas mundialmente, revelam a localização de pontos na superfície.",
+      "",
+      ""
+    ],
+    "correta": 2,
+    "comentario": ""
+  }
+]

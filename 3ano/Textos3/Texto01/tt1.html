@@ -12,11 +12,10 @@
     <meta property="og:image" content="">
 
     <link rel="stylesheet" href="../../../estilos/index-estilo.css">
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -51,16 +50,6 @@
 
 
 
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-    </style>
 
 
 
@@ -90,14 +79,27 @@
 
             <h1 id="h1"> </h1>
 
+              <!-- Futuro audio -->
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="audiott1.mp3" type="audio/mp3">
+            
+                </audio>
+            </div>
+
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
 
-                <p><strong>Objetivo:</strong> Caracterizar o mundo atual. Identificar e entender as principais
-                    características
-                    da sociedade no capitalismo atual, a divisão internacional do trabalho e suas desigualdades
-                    socioespaciais e
-                    os processos que ocorrem no espaço geográfico.</p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Caracterizar o mundo atual. Identificar e entender as principais características da sociedade no capitalismo atual, a divisão internacional do trabalho e suas desigualdades socioespaciais e os processos que ocorrem no espaço geográfico.</span></p>
             </div>
 
 
@@ -118,6 +120,8 @@
         <div class="topico ">
 
             <h2> Introdução </h2>
+
+            
 
 
             <p> <span class="primeiraLetra">E</span>ssa última etapa do ensino médio promete ser muito agitada em
@@ -414,7 +418,7 @@
 
 
             <div class="w3-margin"><img id="imagem2" src="tt01f02.png" alt="tt01f02" class="w3-mobile">
-                <span class="w3-small w3-margin-left" id="citacao2"> </span>
+                <span class="w3-small w3-margin-left" id="citacao5"> </span>
 
             </div>
 
@@ -690,7 +694,7 @@
 
 
 
-            <div class="w3-margin"><img id="infograficot2" src="inforesumot1.jpg"
+            <div class="w3-margin"><img id="infograficot2" src="inforesumot1.png"
                     alt="Infográfico resumo raio x da população" class="w3-mobile">
                 <span class="w3-small w3-margin-left" id="citacao6"> Fonte: Organizado e revisado pelo autor. </span>
             </div>
@@ -844,101 +848,16 @@
         <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
-
-            <div class="w3-row-padding">
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-green w3-card-4 pulsar">
-                        <a href="https://www.dw.com/..." target="_blank">
-                            <span class="w3-text-white">Quase metade da população mundial vive na pobreza</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-blue w3-card-4 pulsar">
-                        <a href="https://www.acnur.org/..." target="_blank">
-                            <span class="w3-text-white">108,4 milhões de pessoas deslocadas à força</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-white w3-card-4 pulsar">
-                        <a href="https://news.un.org/..." target="_blank">
-                            <span class="w3-text-black">Fome cresce no mundo e atinge 9,8% da população</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-deep-orange w3-card-4 pulsar">
-                        <a href="https://cee.fiocruz.br/..." target="_blank">
-                            <span class="w3-text-white">2,2 bilhões de pessoas não têm água potável</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
             <div class="w3-container w3-padding-64">
-                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                        Bibliográficas</strong></h3>
-
-                <div class="w3-row-padding w3-margin-top">
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-green"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
-                                <p class="w3-margin-top">SANTOS, Mílton. <br><b>Por uma outra globalização</b>: do
-                                    pensamento único à consciência universal. <br>Rio de Janeiro: Record, 2000.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-blue"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-blue w3-small fontePixel">Geografia Crítica</span>
-                                <p class="w3-margin-top">SANTOS, Milton. <br><b>O espaço do cidadão</b>. <br>São Paulo:
-                                    Editora da USP, 2007.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-deep-orange"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
-                                <p class="w3-margin-top">VOGLER, Christopher. <br><b>A jornada do escritor</b>. <br>Rio
-                                    de
-                                    Janeiro: Nova Fronteira, 2006.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-purple"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-purple w3-small fontePixel">Teoria Espacial</span>
-                                <p class="w3-margin-top">SOJA, Edward. <br><b>Postmetropolis</b>: Critical Studies of
-                                    Cities
-                                    and Regions. <br>Oxford: Blackwell, 2000.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
             </div>
-        </div>
-
-
         </div>
         <br><br>
 

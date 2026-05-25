@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "instituicao": "FUVEST",
+    "ano": "2007",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "2ano/img/222/s22q1.png",
+    "pergunta": "Analise o mapa e as frases sobre o sistema elétrico.\n\nI. No Brasil, apesar de a maior parte da produção de energia elétrica ser originária de hidrelétricas, cerca de metade de seu território utiliza, predominantemente, energia produzida por termelétricas.\n\nII. O Brasil apresenta vastas áreas ainda não interligadas ao sistema elétrico, pois a tecnologia para se transportar energia entre grandes distâncias é ainda pouco conhecida no país.\n\nIII. O aproveitamento hidrelétrico está próximo de seu limite nas principais regiões consumidoras do Brasil, o que fez aumentar, a cada ano da última década, a geração de energia elétrica por fontes alternativas, como a nuclear e a de carvão.\n\nEstá correto o que se afirma em:",
+    "alternativas": [
+      "I, apenas.",
+      "II, apenas.",
+      "I e III, apenas.",
+      "II e III, apenas.",
+      "I, II e III."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 2,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(UNESP-2019) A construção da Usina Hidrelétrica de Itaipu durante os anos 1970 e 1980\n\nAlternativas",
+    "alternativas": [
+      "contribuiu para a queda do regime cívico-militar brasileiro, depois que a imprensa denunciou grandes desvios de verbas da obra.",
+      "assegurou a autonomia energética definitiva de Argentina e Paraguai, países que participaram do projeto e se beneficiaram com sua execução.",
+      "permitiu o restabelecimento das relações diplomáticas entre Argentina, Brasil e Paraguai, rompidas desde a Guerra do Paraguai.",
+      "proporcionou a consolidação das hegemonias argentina e brasileira no comércio e no controle político da região do Rio da Prata.",
+      "foi uma iniciativa conjunta dos governos militares do Brasil e do Paraguai, que teve forte impacto geoestratégico na região do Rio da Prata."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 3,
+    "instituicao": "ENEM",
+    "ano": "2017",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "2ano/img/222/s22q3.png",
+    "pergunta": "Comparando os dados das hidrelétricas, uma características territorial positiva de Belo Monte é o(a)",
+    "alternativas": [
+      "reduzido espaço relativo inundado.",
+      "acentuado desnível do relevo local.",
+      "elevado índice de urbanização nacional",
+      "presença dos grandes parques industriais.",
+      "proximidade de fronteiras internacionais estratégicas."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 4,
+    "instituicao": "UNIOESTE-PR",
+    "ano": "2013",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "As fontes de energia são fundamentais para o desenvolvimento econômico de qualquer país. No Brasil, existem diversas fontes de energia que podem ser aproveitadas. No que tange à questão da energia no país, aponte a alternativa INCORRETA.",
+    "alternativas": [
+      "A principal fonte de energia do Brasil vem do petróleo, através das usinas termoelétricas, como a Termosul, Poços de Caldas e Carioba.",
+      "A maior parte das plataformas para extração de petróleo no Brasil e das reservas do pré-sal estão localizadas na plataforma continental do estado do Rio de Janeiro.",
+      "O estado do Paraná é um grande produtor de energia hidrelétrica, em virtude de sua rica rede hidrográfica e por abrigar usinas hidrelétricas como a Itaipu e outras usinas de menor porte.",
+      "Visando ampliar sua geração de energia, o governo brasileiro vem investindo na construção de usinas hidrelétricas na região amazônica, fato que vem gerando a resistência de grupos indígenas e ambientalistas.",
+      "O carvão mineral, o gás natural e o urânio são fontes de energia não-renováveis, apesar de muito utilizadas no mundo. Exemplos de fontes potenciais de energia renováveis estão na biomassa (sobretudo no etanol derivado da cana-de-açúcar), na lenha, no sol, nos ventos e também em dejetos animais e humanos."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 5,
+    "instituicao": "ENEM",
+    "ano": "2010",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "Deseja-se instalar uma estação de geração de energia elétrica em um município localizado no interior de um pequeno vale cercado de altas montanhas de difícil acesso. A cidade é cruzada por um rio, que é fonte de água para consumo, irrigação das lavouras de subsistência e pesca. Na região, que possui pequena extensão territorial, a incidência solar é alta o ano todo. A estação em questão irá abastecer apenas o município apresentado.\n\nQual forma de obtenção de energia, entre as apresentadas, é a mais indicada para ser implantada nesse município de modo a causar o menor impacto ambiental?",
+    "alternativas": [
+      "Termoelétrica, pois é possível utilizar a água do rio no sistema de refrigeração.",
+      "Eólica, pois a geografia do local é própria para a captação desse tipo de energia.",
+      "Nuclear, pois o modo de resfriamento de seus sistemas não afetariam a população.",
+      "Fotovoltaica, pois é possível aproveitar a energia solar que chega à superfície do local.",
+      "Hidrelétrica, pois o rio que corta o município é suficiente para abastecer a usina construída."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 6,
+    "instituicao": "PUC-RS",
+    "ano": "2008",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "2ano/img/222/s22q6.png",
+    "pergunta": "Responder à questão com base no quadro a seguir, que trata das hidroelétricas brasileiras\n\nOs dados referentes à área alagada por uma represa e à potência produzida pela hidroelétrica possibilitam comparar a relação entre os danos causados à natureza e o benefício trazido pela produção de energia.\n\nConsiderando somente as informações do quadro, é correto dizer que o projeto que mais onerou o ambiente, em termos da relação entre área inundada e potência da hidroelétrica, foi o de:",
+    "alternativas": [
+      "Sobradinho.",
+      "Furnas.",
+      "Tucuruí.",
+      "Ilha Solteira.",
+      "Itaipu."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 7,
+    "instituicao": "ENEM",
+    "ano": "2005",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "Um problema ainda não resolvido da geração nuclear de eletricidade é a destinação dos rejeitos radiativos, o chamado \"lixo atômico\". Os rejeitos mais ativos ficam por um período em piscinas de aço inoxidável nas próprias usinas antes de ser, como os demais rejeitos, acondicionados em tambores que são dispostos em áreas cercadas ou encerrados em depósitos subterrâneos secos, como antigas minas de sal. A complexidade do problema do lixo atômico, comparativamente a outros lixos com substâncias tóxicas, se deve ao fato de:",
+    "alternativas": [
+      "emitir radiações nocivas, por milhares de anos, em um processo que não tem como ser interrompido artificialmente.",
+      "acumular-se em quantidades bem maiores do que o lixo industrial convencional, faltando assim locais para reunir tanto material.",
+      "ser constituído de materiais orgânicos que podem contaminar muitas espécies vivas, incluindo os próprios seres humanos.",
+      "exalar continuamente gases venenosos, que tornariam o ar irrespirável por milhares de anos.",
+      "emitir radiações e gases que podem destruir a camada de ozônio e agravar o efeito estufa."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 8,
+    "instituicao": "UEL",
+    "ano": "2001",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "A geração de energia elétrica, um dos pilares da sociedade industrial, alcançou rápida expansão no Brasil graças à peculiar hidrografia do país, que permitiu inclusive a construção de algumas das maiores hidrelétricas do mundo. Sobre o tema, é correto afirmar:",
+    "alternativas": [
+      "A energia gerada em Itaipu é totalmente consumida na região Sul.",
+      "A hidrelétrica de Tucuruí foi construída para atender a área em que estão localizados o complexo mineral de Carajás e a indústria de alumínio da Albrás.",
+      "A construção de hidrelétricas deixa de ser importante para o Brasil, já que a energia necessária pode ser suprida por outras fontes.",
+      "Uma das vantagens do aproveitamento do potencial dos rios para a geração de energia elétrica no país é a ausência de alterações no meio ambiente, seja na fase de construção das barragens, seja na fase de funcionamento das usinas.",
+      "As hidrelétricas brasileiras estão concentradas nos rios da Bacia Amazônica, em função das vantagens de instalação que essa região proporciona."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 9,
+    "instituicao": "ENEM",
+    "ano": "2001",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "O setor residencial brasileiro é, depois da indústria, o que mais consome energia elétrica. A participação do setor residencial no consumo total de energia cresceu de forma bastante acelerada nos últimos anos.\n\nEsse crescimento pode ser explicado:\n\nI. pelo processo de urbanização no país, com a migração da população rural para as cidades.\n\nII. pela busca por melhor qualidade de vida com a maior utilização de sistemas de refrigeração, iluminação e aquecimento.\n\nIII. pela substituição de determinadas fontes de energia - a lenha, por exemplo - pela energia elétrica.\n\nDentre as explicações apresentadas",
+    "alternativas": [
+      "apenas III é correta.",
+      "apenas I e II são corretas.",
+      "apenas I e III são corretas.",
+      "apenas II e III são corretas.",
+      "I, II e III são corretas."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 10,
+    "instituicao": "ENEM",
+    "ano": "1999",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "2ano/img/222/s22q10.png",
+    "pergunta": "O diagrama a seguir representa a energia solar que atinge a Terra e sua utilização na geração de eletricidade. A energia solar é responsável pela manutenção do ciclo da água, pela movimentação doar, e pelo ciclo do carbono que ocorre através da fotossíntese dos vegetais, da decomposição e da respiração dos seres vivos, além da formação de combustíveis fósseis.\n\nNo diagrama estão representadas as duas modalidades mais comuns de usinas elétricas, as hidroelétricas e as termoelétricas. No Brasil, a construção de usinas hidroelétricas deve ser incentivada porque essas:\n\nI. utilizam fontes renováveis, o que não ocorre com as termoelétricas que utilizam fontes que necessitam de bilhões de anos para serem reabastecidas.\n\nII. apresentam impacto ambiental nulo, pelo represamento das águas no curso normal dos rios.\n\nIII. Aumentam o índice pluviométrico da região de seca do Nordeste, pelo represamento de águas.\n\nDas três afirmações lidas, somente:",
+    "alternativas": [
+      "I está correta.",
+      "II está correta.",
+      "III está correta.",
+      "I e II estão corretas.",
+      "II e III estão corretas"
+    ],
+    "correta": 0,
+    "comentario": ""
+  }
+]

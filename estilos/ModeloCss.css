@@ -954,9 +954,13 @@ ul.lista {
 }
 
 .topico {
-
-
+  display: none;
   background-color: white;
+}
+
+.topico:nth-child(1),
+.topico.mostrar {
+  display: block;
 }
 
 
@@ -1608,6 +1612,13 @@ button:disabled {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.btn-acao-duvid:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 /* Garante que o shake e a cor de erro continuem funcionando */
 .btn-acao-duvid.w3-amber {
   background-color: #ffc107 !important;
@@ -1708,7 +1719,6 @@ button:disabled {
 }
 
 .duvid-img-principal {
-  max-height: 580px;
   width: 100%;
   object-fit: contain;
   border-radius: 4px;

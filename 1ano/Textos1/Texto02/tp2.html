@@ -12,14 +12,15 @@
     <meta property="og:image" content="">
 
     <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -44,20 +45,12 @@
     <script src="../../../js/aulas-geral.js" defer></script>
 
 
+
     <title>1º ano - Texto 02</title>
 
 
 
-    <style>
-        .topico {
-            display: none;
-        }
 
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-    </style>
 
 
 
@@ -87,13 +80,30 @@
 
             <h1 id="h1"> </h1>
 
+            <!-- Futuro audio -->
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
+            </div>
+
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
 
 
-                <p><strong>Objetivo:</strong> Entender a importância da Cartografia para a construção do conhecimento do
-                    ser humano. Aplicar o sistema de coordenadas geográficas à localização de pontos na superfície
-                    terrestre. </p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Entender a importância da Cartografia para a
+                        construção do conhecimento do
+                        ser humano. Aplicar o sistema de coordenadas geográficas à localização de pontos na superfície
+                        terrestre. </span></p>
 
 
 
@@ -928,169 +938,33 @@
             </div>
             <hr>
         </div>
-
-
+        <!-- TÓPICO 13: FINALIZAR -->
         <div class="topico">
-
-
             <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-            <div class="w3-container">
-
-                <div id="id01" class="w3-modal" style="z-index: 999;">
-                    <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
-                        <div class="w3-container w3-padding-32 w3-center">
-
-                            <div class="w3-margin-bottom pulse">
-                                <img id="modal-img-globinho" src="../../../fotoIndex/globinhoPe.png" width="64"
-                                    height="64">
-                            </div>
-
-                            <h2 id="modal-titulo" class="fontePixel"></h2>
-
-                            <div class="w3-padding-16">
-                                <p class="w3-xlarge">Você conquistou <br>
-                                    <span class="w3-text-green w3-xxlarge"><b id="modal-nota-valor">0.0</b></span>
-                                    <br>
-                                    globinhos nesta aula!
-                                </p>
-                                <p id="modal-frase-feedback" class="w3-text-grey" style="font-style: italic;"></p>
-                            </div>
-
-                            <div class="w3-container w3-padding-16">
-                                <button onclick="document.getElementById('id01').style.display='none'"
-                                    class="w3-button w3-green w3-round-large w3-block w3-margin-bottom w3-padding-large"
-                                    style="font-weight: bold;">
-                                    🎯 CONTINUAR ESTUDANDO
-                                </button>
-
-                                <button onclick="window.location.href='/home.html'"
-                                    class="w3-button w3-light-grey w3-round-large w3-block w3-padding-large"
-                                    style="font-weight: bold;">
-                                    🏠 VOLTAR PARA A HOME
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
 
-
-
-
+        <!-- ===== SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS ===== -->
         <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
+
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
-            <div class="w3-row-padding">
 
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-green w3-card-4 pulsar">
-                        <a href="https://www.dw.com/..." target="_blank">
-                            <span class="w3-text-white">Quase metade da população mundial vive na pobreza</span>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-blue w3-card-4 pulsar">
-                        <a href="https://www.acnur.org/..." target="_blank">
-                            <span class="w3-text-white">108,4 milhões de pessoas deslocadas à força</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-white w3-card-4 pulsar">
-                        <a href="https://news.un.org/..." target="_blank">
-                            <span class="w3-text-black">Fome cresce no mundo e atinge 9,8% da população</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-deep-orange w3-card-4 pulsar">
-                        <a href="https://cee.fiocruz.br/..." target="_blank">
-                            <span class="w3-text-white">2,2 bilhões de pessoas não têm água potável</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
 
             <div class="w3-container w3-padding-64">
-                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                        Bibliográficas</strong></h3>
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
 
-                <div class="w3-row-padding w3-margin-top">
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-green"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
-
-
-                                <p class="w3-margin-top">CARPANELLI,Francesca. <strong>La geografia in 30
-                                        lezioni</strong>. Geografia generale ed economica.
-                                    Itália:
-                                    Zanichelli, 2015.</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-blue"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-blue w3-small fontePixel">Cartografia</span>
-
-                                <p class="w3-margin-top">FREITAS, Maria Isabel Castreghini de (Org.).
-                                    <br><strong>Cartograﬁa e Meio Ambiente</strong>. <br> Rio Claro:
-                                    IGCE/UNESP; Bauru: FC/Unesp; CECEMCA. 2005.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-deep-orange"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
-
-
-                                <p class="w3-margin-top">SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia
-                                        geral e do Brasil</strong>: espaço geográfico
-                                    e
-                                    globalização: ensino médio 3. ed. São Paulo: Scipione, 2016.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-purple"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-purple w3-small fontePixel">Documento oficial</span>
-                                <p class="w3-margin-top">BRASIL. Ministério da Educação. <br><b>Base Nacional Comum
-                                        Curricular</b>. <br>Brasília: MEC/Secretaria de Educação Básica, 2018.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
             </div>
         </div>
-        </div>
 
-
-        </div>
         <br><br>
 
         <div class="w3-padding-48">
@@ -1099,6 +973,8 @@
             <progress value="0" max="100" id="progress"></progress>
         </div>
 
+
+    </main>
 
     </main>
 

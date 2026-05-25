@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "instituicao": "UNESP",
+    "ano": "2019",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/104/p4q1.png",
+    "pergunta": "A generalização cartográfica é o processo que permite reconstruir em um mapa a realidade, mantendo seus traços essenciais.\n\nUm fator importante nesse processo de generalização cartográfica é:\n\nAlternativas:",
+    "alternativas": [
+      "a orientação, pois os elementos do mapa devem se manter proporcionalmente distantes entre si.",
+      "a topografia, pois a precisão na análise das informações depende de relevos pouco acidentados.",
+      "a escala, pois sua diminuição promove restrições que geram a perda de informações.",
+      "a simbolização, pois elementos naturais e antrópicos devem ser representados em mapas diferentes.",
+      "a altimetria, pois a determinação das curvas de nível é influenciada pelo ponto de observação do cartógrafo."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 2,
+    "instituicao": "UFRGS",
+    "ano": "2019",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/104/p4q2.png",
+    "pergunta": "",
+    "alternativas": [
+      "a escala das imagens diminui, pois mais detalhes podem ser vistos na sequência.",
+      "os detalhes das imagens diminuem na sequência de A a D, e aumenta a área representada.",
+      "a escala aumenta na sequência das imagens, uma vez que há, na imagem D, uma área maior.",
+      "o detalhamento da imagem A é maior, portanto, sua escala é menor que a das imagens posteriores.",
+      "a escala pouco muda, pois há a mesma área representada de A a D."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 3,
+    "instituicao": "UNICAMP",
+    "ano": "2016",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/104/p4q3.png",
+    "pergunta": "A imagem abaixo corresponde a um fragmento de uma carta topográfica em escala 1:50.000. Considere que a distância entre A e B é de 3,5 cm.\n\nA partir dessas informações, é correto afirmar que:",
+    "alternativas": [
+      "O rio corre em direção sudeste, sendo sua margem esquerda a de maior declividade. Apresenta um comprimento total de 17.500 metros.",
+      "O rio corre em direção sudoeste, sendo a margem direita a de maior declividade. Apresenta um comprimento total de 1.750 quilômetros.",
+      "O rio corre em direção sudeste, sendo sua margem esquerda a de maior declividade. Apresenta um comprimento total de 1.750 metros.",
+      "O rio corre em direção sudoeste, sendo sua margem esquerda a de maior declividade. Apresenta um comprimento total de 175 metros."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 4,
+    "instituicao": "UNICAMP",
+    "ano": "2013",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "Escala, em cartografia, é a relação matemática entre as dimensões reais do objeto e a sua representação no mapa. Assim, em um mapa de escala 1:50.000, uma cidade que tem 4,5 Km de extensão entre seus extremos será representada com",
+    "alternativas": [
+      "9 cm.",
+      "90 cm.",
+      "225 mm.",
+      "11 mm."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 5,
+    "instituicao": "ENEM",
+    "ano": "2012",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "“O maratonista original, o grego da lenda, morreu de fadiga por ter corrido 42 quilômetros. O americano Dean Karnazes, cruzando sozinho as planícies da Califórnia, conseguiu correr dez vezes mais em 75 horas. Um professor de Educação Física, ao discutir com a turma o texto sobre a capacidade do maratonista americano, desenhou na lousa uma pista reta de 60 centímetros, que representaria o percurso referido. Se o percurso de Dean Karnazes fosse também em uma pista reta, qual seria a escala entre a pista feita pelo professor e a percorrida pelo atleta?”",
+    "pergunta": "O esporte de alta competição da atualidade produziu uma questão ainda sem resposta:",
+    "alternativas": [
+      "1: 700.",
+      "1: 7000.",
+      "1: 70000.",
+      "1: 700000.",
+      "1: 7000000."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 6,
+    "instituicao": "UEL",
+    "ano": "2007",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/104/p4q6.png",
+    "pergunta": "Observe a figura a seguir:\n\nA figura expressa uma técnica de análise espacial vital para o estabelecimento da análise geográfica e diz respeito a:",
+    "alternativas": [
+      "Diferentes topografias de um mapa.",
+      "Diferentes estratigrafias paisagísticas.",
+      "Diferentes quilometragens rodadas.",
+      "Diferentes escalas espaciais.",
+      "Diferentes perfis longitudinais."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 7,
+    "instituicao": "UEL",
+    "ano": "2021",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/104/p4q7.png",
+    "pergunta": "A figura a seguir mostra a maior fronteira entre dois países no mundo: o Canadá e os Estados Unidos. A sua distância total é de aproximadamente 9.000 km.\n\nConsiderando as medidas em centímetros ilustradas na figura, assinale a alternativa que apresenta, corretamente, a escala da representação.",
+    "alternativas": [
+      "1:60.000.",
+      "1:250.000.",
+      "1:15.000.000.",
+      "1:60.000.000.",
+      "1:150.000.000."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 8,
+    "instituicao": "FUVEST",
+    "ano": "2022",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "A escala cartográfica expressa as dimensões presentes em um mapa e a sua correspondência no terreno, ou seja, é uma abstração adotada que permite transpor a realidade terrestre para o mapa mantendo as proporções. Considerando a distância de 6 cm entre dois municípios em um mapa com escala numérica de 1: 1.000.000, qual é a distância, em linha reta, entre eles?",
+    "alternativas": [
+      "0,6 km.",
+      "6 km.",
+      "6,6 km.",
+      "60 km.",
+      "600 km."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 9,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(UFRN) A escala é um dos recursos utilizados na cartografia para representar qualquer realidade espacial em um mapa.\n\nAssim, é correto afirmar que:",
+    "alternativas": [
+      "a correspondência entre as distâncias na superfície e no mapa, na escala numérica, é indicada por meio de uma reta graduada, tendo como módulo básico o centímetro.",
+      "a escala estabelece a correspondência entre as distâncias representadas e as distâncias reais da superfície cartografada.",
+      "um mapa confeccionado com uma pequena escala abrange uma área pequena, mostrando riqueza de detalhes.",
+      "a escala gráfica a ser utilizada na confecção de um mapa deverá ser maior quando se tratar de uma área geográfica de grande dimensão."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 10,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(IFG) Considere dois mapas do Brasil, sendo que o mapa “A” tem escala de 1/10.000.000 e o mapa “B”, escala de 1/50.000.000. Assinale a alternativa correta.",
+    "alternativas": [
+      "Ambos os mapas apresentam a mesma riqueza de detalhes.",
+      "O mapa “A” apresenta menor riqueza de detalhes que o mapa “B”.",
+      "O mapa “A apresenta maior riqueza de detalhes que o mapa “B”.",
+      "O mapa “B” é proporcionalmente cinco vezes maior que o mapa “A”.",
+      "Os dois mapas possuem o mesmo tamanho."
+    ],
+    "correta": 2,
+    "comentario": ""
+  }
+]

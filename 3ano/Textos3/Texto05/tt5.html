@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -50,14 +49,6 @@
 
 
     <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
     </style>
 
 
@@ -91,8 +82,8 @@
             <div class="w3-container w3-padding-16">
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
 
-                <p><strong>Objetivo:</strong> Citar e explicar as tentativas de medir o desenvolvimento, com destaque
-                    para o PIB, o IDH, o índice GINI e a desigualdade de acesso a elementos fundamentais.</p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Citar e explicar as tentativas de medir o desenvolvimento, com destaque
+                    para o PIB, o IDH, o índice GINI e a desigualdade de acesso a elementos fundamentais.</span></p>
             </div>
 
 
@@ -793,107 +784,21 @@
 
 
 
+        
         <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
-
-            <div class="w3-row-padding">
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-green w3-card-4 pulsar">
-                        <a href="https://www.dw.com/..." target="_blank">
-                            <span class="w3-text-white">Quase metade da população mundial vive na pobreza</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-blue w3-card-4 pulsar">
-                        <a href="https://www.acnur.org/..." target="_blank">
-                            <span class="w3-text-white">108,4 milhões de pessoas deslocadas à força</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-white w3-card-4 pulsar">
-                        <a href="https://news.un.org/..." target="_blank">
-                            <span class="w3-text-black">Fome cresce no mundo e atinge 9,8% da população</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-deep-orange w3-card-4 pulsar">
-                        <a href="https://cee.fiocruz.br/..." target="_blank">
-                            <span class="w3-text-white">2,2 bilhões de pessoas não têm água potável</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
             <div class="w3-container w3-padding-64">
-                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                        Bibliográficas</strong></h3>
-
-
-
-                <!-- CARD VESENTINI -->
-                <div class="w3-row w3-margin-bottom">
-                    <div class="w3-card-4 w3-white w3-border-left w3-border-red w3-padding-16"
-                        style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                        <div class="w3-container">
-                            <!-- Tag Vermelha para Livro Didático -->
-                            <span class="w3-tag w3-red w3-small fontePixel">Livro Didático</span>
-                            <p class="w3-large w3-margin-top">
-                                VESENTINI, José William. <strong>Geografia: o mundo em transição</strong>.
-                                Ensino médio. 2. ed.
-                                <br>
-                                <span class="w3-opacity w3-medium">São Paulo: Ática, 2013.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-row w3-margin-bottom">
-                    <div class="w3-card-4 w3-white w3-border-left w3-border-deep-orange w3-padding-16"
-                        style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                        <div class="w3-container">
-                            <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
-                            <p class="w3-large w3-margin-top">
-                                VOGLER, Christopher. <strong>A jornada do escritor</strong>.
-                                <span class="w3-opacity w3-medium">Rio de Janeiro: Nova Fronteira, 2006.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- CARD BNCC -->
-                <div class="w3-row w3-margin-bottom">
-                    <div class="w3-card-4 w3-white w3-border-left w3-border-amber w3-padding-16"
-                        style="border-left-width: 8px !important; border-radius: 0 10px 10px 0;">
-                        <div class="w3-container">
-                            <!-- Cor Amber (Âmbar) para documentos oficiais -->
-                            <span class="w3-tag w3-amber w3-text-white w3-small fontePixel">Diretriz Nacional</span>
-                            <p class="w3-large w3-margin-top">
-                                BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>.
-                                <span class="w3-opacity w3-medium">Brasília: MEC/CONSED/UNDIME, 2018.</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
             </div>
-        </div>
-
-
-
-
-
-        <br><br>
+        </div><br><br>
 
         <div class="w3-padding-48">
             <span id="numero"></span>

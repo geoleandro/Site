@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º ano - Texto 08</title>
+
+    <!-- Seus estilos existentes -->
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+
+    <!-- Jogo da memória -->
+    <link rel="stylesheet" href="../../../estilos/memory-game.css">
+
+
+    <!-- Carregue o JS do jogo DEPOIS do bloco de configuração acima -->
+    <script src="../../../js/memory-game.js" defer></script>
+
+    <!-- Seus outros scripts -->
+    <script src="../../../js/jstextos.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================================================
+         SEÇÃO DO JOGO DA MEMÓRIA
+         Troque apenas o bloco <script> abaixo para cada texto.
+    ============================================================ -->
+
+    <div class="topico">
+
+        <p class="caixa">Reforce seu conhecimento</p>
+
+        <h4>Selecione os conceitos com seus pares correspondentes:</h4>
+
+        <!-- O jogo monta aqui automaticamente -->
+        <div id="memory-game-root"></div>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this); this.style.display='none'">
+            Próximo
+        </button>
+        <hr>
+    </div>
+
+    <!-- ============================================================
+         CONFIGURAÇÃO DO JOGO — altere para cada texto/tema
+    ============================================================ -->
+    <script>
+        /* Título exibido no cabeçalho do jogo */
+        window.MEMORY_TITLE = 'Industrialização';
+
+        /* Pares de conceitos — mínimo 2, máximo recomendado 8 */
+        window.PAIRS = [
+            {
+                id: 1,
+                emoji: '🏭',
+                concept: 'Industrialização',
+                pair: 'Fábricas',
+                group: 'Produção',
+                color: '#1D9E75'
+            },
+            {
+                id: 2,
+                emoji: '🌐',
+                concept: 'Globalização',
+                pair: 'Conexão mundial',
+                group: 'Economia',
+                color: '#185FA5'
+            },
+            {
+                id: 3,
+                emoji: '💡',
+                concept: 'Tecnologia',
+                pair: 'Inovação',
+                group: 'MTCI',
+                color: '#BA7517'
+            },
+            {
+                id: 4,
+                emoji: '🏢',
+                concept: 'Multinacionais',
+                pair: 'Presença global',
+                group: 'Empresas',
+                color: '#993556'
+            },
+            {
+                id: 5,
+                emoji: '🔩',
+                concept: 'Fordismo',
+                pair: 'Produção em massa',
+                group: 'Sistemas',
+                color: '#534AB7'
+            },
+            {
+                id: 6,
+                emoji: '🏛️',
+                concept: 'Keynesianismo',
+                pair: 'Intervenção estatal',
+                group: 'Política econômica',
+                color: '#993C1D'
+            },
+        ];
+    </script>
+
+    
+
+</body>
+</html>

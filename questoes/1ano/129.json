@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "instituicao": "UFPR",
+    "ano": "2013",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/129/p29q1.png",
+    "pergunta": "Assinale a alternativa que identifica corretamente:\n\nI. o nome da vegetação que ocupava originalmente as áreas representadas no mapa.\n\nII. um dos fatores responsáveis pela redução dessas áreas na atualidade.\n\nIII. um aspecto que justifica sua importância para a sociedade.",
+    "alternativas": [
+      "I. Matas tropicais e subtropicais; II. Secas prolongadas devido a fenômenos ocasionais como El Niño; III. Fornecimento de plantas específicas para a indústria farmacêutica.",
+      "I. Florestas pluviais (Rainforest); II. Queimadas associadas à expansão da agropecuária; III. Megadiversidade, possuindo cerca de 70% das espécies vegetais e animais do mundo.",
+      "I. Savanas; II. Queimadas associadas à expansão da agropecuária; III. Biodiversidade, possuindo um dos mais ricos estoques genéticos do globo.",
+      "I. Floresta pluviais (Rainforest); II. Processo de desertificação associado ao crescimento da atividade industrial; III. Biodiversidade, possuindo um dos mais ricos estoques genéticos do globo.",
+      "I. Savanas; II. Processo de desertificação associado ao crescimento da atividade industrial; III. Megadiversidade, possuindo cerca 70% das espécies vegetais e animais do mundo."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 2,
+    "instituicao": "UFSM-RS",
+    "ano": "2011",
+    "dificuldade": "",
+    "tags": [],
+    "fonte_apoio": "LUCCI, E. A.; MENDONÇA, C.; BRANCO, A. L. Geografia Geral e do Brasil – ensino médio. São Paulo: Saraiva, 2005. p. 326.",
+    "imagem_apoio": "1ano/img/129/p29q2.png",
+    "pergunta": "Observe a figura:\n\nEm relação ao perfil da vegetação mostrado na figura, é CORRETO afirmar que caracteriza o bioma de formação vegetal do tipo:",
+    "alternativas": [
+      "floresta equatorial com o dossel superior formado por árvores de grande porte e, no nível médio, por espécies arbóreas de médio porte e epífitas.",
+      "savana composta por dois estratos, o arbóreo-arbustivo de caráter lenhoso e o herbáceo-subarbustivo, formado pelas gramíneas e outras ervas.",
+      "tundra com cobertura vegetal de pequeno porte, constituída de musgos, liquens e gramíneas de ciclo vegetativo curto.",
+      "ﬂoresta boreal, caracterizada por uma vegetação de grande porte, relativamente homogênea, representada pela taiga.",
+      "vegetação mediterrânea bastante variada, com predominância de arbustos."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 3,
+    "instituicao": "ENEM",
+    "ano": "2008",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "“As florestas tropicais estão entre os maiores, mais diversos e complexos biomas do planeta. Novos estudos sugerem que elas sejam potentes reguladores do clima, ao provocarem um fluxo de umidade para o interior dos continentes, fazendo com que essas áreas de floresta não sofram variações extremas de temperatura e tenham umidade suficiente para promover a vida. Um fluxo puramente físico de umidade do oceano para o continente, em locais onde não há florestas, alcança poucas centenas de quilômetros. Verifica-se, porém, que as chuvas sobre florestas nativas não dependem da proximidade do oceano. Esta evidência aponta para a existência de uma poderosa \"bomba biótica de umidade\" em lugares como, por exemplo, a bacia amazônica. Devido à grande e densa área de folhas, as quais são evaporadores otimizados, essa \"bomba\" consegue devolver rapidamente a água para o ar, mantendo ciclos de evaporação e condensação que fazem a umidade chegar a milhares de quilômetros no interior do continente.”",
+    "fonte_apoio": "A. D. Nobre. Almanaque Brasil Socioambiental. Instituto Socioambiental, 2008, p. 368-9 (com adaptações).",
+    "pergunta": "As florestas crescem onde chove, ou chove onde crescem as florestas? De acordo com o texto,",
+    "alternativas": [
+      "onde chove, há floresta.",
+      "onde a floresta cresce, chove.",
+      "onde há oceano, há floresta.",
+      "apesar da chuva, a floresta cresce.",
+      "no interior do continente, só chove onde há floresta."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 4,
+    "instituicao": "UFRN",
+    "ano": "2007",
+    "dificuldade": "",
+    "tags": [],
+    "fonte_apoio": "Adaptado de MAGNOLI, Demétrio; ARAÚJO, Regina. Projeto de ensino de geografia. Geografia geral. São Paulo: Moderna, 2000. p. 63. A área hachurada em destaque no mapa, corresponde ao bioma",
+    "imagem_apoio": "1ano/img/129/p29q4.png",
+    "pergunta": "Os biomas são definidos por uma rede de interação entre o solo, a vida animal e vegetal e o clima. O mapa a seguir apresenta a espacialização dos biomas existentes no mundo.\n\nA área hachurada em destaque no mapa, corresponde ao bioma",
+    "alternativas": [
+      "estepes, que apresenta escassez de umidade e vegetação de pequeno porte.",
+      "floresta equatorial, que apresenta elevadas e temperaturas e alta pluviosidade.",
+      "floresta de coníferas, caracterizado por apresentar uma formação vegetal pouco intensa.",
+      "savana, caracterizado por uma formação vegetal típica das regiões de clima tropical quente."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 5,
+    "instituicao": "ENEM",
+    "ano": "2006",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "As florestas tropicais úmidas contribuem muito para a manutenção da vida no planeta, por meio do chamado sequestro de carbono atmosférico. Resultados de observações sucessivas, nas últimas décadas, indicam que a floresta amazônica é capaz de absorver até 300 milhões de toneladas de carbono por ano. Conclui-se, portanto, que as florestas exercem importante papel no controle.",
+    "alternativas": [
+      "das chuvas ácidas, que decorrem da liberação, na atmosfera, do dióxido de carbono resultante dos desmatamentos por queimadas.",
+      "das inversões térmicas, causadas pelo acúmulo de dióxido de carbono resultante da não-dispersão dos poluentes para as regiões mais altas da atmosfera.",
+      "da destruição da camada de ozônio, causada pela liberação, na atmosfera, do dióxido de carbono contido nos gases do grupo dos clorofluorcarbonos.",
+      "do efeito estufa provocado pelo acúmulo de carbono na atmosfera, resultante da queima de combustíveis fósseis, como carvão mineral e petróleo.",
+      "e) da eutrofização das águas, decorrente da dissolução, nos rios, do excesso de dióxido de carbono presente na atmosfera."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 6,
+    "instituicao": "UCS",
+    "ano": "2006",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "“Um bioma terrestre se caracteriza por localizar-se em regiões quentes e úmidas, baixas latitudes, com vegetação higrófila, latifoliada e heterogênea. Fazem parte desse bioma espécies vegetais de grande e médio porte, como o mogno, o jacarandá, a castanheira, o cedro, a imbuia e a peroba, além de palmáceas, arbustos, briófitas e bromélias.”",
+    "pergunta": "A formação vegetal que compõe o bioma acima é denominada floresta.",
+    "alternativas": [
+      "temperada.",
+      "de coníferas.",
+      "subtropical.",
+      "estacional.",
+      "pluvial tropical."
+    ],
+    "correta": 4,
+    "comentario": ""
+  },
+  {
+    "id": 7,
+    "instituicao": "PUC-MG",
+    "ano": "2004",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/129/p29q7.png",
+    "pergunta": "Observe o diagrama a seguir. Ele representa a relação da precipitação com a distribuição dos biomas.\n\nConsiderando as observações a partir do diagrama, NÃO se pode afirmar que:",
+    "alternativas": [
+      "a ocorrência de estratos arbustivos e herbáceos tende a ampliar-se com o aumento do volume pluviométrico.",
+      "a densidade populacional das espécies tende a diminuir à medida que decresce o volume pluviométrico.",
+      "os biomas ﬂorestais tendem a concentrar-se em regiões onde não há restrições do ponto de vista hídrico.",
+      "a existência e a variedade das comunidades ﬂorestais são condicionadas, principalmente, por fatores de precipitação."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 8,
+    "instituicao": "UNIOESTE-PR",
+    "ano": "2002",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "\"A união de todos os espaços onde há vida na Terra forma uma tênue cobertura de processos vitais em interação: a biosfera. Essa complexa rede de interdependências se expressa em grandes conjuntos de comunidades terrestres e aquáticas\".",
+    "fonte_apoio": "(CONTI, José B.; FURLAN, Sueli A. Geoecologia: o clima, os solos e a biota. In: ROSS, Jurandyr L. S. (org.). Geografia do Brasil. São Paulo: EDUSP, 1995, p. 110).",
+    "pergunta": "No que se refere à biosfera, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      "A biosfera, a pedosfera, a atmosfera, a litosfera, a hidrosfera e a antroposfera formam um conjunto que, a partir das relações articuladas e sistêmicas entre as mesmas, possibilita a manutenção da vida em nosso planeta.",
+      "Em razão da estreita relação entre o clima e a biosfera em nosso planeta, possíveis alterações climáticas em decorrência de fatores naturais ou aceleradas pela ação do homem podem comprometer determinadas formas de vida com baixo limite de tolerância para suportar mudanças nas condições ecológicas para as quais elas foram naturalmente adaptadas.",
+      "Os grandes biomas do nosso planeta são associações vegetais marcadas pela sua heterogeneidade interna, compostos por ecossistemas aquáticos e terrestres que independem das condições de temperatura como fator de influência em sua composição.",
+      "A radiação luminosa proveniente do Sol constitui-se em fonte primária de energia para os diversos ecossistemas.",
+      "Sob condições naturais, tanto os organismos animais como vegetais estão programados geneticamente para sobreviver num conjunto de condições ambientais que têm certos limites de tolerância quanto às condições de temperatura, umidade, acesso a nutrientes, etc."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 9,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "1ano/img/129/p29q9.png",
+    "pergunta": "(UFJF-MG) O esquema abaixo representa modificações ambientais ocorridas durante os últimos 20 000 anos em uma região de montanha. Observe as alterações ambientais.\n\nCom relação às modificações é CORRETO afirmar:",
+    "alternativas": [
+      "não houve ação erosiva provocada pelo degelo.",
+      "A diversidade biológica foi drasticamente reduzida.",
+      "Ocorreu diminuição da temperatura.",
+      "Houve diminuição da aridez.",
+      "O desenvolvimento ﬂorestal foi consequência da queda da temperatura."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 10,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(UFMG) Todas as afirmativas sobre as savanas estão corretas, EXCETO:",
+    "alternativas": [
+      "A ﬂora e a fauna das savanas estão submetidas à alternância de seca e chuva mais do que a de calor e frio.",
+      "A pequena produtividade biológica das savanas é responsável pela sua fauna pobre e pouco diversificada.",
+      "As atividades pastoris são as que mais se adaptam às savanas, tornando desnecessária a eliminação total desta vegetação.",
+      "As savanas estão presentes em áreas planálticas da América, África, Ásia e Austrália, nas latitudes tropicais.",
+      "As savanas são formações arbóreo-arbustivas e herbáceas abertas permitindo que os raios solares cheguem até o solo."
+    ],
+    "correta": 1,
+    "comentario": ""
+  }
+]

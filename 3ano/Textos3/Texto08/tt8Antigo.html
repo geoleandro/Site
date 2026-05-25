@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <script src="../../../estilos/jstextos.js" defer></script>
+
+    <title>3º ano - Texto 08 </title>
+
+
+
+    <style>
+        .topico {
+            display: none;
+        }
+
+        .topico:nth-child(1),
+        .topico.mostrar {
+            display: block
+        }
+
+
+        .postit-tp9 {
+            background: #e6ff5b;
+
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font-family: pixel;
+            margin-bottom: 60px;
+            margin-top: 60px;
+
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            Color: rgb(0, 0, 0);
+            font-size: 18px;
+            box-shadow: 2px 4px 6px #444;
+            -moz-box-shadow: 2px 4px 6px #444;
+            -webkit-box-shadow: 2px 4px 6px #444;
+            transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+        }
+
+        .postit-tp9>a {
+            text-decoration: none;
+        }
+
+        .postit-tp9>a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* 
+Css do memory card */
+
+        .container {
+            display: grid;
+            place-items: center;
+
+        }
+
+        .heading {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 1em;
+        }
+
+
+        @media screen and (max-width: 680px) {
+
+
+
+
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 1em;
+            }
+
+
+
+
+        }
+
+        .card {
+            height: 140px;
+            width: 140px;
+            background-color: #ffff00;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            transition: 0.3s all ease;
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 1;
+            transition: 0.3s all ease;
+        }
+
+        .card2 img {
+            width: 90%;
+            max-height: 120px;
+            opacity: 0;
+            transition: 0.3s all ease;
+        }
+
+        .card p {
+
+            font-size: 12px;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .card.clicked {
+            background-color: orange;
+        }
+
+        .card.checked {
+            background-color: lightgreen;
+        }
+
+        .card.clicked img,
+        .card.checked img {
+            opacity: 1;
+        }
+
+        .card.shake {
+            background-color: #f15f5f;
+            animation: shake 0.5s;
+        }
+
+        #score {
+            margin-bottom: 10px;
+        }
+
+        .desativado {
+
+
+            cursor: not-allowed;
+            pointer-events: none;
+
+        }
+
+
+
+
+
+
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="topico">
+
+        <div class="centerBar">
+
+            <!-- Navigation (Stays on Top) -->
+            <div class="w3-top w3-bar w3-black  larguraBar ">
+
+                <a href="../../../Duvid3Ano.html" class=" w3-button  margemTop w3-large ">3º ano</a>
+
+                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
+
+                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
+                        alt="tp3Foto4" width="32" height="32"></span>
+
+            </div>
+        </div>
+
+        <div class="w3-padding-top-48">
+            <div class="w3-white larguraBar w3-padding ladoDireito">
+
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
+                        id="decrease-font" title="Diminuir fonte">A -</button></div>
+                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
+                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            </div>
+        </div>
+
+
+
+        <h1 id="h1"> Texto 08 - Industrialização mundial II</h1>
+
+
+        <p><strong> Conteúdo:</strong> Industrialização; Globalização; meio técnico-científico-internacional; fordismo;
+            keynesianismo; Multinacionais; Nova Divisão Internacional do Trabalho.
+
+        </p>
+
+        <p><strong>Objetivo:</strong> Compreender a constituição do meio técnico-científico-informacional e sua relação
+            com os processos industriais no período atual da globalização. </p>
+
+        <button class="btnShow"
+            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
+        <hr>
+
+    </div>
+
+
+    <div class="topico">
+
+
+        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
+        <br>
+
+        <div class="area">
+            <input class="input" type="text" id="pq0" name="pq0">
+        </div>
+
+
+        <p id="resp0"></p>
+
+        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
+
+
+        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2> Introdução </h2>
+
+
+        <p> <span class="primeiraLetra">N</span>aula passada vimos que a Revolução Industrial mudou o mundo. Máquinas a
+            vapor, produção têxtil mecanizada e ferrovias - tudo isso transformou a produção e a sociedade no final do
+            século XVIII. </p>
+
+        <p> Mas o que aconteceu depois dessa revolução inicial? Como chegamos ao mundo atual de alta tecnologia e
+            globalização? É isso que vamos explorar hoje! </p>
+
+        <p>
+            No período atual, vivemos em um mundo interconectado, onde a informação e a tecnologia moldam nossa economia
+            e nossas vidas de maneiras inimagináveis na época da Revolução Industrial. </p>
+
+        <p>Nesta aula, vamos desvendar o meio técnico-científico-informacional, entender o Fordismo, o Keynesianismo e
+            como as multinacionais se encaixam na Nova Divisão Internacional do Trabalho (NDIT).</p>
+
+        <p>Por que é tão importante estudar tudo isso? Bem, compreender esses conceitos nos ajuda a decifrar a
+            complexidade da economia global de hoje. Além disso, nos prepara para analisar criticamente o mundo ao nosso
+            redor, entendendo seus impactos sociais, econômicos e ambientais. Vamos lá!</p>
+
+
+
+
+        <div class="w3-margin">
+            <img id="imagem1" src="tt08f01.png" alt="tt08f01" class="w3-mobile" ondblclick="zoomIn('imagem1')"
+                oncontextmenu="zoomOut('imagem1'); return false;">
+
+            <span class="w3-small w3-margin-left" id="citacao1"> Fonte: pexels.com </span>
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje: </h2>
+
+
+
+
+        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
+            <ul>
+
+
+                <li>1.	O que foi a Revolução Industrial e como ela transformou a produção e a sociedade?</li>
+
+
+                <li>2.	Como a industrialização impactou as cidades e as estruturas sociais?</li>
+
+                <li> 3.	Quais países se destacaram no desenvolvimento industrial durante a fase concorrencial da história do capitalismo?</li>
+
+                <li> 4.	Explique o conceito de globalização e como ela está relacionada à industrialização.</li>
+
+                <li> 5.	Cite exemplos de países que se tornaram potências manufatureiras devido à globalização.</li>
+
+                <li>6.	Qual é o papel das multinacionais na economia global? Dê exemplos de empresas multinacionais.</li>
+
+                <li>7.	Explique o Fordismo e como ele revolucionou a produção em massa.</li>
+
+                <li>8.	O que é o Keynesianismo e como ele propõe que o Estado intervenha na economia?</li>
+
+                <li>9.	Descreva o Meio Técnico-Científico-Informacional (MTCI) e sua importância na era contemporânea.</li>
+
+                <li>10.	Como a Nova Divisão Internacional do Trabalho (NDIT) mudou a forma como o trabalho e a produção estão organizados em nível global? Dê exemplos de países envolvidos nesse processo.</li>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Industrialização e globalização</h2>
+
+
+
+
+        <p> Você já parou para pensar como nossas vidas foram transformadas pela <strong>industrialização</strong>?
+            Imagine sair da era das pequenas produções artesanais para um mundo de fábricas gigantescas, máquinas
+            avançadas e produtos em larga escala. Isso é a industrialização!</p>
+
+        <div class="w3-margin"><img id="imagem2" src="tt08f02.png" alt="ts01f02" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao2"> Fonte: pexel.com </span>
+
+        </div>
+
+
+
+
+        <p> A industrialização não apenas mudou a forma como produzimos, mas também transformou economias e sociedades.
+            Aqueles tempos em que a agricultura era a principal atividade econômica deram lugar a uma nova era de
+            produção em massa. Com a adoção de tecnologias avançadas e máquinas poderosas, fábricas surgiram por toda
+            parte, impulsionando o crescimento econômico e criando empregos.</p>
+
+        <p>Mas não para por aí! Essa revolução industrial também mudou nossas cidades. O crescimento urbano foi
+            acelerado, a migração de áreas rurais para áreas urbanas se intensificou e novas estruturas sociais
+            surgiram. </p>
+
+        <div class="w3-margin"><img id="imagem13" src="tt08f13.png" alt="tt08f013" class="w3-mobile">
+        </div>
+
+        <p>Na história do capitalismo, países como os da Europa Ocidental, América Anglo-Saxônica e Japão se destacaram
+            por seu desenvolvimento industrial durante a fase concorrencial. Eles conseguiram construir economias fortes
+            que se mantêm até hoje como as regiões mais industrializadas do mundo. Por outro lado, outras nações
+            industrializadas seguiram um caminho diferente, impulsionadas pelo Estado ou pela ascensão do capitalismo
+            monopolista e exportação de capitais. Esse processo resultou em uma distribuição desigual da indústria pelo
+            mundo, refletindo as diferentes formas de desenvolvimento econômico ao longo do tempo.</p>
+
+
+        <p>Agora, vamos falar sobre a globalização. É como se o mundo todo estivesse cada vez mais conectado, não é
+            mesmo? E adivinha quem teve um papel crucial nisso? A industrialização! </p>
+
+        <p>A <strong>globalização</strong> é o processo pelo qual países, economias e culturas se integram e se conectam
+            em escala mundial. E adivinha quem foi o grande impulsionador desse processo? A industrialização! </p>
+
+        <p> China, Índia e Alemanha são exemplos brilhantes desse fenômeno. A China, conhecida por suas fábricas que
+            produzem de tudo, desde eletrônicos até roupas, se tornou uma potência manufatureira global. Isso
+            impulsionou sua economia a níveis estratosféricos, tornando-a uma das principais exportadoras do mundo.</p>
+
+        <div class="w3-margin"><img id="imagem3" src="tt08f03.png" alt="tt08f03" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao3"> Cidade de Shenzhen, o “Vale do Silício chinês”. Fonte:
+                https://gauchazh.clicrbs.coml</span>
+        </div>
+
+
+
+
+        <p> A Índia não ficou para trás! Com sua indústria de tecnologia da informação em alta, cidades como Bangalore e
+            Hyderabad se destacam como centros globais de serviços de software e outsourcing. Um verdadeiro boom
+            tecnológico!</p>
+
+        <div class="w3-margin"><img id="imagem4" src="tt08f04.png" alt="tt08f04" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao4"> Bangalore, ìndia. Fonte: pexel.com </span>
+        </div>
+
+
+
+
+        <p> E que tal a Alemanha? Ah, a Alemanha! Conhecida por sua indústria automobilística de renome mundial, como
+            Volkswagen, BMW e Mercedes-Benz, ela é líder na produção de veículos e tecnologia automotiva. Os carros
+            alemães são sinônimos de qualidade e estão em alta demanda em todo o mundo.</p>
+
+        <div class="w3-margin"><img id="imagem5" src="tt08f05.png" alt="tt08f05" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao5"> Fonte: https://www.pexels.com/pt-br/procurar/alemanha/
+            </span>
+        </div>
+
+
+
+        <p> Agora, vamos para os dados! Em 2021, a China se tornou a maior economia do mundo em termos de PIB em
+            paridade de poder de compra. A Índia é o terceiro maior produtor de aço do mundo, refletindo seu crescimento
+            industrial. </p>
+
+        <p>Mas nem tudo são flores. A industrialização também traz seus desafios. Como lidar com os impactos no meio
+            ambiente? E a migração das áreas rurais para as urbanas, quais os impactos sociais? E a desigualdade
+            econômica, como ela é afetada pela concentração de indústrias em determinadas regiões? </p>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa"> Agora é com você!</p>
+
+        <h3> Pergunta para reflexão: Qual o papel das multinacionais nesse cenário de industrialização e globalização?
+            Como as relações comerciais entre países foram influenciadas por esse processo? E a tecnologia, como ela tem
+            facilitado toda essa integração industrial global?</h3>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+
+    <div class="topico">
+
+        <h2> Meio Técnico-Científico-Informacional (MTCI) </h2>
+
+
+
+
+        <p>Vamos agora adentrar o fascinante mundo do Meio Técnico-Científico-Informacional, ou simplesmente MTCI. Esse
+            conceito, cunhado pelo renomado geógrafo brasileiro Milton Santos, é essencial para compreendermos a era
+            contemporânea e a forma como a tecnologia e a informação moldam nossa sociedade. </p>
+
+        <div class="w3-margin"><img id="imagem6" src="tt08f06.png" alt="tt08f06" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao6"> Fonte: pexel.com </span>
+        </div>
+
+
+
+        <p> Milton Santos define o MTCI como um conjunto de técnicas, métodos e sistemas utilizados na produção
+            contemporânea, aliados ao conhecimento científico e à difusão massiva de informações. É como se fosse o
+            cérebro por trás da economia globalizada, guiando os processos industriais e as interações sociais.</p>
+
+        <h3> Importância do MTCI na Era Contemporânea</h3>
+
+        <p> Para entendermos a importância do MTCI, basta olharmos ao nosso redor: smartphones que conectam pessoas em
+            diferentes continentes, fábricas automatizadas que produzem em alta escala, algoritmos que guiam as decisões
+            financeiras. Tudo isso faz parte do MTCI.</p>
+
+        <p> Na era contemporânea, o MTCI se tornou um pilar fundamental da economia, impulsionando a inovação, a
+            produtividade e a competitividade das nações no cenário global.</p>
+
+        <h3> Como a Tecnologia e a Informação Moldam os Processos Industriais e a Economia Global</h3>
+
+        <p> Vamos agora mergulhar um pouco mais fundo nesse universo. A tecnologia e a informação estão intrinsecamente
+            ligadas aos processos industriais modernos.</p>
+
+        <p>Por exemplo, a automação nas fábricas permite uma produção mais eficiente e rápida, reduzindo custos e
+            aumentando a competitividade das empresas no mercado global.</p>
+
+        <div class="w3-margin"><img id="imagem7" src="tt08f07.png" alt="tt08f07" class="w3-mobile">
+            <span class="w3-small w3-margin-left" id="citacao7"> Automação nas fábricas. Fonte: Pixalbay. </span>
+
+
+        </div>
+
+        <p>Além disso, a informação é o combustível da economia atual. Empresas que conseguem coletar, analisar e
+            utilizar dados de forma eficaz têm uma vantagem significativa.</p>
+
+        <h3>Exemplos Práticos do MTCI</h3>
+
+        <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
+
+            <p>Vamos trazer alguns exemplos práticos para ilustrar o MTCI em ação:</p>
+
+            <div class="w3-margin">
+
+                <ul>
+                    <li>Indústria 4.0: Este é um termo que se refere à quarta revolução industrial, onde a fusão de
+                        tecnologias está transformando os processos de produção. Robôs colaborativos, Internet das
+                        Coisas
+                        (IoT) e análise de dados em tempo real são alguns dos pilares dessa revolução.</li>
+                    <li>Cidades Inteligentes: Aqui vemos o MTCI aplicado no contexto urbano. Sensores que monitoram o
+                        tráfego, sistemas de iluminação inteligente que economizam energia e aplicativos que facilitam a
+                        vida dos cidadãos são exemplos disso.</li>
+                    <li>Logística Global: A forma como mercadorias são transportadas pelo mundo também é influenciada
+                        pelo
+                        MTCI. Rastreamento por GPS, sistemas de gestão de estoque automatizados e algoritmos de
+                        otimização
+                        de rotas são essenciais para uma logística eficiente.</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <h3>Comparação entre Países no Uso do MTCI</h3>
+
+        <p>Para entendermos melhor a aplicação do MTCI, podemos comparar diferentes países:</p>
+
+        <p><strong>Estados Unidos:</strong> Uma potência no uso do MTCI, os Estados Unidos são líderes em inovação
+            tecnológica. Empresas
+            como Google, Apple e Amazon são exemplos de como a tecnologia impulsiona a economia americana.</p>
+
+        <p><strong>Japão</strong>: Conhecido pela sua eficiência e precisão, o Japão utiliza o MTCI em sua indústria
+            automotiva, na
+            robótica e em sistemas de transporte avançados.</p>
+
+
+        <p><strong>Brasil</strong>: O Brasil ainda está em processo de adoção plena do MTCI, mas já vemos avanços.
+            Startups de
+            tecnologia, aplicativos de serviços e automação industrial são alguns exemplos do uso crescente da
+            tecnologia no país.</p>
+
+
+
+        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+
+            <h4><strong>Resumo da Definição de MTCI por Milton Santos</strong></h4>
+
+
+
+            <p> <img src="tt08f12.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:160px">LO
+                Meio Técnico-Científico-Informacional (MTCI), conforme definido pelo renomado geógrafo brasileiro Milton
+                Santos, representa uma nova fase na evolução da sociedade moderna. Nesta fase, a interação entre
+                ciência, tecnologia e mercado se torna central para entendermos as dinâmicas globais. O MTCI reflete a
+                profunda interação entre ciência e técnica, a ponto de alguns autores preferirem o termo "tecnociência"
+                para ressaltar a inseparabilidade desses conceitos e práticas.</p>
+
+            <p>O MTCI é marcado pela presença do mercado global, onde a ciência e a tecnologia se tornam impulsionadoras
+                do crescimento econômico e das mudanças sociais. Os objetos técnicos dessa fase são simultaneamente
+                técnicos e informacionais, visto que surgem como informação e têm a informação como principal energia de
+                funcionamento. Milton Santos destaca que a união entre técnica, ciência e mercado global oferece uma
+                nova interpretação à questão ambiental, uma vez que as mudanças na natureza também se subordinam a essa
+                lógica.</p>
+
+            <p>Neste período, observamos uma transformação profunda da paisagem e dos espaços geográficos. A natureza
+                natural começa a recuar diante do avanço da técnica, e os espaços são cada vez mais requalificados para
+                atender aos interesses dos atores hegemônicos da economia, cultura e política. O MTCI, portanto, é a
+                face geográfica da globalização, onde o espaço tende a funcionar como uma unidade, seguindo uma lógica
+                global que se impõe a todos os territórios e contribui para os processos encadeados da globalização. É
+                uma nova era em que a informação se torna o vetor fundamental do processo social, moldando a vida e a
+                interação humana em escala global.</p>
+
+
+
+
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Fordismo: A Revolução da Produção em Massa </h2>
+
+
+
+
+        <p>Vamos começar com o Fordismo, uma verdadeira revolução na forma como produzimos bens. Imagine-se nos anos
+            1900, lá nos Estados Unidos. Henry Ford, o cara por trás da famosa Ford Motors, sacudiu o mundo com uma
+            ideia simples, mas genial: a linha de produção em massa. </p>
+
+        <div class="w3-margin"><img id="imagem8" src="tt08f08.png" alt="tt08f08" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao8"> Fonte: Estudo prático/fordismo.</span>
+
+        </div>
+
+
+
+
+        <p> Isso mesmo, pessoal! O Fordismo trouxe a ideia de que, ao dividir o trabalho em tarefas simples e
+            repetitivas, era possível aumentar a eficiência e reduzir custos. O resultado? Carros, por exemplo, que
+            antes eram um luxo para poucos, se tornaram acessíveis para a classe média.</p>
+
+        <p> E não foi só nos EUA não, meus amigos. Olha só o Japão! Depois da Segunda Guerra Mundial, o país adotou o
+            Fordismo e virou potência automobilística com empresas como Toyota e Honda dominando o mercado global.</p>
+
+        <h3> Keynesianismo: O Estado como Regulador da Economia</h3>
+
+        <p> Agora vamos falar do Keynesianismo, uma abordagem econômica que ganhou destaque após a Grande Depressão nos
+            anos 1930. Imagina o caos econômico daquela época, com desemprego em alta e empresas fechando as portas.</p>
+
+        <p> Foi aí que John Maynard Keynes entrou em cena com uma ideia inovadora: o Estado precisava intervir na
+            economia para estimular o crescimento. Ele propôs aumentar os gastos públicos em momentos de crise, investir
+            em obras públicas e reduzir impostos para incentivar o consumo.</p>
+
+        <p> E olha só que interessante, pessoal! O Brasil, lá nos anos 1950 e 1960, abraçou o Keynesianismo com o
+            governo de Juscelino Kubitschek. A construção de Brasília e a implementação de políticas de industrialização
+            foram alguns dos resultados dessa abordagem.</p>
+
+        <h4>Duas Ideias, um Impacto Global</h4>
+
+        <p>E assim, pessoal, vimos como o Fordismo revolucionou a produção em massa, tornando produtos acessíveis para o
+            grande público. E o Keynesianismo trouxe a noção de que o Estado pode e deve intervir na economia para
+            promover o crescimento e estabilidade.</p>
+
+        <p>Essas ideias, que surgiram em contextos históricos diferentes, tiveram um impacto global. De carros nos
+            Estados Unidos à produção de tecnologia no Japão, do crescimento econômico no Brasil às políticas de
+            estímulo na Europa, o Fordismo e o Keynesianismo moldaram o mundo em que vivemos hoje.</p>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <h2> Empresas Multinacionais: Gigantes da Economia Global </h2>
+
+
+
+
+        <p> Para começar, vamos entender o que são as empresas multinacionais. São aquelas grandes empresas que operam
+            em diversos países ao redor do mundo, não se limitando às fronteiras nacionais. Elas têm uma presença
+            poderosa e influente na economia global, muitas vezes dominando setores inteiros.</p>
+
+        <p> Vamos pensar em exemplos concretos. A gigante do varejo, Walmart, é um exemplo clássico de multinacional.
+            Com lojas em mais de 25 países e uma enorme cadeia de suprimentos, o Walmart é uma força a ser considerada
+            no mundo do comércio global.</p>
+
+        <div class="w3-margin"><img id="imagem9" src="tt08f09.png" alt="tt08f09" class="w3-mobile">
+
+            <span class="w3-small w3-margin-left" id="citacao9"> Fonte:
+                https://www.aedb.br/seget/arquivos/artigos21/20332218.pdf </span>
+        </div>
+
+
+
+
+        <p> Outro exemplo é a Apple. Com seus produtos icônicos como o iPhone e o MacBook, a Apple tem fábricas e
+            escritórios em diversos países, coordenando uma complexa cadeia de produção global.</p>
+
+        <h4> O Papel das Multinacionais na Economia</h4>
+
+        <p> Essas empresas não apenas vendem produtos, mas também moldam a economia global. Elas influenciam as
+            políticas governamentais, a distribuição de recursos e até mesmo as tendências de consumo.</p>
+
+        <p>As multinacionais também têm um grande impacto nos países onde operam. Por um lado, podem trazer empregos e
+            investimentos, mas por outro, também podem gerar questões de desigualdade, exploração e impactos ambientais.
+        </p>
+
+
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+    <div class="topico">
+
+        <h2> Nova Divisão Internacional do Trabalho (NDIT) </h2>
+
+
+
+
+        <p> Agora vamos falar sobre a NDIT, que é a forma como o trabalho e a produção estão organizados em nível
+            global.</p>
+
+        <p> Antes, tínhamos uma divisão simples entre países desenvolvidos, que produziam bens de alto valor agregado, e
+            países em desenvolvimento, que forneciam mão de obra barata e recursos naturais.</p>
+
+        <h4> Mudanças na Divisão do Trabalho</h4>
+
+        <p> Mas a NDIT mudou isso. Agora, vemos uma complexa rede de produção global, onde diferentes etapas do processo
+            produtivo são feitas em diferentes países. Por exemplo, um carro pode ser projetado nos EUA, ter suas peças
+            fabricadas na China, montado no México e vendido na Europa.</p>
+
+        <h4> Exemplos de Países na NDIT</h4>
+
+        <p> Vamos olhar para alguns exemplos concretos. A China se tornou conhecida como a "fábrica do mundo", com suas
+            enormes fábricas produzindo uma variedade impressionante de produtos para exportação.</p>
+
+        <p> O México, por sua vez, se destaca na montagem de produtos eletrônicos e automóveis, muitas vezes em parceria
+            com empresas dos EUA.</p>
+
+        <p>E o Brasil, com sua vasta agricultura e recursos naturais, muitas vezes fornece matéria-prima para essas
+            cadeias de produção globais.</p>
+
+        <div class="w3-panel w3-leftbar w3-pale-yellow w3-margin w3-padding">
+
+            <h4>Questões para Reflexão:</h4>
+
+            <p>Agora, vamos nos questionar um pouco. Como essa nova divisão do trabalho afeta os empregos e salários nos
+                diferentes países? Quais são as consequências sociais e ambientais dessa interconexão global? </p>
+
+            <p> Será que os benefícios econômicos das multinacionais estão sendo distribuídos de forma justa? E como
+                podemos pensar em um modelo econômico mais sustentável e equitativo em um mundo cada vez mais
+                globalizado?</p>
+
+            <p>Estas são apenas algumas questões para nos fazer pensar sobre a realidade complexa em que vivemos, onde
+                as fronteiras econômicas se tornam cada vez mais difusas e interligadas. A economia global é uma teia
+                intricada de relações, e compreendê-la é o primeiro passo para transformá-la de maneira positiva. </p>
+
+        </div>
+
+
+
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+        <hr>
+
+
+    </div>
+
+
+
+    <div class="topico">
+
+        <p class="caixa">Reforce seu conhecimento</p>
+
+        <div class="container">
+            <h4 class="">Selecione abaixo os conceitos com seu pares correspondentes sobre os tópicos estudados na aula
+                de hoje:
+            </h4>
+            <!-- <div class="w3-margin">Acertos: <span id="score">0</span></div> -->
+            <div class="cards">
+
+
+                <div class="card" data-animal="1">
+                    <p>Industrialização </p>
+                </div>
+
+                <div class="card" data-animal="1">
+                    <p>Fábricas </p>
+                </div>
+
+
+                <div class="card" data-animal="2">
+                    <p>Globalização </p>
+                </div>
+
+                <div class="card" data-animal="2">
+                    <p>Conexão</p>
+                </div>
+
+                <div class="card" data-animal="3">
+                    <p>Tecnologia </p>
+                </div>
+
+                <div class="card" data-animal="3">
+                    <p>Inovação </p>
+                </div>
+
+                <div class="card" data-animal="4">
+                    <p>Multinacionais </p>
+                </div>
+
+                <div class="card" data-animal="4">
+                    <p>Global</p>
+                </div>
+
+                <div class="card" data-animal="5">
+                    <p>Fordismo </p>
+                </div>
+
+                <div class="card" data-animal="5">
+                    <p>Produção em Massa </p>
+                </div>
+
+                <div class="card" data-animal="6">
+                    <p>Keynesianismo </p>
+                </div>
+
+                <div class="card" data-animal="6">
+                    <p>Intervenção Estatal</p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+
+        <hr>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topico">
+
+        <h2 id="centralizado">Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Qual foi o impacto da Revolução Industrial na vida das pessoas comuns?
+            </strong> </p>
+
+        <p><span class="primeiraLetra">R:</span> A Revolução Industrial teve diversos impactos na vida das pessoas
+            comuns.
+            Entre eles, o surgimento das fábricas e o aumento da urbanização levaram a mudanças nas condições de
+            trabalho
+            e no estilo de vida das pessoas. Muitos trabalhadores passaram a viver em áreas urbanas próximas às
+            fábricas,
+            enfrentando longas jornadas de trabalho e condições precárias.</p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>Como a globalização afeta o consumo de produtos
+                ao redor do mundo?</strong></p>
+
+        <p><span class="primeiraLetra">R:</span> A globalização impacta diretamente o consumo de produtos ao redor do
+            mundo. Com a interconexão das economias, produtos fabricados em um país podem ser facilmente encontrados e
+            consumidos em outros. Isso leva a uma maior diversidade de produtos disponíveis, mas também pode resultar em
+            padrões de consumo padronizados em todo o mundo.</p>
+
+        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+                Como a tecnologia tem influenciado a indústria moderna?
+            </strong></p>
+
+        <p><span class="primeiraLetra">R:</span> A tecnologia tem sido fundamental para a indústria moderna,
+            possibilitando
+            a automação de processos, o desenvolvimento de novos materiais e produtos, e a otimização da produção.
+            Máquinas avançadas, robótica e a digitalização de processos têm aumentado a eficiência e a produtividade nas
+            fábricas, resultando em uma indústria mais ágil e competitiva.</p>
+
+        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Atividade</button>
+        <br><br>
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="topico">
+
+
+        <div class="w3-panel w3-leftbar w3-grayscale w3-margin w3-padding">
+
+            <h2>Debate sobre Desenvolvimento Industrial:</h2>
+
+            <h3>Tema: Implantação de uma Indústria de Tintas na Cidade: Oportunidades e Desafios</h3>
+
+            <h4>Descrição do Tema:</h4>
+            <p>Uma empresa de tintas está planejando se instalar em nossa cidade, com a promessa de criar 800 empregos diretos. A prefeitura já negociou a doação de um terreno para a construção das instalações da empresa. Esse empreendimento traz consigo diversas oportunidades econômicas, mas também levanta importantes questões sobre o desenvolvimento industrial, impactos ambientais, sociais e urbanos.</p>
+
+            <h3>Objetivo:</h3>
+            <p>Promover uma discussão estruturada e reflexiva sobre os benefícios e desafios da industrialização de uma
+                região, explorando diferentes perspectivas e estimulando o pensamento crítico.</p>
+
+            <h3>Roteiro da Atividade:</h3>
+
+            <ol>
+                <li>
+                    <h4>Preparação:</h4>
+                    <p>A sala de aula será dividida em dois grupos: Grupo A favor e Grupo Contra o Desenvolvimento
+                        Industrial da Região.</p>
+
+                    <p>Cada grupo terá tempo para pesquisar e preparar seus argumentos, considerando os seguintes
+                        pontos:</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Grupo A favor:</strong></p>
+                            <ul>
+                                <li>
+                                    <p><strong>Benefícios econômicos:</strong></p>
+                                    <ul>
+                                        <li>"A industrialização trará novos empregos para a região, reduzindo o
+                                            desemprego e aumentando a renda das famílias."</li>
+                                        <li>"Com mais empresas se estabelecendo aqui, teremos um crescimento econômico
+                                            sustentável e oportunidades de negócios para os empreendedores locais."</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Desenvolvimento da Infraestrutura:</strong></p>
+                                    <ul>
+                                        <li>"A construção de novas fábricas e indústrias impulsionará a melhoria das
+                                            estradas, transporte público e serviços públicos."</li>
+                                        <li>"Teremos acesso a tecnologias avançadas e inovações que melhorarão a vida de
+                                            todos na região."</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Atração de Investimentos e Diversificação da Economia:</strong></p>
+                                    <ul>
+                                        <li>"Empresas de outros lugares virão para cá, trazendo investimentos e
+                                            impulsionando o comércio local."</li>
+                                        <li>"Não podemos depender apenas de um setor econômico, e a industrialização nos
+                                            permitirá diversificar nossas fontes de renda."</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Grupo Contra:</strong></p>
+                            <ul>
+                                <li>
+                                    <p><strong>Impactos Ambientais Negativos:</strong></p>
+                                    <ul>
+                                        <li>"A poluição resultante das indústrias afetará a qualidade do ar que
+                                            respiramos, prejudicando a saúde de todos."</li>
+                                        <li>"Nossos rios e lagos serão contaminados por resíduos industriais, ameaçando
+                                            a vida aquática e o abastecimento de água potável."</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Riscos para a Biodiversidade e Ecossistemas:</strong></p>
+                                    <ul>
+                                        <li>"As áreas verdes e habitats naturais serão destruídos para dar lugar a
+                                            fábricas e áreas industriais."</li>
+                                        <li>"Corremos o risco de perder espécies locais importantes e desequilibrar os
+                                            ecossistemas naturais que sustentam a vida."</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>Problemas de Saúde Pública e Riscos à População:</strong></p>
+                                    <ul>
+                                        <li>"Os trabalhadores das indústrias estarão expostos a substâncias químicas
+                                            perigosas, colocando em risco sua saúde e segurança."</li>
+                                        <li>"As comunidades próximas às indústrias sofrerão com a poluição do ar e da
+                                            água, aumentando os casos de doenças respiratórias e outros problemas de
+                                            saúde."</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Debate:</h4>
+                    <p>O debate será estruturado em etapas, com tempo designado para cada grupo apresentar seus
+                        argumentos.</p>
+
+                    <ol>
+                        <li>
+                            <h5>Apresentação inicial (5 minutos por grupo):</h5>
+                            <ul>
+                                <li>Grupo A favor apresenta os benefícios da industrialização.</li>
+                                <li>Grupo Contra destaca os desafios e impactos negativos.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Contraponto e Respostas (3 minutos por grupo):</h5>
+                            <ul>
+                                <li>Grupos têm a oportunidade de responder aos argumentos do outro grupo, refutando
+                                    pontos de vista e apresentando contra-argumentos.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Rodada de Perguntas (5 minutos para perguntas do público):</h5>
+                            <ul>
+                                <li>Alunos da plateia fazem perguntas aos grupos, buscando esclarecimentos e
+                                    aprofundamento dos temas discutidos.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Conclusão (2 minutos por grupo):</h5>
+                            <ul>
+                                <li>Cada grupo faz uma breve conclusão, reforçando seus principais pontos e argumentos
+                                    finais.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>Discussão:</h4>
+                    <p>Questões para discussão:</p>
+                    <ul>
+                        <li>Como equilibrar o desenvolvimento econômico com a preservação ambiental?</li>
+                        <li>Quais medidas poderiam ser adotadas para mitigar os impactos negativos da industrialização?
+                        </li>
+                        <li>Qual é o papel das autoridades locais, empresas e comunidade na tomada de decisões sobre o
+                            desenvolvimento industrial?</li>
+                    </ul>
+                </li>
+            </ol>
+
+
+
+        </div>
+
+
+
+       
+        <button class="btnShow"
+            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho3', 'desativar20', 'se chegou até aqui, foi muito bem!','6');this.style.display='none'">Proximo</button>
+
+
+        <p id="resp2"></p>
+
+        <div class="area">
+            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
+                    width="64" height="64">
+            </p>
+        </div>
+        <hr>
+    </div>
+
+
+
+            <!-- TÓPICO FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w3-padding-48">
+        <!-- <span id="numero"></span> -->
+        <span id="txtBarra">0%</span>
+        <progress value="0" max="100" id="progress"></progress>
+    </div>
+
+
+
+    <div class="bibliografias">
+
+        <h3><strong>Para saber mais:</strong></h3>
+
+
+
+        <div class="area">
+
+
+            <div class="postit-tp9 ">
+
+                <a href="https://www.youtube.com/watch?v=xPfkiR34law&ab_channel=RodaViva" target="_blank">
+                    Roda Viva Retrô | Milton Santos | 1997
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <h3> <strong> Referências bibliográficas </strong></h3>
+
+
+
+
+        <p>SANTOS, Milton. <strong>A Natureza do Espaço:</strong> técnica e tempo, razão e emoção. São Paulo: EDUSP,
+            2002.</p>
+
+
+        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2.
+            ed. – São
+            Paulo: Ática, 2013.
+        </p>
+
+        <p>
+            VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
+            Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
+        </p>
+
+        <p>
+            SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
+            narrative techniques.New Yoirk: Watson-Guptill, 2014.
+        </p>
+
+
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <script>
+
+
+        //   function numButton() {
+        //             numB++;
+        //             document.getElementById("numero").innerHTML = numB;
+        //             console.log(numB);
+        //         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function MostrarProximo(parametro) {
+
+            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
+            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
+
+            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
+            {
+                proximo.classList.add('mostrar'); // Mostrar o seguinte
+                addProgressBar();
+                // numButton();
+                ApagaButton();
+                RemoveBalancarGlobo();
+
+                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+            }
+
+        }
+
+        function addProgressBar() {
+            var barra = document.getElementById("progress");
+            txtBarra = document.getElementById("txtBarra");
+
+            i = Math.round(100 / 12);
+            barra.value += i;
+
+            if (barra.value >= 100) {
+                barra.value = 100;
+            }
+
+            txtBarra.innerHTML = barra.value + "%";
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+    <script>
+
+        //função para dar zoom no pc
+        function zoomIn(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth + 100) + "px";
+        }
+
+        function zoomOut(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth - 100) + "px";
+        }
+    </script>
+
+
+    <script>
+
+        //função para celular
+        function zoomIn(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth + 100) + "px";
+        }
+
+        function zoomOut(idImagem) {
+            var img = document.getElementById(idImagem);
+            var currWidth = img.clientWidth;
+            img.style.width = (currWidth - 100) + "px";
+        }
+
+        // Função para cancelar o menu de contexto do navegador
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Eventos de toque para zoom em dispositivos móveis
+        var initialTouch = null;
+
+        function handleTouchStart(e) {
+            initialTouch = e.touches[0];
+        }
+
+        function handleTouchMove(e, idImagem) {
+            if (!initialTouch) {
+                return;
+            }
+
+            var currentTouch = e.touches[0];
+            var diffX = initialTouch.clientX - currentTouch.clientX;
+
+            if (diffX > 10) {
+                zoomIn(idImagem);
+                initialTouch = null;
+            } else if (diffX < -10) {
+                zoomOut(idImagem);
+                initialTouch = null;
+            }
+        }
+
+        function handleTouchEnd() {
+            initialTouch = null;
+        }
+    </script>
+
+    <script>
+
+
+
+        let counter = 0;
+        let firstSelection = "";
+        let secondSelection = "";
+        let cartaNota = "";
+        let contadorCartas = 0;
+
+        const cards = document.querySelectorAll(".cards .card");
+
+        const card = document.querySelectorAll(".card");
+
+        function suffleImage() {
+            card.forEach(c => {
+                const num = [...Array(card.length).keys()];
+                const random = Math.floor(Math.random() * card.length);
+                c.style.order = num[random];
+            });
+        }
+
+        suffleImage();
+
+        cards.forEach((card) => {
+            card.addEventListener("click", () => {
+                if (card.classList.contains("checked") || card.classList.contains("desativado") || card.classList.contains("clicked")) {
+                    // Ignora se o cartão já estiver marcado como "checked", "desativado" ou "clicked"
+                    return;
+                }
+
+                card.classList.add("clicked");
+
+                if (counter === 0) {
+                    firstSelection = card;
+                    counter++;
+                } else if (counter === 1) {
+                    secondSelection = card;
+                    counter = 0;
+
+                    if (firstSelection.getAttribute("data-animal") === secondSelection.getAttribute("data-animal")) {
+                        // Caso de correspondência correta
+                        contadorCartas++;
+                        Play("../audio1.mp3");
+
+                        if (contadorCartas == 6) {
+                            nota += 4;
+                            Play("../audio3.mp3");
+                            contadorCartas = 0;
+                            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
+
+                        }
+
+                        firstSelection.classList.add("checked", "desativado");
+                        firstSelection.classList.remove("clicked");
+
+                        secondSelection.classList.add("checked", "desativado");
+                        secondSelection.classList.remove("clicked");
+
+                    } else {
+                        // Caso de correspondência incorreta
+                        firstSelection.classList.add("shake");
+                        secondSelection.classList.add("shake");
+                        Play("../audio2.mp3");
+
+                        setTimeout(() => {
+                            firstSelection.classList.remove("shake", "clicked");
+                            secondSelection.classList.remove("shake", "clicked");
+                        }, 800);
+                    }
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPX55DSFZ0');
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

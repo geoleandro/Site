@@ -6,305 +6,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-    <title>2º ano - Texto 02 </title>
-
-
-
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-
-        .postit-tp9 {
-            background: #e6ff5b;
-
-            width: 200px;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-
-
-
-
-        /* 
-Css do memory card */
-
-        .container {
-            display: grid;
-            place-items: center;
-
-        }
-
-        .heading {
-            text-align: center;
-            font-family: "Poppins", sans-serif;
-            font-size: 2rem;
-            font-weight: 500;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(4, auto);
-            grid-gap: 1em;
-        }
-
-
-        @media screen and (max-width: 680px) {
-
-
-
-
-            .cards {
-                display: grid;
-                grid-template-columns: repeat(2, auto);
-                grid-gap: 1em;
-            }
-
-
-
-
-        }
-
-        .card {
-            height: 140px;
-            width: 140px;
-            background-color: #ffff00;
-            border-radius: 10px;
-            display: grid;
-            place-items: center;
-            cursor: pointer;
-            transition: 0.3s all ease;
-
-
-        }
-
-        .card:hover {
-            transform: scale(1.03);
-        }
-
-        .card img {
-            width: 90%;
-            max-height: 120px;
-            opacity: 1;
-            transition: 0.3s all ease;
-        }
-
-        .card2 img {
-            width: 90%;
-            max-height: 120px;
-            opacity: 0;
-            transition: 0.3s all ease;
-        }
-
-        .card p {
-
-            font-size: 12px;
-            overflow: auto;
-            text-align: center;
-        }
-
-        .card.clicked {
-            background-color: orange;
-        }
-
-        .card.checked {
-            background-color: lightgreen;
-        }
-
-        .card.clicked img,
-        .card.checked img {
-            opacity: 1;
-        }
-
-        .card.shake {
-            background-color: #f15f5f;
-            animation: shake 0.5s;
-        }
-
-        #score {
-            margin-bottom: 10px;
-        }
-
-        .desativado {
-
-
-            cursor: not-allowed;
-            pointer-events: none;
-
-        }
-
-
-
-
-
-
-
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            10% {
-                transform: translate(-1px, -2px) rotate(-1deg);
-            }
-
-            20% {
-                transform: translate(-3px, 0px) rotate(1deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            40% {
-                transform: translate(1px, -1px) rotate(1deg);
-            }
-
-            50% {
-                transform: translate(-1px, 2px) rotate(-1deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            70% {
-                transform: translate(3px, 1px) rotate(-1deg);
-            }
-
-            80% {
-                transform: translate(-1px, -1px) rotate(1deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(1px, -2px) rotate(-1deg);
-            }
-        }
-    </style>
-
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+
+    <title>2º ano - Texto 02</title>
 
 </head>
 
 <body>
 
+    <div id="header-placeholder"></div>
 
+    <div id="aviso-status" class="w3-margin-top"></div>
 
-    <div class="topico">
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
 
-        <div class="centerBar">
+        <div class="topico">
+            <div class="w3-padding-top-48"></div>
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
+            <h1 id="h1"></h1>
 
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
+            <!-- Futuro audio -->
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
             </div>
-        </div>
 
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
             </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
         </div>
 
-
-
-        <h1 id="h1"> Texto 02 – A consolidação do território brasileiro </h1>
-
-
-        <p><strong> Conteúdo:</strong> Integração nacional; Modernização seletiva; Divisão regional IBGE,
-            técnico-científica e Geoeconômica;
-        </p>
-
-        <p><strong>Objetivo:</strong> Entender o processo de regionalização do território brasileiro, seus objetivos e
-            suas diferenças. </p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Confirmar </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> Introdução </h2>
 
@@ -328,10 +106,7 @@ Css do memory card */
 
     </div>
 
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>O Brasil e suas diferenças regionais </h2>
 
@@ -584,8 +359,7 @@ Css do memory card */
 
     </div>
 
-
-    <div class="topico">
+<div class="topico">
 
         <p class="caixa">Reforce seu conhecimento</p>
 
@@ -665,15 +439,7 @@ Css do memory card */
 
     </div>
 
-
-
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> A regionalização Geoeconômica</h2>
 
@@ -763,7 +529,7 @@ Css do memory card */
 
     </div>
 
-    <div class="topico">
+<div class="topico">
 
         <p class="caixa"> Teste seu conhecimento</p>
 
@@ -810,9 +576,7 @@ Css do memory card */
 
     </div>
 
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> A regionalização a partir do meio técnico-científico-informacional – Os “Quatro Brasis”</h2>
 
@@ -934,7 +698,7 @@ Css do memory card */
 
     </div>
 
-    <div class="topico">
+<div class="topico">
 
         <p class="caixa">Reforce seu conhecimento</p>
 
@@ -1010,18 +774,7 @@ Css do memory card */
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
 
         <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
@@ -1105,449 +858,56 @@ Css do memory card */
 
     </div>
 
-
-
-
-    <div class="topico">
-
-
-        <h2> Desafio em grupo: Exposição de ideias sobre a jornada do herói.</h2>
-
-        <h4>Você conhece a Jordana do Herói? Tenho certeza que já assistiu inúmeros filmes e jogou diversos jogos com
-            essa forma de contar histórias. </h4>
-        <h4>Trata de um padrão narrativo que está presente em Star Wars ou Harry Potter por exemplo. O herói deve deixar
-            sua comunidade e partir em uma jornada perigosa, geralmente para recuperar algo (ou alguém) valioso.</h4>
-
-        <h4>Comente com seu professor(a) de língua portuguesa sobre o livro: O Herói de Mil Faces de Joseph Campbell e
-            sobre A Jornada do Escritor de Christopher Vogler. Neste último está descrito os passos para desenvolver
-            qualquer história, seja para games, filmes ou quadrinhos.</h4>
-
-
-        <h4>Instruções </h4>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
-            <ul>
-
-
-                <li>Com seu grupo da aula anterior, vamos discutir os passos para elaborarmos a história do nosso jogo
-                    sobre a Geografia do Brasil. Nas próximas aulas vamos nos aprofundar nesses tópicos:</li>
-
-
-                <li>Leia os passos sobre a jornada do herói abaixo e reflita sobre algum game ou filme em que vislumbrou
-                    alguns desses passos;</li>
-
-                <li> Anote algumas ideias no caderno sobre o jogo que iremos desenvolver com sua turma. Não se preocupe
-                    com correções nesse momento, deixe sua criatividade aflorar;</li>
-
-                <li> Apresente para a turma algumas de possíveis ideias para o jogo;</li>
-
-                <li> Tempo de atividade 25 minutos.</li>
-
-
-
-            </ul>
-
-        </div>
-
-
-
-
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding-small w3-margin">
-
-            <h4 class="w3-center"><strong>A Jornada do Herói</strong></h4>
-
-            <div class="w3-margin"><img id="imagem11" src="ts02f011.png" alt="ts02f011" class="w3-mobile">
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
             </div>
-
-
-            <span class="w3-small w3-margin-left" id="citacao12"> Fonte: Organizado pelo autor. </span>
+            <hr>
         </div>
 
+        <!-- TÓPICO FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
 
-        <p><strong>1. Mundo Comum</strong> do herói é estabelecido. Sua vida cotidiana e seu ambiente são
-            introduzidos. No Final Fantasy, a alusão ao mundo comum aparece na frase de abertura: “Era um dia como
-            outro qualquer”.</p>
-
-        <p><strong>2. Chamado à Aventura</strong>: O herói conhece um mundo alternativo e é chamado a partir em uma
-            busca ou jornada. Nessa seção, o mundo alternativo, ou especial, é apresentado ao personagem principal.
-            Normalmente, há alguma espécie de intersecção de elementos do mundo alternativo com o mundo comum e o
-            personagem principal é chamado a ingressar nessa realidade alternativa e embarcar em uma busca ou
-            jornada.</p>
-
-        <p><strong>3. Recusa ao Chamado</strong> O chamado é rejeitado porque o herói não está disposto a sacrificar
-            sua vida confortável e seu ambiente familiar. O herói, porém, sente‑se desconfortável com essa recusa.
-        </p>
-
-        <p><strong>4. Encontro com o Mentor</strong>: O herói recebe informações que são relevantes para a busca e
-            para a sua necessidade pessoal de partir nessa jornada.</p>
-
-        <p><strong>5. Superando o Primeiro Obstáculo</strong>: O herói abandonou sua recusa inicial por causa das
-            informações recebidas. O herói embarca na jornada, aceita a aventura e ingressa no mundo especial. Essa
-            seção geralmente corresponde ao final do Ato I em uma narrativa tradicional.</p>
-
-        <p><strong>6. Testes, Aliados e Inimigos</strong> A determinação do herói é testada por meio de uma série de
-            desafios. Durante esse período, o herói encontra aliados e inimigos. Essa etapa constitui a ação
-            principal da maioria das narrativas. É quando o herói precisa solucionar problemas, enfrentar seus
-            temores, salvar outras pessoas e derrotar inimigos. Essa seção normalmente corresponde ao início do Ato
-            II em uma história.</p>
-
-        <p><strong>7. Chegada à Caverna Mais Interna</strong> Mais testes e um período de
-            supremo fascínio ou terror.. A provação começa a ser preparada.</p>
-
-        <p><strong>8. Provação</strong>: O herói enfrenta seu maior desafio até aqui. Ele deve derrotar o “grande”
-            vilão. Nessa fase, o herói mostra vulnerabilidade (por exemplo, Super‑Homem e kriptonita), e não está
-            claro se vencerá ou fracassará.</p>
-
-        <p><strong>9. Recompensa (Posse da Espada)</strong> Parece ser o fim da história, mas não é! Essa seção
-            corresponde ao final do Ato II da história.</p>
-
-        <p><strong>10. O Caminho de Volta</strong> Quando a provação termina, o herói pode optar entre permanecer no
-            mundo especial ou voltar ao mundo comum. Na maioria dos casos, ele decide regressar. Essa seção
-            corresponde ao início do Ato III da história.</p>
-
-        <p><strong>11. Ressurreição</strong>: O herói deve enfrentar a morte mais uma vez, em outra provação, que é
-            conhecida como o clímax. É aqui que o herói mostra que foi transformado pela jornada e ressuscitou como
-            uma pessoa plenamente formada. Durante essa etapa, o vilão pode ressurgir repentinamente. (Nos filmes de
-            terror, é o momento em que a plateia grita para o personagem principal: “Olhe para trás! Ele ainda não
-            está morto!”) É também onde o narrador pode incluir um “final surpresa” inesperado. Talvez o vilão não
-            seja realmente um vilão. Talvez o mentor seja um impostor. (Yoda poderia ser mau? Hummm...).</p>
-
-        <p><strong>12. Retorno com o Elixir</strong>: O herói finalmente volta para casa, mas a experiência o
-            alterou irremediavelmente. Se agora é um herói, ele traz consigo um elixir do mundo especial que ajudará
-            aqueles que ele havia originalmente deixado para trás. A estrutura é circular, com o herói voltando ao
-            princípio. Isso facilita a comparação entre o “antes” e o “depois” pela audiência para perceber como o
-            herói foi transformado. A estrutura circular também permite deixar o final em aberto. O herói será
-            convocado novamente no futuro? O inimigo foi realmente derrotado? Há outra ameaça no horizonte? O herói
-            conseguirá descansar algum dia? Deixar perguntas como essas em aberto — em vez de optar por um final em
-            que tudo se esclarece — intriga a audiência e cria espaço para uma continuação. E se o herói fosse
-            transportado inesperadamente de volta para o mundo artificial bem no final da história? O personagem
-            principal do filme De Volta para o Futuro, Marty McFly, descobre no final que sua jornada ao passado
-            alterou substancialmente o futuro. </p>
-
-        <p>Ele deve atender a um novo chamado e viajar para o futuro para salvar sua família do desastre. Na
-            reviravolta de último minuto do enredo de Half‑Life, o personagem principal, Gordon Freeman, está
-            prestes a escapar quando é abordado pelo “homem de preto”, que lhe propõe uma difícil escolha.</p>
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
             </div>
+        <br><br>
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
         </div>
+    </main>
 
-    </div>
+    <div id="footer-placeholder"></div>
 
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span>  -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="http://cienciaecultura.bvs.br/scielo.php?script=sci_arttext&pid=S0009-67252012000100003"
-                    target="_blank">
-
-                    Brasil redesenhado: projetos de criação de novos estados e territórios
-                </a>
-
-            </div>
-
-        </div>
-
-        <div>
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://palavramagica.com/2020/08/04/como-criar-conflito-em-historias/" target="_blank">
-
-                    Como criar criar conflito em histórias? 7 dicas para criar uma narrativa envolvente.
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-        <p> MARIANO, Maryelle Florêncio (et al.). <strong> Geografia do Brasil </strong> Londrina: Editora e
-            Distribuidora Educacional S.A., 2018. </p>
-
-
-
-        <p> SANTOS, Mílton. <strong> O pais distorcido: </strong> o Brasil, a globalização a cidadania. São Paulo:
-            Publifolha, 2002. </p>
-
-        <p> SANTOS, Milton.; SILVEIRA, Maria Laura. <strong> O Brasil: </strong> território e sociedade no início do
-            século XXI. 4.ed. Rio de Janeiro: Record, 2002. </p>
-
-        <p> SANTOS, Patrícia Cardoso dos (et al.) <strong> Enciclopédia do Estudante: </strong> geografia do Brasil:
-            aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008. </p>
-
-        <p>VESENTINI, José William. <strong> Geografia </strong> o mundo em transição. Ensino médio. 2. ed. – São Paulo:
-            Ática, 2013. </p>
-
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        //  function numButton() {
-        //             numB++;
-        //             document.getElementById("numero").innerHTML = numB;
-        //             console.log(numB);
-        //         }
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                // numButton();
-                ApagaButton();
-                RemoveBalancarGlobo();
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-
-            }
-
-        }
-
-
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 10);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-    </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-    <script>
-
-
-
-
-        let counter = 0;
-        let firstSelection = "";
-        let secondSelection = "";
-        let cartaNota = "";
-        let contadorCartas = 0;
-
-        const cards = document.querySelectorAll(".cards .card");
-
-        const card = document.querySelectorAll(".card");
-
-        function suffleImage() {
-            card.forEach(c => {
-                const num = [...Array(card.length).keys()];
-                const random = Math.floor(Math.random() * card.length);
-                c.style.order = num[random];
-            });
-        }
-
-        suffleImage();
-
-        cards.forEach((card) => {
-            card.addEventListener("click", () => {
-                if (card.classList.contains("checked") || card.classList.contains("desativado") || card.classList.contains("clicked")) {
-                    // Ignora se o cartão já estiver marcado como "checked", "desativado" ou "clicked"
-                    return;
-                }
-
-                card.classList.add("clicked");
-
-                if (counter === 0) {
-                    firstSelection = card;
-                    counter++;
-                } else if (counter === 1) {
-                    secondSelection = card;
-                    counter = 0;
-
-                    if (firstSelection.getAttribute("data-animal") === secondSelection.getAttribute("data-animal")) {
-                        // Caso de correspondência correta
-                        contadorCartas++;
-                        Play("../audio1.mp3");
-
-                        if (contadorCartas == 6) {
-                            nota += 4;
-                            Play("../audio3.mp3");
-                            contadorCartas = 0;
-                            document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-
-                        }
-
-                        firstSelection.classList.add("checked", "desativado");
-                        firstSelection.classList.remove("clicked");
-
-                        secondSelection.classList.add("checked", "desativado");
-                        secondSelection.classList.remove("clicked");
-
-                    } else {
-                        // Caso de correspondência incorreta
-                        firstSelection.classList.add("shake");
-                        secondSelection.classList.add("shake");
-                        Play("../audio2.mp3");
-
-                        setTimeout(() => {
-                            firstSelection.classList.remove("shake", "clicked");
-                            secondSelection.classList.remove("shake", "clicked");
-                        }, 800);
-                    }
-                }
-            });
-        });
-
-
-
-
-
-    </script>
-
-
-
-    <script>
-
-        function confereBox(mensagem, frase2, globinho) {
-
-            r1 = document.getElementById("r1");
-            r2 = document.getElementById("r2");
-            r3 = document.getElementById("r3");
-            r4 = document.getElementById("r4");
-            frase = document.getElementById(frase2);
-            globo = document.getElementById(globinho);
-
-            if (r3.checked == true) {
-
-                frase.innerHTML = nomeEstudante + ", marque somente as afirmativas verdadeiras para prosseguir.";
-                Play2("../audio2.mp3");
-            }
-
-            else if (r1.checked == true && r2.checked == true && r4.checked == true) {
-
-
-                nota += 2;
-                frase.innerHTML = nomeEstudante + ", " + mensagem + ".";
-                globo.style.display = "block";
-                Play("../audio1.mp3");
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-                EscondeButton("buttoncheck1");
-                MostraButton("buttoncheck2");
-
-
-            }
-
-
-            else {
-                frase.innerHTML = nomeEstudante + ", marque todas as opções corretas para prosseguir.";
-                Play2("../audio2.mp3");
-            }
-
-
-        }
-
-
-    </script>
-
-
-
-
 
 </body>
 

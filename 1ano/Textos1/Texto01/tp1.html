@@ -6,14 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
 
-   <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -43,27 +45,12 @@
     <script src="../../../js/aulas-geral.js" defer></script>
 
 
+
     <title></title>
 
 
 
     <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-        .topico * {
-            transition: color 3s ease, background-color 3s ease;
-        }
-
-
-
-
         #fundoQ {
             background: url(tp1F01A.png), no-repeat;
             width: 340px;
@@ -108,9 +95,8 @@
 
             <h1 id="h1"> </h1>
 
-
             <!-- Futuro audio -->
-            <!-- <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
                 <div class="w3-row">
                     <div class="w3-col s2 m1 w3-center">
                         <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
@@ -121,10 +107,9 @@
                     </div>
                 </div>
                 <audio controls style="width:100%; margin-top: 10px;">
-                    <source id="audioSource" src="" type="audio/mpeg">
-                    Seu navegador não suporta o elemento de áudio.
+                    <source id="audioSource" src="" type="audio/mp3">
                 </audio>
-            </div> -->
+            </div>
 
 
 
@@ -132,9 +117,10 @@
                 <p><strong>Conteúdo: </strong><span id="descricao-aula"></span> </p>
 
 
-                <p><strong>Objetivo:</strong> Entender como estão relacionados os conceitos fundamentais da
-                    Geografia na
-                    explicação das desigualdades socioespaciais presentes no mundo atual. </p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Entender como estão relacionados os conceitos
+                        fundamentais da
+                        Geografia na
+                        explicação das desigualdades socioespaciais presentes no mundo atual. </span></p>
             </div>
 
 
@@ -887,113 +873,33 @@
         </div>
 
 
-
+ <!-- TÓPICO 13: FINALIZAR -->
         <div class="topico">
-
-
             <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-
         </div>
 
 
-
-
+        <!-- ===== SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS ===== -->
         <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
             <hr>
+
             <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <!-- Cards gerados automaticamente pelo JS -->
+            <div class="w3-row-padding" id="links-gerados"></div>
 
-            <div class="w3-row-padding">
 
 
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-teal w3-card-4 pulsar">
-                        <a href="https://www.gov.br/inpe/pt-br" target="_blank">
-                            <span class="w3-text-white">Monitoramento por satélite do desmatamento no Brasil</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-purple w3-card-4 pulsar">
-                        <a href="https://educa.ibge.gov.br/" target="_blank">
-                            <span class="w3-text-white">IBGE Educa: Mapas e dados da população brasileira</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w3-col m6 w3-margin-bottom">
-                    <div class="postit-tp9 w3-dark-grey w3-card-4 pulsar">
-                        <a href="https://brasil.elpais.com/noticias/globalizacion/" target="_blank">
-                            <span class="w3-text-white">Análise sobre os rumos da Globalização e Economia</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
 
             <div class="w3-container w3-padding-64">
-                <h3 class="fontePixel w3-center w3-text-green"><strong><i class="fa fa-book"></i> Referências
-                        Bibliográficas</strong></h3>
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
 
-                <div class="w3-row-padding w3-margin-top">
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-green"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-green w3-small fontePixel">Livro Base</span>
-                                <p class="w3-margin-top">SANTOS, Mílton. <br><b>Por uma outra globalização</b>: do
-                                    pensamento único à consciência universal. <br>Rio de Janeiro: Record, 2000.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-blue"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-blue w3-small fontePixel">Geografia Crítica</span>
-                                <p class="w3-margin-top">SANTOS, Milton. <br><b>O espaço do cidadão</b>. <br>São
-                                    Paulo:
-                                    Editora da USP, 2007.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-deep-orange"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-deep-orange w3-small fontePixel">Narrativa</span>
-                                <p class="w3-margin-top">VOGLER, Christopher. <br><b>A jornada do escritor</b>.
-                                    <br>Rio
-                                    de
-                                    Janeiro: Nova Fronteira, 2006.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="w3-col l4 m6 w3-margin-bottom">
-                        <div class="w3-card-4 w3-white w3-border-top w3-border-indigo"
-                            style="border-width: 6px !important; min-height: 180px;">
-                            <div class="w3-container w3-padding">
-                                <span class="w3-tag w3-indigo w3-small fontePixel">Documento Oficial</span>
-                                <p class="w3-margin-top">BRASIL. Ministério da Educação. <br><b>Base Nacional Comum
-                                        Curricular</b>. <br>Brasília: MEC/Secretaria de Educação Básica, 2018.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <!-- Cards gerados automaticamente pelo JS -->
+                <div id="biblio-gerada"></div>
             </div>
         </div>
 
-
-        </div>
         <br><br>
 
         <div class="w3-padding-48">
@@ -1001,6 +907,7 @@
             <span id="txtBarra">0%</span>
             <progress value="0" max="100" id="progress"></progress>
         </div>
+
 
 
     </main>

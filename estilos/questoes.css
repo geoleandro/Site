@@ -24,7 +24,7 @@
 
 	@font-face { src: url('FreePixel.woff'); font-family: pixel;  }
 	a{ font-family: pixel;}
-	body{ max-width: 700px;width: 100%;	}
+	body{ 	}
 	p{ 	margin-left: 10px;	margin-right: 10px;	}
 	.ladoDireito {display: flex;	justify-content: right;	}
 	.ladoEsquerdo {display: flex;	justify-content: left;	}

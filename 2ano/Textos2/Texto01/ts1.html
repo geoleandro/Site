@@ -1,677 +1,395 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../../../estilos/fade.css">
-    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
-
-    <script src="../../../estilos/jstextos.js" defer></script>
-
-    <title>2º ano - Texto 01 </title>
-
-
-
-
-    <style>
-        .topico {
-            display: none;
-
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-
-
-
-        .postit-tp13 {
-            background: #ad9df1;
-
-            width: 50%;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: right;
-            text-align: center;
-            position: relative;
-            Color: rgb(255, 255, 255);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp13>a {
-            text-decoration: none;
-        }
-
-        .postit-tp13>a:hover {
-            text-decoration: underline;
-        }
-    </style>
-
-
-
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<link href="../../../estilos/index-estilo.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="../../../estilos/navbar.css" rel="stylesheet"/>
+<link href="../../../estilos/rpg-sistema.css" rel="stylesheet"/>
+<link href="../../../estilos/ModeloCss.css" rel="stylesheet"/>
+<link href="../../../fotoIndex/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"></script>
+<script defer="" src="../../../js/duvid-cache.js"></script>
+<script defer="" src="../../../js/duvid-db.js"></script>
+<script defer="" src="../../../js/duvid-audio.js"></script>
+<script defer="" src="../../../js/duvid-ui.js"></script>
+<script defer="" src="../../../js/duvid-core.js"></script>
+<script defer="" src="../../../estilos/jstextos-padrao.js"></script>
+<script defer="" src="../../../js/abrirmenu.js"></script>
+<script defer="" src="../../../js/carregar.js"></script>
+<script defer="" src="../../../js/aulas-geral.js"></script>
+<title>2º ano - Texto 01</title>
 </head>
-
 <body>
-
-
-
-    <div class="topico">
-
-        <div class="centerBar w3-padding">
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-                <span class="w3-bar-item  margemTop" id="notaFixa"></span>
-                <span class="w3-bar-item  "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png" alt="tp3Foto4"
-                        width="32" height="32"></span>
-            </div>
-        </div>
-
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
-            </div>
-        </div>
-
-
-
-        <h1 id="h1">Texto 01 - Formação do território brasileiro </h1>
-
-
-        <p><strong> Conteúdo:</strong> Capitalismo Comercial; Grandes Navegações; Divisão internacional do trabalho;
-            Tratado de Tordesilhas; Tratado de Madri; Arquipélago econômico; Pau-Brasil; Cana-de-açúcar; Latifúndio;
-            Plantation; Centros urbanos; Pecuária; Metais preciosos; Ocupação da Amazônia; Borracha; Café; Fronteiras.
-
-        </p>
-
-        <p><strong>Objetivos:</strong> Compreender o processo de formação do território brasileiro através dos eventos
-            de colonização e ocupação. Identificar os espaços vinculados ao comércio colonial exportador que marcaram as
-            fronteiras e as desigualdades socioespaciais no período atual. </p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" type="button"  onclick="NomeAlunos('resp0','pq0')" >Confirmar </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Vamos lá!</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2> Introdução </h2>
-
-
-        <p> <span class="primeiraLetra">O</span> Brasil é um país imenso, praticamente um continente. Ele está no quinto
+<div id="header-placeholder"></div>
+<div class="w3-margin-top" id="aviso-status"></div>
+<main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+<div class="topico">
+<div class="w3-padding-top-48"></div>
+<h1 id="h1"></h1>
+<!-- Futuro audio -->
+<div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+<div class="w3-row">
+<div class="w3-col s2 m1 w3-center">
+<i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+</div>
+<div class="w3-col s10 m11 w3-padding-small">
+<b class="fontePixel">OUVIR AULA</b>
+<p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+</div>
+</div>
+<audio controls="" style="width:100%; margin-top: 10px;">
+<source id="audioSource" src="" type="audio/mp3"/>
+</audio>
+</div>
+<div class="w3-container w3-padding-16">
+<p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+<p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+</div>
+<button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+<i class="fa fa-play"></i> Iniciar Aula
+            </button>
+<hr/>
+</div>
+<div class="topico">
+<h2> Introdução </h2>
+<p> <span class="primeiraLetra">O</span> Brasil é um país imenso, praticamente um continente. Ele está no quinto
             lugar como um dos países mais extensos do Globo. Para se ter uma ideia dessa dimensão de 8. 514 876 km², com
             exceção da Rússia, caberiam todos os países da Europa no território brasileiro. </p>
-
-        <div class="w3-margin-top"><img id="imagem1" src="ts01f01.png" alt="Mapa do Brasil" class="w3-mobile">
-
-        </div>
-
-
-
-
-        <p> O Brasil ocupa quase a metade da América do Sul (47%). E a América portuguesa do século XVI possuía
+<div class="w3-margin-top"><img alt="Mapa do Brasil" class="w3-mobile" id="imagem1" src="ts01f01.png"/>
+</div>
+<p> O Brasil ocupa quase a metade da América do Sul (47%). E a América portuguesa do século XVI possuía
             “somente” 2.5 milhões km² aproximadamente, já vamos ver como ocorreu essa expansão com a exploração
             econômica, missões dos bandeirantes e da colonização portuguesa. </p>
-
-        <div class="w3-margin-top"><img id="imagem2" src="ts01f02.png" alt="ts01f02" class="w3-mobile"></div>
-
-
-        <span class="w3-small w3-margin-left" id="citacao2"> Fonte: Organizado pelo autor. </span>
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-        <div class="w3-pale-yellow">
-            <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
-            
-            <h3>1. Qual foi o papel do Tratado de Tordesilhas na formação do território brasileiro?</h3>
-            <h3>2. Explique por que o Brasil colonial era considerado um "arquipélago econômico" e como isso impactou seu desenvolvimento.</h3>
-            <h3>3. Como a exploração do pau-brasil influenciou a ocupação do território brasileiro nos primeiros anos da colonização?</h3>
-            <h3>4. Qual foi o impacto do modelo de plantation na organização social e econômica do Brasil colonial?</h3>
-            <h3>5. De que maneira a busca por riquezas minerais influenciou a ocupação do interior do Brasil?</h3>
-        </div>
-        
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-    </div>
-    
-
-
-
-
-    <div class="topico">
-
-        <h2>Um projeto de Brasil </h2>
-
-
-
-
-        <p>Para se chegar a atual configuração do território brasileiro foi preciso inúmeros processos complexos nessas
+<div class="w3-margin-top"><img alt="ts01f02" class="w3-mobile" id="imagem2" src="ts01f02.png"/></div>
+<span class="w3-small w3-margin-left" id="citacao2"> Fonte: Organizado pelo autor. </span>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<div class="w3-pale-yellow">
+<h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
+<h3>1. Qual foi o papel do Tratado de Tordesilhas na formação do território brasileiro?</h3>
+<h3>2. Explique por que o Brasil colonial era considerado um "arquipélago econômico" e como isso impactou seu desenvolvimento.</h3>
+<h3>3. Como a exploração do pau-brasil influenciou a ocupação do território brasileiro nos primeiros anos da colonização?</h3>
+<h3>4. Qual foi o impacto do modelo de plantation na organização social e econômica do Brasil colonial?</h3>
+<h3>5. De que maneira a busca por riquezas minerais influenciou a ocupação do interior do Brasil?</h3>
+</div>
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico">
+<h2>Um projeto de Brasil </h2>
+<p>Para se chegar a atual configuração do território brasileiro foi preciso inúmeros processos complexos nessas
             terras tropicais e de grande biodiversidade e do encontro com os habitantes que já viviam aqui: a população
             indígena.</p>
-
-        <p>Vamos focar nos processos geográficos, isto é, ligado ao espaço geográfico, enquanto os professores de
+<p>Vamos focar nos processos geográficos, isto é, ligado ao espaço geográfico, enquanto os professores de
             História explicarão os processos relacionados ao tempo e as ações dos homens. </p>
-
-        <p>Quando Pedro Álvares Cabral pisou em solo brasileiro, parte desse território já era de Portugal. Você deve
+<p>Quando Pedro Álvares Cabral pisou em solo brasileiro, parte desse território já era de Portugal. Você deve
             estar se perguntando: Como assim? Eles ainda não tinham navegado até aqui, como pode ser deles? </p>
-
-
-        <p> Não fisicamente, entretanto mediante os acordos entre as potências da época, Portugal e Espanha, o mundo já
+<p> Não fisicamente, entretanto mediante os acordos entre as potências da época, Portugal e Espanha, o mundo já
             tinha dono, ou seja, o poder sobre o espaço mundial já estava muito bem dividido. </p>
-
-
-        <p>Esses dois países da Península Ibérica oficializaram suas negociações em um Tratado chamado de Tordesilhas,
+<p>Esses dois países da Península Ibérica oficializaram suas negociações em um Tratado chamado de Tordesilhas,
             cidade espanhola onde foi assinado o acordo. </p>
-
-
-        <p>Mas você deve ter outra questão, o que é península mesmo? Península é uma porção de terra quase toda
+<p>Mas você deve ter outra questão, o que é península mesmo? Península é uma porção de terra quase toda
             circundada por água, com exceção de uma estreita faixa que a liga ao continente. Também tem um desenho,
             clique aqui. </p>
-
-
-        <div class="w3-margin"><img id="imagem3" src="ts01f03.png" alt="ts01f03" class="w3-mobile"></div>
-
-        <p>Agora já sabemos a localização de Portugal e Espanha que assinaram esse acordo em 1494, antes mesmo dos
+<div class="w3-margin"><img alt="ts01f03" class="w3-mobile" id="imagem3" src="ts01f03.png"/></div>
+<p>Agora já sabemos a localização de Portugal e Espanha que assinaram esse acordo em 1494, antes mesmo dos
             lusitanos atracarem no atual Estado da Bahia em 22 de Abril de 1500. </p>
-
-        <p>Esse tratado definia os limites dos territórios descobertos ou a serem descobertos pelas duas potências do
+<p>Esse tratado definia os limites dos territórios descobertos ou a serem descobertos pelas duas potências do
             período da expansão marítima. Ele dividia o mundo através de um meridiano a 370 léguas a Oeste do
             arquipélago de Cabo Verde. As terras situadas a Oeste seriam espanholas e as situadas a Leste, portuguesas.
         </p>
-
-        <div class="w3-margin-topo"><img id="imagem4" src="ts01f04.png" alt="ts01f04" class="w3-mobile"></div>
-
-
-        <span class="w3-small w3-margin-left" id="citacao4">Planisfério de Cantino (1502), mostrando o meridiano de
+<div class="w3-margin-topo"><img alt="ts01f04" class="w3-mobile" id="imagem4" src="ts01f04.png"/></div>
+<span class="w3-small w3-margin-left" id="citacao4">Planisfério de Cantino (1502), mostrando o meridiano de
             Tordesilhas. Imagem: Biblioteca Estense (Itália) / Domínio público. IBGE, Atlas Geográfico Escolar, 2007.
             Fonte: https://novaescola.org.br/conteudo/11871/. </span>
-
-        <p>No mapa acima podemos ver o Planisfério de Cantino de 1502 mostrando o meridiano de Tordesilhas. No segundo
+<p>No mapa acima podemos ver o Planisfério de Cantino de 1502 mostrando o meridiano de Tordesilhas. No segundo
             mapa, a área inicial do território brasileiro bem reduzida em comparação com a atual. Os limites abrangiam
             desde a ilha de Marajó, ao norte ao litoral catarinense. A região da Amazônia as terras gaúchas, o
             Centro-Oeste e outras regiões pertenciam à América espanhola. </p>
-
-
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <p class="caixa">Expanda seu conhecimento</p>
-
-        <h4>Nos séculos XV a XVIII, as metrópoles europeias acumularam capital com a prática de atividades de retirada e
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Nos séculos XV a XVIII, as metrópoles europeias acumularam capital com a prática de atividades de retirada e
             comercialização de produtos primários (agrícolas e extrativistas), empreendida nos territórios conquistados.
-            Essa prática estava ligada diretamente ao surgimento do(a):</h4>
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">a)
-            Neofeudalismo.</button>
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp1','globinho1', 'desativar1', 'o Feudalismo já estava em decadência como sistema dominante, ganhou seu primeiro globinho nessa lição','2'); this.style.backgroundColor='lightgreen'">b)
-            Capitalismo Comercial.</button>
-
-
-        <button class="desativar1 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp1','globinho1', 'desativar1','0');this.style.backgroundColor='tomato'">c)
-            Globalização.</button>
-
-
-
-
-
-
-        <p id="resp1"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" alt="globinho1"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <h2>A terra do pau-brasil </h2>
-
-
-
-        <p>Não demorou muito para os portugueses consolidarem o objetivo para essa nova terra recém encontrada: a
+            Essa prática estava ligada diretamente ao surgimento do(a):</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p1a" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1a">
+<span>a) Neofeudalismo.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1b" name="pergunta1" type="radio" value="correto"/>
+<label class="card-opcao" for="p1b">
+<span>b) Capitalismo Comercial.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p1c" name="pergunta1" type="radio" value="errado"/>
+<label class="card-opcao" for="p1c">
+<span>c) Globalização.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o Feudalismo já estava em decadência como sistema dominante, ganhou seu primeiro globinho nessa lição', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp1"></p>
+<div class="area w3-center">
+<img height="64" id="globinho1" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2>A terra do pau-brasil </h2>
+<p>Não demorou muito para os portugueses consolidarem o objetivo para essa nova terra recém encontrada: a
             exploração de seus recursos naturais e de seu envio para a Europa. </p>
-
-        <p>Após a presença física dos portugueses em solo brasileiro, a Coroa portuguesa começou a enviar expedições
+<p>Após a presença física dos portugueses em solo brasileiro, a Coroa portuguesa começou a enviar expedições
             para conhecer a paisagem da nova terra prometida e definir melhor seus limites.</p>
-
-        <p>Entretanto, nas décadas seguintes o território permaneceu quase abandonado. A presença lusa limitava-se a
+<p>Entretanto, nas décadas seguintes o território permaneceu quase abandonado. A presença lusa limitava-se a
             algumas feitorias estabelecidas ao longo do litoral, principalmente em enseadas ou baias. Nelas, os
             mercadores armazenavam o pau-brasil e outros recursos que extraíam da floresta, com a ajuda dos nativos,
             mais tarde embarcados para a metrópole. Outros europeus, principalmente franceses, também visitavam o
             litoral, dedicando-se ao contrabando da valiosa madeira.</p>
-
-        <p>O Pau-Brasil foi a primeira matéria-prima a ser comercializada no Brasil, utilizada principalmente no
+<p>O Pau-Brasil foi a primeira matéria-prima a ser comercializada no Brasil, utilizada principalmente no
             tingimento de tecidos e de pintura, mas não chegou a imprimir modificações substanciais na paisagem. Mesmo
             sendo abundante nas matas da faixa litorânea, desde a Paraíba até o Rio de Janeiro, essa exploração não
             contribuiu diretamente para o processo de ocupação europeia do Brasil porque, ocorrendo o esgotamento das
             reservas em determinada região, a produção era abandonada.</p>
-
-        <div class="w3-margin-top"><img id="imagem5" src="ts01f05.png" alt="ts01f05" class="w3-mobile"></div>
-
-        <span class="w3-small w3-margin-left" id="citacao5">Árvore de Pau-Brasil. Fonte: desconhecido. </span>
-
-
-
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-        <br>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <p class="caixa">Pega esse conceito!</p>
-
-        <h4>O Brasil era considerado um <strong>arquipélago econômico</strong>, pois:</h4>
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            a) possuía um território articulado e uma economia integrada com relações voltadas para o interesse de sua
-            população.
-        </button>
-
-
-
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp2','globinho2', 'desativar2','0');this.style.backgroundColor='tomato'">
-
-            b) possuía uma relação orgânica com seus habitantes e produzia tudo de que necessitava sem recorrer a
-            exportações e importações de produtos primários.
-        </button>
-
-        <button class="desativar2 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'essa foi interessante, será que o Brasil é realmente integrado?  Valeu','2'); this.style.backgroundColor='lightgreen'">
-
-            c) possuía um território com extrema dependência do mercado externo o que impossibilitava a existência de
-            uma economia integrada, formado como ilhas isoladas umas das outras.
-        </button>
-
-
-
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-        <h2>O sentido da ocupação do território brasileiro ao longo dos séculos </h2>
-
-        <p>A forma de ocupação do território brasileiro herdada desde o período da colonização foi e ainda é centrada em
+<div class="w3-margin-top"><img alt="ts01f05" class="w3-mobile" id="imagem5" src="ts01f05.png"/></div>
+<span class="w3-small w3-margin-left" id="citacao5">Árvore de Pau-Brasil. Fonte: desconhecido. </span>
+<button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+<br/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>O Brasil era considerado um <strong>arquipélago econômico</strong>, pois:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p2a" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2a">
+<span>a) possuía um território articulado e uma economia integrada com relações voltadas para o interesse de sua
+            população.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2b" name="pergunta2" type="radio" value="errado"/>
+<label class="card-opcao" for="p2b">
+<span>b) possuía uma relação orgânica com seus habitantes e produzia tudo de que necessitava sem recorrer a
+            exportações e importações de produtos primários.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p2c" name="pergunta2" type="radio" value="correto"/>
+<label class="card-opcao" for="p2c">
+<span>c) possuía um território com extrema dependência do mercado externo o que impossibilitava a existência de
+            uma economia integrada, formado como ilhas isoladas umas das outras.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'essa foi interessante, será que o Brasil é realmente integrado?  Valeu', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp2"></p>
+<div class="area w3-center">
+<img height="64" id="globinho2" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2>O sentido da ocupação do território brasileiro ao longo dos séculos </h2>
+<p>A forma de ocupação do território brasileiro herdada desde o período da colonização foi e ainda é centrada em
             sua fachada litorânea. Esse caráter periférico não é por acaso, mas sim tem estreita relação com as área
             agrícolas e o modo como o território foi organizado para atender os objetivos da Metrópole portuguesa.</p>
-
-        <p>Não pensem que os portugueses iriam respeitar o Tratado de Tordesilhas para sempre e ficar confinados nos
+<p>Não pensem que os portugueses iriam respeitar o Tratado de Tordesilhas para sempre e ficar confinados nos
             limites estabelecidos anteriormente. Já foi dito que a ganância humana não tem limites, e foi assim que esse
             ditado foi confirmado quando começaram as expedições em busca de mais terras e mais produtos para enviar
             para fora. Tiveram que realizar outros acordos como o de Madrid (1750) e o de Santo Ildefonso em (1977) além
             de outros para conter o avanço português em terras espanholas.</p>
-
-        <p>Com a ocupação na Ásia apresentando sinais de decadência, e agora uma nova terra descoberta, estava tudo
+<p>Com a ocupação na Ásia apresentando sinais de decadência, e agora uma nova terra descoberta, estava tudo
             perfeito para que esse episódio se transforma-se em uma metáfora de uma nova terra prometida com um futuro a
             construir e conquistar. </p>
-
-        <p>O cenário era animador para a expansão comercial europeia e para o crescimento da economia urbana naquele
+<p>O cenário era animador para a expansão comercial europeia e para o crescimento da economia urbana naquele
             continente. Quer dizer que a descoberta da América financiou a modernidade na Europa? É uma boa questão para
             pensarmos um pouco.</p>
-
-        <p>O capitalismo estava surgindo e o feudalismo tinha se esgotado como modo de produção centrado na agricultura.
+<p>O capitalismo estava surgindo e o feudalismo tinha se esgotado como modo de produção centrado na agricultura.
             A moda era a troca de produtos para aumentar o comércio. A Revolução Industrial estava literalmente no forno
             e se concretizaria no século XVIII.</p>
-
-        <p>Com os crescimento das cidades um dos principais motivos para essa expansão além-mar era a busca por novos
+<p>Com os crescimento das cidades um dos principais motivos para essa expansão além-mar era a busca por novos
             produtos como ouro, prata, açúcar, tabaco, dentre outros. Era preciso enriquecer a metrópole. Mais havia um
             problema: a população era esparsa concentrada em pequenos povoadas. O jeito foi organizar um produção com um
             produto antes restrito a pequenas produções para a Europa, mas que agora com solos férteis seria possível
             produzir em grande quantidade: apresento-lhes o açúcar. E mais tarde o diamante, o algodão, o café e por ai
             vai.</p>
-
-        <p>Por isso que a distribuição da população ficou concentrada no litoral, pois lá havia os portos, a navegação
+<p>Por isso que a distribuição da população ficou concentrada no litoral, pois lá havia os portos, a navegação
             de cabotagem, aquela realizada próxima a costa para outras cidades litorâneas, como do norte do Rio de
             Janeiro em São João da Barra para Salvador na Bahia ou de Santos para outras localidades no Rio de Janeiro.
             Portos também no nordeste exportando produtos para Portugal e não uma produção interna para a população.
             Qualquer semelhança com o século XX não é mera coincidência.</p>
-
-        <p>Quem comandava tudo isso? Infelizmente não eram os povos originários do Brasil, ou seja, os indígenas. </p>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding">
-
-            <h2>Não confunda as coisas!</h2>
-
-            <p>O que o movimento indígena reivindica é que esse termo [índio], que é colonizador, que reproduz um
+<p>Quem comandava tudo isso? Infelizmente não eram os povos originários do Brasil, ou seja, os indígenas. </p>
+<div class="w3-card-4 w3-pale-yellow w3-padding">
+<h2>Não confunda as coisas!</h2>
+<p>O que o movimento indígena reivindica é que esse termo [índio], que é colonizador, que reproduz um
                 pejorativo que remete à ideia eurocêntrica de que somos atrasados, de que somos todos iguais, no sentido
                 de que as diferenças linguísticas e culturais são desconsideradas, seja substituído por como nos
                 autodenominamos".
                 <span class="w3-small">Fonte: Índio...(2022).</span>
-            </p>
-
-        </div>
-
-        <p>Tratava-se de uma minoria, isto é, uma elite formada a partir de concessões de terras. Eles se tornavam
+</p>
+</div>
+<p>Tratava-se de uma minoria, isto é, uma elite formada a partir de concessões de terras. Eles se tornavam
             proprietários de terras desde que foi implantando o sistema de capitanias hereditárias. O reino de Portugal
             de forma violenta, para dizer o mínimo contra os indígenas, loteou o território brasileiro, o repartiu de
             forma linear entre 30 a 100 léguas e as repassou aos donatários portugueses que puderam, dentre outas
             coisas, nomear autoridades administrativas e juízes nos seus território, receber impostos e muito mais.
             (Confira nas aulas de História com mais detalhes). No mapa abaixo é possível ter uma ideia de como eram as
             capitanias hereditárias.</p>
-
-
-        <div class="w3-margin-top"><img id="imagem5a" src="ts01f05a.png" alt="ts01f05a" class="w3-mobile"></div>
-
-        <div class="w3-padding"><span class="w3-small" id="citacao5a"> Fonte: Fonte: Cintra (2013, p. 39). Disponível
-                em: <https: //www.revistas.usp.br/anaismp/article/view/80840>.Acesso em: 27 ago. 2017. </span></div>
-
-        <p>O problema era que as capitanias eram extensas demais para gerenciar. A partir disso e seguindo a mesma
+<div class="w3-margin-top"><img alt="ts01f05a" class="w3-mobile" id="imagem5a" src="ts01f05a.png"/></div>
+<div class="w3-padding"><span class="w3-small" id="citacao5a"> Fonte: Fonte: Cintra (2013, p. 39). Disponível
+                em: <https: 80840="" anaismp="" article="" view="" www.revistas.usp.br="">.Acesso em: 27 ago. 2017. </https:></span></div>
+<p>O problema era que as capitanias eram extensas demais para gerenciar. A partir disso e seguindo a mesma
             lógica, os portugueses começaram a instituir o sistema de sesmarias, que era basicamente a doação de terras
             para quem quisesse produzir com o objetivo de não deixar as terras sem cultivo.</p>
-
-        <p>Depois de enviar algumas expedições e fundar as primeiras cidades como a vila de São Vicente em 1532, o
+<p>Depois de enviar algumas expedições e fundar as primeiras cidades como a vila de São Vicente em 1532, o
             terreno estava pronto para a produção da cana-de-açúcar e do início do povoamento.</p>
-
-
-
-
-
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-        <br>
-
-
-    </div>
-
-
-
-
-
-    <div class="topico">
-
-        <h2>O povoamento no século XVI </h2>
-
-
-        <p>As capitanias hereditárias foram realmente os primeiros latifúndios do Brasil, o que demonstra, desde o
+<button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+<br/>
+</div>
+<div class="topico">
+<h2>O povoamento no século XVI </h2>
+<p>As capitanias hereditárias foram realmente os primeiros latifúndios do Brasil, o que demonstra, desde o
             início da colonização, a realidade desigual da distribuição de terras brasileiras, que perdura até os dias
             atuais.</p>
-
-        <p>Com o sistema de capitanias, a exploração econômica do Brasil tomou-se mais intensa, além da extração e
+<p>Com o sistema de capitanias, a exploração econômica do Brasil tomou-se mais intensa, além da extração e
             comercialização do pau-brasil, multiplicaram-se os canaviais, já que o açúcar podia ser comercializado na
             Europa com boa margem de lucro. O cultivo desenvolveu-se de acordo com o sistema de <em>plantations</em>
             (grandes propriedades monocultoras de produtos destinados à exportação) e dos engenhos que produziam o
             açúcar. (O livro Menino de Engenho de José Lins do Rego é muito bom, vale a pena a leitura).</p>
-
-        <p>Inicialmente, o cultivo da<trong> cana-de-açúcar</trong>o Vicente, baixada santista, porém a atividade não
+<p>Inicialmente, o cultivo da<trong> cana-de-açúcar</trong>o Vicente, baixada santista, porém a atividade não
             prosperou devido aos solos rasos e pouco férteis da faixa litorânea paulista e aos elevados custos do frete,
             pois os portos eram mais distantes da Europa.</p>
-
-        <p>Em seguida o cultivo da cana-de-açúcar se deslocou para o Nordeste em virtude das condições naturais
+<p>Em seguida o cultivo da cana-de-açúcar se deslocou para o Nordeste em virtude das condições naturais
             favoráveis como o solo fértil e o clima quente e úmido, com chuvas abundantes distribuídas ao longo do ano.
             Veja o mapa abaixo:</p>
-
-        <div class="w3-margin"><img id="imagem6" src="ts01f06.png" alt="ts01f06" class="w3-mobile"></div>
-
-
-
-        <p>As grandes lavouras ocuparam a área de Mata Atlântica, conhecida le como Zona da Mata. Nesse período,
+<div class="w3-margin"><img alt="ts01f06" class="w3-mobile" id="imagem6" src="ts01f06.png"/></div>
+<p>As grandes lavouras ocuparam a área de Mata Atlântica, conhecida le como Zona da Mata. Nesse período,
             paralelamente, foi utilizada a mão de indígena nos canaviais de forma complementar ao trabalho escravo
             realizado pelos africanos que se tornaria um lucrativo comércio dominante nas colônias. Para viabilizar esse
             tráfico de escravos, os portugueses estabeleceram possessões na África de onde traziam essas pessoas para
             serem vendidas no Brasil, geralmente em condições desumanas no transporte que duravam meses.</p>
-
-        <p>Com toda essa exploração da mão de obra foi possível fundar mais cidades, além de São Vicente, a fundação dos
+<p>Com toda essa exploração da mão de obra foi possível fundar mais cidades, além de São Vicente, a fundação dos
             primeiros núcleos urbanos surgiram em Olinda (1537), Salvador (1549), Vitória (1551) e Rio de Janeiro
             (1565).</p>
-
-        <p>O fracasso do cultivo da cana-de-açúcar em São Vicente gerou o povoamento das áreas do planalto paulista onde
+<p>O fracasso do cultivo da cana-de-açúcar em São Vicente gerou o povoamento das áreas do planalto paulista onde
             foram fundadas vilas como Santo André da Borda do Campo (1553) e São Paulo de Piratininga (1554). Dessa área
             partiram expedições - as bandeiras que utilizavam os rios como pontos de referência e locomoção. </p>
-
-        <p>Nas proximidades de São Paulo, o rio Tietê e seus afluentes foram vias naturais de acesso ao interior do
+<p>Nas proximidades de São Paulo, o rio Tietê e seus afluentes foram vias naturais de acesso ao interior do
             continente. Nas vilas do planalto, as principais atividades económicas foram a agricultura de subsistência e
             o apresamento de índios, vendidos como escravos.</p>
-
-
-
-
-
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-        <br>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <p class="caixa">Pense e responda!</p>
-
-        <h4>O Brasil na condição de colônia portuguesa, consolidou-se como área exportadora de matérias-primas e
-            importadora de bens manufaturados. O trecho trata da(o):</h4>
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp3','globinho3', 'desativar3', 'pois é, nessa divisão que vemos quem é quem no mundo. Está indo bem','2'); this.style.backgroundColor='lightgreen'">
-
-            a) Divisão Internacional do Trabalho.
-
-        </button>
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            b) Sistema de <em>&nbspPlantation</em>.
-
-        </button>
-
-
-
-
-
-        <button class="desativar3 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp3','globinho3', 'desativar3','0');this.style.backgroundColor='tomato'">
-
-            c) Tratado de Madri.
-
-        </button>
-
-
-
-
-        <p id="resp3"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho3" style="display:none" alt="globinho3"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="topico">
-
-        <h2>O povoamento no século XVII </h2>
-
-
-        <p>É claro que outros povos não ficaram só olhando a exploração de Portugal em sua nova terra. Holandeses também
+<button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+<br/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>O Brasil na condição de colônia portuguesa, consolidou-se como área exportadora de matérias-primas e
+            importadora de bens manufaturados. O trecho trata da(o):</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p3a" name="pergunta3" type="radio" value="correto"/>
+<label class="card-opcao" for="p3a">
+<span>a) Divisão Internacional do Trabalho.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3b" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3b">
+<span>b) Sistema de &amp;nbspPlantation .</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p3c" name="pergunta3" type="radio" value="errado"/>
+<label class="card-opcao" for="p3c">
+<span>c) Tratado de Madri.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta3', 'resp3', 'globinho3', 'pois é, nessa divisão que vemos quem é quem no mundo. Está indo bem', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp3"></p>
+<div class="area w3-center">
+<img height="64" id="globinho3" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2>O povoamento no século XVII </h2>
+<p>É claro que outros povos não ficaram só olhando a exploração de Portugal em sua nova terra. Holandeses também
             dominaram o Nordeste no século XVII a partir dos engenhos de açúcar e na<strong> criação de gado</strong>.
             Aliás os rebanhos foram responsáveis pelo avanço ao sertão do território, quer dizer para o interior. No rio
             São Francisco a criação era bastante intensa que o apelido do rio era “rio dos currais”.</p>
-
-        <div class="w3-margin"><img id="imagem7" src="ts01f07.png" alt="ts01f07" class="w3-mobile"></div>
-
-
-
-
-        <p>Com o mapa podemos fazer comparações e verificar a expansão da ocupação do território ao longo do tempo. No
+<div class="w3-margin"><img alt="ts01f07" class="w3-mobile" id="imagem7" src="ts01f07.png"/></div>
+<p>Com o mapa podemos fazer comparações e verificar a expansão da ocupação do território ao longo do tempo. No
             sertão nordestino, vale do São Francisco, zona da mata e todo o litoral com a cana-de-açúcar incentivando o
             povoamento, que não era muito concentrado pois a pecuária era extensiva, ou seja, utilizava pouca
             mão-de-obra.</p>
-
-        <h2>O território ganha forma no XVIII</h2>
-
-        <p>No século XVIII esse processo de ocupação vai conhecer uma mudança impressionante, as bandeiras, o avanço
+<h2>O território ganha forma no XVIII</h2>
+<p>No século XVIII esse processo de ocupação vai conhecer uma mudança impressionante, as bandeiras, o avanço
             pelo vale do rio Amazonas e a mineração vão proporcionar um crescimento extraordinário do território
             brasileiro.</p>
-
-        <p>Vimos que o principal objetivo de Portugal era garantir a exploração de sua nova colônia. Para isso tinha
+<p>Vimos que o principal objetivo de Portugal era garantir a exploração de sua nova colônia. Para isso tinha
             missões principais de povoamento através da distribuição de terras com as capitanias primeiramente, depois
             sesmarias e posse mesmo com o princípio de<em> utis possidetis</em>, ou seja, as terras seriam de quem as
             ocupasse efetivamente sem precisar de títulos anteriores. Além das missões secundários de explorações pelo
             território com a recompensa de obter metais preciosos como ouro.</p>
-
-        <p>Foi então que encontraram esse precioso minério na porção central do Brasil que corresponde hoje aos Estados
+<p>Foi então que encontraram esse precioso minério na porção central do Brasil que corresponde hoje aos Estados
             de Minas Gerais e Mato Grosso. Isso mudaria e implantaria uma nova organização territorial e administrativa
             da colônia.</p>
-
-        <p>O abastecimento da área de <trong>mineração</trong>ebiam milhares de pessoas em busca de enriquecimento
+<p>O abastecimento da área de <trong>mineração</trong>ebiam milhares de pessoas em busca de enriquecimento
             resultou um primeiro ensaio de integração econômica. Cresceram cidades e vilas de uma hora para outra como
             Vila Rica (atual Ouro Preto), São João del-Rei, Nossa Senhora do Carmo (Mariana), Vila Boa (atual Goiás),
             Cuiabá, Cáceres e dezenas de outras.</p>
-
-        <p>A mineração tomou-se a mais importante atividade econômica da colônia, o que fez com que a sede de governo
+<p>A mineração tomou-se a mais importante atividade econômica da colônia, o que fez com que a sede de governo
             fosse transferida de Salvador para Rio de Janeiro, mais próximo das áreas mineradoras e com um porto pronto
             para exportar para Portugal.</p>
-
-        <p>Muitos caminhos surgiram para interligar o interior aos portos e facilitar a circulação do gado vindo do Sul
+<p>Muitos caminhos surgiram para interligar o interior aos portos e facilitar a circulação do gado vindo do Sul
             e do Nordeste e dos manufaturados europeus que abasteciam as vilas do ouro.</p>
-
-        <p>Nelas artistas de origem humilde, reconhecidos por seu talento, impulsionaram o movimento artístico que
+<p>Nelas artistas de origem humilde, reconhecidos por seu talento, impulsionaram o movimento artístico que
             ficara conhecido como Barroco Mineiro. </p>
-
-        <p>Nesse período os acordos entre portugueses e espanhóis continuavam a todo vapor. Como estava ocorrendo uma
+<p>Nesse período os acordos entre portugueses e espanhóis continuavam a todo vapor. Como estava ocorrendo uma
             nova distribuição de terras para quem quisesse explorar, os espanhóis ficaram com a posse definitiva das
             Filipinas e receberam a Colônia do Sacramento fundada no atual na região do Prata. Em contrapartida, a Coroa
             portuguesa ficou com a Amazônia e com as terras situadas nas regiões Sul e Centro-Oeste.</p>
-
-        <p>Mas com um território desse tamanho repleto de riquezas não seria fácil controlar todos os movimentos de
+<p>Mas com um território desse tamanho repleto de riquezas não seria fácil controlar todos os movimentos de
             independência. O século XIX seria marcado por diversas revoltas e frentes pioneiras novas.</p>
-
-        <div class="w3-card-4 w3-pale-red w3-padding">
-
-            <h2>Enquanto isso na Amazônia...</h2>
-            <p>No Nordeste do século XVII, além do açúcar e da pecuária, destacavam-se como atividade econômicas as
+<div class="w3-card-4 w3-pale-red w3-padding">
+<h2>Enquanto isso na Amazônia...</h2>
+<p>No Nordeste do século XVII, além do açúcar e da pecuária, destacavam-se como atividade econômicas as
                 lavouras de algodão e a produção de fumo na área do Recôncavo, nas proximidades de Salvador. O tabaco de
                 melhor qualidade era encaminhado a Portugal enquanto o restante da produção servia como moeda de troca
                 na captura, transporte e comércio de escravos africanos.</p>
-
-            <p>Na Amazônia, o foco foi a extração das "drogas do sertão" Eram produtos como urucum, cravo, baunilha,
+<p>Na Amazônia, o foco foi a extração das "drogas do sertão" Eram produtos como urucum, cravo, baunilha,
                 canela, cacau, guaraná, e também folhas e raízes, como a salsaparrilha, dotadas de propriedades
                 medicinais e utilizadas na culinária. Extraídos ao longo de rio Amazonas e seus afluentes pela população
                 local, composta de indígenas e mamelucos (mestiços de europeus e nativos), esses produtos eram
@@ -683,83 +401,55 @@
                 contra as missões jesuíticas estabelecidas em terras paranaenses, gaúchas, paraguaias e argentinas,
                 integrantes da América espanhola, capturando milhares de nativos.<span class="w3-small"> (SANTOS,
                     2008).</span></p>
-        </div>
-
-
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-        <br>
-
-
-    </div>
-
-    <div class="topico">
-
-        <p class="caixa"> Faça as conexões!</p>
-
-        <h4> Leia e marque a opção de acordo com tema: "Desempenhou importante papel na ocupação do interior do Brasil,
+</div>
+<button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+<br/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>Leia e marque a opção de acordo com tema: "Desempenhou importante papel na ocupação do interior do Brasil,
             aproveitando-se o rebrotar das folhas na estação das águas nas caatingas arbustivas mais densas, além dos
             brejos e dos trechos de matas. Com a exploração das minas de ouro descobertas mais ao sul, foram necessários
-            também carne, couro e outros derivados, além de animais para o transporte". </h4>
-
-        <button class="desativar4 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
-
-            a) Borracha.
-
-        </button>
-
-
-        <button class="desativar4 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp4','globinho4', 'desativar4', 'bem tranquila essa questão. Em 2020 o Brasil possuia 218,2 milhões de cabeças de gado','2'); this.style.backgroundColor='lightgreen'">
-
-            b) Pecuária.
-
-        </button>
-
-
-        <button class="desativar4 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp4','globinho4', 'desativar4','0');this.style.backgroundColor='tomato'">
-
-            c) Mineração.
-
-        </button>
-
-
-
-
-        <p id="resp4"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho4" style="display:none" alt="globinho4"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-
-    <div class="topico">
-
-        <h2>A busca da independência do território </h2>
-
-
-        <p>O século XIX foi o período intenso de redefinição do território brasileiro. Primeiro, o pais consolidou suas
+            também carne, couro e outros derivados, além de animais para o transporte".</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p4a" name="pergunta4" type="radio" value="errado"/>
+<label class="card-opcao" for="p4a">
+<span>a) Borracha.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p4b" name="pergunta4" type="radio" value="correto"/>
+<label class="card-opcao" for="p4b">
+<span>b) Pecuária.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p4c" name="pergunta4" type="radio" value="errado"/>
+<label class="card-opcao" for="p4c">
+<span>c) Mineração.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta4', 'resp4', 'globinho4', 'bem tranquila essa questão. Em 2020 o Brasil possuia 218,2 milhões de cabeças de gado', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp4"></p>
+<div class="area w3-center">
+<img height="64" id="globinho4" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2>A busca da independência do território </h2>
+<p>O século XIX foi o período intenso de redefinição do território brasileiro. Primeiro, o pais consolidou suas
             fronteiras e promoveu sua independência de Portugal (mas ainda temos muitas dependências por ai). Segundo,
             surgiu outro produto que seria o motor da economia brasileira: o <strong>café</strong>.</p>
-
-        <p>O café chegou ao Brasil vindo do continente africano, inicialmente pela região Norte e depois foi parar no
+<p>O café chegou ao Brasil vindo do continente africano, inicialmente pela região Norte e depois foi parar no
             Rio de Janeiro e se instalou de vez no vale do rio Paraíba no Estado de São Paulo.</p>
-
-        <p>A exploração da cafeicultura e ainda com a escravidão fizeram emergir inúmeras cidades paulistas como
+<p>A exploração da cafeicultura e ainda com a escravidão fizeram emergir inúmeras cidades paulistas como
             Araraquara, Limeira Campinas São Carlos Ribeirão Preto, São José do Rio Preto, entre outras localizadas na
             depressão Periférica Paulista e no planalto Ocidental. Com clima e solo de terra roxa (solo de cor
             vermelho-escura originado da decomposição dos derrames basálticos ocorridos na região) o café encontrou
@@ -767,177 +457,104 @@
             relação a vegetação de Mata Atlântica no interior e de floresta tropical foi um desastre, uma vez que essas
             formações vegetais praticamente desapareceram para dar lugar a nova prática agrícola muito rentável no
             comércio mundial.</p>
-
-        <p>Com a cafeicultura também as relações de trabalho no Brasil foram alteradas. Enquanto no vale do Paraíba o
+<p>Com a cafeicultura também as relações de trabalho no Brasil foram alteradas. Enquanto no vale do Paraíba o
             braço escravo sobreviveu até a década de 1880, em meio a decadência dos safras, na região de Campinas e
             Ribeiro Preto, mais dinâmicas, era utilizada a mão-de-obra livre e assalariada, incentivada pela imigração:
             de 1884 a 1903 entraram no pais mais de um 1 745 mil imigrantes europeus.</p>
-
-        <p>A cafeicultura paulista sustentou as finanças do Império e, depois da chamada República Ve (1889-1930). Em
+<p>A cafeicultura paulista sustentou as finanças do Império e, depois da chamada República Ve (1889-1930). Em
             1929, ocorreu a grande crise gerada pela quebra da Bolsa de Valores de Nova York, que acarretou a derrubada
             no preço das sacas de café. Nesse período, entretanto, o capital acumulado pela cafeicultura já incentivava
             a atividade industrial no Brasil, criando uma nova organização do espaço.</p>
-
-        <p>Ainda no século XIX, a região Norte conheceu um surto de riqueza associada à exploração de látex na Amazônia.
+<p>Ainda no século XIX, a região Norte conheceu um surto de riqueza associada à exploração de látex na Amazônia.
             Da seringueira, extraía-se a matéria-prima para a produto da borracha Essa atividade era desenvolvida por
             milhares de trabalhadores em sua maioria migrantes nordestinos que seguiam os mesmos caminhos dos
             exploradores das drogas de sertão.</p>
-
-        <p>Avançando para Oeste, em busca de novos seringais, eles ocuparam terras bolivianas. Essa invasão acabou
+<p>Avançando para Oeste, em busca de novos seringais, eles ocuparam terras bolivianas. Essa invasão acabou
             definindo os contornos do país com a aquisição do Acre à Bolívia por 2 milhões de libras esterlinas em 1903.
         </p>
-
-
-
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-        <br>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <p class="caixa">Olhe para o passado para entender o presente</p>
-
-        <h4> “Uma unidade de produção caracterizada pela presença da grande propriedade (latifúndio), pela monocultura
+<button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+<br/>
+</div>
+<div class="topico pergunta-bloco w3-container w3-padding-24">
+<p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+<h4 class="fontePixel"><b>“Uma unidade de produção caracterizada pela presença da grande propriedade (latifúndio), pela monocultura
             (cana-de-açúcar) e pelo trabalho escravo (inicialmente indígena, posteriormente africano), cuja produção se
-            destinava basicamente ao mercado europeu, do qual ela dependia”. O texto se refere ao sistema de: </h4>
-
-
-
-        <button class="desativar5 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); MostrarFrase('resp5','globinho5', 'desativar5', 'esse tipo de organização do território brasileiro deixou marcas até no período atual','2'); this.style.backgroundColor='lightgreen'">
-
-            a) Sistema de Plantation.
-
-        </button>
-
-        <button class="desativar5 area p4 w3-padding w3-margin"
-            onclick=" MostrarProximo(this);RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">
-
-            b) Produção da Borracha.
-
-        </button>
-
-
-
-
-        <button class="desativar5 area p4 w3-padding w3-margin"
-            onclick="MostrarProximo(this); RetirarPontos('resp5','globinho5', 'desativar5','0');this.style.backgroundColor='tomato'">
-
-            c) Ocupação da Amazônia.
-
-        </button>
-
-
-
-
-        <p id="resp5"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho5" style="display:none" alt="globinho5"
-                    width="64" height="64">
-            </p>
-        </div>
-
-
-        <hr>
-
-
-    </div>
-
-
-    <div class="topico">
-
-        <h2>A ação diplomática nos séculos XIX e XX </h2>
-
-        <p>Durante o período imperial e o republicano, foram incorporados ao território brasileiro aproximadamente 1
+            destinava basicamente ao mercado europeu, do qual ela dependia”. O texto se refere ao sistema de:</b></h4>
+<div class="grupo-respostas w3-margin-top">
+<div class="item-resposta">
+<input class="radio-duvid" id="p5a" name="pergunta5" type="radio" value="correto"/>
+<label class="card-opcao" for="p5a">
+<span>a) Sistema de Plantation.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p5b" name="pergunta5" type="radio" value="errado"/>
+<label class="card-opcao" for="p5b">
+<span>b) Produção da Borracha.</span>
+</label>
+</div>
+<div class="item-resposta">
+<input class="radio-duvid" id="p5c" name="pergunta5" type="radio" value="errado"/>
+<label class="card-opcao" for="p5c">
+<span>c) Ocupação da Amazônia.</span>
+</label>
+</div>
+</div>
+<div class="w3-margin-top">
+<button class="btn-acao-duvid" onclick="validarRadio(this, 'pergunta5', 'resp5', 'globinho5', 'esse tipo de organização do território brasileiro deixou marcas até no período atual', '10')">
+                    Confirmar Resposta
+                </button>
+</div>
+<p class="w3-center w3-padding w3-large" id="resp5"></p>
+<div class="area w3-center">
+<img height="64" id="globinho5" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/>
+</div>
+</div>
+<div class="topico">
+<h2>A ação diplomática nos séculos XIX e XX </h2>
+<p>Durante o período imperial e o republicano, foram incorporados ao território brasileiro aproximadamente 1
             milhão de km². Eram, em geral, áreas ocupadas por brasileiros, que foram anexadas por meio de acordos e
             tratados.</p>
-
-        <p>Nesse período, foi decisiva a atuação de José Mana da Silva Paranhos Júnior, barão do Rio Branco Ministro das
+<p>Nesse período, foi decisiva a atuação de José Mana da Silva Paranhos Júnior, barão do Rio Branco Ministro das
             Relações Exteriores entre 1902 e 1912. Ele ajudou a consolidar nossas fronteiras por meios pacíficos. As
             principais questões fronteiriças do final do século XIX e início do século XX foram as seguintes:</p>
-
-        <ul class="w3-padding-top">
-            <li> Palmas: área disputada pelo Brasil e pela Argentina, situada no extremo Oeste dos Estados de Santa
-                Catarina e Paraná. A disputa for resolvida por <span
-                    onclick="document.getElementById('arbitramento').style.display='block'"
-                    class="w3-yellow">arbitramento</span> internacional em 1895.
+<ul class="w3-padding-top">
+<li> Palmas: área disputada pelo Brasil e pela Argentina, situada no extremo Oeste dos Estados de Santa
+                Catarina e Paraná. A disputa for resolvida por <span class="w3-yellow" onclick="document.getElementById('arbitramento').style.display='block'">arbitramento</span> internacional em 1895.
             </li>
-
-            <li>Amapá: área disputada pelo Brasil e pela França (já que a Guiana Francesa até hoje é um Departamento
+<li>Amapá: área disputada pelo Brasil e pela França (já que a Guiana Francesa até hoje é um Departamento
                 Ultramarino da França), a qual reivindicava terras além do rio Oiapoque, no extremo norte do país. O
                 litigio também foi resolvido por arbitragem internacional em 1900. </li>
-
-            <li>Pirara: área disputada pelo Brasil e pela Guiana (então colônia do Reino Unido) próximo ao lago Pirara
+<li>Pirara: área disputada pelo Brasil e pela Guiana (então colônia do Reino Unido) próximo ao lago Pirara
                 no Leste do atual estado de Roraima. Levada ao arbitramento internacional a pendência foi resolvida em
                 1904, sendo desfavorável ao Brasil. O território foi dividido cabendo à Guiana Inglesa a maior parte.
             </li>
-
-            <li> Acre: área ocupada por seringueiros brasileiros; a área nas vizinhanças do rio Acre gerou um confronto
+<li> Acre: área ocupada por seringueiros brasileiros; a área nas vizinhanças do rio Acre gerou um confronto
                 militar e diplomático entre Brasil e Bolívia, na virada do século XIX. Chegaram a ocorrer choques
                 armados entre os seringueiros e as tropas bolivianas. A crise for superada em 1903 pela assinatura do
                 tratado de Petrópolis, que levou à compra do Acre. </li>
-        </ul>
-
-
-
-        <div id="arbitramento" class="w3-modal w3-margin-top">
-            <div class="w3-modal-content">
-                <div class="w3-container">
-                    <span onclick="document.getElementById('arbitramento').style.display='none'"
-                        class="w3-button w3-red w3-display-topright">&times;</span>
-                    <p>"O Brasil foi, durante muitos séculos, um grande arquipélago, formado por subespaços, que evoluíram, segundo lógicas próprias, ditadas em grande parte por suas relações com o mundo exterior. Havia, sem dúvida, para cada um desses subespaços, polos dinâmicos internos. Estes, porém, tinham entre si escassa relação, não sendo interdependentes". Mílton Santos. A Urbanização brasileira, 1993. Adaptado.
+</ul>
+<div class="w3-modal w3-margin-top" id="arbitramento">
+<div class="w3-modal-content">
+<div class="w3-container">
+<span class="w3-button w3-red w3-display-topright" onclick="document.getElementById('arbitramento').style.display='none'">×</span>
+<p>"O Brasil foi, durante muitos séculos, um grande arquipélago, formado por subespaços, que evoluíram, segundo lógicas próprias, ditadas em grande parte por suas relações com o mundo exterior. Havia, sem dúvida, para cada um desses subespaços, polos dinâmicos internos. Estes, porém, tinham entre si escassa relação, não sendo interdependentes". Mílton Santos. A Urbanização brasileira, 1993. Adaptado.
                     </p>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="w3-margin"><img id="imagem8" src="ts01f08.png" alt="ts01f08" class="w3-mobile"></div>
-
-
-
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr>
-
-        <br>
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="topico">
-
-
-        <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+</div>
+</div>
+</div>
+<div class="w3-margin"><img alt="ts01f08" class="w3-mobile" id="imagem8" src="ts01f08.png"/></div>
+<button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
+<hr/>
+<br/>
+</div>
+<div class="topico">
+<h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
                 Qual a diferença entre a maneira da Geografia e História ensinar sobre o Brasil?
             </strong> </p>
-
-        <p><span class="primeiraLetra">R:</span>
+<p><span class="primeiraLetra">R:</span>
 
             A Geografia e a História, de maneira geral, possuem objetos, olhares diferentes para a realidade. A História
             investiga os fatos a partir do Tempo, por isso essa ciência não estuda somente o passado como dizem, mas sim
@@ -950,21 +567,12 @@
             sociedade. O espaço geográfico não é somente uma coisa passiva, ele tem a capacidade de potencializar ou não
             as ações dos homens. A História vai estudar essas mesmas ações humanas tendo o tempo como parâmetro e a
             Geografia através do espaço geográfico como referência. </p>
-
-
-
-
-
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Por que é importante estudar o território brasileiro?
 
             </strong></p>
-
-        <p><span class="primeiraLetra">R:</span> O estudo do território brasileiro nos permite diversas possibilidades
+<p><span class="primeiraLetra">R:</span> O estudo do território brasileiro nos permite diversas possibilidades
             para entender a realidade. Em primeiro lugar vivemos em um mundo complexo em um período globalizado com
             diversas conexões entre os lugares que fazem parte do território e o mundo. A maneira pela qual o Brasil
             organizou seu espaço geográfico ao longo dos séculos e como o Brasil de hoje participa da História mundial
@@ -977,16 +585,12 @@
             possuem melhores infraestruturas e outros estão há décadas sem saneamento básico? Todas essas questões
             envolvem o território e a política, o território e a cidadania, o território e o meio natural no qual
             compartilhamos a existência. </p>
-
-
-
-        <p class="borda"> <span class="primeiraLetra">P:</span> <strong>
+<p class="borda"> <span class="primeiraLetra">P:</span> <strong>
 
                 Por que o Brasil é subdesenvolvido?
 
             </strong></p>
-
-        <p><span class="primeiraLetra">R:</span> A Geografia busca responder essas e outras questões a partir de seu
+<p><span class="primeiraLetra">R:</span> A Geografia busca responder essas e outras questões a partir de seu
             objeto de estudo: o espaço geográfico. Isso por que o território interfere e muito na vida das pessoas. Um
             dos argumentos mais utilizados é de que a colonização deixou marcas profundas em nossa sociedade e em nosso
             território. Tudo que vimos, a exploração dos indígenas, o papel da escravidão em nosso passado, a mineração,
@@ -995,314 +599,54 @@
             outros países chamados de desenvolvidos. Mas o futuro de um país passa por decisões políticas, territoriais
             e técnicas, a combinação dessas esferas pode modificar nossa realidade, o futuro ainda não foi determinado.
         </p>
-
-
-
-
-
-
-
-
-
-        <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
-        <br><br>
-
-
-        <hr>
-
-    </div>
-
-
-
-
-    <div class="topico">
-
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding">
-
-            <h4 class="w3-center"><strong>Análise do jogo Far Cry 6</strong>.</h4>
-
-
-            <div class="w3-margin"><img id="imagem9" src="ts01f09.png" alt="jogo Far Cry 6" class="w3-mobile"></div>
-
-
-            <p>No jogo Far Cry 6, da franquia Ubisoft, uma ilha chamada Yara é comandada por um ditador Antón Castillo.
-                Após uma revolução e anos de embargo econômico, um grupo guerrilheiro decide tomar o poder com práticas
-                nacionalistas e militares. A principal fonte econômica da ilha é o Viviro, uma mutação artificial do
-                tabaco que é um remédio para a cura do câncer. </p>
-
-            <p>Nesse cenário de uma alusão à um país latino-americano, o jogador vivido na pele de uma ou um
-                guerrilheiro deve realizar diversas missões com o intuito de destituir o ditador do poder. Explora
-                diversas áreas do mapa da ilha, além de possuir ajudantes nas tarefas.</p>
-
-
-            <h4><strong>Instruções</strong>: </h4>
-
-            <p>Com base no texto lido e nos seus conhecimentos sobre jogos adquiridos ao longo do tempo discuta com o
-                seu grupo de 5 estudantes as possibilidades que a formação territorial do Brasil oferece para criarmos
-                uma fase para um jogo RPG2d conforme orientação do professor em sala de aula, reflita e escreva sobre os
-                pontos a seguir:</p>
-
-
-            <ul>
-
-
-
-                <li> Objetivo principal (o que os seus jogadores devem fazer no jogo?); </li>
-
-                <li>
-                    História (qual o problema será resolvido?. Deve conter o início, meio e desfecho da história);
-                </li>
-
-                <li>
-                    Regras (como os jogadores tentarão ganhar o jogo);
-                </li>
-
-                <li>
-                    Cenário (construção dos objetos presente no game);
-                </li>
-
-                <li>
-                    Interação entre cenário e NPCs (personagem não jogável);
-                </li>
-
-
-
-                <li> Escolha um integrante do grupo para escrever os tópicos na lousa;</li>
-
-                <li>Tempo de atividade: 15 minutos.</li>
-
-
-
-            </ul>
-
-        </div>
-
-
-        <button class="btnShow margemAcima" onclick="MostrarProximo(this); this.style.display='none'">Proximo</button>
-        <hr><br>
-
-    </div>
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow " onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-        <br>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom w3-padding" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <div class="w3-padding-48">
-
-        <!-- <span id="numero"></span>  -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-        <div class="w3-container justificadoDireita">
-
-
-            <div class="postit-tp13 w3-padding ">
-
-                <a href="https://www.youtube.com/watch?v=8gM6WJ-ED9A&t=329s&ab_channel=BBCNewsBrasil" target="_blank">
-                    <span class="w3-text-white"> Por que o Brasil continuou um só e a América espanhola se dividiu após independência?</span>
-                   
-                </a>
-
-            </div>
-
-      
-
-        </div>
-
-            
-        <div class="w3-container">
-            <div class="postit-tp13 w3-padding ">
-                <a href="https://www.youtube.com/watch?v=6JugVFF3SM0&ab_channel=DGPMundo" target="_blank">
-                    <span class="w3-text-white"> 
-                    Evolução do Território Brasileiro</span>
-                </a>
-            </div>
-        </div>
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-        <p> <strong> Índio ou indígena? Entenda a diferença entre os dois termos. </strong> Disponível em:
-            https://g1.globo.com/
-            educacao/noticia/2022/04/19/
-            indio-ou-indigena-entenda-a-diferenca-entre-os-dois-termos.ghtml.
-            Acesso em: 24 jun. 2022. </p>
-
-        <p> MARIANO, Maryelle Florêncio (et al.). <strong> Geografia do Brasil </strong> Londrina: Editora e
-            Distribuidora Educacional S.A., 2018. </p>
-
-
-
-        <p> SANTOS, Mílton. <strong> O pais distorcido: </strong> o Brasil, a globalização a cidadania. São Paulo:
-            Publifolha, 2002. </p>
-
-        <p> SANTOS, Milton.; SILVEIRA, Maria Laura. <strong> O Brasil: </strong> território e sociedade no início do
-            século XXI. 4.ed. Rio de Janeiro: Record, 2002. </p>
-
-        <p> SANTOS, Patrícia Cardoso dos (et al.) <strong> Enciclopédia do Estudante: </strong> geografia do Brasil:
-            aspectos físicos, econômicos e sociais. São Paulo: Moderna, 2008. </p>
-
-        <p>VESENTINI, José William. <strong> Geografia </strong> o mundo em transição. Ensino médio. 2. ed. – São Paulo:
-            Ática, 2013. </p>
-
-
-
-
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        //  function numButton() {
-        //             numB++;
-        //             document.getElementById("numero").innerHTML = numB;
-        //         }
-
-
-
-
-
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                // numButton();
-                ApagaButton();
-                RemoveBalancarGlobo();
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-
-            }
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 18);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-
-
-
+<button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Desafio</button>
+<br/><br/>
+<hr/>
+</div>
+<div class="topico">
+<h3>Antes de finalizar, vamos fazer as questões!</h3>
+<button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+<p id="respFinal"></p>
+<div class="area">
+<p><img alt="globinhorespFinal" height="64" id="globinhorespFinal" src="../../../fotoIndex/globinhoPe.png" style="display:none" width="64"/></p>
+</div>
+<hr/>
+</div>
+<!-- TÓPICO FINALIZAR -->
+<div class="topico">
+<button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+</div>
+<div class="bibliografias w3-content w3-padding-64" id="final-da-aula" style="max-width:700px">
+<hr/>
+<h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+<div class="w3-row-padding" id="links-gerados"></div>
+<div class="w3-container w3-padding-64">
+<h3 class="fontePixel w3-center w3-text-green">
+<strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+</h3>
+<div id="biblio-gerada"></div>
+</div>
+<br/><br/>
+<div class="w3-padding-48">
+<span id="numero"></span>
+<span id="txtBarra">0%</span>
+<progress id="progress" max="100" value="0"></progress>
+</div>
+</div></main>
+<div id="footer-placeholder"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
 </body>
-
 </html>

@@ -6,168 +6,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 
-    <title>2º ano - Texto 16 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
 
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
 
-    <style>
-        .topico {
-            display: none;
-        }
-
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-        .postit-tp9 {
-
-
-            width: 250px;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-
-        .pulsar {
-            transition: transform 500ms;
-            transition-timing-function: cubic-bezier(0.75, -3, .25, 4);
-        }
-
-        .pulsar:hover {
-            transform: scale(1.1);
-        }
-
-        .content {
-            display: none;
-            position: relative;
-
-        }
-
-
-        /* Estilo pinterest */
-
-
-
-
-
-        /* Media Query para dispositivos móveis */
-        @media screen and (max-width: 640px) {}
-    </style>
-
-
-
+    <title>2º ano - Texto 16</title>
 
 </head>
 
 <body>
 
+    <div id="header-placeholder"></div>
 
+    <div id="aviso-status" class="w3-margin-top"></div>
 
-    <div class="topico">
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
 
-        <div class="centerBar">
+        <div class="topico">
+            <div class="w3-padding-top-48"></div>
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
+            <h1 id="h1"></h1>
 
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
+            <!-- Futuro audio -->
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
             </div>
-        </div>
 
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
             </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
         </div>
 
-
-
-        <h1 id="h1"> Texto 16 - Vegetação I</h1>
-
-
-        <p><strong> Conteúdo:</strong> Floresta amazônica; Mata Atlântica; Mata de Araucárias.
-        </p>
-
-        <p><strong>Objetivo:</strong> Destacar as principais características das vegetações do Brasil: Floresta
-            amazônica, Mata atlântica, Manguezal; Mata de Araucárias e os impactos da interferência humana nesses
-            domínios.</p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico ">
+<div class="topico ">
 
         <h2> Introdução </h2>
 
@@ -195,8 +110,7 @@
 
     </div>
 
-
-    <div class="topico">
+<div class="topico">
         <div class="w3-pale-yellow">
             <h2> Questões para serem respondidas no caderno sobre o tema da aula de hoje:</h2>
             
@@ -216,7 +130,7 @@
         <hr>
     </div>
 
-    <div class="topico">
+<div class="topico">
 
         <div class="w3-pale-green">
 
@@ -264,11 +178,8 @@
         <hr>
     
     </div>
-    
-    
 
-
-    <div class="topico">
+<div class="topico">
 
         <h2> A importância do estudo da vegetação</h2>
 
@@ -351,8 +262,7 @@
 
     </div>
 
-
-    <div class="topico">
+<div class="topico">
 
         <h2>A vegetação na floresta amazônica</h2>
 
@@ -425,10 +335,7 @@
 
     </div>
 
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> A degradação da vegetação</h2>
 
@@ -484,9 +391,7 @@
 
     </div>
 
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>O garimpo ilegal </h2>
 
@@ -545,8 +450,7 @@
 
     </div>
 
-
-    <div class="topico">
+<div class="topico">
 
         <h2>A destruição da Mata Atlântica </h2>
 
@@ -606,7 +510,7 @@
 
     </div>
 
-    <div class="topico">
+<div class="topico">
 
         <h2>A floresta de Araucária </h2>
 
@@ -662,8 +566,7 @@
 
     </div>
 
-
-    <div class="topico">
+<div class="topico">
 
         <h2>A importância e fragilidade do manguezal </h2>
 
@@ -716,12 +619,7 @@
 
     </div>
 
-
-
-
-
-
-    <div class="topico w3-light-gray">
+<div class="topico w3-light-gray">
 
         <h2>Caminhos para um futuro ambientalmente equilibrado</h2>
 
@@ -799,19 +697,7 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-   
-
-
-
-        <div class="topico w3-pale-yellow ">
+<div class="topico w3-pale-yellow ">
 
             <p class="caixa">Agora é com você!</p>
 
@@ -874,16 +760,7 @@
 
         </div>
 
-
-
-
-
-
-
-
-
-
-        <div class="topico">
+<div class="topico">
 
 
             <h2 id="centralizado"> A curiosidade e a vontade de entender o mundo ao nosso redor são fundamentais para
@@ -994,437 +871,56 @@
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
         <div class="topico">
-
-            <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
-                <h2> <strong>Desafio - Jornada do herói: O Retorno com o Elixir </strong></h2>
-
-                <h4>
-                    Na última aula, nosso herói encarou seu último teste: A Ressurreição - uma espécie de purificação
-                    antes de ingressar de volta ao Mundo Comum.<br>
-
-                    Hoje, vamos finalizar essa Jornada com o herói regressando a seu ponto de partida, a última etapa da nossa história chamada de: O Retorno com o Elixir.<br>E aí, estão
-                    prontos encerrar essa etapa da Jornada do Herói? Formem seus grupos e vamos em frente!
-
-                </h4>
-            </div>
-
-
-
-            <div class="w3-card-4 w3-pale-yellow w3-padding">
-                <h3><strong>Instruções</strong> </h3>
-                <ul>
-
-                    <li>Forme um grupo com 5-6 estudantes;</li>
-
-                    <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
-
-                    <li> Faça anotações em seu caderno;</li>
-
-                    <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
-
-                    <li>Tempo da atividade: 25 minutos.</li>
-
-                </ul>
-
-            </div>
-
-            <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
-
-                <h4><strong>Retorno com o Elixir (12)</strong></h4>
-
-
-                <p>Leia a passagem abaixo:</p>
-
-
-
-
-                <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                    <p>
-                        “Nós, Buscadores, finalmente voltamos para casa, purgados, purificados, trazendo os frutos de
-                        nossa jornada. Dividimos com todos de Nossa Tribo o alimento e o tesouro que trouxemos, além de
-                        uma boa história sobre como isso foi conquistado. Fechou-se um círculo, dá para sentir. Pode-se
-                        ver que nossas lutas na Estrada dos Heróis trouxeram nova vida a nossa terra. Haverá outras
-                        aventuras, mas esta está completa, pois termina trazendo uma cura em profundidade, o bem-estar e
-                        a integração para nosso mundo. Os Buscadores voltaram para casa.”.
-
-                    </p>
-
-
-
-                </div>
-
-
-
-
-                <h4><strong>O retorno</strong></h4>
-
-                <p>Retornar com o Elixir significa introduzir a mudança na vida cotidiana e usar as lições da aventura
-                    para curar as feridas no Mundo Comum. É o momento da história de “amarrar as pontas” soltas, retomar
-                    as antigas questões para criar um sensação de fechamento de um círculo. </p>
-
-                <p>Geralmente, a maneira mais convencional de chegar ao fim de uma história é produzir a uma sensação de
-                    algo fechado, completado. Na maioria dos filmes e games ocidentais funciona dessa forma. Já a outra
-                    maneira popular na Ásia ou Europa seria o final aberto, no qual permanece perguntas não respondidas.
-                </p>
-
-                <p>Nessa fase o herói retorna de onde partiu, relembra como tudo começou e consegue até provocar uma
-                    comparação entre o antes e o agora.</p>
-
-                <p>Em <em>Red Dead Redemption 2</em> - Arthur Morgan, o protagonista, volta ao cenário inicial do jogo,
-                    refletindo sobre seu passado e percebendo a transformação pessoal que ocorreu durante sua jornada.
-                </p>
-
-
-
-
-                <h4><strong>Surpresa</strong></h4>
-
-                <p>Um bom retorno deve desatar os fio da meada com uma certa dose de surpresa, um gostinho do
-                    inesperado, uma revelação súbita.</p>
-
-                <p>O retorno também pode distribuir uma recompensa final ou até castigos na história. É onde os vilões
-                    recebem seu destino final, pagam por suas maldades com uma punição adequadas aos seus crimes.</p>
-
-                <p>Em <em>The Last of Us: Part II</em>: O desfecho da história desafia as noções convencionais de
-                    justiça e redenção, deixando uma forte impressão emocional.</p>
-
-
-
-                <h4><strong>O Elixir</strong></h4>
-
-                <p>A verdadeira chave do estágio final da Jornada do Herói é o Elixir. O que o herói traz do Mundo
-                    Especial para dividir com os outros no Retorno. É a prova de que ele esteve mesmo lá, serve de
-                    exemplo para os outros e, principalmente, demonstra que é possível superar a morte.</p>
-
-                <p>Com a sabedoria trazida pelo Elixir, até mesmo o mundo toda pode se alterar. O herói se torna mais
-                    responsável, mais sábio e formam-se novas relações, famílias etc.</p>
-
-                <p>Em <em>Horizon Zero Dawn</em>: Aloy, a protagonista deste jogo de ação e aventura, desvenda os
-                    segredos de um mundo pós-apocalíptico dominado por criaturas mecânicas. Ao final da sua jornada,
-                    Aloy traz consigo o Elixir do conhecimento e renovação, ajudando a reconstruir a sociedade e
-                    trazendo esperança para um futuro melhor.</p>
-
-
-                <h4><strong>Epílogo</strong></h4>
-
-                <p>Da mesma forma que algumas narrativas podem ter um prólogo que precede a ação, outas podem ter uma
-                    epílogo que se segue a história. Pode servir para completar a história, projetando-se adiante, em
-                    alguma época futura, para mostrar o que aconteceu com os personagens.</p>
-
-                <p>Em <em>God of War</em> (2018): Após a intensa jornada do protagonista, Kratos, e seu filho Atreus,
-                    apresenta um epílogo que expande a mitologia do jogo e estabelece novas possibilidades para o futuro
-                    da franquia.</p>
-
-
-                <h4><strong>Formas de terminar</strong></h4>
-
-                <p>A história pode, portanto, terminar de quatro maneiras principais: com um ponto final, um ponto de
-                    exclamação, um ponto de interrogação, ou reticências.</p>
-
-                <p><em>Life is Strange </em>apresenta um final aberto e emocional, com consequências significativas para
-                    as escolhas feitas ao longo da história, deixando espaço para interpretações pessoais e reflexões
-                    dos jogadores.</p>
-
-                <p>Já <em>The Legend of Zelda: Ocarina of Time</em> - tem um final definitivo, onde o herói, Link,
-                    derrota o vilão, Ganondorf, e restaura a paz em Hyrule.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-                <h4><strong>Questões para se pensar o Retorno com o Elixir:</strong></h4>
-
-                <div class="w3-panel w3-leftbar w3-sand w3-margin w3-padding">
-
-                    <p> - Qual é o Elixir que o seu Herói traz da experiência?</p>
-
-                    <p> - Quem é o herói de sua história agora? Ela mudou de heróis ou alguns personagens elevaram-se e
-                        tornaram-se heróis? Quem se revelou uma decepção? Há surpresas no desfecho final?
-
-                    </p>
-
-                    <p>- Em que ponto está você, em sua própria Jornada do Herói? Qual é o Elixir que você espera
-                        trazer?</p>
-
-
-
-                </div>
-
-
-
-
-
-
-
-            </div>
-
-
-
-
-            <button class="btnShow"
-                onclick="MostrarProximo(this); MostrarFrase('respFinal','globinhorespFinal', '', 'esse desafio foi bem interessante, você já pode finalizar sua lição','10');this.style.display='none'">Proximo</button>
-
-
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
             <p id="respFinal"></p>
-
             <div class="area">
                 <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
-                        alt="globinhorespFinal" width="64" height="64">
-                </p>
+                        alt="globinhorespFinal" width="64" height="64"></p>
             </div>
             <hr>
-
         </div>
 
-
-
+        <!-- TÓPICO FINALIZAR -->
         <div class="topico">
-
-
             <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-            <div class="w3-container">
-
-
-
-                <div id="id01" class="w3-modal">
-                    <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                        <div class="w3-center w3-padding-48">
-                            <span onclick="document.getElementById('id01').style.display='none'"
-                                class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                                title="Close Modal">&times;</span>
-
-
-
-                            <div class="nota">
-
-                            </div>
-
-                            <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                                class="w3-circle w3-animate-zoom ">
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-
-
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
+            </div>
+        <br><br>
         <div class="w3-padding-48">
             <span id="numero"></span>
             <span id="txtBarra">0%</span>
             <progress value="0" max="100" id="progress"></progress>
         </div>
-    
+    </main>
 
+    <div id="footer-placeholder"></div>
 
-
-        <div class="bibliografias">
-
-            <h3><strong>Para saber mais:</strong></h3>
-
-
-
-            <div class="area">
-
-
-                <div class="postit-tp9 w3-yellow">
-
-                    <a href="https://www.youtube.com/watch?v=CX2Jc4Rsyyw&ab_channel=BBCNewsBrasil" target="_blank">
-                        Ouro de Sangue: para onde vai o ouro ilegal garimpado na Amazônia?
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-
-
-
-            <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. - São
-                Paulo: Ática, 2013.
-            </p>
-
-
-            <p>
-                VOGLER, Christopher. <strong>A jornada do escritor</strong>: estruturas míticas para escritores.
-                Tradução de Ana Maria Machado. 2.ed. Rio de Janeiro: Nova Fronteira, 2006.
-            </p>
-
-            <p>
-                SKOLNICK, Evan. <strong>Video game storytelling</strong>: what every developer needs to know about
-                narrative techniques.New Yoirk: Watson-Guptill, 2014.
-            </p>
-
-
-
-        </div>
-        <br><br>
-
-
-
-
-
-
-        <script>
-
-
-            // function numButton() {
-            //     numB++;
-            //     document.getElementById("numero").innerHTML = numB;
-            //     console.log(numB);
-            // }
-
-            function myFunction(id) {
-                var x = document.getElementById(id);
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                    x.previousElementSibling.className =
-                        x.previousElementSibling.className.replace("w3-green", "w3-lightgrey");
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                    x.previousElementSibling.className =
-                        x.previousElementSibling.className.replace("w3-lightgrey", "w3-green");
-                }
-            }
-
-
-            function openModal(id, event) {
-                event.preventDefault();
-                // Obter todas as divs com a classe "content"
-                var divs = document.getElementsByClassName("content");
-
-                // Percorrer todas as divs
-                for (var i = 0; i < divs.length; i++) {
-                    // Se a div atual for a div com o id passado como parâmetro, mostrar a div
-                    if (divs[i].id === id) {
-                        divs[i].style.display = "block";
-                    } else { // Caso contrário, esconder a div
-                        divs[i].style.display = "none";
-                    }
-                }
-
-                console.log("ID do elemento:", id);
-            }
-
-
-
-
-            function closeModal() {
-
-
-
-                var contents = document.getElementsByClassName("content");
-                for (var i = 0; i < contents.length; i++) {
-                    contents[i].style.display = "none";
-                }
-
-
-
-            }
-
-
-
-
-
-
-
-
-
-            function MostrarProximo(parametro) {
-
-                var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-                var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-                if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-                {
-                    proximo.classList.add('mostrar'); // Mostrar o seguinte
-                    addProgressBar();
-                    // numButton();
-                    ApagaButton();
-                    RemoveBalancarGlobo();//retirar no Kodular
-
-                    document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-                }
-
-            }
-
-            function addProgressBar() {
-                var barra = document.getElementById("progress");
-                txtBarra = document.getElementById("txtBarra");
-
-                i = Math.round(100 / 12);
-                barra.value += i;
-
-                if (barra.value >= 100) {
-                    barra.value = 100;
-                }
-
-                txtBarra.innerHTML = barra.value + "%";
-
-            }
-
-
-
-
-        </script>
-
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'G-DPX55DSFZ0');
-
-        </script>
-
-
-
-
 
 </body>
 

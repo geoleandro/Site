@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "instituicao": "UNICAMP",
+    "ano": "2016",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "2ano/img/205/s5q1.png",
+    "pergunta": "A figura abaixo apresenta a ocorrência de derrames basálticos na porção centro-sul do Brasil.\n\nSobre essa ocorrência, é correto afirmar:",
+    "alternativas": [
+      "Trata-se de uma manifestação eruptiva do Mesozoico, associada com o resfriamento que formou o Oceano Atlântico, sendo uma das maiores manifestações vulcânicas da história geológica da Terra. As alterações dessas rochas formam solos muito férteis, chamados de Nitossolos.",
+      "Trata-se de uma manifestação eruptiva do Quaternário, relacionada a uma série de hotspots associados à bacia do Paraná. As alterações dessas rochas formam solos muito ácidos, que acabam por dificultar as atividades agrícolas.",
+      "corresponde a um evento vulcânico que foi ativo durante milhões de anos, associado à deriva continental da América do Sul, em direção leste. As alterações dessas rochas formam solos extremamente férteis, classificados atualmente como “Terras Roxas”.",
+      "foi uma atividade vulcânica entre as maiores da história da Terra, que ocorreu durante o Paleógeno (antigo Terciário Inferior), quando se iniciou a separação América do Sul-África. Os solos desenvolvidos sobre essas rochas são extremamente férteis."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 2,
+    "instituicao": "UEL",
+    "ano": "2010",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "A estrutura geológica do Brasil é composta por:\n\nI. Escudos cristalinos, muito antigos, de rochas rígidas e resistentes que originaram planaltos e algumas depressões, compondo 1/3 do território nacional.\n\nII. Bacias sedimentares compostas de rochas sedimentares que originaram as planícies, planaltos sedimentares ou depressões, ocupando cerca de 64% do total do país.\n\nIII. Dobramentos modernos que originaram planaltos e relevos montanhosos, formados no Terciário, ocupando cerca de 30% do território nacional.\n\nIV. Escudos cristalinos recentes, pouco desgastados por processos erosivos, que deram origem às formas de relevo no qual predominam os planaltos montanhosos distribuídos por quase todo o território nacional.\n\nAssinale a alternativa correta.",
+    "alternativas": [
+      "Somente as afirmativas I e II são corretas.",
+      "Somente as afirmativas I e IV são corretas.",
+      "Somente as afirmativas III e IV são corretas.",
+      "Somente as afirmativas I, II e III são corretas.",
+      "Somente as afirmativas II, III e IV são corretas."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 3,
+    "instituicao": "BRASIL ESCOLA",
+    "ano": "2022",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "Os crátons, subdivididos em escudos cristalinos e ________________, são caracterizados por serem formações geologicamente __________________. Eles apresentam uma estrutura rígida e resistente composta quase sempre por rochas ígneas e ___________________, posicionando-se em áreas de elevada ________________geológica.\n\nAssinale a alternativa que corretamente preenche as lacunas do texto:",
+    "alternativas": [
+      "maciços antigos, recentes, metamórficas, instabilidade.",
+      "dobramentos modernos, recentes, vulcânicas, estabilidade.",
+      "bacias sedimentares, antigas, sedimentares, instabilidade.",
+      "plataformas continentais, antigas, metamórficas, estabilidade.",
+      "bacias sedimentares, recentes, ígneas, instabilidade."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 4,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "\"As altitudes do relevo brasileiro são, em geral, modestas. O ponto mais alto do país não ultrapassa os 3 mil metros: o pico da Neblina (2993m), perto da fronteira do Amazonas com a Venezuela. Cerca de 41% do território nacional tem, no máximo, 200m de altitude; 78% tem até 500m; e 92,7% até 900m de altitude”.",
+    "fonte_apoio": "(Adaptado de: VESENTINI, J. W. Brasil: sociedade e espaço. Geografia do Brasil. 32º edição. São Paulo: Editora Ática, 2006. p.252).",
+    "pergunta": "(MUNDO EDUCAÇÃO 2022)\n\nAs características descritas acima indicam que o relevo brasileiro é:",
+    "alternativas": [
+      "bastante acidentado, com elevada incidência de dobramentos modernos.",
+      "diretamente influenciado pelas ações recentes de tectonismos.",
+      "geologicamente antigo, portanto mais desgastado.",
+      "pouco transformado pelos agentes erosivos e intempéricos.",
+      "totalmente aplainado, com poucas áreas de depressão."
+    ],
+    "correta": 2,
+    "comentario": ""
+  },
+  {
+    "id": 5,
+    "instituicao": "ENEM",
+    "ano": "2020",
+    "dificuldade": "",
+    "tags": [],
+    "texto_apoio": "“Escudos antigos ou maciços cristalinos são blocos imensos de rochas antigas. Estes escudos são constituídos por rochas cristalinas (magmático-plutônicas), formadas em eras pré-cambrianas, ou por rochas metamórficas (material sedimentar) do Paleozoico. São resistentes, estáveis, porém bastante desgastadas. Correspondem a 36% da área territorial e dividem-se em duas grandes porções: O Escudo das Guianas (norte da Planície Amazônica) e o Escudo Brasileiro (porção centro-oriental brasileira).”",
+    "fonte_apoio": "Disponível em http//ambientes.ambientebrasil.com br. Acesso em: 28 jun 2015.",
+    "pergunta": "As estruturas geológicas indicadas no texto são importantes economicamente para o Brasil por concentrarem",
+    "alternativas": [
+      "fontes de águas termais.",
+      "afloramentos de sal-gema.",
+      "jazidas de minerais metálicos.",
+      "depósitos de calcário agrícola.",
+      "reservas de combustível fóssil."
+    ],
+    "correta": 2,
+    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
+  },
+  {
+    "id": 6,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "(UFRS) O território brasileiro possui grande diversidade de formas de relevo, como serras, escarpas, planaltos, planícies, depressões e outras.\n\nNa coluna 1, são citadas cinco formas de relevo brasileiro; na coluna 2, são apresentadas características de três delas. Associe-as adequadamente.\n\nA sequência correta de preenchimento dos parênteses, de cima para baixo, é",
+    "alternativas": [
+      "3 - 5 - 4.",
+      "4 - 1 - 3.",
+      "1 - 5 - 2.",
+      "3 - 2 - 1.",
+      "4 - 3 - 2."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 7,
+    "instituicao": "BRASIL ESCOLA",
+    "ano": "2022",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "Os diferentes tipos de províncias geológicas revelam as diferentes feições do relevo enquanto expressões das diferentes temporalidades que marcam o passado geológico do planeta Terra. Por seus processos formativos, as estruturas geológicas com condições mais favoráveis à formação de combustíveis fósseis são:",
+    "alternativas": [
+      "as bacias sedimentares.",
+      "os maciços antigos.",
+      "as plataformas cristalinas.",
+      "os dobramentos antigos.",
+      "os dobramentos modernos."
+    ],
+    "correta": 0,
+    "comentario": ""
+  },
+  {
+    "id": 8,
+    "instituicao": "",
+    "ano": "",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "2ano/img/205/s5q8.png",
+    "pergunta": "(ENEM) Um professor, ao realizar uma viagem pelo Planalto Central do Brasil, fotografou a imagem a seguir e, ao chegar à sua cidade, apresentou a foto aos alunos durante uma aula de Geografia. Ele propôs um desafio: pediu a cinco alunos que denominassem a forma de relevo e a caracterizassem. Aline, Thiago, Higor, Pércia e Leo foram os alunos escolhidos; aquele que venceu o desafio foi:",
+    "alternativas": [
+      "Aline – A imagem corresponde a formas denominadas planaltos – área onde a deposição de materiais e sedimentos é maior que a erosão.",
+      "Thiago – A imagem corresponde a formas denominadas chapadas – forma planáltica de superfície aplainada (tabular) e encostas de declive acentuado ou quase verticais.",
+      "Higor – A imagem corresponde a formas denominadas cuestas – relevo dissimétrico formado por diferentes camadas de rochas (basalto sobre arenito) com uma porção frontal (front) côncava e inclinada e uma porção posterior (reverso) de declive suave. À sua frente, podem aparecer morros, testemunhos que indicam a posição da cuesta em tempos passados.",
+      "Perícia – A imagem corresponde a formas denominadas pediplanos – superfícies muito aplainadas e muito erodidas típicas de regiões com clima de reduzida umidade",
+      "Leo – A imagem corresponde a formas denominadas Inselbergs – são formas residuais que se destacam em meio aos pediplanos do Sertão nordestino brasileiro e que resistiram à erosão devido à composição de suas rochas."
+    ],
+    "correta": 1,
+    "comentario": ""
+  },
+  {
+    "id": 9,
+    "instituicao": "UFU",
+    "ano": "2001",
+    "dificuldade": "",
+    "tags": [],
+    "pergunta": "- Sobre a geologia e o relevo brasileiro, podemos afirmar que, EXCETO",
+    "alternativas": [
+      "Nas grandes bacias sedimentares predominam formas de planícies e planaltos sedimentares como chapadas e cuestas..",
+      "O Brasil possui um embasamento constituído de formações antigas cristalinas, ricas em minerais metálicos.",
+      "O relevo foi intensamente desgastado pela erosão, daí a ocorrência de vários planaltos de modestas altitudes..",
+      "O relevo brasileiro apresenta altitudes modestas no interior, e no litoral é bastante íngreme e elevado devido à presença de dobramentos terciários."
+    ],
+    "correta": 3,
+    "comentario": ""
+  },
+  {
+    "id": 10,
+    "instituicao": "FGV-SP",
+    "ano": "2017",
+    "dificuldade": "",
+    "tags": [],
+    "imagem_apoio": "2ano/img/205/s5q10.png",
+    "pergunta": "Considere os mapas a seguir.\n\nOs mapas apresentam as grandes estruturas geológicas brasileiras.\n\nSobre eles, é correto afirmar que temos,",
+    "alternativas": [
+      "em A, escudos cristalinos compostos por rochas magmáticas e metamórficas.",
+      "em B, maciços antigos compostos por rochas ígneas intrusivas e extrusivas.",
+      "em A, bacias sedimentares compostas por rochas aluvionais.",
+      "em B, crátons compostos por rochas cristalinas e magmáticas.",
+      "em A, depósitos sedimentares compostos por materiais orgânicos."
+    ],
+    "correta": 0,
+    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
+  }
+]

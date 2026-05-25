@@ -6,144 +6,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../estilos/fade.css">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
-    <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
-    <script src="../../../estilos/jstextos.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 
-    <title>2º ano - Texto 03 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
 
-    <style>
-        .topico {
-            display: block;
-        }
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
 
-        .topico:nth-child(1),
-        .topico.mostrar {
-            display: block
-        }
-
-
-        .postit-tp9 {
-            background: #e6ff5b;
-
-            width: auto;
-            height: auto;
-            padding: 20px;
-            font-family: pixel;
-            margin-bottom: 60px;
-            margin-top: 60px;
-
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            Color: rgb(0, 0, 0);
-            font-size: 18px;
-            box-shadow: 2px 4px 6px #444;
-            -moz-box-shadow: 2px 4px 6px #444;
-            -webkit-box-shadow: 2px 4px 6px #444;
-            transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-            -webkit-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-        }
-
-        .postit-tp9>a {
-            text-decoration: none;
-        }
-
-        .postit-tp9>a:hover {
-            text-decoration: underline;
-        }
-    </style>
-
-
-
+    <title>2º ano - Texto 03</title>
 
 </head>
 
 <body>
 
+    <div id="header-placeholder"></div>
 
+    <div id="aviso-status" class="w3-margin-top"></div>
 
-    <div class="topico">
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
 
-        <div class="centerBar">
+        <div class="topico">
+            <div class="w3-padding-top-48"></div>
 
-            <!-- Navigation (Stays on Top) -->
-            <div class="w3-top w3-bar w3-black  larguraBar ">
+            <h1 id="h1"></h1>
 
-                <a href="../../../Duvid2Ano.html" class=" w3-button  margemTop w3-large ">2º ano</a>
-
-                <span class="w3-bar-item w3-button margemTop" id="notaFixa"></span>
-
-                <span class="w3-bar-item w3-button "><img id="imagem50" src="../../../fotoIndex/globinhoPe.png"
-                        alt="tp3Foto4" width="32" height="32"></span>
-
+            <!-- Futuro audio -->
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
             </div>
-        </div>
 
-        <div class="w3-padding-top-48">
-            <div class="w3-white larguraBar w3-padding ladoDireito">
-
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large " name="decrease-font"
-                        id="decrease-font" title="Diminuir fonte">A -</button></div>
-                <div class="margemDireita"><button class="w3-green w3-border w3-round-large" name="increase-font"
-                        id="increase-font" title="Aumentar fonte">A +</button></div>
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
             </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
         </div>
 
-
-
-        <h1 id="h1"> Texto 03 - População I – origem e formação da população brasileira </h1>
-
-
-        <p><strong> Conteúdo:</strong> Matriz étnica: índios, negros e brancos; Imigração.
-
-        </p>
-
-        <p><strong>Objetivo:</strong> Entender a formação da população brasileira com base nas suas três matrizes
-            étnicas (africanos, europeus e indígenas). Identificar e entender dinâmicas de miscigenações e imigração
-            para a formação da população brasileira. </p>
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this);  Play('../../../audios/inicioNome.mp3'); this.style.display='none'">Iniciar</button>
-        <hr>
-
-    </div>
-
-
-    <div class="topico">
-
-
-        <p class="paragrafo " id="caixaNomeAluno">Digite seu nome</p>
-        <br>
-
-        <div class="area">
-            <input class="input" type="text" id="pq0" name="pq0">
-        </div>
-
-
-        <p id="resp0"></p>
-
-        <button id="buttonConfira" onclick="NomeAlunos('resp0','pq0')">Próximo </button>
-
-
-        <button id="buttonA" onclick="MostrarProximo(this); this.style.display='none'">Confirmar</button>
-        <hr>
-    </div>
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> Introdução </h2>
 
@@ -173,10 +112,7 @@
 
     </div>
 
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> </h2>
 
@@ -358,9 +294,7 @@
 
     </div>
 
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>A importância do Censo Demográfico </h2>
 
@@ -404,11 +338,7 @@
 
     </div>
 
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>A composição étnica brasileira </h2>
 
@@ -532,13 +462,7 @@
 
     </div>
 
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> A formação histórica e os grupos étnicos no Brasil</h2>
 
@@ -615,12 +539,7 @@
 
     </div>
 
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>A população indígena </h2>
 
@@ -690,12 +609,7 @@
 
     </div>
 
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2> A população negra no Brasil</h2>
 
@@ -749,13 +663,7 @@
 
     </div>
 
-
-
-
-
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>Ser negro no Brasil hoje </h2>
 
@@ -816,9 +724,7 @@
 
     </div>
 
-
-
-    <div class="topico">
+<div class="topico">
 
         <h2>O papel da imigração no Brasil </h2>
 
@@ -884,8 +790,7 @@
 
     </div>
 
-
-    <div class="topico">
+<div class="topico">
 
 
         <h2 id="centralizado"> Não existe pergunta boba! A Ciência é feita de perguntas!</h2>
@@ -952,383 +857,56 @@
 
     </div>
 
-
-
-
-    <div class="topico">
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-bottom">
-            <h2> <strong>Desafio - Jornada do herói: o mundo comum</strong></h2>
-
-            <h4>Nesta aula vamos continuar a estudar a jornada do herói para pensarmos sobre um jogo com o tema do
-                Brasil. Hoje vamos novamente formar o nosso grupo e refletir sobre o primeiro tema dessa jornada: o
-                mundo comum. Ao final, anote suas observações em seu caderno. </h4>
-        </div>
-
-
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding">
-            <h2><strong>Instruções</strong> </h2>
-            <ul>
-
-                <li>Forme um grupo com 5-6 estudantes;</li>
-
-                <li> Leia o texto abaixo e discuta com seu grupo o conteúdo das questões;</li>
-
-                <li> Faça anotações em seu caderno;</li>
-
-                <li> Seja criativo, use os conhecimentos que você já possui sobre o Desafio. </li>
-
-                <li>Tempo da atividade: 25 minutos.</li>
-
-            </ul>
-
-        </div>
-
-        <div class="w3-card-4 w3-pale-yellow w3-padding w3-margin-top">
-
-            <h4><strong>Mundo comum</strong></h4>
-
-            <p>Este é o começo da história, serve para contextualizar e mostrar o cenário. É aqui que a história do
-                herói é revelada para o público.</p>
-
-            <p>O começo da jornada do herói é sobre seu mundo cotidiano. Como seria o mundo comum dos indígenas antes da
-                chegada dos colonizadores portugueses?</p>
-
-            <p>O mundo comum é como o herói se aventura do mundo da vida cotidiana para uma região de aventuras e
-                conflitos.</p>
-
-            <h4><strong>Contraste</strong></h4>
-
-            <p>No filme <em>Star Wars</em>, Luke Skywalker vive uma vida frustrante com seu tio e tia em Tatooine. Mas o
-                herói está inquieto, sente que deve mudar algo na realidade e se transformar. O mundo comum parece algo
-                chato e calmo, mas os problemas e conflitos do herói já estão presentes, só esperando ser ativados.</p>
-
-            <h4><strong>Levantando a questão dramática</strong></h4>
-
-            <p>É no mundo comum do herói que vai surgir a questão dramática principal do jogo ou do filme. Toda boa
-                história levanta uma série de perguntas sobre o herói. Será que ela vai atingir seu objetivo? Superar
-                seu defeito? Aprender sua lição? Ou voltar para casa? Conseguir o outo ou ganhar o jogo?</p>
-
-            <h4><strong>Problemas internos e externos</strong></h4>
-
-            <p>Todo herói precisa de um problema interno e outro externo. Será que o herói é egoísta ou precisa
-                acreditar mais em si mesmo? Veja um exemplo de jogo sobre a população indígena criado pela Universidade Federal de São Carlos:</p>
-
-
-            <p>O jogo "Jeriguigi e o Jaguar na terra dos bororos" é voltado para crianças de 5 a 9 anos.</p>
-
-            <div class="w3-margin"><img id="imagem8" src="ts03f08.png" alt="ts01f08" class="w3-mobile"></div>
-
-            <p>Na história, o personagem deve enfrentar três desafios antes de retornar à aldeia, durante os quais ele
-                se depara com animais perigosos, condições naturais adversas e as próprias limitações comuns ao ser
-                humano.</p>
-
-            <h4><strong>Título</strong></h4>
-
-            <p>Como podemos pensar em nosso próprio jogo sobre o Brasil? Qual seria o título do jogo? </p>
-
-            <h4><strong>Entrando em cena</strong></h4>
-
-            <p>No jogo <em>Zelda – A Link to the Past</em>, o personagem Link aparece dormindo em seu quarto quando
-                recebe um pedido de ajuda. Já no jogo <em>God of War IV</em>, Kratos surge cortando uma árvore e, de
-                repente, se lembra de seu passado como Deus da Guerra ao apertar suas faixas em seu braço, agora sem as
-                lâminas do caos.</p>
-
-            <h4><strong>Apresentando o herói a plateia</strong></h4>
-
-            <p>Essa parte é importante da caracterização e apresentação do personagem e do mundo ao seu redor para o
-                público: Que roupa está usando, quem está em volta, como reage a ele? Qual sua atitude, emoção, objetivo
-                nesse momento? Entra em cena sozinho ou dentro de um grupo? Ou já está em cena quando a história começa?
-                É ele quem narra a história, esta é vista pelos olhos de outro personagem ou é contada objetivamente,
-                por meio de uma narrativa convencional?</p>
-
-            <h4><strong>Identificação entre o público e o herói</strong></h4>
-
-
-            <p>O herói deve ter objetivos, impulsos, desejos e necessidades especiais. O herói quer ser reconhecido?
-                Quer afeição ou ser aceito por uma comunidade?</p>
-
-
-
-
-            <h4><strong>A carência do herói</strong></h4>
-
-
-            <p>Quais as carências do herói? O que lhe foi tirado? Por que ele está disposto a lutar por isso? Alguém foi
-                raptado, morto ou ficou doente e o herói precisa resgatar, se vingar ou cuidar.</p>
-
-            <h4><strong>Falhas trágicas</strong></h4>
-
-            <p>Quais são as falhas do herói? Ele é arrogante ou orgulhoso.</p>
-
-            <h4><strong>Heróis feridos</strong></h4>
-
-            <p>O herói tem uma ferida psicológica? Ele sofreu rejeição, traição ou desapontamento?</p>
-
-            <h4><strong>Estabelecer o que está em jogo</strong></h4>
-
-            <p>O que é que o herói se arrisca a ganhar ou perder na aventura? Quais serão as consequências para o herói,
-                para a sociedade, e para o mundo, se ele tiver êxito ou fracassar?</p>
-
-            <p>O herói grego Perseu, retratado no filme Fúria de Titãs, tem que vencer várias provas, caso contrário sua
-                amada princesa Andrômeda será devorada por um monstro marinho. Outras histórias ameaçam parentes, como o
-                pai que corre risco em A Bela e a Fera. A heroína tem uma motivação forte para se colocar na posição
-                perigosa de ficar à mercê da Fera, pois o pai dela morrerá caso ela não faça o que o monstro exige. </p>
-
-            <h4><strong>História Pregressa e Exposição</strong></h4>
-
-            <p>Qual a história pregressa do herói? Qual o passado dele?</p>
-
-            <h4><strong>Tema</strong></h4>
-
-            <p>Qual o tema principal do jogo? Vaidade, preconceito, Ambição, Justiça? No jogo <em>The Last of Us
-                    II</em>, o tema principal é a vingança.</p>
-
-
-
-        </div>
-
-
-
-
-        <button class="btnShow"
-            onclick="MostrarProximo(this); MostrarFrase('resp2','globinho2', 'desativar2', 'esse desafio foi bem denso, você já pode finalizar sua lição','7');this.style.display='none'">Proximo</button>
-
-
-        <p id="resp2"></p>
-
-        <div class="area">
-            <p><img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" alt="globinho2"
-                    width="64" height="64">
-            </p>
-        </div>
-        <hr>
-
-    </div>
-
-
-
-    <div class="topico">
-
-
-        <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
-
-
-        <div class="w3-container">
-
-
-
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-card-4 w3-animate-bottom" style="max-width:600px">
-
-                    <div class="w3-center w3-padding-48">
-                        <span onclick="document.getElementById('id01').style.display='none'"
-                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                            title="Close Modal">&times;</span>
-
-
-
-                        <div class="nota">
-
-                        </div>
-
-                        <img src="../../../fotoIndex/globinhoPe.png" alt="Avatar" style="width:20%"
-                            class="w3-circle w3-animate-zoom ">
-                        <br>
-                    </div>
-                </div>
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
             </div>
+            <hr>
         </div>
 
-    </div>
+        <!-- TÓPICO FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
 
-
-
-
-    <div class="w3-padding-48">
-        <!-- <span id="numero"></span> -->
-        <span id="txtBarra">0%</span>
-        <progress value="0" max="100" id="progress"></progress>
-    </div>
-
-
-
-    <div class="bibliografias">
-
-        <h3><strong>Para saber mais:</strong></h3>
-
-
-
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://educa.ibge.gov.br/jovens/materias-especiais.html" target="_blank">
-                    IBGE - Matérias especiais
-                </a>
-
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
             </div>
-
+        <br><br>
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
         </div>
+    </main>
 
+    <div id="footer-placeholder"></div>
 
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://g1.globo.com/sp/sao-carlos-regiao/noticia/2022/03/20/ufscar-cria-jogo-digital-gratuito-com-personagem-indigena-para-ensinar-criancas-em-sala-de-aula.ghtml"
-                    target="_blank">
-                    UFSCar cria jogo digital gratuito
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="area">
-
-
-            <div class="postit-tp9 ">
-
-                <a href="https://www.youtube.com/watch?v=0sRiMs_6jeE&t=75s&ab_channel=TVUSP"
-                    target="_blank">
-                    Game Huni Kuin: histórias indígenas em jogo
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-        <h3> <strong> Referências bibliográficas </strong></h3>
-
-
-
-        <p>
-            Agência Senado. Negro continuará sendo oprimido enquanto o Brasil não se assumir racista, dizem
-            especialistas. Disponível em:
-            https://www12.senado.leg.br/noticias/
-            infomaterias/2020/06/negro-continuara-sendo-oprimido-enquanto-o-brasil-nao-se-assumir-racista-dizem-especialistas.
-            Acesso em: 17 ago. 2022.
-
-        </p>
-
-
-        <p> IBGE - Conheça o Brasil – População cor ou raça. Disponível em: https://educa.ibge.gov.br/jovens/
-            conheca-o-brasil/populacao/18319-cor-ou-raca.html. Acesso em: 28 jul. 2022.</p>
-
-        <p>Navios portugueses e brasileiros fizeram mais de 9 mil viagens com africanos escravizados. Disponível em:
-            https://www.bbc.com/portuguese
-            /brasil-45092235#:
-            Acesso em: 17 ago. 2022.</p>
-
-
-        <p>SANTOS, Milton. Ser negro no Brasil hoje. Disponível em:
-            https://www1.folha.uol.com.br
-            /fsp/mais/fs0705200007.htm. Acesso em: 17 ago. 2022.
-            Somos todos iguais? Retratos (A revista do IBGE), n.11, maio 2018.
-        </p>
-
-
-
-        <p> VESENTINI, José William.<strong> Geografia</strong>: o mundo em transição. Ensino médio. 2. ed. – São
-            Paulo: Ática, 2013.
-        </p>
-
-    </div>
-    <br><br>
-
-
-
-
-
-
-    <script>
-
-
-        //   function numButton() {
-        //             numB++;
-        //             document.getElementById("numero").innerHTML = numB;
-        //             console.log(numB);
-        //         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        function MostrarProximo(parametro) {
-
-            var oculto = parametro.parentNode; // Obter qual é o elemento pai do botão
-            var proximo = oculto.nextElementSibling; // Obter qual é o elemento seguinte ao pai
-
-            if (!proximo.classList.contains('mostrar')) // Verificar se o seguinte já foi mostrado
-            {
-                proximo.classList.add('mostrar'); // Mostrar o seguinte
-                addProgressBar();
-                // numButton();
-                ApagaButton();
-                RemoveBalancarGlobo();
-
-                document.getElementById("notaFixa").innerHTML = nota.toFixed(1);
-
-            }
-
-        }
-
-        function addProgressBar() {
-            var barra = document.getElementById("progress");
-            txtBarra = document.getElementById("txtBarra");
-
-            i = Math.round(100 / 12);
-            barra.value += i;
-
-            if (barra.value >= 100) {
-                barra.value = 100;
-            }
-
-            txtBarra.innerHTML = barra.value + "%";
-
-        }
-
-
-
-
-    </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-
-
 
 </body>
 
