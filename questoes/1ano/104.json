@@ -15,7 +15,8 @@
       "a altimetria, pois a determinação das curvas de nível é influenciada pelo ponto de observação do cartógrafo."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A escala é o elemento-chave da generalização cartográfica porque define o nível de detalhe que o mapa pode comportar. Ao reduzir a escala (ex: de 1:50.000 para 1:1.000.000), o cartógrafo é obrigado a suprimir informações — ruas secundárias, curvas de nível, pequenos rios — para evitar a ilegibilidade. Esse processo é chamado de generalização e é intrínseco à representação cartográfica.",
+    "ajuda": "A generalização cartográfica envolve selecionar e simplificar os elementos a serem representados, porque um mapa não pode mostrar tudo com o mesmo nível de detalhe. Pense em como a escala influencia o que é incluído ou omitido em um mapa."
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
       "a escala pouco muda, pois há a mesma área representada de A a D."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "Quando a escala de um mapa diminui (denominador maior), a área representada aumenta, mas os detalhes diminuem. Uma imagem com escala 1:10.000 mostra um bairro com grande riqueza de detalhes; já uma em 1:10.000.000 mostra um país inteiro, mas sem detalhes locais. Por isso, escala e nível de detalhe têm relação inversamente proporcional.",
+    "ajuda": "Observe com atenção o produto cartográfico apresentado e identifique seus elementos característicos — como curvas de nível, escala ou tipo de projeção. Cada tipo de mapa tem uma finalidade específica e características formais distintas."
   },
   {
     "id": 3,
@@ -50,7 +52,8 @@
       "O rio corre em direção sudoeste, sendo sua margem esquerda a de maior declividade. Apresenta um comprimento total de 175 metros."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Nas cartas topográficas, as curvas de nível (linhas que unem pontos de mesma altitude) permitem identificar a direção do fluxo dos rios e a declividade das margens. Curvas mais próximas entre si indicam maior inclinação do terreno. A margem com curvas mais adensadas é a de maior declividade — informação crucial para gestão de risco de erosão e planejamento ambiental.",
+    "ajuda": "Em uma carta topográfica com escala 1:50.000, cada centímetro no mapa representa 50.000 centímetros (500 metros) no terreno real. Use esse raciocínio para calcular as distâncias reais entre os pontos indicados na carta."
   },
   {
     "id": 4,
@@ -66,7 +69,8 @@
       "11 mm."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "Para calcular a distância real a partir da escala, multiplica-se a medida no mapa pelo denominador da escala. Se a distância no mapa é de 9 cm em escala 1:1, a distância real é 9 cm. Em escalas numéricas, a fórmula é: distância real = medida no mapa × denominador. Esse cálculo é essencial para orientação, planejamento urbano e elaboração de projetos de engenharia.",
+    "ajuda": "A escala expressa a razão entre a medida no mapa e a medida real. Uma escala maior (como 1:10.000) mostra mais detalhes do que uma escala menor (1:1.000.000). Lembre-se: quanto menor o denominador, maior o detalhamento da representação."
   },
   {
     "id": 5,
@@ -84,7 +88,8 @@
       "1: 7000000."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A escala 1:700.000 significa que 1 cm no mapa corresponde a 700.000 cm (7 km) no terreno. Provas de atletismo de longa distância percorrem centenas de quilômetros, exigindo mapas de escala pequena para representar o trajeto completo. Quanto maior o denominador, menor é a escala e maior a área coberta — porém com menos detalhes.",
+    "ajuda": "Para resolver questões de escala com cálculo, use a fórmula: distância real = distância no mapa × denominador da escala. Certifique-se de converter as unidades corretamente (centímetros para metros ou quilômetros)."
   },
   {
     "id": 6,
@@ -102,7 +107,8 @@
       "Diferentes perfis longitudinais."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A análise espacial em múltiplas escalas é fundamental na Geografia porque um mesmo fenômeno (como desmatamento ou urbanização) se manifesta de forma diferente ao nível local, regional e global. Trabalhar com diferentes escalas espaciais permite compreender tanto as causas estruturais quanto os impactos locais de um processo geográfico.",
+    "ajuda": "A técnica de análise espacial representada na figura utiliza sobreposição de camadas de informação (layers). Pense em qual tecnologia cartográfica moderna permite combinar diferentes tipos de dados geoespaciais em um único sistema de análise."
   },
   {
     "id": 7,
@@ -120,7 +126,8 @@
       "1:150.000.000."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A fronteira Canadá–EUA tem cerca de 8.891 km. Para representá-la em um mapa com 72 cm, a escala seria de aproximadamente 1:12.350.000. Mas se a questão pede 1:60.000.000, esse seria o denominador que reduz a distância real para a medida no mapa. Escalas com denominadores na casa dos milhões são usadas em mapas-múndi e mapas continentais.",
+    "ajuda": "Para calcular a extensão real a partir de um mapa, use a escala fornecida. Meça a distância no mapa e multiplique pelo denominador da escala. Cuidado com as unidades: se a escala está em centímetros, converta para quilômetros no final."
   },
   {
     "id": 8,
@@ -137,12 +144,13 @@
       "600 km."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A escala gráfica (barra com divisões) é vantajosa em relação à escala numérica porque mantém sua validade mesmo quando o mapa é ampliado ou reduzido em fotocópias ou impressões. A escala numérica, por outro lado, perde sua precisão nesses casos. Por isso, mapas técnicos costumam apresentar os dois tipos simultaneamente.",
+    "ajuda": "A escala numérica (como 1:100.000) é uma razão entre a medida do mapa e a medida real. A escala gráfica é um segmento desenhado no mapa que representa uma distância real. Pense em como converter entre essas duas formas de expressão."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(UFRN) A escala é um dos recursos utilizados na cartografia para representar qualquer realidade espacial em um mapa.\n\nAssim, é correto afirmar que:",
@@ -153,12 +161,13 @@
       "a escala gráfica a ser utilizada na confecção de um mapa deverá ser maior quando se tratar de uma área geográfica de grande dimensão."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A escala cartográfica é sempre uma razão entre a medida no mapa e a medida real no terreno. Ela não representa a quantidade de informação presente no mapa, nem está ligada ao ponto cardeal ou à projeção utilizada. Sua função é exclusivamente de correspondência dimensional entre o representado e a realidade.",
+    "ajuda": "Lembre-se que escala é uma relação proporcional. Quanto maior o número no denominador (ex.: 1:1.000.000), menor é o detalhe mostrado no mapa — é uma escala pequena. Quanto menor o denominador (ex.: 1:1.000), maior o detalhe — é uma escala grande."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(IFG) Considere dois mapas do Brasil, sendo que o mapa “A” tem escala de 1/10.000.000 e o mapa “B”, escala de 1/50.000.000. Assinale a alternativa correta.",
@@ -170,6 +179,7 @@
       "Os dois mapas possuem o mesmo tamanho."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Mapas em escala 1:10.000.000 têm denominador menor que 1:50.000.000, o que significa que representam uma área menor com mais detalhes — logo, o mapa A possui maior riqueza de detalhes. Confundir 'escala maior' com 'abrange mais área' é um erro comum: escala maior significa mais detalhe, menos área coberta.",
+    "ajuda": "Compare os dois mapas pensando nos detalhes que cada um pode mostrar. O mapa com escala 1/10.000 tem denominador menor e representa uma área menor com mais detalhe. O de escala 1/10.000.000 abrange uma área maior, porém com menor nível de detalhamento."
   }
 ]

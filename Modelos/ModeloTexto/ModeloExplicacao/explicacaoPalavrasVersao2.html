@@ -1,56 +1,157 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Aula – Geopolítica Internacional</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duvid — Aula Demo: Palavras Clicáveis</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<link rel="stylesheet" href="explicacaoPalavra.css">
+<link rel="stylesheet" href="/estilos/explicacaoPalavra.css">
 </head>
 
 <body class="w3-light-grey">
 
-<main class="w3-content w3-padding-32" style="max-width:900px">
-  <h1 class="w3-center w3-text-indigo">Aula 5 – Geopolítica Internacional</h1>
-  <p class="w3-center"><em>O que somos, o mundo é.</em></p>
+<!-- ── Header mockado ──────────────────────────────────── -->
+<div id="mock-header">
+  <span class="logo">🌍 DUVID</span>
+  <div class="globinho-bar">
+    <img src="../../../fotoIndex/globinhoPe.png" alt="globinho" onerror="this.style.display='none'">
+    <span class="saldo" id="saldo-mock">0</span>
+    <span style="color:#a5d6a7;font-size:0.85em">globinhos</span>
+  </div>
+</div>
 
-  <article class="w3-large w3-justify">
-    <p>
-      A <span class="termo politica" data-palavra="Conjuntura" data-definicao="combinação ou concorrência de acontecimentos ou eventos em um dado momento; circunstância, situação.">conjuntura</span> internacional no século XXI é marcada por rápidas transformações.
-    </p>
+<!-- ── Conteúdo principal ──────────────────────────────── -->
+<div class="w3-content" style="max-width:820px; margin-top:80px; margin-bottom:80px; padding:0 12px">
 
-    <p>
-      A <span class="termo politica" data-palavra="Geopolítica" data-definicao="estudo da relação entre poder político e espaço geográfico.">geopolítica</span> tornou-se ainda mais relevante com a globalização.
-    </p>
+  <div class="w3-card w3-white w3-round-large w3-padding-32">
 
-    <p>
-      Um dos fatores centrais é a <span class="termo economia" data-palavra="Hegemonia" data-definicao="supremacia ou liderança de um Estado ou grupo sobre os demais, seja no campo militar, econômico ou cultural.">hegemonia</span> dos Estados Unidos.
-    </p>
+    <h2 class="w3-center" style="color:#2e7d32;font-size:1em;font-family:monospace">Espaço Geográfico</h2>
+    <p class="w3-center w3-opacity w3-small">Clique nas palavras destacadas 💡 para revelar o conceito e ganhar globinhos</p>
+    <hr>
 
-    <p>
-      Nesse contexto, o papel das <span class="termo politica" data-palavra="Organizações Internacionais" data-definicao="instituições formadas por países com o objetivo de cooperar em questões políticas, econômicas ou sociais.">organizações internacionais</span> é crucial.
-    </p>
+    <!-- Barra de progresso -->
+    <div id="barra-progresso-wrap">
+      <span class="label">🏆 Conceitos coletados:</span>
+      <div id="barra-outer"><div id="barra-inner"></div></div>
+      <span id="barra-texto">0 / 6</span>
+    </div>
 
-    <p>
-      Além disso, há crescente atenção para os <span class="termo tecnologia" data-palavra="Conflitos Híbridos" data-definicao="guerras que combinam estratégias militares tradicionais com ciberataques, desinformação e pressões econômicas.">conflitos híbridos</span>.
-    </p>
-  </article>
+    <!-- Texto com termos -->
+    <article class="w3-large w3-justify w3-margin" style="line-height:2">
 
-  <section id="glossario">
-    <h2>📖 Glossário da Aula</h2>
-    <ul id="lista-glossario"></ul>
-  </section>
+      <p>
+        A Geografia estuda o
+        <span class="termo" data-palavra="Espaço Geográfico" data-definicao="conjunto indissociável de sistemas de objetos e sistemas de ações que reflete o resultado da ação humana sobre a natureza ao longo do tempo.">espaço geográfico</span>
+        como resultado da relação entre sociedade e natureza.
+      </p>
 
+      <p>
+        Esse espaço é formado por
+        <span class="termo" data-palavra="Objetos Geográficos" data-definicao="elementos visíveis (casas, estradas, fábricas) e invisíveis (fluxos de informação, dinheiro e energia) que compõem o espaço.">objetos geográficos</span>
+        — visíveis e invisíveis — e pelas ações humanas que os transformam.
+      </p>
 
+      <p>
+        O motor dessa construção é a
+        <span class="termo" data-palavra="Técnica" data-definicao="meios ou instrumentos criados pela sociedade para alterar a natureza e organizar o espaço geográfico.">técnica</span>,
+        que reflete o grau de desenvolvimento de cada sociedade em seu tempo histórico.
+      </p>
 
+      <p>
+        A transformação do espaço deixa marcas visíveis chamadas de
+        <span class="termo" data-palavra="Paisagem" data-definicao="tudo aquilo que pode ser percebido pelos sentidos — é o resultado acumulado de objetos naturais e sociais num determinado lugar.">paisagem</span>,
+        que acumula tempos diferentes numa mesma fotografia.
+      </p>
 
-</main>
+      <p>
+        Cada recorte do espaço que apresenta identidade própria é chamado de
+        <span class="termo" data-palavra="Lugar" data-definicao="porção do espaço geográfico onde a vida acontece cotidianamente, carregada de significado afetivo e cultural para quem o habita.">lugar</span>.
+        Ele é vivido, sentido e carregado de significado.
+      </p>
 
+      <p>
+        Por fim, a maneira como os grupos humanos se distribuem no espaço é estudada pelo conceito de
+        <span class="termo" data-palavra="Território" data-definicao="espaço definido e delimitado por relações de poder — pode ser de um Estado, de uma comunidade ou de qualquer grupo social.">território</span>,
+        que envolve sempre relações de poder.
+      </p>
 
-<script src="glossario.js"></script>
+    </article>
 
+    <!-- Ficha de Conceitos (aparece ao primeiro clique) -->
+    <div id="ficha-conceitos">
+      <div class="ficha-header">
+        <h3>📋 Ficha de Conceitos</h3>
+        <span class="ficha-badge" id="ficha-badge">0 / 6</span>
+      </div>
+      <ul id="lista-glossario"></ul>
+      <div id="mensagem-final">
+        <p>🎉 <strong>Você coletou todos os conceitos!</strong> Use essa ficha para revisar antes da prova.</p>
+      </div>
+    </div>
+
+  </div><!-- /card -->
+</div>
+
+<script>
+// ── Saldo de globinhos mockado (substitui DuvidDB no demo) ───────────────────
+let saldoAtual = 0;
+const TOTAL_TERMOS = 6;
+let coletados = 0;
+
+function adicionarGlobinhos(n) {
+  saldoAtual += n;
+  const el = document.getElementById('saldo-mock');
+  el.textContent = saldoAtual;
+  el.classList.remove('pulsar');
+  void el.offsetWidth;
+  el.classList.add('pulsar');
+}
+
+function atualizarProgresso(n) {
+  const pct = (n / TOTAL_TERMOS) * 100;
+  document.getElementById('barra-inner').style.width = pct + '%';
+  document.getElementById('barra-texto').textContent = n + ' / ' + TOTAL_TERMOS;
+  document.getElementById('ficha-badge').textContent = n + ' / ' + TOTAL_TERMOS;
+}
+</script>
+
+<!-- duvid-audio.js: fornece playSom('acerto') e playSomFinal() -->
+<script src="/js/duvid-audio.js"></script>
+
+<!-- glossario.js: ativa os .termo, usa playSom(), mostra ficha de conceitos -->
+<script src="/js/glossario.js"></script>
+
+<script>
+// ── Liga o glossario.js ao saldo mockado e à barra de progresso ──────────────
+document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('.termo').forEach(function (termo) {
+    termo.addEventListener('click', function () {
+      if (!termo.classList.contains('coletado')) return;
+      // Só conta na primeira vez (coletado é adicionado pelo glossario.js antes deste handler)
+      // Usamos MutationObserver seria mais elegante, mas aqui verificamos pelo li
+    });
+  });
+
+  // Observa a lista para atualizar progresso e saldo mock quando glossario.js adicionar itens
+  const lista = document.getElementById('lista-glossario');
+  if (lista) {
+    const observer = new MutationObserver(function () {
+      coletados = lista.querySelectorAll('li').length;
+      atualizarProgresso(coletados);
+      adicionarGlobinhos(2); // espelha o +2 do glossario.js no saldo mock
+
+      if (coletados === TOTAL_TERMOS) {
+        setTimeout(function () {
+          document.getElementById('mensagem-final').style.display = 'block';
+          playSomFinal(true); // toca o som de vitória do duvid-audio
+        }, 400);
+      }
+    });
+    observer.observe(lista, { childList: true });
+  }
+});
+</script>
 
 </body>
 </html>

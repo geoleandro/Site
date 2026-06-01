@@ -2,7 +2,7 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(FUVEST) No século XVII e XVIII, contribuiu para a penetração no interior brasileiro",
@@ -14,7 +14,8 @@
       "a transferência da capital da colônia para o Rio de Janeiro."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Pense nos fatores que impulsionaram a penetração no interior do Brasil nos séculos XVII e XVIII. Qual atividade econômica levou os bandeirantes e sertanistas a avançar rumo ao interior? Lembre-se de que a busca por riquezas minerais (ouro e pedras preciosas) foi o grande motor da ocupação do Planalto Central e de Minas Gerais.",
+    "comentario": "A busca por riquezas minerais — ouro em Minas Gerais e Goiás, diamantes em Mato Grosso — foi o principal motor da penetração no interior brasileiro nos séculos XVII e XVIII. Ao contrário do açúcar, concentrado no litoral, a mineração criou uma rede urbana interior densa, gerando cidades históricas que hoje integram o patrimônio cultural brasileiro."
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       "realocação espacial das agroindústrias."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Pense em quais atividades econômicas dos séculos XVII e XVIII exigiam deslocamento para o interior do território. A pecuária expandiu-se pelo sertão nordestino e pelo planalto, enquanto a mineração atraiu populações para o Centro-Oeste e Minas Gerais. Qual dessas duas atividades — ou ambas — foi responsável pela conquista dos sertões?",
+    "comentario": "A pecuária e a mineração foram os grandes 'conquistadores' dos sertões brasileiros: a pecuária avançou pelo Nordeste interior e pelo Sul; a mineração, pelo Centro-Oeste e Sudeste. Esses movimentos, impulsionados pela demanda por alimentos e mão de obra das regiões mineradoras, integraram o território nacional muito além dos limites litorâneos da colonização inicial."
   },
   {
     "id": 3,
@@ -43,13 +45,14 @@
     "pergunta": "Considere o texto sobre a regionalização brasileira.\n\nA porção regional mencionada localiza-se inteiramente no:",
     "alternativas": [
       "Sertão.",
-      "Agreste. c) Pantanal. d) Centro-Sul. e) Meio-Norte.",
-      "",
-      "",
-      ""
+      "Agreste.",
+      "Pantanal.",
+      "Centro-Sul.",
+      "Meio-Norte."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Leia o texto de Milton Santos sobre a 'Região Concentrada'. Pense em qual parte do Brasil apresenta maior densidade técnica, urbanização intensa e padrão de consumo mais elevado. Essa região não coincide com nenhuma divisão geográfica oficial do IBGE — ela se refere ao eixo mais desenvolvido do país.",
+    "comentario": "A regionalização geoeconômica proposta por Geiger identifica o Nordeste como região marcada pela herança colonial açucareira e pelo semiárido, com características socioeconômicas distintas das demais regiões. Essa delimitação não segue fronteiras estaduais rígidas, mas sim a coerência histórica e econômica que define os complexos regionais brasileiros."
   },
   {
     "id": 4,
@@ -66,7 +69,8 @@
       "Engloba o Estado de Minas Gerais, em sua totalidade, no Complexo Nordestino, tendo em vista suas características climatobotânicas e morfoclimáticas."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Lembre-se dos critérios da regionalização geoeconômica de Geiger: ele usou o processo histórico e econômico de formação de cada região, não apenas limites naturais ou político-administrativos. Pense em qual alternativa descreve corretamente esse critério de regionalização sem confundi-lo com outros tipos.",
+    "comentario": "As regiões geoeconômicas de Geiger — Amazônia, Nordeste e Centro-Sul — foram definidas pelo processo histórico de formação e pelo nível de modernização econômica de cada área. Esse critério é mais analítico do que a divisão oficial do IBGE, pois captura as raízes estruturais das desigualdades regionais e não apenas os limites político-administrativos."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "V – V – F."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Analise cada afirmativa (V ou F) sobre a formação étnica da população brasileira. Pense: os descendentes de portugueses são a maioria, não a minoria. A Lei Afonso Arinos era considerada branda. O Movimento Negro Unificado surgiu nos anos 1970. Avalie cada afirmativa com cuidado.",
+    "comentario": "A formação étnica brasileira é resultado de séculos de miscigenação entre indígenas, africanos escravizados e europeus colonizadores, além de imigrantes posteriores. Esse processo, longe de ser harmônico, foi marcado por violência e dominação — o que explica por que a miscigenação não eliminou as desigualdades raciais, que persistem nos indicadores socioeconômicos contemporâneos."
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
       "No Brasil, como as taxas de alfabetização dos povos indígenas são mais altas do que a taxa da população não indígena, as heranças originárias sobre suas línguas, crenças e tradições estão asseguradas para as próximas gerações."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Pense no direito dos povos indígenas à demarcação de suas terras: esse direito se baseia no princípio de que eles são os habitantes originários do território brasileiro. Analise qual alternativa descreve corretamente esse fundamento jurídico sem distorcer a realidade das lutas e conquistas indígenas no Brasil.",
+    "comentario": "Os povos indígenas têm direito constitucional à demarcação de suas terras (Art. 231 da CF/1988), reconhecendo que sua existência como comunidade cultural depende do território. Esse direito não é concessão do Estado, mas reconhecimento de uma ocupação pré-colonial — os indígenas habitavam o Brasil milênios antes da chegada dos portugueses em 1500."
   },
   {
     "id": 7,
@@ -117,7 +123,8 @@
       "Distribuição equilibrada de terras e latifúndios especializados."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Leia o texto de Caio Prado Júnior sobre a estrutura fundiária brasileira. Pense nas características históricas que marcam a propriedade rural no Brasil: grandes latifúndios voltados para a exportação, com trabalho explorado. Qual alternativa descreve corretamente essa estrutura fundiária concentrada?",
+    "comentario": "A estrutura fundiária brasileira, herdada do latifúndio colonial, transformou a terra em ativo especulativo para as elites agrárias, muito além de um meio de produção. Grandes proprietários historicamente usaram a terra como garantia de poder político e social, resistindo à reforma agrária e perpetuando a concentração que coloca o Brasil entre os países com maior desigualdade fundiária do mundo."
   },
   {
     "id": 8,
@@ -135,7 +142,8 @@
       "pequena quantidade de propriedades, com mais de 1000 ha, correspondendo à menor parcela da área ocupada, o que significa uma distribuição desigual da terra."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Observe o gráfico sobre a distribuição de propriedades rurais no Brasil. Pense: se há grande quantidade de propriedades pequenas (até 100 ha) ocupando apenas uma pequena parcela da área total, enquanto poucos imóveis grandes ocupam a maior parte da área — o que isso revela sobre a distribuição da terra? Identifique qual alternativa descreve corretamente essa desigualdade.",
+    "comentario": "A distribuição desigual da terra no Brasil é visível nos dados fundiários: a imensa maioria dos estabelecimentos rurais são pequenas propriedades (menos de 100 ha), mas elas ocupam uma fração minúscula da área total. Inversamente, poucos latifúndios concentram a maior parte do território agrícola, configurando uma das estruturas fundiárias mais concentradas do planeta."
   },
   {
     "id": 9,
@@ -153,7 +161,8 @@
       "Planícies, Planaltos e depressões."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Lembre-se das classificações do relevo brasileiro segundo diferentes geógrafos. A questão trata das formas gerais do relevo segundo uma classificação específica. Pense nos três grandes tipos: planícies (deposição), planaltos (erosão maior que deposição) e depressões (áreas rebaixadas). Identifique qual alternativa lista corretamente essas formas.",
+    "comentario": "O relevo brasileiro é dominado por planaltos, planícies e depressões — não por montanhas elevadas. Essa configuração resulta da antiguidade geológica do território: sem dobramentos modernos como os Andes, o Brasil teve bilhões de anos de erosão que aplainaram as antigas cadeias montanhosas, deixando superfícies tabulares, chapadas e baixas planícies."
   },
   {
     "id": 10,
@@ -165,11 +174,12 @@
     "alternativas": [
       "sedimentares – cristalinas – exógenos.",
       "cristalinas – sedimentares – exógenos.",
-      "basálticas – sedimentares – endógenos. d) sedimentares – cristalinas – endógenos. e) basálticas – sedimentares – exógenos.",
-      "",
-      ""
+      "basálticas – sedimentares – endógenos.",
+      "sedimentares – cristalinas – endógenos.",
+      "basálticas – sedimentares – exógenos."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Pense nas características geológicas do Brasil: o substrato é composto por formações sedimentares recentes e estruturas cristalinas antigas. Os fatores exógenos (erosão, intemperismo, sedimentação) são responsáveis pela modelagem atual do relevo. Identifique qual combinação de palavras preenche corretamente as lacunas sobre a formação e transformação do relevo brasileiro.",
+    "comentario": "O relevo brasileiro repousa sobre duas grandes estruturas geológicas: bacias sedimentares (onde se acumulam sedimentos e se formam reservatórios de petróleo e carvão) e áreas cristalinas (escudos e maciços antigos, ricos em minérios metálicos). Os agentes exógenos — erosão, deposição fluvial — esculpem essas estruturas ao longo de milênios, criando as diversas formas de relevo que compõem o mosaico geográfico nacional."
   }
 ]

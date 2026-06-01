@@ -2,12 +2,12 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "“A África vive uma tripla condição restritiva: prisioneira de um passado inventado por outros, amarrada a um presente imposto pelo exterior e, ainda, refém de metas construídas por instituições internacionais que comandam a economia”.",
     "fonte_apoio": "COUTO, Mia. Um retrato sem moldura. In: HERNANDEZ, Leila, (A África na sala de aula. São Paulo: Selo Negro, 2005, p.11).",
-    "pergunta": "(2020)\n\nA frase do escritor Mia Couto acerca da “invenção da África” expressa que:",
+    "pergunta": "A frase do escritor Mia Couto acerca da “invenção da África” expressa que:",
     "alternativas": [
       "o poder imperialista europeu prolongou-se até o final da Segunda Guerra Mundial, momento em que libertou definitivamente a África das prisões colonialistas.",
       "diversos países da África, em pleno século XXI, ainda estão presos aos sistemas políticos implantados pelos países imperialistas.",
@@ -16,16 +16,17 @@
       "dos países colonizados, apenas as colônias de Portugal e da França não se envolveram em guerras civis."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "Mia Couto critica a ideia de que a África seria uma unidade homogênea inventada pelo olhar colonial europeu, que ignorou as diversidades étnicas, linguísticas e culturais do continente. Mesmo após a independência formal, os países africanos continuam presos a estruturas econômicas e políticas moldadas pelo colonialismo.",
+    "ajuda": "Mia Couto, escritor moçambicano, critica a imagem homogeneizada da África criada pelo olhar colonial europeu. Pense em qual sentido a expressão 'invenção da África' questiona as narrativas coloniais que tratavam o continente como um bloco uniforme."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "3ano/img/326/t26q2.png",
-    "pergunta": "(2020) As áreas destacadas no mapa da África correspondem às regiões:",
+    "pergunta": "As áreas destacadas no mapa da África correspondem às regiões:",
     "alternativas": [
       "de maior aridez.",
       "industrializadas.",
@@ -34,7 +35,8 @@
       "de conflitos étnicos e tribais."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As áreas de maior densidade demográfica na África concentram-se no delta do Nilo (Egito), no litoral da África Ocidental (Nigéria, Gana, Costa do Marfim) e na região dos Grandes Lagos. O interior do continente e o Saara permanecem com densidade muito baixa — reflexo dos condicionantes físicos e históricos.",
+    "ajuda": "O mapa da África provavelmente destaca regiões com características específicas. Pense nas áreas mais densamente povoadas (litoral oeste, vale do Nilo, África do Sul) ou mais áridas (Saara, Sahel) para identificar o que as áreas destacadas representam."
   },
   {
     "id": 3,
@@ -51,7 +53,8 @@
       "possibilitou a superação das relações de subordinação econômica das antigas colônias através do desenvolvimento de atividades industriais modernas."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A independência política africana (anos 1960-70) não foi acompanhada de independência econômica. Ex-colônias continuaram exportando matérias-primas para as ex-metrópoles, num fenômeno chamado neocolonialismo ou 'colonialismo de novo tipo', que manteve as estruturas de dependência sem controle territorial direto.",
+    "ajuda": "A independência política africana (anos 1960-70) não foi acompanhada de independência econômica. Os países continuaram dependentes das antigas metrópoles por meio do neocolonialismo. Identifique qual alternativa descreve corretamente esse processo."
   },
   {
     "id": 4,
@@ -68,7 +71,8 @@
       "consiste em um continente subdesenvolvido com alguns de seus países industrializados e outros ainda vivendo exclusivamente de atividades comerciais."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A África é um dos continentes mais ricos em recursos naturais: petróleo (Nigéria, Angola, Líbia), diamantes (Congo, Botswana), ouro (África do Sul, Gana), cobre (Zâmbia, Congo) e terras raras. Paradoxalmente, essa riqueza beneficia principalmente empresas multinacionais e elites locais, não as populações.",
+    "ajuda": "A África é rica em recursos naturais (petróleo, diamantes, ouro, terras raras), mas essa riqueza beneficia principalmente empresas e países estrangeiros. Pense em qual afirmativa descreve corretamente essa contradição entre riqueza natural e pobreza da população."
   },
   {
     "id": 5,
@@ -86,7 +90,8 @@
       "aos altos custos no transporte de mercadorias e à ausência de centros urbanos."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O comércio intrarregional africano é extremamente baixo (cerca de 15% do total exportado) porque as economias africanas são pouco diversificadas — cada país exporta um ou dois produtos primários para o mesmo mercado global, sem complementaridade entre si. Isso dificulta a integração regional e a criação de cadeias produtivas locais.",
+    "ajuda": "A África tem baixa integração regional porque suas economias são pouco diversificadas e muito dependentes de poucos produtos de exportação. Pense em qual característica estrutural das economias africanas dificulta o comércio intra-africano."
   },
   {
     "id": 6,
@@ -103,7 +108,8 @@
       "Angola (2) e Moçambique (3) foram colonizados por portugueses, enquanto a África do Sul (1) integra atualmente os BRICS."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "No mapa, Angola (1) fica no sudoeste africano com costa no Atlântico; Moçambique (2) no sudeste africano com costa no Índico; e a África do Sul (3) no extremo sul. Angola e Moçambique foram colônias portuguesas que se tornaram independentes em 1975. A África do Sul integra os BRICS desde 2010.",
+    "ajuda": "Para identificar a localização de Angola e Moçambique no mapa, lembre-se de que ambos foram colônias portuguesas: Angola fica no sudoeste africano com litoral no Atlântico, enquanto Moçambique fica no sudeste africano com litoral no Oceano Índico."
   },
   {
     "id": 7,
@@ -122,7 +128,8 @@
       "Concentração das áreas cultiváveis no setor agroexportador – Aumento da ocupação da população pobre em territórios agrícolas marginais."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "O sistema de Plantation colonial concentrou as melhores terras nas mãos dos colonizadores brancos, expulsando as populações africanas para reservas ou transformando-as em mão de obra barata nas fazendas. Com a independência, essas estruturas fundiárias permaneceram, forçando os pobres a ocupar terras marginais de baixa produtividade.",
+    "ajuda": "O sistema de Plantation colonial na África concentrou terras nas mãos de colonizadores, expulsando os camponeses africanos para reservas ou os transformando em trabalhadores forçados. Pense em qual consequência socioespacial esse modelo colonial gerou no meio rural africano."
   },
   {
     "id": 8,
@@ -140,7 +147,8 @@
       "III é típica da Oceania, onde os grupos humanos apresentam elevada taxa de fecundidade."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A pirâmide III (base larga, topo estreito, típica de alta natalidade e mortalidade) é característica da África, onde a transição demográfica ainda está em fase inicial. A pirâmide II (Europa envelhecida, base estreita) representa países desenvolvidos. A pirâmide I pode representar a América Latina em transição.",
+    "ajuda": "Pirâmides etárias refletem diferentes estágios de transição demográfica. Pirâmides com base larga e topo estreito indicam alta natalidade e mortalidade (países menos desenvolvidos); base estreita e topo mais largo indicam envelhecimento (países desenvolvidos)."
   },
   {
     "id": 9,
@@ -158,7 +166,8 @@
       "as decisões da Conferência de Berlim em 1884, a qual dividiu politicamente o continente africano entre os Estados Unidos e os principais países europeus, sem qualquer preocupação com a autonomia das populações locais."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O cartum provavelmente retrata o neocolonialismo: empresas e governos estrangeiros (EUA, China, Europa) exploram os recursos naturais africanos por meio de acordos assimétricos. A África tem riquezas, mas sem tecnologia e capital para explorar autonomamente, fica dependente de parceiros externos — perpetuando a lógica colonial.",
+    "ajuda": "O cartum sobre a organização do espaço mundial provavelmente critica a divisão entre países ricos e pobres, a exploração de recursos africanos por potências externas ou a permanência do colonialismo de forma disfarçada no século XXI."
   },
   {
     "id": 10,
@@ -177,6 +186,7 @@
       "As fronteiras dos Estados Nacionais africanos foram traçadas a partir de solidariedades étnicas, e não por critérios geopolíticos decorrentes da colonização."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A fronteira norte da África tem menor diversidade étnica porque a chegada do Islã (séculos VII-VIII) unificou linguística e culturalmente a região em torno do árabe. Já na África subsaariana, a Conferência de Berlim (1884-85) cortou o continente sem respeitar as fronteiras étnicas preexistentes, criando Estados artificiais.",
+    "ajuda": "A Conferência de Berlim (1884-85) dividiu a África entre as potências europeias sem considerar as fronteiras étnicas pré-existentes. Isso criou países com fronteiras artificiais que ignoram a diversidade cultural, gerando conflitos que persistem até hoje."
   }
 ]

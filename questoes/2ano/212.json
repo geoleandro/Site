@@ -16,6 +16,7 @@
       "Planícies, Planaltos e Depressões."
     ],
     "correta": 4,
+    "ajuda": "Lembre-se das formas do relevo brasileiro segundo Jurandyr Ross: planícies, planaltos e depressões. Pense em qual classificação esse geógrafo utilizou e quantas formas gerais compõem seu sistema. Descarte as alternativas que incluem formas que não fazem parte dessa classificação, como montanhas ou serras.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -32,6 +33,7 @@
       "Montanha, Depressão e Planície."
     ],
     "correta": 1,
+    "ajuda": "Lembre-se que Jurandyr Ross classificou o relevo brasileiro em três tipos: planaltos, planícies e depressões. Pense na definição de cada forma: planícies são áreas de acumulação sedimentar, planaltos são áreas onde a erosão supera a deposição e depressões são áreas rebaixadas em relação ao entorno. Identifique qual alternativa lista apenas essas três formas.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -48,6 +50,7 @@
       "4, 2, 1, 3."
     ],
     "correta": 3,
+    "ajuda": "A questão pede a associação entre recursos minerais e suas características. Pense nas relações entre cada tipo de recurso e sua localização geológica: minerais metálicos nos escudos cristalinos, energéticos nas bacias sedimentares. Associe cada recurso mineral à sua característica e localização correta no Brasil.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -66,12 +69,13 @@
       "II e IV são verdadeiras e I e III são falsas."
     ],
     "correta": 1,
+    "ajuda": "Analise cada afirmativa (I a IV) sobre a distribuição dos recursos minerais no Brasil. Pense: Pará e Minas Gerais produzem ferro, manganês e alumínio? Os estados da costa nordestina e fluminense produzem petróleo? O Sul tem carvão mineral? O ouro está nos estados do Norte? Avalie a veracidade de cada afirmativa.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
     "id": 5,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(UECE 2015 Atente às afirmações abaixo, sobre o processo de industrialização no Brasil.\n\nI. A abolição da escravidão teve como consequência a expansão do trabalho assalariado que juntamente com a imigração europeia foram fatores indispensáveis para a industrialização brasileira.\n\nII. O surgimento da indústria no Brasil ocorreu concomitante à industrialização europeia, complementando assim a relação colônia-metrópole.\n\nIII. O caráter substitutivo das importações marcou um período da industrialização brasileira, momento em que ocorreu uma produção interna de bens que antes eram importados.\n\nIV. A concentração industrial brasileira ocorreu em várias partes do país, sobretudo em São Paulo e na região da zona da mata mineira, com seus polos tecnológicos.\n\nÉ correto o que se afirma apenas em",
@@ -82,6 +86,7 @@
       "II e III."
     ],
     "correta": 1,
+    "ajuda": "Analise cada afirmativa sobre a industrialização brasileira. Pense: a abolição da escravatura e a imigração europeia foram fatores importantes para a industrialização? A industrialização brasileira ocorreu concomitantemente à europeia? A substituição de importações foi uma fase real? A concentração industrial foi em São Paulo, não na Zona da Mata mineira?",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -100,6 +105,7 @@
       "reduzir os custos da produção, sabendo que as novas cidades ofereciam incentivos fiscais, terrenos e mão de obra mais baratos."
     ],
     "correta": 4,
+    "ajuda": "Leia o texto sobre a desconcentração industrial em São Paulo a partir dos anos 1970. Pense em por que as empresas saíram da metrópole: custos mais altos, terrenos caros, mão de obra mais organizada. Qual fator econômico foi o principal motivador para a busca de cidades médias com incentivos fiscais e menores custos?",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -118,6 +124,7 @@
       "II, apenas."
     ],
     "correta": 0,
+    "ajuda": "Leia as três afirmativas sobre o fechamento da fábrica da Ford no ABCD paulista. Pense em cada afirmativa: a I trata de reestruturação estratégica global; a II trata da transição para veículos elétricos; a III trata da dificuldade de controle das consequências regionais da globalização. Avalie se cada afirmativa está correta à luz do processo de reestruturação do setor automobilístico.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -135,6 +142,7 @@
       "V V F F F."
     ],
     "correta": 4,
+    "ajuda": "Analise cada afirmativa (V ou F) sobre a industrialização e a desconcentração industrial no Brasil. Pense: a desconcentração sem planejamento urbano gerou problemas socioambientais nas cidades médias? As indústrias buscam incentivos fiscais e doação de infraestrutura? A desindustrialização levou à desmetropolização? O tripé industrial foi nos anos 1950? As empresas fogem de onde há maior organização sindical?",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -153,6 +161,7 @@
       "O sistema rodoviário brasileiro oferece muitas rotas alternativas, semelhantes ao europeu, para aqueles que não podem pagar o pedágio."
     ],
     "correta": 1,
+    "ajuda": "Lembre-se das características da infraestrutura logística brasileira. A Ferrovia Norte do Brasil e a hidrovia Paraná-Tietê são importantes corredores de exportação do Centro-Oeste. Pense em qual afirmativa descreve corretamente o papel dessas rotas de transporte no escoamento da produção agrícola para os portos de Santos e Paranaguá.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
@@ -171,6 +180,7 @@
       "a importância dos recursos naturais primários no comércio internacional."
     ],
     "correta": 3,
+    "ajuda": "Observe as duas imagens apresentadas. Pense em quais elementos revolucionaram a globalização: o contêiner (padronizou e agilizou o transporte marítimo) e a fibra ótica (acelerou a transmissão de dados). Qual alternativa descreve corretamente o papel dessas tecnologias na integração econômica global?",
     "comentario": "<p> <strong>Comentário:</strong></p>\n<p> Sendo a modalidade de transporte de cargas de menor custo, o transporte marítimo foi profundamente\r\n\t\t\t\t\totimizado com o uso de contêineres (resistentes e de fácil manuseio), os quais possibilitaram\r\n\t\t\t\t\torganizar a logística de armazenamento das mercadorias de modo padronizado, agilizando o trabalho\r\n\t\t\t\t\tnos portos e reduzindo custos. Já a fibra ótica potencializou o sistema de redes tecnológicas, uma\r\n\t\t\t\t\tvez que a velocidade de transmissão de dados, por meio desse tipo de conexão, acelerou-se\r\n\t\t\t\t\texponencialmente em relação à tecnologia anterior.</p>"
   }
 ]

@@ -15,7 +15,8 @@
       "Intensificação da drenagem do solo de várzea."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "O texto fala sobre abelhas sendo intoxicadas por agrotóxicos em monoculturas. Pense em qual prática agrícola reduziria o uso de agrotóxicos e, ao mesmo tempo, protegeria os polinizadores. Descarte opções que intensifiquem o modelo atual.",
+    "comentario": "O controle biológico utiliza predadores naturais, parasitas ou patógenos para combater pragas, reduzindo a necessidade de agrotóxicos. As abelhas são polinizadoras essenciais para cerca de 70% das culturas agrícolas comerciais do mundo — sua extinção comprometeria diretamente a produção de alimentos. Substituir inseticidas neonicotinoides pelo controle biológico protege tanto os polinizadores quanto a produtividade agrícola."
   },
   {
     "id": 2,
@@ -34,7 +35,8 @@
       "em lavouras extensivas, destinadas ao mercado externo, com alta mecanização e emprego de mão de obra especializada, principalmente nas regiões Norte e Nordeste do país."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "O uso de fertilizantes no Brasil está associado a um modelo agrícola específico. Reflita sobre as características do agronegócio brasileiro: é intensivo em capital e tecnologia, voltado para exportação e com alta mecanização. Isso define o perfil do uso de fertilizantes.",
+    "comentario": "A modernização do campo brasileiro, especialmente no Centro-Sul, criou grandes lavouras mecanizadas voltadas para o agronegócio exportador. Esse modelo concentra terras e tecnologia, demandando mão de obra especializada em vez de trabalhadores braçais. O contraste com a agricultura familiar do Nordeste evidencia a desigualdade regional no desenvolvimento do espaço agrário."
   },
   {
     "id": 3,
@@ -52,7 +54,8 @@
       "retração da indústria alimentícia."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "O gráfico mostra a variação entre extrativismo vegetal e silvicultura ao longo do tempo. Lembre-se que silvicultura envolve plantio de árvores, como eucalipto, enquanto o extrativismo usa florestas nativas. A tendência recente favorece qual das duas?",
+    "comentario": "A silvicultura — cultivo planejado de florestas, como eucalipto e pinus — expandiu-se no Brasil como alternativa ao extrativismo vegetal predatório. O reflorestamento garante abastecimento contínuo de madeira sem desmatamento de florestas nativas, respondendo pela queda do extrativismo e aumento da madeira cultivada nos gráficos de produção florestal."
   },
   {
     "id": 4,
@@ -70,7 +73,8 @@
       "salinização."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "A questão trata de impermeabilização do solo em construções urbanas. Pense no que acontece quando o solo fica coberto por cimento ou asfalto: a água não infiltra, aumentando o escoamento superficial. Qual problema ambiental urbano isso causa?",
+    "comentario": "A impermeabilização do solo em áreas urbanas impede a infiltração da água da chuva, aumentando o escoamento superficial e os riscos de enchentes. Materiais impermeáveis como asfalto e concreto ampliam o impacto ambiental das obras, por isso as normas ambientais exigem medidas compensatórias como jardins de chuva e pavimentos permeáveis."
   },
   {
     "id": 5,
@@ -88,7 +92,8 @@
       "Os grandes projetos de infraestrutura causam degradação da floresta amazônica, com intensidade moderada e temporária, auxiliando a regularização fundiária."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "O texto descreve o avanço do desmatamento na Amazônia ligado a grilagem e grandes obras. Identifique qual alternativa descreve corretamente as causas estruturais desse problema, sem minimizar seus efeitos ou deslocar a responsabilidade.",
+    "comentario": "O desmatamento na Amazônia é alimentado pela grilagem de terras — falsificação de documentos para apropriar áreas públicas —, pela extração ilegal de madeira e pela abertura de rodovias que facilitam o acesso ao interior da floresta. Esses fatores atuam em conjunto, criando o chamado 'arco do desmatamento' no Pará, Mato Grosso e Rondônia."
   },
   {
     "id": 6,
@@ -105,7 +110,8 @@
       "Todas as afirmativas são incorretas."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "As afirmativas tratam da Mata Atlântica e seus impactos ambientais. Analise cada item separadamente: verifique se os dados sobre fragmentação, espécies endêmicas e usos do solo são corretos conforme o que você estudou sobre esse bioma.",
+    "comentario": "A Mata Atlântica é um dos biomas mais ameaçados do planeta, restando apenas cerca de 12% de sua cobertura original. Sua destruição está ligada à ocupação histórica do litoral brasileiro, onde se concentram as maiores cidades e atividades econômicas do país. Apesar da fragmentação, o bioma ainda abriga enorme biodiversidade e serve como corredor ecológico."
   },
   {
     "id": 7,
@@ -123,7 +129,8 @@
       "cria condições para o estabelecimento de espécies pioneiras com a diminuição da insolação sobre o solo."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "A questão aborda recuperação de ecossistemas degradados por agricultura intensiva. Pense no que é necessário para restaurar a biodiversidade do solo: diversidade de organismos, matéria orgânica, cobertura vegetal. Qual prática promove isso?",
+    "comentario": "A prática agroecológica que incorpora matéria orgânica ao solo estimula a vida microbiana e de organismos como minhocas, restaurando a estrutura do solo degradado. Solos biologicamente ativos apresentam maior retenção de água, ciclagem de nutrientes e resistência à erosão, recuperando a capacidade produtiva sem depender de insumos químicos."
   },
   {
     "id": 8,
@@ -142,7 +149,8 @@
       "uso de agrotóxicos nas plantações."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "A charge critica o uso de agrotóxicos na produção agrícola brasileira. Observe os elementos visuais da imagem e relacione-os à crítica implícita sobre saúde, ambiente e modelo produtivo. O que a imagem exagera para provocar reflexão?",
+    "comentario": "O Brasil é o maior consumidor de agrotóxicos do mundo, um reflexo do modelo agroexportador baseado em monoculturas de larga escala. O uso excessivo de pesticidas contamina solos, rios e aquíferos, além de gerar resistência em pragas e intoxicar trabalhadores rurais. A charge critica a naturalização desse modelo como sinônimo de produtividade."
   },
   {
     "id": 9,
@@ -161,7 +169,8 @@
       "modernização logística de plantios convencionais."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "A prática produtiva apresentada é uma alternativa ao modelo convencional. Pense em práticas agroecológicas que preservam a biodiversidade e os recursos naturais. O objetivo é identificar o conceito que melhor classifica essa abordagem.",
+    "comentario": "A produção sustentável busca atender às necessidades presentes sem comprometer os recursos para as gerações futuras. Práticas como agroflorestas, rotação de culturas e manejo integrado de pragas permitem produzir alimentos enquanto conservam o ecossistema. Esse modelo é especialmente relevante em comunidades tradicionais e de agricultura familiar."
   },
   {
     "id": 10,
@@ -179,6 +188,7 @@
       "Regulamentar o uso de sementes selecionadas."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "A questão trata da agricultura orgânica e agroecológica no Brasil. Pense no papel do Estado em regular, estimular ou restringir práticas agrícolas. Qual ação governamental seria mais coerente com o fomento à produção orgânica familiar?",
+    "comentario": "A agricultura familiar e orgânica enfrenta desvantagens competitivas frente ao agronegócio, pois opera em menor escala e acessa menos crédito e tecnologia. Subsídios estatais a pequenos produtores compensam essa assimetria, garantindo alimentos mais saudáveis e diversificados nos mercados locais. Países como França e Japão utilizam esse mecanismo para preservar sua cultura alimentar e agrícola."
   }
 ]

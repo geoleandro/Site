@@ -2,7 +2,7 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "(ENEM 2021) \"As atividades mineradoras têm criado conflitos com extrativistas, quilombolas, pequenos agricultores, ribeirinhos, pescadores artesanais e povos indígenas. Em geral, estes sujeitos têm encontrado grande dificuldade de reproduzir suas dinâmicas territoriais depois da instalação da atividade mineradora, nem sempre com reconhecimento do impacto ao seu território pelo Estado e pela empresa, ficando sem qualquer tipo de compensação econômica. Em outros casos, nem a compensação econômica tem sido capaz de evitar o esgarçamento das relações sociais destes grupos que sofrem com a reconstrução abrupta das suas identidades e de suas dinâmicas territoriais.”.",
@@ -16,7 +16,8 @@
       "enriquecimento das comunidades autóctones."
     ],
     "correta": 1,
-    "comentario": "<p> <strong>Comentário:</strong></p>\n<p>O texto aborda o impacto provocado pelas atividades mineradoras nas dinâmicas territoriais de\r\n\t\t\t\t\tdiversos grupos sociais, como quilombolas, ribeirinhos e povos indígenas. Segundo o excerto, a\r\n\t\t\t\t\tatividade mineradora traz como principal consequência a reconstrução de identidades e dinâmicas\r\n\t\t\t\t\tterritoriais dos grupos afetados, caracterizando um rompimento dos tradicionais vínculos\r\n\t\t\t\t\testabelecidos entre os próprios membros e com o espaço que ocupam. Trata-se, portanto, de uma\r\n\t\t\t\t\trelação marcada pelo rompimento de vínculos locais.\r\n\r\n\t\t\t\t</p>"
+    "comentario": "<p> <strong>Comentário:</strong></p>\n<p>O texto aborda o impacto provocado pelas atividades mineradoras nas dinâmicas territoriais de\r\n\t\t\t\t\tdiversos grupos sociais, como quilombolas, ribeirinhos e povos indígenas. Segundo o excerto, a\r\n\t\t\t\t\tatividade mineradora traz como principal consequência a reconstrução de identidades e dinâmicas\r\n\t\t\t\t\tterritoriais dos grupos afetados, caracterizando um rompimento dos tradicionais vínculos\r\n\t\t\t\t\testabelecidos entre os próprios membros e com o espaço que ocupam. Trata-se, portanto, de uma\r\n\t\t\t\t\trelação marcada pelo rompimento de vínculos locais.\r\n\r\n\t\t\t\t</p>",
+    "ajuda": "O texto relaciona atividade econômica a uma forma específica de organização social. Identifique se o trecho descreve uma relação de exploração do trabalho, dependência energética, impacto ambiental ou algum modelo de desenvolvimento sustentável."
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       "Errado"
     ],
     "correta": 0,
-    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
+    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->",
+    "ajuda": "O Brasil tem uma das maiores participações de energias renováveis em sua matriz elétrica, com destaque para a hidroeletricidade. Analise as demais fontes renováveis (eólica, solar, biomassa) e seus potenciais e limitações no contexto brasileiro."
   },
   {
     "id": 3,
@@ -47,7 +49,8 @@
       "Apenas as afirmativas I e II estão corretas."
     ],
     "correta": 0,
-    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n -->"
+    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n -->",
+    "ajuda": "Analise cada afirmativa sobre fontes de energia: a solar depende da incidência de radiação; a eólica, dos ventos; a hidrelétrica, dos rios. Cada uma tem vantagens (renovabilidade, baixa emissão) e desvantagens (impacto ambiental, intermitência). Verifique a consistência de cada proposição."
   },
   {
     "id": 4,
@@ -64,7 +67,8 @@
       "maremotriz."
     ],
     "correta": 2,
-    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
+    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->",
+    "ajuda": "As fontes alternativas de energia (solar, eólica, geotérmica, maremotriz, biomassa) são chamadas de renováveis porque se regeneram naturalmente. Sua principal vantagem é a menor emissão de gases de efeito estufa em comparação aos combustíveis fósseis."
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
       "otimizar os recursos energéticos e reduzir os impactos ambientais relacionados à sua produção."
     ],
     "correta": 4,
-    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
+    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->",
+    "ajuda": "O consumo de energia per capita é um indicador do nível de desenvolvimento de um país. Países industrializados consomem muito mais energia do que países subdesenvolvidos. Analise o que isso revela sobre os padrões de produção e consumo global."
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
       "diminuição do uso de combustíveis fósseis, reduzindo-se a oferta de fontes poluidoras."
     ],
     "correta": 4,
-    "comentario": "<p> <strong>Comentário:</strong></p>\n<p>O biodiesel é uma importante alternativa para a substituição de combustíveis fósseis, como o petróleo\r\n\t\t\t\t\te o gás natural, portanto, contribui para a diminuição da emissão de poluentes na atmosfera.</p>\n<!-- <p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
+    "comentario": "<p> <strong>Comentário:</strong></p>\n<p>O biodiesel é uma importante alternativa para a substituição de combustíveis fósseis, como o petróleo\r\n\t\t\t\t\te o gás natural, portanto, contribui para a diminuição da emissão de poluentes na atmosfera.</p>\n<!-- <p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->",
+    "ajuda": "O biodiesel é um biocombustível produzido a partir de óleos vegetais ou gordura animal, podendo ser misturado ao diesel mineral. Ele é considerado uma alternativa mais sustentável por ser renovável e ter menor emissão líquida de CO₂, mas apresenta desafios ligados ao uso do solo."
   },
   {
     "id": 7,
@@ -115,7 +121,8 @@
       "2 – 3 – 1."
     ],
     "correta": 1,
-    "comentario": "<p> <strong>Comentário:</strong></p>\n<!-- <p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
+    "comentario": "<p> <strong>Comentário:</strong></p>\n<!-- <p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->",
+    "ajuda": "As fontes alternativas de energia incluem solar (fotovoltaica e térmica), eólica, geotérmica, maremotriz e de biomassa. Associe cada termo à sua definição: qual usa o calor da Terra? Qual aproveita o movimento das marés? Qual transforma a luz em eletricidade?"
   },
   {
     "id": 8,
@@ -133,7 +140,8 @@
       "extinção de organismos marinhos responsáveis pela produção de oxigênio."
     ],
     "correta": 2,
-    "comentario": "<p> <strong>Comentário:</strong></p>\n<p>Correta. Letra C. Como mostrado na imagem, a grande presença de CO2, efeito da queima de combustíveis\r\n\t\t\t\t\tpela indústria e por automóveis, tem um grande impacto sobre alguns seres vivos marinhos como:\r\n\t\t\t\t\tmoluscos, corais, equinodermos e microrganismos com carapaça. </p>"
+    "comentario": "<p> <strong>Comentário:</strong></p>\n<p>Correta. Letra C. Como mostrado na imagem, a grande presença de CO2, efeito da queima de combustíveis\r\n\t\t\t\t\tpela indústria e por automóveis, tem um grande impacto sobre alguns seres vivos marinhos como:\r\n\t\t\t\t\tmoluscos, corais, equinodermos e microrganismos com carapaça. </p>",
+    "ajuda": "O impacto ambiental descrito provavelmente está relacionado à construção de usinas (hidrelétricas, termelétricas) ou à extração de combustíveis. Identifique qual atividade energética causa o tipo de degradação ambiental mencionado e quais fatores a intensificam."
   },
   {
     "id": 9,
@@ -152,12 +160,13 @@
       "diminuição dos gastos operacionais de transporte, para superação da distância do continente."
     ],
     "correta": 1,
-    "comentario": "<p> <strong>Comentário:</strong></p>\n<p> A utilização de fontes renováveis de energia, por meio da utilização de elementos como mar (maremotriz), ar (eólica), sol (solar) e lixo (biomassa), produz uma ampla diminuição da emissão de gases poluentes. Sendo assim, as matrizes renováveis de energia possibilitam um menor impacto no meio ambiente e uma maior manutenção das condições biológicas locais.</p>"
+    "comentario": "<p> <strong>Comentário:</strong></p>\n<p> A utilização de fontes renováveis de energia, por meio da utilização de elementos como mar (maremotriz), ar (eólica), sol (solar) e lixo (biomassa), produz uma ampla diminuição da emissão de gases poluentes. Sendo assim, as matrizes renováveis de energia possibilitam um menor impacto no meio ambiente e uma maior manutenção das condições biológicas locais.</p>",
+    "ajuda": "A transição para fontes renováveis de energia é um dos desafios do desenvolvimento sustentável. A substituição de combustíveis fósseis por fontes como solar e eólica em ilhas ou parques nacionais representa uma iniciativa de descarbonização local."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MUNDO EDUCAÇÃO 2025) A energia gerada pela força dos ventos é chamada de eólica. As usinas eólicas são comumente implantadas em áreas onde há uma elevada circulação atmosférica, que garante a continuidade dos ventos para a ativação das turbinas. Dentre as vantagens da energia eólica, pode-se citar:",
@@ -169,6 +178,7 @@
       "a dificuldade de instalação em áreas litorâneas."
     ],
     "correta": 3,
-    "comentario": "<p><strong>Comentário:</strong></p>\n<p>As usinas eólicas utilizam como elemento gerador de energia o vento. Além disso, ocupam uma pequena área, podem ser instaladas em um terreno com outras práticas econômicas, e não produzem resíduos. Desse modo, elas produzem baixo impacto no meio ambiente.</p>"
+    "comentario": "<p><strong>Comentário:</strong></p>\n<p>As usinas eólicas utilizam como elemento gerador de energia o vento. Além disso, ocupam uma pequena área, podem ser instaladas em um terreno com outras práticas econômicas, e não produzem resíduos. Desse modo, elas produzem baixo impacto no meio ambiente.</p>",
+    "ajuda": "As usinas eólicas transformam a energia cinética dos ventos em energia elétrica por meio de turbinas. Elas são mais eficientes em regiões com ventos constantes, como o Nordeste brasileiro e regiões costeiras. Analise as vantagens e limitações dessa fonte de energia."
   }
 ]

@@ -14,7 +14,8 @@
       "os escudos cristalinos são áreas tectonicamente instáveis constituídas por rochas formadas em períodos geológicos recentes."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As áreas sedimentares são bacias tectonicamente rebaixadas onde sedimentos se acumulam ao longo de milhões de anos. Essas bacias concentram petróleo, gás e carvão — recursos fósseis formados pela decomposição de matéria orgânica soterrada. No Brasil, a Bacia de Santos e a Bacia de Campos são exemplos fundamentais para a economia do pré-sal.",
+    "ajuda": "As estruturas geológicas refletem a história de formação da crosta terrestre. Os crátons (escudos cristalinos) são as mais antigas e estáveis; as faixas dobradas são mais jovens e originadas por colisão de placas; as bacias sedimentares acumulam sedimentos sobre essas estruturas."
   },
   {
     "id": 2,
@@ -32,7 +33,8 @@
       "Cambissolos, vertissolos e alissolos."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "As três grandes estruturas geológicas da litosfera continental são: crátons (ou escudos antigos — rochas estáveis do Pré-Cambriano), bacias sedimentares (áreas rebaixadas com acúmulo de sedimentos) e cadeias orogênicas (montanhas jovens formadas por colisão de placas). O Brasil tem predominância de escudos cristalinos e bacias sedimentares.",
+    "ajuda": "A litosfera está em constante transformação, mas é possível identificar grandes domínios estruturais: crátons (núcleos rígidos e antigos), cinturões orogênicos (montanhas dobradas) e bacias sedimentares (depressões preenchidas por sedimentos). Identifique cada domínio no contexto da questão."
   },
   {
     "id": 3,
@@ -50,7 +52,8 @@
       "Somente as afirmativas II, III e IV são corretas."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "O mapa geológico do Brasil revela que os escudos cristalinos (Escudo Brasileiro e das Guianas) ocupam grandes áreas e concentram minérios metálicos (ferro, bauxita, ouro). As bacias sedimentares (Amazônica, do Parnaíba, do Paraná) são ricas em petróleo, gás e carvão. As dobras recentes (Andes) só aparecem nos países vizinhos — o Brasil não tem cordilheiras jovens.",
+    "ajuda": "O mapa das estruturas geológicas mostra a distribuição de crátons, bacias sedimentares e faixas dobradas no Brasil ou no mundo. Crátons correspondem geralmente a planaltos antigos; faixas dobradas, a serras e montanhas; bacias sedimentares, a planícies e depressões."
   },
   {
     "id": 4,
@@ -58,7 +61,7 @@
     "ano": "2006",
     "dificuldade": "",
     "tags": [],
-    "texto_apoio":"Assinale com V ou F as afirmações a seguir, referentes à classificação genética das rochas",
+    "texto_apoio": "Assinale com V ou F as afirmações a seguir, referentes à classificação genética das rochas",
     "pergunta": "\n\n( ) A rocha ígnea intrusiva mais abundante na crosta terrestre é o granito. \n\n( ) as rochas sedimentares são formadas a partir da compactação de fragmentos provenientes somente das rochas ígneas e metamórficas. \n\n( ) quando ocorrer a litificação do material magmático em áreas profundas da crosta terrestre, a rocha resultante será do tipo ígnea vulcânica. \n\n( ) O gnaisse e o mármore são rochas metamórficas resultantes da transformação de outras rochas devido ao aumento de pressão e temperatura sobre a rocha preexistente",
     "alternativas": [
       "V F F V.",
@@ -68,7 +71,8 @@
       "V F V V."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O granito é a rocha ígnea intrusiva mais abundante na crosta continental. As rochas sedimentares formam-se pela litificação de sedimentos — não pela solidificação do magma. O processo de metamorfismo transforma rochas pré-existentes pela ação de calor e pressão, sem fundição completa, gerando rochas como gnaisse, quartzito e mármore.",
+    "ajuda": "Avalie cada afirmativa sobre rochas e estruturas geológicas: o granito é de fato a rocha intrusiva mais abundante na crosta continental; rochas sedimentares cobrem grande parte da superfície emersa; rochas metamórficas resultam da transformação por calor e pressão. Verifique a coerência de cada proposição."
   },
   {
     "id": 5,
@@ -86,7 +90,8 @@
       "V V V V V."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "As bacias sedimentares foram formadas em épocas geológicas diversas. Os mares rasos que cobriam partes do Brasil no Paleozoico (ex: Bacia do Parnaíba) depositaram sedimentos que hoje contêm registro fóssil e reservas de gás. A identificação das eras geológicas nas formações sedimentares é feita pelos fósseis-guia encontrados em cada camada.",
+    "ajuda": "As estruturas geológicas refletem diferentes idades e origens. Crátons são núcleos antigos e estáveis; bacias sedimentares se formam em áreas deprimidas; dobramentos modernos resultam de colisões de placas recentes. Identifique qual estrutura é descrita ou representada na questão."
   },
   {
     "id": 6,
@@ -104,7 +109,8 @@
       "I – Depressão absoluta, II – Planalto."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "As formas do relevo incluem planícies (áreas baixas e planas formadas por deposição sedimentar) e depressões relativas (áreas rebaixadas em relação às regiões vizinhas, mas não necessariamente ao nível do mar). A depressão sertaneja no Nordeste brasileiro é um exemplo de depressão relativa esculpida pela erosão em rochas cristalinas.",
+    "ajuda": "O professor apresentou uma figura com formas de relevo e pediu aos alunos que as identificassem. Lembre-se das formas de relevo: planalto (superfície elevada, com bordas em escarpa), planície (superfície plana e baixa, de deposição) e depressão (superfície mais baixa que as áreas ao redor)."
   },
   {
     "id": 7,
@@ -121,7 +127,8 @@
       "I e III."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O relevo brasileiro é predominantemente composto por planaltos e depressões, com poucas planícies em termos de extensão. Os planaltos formam-se por processos erosivos em estruturas elevadas; as planícies, por deposição sedimentar em áreas rebaixadas. A classificação de Ab'Sáber divide o relevo brasileiro em planaltos, planícies e depressões.",
+    "ajuda": "As formas do relevo são classificadas em planaltos, planícies e depressões, dependendo da altitude e da origem (erosão ou deposição). O relevo também pode ser qualificado como sendo de origem estrutural (condicionado pelo tipo de rocha) ou agradacional (formado por deposição de sedimentos)."
   },
   {
     "id": 8,
@@ -141,7 +148,8 @@
       "3, 5, 4, 2, 6, 1."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "O relevo brasileiro é classificado em: Planalto das Guianas (escudo cristalino, extremo norte), Planície Amazônica (deposição fluvial), Planalto Central Brasileiro (escudo antigo), Depressão do São Francisco, Planalto da Borborema, entre outros. Essa diversidade estrutural reflete diferentes histórias geológicas e processos de erosão e deposição.",
+    "ajuda": "Para associar os números da figura às formas de relevo brasileiras, identifique características como altitude, declividade, tipo de rocha e processo formador. O Planalto das Guianas é antigo e cristalino; a Planície Amazônica é sedimentar e plana; a Depressão Periférica é escavada pela erosão."
   },
   {
     "id": 9,
@@ -149,7 +157,6 @@
     "ano": "2023",
     "dificuldade": "",
     "tags": [],
-    
     "imagem_apoio": "1ano/img/114/p14q9.png",
     "pergunta": "A partir da figura, pode-se afirmar que as áreas com as condições naturais mais favoráveis à ocupação humana são:",
     "alternativas": [
@@ -179,6 +186,6 @@
     ],
     "correta": 0,
     "ajuda": "Planalto: Terreno elevado com superfície relativamente plana e limites mais ou menos abruptos, geralmente formado por processos erosivos. Planície: Terreno plano ou levemente ondulado, formado principalmente por processos de deposição de sedimentos, como rios ou geleiras.",
-    "comentario": ""
+    "comentario": "As planícies são formas de relevo originadas pela deposição de sedimentos em áreas planas e de baixa altitude. Formam-se em várzeas fluviais, planícies costeiras e deltas. São áreas de grande fertilidade agrícola (várzeas do Rio São Francisco) mas vulneráveis a inundações. Os processos exógenos (erosão e deposição) são responsáveis por sua formação."
   }
 ]

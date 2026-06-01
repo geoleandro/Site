@@ -1,125 +1,195 @@
+/* ── Fonte pixel ── */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.pixel { font-family: 'Press Start 2P', monospace; }
 
+body { font-family: Verdana, sans-serif; line-height: 1.7; }
 
+/* ════════════════════════════════════════
+   HEADER MOCKADO
+════════════════════════════════════════ */
+#mock-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  background: #1b5e20;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+#mock-header .logo { color: #fff; font-size: 1.1em; font-weight: bold; letter-spacing: 1px; }
+#mock-header .globinho-bar {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.12); border-radius: 20px; padding: 5px 14px;
+}
+#mock-header .globinho-bar img { width: 30px; }
+#mock-header .saldo {
+  color: #fff; font-weight: bold; font-size: 1.1em; min-width: 36px;
+  transition: transform 0.2s;
+}
+.saldo.pulsar { animation: pulsar 0.4s ease; }
+@keyframes pulsar {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.5); color: #a5d6a7; }
+  100% { transform: scale(1); }
+}
 
-/* Palavra marcada */
+/* ════════════════════════════════════════
+   TERMOS CLICÁVEIS
+════════════════════════════════════════ */
 .termo {
   position: relative;
+  display: inline-block;
   cursor: pointer;
   font-weight: bold;
-  color: #1a4d8f;
-  background: #ffec99;
-  padding: 2px 6px;
-  border-radius: 6px;
-  transition: background 0.3s;
+  color: #1565c0;
+  background: #fff9c4;
+  padding: 1px 6px;
+  border-radius: 5px;
+  border-bottom: 2px dashed #f9a825;
+  transition: background 0.2s, transform 0.15s;
 }
+.termo::after { content: " 💡"; font-size: 0.78em; opacity: 0.8; }
+.termo:hover  { background: #ffe082; transform: scale(1.05); }
 
-.termo:hover {
-  background: #ffe066;
+.termo.coletado {
+  background: #c8e6c9;
+  border-bottom: 2px solid #388e3c;
+  color: #1b5e20;
+  cursor: default;
 }
+.termo.coletado::after { content: " ✅"; }
 
-/* Ícone de informação */
-.termo::after {
-  content: " 💡";
-  font-size: 0.9em;
-}
-
-
-/* Temas por área */
-.amarelo {
-  color: #e8ff8b; /* Azul */
-}
-.politica {
-  color: #3f51b5; /* Azul */
-}
-
-.economia {
-  color: #e53935; /* Vermelho */
-}
-
-.tecnologia {
-  color: #fb8c00; /* Laranja */
-}
-
-
-/* Balão explicativo */
-.explicacao {
+/* ════════════════════════════════════════
+   TOOLTIP BALÃO
+════════════════════════════════════════ */
+.termo-tooltip {
   display: none;
   position: absolute;
-  top: 130%;
-  left: 0;
-  width: 280px;
-  background: #ffffff;
+  top: calc(100% + 12px);
+  left: 50%; transform: translateX(-50%);
+  min-width: 220px; max-width: 300px;
+  background: #fff;
+  border-left: 5px solid #1976d2;
   border-radius: 10px;
-  padding: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  font-size: 0.9em;
-  line-height: 1.4;
-  z-index: 10;
-  animation: fadeIn 0.3s ease-in-out;
-  border-left: 5px solid #1a4d8f;
+  padding: 10px 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  font-size: 0.85em;
+  font-weight: normal;
+  line-height: 1.5;
+  z-index: 999;
+  animation: fadeUp 0.2s ease;
+  white-space: normal;
+  text-align: left;
 }
-
-/* Setinha */
-.explicacao::before {
+.termo-tooltip::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 15px;
-  border-width: 0 10px 10px 10px;
-  border-style: solid;
-  border-color: transparent transparent #ffffff transparent;
-  filter: drop-shadow(0 -2px 2px rgba(0,0,0,0.1));
+  top: -9px; left: 50%; transform: translateX(-50%);
+  border: 9px solid transparent;
+  border-bottom-color: #1976d2;
 }
+.termo-tooltip.visible { display: block; }
 
-/* Animação */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-
-/* Tooltip estilo balão usando W3.CSS */
-
-
-.tooltip {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+/* ════════════════════════════════════════
+   FEEDBACK FLUTUANTE +2 🌍
+════════════════════════════════════════ */
+.gloss-feedback {
   position: absolute;
-  top: 120%;
-  left: 0;
-  z-index: 10;
-  min-width: 240px;
-
-  /* W3.CSS card */
-  background: #ffffff;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  border-left: 5px solid #3f51b5;
+  top: -30px; left: 50%; transform: translateX(-50%);
+  background: #2e7d32; color: #fff;
+  font-size: 0.8em; font-weight: bold;
+  padding: 3px 10px; border-radius: 20px;
+  pointer-events: none; white-space: nowrap; z-index: 1000;
+  animation: subir 1.3s ease forwards;
 }
 
-.tooltip::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 15px;
-  border-width: 0 10px 10px 10px;
-  border-style: solid;
-  border-color: transparent transparent #ffffff transparent;
+/* ════════════════════════════════════════
+   BARRA DE PROGRESSO
+════════════════════════════════════════ */
+#barra-progresso-wrap {
+  background: #e8f5e9; border-radius: 10px; padding: 10px 16px;
+  margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
+}
+#barra-progresso-wrap .label { font-size: 0.82em; color: #2e7d32; white-space: nowrap; }
+#barra-outer {
+  flex: 1; height: 10px; background: #c8e6c9; border-radius: 10px; overflow: hidden;
+}
+#barra-inner {
+  height: 100%; background: #43a047; border-radius: 10px;
+  width: 0%; transition: width 0.4s ease;
+}
+#barra-texto { font-size: 0.82em; color: #388e3c; white-space: nowrap; }
+
+/* ════════════════════════════════════════
+   FICHA DE CONCEITOS
+════════════════════════════════════════ */
+#ficha-conceitos {
+  margin-top: 32px;
+  border: 2px solid #a5d6a7;
+  border-radius: 14px;
+  padding: 22px 24px;
+  background: linear-gradient(135deg, #f1f8e9, #e8f5e9);
+  display: none;
+}
+#ficha-conceitos .ficha-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 14px;
+}
+#ficha-conceitos h3 {
+  margin: 0;
+  font-size: 1em; color: #2e7d32; text-transform: uppercase; letter-spacing: 0.06em;
+}
+#ficha-conceitos .ficha-badge {
+  background: #43a047; color: #fff;
+  font-size: 0.75em; font-weight: bold;
+  padding: 3px 10px; border-radius: 20px;
 }
 
-.tooltip.show {
-  visibility: visible;
-  opacity: 1;
+#lista-glossario {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+#lista-glossario li {
+  background: #fff;
+  border: 1px solid #c5e1a5;
+  border-left: 4px solid #66bb6a;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.85em;
+  line-height: 1.45;
+  animation: fadeUp2 0.35s ease;
+  max-width: 300px;
+}
+#lista-glossario li b { color: #2e7d32; display: block; margin-bottom: 2px; }
+
+/* ════════════════════════════════════════
+   MENSAGEM DE CONCLUSÃO
+════════════════════════════════════════ */
+#mensagem-final {
+  display: none;
+  text-align: center; margin-top: 18px;
+  padding: 14px; background: #fff9c4; border-radius: 10px;
+  border: 2px solid #f9a825; animation: fadeUp2 0.4s ease;
+}
+#mensagem-final p { margin: 0; font-size: 1em; }
+
+/* ════════════════════════════════════════
+   ANIMAÇÕES
+════════════════════════════════════════ */
+@keyframes subir {
+  0%   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-36px); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+@keyframes fadeUp2 {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-
-/* Balão W3.CSS */
-.tooltip {
-  background: #ffffff;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  border-left: 5px solid #3f51b5;
-}
+/* ════════════════════════════════════════
+   TEMAS POR ÁREA (classes opcionais)
+════════════════════════════════════════ */
+.termo.politica  { border-bottom-color: #3f51b5; }
+.termo.economia  { border-bottom-color: #e53935; }
+.termo.tecnologia{ border-bottom-color: #fb8c00; }

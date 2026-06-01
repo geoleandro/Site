@@ -2,7 +2,7 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MUNDO EDUCAÇÃO 2022) Com a emergência da Terceira Revolução Industrial, os processos produtivos transformaram-se, o que propiciou a ocorrência de profundas alterações no mundo do trabalho. Um dos efeitos da Revolução técnico-científica informacional no sistema trabalhista, de um modo geral, foi:",
@@ -14,7 +14,8 @@
       "Menor necessidade de qualificação técnica do trabalhador."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A Terceira Revolução Industrial (microeletrônica, robótica, biotecnologia) destruiu empregos industriais repetitivos e criou demanda por trabalhadores qualificados em serviços. O resultado foi a expansão do setor terciário nos países desenvolvidos, enquanto trabalhadores não qualificados enfrentaram desemprego estrutural crescente.",
+    "ajuda": "A Terceira Revolução Industrial (microeletrônica, robótica, informática) transformou o mercado de trabalho ao substituir funções repetitivas por máquinas. Pense em qual efeito essa automação gerou na estrutura do emprego e na demanda por qualificação."
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       "a descaracterização da hierarquia urbana."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A industrialização impulsionou o êxodo rural em escala global: o campo mecanizado expulsou trabalhadores que migraram para as cidades em busca de emprego nas fábricas. Esse processo gerou a urbanização acelerada e transformou radicalmente a organização do espaço geográfico nos séculos XIX e XX.",
+    "ajuda": "A industrialização reorganiza o espaço geográfico ao criar cidades industriais, atrair migrantes do campo e gerar novas hierarquias urbanas. Identifique qual efeito espacial é diretamente causado pelo processo de industrialização."
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
       "padronizado, em que o local é orientado pelo global, usando a tecnologia do mundo hegemônico que se sobrepõe à vida e ao conhecimento do mundo hegemonizado."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O modelo produtivo globalizado é padronizado: a tecnologia do centro capitalista se impõe sobre as práticas locais dos países periféricos. Milton Santos chamou esse processo de 'meio técnico-científico-informacional' — onde o espaço é reorganizado pela lógica global, subordinando o local ao hegemônico.",
+    "ajuda": "A globalização padroniza processos produtivos, mas essa padronização é desigual: os países periféricos adaptam o modelo global ao contexto local. Identifique qual alternativa descreve corretamente esse modelo de produção padronizado e hierárquico."
   },
   {
     "id": 4,
@@ -64,7 +67,8 @@
       "3-1-2."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "As três revoluções industriais correspondem a ciclos tecnológicos distintos: a 1ª (carvão e vapor, século XVIII-XIX), a 2ª (eletricidade e petróleo, final do XIX e início do XX) e a 3ª (microeletrônica e informática, a partir dos anos 1970). Cada fase reorganizou o espaço econômico mundial.",
+    "ajuda": "As três fases da Revolução Industrial correspondem a períodos históricos com características próprias: a primeira (máquina a vapor), a segunda (eletricidade e petróleo) e a terceira (microeletrônica). Relacione cada descrição à fase correta."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "compartilhamento de lucros."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A dispersão espacial das indústrias para países de menor custo não significou descentralização do poder econômico. As decisões estratégicas, as patentes e os lucros continuaram concentrados nos países ricos — evidenciando que dispersão produtiva e concentração econômica coexistem na globalização contemporânea.",
+    "ajuda": "A dispersão espacial das indústrias (para países com menor custo de produção) não elimina a concentração do poder econômico e das decisões. Pense em qual conceito descreve essa dinâmica: as fábricas se espalham, mas o controle permanece centralizado."
   },
   {
     "id": 6,
@@ -101,7 +106,8 @@
       "primarização das exportações globais."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A desindustrialização dos países desenvolvidos não significou perda de poder econômico, pois esses países mantiveram o domínio tecnológico e o controle das cadeias produtivas globais. Ao exportar a produção para países periféricos, retiveram as etapas de maior valor agregado: pesquisa, design e marketing.",
+    "ajuda": "O setor terciário cresceu nos países desenvolvidos à medida que a indústria se deslocou para países de menor custo. Essa desindustrialização não significa perda de poder econômico — pense em como o domínio tecnológico mantém a supremacia desses países."
   },
   {
     "id": 7,
@@ -120,7 +126,8 @@
       "Automatização dos processos fabris e aumento dos níveis de desemprego."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A automação industrial eliminou postos de trabalho repetitivos, mas a Terceira Revolução Industrial trouxe o efeito paradoxal de elevar o desemprego estrutural: fábricas produzem mais com menos pessoas. Ao mesmo tempo, aumentou a demanda por serviços — gerando crescimento no setor terciário.",
+    "ajuda": "As transformações na produção industrial (automação, deslocalização, reestruturação) têm consequências tanto para o setor produtivo quanto para o mercado de trabalho. Pense em qual par de efeitos — um para a produção e outro para o emprego — está correto."
   },
   {
     "id": 8,
@@ -138,7 +145,8 @@
       "A distribuição regular da tecnologia no espaço mundial ocorre de maneira diferenciada, quando se compara com o desenvolvimento socioeconômico, pois os países inovadores de tecnologias são economicamente desenvolvidos."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A distribuição desigual da tecnologia no espaço mundial reflete a hierarquia do capitalismo: países ricos concentram a geração de conhecimento e inovação, enquanto os pobres absorvem tecnologia de segunda geração. Essa assimetria é uma nova forma de dominação que substitui o colonialismo territorial.",
+    "ajuda": "A Terceira Revolução Industrial e a globalização consolidaram um espaço caracterizado pela distribuição desigual do conhecimento tecnológico. Pense em qual alternativa descreve corretamente essa distribuição irregular da tecnologia no espaço mundial."
   },
   {
     "id": 9,
@@ -155,7 +163,8 @@
       "Todas as afirmativas são verdadeiras."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O Taylorismo propôs a racionalização científica do trabalho (divisão de tarefas, cronometragem) para maximizar a produtividade. O Fordismo aplicou esses princípios na linha de montagem em série, criando o trabalhador especializado em uma única função — base do modelo industrial do século XX.",
+    "ajuda": "Taylorismo e Fordismo são modelos de organização da produção industrial do século XIX-XX. O Taylorismo propõe a divisão científica do trabalho; o Fordismo aplica essa lógica à linha de montagem em série. Analise quais afirmativas descrevem corretamente cada modelo."
   },
   {
     "id": 10,
@@ -171,6 +180,7 @@
       "Concentração do processo produtivo e comercial em um único país."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "As multinacionais buscam constantemente reduzir custos de produção e ampliar mercados consumidores. A afirmativa incorreta é a concentração do processo produtivo em um único país — na verdade, as transnacionais distribuem globalmente suas operações, instalando fábricas onde os custos são menores.",
+    "ajuda": "As multinacionais buscam mercados consumidores globalizados e, para manter competitividade, precisam constantemente reduzir custos e aumentar produtividade. Pense em qual estratégia organizacional as empresas transnacionais adotaram diante da concorrência globalizada."
   }
 ]

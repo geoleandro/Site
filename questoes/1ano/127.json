@@ -16,7 +16,8 @@
       "sedimentação."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A erosão resulta da remoção e transporte de partículas do solo pela água, vento ou outros agentes. Quando a cobertura vegetal é retirada (desmatamento, pastoreio excessivo) e o solo perde sua estrutura, o processo erosivo se acelera progressivamente. Em regiões semiáridas, a erosão pode levar à desertificação — transformando áreas produtivas em paisagens áridas.",
+    "ajuda": "A intensa interferência humana em um ecossistema, como a irrigação excessiva e o desvio de rios, pode causar o ressecamento de lagos e a degradação do solo, levando à desertificação. O caso do Mar de Aral, na Ásia Central, é um dos exemplos mais dramáticos desse processo."
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
       "1, 2, 3, 4 e 5."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A crise hídrica global é multidimensional: envolve quantidade (distribuição desigual de chuvas), qualidade (poluição industrial, agrícola e doméstica), acesso (infraestrutura de saneamento) e gestão (uso ineficiente, desperdício). Todos esses fatores interagem e se retroalimentam — a poluição reduz a quantidade disponível; o desperdício intensifica a escassez.",
+    "ajuda": "A água é considerada um recurso estratégico porque é essencial para a vida, a produção de alimentos e a geração de energia. Sua distribuição desigual e o crescente consumo humano criam tensões geopolíticas em diversas regiões do mundo."
   },
   {
     "id": 3,
@@ -53,7 +55,8 @@
       "O desastre ecológico ocorreu devido à ocupação ilegal das áreas de mananciais próximas ao Mar, dando lugar à especulação imobiliária, e o aparecimento de condomínios de alto padrão."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O Mar de Aral era o quarto maior lago do mundo, na Ásia Central (atual Cazaquistão/Uzbequistão). Nas décadas de 1960-90, a União Soviética desviou os rios Amu Dárie e Sir Dárie para irrigar plantações de algodão no deserto. O mar reduziu-se a menos de 10% do tamanho original, deixando barcos encalhados no deserto e criando uma crise humanitária e ambiental grave.",
+    "ajuda": "O Mar de Aral, localizado entre o Cazaquistão e o Uzbequistão, perdeu mais de 80% de seu volume entre 1960 e 2000 devido ao desvio de seus rios alimentadores para irrigação. Esse caso exemplifica os impactos da gestão inadequada dos recursos hídricos."
   },
   {
     "id": 4,
@@ -71,7 +74,8 @@
       "Encarecimento da exploração sustentável — Conservação da cobertura vegetal local."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "Os aquíferos subterrâneos são reservatórios naturais de água doce armazenada em rochas porosas. Sua exploração descontrolada pode causar: rebaixamento do lençol freático, subsidência (afundamento do solo), intrusão de água salgada em aquíferos costeiros e contaminação por atividades superficiais (fertilizantes, combustíveis). A recarga dos aquíferos é lenta — leva décadas a séculos.",
+    "ajuda": "O uso excessivo de águas subterrâneas sem respeitar a taxa de recarga natural dos aquíferos leva ao rebaixamento do lençol freático, subsidência do solo e salinização das águas. Identifique quais consequências estão sendo descritas na questão."
   },
   {
     "id": 5,
@@ -89,7 +93,8 @@
       "embora na área intertropical do planeta haja uma dominância de climas chuvosos, os estoques de água doce não são expressivos nessa área, pois essa também é uma área de grande evaporação."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A América do Sul possui a maior concentração de água doce per capita do mundo, especialmente pela Bacia Amazônica. Contudo, a distribuição interna é desigual: o Nordeste brasileiro tem baixo índice pluviométrico e concentração de população em áreas de risco hídrico. No nível global, a Ásia Central, o Oriente Médio e o norte da África enfrentam as crises hídrica mais severas.",
+    "ajuda": "A crise hídrica global é causada tanto pela escassez natural de água em certas regiões quanto pelo consumo excessivo e pela poluição. Os setores que mais consomem água são: agricultura (70%), indústria (20%) e uso doméstico (10%)."
   },
   {
     "id": 6,
@@ -107,7 +112,8 @@
       "A escassez de água no mundo é resultado exclusivo de ações políticas inadequadas e, à medida que tais ações forem corrigidas não haverá mais falta de água."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A escassez hídrica combina fatores naturais (clima árido, seco, irregularidade pluviométrica) com fatores antrópicos (desmatamento, poluição, uso excessivo na irrigação). Em regiões como o Nordeste semiárido, a irregularidade natural das chuvas é intensificada pelo desmatamento da Caatinga, que reduz a capacidade de retenção de umidade do solo.",
+    "ajuda": "O texto provavelmente aborda um conflito pelo uso da água, uma política de gestão hídrica ou um projeto de revitalização de bacias. Identifique a posição defendida e avalie qual alternativa a representa de forma mais precisa."
   },
   {
     "id": 7,
@@ -126,7 +132,8 @@
       "África Central, América do Sul e Sudeste asiático."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As regiões mais afetadas pela escassez hídrica são: África Subsaariana (baixa pluviometria e infraestrutura precária), Ásia Central (como o caso do Mar de Aral) e Oriente Médio (regiões áridas com alta demanda e sem rios caudalosos). O Relatório do PNUMA aponta que 40% da população mundial vive em situação de estresse hídrico.",
+    "ajuda": "As regiões mais afetadas pela escassez de água são: Oriente Médio, Norte da África, Sahel africano, Índia e partes do México e da Austrália. No Brasil, o Semiárido Nordestino é a região com maior vulnerabilidade hídrica."
   },
   {
     "id": 8,
@@ -143,7 +150,8 @@
       "o uso urbano, para lavagem de ruas e áreas públicas."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A lavagem de ruas e espaços públicos com água reciclada (tratada para reúso não potável) é uma das aplicações mais eficientes na gestão hídrica urbana. Permite preservar a água potável para consumo humano, reduzindo a pressão sobre mananciais. Cidades como Singapura e partes da Austrália são referências mundiais em sistemas de reúso urbano de água.",
+    "ajuda": "A reutilização planejada da água (reúso) inclui práticas como tratamento de esgoto para irrigação, reúso industrial e aproveitamento de água de chuva. É uma estratégia fundamental para reduzir a pressão sobre os recursos hídricos."
   },
   {
     "id": 9,
@@ -161,7 +169,8 @@
       "o regime de chuvas, mas não a quantidade de água disponível no Planeta."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A crise hídrica global deste século é definida tanto pela quantidade quanto pela qualidade da água disponível. O crescimento demográfico, a urbanização, a industrialização e as mudanças climáticas aumentam a demanda e degradam a oferta simultaneamente. Países como Índia, China e partes da África devem enfrentar conflitos sérios por água já nas próximas décadas.",
+    "ajuda": "A escassez de água doce é um dos maiores desafios ambientais do século XXI. Ela é causada por mudanças climáticas, crescimento populacional, poluição de aquíferos e má gestão dos recursos. Identifique qual aspecto o texto está enfatizando."
   },
   {
     "id": 10,
@@ -178,6 +187,7 @@
       "construção de barragens / uso de fertilizantes / construção de aterros sanitários."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As principais causas da contaminação das águas subterrâneas incluem: uso de fertilizantes e pesticidas na agricultura (que infiltram no solo), criação de aterros sanitários inadequados (lixiviado) e impermeabilização do solo urbano (impede recarga dos aquíferos). O desmatamento também contribui ao reduzir a infiltração e aumentar o escoamento superficial.",
+    "ajuda": "A possível escassez de água é uma questão de segurança hídrica global. As soluções incluem: dessalinização, captação de água de chuva, reúso de águas tratadas, melhoria das redes de distribuição e mudanças nos padrões de consumo. Avalie qual alternativa descreve a situação mais fielmente."
   }
 ]

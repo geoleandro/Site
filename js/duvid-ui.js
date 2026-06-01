@@ -3,7 +3,7 @@ const DuvidUI = {
     // 2. ATUALIZAÇÃO DO SALDO (HEADER E HOME)
     atualizarInterface: function () {
         const progresso = DuvidDB.getProgressoRPG();
-        const saldoFormatado = progresso.saldoAtual.toFixed(1);
+        const saldoFormatado = Math.floor(progresso.saldoAtual).toString();
 
         this.atualizarMedalhas(progresso.patente);
 
@@ -21,7 +21,7 @@ const DuvidUI = {
         const elNota = document.getElementById("notaFixa");
         if (elNota) {
             let valorAula = (typeof window.ganhosAtuais !== 'undefined') ? window.ganhosAtuais : 0;
-            elNota.innerText = Number(valorAula).toFixed(1);
+            elNota.innerText = Math.floor(Number(valorAula)).toString();
         }
 
         // Se estiver na Home, dispara a atualização do Painel RPG

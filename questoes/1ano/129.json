@@ -15,7 +15,8 @@
       "I. Savanas; II. Processo de desertificação associado ao crescimento da atividade industrial; III. Megadiversidade, possuindo cerca 70% das espécies vegetais e animais do mundo."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A floresta pluvial (rainforest) amazônica é o maior bioma florestal contínuo do mundo, com megadiversidade — abriga ~10% de todas as espécies do planeta. Sua principal ameaça são as queimadas associadas à expansão agropecuária (soja, gado), que destroíram cerca de 20% da floresta original. O desmatamento da Amazônia contribui significativamente para as emissões brasileiras de CO₂.",
+    "ajuda": "Os biomas brasileiros incluem: Amazônia (floresta equatorial), Cerrado (savana tropical), Mata Atlântica (floresta tropical), Caatinga (vegetação de semiárido), Pampa (campo subtropical) e Pantanal (zona úmida tropical). Cada um tem características climáticas e de biodiversidade específicas."
   },
   {
     "id": 2,
@@ -34,7 +35,8 @@
       "vegetação mediterrânea bastante variada, com predominância de arbustos."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A floresta equatorial tem estrutura vertical complexa: o dossel superior (25-40 m) é formado por árvores emergentes; o dossel intermediário, por espécies arbóreas menores e palmeiras; o sub-bosque, por arbustos e plantas adaptadas à sombra; e o estrato herbáceo no nível do solo. Essa estratificação permite o aproveitamento máximo da luz e abriga biodiversidade enorme.",
+    "ajuda": "O perfil da vegetação mostrado na figura representa a estratificação vertical de um bioma florestal. Identifique se trata de floresta tropical (estratos múltiplos, alta diversidade), savana (estrato herbáceo e arbóreo esparso) ou floresta de coníferas (uniforme e menos diversa)."
   },
   {
     "id": 3,
@@ -53,7 +55,8 @@
       "no interior do continente, só chove onde há floresta."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A floresta amazônica influencia o regime de chuvas local e regional por meio da evapotranspiração. Estudos mostram que as florestas criam 'rios voadores' — fluxos aéreos de vapor que transportam umidade para o interior do continente. Portanto, onde há floresta densa, chove mais — e o desmatamento rompe esse ciclo, reduzindo as chuvas nas regiões afetadas.",
+    "ajuda": "A Amazônia tem um papel ativo no ciclo hidrológico regional: as árvores liberam vapor d'água pela transpiração, alimentando nuvens e chuvas. A perda das florestas reduz a evapotranspiração e pode alterar o regime de chuvas, criando um ciclo de retroalimentação negativo."
   },
   {
     "id": 4,
@@ -71,7 +74,8 @@
       "savana, caracterizado por uma formação vegetal típica das regiões de clima tropical quente."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A savana é uma formação vegetal característica de climas tropicais com estação seca definida, onde gramíneas dominam e árvores aparecem esparsas ou em grupos. O Cerrado brasileiro é a maior savana tropical do mundo em biodiversidade, com mais de 12.000 espécies de plantas. Apesar disso, já perdeu mais de 50% de sua cobertura original para a agropecuária.",
+    "ajuda": "Os biomas são definidos por combinações específicas de clima, solo, relevo e vida. A Amazônia é o maior bioma florestal tropical do mundo; o Cerrado é o mais biodiverso entre as savanas; a Caatinga é a única savana estépica tropical do Brasil. Identifique o bioma com base nas características descritas."
   },
   {
     "id": 5,
@@ -85,10 +89,11 @@
       "das inversões térmicas, causadas pelo acúmulo de dióxido de carbono resultante da não-dispersão dos poluentes para as regiões mais altas da atmosfera.",
       "da destruição da camada de ozônio, causada pela liberação, na atmosfera, do dióxido de carbono contido nos gases do grupo dos clorofluorcarbonos.",
       "do efeito estufa provocado pelo acúmulo de carbono na atmosfera, resultante da queima de combustíveis fósseis, como carvão mineral e petróleo.",
-      "e) da eutrofização das águas, decorrente da dissolução, nos rios, do excesso de dióxido de carbono presente na atmosfera."
+      "da eutrofização das águas, decorrente da dissolução, nos rios, do excesso de dióxido de carbono presente na atmosfera."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "As florestas tropicais são os maiores 'sumidouros de carbono' da Terra, absorvendo CO₂ pela fotossíntese. Quando desmatadas, esse carbono é liberado — tanto pela queima quanto pela decomposição da madeira. O desmatamento é responsável por cerca de 11% das emissões globais de GEE. Preservar as florestas é, portanto, uma das estratégias mais custo-efetivas para mitigar o aquecimento global.",
+    "ajuda": "As florestas tropicais úmidas armazenam carbono, regulam o clima, protegem os solos, mantêm o ciclo da água e abrigam mais de 50% das espécies do planeta. O desmatamento libera o carbono armazenado e contribui para as mudanças climáticas."
   },
   {
     "id": 6,
@@ -106,7 +111,8 @@
       "pluvial tropical."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A floresta pluvial tropical (rainforest) é caracterizada por alta pluviosidade anual (superior a 2.000 mm), temperatura elevada e constante e ausência de estação seca definida. Ocorre próxima ao Equador — Amazônia, Bacia do Congo e Sudeste Asiático. É o bioma de maior biodiversidade do planeta, abrigando estimados 50% de todas as espécies conhecidas.",
+    "ajuda": "A formação vegetal descrita como 'floresta' pode ser tropical úmida (densa, sempre verde), tropical seca (decídua na estação seca) ou de coníferas (boreais). Identifique as características que a diferenciam de outras formações, como savanas ou campos."
   },
   {
     "id": 7,
@@ -123,7 +129,8 @@
       "a existência e a variedade das comunidades ﬂorestais são condicionadas, principalmente, por fatores de precipitação."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "Com o aumento da precipitação, a vegetação torna-se mais densa e as espécies arbóreas dominam sobre as gramíneas e arbustos. Acima de 1.000-1.500 mm anuais, surgem florestas densas; abaixo de 250 mm, predominam desertos. Nos níveis intermediários (savanas, cerrado, caatinga), coexistem estratos herbáceos, arbustivos e arbóreos — criando a diversidade de fisionomias vegetais.",
+    "ajuda": "O diagrama relaciona precipitação com a distribuição das principais formações vegetais. Quanto maior a precipitação, mais exuberante e densa tende a ser a vegetação. Identifique quais biomas se situam nos extremos do eixo de pluviosidade."
   },
   {
     "id": 8,
@@ -142,12 +149,13 @@
       "Sob condições naturais, tanto os organismos animais como vegetais estão programados geneticamente para sobreviver num conjunto de condições ambientais que têm certos limites de tolerância quanto às condições de temperatura, umidade, acesso a nutrientes, etc."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Os biomas são grandes conjuntos de ecossistemas com características de vegetação, clima, fauna e solo semelhantes. Cada bioma pode conter múltiplos ecossistemas distintos — por exemplo, o bioma Amazônia engloba várzeas, terras firmes, igapós e campinaranas. A heterogeneidade interna é uma característica dos biomas, não um erro de definição.",
+    "ajuda": "A biosfera é a camada da Terra habitada pelos seres vivos. A questão pede a alternativa INCORRETA. Pense no que é correto: a biosfera se estende da profundidade dos oceanos à atmosfera; é formada por todos os ecossistemas; é influenciada e influencia os outros compartimentos do sistema Terra."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/129/p29q9.png",
@@ -160,12 +168,13 @@
       "O desenvolvimento ﬂorestal foi consequência da queda da temperatura."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "As modificações ambientais de uma região ao longo do tempo geológico podem ser inferidas pela análise de pólen fóssil, sedimentos e fauna. A diminuição da aridez ao longo dos últimos 20.000 anos em determinada região indica aumento das chuvas — possivelmente relacionado ao fim da última glaciação e redistribuição das massas de ar globais no Holoceno.",
+    "ajuda": "O esquema representa modificações ambientais ao longo do tempo, provavelmente mostrando a degradação de um bioma. Identifique a sequência de mudanças (desmatamento → erosão → perda de biodiversidade) e avalie qual alternativa as descreve corretamente."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(UFMG) Todas as afirmativas sobre as savanas estão corretas, EXCETO:",
@@ -177,6 +186,7 @@
       "As savanas são formações arbóreo-arbustivas e herbáceas abertas permitindo que os raios solares cheguem até o solo."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As savanas (incluindo o Cerrado e as savanas africanas) têm alta biodiversidade vegetal e faunística, adaptada à alternância de chuva e seca. A fauna africana das savanas (leões, elefantes, girafas, zebras) é extraordinariamente diversa. Afirmar que a savana tem 'fauna pobre e pouco diversificada' é incorreto — o bioma abriga algumas das concentrações de megafauna mais ricas do planeta.",
+    "ajuda": "As savanas (cerrados, campos e similares) são vegetações tropicais com estação seca definida, solo pobre e vegetação adaptada ao fogo. A questão pede a alternativa INCORRETA. Pense: as savanas têm alta biodiversidade, mas menor densidade florestal que as florestas tropicais."
   }
 ]

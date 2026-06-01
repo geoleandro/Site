@@ -48,7 +48,8 @@
       "regulamentação funcional."
     ],
     "correta": 3,
-    "comentario": "<p><b>a) Incorreta.</b> As associações sindicais influenciam na defesa dos interesses, mas não decidem contratações.</p><p><b>b) Incorreta.</b> Fatores políticos/eleitorais não são mencionados como condição de inclusão no texto.</p><p><b>c) Incorreta.</b> Migrações não são centrais para a inclusão e podem até complicar relações trabalhistas.</p><p><b>d) Correta.</b> A fase atual do capitalismo exige maior qualificação profissional para o sistema produtivo moderno.</p><p><b>e) Incorreta.</b> Regulamentações funcionais ligam-se ao Estado, não à capacidade técnica de contratação.</p>"
+    "comentario": "<p><b>a) Incorreta.</b> As associações sindicais influenciam na defesa dos interesses, mas não decidem contratações.</p><p><b>b) Incorreta.</b> Fatores políticos/eleitorais não são mencionados como condição de inclusão no texto.</p><p><b>c) Incorreta.</b> Migrações não são centrais para a inclusão e podem até complicar relações trabalhistas.</p><p><b>d) Correta.</b> A fase atual do capitalismo exige maior qualificação profissional para o sistema produtivo moderno.</p><p><b>e) Incorreta.</b> Regulamentações funcionais ligam-se ao Estado, não à capacidade técnica de contratação.</p>",
+    "ajuda": "Lembre-se de que as crises no capitalismo, segundo David Harvey, funcionam como mecanismos de reestruturação produtiva. Pense em qual condição o trabalhador precisa reunir para não ser descartado nesse processo de renovação constante."
   },
   {
     "id": 3,
@@ -73,7 +74,8 @@
       "consolidação do conhecimento topográfico como campo acadêmico."
     ],
     "correta": 2,
-    "comentario": "<p>A Geografia foi fundamental no século XIX como ciência estratégica para a catalogação de recursos e conquista de territórios no colonialismo.</p>"
+    "comentario": "<p>A Geografia foi fundamental no século XIX como ciência estratégica para a catalogação de recursos e conquista de territórios no colonialismo.</p>",
+    "ajuda": "O texto é do século XIX, época em que a Geografia servia diretamente aos interesses dos impérios coloniais. Identifique qual expressão do discurso revela essa instrumentalização da ciência a favor da expansão territorial europeia."
   },
   {
     "id": 4,
@@ -95,7 +97,8 @@
       "A existência de “dois mundos”: um produtor de tecnologias e outro fornecedor de matérias-primas."
     ],
     "correta": 4,
-    "comentario": "<p>A charge critica a desigualdade onde um polo detém a tecnologia e outro é submetido ao fornecimento de recursos básicos.</p>"
+    "comentario": "<p>A charge critica a desigualdade onde um polo detém a tecnologia e outro é submetido ao fornecimento de recursos básicos.</p>",
+    "ajuda": "A charge sobre a Divisão Internacional do Trabalho mostra dois mundos opostos: um que cria e um que fornece. Concentre-se em qual alternativa descreve corretamente essa assimetria entre países produtores de tecnologia e exportadores de matéria-prima."
   },
   {
     "id": 5,
@@ -118,7 +121,8 @@
       "especialização e flexibilidade profissional."
     ],
     "correta": 2,
-    "comentario": "<p>A globalização integra mercados e comunicações (homogeneização), mas também gera reações de preservação de identidades locais (diversidade).</p>"
+    "comentario": "<p>A globalização integra mercados e comunicações (homogeneização), mas também gera reações de preservação de identidades locais (diversidade).</p>",
+    "ajuda": "A globalização é contraditória: ao mesmo tempo que integra mercados e difunde padrões culturais, ela provoca resistência e reafirmação de identidades locais. Identifique qual par de conceitos melhor traduz essa tensão expressa na imagem e no texto."
   },
   {
     "id": 6,
@@ -143,7 +147,8 @@
       "pela manutenção de estoques de larga escala."
     ],
     "correta": 2,
-    "comentario": "<p>Modelos modernos como o Toyotismo exigem que o trabalhador seja multifuncional e esteja em constante qualificação.</p>"
+    "comentario": "<p>Modelos modernos como o Toyotismo exigem que o trabalhador seja multifuncional e esteja em constante qualificação.</p>",
+    "ajuda": "O Toyotismo é o modelo que exige o trabalhador polivalente e em constante aprimoramento. Analise qual alternativa descreve corretamente essa exigência de qualificação contínua no contexto da produção pós-fordista."
   },
   {
     "id": 7,
@@ -190,7 +195,8 @@
       "a tecnosfera exerce papel pouco significativo no processo de transformação da superfície."
     ],
     "correta": 3,
-    "comentario": "<p>A afirmação incorreta é a D, pois a tecnosfera hoje é a principal responsável pela alteração acelerada da superfície do planeta.</p>"
+    "comentario": "<p>A afirmação incorreta é a D, pois a tecnosfera hoje é a principal responsável pela alteração acelerada da superfície do planeta.</p>",
+    "ajuda": "A tecnosfera, conceito importante na Geografia, representa a porção do espaço transformada pela tecnologia humana. A questão pede a afirmativa INCORRETA — avalie com atenção qual afirmação subestima o papel da tecnosfera na transformação do planeta."
   },
   {
     "id": 9,
@@ -212,7 +218,8 @@
       "Financeiro, imperialista, comercial e informacional."
     ],
     "correta": 1,
-    "comentario": "<p>A ordem histórica correta é: Comercial (Navegações), Industrial (Máquinas), Financeiro (Bancos) e Informacional (Tecnologia/Dados).</p>"
+    "comentario": "<p>A ordem histórica correta é: Comercial (Navegações), Industrial (Máquinas), Financeiro (Bancos) e Informacional (Tecnologia/Dados).</p>",
+    "ajuda": "O capitalismo passou por fases históricas bem definidas. Pense na ordem cronológica: a primeira fase privilegiou as trocas comerciais intercontinentais, depois veio a máquina a vapor, então o capital financeiro, e por último a era digital."
   },
   {
     "id": 10,
@@ -237,6 +244,7 @@
       "Em cada lugar a intensidade da transformação pode ser diferente, porém a ação humana tende a resultar em algum nível de substituição."
     ],
     "correta": 4,
-    "comentario": "<p>Milton Santos explica que o espaço é transformado de natural em artificial conforme as necessidades e técnicas de cada sociedade, gerando substituição do meio.</p>"
+    "comentario": "<p>Milton Santos explica que o espaço é transformado de natural em artificial conforme as necessidades e técnicas de cada sociedade, gerando substituição do meio.</p>",
+    "ajuda": "Milton Santos argumenta que o espaço geográfico é sucessivamente artificializado pela ação humana. Considere que diferentes lugares e sociedades passam por esse processo em ritmos distintos, e avalie qual alternativa melhor captura essa ideia."
   }
 ]

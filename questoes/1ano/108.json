@@ -2,7 +2,7 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/108/p8q1.png",
@@ -15,15 +15,16 @@
       "I - Núcleo interno, II - Manto, III - Núcleo externo e IV – Crosta."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A Terra é dividida em quatro camadas concêntricas: crosta (externa, fina, sólida), manto (intermediário, semifluido), núcleo externo (líquido, ferro e níquel) e núcleo interno (sólido, ferro e níquel, alta pressão). O núcleo interno é sólido apesar das temperaturas altíssimas (~5.000°C) porque a pressão colossal impede a fusão dos metais.",
+    "ajuda": "A Terra é formada por camadas concêntricas com composições e estados físicos diferentes. Da superfície para o interior: crosta (sólida), manto (sólido e plástico) e núcleo (externo líquido e interno sólido). Identifique cada camada pela descrição de sua composição e comportamento."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2021",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2021) A primeira coluna indica a sequência correta das Eras Geológicas. Relacione a segunda coluna mostrando os principais eventos que ocorreram em cada período:\n\nA sequência correta está em:",
+    "pergunta": "A primeira coluna indica a sequência correta das Eras Geológicas. Relacione a segunda coluna mostrando os principais eventos que ocorreram em cada período:\n\nA sequência correta está em:",
     "alternativas": [
       "B – D – E – A – C.",
       "A – E – D – C – B.",
@@ -31,7 +32,8 @@
       "C – E – D – B - A."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As eras geológicas dividem a história da Terra em: Pré-Cambriano (formação do planeta e primeiros organismos), Paleozoica (explosão de vida, peixes, anfíbios), Mesozoica (dinossauros, pangeia se fragmenta) e Cenozoica (mamíferos, primatas, humanos). O surgimento da espécie humana (Homo sapiens) ocorreu há apenas ~300.000 anos — um piscar de olhos na escala geológica.",
+    "ajuda": "As Eras Geológicas se sucedem em ordem cronológica: Pré-Cambriana (mais antiga), Paleozoica, Mesozoica e Cenozoica (a mais recente). Associe cada era aos seres vivos que marcaram seu surgimento ou extinção."
   },
   {
     "id": 3,
@@ -49,12 +51,13 @@
       "mesozoica e cenozoica."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A litosfera corresponde à crosta terrestre e à parte superior do manto, formando as placas tectônicas. Abaixo dela, no manto, existe o magma — rocha fundida que, quando expulsa em erupções vulcânicas, chama-se lava. A diferença entre magma e lava é simplesmente a localização: magma está dentro da Terra; lava, na superfície.",
+    "ajuda": "A parte sólida e rígida externa da Terra é a litosfera, composta pela crosta e pela parte superior do manto. O material em fusão que origina lavas vulcânicas provém da astenosfera, camada plástica do manto superior."
   },
   {
     "id": 4,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/108/p8q4.png",
@@ -66,15 +69,16 @@
       "foram reconhecidas três camadas principais, com densidade, estado físico, temperatura, pressão e espessuras iguais."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O núcleo interno da Terra é sólido e composto principalmente de ferro e níquel. Embora a temperatura no núcleo seja superior à de fusão desses metais (~5.000°C), a pressão exercida pelas camadas superiores é tão intensa que mantém o ferro em estado sólido. Já o núcleo externo é líquido e sua circulação gera o campo magnético terrestre.",
+    "ajuda": "As camadas da Terra se diferenciam por temperatura, pressão, composição química e estado físico da matéria. Ao analisar uma imagem das camadas, verifique se cada afirmativa está coerente com as características de crosta, manto e núcleo."
   },
   {
     "id": 5,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) Foi na mesma era, a ________________, que ocorreu o surgimento dos atuais continentes e da espécie humana, porém em períodos diferentes. A fragmentação das terras emersas, tais quais nós as conhecemos agora, formaram-se no período _______________, há 71 milhões de anos, enquanto os primeiros humanos surgiram somente no ______________, há cerca de 1 milhão de anos.\n\nA alternativa que apresenta os termos que completam corretamente as lacunas do texto é:",
+    "pergunta": "Foi na mesma era, a ________________, que ocorreu o surgimento dos atuais continentes e da espécie humana, porém em períodos diferentes. A fragmentação das terras emersas, tais quais nós as conhecemos agora, formaram-se no período _______________, há 71 milhões de anos, enquanto os primeiros humanos surgiram somente no ______________, há cerca de 1 milhão de anos.\n\nA alternativa que apresenta os termos que completam corretamente as lacunas do texto é:",
     "alternativas": [
       "Paleozoica, Primitivo e Cambriano.",
       "Cenozoica, Terciário e Quaternário.",
@@ -83,16 +87,17 @@
       "Cenozoica, Permiano, Carbonífero."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A Era Cenozoica, iniciada há ~65 milhões de anos após a extinção dos dinossauros, divide-se em Período Terciário (Paleogeno e Neogeno) e Quaternário. No Terciário, os mamíferos diversificaram-se e os continentes assumiram formas atuais. No Quaternário, surgiram os primeiros humanos e ocorreram as glaciações do Pleistoceno.",
+    "ajuda": "A Era Mesozoica foi marcada pelo surgimento e separação dos continentes a partir da Pangeia. Pense em qual evento geológico marcante está associado à Era mencionada na questão, relacionando os continentes atuais à sua configuração original."
   },
   {
     "id": 6,
     "instituicao": "",
-    "ano": "",
+    "ano": "2022",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/108/p8q6.png",
-    "pergunta": "(2022) Observe e responda:\n\nPor que a imagem acima é incoerente?",
+    "pergunta": "Observe e responda:\n\nPor que a imagem acima é incoerente?",
     "alternativas": [
       "Em tempos pré-históricos, os homens não caçavam répteis.",
       "Os dinossauros não eram presas fáceis para os humanos e dificilmente eram capturados.",
@@ -101,12 +106,13 @@
       "Os dinossauros viveram na era Paleozoica e os seres humanos na era primária em diante, que são períodos geológicos distintos."
     ],
     "correta": 3,
-    "comentario": "<p> <strong>Comentário:</strong></p>\n<p> A imagem é incoerente porque os seres humanos surgiram no período quaternário da era Cenozoica,\r\n\t\t\t\t\tenquanto\r\n\t\t\t\t\tos dinossauros foram extintos uma era antes, na Mesozoica, durante o período Cretáceo. </p>"
+    "comentario": "<p> <strong>Comentário:</strong></p>\n<p> A imagem é incoerente porque os seres humanos surgiram no período quaternário da era Cenozoica,\r\n\t\t\t\t\tenquanto\r\n\t\t\t\t\tos dinossauros foram extintos uma era antes, na Mesozoica, durante o período Cretáceo. </p>",
+    "ajuda": "A incoerência na imagem provavelmente está relacionada à representação incorreta das proporções ou da composição das camadas terrestres. Verifique se a espessura da crosta, do manto e do núcleo está corretamente representada em relação ao tamanho total do planeta."
   },
   {
     "id": 7,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(UFPE) – Leia as alternativas abaixa e assinale a opção correta:\n\n( ) O estudo das camadas internas da Terra não pode ser realizado por processos de investigações diretas, tendo-se que recorrer a métodos indiretos de observação, o que dificulta o seu conhecimento.\n\n( ) os especialistas dispõem de aparelhos muito sensíveis, chamados sismógrafos, capazes de registrar com grande precisão as vibrações da Terra, medindo a intensidade e localizando a origem destas vibrações.\n\n( ) O estudo detalhado de sismogramas, iniciado desde os primeiros anos do século XX, demonstra que o globo se divide, da superfície para o interior, nas seguintes unidades principais: crosta, manto e núcleo.\n\n( ) A crosta terrestre é a camada mais externa da Terra e encontra-se consolidada. Nela os elementos químicos distribuem-se de forma homogênea, havendo pequenas variações em peso e volume.\n\n( ) A Terra não apresenta a mesma densidade em todas as camadas, isto é, a densidade diminui de acordo com a profundidade.\n\nA sequência correta é:",
@@ -118,7 +124,8 @@
       "VVVVV."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O estudo das camadas internas da Terra é feito indiretamente por meio de ondas sísmicas — geradas por terremotos ou explosões controladas. Essas ondas refratam e refletem ao atravessar materiais com densidades diferentes, revelando a composição e estado (sólido/líquido) de cada camada. É a sismologia que nos permite 'ver' o interior do planeta.",
+    "ajuda": "A geologia interna da Terra é estudada principalmente por meio de ondas sísmicas, que se propagam de forma diferente conforme o estado (sólido, líquido ou gasoso) e a composição de cada camada. Leia as alternativas e verifique quais contradizem esse conhecimento."
   },
   {
     "id": 8,
@@ -136,7 +143,8 @@
       "litosfera, manto inferior e hidrosfera."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A atmosfera (gases), biosfera (seres vivos), hidrosfera (águas) e litosfera (rochas) são os quatro grandes sistemas da Terra que interagem continuamente. A biosfera, por exemplo, depende da atmosfera para o oxigênio, da hidrosfera para a água e da litosfera para os nutrientes do solo. O sistema climático emerge da interação entre todos eles.",
+    "ajuda": "O sistema Terra é composto por subsistemas interconectados: litosfera, hidrosfera, atmosfera e biosfera. Pense em como a dinâmica interna da Terra (vulcanismo, tectonismo) se relaciona com os processos externos (erosão, clima, vida)."
   },
   {
     "id": 9,
@@ -155,7 +163,8 @@
       "Somente as afirmativas II, III e IV são corretas."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "As placas tectônicas movem-se sobre a astenosfera (parte superior do manto, parcialmente fundida) com velocidades de 2 a 15 cm/ano. Esse movimento, chamado deriva continental, é responsável por terremotos, vulcões, formação de montanhas e abertura de oceanos. A teoria das placas tectônicas, consolidada nos anos 1960, unificou toda a geologia.",
+    "ajuda": "Para identificar as estruturas geológicas a partir de uma figura, observe a posição relativa das camadas: a crosta é a camada mais superficial e fina; o manto é a mais espessa; o núcleo está no centro e é dividido em externo (líquido) e interno (sólido)."
   },
   {
     "id": 10,
@@ -174,6 +183,7 @@
       "II, III e IV."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A crosta terrestre possui espessura variável: oceânica (~5-10 km, mais densa, basáltica) e continental (~30-50 km, menos densa, granítica). A crosta oceânica afunda sob a continental nas zonas de subducção, reciclando material. Já a continental é mais antiga e preservada — os escudos cristalinos têm rochas com mais de 3 bilhões de anos.",
+    "ajuda": "As afirmativas sobre a estrutura interna da Terra devem ser avaliadas com base em dados conhecidos: a crosta oceânica é mais fina e densa que a continental; o manto é predominantemente sólido mas com comportamento plástico; o núcleo externo é líquido. Verifique cada proposição."
   }
 ]

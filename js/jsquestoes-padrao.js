@@ -91,7 +91,7 @@ function renderizarQuestao() {
             
             <p class="w3-large w3-padding">${q.pergunta}</p>
 
-        
+            ${gerarBotaoDica(q)}
 
             <div class="w3-margin-top grupo-respostas">
                 ${gerarAlternativas(q.alternativas)}

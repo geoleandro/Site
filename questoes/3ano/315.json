@@ -16,7 +16,8 @@
       "a presença de fixos, como algumas instalações de armazenagem e conexão, influencia a orientação de fluxos e dá aos EUA uma posição de destaque no contexto geopolítico."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "Os EUA controlam grande parte da infraestrutura física da internet: cabos submarinos, servidores, hospedagens e protocolos. Isso dá à NSA capacidade de monitorar tráfego global de dados. A internet, aparentemente etérea, depende de infraestrutura física (fixos) que determina quem controla os fluxos de informação.",
+    "ajuda": "A infraestrutura de cabos submarinos e bases militares define a geografia do poder no mundo digital. Pense em como a distribuição desses fixos no espaço revela quais países controlam os fluxos de informação e dados no mundo contemporâneo."
   },
   {
     "id": 2,
@@ -33,16 +34,17 @@
       "à medida em que se ampliam a coleta e o tratamento massivo de dados das sociedades, países de todos os continentes estão adotando robustas políticas de infraestrutura digital."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A concentração de data centers no Norte Global (EUA e Europa Ocidental) significa que dados de países do Sul são armazenados e processados em jurisdições estrangeiras. Isso cria vulnerabilidades de soberania digital: quem controla os dados controla informações estratégicas, econômicas e políticas de outros países.",
+    "ajuda": "Os data centers estão concentrados no Norte Global (EUA e Europa) porque requerem energia barata, infraestrutura robusta e ambiente jurídico favorável. Pense em o que essa concentração revela sobre as desigualdades do capitalismo digital."
   },
   {
     "id": 3,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "“A tecnologia não é apenas um canal para se comunicar, cuja comunicação traz o significado de ação recíproca que ocorre entre emissor e receptor da mensagem, mas sim faz parte do ato comunicativo, estando integrada a ele. É uma nova maneira de aprender e agir, é construir novos alicerces na forma de comunicar e conhecer. Com isso, a lógica da atual sociedade consolida-se para a lógica das redes”. FORESTI, A. A era digital: apropriação tecnológica e inclusão digital. Oficina da Net, ago. 2013. Disponível em: http://www.oficinadanet.com.br. Acesso em: 12 jun. 2015.",
-    "pergunta": "(2020)\n\nA integração da tecnologia com a construção das sociedades e do espaço geográfico, no momento atual da história, assinala o conceito de:",
+    "pergunta": "A integração da tecnologia com a construção das sociedades e do espaço geográfico, no momento atual da história, assinala o conceito de:",
     "alternativas": [
       "espaço digital.",
       "espacialidade em rede.",
@@ -51,15 +53,16 @@
       "espaço físico-virtual."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O 'Meio Técnico-Científico-Informacional' é o conceito de Milton Santos para o período atual: o espaço geográfico é profundamente marcado pela fusão entre ciência, tecnologia e informação. Telecomunicações, internet e automação transformaram a produção, o consumo e a própria organização do território.",
+    "ajuda": "O período atual da história é caracterizado pela fusão entre ciência, tecnologia e informação no espaço geográfico. Esse conceito, desenvolvido por Milton Santos, descreve o meio em que vivemos hoje. Identifique o termo correto."
   },
   {
     "id": 4,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) As redes geográficas são definidas:",
+    "pergunta": "As redes geográficas são definidas:",
     "alternativas": [
       "a partir da relação do espaço e o poder do Estado.",
       "pelo aspecto visível das suas formas no espaço geográfico.",
@@ -67,7 +70,8 @@
       "por meio do grau de desenvolvimento de um país."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As redes geográficas conectam pontos (lugares) por meio de linhas (fluxos). A definição correta enfatiza que as redes são caracterizadas pelos locais conectados entre si — seja por cabos de fibra ótica, rodovias, fluxos financeiros ou redes sociais. É essa conectividade que estrutura o espaço contemporâneo.",
+    "ajuda": "As redes geográficas conectam lugares, pessoas e fluxos de informação, capital e mercadorias. Elas definem a organização do espaço contemporâneo. Pense em qual definição captura melhor a essência das redes na estruturação do espaço."
   },
   {
     "id": 5,
@@ -87,7 +91,7 @@
     ],
     "correta": 3,
     "ajuda": "O texto fala sobre como o mundo econômico não é mais organizado em camadas bem definidas, onde grandes centros urbanos se conectavam apenas com economias adjacentes. Em vez disso, tudo está mesclado e interconectado, com interdependências de curto e longo alcance que não podem ser separadas. Isso sugere que a complexidade dos espaços urbanos contemporâneos é resultado da articulação de redes multiescalares, ou seja, conexões que ocorrem em diferentes escalas geográficas, desde o local até o global.",
-    "comentario": ""
+    "comentario": "A complexidade dos espaços urbanos contemporâneos resulta da articulação de redes em múltiplas escalas (multiescalar): fluxos locais e globais se interpenetram. Um bairro periférico de São Paulo está conectado a cadeias produtivas globais pelo consumo, enquanto decisões tomadas em Nova York afetam o emprego local."
   },
   {
     "id": 6,
@@ -106,7 +110,8 @@
       "Empresas do ramo de serviços têm apresentado crescimento acentuado, o que não é observado em relação a empresas do ramo de entretenimento."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A internet está em constante evolução: novas plataformas (TikTok, Zoom) surgem e superam outras (Orkut, MSN) em questão de anos. Em 1 minuto de 2017, ocorriam mais de 3 milhões de pesquisas no Google, 500 mil tweets e 156 milhões de e-mails — o volume de dados cresce exponencialmente.",
+    "ajuda": "A internet está em constante expansão e transformação, com volumes crescentes de dados trafegando a cada minuto. Ao analisar os números sobre as principais plataformas digitais, identifique qual afirmativa reflete corretamente as tendências observadas."
   },
   {
     "id": 7,
@@ -123,7 +128,8 @@
       "A globalização permite que a inovação tecnológica seja difundida de forma equilibrada aos países menos desenvolvidos."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A globalização promove a abertura de mercados e integra economias, mas não inclui todos os lugares e grupos sociais. Ela exclui regiões, atividades e populações que não são interessantes para o capital global — criando o que Milton Santos chamou de 'globalização perversa': integração para os ricos, exclusão para os pobres.",
+    "ajuda": "A globalização não apenas integra economias, mas também uniformiza padrões culturais e de consumo. No entanto, ela gera reações de resistência cultural. Identifique qual afirmativa descreve corretamente os efeitos culturais da globalização."
   },
   {
     "id": 8,
@@ -143,7 +149,7 @@
     ],
     "correta": 3,
     "ajuda": "Imagina um carro esportivo sendo feito, mas cada pedacinho dele está acontecendo em lugares diferentes ao redor do mundo. Algumas partes são financiadas em um país, desenhadas em outro, montadas em vários lugares e até a propaganda é feita em diferentes países. Isso tudo precisa de um sistema que conecte tudo isso de forma bem organizada, senão não daria certo, né? Então, essa organização tem que ser capaz de juntar todas as etapas do carro esportivo, desde o começo até a propaganda, de um jeito que tudo funcione certinho. E aí, o texto também fala sobre os eletrônicos modernos e a propaganda global, mostrando como a tecnologia é super importante nesse processo. Então, uma dica para descobrir a resposta é pensar em uma organização que consiga lidar com toda essa mistura de jeito eficiente e bem coordenado.",
-    "comentario": ""
+    "comentario": "A produção global de um único produto (como o carro do texto) envolve dezenas de países e fábricas coordenadas em tempo real. Isso só é possível graças à organização em rede (cadeias produtivas transnacionais) e às tecnologias de informação e comunicação que permitem coordenação simultânea entre diferentes continentes."
   },
   {
     "id": 9,
@@ -162,7 +168,8 @@
       "da diminuição dos fluxos industriais e comerciais."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As redes geográficas se materializam por meio da expansão das multinacionais, que instalam unidades em diferentes países conectadas por fluxos de capital, tecnologia e informação. Essa expansão expressa fisicamente a organização do espaço em rede, onde as decisões centralizadas orientam operações descentralizadas.",
+    "ajuda": "As redes geográficas se expressam materialmente por meio de infraestruturas físicas que permitem a circulação de informações, capitais e pessoas. Pense em qual tipo de infraestrutura materializa as redes no espaço contemporâneo."
   },
   {
     "id": 10,
@@ -181,7 +188,7 @@
       "da diminuição dos fluxos industriais e comerciais."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "As cidades globais são os nós mais importantes das redes geográficas contemporâneas: concentram tomada de decisões, serviços avançados, fluxos financeiros e conexões internacionais. Sua dinamização informacional — bolsas, bancos, consultorias — as torna centros de comando do capitalismo globalizado.",
+    "ajuda": "As redes geográficas contemporâneas expressam-se através de múltiplas infraestruturas. Pense em qual tipo de rede material — de transporte, comunicação ou produção — melhor representa a expansão das conexões globais."
   }
-  
 ]

@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  MODELO-BATALHA.HTML — Duvid Aventura Geográfica             ║
+  ║  Sistema de batalha por turnos estilo RPG/SNES               ║
+  ║                                                              ║
+  ║  USO:                                                        ║
+  ║  modelo-batalha.html?id=101                                  ║
+  ║    → carrega questoes/1ano/101.json                          ║
+  ║                                                              ║
+  ║  PARÂMETROS OPCIONAIS:                                       ║
+  ║  &heroi=Explorador                                           ║
+  ║  &inimigo=Furacão%20Geográfico                               ║
+  ║  &heroi_idle=../sprites/heroi/idle.gif                       ║
+  ║  &heroi_ataque=../sprites/heroi/attack.gif                   ║
+  ║  &heroi_dano=../sprites/heroi/damage.gif                     ║
+  ║  &heroi_vitoria=../sprites/heroi/victory.gif                 ║
+  ║  &inimigo_idle=../sprites/inimigo/idle.gif                   ║
+  ║  &inimigo_ataque=../sprites/inimigo/attack.gif               ║
+  ║  &inimigo_dano=../sprites/inimigo/damage.gif                 ║
+  ║                                                              ║
+  ║  SPRITES:  200×200px, fundo transparente (Aseprite)          ║
+  ║  STACK:    HTML + CSS + JS puro · w3.css · sem frameworks    ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Batalha Geográfica — Duvid">
+
+  <title>⚔️ Batalha Geográfica</title>
+
+  <!-- W3.CSS base -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Fonte pixel para a arena -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+  <!-- Confetti para celebrações -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <link rel="shortcut icon" href="../../../fotoIndex/favicon.ico">
+
+  <!-- Duvid Engine -->
+  <script src="../../../js/duvid-cache.js" defer></script>
+  <script src="../../../js/duvid-db.js" defer></script>
+  <script src="../../../js/duvid-audio.js" defer></script>
+
+  <style>
+    /* ============================================================
+       FONTES & BASE
+    ============================================================ */
+    @font-face {
+      font-family: 'pixel';
+      src: url('../../../estilos/FreePixel.woff');
+    }
+
+    :root {
+      --cor-arena-ceu:   #0d1b2a;
+      --cor-arena-meio:  #1e3a5f;
+      --cor-chao:        #2d4a1e;
+      --cor-chao-alt:    #3d6128;
+      --cor-hp-verde:    #22c55e;
+      --cor-hp-amarelo:  #eab308;
+      --cor-hp-vermelho: #ef4444;
+      --cor-ataque:      #ef4444;
+      --cor-acerto:      #16a34a;
+      --cor-erro:        #dc2626;
+      --cor-painel:      #f8fafc;
+      --dur-animacao:    1200ms;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ============================================================
+       ARENA — FUNDO
+    ============================================================ */
+    #arena-batalha {
+      background: linear-gradient(180deg,
+        var(--cor-arena-ceu) 0%,
+        var(--cor-arena-meio) 55%,
+        var(--cor-chao) 100%
+      );
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 270px;
+      padding: 10px 12px 0;
+    }
+
+    /* Estrelas no céu */
+    #arena-batalha::before {
+      content: '✦  ★  ✦  ★  ✦  ★  ✦  ★  ✦';
+      position: absolute;
+      top: 10px;
+      left: 0; right: 0;
+      text-align: center;
+      color: rgba(255,255,255,0.12);
+      font-size: 11px;
+      letter-spacing: 8px;
+      pointer-events: none;
+    }
+
+    /* Chão pixelado */
+    #arena-batalha::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 40px;
+      background: repeating-linear-gradient(
+        to right,
+        var(--cor-chao)     0, var(--cor-chao)     20px,
+        var(--cor-chao-alt) 20px, var(--cor-chao-alt) 40px
+      );
+      border-top: 3px solid #4a7a32;
+    }
+
+    /* ============================================================
+       SLOTS DE PERSONAGEM
+    ============================================================ */
+    .slot-personagem {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    /* Painel de HP acima do sprite */
+    .hp-panel {
+      background: rgba(0,0,0,0.72);
+      border: 2px solid #334155;
+      border-radius: 5px;
+      padding: 5px 8px;
+      margin-bottom: 4px;
+      min-width: 140px;
+    }
+
+    .hp-nome {
+      font-family: 'VT323', 'pixel', monospace;
+      font-size: 17px;
+      color: #e2e8f0;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 150px;
+    }
+
+    .hp-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .hp-barra-container {
+      flex: 1;
+      height: 10px;
+      background: #1e293b;
+      border: 1px solid #475569;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .hp-barra-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.5s ease, background-color 0.5s ease;
+    }
+
+    .hp-num {
+      font-family: 'VT323', monospace;
+      font-size: 14px;
+      color: #94a3b8;
+      min-width: 24px;
+      text-align: right;
+    }
+
+    /* Coraçõezinhos de vida */
+    .coracoes-container {
+      margin-top: 3px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .coracao { display: inline-block; transition: filter 0.3s; }
+    .coracao.perdido { filter: grayscale(1); opacity: 0.25; }
+
+    /* Sprites */
+    .sprite-char {
+      display: block;
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+
+    /* Inimigo espelhado (olha para a esquerda) */
+    #sprite-inimigo {
+      transform: scaleX(-1);
+    }
+
+    /* ============================================================
+       ANIMAÇÕES
+    ============================================================ */
+
+    /* Shake herói (à esquerda) */
+    @keyframes shakeHeroi {
+      0%, 100% { transform: translateX(0); }
+      20%       { transform: translateX(-9px); }
+      40%       { transform: translateX(7px); }
+      60%       { transform: translateX(-5px); }
+      80%       { transform: translateX(3px); }
+    }
+
+    /* Shake inimigo (espelhado) */
+    @keyframes shakeInimigo {
+      0%, 100% { transform: scaleX(-1) translateX(0); }
+      20%       { transform: scaleX(-1) translateX(-9px); }
+      40%       { transform: scaleX(-1) translateX(7px); }
+      60%       { transform: scaleX(-1) translateX(-5px); }
+      80%       { transform: scaleX(-1) translateX(3px); }
+    }
+
+    .shake-heroi   { animation: shakeHeroi   0.5s ease; }
+    .shake-inimigo { animation: shakeInimigo 0.5s ease; }
+
+    /* Número de dano flutuante */
+    .damage-float {
+      position: absolute;
+      font-family: 'VT323', monospace;
+      font-size: 30px;
+      font-weight: bold;
+      pointer-events: none;
+      z-index: 20;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: floatUp 1.3s ease forwards;
+    }
+
+    .damage-float.dano { color: #f87171; text-shadow: 0 0 8px #ef4444; }
+    .damage-float.cura { color: #4ade80; text-shadow: 0 0 8px #22c55e; }
+
+    @keyframes floatUp {
+      0%   { opacity: 1; transform: translateX(-50%) translateY(0)   scale(1.4); }
+      100% { opacity: 0; transform: translateX(-50%) translateY(-55px) scale(0.8); }
+    }
+
+    /* Piscar ao tomar dano */
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      30%       { opacity: 0.1; }
+      60%       { opacity: 0.8; }
+    }
+    .blink { animation: blink 0.5s ease 2; }
+
+    /* ============================================================
+       LOG CENTRAL
+    ============================================================ */
+    #log-batalha {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      background: rgba(0,0,0,0.78);
+      border: 1px solid #475569;
+      border-radius: 6px;
+      padding: 4px 14px;
+      font-family: 'VT323', monospace;
+      font-size: 17px;
+      color: #cbd5e1;
+      white-space: nowrap;
+      max-width: 220px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+
+    /* ============================================================
+       BARRA DE PROGRESSO INIMIGO (vermelho = vida restante do inimigo)
+    ============================================================ */
+    #barra-progresso-wrap {
+      height: 6px;
+      background: #1e293b;
+      border-bottom: 2px solid #0f172a;
+    }
+
+    #barra-progresso-inimigo {
+      height: 100%;
+      background: var(--cor-hp-vermelho);
+      transition: width 0.6s ease;
+    }
+
+    /* ============================================================
+       PAINEL DE QUESTÃO
+    ============================================================ */
+    #painel-questao {
+      background: var(--cor-painel);
+      color: #0f172a;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 14px 16px 120px;
+    }
+
+    .batalha-label {
+      font-family: 'VT323', monospace;
+      font-size: 18px;
+      color: #64748b;
+    }
+
+    /* Texto de apoio (citação) */
+    .bloco-apoio {
+      background: #f1f5f9;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    .bloco-apoio p { margin: 6px 0; }
+
+    /* Pergunta */
+    .pergunta-batalha {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1e293b;
+      line-height: 1.55;
+      margin: 0 0 14px;
+    }
+
+    /* Alternativas */
+    .opcao-batalha {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      background: white;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      font-family: inherit;
+      color: #0f172a;
+      line-height: 1.4;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
+    }
+
+    .opcao-batalha:hover:not(:disabled) {
+      background: #f0f9ff;
+      border-color: #38bdf8;
+      transform: translateX(3px);
+    }
+
+    .opcao-batalha.selecionada {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1d4ed8;
+    }
+
+    .opcao-batalha.correta {
+      background: #f0fdf4;
+      border-color: #22c55e;
+      color: #166534;
+    }
+
+    .opcao-batalha.errada {
+      background: #fef2f2;
+      border-color: #ef4444;
+      color: #991b1b;
+      opacity: 0.6;
+    }
+
+    .opcao-batalha:disabled { cursor: not-allowed; }
+
+    /* Botão ATACAR */
+    #btn-atacar {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-top: 14px;
+      background: var(--cor-ataque);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-family: 'VT323', monospace;
+      font-size: 28px;
+      letter-spacing: 3px;
+      cursor: pointer;
+      box-shadow: 0 5px 0 #991b1b;
+      transition: background 0.15s, transform 0.1s, box-shadow 0.1s;
+    }
+
+    #btn-atacar:hover:not(:disabled) {
+      background: #b91c1c;
+      transform: translateY(2px);
+      box-shadow: 0 3px 0 #7f1d1d;
+    }
+
+    #btn-atacar:active:not(:disabled) {
+      transform: translateY(5px);
+      box-shadow: 0 0 0 #7f1d1d;
+    }
+
+    #btn-atacar:disabled {
+      background: #94a3b8;
+      box-shadow: 0 4px 0 #64748b;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    /* ============================================================
+       PAINEL FEEDBACK (slide inferior)
+    ============================================================ */
+    #painel-feedback {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 300;
+      padding: 14px 20px 18px;
+      transform: translateY(110%);
+      transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    #painel-feedback.visivel { transform: translateY(0); }
+    #painel-feedback.acerto  { background: #16a34a; }
+    #painel-feedback.erro    { background: #dc2626; }
+
+    #feedback-titulo {
+      font-family: 'VT323', monospace;
+      font-size: 26px;
+      color: white;
+      margin: 0 0 4px;
+    }
+
+    #feedback-corpo {
+      font-size: 13px;
+      color: rgba(255,255,255,0.92);
+      margin: 0 0 10px;
+      max-height: 100px;
+      overflow-y: auto;
+      line-height: 1.5;
+    }
+
+    #btn-continuar {
+      padding: 10px 28px;
+      background: rgba(255,255,255,0.18);
+      color: white;
+      border: 2px solid rgba(255,255,255,0.6);
+      border-radius: 7px;
+      font-family: 'VT323', monospace;
+      font-size: 22px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    #btn-continuar:hover { background: rgba(255,255,255,0.32); }
+
+    /* ============================================================
+       TELAS DE FIM DE BATALHA
+    ============================================================ */
+    .tela-fim {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 32px 20px;
+    }
+
+    #tela-vitoria { background: linear-gradient(135deg, #064e3b 0%, #065f46 100%); }
+    #tela-derrota { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
+
+    .tela-titulo {
+      font-family: 'VT323', monospace;
+      font-size: clamp(48px, 10vw, 72px);
+      color: white;
+      margin-bottom: 8px;
+      animation: glowPulse 2.5s ease infinite;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { text-shadow: 0 0 16px rgba(255,255,255,0.25); }
+      50%       { text-shadow: 0 0 40px rgba(255,255,255,0.65); }
+    }
+
+    .tela-subtitulo {
+      font-family: 'VT323', monospace;
+      font-size: 22px;
+      color: rgba(255,255,255,0.8);
+      margin: 0 0 18px;
+    }
+
+    .tela-sprite {
+      width: 160px;
+      height: 160px;
+      image-rendering: pixelated;
+      object-fit: contain;
+      margin: 12px 0;
+      animation: bounce 1.5s ease infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-12px); }
+    }
+
+    .tela-btn {
+      display: inline-block;
+      padding: 13px 36px;
+      margin: 6px;
+      font-family: 'VT323', monospace;
+      font-size: 22px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+
+    .tela-btn:hover { transform: translateY(-2px); }
+
+    /* ============================================================
+       RESPONSIVO
+    ============================================================ */
+    @media (max-width: 500px) {
+      .sprite-char { width: 110px; height: 110px; }
+      .hp-panel    { min-width: 110px; }
+      .hp-nome     { font-size: 14px; max-width: 110px; }
+      #log-batalha { font-size: 14px; max-width: 160px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================================================================
+     ARENA DE BATALHA
+================================================================ -->
+<div id="arena-batalha">
+
+  <!-- Log de batalha centralizado -->
+  <div id="log-batalha">⚔️ Carregando batalha...</div>
+
+  <!-- HERÓI (esquerda) -->
+  <div class="slot-personagem" id="slot-heroi">
+    <div class="hp-panel">
+      <div class="hp-nome" id="nome-heroi">EXPLORADOR</div>
+      <div class="hp-row">
+        <div class="hp-barra-container">
+          <div class="hp-barra-fill" id="barra-heroi"
+               style="width:100%; background:var(--cor-hp-verde);"></div>
+        </div>
+        <span class="hp-num" id="hp-num-heroi">100</span>
+      </div>
+      <div class="coracoes-container" id="coracoes-heroi"></div>
+    </div>
+    <img id="sprite-heroi" class="sprite-char"
+         src="../../../fotoIndex/globinhoPe.png"
+         alt="Herói"
+         onerror="this.src='../../../fotoIndex/globinhoPe.png'">
+  </div>
+
+  <!-- INIMIGO (direita) -->
+  <div class="slot-personagem" id="slot-inimigo">
+    <div class="hp-panel">
+      <div class="hp-nome" id="nome-inimigo">INIMIGO</div>
+      <div class="hp-row">
+        <div class="hp-barra-container">
+          <div class="hp-barra-fill" id="barra-inimigo"
+               style="width:100%; background:var(--cor-hp-vermelho);"></div>
+        </div>
+        <span class="hp-num" id="hp-num-inimigo">100</span>
+      </div>
+    </div>
+    <img id="sprite-inimigo" class="sprite-char"
+         src="../../../fotoIndex/globinhoPe2.png"
+         alt="Inimigo"
+         onerror="this.src='../../../fotoIndex/globinhoPe.png'">
+  </div>
+
+</div>
+
+<!-- Barra de progresso: vermelho = HP restante do inimigo -->
+<div id="barra-progresso-wrap">
+  <div id="barra-progresso-inimigo" style="width:100%;"></div>
+</div>
+
+
+<!-- ================================================================
+     PAINEL DE QUESTÕES
+================================================================ -->
+<div id="painel-questao">
+  <div id="container-questao">
+    <p class="w3-center w3-padding-32 w3-text-grey">
+      <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </p>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     PAINEL FEEDBACK (desliza de baixo)
+================================================================ -->
+<div id="painel-feedback">
+  <div style="max-width:760px; margin:0 auto;">
+    <h3 id="feedback-titulo"></h3>
+    <p  id="feedback-corpo"></p>
+    <button id="btn-continuar" onclick="proximaRodada()">CONTINUAR ▶</button>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     TELA DE VITÓRIA
+================================================================ -->
+<div id="tela-vitoria" class="tela-fim">
+  <div class="tela-titulo">⚔️ VITÓRIA!</div>
+  <img id="sprite-vitoria-img" class="tela-sprite"
+       src="../../../fotoIndex/globinhoPe.png" alt="Herói Vitorioso">
+  <p class="tela-subtitulo" id="texto-vitoria"></p>
+  <div>
+    <button class="tela-btn" style="background:#4ade80; color:#064e3b;"
+            onclick="location.reload()">🔄 REVANCHE</button>
+    <button class="tela-btn" style="background:white; color:#064e3b;"
+            onclick="history.back()">← VOLTAR</button>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     TELA DE DERROTA
+================================================================ -->
+<div id="tela-derrota" class="tela-fim">
+  <div class="tela-titulo">💀 DERROTA!</div>
+  <p class="tela-subtitulo" id="texto-derrota"></p>
+  <div>
+    <button class="tela-btn" style="background:#f87171; color:#7f1d1d;"
+            onclick="location.reload()">🔄 TENTAR NOVAMENTE</button>
+    <button class="tela-btn" style="background:white; color:#7f1d1d;"
+            onclick="history.back()">← VOLTAR</button>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     SCRIPT PRINCIPAL
+================================================================ -->
+<script>
+'use strict';
+
+// ================================================================
+//  ► CONFIGURAÇÃO BASE
+//    Edite os sprites e mecânicas ao criar uma nova batalha.
+//    Todos os valores abaixo podem ser sobrescritos via URL params.
+// ================================================================
+const CFG = {
+  heroi: {
+    nome: 'EXPLORADOR',
+    hpMax: 100,
+    hpAtual: 100,
+    vidas: 4,              // ← número de corações exibidos
+    vidasAtual: 4,
+    sprites: {
+      idle:    '../../../fotoIndex/FotoDir.gif',    // substitua por heroi-idle.gif
+      ataque:  '../../../fotoIndex/FotoDir.gif',  // substitua por heroi-attack.gif
+      dano:    '../../../fotoIndex/FotoDir.gif',  // substitua por heroi-damage.gif
+      vitoria: '../../../fotoIndex/FotoDir.gif',  // substitua por heroi-victory.gif
+    }
+  },
+  inimigo: {
+    nome: 'INIMIGO GEOGRÁFICO',
+    hpMax: 100,
+    hpAtual: 100,
+    sprites: {
+      idle:   '../../../fotoIndex/person28.gif',    // substitua por inimigo-idle.gif
+      ataque: '../../../fotoIndex/person28.gif',  // substitua por inimigo-attack.gif
+      dano:   '../../../fotoIndex/person28.gif',  // substitua por inimigo-damage.gif
+    }
+  },
+
+  // Mecânicas
+  danoPorErro:         25,   // dano do inimigo ao herói (4 erros = derrota)
+  // danoPorAcerto calculado em tempo de execução: 100 / n° de questões
+
+  // Globinhos
+  recompensaPorAcerto: 5,
+  recompensaVitoria:   20,
+  recompensaBonus:     10,   // bônus por HP total intacto
+
+  // Tempo (ms) que a animação de ataque/dano fica visível antes de voltar ao idle
+  durAnimacao: 1100,
+};
+
+// ================================================================
+//  ESTADO DE JOGO
+// ================================================================
+let questoes       = [];
+let indiceAtual    = 0;
+let nota           = 0;
+let aulaID         = '';
+let danoPorAcerto  = 20;
+let opcaoIdx       = null;
+let rodadaFechada  = false;
+
+const TIPO_CONCLUSAO = { QUESTOES: 'questoes' };
+const LETRAS = ['A', 'B', 'C', 'D', 'E'];
+
+
+// ================================================================
+//  INIT — lê URL params, aplica config, inicia carga
+// ================================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const p = new URLSearchParams(window.location.search);
+
+  // Aplica URL params sobre o CFG
+  if (p.get('heroi'))           CFG.heroi.nome                  = p.get('heroi').toUpperCase();
+  if (p.get('inimigo'))         CFG.inimigo.nome                = p.get('inimigo').toUpperCase();
+  if (p.get('heroi_idle'))      CFG.heroi.sprites.idle          = p.get('heroi_idle');
+  if (p.get('heroi_ataque'))    CFG.heroi.sprites.ataque        = p.get('heroi_ataque');
+  if (p.get('heroi_dano'))      CFG.heroi.sprites.dano          = p.get('heroi_dano');
+  if (p.get('heroi_vitoria'))   CFG.heroi.sprites.vitoria       = p.get('heroi_vitoria');
+  if (p.get('inimigo_idle'))    CFG.inimigo.sprites.idle        = p.get('inimigo_idle');
+  if (p.get('inimigo_ataque'))  CFG.inimigo.sprites.ataque      = p.get('inimigo_ataque');
+  if (p.get('inimigo_dano'))    CFG.inimigo.sprites.dano        = p.get('inimigo_dano');
+
+  // Atualiza nomes na UI
+  el('nome-heroi').textContent   = CFG.heroi.nome;
+  el('nome-inimigo').textContent = CFG.inimigo.nome;
+
+  // Sprites iniciais (idle)
+  setSprite('heroi',   'idle');
+  setSprite('inimigo', 'idle');
+
+  // Tela de vitória: sprite do herói
+  el('sprite-vitoria-img').src = CFG.heroi.sprites.vitoria || CFG.heroi.sprites.idle;
+
+  // Renderiza HP e corações
+  atualizarHP('heroi');
+  atualizarHP('inimigo');
+  renderizarCoracoes();
+
+  // Carrega questões
+  aulaID = p.get('id') || '';
+  if (aulaID) {
+    carregarDados(aulaID);
+  } else {
+    el('container-questao').innerHTML = `
+      <div class="w3-padding-32 w3-center" style="color:#64748b;">
+        <p class="w3-xlarge">⚠️</p>
+        <p>Adicione <code style="background:#f1f5f9;padding:2px 6px;border-radius:4px;">?id=101</code>
+           à URL para iniciar a batalha.</p>
+      </div>`;
+    atualizarLog('⚠️ Nenhuma questão carregada');
+  }
+});
+
+
+// ================================================================
+//  CARREGAMENTO DE DADOS
+// ================================================================
+async function carregarDados(id) {
+  try {
+    const ano  = id.startsWith('1') ? '1ano' : id.startsWith('2') ? '2ano' : '3ano';
+    const url  = `/questoes/${ano}/${id}.json`;
+
+    let dados;
+    if (typeof DuvidCache !== 'undefined') {
+      dados = await DuvidCache.get(url);
+    } else {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      dados = await r.json();
+    }
+
+    // Embaralha cópia (não o cache)
+    questoes = embaralhar([...dados]);
+
+    // Dano por acerto: divide 100 pelo n° de questões (mín. 10)
+    danoPorAcerto = Math.max(10, Math.ceil(CFG.inimigo.hpMax / questoes.length));
+
+    atualizarLog(`⚔️ ${questoes.length} rodada${questoes.length > 1 ? 's' : ''}  ·  LUTE!`);
+    renderizarQuestao();
+
+  } catch (err) {
+    console.error('[Batalha] Erro ao carregar:', err);
+    el('container-questao').innerHTML =
+      '<p class="w3-center w3-padding w3-text-red">❌ Erro ao carregar as questões.</p>';
+    atualizarLog('❌ Erro de carregamento');
+  }
+}
+
+
+// ================================================================
+//  RENDERIZA QUESTÃO ATUAL
+// ================================================================
+function renderizarQuestao() {
+  rodadaFechada = false;
+  opcaoIdx      = null;
+
+  const q = questoes[indiceAtual];
+  if (!q) return;
+
+  // Progresso (barra superior — HP do inimigo como referência)
+  const porcProgresso = (CFG.inimigo.hpAtual / CFG.inimigo.hpMax) * 100;
+  el('barra-progresso-inimigo').style.width = porcProgresso + '%';
+
+  const htmlApoio = q.texto_apoio
+    ? `<div class="bloco-apoio">${q.texto_apoio}</div>`
+    : '';
+
+  const htmlPergunta = q.pergunta
+    ? `<p class="pergunta-batalha">${q.pergunta}</p>`
+    : '';
+
+  const htmlAlts = q.alternativas.map((alt, i) => `
+    <button class="opcao-batalha" id="opcao-${i}"
+            onclick="selecionarOpcao(${i})">
+      <b>${LETRAS[i]})</b> ${alt}
+    </button>`).join('');
+
+  el('container-questao').innerHTML = `
+    <div style="padding:4px 0 10px;">
+      <span class="batalha-label">RODADA ${indiceAtual + 1}/${questoes.length}</span>
+      ${q.ano ? `<span class="batalha-label" style="margin-left:8px; opacity:.7;">— ${q.ano}</span>` : ''}
+    </div>
+
+    ${htmlApoio}
+    ${htmlPergunta}
+
+    <div id="grupo-alternativas">${htmlAlts}</div>
+
+    <button id="btn-atacar" disabled onclick="confirmarAtaque()">
+      ⚔️ ATACAR
+    </button>
+  `;
+
+  fecharFeedback();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+// ================================================================
+//  SELEÇÃO DE ALTERNATIVA
+// ================================================================
+function selecionarOpcao(i) {
+  if (rodadaFechada) return;
+
+  document.querySelectorAll('.opcao-batalha')
+          .forEach(b => b.classList.remove('selecionada'));
+
+  opcaoIdx = i;
+  const btn = el(`opcao-${i}`);
+  if (btn) btn.classList.add('selecionada');
+
+  const btnAtacar = el('btn-atacar');
+  if (btnAtacar) btnAtacar.disabled = false;
+}
+
+
+// ================================================================
+//  CONFIRMAR ATAQUE (verificação da resposta)
+// ================================================================
+function confirmarAtaque() {
+  if (opcaoIdx === null || rodadaFechada) return;
+  rodadaFechada = true;
+
+  const q        = questoes[indiceAtual];
+  const acertou  = (opcaoIdx === q.correta);
+
+  // Trava todas as alternativas e revela a correta
+  document.querySelectorAll('.opcao-batalha').forEach((b, i) => {
+    b.disabled = true;
+    if (i === q.correta)                         b.classList.add('correta');
+    else if (i === opcaoIdx && !acertou)         b.classList.add('errada');
+  });
+  el('btn-atacar').disabled = true;
+
+  // ── ACERTO ────────────────────────────────────────────────────
+  if (acertou) {
+    nota++;
+    playSom('acerto');
+
+    // Animação: herói ataca → inimigo toma dano
+    animarPersonagem('heroi', 'ataque', () => {
+      animarPersonagem('inimigo', 'dano', () => {}, true);
+    });
+
+    // HP inimigo
+    CFG.inimigo.hpAtual = Math.max(0, CFG.inimigo.hpAtual - danoPorAcerto);
+    atualizarHP('inimigo');
+    mostrarDamageFloat('slot-inimigo', `-${danoPorAcerto}`, 'dano');
+
+    // Recompensa parcial
+    addGlobinhos(CFG.recompensaPorAcerto);
+
+    atualizarLog(`✅ ${CFG.heroi.nome} atacou! -${danoPorAcerto} HP`);
+    mostrarFeedback(true, q);
+
+    // Verifica vitória
+    if (CFG.inimigo.hpAtual <= 0) {
+      setTimeout(() => encerrarBatalha(true), 1600);
+      return;
+    }
+
+  // ── ERRO ──────────────────────────────────────────────────────
+  } else {
+    playSom('erro');
+
+    // Animação: inimigo ataca → herói toma dano
+    animarPersonagem('inimigo', 'ataque', () => {
+      animarPersonagem('heroi', 'dano', () => {}, false);
+    });
+
+    CFG.heroi.hpAtual   = Math.max(0, CFG.heroi.hpAtual - CFG.danoPorErro);
+    CFG.heroi.vidasAtual = Math.max(0, CFG.heroi.vidasAtual - 1);
+    atualizarHP('heroi');
+    renderizarCoracoes();
+    mostrarDamageFloat('slot-heroi', `-${CFG.danoPorErro}`, 'dano');
+
+    atualizarLog(`❌ ${CFG.inimigo.nome} contra-atacou! -${CFG.danoPorErro} HP`);
+    mostrarFeedback(false, q);
+
+    // Verifica derrota
+    if (CFG.heroi.hpAtual <= 0) {
+      setTimeout(() => encerrarBatalha(false), 1600);
+      return;
+    }
+  }
+}
+
+
+// ================================================================
+//  PRÓXIMA RODADA
+// ================================================================
+function proximaRodada() {
+  fecharFeedback();
+  indiceAtual++;
+
+  if (indiceAtual < questoes.length) {
+    renderizarQuestao();
+  } else {
+    // Fim das questões: vitória se acertou ≥ 60% ou inimigo sem HP
+    const aprovado = CFG.inimigo.hpAtual <= 0 ||
+                     (CFG.heroi.hpAtual > 0 && nota >= Math.ceil(questoes.length * 0.6));
+    encerrarBatalha(aprovado);
+  }
+}
+
+
+// ================================================================
+//  ENCERRAR BATALHA
+// ================================================================
+function encerrarBatalha(vitoria) {
+  fecharFeedback();
+
+  const hpIntacto = CFG.heroi.hpAtual === CFG.heroi.hpMax;
+
+  if (vitoria) {
+    // Sprite de vitória
+    animarPersonagem('heroi', 'vitoria', () => {});
+    playSomFinal(true);
+
+    // Recompensas
+    if (aulaID) {
+      if (typeof DuvidDB !== 'undefined') {
+        DuvidDB.salvarConclusao(aulaID, TIPO_CONCLUSAO.QUESTOES);
+      }
+      addGlobinhos(CFG.recompensaVitoria);
+      if (hpIntacto) addGlobinhos(CFG.recompensaBonus);
+    }
+
+    const totalExtra = CFG.recompensaVitoria + (hpIntacto ? CFG.recompensaBonus : 0);
+    el('texto-vitoria').innerHTML =
+      `Acertos: <b>${nota}/${questoes.length}</b><br>
+       🌍 +${totalExtra} globinhos${hpIntacto ? ' <small>(BÔNUS PERFEITO! +' + CFG.recompensaBonus + ')</small>' : ''}`;
+
+    // Atualiza sprite na tela de vitória
+    el('sprite-vitoria-img').src = CFG.heroi.sprites.vitoria || CFG.heroi.sprites.idle;
+
+    if (typeof confetti === 'function') {
+      confetti({ particleCount: 130, spread: 80, origin: { y: 0.45 } });
+    }
+
+    setTimeout(() => {
+      el('tela-vitoria').style.display = 'flex';
+    }, 500);
+
+  } else {
+    playSomFinal(false);
+
+    el('texto-derrota').innerHTML =
+      `Acertos: <b>${nota}/${questoes.length}</b><br>Estude mais e volte mais forte!`;
+
+    setTimeout(() => {
+      el('tela-derrota').style.display = 'flex';
+    }, 500);
+  }
+}
+
+
+// ================================================================
+//  FEEDBACK (painel inferior deslizante)
+// ================================================================
+function mostrarFeedback(acerto, q) {
+  const painel = el('painel-feedback');
+  const titulo = el('feedback-titulo');
+  const corpo  = el('feedback-corpo');
+
+  painel.className = `${acerto ? 'acerto' : 'erro'} visivel`;
+
+  if (acerto) {
+    titulo.textContent = '⚔️ Ataque certeiro!';
+    corpo.innerHTML    = q.comentario || 'Muito bem!';
+  } else {
+    titulo.textContent = '🛡️ Contra-ataque recebido!';
+    const dica = q.ajuda
+      ? (typeof q.ajuda === 'object' ? q.ajuda.texto : q.ajuda)
+      : null;
+    corpo.innerHTML = dica
+      ? `<b>💡 Dica:</b> ${dica}`
+      : 'Revise o conteúdo e tente novamente!';
+  }
+}
+
+function fecharFeedback() {
+  const painel = el('painel-feedback');
+  painel.classList.remove('visivel');
+}
+
+
+// ================================================================
+//  BARRAS DE HP
+// ================================================================
+function atualizarHP(quem) {
+  const cfg    = CFG[quem];
+  const hpMax  = cfg.hpMax;
+  const hp     = cfg.hpAtual;
+  const porc   = Math.max(0, (hp / hpMax) * 100);
+
+  const barra  = el(`barra-${quem}`);
+  const numEl  = el(`hp-num-${quem}`);
+
+  if (barra) {
+    barra.style.width = porc + '%';
+    if      (porc > 50) barra.style.background = quem === 'heroi'
+                                                  ? 'var(--cor-hp-verde)' : 'var(--cor-hp-vermelho)';
+    else if (porc > 25) barra.style.background = 'var(--cor-hp-amarelo)';
+    else                barra.style.background = 'var(--cor-hp-vermelho)';
+  }
+  if (numEl) numEl.textContent = Math.ceil(hp);
+
+  // Barra de progresso do inimigo (topo)
+  if (quem === 'inimigo') {
+    const bProg = el('barra-progresso-inimigo');
+    if (bProg) bProg.style.width = porc + '%';
+  }
+}
+
+
+// ================================================================
+//  CORAÇÕES (vida do herói)
+// ================================================================
+function renderizarCoracoes() {
+  const container = el('coracoes-heroi');
+  if (!container) return;
+
+  let html = '';
+  for (let i = 0; i < CFG.heroi.vidas; i++) {
+    const perdido = i >= CFG.heroi.vidasAtual;
+    html += `<span class="coracao${perdido ? ' perdido' : ''}">❤️</span>`;
+  }
+  container.innerHTML = html;
+}
+
+
+// ================================================================
+//  SPRITES / ANIMAÇÕES
+// ================================================================
+function setSprite(quem, estado) {
+  const imgId = quem === 'heroi' ? 'sprite-heroi' : 'sprite-inimigo';
+  const img   = el(imgId);
+  if (!img) return;
+
+  const src = CFG[quem].sprites[estado] || CFG[quem].sprites.idle;
+  // Cache-bust força o GIF a reiniciar do frame 1
+  img.src = src.endsWith('.gif') ? `${src}?t=${Date.now()}` : src;
+}
+
+function animarPersonagem(quem, estado, callback, shake = false) {
+  setSprite(quem, estado);
+
+  // Efeito de piscar ao tomar dano
+  if (estado === 'dano') {
+    const imgId = quem === 'heroi' ? 'sprite-heroi' : 'sprite-inimigo';
+    const img   = el(imgId);
+    if (img) {
+      img.classList.add('blink');
+      setTimeout(() => img.classList.remove('blink'), 600);
+    }
+
+    // Shake no slot
+    const slotId  = `slot-${quem}`;
+    const cls     = quem === 'heroi' ? 'shake-heroi' : 'shake-inimigo';
+    const slot    = el(slotId);
+    if (slot) {
+      slot.classList.add(cls);
+      setTimeout(() => slot.classList.remove(cls), 600);
+    }
+  }
+
+  // Volta ao idle após a animação
+  setTimeout(() => {
+    setSprite(quem, 'idle');
+    if (typeof callback === 'function') callback();
+  }, CFG.durAnimacao);
+}
+
+
+// ================================================================
+//  DANO FLUTUANTE
+// ================================================================
+function mostrarDamageFloat(slotId, texto, tipo) {
+  const slot = el(slotId);
+  if (!slot) return;
+
+  // garante position:relative no slot
+  slot.style.position = 'relative';
+
+  const div = document.createElement('div');
+  div.className  = `damage-float ${tipo}`;
+  div.textContent = texto;
+  slot.appendChild(div);
+
+  setTimeout(() => { if (div.parentNode) div.parentNode.removeChild(div); }, 1400);
+}
+
+
+// ================================================================
+//  LOG DE BATALHA
+// ================================================================
+function atualizarLog(msg) {
+  const log = el('log-batalha');
+  if (log) {
+    log.style.opacity = '0';
+    setTimeout(() => {
+      log.textContent  = msg;
+      log.style.opacity = '1';
+    }, 150);
+  }
+}
+
+
+// ================================================================
+//  WRAPPERS SEGUROS PARA DUVID ENGINE
+// ================================================================
+function playSom(tipo) {
+  if (typeof DuvidAudio !== 'undefined') DuvidAudio.play(tipo);
+}
+
+function playSomFinal(vitoria) {
+  if (typeof DuvidAudio !== 'undefined') DuvidAudio.playResultadoFinal(vitoria);
+}
+
+function addGlobinhos(n) {
+  if (typeof DuvidDB !== 'undefined') DuvidDB.addGlobinhos(n);
+}
+
+
+// ================================================================
+//  UTILITÁRIOS
+// ================================================================
+function el(id) { return document.getElementById(id); }
+
+function embaralhar(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+</script>
+
+</body>
+</html>

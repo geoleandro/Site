@@ -16,7 +16,8 @@
       "II e III, apenas."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A pressão atmosférica e a temperatura são os dois principais elementos que definem as condições do tempo e determinam os padrões climáticos. A temperatura varia com latitude, altitude e maritimidade; a pressão, com altitude e temperatura do ar. Juntos, esses elementos governam a circulação geral da atmosfera e a formação de ventos e chuvas.",
+    "ajuda": "Temperatura, pressão atmosférica, umidade, precipitação e ventos são os principais elementos do clima. Cada um é influenciado por fatores como latitude, altitude, maritimidade, continentalidade e massas de ar. Avalie cada afirmativa com base nessa distinção entre elementos e fatores."
   },
   {
     "id": 2,
@@ -34,7 +35,8 @@
       "Correntes marinhas com direções convergentes."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Os ventos e ciclones formam-se onde há gradientes acentuados de pressão atmosférica: o ar desloca-se das áreas de alta pressão (anticiclones) para as de baixa pressão (ciclones). Quanto maior a diferença de pressão entre dois pontos, mais forte é o vento. Os furacões e tufões são exemplos extremos desse fenômeno em zonas tropicais oceânicas.",
+    "ajuda": "A distribuição de um fenômeno climático pelo espaço geográfico é condicionada por fatores físicos do meio. Pense em qual característica — altitude, latitude, proximidade do mar, tipo de vegetação — é indispensável para que o fenômeno descrito ocorra."
   },
   {
     "id": 3,
@@ -52,7 +54,8 @@
       "variações altimétricas acentuadas."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As brisas marinhas e terrestres resultam do aquecimento diferencial entre o continente e o oceano. Durante o dia, a terra aquece mais rápido que o mar, criando baixa pressão no continente; o ar mais fresco do mar sopra para a terra (brisa marítima). À noite, o processo inverte: a terra esfria mais rápido e o vento sopra do continente para o mar (brisa terrestre).",
+    "ajuda": "As brisas litorâneas resultam da diferença de aquecimento entre a terra (aquece e esfria mais rápido) e o mar (aquece e esfria mais lentamente). Durante o dia, a brisa sopra do mar para a terra; à noite, o processo se inverte. Identifique qual parte do ciclo está representada nas imagens."
   },
   {
     "id": 4,
@@ -65,13 +68,14 @@
     "pergunta": "A atmosfera é uma camada fina de gases sem cheiro, sem cor e sem gosto que está presa ao planeta Terra pela força gravitacional. Essa camada apresenta composição e condições físicas não uniformes em toda a sua espessura e, por isto, é dividida em estratos superpostos, conforme se observa no gráfico a seguir.\n\nConsiderando o gráfico e as características destacadas das camadas atmosféricas, pode-se afirmar que",
     "alternativas": [
       "a estratosfera é a camada mais exterior da atmosfera. A densidade do ar é muito menor do que na troposfera e contém pequena parte do ozônio do total atmosférico, concentrado na altitude de 22 quilômetros.",
-      "a termosfera é uma camada que alcança até 5 mil quilômetros de altitude e é muito concentrada. Exerce um papel muito importante nas transmissões de rádio e de televisão, com ondas de diversos comprimentos emitidas da Terra c) na exosfera, há o predomínio dos átomos de hidrogênio, hélio, aerossóis e do nitrogênio (leves). A densidade atmosférica é igual a do gás interespacial que a circunda e ocorre grande incidência de poeira cósmica e baixas temperaturasc. d) a mesosfera, camada que se estende da estratosfera até aproximadamente 80 km de altitude, apresenta aumento da temperatura de +3,5°C, por quilômetro. Nessa camada, há uma pequena quantidade de ozônio e de vapores de sódio. e) a troposfera apresenta aproximadamente 75% da massa gasosa total da atmosfera. Todo o vapor de água, aerossóis e a temperatura reduzem-se com a altitude, podendo ocorrer grande turbulência.",
-      "",
-      "",
-      ""
+      "a termosfera é uma camada que alcança até 5 mil quilômetros de altitude e é muito concentrada. Exerce um papel muito importante nas transmissões de rádio e de televisão, com ondas de diversos comprimentos emitidas da Terra.",
+      "a mesosfera, camada que se estende da estratosfera até aproximadamente 80 km de altitude, apresenta aumento da temperatura de +3,5°C, por quilômetro. Nessa camada, há uma pequena quantidade de ozônio e de vapores de sódio.",
+      "a troposfera apresenta aproximadamente 75% da massa gasosa total da atmosfera. Todo o vapor de água, aerossóis e a temperatura reduzem-se com a altitude, podendo ocorrer grande turbulência.",
+      "na exosfera, há o predomínio dos átomos de hidrogênio, hélio, aerossóis e do nitrogênio (leves). A densidade atmosférica é igual a do gás interespacial que a circunda e ocorre grande incidência de poeira cósmica e baixas temperaturas"
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A atmosfera divide-se em camadas com características distintas: troposfera (0-12 km, clima e vida), estratosfera (12-50 km, camada de ozônio), mesosfera (50-80 km), termosfera/ionosfera (80-500 km) e exosfera (acima de 500 km). Na exosfera, a densidade do ar é mínima e predominam átomos leves de hidrogênio e hélio — a transição para o espaço.",
+    "ajuda": "A atmosfera é composta principalmente por nitrogênio (78%) e oxigênio (21%), com traços de outros gases. Ela é dividida em camadas: troposfera (onde ocorre o clima), estratosfera (camada de ozônio), mesosfera, termosfera e exosfera. Identifique qual camada ou propriedade a questão aborda."
   },
   {
     "id": 5,
@@ -82,13 +86,14 @@
     "imagem_apoio": "1ano/img/119/p19q5.png",
     "pergunta": "A figura a seguir exibe a imagem de um ciclone:\n\nÉ correto afirmar que o ciclone em questão.",
     "alternativas": [
-      "ocorreu no Hemisfério Sul e corresponde a uma área de alta pressão atmosférica. b) pode ocorrer em qualquer hemisfério, independentemente da pressão atmosférica. c) ocorreu no Hemisfério Norte, em zonas tropicais e de baixa pressão atmosférica. d) ocorreu no Hemisfério Sul e corresponde a uma área de baixa pressão atmosférica.",
-      "",
-      "",
-      ""
+      "ocorreu no Hemisfério Sul e corresponde a uma área de alta pressão atmosférica.",
+      "pode ocorrer em qualquer hemisfério, independentemente da pressão atmosférica.",
+      "ocorreu no Hemisfério Norte, em zonas tropicais e de baixa pressão atmosférica.",
+      "ocorreu no Hemisfério Sul e corresponde a uma área de baixa pressão atmosférica."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Os ciclones tropicais (furacões no Atlântico, tufões no Pacífico) formam-se sobre oceanos tropicais com temperatura da superfície acima de 26°C. O ar quente e úmido sobe rapidamente, cria baixa pressão intensa no centro (olho do ciclone), e ventos em espiral convergem em sentido anti-horário no hemisfério norte e horário no sul (efeito Coriolis).",
+    "ajuda": "Os ciclones são sistemas de baixa pressão com ventos que circulam no sentido anti-horário no Hemisfério Norte e horário no Hemisfério Sul (lei de Buys Ballot). Observe a imagem e identifique o hemisfério e as características do sistema representado."
   },
   {
     "id": 6,
@@ -106,12 +111,13 @@
       "I, II, III."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A circulação geral da atmosfera é movida pela diferença de aquecimento entre o Equador (muito calor, baixa pressão) e os polos (frio, alta pressão). Isso gera células de circulação: célula de Hadley (tropicais), de Ferrel (temperadas) e Polar. Os ventos alísios, as monções e os jatos equatoriais são expressões dessa circulação global.",
+    "ajuda": "Os sistemas atmosféricos de alta pressão (anticiclones) são associados a tempo estável e seco; os de baixa pressão (ciclones) estão ligados ao tempo instável, com chuvas e ventos fortes. Avalie cada afirmativa com base no comportamento esperado de cada sistema."
   },
   {
     "id": 7,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/119/p19q7.png",
@@ -124,12 +130,13 @@
       "I – convectiva II – orográfica III – frontal."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Os três tipos de precipitação são: convectiva (ar quente sobe, condensa rápido — chuvas tropicais intensas e locais), frontal (encontro de massas de ar quente e fria — chuvas persistentes nas frentes frias) e orográfica (ar úmido empurrado pelas montanhas sobe e resfria — chuvas na encosta a barlavento). O Brasil experimenta os três tipos.",
+    "ajuda": "As massas de ar são grandes volumes de ar com características homogêneas de temperatura e umidade. No Brasil, as principais massas de ar são: Equatorial Continental (quente e úmida), Polar Atlântica (fria e úmida), Tropical Atlântica (quente e úmida) e Tropical Continental (quente e seca). Associe cada sigla ou descrição à massa correta."
   },
   {
     "id": 8,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/119/p19q8.png",
@@ -142,12 +149,13 @@
       "são sempre entre áreas de mesma temperatura."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "Os ventos sempre sopram de áreas de maior pressão para áreas de menor pressão. Esse princípio governa desde as brisas locais até os grandes sistemas de ventos globais (alísios, ventos de oeste). A intensidade do vento é proporcional ao gradiente de pressão — quanto maior a diferença entre as pressões, mais forte o vento.",
+    "ajuda": "Os deslocamentos das massas de ar no Brasil são influenciados pelas diferenças de pressão e temperatura entre regiões. Observe a figura e identifique a direção de deslocamento de cada massa, sua origem e as características climáticas que ela traz."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MUNDO EDUCAÇÃO 2022) Os principais elementos que atuam na formação do solo são:",
@@ -159,12 +167,13 @@
       "Os principais elementos que interagem entre si na formação do solo são o tempo, clima, relevo, água e os seres vivos, inclusive o ser humano."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A formação do solo é resultado da interação de cinco fatores: material de origem (rocha-mãe), clima (temperatura e chuva), relevo (drenagem e erosão), organismos (fauna e flora do solo) e tempo (duração do processo pedogenético). Em regiões tropicais úmidas, o processo é acelerado pelo calor e pela chuva, gerando solos profundos.",
+    "ajuda": "Os principais elementos que atuam na formação do solo incluem clima (temperatura e chuva), organismos vivos (vegetação e fauna do solo), material de origem (rocha-mãe), relevo e tempo. Identifique quais desses fatores são listados nas alternativas."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/119/p19q10.png",
@@ -177,6 +186,7 @@
       "em áreas com abundante cobertura vegetal, o ar mais frio e rarefeito facilita a descida das nuvens mais pesadas."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A mata e os bosques mantêm a umidade local pela evapotranspiração — as plantas liberam vapor d'água pelas folhas, contribuindo para a formação de nuvens e chuvas. Estudos do INPE demonstraram que o desmatamento da Amazônia reduz as chuvas regionais por diminuir esse fluxo de vapor. Isso também impacta o regime pluviométrico do Sul e Sudeste do Brasil (rios voadores).",
+    "ajuda": "Em áreas tropicais, a convecção térmica (aquecimento da superfície → ar sobe → nuvens cumulonimbos → chuvas convectivas) é o principal mecanismo de precipitação. O desenho provavelmente representa esse ciclo; observe os movimentos do ar e a formação de nuvens."
   }
 ]

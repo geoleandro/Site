@@ -15,7 +15,8 @@
       "ampliação do escoamento superficial."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "O gráfico mostra o que acontece com o ciclo hidrológico quando uma área é urbanizada. Pense no efeito da impermeabilização do solo: menos infiltração, mais escoamento superficial. Qual consequência direta isso tem para os rios urbanos?",
+    "comentario": "A urbanização impermeabiliza grandes superfícies com asfalto, concreto e edificações, impedindo que a água da chuva infiltre no solo. Como resultado, o volume de água que escoa superficialmente aumenta dramaticamente, acelerando o tempo de chegada aos rios e elevando o pico das cheias. Esse fenômeno é o principal responsável pelas enchentes urbanas recorrentes em cidades como São Paulo e Rio de Janeiro."
   },
   {
     "id": 2,
@@ -32,12 +33,13 @@
       "I, III e IV."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "A ilha de calor é um fenômeno térmico típico de grandes cidades. Lembre-se que ela é causada pela concentração de construções, asfalto, veículos e falta de vegetação. Identifique quais afirmativas descrevem corretamente suas causas e efeitos.",
+    "comentario": "A ilha de calor urbana resulta da maior absorção de radiação solar pelas superfícies de asfalto e concreto, da ausência de vegetação e do calor liberado por veículos, indústrias e ar-condicionado. As afirmativas II e IV estão corretas ao identificar a densidade de construções e a impermeabilização como causas, e as ondas de calor e maior consumo energético como consequências. Esse fenômeno aumenta a vulnerabilidade das populações urbanas a eventos climáticos extremos."
   },
   {
     "id": 3,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "2ano/img/230/s30q3.png",
@@ -50,7 +52,8 @@
       "a ocupação da planície de inundação do rio e a impermeabilização do solo."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "O meme provavelmente mostra uma cena de enchente urbana. Pense nas causas das inundações nas cidades: impermeabilização do solo, ocupação de várzeas e planícies de inundação dos rios. Qual par de fatores está diretamente ligado ao problema?",
+    "comentario": "As enchentes urbanas são agravadas pela ocupação humana das planícies de inundação — áreas naturalmente destinadas a receber o excesso de água dos rios em períodos de cheia. Quando essas áreas são impermeabilizadas e construídas, a água não tem para onde ir, causando alagamentos. O meme ironiza a surpresa das pessoas com as enchentes, quando a causa é justamente a ocupação irregular das margens dos rios."
   },
   {
     "id": 4,
@@ -69,7 +72,8 @@
       "A busca pelo aumento da produtividade impõe a diferentes elementos da natureza o tempo dos interesses capitalistas."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "O texto discute a aceleração do tempo de produção econômica versus o tempo da natureza. Lembre-se que a produção de lixo e outros impactos ambientais têm uma irreversibilidade natural que o ritmo econômico não respeita.",
+    "comentario": "O capitalismo impõe ao ciclo natural um tempo produtivo que não respeita os ritmos ecológicos. A agricultura industrial, por exemplo, força a produção contínua com irrigação, fertilizantes e agrotóxicos, ignorando os períodos de repouso do solo. Essa aceleração produtiva degrada ecossistemas ao tentar subordinar a natureza à lógica do lucro e da eficiência econômica."
   },
   {
     "id": 5,
@@ -89,7 +93,8 @@
       "I, II, III e IV."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "As afirmativas tratam da verticalização urbana e seus impactos ambientais segundo Aziz Ab'Saber. Analise cada proposição sobre impermeabilização, ilhas de calor e alteração do ciclo hídrico. Identifique quais são corretas.",
+    "comentario": "Aziz Ab'Saber foi um dos maiores geógrafos brasileiros, estudioso dos domínios morfoclimáticos e da relação entre sociedade e natureza. As afirmativas I, II e IV estão corretas ao relacionar os processos de degradação ambiental urbana — erosão, assoreamento, enchentes — com a ocupação desordenada das cidades. A paisagem urbana é sempre resultado da interação entre processos naturais e intervenções humanas."
   },
   {
     "id": 6,
@@ -109,7 +114,8 @@
       "A produção de lixo no mundo é enorme, mas a reciclagem e reutilização de produtos tem crescido constantemente, de modo que o lixo em pouco tempo será reduzido em 70%."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "A manchete trata de produção e descarte de lixo. Lembre-se que o problema do lixo é global e está ligado ao consumismo e à produção industrial. Qual alternativa apresenta uma análise mais correta sobre as causas e a escala do problema?",
+    "comentario": "O consumismo exacerbado gera toneladas de resíduos sólidos que sobrecarregam aterros sanitários e sistemas de coleta, especialmente em países em desenvolvimento. A obsolescência programada e o descarte precoce de eletrônicos, embalagens e têxteis são sintomas de um modelo econômico insustentável. A manchete aponta para a urgência de mudar padrões de produção e consumo como condição para a sustentabilidade ambiental."
   },
   {
     "id": 7,
@@ -127,7 +133,8 @@
       "ventos alísios de sudeste, que provocam o súbito aumento da umidade relativa do ar."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "A camada marrom no horizonte é característica de dias com pouca circulação de ar. Pense no fenômeno que prende os poluentes próximos à superfície: uma camada de ar quente se forma acima do ar frio, impedindo a dispersão dos gases.",
+    "comentario": "A inversão térmica ocorre quando uma camada de ar quente fica sobre uma camada de ar frio próxima ao solo, impedindo a dispersão vertical dos poluentes. Nas grandes cidades, em dias de ventos fracos e céu limpo, os gases de escapamentos e chaminés ficam presos nessa camada baixa, formando a névoa marrom visível no horizonte. Esse fenômeno é mais grave no inverno e em cidades encerradas por montanhas, como São Paulo."
   },
   {
     "id": 8,
@@ -145,7 +152,8 @@
       "são responsáveis pelo desaparecimento das nascentes na região onde são instalados, o que leva à escassez de água."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Os lixões são áreas a céu aberto onde o lixo é depositado sem tratamento. Pense nos riscos que eles representam: contaminação do solo e da água por chorume, proliferação de vetores de doenças como ratos e moscas.",
+    "comentario": "Os lixões são depósitos a céu aberto de resíduos sólidos sem controle técnico, onde lixo doméstico, hospitalar e industrial se mistura sem tratamento. Além de atrair vetores de doenças como ratos, baratas e moscas, produzem chorume — líquido tóxico que contamina o solo e os lençóis freáticos. A Lei 12.305/2010 (Política Nacional de Resíduos Sólidos) determinou o fim dos lixões no Brasil, mas sua implementação ainda é incompleta."
   },
   {
     "id": 9,
@@ -163,7 +171,8 @@
       "frente quente provocada pelo deslocamento de ar 3, que é continental e, por sua alta temperatura, é mais pesado e fica impedido de ascender devido ao ar 2, que é frio e não se mistura com o ar 1 que é quente."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "A figura esquemática mostra camadas de ar com temperaturas diferentes. Pense nos fenômenos de inversão térmica e ilha de calor: na inversão, o ar mais quente fica acima do mais frio, prendendo poluentes. Na ilha de calor, o centro urbano é mais quente.",
+    "comentario": "Na inversão térmica, o ar frio e denso fica preso junto à superfície terrestre por uma camada de ar quente sobreposta, que funciona como uma 'tampa'. Os poluentes emitidos na camada inferior não conseguem se dispersar verticalmente e se acumulam, aumentando sua concentração e os riscos à saúde respiratória. O diagrama mostra o ar 3 (frio/poluído) retido sob o ar 2 (quente), confirmando esse mecanismo."
   },
   {
     "id": 10,
@@ -181,6 +190,7 @@
       "a rede hidrográfica e a circulação atmosférica."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "A chuva ácida é formada pela reação de óxidos de enxofre e nitrogênio com a água da atmosfera. Para que ela se espalhe e cause dano em áreas distantes, é necessário considerar o transporte dos poluentes pelo ar — qual fator determina isso?",
+    "comentario": "A chuva ácida forma-se quando óxidos de enxofre (SO₂) e nitrogênio (NOₓ), emitidos principalmente por queima de combustíveis fósseis, reagem com a água atmosférica formando ácidos sulfúrico e nítrico. A intensidade do fenômeno depende da concentração de fontes emissoras (indústrias, veículos) e dos padrões de circulação atmosférica, que podem transportar os poluentes para regiões distantes das fontes. O problema é transfronteiriço e afeta ecossistemas, edifícios e saúde humana."
   }
 ]

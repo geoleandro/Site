@@ -7,14 +7,15 @@
     "tags": [],
     "pergunta": "A África Mediterrânea está localizada ao norte do deserto do Saara e possui características físicas e humanas semelhantes às dos países do Oriente Médio. Seu clima é desértico, o idioma é o árabe e a principal religião é o Islamismo. Qual desses países africano não apresenta essas características, ou seja, não compõe a África Mediterrânea.",
     "alternativas": [
-      "Líbia b) Egito. c) Marrocos. d) África do Sul. e) Argélia.",
-      "",
-      "",
-      "",
-      ""
+      "Líbia",
+      "Egito.",
+      "Marrocos.",
+      "África do Sul.",
+      "Argélia."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A África do Sul, localizada no extremo sul do continente, pertence à África Austral — não à Mediterrânea. Tem clima temperado a subtropical, predomínio de línguas africanas (zulu, xhosa) e herança do Apartheid. Em contraste, a África Mediterrânea (Marrocos, Argélia, Tunísia, Líbia, Egito) é árabe, islâmica e de clima semiárido.",
+    "ajuda": "A África Mediterrânea (norte da África) é predominantemente islâmica e árabe. Os países dessa região — Marrocos, Argélia, Tunísia, Líbia e Egito — compartilham características físicas desérticas e culturais próximas ao Oriente Médio. Identifique qual país pertence à outra sub-região."
   },
   {
     "id": 2,
@@ -33,17 +34,18 @@
       "tropical árido / floresta de coníferas."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O clima equatorial, com temperatura média de 25°C e precipitação abundante durante todo o ano (umidade relativa de 90%), gera a floresta tropical densa — a vegetação mais biodiversa do planeta. Esse domínio abrange a Amazônia, a bacia do Congo e o Sudeste Asiático, regiões de baixa latitude próximas ao Equador.",
+    "ajuda": "O clima equatorial é marcado por altas temperaturas e chuvas abundantes o ano todo, gerando a floresta tropical densa. O clima tropical tem estações seca e chuvosa, gerando savanas. Identifique qual par clima/vegetação descreve corretamente o texto."
   },
   {
     "id": 3,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "Texto I Percebemos uma nítida oposição entre uma África onde se situa uma das mais famosas (talvez até a mais popular) civilização de todos os tempos, o Egito, e as regiões restantes do continente, compreendendo os desertos (Saara e Kalahari), as latitudes equatoriais (Senegal a Angola), as das florestas (bacia do Zaire) e o sul. Texto II",
     "fonte_apoio": "LANGER, J., Civilizações Perdidas no Continente Negro: o imaginário arqueológico sobre a África. Adaptado.",
-    "pergunta": "(2020) Considere as informações do texto e da figura.\n\nOs dados sobre o continente africano apresentados no texto e na figura enfatizam",
+    "pergunta": "Considere as informações do texto e da figura.\n\nOs dados sobre o continente africano apresentados no texto e na figura enfatizam",
     "alternativas": [
       "sua diversidade cultural e físico-biológica..",
       "seus conflitos tribais e a degradação ambiental",
@@ -52,15 +54,16 @@
       "o histórico de escravidão e a exploração dos seus recursos naturais."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A África é o continente com maior diversidade física e humana: do deserto do Saara ao norte, passando pela savana do Sahel, às florestas equatoriais do Congo, até as savanas e desertos do sul. Essa diversidade contrasta com representações homogeneizadoras que tratam o continente como um bloco uniforme.",
+    "ajuda": "A África é um continente de enorme diversidade física e cultural, mas frequentemente representado de forma simplificada. O texto e a figura provavelmente enfatizam tanto os desafios (conflitos, exploração) quanto o potencial do continente. Identifique qual perspectiva é destacada."
   },
   {
     "id": 4,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) Leia o texto a seguir.\n\nO clima tropical ocupa cerca de metade do continente, onde apresenta temperaturas elevadas durante todo o ano e duas estações bem distintas: chuvosa no verão e seca no inverno. A vegetação predominante deste clima é uma transição entre a floresta úmida e as áreas áridas e semiáridas do norte e do sul do continente. Neste domínio, a vegetação apresenta árvores e arbustos de portes variados e dispersos na paisagem e plantas rasteiras (capins e gramíneas) que recobrem o solo (semelhante ao do cerrado brasileiro). O texto anterior descreve a formação vegetal típica do clima tropical africano e que também foi cenário natural de alguns filmes famosos com Tarzan e Sheena (a rainha da selva).\n\nAssinale a alternativa referente a esta paisagem vegetal",
+    "pergunta": "Leia o texto a seguir.\n\nO clima tropical ocupa cerca de metade do continente, onde apresenta temperaturas elevadas durante todo o ano e duas estações bem distintas: chuvosa no verão e seca no inverno. A vegetação predominante deste clima é uma transição entre a floresta úmida e as áreas áridas e semiáridas do norte e do sul do continente. Neste domínio, a vegetação apresenta árvores e arbustos de portes variados e dispersos na paisagem e plantas rasteiras (capins e gramíneas) que recobrem o solo (semelhante ao do cerrado brasileiro). O texto anterior descreve a formação vegetal típica do clima tropical africano e que também foi cenário natural de alguns filmes famosos com Tarzan e Sheena (a rainha da selva).\n\nAssinale a alternativa referente a esta paisagem vegetal",
     "alternativas": [
       "Desertos.",
       "Savanas.",
@@ -69,16 +72,17 @@
       "Floresta Amazônica."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A savana africana (chamada de 'bush' na África do Sul e 'savane' no Congo) é dominada por gramíneas, árvores esparsas e arbustos que se adaptam à estação seca de 3 a 6 meses. Cobre cerca de 40% do território africano e é o cenário dos grandes mamíferos africanos tão retratados nos documentários.",
+    "ajuda": "O clima tropical na África, com chuvas sazonais e temperatura elevada, gera a vegetação de savana (ou cerrado africano), chamada de savana africana. O texto descreve esse padrão climático com duas estações bem definidas. Identifique o tipo de vegetação correspondente."
   },
   {
     "id": 5,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "3ano/img/325/t25q5.png",
-    "pergunta": "(2020) Observe o mapa a seguir.\n\nO mapa anterior indica duas importantes bacias hidrográ¬ficas africanas. Quais são elas, respectivamente?",
+    "pergunta": "Observe o mapa a seguir.\n\nO mapa anterior indica duas importantes bacias hidrográ¬ficas africanas. Quais são elas, respectivamente?",
     "alternativas": [
       "A – bacia do rio Níger e B – bacia do rio Nilo.",
       "A – bacia do rio Congo e B – bacia do rio Orange.",
@@ -87,7 +91,8 @@
       "A – bacia do rio Orange e B – bacia do rio Senegal."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O Rio Níger (bacia A) percorre o oeste africano, passando por Guiné, Mali, Níger e Nigéria. O Rio Congo (bacia B) drena a África Central equatorial — a segunda maior bacia hidrográfica do mundo em volume d'água, superada apenas pelo Amazonas. Ambos são fundamentais para a vida e agricultura das regiões que atravessam.",
+    "ajuda": "A África possui dois grandes sistemas hidrográficos: o Nilo, que percorre o nordeste africano e deságua no Mediterrâneo, e o Congo, que drena a África Central equatorial. Ao observar o mapa, identifique quais letras correspondem a cada bacia hidrográfica."
   },
   {
     "id": 6,
@@ -104,16 +109,17 @@
       "ao fato de o norte do continente apresentar características árabes, mulçumanas e brancas, enquanto o sul apresenta características negras, cristã e animistas."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A divisão das 'Duas Áfricas' refere-se à diferença entre a África ao norte do Saara (árabe-islâmica, de pele mais clara) e a África subsaariana (negra, cristã e animista). Essa divisão tem raízes históricas no Islã (que avançou ao norte do Saara nos séculos VII-VIII) e no colonialismo europeu.",
+    "ajuda": "O continente africano é dividido de formas distintas: norte islâmico-árabe (África Mediterrânea) e sul subsaariana (África Negra). Essa divisão tem bases históricas, religiosas e culturais profundas. Identifique qual fator melhor explica a diversidade descrita no texto."
   },
   {
     "id": 7,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "3ano/img/325/t25q7.png",
-    "pergunta": "(2020) Observe o mapa a seguir. As partes destacadas no mapa indicam:",
+    "pergunta": "Observe o mapa a seguir. As partes destacadas no mapa indicam:",
     "alternativas": [
       "áreas de clima e paisagens desérticas.",
       "áreas de conflito.",
@@ -122,7 +128,8 @@
       "áreas de clima frio."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O mapa da África com partes destacadas em tom mais escuro provavelmente indica as áreas de clima desértico: o Saara ao norte (maior deserto quente do mundo com 9 milhões de km²), o Namibe ao sudoeste e o Kalahari ao sul — regiões com menos de 250 mm de chuva anuais.",
+    "ajuda": "O mapa da África com partes destacadas pode representar diferentes fenômenos: desertos, florestas, áreas de conflito ou regiões áridas. Ao analisar a distribuição espacial das áreas destacadas, identifique qual fenômeno geográfico melhor corresponde à sua localização."
   },
   {
     "id": 8,
@@ -138,12 +145,13 @@
       "cadeia de montanhas no centro da República Democrática do Congo, recoberta por matas tropicais"
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O Sahel é uma faixa de transição semiárida que separa o Saara das savanas tropicais subsaarianas. Com uma largura variável entre 300 e 1.000 km, estende-se de Senegal à Etiópia. O avanço da desertificação nessa região ameaça a segurança alimentar de 80 milhões de pessoas.",
+    "ajuda": "O Sahel é uma faixa de transição entre o deserto do Saara (ao norte) e as savanas tropicais (ao sul). É uma região de grande vulnerabilidade ambiental e social, marcada pela desertificação e conflitos. Identifique qual alternativa descreve corretamente o Sahel."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MUNDO EDUCAÇÃO 2020) Sobre a localização e distribuição das savanas no Planeta, estão corretas as afirmações abaixo, exceto",
@@ -155,7 +163,8 @@
       "No território em que se estendem as savanas, vivem cerca de 20% da população mundial."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A afirmativa incorreta é a A: as savanas não se concentram no norte da Ásia e no extremo sul americano. Na verdade, a maior extensão de savanas está na África subsaariana (40% do continente), seguida pelo Brasil (cerrado) e pela Austrália. O norte da Ásia tem taiga e tundra, não savana.",
+    "ajuda": "A questão pede a alternativa que contém uma afirmativa INCORRETA sobre as savanas. Lembre-se de que as savanas existem na África, na América do Sul (cerrado), na Austrália e na Ásia. A savana africana é a mais extensa. Avalie qual afirmativa está equivocada."
   },
   {
     "id": 10,
@@ -174,6 +183,7 @@
       "Evita a expansão da desertificação."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A Grande Muralha Verde é um projeto de 11 países africanos para plantar uma barreira arbórea de 8.000 km, do Senegal à Etiópia, ao sul do Saara. O objetivo imediato é conter o avanço da desertificação no Sahel, proteger solos, recuperar áreas degradadas e garantir segurança alimentar para comunidades locais.",
+    "ajuda": "O Sahel sofre com a desertificação — o avanço do deserto sobre áreas antes vegetadas. Projetos de reforestação e criação de barreiras verdes são tentativas de conter esse processo. Pense em qual consequência imediata um projeto ambiental de plantio de árvores nessa região geraria."
   }
 ]

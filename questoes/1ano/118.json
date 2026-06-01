@@ -15,7 +15,8 @@
       "Quartzo."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O calcário é uma rocha sedimentar formada principalmente por carbonato de cálcio (CaCO₃). Em regiões com calcário, a água ligeiramente ácida dissolve a rocha ao longo de milênios, criando o relevo cárstico: cavernas, sumidouros, dolinas e lagos subterrâneos. O Parque Estadual do Alto Ribeira (SP) e a Chapada Diamantina (BA) têm excelentes exemplos.",
+    "ajuda": "As formas do relevo emergido da crosta terrestre revelam a história geológica da região: rochas dobradas indicam colisão de placas; falhas indicam fraturas na crosta; planaltos sobre crátons indicam estabilidade tectônica. Analise o que as feições do relevo descrito revelam sobre o passado geológico."
   },
   {
     "id": 2,
@@ -32,7 +33,8 @@
       "Somente as afirmativas II e IV são verdadeiras."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O ciclo das rochas é contínuo: rochas magmáticas podem ser erodidas e gerar sedimentos que formam rochas sedimentares; estas podem ser metamorfizadas pelo calor e pressão; e rochas metamórficas podem fundir e gerar novo magma. Fósseis só existem em rochas sedimentares. Não existe ordem obrigatória no ciclo — qualquer tipo pode transformar-se em outro.",
+    "ajuda": "O ciclo das rochas é um processo cíclico em que rochas magmáticas, sedimentares e metamórficas se transformam umas nas outras ao longo do tempo geológico. Identifique quais processos (fusão, resfriamento, erosão, sedimentação, metamorfismo) conectam os tipos de rocha entre si."
   },
   {
     "id": 3,
@@ -49,7 +51,8 @@
       "os dobramentos modernos."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "As bacias sedimentares são depressões da crosta onde sedimentos se acumulam por longos períodos. São as principais reservas de combustíveis fósseis (petróleo, gás natural, carvão) porque a matéria orgânica soterrada nessas bacias é transformada pela pressão e calor em hidrocarbonetos ao longo de milhões de anos.",
+    "ajuda": "As províncias geológicas refletem a estrutura interna da crosta e condicionam as formas do relevo. Crátons originam planaltos e serras antigas; bacias sedimentares originam planícies e depressões; dobramentos recentes originam cadeias montanhosas."
   },
   {
     "id": 4,
@@ -67,7 +70,8 @@
       "Ilha do tipo atol."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As falésias são formas de relevo costeiro erosivo, caracterizadas por paredões rochosos verticais formados pela ação das ondas na base da costa. São comuns no litoral nordestino brasileiro (falésias de Morro Branco e Beberibe, no Ceará) e em costas expostas à ação intensa das ondas. Em contraste, as praias são feições de deposição sedimentar.",
+    "ajuda": "As áreas costeiras apresentam formas de relevo específicas como falésias (costões rochosos escarpados), praias (deposição de areia), recifes (estruturas de coral ou rocha) e estuários (desembocadura de rios). Identifique a feição descrita na questão."
   },
   {
     "id": 5,
@@ -85,7 +89,8 @@
       "Carbonífera, nuclear, eólica."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As fontes de energia renováveis são aquelas que se regeneram naturalmente em escala humana: solar (radiação), eólica (vento), maremotriz (marés), hidráulica (rios) e biomassa (matéria orgânica). Destaca-se a maremotriz, que aproveita a energia cinética das marés — ainda pouco explorada no Brasil, mas com grande potencial no litoral maranhense e paraense.",
+    "ajuda": "As fontes de energia renováveis são aquelas que se regeneram naturalmente, como solar, eólica, hidroelétrica, geotérmica e de biomassa. As não renováveis incluem petróleo, carvão, gás natural e urânio. Classifique as opções listadas segundo esse critério."
   },
   {
     "id": 6,
@@ -102,7 +107,8 @@
       "eólica, pelas características do país e por não gerar gases do efeito estufa nem resíduos de operação."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A energia eólica é ideal para ilhas pequenas e isoladas por ser limpa (zero emissões operacionais), renovável e compatível com regiões de ventos constantes. Não gera resíduos radioativos (como nuclear) nem depende de rios (como hidrelétrica). O Brasil é o maior produtor eólico da América Latina, com capacidade instalada superior a 25 GW.",
+    "ajuda": "Para escolher a matriz energética mais adequada para uma região, avalie os recursos naturais disponíveis (sol, vento, água, biomassa), o impacto ambiental de cada opção, o custo de implantação e a regularidade de abastecimento. Analise qual combinação atende melhor às condições descritas."
   },
   {
     "id": 7,
@@ -119,7 +125,8 @@
       "apresentam uma maior fertilidade quando livres de compostos orgânicos."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "Os solos consolidam-se a partir de processos exógenos: intemperismo (desagregação das rochas), erosão (remoção e transporte) e deposição (acúmulo de sedimentos). A pedogênese — formação do solo — depende do clima, da rocha matriz, da topografia, dos organismos e do tempo. Em climas tropicais úmidos, forma-se o latossolo profundo e vermelho típico do Cerrado.",
+    "ajuda": "O solo é um recurso essencial para a produção de alimentos, regulação hídrica e manutenção da biodiversidade. Sua degradação por práticas inadequadas compromete a produtividade agrícola e aumenta o risco de erosão, assoreamento de rios e desertificação."
   },
   {
     "id": 8,
@@ -137,12 +144,13 @@
       "Movimentos de massa rápidos."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O assoreamento ocorre quando sedimentos (areia, argila, silte) se acumulam no leito de rios, lagos ou reservatórios, reduzindo sua profundidade e capacidade de armazenamento. É causado principalmente pelo desmatamento das matas ciliares e erosão das margens. O assoreamento compromete a navegação fluvial, o abastecimento de água e as usinas hidrelétricas.",
+    "ajuda": "O problema ambiental representado na figura provavelmente é erosão, assoreamento, desmatamento ou poluição hídrica. Identifique qual atividade humana está causando o impacto e como ele se manifesta na paisagem."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(PUC-RS) Para resolver a questão, leia o texto a seguir, sobre fontes de energia, e selecione as palavras/expressões que preenchem correta e coerentemente as lacunas.\n\nO _________ foi importante fonte de energia para a Primeira Revolução Industrial. Atualmente as maiores reservas estão localizadas no hemisfério _______. É um dos principais responsáveis pela __________, pois sua queima libera grande quantidade de óxido de enxofre na atmosfera.",
@@ -154,7 +162,8 @@
       "petróleo – norte – chuva ácida."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O carvão mineral é extraído principalmente no Sul do Brasil (RS e SC) e concentra-se no hemisfério norte (China, EUA, Índia). Sua queima libera SO₂ e NOₓ, que se combinam com a umidade da atmosfera formando a chuva ácida — um dos principais problemas ambientais das regiões industriais da Europa e China, que danifica florestas, rios e monumentos históricos.",
+    "ajuda": "Ao analisar fontes de energia, considere: renováveis (solar, eólica, hidrelétrica, biomassa) versus não renováveis (fósseis e nuclear); impacto ambiental; custo; disponibilidade regional. Identifique qual alternativa melhor descreve os critérios apresentados no texto."
   },
   {
     "id": 10,
@@ -171,6 +180,7 @@
       "Aluviões quaternários."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As bacias sedimentares são as únicas estruturas geológicas onde petróleo e gás natural se acumulam em quantidades exploráveis. A rocha reservatório precisa ser porosa (para armazenar o petróleo) e estar coberta por uma rocha impermeável (selante) que impeça a migração do hidrocarboneto. No Brasil, o pré-sal encontra-se em rochas carbonáticas sob camadas de sal.",
+    "ajuda": "As reservas petrolíferas estão associadas a bacias sedimentares, onde rochas porosas e permeáveis acumularam hidrocarbonetos ao longo de milhões de anos. No Brasil, as principais reservas estão no pré-sal, sob espessa camada de sal no fundo do Oceano Atlântico."
   }
 ]

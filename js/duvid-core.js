@@ -301,37 +301,62 @@ function sincronizarNomeGlobal() {
 }
 
 
-//Função quando se clica na palavra
+//Função quando se clica na palavra (padrão antigo: onclick="revelarParentese(this, '...')")
 function revelarParentese(elemento, definicao) {
-    // 1. Cláusula de Guarda (Fail Fast)
+    // 1. Cláusula de Guarda
     if (!elemento || elemento.classList.contains('desbloqueado')) return;
 
-    // 2. Lógica de Conteúdo
-    // Mantém a palavra e injeta a definição com efeito de fade
+    // Recupera o texto original da palavra antes de modificar o innerHTML
+    const palavra = elemento.dataset.palavra || elemento.textContent.trim();
+
+    // 2. Injeta a definição inline com efeito de fade
     elemento.innerHTML += ` <span class="definicao-fade">(${definicao})</span>`;
 
-    // 3. Estilização via Classe (Evite style.property no JS, use CSS se possível)
+    // 3. Marca visualmente como desbloqueado
     elemento.classList.add('desbloqueado');
-    // DICA: O ideal seria colocar essas cores no seu CSS na classe .desbloqueado
-    elemento.style.color = "#155724"; 
+    elemento.style.color = "#155724";
     elemento.style.fontWeight = "bold";
     elemento.style.cursor = "default";
 
-    // 4. Gatilhos de Recompensa (O "Vício" do RPG)
+    // 4. Mini feedback flutuante "+2 🌍"
+    const fb = document.createElement('span');
+    fb.style.cssText = 'position:absolute;top:-28px;left:50%;transform:translateX(-50%);background:#43a047;color:#fff;font-size:0.78em;font-weight:bold;padding:2px 8px;border-radius:20px;pointer-events:none;white-space:nowrap;z-index:1000;animation:glossSubir 1.2s ease forwards';
+    fb.textContent = '+2 🌍';
+    elemento.style.position = 'relative';
+    elemento.appendChild(fb);
+    setTimeout(() => fb.remove(), 1300);
+
+    // 5. Recompensa: som + globinhos
     if (typeof playSom === "function") playSom('acerto');
 
     if (typeof DuvidDB !== "undefined") {
-        // Adiciona um valor pequeno por curiosidade (XP Passiva)
         DuvidDB.addGlobinhos(2);
-        
-        // 5. ATUALIZAÇÃO SÊNIOR: Sincroniza toda a UI (Header, Saldo, etc)
-        if (typeof atualizarInterface === "function") {
-            atualizarInterface();
+        if (typeof atualizarInterface === "function") atualizarInterface();
+        if (typeof feedbackVisualAcerto === "function") feedbackVisualAcerto();
+    }
+
+    // 6. Alimenta a Ficha de Conceitos (se existir #ficha-conceitos na página)
+    const ficha = document.getElementById('ficha-conceitos');
+    if (ficha) {
+        ficha.style.display = 'block';
+        // Garante estrutura interna
+        if (!ficha.querySelector('h3')) {
+            ficha.innerHTML = `<h3>📋 Ficha de Conceitos</h3><p class="contador" id="gloss-contador">0 termos coletados</p><ul id="lista-glossario"></ul>`;
         }
-        
-        // Se acertou, podemos até fazer o globinho do header dar um pulinho
-        if (typeof feedbackVisualAcerto === "function") {
-            feedbackVisualAcerto();
+        const lista = document.getElementById('lista-glossario');
+        if (lista) {
+            const jaExiste = [...lista.querySelectorAll('li')].some(li => li.dataset.palavra === palavra);
+            if (!jaExiste) {
+                const item = document.createElement('li');
+                item.dataset.palavra = palavra;
+                item.innerHTML = `<b>${palavra}</b>: ${definicao}`;
+                lista.appendChild(item);
+                const contador = document.getElementById('gloss-contador');
+                if (contador) {
+                    const n = lista.querySelectorAll('li').length;
+                    contador.textContent = `${n} ${n === 1 ? 'termo coletado' : 'termos coletados'}`;
+                }
+            }
         }
     }
 }

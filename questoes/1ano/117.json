@@ -16,7 +16,8 @@
       "o desmatamento."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "O desmatamento em encostas remove a cobertura vegetal que protegia o solo da erosão pela chuva. Sem raízes para ancorar o solo e sem a interceptação das folhas, a água escoa diretamente sobre o terreno, carregando partículas e podendo gerar deslizamentos. O terraceamento e o reflorestamento são as principais técnicas de contenção.",
+    "ajuda": "A preservação da cobertura vegetal e a adoção de técnicas como curvas de nível, plantio em terraços e reflorestamento são formas eficazes de conter a erosão do solo em encostas. Pense em como a vegetação retém o solo e amortece o impacto das chuvas."
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
       "O horizonte B apresenta baixo desenvolvimento do solo, sendo um dos primeiros horizontes a se formar e o horizonte com a menor fertilidade em relação aos outros horizontes."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O perfil do solo é dividido em horizontes: O (matéria orgânica), A (mais fértil, escuro), B (acúmulo de minerais), C (rocha alterada/saprolito) e R (rocha sã/matriz). O horizonte C é a zona de transição entre o solo propriamente dito e a rocha matriz, contendo fragmentos da rocha-mãe em processo de intemperização — ainda visíveis, mas já alterados.",
+    "ajuda": "O solo é formado pela decomposição lenta de rochas (intemperismo) combinada com a matéria orgânica de seres vivos. Suas camadas (horizontes) variam de acordo com a profundidade, composição e idade. Identifique quais características são determinantes para a fertilidade do solo."
   },
   {
     "id": 3,
@@ -49,7 +51,8 @@
       "tectonismo e erosão."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O intemperismo é o processo de desagregação e decomposição das rochas in situ (no lugar). Já a erosão envolve o transporte e a remoção do material geológico pela água, vento ou gelo. Os dois processos são complementares: o intemperismo prepara o material e a erosão o move. Juntos, são os principais agentes de modelagem exógena do relevo.",
+    "ajuda": "O intemperismo é o conjunto de processos de desagregação física e decomposição química das rochas. Ele origina o material a partir do qual o solo se forma ao longo de milhares de anos. Identifique se a questão trata de intemperismo físico, químico ou biológico."
   },
   {
     "id": 4,
@@ -68,7 +71,8 @@
       "a interrupção da ação de microrganismos, pois o material utilizado é biodegradável."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Os geotêxteis de fibra natural (como tronco de bananeira, sisal ou juta) são usados para proteger encostas contra erosão enquanto a vegetação se reestabelece. Fixados no solo, eles reduzem a velocidade de escoamento da água, diminuem o impacto das gotas de chuva e criam condições microclimáticas para o desenvolvimento de mudas nativas.",
+    "ajuda": "Os geotêxteis são materiais utilizados para conter a erosão em encostas, estabilizar taludes e proteger o solo. Eles são uma solução técnica de engenharia que imita a função natural da cobertura vegetal. Analise como esses materiais funcionam no controle da erosão."
   },
   {
     "id": 5,
@@ -81,11 +85,12 @@
       "de magma.",
       "profundas.",
       "superficiais.",
-      "intermediárias. e) da rocha matriz.",
-      ""
+      "intermediárias.",
+      "da rocha matriz."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Os solos superficiais são os mais jovens e menos desenvolvidos — formados diretamente sobre a rocha ou em terrenos com pouco tempo de pedogênese. Em regiões tropicais úmidas com muita chuva e calor, o intemperismo químico é intenso e os solos tendem a ser profundos e altamente lixiviados (latossolos). Já em regiões áridas, os solos são rasos.",
+    "ajuda": "A formação do solo é influenciada por: material de origem (rocha-mãe), clima (temperatura e precipitação), organismos vivos, relevo e tempo. Pense em como cada um desses fatores acelera ou retarda o desenvolvimento do solo."
   },
   {
     "id": 6,
@@ -103,7 +108,8 @@
       "Terraceamento na propriedade."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Arar o solo do topo ao vale cria sulcos verticais que funcionam como canais de escoamento. Quando chove, a água desce aceleradamente por esses sulcos, intensificando a erosão laminar e linear. A técnica correta é arar em curvas de nível (horizontalmente), criando micro-barragens naturais que retêm a água e reduzem o escoamento superficial.",
+    "ajuda": "As práticas agrícolas conservacionistas incluem: plantio em curvas de nível (evita sulcos de erosão), terraços (patamares horizontais na encosta), cobertura morta (mulching), e rotação de culturas. Identifique qual prática o agricultor deveria adotar para reduzir a erosão representada no esquema."
   },
   {
     "id": 7,
@@ -120,7 +126,8 @@
       "A compactação do terreno provocada pela atividade pecuária"
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O controle biológico e a adubação orgânica são práticas que promovem a saúde do solo, aumentando sua fauna microbiana e estrutura. Portanto, não são fatores de degradação — ao contrário, são técnicas de conservação. Os fatores que degradam o solo incluem: uso excessivo de agrotóxicos, monocultura, queimadas, compactação e desmatamento.",
+    "ajuda": "A desertificação é a degradação das terras áridas, semiáridas e sub-úmidas secas causada por fatores climáticos e ações humanas (desmatamento, superexploração do solo). Ela é irreversível a curto prazo e afeta principalmente regiões do semiárido nordestino e do Sahel africano."
   },
   {
     "id": 8,
@@ -137,7 +144,8 @@
       "o material inorgânico presente no solo resulta de alterações ocorridas na rocha."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O desenvolvimento do solo (pedogênese) é um processo lento — de centenas a milhares de anos. A vegetação é parte essencial desse processo: suas raízes fragmentam as rochas, a matéria orgânica enriquece o horizonte A e a umidade mantida pelas plantas favorece o intemperismo químico. Retirar a vegetação interrompe e reverte esse processo.",
+    "ajuda": "O solo se forma a partir de processos que atuam sobre a rocha-mãe ao longo de séculos. As figuras mostram os horizontes do solo, que se diferenciam pela cor, textura e composição. O horizonte O (superficial) é rico em matéria orgânica; o horizonte C é mais próximo da rocha."
   },
   {
     "id": 9,
@@ -155,7 +163,8 @@
       "“Plante forragem para pasto”."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O plantio em curvas de nível é a principal técnica de conservação do solo em terrenos inclinados. As curvas de nível são linhas que conectam pontos de mesma altitude, e plantar ao longo delas cria 'degraus' naturais que retêm a água e os sedimentos, reduzindo o escoamento superficial e a erosão. É eficaz mesmo em solos com risco de deslizamento.",
+    "ajuda": "A análise do solo antes de cultivar é fundamental para identificar sua textura (argila, areia, silte), estrutura, pH e teor de nutrientes. Solos argilosos retêm mais água mas podem endurecer; solos arenosos drenam rapidamente mas têm baixa fertilidade natural."
   },
   {
     "id": 10,
@@ -174,6 +183,7 @@
       "decomposição do substrato."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A fertilidade do solo depende de sua estrutura, composição orgânica e presença de nutrientes. O desmatamento e a monocultura degradam o solo progressivamente: sem reposição de matéria orgânica, sem raízes que o estruturem e com lixiviação constante, o solo perde nutrientes e capacidade produtiva — levando à queda da fertilidade e, nos casos extremos, à desertificação.",
+    "ajuda": "A ocupação desordenada (desmatamento, queimadas, compactação) impede a regeneração natural do solo. A principal barreira à recuperação é a perda da camada fértil superficial (horizonte A), que leva séculos para se reconstituir e sustenta toda a vida vegetal."
   }
 ]

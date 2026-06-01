@@ -14,7 +14,8 @@
       "foi uma atividade vulcânica entre as maiores da história da Terra, que ocorreu durante o Paleógeno (antigo Terciário Inferior), quando se iniciou a separação América do Sul-África. Os solos desenvolvidos sobre essas rochas são extremamente férteis."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Lembre-se de que os derrames basálticos do centro-sul do Brasil estão associados à abertura do Oceano Atlântico e à separação dos continentes sul-americano e africano. Pense em qual era geológica ocorreu esse evento e quais tipos de solo se formam a partir do intemperismo de rochas basálticas. Analise qual alternativa descreve corretamente a origem e os solos resultantes.",
+    "comentario": "Os derrames basálticos do Mesozoico, como os que originaram a Serra Geral no Sul do Brasil, estão associados à separação dos continentes americano e africano. A lava vulcânica que extravasou pelas fraturas da crosta formou um dos maiores campos de basalto do mundo, hoje responsável pelos solos de terra roxa — extremamente férteis e fundamentais para a cafeicultura e a agricultura moderna do Paraná e São Paulo."
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       "Somente as afirmativas II, III e IV são corretas."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Analise cada afirmativa (I a IV) sobre a estrutura geológica do Brasil. Lembre-se: os escudos cristalinos são muito antigos e ocupam cerca de 36% do território, as bacias sedimentares ocupam cerca de 64% e o Brasil praticamente não possui dobramentos modernos. Avalie a veracidade de cada afirmativa com base nesses dados.",
+    "comentario": "A estrutura geológica brasileira combina escudos cristalinos pré-cambrianos (rochas antigas e resistentes, como o Escudo Guianense e o Brasileiro) com bacias sedimentares (como a do Paraná e a Amazônica), que concentram petróleo, carvão e gás natural. Essa dualidade explica tanto a riqueza mineral do país quanto a variedade de relevos — planaltos antigos sobre os escudos, depressões sobre as bacias."
   },
   {
     "id": 3,
@@ -48,12 +50,13 @@
       "bacias sedimentares, recentes, ígneas, instabilidade."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Pense nas características dos crátons: são estruturas geológicas antigas, estáveis e resistentes, compostas por rochas ígneas e metamórficas. Lembre-se de que os crátons se subdividem em escudos cristalinos e plataformas continentais. Identifique qual combinação de palavras preenche corretamente as lacunas sobre suas características de idade, composição e estabilidade.",
+    "comentario": "Os crátons são as porções mais antigas e estáveis da crosta terrestre, formadas no Pré-Cambriano e praticamente inativas tectonicamente. Dividem-se em escudos cristalinos (expostos) e plataformas continentais (recobertos por sedimentos). No Brasil, o Escudo Guianense e o Escudo Brasileiro são exemplos de crátons que sustentam grande parte do planalto central do país."
   },
   {
     "id": 4,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "\"As altitudes do relevo brasileiro são, em geral, modestas. O ponto mais alto do país não ultrapassa os 3 mil metros: o pico da Neblina (2993m), perto da fronteira do Amazonas com a Venezuela. Cerca de 41% do território nacional tem, no máximo, 200m de altitude; 78% tem até 500m; e 92,7% até 900m de altitude”.",
@@ -67,7 +70,8 @@
       "totalmente aplainado, com poucas áreas de depressão."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Leia o texto sobre as altitudes modestas do relevo brasileiro. Pense: se a maioria do território tem menos de 500 metros de altitude e quase nenhuma montanha elevada, o que isso indica sobre a idade geológica do relevo? Estruturas antigas sofreram mais desgaste erosivo ao longo do tempo, resultando em formas menos acidentadas. Analise qual alternativa explica corretamente essa característica.",
+    "comentario": "O relevo brasileiro é geologicamente antigo — formado principalmente no Pré-Cambriano, há mais de 540 milhões de anos. Essa antiguidade implica intenso desgaste erosivo ao longo de eras geológicas, resultando em altitudes modestas (em geral abaixo de 1.200m) e formas arredondadas, sem as cadeias montanhosas jovens e elevadas típicas de países com dobramentos modernos como os Andes."
   },
   {
     "id": 5,
@@ -86,12 +90,13 @@
       "reservas de combustível fóssil."
     ],
     "correta": 2,
+    "ajuda": "Lembre-se de que os escudos cristalinos e maciços antigos são constituídos por rochas ígneas e metamórficas formadas no Pré-Cambriano. Pense em qual tipo de recurso mineral é encontrado nessas estruturas geológicas antigas: minerais metálicos como ferro, manganês, ouro e bauxita. Compare com as bacias sedimentares, onde se encontram combustíveis fósseis.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   },
   {
     "id": 6,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(UFRS) O território brasileiro possui grande diversidade de formas de relevo, como serras, escarpas, planaltos, planícies, depressões e outras.\n\nNa coluna 1, são citadas cinco formas de relevo brasileiro; na coluna 2, são apresentadas características de três delas. Associe-as adequadamente.\n\nA sequência correta de preenchimento dos parênteses, de cima para baixo, é",
@@ -103,7 +108,8 @@
       "4 - 3 - 2."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "A questão traz uma tabela de associação entre formas de relevo e suas características. Lembre-se das definições de cada forma: planalto (erosão maior que deposição), planície (deposição maior que erosão) e depressão (área rebaixada em relação às bordas). Associe cada característica da coluna 2 à forma de relevo correta da coluna 1.",
+    "comentario": "A diversidade do relevo brasileiro — serras, chapadas, planaltos e planícies — reflete a variação das estruturas geológicas subjacentes. As serras costeiras resultam do soerguimento de blocos cristalinos; as chapadas formam-se sobre bacias sedimentares; e as planícies ocupam áreas de deposição fluvial e lacustre. Cada forma de relevo influencia o uso do solo, a vegetação e o clima regional."
   },
   {
     "id": 7,
@@ -120,12 +126,13 @@
       "os dobramentos modernos."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Pense nas diferenças entre os tipos de estruturas geológicas quanto à formação de recursos energéticos. As bacias sedimentares acumulam matéria orgânica ao longo de milhões de anos, formando combustíveis fósseis como petróleo, gás natural e carvão. Os escudos cristalinos e maciços antigos contêm minerais metálicos, não energéticos fósseis.",
+    "comentario": "As bacias sedimentares brasileiras, como a do Paraná, a Amazônica e a do Parnaíba, são as principais reservatórias de combustíveis fósseis (petróleo, gás e carvão), pois suas rochas porosas e impermeáveis criam condições ideais para a acumulação de matéria orgânica decomposta. É por isso que a exploração petrolífera no Brasil se concentra em bacias sedimentares, tanto terrestres quanto offshore."
   },
   {
     "id": 8,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "2ano/img/205/s5q8.png",
@@ -138,7 +145,8 @@
       "Leo – A imagem corresponde a formas denominadas Inselbergs – são formas residuais que se destacam em meio aos pediplanos do Sertão nordestino brasileiro e que resistiram à erosão devido à composição de suas rochas."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "A imagem mostra uma forma de relevo com superfície plana no topo e encostas de declive acentuado. Pense nas definições: chapada é um planalto sedimentar de superfície aplainada (tabular) com bordas escarpadas. Compare com as outras definições apresentadas pelos alunos e identifique qual descreve corretamente essa forma de relevo.",
+    "comentario": "As chapadas são formas de relevo tabulares — com topo plano e bordas escarpadas — resultantes da erosão diferencial em rochas sedimentares horizontais. São típicas do Planalto Central brasileiro, como a Chapada dos Veadeiros e a Chapada Diamantina. Sua superfície aplainada favorece a agricultura mecanizada, razão pela qual o cerrado sobre as chapadas foi intensamente convertido em lavouras de soja."
   },
   {
     "id": 9,
@@ -154,7 +162,8 @@
       "O relevo brasileiro apresenta altitudes modestas no interior, e no litoral é bastante íngreme e elevado devido à presença de dobramentos terciários."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Atenção: a questão pede a alternativa que é EXCEÇÃO, ou seja, a afirmação INCORRETA sobre a geologia e o relevo brasileiro. Pense nas características reais do litoral brasileiro: ele não é íngreme nem elevado como descrito em uma das alternativas. O litoral brasileiro é, na maioria, de planícies costeiras e não apresenta dobramentos terciários.",
+    "comentario": "O relevo brasileiro é caracterizado pela ausência de dobramentos modernos: sem cadeias como os Andes (que resultam da colisão de placas no Pacífico), o Brasil tem altitudes modestas e relevos desgastados. A afirmação de que o litoral brasileiro é 'íngreme e elevado devido a dobramentos terciários' é incorreta — as serras costeiras resultam de falhas geológicas e soerguimento de blocos, não de dobramentos."
   },
   {
     "id": 10,
@@ -172,6 +181,7 @@
       "em A, depósitos sedimentares compostos por materiais orgânicos."
     ],
     "correta": 0,
+    "ajuda": "Observe os dois mapas das estruturas geológicas brasileiras. Lembre-se de que os escudos cristalinos são compostos por rochas magmáticas (ígneas) e metamórficas, muito antigas. As bacias sedimentares são compostas por rochas sedimentares. Associe cada letra do mapa ao tipo de estrutura geológica correto e à composição rochosa correspondente.",
     "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p>\r\n\r\n\t\t\t\t<p> </p> -->"
   }
 ]

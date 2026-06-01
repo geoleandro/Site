@@ -14,7 +14,8 @@
       "Vila do Conde: motocicletas, destinadas primordialmente ao mercado africano."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Observe o mapa dos portos exportadores e pense em qual produto é exportado em maior volume pelo porto de Itaqui (São Luís, MA). Lembre-se de que o Complexo de Carajás, no Pará, produz imensos volumes de minério de ferro escoados pelo corredor ferroviário Carajás-Itaqui. Associe cada porto ao produto de maior exportação e ao principal destino.",
+    "comentario": "O porto de Itaqui (MA) é o principal terminal de exportação de minério de ferro do Corredor Norte, ligado à Estrada de Ferro Carajás. A mina de Carajás (PA), maior reserva de ferro do mundo, exporta principalmente para a China e outros mercados asiáticos, refletindo a reorientação da geopolítica mineral brasileira em direção à demanda industrial asiática do século XXI."
   },
   {
     "id": 2,
@@ -30,7 +31,8 @@
       "as principais reservas petrolíferas e carboníferas do mundo encontram-se nas bacias sedimentares, enquanto minerais como ferro, níquel, manganês, ouro, bauxita etc. são encontrados nos maciços cristalinos; os dobramentos modernos constituem áreas de intenso vulcanismo."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Pense nas características das três grandes estruturas geológicas: maciços cristalinos (rochas ígneas/metamórficas, minerais metálicos), bacias sedimentares (rochas sedimentares, combustíveis fósseis) e dobramentos modernos (rochas dobradas, vulcanismo). Analise cada afirmativa e identifique qual delas descreve corretamente o papel de cada estrutura nos recursos minerais mundiais.",
+    "comentario": "As bacias sedimentares são o ambiente geológico ideal para a formação de petróleo e carvão, pois acumulam matéria orgânica que se transforma sob calor e pressão. Já os escudos cristalinos, com suas rochas ígneas e metamórficas, concentram minérios metálicos como ferro, ouro e manganês — resultado de processos magmáticos e hidrotermais. Essa distinção geológica explica a distribuição espacial dos recursos minerais no Brasil."
   },
   {
     "id": 3,
@@ -48,12 +50,13 @@
       "I e III."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Observe o mapa dos corredores de exportação do Brasil. Pense em quais corredores são os mais importantes para o escoamento do minério de ferro e outros minerais metálicos produzidos principalmente em Minas Gerais e no Pará. Associe os corredores às principais ferrovias e portos utilizados na exportação mineral.",
+    "comentario": "Os corredores de exportação brasileiros integram ferrovias, portos e rodovias para escoar a produção mineral e agrícola do interior até os mercados externos. Os mais importantes são o Corredor Norte (Carajás–Itaqui) e o Corredor Centro-Leste (minas do Quadrilátero Ferrífero–portos do Rio de Janeiro e Espírito Santo), que juntos respondem pela maior parte das exportações de minério de ferro do país."
   },
   {
     "id": 4,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MACKENZIE) A extração de minerais metálicos no Brasil, como ferro, bauxita, cassiterita, ouro, dentre outros, concentra-se principalmente nos estados de Minas Gerais, Goiás, Pará, Mato Grosso e Rondônia. Essa atividade está associada basicamente às:",
@@ -65,7 +68,8 @@
       "áreas de bacias sedimentares, que sofreram extensivos derrames vulcânicos no período Jurássico da Era Mesozoica.."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Lembre-se de que os minerais metálicos (ferro, bauxita, ouro, cassiterita, manganês) estão associados aos escudos cristalinos, formados no Pré-Cambriano por processos magmáticos e metamórficos. Pense em qual tipo de estrutura geológica concentra esses minerais e em quais estados brasileiros os escudos cristalinos predominam.",
+    "comentario": "A concentração da extração de minerais metálicos nos escudos cristalinos do Brasil é uma consequência direta da geologia: as rochas ígneas e metamórficas do Pré-Cambriano, formadas por magma resfriado e metamorfismo, são o ambiente natural de acumulação de ferro, ouro, bauxita e outros metais. O Quadrilátero Ferrífero (MG) e a Serra dos Carajás (PA) são os exemplos mais expressivos desse padrão."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "Bauxita; Pará; rio Trombetas."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Observe o mapa e pense em qual estado brasileiro possui a maior reserva de bauxita do mundo em exploração. Lembre-se que a bauxita é o minério do alumínio e que a maior jazida brasileira fica no vale do rio Trombetas, no Pará. Associe corretamente o minério, o estado e a bacia hidrográfica indicados no mapa.",
+    "comentario": "A bauxita do rio Trombetas (PA) é a maior reserva explorada do mundo, processada na refinaria de Alunorte (Barcarena/PA) para produzir alumina e, depois, alumínio no complexo de Albrás. Apesar de ser o sexto produtor de alumina, o Brasil agrega relativamente pouco valor à bauxita antes de exportá-la, ilustrando o modelo primário-exportador que ainda caracteriza parte da economia mineral nacional."
   },
   {
     "id": 6,
@@ -101,12 +106,13 @@
       "F-V-F-V."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Analise os mapas de geologia e de recursos minerais comparando-os. Pense: os minerais metálicos (ferro, manganês, ouro) são encontrados em estruturas cristalinas, enquanto os minerais energéticos (petróleo, carvão, gás natural) estão nas bacias sedimentares. Avalie cada afirmativa (V ou F) sobre a distribuição geológica dos recursos minerais.",
+    "comentario": "A relação entre a geologia e os recursos minerais do Brasil é direta: sobre escudos cristalinos concentram-se os minérios metálicos; nas bacias sedimentares, os combustíveis fósseis. Essa correspondência pode ser verificada comparando mapas geológicos e de recursos minerais: o Pará e Minas Gerais (sobre escudos) lideram a produção de ferro e ouro; o Rio de Janeiro e o Rio Grande do Norte (bacias sedimentares) dominam a produção de petróleo."
   },
   {
     "id": 7,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "fonte_apoio": "Fonte: Companhia Siderúrgica Nacional (CSN), 2007. Atlas geográfico escolar. Rio de Janeiro: IBGE, 2010.",
@@ -120,12 +126,13 @@
       "ao baixo preço do cobre."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Lembre-se de que o Maciço do Urucum no Mato Grosso do Sul possui grandes reservas de manganês e ferro. Pense em qual é o principal obstáculo para a exploração integral dessas riquezas: a região é pouco habitada e está longe dos grandes centros industriais. Qual fator logístico limita o escoamento dessa produção mineral?",
+    "comentario": "O Maciço de Urucum (MS), com grandes reservas de manganês e ferro, tem sua exploração limitada pela precariedade da infraestrutura de transportes no interior do Mato Grosso do Sul. Esse é um problema recorrente na mineração brasileira: jazidas descobertas no interior do país ficam subutilizadas por falta de ferrovias e rodovias que as conectem aos portos — confirmando que minério sem logística não vira riqueza."
   },
   {
     "id": 8,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "2ano/img/208/s8q8.png",
@@ -138,15 +145,16 @@
       "ao programa Araguaia-Tocantins para as áreas indígenas na Amazônia."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Observe o mapa e identifique a área destacada no norte do Pará e do Maranhão. Pense no Programa Grande Carajás: um complexo de mineração, agropecuária e extração madeireira com um corredor ferroviário ligando as minas ao porto de São Luís (Itaqui). Qual alternativa descreve corretamente esse programa e sua logística de exportação?",
+    "comentario": "A região de Carajás (PA) concentra um dos maiores complexos minerais do mundo: ferro, cobre, ouro, manganês e níquel, escoados pela Estrada de Ferro Carajás (892 km) até o porto de Itaqui em São Luís (MA). O Programa Grande Carajás dos anos 1980 transformou a Amazônia Oriental em fronteira mineral, atraindo siderúrgicas, projetos agropecuários e gerando impactos socioambientais significativos."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2022",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2022) Leia a o texto abaixo e associe a definição correta:\n\nGrande riqueza brasileira do século XVIII, esse metal é conhecido pela sua maleabilidade, é utilizado pelas indústrias eletrônica, espacial, de instrumentos médicos e pela ourivesaria. Por volta de 1950, o país assistiu a formação de grandes garimpos na Serra Pelada (PA) e os vales do rio Madeira e Tapajós. Deixaram graves danos ao ambiente por conta da contaminação dos rios por mercúrio. É na região de Paracatu (MG), que está a maior produção brasileira desse metal (65 toneladas em 2012). A maior reserva do mundo está na África do sul (14%) e possui seis mil toneladas. O Brasil possui 4,5%.",
+    "pergunta": "Leia a o texto abaixo e associe a definição correta:\n\nGrande riqueza brasileira do século XVIII, esse metal é conhecido pela sua maleabilidade, é utilizado pelas indústrias eletrônica, espacial, de instrumentos médicos e pela ourivesaria. Por volta de 1950, o país assistiu a formação de grandes garimpos na Serra Pelada (PA) e os vales do rio Madeira e Tapajós. Deixaram graves danos ao ambiente por conta da contaminação dos rios por mercúrio. É na região de Paracatu (MG), que está a maior produção brasileira desse metal (65 toneladas em 2012). A maior reserva do mundo está na África do sul (14%) e possui seis mil toneladas. O Brasil possui 4,5%.",
     "alternativas": [
       "Alumínio.",
       "Ouro.",
@@ -155,15 +163,16 @@
       "Manganês."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Leia o texto descrevendo um metal: maleável, utilizado em eletrônica, história colonial no século XVIII, garimpos na Serra Pelada e nos rios da Amazônia, contaminação por mercúrio. Pense em qual metal precioso tem essas características históricas e ambientais no Brasil. Qual metal foi disputado nos garimpos amazônicos e ainda é produzido em Paracatu (MG)?",
+    "comentario": "O ouro foi o motor da interiorização do Brasil no século XVIII, gerando cidades como Ouro Preto, Vila Rica e Diamantina. A mineração aurífera concentrou-se no Quadrilátero Ferrífero (MG) e em Goiás, conectando o interior do país ao litoral por meio de caminhos que se tornaram as primeiras estradas do Brasil colonial. A crise do ouro no final do século XVIII marcou o declínio econômico de Minas Gerais."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2022",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2022) Leia a o texto abaixo e a associe a definição correta:\n\nÉ um dos metais mais importantes para a atividade industrial em função da sua durabilidade, dureza e abundância e também por ser um produto barato. É utilizado na fabricação do aço e extraído da hematita, entre outros minérios. O Brasil possui a quinta maior reserva do mundo, atrás da China (1º), Ucrânia (2º), Rússia (3º) e Austrália (4º).",
+    "pergunta": "Leia a o texto abaixo e a associe a definição correta:\n\nÉ um dos metais mais importantes para a atividade industrial em função da sua durabilidade, dureza e abundância e também por ser um produto barato. É utilizado na fabricação do aço e extraído da hematita, entre outros minérios. O Brasil possui a quinta maior reserva do mundo, atrás da China (1º), Ucrânia (2º), Rússia (3º) e Austrália (4º).",
     "alternativas": [
       "Estanho.",
       "Cobre.",
@@ -172,6 +181,7 @@
       "Ouro."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Leia o texto descrevendo um metal: durável, abundante, barato, base para fabricação do aço, extraído da hematita, quinto maior reservatório mundial. Pense em qual metal é o principal insumo da indústria siderúrgica e tem Minas Gerais e Pará como maiores produtores no Brasil. Qual metal é fundamental para a construção civil e a indústria pesada?",
+    "comentario": "O ferro é o minério mais importante para a industrialização moderna, sendo matéria-prima do aço usado na construção civil, na indústria automobilística e na produção de máquinas. O Brasil tem a segunda maior reserva de minério de ferro do mundo, concentrada no Quadrilátero Ferrífero (MG) e em Carajás (PA), tornando-se um dos maiores exportadores globais, com destaque para as vendas à China."
   }
 ]

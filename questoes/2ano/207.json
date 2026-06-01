@@ -13,7 +13,8 @@
       "Aziz Ab’Saber, utilizando o critério morfoclimático, explicou as formas de relevo pela ação do clima e ampliou a classificação de Aroldo Azevedo, acrescentando novas unidades ao relevo brasileiro."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Lembre-se das contribuições de cada geógrafo para o estudo do relevo brasileiro: Aroldo de Azevedo usou critério altimétrico simples, Aziz Ab'Saber adotou o critério morfoclimático e Jurandyr Ross utilizou morfoestrutura, morfoescultura e morfoclimática. Pense em qual geógrafo ampliou o trabalho do anterior acrescentando o critério climático. Analise qual alternativa descreve corretamente cada contribuição.",
+    "comentario": "Aziz Ab'Saber ampliou o trabalho de Aroldo Azevedo introduzindo o critério morfoclimático: não basta classificar as formas do relevo, é preciso entender como o clima as criou. Já Jurandyr Ross, nos anos 1980, usou o Projeto RADAM Brasil para criar uma taxonomia hierárquica que identifica planaltos, planícies e depressões como as três grandes categorias do relevo nacional."
   },
   {
     "id": 2,
@@ -30,7 +31,8 @@
       "Chapadas, Depressões e Bacias Sedimentares."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Lembre-se que a classificação de Jurandyr Ross divide o relevo brasileiro em três grandes formas: planaltos (onde a erosão é maior que a deposição), planícies (onde a deposição supera a erosão) e depressões (áreas rebaixadas em relação ao entorno). Descarte as alternativas que incluem formas que não fazem parte dessa classificação, como montanhas ou dobramentos modernos.",
+    "comentario": "A classificação de Jurandyr Ross, adotada pelo IBGE, organiza o relevo brasileiro em três grandes unidades: planaltos (áreas elevadas modeladas pela erosão), planícies (terrenos baixos e planos de deposição) e depressões (áreas rebaixadas, inferiores ao entorno). Essa tripartição simplifica a complexidade geomorfológica do país e é amplamente usada no ensino e no planejamento territorial."
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
       "presente nas regiões Centro-Oeste e Nordeste, tendo sua formação associada, principalmente, a processos erosivos em planaltos sedimentares."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Observe a foto da chapada e pense em suas características: superfície plana no topo, encostas com declive acentuado, formação em rochas sedimentares. Lembre-se de que as chapadas são formas típicas do Cerrado e do Nordeste, formadas por erosão diferencial em planaltos sedimentares. Identifique em qual região e sobre qual tipo de rocha essa forma de relevo predomina.",
+    "comentario": "As chapadas são formas tabulares típicas do Brasil Central e do Nordeste, resultado da erosão diferencial em sequências sedimentares horizontais. Sua superfície plana é valorizada pela agricultura mecanizada — o que explica a devastação do Cerrado sobre as chapadas para o plantio de soja. Chapada dos Guimarães (MT), dos Veadeiros (GO) e Diamantina (BA) são exemplos emblemáticos."
   },
   {
     "id": 4,
@@ -66,7 +69,8 @@
       "Pantanal: planaltos."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Observe o mapa com a classificação de Ross e localize as grandes unidades de relevo em cada porção do território. Pense: o Sul do Brasil é dominado por planaltos (Planalto Meridional), a Amazônia por planícies e a faixa litorânea por depressões. Analise qual alternativa associa corretamente cada porção do território à forma de relevo predominante.",
+    "comentario": "O Sul do Brasil, na fronteira com o Mercosul (Argentina, Uruguai e Paraguai), é dominado por planaltos — especialmente o Planalto Meridional, formado por derrames basálticos que geraram solos férteis. Essa configuração geográfica favoreceu a ocupação agrícola europeia (especialmente de italianos e alemães) e a integração econômica com os países platinos."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "Planalto das Guianas."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Lembre-se da classificação de Aziz Ab'Saber: ele utilizou critérios morfoclimáticos para definir as grandes unidades do relevo brasileiro. Pense em qual forma de relevo predomina no território brasileiro segundo esse geógrafo. A resposta envolve a forma de relevo mais representativa do interior do país, acima das planícies costeiras e amazônicas.",
+    "comentario": "Para Ab'Saber, o planalto é a forma de relevo que ocupa a maior parte do território brasileiro, resultado de antigas superfícies de aplainamento que foram soerguidas e depois erodidas. Essa predominância de planaltos explica a escassez de grandes planícies interiores no Brasil (com exceção da Amazônica e do Pantanal), ao contrário do que ocorre na Argentina ou na Sibéria."
   },
   {
     "id": 6,
@@ -101,7 +106,8 @@
       "O caráter residual do modelado é muito marcante nos planaltos e serras de Goiás-Minas. Suas formas foram elaboradas ainda no período pré-cambriano e não sofreram grandes alterações em períodos posteriores."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Leia a citação de Jurandyr Ross com atenção: ele distingue a idade das estruturas geológicas da idade das formas de relevo. Pense que as estruturas são antigas (Pré-Cambriano), mas as formas atuais são resultado de processos erosivos mais recentes. Qual alternativa descreve corretamente essa distinção entre estruturação geológica e modelagem geomorfológica?",
+    "comentario": "As estruturas pré-cambrianas do Brasil — escudos cristalinos e plataformas — são as bases geológicas do território nacional. Sua estabilidade tectônica explica a ausência de terremotos e vulcões significativos no país. Sobre essas estruturas antigas, a erosão secular esculpiu os planaltos, inselbergs e chapadas que caracterizam o relevo brasileiro."
   },
   {
     "id": 7,
@@ -119,12 +125,13 @@
       "da Planície Amazônica."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Observe a tabela geológico-estrutural apresentada e identifique as características do item III: rochas cristalinas antigas, formação no Pré-Cambriano, alta resistência à erosão. Pense em qual estrutura geológica brasileira possui essas características — um grande bloco estável de rochas cristalinas que forma planaltos e depressões.",
+    "comentario": "O Escudo Brasileiro é uma das grandes unidades geológicas do país, composto por rochas ígneas e metamórficas do Pré-Cambriano, muito antigas e estáveis. É nessas rochas cristalinas que se concentram os minérios metálicos mais valiosos do Brasil — ferro, ouro, manganês, cobre — pois foram formados por processos magmáticos e hidrotermais ao longo de bilhões de anos."
   },
   {
     "id": 8,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MUNDO EDUCAÇÃO 2022) No território brasileiro, a ausência de cadeias montanhosas explica-se:",
@@ -136,12 +143,13 @@
       "pela intensiva ação humana sobre as áreas naturais."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Lembre-se de que cadeias montanhosas (como os Andes, Alpes e Himalaia) se formam por dobramentos modernos, resultado de colisões entre placas tectônicas. O Brasil está localizado no interior de uma placa tectônica estável, sem colisões com outras placas. Pense em qual característica tectônica explica a ausência de grandes cadeias montanhosas no território brasileiro.",
+    "comentario": "A ausência de cadeias montanhosas no Brasil explica-se pela ausência de dobramentos modernos: o Brasil está localizado em uma placa tectônica estável (Placa Sul-Americana), longe das zonas de subducção que formam cadeias como os Andes. As serras brasileiras, como a da Mantiqueira e do Mar, resultam de falhas e soerguimento de blocos, não de colisão de placas."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(FUNCAB) Na década de 1980, o professor Jurandyr Ross, com base no Projeto RADAM Brasil, realizou uma nova classificação do relevo brasileiro baseado em três pilares: morfoestrutura, morfoescultura e morfoclimática. Nessa nova classificação, o Brasil foi dividido em 28 unidades de relevo, sendo que todas se enquadram em três tipos de relevos gerais. São eles:",
@@ -153,7 +161,8 @@
       "bacias sedimentares, crátons e cordilheiras."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Lembre-se que Jurandyr Ross classificou o relevo brasileiro em três tipos gerais com base em morfoestrutura, morfoescultura e morfoclimática. Pense nas formas básicas que ele identificou: áreas onde erosão predomina, áreas de acumulação sedimentar e áreas rebaixadas. Identifique a tríade correta dessas formas na classificação de Ross.",
+    "comentario": "Jurandyr Ross, a partir do Projeto RADAM Brasil nos anos 1980, mapeou o relevo nacional com precisão inédita, identificando planaltos, planícies e depressões como as três categorias fundamentais. Essa classificação tornou-se referência oficial e é usada pelo IBGE até hoje, substituindo classificações anteriores que misturavam critérios geomorfológicos e geológicos de forma menos rigorosa."
   },
   {
     "id": 10,
@@ -170,6 +179,7 @@
       "O Brasil está localizado em uma área de intenso processo erosivo e estrutura geológica recente."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Pense nos fatores que determinam a formação do relevo: fatores endógenos (tectonismo, vulcanismo) constroem as estruturas; fatores exógenos (erosão, intemperismo, sedimentação) modelam as formas. O Brasil tem estrutura antiga, mas a modelagem do relevo atual é resultado de forças exógenas ao longo do tempo. Qual alternativa descreve corretamente essa relação entre estrutura antiga e formas recentes?",
+    "comentario": "As formas atuais do relevo brasileiro são recentes, mesmo que as estruturas geológicas que as sustentam sejam antigas. Os processos erosivos (rios, chuvas, temperatura) esculpiram continuamente as rochas pré-cambrianas, criando os planaltos, chapadas e depressões que vemos hoje. Essa distinção entre estrutura geológica (antiga) e forma do relevo (recente) é fundamental para a geomorfologia brasileira."
   }
 ]

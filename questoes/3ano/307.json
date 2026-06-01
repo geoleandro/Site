@@ -2,10 +2,11 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) Relacione as duas colunas abaixo, enumerando a segunda de acordo com a primeira:\n\nAssinale a alternativa que corresponde a sequência",
+    "texto_apoio": "Relacione as duas colunas abaixo, enumerando a segunda de acordo com a primeira:",
+    "pergunta": "\n\nAssinale a alternativa que corresponde à sequência correta:\n\n<table style='width:100%;border-collapse:collapse;font-size:0.95em'><thead><tr><th style='border:1px solid #ccc;padding:8px;background:#f5f5f5;width:45%'>Tipo de Indústria</th><th style='border:1px solid #ccc;padding:8px;background:#f5f5f5'>Característica</th></tr></thead><tbody><tr><td style='border:1px solid #ccc;padding:8px'>1. Indústria de base</td><td style='border:1px solid #ccc;padding:8px'>A. ( ) Produção de materiais duráveis</td></tr><tr><td style='border:1px solid #ccc;padding:8px'>2. Indústria de bens de capital</td><td style='border:1px solid #ccc;padding:8px'>B. ( ) Produção de materiais não duráveis</td></tr><tr><td style='border:1px solid #ccc;padding:8px'>3. Indústria de bens de consumo</td><td style='border:1px solid #ccc;padding:8px'>C. ( ) Produção de peças para indústrias</td></tr><tr><td style='border:1px solid #ccc;padding:8px'></td><td style='border:1px solid #ccc;padding:8px'>D. ( ) Transformação de matérias-primas para produção industrial</td></tr><tr><td style='border:1px solid #ccc;padding:8px'></td><td style='border:1px solid #ccc;padding:8px'>E. ( ) Produção de máquinas industriais</td></tr></tbody></table>",
     "alternativas": [
       "1-2-3-4-5.",
       "3-3-2-1-2.",
@@ -13,7 +14,8 @@
       "1-2-1-3-3."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A indústria de base transforma matérias-primas brutas para uso industrial (ex.: siderurgia); a de bens de capital produz máquinas e equipamentos usados por outras indústrias; e a de bens de consumo fabrica produtos finais para a população. Essa hierarquia industrial estrutura todo o processo produtivo capitalista.",
+    "ajuda": "Para associar características a países (ou modelos industriais), identifique as marcas de cada um: Revolução Verde, industrialização tardia, planificação estatal, modelo clássico britânico. Relacione cada país ao modelo que melhor o descreve."
   },
   {
     "id": 2,
@@ -22,7 +24,8 @@
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "“Todo o sistema de produção e organização do espaço geográfico passou a ser definido pelo Estado [...]. O Estado determinava as metas a serem alcançadas e o tipo de produção de cada estabelecimento, realizava a distribuição e a comercialização dos produtos e investia em grandes obras de infraestrutura, como a canalização de rios, instalação de usinas de energia elétrica e ampliação do sistema ferroviário [...]. O objetivo era eliminar, ou diminuir ao máximo, a importação de equipamentos e matérias-primas industriais”.",
-    "pergunta": "(LUCCI, E. A., et al. Território e sociedade no mundo globalizado: Geografia Geral e do Brasil. Ensino Médio. Editora Saraiva, 2005.pp.68-69).\n\nO texto se refere à:",
+    "fonte_apoio": "(LUCCI, E. A., et al. Território e sociedade no mundo globalizado: Geografia Geral e do Brasil. Ensino Médio. Editora Saraiva, 2005.pp.68-69)",
+    "pergunta": "O texto se refere à:",
     "alternativas": [
       "Industrialização clássica.",
       "Industrialização planificada.",
@@ -31,17 +34,18 @@
       "Urbanização estatal."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A industrialização planificada caracterizou os países socialistas, onde o Estado determinava os objetivos de produção, os investimentos em infraestrutura e a distribuição dos bens. A URSS foi o principal exemplo: industrializou-se em décadas através de planos quinquenais, priorizando indústrias pesadas e de base.",
+    "ajuda": "A industrialização tardia ocorreu em países que se industrializaram com a ajuda do Estado e com atraso em relação à Inglaterra. Identifique que tipo de industrialização o texto descreve com base nas características como intervenção estatal e dependência de capital externo."
   },
   {
     "id": 3,
     "instituicao": "",
-    "ano": "",
+    "ano": "(2020)",
     "dificuldade": "",
     "tags": [],
-    "texto_apoio": "“Essa forma de industrialização é a que nos interessa mais de perto por ter ocorrido no Brasil. Trata-se de uma industrialização que, como o nome sugere, foi historicamente atrasada em relação à original e ocorreu em muitos países subdesenvolvidos [...]. Foi mais comum no século XX, embora, em alguns casos, tenha se iniciado de forma tímida no fim do século XIX”.",
+    "texto_apoio": "Leia o trecho a seguir e responda ao que se pede:\n\nEssa forma de industrialização é a que nos interessa mais de perto por ter ocorrido no Brasil. Trata-se de uma industrialização que, como o nome sugere, foi historicamente atrasada em relação à original e ocorreu em muitos países subdesenvolvidos [...]. Foi mais comum no século XX, embora, em alguns casos, tenha se iniciado de forma tímida no fim do século XIX”.",
     "fonte_apoio": "Vicentini, José William. Geografia: o mundo em transição. São Paulo: Editora Ática, 2012. p.67.",
-    "pergunta": "(2020) Leia o trecho a seguir e responda ao que se pede:\n\nA forma de industrialização a que o autor se refere é:",
+    "pergunta": " A forma de industrialização a que o autor se refere é:",
     "alternativas": [
       "a do tipo clássica, caracterizada pelo predomínio das chamadas “indústrias de chaminés”, hoje obsoletas.",
       "a do tipo planificada, vista como a única forma de os países periféricos conseguirem se industrializar, sobre a forte proteção do Estado.",
@@ -50,7 +54,8 @@
       "a do tipo tardia, realizada graças à emancipação econômica apenas recentemente conquistada pelos países subdesenvolvidos."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A industrialização tardia ocorreu em países que se industrializaram no século XX, com a participação decisiva do Estado e do capital estrangeiro. Brasil, México, Argentina e Coreia do Sul são exemplos: usaram tarifas protecionistas, empresas estatais e atração de multinacionais para desenvolver seu parque industrial.",
+    "ajuda": "A industrialização tardia caracteriza-se pela intervenção do Estado, pela dependência de capital estrangeiro e por ocorrer após a consolidação do capitalismo industrial em outros países. Avalie qual alternativa descreve corretamente esse modelo."
   },
   {
     "id": 4,
@@ -67,7 +72,8 @@
       "I, II, III e IV."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A Primeira Revolução Industrial (1760-1850) foi marcada pela máquina a vapor, pelo carvão mineral e pelas indústrias têxtil e siderúrgica. Começou na Inglaterra, que reunia condições únicas: capital acumulado pelo comércio colonial, mão de obra disponível pelo cercamento dos campos e abundância de carvão.",
+    "ajuda": "A Primeira Revolução Industrial (final do século XVIII - meados do século XIX) foi marcada pela máquina a vapor, o carvão mineral como principal fonte de energia, e a mecanização têxtil na Inglaterra. Analise quais afirmativas condizem com essas características."
   },
   {
     "id": 5,
@@ -77,14 +83,15 @@
     "tags": [],
     "pergunta": "O desenvolvimento tecnológico dos séculos XIX e XX alterou as formas de trabalho, as paisagens geográficas, os hábitos e os costumes das populações. Assinale a alternativa correta em relação a essas alterações:",
     "alternativas": [
-      "A produção de elevadores e automóveis, no final do século XIX e início do século XX, contribuiu para a verticalização e a intensificação da estrutura viária no espaço urbano. b) O conhecimento técnico-científico, nos séculos XIX e XX, contribuiu para reduzir a degradação ambiental. c) A criação de equipamentos agrícolas modernos viabilizou o cultivo de grandes extensões de terras e o aumento da demanda por trabalhadores no campo. d) O desenvolvimento econômico, tecnológico e social, que transformou as paisagens geográficas, tem sua origem nas políticas nacionalistas, implantadas pelos regimes autoritários, no final do século XIX. e) Tecnologias avançadas, direcionadas para a automação da produção, proporcionaram o aumento da produtividade, exigindo maior esforço físico e mental dos trabalhadores para realizar as atividades.",
-      "",
-      "",
-      "",
-      ""
+      "A produção de elevadores e automóveis, no final do século XIX e início do século XX, contribuiu para a verticalização e a intensificação da estrutura viária no espaço urbano.",
+      "O conhecimento técnico-científico, nos séculos XIX e XX, contribuiu para reduzir a degradação ambiental.",
+      "A criação de equipamentos agrícolas modernos viabilizou o cultivo de grandes extensões de terras e o aumento da demanda por trabalhadores no campo.",
+      "O desenvolvimento econômico, tecnológico e social, que transformou as paisagens geográficas, tem sua origem nas políticas nacionalistas, implantadas pelos regimes autoritários, no final do século XIX.",
+      "Tecnologias avançadas, direcionadas para a automação da produção, proporcionaram o aumento da produtividade, exigindo maior esforço físico e mental dos trabalhadores para realizar as atividades."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A invenção do elevador (1852) e do automóvel (final do século XIX) transformaram radicalmente o espaço urbano: cidades cresceram verticalmente, surgiu o subúrbio e as rodovias tornaram-se eixos de desenvolvimento. Essas inovações remodelaram paisagens e hábitos sociais de forma permanente.",
+    "ajuda": "O desenvolvimento tecnológico transformou o trabalho e as paisagens geográficas nos séculos XIX e XX. Pense em como a automação afetou a oferta de empregos industriais, especialmente em países desenvolvidos, e qual alternativa reflete corretamente essa transformação."
   },
   {
     "id": 6,
@@ -101,7 +108,8 @@
       "Disponibilidade de água."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Durante a Primeira Revolução Industrial, as fábricas precisavam estar próximas das jazidas de carvão mineral, sua principal fonte de energia. Regiões como o País de Gales, Yorkshire e o Vale do Ruhr (Alemanha) tornaram-se industriais por essa razão locacional, não por escolha estratégica.",
+    "ajuda": "Durante a Primeira Revolução Industrial, as indústrias precisavam estar próximas de sua principal fonte de energia. Identifique qual recurso mineral era indispensável para o funcionamento das máquinas a vapor e, portanto, determinava onde as fábricas se instalavam."
   },
   {
     "id": 7,
@@ -118,7 +126,8 @@
       "O conceito de industrialização implica uma série de elementos específicos, como: as descobertas científicas e seu emprego nas atividades produtivas; uma combinação entre as atividades de produção e de consumo; o mercado; o contrato; a moeda como instituições que norteiam a troca entre produtores e consumidores, etc."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A afirmativa incorreta é a de que nunca houve sociedade industrial não capitalista. A URSS e os países socialistas construíram parques industriais gigantescos fora do sistema capitalista, demonstrando que industrialização e capitalismo não são sinônimos obrigatórios.",
+    "ajuda": "A questão pede a afirmativa INCORRETA sobre industrialização. Lembre-se de que a industrialização é um processo histórico que transformou a sociedade e não surgiu de forma espontânea — avalie qual afirmativa distorce ou contradiz os fatos históricos."
   },
   {
     "id": 8,
@@ -135,17 +144,18 @@
       "I, II e III são verdadeiras."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A Primeira Revolução Industrial reorganizou completamente o espaço geográfico: cidades como Manchester e Birmingham explodiram demograficamente, as aldeias perderam população para as fábricas e a divisão internacional do trabalho separou os países industriais (exportadores de manufaturados) dos agrários (exportadores de matérias-primas).",
+    "ajuda": "A Primeira Revolução Industrial provocou intensa urbanização, criação do proletariado industrial, aumento da jornada de trabalho e surgimento de péssimas condições de vida nas cidades. Avalie quais afirmativas descrevem corretamente esses impactos."
   },
   {
     "id": 9,
-    "instituicao": "",
-    "ano": "",
+    "instituicao": "UNIRIO-RJ",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "“Como a economia capitalista caracteriza-se pela propriedade privada do capital, os proprietários organizam seus negócios em condições de concorrência. Todos procuram maximizar seus lucros, diminuindo os custos de produção e ampliando seus mercados. [...] A concorrência tem início quando os empresários tomam decisões relativas à localização das suas fábricas. A opção por determinado lugar é o elemento inicial que pode definir o sucesso ou o fracasso de um empreendimento”.",
     "fonte_apoio": "Magnoli, D.; Araujo, R. Geografia: a construção do mundo. São Paulo: Moderna, 2005.",
-    "pergunta": "(UNIRIO-RJ)\n\nA teoria básica da localização industrial está contida na seguinte afirmativa:",
+    "pergunta": "\n\nA teoria básica da localização industrial está contida na seguinte afirmativa:",
     "alternativas": [
       "Uma fábrica atrai outra fábrica devido às vantagens da aglomeração.",
       "O espaço geográfico oferece poucas opções de localização",
@@ -154,12 +164,13 @@
       "A concentração industrial é fortalecida pelo avanço tecnológico."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A teoria básica da localização industrial busca minimizar custos de transporte de matérias-primas e produtos acabados e maximizar o acesso ao mercado consumidor. Essa lógica foi formalizada por Alfred Weber no início do século XX e ainda orienta as decisões de localização das empresas multinacionais.",
+    "ajuda": "A teoria básica da localização industrial busca minimizar custos de transporte e maximizar o acesso ao mercado consumidor. Pense em qual princípio fundamental guia a decisão de uma empresa ao escolher onde instalar sua fábrica."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MUNDO EDUCAÇÃO 2022) A antiga Divisão Internacional do Trabalho e o imperialismo trouxeram novas formas de dominação e hierarquização no espaço mundial. Entre as novidades que passaram a determinar as formas de poder na relação, destaca-se:",
@@ -171,6 +182,7 @@
       "A criação de sistemas bancários e de comércio internacionalizados."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A Nova Divisão Internacional do Trabalho (NDIT) surgiu com a Terceira Revolução Industrial: países que dominam tecnologia, pesquisa e inovação passaram a comandar as cadeias produtivas globais. A diferença tecnológica tornou-se o principal critério de dominação entre países ricos e pobres no sistema capitalista contemporâneo.",
+    "ajuda": "A Nova Divisão Internacional do Trabalho (NDIT) reorganizou a produção global com base na tecnologia, não apenas na posse de matérias-primas. Identifique qual característica passou a definir a hierarquia entre países na organização produtiva global."
   }
 ]

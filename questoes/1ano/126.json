@@ -2,11 +2,11 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2022",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/126/p26q1.png",
-    "pergunta": "(2022) No esquema de um curso de água, abaixo, indique a nascente, a foz e os cursos superior, médio e inferior, associando aos respectivos trechos assinalados com A, B e C.",
+    "pergunta": "No esquema de um curso de água, abaixo, indique a nascente, a foz e os cursos superior, médio e inferior, associando aos respectivos trechos assinalados com A, B e C.",
     "alternativas": [
       "A – Curso inferior, foz. B – Curso médio. C – Curso superior; nascente.",
       "A – Curso montanhoso, nascente. B – Curso médio; meandro. C – Margem direita; foz.",
@@ -14,7 +14,8 @@
       "A – Curso superior, erosão. B – Curso médio, transporte. C – Curso inferior; sedimentação."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Um curso de água divide-se em três seções: curso superior (próximo à nascente — maior energia, erosão intensa, vales encaixados), curso médio (equilíbrio entre erosão e deposição, surgem meandros) e curso inferior (perto da foz — energia reduzida, deposição predomina, planícies de inundação e deltas). A nascente é o ponto de origem; a foz, onde o rio deságua em outro corpo hídrico.",
+    "ajuda": "Um curso d'água tem nascente (onde começa), foz (onde termina, em outro rio, lago ou mar), e cursos superior (alto, próximo à nascente, com mais erosão), médio e inferior (baixo, próximo à foz, com mais deposição). Identifique cada elemento na figura."
   },
   {
     "id": 2,
@@ -32,7 +33,8 @@
       "toda a água presente no planeta, nos estados líquido, sólido e gasoso."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "Recurso hídrico é a água disponível para uso econômico — para abastecimento, irrigação, geração de energia, navegação ou uso industrial. Nem toda água doce é recurso hídrico: geleiras e aquíferos profundos de difícil acesso técnico ou econômico não se enquadram nessa definição. A gestão de recursos hídricos é regulada no Brasil pela Lei das Águas (Lei 9.433/1997).",
+    "ajuda": "Recurso hídrico é a parcela da água que pode ser utilizada pelo ser humano para alguma finalidade econômica ou social. Nem toda a água é considerada recurso hídrico: a água salgada, por exemplo, só o é quando há tecnologia para seu aproveitamento."
   },
   {
     "id": 3,
@@ -50,7 +52,8 @@
       "os sedimentos transportados pelo sistema fluvial são importantes na manutenção da qualidade e quantidade de água."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O divisor de drenagem (ou divisor de águas) é a linha topográfica que delimita os limites de uma bacia hidrográfica. Toda a chuva que cai dentro dos limites da bacia escoa para o mesmo rio principal. Nas zonas de cabeceira, o divisor coincide geralmente com os pontos mais altos do relevo (serras, chapadas), enquanto o interior da bacia drena para o rio principal.",
+    "ajuda": "A dinâmica fluvial envolve três processos: erosão (desgaste do leito e margens), transporte (carreamento de sedimentos) e deposição (acúmulo de sedimentos). Pense em qual trecho do rio (superior, médio ou inferior) cada processo predomina."
   },
   {
     "id": 4,
@@ -68,7 +71,8 @@
       "sujeita a inundações apenas em anos muito chuvosos, quando ocorre a deposição de sedimentos finos. Está posicionada entre a vertente e o terraço."
     ],
     "correta": 0,
-    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\t\t\r\n\t\t\t\t\t<p> Colocar os comentários aqui. </p> -->"
+    "comentario": "<!-- <p> <strong>Comentário:</strong></p>\r\n\t\t\r\n\t\t\t\t\t<p> Colocar os comentários aqui. </p> -->",
+    "ajuda": "Várzea é uma planície fluvial de inundação que se forma ao longo dos rios, resultado do transbordamento periódico das águas. Ela é ecologicamente importante e propícia à agricultura por ser fertilizada pelo material depositado durante as cheias."
   },
   {
     "id": 5,
@@ -86,7 +90,8 @@
       "I, II e III."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Os rios canalizados perdem suas funções ecológicas: eliminam várzeas, destroem habitats aquáticos, aumentam a velocidade de escoamento (agravando enchentes a jusante) e impedem a infiltração natural da água. A canalização foi amplamente adotada no século XX em cidades brasileiras, mas hoje é reconhecida como solução ultrapassada — tendência é 'renaturalizar' rios.",
+    "ajuda": "A canalização de rios elimina a sinuosidade natural e as zonas de amortecimento das cheias. Isso aumenta a velocidade do escoamento e reduz a infiltração, o que pode intensificar enchentes e prejudicar a biodiversidade aquática. Compare as consequências dos dois sistemas."
   },
   {
     "id": 6,
@@ -103,7 +108,8 @@
       "Os perfis longitudinais dos rios são traçados desde as nascentes até a foz; os perfis transversais correspondem às configurações dos vales fluviais."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "No alto curso (superior) dos rios, prevalece a erosão vertical — o rio escava seu leito em forma de V, criando vales encaixados e corredeiras. A deposição de sedimentos ocorre principalmente no baixo curso (inferior), onde a velocidade diminui e os materiais transportados se acumulam formando planícies de inundação e deltas. Afirmar o oposto é incorreto.",
+    "ajuda": "A questão pede a alternativa INCORRETA sobre a dinâmica dos rios. Pense em: os rios correm de cotas mais altas para mais baixas; o regime fluvial é influenciado pelo clima; o meandramento é natural em planícies; a erosão é maior na margem côncava e a deposição na convexa."
   },
   {
     "id": 7,
@@ -121,7 +127,8 @@
       "(2) Nascente, (1) Afluente, (4) Meandro, (3) Foz em Delta, (6) Margem esquerda e (5) Margem direita."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "Os rios têm componentes específicos: nascente (ponto de origem, geralmente em área elevada), afluentes (rios menores que deságuam no principal), meandros (curvas sinuosas do leito no baixo curso), foz em delta (deposição sedimentar na foz), margem esquerda (lado esquerdo olhando da nascente para a foz) e margem direita (lado direito nessa mesma orientação).",
+    "ajuda": "Os rios foram fundamentais para o surgimento das primeiras civilizações (Nilo, Tigre e Eufrates, Indo, Huang He) por fornecerem água, solos férteis, alimentos e vias de transporte. Identifique qual aspecto da importância histórica e econômica dos rios a questão está abordando."
   },
   {
     "id": 8,
@@ -138,7 +145,8 @@
       "O Brasil apresenta 14% do recurso hídrico mundial, sendo que a distribuição dos mananciais de água doce se situam predominantemente na região amazônica."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O Brasil detém 12% da água doce superficial do mundo e tem 8 grandes regiões hidrográficas (segundo a ANA). Porém, a distribuição é muito desigual: a Amazônia concentra cerca de 73% dos recursos hídricos nacionais, mas abriga menos de 10% da população. O semiárido nordestino tem apenas 3% da água e enfrenta problemas crônicos de escassez.",
+    "ajuda": "A distribuição da água doce no planeta é extremamente desigual: concentrada em poucos países (Brasil, Rússia, Canadá, China, EUA). Observe a legenda do mapa e identifique quais regiões têm maior ou menor disponibilidade hídrica."
   },
   {
     "id": 9,
@@ -155,7 +163,8 @@
       "as águas dos rios afundam no mar devido a sua maior densidade, onde são comprimidas pela enorme pressão resultante da coluna de água."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O ciclo hidrológico garante que o nível dos mares se mantenha estável: as águas dos rios que chegam ao mar são compensadas pela evaporação oceânica, que retorna ao continente como chuva. O balanço hídrico global é fechado — toda água evaporada retorna ao ciclo. Variações no nível do mar ocorrem por fusão de geleiras ou tectonismo, não pelo aporte dos rios.",
+    "ajuda": "O nível do mar não sobe continuamente porque o ciclo hidrológico é fechado: a água dos rios retorna ao oceano, mas também evapora, precipita e volta a circular. O balanço entre evaporação e precipitação mantém o nível médio dos oceanos relativamente estável."
   },
   {
     "id": 10,
@@ -173,6 +182,7 @@
       "Vazão elevada, baixa declividade do terreno e baixa pluviosidade."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A erosão fluvial no alto curso é intensificada pela combinação de: grande vazão (mais massa d'água), alta velocidade (declividade elevada) e transporte de sedimentos abrasivos que desgastam o leito rochoso. Esse processo aprofunda o vale progressivamente ao longo do tempo geológico. A competência do rio (tamanho máximo dos fragmentos que pode transportar) aumenta com a velocidade.",
+    "ajuda": "A erosão fluvial aprofunda o vale ao longo do tempo geológico por um processo chamado incisão fluvial. Quanto maior a energia do rio (declividade e vazão), maior o poder erosivo. Esse processo é mais intenso nos cursos superiores dos rios."
   }
 ]

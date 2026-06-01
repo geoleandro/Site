@@ -35,7 +35,7 @@ async function injetarComponentesGlobais() {
             // Sincroniza a nota inicial se ela já existir no script da aula
             if (typeof nota !== 'undefined') {
                 const displayNota = document.getElementById("notaFixa");
-                if (displayNota) displayNota.innerHTML = nota.toFixed(1);
+                if (displayNota) displayNota.innerHTML = Math.floor(nota);
             }
         } else if (painel) {
             painel.style.display = "none"; // Garante que fique oculto na Home/Blog
@@ -61,12 +61,13 @@ async function injetarComponentesGlobais() {
  * baseada na existência de elementos de aula.
  */
 function verificarSeEhAula() {
-    // Procura pela barra de progresso ou pelos tópicos da aula
-    const temProgresso = document.getElementById("progress");
-    const temTopicos = document.querySelector(".topico");
-    
-    // Retorna verdadeiro se qualquer um dos dois existir
-    return !!(temProgresso || temTopicos);
+    // Textos: têm barra de progresso ou tópicos
+    const temProgresso   = document.getElementById("progress");
+    const temTopicos     = document.querySelector(".topico");
+    // Questões: têm container-questao
+    const temQuestoes    = document.getElementById("container-questao");
+
+    return !!(temProgresso || temTopicos || temQuestoes);
 }
 
 

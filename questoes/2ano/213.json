@@ -13,15 +13,16 @@
       "Apesar de possuir grandes reservas, especialmente com as descobertas do pré-sal, não há refino no país, por isso os derivados são importados."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Lembre-se de que o Brasil possui petróleo tanto em terra (onshore) quanto no mar (offshore). Pense em qual estado é o maior produtor em terra (Rio Grande do Norte, no Nordeste) e qual área é a principal produtora offshore (pré-sal, entre São Paulo e Rio de Janeiro). Avalie cada alternativa à luz desses dados sobre a produção petrolífera nacional.",
+    "comentario": "O petróleo brasileiro se concentra principalmente nas bacias sedimentares marítimas: o pré-sal, descoberto em 2006 entre os estados de São Paulo e Rio de Janeiro, mudou o perfil do país de importador para exportador de petróleo. Em terra, o Rio Grande do Norte lidera a produção onshore. O domínio do pré-sal pela Petrobras é questão estratégica de soberania, pois o petróleo move 33% da matriz energética global."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2019",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2019) “No caso da indústria petrolífera, eles são a compensação financeira dada pelas empresas que fazem a exploração por eventuais danos ambientais que podem ser causados durante o processo de extração. No Brasil, essa regalia ou privilégio são pagos ao Governo Federal, havendo também participações especiais, e dependem da produção e rentabilidade de cada lugar de extração. O dinheiro pode ser destinado à Educação, Saúde, Políticas Sociais etc.”.\n\nA descrição acima está ligada à(ao):",
+    "pergunta": "“No caso da indústria petrolífera, eles são a compensação financeira dada pelas empresas que fazem a exploração por eventuais danos ambientais que podem ser causados durante o processo de extração. No Brasil, essa regalia ou privilégio são pagos ao Governo Federal, havendo também participações especiais, e dependem da produção e rentabilidade de cada lugar de extração. O dinheiro pode ser destinado à Educação, Saúde, Políticas Sociais etc.”.\n\nA descrição acima está ligada à(ao):",
     "alternativas": [
       "Plataforma continental.",
       "Petróleo.",
@@ -30,16 +31,17 @@
       "Carvão Mineral."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Pense no conceito de 'royalties' no setor de petróleo: são compensações financeiras pagas pelas empresas ao governo pela exploração de recursos naturais não renováveis. Esses recursos são destinados a áreas como educação e saúde. Qual das alternativas corresponde a essa definição de compensação pela exploração de recursos minerais?",
+    "comentario": "Royalties do petróleo são compensações financeiras pagas pelas empresas exploradoras ao governo pela extração de um recurso natural não renovável pertencente à União. No Brasil, a distribuição dos royalties do pré-sal gerou intenso debate político, com estados produtores (RJ, SP, ES) disputando com estados não produtores a maior fatia desses recursos, que deveriam ser destinados à saúde e educação."
   },
   {
     "id": 3,
     "instituicao": "",
-    "ano": "",
+    "ano": "2019",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "2ano/img/213/s13q3.png",
-    "pergunta": "(2019) Rocha sedimentar é formada a partir de matéria orgânica, muito usada durante a Revolução Industrial. É dividida em turfa, linhito, hulha e antracito de acordo com o grau crescente de hidrocarbonetos. Vantagens: alto poder calorífico e baixo custo. Problemas: mineração insalubre para os operários, contaminação do ar e dos rios, altamente poluente. Atualmente a maior concentração desse recurso no Brasil está situada na região sul, PR, SC e RS. O Brasil importa aproximadamente 50%, devido à baixa qualidade e concentração de carbono. O texto descreve o(a):\n\nO texto descreve o(a):",
+    "pergunta": "Rocha sedimentar é formada a partir de matéria orgânica, muito usada durante a Revolução Industrial. É dividida em turfa, linhito, hulha e antracito de acordo com o grau crescente de hidrocarbonetos. Vantagens: alto poder calorífico e baixo custo. Problemas: mineração insalubre para os operários, contaminação do ar e dos rios, altamente poluente. Atualmente a maior concentração desse recurso no Brasil está situada na região sul, PR, SC e RS. O Brasil importa aproximadamente 50%, devido à baixa qualidade e concentração de carbono. O texto descreve o(a):\n\nO texto descreve o(a):",
     "alternativas": [
       "Petróleo.",
       "Carvão Mineral.",
@@ -48,7 +50,8 @@
       "Camada pré-sal."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Leia o texto sobre uma rocha sedimentar fóssil, dividida em graus crescentes de pureza: turfa, linhito, hulha e antracito. Pense em qual recurso energético não renovável é formado a partir da carbonização de matéria orgânica vegetal soterrada. Onde está concentrada a produção desse recurso no Brasil?",
+    "comentario": "O carvão mineral, formado pela compressão de matéria orgânica vegetal ao longo de milhões de anos, é a principal fonte de energia da Revolução Industrial e ainda hoje responde por cerca de 27% da geração de eletricidade global. No Brasil, as reservas são modestas e de baixa qualidade (carvão energético inferior), concentradas no Sul (SC, RS), tornando o país dependente de importações para a siderurgia."
   },
   {
     "id": 4,
@@ -66,7 +69,8 @@
       "O Brasil possui grande reserva carbonífera composta em sua maioria por antracito, o mais raro da natureza."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Atenção: a questão pede a alternativa INCORRETA sobre o carvão mineral. Lembre-se das características reais do carvão brasileiro: baixo teor de carbono (não é antracito, que é o mais puro), reservas na região Sul, necessidade de mistura com carvão importado. Avalie qual afirmativa contradiz essas características reais.",
+    "comentario": "O Brasil possui a maior reserva carbonífera da América do Sul, mas o carvão nacional tem alto teor de cinzas e enxofre, sendo de baixa qualidade energética — predominantemente linhito e carvão betuminoso, não antracito (o mais puro e raro). Afirmar que as reservas brasileiras são majoritariamente de antracito é um erro: o antracito brasileiro é escasso, e o país importa carvão metalúrgico de maior qualidade."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "Energia geotérmica, aproveitamento do calor do interior da Terra."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Pense na diferença entre fontes de energia renováveis e não renováveis. As fontes renováveis se regeneram naturalmente (hidrelétricas, biomassa, eólica, solar), enquanto as não renováveis se esgotam com o uso (combustíveis fósseis, nuclear com urânio). Identifique qual das alternativas lista uma fonte claramente não renovável e de origem fóssil.",
+    "comentario": "O carvão mineral, extraído por mineração a céu aberto ou subterrânea, é uma fonte de energia não renovável e altamente poluente, responsável por grandes emissões de CO₂ e material particulado. Ao contrário das fontes renováveis (solar, eólica, biomassa), o carvão agrava a crise climática — razão pela qual países desenvolvidos têm buscado abandoná-lo como parte dos compromissos do Acordo de Paris."
   },
   {
     "id": 6,
@@ -102,7 +107,8 @@
       "liberalismo econômico, praticado no Brasil anteriormente à 2.ª Guerra Mundial"
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Leia o texto sobre a história do petróleo no Brasil e sobre Monteiro Lobato. Pense em qual modelo de exploração o governo Vargas escolheu: a estatização da exploração, criando um monopólio estatal. Em 1953, esse projeto culminou na criação de qual empresa estatal? Qual ideologia econômica orientou essa decisão?",
+    "comentario": "A criação da Petrobras em 1953, com o slogan 'O petróleo é nosso', foi o ápice do projeto nacional-desenvolvimentista de Getúlio Vargas, que buscava romper com a dependência do capital estrangeiro na exploração dos recursos naturais estratégicos. A estatal tornou-se símbolo da soberania econômica brasileira e hoje é uma das maiores empresas de energia do mundo, com tecnologia de ponta em águas profundas."
   },
   {
     "id": 7,
@@ -119,7 +125,8 @@
       "3-2-5-1."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Associe cada fonte de energia à sua descrição: energia hidráulica (90% da eletricidade do Brasil), petróleo (55% da energia mundial junto com gás), biomassa (álcool de plantas) e carvão (linhito, hulha, antracito por grau de carbono). Organize corretamente a sequência de associação entre as fontes e as afirmativas.",
+    "comentario": "A classificação das fontes de energia distingue fontes primárias (obtidas diretamente da natureza: petróleo, carvão, sol, vento) de secundárias (transformadas: eletricidade, gasolina, etanol). Entre as renováveis estão biomassa, solar, eólica e hidroelétrica; entre as não renováveis, petróleo, gás natural e carvão. O Brasil tem uma das matrizes energéticas mais renováveis do mundo, com destaque para a hidroeletricidade."
   },
   {
     "id": 8,
@@ -137,12 +144,13 @@
       "melhorar o sistema viário do Mercosul, para intensificar as trocas comerciais com países da região andina."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Observe o mapa do gasoduto Brasil-Bolívia. Pense em qual é a principal finalidade desse projeto de integração energética: transportar gás natural da Bolívia para abastecer as termelétricas e a indústria no Brasil, especialmente no Sudeste. Qual alternativa descreve corretamente o objetivo estratégico desse gasoduto?",
+    "comentario": "O Gasoduto Brasil-Bolívia (GASBOL), com 3.150 km, conecta os campos gasíferos bolivianos ao Sudeste e Sul do Brasil desde 1999. Ele foi fundamental para expandir o setor termoelétrico brasileiro nos anos 2000, diversificando a matriz energética para além da hidroeletricidade. Essa integração energética sul-americana é um exemplo de cooperação geopolítica regional com impactos concretos no planejamento energético brasileiro."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "2ano/img/213/s13q9.png",
@@ -155,12 +163,13 @@
       "o gás natural, um recurso esgotável que requer altos custos, na construção de gasômetros e na utilização de metaneiros, tem influência na formação de chuvas ácidas e na alteração climática."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Observe o gráfico de fontes de energia. Pense nas características de cada fonte: o petróleo é uma fonte primária não renovável da Revolução Industrial do século XX (não do XIX). O carvão brasileiro é de baixo teor de carbono. As hidrelétricas têm impactos ambientais (alagamentos). O gás natural contribui para o efeito estufa. Qual afirmativa está correta?",
+    "comentario": "O gás natural é um hidrocarboneto fóssil extraído geralmente associado ao petróleo em bacias sedimentares. Sua distribuição exige gasodutos ou navios metaneiros (GNL — Gás Natural Liquefeito), infraestrutura cara e especializada. Apesar de mais limpo que o carvão, o gás natural ainda é não renovável e contribui para as emissões de gases de efeito estufa, sendo considerado uma 'energia de transição'."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "fonte_apoio": "Revista Época de 09 de novembro de 2009. Encarte publicitário da Petrobrás S.A.",
@@ -174,6 +183,7 @@
       "Mesmo com a produção do petróleo dessa nova fonte, o Brasil continuará a importar petróleo porque seu consumo deverá ser maior do que a produção nos próximos vinte anos."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Leia o texto sobre as descobertas do pré-sal. Pense nas implicações da exploração em grandes profundidades: necessidade de tecnologia avançada, custos elevados de extração e necessidade de marcos regulatórios. Analise qual alternativa descreve corretamente os desafios e oportunidades da exploração do pré-sal para o Brasil.",
+    "comentario": "O pré-sal brasileiro, descoberto em camadas rochosas a mais de 5.000 metros de profundidade sob o leito oceânico, exige tecnologia de perfuração de vanguarda. A Petrobras desenvolveu expertise única em exploração em águas ultraprofundas, tornando-se referência mundial. A gestão desse recurso estratégico — com quanto extrair, a que ritmo e como distribuir os royalties — é um dos grandes desafios geopolíticos do Brasil no século XXI."
   }
 ]

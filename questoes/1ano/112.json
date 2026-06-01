@@ -16,7 +16,8 @@
       "é de uso restrito devido a ser um setor estratégico e de garantia de soberania nacional, pois, por meio das imagens, as fronteiras nacionais podem ficar mais bem protegidas."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A cartografia moderna tem aplicações em inúmeros setores socioeconômicos: logística e transporte (GPS e mapas digitais), agricultura de precisão (imagens de satélite), urbanismo (SIG), defesa nacional (cartografia militar) e turismo (mapas interativos). Essa versatilidade confere à produção cartográfica relevância crescente na economia global.",
+    "ajuda": "O texto aborda uma técnica cartográfica específica. Leia com atenção as características descritas (precisão, uso de sensores, imagens digitais etc.) e identifique a qual técnica ou método cartográfico elas se referem."
   },
   {
     "id": 2,
@@ -33,12 +34,13 @@
       "altímetro, GPS, astrolábio."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O sensoriamento remoto capta dados da superfície terrestre sem contato físico, usando sensores em aviões ou satélites. As principais fontes de dados são: fotografias aéreas (alta resolução local), imagens de radar (penetram nuvens) e imagens de satélite multiespectrais (monitoramento de amplas áreas). O INPE usa esse conjunto para monitorar o desmatamento amazônico.",
+    "ajuda": "O sensoriamento remoto é uma técnica que obtém informações sobre objetos ou áreas sem contato físico direto, por meio de sensores instalados em satélites ou aeronaves. Avalie o que a questão afirma sobre suas aplicações ou limitações."
   },
   {
     "id": 3,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(ACAFE Medicina 2021) A Terra é dividida em diferentes camadas com características e composições distintas.\n\nSobre a estrutura e a dinâmica interna da Terra, assinale a alternativa incorreta:",
@@ -49,7 +51,8 @@
       "O manto é a camada intermediária entre o núcleo e a crosta. Os materiais que compõem o manto, em altíssima temperatura, formam o magma, que se movimenta através de correntes de convecção. É dessa camada que provêm as lavas que chegam à superfície quando ocorrem erupções vulcânicas."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A crosta terrestre (litosfera) é a camada mais externa, dividida em crosta continental (granito, 30-50 km) e crosta oceânica (basalto, 5-10 km). As placas tectônicas são fragmentos da litosfera que se movem sobre a astenosfera. A crosta oceânica é mais jovem e mais densa, sendo reciclada nas zonas de subducção onde mergulha sob a continental.",
+    "ajuda": "As camadas da Terra (crosta, manto e núcleo) diferem em composição química, estado físico e temperatura. A crosta oceânica é mais fina e densa (basáltica); a continental é mais espessa e menos densa (granítica). Identifique qual afirmativa melhor descreve essas diferenças."
   },
   {
     "id": 4,
@@ -66,7 +69,8 @@
       "Os períodos Pré-cambriano e Carbonífero, da era Mesozóica, correspondem ao tempo de formação das grandes jazidas de carvão mineral e dos vegetais superiores, como as coníferas."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A Era Cenozoica (início há ~65 Ma) marca o grande desenvolvimento dos mamíferos após a extinção dos dinossauros. É dividida em Paleógeno, Neógeno e Quaternário. O Homo sapiens surgiu no Quaternário, há aproximadamente 300.000 anos na África. Os Andes e o Himalaia também se formaram durante o Cenozoico, por colisão de placas tectônicas.",
+    "ajuda": "As Eras Geológicas representam grandes divisões do tempo geológico. Da mais antiga para a mais recente: Pré-Cambriana (vida unicelular), Paleozoica (invertebrados, peixes, répteis), Mesozoica (dinossauros, Pangeia), Cenozoica (mamíferos, ser humano). Relacione cada era às suas características."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "II, III e IV."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A tectônica de placas reconhece três tipos de movimentos: convergente (colisão, formando montanhas ou zonas de subducção), divergente (afastamento, criando dorsais oceânicas) e transformante (deslizamento lateral, causando terremotos como na Falha de San Andreas). A maioria dos vulcões e sismos ocorre nas bordas das placas.",
+    "ajuda": "A teoria da Tectônica de Placas é suportada por evidências como: simetria magnética do fundo oceânico, fossilização de espécies em continentes separados, distribuição de terremotos e vulcões nas bordas de placas. Avalie cada afirmativa com base nessas evidências."
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
       "O mapeamento do fundo oceânico levou à descoberta de evidências que comprovaram o movimento dos continentes confirmando a Deriva Continental (1915) e fornecendo os argumentos para elaboração da Tectônica de Placas (1960)."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O mapeamento do fundo oceânico nos anos 1950-60 revelou as dorsais oceânicas — cadeias montanhosas subaquáticas onde novo material basáltico emerge do manto. Esse processo de expansão do assoalho oceânico confirmou a teoria da deriva continental de Wegener e levou à formulação da Teoria das Placas Tectônicas, a grande síntese da geologia moderna.",
+    "ajuda": "A Tectônica de Placas foi desenvolvida nas décadas de 1960-70, reunindo evidências do fundo oceânico (expansão das dorsais) com a ideia de Wegener sobre a Deriva Continental. Esse marco científico explicou a distribuição de vulcões, terremotos e cadeias montanhosas."
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
       "Somente as afirmativas II, III e IV são corretas."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Os processos endógenos (internos) que moldam o relevo incluem: vulcanismo (extrusão de magma), tectonismo (movimentos de placas) e sismismo (terremotos). O vulcanismo cria montanhas e ilhas vulcânicas; o tectonismo origina cordilheiras por dobramento; os sismos podem reconfigurar a topografia rapidamente. São responsáveis pela construção do relevo.",
+    "ajuda": "Os processos endógenos (internos) da Terra, como vulcanismo e tectonismo, formam e deformam a crosta terrestre ao longo do tempo geológico. Eles são responsáveis pela formação das grandes estruturas do relevo, como montanhas dobradas e bacias sedimentares."
   },
   {
     "id": 8,
@@ -135,7 +142,8 @@
       "Convecção: ascendência de material magmático do manto para a superfície da crosta."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Os hot spots são pontos fixos de atividade magmática intensa no interior do manto, independentes das bordas de placas. O Havaí é o exemplo clássico: enquanto a placa do Pacífico se move sobre o hot spot, surgem ilhas vulcânicas em cadeia. A ilha mais jovem (grande ilha do Havaí) está diretamente sobre o hot spot ativo.",
+    "ajuda": "A sequência de imagens representa um processo geológico ou geomorfológico. Observe a transformação progressiva das formas e identifique o agente responsável (erosão fluvial, movimentos de massa, dissolução química, ação glacial)."
   },
   {
     "id": 9,
@@ -154,7 +162,8 @@
       "laterização."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O voçorocamento é um processo erosivo grave em que sulcos profundos (voçorocas) se formam pelo escoamento concentrado da água, especialmente em solos argilosos desprotegidos de vegetação. É comum em áreas de pastagem degradada no Cerrado e Nordeste do Brasil. A remoção da cobertura vegetal é o principal fator desencadeante.",
+    "ajuda": "As dolinas são depressões circulares formadas pela dissolução de rochas calcárias pela água levemente ácida (intemperismo químico). Esse processo, chamado de carste, cria feições típicas como cavernas, sumidouros e campos de dolinas."
   },
   {
     "id": 10,
@@ -173,6 +182,7 @@
       "laterização."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A erosão é o conjunto de processos que desgastam, removem e transportam materiais da superfície terrestre pela ação da água, vento, gelo ou gravidade. Nas imagens da questão, os sulcos, ravinas e sedimentação no fundo de vales evidenciam erosão hídrica acelerada — frequentemente causada por desmatamento e uso inadequado do solo.",
+    "ajuda": "Observe as figuras e identifique o processo geológico ou geomorfológico que as conecta. Pense se o processo é de ordem interna (magmático, tectônico) ou externa (erosivo, deposicional, químico)."
   }
 ]

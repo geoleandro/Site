@@ -2,7 +2,7 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "1ano/img/130/p30q1.png",
@@ -15,7 +15,8 @@
       "Intemperismo."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A latitude é o principal fator que determina a incidência solar e, consequentemente, a temperatura de cada região. No Equador (0°), os raios incidem perpendicularmente; nos polos (90°), de forma muito oblíqua. Por isso, há uma progressão de biomas do Equador aos polos: floresta equatorial → savana → deserto → mediterrâneo → floresta temperada → taiga → tundra.",
+    "ajuda": "O esquema provavelmente representa as zonas de vegetação em um perfil latitudinal ou altitudinal. As zonas variam do equador para os polos de acordo com o clima: floresta equatorial → savana → estepe → deserto → vegetação mediterrânea → floresta temperada → taiga → tundra."
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
       "As savanas e as florestas de monções dependem da sazonalidade climática: invernos frios e chuvosos, verões quentes e secos."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A taiga (floresta boreal ou de coníferas) ocorre em latitudes médias-altas (50°-70°N), onde as temperaturas são baixas e a precipitação moderada. As coníferas (pinheiros, abetos, larício) são adaptadas ao frio: folhas em agulha que retêm calor e resistem à neve. A umidade da taiga vem principalmente de frentes polares e ciclones das médias latitudes.",
+    "ajuda": "A distribuição latitudinal da vegetação acompanha as zonas climáticas: perto do equador há florestas tropicais úmidas; nas latitudes médias, florestas temperadas; nas altas latitudes, taiga (floresta de coníferas) e tundra. Identifique qual formação corresponde à latitude descrita."
   },
   {
     "id": 3,
@@ -51,7 +53,8 @@
       "Estepes e Florestas Temperadas."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "As florestas temperadas e subtropicais desenvolvem-se nas latitudes médias (30°-50°) sob clima úmido. As temperadas têm árvores caducifólias (que perdem as folhas no outono/inverno); as subtropicais têm vegetação semidecídua ou perenifólia. São biomas muito impactados pela urbanização e agricultura — a floresta atlântica no Brasil é um exemplo de floresta subtropical altamente degradada.",
+    "ajuda": "As formações vegetais mencionadas provavelmente são biomas de clima temperado ou frio (taiga, tundra) ou tropical (savana, floresta). Identifique-as pelas características descritas: presença de neve, tipo de folhagem (perene ou decídua), biodiversidade, altura das árvores."
   },
   {
     "id": 4,
@@ -71,7 +74,8 @@
       "Floresta boreal."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A floresta temperada é caracterizada por árvores caducifólias de médio a grande porte, que perdem as folhas no inverno para reduzir a perda de água e energia. Ocorre na Europa Ocidental, nordeste da América do Norte e partes do leste asiático. O outono dessas regiões, com a coloração das folhas antes da queda, é um espetáculo geográfico e turístico.",
+    "ajuda": "A descrição da vegetação inclui características como tipo de folha, estratificação, adaptações ao clima e distribuição geográfica. Use essas pistas para identificar o bioma: floresta boreal (taiga), tundra, savana, estepe, mediterrânea, floresta temperada ou deserto."
   },
   {
     "id": 5,
@@ -89,7 +93,8 @@
       "Tundra - exploração de petróleo e gás natural."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As pradarias e estepes são formações herbáceas de regiões temperadas semi-áridas (precipitação de 300-600 mm/ano). Constituem os solos mais férteis do mundo (chernossem/terra preta) e são usadas intensivamente para agricultura de cereais — trigo nos Pampas argentinos e nas Grandes Planícies dos EUA, e milho no Brasil Central.",
+    "ajuda": "O mapa apresenta a distribuição de uma formação vegetal. Observe as regiões onde ela ocorre e relacione com o clima correspondente. Identifique se trata de uma formação tropical, temperada ou de alta latitude."
   },
   {
     "id": 6,
@@ -106,7 +111,8 @@
       "I, IV, III e II."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As formações vegetais variam com clima, solo e relevo. Cada bioma tem características únicas que determinam sua utilidade econômica e seus impactos ambientais quando degradado. A correlação correta entre biomas e suas características é fundamental para compreender tanto a distribuição da biodiversidade quanto as estratégias de uso sustentável dos ecossistemas.",
+    "ajuda": "As formações vegetais naturais foram profundamente alteradas pela ação humana por meio do desmatamento, da agricultura e da urbanização. Identifique qual bioma ou formação está sendo descrito e quais transformações humanas foram impostas sobre ele."
   },
   {
     "id": 7,
@@ -123,7 +129,8 @@
       "Pradarias."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A floresta boreal (taiga) é a maior floresta contínua do planeta, cobrindo o norte do Canadá, Alasca, Escandinávia e Sibéria em uma faixa circumpolar. É dominada por coníferas (pinheiros, abetos, larício) adaptadas ao frio intenso e neve. Apesar de menos biodiversa que as florestas tropicais, estoca enormes quantidades de carbono no solo (permafrost).",
+    "ajuda": "O clima continental frio de altas latitudes origina a taiga (floresta boreal de coníferas), adaptada a invernos rigorosos com neve e geadas prolongadas. As coníferas têm folhas em agulha que perdem pouca água e suportam o peso da neve."
   },
   {
     "id": 8,
@@ -141,7 +148,8 @@
       "A floresta Boreal."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A floresta boreal (taiga) forma uma imensa faixa verde contínua ao redor do Ártico, cobrindo o norte da Rússia (Sibéria), Canadá, Alasca e Escandinávia. É a maior floresta do planeta em área, mas com menor biodiversidade que a tropical. Enfrenta ameaças do aquecimento global — o derretimento do permafrost libera metano, acelerando as mudanças climáticas.",
+    "ajuda": "A citação descreve uma grande extensão de floresta de coníferas no Hemisfério Norte (taiga), abrangendo o Alasca, Canadá, Escandinávia e Sibéria. Essa é a maior formação florestal do planeta e forma um cinturão contínuo nas latitudes subpolares."
   },
   {
     "id": 9,
@@ -158,17 +166,18 @@
       "savanas e pastos tropicais / florestas e arbustos tropicais / vegetação mediterrânea."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "Em termos de fitomassa (biomassa vegetal total), as florestas tropicais perenes lideram por sua densidade e crescimento rápido. As florestas temperadas vêm em seguida, com árvores de grande porte. A floresta boreal tem grande área, mas menor fitomassa por hectare. Savanas e pradarias têm fitomassa principalmente subterrânea (raízes), com pouca biomassa aérea.",
+    "ajuda": "As regiões com maior porcentagem de fitomassa original preservada são aquelas com menor densidade demográfica e menor pressão antrópica, como a Amazônia, a Sibéria e as regiões polares. Já os biomas mais degradados são geralmente os localizados em zonas temperadas com longa história de uso agrícola."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2021",
     "dificuldade": "",
     "tags": [],
     "texto_apoio": "É um tipo de cobertura vegetal que se estabelece em planícies, é encontrado nas áreas centrais dos Estados Unidos, Canadá, sul do Brasil, Argentina e Uruguai, nos países da América do Sul essa vegetação recebe o nome de pampa. A formação vegetal em questão figura como uma extensa pastagem natural, condição propícia para a criação de animais, como bovinos, caprinos, ovinos e equinos. Podem ser encontradas, em alguns casos, nas proximidades de desertos, podendo ocorrer em climas tropicais e climas temperados. Essa vegetação é constituída de gramíneas (de 10 cm a 50 cm), desse modo, não há presença de árvores; abriga distintos animais, principalmente roedores, carnívoros e aves de rapina, répteis e insetos. Regiões cobertas por essa formação vegetal são essencialmente vulneráveis ao processo de desertificação.",
     "imagem_apoio": "1ano/img/130/p30q10.png",
-    "pergunta": "(2021)\n\nO texto se refere à vegetação de:",
+    "pergunta": "O texto se refere à vegetação de:",
     "alternativas": [
       "floresta boreal (coníferas).",
       "estepes e pradarias.",
@@ -177,6 +186,7 @@
       "floresta subtropicais."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As estepes e pradarias são formações herbáceas de regiões temperadas com baixa precipitação. As estepes (Ásia Central, Europa oriental) têm gramíneas baixas e xerófitas; as pradarias (Américas) são mais úmidas e têm gramíneas mais altas. Ambas têm solos férteis — os chernossems — e foram amplamente convertidas em lavouras, especialmente para cultivo de cereais.",
+    "ajuda": "O texto descreve características como adaptações a baixas temperaturas, solos pobres ou gelados (permafrost) e estações bem definidas. Identifique se refere à tundra (sem árvores, musgos e líquens), à taiga (coníferas) ou à estepe (gramíneas de clima continental)."
   }
 ]

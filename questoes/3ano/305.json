@@ -2,7 +2,7 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(UECE) A respeito do “subdesenvolvimento” é correto afirmar que:",
@@ -13,15 +13,16 @@
       "as disparidades socioeconômicas entre os países surgem com as grandes navegações (séculos XV e XVI), daí se formando os países subdesenvolvidos."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O subdesenvolvimento não é uma fase histórica que os países avançados já atravessaram — é uma condição estrutural criada pela colonização e pela inserção periférica no capitalismo global. Países como Brasil e Índia nunca foram 'subdesenvolvidos como a Inglaterra foi' pois surgiram já integrados como periferias do sistema.",
+    "ajuda": "O subdesenvolvimento não é uma etapa que os países desenvolvidos passaram antes de se industrializar — é uma condição gerada pela exploração colonial e pela inserção desigual no sistema capitalista. Analise qual afirmativa representa corretamente essa concepção."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) O Índice de Desenvolvimento Humano (IDH), criado pela ONU, avalia com mais precisão as condições humanas e sociais de um país. Assinale a alternativa que apresente os indicadores utilizados na determinação do IDH.\n\nAssinale a alternativa que apresente os indicadores utilizados na determinação do IDH.",
+    "pergunta": "O Índice de Desenvolvimento Humano (IDH), criado pela ONU, avalia com mais precisão as condições humanas e sociais de um país. Assinale a alternativa que apresente os indicadores utilizados na determinação do IDH.\n\nAssinale a alternativa que apresente os indicadores utilizados na determinação do IDH.",
     "alternativas": [
       "Consumo de calorias, taxa de analfabetismo, número de médicos por 1.000 habitantes.",
       "Renda per capita, escolaridade, taxa de alfabetização entre adultos e expectativa de vida ao nascer.",
@@ -29,7 +30,8 @@
       "Taxa de mortalidade infantil, valor do salário mínimo, taxa de natalidade"
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O IDH foi criado pelo economista Mahbub ul Haq em 1990 e é calculado a partir de três dimensões: longevidade (esperança de vida ao nascer), educação (anos de escolaridade) e renda (RNB per capita). Varia de 0 a 1 e permite comparar os países de forma mais ampla do que o simples PIB per capita.",
+    "ajuda": "O IDH (Índice de Desenvolvimento Humano) da ONU combina três dimensões: saúde, educação e renda. Identifique qual conjunto de indicadores representa exatamente essas três dimensões sem confundir com outros índices como o PIB ou o Índice de Gini."
   },
   {
     "id": 3,
@@ -46,16 +48,17 @@
       "O cálculo do PIB fornece informações sobre os diferentes setores, demonstrando aqueles em que há uma maior geração de renda e os que possuem menor peso."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O PIB mede a soma de todos os bens e serviços produzidos em um país em determinado período, sendo útil para aferir crescimento econômico. Porém, não informa sobre distribuição de renda, bem-estar social ou sustentabilidade ambiental — limitações que levaram à criação de indicadores complementares como o IDH.",
+    "ajuda": "O PIB mede a riqueza produzida, mas não diz como ela é distribuída nem qual é a qualidade de vida da população. Pense em qual alternativa aponta corretamente uma limitação do PIB como indicador de desenvolvimento."
   },
   {
     "id": 4,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "3ano/img/305/t5q4.png",
-    "pergunta": "(2020) Observe o mapa abaixo sobre a distribuição do índice de Gini no mundo:\n\nAssinale a alternativa incorreta sobre este índice:",
+    "pergunta": "Observe o mapa abaixo sobre a distribuição do índice de Gini no mundo:\n\nAssinale a alternativa incorreta sobre este índice:",
     "alternativas": [
       "Trata-se de um instrumento utilizado para medir a desigualdade social de um determinado país, unidade federativa ou município.",
       "É medida em uma escala de 0 (quando não há desigualdade) a 1 (com desigualdade máxima).",
@@ -63,7 +66,8 @@
       "No mapa é possível observar que o Brasil encontra-se nas piores posições ao lado de países da África, sudeste asiático e Oceania."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O Coeficiente de Gini varia de 0 (igualdade perfeita) a 1 (desigualdade máxima). O mapa revela que Brasil, África do Sul e países da América Latina figuram entre os mais desiguais do mundo, enquanto os países escandinavos têm os menores coeficientes. A desigualdade não está necessariamente ligada ao nível de renda.",
+    "ajuda": "O Índice de Gini mede a desigualdade de renda: 0 significa igualdade perfeita e 1 significa desigualdade máxima. Ao analisar o mapa, lembre-se de que países da América Latina, especialmente o Brasil, figuram entre os mais desiguais do mundo."
   },
   {
     "id": 5,
@@ -80,7 +84,8 @@
       "a apropriação da riqueza gerada, o que prejudica análises sociais."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "O PIB ignora como a riqueza gerada é distribuída entre a população. Um país pode ter o PIB crescendo enquanto a pobreza aumenta — se os ganhos forem concentrados nas mãos de poucos. Por isso, análises sociais precisam combinar o PIB com indicadores de distribuição como o Gini ou o IDH.",
+    "ajuda": "O PIB soma toda a riqueza produzida, mas não informa se essa riqueza está concentrada em poucos ou distribuída entre muitos. Identifique qual dimensão importante o PIB ignora e que comprometeria análises sobre bem-estar social."
   },
   {
     "id": 6,
@@ -96,7 +101,8 @@
       "as desigualdades sociais entre zonas rurais e urbanas — um dos contrastes geográficos mais flagrantes já sentidos pela humanidade — foram superadas com o advento da biotecnologia voltada à produção de alimentos."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "Mesmo nas nações mais ricas do mundo, existem bolsões de pobreza urbana com violência, informalidade e carência de serviços públicos. Em cidades como Nova York ou Londres, bairros periféricos convivem com riqueza extrema a poucos quilômetros de distância — revelando que o desenvolvimento humano é geograficamente desigual dentro dos países.",
+    "ajuda": "A desigualdade de desenvolvimento humano existe tanto entre países quanto dentro de cada país. Mesmo nações ricas apresentam bolsões de pobreza urbana com carência de serviços públicos. Avalie qual alternativa expressa corretamente esse paradoxo."
   },
   {
     "id": 7,
@@ -114,7 +120,8 @@
       "a mobilidade, pela referência ao meio de transporte utilizado pelas personagens."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O IDH é composto por longevidade, educação e renda. Charges sobre o IDH frequentemente ironizam a renda (PIB per capita), mostrando a discrepância entre a riqueza medida estatisticamente e a realidade vivida pela maioria. A crítica revela a distância entre indicadores agregados e a experiência concreta das pessoas.",
+    "ajuda": "O IDH é calculado a partir de três componentes: longevidade (expectativa de vida), educação (anos de escolaridade) e renda (RNB per capita). Identifique qual desses três componentes a charge está ironizando com base nas pistas visuais descritas."
   },
   {
     "id": 8,
@@ -131,7 +138,8 @@
       "diminuição da mortalidade infantil – aumento da expectativa de vida"
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O crescimento do IDH-M brasileiro entre 1991 e 2010 foi impulsionado principalmente pela queda da mortalidade infantil (via programas de saúde), aumento da expectativa de vida e expansão da escolarização básica. A redução das desigualdades regionais foi desigual, com o Norte e Nordeste ainda apresentando os menores índices.",
+    "ajuda": "O IDH-M cresceu no Brasil por meio de políticas que reduziram a mortalidade infantil, aumentaram a escolarização e elevaram a renda das populações mais pobres. Identifique qual par de processos melhor explica esse crescimento simultâneo nas três dimensões do índice."
   },
   {
     "id": 9,
@@ -149,7 +157,8 @@
       "países desenvolvidos como França, Alemanha e Canadá, embora apresentem economia estável, possuem elevados índices de desigualdade social."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O Brasil figura historicamente entre os países mais desiguais do G20, com Coeficiente de Gini acima de 0,5. A África do Sul, marcada pelas sequelas do Apartheid, apresenta o maior índice de desigualdade entre os países do grupo. As economias europeias desenvolvidas concentram os melhores índices de distribuição de renda.",
+    "ajuda": "O Coeficiente de Gini é uma medida de desigualdade de renda. Ao analisar o gráfico, compare o Brasil com outros países do G20: quanto menor o coeficiente, mais igualitária a distribuição. Avalie qual afirmativa corresponde aos dados apresentados."
   },
   {
     "id": 10,
@@ -167,6 +176,7 @@
       "Produto Interno Bruto – PIB."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O IDH foi criado pelo PNUD em 1990 como alternativa ao PIB para medir o desenvolvimento humano. Baseia-se nas dimensões de saúde (expectativa de vida), educação (anos de escolaridade e alfabetização) e padrão de vida (RNB per capita). É o principal parâmetro da ONU para comparar o bem-estar entre países.",
+    "ajuda": "A ONU criou um índice em 1990 para avaliar o desenvolvimento humano além do PIB, considerando longevidade, educação e renda. Identifique a sigla correta que nomeia esse índice, que hoje é o principal parâmetro de comparação entre países."
   }
 ]

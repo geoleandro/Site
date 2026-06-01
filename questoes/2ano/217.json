@@ -2,10 +2,10 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2019",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2019) Sobre o Pantanal, julgue os itens a seguir e assinale apenas as proposições que apresentam características desse bioma.\n\nI. A fauna é semelhante à do bioma Amazônia. A flora conta com aproximadamente 20 mil espécies de vegetais.\n\nII. Conhecido também como Campo Sulino, esse bioma abrange o território do estado do Rio Grande do Sul.\n\nIII. É considerado uma das maiores planícies alagadas do mundo, sendo o menor bioma em extensão territorial do Brasil.\n\nIV. Esse bioma compreende a bacia hidrográfica do Rio Paraguai, e o clima predominante é o tropical.\n\nAssinale a alternativa correta:",
+    "pergunta": "Sobre o Pantanal, julgue os itens a seguir e assinale apenas as proposições que apresentam características desse bioma.\n\nI. A fauna é semelhante à do bioma Amazônia. A flora conta com aproximadamente 20 mil espécies de vegetais.\n\nII. Conhecido também como Campo Sulino, esse bioma abrange o território do estado do Rio Grande do Sul.\n\nIII. É considerado uma das maiores planícies alagadas do mundo, sendo o menor bioma em extensão territorial do Brasil.\n\nIV. Esse bioma compreende a bacia hidrográfica do Rio Paraguai, e o clima predominante é o tropical.\n\nAssinale a alternativa correta:",
     "alternativas": [
       "I - III – IV.",
       "II – III.",
@@ -13,7 +13,8 @@
       "III – IV."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Lembre-se das características do Pantanal: planície alagada, bacia do Rio Paraguai, clima tropical, menor bioma do Brasil. Pense em quais afirmativas (I a IV) são corretas: o Campo Sulino é o bioma Pampa (no RS), não o Pantanal. O Pantanal não é o menor bioma — esse título pertence ao Pampa. Avalie cuidadosamente cada afirmativa.",
+    "comentario": "O Pantanal Mato-grossense é a maior planície úmida tropical do mundo (150 mil km²), patrimônio natural da humanidade segundo a UNESCO. Sua dinâmica ecológica é determinada pelas inundações sazonais dos rios da bacia do alto Paraguai, que regulam a biodiversidade e os ciclos de vida de mais de 650 espécies de aves, 260 de peixes e 95 de mamíferos. Em 2020, grandes queimadas devastaram cerca de 30% do bioma."
   },
   {
     "id": 2,
@@ -31,12 +32,13 @@
       "O clima tropical úmido predomina no bioma Cerrado e, por apresentar chuvas bem distribuídas durante o ano, com índice pluviométrico de 1800mm/ano, se apresenta com uma vocação agrícola natural, importante para o plantio da soja. Essa característica faz do Centro-Oeste brasileiro, área com predomínio do cerrado, a região ideal para o cultivo da oleaginosa citada."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Leia o texto sobre a devastação do Cerrado e pense nas causas reais: o avanço do agronegócio (soja, pecuária), a transformação de áreas nativas em monoculturas, a privatização de bens comuns (água, terra) e a violência simbólica e física contra comunidades tradicionais. Qual alternativa descreve corretamente as tendências descritas no texto?",
+    "comentario": "O Cerrado já perdeu mais de 50% de sua cobertura original — o que o torna o bioma mais ameaçado do Brasil proporcional à sua área original. Considerado a 'savana mais biodiversa do mundo', abriga mais de 12 mil espécies de plantas, mas cede espaço ao agronegócio da soja, especialmente no MATOPIBA (Maranhão, Tocantins, Piauí e Bahia), a nova fronteira agrícola do Brasil."
   },
   {
     "id": 3,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(IF SERTÂO-PE 2018) Considerando a vegetação brasileira e suas características, assinale a alternativa que relaciona corretamente a coluna A e B.",
@@ -47,7 +49,8 @@
       "3 - 4 - 1 - 2."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "A questão pede a associação entre biomas e suas características. Lembre-se dos principais biomas brasileiros e suas características: Floresta Amazônica (úmida, equatorial), Mata Atlântica (litoral, devastada), Cerrado (savana, savana, troncos retorcidos), Caatinga (xerófila, Nordeste), Pampas (gramíneas, Sul), Pantanal (planície alagável). Monte a associação correta entre as colunas.",
+    "comentario": "Os biomas brasileiros apresentam características vegetais distintas: a Caatinga tem vegetação xerófita (adaptada à seca); o Cerrado, savana com árvores tortuosas e raízes profundas; a Floresta Amazônica, floresta densa e úmida; e a Mata Atlântica, floresta costeira de alta biodiversidade. Cada bioma reflete a interação entre clima, solo e relevo específicos de sua região."
   },
   {
     "id": 4,
@@ -66,7 +69,8 @@
       "semidecídua e clima tropical úmido."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Leia o texto de Haesbaert sobre a destruição de uma paisagem com 'árvores de troncos retorcidos, folhas e arbustos ásperos sobre solos ácidos'. Pense em qual bioma brasileiro possui essas características: solo ácido e pobre, vegetação com troncos retorcidos, folhas coriáceas e arbustos. Qual tipo de vegetação e clima correspondem a essa descrição?",
+    "comentario": "A vegetação tropófila — que perde as folhas na estação seca como adaptação à escassez de água — é típica do Cerrado e das áreas de transição entre Cerrado e Caatinga. O clima tropical com estação seca pronunciada determina esse comportamento vegetal, diferenciando essas áreas das florestas equatoriais sempre-verdes da Amazônia, onde a umidade é constante."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "a Floresta Amazônica e a Caatinga."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Pense no conceito de vegetação de transição: a Mata dos Cocais (babaçu e carnaúba) é uma zona de transição entre dois biomas distintos. Lembre-se de que ela ocorre no Maranhão e Piauí, entre a floresta equatorial amazônica a oeste e a caatinga semiárida a leste. Qual é a combinação correta de biomas entre os quais a Mata dos Cocais faz a transição?",
+    "comentario": "A Mata dos Cocais é uma zona de transição (ecótono) entre a Floresta Amazônica e a Caatinga, dominada por palmeiras nativas como o babaçu e a carnaúba. Ocorre principalmente no Maranhão e no Piauí, constituindo uma faixa de vegetação transicional que mescla características de dois dos maiores biomas brasileiros. Essa posição intermediária a torna uma área de grande biodiversidade e valor ecológico."
   },
   {
     "id": 6,
@@ -100,7 +105,8 @@
       "A conservação ambiental do Pantanal atende aos diferentes interesses dos governos do Brasil, Argentina, Paraguai e Uruguai, países que compartilham esse rico ecossistema. Contudo, a facilidade de acesso e de ocupação com atividades agropecuárias tradicionais tem contribuído para a degradação desse ambiente."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Lembre-se das características do Pantanal: planície de inundação de baixa altitude (não planalto), bacia do Rio Paraguai, inundações periódicas no verão, clima tropical com chuvas concentradas, pecuária extensiva como principal atividade econômica. Avalie cada afirmativa e identifique qual descreve corretamente uma característica real do Pantanal.",
+    "comentario": "O Pantanal não é simplesmente uma planície plana: sua inundação periódica é causada menos pela pluviosidade local e mais pelo escoamento dos rios que drenam o Planalto Central para a depressão pantaneira. A topografia levemente inclinada da bacia do alto Paraguai impede o escoamento rápido das águas, que avançam lentamente sobre a planície criando um dos maiores espetáculos da natureza."
   },
   {
     "id": 7,
@@ -119,7 +125,8 @@
       "da Mata Atlântica."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Leia o texto e pense nas características do bioma descrito: 844 mil km², 10% do território brasileiro, clima seco, plantas xerófilas com espinhos e poucas folhas, três estratos de vegetação, salinização e desertificação. Qual bioma brasileiro possui essas características de adaptação à seca e problemas de desertificação?",
+    "comentario": "A Caatinga, único bioma exclusivamente brasileiro, cobre cerca de 11% do território nacional no semiárido nordestino. Sua vegetação xerófita — cactáceas, bromélias, árvores de tronco tortuoso com casca espessa — é adaptada à irregularidade das chuvas e ao calor intenso. O bioma sustenta cerca de 28 milhões de pessoas e abriga biodiversidade única, com espécies endêmicas ainda pouco estudadas."
   },
   {
     "id": 8,
@@ -138,7 +145,8 @@
       "assédio ao empresariado, dificultando o investimento de maquinários para a produção."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Leia o texto do ENEM sobre a territorialização do agronegócio no Cerrado. Pense em como o texto descreve os impactos sobre os camponeses: expropriação de bens comuns (água, sementes, terras), imposição de tecnologias externas e violência. Qual expressão descreve corretamente o que acontece com os camponeses nesse processo?",
+    "comentario": "A expansão do agronegócio sobre biomas como o Cerrado, a Caatinga e a Amazônia representa um 'cerco' às comunidades camponesas, indígenas e quilombolas, que veem seus territórios tradicionais convertidos em monoculturas. Esse processo combina grilagem de terras, pressão política e violência física, expulsando populações vulneráveis de seus modos de vida e territórios ancestrais."
   },
   {
     "id": 9,
@@ -153,11 +161,12 @@
       "floresta de araucária, amazônica, mata atlântica, caatinga, pampas, costeiros.",
       "floresta amazônica, mata atlântica, agreste, zona cacaueira, costeiros, mangues.",
       "agreste, mata atlântica, Floresta amazônica, mangues, cerrado, pampas.",
-      "floresta amazônica, de araucária, caatinga, zona dos cocais, cerrado, mata atlântica. e) caatinga, zona dos cocais, cerrado, mata atlântica, Floresta amazônica, zona cacaueira.",
-      ""
+      "floresta amazônica, de araucária, caatinga, zona dos cocais, cerrado, mata atlântica.",
+      "caatinga, zona dos cocais, cerrado, mata atlântica, Floresta amazônica, zona cacaueira."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Observe os mapas dos biomas brasileiros e associe cada número ou letra ao bioma correspondente. Lembre-se da distribuição espacial dos biomas: Amazônia (Norte), Cerrado (Centro-Oeste), Caatinga (Nordeste), Mata Atlântica (litoral Leste), Pampas (Sul do RS), Pantanal (Mato Grosso do Sul) e Mata de Cocais (Maranhão/Piauí). Identifique o conjunto correto.",
+    "comentario": "O Brasil possui seis biomas continentais reconhecidos pelo IBGE: Floresta Amazônica, Cerrado, Mata Atlântica, Caatinga, Pampa e Pantanal. Cada um corresponde a uma combinação específica de clima, vegetação, fauna e solo. A Floresta Amazônica é o maior (49% do território); o Pampa, o menor (2,07%). Todos estão sob pressão antrópica intensa, com destaque para o desmatamento e a conversão agropecuária."
   },
   {
     "id": 10,
@@ -170,10 +179,11 @@
     "alternativas": [
       "pela vegetação arbórea, em área de clima temperado, sujeita a processos de voçorocamento decorrente da eliminação da cobertura vegetal.",
       "pela vegetação arbórea, em área de clima subtropical, sujeita a processos de arenização decorrente da eliminação da cobertura vegetal.",
-      "Inserir alternativa cc) pela vegetação de gramíneas, em área de clima subtropical, sujeita a processos de arenização decorrente da eliminação da cobertura vegetal. d) pela vegetação de gramíneas, em área de clima temperado, sujeita a processos de voçorocamento decorrente da eliminação da cobertura vegetal.",
-      ""
+      "Inserir alternativa cc) pela vegetação de gramíneas, em área de clima subtropical, sujeita a processos de arenização decorrente da eliminação da cobertura vegetal.",
+      "pela vegetação de gramíneas, em área de clima temperado, sujeita a processos de voçorocamento decorrente da eliminação da cobertura vegetal."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Observe o mapa destacando a área dos Pampas no Brasil (Rio Grande do Sul). Pense nas características desse bioma: vegetação de gramíneas (campos), clima subtropical, solos susceptíveis à arenização. Lembre-se da diferença entre voçorocamento (erosão em sulcos) e arenização (processo de degradação dos Pampas gaúchos). Qual alternativa descreve corretamente essas características?",
+    "comentario": "Os Pampas, bioma exclusivo do Rio Grande do Sul (e Argentina/Uruguai), são campos nativos de gramíneas adaptados ao clima subtropical. Os solos arenosos susceptíveis à erosão, quando desprotegidos pela vegetação nativa, dão origem a processos de arenização — formação de areais — especialmente na região de Alegrete. O uso agropecuário intensivo e a substituição dos campos nativos por lavouras de soja aceleram esse processo de degradação."
   }
 ]

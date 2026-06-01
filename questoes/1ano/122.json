@@ -14,7 +14,8 @@
       "smog industrial, que acompanha a inversão térmica, é comum nos dias mais frios e úmidos, e tem sua origem nos gases liberados pela atividade industrial, cuja composição contém dióxido de enxofre e material particulado."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O smog industrial (ou clássico) forma-se nas cidades com forte atividade industrial em dias frios e úmidos, quando a inversão térmica impede a dispersão dos poluentes. É composto principalmente de SO₂ e material particulado liberados pelas indústrias. O grande smog de Londres em 1952 matou mais de 4.000 pessoas em 4 dias, levando ao Clean Air Act britânico.",
+    "ajuda": "O smog é formado pela combinação de poluentes industriais e veiculares com a umidade do ar, especialmente em dias frios e com pouca circulação de ventos. Identifique em qual tipo de ambiente ele ocorre com mais frequência e quais são seus efeitos sobre a saúde."
   },
   {
     "id": 2,
@@ -32,7 +33,8 @@
       "A afirmação é verdadeira, mas só se aplica para ambientes urbanos que se situam muito próximos de massas oceânicas."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A urbanização desordenada degrada o meio ambiente por múltiplas vias: impermeabilização do solo (enchentes), remoção da vegetação (ilhas de calor), geração de efluentes (poluição hídrica) e emissão de gases (poluição do ar). Cidades planejadas com arborização, parques, drenagem e transporte público eficiente conseguem mitigar esses impactos.",
+    "ajuda": "A afirmação apresentada provavelmente trata de poluição atmosférica, efeito estufa, ilhas de calor ou degradação ambiental urbana. Avalie criticamente a afirmação e identifique qual alternativa a confirma, nega ou complementa corretamente."
   },
   {
     "id": 3,
@@ -49,7 +51,8 @@
       "II, IV e V."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A escala geográfica é fundamental para entender fenômenos ambientais: a poluição atmosférica pode ser local (smog urbano), regional (chuva ácida) ou global (aquecimento global). O mesmo processo — queima de combustível fóssil — produz efeitos em escalas diferentes. Pensar em múltiplas escalas é uma das habilidades centrais da análise geográfica.",
+    "ajuda": "A escala geográfica se refere ao nível de análise: local (bairro, cidade), regional (estado, país) ou global (planeta). Pense em como um problema ambiental pode ter causas locais mas impactos globais, ou causas globais que se manifestam localmente."
   },
   {
     "id": 4,
@@ -67,7 +70,8 @@
       "plantio de árvores; criação de parques e preservação de áreas verdes; limitação da altura e espaçamento mínimo entre os edifícios."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "As ilhas de calor urbanas são combatidas com arborização (evapotranspiração resfria o ar), criação de parques e corredores verdes, telhados verdes, superfícies de cores claras (refletem mais calor) e limitação da verticalização densa que impede a circulação do vento. Cidades como Medellín (Colômbia) e Cingapura são referências em soluções biofílicas urbanas.",
+    "ajuda": "As ilhas de calor urbanas são fenômenos em que a temperatura nas cidades é mais alta do que nas áreas rurais ao redor. Elas são causadas pela impermeabilização do solo, ausência de vegetação, calor emitido por veículos e indústrias e pela geometria dos edifícios que retém o calor."
   },
   {
     "id": 5,
@@ -85,7 +89,8 @@
       "frente quente provocada pelo deslocamento de ar 3, que é continental e, por sua alta temperatura, é mais pesado e fica impedido de ascender devido ao ar 2, que é frio e não se mistura com o ar 1 que é quente."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A inversão térmica ocorre quando uma camada de ar quente 'tampa' o ar frio próximo ao solo, impedindo a dispersão vertical dos poluentes. O ar 2 (quente) atua como uma tampa que confina o ar 3 (frio e poluído) junto à superfície. É mais comum em regiões com relevo encaixado, como São Paulo no inverno — situação que agrava dramaticamente a qualidade do ar.",
+    "ajuda": "A figura provavelmente representa um ciclo ambiental, uma emissão de poluentes ou um processo climático. Identifique os elementos da figura (setas, fontes, destinos) e relacione-os ao processo descrito em cada alternativa."
   },
   {
     "id": 6,
@@ -103,7 +108,8 @@
       "aumentou, em função do crescimento econômico do interior do Estado e em virtude da ausência de legislação sobre emissão de poluentes nessa região."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A piora da qualidade do ar em São Paulo nas últimas análises da CETESB está ligada ao aumento da frota de veículos, especialmente caminhões e motos a diesel (que emitem material particulado fino — MP2,5). A expansão da frota motorizada supera os ganhos tecnológicos em eficiência dos motores, resultando em mais emissões absolutas na região metropolitana.",
+    "ajuda": "A qualidade do ar é medida por indicadores como o índice de material particulado (PM2.5 e PM10), dióxido de nitrogênio (NO₂), ozônio troposférico e monóxido de carbono. Os principais responsáveis pela piora da qualidade do ar em São Paulo são os veículos automotores."
   },
   {
     "id": 7,
@@ -121,7 +127,8 @@
       "Poluição visual resultante da exploração do espaço urbano pela publicidade (outdoors, placas, cartazes, telões, painéis eletrônicos, faixas, entre outros."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As ilhas de calor urbanas formam-se porque as superfícies artificiais da cidade (asfalto, concreto, telhados) absorvem mais calor que a vegetação e o solo nu. A ausência de vegetação elimina a evapotranspiração refrescante. Esse fenômeno faz com que as áreas centrais densamente construídas sejam até 5-8°C mais quentes que os arredores rurais.",
+    "ajuda": "Os grandes centros urbano-industriais concentram emissões de poluentes, produção de resíduos sólidos e impermeabilização do solo. Esses fatores geram ilhas de calor, enchentes e poluição atmosférica. Identifique qual problema ambiental é destacado na questão."
   },
   {
     "id": 8,
@@ -138,7 +145,8 @@
       "O comprometimento dos escoamentos hidrográficos devido ao lançamento de dejetos industriais e esgotamentos sanitários."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "As construções urbanas (prédios altos, asfalto, concreto) absorvem calor durante o dia e o irradiam à noite, criando células de calor que impedem o resfriamento natural. Isso aumenta o consumo de energia para ar-condicionado, intensifica smog fotoquímico e pode agravar a saúde respiratória da população. É um círculo vicioso de urbanização e aquecimento local.",
+    "ajuda": "A degradação ambiental no Brasil resulta de um modelo histórico de ocupação territorial baseado na exploração intensiva dos recursos naturais, com pouca regulação e fiscalização. Pense em como esse padrão se manifesta em diferentes biomas e regiões."
   },
   {
     "id": 9,
@@ -156,12 +164,13 @@
       "IV."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A poluição atmosférica nas cidades é causada principalmente por veículos (CO, NOₓ, hidrocarbonetos, MP) e indústrias (SO₂, MP). A legislação brasileira (PROCONVE) exige catalisadores em carros novos desde 1997, reduzindo muito as emissões por veículo. Contudo, o crescimento da frota nas grandes metrópoles continua sendo um desafio para a qualidade do ar.",
+    "ajuda": "A expansão das atividades econômicas nas cidades gera poluição do ar, da água e do solo, além de produção crescente de resíduos sólidos. Identifique qual atividade econômica ou padrão de consumo está mais diretamente ligado ao problema descrito."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(UCS-RS) Entre as maiores causas da poluição atmosférica estão a queima dos combustíveis fósseis e os resíduos gasosos da indústria. Isso provoca hoje alguns fenômenos climáticos que estão sendo acompanhados por cientistas. Considerando os fenômenos climáticos, listados na Coluna A, associe-os às características que os identificam, elencadas na Coluna B.\n\nAssinale a alternativa que preenche corretamente os parênteses, de cima para baixo.",
@@ -173,6 +182,7 @@
       "1 - 3 - 2."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "O smog fotoquímico forma-se pela ação da luz solar sobre poluentes emitidos por automóveis (NOₓ e hidrocarbonetos), gerando ozônio troposférico e outros oxidantes. O smog industrial resulta da queima industrial de carvão (SO₂ e fuligem). O smog fotoquímico é predominante em cidades ensolaradas e quentes; o industrial, em regiões frias com inversão térmica.",
+    "ajuda": "A poluição atmosférica tem como principais fontes os veículos automotores (óxidos de nitrogênio, monóxido de carbono, material particulado) e a indústria (enxofre, solventes, metais pesados). Avalie quais fontes são descritas na questão e seus impactos à saúde."
   }
 ]

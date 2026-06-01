@@ -14,15 +14,16 @@
       "as massas de ar são porções do ar atmosférico com características próprias e que não sofrem influência da região em que se encontram."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Lembre-se de que as massas de ar adquirem as características (temperatura e umidade) da região onde se originam e as levam para outras áreas ao se deslocar. Pense em como uma massa de ar originada sobre o oceano tropical difere de uma massa de ar formada sobre um continente no inverno. Qual alternativa define corretamente o conceito de massa de ar?",
+    "comentario": "As massas de ar são enormes volumes de ar atmosférico com temperatura e umidade homogêneas, formadas pela estagnação prolongada do ar sobre superfícies uniformes (oceano, floresta, deserto). Ao se deslocar, cada massa carrega as características de sua região de origem, influenciando o tempo e o clima das áreas que atravessa — esse princípio é fundamental para entender os padrões climáticos do Brasil."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2019",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2019) A “friagem” consiste na queda brusca de temperatura na Amazônia Ocidental. Sobre esse fenômeno pode-se afirmar que:\n\nI – O relevo baixo de planície facilita a incursão de massa e de ar frio que atinge a Amazônia.\n\nII – A massa de ar responsável pela ocorrência de friagem é a tropical atlântica.\n\nIII – A friagem ocorre no inverno.\n\nDe acordo com as afirmativas, assinale a alternativa correta.",
+    "pergunta": "A “friagem” consiste na queda brusca de temperatura na Amazônia Ocidental. Sobre esse fenômeno pode-se afirmar que:\n\nI – O relevo baixo de planície facilita a incursão de massa e de ar frio que atinge a Amazônia.\n\nII – A massa de ar responsável pela ocorrência de friagem é a tropical atlântica.\n\nIII – A friagem ocorre no inverno.\n\nDe acordo com as afirmativas, assinale a alternativa correta.",
     "alternativas": [
       "somente o item I está correto.",
       "os itens II e III estão corretos.",
@@ -31,7 +32,8 @@
       "Todos os itens estão corretos."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Analise cada afirmativa sobre a 'friagem' na Amazônia. Pense: qual massa de ar é responsável por essa queda brusca de temperatura? A Massa Polar Atlântica, de origem antártica, avança pelo interior do continente durante o inverno. O relevo plano da Amazônia facilita ou dificulta essa incursão de ar frio?",
+    "comentario": "A 'friagem' amazônica é causada pela penetração da Massa Polar Atlântica (MPA) pelo interior da América do Sul, especialmente durante o inverno austral. Ao encontrar o relevo relativamente plano da Amazônia Ocidental, essa massa de ar frio avança até latitudes próximas ao Equador, derrubando a temperatura em até 15°C em poucas horas — fenômeno incomum para uma região equatorial."
   },
   {
     "id": 3,
@@ -49,7 +51,8 @@
       "Continentalidade, que influencia na amplitude da temperatura"
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Observe o mapa com os dados de umidade relativa do ar nas regiões do Brasil. Pense em quais massas de ar atuam no Nordeste (seco nesse dia) e no Sul (úmido). Lembre-se de que as massas de ar carregam ou retiram umidade das regiões onde atuam. Qual fator climático explica diretamente a diferença de umidade entre as duas regiões?",
+    "comentario": "As massas de ar são o principal fator climático responsável pelas precipitações no Brasil. A Massa Equatorial Continental (MEC), úmida e instável, gera chuvas intensas na Amazônia e no Centro-Oeste no verão; a Massa Tropical Atlântica (MTA) traz chuvas ao litoral leste; enquanto a Massa Polar Atlântica (MPA) avança pelo Sul e, nas frentes frias, provoca precipitações em quase todo o território."
   },
   {
     "id": 4,
@@ -66,7 +69,8 @@
       "as precipitações de tipo convectivas ocorrem especialmente nos meses de verão, sendo comum a ocorrência de chuvas de granizo no final da tarde."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Observe o esquema da frente fria. Lembre-se que uma frente fria ocorre quando uma massa de ar frio avança sobre uma massa de ar quente: o ar frio (mais denso) se desloca por baixo, empurrando o ar quente para cima, gerando precipitação na frente de avanço e, depois, tempo frio e seco. Qual alternativa descreve corretamente essa dinâmica?",
+    "comentario": "As frentes frias resultam do encontro da Massa Polar Atlântica com massas tropicais mais quentes ao longo de uma 'linha de frente'. No momento de colisão, o ar quente é forçado a subir, resfriando e gerando nuvens e chuvas. Após a passagem da frente, a massa fria domina, derrubando as temperaturas — padrão muito característico do outono e inverno no Sul e Sudeste do Brasil."
   },
   {
     "id": 5,
@@ -84,7 +88,8 @@
       "Todas as afirmativas são verdadeiras."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Observe o mapa das massas de ar que atuam no Brasil e analise cada número. Lembre-se das principais massas: Equatorial Atlântica (nordeste), Equatorial Amazônica (noroeste), Tropical Atlântica (leste), Tropical Continental (centro-oeste) e Polar Atlântica (sul). Avalie cada afirmativa (I a V) e identifique quais são verdadeiras.",
+    "comentario": "O Brasil é influenciado por cinco grandes massas de ar: Equatorial Continental (úmida, quente), Equatorial Atlântica (úmida, quente), Tropical Atlântica (quente, úmida no litoral), Tropical Continental (quente, seca) e Polar Atlântica (fria, úmida). Cada uma determina períodos de chuva ou seca, calor ou frio em diferentes regiões, tornando o estudo das massas de ar essencial para compreender o clima do Brasil."
   },
   {
     "id": 6,
@@ -101,7 +106,8 @@
       "A massa de ar quente e úmida que se encontra sobre o estado do Mato Grosso do Sul corresponde à massa tropical continental, geradora de chuvas em pancadas."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Pense na notícia meteorológica que descreve uma área de instabilidade vindo da Argentina em direção ao Sul do Brasil. Lembre-se que as frentes frias que afetam o Sul do Brasil são geradas pela Frente Polar Atlântica, resultado do encontro entre a Massa Polar Atlântica e as massas tropicais. Qual alternativa identifica corretamente a massa de ar responsável?",
+    "comentario": "A Frente Polar Atlântica (FPA) é formada pelo contato entre a Massa Polar Atlântica (fria) e massas tropicais (quentes), gerando instabilidade atmosférica e chuvas ao longo de sua trajetória pelo Sul e Sudeste da América do Sul. É a principal responsável pelas precipitações de outono e inverno no Sul do Brasil e pode avançar até o Centro-Oeste e Nordeste em episódios de intensificação polar."
   },
   {
     "id": 7,
@@ -119,7 +125,8 @@
       "na região Sul do Brasil, onde predomina o clima subtropical, a Massa Polar Atlântica é responsável pelos invernos rigorosos, provocando o fenômeno da friagem."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Observe os dois mapas (classificação climática e massas de ar). Pense: qual massa de ar domina a maior parte do Brasil? As Massas Equatoriais e Tropicais são quentes e predominam nas baixas latitudes. Isso explica por que o Brasil é majoritariamente um país de climas quentes. Qual alternativa descreve corretamente essa relação entre massas de ar e clima?",
+    "comentario": "A predominância de climas quentes no Brasil resulta da sua posição tropical: a maior parte do território recebe alta insolação durante o ano e é influenciada pelas massas equatoriais e tropicais, que são quentes e, em geral, úmidas. Apenas o Sul do país, ao sul do Trópico de Capricórnio, experimenta invernos frios pela influência da Massa Polar Atlântica."
   },
   {
     "id": 8,
@@ -136,30 +143,32 @@
       "I e III."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Analise cada afirmativa (I a IV). Pense: as baixas pressões na zona intertropical geram instabilidade (não estabilidade). O clima é o conjunto de variações do tempo ao longo de muitos anos. As massas de ar são dinâmicas, não estáticas. O tempo é o estado momentâneo da atmosfera. Identifique as afirmativas corretas.",
+    "comentario": "A circulação atmosférica global é movida pelas diferenças de pressão e temperatura: o ar quente sobe nas zonas equatoriais, cria baixas pressões e atrai massas de ar das regiões subtropicais. Esse sistema gera as Células de Hadley, que explicam a distribuição das chuvas tropicais e a formação dos grandes desertos nas latitudes subtropicais — como o Saara e o Atacama."
   },
   {
     "id": 9,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "2ano/img/215/s15q9.png",
     "pergunta": "(UFG) Observe os mapas a seguir.\n\nA dinâmica das massas de ar é um dos fatores que explica a caracterização climática de uma área. A leitura e a interpretação dos mapas indicam que o clima do território goiano é influenciado pela atuação da massa.",
     "alternativas": [
-      "Equatorial continental no verão e Tropical atlântica no inverno. b) Equatorial continental durante o ano todo. c) Tropical atlântica no verão e Polar atlântica durante o inverno. d) Equatorial continental no verão e Equatorial atlântica no inverno e) Tropical atlântica durante o ano todo.",
-      "",
-      "",
-      "",
-      ""
+      "Equatorial continental no verão e Tropical atlântica no inverno..",
+      "Equatorial continental durante o ano todo.",
+      "Tropical atlântica no verão e Polar atlântica durante o inverno.",
+      "Equatorial continental no verão e Equatorial atlântica no inverno ",
+      "Tropical atlântica durante o ano todo"
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Observe os mapas das massas de ar no verão e no inverno sobre o estado de Goiás. Pense: no verão, qual massa de ar quente e úmida domina o Centro-Oeste trazendo chuvas? No inverno, qual massa seca e quente prevalece? Identifique corretamente as massas que atuam em cada estação sobre o território goiano.",
+    "comentario": "O Goiás, por sua posição no Planalto Central, é influenciado pela Massa Equatorial Continental no verão — que traz as chuvas do período chuvoso — e pela Massa Tropical Continental no inverno — que domina com tempo seco. Essa alternância entre estações úmida e seca é o principal ritmo climático do Cerrado, definindo ciclos de queimadas naturais e padrões de recarga dos aquíferos."
   },
   {
     "id": 10,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(MACKENZIE) Assinale a alternativa CORRETA sobre a dinâmica de massas de ar no Brasil.",
@@ -170,6 +179,7 @@
       "A massa polar atlântica, originária da Antártica, tem atuação restrita ao extremo sul do país."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Pense na origem e na área de atuação de cada massa de ar no Brasil. A Massa Tropical Atlântica origina-se no Atlântico Sul e avança pela faixa litorânea de norte a sul do país, trazendo umidade para o litoral. Avalie cada alternativa comparando origem e área de influência de cada massa de ar.",
+    "comentario": "A Massa Tropical Atlântica (MTA), originada no Atlântico Sul sob alta pressão subtropical, avança em direção ao continente trazendo calor e umidade para o litoral brasileiro, do Nordeste ao Sul. Sua atuação é constante ao longo do ano, mas é reforçada no verão — quando alimenta as chuvas do litoral leste — e moderada no inverno pela entrada das frentes polares."
   }
 ]

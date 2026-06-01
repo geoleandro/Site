@@ -2,11 +2,11 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "3ano/img/320/t20q1.png",
-    "pergunta": "(2020) De acordo com o mapa abaixo dos Estados Unidos, as regiões em destaque estão relacionadas, com exceção da alternativa:",
+    "pergunta": "De acordo com o mapa abaixo dos Estados Unidos, as regiões em destaque estão relacionadas, com exceção da alternativa:",
     "alternativas": [
       "o Silicon Valley, o Vale do Silício, importante na fabricação de chips de computador e de condutores para comunicações, repleto de boas universidades com centros de pesquisa de alta tecnologia.",
       "a região Sul, tradicionalmente agrícola e pouco industrializada, onde no passado apenas a indústrias têxtil se destacava. Passou a apresentar uma importante diversidade industrial com o desenvolvimento petrolífero da década de 1950.",
@@ -14,16 +14,17 @@
       "a região dos Grandes Lagos – Michigan, Ontário, com o canal Erie, que constitui uma verdadeira bacia marítima no interior do território, no qual existe hoje uma megalópole, que engloba as cidades de Chicago e Pittsburg."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "A questão pede a alternativa que NÃO está relacionada às regiões destacadas nos EUA. A alternativa incorreta é a B, sobre a região Sul: antes da guerra civil era agrícola (escravista), e na segunda metade do século XX tornou-se um importante polo industrial graças ao petróleo do Texas e às indústrias do Sun Belt.",
+    "ajuda": "A questão pede a alternativa que NÃO se relaciona às regiões destacadas dos EUA. Lembre-se das principais regiões econômicas americanas: Vale do Silício (tecnologia, Califórnia), Sun Belt (industria mais recente), Rust Belt (industrialização clássica, Grandes Lagos), e o Sul agrícola."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "3ano/img/320/t20q2.png",
-    "pergunta": "(2020) O mapa abaixo apresenta a distribuição da indústria e da mineração nos EUA. Sobre as áreas de maior concentração industrial, assinale a alternativa correta. Trata-se do(a):",
+    "pergunta": "O mapa abaixo apresenta a distribuição da indústria e da mineração nos EUA. Sobre as áreas de maior concentração industrial, assinale a alternativa correta. Trata-se do(a):",
     "alternativas": [
       "região Sul e Sudeste: destacam-se o setor siderúrgico no estado do Alabama, a indústria têxtil na Geórgia (Atlanta) e o grande centro poli industrial (petróleo e informática) no Texas (Houston, Galveston) e Louisiana (New Orleans).",
       "região Oeste: a produção industrial é diversificada (aeronáutica, eletrônica), destacando-se os polos industriais de Los Angeles, San Francisco, Portland e Seattle.",
@@ -31,7 +32,8 @@
       "Sun Belt (Cinturão do Sol) que se estende do estado da Califórnia até o Texas. Essa indústria baseia-se num processo de produção mais moderno, com intensa automação e informatização, em que a mão de obra, menos numerosa, apresenta alto grau de qualificação."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A maior concentração industrial dos EUA está na região do Corredor Industrial Nordeste, estendendo-se do litoral atlântico (Boston-Washington) aos Grandes Lagos (Chicago-Detroit). Essa região concentrou historicamente mais de 60% das indústrias americanas graças ao carvão, ao ferro e às vias aquáticas.",
+    "ajuda": "A concentração industrial nos EUA segue uma lógica histórica: o Nordeste (Corredor Industrial) foi o berço da industrialização, mas o Sun Belt atraiu indústrias mais recentes graças ao clima favorável e incentivos fiscais. Identifique a região com maior concentração industrial."
   },
   {
     "id": 3,
@@ -49,7 +51,8 @@
       "o elevado grau de mecanização nas várias etapas do processo de cultivo, o que garante alta produtividadee) o elevado grau de mecanização nas várias etapas do processo de cultivo, o que garante alta produtividade."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A agricultura norte-americana é altamente mecanizada: uma única fazenda no Meio-Oeste pode ser operada por poucas pessoas com tratores gigantes e colheitadeiras automáticas. Esse elevado grau de mecanização explica como os EUA produzem 9 toneladas de grãos por hectare — mais que o dobro da média brasileira.",
+    "ajuda": "A agricultura norte-americana é altamente mecanizada, subsidiada pelo governo e integrada ao agronegócio global. Pense em qual característica tecnológica e organizacional explica a gigantesca produtividade agrícola dos EUA."
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
       "V, F, V, V."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A sequência correta é V-F-F-V: os EUA são a maior potência militar e econômica (V); Trump não foi reconhecido como conservador em política externa, adotando postura isolacionista (F); os EUA se retiraram do Acordo de Paris sob Trump (F); os EUA mantêm gastos militares gigantescos, sem desmilitarização (F).",
+    "ajuda": "Os EUA são a maior potência econômica e militar do mundo, mas apresentam desigualdades internas significativas. Avalie as afirmativas sobre o papel geopolítico e geoeconômico dos EUA, verificando quais são verdadeiras e quais são falsas."
   },
   {
     "id": 5,
@@ -83,7 +87,8 @@
       "incorporação da China à Organização do Tratado do Atlântico Norte (Otan)."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A força dos EUA no pós-Guerra Fria baseou-se na projeção de poder militar global, com 800 bases militares em mais de 70 países. Essa presença foi usada para justificar intervenções no Iraque e no Afeganistão após o 11 de setembro, revelando como a superpotência americana se projeta além de suas fronteiras.",
+    "ajuda": "Após os atentados de 11 de setembro de 2001, os EUA iniciaram guerras no Afeganistão e no Iraque sob a doutrina da 'Guerra ao Terror'. Pense em qual fator geopolítico explica a progressiva perda de legitimidade internacional da liderança americana."
   },
   {
     "id": 6,
@@ -101,7 +106,8 @@
       "Transferência de todos os presos políticos de Guantánamo, para prisões norte-americanas."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Em 2015, os EUA e Cuba anunciaram a restauração de suas relações diplomáticas após 54 anos de ruptura. Barack Obama e Raúl Castro chegaram a um acordo histórico que incluía a reabertura de embaixadas — simbolizando o fim da Guerra Fria no Caribe, décadas após o término do conflito global.",
+    "ajuda": "A charge foi publicada em um momento específico da história diplomática entre EUA e Cuba. Lembre-se de que em 2014-2015 houve uma tentativa de normalização das relações diplomáticas entre os dois países. Identifique qual evento a charge retrata."
   },
   {
     "id": 7,
@@ -119,7 +125,8 @@
       "sobre mortalidade masculina gerada por condições precárias de trabalho."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "A população hispânica nos EUA tem uma estrutura etária jovem e taxas de natalidade mais elevadas que a média americana. Isso explica seu crescimento além da imigração: a fecundidade de famílias latinas supera a de famílias brancas não hispânicas, acelerando o crescimento desse grupo demograficamente.",
+    "ajuda": "A população hispânica nos EUA cresce não apenas pela imigração, mas também por uma dinâmica demográfica específica. Pense em qual característica demográfica — taxas de natalidade, estrutura etária, fecundidade — explica esse crescimento além da imigração."
   },
   {
     "id": 8,
@@ -136,7 +143,8 @@
       "Os ataques terroristas fizeram ressurgir a ideia de que os conflitos no século XXI seriam explicados pela existência de um conflito entre dois modelos de civilização."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A afirmativa incorreta é a D: houve aumento, não diminuição, dos gastos militares e do número de vítimas de conflitos pós-11/09. As guerras no Afeganistão e Iraque custaram mais de 6 trilhões de dólares e causaram centenas de milhares de mortes, representando o maior esforço militar americano desde o Vietnã.",
+    "ajuda": "Os atentados de 11 de setembro de 2001 transformaram a política externa americana e o mundo. A questão pede a afirmativa INCORRETA. Lembre-se das consequências reais: aumento da segurança interna, invasões militares, surgimento de novos conflitos étnicos e religiosos."
   },
   {
     "id": 9,
@@ -153,7 +161,8 @@
       "orientar uma estratégia de intervenções militares, visando à sustentação de governos aliados aos E.U.A. que se submetam à uma situação de protetorado, permitindo a ação de investimentos diretos e indiretos de transnacionais norte-americanas em seus territórios."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A Doutrina Bush (2002) consagrou o princípio da 'guerra preventiva': os EUA reservam-se o direito de atacar qualquer país considerado ameaça potencial, mesmo sem agressão prévia. Essa doutrina foi usada para justificar a invasão do Iraque em 2003, gerando uma das maiores crises de legitimidade da política externa americana.",
+    "ajuda": "A Doutrina Monroe ('América para os americanos') e outras doutrinas de política externa dos EUA orientaram sua atuação hegemônica no continente americano. Pense em qual princípio geopolítico melhor define a estratégia histórica de dominação americana."
   },
   {
     "id": 10,
@@ -170,6 +179,7 @@
       "Localizado no oeste dos EUA, próximo a importantes centros de pesquisa, forma um complexo industrial com destaque para os ramos típicos da Terceira Revolução Industrial."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "O Vale do Silício (Santa Clara, Califórnia) tornou-se o maior polo tecnológico do mundo graças à proximidade com Stanford e Berkeley, ao ambiente de empreendedorismo e capital de risco, e ao clima favorável. Abriga empresas como Google, Apple, Meta e Intel — centro da Terceira e Quarta Revoluções Industriais.",
+    "ajuda": "O Vale do Silício é o principal polo tecnológico dos EUA, localizado na Califórnia, próximo a universidades como Stanford e Berkeley. Pense em quais características — localização, tipo de indústria, ambiente de inovação — definem esse polo tecnológico."
   }
 ]

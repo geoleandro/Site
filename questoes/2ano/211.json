@@ -16,7 +16,8 @@
       "Letra E."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Observe os dois gráficos — um de expansão ferroviária e outro de expansão rodoviária ao longo do tempo. Pense em quando cada modal teve seu período de maior crescimento: as ferrovias cresceram no final do século XIX e início do XX (ligadas ao café), enquanto as rodovias explodiram a partir dos anos 1950 (JK e o rodoviarismo). Identifique qual tabela resume corretamente essa dinâmica.",
+    "comentario": "O Brasil fez uma escolha histórica pelo modal rodoviário: enquanto as ferrovias cresceram modestamente após os anos 1950, a malha rodoviária explodiu com o Plano de Metas de JK e o boom da indústria automobilística. Essa decisão foi influenciada pelas montadoras estrangeiras que tinham interesse em vender veículos, resultando em uma matriz de transportes cara, poluente e dependente do petróleo."
   },
   {
     "id": 2,
@@ -35,7 +36,8 @@
       "Superação da especialização dos cargueiros."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Pense no que são 'hinterlândias' e como os portos modernos precisam estar conectados ao interior. A questão trata de como os portos se adaptaram ao comércio globalizado. Lembre-se de qual inovação logística revolucionou o transporte marítimo ao padronizar o armazenamento de mercadorias e acelerar o trabalho nos portos.",
+    "comentario": "A conteinerização revolucionou o transporte marítimo a partir dos anos 1960, padronizando cargas e permitindo a transferência mecanizada entre navios, caminhões e trens. Portos brasileiros como Santos, Paranaguá e Itajaí modernizaram suas instalações para operar contêineres, reduzindo os custos e o tempo de movimentação de mercadorias no comércio exterior."
   },
   {
     "id": 3,
@@ -54,7 +56,8 @@
       "espaços com infraestrutura de circulação."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "Lembre-se de que as refinarias de petróleo precisam estar próximas tanto das fontes de produção quanto dos centros de consumo. O texto menciona que a localização é um dos fatores técnicos mais importantes. Pense em qual tipo de infraestrutura une esses dois pontos — produção e consumo — e é indispensável para as refinarias funcionarem com eficiência.",
+    "comentario": "A instalação de unidades produtivas depende criticamente da infraestrutura de circulação: ferrovias, rodovias, portos e telecomunicações determinam a acessibilidade de um local ao mercado. Regiões com boa infraestrutura logística atraem investimentos industriais e agroindustriais, enquanto áreas com infraestrutura precária permanecem à margem do desenvolvimento econômico — um dos principais gargalos do interior do Brasil."
   },
   {
     "id": 4,
@@ -73,7 +76,8 @@
       "intensificação do policiamento das rodovias."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Leia o texto sobre os problemas logísticos da exportação de soja. Pense na solução mais direta para reduzir as filas de navios nos portos: se os navios ficam esperando é porque falta capacidade de recebimento no porto. Qual alternativa propõe uma solução de infraestrutura portuária para esse gargalo logístico?",
+    "comentario": "A soja do Centro-Oeste brasileiro percorre longas distâncias até os portos, enfrentando o problema da 'custo Brasil' logístico: rodovias degradadas, ausência de ferrovias e hidrovias eficientes elevam o custo final do produto. A construção de terminais fluviais e atracadouros ao longo dos rios Tapajós, Madeira e Tocantins é fundamental para reduzir esse custo e tornar a soja brasileira mais competitiva no mercado global."
   },
   {
     "id": 5,
@@ -91,7 +95,8 @@
       "a escolha dos modais para o transporte de cargas obedece a determinações políticas para o estabelecimento das rotas."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "Observe a imagem e pense nos diferentes modais de transporte (rodoviário, ferroviário, hidroviário). Cada modal tem características distintas de custo, capacidade e flexibilidade. A questão aborda a multimodalidade — uso combinado de diferentes modais. Analise qual alternativa descreve corretamente a relação entre a combinação de modais e o custo final do transporte.",
+    "comentario": "A multimodalidade — integração de dois ou mais modais de transporte em uma mesma cadeia logística — é a estratégia mais eficiente para reduzir custos e prazos no escoamento de cargas. No Brasil, a combinação de ferrovias para longas distâncias, hidrovias para regiões com rios navegáveis e caminhões para a 'última milha' poderia reduzir significativamente o custo do frete, hoje majoritariamente rodoviário."
   },
   {
     "id": 6,
@@ -108,7 +113,8 @@
       "A cabotagem foi implantada no Brasil no final do século XIX, fazendo uso de modernos navios a vapor para articular o comércio interprovincial. Atualmente, concorre com os sistemas ferroviário e rodoviário para transportar cargas, particularmente aquelas conteinerizadas."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Pense no papel histórico da cabotagem (navegação entre portos nacionais) na formação do território brasileiro. Desde o período colonial, os portos eram os principais centros de conexão entre as regiões. Analise qual alternativa descreve corretamente a evolução histórica da cabotagem no Brasil, desde o período colonial até o século XX.",
+    "comentario": "A cabotagem — navegação ao longo do litoral entre portos do mesmo país — foi historicamente o principal meio de integração do vasto território brasileiro antes das rodovias. Hoje, com custos operacionais menores que o frete rodoviário para grandes distâncias, a cabotagem tem crescido como alternativa eficiente para o transporte de contêineres e granéis entre os portos do Norte, Nordeste, Sudeste e Sul."
   },
   {
     "id": 7,
@@ -126,7 +132,8 @@
       "a ampliação da Zona de Convergência Intertropical."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Observe o gráfico da matriz de transportes brasileira. Pense em qual modal predomina no Brasil e quais são suas consequências ambientais. O transporte rodoviário usa combustíveis fósseis e emite grandes quantidades de CO₂ e outros gases. Qual problema ambiental global está diretamente ligado à dominância do modal rodoviário no Brasil?",
+    "comentario": "A dependência excessiva do modal rodoviário no Brasil tem graves consequências ambientais: caminhões emitem muito mais CO₂ por tonelada transportada do que trens ou navios. Essa matriz intensiva em diesel contribui para o agravamento do aquecimento global e da qualidade do ar nas grandes cidades — uma externalidade negativa que seria atenuada pela migração para ferrovias e hidrovias."
   },
   {
     "id": 8,
@@ -145,7 +152,8 @@
       "diminuição dos fluxos materiais em detrimento de fluxos imateriais."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Lembre-se de que a intermodalidade significa integrar diferentes modais de transporte (rodoviário, ferroviário, hidroviário, aeroviário) em uma mesma cadeia logística. Pense por que isso é especialmente necessário no Brasil, dado o tamanho do território e a distância entre as áreas produtoras e os portos de exportação. Qual alternativa justifica corretamente essa necessidade?",
+    "comentario": "A extensão continental do Brasil — com 8,5 milhões de km² — torna os modais de transporte de longa distância essenciais para a integração econômica. Ferrovias e hidrovias são mais eficientes para grandes distâncias e volumes, mas exigem investimentos elevados em infraestrutura. A falta de integração multimodal eficiente é um dos principais gargalos logísticos que encarecem a produção brasileira."
   },
   {
     "id": 9,
@@ -163,7 +171,8 @@
       "Dentre as principais reivindicações da greve dos caminhoneiros de maio de 2018, destaca-se o pleito para o desenvolvimento de políticas públicas no campo da logística para ampliar a participação relativa dos modais ferroviário, aquaviário e aeroviário na matriz de transporte."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "Leia os dois textos: o primeiro sobre a greve dos caminhoneiros e o segundo sobre a matriz de transporte brasileira. Pense na relação entre a dependência do modal rodoviário (59% da matriz) e a vulnerabilidade do país a uma paralisação dos caminhoneiros. Qual alternativa descreve corretamente esse problema estrutural da logística brasileira?",
+    "comentario": "A greve dos caminhoneiros de 2018 paralisou o Brasil em poucos dias, evidenciando a dependência estrutural do país pelo modal rodoviário. Com mais de 60% das cargas transportadas por caminhões, qualquer interrupção nesse modal tem efeito imediato sobre o abastecimento de alimentos, combustíveis e medicamentos — resultado de décadas de subinvestimento em ferrovias e hidrovias."
   },
   {
     "id": 10,
@@ -180,6 +189,7 @@
       "O transporte rodoviário de cargas é considerado desvantajoso em relação ao ferroviário e ao hidroviário, por apresentar pequena capacidade de carga, alto consumo de combustível e desgaste de componentes, altas tarifas, gerando o encarecimento dos produtos transportados."
     ],
     "correta": 1,
-    "comentario": ""
+    "ajuda": "Atenção: a questão pede a alternativa INCORRETA sobre o sistema de transporte brasileiro. Pense: é verdade que as ferrovias declinaram por causa das rodovias? As rodovias expandiram por interesses do capital internacional (automobilístico e petrolífero)? O sistema hidroviário do Paraná-Paraguai está se modernizando? O Brasil possui um sistema totalmente integrado e de última geração? Avalie qual afirmativa é falsa.",
+    "comentario": "A afirmação de que o sistema de transporte brasileiro está 'totalmente integrado' é incorreta — o Brasil tem uma das matrizes logísticas mais desequilibradas do mundo, com dominância rodoviária e subaproveitamento de ferrovias e hidrovias. Países como EUA, China e Alemanha possuem matrizes muito mais diversificadas, o que reduz custos logísticos e emissões de carbono."
   }
 ]

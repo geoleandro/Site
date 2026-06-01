@@ -14,7 +14,8 @@
       "A energia eólica provoca impactos para o meio ambiente, por exemplo, ruídos para moradores próximos as torres, pode provocar mortes de aves que se chocam com as pás, etc."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "A questão trata de energia eólica no Ceará. Pense nos princípios básicos: energia eólica é renovável, gerada pelo vento movendo pás que acionam geradores. Identifique qual alternativa apresenta uma informação incorreta sobre esse processo.",
+    "comentario": "A afirmativa está incorreta: no Brasil, a principal fonte de energia elétrica ainda são as hidrelétricas, que respondem por mais de 60% da geração. A energia eólica cresceu significativamente — o Brasil é um dos maiores produtores mundiais —, mas os aerogeradores ainda são fontes complementares, não majoritárias. A confusão entre crescimento rápido de uma fonte e seu domínio na matriz é um erro comum na interpretação de dados energéticos."
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       "a retração dos preços de alimentos no mercado."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "Os biocombustíveis são feitos a partir de matéria orgânica, como cana e soja. A expansão dessa produção pode competir com alimentos por área agricultável. Qual consequência negativa está mais diretamente ligada a essa expansão?",
+    "comentario": "Os biocombustíveis, como etanol e biodiesel, demandam grandes extensões de terra agricultável para as culturas energéticas (cana-de-açúcar, milho, soja, palma). Essa expansão pode competir com a produção de alimentos, pressionar biomas nativos e concentrar terras, gerando conflitos agrários. No Brasil, a expansão do etanol de cana avançou sobre o Cerrado e pressionou fronteiras agrícolas, evidenciando a tensão entre energia renovável e uso da terra."
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
       "Biomassa."
     ],
     "correta": 4,
-    "comentario": ""
+    "ajuda": "A crise hídrica em São Paulo em 2014 afetou a geração de energia. Com menor disponibilidade de água nas represas, qual outra fonte de energia seria acionada para suprir a demanda? Pense em fontes que não dependem de água.",
+    "comentario": "A biomassa engloba resíduos vegetais, bagaço de cana, lixo urbano e madeira que podem ser queimados para gerar calor e eletricidade. Em períodos de seca prolongada, quando as hidrelétricas operam abaixo da capacidade, as usinas termelétricas a biomassa entram como fonte de energia complementar. Em 2014, durante a crise hídrica em São Paulo, essa alternativa ganhou relevância como suporte à geração elétrica."
   },
   {
     "id": 4,
@@ -67,7 +70,8 @@
       "Aumento da fome em ambos os países, em virtude da produção de cana-de-açúcar prejudicar a produção de alimentos."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "A questão trata de biocombustíveis e biotecnologia no Brasil. Lembre-se que o Brasil é líder mundial em etanol de cana-de-açúcar. Qual alternativa descreve corretamente o impacto dessa tecnologia na produção e exportação de etanol?",
+    "comentario": "O Brasil possui vantagem competitiva na produção de etanol de cana-de-açúcar, mais eficiente que o etanol de milho americano em termos de energia líquida produzida. A biotecnologia amplia essa vantagem ao desenvolver novas variedades de cana, processos de segunda geração a partir do bagaço e alternativas como etanol de celulose. Essas inovações permitem aumentar a produção sem ampliar proporcionalmente as áreas cultivadas."
   },
   {
     "id": 5,
@@ -86,7 +90,8 @@
       "regeneração das florestas nativas em biomas modificados pelo homem, como o Cerrado e a Mata Atlântica."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "A biomassa como fonte de energia tem vantagens específicas para o Brasil. Pense no aproveitamento de terras degradadas ou impróprias para agricultura convencional. Qual alternativa descreve uma vantagem real e viável?",
+    "comentario": "A biomassa florestal pode ser cultivada em terras impróprias para a agricultura convencional — solos erodidos, áreas declivosas ou de baixa fertilidade —, aproveitando espaços que de outra forma seriam improdutivos. Esse aproveitamento reduz a pressão sobre áreas agricultáveis e pode recuperar solos degradados. O eucalipto e o pinus são as principais espécies usadas em florestas energéticas no Brasil."
   },
   {
     "id": 6,
@@ -104,7 +109,8 @@
       "metamórfica, constituídas por argilominerais solúveis e suscetíveis aos processos intempéricos."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "O mapa mostra a distribuição de tipos de rochas. Lembre-se que hidrocarbonetos (petróleo e gás natural) se formam em bacias sedimentares, onde há acúmulo e compressão de matéria orgânica ao longo de milhões de anos.",
+    "comentario": "As rochas sedimentares se formam pela compactação e cimentação de sedimentos ao longo de milhões de anos, criando camadas estratificadas em bacias sedimentares. Elas são as únicas capazes de reter petróleo e gás natural em seus poros e fraturas, tornando-se o alvo principal da prospecção de hidrocarbonetos. No Brasil, as principais bacias petrolíferas — Campos, Santos e Solimões — estão em rochas sedimentares costeiras e da Amazônia."
   },
   {
     "id": 7,
@@ -123,7 +129,8 @@
       "menos eficiente, pois o custo de produção do litro de álcool a partir da cana é menor que o custo de produção a partir do milho."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "A tabela compara cana-de-açúcar e milho na produção de etanol. Analise o balanço energético (energia produzida versus energia consumida na produção) e a produtividade por hectare. Qual das duas culturas é mais eficiente para esse fim?",
+    "comentario": "A cana-de-açúcar produz mais do dobro de litros de etanol por hectare em comparação ao milho, tornando o etanol brasileiro de cana mais competitivo tanto em custo quanto em produtividade. Enquanto os EUA dependem do milho para seu etanol, o Brasil utiliza a cana, que se beneficia do clima tropical e da longa tradição de cultivo. Essa diferença de eficiência é um dos pilares da competitividade internacional do setor sucroenergético brasileiro."
   },
   {
     "id": 8,
@@ -140,7 +147,8 @@
       "a utilização de milho e de cana-de-açúcar para a produção de combustíveis renováveis favorece a preservação das características originais do solo."
     ],
     "correta": 2,
-    "comentario": ""
+    "ajuda": "O texto compara a produção de etanol no Brasil e nos EUA. Pense nos impactos ambientais de cada modelo: a monocultura de soja/milho nos EUA versus a cana-de-açúcar no Brasil. Qual alternativa descreve corretamente o impacto ambiental?",
+    "comentario": "O etanol, sendo um biocombustível produzido a partir de cana, captura CO₂ da atmosfera durante o crescimento da planta, compensando parcialmente as emissões liberadas na queima. Diferentemente dos combustíveis fósseis, o ciclo do etanol é mais curto e o balanço de carbono mais favorável. Substituir gasolina por etanol nos veículos reduz as emissões líquidas de gases do efeito estufa, contribuindo para mitigar as mudanças climáticas."
   },
   {
     "id": 9,
@@ -158,7 +166,8 @@
       "todas as alternativas ilustram o consumo direto, pelo ser humano, da energia armazenada na cana."
     ],
     "correta": 3,
-    "comentario": ""
+    "ajuda": "O esquema mostra diferentes formas de usar a energia da cana: consumo direto, produção de açúcar, etanol e energia elétrica. Analise qual alternativa é verdadeira para todas as opções: o trabalho humano está presente em todas elas?",
+    "comentario": "Todas as formas de uso da cana-de-açúcar descritas na questão — desde mastigar a cana até processar etanol industrialmente — requerem algum trabalho humano, seja físico ou intelectual. A questão explora a cadeia energética da cana e o conceito de trabalho como mediação entre o ser humano e a natureza. Independentemente da escala ou tecnologia, o ser humano sempre intervém para transformar a energia armazenada na biomassa em energia utilizável."
   },
   {
     "id": 10,
@@ -175,6 +184,7 @@
       "diversifica o uso de fontes alternativas de energia que reduzem os impactos da produção do etanol por meio da monocultura da cana-de-açúcar."
     ],
     "correta": 0,
-    "comentario": ""
+    "ajuda": "A lei sobre biodiesel exige mistura de 5% ao diesel convencional. Pense nos objetivos dessa política: reduzir emissões, diversificar a matriz energética e incluir agricultores familiares na cadeia produtiva.",
+    "comentario": "O biodiesel, produzido a partir de óleos vegetais ou gordura animal, é uma fonte renovável que, ao substituir o diesel de petróleo, reduz emissões de poluentes locais e contribui para o balanço de carbono global. A obrigatoriedade de mistura (B5, B10, B15...) garante mercado para a produção nacional e estimula a agricultura familiar fornecedora de oleaginosas. Essa política combina segurança energética, redução de importações e sustentabilidade ambiental."
   }
 ]

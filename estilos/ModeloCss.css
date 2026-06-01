@@ -1381,10 +1381,11 @@ body.dark-mode .duvid-painel-dica {
 
 /* Ajuste do número dentro do painel */
 #notaFixa {
-  font-size: 16px !important;
+  font-size: 22px !important;
   /* Diminuído levemente */
   margin-right: 5px !important;
   line-height: 1 !important;
+  
 }
 
 

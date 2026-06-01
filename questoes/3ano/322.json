@@ -2,10 +2,10 @@
   {
     "id": 1,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) Sobre a América Central, analise as afirmativas:\n\nI – Trata-se de um território fisicamente dividido, constituído de um istmo, com cerca de 7 países e um conjunto de ilhas conhecido como Antilhas.\n\nII – As Antilhas, por sua vez, dividem-se em três conjuntos: as Bahamas, as Grandes Antilhas e as Pequenas Antilhas.\n\nIlI – Cuba, a ilha de Hispaniola e a Jamaica pertencem ao conjunto das Pequenas Antilhas.\n\nIV – Ocorre também uma enorme fragmentação política, pois a América Central foi um território em disputa pelas diversas potências coloniais europeias que assumiram diversas regiões centro-americanas.\n\nEstá(ao) correta(s):",
+    "pergunta": "Sobre a América Central, analise as afirmativas:\n\nI – Trata-se de um território fisicamente dividido, constituído de um istmo, com cerca de 7 países e um conjunto de ilhas conhecido como Antilhas.\n\nII – As Antilhas, por sua vez, dividem-se em três conjuntos: as Bahamas, as Grandes Antilhas e as Pequenas Antilhas.\n\nIlI – Cuba, a ilha de Hispaniola e a Jamaica pertencem ao conjunto das Pequenas Antilhas.\n\nIV – Ocorre também uma enorme fragmentação política, pois a América Central foi um território em disputa pelas diversas potências coloniais europeias que assumiram diversas regiões centro-americanas.\n\nEstá(ao) correta(s):",
     "alternativas": [
       "Apenas I e IlI.",
       "Apenas II e IlI.",
@@ -14,16 +14,17 @@
       "Nenhuma."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A sequência correta é I, II e IV. A América Central Continental forma o istmo; as Antilhas se dividem em Bahamas, Grandes Antilhas e Pequenas Antilhas; Cuba, Hispaniola e Jamaica pertencem às Grandes Antilhas (não às Pequenas); e a fragmentação política é herança do colonialismo europeu diversificado.",
+    "ajuda": "A América Central Continental inclui países do istmo (Guatemala, Belize, Honduras, El Salvador, Nicarágua, Costa Rica, Panamá), enquanto a América Central Insular engloba as ilhas do Caribe. Avalie quais afirmativas descrevem corretamente essa sub-região."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
     "imagem_apoio": "3ano/img/322/t22q2.png",
-    "pergunta": "(2020) Sobre os Países Andinos, analise as afirmações:\n\nI – Têm como eixo geográfico principal a Cordilheira dos Andes que se constitui numa formação geológica recente, sujeita a vulcanismo. Seu clima torna-se frio e seco em função da altitude. Sua vegetação varia da base ao alto da montanha em função da disponibilidade de umidade, apresentando desde florestas equatoriais até formações desérticas.\n\nII – As concentrações populacionais se acham nos planaltos montanhosos devido ao processo de colonização, já que os antigos habitantes nativos, descendentes das tribos da civilização inca, aí habitavam.\n\nIII – São países de grande instabilidade política devido às economias pobres e dependentes, o que leva a contínuos golpes milita res e movimentos guerrilheiros associados a diversos grupos políticos.\n\nEstá (ao) correta (s):",
+    "pergunta": "Sobre os Países Andinos, analise as afirmações:\n\nI – Têm como eixo geográfico principal a Cordilheira dos Andes que se constitui numa formação geológica recente, sujeita a vulcanismo. Seu clima torna-se frio e seco em função da altitude. Sua vegetação varia da base ao alto da montanha em função da disponibilidade de umidade, apresentando desde florestas equatoriais até formações desérticas.\n\nII – As concentrações populacionais se acham nos planaltos montanhosos devido ao processo de colonização, já que os antigos habitantes nativos, descendentes das tribos da civilização inca, aí habitavam.\n\nIII – São países de grande instabilidade política devido às economias pobres e dependentes, o que leva a contínuos golpes milita res e movimentos guerrilheiros associados a diversos grupos políticos.\n\nEstá (ao) correta (s):",
     "alternativas": [
       "Todas elas.",
       "Apenas a I.",
@@ -32,7 +33,8 @@
       "Apenas a II e a III."
     ],
     "correta": 0,
-    "comentario": ""
+    "comentario": "Todas as afirmativas sobre os Países Andinos estão corretas: os Andes são formação geológica jovem, sujeita a vulcanismo; as populações se concentram nos planaltos por herança indígena inca; e a instabilidade política resulta de economias dependentes de commodities e desigualdades históricas.",
+    "ajuda": "Os Países Andinos (Colômbia, Equador, Peru, Bolívia, Chile) têm como elemento geográfico central a Cordilheira dos Andes. Avalie quais afirmativas descrevem corretamente as características físicas e humanas desses países."
   },
   {
     "id": 3,
@@ -50,7 +52,8 @@
       "Localizada ao norte da linha do Equador, a América Central pertence ao Hemisfério setentrional."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A alternativa incorreta sobre a América Central é a D: a Costa Rica não proporciona acesso terrestre entre a América Central e a América do Sul. Quem faz essa conexão é o Panamá, que une o istmo centro-americano ao continente sul-americano e é o local do famoso Canal do Panamá.",
+    "ajuda": "A questão pede a alternativa INCORRETA sobre os aspectos físicos da América Central. Lembre-se de que a região tem relevo montanhoso com vulcões ativos, clima tropical e está localizada ao norte da linha do Equador. Identifique qual informação está errada."
   },
   {
     "id": 4,
@@ -68,7 +71,8 @@
       "Caricom – Mercado Comum e Comunidade do Caribe."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O Mercosul (Mercado Comum do Sul) foi criado em 1991 pelo Tratado de Assunção entre Brasil, Argentina, Uruguai e Paraguai. É o principal bloco econômico da América do Sul, responsável por reduzir tarifas alfandegárias entre os membros e criar um espaço econômico integrado no Cone Sul.",
+    "ajuda": "Os blocos econômicos da América Latina têm objetivos de integração comercial regional. O Mercosul inclui países do Cone Sul; a CAN une países andinos; o CARICOM une países do Caribe. Pense em qual bloco corresponde à descrição dada."
   },
   {
     "id": 5,
@@ -85,15 +89,16 @@
       "A população da América do Sul está distribuída desigualmente. Existem altas densidades ao longo das costas, enquanto grande parte do interior é desocupada ou escassamente povoada."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "A alternativa incorreta sobre a América do Sul afirma que há poucas florestas tropicais no continente e população majoritariamente rural. Na realidade, a Amazônia é a maior floresta tropical do mundo, e a maioria da população sul-americana é hoje majoritariamente urbana — com taxas acima de 80% no Brasil.",
+    "ajuda": "A questão pede a alternativa INCORRETA sobre a América do Sul. Lembre-se das características gerais: clima predominantemente tropical, economia baseada em commodities, diversidade de biomas e população concentrada no litoral. Identifique qual afirmativa contradiz essas características."
   },
   {
     "id": 6,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) A República do Haiti é um pequeno país, que possui cerca de 10 milhões de habitantes, dos quais a grande maioria negra. A língua oficial é o francês e o crioulo, e a capital chama-se Porto Príncipe. O quadro social do país é bastante precário, em 2014 os jornais noticiaram a busca dos haitianos por trabalho no Brasil. Assinale a alternativa que contém o nome do continente onde o Haiti se localiza.",
+    "pergunta": "A República do Haiti é um pequeno país, que possui cerca de 10 milhões de habitantes, dos quais a grande maioria negra. A língua oficial é o francês e o crioulo, e a capital chama-se Porto Príncipe. O quadro social do país é bastante precário, em 2014 os jornais noticiaram a busca dos haitianos por trabalho no Brasil. Assinale a alternativa que contém o nome do continente onde o Haiti se localiza.",
     "alternativas": [
       "América do Norte.",
       "América Central.",
@@ -102,7 +107,8 @@
       "África."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "O Haiti está localizado na ilha Hispaniola, no Caribe, parte da América Central Insular. Compartilha a ilha com a República Dominicana. É o país mais pobre da América e o único de língua oficial francesa nas Américas — herança de sua colonização francesa e da única revolução escrava bem-sucedida da história (1804).",
+    "ajuda": "O Haiti está localizado na ilha Hispaniola, no Caribe, e faz parte da América Central Insular. É um país francófono com maioria de descendentes africanos. Pense em qual subdivisão da América o Haiti pertence."
   },
   {
     "id": 7,
@@ -121,7 +127,8 @@
       "As altas taxas de crescimento demográfico são um fator interno que contribui para o baixo crescimento do PIB per capita."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "Cuba enfrentou uma crise estrutural nos anos 1990 ('Período Especial') após o colapso soviético, mas manteve indicadores sociais superiores à maioria dos países latino-americanos: mortalidade infantil de 4 por mil (igual ao Canadá) e expectativa de vida de 78 anos. O embargo americano e as deficiências do modelo socialista limitam seu crescimento econômico.",
+    "ajuda": "Cuba é um país socialista que enfrentou décadas de embargo econômico americano. Apesar disso, possui indicadores sociais (saúde, educação) melhores que muitos países da região. Avalie qual afirmativa reflete corretamente as características e desafios de Cuba."
   },
   {
     "id": 8,
@@ -139,7 +146,8 @@
       "Ser um país andino e deter grandes reservas de estanho e gás natural."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O mapa destaca a Venezuela — país andino e amazônico com as maiores reservas de petróleo do mundo. Apesar das riquezas naturais, vive profunda crise política e econômica desde 2013, com hiperinflação, desabastecimento e êxodo de mais de 7 milhões de pessoas — uma das maiores crises humanitárias do hemisfério ocidental.",
+    "ajuda": "O texto descreve um país em crise política. Ao analisar as características geográficas — andino, platino, banhado por oceano — identifique qual alternativa descreve corretamente o perfil físico e econômico do país mencionado."
   },
   {
     "id": 9,
@@ -152,12 +160,13 @@
     "alternativas": [
       "O México é o país com maior produção de carvão, cuja exportação é controlada por capital canadense. Para tal situação, o padrão de dominação Norte/Sul na DIT, mencionado pelo autor, é praticado no mesmo continente",
       "A Colômbia ocupa o primeiro lugar na produção mundial de manganês, por meio de empresas privatizadas nos dois últimos governos bolivarianos, o que realça sua posição no cenário econômico internacional, rompendo a dominação Norte/Sul.",
-      "O Chile destaca-se pela extração de cobre, principalmente na sua porção centro-norte, que é, em parte, explorado por empresas transnacionais, o que reitera o padrão da DIT mencionado pelo autor. d) A Bolívia destaca-se como um dos maiores produtores de ferro da América Latina, e, recentemente, o controle de sua produção passou a ser feito por Conselhos Indígenas. Essa autonomia do País permitiu o rompimento da dominação estadunidense. e) O Uruguai é o principal produtor mundial de prata, e o controle de sua extração é feito por empresas transnacionais. Nesse caso, mantém-se o padrão da inserção do país na DIT mencionada pelo autor.",
-      "",
-      ""
+      "O Chile destaca-se pela extração de cobre, principalmente na sua porção centro-norte, que é, em parte, explorado por empresas transnacionais, o que reitera o padrão da DIT mencionado pelo autor.  ",
+      "A Bolívia destaca-se como um dos maiores produtores de ferro da América Latina, e, recentemente, o controle de sua produção passou a ser feito por Conselhos Indígenas. Essa autonomia do País permitiu o rompimento da dominação estadunidense.",
+      "O Uruguai é o principal produtor mundial de prata, e o controle de sua extração é feito por empresas transnacionais. Nesse caso, mantém-se o padrão da inserção do país na DIT mencionada pelo autor."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "O Chile se destaca pela extração de cobre — detém 28% das reservas mundiais — principalmente na região norte do deserto do Atacama. Grande parte dessa produção é controlada por multinacionais, o que reproduz o padrão da divisão internacional do trabalho denunciada por Eduardo Galeano: a América Latina especializada em exportar riqueza.",
+    "ajuda": "A mineração na América Latina tem grande importância econômica, com destaque para Chile (cobre), Peru (ouro e prata), Brasil (minério de ferro) e México (prata). Identifique qual afirmativa descreve corretamente a especialização mineral de cada país."
   },
   {
     "id": 10,
@@ -174,6 +183,7 @@
       "à ilha de Chipre, no Mediterrâneo oriental."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Cuba é o arquipélago caribe descrito: apesar de 60 anos de embargo econômico americano, possui um sistema de saúde e educação considerado modelo para países em desenvolvimento. Exporta médicos e medicamentos para dezenas de países, e desde os anos 2000 busca diversificar a economia com turismo e biotecnologia.",
+    "ajuda": "O texto descreve um país com embargo econômico mas com bons indicadores sociais em saúde e educação, com clima favorável e ilhas. Essas características correspondem claramente a Cuba, no arquipélago caribenho. Identifique qual opção descreve corretamente essa localização."
   }
 ]

@@ -9,22 +9,23 @@
     "fonte_apoio": "SANTOS, M. Metamorfose do Espaço habitado: Fundamentos teóricos e metodológicos da Geografia. São Paulo: EDUSP, 2008, p.67.",
     "pergunta": "Leia o texto a seguir.\n\n1. Com o trabalho humano, o espaço geográfico está em constante mudança, em contínua transformação e movimento.\n\nCom bases nesses conhecimentos, associe a coluna da esquerda com a coluna da direita.\n\nAssinale a alternativa que contém a associação correta.",
     "alternativas": [
-      "a) I-A, II-B, III-C, IV-E, V-D.",
-      "b) I-A, II-D, III-C, IV-B, V-E.",
-      "c) I-B, II-A, III-D, IV-E, V-C.",
-      "d) I-B, II-D, III-A, IV-C, V-E.",
-      "e) I-E, II-A, III-B, IV-C, V-D."
+      "I-A, II-B, III-C, IV-E, V-D.",
+      "I-A, II-D, III-C, IV-B, V-E.",
+      "I-B, II-A, III-D, IV-E, V-C.",
+      "I-B, II-D, III-A, IV-C, V-E.",
+      "I-E, II-A, III-B, IV-C, V-D."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "Os conceitos fundamentais da Geografia — espaço geográfico, território, lugar, paisagem e região — têm significados distintos, mas inter-relacionados. O espaço geográfico engloba as transformações humanas; o território implica poder e controle; o lugar é o espaço vivido; a paisagem é o visível; e a região é uma área com características comuns.",
+    "ajuda": "O texto apresenta afirmações sobre território, espaço geográfico e lugar. Analise cada proposição separadamente, verificando se ela está coerente com a definição técnica desses conceitos geográficos. Atenção especial à diferença entre território (poder), lugar (vivência) e espaço (técnica/sociedade)."
   },
   {
     "id": 2,
     "instituicao": "",
-    "ano": "",
+    "ano": "2020",
     "dificuldade": "",
     "tags": [],
-    "pergunta": "(2020) Estado, nação, território e país são conceitos-chave da Geografia. Acerca desses temas analise os itens abaixo correlacionando-os de forma adequada:\n\nAssinale a alternativa que indica a sequência correta, de cima para baixo",
+    "pergunta": "Estado, nação, território e país são conceitos-chave da Geografia. Acerca desses temas analise os itens abaixo correlacionando-os de forma adequada:\n\nAssinale a alternativa que indica a sequência correta, de cima para baixo",
     "alternativas": [
       "1 • 2 • 3 • 4.",
       "1 • 4 • 3 • 2.",
@@ -33,7 +34,8 @@
       "4 • 3 • 2 • 1."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Estado, nação, território e país são conceitos distintos: o Estado é a organização política-jurídica; a nação é um grupo com identidade cultural comum; o território é o espaço controlado pelo Estado; e o país é o Estado reconhecido internacionalmente. Um Estado pode abrigar várias nações (Brasil) e uma nação pode estar dividida em vários Estados (nação curda).",
+    "ajuda": "Estado, nação, país e território são conceitos distintos: Estado é a organização político-jurídica; nação é um grupo com identidade cultural; país é um Estado reconhecido internacionalmente; território é o espaço controlado por uma autoridade. Analise as afirmações com base nessas definições."
   },
   {
     "id": 3,
@@ -51,7 +53,8 @@
       "apenas IV e V estão corretas."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "O Brasil está situado inteiramente no hemisfério ocidental (a oeste do Meridiano de Greenwich) e majoritariamente no hemisfério sul. A região Sul do Brasil encontra-se entre as latitudes 22°S e 33°S e a oeste do meridiano 0°. Compreender a localização absoluta (coordenadas) é essencial para análises climáticas, agrícolas e de planejamento territorial.",
+    "ajuda": "Para analisar meridianos e o Meridiano de Greenwich em um mapa, lembre-se que Greenwich (0°) divide o mundo em Hemisfério Leste (Oriental) e Hemisfério Oeste (Ocidental). Verifique as afirmativas usando a posição das localidades em relação a esse meridiano."
   },
   {
     "id": 4,
@@ -69,12 +72,13 @@
       "01h30 do dia 14.04.2016 para o arquipélago Fernando de Noronha."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "Os fusos horários dividem a Terra em 24 zonas de 15° de longitude cada. O Brasil possui 4 fusos horários (UTC-2 a UTC-5). Para calcular diferenças de horário entre cidades, é preciso saber quantos fusos de distância elas estão e se o evento ocorre antes ou depois da meia-noite local — o que pode mudar a data do acontecimento.",
+    "ajuda": "Para determinar a hora em outro fuso horário, calcule a diferença de longitude e converta em horas (cada 15° = 1 hora). Locais mais a Leste têm horários mais avançados; locais mais a Oeste têm horários mais atrasados."
   },
   {
     "id": 5,
     "instituicao": "",
-    "ano": "",
+    "ano": "2026",
     "dificuldade": "",
     "tags": [],
     "pergunta": "(PUC-MG) Ao dividir os 360 graus da esfera terrestre pelas 24 horas de duração do movimento de __________, o resultado é 15 graus. A cada 15 graus que a Terra gira, passa-se uma hora. Assim, cada uma das 24 divisões da Terra corresponde a um __________.\n\nPara que o texto fique adequadamente preenchido, as lacunas devem ser completadas, respectivamente, por",
@@ -85,7 +89,8 @@
       "rotação e fuso horário."
     ],
     "correta": 3,
-    "comentario": ""
+    "comentario": "O movimento de rotação da Terra dura 24 horas e percorre 360°. Dividindo 360° por 24h, temos 15° por hora — essa é a base do sistema de fusos horários criado no século XIX para padronizar o tempo global, especialmente com a expansão das ferrovias. Cada fuso representa 1 hora de diferença em relação ao anterior.",
+    "ajuda": "Dividir 360° pelas 24 horas do dia resulta em 15° por hora — esse é o fundamento matemático dos fusos horários. Use essa relação para calcular a diferença de horário entre dois locais a partir de suas longitudes."
   },
   {
     "id": 6,
@@ -104,7 +109,8 @@
       "90º S e 180º W."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "As coordenadas geográficas (latitude e longitude) identificam qualquer ponto da superfície terrestre com precisão. Latitude mede a distância ao Equador (0° a 90°N ou S); longitude mede a distância ao Meridiano de Greenwich (0° a 180°E ou W). O antípoda de um ponto é encontrado invertendo hemisfério e somando/subtraindo 180° na longitude.",
+    "ajuda": "Antípodas são pontos diametralmente opostos na superfície terrestre. Para encontrar o antípoda de um ponto, inverta o hemisfério da latitude (N↔S) e calcule a longitude somando 180° ao valor original, invertendo também o hemisfério (L↔O)."
   },
   {
     "id": 7,
@@ -121,7 +127,8 @@
       "70 000."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A escala gráfica permite converter medidas de mapa em distâncias reais. Dividindo a distância representada no mapa pelo comprimento da barra de escala, obtém-se o denominador da escala numérica. Esse cálculo é usado em cartografia, planejamento urbano, rotas militares e logística de transporte.",
+    "ajuda": "Para calcular distâncias reais a partir de um mapa, use a escala fornecida: distância real = medida no mapa × denominador da escala. Converta as unidades adequadamente para obter o resultado em quilômetros."
   },
   {
     "id": 8,
@@ -139,7 +146,8 @@
       "1:61 500 000."
     ],
     "correta": 4,
-    "comentario": ""
+    "comentario": "A escala numérica expressa a proporção entre a medida no mapa e a medida real. Para encontrá-la, divide-se a distância real pela distância no mapa (ambas na mesma unidade). O resultado é o denominador da escala — quanto maior, menor o nível de detalhe e maior a área representada.",
+    "ajuda": "A escala cartográfica relaciona medidas no mapa com medidas reais. Para converter entre escalas diferentes, compare os denominadores: quanto maior o denominador, menor a representação e menor o detalhe visível no mapa."
   },
   {
     "id": 9,
@@ -156,7 +164,8 @@
       "Cristianismo."
     ],
     "correta": 2,
-    "comentario": ""
+    "comentario": "A anamorfose cartográfica é uma técnica em que o tamanho dos países ou regiões é distorcido proporcionalmente a um dado quantitativo (ex: número de fiéis de uma religião). Isso cria representações visualmente impactantes que facilitam a compreensão de distribuições globais desiguais.",
+    "ajuda": "A anamorfose é uma técnica que distorce propositalmente o tamanho dos territórios para representar dados quantitativos (como população ou PIB), em vez de representar a área geográfica real. Pense em que tipo de informação o cartograma em questão está representando."
   },
   {
     "id": 10,
@@ -174,6 +183,7 @@
       "um mapa revela sua época, pois essa representação se caracteriza pela estrita expressão apenas daquilo que se conhece, não dando espaço para a imaginação."
     ],
     "correta": 1,
-    "comentario": ""
+    "comentario": "Os mapas históricos são documentos culturais e políticos que revelam como uma época via o mundo. Eles refletem o conhecimento geográfico disponível, as prioridades de quem os encomendou e as técnicas cartográficas do período. Por isso, têm valor tanto como ferramentas de localização quanto como fontes históricas e iconográficas.",
+    "ajuda": "Mapas podem ser ferramentas de poder e representação ideológica. A obra de Torres-García questiona a normatização da orientação norte-acima, que historicamente colocou países do Norte como referência central. Pense em como a escolha cartográfica pode refletir visões de mundo."
   }
 ]
