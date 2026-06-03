@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "UNESP",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "biodiversidade",
+      "preservação ambiental",
+      "biomas brasileiros",
+      "espécies endêmicas"
+    ],
     "imagem_apoio": "2ano/img/233/s33q1.png",
     "pergunta": "Segundo o Atlas de Serpentes Brasileiras, a jararaca (nome científico Bothrops jararaca) encontra-se com as ocorrências registradas em uma extensa faixa do Brasil relativa a diferentes Biomas, onde se alimenta de anfíbios, roedores e outros animais. A espécie ocorre nas áreas apontadas, sendo encontrada em zonas florestadas ou modificadas pela ação humana.\n\nSobre as serpentes Bothrops jararaca e os principais biomas de ocorrência, é correto afirmar:",
     "alternativas": [
@@ -22,8 +27,13 @@
     "id": 2,
     "instituicao": "UNESP",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "desmatamento",
+      "Amazônia",
+      "questão ambiental",
+      "degradação florestal"
+    ],
     "fonte_apoio": "(Ricardo Abramovay. Amazônia, 2019. Adaptado.)",
     "pergunta": "A natureza predatória do desmatamento da Amazônia mostra-se no fato de que, com seus 750 mil km2 de área desmatada, a região contribui com 14,5% do valor do produto agropecuário brasileiro. São Paulo tem área agrícola de 193 mil km2 e entra com 11,3% da produção nacional.\n\nOs dados apresentados no excerto contribuem para colocar em xeque",
     "alternativas": [
@@ -41,8 +51,13 @@
     "id": 3,
     "instituicao": "UEL",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "desastre ambiental",
+      "barragem",
+      "Brumadinho",
+      "questão ambiental"
+    ],
     "pergunta": "No dia 25 de janeiro de 2019, ocorreu o rompimento da barragem da mina do Córrego do Feijão, localizado geograficamente na região metropolitana de Belo Horizonte (Brumadinho), resultando no maior desastre com rejeitos de mineração e vítimas fatais, até então, registrado no Brasil.\n\nSobre os impactos socioambientais desse desastre, assinale a alternativa correta.",
     "alternativas": [
       "A lama que cobriu a bacia hidrográfica do rio Paraopeba, rica em matéria orgânica, ajuda no crescimento de espécies vegetais aquáticas, o que contribui para a recuperação do ecossistema da área atingida.",
@@ -59,8 +74,13 @@
     "id": 4,
     "instituicao": "FUVEST",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "desertificação",
+      "degradação ambiental",
+      "Nordeste",
+      "questão ambiental"
+    ],
     "fonte_apoio": "BRASIL, Ministério do Meio Ambiente. Disponível em http://www.mma.gov.br/.",
     "pergunta": "O processo de desertificação é definido como a degradação ambiental e socioambiental, particularmente nas zonas áridas, semiáridas e subúmidas, resultantes de vários fatores e vetores, incluindo as variações e alterações climáticas e as atividades humanas.\n\nDentre as medidas mais adequadas para mitigação dos efeitos da desertificação encontra(m)‐se",
     "alternativas": [
@@ -78,8 +98,13 @@
     "id": 5,
     "instituicao": "UERJ",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "desastres ambientais",
+      "impacto humano",
+      "questão ambiental",
+      "risco ambiental"
+    ],
     "texto_apoio": "O BRASIL SOB A LAMA O Brasil viveu, na última semana, um pesadelo. O país ainda chora os 110 mortos e mais de 200 desaparecidos deixados pela avalanche de lama da sexta-feira passada, dia 25 de janeiro, em Brumadinho (MG), causada pelo rompimento de uma barragem de rejeitos da mineradora Vale. A tragédia tem um precedente muito próximo, também no Estado de Minas Gerais, em Mariana. Em 5 de novembro de 2015, o rompimento de duas paredes de contenção na represa da Samarco matou 19 pessoas e deixou um irreparável rastro de destruição ambiental. É assombroso constatar que, mais de três anos depois, o Brasil continua debatendo sobre os mesmos problemas que ocasionaram a primeira tragédia. Mais ainda, que durante todo este tempo nada tenha sido feito para melhorar a segurança de tais instalações. É terrível também ver como uma parte da sociedade continua demonizando a fiscalização ambiental e militando em uma dicotomia cega e antiquada entre preservação e desenvolvimento econômico. NÃO HÁ DESENVOLVIMENTO SEM PROTEÇÃO AMBIENTAL O desastre de Brumadinho é uma boa oportunidade para refletir sobre uma visão muito disseminada no Brasil de que a proteção ambiental é um entrave ao desenvolvimento. Muitos acreditam que devemos desenhar políticas econômicas sem analisar suas consequências ambientais. Isso está profundamente equivocado. Os livros de economia das melhores universidades do mundo já não falam mais de crescimento sem considerar os seus impactos ambientais, que no passado eram tratados como simples “externalidades” Na visão antiga, qualquer forma de extrair minério é boa porque faz a economia crescer. Não entra nessa perspectiva a análise do custo das vidas e da degradação ambiental decorrente de desastres como os de Brumadinho ou Mariana. Se os órgãos ambientais tivessem exigido maiores investimentos da Vale na segurança das barragens antes de conceder a licença, isso teria sido visto como um “entrave ambiental”.",
     "fonte_apoio": "Adaptado de brasil.elpais.com, 01/02/2019.",
     "pergunta": "Nos textos são apresentados alguns dos significados dos desastres humanos e ambientais causados pelo rompimento de barragens de rejeitos de mineração em Mariana e Brumadinho.\n\nOs desastres mencionados indicam a permanência do seguinte critério na relação entre desenvolvimento econômico e preservação ambiental:",
@@ -97,8 +122,12 @@
     "id": 6,
     "instituicao": "UFPR",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questão ambiental",
+      "legislação ambiental",
+      "preservação"
+    ],
     "texto_apoio": "Será que a escassez atual de água em diversos reservatórios da região Sudeste [e Sul do Brasil], colocando em risco a geração de energia hidrelétrica e o abastecimento de água em várias cidades, é devida principalmente à falta de chuvas? O problema crucial não é a falta de chuva, e nem necessariamente as mudanças climáticas, mas sim a degradação de nossas bacias hidrográficas, que estão cada vez mais impermeabilizadas. O equilíbrio do ciclo hidrológico na natureza é fundamental para a produção sustentável de água doce, para o atendimento ao abastecimento de água, irrigação e geração de energia, bem como para o amortecimento das enchentes, devido ao trabalho fundamental das florestas, que retêm a água das chuvas e as infiltram, permitindo a elevação das vazões fluviais nos períodos de estiagem, consequência do aumento da alimentação subterrânea aos rios, da água que se infiltrou no solo durante as chuvas. [...]",
     "fonte_apoio": "(“O problema não é a falta de chuvas”, escrito por Agostinho Guerreiro, publicado no jornal O Globo, em 19/02/2014.)",
     "pergunta": "Com relação ao assunto, identifique as afirmativas a seguir como verdadeiras (V) ou falsas (F):\n\n( ) O aumento da permeabilidade do solo e de infiltração das águas da chuva favorece os processos de enchentes.\n\n( ) A supressão florestal altera o ciclo hidrológico natural e influencia no armazenamento e distribuição da água nas bacias hidrográficas, potencializando o desabastecimento dos reservatórios em períodos de estiagens.\n\n( ) O Código Florestal brasileiro estabelece a preservação da vegetação em topos de morros, encostas com inclinação superior a 45 graus e faixas marginais de proteção dos rios.\n\n( ) A redução da infiltração da água das chuvas nos ambientes urbanos evita a erosão dos solos, aspecto benéfico para a manutenção das bacias hidrográficas.\n\nAssinale alternativa que apresenta a sequência correta, de cima para baixo.",
@@ -117,8 +146,13 @@
     "id": 7,
     "instituicao": "UNICAMP",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "RESEX",
+      "reservas extrativistas",
+      "Amazônia",
+      "unidades de conservação"
+    ],
     "texto_apoio": "“A Amazônia brasileira ganhou destaque nos últimos anos nos noticiários da mídia nacional e estrangeira, face ao avanço de graves problemas socioambientais. Nesse contexto, as unidades de conservação, como as Reservas Extrativistas (RESEX), introduzidas pela Lei 9.985 em 18/07/2000, cumprem um papel importante na preservação ambiental e na proteção social”.",
     "pergunta": "Sobre as RESEX no bioma amazônico, é correto afirmar que são áreas\n\nO objetivo da questão foi diferenciar as RESEXs dos demais tipos de Unidades de Conservação. Também é importante que os estudantes compreendam que as RESEXs são áreas de floresta protegida por lei, cedida a populações tradicionais, que se mantêm principalmente por meio do extrativismo, como a coleta de frutos da mata, borracha, óleos, sementes e derivados. Trata-se de um conhecimento fundamental às políticas públicas. Tente resolver sem ver a resposta\n\nResposta: Letra B. públicas, destinadas ao usufruto das populações tradicionais ribeirinhas para moradia e atividades econômicas de baixo impacto ambiental. Aumentam no entorno das RESEX a exploração de madeira e o desmatamento para a implantação de atividades pecuárias.",
     "alternativas": [
@@ -135,8 +169,13 @@
     "id": 8,
     "instituicao": "UEMG",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "APA",
+      "área de proteção ambiental",
+      "unidades de conservação",
+      "objetivos"
+    ],
     "texto_apoio": "O SISTEMA NACIONAL DE UNIDADES DE CONSERVAÇÃO “A consolidação do Sistema Nacional de Unidades de Conservação (SNUC) no Brasil, de modo similar ao Código Florestal, separa essas unidades em duas categorias grandes de manejo: as Unidades de Proteção Florestal e as Unidades de Uso Sustentável. As Unidades de Uso Sustentável, por sua vez, têm como objetivo geral compatibilizar a conservação da natureza com o uso sustentável de parcelas de seus recursos naturais sendo as Áreas de Proteção Ambiental Permanentes uma das suas categorias de manejo”.",
     "pergunta": "Em relação aos objetivos das Áreas de Proteção Ambiental Permanentes desta categoria de manejo, é CORRETO afirmar que destinam-se a",
     "alternativas": [
@@ -153,8 +192,13 @@
     "id": 9,
     "instituicao": "UNICAMP",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "emissão de CO2",
+      "municípios brasileiros",
+      "questão ambiental",
+      "aquecimento global"
+    ],
     "texto_apoio": "O objetivo da questão é mostrar como diferentes atividades econômicas e serviços públicos são responsáveis pela emissão de CO². A tabela mostra diferentes regiões, inclusive a Norte que vem sofrendo com o desmatamento e queimadas, fatos apresentados com frequência na mídia. A questão quer saber quais municípios emitiram maior quantidade de gás carbônico, qual sua extensão territorial (tamanho) e sua densidade populacional (número de pessoas dividida pela área do município). Uma questão básica de interpretação de texto e dados em tabela, considerada fácil. Tente resolver sem ver a resposta",
     "imagem_apoio": "2ano/img/233/s33q9.png",
     "pergunta": "A tabela a seguir destaca, para o ano de 2019, os 11 municípios brasileiros que mais emitiram gases do efeito estufa causadores do aquecimento global, conforme o total emitido de CO² em toneladas.\n\nA partir da análise dos dados anteriores e de seu conhecimento, é correto afirmar que os municípios com\n\nResposta: Letra D. Grande extensão territorial e baixa densidade demográfica foram responsáveis pela maior emissão de CO², o que se correlaciona com o avanço do desmatamento e incêndio florestal.",
@@ -172,8 +216,12 @@
     "id": 10,
     "instituicao": "ENEM",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questão ambiental",
+      "problema central",
+      "degradação ambiental"
+    ],
     "texto_apoio": "\"Alternativas logísticas estão servindo de instrumentos que ativam os mercados especuladores de terras nas diferentes regiões da Amazônia e constituem em indicadores utilizados por diferentes atores para defender ou denunciar o avanço da cultura da soja na região e, com ela, a retomada do desmatamento. É evidente que o crescimento do desmatamento tem a ver também com a expansão da soja, porém atribuir a ela o fator principal parece não totalmente correto. Parto da compreensão central de que a lógica que gera o desmatamento está articulada pelo tripé grileiros, madeireiros e pecuaristas\".",
     "fonte_apoio": "OLIVEIRA, A. U. A Amazônia e a nova geografia da produção da soja. Terra Livre, n. 26, jan.-jun. 2006 (adaptado).",
     "pergunta": "Na visão do autor, o problema central da situação descrita é desencadeado pela\n\nA questão quer saber qual é o fator principal responsável pelo desmatamento na região amazônica envolvendo grileiros, madeireiros e pecuaristas. Qual práticas eles exercem para promover o desmatamento. Primeiro elimine as respostas mais absurdas. Vamos ver exemplos em cada alternativa:\n\na) Apropriação de áreas devolutas: Refere-se à ocupação e uso de terrenos que são de propriedade pública, mas que não estão sendo utilizados de forma adequada. Por exemplo, uma comunidade pode se organizar para transformar um terreno baldio em um jardim comunitário ou em uma horta urbana.\n\nb) Sonegação de impostos federais: Consiste na prática ilegal de omitir informações ou fraudar documentos para evitar o pagamento de impostos devidos ao governo federal. Por exemplo, uma empresa pode subfaturar suas vendas ou superestimar seus custos para pagar menos impostos.\n\nc) Incorporação de exportação ilegal: Refere-se à inclusão de produtos ilegais no processo de exportação para obter lucros ilegítimos. Por exemplo, uma empresa pode contrabandear mercadorias proibidas em meio a produtos legais para exportação, evitando assim os controles alfandegários.\n\nd) Desoneração de setores produtivos: Consiste na redução ou isenção de impostos sobre determinados setores da economia para estimular sua atividade e crescimento. Por exemplo, o governo pode reduzir os impostos sobre a produção de determinados alimentos para incentivar a agricultura local.\n\ne) Flexibilização de legislação ambiental: Refere-se à modificação das leis ambientais para facilitar ou permitir atividades que antes eram restritas devido a preocupações ambientais. Por exemplo, um governo pode flexibilizar as regulamentações sobre desmatamento em áreas de conservação para permitir a expansão agrícola.Tente resolver sem ver a resposta\n\nResposta: Letra A Apropriação de áreas devolutas.",

@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UNCISAL",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fatores climáticos",
+      "dinâmica atmosférica",
+      "elementos climáticos"
+    ],
     "imagem_apoio": "1ano/img/123/p23q1.png",
     "pergunta": "A dinâmica da atmosfera é influenciada por vários fatores climáticos, determinando tipos variados de precipitação. O processo de formação de chuva mostrado na figura é denominado de",
     "alternativas": [
@@ -22,8 +26,12 @@
     "id": 2,
     "instituicao": "UEFS BA",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fatores climáticos",
+      "elementos climáticos",
+      "clima"
+    ],
     "pergunta": "Os elementos climáticos caracterizam o clima, que são definidos por fatores ou fenômenos.A partir dos conhecimentos sobre os elementos e fatores climáticos, marque V nas afirmativas verdadeiras e F, nas falsas.\n\n( ) As áreas sob a influência da continentalidade apresentam temperatura mais elevadas, devido à baixa umidade relativa do ar.\n\n( ) O impacto do desmatamento no clima recai sobre o regime de chuvas, em decorrência da diminuição da emissão de umidade para atmosfera.\n\n( ) Os movimentos das massas de ar e dos ventos resultam da desigual distribuição de energia solar nas diversas latitudes.\n\n( ) Na circulação atmosférica, as massas de ar de características diferentes entram em contato entre si, dando origem ás frentes frias e, como consequência, as chuvas orográficas.\n\n( ) As áreas anticiclonais se caracterizam pelas baixas temperaturas e altas pressões e são dispersoras de vento.\n\nA alternativa que apresenta a sequência correta, de cima para baixo, é a",
     "alternativas": [
       "F V F F V.",
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "FUVEST",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "impactos ambientais",
+      "oceanos",
+      "recursos naturais"
+    ],
     "imagem_apoio": "1ano/img/123/p23q3.png",
     "pergunta": "No dia 23 de março de 2021 o mega navio Ever Given, de 220.000 toneladas e 400 m de comprimento, encalhou no Canal de Suez no Egito em rota para o porto de Rotterdam, Holanda, ficando atravessado e preso pelas extremidades. O navio reflutuou no dia 29 do mesmo mês em razão das condições de vento e maré, além da operação promovida por rebocadores.\n\nCom base nos dados fornecidos e em seus conhecimentos, pode-se atribuir o reflutuamento do Ever Given às seguintes condições:",
     "alternativas": [
@@ -59,8 +71,12 @@
     "id": 4,
     "instituicao": "FDV",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "aquecimento global",
+      "mudanças climáticas",
+      "efeito estufa"
+    ],
     "fonte_apoio": "(Disponível em: www.publico.pt/desporto/noticia/o-futebol. Acesso em: 07 set. 2015)",
     "pergunta": "Leia atentamente o texto abaixo.\n\n“O tema não é novo e tem originado muita discussão. A própria FIFA sente desconforto com o assunto, que está longe de ser resolvido. Na América do Sul, sempre que há um jogo com alguma importância, seja para a Taça Libertadores, Copa América ou apuramento para um Mundial, os media noticiam-no e reacende-se a polêmica: equipes e seleções de países andinos – Bolívia, Colômbia, Equador e Peru – tiram clara vantagem do fator casa. Por vezes, conseguem resultados desnivelados, que banalizam equipes mais dotadas e, para desagrado dos argentinos, brasileiros e uruguaios, chegam a eliminá-las [...].”\n\nSabe-se que cada região apresenta um clima próprio, que corresponde ao comportamento da atmosfera ao longo de determinado período, influenciado por um conjunto diferenciado de fatores climáticos. Nos países andinos citados no trecho, o fator determinante da suposta “vantagem” é a:",
     "alternativas": [
@@ -78,8 +94,12 @@
     "id": 5,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "desertificação",
+      "fatores climáticos",
+      "clima árido"
+    ],
     "pergunta": "(UDESC 2017 Sobre os fatores climáticos que interferem na formação de desertos pelo globo, assinale a alternativa correta.",
     "alternativas": [
       "As vertentes a barlavento de cordilheiras são menos suscetíveis à chegada de umidade que as vertentes a sotavento, sendo, por isso, aquelas mais suscetíveis à formação de desertos que estas.",
@@ -96,8 +116,12 @@
     "id": 6,
     "instituicao": "IFSULDEMINAS",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fatores climáticos",
+      "altitude",
+      "continentalidade"
+    ],
     "pergunta": "Correlacione, de forma correta, os fatores climáticos:\n\nMarque a alternativa CORRETA.",
     "alternativas": [
       "1-d, 2-a, 3-c, 4-b.",
@@ -114,8 +138,12 @@
     "id": 7,
     "instituicao": "IFPE",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "aquecimento global",
+      "efeito estufa",
+      "mudanças climáticas"
+    ],
     "imagem_apoio": "1ano/img/123/p23q7.png",
     "pergunta": "A figura abaixo representa dois fenômenos climáticos muito comentados na atualidade, cujos nomes aparecem nas lacunas 1 e 2 do texto a seguir.\n\nO ____1______ ocorre naturalmente e é fundamental para a existência de vida no nosso planeta, pois equilibra a temperatura da Terra. Porém, quando agravado pela intervenção humana, através da emissão de poluentes, especialmente o CO2, faz com que uma maior quantidade de radiação solar seja absorvida, elevando as temperaturas e provocando o _______2_________ , que tem sido tema das muitas discussões sobre as mudanças climáticas da atualidade.\n\nAssinale a alternativa que completa corretamente as lacunas 1 e 2 do texto.",
     "alternativas": [
@@ -133,8 +161,12 @@
     "id": 8,
     "instituicao": "UEPB",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fenômenos climáticos",
+      "El Niño",
+      "La Niña"
+    ],
     "pergunta": "Associe os fenômenos climáticos citados na coluna 1 às suas respectivas características descritas na coluna 2.\n\nA sequência correta da enumeração é",
     "alternativas": [
       "4 2 5 1 3.",
@@ -151,8 +183,12 @@
     "id": 9,
     "instituicao": "FUVEST",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "desertificação",
+      "degradação ambiental",
+      "questões ambientais"
+    ],
     "fonte_apoio": "BRASIL, Ministério do Meio Ambiente. Disponível em http://www.mma.gov.br/.",
     "pergunta": "O processo de desertificação é definido como a degradação ambiental e socioambiental, particularmente nas zonas áridas, semiáridas e subúmidas, resultantes de vários fatores e vetores, incluindo as variações e alterações climáticas e as atividades humanas.\n\nDentre as medidas mais adequadas para mitigação dos efeitos da desertificação encontra(m)‐se",
     "alternativas": [
@@ -170,8 +206,12 @@
     "id": 10,
     "instituicao": "IFSULDEMINAS",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ilha de calor urbana",
+      "clima urbano",
+      "impactos ambientais"
+    ],
     "texto_apoio": "“Tinta especial criada para esconder aviões de satélites espiões reflete o sol e refresca asfalto, ajudando moradores a enfrentar ondas de calor. Os ventiladores de teto e os aparelhos de ar-condicionado conseguiram apenas aliviar os efeitos da sufocante onda de calor que atingiu o sul da Califórnia recentemente. Foram dias em que a maioria dos moradores de Los Angeles desejaram morar em um dos bairros que há algumas semanas testa uma nova ideia para combater as altas temperaturas. Trata-se do CoolSeal (\"selo fresco\", em tradução livre), uma espécie de pintura de cor cinza claro que \"refresca\" o asfalto e que foi criada para combater o chamado fenômeno da \"ilha de calor\" urbana.”",
     "fonte_apoio": "Fonte: BBC BRASIL. (29 de SETEMBRO de 2017). G1. Acesso em: 29 set. 2017, disponível em G1 NATUREZA:",
     "pergunta": "Observe a reportagem:\n\nSobre o fenômeno “ilhas de calor” urbanas, é correto afirmar:",

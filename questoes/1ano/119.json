@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UNESP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "elementos climáticos",
+      "temperatura",
+      "clima"
+    ],
     "texto_apoio": "“Todas as moléculas de uma parcela de ar contribuem para a pressão atmosférica. Como o vapor d’água é um gás, ele também contribui com um valor de pressão parcial, conhecido como pressão de vapor (e), aumentando ou diminuindo a pressão atmosférica. Quando a pressão de vapor (e) atinge seu valor máximo possível para uma determinada temperatura do ar, diz-se que o ar está saturado de umidade ou, em outras palavras, que o ar está cheio de vapor. Tem-se, portanto, a pressão de vapor de saturação (es). A umidade relativa é a razão entre a pressão de vapor e) e a pressão de vapor de saturação (es).”",
     "fonte_apoio": "(Ercília T. Steinke. Climatologia fácil, 2012. Adaptado.)",
     "pergunta": "Leia o excerto e analise as três afirmações a seguir.\n\nI. A temperatura caracteriza uma variável para determinarmos a pressão de vapor de saturação.\n\nII. Os valores relativos à umidade do ar expressam a real quantidade de vapor d’água existente no ar, em milímetros.\n\nIII. Quanto maior a umidade relativa do ar, maiores são as chances de chuva, pois a atmosfera está próxima do ponto de saturação.\n\nEstá correto o que se afirma em:",
@@ -23,8 +27,12 @@
     "id": 2,
     "instituicao": "ENEM",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fatores climáticos",
+      "clima",
+      "vegetação"
+    ],
     "imagem_apoio": "1ano/img/119/p19q2.png",
     "pergunta": "Qual característica do meio físico é condição necessária para a distribuição espacial do fenômeno representado?",
     "alternativas": [
@@ -42,8 +50,12 @@
     "id": 3,
     "instituicao": "ENEM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "massas de ar",
+      "brisa marítima",
+      "dinâmica atmosférica"
+    ],
     "imagem_apoio": "1ano/img/119/p19q3.png",
     "pergunta": "Nas imagens constam informações sobre a formação de brisas em áreas litorâneas.\n\nEsse processo é resultado de:",
     "alternativas": [
@@ -61,8 +73,12 @@
     "id": 4,
     "instituicao": "UEMA",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "atmosfera",
+      "camadas da atmosfera",
+      "composição atmosférica"
+    ],
     "fonte_apoio": "www.estudopratico.com.br/camadas-da-atmosfera.",
     "imagem_apoio": "1ano/img/119/p19q4.png",
     "pergunta": "A atmosfera é uma camada fina de gases sem cheiro, sem cor e sem gosto que está presa ao planeta Terra pela força gravitacional. Essa camada apresenta composição e condições físicas não uniformes em toda a sua espessura e, por isto, é dividida em estratos superpostos, conforme se observa no gráfico a seguir.\n\nConsiderando o gráfico e as características destacadas das camadas atmosféricas, pode-se afirmar que",
@@ -81,8 +97,12 @@
     "id": 5,
     "instituicao": "UNICAMP",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ciclones",
+      "massas de ar",
+      "dinâmica atmosférica"
+    ],
     "imagem_apoio": "1ano/img/119/p19q5.png",
     "pergunta": "A figura a seguir exibe a imagem de um ciclone:\n\nÉ correto afirmar que o ciclone em questão.",
     "alternativas": [
@@ -99,8 +119,12 @@
     "id": 6,
     "instituicao": "UFSM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "pressão atmosférica",
+      "massas de ar",
+      "dinâmica atmosférica"
+    ],
     "imagem_apoio": "1ano/img/119/p19q6.png",
     "pergunta": "Observe a figura:\n\nAliando seus conhecimentos à figura, avalie as afirmativas a seguir.\n\nI. A circulação geral da atmosfera resulta das diferenças de aquecimento entre as regiões de latitudes baixas e altas e da rotação terrestre.\n\nII. Os ventos alíseos das latitudes intertropicais têm relação com as células equatoriais de Hadley.\n\nIII. Correntes convectivas se deslocam e se encontram em diferentes latitudes, redistribuindo calor e umidade na superfície terrestre.\n\nEstá(ão) CORRETA(S)",
     "alternativas": [
@@ -118,8 +142,12 @@
     "id": 7,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "massas de ar",
+      "frentes",
+      "dinâmica atmosférica"
+    ],
     "imagem_apoio": "1ano/img/119/p19q7.png",
     "pergunta": "(UFPI-PI) Na figura abaixo, indicados pelos algarismos romanos I, II e III, estão representados os três tipos de precipitações pluviais.\n\nAponte a alternativa que expressa corretamente a denominação das chuvas.",
     "alternativas": [
@@ -137,8 +165,12 @@
     "id": 8,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "massas de ar",
+      "dinâmica atmosférica",
+      "frentes"
+    ],
     "imagem_apoio": "1ano/img/119/p19q8.png",
     "pergunta": "(MACKENZIE-SP) Observe a figura e responda sobre os deslocamentos das massas de ar:",
     "alternativas": [
@@ -156,8 +188,12 @@
     "id": 9,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "solos",
+      "formação do solo",
+      "pedologia"
+    ],
     "pergunta": "(MUNDO EDUCAÇÃO 2022) Os principais elementos que atuam na formação do solo são:",
     "alternativas": [
       "Apenas elementos da natureza (clima, relevo, água e seres vivos), pois as atividades humanas não exercem nenhuma influência na formação do solo.",
@@ -174,8 +210,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "pressão atmosférica",
+      "dinâmica atmosférica",
+      "zona de convergência"
+    ],
     "imagem_apoio": "1ano/img/119/p19q10.png",
     "pergunta": "(FUVEST) Refletindo sobre o desenho a seguir, em uma área Tropical, podemos inferir que:",
     "alternativas": [

@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UFSM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estruturas geológicas",
+      "rochas",
+      "relevo"
+    ],
     "pergunta": "A distribuição dos vários tipos de rocha na crosta terrestre indica as grandes formações geológicas estruturais do planeta: as províncias geológicas. Em relação às províncias geológicas e geomorfológicas da Terra, é correto afirmar que",
     "alternativas": [
       "as bacias sedimentares estão constituídas por rochas formadas na Era Pré-cambriana, que são muito resistentes a meteorização e, por isso, apresentam-se pouco desgastadas pelos processos erosivos, resultando em formas jovens de relevo.",
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "IFMT",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estruturas geológicas",
+      "rochas",
+      "litosfera"
+    ],
     "imagem_apoio": "1ano/img/114/p14q2.png",
     "pergunta": "Apesar do contínuo processo de formação e transformação da litosfera, é possível identificar, atualmente, três grandes conjuntos de estruturas geológicas, ou seja tipos de terreno rochoso que compõem os continentes terrestres. São eles:",
     "alternativas": [
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "UNICENTRO",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "estruturas geológicas",
+      "relevo do Brasil",
+      "bacias sedimentares"
+    ],
     "imagem_apoio": "1ano/img/114/p14q3.png",
     "pergunta": "Analise o mapa a seguir.\n\nCom base no mapa das principais estruturas geológicas da Terra e nos conhecimentos sobre o tema, considere as afirmativas a seguir.\n\nI. As montanhas a leste do continente sul-americano são de altitudes elevadas se comparadas às cadeias a oeste, devido ao fato de as primeiras serem mais antigas que as segundas.\n\nII. As bacias sedimentares são as mais extensas das estruturas geológicas terrestres, formadas a partir da deposição de sedimentos ao longo das eras geológicas.\n\nIII. A estrutura geológica do Brasil compõe-se de maciços antigos e bacias sedimentares, não ocorrendo a existência de dobramentos modernos.\n\nIV. A cordilheira dos Andes e a do Himalaia são cadeias montanhosas de dobramentos modernos formados por rochas magmáticas e sedimentares, de formação geológica recente.",
     "alternativas": [
@@ -59,8 +71,12 @@
     "id": 4,
     "instituicao": "UFRGS–2006",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "rochas",
+      "tipos de rocha",
+      "rochas magmáticas"
+    ],
     "texto_apoio": "Assinale com V ou F as afirmações a seguir, referentes à classificação genética das rochas",
     "pergunta": "\n\n( ) A rocha ígnea intrusiva mais abundante na crosta terrestre é o granito. \n\n( ) as rochas sedimentares são formadas a partir da compactação de fragmentos provenientes somente das rochas ígneas e metamórficas. \n\n( ) quando ocorrer a litificação do material magmático em áreas profundas da crosta terrestre, a rocha resultante será do tipo ígnea vulcânica. \n\n( ) O gnaisse e o mármore são rochas metamórficas resultantes da transformação de outras rochas devido ao aumento de pressão e temperatura sobre a rocha preexistente",
     "alternativas": [
@@ -78,8 +94,12 @@
     "id": 5,
     "instituicao": "UEFS",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estruturas geológicas",
+      "relevo",
+      "agentes endógenos"
+    ],
     "fonte_apoio": "(MAGNOLI, D.; ARAÚJO, R. Geografia geral: projeto de ensino de Geografia. São Paulo: Moderna, 2010, p. 37.).",
     "pergunta": "As estruturas que formam a superfície refletem os eventos geológicos da história do Planeta. No passado, mares rasos cobriram vastas extensões, que atualmente constituem planícies, e cordilheiras montanhosas emergiram dos oceanos, como revelam, por exemplo, registros fósseis descobertos nos Andes\n\nCom base nas informações contidas no texto e nos conhecimentos sobre as estruturas geológicas da Terra, marque V nas afirmativas verdadeiras e F, nas falsas.\n\n( ) A estrutura geológica da superfície terrestre continua em mutação e constitui o embasamento do modelado terrestre.\n\n( ) as terras imersas exibem dorsais submarinas e fossas abissais, ambas relacionadas a movimentos de placas tectônicas.\n\n( ) os escudos cristalinos são dobramentos modernos surgidos do entrechoque de massas continentais, quando se formou a Pangeia.\n\n( ) as bacias sedimentares, formadas ao longo do Período Pré-Cambriano, são resultantes da solidificação do material magmático e da ascensão das rochas até a superfície.\n\n( ) os dobramentos modernos assinalaram episódios de acomodação tectônica, que ocorreram ao longo do litoral e, no Brasil, estão concentrados na porção meridional.\n\nA alternativa que indica a sequência correta, de cima para baixo, é a:",
     "alternativas": [
@@ -97,8 +117,12 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2005",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "formas de relevo",
+      "classificação do relevo"
+    ],
     "imagem_apoio": "1ano/img/114/p14q6.png",
     "pergunta": "Um professor, apresentou em sua prova de geografia a figura a seguir e demandou dos alunos a identificação das formas de relevo I e II.\n\nAcertaram a questão os alunos que a denominaram da seguinte forma:",
     "alternativas": [
@@ -116,8 +140,12 @@
     "id": 7,
     "instituicao": "UFCG PB",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "agentes internos",
+      "agentes externos"
+    ],
     "pergunta": "O relevo, dependendo da atuação dos agentes internos e externos, pode apresentar diversas formas. Quanto às características das principais formas de relevo, é CORRETO dizer que:\n\nI. As serras são relevos estreitos bem agrupados com topos regulares. Em geral, são alinhamentos de montanhas recentes.\n\nII. Os planaltos são as superfícies mais elevadas, com ondulações bruscas. Geralmente são delimitados por planícies que os circundam.\n\nIII. As planícies são superfícies planas, de baixa altitude, nas quais, geralmente, os processos de deposição são abundantes.\n\nIV. As depressões são áreas rebaixadas. Sua origem pode estar ligada a processos de erosão ou a afundamentos provocados por falhamentos.\n\nV. As montanhas são elevações suaves e aluviais do terreno. São formadas por agrupamentos de morros e escarpas sedimentares.\n\nA sequência correta é:",
     "alternativas": [
       "I, II e IV.",
@@ -134,8 +162,12 @@
     "id": 8,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "formas de relevo",
+      "relevo",
+      "classificação do relevo"
+    ],
     "texto_apoio": "A figura seguinte representa o relevo da América Latina.",
     "imagem_apoio": "1ano/img/114/p14q8.png",
     "fonte_apoio": "Fonte: adaptada de https://pixabay.com/pt/mapa-do-mundo-mapa-mapa-de-relevo-1804890. Acesso em: 10 abr. 2017.",
@@ -155,8 +187,12 @@
     "id": 9,
     "instituicao": "FUVEST",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "relevo",
+      "estruturas geológicas",
+      "riscos geológicos"
+    ],
     "imagem_apoio": "1ano/img/114/p14q9.png",
     "pergunta": "A partir da figura, pode-se afirmar que as áreas com as condições naturais mais favoráveis à ocupação humana são:",
     "alternativas": [
@@ -173,8 +209,12 @@
     "id": 10,
     "instituicao": "FUVEST",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "formas de relevo",
+      "compartimentos de relevo",
+      "relevo"
+    ],
     "texto_apoio": "A figura a seguir apresenta um cenário em que se distinguem dois compartimentos de relevo na paisagem",
     "imagem_apoio": "1ano/img/114/p14q10.png",
     "pergunta": "No que se refere aos compartimentos de relevo na paisagem, é correto afirmar que o compartimento",

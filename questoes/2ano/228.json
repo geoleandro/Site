@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "UEG",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "rede urbana",
+      "hierarquia urbana",
+      "cidades",
+      "distribuição espacial"
+    ],
     "pergunta": "Atualmente, no Brasil, as cidades, ao se distribuírem espacialmente, formam uma rede urbana ou um conjunto de centros que funcionam de forma articulada e, por isso, expressam a dimensão socioespacial da sociedade conforme uma hierarquia urbana. Segundo as Regiões de Influência das Cidades (REGIC) estabelecidas pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em 2007, cidades como Goiânia, Belém e Manaus são caracterizadas como.",
     "alternativas": [
       "centros sub-regionais.",
@@ -21,8 +26,12 @@
     "id": 2,
     "instituicao": "IFSULDEMINAS",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "urbanização mundial",
+      "população urbana",
+      "crescimento das cidades"
+    ],
     "pergunta": "A maioria da população mundial vive nas cidades. Segundo dados e previsão da Divisão de População da ONU, no início do século XX, a população urbana era de 14%. Em 2010 era de 51,6% e chegará a 67% em 2050. Observe as alternativas abaixo, a respeito de rede e hierarquia urbanas, e assinale a que for CORRETA:",
     "alternativas": [
       "A rede urbana é formada por um sistema de cidades de um mesmo país que se interligam às outras, exclusivamente, por meio de sistemas de transportes (rodoviário, aéreo, fluvial e marítimo) por onde ocorrem os fluxos de mercadorias.",
@@ -38,8 +47,13 @@
     "id": 3,
     "instituicao": "UEG",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "conurbação",
+      "metropolização",
+      "crescimento urbano",
+      "fusão de cidades"
+    ],
     "pergunta": "Uma conurbação caracteriza-se por",
     "alternativas": [
       "áreas urbanas superpostas espacial e politicamente.",
@@ -56,8 +70,13 @@
     "id": 4,
     "instituicao": "UEFS-BA",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "rede urbana brasileira",
+      "mapa",
+      "urbanização",
+      "hierarquia das cidades"
+    ],
     "imagem_apoio": "2ano/img/228/s28q4.png",
     "pergunta": "Analise o mapa.\n\nConsiderando as cidades e a urbanização brasileira, é correto afirmar que o mapa apresenta",
     "alternativas": [
@@ -75,8 +94,12 @@
     "id": 5,
     "instituicao": "IFPE",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "metrópoles brasileiras",
+      "mapa",
+      "maiores concentrações urbanas"
+    ],
     "imagem_apoio": "2ano/img/228/s28q5.png",
     "pergunta": "As cidades destacadas no mapa abaixo correspondem às maiores concentrações urbanas da atualidade. Com base nisso e na distribuição geográfica dessas cidades, assinale a alternativa que indica o conceito mais apropriado para designá-las na geografia do mundo atual.",
     "alternativas": [
@@ -94,8 +117,13 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Rio de Janeiro",
+      "região metropolitana",
+      "relação cidade-entorno",
+      "rede urbana"
+    ],
     "texto_apoio": "“O Rio de Janeiro tem projeção imediata no próprio estado e no Espírito Santo, em parcela do sul do estado da Bahia, e na Zona da Mata, em Minas Gerais, onde tem influência dividida com Belo Horizonte. Compõem a rede urbana do Rio de Janeiro, entre outras cidades: Vitória, Juiz de Fora, Cachoeiro de Itapemirim, Campos dos Goytacazes, Volta Redonda – Barra Mansa, Teixeira de Freitas, Angra dos Reis e Teresópolis”.",
     "fonte_apoio": "Disponível em: http://ibge.gov.br. Acesso em: 9 jul. 2015 (adaptado).",
     "pergunta": "O conceito que expressa a relação entre o espaço apresentado e a cidade do Rio de Janeiro é:",
@@ -114,8 +142,12 @@
     "id": 7,
     "instituicao": "UNICAMP",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "rede urbana brasileira",
+      "hierarquia urbana",
+      "cidades médias"
+    ],
     "texto_apoio": "“Em termos genéricos, a rede urbana constitui-se no conjunto de centros urbanos funcionalmente articulados entre si. É, portanto, um tipo particular de rede na qual os vértices ou nós representam os diferentes núcleos de povoamento dotados de funções urbanas, e as linhas representam os diversos fluxos entre esses centros”.",
     "fonte_apoio": "Adaptado de Roberto Lobato Corrêa, Trajetórias Geográficas. Rio de Janeiro: Bertrand Brasil, 2001.",
     "pergunta": "Sobre a rede urbana Brasileira é correto afirmar que:",
@@ -133,8 +165,12 @@
     "id": 8,
     "instituicao": "UNB",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura interna das cidades",
+      "urbanização",
+      "desigualdade urbana"
+    ],
     "texto_apoio": "“Até 1970, a região metropolitana de São Paulo foi a “Pasárgada” brasileira: ali se instalaram as principais indústrias, com os melhores empregos. Com a crise de 1980 e a interrupção do ciclo de expansão econômica do país, ocorreu uma reestruturação do mercado de trabalho, e o mapa migratório brasileiro começou a apontar para novas direções”.",
     "fonte_apoio": "L. P. Juttel. Rotas migratórias: norte e centro-oeste, novos polos de migração. In: Ciência e Cultura, v. 59, n.o 4, 2007 (com adaptações).",
     "pergunta": "Com relação ao assunto tratado no texto acima, julgue o item subsequente.\n\nVerifica-se, na reestruturação da rede urbana brasileira, motivada por fluxos migratórios, o crescimento de cidades de porte médio que aumentam seu raio de influência.",
@@ -150,8 +186,12 @@
     "id": 9,
     "instituicao": "UNEMAT",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "urbanização",
+      "rede urbana brasileira",
+      "metropolização"
+    ],
     "pergunta": "Sobre o processo de urbanização e a rede urbana brasileira, analise as seguintes assertivas:\n\nI. No Brasil, o processo de urbanização deslanchou após a 2ª Guerra Mundial, junto com a industrialização implantada na Região Sudeste.\n\nII. O processo de urbanização brasileiro apoiou-se essencialmente no êxodo rural, que teve como causa a formação de uma superpopulação relativa no campo.\n\nIII. O processo de urbanização no Brasil apresenta-se de forma homogênea entre as diferentes regiões do país. Esse fato reflete a inexistência de divergências socioeconômicas entre as regiões brasileiras.\n\nIV. Na rede urbana brasileira aparecem duas metrópoles globais: São Paulo e Belo Horizonte.\n\nV. Na Região Centro-Oeste, Brasília destaca-se como metrópole nacional e Goiânia como metrópole regional.\n\nAssinale a alternativa correta:",
     "alternativas": [
       "Somente IV é verdadeira.",
@@ -168,8 +208,13 @@
     "id": 10,
     "instituicao": "PUC-RS",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "crescimento urbano",
+      "metrópoles",
+      "mapa",
+      "desigualdade regional"
+    ],
     "imagem_apoio": "2ano/img/228/s28q10.png",
     "pergunta": "INSTRUÇÃO: Para responder à questão, analise os mapas e as afirmativas referentes ao aumento das cidades com mais de 500 mil habitantes no Brasil, preenchendo os parênteses com V para verdadeiro e F para falso.\n\nQuanto às cidades brasileiras com mais de 500 mil habitantes, afirma-se:\n\n( ) A maior concentração de cidades deste porte ocorre na região Norte do Brasil\n\n( ) Dentre as causas para o aumento das cidades deste porte no país, é correto citar o êxodo rural.\n\n( ) Esse aumento vincula-se à oferta de empregos no setor industrial, favorecido pela migração de indústrias dos grandes centros para essas cidades.\n\n( ) Suas vantagens competitivas em relação às grandes cidades, como isenção de impostos municipais e oferta de mais infra- estrutura, facilitam o aumento dos ganhos sobre o capital investido, contribuindo para o aumento do número destas cidades.\n\nA sequência correta de preenchimento dos parênteses é:",
     "alternativas": [

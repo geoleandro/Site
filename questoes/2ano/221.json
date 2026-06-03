@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "FUVEST",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Aquífero Guarani",
+      "hidrografia",
+      "recursos hídricos",
+      "América do Sul"
+    ],
     "fonte_apoio": "Disponível em https://www.mma.gov.br/.",
     "pergunta": "O Sistema Aquífero Guarani abrange parte dos territórios da Argentina, do Brasil, do Paraguai e do Uruguai. Possui um volume acumulado de 37.000 km3 e área estimada de 1.087.000 km2. Na parte brasileira estende-se por oito Estados: Goiás, Mato Grosso, Mato Grosso do Sul, Minas Gerais, Paraná, Rio Grande do Sul, Santa Catarina e São Paulo.\n\nSobre os aquíferos e seus usos para atividades humanas, é correto afirmar:",
     "alternativas": [
@@ -22,8 +27,12 @@
     "id": 2,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "bacias hidrográficas",
+      "hidrografia brasileira",
+      "recursos hídricos"
+    ],
     "pergunta": "Analise as afirmativas e marque a que está INCORRETA.",
     "alternativas": [
       "Com 7 milhões de quilômetros quadrados, a bacia hidrográfica Amazônica é considerada a maior do planeta.",
@@ -40,8 +49,13 @@
     "id": 3,
     "instituicao": "UERR",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "regiões hidrográficas",
+      "bacias hidrográficas",
+      "hidrografia brasileira",
+      "mapa"
+    ],
     "imagem_apoio": "2ano/img/221/s21q3.png",
     "pergunta": "Observe o mapa e as informações abaixo:\n\nO mapa acima apresenta as 12 regiões hidrográficas brasileiras.\n\nI – A Região Hidrográfica (RH) ocupa 45% do território nacional, abrangendo sete Estados. Possui uma extensa rede de rios com grande abundância de água. A densidade populacional é 10 vezes menor que a média nacional, entretanto, a região concentra 81% da disponibilidade de águas superficiais do país. Cerca de 85% da área da RH permanece com cobertura vegetal nativa.\n\nII - A Região Hidrográfica ocupa 7,5% do território brasileiro, abrangendo sete estados: Bahia, Minas Gerais, Pernambuco, Alagoas, Sergipe, Goiás e Distrito Federal. A precipitação média anual na RH é muito abaixo da média nacional, apresentando frequentes situações de escassez de água. Entretanto, a RH tem importante papel na geração de energia para a região nordeste do país.\n\nIII - A Região Hidrográfica ocupa 10% do território brasileiro, abrangendo sete estados: São Paulo, Paraná, Mato Grosso do Sul, Minas Gerais, Goiás, Santa Catarina e Distrito Federal. É a região mais populosa e de maior desenvolvimento econômico do país. Por isso, possui as maiores demandas por recursos hídricos, tendo como destaque o uso industrial. É também a região com maior área irrigada e maior aproveitamento do potencial hidráulico disponível.\n\nAs características descritas acima se referem às seguintes regiões hidrográficas, respectivamente:",
     "alternativas": [
@@ -59,8 +73,13 @@
     "id": 4,
     "instituicao": "UNICAMP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "vazão dos rios",
+      "hidrologia",
+      "recursos hídricos",
+      "gerenciamento hídrico"
+    ],
     "fonte_apoio": "(Fonte: Agência Nacional de Águas, ANA.)",
     "imagem_apoio": "2ano/img/221/s21q4.png",
     "pergunta": "Compreender a dinâmica de vazão dos rios é fundamental para o gerenciamento dos recursos hídricos, pois a captação de água atende a diferentes necessidades da sociedade e pode ser comprometida em caso de estiagem extrema. Os gráficos de Regime Fluvial a seguir mostram a vazão de dois rios brasileiros ao longo do ano.\n\nConsiderando as informações dos gráficos e seus conhecimentos, assinale a alterativa correta.",
@@ -78,8 +97,13 @@
     "id": 5,
     "instituicao": "CUSC",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "água doce",
+      "distribuição da água",
+      "recursos hídricos",
+      "escassez hídrica"
+    ],
     "imagem_apoio": "2ano/img/221/s21q5.png",
     "pergunta": "São conhecidos os números da distribuição da água no mundo. Apenas 3% de todos os recursos hídricos existentes no planeta são de água doce própria para consumo. Para dificultar ainda mais a situação, desse total de água doce existente, a maior parte encontra-se nas geleiras e no lençol freático. Por sorte, o Brasil possui a maior reserva mundial de água potável, com cerca de 12% do montante total, o que não necessariamente livra o país de sofrer com a falta desse importante recurso natural. (...)\n\nA tabela acima demonstra a distribuição de recursos hídricos e densidade demográfica no Brasil. Destes dados, pode-se afirmar que:",
     "alternativas": [
@@ -97,8 +121,13 @@
     "id": 6,
     "instituicao": "ETC",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "usina hidrelétrica de Itaipu",
+      "impacto ambiental",
+      "hidrografia",
+      "energia"
+    ],
     "fonte_apoio": "http://tinyurl.com/ Adaptado.",
     "pergunta": "Nas décadas de 1970 e de 1980, a construção da usina hidrelétrica de Itaipu causou um grande impacto na vida dos Guarani: em 1981, mais de trinta de seus territórios, existentes na fronteira entre Brasil e Paraguai, foram inundados. As obras do empreendimento começaram em 1974 e sua inauguração oficial ocorreu em 1982. O lago de sua barragem ocupa uma área de 1 350 km2, alagando parte de dezesseis municípios brasileiros.\n\nDe acordo com o texto, é correto afirmar que:",
     "alternativas": [
@@ -116,8 +145,13 @@
     "id": 7,
     "instituicao": "UEA",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "bacias hidrográficas",
+      "divisores de água",
+      "hidrografia",
+      "rios brasileiros"
+    ],
     "pergunta": "Bacias hidrográficas são porções delimitadas por divisores de águas, que abrigam um rio principal e seus afluentes. Sobre as bacias hidrográficas brasileiras, é correto afirmar que :",
     "alternativas": [
       "a Bacia do São Francisco apresenta regime equatorial perene, terrenos elevados e muitos rios contaminados por mercúrio.",
@@ -134,8 +168,13 @@
     "id": 8,
     "instituicao": "ENEM",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "lei das águas",
+      "gestão de recursos hídricos",
+      "comitê de bacia",
+      "legislação ambiental"
+    ],
     "pergunta": "O artigo 1° da Lei Federal n°. 9.433/1997 (Lei das Águas) estabelece, entre outros, os seguintes fundamentos:\n\nI. a água é um bem de domínio público;\n\nII. a água é um recurso natural limitado, dotado de valor econômico;\n\nIII. em situações de escassez, os usos prioritários dos recursos hídricos são o consumo humano e a dessedentação de animais;\n\nIV. a gestão dos recursos hídricos deve sempre proporcionar o uso múltiplo das águas.\n\nConsidere que um rio nasça em uma fazenda cuja única atividade produtiva seja a lavoura irrigada de milho e que a companhia de águas do município em que se encontra a fazenda colete água desse rio para abastecer a cidade. Considere, ainda, que, durante uma estiagem, o volume de água do rio tenha chegado ao nível crítico, tornando-se insuficiente para garantir o consumo humano e a atividade agrícola mencionada.\n\nNessa situação, qual das medidas adiante estaria de acordo com o artigo 1° da Lei das Águas?",
     "alternativas": [
       "Manter a irrigação da lavoura, pois a água do rio pertence ao dono da fazenda.",
@@ -152,8 +191,13 @@
     "id": 9,
     "instituicao": "ENEM",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Aquífero Guarani",
+      "recursos hídricos subterrâneos",
+      "hidrografia",
+      "América do Sul"
+    ],
     "texto_apoio": "“O aquífero Guarani, mega reservatório hídrico subterrâneo da América do Sul, com 1,2 milhão de km2, não é o \"mar de água doce\" que se pensava existir. Enquanto em algumas áreas a água é excelente, em outras, é inacessível, escassa ou não-potável. O aquífero pode ser dividido em quatro grandes compartimentos. No compartimento Oeste, há boas condições estruturais que proporcionam recarga rápida a partir das chuvas e as águas são, em geral, de boa qualidade e potáveis. Já no compartimento Norte-Alto Uruguai, o sistema encontra-se coberto por rochas vulcânicas, a profundidades que variam de 350 m a 1.200 m. Suas águas são muito antigas, datando da Era Mesozoica, e não são potáveis em grande parte da área, com elevada salinidade, sendo que os altos teores de fluoretos e de sódio podem causar alcalinização do solo”.",
     "fonte_apoio": "Scientific American Brasil, n∘ 47, abr./2006 (com adaptações).",
     "imagem_apoio": "2ano/img/221/s21q9.png",
@@ -173,8 +217,13 @@
     "id": 10,
     "instituicao": "FUVEST",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "chapadão",
+      "Cerrado",
+      "nascentes",
+      "Aquífero Guarani"
+    ],
     "texto_apoio": "Para chegar à resposta correta, é importante observar atentamente as informações fornecidas na imagem de satélite e relacioná-las aos conceitos geográficos envolvidos na questão. Analise como a presença das monoculturas no Chapadão Ocidental Baiano pode afetar as bacias hidrográficas dos rios Tocantins e São Francisco. Considere o papel dos divisores de águas e como eles podem influenciar na disseminação de substâncias, como os agrotóxicos, nessas áreas. Pense também na relação entre a localização das monoculturas e a proximidade das bacias hidrográficas. É comum que bancas examinadoras utilizem estratégias para testar a capacidade dos estudantes de interpretar corretamente as questões. Uma dessas estratégias é o uso de termos como \"somente\", \"único\" e outras palavras que possam induzir a uma interpretação incorreta. Tente resolver sem ver a resposta",
     "imagem_apoio": "2ano/img/221/s21q10.png",
     "pergunta": "Observe a imagem de satélite a seguir:\n\nParte dos topos do Chapadão Ocidental Baiano, divisor de águas das bacias hidrográficas dos rios Tocantins e São Francisco, é dominada por monocultura para exportação.\n\nCom base na imagem e em seus conhecimentos, é correto afirmar que\n\nResposta: Letra A. Tanto a bacia do rio Tocantins quanto a do São Francisco são ameaçadas por contaminação de agrotóxicos nas áreas do Chapadão, cujos divisores topográficos não impedem os fluxos subterrâneos das substâncias utilizadas nas monoculturas.",

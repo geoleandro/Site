@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "formação territorial",
+      "bandeiras",
+      "expansão do território",
+      "séculos XVII-XVIII"
+    ],
     "pergunta": "(FUVEST) No século XVII e XVIII, contribuiu para a penetração no interior brasileiro",
     "alternativas": [
       "o desenvolvimento das culturas da cana de açúcar e do algodão.",
@@ -21,8 +26,13 @@
     "id": 2,
     "instituicao": "UNESP",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "formação territorial",
+      "ciclos econômicos",
+      "colonização",
+      "expansão territorial"
+    ],
     "pergunta": "Na formação do território brasileiro, nos séculos XVII e XVIII, as atividades econômicas da pecuária e da mineração foram responsáveis pela",
     "alternativas": [
       "construção de feitorias no litoral.",
@@ -39,8 +49,12 @@
     "id": 3,
     "instituicao": "CESGRANRIO",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "regionalização brasileira",
+      "regiões geoeconômicas",
+      "divisão regional"
+    ],
     "texto_apoio": "“Poderíamos, grosseiramente, reconhecer a existência de quatro Brasis, ou seja, regiões específicas dentro do País. Num desses Brasis, verifica-se a implantação mais consolidada dos dados da ciência, da técnica e da informação, além de uma urbanização importante, com um padrão de consumo das empresas e das famílias mais intenso. Nele se produzem novíssimas formas específicas de terciário superior, um quaternário e um quinquinário ligados à finança, à assistência técnica e política e à informação em suas diferentes modalidades”. SANTOS, M. e SILVEIRA, M. O Brasil. Território e sociedade no início do século XXI. Rio de Janeiro: Record, 2001, p. 268-269. Adaptado.",
     "pergunta": "Considere o texto sobre a regionalização brasileira.\n\nA porção regional mencionada localiza-se inteiramente no:",
     "alternativas": [
@@ -58,8 +72,12 @@
     "id": 4,
     "instituicao": "UEFS",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "regiões geoeconômicas",
+      "regionalização",
+      "IBGE"
+    ],
     "pergunta": "A divisão do Brasil em regiões geoeconômicas é uma proposta de estudo do espaço brasileiro com base em três grandes unidades territoriais: Amazônia, Nordeste e Centro-Sul.\n\nEm relação a essa divisão regional, é correto afirmar:",
     "alternativas": [
       "Adota a delimitação político-administrativa, de modo que nenhum estado pertence a duas ou mais regiões",
@@ -76,8 +94,13 @@
     "id": 5,
     "instituicao": "UCS",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "formação étnica",
+      "diversidade cultural",
+      "miscigenação",
+      "etnias"
+    ],
     "pergunta": "A população brasileira é formada por vários grupos étnicos, entre eles, índio, branco, negro e amarelo. A miscigenação desses grupos deu origem à diversificação étnica atual do Brasil.\n\nAnalise a veracidade (V) ou a falsidade (F) das afirmativas abaixo, sobre a população brasileira.\n\n( ) Os descendentes de atlanto-mediterrâneos formam a menor parte da população brasileira. O grupo é constituído por portugueses, suíços, ingleses, franceses e holandeses, sendo os últimos representados por um número muito reduzido no total da população.\n\n( ) A lei Afonso Arinos, de 1951, proibia a discriminação racial no país. Era uma lei branda, pois tratava essa questão como contravenção penal: bastava que o infrator pagasse uma multa para livrar-se da acusação e da prisão.\n\n( ) Na década de 1970, foi fundado o Movimento Negro Unificado (MNU), e, nas décadas de 1980 e 1990, ocorreu a reafirmação do movimento negro por meio da organização e mobilização. Rap, hip hop e break, por exemplo, são manifestações artísticas contestatórias para mexer com os referenciais de beleza, apoiados no modelo branco.\n\nAssinale a alternativa que preenche corretamente os parênteses, de cima para baixo.",
     "alternativas": [
       "V – F – F.",
@@ -94,8 +117,13 @@
     "id": 6,
     "instituicao": "UECE",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "formação étnica",
+      "diversidade étnica",
+      "imigração",
+      "miscigenação"
+    ],
     "pergunta": "Há um crescente debate no Brasil sobre a formação e a diversidade étnica da população, em especial sobre o papel dos povos indígenas e a valorização da sua cultura. Considerando esse assunto, assinale a afirmação verdadeira.",
     "alternativas": [
       "A cultura dos povos indígenas no Brasil passa por grandes transformações, entre as quais podem ser citadas o fim das relações coletivas de trabalho nas aldeias e o aumento da noção de propriedade privada na relação com a terra.",
@@ -111,8 +139,13 @@
     "id": 7,
     "instituicao": "FACERES",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "latifúndio",
+      "questão agrária",
+      "estrutura fundiária",
+      "agronegócio"
+    ],
     "fonte_apoio": "(C. Prado Junior. A questão agrária no Brasil, 2000.)",
     "pergunta": "Os grandes proprietários e fazendeiros são, antes de tudo, homens de negócio, para quem a utilização da terra constitui um negócio como outro qualquer (...). Já para os trabalhadores rurais, para a massa camponesa de proprietários ou não, a terra e as atividades que nela se exercem constituem a única fonte de subsistência para eles acessível.\n\nA estrutura fundiária brasileira caracteriza-se por:",
     "alternativas": [
@@ -130,8 +163,12 @@
     "id": 8,
     "instituicao": "FUVEST",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "estrutura fundiária",
+      "concentração de terras",
+      "questão agrária"
+    ],
     "imagem_apoio": "2ano/img/206/s6q8.png",
     "pergunta": "Assinale a alternativa correta revelada pelo gráfico abaixo:",
     "alternativas": [
@@ -149,8 +186,12 @@
     "id": 9,
     "instituicao": "IFRR",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "relevo brasileiro",
+      "formas de relevo",
+      "geomorfologia"
+    ],
     "fonte_apoio": "ADÃO, Edilson; FURQUIM JR., Laercio. GEOGRAFIA em REDE. Vol. 1. 1. ed. São Paulo: FTD, 2013.",
     "pergunta": "Em linhas gerais, podemos caracterizar o relevo brasileiro como antigo e rebaixado. A senilidade do relevo brasileiro está relacionada, principalmente, à sua estrutura geológica, uma vez que sua morfologia externa é mais recente. Em outras palavras, a geologia é antiga, mas a geomorfologia, não, pois enquanto a estruturação é consequência de fatores endógenos ao relevo, a esculturação é produto das forças exógenas que estão constantemente esculpindo a morfologia brasileira. A modesta altitude de nosso relevo apresenta-se distribuída em variadas formas.\n\nQuanto as formas o relevo brasileiro é classificado como:",
     "alternativas": [
@@ -168,8 +209,13 @@
     "id": 10,
     "instituicao": "UDESC",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "relevo brasileiro",
+      "geologia",
+      "formação do relevo",
+      "chapadas"
+    ],
     "pergunta": "Leia o texto e complete as lacunas adequadamente. O relevo brasileiro formou-se a partir de estruturas geológicas compostas, principalmente, por formações _______ recentes e estruturas _________ de idade muito antiga. Seu processo de formação e transformação foi muito influenciado por fatores ________, ou seja, pelos agentes formadores e modeladores do relevo que atuam na superfície do planeta Terra. Assinale a alternativa que preenche corretamente as lacunas do enunciado, sequencialmente.",
     "alternativas": [
       "sedimentares – cristalinas – exógenos.",

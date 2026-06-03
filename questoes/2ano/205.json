@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "UNICAMP",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "geologia brasileira",
+      "derrames basálticos",
+      "bacias sedimentares",
+      "Paraná"
+    ],
     "imagem_apoio": "2ano/img/205/s5q1.png",
     "pergunta": "A figura abaixo apresenta a ocorrência de derrames basálticos na porção centro-sul do Brasil.\n\nSobre essa ocorrência, é correto afirmar:",
     "alternativas": [
@@ -21,8 +26,13 @@
     "id": 2,
     "instituicao": "UEL",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura geológica",
+      "escudos cristalinos",
+      "bacias sedimentares",
+      "dobramentos"
+    ],
     "pergunta": "A estrutura geológica do Brasil é composta por:\n\nI. Escudos cristalinos, muito antigos, de rochas rígidas e resistentes que originaram planaltos e algumas depressões, compondo 1/3 do território nacional.\n\nII. Bacias sedimentares compostas de rochas sedimentares que originaram as planícies, planaltos sedimentares ou depressões, ocupando cerca de 64% do total do país.\n\nIII. Dobramentos modernos que originaram planaltos e relevos montanhosos, formados no Terciário, ocupando cerca de 30% do território nacional.\n\nIV. Escudos cristalinos recentes, pouco desgastados por processos erosivos, que deram origem às formas de relevo no qual predominam os planaltos montanhosos distribuídos por quase todo o território nacional.\n\nAssinale a alternativa correta.",
     "alternativas": [
       "Somente as afirmativas I e II são corretas.",
@@ -39,8 +49,12 @@
     "id": 3,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "crátons",
+      "escudos cristalinos",
+      "geologia brasileira"
+    ],
     "pergunta": "Os crátons, subdivididos em escudos cristalinos e ________________, são caracterizados por serem formações geologicamente __________________. Eles apresentam uma estrutura rígida e resistente composta quase sempre por rochas ígneas e ___________________, posicionando-se em áreas de elevada ________________geológica.\n\nAssinale a alternativa que corretamente preenche as lacunas do texto:",
     "alternativas": [
       "maciços antigos, recentes, metamórficas, instabilidade.",
@@ -57,8 +71,12 @@
     "id": 4,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "relevo brasileiro",
+      "estrutura geológica",
+      "formação do relevo"
+    ],
     "texto_apoio": "\"As altitudes do relevo brasileiro são, em geral, modestas. O ponto mais alto do país não ultrapassa os 3 mil metros: o pico da Neblina (2993m), perto da fronteira do Amazonas com a Venezuela. Cerca de 41% do território nacional tem, no máximo, 200m de altitude; 78% tem até 500m; e 92,7% até 900m de altitude”.",
     "fonte_apoio": "(Adaptado de: VESENTINI, J. W. Brasil: sociedade e espaço. Geografia do Brasil. 32º edição. São Paulo: Editora Ática, 2006. p.252).",
     "pergunta": "(MUNDO EDUCAÇÃO 2022)\n\nAs características descritas acima indicam que o relevo brasileiro é:",
@@ -77,8 +95,13 @@
     "id": 5,
     "instituicao": "ENEM",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estruturas geológicas",
+      "recursos minerais",
+      "bacias sedimentares",
+      "escudos cristalinos"
+    ],
     "texto_apoio": "“Escudos antigos ou maciços cristalinos são blocos imensos de rochas antigas. Estes escudos são constituídos por rochas cristalinas (magmático-plutônicas), formadas em eras pré-cambrianas, ou por rochas metamórficas (material sedimentar) do Paleozoico. São resistentes, estáveis, porém bastante desgastadas. Correspondem a 36% da área territorial e dividem-se em duas grandes porções: O Escudo das Guianas (norte da Planície Amazônica) e o Escudo Brasileiro (porção centro-oriental brasileira).”",
     "fonte_apoio": "Disponível em http//ambientes.ambientebrasil.com br. Acesso em: 28 jun 2015.",
     "pergunta": "As estruturas geológicas indicadas no texto são importantes economicamente para o Brasil por concentrarem",
@@ -97,8 +120,13 @@
     "id": 6,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo brasileiro",
+      "geologia",
+      "províncias geológicas",
+      "escudos cristalinos"
+    ],
     "pergunta": "(UFRS) O território brasileiro possui grande diversidade de formas de relevo, como serras, escarpas, planaltos, planícies, depressões e outras.\n\nNa coluna 1, são citadas cinco formas de relevo brasileiro; na coluna 2, são apresentadas características de três delas. Associe-as adequadamente.\n\nA sequência correta de preenchimento dos parênteses, de cima para baixo, é",
     "alternativas": [
       "3 - 5 - 4.",
@@ -115,8 +143,12 @@
     "id": 7,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "províncias geológicas",
+      "relevo brasileiro",
+      "geologia"
+    ],
     "pergunta": "Os diferentes tipos de províncias geológicas revelam as diferentes feições do relevo enquanto expressões das diferentes temporalidades que marcam o passado geológico do planeta Terra. Por seus processos formativos, as estruturas geológicas com condições mais favoráveis à formação de combustíveis fósseis são:",
     "alternativas": [
       "as bacias sedimentares.",
@@ -133,8 +165,13 @@
     "id": 8,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Planalto Central",
+      "solos brasileiros",
+      "Cerrado",
+      "geologia"
+    ],
     "imagem_apoio": "2ano/img/205/s5q8.png",
     "pergunta": "(ENEM) Um professor, ao realizar uma viagem pelo Planalto Central do Brasil, fotografou a imagem a seguir e, ao chegar à sua cidade, apresentou a foto aos alunos durante uma aula de Geografia. Ele propôs um desafio: pediu a cinco alunos que denominassem a forma de relevo e a caracterizassem. Aline, Thiago, Higor, Pércia e Leo foram os alunos escolhidos; aquele que venceu o desafio foi:",
     "alternativas": [
@@ -152,8 +189,13 @@
     "id": 9,
     "instituicao": "UFU",
     "ano": "2001",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geologia brasileira",
+      "relevo",
+      "escudos cristalinos",
+      "bacias sedimentares"
+    ],
     "pergunta": "- Sobre a geologia e o relevo brasileiro, podemos afirmar que, EXCETO",
     "alternativas": [
       "Nas grandes bacias sedimentares predominam formas de planícies e planaltos sedimentares como chapadas e cuestas..",
@@ -169,8 +211,13 @@
     "id": 10,
     "instituicao": "FGV-SP",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "estruturas geológicas",
+      "recursos minerais",
+      "mapa geológico",
+      "bacias sedimentares"
+    ],
     "imagem_apoio": "2ano/img/205/s5q10.png",
     "pergunta": "Considere os mapas a seguir.\n\nOs mapas apresentam as grandes estruturas geológicas brasileiras.\n\nSobre eles, é correto afirmar que temos,",
     "alternativas": [

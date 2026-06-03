@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UPE",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "estruturas geológicas",
+      "agentes endógenos"
+    ],
     "imagem_apoio": "1ano/img/118/p18q1.png",
     "pergunta": "As feições de relevo, observadas na parte emersa da crosta terrestre, denunciam, muitas vezes, aspectos relacionados à estrutura geológica e às condições climáticas atuais e antigas. Com relação a esse tema, observe a figura a seguir:\n\nSe alguém perguntasse “Que tipo de rocha contribui para que se desenvolvam essas feições de relevo? ”, a resposta CORRETA seria",
     "alternativas": [
@@ -22,8 +26,12 @@
     "id": 2,
     "instituicao": "UDESC",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ciclo das rochas",
+      "rochas",
+      "tipos de rocha"
+    ],
     "pergunta": "O Ciclo das Rochas é uma teia complexa de transformações da matéria, estas, às vezes, desde muito rápidas até extremamente lentas, que, em conjunto, no contexto da Tectônica de Placas, determinam modificações no reino mineral. O Ciclo das Rochas constitui um modo sintético de representar as inúmeras possibilidades pelas quais, ao longo do Tempo Geológico, um tipo de rocha pode transformar-se em outro\n\nFonte: Carneiro C. D. R., Gonçalves P. W., Lopes O. R. 2009. O Ciclo das Rochas na Natureza. Terra e Didática, 5(1):50-62. Disponível em http://www.ige.unicamp.br /terraedidatica/\n\nAnalise as proposições a respeito do Ciclo das Rochas:\n\nI. A rocha, quando passa por processos intempéricos, forma camadas de materiais desagregados onde se formam os solos, processo que recebe o nome de pedogênese.\n\nII. As rochas sedimentares são formadas pela deposição e diagênese de sedimentos provenientes de outras rochas ou de materiais de origem biogênica ou, ainda, da precipitação química de minerais.\n\nIII. As rochas metamórficas têm sua origem no resfriamento do magma, nas quais o tamanho dos cristais, geralmente, é proporcional ao tempo de resfriamento do magma: quanto mais lenta a cristalização de um magma, maiores os tamanhos dos cristais formados.\n\nIV. O calor, a umidade, os organismos e o relevo determinam o grau de atuação de cada um dos três processos básicos de intemperismo: físico, químico e biológico.\n\nAssinale a alternativa correta:",
     "alternativas": [
       "Somente as afirmativas I, II e III são verdadeiras.",
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "estruturas geológicas",
+      "relevo",
+      "províncias geológicas"
+    ],
     "pergunta": "Os diferentes tipos de províncias geológicas revelam as diferentes feições do relevo enquanto expressões das diferentes temporalidades que marcam o passado geológico do planeta Terra. Por seus processos formativos, as estruturas geológicas com condições mais favoráveis à formação de combustíveis fósseis são:",
     "alternativas": [
       "as bacias sedimentares.",
@@ -58,8 +70,12 @@
     "id": 4,
     "instituicao": "UPE",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo costeiro",
+      "relevo",
+      "erosão marinha"
+    ],
     "imagem_apoio": "1ano/img/118/p18q4.png",
     "pergunta": "As áreas costeiras, em diversas partes do mundo, apresentam variadas formas de relevo. Umas são de caráter erosivo, enquanto outras são resultantes da deposição e, às vezes, decorrem das ações dos movimentos crustais. Na fotografia abaixo, observa-se uma feição de relevo típica de alguns ambientes costeiros.\n\nAs características geomorfológicas vistas na paisagem permitem concluir que esse relevo é do tipo",
     "alternativas": [
@@ -77,8 +93,12 @@
     "id": 5,
     "instituicao": "IFRR",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "energia renovável",
+      "fontes alternativas de energia",
+      "recursos energéticos"
+    ],
     "texto_apoio": "O aquecimento do planeta é uma realidade e, se nada for feito, ele trará consequências catastróficas para a biodiversidade e para o ser humano. É por isso que o Greenpeace trabalha para pressionar governos e empresas a diminuir as emissões de gases de efeito estufa o mais rápido possível. Por isso pedimos que eles deixem de lado o carvão e o petróleo e invistam em fontes renováveis de energia, conservem suas florestas, repensem práticas agropecuárias, invistam em mobilidade e protejam seus oceanos. Essa é uma estratégia não só para reduzir as emissões de gases de efeito estufa, mas para consolidar um crescimento econômico baseado em tecnologias que não prejudicam o planeta. Disponível em: http://www.greenpeace.org/brasil /pt/O-que-fazemos/Clima-eEnergia/?gclid=CNa91M-9tsYCFUQvgQodUYwDXA",
     "pergunta": "São exemplos de fontes de energia renováveis:",
     "alternativas": [
@@ -96,8 +116,12 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "energia renovável",
+      "fontes alternativas de energia",
+      "recursos energéticos"
+    ],
     "pergunta": "Suponha que você seja um consultor e foi contratado para assessorar a implantação de uma matriz energética em um pequeno país com as seguintes características: região plana, chuvosa e com ventos constantes, dispondo de poucos recursos hídricos e sem reservatórios de combustíveis fósseis.\n\nDe acordo com as características desse país, a matriz energética de menor impacto e risco ambientais é a baseada na energia",
     "alternativas": [
       "dos biocombustíveis, pois tem menos impacto ambiental e maior disponibilidade.",
@@ -114,8 +138,12 @@
     "id": 7,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "solos",
+      "pedologia",
+      "recursos naturais"
+    ],
     "pergunta": "O solo é um componente terrestre essencial para os seres vivos e também para a realização das atividades econômicas, de forma a ser considerado um importante recurso natural. Em termos de composição geomorfológica, pode-se afirmar que os solos",
     "alternativas": [
       "constituem-se em ambientes de erosão e acúmulo de material sedimentar",
@@ -132,8 +160,12 @@
     "id": 8,
     "instituicao": "UPE",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "degradação do solo",
+      "erosão"
+    ],
     "imagem_apoio": "1ano/img/118/p18q8.png",
     "pergunta": "Observa-se, na figura a seguir, um problema ambiental que decorre, indiretamente e sobretudo, das ações antrópicas sobre a natureza. Examine a fotografia e depois assinale a alternativa que apresenta esse problema.",
     "alternativas": [
@@ -151,8 +183,12 @@
     "id": 9,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "recursos energéticos",
+      "combustíveis fósseis",
+      "energia renovável"
+    ],
     "pergunta": "(PUC-RS) Para resolver a questão, leia o texto a seguir, sobre fontes de energia, e selecione as palavras/expressões que preenchem correta e coerentemente as lacunas.\n\nO _________ foi importante fonte de energia para a Primeira Revolução Industrial. Atualmente as maiores reservas estão localizadas no hemisfério _______. É um dos principais responsáveis pela __________, pois sua queima libera grande quantidade de óxido de enxofre na atmosfera.",
     "alternativas": [
       "carvão mineral – norte – chuva ácida.",
@@ -169,8 +205,12 @@
     "id": 10,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "petróleo",
+      "recursos energéticos",
+      "estruturas geológicas"
+    ],
     "pergunta": "As reservas petrolíferas estão relacionadas a um tipo de formação geológica. Indique, corretamente, esse tipo de formação.",
     "alternativas": [
       "Escudos cristalinos.",

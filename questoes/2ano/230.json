@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "ENEM",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "urbanização e hidrologia",
+      "impermeabilização do solo",
+      "enchentes",
+      "alagamentos"
+    ],
     "imagem_apoio": "2ano/img/230/s30q1.png",
     "pergunta": "A dinâmica hidrológica expressa no gráfico demonstra que o processo de urbanização promove a",
     "alternativas": [
@@ -22,8 +27,13 @@
     "id": 2,
     "instituicao": "PUC-RS",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ilha de calor",
+      "clima urbano",
+      "temperatura nas cidades",
+      "urbanização"
+    ],
     "pergunta": "Sobre as causas e consequências da chamada “ilha de calor”, fenômeno típico das grandes cidades que colabora para o aumento dos índices de poluição urbana, afirma-se:\n\nI. Ocorre uma elevação das temperaturas médias nas zonas periféricas da mancha urbana em relação às zonas centrais.\n\nII. A substituição da vegetação – original ou plantada – por grande quantidade de prédios, ruas, avenidas e uma série de outras construções provoca significativo aumento da irradiação de calor para a atmosfera.\n\nIII. Nas zonas densamente urbanizadas, é grande a concentração de gases e materiais particulados, que têm a capacidade de amenizar a retenção de calor.\n\nIV. A elevação da temperatura nas áreas centrais facilita a ascensão do ar quando não há inversão térmica, formando uma zona de baixa pressão para onde os ventos são direcionados, pelo menos durante o dia, elevando a concentração de poluentes.\n\nEstão corretas apenas as afirmativas:",
     "alternativas": [
       "I e II.",
@@ -40,8 +50,13 @@
     "id": 3,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "questão ambiental urbana",
+      "memes",
+      "consumo consciente",
+      "reciclagem"
+    ],
     "imagem_apoio": "2ano/img/230/s30q3.png",
     "pergunta": "(CATÓLICA-SC 2016) Analise a imagem a seguir:\n\nPopularizados pelas redes sociais, os memes divertem e, muitas vezes, geram reflexões sobre os mais diversos temas. O meme acima, por exemplo, permite a discussão sobre um grave problema que atinge as áreas urbanas: as inundações.\n\nEntre as ações humanas geradoras desse problema, pode-se citar:",
     "alternativas": [
@@ -59,8 +74,12 @@
     "id": 4,
     "instituicao": "FUVEST",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questão ambiental",
+      "impacto urbano",
+      "sustentabilidade"
+    ],
     "texto_apoio": "“O efeito estufa e o lixo são, talvez, as duas manifestações mais contraditórias da vontade de dominação da natureza posta em prática pela racionalidade instrumental e sua tecnociência. Com o objetivo de aumentar a produtividade, que na prática significa submeter os tempos de cada ente, seja ele mineral, vegetal ou animal, a um tempo da concorrência e da acumulação de capital, esqueceu-se de que todo trabalho dissipa energia sob forma de calor (efeito estufa) e que a desagregação da matéria, ao longo do tempo, torna-a irreversível (lixo)”.",
     "fonte_apoio": "Carlos W. Porto-Gonçalves. A Globalização da Natureza e a Natureza da Globalização. Rio de Janeiro: Civilização Brasileira, 2006. Adaptado.",
     "pergunta": "Conforme o excerto acima, é correto afirmar:",
@@ -79,8 +98,13 @@
     "id": 5,
     "instituicao": "FUVEST",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questão ambiental",
+      "Ab'Saber",
+      "impacto urbano",
+      "cidade e natureza"
+    ],
     "texto_apoio": "“Por muitos anos, as várzeas paulistanas foram uma espécie de quintal geral dos bairros encaracpitados nas colinas. Serviram de pastos para os animais das antigas carroças que povoaram as ruas da cidade. Serviram de terreno baldio para o esporte dos humildes, tendo assistido a uma proliferação incrível de campos de futebol. Durante as cheias, tais campos improvisados ficam com o nível das águas até o meio das traves de gol”.",
     "fonte_apoio": "Aziz Ab’Saber, 1956.",
     "imagem_apoio": "2ano/img/230/s30q5.png",
@@ -100,8 +124,12 @@
     "id": 6,
     "instituicao": "MULTIVIX",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "questão ambiental",
+      "manchete de jornal",
+      "problema ambiental"
+    ],
     "texto_apoio": "“A produção Mundial de lixo é um dos grandes problemas ambientais contemporâneos. Segundo a Organização das Nações Unidas (ONU): “99% dos produtos que compramos são jogados fora dentro de seis meses. Para acomodar os 7,6 bilhões de moradores do mundo, suprir o uso de recursos e absorver o lixo gerado, seria necessário 70% de outro planeta Terra”.",
     "fonte_apoio": "Fonte: https://nacoesunidas.org /humanidade-produz-mais-de-2-bilhoes- de-toneladas-de-lixo-porano-diz-onu-em-dia-mundial/amp/. Acesso em: 01 out. 2018.",
     "imagem_apoio": "2ano/img/230/s30q6.png",
@@ -121,8 +149,13 @@
     "id": 7,
     "instituicao": "FUVEST",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "inversão térmica",
+      "poluição do ar",
+      "smog",
+      "clima urbano"
+    ],
     "imagem_apoio": "2ano/img/230/s30q7.png",
     "pergunta": "Em algumas cidades, pode-se observar no horizonte, em certos dias, a olho nu, uma camada de cor marrom. Essa condição afeta a saúde, principalmente, de crianças e de idosos, provocando, entre outras, doenças respiratórias e cardiovasculares.\n\nAs figuras e o texto acima referem-se a um processo de formação de um fenômeno climático que ocorre, por exemplo, na cidade de São Paulo. Trata-se de",
     "alternativas": [
@@ -140,8 +173,13 @@
     "id": 8,
     "instituicao": "ENEM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "lixão",
+      "resíduos sólidos",
+      "gestão de resíduos",
+      "questão ambiental urbana"
+    ],
     "fonte_apoio": "RICARDO, B.; CANPANILLI, M. Almanaque Brasil Socioambiental 2008. São Paulo, Instituto Socioambiental, 2007.",
     "pergunta": "Os lixões são o pior tipo de disposição final dos resíduos sólidos de uma cidade, representando um grave problema ambiental e de saúde pública. Nesses locais, o lixo é jogado diretamente no solo e a céu aberto, sem nenhuma norma de controle, o que causa, entre outros problemas, a contaminação do solo e das águas pelo chorume (líquido escuro com alta carga poluidora, proveniente da decomposição da matéria orgânica presente no lixo).\n\nConsidere um município que deposita os resíduos sólidos produzidos por sua população em um lixão. Esse procedimento é considerado um problema de saúde pública porque os lixões",
     "alternativas": [
@@ -159,8 +197,13 @@
     "id": 9,
     "instituicao": "FGV",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "ciclo hidrológico",
+      "impacto ambiental",
+      "urbanização",
+      "diagrama"
+    ],
     "imagem_apoio": "2ano/img/230/s30q9.png",
     "pergunta": "Considere a figura a seguir:\n\nSobre a figura, é correto afirmar que representa, de forma esquemática, o fenômeno denominado:",
     "alternativas": [
@@ -178,8 +221,13 @@
     "id": 10,
     "instituicao": "ENEM",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "chuva ácida",
+      "poluição atmosférica",
+      "pH",
+      "questão ambiental"
+    ],
     "imagem_apoio": "2ano/img/230/s30q10.png",
     "pergunta": "Chuva ácida é o termo utilizado para designar precipitações com valores de pH inferiores a 5,6. As principais substâncias que contribuem para esse processo são os óxidos de nitrogênio e de enxofre provenientes da queima de combustíveis fósseis e, também, de fontes naturais. Os problemas causados pela chuva ácida ultrapassam fronteiras políticas regionais e nacionais.\n\nA amplitude geográfica dos efeitos da chuva ácida está relacionada principalmente com:",
     "alternativas": [

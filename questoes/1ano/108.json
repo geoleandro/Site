@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "estrutura interna da Terra",
+      "camadas da Terra",
+      "crosta terrestre"
+    ],
     "imagem_apoio": "1ano/img/108/p8q1.png",
     "pergunta": "(UTFPR) Verifique a figura a seguir e identifique as camadas da Terra que ela representa e, na sequência, identifique qual das alternativas traz a associação correta dessas camadas.",
     "alternativas": [
@@ -22,8 +26,12 @@
     "id": 2,
     "instituicao": "",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "eras geológicas",
+      "tempo geológico",
+      "tabela geológica"
+    ],
     "pergunta": "A primeira coluna indica a sequência correta das Eras Geológicas. Relacione a segunda coluna mostrando os principais eventos que ocorreram em cada período:\n\nA sequência correta está em:",
     "alternativas": [
       "B – D – E – A – C.",
@@ -39,8 +47,12 @@
     "id": 3,
     "instituicao": "UECE",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "estrutura interna da Terra",
+      "camadas da Terra",
+      "litosfera"
+    ],
     "imagem_apoio": "1ano/img/108/p8q3.png",
     "pergunta": "Observe a imagem abaixo e responda:\n\nA parte sólida e a parte com material em estado de fusão da Terra correspondem, respectivamente, à:",
     "alternativas": [
@@ -58,8 +70,12 @@
     "id": 4,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura interna da Terra",
+      "camadas da Terra",
+      "núcleo"
+    ],
     "imagem_apoio": "1ano/img/108/p8q4.png",
     "pergunta": "(UEM-PR) Com base em seus conhecimentos e na imagem abaixo sobre as camadas da Terra é possível afirmar que:",
     "alternativas": [
@@ -76,8 +92,12 @@
     "id": 5,
     "instituicao": "",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "eras geológicas",
+      "deriva continental",
+      "Pangeia"
+    ],
     "pergunta": "Foi na mesma era, a ________________, que ocorreu o surgimento dos atuais continentes e da espécie humana, porém em períodos diferentes. A fragmentação das terras emersas, tais quais nós as conhecemos agora, formaram-se no período _______________, há 71 milhões de anos, enquanto os primeiros humanos surgiram somente no ______________, há cerca de 1 milhão de anos.\n\nA alternativa que apresenta os termos que completam corretamente as lacunas do texto é:",
     "alternativas": [
       "Paleozoica, Primitivo e Cambriano.",
@@ -94,8 +114,12 @@
     "id": 6,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "estrutura interna da Terra",
+      "camadas da Terra",
+      "núcleo"
+    ],
     "imagem_apoio": "1ano/img/108/p8q6.png",
     "pergunta": "Observe e responda:\n\nPor que a imagem acima é incoerente?",
     "alternativas": [
@@ -113,8 +137,12 @@
     "id": 7,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura interna da Terra",
+      "camadas da Terra",
+      "litosfera"
+    ],
     "pergunta": "(UFPE) – Leia as alternativas abaixa e assinale a opção correta:\n\n( ) O estudo das camadas internas da Terra não pode ser realizado por processos de investigações diretas, tendo-se que recorrer a métodos indiretos de observação, o que dificulta o seu conhecimento.\n\n( ) os especialistas dispõem de aparelhos muito sensíveis, chamados sismógrafos, capazes de registrar com grande precisão as vibrações da Terra, medindo a intensidade e localizando a origem destas vibrações.\n\n( ) O estudo detalhado de sismogramas, iniciado desde os primeiros anos do século XX, demonstra que o globo se divide, da superfície para o interior, nas seguintes unidades principais: crosta, manto e núcleo.\n\n( ) A crosta terrestre é a camada mais externa da Terra e encontra-se consolidada. Nela os elementos químicos distribuem-se de forma homogênea, havendo pequenas variações em peso e volume.\n\n( ) A Terra não apresenta a mesma densidade em todas as camadas, isto é, a densidade diminui de acordo com a profundidade.\n\nA sequência correta é:",
     "alternativas": [
       "VFVFF.",
@@ -131,8 +159,12 @@
     "id": 8,
     "instituicao": "UNESP",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura interna da Terra",
+      "biosfera",
+      "litosfera"
+    ],
     "imagem_apoio": "1ano/img/108/p8q8.png",
     "pergunta": "A figura apresenta os componentes do sistema Terra e suas intrínsecas interações e combinações.",
     "alternativas": [
@@ -150,8 +182,12 @@
     "id": 9,
     "instituicao": "UNICENTRO",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura interna da Terra",
+      "camadas da Terra",
+      "litosfera"
+    ],
     "fonte_apoio": "Fonte: https://www.redecol.com.br/2011/03/ terra-nao-e-redonda- e-um-geoide-de.html",
     "imagem_apoio": "1ano/img/108/p8q9.png",
     "pergunta": "Observe a figura a seguir.\n\nCom base na figura e nos conhecimentos sobre as estruturas geológicas da Terra, considere as afirmativas a seguir.\n\nI. Devido à força gravitacional, os materiais sólidos mais pesados se concentraram na superfície, formando a crosta terrestre, e os menos pesados no núcleo e no manto, onde são superaquecidos pelas elevadas temperaturas.\n\nII. O planeta Terra não é um círculo perfeito, a sua superfície é irregular, pois as forças gravitacionais interagem com os elementos químicos, materiais rochosos e superfícies líquidas com intensidades diferentes e provocam deformações na crosta.\n\nIII. A superfície da Terra é de aproximadamente 500 milhões de km2, formada por quatro grandes camadas denominadas atmosfera, litosfera, hidrosfera e biosfera; nesta última, as diferentes formas de vida interagem entre si e em seus ambientes.\n\nIV. A litosfera é a camada externa da Terra, formada basicamente de rochas e minerais. Apesar de sua fina espessura, é dinâmica por sofrer ações exógenas, que resultam em sedimentação, erosão e intemperismo, e endógenas, resultando no tectonismo e nas atividades vulcânicas.\n\nAssinale a alternativa correta",
@@ -170,8 +206,12 @@
     "id": 10,
     "instituicao": "IFRS",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura interna da Terra",
+      "crosta terrestre",
+      "camadas da Terra"
+    ],
     "texto_apoio": "“A Terra é composta, internamente, por camadas (estratos) diferenciadas entre si por suas características. [...] Crosta (Crust.) é a camada mais fina da Terra, [...] e é formada basicamente por rochas ígneas, contendo proporções significativas de rochas sedimentares e metamórficas, logo estas diferenças implicam em uma camada heterogênea.”",
     "fonte_apoio": "Fonte: SUERTEGARAY, Dirce Maria Antunes (Org.). Terra: feições ilustradas. Porto Alegre: UFRGS, 2003. pág. 15.",
     "pergunta": "Quanto à estrutura interna do planeta, é correto afirmar que\n\nI - a crosta terrestre possui espessura variada, apresentando uma média de 7 Km na crosta oceânica e média de 35 Km de espessura na crosta continental.\n\nII - a crosta terrestre está dividida em duas partes: a crosta continental, composta por rochas graníticas e metamórficas com maior densidade e a crosta oceânica, que apresenta menor densidade, em razão de sua composição basáltica.\n\nIII - a crosta terrestre juntamente com a parte superior do manto compõem a camada chamada de litosfera.\n\nIV - a distinção entre a base da crosta e a parte superior que compõe a litosfera é evidenciada pela descontinuidade de Mohorovicic (“Moho”), representada pela brusca mudança de velocidade das ondas sísmicas.\n\nEstão corretas apenas",

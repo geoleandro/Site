@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "ENEM",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "bônus demográfico",
+      "estrutura etária",
+      "crescimento econômico",
+      "demografia"
+    ],
     "fonte_apoio": "GOIS, A. O Globo, 5 abr. 2015 (adaptado).",
     "pergunta": "O bônus demográfico é caracterizado pelo período em que, por causa da redução do número de filhos por mulher, a estrutura populacional fica favorável ao crescimento econômico. Isso acontece porque há proporcionalmente menos crianças na população, e o percentual de idosos ainda não é alto.\n\nA ação estatal que contribui para o aproveitamento do bônus demográfico é o estímulo à:",
     "alternativas": [
@@ -22,8 +27,13 @@
     "id": 2,
     "instituicao": "ENEM",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "transição demográfica",
+      "natalidade",
+      "Europa",
+      "fecundidade"
+    ],
     "texto_apoio": "“Os países industriais adotaram uma concepção diferente das relações familiares e do lugar da fecundidade na vida familiar e social. A preocupação de garantir uma transmissão integral das vantagens econômicas e sociais adquiridas tem como resultado uma ação voluntária de limitação do número de nascimentos”.",
     "fonte_apoio": "GEORGE, P. Panorama do mundo atual. São Paulo: Difusão Europeia do Livro, 1968 (adaptado).",
     "pergunta": "Em meados do século XX, o fenômeno social descrito contribuiu para o processo europeu de:",
@@ -42,8 +52,13 @@
     "id": 3,
     "instituicao": "UNESP",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "crescimento populacional",
+      "pirâmide etária",
+      "projeção demográfica",
+      "continentes"
+    ],
     "imagem_apoio": "3ano/img/302/t2q3.png",
     "pergunta": "Analise o gráfico sobre a evolução ocorrida e a perspectiva de crescimento da população mundial no período de 1950 a 2050.\n\nPopulação, 1950-2050\n\nA partir da análise do gráfico, pode-se afirmar que",
     "alternativas": [
@@ -61,8 +76,12 @@
     "id": 4,
     "instituicao": "ENEM",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "envelhecimento populacional",
+      "pirâmide etária",
+      "mercado de trabalho"
+    ],
     "imagem_apoio": "3ano/img/302/t2q4.png",
     "pergunta": "Uma consequência socioeconômica para os países que vivenciam o fenômeno demográfico ilustrado é a diminuição da:",
     "alternativas": [
@@ -80,8 +99,12 @@
     "id": 5,
     "instituicao": "FTD",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "PEA",
+      "população economicamente ativa",
+      "estrutura ocupacional"
+    ],
     "imagem_apoio": "3ano/img/302/t2q5.png",
     "pergunta": "Analisando os dados apresentados no gráfico, fica evidente que a população mundial:",
     "alternativas": [
@@ -99,8 +122,13 @@
     "id": 6,
     "instituicao": "UFTM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "transição demográfica",
+      "natalidade",
+      "mortalidade",
+      "crescimento vegetativo"
+    ],
     "imagem_apoio": "3ano/img/302/t2q6.png",
     "pergunta": "Considere o gráfico.\n\nFases da transição demográfica\n\nConsidere as afirmações\n\nI. A primeira fase de transição demográfica é marcada pelo rápido crescimento da população, como consequência da queda da mortalidade e manutenção das elevadas taxas de natalidade.\n\nII. A segunda fase caracteriza-se pela diminuição das taxas de fecundidade, provocando queda da taxa de natalidade mais acentuada que a de mortalidade e diminuindo o ritmo de crescimento da população.\n\nIII. A terceira fase, encontrada em diversos países europeus, é denominada de fase de estabilização demográfica.\n\nIV. O Brasil ainda se encontra na primeira fase da transição demográfica, apesar das melhorias das condições médico-sanitárias.\n\nEstá CORRETO apenas o que se afirma em:",
     "alternativas": [
@@ -118,8 +146,12 @@
     "id": 7,
     "instituicao": "MACKENZIE-SP",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "envelhecimento global",
+      "países em desenvolvimento",
+      "expectativa de vida"
+    ],
     "pergunta": "Hoje, a população idosa no mundo é de aproximadamente 650 milhões de habitantes. Segundo a ONU, a perspectiva para 2050 é de que o mundo tenha 2 bilhões de pessoas com mais de 60 anos.\n\nAssinale a Alternativa que corresponde à CORRETA distribuição demográfica de idosos no planeta, nesse período.",
     "alternativas": [
       "A população idosa terá uma distribuição demográfica homogênea, devido à conquista de recursos na área de saúde, que atingirão a maior parte da população mundial.",
@@ -136,8 +168,13 @@
     "id": 8,
     "instituicao": "FUVEST",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "pirâmide etária",
+      "mortalidade",
+      "natalidade",
+      "projeção demográfica"
+    ],
     "imagem_apoio": "3ano/img/302/t2q8.png",
     "texto_apoio": "O número de mortos é maior do que o número de nascimentos a partir da coluna do ano de 2025 em diante. Isso sugere um envelhecimento da população e uma diminuição da taxa de natalidade em relação à taxa de mortalidade. Nesse caso, a pirâmide etária que melhor representaria essa situação seria uma pirâmide de base estreita com corpo e topo mais largo, indicando uma população com uma proporção maior de pessoas mais velhas em relação aos jovens. Essa forma é típica de uma pirâmide etária de envelhecimento, na qual a população idosa é maior em comparação com a população jovem. Tente resolver sem ver a resposta",
     "pergunta": "O gráfico a seguir apresenta o registro histórico e a projeção do total de mortes e nascimentos em certa região do mundo em dado período:\n\nA partir disso, assinale a pirâmide etária que melhor representa as informações projetadas para o ano de 2050:",
@@ -156,8 +193,13 @@
     "id": 9,
     "instituicao": "URCA",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "teoria reformista",
+      "malthusianismo",
+      "crescimento populacional",
+      "desenvolvimento"
+    ],
     "pergunta": "Ao longo da evolução da humanidade, várias teorias são criadas para explicar fenômenos naturais, e não têm sido diferente quando se estuda a dinâmica sociodemográfica, pois várias teorias têm procurado explicar a relação existente entre crescimento populacional e desenvolvimento econômico.\n\nIdentifique abaixo a assertiva que se enquadra a Teoria Reformista:",
     "alternativas": [
       "O controle da natalidade deve ser efetivada pelo Estado, no sentido de impedir o rápido crescimento demográfico e o surgimento de áreas superpovoadas com altos índices de pobreza, como os que ocorrem no nordeste brasileiro;",
@@ -174,8 +216,12 @@
     "id": 10,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "malthusianismo",
+      "controle da natalidade",
+      "teoria demográfica"
+    ],
     "pergunta": "Thomas R. Malthus defendia a tese de que a população crescia em patamares superiores aos da produção de alimentos, o que causaria graves convulsões sociais em razão do excesso de pessoas no mundo. Como solução para esse problema, Malthus propôs:",
     "alternativas": [
       "a difusão de métodos de controle da natalidade, como medicamentos e acessórios que inibissem a natalidade.",

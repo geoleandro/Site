@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "clima do Brasil",
+      "tipos climáticos",
+      "características climáticas"
+    ],
     "pergunta": "Enumere abaixo de acordo com os tipos climáticos brasileiros e suas características.\n\n1 – Clima Equatorial\n\n2 – Clima Tropical\n\n3 – Clima Subtropical\n\n4 – Clima Semiárido\n\n( ) Predominante no território brasileiro, ocupa a parte central com duas estações bem definidas: uma seca e outra chuvosa.\n\n( ) Localiza-se nas proximidades da linha do Equador. Possui chuvas abundantes o ano todo.\n\n( ) A quantidade de chuva não varia muito ao longo do ano, mas as temperaturas mudam constantemente.\n\n( ) Caracterizado por baixa umidade, pouca chuva e elevadas temperaturas.\n\nAssinale a sequência correta.",
     "alternativas": [
       "1, 3, 4, 2.",
@@ -21,8 +25,13 @@
     "id": 2,
     "instituicao": "",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "clima tropical",
+      "Cerrado",
+      "clima sazonal",
+      "tipos climáticos"
+    ],
     "pergunta": "Abrange os estados de Minas Gerais e Goiás, parte de São Paulo, Mato Grosso do Sul, parte da Bahia, do Maranhão, do Piauí e do Ceará. É um clima quente e semiúmido, com uma estação chuvosa (verão) e outra seca (inverno). Apesar das temperaturas elevadas no verão, o inverno apresenta temperaturas amenas, o que torna a amplitude térmica anual elevada.\n\nO texto se refere ao clima:",
     "alternativas": [
       "Clima tropical.",
@@ -39,8 +48,12 @@
     "id": 3,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "clima do Brasil",
+      "tipos climáticos",
+      "distribuição dos climas"
+    ],
     "pergunta": "Em relação aos tipos de clima no Brasil, marque qual clima abrange uma porção maior do território e melhor caracteriza o país:",
     "alternativas": [
       "– Clima Semiárido.",
@@ -57,8 +70,12 @@
     "id": 4,
     "instituicao": "UFRR",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "clima do Brasil",
+      "diversidade climática",
+      "tipos climáticos"
+    ],
     "pergunta": "O vasto território brasileiro é fortemente marcado pela presença de diferentes tipos climáticos. Embora a nomenclatura e a classificação desses tipos climáticos possam variar em razão de diferentes autores e bibliografias, podemos destacar que os climas presentes na maior parte do interior do Nordeste (i) e na maior parte da região Norte do Brasil (ii), respectivamente, possuem às seguintes características:",
     "alternativas": [
       "Temperaturas amenas e chuvas bem distribuídas durante todo o ano (i); temperaturas elevadas e muita umidade (ii).",
@@ -75,8 +92,13 @@
     "id": 5,
     "instituicao": "UNICAMP",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "neve no Brasil",
+      "clima subtropical",
+      "Santa Catarina",
+      "frente fria"
+    ],
     "pergunta": "Em algumas localidades do Estado de Santa Catarina, costuma-se registrar neve durante o período de inverno, caso de São Joaquim e de outros municípios da região serrana.\n\nQual das alternativas abaixo associa corretamente dois fatores geográficos que favorecem a ocorrência do fenômeno na região indicada?",
     "alternativas": [
       "Altitudes acima de 1.000 metros; latitude entre 23º S e 66° S.",
@@ -92,8 +114,13 @@
     "id": 6,
     "instituicao": "UNESP",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "tipos climáticos",
+      "clima do Brasil",
+      "climograma",
+      "análise climática"
+    ],
     "imagem_apoio": "2ano/img/214/s14q6.png",
     "pergunta": "Leia a descrição de quatro grandes tipos climáticos do Brasil e, em seguida, examine o mapa, que representa a divisão regional do país em grandes tipos climáticos.\n\n1. Chuvas entre 2 000 e 3 000 mm e elevadas temperaturas durante todo o ano, com médias de 26 °C.\n\n2. Regular distribuição das chuvas durante o ano e temperaturas mais amenas, com médias inferiores a 18 °C e esporádica queda de neve.\n\nhuvas escassas e irregulares, com precipitações médias de 500 a 700 mm, e temperaturas elevadas, com médias de 28 °C.\n\n4. Duas estações bem marcantes: uma chuvosa e quente, com 1 200 mm de precipitação e médias térmicas de 24 °C, e outra seca e fria, com 200 mm de chuvas e 17 °C de média térmica.\n\nAssinale a alternativa que contém a correta associação entre a descrição climática e sua área de ocorrência.",
     "alternativas": [
@@ -111,8 +138,13 @@
     "id": 7,
     "instituicao": "FURG",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "clima subtropical",
+      "Sul do Brasil",
+      "frentes frias",
+      "temperatura"
+    ],
     "pergunta": "O Clima subtropical úmido, no sul do país, é caracterizado por invernos relativamente\n\nRigorosos, com a ocorrência esporádica de precipitação de neve em determinadas áreas.\n\nAssinale a alternativa que apresenta os fatores climáticos que influenciam a precipitação de neve em determinadas áreas do sul do país.",
     "alternativas": [
       "Altitude, maritimidade e continentalidade.",
@@ -129,8 +161,13 @@
     "id": 8,
     "instituicao": "FUVEST",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "clima de São Paulo",
+      "estações do ano",
+      "regime de chuvas",
+      "clima tropical"
+    ],
     "texto_apoio": "A questão quer saber sobre a relação entre geada e relevo. Essa ligação está relacionada à influência que a topografia (variação do relevo) exerce sobre a temperatura do ar próximo à superfície terrestre. Em áreas de relevo mais elevado, como montanhas e serras, o ar frio tende a se acumular nas partes mais baixas durante a noite, formando o que é conhecido como inversão térmica. Essa inversão térmica ocorre porque o ar frio é mais denso e tende a descer para áreas mais baixas, enquanto o ar mais quente sobe para regiões mais altas. Durante a noite, quando as temperaturas estão mais baixas, o ar frio que se acumula nas partes baixas do relevo pode resfriar rapidamente, levando à formação de geada. As áreas mais elevadas também estão sujeitas a temperaturas mais baixas devido à maior exposição aos ventos frios e à radiação noturna. Agora ficou mais fácil selecionar a alternativa correta. Tente resolver sem ver a resposta",
     "imagem_apoio": "2ano/img/214/s14q8.png",
     "pergunta": "O estado de São Paulo, por suas características climáticas, apresenta, no outono e no inverno, probabilidade de ocorrência de geada.\n\nCom base em seu conhecimento sobre o estado de São Paulo e os fatores que contribuem para a formação de geadas, é correto inferir que a maior ocorrência de geadas no estado de São Paulo está associada\n\nResposta: Letra A Às maiores altitudes da Serra da Mantiqueira, que contribuem para reduzir a temperatura do ar.",
@@ -149,8 +186,12 @@
     "id": 9,
     "instituicao": "UFMS",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "clima",
+      "condições atmosféricas",
+      "tipos climáticos"
+    ],
     "imagem_apoio": "2ano/img/214/s14q9.png",
     "pergunta": "O clima é o nome que se dá às condições atmosféricas que costumam ocorrer num determinado lugar. Para conhecer o clima de uma região, é necessário estudar as variações do tempo atmosférico da área durante vários anos seguidos, normalmente 30 anos. O Brasil apresenta a seguinte diversidade de climas:\n\nAssinale a alternativa correspondente aos itens 1 e 2 posicionados no mapa.",
     "alternativas": [
@@ -168,8 +209,13 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "climograma",
+      "análise climática",
+      "tipos climáticos",
+      "precipitação"
+    ],
     "imagem_apoio": "2ano/img/214/s14q10.png",
     "pergunta": "(UFU) Observe os diagramas a seguir:\n\nNos climogramas I e II estão representadas as variações de temperatura e pluviosidade de duas regiões brasileiras.\n\nApós analisá-los, assinale a alternativa correta.",
     "alternativas": [

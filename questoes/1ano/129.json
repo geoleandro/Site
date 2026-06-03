@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UFPR",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "tipos climáticos"
+    ],
     "imagem_apoio": "1ano/img/129/p29q1.png",
     "pergunta": "Assinale a alternativa que identifica corretamente:\n\nI. o nome da vegetação que ocupava originalmente as áreas representadas no mapa.\n\nII. um dos fatores responsáveis pela redução dessas áreas na atualidade.\n\nIII. um aspecto que justifica sua importância para a sociedade.",
     "alternativas": [
@@ -22,8 +26,12 @@
     "id": 2,
     "instituicao": "UFSM-RS",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "vegetação tropical",
+      "floresta tropical"
+    ],
     "fonte_apoio": "LUCCI, E. A.; MENDONÇA, C.; BRANCO, A. L. Geografia Geral e do Brasil – ensino médio. São Paulo: Saraiva, 2005. p. 326.",
     "imagem_apoio": "1ano/img/129/p29q2.png",
     "pergunta": "Observe a figura:\n\nEm relação ao perfil da vegetação mostrado na figura, é CORRETO afirmar que caracteriza o bioma de formação vegetal do tipo:",
@@ -42,8 +50,12 @@
     "id": 3,
     "instituicao": "ENEM",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "biomas mundiais",
+      "floresta tropical",
+      "ciclo hidrológico"
+    ],
     "texto_apoio": "“As florestas tropicais estão entre os maiores, mais diversos e complexos biomas do planeta. Novos estudos sugerem que elas sejam potentes reguladores do clima, ao provocarem um fluxo de umidade para o interior dos continentes, fazendo com que essas áreas de floresta não sofram variações extremas de temperatura e tenham umidade suficiente para promover a vida. Um fluxo puramente físico de umidade do oceano para o continente, em locais onde não há florestas, alcança poucas centenas de quilômetros. Verifica-se, porém, que as chuvas sobre florestas nativas não dependem da proximidade do oceano. Esta evidência aponta para a existência de uma poderosa \"bomba biótica de umidade\" em lugares como, por exemplo, a bacia amazônica. Devido à grande e densa área de folhas, as quais são evaporadores otimizados, essa \"bomba\" consegue devolver rapidamente a água para o ar, mantendo ciclos de evaporação e condensação que fazem a umidade chegar a milhares de quilômetros no interior do continente.”",
     "fonte_apoio": "A. D. Nobre. Almanaque Brasil Socioambiental. Instituto Socioambiental, 2008, p. 368-9 (com adaptações).",
     "pergunta": "As florestas crescem onde chove, ou chove onde crescem as florestas? De acordo com o texto,",
@@ -62,8 +74,12 @@
     "id": 4,
     "instituicao": "UFRN",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "solos"
+    ],
     "fonte_apoio": "Adaptado de MAGNOLI, Demétrio; ARAÚJO, Regina. Projeto de ensino de geografia. Geografia geral. São Paulo: Moderna, 2000. p. 63. A área hachurada em destaque no mapa, corresponde ao bioma",
     "imagem_apoio": "1ano/img/129/p29q4.png",
     "pergunta": "Os biomas são definidos por uma rede de interação entre o solo, a vida animal e vegetal e o clima. O mapa a seguir apresenta a espacialização dos biomas existentes no mundo.\n\nA área hachurada em destaque no mapa, corresponde ao bioma",
@@ -81,8 +97,12 @@
     "id": 5,
     "instituicao": "ENEM",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "floresta tropical",
+      "biodiversidade"
+    ],
     "pergunta": "As florestas tropicais úmidas contribuem muito para a manutenção da vida no planeta, por meio do chamado sequestro de carbono atmosférico. Resultados de observações sucessivas, nas últimas décadas, indicam que a floresta amazônica é capaz de absorver até 300 milhões de toneladas de carbono por ano. Conclui-se, portanto, que as florestas exercem importante papel no controle.",
     "alternativas": [
       "das chuvas ácidas, que decorrem da liberação, na atmosfera, do dióxido de carbono resultante dos desmatamentos por queimadas.",
@@ -99,8 +119,12 @@
     "id": 6,
     "instituicao": "UCS",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "biomas mundiais",
+      "floresta tropical",
+      "vegetação"
+    ],
     "texto_apoio": "“Um bioma terrestre se caracteriza por localizar-se em regiões quentes e úmidas, baixas latitudes, com vegetação higrófila, latifoliada e heterogênea. Fazem parte desse bioma espécies vegetais de grande e médio porte, como o mogno, o jacarandá, a castanheira, o cedro, a imbuia e a peroba, além de palmáceas, arbustos, briófitas e bromélias.”",
     "pergunta": "A formação vegetal que compõe o bioma acima é denominada floresta.",
     "alternativas": [
@@ -118,8 +142,12 @@
     "id": 7,
     "instituicao": "PUC-MG",
     "ano": "2004",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "precipitação",
+      "vegetação"
+    ],
     "imagem_apoio": "1ano/img/129/p29q7.png",
     "pergunta": "Observe o diagrama a seguir. Ele representa a relação da precipitação com a distribuição dos biomas.\n\nConsiderando as observações a partir do diagrama, NÃO se pode afirmar que:",
     "alternativas": [
@@ -136,8 +164,12 @@
     "id": 8,
     "instituicao": "UNIOESTE-PR",
     "ano": "2002",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biosfera",
+      "biomas mundiais",
+      "biodiversidade"
+    ],
     "texto_apoio": "\"A união de todos os espaços onde há vida na Terra forma uma tênue cobertura de processos vitais em interação: a biosfera. Essa complexa rede de interdependências se expressa em grandes conjuntos de comunidades terrestres e aquáticas\".",
     "fonte_apoio": "(CONTI, José B.; FURLAN, Sueli A. Geoecologia: o clima, os solos e a biota. In: ROSS, Jurandyr L. S. (org.). Geografia do Brasil. São Paulo: EDUSP, 1995, p. 110).",
     "pergunta": "No que se refere à biosfera, assinale a alternativa INCORRETA.",
@@ -156,8 +188,12 @@
     "id": 9,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "biomas mundiais",
+      "modificações ambientais",
+      "questões ambientais"
+    ],
     "imagem_apoio": "1ano/img/129/p29q9.png",
     "pergunta": "(UFJF-MG) O esquema abaixo representa modificações ambientais ocorridas durante os últimos 20 000 anos em uma região de montanha. Observe as alterações ambientais.\n\nCom relação às modificações é CORRETO afirmar:",
     "alternativas": [
@@ -175,8 +211,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "savana",
+      "vegetação"
+    ],
     "pergunta": "(UFMG) Todas as afirmativas sobre as savanas estão corretas, EXCETO:",
     "alternativas": [
       "A ﬂora e a fauna das savanas estão submetidas à alternância de seca e chuva mais do que a de calor e frio.",

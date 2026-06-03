@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "IFPE",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "urbanização",
+      "êxodo rural",
+      "migração campo-cidade",
+      "crescimento urbano"
+    ],
     "pergunta": "É o processo através do qual ocorre a transferência da população do campo para as cidades, tornando-as mais populosas que as áreas rurais. É associado, de forma geral, ao processo de industrialização e, no Brasil, ao longo do século XX, ocorreu de forma rápida e, na maioria das vezes, sem planejamento, o que tem provocado diversos problemas relacionados à falta de infraestrutura. Qual processo foi descrito?",
     "alternativas": [
       "Êxodo urbano.",
@@ -21,8 +26,13 @@
     "id": 2,
     "instituicao": "IFMT",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "urbanização brasileira",
+      "Segunda Guerra Mundial",
+      "industrialização",
+      "êxodo rural"
+    ],
     "pergunta": "No Brasil, o processo de urbanização deslanchou após a Segunda Guerra Mundial, como resultado da modernização econômica e do grande desenvolvimento industrial brasileiro, ocorrido a partir da década de 1950. Sobre a urbanização brasileira, marque a alternativa INCORRETA.",
     "alternativas": [
       "O processo de urbanização brasileira apoiou-se essencialmente no êxodo rural, que envolve dois condicionantes interligados: a repulsa à força de trabalho do campo e a atração da força de trabalho para a cidade.",
@@ -39,8 +49,13 @@
     "id": 3,
     "instituicao": "UEA AM",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "rede urbana",
+      "mapa",
+      "conformação urbana",
+      "hierarquia das cidades"
+    ],
     "imagem_apoio": "2ano/img/231/s31q3.png",
     "pergunta": "Analise o mapa.\n\nO mapa revela a conformação de uma rede urbana",
     "alternativas": [
@@ -58,8 +73,12 @@
     "id": 4,
     "instituicao": "FMP",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "urbanização",
+      "metropolização",
+      "problemas urbanos"
+    ],
     "texto_apoio": "Para quem é real a rede urbana? “Na grande cidade, há cidadãos de diversas ordens ou classes, desde o que, farto de recursos, pode utilizar a metrópole toda, até o que, por falta de meios, somente a utiliza parcialmente, como se fosse uma pequena cidade, uma cidade local. A rede urbana, o sistema de cidades, também tem significados diversos segundo a posição financeira do indivíduo. Há, num extremo, os que podem utilizar todos os recursos aí presentes (...). Na outra extremidade, há os que nem podem levar ao mercado o que produzem, que desconhecem o destino que vai ter o resultado do seu próprio trabalho, os que, pobres de recursos, são prisioneiros do lugar, isto é, dos preços e das carências locais”.)",
     "fonte_apoio": "SANTOS, Milton. O espaço do cidadão. São Paulo: Nobel, 1987. p.112.",
     "pergunta": "",
@@ -78,8 +97,13 @@
     "id": 5,
     "instituicao": "UNICAMP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "urbanização",
+      "crescimento urbano",
+      "gráfico demográfico",
+      "dados urbanos"
+    ],
     "fonte_apoio": "(Fonte: Déficit Habitacional no Brasil, 2015. Belo Horizonte: Fundação João Pinheiro, 2018.)",
     "imagem_apoio": "2ano/img/231/s31q5.png",
     "pergunta": "Com base em seus conhecimentos e nos dados do gráfico, assinale a alternativa correta.\n\nAlternativas",
@@ -97,8 +121,13 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "metropolização",
+      "gentrificação",
+      "segregação urbana",
+      "especulação imobiliária"
+    ],
     "texto_apoio": "“A vida das pessoas se modifica com a mesma rapidez com que se reproduz a cidade. O lugar da festa, do encontro quase desaparecem; o número de brincadeiras infantis nas ruas diminui — as crianças quase não são vistas; os pedaços da cidade são vendidos, no mercado, como mercadorias; árvores são destruídas, praças transformadas em concreto. Por outro lado, os habitantes parecem perder na cidade suas próprias referências. A imagem de uma grande cidade hoje é tão mutante que se assemelha à de um grande guindaste, aliás, a presença maciça destes, das britadeiras, das betoneiras nos dão o limite do processo de transformação diária ao qual está submetida a cidade”.",
     "fonte_apoio": "CARLOS, A. F. A. A cidade. São Paulo: Contexto, 2011 (adaptado).",
     "pergunta": "No contexto das grandes cidades brasileiras, a situação apresentada no texto vem ocorrendo como consequência da",
@@ -117,8 +146,13 @@
     "id": 7,
     "instituicao": "UNESP",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Estatuto da Cidade",
+      "política urbana",
+      "função social da cidade",
+      "legislação"
+    ],
     "fonte_apoio": "(https://diplomatique.org.br, 06.07.2021. Adaptado.)",
     "pergunta": "No aniversário de 20 anos do Estatuto da Cidade, é fundamental refletir sobre o seu legado nas cidades brasileiras. Seu grande avanço consiste em definir instrumentos claros para um planejamento urbano com propósito social e calcado na gestão democrática da cidade, viabilizando, na prática, o reconhecimento da função social da propriedade.\n\nConsiste um exemplo de descumprimento da função social da propriedade nas cidades",
     "alternativas": [
@@ -136,8 +170,13 @@
     "id": 8,
     "instituicao": "ENEM",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "impermeabilização do solo",
+      "enchentes",
+      "urbanização",
+      "impacto ambiental"
+    ],
     "fonte_apoio": "CHRISTOFOLETTI, A. Aplicabilidade do conhecimento geomorfológico nos projetos de planejamento. In: GUERRA, A. J. T.; CUNHA, S. B. (Org.). Geomorfologia: uma atualização de bases e conceitos. Rio de Janeiro: Bertrand Brasil, 2008.",
     "pergunta": "A ampliação das áreas urbanizadas, devido à construção de áreas impermeabilizadas, repercute na capacidade de infiltração das águas no solo, favorecendo o escoamento superficial, a concentração das enxurradas e a ocorrência de ondas de cheia. A urbanização afeta o funcionamento do ciclo hidrológico, pois interfere no rearranjo dos armazenamentos e na trajetória das águas.\n\nConsiderando esse contexto, que fator contribui para a diminuição das enchentes em áreas urbanas?",
     "alternativas": [
@@ -155,8 +194,13 @@
     "id": 9,
     "instituicao": "UNCISAL",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "poluição urbana",
+      "ilha de calor",
+      "clima urbano",
+      "inversão térmica"
+    ],
     "pergunta": "Nos grandes centros urbanos, a atividade industrial e o uso de automóveis, embora sejam fundamentais ao modo de vida contemporâneo, têm causado efeitos danosos ao homem das grandes cidades. Dentre os efeitos, pode-se destacar:",
     "alternativas": [
       "o aumento de raios ultravioleta.",
@@ -173,8 +217,13 @@
     "id": 10,
     "instituicao": "FGV-RJ",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "periferização",
+      "São Paulo",
+      "segregação urbana",
+      "habitação popular"
+    ],
     "texto_apoio": "“Nas últimas décadas, a cidade de São Paulo cresceu dentro de uma lógica desordenada e gerou um perverso apartheid urbano. Os mais pobres foram expulsos dos bairros localizados junto à região central e empurrados para regiões cada vez mais distantes. Estima-se que algo como 2.500 bairros irregulares e 1600 favelas tomam conta da periferia, servindo de moradia para metade da população paulistana. Acabar com o cinturão de pobreza que cerca São Paulo é o grande desafio do futuro”.",
     "fonte_apoio": "SUPERINTERESSANTE. São Paulo, 31 de outubro de 2016. Adaptado.",
     "pergunta": "Sobre a periferização da população da cidade de São Paulo, analise as afirmações a seguir.\n\nI. Um dos principais problemas da periferia metropolitana é o saneamento básico, como a precariedade dos serviços de coleta de resíduos sólidos e de tratamento de esgotos, o que reforça o vínculo entre pobreza e más condições sanitárias.\n\nII. O padrão de urbanização da periferia processou-se sem considerar a topografia, a declividade das encostas e o sistema de drenagem, o que implica o aumento dos fatores de risco para a ocorrência de desastres ambientais.\n\nIII. A periferização da população aumentou o tempo gasto nos deslocamentos casa/trabalho/casa, o que gera intensos fluxos de circulação que sobrecarregam os sistemas de transportes e agravam a poluição do ar.\n\nEstá correto o que se afirma em",

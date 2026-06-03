@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "FADESP",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo brasileiro",
+      "Ab'Saber",
+      "Ross",
+      "classificação do relevo"
+    ],
     "pergunta": "Entre os principais geógrafos brasileiros, três realizaram importantes estudos e pesquisas sobre a classificação do relevo brasileiro. Sobre essas classificações, é correto afirmar que:",
     "alternativas": [
       "o geógrafo Aroldo de Azevedo empregou termos geomorfológicos para denominar as divisões gerais (planaltos e planícies) por meio de modernas técnicas, como sensoriamento remoto e imagens de satélites.",
@@ -20,8 +25,13 @@
     "id": 2,
     "instituicao": "ESA",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo brasileiro",
+      "compartimentos do relevo",
+      "geomorfologia",
+      "classificação"
+    ],
     "pergunta": "A classificação do relevo brasileiro em grandes unidades, ou compartimentos, é uma síntese dos processos de construção e modelagem da superfície terrestre e das formas resultantes. Esta classificação distingue três tipos de compartimentos, que são:",
     "alternativas": [
       "Planaltos, Planícies e Dobramentos Modernos.",
@@ -38,8 +48,13 @@
     "id": 3,
     "instituicao": "FUVEST",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "chapadas",
+      "relevo brasileiro",
+      "planaltos",
+      "geomorfologia"
+    ],
     "imagem_apoio": "2ano/img/207/s7q3.png",
     "pergunta": "Esta foto ilustra uma das formas do relevo brasileiro, que são as chapadas.\n\nÉ correto afirmar que essa forma de relevo está",
     "alternativas": [
@@ -57,8 +72,13 @@
     "id": 4,
     "instituicao": "UNIFESP",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "relevo brasileiro",
+      "formas de relevo",
+      "mapa",
+      "planaltos e planícies"
+    ],
     "imagem_apoio": "2ano/img/207/s7q4.png",
     "pergunta": "Observe o mapa. Assinale a alternativa que contém as formas de relevo predominantes em cada porção do território brasileiro indicada, de acordo com a classificação de Ross.",
     "alternativas": [
@@ -76,8 +96,13 @@
     "id": 5,
     "instituicao": "UDESC",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "Ab'Saber",
+      "relevo brasileiro",
+      "planaltos",
+      "planícies"
+    ],
     "pergunta": "Segundo Aziz Nacib Ab Saber, geógrafo, o relevo predominante no Brasil é:",
     "alternativas": [
       "Depressão Central.",
@@ -94,8 +119,13 @@
     "id": 6,
     "instituicao": "UEG",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo brasileiro",
+      "geomorfologia",
+      "planaltos",
+      "escarpas"
+    ],
     "texto_apoio": "\"Não se pode jamais confundir o que é idade e gênese das formas com idade e gênese das estruturas. Se as estruturas e litologias são predominantemente antigas, o mesmo não se pode dizer das formas de relevo, que são muito mais recentes\"",
     "fonte_apoio": "(ROSS, Jurandir, 1990, p. 25).",
     "pergunta": "A partir do comentário e da análise do relevo brasileiro, é CORRETO afirmar:",
@@ -113,8 +143,13 @@
     "id": 7,
     "instituicao": "FUVEST",
     "ano": "2005",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "geologia",
+      "relevo brasileiro",
+      "estruturas geológicas",
+      "rochas sedimentares"
+    ],
     "imagem_apoio": "2ano/img/207/s7q7.png",
     "pergunta": "Analise as informações geológico-estruturais do quadro:\n\nO item III corresponde à gênese.",
     "alternativas": [
@@ -132,8 +167,13 @@
     "id": 8,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "relevo brasileiro",
+      "montanhas",
+      "ausência de cordilheiras",
+      "geomorfologia"
+    ],
     "pergunta": "(MUNDO EDUCAÇÃO 2022) No território brasileiro, a ausência de cadeias montanhosas explica-se:",
     "alternativas": [
       "pela pouca atuação dos agentes externos de transformação do relevo.",
@@ -150,8 +190,13 @@
     "id": 9,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Ross",
+      "relevo brasileiro",
+      "RADAMBRASIL",
+      "classificação do relevo"
+    ],
     "pergunta": "(FUNCAB) Na década de 1980, o professor Jurandyr Ross, com base no Projeto RADAM Brasil, realizou uma nova classificação do relevo brasileiro baseado em três pilares: morfoestrutura, morfoescultura e morfoclimática. Nessa nova classificação, o Brasil foi dividido em 28 unidades de relevo, sendo que todas se enquadram em três tipos de relevos gerais. São eles:",
     "alternativas": [
       "planaltos, planícies e depressões.",
@@ -168,8 +213,13 @@
     "id": 10,
     "instituicao": "FASM",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "agentes formadores do relevo",
+      "intemperismo",
+      "erosão",
+      "geomorfologia"
+    ],
     "pergunta": "Levando em consideração os agentes formadores do relevo brasileiro, assinale a alternativa que contém a afirmação correta.",
     "alternativas": [
       "No território brasileiro, as áreas de derrames magmáticos recentes são responsáveis pela presença de grandes cadeias de montanhas.",

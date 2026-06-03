@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "subdesenvolvimento",
+      "dependência econômica",
+      "países periféricos"
+    ],
     "pergunta": "(UECE) A respeito do “subdesenvolvimento” é correto afirmar que:",
     "alternativas": [
       "o subdesenvolvimento é uma situação socioeconômica caracterizada por dependência econômica e grandes desigualdades sociais.",
@@ -20,8 +24,13 @@
     "id": 2,
     "instituicao": "",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "IDH",
+      "ONU",
+      "índice de desenvolvimento humano",
+      "saúde educação renda"
+    ],
     "pergunta": "O Índice de Desenvolvimento Humano (IDH), criado pela ONU, avalia com mais precisão as condições humanas e sociais de um país. Assinale a alternativa que apresente os indicadores utilizados na determinação do IDH.\n\nAssinale a alternativa que apresente os indicadores utilizados na determinação do IDH.",
     "alternativas": [
       "Consumo de calorias, taxa de analfabetismo, número de médicos por 1.000 habitantes.",
@@ -37,8 +46,12 @@
     "id": 3,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "PIB",
+      "produto interno bruto",
+      "mensuração econômica"
+    ],
     "pergunta": "O cálculo do PIB de um país, estado ou região atende a diversas finalidades. Das alternativas abaixo, assinale a que não corresponde a uma das utilidades desse importante índice econômico:",
     "alternativas": [
       "É útil para evidenciar possíveis diagnósticos sobre problemas estruturais e financeiros.",
@@ -55,8 +68,13 @@
     "id": 4,
     "instituicao": "",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "coeficiente de Gini",
+      "desigualdade social",
+      "distribuição de renda",
+      "mapa"
+    ],
     "imagem_apoio": "3ano/img/305/t5q4.png",
     "pergunta": "Observe o mapa abaixo sobre a distribuição do índice de Gini no mundo:\n\nAssinale a alternativa incorreta sobre este índice:",
     "alternativas": [
@@ -73,8 +91,12 @@
     "id": 5,
     "instituicao": "UNESP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "PIB",
+      "crescimento econômico",
+      "produto interno bruto"
+    ],
     "pergunta": "O cálculo do Produto Interno Bruto (PIB) busca expressar o dinamismo de uma economia a partir da soma das riquezas produzidas por um país durante determinado período. No entanto, o cálculo do PIB ignora",
     "alternativas": [
       "os valores consumidos pelas importações, o que artificializa cálculos superavitários.",
@@ -91,8 +113,12 @@
     "id": 6,
     "instituicao": "UECE",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "desenvolvimento humano",
+      "desigualdade global",
+      "IDH"
+    ],
     "pergunta": "Sobre a desigualdade geográfica do desenvolvimento humano, é correto afirmar que:",
     "alternativas": [
       "no que diz respeito aos problemas sociais que crescem no mundo, a noção de segregação, associada ao fenômeno de exclusão de direitos por parte de algumas pessoas, ainda não atingiu a população residente nos países europeus.",
@@ -108,8 +134,13 @@
     "id": 7,
     "instituicao": "UNESP",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "IDH",
+      "charge",
+      "desenvolvimento humano",
+      "indicadores"
+    ],
     "imagem_apoio": "3ano/img/305/t5q7.png",
     "pergunta": "A charge ironiza uma das variáveis que compõem o cálculo do Índice de Desenvolvimento Humano proposto pela Organização das Nações Unidas, a saber,",
     "alternativas": [
@@ -127,8 +158,13 @@
     "id": 8,
     "instituicao": "UERJ",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "IDH-M",
+      "longevidade",
+      "educação",
+      "renda"
+    ],
     "imagem_apoio": "3ano/img/305/t5q8.png",
     "pergunta": "O Índice de Desenvolvimento Humano Municipal (IDH-M) é composto por três indicadores: longevidade, educação e renda. No Brasil, o IDH-M cresceu 47,5% entre 1991 e 2010, conforme os mapas.\n\nGeograficamente, o desenvolvimento humano no Brasil apresenta mudanças decorrentes dos seguintes fatores principais:",
     "alternativas": [
@@ -145,8 +181,12 @@
     "id": 9,
     "instituicao": "UFTM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "coeficiente de Gini",
+      "desigualdade de renda",
+      "estatística social"
+    ],
     "imagem_apoio": "3ano/img/305/t5q9.png",
     "pergunta": "O Coeficiente de Gini é uma relação estatística para medir a desigualdade social, incluindo a distribuição de renda, e varia de 0 (zero) a 1 (um). O gráfico apresenta, no período de 2005 a 2009, os coeficientes encontrados em alguns países do G20, onde para a distribuição de renda o coeficiente 0 corresponde à completa igualdade na renda (todos detêm a mesma renda per capita) e o coeficiente 1 corresponde à completa desigualdade entre as rendas.\n\nA partir da análise do gráfico, é correto afirmar que, no período e dentre os países analisados,",
     "alternativas": [
@@ -164,8 +204,14 @@
     "id": 10,
     "instituicao": "UFLA-MG",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "IDH",
+      "ONU",
+      "expectativa de vida",
+      "educação",
+      "renda"
+    ],
     "texto_apoio": "“[...] pode ser definido como um processo abrangente de expansão do exercício do direito de escolhas individuais em diversas áreas: econômica, política, social ou cultural. Algumas dessas escolhas são básicas para a vida humana. [...] Tal noção [...] está ligada às condições sociais em que as pessoas vivem, ao padrão de consumo da sociedade em que estão inseridas e muitos outros fatores”.",
     "fonte_apoio": "Programa das Nações Unidas para o Desenvolvimento - PNUD, 1998, p. 35-6.",
     "pergunta": "Com base nessa premissa, a partir de 1990, a ONU criou um parâmetro fundamentado nas variáveis: expectativa de vida ao nascer; escolaridade e produto interno bruto per capita.\n\nO parâmetro a que se referem as variáveis e que, por sua vez, completa o trecho citado é:",

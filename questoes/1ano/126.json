@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "hidrografia",
+      "bacias hidrográficas",
+      "rios"
+    ],
     "imagem_apoio": "1ano/img/126/p26q1.png",
     "pergunta": "No esquema de um curso de água, abaixo, indique a nascente, a foz e os cursos superior, médio e inferior, associando aos respectivos trechos assinalados com A, B e C.",
     "alternativas": [
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "IFRS",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "recursos hídricos",
+      "hidrografia",
+      "bacias hidrográficas"
+    ],
     "imagem_apoio": "1ano/img/126/p26q2.png",
     "pergunta": "Considera-se recurso hídrico:",
     "alternativas": [
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "UFJF MG",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "hidrografia",
+      "sistema fluvial",
+      "bacias hidrográficas"
+    ],
     "imagem_apoio": "1ano/img/126/p26q3.png",
     "pergunta": "Observe a figura a seguir:\n\nSobre o sistema fluvial, é correto afirmar que:",
     "alternativas": [
@@ -59,8 +71,12 @@
     "id": 4,
     "instituicao": "UNICAMP",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "hidrografia",
+      "geomorfologia fluvial",
+      "várzea"
+    ],
     "texto_apoio": "“Em 1902 os paulistas organizam o primeiro campeonato de futebol no Brasil. No mesmo ano, surgem os primeiros campos de várzea, que logo se espalham pelos bairros operários, e já em 1908/1910, a várzea paulistana congregava vários e concorridos campeonatos, de forma que São Paulo não é apenas pioneira nacional no futebol “oficial”, mas também, e sobretudo, no “futebol popular”. A retificação dos rios Pinheiros e Tietê, a partir dos anos 1950, eliminou da paisagem urbana inúmeros campos de várzea, provavelmente mais de uma centena”.",
     "fonte_apoio": "(Adaptado de G.M. Jesus, “Várzeas, operários e futebol: uma outra Geografia”. Geographia. Rio de Janeiro, v. 4, n. 8, p. 84-92, 2002.)",
     "pergunta": "Várzea é uma forma geomorfológica associada às margens de rios caracterizadas pela topografia plana (o que facilita o uso como campos de futebol) e\n\nAlternativas",
@@ -78,8 +94,12 @@
     "id": 5,
     "instituicao": "UFRGS-RS",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "hidrografia",
+      "impactos ambientais",
+      "canalização de rios"
+    ],
     "imagem_apoio": "1ano/img/126/p26q5.png",
     "pergunta": "As figuras abaixo representam uma comparação entre um riacho natural e outro canalizado.\n\nConsidere as seguintes afirmações, sobre os efeitos da canalização na dinâmica de um curso d’água.\n\nI - A retirada da cobertura vegetal ocasiona o desaparecimento da sombra, causando danos à flora e aos organismos aquáticos sensíveis ao calor.\n\nII - A eliminação dos meandros fluviais e da cobertura vegetal aumenta a velocidade das águas do riacho.\n\nIII - A canalização consiste em retilinizar, aprofundar e revestir leitos fluviais, com o objetivo de aumentar a capacidade de infiltração dos solos e, assim, diminuir o extravasamento do leito fluvial.\n\nQuais estão corretas?",
     "alternativas": [
@@ -97,8 +117,12 @@
     "id": 6,
     "instituicao": "UECE",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "hidrografia",
+      "dinâmica fluvial",
+      "rios"
+    ],
     "imagem_apoio": "1ano/img/126/p26q6.png",
     "pergunta": "sobre a dinâmica natural dos rios, assinale o INCORRETO.",
     "alternativas": [
@@ -115,8 +139,12 @@
     "id": 7,
     "instituicao": "UFPEL",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "hidrografia",
+      "rios",
+      "recursos hídricos"
+    ],
     "imagem_apoio": "1ano/img/126/p26q7.png",
     "pergunta": "Os rios constituem um elemento essencial para o ser humano, desde os primórdios da humanidade até os dias atuais. Além de sua importância natural, destaca-se também sua funcionalidade política, econômica e social. Os rios são correntes de água doce que se formam a partir de uma precipitação (chuva ou neve) ou de fontes naturais. Em uma bacia hidrográfica, e possível identificar diferentes elementos e características no percurso de um rio.\n\nCom base nos dados acima e em seus conhecimentos, assinale a alternativa que apresenta a relação correta dos elementos e características identificados na figura.",
     "alternativas": [
@@ -134,8 +162,12 @@
     "id": 8,
     "instituicao": "UFOP-MG",
     "ano": "2005",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos hídricos",
+      "distribuição da água",
+      "hidrografia"
+    ],
     "imagem_apoio": "1ano/img/126/p26q8.png",
     "pergunta": "A figura apresenta áreas de ocorrência de água doce.\n\nConsiderando os dados da legenda e seus conhecimentos sobre a questão da água como fator estratégico para a humanidade, assinale a opção correta:",
     "alternativas": [
@@ -152,8 +184,12 @@
     "id": 9,
     "instituicao": "ENEM",
     "ano": "2004",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "ciclo hidrológico",
+      "hidrografia",
+      "oceanos"
+    ],
     "pergunta": "Por que o nível dos mares não sobe, mesmo recebendo continuamente as águas dos rios? Essa questão já foi formulada por sábios da Grécia antiga. Hoje responderíamos que:",
     "alternativas": [
       "a evaporação da água dos oceanos e o deslocamento do vapor e das nuvens compensam as águas dos rios que deságuam no mar.",
@@ -170,8 +206,12 @@
     "id": 10,
     "instituicao": "UNESP",
     "ano": "2003",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "erosão fluvial",
+      "hidrografia",
+      "geomorfologia fluvial"
+    ],
     "imagem_apoio": "1ano/img/126/p26q10.png",
     "pergunta": "Um rio escava seu leito e aprofunda seu vale ao longo do tempo.\n\nAssinale a alternativa que contém fatores responsáveis pela maior intensidade deste trabalho.",
     "alternativas": [

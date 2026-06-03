@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "ENEM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "petróleo",
+      "recursos energéticos",
+      "refinaria"
+    ],
     "fonte_apoio": "MURTA, A. L. S. Energia: o vício da civilização; crise energética e alternativas sustentáveis. Rio de Janeiro: Garamond, 2011.",
     "pergunta": "A instalação de uma refinaria obedece a diversos fatores técnicos. Um dos mais importantes é a localização, que deve ser próxima tanto dos centros de consumo como das áreas de produção. A Petrobras possui refinarias estrategicamente distribuídas pelo país. Elas são responsáveis pelo processamento de milhões de barris de petróleo por dia, suprindo o mercado com derivados que podem ser obtidos a partir de petróleo nacional ou importado.\n\nA territorialização de uma unidade produtiva depende de diversos fatores locacionais. A partir da leitura do texto, o fator determinante para a instalação das refinarias de petróleo é a proximidade a",
     "alternativas": [
@@ -22,8 +26,12 @@
     "id": 2,
     "instituicao": "FUVEST",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos energéticos",
+      "combustíveis fósseis",
+      "carvão mineral"
+    ],
     "texto_apoio": "“A vida na Terra tem alguns bilhões de anos. Nossa espécie, que surgiu há cerca de 150 mil anos, produz ferramentas há cerca de 40 mil anos, usa carvão mineral há cerca de 300 anos e petróleo há cerca de 100 anos. Esses recursos energéticos, devidos à longa deposição de organismos, encontram-se em diversas regiões, algumas delas hoje desérticas. O consumo combinado atual desses combustíveis, sobretudo na indústria e nos transportes, equivale a uma queima da ordem de 100 milhões de barris de petróleo por dia, fato que preocupa pelo aumento, na atmosfera, de gases responsáveis pelo efeito estufa.”",
     "pergunta": "A questão energética contemporânea, especialmente no que se refere ao uso de combustíveis fósseis, pode ser olhada sob uma perspectiva mais ampla.\n\nDa leitura desse texto, é correto afirmar que:",
     "alternativas": [
@@ -41,8 +49,12 @@
     "id": 3,
     "instituicao": "UEFS BA",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "relevo",
+      "formas de relevo",
+      "classificação do relevo"
+    ],
     "fonte_apoio": "(SENE, Eustáquio. Geografia geral e do Brasil. São Paulo; Scipione, 1998.). Com base nas informações do texto e nos conhecimentos sobre a organização do espaço terrestre, pode-se afirmar:",
     "imagem_apoio": "1ano/img/115/p15q3.png",
     "pergunta": "O relevo corresponde às formas assumidas pelo terreno (serras, montanhas, planaltos, planícies, depressões, chapadas, etc.), após serem moldadas pela atuação de agentes internos e externos sobre a crosta terrestre.\n\nCom base nas informações do texto e nos conhecimentos sobre a organização do espaço terrestre, pode-se afirmar:",
@@ -61,8 +73,12 @@
     "id": 4,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "petróleo",
+      "recursos energéticos",
+      "combustíveis fósseis"
+    ],
     "imagem_apoio": "1ano/img/115/p15q4.png",
     "pergunta": "O petróleo pode ser definido como:",
     "alternativas": [
@@ -79,8 +95,12 @@
     "id": 5,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "gás natural",
+      "recursos energéticos",
+      "combustíveis fósseis"
+    ],
     "pergunta": "O Gás Natural está relacionado à:",
     "alternativas": [
       "Mistura complexa de hidrocarbonetos. É refinado por um processo de destilação fracionada, na qual são produzidos: gasolina e diesel para veículos, querosene para aviões, óleos lubrificantes, óleo combustível, asfalto e outros produtos químicos. Vantagem: eficiência. Problema: recurso finito de difícil extração.",
@@ -96,8 +116,12 @@
     "id": 6,
     "instituicao": "UEPB",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "recursos energéticos",
+      "consumo de energia",
+      "energia elétrica"
+    ],
     "texto_apoio": "“Todas as atividades humanas, desde o surgimento da humanidade na Terra, implicam no chamado ‘consumo’ de energia. Isto porque para produzir bens necessários à vida, produzir alimentos, prazer e bem-estar, não há como não consumir energia, ou melhor, não converter energia. Vida humana e conversão de energia são sinônimos e não existe qualquer possibilidade de separar um do outro”.",
     "fonte_apoio": "(WALDMAN, Maurício. Para onde vamos? S.d., p. 10. Disponível em: http://www.mw.pro.br)",
     "pergunta": "Apesar de toda importância do consumo de energia para a vida moderna, podemos afirmar que sua forma de utilização no mundo contemporâneo continua a ser insustentável porque:",
@@ -116,8 +140,12 @@
     "id": 7,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos energéticos",
+      "capitalismo",
+      "consumo de energia"
+    ],
     "fonte_apoio": "TEIXEIRA et al. Decifrando a Terra. São Paulo: Oficina de Textos, 2000.",
     "imagem_apoio": "1ano/img/115/p15q8.png",
     "pergunta": "(CEFET-MG)\n\nCom o avanço do consumo como lógica de expansão capitalista, a demanda por energia tende a crescer em todo o mundo. A partir da análise do gráfico, é correto inferir que a(o):",
@@ -136,8 +164,12 @@
     "id": 8,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "recursos energéticos",
+      "combustíveis fósseis",
+      "petróleo"
+    ],
     "pergunta": "As três principais fontes de energia (petróleo, carvão mineral e gás natural) em todo o mundo são combustíveis fósseis. Juntas, essas três fontes correspondem a 80% de todo o consumo mundial de energia.\n\nEssa configuração, a depender do critério de análise, pode ser considerada:",
     "alternativas": [
       "positiva, pois esses recursos são abundantes e economicamente vantajosos para os países em desenvolvimento.",
@@ -153,8 +185,12 @@
     "id": 9,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "petróleo",
+      "recursos energéticos",
+      "geopolítica do petróleo"
+    ],
     "imagem_apoio": "1ano/img/115/p15q10.png",
     "pergunta": "O petróleo é, sem dúvidas, um dos principais recursos que o ser humano extrai da natureza para fins econômicos. Trata-se de um elemento altamente estratégico no contexto internacional e alvo de muitas disputas geopolíticas entre países dependentes desse recurso para utilização ou exportação.\n\nAlém do uso em combustíveis, o petróleo também serve de matéria-prima para inúmeros produtos, notadamente o plástico.\n\nO processo para a utilização do petróleo passa por um procedimento inicial realizado nas refinarias, que consiste no seu aquecimento e no isolamento de seus elementos componentes. Esse processo é chamado de:",
     "alternativas": [
@@ -171,8 +207,12 @@
     "id": 9,
     "instituicao": "FATEC ",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "carvão mineral",
+      "recursos energéticos",
+      "combustíveis fósseis"
+    ],
     "pergunta": "O carvão mineral é a segunda fonte de energia mais usada no planeta, representando mais de 30% do consumo energético mundial. Sobre essa fonte de energia, podemos afirmar corretamente que é",
     "alternativas": [
       "conseguida a partir da destilação do petróleo e do gás liquefeito.",

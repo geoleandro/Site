@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "ENEM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "clima",
+      "sociedade",
+      "adaptação",
+      "vulnerabilidade"
+    ],
     "fonte_apoio": "AYOADE, J. O. Introdução a climatologia para os trópicos. Rio de Janeiro: Bertrand Brasil, 2010 (adaptado).",
     "pergunta": "A interface clima/sociedade pode ser considerada em termos de ajustamento à extensão e aos modos como as sociedades funcionam em uma relação harmônica com seu clima. O homem e suas sociedades são vulneráveis às variações climáticas. A vulnerabilidade é a medida pela qual uma sociedade é suscetível de sofrer por causas climáticas.\n\nConsiderando o tipo de relação entre ser humano e condição climática apresentado no texto, uma sociedade torna-se mais vulnerável quando",
     "alternativas": [
@@ -22,8 +27,12 @@
     "id": 2,
     "instituicao": "UNICAMP",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "globalização",
+      "geopolítica",
+      "ordem mundial"
+    ],
     "texto_apoio": "“As cidades em que vivemos hoje são fechadas de maneiras que refletem o que aconteceu no mundo da tecnologia. Na imensa explosão urbana que ocorre atualmente no Sul Global - na China, na Índia, no Brasil, no México, nos países da África Central -, grandes empresas das finanças e da construção estão padronizando a cidade; no momento em que o avião aterrissa, talvez não possamos distinguir Pequim de Nova York. Seja no Norte ou no Sul, o crescimento das cidades não gerou grandes experimentações na forma. O complexo comercial, o campus universitário, a torre residencial erguida num recanto de um parque não são formas favoráveis à experimentação por serem autossuficientes, e não abertas a influências e interações externas”.",
     "fonte_apoio": "(Adaptado de Richard Sennett, Construir e habitar. Ética para uma cidade aberta. Rio de Janeiro: Editora Record, 2018, p. 22.)",
     "pergunta": "De acordo com a visão do autor, podemos afirmar que:",
@@ -41,8 +50,12 @@
     "id": 3,
     "instituicao": "UERJ",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tráfego aéreo",
+      "redes de transporte",
+      "rotas globais"
+    ],
     "fonte_apoio": "Adaptado de vegakosmonaut.blogspot.com.br, 11/06/2013.",
     "imagem_apoio": "3ano/img/319/t19q3.png",
     "pergunta": "Um consultor canadense, Michael Markieta, desenvolveu um sistema de visualização das rotas de tráfego aéreo ao redor do globo que recria o mapa-múndi, como mostra a imagem. Atualmente, há 58 mil rotas aéreas cruzando os céus nos cinco continentes. Na imagem revelada por Markieta, não causa surpresa o fato de que os pontos mais densos aparecem em áreas onde muitas rotas seguem o mesmo trajeto e têm como destino as maiores cidades do mundo.\n\nNessa representação das rotas do transporte aéreo comercial, o mapa ilustra a seguinte mudança na geopolítica internacional contemporânea:",
@@ -60,8 +73,13 @@
     "id": 4,
     "instituicao": "FUVEST",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "mapa",
+      "geopolítica",
+      "países membros",
+      "blocos"
+    ],
     "imagem_apoio": "3ano/img/319/t19q4.png",
     "pergunta": "Observe o mapa com dados de 2020:\n\nOs países destacados em amarelo no mapa referem-se:",
     "alternativas": [
@@ -79,8 +97,13 @@
     "id": 5,
     "instituicao": "ETEC",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "União Europeia",
+      "adesão",
+      "critérios",
+      "candidatura"
+    ],
     "pergunta": "O Tratado da União Europeia estabelece que qualquer país europeu pode se candidatar à adesão ao bloco. Porém, um país só pode entrar na União Europeia se cumprir alguns critérios de adesão.\n\nUm país que se candidate a membro desse bloco econômico deve necessariamente",
     "alternativas": [
       "ser republicano e possuir economia de mercado, porém submetida a controles constantes por parte do Fundo Monetário Internacional (FMI).",
@@ -97,8 +120,13 @@
     "id": 6,
     "instituicao": "UEA",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "Brexit",
+      "União Europeia",
+      "unidade europeia",
+      "saída"
+    ],
     "imagem_apoio": "3ano/img/319/t19q6.png",
     "pergunta": "Leia o tuíte publicado pelo Parlamento Europeu em 30.12.2019.\n\nA mensagem de unidade foi quebrada pela efetivação da saída, em 31.01.2020, de um dos países-membros que integrava a União Europeia.\n\nO país que deixou o bloco e a consequência dessa ação para a União Europeia são:",
     "alternativas": [
@@ -116,8 +144,12 @@
     "id": 7,
     "instituicao": "PUC-RIO",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "urbanização",
+      "transformação espacial",
+      "rural-urbano"
+    ],
     "pergunta": "A urbanização é um processo espacial de transformação de uma sociedade, em múltiplas escalas, da condição rural para a urbana.\n\nTal transformação é medida entre duas dinâmicas, que são:",
     "alternativas": [
       "o crescimento da população das cidades e o aumento dessa população em relação aos habitantes do campo.",
@@ -133,8 +165,13 @@
     "id": 8,
     "instituicao": "ENEM",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "produção de alimentos",
+      "demanda mundial",
+      "agricultura",
+      "tecnologia"
+    ],
     "fonte_apoio": "TUNDISI, J G Recursos hídricos no futuro: problemas e soluções Estudos Avançados. n 63, 2008 (adaptado)",
     "pergunta": "A demanda mundial para a produção de alimentos aumenta progressivamente a taxas muito altas. Atualmente, na maioria dos países, continentes e regiões, a água consumida na agricultura é de cerca de 70% da disponibilidade total.\n\nPara que haja a redução da pressão sobre o recurso natural mencionado, a expansão da agricultura demanda melhorias no(a)",
     "alternativas": [
@@ -152,8 +189,13 @@
     "id": 9,
     "instituicao": "UPE",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "redes geográficas",
+      "espaço global",
+      "desigualdade",
+      "fluxos"
+    ],
     "pergunta": "O espaço global é formado por redes desiguais, emaranhadas em escalas e níveis diferentes, que se sobrepõem e se prolongam umas sobre as outras. Esse processo de recriação dos espaços geográficos apresenta algumas características. Sobre elas, analise os itens a seguir:\n\n1. exacerbação das especializações produtivas no nível do espaço.\n\n2. concentração da produção em unidades menores, com o aumento da relação entre produto e superfície.\n\n3. aceleração de todas as formas de circulação e seu papel crescente na regulação das atividades localizadas.\n\n4. instituição de um novo papel da organização dos processos de regulação na constituição das regiões.\n\n5. transformação dos territórios nacionais em espaços nacionais da economia internacional.\n\nEstão CORRETOS",
     "alternativas": [
       "1 e 2, apenas.",
@@ -170,8 +212,13 @@
     "id": 10,
     "instituicao": "FAMENA",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "instituições financeiras",
+      "economia global",
+      "FMI",
+      "Banco Mundial"
+    ],
     "pergunta": "Nas últimas décadas, as instituições financeiras se tornaram extremamente importantes para a economia global.\n\nUma delas é a Organização Mundial do Comércio (OMC), que atua",
     "alternativas": [
       "no gerenciamento do euro e das políticas econômicas da União Europeia.",

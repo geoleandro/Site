@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UNESP",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ciclones",
+      "dinâmica atmosférica",
+      "massas de ar"
+    ],
     "imagem_apoio": "1ano/img/120/p20q1.png",
     "pergunta": "Observe as imagens e o mapa.\n\nO fenômeno esquematizado nas imagens, cuja área de ocorrência está delimitada no mapa, corresponde",
     "alternativas": [
@@ -22,8 +26,12 @@
     "id": 2,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tipos de chuva",
+      "precipitação",
+      "dinâmica atmosférica"
+    ],
     "imagem_apoio": "1ano/img/120/p20q2.png",
     "pergunta": "(CFTMG) Associe os tipos de chuva às suas respectivas características.\n\n( ) Resulta do deslocamento horizontal do ar que, em contato com as regiões elevadas, sofre condensação e consequente precipitação.\n\n( ) forma-se a partir do encontro de uma massa de ar frio com uma de ar quente.\n\n( ) Decorre da ascensão vertical do ar que, ao entrar em contato com as camadas de ar frio, sofre condensação e se precipita.\n\nA sequência correta é",
     "alternativas": [
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "URCA",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fatores climáticos",
+      "clima",
+      "elementos climáticos"
+    ],
     "pergunta": "Marque a única assertiva que traz somente fatores climáticos, isto é, aqueles que contribuem para determinar as condições climáticas de uma região do globo.",
     "alternativas": [
       "Correntes marítimas, temperatura do ar, umidade relativa do ar e amplitude térmica.",
@@ -58,8 +70,12 @@
     "id": 4,
     "instituicao": "UCPEL",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "temperatura",
+      "elementos climáticos",
+      "fatores climáticos"
+    ],
     "pergunta": "Um dos elementos climáticos mais importantes para a humanidade é a temperatura atmosférica, ou seja, o estado térmico do ar atmosférico, de frio ou de calor. A temperatura pode variar de um lugar para outro, assim como em um mesmo lugar, no decorrer do tempo.\n\nSobre os fatores responsáveis pela variação da temperatura é correto afirmar que:",
     "alternativas": [
       "a influência da latitude ocorre fundamentalmente devido à forma esférica da Terra. A insolação diminui a partir do Equador em direção aos polos, assim a temperatura diminui com o aumento da latitude.",
@@ -76,8 +92,12 @@
     "id": 5,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "correntes marítimas",
+      "oceanos",
+      "circulação oceânica"
+    ],
     "pergunta": "São movimentos horizontais de grandes massas de água provocados pela rotação da Terra e pela ação dos ventos constantes. Elas interagem com a dinâmica das massas de ar, influenciando o clima e definindo áreas secas e chuvosas.\n\nAssinale a alternativa correta relacionada à descrição acima:",
     "alternativas": [
       "Fatores Climáticos",
@@ -94,8 +114,12 @@
     "id": 6,
     "instituicao": "UERN",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "tipos climáticos",
+      "clima subtropical",
+      "fatores climáticos"
+    ],
     "imagem_apoio": "1ano/img/120/p20q6.png",
     "pergunta": "As figuras a seguir representam tipos climáticos predominantes no Sul e no Sudeste asiático. As imagens retratam monções de:",
     "alternativas": [
@@ -112,8 +136,12 @@
     "id": 7,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "altitude",
+      "fatores climáticos",
+      "temperatura"
+    ],
     "pergunta": "Elevação vertical de um ponto qualquer da superfície terrestre em relação ao nível dos oceanos. À medida que a altitude aumenta, a pressão e a densidade do ar diminuem, e as temperaturas ficam mais baixas.\n\nAssinale a alternativa correta relacionada à descrição acima:",
     "alternativas": [
       "Altitude.",
@@ -130,8 +158,12 @@
     "id": 8,
     "instituicao": "",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "massas de ar",
+      "dinâmica atmosférica",
+      "frentes"
+    ],
     "imagem_apoio": "1ano/img/120/p20q8.png",
     "pergunta": "Constituem partes da atmosfera com considerável extensão horizontal e com características homogêneas de temperatura, pressão e umidade.\n\nAssinale a alternativa correta relacionada à descrição acima.",
     "alternativas": [
@@ -149,8 +181,12 @@
     "id": 9,
     "instituicao": "MACKENZIE",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "correntes marítimas",
+      "oceanos",
+      "circulação oceânica"
+    ],
     "imagem_apoio": "1ano/img/120/p20q9.png",
     "pergunta": "As correntes marítimas se movimentam por todos os oceanos do mundo, transportando calor e, por isso, apresentam influência direta no clima. As correntes frias, por exemplo, podem contribuir para a formação de desertos.\n\nCom base no mapa e no excerto de texto, escolha a alternativa que relacione, corretamente, as correntes marítimas a seus respectivos desertos.",
     "alternativas": [
@@ -168,8 +204,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "desmatamento",
+      "regime de chuvas",
+      "dinâmica atmosférica"
+    ],
     "texto_apoio": "“Estudo mostra que o impacto da destruição da floresta pode alterar o clima do Brasil e de países vizinhos. Nos últimos 30 anos, o Brasil já teve 600 mil quilômetros quadrados de terras desmatadas.”",
     "fonte_apoio": "(Adaptado de: ANBA, 20/03/2009. Disponível em: http://www.anba.com.br/).",
     "pergunta": "(MUNDO EDUCAÇÃO 2022)\n\nO impacto do desmatamento da Amazônia sobre o regime de chuvas se dá pela seguinte questão:",

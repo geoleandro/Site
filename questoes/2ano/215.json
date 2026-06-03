@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "massas de ar",
+      "meteorologia",
+      "dinâmica atmosférica"
+    ],
     "pergunta": "sobre o conceito de massas de ar, é correto afirmar que:",
     "alternativas": [
       "as massas de ar deslocam-se no planeta Terra sempre em sentido anti-horário.",
@@ -21,8 +25,13 @@
     "id": 2,
     "instituicao": "",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "friagem amazônica",
+      "massa polar",
+      "Amazônia",
+      "dinâmica atmosférica"
+    ],
     "pergunta": "A “friagem” consiste na queda brusca de temperatura na Amazônia Ocidental. Sobre esse fenômeno pode-se afirmar que:\n\nI – O relevo baixo de planície facilita a incursão de massa e de ar frio que atinge a Amazônia.\n\nII – A massa de ar responsável pela ocorrência de friagem é a tropical atlântica.\n\nIII – A friagem ocorre no inverno.\n\nDe acordo com as afirmativas, assinale a alternativa correta.",
     "alternativas": [
       "somente o item I está correto.",
@@ -39,8 +48,12 @@
     "id": 3,
     "instituicao": "ENEM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "meteorologia",
+      "fatores climáticos",
+      "dados meteorológicos"
+    ],
     "imagem_apoio": "2ano/img/215/s15q3.png",
     "pergunta": "No dia em que foram colhidos os dados meteorológicos apresentados, qual fator climático foi determinante para explicar os índices de umidade relativa do ar nas regiões Nordeste e Sul?",
     "alternativas": [
@@ -58,8 +71,13 @@
     "id": 4,
     "instituicao": "UNICAMP",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "frente fria",
+      "massas de ar",
+      "dinâmica atmosférica",
+      "clima"
+    ],
     "imagem_apoio": "2ano/img/215/s15q4.png",
     "pergunta": "O esquema abaixo representa a entrada de uma frente fria, uma condição atmosférica muito comum, especialmente nas regiões Sul e Sudeste do Brasil. Sobre esta condição é correto afirmar que:",
     "alternativas": [
@@ -76,8 +94,12 @@
     "id": 5,
     "instituicao": "UDESC",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "massas de ar brasileiras",
+      "mapa climático",
+      "dinâmica atmosférica"
+    ],
     "imagem_apoio": "2ano/img/215/s15q5.png",
     "pergunta": "observe o mapa abaixo.\n\nAnalise as proposições sobre as massas de ar que atuam no Brasil, representadas no mapa pelos números arábicos.\n\nI. O número 1 representa a Massa Equatorial Atlântica.\n\nII. O número 2 representa a Massa Equatorial Amazônica.\n\nIII. O número 3 representa a Massa Tropical Atlântica.\n\nIV. O número 4 representa a Massa Tropical Continental.\n\nV. O número 5 representa a Massa Polar Atlântica.\n\nAssinale a alternativa correta.",
     "alternativas": [
@@ -95,8 +117,13 @@
     "id": 6,
     "instituicao": "UFPR",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "massas de ar",
+      "instabilidade atmosférica",
+      "frente fria",
+      "precipitação"
+    ],
     "pergunta": "nesta terça-feira (15/09/09), áreas de instabilidade que se deslocam pelo norte da Argentina devem chegar ao Brasil a partir da tarde e voltam a provocar pancadas de chuva no oeste e norte do RS, no centro-oeste de SC, no oeste do PR e no sul de MS, onde tem-se uma massa de ar quente e úmida.\n\nO texto acima refere-se à previsão do tempo para o dia 15/09/09, realizada pelo Centro de Previsão do Tempo e Estudos Climáticos do Instituto Nacional de Pesquisas Espaciais. Levando em consideração os dados apresentados, assinale a alternativa correta.",
     "alternativas": [
       "A Frente Polar Atlântica, principal área de instabilidade da América do Sul meridional, é responsável pelas chuvas previstas no texto.",
@@ -113,8 +140,13 @@
     "id": 7,
     "instituicao": "UFRN",
     "ano": "2004",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "classificação climática",
+      "massas de ar",
+      "mapa",
+      "biomas"
+    ],
     "fonte_apoio": "(Adaptado de: VESENTINI, J. W. \"Brasil: sociedade e espaço\". São Paulo: Ática, 2016. p. 242-243.)",
     "imagem_apoio": "2ano/img/215/s15q7.png",
     "pergunta": "os cartogramas 1 e 2 representam, respectivamente, a classificação climática do Brasil, segundo Arthur Strahler, e as massas de ar que atuam no território brasileiro.",
@@ -132,8 +164,13 @@
     "id": 8,
     "instituicao": "PUC-PR",
     "ano": "2001",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "dinâmica atmosférica",
+      "massas de ar",
+      "clima",
+      "movimento do ar"
+    ],
     "pergunta": "A atmosfera constitui um sistema caótico. O ar está em constante movimento, em consequência, especialmente, das diferenças de pressão e do movimento de rotação da Terra. A previsão meteorológica é complicada, exigindo grandes investimentos em tecnologia e instrumentos.\n\nI. Na zona intertropical, onde está a maior parte do Brasil, as altas pressões dominantes facilitam a verificação das condições atmosféricas pela estabilidade reinante.\n\nII. O que chamamos de clima é o conjunto de variações do tempo durante longo período.\n\nIII. Embora atinja grandes porções da atmosfera, a influência das massas de ar na determinação dos tipos climáticos é quase nula, pois essas massas de ar são geralmente estáticas.\n\nIV. Tratando-se de assunto meteorológico, tempo significa estado momentâneo da atmosfera em um local.\n\nAssinale as afirmações corretas.",
     "alternativas": [
       "I e IV.",
@@ -150,8 +187,13 @@
     "id": 9,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "massas de ar",
+      "mapa climático",
+      "dinâmica atmosférica",
+      "clima do Brasil"
+    ],
     "imagem_apoio": "2ano/img/215/s15q9.png",
     "pergunta": "(UFG) Observe os mapas a seguir.\n\nA dinâmica das massas de ar é um dos fatores que explica a caracterização climática de uma área. A leitura e a interpretação dos mapas indicam que o clima do território goiano é influenciado pela atuação da massa.",
     "alternativas": [
@@ -169,8 +211,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "massas de ar",
+      "dinâmica atmosférica",
+      "clima do Brasil"
+    ],
     "pergunta": "(MACKENZIE) Assinale a alternativa CORRETA sobre a dinâmica de massas de ar no Brasil.",
     "alternativas": [
       "A massa equatorial atlântica origina–se no Atlântico Norte e influencia o clima de todo o interior do país.",

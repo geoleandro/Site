@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "ENEM",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "erosão",
+      "conservação do solo"
+    ],
     "texto_apoio": "“Um dos principais objetivos de se dar continuidade às pesquisas em erosão dos solos é o de procurar resolver os problemas oriundos desse processo, que, em última análise, geram uma série de impactos ambientais. Além disso, para a adoção de técnicas de conservação dos solos, é preciso conhecer como a água executa seu trabalho de remoção, transporte e deposição de sedimentos. A erosão causa, quase sempre, uma série de problemas ambientais, em nível local ou até mesmo em grandes áreas”.",
     "fonte_apoio": "Adaptado de: GUERRA, A. J. T. Processos erosivos nas encostas. In: GUERRA, A. J. T.; CUNHA, S. B. Geomorfologia: uma atualização de bases e conceitos. Rio de Janeiro: Bertrand Brasil, 2007.",
     "pergunta": "A preservação do solo, principalmente em áreas de encostas, pode ser uma solução para evitar catástrofes em função da intensidade de fluxo hídrico. A prática humana que segue no caminho contrário a essa solução é:",
@@ -23,8 +27,12 @@
     "id": 2,
     "instituicao": "UNICAMP",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "solos",
+      "pedologia",
+      "tipos de solo"
+    ],
     "imagem_apoio": "1ano/img/117/p17q2.png",
     "pergunta": "Solo é a camada superior da superfície terrestre, onde se fixam as plantas, que dependem de seu suporte físico, água e nutrientes. Um perfil de solo é representado na figura abaixo. Sobre o perfil apresentado é correto afirmar que:",
     "alternativas": [
@@ -41,8 +49,12 @@
     "id": 3,
     "instituicao": "UECE",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "intemperismo",
+      "solos",
+      "agentes externos"
+    ],
     "pergunta": "Aos processos de desagregação física ou decomposição química das rochas e ao desgaste e remoção dos solos e das formações superficiais da terra, dá-se as denominações respectivas de:",
     "alternativas": [
       "intemperismo e erosão.",
@@ -58,8 +70,12 @@
     "id": 4,
     "instituicao": "UNESP",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "erosão",
+      "conservação do solo"
+    ],
     "texto_apoio": "Ao analisar a função dos geotêxteis feitos com fibra de tronco de bananeira, considere como eles interagem com o solo e a vegetação. Pense em como essas fibras podem ajudar em áreas que sofrem com a perda de solo e instabilidade. Lembre-se de que o objetivo principal é melhorar a condição do solo, permitindo que a vegetação se estabeleça e cresça. Isso deve te levar a entender que esses materiais são particularmente úteis em situações onde há necessidade de proteger e estabilizar o solo, especialmente em terrenos que estão se degradando ou erodindo. Tente resolver sem ver a resposta",
     "imagem_apoio": "1ano/img/117/p17q4.png",
     "pergunta": "Analise as imagens da instalação de geotêxteis, feitos com fibra de tronco de bananeira.\n\nConsiderando as imagens, observa-se que a instalação de geotêxteis tem como objetivo\n\nResposta: Letra D. A recuperação de áreas degradadas, pois diminui os processos erosivos.",
@@ -78,8 +94,12 @@
     "id": 5,
     "instituicao": "CESGRANRIO",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "solos",
+      "formação do solo",
+      "pedologia"
+    ],
     "pergunta": "A formação dos solos se dá por fatores como a ação do Sol, das chuvas e dos ventos, que constituem o fenômeno conhecido como intemperismo. Dessa forma, as rochas vão se fragmentando e alterando suas propriedades físicas e químicas. As partículas mais sujeitas aos efeitos do intemperismo são aquelas que compõem as camadas:",
     "alternativas": [
       "de magma.",
@@ -96,8 +116,12 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "erosão",
+      "conservação do solo"
+    ],
     "imagem_apoio": "1ano/img/117/p17q6.png",
     "pergunta": "O esquema representa um processo de erosão em encosta. Que prática realizada por um agricultor pode resultar em aceleração desse processo?",
     "alternativas": [
@@ -115,8 +139,12 @@
     "id": 7,
     "instituicao": "UEM",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "desertificação",
+      "degradação do solo"
+    ],
     "pergunta": "A degradação dos solos transforma muitas regiões em desertos. Assinale a alternativa incorreta sobre os fatores diretamente causadores de degradação do solo.",
     "alternativas": [
       "O controle biológico de pragas e a adubação orgânica.",
@@ -133,8 +161,12 @@
     "id": 8,
     "instituicao": "UFMG",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "formação do solo",
+      "horizonte do solo"
+    ],
     "imagem_apoio": "1ano/img/117/p17q8.png",
     "pergunta": "Analise esta sequência de figuras, em que está representada a formação do solo ao longo do tempo geológico, sabendo que as divisões que aparecem em cada figura e na legenda representam as etapas dessa evolução:\n\nA partir dessa análise, é INCORRETO afirmar que essa sequência de figuras sugere que:",
     "alternativas": [
@@ -151,8 +183,12 @@
     "id": 9,
     "instituicao": "ENEM",
     "ano": "1999",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "tipos de solo",
+      "agricultura"
+    ],
     "imagem_apoio": "1ano/img/117/p17q9.png",
     "pergunta": "Um agricultor adquiriu alguns alqueires de terra para cultivar e residir no local. O desenho abaixo representa parte de suas;\n\nPensando em construir sua moradia no lado I do rio e plantar no lado II, o agricultor consultou seus vizinhos e escutou as frases abaixo. Assinale a frase do vizinho que deu a sugestão mais correta:",
     "alternativas": [
@@ -170,8 +206,12 @@
     "id": 10,
     "instituicao": "ENEM",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "solos",
+      "degradação do solo",
+      "erosão"
+    ],
     "texto_apoio": "“Diversos são os fatores causadores da degradação do solo, atuando de forma direta ou indireta, mas quase sempre a grande maioria das terras degradadas inicia esse processo com o desmatamento, que pode ser seguido por diversas formas de ocupação desordenada, como: corte de taludes para a construção de casas, rodovias e ferrovias, agricultura, com uso da queimada, vários tipos de mineração, irrigação excessiva, crescimento desordenado das cidades, superpastoreio, uso do solo para diversos tipos de despejos industriais e domésticos, sem tratamento da área que recebe esses despejos; enfim, de uma forma ou de outra, os solos tornam-se degradados, sendo muitas vezes difícil, ou quase impossível, a sua recuperação.”",
     "fonte_apoio": "GUERRA, A. T. Degradação dos solos: conceitos e temas. In: GUERRA, A. T.; JORGE, M. C. O. (Org.). Degradação dos solos no Brasil. Rio de Janeiro: Difel, 2018.",
     "pergunta": "A partir da ocupação desordenada exporta no texto, o que impede a recuperação do recurso natural destacado é a\n\nQual dinâmica natural é responsável pelo fenômeno apresentado?",

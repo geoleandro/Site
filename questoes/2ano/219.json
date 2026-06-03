@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "FUVEST",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "biomas brasileiros",
+      "vegetação",
+      "Cerrado",
+      "distribuição dos biomas"
+    ],
     "imagem_apoio": "2ano/img/219/s19q1.png",
     "pergunta": "Observe o gráfico a seguir.\n\nCom base nos seus conhecimentos e no gráfico, assinale a alternativa CORRETA.",
     "alternativas": [
@@ -22,8 +27,13 @@
     "id": 2,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "clima do Brasil",
+      "climograma",
+      "análise climática",
+      "massas de ar"
+    ],
     "texto_apoio": "“Esses climas não conhecem a estação fria, pois a mais baixa temperatura no mês menos quente não desce abaixo de 18ºC. Não apresentam estação seca e os índices pluviométricos anuais superam os 2.000mm. As amplitudes térmicas anuais, nas áreas onde predominam, são insignificantes, mas os valores de umidade relativa do ar apresentam-se, durante todo o ano, muito elevados”.",
     "pergunta": "(UFPE) Leia com atenção o texto a seguir e observe o climograma:\n\nEm relação ao enunciado acima, é correto afirmar que o clima é:",
     "alternativas": [
@@ -41,8 +51,13 @@
     "id": 3,
     "instituicao": "URCA",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "massas de ar",
+      "clima do Brasil",
+      "divisão climática",
+      "territórios climáticos"
+    ],
     "pergunta": "De acordo com a influência de massas de ar, podemos dividir o território brasileiro em cinco principais tipos climáticos. Relacione a 2ª coluna de acordo com a 1ª e indique a alternativa correta:\n\nI. Clima Equatorial Úmido\n\nII. Clima Litorâneo Úmido\n\nIII. Clima Tropical Alternadamente Úmido e Seco\n\nIV. Clima Tropical tendendo a Seco ou Semiárido\n\nV. Clima Subtropical Úmido.\n\n( ) É um tipo de clima tropical, portanto quente, com médias anuais de pluviosidade geralmente inferiores a 1.000mm. As chuvas se concentram num período curto como no interior do Estado da Paraíba, por exemplo.\n\n( ) As médias pluviométricas oscilam entre 1.500 e 2.000 mm/ano; abrangendo a porção do território brasileiro próxima ao litoral, desde o Rio Grande do Norte até a parte setentrional do Estado de São Paulo.\n\n( ) Abrange a porção do território brasileiro localizada ao sul do Trópico de Capricórnio; é o tipo de clima classificado como “mesotérmico”, isto é, de temperaturas médias.\n\n( ) Abrange a Amazônia brasileira; quente e úmido, da convergência dos alísios.\n\n( ) É um clima tropical típico, quente e semiúmido com uma estação chuvosa (verão) e outra seca (inverno). Abrange Mato Grosso do Sul, Minas Gerais, trechos da Bahia e do Ceará, Maranhão e Piauí.",
     "alternativas": [
       "IV; II; V; I; III.",
@@ -59,8 +74,13 @@
     "id": 4,
     "instituicao": "ENEM",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "caatinga",
+      "adaptações vegetais",
+      "semiárido",
+      "Nordeste"
+    ],
     "pergunta": "A vegetação apresenta adaptações ao ambiente, como plantas arbóreas e arbustivas com raízes que se expandem horizontalmente, permitindo forte ancoragem no substrato lamacento; raízes que se expandem verticalmente, por causa da baixa oxigenação do substrato; folhas que têm glândulas para eliminar o excesso de sais; folhas que podem apresentar cutícula espessa para reduzir a perda de água por evaporação. As características descritas referem-se a plantas adaptadas ao bioma:",
     "alternativas": [
       "Cerrado.",
@@ -77,8 +97,13 @@
     "id": 5,
     "instituicao": "FUVEST",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Cerrado",
+      "queimadas",
+      "manejo do fogo",
+      "bioma"
+    ],
     "texto_apoio": "“Uma forma de conservação do Cerrado é a prática de queimadas controladas que simulam o ciclo natural do fogo. Observe a imagem que retrata os efeitos visuais de uma queimada controlada em um trecho de Cerrado da Estação Ecológica de Santa Bárbara, no interior do estado de São Paulo. Nessa área foram conduzidos experimentos com queimadas controladas, e os resultados sugerem que essa prática é benéfica para a flora, cujas plantas rebrotam rapidamente depois da passagem do fogo. Nos grupos vegetais em que as queimadas produziram mais efeitos positivos foi registrado até um discreto aumento de espécies vegetais. Antes das queimadas, os pesquisadores contabilizaram 38 espécies de gramíneas e 68 de outras ervas. Depois, esses números subiram para 44 e 74, respectivamente ”.",
     "fonte_apoio": "Durigan G et al. (2020), Front. For. Glob. Change, 3:13, doi:10.3389/ffgc.2020.00013. Adaptado.",
     "pergunta": "No bioma Cerrado, de acordo com a informação do texto, a prática de queimadas controladas",
@@ -97,8 +122,13 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tecnologia agrícola",
+      "Cerrado",
+      "expansão agrícola",
+      "avanço técnico"
+    ],
     "texto_apoio": "“Tanto potencial poderia ter ficado pelo caminho, se não fosse o reforço em tecnologia que um gaúcho buscou. Há pouco mais de oito anos, ele usava o bico da botina para cavoucar a terra e descobrir o nível de umidade do solo, na tentativa de saber o momento ideal para acionar os pivôs de irrigação. Até que conheceu uma estação meteorológica que, instalada na propriedade, ajuda a determinar a quantidade de água de que a planta necessita. Assim, quando inicia um plantio, o agricultor já entra no site do sistema e cadastra a área, o pivô, a cultura, o sistema de plantio, o espaçamento entre linhas e o número de plantas, para então receber recomendações diretamente dos técnicos da universidade”.",
     "fonte_apoio": "CAETANO, M. O valor de cada gota. Globo Rural, n. 312, out. 2011.",
     "pergunta": "A implementação das tecnologias mencionadas no texto garante o avanço do processo de",
@@ -117,8 +147,13 @@
     "id": 7,
     "instituicao": "ENEM",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "chapadas",
+      "relevo",
+      "domínios morfoclimáticos",
+      "geomorfologia"
+    ],
     "fonte_apoio": "WEIBEL, L. Disponível em: http://biblioteca.ibge.gov.br. Acesso em: 8 jul. 2015 (adaptado).",
     "pergunta": "A presunção de que a superfície das chapadas e chapadões representa uma velha peneplanície é corroborada pelo fato de que ela é coberta por acumulações superficiais, tais como massas de areia, camadas de cascalhos e seixos e pela ocorrência generalizada de concreções ferruginosas que formam uma crosta laterítica, denominada “canga”.\n\nQual tipo climático favorece o processo de alteração do solo descrito no texto?",
     "alternativas": [
@@ -136,8 +171,13 @@
     "id": 8,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "domínios morfoclimáticos",
+      "Ab'Saber",
+      "vegetação brasileira",
+      "biomas"
+    ],
     "imagem_apoio": "2ano/img/219/s19q8.png",
     "pergunta": "(UFES) Para responder a esta questão, analise a figura abaixo.\n\nQual a alternativa que não descreve os movimentos das massas de ar que atuam no território brasileiro?",
     "alternativas": [
@@ -155,8 +195,13 @@
     "id": 9,
     "instituicao": "FAMP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "domínios morfoclimáticos",
+      "Ab'Saber",
+      "conceito geográfico",
+      "biomas"
+    ],
     "pergunta": "Domínio morfoclimático foi um conceito usado por Aziz Nacib Ab’Saber e representa a combinação de uma série de elementos atuais como relevos, climas, vegetações, solos e hidrografias. As interações desses elementos formam as unidades paisagísticas. Dessa forma, o segundo maior domínio morfoclimático do Brasil é formado por áreas relativamente planas, de clima que apresenta inverno seco e verão bastante chuvoso, além de espécies vegetais com gramíneas, arbustos e árvores que apresentam folhas endurecidas, galhos tortuosos e cascas grossas. Esse domínio é conhecido com o nome de:",
     "alternativas": [
       "Cerrado.",
@@ -172,8 +217,13 @@
     "id": 10,
     "instituicao": "UNIVESP",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "Pantanal",
+      "bioma",
+      "inundações sazonais",
+      "vegetação"
+    ],
     "imagem_apoio": "2ano/img/219/s19q10.png",
     "pergunta": "Uma característica do bioma do Pantanal em destaque na imagem é a presença de",
     "alternativas": [

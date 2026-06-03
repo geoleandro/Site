@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "FMJ SP",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "plataforma continental",
+      "relevo submarino",
+      "oceanos"
+    ],
     "pergunta": "A plataforma continental, feição do relevo oceânico, caracteriza-se:",
     "alternativas": [
       "pela dificuldade na manutenção da vida marinha, que sofre com a pouca incidência de luz solar.",
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "ESPM SP",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo submarino",
+      "oceanos",
+      "hidrografia"
+    ],
     "imagem_apoio": "1ano/img/125/p25q2.png",
     "pergunta": "Observe o esquema abaixo que retrata o relevo marinho:\n\nNa condição de um geólogo contratado por uma empresa gigante do setor petrolífero, você recomendaria que a empresa pesquisasse petróleo junto à (ao):",
     "alternativas": [
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "PUC-RJ",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "relevo submarino",
+      "oceanos"
+    ],
     "imagem_apoio": "1ano/img/125/p25q3.png",
     "pergunta": "A superfície da Terra tem morfologias muito distintas, de acordo com o posicionamento continental ou oceânico da litosfera.\n\nA partir da morfologia do assoalho marinho, assinale a opção que apresenta a única sequência correta (I / II / III / IV / V / VI).",
     "alternativas": [
@@ -59,8 +71,12 @@
     "id": 4,
     "instituicao": "UEFS BA",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "placas tectônicas",
+      "dorsais oceânicas",
+      "relevo submarino"
+    ],
     "fonte_apoio": "(TESOUROS E PERIGOS dos oceanos. Planeta. São Paulo: Três, ano 37, ed. 439, abr. 2009.).",
     "pergunta": "No contexto da tectônica e placas, o nascimento de um oceano envolve, muitas vezes, a ruptura de um continente, dando origem a um rift (fratura geológica) com margens continentais de ambos os lados — tal como acontece com o oceano Atlântico. Por sua vez, o leito oceânico é produzido e alastra-se de forma contínua a partir do sistema de dorsais (cordilheiras) oceânicas.\n\nA partir da análise do texto e dos conhecimentos sobre oceanos, pode-se afirmar:",
     "alternativas": [
@@ -78,8 +94,12 @@
     "id": 5,
     "instituicao": "UNIR",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "recursos hídricos",
+      "ciclo hidrológico",
+      "oceanos"
+    ],
     "imagem_apoio": "1ano/img/125/p25q5.png",
     "pergunta": "Sobre a água no Planeta, assinale a afirmativa correta.",
     "alternativas": [
@@ -97,8 +117,12 @@
     "id": 6,
     "instituicao": "UDESC",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "correntes marítimas",
+      "oceanos",
+      "circulação oceânica"
+    ],
     "pergunta": "Os oceanos estão em constante movimento, e as correntes marinhas causam grande impacto no clima do planeta, pois transportam águas quentes e frias por todas as partes do globo.\n\nSobre mares e oceanos, é correto afirmar:",
     "alternativas": [
       "O Oceano Índico é o segundo maior oceano e o mais frio devido à sua localização.",
@@ -115,8 +139,12 @@
     "id": 7,
     "instituicao": "UECE",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "oceanos",
+      "águas oceânicas",
+      "correntes marítimas"
+    ],
     "pergunta": "Sobre as águas oceânicas, assinale o INCORRETO.",
     "alternativas": [
       "Os oceanos e mares sempre se constituíram em grandes vias de circulação através das quais navegações, com objetivos os mais variados, têm ocorrido, desde os primórdios da civilização.",
@@ -132,8 +160,12 @@
     "id": 8,
     "instituicao": "UECE",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "oceanos",
+      "recursos hídricos",
+      "circulação oceânica"
+    ],
     "pergunta": "No que se refere à importância dos oceanos e mares, pode-se afirmar, corretamente, que:",
     "alternativas": [
       "A vida no mar é abundante e diversificada, localizando-se, principalmente, nas regiões abissais e no talude.",
@@ -149,8 +181,12 @@
     "id": 9,
     "instituicao": "UCS",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo submarino",
+      "crosta terrestre",
+      "oceanos"
+    ],
     "imagem_apoio": "1ano/img/125/p25q9.png",
     "pergunta": "A crosta terrestre possui feições variadas, o que lhe confere diversidade e complexidade de paisagens. Essas características aumentam se considerarmos as áreas submersas do Globo.\n\nObserve a figura abaixo.\n\nÉ correto afirmar que o relevo submarino representado na figura inclui",
     "alternativas": [
@@ -168,8 +204,12 @@
     "id": 10,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "dorsais oceânicas",
+      "relevo submarino",
+      "placas tectônicas"
+    ],
     "imagem_apoio": "1ano/img/125/p25q10.png",
     "pergunta": "Nas áreas onde se constituem as dorsais oceânicas, as formas de relevo submarino mais comuns são:",
     "alternativas": [

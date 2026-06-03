@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "UNICAMP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "violência no campo",
+      "conflitos agrários",
+      "grilagem",
+      "Amazônia"
+    ],
     "fonte_apoio": "(Fonte: Centro de Documentação Dom Tomás Balduino – CPT.)",
     "imagem_apoio": "2ano/img/204/s4q1.png",
     "pergunta": "O gráfico a seguir mostra que o Brasil tem registrado, nos últimos anos, crescimento da violência no campo. Assinale a alternativa que indica corretamente o que vem motivando esse fenômeno e em que região tem predominado esse tipo de ocorrência.\n\nAlternativas",
@@ -22,8 +27,13 @@
     "id": 2,
     "instituicao": "ENEM",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questão agrária",
+      "reforma agrária",
+      "estrutura fundiária",
+      "MST"
+    ],
     "fonte_apoio": "GRYNSZPAN, M. Tempo de Plantar, tempo de colher. In: Nossa História. Ano 1, nº 9, São Paulo: Vera Cruz, jul. 2004 (adaptado).",
     "pergunta": "A questão agrária e as lutas de hoje pela terra são herdeiras de processos transcorridos nas décadas de 1940 a 1960. Contudo, se no contexto anterior a questão agrária tinha em sua base o arcaísmo do mundo rural, hoje ela é resultante dos processos de modernização da agricultura.\n\nA modernização da agricultura no Brasil aprofundou as causas da luta pela terra a partir dos anos 1970, pois",
     "alternativas": [
@@ -41,8 +51,13 @@
     "id": 3,
     "instituicao": "UEG",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "modernização agrícola",
+      "agronegócio",
+      "agricultura familiar",
+      "estrutura fundiária"
+    ],
     "pergunta": "A modernização da agricultura brasileira, que no início do século XXI está presente em quase todas as regiões do país, ainda é tratada na literatura como sendo de cunho “conservadora”, uma vez que essa modernização.",
     "alternativas": [
       "reduziu o crescimento desordenado das cidades.",
@@ -59,8 +74,13 @@
     "id": 4,
     "instituicao": "IFPE",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "estrutura fundiária",
+      "latifúndio",
+      "concentração de terras",
+      "período colonial"
+    ],
     "fonte_apoio": "Disponível em: http://guebala.blogspot.com.br/2011/11/ estrutura-fundiaria-do-brasil-continua.html>. Acesso em: 04set.2013",
     "imagem_apoio": "2ano/img/204/s4q4.png",
     "pergunta": "\"A estrutura fundiária do Brasil continua a mesma do período colonial”. A afirmação de Gilmar Mauro, dirigente nacional do Movimento dos Trabalhadores Rurais Sem Terra, o MST, não é mera retórica. Está calcada em estudos que comprovam que pouco se avançou em termos de distribuição da terra desde os tempos da Coroa Portuguesa.\n\nO coeficiente de Gini, índice utilizado em pesquisas científicas para medir o grau de desigualdade social, revela que a concentração de terra no país até aumentou, se os dados analisados forem os do Instituto Brasileiro de Geografia e Estatística (IBGE).\n\nCom base nas informações acima e nos seus conhecimentos sobre a estrutura fundiária brasileira, assinale a alternativa correta.",
@@ -79,8 +99,13 @@
     "id": 5,
     "instituicao": "ENEM",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "reforma agrária",
+      "questão agrária",
+      "latifúndio",
+      "MST"
+    ],
     "texto_apoio": "TEXTO I \"A nossa luta é pela democratização da propriedade da terra, cada vez mais concentrada em nosso país. Cerca de 1% de todos os proprietários controla 46% das terras. Fazemos pressão por meio da ocupação de latifúndios improdutivos e grandes propriedades, que não cumprem a função social, como determina a Constituição de 1988. Também ocupamos as fazendas que têm origem na grilagem de terras públicas.\" TEXTO II \"O pequeno proprietário rural é igual a um pequeno proprietário de loja: quanto menor o negócio, mais difícil de manter, pois tem de ser produtivo e os encargos são difíceis de arcar. Sou a favor de propriedades produtivas e sustentáveis e que gerem empregos. Apoiar uma empresa produtiva que gere emprego é muito mais barato e gera muito mais do que apoiar a reforma agrária.\"",
     "fonte_apoio": "LESSA, C. Disponível em: www.observadorpolitico.org.br. Acesso em: 25 ago 2011 (adaptado).",
     "pergunta": "Nos fragmentos dos textos, os posicionamentos em relação à reforma agrária se opõem. Isso acontece porque os autores associam a reforma agrária, respectivamente, à",
@@ -99,8 +124,13 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "estrutura fundiária",
+      "concentração fundiária",
+      "imóveis rurais",
+      "reforma agrária"
+    ],
     "fonte_apoio": "Fonte: Incra, 2006.",
     "imagem_apoio": "2ano/img/204/s4q6.png",
     "pergunta": "O gráfico representa a relação entre o tamanho e a totalidade dos imóveis rurais no Brasil. Que característica da estrutura fundiária brasileira está evidenciada no gráfico apresentado?",
@@ -119,8 +149,13 @@
     "id": 7,
     "instituicao": "ENEM",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "luta pela terra",
+      "MST",
+      "questão agrária",
+      "conflitos fundiários"
+    ],
     "fonte_apoio": "Imagem (Foto: Fonte: Comissão Pastoral da Terra — CPT OLIVEIRA, A. U. A longa marcha do campesinato brasileiro: movimentos sociais, conflitos e reforma agrária. Revista Estudos Avançados. Vol. 15 n. 43, São Paulo, set./dez. 2001.)",
     "imagem_apoio": "2ano/img/204/s4q7.png",
     "pergunta": "A luta pela terra no Brasil é marcada por diversos aspectos que chamam a atenção. Entre os aspectos positivos, destaca-se a perseverança dos movimentos do campesinato e, entre os aspectos negativos, a violência que manchou de sangue essa história. Os movimentos pela reforma agrária articularam-se por todo o território nacional, principalmente entre 1985 e 1996, e conseguiram de maneira expressiva a inserção desse tema nas discussões pelo acesso à terra.\n\nO mapa seguinte apresenta a distribuição dos conflitos agrários em todas as regiões do Brasil nesse período, e o número de mortes ocorridas nessas lutas.\n\nCom base nas informações do mapa acerca dos conflitos pela posse de terra no Brasil, a região.",
@@ -139,8 +174,12 @@
     "id": 8,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "reforma agrária",
+      "função social da terra",
+      "estrutura fundiária"
+    ],
     "pergunta": "Sobre o conceito de reforma agrária, é correto afirmar que:",
     "alternativas": [
       "a reforma agrária é o processo de redistribuição das propriedades produtivas de um determinado país ou região.",
@@ -157,8 +196,13 @@
     "id": 9,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "reforma agrária",
+      "obstáculos fundiários",
+      "latifúndio",
+      "concentração de terras"
+    ],
     "pergunta": "No Brasil, a reforma agrária nunca foi plenamente realizada. Um dos principais fatores que impedem a sua realização no país é:",
     "alternativas": [
       "A falta de interesse dos camponeses em adquirir propriedades, já que o Brasil possui diversas propriedades disponíveis para a redistribuição de terras.",
@@ -175,8 +219,13 @@
     "id": 10,
     "instituicao": "FAMP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questão agrária",
+      "MST",
+      "sem-terra",
+      "reforma agrária"
+    ],
     "texto_apoio": "“O nascimento do MST no Brasil ocorreu a partir do final da década de 70, quando da transformação da agricultura brasileira, que expulsou muitas pessoas do campo, sobretudo aquelas que utilizavam intensivamente a mão-de-obra humana como a principal ferramenta de trabalho e que com a mecanização das lavouras tiveram que abandonar o campo, visto que o trabalho braçal já não era mais necessário. Em meio a esse cenário de luta pela terra, surge também a questão da Reforma Agrária, principal bandeira de luta dos militantes desse movimento, que lutam pela re-divisão (justa) de terras. ”",
     "fonte_apoio": "(O MST e os Movimentos Sociais do Campo, Weber, 2013).",
     "pergunta": "Leia o texto e observe a ilustração\n\nCom base na ilustração, no texto e nos conhecimentos sobre o espaço agrário, pode-se afirmar:",

@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "oceanos",
+      "hidrografia",
+      "recursos hídricos"
+    ],
     "imagem_apoio": "1ano/img/124/p24q1.png",
     "pergunta": "Relacione as colunas, indicando as respectivas características dos oceanos.\n\nMarque a alternativa correta.",
     "alternativas": [
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "IFC",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "bacias hidrográficas",
+      "hidrografia",
+      "recursos hídricos"
+    ],
     "imagem_apoio": "1ano/img/124/p24q2.png",
     "pergunta": "A imagem a seguir representa uma bacia hidrográfica:\n\nSobre bacias hidrográficas, analise os itens a seguir, indicando (V) para Verdadeiro ou (F) para Falso.\n\n( ) Uma bacia hidrográfica é formada por um rio principal que recebe as águas de seus afluentes e subafluentes, que, por sua vez, são formados pela captação das águas das chuvas e pelas nascentes.\n\n( ) A área da bacia hidrográfica é delimitada pelo relevo, e os pontos mais altos são denominados divisores de águas.\n\n( ) A foz em delta ocorre quando o rio acumula sedimentos no leito, formando ilhas fluviais no final do seu curso, e as águas correm ramificadas.\n\n( ) A dinâmica de escoamento e a infiltração de água não estão associadas ao tipo de ocupação do solo.\n\n( ) A maior parte das grandes bacias hidrográficas tem suas águas levadas pelos rios principais para os mares e oceanos.\n\nA sequência CORRETA de preenchimento dos parênteses, de cima para baixo, é:",
     "alternativas": [
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos hídricos",
+      "hidrografia",
+      "ciclo hidrológico"
+    ],
     "pergunta": "(UFC) A água constitui um elemento fundamental para o desenvolvimento da vida no nosso planeta. Com relação a esse elemento, assinale a alternativa correta.",
     "alternativas": [
       "A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, além dos desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.",
@@ -58,8 +70,12 @@
     "id": 4,
     "instituicao": "IFRS",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos hídricos",
+      "poluição das águas",
+      "hidrografia"
+    ],
     "imagem_apoio": "1ano/img/124/p24q4.png",
     "pergunta": "Observe a tirinha abaixo\n\nA esse respeito, é correto afirmar que:",
     "alternativas": [
@@ -77,8 +93,12 @@
     "id": 5,
     "instituicao": "ENEM",
     "ano": "1998",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ciclo hidrológico",
+      "evaporação",
+      "precipitação"
+    ],
     "texto_apoio": "“O sol participa do ciclo da água, pois além de aquecer a superfície da Terra dando origem aos ventos, provoca a evaporação da água dos rios, lagos e mares. O vapor da água, ao se resfriar, condensa-se em minúsculas gotinhas, que se agrupam formando as nuvens, neblinas ou névoas úmidas. As nuvens podem ser levadas pelos ventos de uma região para outra . Com a condensação e, em seguida, a chuva, a água volta à superfície da Terra, caindo sobre o solo, rios, lagos e mares. Parte dessa água evapora retornando à atmosfera, outra parte escoa superficialmente ou infiltra-se no solo, indo alimentar rios e lagos. Esse processo é chamado de ciclo da água”.",
     "pergunta": "Considere, então, as seguintes afirmativas:\n\nI. a evaporação é maior nos continentes, uma vez que o aquecimento ali é maior do que nos oceanos.\n\nII. a vegetação participa do ciclo hidrológico por meio da transpiração.\n\nIII. o ciclo hidrológico condiciona processos que ocorrem na litosfera, na atmosfera e na biosfera.\n\nIV. a energia gravitacional movimenta a água dentro do seu ciclo.\n\nV. o ciclo hidrológico é passível de sofrer interferência humana, podendo apresentar desequilíbrios.",
     "alternativas": [
@@ -96,8 +116,12 @@
     "id": 6,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "correntes marítimas",
+      "oceanos",
+      "circulação oceânica"
+    ],
     "imagem_apoio": "1ano/img/124/p24q6.png",
     "pergunta": "Assinale a alternativa que representa o conceito correto de correntes marítimas:",
     "alternativas": [
@@ -114,8 +138,12 @@
     "id": 7,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "oceanos",
+      "correntes marítimas",
+      "influência oceânica no clima"
+    ],
     "texto_apoio": "“A circulação dos oceanos tem uma influência direta sobre a vida na Terra. Sem os oceanos,extensas áreas do nosso planeta seriam excessivamente quentes ou frias. Assim, para melhor compreender o sistema climático do planeta, devemos estudar a circulação oceânica, analisando os efeitos simultâneos da distribuição da temperatura em toda a superfície do globo terrestre conjuntamente com a distribuição dos ventos marítimos. No início, os navios foram os únicos meios de transporte usados para estudar as correntes oceânicas. Seu levantamento limitava-se a alguns meses de observações quase sempre regionais. Com o uso dos satélites foi possível desenvolver novas e mais completas e preciosas técnicas de observação da circulação global das correntes marítimas a partir do espaço, por intermédio do estudo topográfico da superfície marítima. […]”.",
     "fonte_apoio": "MOURÃO, R. R. F. Os Oceanos e o Clima. Revista ECO-21, ed. 41. Disponível em: http://www.eco21.com.br. Acesso em: 22/11/2013.",
     "pergunta": "A importância e influência dos oceanos sobre os climas devem-se à:\n\nI. capacidade de transportar o calor das zonas equatoriais e tropicais para os polos, ajudando a reduzir as diferenças térmicas entre as diferentes regiões do planeta;\n\nII. manutenção das baixas temperaturas durante todo o ano nas regiões costeiras em função da ação de suas águas gélidas sobre o litoral;\n\nIII. habilidade em conter a amplitude térmica nas regiões litorâneas em razão do aumento da umidade do ar por eles proporcionada.\n\nEstá (ao) correta (s) a (s) alternativa (s):",
@@ -134,8 +162,12 @@
     "id": 8,
     "instituicao": "UDESC-SC",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "hidrografia",
+      "recursos hídricos",
+      "bacias hidrográficas"
+    ],
     "pergunta": "Sobre a hidrografia é correto afirmar, exceto:",
     "alternativas": [
       "\"Regime\" é o nome dado à variação na quantidade de água no leito de um rio, ao longo do ano.",
@@ -152,8 +184,12 @@
     "id": 9,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos hídricos",
+      "hidrografia",
+      "ciclo hidrológico"
+    ],
     "pergunta": "(UNIOESTE-PR) Considerando que a água constitui um dos elementos físicos mais importantes na composição da paisagem terrestre, assinale a alternativa INCORRETA",
     "alternativas": [
       "entre as múltiplas funções da água, destaca-se o seu papel como agente modelador do relevo da superfície terrestre devido à sua capacidade de controlar tanto a formação como o comportamento mecânico dos solos e das rochas.",
@@ -170,8 +206,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "correntes marítimas",
+      "oceanos",
+      "circulação oceânica"
+    ],
     "imagem_apoio": "1ano/img/124/p24q10.png",
     "pergunta": "(FESP) – Assinale a opção que menciona o fato geográfico esquematicamente representado na figura abaixo.",
     "alternativas": [

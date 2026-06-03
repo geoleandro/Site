@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "ENEM",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "sustentabilidade",
+      "desenvolvimento sustentável",
+      "questões ambientais"
+    ],
     "texto_apoio": "“A produtividade ecológica articula-se com uma produtividade tecnológica, porque não se deve renunciar a todas as possibilidades da ciência e da técnica, e sim reencaminhar muitas delas para a construção desse novo paradigma produtivo. Essa construção social, porém, não pode ser guiada por um planejamento centralizado da tecnologia normatizada pela ecologia. A alma dessa nova economia humana são os valores culturais. Cada cultura dá significado a seus conhecimentos, a sua natureza, recriando-a e abrindo o fluxo de possibilidades de coevolução, articulando o pensamento humano com o potencial da natureza. ”",
     "fonte_apoio": "LEFF, E. Discursos sustentáveis. São Paulo: Cortez, 2010 (adaptado).",
     "pergunta": "O paradigma produtivo apresentado no texto tem como base a harmonização entre tecnologia e ecologia e propõe uma sustentabilidade pautada no(a)",
@@ -23,8 +27,12 @@
     "id": 2,
     "instituicao": "FUVEST",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "resíduos sólidos",
+      "poluição",
+      "questões ambientais"
+    ],
     "fonte_apoio": "http://www.revistapesquisafapesp.br, maio de 2016.",
     "imagem_apoio": "1ano/img/132/p32q2.png",
     "pergunta": "Nas últimas décadas, descobriu-se que os volumosos e inadequados descartes de resíduos plásticos e de outros materiais sintéticos, mesmo quando realizados nos continentes, podem resultar em consideráveis depósitos em áreas distantes nos oceanos e mares, seja em seu fundo, na coluna d’água, ou na sua superfície. Como consequência, ocorrem mudanças físicas, químicas e ecológicas nesses oceanos e mares, em que alguns desses depósitos já atingem a escala planetária, como é o caso dos materiais plásticos flutuantes representados na figura.\n\nOs depósitos flutuantes representados na figura apresentam-se.",
@@ -43,8 +51,12 @@
     "id": 3,
     "instituicao": "CFTMG",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "questões ambientais globais",
+      "cartografia temática",
+      "impactos ambientais"
+    ],
     "imagem_apoio": "1ano/img/132/p32q3.png",
     "pergunta": "Observe o mapa em sequência.\n\nA partir da análise do mapa, é INCORRETO afirmar que a vegetação primária indicada pela letra.",
     "alternativas": [
@@ -61,8 +73,12 @@
     "id": 4,
     "instituicao": "ENEM",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questões ambientais globais",
+      "políticas ambientais",
+      "sustentabilidade"
+    ],
     "texto_apoio": "“A questão ambiental, uma das principais pautas contemporâneas, possibilitou o surgimento de concepções políticas diversas, dentre as quais se destaca a preservação ambiental, que sugere uma ideia de intocabilidade da natureza e impede o seu aproveitamento econômico sob qualquer justificativa.”",
     "fonte_apoio": "PORTO-GONÇALVES, C. W. A globalização da natureza e a natureza da globalização. Rio de Janeiro: Civilização Brasileira, 2006 (adaptado).",
     "pergunta": "Considerando as atuais concepções políticas sobre a questão ambiental, a dinâmica caracterizada no texto quanto à proteção do meio ambiente está baseada na:",
@@ -81,8 +97,12 @@
     "id": 5,
     "instituicao": "UCS",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "efeito estufa",
+      "aquecimento global",
+      "gases de efeito estufa"
+    ],
     "imagem_apoio": "1ano/img/132/p32q5.png",
     "pergunta": "O efeito estufa é um processo em que o calor proveniente do Sol é absorvido pela Terra e posteriormente é irradiado para a atmosfera, onde parte desse calor fica retido devido à presença de gases, como o vapor d’água, o gás carbônico e o metano.\n\nAnalise a veracidade (V) ou a falsidade (F) das afirmações a seguir, relacionadas ao efeito estufa.\n\n( ) O efeito estufa é um processo natural que, se não existisse, tornaria a Terra um planeta gelado e inabitável para a maioria dos seres vivos.\n\n( ) O aumento da emissão de gases, como o gás carbônico e o metano, pode gerar um aumento na retenção de calor na atmosfera, aquecendo nosso planeta.\n\n( ) uma fonte emissora de metano é o rebanho de gado bovino, pois tais animais eliminam grandes quantidades desse gás, proveniente do metabolismo dos seus tratos digestórios.\n\n( ) A quantidade de gás carbônico na atmosfera vem aumentando desde a Revolução Industrial.\n\nAssinale a alternativa que preenche corretamente os parênteses, de cima para baixo.",
     "alternativas": [
@@ -100,8 +120,12 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "resíduos sólidos",
+      "consumo",
+      "questões ambientais"
+    ],
     "texto_apoio": "“Como os combustíveis energéticos, as tecnologias da informação são, hoje em dia, indispensáveis em todos os setores econômicos. Através delas, um maior número de produtores é capaz de inovar e a obsolescência de bens e serviços se acelera. Longe de estender a vida útil dos equipamentos e a sua capacidade de reparação, o ciclo de vida desses produtos diminui, resultando em maior necessidade de matéria-prima para a fabricação de novos.”",
     "fonte_apoio": "GROSSARD, C. Le Monde Diplomatique Brasil. Ano 3, nº 36, 2010 (adaptado)",
     "pergunta": "A postura consumista de nossa sociedade indica a crescente produção de lixo, principalmente nas áreas urbanas, o que, associado a modos incorretos de deposição,",
@@ -120,8 +144,12 @@
     "id": 7,
     "instituicao": "ENEM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questões ambientais",
+      "impactos ambientais",
+      "desenvolvimento econômico"
+    ],
     "texto_apoio": "“A poluição e outras ofensas ambientais ainda não tinham esse nome, mas já eram largamente notadas no século XIX, nas grandes cidades inglesas e continentais. E a própria chegada ao campo das estradas de ferro suscitou protestos. A reação antimaquinista, protagonizada pelos diversos luddismos, antecipa a batalha atual dos ambientalistas. Esse era, então, o combate social contra os miasmas urbanos”.",
     "fonte_apoio": "SANTOS M. A natureza do espaço: técnica e tempo, razão e emoção. São Paulo: EDUSP, 2002 (adaptado).",
     "pergunta": "O crescente desenvolvimento técnico-produtivo impõe modificações na paisagem e nos objetos culturais vivenciados pelas sociedades. De acordo com o texto, pode-se dizer que tais movimentos sociais emergiram e se expressaram por meio:",
@@ -140,8 +168,12 @@
     "id": 8,
     "instituicao": "UFMG",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "sustentabilidade",
+      "desenvolvimento sustentável",
+      "questões ambientais"
+    ],
     "imagem_apoio": "1ano/img/132/p32q8.png",
     "pergunta": "Analise este fluxograma:\n\nA partir da análise desse fluxograma e considerando-se outros conhecimentos sobre o assunto, é INCORRETO afirmar que:",
     "alternativas": [
@@ -158,8 +190,12 @@
     "id": 9,
     "instituicao": "FCMMG",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "desenvolvimento sustentável",
+      "sustentabilidade",
+      "questões ambientais"
+    ],
     "pergunta": "A definição mais aceita para se considerar o desenvolvimento como sustentável é a de que ele deve ser capaz de suprir as necessidades da geração atual, sem comprometer a capacidade de atender às necessidades das futuras gerações. A ideia é que as atividades humanas não esgotem os recursos naturais, como a água limpa, as terras aráveis e as florestas. Ao mesmo tempo, todo desenvolvimento deve garantir condições de educação, de moradia e de saúde que forneçam vida digna à população.\n\nCom relação ao que se deve considerar sobre o desenvolvimento sustentável e as atitudes que os países devem tomar na sua consecução, todas as afirmações abaixo estão corretas, EXCETO:",
     "alternativas": [
       "Se os países não mudarem os diversos modelos predatórios e inconsequentes de desenvolvimento em direção a um modelo mais sustentável, muitas regiões do planeta sofrerão as consequências da degradação ambiental, como a intensificação de fenômenos naturais (secas, tsunamis, furacões), a queda na produtividade de alimentos e o consequente aumento da fome.",
@@ -175,8 +211,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "questões ambientais",
+      "desenvolvimento econômico",
+      "impactos ambientais"
+    ],
     "pergunta": "(UFRJ) A inevitável devastação ambiental decorrente do processo de desenvolvimento industrial é um \"quadro\" que começa a se modificar a partir da defesa pública de um novo conceito: O DESENVOLVIMENTO SUSTENTÁVEL.\n\nO uso dessa expressão tem a finalidade de:",
     "alternativas": [
       "sustentar a inevitável necessidade do desenvolvimento.",

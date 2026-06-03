@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UFSM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "espaço geográfico",
+      "ciência geográfica",
+      "análise espacial"
+    ],
     "texto_apoio": "“Desde que passou a se organizar socialmente, a espécie humana buscou também soluções para sua sobrevivência. A utilização do conhecimento geográfico permitiu ao ser humano reconhecer paisagens e lugares de acordo com o clima, o relevo, a cultura e os recursos naturais disponíveis. Agora que o ser humano já ocupa quase todo o planeta e as informações são transmitidas com rapidez e em grande volume, é praticamente impossível entender e acompanhar mudanças, fatos ou fenômenos sem conhecer geografia”. .",
     "fonte_apoio": "Fonte: ALMEIDA, L.M.A.de; RIGOLIN, T. B. Fronteiras da globalização: o mundo natural e o espaço humanizado. 2.ed, V. 1. São Paulo: Ática, 2014. p.09. (Adaptado).",
     "pergunta": "O texto destaca a geografia como uma ciência para entender o mundo porque o espaço geográfico",
@@ -23,8 +27,12 @@
     "id": 2,
     "instituicao": "UFT",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "espaço geográfico",
+      "conceitos geográficos",
+      "território"
+    ],
     "texto_apoio": "“O espaço é, também e sempre, formado de fixos e de fluxos. Nós temos coisas fixas, fluxos que se originam dessas coisas fixas, fluxos que chegam a essas coisas fixas. Tudo isso, junto, é o espaço”.",
     "fonte_apoio": "SANTOS, Milton. METAMORFOSE DO ESPAÇO HABITADO. São Paulo: Hucitec, 1996. p. 77.",
     "pergunta": "Sobre o espaço geográfico é CORRETO afirmar que:",
@@ -43,8 +51,12 @@
     "id": 3,
     "instituicao": "",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "densidade demográfica",
+      "população relativa",
+      "distribuição populacional"
+    ],
     "pergunta": "A expressão ____________________, também chamada de “população relativa”, refere-se à proporção entre quantidade de pessoas presentes em um dado território em relação à área que ocupam. É um importante índice capaz de indicar quando há um grande número de habitantes em áreas reduzidas ou quando ocorrem casos de vazios territoriais.\n\nAssinale a alternativa que preenche corretamente a lacuna indicada no texto:",
     "alternativas": [
       "Demografia.",
@@ -61,8 +73,13 @@
     "id": 4,
     "instituicao": "UERJ",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "distribuição populacional",
+      "mapa",
+      "populações absolutas",
+      "continentes"
+    ],
     "imagem_apoio": "3ano/img/306/t6q4.png",
     "pergunta": "De acordo com os mapas, as áreas do mundo com as maiores populações absolutas em 2000 são:",
     "alternativas": [
@@ -79,8 +96,13 @@
     "id": 5,
     "instituicao": "UEA",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "refugiados",
+      "ONU",
+      "status jurídico",
+      "direitos humanos"
+    ],
     "texto_apoio": "“Qualquer estrangeiro que possua fundado temor de perseguição por motivos de raça, religião, opinião pública, nacionalidade ou por pertencer a um grupo social específico e também por aqueles que tenham sido obrigados a deixar seu país de origem devido a uma grave e generalizada violação de direitos humanos”.",
     "pergunta": "As condições fixadas pela ONU para a concessão desse status são: Sendo assim, o requerente passa a desfrutar dos mesmos direitos dos habitantes locais. (www.revistaforum.com.br. Adaptado.) O excerto refere-se ao status de",
     "alternativas": [
@@ -98,8 +120,13 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "globalização",
+      "migração laboral",
+      "trabalho",
+      "fronteiras"
+    ],
     "texto_apoio": "“Existe um processo cada vez maior de globalização da mão de obra especializada. Isto é, não só da mão de obra especializadíssima, mas da mão de obra que vem sendo excepcionalmente requisitada no mundo inteiro e, portanto, não seguirá as regras normais de leis de imigração, do salário e das condições de trabalho”.",
     "fonte_apoio": "CASTELLS, M. A sociedade em rede. São Paulo: Paz e Terra, 1999.",
     "pergunta": "De acordo com o texto, na globalização, o tratamento ao migrante laboral condiciona-se pelo(a)",
@@ -118,8 +145,12 @@
     "id": 7,
     "instituicao": "FAI",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "desenvolvimento econômico",
+      "crescimento",
+      "IDH"
+    ],
     "pergunta": "É comum a percepção de que “crescimento” é um fenômeno apenas econômico, enquanto “desenvolvimento” é o crescimento comprometido também como o social.\n\nA partir disso, os países considerados subdesenvolvidos apresentam como características marcantes:",
     "alternativas": [
       "elevada disponibilidade de capital e mão de obra escassa.",
@@ -136,8 +167,12 @@
     "id": 8,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "subdesenvolvimento",
+      "países periféricos",
+      "desigualdade global"
+    ],
     "pergunta": "(UDESC 2017 Muitos países são denominados subdesenvolvidos. Analise as proposições em relação ao subdesenvolvimento e as suas características principais.\n\nI. A grande desigualdade social e a dependência tecnológica e econômica são elementos essenciais para a definição de subdesenvolvimento.\n\nII. Devido à modernização, na última década, nas áreas de agricultura, estrutura industrial e geração de energia elétrica, o Brasil deixou de ser um país subdesenvolvido e passou a ser classificado como desenvolvido.\n\nIII. Em geral, os países subdesenvolvidos têm sua economia baseada na exportação de produtos primários e importação de produtos industrializados com elevada tecnologia.\n\nIV. A agricultura de subsistência é a principal forma de manutenção de países subdesenvolvidos, pois esses não apresentam relações com o mercado externo.\n\nV. São países, em geral, com elevadas taxas de dívidas externas e têm como credores grupos financeiros internacionais, cujas sedes se localizam em países desenvolvidos.\n\nAssinale a alternativa correta.",
     "alternativas": [
       "Somente as afirmativas I, II e IV são verdadeiras.",
@@ -154,8 +189,13 @@
     "id": 9,
     "instituicao": "FUVEST",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "trabalho doméstico",
+      "OIT",
+      "trabalho de cuidado",
+      "gênero"
+    ],
     "imagem_apoio": "3ano/img/306/t6q9.png",
     "pergunta": "Conforme definição da Organização Internacional do Trabalho (OIT), o trabalho de cuidado envolve dois tipos de atividades: as diretas, como alimentar um bebê ou cuidar de um doente, e as indiretas, como cozinhar ou limpar. O gráfico apresenta a desigualdade de gênero no trabalho de cuidado no mundo, expressa pela diferença entre homens e mulheres quanto ao tempo e à remuneração.\n\nA partir dos dados apresentados, é correto afirmar que as regiões com maior e menor desigualdade são, respectivamente:",
     "alternativas": [
@@ -173,8 +213,12 @@
     "id": 10,
     "instituicao": "UEA",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "IDH",
+      "índices de desenvolvimento",
+      "saúde educação renda"
+    ],
     "pergunta": "Resultante de três indicadores básicos que caracterizam as condições de vida da população, este índice avalia não apenas a riqueza de um país, mas também como o crescimento econômico foi revertido em benefícios sociais para toda a população. Referência na classificação de países e podendo ser calculado para estados e regiões, este índice denomina-se",
     "alternativas": [
       "PIB.",

@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "revolução industrial",
+      "fontes de energia",
+      "industrialização",
+      "carvão"
+    ],
     "texto_apoio": "Relacione as duas colunas abaixo, enumerando a segunda de acordo com a primeira:",
     "pergunta": "\n\nAssinale a alternativa que corresponde à sequência correta:\n\n<table style='width:100%;border-collapse:collapse;font-size:0.95em'><thead><tr><th style='border:1px solid #ccc;padding:8px;background:#f5f5f5;width:45%'>Tipo de Indústria</th><th style='border:1px solid #ccc;padding:8px;background:#f5f5f5'>Característica</th></tr></thead><tbody><tr><td style='border:1px solid #ccc;padding:8px'>1. Indústria de base</td><td style='border:1px solid #ccc;padding:8px'>A. ( ) Produção de materiais duráveis</td></tr><tr><td style='border:1px solid #ccc;padding:8px'>2. Indústria de bens de capital</td><td style='border:1px solid #ccc;padding:8px'>B. ( ) Produção de materiais não duráveis</td></tr><tr><td style='border:1px solid #ccc;padding:8px'>3. Indústria de bens de consumo</td><td style='border:1px solid #ccc;padding:8px'>C. ( ) Produção de peças para indústrias</td></tr><tr><td style='border:1px solid #ccc;padding:8px'></td><td style='border:1px solid #ccc;padding:8px'>D. ( ) Transformação de matérias-primas para produção industrial</td></tr><tr><td style='border:1px solid #ccc;padding:8px'></td><td style='border:1px solid #ccc;padding:8px'>E. ( ) Produção de máquinas industriais</td></tr></tbody></table>",
     "alternativas": [
@@ -21,8 +26,12 @@
     "id": 2,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "industrialização",
+      "desenvolvimento industrial",
+      "história econômica"
+    ],
     "texto_apoio": "“Todo o sistema de produção e organização do espaço geográfico passou a ser definido pelo Estado [...]. O Estado determinava as metas a serem alcançadas e o tipo de produção de cada estabelecimento, realizava a distribuição e a comercialização dos produtos e investia em grandes obras de infraestrutura, como a canalização de rios, instalação de usinas de energia elétrica e ampliação do sistema ferroviário [...]. O objetivo era eliminar, ou diminuir ao máximo, a importação de equipamentos e matérias-primas industriais”.",
     "fonte_apoio": "(LUCCI, E. A., et al. Território e sociedade no mundo globalizado: Geografia Geral e do Brasil. Ensino Médio. Editora Saraiva, 2005.pp.68-69)",
     "pergunta": "O texto se refere à:",
@@ -41,8 +50,12 @@
     "id": 3,
     "instituicao": "",
     "ano": "(2020)",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "industrialização",
+      "modelo industrial",
+      "substituição de importações"
+    ],
     "texto_apoio": "Leia o trecho a seguir e responda ao que se pede:\n\nEssa forma de industrialização é a que nos interessa mais de perto por ter ocorrido no Brasil. Trata-se de uma industrialização que, como o nome sugere, foi historicamente atrasada em relação à original e ocorreu em muitos países subdesenvolvidos [...]. Foi mais comum no século XX, embora, em alguns casos, tenha se iniciado de forma tímida no fim do século XIX”.",
     "fonte_apoio": "Vicentini, José William. Geografia: o mundo em transição. São Paulo: Editora Ática, 2012. p.67.",
     "pergunta": " A forma de industrialização a que o autor se refere é:",
@@ -61,8 +74,12 @@
     "id": 4,
     "instituicao": "MACKENZIE",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "primeira revolução industrial",
+      "máquina a vapor",
+      "produção fabril"
+    ],
     "imagem_apoio": "3ano/img/307/t7q4.png",
     "pergunta": "Tendo como base de análise a figura e os aspectos que definiram a Primeira Revolução Industrial, considere as afirmativas a seguir:\n\nI. Inicia-se nas últimas décadas do século XVIII e estende-se até meados do século XIX. A invenção da máquina a vapor e o uso do carvão como fonte de energia primária marcam o início das mudanças nos processos produtivos.\n\nII. O Reino Unido foi o primeiro país a reunir condições básicas para o início da industrialização devido à intensa acumulação de capitais no decorrer do Capitalismo Comercial.\n\nIII. Os mais destacados segmentos fabris desta fase foram o têxtil, o metalúrgico e o de mineração.\n\nIV. As transformações produtivas desta fase atingiram rapidamente outros países como a Alemanha, França e Estados Unidos ainda no Século XVIII recrutando operários com salários atrativos promovendo, assim, um intenso êxodo rural.\n\nEstão corretas:",
     "alternativas": [
@@ -79,8 +96,13 @@
     "id": 5,
     "instituicao": "UFRGS",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tecnologia",
+      "revolução industrial",
+      "transformação do espaço",
+      "modernização"
+    ],
     "pergunta": "O desenvolvimento tecnológico dos séculos XIX e XX alterou as formas de trabalho, as paisagens geográficas, os hábitos e os costumes das populações. Assinale a alternativa correta em relação a essas alterações:",
     "alternativas": [
       "A produção de elevadores e automóveis, no final do século XIX e início do século XX, contribuiu para a verticalização e a intensificação da estrutura viária no espaço urbano.",
@@ -97,8 +119,12 @@
     "id": 6,
     "instituicao": "UNESP",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "localização industrial",
+      "fatores de produção",
+      "indústria"
+    ],
     "pergunta": "Assinale a alternativa que indica corretamente o fator considerado determinante para a localização das indústrias durante a Primeira Revolução Industrial (final do século XVIII a meados do século XIX).",
     "alternativas": [
       "Reservas de petróleo.",
@@ -115,8 +141,12 @@
     "id": 7,
     "instituicao": "UDESC",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "industrialização",
+      "revolução industrial",
+      "desenvolvimento industrial"
+    ],
     "pergunta": "Assinale a alternativa INCORRETA, sobre a industrialização.",
     "alternativas": [
       "Nunca houve na história um tipo de sociedade industrial que não fosse nomeada e produtivamente capitalista, ou seja, não há indústria em uma sociedade que não seja capitalista.",
@@ -133,8 +163,12 @@
     "id": 8,
     "instituicao": "UFC",
     "ano": "2003",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "primeira revolução industrial",
+      "espaço geográfico",
+      "urbanização"
+    ],
     "pergunta": "A Primeira Revolução Industrial provocou uma grande transformação no espaço geográfico. A esse respeito, leia as afirmações abaixo.\n\nI. Aconteceu um intenso processo de urbanização, e as cidades passaram a comandar as atividades econômicas e a organização do espaço geográfico.\n\nII. Com a ampliação da divisão internacional do trabalho, alguns países europeus especializaram-se na produção industrial, controlando o mercado mundial de produtos industrializados.\n\nIII. Aconteceram grandes mudanças no modo de produção, sem implicações na organização política e territorial da Europa.\n\nAssinale a alternativa correta.",
     "alternativas": [
       "Apenas I é verdadeira.",
@@ -151,8 +185,12 @@
     "id": 9,
     "instituicao": "UNIRIO-RJ",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "localização industrial",
+      "teoria de Weber",
+      "custos de transporte"
+    ],
     "texto_apoio": "“Como a economia capitalista caracteriza-se pela propriedade privada do capital, os proprietários organizam seus negócios em condições de concorrência. Todos procuram maximizar seus lucros, diminuindo os custos de produção e ampliando seus mercados. [...] A concorrência tem início quando os empresários tomam decisões relativas à localização das suas fábricas. A opção por determinado lugar é o elemento inicial que pode definir o sucesso ou o fracasso de um empreendimento”.",
     "fonte_apoio": "Magnoli, D.; Araujo, R. Geografia: a construção do mundo. São Paulo: Moderna, 2005.",
     "pergunta": "\n\nA teoria básica da localização industrial está contida na seguinte afirmativa:",
@@ -171,8 +209,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "divisão internacional do trabalho",
+      "imperialismo",
+      "industrialização"
+    ],
     "pergunta": "(MUNDO EDUCAÇÃO 2022) A antiga Divisão Internacional do Trabalho e o imperialismo trouxeram novas formas de dominação e hierarquização no espaço mundial. Entre as novidades que passaram a determinar as formas de poder na relação, destaca-se:",
     "alternativas": [
       "A presença de forças militares como estratégia de dominação.",

@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UFU",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "vulcanismo",
+      "placas tectônicas",
+      "erupção vulcânica"
+    ],
     "fonte_apoio": "(Disponível em: https://g1.globo.com/mundo /noticia/vulcao-shinmoedake-entra-em-erupcao-no-japao.ghtml Acesso em: 14 de mar, 2017).",
     "pergunta": "O vulcão Shinmoedake, localizado na ilha japonesa de Kyushu, está ativo e lança fumaça a até 3 mil metros de altura. A Agência Meteorológica do Japão está alertando as pessoas a ficarem longe da montanha de 1.421 metros e advertindo que grandes rochas podem ser cuspidas até uma distância de 3 quilômetros.\n\nA ocorrência no Japão do fenômeno geológico apresentado está relacionada principalmente à",
     "alternativas": [
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "UFRGS",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "placas tectônicas",
+      "vulcanismo",
+      "terremotos"
+    ],
     "fonte_apoio": "Fonte: CASSETI, Valter. Elementos de geomorfologia. Goiânia, UFG, 1994.",
     "imagem_apoio": "1ano/img/110/p10q2.png",
     "pergunta": "A figura a seguir representa processos associados à tectônica de placas\n\nIdentifique os processos destacados pelas letras A, B e C, respectivamente.",
@@ -41,8 +49,12 @@
     "id": 3,
     "instituicao": "ENEM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "terremotos",
+      "placas tectônicas",
+      "tsunamis"
+    ],
     "texto_apoio": "“O terremoto de 8,8 na escala Richter que atingiu a costa oeste do Chile, em fevereiro, provocou mudanças significativas no mapa da região. Segundo uma análise preliminar, toda a cidade de Concepción se deslocou pelo menos três metros para o oeste. Buenos Aires moveu-se cerca de 2,5 centímetros para oeste, enquanto Santiago, mais próxima do local do evento, deslocou-se quase 30 centímetros para o oeste-sudoeste. As cidades de Valparaíso, no Chile, e Mendoza, na Argentina, também tiveram suas posições alteradas significativamente (13,4 centímetros e 8,8 centímetros, respectivamente)”.",
     "fonte_apoio": "Revista InfoGNSS, Curitiba, ano 6, n. 31, 2010",
     "imagem_apoio": "1ano/img/110/p10q3.png",
@@ -62,8 +74,12 @@
     "id": 4,
     "instituicao": "FUVEST",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "vulcanismo",
+      "dinâmica terrestre",
+      "erupção vulcânica"
+    ],
     "imagem_apoio": "1ano/img/110/p10q4.png",
     "pergunta": "O vulcanismo é um dos processos da dinâmica terrestre que sempre encantou e amedrontou a humanidade, existindo diversos registros históricos referentes a esse processo. Sabe-se que as atividades vulcânicas trazem novos materiais para locais próximos à superfície terrestre.\n\nA esse respeito, pode-se afirmar corretamente que o vulcanismo",
     "alternativas": [
@@ -81,8 +97,12 @@
     "id": 5,
     "instituicao": "IFRR",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "vulcanismo",
+      "placas tectônicas",
+      "magma"
+    ],
     "pergunta": "O vulcanismo é um fenômeno natural importante, que acontece na crosta terrestre e principalmente no fundo dos oceanos, que cobrem 2/3 da superfície de nosso planeta, totalmente formados de lavas, onde também encontramos a mais colossal cadeia montanhosa com cerca de 70000 Km de comprimento. Um vulcão constantemente expelindo lava escaldante pode parecer amedrontador. Apesar de assustador, o vulcanismo teve papel determinante nos primórdios da formação geológica de nosso globo e continua atuante no processo de modelagem do relevo terrestre.\n\nSobre a importância desse fenômeno, são verdadeiras as seguintes alternativas, exceto:",
     "alternativas": [
       "é responsável pelo aparecimento de novas terras e na subsistência de milhares de pessoas que vivem e cultivam as ricas terras de seus arredores.",
@@ -99,8 +119,12 @@
     "id": 6,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "dobramentos",
+      "tectonismo",
+      "relevo"
+    ],
     "fonte_apoio": "Uma das 33 gravuras da série Fuji, elaboradas entre 1823 e 1829, mostra um tsunami.",
     "imagem_apoio": "1ano/img/110/p10q6a.png",
     "pergunta": "(UNIVALE) Observe a imagem:\n\nAssinale a alternativa verdadeira sobre a formação de um tsunami semelhante ao que atingiu o sudeste asiático no final de 2004:",
@@ -119,8 +143,12 @@
     "id": 7,
     "instituicao": "ENEM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "terremotos",
+      "placas tectônicas",
+      "tsunamis"
+    ],
     "texto_apoio": "“De repente, sente-se uma vibração que aumenta rapidamente; lustres balançam, objetos se movem sozinhos e somos invadidos pela estranha sensação de medo do imprevisto. Segundos parecem horas, poucos minutos são uma eternidade. Estamos sentindo os efeitos de um terremoto, um tipo de abalo sísmico”.",
     "fonte_apoio": "ASSAD, L. Os (não tão) imperceptíveis movimentos da Terra. ComCiência: Revista Eletrônica de Jornalismo Científico, n.º 117, abr. 2010. Disponível em: http://comciencia.br. Acesso em: 2 mar. 2012.",
     "pergunta": "O fenômeno físico descrito no texto afeta intensamente as populações que ocupam espaços próximos às áreas de:",
@@ -139,8 +167,12 @@
     "id": 8,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tectonismo",
+      "dobramentos",
+      "relevo"
+    ],
     "fonte_apoio": "Formação causada pelo tectonismo. Fonte: A TERRA. 5. ed. São Paulo: Ática, 1997. p.15. Formação causada pelo tectonismo",
     "imagem_apoio": "1ano/img/110/p10q8.png",
     "pergunta": "(UCS) O tectonismo é definido como um movimento lento e prolongado da crosta terrestre, resultante da movimentação do magma pastoso. Observe a figura abaixo\n\nAssinale a alternativa que indica o tipo de formação representado na figura",
@@ -159,8 +191,12 @@
     "id": 9,
     "instituicao": "",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "terremotos",
+      "placas tectônicas",
+      "zonas sísmicas"
+    ],
     "pergunta": "Os terremotos de grande magnitude e intensidade ocorrem principalmente em locais onde há o encontro de diferentes placas tectônicas. Essas áreas são denominadas:",
     "alternativas": [
       "Zonas de divergência.",
@@ -177,8 +213,12 @@
     "id": 10,
     "instituicao": "UERR",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "relevo",
+      "agentes internos",
+      "agentes externos"
+    ],
     "pergunta": "As forças que criam e alteram as formas de relevo podem agir no interior da Terra (agentes internos) ou na superfície terrestre (agentes externos). São agentes internos do relevo: o tectonismo, o vulcanismo e os abalos sísmicos.\n\nI. O tectonismo ou diastrofismo compreende todos os movimentos que deslocam e deformam as rochas que constituem a crosta terrestre. Manifesta-se por movimentos epirogênicos ou orogênicos.\n\nII. Vulcanismo é um fenômeno geológico que ocorre do interior da Terra para a superfície, quando há o extravasamento do magma em forma de lava, além de gases e fumaça.\n\nIII. Abalos sísmicos são causados pela ruptura das rochas nas camadas exógenas da crosta, ou pela movimentação das placas tectônicas, que produzem ondas vibratórias que se espalham em várias direções, originando os sismos.\n\nSobre os agentes internos, estão corretos os itens:",
     "alternativas": [
       "I, II e III.",

@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "UFMG",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "região Sul",
+      "geoeconômica",
+      "organização regional",
+      "características econômicas"
+    ],
     "pergunta": "Considerando-se a organização geoeconômica da Região Sul brasileira, é INCORRETO afirmar que:",
     "alternativas": [
       "a indústria da Região Metropolitana de Porto Alegre conserva profundos vínculos com a agropecuária regional, que lhe fornece importante percentual da matéria-prima processada.",
@@ -20,8 +25,13 @@
     "id": 2,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "colonização do Sul",
+      "imigração europeia",
+      "ocupação da terra",
+      "região Sul"
+    ],
     "pergunta": "(CESGRANRIO) Em relação ao povoamento e à ocupação da terra na região Sul do Brasil, podemos afirmar:",
     "alternativas": [
       "A região da encosta do Rio Grande do Sul, coberta por matas, foi ocupada por imigrantes alemães e italianos, estabelecidos em pequenas e médias propriedades policultoras",
@@ -38,8 +48,12 @@
     "id": 3,
     "instituicao": "MACKENZIE-SP",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "mapa regional",
+      "área destacada",
+      "regiões brasileiras"
+    ],
     "imagem_apoio": "2ano/img/234/s34q3.png",
     "pergunta": "No mapa, a área destacada se refere:",
     "alternativas": [
@@ -56,8 +70,13 @@
     "id": 4,
     "instituicao": "UEAM",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "frentes de expansão",
+      "transformações espaciais",
+      "Amazônia",
+      "ocupação do território"
+    ],
     "texto_apoio": "“A Amazônia é o último reduto de 60% das tribos indígenas atualmente existentes no Brasil. Para o homem do campo, sem-terra, ela representa também a última fronteira. O deslocamento das frentes de expansão sobre a Amazônia intensifica-se a partir de 1965”.",
     "fonte_apoio": "RIBEIRO, Berta. O Índio na História do Brasil, 1997.",
     "pergunta": "Leia o texto.\n\nDe acordo com o texto, as frentes de expansão geraram transformações espaciais na Amazônia, caracterizadas pelo:",
@@ -76,8 +95,13 @@
     "id": 5,
     "instituicao": "UEFS-BA",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Nordeste",
+      "mapa regional",
+      "características regionais",
+      "semiárido"
+    ],
     "fonte_apoio": "Fonte: Superintendência de Desenvolvimento do Nordeste (Sudene).",
     "imagem_apoio": "2ano/img/234/s34q5.png",
     "pergunta": "A partir da observação do mapa e dos conhecimentos sobre o Nordeste brasileiro, é correto afirmar:",
@@ -96,8 +120,13 @@
     "id": 6,
     "instituicao": "PUC-RJ",
     "ano": "2002",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "caatinga",
+      "semiárido",
+      "Nordeste",
+      "vegetação"
+    ],
     "imagem_apoio": "2ano/img/234/s34q6.png",
     "pergunta": "Do litoral do Ceará e do Rio Grande do Norte até o médio São Francisco, estende-se uma mancha semiárida, dentro do domínio tropical, abrangendo quase 1 milhão de km².\n\nEm relação às características do clima e da vegetação desta área, analise as afirmativas a seguir:\n\nI. As médias térmicas anuais elevadas e as ações dos ventos originam índices de evaporação maiores que os de precipitação.\n\nII. As médias pluviométricas inferiores a 600 mm anuais dão origem a áreas secas bem marcadas com indícios de desertificação.\n\nIII. A semiaridez é percebida no quadro natural pela vegetação xerófila e pelo escoamento temporário dos rios.\n\nAs afirmativas CORRETAS são:",
     "alternativas": [
@@ -115,8 +144,13 @@
     "id": 7,
     "instituicao": "UEMS",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "expansão canavieira",
+      "cana-de-açúcar",
+      "Pantanal",
+      "agronegócio"
+    ],
     "fonte_apoio": "Fonte: Folha de São Paulo, 11 abr. 2009.",
     "imagem_apoio": "2ano/img/234/s34q7.png",
     "pergunta": "Considere o mapa intitulado “A última fronteira: expansão da cana pode atingir borda do Pantanal”, para responder às questões a seguir\n\nCom base nas informações do mapa, analise as afirmativas a seguir.\n\nI. Transformações socioespaciais decorrentes da expansão do setor sucroalcooleiro na área de planalto, apresentam-se como um elemento complicador à manutenção da qualidade ambiental da Planície Pantaneira.\n\nII. O avanço do plantio de cana-de-açúcar na área do planalto, configura-se como uma condição preocupante para a manutenção da qualidade hídrica dos rios pantaneiros; isso se deve, principalmente, ao fato de haver uma relação de interdependência nos sistemas hidrográfico e pluvial das áreas do planalto e da planície.\n\nIII. A expansão do plantio de cana-de-açúcar na área do planalto reflete o crescimento do setor sucroalcooleiro no país. Esse crescimento tem ligação direta com políticas internacionais, que priorizam a diminuição da emissão de gases que contribuem para o aquecimento global;",
@@ -135,8 +169,13 @@
     "id": 8,
     "instituicao": "ENEM",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Pantanal",
+      "preservação ambiental",
+      "planície pantaneira",
+      "questão ambiental"
+    ],
     "texto_apoio": "“As áreas do planalto do cerrado – como a chapada dos Guimarães, a serra de Tapirapuã e a serra dos Parecis, no Mato Grosso, com altitudes que variam de 400 m a 800 m – são importantes para a planície pantaneira mato-grossense (com altitude média inferior a 200 m), no que se refere à manutenção do nível de água, sobretudo durante a estiagem. Nas cheias, a inundação ocorre em função da alta pluviosidade nas cabeceiras dos rios, do afloramento de lençóis freáticos e da baixa declividade do relevo, entre outros fatores. Durante a estiagem, a grande biodiversidade é assegurada pelas águas da calha dos principais rios, cujo volume tem diminuído, principalmente nas cabeceiras”.",
     "fonte_apoio": "Cabeceiras ameaçadas. Ciência Hoje. Rio de Janeiro: SBPC. Vol. 42, jun. 2008 (adaptado).",
     "pergunta": "A medida mais eficaz a ser tomada, visando à conservação da planície pantaneira e à preservação de sua grande biodiversidade, é a conscientização da sociedade e a organização de movimentos sociais que exijam:",
@@ -155,8 +194,13 @@
     "id": 9,
     "instituicao": "UECE",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "diversidade regional",
+      "perfil natural",
+      "perfil socioeconômico",
+      "regiões brasileiras"
+    ],
     "pergunta": "O Brasil, em virtude da sua extensão territorial, apresenta uma grande diversidade regional em termos físico-ambientais, como também sociais, culturais e, principalmente, econômicos.\n\nAtente ao que se diz a respeito da diversidade das regiões do Brasil.\n\nI. Na Região Nordeste, o grande número de cidades litorâneas e seus atrativos particulares contribuem para o desenvolvimento do turismo e para o fortalecimento da economia.\n\nII. A Região Centro-Oeste é a maior região do Brasil, correspondendo a aproximadamente 42% do território nacional, e possui uma população de cerca de 15,8 milhões de habitantes.\n\nIII. Segundo o IBGE, a Região Sudeste concentra aproximadamente 40% da população brasileira. O que a torna a região mais populosa e povoada do País.\n\nEstá correto o que se afirma apenas em",
     "alternativas": [
       "I e III.",
@@ -172,8 +216,13 @@
     "id": 10,
     "instituicao": "UFV-MG",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "concentração industrial",
+      "desconcentração industrial",
+      "Sudeste",
+      "indústria brasileira"
+    ],
     "pergunta": "O processo de desenvolvimento industrial no Brasil produziu uma concentração das indústrias na região Sudeste do país, sobretudo na cidade de São Paulo.\n\nAtualmente, observamos uma tendência à desconcentração industrial e, ainda que as indústrias permaneçam no Sudeste, a intensa transformação proporcionada pelo desenvolvimento científico vem produzindo uma reorganização do espaço industrial. O espaço geográfico brasileiro vem se tornando mais fluido e revela novas localizações para as indústrias. A partir dessas informações, analise as afirmativas abaixo: I. O aumento dos custos dos terrenos e imóveis nas grandes metrópoles tornou esses locais menos atrativos para as indústrias. II. A evolução das tecnologias e infraestrutura de transporte e comunicação aumentou os custos de transferência das indústrias. III. A pressão exercida pela força dos sindicatos que reivindicam melhorias tanto dos salários quanto das condições de trabalho contribuiu para o deslocamento das indústrias. IV. O elevado custo da produção nos centros urbanos exigiu um novo arranjo espacial das indústrias, o que foi facilitado pelos avanços científicos. Está CORRETO o que se afirma apenas em:\n\nO espaço geográfico brasileiro vem se tornando mais fluido e revela novas localizações para as indústrias.\n\nA partir dessas informações, analise as afirmativas abaixo:\n\nI. O aumento dos custos dos terrenos e imóveis nas grandes metrópoles tornou esses locais menos atrativos para as indústrias.\n\nII. A evolução das tecnologias e infraestrutura de transporte e comunicação aumentou os custos de transferência das indústrias.\n\nIII. A pressão exercida pela força dos sindicatos que reivindicam melhorias tanto dos salários quanto das condições de trabalho contribuiu para o deslocamento das indústrias.\n\nIV. O elevado custo da produção nos centros urbanos exigiu um novo arranjo espacial das indústrias, o que foi facilitado pelos avanços científicos.\n\nEstá CORRETO o que se afirma apenas em:",
     "alternativas": [
       "II, III e IV.",

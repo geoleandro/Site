@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UEMA",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "rochas magmáticas",
+      "rochas",
+      "minerais"
+    ],
     "texto_apoio": "Rocha é um agregado natural, formada por um ou mais minerais, ou ainda mineraloides — vidro vulcânico e matéria orgânica -, constituindo a parte essencial da crosta terrestre. Elas podem ser classificadas de acordo com sua composição química, sua forma estrutural, ou sua textura, porém a sua classificação mais utilizada se refere aos processos de sua formação. Pelas suas origens-formação, as rochas são classificadas como ígneas ou magmáticas, sedimentares e metamórficas. As rochas magmáticas foram formadas de magma, dentro da crosta, por resfriamento lento ou fora dela, resfriando rapidamente; as sedimentares, pela deposição de sedimentos e, posterior compressão destes, e as rochas metamórficas por qualquer uma das primeiras duas categorias e, posteriormente, modificadas pelos efeitos de temperatura e de pressão. Essas formações são de grande utilidade para o ser humano e, atualmente, as rochas são utilizadas na construção civil de diversas formas. Elas são retiradas da natureza em estado bruto e, em seguida, são modeladas de acordo com a finalidade de uso.",
     "fonte_apoio": "Fonte: http://www.cprm.gov.br",
     "pergunta": "Leia o texto a seguir para responder à questão\n\nSão exemplos de rochas magmáticas e metamórficas e suas utilidades, respectivamente",
@@ -23,8 +27,12 @@
     "id": 2,
     "instituicao": "UPF",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ciclo das rochas",
+      "rochas",
+      "minerais"
+    ],
     "imagem_apoio": "1ano/img/113/p13q2.png",
     "pergunta": "Observe o infográfico sobre o ciclo das rochas e, com base nas informações e nos seus conhecimentos, analise as afirmativas que seguem.\n\nI. As rochas magmáticas podem se formar lentamente no interior da crosta terrestre pela solidificação do magma, sendo chamadas de rochas magmáticas intrusivas ou plutônicas ou abissais. II. O conjunto de processos que transforma sedimentos inconsolidados em rocha sedimentar é conhecido como diagênese. III. São exemplos de rochas metamórficas o arenito, o mármore e o granito. IV. O ciclo das rochas é ininterrupto e ocorre com os movimentos da crosta terrestre, com o vulcanismo, com o intemperismo ou com a erosão, por exemplo.\n\nÉ correto apenas o que se afirma em:",
     "alternativas": [
@@ -42,8 +50,12 @@
     "id": 3,
     "instituicao": "UCPEL-RS",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "rochas",
+      "tipos de rocha",
+      "minerais"
+    ],
     "pergunta": "A rocha é um agregado natural formado por um ou mais minerais. De acordo com sua origem, as rochas podem ser classificadas de diferentes maneiras.\n\nLeia as informações sobre os diferentes tipos de rochas, classificadas quanto à origem.\n\nI. São formadas pelo resfriamento e pela solidificação do magma pastoso. Uma grande parte dessas rochas é bastante antiga e resistente. Predominam entre ela o granito e o diabásio. Constituem o embasamento rochoso dos continentes.\n\nII. São formadas a partir das transformações sofridas por outras rochas. Essas mudanças ocorrem, quando as rochas são submetidas ao calor e à pressão do interior da Terra. A rocha transformada adquire novas características e tem sua composição alterada.\n\nIII. São rochas de origem química, em que os sedimentos se acumulam e se consolidam em camadas ou estratos. Decorrem dos processos que desgastam e sedimentam a superfície terrestre.\n\nÉ correto afirmar que os tipos de rochas referidos são, respectivamente,",
     "alternativas": [
       "estalactite, estalagmite e minerais.",
@@ -60,8 +72,12 @@
     "id": 4,
     "instituicao": "UNESP",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "rochas",
+      "ciclo das rochas",
+      "tipos de rocha"
+    ],
     "fonte_apoio": "(Wilson Teixeira et al. (Orgs.). Decifrando a Terra, 2009. Adaptado.)",
     "imagem_apoio": "1ano/img/113/p13q4.png",
     "pergunta": "As rochas, que podem ser divididas em três grandes grupos, estão em constante transformação, passando de um tipo a outro, em virtude das dinâmicas interna e externa da Terra. O chamado “Ciclo das Rochas” ilustra as diversas possibilidades de transformação de um tipo de rocha em outro.\n\nA partir do exame da figura, é correto afirmar que as letras X, Y e Z correspondem, respectivamente, a:",
@@ -80,8 +96,12 @@
     "id": 5,
     "instituicao": "ENEM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "eras geológicas",
+      "fósseis",
+      "tempo geológico"
+    ],
     "imagem_apoio": "1ano/img/113/p13q5.png",
     "pergunta": "O esquema mostra depósitos em que aparecem fósseis de animais do Período Jurássico. As rochas em que se encontram esses fósseis são:",
     "alternativas": [
@@ -99,8 +119,12 @@
     "id": 6,
     "instituicao": "UFV",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "agentes endógenos",
+      "agentes exógenos"
+    ],
     "pergunta": "O relevo terrestre é extremamente dinâmico e está sujeito às ações de forças endógenas e exógenas. Em relação ao relevo terrestre e seus agentes de formação, assinale a afirmativa INCORRETA:",
     "alternativas": [
       "Intemperismo é um conjunto de processos físicos, químicos e biológicos que operam na superfície terrestre ocasionando a desintegração e decomposição das rochas.",
@@ -116,8 +140,12 @@
     "id": 7,
     "instituicao": "UEG",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "rochas",
+      "crosta terrestre",
+      "tipos de rocha"
+    ],
     "pergunta": "A crosta é a parte sólida do globo terrestre. É constituída por três grandes grupos de rochas que se formam sob condições e em períodos diferentes, originando uma diversidade de tipos específicos. Sobre a origem das rochas, é CORRETO afirmar:",
     "alternativas": [
       "As rochas magmáticas são resultantes do processo de solidificação do magma e se dividem em dois grupos: intrusivas e extrusivas.",
@@ -133,8 +161,12 @@
     "id": 8,
     "instituicao": "UDESC",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "rochas",
+      "minerais",
+      "recursos minerais"
+    ],
     "pergunta": "As rochas e os minerais são importantes recursos para as sociedades. Observando a construção de uma casa, podem-se encontrar várias rochas e minerais. Assim, relacione a primeira coluna (elementos de uma casa) com a segunda coluna (rochas e minerais).\n\nA alternativa correta, de cima para baixo, é:",
     "alternativas": [
       "2 – 3 – 4 – 1 – 5.",
@@ -151,8 +183,12 @@
     "id": 9,
     "instituicao": "",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "eras geológicas",
+      "fósseis",
+      "tempo geológico"
+    ],
     "pergunta": "[…] Utilizando um novo método de datação de rochas, pesquisadores relacionaram com precisão a Província Magmática do Atlântico Central, série de grandes erupções ocorridas há cerca de 200 milhões de anos, com a Quarta Grande Extinção pela qual a Terra passou.\n\nO texto permite identificar que as rochas estudadas foram:",
     "alternativas": [
       "expelidas desde o núcleo em estado sólido.",
@@ -168,8 +204,12 @@
     "id": 10,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "intemperismo",
+      "rochas",
+      "agentes externos"
+    ],
     "pergunta": "O intemperismo é um tipo de agente de transformação de relevo caracterizado por atuar através de processos químicos, físicos e biológicos, transformando as rochas. O tipo de rocha formada pela ação do intemperismo é a:",
     "alternativas": [
       "ígnea.",

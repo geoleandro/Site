@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UNICAMP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "poluição atmosférica",
+      "smog",
+      "impactos ambientais"
+    ],
     "imagem_apoio": "1ano/img/122/p22q1.png",
     "pergunta": "O termo smog se forma pela junção das palavras smoke (fumo) e fog (neblina). Ele designa o resultado da mistura de um processo natural (a neblina) com os fumos produzidos pela atividade industrial e queima de combustíveis fósseis, originando um tipo de nevoeiro que pode ser altamente tóxico.\n\nEsse fenômeno afeta principalmente as metrópoles, como São Paulo, detentora de 30% da frota de automóveis no Brasil. Um fato interessante ocorreu em 2018, com a greve dos caminhoneiros: a poluição caiu pela metade, segundo a Cetesb. Com a falta de combustíveis, houve menor circulação de carros na capital; além disso, a greve teve impacto na produção industrial, pela falta de insumos e de pessoal. Especialistas esperam que essa situação atípica na cidade leve à criação de políticas públicas voltadas à diminuição da poluição atmosférica.\n\nConsiderando que houve redução de smog na cidade de São Paulo durante a greve dos caminhoneiros e levando em conta as condições climáticas descritas no gráfico, infere-se que ocorreu maior redução do:\n\nAlternativas",
     "alternativas": [
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "UPE",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "aquecimento global",
+      "mudanças climáticas",
+      "efeito estufa"
+    ],
     "texto_apoio": "“As cidades são as áreas onde o homem mais percebe a mudança no clima decorrente da interferência provocada pela estrutura urbana nas trocas de energia entre a superfície e a atmosfera. ”",
     "pergunta": "Considere a afirmação a seguir:\n\nCom relação ao assunto abordado, assinale a alternativa CORRETA.",
     "alternativas": [
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "IFPE",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questões ambientais globais",
+      "escala geográfica",
+      "impactos ambientais"
+    ],
     "pergunta": "Na Geografia, a noção de escala é fundamental para se compreender a abrangência e o nível de repercussão espacial dos fenômenos. Assim, enquanto alguns problemas ambientais ultrapassam os limites dos países onde são gerados, outros, a despeito da intensidade e dos prejuízos causados, geram impacto no âmbito local ou, no máximo, regional.\n\nCom base nisso, leia atentamente as proposições a seguir e analise a veracidade ou a falsidade das afirmativas, seja em relação à descrição do processo apresentado, seja em relação à escala espacial de sua manifestação.\n\nI. A chuva ácida é resultado imediato do uso de combustíveis fósseis introduzidos pela industrialização, pois compostos químicos, como o dióxido de enxofre e o dióxido de nitrogênio, podem alcançar a estratosfera e provocar reações químicas que resultam na acidificação das chuvas em todo o globo. Escala de abrangência: global.\n\nII. A erosão e a degradação dos solos podem ocorrer sem a intervenção humana, como no caso da lixiviação, do intemperismo e das inundações, porém o avanço dos desmatamentos e do uso de técnicas agrícolas inadequadas leva tais processos a se intensificarem e comprometerem o solo para a agricultura, com a formação de ravinas e voçorocas. Escala de abrangência: local.\n\nIII. Consideradas efeitos da ação humana como fator climático, as ilhas de calor ocorrem em grandes aglomerações urbanas, nas zonas mais densas da mancha urbana. As variações térmicas ocorrem basicamente por causa das diferenças de irradiação de calor entre as áreas impermeabilizadas e as áreas verdes e por causa da concentração de poluentes na atmosfera. Escala de abrangência: local.\n\nIV. A queima de combustíveis fósseis por veículos motorizados e indústrias e os desmatamentos estariam contribuindo para o aumento da concentração de dióxido de carbono (CO2) na atmosfera, tendo como principal efeito o aumento das médias térmicas, o que poderia elevar o derretimento das calotas polares e o nível dos oceanos. Escala de abrangência: global.\n\nV. As inversões térmicas acontecem quando camadas mais elevadas da atmosfera são ocupadas com ar relativamente mais quente e leve, que não consegue descer. Como resultado, a circulação atmosférica global se detém por certo tempo, ocorrendo uma inversão das camadas habituais: o ar frio, mais pesado, fica embaixo e não sobe, e a camada quente fica em cima e não consegue descer. Escala de abrangência: global.\n\nTomando por base a descrição do processo e sua abrangência espacial, as únicas proposições verdadeiras são:",
     "alternativas": [
       "I, III e V.",
@@ -58,8 +70,12 @@
     "id": 4,
     "instituicao": "UNCISAL",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "ilha de calor urbana",
+      "clima urbano",
+      "sustentabilidade"
+    ],
     "imagem_apoio": "1ano/img/122/p22q4.png",
     "pergunta": "O combate à formação da ilha de calor urbana exige o repensar das práticas de ocupação do espaço. É preciso criar novas estratégias de planejamento urbano e uma legislação mais restritiva, que priorize o bem-estar em detrimento da especulação financeira.\n\nAlgumas medidas que podem ser tomadas pelo poder público para diminuir o efeito da ilha de calor urbana são:",
     "alternativas": [
@@ -77,8 +93,12 @@
     "id": 5,
     "instituicao": "FGV-SP",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "efeito estufa",
+      "aquecimento global",
+      "gases de efeito estufa"
+    ],
     "imagem_apoio": "1ano/img/122/p22q5.png",
     "pergunta": "A questão está relacionada à figura a seguir:\n\nSobre a figura, é correto afirmar que representa, de forma esquemática, o fenômeno denominado:",
     "alternativas": [
@@ -96,8 +116,12 @@
     "id": 6,
     "instituicao": "FUVEST SP",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "poluição atmosférica",
+      "qualidade do ar",
+      "impactos ambientais"
+    ],
     "imagem_apoio": "1ano/img/122/p22q6.png",
     "pergunta": "Segundo a CETESB, depois de cinco anos de melhora, a qualidade do ar na metrópole de São Paulo voltou a piorar nos últimos dois anos. O número de vezes em que a qualidade do ar ficou inadequada ou má foi 54% maior em 2007, se comparada à de 2006. Dentre possíveis causas e consequências, é correto afirmar que a gravidade do problema da poluição, a partir de 2006,",
     "alternativas": [
@@ -115,8 +139,12 @@
     "id": 7,
     "instituicao": "UFCG PB",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "poluição atmosférica",
+      "impactos ambientais",
+      "centros urbanos"
+    ],
     "imagem_apoio": "1ano/img/122/p22q7.png",
     "pergunta": "Os grandes centros urbano-industriais são assentamentos humanos cujas paisagens são marcadas pelo elevado grau de artificialidade dos objetos geográficos que as compõem. Essa substituição da primeira natureza por uma natureza artificializada traz, em muitas delas, impactos ambientais negativos, atualmente um dos sérios problemas urbanos.\n\nA figura abaixo ilustra um desses impactos ambientais. Trata-se da (das):",
     "alternativas": [
@@ -134,8 +162,12 @@
     "id": 8,
     "instituicao": "PUC-RJ",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "questões ambientais",
+      "desmatamento",
+      "impactos ambientais"
+    ],
     "pergunta": "Os graves processos de degradação do meio ambiente observados no Brasil são fruto de um crescimento econômico frequentemente irracional e desordenado. Assinale a alternativa que NÃO descreve corretamente um desses processos.",
     "alternativas": [
       "A contaminação dos rios em áreas onde a garimpagem de ouro é feita com o uso de mercúrio;",
@@ -152,8 +184,12 @@
     "id": 9,
     "instituicao": "UFPEL",
     "ano": "2005",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "poluição atmosférica",
+      "impactos ambientais",
+      "centros urbanos"
+    ],
     "imagem_apoio": "1ano/img/122/p22q9.png",
     "pergunta": "A expansão das atividades econômicas que se concentram nas cidades, tem contribuído muito para agravar os problemas ambientais urbanos. Entre os principais, destacam-se as chuvas ácidas, a inversão térmica e as ilhas de calor. Tendo em vista essa situação, observe o gráfico a seguir.\n\nA partir do estudo do gráfico e de seus conhecimentos, analise as afirmativas que seguem.\n\nI. A elevação das temperaturas médias nas áreas densamente urbanizadas forma as chamadas \"ilhas de calor\", ocasionadas principalmente pela ausência de áreas verdes, pela concentração de poluentes e pelas construções de concreto.\n\nII. As grandes cidades constituem um ambiente muito favorável à ocorrência de \"inversão térmica\" - fenômeno tipicamente antrópico, -, devido à grande área desmatada e impermeabilizada pelo imenso volume de cimento, ferro e asfalto.\n\nIII. O fenômeno mostrado no gráfico refere-se ao \"efeito estufa\", fenômeno natural que consiste na dispersão de calor irradiado pela superfície terrestre e pelas partículas de gases e de água em suspensão na atmosfera, agravado pelo crescente despejo de gases que têm a capacidade de absorver o calor.\n\nIV. O gráfico mostra um fenômeno que ocorre pela substituição da vegetação por grande quantidade de casas, prédios e outras construções urbanas que diminuem significativamente a irradiação do calor para a atmosfera, em comparação com as zonas rurais, onde geralmente é maior a cobertura vegetal.\n\nEstá(ão) correta(s) apenas a(s) afirmativa(s)",
     "alternativas": [
@@ -171,8 +207,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "poluição atmosférica",
+      "combustíveis fósseis",
+      "impactos ambientais"
+    ],
     "pergunta": "(UCS-RS) Entre as maiores causas da poluição atmosférica estão a queima dos combustíveis fósseis e os resíduos gasosos da indústria. Isso provoca hoje alguns fenômenos climáticos que estão sendo acompanhados por cientistas. Considerando os fenômenos climáticos, listados na Coluna A, associe-os às características que os identificam, elencadas na Coluna B.\n\nAssinale a alternativa que preenche corretamente os parênteses, de cima para baixo.",
     "alternativas": [
       "3 - 1 - 2.",

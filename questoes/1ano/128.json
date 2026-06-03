@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UECE",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "bacias hidrográficas",
+      "hidrografia",
+      "recursos hídricos"
+    ],
     "fonte_apoio": "Botelho, R. G. M. e Silva, A. S. da. Bacia Hidrográfica e Qualidade Ambiental. Reflexões sobre a geografia física no Brasil. Vitte, A. C. Guerra, A. J. T. Rio de Janeiro. Bertrand Brasil. 2004. p. 153.",
     "pergunta": "A bacia hidrográfica é reconhecida como unidade espacial na Geografia Física desde o fim dos anos 60. Contudo, durante a última década ela foi, de fato, incorporada pelos profissionais não só da geografia, mas da grande área das chamadas Ciências Ambientais, em seus estudos e projetos de pesquisa.\n\nA importância da bacia hidrográfica como unidade de estudo, da forma como se refere o texto, se dá porque",
     "alternativas": [
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "UEMA",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fenômenos climáticos",
+      "El Niño",
+      "La Niña"
+    ],
     "texto_apoio": "“O ciclo da água é um ciclo biogeoquímico que garante que a água circule pelo meio físico e pelos seres vivos. Esse processo depende da luz solar, que garante a evaporação da água, dando início ao ciclo. O vapor de água sobe para camadas mais altas da atmosfera e condensa-se, formando nuvens, pequenas gotículas de água no estado líquido. Quando essas nuvens ficam carregadas, ocorre a precipitação (chuva), ou na forma líquida ou nas formas de granizo e de neve. A água da chuva, então, retorna para a Terra, podendo seguir diferentes caminhos, como voltar para lagos e rios ou infiltrar-se no solo, conforme a imagem a seguir”.",
     "fonte_apoio": "SANTOS, Vanessa dos. Ciclo da água, 2019. Disponível: https://brasilescola.uol.com.br/biologia/ciclo-agua.htm (Adaptado).",
     "pergunta": "Os fenômenos expressos em A, B e C são, respectivamente, conhecidos como",
@@ -41,8 +49,12 @@
     "id": 3,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "dorsais oceânicas",
+      "relevo submarino",
+      "oceanos"
+    ],
     "pergunta": "(UFAM) O termo dorsais significa:",
     "alternativas": [
       "Zonas de descontinuidades sísmicas.",
@@ -59,8 +71,12 @@
     "id": 4,
     "instituicao": "UPE",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geomorfologia fluvial",
+      "hidrografia",
+      "meandro"
+    ],
     "imagem_apoio": "1ano/img/128/p28q4.png",
     "pergunta": "Observe, atentamente, o desenho esquemático a seguir, correspondente a uma morfoestrutura observada em área de relevo submarino, fortemente influenciada pelas ações tectônicas.\n\nO que a seta está indicando?",
     "alternativas": [
@@ -78,8 +94,12 @@
     "id": 5,
     "instituicao": "UECE",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "geomorfologia fluvial",
+      "hidrografia",
+      "bacias hidrográficas"
+    ],
     "pergunta": "Analise as afirmações que versam sobre a geomorfologia fluvial e demais processos associados.\n\nAssinale com V as afirmações verdadeiras e com F, as falsas.\n\n( ) Os rios são poderosos agentes de transformação da paisagem em virtude da sua capacidade de erodir, transportar e depositar.\n\n( ) Diversos rios que drenam litologias cristalinas podem ser classificados como rios antecedentes.\n\n( ) As bacias de drenagem apresentam áreas muito pequenas que juntas compõem a bacia hidrográfica de um rio.\n\n( ) Os processos aluviais podem compreender erosão, transporte e sedimentação, também em leques aluviais.\n\nA sequência correta, de cima para baixo, é:",
     "alternativas": [
       "V, V, F, V.",
@@ -95,8 +115,12 @@
     "id": 6,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "recursos hídricos",
+      "distribuição da água",
+      "hidrografia"
+    ],
     "fonte_apoio": "Fonte de pesquisa: IBGE Países@. Disponível em: http: //www.ibge.gov.br. Acesso em: 3 set. 2011.",
     "imagem_apoio": "1ano/img/128/p28q6.png",
     "imagem_apoio_2": "1ano/img/128/p28q6a.png",
@@ -116,8 +140,12 @@
     "id": 7,
     "instituicao": "ENEM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos hídricos",
+      "consumo de água",
+      "sustentabilidade"
+    ],
     "fonte_apoio": "TEIXEIRA, W. et al. Decifrando a Terra. São Paulo: Cia. Editora Nacional, 2009.",
     "pergunta": "O uso da água aumenta de acordo com as necessidades da população no mundo. Porém, diferentemente do que se possa imaginar, o aumento do consumo de água superou em duas vezes o crescimento populacional durante o século XX.\n\nUma estratégia socioespacial que pode contribuir para alterar a lógica de uso da água apresentada no texto é a",
     "alternativas": [
@@ -135,8 +163,12 @@
     "id": 8,
     "instituicao": "IFMT",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "recursos hídricos",
+      "água potável",
+      "hidrografia"
+    ],
     "pergunta": "À água potável encontrada na natureza é considerada um elemento muito importante para o desenvolvimento da vida no planeta. No entanto, tem se tornado cada vez mais escassa. Com relação a esse elemento, assinale a alternativa correta.",
     "alternativas": [
       "Os recursos hídricos estão equitativamente bem distribuídos por todos os continentes e dentro deles a carência de acesso a esse bem renovável se dá não por escassez, mas por questões políticas.",
@@ -153,8 +185,12 @@
     "id": 9,
     "instituicao": "FACID",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "recursos hídricos",
+      "hidrografia",
+      "ciclo hidrológico"
+    ],
     "fonte_apoio": "Fonte: e-geo.ineti.pt. Acesso em 22/10/2011",
     "imagem_apoio": "1ano/img/128/p28q9.png",
     "pergunta": "Observe a imagem abaixo:\n\nA água constitui um elemento fundamental para o desenvolvimento da vida no nosso planeta. Com relação a esse elemento, assinale a alternativa correta.",
@@ -173,8 +209,12 @@
     "id": 10,
     "instituicao": "UFPEL",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "recursos hídricos",
+      "Dia Mundial da Água",
+      "sustentabilidade"
+    ],
     "fonte_apoio": "Diário Popular, 25 mar 2007",
     "imagem_apoio": "1ano/img/128/p28q10.png",
     "pergunta": "Observe a figura a seguir.\n\nEm 22 de março, comemora-se o Dia Mundial da Água, data criada pela ONU em 1993, com o objetivo de chamar a atenção para a escassez desse recurso, bem como para conscientizar as pessoas sobre a necessidade de preservação e reaproveitamento da água de que dispomos hoje.\n\nConsidere as alternativas abaixo a respeito da água doce.\n\nI. O aumento da população, o crescimento econômico não-sustentável e a agricultura irrigada estão entre os principais fatores que ameaçam as fontes de água em todo o mundo.\n\nII. O Brasil tem grande disponibilidade de água doce e, por essa razão, não enfrenta problemas de abastecimento em nenhuma de suas metrópoles nacionais.\n\nIII. Os fertilizantes e agrotóxicos podem modificar as características dos \"corpos de água\", gerando impactos em aquíferos, rios e mananciais.\n\nIV. A impossibilidade da dessalinização de águas salgadas do planeta dificulta a solução de um problema que, com custos pouco elevados, atenderia toda a demanda mundial.\n\nV. Uma das consequências relacionadas à falta de água potável é o aumento da incidência de doenças, como a diarreia e outros males provocados pela água contaminada, os quais causam a morte de milhões de crianças em todo mundo.\n\nSomente são corretas as afirmativas",

@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "UNICHRISTUS",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "cartografia",
+      "escala cartográfica",
+      "representação cartográfica"
+    ],
     "texto_apoio": "SENSORIAMENTO REMOTO A técnica cartográfica chamada de sensoriamento remoto consiste na transmissão, a partir de um satélite, de informações sobre a superfície do planeta ou da atmosfera. Quase toda coleta de dados físicos, para os especialistas, é feita por meio de sensoriamento remoto, com satélites especializados que tiram fotos da Terra em intervalos fixos. Para a geração das imagens pelos satélites, escolhe-se o espectro de luz que se quer enxergar. Alguns podem enviar sinais para captá-los em seu reflexo com a Terra, gerando milhares de possibilidades de informação sobre minerais, concentrações e tipos de vegetação, entre outros.",
     "fonte_apoio": "Disponível em: https://www.sogeografia.com.br /Conteudos/GeografiaFisica/Cartografia/content1.php. Acesso em: 9 jul. 2020.",
     "pergunta": "Leia atentamente.\n\nCom base no texto, pode-se concluir que a técnica cartográfica",
@@ -23,8 +27,12 @@
     "id": 2,
     "instituicao": "UPF",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "sensoriamento remoto",
+      "geotecnologias",
+      "cartografia"
+    ],
     "pergunta": "O sensoriamento remoto é um conjunto de técnicas utilizado pela cartografia para analisar e interpretar o espaço geográfico.\n\nA alternativa que indica corretamente essa técnica é:",
     "alternativas": [
       "termógrafo, bússola, curvímetro.",
@@ -41,8 +49,12 @@
     "id": 3,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "estrutura interna da Terra",
+      "camadas da Terra",
+      "litosfera"
+    ],
     "pergunta": "(ACAFE Medicina 2021) A Terra é dividida em diferentes camadas com características e composições distintas.\n\nSobre a estrutura e a dinâmica interna da Terra, assinale a alternativa incorreta:",
     "alternativas": [
       "A crosta terrestre ou litosfera é a camada mais externa da Terra, formada por placas tectônicas. A crosta oceânica, que serve de base para os oceanos, atinge uma espessura maior que a crosta continental.",
@@ -58,8 +70,12 @@
     "id": 4,
     "instituicao": "UFPI",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "eras geológicas",
+      "tempo geológico",
+      "tabela geológica"
+    ],
     "pergunta": "Marque a alternativa que indica algumas características das Eras Geológicas da Terra:",
     "alternativas": [
       "Na Era Paleozóica, durante os períodos Cretáceo e Jurássico, ocorreu a formação do petróleo e o início da separação dos continentes.",
@@ -76,8 +92,12 @@
     "id": 5,
     "instituicao": "IFRS",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "placas tectônicas",
+      "tectônica de placas",
+      "movimentos das placas"
+    ],
     "pergunta": "Considere as afirmações abaixo sobre tectônica de placas.\n\nI - O movimento das placas tectônicas é apenas convergente ou divergente.\n\nII - As zonas de convergência de placas tectônicas são as regiões mais suscetíveis a terremotos e vulcões.\n\nIII - Entre o choque de duas placas tectônicas, uma continental e outra oceânica, a placa que normalmente mergulha sob a outra é a placa oceânica, que é mais densa.\n\nIV - No livro “A origem dos continentes e oceanos”, Alfred Wegener formulou a teoria da deriva continental que afirmava que os continentes se movimentavam.\n\nEstão corretas apenas",
     "alternativas": [
       "I e II.",
@@ -94,8 +114,12 @@
     "id": 6,
     "instituicao": "IFMG",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "placas tectônicas",
+      "tectônica de placas",
+      "deriva continental"
+    ],
     "pergunta": "O estabelecimento da teoria da Tectônica de Placas foi um importante marco para o desenvolvimento das Geociências.\n\nSobre essa teoria e os processos a ela relacionados, analise as afirmativas e marque a opção correta.",
     "alternativas": [
       "Uma zona de subducção se forma na faixa de contato entre placas divergentes, como no caso da América do Sul e Nazca, em que a placa oceânica, menos densa, mergulha sobre a continental.",
@@ -111,8 +135,12 @@
     "id": 7,
     "instituicao": "UEL",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "agentes endógenos",
+      "agentes exógenos"
+    ],
     "pergunta": "A crosta terrestre sofreu, no decorrer da história da Terra, processos endógenos presentes na formação do relevo.\n\nEm relação aos processos endógenos presentes nessa formação, considere as afirmativas a seguir.\n\nI. Orogenia de dobramento resulta de pressões horizontais que formam ondulações no terreno em estruturas plásticas.\n\nII. Orogenia de falhamento é submetida a um esforço interno de grande intensidade (vertical ou inclinado) sobre rochas de estruturas rígidas que se quebram.\n\nIII. Diastrofismo resulta de movimentos da crosta produzidos por processos tectônicos provocados e propagados pela energia interna da Terra.\n\nIV. Dobramentos geológicos resultam de pressões verticais que ocorrem, geralmente, sobre as rochas basálticas.\n\nAssinale a alternativa correta.",
     "alternativas": [
       "Somente as afirmativas I e II são corretas.",
@@ -129,8 +157,12 @@
     "id": 8,
     "instituicao": "FGV-SP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "agentes externos",
+      "erosão fluvial"
+    ],
     "fonte_apoio": "(TEIXEIRA, Wilson et all, Decifrando a Terra, 2000).",
     "imagem_apoio": "1ano/img/112/p12q8.png",
     "pergunta": "Observe a sequência de imagens para responder à questão.\n\nCom base em conhecimentos acerca da tectônica global, assinale a alternativa que nomeia e explica o fenômeno responsável pela formação das ilhas vulcânicas esquematizado na sequência.",
@@ -149,8 +181,12 @@
     "id": 9,
     "instituicao": "FMJ SP",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "relevo",
+      "erosão",
+      "karst"
+    ],
     "fonte_apoio": "(www.agencia.cnptia.embrapa.br. Adaptado.)",
     "imagem_apoio": "1ano/img/112/p12q9.png",
     "pergunta": "Tal fenômeno geológico consiste na formação de grandes buracos causados por chuvas e intempéries em solos onde a vegetação é escassa, que ficam assim cascalhentos e suscetíveis de carregamento por enxurradas. Ocorre no Sul, Sudeste e Centro-Oeste do Brasil e está geralmente associado ao uso e ao tipo do solo, ao substrato geológico, às características climáticas, hidrológicas e ao relevo.\n\nO fenômeno descrito no excerto denomina-se",
@@ -169,8 +205,12 @@
     "id": 10,
     "instituicao": "UFJF",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "intemperismo",
+      "relevo",
+      "erosão"
+    ],
     "fonte_apoio": "Fonte: https://www.britannica.com /science/erosion-geology (Adaptado).",
     "imagem_apoio": "1ano/img/112/p12q10.png",
     "pergunta": "Observe a figura:\n\nTodas as figuras estão associadas ao processo de",

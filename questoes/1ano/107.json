@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "geotecnologias",
+      "GPS",
+      "sensoriamento remoto"
+    ],
     "pergunta": "(UNIFEI-SP) O monitoramento por satélite e o GPS (Sistema de Posicionamento Global) são inovações tecnológicas atualmente usadas por órgãos governamentais, agricultura, empresas, pessoas etc. Sobre essa questão, escreva verdadeiro (V) ou falso (F) para os itens abaixo e assinale a alternativa correta:\n\nI. O GPS é um Sistema de Posicionamento Global constituído por dezenas de satélites que emitem sinais de rádio captados por aparelhos especiais em qualquer ponto da superfície da Terra.\n\nII. O GPS indica ao usuário sua localização em termos de latitude, longitude e altitude.\n\nIII. Na agricultura, essas tecnologias podem ser utilizadas a fim de que se obtenha maior produtividade com custos menores.\n\nIV. Essas inovações tecnológicas permitem, por exemplo, detectar e acompanhar a direção e o deslocamento de queimadas e avaliar prejuízos em áreas atingidas por secas ou inundações.",
     "alternativas": [
       "VFVV.",
@@ -21,8 +25,12 @@
     "id": 2,
     "instituicao": "FUVEST",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geotecnologias",
+      "sensoriamento remoto",
+      "imagens de satélite"
+    ],
     "imagem_apoio": "1ano/img/107/p7q2.png",
     "pergunta": "Considere os exemplos das figuras e analise as frases abaixo, relativas às imagens de satélite e às fotografias aéreas.\n\nI. Um dos usos das imagens de satélites refere-se à confecção de mapas temáticos de escala pequena, enquanto as fotografias aéreas servem de base à confecção de cartas topográficas de escala grande.\n\nII. Embora os produtos de sensoriamento remoto estejam, hoje, disseminados pelo mundo, nem todos eles são disponibilizados para uso civil.\n\nIII. Pelo fato de poderem ser obtidas com intervalos regulares de tempo, dentre outras características, as imagens de satélite constituem-se em ferramentas de monitoramento ambiental e instrumental geopolítico valioso.\n\nEstá correto o que se afirma em:",
     "alternativas": [
@@ -40,8 +48,12 @@
     "id": 3,
     "instituicao": "UNISC",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "sensoriamento remoto",
+      "geotecnologias",
+      "cartografia"
+    ],
     "texto_apoio": "“Hoje, o sensoriamento remoto por meio de satélites representa o mais importante e eficiente recurso tecnológico de observação da Terra, permitindo rapidez e precisão nos processos de levantamento de dados e mapeamentos.” (COELHO, Marcos de Amorim; TERRA, Lygia. Geografia Geral: o espaço natural e socioeconômico. 2001, p.30)",
     "fonte_apoio": "(COELHO, Marcos de Amorim; TERRA, Lygia. Geografia Geral: o espaço natural e socioeconômico. 2001, p.30)",
     "pergunta": "A esse respeito, leia as afirmativas abaixo.\n\nI – O sensoriamento remoto é um recurso técnico para ampliar os sentidos naturais do homem.\n\nII –O sensoriamento remoto pode ser definido, de uma maneira ampla, como sendo a forma de se obter informações de um objeto ou alvo, sem que haja contato físico com o mesmo.\n\nIII – No sensoriamento remoto, as informações são obtidas utilizando-se a radiação eletromagnética, geradas por fontes naturais como o Sol e a Terra, ou por fontes artificiais como, por exemplo, o Radar.\n\nAssinale a alternativa correta.",
@@ -60,8 +72,12 @@
     "id": 4,
     "instituicao": "BRASIL ESCOLA",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geoprocessamento",
+      "sistemas de informação geográfica",
+      "análise espacial"
+    ],
     "pergunta": "A importância do Geoprocessamento reside no tratamento de imagens para a produção de mapas, cartas, projeções cartográficas e recolher dados em forma de gráficos, quadros e tabelas sobre os diversos elementos da superfície terrestre. Sobre o Geoprocessamento, assinale a alternativa incorreta:",
     "alternativas": [
       "O uso de softwares e equipamentos tecnológicos é imprescindível para a operação do Geoprocessamento.",
@@ -77,8 +93,12 @@
     "id": 5,
     "instituicao": "UNINTA",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "sensoriamento remoto",
+      "geotecnologias",
+      "imagens de satélite"
+    ],
     "pergunta": "O sensoriamento remoto é um recurso técnico para ampliar os sentidos naturais do homem. É um dispositivo ou equipamento (câmara fotográfica, radar, satélite) que capta e registra, sob a forma de imagens, a energia refletida ou emitida pelas áreas, acidentes, objetos e acontecimentos do meio ambiente, incluindo os acidentes naturais e culturais.\n\nOLIVEIRA, Cêurio. In: COELHO, Amorim. Geografia geral: o espaço natural e socioeconômico. São Paulo: Moderna, 1992.\n\nCom base no texto e nos conhecimentos sobre sensoriamento remoto e representações cartográficas, é correto afirmar:",
     "alternativas": [
       "As fotografias feitas por satélites dispensam todos os tipos de cartas geográficas temáticas.",
@@ -95,8 +115,12 @@
     "id": 6,
     "instituicao": "",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geotecnologias",
+      "GPS",
+      "sensoriamento remoto"
+    ],
     "pergunta": "Associe as colunas relacionadas com geotecnologia à esquerda com a coluna da cartografia à direita.\n\nAssinale a alternativa correta que correlaciona as duas colunas:",
     "alternativas": [
       "1, 2, 3, 5, 4.",
@@ -112,8 +136,12 @@
     "id": 7,
     "instituicao": "URCA",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "sensoriamento remoto",
+      "cartografia",
+      "geotecnologias"
+    ],
     "pergunta": "A cartografia utiliza a técnica de sensoriamento remoto na análise e interpretação do espaço geográfico. Das alternativas abaixo uma indica corretamente o material utilizado por essa técnica. Assinale-a.",
     "alternativas": [
       "Cartas náuticas, cartas marítimas e radares",
@@ -130,8 +158,12 @@
     "id": 8,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "sensoriamento remoto",
+      "geotecnologias",
+      "cartografia"
+    ],
     "texto_apoio": "A origem do sensoriamento remoto vincula-se ao surgimento da fotografia aérea. Assim, a história do sensoriamento remoto pode ser dividida em dois períodos: um, de 1860 a 1960, baseado no uso de fotografias aéreas, e outro, de 1960 aos dias de hoje, caracterizado por uma variedade de tipos de fotografias e imagens. O sensoriamento remoto é fruto de um esforço multidisciplinar que integra os avanços da Matemática, Física, Química, Biologia e das Ciências da Terra e da Computação. A evolução das técnicas de sensoriamento remoto e a sua aplicação envolvem um número cada vez maior de pessoas de diferentes áreas do conhecimento.",
     "pergunta": "(ENEM)\n\nTendo-se em vista a importância do sensoriamento remoto para as mais diversas atividades humanas, considera-se como principal objetivo dessa atividade",
     "alternativas": [
@@ -149,8 +181,12 @@
     "id": 9,
     "instituicao": "UEL",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "sensoriamento remoto",
+      "imagens de satélite",
+      "geotecnologias"
+    ],
     "imagem_apoio": "1ano/img/107/p7q9.png",
     "pergunta": "Sobre a obtenção e interpretação de imagens, é CORRETO afirmar",
     "alternativas": [
@@ -168,8 +204,12 @@
     "id": 10,
     "instituicao": "FGV-SP",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geotecnologias",
+      "GPS",
+      "mapeamento"
+    ],
     "imagem_apoio": "1ano/img/107/p7q10.png",
     "pergunta": "Leia a tirinha de Fernando Gonsales.\n\nDe maneira lúdica, a tirinha sugere o emprego do",
     "alternativas": [

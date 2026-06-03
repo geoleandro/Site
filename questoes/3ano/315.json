@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "FUVEST",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geopolítica",
+      "configuração espacial",
+      "mapa"
+    ],
     "texto_apoio": "“É de grande relevância aqui o fato de que uma grande proporção do trânsito de internet do mundo passa pelos Estados Unidos (...). Isso significa que a NSA (a agência de segurança nacional dos EUA) poderia acessar uma quantidade alarmante de ligações telefônicas simplesmente escolhendo as instalações certas. O que é ainda mais inacreditável:\n\nEssas instalações não passam de alguns prédios, conhecidos como “hotéis de telecomunicação”, que hospedam os principais centros de conexão de internet e telefonia do planeta todo.”",
     "imagem_apoio": "3ano/img/315/t15q1.png",
     "pergunta": "A respeito da configuração espacial e geopolítica retratada no excerto e no mapa, é possível afirmar que",
@@ -23,8 +27,13 @@
     "id": 2,
     "instituicao": "UNICAMP",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "data centers",
+      "infraestrutura digital",
+      "internet",
+      "distribuição geográfica"
+    ],
     "texto_apoio": "“Tem se tornado lugar comum dizer que o gigantesco volume de dados extraídos de nossa vida cotidiana está armazenado “na nuvem”. É quase como dizer: estão por toda a parte e em lugar nenhum. Flutuam. Se damos, contudo, um passo para além das metáforas, nos depararemos com a robusta infraestrutura do capitalismo digital, que está ancorada em territórios concretos e se inscreve numa geografia do poder. É assim que, segundo a UNCTAD (2021), de um total de 4.714 data centers existentes no mundo, quase 80% estão em países desenvolvidos, principalmente nos EUA e países da Europa ocidental”.",
     "pergunta": "Sobre os data centers e sua distribuição, é correto afirmar que\n\nO objetivo da questão é tratar sobre a infraestrutura necessária ao capitalismo global, principalmente em relação aos datacenters e sua distribuição no mundo. O texto destaca que a maioria esmagadora dessas infraestruturas está localizada em países desenvolvidos, especialmente nos EUA e na Europa ocidental. Isso sugere uma concentração geográfica específica, o que pode ser relevante para entender como a infraestrutura do capitalismo digital está distribuída. Além disso, a metáfora inicial sobre os dados armazenados \"na nuvem\" e a posterior menção à sua ancoragem em territórios concretos são dicas valiosas para considerar essas infraestruturas e sua relação com o poder econômico. Tente resolver sem ver a resposta\n\nResposta: Letra C. sua rarefação (pouco numeroso) no Sul-Global indica que a coleta, a armazenagem e o tratamento dos dados levanta grave problema relativo à soberania dos Estados nacionais dessa parte do mundo.",
     "alternativas": [
@@ -41,8 +50,12 @@
     "id": 3,
     "instituicao": "",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tecnologia",
+      "espaço geográfico",
+      "revolução informacional"
+    ],
     "texto_apoio": "“A tecnologia não é apenas um canal para se comunicar, cuja comunicação traz o significado de ação recíproca que ocorre entre emissor e receptor da mensagem, mas sim faz parte do ato comunicativo, estando integrada a ele. É uma nova maneira de aprender e agir, é construir novos alicerces na forma de comunicar e conhecer. Com isso, a lógica da atual sociedade consolida-se para a lógica das redes”. FORESTI, A. A era digital: apropriação tecnológica e inclusão digital. Oficina da Net, ago. 2013. Disponível em: http://www.oficinadanet.com.br. Acesso em: 12 jun. 2015.",
     "pergunta": "A integração da tecnologia com a construção das sociedades e do espaço geográfico, no momento atual da história, assinala o conceito de:",
     "alternativas": [
@@ -60,8 +73,13 @@
     "id": 4,
     "instituicao": "",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "redes geográficas",
+      "definição",
+      "fluxos",
+      "território"
+    ],
     "pergunta": "As redes geográficas são definidas:",
     "alternativas": [
       "a partir da relação do espaço e o poder do Estado.",
@@ -77,8 +95,12 @@
     "id": 5,
     "instituicao": "ENEM",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "cidades contemporâneas",
+      "complexidade urbana",
+      "metropolização"
+    ],
     "texto_apoio": "Foi-se o tempo em que era possível mostrar um mundo econômico organizado em camadas bem definidas, onde grandes centros urbanos se ligavam, por si próprios, a economias adjacentes 'lentas', com o ritmo muito mais rápido do comércio e das finanças de longo alcance. Hoje tudo ocorre como se essas camadas sobrepostas estivessem mescladas e interpermeadas. Interdependências de curto e longo alcance não podem mais ser separadas umas das outras.",
     "fonte_apoio": "RENNER, N. A globalização como reterritorialização. Cadernos Metrópole, n. 24, jut-dez. 2010 (adaptado).",
     "pergunta": "A maior complexidade dos espaços urbanos contemporâneos ressaltada no texto explica-se pela:",
@@ -97,8 +119,13 @@
     "id": 6,
     "instituicao": "FUVEST",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "internet",
+      "fluxos digitais",
+      "globalização",
+      "redes sociais"
+    ],
     "texto_apoio": "No mundo virtual, milhões de pessoas falam, compram, compartilham dados e se reúnem para tratar dos mais variados assuntos.",
     "imagem_apoio": "3ano/img/315/t15q6.png",
     "pergunta": "Nas figuras, os números mostram a movimentação média, em 1 minuto, de algumas das principais empresas e ferramentas de internet nos anos de 2015 e 2017.\n\nSobre a internet e os números mostrados nas figuras, é correto afirmar:",
@@ -117,8 +144,13 @@
     "id": 7,
     "instituicao": "IFSULDEMINAS",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "globalização",
+      "dimensões culturais",
+      "homogeneização",
+      "identidade"
+    ],
     "fonte_apoio": "(SENE, E. de; MOREIRA, J. C. Geografia Geral e do Brasil: espaço geográfico e globalizado. 2 ed. São Paulo: Scipione, 2013)",
     "pergunta": "A globalização é um fenômeno que tem várias dimensões: além da econômica, a mais evidente e perceptível, também possui a social, a cultural e a política, entre outras de menor impacto. Entretanto, todas essas dimensões se materializam no espaço geográfico em suas diversas escalas: mundial, nacional, regional e local. Os lugares estão conectados a uma rede de fluxos, controlada a partir de poucos centros de poder econômico e político. Entretanto, não são todos os lugares que estão integrados ao sistema-mundo.\n\nAssinale a alternativa CORRETA:",
     "alternativas": [
@@ -135,8 +167,12 @@
     "id": 8,
     "instituicao": "ENEM",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "produção globalizada",
+      "redes produtivas",
+      "logística"
+    ],
     "texto_apoio": "“Um carro esportivo é financiado pelo Japão, projetado na Itália e montado em Indiana, México e França, usando os mais avançados componentes eletrônicos, que foram inventados em Nova Jérsei e fabricados na Coreia. A campanha publicitária é desenvolvida na Inglaterra, filmada no Canadá, a edição e as cópias, feitas em Nova York para serem veiculadas no mundo todo. Teias globais disfarçam-se com o uniforme nacional que lhes for mais conveniente”.",
     "fonte_apoio": "REICH, R. O trabalho das nações: preparando-nos para o capitalismo no século XXI. São Paulo: Educador, 1994 (adaptado).",
     "pergunta": "A viabilidade do processo de produção ilustrado pelo texto pressupõe o uso de:",
@@ -155,8 +191,13 @@
     "id": 9,
     "instituicao": "UFTM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "redes geográficas",
+      "materialidade",
+      "infraestrutura",
+      "fluxos"
+    ],
     "texto_apoio": "A organização do espaço geográfico por meio de redes eliminou a necessidade de fixar as atividades econômicas em um determinado lugar. Isso vale para o grande número de serviços, que podem ser prestados a partir de qualquer lugar do mundo para qualquer outro, bastando que esses locais estejam conectados.",
     "fonte_apoio": "LUCCI, E. A. et. al. Território e sociedade no mundo globalizado: Geografia Geral e do Brasil. Ensino Médio. Editora Saraiva, 2005. p.127).",
     "pergunta": "A formação das redes geográficas na contemporaneidade, conforme indicado pelo trecho acima, expressa-se materialmente por meio:",
@@ -175,8 +216,13 @@
     "id": 10,
     "instituicao": "UFTM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "redes geográficas",
+      "contemporaneidade",
+      "globalização",
+      "conectividade"
+    ],
     "texto_apoio": "“A organização do espaço geográfico por meio de redes eliminou a necessidade de fixar as atividades econômicas em um determinado lugar. Isso vale para o grande número de serviços, que podem ser prestados a partir de qualquer lugar do mundo para qualquer outro, bastando que esses locais estejam conectados”.",
     "fonte_apoio": "LUCCI, E. A. et. al. Território e sociedade no mundo globalizado: Geografia Geral e do Brasil. Ensino Médio. Editora Saraiva, 2005. p.127).",
     "pergunta": "A formação das redes geográficas na contemporaneidade, conforme indicado pelo trecho acima, expressa-se materialmente por meio:",

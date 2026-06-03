@@ -13,7 +13,13 @@
     ],
     "correta": 2,
     "comentario": "<p>Comentário:</p>\n\n\t\t\t<p> Esta questão aborda um dos princípios geográficos clássicos: a localização. A localização na superfície\n\t\t\t\tterrestre se dá através das coordenadas geográficas, linhas imaginárias (paralelos e meridianos) que, ao\n\t\t\t\tse interseccionarem, determinam a localização de um ponto da superfície terrestre. Como se sabe, a Terra\n\t\t\t\ttem uma forma quase esférica, por isso é possível determinar pontos com localização diametralmente\n\t\t\t\toposta: os pontos antípodas. Existe uma fórmula matemática para a determinação dos pontos antípodas:\n\t\t\t\tpara a latitude, mantém-se o valor das coordenadas e inverte-se o hemisfério; para a longitude, basta\n\t\t\t\tsubtrair a longitude em 180º e inverter o hemisfério.</p>\n\n\t\t\t<p>A latitude varia de 0º a 90º com orientações Norte (N) e Sul (S) e a longitude varia de 0o a 180º com\n\t\t\t\torientações Leste (E) e Oeste (W). Duas cidades antípodas têm posições diametralmente opostas no globo\n\t\t\t\tterrestre. Assim, suas latitudes devem ter o mesmo valor e com orientações N-S opostas. Em relação à\n\t\t\t\tlongitude, os valores devem ser suplementares, isto é, ter soma igual a 180º, e orientações E-W opostas.\n\t\t\t\tAs únicas cidades citadas nas alternativas que apresentam essas características são Coari (4o latitude S\n\t\t\t\te 63 a longitude W) e Temon (4ª latitude N e 117º longitude E).</p>\n\n\n\t\t\t<p> Nas imagens abaixo temos exemplo de regiões antípodas:</p>\n\n\t\t\t<div class=\"area\"> <img src=\"p3q1a.png\" alt=\"p3q1a\" class=\"w3-mobile\"></div>\n\n\n\t\t\t<p class=\"citacao\">Adaptado de: https://br.pinterest.com/pin </p>\n\n\t\t\tPor isso sempre teremos X°Sul como Antipoda de X°Norte. Quando pensamos em antípoda longitudinal,\n\t\t\ttemos:\n\n\t\t\t<div class=\"area\"><img src=\"p3q1b.png\" alt=\"p3q1b\" class=\"w3-mobile\"></div>\n\n\t\t\t<p class=\"citacao\">http://www.rc.unesp.br/igce/plnejamento/</p>\n\n\t\t\t<p> Por isso sempre teremos como Antipoda de uma longitude Y°Oeste = 180°- Longitude W°leste.\n\n\t\t\t</p><p> a) Incorreta. É fato que 15°S é antípoda dos 15°N, pois estão distantes 180° entre si, porém é falso\n\t\t\t\tdizer\n\t\t\t\tque 60°O e 60°L são antípodas, pois estão distantes apenas 120° entre si.</p>\n\n\t\t\t<p> b) Incorreta. É fato que 4°S é antípoda dos 4°N, pois estão distantes 180° entre si, porém é falso dizer\n\t\t\t\tque\n\t\t\t\t63°O e 63°L são antípodas, pois estão distantes apenas 126° entre si.</p>\n\n\t\t\t<p> c) Correta. É fato que 4°S é antípoda dos 4°N. pois estão distantes 180° entre si, e igualmente é\n\t\t\t\tverdadeiro\n\t\t\t\tafirmar que 63°O e 117°L são antípodas, pois estão distantes 180° entre si, conforme vemos nos desenhos\n\t\t\t\tacima.</p>\n\n\t\t\t<p> d) Incorreta. É falso dizer que 15°S é antípoda dos 75°N, pois não estão distantes 180° entre si, mas é\n\t\t\t\tverdadeiro afirmar que 60°O e 120°L são antípodas, pois estão distantes 180° entre si, conforme vemos\n\t\t\t\tnos\n\t\t\t\tdesenhos acima.</p>",
-    "ajuda": "Para determinar pontos antípodas, lembre-se da regra: a latitude do ponto oposto tem o mesmo valor numérico, mas hemisfério invertido (N↔S); já para a longitude, some o valor com o seu antípoda e o resultado deve ser igual a 180°, também com hemisfério invertido (L↔O). Verifique cada alternativa com esse critério."
+    "ajuda": "Para determinar pontos antípodas, lembre-se da regra: a latitude do ponto oposto tem o mesmo valor numérico, mas hemisfério invertido (N↔S); já para a longitude, some o valor com o seu antípoda e o resultado deve ser igual a 180°, também com hemisfério invertido (L↔O). Verifique cada alternativa com esse critério.",
+    "tags": [
+      "coordenadas geográficas",
+      "antípodas",
+      "longitude"
+    ],
+    "dificuldade": "dificil"
   },
   {
     "id": 2,
@@ -29,7 +35,13 @@
     ],
     "correta": 2,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\n\n\t\t\t<p> A alternativa C está correta – considerando-se as informações do enunciado sobre o dia de partida da\n\t\t\t\tviagem, as conversões de diferenças de fusos horários entre Brasília (45% de longitude oeste) e Moscou\n\t\t\t\t(45% de longitude leste), o tempo de voo até Londres (0% de longitude) e depois até Moscou, e a escala\n\t\t\t\tno aeroporto de Londres e o horário de verão na Europa, o candidato encontraria a resposta 11 de junho,\n\t\t\t\tàs 17 horas. </p>\n\n\n\t\t\t<div class=\"area\"> <img src=\"p3q2a.png\" alt=\"p3q2a\" class=\"w3-mobile\"></div>\n\n\t\t\t<p> A alternativa A está incorreta – pelas informações do enunciado não seria possível o desembarque em\n\t\t\t\tMoscou às 13 horas do dia seguinte à partida de Brasília. </p>\n\n\t\t\t<p> A alternativa B também não poderia ser a resposta porque as informações do texto não permitem indicar\n\t\t\t\t“às 16 horas”, sobretudo tendo em vista a informação sobre o horário de verão da Europa.</p>\n\n\t\t\t<p> A alternativa D está errada porque o avião se deslocou no sentido oeste-leste, movimento que indica o\n\t\t\t\tacréscimo de dias e de horas. Nesse sentido, o dia de desembarque em Moscou não poderia ser dia 10 e,\n\t\t\t\tsim, 11 de junho.</p>",
-    "ajuda": "Para calcular o fuso horário, identifique quantas horas de diferença existem entre os locais mencionados e leve em conta que cada 15° de longitude corresponde a 1 hora de diferença. Considere também o horário de verão europeu mencionado no enunciado."
+    "ajuda": "Para calcular o fuso horário, identifique quantas horas de diferença existem entre os locais mencionados e leve em conta que cada 15° de longitude corresponde a 1 hora de diferença. Considere também o horário de verão europeu mencionado no enunciado.",
+    "tags": [
+      "fusos horários",
+      "longitude",
+      "fuso horário"
+    ],
+    "dificuldade": "dificil"
   },
   {
     "id": 3,
@@ -46,7 +58,13 @@
     ],
     "correta": 0,
     "comentario": "<p> Comentário:</p>\n\n\n\t\t\t<p> A viagem entre as duas cidades dura 6 horas, assim, quando o avião decolou às 15 h da cidade A, a hora\n\t\t\t\tna cidade B, era de 18 – 6 = 12 h, hora local.</p>\n\n\n\t\t\t<p>Assim, podemos perceber que, entre as cidades A e B, há diferença de fuso horário de 3 horas, pois 12h –\n\t\t\t\t15h = -3h. </p>\n\n\t\t\t<p>Ainda descobrimos que a cidade B está localizada a Oeste da cidade A, pois os fusos diminuíram. </p>\n\n\t\t\t<p>Desse modo, quando forem 13h em A, o horário máximo que o executivo precisar voltar, serão 10 h em B.\n\t\t\t</p>\n\n\t\t\t<p>Para se chegar na cidade A até as 13h como pede a questão, o avião deve decolar no máximo as 4h da cidade\n\t\t\t\tB, já que somando 6h do tempo da viagem (4h + 6h), teremos 10h, e somando a diferença de fuso horário\n\t\t\t\tentre as cidades (10h + 3h), teremos 13h na cidade A, hora local.</p>\n\n\t\t\t<div class=\"area\"> <img src=\"p3q3a.png\" alt=\"p3q3a\" class=\"w3-mobile\"></div>\n\n\t\t\t<p>Outra forma de resolver é pensar que na cidade A quando forem 13h, diminuímos o tempo de viagem de 6h\n\t\t\t\t(13h-6h), que dá 7h, menos as 3h de diferença de fuso horário (7h-3h), temos 4h na cidade B no seu\n\t\t\t\thorário local.</p>",
-    "ajuda": "Para resolver questões de fuso horário, lembre-se: ao viajar para Leste, os horários avançam; ao viajar para Oeste, os horários atrasam. Calcule a diferença de fuso entre as cidades A e B e, em seguida, subtraia o tempo de voo do horário limite de chegada."
+    "ajuda": "Para resolver questões de fuso horário, lembre-se: ao viajar para Leste, os horários avançam; ao viajar para Oeste, os horários atrasam. Calcule a diferença de fuso entre as cidades A e B e, em seguida, subtraia o tempo de voo do horário limite de chegada.",
+    "tags": [
+      "fusos horários",
+      "fuso horário",
+      "cálculo de horário"
+    ],
+    "dificuldade": "dificil"
   },
   {
     "id": 4,
@@ -63,7 +81,13 @@
     ],
     "correta": 0,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\n\n\t\t\t<p> Neste caso, serão necessários alguns cálculos matemáticos.</p>\n\n\t\t\t<p> Sabemos que a cada 15º ocorre uma mudança de fuso. Neste caso, devemos dividir os graus em que cada\n\t\t\t\tjovem está localizado por 15.</p>\n\n\t\t\t<p> Paulo, por exemplo, está na longitude 165º. 165/15 = 11. Como ele está a leste de Greenwich, seu fuso\n\t\t\t\tserá UTC+11.</p>\n\n\t\t\t<p> Pedro está a 45º a oeste de Paulo. Atenção, Pedro não está a 45º a oeste de Greenwich, mas sim a 45º a\n\t\t\t\toeste da longitude 165º de Paulo. Assim, devemos tirar 45º dos 165º. Restam 120º. Pedro está a 120º a\n\t\t\t\tleste.</p>\n\n\t\t\t<p> Fazendo a operação, 120/15=8. Assim, Pedro está no fuso UTC +8.</p>\n\n\t\t\t<p> Por fim, Clara está a 2º a oeste do Meridiano de Greenwich. Vejamos, se a cada 15º temos a mudança de\n\t\t\t\tfuso e o Meridiano de Greenwich localiza-se no centro do UTC 0, nota-se que Clara está no justamente no\n\t\t\t\tfuso horário de Greenwich: 0.</p>\n\n\t\t\t<p> Logo:</p>\n\n\t\t\t<p> Paulo: UTC +11; Pedro: UTC +8; Clara: UTC 0.</p>\n\n\t\t\t<p> Se no Meridiano Inicial são 18 horas de dia 5 de janeiro, basta fazermos as somas:</p>\n\n\t\t\t<p> Paulo: 18h + 11h = 5h do dia seguinte (6 de janeiro)</p>\n\n\t\t\t<p> Pedro: 18h + 8h = 2h do dia seguinte (6 de janeiro)</p>\n\n\t\t\t<p> Clara: 18h do mesmo dia (5 de janeiro)</p>\n\n\t\t\t<p>Alternativa E.</p>",
-    "ajuda": "A cada 15° de longitude, há 1 hora de diferença. Locais a Leste de Greenwich têm fuso positivo (UTC+), e a Oeste têm fuso negativo (UTC−). Calcule o fuso de cada personagem, aplique a diferença ao horário de Greenwich (18h) e verifique se há mudança de dia."
+    "ajuda": "A cada 15° de longitude, há 1 hora de diferença. Locais a Leste de Greenwich têm fuso positivo (UTC+), e a Oeste têm fuso negativo (UTC−). Calcule o fuso de cada personagem, aplique a diferença ao horário de Greenwich (18h) e verifique se há mudança de dia.",
+    "tags": [
+      "fusos horários",
+      "longitude",
+      "cálculo de horário"
+    ],
+    "dificuldade": "dificil"
   },
   {
     "id": 5,
@@ -80,7 +104,13 @@
     ],
     "correta": 0,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\n\n\t\t\t<p> Devemos considerar que em questões que compreendem fusos horários é que a cada 15 horários geográficos\n\t\t\t\tse passa 1 hora. E essa hora é somada ou subtraída de acordo com a direção. A cidade A está a 105°, a\n\t\t\t\tcidade B está a 45° e ambas possuem uma diferença de 60°.</p>\n\n\t\t\t<p> Sendo assim: 60/15 = 4h</p>\n\t\t\t<p> As cidades estão a 4 horas uma da outra.</p>\n\n\t\t\t<p> Dessa forma, se na cidade A eram 14:30h, na cidade B eram 18:30h. Somando o tempo de viagem: 18:30h +\n\t\t\t\t5h, o horário de chegada em B é de 23h30min.</p>",
-    "ajuda": "Ao viajar de uma cidade para outra a Leste (longitude menor em graus Oeste), o horário local aumenta. Calcule a diferença de longitude entre as duas cidades, converta em horas (15° = 1h) e some essa diferença ao horário de partida na cidade de origem antes de somar o tempo de voo."
+    "ajuda": "Ao viajar de uma cidade para outra a Leste (longitude menor em graus Oeste), o horário local aumenta. Calcule a diferença de longitude entre as duas cidades, converta em horas (15° = 1h) e some essa diferença ao horário de partida na cidade de origem antes de somar o tempo de voo.",
+    "tags": [
+      "fusos horários",
+      "longitude",
+      "cálculo de horário"
+    ],
+    "dificuldade": "media"
   },
   {
     "id": 6,
@@ -97,7 +127,13 @@
     ],
     "correta": 2,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\n\n\t\t\t<p> O critério usado para estabelecer o espaço equivalente a um fuso horário foi dividir a circunferência da\n\t\t\t\tTerra (360°) por 24 horas, que é o tempo que a Terra leva para percorrê-la. Obtém-se, pela divisão, 15°,\n\t\t\t\tum espaço (fuso) pelo qual os horários poderiam ser padronizados. O fuso inicial foi fixado pelos\n\t\t\t\tingleses no século XIX, a partir de Greenwich, meridiano que passa pelo bairro de mesmo nome em Londres,\n\t\t\t\tInglaterra. O fuso é estabelecido a partir de Greenwich (0°), com 7°30’ para leste e para oeste.</p>\n\n\t\t\t<p> Na questão, observa-se que, a partir de Londres, temos todas as cidades distribuídas a leste, para as\n\t\t\t\tquais as horas se adicionam, pois, nos dirigimos ao local de onde o Sol aparentemente vem. Assim, de\n\t\t\t\tLondres, ou de Berlim, para leste, os horários estarão adiantados. Na verdade, de Londres a Novosibirsk,\n\t\t\t\tultrapassam-se os 75°, o que incluiria 5 fusos.</p>\n\n\t\t\t<p>a) Incorreta. 15º graus representam 01 hora. Na imagem temos 5 horas distintas, de Londres à\n\t\t\t\tNovossibirsk.</p>\n\n\t\t\t<p>b) Incorreta. A linha imaginária 50ºN está ligado a latitude. Os fusos horários são determinados pela\n\t\t\t\tlongitude, que é a distância em graus a partir do meridiano de Greenwich.</p>\n\n\t\t\t<p>c) Correta. No sentido Oeste-Leste as horas aumentam e devido ao movimento de Rotação da Terra, os raios\n\t\t\t\tsolares atingem diferentes partes do Planeta a cada 15° da circunferência terrestre ou equivalente a uma\n\t\t\t\thora.</p>\n\n\t\t\t<p>d) Incorreta. De Londres à Kiev as horas aumentam, pois a direção é Oeste-Leste.</p>\n\n\t\t\t<p>e) Incorreta. Os horários para Leste somente aumentam devido o processo de rotação da Terra que segue a\n\t\t\t\tdireção Oeste-Leste. Como as cidades estão localizadas no fuso 0º até mais de 75º, são cinco horários\n\t\t\t\tdiferentes e não dois.</p>",
-    "ajuda": "A Terra gira de Oeste para Leste, portanto, os locais mais a Leste veem o sol nascer primeiro — ou seja, têm horários maiores. Identifique a direção em que as cidades estão organizadas no mapa e defina se os horários aumentam ou diminuem nessa sequência."
+    "ajuda": "A Terra gira de Oeste para Leste, portanto, os locais mais a Leste veem o sol nascer primeiro — ou seja, têm horários maiores. Identifique a direção em que as cidades estão organizadas no mapa e defina se os horários aumentam ou diminuem nessa sequência.",
+    "tags": [
+      "fusos horários",
+      "rotação da Terra",
+      "longitude"
+    ],
+    "dificuldade": "media"
   },
   {
     "id": 7,
@@ -114,7 +150,13 @@
     ],
     "correta": 0,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\n\t\t\t<p>a) Correta. Dividindo 360º por 24 horas, temos 15º de longitude, isto é, no sentido Oeste-Leste.\n\n\t\t\t</p>\n\n\t\t\t<p>b) Incorreta. 10º de longitude por 24 horas daria 240º e não 360º.</p>\n\n\t\t\t<p>c) Incorreta. A latitude está relaciona com a distância em graus do Equador em direção aos polos Norte e\n\t\t\t\tSul, não está ligada a variação de fusos horários.</p>\n\n\t\t\t<p>d) Incorreta. Conforme a letra c, a latitude determina outras características da Terra, como zonas\n\t\t\t\tclimáticas e a localização no hemisfério Norte ou Sul.</p>\n\n\t\t\t<p>e) Incorreta. Os fusos horários têm como referência o meridiano de Greenwich, que varia de 0º a 180º para\n\t\t\t\tOeste e para Leste.</p>",
-    "ajuda": "A Terra completa uma volta (360°) em 24 horas. Divida esses valores para descobrir quantos graus de longitude correspondem a 1 hora. Os fusos são baseados na longitude (linhas verticais) e não na latitude (linhas horizontais)."
+    "ajuda": "A Terra completa uma volta (360°) em 24 horas. Divida esses valores para descobrir quantos graus de longitude correspondem a 1 hora. Os fusos são baseados na longitude (linhas verticais) e não na latitude (linhas horizontais).",
+    "tags": [
+      "fusos horários",
+      "longitude",
+      "meridiano de Greenwich"
+    ],
+    "dificuldade": "facil"
   },
   {
     "id": 8,
@@ -131,7 +173,13 @@
     ],
     "correta": 0,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\n\n\t\t\t<p> Quando cruzamos na direção Leste-Oeste temos um dia atrasado. Exemplo. Dia 02 de fevereiro para dia 01\n\t\t\t\tde fevereiro. Entretanto, quando cruzamos na direção Oeste-Leste, temos um dia adiantado, avançamos para\n\t\t\t\to dia seguinte.</p>",
-    "ajuda": "Para calcular o fuso horário da localidade A em relação à localidade fornecida, observe a diferença de longitude entre elas e converta em horas. Lembre-se também da Linha Internacional de Mudança de Data (meridiano 180°): cruzá-la para Oeste atrasa um dia; para Leste, avança um dia."
+    "ajuda": "Para calcular o fuso horário da localidade A em relação à localidade fornecida, observe a diferença de longitude entre elas e converta em horas. Lembre-se também da Linha Internacional de Mudança de Data (meridiano 180°): cruzá-la para Oeste atrasa um dia; para Leste, avança um dia.",
+    "tags": [
+      "fusos horários",
+      "linha internacional de mudança de data",
+      "cálculo de horário"
+    ],
+    "dificuldade": "dificil"
   },
   {
     "id": 9,
@@ -148,7 +196,13 @@
     ],
     "correta": 0,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\t\t\t<p> O antemeridiano de Greenwich é a Linha Internacional de Mudança de Data localizada no meridiano 180º, no\n\t\t\t\tOceano Pacífico.</p>",
-    "ajuda": "A Linha Internacional de Mudança de Data (LIMD) foi estabelecida no meridiano oposto ao de Greenwich. Pense: se Greenwich está a 0°, qual meridiano fica no lado diametralmente oposto ao redor do globo?"
+    "ajuda": "A Linha Internacional de Mudança de Data (LIMD) foi estabelecida no meridiano oposto ao de Greenwich. Pense: se Greenwich está a 0°, qual meridiano fica no lado diametralmente oposto ao redor do globo?",
+    "tags": [
+      "fusos horários",
+      "linha internacional de mudança de data",
+      "meridiano de Greenwich"
+    ],
+    "dificuldade": "facil"
   },
   {
     "id": 10,
@@ -165,6 +219,12 @@
     ],
     "correta": 0,
     "comentario": "<p> <strong>Comentário</strong>: </p>\n\n\t\t\t<p> São Paulo: 45° O.</p>\n\t\t\t<p> Roraima: 60° O.</p>\n\t\t\t<p> Tempo de viagem: 6 horas.</p>\n\t\t\t<p> Hora do embarque: 14:00h </p>\n\t\t\t<p> Resolução: Como Roraima apresenta 1 hora a menos que São Paulo, então 13:00 somando o tempo do\n\t\t\t\tdeslocamento (6 + 13:00h =19 horas) o time paulista desembarcou às 19:00 em Roraima.</p>",
-    "ajuda": "Lembre-se: quanto maior a longitude Oeste, mais a cidade está afastada de Greenwich para o lado Ocidental, e mais atrasado será o seu horário. A cidade de Roraima está mais a Oeste do que São Paulo, portanto terá horário menor. Calcule a diferença de fuso e depois some o tempo de voo."
+    "ajuda": "Lembre-se: quanto maior a longitude Oeste, mais a cidade está afastada de Greenwich para o lado Ocidental, e mais atrasado será o seu horário. A cidade de Roraima está mais a Oeste do que São Paulo, portanto terá horário menor. Calcule a diferença de fuso e depois some o tempo de voo.",
+    "tags": [
+      "fusos horários",
+      "cálculo de horário",
+      "longitude"
+    ],
+    "dificuldade": "media"
   }
 ]

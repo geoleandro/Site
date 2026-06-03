@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "ENEM",
     "ano": "2012",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "modernização agrícola",
+      "produção alimentar",
+      "agronegócio",
+      "industrialização agrícola"
+    ],
     "fonte_apoio": "Charge Transgênico. ENEM 2012. Disponível em: http://nutriteengv.blogspot.com.br. Acesso em: 28 dez. 2011.",
     "imagem_apoio": "2ano/img/226/s26q1.png",
     "pergunta": "Na charge faz-se referência a uma modiﬁcação produtiva ocorrida na agricultura. Uma contradição presente no espaço rural brasileiro derivada dessa modificação produtiva está presente em:",
@@ -23,8 +28,13 @@
     "id": 2,
     "instituicao": "UNESP",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Cerrado",
+      "recursos hídricos",
+      "nascentes",
+      "bacias hidrográficas"
+    ],
     "imagem_apoio": "2ano/img/226/s26q2.png",
     "pergunta": "O cerrado brasileiro é conhecido como o “berço das águas” da América do Sul, pois abastece as grandes bacias hidrográficas e reservatórios de água doce do continente.\n\nConsiderando o conhecimento sobre as águas subterrâneas, a área destacada na figura corresponde ao Sistema Aquífero",
     "alternativas": [
@@ -42,8 +52,13 @@
     "id": 3,
     "instituicao": "FDV",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "debate energético",
+      "fontes de energia",
+      "matriz energética",
+      "produção energética"
+    ],
     "texto_apoio": "“Antes mesmo do acidente nuclear de Fukushima, no Japão, resultante de um terremoto, seguido de um tsunami, o debate sobre a questão energética já se encontrava em curso no Brasil, tendo como focos a construção da usina hidrelétrica de Belo Monte e da usina nuclear Angra 3. Os argumentos principais contra tais construções se relacionavam, e ainda se relacionam, no caso de Belo Monte, aos danos ambientais e sociais que tal construção causará e, no caso de Angra 3, aos perigos do uso da energia nuclear”.",
     "fonte_apoio": "(Disponível em: http://www.teoriaedebate.org.br. Acessado em 15/04/2017).",
     "pergunta": "O debate sobre a produção energética, tanto no mundo quanto no Brasil, engloba vários fatores. Sobre o tema é correto afirmar:",
@@ -62,8 +77,13 @@
     "id": 4,
     "instituicao": "UNIPAR",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "geração de energia",
+      "fontes renováveis",
+      "hidrelétricas",
+      "energia eólica"
+    ],
     "pergunta": "Com relação à geração de energia no Brasil, analise as proposições abaixo:\n\nI. A construção de grandes usinas hidrelétricas ocorreu a partir da Segunda Guerra Mundial em função da aceleração da industrialização e contou com altos investimentos por parte do Estado.\n\nII. A Usina de Itaipu começou a ser construída em meados da década de 1970, como parte do esforço do governo Geisel em aumentar a produção de energia sem levar em conta o impacto ambiental provocado por essa gigantesca obra.\n\nIII. A construção de usinas nucleares em Angra dos Reis evitou o colapso do abastecimento de energia nos grandes centros urbanos do país e trouxe uma alternativa à nossa dependência na geração de energia baseada essencialmente nas hidrelétricas.\n\nAssinale a alternativa correta.",
     "alternativas": [
       "Somente as afirmativas I e II são corretas.",
@@ -80,8 +100,12 @@
     "id": 5,
     "instituicao": "FTD",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "mapa demográfico",
+      "distribuição populacional",
+      "densidade demográfica"
+    ],
     "imagem_apoio": "2ano/img/226/s26q5.png",
     "pergunta": "O cruzamento de diferentes fontes de informação, como as do gráfico e do mapa apresentados, permite a visualização de aparentes contradições, como é o caso",
     "alternativas": [
@@ -99,8 +123,13 @@
     "id": 6,
     "instituicao": "UNESP",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "censo demográfico",
+      "IBGE",
+      "dados populacionais",
+      "estrutura demográfica"
+    ],
     "pergunta": "O Instituto Brasileiro de Geografia e Estatística (IBGE) realiza periodicamente censos para analisar a distribuição da população brasileira segundo a cor da pele. Nesse contexto, as informações obtidas pelos censos permitem a",
     "alternativas": [
       "apresentação de planos de contingência à entrada de imigrantes, grupos constituídos por indivíduos com potencial de descaracterizar o perfil demográfico nacional.",
@@ -117,8 +146,13 @@
     "id": 7,
     "instituicao": "UNIFESP",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "trabalho feminino",
+      "mercado de trabalho",
+      "desigualdade de gênero",
+      "PEA"
+    ],
     "pergunta": "No Brasil, a presença feminina em postos de trabalho cresceu, mas ainda não é elevada em cargos de chefia, quando comparada a dos homens.\n\nIsso se deve à:",
     "alternativas": [
       "baixa taxa de desemprego.",
@@ -135,8 +169,13 @@
     "id": 8,
     "instituicao": "UEG",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "problemas rurais",
+      "questão agrária",
+      "sertão nordestino",
+      "desigualdade regional"
+    ],
     "texto_apoio": "“Chegou o fim de semana, todos querem diversão só alegria, nós estamos no verão [...]. Milhares de casas amontoadas, Ruas de terra Esse é o morro [...]. Aqui não vejo nenhum clube poliesportivo Pra molecada frequentar, Nenhum incentivo O investimento no lazer é muito escasso O centro comunitário é um fracasso” [...].",
     "fonte_apoio": "BROWN, Mano. Fim de semana no parque. Intérprete: Racionais MC´s. CD RaioS do Brasil. Zimbabwe, 1993.",
     "pergunta": "Leia a letra de música a seguir.i\n\nA letra da música faz referência a diversos problemas relacionados à vida nas periferias, especialmente das grandes cidades.\n\nQuanto a esses problemas, verifica-se que:",
@@ -155,8 +194,12 @@
     "id": 9,
     "instituicao": "UEFS BA",
     "ano": "2015",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "migrações internas",
+      "fluxos migratórios",
+      "Brasil"
+    ],
     "imagem_apoio": "2ano/img/226/s26q9.png",
     "pergunta": "Sobre as migrações internas no espaço brasileiro, é correto afirmar:",
     "alternativas": [
@@ -174,8 +217,12 @@
     "id": 10,
     "instituicao": "UNIOESTE-PR",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "migrações brasileiras",
+      "êxodo rural",
+      "afirmativas incorretas"
+    ],
     "pergunta": "Em relação às migrações no Brasil, assinale a afirmativa INCORRETA:",
     "alternativas": [
       "A imigração, vinda de pessoas de outros países para o Brasil, foi muito importante no período de 1850 a 1934.",

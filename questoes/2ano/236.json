@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "FUVEST",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "cana-de-açúcar",
+      "agroindústria",
+      "bioenergia",
+      "agronegócio"
+    ],
     "pergunta": "No Brasil, o setor agroindustrial prevê aumento significativo da produção de cana-de-açúcar para os próximos anos. Isso pode ser atribuído:",
     "alternativas": [
       "à maior flexibilidade da nova regulamentação ambiental, que implicará uma importante diminuição de custos.",
@@ -21,8 +26,12 @@
     "id": 2,
     "instituicao": "UFPEL-RS",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "contrastes regionais",
+      "diversidade brasileira",
+      "regiões brasileiras"
+    ],
     "pergunta": "Devido à sua grande extensão territorial, o Brasil apresenta muitos contrastes, seja em aspectos físicos, econômicos ou humanos. Com base nessas diferenças, o IBGE (Instituto Brasileiro de Geografia e Estatística) dividiu o país em cinco regiões há cerca de trinta anos. As regiões identificadas pelo IBGE são as seguintes:\n\nI. Norte\n\nII. Centro-Oeste\n\nIII. Nordeste\n\nIV. Sudeste\n\nV. Sul\n\nAnalise as seguintes afirmações sobre a divisão regional do Brasil.\n\n( ) É uma região de contrastes nos aspectos naturais, humanos e econômicos. Ela apresenta áreas chuvosas e áreas de clima semiárido. Além disso, quase um quarto da população vive na miséria, enquanto uma pequena parcela detém parte das riquezas. Ela contribui muito com a migração para outras regiões.\n\n( ) É a região mais extensa do país, embora apresente baixa densidade demográfica. Nessa região predominam aspectos naturais, floresta densa e heterogênea, clima quente e úmido, rios extensos e caudalosos, os quais drenam terras geralmente de altitude pouco elevada. Ela equivale a cerca de 60 % do território brasileiro.\n\n( ) Região que corresponde a 6,8 % do território brasileiro, mas é a segunda em importância econômica. Ela apresenta uma densidade demográfica significativa, com mais de 41 hab./km². Nessa região, destaca-se o predomínio de um clima subtropical.\n\n( ) Região mais povoada do Brasil, a qual possui quase 43% da população brasileira e concentra a maior produção agrícola e industrial do país, assim como a maior rede de transportes. É nessa região que podemos observar melhor a diversidade espacial resultante do desigual desenvolvimento do país.\n\n( ) Esta região corresponde a quase 19% do território brasileiro. Pouco povoada, apresenta uma densidade demográfica de 6,8 hab./km². Foi desbravada nos séculos XVII e XVIII pelos bandeirantes, que procuravam pedras e metais preciosos. Desde a década de 1960, a região atrai imigrantes por oferecer grande quantidade de terras a serem exploradas.\n\nEscolha a alternativa que apresenta a relação correta entre as regiões e suas características.",
     "alternativas": [
       "I, II, V, III e IV.",
@@ -39,8 +48,13 @@
     "id": 3,
     "instituicao": "UEA",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Belo Monte",
+      "hidrelétrica",
+      "impacto ambiental",
+      "Xingu"
+    ],
     "imagem_apoio": "2ano/img/236/s36q3.png",
     "pergunta": "Examine a charge que faz referência à construção da usina hidrelétrica de Belo Monte, no Estado do Pará.\n\nA charge aborda uma questão de ordem",
     "alternativas": [
@@ -58,8 +72,13 @@
     "id": 4,
     "instituicao": "ENEM",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "espaço rural",
+      "pecuária",
+      "forma de ocupação produtiva",
+      "campo"
+    ],
     "texto_apoio": "Em regiões antes consideradas periféricas, a exemplo do Centro-Oeste, sob o impulso da técnica, há condições para atividades com alto nível de capital, tecnologia e organização, dando lugar a fenômenos de descentralização seletiva. Ainda que as atividades de comando tendam a se manter concentradas, a rede de atividades produtivas mais modernas tende a se expandir territorialmente.",
     "fonte_apoio": "BERNARDES, J. A. As estratégias do capital no complexo da soja. In: CASTRO, |. E.; GOMES, P. C. C.; CORREA, R. L. (Org.). Brasil: questões atuais da reorganização do território. Rio de Janeiro: Bertrand Brasil, 2008 (adaptado).",
     "pergunta": "O processo característico do espaço rural responsável pela forma descrita de ocupação produtiva do Centro-Oeste brasileiro foi o(a)",
@@ -78,8 +97,12 @@
     "id": 5,
     "instituicao": "UECE",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "regionalização do Brasil",
+      "regiões IBGE",
+      "divisão regional"
+    ],
     "pergunta": "Considerando dados e informações relativos ao sistema regional do Brasil, assinale a afirmação verdadeira.",
     "alternativas": [
       "As dinâmicas espaciais das regiões Norte e Centro-Oeste do Brasil sintetizam tempos e espaços diferenciados: a primeira é marcada pela circulação fluvial e rodoviária que abre clareiras na floresta; e a segunda é definida pelo papel do moderno agronegócio.",
@@ -95,8 +118,13 @@
     "id": 6,
     "instituicao": "UNESP",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "Agreste nordestino",
+      "características econômicas",
+      "Nordeste",
+      "diversificação econômica"
+    ],
     "pergunta": "Configura uma característica econômica do Agreste nordestino",
     "alternativas": [
       "o abrigo de empresas desenvolvedoras de softwares, sendo um exemplo a cidade de Recife, em Pernambuco.",
@@ -113,8 +141,12 @@
     "id": 7,
     "instituicao": "UNCISAL",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "características do Brasil",
+      "subdesenvolvimento",
+      "desenvolvimento econômico"
+    ],
     "texto_apoio": "“Brasil, quinto país do mundo em extensão territorial, é o mais vasto do hemisfério sul. Ele faz parte essencialmente do mundo tropical, à exceção de seus estados mais meridionais, ao sul de São Paulo. O Brasil dispõe de vastos territórios subpovoados, como o da Amazônia, conhece também um crescimento urbano extremamente rápido, índices de pobreza que não diminuem e uma das sociedades mais desiguais do mundo. Qualificado de ‘terra de contrastes’ o Brasil é um país moderno do Terceiro Mundo, com todas as contradições que isso tem por consequência”",
     "fonte_apoio": "[Adaptado de] DROULERS, Martine. “Dictionnaire geopolitique des états”. Organizado por Yves Lacoste. Paris: Éditions Flamarion, 1995.",
     "pergunta": "Uma pesquisadora produziu as seguintes características para o Brasil:\n\nO Brasil é qualificado como “terra de contrastes” por",
@@ -133,8 +165,12 @@
     "id": 8,
     "instituicao": "UNESP",
     "ano": "2022",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "expansão urbana",
+      "urbanização",
+      "irradiação territorial"
+    ],
     "texto_apoio": "“A união entre ciência e técnica que, a partir dos anos 70, havia transformado o território brasileiro revigora-se com os novos e portentosos recursos da informação, a partir do período da globalização e sob a égide do mercado. E o mercado, graças exatamente à ciência, à técnica e à informação, torna-se um mercado global. O território ganha novos conteúdos e impõe novos comportamentos, graças às enormes possibilidades da produção e, sobretudo, da circulação dos insumos, dos produtos, do dinheiro, das ideias e informações, das ordens e dos homens. É a irradiação do meio técnico-científico-informacional que se instala sobre o território […]. ”",
     "fonte_apoio": "(Milton Santos e María L. Silveira. O Brasil, 2006.)",
     "pergunta": "No território brasileiro, a irradiação apresentada ocorreu",
@@ -153,8 +189,12 @@
     "id": 9,
     "instituicao": "UEL",
     "ano": "2008",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "regiões brasileiras",
+      "perfil natural e socioeconômico",
+      "características regionais"
+    ],
     "pergunta": "Assinale a alternativa correta quanto aos perfis natural e socioeconômico das regiões brasileiras.",
     "alternativas": [
       "NORTE Perfil natural: presença de manguezais, clima tropical de altitude, solos férteis e rede hidrográfica modesta. Perfil socioeconômico: densamente povoada, com a presença de significativo polo industrial e agricultura mecanizada. Presença de siderurgias e petroquímicas.",
@@ -171,8 +211,13 @@
     "id": 10,
     "instituicao": "UECE",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "diversidade regional",
+      "regiões brasileiras",
+      "questão ambiental",
+      "socioeconômico"
+    ],
     "pergunta": "O Brasil, em virtude da sua extensão territorial, apresenta uma grande diversidade regional em termos físico-ambientais, como também sociais, culturais e, principalmente, econômicos.\n\nAtente ao que se diz a respeito da diversidade das regiões do Brasil.\n\nI. Na Região Nordeste, o grande número de cidades litorâneas e seus atrativos particulares contribuem para o desenvolvimento do turismo e para o fortalecimento da economia.\n\nII. A Região Centro-Oeste é a maior região do Brasil, correspondendo a aproximadamente 42% do território nacional, e possui uma população de cerca de 15,8 milhões de habitantes.\n\nIII. Segundo o IBGE, a Região Sudeste concentra aproximadamente 40% da população brasileira. O que a torna a região mais populosa e povoada do País.\n\nEstá correto o que se afirma apenas em",
     "alternativas": [
       "I e III.",

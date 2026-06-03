@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "UNESP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "transporte ferroviário",
+      "transporte rodoviário",
+      "logística",
+      "expansão das redes"
+    ],
     "imagem_apoio": "2ano/img/211/s11q1.png",
     "imagem_apoio_2": "2ano/img/211/s11q1b.png",
     "pergunta": "Os gráficos indicam a expansão das redes de transporte ferroviário e rodoviário no Brasil (em km) em função do tempo (ano).\n\nAs informações dos dois gráficos estão traduzidas na tabela:",
@@ -23,8 +28,13 @@
     "id": 2,
     "instituicao": "ENEM",
     "ano": "2018",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "transporte marítimo",
+      "contêinerização",
+      "porto",
+      "comércio exterior"
+    ],
     "texto_apoio": "“Os portos sempre foram respostas ao comércio praticado em grande volume, que se dá via marítima, lacustre e fluvial, e sofreram adaptações, ou modernizações, de acordo com um conjunto de fatores que vão desde a sua localização privilegiada frente a extensas hinterlândias, passando por sua conectividade com modernas redes de transportes que garantam acessibilidade, associados, no atual momento, à tecnologia que os transformam em pontas de lança de uma economia globalizada que comprime o tempo em nome da produtividade e da competitividade.”",
     "fonte_apoio": "ROCHA NETO.JM; CRAVIDÃO.F.D Portos no contexto do meio técnico. Mercator, n.2. Maio-ago. 2014(adaptado)",
     "pergunta": "Uma mudança que permitiu aos portos adequarem-se às novas necessidades comerciais apontadas no texto foi a:",
@@ -43,8 +53,13 @@
     "id": 3,
     "instituicao": "ENEM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "logística",
+      "localização industrial",
+      "transporte",
+      "fatores locacionais"
+    ],
     "texto_apoio": "“A instalação de uma refinaria obedece a diversos fatores técnicos. Um dos mais importantes é a localização, que deve ser próxima tanto dos centros de consumo como das áreas de produção. A Petrobras possui refinarias estrategicamente distribuídas pelo país. Elas são responsáveis pelo processamento de milhões de barris de petróleo por dia, suprindo o mercado com derivados que podem ser obtidos a partir de petróleo nacional ou importado.”",
     "fonte_apoio": "MURTA, A. L. S. Energia: o vício da civilização; crise energética e alternativas sustentáveis. Rio de Janeiro: Garamond, 2011.",
     "pergunta": "A territorialização de uma unidade produtiva depende de diversos fatores locacionais. A partir da leitura do texto, o fator determinante para a instalação das refinarias de petróleo é a proximidade a:",
@@ -63,8 +78,12 @@
     "id": 4,
     "instituicao": "ENEM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "logística brasileira",
+      "infraestrutura de transportes",
+      "intermodalidade"
+    ],
     "texto_apoio": "“Os maiores consumidores da infraestrutura logística para exportação no Brasil são os produtos a granel, dentre os quais se destacam o minério de ferro, petróleo e seus derivados e a soja, que, por possuírem baixo valor agregado, e por serem movimentados em grandes volumes, necessitam de uma infraestrutura de grande porte e baixos custos. No caso da soja, a infraestrutura deixa muito a desejar, resultando em enormes filas de navios, caminhões e trens, que, por ficarem grande parte do tempo ociosos nas filas, têm seu custo majorado, onerando fortemente o exportador, afetando sua margem de lucro e ameaçando nossa competitividade internacional”.",
     "fonte_apoio": "FLEURY, P F. A infraestrutura e os desafios logísticos das exportações brasileiras. Rio de Janeiro: CEL; Coppead; UFRJ, 2005 (adaptado).",
     "pergunta": "No contexto do início do século XXI, uma ação para solucionar os problemas logísticos da soja apresentados no texto seria.",
@@ -83,8 +102,13 @@
     "id": 5,
     "instituicao": "UNESP",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "transporte rodoviário",
+      "hidrovia",
+      "modal de transporte",
+      "logística"
+    ],
     "imagem_apoio": "2ano/img/211/s11q5.png",
     "pergunta": "Examinando a imagem e considerando as características dos meios de transporte rodoviário, ferroviário e hidroviário, é correto afirmar que:",
     "alternativas": [
@@ -102,8 +126,13 @@
     "id": 6,
     "instituicao": "UNICAMP",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "cabotagem",
+      "transporte marítimo",
+      "formação territorial",
+      "litoral brasileiro"
+    ],
     "imagem_apoio": "2ano/img/211/s11q6.png",
     "pergunta": "Sobre o papel da cabotagem no processo de formação do território brasileiro, é correto afirmar:",
     "alternativas": [
@@ -120,8 +149,13 @@
     "id": 7,
     "instituicao": "UNICID",
     "ano": "2020",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "modal de transporte",
+      "logística",
+      "transporte rodoviário",
+      "dependência rodoviarista"
+    ],
     "imagem_apoio": "2ano/img/211/s11q7.png",
     "pergunta": "A matriz de transportes de cargas brasileira tem como uma de suas consequências ambientais",
     "alternativas": [
@@ -139,8 +173,12 @@
     "id": 8,
     "instituicao": "ENEM",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "intermodalidade",
+      "logística",
+      "infraestrutura de transportes"
+    ],
     "texto_apoio": "“De todas as transformações impostas pelo meio técnico-científico-informacional à logística de transportes, interessa-nos mais de perto a intermodalidade. E por uma razão muito simples: o potencial que tal “ferramenta logística” ostenta permite que haja, de fato, um sistema de transportes condizente com a escala geográfica do Brasil.”",
     "fonte_apoio": "HUERTAS, D. M. O papel dos transportes na expansão recente da fronteira agrícola brasileira. Revista Transporte y Territorio, Universidade de Buenos Aires, n.3, 2010 (adaptado).",
     "pergunta": "A necessidade de modais de transporte interligados, no território brasileiro, justifica-se pela(s)",
@@ -159,8 +197,12 @@
     "id": 9,
     "instituicao": "UVV",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "logística",
+      "transportes brasileiros",
+      "infraestrutura"
+    ],
     "texto_apoio": "Texto Greve dos caminhoneiros: a cronologia dos 10 dias que pararam o Brasil \"Pouco a pouco, o Brasil começou, nesta quarta-feira (30/05/2018), a se recuperar dos efeitos causados pela greve dos caminhoneiros, que durou dez dias e paralisou serviços como fornecimento de combustíveis e distribuição de alimentos e insumos médicos, levando o país à beira do colapso. A categoria elencou uma série de reivindicações\". Texto Matriz de transporte \"De acordo com informações publicadas pela Federação das Indústrias do Estado de São Paulo (FIESP), e com base em dados do Ministério dos Transportes de 2006, o modal rodoviário respondeu por 59,0% da matriz de transporte do Brasil. Os modais ferroviário, aquaviário e aeroviário responderam por 24,0%, 13,0% e 0,3%, respectivamente\".",
     "pergunta": "Com base nos textos acima e nos seus conhecimentos, marque a opção correta:",
     "alternativas": [
@@ -178,8 +220,12 @@
     "id": 10,
     "instituicao": "UEG",
     "ano": "2003",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "sistema de transporte",
+      "desenvolvimento econômico",
+      "logística"
+    ],
     "pergunta": "Em qualquer país, o sistema de transporte desempenha um papel fundamental no que se refere ao processo de desenvolvimento e à integração do território.\n\nSobre o sistema de transporte brasileiro, marque a alternativa INCORRETA:",
     "alternativas": [
       "A implantação e a expansão do sistema ferroviário estiveram vinculadas à cafeicultura. Diante da crise desse setor, o ritmo de expansão do sistema ferroviário diminuiu e entrou em decadência, principalmente a partir de 1950, pela concorrência do sistema rodoviário.",

@@ -3,8 +3,13 @@
     "id": 1,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "transumância",
+      "migração sazonal",
+      "pastagem",
+      "pecuária"
+    ],
     "pergunta": "(MUNDO EDUCAÇÃO 2020) Acerca da transumância, estão corretas as afirmativas a seguir, exceto:",
     "alternativas": [
       "No Brasil, esse deslocamento é comum entre o Sertão Nordestino e a Zona da Mata.",
@@ -21,8 +26,13 @@
     "id": 2,
     "instituicao": "ENEM",
     "ano": "2017",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "migrações internas",
+      "fluxos migratórios",
+      "êxodo rural",
+      "industrialização"
+    ],
     "texto_apoio": "“O fenômeno da mobilidade populacional vem, e desde as últimas décadas do século XX, apresentando transformações significativas no seu comportamento, não só no Brasil como também em outras partes do mundo. Esses novos processos se materializam, entre outros aspectos, na dimensão interna, pelo redirecionamento dos fluxos migratórios para as cidades médias, em detrimento dos grandes centros urbanos; pelos deslocamentos de curta duração e a distâncias menores; pelos movimentos pendulares, que passam a assumir maior relevância nas estratégias de sobrevivência, não mais restritos aos grandes aglomerados urbanos”.",
     "fonte_apoio": "OLIVEIRA, L. A. P.; OLIVEIRA, A. T. R. Reflexões sobre os deslocamentos populacionais no Brasil. Rio de Janeiro: IBGE, 2011 (adaptada).",
     "pergunta": "A redefinição dos fluxos migratórios internos no Brasil, no período apontado no texto, tem como causa a intensificação do processo de:",
@@ -41,8 +51,13 @@
     "id": 3,
     "instituicao": "UNCISAL",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "migrações internas",
+      "identidade regional",
+      "Brasil",
+      "cultura"
+    ],
     "texto_apoio": "Paratodos “O meu pai era paulista Meu avô, pernambucano O meu bisavô, mineiro Meu tataravô, baiano Meu maestro soberano Foi Antônio Brasileiro [...]”",
     "fonte_apoio": "Disponível em: https://www.letras.mus.br/. Acesso em: 28 out. 2015.",
     "pergunta": "O trecho da letra da música Paratodos, de Chico Buarque, retrata uma dimensão brasileira muito importante para compreender a:",
@@ -61,8 +76,13 @@
     "id": 4,
     "instituicao": "UNESP",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "urbanismo",
+      "Brasília",
+      "Lúcio Costa",
+      "planejamento urbano"
+    ],
     "texto_apoio": "“Primeiro, essa massa sofrida do nosso povo, que constitui o baldrame da Nação e que para cá afluiu, a fim de realizar a obra num prazo exíguo, com sacrifícios tremendos e grande idealismo, apesar de ter sido atraída inicialmente pela necessidade do dia a dia, de conseguir algum dinheiro para suas famílias. Esse lastro, essa população que afluiu e aqui está, não quis voltar, espraiou-se e forçou essa inversão de ordem natural do planejamento que era as cidades-satélites virem depois de a cidade concluída”.",
     "fonte_apoio": "(Apud: Abelardo de Sousa. Arquitetura no Brasil: depoimentos, 1978.)",
     "pergunta": "Leia o depoimento dado por Lúcio Costa em 1974.\n\nEsse depoimento refere-se a dois componentes importantes da construção de Brasília:\n\nAo analisar o depoimento de Lúcio Costa, observe que ele menciona uma \"massa sofrida do nosso povo\" que migrou para o Planalto Central para trabalhar na construção de Brasília. Esses trabalhadores enfrentaram grandes sacrifícios e vieram principalmente por necessidade econômica. Importante notar é que ele destaca como essa população, depois de realizar a obra, não retornou às suas regiões de origem e se espalhou pela área, forçando uma \"inversão de ordem natural do planejamento\". Isso sugere que o planejamento inicial da cidade teve que ser ajustado para acomodar essa população, criando áreas de moradia que não estavam originalmente previstas para aquele momento. Pense em quem eram esses trabalhadores e de onde vieram, bem como nas implicações urbanas que a presença deles teve para a cidade planejada. Tente resolver sem ver a resposta\n\nResposta: Letra A O deslocamento de trabalhadores, oriundos principalmente do Nordeste, para o Planalto Central e a redefinição do planejamento urbano original, que precisou incorporar áreas de moradia popular.",
@@ -81,8 +101,13 @@
     "id": 5,
     "instituicao": "ENEM",
     "ano": "2016",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "imigração",
+      "condições de vida",
+      "migrantes",
+      "trabalho"
+    ],
     "fonte_apoio": "SCARLATO, F.C. População e urbanização brasileira. In: ROSS, J.L.S. Geografia do Brasil. São Paulo: Edusp, 2009.",
     "pergunta": "A presença de uma corrente migratória por si só não explica a condição de vida dos imigrantes. Esta será somente a aparência de um fenômeno mais profundo, estruturado em relações socioeconômicas muitas vezes perversas. É o que podemos dizer dos indivíduos que são deslocados do campo para as cidades e obrigados a viver em condições de vida culturalmente diferentes das que vivenciaram em seu lugar de origem.\n\nO texto faz referência a um movimento migratório que reflete o(a)",
     "alternativas": [
@@ -100,8 +125,12 @@
     "id": 6,
     "instituicao": "ENEM",
     "ano": "2014",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "fluxo migratório",
+      "migrações internas",
+      "mobilidade populacional"
+    ],
     "fonte_apoio": "Nota: O saldo considera apenas as pessoas que se deslocavam para o trabalho e retornavam aos seus municípios diariamente.",
     "imagem_apoio": "2ano/img/225/s25q6.png",
     "pergunta": "O fluxo migratório representado está associado ao processo de:",
@@ -120,8 +149,12 @@
     "id": 7,
     "instituicao": "FMABC",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "migrações internas",
+      "mapa de migração",
+      "fluxos populacionais"
+    ],
     "imagem_apoio": "2ano/img/225/s25q7.png",
     "pergunta": "Observe a coleção de mapas a seguir.\n\nLevando em conta o fenômeno representado, é correto afirmar que:",
     "alternativas": [
@@ -139,8 +172,12 @@
     "id": 8,
     "instituicao": "UFPB",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "migrações brasileiras",
+      "dimensões continentais",
+      "fluxos populacionais"
+    ],
     "pergunta": "O Brasil é um país de dimensões continentais, cujos movimentos migratórios se intensificaram a partir do século XIX e se estendem até os dias atuais. Os fluxos migratórios são diferenciados quanto ao período histórico, à dinâmica econômica e à origem e destino dos migrantes.\n\nNesse contexto, é correto afirmar que, no Brasil, os fluxos migratórios",
     "alternativas": [
       "foram decisivos no aumento populacional da região Centro-Oeste, que recebeu, predominantemente, pequenos produtores rurais da Região Nordeste, os quais se tornaram latifundiários e grandes produtores de soja.",
@@ -157,8 +194,13 @@
     "id": 9,
     "instituicao": "UERJ",
     "ano": "2009",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "migração e urbanização",
+      "êxodo rural",
+      "metropolização",
+      "correlação"
+    ],
     "texto_apoio": "“Ildenice Rita da Silva, de 33 anos, chegou a Brasília há 15 anos. Foi atrás da irmã, Denizelda de Carvalho, de 41, que morava na cidade desde a década de 70. Ildenice sonhava com um emprego melhor do que em Riachão das Neves, na Bahia, onde trabalhava na roça com a família. (...) De acordo com o Censo 2000, de 1995 a 2000, 15,6% das saídas do Nordeste tiveram como destino as cidades-satélites do Distrito Federal e os municípios goianos ao redor de Brasília. Além das promessas de emprego, uma política de distribuição de lotes, anteriormente iniciada, fez inchar o entorno de Brasília”.",
     "fonte_apoio": "Lisandra Paraguassú. Adaptado de O Globo, 12/05/2002.",
     "pergunta": "A situação relatada na reportagem possibilita estabelecer uma correlação entre dois processos de grande importância para a área das ciências humanas.\n\nEsses processos estão indicados em:",
@@ -176,8 +218,12 @@
     "id": 10,
     "instituicao": "UNICAMP",
     "ano": "2023",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "imigração europeia",
+      "Sul do Brasil",
+      "fluxos migratórios internacionais"
+    ],
     "texto_apoio": "O objetivo da questão está relacionado ao conhecimento sobre a força de trabalho migrante no Brasil, preferencialmente na região Sul do país. Para acertar essa questão sobre xenofobia com imigrantes é preciso estar ciente de casos relatados ou evidências de discriminação ocorrendo na região sul. Isso pode incluir relatos de discriminação, violência ou tratamento injusto direcionado a imigrantes ou refugiados que se estabeleceram na área ou qual Estado tem chamado mais atenção nessa questão. Tente resolver sem ver a resposta",
     "pergunta": "Alguns municípios do Sul do Brasil receberam, nos últimos 10 anos, importantes fluxos de imigrantes e refugiados, sobretudo de haitianos, congoleses, senegaleses e venezuelanos. A presença desses imigrantes e refugiados em regiões de elevada especialização produtiva tem sido motivada pela busca de trabalho; todavia, crescem registros de denúncias das precárias condições de vida e situações de xenofobia enfrentadas por essas populações nos municípios onde se instalam.\n\nAssinale a alternativa que indique: (1) a região de especialização produtiva que mais tem absorvido essa força de trabalho imigrante; e (2) a atividade econômica envolvida:\n\nResposta: Letra A (1) Oeste catarinense; (2) indústria frigorífica.",
     "alternativas": [

@@ -3,8 +3,12 @@
     "id": 1,
     "instituicao": "",
     "ano": "2026",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tipos climáticos mundiais",
+      "clima",
+      "biomas mundiais"
+    ],
     "imagem_apoio": "1ano/img/130/p30q1.png",
     "pergunta": "(PUC-CAMPINAS) Observe o esquema para responder à questão.\n\nIndique a alternativa que identifica o elemento retratado no esquema.",
     "alternativas": [
@@ -22,8 +26,12 @@
     "id": 2,
     "instituicao": "UNICAMP",
     "ano": "2019",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "latitude"
+    ],
     "fonte_apoio": "(Fonte: James F. Petersen, Dorothy Sack e Robert E. Glabler, Fundamentos de Geografia Física. São Paulo: Cengage, 2015, p. 158.)",
     "imagem_apoio": "1ano/img/130/p30q2.png",
     "pergunta": "A figura a seguir retrata a variação latitudinal dos padrões espaciais de distribuição dos principais biomas terrestres.\n\nConsidere a figura anterior e assinale a alternativa correta.",
@@ -41,8 +49,12 @@
     "id": 3,
     "instituicao": "UPE",
     "ano": "2013",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "tipos climáticos"
+    ],
     "texto_apoio": "Na Europa Central e Ocidental, nas porções oriental e ocidental do Canadá e dos Estados Unidos assim como no Extremo Oriente, ocorrem paisagens fitogeográficas, que se constituem, quase sempre, por árvores caducifólias e apresentam uma baixa densidade botânica e certa homogeneidade de espécies. Estão em grande parte destruídas pelas ações antrópicas, uma vez que se encontram em áreas densamente povoadas e onde houve um expressivo desenvolvimento econômico. Grande parte da superfície ocupada por essas formações vegetais foi substituída pelas atividades agrícolas e pecuárias ou pelas cidades que, por elas próprias, se expandiram.",
     "pergunta": "A quais formações vegetais estamos nos referindo?",
     "alternativas": [
@@ -60,8 +72,12 @@
     "id": 4,
     "instituicao": "FATEC SP",
     "ano": "2011",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "tipos climáticos"
+    ],
     "texto_apoio": "“Ocorre em climas estacionais com períodos frios e quentes bem marcados. As temperaturas de inverno podem chegar abaixo do ponto de congelamento. As plantas são úmidas, com estrutura e composição distintas conforme a área de ocorrência. A queda das folhas nas estações secas equilibra as plantas para que elas, transpirando menos, consigam atravessar os períodos de escassez de água. As árvores têm em geral 40-50 m de altura e possuem folhas delgadas e largas, como os plátanos. É vegetação das mais destruídas do mundo. ”",
     "fonte_apoio": "(CONTI, J. B. e FURLAN, S.A. Geoecologia: o clima, os solos e a biota. São Paulo: Edusp, 1996. Adaptado).",
     "imagem_apoio": "1ano/img/130/p30q4.png",
@@ -81,8 +97,12 @@
     "id": 5,
     "instituicao": "UFTM",
     "ano": "2010",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "tipos climáticos"
+    ],
     "imagem_apoio": "1ano/img/130/p30q5.png",
     "pergunta": "Observe o mapa.\n\nAssinale a alternativa que expressa corretamente a formação vegetal destacada no mapa e uma atividade humana que tem causado impactos ambientais significativos em algumas das áreas destacadas.",
     "alternativas": [
@@ -100,8 +120,12 @@
     "id": 6,
     "instituicao": "UFC",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "impactos ambientais"
+    ],
     "pergunta": "Considerando as características das formações vegetais e as transformações impostas pelo homem, correlacione corretamente as formações vegetais indicadas na coluna da esquerda com as características descritas na coluna da direita.\n\nMarque a alternativa que apresenta a sequência correta, decorrente do preenchimento da coluna da direita.",
     "alternativas": [
       "III, I, II e IV.",
@@ -118,8 +142,12 @@
     "id": 7,
     "instituicao": "FATEC-SP",
     "ano": "2007",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "tipos climáticos mundiais",
+      "clima continental",
+      "vegetação"
+    ],
     "pergunta": "O clima continental que se manifesta nas altas latitudes condiciona o desenvolvimento desta vegetação, caracterizada por árvores de grande porte e relativamente homogêneas. Já foi intensamente explorada para retirada da madeira. Atualmente, o reflorestamento tem reduzido o impacto dessa exploração.\n\nO texto refere-se à seguinte formação vegetal:",
     "alternativas": [
       "Tundra.",
@@ -136,8 +164,12 @@
     "id": 8,
     "instituicao": "UEPB",
     "ano": "2006",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "media",
+    "tags": [
+      "biomas mundiais",
+      "taiga",
+      "floresta boreal"
+    ],
     "imagem_apoio": "1ano/img/130/p30q8.png",
     "pergunta": "\"Se você cruzasse, a pé, o Alasca e o Canadá, a Escandinávia e a Sibéria, estaria sempre na mesma floresta´, diz o ativista Dom Sullivan.\n\nEsta Floresta descrita, que representa 1/3 das matas existentes na terra e está representada no cartograma, é:",
     "alternativas": [
@@ -155,8 +187,12 @@
     "id": 9,
     "instituicao": "FGV",
     "ano": "2001",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "dificil",
+    "tags": [
+      "biomas mundiais",
+      "fitomassa",
+      "desmatamento"
+    ],
     "pergunta": "As áreas com maior porcentagem de fitomassa original, em relação ao total do planeta, correspondem a:",
     "alternativas": [
       "florestas tropicais de folhas perenes / florestas temperadas / floresta boreal.",
@@ -173,8 +209,12 @@
     "id": 10,
     "instituicao": "",
     "ano": "2021",
-    "dificuldade": "",
-    "tags": [],
+    "dificuldade": "facil",
+    "tags": [
+      "biomas mundiais",
+      "vegetação",
+      "tipos climáticos"
+    ],
     "texto_apoio": "É um tipo de cobertura vegetal que se estabelece em planícies, é encontrado nas áreas centrais dos Estados Unidos, Canadá, sul do Brasil, Argentina e Uruguai, nos países da América do Sul essa vegetação recebe o nome de pampa. A formação vegetal em questão figura como uma extensa pastagem natural, condição propícia para a criação de animais, como bovinos, caprinos, ovinos e equinos. Podem ser encontradas, em alguns casos, nas proximidades de desertos, podendo ocorrer em climas tropicais e climas temperados. Essa vegetação é constituída de gramíneas (de 10 cm a 50 cm), desse modo, não há presença de árvores; abriga distintos animais, principalmente roedores, carnívoros e aves de rapina, répteis e insetos. Regiões cobertas por essa formação vegetal são essencialmente vulneráveis ao processo de desertificação.",
     "imagem_apoio": "1ano/img/130/p30q10.png",
     "pergunta": "O texto se refere à vegetação de:",
