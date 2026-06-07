@@ -168,7 +168,6 @@
       "Vesentini",
       "Wicander",
       "BNCC"
-
     ]
   },
   {
@@ -384,14 +383,16 @@
     "titulo": "Hidrografia",
     "imagem": "fotoIndex/1ano/aula24.png",
     "conteudo": "Ciclo da água; Bacia hidrográfica como unidade de análise; Movimentos oceânicos.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto24/tp24.html?id=124",
     "linkQuestoes": "questoes/modelo-questoes.html?id=124",
-    "objetivo": null,
+    "objetivo": "Compreender o ciclo hidrológico e sua importância para a distribuição da água no planeta; identificar as bacias hidrográficas como unidades de gestão do território; reconhecer os principais movimentos oceânicos e seus efeitos sobre o clima e a vida humana.",
     "audio": null,
     "links": [
       "MMAAgua",
       "ONUAgua",
-      "ANAAtlasAgua"
+      "ANAAtlasAgua",
+      "AnaRiosBrasil",
+      "BBCRiosVoadores"
     ],
     "bibliografia": [
       "Teixeira",
@@ -407,9 +408,9 @@
     "titulo": "Relevo oceânico",
     "imagem": "fotoIndex/1ano/aula25.png",
     "conteudo": "Plataforma continental, talude, bacia oceânica, fossas e cadeias oceânicas.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto25/tp25.html?id=125",
     "linkQuestoes": "questoes/modelo-questoes.html?id=125",
-    "objetivo": null,
+    "objetivo": "Conhecer as principais formas do relevo oceânico e compreender sua importância para a vida marinha, a pesca, a exploração de recursos naturais e as dinâmicas climáticas do planeta.",
     "audio": null,
     "bibliografia": [
       "Teixeira",
@@ -417,6 +418,11 @@
       "Marshak",
       "Wicander",
       "BNCC"
+    ],
+    "links": [
+      "MarinhaAmazulBrasil",
+      "NOAAOceano",
+      "BBCFossaMarianas"
     ]
   },
   {
@@ -424,15 +430,20 @@
     "titulo": "Sistemas fluviais",
     "imagem": "fotoIndex/1ano/aula26.png",
     "conteudo": "Rios meandrantes, deltas, estuários e processos de erosão fluvial.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto26/tp26.html?id=126",
     "linkQuestoes": "questoes/modelo-questoes.html?id=126",
-    "objetivo": null,
+    "objetivo": "Compreender como os rios modelam a paisagem ao longo do tempo, identificando os processos de erosão, transporte e deposição; reconhecer as formas fluviais (meandros, deltas, estuários) e relacionar os sistemas fluviais com as atividades humanas e os riscos socioambientais.",
     "audio": null,
     "bibliografia": [
       "Teixeira",
       "Press",
       "Suertegaray",
       "BNCC"
+    ],
+    "links": [
+      "CEMADENRisco",
+      "BBCEnchentes",
+      "AnaRiosBrasil"
     ]
   },
   {
@@ -440,12 +451,14 @@
     "titulo": "O uso da água",
     "imagem": "fotoIndex/1ano/aula27.png",
     "conteudo": "Poluição hídrica; desmatamento de matas ciliares e contaminação do solo.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto27/tp27.html?id=127",
     "linkQuestoes": "questoes/modelo-questoes.html?id=127",
-    "objetivo": null,
+    "objetivo": "Compreender as principais formas de poluição hídrica e seus impactos sobre os ecossistemas e as populações humanas; identificar o papel das matas ciliares na proteção dos recursos hídricos; analisar criticamente os conflitos pelo uso da água no Brasil e no mundo.",
     "audio": null,
     "links": [
-      "BBCMarAral"
+      "BBCMarAral",
+      "MMAAgua",
+      "ANAAtlasAgua"
     ],
     "bibliografia": [
       "Vesentini",
@@ -468,15 +481,20 @@
     "titulo": "Biogeografia I",
     "imagem": "fotoIndex/1ano/aula29.png",
     "conteudo": "Biomas tropicais: florestas pluviais e savanas; Dinâmicas climáticas tropicais.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto29/tp29.html?id=129",
     "linkQuestoes": "questoes/modelo-questoes.html?id=129",
-    "objetivo": null,
+    "objetivo": "Compreender o que define um bioma tropical; distinguir floresta pluvial de savana; analisar a Amazônia e o Cerrado como sistemas interdependentes; entender os mecanismos do desmatamento e suas consequências climáticas, hídricas e sociais.",
     "audio": null,
     "bibliografia": [
       "Suertegaray",
       "SeneMoreira",
       "Vesentini",
       "BNCC"
+    ],
+    "links": [
+      "INPEDesmatamento",
+      "WWFCerrado",
+      "BBCRiosVoadores"
     ]
   },
   {
@@ -484,15 +502,20 @@
     "titulo": "Biogeografia II",
     "imagem": "fotoIndex/1ano/aula30.png",
     "conteudo": "Biomas temperados: coníferas, estepes, pradarias e vegetação mediterrânea.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto30/tp30.html?id=130",
     "linkQuestoes": "questoes/modelo-questoes.html?id=130",
-    "objetivo": null,
+    "objetivo": "Identificar os principais biomas temperados e sua distribuição mundial; compreender os fatores climáticos que os diferenciam; analisar as adaptações vegetais ao frio e à sazonalidade; reconhecer no mapa-múndi as florestas caducifólias, a taiga, as estepes e a vegetação mediterrânea.",
     "audio": null,
     "bibliografia": [
       "Suertegaray",
       "SeneMoreira",
       "Vesentini",
       "BNCC"
+    ],
+    "links": [
+      "NationalGeographic",
+      "IPCCRelatorio",
+      "WWFBiomas"
     ]
   },
   {
@@ -500,15 +523,20 @@
     "titulo": "Biogeografia III",
     "imagem": "fotoIndex/1ano/aula31.png",
     "conteudo": "Regiões polares; Clima ártico e antártico; Tundra.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto31/tp31.html?id=131",
     "linkQuestoes": "questoes/modelo-questoes.html?id=131",
-    "objetivo": null,
+    "objetivo": "Compreender as características climáticas e ecológicas das regiões polares; distinguir tundra de calota glacial; comparar Ártico e Antártica em termos físicos e geopolíticos; entender por que o derretimento do gelo polar afeta países tropicais.",
     "audio": null,
     "bibliografia": [
       "Suertegaray",
       "SeneMoreira",
       "Vesentini",
       "BNCC"
+    ],
+    "links": [
+      "NSIDCArtico",
+      "PRoantar",
+      "IPCCRelatorio"
     ]
   },
   {
@@ -516,14 +544,19 @@
     "titulo": "Questão ambiental I",
     "imagem": "fotoIndex/1ano/aula32.png",
     "conteudo": "Impacto ambiental; Conservacionismo vs Preservacionismo; Ecossocialismo.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto32/tp32.html?id=132",
     "linkQuestoes": "questoes/modelo-questoes.html?id=132",
-    "objetivo": null,
+    "objetivo": "Compreender o conceito de impacto ambiental e seus tipos; distinguir conservacionismo de preservacionismo; entender a dimensão social da crise ambiental por meio do ecossocialismo e da justiça ambiental; analisar quem produz e quem sofre os impactos da degradação ambiental.",
     "audio": null,
     "bibliografia": [
       "Vesentini",
       "SeneMoreira",
       "BNCC"
+    ],
+    "links": [
+      "OEcoRacismoAmbiental",
+      "OEcoAtivistas",
+      "AgenciaBrasilRacismo"
     ]
   },
   {
@@ -531,14 +564,19 @@
     "titulo": "Questão ambiental II",
     "imagem": "fotoIndex/1ano/aula33.png",
     "conteudo": "Políticas globais: Eco-92, Protocolo de Kyoto, Acordo de Paris e Sustentabilidade.",
-    "linkTexto": null,
+    "linkTexto": "1ano/Textos1/Texto33/tp33.html?id=133",
     "linkQuestoes": "questoes/modelo-questoes.html?id=133",
-    "objetivo": null,
+    "objetivo": "Conhecer as principais conferências e acordos ambientais globais; compreender a diferença entre Protocolo de Kyoto e Acordo de Paris; entender o conceito de desenvolvimento sustentável e suas limitações; analisar o papel do Brasil na diplomacia ambiental internacional.",
     "audio": null,
     "bibliografia": [
       "Vesentini",
       "SeneMoreira",
       "BNCC"
+    ],
+    "links": [
+      "AgenciaBrasilCOP28Fosseis",
+      "AgenciaBrasilCOP30Belem",
+      "OEcoODS"
     ]
   },
   {

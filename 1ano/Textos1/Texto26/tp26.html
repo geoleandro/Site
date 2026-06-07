@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sistemas fluviais: rios meandrantes, deltas, estuários e erosão fluvial">
+    <meta property="og:title" content="Texto 26 - Sistemas Fluviais">
+    <meta property="og:description" content="Rios meandrantes, deltas, estuários e processos de erosão fluvial">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../js/glossario.js" defer></script>
+
+    <title></title>
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="aviso-status" class="w3-margin-top"></div>
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+
+        <!-- BLOCO 1: Abertura -->
+        <div class="topico">
+
+            <div class="w3-padding-top-48"></div>
+
+            <h1 id="h1"> </h1>
+
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Compreender como os rios modelam a paisagem ao longo do tempo, identificando os processos de erosão, transporte e deposição; reconhecer as formas fluviais (meandros, deltas, estuários) e relacionar os sistemas fluviais com as atividades humanas e os riscos socioambientais.</span></p>
+            </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 2: Abertura pela realidade do aluno -->
+        <div class="topico">
+
+            <h2>O rio que molda e é moldado</h2>
+
+            <p><span class="primeiraLetra">O</span>lhe para qualquer imagem de satélite de um grande rio. Ele raramente segue em linha reta. Ele curva, dobra, serpenteia, às vezes quase voltando sobre si mesmo. Por quê?</p>
+
+            <p>A resposta está na física da água em movimento. Um rio não é um canal fixo: é um sistema vivo que esculpe seu próprio leito ao longo de milhares de anos, erodindo onde a água corre mais forte, depositando sedimentos onde ela desacelera. O resultado são formas que parecem aleatórias mas seguem lógicas precisas.</p>
+
+            <p>Essas formas têm consequências diretas para quem vive perto dos rios. As planícies de inundação ao longo dos meandros são as terras mais férteis do planeta, e também as mais vulneráveis às cheias. Os deltas concentram populações inteiras. Os estuários abrigam ecossistemas únicos que filtram poluentes e criam berçários para a pesca. Entender como os rios funcionam é entender por que cidades afogam, por que agricultores brigam por terras ribeirinhas e por que o desmatamento agrava enchentes.</p>
+
+            <p>Clique para começar: <span class="termo" data-palavra="Sistema Fluvial" data-definicao="Conjunto formado pelo rio, sua bacia hidrográfica e todos os processos de erosão, transporte e deposição de sedimentos que moldam a paisagem ao longo do tempo.">sistema fluvial</span>.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 3: O problema -->
+        <div class="topico">
+
+            <p class="caixa">Antes de continuar, pense nisso.</p>
+
+            <div class="w3-panel w3-pale-green">
+                <p>Em fevereiro de 2011, a região serrana do Rio de Janeiro foi atingida pela maior tragédia climática da história do Brasil: chuvas intensas provocaram deslizamentos e enchentes que mataram mais de 900 pessoas em uma única noite. Municípios como Nova Friburgo, Teresópolis e Petrópolis foram devastados.</p>
+
+                <p>Parte significativa das vítimas morava em áreas de preservação permanente ao longo dos rios, onde a lei proibia construção. Outros morreram em encostas desmatadas onde a mata ciliar havia sido retirada décadas antes.</p>
+
+                <p><strong>A tragédia foi um desastre natural ou um desastre social?</strong> A natureza foi a única responsável, ou havia condições criadas por decisões humanas que tornaram o evento tão letal?</p>
+
+                <p>Escreva pelo menos 5 linhas no caderno com sua hipótese antes de continuar.</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 4: Conteúdo 1 — Como os rios esculpem a paisagem -->
+        <div class="topico">
+
+            <h2>Como os rios trabalham: erosão, transporte e deposição</h2>
+
+            <h3>O rio como agente geológico</h3>
+
+            <p>Um rio faz três coisas ao mesmo tempo: erode o leito e as margens, transporta o material erodido e deposita esse material mais adiante. A proporção entre esses três processos muda conforme a inclinação do terreno, a velocidade da água e a quantidade de sedimentos carregados.</p>
+
+            <p>No <strong>curso superior</strong>, onde o rio nasce e cai de zonas elevadas, a inclinação é grande e a velocidade é alta. A água erode verticalmente, aprofundando o canal e formando vales em V com paredes íngremes. É aqui que ficam as cachoeiras e corredeiras, onde a energia do rio é máxima.</p>
+
+            <p>No <strong>curso médio</strong>, o terreno fica menos inclinado e a velocidade cai. O rio começa a erodir lateralmente, alargando o vale. Os sedimentos se acumulam nas curvas internas e o leito fica mais largo e raso. É onde se formam as planícies de inundação, terras que o rio deixou quando transbordou em épocas de cheia.</p>
+
+            <p>No <strong>curso inferior</strong>, próximo à foz, a inclinação é mínima e a velocidade, muito baixa. O rio carrega menos energia e deposita a maior parte dos seus sedimentos. É aqui que se formam os deltas e estuários. O vale fica amplo, as margens são baixas e as inundações são frequentes e previsíveis.</p>
+
+            <div class="w3-margin">
+                <img src="tp26F01.png" alt="Perfil longitudinal de um rio: curso superior, médio e inferior" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">Perfil longitudinal de um rio mostrando os três cursos e os processos dominantes em cada trecho.</span>
+            </div>
+
+            <h3>Os meandros: por que os rios não são retos?</h3>
+
+            <p>Qualquer pequena irregularidade no leito desvia o fluxo para um lado. A água que bate na margem exterior de uma curva erode mais. A margem interior, onde a água desacelera, recebe os sedimentos. A curva cresce. O meandro se forma. Com o tempo, o meandro pode crescer tanto que as duas curvas se tocam, e o rio abre um atalho reto, deixando para trás uma lagoa em forma de meia-lua chamada <strong>lagoa oxbow</strong>. O Pantanal e a planície amazônica estão cheios delas.</p>
+
+            <p>Os <span class="termo" data-palavra="Rios Meandrantes" data-definicao="Rios com curso sinuoso que serpenteiam pela planície em curvas largas, resultado do equilíbrio entre erosão nas margens externas e deposição nas internas. Característicos de regiões planas com baixa declividade.">rios meandrantes</span> são típicos de regiões planas, onde a baixa declividade força o rio a dissipar energia em curvas. O Rio Amazonas e seus afluentes são exemplos clássicos: vistos do satélite, parecem cobras gigantes desenhadas sobre a floresta.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 5: Questão prática 1 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>No curso superior de um rio, o processo dominante é a:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="correto" class="radio-duvid">
+                    <label for="p1a" class="card-opcao"><span>erosão vertical, aprofundando o canal</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="errado" class="radio-duvid">
+                    <label for="p1b" class="card-opcao"><span>deposição de sedimentos, formando deltas</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao"><span>erosão lateral, alargando o vale</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'é a erosão vertical! No curso superior, a alta inclinação gera grande velocidade, e o rio aprofunda o canal formando vales em V e cachoeiras.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 6: Conteúdo 2 — Deltas e Estuários -->
+        <div class="topico">
+
+            <h2>Onde o rio encontra o mar: deltas e estuários</h2>
+
+            <h3>Deltas</h3>
+
+            <p>Quando um rio chega ao mar ou a um lago sem correntes fortes o suficiente para dispersar seus sedimentos, ele os deposita na foz, criando um <span class="termo" data-palavra="Delta" data-definicao="Forma de deposição sedimentar na foz de um rio, criada quando a corrente fluvial perde velocidade ao entrar no mar e deposita seus sedimentos em leques ou triângulos. O nome vem da letra grega delta, que tem forma triangular.">delta</span>. O nome vem da letra grega delta (triangular), que descreve bem o formato típico dessa feição.</p>
+
+            <p>O delta cresce para dentro do mar conforme o rio traz mais sedimentos. O Nilo tem um dos deltas mais famosos do mundo: formado ao longo de milênios, ele concentra 95% da população egípcia numa faixa estreita de terra fértil no meio do deserto. Esse solo extraordinariamente rico é produto dos sedimentos que o Nilo carregava desde a Etiópia. Com a construção da Barragem de Assuã, em 1970, o rio parou de depositar sedimentos no delta. Desde então, o delta do Nilo está sendo erodido pelo mar e perdendo área anualmente, ameaçando cidades e terras agrícolas.</p>
+
+            <p>O Rio São Francisco, que deságua entre Alagoas e Sergipe, também tem um delta em processo de erosão acelerada. A transposição e a redução de sua vazão diminuíram o volume de sedimentos que chegam à foz. Sem esse aporte, o mar avança sobre a terra, engolindo praias, manguezais e comunidades pesqueiras inteiras.</p>
+
+            <div class="w3-margin">
+                <img src="tp26F02.png" alt="Delta do Rio Amazonas visto do satélite" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">Delta do Rio Amazonas: o maior do mundo em volume de água, com mais de 500 km de largura na foz. Fonte: NASA.</span>
+            </div>
+
+            <h3>Estuários</h3>
+
+            <p>Quando as correntes marinhas são fortes o suficiente para dispersar os sedimentos antes que se acumulem, a foz do rio forma um <span class="termo" data-palavra="Estuário" data-definicao="Zona de transição entre um rio e o mar, onde a água doce e a salgada se misturam. As correntes marinhas impedem a formação do delta dispersando os sedimentos. Abriga ecossistemas de altíssima biodiversidade.">estuário</span>: um braço de mar afunilado onde a água doce e a salgada se misturam. A salinidade varia conforme as marés, criando um ambiente de transição altamente produtivo.</p>
+
+            <p>Os estuários são dos ecossistemas mais ricos do planeta. Essa mistura de águas favorece a concentração de nutrientes, tornando-os berçários naturais para peixes, crustáceos e aves migratórias. Manguezais se estabelecem nas margens, filtrando poluentes e protegendo a costa de erosão e tsunamis. A destruição dos manguezais para a construção de carciniculturas (criação de camarões em tanques) é um problema grave no litoral nordestino brasileiro: remove a proteção costeira, contamina os rios vizinhos e elimina o berçário de espécies que sustentam a pesca artesanal.</p>
+
+            <p>A Baía de Guanabara, no Rio de Janeiro, foi originalmente um grande estuário com manguezais exuberantes. Séculos de aterramento, industrialização e despejo de esgoto transformaram-na num dos ambientes mais poluídos do Brasil. O caso é estudado como exemplo de como o crescimento urbano desordenado pode destruir ecossistemas estuarinos que levaram milênios para se formar.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 7: Questão prática 2 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>A construção de barragens em rios que deságuam em deltas tende a causar:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2a" value="errado" class="radio-duvid">
+                    <label for="p2a" class="card-opcao"><span>crescimento do delta, pois retém mais água</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2b" value="correto" class="radio-duvid">
+                    <label for="p2b" class="card-opcao"><span>erosão do delta, pois retém os sedimentos</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
+                    <label for="p2c" class="card-opcao"><span>formação de estuário no lugar do delta</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'erosão do delta! A barragem retém os sedimentos no reservatório. Sem sedimentos chegando à foz, o mar avança e erode o delta. Isso está acontecendo com o Nilo e com o São Francisco.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 8: Conteúdo 3 — Erosão fluvial, assoreamento e enchentes -->
+        <div class="topico">
+
+            <h2>Quando os rios transbordam: erosão, assoreamento e cheias</h2>
+
+            <h3>Erosão fluvial e assoreamento</h3>
+
+            <p>A <span class="termo" data-palavra="Erosão Fluvial" data-definicao="Processo pelo qual a água corrente desgasta e remove material do leito e das margens de um rio. É acelerada pelo desmatamento das margens e pelo uso inadequado do solo na bacia hidrográfica.">erosão fluvial</span> é o desgaste do leito e das margens causado pela água em movimento. Em condições naturais, ela é compensada pela reposição de vegetação e pela estabilidade do solo. O problema começa quando a vegetação das margens, especialmente a mata ciliar, é retirada.</p>
+
+            <p>Sem raízes para segurar o solo, as margens desmoronam. O material cai no rio, aumentando a carga de sedimentos. Com mais sedimentos do que consegue transportar, o rio começa a depositá-los no próprio leito, elevando o fundo. Esse processo chama-se <span class="termo" data-palavra="Assoreamento" data-definicao="Acúmulo de sedimentos no leito de um rio, lago ou reservatório causado pelo excesso de erosão na bacia. Eleva o fundo, reduz a capacidade de transporte de água e aumenta o risco de enchentes.">assoreamento</span>. Um rio assoreado tem o leito mais raso, transborda com chuvas menores e perde capacidade de navegação.</p>
+
+            <p>O assoreamento é um problema grave em rios brasileiros. O Rio Tietê, que abastece São Paulo, tem perdido profundidade continuamente por décadas de ocupação irregular de suas margens. Reservatórios de hidrelétricas assoreiam e perdem capacidade de geração de energia antes do prazo previsto. A solução passa pela recuperação das matas ciliares e pelo controle da erosão na bacia, não apenas pelo dragagem pontual do leito.</p>
+
+            <div class="w3-margin">
+                <img src="tp26F03.png" alt="Comparação de rio com e sem mata ciliar" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">Rio com mata ciliar preservada (esquerda) e assoreado após desmatamento (direita). A diferença de profundidade é visível.</span>
+            </div>
+
+            <h3>Planície de inundação e enchentes</h3>
+
+            <p>A planície de inundação é a área plana que margeia o rio e é periodicamente coberta pelas suas águas durante as cheias. Ela foi construída pelo próprio rio ao longo de milênios de deposição de sedimentos. Por isso é extraordinariamente fértil. Por isso também é perigosa para quem mora ali.</p>
+
+            <p>As enchentes fazem parte do funcionamento natural dos rios. O problema é quando populações se instalam na planície de inundação, geralmente por falta de alternativas de moradia em terras mais seguras. Quando a cheia vem, e sempre vem, a tragédia é tratada como "desastre natural", quando na verdade é o resultado de uma combinação de ocupação irregular, falta de planejamento urbano, desmatamento da bacia e ausência de políticas habitacionais.</p>
+
+            <h3>Rios e hidrelétricas</h3>
+
+            <p>O Brasil tem o maior potencial hidrelétrico do mundo e gera cerca de 65% da sua eletricidade com água. Isso tem um custo ambiental e social enorme: barragens inundam vales inteiros, deslocam comunidades ribeirinhas e indígenas, bloqueiam a passagem de peixes migratórios e alteram o regime fluvial a jusante. Belo Monte, no Rio Xingu, é o caso mais recente e polêmico: deslocou mais de 20.000 pessoas, impactou territórios indígenas e reduziu drasticamente a vazão de um trecho do rio em que comunidades pescavam há séculos. O debate entre energia limpa e impacto socioambiental ainda não tem resposta fácil.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 8.5: Texto-fonte para análise crítica -->
+        <div class="topico">
+
+            <h2>Leia e analise</h2>
+
+            <div class="duvid-bloco-apoio">
+                <div class="duvid-texto-citacao">
+                    As enchentes no Brasil matam mais do que terremotos, vulcões e tsunamis juntos. Mas ao contrário desses fenômenos, as enchentes são previsíveis. Sabemos onde vão ocorrer, em que época do ano, com que frequência. O que falta não é conhecimento científico. O que falta é a decisão política de não permitir que populações vulneráveis ocupem planícies de inundação, de recuperar matas ciliares, de tratar o rio como parte do espaço urbano e não como obstáculo a ser controlado.
+                </div>
+                <div class="duvid-fonte-texto">Adaptado de relatório do Centro Nacional de Monitoramento e Alertas de Desastres Naturais (CEMADEN), 2022</div>
+            </div>
+
+            <div class="w3-panel w3-pale-yellow w3-margin-top">
+                <p><strong>Responda no caderno antes de continuar:</strong></p>
+                <p>1. O texto afirma que as enchentes são "previsíveis". Com base no que você aprendeu sobre sistemas fluviais, explique por que isso é verdade e quais informações científicas permitem prever onde e quando elas ocorrem.</p>
+                <p>2. O texto coloca a responsabilidade nas "decisões políticas", não na natureza. Você concorda? Quais decisões políticas concretas poderiam reduzir o número de mortes por enchentes no Brasil?</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 9: Síntese crítica -->
+        <div class="topico">
+
+            <h2>Voltando à pergunta do início</h2>
+
+            <p>A tragédia da Serra Fluminense em 2011 foi natural ou social?</p>
+
+            <p>As chuvas foram naturais. Mas a escala da destruição foi construída ao longo de décadas. A retirada da mata ciliar acelerou a erosão das encostas. O assoreamento dos rios reduziu sua capacidade de absorver as chuvas. A ocupação das planícies de inundação e das áreas de risco por populações sem alternativa habitacional colocou pessoas no caminho das águas. O Estado sabia: cartas de risco identificavam as áreas vulneráveis anos antes da tragédia.</p>
+
+            <p>Os sistemas fluviais funcionam com sua própria lógica, acumulada em milhões de anos de evolução geológica. Quando as populações humanas ignoram essa lógica e ocupam planícies de inundação, retiram vegetação de margens e impermeabilizam o solo com asfalto e concreto, não estão "vencendo a natureza". Estão acumulando uma dívida que vai ser cobrada na próxima chuva intensa.</p>
+
+            <p>A resposta ao problema não é controlar o rio com obras de engenharia. É compreender sua dinâmica, respeitar suas planícies e garantir que as populações mais vulneráveis tenham onde morar que não seja dentro do leito maior do rio.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 10: Infográfico -->
+        <div class="topico">
+
+            <h2>Infográfico: resumo da aula</h2>
+
+            <div class="w3-margin">
+                <img src="inforesumot26.png" alt="Infográfico resumo Sistemas Fluviais" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:48px 0;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📊 Infográfico em breve</div>'">
+                <span class="w3-small w3-margin-left">Fonte: Organizado e revisado pelo autor.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11: Ficha de conceitos -->
+        <div class="topico">
+            <div id="ficha-conceitos"></div>
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11.5: Perguntas que qualquer aluno teria -->
+        <div class="topico">
+
+            <h2 id="titulo-pr">Perguntas que você provavelmente tinha</h2>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>O rio Amazonas tem delta ou estuário?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Tecnicamente, o Amazonas não tem delta nem estuário clássico. Tem uma foz tão larga e com tanta água que as correntes oceânicas não conseguem dispersar os sedimentos completamente, mas também não se acumulam em forma de delta. A ilha de Marajó, no meio da foz, é na verdade uma ilha fluvial formada por sedimentos, e a foz tem mais de 300 km de largura. Cada rio tem suas peculiaridades.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>Por que construir à beira do rio é proibido por lei, mas todo mundo faz?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> O Código Florestal define faixas mínimas de mata ciliar que não podem ser ocupadas, variando de 30 metros (para rios estreitos) a 500 metros (para rios com mais de 600 m de largura). Mas a fiscalização é fraca, a pressão por moradia é alta e regularizar ocupações irregulares é politicamente mais fácil do que removê-las. O resultado é que milhões de brasileiros vivem em áreas de risco legalmente reconhecidas.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>O que é o "leito maior" de um rio?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Todo rio tem um leito menor, onde a água corre normalmente, e um leito maior, que é a planície de inundação inundada nas cheias excepcionais. O problema é que as pessoas constroem casas, ruas e até bairros inteiros no leito maior, achando que "o rio nunca chegou aqui". Chegou sim. Só não chegou nos últimos anos.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 12: Produção final -->
+        <div class="topico">
+
+            <p class="caixa">Hora de usar o que você aprendeu.</p>
+
+            <div class="w3-panel w3-pale-yellow">
+                <h3>Diagnóstico fluvial da sua cidade</h3>
+                <p><strong>Atividade individual ou em dupla</strong></p>
+
+                <p>Pesquise sobre o principal rio que passa pela sua cidade ou região e responda no caderno:</p>
+
+                <p><strong>1.</strong> Em que trecho do rio sua cidade está localizada (curso superior, médio ou inferior)? Como isso influencia o tipo de relevo e o risco de enchentes?</p>
+                <p><strong>2.</strong> Existem registros de enchentes históricas na sua cidade? Quando ocorreram e quais foram as causas apontadas?</p>
+                <p><strong>3.</strong> A mata ciliar do rio está preservada ou há ocupação irregular nas margens? O que sua cidade tem feito a respeito?</p>
+                <p><strong>4.</strong> Com base no que você aprendeu, escreva uma proposta de ação (mínimo 10 linhas) para reduzir o risco de enchentes na sua cidade usando conceitos de sistemas fluviais.</p>
+
+                <p class="w3-small w3-text-grey">Dica: o site do CEMADEN (cemaden.gov.br) tem mapas de risco para todos os municípios brasileiros.</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 13: Questões para o caderno -->
+        <div class="topico">
+
+            <div class="w3-pale-yellow">
+                <h2>Questões para responder no caderno:</h2>
+
+                <h3>1. Quais são os três processos fundamentais dos sistemas fluviais? Como eles variam ao longo do curso do rio?</h3>
+                <h3>2. Explique como se formam os meandros. O que é uma lagoa oxbow e como ela se origina?</h3>
+                <h3>3. Qual a diferença entre delta e estuário? Em que condições se forma cada um?</h3>
+                <h3>4. Por que a construção de barragens pode causar erosão do delta a jusante? Use o exemplo do Nilo ou do São Francisco.</h3>
+                <h3>5. O que é assoreamento? Quais são suas causas e consequências para as populações que vivem às margens dos rios?</h3>
+                <h3>6. Explique o papel da mata ciliar na dinâmica dos sistemas fluviais e o que acontece quando ela é removida.</h3>
+                <h3>7. O que é a planície de inundação? Por que populações pobres tendem a ocupar essas áreas de risco?</h3>
+                <h3>8. As enchentes no Brasil são fenômenos naturais ou socioambientais? Argumente com exemplos concretos.</h3>
+                <h3>9. Quais são os impactos socioambientais da construção de hidrelétricas em rios como o Xingu? Há alternativas?</h3>
+                <h3>10. Como o desmatamento de uma bacia hidrográfica afeta os sistemas fluviais a ponto de aumentar o risco de enchentes nas cidades?</h3>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Concluir Aula</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO: TRANSIÇÃO FINAL -->
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO: FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+
+
+        <!-- SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS -->
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+    </main>
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+
+    <div id="footer-placeholder"></div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DPX55DSFZ0');
+    </script>
+
+</body>
+
+</html>

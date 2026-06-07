@@ -1,350 +1,416 @@
 {
   "Abdal": {
-    "tag": "Geografia do Brasil",
+    "complemento": "São Paulo: Editora Fundação Perseu Abramo, 2011.",
     "cor": "w3-indigo",
-    "texto": "ABDAL, Alexandre. <strong>Trajetórias regionais de desenvolvimento no Brasil contemporâneo</strong>.",
-    "complemento": "São Paulo: Editora Fundação Perseu Abramo, 2011."
+    "tag": "Geografia do Brasil",
+    "texto": "ABDAL, Alexandre. <strong>Trajetórias regionais de desenvolvimento no Brasil contemporâneo</strong>."
   },
   "BNCC": {
-    "tag": "Diretriz Nacional",
+    "complemento": "Brasília: MEC/CONSED/UNDIME, 2018.",
     "cor": "w3-amber",
-    "texto": "BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>.",
-    "complemento": "Brasília: MEC/CONSED/UNDIME, 2018."
+    "tag": "Diretriz Nacional",
+    "texto": "BRASIL. Ministério da Educação. <strong>Base Nacional Comum Curricular</strong>."
   },
   "Bizzi": {
-    "tag": "Geologia",
+    "complemento": "Brasília: CPRM — Serviço Geológico do Brasil, 2003.",
     "cor": "w3-brown",
-    "texto": "BIZZI, Luiz Augusto; SCHOBBENHAUS, Carlos; VIDOTTI, Roberta Mary (Orgs.). <strong>Geologia, tectônica e recursos minerais do Brasil</strong>: texto, mapas e SIG.",
-    "complemento": "Brasília: CPRM — Serviço Geológico do Brasil, 2003."
+    "tag": "Geologia",
+    "texto": "BIZZI, Luiz Augusto; SCHOBBENHAUS, Carlos; VIDOTTI, Roberta Mary (Orgs.). <strong>Geologia, tectônica e recursos minerais do Brasil</strong>: texto, mapas e SIG."
   },
   "Boniface": {
-    "tag": "Atlas",
+    "complemento": "Paris: Éditions Armand Colin/Fayard, 2015.",
     "cor": "w3-blue",
-    "texto": "BONIFACE, Pascal. <strong>Atlas du Monde Global</strong>: 100 cartes pour comprendre un monde chaotique.",
-    "complemento": "Paris: Éditions Armand Colin/Fayard, 2015."
+    "tag": "Atlas",
+    "texto": "BONIFACE, Pascal. <strong>Atlas du Monde Global</strong>: 100 cartes pour comprendre un monde chaotique."
   },
   "Borrero": {
-    "tag": "Geociências",
+    "complemento": "Columbus: McGraw-Hill Companies, 2008.",
     "cor": "w3-teal",
-    "texto": "BORRERO, Francisco. <strong>Earth Science: Geology, the Environment, and the Universe</strong>.",
-    "complemento": "Columbus: McGraw-Hill Companies, 2008."
+    "tag": "Geociências",
+    "texto": "BORRERO, Francisco. <strong>Earth Science: Geology, the Environment, and the Universe</strong>."
   },
   "Britannica": {
-    "tag": "Enciclopédia",
+    "complemento": "2008.",
     "cor": "w3-blue",
-    "texto": "<strong>Britannica Illustrated Science Library</strong>.",
-    "complemento": "2008."
+    "tag": "Enciclopédia",
+    "texto": "<strong>Britannica Illustrated Science Library</strong>."
   },
   "Candelori": {
-    "tag": "Geografia Geral",
+    "complemento": "São Paulo: Moderna, 2008.",
     "cor": "w3-green",
-    "texto": "CANDELORI, Roberto. <strong>Enciclopédia do Estudante: geografia geral</strong>.",
-    "complemento": "São Paulo: Moderna, 2008."
+    "tag": "Geografia Geral",
+    "texto": "CANDELORI, Roberto. <strong>Enciclopédia do Estudante: geografia geral</strong>."
   },
   "Carpanelli": {
-    "tag": "Geografia Econômica",
+    "complemento": "Itália: Zanichelli, 2015.",
     "cor": "w3-blue",
-    "texto": "CARPANELLI, Francesca. <strong>La geografia in 30 lezioni: Geografia generale ed economica</strong>.",
-    "complemento": "Itália: Zanichelli, 2015."
+    "tag": "Geografia Econômica",
+    "texto": "CARPANELLI, Francesca. <strong>La geografia in 30 lezioni: Geografia generale ed economica</strong>."
   },
   "CarvalhoAraujo": {
-    "tag": "Cartografia",
+    "complemento": "Natal: EDUFRN, 2011.",
     "cor": "w3-orange",
-    "texto": "CARVALHO, Edílson Alves; ARAÚJO, Paulo César. <strong>Leituras cartográficas e interpretações estatísticas</strong>. 2.ed.",
-    "complemento": "Natal: EDUFRN, 2011."
+    "tag": "Cartografia",
+    "texto": "CARVALHO, Edílson Alves; ARAÚJO, Paulo César. <strong>Leituras cartográficas e interpretações estatísticas</strong>. 2.ed."
   },
   "CarvalhoLeituras": {
-    "tag": "Cartografia",
+    "complemento": "Natal: EDUFRN, 2011.",
     "cor": "w3-orange",
-    "texto": "CARVALHO, Edilson Alves de. <strong>Leituras cartográficas e interpretações estatísticas I</strong>. 2.ed.",
-    "complemento": "Natal: EDUFRN, 2011."
+    "tag": "Cartografia",
+    "texto": "CARVALHO, Edilson Alves de. <strong>Leituras cartográficas e interpretações estatísticas I</strong>. 2.ed."
+  },
+  "Chang": {
+    "complemento": "Obra clássica que analisa como países ricos se industrializaram com protecionismo estatal e hoje pregam livre mercado para países pobres.",
+    "cor": "w3-blue",
+    "tag": "Desenvolvimento Econômico",
+    "texto": "CHANG, Ha-Joon. Chutando a Escada: A Estratégia do Desenvolvimento em Perspectiva Histórica. São Paulo: Unesp, 2004."
   },
   "Cogueto": {
-    "tag": "Geografia Agrária",
+    "complemento": "Londrina: Editora Distribuidora Educacional S.A., 2018.",
     "cor": "w3-brown",
-    "texto": "COGUETO, Jaqueline Vigo. <strong>Geografia agrária</strong>.",
-    "complemento": "Londrina: Editora Distribuidora Educacional S.A., 2018."
+    "tag": "Geografia Agrária",
+    "texto": "COGUETO, Jaqueline Vigo. <strong>Geografia agrária</strong>."
+  },
+  "Correa": {
+    "complemento": "São Paulo: Ática, 1989.",
+    "cor": "w3-teal",
+    "tag": "Geografia Urbana",
+    "texto": "CORRÊA, Roberto Lobato. <strong>O Espaço Urbano</strong>."
   },
   "Dambros": {
-    "tag": "Geografia Física",
+    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2017.",
     "cor": "w3-green",
-    "texto": "DAMBRÓS, Cristiane. <strong>Geografia Física</strong>.",
-    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2017."
+    "tag": "Geografia Física",
+    "texto": "DAMBRÓS, Cristiane. <strong>Geografia Física</strong>."
+  },
+  "DrezeSen": {
+    "complemento": "Análise das contradições do desenvolvimento indiano: crescimento econômico acelerado coexistindo com privações sociais profundas.",
+    "cor": "w3-teal",
+    "tag": "Desenvolvimento Social",
+    "texto": "DRÈZE, Jean; SEN, Amartya. An Uncertain Glory: India and its Contradictions. Princeton: Princeton University Press, 2013."
   },
   "Faria": {
-    "tag": "Cartografia",
+    "complemento": "Londrina: Educacional S.A., 2016.",
     "cor": "w3-orange",
-    "texto": "FARIA, Daniela Resende de. <strong>Cartografia</strong>.",
-    "complemento": "Londrina: Educacional S.A., 2016."
+    "tag": "Cartografia",
+    "texto": "FARIA, Daniela Resende de. <strong>Cartografia</strong>."
   },
   "Florenzano": {
-    "tag": "Geomorfologia",
+    "complemento": "São Paulo: Oficina de Textos, 2008.",
     "cor": "w3-teal",
-    "texto": "FLORENZANO, Teresa Gallotti. <strong>Geomorfologia</strong>: conceitos e tecnologias atuais.",
-    "complemento": "São Paulo: Oficina de Textos, 2008."
+    "tag": "Geomorfologia",
+    "texto": "FLORENZANO, Teresa Gallotti. <strong>Geomorfologia</strong>: conceitos e tecnologias atuais."
   },
   "Frank": {
-    "tag": "Geografia Econômica",
+    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2018.",
     "cor": "w3-blue",
-    "texto": "FRANK, Bruno José Rodrigues. <strong>Geografia econômica</strong>.",
-    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2018."
+    "tag": "Geografia Econômica",
+    "texto": "FRANK, Bruno José Rodrigues. <strong>Geografia econômica</strong>."
   },
   "Fredette": {
-    "tag": "Geociências",
+    "complemento": "Éditions Québec Amérique, 2007.",
     "cor": "w3-teal",
-    "texto": "FREDETTE, Nathalie (et al.). <strong>La Terre: Comprendre notre planète</strong>.",
-    "complemento": "Éditions Québec Amérique, 2007."
+    "tag": "Geociências",
+    "texto": "FREDETTE, Nathalie (et al.). <strong>La Terre: Comprendre notre planète</strong>."
   },
   "Freitas": {
-    "tag": "Cartografia",
+    "complemento": "Rio Claro: IGCE/UNESP; Bauru: FC/Unesp; CECEMCA, 2005.",
     "cor": "w3-orange",
-    "texto": "FREITAS, Maria Isabel Castreghini de (Org.). <strong>Cartografia e Meio Ambiente</strong>.",
-    "complemento": "Rio Claro: IGCE/UNESP; Bauru: FC/Unesp; CECEMCA, 2005."
+    "tag": "Cartografia",
+    "texto": "FREITAS, Maria Isabel Castreghini de (Org.). <strong>Cartografia e Meio Ambiente</strong>."
+  },
+  "Gasparin": {
+    "complemento": "Campinas: Autores Associados, 2012.",
+    "cor": "w3-red",
+    "tag": "Pedagogia",
+    "texto": "GASPARIN, João Luiz. <strong>Uma didática para a pedagogia histórico-crítica</strong>. 5.ed."
   },
   "GeographyDK": {
-    "tag": "Atlas",
+    "complemento": "DK: New York, 2019.",
     "cor": "w3-indigo",
-    "texto": "<strong>Geography: A unique step-by-step visual guide</strong>.",
-    "complemento": "DK: New York, 2019."
+    "tag": "Atlas",
+    "texto": "<strong>Geography: A unique step-by-step visual guide</strong>."
+  },
+  "HRW": {
+    "complemento": "Documentação das violações de direitos humanos em Xinjiang, Tibet e Hong Kong pelo governo chinês.",
+    "cor": "w3-red",
+    "tag": "Direitos Humanos",
+    "texto": "HUMAN RIGHTS WATCH. Relatório Mundial 2023: China. New York: HRW, 2023."
   },
   "Hess": {
-    "tag": "Geografia Física",
+    "complemento": "Pearson, Hoboken, NJ, 2016.",
     "cor": "w3-green",
-    "texto": "HESS, Darrel. <strong>McKnight's Physical Geography: A Landscape Appreciation</strong>. 12.ed.",
-    "complemento": "Pearson, Hoboken, NJ, 2016."
+    "tag": "Geografia Física",
+    "texto": "HESS, Darrel. <strong>McKnight's Physical Geography: A Landscape Appreciation</strong>. 12.ed."
   },
   "IBGE": {
-    "tag": "Cartografia",
+    "complemento": "Rio de Janeiro, 1999.",
     "cor": "w3-orange",
-    "texto": "IBGE. <strong>Noções Básicas de Cartografia</strong>.",
-    "complemento": "Rio de Janeiro, 1999."
+    "tag": "Cartografia",
+    "texto": "IBGE. <strong>Noções Básicas de Cartografia</strong>."
   },
   "IBRAM": {
-    "tag": "Mineração",
+    "complemento": "Disponível em: https://ibram.org.br/mineracao-em-numeros/.",
     "cor": "w3-grey",
-    "texto": "IBRAM. <strong>Mineração em números</strong>.",
-    "complemento": "Disponível em: https://ibram.org.br/mineracao-em-numeros/."
+    "tag": "Mineração",
+    "texto": "IBRAM. <strong>Mineração em números</strong>."
   },
   "Joly": {
-    "tag": "Cartografia",
+    "complemento": "Campinas: Papirus, 1990.",
     "cor": "w3-orange",
-    "texto": "JOLY, Fernand. <strong>A Cartografia</strong>.",
-    "complemento": "Campinas: Papirus, 1990."
+    "tag": "Cartografia",
+    "texto": "JOLY, Fernand. <strong>A Cartografia</strong>."
   },
   "Lacoste": {
-    "tag": "Geografia Crítica",
+    "complemento": "Campinas: Papirus, 2003 [1989].",
     "cor": "w3-purple",
-    "texto": "LACOSTE, Yves. <strong>A geografia – isso serve, em primeiro lugar, para fazer a guerra</strong>. 2.ed.",
-    "complemento": "Campinas: Papirus, 2003 [1989]."
+    "tag": "Geografia Crítica",
+    "texto": "LACOSTE, Yves. <strong>A geografia – isso serve, em primeiro lugar, para fazer a guerra</strong>. 2.ed."
+  },
+  "Maathai": {
+    "complemento": "São Paulo: Globo, 2010.",
+    "cor": "w3-green",
+    "tag": "África",
+    "texto": "MAATHAI, Wangari. <strong>Desafio à África: uma perspectiva africana sobre os problemas contemporâneos do continente</strong>."
+  },
+  "Mamdani": {
+    "complemento": "Maputo: PROMÉDIA, 2007.",
+    "cor": "w3-red",
+    "tag": "África",
+    "texto": "MAMDANI, Mahmood. <strong>Quando a vítima se torna assassino: colonialismo, nativismo e o genocídio em Ruanda</strong>."
   },
   "Mariano": {
-    "tag": "Geografia do Brasil",
+    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2018.",
     "cor": "w3-green",
-    "texto": "MARIANO, Maryelle Florêncio (et al.). <strong>Geografia do Brasil</strong>.",
-    "complemento": "Londrina: Editora e Distribuidora Educacional S.A., 2018."
+    "tag": "Geografia do Brasil",
+    "texto": "MARIANO, Maryelle Florêncio (et al.). <strong>Geografia do Brasil</strong>."
   },
   "Marsh": {
-    "tag": "Geografia Física",
+    "complemento": "Cambridge University Press, New York, 2013.",
     "cor": "w3-teal",
-    "texto": "MARSH, William M.; KAUFMAN, Martin M. <strong>Physical Geography: Great Systems and Global Environments</strong>.",
-    "complemento": "Cambridge University Press, New York, 2013."
+    "tag": "Geografia Física",
+    "texto": "MARSH, William M.; KAUFMAN, Martin M. <strong>Physical Geography: Great Systems and Global Environments</strong>."
   },
   "Marshak": {
-    "tag": "Geociências",
+    "complemento": "University of Illinois, 2015.",
     "cor": "w3-teal",
-    "texto": "MARSHAK, Stephen. <strong>Earth: Portrait of a Planet</strong>. 5.ed.",
-    "complemento": "University of Illinois, 2015."
+    "tag": "Geociências",
+    "texto": "MARSHAK, Stephen. <strong>Earth: Portrait of a Planet</strong>. 5.ed."
+  },
+  "Mearsheimer": {
+    "complemento": "Análise realista das relações internacionais e dos limites do poder ocidental na era pós-Guerra Fria.",
+    "cor": "w3-blue-grey",
+    "tag": "Geopolítica",
+    "texto": "MEARSHEIMER, John. The Great Delusion: Liberal Dreams and International Realities. New Haven: Yale University Press, 2018."
   },
   "Mendonca": {
-    "tag": "Climatologia",
+    "complemento": "São Paulo: Oficina de Textos, 2007.",
     "cor": "w3-cyan",
-    "texto": "MENDONÇA, Francisco; DANNI-OLIVEIRA, Inês Moresco. <strong>Climatologia: noções básicas e climas do Brasil</strong>.",
-    "complemento": "São Paulo: Oficina de Textos, 2007."
+    "tag": "Climatologia",
+    "texto": "MENDONÇA, Francisco; DANNI-OLIVEIRA, Inês Moresco. <strong>Climatologia: noções básicas e climas do Brasil</strong>."
   },
   "Milanez": {
-    "tag": "Mineração",
+    "complemento": "UFJF/POEMAS, 2017.",
     "cor": "w3-grey",
-    "texto": "MILANEZ, Bruno. Mineração, ambiente e sociedade: impactos complexos e simplificação da legislação.",
-    "complemento": "UFJF/POEMAS, 2017."
+    "tag": "Mineração",
+    "texto": "MILANEZ, Bruno. Mineração, ambiente e sociedade: impactos complexos e simplificação da legislação."
   },
   "MoreiraSene": {
-    "tag": "Livro Base",
+    "complemento": "São Paulo: Scipione, 2016.",
     "cor": "w3-blue",
-    "texto": "MOREIRA, João Carlos; SENE, Eustáquio de. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed.",
-    "complemento": "São Paulo: Scipione, 2016."
+    "tag": "Livro Base",
+    "texto": "MOREIRA, João Carlos; SENE, Eustáquio de. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed."
   },
   "Novak": {
-    "tag": "Narrativa",
+    "complemento": "São Paulo: Cengage Learning, 2017.",
     "cor": "w3-purple",
-    "texto": "NOVAK, Jeannie. <strong>Desenvolvimento de games</strong>.",
-    "complemento": "São Paulo: Cengage Learning, 2017."
+    "tag": "Narrativa",
+    "texto": "NOVAK, Jeannie. <strong>Desenvolvimento de games</strong>."
   },
   "Oliveira": {
-    "tag": "Cartografia",
+    "complemento": "Disponível em: http://www.dsr.inpe.br/vcsr/files/Apresentacao_GPS.pdf. Acesso em 06. fev. 2021.",
     "cor": "w3-orange",
-    "texto": "OLIVEIRA, Juliano. <strong>Conceitos básicos sobre posicionamento por satélites artificiais</strong>. 2011.",
-    "complemento": "Disponível em: http://www.dsr.inpe.br/vcsr/files/Apresentacao_GPS.pdf. Acesso em 06. fev. 2021."
+    "tag": "Cartografia",
+    "texto": "OLIVEIRA, Juliano. <strong>Conceitos básicos sobre posicionamento por satélites artificiais</strong>. 2011."
   },
   "Press": {
-    "tag": "Geociências",
+    "complemento": "Porto Alegre: Bookman, 2006.",
     "cor": "w3-teal",
-    "texto": "PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>. 4.ed.",
-    "complemento": "Porto Alegre: Bookman, 2006."
+    "tag": "Geociências",
+    "texto": "PRESS, F.; SIEVER, R.; GROTZINGER, J.; JORDAN, T.H. <strong>Para Entender a Terra</strong>. 4.ed."
   },
   "RevistaGalileu": {
-    "tag": "Cartografia",
+    "complemento": "Disponível em: http://revistagalileu.globo.com.html",
     "cor": "w3-orange",
-    "texto": "REVISTA GALILEU. <strong>Qual foi a primeira foto tirada do espaço?</strong>",
-    "complemento": "Disponível em: http://revistagalileu.globo.com.html"
+    "tag": "Cartografia",
+    "texto": "REVISTA GALILEU. <strong>Qual foi a primeira foto tirada do espaço?</strong>"
   },
   "Reynolds": {
-    "tag": "Geografia Física",
+    "complemento": "New York: McGraw-Hill, 2015.",
     "cor": "w3-green",
-    "texto": "REYNOLDS, Stephen J. <em>et al.</em> <strong>Exploring Physical Geography</strong>. 2.ed.",
-    "complemento": "New York: McGraw-Hill, 2015."
+    "tag": "Geografia Física",
+    "texto": "REYNOLDS, Stephen J. <em>et al.</em> <strong>Exploring Physical Geography</strong>. 2.ed."
+  },
+  "Rodney": {
+    "complemento": "Lisboa: Seara Nova, 1975.",
+    "cor": "w3-deep-orange",
+    "tag": "África",
+    "texto": "RODNEY, Walter. <strong>Como a Europa subdesenvolveu a África</strong>."
   },
   "Ross": {
-    "tag": "Geomorfologia",
+    "complemento": "2016.",
     "cor": "w3-teal",
-    "texto": "ROSS, Jurandyr L. S. Compartimentação do relevo da América do Sul. <strong>Revista Brasileira de Geografia</strong>, v. 61, n. 1, p. 21–58.",
-    "complemento": "2016."
+    "tag": "Geomorfologia",
+    "texto": "ROSS, Jurandyr L. S. Compartimentação do relevo da América do Sul. <strong>Revista Brasileira de Geografia</strong>, v. 61, n. 1, p. 21–58."
+  },
+  "Said": {
+    "complemento": "São Paulo: Unesp, 2012.",
+    "cor": "w3-indigo",
+    "tag": "Oriente Médio",
+    "texto": "SAID, Edward W. <strong>A questão da Palestina</strong>."
   },
   "SantosEspacoCidadao": {
-    "tag": "Geografia Crítica",
+    "complemento": "São Paulo: Editora da USP, 2007.",
     "cor": "w3-green",
-    "texto": "SANTOS, Milton. <strong>O espaço do cidadão</strong>.",
-    "complemento": "São Paulo: Editora da USP, 2007."
+    "tag": "Geografia Crítica",
+    "texto": "SANTOS, Milton. <strong>O espaço do cidadão</strong>."
   },
   "SantosGlobalizacao": {
-    "tag": "Geografia Crítica",
+    "complemento": "Rio de Janeiro: Record, 2000.",
     "cor": "w3-green",
-    "texto": "SANTOS, Milton. <strong>Por uma outra globalização: do pensamento único à consciência universal</strong>.",
-    "complemento": "Rio de Janeiro: Record, 2000."
+    "tag": "Geografia Crítica",
+    "texto": "SANTOS, Milton. <strong>Por uma outra globalização: do pensamento único à consciência universal</strong>."
   },
   "SantosNatureza": {
-    "tag": "Geografia Crítica",
+    "complemento": "São Paulo: EDUSP, 2002.",
     "cor": "w3-green",
-    "texto": "SANTOS, Milton. <strong>A Natureza do Espaço</strong>. 4.ed.",
-    "complemento": "São Paulo: EDUSP, 2002."
+    "tag": "Geografia Crítica",
+    "texto": "SANTOS, Milton. <strong>A Natureza do Espaço</strong>. 4.ed."
   },
   "SantosPaisDistorcido": {
-    "tag": "Geografia Crítica",
+    "complemento": "São Paulo: Publifolha, 2002.",
     "cor": "w3-green",
-    "texto": "SANTOS, Milton. <strong>O país distorcido: o Brasil, a globalização e a cidadania</strong>.",
-    "complemento": "São Paulo: Publifolha, 2002."
+    "tag": "Geografia Crítica",
+    "texto": "SANTOS, Milton. <strong>O país distorcido: o Brasil, a globalização e a cidadania</strong>."
   },
   "SantosPatricia": {
-    "tag": "Geografia do Brasil",
+    "complemento": "São Paulo: Moderna, 2008.",
     "cor": "w3-blue",
-    "texto": "SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante: geografia do Brasil</strong>.",
-    "complemento": "São Paulo: Moderna, 2008."
+    "tag": "Geografia do Brasil",
+    "texto": "SANTOS, Patrícia Cardoso dos (et al.). <strong>Enciclopédia do Estudante: geografia do Brasil</strong>."
   },
   "SantosPensando": {
-    "tag": "Geografia Crítica",
+    "complemento": "São Paulo: Edusp, 2004.",
     "cor": "w3-green",
-    "texto": "SANTOS, Milton. <strong>Pensando o espaço do homem</strong>. 5.ed.",
-    "complemento": "São Paulo: Edusp, 2004."
+    "tag": "Geografia Crítica",
+    "texto": "SANTOS, Milton. <strong>Pensando o espaço do homem</strong>. 5.ed."
   },
   "SantosTerritorioSociedade": {
-    "tag": "Geografia do Brasil",
+    "complemento": "Rio de Janeiro: Record, 2002.",
     "cor": "w3-deep-orange",
-    "texto": "SANTOS, Milton; SILVEIRA, Maria Laura. <strong>O Brasil</strong>: território e sociedade no início do século XXI. 4.ed.",
-    "complemento": "Rio de Janeiro: Record, 2002."
+    "tag": "Geografia do Brasil",
+    "texto": "SANTOS, Milton; SILVEIRA, Maria Laura. <strong>O Brasil</strong>: território e sociedade no início do século XXI. 4.ed."
   },
   "Sausen": {
-    "tag": "Cartografia",
+    "complemento": "Disponível em: http://mtc-m16c.sid.inpe.br/col/sid.inpe.br.pdf",
     "cor": "w3-orange",
-    "texto": "SAUSEN, Tania Maria. <strong>Desastres naturais e geotecnologias</strong>—sensoriamento remoto, cadernos didáticos nº 2. São José dos Campos, 2008.",
-    "complemento": "Disponível em: http://mtc-m16c.sid.inpe.br/col/sid.inpe.br.pdf"
+    "tag": "Cartografia",
+    "texto": "SAUSEN, Tania Maria. <strong>Desastres naturais e geotecnologias</strong>—sensoriamento remoto, cadernos didáticos nº 2. São José dos Campos, 2008."
+  },
+  "Saviani": {
+    "complemento": "Campinas: Autores Associados, 2011.",
+    "cor": "w3-red",
+    "tag": "Pedagogia",
+    "texto": "SAVIANI, Dermeval. <strong>Pedagogia histórico-crítica: primeiras aproximações</strong>. 11.ed."
   },
   "SeneMoreira": {
-    "tag": "Livro Base",
+    "complemento": "São Paulo: Scipione, 2016.",
     "cor": "w3-blue",
-    "texto": "SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed.",
-    "complemento": "São Paulo: Scipione, 2016."
+    "tag": "Livro Base",
+    "texto": "SENE, Eustáquio de; MOREIRA, João Carlos. <strong>Geografia geral e do Brasil: espaço geográfico e globalização</strong>. 3.ed."
   },
   "Silva": {
-    "tag": "Livro Base",
+    "complemento": "São Paulo: Moderna, 2016.",
     "cor": "w3-orange",
-    "texto": "SILVA, Angela Corrêa da. <strong>Geografia: contextos e redes</strong>.",
-    "complemento": "São Paulo: Moderna, 2016."
+    "tag": "Livro Base",
+    "texto": "SILVA, Angela Corrêa da. <strong>Geografia: contextos e redes</strong>."
   },
   "Simielli": {
-    "tag": "Cartografia",
+    "complemento": "São Paulo: Ática, 2019.",
     "cor": "w3-orange",
-    "texto": "SIMIELLI, Maria Elena. <strong>Geoatlas básico</strong>: mapas políticos, físicos e temáticos.",
-    "complemento": "São Paulo: Ática, 2019."
+    "tag": "Cartografia",
+    "texto": "SIMIELLI, Maria Elena. <strong>Geoatlas básico</strong>: mapas políticos, físicos e temáticos."
   },
   "Skolnick": {
-    "tag": "Narrativa",
+    "complemento": "New York: Watson-Guptill, 2014.",
     "cor": "w3-deep-orange",
-    "texto": "SKOLNICK, Evan. <strong>Video Game Storytelling: what every developer needs to know about narrative techniques</strong>.",
-    "complemento": "New York: Watson-Guptill, 2014."
+    "tag": "Narrativa",
+    "texto": "SKOLNICK, Evan. <strong>Video Game Storytelling: what every developer needs to know about narrative techniques</strong>."
   },
   "Soja": {
-    "tag": "Teoria Espacial",
+    "complemento": "Oxford: Blackwell, 2000.",
     "cor": "w3-purple",
-    "texto": "SOJA, Edward. <strong>Postmetropolis: Critical Studies of Cities and Regions</strong>.",
-    "complemento": "Oxford: Blackwell, 2000."
+    "tag": "Teoria Espacial",
+    "texto": "SOJA, Edward. <strong>Postmetropolis: Critical Studies of Cities and Regions</strong>."
   },
   "Souza": {
-    "tag": "Teoria Espacial",
+    "complemento": "Rio de Janeiro: Bertrand Brasil, 1995. p. 86.",
     "cor": "w3-purple",
-    "texto": "SOUZA, Marcelo Lopes de. O território: sobre espaço e poder, autonomia e desenvolvimento. In: CASTRO, Iná Elias et al. (Org.). <strong>Geografia: conceitos e temas</strong>.",
-    "complemento": "Rio de Janeiro: Bertrand Brasil, 1995. p. 86."
+    "tag": "Teoria Espacial",
+    "texto": "SOUZA, Marcelo Lopes de. O território: sobre espaço e poder, autonomia e desenvolvimento. In: CASTRO, Iná Elias et al. (Org.). <strong>Geografia: conceitos e temas</strong>."
   },
   "Steffen": {
-    "tag": "Cartografia",
+    "complemento": "Disponível em: http://www3.inpe.br/unidades/cep/atividadescep/educasere/apostila.htm. Acesso em 01. fev. 2021.",
     "cor": "w3-orange",
-    "texto": "STEFFEN, Carlos Alberto. <strong>Introdução ao Sensoriamento Remoto</strong>.",
-    "complemento": "Disponível em: http://www3.inpe.br/unidades/cep/atividadescep/educasere/apostila.htm. Acesso em 01. fev. 2021."
+    "tag": "Cartografia",
+    "texto": "STEFFEN, Carlos Alberto. <strong>Introdução ao Sensoriamento Remoto</strong>."
   },
   "Strahler": {
-    "tag": "Geografia Física",
+    "complemento": "New York: Wiley, 2013.",
     "cor": "w3-green",
-    "texto": "STRAHLER, Alan. <strong>Introducing Physical Geography</strong>. 6.ed.",
-    "complemento": "New York: Wiley, 2013."
+    "tag": "Geografia Física",
+    "texto": "STRAHLER, Alan. <strong>Introducing Physical Geography</strong>. 6.ed."
   },
   "Suertegaray": {
-    "tag": "Geociências",
+    "complemento": "Porto Alegre: UFRGS, 2003.",
     "cor": "w3-teal",
-    "texto": "SUERTEGARAY, Dirce Maria Antunes (Org.). <strong>Terra: feições ilustradas</strong>.",
-    "complemento": "Porto Alegre: UFRGS, 2003."
+    "tag": "Geociências",
+    "texto": "SUERTEGARAY, Dirce Maria Antunes (Org.). <strong>Terra: feições ilustradas</strong>."
   },
   "Teixeira": {
-    "tag": "Geociências",
+    "complemento": "São Paulo: Companhia Editora Nacional, 2009.",
     "cor": "w3-teal",
-    "texto": "TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F. <strong>Decifrando a Terra</strong>. 2.ed.",
-    "complemento": "São Paulo: Companhia Editora Nacional, 2009."
+    "tag": "Geociências",
+    "texto": "TEIXEIRA, W.; FAIRCHILD, T. R.; TOLEDO, M. C. M.; TAIOLI, F. <strong>Decifrando a Terra</strong>. 2.ed."
   },
   "VanDerPluijm": {
-    "tag": "Geologia",
+    "complemento": "New York/London: W.W. Norton & Company, 2004.",
     "cor": "w3-teal",
-    "texto": "VAN DER PLUIJM, Ben A.; MARSHAK, Stephen. <strong>Earth Structure: an introduction to structural geology and tectonics</strong>.",
-    "complemento": "New York/London: W.W. Norton & Company, 2004."
+    "tag": "Geologia",
+    "texto": "VAN DER PLUIJM, Ben A.; MARSHAK, Stephen. <strong>Earth Structure: an introduction to structural geology and tectonics</strong>."
   },
   "Vesentini": {
-    "tag": "Livro Base",
+    "complemento": "São Paulo: Ática, 2013.",
     "cor": "w3-blue",
-    "texto": "VESENTINI, José William. <strong>Geografia: o mundo em transição</strong>. 2.ed.",
-    "complemento": "São Paulo: Ática, 2013."
+    "tag": "Livro Base",
+    "texto": "VESENTINI, José William. <strong>Geografia: o mundo em transição</strong>. 2.ed."
   },
   "Vogler": {
-    "tag": "Narrativa",
+    "complemento": "Rio de Janeiro: Nova Fronteira, 2006.",
     "cor": "w3-deep-orange",
-    "texto": "VOGLER, Christopher. <strong>A jornada do escritor</strong>.",
-    "complemento": "Rio de Janeiro: Nova Fronteira, 2006."
+    "tag": "Narrativa",
+    "texto": "VOGLER, Christopher. <strong>A jornada do escritor</strong>."
   },
   "WhatsWhere": {
-    "tag": "Atlas",
+    "complemento": "London: Penguin Random House, 2017.",
     "cor": "w3-indigo",
-    "texto": "<strong>What's Where on Earth - Atlas</strong>.",
-    "complemento": "London: Penguin Random House, 2017."
+    "tag": "Atlas",
+    "texto": "<strong>What's Where on Earth - Atlas</strong>."
   },
   "Wicander": {
-    "tag": "Geologia",
+    "complemento": "São Paulo: Cengage Learning, 2009.",
     "cor": "w3-teal",
-    "texto": "WICANDER, Reed; MONROE, James S. <strong>Fundamentos de Geologia</strong>.",
-    "complemento": "São Paulo: Cengage Learning, 2009."
+    "tag": "Geologia",
+    "texto": "WICANDER, Reed; MONROE, James S. <strong>Fundamentos de Geologia</strong>."
   }
 }

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="África I: diversidade natural do continente africano — relevo, clima, vegetação, hidrografia e problemas ambientais">
+    <meta property="og:title" content="Texto 25 - África I: Diversidade natural">
+    <meta property="og:description" content="A África vai muito além do deserto: conheça o continente mais diverso do planeta em clima, relevo e ecossistemas">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../js/glossario.js" defer></script>
+
+    <title>3º ano - Texto 25 - África I: Diversidade natural</title>
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="aviso-status" class="w3-margin-top"></div>
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+
+        <!-- BLOCO 0: ABERTURA -->
+        <div class="topico">
+            <div class="w3-padding-top-48"></div>
+
+            <h1 id="h1"></h1>
+
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="audiott25.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula"></span></p>
+            </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 2: PRÁTICA SOCIAL INICIAL -->
+        <div class="topico">
+
+            <h2>O que você sabe sobre a África?</h2>
+
+            <p><span class="primeiraLetra">Q</span>uando alguém fala "África", o que vem à sua cabeça? Deserto? Savana com leões e elefantes? Pobreza? Conflitos? Essas imagens existem, mas descrevem apenas fragmentos de um continente gigantesco, com mais de 30 milhões de km² e mais de 1,4 bilhão de pessoas.</p>
+
+            <p>Antes de começar, responda honestamente no caderno:</p>
+
+            <ul>
+                <li>Você consegue nomear cinco países africanos sem olhar o mapa? E cinco capitais?</li>
+                <li>Você imaginaria que a África tem florestas tropicais tão densas quanto a Amazônia? Ou montanhas com neve permanente no topo?</li>
+                <li>Por que você acha que a maioria das imagens da África que chegam até nós mostram somente deserto e pobreza? Quem produz essas imagens e por quê?</li>
+            </ul>
+
+            <p>Guarde essas respostas. Ao final da aula, você vai rever o que pensava com olhos bem diferentes.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 3: PROBLEMATIZAÇÃO -->
+        <div class="topico">
+
+            <h2>O problema que esta aula vai iluminar</h2>
+
+            <p><span class="primeiraLetra">A</span> África é o continente mais rico do mundo em diversidade de minerais, possui o segundo maior rio em volume d'água do planeta, a segunda maior floresta tropical, a maior área de savana e algumas das mais antigas civilizações da história humana. Ao mesmo tempo, é o continente com os maiores índices de insegurança alimentar, desertificação e vulnerabilidade às mudanças climáticas.</p>
+
+            <p>Essa contradição não é obra da natureza: é resultado de séculos de exploração colonial que transformou os recursos naturais africanos em riqueza para outros continentes, deixando populações locais sem acesso ao que é seu. Esta aula começa pela natureza, mas já aponta essa questão que vai nos acompanhar nas próximas aulas.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 4: RELEVO -->
+        <div class="topico">
+
+            <div class="w3-pale-green">
+            <h2>Relevo</h2>
+
+            <p><span class="primeiraLetra">A</span> África é, em grande parte, um continente de <strong>planaltos antigos</strong>. Diferentemente da América do Sul, onde os Andes formam uma barreira de montanhas jovens e elevadas na costa oeste, a África tem um interior planaltico originado em escudos cristalinos muito antigos, com altitudes médias entre 200 e 1.000 metros. As planícies costeiras são estreitas.</p>
+
+            <p>O elemento de relevo mais singular da África é o <span class="termo" data-palavra="Rift Valley" data-definicao="Sistema de fossas tectônicas formado pela separação de placas tectônicas, que se estende por cerca de 6.000 km no leste da África, do Mar Vermelho ao Moçambique. O Rift Valley criou grandes lagos (Vitória, Tanganyika, Malawi), vulcões (Kilimanjaro, Monte Quênia) e vales profundos. É chamado de 'berço da humanidade' porque nessa região foram encontrados os mais antigos fósseis de hominídeos, incluindo a Australopithecus afarensis 'Lucy', com cerca de 3,2 milhões de anos.">Rift Valley</span> (ou Grande Vale do Rift), um sistema de fossas tectônicas que se estende por cerca de 6.000 km no leste do continente, do Mar Vermelho ao Moçambique. É resultado da separação de placas tectônicas e deu origem aos grandes lagos africanos orientais (Vitória, Tanganyika, Malawi) e aos principais vulcões do continente.</p>
+
+            <p>O ponto mais alto da África é o <strong>Monte Kilimanjaro</strong>, no Tanzânia, com 5.895 metros. Apesar de estar próximo ao Equador, seu topo tem neve permanente, situação que, segundo os cientistas, está ameaçada pelas mudanças climáticas. Outros elementos de relevo importantes:</p>
+
+            <ul>
+                <li><strong>Cadeia do Atlas:</strong> montanhas jovens ao noroeste (Marrocos, Argélia, Tunísia), formadas pelo encontro das placas africana e euroasiática.</li>
+                <li><strong>Deserto do Saara:</strong> maior deserto quente do mundo, com cerca de 9,2 milhões de km², cobre quase todo o norte da África.</li>
+                <li><strong>Drakensberg:</strong> cadeia montanhosa no sudeste, no limite entre África do Sul e Lesoto.</li>
+                <li><strong>Planalto da Etiópia:</strong> uma das regiões mais elevadas da África (média de 2.000 metros), que influencia diretamente o regime do Rio Nilo.</li>
+            </ul>
+
+            </div>
+
+            <div class="w3-margin w3-margin-top">
+                <img src="tt25f01.png" alt="Mapa do relevo africano destacando o Rift Valley, o Saara, o Kilimanjaro e as principais formas de relevo do continente"
+                    class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e8f5e9;border:2px dashed #a5d6a7;border-radius:8px;text-align:center;color:#888>Mapa do relevo africano em breve</div>'">
+                <span class="w3-small w3-margin-left">Relevo da África: planaltos, desertos e o sistema do Rift Valley. Fonte: elaboração própria.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 5: CLIMA E VEGETAÇÃO -->
+        <div class="topico">
+
+            <h2>Clima e vegetação</h2>
+
+            <p><span class="primeiraLetra">A</span> África é cortada pelo Equador quase ao meio, o que determina uma distribuição climática em faixas simétricas ao norte e ao sul da linha equatorial. Essa simetria é uma das características mais marcantes do continente e explica a repetição de climas e vegetações nos dois hemisférios.</p>
+
+            <p><strong>Do Equador para os trópicos:</strong></p>
+
+            <ul>
+                <li><strong>Clima equatorial e floresta densa:</strong> concentrado na Bacia do Congo e no Golfo da Guiné. A <span class="termo" data-palavra="Bacia do Congo" data-definicao="Segunda maior bacia hidrográfica do mundo em volume d'água (depois da Amazônia), com cerca de 3,7 milhões de km². Abriga a segunda maior floresta tropical do planeta (depois da Amazônia), fundamental para a regulação climática global. O Rio Congo é o mais profundo do mundo (até 220 metros) e o segundo maior em volume, ficando atrás apenas do Amazonas.">Bacia do Congo</span> abriga a segunda maior floresta tropical do planeta, com biodiversidade comparável à Amazônia e papel fundamental na regulação climática global.</li>
+                <li><strong>Clima tropical e savana:</strong> a <span class="termo" data-palavra="Savana Africana" data-definicao="Bioma caracterizado por gramíneas altas e árvores esparsas, com duas estações bem definidas: a chuvosa e a seca. Cobre cerca de metade do território africano, principalmente ao norte e ao sul do bloco equatorial. É o lar da maior concentração de grandes mamíferos do mundo: elefantes, girafas, leões, hipopótamos, zebras, gnus e centenas de espécies de aves. A grande migração anual dos gnus no Serengeti (Tanzânia e Quênia) é o maior movimento de animais terrestres do planeta.">savana africana</span> cobre cerca de metade do continente, com uma estação chuvosa e uma seca bem definidas. É o bioma das grandes migrações de animais, do Serengeti e dos grandes parques nacionais africanos.</li>
+                <li><strong>Clima semiárido e Sahel:</strong> o <span class="termo" data-palavra="Sahel" data-definicao="Faixa semiárida de transição entre o Deserto do Saara (ao norte) e a savana africana (ao sul), com cerca de 5.400 km de extensão, passando pelo Senegal, Mauritânia, Mali, Burkina Faso, Niger, Nigéria, Chade, Sudão e Eritreia. Recebe chuvas irregulares (200-600 mm/ano) e sofre intensamente com a desertificação: o Saara avança para o sul, ameaçando comunidades agrícolas e pastoris que dependem da terra.">Sahel</span> é a faixa de transição entre o Saara e a savana, extremamente vulnerável à seca e à desertificação.</li>
+                <li><strong>Clima árido e desertos:</strong> o Saara ao norte (maior deserto quente do mundo) e os desertos do Namibe e Kalahari ao sul.</li>
+                <li><strong>Clima mediterrâneo:</strong> nos extremos norte (Marrocos, Tunísia) e sul (Cabo da Boa Esperança), com verões secos e invernos chuvosos.</li>
+            </ul>
+
+            <div class="w3-margin w3-margin-top">
+                <img src="tt25f02.png" alt="Mapa das zonas climáticas e vegetação da África, mostrando a simetria em relação ao Equador"
+                    class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#fff8e1;border:2px dashed #ffe082;border-radius:8px;text-align:center;color:#888>Mapa climático da África em breve</div>'">
+                <span class="w3-small w3-margin-left">Zonas climáticas e vegetação da África. Fonte: elaboração própria com dados da FAO, 2022.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 6: QUESTÃO PRÁTICA 1 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>O Rift Valley, sistema de fossas tectônicas do leste africano, é chamado de "berço da humanidade" porque:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao"><span>Primeiro humano surgiu</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="correto" class="radio-duvid">
+                    <label for="p1b" class="card-opcao"><span>Fósseis mais antigos</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao"><span>Maior população humana</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'No Rift Valley estão os fósseis mais antigos de hominídeos, como Lucy (3,2 mi anos) — maior acervo de evidências da nossa evolução.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="64" height="64">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 7: HIDROGRAFIA -->
+        <div class="topico">
+
+            <div class="w3-pale-blue">
+            <h2>Hidrografia</h2>
+
+            <p><span class="primeiraLetra">A</span> África tem quatro grandes sistemas hidrográficos que moldaram a história das civilizações do continente e seguem sendo fundamentais para a vida de centenas de milhões de pessoas.</p>
+
+            <p><strong>Rio Nilo:</strong> com 6.650 km, é considerado o rio mais extenso do mundo. Nasce na região dos Grandes Lagos (Lago Vitória) e percorre o nordeste africano até desaguar no Mar Mediterrâneo, no Egito. O Nilo foi a base da civilização egípcia: suas cheias anuais depositavam lama fértil nas margens, tornando o deserto agriculturável. Hoje, o Nilo é motivo de tensão geopolítica: a Etiópia construiu a Barragem do Renascimento, retendo água que o Egito considera vital para sua sobrevivência.</p>
+
+            <p><strong>Rio Congo:</strong> segundo maior em volume d'água do mundo (atrás apenas do Amazonas), com 4.700 km. É o rio mais profundo do planeta (até 220 metros) e drena a imensa Bacia do Congo. Tem enorme potencial hidrelétrico ainda pouco explorado.</p>
+
+            <p><strong>Rio Niger:</strong> com 4.180 km, percorre a África Ocidental passando por Guiné, Mali, Níger e Nigéria antes de desaguar no Atlântico. É fundamental para a agricultura e pesca no Sahel, onde a água é escassa.</p>
+
+            <p><strong>Rio Zambeze:</strong> com 2.574 km, é o mais importante da África Austral. Em sua foz forma as <strong>Cataratas Vitória</strong>, uma das maiores quedas d'água do mundo, na fronteira entre Zâmbia e Zimbábue.</p>
+
+            <p><strong>Grandes lagos:</strong> o Rift Valley criou os maiores lagos africanos: Vitória (segundo maior lago de água doce do mundo), Tanganyika (o mais profundo da África) e Malawi. Esses lagos abrigam uma biodiversidade de peixes sem paralelo no mundo.</p>
+
+            </div>
+
+            <div class="w3-margin w3-margin-top">
+                <img src="tt25f03.png" alt="Mapa hidrográfico da África mostrando os principais rios (Nilo, Congo, Niger, Zambeze) e os grandes lagos do Rift Valley"
+                    class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e3f2fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Mapa hidrográfico da África em breve</div>'">
+                <span class="w3-small w3-margin-left">Principais rios e lagos da África. Fonte: elaboração própria com dados da FAO Aquastat, 2023.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 8: PROBLEMAS AMBIENTAIS -->
+        <div class="topico">
+
+            <h2>Principais problemas ambientais</h2>
+
+            <p><span class="primeiraLetra">A</span> África é um dos continentes mais vulneráveis às mudanças climáticas, apesar de ser responsável por menos de 4% das emissões globais de gases de efeito estufa. Essa injustiça ambiental, quem polui menos sofre mais, resume bem a situação africana diante dos problemas ambientais contemporâneos.</p>
+
+            <p><strong>Desertificação no Sahel:</strong> o <span class="termo" data-palavra="Desertificação" data-definicao="Processo de degradação das terras em regiões áridas, semiáridas e subúmidas, causado principalmente por atividades humanas (sobrepastoreio, desmatamento, agricultura inadequada) e pelas mudanças climáticas. No Sahel, o avanço do Saara para o sul ameaça a subsistência de centenas de milhões de pessoas. Em resposta, 11 países africanos iniciaram a 'Grande Muralha Verde', um projeto de reflorestamento de 8.000 km de extensão para conter o avanço do deserto.">avanço do deserto sobre o Sahel</span> é um dos problemas ambientais mais graves da África. A combinação de seca, sobrepastoreio e desmatamento degrada solos que comunidades inteiras dependem para sobreviver. Em resposta, países do Sahel iniciaram a "Grande Muralha Verde", projeto de reflorestamento de 8.000 km para conter o avanço do Saara.</p>
+
+            <p><strong>Desmatamento da floresta do Congo:</strong> a segunda maior floresta tropical do mundo perde área para a agricultura de subsistência, extração de madeira e mineração. Ao contrário da Amazônia, onde o desmatamento é fortemente mecanizado e empresarial, no Congo predomina o desmatamento por pequenos agricultores que precisam de terra para sobreviver.</p>
+
+            <p><strong>Conflitos por recursos hídricos:</strong> a disputa pelo Nilo entre Etiópia, Sudão e Egito é o exemplo mais crítico. Com o crescimento populacional e o aumento das temperaturas, a água torna-se cada vez mais escassa e politicamente disputada.</p>
+
+            <p><strong>Derretimento das neves do Kilimanjaro:</strong> o glaciar do Kilimanjaro perdeu mais de 80% de sua cobertura de gelo no século XX. As previsões indicam desaparecimento completo antes de 2050. Além do impacto simbólico, o derretimento afeta os rios e a disponibilidade de água na região.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 8: QUESTÃO PRÁTICA 2 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>A África é responsável por menos de 4% das emissões globais de gases de efeito estufa, mas é o continente mais vulnerável às mudanças climáticas. Esse fenômeno é chamado de:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2a" value="errado" class="radio-duvid">
+                    <label for="p2a" class="card-opcao"><span>Paradoxo climático africano</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2b" value="correto" class="radio-duvid">
+                    <label for="p2b" class="card-opcao"><span>Injustiça ambiental</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
+                    <label for="p2c" class="card-opcao"><span>Compensação climática natural</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'Injustiça ambiental: quem menos emite sofre mais. A África emite pouco CO2 mas enfrenta as piores secas e desertificação causadas pelos países ricos.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 8.5: TEXTO-FONTE -->
+        <div class="topico">
+
+            <div class="duvid-bloco-apoio w3-margin-top">
+                <p class="w3-small w3-text-grey">TEXTO DE APOIO</p>
+                <blockquote>
+                    <p>"A África é rica em recursos naturais, mas pobre em retornos para sua população. Isso não é acidente: é o resultado de séculos de exploração e de governança que serviu a interesses externos mais do que às necessidades dos africanos. Enquanto o continente exporta madeira, minérios e petróleo em estado bruto, os países que os processam e vendem ficam com a maior parte do valor."</p>
+                </blockquote>
+                <p class="w3-small">MAATHAI, Wangari. <em>Desafio à África: uma perspectiva africana sobre os problemas contemporâneos do continente.</em> São Paulo: Globo, 2010, p. 41.</p>
+            </div>
+
+            <div class="w3-pale-yellow w3-padding w3-margin-top w3-round-large">
+
+                <p><strong>Com base no texto de Maathai e no que você estudou, responda:</strong></p>
+
+                <p><strong>1.</strong> Maathai diz que a riqueza africana serve a "interesses externos". Relacione essa afirmação com a situação ambiental do continente: como a exploração dos recursos naturais africanos (madeira, minérios, petróleo) contribui para os problemas ambientais estudados nesta aula?</p>
+
+                <p><strong>2.</strong> A autora é queniana e ganhou o Nobel da Paz em 2004 pelo seu trabalho de reflorestamento e direitos das mulheres no Quênia. Por que você acha que uma líder ambiental africana conecta o problema ambiental ao problema econômico e político? O que ela está dizendo que os dois têm em comum?</p>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 9: CATARSE -->
+        <div class="topico">
+
+            <div class="w3-pale-green w3-padding w3-round-large">
+
+            <h2>O que mudou no seu olhar?</h2>
+
+            <p><span class="primeiraLetra">A</span>ntes parecia que a África é um continente árido, uniforme e pobre porque a natureza assim determinou. Agora você vê que a África tem uma das maiores diversidades climáticas e ecológicas do planeta: florestas tropicais densas, a maior área de savana do mundo, desertos monumentais, montanhas com neve, rios imensos e lagos milenares. A imagem de um continente todo de deserto é uma distorção.</p>
+
+            <p>E os problemas ambientais que a África enfrenta hoje, a desertificação, o desmatamento, a escassez de água, não são resultado da natureza: são resultado de como os recursos africanos foram e continuam sendo explorados. A natureza foi generosa com a África. O problema está em outro lugar.</p>
+
+            </div>
+
+            <p class="w3-margin-top"><strong>Conceitos estudados nesta aula:</strong></p>
+            <ul>
+                <li>Rift Valley e relevo planaltico africano</li>
+                <li>Simetria climática em relação ao Equador</li>
+                <li>Savana africana, Sahel e Bacia do Congo</li>
+                <li>Nilo, Congo, Niger e Zambeze</li>
+                <li>Desertificação, injustiça ambiental e mudanças climáticas</li>
+            </ul>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 10: PERGUNTAS E RESPOSTAS -->
+        <div class="topico">
+
+            <h2 id="titulo-pr"></h2>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <strong>Por que o relevo africano é tão diferente do relevo sul-americano?</strong>
+            </p>
+            <p>A América do Sul tem os Andes, uma cadeia de montanhas jovens e elevadas formada pelo encontro de placas tectônicas. A África, em contraste, é formada principalmente por planaltos antigos, originados em escudos cristalinos estáveis há centenas de milhões de anos. O Rift Valley é a exceção: uma zona ativa de separação de placas que criou lagos, vulcões e vales profundos no leste do continente.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <strong>Por que a África sofre tanto com as mudanças climáticas se polui tão pouco?</strong>
+            </p>
+            <p>A vulnerabilidade da África às mudanças climáticas vem de sua geografia (muitas regiões já semiáridas), de sua estrutura econômica (agricultores que dependem da chuva) e da falta de infraestrutura para se adaptar. Países ricos, que emitiram a maior parte dos gases de efeito estufa ao longo da história industrial, têm recursos para se adaptar (diques, irrigação, seguros). A África não tem essa margem. Esse desequilíbrio é chamado de injustiça climática.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <strong>O que é a "Grande Muralha Verde"?</strong>
+            </p>
+            <p>É um projeto de reflorestamento de 8.000 km de extensão, da costa atlântica (Senegal) ao Mar Vermelho (Djibuti), que envolve 11 países do Sahel. O objetivo é criar uma barreira de vegetação que contenha o avanço do Saara para o sul. Além de combater a desertificação, o projeto cria empregos, recupera solos e sequestra carbono da atmosfera. É considerado uma das maiores iniciativas ambientais da história.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <br><br>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11: FICHA DE CONCEITOS -->
+        <div class="topico">
+
+            <h2>Ficha de conceitos</h2>
+
+            <div id="ficha-conceitos"></div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 12: PRODUÇÃO (PRÁTICA SOCIAL FINAL) -->
+        <div class="topico">
+
+            <h2>Produção</h2>
+
+            <p><span class="primeiraLetra">N</span>o início desta aula, você foi questionado sobre o que imagina quando pensa em "África" e quem produz essas imagens. Agora, com o conhecimento geográfico desta aula, é hora de desafiar as imagens que você recebeu.</p>
+
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding">
+
+                <p><strong>Opção A:</strong> Você é editor de uma enciclopédia escolar. Escreva um verbete de 15 a 20 linhas sobre "África: diversidade natural" que quebre com o estereótipo do continente árido e pobre. Use pelo menos quatro conceitos do glossário desta aula e cite dados reais de relevo, clima, hidrografia ou biodiversidade.</p>
+
+                <p><strong>Opção B:</strong> Escolha um dos problemas ambientais estudados (desertificação no Sahel, desmatamento do Congo, conflitos pelo Nilo ou derretimento do Kilimanjaro) e escreva uma carta de uma pessoa africana que vive esse problema para uma liderança de um país rico que emite muito carbono. Na carta, explique o problema, suas causas e o que você exige como resposta.</p>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 13: QUESTÕES NO CADERNO -->
+        <div class="topico">
+
+            <div class="w3-pale-yellow w3-padding w3-round-large">
+            <h2>Questões para responder no caderno</h2>
+
+            <h3>1. Explique a diferença entre o relevo africano e o sul-americano. Por que a África tem mais planaltos antigos do que montanhas jovens?</h3>
+
+            <h3>2. O que é o Rift Valley? Explique como ele foi formado e cite três elementos geográficos que ele originou.</h3>
+
+            <h3>3. Descreva a distribuição climática da África em relação ao Equador. Por que os climas se repetem de forma simétrica ao norte e ao sul da linha equatorial?</h3>
+
+            <h3>4. Qual é a importância do Rio Nilo para o Egito e para o nordeste africano? Como a construção da Barragem do Renascimento pela Etiópia criou um conflito geopolítico?</h3>
+
+            <h3>5. Compare a floresta do Congo com a floresta Amazônica em termos de extensão, volume d'água e importância climática global.</h3>
+
+            <h3>6. O que é o Sahel? Explique o processo de desertificação que ameaça essa região e cite as causas humanas e climáticas desse fenômeno.</h3>
+
+            <h3>7. (ANALÍTICA) A África é responsável por menos de 4% das emissões globais de gases de efeito estufa, mas é o continente mais vulnerável às mudanças climáticas. Quem tem responsabilidade sobre esse problema? O que seria uma resposta justa da comunidade internacional?</h3>
+
+            <h3>8. (ANALÍTICA) As neves do Kilimanjaro estão desaparecendo. Esse fenômeno é frequentemente usado como símbolo das mudanças climáticas. Por que você acha que a imagem de uma montanha africana com neve é tão impactante para pessoas que imaginam o continente como todo árido e quente? O que isso revela sobre nossos estereótipos?</h3>
+
+            <h3>9. Explique o projeto "Grande Muralha Verde". Quais países participam, qual é o objetivo e como ele se relaciona com os problemas de desertificação do Sahel?</h3>
+
+            <h3>10. (ANALÍTICA) Wangari Maathai diz que a África é rica em recursos naturais mas pobre em retornos para sua população. Relacione essa afirmação com a situação ambiental do continente: como a exploração dos recursos naturais africanos contribui para os problemas ambientais estudados nesta aula?</h3>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 14: TRANSIÇÃO PARA AS QUESTÕES FINAIS -->
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} vai te ajudar a entender a África com muito mais profundidade. Continue estudando!',
+        pontos: 40
+    });
+
+    MostrarProximo(this);
+">Próximo</button>
+
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 15: FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+
+
+        <!-- SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS -->
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DPX55DSFZ0');
+    </script>
+
+</body>
+
+</html>

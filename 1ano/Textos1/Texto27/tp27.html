@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="O uso da água: poluição hídrica, matas ciliares e contaminação do solo">
+    <meta property="og:title" content="Texto 27 - O uso da água">
+    <meta property="og:description" content="Poluição hídrica, desmatamento de matas ciliares e contaminação do solo">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../js/glossario.js" defer></script>
+
+    <title></title>
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="aviso-status" class="w3-margin-top"></div>
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+
+        <!-- BLOCO 1: Abertura -->
+        <div class="topico">
+
+            <div class="w3-padding-top-48"></div>
+
+            <h1 id="h1"> </h1>
+
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Compreender as principais formas de poluição hídrica e seus impactos sobre os ecossistemas e as populações humanas; identificar o papel das matas ciliares na proteção dos recursos hídricos; analisar criticamente os conflitos pelo uso da água no Brasil e no mundo.</span></p>
+            </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 2: Abertura pela realidade do aluno -->
+        <div class="topico">
+
+            <h2>A água que chega até você</h2>
+
+            <p><span class="primeiraLetra">A</span>bra a torneira. Sai água limpa, tratada, com pressão constante. Agora pense: quantas pessoas no Brasil abrem a torneira e não têm essa mesma experiência?</p>
+
+            <p>Segundo o Instituto Trata Brasil, em 2023 cerca de 35 milhões de brasileiros não tinham acesso à água tratada e 100 milhões não tinham coleta de esgoto. Grande parte desse esgoto vai direto para os rios. Os mesmos rios que, em muitos casos, são a única fonte de água para comunidades ribeirinhas e populações rurais.</p>
+
+            <p>Estudamos nas aulas anteriores como a água circula, como as bacias funcionam e como os rios modelam a paisagem. Agora vamos ao problema mais urgente: o que o ser humano está fazendo com esses recursos e quais as consequências para quem depende deles.</p>
+
+            <p>O tema central desta aula é a <span class="termo" data-palavra="Poluição Hídrica" data-definicao="Contaminação de rios, lagos, aquíferos e mares por substâncias químicas, biológicas ou físicas que alteram suas propriedades naturais e tornam a água inadequada para o consumo humano, a vida aquática ou o uso agrícola.">poluição hídrica</span>, suas causas, seus responsáveis e seus efeitos sobre quem não tem alternativa.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 3: O problema -->
+        <div class="topico">
+
+            <p class="caixa">Antes de continuar: uma situação real.</p>
+
+            <div class="w3-panel w3-pale-green">
+                <p>Em 2015, o rompimento da barragem de Fundão, em Mariana (MG), lançou 60 milhões de metros cúbicos de rejeitos de mineração no Rio Doce. O rio, que abastecia mais de 200 municípios em Minas Gerais e Espírito Santo, ficou completamente morto por centenas de quilômetros. Comunidades indígenas e ribeirinhas perderam sua principal fonte de água, pesca e renda.</p>
+
+                <p>Em 2019, a barragem do Córrego do Feijão, em Brumadinho (MG), rompeu e matou 272 pessoas além de contaminar o Rio Paraopeba.</p>
+
+                <p><strong>Quem é responsável por esses desastres?</strong> É acidente, negligência ou modelo econômico? E por que as populações que mais sofrem raramente são as que tomam as decisões sobre o uso da água?</p>
+
+                <p>Escreva pelo menos 5 linhas com sua hipótese antes de continuar.</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 4: Conteúdo 1 — Poluição hídrica -->
+        <div class="topico">
+
+            <h2>Como os rios são contaminados</h2>
+
+            <h3>As fontes de poluição</h3>
+
+            <p>A poluição hídrica tem origens diversas e pode ser classificada em dois grandes grupos. As <strong>fontes pontuais</strong> são as que lançam poluentes num ponto identificável: canos de esgoto, saídas de indústrias, tubulações de frigoríficos. As <strong>fontes difusas</strong> são mais difíceis de controlar: agrotóxicos e fertilizantes que escorrem das lavouras com a chuva, sedimentos de áreas desmatadas, dejetos de criações de animais espalhados pela bacia.</p>
+
+            <p>No Brasil urbano, o principal poluente dos rios é o esgoto doméstico sem tratamento. Fezes humanas carregam bactérias, vírus e parasitas que causam doenças como cólera, febre tifoide, hepatite A e leptospirose. O Brasil coleta apenas 58% do esgoto gerado e trata menos da metade do que coleta. O resultado: rios como o Tietê (SP), o Guandu (RJ) e inúmeros outros urbanos são essencialmente esgotos a céu aberto em boa parte de seus cursos.</p>
+
+            <div class="w3-margin">
+                <img src="tp27F01.png" alt="Poluição industrial e doméstica nos rios urbanos" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">Rio Tietê: exemplo de poluição urbana crônica. Fonte: SOS Mata Atlântica.</span>
+            </div>
+
+            <h3>A poluição agrícola</h3>
+
+            <p>No Brasil rural, os principais vilões são os agrotóxicos e o excesso de fertilizantes. O país é o maior consumidor de agrotóxicos do mundo: mais de 600 mil toneladas por ano. Parte dessas substâncias escoa com as chuvas até os rios e aquíferos, contaminando a água usada para beber e irrigar. Pesquisa da Fiocruz identificou agrotóxicos na urina de 100% das crianças avaliadas em municípios do Mato Grosso onde o cultivo de soja é intensivo.</p>
+
+            <p>Outro problema grave é a <strong>eutrofização</strong>: o excesso de nitrogênio e fósforo dos fertilizantes que chega aos rios e lagos estimula o crescimento excessivo de algas. Quando as algas morrem e se decompõem, consomem todo o oxigênio dissolvido na água, matando peixes e outros organismos aquáticos. Lagos e represas ao redor de áreas agrícolas intensivas no Brasil apresentam episódios recorrentes de eutrofização, prejudicando o abastecimento e a pesca.</p>
+
+            <h3>Poluição por rejeitos de mineração</h3>
+
+            <p>A mineração produz rejeitos que precisam ser armazenados em barragens. Quando essas estruturas falham, o impacto é catastrófico e irreversível na escala humana. Os rejeitos de Mariana cobriram com lama tóxica mais de 660 km do Rio Doce. Anos depois, o rio ainda não se recuperou: o ecossistema aquático foi destruído, comunidades pesqueiras perderam suas fontes de renda e disputas jurídicas contra a Vale e a BHP Billiton se arrastam sem resolução completa.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 5: Questão prática 1 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>O fenômeno em que o excesso de fertilizantes nos rios estimula o crescimento de algas e mata os peixes por falta de oxigênio chama-se:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao"><span>assoreamento</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="correto" class="radio-duvid">
+                    <label for="p1b" class="card-opcao"><span>eutrofização</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao"><span>lixiviação</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'é a eutrofização! O excesso de nutrientes provoca explosão de algas que consomem o oxigênio e sufocam os peixes.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 6: Conteúdo 2 — Matas ciliares e proteção dos rios -->
+        <div class="topico">
+
+            <h2>A mata ciliar: a primeira linha de defesa dos rios</h2>
+
+            <h3>O que faz a mata ciliar</h3>
+
+            <p>A <span class="termo" data-palavra="Mata Ciliar" data-definicao="Vegetação que margeia rios, lagos e nascentes. Protege as margens contra erosão, filtra agrotóxicos e sedimentos antes de entrarem no rio, regula a temperatura da água e mantém a biodiversidade aquática.">mata ciliar</span> é a vegetação que acompanha as margens dos rios, riachos e nascentes. Funciona como um filtro vivo: quando a chuva escoa das lavouras carregando sedimentos e agrotóxicos, a mata ciliar retém boa parte dessas substâncias antes que cheguem ao rio. As raízes fixam o solo e impedem que as margens desmoronem. A sombra das árvores regula a temperatura da água, condição vital para muitas espécies de peixes.</p>
+
+            <p>Sem mata ciliar, o rio perde sua proteção natural. O solo das margens erode, o leito assore com sedimentos, a água esquenta, a flora aquática muda e os peixes migram ou morrem. A recuperação de uma mata ciliar pode levar décadas, e enquanto isso a comunidade que depende do rio convive com água de qualidade inferior, menor disponibilidade de pescado e maior risco de enchentes.</p>
+
+            <div class="w3-margin">
+                <img src="tp27F02.png" alt="Mata ciliar protegendo margem de rio" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">Rio com mata ciliar preservada (esquerda) e sem mata ciliar (direita). Fonte: Embrapa.</span>
+            </div>
+
+            <h3>O Código Florestal e suas brechas</h3>
+
+            <p>O Código Florestal Brasileiro (Lei 12.651/2012) define faixas mínimas de mata ciliar obrigatória ao longo de rios de diferentes tamanhos: 30 metros para rios com até 10 metros de largura, chegando a 500 metros para grandes rios. O problema é que o mesmo Código criou a figura das "Áreas de Uso Restrito" e anistiou produtores que desmataram antes de 2008 do dever de recuperação integral.</p>
+
+            <p>O resultado prático: o Brasil perdeu mais de 40% de suas matas ciliares originais, segundo o MapBiomas. As regiões com maior déficit são exatamente as mais intensamente agrícolas: Cerrado, Mata Atlântica e sul da Amazônia. Recuperar essas áreas custa bilhões e leva décadas. Não recuperar custa ainda mais, distribuindo o custo sobre as populações que dependem dos rios.</p>
+
+            <h3>Contaminação do solo e dos aquíferos</h3>
+
+            <p>A <span class="termo" data-palavra="Lixiviação" data-definicao="Processo pelo qual a água da chuva carrega substâncias dissolvidas do solo para camadas mais profundas, podendo contaminar os lençóis freáticos e aquíferos com agrotóxicos, metais pesados e fertilizantes.">lixiviação</span> é o processo pelo qual substâncias do solo são arrastadas pela chuva para as camadas mais profundas, contaminando os aquíferos. Uma vez que agrotóxicos ou metais pesados entram no lençol freático, são quase impossíveis de remover. Comunidades que dependem de poços artesianos em regiões de agricultura intensiva vivem com o risco constante de consumir água contaminada sem saber, pois os efeitos de muitos agrotóxicos são crônicos e só aparecem anos depois.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 7: Questão prática 2 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>A vegetação que margeia rios e lagos, filtrando sedimentos e agrotóxicos antes que cheguem à água, chama-se:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2a" value="errado" class="radio-duvid">
+                    <label for="p2a" class="card-opcao"><span>várzea</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2b" value="correto" class="radio-duvid">
+                    <label for="p2b" class="card-opcao"><span>mata ciliar</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
+                    <label for="p2c" class="card-opcao"><span>restinga</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'é a mata ciliar! Sem ela, os rios ficam vulneráveis à erosão, ao assoreamento e à entrada de poluentes agrícolas.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 8: Conteúdo 3 — Conflitos pelo uso da água -->
+        <div class="topico">
+
+            <h2>Quem usa, quem polui e quem paga o preço</h2>
+
+            <h3>Os principais usos da água no Brasil</h3>
+
+            <p>No Brasil, a agricultura irrigada consome cerca de 67% de toda a água retirada dos rios e aquíferos. As indústrias consomem aproximadamente 9% e o abastecimento urbano, 23%. Esses números revelam uma assimetria importante: o setor que mais consome é também o que mais polui com fertilizantes e agrotóxicos, enquanto o setor que menos consome (urbano) é o que mais concentra pessoas e pressão política por saneamento.</p>
+
+            <p>Dentro da irrigação, o perfil é ainda mais concentrado. Grandes propriedades rurais voltadas para exportação (soja, cana-de-açúcar, arroz) respondem pela maior parte do consumo. Pequenos agricultores e comunidades tradicionais, que dependem dos mesmos rios, competem em condições desiguais por um recurso que frequentemente está diminuindo ou degradado pela montante.</p>
+
+            <h3>O caso do Mar de Aral</h3>
+
+            <p>O exemplo mais dramático de colapso hídrico por uso agrícola excessivo é o <strong>Mar de Aral</strong>, na Ásia Central. Nos anos 1960, a União Soviética desviou os dois rios que abasteciam o mar para irrigar algodão no deserto. Em cinco décadas, o que era o quarto maior lago do mundo perdeu mais de 90% de seu volume. Cidades que eram portos ficaram a centenas de quilômetros da água. Pescadores perderam seus meios de vida. O sal e os pesticidas do fundo exposto são carregados pelo vento e causam doenças respiratórias e câncer nas populações locais. O Mar de Aral é hoje símbolo global do que acontece quando o interesse econômico de curto prazo prevalece sobre a gestão sustentável da água.</p>
+
+            <div class="w3-margin">
+                <img src="tp27F03.png" alt="Mar de Aral: antes e depois" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">O Mar de Aral em 1960 e em 2020. A maior catástrofe hídrica provocada pelo ser humano. Fonte: NASA.</span>
+            </div>
+
+            <h3>A privatização da água</h3>
+
+            <p>Um debate crescente no mundo envolve a privatização dos serviços de água e saneamento. Defensores argumentam que empresas privadas são mais eficientes e investem mais em infraestrutura. Críticos apontam que a lógica do lucro é incompatível com um serviço essencial: empresas privadas tendem a priorizar áreas rentáveis (bairros ricos) e negligenciar periferias e zonas rurais. Na Bolívia, em 2000, a privatização do sistema de água de Cochabamba gerou tarifas tão altas que a população se revoltou em protestos que ficaram conhecidos como a "Guerra da Água". O governo reverteu a privatização após dias de confronto. No Brasil, o Marco Legal do Saneamento (2020) abriu o setor para concessões privadas, gerando debate sobre os mesmos riscos.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 8.5: Texto-fonte -->
+        <div class="topico">
+
+            <h2>Leia e analise</h2>
+
+            <div class="duvid-bloco-apoio">
+                <div class="duvid-texto-citacao">
+                    O acesso à água potável e ao saneamento foi reconhecido como direito humano fundamental pela ONU em 2010. Apesar disso, em 2023, 2,2 bilhões de pessoas no mundo não tinham acesso à água potável gerida com segurança e 3,5 bilhões não tinham saneamento adequado. A distribuição desse deficit não é aleatória: coincide quase perfeitamente com os mapas de pobreza, de colonização histórica e de desigualdade racial. Países que exportam água virtual embutida em commodities agrícolas muitas vezes não garantem água para beber às suas próprias populações mais pobres.
+                </div>
+                <div class="duvid-fonte-texto">Adaptado de relatório da ONU-Água e UNICEF, 2023</div>
+            </div>
+
+            <div class="w3-panel w3-pale-yellow w3-margin-top">
+                <p><strong>Responda no caderno antes de continuar:</strong></p>
+                <p>1. O texto afirma que a falta de acesso à água coincide com mapas de pobreza e desigualdade racial. Com base no que você estudou sobre poluição hídrica e uso da água no Brasil, dê um exemplo concreto que ilustre essa relação.</p>
+                <p>2. O texto menciona "água virtual embutida em commodities agrícolas". Pesquise o conceito e explique: quando o Brasil exporta soja, está exportando água também? Quem ganha e quem perde nesse processo?</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 9: Síntese crítica -->
+        <div class="topico">
+
+            <h2>Voltando à pergunta do início</h2>
+
+            <p>Quem é responsável pelos desastres de Mariana e Brumadinho? A resposta técnica é: a Vale e a Samarco, por negligência na manutenção das barragens. Mas a resposta política é mais ampla: um modelo de desenvolvimento que trata os recursos naturais como externalidade, em que os custos sociais e ambientais do lucro privado são pagos pelas populações mais vulneráveis.</p>
+
+            <p>Os rios brasileiros não estão sujos porque os brasileiros são irresponsáveis. Estão sujos porque não há saneamento para 100 milhões de pessoas, porque a fiscalização ambiental foi sistematicamente enfraquecida, porque as multas por poluição são menores do que o custo de tratar o esgoto, e porque as comunidades que mais dependem dos rios têm menos poder político para defender seus direitos.</p>
+
+            <p>Entender a poluição hídrica como problema técnico é insuficiente. É necessário entendê-la como problema político: quem decide o que pode ser feito com a água, quem arca com as consequências quando ela é destruída, e quem lucra com a exploração que a destrói.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 10: Infográfico -->
+        <div class="topico">
+
+            <h2>Infográfico: resumo da aula</h2>
+
+            <div class="w3-margin">
+                <img src="inforesumot27.png" alt="Infográfico resumo O uso da água" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:48px 0;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📊 Infográfico em breve</div>'">
+                <span class="w3-small w3-margin-left">Fonte: Organizado e revisado pelo autor.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11: Ficha de conceitos -->
+        <div class="topico">
+            <div id="ficha-conceitos"></div>
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11.5: Perguntas que qualquer aluno teria -->
+        <div class="topico">
+
+            <h2 id="titulo-pr">Perguntas que você provavelmente tinha</h2>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>A água do mar pode ser transformada em água potável?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Pode, pelo processo de dessalinização. O problema é o custo: produzir 1 metro cúbico de água dessalinizada consome cerca de 3 a 4 kWh de energia, tornando o processo caro para uso em larga escala. Israel e países do Golfo Pérsico já dessalinizam parte significativa de sua água potável. No Brasil, há plantas de dessalinização no semiárido, mas ainda em escala muito pequena para resolver o problema hídrico da região.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>Por que o Rio Tietê, que corta a maior cidade do Brasil, ainda é tão poluído?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Porque saneamento é caro, lento e politicamente pouco glamouroso. Tubulações de esgoto ficam debaixo da terra: ninguém fotografa uma galeria subterrânea inaugurada. O Programa de Despoluição do Tietê existe desde 1992, já recebeu bilhões de reais e melhorou trechos do rio, mas o crescimento urbano desordenado e a expansão das favelas sem saneamento anulam parte dos avanços. O rio só vai se recuperar completamente quando todo o esgoto de São Paulo e da bacia for coletado e tratado.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>Peixe de rio poluído faz mal?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Depende do tipo de poluição. Peixes de rios com esgoto doméstico podem carregar bactérias e parasitas, mas o cozimento elimina a maioria. O problema mais sério é a bioacumulação de metais pesados e agrotóxicos: essas substâncias se acumulam nos tecidos dos peixes e se concentram ao longo da cadeia alimentar. Quem come muito peixe de rio contaminado por mercúrio ou chumbo ao longo do tempo acumula doses prejudiciais à saúde, especialmente crianças e gestantes.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 12: Produção final -->
+        <div class="topico">
+
+            <p class="caixa">Hora de usar o que você aprendeu.</p>
+
+            <div class="w3-panel w3-pale-yellow">
+                <h3>Diagnóstico hídrico</h3>
+                <p><strong>Atividade individual ou em dupla</strong></p>
+
+                <p>Escolha um rio próximo à sua cidade ou ao seu bairro. Pesquise e redija um texto de 20 a 25 linhas respondendo:</p>
+
+                <p><strong>1.</strong> Qual é a situação atual de qualidade desse rio? Há algum ponto de poluição identificado?</p>
+                <p><strong>2.</strong> Quais atividades (industrial, agrícola, urbana) mais contribuem para a degradação ou preservação desse rio?</p>
+                <p><strong>3.</strong> As matas ciliares estão preservadas ou desmatadas nas margens desse rio?</p>
+                <p><strong>4.</strong> Quem depende desse rio para abastecimento, pesca ou renda? Essas populações têm voz nas decisões sobre o uso da água?</p>
+
+                <p class="w3-small w3-text-grey">Fontes sugeridas: site da ANA (snirh.gov.br), SOS Mata Atlântica (sosma.org.br), relatórios da Sabesp ou Copasa da sua região.</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 13: Questões para o caderno -->
+        <div class="topico">
+
+            <div class="w3-pale-yellow">
+                <h2>Questões para responder no caderno:</h2>
+
+                <h3>1. Qual a diferença entre fontes pontuais e fontes difusas de poluição hídrica? Dê um exemplo de cada.</h3>
+                <h3>2. O que é eutrofização? Como o uso excessivo de fertilizantes agrícolas leva a esse processo?</h3>
+                <h3>3. Explique a função da mata ciliar na proteção dos rios. O que acontece quando ela é removida?</h3>
+                <h3>4. Como o Código Florestal Brasileiro regulamenta as matas ciliares? Quais são suas limitações?</h3>
+                <h3>5. O que é lixiviação e como ela pode contaminar os aquíferos?</h3>
+                <h3>6. Qual setor consome mais água no Brasil? Como isso se relaciona com os conflitos hídricos?</h3>
+                <h3>7. Descreva o que aconteceu com o Mar de Aral. Quais as causas e as consequências para as populações locais?</h3>
+                <h3>8. O que foi a "Guerra da Água" na Bolívia? O que esse episódio revela sobre a privatização dos serviços de saneamento?</h3>
+                <h3>9. Analise o desastre de Mariana (2015): quais foram as causas imediatas, os responsáveis e os impactos de longo prazo?</h3>
+                <h3>10. Por que a falta de saneamento básico é considerada um problema de justiça social, e não apenas de infraestrutura?</h3>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Concluir Aula</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO: TRANSIÇÃO FINAL -->
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO: FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+
+
+        <!-- SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS -->
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+    </main>
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+
+    <div id="footer-placeholder"></div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DPX55DSFZ0');
+    </script>
+
+</body>
+
+</html>

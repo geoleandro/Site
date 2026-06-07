@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+/* ===================== COMBO DE ACERTOS ===================== */
+.duvid-combo-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b00, #ffab00);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 24px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(255, 107, 0, 0.4);
+    animation: comboPop 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.duvid-combo-bonus {
+    background: rgba(255,255,255,0.25);
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    margin-left: 6px;
+}
+
+@keyframes comboPop {
+    0%   { transform: scale(0.5); opacity: 0; }
+    40%  { transform: scale(1.15); opacity: 1; }
+    50%  { transform: scale(1) translateX(-12px); }
+    60%  { transform: scale(1) translateX(12px); }
+    70%  { transform: scale(1) translateX(-10px); }
+    75%  { transform: scale(1) translateX(10px); }
+    80%  { transform: scale(1) translateX(-6px); }
+    85%  { transform: scale(1) translateX(6px); }
+    90%  { transform: scale(1) translateX(-3px); }
+    95%  { transform: scale(1) translateX(3px); }
+    100% { transform: scale(1) translateX(0); }
+}
+/* ============================================================= */
+
 /* O Container Principal (A Moldura do Inventário) */
 .NomeHome {
     /* 1. Criando as ripas de madeira com gradiente */

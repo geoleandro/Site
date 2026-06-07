@@ -59,6 +59,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "ACNURDeslocados",
+      "ACNURVenezuela",
+      "ACNURAfricaRefugiados"
     ]
   },
   {
@@ -75,6 +80,11 @@
       "Skolnick",
       "BNCC",
       "Simielli"
+    ],
+    "links": [
+      "DWPobreza",
+      "UNFome",
+      "ONUPopulacaoMundial"
     ]
   },
   {
@@ -91,6 +101,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "DWPobreza",
+      "IBGECidades",
+      "ONUPopulacaoMundial"
     ]
   },
   {
@@ -165,6 +180,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "BrasilEscolaDIT",
+      "NatGeoRevolucaoIndustrial",
+      "BangladeshTextil"
     ]
   },
   {
@@ -181,6 +201,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "40MapasMundo",
+      "BBCMapaMundoReal",
+      "GallPetersBBC"
     ]
   },
   {
@@ -199,6 +224,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "40MapasMundo",
+      "AgenciaBrasilBRICS"
     ]
   },
   {
@@ -225,6 +254,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "UNFome",
+      "AgenciaBrasilExportacoes",
+      "ONUAgua"
     ]
   },
   {
@@ -240,6 +274,11 @@
       "SantosGlobalizacao",
       "Vesentini",
       "BNCC"
+    ],
+    "links": [
+      "ONUPopulacaoMundial",
+      "AgenciaBrasilUrbanizacao",
+      "AgenciaBrasilMetropoles"
     ]
   },
   {
@@ -258,6 +297,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "BrasilEscolaMiltonSantos",
+      "KardiaMeioTecnico",
+      "40MapasMundo"
     ]
   },
   {
@@ -275,6 +319,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "AgenciaBrasilBRICS",
+      "AgenciaBrasilExportacoes",
+      "ChinaBrasil"
     ]
   },
   {
@@ -292,6 +341,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "AgenciaBrasilBRICS",
+      "40MapasMundo"
     ]
   },
   {
@@ -309,6 +362,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "AgenciaBrasilBRICS",
+      "40MapasMundo"
     ]
   },
   {
@@ -336,6 +393,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "40MapasMundo",
+      "BBCMapaMundoReal"
     ]
   },
   {
@@ -353,6 +414,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "40MapasMundo",
+      "UNODCNarcotrafico"
     ]
   },
   {
@@ -370,6 +435,12 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "BBCGuerrilhas",
+      "UNODCNarcotrafico",
+      "ACNURVenezuela",
+      "CNNBrasilCuba"
     ]
   },
   {
@@ -382,7 +453,10 @@
     "bibliografia": [
       "SantosGlobalizacao",
       "Vesentini",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin",
+      "Sader"
     ],
     "links": [
       "BBCGuerrilhas",
@@ -408,16 +482,23 @@
     "titulo": "África I - Diversidade natural",
     "imagem": "fotoIndex/3ano/aula25.png",
     "conteudo": "Clima; Vegetação; Relevo; Hidrografia; Principais problemas ambientais do continente.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto25/tt25.html?id=325",
     "linkQuestoes": "questoes/modelo-questoes.html?id=325",
-    "objetivo": null,
+    "objetivo": "Conhecer a diversidade natural do continente africano: relevo (Rift Valley, planaltos, Saara), clima e vegetação (simetria equatorial, savana, Sahel, floresta do Congo), hidrografia (Nilo, Congo, Niger, Zambeze) e principais problemas ambientais (desertificação, desmatamento, injustiça climática). Compreender que os problemas ambientais africanos têm causas históricas ligadas à exploração colonial dos recursos naturais.",
     "audio": null,
     "bibliografia": [
       "Boniface",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Maathai",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "UNEPAfrica",
+      "GrandeMusalhVerde"
     ]
   },
   {
@@ -425,16 +506,24 @@
     "titulo": "África II - Panorama atual",
     "imagem": "fotoIndex/3ano/aula26.png",
     "conteudo": "Colonização e independência; Reservas minerais; Economia e Agricultura; Blocos econômicos africanos.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto26/tt26.html?id=326",
     "linkQuestoes": "questoes/modelo-questoes.html?id=326",
-    "objetivo": null,
+    "objetivo": "Compreender o processo de colonização e descolonização da África e suas consequências no presente. Analisar criticamente a riqueza mineral africana e o fenômeno da maldição dos recursos. Conhecer a estrutura econômica e agrícola do continente e os projetos de integração regional, como a União Africana e a AfCFTA.",
     "audio": null,
     "bibliografia": [
       "Boniface",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Rodney",
+      "Maathai",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "BBCDiamantesSangue",
+      "AgenciaBrasilAfCFTA"
     ]
   },
   {
@@ -442,16 +531,25 @@
     "titulo": "África III - Conflitos",
     "imagem": "fotoIndex/3ano/aula27.png",
     "conteudo": "Apartheid; Guerras Civis; Genocídios; Crise de refugiados; Terrorismo na África.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto27/tt27.html?id=327",
     "linkQuestoes": "questoes/modelo-questoes.html?id=327",
-    "objetivo": null,
+    "objetivo": "Compreender as causas históricas e estruturais dos principais conflitos africanos: apartheid, genocídio de Ruanda, guerras civis ligadas a recursos naturais, crise de refugiados e surgimento de grupos terroristas como Boko Haram e Al-Shabaab. Relacionar esses conflitos ao legado colonial e ao conceito de estado falido.",
     "audio": null,
     "bibliografia": [
       "Boniface",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Mamdani",
+      "Rodney",
+      "Maathai",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "ACNURAfricaRefugiados",
+      "BBCRuanda"
     ]
   },
   {
@@ -459,16 +557,23 @@
     "titulo": "Conflitos no Oriente Médio",
     "imagem": "fotoIndex/3ano/aula28.png",
     "conteudo": "Diversidade cultural; Importância do petróleo; Questão palestina e libanesa.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto28/tt28.html?id=328",
     "linkQuestoes": "questoes/modelo-questoes.html?id=328",
-    "objetivo": null,
+    "objetivo": "Compreender a diversidade cultural, étnica e religiosa do Oriente Médio. Analisar o papel do petróleo na geopolítica regional e nas intervenções militares estrangeiras. Entender as origens históricas e o desenvolvimento da questão palestina (Declaração Balfour, Nakba, ocupação desde 1967). Conhecer o caso libanês como exemplo de fragilidade política em contexto de diversidade religiosa.",
     "audio": null,
     "bibliografia": [
       "Boniface",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Said",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "ACNURPalestina",
+      "BBCOrienteMedio"
     ]
   },
   {
@@ -476,16 +581,22 @@
     "titulo": "Golfo Pérsico e Turquia",
     "imagem": "fotoIndex/3ano/aula29.png",
     "conteudo": "Irã; Iraque; A questão dos Curdos; Turquia e conflitos estratégicos no Golfo.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto29/tt29.html?id=329",
     "linkQuestoes": "questoes/modelo-questoes.html?id=329",
-    "objetivo": null,
+    "objetivo": "Compreender a geopolitica do Golfo Pérsico, o autoritarismo rentista das monarquias do petróleo, a guerra do Iêmen e a posição estratégica da Turquia entre a Europa e o Oriente Médio.",
     "audio": null,
     "bibliografia": [
-      "Boniface",
+      "Saviani",
+      "Gasparin",
+      "Said",
       "Vesentini",
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "GolfoIemen",
+      "TurquiaCurdos"
     ]
   },
   {
@@ -503,16 +614,22 @@
     "titulo": "Subcontinente indiano",
     "imagem": "fotoIndex/3ano/aula31.png",
     "conteudo": "Afeganistão; Guerras; Índia e sua diversidade étnica; Intervenções estrangeiras na Ásia Central.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto31/tt31.html?id=331",
     "linkQuestoes": "questoes/modelo-questoes.html?id=331",
-    "objetivo": null,
+    "objetivo": "Analisar a diversidade do subcontinente indiano, o sistema de castas, a Partição de 1947, o conflito Índia-Paquistão e as contradições do desenvolvimento indiano.",
     "audio": null,
     "bibliografia": [
-      "Boniface",
+      "Saviani",
+      "Gasparin",
+      "DrezeSen",
       "Vesentini",
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "IndiaCastas",
+      "BangladeshTextil"
     ]
   },
   {
@@ -520,16 +637,22 @@
     "titulo": "Rússia - Características gerais",
     "imagem": "fotoIndex/3ano/aula32.png",
     "conteudo": "Federação Russa: aspectos físicos, impactos do fim da URSS e conflitos no Cáucaso.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto32/tt32.html?id=332",
     "linkQuestoes": "questoes/modelo-questoes.html?id=332",
-    "objetivo": null,
+    "objetivo": "Compreender o território russo, seus recursos naturais, a dissolução da URSS, o modelo político de Putin e as consequências globais da guerra na Ucrânia.",
     "audio": null,
     "bibliografia": [
-      "Boniface",
+      "Saviani",
+      "Gasparin",
+      "Mearsheimer",
       "Vesentini",
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "RussiaUcrania",
+      "RussiaPermafrost"
     ]
   },
   {
@@ -537,16 +660,22 @@
     "titulo": "O dinamismo da China",
     "imagem": "fotoIndex/3ano/aula33.png",
     "conteudo": "Modelo político-econômico; Hidrografia; Poder militar; O socialismo chinês no século XXI.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto33/tt33.html?id=333",
     "linkQuestoes": "questoes/modelo-questoes.html?id=333",
-    "objetivo": null,
+    "objetivo": "Analisar o modelo de desenvolvimento chinês (capitalismo de Estado), a Nova Rota da Seda, a relação Brasil-China e a ascensão da China como potência tecnológica e geopolítica.",
     "audio": null,
     "bibliografia": [
-      "Boniface",
+      "Saviani",
+      "Gasparin",
+      "Chang",
       "Vesentini",
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "ChinaNovaRota",
+      "ChinaBrasil"
     ]
   },
   {
@@ -554,16 +683,22 @@
     "titulo": "Conflitos internos na China",
     "imagem": "fotoIndex/3ano/aula34.png",
     "conteudo": "Tibete e Xinjiang; Relações com Taiwan e Hong Kong; Mar do Sul da China; Questão Norte-Coreana.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto34/tt34.html?id=334",
     "linkQuestoes": "questoes/modelo-questoes.html?id=334",
-    "objetivo": null,
+    "objetivo": "Compreender os conflitos internos da China: a situação dos uigures em Xinjiang, o Tibet, a perda de autonomia de Hong Kong e a questão de Taiwan no contexto da rivalidade sino-americana.",
     "audio": null,
     "bibliografia": [
-      "Boniface",
+      "Saviani",
+      "Gasparin",
+      "HRW",
       "Vesentini",
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "ChinaXinjiang",
+      "HongKongLei"
     ]
   },
   {
@@ -571,16 +706,22 @@
     "titulo": "Japão, Tigres e Oceania",
     "imagem": "fotoIndex/3ano/aula35.png",
     "conteudo": "Japão: industrialização e modelo econômico. Tigres Asiáticos: Coreia do Sul, Taiwan, Cingapura e Hong Kong. Oceania: Austrália e Nova Zelândia.",
-    "linkTexto": null,
+    "linkTexto": "3ano/Textos3/Texto35/tt35.html?id=335",
     "linkQuestoes": "questoes/modelo-questoes.html?id=335",
-    "objetivo": null,
+    "objetivo": "Analisar o desenvolvimento econômico do Japão e dos Tigres Asiáticos, o modelo de Estado desenvolvimentista, e a vulnerabilidade dos pequenos países insulares da Oceania diante das mudanças climáticas.",
     "audio": null,
     "bibliografia": [
-      "Boniface",
+      "Saviani",
+      "Gasparin",
+      "Chang",
       "Vesentini",
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "JapaoTigres",
+      "OceaniaClima"
     ]
   },
   {

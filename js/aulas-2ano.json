@@ -13,6 +13,10 @@
       "SantosGlobalizacao",
       "Vesentini",
       "BNCC"
+    ],
+    "links": [
+      "40MapasMundo",
+      "AgenciaBrasilDesigualdadeRegional"
     ]
   },
   {
@@ -31,6 +35,10 @@
       "Vesentini",
       "Vogler",
       "BNCC"
+    ],
+    "links": [
+      "40MapasMundo",
+      "MarinhaAmazulBrasil"
     ]
   },
   {
@@ -46,6 +54,12 @@
       "Vesentini",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "IBGECidades",
+      "ONUPopulacaoMundial",
+      "AgenciaBrasilPopDiminuir",
+      "AgenciaBrasilEnvelhecimento"
     ]
   },
   {
@@ -63,6 +77,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "AgenciaBrasilExportacoes",
+      "FapespJurandyrRoss"
     ]
   },
   {
@@ -81,6 +99,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "FapespJurandyrRoss",
+      "FapespRelevoInterior"
     ]
   },
   {
@@ -133,6 +155,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "PetrobrasPreSal",
+      "ANPPetroleo",
+      "ANPAnuario2018"
     ]
   },
   {
@@ -150,6 +177,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "BrasilEscolaDIT",
+      "AgenciaBrasilCarteira"
     ]
   },
   {
@@ -167,8 +198,8 @@
       "SantosGlobalizacao",
       "Skolnick",
       "Silva",
-      "Vogler",  
-      "BNCC" 
+      "Vogler",
+      "BNCC"
     ],
     "links": [
       "FapespRelevoInterior"
@@ -188,6 +219,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "IBGECidades",
+      "AgenciaBrasilMobilidadeUrbana"
     ]
   },
   {
@@ -237,6 +272,11 @@
       "Vesentini",
       "Vogler",
       "BNCC"
+    ],
+    "links": [
+      "CEMADENRisco",
+      "IPCCRelatorio",
+      "ONUMudancaClimatica"
     ]
   },
   {
@@ -251,9 +291,14 @@
     "bibliografia": [
       "Mendonca",
       "Skolnick",
-      "Vogler", 
+      "Vogler",
       "Vesentini",
       "BNCC"
+    ],
+    "links": [
+      "CEMADENRisco",
+      "AgenciaBrasilEnchentes",
+      "BBCEnchentes"
     ]
   },
   {
@@ -269,6 +314,11 @@
       "Skolnick",
       "Vogler",
       "BNCC"
+    ],
+    "links": [
+      "NationalGeographic",
+      "WWFBiomas",
+      "MMANumeros"
     ]
   },
   {
@@ -285,8 +335,14 @@
       "Ross",
       "Vesentini",
       "Vogler",
-      "Skolnick", 
+      "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "MMANumeros",
+      "AgenciaBrasilDesmatamento",
+      "INPEDesmatamento",
+      "WWFCerrado"
     ]
   },
   {
@@ -304,6 +360,10 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "AgenciaBrasilExportacoes",
+      "UNFome"
     ]
   },
   {
@@ -331,6 +391,11 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "AgenciaBrasilExportacoes",
+      "UNFome",
+      "ONUAgua"
     ]
   },
   {
@@ -347,6 +412,12 @@
       "Vogler",
       "Skolnick",
       "BNCC"
+    ],
+    "links": [
+      "AnaRiosBrasil",
+      "ANAAtlasAgua",
+      "BBCRiosVoadores",
+      "MMAAgua"
     ]
   },
   {
@@ -374,20 +445,22 @@
     "titulo": "População II – Dinâmica",
     "imagem": "fotoIndex/2ano/aula23.png",
     "conteudo": "Transição demográfica; Estrutura etária; Taxas de natalidade e mortalidade; Teorias populacionais.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto23/ts23.html?id=223",
     "linkQuestoes": "questoes/modelo-questoes.html?id=223",
-    "objetivo": null,
+    "objetivo": "Compreender as taxas de natalidade, mortalidade e fecundidade; analisar as fases da transicao demografica no Brasil; interpretar piramides etarias e a estrutura etaria da populacao; conhecer as principais teorias populacionais.",
     "audio": null,
     "links": [
-      "ONUPopulacaoMundial",
-      "IBGECidades"
+      "AgenciaBrasilPopDiminuir",
+      "AgenciaBrasilEnvelhecimento"
     ],
     "bibliografia": [
       "Mariano",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
     ]
   },
   {
@@ -395,16 +468,22 @@
     "titulo": "População III - Atividades",
     "imagem": "fotoIndex/2ano/aula24.png",
     "conteudo": "PEA (População Economicamente Ativa); Setores da economia e Desemprego.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto24/ts24.html?id=224",
     "linkQuestoes": "questoes/modelo-questoes.html?id=224",
-    "objetivo": null,
+    "objetivo": "Compreender o conceito de PEA e como o IBGE classifica a populacao economicamente ativa, inativa e desocupada; conhecer os setores da economia (primario, secundario, terciario e quaternario) e a estrutura da forca de trabalho brasileira; analisar os tipos de desemprego, o peso da informalidade e as desigualdades do mercado de trabalho no Brasil.",
     "audio": null,
     "bibliografia": [
       "Mariano",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "AgenciaBrasilDesemprego",
+      "AgenciaBrasilCarteira"
     ]
   },
   {
@@ -412,16 +491,22 @@
     "titulo": "População IV - Migrações",
     "imagem": "fotoIndex/2ano/aula25.png",
     "conteudo": "Migrações internas, pendulares e de retorno; Êxodo rural e transumância no Brasil.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto25/ts25.html?id=225",
     "linkQuestoes": "questoes/modelo-questoes.html?id=225",
-    "objetivo": null,
+    "objetivo": "Compreender os tipos de migracao interna no Brasil (pendular, de retorno, espontanea e forcada); entender as causas historicas e atuais do exodo rural e suas consequencias para as cidades; conhecer o conceito de transumancia e os principais fluxos migratorios internos brasileiros.",
     "audio": null,
     "bibliografia": [
       "Mariano",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "AgenciaBrasilUrbanizacao",
+      "AgenciaBrasilNordestePerda"
     ]
   },
   {
@@ -439,15 +524,23 @@
     "titulo": "O processo de urbanização",
     "imagem": "fotoIndex/2ano/aula27.png",
     "conteudo": "Crescimento urbano; Megacidades; Rede urbana e processos de conurbação.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto27/ts27.html?id=227",
     "linkQuestoes": "questoes/modelo-questoes.html?id=227",
-    "objetivo": null,
+    "objetivo": "Compreender o processo de urbanizacao no Brasil e no mundo; identificar o que sao megacidades e como se organiza a rede urbana; entender os conceitos de conurbacao, metropolizacao e hierarquia urbana.",
     "audio": null,
     "bibliografia": [
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Mariano",
+      "Saviani",
+      "Gasparin",
+      "SantosTerritorioSociedade"
+    ],
+    "links": [
+      "AgenciaBrasilSaoPaulo",
+      "AgenciaBrasilMetropoles"
     ]
   },
   {
@@ -455,15 +548,22 @@
     "titulo": "Redes e hierarquias urbanas",
     "imagem": "fotoIndex/2ano/aula28.png",
     "conteudo": "Metrópoles; Megalópoles; Regiões metropolitanas e descentralização urbana.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto28/ts28.html?id=228",
     "linkQuestoes": "questoes/modelo-questoes.html?id=228",
-    "objetivo": null,
+    "objetivo": "Compreender como as cidades se organizam em redes e hierarquias urbanas no Brasil, identificando o papel das metrópoles, cidades médias e centros locais. Analisar o REGIC e as relações de influência entre cidades como expressão de relações de poder e de desigualdade territorial.",
     "audio": null,
     "bibliografia": [
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Correa",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "IBGERegioes",
+      "AgenciaBrasilCidadesMedias"
     ]
   },
   {
@@ -471,9 +571,9 @@
     "titulo": "O espaço das cidades",
     "imagem": "fotoIndex/2ano/aula29.png",
     "conteudo": "Gentrificação; Segregação socioespacial; Mobilidade urbana e especulação imobiliária.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto29/ts29.html?id=229",
     "linkQuestoes": "questoes/modelo-questoes.html?id=229",
-    "objetivo": null,
+    "objetivo": "Analisar como o espaço intraurbano é produzido e organizado de forma desigual, identificando os processos de segregação socioespacial, gentrificação, especulação imobiliária e problemas de mobilidade urbana no Brasil. Compreender que a cidade não é neutra: reflete escolhas políticas e relações de poder.",
     "audio": null,
     "bibliografia": [
       "Abdal",
@@ -481,7 +581,13 @@
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "AgenciaBrasilGentrif",
+      "AgenciaBrasilMobilidadeUrbana"
     ]
   },
   {
@@ -489,15 +595,21 @@
     "titulo": "Problemas socioambientais urbanos",
     "imagem": "fotoIndex/2ano/aula30.png",
     "conteudo": "Enchentes; Ilhas de calor; Inversão térmica; Lixo e questões sanitárias nas cidades.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto30/ts30.html?id=230",
     "linkQuestoes": "questoes/modelo-questoes.html?id=230",
-    "objetivo": null,
+    "objetivo": "Identificar e explicar os principais problemas socioambientais das cidades brasileiras: enchentes, ilhas de calor, inversão térmica e déficit de saneamento básico. Compreender que esses problemas não são naturais, mas resultado da desigualdade no acesso ao espaço urbano.",
     "audio": null,
     "bibliografia": [
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "AgenciaBrasilEnchentes",
+      "AgenciaBrasilSaneamento"
     ]
   },
   {
@@ -515,15 +627,21 @@
     "titulo": "Fontes de energia III",
     "imagem": "fotoIndex/2ano/aula32.png",
     "conteudo": "Biocombustíveis: Proálcool, Biodiesel e Bioenergia; Vantagens e problemas ambientais.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto32/ts32.html?id=232",
     "linkQuestoes": "questoes/modelo-questoes.html?id=232",
-    "objetivo": null,
+    "objetivo": "Compreender a diversidade de fontes de energia renováveis disponíveis no Brasil e no mundo, avaliando as contradições da transição energética: enquanto o discurso é verde, a mineração de minerais críticos e a reprimarização econômica colocam novos dilemas para países como o Brasil.",
     "audio": null,
     "bibliografia": [
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "AgenciaBrasilEnergiaSolar",
+      "AgenciaBrasilHidrogenioVerde"
     ]
   },
   {
@@ -531,19 +649,23 @@
     "titulo": "Meio ambiente no Brasil",
     "imagem": "fotoIndex/2ano/aula33.png",
     "conteudo": "Código Florestal; Unidades de Conservação; Degradação de biomas e políticas ambientais.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto33/ts33.html?id=233",
     "linkQuestoes": "questoes/modelo-questoes.html?id=233",
-    "objetivo": null,
+    "objetivo": "Conhecer os seis biomas brasileiros e suas especificidades. Analisar as causas estruturais do desmatamento no Brasil (agronegócio, especulação fundiária, pressão sobre terras indígenas) e avaliar criticamente as políticas ambientais, incluindo o Código Florestal e as Unidades de Conservação.",
     "audio": null,
     "links": [
-      "MMANumeros"
+      "MMANumeros",
+      "AgenciaBrasilDesmatamento",
+      "AgenciaBrasilCerrado"
     ],
     "bibliografia": [
       "Ross",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
     ]
   },
   {
@@ -551,16 +673,23 @@
     "titulo": "Síntese das regiões brasileiras",
     "imagem": "fotoIndex/2ano/aula34.png",
     "conteudo": "Características gerais das 5 regiões do Brasil: Norte, Nordeste, Centro-Oeste, Sudeste e Sul.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto34/ts34.html?id=234",
     "linkQuestoes": "questoes/modelo-questoes.html?id=234",
-    "objetivo": null,
+    "objetivo": "Caracterizar as cinco regiões brasileiras em suas dinâmicas econômicas, demográficas e sociais, compreendendo as causas históricas das desigualdades regionais. Avaliar criticamente os mecanismos de redistribuição federativa (FPE, FPM, Sudene) e refletir sobre preconceito regional como forma de desigualdade.",
     "audio": null,
     "bibliografia": [
       "Mariano",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Furtado",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "AgenciaBrasilDesigualdadeRegional",
+      "AgenciaBrasilNordesteCresce"
     ]
   },
   {
@@ -568,16 +697,22 @@
     "titulo": "Brasil na globalização",
     "imagem": "fotoIndex/2ano/aula35.png",
     "conteudo": "Balança comercial; Exportações/Importações; Divisão territorial do trabalho e relações comerciais.",
-    "linkTexto": null,
+    "linkTexto": "2ano/Textos2/Texto35/ts35.html?id=235",
     "linkQuestoes": "questoes/modelo-questoes.html?id=235",
-    "objetivo": null,
+    "objetivo": "Compreender a inserção do Brasil na economia globalizada, analisando criticamente a divisão internacional do trabalho, a pauta exportadora concentrada em commodities e o processo de reprimarização. Avaliar o papel do Mercosul e dos BRICS como alternativas à hegemonia norte-americana e refletir sobre soberania econômica.",
     "audio": null,
     "bibliografia": [
       "SantosGlobalizacao",
       "Vesentini",
       "Vogler",
       "Skolnick",
-      "BNCC"
+      "BNCC",
+      "Saviani",
+      "Gasparin"
+    ],
+    "links": [
+      "AgenciaBrasilExportacoes",
+      "AgenciaBrasilBRICS"
     ]
   },
   {

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+
+    <script src="../../../js/duvid-core.js" defer></script>
+
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../js/glossario.js" defer></script>
+
+    <title></title>
+
+
+
+    <style>
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div id="aviso-status" class="w3-margin-top"></div>
+
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+        <!-- Navigation (Stays on Top) -->
+
+
+
+
+        <!-- BLOCO 1: Abertura -->
+        <div class="topico">
+
+            <div class="w3-padding-top-48"></div>
+
+            <h1 id="h1"> </h1>
+
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Compreender o ciclo hidrológico e sua importância
+                        para a distribuição da água no planeta; identificar as bacias hidrográficas como unidades de
+                        gestão do território; reconhecer os principais movimentos oceânicos e seus efeitos sobre o clima
+                        e a vida humana.</span></p>
+            </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 2: Abertura pela realidade do aluno -->
+        <div class="topico">
+
+            <h2>A água que você usa hoje</h2>
+
+            <p><span class="primeiraLetra">D</span>esde que você acordou, quantas vezes usou água? Banho, escova de
+                dente, café, louça. Agora pense: de onde veio essa água? E para onde ela vai depois que escoa pelo ralo?
+            </p>
+
+            <p>Talvez você ache que ela simplesmente "some". Mas não some. Ela entra no esgoto, vai para o rio, evapora,
+                vira nuvem, cai como chuva em algum lugar e recomeça tudo. A água que você usou hoje já esteve nos
+                oceanos, nas geleiras, no solo, em rios que você nunca vai ver.</p>
+
+            <p>E a chuva que molhou sua rua ontem? Ela veio de algum lugar. Pode ter evaporado de um lago, de um rio, ou
+                até da Floresta Amazônica, a mais de mil quilômetros daqui. Clique na palavra abaixo para ver o que
+                conecta tudo isso.</p>
+
+            <p>Toda essa circulação tem um nome: <span class="termo" data-palavra="Ciclo Hidrológico"
+                    data-definicao="Movimento contínuo da água entre os oceanos, a atmosfera, os rios e o solo. Garante a distribuição da água doce pelo planeta.">ciclo
+                    hidrológico</span>.</p>
+
+            <!-- <img id="imagem1" src="tp24F01.png" alt="Ciclo da água na natureza" class="w3-mobile" style="display:none" onerror="this.style.display='none'">
+            <span class="citacao" id="citacao1" style="display:none">O ciclo hidrológico: o caminho da água entre os oceanos, a atmosfera, os rios e o solo. Fonte: ANA - Agência Nacional de Águas.</span> -->
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 3: O problema que precisa ser resolvido -->
+        <div class="topico">
+
+            <p class="caixa">Antes de continuar: uma pergunta que você precisa responder.</p>
+
+            <div class="w3-panel w3-pale-green">
+                <p>O Brasil tem cerca de 12% de toda a água doce superficial do planeta. É o país com a maior reserva de
+                    água doce do mundo.</p>
+
+                <p>Mesmo assim, no semiárido nordestino, famílias passam meses sem água. Municípios inteiros dependem de
+                    carros-pipa. Crianças caminham quilômetros para buscar água em açudes secos.</p>
+
+                <p><strong>Como você explica isso?</strong></p>
+
+                <p>No caderno, escreva pelo menos 5 linhas com sua hipótese. Não pesquise ainda. Use o que você já sabe.
+                    A gente volta a essa pergunta no final da aula.</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 4: Conteúdo 1 — O Ciclo Hidrológico -->
+        <div class="topico">
+
+            <h2>Como a água circula no planeta</h2>
+
+            <p>A água na Terra não fica parada. Ela circula continuamente entre quatro grandes reservatórios: os oceanos, a atmosfera, as águas superficiais (rios e lagos) e as águas subterrâneas. Esse movimento é o <strong>ciclo hidrológico</strong> e é ele que garante a existência de água doce em continentes distantes do mar.</p>
+
+            <p>Tudo começa com a <strong>evaporação</strong>: o calor do sol transforma a água dos oceanos e rios em vapor, que sobe para a atmosfera. As plantas também liberam vapor pelo processo chamado <strong>transpiração</strong>. Juntos, os dois formam a evapotranspiração, a principal "bomba" que injeta umidade na atmosfera sobre os continentes.</p>
+
+            <div class="w3-margin">
+                <img src="tp24F02.png" alt="Etapas do ciclo hidrológico" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">As etapas do ciclo da água: evaporação, condensação, precipitação e infiltração.</span>
+            </div>
+
+            <p>O vapor sobe, esfria e forma nuvens: esse processo é a <strong>condensação</strong>. Quando as gotículas se acumulam o suficiente, caem como chuva, neve ou granizo: é a <strong>precipitação</strong>. Dessa água que cai, uma parte escoa pelos rios até o mar, outra infiltra no solo e outra evapora novamente, reiniciando o ciclo.</p>
+
+            <h3>Quanto tempo a água fica em cada lugar?</h3>
+
+            <p>Cada reservatório retém a água por um tempo diferente. Esse intervalo chama-se <strong>tempo de residência</strong>. Uma molécula de água na atmosfera fica em média 9 dias antes de cair como chuva. Nos rios, fica semanas a meses. Nos oceanos profundos, pode ficar mais de 3.000 anos. Nas geleiras polares, até 100.000 anos.</p>
+
+            <p>Isso explica por que a poluição dos lençóis freáticos é tão grave: a água que infiltra no solo e chega aos <strong>aquíferos</strong> (reservatórios subterrâneos de água doce) pode ficar ali por séculos. Se contaminarmos, levamos gerações para remediar. O <strong>Aquífero Guarani</strong>, que se estende por Brasil, Argentina, Paraguai e Uruguai com 1,2 milhão de km², abastece milhões de pessoas, mas está sob crescente pressão de exploração excessiva e contaminação agrícola.</p>
+
+            <h3>A floresta que faz chover</h3>
+
+            <p>Sem vegetação, o ciclo perde força. As florestas liberam umidade continuamente para o ar, atraem nuvens e sustentam as chuvas da região. Quando o desmatamento avança, o solo resseca rapidamente, os rios perdem volume e as chuvas ficam cada vez mais irregulares: secas mais longas, chuvas mais concentradas e destrutivas.</p>
+
+            <p>No Brasil, os chamados <span class="termo" data-palavra="Rios Voadores" data-definicao="Grandes massas de vapor d'água transportadas pelos ventos a partir da Floresta Amazônica. São responsáveis pelas chuvas do Centro-Sul do Brasil.">rios voadores</span> são grandes correntes de vapor transportadas pela Floresta Amazônica para o interior do continente. São eles que carregam a umidade que abastece o Centro-Sul do país. Pesquisadores estimam que a Amazônia libera cerca de 20 bilhões de toneladas de vapor por dia, volume maior do que o Rio Amazonas lança no oceano. Cada hectare de floresta derrubado enfraquece esse sistema e afeta diretamente o abastecimento de cidades como São Paulo, Belo Horizonte e Brasília.</p>
+
+            <p>As mudanças climáticas intensificam esse problema. Com o aquecimento global, a evaporação aumenta em algumas regiões e diminui em outras, alterando padrões de chuva que duraram milênios. Regiões que sempre foram úmidas ficam mais secas; regiões áridas recebem chuvas torrenciais imprevisíveis. O ciclo hidrológico não quebra. Ele se desequilibra.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 5: Questão prática 1 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>O processo pelo qual a água dos oceanos e rios se transforma em vapor e sobe para
+                    a atmosfera chama-se:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao"><span>condensação</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="errado" class="radio-duvid">
+                    <label for="p1b" class="card-opcao"><span>precipitação</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="correto" class="radio-duvid">
+                    <label for="p1c" class="card-opcao"><span>evaporação</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'é a evaporação! O calor do sol transforma a água líquida em vapor, que sobe para a atmosfera.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 6: Conteúdo 2 — Bacias Hidrográficas -->
+        <div class="topico">
+
+            <h2>Bacias hidrográficas</h2>
+
+            <p>Imagine uma tigela. Toda chuva que cai dentro dela escorre para o centro. Uma <span class="termo" data-palavra="Bacia Hidrográfica" data-definicao="Toda a área de terra que drena suas águas para um mesmo rio principal e seus afluentes. É a unidade básica de gestão dos recursos hídricos no Brasil.">bacia hidrográfica</span> funciona assim: é toda a área de terra que drena suas águas para um mesmo rio principal e seus afluentes. Os limites entre bacias são os <span class="termo" data-palavra="Divisores de Águas" data-definicao="Relevos como serras e chapadas que separam uma bacia hidrográfica de outra. A chuva que cai de um lado vai para um rio; a que cai do outro lado vai para um rio diferente.">divisores de águas</span>: serras e chapadas que separam onde cada gota de chuva vai parar.</p>
+
+            <div class="w3-margin">
+                <img src="tp24F03.png" alt="Mapa das principais bacias hidrográficas do Brasil" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">Principais bacias hidrográficas do Brasil. A Bacia Amazônica é a maior do mundo em volume de água. Fonte: ANA.</span>
+            </div>
+
+            <p>A bacia não é só um conceito geográfico. Ela é uma <strong>unidade de gestão do território</strong>. Tudo que acontece dentro dela afeta os rios: o desmatamento nas nascentes, a agropecuária no médio curso, o crescimento das cidades na foz. Por isso a Lei das Águas (Lei Federal 9.433/1997) organizou o uso da água no Brasil por bacias, criando os Comitês de Bacia, colegiados onde governo, empresas e sociedade civil negociam o uso compartilhado da água. É um avanço real, mas os comitês têm pouco poder de fiscalização e frequentemente são dominados pelos maiores usuários.</p>
+
+            <h3>As grandes bacias brasileiras</h3>
+
+            <p>A <strong>Bacia Amazônica</strong> é a maior do mundo em volume de água: 20% de toda a água doce superficial do planeta passa por ela. A <strong>Bacia do Paraná</strong> concentra o maior potencial hidrelétrico do país, abrigando Itaipu e Belo Monte, mas também os conflitos mais intensos entre energia, agricultura irrigada e populações ribeirinhas deslocadas. A <strong>Bacia do São Francisco</strong> é chamada de "rio da integração nacional": nasce em Minas Gerais, atravessa o semiárido e desemboca no mar entre Alagoas e Sergipe, sendo vital para milhões de nordestinos.</p>
+
+            <h3>Regime fluvial: nem todo rio é igual</h3>
+
+            <p>Os rios não têm o mesmo comportamento ao longo do ano. O <strong>regime fluvial</strong> descreve como a vazão de um rio varia entre as estações. Rios de regime <strong>perene</strong> nunca secam. O Amazonas é um exemplo, alimentado pelas chuvas abundantes da floresta. Já os rios de regime <strong>intermitente</strong> secam completamente em épocas de estiagem, como os do semiárido nordestino, que existem por meses e somem por outros. Essa intermitência é natural, mas é agravada pelo desmatamento e pelo uso excessivo da água para irrigação.</p>
+
+            <h3>A mata ciliar e a saúde dos rios</h3>
+
+            <p>A faixa de vegetação que margeia rios e lagos chama-se <strong>mata ciliar</strong>. Ela filtra os sedimentos e agrotóxicos que escoam das lavouras antes de chegarem ao rio, segura as margens contra erosão e regula a temperatura da água. Quando a mata ciliar é destruída para plantar até a beira do rio, o leito assore, a água esquenta, os peixes desaparecem e as enchentes ficam mais frequentes. O Código Florestal Brasileiro exige a manutenção de faixas mínimas de mata ciliar, mas o cumprimento é fraco em boa parte do território.</p>
+
+            <h3>A transposição do São Francisco: quem tem razão?</h3>
+
+            <p>Em 2017, o governo concluiu a maior obra hídrica da história do Brasil: a transposição do Rio São Francisco, que desvia parte de suas águas para rios intermitentes do semiárido através de 477 km de canais. O projeto foi defendido como solução para a seca. Foi criticado por não resolver o saneamento básico, por beneficiar mais a agricultura irrigada do que as comunidades pobres e por degradar o próprio São Francisco, já reduzido pela metade em sua vazão em comparação ao século passado. O debate continua: a água chegou, mas chegou para quem?</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 7: Questão prática 2 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>Os limites naturais que separam uma bacia hidrográfica de outra são chamados
+                    de:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2a" value="errado" class="radio-duvid">
+                    <label for="p2a" class="card-opcao"><span>afluentes</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2b" value="correto" class="radio-duvid">
+                    <label for="p2b" class="card-opcao"><span>divisores de águas</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
+                    <label for="p2c" class="card-opcao"><span>estuários</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'são os divisores de águas! Geralmente serras e chapadas que determinam para qual bacia cada gota de chuva vai escoar.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80" height="80"
+                    height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 8: Conteúdo 3 — Movimentos Oceânicos -->
+        <div class="topico">
+
+            <h2>Os oceanos em movimento</h2>
+
+            <p>Os oceanos cobrem 71% da superfície terrestre e estão em constante movimento. O que os move são ventos, diferenças de temperatura e salinidade, e a rotação da Terra. Esse movimento tem três formas principais que você precisa distinguir.</p>
+
+            <p>As <strong>ondas</strong> são geradas pelo atrito do vento sobre a superfície da água. Elas transportam energia, não água. Por isso uma onda não leva objetos do Brasil até a África. Ela transfere a energia do vento até a praia e para por aí. Quanto mais forte o vento e mais extenso o trecho de mar percorrido, maiores as ondas.</p>
+
+            <p>As <strong>marés</strong> são variações periódicas do nível do mar causadas pela atração gravitacional da Lua e do Sol. A Lua, por estar mais próxima, exerce o maior efeito. Quando ela está sobre um oceano, puxa a água para cima, formando a maré alta. No lado oposto da Terra, a inércia do planeta também provoca uma elevação. Entre os dois pontos de maré alta, há dois pontos de maré baixa. O ciclo completo dura cerca de 12 horas e 25 minutos.</p>
+
+            <div class="w3-margin">
+                <img src="tp24F04.png" alt="Mapa das correntes oceânicas do mundo" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📷 Imagem em breve</div>'">
+                <span class="w3-small w3-margin-left">Correntes oceânicas superficiais. Quentes em vermelho, frias em azul. Fonte: NOAA.</span>
+            </div>
+
+            <p>As <span class="termo" data-palavra="Correntes Oceânicas" data-definicao="Grandes fluxos de água dentro do oceano com temperatura, velocidade e direção definidas. As quentes partem dos trópicos para os polos; as frias, dos polos para o equador. Regulam o clima costeiro do planeta.">correntes oceânicas</span> são grandes rios dentro do mar, com temperatura, velocidade e direção definidas. As correntes <strong>quentes</strong> partem das regiões tropicais em direção aos polos, carregando calor. As correntes <strong>frias</strong> partem dos polos em direção ao equador, esfriando as costas que percorrem. A Corrente do Golfo aquece a Europa Ocidental. Sem ela, Londres teria o mesmo clima de Moscou. No sul do Brasil, o encontro da fria Corrente das Malvinas com a quente Corrente do Brasil cria condições favoráveis à pesca e explica parte do clima mais temperado da região.</p>
+
+            <h3>A correia transportadora global</h3>
+
+            <p>Além das correntes superficiais, existe uma circulação oceânica muito mais lenta e profunda chamada <strong>circulação termoalina</strong>. Ela funciona como uma enorme correia transportadora: a água fria e salgada dos polos é mais densa e afunda, empurrando a água quente superficial que vem dos trópicos. Esse ciclo demora entre 1.000 e 2.000 anos para dar uma volta completa no planeta, mas é responsável pela distribuição de calor, oxigênio e nutrientes entre os oceanos do mundo. O aquecimento global, ao derreter as geleiras e injetar água doce menos densa nos oceanos, ameaça desacelerar esse sistema, com consequências climáticas imprevisíveis para todo o planeta.</p>
+
+            <h3>El Niño, La Niña e o Brasil</h3>
+
+            <p>A interação entre oceano e atmosfera gera fenômenos de longo alcance. O <strong>El Niño</strong> ocorre quando as águas do Pacífico equatorial ficam mais quentes que o normal. Isso altera os ventos e o regime de chuvas em todo o planeta: no Brasil, provoca secas severas no Norte e Nordeste e chuvas excessivas no Sul. Já o <strong>La Niña</strong>, o fenômeno inverso (águas mais frias no Pacífico), tende a aumentar as chuvas no Norte e agravar a seca no Sul. Esses fenômenos não são novos, mas têm se intensificado com as mudanças climáticas.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 8.5: Texto-fonte para análise crítica -->
+        <div class="topico">
+
+            <h2>Leia e analise</h2>
+
+            <div class="duvid-bloco-apoio">
+                <div class="duvid-texto-citacao">
+                    A água é um bem público, mas é tratada como mercadoria. Os rios que abastecem as cidades são os mesmos que recebem os esgotos. Os aquíferos que alimentam a agricultura industrial são os mesmos que precisam abastecer as comunidades rurais. E quando a água falta, ela falta primeiro para os mais pobres, que pagam mais caro por ela em caminhões-pipa do que os moradores dos bairros com rede de abastecimento. Enquanto não encararmos a água como direito humano e não como recurso a ser explorado pelo mercado, a crise hídrica vai continuar sendo resolvida para uns e ignorada para outros.
+                </div>
+                <div class="duvid-fonte-texto">— Adaptado de relatório da ONU-Água, 2023</div>
+            </div>
+
+            <div class="w3-panel w3-pale-yellow w3-margin-top">
+                <p><strong>Responda no caderno antes de continuar:</strong></p>
+                <p>1. O texto afirma que a água "falta primeiro para os mais pobres". Com base no que você estudou sobre bacias hidrográficas e ciclo da água, como você explica essa desigualdade?</p>
+                <p>2. O texto faz uma distinção entre "bem público" e "mercadoria". Qual é a diferença? Você concorda que a água deveria ser tratada como direito humano e não como mercadoria? Argumente.</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+
+
+        <!-- BLOCO 9: O momento em que tudo faz sentido -->
+        <div class="topico">
+
+            <h2>Voltando à pergunta do início</h2>
+
+            <p>Você se lembra da pergunta que fez no começo? Por que o país mais rico em água do mundo tem milhões de
+                pessoas sem acesso regular à água?</p>
+
+            <p>Olha o que você aprendeu: a água não está distribuída igualmente pelo território. O ciclo hidrológico
+                depende de floresta para funcionar, e o semiárido tem baixa cobertura vegetal e chuvas concentradas em
+                poucos meses. As bacias do Nordeste são menores e com menos volume. A gestão das bacias hidrográficas é
+                desigual entre regiões ricas e pobres do país.</p>
+
+            <p>Mas isso não é só geografia física. É também política. O Brasil investe muito menos em cisternas, açudes e saneamento nas regiões pobres do que nas grandes cidades do Sul e Sudeste. A água está lá. O que falta é que o Estado chegue onde o mercado não chega.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <strong>P: A seca no semiárido é natural ou construída?</strong><br><br>
+                R: As duas coisas. A região tem precipitação menor e irregular, isso é natural. Mas a falta de acesso à água é agravada pela ausência de políticas públicas, pelo desmatamento da Caatinga e pela concentração fundiária que priva pequenos agricultores das margens dos rios. O problema é real, mas parte dele tem solução, basta vontade política.
+            </p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 10: Infográfico resumo -->
+        <div class="topico">
+
+            <h2>Infográfico — resumo da aula</h2>
+
+            <div class="w3-margin">
+                <img src="inforesumot24.png" alt="Infográfico resumo Hidrografia" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:48px 0;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>📊 Infográfico em breve</div>'">
+                <span class="w3-small w3-margin-left">Fonte: Organizado e revisado pelo autor.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11: Perguntas que qualquer aluno teria -->
+        <div class="topico">
+
+            <h2 id="titulo-pr">Perguntas que você provavelmente tinha</h2>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>Se a água do mar evapora e vira chuva, por que a chuva não é salgada?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Porque o sal não evapora junto. Quando a água vira vapor, ela deixa os minerais dissolvidos para trás. O que sobe para a atmosfera é água pura. O sal fica no oceano, por isso o mar é salgado enquanto a chuva é doce.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>O Brasil vai ficar sem água algum dia?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Não de uma vez. Mas várias regiões já estão sob pressão real. O aquífero Guarani, que abastece milhões de pessoas no Centro-Sul, não é infinito. O problema nunca foi a quantidade total de água no planeta. É o uso irresponsável, a poluição dos rios e a distribuição desigual entre quem pode pagar e quem não pode.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>A maré é igual em qualquer praia do mundo?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Não. A intensidade depende da forma da costa, da profundidade do fundo e da posição geográfica. Em praias do Brasil a diferença entre maré alta e baixa costuma ser de 1 a 3 metros. Na Baía de Fundy, no Canadá, essa diferença chega a 16 metros. Dá para caminhar onde tinha mar horas antes.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 12: Produção final -->
+        <div class="topico">
+
+            <p class="caixa">Hora de usar o que você aprendeu.</p>
+
+            <div class="w3-panel w3-pale-yellow">
+                <h3>Escreva uma carta</h3>
+                <p><strong>Atividade individual</strong></p>
+
+                <p>Você agora conhece o ciclo da água, as bacias hidrográficas e os conflitos pelo uso desse recurso. Use esse conhecimento.</p>
+
+                <p>Escreva uma carta de 15 a 20 linhas para o prefeito ou prefeita da sua cidade propondo uma ação concreta para melhorar o acesso à água na região. Pode ser uma cisterna comunitária, a recuperação das matas ciliares de um rio local, uma campanha de uso consciente ou outra ideia sua.</p>
+
+                <p>A carta precisa usar pelo menos dois conceitos estudados nesta aula para explicar por que sua proposta faz sentido.</p>
+
+                <p class="w3-small w3-text-grey">Dica: pense no que você descobriu sobre a bacia hidrográfica do seu município e de onde vem a água da sua cidade.</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 13: Questões para o caderno -->
+        <div class="topico">
+
+            <div class="w3-pale-yellow">
+                <h2>Questões para responder no caderno:</h2>
+
+                <h3>1. Com suas palavras, explique o que é o ciclo hidrológico e por que ele não para.</h3>
+                <h3>2. Qual é o papel da vegetação no ciclo da água? O que acontece quando uma floresta é desmatada?</h3>
+                <h3>3. O que é uma bacia hidrográfica? Por que ela é usada como unidade de gestão do território?</h3>
+                <h3>4. Cite duas grandes bacias hidrográficas brasileiras e explique a importância de cada uma.</h3>
+                <h3>5. Qual a diferença entre ondas, marés e correntes oceânicas?</h3>
+                <h3>6. Como as correntes oceânicas influenciam o clima das regiões costeiras? Dê um exemplo.</h3>
+                <h3>7. Por que o Brasil, sendo o país com maior reserva de água doce do mundo, ainda convive com escassez hídrica em algumas regiões?</h3>
+                <h3>8. O que são os rios voadores e qual é a relação deles com o clima do Centro-Sul do Brasil?</h3>
+                <h3>9. Quem são os grupos que mais sofrem com os conflitos pelo uso da água nas bacias hidrográficas? Por quê?</h3>
+                <h3>10. A água é um bem comum ou uma mercadoria? Argumente com base no que você estudou.</h3>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Concluir Aula</button>
+            <hr>
+        </div>
+
+
+        <!-- Ficha de conceitos -->
+        <div class="topico">
+            <div id="ficha-conceitos"></div>
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO: TRANSIÇÃO FINAL -->
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- TÓPICO: FINALIZAR -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+
+
+        <!-- SEÇÃO FINAL: PARA SABER MAIS + REFERÊNCIAS -->
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="w3-padding-48">
+            <span id="numero"></span>
+            <span id="txtBarra">0%</span>
+            <progress value="0" max="100" id="progress"></progress>
+        </div>
+
+    </main>
+
+    <button onclick="voltarAoTopo()" id="btn-topo"
+        class="w3-button w3-pale-green w3-padding w3-round-large w3-margin-boottom"
+        style="position: fixed; bottom: 20px; right: 20px; display: none;" title="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="w3-padding-top-48"></div>
+
+    <div id="footer-placeholder"></div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DPX55DSFZ0');
+    </script>
+
+</body>
+
+</html>

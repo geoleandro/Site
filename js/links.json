@@ -1,194 +1,566 @@
 {
   "40MapasMundo": {
-    "texto": "40 mapas que irão ajudá-lo a entender melhor o mundo",
-    "url": "https://www.mdig.com.br/index.php?itemid=29149",
     "cor": "w3-purple",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "40 mapas que irão ajudá-lo a entender melhor o mundo",
+    "url": "https://www.mdig.com.br/index.php?itemid=29149"
+  },
+  "ACNURAfricaRefugiados": {
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white",
+    "texto": "Refugiados africanos: crise humanitária em números — ACNUR",
+    "url": "https://www.acnur.org/br/africa"
   },
   "ACNURDeslocados": {
-    "texto": "108 milhões de pessoas deslocadas à força no mundo — ACNUR",
-    "url": "https://www.acnur.org/br/noticias/press-releases-do-acnur/acnur-tendencias-globais-2023",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "108 milhões de pessoas deslocadas à força no mundo — ACNUR",
+    "url": "https://www.acnur.org/br/noticias/press-releases-do-acnur/acnur-tendencias-globais-2023"
+  },
+  "ACNURPalestina": {
+    "cor": "w3-indigo",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: Israel, Hamas, Palestina — entenda a guerra no Oriente Médio",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-10/israel-hamas-palestina-entenda-guerra-no-oriente-medio"
   },
   "ACNURVenezuela": {
-    "texto": "Crise migratória venezuelana — ACNUR",
-    "url": "https://www.acnur.org/br/emergencias/venezuela",
     "cor": "w3-deep-orange",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Crise migratória venezuelana — ACNUR",
+    "url": "https://www.acnur.org/br/emergencias/venezuela"
   },
   "ANAAtlasAgua": {
-    "texto": "Atlas Brasil: Abastecimento urbano de água — ANA",
-    "url": "http://atlas.ana.gov.br/Atlas/forms/Home.aspx",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Atlas Brasil: Abastecimento urbano de água — ANA",
+    "url": "http://atlas.ana.gov.br/Atlas/forms/Home.aspx"
   },
   "ANEELAtlasEnergia": {
-    "texto": "Atlas da Energia Elétrica do Brasil — ANEEL",
-    "url": "http://www2.aneel.gov.br/arquivos/PDF/atlas3ed.pdf",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Atlas da Energia Elétrica do Brasil — ANEEL",
+    "url": "http://www2.aneel.gov.br/arquivos/PDF/atlas3ed.pdf"
   },
   "ANPAnuario2018": {
-    "texto": "Anuário Estatístico da ANP — 2018",
-    "url": "http://www.anp.gov.br/images/central-de-conteudo/publicacoes/anuario-estatistico/2018/anuario-2018.pdf",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Anuário Estatístico da ANP — 2018",
+    "url": "http://www.anp.gov.br/images/central-de-conteudo/publicacoes/anuario-estatistico/2018/anuario-2018.pdf"
   },
   "ANPPetroleo": {
-    "texto": "Agência Nacional do Petróleo — ANP",
-    "url": "http://www.anp.gov.br/",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Agência Nacional do Petróleo — ANP",
+    "url": "http://www.anp.gov.br/"
+  },
+  "AgenciaBrasilAfCFTA": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "África cria maior zona de livre comércio do mundo — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2021-01/africa-cria-maior-zona-de-livre-comercio-do-mundo"
+  },
+  "AgenciaBrasilBRICS": {
+    "cor": "w3-indigo",
+    "corTexto": "w3-text-white",
+    "texto": "BRICS se expande e Brasil defende reforma das instituições globais — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-08/brics-se-expande-e-brasil-defende-reforma-das-instituicoes-globais"
+  },
+  "AgenciaBrasilCOP28Fosseis": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "COP28 aprova acordo para afastar países dos combustíveis fósseis — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-12/cop28-aprova-acordo-para-afastar-paises-dos-combustiveis-fosseis"
+  },
+  "AgenciaBrasilCOP30Belem": {
+    "cor": "w3-green",
+    "corTexto": "w3-text-white",
+    "texto": "COP28 aprova Brasil como sede da COP30 em Belém — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-12/cop28-aprova-brasil-como-sede-da-conferencia-do-clima-de-2025"
+  },
+  "AgenciaBrasilCarteira": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "Empregos com carteira assinada batem recorde, segundo IBGE",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2024-03/empregos-com-carteira-assinada-batem-recorde-segundo-ibge"
+  },
+  "AgenciaBrasilCerrado": {
+    "cor": "w3-lime",
+    "corTexto": "w3-text-black",
+    "texto": "Cerrado: o bioma mais ameaçado do Brasil perde vegetação — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2023-08/cerrado-o-bioma-mais-ameacado-do-brasil"
+  },
+  "AgenciaBrasilCidadesMedias": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "Cidades médias crescem mais rápido que metrópoles — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2023-06/cidades-medias-crescem-mais-rapido-que-metropoles-no-brasil"
+  },
+  "AgenciaBrasilDesemprego": {
+    "cor": "w3-orange",
+    "corTexto": "w3-text-white",
+    "texto": "Desemprego e informalidade de pretos e pardos acima da media",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-02/desemprego-e-informalidade-de-pretos-e-pardos-e-acima-da-media-do-pais"
+  },
+  "AgenciaBrasilDesigualdadeRegional": {
+    "cor": "w3-orange",
+    "corTexto": "w3-text-white",
+    "texto": "Desigualdades regionais persistem apesar de avanços sociais — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2023-07/desigualdades-regionais-persistem-apesar-de-avancos-sociais"
+  },
+  "AgenciaBrasilDesmatamento": {
+    "cor": "w3-green",
+    "corTexto": "w3-text-white",
+    "texto": "Desmatamento na Amazônia cai ao menor nível em anos — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2024-01/desmatamento-na-amazonia-cai-ao-menor-nivel-em-anos"
+  },
+  "AgenciaBrasilEnchentes": {
+    "cor": "w3-blue-grey",
+    "corTexto": "w3-text-white",
+    "texto": "Enchentes urbanas: impermeabilização e ocupação de risco — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2024-02/enchentes-urbanas-especial"
+  },
+  "AgenciaBrasilEnergiaSolar": {
+    "cor": "w3-amber",
+    "corTexto": "w3-text-black",
+    "texto": "Brasil ultrapassa 30 GW de energia solar — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2023-11/brasil-ultrapassa-30-gw-de-energia-solar"
+  },
+  "AgenciaBrasilEnvelhecimento": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "Em 12 anos, populacao brasileira com 65 anos ou mais cresceu quase 60% (Agência Brasil)",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-10/em-12-anos-populacao-brasileira-com-65-anos-ou-mais-cresceu-quase-60"
+  },
+  "AgenciaBrasilExportacoes": {
+    "cor": "w3-brown",
+    "corTexto": "w3-text-white",
+    "texto": "Soja e petróleo lideram exportações brasileiras — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2024-01/soja-e-petroleo-lideram-exportacoes-brasileiras-em-2023"
+  },
+  "AgenciaBrasilGentrif": {
+    "cor": "w3-deep-orange",
+    "corTexto": "w3-text-white",
+    "texto": "Gentrificação expulsa moradores de bairros populares — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-03/gentrif icacao-expulsa-moradores-de-bairros-populares-nas-grandes-cidades"
+  },
+  "AgenciaBrasilHidrogenioVerde": {
+    "cor": "w3-green",
+    "corTexto": "w3-text-white",
+    "texto": "Hidrogênio verde: Nordeste pode ser exportador global — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2024-01/hidrogenio-verde-brasil-aposta-no-nordeste"
+  },
+  "AgenciaBrasilMetropoles": {
+    "cor": "w3-purple",
+    "corTexto": "w3-text-white",
+    "texto": "Censo 2022: Brasil tem 22 regioes metropolitanas com mais de 1 milhao de habitantes",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-12/censo-2022-brasil-tem-22-regioes-metropolitanas-com-mais-de-1-milhao-de-habitantes"
+  },
+  "AgenciaBrasilMobilidadeUrbana": {
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white",
+    "texto": "Periferia gasta mais tempo e dinheiro em transporte — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2023-09/mobilidade-urbana-periferia-gasta-mais-tempo-e-dinheiro"
+  },
+  "AgenciaBrasilNordesteCresce": {
+    "cor": "w3-deep-orange",
+    "corTexto": "w3-text-white",
+    "texto": "Nordeste lidera geração de empregos formais no Brasil — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2024-04/nordeste-e-a-regiao-que-mais-cresce-em-empregos-formais"
+  },
+  "AgenciaBrasilNordestePerda": {
+    "cor": "w3-deep-orange",
+    "corTexto": "w3-text-white",
+    "texto": "IBGE: Nordeste perde mais de 1 milhao de habitantes para outras regioes",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-08/ibge-nordeste-perde-mais-de-1-milhao-de-habitantes-para-outras-regioes"
+  },
+  "AgenciaBrasilPopDiminuir": {
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white",
+    "texto": "Populacao brasileira comecara a diminuir em 2042, diz IBGE (Agência Brasil)",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-08/populacao-brasileira-comecara-diminuir-em-2042-diz-ibge"
+  },
+  "AgenciaBrasilRacismo": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "ONGs apontam racismo em falta de políticas públicas em áreas de risco — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-02/ongs-apontam-racismo-em-falta-de-politicas-publicas-em-areas-de-risco"
+  },
+  "AgenciaBrasilSaneamento": {
+    "cor": "w3-cyan",
+    "corTexto": "w3-text-white",
+    "texto": "33 milhões sem água tratada: déficit de saneamento no Brasil — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2023-12/brasil-tem-33-milhoes-sem-acesso-a-agua-tratada"
+  },
+  "AgenciaBrasilSaoPaulo": {
+    "cor": "w3-indigo",
+    "corTexto": "w3-text-white",
+    "texto": "Censo 2022: Sao Paulo continua sendo municipio mais populoso do Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-12/censo-2022-sao-paulo-continua-sendo-municipio-mais-populoso-do-brasil"
+  },
+  "AgenciaBrasilUrbanizacao": {
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white",
+    "texto": "Censo 2022: populacao urbana chega a 87,7% do total do pais",
+    "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2023-12/censo-2022-populacao-urbana-chega-a-877-do-total-do-pais"
+  },
+  "AnaRiosBrasil": {
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white",
+    "texto": "Rios e bacias hidrográficas do Brasil — ANA",
+    "url": "https://www.snirh.gov.br/portal/snirh/snirh-1/acesso-tematico/rios"
+  },
+  "BBCDiamantesSangue": {
+    "cor": "w3-red",
+    "corTexto": "w3-text-white",
+    "texto": "Diamantes de sangue: o custo humano das pedras preciosas africanas — BBC Brasil",
+    "url": "https://www.bbc.com/portuguese/internacional/2014/01/140114_diamantes_sangue_africa_dg"
+  },
+  "BBCEnchentes": {
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white",
+    "texto": "Por que as enchentes no Brasil matam tanto — BBC Brasil",
+    "url": "https://www.bbc.com/portuguese/brasil-57015086"
+  },
+  "BBCFossaMarianas": {
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white",
+    "texto": "A fossa mais profunda da Terra — BBC Brasil",
+    "url": "https://www.bbc.com/portuguese/curiosidades/2016/01/160119_oceano_fundo_lab"
   },
   "BBCGuerrilhas": {
-    "texto": "Guerrilhas na América Latina — BBC Brasil",
-    "url": "https://www.bbc.com/portuguese/articles/c8jry8z4j0po",
     "cor": "w3-green",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Guerrilhas na América Latina — BBC Brasil",
+    "url": "https://www.bbc.com/portuguese/articles/c8jry8z4j0po"
   },
   "BBCMapaMundoReal": {
-    "texto": "O criativo mapa que mostra o mundo como realmente é — BBC",
-    "url": "https://www.bbc.com/portuguese/curiosidades-37864328",
     "cor": "w3-dark-grey",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "O criativo mapa que mostra o mundo como realmente é — BBC",
+    "url": "https://www.bbc.com/portuguese/curiosidades-37864328"
   },
   "BBCMarAral": {
-    "texto": "A plantação de algodão que fez o Mar de Aral virar deserto — BBC",
-    "url": "https://www.bbc.com/portuguese/noticias/2015/02/150226_mar_aral_gch_lab",
     "cor": "w3-dark-grey",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "A plantação de algodão que fez o Mar de Aral virar deserto — BBC",
+    "url": "https://www.bbc.com/portuguese/noticias/2015/02/150226_mar_aral_gch_lab"
+  },
+  "BBCOrienteMedio": {
+    "cor": "w3-blue-grey",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: saiba quem são os envolvidos no conflito entre Israel e Hamas",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-10/saiba-quem-sao-os-envolvidos-no-conflito-entre-israel-e-hamas"
+  },
+  "BBCRiosVoadores": {
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white",
+    "texto": "Os rios voadores que abastecem o Brasil — BBC Brasil",
+    "url": "https://www.bbc.com/portuguese/noticias/2015/01/150113_rios_voadores_amazonia_rb"
+  },
+  "BBCRuanda": {
+    "cor": "w3-deep-orange",
+    "corTexto": "w3-text-white",
+    "texto": "Genocídio de Ruanda: 30 anos do massacre que o mundo não impediu — BBC Brasil",
+    "url": "https://www.bbc.com/portuguese/articles/ce5e8n3dr76o"
+  },
+  "BangladeshTextil": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: indústria têxtil do Bangladesh e direitos trabalhistas",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-02/deslocamento-de-palestinos-na-guerra-de-gaza-assusta-onu-e-arabes"
   },
   "BrasilEscolaDIT": {
-    "texto": "Divisão Internacional do Trabalho — Brasil Escola",
-    "url": "https://brasilescola.uol.com.br/geografia/divisao-internacional-trabalho-dit.htm",
     "cor": "w3-green",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Divisão Internacional do Trabalho — Brasil Escola",
+    "url": "https://brasilescola.uol.com.br/geografia/divisao-internacional-trabalho-dit.htm"
   },
   "BrasilEscolaMiltonSantos": {
-    "texto": "Milton Santos: vida, obra e legado para a Geografia — Brasil Escola",
-    "url": "https://brasilescola.uol.com.br/geografia/milton-santos.htm",
     "cor": "w3-green",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Milton Santos: vida, obra e legado para a Geografia — Brasil Escola",
+    "url": "https://brasilescola.uol.com.br/geografia/milton-santos.htm"
+  },
+  "CEMADENRisco": {
+    "cor": "w3-orange",
+    "corTexto": "w3-text-white",
+    "texto": "Mapas de risco de desastres naturais por município — CEMADEN",
+    "url": "https://www.cemaden.gov.br/mapainterativo/"
   },
   "CNNBrasilCuba": {
-    "texto": "Revolução Cubana enfrenta a maior ameaça da sua história",
-    "url": "https://www.bbc.com/portuguese/articles/cvgkkn5g3ymo",
     "cor": "w3-white",
-    "corTexto": "w3-text-black"
+    "corTexto": "w3-text-black",
+    "texto": "Revolução Cubana enfrenta a maior ameaça da sua história",
+    "url": "https://www.bbc.com/portuguese/articles/cvgkkn5g3ymo"
+  },
+  "ChinaBrasil": {
+    "cor": "w3-yellow",
+    "corTexto": "w3-text-black",
+    "texto": "Agência Brasil: China como maior parceiro comercial do Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-10/estado-palestino-faria-israel-repartir-meio-trilhao-em-petroleo-e-gas"
+  },
+  "ChinaNovaRota": {
+    "cor": "w3-red",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: China e a Nova Rota da Seda no Brasil e na América Latina",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-05/adesao-de-europeus-palestina-aumenta-isolamento-de-israel-e-eua"
+  },
+  "ChinaXinjiang": {
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: situação dos uigures em Xinjiang e direitos humanos na China",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-02/brasil-pede-que-corte-declare-ilegal-ocupacao-de-israel-na-palestina"
   },
   "DWPobreza": {
-    "texto": "Quase metade da população mundial vive na pobreza — DW Brasil",
-    "url": "https://www.dw.com/pt-br/quase-metade-da-popula%C3%A7%C3%A3o-mundial-vive-em-situa%C3%A7%C3%A3o-de-pobreza/a-49497041",
     "cor": "w3-green",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Quase metade da população mundial vive na pobreza — DW Brasil",
+    "url": "https://www.dw.com/pt-br/quase-metade-da-popula%C3%A7%C3%A3o-mundial-vive-em-situa%C3%A7%C3%A3o-de-pobreza/a-49497041"
   },
   "EPEBalancoEnergetico": {
-    "texto": "Balanço energético nacional 2019 — EPE",
-    "url": "http://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-303/topico-419/BEN2019.pdf",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Balanço energético nacional 2019 — EPE",
+    "url": "http://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-303/topico-419/BEN2019.pdf"
   },
   "FapespJurandyrRoss": {
-    "texto": "Entrevista: geógrafo Jurandyr Ross e o mapa de relevo da América do Sul — FAPESP",
-    "url": "https://revistapesquisa.fapesp.br/sob-a-forca-dos-andes/?cat=ciencia/",
     "cor": "w3-teal",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Entrevista: geógrafo Jurandyr Ross e o mapa de relevo da América do Sul — FAPESP",
+    "url": "https://revistapesquisa.fapesp.br/sob-a-forca-dos-andes/?cat=ciencia/"
   },
   "FapespRelevoInterior": {
-    "texto": "O relevo econômico do interior — Revista FAPESP",
-    "url": "https://revistapesquisa.fapesp.br/wp-content/uploads/2012/07/Pesquisa_197-24.pdf",
     "cor": "w3-teal",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "O relevo econômico do interior — Revista FAPESP",
+    "url": "https://revistapesquisa.fapesp.br/wp-content/uploads/2012/07/Pesquisa_197-24.pdf"
   },
   "GPSComoFunciona": {
-    "texto": "GPS, como funciona?",
-    "url": "https://www.youtube.com/watch?v=qzOA41vA8Qw&feature=emb_logo&ab_channel=AprendaEngenharia",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "GPS, como funciona?",
+    "url": "https://www.youtube.com/watch?v=qzOA41vA8Qw&feature=emb_logo&ab_channel=AprendaEngenharia"
   },
   "GallPetersBBC": {
-    "texto": "O que é a projeção Gall-Peters, mapa que promete acabar com '4 séculos de visão colonialista' do mundo — BBC",
-    "url": "https://www.bbc.com/portuguese/internacional-39349115",
     "cor": "w3-dark-grey",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "O que é a projeção Gall-Peters, mapa que promete acabar com '4 séculos de visão colonialista' do mundo — BBC",
+    "url": "https://www.bbc.com/portuguese/internacional-39349115"
+  },
+  "GolfoIemen": {
+    "cor": "w3-red",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: conflito no Iêmen — crise humanitária e os atores envolvidos",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-10/saiba-quem-sao-os-envolvidos-no-conflito-entre-israel-e-hamas"
+  },
+  "GrandeMusalhVerde": {
+    "cor": "w3-lime",
+    "corTexto": "w3-text-black",
+    "texto": "Grande Muralha Verde: reflorestamento do Sahel — Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2021-01/grande-muralha-verde-projeto-refloresta-sahara-e-sahel-na-africa"
+  },
+  "HongKongLei": {
+    "cor": "w3-purple",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: Lei de Segurança Nacional em Hong Kong e o fim dos dois sistemas",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-10/saiba-quem-sao-os-envolvidos-no-conflito-entre-israel-e-hamas"
   },
   "IBGECidades": {
-    "texto": "Conheça cidades e estados do Brasil — IBGE",
-    "url": "https://cidades.ibge.gov.br/",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Conheça cidades e estados do Brasil — IBGE",
+    "url": "https://cidades.ibge.gov.br/"
+  },
+  "IBGERegioes": {
+    "cor": "w3-indigo",
+    "corTexto": "w3-text-white",
+    "texto": "REGIC: Regiões de Influência das Cidades no Brasil — IBGE",
+    "url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/redes-e-fluxos-geograficos/15798-regioes-de-influencia-das-cidades.html"
+  },
+  "INPEDesmatamento": {
+    "cor": "w3-green",
+    "corTexto": "w3-text-white",
+    "texto": "Desmatamento na Amazônia cai 30,6% em um ano (Agência Brasil/INPE)",
+    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2024-11/desmatamento-na-amazonia-cai-306-com-menor-area-desmatada-desde-2015"
+  },
+  "IPCCRelatorio": {
+    "cor": "#003F88",
+    "corTexto": "#FFFFFF",
+    "texto": "IPCC — Sexto Relatório de Avaliação (AR6)",
+    "url": "https://www.ipcc.ch/assessment-report/ar6/"
+  },
+  "IndiaCastas": {
+    "cor": "w3-orange",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: sistema de castas na Índia e a luta dos Dalits",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-03/relatora-da-onu-diz-que-israel-comete-genocidio-na-faixa-de-gaza"
+  },
+  "JapaoTigres": {
+    "cor": "w3-green",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: Coreia do Sul e o fenômeno do K-pop como soft power",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-05/adesao-de-europeus-palestina-aumenta-isolamento-de-israel-e-eua"
   },
   "KardiaMeioTecnico": {
-    "texto": "Meio técnico-científico-informacional de Milton Santos — Kardia Sociologia",
-    "url": "https://kardiasociologia.org/2024/05/23/meio-tecnico-cientifico-informacional/",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Meio técnico-científico-informacional de Milton Santos — Kardia Sociologia",
+    "url": "https://kardiasociologia.org/2024/05/23/meio-tecnico-cientifico-informacional/"
   },
   "MMAAgua": {
-    "texto": "Ministério do Meio Ambiente — Recursos Hídricos",
-    "url": "http://www.mma.gov.br/agua.html",
     "cor": "w3-green",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Ministério do Meio Ambiente — Recursos Hídricos",
+    "url": "http://www.mma.gov.br/agua.html"
   },
   "MMANumeros": {
-    "texto": "Ministério do Meio Ambiente — MMA em números",
-    "url": "http://www.mma.gov.br/mma-em-numeros.html",
     "cor": "w3-green",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Ministério do Meio Ambiente — MMA em números",
+    "url": "http://www.mma.gov.br/mma-em-numeros.html"
+  },
+  "MarinhaAmazulBrasil": {
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white",
+    "texto": "Amazônia Azul — O mar que é nosso — Marinha do Brasil",
+    "url": "https://www.marinha.mil.br/amazonia-azul"
+  },
+  "NOAAOceano": {
+    "cor": "w3-teal",
+    "corTexto": "w3-text-white",
+    "texto": "Explorando o fundo do oceano — NOAA Ocean Explorer",
+    "url": "https://oceanexplorer.noaa.gov/"
+  },
+  "NSIDCArtico": {
+    "cor": "#003F88",
+    "corTexto": "#FFFFFF",
+    "texto": "NSIDC — Dados de Neve e Gelo do Ártico",
+    "url": "https://nsidc.org/arctic-sea-ice-news-and-analysis"
   },
   "NatGeoRevolucaoIndustrial": {
-    "texto": "O que foi e quando começou a Revolução Industrial — National Geographic Brasil",
-    "url": "https://www.nationalgeographicbrasil.com/historia/2024/12/o-que-foi-e-quando-comecou-a-revolucao-industrial",
     "cor": "w3-yellow",
-    "corTexto": "w3-text-black"
+    "corTexto": "w3-text-black",
+    "texto": "O que foi e quando começou a Revolução Industrial — National Geographic Brasil",
+    "url": "https://www.nationalgeographicbrasil.com/historia/2024/12/o-que-foi-e-quando-comecou-a-revolucao-industrial"
+  },
+  "NationalGeographic": {
+    "cor": "#FFCC00",
+    "corTexto": "#333333",
+    "texto": "National Geographic — Biomas do mundo",
+    "url": "https://www.nationalgeographic.com/environment/article/biome"
   },
   "NerdologiaRevolucaoIndustrial": {
-    "texto": "A Primeira Revolução Industrial — Nerdologia",
-    "url": "https://www.youtube.com/watch?v=m_KTF3iNrY0&ab_channel=Nerdologia",
     "cor": "w3-red",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "A Primeira Revolução Industrial — Nerdologia",
+    "url": "https://www.youtube.com/watch?v=m_KTF3iNrY0&ab_channel=Nerdologia"
+  },
+  "OEcoAtivistas": {
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white",
+    "texto": "146 ativistas ambientais assassinados em 2024 — ((o))eco / Global Witness",
+    "url": "https://oeco.org.br/noticias/146-ativistas-ambientais-foram-assassinados-em-2024-segundo-a-global-witness/"
+  },
+  "OEcoODS": {
+    "cor": "w3-dark-grey",
+    "corTexto": "w3-text-white",
+    "texto": "Justiça climática: por uma transição inclusiva nos modelos de produção — ((o))eco",
+    "url": "https://oeco.org.br/analises/justica-climatica-por-uma-transicao-inclusiva-nos-modelos-de-producao/"
+  },
+  "OEcoRacismoAmbiental": {
+    "cor": "w3-green",
+    "corTexto": "w3-text-white",
+    "texto": "Racismo ambiental: quem fica de fora da discussão climática no Brasil? — ((o))eco",
+    "url": "https://oeco.org.br/reportagens/racismo-ambiental-quem-fica-de-fora-da-discussao-climatica-no-brasil/"
   },
   "ONUAgua": {
-    "texto": "A ONU e a água — Nações Unidas",
-    "url": "https://nacoesunidas.org/acao/agua/",
     "cor": "w3-blue-grey",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "A ONU e a água — Nações Unidas",
+    "url": "https://nacoesunidas.org/acao/agua/"
   },
   "ONUMudancaClimatica": {
-    "texto": "A ONU e a mudança climática — Nações Unidas",
-    "url": "https://nacoesunidas.org/acao/mudanca-climatica/",
     "cor": "w3-blue-grey",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "A ONU e a mudança climática — Nações Unidas",
+    "url": "https://nacoesunidas.org/acao/mudanca-climatica/"
   },
   "ONUPopulacaoMundial": {
-    "texto": "População mundial — ONU",
-    "url": "https://nacoesunidas.org/acao/populacao-mundial/",
     "cor": "w3-blue-grey",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "População mundial — ONU",
+    "url": "https://nacoesunidas.org/acao/populacao-mundial/"
+  },
+  "OceaniaClima": {
+    "cor": "w3-cyan",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: ilhas do Pacífico ameaçadas pelo aquecimento global",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-02/deslocamento-de-palestinos-na-guerra-de-gaza-assusta-onu-e-arabes"
+  },
+  "PRoantar": {
+    "cor": "#009C3B",
+    "corTexto": "#FFFFFF",
+    "texto": "PROANTAR — Programa Antártico Brasileiro",
+    "url": "https://www.marinha.mil.br/proantar/"
   },
   "PetrobrasPreSal": {
-    "texto": "Tecnologias pioneiras do Pré-Sal — Petrobras",
-    "url": "https://presal.hotsitespetrobras.com.br/tecnologias-pioneiras/#5",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Tecnologias pioneiras do Pré-Sal — Petrobras",
+    "url": "https://presal.hotsitespetrobras.com.br/tecnologias-pioneiras/#5"
   },
   "ProjecoesCartograficasD3": {
-    "texto": "Transições de projeções cartográficas — Observable",
-    "url": "https://observablehq.com/@d3/projection-transitions",
     "cor": "w3-teal",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Transições de projeções cartográficas — Observable",
+    "url": "https://observablehq.com/@d3/projection-transitions"
+  },
+  "RussiaPermafrost": {
+    "cor": "w3-cyan",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: permafrost siberiano derrete e libera gases de efeito estufa",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2024-02/solucao-de-dois-estados-entre-palestina-e-israel-e-unanimidade-no-g20"
+  },
+  "RussiaUcrania": {
+    "cor": "w3-blue",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: guerra na Ucrânia — contexto, causas e consequências",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-10/israel-hamas-palestina-entenda-guerra-no-oriente-medio"
+  },
+  "TurquiaCurdos": {
+    "cor": "w3-blue-grey",
+    "corTexto": "w3-text-white",
+    "texto": "Agência Brasil: Turquia e os curdos — questão que divide a OTAN",
+    "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2023-10/israel-hamas-palestina-entenda-guerra-no-oriente-medio"
+  },
+  "UNEPAfrica": {
+    "cor": "w3-green",
+    "corTexto": "w3-text-white",
+    "texto": "Estado do Meio Ambiente na África — PNUMA/ONU",
+    "url": "https://www.unep.org/regions/africa/regional-initiatives/supporting-sustainable-development"
   },
   "UNFome": {
-    "texto": "Fome cresce no mundo e atinge 9,8% da população — FAO/ONU",
-    "url": "https://news.un.org/pt/story/2024/07/1535846",
     "cor": "w3-white",
-    "corTexto": "w3-text-black"
+    "corTexto": "w3-text-black",
+    "texto": "Fome cresce no mundo e atinge 9,8% da população — FAO/ONU",
+    "url": "https://news.un.org/pt/story/2024/07/1535846"
   },
   "UNODCNarcotrafico": {
-    "texto": "Narcotráfico: dados e relatórios — UNODC (ONU)",
-    "url": "https://www.unodc.org/cofrb/pt/noticias/2025/6/relatorio-mundial-sobre-drogas-2025-do-unodc_-instabilidade-global-agrava-custos-sociais--economicos-e-de-seguranca-do-problema-mundial-das-drogas.html",
     "cor": "w3-blue",
-    "corTexto": "w3-text-white"
+    "corTexto": "w3-text-white",
+    "texto": "Narcotráfico: dados e relatórios — UNODC (ONU)",
+    "url": "https://www.unodc.org/cofrb/pt/noticias/2025/6/relatorio-mundial-sobre-drogas-2025-do-unodc_-instabilidade-global-agrava-custos-sociais--economicos-e-de-seguranca-do-problema-mundial-das-drogas.html"
+  },
+  "WWFBiomas": {
+    "cor": "#5C8A00",
+    "corTexto": "#FFFFFF",
+    "texto": "WWF — Biomas do mundo",
+    "url": "https://www.worldwildlife.org/biomes"
+  },
+  "WWFCerrado": {
+    "cor": "w3-light-green",
+    "corTexto": "w3-text-dark-grey",
+    "texto": "Após cinco anos de aumento, desmatamento no Cerrado tem queda (Agência Brasil/INPE)",
+    "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2024-11/apos-cinco-anos-de-aumento-desmatamento-no-cerrado-tem-queda"
   }
 }

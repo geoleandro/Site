@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Síntese das regiões brasileiras: características econômicas, demográficas e culturais das cinco regiões e as desigualdades regionais">
+    <meta property="og:title" content="Texto 34 - Síntese das regiões brasileiras">
+    <meta property="og:description"
+        content="Norte, Nordeste, Centro-Oeste, Sudeste e Sul: o que cada região é, como chegou a ser assim e o que as diferenças revelam sobre o Brasil">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../js/glossario.js" defer></script>
+
+    <title></title>
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="aviso-status" class="w3-margin-top"></div>
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+
+        <!-- BLOCO 1: Abertura -->
+        <div class="topico">
+
+            <div class="w3-padding-top-48"></div>
+
+            <h1 id="h1"> </h1>
+
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Caracterizar as cinco grandes regiões brasileiras
+                        (Norte, Nordeste, Centro-Oeste, Sudeste e Sul) em termos de economia, população, biomas e
+                        dinamismo; compreender as desigualdades regionais históricas e as tendências de convergência ou
+                        divergência entre as regiões; relacionar as características regionais com os processos estudados
+                        ao longo do ano.</span></p>
+            </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 2: Prática Social Inicial -->
+        <div class="topico">
+
+            <h2>De onde você fala?</h2>
+
+            <p><span class="primeiraLetra">Q</span>uando você fala que é de uma determinada região do Brasil, o que isso
+                diz de você para um estrangeiro? Para um brasileiro de outra região? As pessoas têm expectativas sobre
+                como você fala, o que você come, quais times você torce, quais problemas você enfrenta?</p>
+
+            <p>Você já foi vítima de preconceito regional? Já ouviu piadas sobre "nordestino", "gaúcho", "carioca" ou
+                "paulista"? Por que o Brasil, que é um único país, tem regiões tão diferentes entre si?</p>
+
+            <p>Anote no caderno: <strong>Qual é a sua região? Quais são as três coisas que você mais gosta da sua região
+                    e os três principais problemas que você identifica nela?</strong> Ao final da aula, você vai ver se
+                o que você anotou reflete ou não o que a Geografia explica sobre as regiões.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 3: Problematização -->
+        <div class="topico">
+
+            <h2>O problema que esta aula vai ajudar a entender</h2>
+
+            <p>O PIB per capita do Sudeste é mais do que o dobro do Nordeste. A taxa de mortalidade infantil do Norte é
+                quase o triplo da do Sul. Um aluno de escola pública no Maranhão tem, em média, resultados no ENEM
+                significativamente abaixo de um aluno de escola pública em São Paulo. A expectativa de vida de quem
+                nasce no Piauí é 5 anos menor do que a de quem nasce no Distrito Federal.</p>
+
+            <p>A pergunta desta aula não é "por que o Norte é assim e o Sul é assado" mas <strong>como essas
+                    desigualdades foram construídas historicamente, quem se beneficiou dessa construção e quais
+                    tendências indicam se o Brasil está se tornando mais ou menos desigual regionalmente.</strong>
+                Porque as diferenças regionais brasileiras não são naturais nem inevitáveis: são resultado de séculos de
+                escolhas políticas e econômicas.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 4: As cinco regiões -->
+        <div class="topico">
+
+            <div class="w3-pale-blue">
+
+                <h2>As cinco regiões: síntese</h2>
+
+                <p><strong><span class="termo" data-palavra="Região Norte"
+                            data-definicao="Maior região do Brasil em área (45% do território), com 9 estados. Tem a menor densidade demográfica do país. Concentra a maior parte da Amazônia Legal. Economia baseada em extrativismo, agropecuária, mineração e serviços públicos. Polo industrial de Manaus (Zona Franca). Tem os maiores déficits de infraestrutura (saneamento, rodovias, conectividade). O Censo 2022 mostrou crescimento demográfico acima da média nacional.">Norte</span></strong>:
+                    Maior região em área (45% do território), mas com apenas 9% da população. Concentra a floresta
+                    amazônica, a maior bacia hidrográfica do planeta e alguns dos menores índices de desenvolvimento
+                    humano do país. A economia combina extrativismo (madeira, minérios, pescado), agropecuária em
+                    expansão (especialmente no Pará e Rondônia), a Zona Franca de Manaus (polo industrial com incentivos
+                    fiscais) e o setor público. O grande paradoxo da região: tem a maior riqueza natural do planeta e
+                    alguns dos piores indicadores sociais do Brasil.</p>
+
+                <p><strong><span class="termo" data-palavra="Região Nordeste"
+                            data-definicao="Região com 9 estados, 27% da população brasileira e apenas 14% do PIB. Historicamente marcada pela concentração fundiária (latifúndio açucareiro no litoral, pecuária extensiva no sertão) e pelas secas do semi-árido. Nos anos 2000-2010, viveu crescimento econômico acelerado e redução da pobreza impulsionados por transferências de renda (Bolsa Família), expansão do serviço público e turismo. Polo energético em crescimento (energia eólica e solar).">Nordeste</span></strong>:
+                    Região mais populosa após o Sudeste (27% da população), mas com apenas 14% do PIB nacional. Marcada
+                    historicamente pela concentração de terras (latifúndio açucareiro no litoral, pecuária extensiva no
+                    sertão) e pela vulnerabilidade climática do semi-árido. Entre 2003 e 2014, foi a região que mais
+                    cresceu economicamente no Brasil, impulsionada por transferências de renda, expansão do
+                    funcionalismo público e boom do turismo. A energia eólica e solar está transformando estados como
+                    Rio Grande do Norte, Ceará e Bahia em novos polos energéticos. Fortaleza e Salvador são metrópoles
+                    com economias diversificadas.</p>
+
+                <p><strong><span class="termo" data-palavra="Centro-Oeste"
+                            data-definicao="Região com 4 estados (incluindo o DF), 8% da população e 10% do PIB. Ocupa grande parte do Cerrado. É a maior fronteira agrícola do Brasil: soja, milho, algodão e carne bovina são os produtos principais, especialmente no Mato Grosso e Goiás. Brasília, capital federal, domina o setor de serviços e concentra o funcionalismo público federal. É a região que mais cresceu demograficamente nas últimas décadas, puxada pelo agronegócio e pela expansão do serviço público.">Centro-Oeste</span></strong>:
+                    Região que mais cresceu demograficamente nas últimas décadas, impulsionada pela expansão do
+                    agronegócio. Mato Grosso é o maior produtor de soja do mundo. Goiás tem uma pecuária intensiva e
+                    crescente setor de serviços. O Distrito Federal concentra o funcionalismo público federal e tem o
+                    maior PIB per capita do país. A região ocupa grande parte do Cerrado, o que a coloca no centro das
+                    tensões entre produção agrícola e conservação ambiental.</p>
+
+                <p><strong><span class="termo" data-palavra="Região Sudeste"
+                            data-definicao="Região com 4 estados, 42% da população e mais de 54% do PIB nacional. É o coração econômico do Brasil. São Paulo é o centro financeiro, industrial e cultural do país. Rio de Janeiro tem o pré-sal, o turismo e o setor de petróleo. Minas Gerais tem mineração, agropecuária e indústria. Espírito Santo tem porto e comércio exterior. A região concentra as melhores infraestruturas, as maiores universidades e os maiores mercados consumidores do país.">Sudeste</span></strong>:
+                    A locomotiva econômica do Brasil. Com apenas 11% do território, concentra 42% da população e mais de
+                    54% do PIB. São Paulo é a metrópole global do país, centro financeiro, industrial e cultural. Rio de
+                    Janeiro tem o pré-sal e o turismo. Minas Gerais combina mineração, agropecuária e indústria. A
+                    concentração de renda e oportunidades no Sudeste é a principal razão das migrações internas que
+                    estudamos ao longo do ano.</p>
+
+                <p><strong><span class="termo" data-palavra="Região Sul"
+                            data-definicao="Região com 3 estados, 14% da população e 16% do PIB. Tem os melhores indicadores sociais do Brasil (menor mortalidade infantil, maior expectativa de vida, melhor desempenho escolar). Economia diversificada: indústria metal-mecânica e têxtil em Santa Catarina, agropecuária empresarial no Rio Grande do Sul, complexo automotivo e agroindústria no Paraná. Colonização predominantemente europeia (alemã, italiana, polonesa). As enchentes de 2024 no Rio Grande do Sul mostraram a vulnerabilidade climática da região.">Sul</span></strong>:
+                    Região com os melhores indicadores sociais do Brasil. Economia diversificada: agroindústria,
+                    indústria metal-mecânica, tecnologia e turismo. A colonização europeia (alemã, italiana, polonesa)
+                    moldou fortemente a cultura e a organização econômica da região, especialmente em Santa Catarina e
+                    Rio Grande do Sul. As enchentes de 2024 no Rio Grande do Sul, que deslocaram mais de 400 mil
+                    pessoas, revelaram que mesmo a região mais desenvolvida do país é vulnerável às mudanças climáticas.
+                </p>
+
+                <div class="w3-margin">
+                    <img src="ts34f01.png"
+                        alt="Mapa do Brasil com as cinco regiões e indicadores básicos de PIB, população e IDH por região"
+                        class="w3-mobile"
+                        onerror="this.outerHTML='<div style=padding:32px;background:#e8f4fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Mapa das regiões brasileiras em breve</div>'">
+                    <span class="w3-small w3-margin-left">As cinco regiões brasileiras: área, população e participação
+                        no PIB. Fonte: IBGE, Censo 2022 e Contas Regionais 2022.</span>
+                </div>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 5: Questão prática 1 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>A Região Norte do Brasil concentra quase metade do território nacional, abriga a
+                    maior floresta tropical do mundo e tem rios com os maiores volumes de água doce do planeta. Ao mesmo
+                    tempo, apresenta alguns dos piores índices de saneamento básico, infraestrutura e acesso a serviços
+                    de saúde do Brasil. Esse paradoxo entre riqueza natural e pobreza social é explicado principalmente
+                    por:</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao"><span>A localização geográfica remota da região, que torna o
+                            investimento em infraestrutura tecnicamente impossível ou economicamente
+                            inviável</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="correto" class="radio-duvid">
+                    <label for="p1b" class="card-opcao"><span>A concentração histórica dos investimentos públicos e
+                            privados no Sudeste, aliada a um modelo de exploração dos recursos naturais da Amazônia que
+                            extraiu riqueza sem reinvesti-la em desenvolvimento local</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao"><span>A baixa densidade demográfica da região, que não gera
+                            demanda suficiente para justificar o investimento em serviços públicos e
+                            infraestrutura</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o paradoxo da região Norte é resultado de escolhas históricas e políticas, não de fatalidade geográfica. A borracha amazônica enriqueceu exportadores europeus e americanos e a elite local de Manaus e Belém, mas não gerou desenvolvimento regional integrado.', '10' )">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 6: Desigualdades regionais -->
+        <div class="topico">
+
+            <h2>Desigualdades regionais: causas históricas e tendências atuais</h2>
+
+            <p>As <span class="termo" data-palavra="Desigualdades Regionais"
+                    data-definicao="Diferenças de desenvolvimento econômico, social e humano entre as regiões de um país. No Brasil, as desigualdades regionais têm raízes históricas: o ciclo açucareiro concentrou riqueza no Nordeste litorâneo (até o século XVII), a mineração e depois o café concentraram riqueza no Sudeste (séculos XVIII ao XX), e a industrialização do século XX aprofundou a concentração em São Paulo. O governo brasileiro usa políticas de transferência e investimento para tentar reduzir essas desigualdades, com resultados parciais.">desigualdades
+                    regionais</span> no Brasil não são naturais. São produto de séculos de escolhas econômicas e
+                políticas que concentraram investimentos em certas regiões e drenaram recursos de outras.</p>
+
+            <p>O ciclo açucareiro (séculos XVI-XVII) enriqueceu o Nordeste litorâneo e a metrópole portuguesa, mas não
+                criou uma economia diversificada. O ciclo do ouro (século XVIII) enriqueceu Minas Gerais e Lisboa. O
+                café (séculos XIX-XX) concentrou riqueza em São Paulo, que usou essa acumulação para se industrializar.
+                A industrialização pós-1930 foi concentrada no Sudeste, especialmente em São Paulo, puxando migrantes do
+                Nordeste e do Norte.</p>
+
+            <p>Depois de décadas de divergência, o Brasil viveu uma fase de convergência regional entre 2003 e 2014: o
+                Nordeste e o Norte cresceram mais rápido que o Sudeste. Os fatores foram: expansão do crédito rural,
+                programas de transferência de renda (Bolsa Família), expansão de universidades federais (REUNI),
+                crescimento do funcionalismo público e boom das commodities. Mas a crise econômica de 2015-2016 freou
+                esse processo, e as desigualdades regionais persistem.</p>
+
+            <div class="w3-margin">
+                <img src="ts34f02.png"
+                    alt="Gráfico comparando o PIB per capita das cinco regiões brasileiras entre 2003 e 2022 mostrando a fase de convergência e sua interrupção"
+                    class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e8f4fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Gráfico de PIB per capita regional em breve</div>'">
+                <span class="w3-small w3-margin-left">PIB per capita das regiões brasileiras, 2003–2022. Fonte: IBGE,
+                    Contas Regionais.</span>
+            </div>
+
+            <h3>Novas geografias econômicas</h3>
+
+            <p>O Brasil do século XXI tem novas dinâmicas regionais que fogem ao padrão histórico Sudeste-centrista. O
+                agronegócio do Centro-Oeste e do Oeste da Bahia transformou municípios como Sorriso (MT), Lucas do Rio
+                Verde (MT) e Barreiras (BA) em polos dinâmicos. A energia eólica e solar criou uma nova fronteira de
+                investimento no Nordeste. O turismo fez do Litoral Nordestino um polo de crescimento. E o crescimento
+                das cidades médias redistribui parcialmente o dinamismo econômico para fora das metrópoles do Sudeste.
+            </p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 7: Questão prática 2 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>Entre 2003 e 2014, o Nordeste foi a região que mais cresceu economicamente no
+                    Brasil, com redução significativa da pobreza e aumento do consumo das famílias. Qual conjunto de
+                    fatores melhor explica esse desempenho?</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao"><span>Industrialização acelerada e atração de empresas
+                            multinacionais para a região, motivadas pelos baixos salários e isenções fiscais oferecidos
+                            pelos governos estaduais</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="correto" class="radio-duvid">
+                    <label for="p1b" class="card-opcao"><span>Combinação de expansão das transferências de renda (Bolsa
+                            Família), ampliação do funcionalismo público (concursos federais), expansão das
+                            universidades federais, boom do crédito e crescimento do turismo</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao"><span>Descoberta de grandes reservas de petróleo e minérios no
+                            Nordeste que atraíram investimentos privados e transformaram a estrutura econômica
+                            regional</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'o crescimento do Nordeste nesse período foi impulsionado principalmente por políticas públicas de distribuição de renda e expansão do Estado.', '10' )">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 8: Identidades regionais e tensões -->
+        <div class="topico">
+
+            <div class="w3-pale-green">
+
+                <h2>Identidade regional e tensões políticas</h2>
+
+                <p>As regiões brasileiras não são apenas divisões administrativas ou econômicas: são também identidades
+                    culturais. O Nordeste tem sua culinária, sua música (forró, axé, baião), sua literatura (Graciliano
+                    Ramos, João Cabral, Patativa do Assaré), sua religiosidade. O Sul tem sua gauchada, sua arquitetura
+                    de influência alemã e italiana, seus festivais. O Sudeste tem a diversidade metropolitana de São
+                    Paulo e a cultura carioca do Rio.</p>
+
+                <p>Essas identidades são fonte de riqueza cultural, mas também de <span class="termo"
+                        data-palavra="Preconceito Regional"
+                        data-definicao="Forma de discriminação baseada na origem regional de uma pessoa, associando características negativas (preguiça, ignorância, atraso) a determinadas regiões e seus habitantes. No Brasil, o preconceito regional é mais frequente contra nordestinos e nortistas, que enfrentam estereótipos negativos nas regiões Sudeste e Sul, para onde migraram em grande número. É uma forma de discriminação social que frequentemente se superpõe com discriminação de classe e raça.">preconceito
+                        regional</span>. Nordestinos que migraram para São Paulo e Sul do Brasil frequentemente relatam
+                    discriminação: suas formas de falar e seus costumes são tratados como "atraso". Esse preconceito
+                    encobre, na verdade, uma discriminação de classe: o migrante nordestino é pobre num ambiente de
+                    pessoas que se querem ricas, e a origem regional é usada como marcador de inferioridade.</p>
+
+                <p>As desigualdades regionais também alimentam tensões políticas. O debate sobre o federalismo fiscal
+                    (como os impostos são arrecadados e distribuídos entre a União, estados e municípios) é
+                    frequentemente pautado por conflitos de interesse entre regiões: estados ricos arrecadam mais e
+                    recebem de volta proporcionalmente menos; estados pobres arrecadam pouco e dependem de
+                    transferências federais. O Fundo de Participação dos Estados e dos Municípios (FPE e FPM) é o
+                    principal instrumento de redistribuição, mas seu tamanho é insuficiente para equalizar as
+                    diferenças.</p>
+
+                <div class="w3-margin">
+                    <img src="ts34f03.png"
+                        alt="Infográfico mostrando a diferença entre arrecadação e gastos federais por região, evidenciando o papel redistributivo do Estado"
+                        class="w3-mobile"
+                        onerror="this.outerHTML='<div style=padding:32px;background:#f1f8e9;border:2px dashed #a5d6a7;border-radius:8px;text-align:center;color:#888>Infográfico de arrecadação e gastos federais por região em breve</div>'">
+                    <span class="w3-small w3-margin-left">Arrecadação versus gastos federais por região: o papel
+                        redistributivo do Estado brasileiro. Fonte: STN, 2022.</span>
+                </div>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 8.5: Texto-fonte -->
+        <div class="topico">
+
+            <div class="duvid-bloco-apoio">
+                <div class="duvid-texto-citacao">
+                    "A divisão regional do Brasil não é natural: é histórica. O Nordeste não é pobre porque é seco e
+                    quente; é pobre porque foi organizado para enriquecer outros — primeiro a metrópole colonial, depois
+                    o Sudeste industrial. O Norte não é subdesenvolvido por ser floresta; é subdesenvolvido porque a
+                    floresta foi tratada como obstáculo ou como reserva de exploração, nunca como base de um projeto de
+                    desenvolvimento local. As regiões brasileiras são espelhos das escolhas que o país fez ao longo de
+                    séculos sobre quem merecia desenvolver-se e quem devia servir ao desenvolvimento dos outros."
+                </div>
+                <div class="duvid-fonte-texto">Adaptado de FURTADO, Celso. Formação econômica do Brasil. São Paulo:
+                    Companhia das Letras, 2007.</div>
+            </div>
+
+            <div class="w3-panel w3-pale-yellow w3-margin-top">
+                <p><strong>Responda no caderno antes de continuar:</strong></p>
+                <p>1. Celso Furtado afirma que "o Nordeste não é pobre porque é seco e quente." O que ele quer dizer com
+                    isso? Com base no que você estudou ao longo do ano, quais são as causas históricas da pobreza
+                    nordestina?</p>
+                <p>2. O autor diz que o Norte "nunca foi base de um projeto de desenvolvimento local." O que esse
+                    projeto de desenvolvimento poderia ser hoje, levando em conta o potencial da Amazônia sem
+                    destruí-la?</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 9: Catarse -->
+        <div class="topico">
+
+            <div>
+
+                <h2>O que mudou no seu olhar</h2>
+
+                <p>Antes de estudar esta aula, você provavelmente via as diferenças entre as regiões brasileiras como
+                    resultado das características naturais de cada lugar: o Nordeste é pobre porque tem seca, o Norte é
+                    atrasado porque é floresta, o Sul é desenvolvido porque tem clima europeu e colonização europeia.
+                    Agora você vê que as diferenças regionais são resultado de decisões históricas, econômicas e
+                    políticas que concentraram investimentos, infraestrutura e oportunidades em certas regiões e
+                    drenaram recursos de outras.</p>
+
+                <p>A sua região não é o que é por acidente. É o que é porque pessoas e governos fizeram escolhas ao
+                    longo de séculos. E o mais importante: as desigualdades regionais podem ser reduzidas por políticas
+                    públicas — como mostraram os anos 2003-2014 no Nordeste. O território brasileiro não é destino: é
+                    construção histórica que pode ser reconstruída.</p>
+
+                <p><strong>Resumo dos conceitos:</strong> cinco regiões (Norte, Nordeste, Centro-Oeste, Sudeste, Sul com
+                    suas características); desigualdades regionais (causas históricas: ciclos econômicos,
+                    industrialização concentrada); convergência regional (Nordeste crescendo mais rápido 2003-2014);
+                    federalismo fiscal (FPE e FPM como redistribuição); preconceito regional (discriminação que encobre
+                    desigualdade de classe).</p>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 10: Perguntas e Respostas -->
+        <div class="topico">
+
+            <h2 id="titulo-pr">Perguntas que você provavelmente tinha</h2>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>Por que a Zona Franca de Manaus existe?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> A Zona Franca de Manaus foi criada em 1967 pelo governo militar com
+                o objetivo de integrar a Amazônia Ocidental ao restante do Brasil, criar empregos e gerar
+                desenvolvimento sem destruir a floresta. Funciona como um polo industrial com incentivos fiscais
+                especiais: empresas que instalam fábricas lá pagam menos impostos em troca de gerar empregos locais. O
+                resultado é positivo em termos de emprego e renda para Manaus, mas contraditório: a produção depende de
+                componentes importados da Ásia, o que gera pouco encadeamento produtivo com o entorno amazônico. Ainda
+                assim, sem a ZFM, Manaus provavelmente teria muito mais pressão para o desmatamento como alternativa
+                econômica.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>O Sul quer se separar do Brasil?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Há um movimento separatista no Sul chamado "O Sul é o meu país",
+                que argumenta que a região paga mais impostos do que recebe em serviços públicos e que seria melhor como
+                país independente. Esse movimento é minoritário e não tem sustentação constitucional ou política para se
+                tornar realidade. O argumento econômico é parcialmente verdadeiro: o Sul arrecada mais por ser mais
+                rico, mas o sistema de transferências (FPE, FPM) redistribui parte desse recurso para regiões mais
+                pobres, o que é comum em qualquer federação. A Alemanha faz o mesmo entre estados ricos e pobres; os
+                Estados Unidos também. Em todo estado federal, regiões mais ricas subsidiam parcialmente as mais pobres.
+                Isso não é exploração: é solidariedade federativa.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>O Nordeste vai sempre depender de transferências federais?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Não necessariamente. O Nordeste tem recursos que podem sustentar um
+                desenvolvimento endógeno: potencial solar e eólico imenso (já está se tornando o maior polo de energias
+                renováveis do Brasil), litoral com potencial turístico de classe mundial, aquicultura e pesca,
+                agronegócio nas chapadas (Bahia Oeste, Chapada do Apodi), vocação cultural e criativa que alimenta a
+                economia da experiência. O que faltou historicamente foi investimento em infraestrutura, educação e
+                ciência que permitisse ao Nordeste processar sua própria riqueza em vez de exportar matéria-prima bruta.
+                Isso não vai acontecer automaticamente: exige política industrial, investimento público e uma agenda de
+                desenvolvimento que não se confunda com paternalismo.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11: Ficha de conceitos -->
+        <div class="topico">
+            <div id="ficha-conceitos"></div>
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 12: Produção - Prática Social Final -->
+        <div class="topico">
+
+            <p class="caixa">Hora de usar o novo olhar.</p>
+
+            <div class="w3-panel w3-pale-yellow">
+                <h3>Relendo a sua região</h3>
+                <p><strong>Atividade individual</strong></p>
+
+                <p>No início desta aula você anotou o que mais gosta e os maiores problemas da sua região. Releia o que
+                    escreveu. Agora responda:</p>
+
+                <p><strong>1.</strong> Alguma coisa que você anotou como "característica natural" da sua região é, na
+                    verdade, resultado de um processo histórico? Dê um exemplo.</p>
+                <p><strong>2.</strong> Qual é o maior potencial econômico não aproveitado da sua região? O que impede
+                    que esse potencial seja desenvolvido?</p>
+                <p><strong>3.</strong> Você já viveu ou presenciou situações de preconceito regional? Como os conceitos
+                    desta aula ajudam a entender as raízes desse preconceito?</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 13: Questões para o caderno -->
+        <div class="topico">
+
+            <div class="w3-pale-yellow">
+                <h2>Questões para responder no caderno:</h2>
+
+                <h3>1. Quais são as cinco regiões do Brasil? Cite a principal característica econômica de cada uma.</h3>
+
+                <h3>2. Por que a Região Norte tem o paradoxo de ser a maior em área e em riqueza natural, mas apresentar
+                    alguns dos piores indicadores sociais do país?</h3>
+
+                <h3>3. Quais fatores históricos explicam a pobreza do Nordeste? Por que a "seca" não é a explicação
+                    suficiente para as desigualdades da região?</h3>
+
+                <h3>4. O que é o "arco da soja" do Centro-Oeste? Quais consequências ambientais o crescimento do
+                    agronegócio nessa região tem gerado?</h3>
+
+                <h3>5. Por que o Sudeste concentra mais da metade do PIB brasileiro? Quais processos históricos explicam
+                    essa concentração?</h3>
+
+                <h3>6. O que é convergência regional? Quais políticas públicas contribuíram para o crescimento do
+                    Nordeste entre 2003 e 2014?</h3>
+
+                <h3>7. O que é federalismo fiscal? Como o FPE e o FPM redistribuem recursos entre regiões mais ricas e
+                    mais pobres?</h3>
+
+                <h3>8. O preconceito regional contra nordestinos nas cidades do Sudeste é apenas uma questão cultural ou
+                    tem raízes econômicas e históricas? Explique.</h3>
+
+                <h3>9. Quais são as novas dinâmicas econômicas regionais que estão surgindo no Brasil do século XXI e
+                    que fogem ao padrão histórico de concentração no Sudeste?</h3>
+
+                <h3>10. A frase "o Sul é o meu país" usa o argumento de que a região paga mais impostos do que recebe.
+                    Como o conceito de solidariedade federativa responde a esse argumento? Por que estados ricos
+                    subsidiar estados pobres é uma característica comum de todas as federações democráticas do mundo?
+                </h3>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Concluir Aula</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 14: Transição final -->
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} é fantástico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 15: Finalizar -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+
+
+        <!-- SECAO FINAL -->
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
+            </div>
+
+            <br><br>
+            <div class="w3-padding-48">
+                <span id="numero"></span>
+                <span id="txtBarra">0%</span>
+                <progress value="0" max="100" id="progress"></progress>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+
+</body>
+
+</html>

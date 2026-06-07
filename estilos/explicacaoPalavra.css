@@ -39,9 +39,7 @@
   border-radius: 5px;
   border-bottom: 2px dashed #f9a825;
   transition: background 0.2s, transform 0.15s;
-
-     
-
+  z-index: 1;
 }
 .termo::after { content: " 💡"; font-size: 0.78em; opacity: 0.8; }
 .termo:hover  { background: #ffe082; transform: scale(1.05); }
@@ -66,21 +64,20 @@
   transform: translateX(-50%);
   min-width: 220px;
   max-width: 300px;
+  max-height: 220px;
+  overflow-y: auto;
   background: #fff;
   border-left: 5px solid #1976d2;
   border-radius: 10px;
   padding: 10px 14px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: normal;
   line-height: 1.5;
-
   animation: glossFadeUp 0.2s ease;
   white-space: normal;
   text-align: left;
-    
-
-
+  z-index: 1000;
 }
 .termo-tooltip::before {
   content: "";
@@ -88,30 +85,15 @@
   top: -9px; left: 50%; transform: translateX(-50%);
   border: 9px solid transparent;
   border-bottom-color: #1976d2;
+  
 }
 .termo-tooltip.visible { display: block; }
 
 /* Eleva o termo ativo para frente de todos os outros */
-.termo.ativo { z-index: 100; }
+.termo.ativo { z-index: 2000 !important; }
 
 /* Mobile: tooltip em largura fixa relativa à tela, sem transbordar */
-@media (max-width: 600px) {
-  .termo-tooltip {
-    position: fixed;
-    left: 12px;
-    right: 12px;
-    bottom: 16px;
-    top: auto;
-    transform: none;
-    max-width: none;
-    min-width: 0;
-    border-radius: 12px;
-    font-size: 0.9em;
-    box-shadow: 0 -4px 24px rgba(0,0,0,0.22);
-    animation: glossSlideUp 0.25s ease;
-  }
-  .termo-tooltip::before { display: none; } /* sem setinha no mobile */
-}
+/* Mobile tooltip gerenciado via #gloss-mobile-tooltip em glossario.js */
 
 /* ════════════════════════════════════════
    FEEDBACK FLUTUANTE +2 🌍
@@ -186,7 +168,7 @@
   animation: glossFadeUp2 0.35s ease;
   max-width: 300px;
 }
-#lista-glossario li b { color: #2e7d32; display: block; margin-bottom: 2px; }
+#lista-glossario li b { color: #2e7d32; display: inline; }
 
 @media (max-width: 600px) {
   #lista-glossario li { max-width: 100%; width: 100%; }

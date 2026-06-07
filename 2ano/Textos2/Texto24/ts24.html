@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="PEA, setores da economia e desemprego no Brasil: como o IBGE mede o trabalho e quem fica de fora do mercado">
+    <meta property="og:title" content="Texto 24 - Populacao III: Atividades Economicas">
+    <meta property="og:description" content="PEA, setores primario, secundario e terciario, desemprego e informalidade no Brasil">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="../../../estilos/index-estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/navbar.css">
+    <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
+    <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
+    <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+    <script src="../../../js/duvid-cache.js" defer></script>
+    <script src="../../../js/duvid-db.js" defer></script>
+    <script src="../../../js/duvid-audio.js" defer></script>
+    <script src="../../../js/duvid-ui.js" defer></script>
+    <script src="../../../js/duvid-core.js" defer></script>
+    <script src="../../../estilos/jstextos-padrao.js" defer></script>
+    <script src="../../../js/abrirmenu.js" defer></script>
+    <script src="../../../js/carregar.js" defer></script>
+    <script src="../../../js/aulas-geral.js" defer></script>
+    <script src="../../../js/glossario.js" defer></script>
+
+    <title></title>
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="aviso-status" class="w3-margin-top"></div>
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+
+        <!-- BLOCO 1: Abertura -->
+        <div class="topico">
+
+            <div class="w3-padding-top-48"></div>
+
+            <h1 id="h1"> </h1>
+
+            <div class="w3-panel w3-light-grey w3-leftbar w3-border-green w3-round-large w3-padding-16 w3-margin-top">
+                <div class="w3-row">
+                    <div class="w3-col s2 m1 w3-center">
+                        <i class="fa fa-headphones w3-xxlarge w3-text-green"></i>
+                    </div>
+                    <div class="w3-col s10 m11 w3-padding-small">
+                        <b class="fontePixel">OUVIR AULA</b>
+                        <p class="w3-small w3-margin-0">Aperte o play e acompanhe a leitura com narração exclusiva.</p>
+                    </div>
+                </div>
+                <audio controls style="width:100%; margin-top: 10px;">
+                    <source id="audioSource" src="" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="w3-container w3-padding-16">
+                <p><strong>Conteúdo: </strong><span id="descricao-aula"></span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivo-aula">Compreender o conceito de PEA e como o IBGE classifica a população economicamente ativa, inativa e desocupada; conhecer os setores da economia (primário, secundário, terciário e quaternário) e a estrutura da força de trabalho brasileira; analisar os tipos de desemprego, o peso da informalidade e as desigualdades do mercado de trabalho no Brasil.</span></p>
+            </div>
+
+            <button class="btnShow" onclick="playSom('inicio'); MostrarProximo(this); this.style.display='none'">
+                <i class="fa fa-play"></i> Iniciar Aula
+            </button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 2: Introducao -->
+        <div class="topico">
+
+            <h2>Introdução</h2>
+
+            <p><span class="primeiraLetra">E</span>m 2024, o Brasil registrou a menor taxa de desemprego da história: 6,2% no quarto trimestre, segundo o IBGE. Mas esse número sozinho não conta toda a história. Ao mesmo tempo, quase 39% dos trabalhadores brasileiros estavam na informalidade, sem carteira assinada, sem férias, sem previdência. Pretos e pardos tinham taxas de informalidade entre 42% e 44%, enquanto a média dos trabalhadores brancos era de 33%.</p>
+
+            <p>Para entender o mercado de trabalho de um país, e preciso saber como ele e medido, como a produção e organizada por setores e por que o desemprego e a informalidade persistem mesmo quando os números oficiais melhoram. Essa e a aula de hoje.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 3: PEA -->
+        <div class="topico">
+
+            <h2>PEA: Quem o IBGE considera trabalhador</h2>
+
+            <p>O IBGE divide a população brasileira acima de 14 anos em categorias para medir o mercado de trabalho. Essa divisão e fundamental para interpretar qualquer noticia sobre emprego ou desemprego.</p>
+
+            <p>A <span class="termo" data-palavra="PIA (Populacao em Idade Ativa)" data-definicao="Conjunto de pessoas com 14 anos ou mais aptas a trabalhar, independentemente de estarem ou nao trabalhando. No Brasil, a PIA e a base de calcul o de todas as pesquisas de emprego do IBGE e inclui tanto quem trabalha quanto quem esta desempregado ou inativo.">PIA (População em Idade Ativa)</span> e o universo de referencia: todos com 14 anos ou mais. Dentro da PIA, existe uma divisão central:</p>
+
+            <p>A <span class="termo" data-palavra="PEA (Populacao Economicamente Ativa)" data-definicao="Parte da PIA composta por pessoas que estao ocupadas (trabalhando) ou desocupadas (sem trabalho mas procurando ativamente). No Brasil, a PEA e medida pela PNAD Continua, pesquisa trimestral do IBGE que visita 211 mil domicilios em todo o pais. E a medida mais usada para calcular a taxa de desemprego.">PEA (População Economicamente Ativa)</span> inclui dois grupos: os <strong>ocupados</strong>, que estão efetivamente trabalhando, e os <strong>desocupados</strong>, que estão sem trabalho mas buscam emprego ativamente. A taxa de desemprego e calculada dividindo os desocupados pelo total da PEA.</p>
+
+            <p>A <span class="termo" data-palavra="PEI (Populacao Economicamente Inativa)" data-definicao="Parte da PIA composta por pessoas que nao trabalham e nao buscam emprego. Incluem estudantes que nao trabalham, donas de casa dedicadas exclusivamente ao lar, aposentados que nao exercem atividade remunerada e o grupo dos 'desalentados', que desistiram de procurar emprego por nao acreditarem que vao encontrar.">PEI (População Economicamente Inativa)</span> inclui quem não trabalha e não esta procurando trabalho: estudantes dedicados exclusivamente aos estudos, donas de casa que não exercem atividade remunerada, aposentados inativos e os chamados desalentados, que desistiram de buscar emprego.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f01.png" alt="Diagrama da classificacao da populacao pelo IBGE: PIA, PEA (ocupados e desocupados) e PEI" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e8f4fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Diagrama da classificação IBGE em breve</div>'">
+                <span class="w3-small w3-margin-left">Estrutura da classificação da população em idade ativa pelo IBGE: PEA (ocupados e desocupados) e PEI. Fonte: IBGE/PNAD Continua.</span>
+            </div>
+
+            <h3>Como o IBGE mede o desemprego</h3>
+
+            <p>A <strong>PNAD Continua</strong> (Pesquisa Nacional por Amostra de Domicilios Continua) e a principal fonte de dados do mercado de trabalho brasileiro. A cada trimestre, o IBGE visita 211 mil domicilios em todos os estados e aplica um questionario detalhado sobre as atividades de cada morador nos últimos 7 dias.</p>
+
+            <p>Um detalhe importante: para ser considerado ocupado, basta ter trabalhado pelo menos 1 hora na semana de referencia. Para ser considerado desocupado, e preciso não ter trabalhado nas últimas 4 semanas E ter tomado alguma providencia para encontrar trabalho. Quem não trabalhou e não tomou nenhuma providencia para buscar emprego cai na categoria de inativo, mesmo que esteja disponivel.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f02.png" alt="Grafico da taxa de desemprego no Brasil pela PNAD Continua 2014 a 2024" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e8f4fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Grafico da PNAD em breve</div>'">
+                <span class="w3-small w3-margin-left">Taxa de desemprego no Brasil pela PNAD Continua, 2014 a 2024. O pico foi em 2020 (pandemia) e a taxa caiu consistentemente ate 2024. Fonte: IBGE.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 4: Questao pratica 1 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>Maria tem 25 anos, não esta trabalhando e passou os últimos 2 meses mandando curriculos e fazendo entrevistas. Carlos tem 30 anos, não esta trabalhando e desistiu de procurar emprego ha 3 meses porque acredita que não vai encontrar. Com base na metodologia do IBGE, como cada um e classificado?</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
+                    <label for="p1a" class="card-opcao"><span>Maria e PEI e Carlos e desocupado, pois ambos estão sem renda</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1b" value="correto" class="radio-duvid">
+                    <label for="p1b" class="card-opcao"><span>Maria e desocupada (PEA) por estar sem emprego mas buscando ativamente; Carlos e inativo (PEI) por ter desistido de procurar, sendo classificado como desalentado</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
+                    <label for="p1c" class="card-opcao"><span>Ambos são desocupados, pois os dois estão sem trabalho remunerado</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'a classificacao do IBGE depende do comportamento ativo de busca, nao apenas de estar sem trabalho. Maria busca emprego: e desocupada, entra no calculo do desemprego. Carlos desistiu: e inativo (desalentado). O Brasil tinha cerca de 4 milhoes de desalentados em 2024, pessoas que sequer entram na taxa oficial de desemprego. Por isso alguns economistas falam em taxa de subutilizacao, que inclui desalentados, subempregados e desocupados.', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp1" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho1" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 5: Setores da Economia - primario e secundario -->
+        <div class="topico">
+
+            <div class="w3-pale-blue">
+
+            <h2>Os Setores da Economia</h2>
+
+            <p>A atividade econômica de qualquer país pode ser organizada em setores conforme o tipo de produção. Essa classificação ajuda a entender onde os trabalhadores estão, como a economia de um país evoluiu ao longo do tempo e quais são suas vulnerabilidades.</p>
+
+            <h3>Setor Primário</h3>
+
+            <p>O <span class="termo" data-palavra="Setor Primario" data-definicao="Conjunto de atividades economicas que extraem ou coletam recursos da natureza diretamente. Inclui agricultura, pecuaria, pesca, silvicultura (manejo de florestas) e extrativismo mineral e vegetal. E o ponto de partida de quase toda cadeia produtiva, fornecendo materia-prima para a industria e alimento para a populacao.">setor primário</span> compreende todas as atividades que extraem recursos diretamente da natureza: agricultura, pecuaria, pesca, silvicultura e mineração. No Brasil, esse setor tem peso econômico muito expressivo. O agronegocio brasileiro e um dos maiores do mundo: o país e o maior exportador de soja, carne bovina, cafe, laranja e cana-de-acucar.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f03.png" alt="Mapa da producao agricola brasileira por regiao e principais culturas de exportacao" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e8f4fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Mapa do setor primário em breve</div>'">
+                <span class="w3-small w3-margin-left">Principais produções do setor primário brasileiro por região. Fonte: IBGE/SIDRA, 2023.</span>
+            </div>
+
+            <p>Apesar da enorme produção, o setor primário emprega apenas cerca de 9% da PEA brasileira. Isso ocorre porque a modernização do campo com maquinas agricolas aumentou muito a produtividade sem aumentar proporcionalmente o número de trabalhadores. Essa e uma das causas do <strong>êxodo rural</strong>, que estudaremos na aula de migrações.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f04.png" alt="Colheita mecanizada de soja no Centro-Oeste brasileiro: tecnologia e producao em larga escala" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e8f4fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Imagem do agronegocio em breve</div>'">
+                <span class="w3-small w3-margin-left">Colheita mecanizada: o Brasil produz cada vez mais com menos mão de obra no campo. Isso reflete a modernização do setor primário e explica parte do êxodo rural.</span>
+            </div>
+
+            <h3>Setor Secundário</h3>
+
+            <p>O setor secundário e responsavel pela transformação de materias-primas em produtos manufaturados. Inclui a industria de transformação (alimentos, texteis, metalurgia, automoveis, eletronicos), a industria extrativa mineral (mineração) e a construção civil.</p>
+
+            <p>Historicamente, o Brasil passou por um processo de industrialização acelerado entre as décadas de 1930 e 1970, especialmente no governo Vargas e no regime militar. O eixo industrial brasileiro se concentrou no Sudeste, sobretudo em São Paulo. Hoje, porém, fala-se em <strong>desindustrialização precoce</strong>: o setor industrial perdeu participação no PIB antes de o Brasil ter atingido os níveis de desenvolvimento típicos dos países que passaram pela industrialização plena.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f05.png" alt="Linha de producao industrial brasileira: montagem de veiculos ou eletronicos" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#e8f4fd;border:2px dashed #90caf9;border-radius:8px;text-align:center;color:#888>Imagem do setor industrial em breve</div>'">
+                <span class="w3-small w3-margin-left">Setor secundário: a industria de transformação emprega cerca de 18% da PEA brasileira. Fonte: IBGE/PNAD Continua, 2023.</span>
+            </div>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 6: Setor terciario e quaternario -->
+        <div class="topico">
+
+            <h2>Setor Terciário: onde trabalha a maioria dos brasileiros</h2>
+
+            <p>O <span class="termo" data-palavra="Setor Terciario" data-definicao="Conjunto de atividades economicas que nao produzem bens materiais, mas prestam servicos. Inclui comercio, transporte, saude, educacao, financas, turismo, comunicacao, administracao publica e todas as demais atividades de servico. E o setor que mais emprega no Brasil e em todos os paises com renda media ou alta.">setor terciário</span> abrange todas as atividades de serviços: comercio, transporte, saúde, educação, financas, turismo, comunicação, administração pública e lazer. No Brasil, o setor terciário responde por mais de 70% do PIB e emprega cerca de 70% da PEA, uma proporção que continua crescendo.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f06.png" alt="Movimentacao em centro comercial brasileiro: setor de servicos e o maior empregador do pais" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>Imagem do setor de serviços em breve</div>'">
+                <span class="w3-small w3-margin-left">O comercio e parte do setor terciário, o maior empregador do Brasil. Fonte: Agencia Brasil.</span>
+            </div>
+
+            <h3>Setor Quaternário: a economia do conhecimento</h3>
+
+            <p>Alguns geógrafos e economistas distinguem ainda um <strong>setor quaternário</strong>, composto pelas atividades intensivas em conhecimento e tecnologia: pesquisa e desenvolvimento, tecnologia da informação, financas avancadas, consultoria e produção de dados. Sao atividades que produzem valor a partir de inteligencia e inovação, não de força física ou maquinario pesado.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f07.png" alt="Trabalhador de tecnologia: economia do conhecimento e o setor quaternario" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>Imagem do setor quaternário em breve</div>'">
+                <span class="w3-small w3-margin-left">O setor quaternário cresce com a digitalização da economia. Países como os EUA e Coreia do Sul tem nele sua principal vantagem competitiva.</span>
+            </div>
+
+            <h3>A uberização do trabalho</h3>
+
+            <p>Um fenomeno recente que mistura o setor terciário com novas formas de trabalho e a <span class="termo" data-palavra="Uberizacao" data-definicao="Processo pelo qual plataformas digitais intermediam trabalho sem criar vinculo empregaticio formal com os prestadores de servico. O trabalhador e tratado como 'parceiro autonomo' ou 'empreendedor individual', mas na pratica nao tem as garantias do emprego formal (ferias, FGTS, previdencia). O nome vem da empresa Uber, mas o modelo se aplica a entregadores, motoristas, freelancers e muitos outros.">uberização</span>: plataformas digitais como Uber, iFood, Rappi e similares intermediam o trabalho de milhares de pessoas sem criar vinculo empregaticio. O trabalhador e chamado de "parceiro" ou "autonomo", mas depende da plataforma para ter acesso a clientes e não tem férias, previdência ou FGTS garantidos. E uma forma nova de informalidade, mas com a aparencia de empreendedorismo.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f08.png" alt="Entregadores de aplicativo: a uberizacao do trabalho e uma nova forma de informalidade no Brasil" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f0f4f0;border:2px dashed #aed6ae;border-radius:8px;text-align:center;color:#888>Imagem da uberização em breve</div>'">
+                <span class="w3-small w3-margin-left">Entregadores de aplicativo representam o crescimento da uberização: trabalho sem vinculo empregaticio mediado por plataforma digital.</span>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 7: Questao pratica 2 -->
+        <div class="topico pergunta-bloco w3-container w3-padding-24">
+            <p class="w3-text-grey w3-small">QUESTÃO PRÁTICA</p>
+
+            <h4 class="fontePixel"><b>Uma fabrica de calcados fecha sua unidade em Franca (SP) porque não consegue competir com calcados importados mais baratos da Asia. Os 500 trabalhadores da fabrica ficam desempregados. Qual e o tipo de desemprego que melhor descreve essa situação?</b></h4>
+
+            <div class="grupo-respostas w3-margin-top">
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2a" value="errado" class="radio-duvid">
+                    <label for="p2a" class="card-opcao"><span>Desemprego friccional, pois os trabalhadores estão entre um emprego e outro e vao encontrar trabalho logo</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2b" value="correto" class="radio-duvid">
+                    <label for="p2b" class="card-opcao"><span>Desemprego estrutural, pois resulta de mudancas na estrutura produtiva da economia que eliminam postos de trabalho de forma permanente em determinado setor</span></label>
+                </div>
+                <div class="item-resposta">
+                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
+                    <label for="p2c" class="card-opcao"><span>Desemprego ciclico, pois a industria passa por uma crise econômica temporária e ira se recuperar com o aquecimento da economia</span></label>
+                </div>
+            </div>
+
+            <div class="w3-margin-top">
+                <button class="btn-acao-duvid"
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'o desemprego estrutural ocorre quando ha uma mudanca permanente na economia que elimina certos tipos de posto de trabalho. Competicao com importados baratos, automacao e desindustrializacao sao causas classicas de desemprego estrutural. Esses trabalhadores nao vao recuperar os mesmos empregos quando a economia melhorar: precisam de requalificacao. E diferente do friccional (transicao entre empregos) e do ciclico (queda economica temporaria).', '10')">
+                    Confirmar Resposta
+                </button>
+            </div>
+
+            <p id="resp2" class="w3-center w3-padding w3-large"></p>
+            <div class="area w3-center">
+                <img src="../../../fotoIndex/globinhoPe.png" id="globinho2" style="display:none" width="80" height="80">
+            </div>
+        </div>
+
+
+        <!-- BLOCO 8: Desemprego e informalidade -->
+        <div class="topico">
+
+            <div class="w3-pale-green">
+
+            <h2>Desemprego: tipos, causas e o peso da informalidade</h2>
+
+            <p>O desemprego não e um fenomeno unico. Existe diferentes tipos, cada um com causas e soluções distintas.</p>
+
+            <p>O <span class="termo" data-palavra="Desemprego Friccional" data-definicao="Tipo de desemprego de curta duracao que ocorre quando trabalhadores estao entre dois empregos, procurando oportunidades melhores ou aguardando ser contratados apos pedido de demissao. E considerado natural e inevitavel em qualquer economia de mercado. Reflete mobilidade do trabalhador, nao crise economica.">desemprego friccional</span> e o mais benigno: acontece quando um trabalhador esta na transição entre dois empregos. Pediu demissão para buscar algo melhor, ou foi mandado embora mas tem boas perspectivas de recolocação. E um desemprego de curta duração que existe em qualquer economia saudavel.</p>
+
+            <p>O <span class="termo" data-palavra="Desemprego Estrutural" data-definicao="Tipo de desemprego causado por mudancas profundas na estrutura da economia, como automacao, desindustrializacao ou deslocamento por importacoes. Esses postos de trabalho nao retornam com a recuperacao economica: a atividade simplesmente nao existe mais ou foi transferida para outro lugar. Exige requalificacao dos trabalhadores afetados.">desemprego estrutural</span> e mais grave: resulta de transformações permanentes na economia. Quando uma fabrica fecha porque a produção foi terceirizada para outro país com mão de obra mais barata, ou quando uma maquina substitui definitivamente uma função humana, os postos de trabalho não voltam com a recuperação econômica. Os trabalhadores afetados precisam se requalificar para outras areas.</p>
+
+            <p>O <strong>desemprego ciclico</strong> (ou conjuntural) ocorre nas crises econômicas: com a queda da atividade, empresas demitem. Quando a economia se recupera, esses postos tendem a retornar. A pandemia de 2020 gerou um pico de desemprego ciclico no Brasil, que chegou a 14,7%.</p>
+
+            <p>O <strong>desemprego tecnologico</strong> e uma subcategoria do estrutural: resulta da substituição de trabalhadores por tecnologia. A automação de caixas de banco, a robotica industrial e a inteligencia artificial são exemplos de forças que eliminam postos de trabalho de forma permanente.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f09.png" alt="Grafico comparando tipos de desemprego: friccional, estrutural, ciclico e tecnologico" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f1f8e9;border:2px dashed #a5d6a7;border-radius:8px;text-align:center;color:#888>Quadro dos tipos de desemprego em breve</div>'">
+                <span class="w3-small w3-margin-left">Os quatro tipos de desemprego, suas causas e caracteristicas. Fonte: elaborado pelo autor com base em Vesentini e Mariano.</span>
+            </div>
+
+            <h3>Informalidade: o trabalho sem proteção</h3>
+
+            <p>O <span class="termo" data-palavra="Trabalho Informal" data-definicao="Trabalho realizado sem registro em carteira de trabalho e sem as garantias previstas na CLT (Consolidacao das Leis do Trabalho): ferias, 13o salario, FGTS, seguro-desemprego e previdencia social. Pode ser trabalho por conta propria sem registro, emprego domestico sem carteira, comercio ambulante ou qualquer atividade sem contrato formal. No Brasil, afeta quase 39% dos trabalhadores.">trabalho informal</span> e um dos tracos mais persistentes do mercado de trabalho brasileiro. Em 2024, cerca de 39% dos trabalhadores brasileiros estavam na informalidade: sem carteira assinada, sem direito a férias, sem FGTS, sem seguro-desemprego, sem contribuição previdenciaria automatica.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f010.png" alt="Mapa da informalidade no Brasil por estado: regioes Norte e Nordeste tem as maiores taxas" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f1f8e9;border:2px dashed #a5d6a7;border-radius:8px;text-align:center;color:#888>Mapa da informalidade em breve</div>'">
+                <span class="w3-small w3-margin-left">Taxa de informalidade por estado: Maranhao (55%), Piaui (57%) e Para (58%) lideram; Sul e Sudeste apresentam as menores taxas. Fonte: PNAD Continua, 2024.</span>
+            </div>
+
+            <p>A informalidade no Brasil não e distribuida igualmente. Os dados do IBGE mostram desigualdades estruturais marcantes: trabalhadores pretos e pardos tem taxas de informalidade entre 42% e 44%, contra 33% entre brancos. Mulheres são mais afetadas que homens em determinados setores. Regiões Norte e Nordeste tem as maiores taxas do país.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f011.png" alt="Grafico de barras comparando taxa de informalidade por cor ou raca no Brasil 2024: pretos, pardos e brancos" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f1f8e9;border:2px dashed #a5d6a7;border-radius:8px;text-align:center;color:#888>Grafico de informalidade por raca em breve</div>'">
+                <span class="w3-small w3-margin-left">Informalidade por cor ou raca no Brasil, 4o trimestre 2024: pretos (41,9%), pardos (43,5%), brancos (32,6%). Média nacional: 38,6%. Fonte: IBGE/PNAD Continua.</span>
+            </div>
+
+            <h3>Jovens fora do mercado de trabalho</h3>
+
+            <p>Um problema particular do Brasil e o alto número de jovens que não estudam nem trabalham, chamados internacionalmente de NEET (Not in Education, Employment or Training). No Brasil, são cerca de 10 milhões de jovens entre 15 e 29 anos nessa situação, o que representa uma perda de capital humano e potencial produtivo enormes para o país.</p>
+
+            <div class="w3-margin">
+                <img src="ts24f012.png" alt="Jovens brasileiros que nem estudam nem trabalham: o fenomeno NEET e suas causas" class="w3-mobile"
+                    onerror="this.outerHTML='<div style=padding:32px;background:#f1f8e9;border:2px dashed #a5d6a7;border-radius:8px;text-align:center;color:#888>Grafico NEET em breve</div>'">
+                <span class="w3-small w3-margin-left">Jovens NEET no Brasil: quase 10 milhões de pessoas entre 15 e 29 anos que não estudam nem trabalham. A maioria e negra, do Nordeste e do sexo feminino. Fonte: IBGE, 2023.</span>
+            </div>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 9: Resumo -->
+        <div class="topico">
+
+            <div class="w3-light-blue">
+
+            <h2>Resumo</h2>
+
+            <p><strong>PEA:</strong> A PIA inclui todos com 14 anos ou mais. Dentro dela, a PEA são os que trabalham (ocupados) ou buscam trabalho (desocupados). A PEI são os inativos, incluindo desalentados. A taxa de desemprego oficial mede desocupados dentro da PEA.</p>
+
+            <p><strong>Setores:</strong> Primário (extração da natureza: agricultura, mineração); secundário (transformação industrial); terciário (serviços, maior empregador do Brasil); quaternário (conhecimento e tecnologia). A uberização e uma nova forma de trabalho informal mediada por plataformas.</p>
+
+            <p><strong>Desemprego:</strong> Friccional (transição natural entre empregos); estrutural (mudancas permanentes na economia); ciclico (crises conjunturais); tecnologico (substituição por maquinas). A informalidade afeta 39% dos trabalhadores brasileiros, com desigualdades marcantes por raca, genero e região.</p>
+
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 10: Ficha de conceitos -->
+        <div class="topico">
+            <div id="ficha-conceitos"></div>
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 11: Perguntas e Respostas -->
+        <div class="topico">
+
+            <h2 id="titulo-pr">Perguntas que você provavelmente tinha</h2>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>O que e "desalento" e por que ele importa para entender o desemprego real?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Desalento e quando uma pessoa parou de procurar emprego porque não acredita que vai encontrar. Pela metodologia do IBGE, ela cai na categoria de inativa (PEI), e não aparece na taxa oficial de desemprego. Isso significa que a taxa oficial pode subestimar o problema real do mercado de trabalho. Por isso, o IBGE divulga também a <strong>taxa de subutilização</strong>, que inclui desocupados, desalentados e subocupados (quem trabalha menos horas do que gostaria). Em 2024, enquanto o desemprego oficial era de 6,2%, a subutilização era de cerca de 15%. Nas provas do ENEM, questões sobre desemprego frequentemente exploram essa diferenca entre desemprego oficial e real.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>O Brasil esta desindustrializando?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Sim, e e um debate importante. A participação da industria no PIB brasileiro caiu de cerca de 35% nos anos 1980 para menos de 20% hoje. O problema e que nos países desenvolvidos isso ocorreu depois de terem atingido altos níveis de renda. O Brasil esta reduzindo a industria antes de ter completado seu desenvolvimento, voltando a ser exportador de commodities (materias-primas) como soja e minerios. Economistas chamam isso de "desindustrialização precoce" e alertam para os riscos: o setor industrial gera empregos formais de maior qualidade e impulsiona a inovação tecnologica mais do que a exportação de materias-primas brutas.</p>
+
+            <p class="w3-border w3-round-large w3-padding">
+                <span class="primeiraLetra">P:</span>
+                <strong>Trabalho informal e o mesmo que trabalho ilegal?</strong>
+            </p>
+            <p><span class="primeiraLetra">R:</span> Não, e uma confusão comum. Trabalho informal e todo trabalho que não tem registro formal na CLT: vendedor ambulante, faxineira sem carteira assinada, motorista de aplicativo. E legal, mas sem as garantias trabalhistas. Trabalho ilegal e uma categoria diferente: trabalho escravo, trabalho infantil abaixo da idade permitida ou qualquer atividade que viola a lei. Um ambulante vendendo artesanato na praca exerce atividade informal mas não ilegal. Um trabalhador mantido em condições degradantes sem poder sair e vitima de trabalho escravo, que e crime.</p>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 12: Producao -->
+        <div class="topico">
+
+            <p class="caixa">Hora de usar o que você aprendeu.</p>
+
+            <div class="w3-panel w3-pale-yellow">
+                <h3>Analisando o mercado de trabalho da sua região</h3>
+                <p><strong>Atividade individual ou em dupla</strong></p>
+
+                <p>Acesse o site do IBGE (ibge.gov.br) ou do PNAD Continua e procure os dados mais recentes do mercado de trabalho para o seu estado. Escreva um texto de 15 a 20 linhas respondendo:</p>
+                <p><strong>1.</strong> Qual e a taxa de desemprego do seu estado em comparação com a média nacional?</p>
+                <p><strong>2.</strong> Qual e o setor que mais emprega na região? Por que você acha que isso acontece?</p>
+                <p><strong>3.</strong> Qual e a taxa de informalidade? Ela e maior ou menor que a média nacional? Quais fatores explicam essa diferenca?</p>
+                <p class="w3-small w3-text-grey">Dica: o portal Sidra (sidra.ibge.gov.br) permite baixar tabelas da PNAD por estado. A pesquisa chama-se "PNAD Continua Trimestral".</p>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Próximo</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 13: Questoes para o caderno -->
+        <div class="topico">
+
+            <div class="w3-pale-yellow">
+                <h2>Questões para responder no caderno:</h2>
+
+                <h3>1. O que e PEA? Qual e a diferenca entre PEA, PEI e PIA?</h3>
+
+                <h3>2. Como o IBGE classifica uma pessoa que não trabalha e não procura emprego? Qual e o nome dado a quem desistiu de procurar?</h3>
+
+                <h3>3. Qual e a diferenca entre a taxa de desemprego oficial e a taxa de subutilização?</h3>
+
+                <h3>4. Cite e explique as atividades que pertencem a cada um dos tres setores classicos da economia.</h3>
+
+                <h3>5. O que e desindustrialização precoce e por que ela preocupa economistas que analisam o Brasil?</h3>
+
+                <h3>6. O que e uberização? Por que ela e considerada uma nova forma de informalidade?</h3>
+
+                <h3>7. Explique os tipos de desemprego: friccional, estrutural, ciclico e tecnologico. Dê um exemplo de cada.</h3>
+
+                <h3>8. Quais são as garantias trabalhistas que um trabalhador formal tem e o informal não tem?</h3>
+
+                <h3>9. Como a taxa de informalidade se distribui desigualmente no Brasil segundo raca, região e genero?</h3>
+
+                <h3>10. O que são jovens NEET e qual e o impacto social e econômico desse fenomeno para o Brasil?</h3>
+            </div>
+
+            <button class="btnShow" onclick="MostrarProximo(this); this.style.display='none'">Concluir Aula</button>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 14: Transicao final -->
+        <div class="topico">
+            <h3>Antes de finalizar, vamos fazer as questões!</h3>
+            <button class="btnShow" onclick="
+    if(this.disabled) return;
+    this.disabled = true;
+    ProcessarResposta(this, {
+        correto: true,
+        idFrase: 'respFinal',
+        idGlobo: 'globinhorespFinal',
+        classe: '',
+        mensagem: 'o tema {TITULO} e fantastico! Continue estudando!',
+        pontos: 40
+    });
+    MostrarProximo(this);
+">Próximo</button>
+            <p id="respFinal"></p>
+            <div class="area">
+                <p><img src="../../../fotoIndex/globinhoPe.png" id="globinhorespFinal" style="display:none"
+                        alt="globinhorespFinal" width="64" height="64"></p>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- BLOCO 15: Finalizar -->
+        <div class="topico">
+            <button class="btnShow" onclick="mostraCinza(); this.style='display:none'">Finalizar</button>
+        </div>
+
+
+        <!-- SECAO FINAL: PARA SABER MAIS + REFERENCIAS -->
+        <div id="final-da-aula" class="bibliografias w3-content w3-padding-64" style="max-width:700px">
+            <hr>
+            <h3 class="w3-center w3-text-green fontePixel"><strong>Para saber mais:</strong></h3>
+            <div class="w3-row-padding" id="links-gerados"></div>
+
+            <div class="w3-container w3-padding-64">
+                <h3 class="fontePixel w3-center w3-text-green">
+                    <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
+                </h3>
+                <div id="biblio-gerada"></div>
+            </div>
+
+            <br><br>
+            <div class="w3-padding-48">
+                <span id="numero"></span>
+                <span id="txtBarra">0%</span>
+                <progress value="0" max="100" id="progress"></progress>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
+
+</body>
+
+</html>

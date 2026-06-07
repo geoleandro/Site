@@ -6,6 +6,15 @@ let aulaID = ""; // Variável global
 let vidas = 3;
 const TOTAL_VIDAS = 3;
 const BONUS_VIDAS = 20; // globinhos extras por terminar sem perder vida
+// << NOVO: sistema de combo
+let combo = 0;
+// << NOVO: modo revisão
+let questoesErradas = [];
+const COMBO_NIVEIS = [
+    { minimo: 7, nome: '🌟 Lendário!',  bonus: 15 },
+    { minimo: 5, nome: '⚡ Imparável!', bonus: 10 },
+    { minimo: 3, nome: '🔥 Em Chamas!', bonus: 5  },
+];
 
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
@@ -275,10 +284,15 @@ function verificar() {
     if (isCorreto) {
         // ACERTO — mostra resposta correta normalmente
         DuvidUI.estilizarResultadoQuestao(resp, q.correta);
-        DuvidUI.executarGatilhoResultado(true, RECOMPENSA_QUESTOES);
+        combo++;
+        const nivelCombo = COMBO_NIVEIS.find(n => combo >= n.minimo);
+        const bonusCombo = nivelCombo ? nivelCombo.bonus : 0;
+        DuvidUI.executarGatilhoResultado(true, RECOMPENSA_QUESTOES + bonusCombo);
         nota++;
     } else {
         // ERRO — não revela a resposta, só some as alternativas
+        combo = 0;
+        questoesErradas.push(q);
         perderVida();
         DuvidUI.executarGatilhoResultado(false, 0);
 
@@ -335,9 +349,14 @@ function exibirPainelFeedback(isCorreto, questao) {
     feedback.className = `w3-bottom w3-container w3-padding-16 w3-animate-bottom ${isCorreto ? 'w3-green' : 'w3-amber'}`;
 
     if (isCorreto) {
-        // ACERTO — mensagem de sucesso + comentário completo do professor
+        // ACERTO — mensagem de sucesso + badge de combo + comentário do professor
+        const nivelCombo = COMBO_NIVEIS.find(n => combo >= n.minimo);
+        const badgeCombo = nivelCombo
+            ? `<div class="duvid-combo-badge">${nivelCombo.nome} <span class="duvid-combo-bonus">+${nivelCombo.bonus} globinhos</span></div>`
+            : '';
         msg.innerHTML = `<b><i class='fa fa-smile-o'></i> ${getFraseSucesso()}</b>`;
         txt.innerHTML = `
+            ${badgeCombo}
             <div class="comentario-box">
                 ${questao.comentario}
                 ${gerarImagemComentario(questao)}
@@ -428,16 +447,36 @@ function finalizar() {
 
     // 2. Modal
     if (typeof DuvidUI !== "undefined") {
-        DuvidUI.exibirModalSimulado(aprovado, acertos, total, ganhouBonus);
+        DuvidUI.exibirModalSimulado(aprovado, acertos, total, ganhouBonus, questoesErradas.length);
     }
 }
 
 // Função global chamada pelo botão do modal
+function iniciarRevisao() {
+    const erradas = [...questoesErradas]; // cópia para não mutar
+    questoesErradas = [];                 // limpa para a próxima rodada
+
+    // Reseta tudo como o tentarNovamente, mas com baralho menor
+    indiceAtual = 0;
+    nota = 0;
+    vidas = TOTAL_VIDAS;
+    combo = 0;
+    questoes = embaralharArray(erradas);
+
+    const modal = document.getElementById('id01');
+    if (modal) modal.style.display = 'none';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    renderizarQuestao();
+}
+
 function tentarNovamente() {
     // Reseta tudo para uma sessão nova limpa
     indiceAtual = 0;
     nota = 0;
-    vidas = TOTAL_VIDAS; // << vidas voltam para 3
+    vidas = TOTAL_VIDAS;
+    combo = 0;
+    questoesErradas = [];
 
     // Fecha o modal
     const modal = document.getElementById('id01');

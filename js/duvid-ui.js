@@ -383,7 +383,7 @@ const DuvidUI = {
         }
     },
 
-exibirModalSimulado: function (passou, acertos, total, ganhouBonus = false) {
+exibirModalSimulado: function (passou, acertos, total, ganhouBonus = false, totalErros = 0) {
     const modal = document.getElementById('id01');
     if (!modal) return;
 
@@ -427,10 +427,17 @@ exibirModalSimulado: function (passou, acertos, total, ganhouBonus = false) {
         if (typeof playSomFinal === "function") playSomFinal(false);
     }
 
-    // Botão de tentar novamente — só aparece se não passou
+    // Botão de refazer — só aparece se não passou
     const btnTentar = document.getElementById('btn-tentar-novamente');
-    if (btnTentar) {
-        btnTentar.style.display = passou ? 'none' : 'block';
+    if (btnTentar) btnTentar.style.display = passou ? 'none' : 'block';
+
+    // Botão de revisão — aparece sempre que tiver erros (passou ou não)
+    const btnRevisao = document.getElementById('btn-revisao-erros');
+    if (btnRevisao) {
+        btnRevisao.style.display = totalErros > 0 ? 'block' : 'none';
+        if (totalErros > 0) {
+            btnRevisao.innerHTML = `📋 REVISAR OS ${totalErros} ERRO${totalErros > 1 ? 'S' : ''}`;
+        }
     }
 
     modal.style.display = 'block';
