@@ -177,7 +177,7 @@ Arquivo de pendências técnicas. Cada item tem o que fazer, por que fazer e o q
 
 ---
 
-## Técnica 1 — Feedback por Alternativa *(prioridade alta)*
+## Técnica 1 Feedback por Alternativa *(✅ implementado em junho/2026)*
 
 **O que é:**
 Em vez de uma dica genérica no campo `ajuda`, cada alternativa errada tem uma explicação específica pro erro que o aluno cometeu.
@@ -204,6 +204,22 @@ O aluno sente que o sistema entendeu *onde* ele errou — não só *que* ele err
 
 > ⚠️ `feedbacks` usa índice começando em 0. Igual ao campo `correta`.
 > Só precisa das alternativas **erradas** — a certa já tem o `comentario`.
+
+**Convenção de escrita dos textos de feedback:**
+
+Nunca usar travessão (—) nem hífen como conector entre orações. Em vez disso, use a pontuação que melhor serve ao contexto:
+
+| Situação | Use |
+|----------|-----|
+| O trecho seguinte continua ou detalha a ideia | vírgula |
+| Há uma pausa mais forte ou mudança de foco | ponto final |
+| O trecho seguinte é explicação ou conclusão direta | dois pontos |
+| A informação é um aposto no meio da frase | parênteses |
+| Há relação de causa | "pois" |
+| Há contraste | "mas" |
+
+Exemplo errado: `"Essa definição descreve a superfície física — não inclui o humano."`
+Exemplo certo: `"Essa definição descreve a superfície física, mas não inclui o elemento humano."`
 
 ---
 
@@ -263,6 +279,86 @@ Se não tiver áudio → comportamento atual (só texto)
 
 > 💡 Grave áudios curtos (20–40 segundos). Qualidade de celular já basta.
 > Nome do arquivo: `[id-aula]-q[numero]-comentario.mp3` pra organizar.
+
+---
+
+## Limpeza de fonte_apoio nos JSONs de questões *(pendente)*
+
+**O problema:**
+Alguns arquivos JSON têm a fonte da questão (banca, autor, publicação) embutida dentro do campo `texto_apoio` ou `pergunta`, em vez de estar no campo próprio `fonte_apoio`.
+
+**O que precisa ser feito:**
+Percorrer todos os JSONs e, onde a fonte aparecer colada ao texto ou à pergunta (geralmente entre parênteses ou após travessão no final), extraí-la e colocá-la no campo `fonte_apoio`.
+
+**Exemplo do problema:**
+```json
+"texto_apoio": "A urbanização brasileira ocorreu de forma acelerada... (IBGE, 2020)"
+"fonte_apoio": null
+```
+
+**Como deve ficar:**
+```json
+"texto_apoio": "A urbanização brasileira ocorreu de forma acelerada..."
+"fonte_apoio": "IBGE, 2020"
+```
+
+**Quando fazer:** após terminar os feedbacks por alternativa em todos os arquivos.
+
+---
+
+## GIFs da Jéssica por Tema de Aula *(pendente — tarefa do bolsista)*
+
+**O que é:**
+A personagem Jéssica aparece animada nas questões com 4 estados emocionais. Cada bloco temático de aulas tem seu próprio pacote de GIFs, com a Jéssica segurando objetos do conteúdo (mapa, globo, dinossauro etc.).
+
+**Os 4 GIFs que cada tema precisa:**
+
+| Arquivo | Quando aparece | Tamanho na tela |
+|---|---|---|
+| `acerto.gif` | Resposta certa (sem combo) | Overlay centralizado, some após 2s |
+| `inteligente.gif` | Resposta certa com 3+ acertos seguidos | Overlay centralizado, some após 2s |
+| `erro.gif` | Resposta errada | Inline no painel amarelo (160px) |
+| `duvida.gif` | Aluno abre a dica do professor | Inline no painel de dica (100px) |
+
+**Onde salvar os arquivos:**
+```
+questoes/personagem/{nome-do-tema}/acerto.gif
+questoes/personagem/{nome-do-tema}/inteligente.gif
+questoes/personagem/{nome-do-tema}/erro.gif
+questoes/personagem/{nome-do-tema}/duvida.gif
+```
+
+**Temas planejados e aulas correspondentes:**
+
+| Pasta | Aulas | Tema visual sugerido |
+|---|---|---|
+| `default` | Todas sem tema próprio | Jéssica padrão (já existe) |
+| `cartografia` | 103, 104, 105, 106 | Jéssica com mapa, bússola, GPS |
+| `africa` | 325, 326, 327 | Jéssica com mapa da África, máscaras |
+| `oriente-medio` | 328, 329 | Jéssica com globo destacando a região |
+| `asia` | 331, 332, 333, 334, 335 | Jéssica com elementos asiáticos |
+| `brasil` | 201–215 (2º ano) | Jéssica com bandeira, mapa do Brasil |
+
+> Adicione novas pastas conforme o bolsista entregar. Não precisa mexer no código — só criar a pasta com os 4 arquivos e descomentar o mapeamento em `jsquestoes-padrao.js`.
+
+**Para ativar um tema após receber os GIFs:**
+
+Abra `js/jsquestoes-padrao.js`, localize o objeto `PERSONAGEM_TEMAS` e descomente as linhas do tema:
+
+```js
+const PERSONAGEM_TEMAS = {
+    103: 'cartografia', 104: 'cartografia', 105: 'cartografia', 106: 'cartografia',
+    // 325: 'africa', 326: 'africa', 327: 'africa',
+};
+```
+
+**Especificações técnicas para o bolsista:**
+- Formato: GIF animado com fundo transparente
+- Dimensões sugeridas: 300×400px (retrato)
+- Fundo: transparente (`.gif` com transparência ou fundo escuro que combine)
+- Duração da animação: 2–4 segundos em loop
+- O `acerto.gif` e `inteligente.gif` ficam no centro da tela — devem ser impactantes
+- O `erro.gif` e `duvida.gif` ficam menores, ao lado do texto — devem ser discretos
 
 ---
 

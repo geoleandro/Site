@@ -46,7 +46,7 @@
   },
   {
     "id": 3,
-    "instituicao": "",
+    "instituicao": "UFC",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -54,7 +54,7 @@
       "hidrografia",
       "ciclo hidrológico"
     ],
-    "pergunta": "(UFC) A água constitui um elemento fundamental para o desenvolvimento da vida no nosso planeta. Com relação a esse elemento, assinale a alternativa correta.",
+    "pergunta": "A água constitui um elemento fundamental para o desenvolvimento da vida no nosso planeta. Com relação a esse elemento, assinale a alternativa correta.",
     "alternativas": [
       "A água do planeta está sendo comprometida pela poluição doméstica, industrial e agrícola, além dos desequilíbrios ambientais resultantes dos desmatamentos e do uso indevido do solo.",
       "Desvios de água para projetos de irrigação, construção de hidrelétricas, consumo excessivo, desmatamento e poluição têm contribuído para a redução de conflitos entre usuários.",
@@ -182,7 +182,7 @@
   },
   {
     "id": 9,
-    "instituicao": "",
+    "instituicao": "UNIOESTE-PR",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -190,7 +190,7 @@
       "hidrografia",
       "ciclo hidrológico"
     ],
-    "pergunta": "(UNIOESTE-PR) Considerando que a água constitui um dos elementos físicos mais importantes na composição da paisagem terrestre, assinale a alternativa INCORRETA",
+    "pergunta": "Considerando que a água constitui um dos elementos físicos mais importantes na composição da paisagem terrestre, assinale a alternativa INCORRETA",
     "alternativas": [
       "entre as múltiplas funções da água, destaca-se o seu papel como agente modelador do relevo da superfície terrestre devido à sua capacidade de controlar tanto a formação como o comportamento mecânico dos solos e das rochas.",
       "A água precipitada que não é evaporada ou interceptada pela vegetação é redistribuída na superfície, escoando por ela ou infiltrando-se nos solos ou nas rochas.",
@@ -204,7 +204,7 @@
   },
   {
     "id": 10,
-    "instituicao": "",
+    "instituicao": "FESP",
     "ano": "2026",
     "dificuldade": "dificil",
     "tags": [
@@ -213,7 +213,7 @@
       "circulação oceânica"
     ],
     "imagem_apoio": "1ano/img/124/p24q10.png",
-    "pergunta": "(FESP) – Assinale a opção que menciona o fato geográfico esquematicamente representado na figura abaixo.",
+    "pergunta": "– Assinale a opção que menciona o fato geográfico esquematicamente representado na figura abaixo.",
     "alternativas": [
       "A formação de chuvas frontais.",
       "A invasão do mar sobre áreas continentais.",

@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "instituicao": "",
-    "ano": "2026",
+    "instituicao": "UDESC",
+    "ano": "2016",
     "dificuldade": "media",
     "tags": [
       "zonas polares",
       "clima polar",
       "glaciologia"
     ],
-    "pergunta": "(UDESC - 2016) - Analise as proposições em relação às zonas polares.\n\nI. Uma das razões do continente antártico ser mais frio, que as áreas polares do norte (Groenlândia, Alasca, etc.), é o fato de apresentar altitudes superiores às dessas áreas.\n\nII. Sobre o continente antártico existem permanentes camadas de gelo, que chegam a atingir até 2 km de espessura.\n\nIII. Na zona polar ártica existem algumas áreas habitadas por povos de tecnologia rudimentar como os esquimós e os lapões.\n\nIV. O inverno, nos dois polos, pode durar até seis meses sem sol (noite polar).\n\nV. Na Antártida os rios permanecem congelados a maior parte do ano e suas águas correm apenas em alguns meses.\n\nAssinale a alternativa correta:",
+    "pergunta": "- Analise as proposições em relação às zonas polares.\n\nI. Uma das razões do continente antártico ser mais frio, que as áreas polares do norte (Groenlândia, Alasca, etc.), é o fato de apresentar altitudes superiores às dessas áreas.\n\nII. Sobre o continente antártico existem permanentes camadas de gelo, que chegam a atingir até 2 km de espessura.\n\nIII. Na zona polar ártica existem algumas áreas habitadas por povos de tecnologia rudimentar como os esquimós e os lapões.\n\nIV. O inverno, nos dois polos, pode durar até seis meses sem sol (noite polar).\n\nV. Na Antártida os rios permanecem congelados a maior parte do ano e suas águas correm apenas em alguns meses.\n\nAssinale a alternativa correta:",
     "alternativas": [
       "Somente as afirmativas II e IV são verdadeiras.",
       "somente as afirmativas I, II e V são verdadeiras.",
@@ -180,7 +180,7 @@
   },
   {
     "id": 9,
-    "instituicao": "",
+    "instituicao": "UEPB",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -188,7 +188,7 @@
       "faixas climáticas",
       "clima polar"
     ],
-    "pergunta": "(UEPB) Associe as faixas climáticas do globo, apresentadas na coluna 1 às suas respectivas características, descritas na coluna 2.\n\nA sequência correta das assertivas é:",
+    "pergunta": "Associe as faixas climáticas do globo, apresentadas na coluna 1 às suas respectivas características, descritas na coluna 2.\n\nA sequência correta das assertivas é:",
     "alternativas": [
       "4 2 3 1.",
       "3 1 4 2.",
@@ -202,7 +202,7 @@
   },
   {
     "id": 10,
-    "instituicao": "",
+    "instituicao": "UFF",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -210,7 +210,7 @@
       "zonas polares",
       "biodiversidade"
     ],
-    "pergunta": "(UFF) A Antártida é um continente gelado de aproximadamente 14.000.000 km². Lá não existem cidades, indústrias ou campos agricultáveis, porém muitos países reivindicam parcelas do seu território.\n\nTal fato pode ser explicado porque:",
+    "pergunta": "A Antártida é um continente gelado de aproximadamente 14.000.000 km². Lá não existem cidades, indústrias ou campos agricultáveis, porém muitos países reivindicam parcelas do seu território.\n\nTal fato pode ser explicado porque:",
     "alternativas": [
       "A posição da Antártida no extremo do Hemisfério Norte é ideal para localização de bases militares para o controle do Oceano Atlântico.",
       "O buraco na camada de ozônio sobre o continente antártico é alvo de preocupações e exige rigoroso controle ambiental.",

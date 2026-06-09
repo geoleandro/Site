@@ -20,7 +20,13 @@
     ],
     "correta": 2,
     "comentario": "A escala é o elemento-chave da generalização cartográfica porque define o nível de detalhe que o mapa pode comportar. Ao reduzir a escala (ex: de 1:50.000 para 1:1.000.000), o cartógrafo é obrigado a suprimir informações — ruas secundárias, curvas de nível, pequenos rios — para evitar a ilegibilidade. Esse processo é chamado de generalização e é intrínseco à representação cartográfica.",
-    "ajuda": "A generalização cartográfica envolve selecionar e simplificar os elementos a serem representados, porque um mapa não pode mostrar tudo com o mesmo nível de detalhe. Pense em como a escala influencia o que é incluído ou omitido em um mapa."
+    "ajuda": "A generalização cartográfica envolve selecionar e simplificar os elementos a serem representados, porque um mapa não pode mostrar tudo com o mesmo nível de detalhe. Pense em como a escala influencia o que é incluído ou omitido em um mapa.",
+    "feedbacks": {
+      "0": "Orientação (pontos cardeais, bússola) é um elemento do mapa, mas não interfere na quantidade de informações que precisam ser omitidas. A generalização ocorre porque o espaço físico precisa caber no papel.",
+      "1": "A topografia do terreno não determina o que o cartógrafo precisa simplificar. O fator que obriga a omitir detalhes é a relação entre o tamanho real do território e o tamanho do mapa, ou seja, a escala.",
+      "3": "A simbolização é adaptada em função da escala, não o contrário. É porque a escala diminui que os símbolos precisam ser simplificados ou suprimidos, não o inverso.",
+      "4": "A altimetria representa variações de altitude e é um conteúdo do mapa, não um fator que causa a generalização. A escala é que define o quanto de informação o mapa consegue comportar."
+    }
   },
   {
     "id": 2,
@@ -43,7 +49,13 @@
     ],
     "correta": 1,
     "comentario": "Quando a escala de um mapa diminui (denominador maior), a área representada aumenta, mas os detalhes diminuem. Uma imagem com escala 1:10.000 mostra um bairro com grande riqueza de detalhes; já uma em 1:10.000.000 mostra um país inteiro, mas sem detalhes locais. Por isso, escala e nível de detalhe têm relação inversamente proporcional.",
-    "ajuda": "Observe com atenção o produto cartográfico apresentado e identifique seus elementos característicos — como curvas de nível, escala ou tipo de projeção. Cada tipo de mapa tem uma finalidade específica e características formais distintas."
+    "ajuda": "Observe com atenção o produto cartográfico apresentado e identifique seus elementos característicos — como curvas de nível, escala ou tipo de projeção. Cada tipo de mapa tem uma finalidade específica e características formais distintas.",
+    "feedbacks": {
+      "0": "Há uma contradição interna nessa opção: se a escala diminui (denominador cresce), os detalhes também diminuem, não aumentam. Escala menor e mais detalhes são conceitos opostos.",
+      "2": "Uma área maior representada indica escala menor (denominador maior), não maior. A imagem D cobre mais território justamente porque a escala diminuiu, não porque aumentou.",
+      "3": "A afirmação está invertida: se A tem mais detalhamento, sua escala é maior (denominador menor), não menor. Escala maior significa mais detalhe, não menos.",
+      "4": "A sequência de imagens mostra claramente um afastamento progressivo, com cada imagem abrangendo uma área maior. A escala muda significativamente do início ao fim da sequência."
+    }
   },
   {
     "id": 3,
@@ -65,7 +77,12 @@
     ],
     "correta": 2,
     "comentario": "Nas cartas topográficas, as curvas de nível (linhas que unem pontos de mesma altitude) permitem identificar a direção do fluxo dos rios e a declividade das margens. Curvas mais próximas entre si indicam maior inclinação do terreno. A margem com curvas mais adensadas é a de maior declividade — informação crucial para gestão de risco de erosão e planejamento ambiental.",
-    "ajuda": "Em uma carta topográfica com escala 1:50.000, cada centímetro no mapa representa 50.000 centímetros (500 metros) no terreno real. Use esse raciocínio para calcular as distâncias reais entre os pontos indicados na carta."
+    "ajuda": "Em uma carta topográfica com escala 1:50.000, cada centímetro no mapa representa 50.000 centímetros (500 metros) no terreno real. Use esse raciocínio para calcular as distâncias reais entre os pontos indicados na carta.",
+    "feedbacks": {
+      "0": "O comprimento está errado: 3,5 cm × 50.000 = 175.000 cm = 1.750 m, não 17.500 m. Houve um erro de uma casa decimal na conversão de centímetros para metros.",
+      "1": "A direção do rio e o comprimento estão incorretos. Além disso, 1.750 km confunde metros com quilômetros: o resultado correto é 1.750 m, não km.",
+      "3": "A direção sudoeste está incorreta de acordo com a carta. Quanto ao comprimento: 3,5 cm × 50.000 = 175.000 cm = 1.750 m, não 175 m. Houve erro de uma casa decimal."
+    }
   },
   {
     "id": 4,
@@ -86,7 +103,12 @@
     ],
     "correta": 0,
     "comentario": "Para calcular a distância real a partir da escala, multiplica-se a medida no mapa pelo denominador da escala. Se a distância no mapa é de 9 cm em escala 1:1, a distância real é 9 cm. Em escalas numéricas, a fórmula é: distância real = medida no mapa × denominador. Esse cálculo é essencial para orientação, planejamento urbano e elaboração de projetos de engenharia.",
-    "ajuda": "A escala expressa a razão entre a medida no mapa e a medida real. Uma escala maior (como 1:10.000) mostra mais detalhes do que uma escala menor (1:1.000.000). Lembre-se: quanto menor o denominador, maior o detalhamento da representação."
+    "ajuda": "A escala expressa a razão entre a medida no mapa e a medida real. Uma escala maior (como 1:10.000) mostra mais detalhes do que uma escala menor (1:1.000.000). Lembre-se: quanto menor o denominador, maior o detalhamento da representação.",
+    "feedbacks": {
+      "1": "90 cm resulta de dividir por 5.000 em vez de 50.000. Confira: 4,5 km = 450.000 cm. Dividindo por 50.000 (o denominador da escala): 450.000 ÷ 50.000 = 9 cm.",
+      "2": "225 mm (22,5 cm) aparece quando se multiplica ao contrário, usando km diretamente sem converter: 4,5 × 50 = 225. A fórmula correta é distância real ÷ denominador, com todas as medidas em centímetros.",
+      "3": "11 mm seria resultado de arredondamento impreciso ou erro de conversão. O cálculo correto: 4,5 km = 450.000 cm; 450.000 ÷ 50.000 = 9 cm = 90 mm."
+    }
   },
   {
     "id": 5,
@@ -109,7 +131,13 @@
     ],
     "correta": 3,
     "comentario": "A escala 1:700.000 significa que 1 cm no mapa corresponde a 700.000 cm (7 km) no terreno. Provas de atletismo de longa distância percorrem centenas de quilômetros, exigindo mapas de escala pequena para representar o trajeto completo. Quanto maior o denominador, menor é a escala e maior a área coberta — porém com menos detalhes.",
-    "ajuda": "Para resolver questões de escala com cálculo, use a fórmula: distância real = distância no mapa × denominador da escala. Certifique-se de converter as unidades corretamente (centímetros para metros ou quilômetros)."
+    "ajuda": "Para resolver questões de escala com cálculo, use a fórmula: distância real = distância no mapa × denominador da escala. Certifique-se de converter as unidades corretamente (centímetros para metros ou quilômetros).",
+    "feedbacks": {
+      "0": "Com escala 1:700, 1 cm no mapa representaria 7 m no terreno. Para 420 km, seriam necessários 6.000.000 cm de papel, o que é inviável. Essa escala serve para plantas de ambientes internos.",
+      "1": "Com escala 1:7.000, cada centímetro representa 70 m. Para 420 km, o mapa teria 600.000 cm (6 km de papel). Ainda inviável para uma folha comum.",
+      "2": "Com escala 1:70.000, cada centímetro representa 700 m. O mapa precisaria de 60.000 cm (600 m de papel). Usada em mapas municipais detalhados, não para percursos de centenas de km.",
+      "4": "Com escala 1:7.000.000, cada centímetro representa 70 km. O percurso de 420 km caberia em apenas 6 cm, perdendo praticamente todos os detalhes do trajeto."
+    }
   },
   {
     "id": 6,
@@ -132,7 +160,13 @@
     ],
     "correta": 3,
     "comentario": "A análise espacial em múltiplas escalas é fundamental na Geografia porque um mesmo fenômeno (como desmatamento ou urbanização) se manifesta de forma diferente ao nível local, regional e global. Trabalhar com diferentes escalas espaciais permite compreender tanto as causas estruturais quanto os impactos locais de um processo geográfico.",
-    "ajuda": "A técnica de análise espacial representada na figura utiliza sobreposição de camadas de informação (layers). Pense em qual tecnologia cartográfica moderna permite combinar diferentes tipos de dados geoespaciais em um único sistema de análise."
+    "ajuda": "A técnica de análise espacial representada na figura utiliza sobreposição de camadas de informação (layers). Pense em qual tecnologia cartográfica moderna permite combinar diferentes tipos de dados geoespaciais em um único sistema de análise.",
+    "feedbacks": {
+      "0": "Topografia se refere às variações de relevo de um único terreno. A figura não mostra variações de altitude, mas sim a sobreposição de representações do mesmo espaço em níveis de detalhe diferentes.",
+      "1": "Estratigrafia é um conceito geológico: sequência de camadas de rochas no subsolo. A figura trata de representações cartográficas em diferentes escalas, não de estratos geológicos.",
+      "2": "Quilometragem percorrida é uma medida de distância, não uma técnica de análise espacial. A figura representa a mesma área vista em diferentes graus de aproximação.",
+      "4": "Perfil longitudinal é uma representação do relevo ao longo de uma linha, como a seção transversal de um vale ou rio. A figura mostra diferentes escalas de análise do mesmo espaço geográfico."
+    }
   },
   {
     "id": 7,
@@ -155,7 +189,13 @@
     ],
     "correta": 3,
     "comentario": "A fronteira Canadá–EUA tem cerca de 8.891 km. Para representá-la em um mapa com 72 cm, a escala seria de aproximadamente 1:12.350.000. Mas se a questão pede 1:60.000.000, esse seria o denominador que reduz a distância real para a medida no mapa. Escalas com denominadores na casa dos milhões são usadas em mapas-múndi e mapas continentais.",
-    "ajuda": "Para calcular a extensão real a partir de um mapa, use a escala fornecida. Meça a distância no mapa e multiplique pelo denominador da escala. Cuidado com as unidades: se a escala está em centímetros, converta para quilômetros no final."
+    "ajuda": "Para calcular a extensão real a partir de um mapa, use a escala fornecida. Meça a distância no mapa e multiplique pelo denominador da escala. Cuidado com as unidades: se a escala está em centímetros, converta para quilômetros no final.",
+    "feedbacks": {
+      "0": "Com escala 1:60.000, cada centímetro representa 600 m. Para representar 9.000 km (900.000.000 cm), seriam necessários 1.500.000 cm de papel. Essa escala é usada para mapas de bairros.",
+      "1": "Com escala 1:250.000, cada centímetro representa 2,5 km. Para 9.000 km, o mapa precisaria de 3.600 cm (36 m de papel). Usada em cartas militares de detalhe regional.",
+      "2": "Com escala 1:15.000.000, a fronteira de 9.000 km resultaria em 60 cm no mapa. É uma opção plausível numericamente, mas não corresponde à medida indicada na figura da questão.",
+      "4": "Com escala 1:150.000.000, os 9.000 km resultariam em apenas 6 cm no mapa. Escalas tão reduzidas são usadas em mapas-múndi, onde o Brasil inteiro cabe em poucos centímetros."
+    }
   },
   {
     "id": 8,
@@ -177,11 +217,17 @@
     ],
     "correta": 3,
     "comentario": "A escala gráfica (barra com divisões) é vantajosa em relação à escala numérica porque mantém sua validade mesmo quando o mapa é ampliado ou reduzido em fotocópias ou impressões. A escala numérica, por outro lado, perde sua precisão nesses casos. Por isso, mapas técnicos costumam apresentar os dois tipos simultaneamente.",
-    "ajuda": "A escala numérica (como 1:100.000) é uma razão entre a medida do mapa e a medida real. A escala gráfica é um segmento desenhado no mapa que representa uma distância real. Pense em como converter entre essas duas formas de expressão."
+    "ajuda": "A escala numérica (como 1:100.000) é uma razão entre a medida do mapa e a medida real. A escala gráfica é um segmento desenhado no mapa que representa uma distância real. Pense em como converter entre essas duas formas de expressão.",
+    "feedbacks": {
+      "0": "0,6 km resultaria de dividir a medida por um fator 100 vezes maior que o correto. Releia a escala gráfica da questão e refaça a proporção.",
+      "1": "6 km está 10 vezes abaixo do correto. Provavelmente foi usada a medida certa, mas o fator de conversão da escala foi aplicado com uma casa a menos.",
+      "2": "6,6 km não corresponde a nenhuma conta limpa com a escala da questão. Verifique se a leitura da escala gráfica foi feita no intervalo correto.",
+      "4": "600 km está 10 vezes acima do correto. O erro costuma ser acrescentar um zero ao converter a unidade (metros para quilômetros, por exemplo)."
+    }
   },
   {
     "id": 9,
-    "instituicao": "",
+    "instituicao": "UFRN",
     "ano": "2026",
     "dificuldade": "facil",
     "tags": [
@@ -189,7 +235,7 @@
       "escala numérica",
       "escala gráfica"
     ],
-    "pergunta": "(UFRN) A escala é um dos recursos utilizados na cartografia para representar qualquer realidade espacial em um mapa.\n\nAssim, é correto afirmar que:",
+    "pergunta": "A escala é um dos recursos utilizados na cartografia para representar qualquer realidade espacial em um mapa.\n\nAssim, é correto afirmar que:",
     "alternativas": [
       "a correspondência entre as distâncias na superfície e no mapa, na escala numérica, é indicada por meio de uma reta graduada, tendo como módulo básico o centímetro.",
       "a escala estabelece a correspondência entre as distâncias representadas e as distâncias reais da superfície cartografada.",
@@ -198,11 +244,16 @@
     ],
     "correta": 1,
     "comentario": "A escala cartográfica é sempre uma razão entre a medida no mapa e a medida real no terreno. Ela não representa a quantidade de informação presente no mapa, nem está ligada ao ponto cardeal ou à projeção utilizada. Sua função é exclusivamente de correspondência dimensional entre o representado e a realidade.",
-    "ajuda": "Lembre-se que escala é uma relação proporcional. Quanto maior o número no denominador (ex.: 1:1.000.000), menor é o detalhe mostrado no mapa — é uma escala pequena. Quanto menor o denominador (ex.: 1:1.000), maior o detalhe — é uma escala grande."
+    "ajuda": "Lembre-se que escala é uma relação proporcional. Quanto maior o número no denominador (ex.: 1:1.000.000), menor é o detalhe mostrado no mapa — é uma escala pequena. Quanto menor o denominador (ex.: 1:1.000), maior o detalhe — é uma escala grande.",
+    "feedbacks": {
+      "0": "Essa descrição corresponde à escala gráfica (uma reta graduada), não à escala em geral. A escala numérica, por sua vez, é expressa como uma razão (ex: 1:200.000), sem nenhuma reta.",
+      "2": "É o inverso: mapa de pequena escala (denominador grande, ex: 1:10.000.000) abrange área grande com pouco detalhe. Mapa de grande escala (1:1.000) abrange área pequena com muito detalhe.",
+      "3": "Para representar uma área grande, usa-se escala menor (denominador maior), não maior. Uma escala maior exigiria um mapa físico enorme para cobrir o mesmo território."
+    }
   },
   {
     "id": 10,
-    "instituicao": "",
+    "instituicao": "IFG",
     "ano": "2026",
     "dificuldade": "facil",
     "tags": [
@@ -210,7 +261,7 @@
       "detalhamento cartográfico",
       "mapas do Brasil"
     ],
-    "pergunta": "(IFG) Considere dois mapas do Brasil, sendo que o mapa “A” tem escala de 1/10.000.000 e o mapa “B”, escala de 1/50.000.000. Assinale a alternativa correta.",
+    "pergunta": "Considere dois mapas do Brasil, sendo que o mapa “A” tem escala de 1/10.000.000 e o mapa “B”, escala de 1/50.000.000. Assinale a alternativa correta.",
     "alternativas": [
       "Ambos os mapas apresentam a mesma riqueza de detalhes.",
       "O mapa “A” apresenta menor riqueza de detalhes que o mapa “B”.",
@@ -220,6 +271,12 @@
     ],
     "correta": 2,
     "comentario": "Mapas em escala 1:10.000.000 têm denominador menor que 1:50.000.000, o que significa que representam uma área menor com mais detalhes — logo, o mapa A possui maior riqueza de detalhes. Confundir 'escala maior' com 'abrange mais área' é um erro comum: escala maior significa mais detalhe, menos área coberta.",
-    "ajuda": "Compare os dois mapas pensando nos detalhes que cada um pode mostrar. O mapa com escala 1/10.000 tem denominador menor e representa uma área menor com mais detalhe. O de escala 1/10.000.000 abrange uma área maior, porém com menor nível de detalhamento."
+    "ajuda": "Compare os dois mapas pensando nos detalhes que cada um pode mostrar. O mapa com escala 1/10.000 tem denominador menor e representa uma área menor com mais detalhe. O de escala 1/10.000.000 abrange uma área maior, porém com menor nível de detalhamento.",
+    "feedbacks": {
+      "0": "As escalas são diferentes: 1:10.000.000 e 1:50.000.000 têm denominadores distintos, o que determina níveis de detalhe diferentes. Mapas com denominadores iguais é que teriam a mesma riqueza de detalhes.",
+      "1": "É o inverso: o mapa A tem denominador menor (10 milhões contra 50 milhões), portanto escala maior. Escala maior significa mais detalhe, não menos.",
+      "3": "O mapa B cobre 5 vezes mais área que A (50 ÷ 10 = 5), mas isso não o torna '5 vezes maior'. Na prática, se ambos tiverem o mesmo tamanho físico de papel, é o mapa A que mostrará mais detalhe de uma área menor.",
+      "4": "O tamanho físico do papel e a escala são coisas diferentes. Dois mapas podem ter o mesmo tamanho de folha e escalas completamente distintas, mostrando áreas e detalhes diferentes."
+    }
   }
 ]

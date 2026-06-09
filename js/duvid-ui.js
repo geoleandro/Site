@@ -367,9 +367,9 @@ const DuvidUI = {
         });
     },
 
-    executarGatilhoResultado: function (correto, pontos = 0) {
+    executarGatilhoResultado: function (correto, pontos = 0, opcoes = {}) {
         if (correto) {
-            playSom('acerto');
+            if (!opcoes.semSomAcerto) playSom('acerto');
             this.dispararComemoracao();   // ← usa o método do objeto, não a global
             this.feedbackVisualAcerto();  // ← só giro + pulo, sem confete
             this.mostrarXPFlutuante(pontos, true);  // << NOVO
@@ -673,4 +673,4 @@ function avisoSelecaoPendente(btn) {
 }
 function executarGatilhoResultado(c, p) {
     DuvidUI.executarGatilhoResultado(c, p);
-}
+}

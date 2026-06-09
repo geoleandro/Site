@@ -211,3 +211,66 @@
 .termo.politica  { border-bottom-color: #3f51b5; }
 .termo.economia  { border-bottom-color: #e53935; }
 .termo.tecnologia{ border-bottom-color: #fb8c00; }
+
+/* ════════════════════════════════════════
+   DARK MODE
+════════════════════════════════════════ */
+body.dark-mode .termo {
+  background: #3a3000;
+  color: #ffd54f;
+  border-bottom-color: #ffa000;
+}
+body.dark-mode .termo:hover { background: #4a4000; }
+
+body.dark-mode .termo.coletado {
+  background: #1b3a1f;
+  border-bottom-color: #66bb6a;
+  color: #a5d6a7;
+}
+body.dark-mode .termo.coletado::after { content: " ✅"; }
+
+/* Tooltip balão */
+body.dark-mode .termo-tooltip {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  border-left-color: #64b5f6;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+body.dark-mode .termo-tooltip::before {
+  border-bottom-color: #64b5f6;
+}
+
+/* Barra de progresso */
+body.dark-mode #barra-progresso-wrap {
+  background: #1a2a1a;
+}
+body.dark-mode #barra-outer {
+  background: #2d4a2d;
+}
+body.dark-mode #barra-progresso-wrap .label,
+body.dark-mode #barra-texto {
+  color: #81c784;
+}
+
+/* Ficha de conceitos */
+body.dark-mode #ficha-conceitos {
+  background: linear-gradient(135deg, #1a2a1a, #152215);
+  border-color: #2e7d32;
+}
+body.dark-mode #ficha-conceitos h3 { color: #81c784; }
+
+/* Lista do glossário */
+body.dark-mode #lista-glossario li {
+  background: #252525;
+  border-color: #2d4a2d;
+  border-left-color: #4caf50;
+  color: #e0e0e0;
+}
+body.dark-mode #lista-glossario li b { color: #81c784; }
+
+/* Mensagem de conclusão */
+body.dark-mode #mensagem-final {
+  background: #332b00;
+  border-color: #ffa000;
+  color: #ffe082;
+}

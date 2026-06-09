@@ -20,7 +20,13 @@
       "coordenadas geográficas",
       "fenômenos astronômicos"
     ],
-    "dificuldade": "facil"
+    "dificuldade": "facil",
+    "feedbacks": {
+      "0": "Continentalidade diz respeito à distância do mar e seus efeitos na amplitude térmica, não tem relação com a duração do dia ou a incidência de luz solar.",
+      "1": "Maritimidade é a influência do mar no clima, tornando as temperaturas mais amenas. Não tem nenhuma relação com períodos de escuridão ou duração do dia.",
+      "2": "Longitude define o fuso horário (posição leste-oeste), não o ângulo de incidência solar. Utqiagvik fica no extremo norte do planeta, não em um fuso especial.",
+      "4": "Altitude influencia a temperatura, não o comprimento do dia. A escuridão prolongada acontece por causa do ângulo do eixo terrestre em relação ao Sol."
+    }
   },
   {
     "id": 2,
@@ -42,7 +48,12 @@
       "latitude",
       "longitude"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "Latitudes 24°-25°S são válidas para o sul de SP, mas a questão pede o ponto indicado na figura. Esse ponto está numa posição que corresponde às longitudes, não às latitudes desta opção.",
+      "1": "Latitudes 21°-22°S correspondem ao norte do estado. Verifique o ponto na figura: sua posição vertical não coincide com essa faixa.",
+      "3": "Longitudes 50°-52°O ficam na porção oeste do estado. O ponto indicado na figura está numa faixa mais central, correspondendo às longitudes 46°-48°O."
+    }
   },
   {
     "id": 3,
@@ -65,7 +76,13 @@
       "paralelos",
       "meridianos"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "Essa sequência marca todas as afirmativas como verdadeiras, mas a afirmativa III está incorreta. Releia com atenção a III antes de responder.",
+      "2": "Essa sequência marca as três primeiras como falsas, mas as afirmativas I e II descrevem corretamente o sistema de coordenadas geográficas.",
+      "3": "Essa sequência erra na afirmativa II, marcando-a como falsa. A II descreve corretamente a localização por coordenadas.",
+      "4": "Essa sequência erra na afirmativa IV, marcando-a como falsa. Releia a IV com atenção: ela está correta."
+    }
   },
   {
     "id": 4,
@@ -88,7 +105,13 @@
       "pontos cardeais",
       "rosa dos ventos"
     ],
-    "dificuldade": "facil"
+    "dificuldade": "facil",
+    "feedbacks": {
+      "1": "Às 18h o Sol está se pondo no oeste. Uma bola chutada vinda do leste vai em direção ao oeste, não o contrário. Revise a relação entre o horário, a posição do Sol e os pontos cardeais.",
+      "2": "Leste está correto para a saída da bola, mas o Sol às 18h fica no oeste, projetando sombra em direção ao leste e noroeste, não ao sul.",
+      "3": "Às 18h o Sol está no oeste. A bola chutada do lado leste vai para o oeste. Rever a origem e o destino inverte a lógica.",
+      "4": "Às 18h o Sol está baixo no oeste. Pense de onde vem a bola e em qual direção a sombra se projeta com o Sol nessa posição."
+    }
   },
   {
     "id": 5,
@@ -111,7 +134,13 @@
       "latitude",
       "longitude"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "Essa combinação troca as posições dos pontos III e V. Confirme as coordenadas de cada ponto no globo antes de associar.",
+      "1": "Essa sequência troca os pontos II e III. Verifique cada coordenada par a par em vez de associar todos de uma vez.",
+      "2": "Essa sequência erra nos pontos I e V. Comece pelo ponto mais fácil de identificar no globo e use-o como referência para os demais.",
+      "4": "Essa sequência troca os pontos IV e V. Revise as coordenadas dos dois e compare com as opções da coluna da direita."
+    }
   },
   {
     "id": 6,
@@ -134,7 +163,13 @@
       "pontos cardeais",
       "hemisfério"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "1": "No hemisfério sul, o Sol transita pelo norte. Janelas voltadas para o norte recebem mais Sol, não as voltadas para o sul.",
+      "2": "Leste e oeste recebem Sol apenas pela manhã cedo e no fim da tarde. Para máxima insolação no hemisfério sul, a orientação norte é a mais favorável.",
+      "3": "Mesma lógica da opção anterior: oeste tem insolação parcial no fim do dia. A orientação que maximiza a entrada de Sol no hemisfério sul é o norte.",
+      "4": "Não há dois pontos distintos se ambos forem oeste. Além disso, janelas voltadas para o oeste recebem sol apenas no fim do dia."
+    }
   },
   {
     "id": 7,
@@ -156,7 +191,12 @@
       "projeções cartográficas",
       "orientação"
     ],
-    "dificuldade": "dificil"
+    "dificuldade": "dificil",
+    "feedbacks": {
+      "1": "De SP ao Cairo o trajeto vai de oeste para leste, não o oposto. Confirme a posição relativa dos dois pontos no planisfério.",
+      "2": "O trajeto cria uma inconsistência: começar indo leste e voltar pelo leste não permite passar pelo norte. Reveja a sequência de direções.",
+      "3": "Voltar pelo mesmo lado (oeste-noroeste-oeste) é geograficamente inviável nesse percurso. O trajeto de SP ao Cairo atravessa o Atlântico e o Mediterrâneo."
+    }
   },
   {
     "id": 8,
@@ -179,7 +219,13 @@
       "pontos cardeais",
       "rosa dos ventos"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "1": "Se o Sol nasce à direita dos meninos, eles olham para o norte. Quem olha ao norte tem o sul às costas, o leste à direita e o oeste à esquerda, não leste à frente.",
+      "2": "Quem olha ao norte tem o norte à frente, não poderia tê-lo também à esquerda ou à direita. A sequência está internamente contraditória.",
+      "3": "Igual à opção anterior: norte não pode estar ao mesmo tempo à frente e em outra posição. Parta do fato de que o Sol nasce à direita para definir onde cada ponto cardinal está.",
+      "4": "Sul fica atrás de quem olha ao norte. Se o Sol nasce à direita dos meninos, o sul está nas costas deles, não à frente."
+    }
   },
   {
     "id": 9,
@@ -202,7 +248,13 @@
       "escala cartográfica",
       "pontos cardeais"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "O terreno I não corresponde às dimensões calculadas pela escala. Refaça o cálculo: multiplique a medida no mapa pelo denominador da escala.",
+      "1": "Terreno II não bate com as dimensões reais. Verifique se aplicou a escala corretamente para obter as medidas em metros.",
+      "2": "Terreno III não coincide com as dimensões calculadas. Lembre que escala 1:X significa que 1 cm no mapa equivale a X cm na realidade.",
+      "4": "Terreno V não corresponde às dimensões corretas. Reveja o cálculo com atenção às unidades (centímetros no mapa e metros na realidade)."
+    }
   },
   {
     "id": 10,
@@ -225,6 +277,12 @@
       "pontos cardeais",
       "cartografia urbana"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "Via 1 está correta como perimetral sul, mas via 2 está no eixo leste-oeste. Radial leste indicaria uma via que parte do centro em direção ao leste, não que cruza no sentido leste-oeste.",
+      "2": "Vias perimetrais circundam a cidade. Se a via 1 passa pelo sul, ela é perimetral sul, não norte.",
+      "3": "A via 1 circunda a parte sul da cidade, sendo perimetral. Radial sul indicaria uma via que sai do centro em direção ao sul, não que circunda.",
+      "4": "Tanto a classificação quanto a direção estão trocadas. Via 1 é perimetral (circula pela borda sul), não radial."
+    }
   }
 ]

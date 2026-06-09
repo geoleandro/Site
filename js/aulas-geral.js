@@ -16,9 +16,10 @@ async function carregarAulas(ano) {
             return `
             <div class="column" style="margin-bottom: 25px;">
                 <div class="wrapper" style="position: relative;">
-                    <img class="w3-round-large w3-card w3-hover-opacity" 
-                         src="${aula.imagem}" 
-                         alt="${aula.titulo}" 
+                    <img class="w3-round-large w3-card w3-hover-opacity"
+                         src="${aula.imagem}"
+                         alt="${aula.titulo}"
+                         loading="lazy"
                          onclick="document.getElementById('div${aula.id}').style.display='block'"
                          style="width:100%; cursor:pointer; transition: 0.5s; ${status.estilo}">
                     ${status.icone}

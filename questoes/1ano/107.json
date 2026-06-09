@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "instituicao": "",
+    "instituicao": "UNIFEI-SP",
     "ano": "2026",
     "dificuldade": "facil",
     "tags": [
@@ -9,7 +9,7 @@
       "GPS",
       "sensoriamento remoto"
     ],
-    "pergunta": "(UNIFEI-SP) O monitoramento por satélite e o GPS (Sistema de Posicionamento Global) são inovações tecnológicas atualmente usadas por órgãos governamentais, agricultura, empresas, pessoas etc. Sobre essa questão, escreva verdadeiro (V) ou falso (F) para os itens abaixo e assinale a alternativa correta:\n\nI. O GPS é um Sistema de Posicionamento Global constituído por dezenas de satélites que emitem sinais de rádio captados por aparelhos especiais em qualquer ponto da superfície da Terra.\n\nII. O GPS indica ao usuário sua localização em termos de latitude, longitude e altitude.\n\nIII. Na agricultura, essas tecnologias podem ser utilizadas a fim de que se obtenha maior produtividade com custos menores.\n\nIV. Essas inovações tecnológicas permitem, por exemplo, detectar e acompanhar a direção e o deslocamento de queimadas e avaliar prejuízos em áreas atingidas por secas ou inundações.",
+    "pergunta": "O monitoramento por satélite e o GPS (Sistema de Posicionamento Global) são inovações tecnológicas atualmente usadas por órgãos governamentais, agricultura, empresas, pessoas etc. Sobre essa questão, escreva verdadeiro (V) ou falso (F) para os itens abaixo e assinale a alternativa correta:\n\nI. O GPS é um Sistema de Posicionamento Global constituído por dezenas de satélites que emitem sinais de rádio captados por aparelhos especiais em qualquer ponto da superfície da Terra.\n\nII. O GPS indica ao usuário sua localização em termos de latitude, longitude e altitude.\n\nIII. Na agricultura, essas tecnologias podem ser utilizadas a fim de que se obtenha maior produtividade com custos menores.\n\nIV. Essas inovações tecnológicas permitem, por exemplo, detectar e acompanhar a direção e o deslocamento de queimadas e avaliar prejuízos em áreas atingidas por secas ou inundações.",
     "alternativas": [
       "VFVV.",
       "VVVF.",
@@ -156,7 +156,7 @@
   },
   {
     "id": 8,
-    "instituicao": "",
+    "instituicao": "ENEM",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -165,7 +165,7 @@
       "cartografia"
     ],
     "texto_apoio": "A origem do sensoriamento remoto vincula-se ao surgimento da fotografia aérea. Assim, a história do sensoriamento remoto pode ser dividida em dois períodos: um, de 1860 a 1960, baseado no uso de fotografias aéreas, e outro, de 1960 aos dias de hoje, caracterizado por uma variedade de tipos de fotografias e imagens. O sensoriamento remoto é fruto de um esforço multidisciplinar que integra os avanços da Matemática, Física, Química, Biologia e das Ciências da Terra e da Computação. A evolução das técnicas de sensoriamento remoto e a sua aplicação envolvem um número cada vez maior de pessoas de diferentes áreas do conhecimento.",
-    "pergunta": "(ENEM)\n\nTendo-se em vista a importância do sensoriamento remoto para as mais diversas atividades humanas, considera-se como principal objetivo dessa atividade",
+    "pergunta": "Tendo-se em vista a importância do sensoriamento remoto para as mais diversas atividades humanas, considera-se como principal objetivo dessa atividade",
     "alternativas": [
       "interpretar, visualizar e apontar os principais fluxos monetários internacionais.",
       "monitorar as principais atividades correlacionadas à tectônica global.",

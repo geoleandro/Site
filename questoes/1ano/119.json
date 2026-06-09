@@ -140,7 +140,7 @@
   },
   {
     "id": 7,
-    "instituicao": "",
+    "instituicao": "UFPI-PI",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -149,7 +149,7 @@
       "dinâmica atmosférica"
     ],
     "imagem_apoio": "1ano/img/119/p19q7.png",
-    "pergunta": "(UFPI-PI) Na figura abaixo, indicados pelos algarismos romanos I, II e III, estão representados os três tipos de precipitações pluviais.\n\nAponte a alternativa que expressa corretamente a denominação das chuvas.",
+    "pergunta": "Na figura abaixo, indicados pelos algarismos romanos I, II e III, estão representados os três tipos de precipitações pluviais.\n\nAponte a alternativa que expressa corretamente a denominação das chuvas.",
     "alternativas": [
       "I – orográfica II – frontaIII – convectiva.",
       "I – orográfica II – convectiva III – frontal.",
@@ -163,7 +163,7 @@
   },
   {
     "id": 8,
-    "instituicao": "",
+    "instituicao": "MACKENZIE-SP",
     "ano": "2026",
     "dificuldade": "dificil",
     "tags": [
@@ -172,7 +172,7 @@
       "frentes"
     ],
     "imagem_apoio": "1ano/img/119/p19q8.png",
-    "pergunta": "(MACKENZIE-SP) Observe a figura e responda sobre os deslocamentos das massas de ar:",
+    "pergunta": "Observe a figura e responda sobre os deslocamentos das massas de ar:",
     "alternativas": [
       "são sempre das áreas de alta pressão para as áreas de baixa pressão.",
       "independem das condições de pressão atmosférica.",
@@ -186,15 +186,15 @@
   },
   {
     "id": 9,
-    "instituicao": "",
-    "ano": "2026",
+    "instituicao": "MUNDO EDUCAÇÃO",
+    "ano": "2022",
     "dificuldade": "facil",
     "tags": [
       "solos",
       "formação do solo",
       "pedologia"
     ],
-    "pergunta": "(MUNDO EDUCAÇÃO 2022) Os principais elementos que atuam na formação do solo são:",
+    "pergunta": "Os principais elementos que atuam na formação do solo são:",
     "alternativas": [
       "Apenas elementos da natureza (clima, relevo, água e seres vivos), pois as atividades humanas não exercem nenhuma influência na formação do solo.",
       "O tectonismo é o elemento mais importante para a formação dos solos, pois a movimentação das placas tectônicas gera a decomposição da rocha em grande escala.",
@@ -208,7 +208,7 @@
   },
   {
     "id": 10,
-    "instituicao": "",
+    "instituicao": "FUVEST",
     "ano": "2026",
     "dificuldade": "dificil",
     "tags": [
@@ -217,7 +217,7 @@
       "zona de convergência"
     ],
     "imagem_apoio": "1ano/img/119/p19q10.png",
-    "pergunta": "(FUVEST) Refletindo sobre o desenho a seguir, em uma área Tropical, podemos inferir que:",
+    "pergunta": "Refletindo sobre o desenho a seguir, em uma área Tropical, podemos inferir que:",
     "alternativas": [
       "em matas e bosques, a grande oscilação diuturna da temperatura mantém as nuvens baixas, fazendo com que chova mais.",
       "em áreas com escassa cobertura vegetal, o ar frio e seco empurra as nuvens para cima, fazendo com que chova menos.",

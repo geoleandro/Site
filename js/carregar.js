@@ -53,7 +53,30 @@ async function injetarComponentesGlobais() {
     // 3. Inicializa as ferramentas de acessibilidade
     if (typeof aplicarTemaSalvo === "function") aplicarTemaSalvo(); // Garante o tema antes do ícone
     if (typeof inicializarLogicaDarkMode === "function") inicializarLogicaDarkMode();
+    if (typeof inicializarLogicaSom === "function") inicializarLogicaSom();
     if (typeof inicializarControleFonte === "function") inicializarControleFonte();
+}
+
+// Botão de som na navbar — mesmo padrão do dark-mode (delegação de clique,
+// pois o header é injetado de forma assíncrona). O estado real vive no DuvidAudio.
+function inicializarLogicaSom() {
+    const upIcon = () => {
+        const btn = document.getElementById('toggle-som');
+        if (!btn) return;
+        const mudo = (typeof somEstaMudo === "function") && somEstaMudo();
+        btn.innerHTML = mudo
+            ? '<i class="fa fa-volume-off fa-fw"></i>'
+            : '<i class="fa fa-volume-up fa-fw"></i>';
+        btn.title = mudo ? 'Som desligado' : 'Som ligado';
+    };
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('#toggle-som');
+        if (btn) {
+            if (typeof toggleSom === "function") toggleSom();
+            upIcon();
+        }
+    });
+    upIcon();
 }
 
 /**

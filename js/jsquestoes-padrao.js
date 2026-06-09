@@ -16,6 +16,54 @@ const COMBO_NIVEIS = [
     { minimo: 3, nome: '🔥 Em Chamas!', bonus: 5  },
 ];
 
+// === PERSONAGEM (GIFs temáticos da Jéssica) ===
+// Mapeie aulaID → nome da pasta em questoes/personagem/{tema}/
+const PERSONAGEM_TEMAS = {
+    // Exemplos futuros:
+    // 103: 'cartografia', 104: 'cartografia',
+    // 325: 'africa', 326: 'africa',
+};
+
+function _getGifPersonagem(tipo) {
+    const tema = PERSONAGEM_TEMAS[aulaID] || 'default';
+    // Caminho absoluto — mesma convenção do JSON (/questoes/...), funciona
+    // mesmo se a página for servida ou incluída de outro caminho.
+    return `/questoes/personagem/${tema}/${tipo}.gif`;
+}
+
+function mostrarGifAcerto() {
+    const overlay = document.getElementById('duvid-gif-overlay');
+    if (!overlay) return;
+    const img = document.createElement('img');
+    // Usa 'inteligente' quando há combo ativo, 'acerto' no acerto simples
+    const tipo = (combo >= 3) ? 'inteligente' : 'acerto';
+    img.src = _getGifPersonagem(tipo);
+    img.className = `duvid-gif-${tipo}`; // permite CSS separado por tipo
+    img.onerror = () => { overlay.style.display = 'none'; };
+    overlay.innerHTML = '';
+    overlay.appendChild(img);
+    overlay.style.display = 'flex';
+    overlay.classList.remove('saindo');
+    setTimeout(() => {
+        overlay.classList.add('saindo');
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            overlay.classList.remove('saindo');
+        }, 450);
+    }, 2200);
+}
+
+function _gifInlineHtml(tipo) {
+    const src = _getGifPersonagem(tipo);
+    const cssClass = tipo === 'erro' ? 'duvid-gif-erro' : 'duvid-gif-duvida';
+    return `<img src="${src}" class="${cssClass}" onerror="this.style.display='none'">`;
+}
+
+
+// Obs: o áudio (MP3 + chiptune 8-bit) vive todo em js/duvid-audio.js.
+// Aqui só chamamos os ganchos: playSomCombo() e playSomDica().
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -236,6 +284,9 @@ function mostrarDica() {
     const q = questoes[indiceAtual];
     if (!q.ajuda) return;
 
+    // Chiptune: blip curioso ao abrir a dica do professor
+    if (typeof playSomDica === 'function') playSomDica();
+
     let painelDica = document.getElementById('painel-dica-container');
 
     if (!painelDica) {
@@ -248,6 +299,7 @@ function mostrarDica() {
                         <button onclick="this.parentElement.parentElement.style.display='none'" 
                                 class="duvid-dica-fechar">&times;</button>
                         
+                        ${_gifInlineHtml('duvida')}
                         <h5 class="duvid-dica-titulo">
                             <i class="fa fa-lightbulb-o"></i> <b>Vamos analisar...</b>
                         </h5>
@@ -285,9 +337,13 @@ function verificar() {
         // ACERTO — mostra resposta correta normalmente
         DuvidUI.estilizarResultadoQuestao(resp, q.correta);
         combo++;
+        const ehMarcoCombo = COMBO_NIVEIS.some(n => n.minimo === combo);
         const nivelCombo = COMBO_NIVEIS.find(n => combo >= n.minimo);
         const bonusCombo = nivelCombo ? nivelCombo.bonus : 0;
-        DuvidUI.executarGatilhoResultado(true, RECOMPENSA_QUESTOES + bonusCombo);
+        // No marco de combo (3/5/7) toca SÓ a fanfarra chiptune: suprime o MP3
+        // de acerto para os dois não soarem juntos. Fora do marco, MP3 normal.
+        DuvidUI.executarGatilhoResultado(true, RECOMPENSA_QUESTOES + bonusCombo, { semSomAcerto: ehMarcoCombo });
+        if (ehMarcoCombo) playSomCombo();
         nota++;
     } else {
         // ERRO — não revela a resposta, só some as alternativas
@@ -305,7 +361,7 @@ function verificar() {
         });
     }
 
-    exibirPainelFeedback(isCorreto, q);
+    exibirPainelFeedback(isCorreto, q, resp);
     if (btnVerificar) btnVerificar.disabled = true;
     DuvidUI.scrollParaElemento('feedback-txt', 'center');
 
@@ -341,7 +397,7 @@ function perderVida() {
 
 
 // Função auxiliar para o painel inferior
-function exibirPainelFeedback(isCorreto, questao) {
+function exibirPainelFeedback(isCorreto, questao, indiceSelecionado) {
     const feedback = document.getElementById('barra-feedback');
     const msg = document.getElementById('feedback-msg');
     const txt = document.getElementById('feedback-txt');
@@ -355,6 +411,7 @@ function exibirPainelFeedback(isCorreto, questao) {
             ? `<div class="duvid-combo-badge">${nivelCombo.nome} <span class="duvid-combo-bonus">+${nivelCombo.bonus} globinhos</span></div>`
             : '';
         msg.innerHTML = `<b><i class='fa fa-smile-o'></i> ${getFraseSucesso()}</b>`;
+        mostrarGifAcerto();
         txt.innerHTML = `
             ${badgeCombo}
             <div class="comentario-box">
@@ -363,16 +420,21 @@ function exibirPainelFeedback(isCorreto, questao) {
             </div>
         `;
     } else {
-        // ERRO — mensagem neutra + só a dica, sem revelar resposta
-      msg.innerHTML = `<b><i class='fa fa-search'></i> ${getFraseAnalise()}</b>`;
+        // ERRO — mensagem neutra + feedback por alternativa ou dica genérica
+        msg.innerHTML = `${_gifInlineHtml('erro')}<b><i class='fa fa-search'></i> ${getFraseAnalise()}</b>`;
 
-        // Se tiver dica, mostra ela. Se não tiver, mensagem genérica.
-        txt.innerHTML = questao.ajuda
+        // Prioridade: feedback específico da alternativa errada > ajuda genérica > mensagem padrão
+        const textoFeedback =
+            (questao.feedbacks && questao.feedbacks[String(indiceSelecionado)])
+            || questao.ajuda
+            || null;
+
+        txt.innerHTML = textoFeedback
             ? `<div class="duvid-painel-dica w3-card-2">
                    <h5 class="duvid-dica-titulo">
                        <i class="fa fa-lightbulb-o"></i> <b>Vamos analisar...</b>
                    </h5>
-                   <p class="w3-small">${questao.ajuda}</p>
+                   <p class="w3-small">${textoFeedback}</p>
                </div>`
             : `<p class="w3-small w3-text-grey">
                    Revise o conteúdo desta aula e tente novamente!
@@ -431,6 +493,7 @@ function finalizar() {
     const acertos = nota;
     const aprovado = (acertos / total) >= 0.6;
     const ganhouBonus = aprovado && vidas === TOTAL_VIDAS; // << vidas intactas
+
 
     // 1. Persistência
     if (typeof DuvidDB !== "undefined" && aulaID) {

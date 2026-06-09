@@ -14,18 +14,20 @@
     <meta property="og:image" content="">
 
     <link rel="stylesheet" href="../../../estilos/index-estilo.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="stylesheet" href="../../../estilos/navbar.css">
     <link rel="stylesheet" href="../../../estilos/rpg-sistema.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
     <link rel="stylesheet" href="../../../estilos/explicacaoPalavra.css">
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
@@ -207,21 +209,26 @@
             <div class="grupo-respostas w3-margin-top">
                 <div class="item-resposta">
                     <input type="radio" name="pergunta1" id="p1a" value="errado" class="radio-duvid">
-                    <label for="p1a" class="card-opcao"><span>Possui lagos e charcos que abastecem os aquíferos da região</span></label>
+                    <label for="p1a" class="card-opcao"><span>Possui extensos reservatórios naturais de água
+                            superficial, como lagos e charcos, que abastecem os aquíferos das regiões ao
+                            redor</span></label>
                 </div>
                 <div class="item-resposta">
                     <input type="radio" name="pergunta1" id="p1b" value="correto" class="radio-duvid">
-                    <label for="p1b" class="card-opcao"><span>Concentra as nascentes das principais bacias do país: São Francisco, Paraná e Tocantins</span></label>
+                    <label for="p1b" class="card-opcao"><span>Concentra as nascentes das principais bacias hidrográficas
+                            do país (São Francisco, Paraná, Tocantins), abastecendo rios que levam água para o Nordeste,
+                            o Sudeste e a Região Sul</span></label>
                 </div>
                 <div class="item-resposta">
                     <input type="radio" name="pergunta1" id="p1c" value="errado" class="radio-duvid">
-                    <label for="p1c" class="card-opcao"><span>Tem o maior índice de chuvas do Brasil, alimentando os rios da Amazônia</span></label>
+                    <label for="p1c" class="card-opcao"><span>Tem o maior índice de chuvas do Brasil, com precipitações
+                            que alimentam os rios da Amazônia durante todo o ano</span></label>
                 </div>
             </div>
 
             <div class="w3-margin-top">
                 <button class="btn-acao-duvid"
-                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'O Cerrado abriga as nascentes das três maiores bacias do país — desmatá-lo compromete o abastecimento hídrico nacional.', '10')">
+                    onclick="validarRadio(this, 'pergunta1', 'resp1', 'globinho1', 'o Cerrado é chamado de caixa d\'água porque nas suas chapadas e veredas nascem os principais rios brasileiros: o São Francisco (que abastece o Nordeste), o Paraná (que alimenta Itaipu), o Tocantins-Araguaia e muitos outros.', '10')">
                     Confirmar Resposta
                 </button>
             </div>
@@ -239,7 +246,7 @@
             <h2>Desmatamento: causas e políticas de controle</h2>
 
             <p>O <span class="termo" data-palavra="Desmatamento"
-                    data-definicao="Remoção da cobertura vegetal nativa de uma área, geralmente para uso agropecuário, mineração, infraestrutura ou urbanização. No Brasil, o desmatamento é monitorado pelo INPE (Instituto Nacional de Pesquisas Espaciais) por meio de sistemas de satélites como o PRODES (Amazônia) e o TerraClass. As principais causas na Amazônia são a pecuária extensiva (responsável por cerca de 80% do desmatamento), a soja, a grilagem de terras e a mineração ilegal.">desmatamento</span>
+                    data-definicao="Remoção da cobertura vegetal nativa de uma área, geralmente para uso agropecuário, mineração, infraestrutura ou urbanização.">desmatamento</span>
                 no Brasil tem causas econômicas estruturais. Na Amazônia, cerca de 80% do desmatamento é para pecuária
                 extensiva: o boi precisa de pasto, e o pasto mais barato é o que foi aberto na floresta. A soja avança
                 principalmente no Cerrado e na faixa de transição Cerrado-Amazônia (arco do desmatamento). A grilagem de
@@ -292,22 +299,28 @@
 
             <div class="grupo-respostas w3-margin-top">
                 <div class="item-resposta">
-                    <input type="radio" name="pergunta2" id="p2a" value="errado" class="radio-duvid">
-                    <label for="p2a" class="card-opcao"><span>A preservação ambiental é incompatível com o desenvolvimento econômico</span></label>
+                    <input type="radio"   value="errado" class="radio-duvid">
+                    <label  class="card-opcao"><span>A preservação ambiental é incompatível com o
+                            desenvolvimento econômico, e a queda no desmatamento nesse período se deveu à redução da
+                            atividade agropecuária na região</span></label>
                 </div>
                 <div class="item-resposta">
-                    <input type="radio" name="pergunta2" id="p2b" value="correto" class="radio-duvid">
-                    <label for="p2b" class="card-opcao"><span>É possível reduzir o desmatamento sem comprometer a produção, com fiscalização e pressão de mercado</span></label>
+                    <input type="radio" name="pergunta2"  value="correto" class="radio-duvid">
+                    <label  class="card-opcao"><span>É possível reduzir o desmatamento sem comprometer a
+                            produção agrícola, por meio de políticas de comando e controle (fiscalização, embargos) e de
+                            pressão de mercado (moratórias sobre produtos de área desmatada)</span></label>
                 </div>
                 <div class="item-resposta">
-                    <input type="radio" name="pergunta2" id="p2c" value="errado" class="radio-duvid">
-                    <label for="p2c" class="card-opcao"><span>O desmatamento caiu por adoção voluntária de práticas sustentáveis, sem intervenção do Estado</span></label>
+                    <input type="radio" name="pergunta2"  value="errado" class="radio-duvid">
+                    <label  class="card-opcao"><span>O desmatamento na Amazônia diminuiu espontaneamente devido
+                            à adoção voluntária de práticas sustentáveis pelos produtores rurais, sem necessidade de
+                            intervenção do Estado</span></label>
                 </div>
             </div>
 
             <div class="w3-margin-top">
                 <button class="btn-acao-duvid"
-                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'A queda foi resultado de ação do Estado: satélite, embargos e pressão de mercado — provando que produção e preservação são compatíveis.', '10' )">
+                    onclick="validarRadio(this, 'pergunta2', 'resp2', 'globinho2', 'a queda do desmatamento entre 2004 e 2012 é considerada um dos maiores sucessos de política ambiental da história. ', '10' )">
                     Confirmar Resposta
                 </button>
             </div>
@@ -589,23 +602,4 @@
                 <h3 class="fontePixel w3-center w3-text-green">
                     <strong><i class="fa fa-book"></i> Referências Bibliográficas</strong>
                 </h3>
-                <div id="biblio-gerada"></div>
-            </div>
-
-            <br><br>
-            <div class="w3-padding-48">
-                <span id="numero"></span>
-                <span id="txtBarra">0%</span>
-                <progress value="0" max="100" id="progress"></progress>
-            </div>
-        </div>
-
-    </main>
-
-    <div id="footer-placeholder"></div>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-
-</body>
-
-</html>
+      

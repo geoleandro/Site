@@ -20,7 +20,13 @@
       "meio técnico-científico-informacional",
       "natureza e sociedade"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "Esse raciocínio é o do determinismo geográfico, que o texto está superando. O autor defende que homem e natureza interagem e se transformam mutuamente.",
+      "1": "Essa é a visão que o texto critica: a natureza subordinando o homem. Hoje, é o inverso, o homem transformou tão profundamente a natureza que ela já não é mais 'original'.",
+      "3": "O texto diz o contrário: ao longo do tempo, os objetos criados pelo homem tornaram-se cada vez mais sofisticados e artificiais, não menos.",
+      "4": "Essa ideia é exatamente o que o texto refuta. A história mostra que o homem superou os obstáculos naturais usando técnicas cada vez mais avançadas."
+    }
   },
   {
     "id": 2,
@@ -43,13 +49,20 @@
       "técnicas",
       "espacialidades"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "O texto não fala em aleatoriedade. As técnicas são usadas de forma historicamente organizada para transformar o espaço. Há intencionalidade, não acaso.",
+      "1": "Essa é a visão determinista (a sociedade como reflexo do meio) que Milton Santos superou. No trecho, é a sociedade que age sobre o espaço por meio das técnicas.",
+      "2": "O trecho apresenta o espaço como algo dinâmico e construído no presente, não limitado ao passado. As técnicas produzem o espaço continuamente.",
+      "3": "O espaço para Milton Santos não é totalitário nem sem subjetividade, mas o resultado das relações entre sociedade e natureza mediadas por técnicas historicamente situadas."
+    }
   },
   {
     "id": 3,
     "ano": "2019",
     "imagem_apoio": "",
-    "texto_apoio": "<p class=\"w3-sand\">\"No conceito de espaço geográfico está implícita a ideia de articulação entre natureza e sociedade. Na busca desta articulação, a Geografia tem que trabalhar, de um lado, com os elementos e atributos naturais, procurando não só descrevê-los, mas entender as interações existentes entre eles; e de outro, verificar a maneira pela qual a sociedade está administrando e interferindo nos sistemas naturais. <br>Para perceber a ação da sociedade é necessário adentrar em sua estrutura social, procurando apreender o seu modo de produção e as relações socioeconômicas vigentes”.</p> <p class=\"w3-small w3-sand\"> (GIOMETTI, A. B. R., et al. Leitura do Espaço Geográfico através das categorias: Lugar, Paisagem e Território. In: Caderno de formação: formação de professores didática dos conteúdos. São Paulo: Cultura Acadêmica, 2012. p.34).</p>",
+    "texto_apoio": "<p class=\"w3-sand\">\"No conceito de espaço geográfico está implícita a ideia de articulação entre natureza e sociedade. Na busca desta articulação, a Geografia tem que trabalhar, de um lado, com os elementos e atributos naturais, procurando não só descrevê-los, mas entender as interações existentes entre eles; e de outro, verificar a maneira pela qual a sociedade está administrando e interferindo nos sistemas naturais. <br>Para perceber a ação da sociedade é necessário adentrar em sua estrutura social, procurando apreender o seu modo de produção e as relações socioeconômicas vigentes”.</p>",
+    "fonte_apoio": "GIOMETTI, A. B. R., et al. Leitura do Espaço Geográfico através das categorias: Lugar, Paisagem e Território. In: Caderno de formação: formação de professores didática dos conteúdos. São Paulo: Cultura Acadêmica, 2012. p.34.",
     "pergunta": "Na conceituação acima apresentada, temos a Geografia como uma ciência da natureza e da sociedade, no sentido de:",
     "alternativas": [
       "descrever as narrativas individuais do natural e do social.",
@@ -66,7 +79,13 @@
       "natureza e sociedade",
       "ciência geográfica"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "O texto enfatiza a relação entre natural e social, não sua descrição separada. A Geografia articula esses dois elementos, não apenas os narra individualmente.",
+      "2": "Quase certa, mas incompleta. Focar só nas dinâmicas naturais deixa de fora o elemento humano, que o texto coloca como central na compreensão do espaço.",
+      "3": "O texto não fala em intervenção, mas em compreensão das relações. Avaliar para interferir é um objetivo técnico-aplicado, não o papel da ciência geográfica conforme o trecho.",
+      "4": "O texto diz o oposto: o natural e o social são interdependentes e se relacionam. 'Complementaridade nula' contradiz diretamente a proposta do trecho."
+    }
   },
   {
     "id": 4,
@@ -89,7 +108,13 @@
       "técnicas",
       "superfície terrestre"
     ],
-    "dificuldade": "facil"
+    "dificuldade": "facil",
+    "feedbacks": {
+      "0": "Essa definição descreve a superfície terrestre física, mas não inclui o elemento humano nem as técnicas. Espaço geográfico é mais do que substrato físico.",
+      "1": "Correta para a Geografia Física, mas incompleta para o espaço geográfico. Sem a dimensão das práticas humanas e das técnicas, o conceito fica pela metade.",
+      "3": "Você descreveu paisagem, não espaço geográfico. Paisagem é o que os sentidos captam; espaço geográfico é o resultado de processos históricos e sociais acumulados.",
+      "4": "'Palco' e 'receptáculo' sugerem que o espaço é passivo. O conceito contemporâneo mostra o espaço como resultado ativo da interação entre sociedade e natureza."
+    }
   },
   {
     "id": 5,
@@ -112,7 +137,13 @@
       "objeto de estudo da geografia",
       "ciência geográfica"
     ],
-    "dificuldade": "facil"
+    "dificuldade": "facil",
+    "feedbacks": {
+      "0": "Mapas são ferramentas da Geografia, não seu objeto de estudo. É como dizer que o objeto da Biologia é o microscópio: confunde instrumento com finalidade.",
+      "1": "Descrever lugares foi o papel da Geografia clássica. A ciência geográfica moderna vai além: explica por que os lugares são como são, quais suas causas e relações.",
+      "2": "Paisagem é um dos conceitos da Geografia, mas observar é apenas um ponto de partida. O objeto de estudo, o espaço geográfico, envolve produção, organização e transformação.",
+      "4": "Esse é o maior equívoco popular sobre a Geografia! Memorizar nomes é um exercício escolar antigo, não o que a ciência geográfica estuda."
+    }
   },
   {
     "id": 6,
@@ -135,7 +166,13 @@
       "fluxos imateriais",
       "totalidade geográfica"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "Essa afirmativa é CORRETA: ela diz que o espaço reflete as singularidades da natureza e do trabalho humano, sem ser homogêneo. Você procura a INCORRETA.",
+      "1": "Também CORRETA. Inclui fluxos de pessoas, mercadorias, capitais e informações como parte do espaço geográfico, o que é uma definição moderna e precisa.",
+      "3": "Também CORRETA. É a definição clássica de Milton Santos: espaço como produto material da interação mediada pelas técnicas.",
+      "4": "Também CORRETA. O espaço é dinâmico e está em constante reorganização. Por isso a Geografia precisa analisá-lo como processo, não como dado fixo."
+    }
   },
   {
     "id": 7,
@@ -157,7 +194,12 @@
       "lugar",
       "paisagem"
     ],
-    "dificuldade": "facil"
+    "dificuldade": "facil",
+    "feedbacks": {
+      "0": "Essa afirmativa é CORRETA, é exatamente a definição contemporânea: espaço como natureza transformada pelo trabalho humano ao longo da história.",
+      "1": "Também CORRETA. Lugar é o espaço vivido, com identidade e significado, conceito fundamental da Geografia Humanista.",
+      "2": "Também CORRETA. Sem entender a sociedade que produziu o espaço, é impossível compreender sua organização histórica e atual."
+    }
   },
   {
     "id": 8,
@@ -179,7 +221,12 @@
       "formas visíveis e invisíveis",
       "fluxos imateriais"
     ],
-    "dificuldade": "facil"
+    "dificuldade": "facil",
+    "feedbacks": {
+      "0": "Rodovias são formas VISÍVEIS. Legislação é normativa, não espacial, e não se enquadra como 'forma invisível' no sentido geográfico do termo.",
+      "1": "Ambos são formas VISÍVEIS: estruturas físicas que se podem ver e tocar. A questão pede as formas que não têm materialidade concreta.",
+      "3": "Fábricas são formas VISÍVEIS. Só o fluxo de informação seria invisível. A alternativa mistura os dois tipos, então está incorreta."
+    }
   },
   {
     "id": 9,
@@ -202,7 +249,13 @@
       "lugar",
       "espaço geográfico"
     ],
-    "dificuldade": "media"
+    "dificuldade": "media",
+    "feedbacks": {
+      "0": "As afirmativas 1, 2 e 3 também estão corretas. Releia cada uma delas, todas descrevem aspectos válidos da paisagem geográfica.",
+      "1": "As afirmativas 2 e 4 também estão corretas. A afirmativa 2 descreve corretamente a paisagem como conceito que articula elementos naturais e humanos.",
+      "2": "As afirmativas 2 e 3 também estão corretas e não contradizem as demais. Quando todas as afirmativas são verdadeiras, a resposta é a mais abrangente.",
+      "3": "As afirmativas 1 e 4 também estão corretas. Quando todas as alternativas de uma questão são verdadeiras, a resposta certa é a que inclui todas elas."
+    }
   },
   {
     "id": 10,
@@ -225,6 +278,12 @@
       "elementos naturais",
       "elementos culturais"
     ],
-    "dificuldade": "facil"
+    "dificuldade": "facil",
+    "feedbacks": {
+      "0": "A afirmativa 3 também está correta: ela afirma que o espaço tem formas visíveis e invisíveis, conceito central de Milton Santos. As duas juntas formam a resposta.",
+      "1": "A afirmativa 2 tem exemplos equivocados, misturando formas visíveis com invisíveis na mesma categoria. A afirmativa 1 define corretamente o espaço geográfico.",
+      "2": "A afirmativa 2 não está totalmente correta, pois classifica de forma imprecisa os tipos de formas do espaço. Troque a 2 pela 3: a combinação correta é 1 e 3.",
+      "4": "A afirmativa 2 apresenta exemplos que confundem formas visíveis com invisíveis. A combinação correta é 1 e 3, pois ambas descrevem o espaço com precisão."
+    }
   }
 ]

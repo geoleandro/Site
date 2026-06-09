@@ -12,7 +12,7 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../../../estilos/w3.css">
     <link rel="stylesheet" href="../../../estilos/ModeloCss.css">
     <link rel="stylesheet" href="../../../estilos/index-estilo.css">
     <link rel="stylesheet" href="../../../estilos/navbar.css">
@@ -20,10 +20,12 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="../../../fotoIndex/favicon.ico">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
@@ -63,6 +65,56 @@
         /* Aplique na classe onde o texto de apoio é renderizado */
         .w3-panel p {
             white-space: pre-line;
+        }
+
+        /* === GIF PERSONAGEM OVERLAY (acerto) === */
+        #duvid-gif-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+        #duvid-gif-overlay img {
+            max-height: 260px;
+            filter: drop-shadow(0 8px 32px rgba(0,0,0,0.35));
+            animation: gifEntrar 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards;
+        }
+        /* acerto simples — maior, mais impactante */
+        #duvid-gif-overlay img.duvid-gif-acerto {
+            max-height: 320px;
+        }
+        /* combo (inteligente) — menor */
+        #duvid-gif-overlay img.duvid-gif-inteligente {
+            max-height: 200px;
+        }
+        #duvid-gif-overlay.saindo img {
+            animation: gifSair 0.45s ease-in forwards;
+        }
+        @keyframes gifEntrar {
+            from { transform: scale(0.3) translateY(40px); opacity: 0; }
+            to   { transform: scale(1)   translateY(0);    opacity: 1; }
+        }
+        @keyframes gifSair {
+            from { transform: scale(1);   opacity: 1; }
+            to   { transform: scale(0.7) translateY(-30px); opacity: 0; }
+        }
+
+        /* GIF inline — erro (maior, destaque) */
+        .duvid-gif-erro {
+            display: block;
+            height: 200px;
+            margin: 0 auto 8px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+        }
+        /* GIF inline — dúvida/dica (menor, discreto) */
+        .duvid-gif-duvida {
+            display: block;
+            height: 200px;
+            margin: 0 auto 6px;
+            filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
         }
     </style>
 
@@ -151,60 +203,3 @@
                 <h2 id="modal-titulo" class="fontePixel"></h2>
 
                 <div class="w3-padding-16">
-                    <p id="modal-feedback-principal" class="w3-xlarge">
-                    </p>
-                    <p id="modal-frase-motivacional" class="w3-text-grey" style="font-style: italic;"></p>
-                </div>
-
-                <div class="w3-container w3-padding-16">
-                    <button id="btn-revisao-erros" onclick="iniciarRevisao()"
-                        class="w3-button w3-amber w3-round-large w3-block w3-margin-bottom w3-padding-large"
-                        style="font-weight: bold; display:none;">
-                        📋 REVISAR OS ERROS
-                    </button>
-
-                    <button id="btn-tentar-novamente" onclick="tentarNovamente()"
-                        class="w3-button w3-light-grey w3-round-large w3-block w3-margin-bottom w3-padding-large"
-                        style="font-weight: bold; display:none;">
-                        🔄 REFAZER SIMULADO
-                    </button>
-
-                    <button onclick="window.location.href='/home.html'"
-                        class="w3-button w3-green w3-round-large w3-block w3-padding-large" style="font-weight: bold;">
-                        🏠 VOLTAR PARA A HOME
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Footer -->
-
-    <div id="footer-placeholder"></div>
-
-
-
-
-
-
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX55DSFZ0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DPX55DSFZ0');
-
-    </script>
-
-
-   
-
-</body>
-
-</html>

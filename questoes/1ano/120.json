@@ -24,7 +24,7 @@
   },
   {
     "id": 2,
-    "instituicao": "",
+    "instituicao": "CFTMG",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -33,7 +33,7 @@
       "dinâmica atmosférica"
     ],
     "imagem_apoio": "1ano/img/120/p20q2.png",
-    "pergunta": "(CFTMG) Associe os tipos de chuva às suas respectivas características.\n\n( ) Resulta do deslocamento horizontal do ar que, em contato com as regiões elevadas, sofre condensação e consequente precipitação.\n\n( ) forma-se a partir do encontro de uma massa de ar frio com uma de ar quente.\n\n( ) Decorre da ascensão vertical do ar que, ao entrar em contato com as camadas de ar frio, sofre condensação e se precipita.\n\nA sequência correta é",
+    "pergunta": "Associe os tipos de chuva às suas respectivas características.\n\n( ) Resulta do deslocamento horizontal do ar que, em contato com as regiões elevadas, sofre condensação e consequente precipitação.\n\n( ) forma-se a partir do encontro de uma massa de ar frio com uma de ar quente.\n\n( ) Decorre da ascensão vertical do ar que, ao entrar em contato com as camadas de ar frio, sofre condensação e se precipita.\n\nA sequência correta é",
     "alternativas": [
       "1, 2, 3.",
       "1, 3, 2.",
@@ -202,8 +202,8 @@
   },
   {
     "id": 10,
-    "instituicao": "",
-    "ano": "2026",
+    "instituicao": "MUNDO EDUCAÇÃO",
+    "ano": "2022",
     "dificuldade": "media",
     "tags": [
       "desmatamento",
@@ -212,7 +212,7 @@
     ],
     "texto_apoio": "“Estudo mostra que o impacto da destruição da floresta pode alterar o clima do Brasil e de países vizinhos. Nos últimos 30 anos, o Brasil já teve 600 mil quilômetros quadrados de terras desmatadas.”",
     "fonte_apoio": "(Adaptado de: ANBA, 20/03/2009. Disponível em: http://www.anba.com.br/).",
-    "pergunta": "(MUNDO EDUCAÇÃO 2022)\n\nO impacto do desmatamento da Amazônia sobre o regime de chuvas se dá pela seguinte questão:",
+    "pergunta": "O impacto do desmatamento da Amazônia sobre o regime de chuvas se dá pela seguinte questão:",
     "alternativas": [
       "aumento médio das temperaturas.",
       "contenção das reservas hídricas subterrâneas.",

@@ -93,7 +93,7 @@
   },
   {
     "id": 5,
-    "instituicao": "",
+    "instituicao": "PUC-MG",
     "ano": "2026",
     "dificuldade": "facil",
     "tags": [
@@ -101,7 +101,7 @@
       "longitude",
       "fuso horário"
     ],
-    "pergunta": "(PUC-MG) Ao dividir os 360 graus da esfera terrestre pelas 24 horas de duração do movimento de __________, o resultado é 15 graus. A cada 15 graus que a Terra gira, passa-se uma hora. Assim, cada uma das 24 divisões da Terra corresponde a um __________.\n\nPara que o texto fique adequadamente preenchido, as lacunas devem ser completadas, respectivamente, por",
+    "pergunta": "Ao dividir os 360 graus da esfera terrestre pelas 24 horas de duração do movimento de __________, o resultado é 15 graus. A cada 15 graus que a Terra gira, passa-se uma hora. Assim, cada uma das 24 divisões da Terra corresponde a um __________.\n\nPara que o texto fique adequadamente preenchido, as lacunas devem ser completadas, respectivamente, por",
     "alternativas": [
       "translação e meridiano.",
       "translação e paralelo.",

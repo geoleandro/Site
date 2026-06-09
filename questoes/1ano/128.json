@@ -47,7 +47,7 @@
   },
   {
     "id": 3,
-    "instituicao": "",
+    "instituicao": "UFAM",
     "ano": "2026",
     "dificuldade": "facil",
     "tags": [
@@ -55,7 +55,7 @@
       "relevo submarino",
       "oceanos"
     ],
-    "pergunta": "(UFAM) O termo dorsais significa:",
+    "pergunta": "O termo dorsais significa:",
     "alternativas": [
       "Zonas de descontinuidades sísmicas.",
       "Vales glaciais.",
@@ -113,7 +113,7 @@
   },
   {
     "id": 6,
-    "instituicao": "",
+    "instituicao": "SM",
     "ano": "2026",
     "dificuldade": "dificil",
     "tags": [
@@ -124,7 +124,7 @@
     "fonte_apoio": "Fonte de pesquisa: IBGE Países@. Disponível em: http: //www.ibge.gov.br. Acesso em: 3 set. 2011.",
     "imagem_apoio": "1ano/img/128/p28q6.png",
     "imagem_apoio_2": "1ano/img/128/p28q6a.png",
-    "pergunta": "(SM) Compare os mapas abaixo:\n\nA partir da comparação, podemos inferir que",
+    "pergunta": "Compare os mapas abaixo:\n\nA partir da comparação, podemos inferir que",
     "alternativas": [
       "as maiores concentrações populacionais ocorrem nas regiões onde há grande disponibilidade de água potável, como na América do Sul.",
       "boa parte das maiores concentrações populacionais ocorrem nas áreas onde há escassez de água potável, como no sul asiático.",

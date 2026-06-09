@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "instituicao": "",
+    "instituicao": "PUC-CAMPINAS",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -10,7 +10,7 @@
       "biomas mundiais"
     ],
     "imagem_apoio": "1ano/img/130/p30q1.png",
-    "pergunta": "(PUC-CAMPINAS) Observe o esquema para responder à questão.\n\nIndique a alternativa que identifica o elemento retratado no esquema.",
+    "pergunta": "Observe o esquema para responder à questão.\n\nIndique a alternativa que identifica o elemento retratado no esquema.",
     "alternativas": [
       "Maritimidade.",
       "Latitude.",

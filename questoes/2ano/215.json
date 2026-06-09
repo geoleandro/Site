@@ -185,7 +185,7 @@
   },
   {
     "id": 9,
-    "instituicao": "",
+    "instituicao": "UFG",
     "ano": "2026",
     "dificuldade": "dificil",
     "tags": [
@@ -195,7 +195,7 @@
       "clima do Brasil"
     ],
     "imagem_apoio": "2ano/img/215/s15q9.png",
-    "pergunta": "(UFG) Observe os mapas a seguir.\n\nA dinâmica das massas de ar é um dos fatores que explica a caracterização climática de uma área. A leitura e a interpretação dos mapas indicam que o clima do território goiano é influenciado pela atuação da massa.",
+    "pergunta": "Observe os mapas a seguir.\n\nA dinâmica das massas de ar é um dos fatores que explica a caracterização climática de uma área. A leitura e a interpretação dos mapas indicam que o clima do território goiano é influenciado pela atuação da massa.",
     "alternativas": [
       "Equatorial continental no verão e Tropical atlântica no inverno..",
       "Equatorial continental durante o ano todo.",
@@ -209,7 +209,7 @@
   },
   {
     "id": 10,
-    "instituicao": "",
+    "instituicao": "MACKENZIE",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -217,7 +217,7 @@
       "dinâmica atmosférica",
       "clima do Brasil"
     ],
-    "pergunta": "(MACKENZIE) Assinale a alternativa CORRETA sobre a dinâmica de massas de ar no Brasil.",
+    "pergunta": "Assinale a alternativa CORRETA sobre a dinâmica de massas de ar no Brasil.",
     "alternativas": [
       "A massa equatorial atlântica origina–se no Atlântico Norte e influencia o clima de todo o interior do país.",
       "A massa tropical continental origina–se na Depressão do Chaco e provoca chuvas torrenciais de inverno no litoral sul e sudeste.",

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "instituicao": "",
+    "instituicao": "UESC",
     "ano": "2026",
     "dificuldade": "media",
     "tags": [
@@ -9,7 +9,7 @@
       "cartografia",
       "distorções cartográficas"
     ],
-    "pergunta": "(UESC) Os conhecimentos sobre projeções cartográficas e uso de mapas possibilitam afirmar:",
+    "pergunta": "Os conhecimentos sobre projeções cartográficas e uso de mapas possibilitam afirmar:",
     "alternativas": [
       "A projeção azimutal fornece uma visão eurocêntrica do mundo e, por isso, ela não é mais utilizada.",
       "As distorções da representação, nas projeções cilíndricas, são maiores no Equador e menores nos polos.",
@@ -188,8 +188,8 @@
   },
   {
     "id": 9,
-    "instituicao": "",
-    "ano": "2026",
+    "instituicao": "UNIMONTES-MG",
+    "ano": "2008",
     "dificuldade": "facil",
     "tags": [
       "projeções cartográficas",
@@ -197,7 +197,7 @@
       "paralelos"
     ],
     "imagem_apoio": "1ano/img/105/p5q9.jpg",
-    "pergunta": "(UNIMONTES-MG–2008) A partir da projeção dos meridianos e paralelos geográficos, a forma cartográfica representada na figura é construída em:",
+    "pergunta": "A partir da projeção dos meridianos e paralelos geográficos, a forma cartográfica representada na figura é construída em:",
     "alternativas": [
       "um cilindro tangente à superfície de referência, desenvolvendo, a seguir, o cilindro num plano.",
       "uma esfera tangente à superfície de referência, desenvolvendo, a seguir, o globo num plano.",
