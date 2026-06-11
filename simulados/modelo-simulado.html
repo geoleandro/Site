@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Simulados de Geografia no estilo Duvid: questões reais comentadas, com dica do professor e correção alternativa por alternativa.">
+    <meta property="og:title" content="Duvid Geografia - Simulados">
+    <meta property="og:description" content="Resolva simulados de Geografia com correção comentada.">
+    <meta property="og:image" content="/fotoIndex/favicon.ico">
+
+    <link rel="stylesheet" href="/estilos/w3.css">
+    <link rel="stylesheet" href="/estilos/ModeloCss.css">
+    <link rel="stylesheet" href="/estilos/index-estilo.css">
+    <link rel="stylesheet" href="/estilos/navbar.css">
+    <link rel="stylesheet" href="/estilos/rpg-sistema.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/fotoIndex/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5408157966429216"
+        crossorigin="anonymous"></script>
+
+    <!-- Motor de questões (mesmo das aulas) -->
+    <script src="/js/duvid-cache.js" defer></script>
+    <script src="/js/duvid-db.js" defer></script>
+    <script src="/js/duvid-audio.js" defer></script>
+    <script src="/js/duvid-ui.js" defer></script>
+    <script src="/js/duvid-core.js" defer></script>
+    <script src="/js/aulas-geral.js" defer></script>
+    <script src="/js/jsquestoes-padrao.js" defer></script>
+
+    <!-- Loader específico do SIMULADO (precisa vir DEPOIS do motor) -->
+    <script src="/js/jssimulado-padrao.js" defer></script>
+
+    <script src="/js/carregar.js" defer></script>
+    <script src="/js/abrirmenu.js" defer></script>
+
+    <title>Duvid Geografia - Simulado</title>
+
+    <style>
+        .w3-large { white-space: pre-line; }
+        .w3-panel p { white-space: pre-line; }
+
+        /* === GIF PERSONAGEM OVERLAY (acerto) === */
+        #duvid-gif-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+        #duvid-gif-overlay img {
+            max-height: 260px;
+            filter: drop-shadow(0 8px 32px rgba(0,0,0,0.35));
+            animation: gifEntrar 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards;
+        }
+        #duvid-gif-overlay img.duvid-gif-acerto { max-height: 320px; }
+        #duvid-gif-overlay img.duvid-gif-inteligente { max-height: 200px; }
+        #duvid-gif-overlay.saindo img { animation: gifSair 0.45s ease-in forwards; }
+        @keyframes gifEntrar {
+            from { transform: scale(0.3) translateY(40px); opacity: 0; }
+            to   { transform: scale(1)   translateY(0);    opacity: 1; }
+        }
+        @keyframes gifSair {
+            from { transform: scale(1);   opacity: 1; }
+            to   { transform: scale(0.7) translateY(-30px); opacity: 0; }
+        }
+        .duvid-gif-erro {
+            display: block; height: 200px; margin: 0 auto 8px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+        }
+        .duvid-gif-duvida {
+            display: block; height: 200px; margin: 0 auto 6px;
+            filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <!-- Overlay do GIF de acerto (usado pelo motor) -->
+    <div id="duvid-gif-overlay"></div>
+
+    <main class="w3-content w3-white w3-card-2 w3-padding-large w3-margin-bottom" style="max-width:750px">
+
+        <div id="aviso-status" class="w3-margin-top"></div>
+
+        <!-- Barra de progresso -->
+        <div class="w3-light-grey w3-round-xlarge w3-margin-top" style="height:12px;">
+            <div id="barra-progresso-simulado" class="w3-container w3-green w3-round-xlarge"
+                style="width:0%; height:12px; transition: 0.5s"></div>
+        </div>
+
+        <!-- As questões são injetadas aqui pelo motor -->
+        <div id="container-questao" class="w3-animate-right">
+            <div class="w3-center w3-padding-64">
+                <i class="fa fa-spinner fa-spin w3-jumbo w3-text-teal"></i>
+                <p class="w3-text-grey">Carregando simulado...</p>
+            </div>
+        </div>
+
+        <!-- Barra de feedback (acerto/erro) -->
+        <div id="barra-feedback" class="w3-bottom w3-container w3-padding-24 w3-animate-bottom w3-hide"
+            style="z-index:10">
+            <div class="w3-content" style="max-width:750px">
+                <h3 id="feedback-msg" class="w3-xlarge"></h3>
+                <p id="feedback-txt" class="w3-medium"></p>
+
+                <button onclick="proxima()"
+                    class="w3-button btn-acao-duvid w3-teal w3-round-large w3-block w3-margin-top">
+                    <b>CONTINUAR</b>
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal final do simulado (preenchido por DuvidUI.exibirModalSimulado) -->
+    <div id="id01" class="w3-modal" style="z-index: 9999;">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
+            <div class="w3-container w3-padding-32 w3-center">
+
+                <div class="w3-margin-bottom pulse">
+                    <img id="modal-img-globinho" src="/fotoIndex/globinhoPe.png" width="80" height="80">
+                </div>
+
+                <h2 id="modal-titulo" class="fontePixel"></h2>
+                <p id="modal-frase-motivacional" class="w3-text-grey"></p>
+
+                <div class="w3-padding-16">
+                    <p id="modal-feedback-principal" class="w3-large"></p>
+                </div>
+
+                <button id="btn-revisao-erros" onclick="iniciarRevisao()"
+                    class="w3-button w3-amber w3-round-large w3-block w3-margin-bottom" style="display:none"></button>
+
+                <button id="btn-tentar-novamente" onclick="tentarNovamente()"
+                    class="w3-button w3-teal w3-round-large w3-block w3-margin-bottom" style="display:none">
+                    <b>↺ REFAZER</b>
+                </button>
+
+                <button onclick="location.href='/simulados/capasimuladoenem.html'"
+                    class="w3-button w3-light-grey w3-round-large w3-block">
+                    Voltar aos Simulados
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de dica (legado do motor) -->
+    <div id="modal-dica" class="w3-modal" style="display:none; z-index:9999;">
+        <div class="w3-modal-content w3-card-4 w3-animate-top w3-round-large" style="max-width:500px">
+            <header class="w3-container w3-teal w3-round-large"
+                style="border-bottom-left-radius:0; border-bottom-right-radius:0;">
+                <span onclick="document.getElementById('modal-dica').style.display='none'"
+                    class="w3-button w3-display-topright w3-round-large">&times;</span>
+                <h4>💡 Dica do Professor</h4>
+            </header>
+            <div class="w3-container w3-padding-32 w3-white">
+                <p id="texto-da-dica" class="w3-large w3-serif" style="font-style: italic; color: #555;"></p>
+            </div>
+            <footer class="w3-container w3-light-grey w3-padding w3-right-align w3-round-large"
+                style="border-top-left-radius:0; border-top-right-radius:0;">
+                <button class="w3-button w3-teal w3-round-medium"
+                    onclick="document.getElementById('modal-dica').style.display='none'">
+                    ENTENDI!
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

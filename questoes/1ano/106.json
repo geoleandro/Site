@@ -21,7 +21,13 @@
     ],
     "correta": 2,
     "comentario": "Os conceitos fundamentais da Geografia — espaço geográfico, território, lugar, paisagem e região — têm significados distintos, mas inter-relacionados. O espaço geográfico engloba as transformações humanas; o território implica poder e controle; o lugar é o espaço vivido; a paisagem é o visível; e a região é uma área com características comuns.",
-    "ajuda": "O texto apresenta afirmações sobre território, espaço geográfico e lugar. Analise cada proposição separadamente, verificando se ela está coerente com a definição técnica desses conceitos geográficos. Atenção especial à diferença entre território (poder), lugar (vivência) e espaço (técnica/sociedade)."
+    "ajuda": "O texto apresenta afirmações sobre território, espaço geográfico e lugar. Analise cada proposição separadamente, verificando se ela está coerente com a definição técnica desses conceitos geográficos. Atenção especial à diferença entre território (poder), lugar (vivência) e espaço (técnica/sociedade).",
+    "feedbacks": {
+      "0": "Essa sequência troca várias associações de lugar. Reveja as ligações II, III e V: cada conceito (território, lugar, paisagem, região) tem uma definição própria, e essa combinação encaixa pelo menos três deles no item errado.",
+      "1": "Quase todas as associações estão fora de ordem aqui. Compare item por item com as definições do enunciado: território envolve poder e controle, lugar é o espaço vivido e paisagem é o que se vê, e você verá que essa sequência não respeita esses significados.",
+      "3": "O primeiro par até está correto, mas a partir do segundo a sequência se desorganiza. Confira especialmente as associações de lugar e paisagem, que aqui aparecem invertidas em relação às suas definições.",
+      "4": "Só uma das associações coincide com a correta; as demais estão trocadas. Releia cada conceito e ligue-o à descrição que de fato corresponde ao seu significado técnico antes de fechar a sequência."
+    }
   },
   {
     "id": 2,
@@ -43,7 +49,13 @@
     ],
     "correta": 3,
     "comentario": "Estado, nação, território e país são conceitos distintos: o Estado é a organização política-jurídica; a nação é um grupo com identidade cultural comum; o território é o espaço controlado pelo Estado; e o país é o Estado reconhecido internacionalmente. Um Estado pode abrigar várias nações (Brasil) e uma nação pode estar dividida em vários Estados (nação curda).",
-    "ajuda": "Estado, nação, país e território são conceitos distintos: Estado é a organização político-jurídica; nação é um grupo com identidade cultural; país é um Estado reconhecido internacionalmente; território é o espaço controlado por uma autoridade. Analise as afirmações com base nessas definições."
+    "ajuda": "Estado, nação, país e território são conceitos distintos: Estado é a organização político-jurídica; nação é um grupo com identidade cultural; país é um Estado reconhecido internacionalmente; território é o espaço controlado por uma autoridade. Analise as afirmações com base nessas definições.",
+    "feedbacks": {
+      "0": "A sequência 1•2•3•4 segue a ordem em que os termos aparecem no enunciado, não a ordem das definições. Releia cada conceito: o primeiro espaço descreve território, não Estado, então a numeração precisa começar diferente.",
+      "1": "A primeira definição não corresponde ao número 1. Quem começa a sequência é o conceito de território (o espaço delimitado e controlado), por isso o início correto é 4 e não 1.",
+      "2": "Você acertou o começo (4), mas inverteu os pares centrais. Confira a diferença entre nação (identidade cultural compartilhada) e país (Estado reconhecido internacionalmente): eles estão trocados nessa opção.",
+      "4": "A sequência está praticamente invertida. Apenas o primeiro item (4) coincide; os demais foram lidos de baixo para cima. Associe cada definição ao conceito correto, de cima para baixo, antes de numerar."
+    }
   },
   {
     "id": 3,
@@ -66,7 +78,13 @@
     ],
     "correta": 4,
     "comentario": "O Brasil está situado inteiramente no hemisfério ocidental (a oeste do Meridiano de Greenwich) e majoritariamente no hemisfério sul. A região Sul do Brasil encontra-se entre as latitudes 22°S e 33°S e a oeste do meridiano 0°. Compreender a localização absoluta (coordenadas) é essencial para análises climáticas, agrícolas e de planejamento territorial.",
-    "ajuda": "Para analisar meridianos e o Meridiano de Greenwich em um mapa, lembre-se que Greenwich (0°) divide o mundo em Hemisfério Leste (Oriental) e Hemisfério Oeste (Ocidental). Verifique as afirmativas usando a posição das localidades em relação a esse meridiano."
+    "ajuda": "Para analisar meridianos e o Meridiano de Greenwich em um mapa, lembre-se que Greenwich (0°) divide o mundo em Hemisfério Leste (Oriental) e Hemisfério Oeste (Ocidental). Verifique as afirmativas usando a posição das localidades em relação a esse meridiano.",
+    "feedbacks": {
+      "0": "A afirmativa IV de fato está correta, mas ela não é a única. A afirmativa V também é verdadeira: a Austrália está no hemisfério Meridional (Sul) e Portugal no Setentrional (Norte). Por isso a resposta precisa incluir as duas.",
+      "1": "A afirmativa V realmente está correta, porém a IV também: as coordenadas aproximadas do Japão (latitude 40ºN e longitude 140ºE) estão certas. Como há duas afirmativas verdadeiras, a opção de apenas uma fica incompleta.",
+      "2": "Aqui o erro está em incluir a afirmativa II. Rússia, Canadá, Estados Unidos e China ficam no hemisfério Setentrional (Norte), não no Meridional. Só o Brasil está majoritariamente ao sul do Equador, então a II é falsa.",
+      "3": "A afirmativa III está errada porque inverte latitude e longitude. Madagascar fica por volta de 20ºS de latitude e 45ºE de longitude; o enunciado dessa proposição troca os valores e os eixos, tornando-a falsa."
+    }
   },
   {
     "id": 4,
@@ -89,7 +107,13 @@
     ],
     "correta": 3,
     "comentario": "Os fusos horários dividem a Terra em 24 zonas de 15° de longitude cada. O Brasil possui 4 fusos horários (UTC-2 a UTC-5). Para calcular diferenças de horário entre cidades, é preciso saber quantos fusos de distância elas estão e se o evento ocorre antes ou depois da meia-noite local — o que pode mudar a data do acontecimento.",
-    "ajuda": "Para determinar a hora em outro fuso horário, calcule a diferença de longitude e converta em horas (cada 15° = 1 hora). Locais mais a Leste têm horários mais avançados; locais mais a Oeste têm horários mais atrasados."
+    "ajuda": "Para determinar a hora em outro fuso horário, calcule a diferença de longitude e converta em horas (cada 15° = 1 hora). Locais mais a Leste têm horários mais avançados; locais mais a Oeste têm horários mais atrasados.",
+    "feedbacks": {
+      "0": "O Acre fica em UTC-5, ou seja, a 2 horas à frente da Califórnia no horário de verão (UTC-7). Somando 2h às 19h30, chega-se a 21h30, e não 22h30. A diferença de fusos usada aqui está maior do que a real.",
+      "1": "A capital do Amazonas (Manaus, UTC-4) está 3 horas à frente da Califórnia no horário de verão. Somando 3h às 19h30, o horário seria 22h30, não 21h30. A conta confundiu o fuso de Manaus com o do Acre.",
+      "2": "O Distrito Federal está em UTC-3, 4 horas à frente da Califórnia no horário de verão. Somando 4h às 19h30, ainda é 23h30 do mesmo dia 13, sem virar a data. A passagem para 00h30 do dia 14 conta uma hora a mais do que o correto.",
+      "4": "Fernando de Noronha fica em UTC-2, 5 horas à frente da Califórnia no horário de verão. Somando 5h às 19h30, o resultado é 00h30 do dia 14, e não 01h30. Foi adicionada uma hora além da diferença real de fusos."
+    }
   },
   {
     "id": 5,
@@ -110,7 +134,12 @@
     ],
     "correta": 3,
     "comentario": "O movimento de rotação da Terra dura 24 horas e percorre 360°. Dividindo 360° por 24h, temos 15° por hora — essa é a base do sistema de fusos horários criado no século XIX para padronizar o tempo global, especialmente com a expansão das ferrovias. Cada fuso representa 1 hora de diferença em relação ao anterior.",
-    "ajuda": "Dividir 360° pelas 24 horas do dia resulta em 15° por hora — esse é o fundamento matemático dos fusos horários. Use essa relação para calcular a diferença de horário entre dois locais a partir de suas longitudes."
+    "ajuda": "Dividir 360° pelas 24 horas do dia resulta em 15° por hora — esse é o fundamento matemático dos fusos horários. Use essa relação para calcular a diferença de horário entre dois locais a partir de suas longitudes.",
+    "feedbacks": {
+      "0": "O movimento de 24 horas é a rotação (a Terra girando em torno do próprio eixo), não a translação, que dura cerca de 365 dias. Além disso, o meridiano é uma linha imaginária, não uma das 24 divisões de tempo, que se chamam fusos horários.",
+      "1": "Aqui há dois erros: o movimento de 24 horas é a rotação, não a translação (que leva um ano); e cada divisão de 15° corresponde a um fuso horário, não a um paralelo, que é uma linha de latitude.",
+      "2": "O movimento de rotação está correto, mas a segunda lacuna não. Cada faixa de 15° de longitude forma um fuso horário, e não um 'círculo'. É o fuso que define a diferença de uma hora entre as regiões."
+    }
   },
   {
     "id": 6,
@@ -134,7 +163,13 @@
     ],
     "correta": 1,
     "comentario": "As coordenadas geográficas (latitude e longitude) identificam qualquer ponto da superfície terrestre com precisão. Latitude mede a distância ao Equador (0° a 90°N ou S); longitude mede a distância ao Meridiano de Greenwich (0° a 180°E ou W). O antípoda de um ponto é encontrado invertendo hemisfério e somando/subtraindo 180° na longitude.",
-    "ajuda": "Antípodas são pontos diametralmente opostos na superfície terrestre. Para encontrar o antípoda de um ponto, inverta o hemisfério da latitude (N↔S) e calcule a longitude somando 180° ao valor original, invertendo também o hemisfério (L↔O)."
+    "ajuda": "Antípodas são pontos diametralmente opostos na superfície terrestre. Para encontrar o antípoda de um ponto, inverta o hemisfério da latitude (N↔S) e calcule a longitude somando 180° ao valor original, invertendo também o hemisfério (L↔O).",
+    "feedbacks": {
+      "0": "No antípoda, a latitude precisa trocar de hemisfério: se o ponto A está a 20ºN, o oposto fica a 20ºS, não a 20ºN. A longitude também não bate, pois deveria virar 140ºW, e não 180ºE.",
+      "2": "O valor da latitude está errado: o antípoda mantém o mesmo número de graus (20°), apenas invertendo o hemisfério para Sul. Além disso, a longitude correta é 140ºW (Oeste), e não 140ºE.",
+      "3": "Aqui a latitude foi alterada de 20° para 70°, mas no antípoda o número de graus se mantém, só muda o hemisfério (20ºN vira 20ºS). A longitude também deveria ser 140ºW, não 180ºE.",
+      "4": "90ºS é o Polo Sul, um ponto único, e não o oposto de A. O antípoda conserva os 20° de latitude invertendo o hemisfério (para 20ºS) e tem longitude 140ºW, resultado de 180° menos os 40º do ponto A, com o hemisfério trocado."
+    }
   },
   {
     "id": 7,
@@ -156,7 +191,12 @@
     ],
     "correta": 2,
     "comentario": "A escala gráfica permite converter medidas de mapa em distâncias reais. Dividindo a distância representada no mapa pelo comprimento da barra de escala, obtém-se o denominador da escala numérica. Esse cálculo é usado em cartografia, planejamento urbano, rotas militares e logística de transporte.",
-    "ajuda": "Para calcular distâncias reais a partir de um mapa, use a escala fornecida: distância real = medida no mapa × denominador da escala. Converta as unidades adequadamente para obter o resultado em quilômetros."
+    "ajuda": "Para calcular distâncias reais a partir de um mapa, use a escala fornecida: distância real = medida no mapa × denominador da escala. Converta as unidades adequadamente para obter o resultado em quilômetros.",
+    "feedbacks": {
+      "0": "Esse valor é dez vezes menor que o correto. Provavelmente faltou um zero na conversão de centímetros para quilômetros: lembre-se de que 1 km equivale a 100 000 cm, então o resultado final fica maior do que 3 600 km.",
+      "1": "O resultado ficou bem abaixo do real. Refaça a conta multiplicando os 72 cm pelo denominador da escala e só depois converta de centímetros para quilômetros (dividindo por 100 000); o valor obtido será bem maior que 7 000 km.",
+      "3": "Esse valor ultrapassa até a circunferência da Terra (cerca de 40 000 km), o que já indica exagero para um trajeto dentro de um único país. A conta provavelmente dobrou o denominador ou a medida do mapa em algum passo."
+    }
   },
   {
     "id": 8,
@@ -179,7 +219,13 @@
     ],
     "correta": 4,
     "comentario": "A escala numérica expressa a proporção entre a medida no mapa e a medida real. Para encontrá-la, divide-se a distância real pela distância no mapa (ambas na mesma unidade). O resultado é o denominador da escala — quanto maior, menor o nível de detalhe e maior a área representada.",
-    "ajuda": "A escala cartográfica relaciona medidas no mapa com medidas reais. Para converter entre escalas diferentes, compare os denominadores: quanto maior o denominador, menor a representação e menor o detalhe visível no mapa."
+    "ajuda": "A escala cartográfica relaciona medidas no mapa com medidas reais. Para converter entre escalas diferentes, compare os denominadores: quanto maior o denominador, menor a representação e menor o detalhe visível no mapa.",
+    "feedbacks": {
+      "0": "Esse denominador é cerca de três vezes maior que o correto. Confira a medida do segmento da escala gráfica e a distância real que ele representa: o valor lido aqui está superdimensionado.",
+      "1": "Esse denominador é pequeno demais, indicando um mapa bem mais detalhado do que o apresentado. O erro costuma estar na conversão de quilômetros para centímetros: lembre-se de que 1 km equivale a 100 000 cm.",
+      "2": "O denominador está muito abaixo do esperado, o que corresponderia a um mapa de escala grande (área pequena e muito detalhe). Refaça a conversão entre a medida da barra gráfica e a distância real em centímetros.",
+      "3": "Esse denominador é cerca do dobro do correto. Verifique quantos quilômetros a barra da escala gráfica realmente representa antes de transformar em escala numérica; um pequeno erro de leitura dobra o resultado."
+    }
   },
   {
     "id": 9,
@@ -200,8 +246,13 @@
       "Cristianismo."
     ],
     "correta": 2,
-    "comentario": "A anamorfose cartográfica é uma técnica em que o tamanho dos países ou regiões é distorcido proporcionalmente a um dado quantitativo (ex: número de fiéis de uma religião). Isso cria representações visualmente impactantes que facilitam a compreensão de distribuições globais desiguais.",
-    "ajuda": "A anamorfose é uma técnica que distorce propositalmente o tamanho dos territórios para representar dados quantitativos (como população ou PIB), em vez de representar a área geográfica real. Pense em que tipo de informação o cartograma em questão está representando."
+    "comentario": "A anamorfose cartográfica é uma técnica em que o tamanho dos países ou regiões é distorcido proporcionalmente a um dado quantitativo (ex: número de fiéis de uma religião). No cartograma, o Hinduísmo apresenta a menor dispersão espacial porque está praticamente restrito à Índia, por ser uma religião de forte base cultural e social (ligada, por exemplo, ao sistema de castas), com pouca expansão para outros países.",
+    "ajuda": "A anamorfose é uma técnica que distorce propositalmente o tamanho dos territórios para representar dados quantitativos (como população ou PIB), em vez de representar a área geográfica real. Pense em qual religião está concentrada em pouquíssimos países, em vez de espalhada por vários continentes.",
+    "feedbacks": {
+      "0": "O Budismo está espalhado por vários países da Ásia Oriental e do Sudeste Asiático, como China, Japão, Tailândia e Mianmar. Por aparecer como religião predominante em mais de um território, sua dispersão é maior do que a da religião concentrada em um único país.",
+      "1": "O Islamismo ocupa uma faixa ampla e contínua, do norte da África e Oriente Médio até a Indonésia, além de comunidades em outros continentes. Essa presença em muitos países o torna bem mais disperso do que a religião praticamente restrita a um só país.",
+      "3": "O Cristianismo é a religião mais dispersa do cartograma: é majoritária em países de praticamente todos os continentes (Américas, Europa, boa parte da África e Oceania). Por isso, é o oposto do que a questão pede, que é a menor dispersão espacial."
+    }
   },
   {
     "id": 10,
@@ -224,6 +275,11 @@
     ],
     "correta": 1,
     "comentario": "Os mapas históricos são documentos culturais e políticos que revelam como uma época via o mundo. Eles refletem o conhecimento geográfico disponível, as prioridades de quem os encomendou e as técnicas cartográficas do período. Por isso, têm valor tanto como ferramentas de localização quanto como fontes históricas e iconográficas.",
-    "ajuda": "Mapas podem ser ferramentas de poder e representação ideológica. A obra de Torres-García questiona a normatização da orientação norte-acima, que historicamente colocou países do Norte como referência central. Pense em como a escolha cartográfica pode refletir visões de mundo."
+    "ajuda": "O texto trata o mapa como uma linguagem: além de localizar lugares, ele é um retrato da época que o produziu. Avalie as alternativas pensando no mapa histórico como documento cultural, que registra as técnicas de representação e os saberes (e também os limites do conhecimento) de seu tempo, e não apenas como um produto científico de precisão absoluta.",
+    "feedbacks": {
+      "0": "O texto defende justamente o contrário: um mapa, mesmo impreciso, tem valor documental. Ele registra as técnicas e os saberes de uma época, funcionando como retrato cultural do período, e não apenas como instrumento de localização exata.",
+      "2": "Mapas históricos não tinham apenas intenção estética. Eles buscavam representar o mundo conhecido com as técnicas disponíveis na época. A comparação com a arte se refere a serem produtos culturais de seu tempo, não a abrirem mão da função de representar o espaço.",
+      "3": "Mapas antigos não se limitavam a expressar só o que se conhecia. Diante de regiões desconhecidas, era comum recorrer à imaginação, com criaturas e terras supostas. Por isso o mapa revela tanto os saberes quanto as lacunas e crenças de sua época."
+    }
   }
 ]

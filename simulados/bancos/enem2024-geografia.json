@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["cartografia", "geografia política", "poder e território"],
+    "texto_apoio": "A finalidade mais marcante em toda a história dos mapas, desde o seu início, teria sido a de estarem sempre voltados à prática, principalmente a serviço da dominação, do poder. Sempre registraram o que mais interessava a uma minoria, fato este que acabou estimulando o incessante aperfeiçoamento deles.",
+    "fonte_apoio": "MARTINELLI, M. Mapas da geografia e cartografia temática. São Paulo: Contexto, 2011 (adaptado).",
+    "pergunta": "No texto, a cartografia é apresentada como um instrumento usado essencialmente para a",
+    "alternativas": [
+      "preservação de espaços naturais.",
+      "emancipação de sujeitos marginais.",
+      "revalorização de culturas reprimidas.",
+      "inversão de hierarquias estabelecidas.",
+      "sustentação de hegemonias territoriais."
+    ],
+    "correta": 4,
+    "comentario": "Ao longo da história, a cartografia foi usada como instrumento de poder: quem produz o mapa decide o que aparece, como aparece e o que fica de fora. O texto destaca que os mapas registravam o que interessava a uma minoria dominante, servindo à manutenção do controle sobre os territórios. Um exemplo clássico é a projeção de Mercator, de visão eurocêntrica, que amplia o Norte e reduz o Sul. Por isso a resposta é a sustentação de hegemonias territoriais (letra E).",
+    "ajuda": "Repare nas palavras-chave do texto: 'dominação', 'poder' e 'uma minoria'. A pergunta quer a função política do mapa. Procure a alternativa ligada à ideia de manter o controle de um grupo dominante sobre o espaço.",
+    "feedbacks": {
+      "0": "O texto não fala em meio ambiente nem em conservação da natureza. Ele trata do uso político dos mapas, como ferramenta de poder e controle, e não de preservar áreas naturais.",
+      "1": "É o oposto do que o texto afirma. Os mapas serviam aos interesses de uma minoria no poder, não à libertação de grupos marginalizados.",
+      "2": "O texto associa a cartografia à dominação e ao interesse das elites, não à valorização de culturas oprimidas.",
+      "3": "Pelo contrário: os mapas reforçavam e mantinham as hierarquias de poder já existentes, em vez de invertê-las."
+    }
+  },
+  {
+    "id": 2,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["Amazônia", "patrimônio cultural", "redes de sociabilidade"],
+    "texto_apoio": "TEXTO I\nO bufarinheiro, conhecido nas cidades por teque-teque, chama-se, nos recônditos da Amazônia, \"regatão\". Em lugar de transportar nas costas o mundo de miudezas, transporta-o no bojo de uma gaiola que desloca duas, três, quatro toneladas, divididas em seções de secos e molhados e é movido por remo de faia. Cortando comunidades e matas da Amazônia por rios, dentro dessas gaiolas, riscadas de prateleiras, encontram-se os artigos mais díspares, que vão da agulha à espingarda, do lenço ao cobertor, da chita à escova de dentes.\n(MORAES, R. Na Planície Amazônica. São Paulo: Editora Nacional, 1936, adaptado.)\n\nTEXTO II\nNo século XIX, o comércio dos regatões era feito, então, com base em relações tecidas com quilombolas, pequenos produtores, comerciantes locais e indígenas, constituindo relação comercial alternativa ao abastecimento da população.\n(HENRIQUE, M. C.; MORAIS, L. T. Estradas líquidas, comércio sólido: índios e regatões na Amazônia, século XIX. Rev. Hist., n. 171, jul.-dez. 2014, adaptado.)",
+    "pergunta": "Como parte do patrimônio cultural da Amazônia, o regatão foi fundamental, no século XIX, para a",
+    "alternativas": [
+      "organização de rotas de fuga na floresta tropical.",
+      "criação de postos de trabalho nos seringais nortistas.",
+      "divulgação de receitas de fármacos nas zonas ribeirinhas.",
+      "construção de redes de sociabilidade no interior brasileiro.",
+      "ampliação de ambientes de lazer nos territórios autóctones."
+    ],
+    "correta": 3,
+    "comentario": "O regatão era o comerciante que percorria os rios da Amazônia levando mercadorias variadas às comunidades isoladas. Mais do que vender produtos, esse comércio itinerante aproximava indígenas, quilombolas, pequenos produtores e comerciantes locais, criando vínculos e trocas entre grupos distantes. Essa teia de contatos é o que se chama de rede de sociabilidade, por isso a resposta é a letra D.",
+    "ajuda": "Os dois textos enfatizam que o regatão circulava entre comunidades diferentes (indígenas, quilombolas, ribeirinhos) levando mercadorias. Pense no efeito social desse vai e vem: o que ele criava ao conectar tantos grupos isolados?",
+    "feedbacks": {
+      "0": "Os textos descrevem o regatão como comerciante itinerante, não como organizador de fugas. O foco é o comércio e o contato entre comunidades, não a fuga pela floresta.",
+      "1": "O regatão não está ligado ao trabalho nos seringais. Ele era um comerciante ambulante que abastecia comunidades pelos rios, atividade diferente da extração da borracha.",
+      "2": "Os textos citam a venda de mercadorias variadas (da agulha à espingarda), não a divulgação de remédios ou receitas médicas.",
+      "4": "A função do regatão era comercial e de abastecimento, não de lazer. O contato com indígenas e quilombolas se dava pela troca de mercadorias."
+    }
+  },
+  {
+    "id": 3,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["Amazônia", "desmatamento", "clima", "ciclo hidrológico"],
+    "texto_apoio": "TEXTO I\nUma única árvore joga entre 300 e 1000 litros de água por dia para a atmosfera. Considerando a demanda mínima que uma pessoa consome de água, ou seja, 120 litros por dia, uma única árvore pode ser capaz de produzir água para até oito pessoas.\n(MAGNO, C. Estudiosos explicam o motivo de chover tanto em Belém. Disponível em: www.diarioonline.com.br. Acesso em: 6 nov. 2021.)\n\nTEXTO II\nA Amazônia perdeu diariamente uma área de floresta maior do que 4 mil campos de futebol apenas em setembro de 2021. Em todo o mês, foram devastados 1 224 km², o que corresponde ao tamanho da cidade do Rio de Janeiro e é a pior marca para setembro em 10 anos. Os dados são do Sistema de Alerta de Desmatamento (SAD) do Instituto do Homem e Meio Ambiente da Amazônia (Imazon), que monitora a floresta por meio de imagens de satélites.\n(FREITAS, A. Desmatamento na Amazônia em setembro foi o maior para o período em 10 anos. Disponível em: www.cnnbrasil.com.br. Acesso em: 6 nov. 2021.)",
+    "pergunta": "Para a região amazônica, a relação entre as informações dos textos indica uma redução do(a)",
+    "alternativas": [
+      "circulação de ventos alísios.",
+      "aquecimento dos solos locais.",
+      "média de temperatura oceânica.",
+      "índice de refletividade superficial.",
+      "intensidade de chuvas convectivas."
+    ],
+    "correta": 4,
+    "comentario": "As árvores da Amazônia liberam grandes quantidades de vapor d'água para a atmosfera por meio da transpiração — processo chamado evapotranspiração. Esse vapor alimenta as chuvas convectivas, que dependem da umidade vinda da floresta para se formarem (os chamados 'rios voadores'). Com o desmatamento acelerado apontado no Texto II, menos árvores significam menos vapor na atmosfera e, portanto, redução da intensidade das chuvas convectivas na região. A resposta é a letra E.",
+    "ajuda": "A chave está em conectar os dois textos: o Texto I mostra que as árvores lançam água para a atmosfera; o Texto II mostra que a floresta está sendo destruída. O que acontece com as chuvas quando essa fonte de umidade diminui?",
+    "feedbacks": {
+      "0": "Os ventos alísios são fenômenos de escala global, relacionados à circulação atmosférica geral, não diretamente ao desmatamento local da Amazônia. O texto não aborda ventos.",
+      "1": "O desmatamento tende a aumentar, e não diminuir, o aquecimento do solo, pois a cobertura vegetal ameniza a temperatura. Além disso, esse não é o foco dos dois textos apresentados.",
+      "2": "A temperatura oceânica não é influenciada diretamente pelo desmatamento amazônico no contexto dos textos. Os textos tratam da umidade atmosférica regional, não dos oceanos.",
+      "3": "A refletividade (albedo) superficial seria alterada pelo desmatamento, mas tende a aumentar com a substituição de floresta por solo exposto, e não a diminuir. Além disso, não é o fenômeno central que os textos relacionam."
+    }
+  },
+  {
+    "id": 4,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["território", "infraestrutura", "fluxos", "Milton Santos"],
+    "texto_apoio": "Cada objeto é, em si mesmo, um sistema funcionando sistemicamente. Um grande supermercado ou shopping center seria incapaz de existir se não fossem servidos por vias rápidas, estacionamentos adequados e acessíveis, sistemas de transportes públicos com horários regulares e conhecidos e se, no seu próprio interior, as atividades não estivessem subordinadas a uma coordenação. Esse é o caso dos armazéns, dos silos etc. Os portos, a rede rodoviária de um país e, sobretudo, a rede ferroviária são exemplos de objetos complexos e sistêmicos.",
+    "fonte_apoio": "SANTOS, M. A natureza do espaço: técnica, tempo, razão e emoção. São Paulo: Hucitec, 1996 (adaptado).",
+    "pergunta": "De acordo com o texto, o território torna-se cada vez mais dotado de objetos com a finalidade de intensificar a",
+    "alternativas": [
+      "desindustrialização da economia.",
+      "desregulamentação do mercado.",
+      "concentração da produção.",
+      "distribuição de renda.",
+      "dinamização dos fluxos."
+    ],
+    "correta": 4,
+    "comentario": "Milton Santos explica que o território é equipado com objetos técnicos (rodovias, ferrovias, portos, centros comerciais) para permitir que mercadorias, pessoas e informações circulem com maior rapidez e eficiência. Toda essa infraestrutura existe para acelerar e ampliar o movimento: é a dinamização dos fluxos. A resposta é a letra E.",
+    "ajuda": "Milton Santos descreve objetos como supermercados, portos e ferrovias. O que todos eles têm em comum? Pense na função que exercem no espaço geográfico: todos servem para fazer algo circular, mover, conectar.",
+    "feedbacks": {
+      "0": "O texto não trata de desindustrialização. Pelo contrário, a criação de infraestruturas (portos, ferrovias, rodovias) está ligada ao suporte das atividades econômicas, não ao seu desmonte.",
+      "1": "O texto não aborda regulamentação ou desregulamentação do mercado. O foco é na organização espacial e nos objetos técnicos que compõem o território.",
+      "2": "Os objetos técnicos descritos servem à circulação, não à concentração da produção em um único ponto. A infraestrutura de transporte e logística distribui e conecta, em vez de concentrar.",
+      "3": "A distribuição de renda não é o tema do texto. Milton Santos fala sobre a função técnica e sistêmica dos objetos no território, sem abordar questões de renda ou desigualdade."
+    }
+  },
+  {
+    "id": 5,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["meio ambiente", "mudanças climáticas", "geopolítica", "COP"],
+    "texto_apoio": "A 26ª Conferência do Clima das Nações Unidas foi realizada com a perspectiva de que os países tornassem ainda mais ambiciosos os compromissos assumidos no enfrentamento das mudanças climáticas, de modo a evitar que a temperatura global se eleve acima de 1,5 °C, marca que já vinha sendo discutida desde o Acordo de Paris, de 2015. A pressão do setor empresarial, que se posicionou de maneira contundente nesta COP-26, gerou impacto positivo. O Conselho Empresarial Brasileiro para o Desenvolvimento Sustentável (CEBDS) capitaneou, por meio do movimento Empresários pelo Clima, a adesão de 119 CEOs de importantes empresas e 14 instituições do setor privado, de setores tão diversos como agronegócio, alimentício, aviação, elétrico, farmacêutico, finanças, infraestrutura, logística, papel e celulose, petroquímico, saúde, tecnologia, telefonia e varejo. O Brasil deixa a conferência com o compromisso de fazer valer sua meta e reduzir 50% dos gases de efeito estufa até 2030 em relação aos níveis de 2005 — anteriormente, a meta de redução era de 43%.",
+    "fonte_apoio": "GROSSI, M. A mais plural das COPs e a lição de casa para o Brasil. Disponível em: www.nexojornal.com.br. Acesso em: 24 nov. 2021 (adaptado).",
+    "pergunta": "Conforme o texto, o compromisso assumido pelo Brasil foi resultado dos tensionamentos promovidos por",
+    "alternativas": [
+      "povos ribeirinhos e segmentos culturais.",
+      "blocos econômicos e instituições militares.",
+      "grupos científicos e universidades públicas.",
+      "organismos supranacionais e sociedade civil.",
+      "agentes governamentais e demanda turística."
+    ],
+    "correta": 3,
+    "comentario": "O texto indica dois tipos de pressão que levaram o Brasil a ampliar sua meta climática: por um lado, a ONU e a própria COP-26 (organismos supranacionais); por outro, o setor empresarial e o movimento Empresários pelo Clima (representantes da sociedade civil organizada). A combinação dessas duas forças é o que descreve a alternativa D. A resposta é a letra D.",
+    "ajuda": "O texto menciona a COP-26 (organismo da ONU) e o setor empresarial (119 CEOs e 14 instituições privadas). Associe cada um desses ao tipo de ator político que representam para encontrar a alternativa certa.",
+    "feedbacks": {
+      "0": "O texto não menciona povos ribeirinhos nem segmentos culturais como atores de pressão na COP-26. O foco está em organismos internacionais e no setor empresarial.",
+      "1": "Blocos econômicos (como a União Europeia) não são citados no texto como atores de pressão específica sobre o Brasil. Instituições militares não têm papel em conferências climáticas.",
+      "2": "Apesar de grupos científicos serem fundamentais para o debate climático, o texto não os cita como os agentes que pressionaram diretamente o Brasil na COP-26. As universidades públicas também não são mencionadas.",
+      "4": "Os agentes governamentais brasileiros são os que assumiram o compromisso, não os que pressionaram. A demanda turística não tem relação com o contexto descrito no texto."
+    }
+  },
+  {
+    "id": 6,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["globalização", "cultura", "soft power", "Brasil no mundo"],
+    "texto_apoio": "TEXTO I\n\"As novelas brasileiras foram as primeiras a aparecer na TV russa ainda na época de Gorbachov, nos anos 1980. Elas causaram sensação. Houve casos anedóticos, como quando o Parlamento da Federação Russa terminou a sessão mais cedo para ver o último capítulo de Escrava Isaura\", conta o russo Anatoli Sostanov, consultor na área de TV internacional e ex-diretor da emissora estatal russa Canal.\n(Disponível em: www.bbc.com. Acesso em: 16 out. 2021.)\n\nTEXTO II\nAs novelas de maior impacto em Angola foram as produções brasileiras. Fizeram tanto sucesso que um mercado popular, na época era o maior a céu aberto na África, chegou a receber o nome de Roque Santeiro, novela brasileira exibida naquele país na década de 1980. A influência das produções brasileiras fez com que os angolanos conhecessem o Brasil por meio das novelas. Além de entreter, os folhetins brasileiros até hoje ditam a moda em Angola. Figurinos e acessórios de personagens se transformam em uma verdadeira febre e influenciam o comportamento.\n(Disponível em: https://tvbrasil.ebc.com.br. Acesso em: 16 out. 2021, adaptado.)",
+    "pergunta": "Embora situados em continentes diferentes com práticas sociais distintas, Rússia e Angola se aproximam, conforme os textos I e II, no aspecto",
+    "alternativas": [
+      "cultural, ao subjetivarem costumes da teledramaturgia estrangeira.",
+      "econômico, ao importarem confecções de estilistas famosos.",
+      "geográfico, ao encurtarem distâncias de caráter ideológico.",
+      "antropológico, ao adaptarem valores de povos tradicionais.",
+      "político, ao adotarem sistemas de governos democráticos."
+    ],
+    "correta": 0,
+    "comentario": "Rússia e Angola, apesar de estarem em continentes diferentes e terem culturas distintas, foram igualmente impactadas pelas novelas brasileiras. Em ambos os países, os hábitos, gostos e comportamentos locais foram influenciados por esse produto cultural estrangeiro: na Rússia, o Parlamento parou para assistir à TV; em Angola, um mercado ganhou o nome de uma novela e a moda dos personagens virou febre. Isso é subjetivar (incorporar ao cotidiano) costumes de uma teledramaturgia estrangeira. A resposta é a letra A.",
+    "ajuda": "Pense no que os dois textos têm em comum: tanto russos quanto angolanos adotaram costumes, modas e hábitos a partir de novelas do Brasil. Que dimensão da vida social é essa? Não é política, não é econômica — é outra.",
+    "feedbacks": {
+      "1": "O texto não fala em importação de roupas ou confecções. A influência descrita é do comportamento e dos hábitos cotidianos, não do comércio de vestuário.",
+      "2": "O texto não trata de distâncias ideológicas ou de aproximação geopolítica. A conexão entre os países ocorre por meio da cultura popular, não de posicionamentos políticos.",
+      "3": "Os textos não descrevem adaptação de valores de povos tradicionais. O fenômeno é o oposto: povos de culturas distintas adotando elementos de uma cultura estrangeira (a brasileira).",
+      "4": "A forma de governo não é mencionada nos textos. Tanto a Rússia de Gorbachov quanto Angola tinham contextos políticos específicos, mas isso não é o tema central — o foco é a influência cultural das novelas."
+    }
+  },
+  {
+    "id": 7,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["migração", "refugiados", "fronteiras", "direitos humanos"],
+    "texto_apoio": "O que alicerça, portanto, o acolhimento de refugiados pelos Estados gira em torno da fronteira erguida entre inclusão e exclusão, admissão e rejeição, desejáveis e indesejáveis; ao mesmo tempo, enseja vulnerabilidade, indefinição e incerteza a esses migrantes internacionais forçados.",
+    "fonte_apoio": "MOREIRA, J. B. Refugiados no Brasil. REMHU, n. 43, jul.-dez. 2014.",
+    "pergunta": "A eliminação, para os refugiados, do tipo de fronteira descrita no texto necessita de políticas públicas de",
+    "alternativas": [
+      "planejamento familiar.",
+      "segregação territorial.",
+      "homogeneização cultural.",
+      "diferenciação étnico-racial.",
+      "integração socioeconômica."
+    ],
+    "correta": 4,
+    "comentario": "O texto descreve uma fronteira simbólica que divide incluídos e excluídos — aqueles que o Estado aceita e aqueles que rejeita. Para derrubá-la, é preciso criar condições concretas de inserção na sociedade: acesso a emprego, moradia, educação e serviços públicos. Isso é integração socioeconômica. Sem ela, o refugiado permanece em situação de vulnerabilidade, mesmo que fisicamente dentro do país. A resposta é a letra E.",
+    "ajuda": "A fronteira do texto não é física — é social. O refugiado está 'dentro' mas se sente excluído. O que uma política pública precisaria oferecer para que ele deixasse de ser visto como 'indesejável' e passasse a participar ativamente da sociedade?",
+    "feedbacks": {
+      "0": "Planejamento familiar trata de decisões reprodutivas e natalidade, sem relação com a situação de vulnerabilidade e exclusão social descrita no texto.",
+      "1": "Segregação territorial agravaria o problema: ao separar refugiados do restante da população, reforça a fronteira de exclusão e não a elimina.",
+      "2": "Homogeneização cultural implicaria apagar as identidades dos refugiados, o que é eticamente problemático e não é o caminho indicado para superar a exclusão descrita no texto.",
+      "3": "Diferenciar por etnia ou raça criaria novos critérios de exclusão, em vez de promover a inclusão. A ideia do texto é exatamente superar essas fronteiras, não criar novas."
+    }
+  },
+  {
+    "id": 8,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["urbanização", "mudanças climáticas", "cidades", "meio ambiente"],
+    "texto_apoio": "A mudança do clima nas cidades brasileiras é um desafio de adaptação e equidade. Inundações, alagamentos e ondas de calor são cada vez mais frequentes e intensas. Cidades precisam se adaptar com urgência, a começar pelas áreas e populações mais vulneráveis. Implementar soluções baseadas na natureza de forma sistêmica pode contribuir para a redução de desastres relacionados às mudanças do clima e ainda gerar múltiplos benefícios para a economia, o ambiente e as pessoas.",
+    "fonte_apoio": "EVERS, H. et al. Soluções baseadas na natureza para adaptação em cidades. Disponível em: www.wribrasil.org.br. Acesso em: 19 out. 2023 (adaptado).",
+    "pergunta": "Qual medida atenua os problemas abordados no texto?",
+    "alternativas": [
+      "Criação de faixas sinalizadoras.",
+      "Incineração de resíduos sólidos.",
+      "Implantação de parques públicos.",
+      "Verticalização de espaços centrais.",
+      "Construção de estacionamentos privados."
+    ],
+    "correta": 2,
+    "comentario": "O texto defende soluções baseadas na natureza para enfrentar inundações, alagamentos e ondas de calor nas cidades. Parques públicos arborizados são o exemplo clássico desse tipo de solução: as árvores absorvem a água da chuva por infiltração e evapotranspiração, reduzindo enchentes, e diminuem a temperatura do entorno, amenizando ilhas de calor. A resposta é a letra C.",
+    "ajuda": "O texto diz 'soluções baseadas na natureza'. Das cinco opções, qual delas usa elementos naturais para resolver os problemas urbanos de inundação e calor? Elimine as que só lidam com infraestrutura construída pelo homem.",
+    "feedbacks": {
+      "0": "Faixas sinalizadoras são medidas de segurança viária, sem relação com inundações, calor ou adaptação climática. Não envolvem elementos naturais.",
+      "1": "A incineração de resíduos gera emissão de gases poluentes e calor, o que pode piorar as ondas de calor urbanas. É o oposto de uma solução baseada na natureza.",
+      "3": "A verticalização aumenta a impermeabilização do solo e pode agravar as enchentes. Também intensifica o efeito de ilha de calor, contrariando as soluções que o texto defende.",
+      "4": "Estacionamentos privativos são áreas impermeabilizadas que aumentam o escoamento superficial e contribuem para alagamentos. Não são soluções baseadas na natureza."
+    }
+  },
+  {
+    "id": 9,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "media",
+    "tags": ["geopolítica", "organismos internacionais", "ONU", "ordem mundial"],
+    "texto_apoio": "O Conselho de Segurança da Organização das Nações Unidas (ONU) é, junto com a Assembleia-Geral, um dos principais órgãos de tomada de decisão dentro da entidade. O Conselho lida com questões de segurança e paz internacionais, além de recomendar a admissão de novos membros à Assembleia-Geral e aprovar mudanças na Carta das Nações Unidas. Cinco dos quinze membros são permanentes e podem vetar resoluções, o que ocorreu 261 vezes até 2020.",
+    "fonte_apoio": "GOMES, L.; PRETTO, N. O funcionamento do Conselho de Segurança das Nações Unidas. Disponível em: www.nexojornal.com.br. Acesso em: 10 nov. 2021 (adaptado).",
+    "pergunta": "A composição e o funcionamento do organismo internacional apresentados revelam a seguinte característica das relações internacionais entre os países-membros:",
+    "alternativas": [
+      "Igualdade militar.",
+      "Assimetria política.",
+      "Consenso multipolar.",
+      "Equilíbrio estratégico.",
+      "Soberania compartilhada."
+    ],
+    "correta": 1,
+    "comentario": "No Conselho de Segurança da ONU, cinco países (EUA, Rússia, China, França e Reino Unido) têm poder de veto, podendo bloquear qualquer resolução. Os outros dez membros, rotativos, não têm esse poder. Isso revela uma assimetria política clara: nem todos os países têm o mesmo peso nas decisões internacionais. O poder de veto foi exercido 261 vezes, o que mostra que essa desigualdade tem efeitos concretos. A resposta é a letra B.",
+    "ajuda": "Se cinco países podem vetar qualquer decisão e os outros dez não, os membros são iguais? Pense no conceito que descreve essa diferença de poder dentro de um mesmo grupo.",
+    "feedbacks": {
+      "0": "O texto não trata de capacidade militar dos países. O Conselho de Segurança é um órgão político-diplomático, e o poder de veto é político, não militar.",
+      "2": "Não há consenso: o próprio texto mostra que o veto foi usado 261 vezes, indicando que países divergem e bloqueiam decisões. O funcionamento é assimétrico, não consensual.",
+      "3": "Equilíbrio estratégico sugeriria que os países têm poder equivalente. Mas o veto exclusivo de cinco nações contraria isso, criando desequilíbrio, não equilíbrio.",
+      "4": "Soberania compartilhada implicaria que todos cedem parte de seu poder igualmente. No entanto, o veto concentra poder em apenas cinco países, não o distribui."
+    }
+  },
+  {
+    "id": 10,
+    "instituicao": "ENEM",
+    "ano": "2024",
+    "dificuldade": "dificil",
+    "tags": ["espaço geográfico", "artificialização", "urbanização", "Dubai"],
+    "imagem_apoio": "enem/enem2024/q86.png",
+    "texto_apoio": "TEXTO I e TEXTO II: Duas imagens de satélite do Google Earth registradas em datas diferentes mostram a transformação da costa de Dubai, com a criação de ilhas artificiais (Palm Jumeirah e The World) a partir dos anos 2000.\n(Disponível em: https://earth.google.com. Acesso em: 13 out. 2023.)",
+    "fonte_apoio": "Google Earth. Acesso em: 13 out. 2023.",
+    "pergunta": "A comparação entre as imagens de satélite indica a ocorrência de um processo de",
+    "alternativas": [
+      "conservação de lugares afetivos.",
+      "aumento de áreas desertificadas.",
+      "redefinição de fronteiras nacionais.",
+      "artificialização do espaço geográfico.",
+      "mudança da dinâmica macroclimática."
+    ],
+    "correta": 3,
+    "comentario": "As imagens mostram Dubai antes e depois da construção das ilhas artificiais Palm Jumeirah e The World. Essa intervenção humana de grande escala criou terra onde antes havia mar, transformando radicalmente o espaço natural. Quando o ser humano substitui ou altera profundamente o ambiente natural por meio da técnica, temos a artificialização do espaço geográfico. Dubai utilizou esse processo para ampliar seu território, atrair turismo e investimentos. A resposta é a letra D.\n\n⚠️ Nota: esta questão usa imagens de satélite. Se elas não aparecerem, consulte as imagens de Dubai no Google Earth entre 2000 e 2020.",
+    "ajuda": "Nas imagens, o que muda? Dubai criou ilhas onde antes havia apenas mar. Pense: isso é um processo natural ou construído pelo ser humano? Qual conceito geográfico descreve a criação de estruturas artificiais no lugar do ambiente natural?",
+    "feedbacks": {
+      "0": "Conservação de lugares afetivos está ligada ao patrimônio cultural e à memória coletiva, não à criação de ilhas artificiais em ambiente marinho.",
+      "1": "As imagens não mostram desertificação (perda de vegetação por degradação), mas criação de estruturas construídas sobre o mar. São processos opostos.",
+      "2": "As fronteiras nacionais de Dubai não foram redefinidas. A criação das ilhas é uma expansão territorial por aterro, sem alterar limites internacionais.",
+      "4": "A dinâmica macroclimática é global e depende de fatores muito mais amplos do que a construção de ilhas em uma cidade. As imagens mostram uma transformação local do espaço, não um fenômeno climático de grande escala."
+    }
+  }
+]
