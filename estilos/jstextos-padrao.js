@@ -20,13 +20,68 @@ document.addEventListener('DOMContentLoaded', () => {
             atualizarInterface();
         }
 
-        // 3. Opcional: Um único delay curto de segurança 
+        // 3. Opcional: Um único delay curto de segurança
         // apenas se o seu JSON de metadados demorar a carregar o DOM.
         setTimeout(() => {
             if (typeof atualizarInterface === "function") atualizarInterface();
         }, 100);
     }
+
+    // 4. Botão discreto "Salvar PDF" no primeiro tópico (cabeçalho da aula)
+    injetarBotaoSalvarPDF();
 });
+
+
+// --- BOTÃO DISCRETO DE SALVAR EM PDF ---
+// Injeta um link pequeno no primeiro .topico para o professor/aluno baixar o
+// conteúdo da aula como PDF, usando o diálogo nativo de impressão do navegador.
+function injetarBotaoSalvarPDF() {
+    const primeiroTopico = document.querySelector('.topico');
+    if (!primeiroTopico) return;
+    if (primeiroTopico.querySelector('.btn-salvar-pdf')) return; // idempotente
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'btn-salvar-pdf-wrapper w3-center';
+    wrapper.style.cssText = 'margin-top: 8px;';
+
+    const link = document.createElement('a');
+    link.className = 'btn-salvar-pdf w3-text-grey w3-small';
+    link.style.cssText = 'cursor: pointer; text-decoration: none; border-bottom: 1px dotted #999;';
+    link.innerHTML = '<i class="fa fa-file-pdf-o"></i> Salvar este texto em PDF';
+    link.title = 'Abre o diálogo de impressão — escolha "Salvar como PDF"';
+    link.onclick = (e) => {
+        e.preventDefault();
+        // Marca o body para o CSS @media print mostrar todos os tópicos
+        document.body.classList.add('imprimindo-texto');
+        window.print();
+        // Remove a classe depois (Chrome dispara afterprint)
+        setTimeout(() => {
+            document.body.classList.remove('imprimindo-texto');
+        }, 500);
+    };
+
+    wrapper.appendChild(link);
+
+    // POSICIONAMENTO (em ordem de preferência):
+    //   1. Logo após o painel "OUVIR AULA" (se existir <audio> no primeiro tópico)
+    //   2. Antes do bloco Conteúdo/Objetivo (fallback)
+    //   3. Antes do <hr> do primeiro tópico (fallback)
+    //   4. Final do primeiro tópico (último recurso)
+    const audio = primeiroTopico.querySelector('audio');
+    const painelAudio = audio ? audio.closest('.w3-panel') : null;
+    const blocoConteudo = primeiroTopico.querySelector('#descricao-aula')?.closest('.w3-container');
+    const hr = primeiroTopico.querySelector('hr');
+
+    if (painelAudio && painelAudio.parentNode === primeiroTopico) {
+        painelAudio.insertAdjacentElement('afterend', wrapper);
+    } else if (blocoConteudo && blocoConteudo.parentNode === primeiroTopico) {
+        primeiroTopico.insertBefore(wrapper, blocoConteudo);
+    } else if (hr && hr.parentNode === primeiroTopico) {
+        primeiroTopico.insertBefore(wrapper, hr);
+    } else {
+        primeiroTopico.appendChild(wrapper);
+    }
+}
 
 
 
@@ -531,7 +586,7 @@ const injetarModalFinalizacao = () => {
         <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-round-large" style="max-width:450px">
             <div class="w3-container w3-padding-32 w3-center">
                 <div class="w3-margin-bottom pulse">
-                    <img id="modal-img-globinho" src="../../../fotoIndex/globinhoPe.png" width="64" height="64">
+                    <img id="modal-img-globinho" src="/fotoIndex/globinhoPe.png" width="64" height="64">
                 </div>
                 <h2 id="modal-titulo" class="fontePixel"></h2>
                 <div class="w3-padding-16">
